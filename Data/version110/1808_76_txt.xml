@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<!--<?xml-model type="application/relax-ng-compact-syntax" href="txtRNC.rnc"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+                <title rend="shortForm">Maskeradeballet</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="editionPhilologist">Holger Berg</editor>
+                <editor role="student">Jesper Lorenzen</editor>
+                <editor role="student">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+                <editor role="student">Frederik Drei&#x00F8;e Seidelin</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>43 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                <authority />
+                
+                <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1808_76_txt.xml" xml:id="thisFile">L&#x00E6;setekst</note>
+                <note type="com" target="1808_76_com.xml">Punktkommentar</note>
+                <note type="intro" target="1808_76_intro.xml">Indledning</note>
+                <note type="txr" target="1808_76_txr.xml">Tekstredeg&#x00F8;relse</note>
+                <note type="var" target="1808_76_v1.xml">Variant</note>
+            
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <author>Nicolai Frederik Severin Grundtvig</author>
+                    <title type="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+                    <pubPlace>K&#x00F8;benhavn</pubPlace>
+                    <publisher>J.H. Schubothe</publisher>
+                    <date>1808</date>
+                </bibl>
+                <listWit xml:id="emendation">
+                    <witness xml:id="A" n="76"><desc>F&#x00F8;rstetrykket</desc>
+<num>1808</num>
+                    </witness>
+                    <witness xml:id="B" n="251">
+                        <desc>Anden udgave</desc>
+                        <num>1815</num><!--. Grundtvig-Biblioteket (3.2, ex. 3)-->
+</witness>
+                </listWit>
+                <listWit xml:id="pageNumber">
+                    <witness xml:id="PS">
+<desc>Poetiske Skrifter</desc><num>1</num></witness>
+                    <witness xml:id="US">
+<desc>Udvalgte Skrifter</desc><num>1</num></witness>
+                    <witness xml:id="VU">
+<desc>V&#x00E6;rker i Udvalg</desc><num>1</num></witness>
+                </listWit>
+            </sourceDesc>
+        </fileDesc>
+         <profileDesc>
+              <textClass>
+                   <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                        <term>andet</term>
+                        <term>dramaer</term>
+                   </classCode>
+                   <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                        <term>Danmark</term>
+                        <term>nordisk</term>
+                        <term>mytologi</term>
+                        <term>kristendom</term>
+                        <term>historie</term>
+                   </keywords>
+              </textClass>
+         </profileDesc>
+         
+         <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="NHB" when="2011-08-03">Grundkollationeret af NHB fra 2011-08-03 til 2011 08 10</change>
+            <change who="JEL" when="2011-08-12 ">2. grundkollation</change>
+            <change who="NHB" when="2011-08-24">rettelser og opm&#x00E6;rkninger</change>
+            <change who="JMR" when="2011-09-01"> 3. grundkollation</change>
+            <change who="NHB" when="2011-09-05"> opm&#x00E6;rkning, punktkommentarer</change>
+            <change who="NHB" when="2011-09-06"> opm&#x00E6;rkning af punktkommentarer</change>
+            <change who="NHB" when="2011-09-07">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-08">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-13">fjernet m&#x00E6;slinger</change>
+            <change who="NHB" when="2011-09-26">kodet titelbladet</change>
+            <change who="NHB" when="2011-09-27">rettet typografi mv.</change>
+            <change who="NHB" when="2011-10-03">FDS kollation indtastet</change>
+            <change who="NHB" when="2011-10-17">VAP forslag indtastet</change>
+            <change who="NHB" when="2011-10-20">to tekstrettelser indtastet</change>
+            <change who="NHB" when="2011-11-03">tekstkritiske noter er tilpasset den nye grundtekst</change>
+            <change who="NHB" when="2010-11-10">TEI header &#x00E6;ndret</change>
+            <change who="NHB" when="2011-11-25">tilpasset tr&#x00E6;strukturen</change>
+            <change who="KSR" when="2011-11-28">rettelser i tei-header</change>
+            <change who="NHB" when="2011-11-29">tilpasning af pb-elementer</change>
+            <change who="NHB" when="2011-12-01">rettelser i TEI header</change>
+            <change who="NHB" when="2011-12-12">rettelser efter nyt txtRNC-skema</change>
+            <change who="NHB" when="2012-01-11">rettet i witness-listen</change>
+            <change who="NHB" when="2012-01-23">tilpasset TEIheader</change>
+            <change who="NHB" when="2012-01-27">rettet TEIheader</change>
+            <change who="NHB" when="2012-02-20">rettet TEIheader</change>
+            <change who="NHB" when="2012-03-12">lyriktypografi gengivet efter nye retningslinjer</change>
+            <change who="NHB" when="2012-03-13">lyriktypografi gengivet efter nye retningslinjer</change>
+            <change who="NHB" when="2012-04-12">fjernet henvisning til fik123</change>
+            <change who="NHB" when="2012-04-13">fjernet GV fra liste over tekstkilder</change>
+            <change who="NHB" when="2012-04-13">fjernet kursivering af de tre udr&#x00E5;bstegn s. 19</change>
+            <change who="NHB" when="2012-06-14">rettet kodning</change>
+            <change who="NHB" when="2012-06-22">tilpasset seg og udr&#x00E5;bstegn</change>
+            <change who="NHB" when="2012-07-03">Dana kodet som punktkommentar</change>
+            <change who="NHB" when="2012-07-25">fak121 til his121</change>
+            <change who="NHB" when="2012-07-31">indf&#x00F8;jet undertitler til type i div</change>
+            <change who="NHB" when="2012-08-01">fjernet div type=drama. Indsat nye dramakoder. Validering afventer skema</change>
+            <change who="NHB" when="2012-08-08">indsat gardin-overskrift i kantede parenteser "[]"</change>
+            <change who="NHB" when="2012-09-07">rettet s. 22-24 fra periText til text</change>
+            <change who="NHB" when="2012-09-17">tilpasset kodning af titelblade til nye retningslinjer</change>
+            <change who="NHB" when="2012-10-01">tilpasset til skema</change>
+            <change who="NHB" when="2012-10-02">tilpasset til skema</change>
+            <change who="NHB" when="2012-10-05">tilpasset witnesslist</change>
+            <change who="NHB" when="2012-10-26">PS f&#x00F8;r US-sigel</change>
+            <change who="NHB" when="2012-10-29">div type-overskrifter &#x00E6;ndret</change>
+            <change who="NHB" when="2012-10-31">fjernet sidetal(!) fra peritext</change>
+            <change who="NHB" when="2013-04-02">valideret og fjernet lb-milesten</change>
+            <change who="ELR" when="2013-04-30">rettelse i witness til kolofonen; overvejet at fjernet strofenummer ved enkeltst&#x00E5;ende strofer</change> <!-- jeg turde ikke, da der ikke var kontakt til dette evt. s&#x00E6;rlige skema -->
+            <change who="KN" when="2013-05-01">Strofenumre fjernet</change>
+            <change who="KN" xml:id="KN" when="2013-08-13">Flyttet to start-m&#x00E6;rker i linje 496</change>
+           <change xml:id="JT" who="JT" when="2013-11-01">'Dannemarks' og 'Dannemark' har v&#x00E6;ret opm&#x00E6;rket som fak14; er nu rettet til poet219</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+        <change who="NHB" when="2014-03-20">valideret</change>
+            <change who="NHB" when="2014-08-19">rettet listWit. Valideret</change> 
+            <change who="NHB" when="2015-04-12">valid</change>
+             
+             <change who="NHB" when="2015-10-07">emneord</change>
+        </revisionDesc>
+    </teiHeader>
+    <text type="txt">
+        
+        <pb type="periText" facs="1808_76_fax001.jpg" />
+        <pb type="periText" facs="1808_76_fax002.jpg" />
+        <pb type="periText" facs="1808_76_fax003.jpg" />
+        <pb type="periText" facs="1808_76_fax004.jpg" />
+        <front rend="[Titelblad]">
+            <titlePage type="first">
+                <pb type="text" facs="1808_76_fax005.jpg" n="1" ed="A" rend="supp" />
+                <pb n="6" ed="PS" type="edition" />
+                <pb n="225" ed="US" type="edition" />
+                <pb n="140" ed="VU" type="edition" />
+                <docTitle>
+                    <titlePart type="main">Maskeradeballet i <placeName key="poet219">Dannemark</placeName>
+</titlePart>
+                    <titlePart type="main">1808.</titlePart>
+                    <titlePart type="part">Et <seg type="com" n="com17">Syn</seg>
+</titlePart>
+                </docTitle>
+                <byline>af</byline>
+                <docAuthor>Nik. Fred. Sev. Grundtvig, <note type="prof">Kandidat i Teologien.</note>
+                </docAuthor>
+                <fw type="longLine" />
+                <docImprint>
+                    <pubPlace>Kj&#x00F8;benhavn,</pubPlace>
+                    <date>1808.</date>
+                    <publisher>S&#x00E6;lges hos Hofboghandler <persName key="pe392">J. H. Schubothe</persName>.</publisher>
+                    <publisher>Trykt hos <persName key="pe393">Andreas Seidelin</persName>.</publisher>
+                </docImprint>
+            </titlePage>
+        </front>
+        <body>
+            <div type="[Tilegnelse]">
+                <p rendition="set" rend="noIndent">
+                    <pb type="text" facs="1808_76_fax006.jpg" n="2" ed="A" rend="supp" />
+                </p>
+                <lg rendition="set">
+                    <l rend="center">
+<pb type="text" facs="1808_76_fax007.jpg" n="3" ed="A" rend="supp" />
+<pb n="226" ed="US" type="edition" />
+<hi rend="size4">Hver &#x00E6;gte Nordbo,</hi>
+</l>
+                    <l>
+<hi rend="size4" />
+</l>
+                    <l rend="center">
+<hi rend="size4">
+<hi rend="italic">Hver <seg n="com1" type="com">Dannekvinde</seg>,</hi>
+</hi>
+</l>
+                    <l>
+<hi rend="size4" />
+</l>
+                    <l rend="center">
+<hi rend="size3">broderlig helliget.</hi>
+</l>
+                </lg>
+            </div>
+            <div type="[Prolog]">
+                <lg rendition="prologue">
+                    <l rend="fourthIndent">
+<pb type="text" facs="1808_76_fax008.jpg" n="4" ed="A" rend="supp" />
+<pb n="7" ed="PS" type="edition" />
+<seg n="com48" type="comStart" />Tid er at tale.</l>
+                    <l rend="fourthIndent">&#x2013; &#x2013; &#x2013;</l>
+                    <l rend="fourthIndent">&#x2013; &#x2013; &#x2013;</l>
+                    <l rend="fourthIndent">Jeg saa og t&#x00E6;nkte,</l>
+                    <l rend="fourthIndent">Jeg saa og tied&#x2019;.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Jeg lytted&#x2019; til Raad,</l>
+                    <l rend="fourthIndent">Til <seg type="com" n="com64">Taleruner</seg>,</l>
+                    <l rend="fourthIndent">Da jeg h&#x00F8;rte Domme</l>
+                    <l rend="fourthIndent">&#x2013; &#x2013; &#x2013;</l>
+                    <l rend="fourthIndent">I den h&#x00F8;je Sal.<seg n="com48" type="comEnd" />
+</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">
+<seg n="com49" type="comStart" />D&#x00F8;er <seg n="com2" type="com">F&#x00E6;</seg>,</l>
+                    <l rend="fourthIndent">D&#x00F8; Fr&#x00E6;nder,</l>
+                    <l rend="fourthIndent">Selv hver paa det sidste;</l>
+                    <l rend="fourthIndent">Et dog ved jeg,</l>
+                    <l rend="fourthIndent">Som ret aldrig d&#x00F8;er:</l>
+                    <l rend="fourthIndent">Dom om hver en D&#x00F8;d.<seg n="com49" type="comEnd" />
+</l>
+                </lg>
+                <lg rendition="metaSet">
+                    <l rend="right">
+<hi rend="italic">
+<rs type="title" key="title121">
+<seg type="com" n="com35">Havamal</seg>
+</rs>.</hi>
+</l>
+                </lg>
+            </div>
+            <div type="[Indledning]">
+                <pb type="text" facs="1808_76_fax009.jpg" n="5" ed="A" rend="supp" />
+                <pb n="227" ed="US" type="edition" />
+                <fw type="longLine" />
+                <p rendition="set" rend="noIndent">
+<hi rend="initial">S</hi>karer af alle St&#x00E6;nder samledes i <seg type="com" n="com4">
+<placeName key="fak14">Danmarks</placeName> S&#x00F8;rgetid</seg>, i dets Lykkes haarde Vinter, i <seg n="com3" type="com">Vinteren Attenhundrede og otte</seg>. De samledes, for i overgiven Sp&#x00F8;g at <seg type="com" n="com60">pr&#x00E6;ge</seg> deres Gl&#x00E6;de. </p>
+                <p rendition="set" rend="firstIndent">Enkelte traadte frem, med Billedet af den lidende, den bl&#x00F8;dende <seg type="com" n="com12">Dana</seg> i Haand, og stillede <pb n="8" ed="PS" type="edition" />det for de Jublendes &#x00D8;je. Enkelte Stemmer l&#x00F8;de: <seg type="com" n="com15">skammer</seg> Eder dog, S&#x00F8;nner af Nord! <seg type="com" n="com15">skammer</seg> Eder dog ved at dandse og g&#x00F8;gle paa Bredden af <placeName key="poet219">Dannemarks</placeName> Grav! Dog &#x2013; blind og d&#x00F8;v var Skaren for Synet og Stemmen. Strengelegen, <pb type="text" facs="1808_76_fax010.jpg" n="6" ed="A" />tonede h&#x00F8;jt, og med den blandede sig i r&#x00E6;dsom lystige Akkorder: </p>
+                <lg rendition="speech">
+                    <l rend="center">
+<seg n="com5" type="com">Fryd dig ved Livet!</seg>
+</l>
+                </lg>
+                <p rendition="set" rend="firstIndent">Gulvet dundrede under de Dandsende, medens andre Formummede drejede sig under <seg n="com7" type="com">R&#x00E6;grimen</seg> i lystige Kredse, og <seg n="com8" type="com">skreve i hinandens H&#x00E6;nder, som kunde der tvivles om deres Navne, de rette</seg>. </p>
+                <p rendition="set" rend="firstIndent">
+<pb n="141" ed="VU" type="edition" />Men, se! Lysenes Lue fl&#x00F8;d over i blaalige Flammer, raslende aabnedes D&#x00F8;rren, og ind traadte en bleg sk&#x00E6;lvende Olding. Et Spyd var hans Stav, haardt havde han l&#x00E6;net sig til det paa sin tunge Gang, og farvet var det af hans Blod. Faa, men Trofaste fulgte ham, med l&#x00F8;ftet Sv&#x00E6;rd i den st&#x00E6;rke Haand, og en Taare hang i det <app type="corrNote" select="yes"><lem wit="B">ildfulde</lem><rdg wit="A">slidfulde</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> &#x00D8;je.</p>
+                <p rendition="set" rend="firstIndent">Fremmerst var <seg n="com9" type="com">
+<placeName key="poet219">Dannemarks</placeName> Konges&#x00F8;n</seg> blandt dem. T&#x00E6;t vandrede han ved Oldingens Side, og b&#x00F8;d ham hvile sig paa den kraftige Arm.</p>
+                <p rendition="set" rend="firstIndent">
+<pb type="text" facs="1808_76_fax011.jpg" n="7" ed="A" />Forvirret samledes Skaren <seg type="com" n="com58">trindt</seg> Gubben, paa hvis Bryst stod <placeName key="poet219">Dannemarks</placeName> Navn med halv udslettet Skrift. Tale vilde han, men kun en utydelig, <pb n="9" ed="PS" type="edition" />jamrende Lyd kom over de sittrende L&#x00E6;ber. <seg n="com10" type="com">Den &#x00E6;dle ved hans Side, stod rede til at styrke ham med sit Blod; men da rystede den Gamle de hvide Lokker</seg> med truende Alvor. </p>
+                <p rendition="set" rend="firstIndent">Fluks traadte Tvende frem af F&#x00F8;lget, <seg n="com66" type="com">skjulte Spydsodden i <pb n="228" ed="US" type="edition" />det blottede Bryst, og l&#x00E6;dskede Oldingen med deres varme Hjerteblod</seg>. Skr&#x00E6;kket veg Skaren tilbage, men den Gamle rejste sig k&#x00E6;mpeh&#x00F8;j og talte:</p>
+            </div>
+            <div type="[Oldingens tale]">
+                <lg rendition="speech">
+                    <l rend="secondIndent">Saa stod jeg gennem <seg n="com13" type="com">Seklers Aar</seg>,</l>
+                    <l rend="secondIndent">I Manddoms fulde Styrke.</l>
+                    <l rend="secondIndent">Kraft var min S&#x00F8;n, Bluf&#x00E6;rdighed</l>
+                    <l rend="secondIndent">Min fagre, rene Datter.</l>
+                    <l rend="secondIndent">Naar B&#x00F8;lgen slog i Syd og Vest</l>
+                    <l rend="secondIndent">Mod fjerne Landes Kyster,</l>
+                    <l rend="secondIndent">Mit Navn den bar, og Fejghed skjalv</l>
+                    <l rend="secondIndent">I stolte Marmorsale.</l>
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax012.jpg" n="8" ed="A" />Hovmodig paa sin brede B&#x00E6;nk</l>
+                    <l rend="secondIndent">
+<seg n="com14" type="comStart" />Som Havets Dronning troner</l>
+                    <l rend="secondIndent">Nu <placeName key="his121">Bretland</placeName>
+<seg n="com14" type="comEnd" />; men i Jernet sp&#x00E6;ndt</l>
+                    <l rend="secondIndent">Hun ved min Fod har hvilet.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">Jeg slumred&#x2019;: <seg n="com56" type="com">Valmusaften</seg> g&#x00F8;d</l>
+                    <l rend="secondIndent">En <app type="corrNote" select="yes"><lem wit="B">Trolddom</lem><rdg wit="A">Treldom</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> paa mit &#x00D8;je</l>
+                    <l rend="secondIndent">Mit Navn forglemtes, paa min Ryg</l>
+                    <l rend="secondIndent">Opkravled kaade Dverge.<pb n="142" ed="VU" type="edition" />
+</l>
+                    <l rend="secondIndent">Jeg vaagned&#x2019;, saa, og skjalv, men frem</l>
+                    <l rend="secondIndent">Jeg raabte mine S&#x00F8;nner:</l>
+                    <l rend="secondIndent">Med Staal i Bryst og Staal i Haand,</l>
+                    <l rend="secondIndent">De t&#x00E6;mmed kaade Dverge.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb n="10" ed="PS" type="edition" />Jeg &#x00E6;ldedes &#x2013; <seg type="com" n="com11">En S&#x00F8;n af <rs type="myth" key="myth67">Skjold</rs>
+</seg>,</l>
+                    <l rend="secondIndent">(End staaer han ved min Side.)</l>
+                    <l rend="secondIndent">Genf&#x00F8;dte mig, og Ungdoms Blod</l>
+                    <l rend="secondIndent">Alt varmede mit Hjerte.</l>
+                    <l rend="secondIndent">Da kom fra <placeName key="poet122">Vesterled</placeName> en Vind,</l>
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax013.jpg" n="9" ed="A" />Saa lun som Vestenvinde.</l>
+                    <l rend="secondIndent">Ak! Storm den blev, bortrev min Krands</l>
+                    <l rend="secondIndent">Som dulgte hvide Lokker.</l>
+                    <l rend="secondIndent">Naar B&#x00F8;lgen, som mit stolte Navn</l>
+                    <l rend="secondIndent">Henbar til fjerne Lande;</l>
+                    <l rend="secondIndent">I Syd og Vest nu slaar mod Kyst,</l>
+                    <l rend="secondIndent">Den b&#x00E6;rer &#x2013; mine Sukke.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb n="229" ed="US" type="edition" />Jeg raaber mine S&#x00F8;nner frem.</l>
+                    <l rend="secondIndent">Ak! Faa er de som h&#x00F8;re,</l>
+                    <l rend="secondIndent">I Bl&#x00F8;dheds Favn og Lystens Sk&#x00F8;d,</l>
+                    <l rend="secondIndent">De slumrende sig velte.</l>
+                    <l rend="secondIndent">Se! tomme Herrens Templer staa,</l>
+                    <l rend="secondIndent">Og <seg n="com16" type="com">St&#x00F8;vet</seg> ej vil kn&#x00E6;le</l>
+                    <l rend="secondIndent">I St&#x00F8;vet ned for St&#x00F8;vets Gud,</l>
+                    <l rend="secondIndent">At angre sine Synder.</l>
+                    <l rend="secondIndent">Ak! Mine B&#x00F8;rn det er, som saa</l>
+                    <l rend="secondIndent">foragte Himlens Konge,</l>
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax014.jpg" n="10" ed="A" />Som se mig syg, og springe dog</l>
+                    <l rend="secondIndent">Med Lyst i <seg type="com" n="com61">G&#x00F8;glerhammen</seg>.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="firstIndent">O! Rejs dig dog, nedsjunkne, faldne Sl&#x00E6;gt!</l>
+                    <l rend="firstIndent">Mod Himlen op fra <seg type="com" n="com67">Bl&#x00F8;dheds fule Leje</seg>!</l>
+                    <l rend="firstIndent">
+<pb n="11" ed="PS" type="edition" />Husk Du udsprang af Nordens <seg type="com" n="com68">K&#x00E6;mpe&#x00E6;t</seg>,</l>
+                    <l rend="firstIndent">Til Daad, og ej til Sydens k&#x00E6;lne Vellyst!</l>
+                    <l rend="firstIndent">O <seg n="com18" type="com">kaster</seg> dog den f&#x00E6;le G&#x00F8;glerham!</l>
+                    <l rend="firstIndent">O <seg n="com19" type="com">d&#x00E6;mper</seg> dog de vilde Gl&#x00E6;destoner!</l>
+                    <l rend="firstIndent">
+<seg n="com20" type="com">Ombytter</seg> Prunk med <seg n="com47" type="com">festlig</seg> S&#x00F8;rgedragt</l>
+                    <l rend="firstIndent">Og <seg n="com21" type="com">ganger</seg> hen i Herrens Hus at bede!</l>
+                    <l rend="firstIndent">
+<pb n="143" ed="VU" type="edition" />Med hellig Sang, det fromme Hjertes B&#x00F8;n</l>
+                    <l rend="firstIndent">Sig h&#x00E6;ver da paa Andagts <seg n="com22" type="com">Luevinge</seg>,</l>
+                    <l rend="firstIndent">Og Ungdoms Kraft nedstiger i min Barm,</l>
+                    <l rend="firstIndent">Fra Ham, som holdt mig rejst i lange Tider.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="firstIndent">Da, <seg type="comStart" n="com69" />hv&#x00E6;s o Mand! paa hellig Alterfod</l>
+                    <l rend="firstIndent">Dit tunge Sv&#x00E6;rd<seg type="comEnd" n="com69" />, til <placeName key="his121">Bretlands</placeName> Skjold at kl&#x00F8;ve,</l>
+                    <l rend="firstIndent">Og sv&#x00E6;rg da Had til Sydens lumske Gift,</l>
+                    <l rend="firstIndent">
+<pb type="text" facs="1808_76_fax015.jpg" n="11" ed="A" />Til Vellyst, Pragt, og Guldets dorske Glimmer!</l>
+                    <l rend="firstIndent">Men Kvinde! Du som Herren af sin Sol</l>
+                    <l rend="firstIndent">En Straale gav for Mandens Bryst at varme,</l>
+                    <l rend="firstIndent">Kys Altrets Fod, og sv&#x00E6;rg ved Straalen selv</l>
+                    <l rend="firstIndent">At ej med den Du mer min S&#x00F8;n vil <seg n="com23" type="com">daare</seg>;</l>
+                    <l rend="firstIndent">At du med Smil vil n&#x00E6;re Himlens Ild</l>
+                    <l rend="firstIndent">Og svale med din Taare Jordens Flamme;</l>
+                    <l rend="firstIndent">At med din Haand Du huld vil kl&#x00E6;de mig,</l>
+                    <l rend="firstIndent">Og vandre frem som &#x00E6;rbar Dannekvinde!</l>
+                    <l rend="firstIndent">Naar B&#x00F8;lgen da mod Syd og Vest henruller,</l>
+                    <l rend="firstIndent">Og naar den slaar mod fjerne Landes Kyst;</l>
+                    <l rend="firstIndent">
+<pb n="230" ed="US" type="edition" />Da atter skal den, som i Oldtids Dage,</l>
+                    <l rend="firstIndent">Henb&#x00E6;re did mit n&#x00E6;sten glemte Navn.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="firstIndent">O S&#x00F8;n! O Datter! h&#x00F8;r en Faders &#x00F8;mme Stemme!</l>
+                    <l rend="firstIndent">O! <seg n="com24" type="com">H&#x00F8;rer</seg> dog, imens det end er Tid,</l>
+                    <l rend="firstIndent">F&#x00F8;r, dr&#x00E6;bt af Sorg og <seg n="com25" type="com">M&#x00F8;dighed</seg> jeg segner</l>
+                    <l rend="firstIndent">I skumle Grav til evig Glemsel ned!</l>
+                </lg>
+                
+                <fw type="shortLine" />
+            </div>
+            <div type="[Oldingens d&#x00F8;d]">
+                <p rendition="set" rend="firstIndent">
+<pb type="text" facs="1808_76_fax016.jpg" n="12" ed="A" />
+<pb n="12" ed="PS" type="edition" />Oldingen tav. Et &#x00D8;jeblik stod Skaren som grublende; men nu l&#x00F8;d det i Salens &#x00F8;vre Ende:</p>
+                
+                <p rendition="speech" rend="secondIndent">
+<hi rend="italic">
+<seg n="com26" type="com">Glaubt nicht auf solche dumme Dinge!</seg>
+</hi>
+</p>
+                
+                <p rendition="set" rend="noIndent">og i den nedre:</p>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<hi rend="italic">
+<seg n="com27" type="comStart" />Tro ej <seg n="com50" type="com">
+<app type="combNote" select="yes"><lem wit="GV">Selotens</lem><rdg wit="A">Selvtens</rdg><rdg type="add" wit="B">Zelotens</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>
+</seg> m&#x00F8;rke L&#x00E6;re:</hi>
+</l>
+                    <l rend="secondIndent">
+<hi rend="italic">At Himlen er <seg n="com33" type="com">den Glade vred</seg>!</hi>
+<seg n="com27" type="comEnd" />
+</l>
+                </lg>
+                <p rendition="set" rend="noIndent">Fordobblet vendte den vilde Fryd tilbage.</p>
+                <p rendition="set" rend="firstIndent">
+<pb n="144" ed="VU" type="edition" />End ravede <app type="corrNote" select="yes"><lem wit="GV">Gubben</lem><rdg wit="A">Gubbben</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> en Stund, st&#x00F8;ttet af sin &#x00E6;dle Ledsager, og hans mandige F&#x00F8;lge; men &#x2013; D&#x00F8;dninguret slog sit tolvte Slag, og livl&#x00F8;s nedsank den Gamle med sine tro S&#x00F8;nner bl&#x00F8;dende <seg type="com" n="com58">trindt</seg> sig. Stort var Faldet. Salen rystede som Blad i Storm, og Skr&#x00E6;k udpustede Livsaanden af de Dandsende. Gispende fore de til <rs type="myth" key="myth33">Hel</rs>. </p>
+            </div>
+            <div type="[Kvadet ved liget]">
+                <p rendition="set" rend="firstIndent">Lysskinnet blaanede end mere; Jorden gungrede som under K&#x00E6;mpefod, og ind traadte tvende Skarer af Nordens gamle Helte. Hedningene havde sorte men de Kristne hvide, med Kors udsmykkede Brynjer, og alle havde de gyldne Hjelme. <pb type="text" facs="1808_76_fax017.jpg" n="13" ed="A" />
+<seg n="com54" type="com">For</seg> Dem gik en Skjald, med Harpen i Haand. Tavs s&#x00F8;rgende stirrede de Kristne paa den D&#x00F8;de; men Hedningene <seg n="com28" type="com">omginge</seg> trende Gange Liget og <seg n="com29" type="com">kvade</seg>: </p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Af dine L&#x00E6;nder</l>
+                    <l rend="fourthIndent">Vi alle sprang.</l>
+                    <l rend="fourthIndent">Vi, <seg n="com62" type="com">baarne Fr&#x00E6;nder</seg>,</l>
+                    <l rend="fourthIndent">
+<seg n="com63" type="com">Gik K&#x00E6;mpegang</seg>.</l>
+                    <l rend="fourthIndent">Med Sv&#x00E6;rd vi h&#x00E6;rged&#x2019;</l>
+                    <l rend="fourthIndent">Med Skjold vi v&#x00E6;rged&#x2019;</l>
+                    <l rend="fourthIndent">Vor Fader! Dig.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">
+<pb n="13" ed="PS" type="edition" />
+<pb n="231" ed="US" type="edition" />Vi h&#x00F8;rte runge</l>
+                    <l rend="fourthIndent">I <rs type="myth" key="myth101">Valhals</rs> Borg,</l>
+                    <l rend="fourthIndent">Dit Fald, det tunge.</l>
+                    <l rend="fourthIndent">Da voksde Sorg,</l>
+                    <l rend="fourthIndent">Hvor Roser stode</l>
+                    <l rend="fourthIndent">Hvor Lilljer grode,</l>
+                    <l rend="fourthIndent">Paa <rs type="myth" key="myth102">Vigrids Mark</rs>.</l>
+                </lg>
+                <p rendition="set" rend="firstIndent">
+<pb type="text" facs="1808_76_fax018.jpg" n="14" ed="A" />Skjalden greb Str&#x00E6;ngene, og kvad saa gladelig om den Hedenfarnes Manddom, saa s&#x00F8;rgeligen om hans D&#x00F8;d. Som stivnede stode alle Heltene og lyttede til Kv&#x00E6;det; men da det var endt, fremtraadte <rs type="myth" key="myth405">Regnar Lodbrok</rs> og kvad: </p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">
+<seg n="com34" type="comStart" />I <placeName key="his121">Bretland</placeName> fangen</l>
+                    <l rend="fourthIndent">Jeg sad en Stund,</l>
+                    <l rend="fourthIndent">Mig favned&#x2019; Slangen,</l>
+                    <l rend="fourthIndent">I <seg n="com51" type="com">Ormegrund</seg>.</l>
+                    <l rend="fourthIndent">Den fast mig knuged&#x2019;</l>
+                    <l rend="fourthIndent">Mit Blod den suged&#x2019;</l>
+                    <l rend="fourthIndent">Jeg klaged ej.</l>
+                    <l rend="fourthIndent">
+<seg n="com55" type="comStart" />I <persName key="pe442">Ellas</persName> Taarne,<seg n="com55" type="comEnd" />
+</l>
+                    <l rend="fourthIndent">Da l&#x00F8;d min Sang,</l>
+                    <l rend="fourthIndent">For gamle Orne</l>
+                    <l rend="fourthIndent">Blir Tiden lang;</l>
+                    <l rend="fourthIndent">Men vidste Grise</l>
+                    <l rend="fourthIndent">Hvad <seg n="com52" type="com">Orme</seg> spise,</l>
+                    <l rend="fourthIndent">De t&#x00F8;ved&#x2019; ej.<seg n="com34" type="comEnd" />
+</l>
+                </lg>
+                <p rendition="set" rend="noIndent">
+<pb type="text" facs="1808_76_fax019.jpg" n="15" ed="A" />
+<pb n="14" ed="PS" type="edition" />
+<pb n="145" ed="VU" type="edition" />Frem stod hans S&#x00F8;n <rs type="myth" key="myth414">Ivar Benl&#x00F8;s</rs> og kvad:</p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Vi t&#x00F8;ved&#x2019; ikke,</l>
+                    <l rend="fourthIndent">Men dj&#x00E6;rve lod</l>
+                    <l rend="fourthIndent">Vi Ulve drikke,</l>
+                    <l rend="fourthIndent">Af <placeName key="his121">Bretlands</placeName> Blod.</l>
+                    <l rend="fourthIndent">
+<seg n="com65" type="comStart" />Vi Ryggen risted&#x2019;,</l>
+                    <l rend="fourthIndent">Og Hjertet vristed&#x2019;</l>
+                    <l rend="fourthIndent">Af <persName key="pe442">Ellas</persName> Bryst.<seg n="com65" type="comEnd" />
+</l>
+                </lg>
+                <p rendition="set" rend="firstIndent">Af den kristne Skare fremtraadte <persName key="pe443">Gunnild</persName>, <persName key="pe444">Svend Tvesk&#x00E6;gs</persName> den stolte, den dejlige S&#x00F8;ster, og kvad:</p>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb n="232" ed="US" type="edition" />Udsprungen af <placeName key="poet219">Dannemarks</placeName> kraftige Rod,</l>
+                    <l rend="secondIndent">Udrunden af <rs type="myth" key="myth115">Skjoldungers</rs> herlige Blod,</l>
+                    <l rend="thirdIndent">I <placeName key="his121">Bretland</placeName>
+                        <seg n="com36" type="com">mig timedes Kvide</seg>.</l>
+                    <l rend="fourthIndent">Paa <seg type="com" n="com59">trol&#x00F8;se &#x00D8;</seg>,</l>
+                    <l rend="fourthIndent">Der maatte jeg d&#x00F8;,</l>
+                    <l rend="thirdIndent">I Ungdommens fagreste Tide.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax020.jpg" n="16" ed="A" />Paa Kongestol Nidingen <persName key="pe441">Edelred</persName> sad</l>
+                    <l rend="secondIndent">Han blanded&#x2019; og laved&#x2019; saa blodig et Bad,</l>
+                    <l rend="thirdIndent">For Danske. Det havde ej Lige</l>
+                    <l rend="fourthIndent">Da dr&#x00E6;btes <seg n="com53" type="com">i L&#x00F8;n</seg>
+</l>
+                    <l rend="fourthIndent">Hver <placeName key="poet219">Dannemarks</placeName> S&#x00F8;n,</l>
+                    <l rend="thirdIndent">Som bygged&#x2019; i <placeName key="fak5">Engellands</placeName> Rige.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<seg n="com37" type="comStart" />Ej havde de Vaaben, de dristige M&#x00E6;nd,</l>
+                    <l rend="secondIndent">Saa tr&#x00F8;stig de fly&#x2019;de til Kirkerne hen,</l>
+                    <l rend="thirdIndent">
+<pb n="15" ed="PS" type="edition" />Men Kirkerne t&#x00E6;ndtes i Lue.</l>
+                    <l rend="fourthIndent">Saa ynkelig klang</l>
+                    <l rend="fourthIndent">Da Hylen <seg n="com46" type="com">for</seg> Sang,</l>
+                    <l rend="thirdIndent">Alt under den hellige Bue.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">Af nyf&#x00F8;dte Sp&#x00E6;de, forbarme sig Gud!</l>
+                    <l rend="secondIndent">Fl&#x00F8;j Hjernen mod Stolper mod Stenene ud.</l>
+                    <l rend="thirdIndent">Kun faa kende M&#x00F8;drenes Smerte.</l>
+                    <l rend="fourthIndent">Da <seg n="com39" type="com">groves</seg> i Jord,</l>
+                    <l rend="fourthIndent">De Kvinder fra Nord,</l>
+                    <l rend="thirdIndent">Og Hundene sled deres Hjerte.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax021.jpg" n="17" ed="A" />Dog, end havde <placeName key="his121">Bretland</placeName> ej styret sin Lyst,</l>
+                    <l rend="secondIndent">Jeg maatte i S&#x00F8;ns og i &#x00C6;gtemands Bryst</l>
+                    <l rend="thirdIndent">De blodige Spyde beskue.</l>
+                    <l rend="fourthIndent">Den H&#x00F8;jeste ved,</l>
+                    <l rend="fourthIndent">Hvad Angest jeg led;</l>
+                    <l rend="thirdIndent">Men Ingen dog saa mig at grue.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb n="146" ed="VU" type="edition" />Nu l&#x00F8;ftedes &#x00D8;ksen. Jeg gjorde min B&#x00F8;n,</l>
+                    <l rend="secondIndent">Til <persName key="pe45">Krist</persName> og <persName key="pe307">hans hellige Moder</persName> i L&#x00F8;n,</l>
+                    <l rend="thirdIndent">Og d&#x00F8;ende tog jeg til Orde:</l>
+                    <l rend="fourthIndent">Gr&#x00E6;d <placeName key="his121">Bretland</placeName>! O gr&#x00E6;d!</l>
+                    <l rend="fourthIndent">Ti Blod var din S&#x00E6;d,</l>
+                    <l rend="thirdIndent">Og blodig vil H&#x00F8;stdagen <seg n="com41" type="com">vorde</seg>
+<seg n="com37" type="comEnd" />.</l>
+                </lg>
+                <fw type="shortLine" />
+                <p rendition="set" rend="firstIndent">
+<pb type="text" facs="1808_76_fax022.jpg" n="18" ed="A" />
+<pb n="16" ed="PS" type="edition" />
+<pb n="233" ed="US" type="edition" />
+<app type="corrNote" select="yes"><lem wit="B">Frem stod</lem><rdg wit="A">Fremstod</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> da Skjalden <persName key="pe446">Ottar hin Sorte</persName> og kvad:</p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Ja, hevnet Du blev,</l>
+                    <l rend="fourthIndent">Du <persName key="pe443">Gunnild hin fagre</persName>!</l>
+                    <l rend="fourthIndent">Med Blod vi beskrev</l>
+                    <l rend="fourthIndent">Paa <placeName key="fak5">Engellands</placeName> Agre,</l>
+                    <l rend="fourthIndent">Dit Mord og vor Hevn.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Saa harmefuld drog</l>
+                    <l rend="fourthIndent">Kong <persName key="pe444">Svend</persName> over Strande.</l>
+                    <l rend="fourthIndent">Han <persName key="pe441">Edelred</persName> jog</l>
+                    <l rend="fourthIndent">Til fremmede Lande,</l>
+                    <l rend="fourthIndent">Fra Rige og Stol.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">
+<seg n="com43" type="comStart" />Han synded&#x2019; mod Gud,</l>
+                    <l rend="fourthIndent">Mod <persName key="pe445">Edmund</persName> og d&#x00F8;de.<seg n="com43" type="comEnd" />
+</l>
+                    <l rend="fourthIndent">Da farvede <persName key="pe335">Knud</persName>
+</l>
+                    <l rend="fourthIndent">De Hjelme saa r&#x00F8;de,</l>
+                    <l rend="fourthIndent">Og <placeName key="his121">Bretland</placeName> var Tr&#x00E6;l.</l>
+                </lg>
+            </div>
+            <div type="[Ligf&#x00E6;rden]">
+                <p rendition="set" rend="firstIndent">
+<pb type="text" facs="1808_76_fax023.jpg" n="19" ed="A" />Kristne og Hedninge sloge <seg n="com42" type="com">Krinds</seg> om Liget og <seg n="com29" type="com">kvade</seg> i Kor:</p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Ja Fader! tro,</l>
+                    <l rend="fourthIndent">Vi stod og stred,</l>
+                    <l rend="fourthIndent">
+<seg type="comStart" n="com32" />Og h&#x00F8;jt vi lo,</l>
+                    <l rend="fourthIndent">I blodig Sved.<seg type="comEnd" n="com32" />
+</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Men ve den Svend,</l>
+                    <l rend="fourthIndent">Og ve den M&#x00F8;,</l>
+                    <l rend="fourthIndent">Som saa Dig d&#x00F8;,</l>
+                    <l rend="fourthIndent">Og lever end!!!</l>
+                </lg>
+                <fw type="shortLine" />
+                <p rendition="set" rend="firstIndent">
+<pb n="17" ed="PS" type="edition" />Baalet t&#x00E6;ndtes midt i Salen og viedes med Korsets og Hammerens Tegn under Korets Kvad</p>
+                <lg rendition="speech">
+                    <l rend="secondIndent">
+<pb n="147" ed="VU" type="edition" />H&#x00F8;je <rs type="myth" key="myth59">Odin</rs>! Hvide <persName key="pe45">Krist</persName>!</l>
+                    <l rend="secondIndent">Slettet ud er Eders Tvist,</l>
+                    <l rend="secondIndent">
+<pb type="text" facs="1808_76_fax024.jpg" n="20" ed="A" />Begge S&#x00F8;nner af <rs type="myth" key="myth1">Alfader</rs>.</l>
+                    <l rend="secondIndent">Med vort Kors og med vort Sv&#x00E6;rd,</l>
+                    <l rend="secondIndent">Vies Eder Baalet her,</l>
+                    <l rend="secondIndent">Begge elskte I vor Fader.</l>
+                </lg>
+                <p rendition="set" rend="firstIndent">
+<pb n="234" ed="US" type="edition" />Tre Gange bares den D&#x00F8;de paa Skjolde rundt om Baalet, og Koret kvad:</p>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">Os Guderne sende,</l>
+                    <l rend="fourthIndent">At h&#x00E6;dre dit Lig.</l>
+                    <l rend="fourthIndent">Til Aske vi br&#x00E6;nde,</l>
+                    <l rend="fourthIndent">O Elskede! Dig.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="fourthIndent">En H&#x00F8;j vi skal rejse</l>
+                    <l rend="fourthIndent">Paa smuldrede Ben,</l>
+                    <l rend="fourthIndent">Og paa den skal knejse:</l>
+                    <l rend="fourthIndent">En varslende Sten.</l>
+                </lg>
+                <lg rendition="speech">
+                    <l rend="firstIndent">
+<pb type="text" facs="1808_76_fax025.jpg" n="21" ed="A" />
+<pb n="18" ed="PS" type="edition" />Den H&#x00F8;j skal ej l&#x00E6;gges af Jord eller Muld</l>
+                    <l rend="thirdIndent">Men af S&#x00F8;lv og af Guld,</l>
+                    <l rend="thirdIndent">Men af Silke og Lin,</l>
+                    <l rend="secondIndent">Begydt med den skummende Vin,</l>
+                    <l rend="fourthIndent">Og af Skarlagen r&#x00F8;d,</l>
+                    <l rend="fourthIndent">Og af Fraadsernes K&#x00F8;d,</l>
+                    <l rend="fourthIndent">Saa Guderne b&#x00F8;d.</l>
+                    <l rend="secondIndent">Paa H&#x00F8;jen vi rejse en Bavtasten</l>
+                    <l rend="fourthIndent">Af D&#x00F8;dninge-Ben,</l>
+                    <l rend="fourthIndent">Af Horm&#x00E6;nds-Ben,</l>
+                    <l rend="fourthIndent">Af Horkvinde-Ben,</l>
+                    <l rend="fourthIndent">Af Nidinge-Ben,</l>
+                    <l rend="fourthIndent">Og den Bavtasten</l>
+                    <l rend="fourthIndent">Skal stande i Nord,</l>
+                    <l rend="fourthIndent">Til for&#x00E6;ldede Jord</l>
+                    <l rend="fourthIndent">Opl&#x00F8;ses i Damp.</l>
+                </lg>
+                <p rendition="set" rend="firstIndent">Liget lagdes paa Baal. Flammen omsnoede hele F&#x00F8;lget, og Alt forsvandt. </p>
+                <fw type="longLine" />
+                <pb type="text" facs="1808_76_fax026.jpg" n="22" ed="A" rend="supp" />
+                <pb type="text" facs="1808_76_fax027.jpg" n="23" ed="A" rend="supp" />
+                <pb type="text" facs="1808_76_fax028.jpg" n="24" ed="A" rend="supp" />
+            </div>
+        </body>
+        <pb type="periText" facs="1808_76_fax029.jpg" />
+        <pb type="periText" facs="1808_76_fax030.jpg" />
+        <pb type="periText" facs="1808_76_fax031.jpg" />
+        <pb type="periText" facs="1808_76_fax032.jpg" />
+    
+</text>
+</TEI>

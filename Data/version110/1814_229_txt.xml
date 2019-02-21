@@ -1,0 +1,1545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc" type="application/relax-ng-compact-syntax"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            
+            <titleStmt>
+                <title rend="main">Hvem er den falske Prophet? Hvem forvirrer Folket? Svar til Recensenten i Litt. Tid. No. 12 og 13</title>
+                <title rend="shortForm">Hvem er den falske Prophet?</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="editionPhilologist">Vanja Thaulow</editor>
+                <editor role="student">Anna Poulsen</editor>               
+                <editor role="student">Kirsten Vad</editor>
+            </titleStmt>
+            
+            <editionStmt>
+                <edition>
+                    <idno type="content">1.7</idno>
+                    <idno type="technic">1.7.1</idno>
+                </edition>
+            </editionStmt>
+            
+            <extent>171 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted">
+                    <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+                </availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                
+                <date when="2015-11-01">www.grundtvigsværker.dk, version 1.7, 1. november 2015</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note xml:id="thisFile" target="1814_229_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note target="1814_229_com.xml" type="com">Punktkommentar</note>
+                <note target="1815_248_intro.xml" type="intro">Indledning</note>
+                <note target="1814_229_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+                <note type="unknownVar">Variant</note>
+                <!-- <note type="noBible"/>
+                <note type="noMyth"/>
+                <note type="noPersName"/>
+                <note type="noPlaceName"/>-->
+            </notesStmt>
+            <!--
+     <seriesStmt>
+      <title></title>
+      <idno></idno>
+      <respStmt>
+       <name></name>
+       <resp>[evt.]</resp>
+      </respStmt>
+     </seriesStmt>-->     
+            <sourceDesc>
+                <bibl>
+                    <title type="main">Hvem er den falske Prophet?</title>
+                    <author>N.F.S. Grundtvig</author>           
+                    <pubPlace>K&#x00F8;benhavn</pubPlace>
+                    <publisher></publisher>
+                    <date>1814</date>
+                </bibl>
+                
+                <listWit xml:id="emendation">
+                    <witness xml:id="A" n="229">
+                        <desc>Førstetrykket</desc>
+                        <num>1814</num>
+                    </witness>
+                </listWit>
+                
+                <!--<listWit xml:id="pageNumber">
+</listWit>-->
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                    <term>prosa</term>
+                    <term>afhandlinger</term>                    
+                </classCode>
+                <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                    <term>polemik</term>
+                    <term>teologi</term>
+                    <term>filosofi</term>
+                    <term>historie</term>                   
+                </keywords>
+            </textClass>
+        </profileDesc>        
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>         
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change xml:id="VTH" who="VTH" when="2014-09-26">filen dannet fra en pdf fra KB</change>
+            <change xml:id="AP" who="AP" when="2015-02-06">påbegyndt 1. koll, efter Gr. bib, ex. 2., påtrykt M. Stevns</change>
+            <change who="AP" when="2015-02-09">1. koll fortsat</change>
+            <change who="AP" when="2015-02-13">1. koll fortsat</change>
+            <change who="AP" when="2015-02-16">1. koll færdig</change>
+            <change who="KV" xml:id="KV" when="2015-03-16">2. koll påbegyndt, GVs eksemplar.</change>
+        <change who="VTH" when="2015-05-26">VTH retter efter KVs print</change>
+        <change who="VTH" when="2015-05-26">koder tekstrettelser. Foreløbig 25 stk.</change>
+        <change who="VTH" when="2015-06-02">3. kollation påbegyndt, Kgl bib: 130002391075</change>
+      <change who="auto" when="2015-06-22">Autoopmærket af autotag.awk v09 KK 2013-11-28</change>
+        <change who="VTH" when="2015-06-22">Tilretter autoopmærkningen</change><!--teksten skal gennemgås for mangler og titler skal opmærkes-->
+        <change who="VTH" when="2015-07-29">Lemmatiserer</change>
+        <change who="VTH" when="2015-07-30">Lemmatiserer, skriver com i grønne felter efter NHBs metode og opmærker til title og bib</change>
+            <change who="VTH" when="2015-07-31">Lemmatiserer, skriver com og opmærker til title og bib</change>
+            <change who="VTH" when="2015-08-03">Lemmatiserer, skriver com og opmærker til title og bib</change>
+            <change who="VTH" when="2015-08-04">Lemmatiserer, skriver com og opmærker til title og bib. Færdig.</change>
+            <change who="VTH" when="2015-08-05">Retter igennem.</change>
+            <change who="VTH" when="2015-08-10">Gennemgår bibelcitater ift 1787. 70 stk. NHB danner comfil.</change>
+            <change who="VTH" when="2015-08-12">Retter lemmatisering. Nye com:500-521</change>
+            <change who="VTH" when="2015-08-13">Retter lemmatisering. Nye com:522-531</change>
+            <change who="VTH" when="2015-08-14">Retter lemmatisering. Nye com:531-541</change>
+            <change who="VTH" when="2015-08-17">Retter lemmatisering. Nye com:542-555</change>
+            <change who="VTH" when="2015-08-18">Retter lemmatisering. Nye com:556-573</change>
+            <change who="VTH" when="2015-08-19">Retter til. Nye com: 574-589</change>
+            <change who="VTH" when="2015-08-20">retter til. Nye com: 590-612</change>
+            <change who="VTH" when="2015-08-21">retter til. Nye com: 613-627.</change>
+            <change who="VTH" when="2015-08-24">retter til. Nye com: 628-632.</change>
+            <change who="VTH" when="2015-09-08">Retter efter KSRs redaktion. Ingen nye lemmata.</change>
+            <change who="VTH" when="2015-09-17">Retter efter TNs redaktion. Ingen nye lemmata.</change>
+            <change who="VTH" when="2015-09-24">Retter efter KNs redaktion. Ny com633-636.</change>
+            <change who="VTH" when="2015-09-25">Retter efter KNs redaktion. Nye com637-640.</change>
+            <change who="VTH" when="2015-10-19">Indsætter genre- og emneord</change>
+            <change who="VTH" when="2015-10-21">Retter rettelsesliste-kodningen</change>
+            <change who="VTH" when="2015-10-29">Indsætter unicodes.</change>
+            <change who="VTH" when="2015-12-01">Tilføjer attributten 'select' på app-notes</change>
+            <change who="VTH" when="2016-03-07">Retter genre- og emneord.</change>
+             <change who="VTH" when="2016-10-27">Retter 5 forekomster af fak1334 > fak212</change>
+           
+            
+            
+         </revisionDesc>
+    </teiHeader>
+    
+    <text type="txt">
+    
+    <!-- Opmærke to gange "den danske Bibel??" -->
+    <!--KN: vi emenderer ikke manglende punktummer ved forkortelser, fx N for N. (Napoleon), s. 52m) eller Rec for Rec.-->
+    <!--togange og tigange emenderes ikke. Findes hhv 29 og 17 gange i korpus, men ikke i ODS.-->
+    <!--to gange ieg. Rettes ikke til jeg-->    
+  
+
+        <pb type="periText" facs="1814_229_fax001.jpg"/>
+        <pb type="periText" facs="1814_229_fax002.jpg"/>      
+        
+        
+        
+        <front rend="&#x005B;Titelblad&#x005D;">
+            
+            
+            <titlePage type="first">
+                
+                <pb type="text" facs="1814_229_fax003.jpg" n="I" ed="A" rend="supp"/>
+                
+                
+                <docTitle>
+                    <titlePart type="main">Hvem er den falske Prophet?</titlePart>
+                    <titlePart type="main">Hvem forvirrer Folket?</titlePart>
+                    <titlePart type="part">Svar</titlePart>
+                    <titlePart type="part">til Recensenten i Litt. Tid. No. 12 og 13</titlePart><!-- titelopm?: <rs type="title" key="title127"> -->
+                </docTitle>
+                
+                <byline>ved</byline>
+                <docAuthor>N. F. S. Grundtvig,
+                    <note type="prof">Pr&#x00E6;st.</note>
+                </docAuthor>
+                
+                <fw type="longLine"/>
+                
+                <epigraph>
+                    <lg>
+                        <l rend="center">Jeg <seg type="com" n="com100">forstyrrer ikke</seg> <placeName key="fak458">Israel</placeName>, men du og dine
+                            Fr&#x00E6;nder, i det I forlode <hi rend="spaced"><seg type="com" n="com1">Jehovahs<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi> Bud,
+                            og du vandrede efter <rs type="myth" key="myth451">Baalim</rs>.</l>
+                        <l rend="secondIndentRight"><rs type="bible" key="1 Kong 18,18" rend="quote1787">1 Kong B. 18</rs>.</l>
+                    </lg> 
+                </epigraph>   
+                
+                <fw type="longLine"/>
+                
+                <docImprint>
+                    <pubPlace>Ki&#x00F8;benhavn, 1814.</pubPlace>
+                    <publisher>Forlagt af Andreas Seidelin.</publisher>
+                    <publisher>Trykt hos C. Gr&#x00E6;be.</publisher><!--helt sm som Krøn.G.-->
+                </docImprint>
+                
+            </titlePage>
+        </front>
+        <body>
+            
+<div type="Davids 27de Psalme">
+    
+    <pb type="text" facs="1814_229_fax004.jpg" n="II" ed="A" rend="supp"/>
+    <pb type="text" facs="1814_229_fax005.jpg" n="III" ed="A" rend="supp"/>
+    
+    <head rend="0"><rs type="bible" key="Sl 27" rend="normForm">Davids 27de Psalme</rs>.</head>
+    
+<lg n="1">    
+    <l><hi rend="size-1"><rs type="bible" key="Sl 27,1-2" rend="quote" subtype="bibleStart" n="bible1"/><hi rend="initial">M</hi>it Lys og min Frelse det er <hi rend="spaced"><seg type="com" n="com1">Jehovah<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi>,</hi></l>
+    <l><hi rend="size-1">For <hi rend="spaced">hvem</hi> skal jeg frygte endda?</hi></l>
+    <l><hi rend="size-1"><hi rend="spaced"><seg type="com" n="com1">Jehovah<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi> min Kraft er ilive,</hi></l>
+    <l><hi rend="size-1">For hvem skal forf&#x00E6;rdet jeg blive?</hi></l>
+    <l><hi rend="size-1">Heel n&#x00E6;r saae jeg Onde fremtr&#x00E6;de,</hi></l>
+    <l><hi rend="size-1"><seg type="com" n="com2">Alt som<!--lige som; som om. ODS 'alt' 2.5.--></seg> de mit Ki&#x00F8;d vilde &#x00E6;de,</hi></l>
+    <l><hi rend="size-1">Fjenden og <seg type="com" n="com3">Tr&#x00E6;ngeren<!--forfølgeren, undertrykkeren.--></seg> dog, <seg type="com" n="com4">der<!--da.--></seg> det gjaldt,</hi></l>
+    <l><hi rend="size-1">Snubled og faldt.<rs type="bible" key="Sl 27,1-2" rend="quote" subtype="bibleEnd" n="bible1"/></hi></l>
+</lg>
+
+<lg n="2">
+    <l><hi rend="size-1"><rs type="bible" key="Sl 27,3-4" rend="quote" subtype="bibleStart" n="bible2"/>Om ogsaa der mod mig sig leirer en H&#x00E6;r,</hi></l>
+    <l><hi rend="size-1">Dog Frygt kommer Hjertet ei n&#x00E6;r,</hi></l>
+    <l><hi rend="size-1">Hvor h&#x00F8;it saa Trompeterne <seg type="com" n="com5">gole<!--galede. DDO har ikke formen.--></seg>,</hi></l>
+    <l><hi rend="size-1">Jeg veed, hvorpaa jeg monne stole,</hi></l>
+    <l><hi rend="size-1">Jeg Eet bad <hi rend="spaced"><seg type="com" n="com6">Jehovah<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi> mig unde,</hi></l>
+    <l><hi rend="size-1">Og derefter monne jeg <seg type="com" n="com7">stunde<!--hige, stræbe.--></seg>,</hi></l>
+    <l><hi rend="size-1">Altid at v&#x00E6;re tilhuse hos Gud,</hi></l>
+    <l><hi rend="size-1">Skue Hans Deilighed prud,</hi></l>
+    <l><hi rend="size-1"><seg type="com" n="com8">Speide<!--undersøge, udforske, DDO 'søge at få øje på' duer ikke.--></seg> Hans Borg.<rs type="bible" key="Sl 27,3-4" rend="quote" subtype="bibleEnd" n="bible2"/></hi></l>
+</lg>
+    
+    <lg n="3">
+        <l><hi rend="size-1"><rs type="bible" key="Sl 27,5-6" rend="quote" subtype="bibleStart" n="bible3"/>Naar ogsaa da kommer en Ulykkedag,</hi></l>
+        <l><hi rend="size-1">Han skjuler mig under Sit Tag,</hi></l>
+        <l><hi rend="size-1">Han lader Sin Telt mig beskygge,</hi></l>
+        <l><hi rend="size-1">Paa Klippen Han lader mig bygge</hi></l>
+        <l><hi rend="size-1"><hi rend="spaced">Ved Ham,</hi> naar mig Fiender omringe,</hi></l>
+        <l><hi rend="size-1">Jeg over dem h&#x00F8;it mig kan svinge,</hi></l>
+        <l><hi rend="size-1">Offret ledsages af Klangens<!--AP: læderet--> Basun</hi></l>
+        <l><hi rend="size-1">Til Hans Paulun.<rs type="bible" key="Sl 27,5-6" rend="quote" subtype="bibleEnd" n="bible3"/></hi></l>
+    </lg>
+    
+    <lg n="4">
+
+        <l><hi rend="size-1"><pb type="text" facs="1814_229_fax006.jpg" n="IV" ed="A" rend="supp"/>Jeg Tungen til Tone vil s&#x00E6;tte i Gang,</hi></l>
+        <l><hi rend="size-1">Og synge <hi rend="spaced"><seg type="com" n="com9">Jehovah<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi> en Sang,</hi></l>
+        <l><hi rend="size-1"><rs type="bible" key="Sl 27,7-8" rend="quote" subtype="bibleStart" n="bible4"/>B&#x00F8;i Herre! til Raabet Dit &#x00D8;re!</hi></l>
+        <l><hi rend="size-1">V&#x00E6;r naadig til mig at b&#x00F8;nh&#x00F8;re!</hi></l>
+        <l><hi rend="size-1">Du lod i mit Hjerte mig sige,</hi></l>
+        <l><hi rend="size-1">Vi efter Dit Aasyn skal hige,</hi></l>
+        <l><hi rend="size-1">Herre! Dit Ansigt det s&#x00F8;ger <seg type="com" n="com10">og<!--ogsaa.--></seg> jeg,<rs type="bible" key="Sl 27,7-8" rend="quote" subtype="bibleEnd" n="bible4"/></hi></l>
+        <l><hi rend="size-1"><rs type="bible" key="Sl 27,9-11" rend="quote" subtype="bibleStart" n="bible5"/>Skjul det nu ei!</hi></l>
+    </lg>
+    
+    <lg n="5">
+
+        <l><hi rend="size-1"><seg type="com" n="com11">Forskyd ei i Vrede<!-- ligner meget B, men er V --> Din Tjener fra Dig</seg>!</hi></l>
+        <l><hi rend="size-1"><hi rend="spaced">Min Hjelper!</hi> forlad ikke mig!</hi></l>
+        <l><hi rend="size-1">Nei, <hi rend="spaced">Frelser!</hi> Du ei mig forlader,</hi></l>
+        <l><hi rend="size-1">Forladt Mig har Moder og Fader,</hi></l>
+        <l><hi rend="size-1">Forlade mig maatte de Gamle,</hi></l>
+        <l><hi rend="size-1">Men Herren <seg type="com" n="com12">mig til dem skal samle</seg>,</hi></l>
+        <l><hi rend="size-1">Leed mig, o Gud! paa Din Vei, paa Din Sti</hi></l>
+        <l><hi rend="size-1">Fjenden forbi!<rs type="bible" key="Sl 27,9-11" rend="quote" subtype="bibleEnd" n="bible5"/></hi></l>
+    </lg>
+    
+    <lg n="6">
+        <l><hi rend="size-1"><rs type="bible" key="Sl 27,12-14" rend="quote" subtype="bibleStart" n="bible6"/>Lad ikke Modstandernes Villie skee!</hi></l>
+        <l><hi rend="size-1"><hi rend="spaced">Thi falskelig vidnede de,</hi></hi></l>
+        <l><hi rend="size-1">De aandede Uret. - O! hvis jeg ei trode</hi></l>
+        <l><hi rend="size-1">At see i de Levendes Lande Guds Gode! -</hi></l>
+        <l><hi rend="size-1">Dog, ei du mod Gud dig <seg type="com" n="com13">forhaste</seg>!</hi></l>
+        <l><hi rend="size-1">Dit Mod du kun ikke <seg type="com" n="com14">bortkaste<!--må bortkaste (optativ).--></seg>!</hi></l>
+        <l><hi rend="size-1">Hjertet da <seg type="com" n="com15">st&#x00F8;rker<!--styrker.--></seg> den Herre saa prud,</hi></l>
+        <l><hi rend="size-1"><hi rend="spaced">Bie efter Gud!</hi><rs type="bible" key="Sl 27,12-14" rend="quote" subtype="bibleEnd" n="bible6"/></hi></l>
+    </lg>
+    <fw type="longLine"/>
+    
+</div>
+
+<div type="Fortale"><!--Overvej, om skydningen skal imiteres...-->
+    <pb type="text" facs="1814_229_fax007.jpg" n="V" ed="A" rend="supp"/>
+    <head rend="1">Fortale.</head>
+
+    <p rend="noIndent"><hi rend="initial">D</hi>et er skeet, endelig er en Mand traadt op imod mig, som forstaaer mig, som veed paa en Maade
+hvad han vil og hvad han siger, visselig, naar Ordet maa have Modstandere, da &#x00F8;nsker jeg det saadanne, thi dem der <seg type="com" n="com16">halte til begge Sider</seg>,
+som snart b&#x00F8;ie sig, snart trodse, snart rose og snart laste, indr&#x00F8;mme <seg type="com" n="com17">Fors&#x00E6;tningerne<!--forudsætningerne, præmisserne.--></seg> og n&#x00E6;gte
+<seg type="com" n="com18">Slutningen<!--følgeslutningen.--></seg>, og modsige sig selv hvert &#x00D8;ieblik,
+dem kan Ingen <seg type="com" n="com19">svare for<!--tage til genmæle mod, ODS 'svare' 3.1.--></seg>, med dem kan Man        
+<pb type="text" facs="1814_229_fax008.jpg" n="VI" ed="A"/>hverken tale som Venner eller Fiender, thi de
+        vil v&#x00E6;re begge Dele og ere ingen af dem. Nei, da <seg type="com" n="com500">lover</seg> jeg min <seg type="com" n="com20">Recensent</seg> i de <seg type="com" n="com501">sidste</seg> Dage,
+han <seg type="com" n="com21">b&#x00E6;rer mig Sv&#x00E6;rdet lige under &#x00D8;inene</seg>, han forkynder mig aaben Feide paa Liv og D&#x00F8;d,
+han <seg type="com" n="com22">opkalder</seg> til Korstog imod mig, med ham lader der sig handle og tale, mod ham kan Man
+l&#x00F8;fte Skjold, mod ham kan Man trygt lade <seg type="com" n="com23">Glavindet<!--sværdet.--></seg> blinke, thi Blodbanneret staar som
+<seg type="com" n="com24">Hjelmbusk<!--prydelse/udsmykning af fjer, hesterhår o.lign oven i en hjelm.--></seg> paa hans Hoved, Sv&#x00E6;rdet beh&#x00F8;ver
+ei at frygte for at finde Venneblod i hans Aarer, han kan ikke klage, om han falder, thi
+han forlod sig paa sin fulde Rustning og paa sin Arms <seg type="com" n="com25">St&#x00F8;rke</seg>, og paa Varslerne fra Stjernehimlen
+og i Dyrs Indvolde, han ud&#x00E6;skede til Strid, ja han <seg type="com" n="com26">opkaldte</seg> Folket til at myrde
+den Eenlige; med gloende Jern i Haand, st&#x00E6;v<pb type="text" facs="1814_229_fax009.jpg" n="VII" ed="A"/>ner han mod mig, og siger det frit, han vil
+<seg type="com" n="com502">indbr&#x00E6;nde</seg> Ski&#x00E6;ndsels M&#x00E6;rke i min Pande, han sp&#x00E6;nder sin Bue af Jern og ryster sit <seg type="com" n="com503">Kaagger</seg>,
+saa det gnistrer af de gloende Pile. See! her er jeg, her staaer jeg, <rs type="title" key="title788">Bibelen</rs> er i min h&#x00F8;ire
+Haand, og Guds Ord er paa min Tunge, og Troen er i mit Hjerte og Salighedens Haab er
+paa mit Hoved, see det er min Rustning, hvorpaa jeg forlader mig, det er mit Sv&#x00E6;rd, mit
+Skjold og min Hjelm. <seg type="com" n="com504">Gak</seg> n&#x00E6;rmere, <rs type="myth" key="myth111">Jette</rs>!
+jeg staaer, <seg type="com" n="com505">omringer</seg> mig, I Tusinder! ei <seg type="com" n="com520">et
+Straasbred</seg> skal jeg vige, ingen Hjelpere skal jeg fremkalde fra Verdens fire Hj&#x00F8;rner, <rs type="bible" key="Sl 118,7" rend="eg">Herren
+er min Hjelper</rs>, paa Ham vil jeg stole, som skrevet staaer: <rs type="bible" key="Es 8,9-18" rend="quote1787" subtype="bibleStart" n="bible7"/><seg type="com" n="com506">gi&#x00F8;rer Selskab</seg>, I Karle! og <seg type="com" n="com507">omgjorder
+eder</seg>, og <seg type="com" n="com508">bliver</seg> dog s&#x00F8;nderknusede, <seg type="com" n="com509">beslutter</seg> et
+Raad, og det skal blive til Intet, <seg type="com" n="com510">taler</seg> et Ord og <pb type="text" facs="1814_229_fax010.jpg" n="VIII" ed="A"/>det skal ikke bestaae, thi med os er Gud. <seg type="com" n="com511">Saa</seg>
+sagde Herren til mig, <seg type="com" n="com512">der</seg> Han tog mig ved
+Haanden og undervisde mig, at jeg skulde ikke vandre paa dette Folks Veie: I skal ikke sige:
+<seg type="com" n="com513">Forbund</seg>! <seg type="com" n="com613">efter</seg> alt Det, som dette Folk <seg type="com" n="com514">siger</seg>:
+<seg type="com" n="com515">Forbund</seg>! <seg type="com" n="com516">frygter</seg> ikke, som de frygte, og <seg type="com" n="com517">forf&#x00E6;rdes ikke</seg>! Den <seg type="com" n="com27">Herre Zebaoth</seg> ham skal I
+forherlige, Han skal v&#x00E6;re eders Frygt og eders Forf&#x00E6;rdelse, og Han skal v&#x00E6;re til en Helligdom,
+og til en Anst&#x00F8;dssteen og til en Forargelses Klippe for de tvende <placeName key="fak458">Israels</placeName> Huse, og mange
+af dem skal st&#x00F8;de sig og falde, og s&#x00F8;nderbrydes og besn&#x00E6;res og fanges, bind Vidnesbyrdet til,
+beseigl en Lov i Mine Disciple! &#x2013; Ja, jeg vil bie efter Herren, Han, Som har skjult Sit
+Ansigt for <persName key="pe305">Jakobs</persName> Huus, og jeg vil vente paa
+Ham, see, jeg og de B&#x00F8;rn, som <hi rend="spaced"><seg type="com" n="com28">Jehovah<!--Guds navn ifølge ældre bibeloversættelser.--></seg></hi> <pb type="text" facs="1814_229_fax011.jpg" n="IX" ed="A"/>haver givet mig til Tegn og <seg type="com" n="com518">underlige Gierninger</seg> i <placeName key="fak458">Israel</placeName> fra den <seg type="com" n="com519">Herre Zebaoth</seg> Som boer
+paa <placeName key="his581">Zions</placeName> Bjerg. (Esa. 8.<!--punktum utydeligt i alle tre ekspl.-->)<rs type="bible" key="Es 8,9-18" rend="quote1787" subtype="bibleEnd" n="bible7"/> Ja, du <persName key="pe1577">Goliath</persName>
+som <seg type="com" n="com522">ganger</seg> i Spidsen for Fjendernes H&#x00E6;r, <rs type="bible" key="1 Sam 17,43-44" rend="reference">band mig kun ved dine Guder! giv kun mit Ki&#x00F8;d til
+Himmelens Fugle og Markens Dyr</rs>, om du det formaaer! men anklag ei mig, naar du falder,
+thi ikke ud&#x00E6;skede jeg dig, kun fordi dine Ord ere st&#x00E6;rke mod Ham, Som boer i det H&#x00F8;ie, og
+mod Hans Sl&#x00E6;gt paa <app select="yes" type="corrNote"><lem wit="GV">Jorden</lem><rdg wit="A">Jordeu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>, derfor maa jeg
+<seg type="com" n="com523">gange</seg> dig n&#x00E6;r og ikke spare, fordi L&#x00F8;gn er dit Skjold, derfor maa det s&#x00F8;nderbrydes.</p>
+  
+<p rend="firstIndent">Ja, du Folk! I Alle som bruge det danske Tungemaal, som have h&#x00F8;rt mit Ord
+eller h&#x00F8;re det nu, <seg type="com" n="com29">m&#x00E6;rker paa<!--bemærk, læg mærke til.--></seg> min Tale! Det
+er sagt for eders &#x00D8;ren, at jeg forvilder eders <pb type="text" facs="1814_229_fax012.jpg" n="X" ed="A"/>Sj&#x00E6;le, at jeg som Hovmods og &#x00C6;rgierrigheds
+Slave <seg type="com" n="com30">lumskelig<!--lumkst.--></seg> misbruger Troens hellige Sag
+og <rs type="title" key="title788">Bibelens</rs> Myndighed til at forf&#x00F8;re eder fra
+den gode Vei, at jeg er <rs type="bible" key="Matt 7,15" rend="reference">en falsk Prophet, kommen
+til eder i Faarekl&#x00E6;der, men indvortes en glubende Ulv</rs>; I ere <seg type="com" n="com31">opkaldte<!--kaldt sammen.--></seg> til at forf&#x00F8;lge
+mig med Ordets Sv&#x00E6;rd og Forhaanelsens Pile, som en Agerh&#x00F8;ne paa Bjergene, ja som en Ulv
+i Skoven. Have I mindste Alvor i eders Inderste, mindste Bekymring for eders ud&#x00F8;delige
+Sj&#x00E6;le, <seg type="com" n="com32">nu<!--nuvel.--></seg>, saa <seg type="com" n="com33">vaagner<!--vågn.--></seg> dog i Herrens Navn!
+jeg kalder eder ikke til Kamp <seg type="com" n="com34">uden mod<!--mod andet end.--></seg> eders
+Synder, men jeg kalder eder til Dom, der ligger <rs type="title" key="title788">Bibelen</rs> for eders &#x00D8;ine, den ligger mellem
+min Modstander og mig, han har budet eder at agte paa dens <seg type="com" n="com524">Taler</seg> og foragte mine, jeg
+har under Aarenes L&#x00F8;b <seg type="com" n="com525">stadelig</seg> peget paa den <pb type="text" facs="1814_229_fax013.jpg" n="XI" ed="A"/>samme hellige Bog, paa det Lys, som <seg type="com" n="com526">indledte
+vore F&#x00E6;dre</seg> i de rolige Boliger, jeg har sagt, at det var dens Ord jeg forkyndte, forkyndte
+som det staar klart for os alle, L&#x00E6;ge og L&#x00E6;rde, som det forkyndtes i <persName key="pe45">Christi</persName> Kirke giennem
+Aarhundreder, som det forkyndtes af <persName key="pe42">Morten
+Luther</persName> den Guds Mand <seg type="com" n="com527">der oplod den tillukkede Bog</seg>. Saaledes har jeg vidnet, og saaledes vidner jeg nu her for eders &#x00D8;ren, og
+for Guds den Alvidendes hellige Aasyn; min Modstander siger jeg lyver og sv&#x00E6;rger <seg type="com" n="com36">falskelig<!--falsk.--></seg>,
+at det ei er <rs type="title" key="title788">Bibelens</rs> og ei <persName key="pe42">Luthers</persName> L&#x00E6;rdom jeg
+f&#x00F8;rer, men mine egne og Andres Vildfarelser. Det er da aabenbart, han eller jeg vil forvilde eder fra Sandhed, <rs type="bible" key="Matt 7,15" rend="reference">han eller jeg er den
+falske Prophet, han eller jeg er den glubende Ulv</rs>, <rs type="bible" key="Matt 10,28" rend="allusion">han eller jeg vil myrde eders Sj&#x00E6;le og <pb type="text" facs="1814_229_fax014.jpg" n="XII" ed="A"/><seg type="com" n="com528">f&#x00F8;de</seg> Helvede med dem</rs>; de Ord jeg har talet
+til eder i Herrens Navn, fra den Dag, jeg spurgde: <rs type="title" key="title650">hvi er Herrens Ord forsvundet af
+Hans Huus?</rs> de skal d&#x00F8;mme ham og d&#x00F8;mme mig, d&#x00F8;mme os nu og paa den yderste Dag.</p>
+
+    <p rend="firstIndent">Dog, <seg type="com" n="com37">Rec.<!--recensenten.--></seg> frabeder sig <seg type="com" n="com38">Declamationer<!--bebrejdelser, se ODS deklamere 2.--></seg>,
+og, saalidt han kan vente, at jeg skal lade v&#x00E6;re at tale varmt om hvad jeg veed og f&#x00F8;ler er
+Sandhed, den allervigtigste Sandhed for Tid og Evighed, saa finder jeg det dog overeensstemmende
+med Sandhedens Tarv dennegang at giennemgaae hans Tale med al mulig Koldsindighed,
+for at det ei med <seg type="com" n="com39">noget Skin<!--nogen rimelighed, berettigelse.--></seg> skal
+kunne siges, at jeg vil bl&#x00E6;nde, <seg type="com" n="com40">paa det<!--for.--></seg> at det
+maa blive aabenbart, at jeg ei er forvirret af en <seg type="com" n="com41">bacchantisk<!--bakkantisk.--></seg> Ruus, men veed hvad jeg siger, <pb type="text" facs="1814_229_fax015.jpg" n="XIII" ed="A"/>og maa v&#x00E6;re enten Sandhedens eller L&#x00F8;gnens
+vitterlige Tjener. Til <seg type="com" n="com42">Rec.<!--recensenten.--></seg> vil jeg ikke vende
+mig, thi han forstaaer vel sig selv og mig for godt, til at min Tale skulde kunne overbevise ham, men
+til dem han <seg type="com" n="com43">opkaldte<!--kaldte sammen.--></seg>, ei til at d&#x00F8;mme os imellem,
+men kun til at bifalde og fuldbyrde den Dom, hvori Ki&#x00E6;rlighed, Forstand og &#x00C6;re ere mig
+fraskrevne, til dem, til alle Venner af Sandhed og &#x00E6;gte Gudsfrygt, vender jeg min Tale, og
+jeg veed <hi rend="spaced">de</hi> maa, de vil h&#x00F8;re mig, f&#x00F8;r de
+underskrive den gruelige Dom, f&#x00F8;r de stemple mig som en <seg type="com" n="com44">rasende</seg>, ugudelig Niding, der misbruger
+Guds Ord og et helligt Embed, og Guds Gaver og Folkets Gudsfrygt og Godtroenhed til
+at forf&#x00F8;re og forvilde sine Br&#x00F8;dre, ja, hvo der ei vil h&#x00F8;re mig rolig og alvorlig f&#x00F8;r han bifalder
+en saadan Dom, han stempler sig selv <pb type="text" facs="1814_229_fax016.jpg" n="XIV" ed="A"/>som Guds og Sandhedens Fjende, han skader
+ikke mig, men kun sig selv.</p> 
+
+    <p rend="firstIndent">Man vil i disse Blade finde en anden Tone end Man paa de sidste Aar er vant til i mine Forsvar, men Man <seg type="com" n="com530">bet&#x00E6;nke</seg>, at min Modstander og jeg forlange ei Skaansel af hinanden,
+kan ikke skaane hinanden, thi een af os er Sandhedens, den anden L&#x00F8;gnens vitterlige Tjener, og mellem dem er <seg type="com" n="com45">intet Samfund<!--ingen forbindelse.--></seg>.</p>
+    
+    <p rend="center">Khvn. den 15de April 1814.</p>
+    
+    <p rend="firstIndentRight">N. F. S. Grundtvig.</p>
+    <fw type="longLine"/>
+
+</div>
+
+<div type="&#x005B;Tekst&#x005D;">
+    <pb type="text" facs="1814_229_fax017.jpg" ed="A" n="1" rend="supp"/>
+    <p rend="noIndent"><hi rend="initial">J</hi>eg vil ikke tale om, hvi <seg type="com" n="com46">Rec.<!--recensenten.--></seg> af den <rs type="title" key="title698">Spaadom</rs>
+jeg har udgivet tager Anledning til at falde over mig, jeg vil kun anm&#x00E6;rke, at den Mand der vil <seg type="com" n="com47">lade</seg> saa skaansom og retf&#x00E6;rdig vist ikke kan
+vedkiende sig at l&#x00E6;gge synderlig V&#x00E6;gt paa et saadant Foretagende af mig, thi, s&#x00E6;t at den Tale var Galskab, da var dens Udgivelse jo dog
+ei v&#x00E6;rre end Udgivelsen af saamange vildfarende Forklaringer over Propheternes Spaadomme, hvilke
+saamange christne M&#x00E6;nd, og selv en <persName key="pe2273">Newton</persName>, hvem
+<seg type="com" n="com49">Rec.<!--recensenten.--></seg> vist dog ei derfor vil kalde afsindig, have
+ladet see Lyset. Allermindst skulde Man t&#x00E6;nke det kunde udl&#x00E6;gges som uhyre Daarskab, at udgive en
+Forklaring, der i Hovedsagen holder sig til det, der er Vished for hver Christen, nemlig, at vi
+have en stor Strid mod <persName key="pe45">Christi</persName> Kirke og en svar
+Forf&#x00F8;lgelse ivente; thi skal <app select="yes" type="addNote"><lem wit="A">en</lem><rdg type="add" wit="Rettelsesliste">en saadan</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Forklaring om
+hvilken baade Forfatter og Udgiver bekiende, at Tiden maa vise om den er rigtig, v&#x00E6;re uhyre Daarskab,
+da maa det v&#x00E6;re fordi Christendom er Daarskab, thi at hver Christen, som troer han
+kan angive nogle <seg type="com" n="com50">M&#x00E6;rker paa</seg> den farlige Tids
+N&#x00E6;rmelse, b&#x00F8;r medde<!--AP: dd læderet-->le sine Br&#x00F8;dre dem til Advarsel
+og Opv&#x00E6;kkelse er jo <seg type="com" n="com531">ligefrem</seg>. Har han seet feil, nu vel, da skedte derved ei engang saa<pb type="text" facs="1814_229_fax018.jpg" ed="A" n="2"/>megen Skade, som naar en Veirprophet forudsiger
+en t&#x00F8;r eller vaad Dag, som udebliver, thi <rs type="bible" key="Mark 13,35-37" rend="eg">den Vagt Christne formanes til at holde</rs>, <rs type="bible" key="Rom 13,12 og Ef 6,11-13" rend="reference">den
+Rustning de bydes at if&#x00F8;re sig</rs>, have de h&#x00F8;ilig behov, om saa deres &#x00D8;ine aldrig faae at see <rs type="bible" key="Dan 12,1 og Matt 24,21" rend="allusion">den
+store <seg type="com" n="com51">Fristelse<!--prøvelse, trængsel--></seg>, som skal komme over Jorderige</rs>.
+Saameget haaber jeg er nok til at vise hver retsindig Mand, at hin Spaadoms Udgivelse er
+kun et maadeligt Beviis paa Forvirring, men kun Beviis paa at jeg anseer <seg type="com" n="com52">Fristelsens</seg> Stund
+for at v&#x00E6;re n&#x00E6;r, hvilket dog ingen Br&#x00F8;de kan v&#x00E6;re for en Christen, <rs type="bible" key="Matt 25,13" rend="reference">hvis Mester har budet
+alle at vaage og v&#x00E6;re beredte, fordi Ingen veed Tiden eller Stunden</rs>; Spaadommen selv og min
+Fortale skal jeg siden omtale, men Saameget burde vel erindres, for at den velsindede L&#x00E6;ser
+mere rolig k<!--typen er væsentligt hævet i alle tre ekspl.-->an betragte det &#x00F8;vrige Beviis paa
+Forvirring og paa det som v&#x00E6;rre er, <seg type="com" n="com53">hvilket</seg> <seg type="com" n="com533">Rec.<!--recensenten.--></seg>
+<seg type="com" n="com534">tager<!--uddrager--></seg> af min Skribentcharacteer i det Hele og af enkelte Yttringer i S&#x00E6;rdeleshed.</p>
+    
+    <p rend="firstIndent"><seg type="com" n="com54">Rec.<!--recensenten.--></seg> opstiller det strax som en afgjort Sag,
+at jeg har forvirret mange Hoveder, hvoraf han veed det, skal jeg ei kunne sige, jeg veed, Gudskeelov!
+Ingen, som ved mig er forvirret, imidlertid kan jeg, saalidt som Nogen borge for at
+der Ingen er, thi det er jo vist, at mange Hoveder ere blevne forvirrede ved <rs type="title" key="title788">Skriftens</rs> L&#x00E6;sning selv, men det er ligesaa vist, at det ei
+var <rs type="title" key="title788">Skriftens</rs> Skyld, og mindst skulde Man
+vente, at Skyld kunde tilregnes mig for Saadant i en Tid, da Man har seet saamange Hoveder <pb type="text" facs="1814_229_fax019.jpg" ed="A" n="3"/>forvirrede ved <seg type="com" n="com535">Allehaande</seg>, f. Ex. ved <persName key="pe508">Kants</persName> og <persName key="pe54">Schellings</persName> Skrifter, uden at Man gav dem
+Skyld derfor. Dog, hermed vil jeg slet ikke ansees undskyldt, det kommer kun derpaa an, om
+jeg har holdt mig, saa n&#x00E6;r som muligt, til <rs type="title" key="title788">den
+Hellige Skrift</rs>, har jeg det, da er jeg angerl&#x00F8;s, hvis ikke, da er jeg skyldig, og mine egne Tanker
+derom skal jeg sige paa et beqvemmere St&#x00E6;d.</p>
+    
+    <p rend="firstIndent">Istedenfor nu at bevise sin Paastand om den store Forvirring jeg sk<!--AP: læderet-->al have foraarsaget springer
+<seg type="com" n="com55">Rec.<!--recensenten.--></seg> til at sige, hvormed det er skeet. Om
+hvilke Evner Gud har forlenet mig, vil jeg ikke tvistes med ham, thi vi veed det jo alle, at <rs type="bible" key="Matt 25,14-30" rend="allusion">det
+vigtige Sp&#x00F8;rgsmaal er ikke hvormange eller hvor faa, hvorstore eller hvor smaae <seg type="com" n="com56">Pund<!--evner, talenter.--></seg> Gud nedlagde
+hos os, men hvorledes vi bruge dem</rs>, og herom siger <seg type="com" n="com57">Rec.<!--recensenten.--></seg> at jeg virkede paa Hoben ved
+en tillidsfuld Yttring af mine Meninger og ved den Uklarhed og det Vilderede, som hindrede den
+u&#x00F8;vede L&#x00E6;ser eller H&#x00F8;rer i at giennemskue mine Paastandes Intethed (<seg type="com" n="com58">Ugrund<!--grundløshed, mangel på grundlag, berettigelse.--></seg>). I Forbigaaende
+maa jeg anm&#x00E6;rke, at dersom Selvtillid i Yttringer, Uklarhed og Vilderede, vare nok til at
+virke paa Hoben, da maatte vor Tids Philosopher og is&#x00E6;r Naturphilosopherne aldeles have henrevet
+Folkene, thi paa disse Egenskaber fattedes det dog visselig ikke deres <seg type="com" n="com614">Taler</seg>; men <app select="yes" type="combNote"><lem wit="GV">dern&#x00E6;st</lem><rdg wit="A">dern&#x00E6;st-</rdg><note type="add">overfl&#x00F8;dig bindestreg ved linjeskift</note><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> <seg type="com" n="com59">undskylde Rec.</seg>, at jeg ikke ganske kan tro ham paa hans Ord, og det gaaer udentvivl flere ligedan. Hvad <hi rend="spaced">Selvtilliden</hi> angaaer, da er <pb type="text" facs="1814_229_fax020.jpg" ed="A" n="4"/>det vitterligt, at jeg i al min Tale og Skrift om Christendom, og min Tale om <placeName key="fak24">Nordens</placeName> Myther indtog dog vel ikke Hoben, altid har beraabt
+mig paa <rs type="title" key="title788">Bibelen</rs>,  og i en Tid, da hardtad Alle, <seg type="com" n="com60">Rec.<!--recensenten.--></seg> ogsaa<!--AP: spies-->, <hi rend="spaced">beraabe sig paa deres
+egen Fornuft,</hi> synes det lidt underligt, om ikke latterligt, at sigte mig for Selvtillid,
+fordi jeg <hi rend="spaced">ikke</hi> vil stole paa mig selv. Hvad nu Uklarheden og Vilderedet angaaer, da er det
+<seg type="com" n="com61">vist nok<!--ganske rigtigt.--></seg>, at Saadant spores i mine f&#x00F8;rste Arbeider,
+thi Naturphilosophien havde smittet af, Gudskeelov! ei paa mit Hjerte, men dog paa min
+Tankegang og mit Tungemaal, men disse <seg type="com" n="com62">Taler</seg>, som Hoben aldrig kiendte, kan dog ikke have
+forvirret den, og at de vare langt fra at finde stort Bifald i den Kreds der h&#x00F8;rde dem er <app select="yes" type="corrNote"><lem wit="GV">vitterligt</lem><rdg wit="A">vitligt</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> nok. At Nogle, dog ikke her, siden har faaet isinde at rose dem er <seg type="com" n="com63">vist nok<!--ganske vist.--></seg> slemt, og
+jeg er ikke deri uskyldig, men jeg har &#x00E6;rlig bekiendt denne Feil, og gjort alt Mit til at forhindre
+dens skadelige F&#x00F8;lger. Dog, <seg type="com" n="com64">Rec.<!--recensenten.--></seg> maa
+jo tale om de mundtlige og skriftlige <seg type="com" n="com615">Taler</seg>, som kunde <seg type="com" n="com65">have Indgang<!--vinde tilslutning, få udbredelse.--></seg> hos <app select="yes" type="corrNote"><lem wit="GV">Folket,</lem><rdg wit="A">Folket-</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app><!-- Ellers måske fejl for komma eller ingenting--> om mine Pr&#x00E6;kener og om mine religj&#x00F8;se Skrifter fra min <rs type="title" key="title650">Dimispr&#x00E6;ken</rs><!--den prøve i prædikekunst, som en teologisk kandidat skulle aflægge forud for ansættelse i et præsteembede. Kaldtes også prøveprædiken. Grundtvig holdt sin dimisprædiken den 17. marts 1810 og udgav den under titlen "Hvi er Herrens Ord forsvundet af hans Hus?, se indledningen her.".--> af, thi hvad Folket aldrig saae eller
+h&#x00F8;rde, eller hvad jeg for l&#x00E6;nge siden selv offenlig har misbilliget, kan det dog vel ikke v&#x00E6;re, som har forvirret de Mange.</p>
+    
+    <p rend="firstIndent">Nu er det uimodsigeligt, at jeg, siden 1810 da mit Navn og min Skrift f&#x00F8;rst begyndte at kiendes af hvad <seg type="com" n="com66">Rec.<!--recensenten.--></seg> kalder Hoben, har beflittet <pb type="text" facs="1814_229_fax021.jpg" ed="A" n="5"/>mig paa baade i Kirke og Bog, at sige min Mening i saa tydelige, bestemte og gj&#x00E6;ngse Ord,
+som det var mig muligt, i Stilen kan da Vilderedet ei v&#x00E6;re, det maa v&#x00E6;re i Tankerne; uagtet
+nu den der t&#x00E6;nker vildt, neppe kan tale tydeligt, lader jeg dog dette for det F&#x00F8;rste <seg type="com" n="com536">staae ved
+sit V&#x00E6;rd</seg>, og vil kun bem&#x00E6;rke at denne <app select="yes" type="corrNote"><lem wit="GV"><seg type="com" n="com67">Recs.</seg></lem><rdg wit="A">Rec.</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>
+Paastand synes lidt uforenelig med den n&#x00E6;stf&#x00F8;lgende, at jeg har forstaaet at gribe det i Tidsalderens
+Aand, som maatte begunstige mit Foretagende, thi var jeg selv i Vilderede og talde,
+som <seg type="com" n="com68">Rec.<!--recensenten.--></seg> et andetsteds ret underlig udtrykker sig,
+i indsigtsl&#x00F8;s Begeistring, da har jeg jo ikke vidst hvad jeg gjorde, og havde da langt mindre
+havt mit Maal saa klart for &#x00D8;ie, at jeg listig kunde bruge Tidsalderens Aand til at udf&#x00F8;re
+mine Planer. Een af Delene kan da kun v&#x00E6;re <app select="yes" type="corrNote"><lem wit="GV"><seg type="com" n="com69">Recs.</seg></lem><rdg wit="A">Rec.</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Mening og da han saa udf&#x00F8;rlig har s&#x00F8;gt,
+at bevise min Snedighed, er den Tale om Forvirring da vel kun en Flig af den <rs type="bible" key="1 Pet 4,8" rend="allusion">Ki&#x00E6;rligheds
+Kaabe, hvormed <seg type="com" n="com70">Rec.<!--recensenten.--></seg> vil skjule, ikke min Forgribelse,
+men L&#x00E6;sernes &#x00D8;ine</rs>, saa de ei skal see hans Anslag, f&#x00F8;r de ere hildede i den dobbelte
+Snare.</p>
+    
+    <p rend="firstIndent"><seg type="com" n="com70">Rec.<!--recensenten.--></seg> giver nu en Skildring af de Omst&#x00E6;ndigheder,
+under hvilke jeg fremtraadte og jeg maa <seg type="com" n="com71">love<!--rose.--></seg> den <seg type="com" n="com72">Konst</seg>, hvormed han veed at lave
+sine L&#x00E6;sere et mageligt Stade til at betragte mig, <seg type="com" n="com537">dog nei</seg>, til at <seg type="com" n="com73">oversee<!--evt. i betydningen se ned på / ringeagte.--></seg> mig fra, i det han
+indbilder dem, at Alt, hvad der paa nogen Maade kunde agtes for Ret og Sandt i min <pb type="text" facs="1814_229_fax022.jpg" ed="A" n="6"/>Tale, var <seg type="com" n="com74">alt<!--allerede.--></seg><!--AP: spies--> forud sagt langt bedre og klarere,
+hvad der tilh&#x00F8;rde mig, var kun at eftersnakke, udtv&#x00E6;re, overdrive og forvanske San<!--svært at afgøre, om det er u eller n i alle tre ekspl.-->dhederne,
+for at misbruge dem til &#x00E6;rgierrige Hensigter. Et saadant Konstv&#x00E6;rk maa betragtes heelt og
+med Ki&#x00E6;rlighed for at nydes, og jeg skulde vel bare mig for at r&#x00F8;re det med mine plumpe H&#x00E6;nder,
+dersom jeg ikke saae, at det manglede det lille Fortrin, som <seg type="com" n="com75">Rec.<!--recensenten.--></seg> selv tilstaaer, at h&#x00F8;re
+til Kunstfuldkommenhed, en ret Forening af <hi rend="spaced">Sandhed</hi> med Ski&#x00F8;nhed. Denne Mangel
+er is&#x00E6;r <seg type="com" n="com76">&#x00F8;iensynlig<!--synlig, tydelig. DDO = tilsyneladende.--></seg> paa det allerfornemste St&#x00E6;d,
+der hvor Tidens religj&#x00F8;se Vendepunkt er afbildet med saa glimrende Farver. Det heder nemlig: &#x201C;En fornyet Str&#x00E6;ben mod det Guddommelige begyndte da <app select="yes" type="corrNote"><lem wit="GV">nu</lem><rdg wit="A">uu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> (efter den franske Revolution) hos mange af de h&#x00F8;iere begavede Aander, at aabenbare sig i Livet, som i Konst 
+og Videnskab. Overalt s&#x00F8;gde Man Tingenes Sammenh&#x00E6;ng med deres evige Udspring, i
+Naturen, i Verdensbegivenhederne, i de h&#x00F8;iere Ahnelser, der opfylde vort eget Bryst. Den sig
+selv nu bedre forstaaende Fornuft viste Menneskene tilbage til de Religjonshemmeligheder, en
+overilende <app select="yes" type="corrNote"><lem wit="GV">Forstandsbrug</lem><rdg wit="A">Forstandsbrng</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> havde forf&#x00F8;rt dem
+til at forlade, Meget antydedes, andet <seg type="com" n="com77">forbetydedes<!--blev forudsagt, blev varslet.--></seg>, alt sattes i Bev&#x00E6;gelse.&#x201D; Efter dette deilige
+Lys kommer Skyggen, hvori de staae, som enten fore uforsigtig frem, eller pralede med de
+mange Anvendelser der paatr&#x00E6;ngde sig selv middelmaadige Hoveder fra det ny Stade, som om <pb type="text" facs="1814_229_fax023.jpg" ed="A" n="7"/>det var ny <seg type="com" n="com636">Ideer, eller eftersnakkede, udtrak og
+udsp&#x00E6;ndte til at danne skr&#x00E6;kkelige eller latterlige Vanskabninger</seg>. I dette smukke Selskab staaer
+da jeg i tre smukke Maader, som Mytholog, Historieskriver og Theolog. <seg type="com" n="com78">Rec.<!--recensenten.--></seg> kan ikke forlange,
+at jeg skal lystes ved det Stade han har beskikket mig, han kan ei heller fort&#x00E6;nke mig i,
+at jeg gaaer <hi rend="spaced">min</hi> Vei og lader ham blive
+staaende i Kredsen, hvor han lyster, men vil han <seg type="com" n="com79">holde<!--beholde/holde på.--></seg> mig, da maa han f&#x00F8;rst besvare to
+Sp&#x00F8;rgsmaal tilfredsstillende: f&#x00F8;rst: <hi rend="spaced">hvor og hos hvem</hi> hin herlige religj&#x00F8;se Str&#x00E6;ben yttrede
+sig, og dern&#x00E6;st, hvorledes jeg har forvansket den? Det turde falde ham lidt tungt at
+svare, thi ellers kunde et Par Tr&#x00E6;k og Navne af den virkelige Verden, som <seg type="com" n="com80">Rec.<!--recensenten.--></seg> jo dog <app select="yes" type="combNote"><lem wit="GV">elsker,</lem><rdg wit="A">elskerʻ</rdg><note type="add">omvendt komma</note><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>
+givet Maleriet et Liv og en Klarhed, som vel Flere end jeg nu savne deri. Er det <seg type="com" n="com81">saa<!--saaledes.--></seg>, at
+de Skribentere som vil skjule Tomhed, eller bl&#x00E6;nde og forvirre, beflitte sig paa Dunkelhed,
+og heri kan jeg ikke modsige <seg type="com" n="com82">Rec.<!--recensenten.--></seg>, da turde
+Mange finde hans egen Talemaade ikke endda saa lidt mist&#x00E6;nkelig. Dog, som sagt, <seg type="com" n="com82">Rec.<!--recensenten.--></seg> kan
+igien udslette denne Mistanke ved at besvare disse Sp&#x00F8;rgsmaal tilfredstillende, jeg maa derimod
+bekiende, at naar han ikke mener den &#x00E6;dle <persName key="pe875">Stolbergs</persName> christelige <seg type="com" n="com83">Taler</seg>, og de kan ei menes
+da det <seg type="com" n="com84">Sagde<!--sagte.--></seg> ei passer paa dem og <seg type="com" n="com85">Rec.<!--recensenten.--></seg>
+desuden erkl&#x00E6;rer ham for en Vildfarende, da maa Man n&#x00F8;dvendig t&#x00E6;nke paa <persName key="pe54">Schelling</persName> og de &#x00F8;vrige
+Naturfilosopher, om hvilke Talen ogsaa i alle <pb type="text" facs="1814_229_fax024.jpg" ed="A" n="8"/>Henseender synes at dreie sig. Nu veed Man,
+eller burde i det Mindste vide, at disse Herrer ei antage nogen fuldkommen, levende Gud, eller
+noget virkelig Ondt, (Ondt som aldrig kan blive Godt) eller nogen Straf efter D&#x00F8;den, at de kun lege
+paa den bespotteligste Maade med christelige Sandheder og <rs type="title" key="title788">Bibelens</rs> Ord, som med favre Myther
+og Hieroglypher, hvilke Hoben skal tage saa nogenlunde bogstavelig, medens de Indviede ansee
+deres egen Viisdom for det &#x00E6;theriske V&#x00E6;sen der skjuler sig i Christendommens Taage. At en saadan
+Tilbagevisning til Troens Hemmeligheder er &#x00F8;nskelig og for&#x00E6;dlende for Livet, det maa en
+Anden sige, mine Tanker om Naturfilosophiens V&#x00E6;sen og Indflydelse saavel paa Tiden i det
+Hele, som paa mig selv har jeg aabenhjertig, og som jeg mener, tydelig sagt,<note type="footnote"><p rend="noIndent">I min <rs type="title" key="title629">Kr&#x00F8;nike</rs> og <rs type="title" key="title3169">Gienm&#x00E6;let</rs>.</p></note> og her vil jeg
+kun bem&#x00E6;rke, at min <rs type="title" key="title341">Afhandling om Religjon
+og Liturgie</rs>, <seg type="com" n="com633">den Tale</seg> af mig, som mest minder
+om Naturfilosofie, og derfor recenseredes som den
+f&#x00F8;rste Yttring af den ny tydske Religjonsfilosofie
+i <placeName key="fak14">Danmark</placeName>, paa det Bestemteste modsagde
+denne i Hovedsagen:<note type="footnote"><p rend="noIndent">At der imidlertid ere <seg type="com" n="com86">galne<!--gale, vanvittige.--></seg> Udtryk imellem,
+indr&#x00F8;mmer jeg saare gierne, jeg vil ingenlunde forsvare dens mange Feil, men kun oprede
+Sagen.</p></note> i Henseende til den historiske Virkelighed af <rs type="title" key="title788">Bibelens</rs> Fort&#x00E6;llinger, det
+uforsonlige Fjendskab mellem Godt og Ondt, og <pb type="text" facs="1814_229_fax025.jpg" ed="A" n="9"/>Helvedstraffenes ei alene Virkelighed men Evighed.
+Var dette en Forvanskning af Sandheden, en Fordunkling af Lyset, vel, saa har jeg <seg type="com" n="com87">alt<!--allerede.--></seg>
+fra Begyndelsen, og <seg type="com" n="com88">end<!--endnu.--></seg> mere siden, forvansket
+og fordunklet, men da gi&#x00F8;r <rs type="title" key="title788">Bibelen</rs> det ogsaa,
+ski&#x00F8;ndt <seg type="com" n="com89">Rec.<!--recensenten.--></seg> n&#x00E6;gter det, og vil forklare min Tales
+<seg type="com" n="com90">Indgang<!--tilslutning, udbredelse.--></seg> af det ligesaa un&#x00E6;gtelige, som bedr&#x00F8;velige
+Ubekiendskab med den, hvilket er saa almindeligt; dog om denne Hovedsag skal vi siden tales ved, nu vil jeg f&#x00F8;lge <seg type="com" n="com91">Rec.<!--recensenten.--></seg></p>
+    
+    
+    
+<p rend="firstIndent">&#x201C;Under disse Omst&#x00E6;ndigheder, siges der, fremstod<!--klat i o'et i alle tre ekspl--> Grundtvig to Gange som <hi rend="spaced">Partih&#x00F8;vding</hi>. Neppe havde <persName key="pe3">Oehlenschl&#x00E4;gers</persName>
+digteriske Blik i den nordiske Oldtid begeistret det danske Folk, f&#x00F8;r Grundtvig fremstod som
+Overbegeistret, og saae dybt ned paa <persName key="pe3">Oehlenschl&#x00E4;ger</persName>, der ei kunde n&#x00F8;ies med at v&#x00E6;re blot
+nordisk, og paa de L&#x00E6;rde, der ei havde fundet det samme System deri, som han.&#x201D;</p>
+    
+    <p rend="firstIndent">Vare <seg type="com" n="com92">Recs.<!--recensentens.--></seg> forrige Yttringer dunkle og
+ubestemte, da ere disse derimod saa klare, bestemte og tillidsfulde, at dersom jeg havde glemt
+min F&#x00E6;rd, kunde jeg ordenlig fristes til at tro de vare sande, nu derimod fristes jeg kun til at
+tro <seg type="com" n="com93">Rec.<!--recensenten.--></seg> vil pr&#x00F8;ve, hvorvidt<!--emendering? ellers tror man, at hvorvidt indleder en spørgende sætning--> hans L&#x00E6;seres Vankundighed
+gaaer om de Ting, der ere skedte for deres &#x00D8;ine. Jeg skal togange v&#x00E6;re fremtraadt
+som <hi rend="spaced">Partieh&#x00F8;vding,</hi> og dog maa det v&#x00E6;re vitterligt, at lige indtil denne Dag har
+jeg staaet ene mellem Skribenterne, mellem alle Abekattene har ikke en efterabet mig, naar jeg <pb type="text" facs="1814_229_fax026.jpg" ed="A" n="10"/>angrebes og haanedes forsvarede Ingen mig,
+hvor <app select="yes" type="corrNote"><lem wit="GV">er</lem><rdg wit="A">et</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> da det Parti, for hvilket jeg har v&#x00E6;ret H&#x00F8;vding? visselig, det maa v&#x00E6;re et saare roligt
+Partie, siden Publikum i 7 Aar ikke h&#x00F8;rde en Lyd fra det, medens andre Navne gienl&#x00F8;d for
+dets &#x00D8;ren.</p>
+
+    <p rend="firstIndent">Hvad nu i S&#x00E6;rdeleshed det Tidsrum angaaer,
+da jeg talde om <placeName key="fak24">Norden</placeName>, da veed <seg type="com" n="com94">mine
+Kyndinge<!--de, der kender mig.--></seg>, at <placeName key="fak24">Nordens</placeName> Oldtid var mig ki&#x00E6;r og
+ei ubekiendt f&#x00F8;r <persName key="pe3">Oehlenschl&#x00E4;ger</persName> <seg type="com" n="com95">slog Harpen<!--digtede.--></seg> om
+den, den der vil skildre mit Forfatterliv, burde
+vide, at min f&#x00F8;rste Afhandling om <placeName key="fak24">Nordens</placeName> Mythologie
+er &#x00E6;ldre end <persName key="pe3">Oehs</persName> <rs type="title" key="title306">nordiske Digte</rs>,<note type="footnote"><p rend="noIndent"><rs type="title" key="title72">Om Sangene i Edda</rs> <rs type="title" key="title125">Minerva</rs> Septbr. 1806.</p></note> som dog vel skulde v&#x00E6;re det der kunde undervise
+mig, og endelig ei fortie at min hele <seg type="com" n="com96">Beskuelse<!--evt. betragtning, anskuelse.--></seg>
+af <placeName key="fak24">Nordens</placeName> Mythologie er aldeles forskiellig fra
+den <persName key="pe3">Oeh.</persName> har vedkiendt sig, ski&#x00F8;ndt flere af hans
+digteriske Blik <hi rend="spaced">for mig</hi> hentydede paa den.
+Endelig skulde Man blues ved at sige, at <persName key="pe3">Oehs.</persName>
+Blik i <app select="yes" type="corrNote"><lem wit="GV"><placeName key="fak24">Nordens</placeName></lem><rdg wit="A">Rordens</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Oldtid begeistrede Folket og at
+jeg fremstod som dets selvgjorde Ordf&#x00F8;rer, thi det er jo dog vitterligt, at paa den Tid (1806
+&#x2014; 1808) br&#x00F8;d Folket sig kun saare lidt om hans Sang<!--digtning.-->, mindre om hans Blik i <placeName key="fak24">Norden</placeName> og allermindst om mine Afhandlinger og min <rs type="title" key="title76">Mythologie</rs>, som af alle, paa faa Enkelte n&#x00E6;r, ansaaes for et sv&#x00E6;rmerisk <seg type="com" n="com538">Grillenf&#x00E6;ngerie</seg>. F&#x00F8;rst
+da <persName key="pe3">Oeh.</persName> havde holdt op at synge<!--digte.--> og jeg at tale
+om <placeName key="fak24">Norden</placeName>, blev det Mode at oph&#x00F8;ie hans <pb type="text" facs="1814_229_fax027.jpg" ed="A" n="11"/>Sang, ja paa nogle St&#x00E6;der endog, at rose min
+Tale. Disse Ting ere saa vitterlige for hver den, der med vaagne &#x00D8;ine har seet Tidens Gang,
+at Man knap troer sine egne &#x00D8;ine, naar Man seer det Modsatte paastaaet af en Mand, hvis
+Skrift viser, at Vankundighed og S&#x00F8;vnighed ei ere hans Feil. Uimodsigelig<!--i'et er næsten udvisket i begge ekspl.--> vist er det da, at
+jeg ei kunde l&#x00E6;re min Tale om <placeName key="fak24">Norden</placeName> af <persName key="pe3">Oeh.</persName>,
+ski&#x00F8;ndt jeg aldrig vil n&#x00E6;gte, hvad jeg &#x00E6;rlig har bekiendt, at hans Harpes Toner gjorde dybt
+Indtryk paa mig, og at <rs type="title" key="title324">Vaulundurs Sagn</rs> begeistrede
+mig, endnu klarere, at jeg ved min Tale om <placeName key="fak24">Norden</placeName> og Roes over <persName key="pe3">Oeh.</persName> ingenlunde,
+kunde vente &#x00C6;re eller Bifald, Haan derfor det fik jeg derimod. Dog <seg type="com" n="com101">Rec.<!--recensenten.--></seg> paastaaer, at jeg
+saae dybt ned paa <persName key="pe3">Oeh.</persName>, og at min Roes kun
+var et Middel til at oph&#x00F8;ie mig selv, som hans Overmand. Naar det for saadanne Tings Skyld
+var Umagen v&#x00E6;rd, at bruge haarde Ord, da veed jeg nok, hvad jeg med Ret kunde sige, men jeg
+vil kun bede de L&#x00E6;sere, der fristes til at tro <seg type="com" n="com101">Rec.<!--recensenten.--></seg>, at <seg type="com" n="com102">efterl&#x00E6;se</seg> hvad jeg herom har skrevet<note type="footnote"><p rend="noIndent"><rs type="title" key="title72">Om Sangene i Edda</rs>. <rs type="title" key="title2">Om Asal&#x00E6;ren</rs>. (M. Mai 1807.) <rs type="title" key="title335">Om Videnskabelighed</rs> (Marts 1807.) <rs type="title" key="title167">Om Oehs. Baldur</rs> (Decbr. 1807) samt nogle St&#x00E6;der
+i min <rs type="title" key="title76">Mythologie</rs>.</p></note> og Man skal da finde, at jeg, istedenfor at see
+ned paa ham, saae op til ham, og beklagede i det H&#x00F8;ieste, at Digteren <hi rend="spaced">naar han behandlede
+et nordisk Stof,</hi> ei vilde <pb type="text" facs="1814_229_fax028.jpg" ed="A" n="12"/>holde sig til <placeName key="fak24">Norden</placeName>, ligesom jeg beklagede, at
+<persName key="pe972">Shakespears</persName> <rs type="title" key="title1806">Hamlet</rs> hos nordiske L&#x00E6;sere vakde
+Forventninger ved sit Navn, som den, trods sin Fortr&#x00E6;ffelighed, skuffede. At jeg ved min Roes
+paa den Tid ei kunde vente &#x00C6;re, har jeg viist, men jeg maa endnu bem&#x00E6;rke, at den <seg type="com" n="com103">Rec.<!--recensenten.--></seg> der
+<seg type="com" n="com104">lader<!--virker, tager sig ud.--></seg> saa bange for at sige et haardt Ord mere
+end der er hans Pligt, skulde vogte sig for at till&#x00E6;gge mig en Bev&#x00E6;ggrund, Ki&#x00E6;rlighed ikke
+engang tillod at formode, end sige at paastaae som afgjort. Hvad der allerklarest viser Paastandens <seg type="com" n="com105">Ugrund<!--grundløshed.--></seg>, er vel det, at jeg rosde <persName key="pe3">Oeh.</persName>
+meest, da Faa yndede ham, og at jeg derimod <seg type="com" n="com106">der</seg> han blev <seg type="com" n="com107">forrost<!--rost for meget.--></seg>, lastede netop det hos ham, der
+skaffede ham mest Yndest. Vilde Man da endelig have min Adf&#x00E6;rd i denne Sag til at v&#x00E6;re
+nederdr&#x00E6;gtig, var det dog klogere at sige, jeg rosde ham paa Trods og lastede ham siden af
+Misundelse, dog, dermed vilde det ikke passe, at jeg endnu siger: Gud har sat ham til min
+Overmand, og roser den samme Deel af hans Bane som f&#x00F8;r, det passede ei heller til det Paafund,
+at jeg var Partih&#x00F8;vding i Folket. Hvad nu min <rs type="title" key="title76">Mythologie</rs> i sig selv og Maaden, hvorpaa
+jeg i den omtalde andre M&#x00E6;nd, angaaer, da vil jeg ikke spilde Ord paa at forsvare en
+Bog, hvis Indhold jeg nu hverken kunde eller vilde gientage; Taage var der visselig for mit
+&#x00D8;ie, lidt af den Taage, hvis &#x00E6;theriske V&#x00E6;sen <seg type="com" n="com108">Rec.<!--recensenten.--></seg> hos Naturfilosoferne priser, hvilket <seg type="com" n="com109">og</seg> sees
+deraf, at disses Tilh&#x00E6;ngere paa somme St&#x00E6;der <pb type="text" facs="1814_229_fax029.jpg" ed="A" n="13"/>har begyndt at oph&#x00F8;ie Bogen. Kun det maa
+jeg <seg type="com" n="com110">end<!--endnu.--></seg> bem&#x00E6;rke, at jeg ikke saae ned paa nogen
+Mand, fordi han havde fundet <hi rend="spaced">et andet System</hi>
+i <placeName key="fak24"><seg type="com" n="com539">Norden</seg></placeName> end jeg, men at jeg kun lastede,
+<seg type="com" n="com111">vist nok<!--ganske vist.--></seg> stundom for haardt, de M&#x00E6;nd der
+<hi rend="spaced">Intet</hi> vilde finde i den <seg type="com" n="com112">uden<!--undtagen.--></seg> <seg type="com" n="com113">Ki&#x00E6;rlingesnak<!--kællingesnak, dvs. vrøvlet ell. løs, overtroisk snak.--></seg>,
+og dem der brugte de mythologiske Ord blot til Stads. Ingen skal sige, at jeg haanede <persName key="pe7">Suhm</persName>
+eller <persName key="pe1">Sandvig</persName> eller Nogen, der alvorlig havde syslet med disse Ting, ski&#x00F8;ndt jeg sagde, hvad
+der jo er vitterligt, at de ei havde fundet Rede i Mytherne.</p>
+    
+<p rend="firstIndent"><seg type="com" n="com114">Rec.<!--recensenten.--></seg> bem&#x00E6;rker rettelig, at dette kun er Lidet
+mod det, hvortil han nu vender Talen, nemlig Religjonens hellige Sag. Herom paastaaer
+han, at min vilde, indsigtsl&#x00F8;se Begeistring misbrugde den Alvor og Str&#x00E6;ben og L&#x00E6;ngsel efter
+Gud som vilde ledet Menneskene til h&#x00F8;iere Lys og Harmonie, misbrugde dem til at anrette nye
+Forvirringer. I Begyndelsen af 1807 talde jeg f&#x00F8;rstegang offenlig Religjonens og Christendommens
+Sag, hvor var da den Alvor, den Str&#x00E6;ben, den L&#x00E6;ngsel efter Gud, som jeg misbrugde?
+Kundgjorde virkelig <!--AP: spies-->den liturgiske Feide, som just dengang f&#x00F8;rdes, disse Ting? og
+var Forvirringen ved <placeName key="fak74">Ki&#x00F8;ge</placeName> kanskee min Skyld?
+<app select="yes" type="corrNote"><lem wit="Rettelsesliste">vist h&#x00F8;rde</lem><rdg wit="A">h&#x00F8;rde</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Man christelige R&#x00F8;ster, som fra en <persName key="pe668">Hornsyld</persName>
+og <persName key="pe136">Mynster</persName>, ligesom f&#x00F8;r fra den gi&#x00E6;ve
+<persName key="pe1540">Bechman</persName><!--er ikke helt sikker på pe-nummeret-->, men er det dem jeg har forvirret?
+var disse R&#x00F8;ster Udtryk for Folkets eller Pr&#x00E6;sternes, eller Videnskabsm&#x00E6;ndenes &#x00D8;nsker, vare de
+Gienlyd af <persName key="pe54">Schellings</persName> og <seg type="com" n="com115">Consorters<!--fællers, tilhængeres.--></seg> Skrig, som <pb type="text" facs="1814_229_fax030.jpg" ed="A" n="14"/>dog vel er det der loves. Enhver burde vide, at disse Sp&#x00F8;rgsmaale maa besvares med
+Nei, at disse M&#x00E6;nd opstode i Mods&#x00E6;tning af den almindelige Stemning, at deres <seg type="com" n="com616">Taler</seg> hardtad
+vare som <rs type="bible" key="Es 40,3 og Matt 3,3" rend="allusion">R&#x00F8;ste i &#x00D8;rken</rs>, at de i al Fald baade vare og ere <hi rend="spaced">mindre</hi> uenige med mig
+end med de naturfilosofiske Theologer. Og <seg type="com" n="com117">end<!--endnu.--></seg>
+1810, da jeg egenlig for Alvor begyndte at tale Christendommens Sag, fremstod jeg da som Partih&#x00F8;vding,
+hvor var det Partie, som forsvarede mig, hvor yttrede den religj&#x00F8;se Stemning sig i
+Mods&#x00E6;tning til den vantro, blot moraliserende? Visselig ikke i <seg type="com" n="com541">L&#x00E6;severdenen</seg>, og som Man endnu
+kan see fra <placeName key="fak512">Kullen</placeName> til <placeName key="fak1488">Kulsbjerg</placeName>, fra <placeName key="fak1487">Skagen</placeName> til
+<placeName key="fak513">Eider</placeName> ei heller blandt Folket, uden Man dertil
+vil regne det <seg type="com" n="com118">Haugiske</seg> Sv&#x00E6;rmerie, som jeg dog
+vel hverken har brugt eller misbrugt? Dog denne Tvist er det ikke v&#x00E6;rd at forts&#x00E6;tte l&#x00E6;ngere end
+til at vise, at jeg ingen <hi rend="spaced">aabenbar</hi> religj&#x00F8;s
+Stemning fandt for mig, men vel det modsatte, at derimod L&#x00E6;ngsel efter Gud slumrede og for
+det meste <seg type="com" n="com119">end</seg> slumrer hos Mange, det troer jeg,
+og havde det ei <seg type="com" n="com120">saa v&#x00E6;ret</seg>, maatte min Tale
+<seg type="com" n="com121">alt<!--helt, aldeles.--></seg> v&#x00E6;re ude; Hovedsagen er, <hi rend="spaced">hvad jeg forkynder,</hi>
+thi da jeg ei<!--AP: læderet--> forkynder det som noget Nyt, men netop som noget Gammelt, kommer
+det slet ikke derpaa an, hvormange der var gudelig stemte, Tingen er kun, om jeg forkynder
+Sandhed, reen Christendom. Det vover <seg type="com" n="com122">Rec.<!--recensenten.--></seg> at
+n&#x00E6;gte og siger: &#x201C;han paastaaer at tale Christendommens Sag, og at forklare den i samme <pb type="text" facs="1814_229_fax031.jpg" ed="A" n="15"/>Aand, som <hi rend="spaced"><persName key="pe42">Luther</persName>,</hi> dens herlige Talsmand,
+men seer Man n&#x00E6;rmere til, saa er det kun Lutherdommen, saaledes, som den <seg type="com" n="com123">en Tid lang</seg> saae ud i nogle indskr&#x00E6;nkede Hoveder, han pr&#x00E6;diker.&#x201D;</p>
+    
+<p rend="firstIndent">Stoler <seg type="com" n="com124">Rec.<!--recensenten.--></seg> virkelig paa, at Faa nuomtide
+l&#x00E6;se <persName key="pe42">Luthers</persName> Skrifter? Sandt er det, de l&#x00E6;ses
+af faa, men t&#x00E6;nkde <seg type="com" n="com124">Rec.<!--recensenten.--></seg> da at jeg ei heller
+kiendte dem eller at jeg vilde tie, eller veed han ikke selv hvad <persName key="pe42">Luther</persName> l&#x00E6;rde? Intet af alt Dette
+s&#x00F8;mmer sig for saa klog en Mand, og dog maa vel noget Saadant v&#x00E6;re Tilf&#x00E6;ldet, og <seg type="com" n="com125">Recs.<!--recensentens.--></seg> <seg type="com" n="com126">Regning<!--antagelse/formodning??.--></seg>
+havde maaskee <seg type="com" n="com127">slaaet ind<!--gået i opfyldelse/været rigtig, se ODS 52.9.--></seg> i visse Maader,
+dersom ei, til al Uheld for den, <hi rend="spaced"><persName key="pe42">Luthers</persName> <rs type="title" key="title2388">Catechismus</rs></hi><!--opmærket som den lille k.--> var en Bog, som alle de der
+<seg type="com" n="com128">veie<!--lægger vægt på?.--></seg> hans Tale enten kiende eller dog lettelig kan
+    adsp&#x00F8;rge, og dersom <hi rend="spaced"><rs type="title" key="title2386">den Augsburgiske Confessjon</rs></hi>
+ei var saa kort og n&#x00E6;r, at Enhver, som &#x00F8;nsker at kiende Forskiellen mellem <persName key="pe42">Luthers</persName>
+og min L&#x00E6;re, vist vil paa min Formaning l&#x00E6;se
+den. Kiender <seg type="com" n="com130">Rec.<!--recensenten.--></seg> ikke disse Smaaskrifter eller
+t&#x00F8;r han sige, at deres Indhold ei var <persName key="pe42">Luthers</persName>
+<hi rend="spaced">Mening,</hi> ei den Troesbekiendelse i hvilken han stedse skrev, levede og d&#x00F8;de, eller kan han bevise,
+at min L&#x00E6;rdom i nogen Troesartikel afviger fra disse <persName key="pe42">Luthers</persName> Hovedskrifter, disse vor
+Kirkes <seg type="com" n="com131"><hi rend="spaced">symboliske</hi> B&#x00F8;ger</seg>? T&#x00F8;r og kan han
+ikke dette, hvorledes h&#x00E6;nger det da sammen, at <persName key="pe42">Luther</persName> var en saadan herlig Mand og L&#x00E6;rer,
+men jeg en Folkeforvirrer, ski&#x00F8;ndt jeg f&#x00F8;rer samme L&#x00E6;rdom som han! Hvad skal Man t&#x00E6;nke <pb type="text" facs="1814_229_fax032.jpg" ed="A" n="16"/>om den Mand som enten taler om <persName key="pe42">Luther</persName> og
+hans L&#x00E6;rdom uden at kiende et af <persName key="pe42">Luthers</persName> Ord,
+eller som vil forki&#x00E6;ttre og beski&#x00E6;mme mig, der f&#x00F8;rer netop den L&#x00E6;rdom han roser hos Andre,
+som advarer Folk mod den L&#x00E6;rdom, han selv kalder Sandhed? Jeg maa sige om <persName key="pe42">Luther</persName>, hvad
+Frelseren sagde til Pharis&#x00E6;erne om <persName key="pe730">Moses</persName>:
+    <rs type="bible" key="Joh 5,46" rend="quote">(Joha. 5.) troede I ham, da troede I vel ogsaa
+        mig</rs>, ja jeg maa gientage Hans haarde Ord <rs type="bible" key="Matt 23,29-31" rend="quote">(Math. 23.) Vee eder, I Skriftkloge og Pharis&#x00E6;er!
+I <seg type="com" n="com132">&#x00D8;ienskalke<!--hyklere.--></seg>! at I bygge Propheternes
+Grave, og pryde de Retf&#x00E6;rdiges Gravst&#x00E6;der og sige: havde vi v&#x00E6;ret i vore F&#x00E6;dres Tid, da
+havde vi ikke v&#x00E6;ret deelagtige med dem i Propheternes Blod, saa b&#x00E6;re I da Vidnesbyrd over
+eder selv, at I ere deres B&#x00F8;rn, som have ihjelslaget Propheterne</rs>. Det er et gammelt, men <seg type="com" n="com133">og</seg>
+forslidt Kneb, at rose de hensovne L&#x00E6;rere og forki&#x00E6;ttre deres troeste Efterf&#x00F8;lgere, det var ikke
+alene Skik hos J&#x00F8;der men <seg type="com" n="com133">og</seg> iblandt Christne,
+<seg type="com" n="com617">mod <persName key="pe634">Augustin</persName> raabde Man paa</seg> de &#x00E6;ldre Kirkef&#x00E6;dre,
+<seg type="com" n="com618">mod <persName key="pe42">Luther</persName> paa <persName key="pe634">Augustin</persName></seg>, <seg type="com" n="com619">mod os raaber Man
+paa</seg> <persName key="pe42">Luther</persName>, og d&#x00F8;mmer saaledes sig selv. Grunden
+er klar, thi de Gamles <seg type="com" n="com135">Straffetaler<!--irettesættende, revsende taler.--></seg> saare ei
+disse Folk, forglemte hindre de ei deres Anslag, ja deres Ord kan Man vende og dreie, uden at de
+Hensovne sige imod, dog Knebet har aldrig hjulpet og vil det allermindst nu, da det er saa
+let, <seg type="com" n="com136">at h&#x00F8;re de D&#x00F8;des Taler</seg>, og da jeg, saalidt som nogen ret Christen sv&#x00E6;rger paa <persName key="pe42">Luthers</persName>
+<hi rend="spaced">Ord,</hi> ski&#x00F8;ndt jeg bekiender mig til hans Tro, <pb type="text" facs="1814_229_fax033.jpg" ed="A" n="17"/>kun paa <hi rend="spaced"><rs type="title" key="title788">Bibelens</rs> Ord</hi> sv&#x00E6;rger og stoler
+jeg, og de skal afgi&#x00F8;re om jeg l&#x00E6;rer &#x00E6;gte Christendom eller ikke. Underlig maa det ved f&#x00F8;rste
+&#x00D8;iekast synes, at <seg type="com" n="com137">Rec.<!--recensenten.--></seg> ikke anf&#x00F8;rer en eneste af
+mine Vildfarelser, thi det er jo dog i det mindste en smule bagvendt at forki&#x00E6;ttre en Mand og
+opbyde en heel Skare til at bestride hans Vildfarelser, uden at n&#x00E6;vne dem, det havde v&#x00E6;ret
+<app select="yes" type="corrNote"><lem wit="GV">saameget</lem><rdg wit="A">saaameget</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mere n&#x00F8;dvendigt, som han siger, at
+jeg listig nok har blandet lidt Sandhed ind i Vildfarelserne, maa han da ikke v&#x00E6;re bange for, at
+hans Tjenere kunde <rs type="bible" key="Matt 13,24-30" rend="allusion">luge Hveden op tilligemed,
+ja kanskee istedenfor Klinten</rs>, det maatte han dog vist, dersom han var den uendelig sandhedski&#x00E6;rlige Mand, han vil <seg type="com" n="com138">skride<!--gælde, anses. ODS 1.3.--></seg> for, men naar han
+nu, som Man snart skulde formode, er <seg type="com" n="com542">intet mindre</seg> end dette, da er det nemt at forstaae, hvi
+han kun i ubestemte Udtryk taler om min Christendom, som indskr&#x00E6;nkede Hoveders Frugt, som
+Noget der strider mod Fornuft, Oplysning og Videnskab, (hvor blev <rs type="title" key="title788">Bibelen</rs> af?) thi det er
+<seg type="com" n="com139">en egen Sag<!--vanskeligt, problematisk ODS 'sag' 4.3: betænkeligt.--></seg> at indlade sig i det Enkelte, naar
+Man lyver, derved fanges Man saa let. <seg type="com" n="com140">Rec.<!--recensenten.--></seg>
+kan tilintetgi&#x00F8;re denne <seg type="com" n="com141">vist nok</seg> ikke h&#x00E6;derlige
+Formodning, <app select="yes" type="corrNote"><lem wit="GV"><seg type="com" n="com142">naar<!--hvis.--></seg></lem><rdg wit="A">uaar</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> han med rene Ord <seg type="com" n="com143">opgiver<!--angiver, nævner ODS 4.2.--></seg>
+mine Grundvildfarelser, og beviser <hi rend="spaced">af <rs type="title" key="title788">Skriften</rs></hi>
+at det er Vildfarelser, thi om de stemme eller stride med hans Begreber om Fornuft, Oplysning og Videnskab, vil jo ikke sige Noget, al<pb type="text" facs="1814_229_fax034.jpg" ed="A" n="18"/>denstund <rs type="title" key="title788">Bibelen</rs>,  som han selv indr&#x00F8;mmer er Pr&#x00F8;vestenen.</p>
+
+<p rend="firstIndent">Istedenfor at indlade sig paa Saadant, lader <seg type="com" n="com144">Rec.<!--recensenten.--></seg> som om der intet Sp&#x00F8;rgsmaal kan
+v&#x00E6;re om Dommens <hi rend="spaced">Sandhed,</hi> men kun om Dommerens Miskundhed og bereder sig derved
+Overgangen til en Tale, der slet ikke kommer Sagen ved, men er kun l&#x00F8;selig knyttet til den
+ved <seg type="com" n="com145">Recs.<!--recensentens.--></seg> omtalte Miskundhed. Hans Undskyldning
+for Str&#x00E6;ngheden er aldeles un&#x00F8;dvendig, til Guds Barmhjertighed tr&#x00E6;nger jeg h&#x00F8;ilig, men
+ei til Hans Uvenners, og <seg type="com" n="com146">Rec.<!--recensenten.--></seg> har meget Ret
+i, at hvor der handles om Een der forvirrer Folket, som <rs type="bible" key="Matt 7,15" rend="reference">en falsk Prophet og en glubende
+    Ulv</rs>, ere Complimenter meget ilde anbragde, om de ogsaa kun, som her, <app select="yes" type="addNote"><lem wit="A">siges</lem><note type="add">m&#x00E5;ske fejl for siges af</note><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Rec. og et andet
+St&#x00E6;d hans <seg type="com" n="com626">Formand</seg> paa Dommers&#x00E6;det.
+Han kunde gierne sparet sig den Umage, at gientage mine <seg type="com" n="com148">alt<!--allerede.--></seg> flere Gange gientagne, men her
+som hist <hi rend="spaced"><seg type="com" n="com149">uafbeviste</seg></hi><!--ikke modbeviste--> str&#x00E6;nge Domme<note type="footnote"><p rend="noIndent">At vore <seg type="com" n="com150"><hi rend="spaced">chroniske</hi> Blade<!--??.--></seg> <seg type="com" n="com151">i hinandens Mund<!--i munden på hinanden.--></seg> kalde mig paa deres <seg type="com" n="com152">Kragemaal<!--uforståelig tale; tale kun for indviede.--></seg> <seg type="com" n="com153">en <app select="yes" type="corrNote"><lem wit="Rettelsesliste">Herostrat</lem><rdg wit="A">Herostat</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></seg>, beviser
+    kun at <seg type="com" n="com640">de mene, de Ephesers <rs type="myth" key="myth717.a">Diana</rs> er stor</seg>.</p></note>, thi jeg
+har aldrig klaget over <hi rend="spaced">str&#x00E6;nge</hi> Domme, og L&#x00E6;serne ere dog vel kiede af det intet bevisende
+<seg type="com" n="com154">Skraal<!--voldsom kritik--></seg>, ja maa finde det allerbesynderligst af
+en Mand, som tilstaaer at Man skal v&#x00E6;re str&#x00E6;ng mod dem der forvirrede Folket, at <persName key="pe1793">Volf</persName> og
+<persName key="pe54">Schelling</persName> med <seg type="com" n="com155">Consorter<!--fæller, tilhængere.--></seg> gjorde det efter Evne,
+har jeg paastaaet, <hi rend="spaced">og sagt hvorledes,</hi> lad det bevises at jeg lyver! Det er saa langt fra <pb type="text" facs="1814_229_fax035.jpg" ed="A" n="19"/>at <seg type="com" n="com156">Rec.<!--recensenten.--></seg> pr&#x00F8;ver derpaa, at han meget meer i <hi rend="spaced">en Anm&#x00E6;rkning</hi> tilstaaer at &#x201C;<app select="yes" type="corrNote"><lem wit="GV">Naturfilosofien</lem><rdg wit="A">Naturfilosofiǝn</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> hos <hi rend="spaced">Nogle</hi> har taget en r&#x00E6;dsom Vending,
+at selv <persName key="pe54">Schelling</persName> alt for ofte glemde, hvad han skyldte Sandhedens h&#x00F8;ie V&#x00E6;rdighed,
+og alt for letsindig udkastede blandt Folket sine ei noksom <seg type="com" n="com543">veiede</seg> <seg type="com" n="com544">end</seg> mindre <seg type="com" n="com545">uddannede</seg> Meninger&#x201D; altsaa var og er, <hi rend="spaced">efter <seg type="com" n="com157">Recs.<!--recensentens.--></seg> egne Ord</hi> en <hi rend="spaced">Folkeforvirrer.</hi><note type="footnote">
+<p rend="noIndent">At <persName key="pe54">Schelling</persName> forresten is&#x00E6;r skulde have syndet
+ved aabenbar at udsige, hvad andre ruge over og vil <hi rend="spaced">indsmugle</hi> i Folket, indseer jeg ikke,
+thi naar Man har med Dj&#x00E6;velen at gi&#x00F8;re, er det altid bedre at han kommer i sin egen end i en mere ukiendelig Skikkelse.</p>
+</note> <seg type="com" n="com158">Rec.<!--recensenten.--></seg> klager da kun i <hi rend="spaced">Anm&#x00E6;rkningen</hi> over at jeg ikke
+har <seg type="com" n="com546">gjort nogen Forskiel</seg>, men selv heri vil i det H&#x00F8;ieste kun de tro ham, som ei med Eftertanke
+have l&#x00E6;st <rs type="title" key="title629">Kr&#x00F8;niken</rs> og dens <rs type="title" key="title3169">Gienm&#x00E6;le</rs>,<note type="footnote">
+<p rend="noIndent">Dette <rs type="title" key="title3169">Gienm&#x00E6;le</rs> som dog oplyser Adskilligt om mine
+Domme i Almindelighed og dem over <persName key="pe460">Griffenfeld</persName> og <persName key="pe54">Schelling</persName> i S&#x00E6;rdeleshed, ignorerer <seg type="com" n="com159">Rec.<!--recensenten.--></seg> og
+gientager <persName key="pe23">Molbechs</persName> Klage, at jeg bespotter <persName key="pe460">Gr.</persName>
+ved at sige, at jeg vel skal bare mig for at d&#x00F8;mme den <hi rend="spaced">Tugtede,</hi> som om Man ei kunde
+tilstaa at <hi rend="spaced">Guds Tugtelse</hi> var <hi rend="spaced">retf&#x00E6;rdig,</hi> uden derfor at sige den var <hi rend="spaced">forgi&#x00E6;ves.</hi></p>
+</note> thi de have seet, at jeg gi&#x00F8;r den eneste her gi&#x00F8;rlige <seg type="com" n="com547">Skilsmisse</seg>, mellem dem, der bl&#x00E6;ndede af L&#x00F8;gtem&#x00E6;ndene ei see Afgrunden, og disse der lokke de
+Uerfarne til Afgrunden med de vilde Glimt, der skal v&#x00E6;re Straaler af et &#x00E6;therisk V&#x00E6;sen. Jeg
+kan her ikke indlade mig videre i Noget, der <pb type="text" facs="1814_229_fax036.jpg" ed="A" n="20"/>h&#x00F8;rer blot til min <rs type="title" key="title629">Kr&#x00F8;nikes</rs> Forsvar og ei h&#x00F8;rer
+hid, thi det er dog vel ikke ved disse Domme jeg har forvirret Folket, der ikke kiendte disse
+M&#x00E6;nd, og hvis ubet&#x00E6;nksomme <seg type="com" n="com620">Taler</seg> <seg type="com" n="com160">Rec.<!--recensenten.--></seg> ei
+vil, at Folket skal h&#x00F8;re.</p>
+    
+<p rend="firstIndent">Gjorde <seg type="com" n="com160">Rec.<!--recensenten.--></seg> et underligt Spring forbi
+<seg type="com" n="com161">Sandhedsgrundene</seg> for hans Dom til Retf&#x00E6;rdi<!--AP: læderet-->ggi&#x00F8;relse af dens Str&#x00E6;nghed, under den aldeles <hi rend="spaced">ubeviste</hi> Foruds&#x00E6;tning, at den var sand,
+da gi&#x00F8;r han endnu et underligere fra denne Retf&#x00E6;rdiggi&#x00F8;relse til en mild Formodning om
+min Characteer <hi rend="spaced">som Menneske,</hi> og en sort Skildring af mine <hi rend="spaced">skammelige Laster</hi>
+og mit listige Hyklerie. Kan en retsindig og sandhedsk&#x00E6;rlig Mand gaae saaledes
+frem, da maae jeg bekiende at min Begeistring for Sandhed er indsigtsl&#x00F8;s, men dermed vil jeg ingenlunde
+n&#x00E6;gte <seg type="com" n="com162">Konsten<!--kunstgrebene, krumspringene.--></seg>, der kun falder vel meget
+i &#x00D8;inene. Naar det nemlig var <seg type="com" n="com163">Recs.<!--recensentens.--></seg> Opgave
+at beski&#x00E6;mme mig i Folkets &#x00D8;ine og lukke dets &#x00D8;ren for min Tale, og han dog havde sine
+Aarsager til ei at n&#x00E6;vne de falske L&#x00E6;rdomme, hvormed han siger jeg forvirrer Folket, da var det
+ganske <seg type="com" n="com164">konstigt<!--her: mærkeligt.--></seg> at henlede Opm&#x00E6;rksomheden paa
+min T&#x00E6;nkemaade, skildre den som ond og falsk og da udraabe: seer I nu, hvilken Mand I
+f&#x00F8;lge! kan han v&#x00E6;re Sandhedens Tjener? Det Par Ord om, at jeg maaskee desuagtet kunde v&#x00E6;re
+et skikkeligt Menneske, naar jeg tav stille, ere da ei heller saa upassende som de ellers synes,
+thi det er <seg type="com" n="com165">lidt Sand til de barmhjertige L&#x00E6;seres <pb type="text" facs="1814_229_fax037.jpg" ed="A" n="21"/>&#x00D8;ine<!--dvs. et forsøg på at blænde, narre de barmhjertige læsere?? ODS sand 1.3.--></seg>, og til de M&#x00E6;nds, som kiende mig personlig, og hvis Vidnesbyrd han heller vilde afkr&#x00E6;fte end trodse, thi naar kun Ingen h&#x00F8;rde efter mine Ord, da maatte jeg gierne gi&#x00E6;lde
+for et Dydsm&#x00F8;nster, ligesom <persName key="pe2073">Caracalla</persName> gierne undte <persName key="pe2074">Geta</persName> guddommelig &#x00C6;re, naar han kun
+var d&#x00F8;d og Morderen kunde herske alene.</p>
+    
+<p rend="firstIndent">Dog, spildt er al den <seg type="com" n="com548">Konst</seg><!--o usynligt i ekspl fra kgl bib-->, thi <seg type="com" n="com166">Rec.<!--recensenten.--></seg> <seg type="com" n="com167">kan
+tro<!--kan lige tro (udtrykker stærk forsikring).--></seg>, der er en levende Gud som ei lader Sit Ords
+Tunger binde med saadanne Reeb, ei sine B&#x00F8;rns &#x00D8;ine forblindes ved saadanne <seg type="com" n="com168">Dunster<!--tåger.--></seg>. Jeg holder
+<seg type="com" n="com169">hardt<!--fast.--></seg> ved Hovedsagen: <seg type="com" n="com170">Rec.<!--recensenten.--></seg> har sagt at jeg
+med min L&#x00E6;rdom forvirrer Folket og er en falsk Prophet, det skal han bevise eller selv v&#x00E6;re, hvad
+han beskylder mig for, her hjelper ingen Konstgreb, ingen Vendinger og Krumspring, hvor
+<seg type="com" n="com171">konstige<!--her: kunstfærdige.--></seg> og kl&#x00F8;gtige de saa ere, om saa <seg type="com" n="com172">Rec.<!--recensenten.--></seg>
+kunde bevise jeg var den arrigste Dj&#x00E6;vel, det hjalp dog intet, naar kun min L&#x00E6;rdom er Sandhed,
+da skal Folket dog h&#x00F8;re den, og lade den ford&#x00F8;mme mig selv. Fra denne Hovedsag har
+<seg type="com" n="com172">Rec.<!--recensenten.--></seg> sneget sig, saagodt han kunde, men da jeg
+idelig beraaber mig paa <rs type="title" key="title788">Bibelen</rs>, gik det dog
+ikke an, aldeles at fortie den, som i Forbigaaende, naar han taler vidt og bredt om min Mangel
+paa Ki&#x00E6;rlighed, giver han da tilkiende, at jeg forstaaer <rs type="title" key="title788">Bibelen</rs> <hi rend="spaced">paa min Viis,</hi> og at det altsaa er mig selv der f&#x00E6;lder de Domme,
+jeg till&#x00E6;gger <rs type="title" key="title788">Bibelen</rs>.<note type="footnote"><p rend="noIndent"><seg type="com" n="com174">Saa<!--saaledes.--></seg> lyde hans Ord i Anledning<!--n ser mærkeligt ud i to ekspl., men er OK i ekspl 2 fra Gr.bib --> af mit <seg type="com" n="com175">Ord<!--udsagn.--></seg>, at jeg kun d&#x00F8;mmer Guds Fjender haardt: &#x201C;hvo har erkl&#x00E6;ret dem derfor, som han kalder <seg type="com" n="com176">saa</seg>? <rs type="title" key="title788">Bibelen</rs>?
+<seg type="com" n="com177">Saa</seg> mener han, men Man t&#x00F8;r vel dristigen svare derpaa, at det er <hi rend="spaced">ham</hi> der kalder
+Guds Fjender dem, som forstaae <rs type="title" key="title788">Bibelen</rs> anderledes end han. Det er altsaa ikke Guds
+Fjender han ford&#x00F8;mmer, men Medmennesker, Medchristne <hi rend="spaced">han</hi> ford&#x00F8;mmer, ved at kalde
+dem Guds Fjender.&#x201D;</p></note></p>
+    
+    
+    <p rend="firstIndent"><pb type="text" facs="1814_229_fax038.jpg" ed="A" n="22"/>Det lader sig dog engang h&#x00F8;re, og det er
+vist, l&#x00E6;gger jeg selv en Mening i <rs type="title" key="title788">Bibelen</rs>, og d&#x00F8;mmer efter den L&#x00E6;rdomme og M&#x00E6;nd, da er
+jeg en Folkeforvirrer, som alle den forrige Tids Ki&#x00E6;ttere, som saamange Theologer i den sidste
+Tid, og <seg type="com" n="com179">Rec.<!--recensenten.--></seg> har den fuldkomneste Ret til at
+pr&#x00E6;dike et aandeligt Korstog imod mig. Men Beviset? ja det fattes her som overalt, Man
+maa tro <seg type="com" n="com179">Rec.<!--recensenten.--></seg> paa Ordet, eller sine egne &#x00D8;ine
+og det Beviis jeg nu vil f&#x00F8;re. Det er vitterligt, at <persName key="pe42">Luthers</persName> Grunds&#x00E6;tning for hvilken han
+streed til D&#x00F8;den og hvormed han overvandt alle sine Modstandere, var den, at <hi rend="spaced"><rs type="title" key="title788">Bibelen</rs> skulde forstaaes ordret,</hi> i den Mening,
+en &#x00E6;rlig Mand maatte have, naar han sagde de Ord til sin ul&#x00E6;rde N&#x00E6;ste, efter denne
+Grunds&#x00E6;tning oversattes <rs type="title" key="title788">Bibelen</rs> og gaves <hi rend="spaced">Menigmand</hi>
+i Haand, til en Rettesnor for deres Tro og en Pr&#x00F8;vesteen for Pr&#x00E6;sternes L&#x00E6;rdom,
+efter denne <rs type="title" key="title788">Skriftens</rs> ordrette Mening
+forfattedes <rs type="title" key="title2386">den Augsburgiske Confessjon</rs> og <persName key="pe42">Luthers</persName> <rs type="title" key="title2388">Cathechismus</rs>, efter den er der pr&#x00E6;diket i vore Kirker over <seg type="com" n="com181">halvtrediehundrede<!--250.--></seg> Aar, efter 
+<pb type="text" facs="1814_229_fax039.jpg" ed="A" n="23"/>den er jeg underviist, efter den har jeg ved min
+Indvielse til Pr&#x00E6;steembedet svoret at l&#x00E6;re, for den har jeg svoret<!--AP: spies--> at stride til D&#x00F8;den. Har
+jeg nu brudt min Eed, saa har jeg forbrudt mit Embede, men har jeg holdt den, har jeg
+naar jeg beraabde mig paa <rs type="title" key="title788">Bibelen</rs> altid taget
+den i sin ordrette Mening, ja n&#x00E6;sten altid ordret brugt vor kirkelige Overs&#x00E6;ttelse, hvormed
+forvirrer jeg da Folket? Enten skal nu <seg type="com" n="com182">Rec.<!--recensenten.--></seg>
+bevise, at dette er L&#x00F8;gn, og det kan han ikke, eller <seg type="com" n="com183">og<!--også.--></seg> han skal tilstaae, at jeg ikke anderledes
+forvirrer Folket end den herlige <persName key="pe42">Luther</persName>, og den
+danske Bibel<!--rs?-->, og alle <placeName key="fak14">Danmarks</placeName> Konger fra <persName key="pe1663">Christian
+den Tredie</persName> og <placeName key="fak15">Sj&#x00E6;llands</placeName> Bisper fra <persName key="pe1538">Palladius</persName><!--AP: i læderet-->
+til <persName key="pe39">Balle</persName> og den danske Geistlighed giennem Aarhundreder, og alle de <seg type="com" n="com550">Pr&#x00E6;stem&#x00E6;nd</seg> som endnu
+<seg type="com" n="com637">l&#x00E6;re</seg> efter den Eed de have svoret. Her er ingen Udvei, intet Smuthul, han skal staae til
+Regnskab, eller staa som en L&#x00F8;gner, thi han har sagt at jeg forvirrede Folket, at jeg er en falsk
+Prophet, at jeg fortolkede <rs type="title" key="title788">Bibelen</rs> efter mine
+egne Griller, han har derved erkl&#x00E6;ret mig for en Meeneder, for <app select="yes" type="corrNote"><lem wit="GV">aldeles</lem><rdg wit="A">aldelcs</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> uv&#x00E6;rdig til det hellige
+Embed jeg bekl&#x00E6;der. Om han tigange kunde bevise at <rs type="title" key="title788">Bibelen</rs> skulde forstaaes anderledes, det
+hjalp dog slet intet, thi dermed var kun beviist, at <rs type="title" key="title2386">den Augsburgiske Confessjon</rs> og <rs type="title" key="title2388">Luthers
+Cathechismus</rs> og den danske Bibel<!--rs?--> og Statens Love forvirre Folket giennem mig som giennem alle ordholdne Pr&#x00E6;ster. Dog selv det Beviis
+skal <seg type="com" n="com184">Rec.<!--recensenten.--></seg> blive skyldig til sin D&#x00F8;dsdag, thi <pb type="text" facs="1814_229_fax040.jpg" ed="A" n="24"/>uden at tale om Andet gad jeg nok vidst om
+Gud gav os Sit Ord, for at forvirre Folket, eller for at de skulde l&#x00E6;gge det tilside og stole
+paa deres egen Fornuft, eller paa et andet skr&#x00F8;beligt Menneskes, men en af Delene maatte jo skee, naar <rs type="title" key="title788">Bibelen</rs> ei skulde tages i sin ordrette
+Mening eller hvem skulde v&#x00E6;re berettiget til at l&#x00E6;gge sin deri, hvilken af alle de Meninger Man
+har opt&#x00E6;nkt skulde et Guds Barn f&#x00F8;lge, og <hi rend="spaced">kunne stole paa som Guds Ord.</hi></p>
+
+<p rend="firstIndent">Dette er, som sagt, Hovedsagen her, men ligegyldigt kan det visselig ei v&#x00E6;re mig, at stemples
+som en ugudelig Hykler, thi vel bleve <rs type="title" key="title788">Bibelens</rs>
+Ord ligesande i min Mund, om jeg ogsaa foragtede dem, men forargeligt var det dog
+overmaade og kunde forlede Folket til at tvivle om Sandheden. F&#x00F8;rst maa jeg da bem&#x00E6;rke, at
+den <seg type="com" n="com551">Skilsmisse</seg> <seg type="com" n="com185">Rec.<!--recensenten.--></seg> er saa god at gi&#x00F8;re mellem
+mig, som Skribent og som Menneske, vil jeg ikke nyde godt af, &#x00F8;nsker han at der skal gi&#x00F8;res
+en saadan med ham, da er det ilde, thi den der tr&#x00E6;der op som sine Br&#x00F8;dres L&#x00E6;rer, maa dog vel
+vide, at hans Tale og Skrift er en Gierning, der ligesaafuldt maa tilregnes ham, som hver
+anden og er saa meget vigtigere, som Kredsen er st&#x00F8;rre; en Christen veed <seg type="com" n="com186">og<!--også.--></seg>, at <rs type="bible" key="Matt 12,36" rend="quote"><seg type="com" n="com552">af</seg> hans Ord skal
+han d&#x00F8;mmes og gi&#x00F8;re Regnskab, paa den yderste Dag, for hvert unyttigt Ord han haver talet</rs>,
+ja han kiender for vel Herrens Trudsler mod falske Propheter og L&#x00E6;rere, til at kunde indbilde
+sig, at han kan v&#x00E6;re Syndens og L&#x00F8;gnens Tje<pb type="text" facs="1814_229_fax041.jpg" ed="A" n="25"/>ner i sin Tale og dog holdes uskyldig. Nei,
+nei, Herren har sagt: <rs type="bible" key="Matt 12,34" rend="quote1787">af Hjertets Overfl&#x00F8;dighed taler Munden</rs>, stolende paa det Ords Sandhed
+har jeg d&#x00F8;mt de hedenfarne Bogskrivere, saaledes vil jeg d&#x00F8;mmes, og stempler min Skrift
+mig da som et uki&#x00E6;rligt, <seg type="com" n="com553">hykkelsk</seg>, l&#x00F8;gnagtigt og hovmodigt Menneske, da er jeg det ligesom visselig <seg type="com" n="com187">Rec.<!--recensenten.--></seg> er det, dersom hans Beskyldninger
+ere falske. Imellem os gi&#x00E6;lde ingen Complimenter, vi staa mod hinanden som aabenbare Fiender, <seg type="com" n="com621">og Han eller jeg</seg>.</p>
+
+<p rend="firstIndent">At nu de haardeste <seg type="com" n="com622">Taler</seg> kan udstr&#x00F8;mme fra det ki&#x00E6;rligste Hjerte, det er vist, dersom
+Propheterne talde Guds Ord, dersom <persName key="pe45">Jesus</persName> var Guds S&#x00F8;n, thi at de saavelsom Apostlene <seg type="com" n="com188">straffede<!--irettesatte, revsede.--></seg> Guds og Sandhedens Fiender i de allerst&#x00E6;rkeste,
+mest ford&#x00F8;mmende Ord, det er <seg type="com" n="com189">upaatvivleligt<!--utvivlsomt.--></seg>,
+og dersom <rs type="title" key="title788">Bibelen</rs> da har Ret, maa <seg type="com" n="com190">Rec.<!--recensenten.--></seg> have stor Uret i den Paastand, at naar
+kun Sandheden fremstilles i sin Klarhed, kan Beskyldningerne mod de Vildfarende for det meste ganske bortfalde, hvis han ellers forstaaer
+ved Vildfarende Sandhedens <hi rend="spaced">Modstandere.</hi> Dog det gi&#x00F8;r han vel ikke, thi ellers maatte hans
+Recensjon vidne om et saare uki&#x00E6;rligt Hjerte, da Beskyldninger ere visselig ei sparede mod mig,
+Tingen er da kun, hvem jeg har talt haardt om, Guds og Sandhedens eller mine egne Modstandere. Hvorledes jeg har svaret og d&#x00F8;mt
+dem, der siden 1810 ere optraadte imod mig og have gjort mig megen Uret, det veed Man, <pb type="text" facs="1814_229_fax042.jpg" ed="A" n="26"/>og det er dog nok umuligt, at den Mand, der
+er skaansom mod dem som haane og <seg type="com" n="com627">opirre</seg> ham, skulde af Uki&#x00E6;rlighed f&#x00E6;lde haarde Domme over
+de l&#x00E6;ngst Hensovne eller Andre, som aldrig forn&#x00E6;rmede hans Personlighed. Kan Dette, ja
+kan al min Skrift ei vidne for de Retsindiges Hjerter, at der er Ki&#x00E6;rlighed i mit, at jeg er
+ligesaa bange for at laste Guds Venner, som for at rose Hans Fjender, <seg type="com" n="com191">nu<!--nuvel.--></seg>, saa <seg type="com" n="com192">frad&#x00F8;mme
+Man<!--skal man fradømme (optativ).--></seg> mig Ki&#x00E6;rlighed, men tonede hint Vidnesbyrd
+i Gudsfrygtiges Hjerter, f&#x00F8;lde disse nogensinde i dyb og and&#x00E6;gtig R&#x00F8;relse, at min Sang<!--digtning.-->
+og Tale var udstr&#x00F8;mmet af et r&#x00F8;rt Hjerte, var oplivet af Ki&#x00E6;rlighed til Gud og Br&#x00F8;drene, <seg type="com" n="com195">nu<!--nuvel.--></seg>
+saa <seg type="com" n="com196">vogte de<!--skal de vogte (optativ).--></seg> sig vel, ikke at d&#x00F8;mme efter Skinnet,
+ei at mene, naar en Dom tykkes dem for haard, at Uki&#x00E6;rlighed f&#x00E6;ldte den, men bet&#x00E6;nke,
+at paa en Tid, da det gi&#x00E6;lder om, enten Christendom skal vende tilbage i sin Reenhed, eller
+forsvinde fra os, maa der d&#x00F8;mmes haardere om mangen Haltende som gjaldt for en Ledsager, end
+<seg type="com" n="com198">det ellers gjordes Behov<!--der ellers var behov for.--></seg>, bet&#x00E6;nke, at jeg dog stundom<!--o'et ret utydeligt i alle tre ekspl.--> kan have seet rettere end de, og endelig bet&#x00E6;nke om de selv, uagtet <rs type="bible" key="Matt 26,41" rend="allusion">de vaage og bede</rs>, ere
+undtagne fra Menneskets Lod at feile. <seg type="com" n="com201">Man komme dog ihu<!--man skal dog komme ihu (optativ).--></seg>, hvor skarpe Ord de gamle F&#x00E6;dre have talet om dem som fore vild fra <persName key="pe45">Christus</persName>
+og forvildede deres Br&#x00F8;dre, <seg type="com" n="com201">Man komme dog ihu<!--man skal dog komme ihu (optativ).--></seg>, at Ingen talde skarpere end <persName key="pe42">Morten Luther</persName>, at det ei blot var Paver og <seg type="com" n="com203">Scholastiker<!--skolastikere, dvs. dyrkere af skolastik.--></seg> og Christendommens aabenbare Modstandere han <pb type="text" facs="1814_229_fax043.jpg" ed="A" n="27"/>lastede saa str&#x00E6;ngt, men alle de Kirkef&#x00E6;dre som
+ikke holdt <seg type="com" n="com204">hardt<!--fast.--></seg> ved  <rs type="title" key="title788">Bibelens</rs> Ord, <persName key="pe810">Erasmus</persName> og
+<persName key="pe1661">Zwingel</persName> og<!--AP: spies--> <app select="yes" type="corrNote"><lem wit="GV"><persName key="pe2121">Oecolampad</persName></lem><rdg wit="A">Occolompad</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>! <seg type="com" n="com205">Man sp&#x00F8;rge<!--man må spørge (optativ).--></seg> sig selv, om Man derfor t&#x00F8;r frad&#x00F8;mme de tro Guds Tjenere der opoffrede alt Jordisk for Guds Sag
+og deres Br&#x00F8;dres Vel i Tid og Evighed, frad&#x00F8;mme dem Ki&#x00E6;rlighed, ja <seg type="com" n="com205">Man sp&#x00F8;rge<!--man må spørge (optativ).--></seg> sig selv
+om de, uden Str&#x00E6;nghed, kunde udrettet deres beskikkede Gierning, kaldt deres Br&#x00F8;dre tilbage,
+fra Vildfarelse og Tro paa Menneskebud, til <rs type="title" key="title788">Bibelen</rs>,  til &#x00E6;gte, eenfoldig Christendom. Gi&#x00F8;r
+Man Dette, og det b&#x00F8;r hver Christen gi&#x00F8;re, da skal Man <seg type="com" n="com207">vist ei<!--bestemt ikke.--></seg> staae Fare for at bl&#x00E6;ndes og
+forvirres ved <seg type="com" n="com208">det Skrig<!--den overdrevent/stærkt nedsættende ytring.--></seg> om min Uki&#x00E6;rlighed, som jeg t&#x00F8;r sige baade min Tale og mit &#x00F8;vrige
+Levnet modsiger. Jeg kan have d&#x00F8;mt Enkelte for str&#x00E6;ngt, ski&#x00F8;ndt jeg sandelig ei veed det,
+ski&#x00F8;ndt jeg veed og kan vidne, at jeg d&#x00F8;mte adskillige M&#x00E6;nd l&#x00E6;mpeligere end jeg nu turde, fordi
+jeg ei var vis i min Sag, men Ingen vil s&#x00F8;rge mere derover end jeg, om det <seg type="com" n="com209">befindes saa<!--forholder sig sådan??.--></seg>, Ingen
+skal ivrigere tale de Forn&#x00E6;rmedes Sag imod mig end jeg selv. Herre Gud! det er dog alt hvad
+et skr&#x00F8;beligt Menneske kan gi&#x00F8;re i <seg type="com" n="com554">dette Stykke</seg>, og jeg <seg type="com" n="com555">erkiender mig jo for</seg> et skr&#x00F8;beligt Menneske, men
+skulde denne Bevidsthed afholde os fra at tale, da maatte L&#x00F8;gnen vinde.<note type="footnote"><p rend="noIndent">I mit <rs type="title" key="title3169">Gienm&#x00E6;le</rs> har jeg sagt mere herom og ved
+at forsvare nogle af de mest anf&#x00E6;gtede Domme, viist den Retsindige, at jeg ei d&#x00F8;mte <app select="yes" type="corrNote"><lem wit="GV">letsindig. Havde</lem><rdg wit="A">letsindig, Havde</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mit st&#x00F8;rre Forsvar kunnet udkomme skulde
+det end v&#x00E6;re klarere, men Gud vil lade Sandhed aabenbares i Sin Tid og <rs type="bible" key="1 Kor 4,5" rend="allusion">Hans Venner
+vil ikke d&#x00F8;mme Noget for tidlig, men bie, til Herren kommer med Lyset</rs>.</p></note> Den eneste Mand <pb type="text" facs="1814_229_fax044.jpg" ed="A" n="28"/>om hvilken <seg type="com" n="com210">Rec.<!--recensenten.--></seg> s&#x00F8;ger at <seg type="com" n="com211">udvikle<!--udlede ODS 1.4.--></seg>, min Dom maa v&#x00E6;re falsk og uretf&#x00E6;rdig, er den naturfilosophiske Digter <persName key="pe33">Hardenberg</persName>, bekiendt under Navnet: <persName key="pe33">Novalis</persName>. Jeg vilde &#x00F8;nske han havde Ret,
+thi ligesom jeg har sagt, at herlige Toner klang fra denne <app select="yes" type="corrNote"><lem wit="GV">Digters</lem><rdg wit="A">Digtets</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app><!--VK 1812 s. 298: mange herlige Toner klang dog fra de overspændte Strænge, før de brast --> Harpe f&#x00F8;r Str&#x00E6;ngene brast, saaledes bekiender jeg villig, at Man i hans Sang bev&#x00E6;ges ved enkelte dybe og christelige
+Toner, men naar Man seer n&#x00E6;rmere <seg type="com" n="com212">til<!--efter.--></seg>, da er det aabenbart, at Christendommen stod
+for ham som en Samling af favre Myther, mod hvilke han kun i &#x00D8;ieblikke b&#x00F8;iede sig med
+en sv&#x00E6;rmende Tro, og ellers spillede med, indtil Aandens Syner aldeles forvirredes for ham,
+som Man seer af hans Aphorismer<!--title?-->, hvor der imellem enkelte herlige Glimt er, som Man veed,
+    meget der b&#x00E6;rer <seg type="com" n="com556">Forrykthedens</seg> <app select="yes" type="corrNote"><lem wit="GV">Stempel. Hans</lem><rdg wit="A">Stempel, Hans</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> tilligemed <persName key="pe1147">Tiecks</persName> og <persName key="pe266">Verners</persName><!--AP: spies--> Arbeider have
+havt saa stor Indflydelse paa de bedst Begavede, is&#x00E6;r i <placeName key="fak21">Tydskland</placeName>, dog <seg type="com" n="com557">og</seg> tildels hos os, og de
+tjene saa saare til at oplyse Naturfilosofiens Beskaffenhed og den Slags Religj&#x00F8;sitet, den anbefaler og elsker, at de i en Skildring af Tiden
+ligesaalidt kunde forbigaaes uden Dadel, som uden Omtale.</p>
+<p rend="firstIndent"><pb type="text" facs="1814_229_fax045.jpg" ed="A" n="29"/>Dog, s&#x00E6;t at jeg havde d&#x00F8;mt feil her og
+mange flere Gange, da er det jo vist, deels at de st&#x00F8;rste og &#x00E6;dleste Historieskrivere have gjort
+det Samme, uden derfor at sigtes saaledes, deels at jeg derved ingenlunde kan have forvirret Folket, is&#x00E6;r, da jo Ingen kan sige Andet, end at
+jeg tit nok har erkl&#x00E6;ret al Tro, al Viden uden Ki&#x00E6;rlighed for Forf&#x00E6;ngelighed, altsaa ford&#x00F8;mt
+mig selv, hvis jeg ei har den.</p>
+    
+<p rend="firstIndent">Dog, det er at forrykke Synspunkten, naar Man betragter Recensjonen som et Beviis for
+dens Paastand, at jeg forvirrer Folket, den maa ene betragtes som et Konstv&#x00E6;rk af L&#x00F8;gn og
+Bagvaskelse, ikkun da finder Man den Heelhed og den fuldendte Form, hvorefter <seg type="com" n="com213">Rec.<!--recensenten.--></seg> str&#x00E6;bte.
+Derfor er det langt fra at han, som efter en Episode om mine uki&#x00E6;rlige Domme, vender tilbage
+til at tale om min L&#x00E6;rdoms Vildfarelse, at han meget mere med det Udraab: <rs type="bible" key="Matt 7,5" rend="quote1787">Du <seg type="com" n="com214">&#x00D8;ienskalk<!--hykler.--></seg>!
+drag f&#x00F8;rst Bjelken ud, som er i dit eget &#x00D8;ie</rs>, baner sig Vei til at fremstille mig som en af
+de &#x00E6;rgierrigste og nederdr&#x00E6;gtigste Hyklere Verden har seet. <seg type="com" n="com215">Vist nok<!--ganske vist.--></seg> siger han, at den megen
+Gl&#x00E6;de ved at tale ilde om Andre hos Mange ei <seg type="com" n="com558">reiser sig</seg> af en umiddelbar Skadefrohed eller
+Ondskab, men af en Lyst til indirecte at rose sig selv, hvilket er saameget mere tillokkende, som
+Man for det meste kan gi&#x00F8;re det under Ydmyghedens Maske, ja saaledes at Man ikke alene
+<seg type="com" n="com559">skuffer</seg> andre, men sig selv med; men hvad er dog dette for en Tale? At haane og nedtr&#x00E6;de <pb type="text" facs="1814_229_fax046.jpg" ed="A" n="30"/>Folk i St&#x00F8;vet skulde v&#x00E6;re mindre ondt, naar
+Man gi&#x00F8;r det for at oph&#x00F8;ie sig paa deres Skuldre, gi&#x00F8;r det under Ydmygheds Maske! <app select="yes" type="corrNote"><lem wit="GV"><seg type="com" n="com216">Nu<!--nuvel.--></seg></lem><rdg wit="A">Nn</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,
+kan <seg type="com" n="com217">Recs.<!--recensentens.--></seg> Samvittighed tage til Takke med en saadan Undskyldning, da forundrer hans Recensjon mig ikke l&#x00E6;ngere, thi den har han skildret
+i disse Tr&#x00E6;k, men min Samvittighed siger mig, at er den Beskyldning sand, har jeg under Ydmygheds
+Maske haanet og lastet Andre for at rose og oph&#x00F8;ie mig selv, da er jeg et Afskum, Guds og Sandhedens vitterlige Fjende, ja <seg type="com" n="com218">Rec.<!--recensenten.--></seg>
+siger jo strax ovenfor, at den christne Ki&#x00E6;rlighed, der viser sig i <hi rend="romanType">con amore</hi> at fremdrage N&#x00E6;stens
+Feil ei blot som en Last, der tager Dydens Skin er om muligt skammeligere end Uki&#x00E6;rligheden
+selv, men at den tillige ford&#x00E6;rver det Menneske der ud&#x00F8;ver den. Hine <seg type="com" n="com220">Recs<!--recensentens.--></seg> Ord ere
+da enten et af hans <seg type="com" n="com560">Sl&#x00F8;r</seg> <seg type="com" n="com561">til</seg> de barmhjertige L&#x00E6;sere og <seg type="com" n="com221">mine Kyndinge</seg>, eller et Vink til den
+h&#x00F8;ie L&#x00E6;re, at der i Grunden intet virkelig Ondt er til. Dog <seg type="com" n="com562">Man h&#x00F8;re fremdeles</seg> den smukke
+Skildring af det dj&#x00E6;velske Hyklerie han till&#x00E6;gger mig! <seg type="comStart" n="com635"/>Man kan, siger han, spare sig for den
+Uleilighed at rose sit eget Genie, naar Man kun flittig nedriver de andres, ja Man kan mod <!--AP: spies-->alle
+T&#x00E6;nkere og store Aander beraabe sig paa sin Eenfoldighed, da Folk dog vel strax seer, at
+derunder endnu stikker en h&#x00F8;iere Egenskab, der maa v&#x00E6;re desto ski&#x00F8;nnere, <seg type="com" n="com222">saasom<!--eftersom?.--></seg> den skjuler sin
+Glands i Beskedenhedens Sl&#x00F8;r. Naar Man kun lader sig m&#x00E6;rke med, at Man haver en <pb type="text" facs="1814_229_fax047.jpg" ed="A" n="31"/>aandelig Gave, mod hvilken de andre kunne betragtes
+med ydmyg, fornem Haan, saa kan Man ligesaa roligt give den det uanseeligste Navn, som Paven kaldte sig <hi rend="romanType"><seg type="com" n="com224">servus servorum<!--lt., tjenernes tjener.--></seg></hi>
+i samme Tidsalder, da han traadte paa Keisernes Nakke. F&#x00F8;ler Man endnu Trang til at rose sig tydeligere, saa <seg type="com" n="com563">v&#x00E6;lge Man</seg> en Mand,
+hvis herlige Aand staaer i helligt Minde hos hele Folket, hos de Indsigtsfulde, fordi de kiende
+ham, hos de andre, fordi det er blevet dem sagt, at han var fortr&#x00E6;ffelig. Man <seg type="com" n="com564">tale</seg> dristigt,
+som om denne Mands egenlige T&#x00E6;nkemaade var kommen i Foragt, fordi Man nu troede sig oph&#x00F8;iet
+derover, og dertil <seg type="com" n="com565">f&#x00F8;ie Man</seg>, at Man f&#x00F8;ler sig hans <hi rend="spaced">Fr&#x00E6;nde i Tro og Tungemaal,</hi> kort, Man <seg type="com" n="com566">tale</seg> om ham og sig, som
+Grundtvig om <hi rend="spaced"><persName key="pe748">Tyge Rothe</persName></hi> i Fortalen til
+    sin <rs type="title" key="title629">Verdenskr&#x00F8;nike</rs><seg type="comEnd" n="com635"/>.</p>
+    
+<p rend="firstIndent">Jeg har ordret afskrevet denne hele Tale, for at give de L&#x00E6;sere, der ei kiende Recensjonen,
+en levende Forestilling af <seg type="com" n="com225">Recs.<!--recensentens.--></seg> dybe Indsigt i Urettens Hemmelighed og sjeldne Evne til at
+aabenbare den, men forsaavidt den skal findes i mit Hjerte, maa jeg gi&#x00F8;re Indsigelser, som L&#x00E6;sere
+med Sandhedski&#x00E6;rlighed neppe vil foragte. <seg type="com" n="com226">Rec.<!--recensenten.--></seg> siger at jeg flittig har <seg type="com" n="com567">nedrevet</seg> Andres Genie,
+men min <rs type="title" key="title629">Kr&#x00F8;nike</rs> viser at jeg har oph&#x00F8;iet hvert Genie, og <seg type="com" n="com227">Rec.<!--recensenten.--></seg> har netop f&#x00F8;r bem&#x00E6;rket,
+at jeg ogsaa rosde <!--AP: spies-->af fuld Mund, rigtig nok ogsaa for at oph&#x00F8;ie mig selv, men paa en anden
+Maade, som deres Overm&#x00E6;nd jeg rosde og dog <pb type="text" facs="1814_229_fax048.jpg" ed="A" n="32"/>oversaae. Det er da uheldigt, at det f&#x00F8;rste Tr&#x00E6;k
+der dog er Grundvolden for den hele <app select="yes" type="corrNote"><lem wit="GV">Bygning</lem><rdg wit="A">Bygniug</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,
+skulde v&#x00E6;re saa aabenbar falsk, at Ingen som l&#x00E6;sde min <rs type="title" key="title629">Kr&#x00F8;nike</rs>, noget &#x00D8;ieblik kan fristes til
+at tro jeg har <seg type="com" n="com568">nedsat</seg> Andres Genie. Dog jeg har dog kundgjort Ringeagt for mange M&#x00E6;nd,
+hvem <app select="yes" type="corrNote"><lem wit="GV">Gud</lem><rdg wit="A">Gnd</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> forlenede store Gaver, og som <seg type="com" n="com228">Rec.<!--recensenten.--></seg>
+videre siger, gjort dem mist&#x00E6;nkde for at have forsmaaet den st&#x00F8;rste af alle Gaver? Ja, det
+har jeg gjort, Sligt har ieg sagt, for at indbefatte alt i faa Ord, om M&#x00E6;nd som <persName key="pe465">Voltaire</persName>, <persName key="pe172">Holberg</persName>,
+<persName key="pe1161">Vieland</persName> og <persName key="pe29">Goethe</persName>. Det er sandt, at ligesom Paven traadte paa Keisernes Nakke og kaldte sig
+<hi rend="romanType"><seg type="com" n="com229">servus servorum<!--lt., tjenernes tjener.--></seg>,</hi> saaledes have mange Sv&#x00E6;rmere under Tidens L&#x00F8;b haanet og spottet ei alene
+h&#x00F8;itbegavede og l&#x00E6;rde M&#x00E6;nd, men ogsaa L&#x00E6;rdom og store Sindets Gaver, haanet endog stundom,
+som <persName key="pe2102">Carlstad</persName>, hvad de selv havde, for at hovmode sig over alle af en aandelig Gave de i deres
+Enfoldighed besad. Disse Ting ere aabenbare, og derfor kan <seg type="com" n="com230">Recs.<!--recensentens.--></seg> Tale forvirre de Ukyndige,
+men det er ogsaa sandt, at jeg langt fra at blande mig med disse Sv&#x00E6;rmere har d&#x00F8;mt dem
+ligesaa haardt og stundom langt haardere end nogen Anden, det er vist, at jeg har givet L&#x00E6;rdom
+og hver Sindets Gave sin H&#x00E6;der og kun lastet Eierm&#x00E6;ndene, naar de i Hovmod og Vantro
+misbrugde disse Ting. Det er endelig vist, at jeg ei har talt om den <app select="yes" type="corrNote"><lem wit="GV">aandelige</lem><rdg wit="A">anndelige</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Gave disse
+M&#x00E6;nd forsmaaede, saaledes som alle Sv&#x00E6;rmere fra <persName key="pe3055">Cerinth</persName> til <persName key="pe692">Hauge</persName>, som om en umiddelbar <pb type="text" facs="1814_229_fax049.jpg" ed="A" n="33"/>Guds Oplysning, der kunde opl&#x00F8;fte Eiermanden
+over sine Br&#x00F8;dre, men at jeg, som <persName key="pe42">Luther</persName> og alle <seg type="com" n="com231">&#x00E6;dru<!--besindige.--></seg> L&#x00E6;rere i Kirken, kun har talt om den
+enfoldige Tro paa Guds skrevne Ord, som netop gi&#x00F8;r alle lige for Gud fra den st&#x00F8;rste Vise til den
+vankundigste Betler, om denne Tro som giver sig tilkiende i dyb &#x00C6;rb&#x00F8;dighed for Guds Ord og
+en retskaffen Vandel. At jeg ikke kunde fral&#x00E6;gge mig selv denne Gave fordi den forsmaaedes af
+mange store Aander, fordi den er mere v&#x00E6;rd end alt Andet, det er jo dog aabenbart, men
+det er ligesaa aabenbart, at denne Gave ei glimrer i Verdens &#x00D8;ine, det er vist, at Man
+istedenfor at oph&#x00F8;ie denne min enfoldige Tro, har spottet mig for den, og det er da aldeles
+umuligt, at jeg ved at till&#x00E6;gge mig den kunde t&#x00E6;nke paa, at vinde &#x00C6;re og Roes; selv M&#x00E6;nd,
+som havde Tro paa <persName key="pe45">Christus</persName>, forargedes over
+min gammeldags Maade, at tro <rs type="title" key="title788">Bibelen</rs> lige
+paa Ordet og hverken tillade min egen eller Andres Fornuft eller indvortes Oplysning, at uddrage
+en Mening, der ei tydelig laae i Ordene. Dette Tr&#x00E6;k, som netop har hindret mange religj&#x00F8;se
+Mennesker, selv dem jeg helst vilde enes med, fra at bifalde min Tale, som netop mere
+end noget Andet har hindret <seg type="com" n="com232">dens Indgang<!--tilslutningen til den, udbredelsen af den.--></seg>, det <seg type="com" n="com233">forvendes<!--fordrejes.--></seg> her til en Snedighed, hvormed jeg har
+hyklet, bl&#x00E6;ndet, og vundet mig Roes og Partie. Hvad vil da <seg type="com" n="com234">Rec.<!--recensenten.--></seg> sige om den hellige <persName key="pe343">Povel</persName>, naar
+    han udbryder <rs type="bible" key="1 Kor 1,20-23" rend="quote1787">(1 Cor. 1.) Hvor er en viis, hvor er <pb type="text" facs="1814_229_fax050.jpg" ed="A" n="34"/>en Skriftklog, <hi rend="spaced">hvor er denne Verdens
+Randsager?</hi> haver ikke Gud gjort denne Verdens Viisdom til <seg type="com" n="com235">Daarlighed<!--dårskab, tåbelighed.--></seg>? thi efterdi
+Verden formedelst Viisdom ikke kiendte Gud i Guds Viisdom, da behagede det Gud, formedelst den <seg type="com" n="com236">daarlige</seg> Pr&#x00E6;diken, at gi&#x00F8;re dem salige,
+som tro, thi baade J&#x00F8;derne elske Tegn og Gr&#x00E6;kerne elske Viisdom, men vi pr&#x00E6;dike den <hi rend="spaced">korsf&#x00E6;stede <persName key="pe45">Christum</persName></hi>, som er J&#x00F8;derne en Forargelse og Gr&#x00E6;kerne en <seg type="com" n="com237">Daarlighed<!--dårskab, tåbelighed.--></seg></rs>. <rs type="bible" key="1 Kor 1,26-27" rend="quote1787">I see, Br&#x00F8;dre!
+i eders Kald ikke mange <seg type="com" n="com238">Vise efter Ki&#x00F8;det<!--vise i verdslig forstand.--></seg>, men <seg type="com" n="com239">de daarlige Ting for Verden<!--de ting, som er tåbelige i verdens øjne.--></seg> haver Gud
+udvalgt, <seg type="com" n="com240">at<!--for at , jf 1992 Bibelen.--></seg> Han vilde beski&#x00E6;mme de Vise</rs>, <rs type="bible" key="1 Kor 1,29-31" rend="quote1787"><seg type="com" n="com240">paa det<!--for at.--></seg> <seg type="com" n="com242">intet Ki&#x00F8;d<!--ingen.--></seg> skal rose sig for Ham; men <seg type="com" n="com570">af</seg>
+Ham ere I i <persName key="pe45">Christo Jesu</persName>, hvilken er bleven os
+af Gud Viisdom og Retf&#x00E6;rdighed og Helliggi&#x00F8;relse og Forl&#x00F8;sning, <seg type="com" n="com571">at</seg> ligesom skrevet er, hvo
+sig roser, b&#x00F8;r rose sig i Herren!</rs> Mon <persName key="pe343">Apostelen</persName>
+<seg type="com" n="com243">og<!--også.--></seg> her <app select="yes" type="corrNote"><lem wit="GV">under</lem><rdg wit="A">nnder</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Ydmygheds Maske vilde hovmodig
+oph&#x00F8;ie sig over de store Aander, som han gi&#x00F8;r mist&#x00E6;nkde for at have forsmaaet den st&#x00F8;rste Gave,
+eller har jeg i den christne Menighed kundgjort Ringeagt for nogen Mand, hvis Adf&#x00E6;rd ikke
+viste, at han forsmaaede eller bespottede det <hi rend="spaced">Korsens Ord,</hi> <rs type="bible" key="1 Kor 1,23" rend="reference">som er Verden en Forargelse
+og <seg type="com" n="com244">Daarlighed<!--dårskab, tåbelighed.--></seg></rs>.</p>
+    
+<p rend="firstIndent">Men har jeg dog ikke rost mig selv ved at rose <persName key="pe748">Tyge Rothe</persName>, og kalde mig hans Fr&#x00E6;nde i
+Tro og Tungemaal? At det ikke var min Hensigt det veed jeg, om det seer saaledes ud maa
+sandhedski&#x00E6;rlige M&#x00E6;nd bed&#x00F8;mme, men at min <pb type="text" facs="1814_229_fax051.jpg" ed="A" n="35"/>Adf&#x00E6;rd i denne Sag er aldeles falsk fremstillet
+skal jeg bevise. At <persName key="pe748">Rothes</persName> Navn, vel ei hos
+Folket, men dog hos Mange var og er i &#x00E6;rv&#x00E6;rdig <seg type="com" n="com572">Ihukommelse</seg>, det er vist, det har jeg sagt,
+og just derfor omtalde jeg ham i min Fortale, derfor mindede jeg om, at han havde samme
+Tro og Syn i Historien som jeg, men dette sagde jeg ei blot, det godtgjorde jeg med hans
+egne Ord, det sees klart af den Bog jeg n&#x00E6;vnede. Ligesom <persName key="pe343">Paulus</persName> fordum, for at skaffe
+Sandheden <seg type="com" n="com245">Indgang<!--tilslutning, udbredelse.--></seg>, mindede om, at han ei sagde Andet end hvad <persName key="pe730">Mose</persName> og Propheterne havde
+forkyndt, saaledes vilde jeg, ved at vise paa <persName key="pe748">Rothe</persName>, om muligt hindre Folk fra at antage min
+Tale om Guds Styrelses M&#x00E6;rker for et tomt Fantasispil, og jeg fortav ingenlunde denne Hensigt.
+At jeg nu er <persName key="pe748">Rothes</persName> Fr&#x00E6;nde i Tro, er
+jo vist, naar vi begge ere Christne, at kalde sig det, er vist ikke at beile til vor Tids Roes, og
+det er ingen syndig Roes, naar Man er det, at <persName key="pe748">Rothes</persName> T&#x00E6;nkemaade i Troessager var kommet i
+Foragt, ja <seg type="com" n="com246">end<!--endnu.--></seg> er i Foragt hos de fleste Bogl&#x00E6;rde, det er jo en afgjort Sandhed, thi han
+bekiendte Tro paa <hi rend="spaced">Korsets Ord,</hi> og altsaa foer <seg type="com" n="com247">Rec.<!--recensenten.--></seg> her som s&#x00E6;dvanlig med L&#x00F8;gn. Det
+Eneste jeg kunde ladet v&#x00E6;re, var at kalde mig <persName key="pe748">Rothes</persName> Fr&#x00E6;nde i Tungemaal, men da <persName key="pe748">Rothes</persName> Sprog
+slet ikke er det, Man s&#x00E6;dvanlig roser hos ham, og da Man tilstaaer mig en Art af Veltalenhed,
+saa veed jeg ikke, hvad Roes jeg derved skulde <pb type="text" facs="1814_229_fax052.jpg" ed="A" n="36"/>tilsnige mig, jeg fandt Lighed mellem hans
+Sprog og mit, (husker jeg ret, da har <seg type="comStart" n="com248"/>min <rs type="title" key="title629">Kr&#x00F8;nikes</rs> Rec.<seg type="comEnd" n="com248"/> netop fundet det samme) det gl&#x00E6;dede
+mig, fordi Manden er mig saare ki&#x00E6;r, og jeg sagde det, har jeg deri feilet, da vil jeg ei undskylde mig, men det veed jeg, at ingen sandhedski&#x00E6;rlig Mand kan <seg type="com" n="com250">forvende<!--fordreje.--></seg> og misbruge det,
+som <seg type="com" n="com251">Rec.<!--recensenten.--></seg>; thi derved har jeg dog vel ikke teet
+mig <seg type="com" n="com628">enten</seg> som Folkeforvirrer eller hovmodig
+Hykler.</p>
+    
+<p rend="firstIndent">Dog, det kunde maaskee falde <seg type="com" n="com629">Rec.<!--recensenten.--></seg> ind ved
+et af sine s&#x00E6;dvanlige <seg type="com" n="com253">Konstspring<!--krumspring.--></seg>, at komme til det han i en Anm&#x00E6;rkning saa l&#x00F8;selig har ladet
+sig m&#x00E6;rke med, at jeg dog vel kunde have Lyst til at ansees for en af Gud indbl&#x00E6;st Prophet,
+thi her var da en aandelig Gave, hvormed jeg kunde prale i min Enfoldighed, medens
+jeg rolig gav slip paa alle andre Fortrin. <seg type="com" n="com254">Rec.<!--recensenten.--></seg> eller en Anden vil sikkert engang beskylde mig
+for noget Saadant, og om jeg ogsaa, ved nu at omtale det, skulde give Anledning dertil, anseer jeg det dog for min Skyldighed reentud at
+sige mine Tanker herom. At <app select="yes" type="corrNote"><lem wit="GV">Gud</lem><rdg wit="A">Gnd</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> kan forlene
+sine Troende saavel Ahnelser som klarere Syn af <seg type="com" n="com255">uvordne Ting<!--ting, der endnu ikke er sket.--></seg> er <seg type="com" n="com256">upaatvivleligt<!--utvivlsomt.--></seg>, at en gudelig
+Digter, for menneskelige &#x00D8;ine, maa synes mest skikket til at ahne og skimte, er det ligesaa, men
+om jeg nogensinde har seet saadanne Glimt, maa Tiden vise, kun dette veed jeg, at hvad Man
+kan angive for saadant er enten L&#x00F8;gn, eller maa stemme overeens med det skrevne Ord, som er <pb type="text" facs="1814_229_fax053.jpg" ed="A" n="37"/>Aandernes eneste rette Pr&#x00F8;vesteen, at den som
+vilde rose sig deraf <seg type="com" n="com257">forlorede<!--mistede.--></seg> Synet <seg type="com" n="com258">end vissere<!--endnu mere sikkert.--></seg>, end hver hovmodig Digter sin Begeistring, og
+at ieg endelig har v&#x00E6;ret saalangt fra at opl&#x00F8;fte mig over Nogen ved Saadant, at jeg meget
+mere anbefaler den h&#x00F8;ieste Forsigtighed i en Sag, hvor Gr&#x00E6;ndselinien mellem Sandhed, <seg type="com" n="com259">Skuffelse<!--illusion, blændværk.--></seg>
+og Bedragerie er saa nem at overskride, og har, n&#x00E6;sten med Skamfuldhed udsj<!--AP: læderet/mangler-->unget de Toner,
+jeg ei <seg type="com" n="com260">turde<!--formåede, kunne?? ODS 7.--></seg> d&#x00E6;mpe, ski&#x00F8;ndt de <seg type="com" n="com261">underlig<!--på forunderlig måde.--></seg> klang om hvad j<!--AP: ligner lidt "i", men kan være et læderet "j"-->eg ei vidste. Viser Tiden, at de have
+<seg type="com" n="com262">skuffet<!--bedraget.--></seg> mig, da skal jeg v&#x00E6;re den ivrigste til at d&#x00E6;mpe dem og deres Fr&#x00E6;nder, men f&#x00F8;r t&#x00F8;r jeg
+ikke, t&#x00F8;r ikke mere, end bede hver holde sig til det faste prophetiske Ord, som er for os alle i
+<rs type="title" key="title788">den Hellige Skrift</rs>, og <seg type="com" n="com263">lade min Sang staae ved
+sit V&#x00E6;rd<!--lade min sangs (digtnings) gyldighed være uafgjort, ODS 2.2.--></seg>, <seg type="com" n="com638">naar</seg> den er andet end en aabenbar Gienlyd af Propheternes Sange. Dette er alt,
+hvad jeg kan gi&#x00F8;re, og hvad jeg selv gi&#x00F8;r, men det er Nok til at vise, at jeg visselig ingen Lyst
+har til at forvirre Folket, og jeg har dog vel Ingen lastet, fordi han ikke var Skjald.</p>
+    
+<p rend="firstIndent">Efter nu saaledes at have fremstilt mig som en hovmodig, &#x00E6;rgierrig og nederdr&#x00E6;gtig
+Hykler, gi&#x00F8;r <seg type="com" n="com264">Rec.<!--recensenten.--></seg> atter et Spring, og Man skulde ei let gi&#x00E6;tte hvilket. Man skulde ikke t&#x00E6;nke,
+at den Mand der lader <seg type="com" n="com265">som<!--som om.--></seg> han angriber mig, kun fordi jeg forvirrer Folket i Religjonens hellige Sag, skulde give sig S<!--AP: læderet-->tunder til at unders&#x00F8;ge mine Skrifters Form efter Konstens Regler. Alligevel er det <seg type="com" n="com266">saa<!--saaledes.--></seg>, fordi han <seg type="com" n="com267">gi&#x00F8;r sig en
+Samvittighed af<!--nærer betænkeligheder ved; har skrupler over.--></seg> at fortie Noget der efter hans <pb type="text" facs="1814_229_fax054.jpg" ed="A" n="38"/>Mening kunde <seg type="com" n="com268">neds&#x00E6;tte mig</seg>, og b&#x00F8;de paa Mangelen
+af Beviser for hans gruelige Paastand, at jeg forvirrer og forf&#x00F8;rer Folket. Ingen kan derimod
+forlange, at jeg skal spilde Tid og Ord paa at forsvare mine B&#x00F8;gers Form, som, i det mindste
+her, hvor Talen er om saa vigtige Ting, maa agtes ligegyldig. Kun et Par korte Bem&#x00E6;rkninger
+vil jeg gi&#x00F8;re for at overhugge de Snore, hvormed <seg type="com" n="com269">Rec.<!--recensenten.--></seg> har meent at knytte sin Daddel
+over B&#x00F8;gernes Form til Ford&#x00F8;mmelsen af deres Indhold. Han taler store Ord om, hvordan
+Sandheden skal elskes og udfindes, saa det ei er nok at sige <hi rend="spaced">sin</hi> Mening, men derved d&#x00F8;mmer
+han kun sig selv, ikke mig, thi naar <rs type="title" key="title788">Bibelens</rs> Ord ere Sandhedens Pr&#x00F8;vesteen, og jeg
+har brugt den, som jeg har, da beh&#x00F8;ver jeg <seg type="com" n="com573">vist ikke</seg> at sammenligne det, <rs type="title" key="title788">Bibelen</rs> erkl&#x00E6;rer for
+Sandhed med det som Andre udgive derfor, og er det Uret at tale Sandhed uden at indflette den
+i konstige Rammer og menneskelig Viisdoms overtalende Ord, da har <rs type="title" key="title788">Bibelens</rs> Skribentere
+begaaet stor Uret, med dem maa <seg type="com" n="com270">Rec.<!--recensenten.--></seg> tr&#x00E6;ttes, jeg vil helst f&#x00F8;lge dem. Hvad det skal betyde,
+at den rette Sandhedselsker i de menneskelige Overbevisningers Dissonanser ops&#x00F8;ger med Omhyggelighed de skjulde Accorder der for det finere
+aandelige &#x00D8;re opl&#x00F8;ser dem i en almindelig hellig Harmonie, mener jeg rigtig nok at forstaae, thi det
+er jo <persName key="pe54">Schellings</persName> og Naturfilosofernes almindelige Sprog, hvis Grundvold er <hi rend="spaced">den evige Eenhed af Sandhed og L&#x00F8;gn,</hi> Lys og M&#x00F8;r<pb type="text" facs="1814_229_fax055.jpg" ed="A" n="39"/>ke;<note type="footnote"><p rend="noIndent"><persName key="pe54">Schelling</persName> siger udtrykkelig at M&#x00F8;rket er det
+hvoraf Lyset har udviklet sig, ligesom det Gode af det ikke Gode.</p></note> men jeg veed ogsaa, at der staaer skrevet
+(<rs type="bible" key="Es 5" rend="normForm">Es. 5.</rs>) <rs type="bible" key="Es 5,20" rend="quote">Vee dem, som sige om det Onde: Godt og om det Gode: Ondt, som gi&#x00F8;re M&#x00F8;rket til Lyset og Lyset til M&#x00F8;rket, som gi&#x00F8;re
+Bittert til S&#x00F8;dt og S&#x00F8;dt til Bittert!</rs> og <seg type="com" n="com270">Rec.<!--recensenten.--></seg> maa undskylde, at jeg troer Gud bedre end ham,
+og altsaa strider mod L&#x00F8;gnen med den Kraft Gud under. Skulde <seg type="com" n="com270">Rec.<!--recensenten.--></seg> ei vedkiende sig den
+Mening jeg har seet i hans Ord, og ventelig vil han det ikke, siden han er vred paa <persName key="pe54">Schelling</persName> for hans Aabenhjertighed og vil i denne Recensjon
+<seg type="com" n="com272">skride<!--gælde, anses. ODS 1.3.--></seg> for en Christen, da har han sig selv at anklage, thi skal Ordene betyde andet,
+ere de visselig saare dunkle, og han siger jo selv, at den der skriver <app select="yes" type="corrNote"><lem wit="GV">dunkelt</lem><rdg wit="A">duukelt</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> vil skjule Int<!--AP: læderet-->ethed.</p>
+
+<p rend="firstIndent">Hvad nu min <rs type="title" key="title629">Kr&#x00F8;nikes</rs> Form angaaer, thi
+det er ret m&#x00E6;rkeligt at <seg type="com" n="com273">Rec.<!--recensenten.--></seg> kun taler om den af mine B&#x00F8;ger, hvor Konst er vanskeligst at
+&#x00F8;ve og mindst at vente, da har jeg sagt det, jeg vilde intet glat Konstv&#x00E6;rk give, og det var
+slet intet Konstgreb, men Sandhed, thi saavidt Konst ei er noget affecteret eller haandv&#x00E6;rksm&#x00E6;ssigt,
+men den Klarhed, Orden, Bestemthed og Sammenh&#x00E6;ng enhver sand Tale str&#x00E6;ber efter, da
+meende jeg <seg type="com" n="com274">og<!--også.--></seg> der var Konst i min <rs type="title" key="title629">Kr&#x00F8;nike</rs>, og
+har jeg, som <seg type="com" n="com275">Rec.<!--recensenten.--></seg> siger, en letbev&#x00E6;gelig Phantasie <pb type="text" facs="1814_229_fax056.jpg" ed="A" n="40"/>og en Art af Veltalenhed, er det vel ikke urimeligt. Imidlertid kaldes den stakkels Bog et
+Uhyre, hvorover Man knap kunde bare sig for Latter, uagtet det synes <seg type="com" n="com276">som<!--som om.--></seg> Man har havt lettere
+    ved at bare sig, end ved at lee. <seg type="com" n="com277">Jeg gider ikke talt</seg> mere om denne Sag i en saadan Anledning,
+men maa dog sp&#x00F8;rge <seg type="com" n="com278">Rec.<!--recensenten.--></seg> om vore andre Udtog af Verdenshistorien r&#x00F8;be mere Konst,
+mere and&#x00E6;gtig og ki&#x00E6;rlig Flid?</p>
+    
+<p rend="firstIndent">Et Exempel, heder det, maa endnu tjene til at fuldende vor Skildring. Man maa vel
+sp&#x00F8;rge: hvilken? men det siger intet, jeg forstaaer ham ret<!-- evt.: helt, meget --> godt, Skildringen af mig som
+Folkeforvirrer, og <seg type="com" n="com278">Rec.<!--recensenten.--></seg> gi&#x00F8;r nu en nydelig Overgang til sit Opraab imod mig ved at anf&#x00F8;re min
+Dom om de mat<!--AP: læderet-->hematiske og physiske Videnskabers Dyrkelse (<rs type="title" key="title629">Kr&#x00F8;nik.</rs> 280). Der har jeg <app select="yes" type="combNote"><lem wit="GV">paastaaet,</lem><rdg wit="A">paastaaetʻ</rdg><note type="add">omvendt komma</note><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app><!-- omvendt komma --> at hvor Kemi, Astronomi, og Mathematik
+<hi rend="spaced">ret blomstre</hi> og, som Sammenh&#x00E6;ngen viser, agtes for de ypperste, er det aandelige
+Tr&#x00E6; <seg type="com" n="com279">sin Udgang n&#x00E6;r</seg>. Dette har <seg type="com" n="com280">Rec.<!--recensenten.--></seg> ei bestridt
+og det er saare let at bevise, men det passer ikke her, beh&#x00F8;ves ei heller. Men jeg har ogsaa sagt,
+at disse Kundskaber forlyste vantro Sj&#x00E6;le, fordi de snarere lede fra end til Religjonen. Dette
+udl&#x00E6;gger nu <seg type="com" n="com280">Rec.<!--recensenten.--></seg> som om jeg dermed vilde sige,
+at det laae i disse Kundskabers Natur at stride mod Religjonen, gotter sig over den urimelige
+Paastand at Betragtningen af Guds V&#x00E6;rker snarere skulde lede fra end til Religjonen, og viser,
+at baade Chemi og Astronomi kan og b&#x00F8;r lede <pb type="text" facs="1814_229_fax057.jpg" ed="A" n="41"/>til Religjon. Men hvor har jeg n&#x00E6;gtet det?
+Var det ikke tydeligt nok<!--AP: læderet--> at jeg kun talde om
+disse Kundskabers Virkning paa vantro Sj&#x00E6;le, hvorfor vilde <seg type="com" n="com280">Rec.<!--recensenten.--></seg> da ikke see min Anm&#x00E6;rkning,
+til <seg type="com" n="com281">186</seg> der netop er skrevet for at forebygge <seg type="com" n="com282">Misforstand<!--misforståelse.--></seg> af disse og flere Ord om Videnskabernes
+Forhold til Religjon og Christendom? Siger jeg ikke der udtrykkelig (S. 386.) at Alt
+hvad der mangler Frihed, maa, <hi rend="spaced">naar det rettelig kiendes,</hi> sees som Guds V&#x00E6;rk,
+<hi rend="spaced">at kun i Frihedsyttringerne</hi> ei i Evnerne findes Striden imod Ham, og selv hine
+der fra Evighed ere forudseete, maa sees<!--KVs ekspl. er utydelig på detandet e--> at v&#x00E6;re
+Hans Styrelse undergivne. Siges det ikke hermed, at alle Kundskaber baade kan og b&#x00F8;r og maa
+tjene Gud, ja erkl&#x00E6;res det ikke udtrykkelig for galt at ansee Gud og Fornuften for ubetingede Mods&#x00E6;tninger,
+for en sv&#x00E6;rmerisk S&#x00E6;tning, at kalde Videnskabelighed utilladelig? siges det ikke, at
+naar Christendom igien seirer, vil Troens Baand samle Videnskaberne i en hidtil ukiendt Endr&#x00E6;gtighed
+og Sammenh&#x00E6;ngen mellem Ideer og Erfaring skues klarere end nogensinde? Hvad bliver
+nu den hele <seg type="com" n="com283">Declamation<!--bebrejdelse, se ODS deklamere 2.--></seg> til om mit Galskab og mit Had til Videnskaberne, som jeg har
+elsket og dyrket stedse, elsker og dyrker daglig, ski&#x00F8;ndt jeg ei forguder dem, og er vis paa, at
+de physiske og mathematiske langt mere end de historiske ere skikkede til at forlyste dem, der
+&#x00F8;nske at glemme Gud, hvilket allerede er klart deraf, at jo endnu Ingen har fundet Forbindel<pb type="text" facs="1814_229_fax058.jpg" ed="A" n="42"/>sen mellem Religjon og Mathematik, thi det er
+jo Beviis paa, at den ei <seg type="com" n="com284">&#x00F8;iensynlig<!--synligt, tydeligt. DDO = tilsyneladende.--></seg> <seg type="com" n="com574">minder om</seg> Gud, hvorfor <seg type="com" n="com285">og<!--også.--></seg> <seg type="com" n="com286">Rec.<!--recensenten.--></seg> klogelig springer den forbi, ski&#x00F8;ndt han vel ei kan n&#x00E6;gte, at den er Sj&#x00E6;len
+som gi&#x00F8;r baade Physik og Astronomi til Videnskaber. Efter en kort Udvikling af <hi rend="spaced">hvorledes</hi> Chemi, Astronomie og Mathematik <hi rend="spaced">kan forlyste
+vantro Sj&#x00E6;le,</hi> og bestyrke dem i Vantro, siger jeg, at Man deraf kan forstaae <hi rend="spaced">hvor</hi> meget
+Sandt der er i den almindelige Paastand, at Christendommen er Videnskaberne i Veien, nemlig
+<hi rend="spaced">saa meget</hi> Sandt, at naar Videnskabeligheden vil v&#x00E6;re selvst&#x00E6;ndig og uchristelig, <hi rend="spaced">da</hi>
+er Christendom den i Veien. Hine Ord have faaet en ganske anden Betydning hos <seg type="com" n="com286">Rec.<!--recensenten.--></seg> derved,
+    at Ordet: <hi rend="spaced">hvor</hi> ei, som i min Bog netop for at hindre <seg type="com" n="com287">Misforstand<!--misforståelse.--></seg>, er <seg type="com" n="com575">udm&#x00E6;rket</seg>, thi nu
+seer det ud <seg type="com" n="com576">som</seg> jeg havde sagt, at der var <hi rend="spaced">meget</hi> Sandt i hin Paastand, og er denne Forvanskning
+af mine Ord <seg type="com" n="com288">uvitterlig<!--uafvidende, dvs.  uden recensentens vidende.--></seg>, da er den dog en saare slem Uagtsomhed. <seg type="com" n="com289">Rec.<!--recensenten.--></seg> bygger ikke udtrykkelig
+paa denne <seg type="com" n="com290">omgjorde<!--forandrede, omfortolkede.--></seg> Text, men forstaaer jeg ham ret, da foruds&#x00E6;ttes den, thi ellers kommer Opraabet dog virkelig lidt mere hovedkulds,
+end Konstens, jeg vil ikke tale om andre, Regler synes at fordre. <seg type="com" n="com291">Rec</seg><!--emenderer IKKE manglende punktum--> paastaaer nemlig, at
+det er en af mine mangfoldige usande Beskyldninger mod Tidsalderen, at det skulde v&#x00E6;re en
+almindelig Paastand, at Christendommen var Videnskaberne i Veien. Jeg gad seet <seg type="com" n="com292">Recs.<!--recensentens.--></seg> Beviis
+i denne Sag, thi skal jeg tro mine egne <pb type="text" facs="1814_229_fax059.jpg" ed="A" n="43"/>&#x00D8;ine, da har det visselig staaet i mange af vor
+Tids B&#x00F8;ger at al positiv Religjon hindrede Videnskabernes frie Str&#x00E6;ben, ja for mine &#x00D8;ine
+staaer det endog udtrykkelig i <persName key="pe3051">Eichhorns</persName> <rs type="title" key="title4039">Litteraturgeschichte</rs> som en afgjort Sandhed, at Christendommen,
+saaledes som den forkyndtes af <persName key="pe42">Luther</persName>, og <seg type="com" n="com293">overalt<!--idet hele taget.--></seg> den str&#x00E6;nge Tro paa <rs type="title" key="title788">Bibelen</rs> hindrede is&#x00E6;r de physiske Videnskabers Opkomst, ja
+hvad har vi her mere Vidnesbyrd behov? <seg type="com" n="com294">Rec.<!--recensenten.--></seg> siger jo selv, at den Christendom jeg forkynder
+staaer i Strid mod Fornuft, Videnskab og Oplysning, og saal&#x00E6;nge han nu ikke har beviist,
+at min Christendom er anderledes end <persName key="pe42">Luthers</persName>,
+og <rs type="title" key="title788">Bibelens</rs> klare Ord, da skal <hi rend="spaced">han</hi> staae som
+den der siger at Christendom er Videnskaberne i Veien. Imidlertid paastaaer <seg type="com" n="com294">Rec.<!--recensenten.--></seg> at den urimelige
+Paastand har v&#x00E6;ret meget sjelden og <seg type="com" n="com295">sagtens</seg> kun en Feiltagelse, istedenfor at sige, at hovmodige
+og uvidende Pr&#x00E6;ster ofte have forfulgt videnskabelige Opdagelser. Her bryder da <seg type="com" n="com630">Rec.<!--recensenten.--></seg>
+endelig <seg type="com" n="com296">ret</seg> l&#x00F8;s og holder en ret opbyggelig Tale til sin Krigsh&#x00E6;r, thi dertil vilde han have Vennerne
+af Sandhed og &#x00E6;gte Gudsfrygt; b&#x00F8;r ikke enhver, siger han, der vil det Gode, betragte sig som
+<seg type="com" n="com297">Strider<!--stridsmand.--></seg> i denne Sag? thi hvorhen f&#x00F8;rer det ei, at Man indbilder den blinde Hob, at Videnskabernes
+Dyrkere hade Religjonen? <seg type="com" n="com298">Vogner<!--vågn (imperativ pluralis).--></seg> dog op alle Venner af Sandhed og &#x00E6;gte Gudsfrygt!
+See I ikke det Baal gienreise sig, hvorpaa <hi rend="spaced"><persName key="pe3052">Vanini</persName></hi> br&#x00E6;ndte? see I ikke det F&#x00E6;ngsel paa ny
+optaarne sig, hvori <persName key="pe809">Galil&#x00E6;i</persName> vansm&#x00E6;gtede? <seg type="com" n="com299">For<pb type="text" facs="1814_229_fax060.jpg" ed="A" n="44"/>agter ikke<!--foragt ikke, undervurder ikke (imperativ pluralis).--></seg> det fjendtlige Foretagende fordi det i
+sin Ufornuft b&#x00E6;rer Spiren til sin egen Undergang! det kan dog have sin Virkning til en
+Tid. Der gives i alle St&#x00E6;nder en lettroende Hob, hos hvilken det Urimeligste finder <seg type="com" n="com300">Indgang<!--tilslutning, udbredelse.--></seg>,
+naar ingen fremmed Fornuft advarer den. Sv&#x00E6;rmere s&#x00E6;tte Aandens Pr&#x00E6;g paa Urimeligheder og
+L&#x00F8;gne, hvo ikke har den rette Pr&#x00F8;vesteen tager dem for det rene Guld. <seg type="com" n="com301">Forener<!--foren (imperativ pluralis).--></seg> eder ikke til
+    Forf&#x00F8;lgelse, men til at stride med Aandens Vaaben<!-- evt. <rs type="bible" key="Ef 6,10-20" rend="allusion"> --><!--AP: spies-->! <seg type="com" n="com302">Tvinger<!--tving (imperativ pluralis).--></seg> blot de Forvildede til at forstaa
+sig selv, og Eders Seier vil v&#x00E6;re let, og heldbringende for Eders svagere Br&#x00F8;dre! Historien
+har jo noksom viist os, at disse forvirrede Folkeforvirrere have f&#x00F8;rt de <seg type="com" n="com303">Ubekr&#x00E6;ftede<!--ubefæstede, usikre i troen.--></seg> bort fra
+den rette Vei, deels ved at give dem Afskye for det Gode, hvormed det Slette de fremf&#x00F8;rte var blandet, deels ved at lade dem tage det Slette for ligesaa vigtigt, om end ei vigtigere, end det
+Gode.</p>
+    
+<p rend="firstIndent">Skal Man lee eller harmes over en saadan Tale? Jeg troer begge Dele, thi skammelig er
+den ved sin Hensigt, latterlig i sin Anvendelse. Jeg troer <seg type="com" n="com304">Rec.<!--recensenten.--></seg> har Ret i at Enhver, som vil det
+Gode, burde ansee sig som <seg type="com" n="com305">Strider<!--stridsmand.--></seg> i denne Sag, men med hvem de burde forene sig ere vi naturligviis saare uenige om, dog det vil de vel see,
+naar de vaagne, og det er mit inderlige &#x00D8;nske, at de maa vaagne og <!--AP: spies måske--><rs type="bible" key="Ef 5,14" rend="allusion">lade <persName key="pe45">Christus</persName> lyse for sig</rs>,
+jeg kalder dem slet ikke til at hjelpe mig, de gaae i Herrens Navn, hvor Gud og Hans Ords <pb type="text" facs="1814_229_fax061.jpg" ed="A" n="45"/>Lys byder dem, men at de da ei gaae <hi rend="spaced">imod</hi> mig, det veed jeg saavist som at der er en levende Gud, og at det er Hans Ord, som det ligger aabenbart for Alle, jeg forkynder<!--d udvisket i Møller-ekspl., kan anes i Gr.bib--> uden Sviig. <seg type="com" n="com306">Rec.<!--recensenten.--></seg> sp&#x00F8;rger, hvorhen det ikke f&#x00F8;rer at indbilde
+den blinde Hob, at Videnskabernes Dyrkere hade Religjonen? Derpaa kan jeg ikke svare, men det
+veed jeg, at den blinde Hob <seg type="com" n="com577">kun bryder sig lidt enten om Videnskaber eller Religjon</seg>, <!--AP: spies-->saa at
+selv Gudsbespottere, som vi har seet, kan ei alene f&#x00E6;rdes og sysle, men <seg type="com" n="com307">og<!--også.--></seg> aabenbar bespotte
+Gud og <persName key="pe45">Christus</persName>, det veed j<!--AP: læderet-->eg ogsaa, at aldrig
+har jeg tilraadet eller bifaldet Ki&#x00E6;tterbaal, det veed jeg <seg type="com" n="com632">end</seg>, at er noget Baal n&#x00E6;r ved at
+t&#x00E6;ndes, da er det til Guds Venner og ei til Hans Fjender; men det veed jeg endelig ogsaa, at det
+er et <seg type="com" n="com308">Nidingsv&#x00E6;rk<!--en fej, foragtelig persons værk.--></seg>, at ville indbilde Folk at jeg f&#x00F8;rer Mord og Brand i mit Skjold. At Sv&#x00E6;rmere<!--ulæseligt i kgl.bib-->
+s&#x00E6;tte Aandens Pr&#x00E6;g paa Urimeligheder og L&#x00F8;gne, saa at den der ei har den rette Pr&#x00F8;vesteen tager dem for det rene Guld, det see vi
+for vore &#x00D8;ine, men indtil <seg type="com" n="com309">Rec.<!--recensenten.--></seg> beviser, at jeg
+f&#x00F8;rer falsk og l&#x00F8;gnagtig L&#x00E6;rdom, kun hos ham, ikke hos mig. <seg type="com" n="com578">Tvinger</seg> blot, siger han, de Forvildede til at forstaae sig selv og eders Seier
+vil v&#x00E6;re let! Det skal v&#x00E6;re mig ki&#x00E6;rt om alle Sandhedens Venner vil gi&#x00F8;re det med dem som
+sige, at de bifalde min Tale, thi det er just mit inderligste &#x00D8;nske, at ingen letsindig bifaldt
+den, men at enhver gjorde sig selv klart og alvorligt Regnskab for sin Tro og Overbevisning, <pb type="text" facs="1814_229_fax062.jpg" ed="A" n="46"/>at derimod Seieren skulde blive saa let over
+dem, der virkelig tro som jeg, skulde <seg type="com" n="com310">Rec.<!--recensenten.--></seg> dog
+ikke sige saa vist, f&#x00F8;r han har <app select="yes" type="corrNote"><lem wit="GV">overvundet</lem><rdg wit="A">overvuudet</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mig,
+og den vilde udentvivl blive saare vanskelig om ikke umulig. Tingen er, at jeg aldrig byder
+Nogen tro mine Griller, eller bygge sin Tro paa mine Tanker, men at tro paa Gud, vandre
+for Hans Aasyn <seg type="com" n="com311">ustraffelig</seg> i Ki&#x00E6;rlighed og randsage Hans Ord under B&#x00F8;n og Andagt. Den
+som nu gi&#x00F8;r det, og med Andre har jeg og vil jeg Intet have at gi&#x00F8;re, om de saa oph&#x00F8;iede
+min Tale til Skyerne, den som gi&#x00F8;r det, siger jeg, og da faaer den Vished i sit Hjerte, at jeg
+l&#x00E6;rer Guds Vei rettelig efter <rs type="title" key="title788">Skrifterne</rs>, <seg type="com" n="com312">Rec.<!--recensenten.--></seg>
+kan tro, han er ikke stort nemmere at overvinde, end den Gud, Som er Hans Tillid og Bef&#x00E6;stning. Hvorledes nu <seg type="com" n="com312">Rec.<!--recensenten.--></seg> kan opbyde til almindelig Strid mod en Mand, der idelig kun formaner
+til at tro paa Gud og frygte Ham, som beder og besv&#x00E6;rger alle dem der vil h&#x00F8;re ham, kun i <rs type="title" key="title788">Bibelen</rs> at s&#x00F8;ge Sandhed, kun i Ordet og
+B&#x00F8;nnen at s&#x00F8;ge Oplysning, og i Troessager at ringeagte <hi rend="spaced">al menneskelig</hi> Myndighed, det
+er dog rigtig forunderligt, aldenstund han selv viser Folk til <rs type="title" key="title788">Bibelen</rs>,  enten er han da afsindig eller den Folkeforvirrer og falske Prophet han
+beskylder mig for at v&#x00E6;re, ja jeg tager intet &#x00D8;ieblik i Bet&#x00E6;nkning, at sige reentud det er hans Hensigt at forvirre Folket, at forvilde dem fra den sande, eenfoldige Christendom, som ligger
+klar i <rs type="title" key="title788">Bibelen</rs>,  som er forkyndt ved Herrens <pb type="text" facs="1814_229_fax063.jpg" ed="A" n="47"/>Apostle og de gamle Kirkef&#x00E6;dre, som, efter at
+v&#x00E6;re <seg type="com" n="com579">en Tidlang</seg> foragtet og forvansket, forkyndtes ved <persName key="pe42">Luther</persName>, indeholdes i vor Kirkes <seg type="com" n="com580">Symboliske B&#x00F8;ger</seg>, og forkyndes nu ved mig og enhver,
+som f&#x00F8;lger dem.</p>
+    
+<p rend="firstIndent">Nu vender <seg type="com" n="com313">Rec.<!--recensenten.--></seg><!--punktum er næsten udsynligt i alle tre ekspl.--> sig til den Forklaring af
+nogle Spaadomme i <rs type="title" key="title788">Skriften</rs>, som jeg har udgivet og derved, efter <seg type="com" n="com314">Recs.<!--recensentens.--></seg> Paastand, kundgjort
+min egen Forvirring paa det <seg type="com" n="com315">&#x00F8;iensynligste<!--tydeligste. DDO = tilsyneladende.--></seg>. Vi vil f&#x00F8;lge ham Skridt for Skridt og see, hvorledes han beviser sin Paastand, eller rettere, hvortil han bruger dette lille Skrift.</p>
+    
+<p rend="firstIndent">Han begynder med dristig at sige, at <seg type="com" n="com581">den Gamle</seg> har samlet <seg type="com" n="com316">St&#x00E6;derne<!--skriftstederne.--></seg> af Propheterne og
+    <rs type="bible" key="&#x00C5;b" rend="normForm">Aabenbaringen</rs>, for at passe dem paa <persName key="pe2383">Friderich</persName> i <placeName key="his322">Preusen</placeName>, men det er aabenbar usandt, Alt
+    viser, at han efter Propheterne har <seg type="com" n="com582">indbildt sig en Forestilling</seg> af <rs type="bible" key="Dan 12,1 og Matt 24,21" rend="allusion">den store <seg type="com" n="com317">Fristelse<!--prøvelse; trængsel/knibe.--></seg></rs> og Antichristen,
+og da ved at agte paa Tidernes Tegn, troet sig bef&#x00F8;iet til at anvende den paa <persName key="pe2383">Kong
+Friderich</persName>, og jeg troer neppe denne Anvendelse vilde faldet <seg type="com" n="com318">Rec.<!--recensenten.--></seg> eller Nogen ind, dersom jeg ei
+    havde anf&#x00F8;rt de Ord, hvori den bekiendes. Dog herom er det ikke v&#x00E6;rd at tvistes, lad <seg type="com" n="com583">den Gamle</seg> hvile i Fred, kun med hans Ord have vi at gi&#x00F8;re, og at disse med Ret kan <seg type="com" n="com584">hentydes
+paa</seg> en anden Mand og andre Begivenheder, end han havde for &#x00D8;ie, er aabenbart. Det er aabenbart allerede fordi <seg type="com" n="com585">den Gamle</seg>, uden at lade
+sig indskr&#x00E6;nke af <persName key="pe2383">Friderichs</persName> Historie har lige fra
+Begyndelsen sagt Alt, hvad der <seg type="com" n="com319">syndes<!--syntes.--></seg> ham at <pb type="text" facs="1814_229_fax064.jpg" ed="A" n="48"/>ligge i Spaadommene, det er det <seg type="com" n="com320">end<!--endnu.--></seg> mere,
+naar vi bet&#x00E6;nke Propheters og deres Fortolkeres Vilkaar. Det er vitterligt, at der i hver
+begeistret Digters Sang findes Noget han ikke forstaaer, findes tit en dybere Mening, end han <!-- tjek A -->havde om sit Syn, at dett<!--AP: læderet-->e i meget h&#x00F8;iere Grad maatte v&#x00E6;re Tilf&#x00E6;ldet med <app select="yes" type="corrNote"><lem wit="GV">Propheterne</lem><rdg wit="A">Phropheterne</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,
+er <seg type="com" n="com532">ligefrem</seg>, og <rs type="title" key="title788">Skriften</rs> l&#x00E6;rer os det udtrykkelig,
+da Spaadomme fra <rs type="title" key="title2263">det gamle Testamente</rs> anf&#x00F8;res i <rs type="title" key="title787">det ny</rs>, om hvilke Man tydelig seer
+at Propheten har havt en anden Mening, uden naturligviis dog at kunne bestemme hvor megen Indsigt Gud har forlenet Propheten i Ordenes dybere Mening. Exempler herpaa ere is&#x00E6;r, som
+Man veed, hyppige hos <rs type="bible" key="Matt" rend="normForm">Matth&#x00E6;us</rs> og han anf&#x00F8;rer derfor Spaadommene paa forskiellig Maade, om dem der <hi rend="spaced">f&#x00F8;rstegang</hi> opfyldtes ved
+<persName key="pe45">Jesu</persName> synlige N&#x00E6;rv&#x00E6;relse siger han: <hi rend="spaced">det er skedt,</hi> om dem der allerede eengang vare opfyldte: det <hi rend="spaced">fuldkommedes,</hi> thi i Ham,
+Guds <hi rend="spaced">Eenbaarne</hi> maatte jo alt fuldkommes som af Gud var sagt om Hans B&#x00F8;rn, om
+den Eenbaarnes Legeme og Menighed. Dette leder os f&#x00F8;rst til den <seg type="com" n="com321">Bet&#x00E6;nkning<!--overvejelse, eftertanke.--></seg>, at ligesom
+    Meget, der <seg type="com" n="com322">n&#x00E6;rmest i Tiden var sagt</seg> om M&#x00E6;nd og Begivenheder f&#x00F8;r <persName key="pe45">Jesu</persName> synlige N&#x00E6;rv&#x00E6;relse,
+    dog f&#x00F8;rst fuldkommedes ved den, saaledes kan der <seg type="com" n="com323">og</seg> v&#x00E6;re Meget saavel af Dette, som af det
+der <seg type="com" n="com586">n&#x00E6;rmest</seg><!-- tilnærmelsesvis, omtrent --> opfyldtes <seg type="com" n="com324">i Hans Ki&#x00F8;ds Dage<!--mens han levede på jorden.--></seg>, som f&#x00F8;rst <hi rend="spaced">fuldkommes</hi> i Hans Menighed til
+Dagenes Ende, ja vi veed, at f&#x00F8;rst naar der ei <pb type="text" facs="1814_229_fax065.jpg" ed="A" n="49"/>skal v&#x00E6;re Tid mere<!--AP: hertil-->, ere alle Prophetier fuldkommede. Vi ledes <seg type="com" n="com325">og<!--også.--></seg> til den <seg type="com" n="com326">Bet&#x00E6;nkning<!--overvejelse.--></seg>, at Prophetiernes
+gudelige Fortolker gierne kan sige langt Meer end han selv t&#x00E6;nker, at han gierne kan
+tale ret om den Skikkelse de hellige Syn ville<!--præsens?--> aabenbares i under Tidens L&#x00F8;b, og dog t&#x00E6;nke
+feil om Tidspunkten, og de Omst&#x00E6;ndigheder der skal udgi&#x00F8;re denne Skikkelse. Dette er nu Tilf&#x00E6;ldet
+ei alene med n&#x00E6;rv&#x00E6;rende Fortolker, men med <hi rend="spaced"><persName key="pe42">Luther</persName></hi> og saamange Guds M&#x00E6;nd, og er
+ei underligt, da det <seg type="com" n="com327">Tilkommende<!--fremtidige. ODS 'tilkomme' 3.3.--></seg> stedse har <seg type="com" n="com328">sit Forbud<!--sin bebuder.--></seg> <!--AP: spies-->og Forvarsel i det Forrige, da Spaadommene om Guds Kirkes Tr&#x00E6;ngsel og Frelse for et gudeligt &#x00D8;ie opfyldes stedse, og i hver stor Omskiftelse haabe Guds B&#x00F8;rn at see den
+sidste og den endelige Seier, kun for Verdens &#x00D8;ine opfyldes Spaadommene seent, ei f&#x00F8;r de
+ret <hi rend="spaced">legemlig</hi> fuldkommes. At der nu i <rs type="bible" key="&#x00C5;b" rend="normForm">Johannes
+Aabenbaring</rs> forkyndes <seg type="com" n="com587">klarlig</seg> en <seg type="com" n="com329">Fristelse<!--prøvelse; trængsel/knibe.--></seg>, en Strid og Seier, som endnu ei haver
+<seg type="com" n="com330">fuldelig<!--fuldt.--></seg> aabenbaret sig for Verden, det kan ikke n&#x00E6;gtes, og hvad Under at vor Fortolker troede
+den var n&#x00E6;r, da han saae dens <seg type="com" n="com331">Forbud<!--forvarsel, bebuder.--></seg> i Menighedens Lunkenhed, i <seg type="com" n="com588">indbrydende</seg> Vantro i
+<placeName key="his322">Preusens</placeName> vantro og m&#x00E6;gtige Konge, i <seg type="com" n="com332">den falske Prophet fra <placeName key="fak1489">Ferney</placeName><!--Der hentydes til <persName>Voltaire</persName>.--></seg> og i saa meget Andet! Han
+<hi rend="spaced">saae</hi> ikke feil, men han <hi rend="spaced">t&#x00E6;nkde</hi> kun feil ved at
+mene, han skulde med legemlige &#x00D8;ine see det Heelt, hvis Begyndelse kun faldt i hans Dage.
+Hvad Sviig eller Galskab der nu er i at jeg <pb type="text" facs="1814_229_fax066.jpg" ed="A" n="50"/>mener vi vil faae langt Mere at see af <rs type="bible" key="Dan 11,31 og Matt 24,15" rend="reference">&#x00D8;del&#x00E6;ggelsens
+Vederstyggelighed</rs>, da alle Tegn bebude det, det kan jeg ikke indsee. Ogsaa jeg kan
+t&#x00E6;nke feil og bekiender det jo, men at en stor Tr&#x00E6;ngsel og Seier er n&#x00E6;r, det er saavist, som
+at der er en Gud i Himlen, saa vist, som at Guds Ords Tjenere skj&#x00E6;ldes for falske Propheter. At
+ikke alle Spaadomme endnu i den vil legemli<!--AP: læderet-->g
+fuldkommes, det siger jeg, fordi jeg troer der endnu er et l&#x00E6;ngere Tidsrum til Dagenes Ende,
+om jeg t&#x00E6;nker feil maa Tiden vise. Om nu Andre kan l&#x00E6;se hiin Fortolkning uden at t&#x00E6;nke
+paa <persName key="pe104">Napoleon</persName>, det veed jeg ikke, jeg veed kun
+at jeg har ikke kunnet, og at Ingen som saae den hos mig i Haandskrift kunde det; uagtet
+jeg med <seg type="com" n="com333">Flid<!--omhu.--></seg> Intet sagde dem forud. <seg type="com" n="com334">Rec.<!--recensenten.--></seg> paastaaer,
+at Talen passer ei meer paa <persName key="pe104">Napoleon</persName> end hardtad paa hver Erobrer, men deri tager
+han nok en smule feil. Det er saaledes ikke sandt at Fortolkeren har sagt, Tyrannens Land
+ubetinget maatte v&#x00E6;re protestantisk, naar han nemlig siger: dette Riges Beboere bekiende sig
+ei til den <hi rend="spaced">Papistiske</hi> Religjon, <hi rend="spaced">thi da bliver
+det n&#x00E6;sten ubegribeligt,</hi> hvorledes det samme Rige er det, som skal &#x00F8;del&#x00E6;gge Regimentet
+(Pavens) da seer Man jo tydelig, at han ei <hi rend="spaced">tolker</hi> sit Syn, <hi rend="spaced">men bet&#x00E6;nker</hi>
+det, og slutter nu at Riget maa v&#x00E6;re protestantisk, fordi han ingen Forestilling havde om, at
+et forhen christnet Riges Beboere, kunde, som <placeName key="fak106">Frankrigs</placeName> i vore Dage aldeles afskaffe Christen<pb type="text" facs="1814_229_fax067.jpg" ed="A" n="51"/>dom, og fordi ham <seg type="com" n="com335">syndes<!--syntes.--></seg> at et protestantisk
+Rige skulde v&#x00E6;re iblandt Guds Kirkes Fiender. Hans Antichrist skal ingen Ki&#x00E6;rlighed have til
+Fruentimmer, siger <seg type="com" n="com336">Rec.<!--recensenten.--></seg> og tilf&#x00F8;ier: det <seg type="com" n="com337">tr&#x00E6;ffer ikke ind<!--passer ikke. ODS 'træffe' 9.3--></seg> med <persName key="pe104">Napoleon</persName> og kan neppe heller anvendes
+paa <placeName key="fak106">Frankrigs</placeName> Aand. Man veed at jeg ingenlunde borger for Rigtigheden <hi rend="spaced">af hvert</hi>
+Tr&#x00E6;k i denne Fortolkning, endnu mindre for at de <hi rend="spaced">alle</hi> skal passe paa <persName key="pe104">Napoleon</persName> og <placeName key="fak106">Frankrigs</placeName>
+Aand, men, dersom den herlige <persName key="pe42">Luther</persName>, som mig
+synes, har Ret, da bliver <seg type="com" n="com589">Recs</seg> Indvending til Intet. <persName key="pe42">Luther</persName> siger nemlig, <hi rend="spaced">netop</hi> i sin
+Forklaring af det omhandlede Skriftst&#x00E6;d (<rs type="bible" key="Dan 11" rend="normForm">Dan. 11.</rs>) Kvindeki&#x00E6;rlighed betyder her <hi rend="spaced">ikke den
+utugtige Ki&#x00E6;rlighed,</hi> men den <hi rend="spaced">&#x00E6;gteskabelige</hi> og <hi rend="spaced">tugtige</hi> Ki&#x00E6;rlighed til
+Kvinden, som er forordnet og befalet af Gud, Tyrannen skal <hi rend="spaced">foragte.</hi><note type="footnote"><p rend="noIndent"><rs type="title" key="title4038">Luthers Schriften (Hallische Ausg.) <seg type="com" n="com338">T.<!--ty. Teil, dvs. bind.--></seg> 6.</rs> S. 1458 <seg type="com" n="com339">u.<!--und.--></seg> 1464.</p></note> Kan det heller ikke passe? Han skal efter en haard Krig med et for hans Lande liggende sydligt
+Hof svinge sig paa Keiserthronen, det skal ei heller passe, ski&#x00F8;ndt <persName key="pe104">Napoleon</persName> som vitterligt
+er, efter haarde Krige mod <placeName key="fak774">&#x00D8;sterrig</placeName> i <placeName key="fak21">Tydskland</placeName>
+og <placeName key="fak212">Italien</placeName>, svang sig paa Keiserthronen, og virkelig blev Keiser efter <seg type="com" n="com340">den <hi rend="spaced">syvende</hi> Familie<!--[spørg NHB].--></seg>,
+da Keiser <persName key="pe2388">Frants</persName><!-- tjekkes med NHB --> frasagde sig den romerske Keiserv&#x00E6;rdighed. At Fortolkeren ei har t&#x00E6;nkt paa <pb type="text" facs="1814_229_fax068.jpg" ed="A" n="52"/>det legemlige <placeName key="fak417">&#x00C6;gypten</placeName>, er klart, men hvad Propheten
+har, maa vi vel bare os for at sige, og at Gud <seg type="com" n="com341">underlig<!--på forunderlig måde.--></seg> lader Menneskene sige Ord der
+i Hans Tanker have en Mening, der seent forstaaes, veed Man, saa at N&#x00E6;vnelsen af <placeName key="fak417">&#x00C6;gypti
+Land</placeName> bliver en Christen lige m&#x00E6;rkv&#x00E6;rdig, fordi Fortolkeren ei havde <placeName key="fak526">Nilen</placeName> for &#x00D8;ie. At <placeName key="fak212">Italien</placeName>
+har f&#x00F8;lt <persName key="pe104">Napoleons</persName> haarde Haand, kan <seg type="com" n="com342">Rec.<!--recensenten.--></seg> ikke
+n&#x00E6;gte, men vil indbilde os, at det omtrent kan anvendes paa alle franske Erobrere, uden at
+ville agte paa, at de forrige franske Erobrere, have kun <seg type="com" n="com343">baadet lidt<!--haft lidt vinding, fortjeneste.--></seg> i <placeName key="fak212">Italien</placeName> og visselig ei,
+som <persName key="pe104">N.</persName> faaet <hi rend="spaced">dens Rigdomme</hi> i Haand. Hvem Fortolkeren har t&#x00E6;nkt paa kan v&#x00E6;re os
+det Samme, men at <persName key="pe104">N</persName><!--emenderer IKKE det manglende punktum--> har <seg type="com" n="com590">forstyrret</seg> <seg type="com" n="com591">Pavens Regimente</seg> og tilintetgjort <placeName key="fak17">Rom</placeName>, som saadan,
+det er vist, om saa ogsaa, hvad der er meget muligt, baade <placeName key="fak17">Rom</placeName> og Pavemagt, endnu engang
+opreises f&#x00F8;r den endelige Undergang, og jeg vil ikke tvinge Talen om de 3 Riger, ved hvis Indtagelse
+Han skal aabne sig Veien til <!--AP: spies--><placeName key="fak212">Italien</placeName>,
+hen til <persName key="pe104">N.</persName>, thi det er klart, at Fortolkeren har t&#x00E6;nkt sig de Lande liggende mellem Hans Land
+og <placeName key="fak212">Italien</placeName>, hos <rs type="bible" key="Dan" rend="normForm">Daniel</rs> seer jeg ei heller andet,
+end at Tyrannen skal forene tre Riger med sit f&#x00F8;r han f&#x00F8;rer Strid <hi rend="spaced">mod de Hellige</hi>. At
+derimod noget Sandt har sv&#x00E6;vet Fortolkeren for &#x00D8;ie, troer jeg, hvad<!--d læderet i begge ekspl.--> enten det var Noget, som
+<seg type="com" n="com344">end<!--endnu.--></seg> ei er fremkommet, eller var <placeName key="fak709">Sardinien</placeName>, <placeName key="fak749">Venedig</placeName> og <placeName key="his751">Neapel</placeName>, som indtoges f&#x00F8;r <seg type="com" n="com592">Pavemagten</seg>
+<seg type="com" n="com593">forstyrredes</seg>. Hertil vil jeg f&#x00F8;ie, at vel <placeName key="fak106">Franke<pb type="text" facs="1814_229_fax069.jpg" ed="A" n="53"/>rig</placeName>, men ei <placeName key="his322">Preusen</placeName> ligge <seg type="com" n="com345">i<!--inden for. --></seg> det gamle Romerske Monarchies Gr&#x00E6;ndser, at vi see for vore &#x00D8;ine <hi rend="spaced">det &#x00D8;stlige og de Nordlige</hi> Riger stride mod <persName key="pe104">Napoleon</persName> og at Udgangen paa
+den Kamp altsaa bedst vil sige os, om han er den. Overvinder og opl&#x00F8;ftes han igjen, ved
+s&#x00E6;re Omskiftelser, som jeg mener, da maa vi vel komme til at t&#x00E6;nke paa de Ord: <rs type="bible" key="&#x00C5;b 13,3" rend="quote">det d&#x00F8;delige
+Saar paa Dyret blev l&#x00E6;gt, og al Jorden forundrede sig over Dyret</rs>.</p>
+    
+<p rend="firstIndent">Jeg har kun i denne Henseende endnu at bem&#x00E6;rke, hvor uredelig <seg type="com" n="com346">Rec.<!--recensenten.--></seg> er omgaaeds<!--EMENDERES IKKE--> med
+min Bekiendelse i Fortalen. Hos ham seer det ud, som om jeg vilde ansees for at v&#x00E6;re oph&#x00F8;iet
+over al Frygt, uagtet jeg udtrykkelig siger: det er sandt, at jeg fristes af Menneskefrygt, naar
+det gi&#x00E6;lder om, at sige haarde Ting om denne Verdens Herrer, men d<!--AP: læderet-->et er <seg type="com" n="com347">og<!--også.--></seg> sandt, at jeg,
+med Guds Hjelp, uden at forf&#x00E6;rdes vil ogsaa om dem sige, hvad jeg er vis paa, der skal
+siges i Guds Navn. Disse Ord <seg type="com" n="com348">henveire<!--blæser bort, fordriver.--></seg> al den Taage <seg type="com" n="com349">Rec.<!--recensenten.--></seg> har <seg type="com" n="com350">fremkoglet<!--fremtryllet-.--></seg>, mit forbigangne Liv
+viser at jeg har sagt Ord, der kunde<!--ligner n i Møller-ekspl.--> tildraget mig <seg type="com" n="com351">end<!--endnu.--></seg> st&#x00F8;rre Ubehageligheder, end dem jeg har
+<seg type="com" n="com352">pr&#x00F8;vet<!--gennemgået, været udsat for.--></seg>, mit f&#x00F8;lgende, om Gud har beskikket mig et saadant, vil ventelig <seg type="com" n="com353">end<!--endnu.--></seg> mere kundgi&#x00F8;re,
+om j<!--AP: læderet-->eg ved Guds Bistand kan overvinde den Menneskefrygt jeg tilstaaer at have som et skr&#x00F8;beligt Menneske, og om saadanne Ting skal
+Man bede, ei tvistes med mange Ord, at <seg type="com" n="com354">Rec.<!--recensenten.--></seg>
+t&#x00F8;r gi&#x00F8;re Ting, jeg vilde grue for, det har jeg <pb type="text" facs="1814_229_fax070.jpg" ed="A" n="54"/>seet, men at jeg kan bestaae i en Kamp, hvori
+han maa falde, det t&#x00F8;r jeg haabe.</p>
+    
+<p rend="firstIndent">Tilsidst tager <seg type="com" n="com354">Rec.<!--recensenten.--></seg> <rs type="title" key="title788">Bibelen</rs> i Haand, og vil
+at den skal gi&#x00F8;re ham tre vigtige Tjenester: bevise at vor Fortolker har l&#x00E6;st den som en Dosmer,
+at jeg har rost ham som en saadan, og lastet store Bibelfortolkere, som det der er v&#x00E6;rre, ja
+i Modsigelse med mig selv. Visselig, vilde den det, da <seg type="com" n="com356">l&#x00F8;nnede det Umagen<!--var det umagen værd.--></seg> for min <seg type="com" n="com357">Rec.<!--recensenten.--></seg> engang
+at tage den fat, men kiender jeg <rs type="title" key="title788">Bibelen</rs> ret,
+da tjener den kun dem, som erkiende dens Ret til at herske,<!--komma næsten udsynligt i alle tre ekspl.--> og mellem dem er <seg type="com" n="com358">Rec.<!--recensenten.--></seg> ikke siden
+han kalder mig, som ene <seg type="com" n="com594">driver paa</seg> at den skal herske og raade uindskr&#x00E6;nket, en Folkeforvirrer
+og falsk Prophet.</p>
+    
+<p rend="firstIndent"><app select="yes" type="corrNote"><lem wit="GV"><seg type="com" n="com359">Rec.<!--recensenten.--></seg></lem><rdg wit="A">Ree.</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> begynder med at sige, at det is&#x00E6;r er
+<rs type="bible" key="Dan 11" rend="normForm">Daniels 11<!--AP: læderet-->te Kapitel</rs>, hvoraf Fortolkeren har taget sine Forklaringer. Allerede dette tr&#x00E6;nger
+til <seg type="com" n="com595">Oplysning</seg>. Det er nemlig <rs type="bible" key="&#x00C5;b 13-19" rend="normForm">Johannes Aabenbaring c. 13-19</rs> som n&#x00F8;der hver troende og
+eftert&#x00E6;nksom Christen til henimod Verdens Ende at vente en stor <seg type="com" n="com360">Fristelse<!--prøvelse, trængsel/pine.--></seg> og Tr&#x00E6;ngsel, Strid og
+Seier, som for Verdens &#x00D8;ine overgaaer Alt, hvad af saadant f&#x00F8;r har v&#x00E6;ret tilsyne. Uden
+disse Spaadomme vilde det ei saa let faldet Christne ind hos de gamle Propheter at s&#x00F8;ge
+uopfyldte Spaadomme, men <rs type="bible" key="&#x00C5;b" rend="normForm">Aabenbaringen</rs> tvinger os dertil. Naar vi saaledes l&#x00E6;se <rs type="bible" key="Dan 7,7" rend="quote">Dan. 7.
+om Dyret med de ti Horn</rs>, og see det Samme <rs type="bible" key="&#x00C5;b 13,1" rend="quote">Aab. 13.</rs> da maa vi tilbage til <rs type="bible" key="Dan" rend="normForm">Daniel</rs>, og see
+da ogsaa <seg type="com" n="com596">klarlig</seg> at Spaadommene i dette <rs type="bible" key="Dan 7" rend="normForm">syvende <pb type="text" facs="1814_229_fax071.jpg" ed="A" n="55"/>Kapitel</rs> gaae lige til Verdens og Tidens Ende.
+Alt Saadant fortier <seg type="com" n="com361">Rec.<!--recensenten.--></seg> ski&#x00F8;ndt <rs type="bible" key="&#x00C5;b" rend="normForm">Aabenbaringen</rs>
+og <rs type="bible" key="Dan 7" rend="normForm">Daniels syvende Kapitel</rs> bruges mere til at
+skildre Antichristens Time end <rs type="bible" key="Dan 11" rend="normForm">Daniels ellevte</rs>,
+kun dette <seg type="com" n="com362">tager han for sig<!--vil han undersøge. ODS 'tage' 20.3.--></seg>, kun paa det vil han henlede Opm&#x00E6;rksomheden, og det er ganske
+klogt, thi det knyttes ei saa <seg type="com" n="com363">&#x00F8;iensynlig<!--tydeligt. DDO = tilsyneladende.--></seg> til <rs type="bible" key="&#x00C5;b" rend="normForm">Aabenbaringen</rs>,
+der spaaes un&#x00E6;gtelig <hi rend="spaced"><seg type="com" n="com364">n&#x00E6;rmest<!--mest.--></seg></hi> om Perser og Gr&#x00E6;ker og <persName key="pe1610">Antiochus</persName>, og kunde <seg type="com" n="com365">Rec.<!--recensenten.--></seg>
+faae L&#x00E6;serne indbildt at Skildringen is&#x00E6;r <seg type="com" n="com366"><hi rend="spaced">grundede</hi>
+sig</seg> paa dette Kapitel, da maatte han haabe at have <seg type="com" n="com597">vundet Spil</seg>. Han havde det alligevel
+ikke hos sandhedski&#x00E6;rlige L&#x00E6;sere, thi hvorom gi&#x00E6;lder det her? er det <seg type="com" n="com639">Tingen</seg> om Fortolkeren
+har taget feil eller ikke? ingenlunde, thi jeg mener jo selv han har taget noget feil, og det
+&#x00D8;vrige maa Tiden vise; Sagen er, om jeg ved at udgive og rose hin Forklaring har viist mig,
+som Folkeforvirrer, som Forsvarer af <rs type="title" key="title788">Bibelens</rs>
+vilkaarlige Fortolkning, og det skal jeg bevise var ikke <seg type="com" n="com367">saa<!--sådan.--></seg>, om ogsaa <rs type="bible" key="Dan 11" rend="normForm">det ellevte Kapitel</rs> laae
+og kunde ligge til Grund for Skildringen. <seg type="com" n="com368">Rec.<!--recensenten.--></seg>
+tilstaaer jo, at <persName key="pe42">Morten Luther</persName> var en herlig Mand
+og L&#x00E6;rer, og det er vitterligt, at Ingen kunde st&#x00E6;rkere hade vilkaarlig Bi<!--AP: læderet-->belfortolkning end han;
+men vil <seg type="com" n="com368">Rec.<!--recensenten.--></seg> nu behage at opslaa <seg type="com" n="com369">det St&#x00E6;d
+jeg nys har n&#x00E6;vnet i hans Skrifters 6te Deel<!--se note 11.[lav link??]--></seg>, da skal han, hvis han ikke vidste det f&#x00F8;r, med
+Forskr&#x00E6;kkelse see, at den herlige Mand har i dette Stykke v&#x00E6;ret ligesaa stor en Dosmer og
+Folkeforvirrer, som n&#x00E6;rv&#x00E6;rende Fortolker og jeg, <pb type="text" facs="1814_229_fax072.jpg" ed="A" n="56"/>thi han forklarer det hele Kapitel om den christne
+Menighed og det Pavelige Tyrannie, uden derfor at troe Alt var skeet ved Reformationen,
+thi han siger, at der spaaes om, hvorledes <seg type="com" n="com370">Pavedommet<!--pavedømmet.--></seg> skal falde og undergaae, og f&#x00F8;ier til:
+det er hemmelige og forseiglede <seg type="com" n="com623">Taler</seg>, der ere vanskelige at <seg type="com" n="com371">ramme<!--gætte om. ODS 2.3--></seg> f&#x00F8;r de opfyldes, men derpaa
+er han vis at det<!--AP: spatieret?--> hele Kapitel handler om
+Antichrist. Hvad vandt <seg type="com" n="com372">Rec.<!--recensenten.--></seg> nu med
+<seg type="com" n="com373">al sin Konst<!--alle sine kunstgreb, krumspring.--></seg>? Intet Mere, end hvad jeg gierne tilstaaer, at var <persName key="pe42">Luther</persName> en Folkeforvirrer, en Dosmer og
+Sv&#x00E6;rmer i Bibelfortolkning, da er jeg det ogsaa, men om nu <persName key="pe42">Luther</persName> havde forstaaet det Kapitel
+ligesom <seg type="com" n="com374">Rec.<!--recensenten.--></seg>, saa blev det dog ei mindre
+vist, at det i sin dybe Mening gaaer paa en Tid henimod Verdens Ende, thi naar Man l&#x00E6;ser
+Begyndelsen af det tolvte Kapitel: <rs type="bible" key="Dan 12,1-2" rend="reference"><hi rend="spaced">paa den samme Tid</hi> skal det Folk (J&#x00F8;derne)
+frelses, hver den som findes skreven i Bogen, og mange af dem, som sove i Jordens Ski&#x00F8;d
+skal opvaagne, Somme til et evigt Liv og Somme til Skam, til evig V&#x00E6;mmelse</rs>, da beh&#x00F8;ve vi vel
+ikke at sp&#x00F8;rge, hvor vi ere og maa i al Fald drives til <rs type="bible" key="&#x00C5;b 20" rend="normForm">Aab. 20</rs>. Hvad nu derimod vor
+Fortolkers Ord om dem der skal forstaaes ved <placeName key="his724"><seg type="com" n="com598">Edom</seg></placeName>, <placeName key="his1486"><seg type="com" n="com599">Moab</seg></placeName> o. s. v. angaae, da veed jeg ikke
+om han har Ret, det maa Tiden vise, men at Man kan mene det uden at behandle <rs type="title" key="title788">Bibelen</rs>
+letsindig, skulde Man tro ved at see <persName key="pe42">Luther</persName> ogsaa forklare <placeName key="his724"><seg type="com" n="com601">Edom</seg></placeName> og <placeName key="his1485"><seg type="com" n="com602">Ammon</seg></placeName> og <placeName key="his1486"><seg type="com" n="com603">Moab</seg></placeName> om <hi rend="spaced">Christne.</hi></p><!-- og hvad betyder det?? -->
+
+    <p rend="firstIndent"><pb type="text" facs="1814_229_fax073.jpg" ed="A" n="57"/>Det eneste vigtige Sp&#x00F8;rgsmaal her, er da det,
+hvorledes <persName key="pe42">Luther</persName> og vi som f&#x00F8;lge ham, kan fordre
+at <rs type="title" key="title788">Bibelen</rs> skal forstaaes ordret, og dog tillade en,
+som det synes, saa vilkaarlig Fortolkning. <seg type="com" n="com376">Rec.<!--recensenten.--></seg> mener,
+at det er Daarekistev&#x00E6;rk, uden at bet&#x00E6;nke, at han derved ei alene viser <persName key="pe42">Luther</persName> og alle hans
+Efterf&#x00F8;lgere, men <persName key="pe634">Augustin</persName> og de fleste Kirkef&#x00E6;dre, ja <hi rend="spaced"><persName key="pe343">Apostelen</persName> <persName key="pe343">Paulus</persName></hi> selv til Daarekisten,
+thi det er vitterligt at denne Apostel der holdt saa <seg type="com" n="com377">hardt<!--fast.--></seg> ved <rs type="title" key="title788">Skriftens</rs> ordrette Mening,
+at han vil have de Ord: <rs type="bible" key="2 Mos 9,12" rend="quote1787"><hi rend="spaced">Gud</hi> forh&#x00E6;rdede Pharaos Hjerte</rs> og sagde: <rs type="bible" key="2 Mos 9,16" rend="quote1787"><seg type="com" n="com604">til <hi rend="spaced">det Samme</hi></seg>
+haver Jeg <seg type="com" n="com605">ladet dig staae</seg>, <seg type="com" n="com606">at</seg> Jeg vilde bevise Min Magt paa dig (2 Mose 9.)</rs> jeg siger, den
+samme Apostel der vil have disse Ord forstaaede og troede i deres allerstr&#x00E6;ngeste Mening, (<rs type="bible" key="Rom 9" rend="normForm">Rom. 9.</rs>)
+han fortolker (<rs type="bible" key="Gal 4" rend="normForm">Gal. 4.</rs>) <persName key="pe3053">Agar</persName> og <persName key="pe2449">Sara</persName> om <rs type="title" key="title2263">det
+Gamle</rs> og <rs type="title" key="title787">Ny Testamente</rs>, og <persName key="pe636">Abrahams</persName> <seg type="com" n="com378">S&#x00E6;d<!--efterkommere, slægt.--></seg> om de Christne (<rs type="bible" key="Rom 4" rend="normForm">Rom. 4</rs>). Det er da aabenbart, der maa v&#x00E6;re en Forskiel paa <rs type="title" key="title788">Bibelens</rs>
+<seg type="com" n="com624">Taler</seg>, saa at nogle skal tages ordret, andre, som det synes, ikke, men som Lignelse, Sp&#x00F8;rgsmaalet
+er kun, om Man med Vished kan bestemme Gr&#x00E6;ndselinien, thi ellers synes Bibelfortolkningen at maatte blive aldeles vaklende, f&#x00F8;lgelig
+<rs type="title" key="title788">Bibelen</rs> unyttig. Dertil str&#x00E6;bde <persName key="pe810">Erasmus</persName> og hans Venner ogsaa at drive det i <persName key="pe42">Luthers</persName>
+Dage, i det de erkl&#x00E6;rede alle de <seg type="com" n="com624">Taler</seg>, der ei behagede dem, for Lignelser, ski&#x00F8;ndt de lignede intet uden sig selv, og allermindst det Man vilde have dem til at betyde. Det glippede for <pb type="text" facs="1814_229_fax074.jpg" ed="A" n="58"/>dem, og den samme <persName key="pe42">Luther</persName>, der gi&#x00F8;r <!--AP: spies-->Edomiterne til Christne, fik den ordrette Bibelfortolkning
+stadf&#x00E6;stet. I det sidste Aarhundrede udvidede Man <seg type="com" n="com379">smaalig<!--langsomt, forsigtigt.--></seg> Lignelsens Landem&#x00E6;rker, indtil
+Man i den sidste Halvdeel oversv&#x00F8;mmede den ganske <rs type="title" key="title788">Bibel</rs>, gjorde det til et eget Haandv&#x00E6;rk
+at <app select="yes" type="corrNote"><lem wit="GV">udvriste</lem><rdg wit="A">ndvriste</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Lignelser af de uskyldige Ord, som
+ingen giemte, saa endog de Ord: tro paa <persName key="pe45">Jesum Christum</persName>!
+skulde betyde at Man <hi rend="spaced">ikke</hi> skulde tro <hi rend="spaced">paa</hi> Ham. For dem som &#x00E6;rlig vil tro paa Ham og vil b&#x00F8;ie sig for Guds Ord er den Sag
+derimod slet ikke vanskelig, thi han veed at al <rs type="title" key="title788">Skriftens</rs> Tale om hvad der er skedt, hvad vi
+skal tro og gi&#x00F8;re for at blive salige, den skal forstaaes ligefrem efter Ordenes s&#x00E6;dvanlige Mening,
+thi ellers kunde Ingen faae at vide af <rs type="title" key="title788">Bibelen</rs> hvad han skal tro og gi&#x00F8;re, Spaadommene derimod skal <seg type="com" n="com380">og<!--også.--></seg> forstaaes ordret, men tit
+i en anden Mening end den Ordene s&#x00E6;dvanlig have, til mange Spaadomme har <rs type="title" key="title788">Bibelen</rs> selv
+givet os N&#x00F8;gelen, andre staae som en Gaade indtil de opfyldes og Herrens Time kommer, og
+<seg type="com" n="com381">paa<!--om.--></seg> deres Betydning er det enhver gudfrygtig Mand, som f&#x00F8;ler Kald dertil, <seg type="com" n="com382">uformeent<!--tilladt.--></seg> at
+gi&#x00E6;tte, naar han kun ei gi&#x00E6;tter paa Noget, som strider mod L&#x00E6;rdommen, og overlader det til
+Gud og Tiden at vise, om han gi&#x00E6;ttede ret. Nu indsees det let, hvorledes Man, uden at
+<seg type="com" n="com608">gaae i Dr&#x00F8;mme</seg>, kan laste de M&#x00E6;nd, som i L&#x00E6;rdommen afvege fra <rs type="title" key="title788">Skriftens</rs> klare Mening,
+og rose den som gi&#x00E6;ttede paa Spaadommen efter <pb type="text" facs="1814_229_fax075.jpg" ed="A" n="59"/>Troens Regel, naar Man mener han i mange
+dunkle Ting har <!--AP: spies-->gi&#x00E6;ttet ret.</p>
+    
+<p rend="firstIndent">Saaledes har jeg da giennemgaaet denne m&#x00E6;rkelige Recensjon, thi Beskyldningen for at
+have seet ned paa <persName key="pe1326">Johannes M&#x00FC;ller</persName> og <persName key="pe1322">Heeren</persName>
+beh&#x00F8;ver ingen Giendrivelse, og nu <seg type="com" n="com383">d&#x00F8;mme hver<!--skal enhver dømme.--></seg>, som han har Hjerte og Forstand til! Jeg venter
+ikke at <seg type="com" n="com384">Rec.<!--recensenten.--></seg> vil tie, thi han synes <seg type="com" n="com631">ret<!-- i høj grad --></seg> at
+have Mod paa mig, men een Ting vil jeg raade ham, at b&#x00E6;re sig heel anderledes ad, om
+han vil gi&#x00E6;lde for en sandhedski&#x00E6;rlig Mand, thi denne Recensjon stempler sin Forfatter,
+hvem han saa er, som en L&#x00F8;gnens Tjener og en falsk Prophet, der vil forvirre Folket. Saalidet
+jeg ellers ynder Anonymitet, gl&#x00E6;der det mig, at denne Recensjon er navnl&#x00F8;s, thi det
+staaer da til Forfatteren om Folket skal vide, hvem der har fornedret sig saa dybt, hvem jeg
+maa stemple saaledes, og Ingen skal sige, at jeg har peget paa Nogen.</p>
+    
+<p rend="firstIndent">Endnu maa jeg tale et Par Ord om, hvorvidt jeg med Sandhed kan siges, at ville stifte
+et Partie. Er det Sp&#x00F8;rgsmaalet om jeg &#x00F8;nsker, at Mange, ja at Alle vilde tro hvad jeg
+troer om Gud og Hans Villie efter Hans Ord, da har jeg for l&#x00E6;nge siden besvaret det med Ja,
+og jeg er saa vis paa min Troes Sandhed, at jeg t&#x00F8;r sige for Guds Ansigt: fortabes Nogen
+ved at tro og f&#x00F8;lge den L&#x00E6;rdom jeg f&#x00F8;rer, da <seg type="com" n="com385">komme hans Blod over mit Hoved<!--bliver det min skyld (bibelsk udtryk, jf. <rs>Jos 2,19</rs> og <rs>ApG 18,6</rs>).--></seg>! Paa denne Maade have Herren <persName key="pe45">Jesus Christus</persName>, Hans <pb type="text" facs="1814_229_fax076.jpg" ed="A" n="60"/>Apostle og alle Hans Ords nidki&#x00E6;re Tjenere stiftet
+Partier, str&#x00E6;bt at vinde Sj<!--AP: læderet-->&#x00E6;le til Guds Rige og <persName key="pe343">Paulus</persName> sagde udtrykkelig: <rs type="bible" key="ApG 26,29" rend="quote1787">jeg vilde
+&#x00F8;nske, at alle de som h&#x00F8;re mig, maatte paa disse Baand n&#x00E6;r, blive ligesom jeg</rs>! Er derimod
+kun det at stifte Partie, at lokke Menneskene til at tro paa et andet Menneske og tjene
+hans egennyttige eller &#x00E6;rgierrige Hensigter, da veed jeg mig frie, da maa alle mine <seg type="com" n="com625">Taler</seg>
+til Folket frikiende mig, og jeg t&#x00F8;r sp&#x00F8;rge med Apostelen <rs type="bible" key="Gal 1,10" rend="quote1787">(Gal. 1.) overtaler jeg til at tro
+Mennesker eller Gud!<!--AP: ligner lidt ":"--> eller s&#x00F8;ger jeg at t&#x00E6;kkes
+Mennesker? thi dersom jeg endnu t&#x00E6;kkedes Mennesker, da var jeg ikke <persName key="pe45">Christi</persName> Tjener</rs>. Altid
+har jeg indst&#x00E6;ndig<!--indtrængende; vedholdende.--> bedet Enhver randsage <seg type="com" n="com609">flittelig</seg> i <rs type="title" key="title788">Skrifterne</rs>, om de Ting jeg sagde, forholdt
+sig saaledes i Sandhed, og erkl&#x00E6;ret det som streed mod <rs type="title" key="title788">Bibelen</rs> for L&#x00F8;gn, hvad enten saa en Anden eller jeg havde talet. Mere end
+at overlade Alt til Guds Ord og Guds Aand, og ford&#x00F8;mme sine egne Meninger, naar Gud
+ikke giver dem Vidnesbyrd i Menneskens Samvittighed, kan intet Menneske gi&#x00F8;re for at bevise
+han ingen Sv&#x00E6;rmer er og intet Partie vil have, men kun i Almindelighed udbrede Guds
+Rige efter den Naade og Velsignelse Gud under, og Man skal derfor ikke finde en eneste af
+alle dem Christne n&#x00E6;vne som Sv&#x00E6;rmere og Partistiftere, der have underkastet deres Tale i
+eet og Alt, det skrevne Ords <seg type="com" n="com610">Kiendelse</seg>, i dets ordrette for Alle tydelige Mening. Den eneste <pb type="text" facs="1814_229_fax077.jpg" ed="A" n="61"/>Gang, da jeg kunde faaet <seg type="com" n="com388">Skin<!--udseende.--></seg> af Partistifter,
+var da jeg talde til Studenterne om F&#x00E6;drelandets Sag, jeg saae Faren og skjalv, men jeg
+holdt mig til Gud, og Han styrede Alt <seg type="com" n="com389">saa<!--således.--></seg>, at just denne <seg type="com" n="com390">Forhandling<!--drøftelse.--></seg> staar for Folkets &#x00D8;ine,
+som det klareste, uimist&#x00E6;nkeligste Vidnesbyrd om, at jeg langt fra at &#x00F8;nske <hi rend="spaced">mig</hi> et Partie,
+skyder det fra mig, og vil ikke have <seg type="com" n="com391">Samfund<!--fællesskab.--></seg> med Andre, end dem der, ved at komme til
+Gud og Sandhed, f&#x00F8;le at de ere i <seg type="com" n="com391">Samfund<!--fællesskab.--></seg> med mig, fordi jeg er i Sandheden. Det forundrer
+mig imidlertid slet ikke, at jeg, trods alt Dette, beskyldes for at forf&#x00F8;re Folket, thi
+Pharis&#x00E6;erne sagde jo om <persName key="pe45">Jesus</persName>, Sandheden selv:
+<rs type="bible" key="Joh 7,12" rend="quote1787"><hi rend="spaced">han forf&#x00F8;rer Folket</hi> (Joh. 7.)</rs> og Han
+sagde Selv til Sine Disciple: <rs type="bible" key="Joh 15,18-20" rend="quote1787">dersom Verden hader eder, da <seg type="com" n="com392">vider<!--skal I vide (imperativ pluralis).--></seg>, at den haver hadet Mig
+f&#x00F8;rend eder, vare I af <app select="yes" type="corrNote"><lem wit="GV">Verden</lem><rdg wit="A">Verdeu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>, da elskde Verden
+<seg type="com" n="com393">det <app select="yes" type="corrNote"><lem wit="GV">hendes</lem><rdg wit="A">hendǝs</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> eget er</seg>, men efterdi I ere ikke af Verden, m<!--AP: læderet-->en Jeg haver udvalgt eder af
+Verden, derfor hader Verden eder; <seg type="com" n="com394">kommer<!--kom (imperativ pluralis).--></seg> det Ord ihu, som Jeg sagde eder: en Tjener er
+ikke meer end hans Herre, have de forfulgt Mig, skal de <seg type="com" n="com395">og<!--også.--></seg> forf&#x00F8;lge eder</rs>; <rs type="bible" key="Joh 16,1-2" rend="quote1787">disse Ting haver
+Jeg talet til eder, <seg type="com" n="com396">at<!--for at.--></seg> I skal ikke forarges, de skal udelukke eder af Synagogerne, ja den Tid
+skal komme, at hver den, som ihjelslaaer eder, skal mene, han <seg type="com" n="com397">gi&#x00F8;r Gud en Dyrkelse<!--tjener, ærer Gud.--></seg></rs> (Joh 15-16.) Det er vitterligt, at denne Sandhedens Tale opfyldtes ei alene paa Apostlene, men paa
+alle vor Herres <persName key="pe45">Jesu Christi</persName> tro Vidner, som <pb type="text" facs="1814_229_fax078.jpg" ed="A" n="62"/>uden <seg type="com" n="com398">Skye<!--frygt, ængstelse.--></seg> bekiendte hans Navn og forkyndte
+Hans Ord i vantro og ford&#x00E6;rvede Tider. Nu er <seg type="com" n="com399">Raden til mig<!--turen kommet til mig. ODS 5--></seg>, jeg har, fra den Stund, jeg
+begyndte at tale Guds Ord h&#x00F8;it og eenfoldelig, ei ventet mig bedre Lod, end de salige Guds
+Tjenere, som ere <seg type="com" n="com400">indgangne<!--gået ind.--></seg> til Fred, jeg veed det jo vel, at mine Fiender ere mig for st&#x00E6;rke
+og at det menneskelige Hjerte er en frygtsom Ting, men jeg stoler paa Gud, som kiender
+mit Hjerte og min Skr&#x00F8;belighed, Hvis <seg type="com" n="com401">Arm er ikke forkortet<!--poetisk udtryk for at Guds magt forbliver ubegrænset (efter <rs>4 Mos 11,23</rs>).--></seg>, og Som haver <seg type="com" n="com402">ladet tilsyne<!--vist.--></seg> i de
+forbigangne Dage, at Han haver Hjerte og V&#x00E6;lde til at <seg type="com" n="com403">st&#x00F8;rke<!--styrke.--></seg> Sine Tjeneres H&#x00E6;nder, til
+at <seg type="com" n="com611">forstyrre</seg> de Ugudeliges kl&#x00F8;gtige Anslag, og herliggi&#x00F8;re Sit Navn paa Jorden. Ja, h&#x00F8;r mig
+Folk! og <seg type="com" n="com404">m&#x00E6;rk paa<!--bemærk, læg mærke til.--></seg> min Tale! og kom den ihu! her staaer jeg for eder, anklaget som Forf&#x00F8;rer,
+som Sj&#x00E6;lemorder, som L&#x00F8;gner og Hykler, jeg opl&#x00F8;fter mine H&#x00E6;nder, min R&#x00F8;st og mit Suk
+til den levende, alm&#x00E6;gtige Gud, Sandheds Fader, og beder, at er jeg det, som jeg anklages
+for, er det mit eget Hjertes <seg type="com" n="com612">Opt&#x00E6;nkning</seg> jeg forkynder som Sandhed, som saliggi&#x00F8;rende Sandhed, da gid jeg maa beski&#x00E6;mmes for Verdens
+&#x00D8;ine, saa dybt og saa klart, som intet Menneske det er blevet fra Verdens Begyndelse og indtil nu! men taler jeg Sandhed, er den L&#x00E6;rdom jeg f&#x00F8;rer af Gud, er det Hans usvigelige
+Ord og Hans S&#x00F8;ns Evangelium jeg forkynder til Salighed for alle dem som tro, da beder
+jeg, at Han vil synlig beski&#x00E6;mme dem der vid<pb type="text" facs="1814_229_fax079.jpg" ed="A" n="63"/>ne <seg type="com" n="com405">falskelig<!--falskt.--></seg> mod mig og <seg type="com" n="com406">ville<!--vil (præsens pluralis).--></seg> afvende Folket fra at h&#x00F8;re min Tale; men <seg type="com" n="com407">st&#x00F8;rke<!--styrke.--></seg> mig til at tale Hans Ord uden Frygt og vandre f<!--AP: læderet-->or Hans Aasyn i
+Enfoldighed og Guds Retsindighed, ikke i ki&#x00F8;delig Viisdom, men i Guds Naade, og overvinde
+Verden ved Guds S&#x00F8;ns Tro! Dette er min h&#x00F8;itidelige B&#x00F8;n, og Herren har h&#x00F8;rt den, thi
+Han er en Gud, Som hader Uretf&#x00E6;rdighed og vil aabenbare Sit <seg type="com" n="com408">Herredom<!--herredømme.--></seg> og Sin Hellighed
+og Sandhed paa Jorden, Han skal d&#x00F8;mme mellem mine Modstandere og mig!</p>
+    
+<p rend="firstIndent">Og nu I, Faa eller Mange, som alvorlig have givet Agt paa min Tale, jeg byder eder,
+saa ki&#x00E6;r Sandhed og eders Sj&#x00E6;les Salighed er eder, <seg type="com" n="com409">pr&#x00F8;ver<!--prøv (imperativ pluralis).--></seg> den efter Guds Ord under B&#x00F8;n
+og Guds, den Hellig Aands Paakaldelse, I maa ikke tro mig eller noget Menneske i eders
+Saligheds Sag, men kun Gud og Hans Ord, veed I det ogsaa <seg type="com" n="com410">vist<!--sikkert.--></seg>, at jeg ikke vil forf&#x00F8;re
+eder, saa veed I jo dog <seg type="com" n="com411">og<!--også.--></seg> jeg er et skr&#x00F8;beligt Menneske, som daglig feiler i Livet, som selv i
+sin Tale om Guds Ord stundom maa feile, jeg har sagt eder det, og <seg type="com" n="com412">eders Blod v&#x00E6;re over
+eders eget Hoved<!--det bliver jeres egen skyld (bibelsk udtryk, jf. <rs>Jos 2,19</rs> og <rs>ApG 18,6</rs>.--></seg>, dersom I alligevel grunde eders Tro og eders Haab paa min Tale og da
+fare vild. Ja, alle I, som med mig tro og forkynde Guds Ord, <seg type="com" n="com414">lader os</seg> indpr&#x00E6;nte den
+hellige <persName key="pe343">Povels</persName> Ord i vore Hjerter <rs type="bible" key="2 Kor 6,3-10" rend="quote1787">(2 Cor. 6.)
+<seg type="com" n="com414">lader os</seg> ikke i nogen Ting give noget Anst&#x00F8;d, <seg type="com" n="com416">at<!--for at.--></seg> vor Tjeneste skal ikke lastes, men <seg type="com" n="com417">lader os</seg> bevise os selv i alle Ting som Guds Tjenere, i <pb type="text" facs="1814_229_fax080.jpg" ed="A" n="64"/>megen Taalmodighed, i Tr&#x00E6;ngsler, i N&#x00F8;d, i
+Angester, i Slag, i F&#x00E6;ngsler, i Opr&#x00F8;r, i Arbeide og Vaagen, i Reenhed, i Kundskab, i
+Langmodighed, i Fromhed, <hi rend="spaced">i den Hellig Aand, i Ki&#x00E6;rlighed uden <seg type="com" n="com418">Skr&#x00F8;mt<!--forstillelse.--></seg>,
+</hi>i Sandheds Ord, i Guds Kraft, formedelst Retf&#x00E6;rdighedens Vaaben <seg type="com" n="com419">paa h&#x00F8;ire og venstre
+Side<!--dvs. til forsvar og angreb (hebraisme).--></seg>; ved &#x00C6;re og Van&#x00E6;re, ved ondt Rygte og godt Rygte, <hi rend="spaced">som Forf&#x00F8;rere og dog
+sanddrue,</hi> som ukiendte og dog kiendte, <hi rend="spaced">som de der d&#x00F8;e, og see vi leve;</hi>
+som de der ere revsede, men dog ikke ihjelslagne <hi rend="spaced">som bedr&#x00F8;vede, men altid glade,</hi>
+som fattige, men som dog gi&#x00F8;re mange rige, som de der have Intet og beholde dog alle
+Ting!</rs> Da skal Ki&#x00E6;rlighedens og Sandhedens og Kraftens Gud v&#x00E6;re med os, <rs type="bible" key="Sl 1,4" rend="allusion">da skal L&#x00F8;gnens
+Tjenere <seg type="com" n="com420">adspredes<!--spredes, fjernes.--></seg> for vore &#x00D8;ine, som Avner for Vinden</rs>, da skal det i al vor Strid og Angest og
+Tr&#x00E6;ngsel tone i vort Hjerte fra vor Frelser i det H&#x00F8;ie: <rs type="bible" key="Joh 16,33" rend="quote">i Verden skal I have Tr&#x00E6;ngsel, men <seg type="com" n="com421">v&#x00E6;rer<!--vær (imperativ pluralis).--></seg>
+frimodige! Jeg haver overvundet Verden</rs>, <rs type="bible" key="Joh 14,27" rend="quote">min Fred giver jeg eder</rs>, og <rs type="bible" key="Joh 16,22" rend="quote">Jeg vil see eder igien, da
+skal eders Hjerter gl&#x00E6;des, og Ingen tager eders Gl&#x00E6;de fra eder</rs> (Joh. <app select="yes" type="corrNote"><lem wit="GV">14-16</lem><rdg wit="A">14 16</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>.) vi skal synge med
+    <persName key="pe346">David</persName> <rs type="bible" key="Sl 56,5" rend="quote1787">(Ps. 56.) i Gud vil jeg prise <hi rend="spaced">Hans Ord,</hi> jeg forlader mig paa Gud, jeg vil ikke frygte, hvad
+skulde Ki&#x00F8;d gi&#x00F8;re mig?</rs> vi skal <rs type="bible" key="2 Tim 4,7" rend="allusion">fuldkomme L&#x00F8;bet</rs> og indgaae til vore Br&#x00F8;dre i den rolige Bolig, hvor
+Striden er ude og Salighed inde. Amen! <seg type="com" n="com422">Det skee<!--det skal ske (optativ).--></seg> i <persName key="pe45">Jesu</persName> Navn, Amen!</p>
+    
+    <fw type="longLine"/>  
+</div>
+        </body>
+        
+        <back>
+<!--
+<pb type="text" facs="1814_229_fax081.jpg" ed="A" n="65" rend="supp"/>Paa Undertegnedes Forlag er udkommet folgende
+Skrifter, som for Tiden scelges for vedsatte
+Priser i Rbp, N. N.
+Roeskilde-Rum, ved Pastor N. F. S. Grundtvig,
+heftet 2 Rbd. 5 mk. 8 ß.
+Helligtrekongerl^set, eller tre Dages Hcrndelser pas
+Danmarks ^»iftoler i 1814; En Beretning
+ved Pastor N- F. S. Grundtvig; heftet 5 mk.
+En mærkelig Spaadoni, efter et gammelt Haandskrift,
+ved Pastor Grundtvig, heftet 2 mk.
+Saga ved Pastor Grundtvig; — heftet 1 Nbd. z mk.
+V!)?taarsnat eller 2Zlik paalxrifrendom og Historie,
+af Pastor N. F. S. Grundtvig ; heftet z mk.
+Fransk Lcrsebog og Sproglcrre, udarbejdet efter
+allerhoisste Befaling til Brug for Underviisninglanstalter,
+af Capitain I. V. LindeufelS; indb.
+7 Rbd. 1 mk. Sproglaren, kanfaaes uden Lasebog,
+indb. for 6 Rbd.
+polyhymnia, <rs type="myth" key="myth684">Euterpe</rs> og Theone: ellet theoretis?
+Sammenligning af Musik, Rhytmik, og Deklameerkunst,
+ved Prof. L. C. <persName key="pe767">Sander</persName>; heftet
+6Rbdlr. " ' . -
+Odin eller <rs type="myth" key="myth106">Asernes</rs> Udvandring; Tragoedie i fem
+Acter, af C. <persName key="pe460XXX">G</persName>. <persName key="pe1952XXX">Leopold</persName>. Fra det Svenffe ved
+I- K. Host. heftet 1 Nbd.
+LNarie Stuart, Sorg-spil i fem Acter, af <persName key="pe35">Schiller</persName>;
+Oversat ved Prof. K. L. <persName key="pe24">Rahbek</persName>, heftet 2 Rbd.
+<pb type="text" facs="1814_229_fax082.jpg" ed="A" n="66" rend="supp"/>Johanna d'Arc, <placeName key="his781XXX">Orleans</placeName> MFe. Ssrgespil i fem
+Acter med Prolog af Fred. <persName key="pe35">Schiller</persName>, Oversat,af
+Prof. K L- <persName key="pe24">Rahbek</persName>; heftet 10 mk.
+Visebog, indeholdende ud. algte danffe Selstabssange;
+med Tillcrg af negle fraujke og tydste for
+1814. ncrsten Zoo i Tallet. Indbundenz Nbd.
+2 mk.
+Hvad b?r vi Danste tcenke om Freden med <placeName key="fak92">Sverrig</placeName>?
+af Inspekteur F. W Trojel; heftet 2 Nbmk.
+Historie omDitmarskerkrigenAar Femten Hundrede,
+og <placeName key="fak0">Ditmarsken</placeName>s Erobring under Kong Fr^denk
+den Anden, med en historist Udsigt overDitmarstcrfolkets
+Vilkaar og Skiebne i aldre Tider, af
+Secretair <persName key="pe45">Christ</persName>. <persName key="pe23">Molbech</persName>; heftet 2 5)vbd.
+2 mk. 4ß.
+Christian den Andens Fcvngsels- og Befrielses-Historie
+, af Overlcerer H» Vehrmann, heftet l
+Nbd. z mk.
+Andreas Seidelin
+i storc Kannikestrædet No. 46.-->
+
+            <div type="Rettelser">
+                <pb type="text" facs="1814_229_fax081.jpg" ed="A" n="65" rend="supp"/><!-- eller:  uden sidetal? -->
+                <pb type="text" facs="1814_229_fax082.jpg" ed="A" n="66" rend="supp"/>
+                
+                <head rend="1">Rettelser.</head><!--tjek om opstillingens repræsentation er OK-->
+                
+                <table xml:id="corrigenda" rendition="55">
+                   
+                    <row>
+                        <cell>Side</cell>
+                        <cell>1</cell> 
+                        <cell>Linie</cell>
+                        <cell>17</cell> 
+                        <cell>en, l. en saadan.</cell>
+                    </row>
+                    <row>
+                        <cell>&#x2013;</cell>
+                        <cell>13</cell>
+                        <cell>&#x2013;</cell>
+                        <cell>27</cell> 
+                        <cell>h&#x00F8;rde l. vist h&#x00F8;rde.</cell>
+                    </row>
+                    <row>
+                        <cell>&#x2013;</cell>
+                        <cell>18</cell> 
+                        <cell>&#x2013;</cell>
+                        <cell>30</cell> 
+                        <cell>Herostat l. Herostrat.</cell>
+                    </row>
+             
+                </table>
+                
+                <graphic style="longLine"/>
+            </div>
+        </back>
+        
+        <pb type="periText" facs="1814_229_fax083.jpg"/>
+        <pb type="periText" facs="1814_229_fax084.jpg"/>  
+        
+    </text>
+</TEI>
+

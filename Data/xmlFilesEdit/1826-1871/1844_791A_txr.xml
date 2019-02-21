@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrEditXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/css" href="https://prometheus.statsbiblioteket.dk/gvData/css/oxyAuthorEdit.css"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da"  xml:space="preserve">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Brage-Snak om Græske og Nordiske Myther og Oldsagn for Damer og Herrer</title>
+        <title rend="shortForm">Brage-Snak</title>
+        <author>Stine Holst Petersen</author>
+        <editor role="editor2">Klaus Nielsen</editor>
+        <editor role="editor1">Jon Tafdrup</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.12</idno>
+          <idno type="technic">1.12.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>11 KB</extent>
+      <publicationStmt>
+        <availability status="restricted">
+          <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+        </availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority/>
+        <date when="2016-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.9, 1. november 2016</date>
+      </publicationStmt>
+      <notesStmt>
+        <note type="txt" target="1844_791A_txt.xml">L&#x00E6;setekst</note>
+        <note type="txr" xml:id="thisFile" target="1844_791A_txr.xml">Tekstredegørelse</note>
+      </notesStmt>
+      <sourceDesc>
+        <p/>
+      </sourceDesc>
+      <!--<seriesStmt>
+        <title></title>
+        <idno n=""/>
+        <respStmt>
+          <name></name>
+          <resp></resp>
+        </respStmt>
+      </seriesStmt>-->
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change who="NHB" when="2015-03-09" xml:id="NHB">oprettet skabelon</change>
+         <change who="NHB" when="2016-06-03">tilpasset skabelon: fasc.-nr. til fasc.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">I Grundtvig-arkivet på Det Kongelige Bibliotek, København, findes en række manuskripter, som knytter sig til tilblivelsen af <hi rend="italic">Brage-Snak</hi>.</p>
+          
+          <p rend="noIndent">
+            <table rend="msDesc">
+              <!--
+                
+                <p rend="noIndent">Bestemmelserne af manuskripternes typer benytter f&#x00F8;lgende terminologi:
+                        
+                        <list type="simple">
+                            <item><hi rend="italic">forarbejde (dvs. arbejdsnotater, ekscerpter, dispositioner og lignende)</hi></item>
+                            <item><hi rend="italic">udkast</hi></item>
+                            <item><hi rend="italic">kladder</hi> (dvs. arbejdsmanuskripter)</item>
+                            <item><hi rend="italic">renskrifter</hi> (hvad enten de er v&#x00E6;sentligt afvigende fra trykket eller v&#x00E6;sentligt overensstemmende med trykket)</item>
+                            <item><hi rend="italic">afskrifter</hi></item>
+                        </list>                            
+                    </p>-->
+              <row>
+                <cell>Signatur</cell>
+                <cell>Type</cell>
+                <!--<cell>Indhold</cell>-->
+                <cell>Indhold</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="V-1_036.pdf">Fasc. 141.61</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>kasseret afsnit om <rs type="myth" key="myth133">Frigga</rs> og <rs type="myth" key="myth6">Balders</rs> død</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="V-1_037.pdf">Fasc. 141.62</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>kasseret afsnit om beskrivelsen af mennesket</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0003.pdf">Fasc. 278.1</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>titelblad</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0003.pdf">Fasc. 278.2</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>&#x2018;Fortale&#x2019;</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0003.pdf">Fasc. 278.3</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>titel og &#x2018;Forord (Til de unge Damer)&#x2019;</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0005.pdf">Fasc. 278.4</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>&#x2018;Forord til de unge Damer&#x2019;</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0006.pdf">Fasc. 278.5</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>&#x2018;Efter-Skrift til Alle&#x2019;</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0006.pdf">Fasc. 278.6</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>&#x2018;Efter-Skrift&#x2019;</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0007.pdf">Fasc. 278.8</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>forord</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0008.pdf">Fasc. 278.9</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>forord</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0009.pdf">Fasc. 278.10</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>indholdsfortegnelse</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0010.pdf">Fasc. 279.1</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 1-126</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0010.pdf">Fasc. 279.2</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 130-163</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0010.pdf">Fasc. 279.3</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 163-190</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0010.pdf">Fasc. 279.4</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 192-208</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0010.pdf">Fasc. 279.5</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 210-224</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0012.pdf">Fasc. 279.6</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 7. kapitel.</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0013.pdf">Fasc. 280</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak</hi> s. 229-384</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.1</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 1. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.2</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 1. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.3</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 1. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.4</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>slutning af 1. kapitel, 2. og 3. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.5</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 4. kapitel, 5. kapitel og del af 6. kapitel.</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0014.pdf">Fasc. 281.6</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 7. kapitel.</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.1</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 17. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.2</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 17. og 18. kapitel</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.3</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 18. og 19. kapitel</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.4</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 20. kapitel, 21. og 22. kapitel samt del af 23. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.5</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 23. kapitel, 24, kapitel og del af 25. kapitel</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.6</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 25. kapitel</cell>
+              </row>
+               <row>
+                <cell><ref type="web" target="XV-1_0018.pdf">Fasc. 282.7</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 25. kapitel</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XV-1_0019.pdf">Fasc. 283.1</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til del af 1. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0019.pdf">Fasc. 283.2</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 1. kapitel.</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0019.pdf">Fasc. 283.3</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til del af 2. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0019.pdf">Fasc. 283.4</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak</hi> s. 128 - 130</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0019.pdf">Fasc. 283.5</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 4. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.7</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 4. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.8</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 6. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.9</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>&#x2018;Dværgene&#x2019;</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.10</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 7. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.11</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 8. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.12</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 8. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.13</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 126-128</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0021.pdf">Fasc. 283.14</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 9. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.15</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 9. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.16</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 9. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.17</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 10. og 11. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.18</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 11. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.19</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 12. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.20</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 12. og 13. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.21</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 13. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.22</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 190-192</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.23</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 14. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.24</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 208-210</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.25</ref></cell>
+                <cell>renskrift, muligvis forelæsningsmanuskript</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 15. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.26</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 15. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.27</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 15. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.28</ref></cell>
+                <cell>kladde (muligvis renskrift)</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 15. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.29</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 227-228</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.30</ref></cell>
+                <cell>kladde (muligvis renskrift)</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 16. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.31</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 16. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0023.pdf">Fasc. 283.32</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 17. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0025.pdf">Fasc. 283.33</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 18. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0026.pdf">Fasc. 283.34</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 8. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0026.pdf">Fasc. 283.35</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 11. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0027.pdf">Fasc. 283.36</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 22. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0027.pdf">Fasc. 283.37</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 23. kapitel</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0027.pdf">Fasc. 283.38</ref></cell>
+                <cell>endelig renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell><hi rend="italic">Brage-Snak,</hi> s. 384-386</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0027.pdf">Fasc. 283.39</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>Ragnarokmyten</cell>
+              </row>
+             <row>
+                <cell><ref type="web" target="XV-1_0027.pdf">Fasc. 283.40</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>Ragnarokmyten</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0028.pdf">Fasc. 283.41</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af en forelæsning, udarbejdet til besøg på Amalienborg.</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.1</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 1. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.2</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 1. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.3</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 1. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.4</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 2. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.5</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 2. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.6</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 2. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.7</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>forord</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.8</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>forord</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0033.pdf">Fasc. 284.9</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>forord</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XV-1_0042.pdf">Fasc. 286.36</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>del af 6. kapitel</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XVIII-2_0017.pdf">Fasc. 383</ref></cell>
+                <cell>udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>tilegnelsesdigt</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XX-2_0052.pdf">Fasc. 389.96.a</ref></cell>
+                <cell>renskrift</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>tilegnelsesdigt</cell>
+              </row>
+            <row>
+                <cell><ref type="web" target="XX-2_0053.pdf">Fasc. 389.96.b</ref></cell>
+                <cell>kladde</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>tilegnelsesdigt</cell>
+              </row>
+            </table>
+          <p rend="noIndent">Manuskriptmaterialet til <hi rend="italic">Brage-Snak</hi> er omfattende og indeholder to fulde redaktioner, ovenfor betegnet som hhv. &#x2018;endelig renskrift&#x2019; og &#x2018;renskrift, muligvis forelæsningsmanuskript&#x2019;. Flere manuskripter synes fejlplaceret i fascikel 283, men kan ved hjælp af <persName key="pe67">Helge Toldbergs</persName> redegørelse og notater i <rs type="title" key="title162"><hi rend="italic">Registranten</hi></rs> bringes i sin rette sammenhæng. Se også hans introduktion til fascc. 278-284 i <hi rend="italic"><rs type="title" key="title162">Registranten</rs>,</hi> bind XV, s. I-II.</p></p>
+        </div>
+        
+        <div>
+          
+          <head xml:id="docIn3">F&#x00F8;rstetrykket</head>
+          
+          <p rend="noIndent">Nummer i <hi rend="italic"><rs key="title35" type="title">Bibliografien</rs></hi>: 791A.</p>
+          
+          <p rend="noIndent"><hi rend="italic">Brage-Snak om Græske og Nordiske Myther og Oldsagn for Damer og Herrer</hi> blev annonceret udkommet den 16. september 1844 (jf. <rs type="title" key="title189"><hi rend="italic">Adresseavisen</hi></rs><!--, 16. sept. 1844-->). Bogen kostede 1 rigsdaler og 56 skilling. Forlæggeren var C.A. Reitzel og trykkeren Bianco Luno i København. Oplagets størrelse kendes ikke.</p>
+         
+        </div>
+      </div>
+      
+      <div>
+        <head xml:id="docIn4">Bibliografisk beskrivelse</head>
+      
+        <div>
+        <head xml:id="docIn5">De anvendte eksemplarer</head>
+        <list type="decimal">
+          <item>Grundtvig-Bibliotekets eksemplar, katalognr. 3.5, ex. 2; beskåret og indbundet.</item>
+          <item>Grundtvig Centerets eksemplar (tidligere Aalborg Universitetsbibliotek) ubeskåret og med papomslag.</item>
+          <item>Det Kongelige Biblioteks eksemplar, katalognr. 27825, stregkode: 130012301449; beskåret og indbundet.</item>
+        </list>
+        <p rend="noIndent">Eksemplar 1 er valgt som grundtekst og har afgivet faksimiler til udgaven. Den følgende bibliografiske beskrivelse tager udgangspunkt i eksemplar 1.</p>
+       </div>
+        
+        <div>
+          <head xml:id="docIn6">Formler</head>
+          <p rend="noIndent">Format: 8<hi rend="raised">o</hi>.</p>
+          <p rend="noIndent">Eksemplaret er (beskåret) og måler ca. 195 &#x00D7; 128 mm.</p>
+          <p rend="noIndent">Kollationsformel: &#x3c0;<hi rend="raised">4</hi> 1-24<hi rend="raised">8</hi> 25<hi rend="raised">4</hi>.</p>
+          <p rend="noIndent">Signaturformel: &#x0024;2 signeret (-25<hi rend="lowered">2</hi>).</p>
+          <p rend="noIndent">Pagineringsformel: 200 blade, pagineret [<hi rend="italic">8</hi>], <hi rend="italic">1,</hi> 2-386, <hi rend="italic">387</hi>, 388-390, <hi rend="italic">391-392</hi> [= 400].</p>
+             <p rend="noIndent">Bogens format er oktav. Den består af et præliminært, usigneret læg af 4 blade; derefter følger 24 komplette, signerede læg af 8 blade og slutteligt et læg af 4 blade. De 24 komplette, signerede læg bærer signatur på de to første blade, mens det sidste læg (25) kun bærer signatur på det første blad. Det præliminære læg er upagineret, de øvrige læg er pagineret med arabertal. Der er stum paginering af s. 1, s. 387 og s. 391-392.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn7">Indholdsoversigt</head>
+          <p rend="noIndent">[<hi rend="italic">I</hi>] <hi rend="italic">titelblad.</hi> [<hi rend="italic">II</hi>] <hi rend="italic">blank.</hi> [<hi rend="italic">III-VI</hi>] Til Danmarks Dronning, Dagmar den Anden, Caroline Amalia den Første. [<hi rend="italic">VII-VIII</hi>] <hi rend="italic">indholdsfortegnelse.</hi> [1]-386: <hi rend="italic">tekst.</hi> [387]-390: Efter-Skrift til Danne-Kvinden. [391] <hi rend="italic">rettelsesliste.</hi> [392] <hi rend="italic">blank.</hi></p>
+        </div>
+          <div>
+          <head xml:id="docIn8">Papir</head>
+          <p rend="noIndent">Almindeligt trykpapir. Papiret er med tiden gulnet.</p>
+        </div>
+</div>
+     
+      
+      <div>
+        <head xml:id="docIn9">Intern varians</head>
+        <p rend="noIndent">På s. 337, linje 17 står der (det korrekte) &#x201C;selv&#x201D; i eksemplar 1 og 2, i eksemplar 3 står der &#x201C;selø&#x201D;. Der er ikke blevet konstateret intern varians af materiel art.</p>
+       </div>
+      
+      
+      <div>
+        <head xml:id="docIn12">Tekstkritik</head>
+        <list type="textualCriticismPluralis"/>
+       
+      </div>
+      <div type="litList">
+        <head xml:id="docIn13">Anvendt litteratur</head>
+       <list xmlns:TEI="http://www.tei-c.org/ns/1.0" type="litList">
+    <item>Adresseavisen, se <rs type="title" key="title189"><hi rend="italic">Kj&#x00F8;benhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</hi></rs> (1844)</item>
+    <item>Bibliografien, se Johansen, Steen (1948-1954)</item>
+    <item><span type="proofread"/>Johansen, Steen (1948-1954) <rs type="title" key="title35"><hi rend="italic">Bibliografi over N.F.S. Grundtvigs skrifter,</hi></rs> bind 1-4. København</item>
+    <item><span type="proofread"/><rs type="title" key="title189"><hi rend="italic">Kjøbenhavns Kongelig alene privilegerede Adressecomptoirs Efterretninger</hi></rs> nr. 218, 16. september 1844, sp. [6]. København</item>
+    <item><span type="proofread"/><rs type="title" key="title162"><hi rend="italic">Registrant over N.F.S. Grundtvigs papirer</hi></rs> (1957-1964), udg. Grundtvig-Selskabet af 8. September 1947 &#x0026; Det Danske Sprog- og Litteraturselskab, bind 1-30. K&#x00F8;benhavn</item>
+    <item>Registranten, se <rs type="title" key="title162"><hi rend="italic">Registrant over N.F.S. Grundtvigs papirer</hi></rs> (1957-1964)</item>
+    
+    
+</list>
+      </div>
+    </body>
+  </text>
+</TEI>

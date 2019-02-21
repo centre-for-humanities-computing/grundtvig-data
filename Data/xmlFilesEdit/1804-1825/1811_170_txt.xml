@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Til H. G. Bechman</title>
+      <title rend="shortForm">Til H. G. Bechman</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Vibeke A. Pedersen</editor>
+      <editor role="student3">Maria Wiggers Pedersen</editor>
+         <editor role="student2">Anna Poulsen</editor>
+        <editor role="student1">Kirsten Vad</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.5</idno>
+               <idno type="content">1.5</idno>
+               <idno type="technic">1.5.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>20 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2013-05-02">www.grundtvigsværker.dk, version 1.5, 1. oktober 2014</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>2014-10-31</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1811_170_txt.xml" type="txt">Læsetekst</note>
+            <note target="1811_170_com.xml" type="com">Punktkommentar</note>
+            <note target="1811_170_intro.xml" type="intro">Indledning</note>
+            <note target="1811_170_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="unknownVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">Sandsigeren eller den danske Huusven</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>1811</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="170"><desc>F&#x00F8;rstetrykket</desc>
+          <num>1811</num>
+       </witness>
+         
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">         
+          <desc>Poetiske Skrifter</desc>
+       <num>1</num></witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+      <profileDesc>
+  <textClass>
+   <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+    <term>lyrik</term>
+    <term>lejlighedsdigte</term>
+   </classCode>
+   <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+    <term>kristendom</term>
+    <term>filosofi</term>
+   </keywords>
+  </textClass>
+</profileDesc>
+
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+       <change xml:id="KV" who="KV" when="2014-02-25">1. kollation (eks. Schönberg)</change>
+     <change xml:id="AP" who="AP" when="2014-03-03">rettet pb-elementer, indsat PS-pb, rettet strofetal. 2 koll. uden indførsler</change>
+     <change who="AP" when="2014-03-04">indsat fax.nr</change>
+        <change xml:id="VAP" who="VAP" when="2014-05-14">fjernet mæslinger. Tilrettet head. Lavet indryk på relevante l og lg og ændret strofenummerering. Fjernet subtype="column"</change>
+       <change xml:id="MWP" who="MWP" when="2014-05-14">3.  kollation af løsbladseksemplar t.o.m. s. 771</change>
+       <change who="MWP" when="2014-05-15">Færdiggjort 3.  kollation af løsbladseksemplar</change>
+       <change who="VAP" when="2014-05-19">bibelstedsopmærket</change>
+        <change who="VAP" when="2014-05-20">seg-opmærket samt flere bibelstedsopmærkninger</change>
+       <change who="VAP" when="2014-06-02">tekstrettelser (inkl. rettet rækkefølge i de allerede foretagne)</change>
+       <change who="VAP" when="2014-06-25">mange flere bibelsteder. oprettet com 38-40</change>
+      <change who="auto" when="2014-06-25">Autoopmærket af autotag.awk v09 KK 2013-11-28</change>
+        <change who="VAP" when="2014-06-25">oprettet com 38-40</change>
+        <change who="VAP" when="2014-06-26">slettet com40. Flere bibelopm.</change>
+         <change who="VAP" when="2014-06-27">ny com40. Flere bibelopm.</change>
+         <change who="VAP" when="2014-07-09">ny com41-43. Flere bibelopm.</change>
+       <change who="VAP" when="2014-08-26">Rettelser og bibelopm. efter Steen. Ny com44-54.</change>
+        <change who="VAP" when="2014-08-27">Rettelser fortsat efter Steen. Ny com55-58.</change>
+         <change who="VAP" when="2014-09-15">oprettelse af com60. Finpudsning efter Steens kontrol efter Breengaard.</change>
+        <change who="VAP" when="2014-09-26">kontrol af rettelser af bibelstederne</change>
+       <change who="KV" when="2014-09-30">indsat fax nr. i tekst</change>
+       <change who="VAP" when="2014-10-08">udraderet sidste mæsling i bibelstederne</change>
+         <change who="VAP" when="2014-10-22">rettelser efter KN. Oprettet com63-64</change>
+        <change who="AP" when="2014-04-14">indsat fax.nr fra mappen 1811_170_jpg - klaus siger ok</change>
+       <change who="KV" when="2015-10-15">indført genre, emne</change>
+          <change who="VAP" when="2016-04-07">rettet ved kontrol</change>
+       <change who="KV" when="2016-10-27">fak639 til fak895 efter kontrol</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">    
+   
+		<!--<front rend="[Titelblad]">
+			<titlePage type="main">
+			<pb type="text" facs="1811_170_fax014.jpg" ed="A"  n="267"/>
+			
+				<docTitle>
+	<titlePart type="main">Sandsigeren</titlePart>
+	<titlePart type="part">eller</titlePart>
+				   <titlePart type="part">den danske Huusven.</titlePart>
+				
+</docTitle>
+			 <fw type="shortLine"/>
+			 
+			   <p rend="center">No. 48.</p>
+			   <p rend="center">Tirsdagen den 31de Decbr. 1811.</p>
+			   <fw type="longLine"/>
+
+				<epigraph>
+				   <lg>
+<l rend="firstIndent"><hi rend="romanType">Servetur ad imum</hi></l>
+<l rend="firstIndent"><hi rend="romanType">Qvaliis ab incepto processerit, et sibi constet.</hi></l>
+<l rend="secondIndentRight"><hi rend="romanType"><hi rend="italic">Hor. ad <rs type="myth" key="myth691">Pi</rs>s. v. 126</hi></hi></l>
+				   </lg>
+				   <lg>
+<l rend="firstIndent">Vandre vil i evig Harmonie</l>
+<l rend="firstIndent">Religion og Poesie.</l>
+<l rend="secondIndentRight"><hi rend="spaced"><persName key="pe138">Ingemann</persName>.</hi></l>
+				   </lg>
+				</epigraph>
+				
+		
+				<docImprint>
+				<pubPlace/>.
+<byline>
+	<docAuthor></docAuthor>
+				</byline>
+</docImprint>
+</titlePage>
+</front>-->
+      
+<body>  
+<div type="[Tekst]"><pb type="text" facs="1811_170_fax001.jpg" ed="A"  n="767" rend="supp"/><pb type="edition" ed="PS" n="429"/>
+<head rend="1">Til <persName key="pe1540">H. G. Bechman</persName>.</head>
+   <head rend="0">(I Anledning af hans <rs key="title3222" type="title">Drøm</rs> i <rs key="title794" type="title">Sandsigeren</rs> No. 40.)</head>
+<lg n="1">
+<l><hi rend="initial">S</hi>om Dreng modtoges jeg af Dig engang</l>
+<l><seg type="com" n="com1">Hel</seg> venlig i de længst henrundne Dage,</l>
+<l>Da nynnede jeg paa en Takkesang</l>
+<l>Hvoraf kun Mindet jeg har nu tilbage.</l>
+<l><pb type="text" facs="1811_170_fax002.jpg" ed="A"  n="768"/>Jeg glemte den paa Ungdoms <seg n="com38" type="com">Daarefærd</seg>,</l>
+<l>Ak da Saameget mig gik reent af Minde,</l>
+<l>Men her <seg type="com" n="com44">og</seg> tit den <seg type="com" n="com63">Id</seg> er Manden kær</l>
+<l>Som Drengen svag, men kæk har havt isinde.</l>
+</lg>
+<lg n="2">
+<l>Saa tag min Tak, Du gæve Præstemand!</l>
+<l>Ei just fordi Du venlig tog mod Drengen,</l>
+<l>Det rører Hjertet, men ei Harpestrængen,</l>
+<l>Nei, Tak, fordi Du ærlig har holdt Stand</l>
+<l>I Kristendommens tunge Prøvedage,</l>
+<l>Til Tiden ved Guds Forsyn kom tilbage,</l>
+<l>Da <rs type="myth" key="myth275.b">Pallas</rs> dog ei længer ruger ud</l>
+<l>Af hvert et Æg en usel, selvklog Daare,</l>
+<l>Men ogsaa Mænd, som knæle vil for Gud,</l>
+<l>Og under Korset fælde Angerstaare!</l>
+<l>Modtag den Hilsen jeg af Hjertens Grund</l>
+<l>Dig venlig sender over Belt og Sund!</l>
+<l><pb type="edition" ed="PS" n="429" />Du var <seg type="com" n="com2">alt</seg> Mand, da jeg var Dreng i Alder,</l>
+<l>Men dog i <persName key="pe45">Kristo</persName> jeg dig Broder kalder.</l>
+</lg>
+<lg n="3">
+<l>O, lystelig det klinger mig i Øre,</l>
+<l>Naar stundum, ak kun sjelden, jeg kan høre</l>
+<l>En <rs type="bible" rend="reference" key="Matt 3,3">Røst i Ørken</rs> mellem Farisæ'r</l>
+<l><pb type="text" facs="1811_170_fax003.jpg" ed="A"  n="769"/><rs type="bible" key="Matt 3,2"  rend="reference">Om Riget, som igen er kommet nær</rs>,</l>
+<l>En Røst, som sanddru, <seg n="com45" type="com">uden Sky</seg> forkynder</l>
+<l>Det <rs type="bible" key="Joh 1,29"  rend="reference">Offerlam, som bar al Verdens Synder</rs>.</l>
+<l>Jeg fulgte Dig, o <hi rend="spaced"><persName key="pe1540">Bechman</persName>,</hi> nys med Glæde</l>
+<l>I Kirken ind paa vaagne Drømmegang,</l>
+<l>Og gennem Dig jeg hørde <persName key="pe294">Kingo</persName> qvæde</l>
+<l>Saamangen glemt, men sanddru <seg n="com41" type="com">Fastesang</seg>,</l>
+<l>De samme Toner, som til Fryd og Smerte</l>
+<l>Mig klinge tit i Harpe som i Hjerte,</l>
+<l>Ja, det er sandt, at <persName key="pe45">Jesus</persName> kendes ei</l>
+<l>Fordi den usle Stolthed siger Nei,</l>
+<l>Og medens Daarer høit paa Lyset skrige,</l>
+<l><seg type="com" n="com46">Alt mere</seg> Mørket skjuler Jorderige.</l>
+<l>Det <seg type="com" n="com3">og</seg> er sandt, at selv <rs type="bible" key="1 Kong 18,21-24" rend="allusion"  subtype="bibleStart" n="bible6"/>de Bedste <seg n="com40" type="com">hinke</seg>,</l>
+<l>At de fra Altret os til <seg type="com" n="com39">Høien</seg> vinke,</l>
+<l>At Røgelsen i deres Offerskaal</l>
+<l>De tænde vil for Jehovah og <rs key="myth451" type="myth">Baal</rs><rs type="bible" key="1 Kong 18,21-24" rend="allusion"  subtype="bibleEnd" n="bible6"/>;</l>
+<l>Det <seg n="com47" type="com">end</seg> er sandt, at Satan haver spundet,</l>
+<l>De Reb, der sig om Lysestagen sno,</l>
+<l>Men styrte den har han endnu ei kundet,</l>
+<l>Du paa hans Ord ei maa den Løgner tro,</l>
+<l>Han lo saa fælt af dybe Helvedstrube,</l>
+<l>Som <seg type="com" n="com4">alt</seg> han havde Lyset i sin Grube,</l>
+<l><pb type="text" facs="1811_170_fax004.jpg" ed="A"  n="770"/><seg type="com" n="com5">Saa</seg> lo han fordum, da med Klageskrig</l>
+<l>De Fromme stirrede paa <persName key="pe45">Jesu</persName> Lig;</l>
+<l>Men <seg type="com" n="com48">ret som</seg> da hans Latter flux blev endt,</l>
+<l>Ja blev til Skrig og Hylen <seg type="com" n="com42">heel</seg> omvendt,</l>
+<l><seg type="com" n="com6">Saa</seg> skal engang endnu det atter gaa,</l>
+<l>Og Lyset skal den Fule lade staa,</l>
+<l><pb type="edition" ed="PS" n="430" />Det lyse skal for alle dem som vaage,</l>
+<l>Naar Stormen har <app type="corrNote" select="yes"><lem wit="GV">adsplittet</lem><rdg wit="A">adsplillettet</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Nattens Taage.</l>
+<l>Korsfæstet har man <persName key="pe45">Frelseren</persName> paa ny,</l>
+<l>Og ei som <persName key="pe1617">Josef</persName>, men med Støi og Ry</l>
+<l>Paa Skrømt hans Lig bevist den sidste Hæder,</l>
+<l>Indsvøbt det vel i f<!-- MWP: tvivl om f el. s -->ine <seg type="com" n="com7">Jordeklæder</seg>,</l>
+<l>Og med Moral det balsameret <seg type="com" n="com8">saa</seg>,</l>
+<l>At som en Mumie det kan bestaa,</l>
+<l>Til <rs type="bible" key="Åb 11,15-19" rend="allusion">Himlen røres og Basunen skralder</rs>,</l>
+<l>Indtil Han selv det af sin Grav opkalder.</l>
+<l><rs type="bible" key="Matt 27,60" rend="allusion" n="bible2" subtype="bibleStart"/>En Grav, hvori slet Ingen hviled før</l>
+<l>Man til det Samme haver pænt udhugget;<rs type="bible" subtype="bibleEnd" key="Matt 27,60" rend="allusion" n="bible2"/></l>
+<l>Man smeddet har af Staal og Jern en Dør,</l>
+<l>Med hundred Laase den <seg type="com" n="com62">ret fast</seg> tillukket,</l>
+<l>Ei til <seg type="com" n="com9">Pilatusser</seg> de dennegang</l>
+<l>Og ei til Vægtere har nogen <seg type="com" n="com10">Trang</seg>,</l>
+<l><rs key="Matt 27,63-64" type="bible" subtype="bibleStart" rend="allusion" n="bible1"/>Til Saadant trængde ikkun Jødepræster,</l>
+<l><pb type="text" facs="1811_170_fax005.jpg" ed="A"  n="771"/>Da for Disiplene de havde Frygt<rs key="Matt 27,63-64" type="bible" subtype="bibleEnd" rend="allusion" n="bible1"/>,</l>
+<l>Nu for Disiplene kan <persName key="pe45">Jesus</persName> hvile trygt,</l>
+<l>Thi de har selv korsfæstet deres Mester,</l>
+<l>Dog, Himlens Magter er kanske saa stærke,</l>
+<l>At ei Disiplene de har behov,</l>
+<l>Og er det <seg type="com" n="com11">saa</seg>, da skal de snarlig mærke,</l>
+<l><rs type="bible" key="Matt 28,13" rend="allusion">Han ei blev stjaalen medens Vagten sov</rs>.</l>
+<l>Nu er det <seg type="com" n="com12">Dimmelugens sidste Nat</seg></l>
+<l>Og Morgenrøden vil fremskinne brat,</l>
+<l>Mig tykkes <seg type="com" n="com13">alt</seg> i Aanden jeg fornemmer</l>
+<l>En Jubellyd fra Millioner Stemmer:</l>
+<l rend="firstIndent">O salig Paaskedag!</l><!-- KV: dette og de følgende 5 linier er i teksten rykket ind, AP: ditto -->
+<l rend="firstIndent">Nu har vi vundet Sag,</l>
+<l rend="firstIndent">Langfredags bittre Minde,</l>
+<l rend="firstIndent">Maa nu saa sødt hensvinde;</l>
+<l rend="firstIndent">Thi <persName key="pe45">Jesus</persName> vandt med Ære,</l>
+<l rend="firstIndent">Hans Navn velsignet være.</l>
+<l><pb type="edition" ed="PS" n="431" />Jeg seer det grant, du mener ikke <seg n="com49" type="com">saa</seg>,</l>
+<l>Du seer Herolden <seg type="com" n="com14">alt</seg> med Septret staa,</l>
+<l>Du Skyen seer sig over Tronen hvælve,</l>
+<l>Som Spotterne skal se, og tro og skælve;</l>
+<l>Vi lige let kan Begge skue feil,</l>
+<l>Vi <rs type="bible" rend="reference" key="1 Kor 13,12">skue begge i et dunkelt Speil</rs>,</l>
+<l><pb type="text" facs="1811_170_fax006.jpg" ed="A"  n="772"/>Men visselig kan <seg type="com" n="com15">end</seg> paa mangen Maade</l>
+<l>Til <persName key="pe45">Kristi</persName> Pris <app type="corrNote" select="yes"><lem wit="GV">sig</lem><rdg wit="A">slg</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> løse Tidens Gaade.</l>
+<l>O hør engang, hvordan i <placeName key="poet415">Norrigs</placeName> Fjelde</l>
+<l><seg type="com" n="com16">Hel</seg> sære Røster røre sig med Vælde,</l>
+<l>Hvo veed om ei i <placeName key="fak24">Norden</placeName> dennegang</l>
+<l>Udbryde skal hin store Paaskesang!</l>
+<l>Se hvor de sysle hist bag Hav i Vest!</l>
+<l>Hvad om de <rs key="Joh 11,55" type="bible" rend="allusion">renses til en Paaskefest</rs>!</l>
+<l>I Morgen skal vi paa det høie Stade</l>
+<l>Os føle og os te saa hierteglade,</l>
+<l>Naar <persName key="pe45">Kristi</persName> Fjende vi se død nedfalde,</l>
+<l>Og høre Gud sin Søn <seg n="com50" type="com">hel</seg> brat hjemkalde</l>
+<l><rs n="bible4" key="Matt 2,16-18" rend="reference" type="bible" subtype="bibleStart"/>Da han, som Barnet efter Livet stod</l>
+<l>Er druknet rædsomt i uskyldigt Blod<rs n="bible4" key="Matt 2,16-18" rend="reference" type="bible" subtype="bibleEnd"/>.</l>
+<l>O store <seg type="com" n="com17">Sandsagn</seg>, naar vi dig forstaa</l>
+<l>Af dig vi kan om <persName key="pe45">Kristi</persName> Kirke spaa</l>
+<l><rs n="bible5" key="Matt 2,13-14" rend="reference" type="bible" subtype="bibleStart"/>Naar en <persName key="pe733">Herodes</persName> sig mod Gud opreiser,</l>
+<l>Som Spotter, Grubler eller <seg type="com" n="com18">Tyrkekeiser</seg>,</l>
+<l>Og sværger i sin blinde Helvedharme,</l>
+<l>At dræbe <persName key="pe45">Jesus</persName> i hans Moders Arme,</l>
+<l>Da haver Gud en Pleiefader <seg type="com" n="com19">alt</seg></l>
+<l>I Viisdom til sin Hellige udvalgt;</l>
+<l>Med Moderen og hendes spæde Søn</l>
+<l><pb type="text" facs="1811_170_fax007.jpg" ed="A"  n="773"/>Til vilden Ørk han flygter udi Løn<rs subtype="bibleEnd" type="bible" rend="reference" key="Matt 2,13-14" n="bible5"/>,</l>
+<l><rs subtype="bibleStart" rend="reference" key="Matt 2,16" type="bible" n="bible7"/><persName key="pe733">Herodes</persName> farver <seg type="com" n="com20">Sværdeodden</seg> rød</l>
+<l>Med Blod af Spæde udi Moderskød<rs subtype="bibleEnd" type="bible" rend="reference" key="Matt 2,16" n="bible7"/>,</l>
+<l><pb type="edition" ed="PS" n="432" />Men Guddomsbarnet han dog aldrig rammer,</l>
+<l><rs type="bible" rend="reference" key="Matt 2,15"><persName key="pe307">Maria</persName> tryg i Ørken det <seg type="com" n="com51">opammer</seg></rs>.</l>
+<l><seg type="com" n="com21">Hel</seg> sørgelig og mørk en Tid henskrider,</l>
+<l>Ja eengang maa vel <seg type="com" n="com22">og</seg> henskride <hi rend="spaced">Tider,</hi></l>
+<l>Da maa <persName key="pe733">Herodes</persName> paa sin Trone grue</l>
+<l>Og alt det Blod, han rasende udgød,</l>
+<l><rs type="bible" key="Åb 19,20 og Åb 20,15" rend="reference">Ham piner, brænder som en Helvedglød</rs>,</l>
+<l>Ja vælter sig i Aarerne som Lue</l>
+<l>Til den nedhvirvler ham i dybe Sø,</l>
+<l><rs type="bible" key="Mark 9,43-48"  rend="reference">Hvor Ild ei slukkes, Ormen ei kan dø</rs>.</l>
+<l><rs subtype="bibleStart" rend="reference" key="Matt 2,19-21" type="bible" n="bible3"/>Da Engelen <seg n="com52" type="com">for</seg> <persName key="pe1617">Josef</persName> staar <seg type="com" n="com23">saa fage</seg></l>
+<l>Og raaber jublende: kom kun tilbage!</l>
+<l>Thi han som Barnet efter Livet stod,</l>
+<l>Er brændt og druknet i uskyldigt Blod<rs subtype="bibleEnd" rend="reference" key="Matt 2,19-21" type="bible" n="bible3"/>.</l>
+<l>Og fra <placeName key="fak12">Europa</placeName> flygter <persName key="pe45">Jesus</persName> <seg type="com" n="com53">vist</seg></l>
+<l>Og <seg type="com" n="com24">fløtter</seg> med sig bort sin Lysestage,</l>
+<l>Men ei med Vold og ei med al sin List</l>
+<l>Kan Satan Lysene fra Altret tage;</l>
+<l><seg n="com54" type="com">End</seg> staaer det der, det vakkre Lysepar,</l>
+<l>Og brænder herligt med sin klare Lue,</l>
+<l><pb type="text" facs="1811_170_fax008.jpg" ed="A"  n="774"/>Med Sværd og Støv og Vand i fulde Kar</l>
+<l>Afmægtige dem Mørkets <rs type="myth" key="myth109">Dværge</rs> true,</l>
+<l>Kan dem ei slukke og ei overvinde;</l>
+<l>Thi naar den sidste Flok i Kirkekor</l>
+<l>Forlader feig det høie Alterbord; —</l>
+<l>Med Stagerne de Lys da brat forsvinde,</l>
+<l>Og det som Hoben træder paa med Haan,</l>
+<l>Er kun et Blændværk af den fule Aand.</l>
+<l>Ei Lysene, men vi er stædt i Fare,</l>
+<l>O ve os! om ei kækt vi dem forsvare,</l>
+<l>O ve da os! vi ere <rs key="Matt 5,13" rend="allusion" type="bible">Jordens Salt</rs>,</l>
+<l>Og raadne vi, ved os da raadner Alt.</l>
+<l>Og spørger <persName key="pe45">Je<!-- MWP: ml rum? -->sus</persName>: <rs rend="allusion" key="Matt 26,45" type="bible">hvor kan I dog sove</rs>,</l>
+<l>Nu Tiden er en mandig Dyst at vove?</l>
+<l><pb type="edition" ed="PS" n="433" />Op Brødre! op af Søvn til Bøn og Kamp</l>
+<l>Mod Sværd <hi rend="spaced">og</hi> Ild og Vand og Støv og Damp;</l>
+<l>Vi kæmpe skal, naar ogsaa hult vi sukke,</l>
+<l>For Aandens Sværd maa alle Fjender bukke,</l>
+<l><rs type="bible" rend="allusion" key="Luk 24,4">Hvi staa, som Kvinder, vi i <seg type="com" n="com61">ledig</seg> Sorg</rs>,</l>
+<l>Og lader Fjen<!-- MWP: ml rum? -->den Herrens <seg type="com" n="com43">Odel</seg> hærge?</l>
+<l>Er længer ei v<!-- MWP: ml rum? -->or Gud saa fast en Borg?</l>
+<l>Er Han ei vo<!-- MWP: ml rum? -->rt, som <persName key="pe42">Luthers</persName>, Skjold og Værge!</l>
+<l><pb type="text" facs="1811_170_fax009.jpg" ed="A"  n="775"/>Kan vi ei gaa en <persName key="pe42">Luthers</persName> <seg type="com" n="com25">Kæmpegang</seg>:</l>
+<l>Og sjunge trøstelig hans <seg type="com" n="com26">Kæmpesang</seg>!</l>
+</lg>
+<lg n="4">
+<l rend="firstIndent">&#x201C;Var Verden end af Djævle fuld</l>
+<l rend="firstIndent">Kun lidt det vilde sige,</l>
+<l rend="firstIndent">Saalænge Gud er tro og huld,</l>
+<l rend="firstIndent">Vi ei et <seg n="com55" type="com">Straabred</seg> vige;</l>
+<l rend="secondIndent">Vi veed det saa godt,</l>
+<l rend="secondIndent">Den Mørkhedens Drot,</l>
+<l rend="secondIndent"><app type="corrNote" select="yes"><lem wit="GV">Hvor</lem><rdg wit="A">Hoor</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> trodsig han staar,</l>
+<l rend="secondIndent">Kun lidt han formaaer,</l>
+<l rend="secondIndent">Et Ord — og han maa falde.</l>
+</lg>
+<lg n="5">
+<l rend="firstIndent">Det Ord de nok skal lade staa,</l>
+<l rend="firstIndent">Og ingen Tak dog have,</l>
+<l rend="firstIndent">Gid altid vi kun sjunge maa</l>
+<l rend="firstIndent">Ved Aandens Naadegave:</l>
+<l rend="secondIndent">Vor Ære og Viv,</l>
+<l rend="secondIndent">Vort Gods og vort Liv,</l>
+<l rend="secondIndent">Lad tage dem frit!</l>
+<l rend="secondIndent">Det nytter <app type="corrNote" select="yes"><lem wit="B">dem</lem><rdg wit="A">den</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> kun lidt,</l>
+<l rend="secondIndent">Og Riget vi beholde.&#x201D;</l>
+</lg>
+<lg n="6">
+<l><pb type="text" facs="1811_170_fax010.jpg" ed="A"  n="776"/>Se, det er <seg type="com" n="com64">Tingen</seg>, Alt i Gud vi <seg type="com" n="com27">mægte</seg>,</l>
+<l>Naar vi os selv kan lære at fornægte,</l>
+<l><pb type="edition" ed="PS" n="434" />Vi veed, at i den <seg type="com" n="com28">gamle Kristenold</seg>,</l>
+<l>Apostler og Martyrerne det kunde,</l>
+<l>De <seg type="com" n="com29">følde</seg> dybt, at <rs type="bible" rend="reference" key="Rom 6,23">Død er Syndens Sold</rs>,</l>
+<l>Og døde kækt, for ei at gaae tilgrunde;</l>
+<l>Men Ørnen faldt fra <placeName key="fak640">Kapitolets</placeName> Top,</l>
+<l>Og Korset fløi med <persName key="pe1550">Konstantin</persName> derop,</l>
+<l>Ja <persName key="pe1549">Julian</persName> i Sandhed det <seg n="com56" type="com">befandt</seg>,</l>
+<l>At <seg type="com" n="com30">Naziræeren</seg> ham overvandt.</l>
+<l>Hvad, er da vel den Konst saa ny og stor,</l>
+<l>At myrde <persName key="pe45">Jesus</persName> med hans egne Ord,</l>
+<l>Har Skolastikerne den samme Konst ei <seg type="com" n="com57">drevet</seg>?</l>
+<l>Lidt finere den sagtens nu er blevet,</l>
+<l>Men <persName key="pe42">Luthers</persName> Sværd kan ogsaa slibes op,</l>
+<l>Da skal vi se en Blegnen og en Blinken,</l>
+<l>En <rs type="bible" key="Sl 2,1-3" rend="allusion1787">lønlig Fnysen</rs> og en <rs key="1 Kong 18,21" type="bible" rend="allusion">synlig <seg type="com" n="com31">Hinken</seg></rs>.</l>
+<l>Af <seg type="com" n="com32">Museslægten</seg> er den hele Trop,</l>
+<l>Som Mus de gnave baade Stort og Smaat,</l>
+<l>Selv Kongesmykket er dem ei for godt,</l>
+<l>Hvor er det Baand og hvor de Buestrænge,</l>
+<l>Som ei maa briste, naar de gnaves længe?</l>
+<l>Mens Katten sover, gaaer det grumme rart,</l>
+<l><pb type="text" facs="1811_170_fax011.jpg" ed="A" n="777"/>Men naar han vaagner — og han vaagner snart,</l>
+<l>Da gælder det om Musene kan spænde</l>
+<l>Den Bue som saa flink de kunde skænde;</l>
+<l>Da gælder det om der er Huller nok</l>
+<l>Og om de rumme kan den hele Flok,</l>
+<l>Mon kækkere den Museflok er vorden,</l>
+<l>Fordi ei længer <seg type="com" n="com33"><placeName key="fak895">Vatikanets</placeName></seg> Torden</l>
+<l>Dem kalder sine elskelige Børn,</l>
+<l>Fordi den gamle barske <seg type="com" n="com34">Romerørn</seg></l>
+<l>Ei længer nu som fordum er tilrede,</l>
+<l>For sine Vinger over dem at brede,</l>
+<l>For skarpe Klo i hver en Kat at slaa?</l>
+</lg>
+<lg n="7">
+<l><pb type="edition" ed="PS" n="435" />Dog, tys, hvo veed hvad der i Tiden gærer,</l>
+<l>Hvad allerede den ved Brystet nærer,</l>
+<l>Maaskee er <rs key="Åb 11,7" rend="reference" type="bible">Dyrets Time kommen nær</rs>,</l>
+<l>Da tier Spot, da stige hule Sukke,</l>
+<l><rs key="Åb 8,7" type="bible" subtype="bibleStart" rend="allusion" n="bible9"/><seg n="com58" type="com">Der</seg> kommer Hede med det <seg type="com" n="com35">Søndevær</seg>,</l>
+<l>Naar Jorden da <seg type="com" n="com59">mon under Foden brænde</seg><rs key="Åb 8,7" type="bible" subtype="bibleEnd" rend="allusion" n="bible9"/>,</l>
+<l>Naar <rs rend="allusion" key="Klages 4,4" type="bible">Tungen klæber sig ved Ganen fast</rs>,</l>
+<l>Da kom o Herre! kom med Kraft og Hast!</l>
+<l>Bevar os tro indtil vor sidste Ende!</l>
+</lg>
+<lg n="8">
+<l><pb type="text" facs="1811_170_fax012.jpg" ed="A"  n="778"/>Her ender sig vor korte <seg type="com" n="com36">Vennetvist</seg>,</l>
+<l>Som sært maa klinge i vanhelligt Øre,</l>
+<l>O <hi rend="spaced"><persName key="pe1540">Bechman</persName>!</hi> Begge vi det tro saa vist,</l>
+<l>At først naar Himlens Kræfter sig <seg type="com" n="com60">mon røre</seg>,</l>
+<l>Frembryde skal den sande Morgenrøde,</l>
+<l>Og <rs key="Matt 28" rend="reference" type="bible"><persName key="pe45">Kristus</persName> <hi rend="spaced">heel</hi> opstander fra de Døde</rs>.</l>
+<l><seg type="com" n="com37">Naar</seg> han indgange vil i <rs key="Matt 25,1-2" rend="allusion" type="bible">Brudesal</rs>,</l>
+<l><rs key="Mark 13,35" rend="reference" type="bible">Ved dybe Midnat eller Hanegal</rs>,</l>
+<l>Det veed vi ei, det bør os ei at vide,</l>
+<l>Men det vi veed, at vi med ham skal lide,</l>
+<l>Om vi med ham vil dele Tronens Glands,</l>
+<l>Om vi af ham vil tage Ærens Krands.</l>
+</lg>
+<p rend="firstIndentRight"><hi rend="size1"><hi rend="spaced">N. F. S. Grundtvig.</hi></hi></p>
+   <fw type="shortLine"/>
+
+    <pb type="periText" facs="1811_170_fax013.jpg" />
+    <pb type="periText" facs="1811_170_fax014.jpg" />
+</div>
+
+
+     
+    </body>    
+   </text>   
+  </TEI>

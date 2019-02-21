@@ -1,0 +1,834 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Danske H&#x00F8;itids-Psalmer til Tusindaars-Festen</title>
+        <title rend="shortForm">Danske H&#x00F8;itids-Psalmer</title>
+        <author>Krista Stinne Greve Rasmussen</author>
+        <author>Else Riisager</author>
+        <editor role="editor1">Niels W. Bruun</editor>
+        <editor role="editor2">Johnny Kondrup</editor>
+        
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>35 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2012-10-31">www.grundtvigsv&#x00E6;rker.dk, version 1.1, 31. oktober 2012</date>
+<!-- <date type="2012-01-31">Version 1.0</date> -->
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1826_433A_txt.xml">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" type="txr" target="1826_433A_txr.xml">Tekstredeg&#x00F8;relse</note>
+        
+      </notesStmt>
+      <!--
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+           
+-->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="KSR" who="KSR" when="2011-02-17">test af skema</change>
+      <change xml:id="KSG" who="KSG" when="2011-02-22">rettelser i litteraturliste</change>
+      <change who="KSG" when="2011-02-23">rettelser i rs nr 33 samt inds&#x00E6;ttelse af rs 189</change>
+      <change who="KSG" when="2011-02-24">placeName fjernet, FAERDIG; lagt i mappen til Kim</change>
+      <change xml:id="ELR" who="ELR" when="2011-06-06">tilretninger efter stylesheet m.m., efterpr&#x00F6;vning af data</change>
+      <change who="ELR" when="2011-06-07">tilretninger efter stylesheet, reviderede retningslinjer m.m.</change>
+      <change who="ELR" when="2011-06-08">tilretning af title</change>
+      <change who="ELR" when="2011-06-28">korrektion af lister,</change>
+      <change who="ELR" when="2011-11-04">rettelser i teiheader</change>
+      <change who="ELR" when="2011-11-25">indsat notestmt og edition</change>
+      <change who="KSR" when="2011-11-28">&#x00E6;ndringer i teiHeader</change>
+      <change who="ELR" when="2011-12-02">tilrettet teiheader</change>
+      <change who="ELR" when="2011-12-05">rettet efter tjekliste, indsat afsnit om emendringer</change>
+      <change who="ELR" when="2011-12-06">gennemset filen; i lister &#x00E6;ndret fra ordered til decimal</change>
+      <change who="ELR" when="2011-12-14">gennemset; kontrolleret punktum i lister, sat manuelt i tabel</change>
+      <change who="ELR" when="2012-01-20">ekstra rettelser ift. stylesheet</change>
+      <change who="ELR" when="2012-01-27">rettelse af dato for version</change>
+      <change who="ELR" when="2012-02-20">rettet version, dummy-v0</change>
+      <change who="ELR" when="2012-02-29">rettet ang. sammensatte &#x00E5;rstal</change>
+      <change who="ELR" when="2012-03-28">fjernet pe4; fjernet title32 (henvisning til egen tekst); &#x00E6;ndret table til list</change>
+      <change who="JMR" when="2012-03-28">&#x00E6;ndret table til list</change>
+      <change who="ELR" when="2012-03-29">rettelse i litteraturliste</change>
+      <change who="ELR" when="2012-04-12">editorialDecl indsat</change>
+      <change who="ELR" when="2012-04-23">fil gennemset</change>
+      <change who="JMR" when="2012-06-13">indsat xml-id i heads</change>
+      <change who="ELR" when="2012-06-25">ref indsat</change>
+      <change who="ELR" when="2012-07-20">rettelse af kortform</change>
+      <change who="ELR" when="2012-07-26">henvisninger til image kontrolleret</change>
+      <change who="ELR" when="2012-07-20">tilpasning i TEIHeader</change>
+      <change who="ELR" when="2012-08-15">fjernet punktummer i list decimal</change>
+      <change who="ELR" when="2012-10-03">fjernet punktummer i list decimal, tekstkritik</change>
+      <change who="ELR" when="2012-10-26">unicodes indsat for x &#x00D7;; tekstkritik &#x00E6;ndret</change>
+      <change who="ELR" when="2012-10-29">publicationStmt &#x00E6;ndret</change>
+      <change who="ELR" when="2012-11-16">unders&#x00F8;gt for overfl&#x00F8;dige personnavne</change>
+      <change who="JMR" when="2012-11-21">fjernet persName i Anvendt litteratur</change>
+      <change who="ELR" when="2013-04-11">&#x00E6;ndret kodning af Anvendt litteratur, placering af Tekstkritik</change>
+      <change who="ELR" when="2013-09-26">valideret</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+       <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+    </revisionDesc> 
+  </teiHeader>
+  <text type="txr">
+    <body>
+    
+
+      <div>
+        <head xml:id="docIn1">Oversigt over tryk og manuskripter</head>
+        
+        <div>
+        <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">Der er bevaret manuskripter til salmerne &#x201C;<rs type="title" key="title30">Tusind Aar stod Christi
+            Kirke</rs>&#x201D; og &#x201C;<rs type="title" key="title31">Klar op, du Sky paa
+            &#x00D8;ien-Bryn</rs>&#x201D;. De befinder sig i fascikel 382(1) i Grundtvig-arkivet
+          p&#x00E5; Det Kongelige Bibliotek.</p>
+      </div>
+
+      <div>
+        <head xml:id="docIn3">Tryk</head>
+        <p rend="noIndent">Nummer i <hi rend="italic">Bibliografien</hi>: 433A (2. udgave (oplag): 433B).</p>
+        <lb></lb>
+        <p rend="noIndent">
+<hi rend="italic">Danske H&#x00F8;itids-Psalmer til
+              Tusindaars-Festen</hi> udkom p&#x00E5; den Wahlske Boghandlings Forlag og blev
+          annonceret i <hi rend="italic">
+<rs type="title" key="title33">Adresseavisen</rs>
+</hi> den 28. april 1826.
+          Anden udgave (p&#x00E5; titelbladet kaldt: &#x201C;Andet oplag&#x201D;), der ogs&#x00E5;
+          havde et nodeblad med musik af <persName key="pe75">C.E.F. Weyse</persName> til
+            &#x201C;<rs type="title" key="title34">Den signede Dag</rs>&#x201D;, udkom ligeledes p&#x00E5; den
+          Wahlske Boghandlings Forlag og blev annonceret i <hi rend="italic">
+<rs type="title" key="title33">Adresseavisen</rs>
+</hi> den 25. maj 1826. Af denne annonce fremgik det yderligere, at
+          &#x201C;De, som have kj&#x00F8;bt Exemplarer af 1ste Oplag, og &#x00F8;nske at eie den af
+          Prof. <persName key="pe75">Weyse</persName> componerede Musik til den 1ste Psalme, kunne
+          afhente denne uden Betaling, naar Exemplarer af Psalmerne forevises.&#x201D;</p>
+        <p rend="firstIndent">
+<hi rend="italic">Danske H&#x00F8;itids-Psalmer til
+              Tusindaars-Festen</hi> indeholder de tre salmer: &#x201C;<rs type="title" key="title34">Den
+            signede Dag med Fryd vi seer</rs>&#x201D;, &#x201C;<rs type="title" key="title30">Tusind Aar stod
+            Christi Kirke</rs>&#x201D; og &#x201C;<rs type="title" key="title31">Klar op, du Sky paa
+            &#x00D8;ien-Bryn</rs>&#x201D;, nummereret 1-3 med romertal. Efter udgivelsen af
+          f&#x00F8;rste og anden udgave (andet oplag) af <hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi> i 1826, blev salmerne aldrig siden genoptrykt som et selvst&#x00E6;ndigt v&#x00E6;rk i Grundtvigs levetid. I den videre udgivelseshistorie lever de alts&#x00E5; deres eget liv, og de behandles derfor
+          selvst&#x00E6;ndigt i f&#x00F8;lgende oversigt i lighed med <persName key="pe76">Steen
+            Johansens</persName> inddeling i <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over
+              N.F.S. Grundtvigs skrifter</rs>,</hi> som fremstillingen bygger p&#x00E5;.</p>
+
+      <div>
+        <head xml:id="docIn4">&#x201C;<rs type="title" key="title34">Den signede Dag med Fryd vi seer</rs>&#x201D;</head>
+        
+        <list type="decimal">
+          <item>
+            (1832) <persName key="pe77">L.C. Hagen</persName>:
+              <hi rend="italic">
+<rs type="title" key="title36">Historiske Psalmer og Riim til
+                B&#x00F8;rne-L&#x00E6;rdom</rs>,</hi> nr. 45</item>
+          
+         <item>
+            (1835 &amp; 1836) <persName key="pe78">[Frederik Barfod]</persName>:
+              <hi rend="italic">
+<rs type="title" key="title37">Poetisk L&#x00E6;sebog for B&#x00F8;rn og Barnlige Sj&#x00E6;le</rs>,</hi> nr. 174</item>
+          
+          <item>
+            (1836-1837) N.F.S. Grundtvig:
+            <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:1 1836</rs>, nr. 16</item>
+          
+         
+         <item> 
+            (1840) <persName key="pe23">Christian Molbech</persName>:
+              <hi rend="italic">
+<rs type="title" key="title39">Dansk poetisk Anthologie</rs>,</hi> 4:1, s. 90-93
+         </item>
+          
+         <item>
+            (1841) <persName key="pe79">L.N. Boisen</persName>:
+              <hi rend="italic">
+<rs type="title" key="title40">Tro, Haab og Kj&#x00E6;rlighed</rs>,</hi> nr. 165
+          </item>
+         
+          <item>
+            [1843] N.F.S. Grundtvig:
+              <hi rend="italic">
+<rs type="title" key="title42">Psalme-Blade til Kirke-Bod</rs>,</hi> nr. 30
+          </item>
+          
+          
+          <item>
+            (1843) <persName key="pe80">Jac. Chr. Lindberg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title41">Rosen-Kj&#x00E6;den</rs>,</hi> nr. 274
+          </item>
+          
+          
+         <item> 
+            [1844] N.F.S. Grundtvig: 
+            &#x201C;<rs type="title" key="title43">Trykte Salmeblade</rs>&#x201D;, nr. 36
+          </item>
+          
+          
+          <item>
+            (1846) <persName key="pe81">J.F.</persName> &amp; <persName key="pe82">R.Th. Fenger</persName>:
+              <hi rend="italic">
+<rs type="title" key="title44">Psalmer til Himmelfartsfesten og Pindsen</rs>,</hi>
+              nr. 31
+          </item>
+          
+         <item> 
+            (1846-1847) <persName key="pe83">Carl J. Brandt</persName> &amp; <persName key="pe84">Ludvig Helweg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title45">Den danske Psalmedigtning</rs>,</hi> bind 2, nr.
+              992
+          </item>
+          
+          <item>
+            (1847) [N.F.S. Grundtvig]:
+              <hi rend="italic">
+<rs type="title" key="title46">Christi Himmelfartsdag. Pindsefesten</rs>
+</hi>
+          </item>
+          
+         <item> 
+            (1848) [N.F.S. Grundtvig]:
+              <hi rend="italic">
+<rs type="title" key="title47">Christi Himmelfartsdag. Pindsefesten</rs>,</hi> nr. 625
+          </item>         
+         
+         <item> 
+            (1849) [N.F.S. Grundtvig]:
+              <hi rend="italic">
+<rs type="title" key="title48">Christi Himmelfartsdag. Pindsefesten</rs>,</hi> nr. 642
+          </item>
+          
+          <item>
+            (1850) [N.F.S. Grundtvig]:
+              <hi rend="italic">
+<rs type="title" key="title49">Fest-Psalmer</rs>,</hi> nr. 646
+          </item>
+                  
+          <item>
+            (1851) <persName key="pe85">[Peter R&#x00F8;rdam]</persName>:
+              <hi rend="italic">
+<rs type="title" key="title50">Festpsalmer</rs>,</hi> nr. 655 
+          </item>
+
+          <item>
+            (1853) <persName key="pe86">P.O. Boisen</persName>:
+              <hi rend="italic">
+<rs type="title" key="title51">Bibelske og Kirkehistoriske Psalmer og Sange for Skolen</rs>,</hi> nr. 106
+          </item>
+          
+          <item>
+            (1854) <persName key="pe87">D.G. Monrad</persName>:
+              <hi rend="italic">
+<rs type="title" key="title52">Evangelisk-christelig Psalmebog. Et Forslag</rs>,</hi> nr. 507
+          </item>
+                  
+           <item>
+             (1856) <hi rend="italic">
+<rs type="title" key="title54">Psalmebog til Kirke- og Huus-Andagt</rs>
+</hi>
+              (Roskilde Konvents salmebog), nr. 74</item>
+          
+         <item> 
+            (1856) <persName key="pe85">[Peter R&#x00F8;rdam]</persName>:
+           <hi rend="italic">
+<rs type="title" key="title509">Psalmer</rs>,</hi> nr. 717
+          </item>
+          
+          <item>
+            (1857) <persName key="pe88">P.A. Fenger</persName>:
+              <hi rend="italic">
+<rs type="title" key="title55">Till&#x00E6;g til evangelisk-christelig Psalmebog</rs>,</hi> nr. 920
+          </item>
+                  
+          <item>
+            (1864) N.F.S. Grundtvig:
+              <hi rend="italic">
+<rs type="title" key="title56">Fest-Psalmer</rs>,</hi> 8. udg., nr. 646
+          </item>
+          
+          <item>
+            (1868) N.F.S. Grundtvig:
+              <rs type="title" key="title57">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1 1868</rs>, nr. 16</item>
+          
+          <item>
+            (1873) N.F.S. Grundtvig:
+              <rs type="title" key="title67">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 3 1873</rs>, nr. 262
+          </item>
+        </list>
+        
+      </div>
+
+      <div>
+        <head xml:id="docIn5">&#x201C;Tusind Aar stod Christi Kirke&#x201D;</head>
+        
+        <list type="decimal">        
+          <item>
+            (1831) <persName key="pe80">Jac. Chr. Lindberg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title58">Zions Harpe</rs>,</hi> nr. 27
+          </item>
+          
+          <item>
+            (1836-1837) N.F.S. Grundtvig:
+              <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:1 1836</rs>, nr. 15
+          </item>
+         
+          <item>
+            (1840) <persName key="pe89">Peder Hjort</persName>:
+              <hi rend="italic">
+<rs type="title" key="title59">Gamle og Nye Psalmer</rs>,</hi> 2. udg., nr. 239
+          </item>
+          
+          <item>
+            (1841) <persName key="pe90">L.D. Hass</persName>:
+              <hi rend="italic">
+<rs type="title" key="title60">Samling af Aandelige Sange til Brug i Opbyggelsestimer</rs>,</hi> nr. 25
+          </item>
+       
+          <item>
+            (1843) <persName key="pe80">Jac. Chr. Lindberg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title41">Rosen-Kj&#x00E6;den</rs>,</hi> nr. 139.
+          </item>
+          
+          <item>
+            (1846-1847) <persName key="pe83">C.J. Brandt</persName> &amp; <persName key="pe84">Ludvig
+                Helweg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title45">Den danske Psalmedigtning</rs>,</hi> bind 2, nr. 999
+          </item>
+          
+          <item>
+            (1848-1849) <persName key="pe83">C.J. Brandt</persName>:
+              <hi rend="italic">
+<rs type="title" key="title61">Rim og Sange til F&#x00E6;drelandets Historie</rs>,</hi> bind 2, s. 142-143
+          </item>
+          
+          <item>
+            (1868) N.F.S. Grundtvig:
+              <rs type="title" key="title57">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1 1868</rs>, nr. 15
+          </item>
+          
+          <item>
+            (1872) Roskilde-Pr&#x00E6;stekonvent: <hi rend="italic">
+<rs type="title" key="title62">Till&#x00E6;g til Psalmebog for Kirke- og Hus-Andagt. Et Forslag</rs>,</hi> nr. 713
+          </item>
+          
+          <item>
+            (1873) <rs type="title" key="title521">
+<hi rend="italic">Till&#x00E6;g til Psalmebog for Kirke- og Huus-Andagt</hi>
+</rs>, nr. 696
+          </item>
+        </list>
+      </div>
+  
+      <div>
+        <head xml:id="docIn6">&#x201C;<rs type="title" key="title31">Klar op, du Sky paa &#x00D8;ien-Bryn</rs>&#x201D;</head>
+        
+        <list type="decimal">
+          <item>
+            (1832) <persName key="pe77">L.C. Hagen</persName>:
+              <hi rend="italic">
+<rs type="title" key="title36">Historiske Psalmer og Riim til B&#x00F8;rne-L&#x00E6;rdom</rs>,</hi> nr. 46
+          </item>
+          
+          <item>
+            (1836-1837) N.F.S. Grundtvig:
+              <rs type="title" key="title38">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:8 1837</rs>, nr. 390
+          </item>
+          
+          <item>
+            (1843) <persName key="pe80">Jac. Chr. Lindberg</persName>:
+              <hi rend="italic">
+<rs type="title" key="title41">Rosen-Kj&#x00E6;den</rs>,</hi> nr. 138
+          </item>
+          
+          <item>
+            (1845) Kj&#x00F8;benhavns geistlige Convents Psalme-Comitee: 
+            <hi rend="italic">
+<rs type="title" key="title64">Kirke-Psalmer udgivne til Pr&#x00F8;ve</rs>,</hi> nr. 106
+          </item>
+          
+          <item>
+            (1846) <persName key="pe81">J.F.</persName> &amp; <persName key="pe82">R.Th. Fenger</persName>:
+              <hi rend="italic">
+<rs type="title" key="title44">Psalmer til Himmelfartsfesten og Pindsen</rs>,</hi> nr. 26
+          </item>
+          
+          <item>
+            (1857) <persName key="pe88">[P.A. Fenger]</persName>:
+              <hi rend="italic">
+<rs type="title" key="title55">Till&#x00E6;g til evangelisk-christelig Psalmebog</rs>,</hi> nr. 916
+          </item>
+         
+         <item> 
+            (1868) N.F.S. Grundtvig:
+              <rs type="title" key="title57">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1 1868</rs>, nr. 390
+          </item>
+        </list>
+      </div>
+</div>
+    </div>
+      
+
+      <div>
+        <head xml:id="docIn7">Manuskriptbeskrivelse</head>
+        
+        <div>
+        <head xml:id="docIn8">&#x201C;<rs type="title" key="title30">Tusind Aar stod Christi Kirke&#x201D;</rs>
+</head>
+          <p rend="noIndent">Manuskript i fasc. 382(1), Grundtvig-arkivet, Det Kongelige Bibliotek,
+            K&#x00F8;benhavn.</p>
+          <p rend="firstIndent">Manuskriptet er en kladde (nedskrift, arbejdsmanuskript) med spor af bearbejdelser i
+            flere lag. Manuskriptet indeholder en del &#x00E6;ndringer, f&#x00E6;rrest p&#x00E5;
+            blad 1 recto.</p>
+          <p rend="firstIndent">I skriveforl&#x00F8;bet er der foretaget &#x00E6;ndringer i form af overskrivning af et
+            bogstav samt overstregninger af dele af ord, hele ord eller grupper af ord og af flere
+            verslinjer ad gangen. Under det overstregede kan der ogs&#x00E5; v&#x00E6;re
+            &#x00E6;ndringer. Derudover er der overstregninger med tilf&#x00F8;jelser uden for
+            linjen f&#x00F8;r eller efter de overstregede ord. Endvidere har den &#x00F8;verste
+            strofe p&#x00E5; blad 1 verso en klamme i venstre margin. Strofen &#x00F8;verst
+            p&#x00E5; blad 2 recto er p&#x00E5; tre sider omgivet af en svagt b&#x00F8;lget ramme,
+            mens papirets &#x00F8;verste kant udg&#x00F8;r rammens fjerde side. Rammen fungerer som
+            en sletning. &#x00C6;ndringerne kan identificeres som straks&#x00E6;ndringer, snarlige
+            &#x00E6;ndringer og et lag af senere &#x00E6;ndringer, bl.a. kan rammen bestemmes som en
+            senere &#x00E6;ndring.</p>
+          <p rend="firstIndent">Desuden indeholder manuskriptet lodrette streger med blyant i venstre margin ud for
+            grupper af verslinjer.</p>
+        
+        <div>
+          <head xml:id="docIn9">Indhold</head>
+          <p rend="noIndent">Manuskriptet har f&#x00F8;rstelinjen &#x201C;Tusind Aar stod Christi Kirke&#x201D; og
+            indeholder Grundtvigs salme med ni strofer. Heraf er en strofe s&#x00E6;rstof for
+            manuskriptet og placeret efter f&#x00F8;rstetrykkets 3. strofe. Derudover har
+            manuskriptets tekst en del indholdsm&#x00E6;ssige forskelle fra
+            f&#x00F8;rstetrykkets.</p>
+          <p rend="noIndent">Manuskriptet er fuldst&#x00E6;ndigt.</p>
+        </div>
+          
+        <div>
+          <head xml:id="docIn10">Datering</head>
+          <p rend="noIndent">1826, f&#x00F8;r den 28. april, hvor salmeh&#x00E6;ftet bliver annonceret udkommet (jf.
+            <rs type="title" key="title198">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:2 1956-1964</rs>, s. 206, nr.
+            95).</p>
+          <p rend="noIndent">Afm&#x00E6;rkning med tre prikker (dvs. &#x201C;I Jesu Navn&#x201D;) i &#x00F8;verste
+            venstre hj&#x00F8;rne med samme bl&#x00E6;ktype som teksten.</p>
+        </div>
+          
+        <div>
+          <head xml:id="docIn11">Omfang og struktur</head>
+          <p rend="noIndent">Et ark foldet til et l&#x00E6;g med to blade. Alle fire
+            sider er beskrevet.</p>
+          <p rend="noIndent">L&#x00E6;gget er nummereret "8" (sandsynligvis med fremmed h&#x00E5;nd).</p>
+          <p rend="noIndent">P&#x00E5; den enkelte side flytter det beskrevne sig for hver linje gradvist fra
+            venstre mod h&#x00F8;jre, s&#x00E5;ledes at venstre margin er v&#x00E6;sentligt smallere
+            foroven end forneden.</p>
+        </div>
+          
+        <div>
+          <head xml:id="docIn12">Tilstand</head>
+          <p rend="noIndent">I fin stand, dog p&#x00E5; blad 1 recto en plet uden for det beskrevne og en smudsig
+            br&#x00E6;mme p&#x00E5; ca. 1 cm langs den &#x00F8;verste kant.</p>
+          <p rend="noIndent">Manuskriptet er komplet.</p>
+        </div>
+          
+        <div>
+          <head xml:id="docIn13">Papir</head>
+          <p rend="noIndent">H&#x00E5;ndgjort papir, ribbet og med k&#x00E6;delinjer og vandm&#x00E6;rke (Klippans
+            bikube 1824).</p>
+          <p rend="noIndent">Farven er beige.</p>
+          <p rend="noIndent">M&#x00E5;lene (h &#x00D7; b) er ca. 210 &#x00D7; 172 mm.</p>
+        </div>
+          
+        <div>
+          <head xml:id="docIn14">Skriveredskab</head>
+          <p rend="noIndent">Ved teksten:</p>
+<p rend="noIndent">Pen og m&#x00F8;rkebrunt til sort bl&#x00E6;k.</p>
+          <p rend="noIndent">Ved senere tilf&#x00F8;jelser:</p>
+          <list type="decimal">
+            <item>blyant, se <ref type="docIn" target="#docIn8">afsnit 2.1</ref> og <ref type="docIn" target="#docIn15">afsnit 2.1.7</ref>
+</item>
+            <item>blyant, se <ref type="docIn" target="#docIn15">afsnit 2.1.7</ref>
+</item>
+            <item>brunt farvekridt, se <ref type="docIn" target="#docIn11">afsnit 2.1.3</ref> og <ref type="docIn" target="#docIn15">afsnit 2.1.7</ref>
+</item>
+          </list>
+        </div>
+          
+        <div>
+          <head xml:id="docIn15">H&#x00E6;nder</head>
+          <p rend="noIndent">Grundtvigs h&#x00E5;nd:</p> <p rend="noIndent">Tekst inkl. alle &#x00E6;ndringer i gotisk
+            h&#x00E5;ndskrift.</p>
+          <p rend="noIndent">Senere tilf&#x00F8;jelser:</p>
+          <list type="decimal">
+            <item>Sandsynligvis Grundtvigs h&#x00E5;nd: Lodrette streger med blyant i venstre margin (se <ref type="docIn" target="#docIn16">afsnit 2.1.8</ref>)</item>
+            <item>Sandsynligvis fremmed h&#x00E5;nd: Tilf&#x00F8;jelse med blyant foroven p&#x00E5; blad
+              1 recto</item>
+<!--samme h&#x00E5;nd som i manuskriptet til III -->
+            <item>Sandsynligvis anden fremmed h&#x00E5;nd: L&#x00E6;gnummerering med brunt
+              farvekridt</item>
+<!--samme farvekridt som i manuskriptet til III -->
+          </list>
+        </div>
+          
+        <div>
+          <head xml:id="docIn16">Brug og behandling</head>
+          
+          <p rend="noIndent">Manuskriptet er set benyttet i f&#x00F8;lgende tilf&#x00E6;lde:</p>
+          <p rend="noIndent">
+            <list type="simple">
+              <item>Grundtvigs udgivelse af salmen i <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:1 1836</rs>,
+                nr. 15. I manuskriptet findes tre steder lodrette blyantsstreger i marginen ud for
+                flere sammenh&#x00E6;ngende verslinjer. Disse steder svarer til de steder i teksten,
+                hvor der er forskelle i flere sammenh&#x00E6;ngende verslinjer mellem manuskriptet
+                og den variant af digtet, der blev trykt i den n&#x00E6;vnte udgave af
+                sangv&#x00E6;rket</item>
+              <item>
+<rs type="title" key="title317">
+<hi rend="italic">Poetiske Skrifter</hi> 5 1883</rs>, s. 455-457</item>
+              <item>
+<rs type="title" key="title198">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:2 1956-1964</rs>, s.
+                206, nr. 95</item>
+              <item>
+<rs type="title" key="title198">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:1 1956-1964</rs>, s. 9,
+                nr. 15</item>
+            </list>
+          </p>
+        </div>
+        </div>
+
+      <div>
+        <head xml:id="docIn17">&#x201C;<rs type="title" key="title31">Klar op, du Sky paa &#x00D8;ien-Bryn</rs>&#x201D;</head>
+        <p rend="noIndent">Manuskript i fasc. 382(1), Grundtvig-arkivet, Det Kongelige Bibliotek,
+          K&#x00F8;benhavn.</p>
+        <p rend="firstIndent">Manuskriptet er en kladde (nedskrift, arbejdsmanuskript) med spor af bearbejdelser i
+          flere lag. Manuskriptet indeholder is&#x00E6;r mange &#x00E6;ndringer p&#x00E5; blad 1 recto,
+          mens der kun er f&#x00E5; p&#x00E5; de f&#x00F8;lgende sider og ingen p&#x00E5; sidste
+          side.</p>
+        <p rend="firstIndent">I skriveforl&#x00F8;bet er der foretaget &#x00E6;ndringer i form af overskrivning af et
+          bogstav samt overstregninger af hele ord eller grupper af ord og af flere verslinjer ad
+          gangen. Under de overstregede verslinjer kan der ogs&#x00E5; v&#x00E6;re &#x00E6;ndringer.
+          Derudover er der overstregninger med tilf&#x00F8;jelser over linjen eller i marginen, dels
+          ud for de overstregede ord, dels ved at to verslinjer er tilf&#x00F8;jet p&#x00E5; langs ud for
+          br&#x00F8;dteksten. Ud over straks&#x00E6;ndringer og snarlige &#x00E6;ndringer kan der
+          identificeres to lag af senere &#x00E6;ndringer.</p>
+        <p rend="firstIndent">Desuden indeholder manuskriptet understregninger og tegn med r&#x00F8;dkridt, bl.a.
+          indvisningstegn ved de to verslinjer i marginen og ved de tilsvarende overstregede
+          verslinjer i br&#x00F8;dteksten.</p>
+      
+          <div>
+            <head xml:id="docIn18">Indhold</head>
+            <p rend="noIndent">Manuskriptet har f&#x00F8;rstelinjen &#x201C;Klar op, du Sky paa
+              &#x00D8;ien-Bryn&#x201D; og indeholder Grundtvigs salme med 14 strofer. Heraf er to
+              strofer s&#x00E6;rstof for manuskriptet og placeret efter f&#x00F8;rstetrykkets 10.
+              strofe. Herudover har manuskriptets tekst en del indholdsm&#x00E6;ssige forskelle fra
+              f&#x00F8;rstetrykkets.</p>
+            <p rend="noIndent"> Manuskriptet er fuldst&#x00E6;ndigt.</p>
+          </div>
+        
+          <div>
+            <head xml:id="docIn19">Datering</head>
+            <p rend="noIndent">1826, f&#x00F8;r den 28. april, hvor salmeh&#x00E6;ftet bliver annonceret udkommet (jf. <rs type="title" key="title114">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:2 1956-1964</rs>, s. 206, nr.
+              96).</p>
+            <p rend="noIndent">Afm&#x00E6;rkning med tre prikker (dvs. &#x201C;I Jesu Navn&#x201D;) i &#x00F8;verste
+              venstre hj&#x00F8;rne med samme bl&#x00E6;ktype som teksten.</p>
+          </div>
+        
+          <div>
+            <head xml:id="docIn20">Omfang og struktur</head>
+            <p rend="noIndent">Et ark foldet til et l&#x00E6;g med to blade. Alle fire
+              sider er beskrevet.</p>
+            <p rend="noIndent">L&#x00E6;gget er nummereret "7" (sandsynligvis med fremmed h&#x00E5;nd).</p>
+            <p rend="noIndent">P&#x00E5; den enkelte side flytter det beskrevne sig for hver linje gradvist fra
+              venstre mod h&#x00F8;jre, s&#x00E5;ledes at venstre margin er v&#x00E6;sentligt
+              smallere foroven end forneden.</p>
+          </div>
+        
+          <div>
+            <head xml:id="docIn21">Tilstand</head>
+            <p rend="noIndent">I fin stand, dog en 15 mm stor rift ca. midt p&#x00E5; bladenes &#x00E5;bne side, der
+              p&#x00E5; blad 1 recto r&#x00E6;kker ind i den skrevne tekst. Desuden gulligt farvede
+              kanter p&#x00E5; blad 2 verso (ca. 10 cm langs folden og ca. 1 cm langs &#x00F8;verste
+              kant).</p>
+            <p rend="noIndent">Manuskriptet er komplet.</p>
+          </div>
+        
+          <div>
+            <head xml:id="docIn22">Papir</head>
+            <p rend="noIndent">H&#x00E5;ndgjort papir, ribbet og med k&#x00E6;delinjer og vandm&#x00E6;rke
+              (KLIPPAN).</p>
+            <p rend="noIndent">Farven er beige.</p>
+            <p rend="noIndent">M&#x00E5;lene (h &#x00D7; b) er ca. 210 &#x00D7; 170 mm.</p>
+          </div>
+        
+          <div>
+            <head xml:id="docIn23">Skriveredskab</head>
+            <p rend="noIndent">Ved teksten:</p>
+<p rend="noIndent">Pen og m&#x00F8;rkebrunt til sort bl&#x00E6;k.</p>
+            <p rend="noIndent">Ved senere tilf&#x00F8;jelser:</p>
+            <list type="decimal">
+              <item>r&#x00F8;dt farvekridt, se <ref type="docIn" target="#docIn17">afsnit 2.2</ref> og
+                <ref type="docIn" target="#docIn24">afsnit 2.2.7</ref>
+</item>
+              <item>blyant, se <ref type="docIn" target="#docIn24">afsnit 2.2.7</ref>
+</item>
+              <item>brunt farvekridt, se <ref type="docIn" target="#docIn20">afsnit 2.2.3</ref> og <ref type="docIn" target="#docIn24">afsnit 2.2.7</ref>
+</item>
+            </list>
+          </div>
+        
+          <div>
+            <head xml:id="docIn24">H&#x00E6;nder</head>
+            <p rend="noIndent">Grundtvigs h&#x00E5;nd:</p> <p rend="noIndent">Tekst inkl. alle &#x00E6;ndringer i gotisk
+              h&#x00E5;ndskrift.</p>
+            <p rend="noIndent">Senere tilf&#x00F8;jelser:</p>
+            <list type="decimal">
+              <item>Grundtvigs h&#x00E5;nd: Understregninger, streg i marginen og tegn med r&#x00F8;dt farvekridt (se <ref type="docIn" target="#docIn25">afsnit 2.2.8</ref>)</item>
+              <item>Sandsynligvis fremmed h&#x00E5;nd: Tilf&#x00F8;jelse med blyant p&#x00E5; blad 1 recto</item>
+              <!--samme h&#x00E5;nd som i manuskriptet til II -->
+              <item>Sandsynligvis anden fremmed h&#x00E5;nd: L&#x00E6;gnummerering med brunt farvekridt</item>
+<!--samme farvekridt som i manuskriptet til II -->
+            </list>
+          </div>
+        
+          <div>
+            <head xml:id="docIn25">Brug og behandling</head>
+            
+            <p rend="noIndent">Manuskriptet er set benyttet i f&#x00F8;lgende tilf&#x00E6;lde:</p>
+            <p rend="noIndent">
+              <list type="simple">
+                <item>Grundtvigs udgivelse af salmen i <rs type="title" key="title38">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:8 1837</rs>,
+                  nr. 390. De understregninger, streger og tegn, der er p&#x00E5;f&#x00F8;rt
+                  manuskriptet med r&#x00F8;dt farvekridt, svarer til de steder i teksten, hvor der
+                  er forskelle mellem manuskriptet og den variant af digtet, der blev trykt i den
+                  n&#x00E6;vnte udgave af sangv&#x00E6;rket</item>
+                <item>
+<rs type="title" key="title317">
+<hi rend="italic">Poetiske Skrifter</hi> 5 1883</rs>, s. 457-460</item>
+                <item>
+<rs type="title" key="title198">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:2 1956-1964</rs>, s.
+                  206-207, nr. 96</item>
+                <item>
+<rs type="title" key="title198">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 6:1 1956-1964</rs>, s.
+                  122, nr. 390</item>
+              </list>
+            </p>
+          </div>
+        
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn26">Bibliografisk beskrivelse</head>
+        <div>
+          <head xml:id="docIn27">Formel</head>
+          <p rend="noIndent">8<hi rend="raised">o</hi>, <hi rend="italic">1</hi>
+<hi rend="raised">8</hi>, 8 blade,
+            pagineret <hi rend="italic">1-3,</hi> 4-15, <hi rend="italic">16</hi> [=16 s.]</p>
+          <lb></lb>
+          <p rend="noIndent">Bogens format er oktav. Den er trykt p&#x00E5; et enkelt ark, der er foldet til 8
+            oktavblade, 16 sider i alt. Der er stum paginering p&#x00E5; de f&#x00F8;rste tre sider,
+            mens side 4-15 er pagineret med arabertal og sidste side er blank. Der er ingen
+            arksignaturer. St&#x00F8;rrelsen p&#x00E5; det besk&#x00E5;rne blad er ca. 113 &#x00D7; 196 mm.
+            Det er ikke lykkedes at f&#x00E5; fat i et ubesk&#x00E5;ret eksemplar.</p>
+        </div>
+        <div>
+          <head xml:id="docIn28">Indholdsoversigt</head>
+          <p rend="noIndent">[1] <hi rend="italic">titelblad.</hi> [2] <hi rend="italic">fortale.</hi> [3]-7: I. 8-11: II. 12-15: III. [16] <hi rend="italic">blank.</hi>
+</p>
+        </div>
+        <div>
+          <head xml:id="docIn29">Typografi og papirkvalitet</head>
+          <div>
+            <head xml:id="docIn30">Kolumnest&#x00F8;rrelse</head>
+            <p rend="noIndent">I <hi rend="italic">Danske H&#x00F8;itids-Psalmer til
+              Tusindaars-Festen</hi> har en normal side en kolumnest&#x00F8;rrelse (h &#x00D7; b) p&#x00E5; ca. 155 mm &#x00D7; 82 mm. </p>
+          </div>
+          <div>
+            <head xml:id="docIn31">Skriftsnit</head>
+            <p rend="noIndent">V&#x00E6;rket er hovedsagelig trykt med det gotiske skriftsnit
+              fraktur. Enkelte steder er der brugt det gotiske skriftsnit tekstur (f&#x00F8;rste gang
+              i titelbladets anden linje) samt det gotiske skriftsnit schwabacher (f&#x00F8;rste
+              gang i &#x201C;Wahlske&#x201D; p&#x00E5; titelbladet). I begyndelsen af nye afsnit er der brugt initialer i afvigende
+              skrifsnit (f&#x00F8;rste gang side [2]). Her indledes med et dekoreret N
+              i antikva, mens initialerne i salmerne er i skriftsnittet tekstur.</p>
+          </div>
+          <div>
+            <head xml:id="docIn32">Skriftgrader</head>
+            <p rend="noIndent">Der er brugt syv forskellige skriftgrader, hvoraf de seks er repr&#x00E6;senteret
+              p&#x00E5; titelbladet, mens br&#x00F8;dteksten er i en syvende st&#x00F8;rrelse.
+              P&#x00E5; titelbladet er &#x201C;Tusindaars-Festen&#x201D; med den st&#x00F8;rste
+              skriftgrad, herefter f&#x00F8;lger i stadig mindre skriftgrad:
+              &#x201C;H&#x00F8;itids-Psalmer&#x201D;, &#x201C;Danske&#x201D;,
+              &#x201C;Ki&#x00F6;benhavn&#x201D;, &#x201C;til&#x201D; og &#x201C;residerende Capellan
+              ved Vor Frelsers Kirke&#x201D;. Br&#x00F8;dteksten er i en mindre skriftgrad end
+              &#x201C;Ki&#x00F6;benhavn&#x201D;, men st&#x00F8;rre end &#x201C;til&#x201D; (se <ref type="image" target="1826_433A_fax003.jpg">faksimile af titelbladet</ref>).</p>
+          </div>
+          <div>
+            <head xml:id="docIn33">Skillestreger og fremh&#x00E6;velser</head>
+            <p rend="noIndent">Der anvendes fire typer af skillestreger, der alle er centrerede:</p>
+            <p rend="noIndent">
+              <list type="simple">
+                <item>En prydstreg, der er tykkere p&#x00E5; midten (f&#x00F8;rste gang anvendt
+                  mellem titel og forfatterangivelse p&#x00E5; titelblad)</item>
+                <item>En dobbeltstreg best&#x00E5;ende af f&#x00F8;rst en tyk og s&#x00E5; en tyndere
+                  streg, der fylder hele klummens bredde (alene brugt p&#x00E5; titelbladet)</item>
+                <item>En almindelig streg (alene brugt p&#x00E5; titelbladet)</item>
+                <item>En b&#x00F8;lgestreg (f&#x00F8;rste gang anvendt efter fortalen side
+                  [2])</item>
+              </list>
+            </p>
+            <p rend="noIndent">Fremh&#x00E6;velser markeres med spatiering (f&#x00F8;rste gang anvendt side
+              [1], linje 1) eller med fed (f&#x00F8;rste gang anvendt side
+              [1], linje 2).</p>
+          </div>
+          <div>
+            <head xml:id="docIn34">Papirkvalitet</head>
+            <p rend="noIndent">Der er set eksempler p&#x00E5; tryk p&#x00E5; to forskellige papirkvaliteter. Den ene er mere
+              tr&#x00E6;holdig og grov. Begge papirtyper er h&#x00E5;ndgjorte med tydelige
+              k&#x00E6;delinjer, men uden vandm&#x00E6;rker. Omslagene er i tyndt glanspapir. De tre
+              eksemplarer, der er brugt til den interne kollation, har omslag i farverne bl&#x00E5;
+              og gr&#x00F8;n (se <ref type="image" target="1826_433A_fax001.jpg">omslagets forside</ref>).</p>
+          </div>
+        </div>
+        <div>
+          <head xml:id="docIn35">Intern varians</head>
+          <p rend="noIndent">Der er ved intern kollation af tre eksemplarer af f&#x00F8;rstetrykket ikke konstateret
+            intern varians. F&#x00F8;lgende tre eksemplarer er blevet kollationeret:</p>
+          <list type="simple">
+            <item>Grundtvigs V&#x00E6;rkers eksemplar (ejersignatur: <persName key="pe91">Otto
+                M&#x00F8;ller</persName>)</item>
+            <item>Grundtvig Bibliotekets eksemplar (ex. 2, ejersignatur: <persName key="pe88">P.A.
+                Fenger</persName>)</item>
+            <item>Det Kongelige Biblioteks eksemplar (stregkode: 130018343240)</item>
+          </list>
+          <p rend="noIndent">Grundtvigs V&#x00E6;rkers eksemplar danner grundlag for faksimileringen.</p>
+        </div>
+        
+      </div>
+
+      
+      <div>
+        <head xml:id="docIn37">Udgivelsesm&#x00E5;de</head>
+        <p rend="noIndent">B&#x00E5;de f&#x00F8;rste og anden udgave (andet oplag) udkom p&#x00E5; Den Wahlske
+          Boghandlings Forlag. I <hi rend="italic">
+<rs type="title" key="title33">Adresseavisen</rs>
+</hi> (hhv. 28.
+          april og 25. maj 1826) annonceres, at h&#x00E6;fterne s&#x00E6;lges fra Den Wahlske
+          Boghandling beliggende Ulfeldtsplads 118, og at de koster 8 skilling.</p>
+      </div>
+
+      <div>
+        <head xml:id="docIn99">Tekstkritik</head>
+        <list type="textualCriticismPluralis"></list>
+        <!--<div>
+          <head xml:id="docIn36">Tekstkritik</head>
+          <p rend="noIndent">I den udgivne l&#x00E6;setekst er der foretaget f&#x00F8;lgende emenderinger:</p>
+          <list type="decimal">
+            <item>&#x201C;<rs type="title" key="title34">Den signede Dag med Fryd vi seer</rs>&#x201D;, strofe 6: &#x201C;nedsuser&#x201D; er rettet til &#x201C;nedfuser&#x201D; efter 2. udgave (<hi rend="italic">B</hi>)</item>
+            <item>&#x201C;<rs type="title" key="title30">Tusind Aar stod Christi Kirke&#x201D;</rs>, melodihenvisning: komma er rettet til punktum ved konjektur (<hi rend="italic">GV</hi>)</item>
+          </list>
+          
+        </div>
+      </div>-->
+        
+      </div>
+      
+      <div type="litList"> 
+        <head xml:id="docIn38">Anvendt litteratur</head>
+        
+          <list type="litList">
+            <item>(1826) <hi rend="italic">
+<rs type="title" key="title33">Kj&#x00F8;benhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</rs>,</hi> &#x00E5;rg. 68 nr. 98, 28. april 1826 (Adresseavisen)</item>
+            <item>(1826) <hi rend="italic">
+<rs type="title" key="title33">Kj&#x00F8;benhavns kongelig alene privilegerede Adressecomptoirs Efterretninger</rs>,</hi> &#x00E5;rg. 68 nr. 120, 25. maj 1826 (Adresseavisen)</item>
+            <item>Grundtvig, N.F.S. (1836) <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk til den Danske Kirke,</hi> bind 1:1</rs>, nr. 15</item>
+            <item>Grundtvig, N.F.S. (1837) <rs type="title" key="title38">
+<hi rend="italic">Sang-V&#x00E6;rk til den Danske Kirke,</hi> bind 1:8</rs>, nr. 390</item>
+            <item>Grundtvig, N.F.S. (1956-1964) <hi rend="italic">
+<rs type="title" key="title198">Sang-V&#x00E6;rk. Varianter, noter og registre</rs>,</hi> udg. af Uffe Hansen, Ejnar Skovrup, Th. Balslev &amp; Ernst J. Borup, bind 6, K&#x00F8;benhavn</item>
+            
+          </list>
+       
+      </div>
+      
+    </body>
+</text>
+</TEI>

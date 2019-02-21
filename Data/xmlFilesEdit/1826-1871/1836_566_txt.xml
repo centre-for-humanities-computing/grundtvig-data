@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">  
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Phønix-Gaarden</title>
+      <title rend="shortForm">Phønix-Gaarden</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Vibeke A. Pedersen</editor>
+      <editor role="student1">Maria Wiggers Pedersen</editor>
+      <editor role="student2">Stine Kylsø Pedersen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.13</idno>
+               <idno type="content">1.13</idno>
+          <idno type="technic">1.13.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>10 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2018-11-01">www.grundtvigsværker.dk, version 1.13, 1. november 2018</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>1836-10-16</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1836_566_txt.xml" type="txt">Læsetekst</note>
+            <note target="1836_566_com.xml" type="com">Punktkommentar</note>
+            <note target="1836_566_intro.xml" type="intro">Indledning</note>
+            <note target="1836_566_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="566">
+        <desc>Førstetrykket</desc>
+        <num>1836</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>6<!-- 152-158 --></num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+       <term>lejlighedsdigte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>jubilæer</term>      
+       <term>mytologi</term>
+         <term>historie</term>
+         <term>kirkehistorie</term>
+         <term>skolen</term>         
+         
+       
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+       <change xml:id="MWP" who="MWP" when="2015-10-19">1. kollation efter Schönbergs eksemplar fra Grundtvig-Biblioteket. L.-248</change>
+        <change xml:id="VAP" who="VAP" when="2018-02-19">fjernelse af mæslinger samt segopmærkning (med smerter!!!)</change>
+      <change who="auto" when="2018-02-19">Autoopmærket af autotag.awk v12 KK 2017-03-09</change>
+            <change who="VAP" when="2018-02-27">oprettet 46-47 og oprettet myteposter, der ikke var kommet automatisk</change>
+       <change who="VAP" when="2018-02-27">basekontrol samt oprettet 46-47</change>
+       <change who="VAP" when="2018-02-28">oprettet 48-51</change>
+       <change who="VAP" when="2018-03-12">oprettet 52-54</change>
+       <change xml:id="SKP" who="SKP" when="2018-04-12">2. kollation af løsbladssamlingen (ST 124)</change>
+       <change who="VAP" when="2018-05-02">oprettet 55-68 og ændret to com til myth 701 samt 3. kollation efter KB-expl.  130010803994</change>
+       <change who="VAP" when="2018-05-04">ændret indhold/lemma af com53</change>
+       <change xml:id="JKK" who="JKK" when="2018-05-07">Faksimileret efter GB's eksemplar, sidetal indført for PS</change>
+       <change  who="VAP" when="2018-05-25">påbegyndt rettelser efter Kirsten. Oprettet 69-70. Slettet 30</change>
+       <change  who="VAP" when="2018-05-28">fortsat rettelser efter Kirsten. Slettet 6</change>
+       <change  who="VAP" when="2018-07-24">påbegyndt rettelser efter Klaus. Oprettet 71-73. Slettet 43</change>
+       <change  who="VAP" when="2018-07-25">fortsatt rettelser efter Klaus.  Slettet 29, 55</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">         
+     
+	 <!-- 	
+				Nordisk Kirke-Tidende
+				Nik. Fred. Sev. Grundtvig				
+					Generated 
+					BookPartnerMedia			
+				1836				
+			[Source decription]
+	-->
+      <body>
+         <div type="Er det sandt, hvad Rygtet siger"> <!-- SKP: Dette må filologen tage stilling til -->
+            <pb type="text" facs="1836_566_fax001.jpg" ed="A" rend="supp" subtype="column" n="657"/>
+              <pb type="edition" n="152" ed="PS"/>
+            <head rend="1"><rs type="myth" key="myth20">Phønix</rs>-Gaarden.</head>
+            <graphic style="shortLine"/>
+            
+            <lg n="1">
+               <l><hi rend="initial">E</hi>r det sandt, hvad Rygtet siger,</l>
+               <l>Hvad i Bog <seg type="com" n="com53">alt</seg> præntet staaer,</l>
+               <l>At af Asken <hi rend="spaced"><rs type="myth" key="myth20">Phønix</rs></hi> stiger</l>
+               <l>Med <seg type="com" n="com1">den <hi rend="spaced">Danske Studi-Gaard</hi></seg><hi rend="spaced">,</hi></l>
+                 <l><pb type="edition" n="153" ed="PS"/>Sjunger, mens sig <rs type="myth" key="myth265">Trolde</rs> græmme,</l>
+               <l><hi rend="spaced"><persName key="pe96">Fredriks</persName></hi> Priis med <hi rend="spaced">Folke-Stemme!</hi></l>
+            </lg>
+
+            <lg n="2">
+               <l>Er det kun en Tale-Maade</l>
+               <l>I den tomme <seg type="com" n="com47">Romer-Stil</seg>,</l>
+               <l>Eller har sig <hi rend="spaced"><placeName key="fak14">Danmarks</placeName></hi> Gaade</l>
+               <l>Nu opløst som Graad i Smil,</l>
+               <l>Saa med Sang i <hi rend="spaced"><seg type="com" n="com2">Nyaars-Skolen</seg></hi></l>
+               <l><hi rend="spaced"><rs type="myth" key="myth20">Phønix</rs></hi> hilser <hi rend="spaced">Morgen-Solen?</hi></l>
+            </lg>
+
+            <lg n="3">
+               <l>Lad i Hast os ihukomme</l>
+               <l>Sagnene fra Heden-Old,</l>
+               <l>Som dem, efter <rs type="myth" key="myth701">Norne-Domme</rs>,</l>
+               <l>Aanden fører i sit Skjold:</l>
+               <l><hi rend="spaced">Mindets</hi> Røst om <hi rend="spaced"><seg type="com" n="com3">Kæmpe-Værker</seg>,</hi></l>
+              <l><hi rend="spaced">Haabets</hi> Vink som <hi rend="spaced"><seg type="com" n="com48">Jule-Mærker</seg>!</hi></l>
+            </lg>
+
+            <lg n="4">
+               <l><hi rend="spaced"><seg type="com" n="com69">Solens Fugl</seg>,</hi> <seg type="com" n="com4">saa</seg> Røsten lyder,</l>
+               <l>Har <seg type="com" n="com5">fuld</seg> mageløse Kaar:</l>
+               <l>Sig ved Morgen-Røden fryder</l>
+               <l>Han i hele tusind Aar,</l>
+               <l>Overgaaer i grønne Sale</l>
+               <l>Vidt al Verdens Natter-Gale!</l>
+            </lg>
+
+            <lg n="5">
+               <l>Men er Tusind-Aaret omme,</l>
+               <l>Taber han sit Tunge-Maal,</l>
+               <l>Efter dunkle <rs type="myth" key="myth701">Norne-Domme</rs></l>
+               <l><pb type="text" facs="1836_566_fax002.jpg" ed="A" rend="supp" subtype="column" n="658"/>Selv bereder han sit Baal,</l>
+               <l>Naar af <seg type="com" n="com50">Kors-Vedd</seg> han sig bygger</l>
+               <l>Rede fiin i Palme-Skygger!</l>
+            </lg>
+
+            <lg n="6">
+               <l><seg type="com" n="com54">Bygt</seg> af Alt hvad yndig dufter</l>
+               <l>Er i Lund den Rede <seg type="com" n="com7">gild</seg>,</l>
+               <l>Tændes an, hvor let det lufter,</l>
+               <l>Brat af Solens rene Ild,</l>
+               <l><pb type="edition" n="154" ed="PS"/>I den store Skiærsilds-Hede</l>
+               <l>Sammensmelter Fugl og Rede!</l>
+            </lg>
+
+            <lg n="7">
+               <l>Under <seg type="com" n="com8">Viraks-Duft</seg> og Hede,</l>
+               <l>Efter <rs type="myth" key="myth112">Nornens</rs> <seg type="com" n="com64">Overlæg</seg>,</l>
+               <l>Asken dog af Fugl og Rede</l>
+               <l><seg type="com" n="com9">Sig afrunder</seg> til et Æg,</l>
+               <l>Avler <seg type="com" n="com52">og</seg>, hvor Straaler spille,</l>
+               <l>Brat i Tidens Løb en Lille!</l>
+            </lg>
+
+            <lg n="8">
+               <l>Sønnen vel kun synes ringe,</l>
+               <l>Heel ulig sin høie Byrd,</l>
+               <l>Uden Neb, som uden Vinge,</l>
+               <l>Ingen Fugl og knap et Dyr,</l>
+               <l>Men, hvad just er <seg type="com" n="com10">Fugle-Skrækken</seg>,</l>
+               <l>Kun et <hi rend="spaced">Kryb i <seg type="com" n="com11">Orme-Rækken</seg>!</hi></l>
+           </lg>
+
+            <lg n="9">
+               <l>Dog der hviskes <seg type="com" n="com51">trindt</seg> i Vangen</l>
+               <l>Om et lønligt Levnets-Løb:</l>
+               <l><hi rend="spaced">Orme-Ham</hi> <seg type="com" n="com56">for</seg> <rs type="myth" key="myth105">Midgaards-Slangen</rs></l>
+               <l>Er den Lilles Skjul og Svøb,</l>
+               <l>Mens af Himmel-Dugg alene</l>
+               <l>Kræfter samles nye og rene!</l>
+            </lg> 
+
+            <lg n="10">
+               <l><pb type="text" facs="1836_566_fax003.jpg" ed="A" subtype="column" n="659"/><hi rend="spaced">Hamm</hi> da skyder brat den Stærke,</l>
+               <l>Ryster sig med Vinge-Slag,</l>
+               <l>Viser frem hvert Kiende-Mærke,</l>
+               <l>Paa sit Bryst og paa sin <seg type="com" n="com12">Bag</seg>,</l>
+               <l>Som, med alle Regnbu-Farver,</l>
+               <l>Efter Fader sin han arver!</l>
+            </lg>
+
+            <lg n="11">
+               <l>Ei saa stor er <hi rend="spaced">Struds</hi> at finde,</l>
+               <l>Og saa pæn er ingen <hi rend="spaced"><seg type="com" n="com13">Paa</seg>,</hi></l>
+               <l>Straale-Krandse <seg type="com" n="com14">trindt</seg> sig vinde</l>
+               <l>Om hans Øine himmelblaa,</l>
+               <l><pb type="edition" n="155" ed="PS"/>Fødder hans som Guld <seg type="com" n="com15">mon</seg> gløde,</l>
+               <l>Kløerne er purpurrøde!</l>
+            </lg>
+
+            <lg n="12">
+               <l>Fugle-Choret brat omringer,</l>
+               <l>Hylder ham med <seg type="com" n="com16">Gammens-Kvad</seg>,</l>
+               <l>Mens han sig til Hjemmet svinger,</l>
+               <l>Over Solens Strøm og Stad,</l>
+               <l>Hilser glad, <seg type="com" n="com57">som</seg> førend Døden,</l>
+               <l>Med sin <seg type="com" n="com65">Høisang</seg> Morgen-Røden!</l>
+            </lg>
+
+            <lg n="13">
+               <l><seg type="com" n="com17">Saa</seg> den store <hi rend="spaced"><rs type="myth" key="myth20">Phønix</rs>-<seg type="com" n="com18">Sage</seg></hi></l>
+               <l>Fødtes som et vinget Ord,</l>
+               <l>Giennemfløi de gamle Dage,</l>
+               <l>Og til Helvede nedfoer,</l>
+               <l>Staaer dog <seg type="com" n="com19">livlig</seg> for de Unge</l>
+               <l>Op igjen paa Skjalde-Tunge!</l>
+            </lg>
+
+            <lg n="14">
+               <l>Nemt er Sagnet at forklare,</l>
+               <l>For hver Fugl i <seg type="com" n="com20">Orme-Svøb</seg>,</l>
+               <l><seg type="com" n="com21">Vist</seg> det vilde aabenbare</l>
+               <l><hi rend="spaced">Aandens</hi> store Levnets-Løb,</l>
+               <l>Som, trods <seg type="com" n="com22">Mellem-Tidens</seg> Flamme,</l>
+               <l>Først og sidst er dog den Samme!</l>
+            </lg>
+
+            <lg n="15">
+               <l><hi rend="spaced"><rs type="myth" key="myth64">Saga</rs></hi> <seg type="com" n="com23">og</seg> det har at melde:</l>
+               <l>Længe Old-Tids <seg type="com" n="com58">Høisang</seg> tav,</l>
+               <l>Og skal løse Rygter giælde,</l>
+               <l>Aanden sank i <seg type="com" n="com71">Støvets Grav</seg>,</l>
+               <l>Klart i <hi rend="spaced"><seg type="com" n="com24">Hjerte-Tidens</seg></hi> Luer</l>
+               <l>Spor af Aand dog Øiet skuer!</l>
+            </lg>
+
+            <lg n="16">
+               <l><pb type="text" facs="1836_566_fax004.jpg" ed="A" subtype="column" n="660"/><seg type="com" n="com25">End</seg> et Ord fra <rs type="myth" key="myth64">Saga</rs> falder,</l>
+               <l>Om en Lille født i Løn,</l>
+               <l>Som i dunkle <hi rend="spaced">Middel-Alder</hi></l>
+               <l>Gjaldt for <hi rend="spaced">Aandens</hi> ægte Søn,</l>
+               <l><pb type="edition" n="156" ed="PS"/>Skiøndt han i <seg type="com" n="com26"><hi rend="spaced">Bogorme</hi>-Hammen</seg></l>
+               <l>Ligned slet kun <hi rend="spaced">Skjalde</hi>-Stammen.</l>
+            </lg>
+
+            <lg n="17">
+               <l>Dog, det Bedste er tilbage,</l>
+               <l>Som vi længe vented paa!</l>
+               <l>Komme nu de klare Dage,</l>
+               <l>Da vor <hi rend="spaced">Sjæl</hi> skal <hi rend="spaced">Aand</hi> forstaae,</l>
+               <l>Da med <seg type="com" n="com27">Vidskab</seg> vi skal fatte</l>
+               <l>Aandens Sprog og Oldtids Skatte?</l>
+            </lg>
+
+            <lg n="18">
+               <l>Ja, de komme, og paa Jorden</l>
+               <l>Findes knap der nogen Plet,</l>
+               <l>Vissere end vores <placeName key="fak24">Norden</placeName></l>
+               <l>Paa den Fugl af <hi rend="spaced"><rs type="myth" key="myth20">Phønix</rs>-Æt,</hi></l>
+               <l>Paa den <hi rend="spaced">Sjæl,</hi> som efterhaanden</l>
+               <l>Fatter og forklarer Aanden!</l>
+            </lg>
+
+            <lg n="19">
+               <l>Han, der sover kun som Fuglen,</l>
+               <l>Han, der vogter <hi rend="spaced"><rs type="myth" key="myth166">Gynge-Bro</rs>,</hi></l>
+               <l>Han, der maaler <seg type="com" n="com66">Verdens-Kuglen</seg>,</l>
+               <l>Han, der hører Græsset groe,</l>
+               <l>Han, der <hi rend="spaced"><rs type="myth" key="myth26">Gjaller-Hornet</rs></hi> <seg type="com" n="com67">raader</seg>,</l>
+               <l>Han <seg type="com" n="com28">og</seg> gjætter alle Gaader!</l>
+            </lg>
+
+            <lg n="20">
+               <l>Det er ham paa <hi rend="spaced"><seg type="com" n="com72">Himmel-Bjerget</seg>,</hi></l>
+               <l>Det er <hi rend="spaced"><rs type="myth" key="myth32">Heimdal</rs> <rs type="myth" key="myth50">Mimer</rs>-Søn,</hi></l>
+               <l>Som med &#x201C;<rs type="myth" key="myth1164">Hoved</rs>&#x201D;, <rs type="myth" key="myth87.b">Gudhjems</rs>-Værget,</l>
+               <l>Voxer til en Helt i Løn,</l>
+               <l>Vækker, under <hi rend="spaced"><rs type="myth" key="myth347">Gladhjems</rs></hi> Fare</l>
+               <l><hi rend="spaced"><rs type="myth" key="myth101">Valhalds</rs></hi> prude <seg type="com" n="com31">Kæmpe-Skare</seg>!</l>
+            </lg>
+
+            <lg n="21">
+               <l>Faderen til <seg type="com" n="com32">Vidskabs-Vætten</seg></l>
+               <l>Kjendtes bedst i <placeName key="poet25">Øster-Leed</placeName>,</l>
+               <l>Men i <hi rend="spaced"><placeName key="fak00">Nord</placeName></hi> om Moder-Ætten</l>
+               <l>Skjalde vidste ret Beskeed;</l>
+               <l><pb type="edition" n="157" ed="PS"/>Thi som <hi rend="spaced">Danske Hjerter</hi> røde</l>
+               <l>Systre ni ham vel maae føde!</l>
+            </lg> 
+
+            <lg n="22">
+               <l><pb type="text" facs="1836_566_fax004.jpg" ed="A" subtype="column" n="661"/>Sikkert spaaer da sandt i Lunden</l>
+               <l><hi rend="spaced"><seg type="com" n="com33">Studi-Gaardens</seg></hi> <seg type="com" n="com34">Saga-Stav</seg>,</l>
+               <l>Paa det <seg type="com" n="com59">Maal</seg>, der <seg type="com" n="com60">end</seg> i Munden</l>
+               <l>Ligner det sortladne Hav,</l>
+               <l>Naar i Bugter snildt og Vige</l>
+               <l>D<!-- MW: D står i schwabacher, SKP: også i løsblad -->et sig snoer om Jorde-Rige!</l>
+            </lg>
+
+            <lg n="23">
+               <l><hi rend="spaced"><seg type="com" n="com35">Studi-Gaarden</seg></hi> nu indviet</l>
+               <l>Paa de <hi rend="spaced">Danskes</hi> Tunge-Maal,</l>
+               <l>Feier ud <hi rend="spaced"><seg type="com" n="com36">Papisteriet</seg>,</hi></l>
+               <l>Giør paa <hi rend="spaced"><seg type="com" n="com37">Romer-Sproget</seg></hi> Kaal,</l>
+               <l>Giør det klart, at <hi rend="spaced">Romer-Retten</hi></l>
+               <l><seg type="com" n="com38">Ulov</seg> er for <hi rend="spaced"><rs type="myth" key="myth59">Odins</rs>-Ætten!</hi></l>
+            </lg>
+
+            <lg n="24">
+               <l>Og er først Bærsærken fældet,</l>
+               <l>Brat <seg type="com" n="com39">sig teer</seg> ved <hi rend="spaced"><placeName key="fak110">Øre-Sund</placeName>:</hi></l>
+               <l><placeName key="fak24">Nordens</placeName> Aand er ei forældet,</l>
+               <l>Men forynget <seg type="com" n="com73">sært</seg> i Lund,</l>
+               <l>Ved den Drik, som Hjertet kvæger:</l>
+               <l><hi rend="spaced">Moders-Maalets <seg type="com" n="com70">Braga-Bæger</seg>!</hi></l>
+            </lg>
+
+            <lg n="25">
+               <l>Ved det Bæger <placeName key="fak24">Nordens</placeName> Helte</l>
+               <l><seg type="com" n="com40">Fæsted</seg> Arv og loved Daad,</l>
+               <l><hi rend="spaced">Aanden</hi> mellem <placeName key="poet964">Sund</placeName> og <seg type="com" n="com49">Belte</seg></l>
+               <l>Lover <seg type="com" n="com61">Bod</seg> for <rs type="myth" key="myth19">Freias</rs> Graad,</l>
+               <l>Kalder Alt hvad <hi rend="spaced">Hjertet</hi> søger</l>
+               <l><seg type="com" n="com41">Odel sin</seg> i Liv og Bøger!</l>
+            </lg>
+
+            <lg n="26">
+               <l>Derfor, trods hver <hi rend="spaced"><persName key="pe740">Maro</persName></hi>-Skygge,</l>
+               <l><hi rend="spaced"><placeName key="fak17">Romas</placeName></hi> Ørn og Natte-Ravn,</l>
+               <l>Trods hver <seg type="com" n="com62">Brand-Piil</seg> og Ulykke,</l>
+               <l>Som har ramt vor Føde-Stavn,</l>
+               <l><pb type="edition" n="158" ed="PS"/>Fuglen, født af Hjerte-Flammen,</l>
+               <l><seg type="com" n="com42">Skyder</seg> her <hi rend="spaced"><seg type="com" n="com43">Bogorme-Hammen</seg>!</hi></l>
+            </lg>
+
+            <lg n="27">
+               <l><seg type="com" n="com68">Spørges</seg> skal det vidt paa Jorden:</l>
+               <l>Under <hi rend="spaced"><persName key="pe96">Fredrik</persName> <seg type="com" n="com63">Eiegod</seg></hi></l>
+               <l><hi rend="spaced"><rs type="myth" key="myth20">Phønix</rs></hi> blev gjenfødt i <hi rend="spaced"><placeName key="fak24">Norden</placeName>,</hi></l>
+               <l>Aand for Bane sin fik Bod,</l>
+               <l>Derfor i den <hi rend="spaced">Danske</hi> <seg type="com" n="com44">Orden</seg></l>
+               <l><hi rend="spaced">Skolen</hi> døbdes <hi rend="spaced">&#x201C;<seg type="comStart" n="com45"/><rs type="myth" key="myth20">Phønix</rs>-Gaarden<seg type="comEnd" n="com45"/>!&#x201D;</hi></l>
+            </lg>
+
+            <p rend="firstIndentRight"><hi rend="schwab">N.F.S. Grundtvig.</hi></p>
+            <graphic style="longLine"/>
+
+         </div>
+      </body>
+   </text>   
+</TEI>

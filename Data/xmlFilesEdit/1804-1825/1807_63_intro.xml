@@ -1,0 +1,1137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet</title>
+        <title rend="shortForm">Om Videnskabelighed og dens Fremme</title>
+        <author>Maria J&#x00F8;rgensen</author>
+        <editor role="editor3">Johnny Kondrup</editor>
+        <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+        <editor role="editor1">Henrik Yde</editor>
+        <editor role="student3">Maria Wiggers Pedersen</editor>
+        <editor role="student1">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+        <editor role="student2">Frederik Drei&#x00F8;e Seidelin</editor>
+        
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>92 KB</extent>      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>        
+        <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+      </publicationStmt>      
+      <notesStmt>
+        <note type="txt" target="1807_63_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" target="1807_63_intro.xml" xml:id="thisFile">Indledning</note>
+      </notesStmt> 
+      <!--  
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>
+      -->
+      <sourceDesc>
+        <p/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <!--  <profileDesc>
+      <creation>
+        <date>2012-07-07</date>
+        <note>Note</note>
+      </creation>
+      </profileDesc> -->
+    <revisionDesc>
+      <change xml:id="MJ" who="MJ" when="2012-07-07">start p&#x00E5; redigering af fil mhp.
+        litteraturliste</change>
+      <change who="MJ" when="2012-07-17">litterturliste p&#x00E5;begyndt</change>
+      <change xml:id="FDS" who="FDS" when="2012-08-01">Opm&#x00E6;rkning med &lt;persName&gt; og &lt;rs
+        key="title"&gt; i litteraturlisten.</change>
+      <change who="MJ" when="2012-09-12">br&#x00F8;dtekst integreret</change>
+      <change xml:id="MWP" who="MWP" when="2012-09-14">Opm&#x00E6;rkning af Pers, Myth, Title, Bible t.o.m.
+        line170</change>
+      <change who="MJ" when="2012-09-14">korrektur</change>
+      <change who="MJ" when="2012-09-15">korrektur af littlist</change>
+      <change who="MWP" when="2012-09-17">Opm&#x00E6;rkning af Pers, Myth, Title, Bible t.o.m. afsnittet
+        "k&#x00E6;rlighed og videnskabelighed</change>
+      <change who="MJ" when="2012-09-27">ff. Indf&#x00F8;relse af Johnnys kommentarer</change>
+      <change who="MJ" when="2013-04-17">littlist uden pers indsat + mindre rettelser</change>
+      <change xml:id="JT" who="JT" when="2013-09-26">fjernet m&#x00E6;sling(er) i forb. med oplast af 1.3</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="KSR" when="2014-01-13">validering teiHeader + diverse</change>
+      <change who="KSR" when="2014-09-26">validering</change>
+    </revisionDesc>
+
+  </teiHeader>
+  <text type="intro">
+    <body>
+      <div>
+        <head xml:id="docIn1">Karakteristik</head>
+
+        <p rend="noIndent">&#x201C;Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa
+          F&#x00E6;drelandet&#x201D; fra 1807 er et essayistisk fors&#x00F8;g p&#x00E5; at beskrive hindringerne for
+          videnskabelighedens udvikling i Danmark og at udpege de rette midler til dens forbedring.
+          Med ordet &#x201C;videnskabelighed&#x201D; betegner Grundtvig en dybf&#x00F8;lt interesse for
+          videnskabelige emner, som r&#x00E6;kker ud over levebr&#x00F8;dsstudiet. Hindringerne for
+          videnskabeligheden unders&#x00F8;ges gennem en digressionsrig argumentation, som tager sit
+          udgangspunkt i Grundtvigs egne erfaringer fra universitetet og fra tiden som husl&#x00E6;rer p&#x00E5;
+          herreg&#x00E5;rden Egel&#x00F8;kke. Skarpe og humoristiske s&#x00E6;deskildringer, ofte med adresse til
+          unavngivne enkeltpersoner, st&#x00E5;r side om side med selvbiografiske betragtninger over
+          k&#x00E6;rligheden som en spore til videnskabelig str&#x00E6;ben. Ideologisk forener afhandlingen et
+          romantisk videnskabsideal med en kristen, asketisk livsindstilling (jf. <rs key="title14" type="title">Lundgreen-Nielsen 1980</rs>, s. 200). Stilen skifter fra det
+          samfundskritisk argumenterende over det satiriske register til et ofte kryptisk
+          billedsprog. Patriotiske opfordringer blander sig med selvudslettende henvisninger til
+          forfatterens egen position. Fremstillingen krydres med fremmedord og litter&#x00E6;re referencer,
+          s&#x00E5;vel til den klassiske litteratur som til tidens aktuelle forfattere (<persName key="pe18">Steffens</persName>, <persName key="pe29">Goethe</persName>, <persName key="pe35">Schiller</persName>, <persName key="pe677">Addison</persName>, <persName key="pe172">Holberg</persName>, <persName key="pe512">Horats</persName>, <persName key="pe264">Ovid</persName>, <persName key="pe675">Lessing</persName>, <persName key="pe500">Fichte</persName> m.fl.), som for at demonstrere den unge skribents
+          dannelse. </p>
+
+        <p rend="firstIndent">Afhandlingen skildrer ikke kun samtidens forhold, men arbejder ogs&#x00E5; p&#x00E5;
+          at forandre dem, hvilket fremg&#x00E5;r af afhandlingens mange henvendelser til modtageren:
+          &#x201C;Kun, hvad jeg veed, vil jeg ligefrem anf&#x00F8;re, kun enkelte Vink vil jeg give til
+          Kyndigeres Omd&#x00F8;mme&#x201D; (s. 281). Gennem offentligg&#x00F8;relsen i tidsskriftet <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> der udgav artikler
+          om litteratur og samfundsforhold samt udenrigspolitisk nyhedsstof, fors&#x00F8;gte Grundtvig at
+          f&#x00E5; indflydelsesrige personer i tale.</p>
+
+        <p rend="firstIndent">Indledningens f&#x00F8;rste del vil behandle de historiske og politiske
+          foruds&#x00E6;tninger for afhandlingen, herunder <rs type="title" key="title276">trykkefrihedsforordningen af 27. september 1799</rs>, hvis konsekvenser Grundtvig
+          oplevede p&#x00E5; n&#x00E6;rt hold. Da afhandlingens forst&#x00E5;else af videnskabelighed adskiller sig
+          st&#x00E6;rkt fra Grundtvigs senere opfattelse, vil indledningens anden del fors&#x00F8;ge at
+          rekonstruere afhandlingens id&#x00E9;historiske foruds&#x00E6;tninger i den tidlige tyske romantik.
+          Tredje del vil behandle den biografiske baggrund for Grundtvigs videnskabsteori.</p>
+      </div>
+
+      <div>
+        <head xml:id="docIn2">V&#x00E6;rkets form&#x00E5;l</head>
+
+        <p rend="noIndent">Sigtet med afhandlingen er, som titlen beskriver, at fremme det,
+          Grundtvig betegner som &#x201C;Videnskabelighed&#x201D; (se <ref type="docIn" target="#docIn8">&#x201C;Den kulturelle baggrund: Romantikkens
+            videnskabsforst&#x00E5;else&#x201D;</ref>). I afhandlingen diskuterer Grundtvig en r&#x00E6;kke
+          forhold, som forhindret videnskabelighedens blomstring p&#x00E5; dansk grund, herunder
+          begr&#x00E6;nsninger i trykkefriheden, foragten for det danske sprog, den manglende interesse for
+          litteratur og videnskab samt rationalistiske og ateistiske tendenser. Alle disse forhold
+          er dog underordnede i forhold til det, som Grundtvig udpeger som den grundl&#x00E6;ggende &#x00E5;rsag
+          til miseren, nemlig: &#x201C;Den voxende Irreligi&#x00F8;sitet og Us&#x00E6;delighed, og Mangel paa
+          videnskabelig Dannelse hos vore unge Studerende&#x201D; (s. 264). I bidske og satiriske
+          vendinger skildrer Grundtvig s&#x00E5;vel de studerende som husl&#x00E6;rernes og pr&#x00E6;stestandens
+          manglende interesse for videnskaben. I sin skildring af disse gruppers levem&#x00E5;de indeholder
+          afhandlingen en asketisk tendens, der i de st&#x00E6;rkeste vendinger ford&#x00F8;mmer vellevned i
+          samtlige inkarnationer fra selskabelighed over madgl&#x00E6;de og luksus til k&#x00F8;nsliv.</p>
+
+        <p rend="firstIndent">Midlerne til at afhj&#x00E6;lpe elendigheden er if&#x00F8;lge Grundtvig en forandret
+          universitetskultur med en bedre kontakt mellem professorerne og de studerende samt en mere
+          retf&#x00E6;rdig fordeling af universitetets legater. Grundtvig beskriver det i vendinger, der
+          stadig kan synes aktuelle: &#x201C;Naar Universitetet har tabt al Liighed med Fabriker, og
+          er blevet en sand Planteskole for Videnskaberne, da vil en dem v&#x00E6;rdig Litteratur, og en
+          videnskabelig Stemning hos Nationen v&#x00E6;re en n&#x00E6;sten uudeblivelig F&#x00F8;lge&#x201D; (s.
+          285).</p>
+
+        <p rend="firstIndent">De studerendes &#x00F8;gede videnskabelighed vil, if&#x00F8;lge Grundtvig, medf&#x00F8;re
+          en &#x00F8;get videnskabelighed i hele samfundet, idet de studerende som kommende undervisere og
+          pr&#x00E6;ster vil pr&#x00E6;ge de n&#x00E6;ste generationer. Samtidig opfordrer Grundtvig til, at
+          pr&#x00E6;stestandens materielle forhold forbedredes, s&#x00E5; de ogs&#x00E5; kan hengive sig til
+          videnskabelige sysler. Hvis interessen for videnskab &#x00F8;ges, vil den svigtende interesse for
+          dansk litteratur if&#x00F8;lge Grundtvig blive afhjulpet.</p>
+
+        <p rend="firstIndent">Hvis disse betingelser kommer til stede, indvarsles en ny guldalder
+          for videnskaben, som beskrives i poetiske vendinger. Her forestiller Grundtvig sig,
+          hvordan en ny respekt for videnskaben vil gennemstr&#x00F8;mme hele samfundet fra bondestanden
+          til adelen og &#x201C;adsprede det natlige M&#x00F8;rke som endnu h&#x00E6;nger over den talrigeste Del
+          af Nationen&#x201D; (s. 284).</p>
+      </div>
+
+      <div>
+
+        <head xml:id="docIn3">V&#x00E6;rkets tilblivelse</head>
+
+        <p rend="noIndent">I et notat i sine dag- og udtogsb&#x00F8;ger af 24. juni 1807 s&#x00E5; Grundtvig
+          tilbage p&#x00E5; den f&#x00F8;rste del af &#x00E5;ret 1807: &#x201C;Jeg skrev om Videnskabelighed, jeg
+          oversatte <persName key="pe29">Goethes</persName> Skildring af <persName key="pe55">Vinkelmann</persName>, og sk&#x00F8;nt jeg
+          aldrig glemte gamle Nord turde jeg dog ej vove mig til den &#x2013;&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, 405). Antagelig m&#x00E5;
+          afhandlingen v&#x00E6;re blevet skrevet f&#x00E6;rdig i de f&#x00F8;rste m&#x00E5;neder af 1807, da indledningen
+          indeholder en reference til <persName key="pe3">Oehlenschl&#x00E4;gers</persName> pamflet <hi rend="italic">
+<rs key="title957" type="title">Svar til Baggesen paa hans Brev Noureddin
+              til Aladdin</rs>,</hi> som blev trykt i januar 1807. Martsnummeret af <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> hvor Grundtvigs
+          afhandling blev trykt, udkom dog f&#x00F8;rst efter den 30. april, og derfor kan det ikke
+          udelukkes, at afhandlingen f&#x00F8;rst blev afleveret til redaktionen t&#x00E6;ttere p&#x00E5; udgivelsen.
+          Afhandlingen indeholder dog en r&#x00E6;kke referencer til v&#x00E6;rker, som optog Grundtvig i
+          Langelandstiden, herunder <persName key="pe35">Schillers</persName>
+          <hi rend="italic">
+<rs key="title951" type="title">Kleinere prosaische Schriften</rs>
+</hi>
+          (Mindre prosaskrifter), som han l&#x00E6;ste i februar 1806 (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 275).</p>
+      </div>
+
+      <div>
+
+        <head xml:id="docIn4">Den politiske baggrund</head>
+
+        <p rend="noIndent">Datidens storpolitiske begivenheder satte deres spor i Grundtvigs
+          afhandling, om end de kun behandles indirekte eller i forsigtige formuleringer.
+          Afhandlingens kunstf&#x00E6;rdige stil er ikke kun et udslag af forfatterens formm&#x00E6;ssige
+          eksperimenterelyst, men er ogs&#x00E5; betinget af de politiske forhold. De politiske tematikker
+          gemmer sig i afhandlingens afkroge, i metaforer, fodnoter, appeller til l&#x00E6;seren og i
+          citater.</p>
+
+        <div>
+          <head xml:id="docIn5"> Trykkefrihedsforordningen af 27. september 1799</head>
+
+          <p rend="noIndent">Grundtvig diskuterer <rs type="title" key="title276">trykkefrihedsforordningen af 27. september 1799</rs> i forbindelse med
+            videnskabelighedens v&#x00E6;kstbetingelser, men tilskriver den kun en mindre betydning for
+            litteraturens og videnskabens tilstand. Kritikkens forsigtighed b&#x00F8;r dog ses i lyset af,
+            at den blev fremsat i en periode, hvor trykkefriheden i stigende grad indskr&#x00E6;nkedes med
+            drastiske konsekvenser for dem, der kom i konflikt med lovgivningen, hvilket Grundtvig
+            havde oplevet gennem sin ven <persName key="pe398">P.N. Skougaards</persName>
+            sk&#x00E6;bne.</p>
+
+          <p rend="firstIndent">
+<rs key="title276" type="title">Trykkefrihedsforordningen af 27.
+              september 1799</rs> skal forst&#x00E5;s p&#x00E5; baggrund af, at Danmark i 1770, som det f&#x00F8;rste
+            land i Europa, havde oph&#x00E6;vet enhver form for begr&#x00E6;nsning af trykkefriheden. Den
+            ubegr&#x00E6;nsede trykkefrihed blev indf&#x00F8;rt p&#x00E5; <persName key="pe560">J.F.
+              Struensees</persName> foranledning blandt andet for at skabe rum for en oplyst debat
+            om statsanliggender. Efter <persName key="pe560">Struensees</persName> fald i januar
+            1772 blev regeringens holdning til trykkefriheden tiltagende restriktiv, og der blev
+            sl&#x00E5;et h&#x00E5;rdt ned p&#x00E5; dens fortalere. Den 20. oktober 1773 blev det forbudt aviser og
+            ugeblade at offentligg&#x00F8;re historier &#x201C;som enten angaar Staten og Regeringen og
+            almindelige Foranstaltninger, eller andre Stridsskrifter, is&#x00E6;r hvor Personer derved
+            angrebes, ej heller Byrygter eller andre opdigtede Fort&#x00E6;llinger, som indeholder noget
+            forn&#x00E6;rmeligt eller uanst&#x00E6;ndigt&#x201D; (citeret efter <rs key="title1221" type="title">Holm 1975</rs>, s. 8). Bl.a. under indtryk af den franske revolution, der kulminerede
+            i <persName key="pe147">Ludvig 16.s</persName> henrettelse i januar 1793, intensiveredes
+            regeringens &#x00F8;nske om at bringe kritiske og liberale r&#x00F8;ster som <persName key="pe97">P.A.
+              Heiberg</persName> og <persName key="pe417">Malthe Conrad Bruun</persName> til
+            tavshed. En anden medvirkende &#x00E5;rsag til sk&#x00E6;rpelsen af trykkelovgivningen var det
+            diplomatiske pres, som den russiske zar <persName key="pe910">Paul 1.</persName> lagde
+            p&#x00E5; den danske stat, fordi han frygtede, at de revolution&#x00E6;re tanker skulle v&#x00E6;re st&#x00E6;rkt
+            udbredte i Danmark.</p>
+
+          <p rend="firstIndent">
+<rs type="title" key="title276">Trykkefrihedsforordningen af 27.
+              september 1799</rs> bet&#x00F8;d en genindf&#x00F8;relse af forh&#x00E5;ndscensuren for skrifter under 24
+            ark, dvs. 384 sider. Skrifter p&#x00E5; mere end 384 sider var undtaget forh&#x00E5;ndscensuren, da
+            man sk&#x00F8;nnede, at lange b&#x00F8;ger havde mindre mulighed for at p&#x00E5;virke den offentlige mening
+            end fx pjecer og flyveblade. Trykkefrihedsforordningen kan karakteriseres som en
+            &#x201C;Straffelov i Trykkefrihedssager&#x201D; (<rs key="title899" type="title">J&#x00F8;rgensen 1944</rs>, s. 31), hvis strengeste repressalie var d&#x00F8;dsstraf for
+            opfordringer til opstand mod regeringen, mens straffen for at udbrede &#x201C;Had og
+            Misn&#x00F8;ie&#x201D; (<rs type="title" key="title899">J&#x00F8;rgensen 1944</rs>, s. 31) mod samme
+            var landsforvisning. Samtidig forb&#x00F8;d forordningen enhver form for anonyme skrifter. I
+            &#x00E5;rene efter blev der udstedt en r&#x00E6;kke reskripter, som indsk&#x00E6;rpede
+            Trykkefrihedsforordningens bestemmelser: I 1805 et forbud mod at viderebringe rygter i
+            pressen og mod at falbyde flyveblade, i 1806 og 1807 en r&#x00E6;kke forbud mod at frems&#x00E6;tte
+            udsagn, som ikke var absolut neutrale, om andre nationer.</p>
+
+          <p rend="firstIndent">Grundtvigs forslag om at oph&#x00E6;ve forbuddet mod anonymitet i
+            forbindelse med litter&#x00E6;re anmeldelser synes at v&#x00E6;re en stilf&#x00E6;rdig protest mod disse
+            alvorlige indskr&#x00E6;nkninger af trykkefriheden. Ideen synes heller ikke at v&#x00E6;re
+            kontroversiel: Udgiverne af <hi rend="italic">
+<rs key="title646" type="title">K&#x00F8;benhavns
+                L&#x00E6;rde Efterretninger</rs>,</hi> f&#x00F8;rst <persName key="pe2">Rasmus Nyerup</persName> i
+            1801 og derefter <persName key="pe117">P.E. M&#x00FC;ller</persName> i 1806, havde bedt om at
+            f&#x00E5; dispensation fra anonymitetsforbuddet, men havde f&#x00E5;et afslag (<rs key="title899" type="title">J&#x00F8;rgensen 1944</rs>, s. 58-59). Ligesom Grundtvig &#x00F8;nskede de at h&#x00F8;jne
+            anmeldelsernes kvalitet, idet anonymiseringen skulle give skribenten mere frirum til at
+            frems&#x00E6;tte kritik. Trykkefrihedsforordningen satte ogs&#x00E5; sit pr&#x00E6;g p&#x00E5; afhandlingen p&#x00E5; anden
+            vis, dels p&#x00E5; dens anvendelse af billedsprog (se <ref type="docIn" target="#docIn6">&#x201C;I skyggen af <persName key="pe104">Napoleon</persName>&#x201D;</ref>), dels
+            p&#x00E5; en fodnote, der rummer et eksempel p&#x00E5; censurens potentielt drastiske konsekvenser for
+            forfatterne.</p>
+
+          <p rend="firstIndent">I fodnoten retter Grundtvig et sp&#x00F8;rgsm&#x00E5;l til &#x201C;Danmarks
+            Lovkyndige&#x201D; om, hvorvidt det er strafbart at &#x201C;dadle en afd&#x00F8;d dansk
+            Konge&#x201D;, hvilket i s&#x00E5; fald vil udg&#x00F8;re en hindring for historieskrivningens
+            videnskabelighed (s. 258). Grundtvig hentyder her til den aktuelle sag fra 1804 mod den
+            oldtidskyndige matematiker <persName key="pe398">P.N. Skougaard</persName>, som
+            Grundtvig i <hi rend="italic">
+<rs key="title76" type="title">Nordens Mytologi</rs>
+</hi>
+            fra 1808 skulle betegne som: &#x201C;Dig, min tidligere Ungdoms eneste Ven&#x201D; (<rs type="title" key="title76">Grundtvig 1808</rs>, s. XVII). <persName key="pe398">P.N.
+              Skougaard</persName> blev et offer for den indskr&#x00E6;nkede ytringsfrihed, idet han blev
+            anklaget for i sin afhandling <hi rend="italic">
+<rs key="title958" type="title">Beskrivelse over Bornholm</rs>
+</hi> fra 1804 at have kritiseret &#x00F8;ens milit&#x00E6;r og
+            skattev&#x00E6;sen, enev&#x00E6;lden, den nuv&#x00E6;rende regering, og, i s&#x00E6;rlig grad, <persName key="pe496">Frederik 3.s</persName> behandling af <persName key="pe581">Corfitz
+              Ulfeldt</persName>. Havde anklageren f&#x00E5;et medhold i alle synspunkter, havde straffen
+            v&#x00E6;ret landsforvisning. <persName key="pe398">Skougaard</persName> blev frifundet i en
+            r&#x00E6;kke af anklagerne, men straffen var alligevel h&#x00E5;rd: Bogen blev konfiskeret og
+            forfatteren id&#x00F8;mt 14 dages f&#x00E6;ngsel p&#x00E5; vand og br&#x00F8;d samt en mulkt p&#x00E5; 50 rigsdaler oven i
+            betalingen af sagsomkostningerne. Desuden kom han under livsvarig censur.</p>
+
+          <p rend="firstIndent">I sine egne optegnelser om sagen fra 1804 udtalte Grundtvig sig mere
+            uforblommet og kaldte trykkeloven &#x201C;barbarisk&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 178). Senere i
+            skriftet <rs type="title" key="title1196">&#x201C;Om Religionsfrihed&#x201D;</rs> fra
+            1827, hvis sidste del blev undertrykt af censuren, betegnede han den som &#x201C;den
+            ubegribelige Trykke-Lov af 1799&#x201D; (<rs key="title1196" type="title">Grundtvig
+              1827</rs>, s. 163). <rs type="title" key="title1196">&#x201C;Om
+              Religionsfrihed&#x201D;</rs> kan ydermere kaste lys over Grundtvigs kritik af sagen
+            mod <persName key="pe398">Skougaard</persName>. Grundtvigs anke var allerede i
+            &#x201C;Om Videnskabelighed&#x201D;, at dommerne ikke holdt sig strengt til
+            trykkefrihedsforordningen alene, men ogs&#x00E5; anvendte &#x201C;&#x00E6;ldre Love&#x201D;. Hvilke
+            love der er tale om, ekspliciteres i <rs key="title819" type="title">&#x201C;Om
+              Religionsfrihed&#x201D;</rs>, hvor Grundtvig skrev, at &#x201C;man kaldte Ritualet til
+            Hjelp, som forbyder at tale ilde om de D&#x00F8;de i deres Liig-Pr&#x00E6;diken&#x201D; (<rs type="title" key="title819">Grundtvig 1866</rs>, s. 257). Ritualet, som Grundtvig
+            kaldte det, er <hi rend="italic">
+<rs type="title" key="title1185">Kirkeritualet af
+                1685</rs>,</hi> hvis kapitel 9 indeholder en bestemmelse om, at pr&#x00E6;sten ikke m&#x00E5; sige
+            noget &#x201C;us&#x00F8;mmeligt&#x201D; om afd&#x00F8;de &#x201C;andre til Forargelse og de Paar&#x00F8;rende
+            til Besk&#x00E6;mmelse&#x201D; (<hi rend="italic">
+<rs key="title1185" type="title">Danmarks og
+                Norgis Kirke-ritual 1685-1985</rs>,</hi> 1985, s. 113). Af et resum&#x00E9; af sagsakterne
+            fremg&#x00E5;r det, at netop denne paragraf blev taget i brug i forbindelse med dommen over
+              <persName key="pe398">Skougaard</persName>, om end <persName key="pe241">A.S.
+              &#x00D8;rsted</persName> gav dissens i afg&#x00F8;relsen med det, i moderne &#x00F8;jne, rimelige argument,
+            at Kirkeritualet kun gjaldt pr&#x00E6;ster (<rs key="title1008" type="title">Svendsen
+            1955</rs>, s. 135).</p>
+        </div>
+
+        <div>
+          <head xml:id="docIn6">I skyggen af Napoleon</head>
+
+          <p rend="noIndent">Vinteren 1806-1807 var pr&#x00E6;get af Napoleonskrigene. Danmark forholdt sig
+            p&#x00E5; dav&#x00E6;rende tidspunkt neutralt, men man var forberedt p&#x00E5;, at krigen kunne komme: Den
+            danske h&#x00E6;r havde siden september 1805 v&#x00E6;ret opstillet i Holsten. <persName key="pe104">Napoleon</persName> var endnu ubesejret, og i k&#x00F8;lvandet p&#x00E5; det Tysk-romerske Riges
+            opl&#x00F8;sning i 1806 frygtede man, at f&#x00F8;rst Holsten og m&#x00E5;ske siden Danmark skulle blive
+            inddraget i et nordtysk forbund under den preussiske konge <persName key="pe911">Friedrich Wilhelm 3.</persName> Som en reaktion herp&#x00E5; blev hertugd&#x00F8;mmet Holsten
+            indlemmet i monarkiet i september 1806. Preussen blev dog kort tid herefter besejret, og
+            fra Berlin kunne <persName key="pe104">Napoleon</persName> den 21. oktober 1806
+            dekretere Fastlandssp&#x00E6;rringen, der lukkede kontinentet af for enhver form for handel med
+            briterne. Den 7. januar 1807 svarede briterne igen med en <hi rend="italic">Order in Council,</hi> der forb&#x00F8;d neutral
+            skibsfart til Frankrig og franske allierede.</p>
+
+          <p rend="firstIndent">Den udenrigspolitiske situation var derfor sp&#x00E6;ndt, mens Grundtvig
+            skrev sin afhandling i de f&#x00F8;rste m&#x00E5;neder af 1807, og frygten for truslen fra syd er et
+            tilbagevendende tema i afhandlingen, om end kun udtrykt i metaforisk form. I forbindelse
+            med sine excerpter af <persName key="pe35">Friedrich Schillers</persName> forel&#x00E6;sning
+              <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert man
+              Universalgeschichte?&#x201D;</rs> fra 1789 (Hvad er og med hvilket form&#x00E5;l studerer man
+            universalhistorie?), som i mange henseender ligger til grund for afhandlingen (se <ref type="docIn" target="#docIn11">&#x201C;Friedrich Schiller&#x201D;</ref>), afbr&#x00F8;d
+            Grundtvig sine noter og nedskrev i stedet en ganske uforblommet kritik af <persName key="pe104">Napoleon</persName>:</p>
+
+          <p rend="firstIndent">&#x201C;Paa Udsigterne 1792 og 1806 er en temmelig Forskel. &#x2013; Da
+            syntes det som Nordamerikas hellige Aand havde taget sin Bolig i Galliens Legeme og
+            vilde l&#x00E6;re Folkene hvad de vare, og hvad de burde vorde; men det var kun et skuffende
+            Genf&#x00E6;rd, som veg, da Massens S&#x00F8;n [<persName key="pe104">Napoleon</persName>], udvortes ordnende, indvortes forstyrrende, traadte frem
+            med sin Moders henrivende Styrke. &#x2013; Der sidder han den h&#x00F8;jeste tilbedende Iordgud,
+            underdanig spiller Rhinen ved hans Fod, og Nordhavets B&#x00F8;lger tone hans Lov. Med sine
+            K&#x00E6;mpearme omfatter Han Alper og Pyren&#x00E6;er, og Ieg gyser: thi det synes Mig, som Han vil
+            udrive deres R&#x00F8;dder af Iordens Indre, styrte dem over deres Flade, og i Afgrunden
+            begrave det Helligste&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 279-280, intern varians udeladt).</p>
+
+          <p rend="firstIndent">I afhandlingen n&#x00E6;vnes <persName key="pe104">Napoleon</persName> aldrig ved navn, men et centralt afsnit p&#x00E5; de f&#x00F8;rste sider
+            indeholder en r&#x00E6;kke hentydninger til <persName key="pe104">Napoleons</persName>
+            sejrsgang gennem Europa, udtrykt ved historiske og mytologiske paralleller. Den
+            fort&#x00E6;ttede metaforiske fremstillingsm&#x00E5;de var antagelig politisk betinget: I januar 1807
+            var der kommet et reskript med sk&#x00E6;rpede bestemmelser til <rs key="title276" type="title">trykkefrihedsforordningen af 27. september 1799</rs>. Reskriptet forb&#x00F8;d udtalelser i
+            pressen, der ikke stemte overens med Danmarks neutralitetspolitik. Det var, med
+            reskriptets ord, forbudt den danske presse at &#x201C;bidrage til ved Trykken at
+            udbrede, hvad krigsf&#x00F8;rende Magters Undersaattere alene kunne have Frihed til giensidigen
+            at offentliggi&#x00F8;re&#x201D; (<rs type="title" key="title899">J&#x00F8;rgensen 1944</rs>, s. 56).
+            Grundtvig anvendte antagelig en metaforisk form for at kunne ytre sig kritisk om
+            storpolitiske forhold. Graden af fort&#x00E6;ttethed kan ydermere v&#x00E6;re historisk motiveret,
+            idet forfatteren if&#x00F8;lge <rs key="title276" type="title">trykkefrihedsforordningen af 27.
+              september 1799</rs> kunne id&#x00F8;mmes den fulde straf, hvis &#x201C;den sande Mening
+            [&#x2026;] med Skriftet var umiskendelig&#x201D; (<rs type="title" key="title899">J&#x00F8;rgensen 1944</rs>, s. 33). Grundtvig kan s&#x00E5;ledes have haft en interesse i at
+            udtrykke sig i dunkle billeder, som det fremg&#x00E5;r af nedenst&#x00E5;ende gennemgang:</p>
+
+          <p rend="firstIndent">Afsnittet (s. 251) begynder med en t&#x00E6;nkt dialog mellem
+            &#x201C;Tvivlerne&#x201D;, der h&#x00E6;vder, at storhed kun kan opn&#x00E5;s gennem milit&#x00E6;r
+            magtanvendelse, og &#x201C;det t&#x00E6;nkende Menneske&#x201D;, der i stedet ser
+            &#x201C;Videnskabeligheden&#x201D; som nationernes sande ideal. Beskrivelsen af denne
+            mods&#x00E6;tning er i sig selv interessant, idet den er kalkeret over <persName key="pe18">Henrich Steffens'</persName> kritik af de materialistiske nationer i den anden
+            forel&#x00E6;sning af <rs key="title117" type="title">
+<hi rend="italic">Indledning til Philosophiske
+              Forel&#x00E6;sninger</hi>
+</rs> (se &#x201C;Henrich Steffens&#x201D;), men hos Grundtvig er
+            materialismen skiftet ud med en sejrrig militarisme. Videnskabelighedens mods&#x00E6;tning er i
+            stedet krigerfolk som &#x201C;Perser og Hunner&#x201D; og den galliske h&#x00F8;vding <persName key="pe808">Brennus</persName>, der blev besejret ved Delfi, if&#x00F8;lge myten med hj&#x00E6;lp
+            fra <rs key="myth426" type="myth">Apollon</rs>. B&#x00E5;de persere, hunnere og gallere kan
+            l&#x00E6;ses som historiske pr&#x00E6;figurationer af <persName key="pe104">Napoleons</persName>
+            krigstogter. &#x201C;Det t&#x00E6;nkende Menneske&#x201D; ser den milit&#x00E6;re sejrsgang som noget,
+            der b&#x00F8;r v&#x00E6;kke den samme r&#x00E6;dsel som en lavastr&#x00F8;m, &#x201C;som vi forgi&#x00E6;ves vilde str&#x00E6;be
+            at standse, hvis den naaede os&#x201D;. En sammenligning, der kunne l&#x00E6;ses som et billede
+            p&#x00E5; den hast, hvormed <persName key="pe104">Napoleon</persName> underlagde sig de
+            europ&#x00E6;iske lande.</p>
+
+          <note type="readMore">
+<p rend="noIndent">Billedet af lavastr&#x00F8;mmen er i sig selv sammensat
+              af en r&#x00E6;kke litter&#x00E6;re og historiske referencer, idet Grundtvig b&#x00E5;de alluderer til
+                <persName key="pe806">Plinius den Yngres</persName> ber&#x00F8;mte skildring af Vesuvs
+              udbrud i 79 e.Kr. og citerer en lang beskrivelse af et skybrud fra <persName key="pe35">Schillers</persName>
+              <hi rend="italic">
+<rs key="title340" type="title">Die Braut von Messina</rs>
+</hi>
+            (1803, da. <hi rend="italic">
+<rs key="title2250" type="title">Bruden fra Messina</rs>,</hi> 1896) for at illustrere lavastr&#x00F8;mmens grufulde fremf&#x00E6;rd.
+              Skybruddet bliver i <persName key="pe35">Schillers</persName> drama brugt som en
+              parabel p&#x00E5; herskernes overmagt og mulige undergang.</p>
+</note>
+
+          <p rend="firstIndent">Videnskabeligheden derimod ville afholde nationerne fra denne form
+            for erobringstogter: &#x201C;som Masser, kunne Nationerne, uden sand Agtelse for
+            Videnskab i h&#x00F8;iere Betydning, uden fortrolig Kundskab til den, velte sig knusende hen
+            over Kloden&#x201D; (s. 251). Interessant er brugen af ordet &#x201C;Masser&#x201D;, der
+            p&#x00E5; den ene side peger frem mod billedet af vulkanudbruddet, p&#x00E5; den anden side knytter de
+            historiske eksempler p&#x00E5; milit&#x00E6;r overmagt sammen med tidens borgerlige revolutioner. Det
+            er if&#x00F8;lge Grundtvig de revolution&#x00E6;re opstande, der st&#x00E5;r i mods&#x00E6;tning til
+            videnskabeligheden, og han stiller det retoriske sp&#x00F8;rgsm&#x00E5;l: &#x201C;t&#x00F8;r man vel n&#x00E6;gte,
+            at det var Frankerigs Revolution, der standsede Videnskabelighed&#x201D; (s. 253).</p>
+        </div>
+
+
+        <div>
+          <head xml:id="docIn7">Politisk patriotisme</head>
+
+          <p rend="noIndent">Krigsstemningen kan ogs&#x00E5; spores andre steder i teksten, idet kampen mod
+            den manglende videnskabelighed bliver fremstillet som en patriotisk gestus, n&#x00E5;r
+            Grundtvig pr&#x00E6;senterer afhandlingens opgave med ordene: &#x201C;Ogsaa jeg vil her
+            nedl&#x00E6;gge mit Offer paa F&#x00E6;drelandets Alter&#x201D; (s. 257, se endvidere indledningen til
+              <ref type="docOut" target="1808_76_intro.xml#docIn15">&#x201C;Maskeradeballet i
+              Danmark&#x201D;</ref>). Efter slaget p&#x00E5; Reden 2. april 1801 havde patriotismen f&#x00E5;et et
+            stort opsving, som fortsatte i &#x00E5;rene op til inddragelsen i Napoleonskrigene. Allerede
+            titlen anl&#x00E6;gger en patriotisk vinkel p&#x00E5; sagen, idet emnet behandles &#x201C;med Hensyn
+            paa F&#x00E6;drelandet&#x201D;.</p>
+
+          <note type="readMore">
+<p rend="noIndent">Patriotiske slagord anvendes til at opildne s&#x00E5;vel afsenderens som
+            modtagerens engagement i videnskabelighedens fremme. Grundtvig fors&#x00F8;ger at appellere til
+            sine l&#x00E6;sere gennem patriotiske formuleringer som fx: &#x201C;Alt dette er harmeligt for
+            enhver &#x00E6;gte Dansk, og dobbelt harmeligt under en saa dansk Regiering&#x201D; (s. 263).
+            Den s&#x00E6;rligt danske regering, som formuleringen henviser til, var ligeledes et produkt af
+            Napoleonskrigene: Indlemmelsen af Holsten i Helstaten i 1806 havde f&#x00F8;rt til et brud i
+            det ledende regeringsorgan, statsr&#x00E5;det. De fleste dansktalende medlemmer var tilh&#x00E6;ngere
+            af indlemmelsen, mens modstanderne overvejende var tysktalende, og de havde i den
+            f&#x00F8;lgende tid forladt statsr&#x00E5;det.</p>
+</note>
+
+          <p rend="firstIndent">Grundtvigs modstilling af de uvidenskabelige krigsf&#x00F8;rende nationer
+            og de fredelige videnskabelige skal ogs&#x00E5; ses i lyset af den patriotiske stemning. Som en
+            mods&#x00E6;tning til Europas &#x201C;s&#x00F8;rgelige Syner&#x201D; frems&#x00E6;tter Grundtvig det &#x00F8;nske,
+            at &#x201C;Danmark og Norge eller F&#x00E6;drelandet burde v&#x00E6;re et trygt Fristed for Videnskab
+            og Konst, naar Vaabengny og M&#x00F8;rkets Aander forjage dem&#x201D; (s. 253). &#x00D8;nsket om at
+            h&#x00F8;jne videnskabeligheden i Danmark er p&#x00E5; denne m&#x00E5;de indlejret i en storpolitisk
+            kontekst. Samme tendens g&#x00F8;r sig g&#x00E6;ldende i anvendelsen af samtidige litter&#x00E6;re v&#x00E6;rker.
+            Kort efter denne passage citerede Grundtvig fire vers fra <persName key="pe3">Oehlenschl&#x00E4;gers</persName> pamflet <hi rend="italic">
+<rs key="title957" type="title">Svar til Baggesen paa hans Brev Noureddin til Aladdin</rs>
+</hi> fra januar 1807,
+            der var udkommet, mens Grundtvig skrev sin afhandling. Den citerede passage handler ikke
+            om den litter&#x00E6;re fejde, men ligesom Grundtvigs afhandling hylder passagen den danske
+            neutralitetspolitik. Den dav&#x00E6;rende kronprins <persName key="pe96">Frederik</persName>
+            omtales som &#x201C;Landets fredrige Fader&#x201D;, der:</p>
+
+          <lg n="1">
+            <l>Med Retsind og Aarvaagenhed utr&#x00E6;ttet staaer</l>
+            <l>For Danmarks Eden, ei med H&#x00E6;vnens Sv&#x00E6;rd, men liig</l>
+            <l>En Engel, med Uskyldighedens Palmegreen,</l>
+            <l>Og vifter Kampens sorte Pest fra sine B&#x00F8;rn, (s. 254)</l>
+          </lg>
+
+          <p rend="firstIndent">
+<persName key="pe3">Oehlenschl&#x00E4;gers</persName> metafor vender p&#x00E5;
+            denne m&#x00E5;de uddrivelsen af paradiset (<rs key="1 Mos 3,23-24" type="bible">1 Mos
+              3,23-24</rs>) om, s&#x00E5;ledes at prinsen fremst&#x00E5;r som en engel, der vogter Danmarks
+            gr&#x00E6;nser. I de efterf&#x00F8;lgende vers, som Grundtvig ikke citerede, skrev <persName key="pe3">Oehlenschl&#x00E4;ger</persName>, at de to stridende digtere med forbillede i kongens
+            eksempel b&#x00F8;r slutte fred og &#x201C;jage hver en Tvedragt til det faste Land; / Hvorfra
+            den kom; den fierne vidt vort s&#x00F8;lvblaa Hav&#x201D; (<rs key="title957" type="title">Oehlenschl&#x00E4;ger 1807</rs>, s. 20-21).</p>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn8">Den kulturelle baggrund: Romantikkens videnskabsforst&#x00E5;else</head>
+
+        <p rend="noIndent">I sin afhandling om Grundtvigs &#x2018;Vidskab&#x2019; konstaterer
+            <persName key="pe62">Bent Christensen</persName>, at Grundtvigs beskrivelser af
+          videnskabeligheden i &#x201C;Om Videnskabelighed&#x201D; ikke har mange lighedspunkter med
+          hans senere udvikling af en folkelig oplysningstanke (<rs key="title6" type="title">Christensen 1998</rs>, s. 44). Den videnskabelighed, der interesserer Grundtvig i
+          n&#x00E6;rv&#x00E6;rende afhandling, m&#x00E5; derfor betragtes som et f&#x00E6;nomen, der i h&#x00F8;jere grad peger ud p&#x00E5;
+          diskussioner i samtiden, snarere end fremad mod hovedv&#x00E6;rkerne. Den v&#x00E6;sentligste
+          referenceramme for Grundtvigs videnskabsforst&#x00E5;else, som det defineres i denne afhandling,
+          er den tyske idealisme og romantik. Grundtvigs f&#x00F8;rste introduktion til disse nye
+          str&#x00F8;mninger var antagelig <persName key="pe18">Henrich Steffens'</persName>
+          forel&#x00E6;sninger i 1802, som Grundtvig h&#x00F8;rte, mens han endnu studerede. Grundtvig definerede
+          sin forestilling om videnskabelighed i en stadig dialog med <persName key="pe29">Goethe</persName>, <persName key="pe35">Schiller</persName>, <persName key="pe500">Fichte</persName> og <persName key="pe18">Steffens</persName>, og det er denne dialog
+          med romantikkens forst&#x00E5;else af videnskab, som de f&#x00F8;lgende afsnit vil fors&#x00F8;ge at
+          kortl&#x00E6;gge.</p>
+
+
+        <div>
+          <head xml:id="docIn9">J.W. Goethe</head>
+
+          <p rend="noIndent">Grundtvig beskriver indledningsvis videnskabeligheden i en fodnote,
+            hvor han l&#x00E5;ner den beskrivende metafor fra <persName key="pe29">J.W. Goethes</persName>
+            digt <rs key="title998" type="title">&#x201C;Grenzen der Menschheit&#x201D;</rs>
+            (1789, da. <rs type="title" key="title989">&#x201C;Menneskehedens gr&#x00E6;nser&#x201D;</rs>, 1954). De centrale strofer fra dette digt havde Grundtvig
+            dog allerede citeret i sin afhandling <rs type="title" key="title341">&#x201C;Om
+              Religion og Liturgie&#x201D;</rs> (<rs key="title341" type="title">1807a</rs>, s.
+            165). <persName key="pe29">Goethes</persName> digt skildrer menneskeheden som udsp&#x00E6;ndt
+            mellem jord og himmel; det &#x00E5;ndelige og det verdslige, det ideelle og det reelle, er
+            uforenelige mods&#x00E6;tninger. Hviler f&#x00F8;dderne p&#x00E5; jorden, kan man ikke n&#x00E5; stjernerne, og
+            str&#x00E6;ber man mod stjernerne, kan f&#x00F8;dderne ikke l&#x00E6;ngere n&#x00E5; jorden: &#x201C;For med guder /
+            skal intet menneske / sig m&#x00E5;le. / H&#x00E6;ver han sig opad / og r&#x00F8;rer / stjernerne med sin
+            isse, / Intetsteds h&#x00E6;fter / de usikre s&#x00E5;ler, / og med ham leger / skyer og vinde. //
+            St&#x00E5;r han med faste, / marvfulde knogler / p&#x00E5; den grundf&#x00E6;stede, / varige jord; / Form&#x00E5;r
+            han end ikke / med egen / eller vinranken / at ligne sig&#x201D; (<rs type="title" key="title998">Goethe 1987</rs>, s. 332, oversat af GV).</p>
+
+          <note type="readMore">
+<p rend="noIndent">Originalen lyder: &#x201C;Denn mit G&#x00F6;ttern / Soll
+              sich nicht messen / Irgend ein Mensch. / Hebt er sich aufw&#x00E4;rts, / Und ber&#x00FC;hrt / Mit
+              dem Scheitel die Sterne, / Nirgends haften dann / Die unsichern Sohlen, / Und mit ihm
+              spielen / Wolken und Winde. // Steht er mit festen, / Markigen Knochen /Auf der
+              wohlgegr&#x00FC;ndeten, / Dauernden Erde; / Reicht er nicht auf, / Nur mit der Eiche / Oder
+              der Rebe / Sich zu vergleichen&#x201D; (<rs type="title" key="title998">Goethe
+                1987</rs>, s. 332).</p>
+</note>
+
+          <p rend="firstIndent">Videnskabelighed i Grundtvigs forstand oph&#x00E6;ver denne mods&#x00E6;tning:
+            &#x201C;Idealet for den harmonisk udviklede menneskelige Aand anskuer jeg, som en
+            Gestalt, hvis F&#x00F8;dder h&#x00E6;fte ved Jorden ski&#x00F8;ndt Issen r&#x00F8;rer Stiernene&#x201D; (s. 249).
+            For den ideelle videnskabelige &#x00E5;nd udg&#x00F8;r det himmelske og det jordiske ingen mods&#x00E6;tning.
+            Idealgestaltens arme &#x201C;omfatte Naturen&#x201D;, og dens &#x00F8;jne skuer ind i b&#x00E5;de
+            fortiden og nutiden &#x201C;og selv Himlen er giennemsigtig&#x201D;. Foreningen af natur
+            og historie kan ligne et ekko af <persName key="pe18">Henrich
+              Steffens'</persName> filosofiske forel&#x00E6;sninger, hvor han netop bestemte
+            videnskabernes objekt som &#x201C;hele Historien og hele den uendelige Natur&#x201D;
+              (<rs key="title118" type="title">Steffens 1996</rs>, s. 32). Grundtvig f&#x00F8;jer her en
+            metafysisk dimension til <persName key="pe18">Steffens'</persName> definition,
+            idet videnskabeligheden ogs&#x00E5; form&#x00E5;r at skue ind i det himmelske. Grundtvigs ideal om
+            videnskabelighed skal forst&#x00E5;s som en ubegr&#x00E6;nset erkendelse, der b&#x00E5;de omfatter naturen,
+            historien, samtiden og religionen. Dette er dog, som afhandlingen understreger, ikke en
+            beskrivelse af den reelle videnskab, men derimod dens ideal. Hvor <persName key="pe29">Goethe</persName> i sit digt beskriver menneskehedens reelle gr&#x00E6;nser, bruger
+            Grundtvig digtets centrale metafor til at fremstille den videnskabelige erkendelses
+            ideelle gr&#x00E6;nsel&#x00F8;shed.</p>
+
+          <p rend="firstIndent">Med denne ideale omskrivning af <persName key="pe29">Goethes</persName> metafor skriver Grundtvig sig ind i romantikkens
+            universalvidenskab: Det er en absolut erkendelse af verdens indre sammenh&#x00E6;ng, som er
+            videnskabens sande, men jordisk uopn&#x00E5;elige objekt.</p>
+        </div>
+
+        <div>
+          <head xml:id="docIn10">Henrich Steffens</head>
+
+          <p rend="noIndent">Grundtvig brugte <persName key="pe29">Goethe</persName> til at definere
+            videnskabeligheden som den h&#x00F8;jeste form for erkendelse. Denne forestilling havde
+            Grundtvig h&#x00F8;jst sandsynligt stiftet bekendtskab med gennem <persName key="pe18">Steffens'</persName> filosofiske forel&#x00E6;sninger p&#x00E5; Elers' kollegium i
+            1802 (bogudgave <hi rend="italic">
+<rs key="title117" type="title">Indledning til
+                philosophiske Forel&#x00E6;sninger</rs>
+</hi> (1803)). I sin karakteristik af samtidens
+            &#x00E5;ndl&#x00F8;shed n&#x00E6;vner Grundtvig den voldsomme kritik af &#x201C;den geniefulde <persName key="pe18">Steffens</persName>, der paa sin egen Vei str&#x00E6;bte at v&#x00E6;kke
+            Videnskabelighed, og neppe ganske forfeilede sin Hensigt&#x201D; (s. 280). Denne
+            interesse blev vakt &#x2013; om end med en vis forsinkelse &#x2013; hos Grundtvig selv, hvis
+            beskrivelse af videnskabeligheden er st&#x00E6;rkt pr&#x00E6;get af <persName key="pe18">Steffens</persName>. I Grundtvigs tidligste optegnelser om <persName key="pe18">Steffens</persName> tilstod han &#x00E5;bent, at han ikke forstod meget af de nye tanker
+              (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>,
+            s. 15-16). Grundtvigs indg&#x00E5;ende kendskab til <persName key="pe18">Steffens'</persName> forel&#x00E6;sninger stammer derfor antagelig f&#x00F8;rst fra hans
+            l&#x00E6;sning af <hi rend="italic">
+<rs key="title117" type="title">Indledning til
+                philosophiske Forel&#x00E6;sninger</rs>,</hi> som han anskaffede den 18. november 1804 (<rs type="title" key="title445">Bugge 1965</rs>, s. 78).</p>
+
+          <p rend="firstIndent">Den absolutte erkendelse, som Grundtvig med udgangspunkt i <persName key="pe29">Goethes</persName> digt skitserede i fodnoten, var ligeledes endem&#x00E5;let for
+              <persName key="pe18">Steffens'</persName> naturfilosofi. Den unge naturforsker
+              <persName key="pe18">Henrich Steffens</persName> havde tilbragt fire &#x00E5;r i Tyskland,
+            fra 1798 til 1802, hvor han havde m&#x00F8;dt Jena-romantikkens foregangsm&#x00E6;nd <persName key="pe500">J.G. Fichte</persName>, br&#x00F8;drene <persName key="pe34">Fr.</persName> og
+              <persName key="pe525">A.W. Schlegel</persName> og frem for alle <persName key="pe54">F.W.J. Schelling</persName>, hvis organismet&#x00E6;nkning fik stor indflydelse p&#x00E5; <persName key="pe18">Steffens</persName>. Det er dog i mindre grad <persName key="pe18">Steffens'</persName> naturfilosofi end hans almene erkendelsesteoretiske
+            refleksioner, der i denne forbindelse inspirerede Grundtvig.</p>
+
+          <p rend="firstIndent">
+<persName key="pe18">Steffens'</persName> filosofiske projekt
+            var at erkende det absolutte (dvs. den universelle forbindelse mellem menneske, &#x00E5;nd og
+            natur), som det fremtr&#x00E6;der i naturens mangfoldige former. Den romantiske
+            (natur-)videnskabs drivkraft var ikke praktiske landvindinger, men derimod anelsen af
+            det absolutte som verdens indre sammenh&#x00E6;ng: &#x201C;I Sandhed, det var ubegribeligt hvad
+            der formaaede Naturforskeren og Historikeren til den uafladelige Driftighed, hvis ikke
+            en, ski&#x00F6;ndt, hos mange dunkel, Ahnelse om en uendelig Forbindelse, var det dybe
+            bev&#x00E6;gende Princip for deres Unders&#x00F6;gelse&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s. 33). Denne definition af videnskabens erkendelsesinteresse tog
+            Grundtvig til sig, hvilket en parallell&#x00E6;sning mellem <persName key="pe18">Steffens'</persName> forel&#x00E6;sninger og Grundtvigs afhandling kan p&#x00E5;vise:</p>
+
+          <p rend="firstIndent">
+<persName key="pe18">Steffens'</persName> bestemmelser af
+            videnskabens plads i samfundet klinger med i Grundtvigs indledende beskrivelse af
+            videnskaben. <persName key="pe18">Steffens</persName> kan som tidligere n&#x00E6;vnt ses som en
+            inspiration for dialogen mellem &#x201C;Tvivlerne&#x201D; og &#x201C;det t&#x00E6;nkende
+            Menneske&#x201D; (s. 251), idet <persName key="pe18">Steffens</persName> opstillede en
+            mods&#x00E6;tning, der ligner Grundtvigs (se afsnittet <ref type="docIn" target="#docIn6">&#x201C;I skyggen af <persName key="pe104">Napoleon</persName>&#x201D;</ref>). Forskellen er, at der hos <persName key="pe18">Steffens</persName> ikke er tale om en mods&#x00E6;tning mellem de videnskabeligt sindede
+            nationer og de militaristiske masser (l&#x00E6;s: <persName key="pe104">Napoleons</persName>
+            Frankrig), men mellem f&#x00F8;rstn&#x00E6;vnte og de materialistiske nationer. <persName key="pe18">Steffens</persName> modstiller nationerne, der dyrker videnskaben for dens egen
+            skyld, med dem &#x201C;som blot indskr&#x00E6;nke deres Virksomhed til at forbedre og forh&#x00F6;je
+            deres physiske Existenz&#x201D; (<rs type="title" key="title118">Steffens 1996</rs>, s.
+            32).</p>
+
+          <note type="readMore">
+<p rend="noIndent">Citatet lyder i sin fulde udstr&#x00E6;kning: &#x201C;Vi
+              kalde de Nationer barbariske, som blot indskr&#x00E6;nke deres Virksomhed til at forbedre og
+              forh&#x00F6;je deres physiske Existenz, og har end Industrie og Flid bragt dem nok saa vidt,
+              skulde de end &#x2013; endski&#x00F6;nt det end neppe er mueligt &#x2013; uden Videnskabelighed have
+              erhvervet sig nok saa mange Beqvemmeligheder, ja herskede endog den st&#x00F6;rste
+              Nationalvelstand og den pragtfuldeste Luxus blant dem, saa for&#x00F6;ger det ikke vor
+              Agtelse for dem i ringeste Maade. Vi fordre af enhver Nation, at den skal <hi rend="italic">agte</hi> Videnskaberne <hi rend="italic">for deres egen
+              Skyld</hi>&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s.
+            32).</p>
+</note>
+
+          <p rend="firstIndent">Videnskabeligheden er if&#x00F8;lge b&#x00E5;de <persName key="pe18">Steffens</persName> og Grundtvig h&#x00E6;vet over nyttelogikken. Med <persName key="pe18">Steffens'</persName> ord &#x201C;er det af sig selv klart, at enhver Videnskab
+            har et Maal i sig selv, som ikke er indskr&#x00E6;nket ved dens Anvendelse, et Problem at l&#x00F6;se,
+            som er aldeles forskielligt fra de fleste Problemer, som det borgerlige Samfund, som
+            saadant, kunne fordre l&#x00F6;ste af den&#x201D; (<rs type="title" key="title118">Steffens
+              1996</rs>, s. 29). Grundtvig griber fat i samme tema og beskriver videnskabelighedens
+            rolle i samfundet med en poetisk eksplicitering af <persName key="pe18">Steffens'</persName> tese:</p>
+
+          <p rend="firstIndent"> &#x201C;At gi&#x00F8;re Videnskaberne til blotte Vehikler for
+            Livsnydelsen, er at betage dem deres Eiendommelige, da de derved faae en blot endelig
+            Tendents, og ligesom indskr&#x00E6;nkes til Menneskets afmaalte Jordliv. At s&#x00E6;tte dem i
+            Politikens eller hvilkensomhelst anden Tieneste, er at bortjage dem fra Jorden; thi fri,
+            som den himmelske Gnist, hvorfra de alle udspringe, taale de ingen Slavel&#x00E6;nker, men
+            svinge sig op i den rene &#x00C6;ther, fulgte af M&#x00E6;ngdens Haan, og deres Venners dybe
+            Sukke&#x201D; (s. 252).</p>
+
+          <p rend="firstIndent">Med <persName key="pe29">Goethe</persName> og <persName key="pe18">Steffens</persName> i h&#x00E5;nden bestemmer Grundtvig videnskabeligheden som en absolut
+            erkendelsestrang, der er uafh&#x00E6;ngig af pragmatiske form&#x00E5;l. Videnskabeligheden s&#x00E6;ttes i
+            opposition til politikken p&#x00E5; den ene side og livsnydelsen p&#x00E5; den anden.
+            Videnskabeligheden tragter efter en h&#x00F8;jere erkendelse, der i sidste ende smelter sammen
+            med religionen.</p>
+        </div>
+
+        <div>
+          <head xml:id="docIn11">Friedrich Schiller</head>
+
+          <p rend="noIndent">
+<persName key="pe18">Steffens'</persName> definition af
+            videnskab har sine r&#x00F8;dder i Jena-romantikken. I det sidste &#x00E5;rti af 1700-tallet og
+            omkring &#x00E5;rhundredeskiftet tiltrak universitetet i Jena en r&#x00E6;kke unge intellektuelle,
+              <persName key="pe500">J.G. Fichte</persName>, <persName key="pe54">F.W.J.
+              Schelling</persName> og br&#x00F8;drene <persName key="pe34">Fr.</persName> og <persName key="pe525">A.W. Schlegel</persName>, som skulle komme til at forme den tidlige tyske
+            romantik. En af de mest indflydelsesrige personer i Jena var <persName key="pe35">Friedrich Schiller</persName>, som underviste ved universitetet fra 1789 til 1793, og
+            som derefter boede i det n&#x00E6;rliggende Weimar ligesom <persName key="pe29">Goethe</persName>. Med sin tiltr&#x00E6;delsesforel&#x00E6;sning som historieprofessor i 1789, <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert man
+              Universalgeschichte?&#x201D;</rs> (Hvad er og med hvilket form&#x00E5;l studerer man
+            universalhistorie?), grundlagde <persName key="pe35">Schiller</persName> en tradition
+            for de yngre Jena-romantikere, nemlig at tiltr&#x00E6;de professoratet med en forel&#x00E6;sningsr&#x00E6;kke
+            over videnskaben som kald. Grundtvigs kendskab til <persName key="pe35">Schillers</persName> forel&#x00E6;sning kan bel&#x00E6;gges med en r&#x00E6;kke grundige excerpter fra
+            1806 (<rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1
+              1979</rs>, s. 275-282).</p>
+
+          <note type="readMore">
+<p rend="noIndent">
+<persName key="pe500">Fichte</persName> afholdt
+              flere forel&#x00E6;sningsr&#x00E6;kker over emnet: Den f&#x00F8;rste blev indledt af hans
+              tiltr&#x00E6;delsesforel&#x00E6;sning i 1794 (bogudgave: <hi rend="italic">
+<rs key="title1041" type="title">Einige Vorlesungen &#x00FC;ber die Bestimmung des Gelehrten</rs>,</hi> 1794, da. <hi rend="italic">
+<rs key="title2251" type="title">Den L&#x00E6;rdes Bestemmelse</rs>,</hi> 1796), og senere genoptog han emnet i 1806
+              og 1811. I den f&#x00F8;rste forel&#x00E6;sningsr&#x00E6;kke udn&#x00E6;vnte <persName key="pe500">Fichte</persName> blandt andet den l&#x00E6;rde til &#x201C;menneskehedens
+              opdrager&#x201D; (<rs key="title1041" type="title">Fichte 1794</rs>, s. 92, oversat af
+              GV). <persName key="pe54">Schellings</persName> tiltr&#x00E6;delsesforel&#x00E6;sningsr&#x00E6;kke fra 1802
+              blev trykt under titlen <hi rend="italic">
+<rs key="title634" type="title">Vorlesungen
+                &#x00FC;ber die Methode des akademischen Studium</rs>
+</hi> (1803, Forel&#x00E6;sninger om det
+              akademiske studiums metode).</p>
+</note>
+
+          <p rend="firstIndent">Romantikkens videnskabsteori kr&#x00E6;vede en helt anden livsindstilling
+            og selvopfattelse hos de studerende end blot at n&#x00E6;re ambitioner om &#x201C;et godt
+            Embede&#x201D;, som det hedder hos Grundtvig (s. 267). <persName key="pe18">Steffens</persName> var antagelig bekendt med Jena-romantikernes tanker om
+            universitetet, og hans programerkl&#x00E6;ringer i de filosofiske indledningsforel&#x00E6;sninger om
+            videnskabeligheden som menneskehedens h&#x00F8;jere bestemmelse er n&#x00E6;rt besl&#x00E6;gtet med disses
+            videnskabelige program. </p>
+
+          <p rend="firstIndent">Efter bekendtskabet med <persName key="pe18">Steffens</persName>
+            udgjorde <persName key="pe35">Schillers</persName> forel&#x00E6;sning Grundtvigs andet m&#x00F8;de med
+            studiet af universalhistorien, dvs. forestillingen om historiens indre sammenh&#x00E6;ng og
+            fremadstr&#x00E6;bende udvikling, som han selv beskrev den i fortalen til <hi rend="italic">
+<rs key="title629" type="title">Kort Begreb af Verdens Kr&#x00F8;nike</rs>
+</hi> (<rs type="title" key="title629">Grundtvig 1812</rs>, s. XXV-XXVI). <persName key="pe35">Schiller</persName> kom derved til at f&#x00E5; afg&#x00F8;rende indflydelse p&#x00E5; Grundtvigs egne,
+            senere fors&#x00F8;g p&#x00E5; at skrive universalhistorie. I denne forbindelse er Grundtvig dog
+            snarere blevet inspireret af <persName key="pe35">Schillers</persName> beskrivelse af
+            det filosofiske hoved (&#x201C;der philosophische Kopf&#x201D;), der er i stand til at
+            samle historiens stumper til et system (<rs key="title952" type="title">Schiller
+              1792</rs>, s. 89-90).</p>
+
+          <p rend="firstIndent">I afhandlingen skelnede <persName key="pe35">Schiller</persName>
+            skarpt mellem det filosofiske hoved, som evner at dyrke videnskaben for dens egen skyld,
+            og de mere prosaiske sj&#x00E6;le, br&#x00F8;dstudenterne, der studerer de traditionelle embedsfag som
+            medicin, jura og teologi. Br&#x00F8;dstudenterne er alene interesseret i verdslig anerkendelse
+            og mangler nysgerrigheden efter den videnskabelige fornyelse (<rs type="title" key="title952">Schiller 1792</rs>, s. 58-59). Denne kritik af studenterstandens
+            manglende videnskabelige drivkraft tager Grundtvig til sig som sin egen og kritiserer de
+            studerende, som &#x201C;endelig ei have noget h&#x00F8;iere Maal for deres Studeringer, end i
+            det h&#x00F8;ieste bedste Karakter til Embedsexamen, og derpaa &#x2014; et godt Embede&#x201D; (s.
+            267).</p>
+
+          <p rend="firstIndent">Grundtvig fors&#x00F8;ger dog at indg&#x00E5; et kompromis mellem de to typer af
+            studerende, som <persName key="pe35">Schiller</persName> sondrede s&#x00E5; skarpt imellem,
+            idet han i afhandlingen opfordrer de studerende i embedsfagene til at dyrke videnskaben
+            lidenskabeligt. Grundtvigs planer for en reform af den videnskabelige kultur er p&#x00E5; denne
+            m&#x00E5;de mere pragmatisk end <persName key="pe35">Schillers</persName>, idet han ikke mener,
+            at det er &#x201C;saa ganske n&#x00F8;dvendigt&#x201D; (s. 286) for danske skribenter at kunne
+            klare sig uden et embede. Ambitionen er snarere at forsone embedsstanden og den frie
+            videnskabelighed end at adskille disse: &#x201C;Med udviklet Sands og dannet Sprog ville
+            de vorde Embedsm&#x00E6;nd, og, foruden det st&#x00F8;rre Anl&#x00E6;g til practisk Duelighed, de medbragte i
+            deres Virkekreds, vilde de vide at bruge &#x00D8;ieblikkene, deres Forretninger ei medtoge, til
+            Aandsarbeider, der stemmede med deres Lyst og Kr&#x00E6;fter&#x201D; (s. 286-287).</p>
+        </div>
+
+        <div>
+          <head xml:id="docIn12">Videnskabelighedens guldalder</head>
+
+          <p rend="noIndent">Gennem <persName key="pe18">Steffens</persName>, og senere gennem
+              <persName key="pe54">Schelling</persName>, stiftede Grundtvig bekendtskab med en af
+            romantikkens grundl&#x00E6;ggende fort&#x00E6;llinger, nemlig forestillingen om historien som et
+            verdensdrama (<rs key="title25" type="title">Vind 1999</rs>, s. 157).</p>
+
+          <p rend="firstIndent">Verdensdramaet lader historien begynde med tabet af guldalderen, der
+            var en tilstand af paradisisk harmoni. Den nuv&#x00E6;rende verden derimod er pr&#x00E6;get af moralsk
+            forfald, hvilket <persName key="pe18">Steffens</persName> beskriver p&#x00E5; f&#x00F8;lgende vis:
+            &#x201C;Saaledes svandt den gamle, gyldne Tid; det Helligste blev et Middel for t&#x00F6;jlel&#x00F6;s
+            Forbrydelse; Gudernes brogede Vrimmel forlode den ryggesl&#x00F6;se Jord&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s. 130). If&#x00F8;lge <persName key="pe18">Steffens</persName> er det i nutiden alene i kunsten og filosofien, at den tabte
+            guldalder kan anes, og deres opgave bliver derfor at forl&#x00F8;se verdens&#x00E5;nden og bringe os n&#x00E6;rmere p&#x00E5; guldalderens
+            genkomst.</p>
+
+          <p rend="firstIndent">Grundtvig overf&#x00F8;rer denne tankegang til diskussionen af videnskabelighedens fremme. Dette kan ses i det allerf&#x00F8;rste afsnit, hvor Grundtvig beskriver den blomstrende
+            videnskab som kongevejen til guldalderens genkomst: Den er &#x201C;Gl&#x00E6;dens rene Kilde, hvis klare Vande vise ham, ved
+            stadig Rinden, Veien ind i de tilstundende Aldere, hvor en tifold ski&#x00F8;nnere Tilv&#x00E6;relse
+            aabner sig for hans Blik&#x201D; (s. 249). Grundtvigs videnskabelighed m&#x00E5; derfor ikke
+            forveksles med en moderne forst&#x00E5;else af videnskab, som ofte er domineret af et
+            positivistisk syn p&#x00E5; videnskab. Videnskabens drivkraft var for Grundtvig anelsen af det
+            absolutte, og derfor var den n&#x00E6;rt besl&#x00E6;gtet med religionen, s&#x00E5; n&#x00E6;rt, at han erkl&#x00E6;rede,
+            at den st&#x00F8;rste trussel mod videnskabeligheden var &#x201C;den voxende Irreligi&#x00F8;sitet og
+            Us&#x00E6;delighed&#x201D; (s. 264). Foruds&#x00E6;tningen for at bedrive videnskab var en religi&#x00F8;s
+            livsindstilling, som han kort efter beskrev det: &#x201C;Hvad, jeg troer,
+            Videnskabelighed maa foruds&#x00E6;tte, er et virkelig religi&#x00F8;st Sindelag, en urokkelig Tro paa
+            det Himmelske, og Ahnelse af dets Herlighed; men under hvilken Form Phantasien
+            fremstiller hiint, synes ligegyldigt for Videnskaberne, naar kun Formen besidder den
+            h&#x00F8;iere Ski&#x00F8;nhed&#x201D; (s. 265).</p>
+
+          <note type="readMore">
+            <p rend="noIndent">Grundtvigs indstilling er p&#x00E5; dette punkt
+              overraskende romantisk: Ingen religion er privilegeret frem for andre, n&#x00E5;r det drejer
+              sig om at befordre videnskabeligheden, blot er det n&#x00F8;dvendigt at have &#x201C;et
+              virkelig religi&#x00F8;st Sindelag&#x201D;. Det er med andre ord intensiteten af den
+              religi&#x00F8;se overbevisning snarere end religionens dogmatiske indhold, som er afg&#x00F8;rende.
+              Liges&#x00E5; interessant er det, at Grundtvig her frems&#x00E6;tter den tese, at den religi&#x00F8;se
+              overbevisning sorterer under &#x00E6;stetikken og indbildningskraften, idet religionen
+              kvalificerer sig gennem sin sk&#x00F8;nne form. Denne tankegang er st&#x00E6;rkt inspireret af
+                <persName key="pe35">Schillers</persName> fortale til <hi rend="italic">
+<rs key="title340" type="title">Die Braut von Messina</rs>
+</hi> (1803): &#x201C;Og
+              derfor finder jeg, at det er poesiens ret at behandle de forskellige religioner som et
+              kollektivt hele for indbildningskraften, i hvilken alt, der har sin egen karakter,
+              alt, der udtrykker en egen f&#x00F8;lsomhed, finder sit eget sted. Bag alle religioners sl&#x00F8;r
+              ligger religionen selv, ideen om det guddommelige, og det m&#x00E5; v&#x00E6;re digteren tilladt at
+              udtale denne, i hvilken form han end fra gang til gang finder mest bekvem og mest
+              tr&#x00E6;ffende. (<rs type="title" key="title340">Schiller 1803</rs>, s. XIV, oversat af GV,
+              original: &#x201C;Und dann halte ich es f&#x00FC;r eine Recht der Poesie, die verschiedenen
+              Religionen als ein kollektives Ganzes f&#x00FC;r die Einbildungskraft zu behandeln, in
+              welchem alles, was einen eignen Character tr&#x00E4;gt, eine eigne Empfindungsweise
+              ausdr&#x00FC;ckt, seine Stelle findet. Unter der H&#x00FC;lle aller Religionen liegt die Religion
+              selbst, die Idee eines G&#x00F6;tllichen, und es mu&#x00DF; dem Dichter erlaubt seyn, dieses
+              auszusprechen in welcher Form er jedesmal am bequemsten und am treffendensten
+              findet&#x201D;). F&#x00F8;rste del af den afsluttende s&#x00E6;tning citerede Grundtvig i
+              begyndelsen af den samtidige afhandling <rs key="title341" type="title">&#x201C;Om
+                Religion og Liturgie&#x201D;</rs> fra 1807.</p>
+</note>
+
+          <p rend="firstIndent">Grundtvigs mange praktiske forslag til forbedringer p&#x00E5;
+            universitetsomr&#x00E5;det knyttes sammen i en utopisk vision af videnskabernes kommende guldalder. Passagen
+            indledes med en reference til <persName key="pe45">Jesu</persName> genkomst ved dommedag
+              (<rs type="bible" key="Luk 21,28">Luk 21,28</rs>) og fremstiller, hvordan &#x201C;en
+            videnskabelig Stemning hos Nationen&#x201D; (s. 285) vil f&#x00F8;lge af den forbedrede
+            videnskabelighed hos de studerende, og b&#x00F8;nder, handelsstand og
+            adel derfor vil leve sammen i fred og fordragelighed. Denne
+            vision frems&#x00E6;ttes i et rigt metaforisk og lyrisk sprog, der bringer referencer til gr&#x00E6;sk
+            og nordisk mytologi sammen med hentydninger til samtidens verserende debat om bevaring
+            af oldtidsminder.<!--Romantikkens forestillinger om den tabte og den kommende guldalder
+            afspejler sig p&#x00E5; denne m&#x00E5;de i Grundtvigs eskatologiske forestilling om videnskabens
+            kommende forl&#x00F8;sning.-->
+</p>
+
+          <p rend="firstIndent">Det er dog vigtigt at betone, at virkeligg&#x00F8;relsen af den nye
+            guldalder udelukkende var et &#x00E6;stetisk og videnskabeligt projekt, p&#x00E5; ingen m&#x00E5;de et
+            politisk projekt for Grundtvig, som det fremg&#x00E5;r af hans kritik af den franske
+            revolution. Den franske revolution kritiseres med en ironisk allusion til <rs type="bible" key="&#x00C5;b 21,1">&#x00C5;b 21,1</rs> for at have standset videnskabeligheden ved at
+            fors&#x00F8;ge at fremtvinge en ny guldalder: &#x201C;t&#x00F8;r man vel n&#x00E6;gte, at det var Frankerigs
+            Revolution, der standsede Videnskabelighed, ved at drage det oplyste Europas &#x00D8;ie fra
+            Himlen til Jorden, for at skue en ny Himmel paa Jorden?&#x201D; (s. 253).</p>
+
+          <p rend="firstIndent">Samtiden fremstilles som den kommende guldalders absolutte
+            mods&#x00E6;tning, hvilket tydeligt fremg&#x00E5;r af Grundtvigs dystert satiriske skildring af tidens
+            d&#x00E5;rligdomme lige fra us&#x00E6;delighed over manglende dannelse til forbruget af luksusgoder.
+            Her allierede Grundtvig sig med samtidige t&#x00E6;nkere som <persName key="pe500">J.G.
+              Fichte</persName> og <persName key="pe577">E.M. Arndt</persName>, der begge
+            fremstillede nutiden som et historisk lavpunkt; en karakteristik, som ogs&#x00E5; <persName key="pe18">Steffens</persName> tilsluttede sig i sine historiefilosofiske
+            overvejelser: &#x201C;Vor Tids s&#x00E6;regne Kjendetegn er en Irreligi&#x00F6;sitet og en overvejende
+            Prosa, som Historien aldrig har set den&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s. 139).</p>
+
+          <note type="readMore">
+<p rend="noIndent">
+<persName key="pe500">Fichte</persName> havde i
+              1804-1805 holdt en forel&#x00E6;sningsr&#x00E6;kke med titlen <hi rend="italic">
+<rs key="title577" type="title">Die Grundz&#x00FC;ge des gegenw&#x00E4;rtigen Zeitalters</rs>
+</hi> (da. Den nuv&#x00E6;rende
+              tidsalders grundtr&#x00E6;k), hvori han karakteriserede sin samtid som den mest
+              autoritetskritiske og individualistiske, men ogs&#x00E5; mest syndefulde epoke. <persName key="pe500">Fichte</persName> beskrev sin samtid p&#x00E5; f&#x00F8;lgende vis:
+              &#x201C;Befrielsens epoke, umiddelbart fra enhver ydre p&#x00E5;bydende autoritet, middelbart
+              fra fornuftsinstinktets p&#x00E5;budskarakter, og fra fornuften overhovedet i enhver
+              skikkelse: tidsalderen for den absolutte ligegyldighed over for enhver sandhed og den
+              fuldst&#x00E6;ndige ubundethed uden nogen ledetr&#x00E5;de; tilstanden af den fuldendte
+              syndefuldhed.&#x201D; (<rs key="title577" type="title">Fichte 1991</rs>, s. 207,
+              oversat af GV, original: &#x201C;die Epoche der Befreiung unmittelbar von der
+              gebietenden &#x00E4;u&#x00DF;eren Autorit&#x00E4;t, mittelbar von der Botm&#x00E4;&#x00DF;igkeit des
+              Vernunfts-Instinkts, und der Vernunft &#x00FC;berhaupt in jeglicher Gestalt: das Zeitalter
+              der absoluten Gleichg&#x00FC;ltigkeit gegen alle Wahrheit, und der v&#x00F6;lligen Ungebundenheit
+              ohne einigen Leitfaden; der Stand der vollendeten S&#x00FC;ndhaftigkeit&#x201D;). <persName key="pe577">E.M. Arndts</persName> skrift <hi rend="italic">
+<rs key="title955" type="title">Geist der
+                Zeit</rs>
+</hi> (da. Tidens &#x00E5;nd) fra 1806 kritiserede s&#x00E6;dernes forfald i de tyske stater, som
+              if&#x00F8;lge <persName key="pe577">Arndt</persName> havde banet vejen for <persName key="pe104">Napoleon</persName>.</p>
+</note>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn13">Den biografiske baggrund</head>
+
+        <p rend="noIndent">Det er vigtigt at bem&#x00E6;rke, at Grundtvigs afhandling ikke kun er et
+          teoretisk eller filosofisk skrift. Afhandlingens tanker om videnskabelighed pr&#x00E6;senteres
+          t&#x00E6;t sammenknyttet med malende skildringer af samtidige forhold. Grundtvig var et ungt
+          menneske p&#x00E5; 23 &#x00E5;r, da han skrev afhandlingen, som indeholder en r&#x00E6;kke iagttagelser af
+          omgangsformerne i de milj&#x00F8;er, hvori han f&#x00E6;rdedes. Ofte bekr&#x00E6;ftes skildringens
+          sandf&#x00E6;rdighed med den patosfyldte understregning &#x201C;og det har jeg seet&#x201D; (s.
+          282). Afhandlingen indeholder et bittert og m&#x00F8;rkt samtidsbillede i fremstillingen af
+          studenter-, husl&#x00E6;rer- og pr&#x00E6;stestanden: Studenterne hudflettes for deres manglende
+          dannelse og studerelyst, mens husl&#x00E6;rerne angribes for at glemme alt om videnskaben, n&#x00E5;r de
+          hengiver sig til selskabslivet p&#x00E5; herreg&#x00E5;rdene. Pr&#x00E6;sterne anklages for at v&#x00E6;re d&#x00E5;rlige
+          forbilleder for begge grupper, da de bedrestillede forfalder til vellevned, mens de
+          d&#x00E5;rligere stillede tvinges til at dyrke landbrug for at kunne fors&#x00F8;rge deres familier.</p>
+
+        <p rend="firstIndent">Andre steder kan man ane konturerne af personer, som m&#x00E5; have kunnet
+          identificeres i samtiden, fx professoren, der h&#x00E6;vder, at det danske sprog er fattigt, eller visse af de forfattere og anmeldere, der omtales i
+          afsnittet om anmelderstandens og litteraturens mangelfulde tilstand. De mange udr&#x00E5;bstegn,
+          som er blevet indsat redaktionelt i det sidste afsnit om den danske anmelderstand, kunne
+          tyde p&#x00E5;, at <persName key="pe24">Knud Lyne Rahbek</persName> m&#x00E5; have genkendt sig selv i
+          portr&#x00E6;ttet af anmelderen, som Grundtvig anklager for ikke at sl&#x00E5; h&#x00E5;rdt nok ned p&#x00E5;
+          talentl&#x00F8;se forfattere.</p>
+
+        <p rend="firstIndent">Grundtvig udpegede de studerendes &#x201C;Us&#x00E6;delighed&#x201D; (s. 264)
+          som en af hoved&#x00E5;rsagerne til den manglende videnskabelighed. K&#x00E6;rlighedslivets mulighed for
+          enten at h&#x00F8;jne de studerendes videnskabelige pr&#x00E6;sentationer eller &#x2013; i hyppigste fald &#x2013;
+          blot at distrahere dem fra vigtigere forehavender spiller en central rolle i afhandlingens
+          argumentation. Foruden den teoretiske behandling af problemet, hvor Grundtvig endnu engang
+          tager udgangspunkt i den romantiske videnskabsteoris horisont, indeholder passagen en
+          r&#x00E6;kke selvbiografiske henvisninger; begge dele vil blive behandlet i n&#x00E6;ste afsnit.</p>
+
+        <div>
+          <head xml:id="docIn14">K&#x00E6;rlighed og videnskabelighed</head>
+
+          <p rend="noIndent">Grundtvig var i 1805 blevet ansat som husl&#x00E6;rer p&#x00E5; herreg&#x00E5;rden Egel&#x00F8;kke
+            p&#x00E5; Langeland. Her skulle han undervise den syv&#x00E5;rige <persName key="pe21">Karl Frederik
+              Steensen-Leth</persName>, men straks efter ankomsten forelskede han sig ulykkeligt i
+            sin elevs mor, <persName key="pe14">Constance Steensen-Leth</persName>. Begge relationer
+            satte deres tydelige pr&#x00E6;g p&#x00E5; afhandlingen. F&#x00F8;rstn&#x00E6;vnte i form af en ekskurs om, hvorvidt
+            det er muligt allerede at pr&#x00E6;sentere b&#x00F8;rn for en videnskabelig tilgang, hvor Grundtvig
+            henviser til sine egne p&#x00E6;dagogiske erfaringer: &#x201C;Jeg ikke blot troer, men har selv
+            den Gl&#x00E6;de at vide det: end ikke Barnet er saa ganske h&#x00E6;ftet til Jorden, at dets &#x00D8;ie ei
+            skulde kunne h&#x00E6;ves mod Himlen&#x201D; (s. 272). Sidstn&#x00E6;vnte er udgangspunktet for et af
+            afhandlingens litter&#x00E6;re h&#x00F8;jdepunkter, nemlig den platonisk inspirerede ekskurs over
+            k&#x00E6;rlighedens lutring af geniets videnskabelige &#x00E5;nd. I det f&#x00F8;rste tilf&#x00E6;lde erkl&#x00E6;rede
+            Grundtvig &#x00E5;bent, at der l&#x00E5; personlige erfaringer bag, i det andet tilf&#x00E6;lde kan det &#x2013;
+            forst&#x00E5;eligt nok &#x2013; kun afl&#x00E6;ses af dulgte hentydninger til forfatterens egen position, fx
+            i pr&#x00E6;sentationen af afhandlingen som kommende fra &#x201C;et Hierte, der, knust af &#x00D8;dets
+            [: sk&#x00E6;bnens] tunge Haand, endnu er gennemgl&#x00F8;det af F&#x00F8;lelse for det
+            Himmelske, og for Videnskab og Konst&#x201D; (s. 257). De tanker om k&#x00E6;rlighedens v&#x00E6;sen,
+            som frems&#x00E6;ttes her, synes at v&#x00E6;re et &#x201C;offentligt sidestykke&#x201D;, med
+              <persName key="pe52">Flemming Lundgreen-Nielsens</persName> ord (<rs key="title14" type="title">1980</rs>, s. 202), til dagb&#x00F8;gernes mange intime optegnelser om den
+            ulykkelige forelskelse.</p>
+
+          <p rend="firstIndent">Midt i afhandlingens skildring af k&#x00F8;nslivets skadelige indvirkning
+            p&#x00E5; de studerendes videnskabelighed skifter Grundtvig til en h&#x00F8;jstemt og personlig
+            skildring af k&#x00E6;rlighedens indvirkning p&#x00E5; videnskabeligheden. Mens de br&#x00F8;dstuderendes
+            interesse for studierne vil blive sv&#x00E6;kket af k&#x00F8;nslivets fristelser, vil k&#x00E6;rligheden,
+            hvad enten den er geng&#x00E6;ldt eller ej, h&#x00F8;jne geniets videnskabelige virketrang. Grundtvig
+            identificerede sig &#x2013; ganske ubeskedent &#x2013; med sidstn&#x00E6;vnte gruppe, idet hans fremstilling
+            af den ulykkelige lutrende k&#x00E6;rlighed korresponderer med hans private optegnelser:
+            &#x201C;ja Jeg str&#x00E6;ber endog stundum at oplue min &#x00C6;rgerrighed, at indbilde Mig, min
+            K&#x00E6;rlighed kun b&#x00F8;r ansees som et Redskab i dennes Haand brugt til at udvikle mine
+            Kr&#x00E6;fter&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 367).</p>
+
+          <p rend="firstIndent">S&#x00E5;vel den lykkelige som den ulykkelige k&#x00E6;rlighed er for geniet alene
+            en anledning til at anskue det h&#x00F8;jeste. Den lykkelige k&#x00E6;rlighed vil med tiden
+            &#x201C;bortdampe&#x201D;, og i stedet vil geniet beholde &#x201C;det dybt grundf&#x00E6;stede
+            Minde, der ansporer ham til Str&#x00E6;ben mod den Herlighed, han egentlig kun ahnede; men
+            troede i Ahnelsen at eie&#x201D; (s. 276). K&#x00E6;rligheden til et enkelt menneske er kun et
+            billede p&#x00E5; en k&#x00E6;rlighed, som er endnu st&#x00F8;rre end denne, nemlig k&#x00E6;rligheden til viden.
+            Grundtvig l&#x00E5;ner hermed fra <persName key="pe622">Platons</persName> dialog <hi rend="italic">
+<rs key="title983" type="title">Symposion</rs>,</hi> hvor <persName key="pe502">Sokrates</persName> i sin tale gengiver en samtale med pr&#x00E6;stinden Diotima,
+            der bel&#x00E6;rer ham om, hvordan den sande k&#x00E6;rlighed stiger fra at v&#x00E6;re bundet til en enkelt
+            person til i stedet at v&#x00E6;re rettet mod &#x201C;sk&#x00F8;nhedens vidtstrakte hav&#x201D; (<rs key="title983" type="title">Platon 2010</rs>, s. 368). K&#x00E6;rlighedens h&#x00F8;jeste form&#x00E5;l er
+            for Grundtvig dens sublimering til viden.</p>
+
+          <p rend="firstIndent">Den ulykkelige k&#x00E6;rlighed skal p&#x00E5; lignende vis sublimeres, men ad en
+            anden og, if&#x00F8;lge Grundtvig, tydeligvis mere heroisk vej. I den ulykkelige k&#x00E6;rlighed m&#x00E5;
+            geniet enten bukke under ligesom <persName key="pe29">Goethes</persName> unge <persName key="pe678">Werther</persName> eller vende tilbage fra graven som den genopv&#x00E6;kkede
+              <persName key="pe637">Lazarus</persName> (<rs key="Joh 11,43-44" type="bible">Joh
+              11,43-44</rs>): &#x201C;da vil han f&#x00F8;le dobbelt Trang til at stunde did, hvorhen der
+            kun iles paa det dobbelte V&#x00E6;sens Vinger, men hvis Herlighed han anskuede midt i
+            Selvkampen, der vilde s&#x00F8;nderslide ham, halv h&#x00E6;vet ved den ene Vinge, hans eget V&#x00E6;sen gav
+            ham&#x201D; (s. 276). Den ulykkelige k&#x00E6;rlighed udg&#x00F8;r dermed et incitament, der er
+            dobbelt s&#x00E5; st&#x00E6;rkt som den lykkelige. Igen er Grundtvigs k&#x00E6;rlighedsfilosofi konstrueret
+            efter platonisk forbillede, idet &#x2018;det dobbelte v&#x00E6;sen&#x2019; skal l&#x00E6;ses som en
+            allusion til <persName key="pe633">Aristofanes'</persName> tale i <persName key="pe622">Platons</persName>
+            <hi rend="italic">
+<rs key="title983" type="title">Symposion</rs>,</hi> hvor de sande
+            elskende udg&#x00F8;r de genforenede halvdele af en oprindelig enhed (<rs type="title" key="title983">Platon 2010</rs>, s. 347).</p>
+          <note type="readMore">
+            <p rend="noIndent">I en pr&#x00E6;diken om hor fra 10. august 1805, som blev holdt i B&#x00F8;strup Kirke p&#x00E5; Langeland, benyttede Grundtvig sig af samme figur: &#x201C;S&#x00E6;t, at vi nu fandt en Anden, der
+            syntes ligesom at v&#x00E6;re skabt for os, hvis Tanker og F&#x00F8;lelser saa ganske stemmede med
+            vore, at det syntes, som vi kun vare to Dele af et og det samme Hele&#x201D; (<rs type="title" key="title531">Grundtvig 1873</rs>, sp. 590-591).</p>
+          </note>
+          <p rend="firstIndent">Den ulykkeligt elskende med sin ene vinge
+            skal derfor ikke l&#x00E6;ngere str&#x00E6;be efter sin tabte halvdel, men derimod efter sk&#x00F8;nhed og
+            viden. Den ulykkelige k&#x00E6;rlighed bliver, som den lykkelige, en ansporing til at str&#x00E6;be ud
+            over sin oprindelse i den elskede person. P&#x00E5; baggrund heraf kunne Grundtvig konkludere,
+            at &#x201C;Qvinden kunde vorde, ikke blot uskadelig, men endog den st&#x00E6;rkeste Spore til
+            Videnskabelighed&#x201D; (s. 278).</p>
+
+          <p rend="firstIndent">I mere j&#x00E6;vne termer fremsatte Grundtvig samme forestilling om,
+            hvordan den ulykkelige k&#x00E6;rlighed ansporede til videnskabelighed, i sine dagb&#x00F8;ger fra
+            Langelandstiden: &#x201C;Gaaende paa den [Forstandens jevnere vej] maa Jeg
+            vel kalde det en Lykke, at min K&#x00E6;rlighed var ulykkelig, siden den gjorde Mig virksom, og
+            bidrog til mine Kundskabers For&#x00F6;gelse&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 383).</p>
+
+        </div>
+      </div>
+
+      <div type="litList">
+        <head xml:id="docIn15">Anvendt litteratur</head>
+        <list type="litList">
+          <item>
+            Arndt, Ernst Moritz (1807) <hi rend="italic">
+<rs type="title" key="title955">Geist der Zeit</rs>
+</hi> [1806].
+            U.st</item>
+          <item>
+            <hi rend="italic">Bibliografien,</hi> se <rs type="title" key="title35">Johansen, Steen
+              1948</rs>
+</item>
+          <item>
+            Bugge, Knud Eyvin (1965) <hi rend="italic">
+<rs type="title" key="title445">Skolen for Livet. Studier over N.F.S. Grundtvigs
+              p&#x00E6;dagogiske tanker.</rs>
+</hi> K&#x00F8;benhavn</item>
+          <item>
+            Christensen, Bent (1998) <hi rend="italic">
+<rs type="title" key="title6">Omkring Grundtvigs Vidskab. En unders&#x00F8;gelse af
+              N.F.S. Grundtvigs forhold til den erkendelsesm&#x00E6;ssige side af det kristeligt
+              n&#x00F8;dvendige Livsengagement</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>
+            <hi rend="italic">
+<rs type="title" key="title1185">Danmarks og Norgis Kirke-ritual
+              1685-1985</rs>
+</hi> (1985). Udg. af Udvalget for konvent for kirke og theologi.
+            U.st</item>
+          <item>
+            Fichte, Johann Gottlieb (1991) <rs key="title577" type="title">&#x201C;Die Grundz&#x00FC;ge des gegenw&#x00E4;rtigen Zeitalters.
+              Dargestellt von Johann Gottlieb Fichte, in Vorlesungen, gehalten zu Berlin, im Jahre
+              1804&#x2013;5&#x201D;</rs> [1806] i <hi rend="italic">
+<rs type="title" key="title518">J.G. Fichte-Gesamtausgabe der Bayerischen Akademie der
+                Wissenschaften</rs>,</hi> 1. r&#x00E6;kke, bind 8, udg. af Reinhard Lauth &amp; Hans Gliwitzky.
+            Stuttgart-Bad Cannstatt</item>
+          <item>
+            Fichte, Johann Gottlieb (1794) <hi rend="italic">
+<rs type="title" key="title1041">Einige Vorlesungen &#x00FC;ber die Bestimmung des
+              Gelehrten</rs>.</hi> Jena &amp; Leipzig</item>
+          <item>
+            Fichte, Johann Gottlieb (1796) <hi rend="italic">
+<rs type="title" key="title2251">Den L&#x00E6;rdes Bestemmelse</rs>,</hi> overs. af Jonas Collin. K&#x00F8;benhavn</item>          
+          <item>
+            Frederiksen, Emil (1948) <hi rend="italic">
+<rs type="title" key="title294">Den unge Grundtvig og andre Essays</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>
+            Glenth&#x00F8;j, Rasmus (2007) <hi rend="italic">
+<rs type="title" key="title526">P&#x00E5; f&#x00E6;drelandets alter. National
+              identitet og patriotisme hos det danske borgerskab 1807-1814</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>
+            Goethe, Johann Wolfgang (1987) <rs type="title" key="title998">&#x201C;Grenzen der Menschheit&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title997">Gedichte 1756-1799</rs>,</hi> udg. af Karl Eibl, s. 332-333. Frankfurt am Main</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1807a) <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title241">Theologisk Maanedsskrivt</rs>,</hi> februar, s. 129-201.
+            K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1807b) <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> marts, s. 249-298.
+            K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1808) <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi eller Udsigt over Eddal&#x00E6;ren for dannede
+            M&#x00E6;nd der ei selv ere Mytologer</rs>.</hi> K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1812) <hi rend="italic">
+<rs type="title" key="title629">Kort Begreb af Verdens Kr&#x00F8;nike i
+            Sammenh&#x00E6;ng</rs>.</hi> K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1827) <rs type="title" key="title1196">&#x201C;Om Religions-Frihed&#x201D;</rs> 2 i <hi rend="italic">
+<rs type="title" key="title1194">Theologisk Maanedsskrift</rs>,</hi> 8, s. 136-171. K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1866) <hi rend="italic">
+<rs type="title" key="title819">Om Religions-Frihed. Tredie og sidste Stykke</rs>
+</hi>
+            [1827]. K&#x00F8;benhavn</item>
+          <item> Grundtvig, N.F.S. (1873) <rs key="title531" type="title">&#x201C;To af
+            Grundtvigs f&#x00F8;rste Pr&#x00E6;dikener&#x201D;</rs> i <rs key="title532" type="title">
+<hi rend="italic">Dansk Kirketidende</hi>
+</rs> 7. september 1873, sp.
+            581-605</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1968) <hi rend="italic">
+<rs type="title" key="title465">Grundtvigs skoleverden i tekster og udkast</rs>
+</hi> 1-2, udg. af
+            K.E. Bugge, bind 1. K&#x00F8;benhavn</item>
+          <item> Grundtvig, Nicolai Frederik Severin (1979) <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>
+</hi> 1-2, udg. af Gustav Albeck, bind 1. K&#x00F8;benhavn</item>
+          <item>
+            Holm, Edvard (1975) <hi rend="italic">
+<rs key="title1221" type="title">Nogle Hovedtr&#x00E6;k af Trykkefrihedstidens
+              Historie 1770-1773</rs>
+</hi> [1885]. K&#x00F8;benhavn</item>
+          <item>
+            Jespersen, Knud J.V. &amp; Ole
+              Feldb&#x00E6;k (2002) <hi rend="italic">
+<rs type="title" key="title993">Dansk
+                udenrigspolitisk historie 2, revanche og neutralitet 1648-1814</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>
+            Johansen, Steen (1948) <hi rend="italic">
+<rs type="title" key="title35">Bibilografi over N.F.S. Grundtvigs skrifter</rs>,</hi>
+            bind 1. K&#x00F8;benhavn</item>
+          <item>
+            J&#x00F8;rgensen, Harald (1978) <hi rend="italic">
+<rs key="title899" type="title">Trykkefrihedssp&#x00F8;rgsm&#x00E5;let i Danmark 1799-1848 &#x2014;
+              Et Bidrag til en Karakteristik af den danske Enev&#x00E6;lde i Frederik VI's og Christian
+                  VIII's Tid</rs>
+</hi> [1944]. K&#x00F8;benhavn</item>
+          <item>
+            Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning,
+                litteraturkritik og poetik 1798-1819</rs>
+</hi> 1-2, bind 1. K&#x00F8;benhavn</item>
+          <item>
+            Lundgreen-Nielsen, Flemming (2007) <rs type="title" key="title1191">Grundtvig og censuren</rs>, i <hi rend="italic">Grundtvig
+                Studier</hi>, s. 44-90. K&#x00F8;benhavn</item>
+          <item>
+            Nielsen, Einar Brandt (1966) <rs key="title1192" type="title">&#x201C;Grundtvigs mathematiske ven&#x201C;</rs> i <hi rend="italic">Grundtvig Studier</hi>, s. 7-38. K&#x00F8;benhavn</item>
+          <item>
+            Oehlenschl&#x00E4;ger, Adam (1807) <hi rend="italic">
+<rs type="title" key="title957">Svar til Baggesen paa hans Brev Noureddin til
+              Aladdin</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>
+            Platon (2010) <rs type="title" key="title983">
+<hi rend="italic">Symposion</hi>
+</rs> i <hi rend="italic">
+<rs key="title982" type="title">Samlede v&#x00E6;rker i ny overs&#x00E6;ttelse</rs>,</hi> bind 2, udg. af J&#x00F8;rgen Mejer &amp; Chr. Gorm
+                    Tortzen. K&#x00F8;benhavn</item>
+          <item>
+            R&#x00F8;nning, Frederik (1907-14) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk
+                &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>
+</hi> 1-4, bind 1:2.
+            K&#x00F8;benhavn</item>
+          <item>
+            Scharling, C.I. (1947) <hi rend="italic">
+<rs type="title" key="title21">Grundtvig og Romantiken belyst ved Grundtvigs Forhold
+              til Schelling</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>
+            Schelling, F.W.J. (1803) <hi rend="italic">
+<rs type="title" key="title634">Vorlesungen &#x00FC;ber die Methode des academischen
+              Studium</rs>.</hi> T&#x00FC;bingen</item>
+          <item>
+            Schiller, Friedrich von (1792) <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert man
+              Universalgeschichte?&#x201D;</rs> i <hi rend="italic">
+<rs key="title951" type="title">Kleinere prosaische Schriften</rs>
+</hi> 1-4, bind 1, s. 54-98.
+            Leipzig</item>
+          <item>
+            Schiller, Friedrich von (1803) <hi rend="italic">
+<rs type="title" key="title340">Die Braut von Messina</rs>.</hi>
+            T&#x00FC;bingen</item>
+          <item>
+            Schiller, Friedrich von (1896) <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina eller de fjendtlige Br&#x00F8;dre</rs>,</hi> overs. af Johannes Magnussen.
+            K&#x00F8;benhavn</item>
+          <item>
+            Simek, Rudolf (2006) <hi rend="italic">
+<rs type="title" key="title79">Lexikon der germanischen Mythologie</rs>.</hi>
+            Stuttgart</item>
+          <item>
+            Skougaard, Peder Nikolai (1804) <hi rend="italic">
+<rs key="title958" type="title">Beskrivelse over Bornholm</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>
+            Steffens, Henrich (1996) <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske
+              Forel&#x00E6;sninger</rs>,</hi> udg. af Johnny
+                Kondrup [1803]. K&#x00F8;benhavn</item>
+          <item>
+            Vind, Ole (1999) <hi rend="italic">
+<rs type="title" key="title25">Grundtvigs historiefilosofi</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>
+            Ziolkowski, Theodore (1990) <hi rend="italic">
+<rs key="title1006" type="title">German Romanticism and Its Institutions</rs>.</hi>
+            Princeton</item>
+          <item>
+            Svendsen, V. (1955) &#x201C;<rs key="title1008" type="title">P. N. Skovgaard og hans
+              Bornholmsbeskrivelse&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title1007">Bornholmske Samlinger</rs>,</hi> s. 121-146. R&#x00F8;nne</item>
+        </list>
+      </div>
+
+
+    </body>
+</text>
+</TEI>

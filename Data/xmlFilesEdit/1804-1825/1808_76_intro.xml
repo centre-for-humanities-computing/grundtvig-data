@@ -1,0 +1,819 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc" type="application/relax-ng-compact-syntax"?> <!--<?xml-model href="introRNC.rnc" type="application/relax-ng-compact-syntax"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+        <title rend="shortForm">Maskeradeballet 1808</title>
+        <author>Holger Berg</author>
+        <editor role="editor3">Johnny Kondrup</editor>
+        <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+        <editor role="editor1">Vibeke A. Pedersen</editor>
+              </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>104 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1808_76_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" xml:id="thisFile" target="1808_76_intro.xml">Indledning</note>
+      </notesStmt>
+      <!--
+        <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>
+        
+      -->
+      <sourceDesc><p /></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="NHB" who="NHB" when="2011-10-05">TEI-header mv. tilpasset</change>
+      <change who="NHB" when="2011-10-24">Litteraturliste p&#x00E5;begyndt</change>
+      <change who="NHB" when="2011-11-03">har arbejdet med indhold i den sidste uge</change>
+      <change who="NHB" when="2011-11-03">bearbejdet dagligt indtil dags dato</change>
+      <change who="KSR" when="2011-11-28">rettelser i tei-header</change>
+      <change who="NHB" when="2011-11-30">rettelser i indhold</change>
+      <change who="NHB" when="2011-12-01">rettelser i indhold</change>
+      <change who="NHB" when="2011-12-05">rettelser i indhold</change>
+      <change who="NHB" when="2011-12-14">rettelser i indhold</change>
+      <change who="NHB" when="2011-12-15">rettelser i indhold</change>
+      <change who="NHB" when="2011-12-22">rettet indhold og kodning dagligt i den forgangne uge</change>
+      <change who="NHB" when="2011-12-23">tilf&#x00F8;jet sidetal til artikler</change>
+      <change who="NHB" when="2012-01-03">rettet indhold efter VAPs anbefalinger</change>
+      <change who="NHB" when="2012-01-04">rettet metrikbeskrivelse efter VAPs anbefalinger</change>
+      <change who="NHB" when="2012-01-04">rettet punktum i lister</change>
+      <change who="NHB" when="2012-01-06">indf&#x00F8;rt rettelser efter VAPs kommentarer</change>
+      <change who="NHB" when="2012-01-09">henvisninger til tidslinjen harmoniseret</change>
+      <change who="NHB" when="2012-01-12">indf&#x00F8;rt rettelser efter Flemming Lundgreen-Nielsens kommentarer</change>
+      <change who="NHB" when="2012-01-09">rettet metrik og sideangivelser</change>
+      <change who="NHB" when="2012-01-19">Rettet titleStmt</change>
+      <change who="NHB" when="2012-01-19">Begyndt at indf&#x00F8;re Johnnys rettelser</change>
+      <change who="NHB" when="2012-01-23">Afsluttet rettelser af indhold, indsat unicodes</change>
+      <change who="NHB" when="2012-01-24">Indsat citat fra Nyeste Skilderie af Kbh.</change>
+      <change who="NHB" when="2012-02-20">rettet TEIheader</change>
+      <change who="NHB" when="2012-03-07">rettet &#x00E5;rstal: skrives altid helt ud</change>
+      <change who="NHB" when="2012-03-08">rettet fejl i metrik</change>
+      <change who="NHB" when="2012-03-09">rettet metrik efter nye retningslinjer</change>
+      <change who="NHB" when="2012-03-27">indsat nyt anker</change>
+      <change who="NHB" when="2012-05-07">rettet titlen p&#x00E5; Kruses drama og andet i litteraturlisten</change>
+      <change who="NHB" when="2012-06-12">&#x00E6;ndret indhold af afsnittet om Skamst&#x00F8;tten</change>
+      <change who="NHB" when="2012-06-13">indsat docIn-id'er, tilpasset links</change>
+      <change who="NHB" when="2012-07-02">title602 til title147</change>
+      <change who="NHB" when="2012-10-26">tilpasset henvisning til Registranten</change>
+      <change who="NHB" when="2012-11-19">persName fjernet fra litList</change>
+      <change who="NHB" when="2013-01-31">valid, undtaget ref til timelines og div type litList</change>
+      <change who="NHB" when="2013-04-02">valid, undtaget ref til timelines</change>
+      <change who="KN" xml:id="KN" when="2013-08-13">Flyttet en start-rs i linje 263</change>
+      <change xml:id="JT" who="JT" when="2013-09-26">m&#x00E6;slinger pgs. tidslinje-henvisning beholdt i forb. med oplast af 1.3</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+    <change who="NHB" when="2014-03-20">valideret</change>
+         <change who="NHB" when="2016-04-13">valid</change>
+</revisionDesc>
+  </teiHeader>
+  <text type="intro">
+    <body>
+      <div>
+        <head xml:id="docIn1">Karakteristik</head>
+        <p rend="noIndent">
+<hi rend="italic">Maskeradeballet i Dannemark 1808. Et Syn</hi> var Grundtvigs f&#x00F8;rste selvst&#x00E6;ndige udgivelse. Debutbogen var et indl&#x00E6;g i en debat om det s&#x00F8;mmelige i at feste kort tid efter den dobbelte nationale ulykke: det britiske bombardement af K&#x00F8;benhavn i september 1807 og konfiskeringen af den danske fl&#x00E5;de i oktober. Grundtvig forfulgte samtidig andre m&#x00E5;l. P&#x00E5; det ideologiske plan indtog han som fortaler for en oldnordisk ren&#x00E6;ssance en s&#x00E6;rpr&#x00E6;get position blandt sine konservative kirkelige &#x00E5;ndsf&#x00E6;ller. P&#x00E5; det ganske jordn&#x00E6;re, personlige plan skulle <hi rend="italic">Maskeradeballet 1808</hi> lette adgangen til K&#x00F8;benhavns dannede kredse. Der var derfor lagt v&#x00E6;gt p&#x00E5; kompositionen og de <ref type="docIn" target="#docIn24">metriske former</ref>.</p>
+      </div>
+      <div>
+        <head xml:id="docIn2">V&#x00E6;rkets baggrund</head>
+        <div>
+          <head xml:id="docIn3">Udsagn om v&#x00E6;rkets anledning og tilblivelse</head>
+          <p rend="noIndent">I anden udgave oplyste Grundtvig, at v&#x00E6;rket var skrevet &#x201C;i Begyndelsen af 1808&#x201D; (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 3). <hi rend="italic">Maskeradeballet 1808</hi> udkom 15. marts, s&#x00E5; kun januar, februar og begyndelsen af marts kommer p&#x00E5; tale. Endvidere st&#x00E5;r der: &#x201C;Rygtet om Hovedstadens Forlystelser umiddelbar efter Tugtelsen 1807, og en Maskerade paa Langeland, hvor jeg da opholdt mig, gave Anledning saavel til Synet selv, som til dets Indkl&#x00E6;dning og Navn.&#x201D; (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 2) </p>
+          <p rend="noIndent"> Hvad ang&#x00E5;r maskeraden p&#x00E5; Langeland, er herreg&#x00E5;rden Tranek&#x00E6;r det mest sandsynlige sted. Herren p&#x00E5; Egel&#x00F8;kke, <persName key="pe22">Carl Frederik Steensen-Leth</persName>, omtales som en &#x201C;munter Selskabsbroder&#x201D;, men hans strenge moder <persName key="pe521">Anna Sophie</persName> tillod ikke s&#x00E5;danne selskaber d&#x00E9;r (<rs type="title" key="title523">Graae 1906</rs>, s. 222). Den teaterglade og formuende <persName key="pe511">Frederik Ahlefeldt-Laurvig</persName> omdannede derimod Tranek&#x00E6;r til centrum for egnens selskabsliv (<rs type="title" key="title506">Ahlefeldt-Laurvig 1929</rs>, is&#x00E6;r s. 201-249).</p>
+          <p rend="noIndent"> Det har ikke kunnet rekonstrueres, hvor Grundtvig l&#x00E6;ste eller h&#x00F8;rte om hovedstadens forlystelser. I de fynske aviser har han dog kunnet f&#x00F8;lge en debat om, hvorvidt &#x201C;offentlige Forlystelser f. Ex. Komoedie, Masqverader, Baller &amp;c.&#x201D; burde v&#x00E6;re tilladt &#x201C;i Danmark under n&#x00E6;rv&#x00E6;rende Omst&#x00E6;ndigheder&#x201D;, hvor &#x201C;et elsket F&#x00F6;deland og Kongehuus er i Fare&#x201D; (<rs type="title" key="title468">
+<hi rend="italic">Fyens Stifts Kongelig allene privilegerede Adresse-Avis og Avertissements-Tidende</hi>
+</rs> (<hi rend="italic">Fyens Stiftstidende</hi>), 20. oktober 1807, s. 540). </p>
+          <note type="readMore">
+<p rend="noIndent">Redakt&#x00F8;ren af <hi rend="italic">
+<rs type="title" key="title468">Fyens Stiftstidende</rs>,</hi>
+              <persName key="pe527">S&#x00F8;ren Hempel</persName>, bragte harmfulde l&#x00E6;serbreve (s. 547 f., 560), mens <persName key="pe528">Christian Iversen</persName> &#x00E5;bnede sin avis for indl&#x00E6;g til forlystelsernes forsvar (<hi rend="italic">
+<rs type="title" key="title525">Den Kongelig autoriserede Fyens Avertissements Tidende</rs>;</hi> se <rs type="title" key="title20">R&#x00F8;nning 2:1</rs>, s. 51).</p>
+</note>
+        </div>
+        <div>
+          <head xml:id="docIn25">Den umiddelbare politiske baggrund</head>
+          <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> tog stilling til diskussioner i k&#x00F8;lvandet p&#x00E5; det britiske bombardement af K&#x00F8;benhavn, byens overgivelse og konfiskeringen af den danske fl&#x00E5;de. Der var meget delte meninger om, hvem der bar ansvaret for tabene. Alle kr&#x00E6;vede h&#x00E6;vn over briterne for deres grusomhed (<rs type="title" key="title526">Glenth&#x00F8;j 2007</rs>, s. 74 og kap. 6). En del k&#x00F8;benhavnere drog den regerende <persName key="pe96">kronprins Frederik (senere 6.)</persName> til ansvar, fordi han i august havde ladt hovedstaden i stikken og var draget til h&#x00E6;ren i Holsten.</p>
+          <note type="readMore">
+<p rend="noIndent">Et udbredt rygte h&#x00E6;ftede sig ved en anden kl&#x00E6;dedragt end den, <hi rend="italic">Maskeradeballet 1808</hi> omtaler: <persName key="pe96">kronprins Frederik</persName> havde forkl&#x00E6;dt sig som matrosdreng og <persName key="pe105">Christian 7.</persName> som bondepige, da de krydsede Storeb&#x00E6;lt p&#x00E5; vej til Holsten (<rs type="title" key="title530">Christensen 2007</rs>, s. 152).</p>
+          </note>
+          <p rend="noIndent">Derimod drog en tredje gruppe af konservativt kirkelige indl&#x00E6;g det danske folk til (med)ansvar. Nederlagene fremstod her som Herrens tugtelse af sit udvalgte, men syndige folk.</p>
+          <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> ber&#x00F8;rer disse tre aspekter af den danske debat. Grundtvig frikendte for det f&#x00F8;rste <persName key="pe96">kronprinsen</persName> ved at betone hans offervilje: p&#x00E5; s. 7 holdes &#x201C;Den &#x00C6;dle&#x201D; tilbage fra at ofre sig selv for oldingen Danmark (se <rs type="title" key="title526">Glenth&#x00F8;j 2007</rs>, s. 145 f.).</p>
+          <p rend="noIndent">For det andet er pligten til at tage h&#x00E6;vn indlejret i v&#x00E6;rkets opbygning. To historiske forbilleder viser, hvordan britisk ud&#x00E5;d blev fulgt af dansk h&#x00E6;vn: <rs type="myth" key="myth405">Regnar Lodbrog</rs> opfordrer til at tage h&#x00E6;vn, og hans s&#x00F8;nner er lydh&#x00F8;re. <persName key="pe444">Svend Tvesk&#x00E6;g</persName> s&#x00F8;rger for, at <persName key="pe443">Gunhilds</persName> sidste ord g&#x00E5;r i opfyldelse: &#x201C;blodig vil H&#x00F8;stdagen vorde&#x201D; (s. 17, strofe 2, vers 6). Gennem oldingen og koret opfordres dramaets l&#x00E6;sere desuden fra f&#x00F8;rst til sidst til at f&#x00F8;lge trop.</p>
+          <note type="readMore">
+<p rend="noIndent">Versem&#x00E5;let i oldingens d&#x00F8;dskvad bidrager ogs&#x00E5; til at fremh&#x00E6;ve budskabet. Det for et dansk publikum endnu forholdsvist uvante blankvers indf&#x00F8;res der, hvor oldingen skifter fra skildringen af forgangne tider til en opfordring, fra retorikkens <hi rend="italic">genus iudiciale</hi> til <hi rend="italic">genus deliberativum.</hi> Se afsnittet om <ref type="docIn" target="#docIn24">de metriske former</ref>.</p>
+</note>
+          <p rend="noIndent">For det tredje bakkede <hi rend="italic">Maskeradeballet 1808</hi> p&#x00E5; s&#x00E6;regen vis op om de konservative gejstlige og deres opg&#x00F8;r med den rationalistiske l&#x00E6;re om en deistisk og udpr&#x00E6;get barmhjertig Gud. Afsnittet om <ref target="#docIn34" type="docIn">synkretisme</ref> uddyber Grundtvigs religi&#x00F8;se s&#x00E6;rpr&#x00E6;g og hans brug af g&#x00E6;ngse symboler fra skrifterne om danske h&#x00E6;vntogter.</p>
+        </div>
+        <div>
+          <head xml:id="docIn4">Den biografiske baggrund</head>
+          <p rend="noIndent">Grundtvig havde senest i september 1807 besluttet sig til at opsige sin stilling som husl&#x00E6;rer p&#x00E5; herreg&#x00E5;rden Egel&#x00F8;kke for at s&#x00F8;ge mod K&#x00F8;benhavn. Udgivelsen af <hi rend="italic">Maskeradeballet 1808</hi> indgik i hans plan om at etablere sig som forfatter i hovedstaden. V&#x00E6;rkets indhold peger dog tilbage p&#x00E5; de tre &#x00E5;r p&#x00E5; Langeland.</p>
+          <p rend="noIndent">Tiden som feltpr&#x00E6;dikant l&#x00E5; f&#x00E5; m&#x00E5;neder tilbage. I efter&#x00E5;ret 1807 havde Grundtvig fors&#x00F8;gt at opildne Langelands landev&#x00E6;rn til at forsvare f&#x00E6;drelandet. Det langelandske landev&#x00E6;rn var imidlertid, som landev&#x00E6;rn var flest: det manglede b&#x00E5;de ildhu og kamperfaring (<rs type="title" key="title522">Graae 1880</rs>, s. 57-60). Grundtvig priste forf&#x00E6;drenes bedrifter i sin afskedspr&#x00E6;diken (se <hi rend="italic">Registranten</hi> fasc. <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2466">1.d.</ref>). <hi rend="italic">Maskeradeballet 1808</hi> formidlede lignende forbilleder til de bel&#x00E6;ste, bedre stillede lag i samfundet, til dem, der n&#x00F8;d bylivets gl&#x00E6;der, og som alle, m&#x00E6;nd som kvinder, var fritaget for milit&#x00E6;rtjeneste. </p>
+          <p rend="noIndent">Dramaet udtrykker Grundtvigs afsky for frivole omgangsformer. Forargelsen var blevet n&#x00E6;ret af de tre &#x00E5;r p&#x00E5; Langeland. En bevaret pr&#x00E6;diken fra B&#x00F8;strup Kirke 1805 afledte allerede den almene drikf&#x00E6;ldighed af gudl&#x00F8;sheden i samfundets &#x00F8;vre lag (<rs type="title" key="title531">Grundtvig 1873</rs>, <hi rend="italic">Registranten</hi> fasc. nr. <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2463">1. a.</ref>; se ogs&#x00E5; pr&#x00E6;dikenerne fra 1806-1807 i fasc. <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2464">1.b.</ref> og <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2465">1.c.</ref>). I begyndelsen af 1807 havde Grundtvig s&#x00E5; sat sig for at skrive mod luksus (<rs type="title" key="title20">R&#x00F8;nning 2:1</rs>, s. 1 og <rs type="title" key="title335">Grundtvig 1807b</rs>, s. 288, note 1). Hans forargelse blev n&#x00E6;ppe mindsket af
+            m&#x00F8;det med de galante milit&#x00E6;rfolk i efter&#x00E5;ret 1807. Begivenhederne i K&#x00F8;benhavn gav med andre ord Grundtvig en l&#x00E6;nge ventet anledning til p&#x00E5; tryk at kritisere den l&#x00F8;sslupne omgang. </p>
+        </div>
+        <div>
+          <head xml:id="docIn5">Den kulturpolitiske baggrund</head>
+          <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> kan overordnet kategoriseres som et opg&#x00F8;r med den florissante tid, velstandsperioden omkring &#x00E5;r 1800. Grundtvig ville mere konkret tr&#x00E6;nge maskeraderne og klublivet tilbage ved hj&#x00E6;lp af to dengang velansete begreber: &#x2018;Tarvelighed&#x2019; og sentimental patriotisme. Deres anseelse dalede snart, og det har haft indflydelse p&#x00E5; Grundtvigforskningens negative vurdering af de &#x00E6;stetiske kvaliteter i <hi rend="italic">Maskeradeballet 1808.</hi> V&#x00E6;rket forst&#x00E5;s bedre, hvis man s&#x00E6;tter sig ind i den kulturpolitiske baggrund. Den n&#x00F8;jsomme dyd &#x2018;Tarvelighed&#x2019; uddybes i <ref target="#docIn36" type="docIn">et delafsnit</ref> under afsnittet om synkretisme. Grundtvig appellerede til den sentimentale patriotisme ved p&#x00E5; tidstypisk vis at kombinere taler og pantomimer, de s&#x00E5;kaldte deklamationer og tableaux vivants. Dette patriotiske
+            udtryk behandles efter gennemgangen af de to anst&#x00F8;dssten.</p>
+          <div>
+            <head xml:id="docIn26">Maskeradeballer</head>
+            <p rend="noIndent">Maskerader med bal var en yderst popul&#x00E6;r forn&#x00F8;jelse i &#x00E5;rtierne omkring 1800. I nogle vintre afholdtes der i K&#x00F8;benhavn en maskerade om ugen (<rs type="title" key="title587">Pedersen 1998</rs>). <hi rend="italic">Maskeradeballet 1808</hi> knyttede an til en forudg&#x00E5;ende debat om den rette form og deltagerkreds. I marts 1803 havde en kongelig forordning gjort det muligt for offentlige etablissementer at afholde maskerader mod forudg&#x00E5;ende tilladelse. I den f&#x00F8;lgende maskerades&#x00E6;son 1803-1804 &#x00E5;bnede tidsskriftet <rs type="title" key="title533">
+<hi rend="italic">Politivennen</hi>
+</rs> s&#x00E5; at sige ballet med en r&#x00E6;kke kritiske artikler. De skosede is&#x00E6;r utugten og den sociale sammenblanding. </p>
+            <note type="readMore">
+<p rend="noIndent">En kommentator advarede ethvert &#x201C;honet Fruentimmer&#x201D; mod at m&#x00E6;nge sig med &#x201C;de gemeneste Skj&#x00F8;ger og liderlige Tjenestepiger&#x201D; ved maskeradeballene (<rs type="title" key="title584">Nielsen 1804</rs>, s. 4792 f.). Andre gyste ved tanken om, at en g&#x00E6;st forkl&#x00E6;dt som skomagersvend m&#x00E5;ske virkelig var skomagersvend. Et ekko af denne kritik findes i dramaets indledende s&#x00E6;tning: &#x201C;Skarer af alle St&#x00E6;nder samledes [...]&#x201D; (<hi rend="italic">Maskeradeballet 1808,</hi> s. 5). Grundtvig har givetvis kendt indl&#x00E6;ggene. Hans f&#x00F8;rste artikler er trykt i samme &#x00E5;rgang af <hi rend="italic">
+<rs type="title" key="title533">Politivennen</rs>,</hi> en artikel s&#x00E5;gar i samme nummer som den omtalte maskeradekritik.</p>
+            </note>
+            <p rend="noIndent">I 1805 fors&#x00F8;gte <persName key="pe39">Biskop Balle</persName> ad tjenstlig vej at f&#x00E5; lagt begr&#x00E6;nsninger p&#x00E5; maskeraderne, men forg&#x00E6;ves (<rs type="title" key="title588">Nystr&#x00F8;m 1913</rs>, s. 208 f.). Maskeradens venner tog sj&#x00E6;ldnere del i debatten. En afbalanceret vurdering b&#x00F8;r dog ikke overse maskerader med patriotisk anstr&#x00F8;g: 1804 afholdte Hofteatret &#x201C;H&#x00F8;itideligheder <hi rend="italic">en Masque</hi> i Anledning af den 2. April 1801 [slaget p&#x00E5; Rheden]&#x201D; (<rs type="title" key="title538">
+<hi rend="italic">Nyeste Skilderie af Kj&#x00F8;benhavn</hi> 1804</rs>, nr. 37, 6. april 1804, s. 592).</p>
+          </div>
+          <div>
+            <head xml:id="docIn27">Klubber</head>
+            <p rend="noIndent">Private klubber havde l&#x00E6;nge f&#x00F8;r 1803 afholdt maskerader, og forn&#x00F8;jelsen spredte sig herigennem ogs&#x00E5; til provinsen. Den nyoprettede Odense Borgerklub annoncerede eksempelvis et <hi rend="italic">&#x201C;privat Ball en Masque&#x201D;</hi> til den 23. december 1807 (<hi rend="italic">
+<rs type="title" key="title468">Fyens Stiftstidende</rs>,</hi> s. 644, 656).</p>
+            <p rend="noIndent">Det var alts&#x00E5; ingen ringe modstander, som den unge Grundtvig her drog i felten mod. Klubberne havde siden 1770'erne udviklet sig til indbegrebet af borgerlig selskabelighed. Deres lystige viser vandt efterh&#x00E5;nden en fremtr&#x00E6;dende plads i tidens digtsamlinger (<rs type="title" key="title466">Andersen 1934</rs>, s. 891-913). Viserne aktualiserede antikke lovsange over livets gl&#x00E6;der: <persName key="pe512">Horats'</persName> motto <hi rend="italic">carpe diem</hi> ligger til grund for visen &#x201C;Fryd Dig ved Livet&#x201D; (<rs type="title" key="title328">Frankenau 1826</rs>, 1. da. udg. 1797). Netop denne popul&#x00E6;re vise citerer <hi rend="italic">Maskeradeballet 1808</hi> (s. 5).</p>
+            <note type="readMore">
+<p rend="noIndent">Klubviserne havde Grundtvig allerede i 1805 forkastet i en kommentar om musik i sine <rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> (1</rs>, s. 242). En anmeldelse beskrev drikkeriet i klubberne (<rs type="title" key="title166">Grundtvig 1807d</rs>, s. 261 f.), mens bidraget <rs type="title" key="title341">
+<hi rend="italic">Om Religion og Liturgie</hi> (1807a</rs>, s. 160) (fejl)citerede drikkevisen &#x201C;<rs type="title" key="title504">Den Skaberen skj&#x00E6;nkte en oplyst Forstand (1777)</rs>&#x201D; af den vovede <persName key="pe522">Johan Vibe</persName>: &#x201C;Jeg frygter slet ikke at blive fortabt / Af den som har Vinen og Pigerne skabt&#x201D; (strofe 5, vers 3-4).<!-- (L&#x00E6;s den originale ordlyd i <ref>Punktkommentaren</ref> til Om Religion og Liturgie.) -->
+                <hi rend="italic">Maskeradeballet 1808</hi> citerer p&#x00E5; lignende vis, dvs. uden angivelse af forfatter og titel, vers fra to s&#x00E6;rdeles popul&#x00E6;re drikkeviser: &#x201C;<rs type="title" key="title331">Fryd Dig ved Livet</rs>&#x201D; (da. udg. 1797) og &#x201C;<rs type="title" key="title328">Nyd Livets korte Morgenr&#x00F8;de</rs>&#x201D; (1. udg. senest 1806, hvor den angives som melodi til en anden vise). En henvisning til digteren var ogs&#x00E5; overfl&#x00F8;dig. <persName key="pe509">Rasmus Frankenaus</persName> viser var p&#x00E5; alles l&#x00E6;ber.</p>
+            </note>
+            <p rend="noIndent">
+              <persName key="pe509">Frankenau</persName> var sensualist, men han s&#x00E5; ingen konflikt mellem livsbekr&#x00E6;ftende, anakreontisk digtning og en helhjertet patriotisme. <persName key="pe509">Frankenau</persName> udgav i januar 1808 et <rs type="title" key="title548">elegisk kvad om K&#x00F8;benhavns bombardement</rs>. Det var Grundtvig, der konstruerede en mods&#x00E6;tning mellem hedonisme og patriotisme ved at udplukke vers fra drikkeviserne og stille dem op imod l&#x00E6;ngere taler og kvad i tidens f&#x00F8;lelsesbetonede stil. </p>
+          </div>
+          <div>
+            <head xml:id="docIn28">Tableaux vivants og sentimental patriotisme</head>
+            <p rend="noIndent">Kombinationen af deklamationen og tableauet, af talen og pantomimen, skildrede Grundtvig som maskeradens mods&#x00E6;tning. P&#x00E5; det ydre plan havde tableauet og maskeraden visse ligheder. Udkl&#x00E6;dning og mimik indgik i begge. Tableauets danske glansperiode l&#x00E5; som maskeradens i perioden fra 1780 til 1810. Forskellen var hovedsageligt stemningen: tableauet var liges&#x00E5; h&#x00F8;jtideligt, som maskeraden var munter.</p>
+            <p rend="noIndent">Tableauet fulgte som klimaks p&#x00E5; deklamationer lig de r&#x00F8;rende kvad i <hi rend="italic">Maskeradeballet 1808.</hi> Den bagvedliggende teori gik ud p&#x00E5;, at ord ikke l&#x00E6;ngere slog til, n&#x00E5;r f&#x00F8;lelserne kulminerede. I stedet fulgte sm&#x00E5; optrin, hvor skuespillere udf&#x00F8;rte symbolladede handlinger foran kunstf&#x00E6;rdige kulisser.</p>
+            <p rend="noIndent">Prosapassagerne i <hi rend="italic">Maskeradeballet 1808</hi> kan l&#x00E6;ses som regianvisninger for et tillempet tableau vivant: billedet af den bl&#x00F8;dende Dana holdes frem (s. 5); dans akkompagneres af &#x201C;r&#x00E6;dsom lysti[g]&#x201D; musik (s. 6); oldingen jamrer og sitrer (s. 7). <hi rend="italic">Maskeradeballet 1808</hi> tilpasser ganske vist r&#x00E6;kkef&#x00F8;lgen af pantomime og deklamation og bytter det sprogl&#x00F8;se klimaks ud med korsang. Her samles hedninge og kristne om ligb&#x00E5;let og synger om at rejse en h&#x00F8;j med en bautasten (se afsnittet om <ref target="#docIn37" type="docIn">skamst&#x00F8;tten</ref>). I de forudg&#x00E5;ende &#x00E5;r havde skuespillere rejst et &#x201C;H&#x00E6;ders Minde af Anden April 1801&#x201D; som sidste optrin i tableauet (se illustrationerne i <rs type="title" key="title601">Lyngby 2001</rs> s.
+              x-xi).</p>
+            <p rend="noIndent"> S&#x00E5;danne pantomimer opf&#x00F8;rtes f&#x00F8;rst p&#x00E5; teatre, og Grundtvig har l&#x00E6;st det kendte stykke <rs type="title" key="title583">
+<hi rend="italic">Lagertha</hi>
+</rs> (trykt og opf&#x00F8;rt som ballet 1801; omtalt nedenfor i afsnittet om <ref target="#docIn30" type="docIn">
+<persName key="pe5">Christen Pram</persName>
+</ref>). Efter 1801 blev tableauer kendt over det ganske danske land. Mens <persName key="pe509">Frankenau</persName> i Grundtvigs drama repr&#x00E6;senterede klubvisen, var forbilledet for tableauet skuespilleren <persName key="pe574">H.C. Knudsen</persName>. Efter Slaget p&#x00E5; Reden 1801 rejste <persName key="pe574">Knudsen</persName> Danmark og Slesvig tyndt p&#x00E5; det, han kaldte en Dannebrogsvalfart, med patriotiske tableauer (<rs type="title" key="title601">Lyngby 2001</rs>).</p>
+            <note type="readMore">
+              <p rend="noIndent">Grundtvig har helt sikkert kendt <persName key="pe574">Knudsens</persName> tableauer, og han overv&#x00E6;rede sandsynligvis seancen i december 1801 i Vordingborg Kirke, n&#x00E6;r Udby. Oldingen i <hi rend="italic">Maskeradeballet 1808</hi> er inspireret af <persName key="pe574">Knudsens</persName> roller og dennes forbillede, skjalden <persName key="pe575">Ossian</persName>, som var en central skikkelse i tidlig romantisk litteratur (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 231 f.).</p>
+            </note>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn6">V&#x00E6;rkets forl&#x00E6;g</head>
+        <p rend="noIndent">I det f&#x00F8;lgende gennemg&#x00E5;s f&#x00F8;rst andre genrer og derefter forl&#x00E6;g for enkelte passager i <hi rend="italic">Maskeradeballet 1808.</hi> En grundigere og mere detaljeret gennemgang giver <rs type="title" key="title14">Lundgreen-Nielsen (1980</rs>, s. 228-234, 429 f.). </p>
+        <div>
+          <head xml:id="docIn29">Visioner</head>
+          <p rend="noIndent"> Undertitlen &#x201C;Et Syn&#x201D; karakteriserer v&#x00E6;rkets sigte, men betegnelsen rejser &#x2013; hvad genren ang&#x00E5;r &#x2013; egentlig flere sp&#x00F8;rgsm&#x00E5;l, end den besvarer. Der eksisterede flere litter&#x00E6;re former for visioner. Grundtvig satte i andenudgaven (<rs type="title" key="title334">1815</rs>) da ogs&#x00E5; parentes om &#x201C;<hi rend="italic">(Et Syn)</hi>&#x201D;, og mindskede dermed undertitlens betydning. </p>
+          <p rend="noIndent">
+            <hi rend="italic">Maskeradeballet 1808</hi> har mest til f&#x00E6;lles med 1700-tallets didaktiske syn. Digtere som <persName key="pe172">Ludvig Holberg</persName> og <persName key="pe19">Johannes Ewald</persName> anskueliggjorde deres moralske og politiske synspunkter gennem allegoriske visioner i prosa, digt og drama. Ved at betegne dramaet som et syn opn&#x00E5;ede Grundtvig en digterisk frihed i forhold til b&#x00E5;de historiske forl&#x00E6;g og til samtiden; sammenblandingen af hedensk og kristen l&#x00E6;re i dramaets slutning (s. 19 f.) var kontroversiel. Genren tillod ogs&#x00E5; en mere l&#x00F8;s sammens&#x00E6;tning af optrin. </p>
+          <note type="readMore">
+<p rend="noIndent"> Grundtvig fravalgte det oplagte romantiske syn. <hi rend="italic">Maskeradeballet 1808</hi> n&#x00E6;vner s. 4 vel et lyrisk jeg, som lytter til &#x201C;Taleruner&#x201D; og h&#x00F8;rer &#x201C;Dr&#x00F8;mme&#x201D;. Dette er et uddrag fra <hi rend="italic">
+<rs type="title" key="title320">H&#x00E1;vam&#x00E1;l</rs>
+</hi> (da. <hi rend="italic">Den H&#x00F8;jes tale</hi>) af skjaldenes gud, <rs type="myth" key="myth59">Odin</rs>. Men dette lyriske jeg er frav&#x00E6;rende i selve dramaet. Grundtvig havde tidligere forfattet en rendyrket romantisk vision, <rs type="title" key="title165">
+<hi rend="italic">Synet</hi> (Grundtvig 1888b</rs>, antagelig skrevet 1807; <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs> s. 203-207; <hi rend="italic">
+<rs type="title" key="title35">Bibliografien 1</rs>,</hi> nr. 79; se <hi rend="italic">Registranten,</hi>
+              <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2123">NkS 3091 4<hi rend="raised">o</hi>
+</ref>). </p>
+          </note>
+        </div>
+        <div>
+          <head xml:id="docIn7">Sk&#x00F8;nlitter&#x00E6;re bearbejdelser af oldnordisk stof</head>
+          <p rend="noIndent"> Trykte dramaer kan have inspireret enkelte scener i <hi rend="italic">Maskeradeballet 1808.</hi>
+            <rs type="title" key="title14">Flemming Lundgreen-Nielsen (1980)</rs> n&#x00E6;vner blandt andre <persName key="pe19">Johannes Ewalds</persName>
+            <rs type="title" key="title348">
+<hi rend="italic">Balders D&#x00F8;d</hi> (1774)</rs> og <persName key="pe382">Enevold de Falsens</persName>
+            <rs type="title" key="title484">
+<hi rend="italic">Festen i Valhal</hi> (u.&#x00E5;.: 1796)</rs>. Det oldnordiske var blevet et popul&#x00E6;rt stof i dansk sk&#x00F8;nlitteratur og teaterkunst. </p>
+        </div>
+        <div>
+          <head xml:id="docIn30">
+<persName key="pe5">Christen Pram</persName>
+</head>
+          <p rend="noIndent"> I 1801 opf&#x00F8;rtes den f&#x00F8;rste ballet med nordisk stof. <rs type="title" key="title583">
+<hi rend="italic">Lagertha</hi>
+</rs> (<ref type="docOut" target="bookInventory1805.xml#docIn100">Bogfortegnelse 1805</ref>, nr. 100) var skrevet af <persName key="pe5">Christen Pram</persName> og blev trykt f&#x00F8;rste gang i 1789 som et fors&#x00F8;g p&#x00E5; at forene opera, ballet og recitativer. S&#x00F8;rgespillet er navngivet efter dronningen <rs type="myth" key="myth413">Ladgerd</rs>. Det har bipersonen (&#x00E6;gtef&#x00E6;llen <rs type="myth" key="myth405">Regnar Lodbrog</rs>) og den grusomme handling til f&#x00E6;lles med <hi rend="italic">Maskeradeballet 1808.</hi> Dramaturgisk er begge besl&#x00E6;gtet med tableauet (se <ref target="#docIn28" type="docIn">afsnittet om tableauer</ref>). </p>
+          <p rend="noIndent">
+<persName key="pe5">Christen Pram</persName> var bedst kendt for <rs type="title" key="title347">
+<hi rend="italic">St&#x00E6;rkodder. Et Digt i femten Sange</hi>
+</rs> (1785). I denne episke gendigtning sidder <rs type="myth" key="myth185">St&#x00E6;rkodder (Starkad)</rs> som olding p&#x00E5; en fjern klippekyst og ser tilbage p&#x00E5; sine bedrifter. Oldingen taler i f&#x00F8;rste sangs strofe 10 (s. 6 f.) om b&#x00F8;lgen fra Danmarks kyster med samme vemod som oldingen Danmark <hi rend="italic">Maskeradeballet 1808,</hi> s. 7. </p>
+        </div>
+        <div>
+          <head xml:id="docIn8">
+<persName key="pe3">Adam Oehlenschl&#x00E4;ger</persName>
+</head>
+          <p rend="noIndent">
+            <persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName>
+            <rs type="title" key="title306">
+<hi rend="italic">Nordiske Digte</hi> (1807a)</rs> modtog og l&#x00E6;ste Grundtvig i december 1807. (Se <!-- indf&#x00F8;j link i januarudgaven -->indledningen til &#x201C;<rs type="title" key="title167">Om Oehlenschl&#x00E4;gers Baldur hiin Gode</rs>&#x201D;). <hi rend="italic">Maskeradeballet 1808</hi> er is&#x00E6;r inspireret af skuespillet <rs type="title" key="title589">
+<hi rend="italic">Hakon Jarl hin Rige</hi> (Oehlenschl&#x00E4;ger 1807b)</rs> med dets dramatisering af historisk stof i blankvers (se afsnittet om <ref target="#docIn24" type="docIn">de metriske former</ref>). Grundtvig tog samtidig ved l&#x00E6;re af <persName key="pe3">Oehlenschl&#x00E4;gers</persName> programmatiske udsagn om, at dramaets virkning er vigtigere end en helst&#x00F8;bt form (<rs type="title" key="title13">Lundgreen-Nielsen 1965</rs>, s. 96 f.).</p>
+          <p rend="noIndent">Grundtvigs st&#x00F8;rste anke mod <rs type="title" key="title306">
+<hi rend="italic">Nordiske Digte</hi>
+</rs> var <persName key="pe3">Oehlenschl&#x00E4;gers</persName> fejlagtige forst&#x00E5;else af enkelte mytologiske figurer. Artiklen &#x201C;<rs type="title" key="title167">Om Oehlenschl&#x00E4;gers Baldur hiin Gode</rs>&#x201D; gentog Grundtvigs tidligere krav om, at gendigtninger m&#x00E5;tte forblive tro mod &#x00E5;nden i oldnordisk digtning. Dette strenge krav skulle <hi rend="italic">Maskeradeballet 1808</hi> indfri.</p>
+        </div>
+        <div>
+          <head xml:id="docIn31">
+<persName key="pe7">P.F. Suhm</persName>
+</head>
+          <p rend="noIndent">De sk&#x00F8;nlitter&#x00E6;re forfattere hentede deres stof fra et begr&#x00E6;nset antal af historiske v&#x00E6;rker og kildeudgivelser fra is&#x00E6;r slutningen af 1700-tallet. St&#x00F8;rst betydning havde <persName key="pe7">P.F. Suhm</persName>. I andenudgaven (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>) oplyste Grundtvig, at hans &#x201C;aldeles tro historisk[e] Fort&#x00E6;lling&#x201D; p&#x00E5; s. 11-13 bygger p&#x00E5; <persName key="pe7">Suhm</persName> (citat s. 12; se f&#x00F8;rsteudgaven 1808, s. 15-18). Grundtvig ejede de f&#x00F8;rste tre bind af <rs type="title" key="title321">Suhms Danmarkshistorie (1782-1828)</rs> (<ref type="docOut" target="bookInventory1805.xml#docIn15">Bogfortegnelse 1805</ref> nr. 15). N&#x00E5;r det passede hans form&#x00E5;l, fulgte Grundtvig <persName key="pe7">Suhm</persName> ned i detaljen. </p>
+          <note type="readMore">
+<p rend="noIndent">Fra <rs type="title" key="title321">bind 3 (1787</rs>, s. 350) hentede Grundtvig de danske og dansk gifte &#x201C;Qvinder&#x201D;, som under den engelske massakre p&#x00E5; St. Briccii Dag (den 13. november) 1002 blev &#x201C;nedgravne til Bugen i Jorden, og deres Bryster s&#x00F8;ndersledne af Hunde; Diende B&#x00F8;rn kastes imod D&#x00F8;rstolper eller Stene, saa Hiernen fl&#x00F8;i ud [...]&#x201D; (sml. citatet med <hi rend="italic">Maskeradeballet 1808,</hi> s. 16 f.).</p>
+</note>
+          <p rend="noIndent">Andre passager er mindre pr&#x00E6;get af det historiske forl&#x00E6;g end af den digteriske frihed. Denne frihed tillod Grundtvig at f&#x00E5; &#x00E9;t dansk h&#x00E6;vntogt ud af de mindst fem Englandstogter fra 1003 til 1014. Med samme ret kunne Grundtvig h&#x00E6;vde, at det var <persName key="pe444">Svend Tvesk&#x00E6;g</persName> &#x2013; og ikke forr&#x00E6;deriske vasaller &#x2013; som jog den engelske konge <persName key="pe441">&#x00C6;thelred</persName> &#x201C;[t]il fremmede Lande&#x201D; (citat Grundtvig 1808, s. 18; se <rs type="title" key="title321">Suhm 1787</rs>, s. 353-56, 364 f., 371-386, 396-408, 411 f., 426-434).</p>
+          <p rend="noIndent">
+<persName key="pe7">Suhm</persName> skrev selv historisk sk&#x00F8;nlitter&#x00E6;r prosa, og Grundtvig holdt af hans fort&#x00E6;lling om <rs type="title" key="title613">
+<hi rend="italic">Signe og Habor</hi> (1777)</rs>. Deri beskrives et ligf&#x00F8;lge, som s&#x00E6;tter en h&#x00F8;j og g&#x00E5;r syngende rundt om den. Den passage har sandsynligvis inspireret ligf&#x00F8;lget i <hi rend="italic">Maskeradeballet 1808, s. 19-21.</hi>
+</p>
+        </div>
+        <div>
+          <head xml:id="docIn9">
+<persName key="pe1">Bertel Christian Sandvig</persName>
+</head>
+          <p rend="noIndent"> F&#x00F8;r sin ankomst til K&#x00F8;benhavn i maj 1808 var Grundtvig meget afh&#x00E6;ngig af <persName key="pe1">Bertel Christian Sandvigs</persName> overs&#x00E6;ttelser fra oldislandsk til dansk. Uddragene fra <rs type="title" key="title320">
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+</rs> (da. <hi rend="italic">Den H&#x00F8;jes tale</hi>) p&#x00E5; s. 4 citerer <rs type="title" key="title28">Sandvigs overs&#x00E6;ttelse fra 1783</rs>. Citatet er ordret i de fleste vers (se punktkommentarer til <ref type="docOut" target="1808_76_com.xml#com48">strofer 1-2</ref> og <ref type="docOut" target="1808_76_com.xml#com49">strofe 3</ref>). </p>
+          <p rend="noIndent">
+            <persName key="pe1">Sandvigs</persName>
+            <rs type="title" key="title319">
+<hi rend="italic">Danske Sange af det &#x00E6;ldste Tidsrum</hi> (1779)</rs> benyttes mere frit i anden halvdel af <hi rend="italic">Maskeradeballet 1808.</hi> &#x201C;Og h&#x00F8;jt vi lo, / I blodig Sved&#x201D;, synger de k&#x00E6;mpende hedninge s. 19 i strofe 1, vers 3-4. Det kan knyttes til overs&#x00E6;ttelsen af <hi rend="italic">
+<rs type="title" key="title327">Bjarkem&#x00E5;l</rs>,</hi> et blodigt d&#x00F8;dskvad over <rs type="myth" key="myth63">Rolf Krake</rs>: &#x201C;Min Livstid er forl&#x00F8;bet, / Nu skal jeg d&#x00F8;e med Latter!&#x201D; (<rs type="title" key="title319">Sandvig 1779</rs>, s. 51, strofe 2, vers 7-8 (<ref type="docOut" target="bookInventory1805.xml#docIn47">Bogfortegnelse 1805 nr. 47</ref>); svarende til <rs type="title" key="title514">J&#x00F3;nsson 1913</rs>, s. 67, strofe 29). <persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse af <hi rend="italic">
+<rs type="title" key="title327">Bjarkem&#x00E5;l</rs>
+</hi> har ogs&#x00E5; inspireret ordvalget i <rs type="myth" key="myth414">Ivars</rs> kvad p&#x00E5; s. 15 i <hi rend="italic">Maskeradeballet 1808.</hi>
+</p>
+          <p rend="noIndent">Skjalden <persName key="pe446">Ottar Svartes</persName> kvad p&#x00E5; s. 18 i <hi rend="italic">Maskeradeballet 1808</hi> minder i indholdet om hans lovprisende <rs type="title" key="title605">
+<hi rend="italic">Kn&#x00FA;tsdr&#x00E1;pa</hi>
+</rs> (da. <hi rend="italic">Knudsdrapa</hi>), oversat af <rs type="title" key="title319">Sandvig (1779</rs>, s. 89-92; svarende til <rs type="title" key="title514">J&#x00F3;nsson 1913</rs>, s. 44 f.).</p>
+        </div>
+        <div>
+          <head xml:id="docIn10">
+<persName key="pe1">Peder Clauss&#x00F8;n Friis</persName>
+</head>
+          <p rend="noIndent"> Grundtvig ejede <hi rend="italic">
+<rs type="title" key="title551">Heimskringla</rs>-</hi>overs&#x00E6;ttelsen af <persName key="pe576">Peder Clauss&#x00F8;n Friis</persName> (<rs type="title" key="title576">Snorre 1633</rs>, <ref type="docOut" target="bookInventory1805.xml#docIn4">Bogfortegnelse 1805 nr. 4</ref>). <rs type="title" key="title147">
+<hi rend="italic">Ynglingasaga</hi>
+</rs> i <rs type="title" key="title551">
+<hi rend="italic">Heimskringla</hi>
+</rs> ligger til grund for det hedenske blot i <hi rend="italic">Maskeradeballet 1808,</hi> s. 7 (se afsnittet om <ref target="#docIn34" type="docIn">synkretisme</ref>). </p>
+        </div>
+        <div>
+          <head xml:id="docIn11">
+<persName key="pe350">Anders S&#x00F8;rensen Vedel</persName> og <persName key="pe237">Saxo Grammaticus</persName>
+</head>
+          <p rend="noIndent">Grundtvig l&#x00E6;ste <rs type="title" key="title83">Saxos <hi rend="italic">Gesta Danorum</hi>
+</rs> i <rs type="title" key="title178">Anders S&#x00F8;rensen Vedels overs&#x00E6;ttelse fra 1575</rs> (<ref type="docOut" target="bookInventory1805.xml#docIn11">Bogfortegnelse 1805 nr. 11</ref> n&#x00E6;vner 1610-udgaven). <hi rend="italic">Maskeradeballet 1808</hi> benytter niende bog om <rs type="myth" key="myth405">Regnar Lodbrog</rs> og hans s&#x00F8;nner (se punktkommentarer til <ref type="docOut" target="1808_76_com.xml#com34">s. 14</ref> samt <ref type="docOut" target="1808_76_com.xml#com65">s. 15, strofe 1</ref>). Ligf&#x00E6;rden fra s. 12 til 21 er inspireret af <rs type="myth" key="myth210">Harald Hildetands</rs> begravelse i ottende bog (<rs type="title" key="title178">Vedel 1575</rs>, s. 169).</p>
+          <note type="readMore">
+            <p rend="noIndent">Andenudgaven (<rs type="title" key="title334">Grundtvig 1815</rs>, s. 3) n&#x00E6;vner eksplicit <rs type="title" key="title178">Vedel 1575</rs> (s. 7 og 25) som kilde til ordet &#x201C;R&#x00E6;grime&#x201D;.</p>
+          </note>
+          <p rend="noIndent">S&#x00E6;rlig betydning har sjette bog, hvor helten <rs type="myth" key="myth185">Starkad</rs> kritiserer tilstandene ved kong <rs type="myth" key="myth407">Ingjalds</rs> hof (<rs type="title" key="title178">Vedel 1575</rs>, kapitel 28, s. 121-130). <rs type="myth" key="myth407">Ingjald</rs> hengiver sig til letf&#x00E6;rdig tysk luksus i stedet for at h&#x00E6;vne mordet p&#x00E5; sin fader. <hi rend="italic">Maskeradeballet 1808</hi> overtager denne konflikt mellem bl&#x00F8;ds&#x00F8;denhed og pligten til at tage h&#x00E6;vn (se afsnittet om <ref target="#docIn36" type="docIn">tarvelighed</ref>). Grundtvig kan ogs&#x00E5; have kendt gendigtningen af Ingjaldskvadet i <persName key="pe5">Prams</persName>
+            <rs type="title" key="title347">
+<hi rend="italic">St&#x00E6;rkodder</hi> (1785</rs>, tredje sang, s. 38-56). </p>
+        </div>
+        <div>
+          <head xml:id="docIn32">
+<persName key="pe394">Thomas Bartholin</persName>
+          </head>
+          <p rend="noIndent">
+<persName key="pe394">Thomas Bartholins</persName> afhandling fra 1689 <rs type="title" key="title516">
+<hi rend="italic">Antiqvitatum danicarum de causis contempt&#x00E6; a danis adhuc gentilibus mortis libri tres</hi>
+</rs> (da. <hi rend="italic">Tre b&#x00F8;ger om dansk kulturhistorie ang&#x00E5;ende &#x00E5;rsagerne til danernes d&#x00F8;dsforagt, mens de endnu var hedninger</hi>) pr&#x00E6;gede endnu synet p&#x00E5; den nordiske oldtid hos digtere som <persName key="pe19">Johannes Ewald</persName> og den unge Grundtvig (<rs type="title" key="title598">Toldberg 1947</rs>, s. 154 f.; <rs type="title" key="title515">Lundgreen-Nielsen 1969</rs>, s. 11). <hi rend="italic">Maskeradeballet 1808</hi> overtager selve temaet i <persName key="pe394">Bartholins</persName> afhandling: d&#x00F8;dsforagt. Tilegnelsen til &#x201C;Hver &#x00E6;gte Nordbo&#x201D; s. 3 hentyder sandsynligvis til denne dyd. Dramaets hovedpersoner g&#x00E5;r alle d&#x00F8;den i m&#x00F8;de
+            uden frygt, enten leende eller i b&#x00F8;n. Det er s&#x00E5;ledes ikke kun hedenske m&#x00E6;nd, som villigt ofrer sig. Grundtvig beskriver <persName key="pe443">Gunhild</persName> som en kristen kvinde med d&#x00F8;dsforagt, en martyr, der s&#x00E6;tter sin lid til bel&#x00F8;nningen i det hinsides. Hedensk og kristen d&#x00F8;dsforagt sammenlignes p&#x00E5; lignende vis hos <rs type="title" key="title516">Bartholin 1689</rs> i 2. bog, kapitel 4.</p>
+        </div>
+        <div>
+          <head xml:id="docIn33">
+<persName key="pe500">Johann Gottlieb Fichte</persName>
+</head>
+          <p rend="noIndent">Skrifterne, der udkom i k&#x00F8;lvandet p&#x00E5; K&#x00F8;benhavns bombardement, s&#x00F8;gte i fortiden inspiration til den kommende danske h&#x00E6;vn. Opfindsomheden rakte vidt og udm&#x00F8;ntedes ogs&#x00E5; i konkrete planer: det blev eksempelvis foresl&#x00E5;et at omdanne F&#x00E6;r&#x00F8;erne til base for kapertogter, der skulle geninddrive daneg&#x00E6;ld, dvs. vikingetidens tribut (<rs type="title" key="title528">Glenth&#x00F8;j &amp; Rasmussen 2007</rs>, s. 237 f.). Grundtvig h&#x00F8;rte til dem, der fors&#x00F8;gte at vende nutidens krise ved at &#x201C;v&#x00E6;kke [...] den Aand, / Der slumrede i Fortids Grave&#x201D; (<rs type="title" key="title537">1808b</rs>, sp. 1092).</p>
+          <note type="readMore">
+            <p rend="noIndent">Dette m&#x00E5;l for historisk digtning uddybede Grundtvig i et udateret udkast til en artikel <hi rend="italic">Om gamle Nords skrevne Mindesm&#x00E6;rker.</hi> Udkastet gennemg&#x00E5;s i <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 213-215, hvor det dateres til sommeren 1807; <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=4771">
+<hi rend="italic">Registranten</hi> fasc. 257</ref> daterer udkastet til 1808.</p>
+          </note>
+          <p rend="noIndent">Samtidige tyske talsm&#x00E6;nd for denne historiske v&#x00E6;kkelse var <persName key="pe577">Ernst Moritz Arndt</persName> og <persName key="pe500">Johann Gottlieb Fichte</persName>. <hi rend="italic">Maskeradeballet 1808</hi> er is&#x00E6;r p&#x00E5;virket af <persName key="pe500">Fichtes</persName>
+            <rs type="title" key="title577">
+<hi rend="italic">Die Grundz&#x00FC;ge des gegenw&#x00E4;rtigen Zeitalters</hi> (Fichte 1991</rs>; da. <hi rend="italic">Grundtr&#x00E6;kkene i den nutidige tidsalder</hi>). V&#x00E6;rket fra 1806 g&#x00F8;r op med hedonistisk individualisme og skildrer vejen til sand frihed i en st&#x00F8;rre, kristelig sags tjeneste.</p>
+          <p rend="noIndent">Det er omstridt, hvor stor indflydelse <persName key="pe500">Fichtes</persName> tankegang havde p&#x00E5; den unge Grundtvig (<rs type="title" key="title25">Vind 1999</rs>, s. 81-95, 111-124). Der er klare paralleller mellem deres reaktioner p&#x00E5; nylige milit&#x00E6;re nederlag. I pr&#x00F8;jsisk sammenh&#x00E6;ng var nederlaget i slaget ved Jena og Auerstedt 1806 af samme betydning som K&#x00F8;benhavns bombardement og tabet af den danske fl&#x00E5;de 1807. <persName key="pe500">Fichte</persName> holdt fra december 1807 til marts 1808, i de selvsamme m&#x00E5;neder hvor Grundtvig skrev dramaet, sine <rs type="title" key="title578">
+<hi rend="italic">Reden an die deutsche Nation</hi>
+</rs> (<rs type="title" key="title578">Fichte 2005</rs>; udgivet som bog i maj 1808). Disse <hi rend="italic">Taler til den
+              tyske Nation</hi> havde til form&#x00E5;l at vende et nederlag til national v&#x00E6;kkelse. Derved minder <persName key="pe500">Fichtes</persName> taler om Grundtvigs kvad til den danske nation (<rs type="title" key="title611">Yahil 1991</rs>). Deres nationale handlingsplaner var ikke uproblematiske i tidens flersprogede riger. </p>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn34">Synkretisme</head>
+        <p rend="noIndent">Mange l&#x00E6;rde i Norden og Europa var i f&#x00E6;rd med at rehabilitere deres hedenske forf&#x00E6;dre. Det s&#x00E6;regne ved Grundtvig var fors&#x00F8;get p&#x00E5; at forbinde kristendom og asatro. &#x201C;Maskeradeballet er Grundtvigs eneste konsekvent synkretistiske bog&#x201D;, vurderer <persName key="pe52">Flemming Lundgreen-Nielsen</persName> og bem&#x00E6;rker, at Grundtvig lagde v&#x00E6;gt p&#x00E5; dramaets kultiske oprindelse (<rs type="title" key="title13">1965</rs>, s. 94-96, citat s. 95). At tale om synkretisme, dvs. religionsblanding, angiver vel nok retningen i Grundtvigs s&#x00E5;kaldte &#x201C;asarus&#x201D; (1807-1810). Betegnelsen synkretisme specificerer dog ikke, hvilke kristne og nordisk-hedenske forestillinger Grundtvig kombinerede i <hi rend="italic">Maskeradeballet 1808</hi>. De f&#x00F8;lgende afsnit n&#x00E6;vner temaer og symboler, som adskilte sig markant fra samtidige skrifter mod briterne. Den seneste, overordnede
+          fremstilling af Grundtvigs asasyn og dets udvikling giver <rs type="title" key="title4">Sune Auken (2005)</rs>. </p>
+        <div>
+          <head xml:id="docIn12">Den kristne tugtelsesl&#x00E6;re</head>
+          <p rend="noIndent"> Pr&#x00E6;dikener udgivet i k&#x00F8;lvandet p&#x00E5; bombardementet viser, &#x201C;hvordan den konservative del af kirken vejrede morgenluft.&#x201D; (<rs type="title" key="title526">Glenth&#x00F8;j 2007</rs>, s. 137 (citat); <rs type="title" key="title545">Carl 2004</rs>). I Danmark og Europa blev milit&#x00E6;re nederlag p&#x00E5; ny udlagt som Herrens tugtelse af sit syndige folk, p&#x00E5; linje med hungersn&#x00F8;d og epidemier. Denne l&#x00E6;re var ellers i &#x00E5;rtier blevet kritiseret af toneangivende rationalistiske teologer. <hi rend="italic">Maskeradeballet 1808</hi> h&#x00E6;vder tugtelsesl&#x00E6;ren, men p&#x00E5; indirekte vis. Gud har &#x201C;holdt&#x201D; k&#x00E6;mpen Danmark &#x201C;rejst i lange Tider&#x201D; (s. 10, strofe 1, vers 12), nemlig i de tider, hvor danskerne stadig bad, gik i kirke og bestr&#x00E6;bte sig p&#x00E5; ikke at synde. N&#x00E5;r en konge som <persName key="pe444">Svend Tvesk&#x00E6;g</persName> syndede,
+            blev ogs&#x00E5; han straffet af Gud (s. 18, strofe 3, vers 1-2). </p>
+        </div>
+        <div>
+          <head xml:id="docIn13">
+<rs type="myth" key="myth1">Alfader</rs>
+          </head>
+          <p rend="noIndent">Den bedst kendte passage i <hi rend="italic">Maskeradeballet 1808</hi> er strofen s. 19-20. Her er de kristne og hedenske skarer forenet i et kor, som synger ved ligb&#x00E5;let: &#x201C;H&#x00F8;je <rs type="myth" key="myth59">Odin</rs>! Hvide Krist! / Slettet ud er Eders Tvist, / Begge S&#x00F8;nner af <rs type="myth" key="myth1">Alfader</rs>&#x201D; (vers 1-3). Artiklen om <rs type="myth" key="myth1">Alfader</rs> i det mytologiske register n&#x00E6;vner, hvorfra Grundtvig havde begrebet, og hvordan han omtolkede det. Strofen antyder en teologi, som han havde skitseret i 1807 og senere skulle udfolde i afhandlingen om <rs type="title" key="title76">
+<hi rend="italic">Nordens Mytologi</hi> (1808c</rs>; se <ref type="docOut" target="1807_65_intro.xml#docIn9">indledningen til artiklen &#x201C;Om Asal&#x00E6;ren&#x201D;</ref> fra 1807). </p>
+        </div>
+        <div>
+          <head xml:id="docIn35">Blot og opofrelse</head>
+          <p rend="noIndent">Den synkretistiske id&#x00E9; er p&#x00E5; s. 7 ogs&#x00E5; fors&#x00F8;gt omsat til religi&#x00F8;s praksis. To m&#x00E6;nd tr&#x00E6;der frem af den lille trofaste skare for at tjene oldingen Danmark. De ofrer sig ved selvmord. Selvopofrelsen var ment som et allegorisk forbillede for samtidens v&#x00E5;benf&#x00F8;re m&#x00E6;nd og kombinerede to norr&#x00F8;ne skikke: skikken at forl&#x00E6;nge en gammel mands liv med blodsofring og skikken at &#x2018;riste&#x2019; sig med en spydsod for ikke at d&#x00F8; &#x2018;str&#x00E5;d&#x00F8;den&#x2019; af sygdom eller &#x00E6;lde og derp&#x00E5; komme til <rs type="myth" key="myth33">Hel</rs> (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 232).</p>
+          <note type="readMore">
+            <p rend="noIndent">De norr&#x00F8;ne skikke beskriver <rs type="title" key="title147">
+<hi rend="italic">Ynglingasaga</hi>
+</rs> i <rs type="title" key="title551">
+<hi rend="italic">Heimskringla</hi>
+</rs> (<rs type="title" key="title552">J&#x00F3;nsson 1911</rs>, kap. 9 og 25). Grundtvig ejede <rs type="title" key="title576">overs&#x00E6;ttelsen fra 1633</rs> af <persName key="pe576">Peder Clauss&#x00F8;n Friis</persName> (<ref type="docOut" target="bookInventory1805.xml#docIn4">Bogfortegnelse 1805</ref> nr. 4), se dennes kapitler 1 (s. 8) og 19 (s. 19).</p>
+            <p rend="firstIndent">Grundtvig gik ud over disse skikke, da han skrev, at de to m&#x00E6;nd &#x201C;l&#x00E6;dskede Oldingen med deres varme Hjerteblod.&#x201D; Her n&#x00E6;rmede han sig den kristne allegori om pelikanen, der siges at hakke sig selv i brystet for at lade sine unger drikke sit blod. Det sammenlignes med <persName key="pe45">Jesu</persName> d&#x00F8;d p&#x00E5; korset, og pelikanen blev ogs&#x00E5; i Danmark brugt som symbol p&#x00E5; en konges selvopofrelse i kamp for sit rige.</p>
+          </note>
+        </div>
+        <div>
+          <head xml:id="docIn14">Patriotiske k&#x00F8;nsroller</head>
+          <p rend="noIndent">At v&#x00E6;rket er tilegnet s&#x00E5;vel den &#x00E6;gte nordbo som dannekvinden (s. 3) er intet tilf&#x00E6;lde. Grundtvig beskrev b&#x00E5;de de mandlige og de kvindelige pligter for f&#x00E6;drelandet. <hi rend="italic">Maskeradeballet 1808</hi> er henvendt til m&#x00E6;nd fra byerne og de privilegerede st&#x00E6;nder. De var fritaget for milit&#x00E6;rtjeneste, s&#x00E5; det var n&#x00F8;dvendigt at minde dem om deres krigeriske mandighed. Kvinderne gav Grundtvig, ganske tidstypisk, til opgave at opildne m&#x00E6;ndene til d&#x00E5;d i stedet for at misbruge deres str&#x00E5;lende udseende til at &#x201C;daare&#x201D;, at betage og fortrylle Danmarks s&#x00F8;nner (<hi rend="italic">Maskeradeballet 1808</hi> s. 14; se <rs type="title" key="title601">Lyngby 2001</rs>, s. 79 f.). Til disse traditionelle k&#x00F8;nsroller f&#x00F8;jede Grundtvig to patriotiske dyder: tarvelighed og altergang.</p>
+        </div>
+        <div>
+          <head xml:id="docIn36">Tarvelighed</head>
+          <p rend="noIndent">Tarvelighed var et af tidens modeord med en betydning, der var en helt anden end den nutidige, negative brug. At leve efter tarv var at leve simpelt og til f&#x00E6;lles nytte. I anden halvdel af 1700-tallet oph&#x00F8;jede adskillige l&#x00E6;rde tarvelighed til en kardinaldyd. <persName key="pe5">Christen Pram</persName> priste efter <persName key="pe237">Saxo</persName> den n&#x00F8;jsomme helt <rs type="myth" key="myth185">Starkad</rs> og gengav hans anklager mod det sydlandske fr&#x00E5;ds og hoff&#x00E6;rdigheden hos kong <rs type="myth" key="myth407">Ingjald</rs> (<rs type="title" key="title347">Pram 1785</rs>, tredje sang).</p>
+          <p rend="noIndent">Tarveligheden fik ny vind i sejlene efter det britiske angreb i 1807. Danmark-Norge tiltr&#x00E5;dte fastlandssp&#x00E6;rringen, den napoleonske embargo, og fremtr&#x00E6;dende embedsm&#x00E6;nd opfordrede deres medborgere til at boykotte alle varer af britisk oprindelse. Ved &#x00E5;rsskiftet 1807-1808 var justitsr&#x00E5;d <persName key="pe578">C.G. Rafn</persName> i f&#x00E6;rd med at stifte et Selskab for indenlandsk Kunstflid. Kronprins <persName key="pe96">Frederik</persName> bekendtgjorde sin st&#x00F8;tte til <persName key="pe578">Rafns</persName> vidtr&#x00E6;kkende merkantilistiske projekt i det statslige <rs type="title" key="title539">
+<hi rend="italic">Collegial-Tidende for Danmark og Norge</hi>
+</rs> (bl.a. den 4. januar og 22. marts 1808; <rs type="title" key="title526">Glenth&#x00F8;j 2007</rs>, s. 103-110).</p>
+          <p rend="noIndent">Det er endnu ikke unders&#x00F8;gt, om <hi rend="italic">Maskeradeballet 1808</hi> blev l&#x00E6;st i kredse med interesse for at &#x00F8;ge indenrigshandlen. Grundtvigs forudg&#x00E5;ende artikel &#x201C;<rs type="title" key="title335">Om Videnskabelighed og dens Fremme</rs>&#x201D; var direkte henvendt til embedsstanden (<rs type="title" key="title335">1807b</rs>, s. 287), og den fremtr&#x00E6;dende fortaler for tarvelighed <persName key="pe5">Christen Pram</persName> arbejdede med Rafn i datidens finansministerium, Kommercekollegiet. Opfordringen til at sv&#x00E6;rge &#x201C;Had til Sydens lumske Gift&#x201D; (<hi rend="italic">Maskeradeballet 1808,</hi> s. 10) var i trit med de skrifter, der talte for at udvide boykotten fra britiske til alle unordiske varer. Opfordringen &#x2018;k&#x00F8;b dansk og norsk!&#x2019; &#x00E5;bnede dog d&#x00F8;ren p&#x00E5; klem for produktionen af indenlandske luksusvarer, hvilket Grundtvig ikke br&#x00F8;d sig om.
+            Ligb&#x00E5;let i slutningen af <hi rend="italic">Maskeradeballet 1808</hi> munder ud i en kombination af en hedensk afbr&#x00E6;nding af offergaver og de forf&#x00E6;ngelighedens b&#x00E5;l, som middelalderlige bodspr&#x00E6;dikanter foranstaltede. Her knyttes hedenske og kristne ceremonier p&#x00E5;ny sammen.</p>
+        </div>
+        <div>
+          <head xml:id="docIn15">F&#x00E6;drelandets alter</head>
+          <p rend="noIndent">&#x2018;F&#x00E6;drelandets alter&#x2019; var et patriotisk slagord p&#x00E5; linje med &#x2018;tarvelighed&#x2019;, men med st&#x00F8;rre udbredelse. Slagordet blev brugt i antik, f&#x00F8;rkristen forstand om det alter, som de trofaste ofrede p&#x00E5; for at fremme samfundets vel (<rs type="title" key="title601">Lyngby 2001</rs>, s. 82 f.).</p>
+          <note type="readMore">
+<p rend="noIndent">Metaforen var is&#x00E6;r m&#x00F8;ntet p&#x00E5; &#x00F8;konomisk ofre, og den kunne ogs&#x00E5; oms&#x00E6;ttes til skuespil med historisk stof. <persName key="pe579">Carl Johan M&#x00F8;ller</persName> havde i et teaterstykke beskrevet, hvordan <rs type="title" key="title606">
+<hi rend="italic">Danneqvinderne</hi> (1804)</rs> l&#x00F8;sk&#x00F8;bte <persName key="pe444">Svend Tvesk&#x00E6;g</persName> fra vendisk fangenskab (se <rs type="title" key="title604">Saxo 2000</rs>, 10. bog, kapitel 9, afsnit 4-5, s. 438). Kvinderne ofrede deres smykker &#x201C;ved F&#x00F8;delandets Alter&#x201D;, som her vitterlig befandt sig i et hedensk tempel (<rs type="title" key="title606">M&#x00F8;ller 1804</rs>, Andet Optog, Ottende Optrin, s. 72-76, citat s. 73, strofe 1, vers 2).</p>
+</note>
+          <p rend="noIndent">I vinteren 1807-1808 gjaldt ofrene is&#x00E6;r fl&#x00E5;dens genopbygning og de brandlidte k&#x00F8;benhavnere. Kronprins <persName key="pe96">Frederik</persName> fremh&#x00E6;vede kvinder som <persName key="pe580">Hedevig Smith</persName>. Denne &#x201C;Danneqvinde&#x201D; havde indsendt &#x201C;endeel S&#x00F8;lvt&#x00F8;i, som frivilligt Bidrag til F&#x00E6;drenelandets Tarv&#x201D;, skrev kronprinsen i <hi rend="italic">
+<rs type="title" key="title539">Collegial-Tidende</rs>
+</hi> (28. november 1807, s. 760 f.). Udtrykket at ofre genstande p&#x00E5; &#x201C;F&#x00E6;drelandets Alter&#x201D; gik igen i de fleste af de skrifter, som kvinderne vedf&#x00F8;jede deres forsendelser og aviserne derp&#x00E5; trykte (fx. <hi rend="italic">
+<rs type="title" key="title468">Fyens Stiftstidende</rs>,</hi> december 1807, s. 644 og 656).</p>
+          <p rend="noIndent">Grundtvig har sikkert kendt metaforen og m&#x00E5;ske ogs&#x00E5; donorbrevene med mere kristent pr&#x00E6;g (<hi rend="italic">
+<rs type="title" key="title539">Collegial-Tidende</rs>,</hi> 5. december 1807, s. 790 f.). I al fald gav <hi rend="italic">Maskeradeballet 1808</hi> alter-metaforen en kristen og bogstavelig betydning: &#x201C;ganger hen i Herrens Hus at bede!&#x201D; (s. 10) og &#x201C;Kys Altrets Fod&#x201D; (s. 11). </p>
+        </div>
+        <div>
+          <head xml:id="docIn37">Skamst&#x00F8;tten</head>
+          <p rend="noIndent"> V&#x00E6;rkets anden arkitektoniske metafor er skamst&#x00F8;tten. Der tales om at rejse en h&#x00F8;j med en bautasten (<hi rend="italic">Maskeradeballet 1808,</hi> s. 19 f.). En direkte forl&#x00F8;ber er gravh&#x00F8;jen for de faldne i Slaget p&#x00E5; Rheden, som blev indviet p&#x00E5; Holmens Kirkeg&#x00E5;rd i 1802. Forrest ved dette H&#x00E6;ders Minde st&#x00E5;r en obelisk i norsk marmor.</p>
+          <p rend="noIndent">Det specielle ved Grundtvigs bautasten er, at den tjener som en skamst&#x00F8;tte, og at skamst&#x00F8;tten bliver rejst over danskernes syndige levned. De danske indl&#x00E6;g om K&#x00F8;benhavns bombardement rejste ellers skamst&#x00F8;tter over briternes ud&#x00E5;d (se billederne i <rs type="title" key="title600">Mentz 2007</rs>, s. 138 f.).</p>
+        </div>
+        <div>
+          <head xml:id="docIn38">Landesorg</head>
+          <p rend="noIndent">Den sentimentale patriotisme omtalt i <ref target="#docIn28" type="docIn">afsnittet om tableauer</ref> havde sin egen martyrkult. Folk fra j&#x00E6;vne k&#x00E5;r, der d&#x00F8;de i kamp, blev hyldet p&#x00E5; m&#x00E5;der, som hidtil havde v&#x00E6;ret forbeholdt samfundets h&#x00F8;jere lag. <hi rend="italic">Maskeradeballet 1808</hi> betegner tiden efter de katastrofale m&#x00E5;neder september-oktober 1807 som Danmarks s&#x00F8;rgetid. Landesorg blev ellers kun udskrevet for afd&#x00F8;de kongelige. Lovpligtig s&#x00F8;rgetid indskr&#x00E6;nkede i et halvt til et helt &#x00E5;r efter et kongeligt d&#x00F8;dsfald kl&#x00E6;dedragten til sort og forb&#x00F8;d al musik ved offentlige forlystelser. Maskeradeballer ville selvsagt v&#x00E6;re ut&#x00E6;nkelige, hvis &#x201C;Gl&#x00E6;destoner&#x201D; var forbudt, og &#x201C;Prunk&#x201D; skulle ombyttes med en h&#x00F8;jtidelig &#x201C;S&#x00F8;rgedragt&#x201D; (citat s. 10, strofe 1, vers 6-7; se ogs&#x00E5;
+              <rs type="title" key="title550">Kongel. Forordninger (u.&#x00E5;.)</rs>, s. 4-6 fra 1670 og <rs type="title" key="title181">Fogtman &amp; Algreen-Ussing 1818</rs>, s. 97 fra 1808). </p>
+        </div>
+        <div>
+          <head xml:id="docIn16">Sammenfatning</head>
+          <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> drejer en r&#x00E6;kke patriotiske slagord i en mere kristen retning. Samtidig forbindes dyder fra kristendommen og nordisk hedenold i en synkretisme. Dermed giver l&#x00E6;sedramaet en pr&#x00F8;ve p&#x00E5; den s&#x00E6;regne symbolverden, som Grundtvig havde skitseret i artiklen &#x201C;<rs type="title" key="title2">Om Asal&#x00E6;ren</rs>&#x201D;, og som han udfoldede i sit senere forfatterskab (<rs type="title" key="title603">Toldberg 1950</rs>, <rs type="title" key="title4">Auken 2005</rs>).</p>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn24">De metriske former</head>
+        <p rend="noIndent">Se <ref type="web" target="http://www.grundtvigsv&#x00E5;rker.dk/vejledning/metrik_vej">Vejledning til metriske oplysninger</ref>
+</p>
+        <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> var Grundtvigs f&#x00F8;rste publikation med lyrisk dominans. (Forud l&#x00E5; spredte strofer, ofte overs&#x00E6;ttelser, i artikler fra 1806 og 1807: &#x201C;<rs type="title" key="title125">Lidet om Sangene i Edda</rs>&#x201D;, &#x201C;<rs type="title" key="title2">Om Asal&#x00E6;ren</rs>&#x201D; samt &#x201C;<rs type="title" key="title585">Om Schiller og Bruden i Messina</rs>&#x201D;; se <rs type="title" key="title354">Albeck 1955</rs>, s. 13-26.) L&#x00E6;sedramaet skulle demonstrere stilbevidsthed, kendskab til tendenser i tidens digtning og mod til at bryde med etablerede strofeformer. Af disse grunde er v&#x00E6;rket pr&#x00E6;get af hyppige metriske skift.</p>
+        <p rend="noIndent">Prologen s. 4, strofe 1-2: 5 eller 6 totryks vers.</p>
+        <p rend="noIndent">Rimstilling: uden enderim, nogle bogstavrim.</p>
+        <p rend="noIndent">Strofe 3. Stavelsesantal: 2 3 6 4 6 5.</p>
+        <p rend="noIndent">Rimstilling: uden enderim, nogle bogstavrim.</p>
+        <p rend="noIndent">De tre strofer fra <rs type="title" key="title320">
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+</rs> (da. <hi rend="italic">Den H&#x00F8;jes tale</hi>) citerer <rs type="title" key="title28">Sandvigs overs&#x00E6;ttelse fra 1783</rs> (s. 93, strofe 2 og 3 samt s. 82, strofe 2; se punktkommentarer til <ref type="docOut" target="1808_76_com.xml#com48">stroferne 1-2</ref> og <ref type="docOut" target="1808_76_com.xml#com49">strofe 3</ref>). Strofe 1-2 orienterer sig mod versem&#x00E5;let m&#x00E1;lah&#x00E1;ttr, som best&#x00E5;r af femleddede vers uden assonans og med alliteration. Strofe 3 orienterer sig mod versem&#x00E5;let lj&#x00F3;&#x00F0;ah&#x00E1;ttr. Det noget uregelm&#x00E6;ssige versem&#x00E5;l karakteriseres af 2 totryks kortlinjer, adskilt af c&#x00E6;sur, og en langlinje, som i forl&#x00E6;gget er uden c&#x00E6;sur. Grundtvigs korte vers i de efterf&#x00F8;lgende digte har samme forbilleder.</p>
+        <p rend="noIndent">Oldingens afskedstale s. 7-11 best&#x00E5;r af tre afdelinger. Versafsnit 1-4: variende antal verslinjer (8 eller 12 vers).</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 7 eller 8 stavelser.</p>
+        <p rend="noIndent">Rimstilling: urimet; skiftevis &#x2642; og &#x2640;.</p>
+        <p rend="noIndent">Versafsnit 5-6: varierende antal verslinjer (12 eller 16 vers).</p>
+        <p rend="noIndent">Versem&#x00E5;l m.v.: blankvers, ergo jambisk, 10-11 stavelser og urimet, skiftevis &#x2642; og &#x2640;, dog vers 24-25: begge &#x2640;.</p>
+        <p rend="noIndent">Versafsnit 7: 4 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 13 10 11 10.</p>
+        <p rend="noIndent">Rimstilling: urimet; &#x2640;, &#x2642;, &#x2640;, &#x2642;.</p>
+        <p rend="noIndent">Kvadet har en afvekslende metrik; det har &#x00E5;benbart voldt s&#x00E6;tteren problemer. Grundtvig har n&#x00E6;ppe haft mulighed for at forklare opbygningen, da han i begyndelsen af 1808 endnu befandt sig p&#x00E5; Langeland. Typografien afspejler derfor ikke den bagvedliggende metriske tankegang.</p>
+        <p rend="noIndent">Samme afsnit i <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs> (s. 4-7) markerer, metrisk set, stroferne mere rimeligt og inddeler dem i tre grupper.</p>
+        <p rend="noIndent">Den f&#x00F8;rste gruppe best&#x00E5;r af 11 strofer a 4 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 8 7 8 7.</p>
+        <p rend="noIndent">Rimstilling: urimet; &#x2642;, &#x2640;, &#x2642;, &#x2640;.</p>
+        <p rend="noIndent">Hver strofe er afsluttet med punktum eller udr&#x00E5;bstegn.</p>
+        <p rend="noIndent">Den anden gruppe udg&#x00F8;res af et langt versafsnit med blankvers. Denne og den afsluttende strofe er beskrevet p&#x00E5; d&#x00E6;kkende vis ovenfor. Blankvers havde <persName key="pe3">Adam Oehlenschl&#x00E4;ger</persName> f&#x00E5; &#x00E5;r forinden indf&#x00F8;rt i dansk digtning efter tysk forbillede.</p>
+        <p rend="noIndent">Hedningenes sang ved ligb&#x00E5;let s. 13: 2 strofer a 7 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 5 4 5 4 5 5 4.</p>
+        <p rend="noIndent">Rimstilling: ababccx; &#x2640;, &#x2642;, &#x2640;, &#x2642;, &#x2640;, &#x2640;, &#x2642;.</p>
+        <p rend="noIndent">
+<rs type="myth" key="myth405">Regnar Lodbrogs</rs> d&#x00F8;dskvad p&#x00E5; s. 14 har samme versem&#x00E5;l som sangen ved ligb&#x00E5;let p&#x00E5; s. 13. Ogs&#x00E5; dette overs&#x00E5; s&#x00E6;tteren i 1808; og denne fejl overtager andenudgaven (<rs type="title" key="title334">Grundtvig 1815</rs>). Digtet p&#x00E5; 14 vers burde v&#x00E6;re 2 strofer a 7 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 5 4 5 4 5 5 4.</p>
+        <p rend="noIndent">Rimstilling: ababccd (d er et varieret omkv&#x00E6;d); &#x2640;, &#x2642;, &#x2640;, &#x2642;, &#x2640;, &#x2640;, &#x2642;.</p>
+        <p rend="noIndent">S. 15 g&#x00E5;r versem&#x00E5;let igen hos <rs type="myth" key="myth414">Ivar Benl&#x00F8;s</rs>: 1 strofe a 7 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 5 4 5 4 5 5 4.</p>
+        <p rend="noIndent">Rimstilling: ababccx; &#x2640;, &#x2642;, &#x2640;, &#x2642;, &#x2640;, &#x2640;, &#x2642;.</p>
+        <p rend="noIndent">Prosas&#x00E6;tningen, som leder hen til n&#x00E6;ste kvad, antyder et heksameter <!-- med c&#x00E6;surer mellem &#x201C;Gunnild&#x201D; og &#x201C;Svend&#x201D; samt &#x201C;stolte&#x201D; og &#x201C;den&#x201D;-->(<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 232).</p>
+        <p rend="noIndent">
+<persName key="pe443">Gunhilds</persName> d&#x00F8;dskvad s. 15-17 : 6 strofer a 6 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: 1 jambe fulgt af 1, 2 eller 3 anap&#x00E6;ster.</p>
+        <p rend="noIndent">Stavelsesantal: 11 11 9 5 5 9.</p>
+        <p rend="noIndent">Rimstilling: aabccb; a &#x2642;, b &#x2640;, c &#x2642;.</p>
+        <p rend="noIndent">
+<persName key="pe446">Ottars</persName> kvad s. 18: 3 strofer a 5 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk-anap&#x00E6;stisk.</p>
+        <p rend="noIndent">Stavelsesantal: 5 6 5 6 5.</p>
+        <p rend="noIndent">Rimstilling: ababx: a &#x2642;, b &#x2640;, x &#x2642;.</p>
+        <p rend="noIndent">Kor af kristne og hedninge s. 19: 2 strofer a 4 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: tofods jamber.</p>
+        <p rend="noIndent">Stavelsesantal: 4 4 4 4.</p>
+        <p rend="noIndent">Rimstilling: abab; a &#x2642;, b &#x2642;.</p>
+        <p rend="noIndent">Koret fortsat s. 19-20: 1 strofe a 6 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: trok&#x00E6;isk.</p>
+        <p rend="noIndent">Stavelsesantal: 7 7 8 7 7 8.</p>
+        <p rend="noIndent">Rimstilling: aabccb; a &#x2642;, b &#x2640;, c &#x2642;.</p>
+        <p rend="noIndent">Koret fortsat s. 20-21: 2 strofer og 1 versafsnit.</p>
+        <p rend="noIndent">Strofe 1-2: 4 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk-anap&#x00E6;stisk.</p>
+        <p rend="noIndent">Stavelsesantal: 6 5 6 5.</p>
+        <p rend="noIndent">Rimstilling: abab; a &#x2640;, b &#x2642;.</p>
+        <p rend="noIndent">Versafsnit p&#x00E5; 16 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk-anap&#x00E6;stisk.</p>
+        <p rend="noIndent">Stavelsesantal: 11 6 6 8 6 6 5 10 5 4<note type="sic"></note> 5 5 5 5 6 5.</p>
+        <p rend="noIndent">Rimstilling: aabbcccddddddeex: samtlige vers &#x2642;.</p>
+        <div>
+          <head xml:id="docIn17">Resume</head>
+          <p rend="noIndent">
+<hi rend="italic">Maskeradeballet 1808</hi> blander de metriske former. Denne blanding blev Grundtvigs lyriske varem&#x00E6;rke (<rs type="title" key="title479">Fafner 1983</rs>, s. 71 f., <rs type="title" key="title547">Fafner 1994</rs>, s. 148 f., <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 401-407).</p>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn18">Modtagelse</head>
+        <p rend="noIndent"> Det moralske l&#x00E6;sedrama udkom f&#x00F8;rst 15. marts 1808 efter afslutningen p&#x00E5; maskerades&#x00E6;sonen. Desuden blev debatten om landesorg for efter&#x00E5;rets ofre overhalet af <persName key="pe105">Christian 7.s</persName> d&#x00F8;d den 13. marts og den f&#x00F8;lgende forordningen om landesorg (<rs type="title" key="title181">Fogtman &amp; Algreen-Ussing 1818</rs>, s. 97). P&#x00E5; l&#x00E6;ngere sigt kan <hi rend="italic">Maskeradeballet 1808</hi> have haft en indirekte indflydelse (se afsnittet om <ref target="#docIn36" type="docIn">tarvelighed</ref>). I december 1808, ved begyndelsen af vinterens maskerades&#x00E6;son, udstedtes et &#x201C;Patent, hvorved Kongen opfordrer sine Undersaatter til Tarvelighed og Opm&#x00E6;rksomhed paa indenlandske Fabrik- og Konst-Varer&#x201D; (<hi rend="italic">
+<rs type="title" key="title539">Collegial-Tidende</rs>,</hi> s. 849 f., nr. 52, 24. december 1808, dateret 14. december).
+          Bekendtg&#x00F8;relsen henstillede til dannem&#x00E6;nd og dannekvinder at udvise &#x201C;Sparsomhed i Almindelighed, og i Kl&#x00E6;dedragten i S&#x00E6;rdeleshed&#x201D;.</p>
+        <p rend="noIndent">Grundtvig beklagede sig i efterskriften til andenudgaven over manglende reaktioner i offentligheden: &#x201C;Dette Kvad gjorde ikke den mindste Opsigt&#x201D; (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 16). Det udsagn b&#x00F8;r af mindst tre &#x00E5;rsager ikke st&#x00E5; uimodsagt. For det f&#x00F8;rste giver Grundtvig i samme efterskrift eksempler p&#x00E5;, at <hi rend="italic">Maskeradeballet 1808</hi> blev omtalt i tidsskriftet <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>.</hi> For det andet er det velkendt, at v&#x00E6;rket blev l&#x00E6;st med interesse af personer i den &#x201C;snev[re] Kreds&#x201D;, det var henvendt til (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 17). Et tredje og sidste forbehold er, at Grundtvig i 1815 selv fremh&#x00E6;vede v&#x00E6;rkets betydning for sit forfatterskab. Dette sikrede <hi rend="italic">Maskeradeballet 1808</hi> en plads i senere v&#x00E6;rkudgaver. Disse tre forhold fortjener at blive uddybet. </p>
+        <div>
+          <head xml:id="docIn40">Offentlige diskussioner</head>
+          <p rend="noIndent">Andenudgaven i <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger </hi>(1815)</rs> bringer s. 16-21 uddrag fra to pennefejder med mindst to kritiske kommentatorer i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>,</hi> som var en lokalavis med litter&#x00E6;rt tilsnit. Grundtvigs h&#x00E5;rdh&#x00E6;ndede anmeldelse af komedien <rs type="title" key="title594">
+<hi rend="italic">Arlichino's Bryllup</hi>
+</rs> (<rs type="title" key="title592">Grundtvig 1808d</rs>) aff&#x00F8;dte i september 1808 et h&#x00E6;vntogt fra anonyme i kredsen omkring dens forfatter <persName key="pe582">Lauritz Kruse</persName>. Det ene sm&#x00E6;dedigt udstillede trykfejlene i <hi rend="italic">Maskeradeballet 1808,</hi> mens det andet karikerede Grundtvig som en <persName key="pe583">Don Quixote</persName> i kamp mod vindm&#x00F8;ller (<rs type="title" key="title593">&#x201C;Du som reiste dit Land en
+              Bautasteen&#x201D; 1808</rs> og <rs type="title" key="title767">&#x201C;Til en Vis&#x201D; 1808</rs>; se <rs type="title" key="title169">
+<hi rend="italic">Poetiske Skrifter</hi> 1 1880</rs>, s. 24).</p>
+          <p rend="noIndent">En mere sympatisk anmeldelse havde <persName key="pe176">Povel Dons</persName> skrevet i maj m&#x00E5;ned (<rs type="title" key="title595">Dons 1808</rs>). Hans hovedanke var den overdrevent dystre selvkritik i <hi rend="italic">Maskeradeballet 1808</hi>. I dramaets andenudgave (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 17 f.) gik Grundtvig gik let over denne meningsforskel. <persName key="pe176">Dons</persName> var imellemtiden blevet hans n&#x00E6;re ven og assistent (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 240, <rs type="title" key="title579">K&#x00F8;ster 1880</rs>).</p>
+        </div>
+        <div>
+          <head xml:id="docIn19">Personlige diskussioner</head>
+          <p rend="noIndent">V&#x00E6;rket lagde ogs&#x00E5; grunden til et venskab med den j&#x00E6;vnaldrende historiker <persName key="pe23">Christian Molbech</persName>. I maj 1808 overrakte Grundtvig ham et eksemplar af <hi rend="italic">Maskeradeballet 1808</hi> med personlig dedikation og et forklarende digt (<rs type="title" key="title596">Grundtvig 1869</rs>). De to korresponderede om v&#x00E6;rkets grundl&#x00E6;ggende pr&#x00E6;misser, men efterskriften fra 1815 forbig&#x00E5;r dette. <persName key="pe23">Molbech</persName> havde afbrudt kontakten efter udgivelsen af <rs type="title" key="title629">
+<hi rend="italic">Verdenskr&#x00F8;niken</hi> (Grundtvig 1812</rs>, <rs type="title" key="title16">Grundtvig 1888a</rs>, s. XXV-XXVII, 3-16). </p>
+        </div>
+        <div>
+          <head xml:id="docIn20">Grundtvigs omfortolkning 1815</head>
+          <p rend="noIndent">Digtantologien <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger eller Smaakvad</hi> (1815)</rs> skulle relancere forfatterskabet og stille det i et mere kristent lys. I fortalen og efterskriften til <hi rend="italic">Maskeradeballet 1808</hi> roste Grundtvig sin egen autentiske begejstring og skosede sin forf&#x00E6;ngelighed, og denne kombination er typisk for antologien (<rs type="title" key="title334">1815</rs>, s. 2, 16 f., <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 641-644). I noter og kommentarer lagde han afstand til sine tidligere synkretistiske udsagn og gjorde sig lystig p&#x00E5; sin egen bekostning. Det afspejler et nyt og mere humoristisk forhold til asamyterne (<rs type="title" key="title4">Auken 2005</rs>, s. 216 f.).</p>
+          <p rend="noIndent">Ud over brud p&#x00E5; det ideologiske plan pr&#x00E6;ges andenudgaven af brud p&#x00E5; det personlige og stilistiske plan. Der m&#x00E5; tages h&#x00F8;jde for disse brud, n&#x00E5;r man sammenligner f&#x00F8;rste- og andenudgaverne. En lettere spydig notehenvisning til <persName key="pe3">Oehlenschl&#x00E4;ger</persName> h&#x00E6;nger s&#x00E5;ledes sammen med den fejde, der br&#x00F8;d ud mellem de to i 1812 (<rs type="title" key="title334">Grundtvig 1815</rs>, s. 9). Andenudgaven veg i &#x00F8;vrigt noget tilbage fra den parataktiske syntaks, der var med til at give stilistisk profil til Grundtvigs skrifter i 1808. Det bidrager til en mere flydende form, som underbygges af tegns&#x00E6;tningen. I prosapassagerne sl&#x00E5;s hele afsnit sammen, og s&#x00E5;vel her som i stroferne erstattes punktum, kolon og semikolon ofte af komma (se <rs type="title" key="title598">Toldberg 1947</rs>, s. 149, 166-169 og sammenlign <hi rend="italic">Maskeradeballet
+              1808,</hi> s. 6 f. med <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger </hi> 1815</rs>, s. 3 f.).</p>
+        </div>
+      </div>
+      <div type="litList">
+        <head xml:id="docIn21">Anvendt litteratur</head>
+        <div>
+          <head xml:id="docIn22">Trykt</head>
+          <list type="litList">
+              <item>Adamsen, Christian (2006) &#x201C;Antikvarer og oldforskning p&#x00E5; Grundtvigs tid&#x201D; i <hi rend="italic">
+<rs type="title" key="title337">Grundtvig-Studier</rs>,</hi> s. 99-109. K&#x00F8;benhavn</item>
+              <item>Ahlefeldt-Laurvig, Frederik (1927-1931) <hi rend="italic">
+<rs type="title" key="title506">Generalen</rs>
+</hi> 1-6, bind 3 (1929): <hi rend="italic">Privatmanden</hi>. K&#x00F8;benhavn</item>
+              <item>Gustav Albeck (1955) <hi rend="italic">
+<rs type="title" key="title354">Omkring Grundtvigs Digtsamlinger. Studier i Grundtvigs lyriske Forfatterskab 1808-16</rs>.</hi> Aarhus &amp; K&#x00F8;benhavn</item>
+              <item>Albertsen, Leif Ludwig (1966) &#x201C;Freut Euch des Lebens. Das Schicksal eines Gassenhauers in der Literatur&#x201D; i <rs type="title" key="title543">
+<hi rend="italic">Germanisch-Romanische Monatsschrift</hi>
+</rs> 48/Neue Folge 16, s. 277-283. Heidelberg</item>
+              <item>Andersen, Vilhelm &amp; Carl S. Petersen (1924-1934) <rs type="title" key="title466">
+<hi rend="italic">Illustreret Dansk Litteraturhistorie</hi>
+</rs> 1-4, bind 2 (1934): <hi rend="italic">Det attende Aarhundrede</hi> af Vilhelm Andersen. K&#x00F8;benhavn</item>
+              <item>Auken, Sune (2005) <hi rend="italic">
+<rs type="title" key="title4">Sagas Spejl. Mytologi, historie og kristendom hos N.F.S. Grundtvig</rs>.</hi> U.st. (: K&#x00F8;benhavn)</item>
+              <item>Bartholin, Thomas (1689) <hi rend="italic">
+<rs type="title" key="title516">Antiqvitatum danicarum de causis contempt&#x00E6; a danis adhuc gentilibus mortis libri tres ex vetustis codicibus &amp; monumentis hactenus ineditis congesti</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>
+                <hi rend="italic">Bibliografien</hi> (se Johansen, Steen (1948-1954) <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs skrifter</rs>
+</hi> 1-4. K&#x00F8;benhavn)</item>
+              <item>
+<hi rend="italic">
+<rs type="title" key="title327">Bjarkem&#x00E5;l</rs>,</hi> se J&#x00F3;nsson 1913 og Sandvig 1779</item>
+              <item>Carl, Horst (2004) &#x201C; &#x2018;Strafe Gottes&#x2019; &#x2013; Krise und Beharrung religi&#x00F6;ser Deutungsmuster in der Niederlage gegen die Franz&#x00F6;sische Revolution&#x201D; i <hi rend="italic">
+<rs type="title" key="title544">Kriegsniederlagen. Erfahrungen und Erinnerungen</rs>,</hi> udg. af Horst Carl, Hans-Henning Kort&#x00FC;m, Dieter Langewiesche &amp; Friedrich Lenger. Berlin, s. 279-295</item>
+              <item>Christensen, Lars Vangen (2007) Bombarderet med rygter. Fort&#x00E6;llinger om frygt og forh&#x00E5;bninger i det belejrede K&#x00F8;benhavn&#x201D; i <hi rend="italic">
+<rs type="title" key="title529">K&#x00F8;benhavn 1807. Belejring og bombardement</rs>,</hi> udg. af Peter Henningsen. K&#x00F8;benhavn, s. 130-157</item>
+              <item>
+                <rs type="title" key="title539">
+<hi rend="italic">Collegial-Tidende for Danmark og Norge</hi>
+</rs> (1807) nr. 48, 49, 52 (1808) nr. 2, 12, 13, 52. K&#x00F8;benhavn</item>
+              <item>Damsholt, Tine (2000) <hi rend="italic">
+<rs type="title" key="title546">F&#x00E6;drelandsk&#x00E6;rlighed og borgerdyd. Patriotisk diskurs og milit&#x00E6;re reformer i Danmark i sidste del af 1700-tallet</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>
+                <hi rend="italic">
+<rs type="title" key="title525">Den Kongelig autoriserede Fyens Avertissements Tidende</rs>.</hi> Odense</item>
+              <item>Dons, Povel (1808) &#x201C;Til Hr. N. F. S. Grundtvig i Anledning af hans Digt: <hi rend="italic">Maskeradeballet i Danmark 1808</hi>&#x201D; i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 28. maj, nr. 66, sp. 1039-1041. K&#x00F8;benhavn</item>
+              <item>&#x201C;Du som reiste dit Land en Bautasteen&#x201D; (1808) i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 17. september, nr. 98, sp. 1564. K&#x00F8;benhavn</item>
+              <item>Ewald, Johannes (1774: 1775) <hi rend="italic">
+<rs type="title" key="title348">Balders D&#x00F8;d. Et heroisk Syngespil i Tre Handlinger. En Priisdigt</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Fafner, J&#x00F8;rgen (1983) &#x201C;Et sk&#x00E6;r af fortrolighed &#x2013; Grundtvigs folkelige verskunst&#x201D; i <hi rend="italic">
+<rs type="title" key="title478">Det levende Ord. Modersm&#x00E5;l-Selskabets &#x00E5;rbog 1983</rs>.</hi> U.st. (: K&#x00F8;benhavn), s. 66-81</item>
+              <item>Fafner, J&#x00F8;rgen (1994-2000) <hi rend="italic">
+<rs type="title" key="title547">Dansk vershistorie</rs>
+</hi> 1-2, bind 1: <hi rend="italic">Fra kunstpoesi til lyrisk frig&#x00F8;relse.</hi> K&#x00F8;benhavn</item>
+              <item>Falsen, Enevold de (u.&#x00E5;.: 1796) <hi rend="italic">
+<rs type="title" key="title484">Festen i Valhal. En Prolog til Hs. Majestet Kongens F&#x00F8;dselsdag, den 29 Januarii 1796</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Fichte, Johann Gottlieb (1991) &#x201C;Die Grundz&#x00FC;ge des gegenw&#x00E4;rtigen Zeitalters. Dargestellt von Johann Gottlieb Fichte, in Vorlesungen, gehalten zu Berlin, im Jahre 1804&#x2013;5&#x201D; [1806] i <hi rend="italic">
+<rs type="title" key="title518">J.G. Fichte-Gesamtausgabe der Bayerischen Akademie der Wissenschaften</rs>,</hi> 1. r&#x00E6;kke, bind 8, udg. af Reinhard Lauth &amp; Hans Gliwitzky. Stuttgart-Bad Cannstatt</item>
+              <item>Fichte, Johann Gottlieb (2005) &#x201C;Reden an die deutsche Nation durch Johann Gottlieb Fichte&#x201D; [1808] i <hi rend="italic">
+<rs type="title" key="title518">J.G. Fichte-Gesamtausgabe der Bayerischen Akademie der Wissenschaften</rs>,</hi> 1. r&#x00E6;kke, bind 10, udg. af Reinhard Lauth, Erich Fuchs, Peter K. Schneider, Hans Georg von Manz, Ives Radrizzani, Martin Siegel &amp; G&#x00FC;nter Z&#x00F6;ller. Stuttgart-Bad Cannstatt</item>
+              <item>Fogtman, Laurids &amp; Tage Algreen-Ussing, udg. (1786-1835) <hi rend="italic">
+<rs type="title" key="title181">Kongelige Rescripter, Resolutioner og Collegialbreve for Danmark og Norge, udtogsviis udgivne i chronologisk Orden</rs>
+</hi> del 7, bind 1 (1818): <hi rend="italic">1808 fra 12te Marts og 1809,</hi> udg. af Laurids Fogtmann. K&#x00F8;benhavn</item>
+              <item>Frankenau, Rasmus (1808) <hi rend="italic">
+<rs type="title" key="title548">Ki&#x00F8;benhavns Bombarderings-N&#x00E6;tter den 2den, 3die og 4de Septbr. 1807. Et elegisk Malerie</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Frankenau, Rasmus (1826-1827) &#x201C;Fryd dig ved Livet&#x201D; [da. 1797, ty. 1793 af Johann Martin Usteri under titlen Freut Euch des Lebens] i S&#x00F8;ren Hempel, udg. <rs type="title" key="title329">
+<hi rend="italic">Digter-Krands. En Samling af udkaarede &#x00E6;ldre og nyere Selskabssange</hi> 1-2</rs>, bind 1 (1826). Odense</item>
+              <item>Frankenau, Rasmus (1826-1827) &#x201C;Nyd Livets korte Morgenr&#x00F8;de&#x201D; [senest 1806] i S&#x00F8;ren Hempel, udg. <rs type="title" key="title329">
+<hi rend="italic">Digter-Krands. En Samling af udkaarede &#x00E6;ldre og nyere Selskabssange</hi> 1-2</rs>, bind 1 (1826). Odense</item>
+              <item>
+                <rs type="title" key="title468">
+<hi rend="italic">Fyens Stifts Kongelig allene privilegerede Adresse-Avis og Avertissements-Tidende som forsendes med Brev-Posten overalt i Danmark, Norge og Hertugd&#x00F8;mmerne</hi>
+</rs> (1807), s. 547 f., 560, 654, 656. Odense</item>
+              <item>Glenth&#x00F8;j, Rasmus (2007) <hi rend="italic">
+<rs type="title" key="title526">P&#x00E5; f&#x00E6;drelandets alter. National identitet og patriotisme hos det danske borgerskab 1807-1814</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Glenth&#x00F8;j, Rasmus &amp; Jens Rahbek Rasmussen (2007) &#x201C;&#x2018;Engelskmanden den forbandede tyv&#x2019;. Fjendebilledet af England i samtid og eftertid&#x201D; i Rasmus Glenth&#x00F8;j &amp; Jens Rahbek Rasmussen, udg. <hi rend="italic">
+<rs type="title" key="title527">Det venskabelige bombardement. K&#x00F8;benhavn 1807 som historisk begivenhed og national myte</rs>.</hi> K&#x00F8;benhavn, s. 227-253</item>
+              <item>Graae, Thomas (1880) <hi rend="italic">
+<rs type="title" key="title522">Grundtvig paa Langeland (1805-1808). Et skitseret Tidsbillede</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Graae, Thomas (1906) &#x201C;Constance Leth og N.F.S. Grundtvig&#x201D; i <hi rend="italic">
+<rs type="title" key="title524">Dansk Tidsskrift</rs>,</hi> s. 220-226. K&#x00F8;benhavn</item>
+              <item>Grell, Helge (1992) <hi rend="italic">
+<rs type="title" key="title549">England og Grundtvig. Grundtvigs m&#x00F8;de med England og dets betydning for hans forfatterskab</rs>.</hi> &#x00C5;rhus</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1806) &#x201C;Lidet om Sangene i Edda&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> september, s. 270-299. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807a) &#x201C;Om Religion og Liturgie&#x201D; i <hi rend="italic">
+<rs type="title" key="title241">Theologisk Maanedsskrivt</rs>,</hi> februar, s. 129-201. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807b) &#x201C;Om Videnskabelighed og dens Fremme&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> marts, s. 249-298. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807c) &#x201C;Om Asal&#x00E6;ren&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> maj, s. 156-188. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807d) &#x201C;Et Par Ord i Anledning af det forkyndte S&#x00F8;rgespil: Signe&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> juni, s. 249-263. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807e) &#x201C;Om Schiller og Bruden i Messina&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> juni, s. 225-248. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807f: maj 1808) &#x201C;Om Oehlenschl&#x00E4;gers Baldur hiin Gode&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> december, s. 301-320. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808a) <hi rend="italic">Maskeradeballet i Dannemark 1808. Et Syn.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808b) &#x201C;I Anledning af mit Syns Mistydning. (See Stykket om mit Maskeradebal i Skilderiet No. 66.)&#x201D; i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 7. juni, nr. 69, sp. 1092 f. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808c) <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi eller Udsigt over Eddal&#x00E6;ren for dannede M&#x00E6;nd der ei selv ere Mytologer</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808d) &#x201C;Til Arlichinos Forfatter&#x201D; i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 6. september, nr. 95, sp. 1508. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1812) <hi rend="italic">
+<rs type="title" key="title629">Kort Begreb af Verdens Kr&#x00F8;nike i Sammenh&#x00E6;ng</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1815) <hi rend="italic">
+<rs type="title" key="title334">Kv&#x00E6;dlinger eller Smaakvad</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1869) &#x201C;Med bange Anelse jeg stirred&#x201D; udg. af Svend Grundtvig i <hi rend="italic">
+<rs type="title" key="title597">For Ide og Virkelighed, et Tidsskrift</rs>
+</hi> 1, s. 40 f. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1873) &#x201C;To af Grundtvigs f&#x00F8;rste Pr&#x00E6;dikener&#x201D; udg. i <hi rend="italic">
+<rs type="title" key="title532">Dansk Kirketidende</rs>
+</hi> 36-37, sp. 585-599. K&#x00F8;benhavn</item>
+              <item>
+                <rs type="title" key="title169">
+<hi rend="italic">N.F.S. Grundtvigs Poetiske Skrifter</hi> 1-9</rs> (1880-1930) udg. af Svend Grundtvig &amp; Georg Christensen, bind 1 (1880). K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1888a) <hi rend="italic">
+<rs type="title" key="title16">Christian Molbech og Nikolai Frederik Severin Grundtvig. En Brevvexling, samlet af Chr. K. F. Molbech og udgivet af L. Schr&#x00F8;der</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1888b) &#x201C;<rs type="title" key="title165">Synet</rs>&#x201D; i Grundtvig 1888a, s. 199-205</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1979) <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>
+</hi> 1-2, udg. af Gustav Albeck, bind 1: <hi rend="italic">Tekster (nr. 1-25)</hi>. K&#x00F8;benhavn</item>
+              <item>
+                <hi rend="italic">
+<rs type="title" key="title320">H&#x00E1;vam&#x00E1;l</rs>,</hi> se Sandvig 1783-1785</item>
+              <item>
+                <rs type="title" key="title551">Heimskringla</rs>, se J&#x00F3;nsson 1911 &amp; Snorre</item>
+              <item>Johansen, Steen (1948-1954) <rs type="title" key="title35">
+<hi rend="italic">Bibliografi over N.F.S. Grundtvigs skrifter</hi> 1-4</rs>, bind 1. K&#x00F8;benhavn (<hi rend="italic">Bibliografien</hi>)</item>
+              <item>J&#x00F3;nsson, Finnur, udg. (1911) <hi rend="italic">
+<rs type="title" key="title552">Heimskringla, N&#x00F3;regs konunga s&#x01EB;gur</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>J&#x00F3;nsson, Finnur, udg. (1913) <hi rend="italic">
+<rs type="title" key="title514">Carmina Scaldica. Udvalg af Norske og Islandske Skjaldekvad</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>
+                <hi rend="italic">
+<rs type="title" key="title550">Kongel. Forordninger og Aabne Breve, Forbud, Paabud, Tractater, Ordonnancer, Reglementer &amp;c. som H&#x00F8;ylofligste Ihukommelse Kong Christian den Femte, fra sin Kongelige Regierings Tiltr&#x00E6;delse udi Begyndelsen af Aaret 1670 indtil den Danske Lovs Publication 1683 paa Prent haver ladet udgaae, tillige med et Anhang af nogle for forskrevne Tiid udst&#x00E6;dte Forordninger, som efterf&#x00F8;lgende Forordninger beraabe sig paa, hvilken Samling er vedf&#x00F8;yet et fuldst&#x00E6;ndigt Alphabet-Register over Indholden af samtlige Kong Christian den Femtes Forordninger, som i Hans H&#x00F8;ylofligste Regierings Tiid udi Trykken er udkomne</rs>
+</hi> (u.&#x00E5;.: efter 1730) udg. anonymt, trykt hos Wielandts enke (: Inger Vindekilde). K&#x00F8;benhavn</item>
+              <item>Kruse, Lauritz (1808) <hi rend="italic">
+<rs type="title" key="title594">Arlichinos Bryllup. Skuespil i fem Akter</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Kryger, Karin (1991) &#x201C;Dansk Identitet i nyklassicistisk kunst. Nationale tendenser og nationalt s&#x00E6;rpr&#x00E6;g 1750-1800&#x201D; i <hi rend="italic">
+<rs type="title" key="title462">Dansk Identitetshistorie</rs>
+</hi> 1-4 udg. af Ole Feldb&#x00E6;k, bind 1: <hi rend="italic">F&#x00E6;dreland og modersm&#x00E5;l 1536-1789</hi>. K&#x00F8;benhavn, s. 231-418</item>
+              <item>Kuhn, Hans (1976) &#x201C;Der Dichter in der nationalen Krise. Oehlenschl&#x00E4;ger, Grundtvig und die Ereignisse von 1807/08&#x201D; i Oskar Bandle, udg. <hi rend="italic">
+<rs type="title" key="title580">Studien zur d&#x00E4;nischen Literatur des 19. Jahrhunderts</rs>.</hi> Basel, s. 47-78</item>
+              <item>K&#x00F8;ster, Kristian (1875) <hi rend="italic">
+<rs type="title" key="title579">Til Minde om Povel Dons, Grundtvigs og Ingemanns Ungdoms-Ven. Et efterladt Arbeide</rs>,</hi> udg. af Ludvig Schr&#x00F8;der. K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1965) <hi rend="italic">
+<rs type="title" key="title13">Grundtvig. Sk&#x00E6;bne og forsyn. Studier i Grundtvigs nordisk-romantiske dramatik.</rs>
+</hi> K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1969) &#x201C;Mulm og Skr&#x00E6;k og Kamp og D&#x00F8;d. Johs. Ewalds &#x2018;Rolf Krage&#x2019;&#x201D; i <hi rend="italic">
+<rs type="title" key="title488">Danske Studier</rs>,</hi> s. 5-19. K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14">
+<hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</hi> 1-2</rs>. K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1992) &#x201C;Grundtvig og danskhed&#x201D; i <hi rend="italic">
+<rs type="title" key="title462">Dansk Identitetshistorie</rs>
+</hi> 1-4 udg. af Ole Feldb&#x00E6;k, bind 3: <hi rend="italic">Folkets Danmark 1848-1940.</hi> K&#x00F8;benhavn, s. 9-187</item>
+              <item>Lyby, Thorkild C. (2005) &#x201C;Odin og Hvide Krist: Om Sune Aukens bog Sagas Spejl [...]&#x201D; i <hi rend="italic">
+<rs type="title" key="title337">Grundtvig-Studier</rs>,</hi> s. 144-159. K&#x00F8;benhavn</item>
+              <item>Lyngby, Thomas (2001) <hi rend="italic">
+<rs type="title" key="title601">Den sentimentale patriotisme. Slaget p&#x00E5; Rheden og H.C. Knudsens patriotiske handlinger</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Mentz, S&#x00F8;ren (2007) &#x201C;K&#x00F8;benhavns bombardement i kunstens optik. Krigsbilleder som erindring, propaganda og salgsobjekt&#x201D; i Rasmus Glenth&#x00F8;j &amp; Jens Rahbek Rasmussen, udg. <hi rend="italic">
+<rs type="title" key="title527">Det venskabelige bombardement. K&#x00F8;benhavn 1807 som historisk begivenhed og national myte</rs>.</hi> K&#x00F8;benhavn, s. 135-162</item>
+              <item>Michelsen, William (1956) <hi rend="italic">
+<rs type="title" key="title481">Den s&#x00E6;lsomme forvandling i N.F.S. Grundtvigs liv. Studier over tilblivelsen af Grundtvigs historiesyn</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>M&#x00F8;ller, Carl Johan (1804) <hi rend="italic">
+<rs type="title" key="title606">Danneqvinderne. Et heroisk Drama i tre Optoge med Chor-Sange<!-- TILF&#x00D8;J FULD TITEL-->
+</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Nielsen, H. (1804) &#x201C;Et Par Ord om offentlige Maskerader&#x201D; i <hi rend="italic">
+<rs type="title" key="title533">Politivennen</rs>
+</hi> 28. januar (imprimatur), nr. 301, s. 4791-4794. K&#x00F8;benhavn</item>
+              <item>
+<hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> (1804) nr. 37, 6. april. K&#x00F8;benhavn</item>
+              <item>Nystr&#x00F8;m, Eiler (1910-1913) <hi rend="italic">
+<rs type="title" key="title588">Offentlige Forlystelser i Frederik den Sjettes Tid. Et Bidrag til dansk Kulturhistorie</rs>
+</hi> 1-2, bind 2: <hi rend="italic">Kildeforlystelser i Dyrehaven m.m.</hi> K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1807a) <hi rend="italic">
+<rs type="title" key="title306">Nordiske Digte</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1807b) &#x201C;Hakon Jarl hin Rige&#x201D; i Oehlenschl&#x00E4;ger 1807a</item>
+              <item>Ottar Svarte <rs type="title" key="title605">
+<hi rend="italic">Kn&#x00FA;tsdr&#x00E1;pa</hi>
+</rs>
+</item>
+              <item>Paul, J&#x00FC;rgen &amp; Werner Busch (1994) &#x201C;Pelikan&#x201D; i <rs type="title" key="title590">
+<hi rend="italic">Lexikon der christlichen Ikonographie. Allgemeine Ikonographie</hi>
+</rs> 1-4 udg. af Engelbert Kirschbaum, bind 3: <hi rend="italic">Laban bis Ruth</hi>. Rom, Freiburg, Basel, Wien, sp. 390-392 [1971]</item>
+              <item>Pedersen, Sune Christian (1998) &#x201C;Maskeradens historie &#x2013; en historie om menneskesyn i forandring&#x201D; i <hi rend="italic">
+<rs type="title" key="title586">Folk og Kultur. &#x00C5;rbog for Dansk Etnologi og Folkemindevidenskab</rs>,</hi> s. 57-72. K&#x00F8;benhavn</item>
+              <item>Pram, Christen (1781) <hi rend="italic">
+<rs type="title" key="title347">St&#x00E6;rkodder. Et Digt i femten Sange</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Pram, Christen (1801) <hi rend="italic">
+<rs type="title" key="title583">Lagertha. Et dramatisk Fors&#x00F8;g, forfattet 1789, gjenneml&#x00E6;st og rettet paa ny 1801</rs>,</hi> udg. af Niels Christian &#x00D8;st. K&#x00F8;benhavn [1789]</item>
+              <item>Rerup, Lorenz (1991) &#x201C;Fra litter&#x00E6;r til politisk nationalisme. Udvikling og udbredelse fra 1808 til 1845&#x201D; i <hi rend="italic">
+<rs type="title" key="title462">Dansk Identitetshistorie</rs>
+</hi> 1-4 udg. af Ole Feldb&#x00E6;k, bind 2: <hi rend="italic">Et yndigt land 1789-1848,</hi> s. 325-390. K&#x00F8;benhavn</item>
+              <item>R&#x00F8;nning, Frederik (1907-1913) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>
+</hi> 1-4, bind 2, del 1 (1908). K&#x00F8;benhavn</item>
+              <item>Sandvig, Bertel (1779) <hi rend="italic">
+<rs type="title" key="title28">Danske Sange af det &#x00E6;ldste Tidsrum, indeholdende blandt andet nogle Danske og Norske Kongers Bedrifter. Af det gamle Sprog oversatte</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Sandvig, Bertel (1783-1785) <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda</rs>
+</hi> 1-2. K&#x00F8;benhavn</item>
+              <item>Saxo Grammaticus (1575) <hi rend="italic">
+<rs type="title" key="title178">Den Danske Kr&#x00F8;nicke som Saxo Grammaticvs screff/ halfffierde hundrede Aar forleden: Nu f&#x00F8;rst aff Latinen vds&#x00E6;t/ flittelige offuerset oc forbedret</rs>
+</hi> overs. af Anders S&#x00F8;rensen Vedel. K&#x00F8;benhavn</item>
+              <item>Saxo Grammaticus (2000) <hi rend="italic">
+<rs type="title" key="title604">Saxos Danmarkshistorie</rs>
+</hi> overs. af Peter Zeeberg. K&#x00F8;benhavn [1994] <ref type="litListWeb" target="http://adl.dk/adl_pub/forfatter/e_forfatter/e_forfatter.xsql?ff_id=21&amp;nnoc=adl_pub">http://adl.dk/adl_pub/forfatter/e_forfatter/e_forfatter.xsql?ff_id=21&amp;nnoc=adl_pub</ref> (14. december 2011)</item>
+              <item>Snorre Sturluson <hi rend="italic">
+<rs type="title" key="title551">Heimskringla</rs>
+</hi>
+</item>
+              <item>Snorre Sturluson (1633) <hi rend="italic">
+<rs type="title" key="title576">Snorre Sturles&#x00F8;ns Norske Kongers Chronica</rs>
+</hi> overs. af Peder Clauss&#x00F8;n Friis. K&#x00F8;benhavn</item>
+              <item>[Suhm, Peter Friederich] (1777) &#x201C;Signe og Habor eller Kierlighed st&#x00E6;rkere end D&#x00F8;den. Ved Forfatteren af Sigrid&#x201D; i <hi rend="italic">
+<rs type="title" key="title612">Fors&#x00F8;g i de ski&#x00F8;nne og nyttige Videnskaber[.] Samlede ved et patriotisk Selskab</rs>
+</hi> bind 6, 12. stykke</item>
+              <item>Suhm, Peter Friederich (1782-1828) <hi rend="italic">
+<rs type="title" key="title321">Historie af Danmark</rs>
+</hi> 1-14, bind 1 (1782): <hi rend="italic">fra de &#x00C6;ldste Tider til Aar 803</hi> bind 3 (1787): <hi rend="italic">fra Aar 942 til 1053.</hi> K&#x00F8;benhavn</item>
+              <item>&#x201C;Til en Vis&#x201D; (1808) i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 17. september, nr. 98, sp. 1564. K&#x00F8;benhavn</item>
+              <item>Toldberg, Helge (1947) &#x201C;Stadier i Grundtvigs forfatterskab&#x201D; i <rs type="title" key="title599">
+<hi rend="italic">Acta Philologica Scandinavica. Tidsskrift for nordisk Sprogforskning</hi>
+</rs> 19, s. 143-178. K&#x00F8;benhavn</item>
+              <item>Toldberg, Helge (1950) <hi rend="italic">
+<rs type="title" key="title603">Grundtvigs Symbolverden</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Vibe, Johann (1797) &#x201C;Den, Skaberen skj&#x00E6;nkte en oplyst Forstand&#x201D; i H.J. Graae, udg. <hi rend="italic">
+<rs type="title" key="title497">Arier og Sange</rs>
+</hi> 1-2, bind 2: <hi rend="italic">Bestaaende af to Hundrede og Firesindstyve Stykker,</hi> udg. af [Thomas Severin Heiberg]. K&#x00F8;benhavn</item>
+              <item>Vind, Ole (1999) <hi rend="italic">
+<rs type="title" key="title25">Grundtvigs historiefilosofi</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Yahil, Leni (1991) &#x201C;National Pride and Defeat. A Comparison of Danish and German Nationalism&#x201D; i <rs type="title" key="title610">
+<hi rend="italic">Journal of Contemporary History</hi>
+</rs> 26/3-4, s. 453-478 <ref type="litListWeb" target="http://www.jstor.org/stable/260655">http://www.jstor.org/stable/260655</ref> (14. december 2011)</item>
+              <item>
+                <rs type="title" key="title147">
+<hi rend="italic">Ynglingasaga</hi>
+</rs>, se <hi rend="italic">Heimskringla</hi>
+</item>
+            </list>
+          
+        </div>
+        <div>
+          <head xml:id="docIn23">Utrykt</head>
+          <list type="litList">
+            <item>Grundtvig, Nicolai Frederik Severin &#x201C;Om gamle Nords / skrevne Mindesm&#x00E6;rker / og is&#x00E6;r om den poetiske Edda[.] / Et Ord[.] / Til alle rette Nordboer&#x201D;, ms. i Det kongelige Bibliotek, K&#x00F8;benhavn, Grundtvig-Arkivet, <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=4771">fasc. 257</ref>
+</item>
+          </list>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn39">Anvendte websider</head>
+        <list type="webList">
+          <item n="2011-12-14" target="http://adl.dk/adl_pub/forfatter/e_forfatter/e_forfatter.xsql?ff_id=21&amp;nnoc=adl_pub">http://adl.dk/adl_pub/forfatter/e_forfatter/e_forfatter.xsql?ff_id=21&amp;nnoc=adl_pub</item>
+          <item n="2011-12-14" target="http://www.jstor.org/stable/260655">http://www.jstor.org/stable/260655</item>
+          </list>
+      </div>
+    </body>
+</text>
+</TEI>

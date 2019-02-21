@@ -1,0 +1,872 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Gylden-Aaret</title>
+      <title rend="shortForm">Gylden-Aaret</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Stine Holst Petersen</editor>
+      <editor role="student1">Josefine Rahbek</editor>
+      <editor role="student2">Jeppe Karn&#x00F8;e Knudsen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.13</idno>
+               <idno type="content">1.13</idno>
+               <idno type="technic">1.13.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>12 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            <date when="2018-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.13, 1. november 2018</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>&#x005B;titel&#x005D;</title>
+            <respStmt>
+               <name>&#x005B;udgiver&#x005D;</name>
+               <resp>&#x005B;evt.&#x005D;</resp>
+            </respStmt>
+            <idno>2018-11-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1834_527_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note target="1834_527_com.xml" type="com">Punktkommentar</note>
+            <note target="1834_527_intro.xml" type="intro">Indledning</note>
+            <note target="1834_527_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">&#x005B;titel&#x005D;</title>
+       <author>&#x005B;forfatter&#x005D;
+        <note>&#x005B;evt.&#x005D;</note>
+       </author>
+       <pubPlace>&#x005B;sted&#x005D;</pubPlace>
+       <publisher>&#x005B;trykker&#x005D;
+        <note>&#x005B;evt.&#x005D;</note>
+       </publisher>
+       <date>&#x005B;&#x00E5;r&#x005D;</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="527">
+        <desc>F&#x00F8;rstetrykket</desc>
+        <num>1834</num>
+       </witness>
+      <witness xml:id="R">
+        <desc>Renskrift</desc>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>6</num>
+       </witness>
+      <witness xml:id="US">
+        <desc>Udvalgte Skrifter</desc>
+        <num>8</num>
+       </witness>
+      <witness xml:id="VU">
+        <desc>V&#x00E6;rker i Udvalg</desc>
+        <num>8</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+       <term>lejlighedsdigte</term>
+      </classCode>
+      <keywords scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;emneord.xml">
+       <term>kongehuset</term>
+       <term>jubilæer</term>
+       <term>historie</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+       <change who="JR" xml:id="JR" when="2018-03-19">Etableret og tilrettet filen</change>
+       <change who="JR" when="2018-03-27">Indf&#x00F8;rt rettelser fra 1. kollation ekspl. Grundtvig Centeret, uindbundet, NR. 4. + Faxkodning</change>
+       <change who="JR" when="2018-03-28">Sammenlignet og indf&#x00F8;rt rettelser fra 2. kollation (JKK) ekspl. Grundtvigs V&#x00E6;rker; i samlebind for hele &#x00E5;rgangen (besk&#x00E5;ret og indbundet), proveniens N. Thomsen, mag. ex. 2.</change>
+      <change who="auto" when="2018-06-14">Autoopm&#x00E6;rket af autotag.awk v12 KK 2017-03-09</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">
+    <pb type="periText" facs="1834_527_fax001.jpg"/>
+    
+    
+	 <!-- 
+		
+			
+				Den Nordiske Kirke-Tidende
+				Nik. Fred. Sev. Grundtvig
+				
+					Generated 
+					BookPartnerMedia
+				
+			
+			
+				
+			
+			
+				1834
+			
+			
+			[Source decription]
+			
+		
+	-->
+	<!-- <front rend="[Titelblad]">
+			<titlePage type="dustTitlePage">
+			<pb type="text" facs="1834_527_fax001.jpg" ed="A" n=""/>
+			
+				<docTitle>
+	<titlePart type="main">Den Nordiske Kirke-Tidende</titlePart>
+	<titlePart type="sub">et Uge-Skriftfor Kirken og Skolen.</titlePart>
+</docTitle>
+<byline>Udgivet og forlagt af 
+	<docAuthor>Mag. Jac. Chr. Lindberg.Trykt hos de Fabritius de Tengnagel.</docAuthor>
+				</byline>
+				<epigraph>
+				</epigraph>
+				<p>Nr. 4. Søndag Septuagesima 1834</p>
+				<graphic style="shortLine/longLine"/>
+				<docImprint>
+				<pubPlace/>.Maa trykkes. I <placeName key="his1037">Kjøbenhavns Politieret</placeName> den 25 Januar 1834. <persName key="pe3951">Thomsen</persName>.
+.
+</docImprint>
+</titlePage>
+</front> -->
+		
+<body xml:space="preserved">
+   
+<div type="&#x005B;Hvad er det for en Lille&#x005D;">
+<pb type="text" facs="1834_527_fax002.jpg" ed="A" rend="supp" subtype="column" n="49"/><pb type="edition" ed="PS" n="1"/><pb type="edition" ed="US" n="10"/><pb type="edition" ed="VU" n="53"/>
+<!-- <graphic style="shortLine/longLine"/> -->
+
+<head rend="1"><seg type="com" n="com1">Gylden-Aaret</seg>.</head>
+<lg n="1">
+<l><hi rend="initial">H</hi>vad er det for en Lille,</l>
+<l rend="firstIndent">Der vugges nu paa Hav,</l>
+<l>Hvor B&#x00F8;lger <!--<seg type="com" n="com2">-->ikkun<!--</seg>--> trille,</l>
+<l rend="firstIndent">Hvor alle Storme tav,</l>
+<l>Hvad staaer der i hans Stjerne;</l>
+<l>Hvad slumrer i hans Hjerne;</l>
+<l rend="firstIndent">Hvad smiler i hans Dr&#x00F8;m!</l>
+</lg>
+<lg n="2">
+<l>Skal han som Br&#x00F8;dre mange,</l>
+<l rend="firstIndent">Med stakket Levnets-L&#x00F8;b</l>
+<l>Trods glade Vugge-Sange,</l>
+<l rend="firstIndent">Henvisne i sit Sv&#x00F8;b,</l>
+<l>Og <seg type="com" n="com3">st&#x00E6;des</seg> saa til Jorde</l>
+<l>Med Smil, som den der gjorde</l>
+<l rend="firstIndent">Sit Bedste ved at d&#x00F8;e?</l>
+</lg>
+<lg n="3">
+<l><pb type="edition" ed="PS" n="2"/>O nei dog, ingenlunde!</l>
+<l rend="firstIndent">Her paa den j&#x00E6;vne Jord,</l>
+<l><pb type="text" facs="1834_527_fax002.jpg" ed="A" rend="supp" subtype="column" n="50"/><pb type="edition" ed="US" n="11"/>Imellem <seg type="com" n="com4">Belt</seg> og Sunde</l>
+<l rend="firstIndent">Den Lille bliver stor,</l>
+<l><pb type="edition" ed="VU" n="54"/>Og naar han os forlader,</l>
+<l>Da gaaer han til sin Fader,</l>
+<l rend="firstIndent">I &#x00C6;rens <seg type="com" n="com5">H&#x00F8;ie-Loft</seg>!</l>
+</lg>
+<lg n="4">
+<l>Ja, i sin <seg type="com" n="com6">Middel-Alder</seg></l>
+<l rend="firstIndent">Han kroner, Gud for Alt,</l>
+<l>Den <seg type="com" n="com7">&#x00C6;tmand</seg> god af <rs type="myth" key="myth6">Balder</rs>,</l>
+<l rend="firstIndent">Som blev til Styret kaldt</l>
+<l>I gamle Faders Dage,</l>
+<l><seg type="com" n="com8">Fuldmange</seg> Aar tilbage,</l>
+<l rend="firstIndent">Med <hi rend="spaced"><rs type="myth" key="myth137">Fredegodes</rs></hi> Navn!</l>
+</lg>
+<lg n="5">
+<l>Saa vox da op, du Sp&#x00E6;de,</l>
+<l rend="firstIndent">Til Helte-Daad i Vaar!</l>
+<l>Og bliv, til Daners Gl&#x00E6;de,</l>
+<l rend="firstIndent">Et Fredens <hi rend="spaced"><seg type="com" n="com9">Gylden-Aar</seg>,</hi></l>
+<l>For Gamle og for Unge,</l>
+<l>I Hjerte og paa Tunge</l>
+<l rend="firstIndent">I Lund og <seg type="com" n="com10">H&#x00F8;ieloft</seg>!</l>
+</lg> 
+
+
+<lg n="6">
+<l><pb type="text" facs="1834_527_fax003.jpg" ed="A" subtype="column" n="51"/>Der kom et Skib til Lande,</l>
+<l rend="firstIndent">I Havn forgangen <seg type="com" n="com11">H&#x00F8;st</seg>,</l>
+<l>Som bragde over Strande</l>
+<l rend="firstIndent">Til Daner Fred og Tr&#x00F8;st,</l>
+<l>Hvor Kongen, frelst fra D&#x00F8;den,</l>
+<l>Stod rank i Aften-R&#x00F8;den</l>
+<l rend="firstIndent">I Glands med <hi rend="spaced">Dannebrog!</hi></l>
+</lg>
+<lg n="7">
+<l>Da l&#x00F8;fted sig en Stemme,</l>
+<l rend="firstIndent">Da l&#x00F8;d i Sky et Ord,</l>
+<l><pb type="edition" ed="PS" n="3"/>Som bedre haver hjemme</l>
+<l rend="firstIndent">Ei nogensteds paa Jord,</l>
+<l>Og Kongen, dybt bev&#x00E6;get,</l>
+<l>Sig f&#x00F8;lde vederkv&#x00E6;get,</l>
+<l rend="firstIndent">Som kongef&#x00F8;dt paa Ny!</l>
+</lg>
+<lg n="8">
+<l><pb type="edition" ed="US" n="12"/><pb type="edition" ed="VU" n="55"/>Det skal i Guld Du pr&#x00E6;ge,</l>
+<l rend="firstIndent">Nyf&#x00F8;dte <seg type="com" n="com12">Gylden-Aar</seg>!</l>
+<l>Til Folk at vederkv&#x00E6;ge,</l>
+<l rend="firstIndent">Saavidt som Ordet gaaer,</l>
+<l>Til for uf&#x00F8;dte Sl&#x00E6;gter</l>
+<l>At vidne, hvad <seg type="com" n="com13">end</seg> m&#x00E6;gter</l>
+<l rend="firstIndent">Den Danske Kj&#x00E6;rlighed!</l>
+</lg>
+<lg n="9">
+<l>Ja, den skal giemmes l&#x00E6;nge</l>
+<l rend="firstIndent">Og findes &#x00C6;re v&#x00E6;rd,</l>
+<l>Den sjeldne <seg type="com" n="com14">Skue-Penge</seg>,</l>
+<l rend="firstIndent">Som Hjerte-Pr&#x00E6;get b&#x00E6;r,</l>
+<l>Med Klang som Skjalde kv&#x00E6;de</l>
+<l>Om <placeName key="fak14">Danmarks</placeName> Hjertens-Gl&#x00E6;de</l>
+<l rend="firstIndent">I <hi rend="spaced"><persName key="pe96">Fredriks</persName></hi> <seg type="com" n="com15">Gylden-Aar</seg>!</l>
+</lg>
+<lg n="10">
+<l>Der, paa den ene Side,</l>
+<l rend="firstIndent">Man under Konge-Flag</l>
+<l>Seer Lykke-Skibet skride</l>
+<l rend="firstIndent">For fulde Seil i Mag,</l>
+<l>Hvor ingen Vinde suse,</l>
+<l>Og ingen B&#x00F8;lger bruse,</l>
+<l rend="firstIndent">Men Alt er Varmens V&#x00E6;rk!</l>
+</lg>
+<lg n="11">
+<l>Og paa den anden Side,</l>
+<l rend="firstIndent">Med gylden <seg type="com" n="com110">Axe-Krands</seg></l>
+<l>Om S&#x00F8;lver-Lokker hvide,</l>
+<l rend="firstIndent">Staaer Kongen i sin Glands,</l>
+<l><pb type="edition" ed="PS" n="4"/>Henpegende paa R&#x00F8;sten</l>
+<l>&#x201C;<rs type="bible" subtype="bibleStart" rend="allusion" key="Es 9,2" n="bible1"/>Som Gl&#x00E6;den er <seg type="com" n="com16">om H&#x00F8;sten</seg><rs type="bible" subtype="bibleEnd" rend="allusion" key="Es 9,2" n="bible1"/>&#x201D;</l>
+<l rend="firstIndent">Med gylden <seg type="com" n="com17">Konge-Vaand</seg>!</l>
+</lg>
+<lg n="12">
+<l><pb type="text" facs="1834_527_fax003.jpg" ed="A" subtype="column" n="52"/>Her er det Kongens <seg type="com" n="com18">Baade</seg></l>
+<l rend="firstIndent">I Alderdommens Aar</l>
+<l>At <seg type="comStart" n="com111"/><rs type="bible" rend="reference" key="Gal 6,7">h&#x00F8;ste hvad han saa&#x2019;de</rs><seg type="comEnd" n="com111"/></l>
+<l rend="firstIndent">I kraftig Ungdoms Vaar;</l>
+<l><pb type="edition" ed="VU" n="56"/>Her er det Markens &#x00C6;re</l>
+<l>En <seg type="com" n="com112">Axe-Krands</seg> at b&#x00E6;re</l>
+<l rend="firstIndent">Som Kongen frydes ved!</l>
+</lg>
+<lg n="13">
+<l><pb type="edition" ed="US" n="13"/>Ja, sandt er det at sige,</l>
+<l rend="firstIndent">Da som en lille Pog</l>
+<l>I Dane-Kongens Rige</l>
+<l rend="firstIndent">Jeg staved slet i Bog,</l>
+<l>Da h&#x00F8;rde grandt jeg tale</l>
+<l>Om Ham i Konge-Sale</l>
+<l rend="firstIndent">Som da var ung og viis!</l>
+</lg>
+<lg n="14">
+<l>Han holdt i hine Dage</l>
+<l rend="firstIndent">Et Ind-Tog med sin Brud,</l>
+<l>Da maatte &#x00D8;ren <seg type="com" n="com19">brage</seg></l>
+<l rend="firstIndent">Af h&#x00F8;ie &#x00C6;re-Skud</l>
+<l>Og mest fra Pige-Munde</l>
+<l>Som sang i Mark og Lunde</l>
+<l rend="firstIndent">Hans favre Brude-Vers!</l>
+</lg>
+<lg n="15">
+<l>Ja, det er ei at glemme,</l>
+<l rend="firstIndent">At ved den <seg type="com" n="com20">H&#x00F8;itids-F&#x00E6;rd</seg></l>
+<l>Sig l&#x00F8;ftede en Stemme,</l>
+<l rend="firstIndent">Som l&#x00E6;nge tied <seg type="com" n="com21">kv&#x00E6;r</seg>,</l>
+<l>Det var vor Moders egen,</l>
+<l>Som yndig, halv forlegen</l>
+<l rend="firstIndent">Paa Ny i Skoven klang!</l>
+</lg>
+<lg n="16">
+<l><pb type="edition" ed="PS" n="5"/>Det <seg type="com" n="com113">saa</seg> sig maatte f&#x00F8;ie</l>
+<l rend="firstIndent">I denne Herres Tid,</l>
+<l>Thi Naade for Hans &#x00D8;ie</l>
+<l rend="firstIndent">Fandt Sangen j&#x00E6;vn og blid,</l>
+<l>Ja, Naade fandt og <app type="corrNote" select="yes"><lem wit="GV">H&#x00E6;der</lem><rdg wit="A">H&#x00E6;derr</rdg><witDetail wit="A" n="52" rend="ditto"/></app>,</l>
+<l>Med Danske Folk og <seg type="com" n="com22">S&#x00E6;der</seg>,</l>
+<l rend="firstIndent">Vort simple Moders-Maal!</l>
+</lg>
+<lg n="17">
+<l><pb type="edition" ed="VU" n="57"/>Thi maa, om end lidt silde,</l>
+<l rend="firstIndent">Som alle <seg type="com" n="com23">Gylden-Aar</seg>,</l>
+<l>Nu komme det &#x201C;H&#x00F8;st-Gilde&#x201D;</l>
+<l rend="firstIndent">Der spaa&#x2019;des om i Vaar,</l>
+<l>Da <seg type="com" n="com114">trindt</seg> fra Mark og Vove</l>
+<l>Indh&#x00F8;stes <seg type="com" n="com24">Tak</seg> til <seg type="com" n="com25">Hove</seg></l>
+<l rend="firstIndent">Halvtredsindstyve Fold!</l>
+</lg> 
+
+
+<lg n="18">
+<l><pb type="text" facs="1834_527_fax004.jpg" ed="A" subtype="column" n="53"/><pb type="edition" ed="US" n="14"/>Her er slet ikke Talen</l>
+<l rend="firstIndent">Om meget &#x201C;Sort paa Hvidt&#x201D;</l>
+<l>For Dyd i Konge-Salen,</l>
+<l rend="firstIndent">For <seg type="com" n="com26">Borger-Selskab</seg> frit;</l>
+<l>God Gierning selv sig priser,</l>
+<l>Hvad Penne-Str&#x00F8;g beviser</l>
+<l rend="firstIndent">Det er kun Skrive-Konst!</l>
+</lg>
+<lg n="19">
+<l>Nei, R&#x00F8;dt, paa Hvidt er Arven,</l>
+<l rend="firstIndent">Vi har fra Heden-Old,</l>
+<l>Og Hvidt paa R&#x00F8;dt er Farven,</l>
+<l rend="firstIndent">Vi f&#x00F8;re i vort Skjold;</l>
+<l>I Hytten og til <seg type="com" n="com28">Hove</seg></l>
+<l>Vi takke, som vi love,</l>
+<l rend="firstIndent">Kun ret med Haand og Mund!</l>
+</lg>
+<lg n="20">
+<l>Og Kongen af Guds Naade,</l>
+<l rend="firstIndent">Som h&#x00F8;ste skal i Lund,</l>
+<l>Ei Bl&#x00E6;k med Pennen saa&#x2019;de,</l>
+<l rend="firstIndent">Men Fr&#x00F8; med Haand og Mund</l>
+<l><pb type="edition" ed="PS" n="6"/>Til Alt hvad Livet pryder,</l>
+<l>Til Alt hvad Hjertet fryder:</l>
+<l rend="firstIndent">Til varigt Folke-Held!</l>
+</lg>
+<lg n="21">
+<l>Det h&#x00F8;rde jeg <seg type="com" n="com115">forleden</seg>,</l>
+<l rend="firstIndent">I <seg type="com" n="com29">Jubel-Drottens</seg> Vaar,</l>
+<l>I Skoven og paa Heden,</l>
+<l rend="firstIndent">I mine Drenge-Aar,</l>
+<l>I hine <seg type="com" n="com30">Trylle-Dage</seg>,</l>
+<l>Da <hi rend="spaced">Prindsen</hi> uden Mage</l>
+<l rend="firstIndent">Lovpristes vidt om Land!</l>
+</lg>
+<lg n="22">
+<l><pb type="edition" ed="VU" n="58"/>Mens selvgjort Lyn og Torden</l>
+<l rend="firstIndent">I Raad-Huus og paa Val</l>
+<l>Bortskr&#x00E6;mmed Fred fra Jorden,</l>
+<l rend="firstIndent">Udbredte D&#x00F8;d og Kval;</l>
+<l>Kun gienl&#x00F8;d <placeName key="fak14">Danmarks</placeName> Vange</l>
+<l>Af h&#x00F8;ie Fryde-Sange</l>
+<l rend="firstIndent">Til Freds og <hi rend="spaced"><persName key="pe96">Frederiks</persName></hi> Priis!</l>
+</lg>
+<lg n="23">
+<l><pb type="edition" ed="US" n="15"/>Det gienl&#x00F8;d vidt paa Jorden</l>
+<l rend="firstIndent">&#x201C;Han l&#x00F8;ser alle Baand&#x201D;</l>
+<l>Den &#x00E6;dle Prinds i <placeName key="fak24">Norden</placeName>,</l>
+<l rend="firstIndent">Ham driver Friheds Aand:</l>
+<l>Han binder kun fra Oven</l>
+<l>Urettens Haand med Loven,</l>
+<l rend="firstIndent">Og Folk med Ki&#x00E6;rlighed!</l>
+</lg>
+<lg n="24">
+<l><pb type="text" facs="1834_527_fax004.jpg" ed="A" subtype="column" n="54"/>Da blussed vore Kinder</l>
+<l rend="firstIndent">Da kom der R&#x00F8;dt paa Hvidt,</l>
+<l>Som ved vor Ungdoms Minder</l>
+<l rend="firstIndent">Endnu der kommer tit,</l>
+<l><pb type="edition" ed="PS" n="7"/>Det <seg type="com" n="com31">spurgdes</seg> over Stranden,</l>
+<l>At stolte af hinanden</l>
+<l rend="firstIndent">Var Fyrsten og hans Folk!</l>
+</lg>
+<lg n="25">
+<l>Som <rs type="title" key="title77">&#x201C;deiligst Vang og V&#x00E6;nge&#x201D;</rs></l>
+<l rend="firstIndent">Det lille <placeName key="fak14">Danmark</placeName> laae,</l>
+<l>For Uf&#x00E6;rd <seg type="com" n="com32">syndes</seg> l&#x00E6;nge</l>
+<l rend="firstIndent">Det &#x201C;<seg type="com" n="com116">lukt</seg> med B&#x00F8;lgen blaa&#x201D;</l>
+<l>Til, som saa tit, det h&#x00E6;ndtes,</l>
+<l>At hvor ei Faren ventes,</l>
+<l rend="firstIndent">Den snarest kommer fra!</l>
+</lg>
+<lg n="26">
+<l>Det saae jeg giennem Taagen,</l>
+<l rend="firstIndent">Med <seg type="com" n="com33">stakket</seg> Sv&#x00E6;rd ved L&#x00E6;nd,</l>
+<l>Kun hv&#x00E6;sset slet paa Bogen</l>
+<l>Om &#x201C;<hi rend="spaced">at</hi>&#x201D; og &#x201C;<hi rend="spaced">da</hi>&#x201D; og &#x201C;<hi rend="spaced">men</hi>&#x201D;</l>
+<l rend="firstIndent"><pb type="edition" ed="VU" n="59"/>Da <seg type="com" n="com34">Spillet</seg> paa <hi rend="spaced"><placeName key="fak1370">Tre-Kroner</placeName></hi></l>
+<l>Med ubekjendte Toner</l>
+<l rend="firstIndent">Gjenl&#x00F8;d i <hi rend="spaced"><placeName key="poet396">Axelstad</placeName>!</hi></l>
+</lg>
+<lg n="27">
+<l>Det <seg type="com" n="com35">baader</seg> ei at glemme</l>
+<l rend="firstIndent">Gienvordighed paa Jord,</l>
+<l>Alvorlig er dens Stemme</l>
+<l rend="firstIndent">Og <seg type="com" n="com36">m&#x00E6;rkeligt</seg> dens Ord,</l>
+<l>Og stort det aldrig duer</l>
+<l>Hvad i en Sk&#x00E6;rs-Ilds Luer</l>
+<l rend="firstIndent">Ei luttres men forgaaer!</l>
+</lg>
+<lg n="28">
+<l><pb type="edition" ed="US" n="16"/>Derfor saa god at gi&#x00E6;ste</l>
+<l rend="firstIndent">Er, som en pr&#x00F8;vet Mand,</l>
+<l>Kong <hi rend="spaced"><persName key="pe96">Frederik</persName></hi> den Bedste</l>
+<l rend="firstIndent">Og Daners F&#x00F8;deland,</l>
+<l>Hjems&#x00F8;gte blev de begge</l>
+<l>Med meer end <seg type="com" n="com37">Odd og Egge</seg>:</l>
+<l rend="firstIndent">Med Harm og Hjerte-Sorg!</l>
+</lg>
+<lg n="29">
+<l><pb type="edition" ed="PS" n="8"/>N&#x00E6;rv&#x00E6;rende Tids-Alder</l>
+<l rend="firstIndent">Med Skarpt blev her indskudt,</l>
+<l>Det lod for os, som <hi rend="spaced"><rs type="myth" key="myth6">Balder</rs></hi></l>
+<l rend="firstIndent">paa Ny til <rs type="myth" key="myth33">Hel</rs> var budt,</l>
+<l>Hans Skib paa <seg type="com" n="com38">Hexe-Ruller</seg></l>
+<l>Udskred med Brag og Bulder</l>
+<l rend="firstIndent">Saa <hi rend="spaced"><rs type="myth" key="myth56">Nannas</rs></hi> Hjerte brast!</l>
+</lg> 
+
+
+<lg n="30">
+<l><pb type="text" facs="1834_527_fax005.jpg" ed="A" subtype="column" n="55"/>Da blev der f&#x00F8;dt og <seg type="com" n="com39">baaret</seg></l>
+<l rend="firstIndent">En Smerte-S&#x00F8;n i <placeName key="fak24">Nord</placeName>,</l>
+<l>Til f&#x00F8;rst i <seg type="com" n="com40">Gylden-Aaret</seg></l>
+<l rend="firstIndent">At vorde glad og stor:</l>
+<l>Paa Valen stod hans Vugge,</l>
+<l>En D&#x00F8;dning var hans Dukke,</l>
+<l rend="firstIndent">Hans Hest en Bauta-Steen!</l>
+</lg>
+<lg n="31">
+<l><pb type="edition" ed="VU" n="60"/>Dog blev han til en Sanger</l>
+<l rend="firstIndent">Med <seg type="com" n="com117">s&#x00E6;re</seg> <seg type="com" n="com41">K&#x00E6;mpe-Kaar</seg>,</l>
+<l>Som laande <hi rend="spaced"><rs type="myth" key="myth59">Odins</rs></hi> Ganger</l>
+<l rend="firstIndent">Og gi&#x00E6;sted <hi rend="spaced"><rs type="myth" key="myth33">Helas</rs></hi> Gaard,</l>
+<l>Kom hjem med <hi rend="spaced"><rs type="myth" key="myth59">Odins</rs></hi> Lykke,</l>
+<l>Med <hi rend="spaced"><rs type="myth" key="myth205">Fyllas</rs></hi> Hoved-Smykke</l>
+<l rend="firstIndent">Og <hi rend="spaced"><rs type="myth" key="myth56">Nannas</rs></hi> hvide Sl&#x00F8;r!</l>
+</lg>
+<lg n="32">
+<l>Ham <hi rend="spaced"><rs type="myth" key="myth6">Balders</rs></hi> Aand omsv&#x00E6;ver,</l>
+<l rend="firstIndent">Hans Borg sig Dag for Dag</l>
+<l>Paa gyldne <seg type="com" n="com42">Suler</seg> h&#x00E6;ver</l>
+<l rend="firstIndent">Med blanke <seg type="com" n="com43">S&#x00F8;lver-Tag</seg>,</l>
+<l>Han alle <seg type="com" n="com44">Tr&#x00E6;tter j&#x00E6;vner</seg>,</l>
+<l><hi rend="spaced"><rs type="myth" key="myth196">Forsete</rs></hi> Man ham n&#x00E6;vner</l>
+<l rend="firstIndent">Paa <placeName key="fak24">Nordens</placeName> Billed-Sprog!</l>
+</lg>
+<lg n="33">
+<l><pb type="edition" ed="US" n="17"/>Nu er han myndig blevet,</l>
+<l rend="firstIndent">I <hi rend="spaced"><persName key="pe96">Fredriks</persName></hi> <seg type="com" n="com45">Gylden-Aar</seg>;</l>
+<l>Og til han blir udlevet</l>
+<l rend="firstIndent">Har <hi rend="spaced"><placeName key="fak14">Danmark</placeName></hi> gyldne Kaar;</l>
+<l><pb type="edition" ed="PS" n="9"/>Thi det er Daners <seg type="com" n="com46">Baade</seg></l>
+<l>At <seg type="comStart" n="com118"/><rs type="bible" rend="reference" key="Gal 6,7">h&#x00F8;ste hvad de saa&#x2019;de</rs><seg type="comEnd" n="com118"/></l>
+<l rend="firstIndent">I Folke-Livets Vaar!</l>
+</lg>
+<lg n="34">
+<l>Nu skal det aabenbares,</l>
+<l rend="firstIndent"><seg type="comStart" n="com130"/>At gammel Ki&#x00E6;rlighed</l>
+<l>I hver en Sk&#x00E6;rs-Ild <seg type="com" n="com47">klares</seg>,</l>
+<l rend="firstIndent">Og er for Rust i Fred<seg type="comEnd" n="com130"/>;</l>
+<l>For Levende og D&#x00F8;de</l>
+<l>Kan Daners Hjerter bl&#x00F8;de</l>
+<l rend="firstIndent">Men isne kan de ei!</l>
+</lg>
+<lg n="35">
+<l>Der kom et Skib til Lande,</l>
+<l rend="firstIndent">I Havn forgangen <seg type="com" n="com48">H&#x00F8;st</seg></l>
+<l>Som bragde over Strande</l>
+<l rend="firstIndent">Til Daner Fred og Tr&#x00F8;st,</l>
+<l>Hvor Kongen, frelst fra D&#x00F8;den,</l>
+<l>Stod rank i Aften-R&#x00F8;den</l>
+<l rend="firstIndent">I Glands med Dannebrog!</l>
+</lg>
+<lg n="36">
+<l><pb type="text" facs="1834_527_fax005.jpg" ed="A" subtype="column" n="56"/><pb type="edition" ed="VU" n="61"/>Da l&#x00F8;fted sig en Stemme,</l>
+<l rend="firstIndent">Da l&#x00F8;d i Sky et Ord,</l>
+<l>Som bedre haver hjemme</l>
+<l rend="firstIndent">Ei nogensteds paa Jord,</l>
+<l>Og Kongen, dybt bev&#x00E6;get,</l>
+<l>Sig f&#x00F8;lde vederkv&#x00E6;get,</l>
+<l rend="firstIndent">Som kongef&#x00F8;dt paa Ny!</l>
+</lg>
+<lg n="37">
+<l>Det var en deilig Scene,</l>
+<l rend="firstIndent">Men intet Skue-<hi rend="spaced">Spil,</hi></l>
+<l>Med den skal sig forene</l>
+<l rend="firstIndent">Alt hvad der h&#x00F8;rer til,</l>
+<l><pb type="edition" ed="PS" n="10"/>For klarlig at stadf&#x00E6;ste:</l>
+<l><seg type="com" n="com49">End</seg> lever dog det Bedste</l>
+<l rend="firstIndent">Hos Kongen og Hans Folk!</l>
+</lg>
+<lg n="38">
+<l><pb type="edition" ed="US" n="18"/><seg type="com" n="com49">End</seg> lever Ki&#x00E6;rligheden,</l>
+<l rend="firstIndent">Som aldrig skal forgaae,</l>
+<l>Men <seg type="com" n="com51">klare sig</seg> herneden,</l>
+<l rend="firstIndent">Til Livet at forstaae,</l>
+<l>Til klart Ham at begribe,</l>
+<l>Der evig er i Live,</l>
+<l rend="firstIndent">Som Ki&#x00E6;rligheden selv!</l>
+</lg>
+<lg n="39">
+<l>Saa er da ikke <seg type="com" n="com52">brustet</seg>,</l>
+<l rend="firstIndent">&#x201C;<rs type="bible" key="Kol 3,14" rend="reference">Fuldkommenhedens Baand</rs>&#x201D;</l>
+<l>Vor Kj&#x00E6;de er ei rustet,</l>
+<l rend="firstIndent">Den bryder ingen Haand,</l>
+<l>Men af hvert Led udspringer</l>
+<l>En Blomst med Fugle-Vinger</l>
+<l rend="firstIndent">Til <seg type="com" n="com54">Gylden-Aarets</seg> Krands!</l>
+</lg>
+<lg n="40">
+<l>Ja Kj&#x00E6;den af <seg type="com" n="com55">Ki&#x00E6;r-Minder</seg></l>
+<l rend="firstIndent">Man sagtens prise t&#x00F8;r:</l>
+<l>Jo st&#x00E6;rkere den binder,</l>
+<l rend="firstIndent">Des friere den gi&#x00F8;r,</l>
+<l><pb type="edition" ed="VU" n="62"/>Jo l&#x00E6;nger den <seg type="com" n="com56">mon</seg> vare,</l>
+<l>Des mindre staaer den Fare,</l>
+<l rend="firstIndent">Des l&#x00E6;ngere den blir!</l>
+</lg>
+<lg n="41">
+<l>Man l&#x00E6;nge nok maa sige</l>
+<l rend="firstIndent">At <seg type="com" n="com57">Ki&#x00E6;rlighed er blind</seg>,</l>
+<l>Det blir dog Lysets Rige,</l>
+<l rend="firstIndent">Hvor ret den str&#x00F8;mmer ind,</l>
+<l><pb type="edition" ed="PS" n="11"/>Og han har aldrig levet,</l>
+<l>Som klog paa det er blevet,</l>
+<l rend="firstIndent">Han f&#x00F8;rst ei havde ki&#x00E6;r!</l>
+</lg> 
+
+
+<lg n="42">
+<l><pb type="text" facs="1834_527_fax006.jpg" ed="A" subtype="column" n="57"/>Fra Arilds-Tid herinde</l>
+<l rend="firstIndent">Vi elsked &#x201C;Liv og Fred&#x201D;</l>
+<l>Ja hos vor <seg type="com" n="com58">Danne-Kvinde</seg></l>
+<l rend="firstIndent">Vi elsked Ki&#x00E6;rlighed,</l>
+<l>Saa, er <hi rend="spaced">det</hi> Livets Gaade,</l>
+<l>Den sikkert bedst vil raade,</l>
+<l rend="firstIndent">Fuldvoxne <seg type="com" n="com59">Dannemand</seg>!</l>
+</lg>
+<lg n="43">
+<l><pb type="edition" ed="US" n="19"/>Ja, du <seg type="com" n="com60">est</seg> n&#x00E6;r forhaanden,</l>
+<l rend="firstIndent">Du blide Solskins-Dag!</l>
+<l>Jeg <seg type="com" n="com61">alt</seg> dig seer i Aanden</l>
+<l rend="firstIndent">Forgylde <placeName key="fak14">Danmarks</placeName> Flag,</l>
+<l>Og kaste dine Straaler</l>
+<l>Paa Alt hvad Lyset taaler,</l>
+<l rend="firstIndent">Mod Alt hvad Lyset skyer!</l>
+</lg>
+<lg n="44">
+<l>Ja, <rs type="myth" key="myth8.b"><hi rend="spaced">Brage</hi> B&#x00E6;nke-Pryder</rs>!</l>
+<l rend="firstIndent">Jeg &#x00F8;iner Dig i <placeName key="fak13">Soer</placeName>,</l>
+<l>Naar klart du det udtyder,</l>
+<l rend="firstIndent">Hvad der er <hi rend="spaced">Stort</hi> i <placeName key="fak24">Nord</placeName>,</l>
+<l>Hvad der er <hi rend="spaced"><placeName key="fak14">Danmark</placeName></hi> givet,</l>
+<l>Hvad der er godt for Livet,</l>
+<l rend="firstIndent">Og klogt for <hi rend="spaced"><rs type="myth" key="myth5">Askurs</rs></hi> &#x00C6;t!</l>
+</lg>
+<lg n="45">
+<l><pb type="edition" ed="VU" n="63"/>Et Lys sig da udbreder,</l>
+<l rend="firstIndent">Som <seg type="com" n="com62">trindt</seg> i Mark og Skov</l>
+<l>Om <hi rend="spaced">Liv</hi> og <hi rend="spaced">Sandhed</hi> freder,</l>
+<l rend="firstIndent">Forklarer Friheds Lov,</l>
+<l><pb type="edition" ed="PS" n="12"/>Som <seg type="com" n="com63">Idr&#x00E6;t</seg>, Ord og Tanker</l>
+<l>Kun holder <seg type="com" n="com64">saa</seg> <seg type="com" n="com65">i Skranker</seg>,</l>
+<l rend="firstIndent">At Frihed kan bestaae!</l>
+</lg>
+<lg n="46">
+<l>For <seg type="com" n="com66">Dannemandens</seg> &#x00D8;ie</l>
+<l rend="firstIndent"><seg type="com" n="com119">Oplade</seg> sig da brat</l>
+<l>De gamle K&#x00E6;mpe-H&#x00F8;ie,</l>
+<l rend="firstIndent">Med mangen jordlagt Skat,</l>
+<l>Og af hvad nu Man <seg type="com" n="com69">spilder</seg></l>
+<l>Udspringe <seg type="com" n="com70">Hielpe-Kilder</seg>,</l>
+<l rend="firstIndent">Som Ingen dr&#x00F8;mde om!</l>
+</lg>
+<lg n="47">
+<l>Da skal Man <hi rend="spaced">Freden</hi> fatte,</l>
+<l rend="firstIndent">Som Livets Sommer-Veir,</l>
+<l>Da skal Man <seg type="com" n="com71">K&#x00E6;mpen</seg> skatte,</l>
+<l rend="firstIndent">Som drog for den sit Sv&#x00E6;rd,</l>
+<l>Ei Alt i Fred-Leer forme,</l>
+<l>Men v&#x00E6;lge Livets Storme</l>
+<l rend="firstIndent">For Gravens stille Ro!</l>
+</lg>
+<lg n="48">
+<l><pb type="text" facs="1834_527_fax006.jpg" ed="A" subtype="column" n="58"/><pb type="edition" ed="US" n="20"/>Da skal Man Forskjel kiende</l>
+<l rend="firstIndent">Paa Soel-Skin og paa Lyn,</l>
+<l>Ski&#x00F8;ndt Begge de kan br&#x00E6;nde</l>
+<l rend="firstIndent">Og skabe klare Syn;</l>
+<l>Thi, som Fornuften giver,</l>
+<l>Det ene <hi rend="spaced">Lys</hi> opliver,</l>
+<l rend="firstIndent">Det Andet slaaer ihjel!</l>
+</lg>
+<lg n="49">
+<l>Jeg skimter i det Fjerne</l>
+<l rend="firstIndent"><seg type="com" n="com72">Og</seg> Dig, hvor h&#x00F8;it Du boer,</l>
+<l>Som f&#x00F8;dtes til at v&#x00E6;rne</l>
+<l rend="firstIndent">Om <hi rend="spaced"><rs type="myth" key="myth87.b">Gudhjem</rs></hi> i vort <placeName key="fak24">Nord</placeName>,</l>
+<l><pb type="edition" ed="VU" n="64"/>Dig, <rs type="myth" key="myth26">Gjallar-Hornets</rs> Eier!</l>
+<l>Hvem <hi rend="spaced"><rs type="myth" key="myth48">Loke</rs></hi> Lurendreier</l>
+<l rend="firstIndent">Maa <seg type="com" n="com120">lade</seg> <hi rend="spaced"><rs type="myth" key="myth238.a">Brysing-Men</rs>!</hi></l>
+</lg>
+<lg n="50">
+<l><pb type="edition" ed="PS" n="13"/>Den gamle Gude-Kiender,</l>
+<l rend="firstIndent">Han saae det f&#x00F8;rend vi,</l>
+<l>Du skabtes ei med H&#x00E6;nder,</l>
+<l rend="firstIndent">Men f&#x00F8;dtes af <hi rend="spaced"><seg type="com" n="com73">de Ni</seg>:</hi></l>
+<l>Af <hi rend="spaced"><rs type="myth" key="myth428">Muserne</rs></hi> fra <placeName key="fak537">Tempe</placeName></l>
+<l>Og <placeName key="fak24">Nordens</placeName> gamle <seg type="com" n="com74">K&#x00E6;mpe</seg>,</l>
+<l rend="firstIndent">Med <placeName key="fak14">Danmarks</placeName> Hjerte-Skjold!</l>
+</lg>
+<lg n="51">
+<l>Du fra dig hundred Mile</l>
+<l rend="firstIndent">Kan see paa hver en Leed,</l>
+<l>O, hvor maa Du ei smile</l>
+<l rend="firstIndent">Ad vor Kortsynethed,</l>
+<l>Vi for os see kun Haanden,</l>
+<l>Og tage den for Aanden,</l>
+<l rend="firstIndent">Som <seg type="com" n="com75">raader</seg> <rs type="myth" key="myth26">Gjallar-Horn</rs>!</l>
+</lg>
+<lg n="52">
+<l>I dine lyse Dage</l>
+<l rend="firstIndent">Man for et &#x00C6;ventyr</l>
+<l>Skal fristes til at tage</l>
+<l rend="firstIndent">Hvad dog er Sandhed dyr:</l>
+<l>At vi har sanket Gloser</l>
+<l>Og stoppet dem i Poser</l>
+<l rend="firstIndent">Og kaldt dem <rs type="myth" key="myth96">Mimers Br&#x00F8;nd</rs>!</l>
+</lg>
+<lg n="53">
+<l><pb type="edition" ed="US" n="21"/>Hvor kan det troes i <placeName key="fak24">Norden</placeName>,</l>
+<l rend="firstIndent">Naar Livets B&#x00F8;lge-Gang</l>
+<l>Fra Sl&#x00E6;gt til Sl&#x00E6;gt paa Jorden</l>
+<l rend="firstIndent">I Raad og Daad og Sang,</l>
+<l>Ja <hi rend="spaced">Virkninger</hi> og <hi rend="spaced">Kr&#x00E6;fter</hi></l>
+<l>Er hvad Man sp&#x00F8;rger efter,</l>
+<l rend="firstIndent">Og l&#x00E6;rer at forstaae!</l>
+</lg> 
+
+
+<lg n="54">
+<l><pb type="text" facs="1834_527_fax007.jpg" ed="A" subtype="column" n="59"/><pb type="edition" ed="VU" n="65"/>Men i de Soelskins-Dage</l>
+<l rend="firstIndent">F&#x00F8;r <rs type="myth" key="myth104"><app type="corrNote" select="yes"><lem wit="R">Ragna-Rokes</lem><rdg wit="A">Rogna-Rokes</rdg><witDetail n="59" wit="A" rend="ft">Ms. har Ragna-Roke.</witDetail></app></rs> Nat,</l>
+<l>Naar &#x00D8;iet seer tilbage,</l>
+<l rend="firstIndent">Det kiendes dog <seg type="com" n="com76">fuldbrat</seg>,</l>
+<l><pb type="edition" ed="PS" n="14"/>At i den aarle Morgen,</l>
+<l>Mens <hi rend="spaced"><persName key="pe96">Fredrik</persName></hi> sad paa Borgen,</l>
+<l rend="firstIndent">Vi Dagnings-Ski&#x00E6;ret saae!</l>
+</lg>
+<lg n="55">
+<l>Ja Skyen seer jeg gl&#x00F8;de,</l>
+<l rend="firstIndent">Hvor Soel mod <placeName key="fak24">Nord</placeName> opstaaer,</l>
+<l>Vist til en Morgen-R&#x00F8;de</l>
+<l rend="firstIndent">I <hi rend="spaced"><persName key="pe96">Fredriks</persName></hi> <seg type="com" n="com77">Gylden-Aar</seg>,</l>
+<l>Saa Dagen <seg type="com" n="com78">alt</seg> begynder</l>
+<l>Oplysningens Velynder</l>
+<l rend="firstIndent">At krone med sit Guld!</l>
+</lg>
+<lg n="56">
+<l>For Fugle-Sang i Skove</l>
+<l rend="firstIndent">Man klaged <seg type="com" n="com79">alt</seg> enstund,</l>
+<l>Man kunde s&#x00F8;dt ei sove</l>
+<l rend="firstIndent">Som f&#x00F8;r ved <seg type="com" n="com80">Belt</seg> og Sund,</l>
+<l>Saa, er ei Solen oppe,</l>
+<l>Vil brat dog B&#x00F8;ge-Toppe</l>
+<l rend="firstIndent">Nok lysne i dens Glands!</l>
+</lg>
+<lg n="57">
+<l>Ja, siden <hi rend="spaced"><rs type="myth" key="myth408">Hjarnes</rs></hi> Dage</l>
+<l rend="firstIndent">Der sang om <hi rend="spaced"><rs type="myth" key="myth137">Fredegod</rs>,</hi></l>
+<l><seg type="com" n="com81">Paa Marken</seg> aldrig Mage</l>
+<l rend="firstIndent">Til Skjalde-Chor opstod,</l>
+<l>Som det der mangetunget</l>
+<l>Har <hi rend="spaced"><persName key="pe96">Frederik</persName></hi> besunget</l>
+<l rend="firstIndent">Halvtredsindstyve Aar!</l>
+</lg>
+<lg n="58">
+<l><pb type="edition" ed="US" n="22"/>Gik med de Konge-Skjalde</l>
+<l rend="firstIndent">Jeg mange Aar i Lag,</l>
+<l>Da t&#x00F8;r jeg ogsaa kalde</l>
+<l rend="firstIndent">Kong <persName key="pe96">Fredrik</persName> <hi rend="spaced"><seg type="com" n="com82">Atter-Dag</seg>;</hi></l>
+<l><pb type="edition" ed="PS" n="15"/>Thi <seg type="com" n="com83">rimed</seg> det sig ikke,</l>
+<l>Da var kun v&#x00E6;rd <seg type="com" n="com84">en Strikke</seg></l>
+<l rend="firstIndent">Det hele Skjalde-Chor!</l>
+</lg>
+<lg n="59">
+<l><pb type="edition" ed="VU" n="66"/>Ja, skred ei Natten sorte,</l>
+<l rend="firstIndent">Og n&#x00E6;rmed sig ei Dag:</l>
+<l><rs key="myth214" type="myth">Skin-Faxe</rs> vore Porte</l>
+<l rend="firstIndent">Med gyldent <seg type="com" n="com85">Hoved-Lag</seg>,</l>
+<l>Hvortil har det <hi rend="spaced">da</hi> kimet!</l>
+<l>Hvorom har vi <hi rend="spaced">da</hi> rimet</l>
+<l rend="firstIndent">I <seg type="com" n="com86">Draperne</seg> omkap!</l>
+</lg>
+<lg n="60">
+<l><pb type="text" facs="1834_527_fax007.jpg" ed="A" subtype="column" n="60"/>Dog, at om vores <hi rend="spaced"><seg type="com" n="com132">Frode</seg></hi></l>
+<l rend="firstIndent">Al Skjalde-Roes var sand:</l>
+<l>Fra <hi rend="spaced"><persName key="pe864">Thaarup</persName></hi> og fra <hi rend="spaced"><persName key="pe387">Tode</persName></hi></l>
+<l rend="firstIndent">Til efter <hi rend="spaced"><persName key="pe138">Ingemann</persName>,</hi></l>
+<l>Derom t&#x00F8;r jeg nok mene,</l>
+<l>Sig Stemmerne forene,</l>
+<l rend="firstIndent">Derom <seg type="com" n="com121">gaaer Syn for Sagn</seg>!</l>
+</lg>
+<lg n="61">
+<l>Var det ei sandt, vi meldte,</l>
+<l rend="firstIndent">At <persName key="pe96">Fredriks</persName> <seg type="com" n="com87">Konge-Vaand</seg></l>
+<l>Med Guder og med Helte</l>
+<l rend="firstIndent">Opvakde <hi rend="spaced"><placeName key="fak24">Nordens</placeName> Aand,</hi></l>
+<l>Hvad l&#x00F8;ste da vor Tunge,</l>
+<l>Hvad l&#x00E6;rde os at sjunge</l>
+<l rend="firstIndent">I <placeName key="fak24">N&#x00F8;rre-Ledens</placeName> Aand!</l>
+</lg>
+<lg n="62">
+<l>Og t&#x00F8;r vel Nogen sige,</l>
+<l rend="firstIndent">Den Aand paa Mark og Fjeld</l>
+<l>Ei styrker Lysets Rige,</l>
+<l rend="firstIndent">Men staaer i Pagt med <hi rend="spaced"><rs type="myth" key="myth33">Hel</rs>!</hi></l>
+<l><pb type="edition" ed="PS" n="16"/>Hvormeget drog med Styrke</l>
+<l>Ei alt fra Mulm og M&#x00F8;rke</l>
+<l rend="firstIndent">Den frem til Dagens Lys!</l>
+</lg>
+<lg n="63">
+<l><pb type="edition" ed="US" n="23"/>Var det blot Old-Tids Skrifter,</l>
+<l rend="firstIndent">Som nu kom for en Dag,</l>
+<l>Var kun af dens Bedrifter</l>
+<l rend="firstIndent">Vor Sang et <seg type="com" n="com88">Efter-Brag</seg>,</l>
+<l>Fandt ei Hvad dybt i Hjerte</l>
+<l>End v&#x00E6;kker Fryd og Smerte</l>
+<l rend="firstIndent">I den sit Liv-Udtryk!</l>
+</lg>
+<lg n="64">
+<l><pb type="edition" ed="VU" n="67"/>Frem sprang, som <seg type="com" n="com89">K&#x00E6;mper</seg> ranke</l>
+<l rend="firstIndent">I lysegr&#x00F8;nne Vang,</l>
+<l>Hver &#x00E6;del Nordisk Tanke</l>
+<l rend="firstIndent">I <placeName key="fak14">Danmarks</placeName> Skjalde-Sang,</l>
+<l>Og hver en &#x00E6;del Tone</l>
+<l>Fandt Gjenlyd paa en Throne:</l>
+<l rend="firstIndent">I Dane-Kongens Bryst!</l>
+</lg>
+<lg n="65">
+<l>Var det kun Aften-R&#x00F8;de,</l>
+<l rend="firstIndent">Ei Skj&#x00E6;r af nyf&#x00F8;dt Dag,</l>
+<l>Da &#x00C6;re med de D&#x00F8;de,</l>
+<l rend="firstIndent">Men vee det Folke-Vrag,</l>
+<l>Som heller gik tilgrunde,</l>
+<l>End <seg type="com" n="com90">toned</seg> nogenlunde</l>
+<l rend="firstIndent">Sit gamle Konge-Flag!</l>
+</lg> 
+
+<lg n="66">
+<l><pb type="text" facs="1834_527_fax008.jpg" ed="A" subtype="column" n="61"/>Dog, bort med Tanker m&#x00F8;rke!</l>
+<l rend="firstIndent">Langt Andet varslet blev,</l>
+<l>Da <rs type="myth" key="myth74">Thor</rs> <seg type="com" n="com91">idrog</seg> sin Styrke</l>
+<l rend="firstIndent">Og <seg type="com" n="com92">Holmgangs-Kredsen</seg> <seg type="com" n="com93">skrev</seg>,</l>
+<l><pb type="edition" ed="PS" n="17"/>Da <rs type="myth" key="myth32">Heimdal</rs> stod mod <rs type="myth" key="myth48">Loke</rs></l>
+<l>I Skjaldskabs <rs type="myth" key="myth104">Ragnaroke</rs></l>
+<l rend="firstIndent">Og stilled <rs type="myth" key="myth19">Freias</rs> Graad!</l>
+</lg>
+<lg n="67">
+<l>Ja, hos Kong <hi rend="spaced"><persName key="pe96">Fredriks</persName></hi> Fugle,</l>
+<l rend="firstIndent">Der sang med Vinge-Slag,</l>
+<l>Som <seg type="com" n="com94">alt</seg> det over <placeName key="his588">Thule</placeName></l>
+<l rend="firstIndent">Var h&#x00F8;ilys Sommer-Dag,</l>
+<l>Der var et Tone-M&#x00F8;de,</l>
+<l>Af Levende og D&#x00F8;de,</l>
+<l rend="firstIndent">Som i et <seg type="com" n="com95">Gylden-Aar</seg>!</l>
+</lg>
+<lg n="68">
+<l><pb type="edition" ed="US" n="24"/>Af <hi rend="spaced"><rs type="myth" key="myth77">Urdas</rs></hi> Tone-Kilde</l>
+<l rend="firstIndent">Udsprang i samlet Str&#x00F8;m</l>
+<l>De St&#x00E6;rke med de Milde:</l>
+<l rend="firstIndent">En haard, en Anden &#x00F8;m,</l>
+<l>En klar som Guld og Ravet,</l>
+<l>En dunkeldyb som Havet,</l>
+<l rend="firstIndent">En h&#x00F8;i som &#x00D8;rnens Vei!</l>
+</lg>
+<lg n="69">
+<l><pb type="edition" ed="VU" n="68"/>De s&#x00E6;rt hinanden krydsed,</l>
+<l rend="firstIndent">De <seg type="com" n="com96">stridt</seg> ei sielden klang,</l>
+<l>Den f&#x00E6;lleds Moder kyssed</l>
+<l rend="firstIndent">Dog Alle i en Sang,</l>
+<l>Og smeltede med Gammen</l>
+<l>Paa hendes L&#x00E6;ber sammen</l>
+<l rend="firstIndent">Til Fader-Kongens Priis!</l>
+</lg>
+<lg n="70">
+<l>De loved hende Gl&#x00E6;de,</l>
+<l rend="firstIndent">De priste hendes Held,</l>
+<l>Med deiligt Dronning-S&#x00E6;de</l>
+<l rend="firstIndent">Ved Morgen-R&#x00F8;dens V&#x00E6;ld,</l>
+<l><pb type="edition" ed="PS" n="18"/>Og med et kronet Hjerte,</l>
+<l>Som under Fryd og Smerte</l>
+<l rend="firstIndent">Blev til et <seg type="com" n="com97">Konge-Speil</seg>!</l>
+</lg>
+<lg n="71">
+<l>Saa vox da op, du Sp&#x00E6;de,</l>
+<l rend="firstIndent">Til Helte-Daad i Vaar!</l>
+<l>Og bliv til Daners Gl&#x00E6;de</l>
+<l rend="firstIndent">Et Fredens <seg type="com" n="com98">Gylden-Aar</seg>,</l>
+<l>For Gamle og for Unge,</l>
+<l>I Hjerte og paa Tunge</l>
+<l rend="firstIndent">I Lund og <seg type="com" n="com99">H&#x00F8;ie-Loft</seg>!</l>
+</lg>
+<lg n="72">
+<l><pb type="text" facs="1834_527_fax008.jpg" ed="A" subtype="column" n="62"/>Ja, i din <seg type="com" n="com104">Middel-Alder</seg></l>
+<l rend="firstIndent">Du krone, Gud for Alt,</l>
+<l>Den <seg type="com" n="com100">&#x00C6;tmand</seg> god af <rs type="myth" key="myth6">Balder</rs>,</l>
+<l rend="firstIndent">Som blev til Styret kaldt</l>
+<l>I gamle Faders Dage,</l>
+<l><seg type="com" n="com101">Fuldmange</seg> Aar tilbage,</l>
+<l rend="firstIndent">Med <hi rend="spaced"><rs type="myth" key="myth137">Fredegodes</rs></hi> Navn!</l>
+</lg>
+<lg n="73">
+<l><pb type="edition" ed="US" n="25"/>Ja lad, o Gud! opklare</l>
+<l rend="firstIndent">En Dag, et <seg type="com" n="com102">Gylden-Aar</seg>,</l>
+<l>Som ret kan aabenbare,</l>
+<l rend="firstIndent">Med <placeName key="fak24">Nordens</placeName> gode Kaar</l>
+<l>Det Danske Hjertes <seg type="com" n="com103">Fylde</seg></l>
+<l>Til Graa-Haar at forgylde</l>
+<l rend="firstIndent">Hos Kongen og hans Folk!</l>
+</lg>
+<p rend="secondIndentRight"><hi rend="schwab">N. F. S. Grundtvig.</hi></p>
+<graphic style="shortLine"/>
+</div>
+   
+
+  </body>
+
+
+    <pb type="periText" facs="1834_527_fax009.jpg"/>
+   
+   </text>   
+  </TEI>

@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="part">De hellige tre Konger</title>
+                <title rend="shortForm">De hellige tre Konger</title> 
+                <author>Else Riisager</author>
+                <editor role="editor2">Klaus Nielsen</editor>
+                <editor role="editor1">Steen Tullberg</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.5</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>28 KB</extent><!-- <idno type="content">1.4</idno>
+          <idno type="technic">1.3.1</idno> -->
+             
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                <date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1.maj 2014</date>
+                <!-- <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date> -->
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1811_157_txt.xml">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="txr" target="1811_157_txr.xml">Tekstredeg&#x00F8;relse</note>
+            </notesStmt>
+            
+            <sourceDesc>
+                <p />
+            </sourceDesc>    
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>            
+            <change who="ELR" when="2013-06-07">oprettet ny fil efter 413A og nye retningslinjer; tekst til manuskripter</change>
+            <change who="ELR" when="2013-08-14">kladde F&#x00F8;rstetrykket</change>
+            <change who="ELR" when="2013-08-14">kladde, mangler senere tryk, overs&#x00E6;ttelse, anvendt litteratur</change>
+            <change who="ELR" when="2013-08-20">kladde f&#x00E6;rdig, skal genneml&#x00E6;ses og kontrolleres; mangler litteraturliste</change>
+            <change who="ELR" when="2013-09-02">f&#x00E6;rdig til 1. redaktion</change>
+            <change who="ELR" when="2013-09-04">tilrettet efter Steens redaktion; unicodes indsat; f&#x00E6;rdig til sidste redaktion</change>
+            <change who="KSR" when="2013-09-06">ref til tidsskriftsbeskrivelse indsat</change>
+            <change who="ELR" when="2013-09-09">tilrettet efter Klaus' redaktion</change>
+            <change who="ELR" when="2013-09-13">genneml&#x00E6;sning; regList lavet</change>
+            <change who="ELR" when="2013-09-26">rs i tekstkritik skal tillades</change>            
+            <change who="ELR" when="2013-10-14">fjernet unicodes fra ref web</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="ELR" when="2014-04-23">efterset; godkendelse mangler i Tekstkritik</change>
+            <change who="ELR" when="2018-12-20">indsat Digte, Senere udgaver</change>
+      </revisionDesc>
+    </teiHeader>
+        <text type="txr">
+                <body>
+            <div>
+                <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+                <div>
+                    <head xml:id="docIn2">Manuskripter</head>
+                    
+                   
+                    <p rend="noIndent">Der kendes ikke komplette manuskripter til v&#x00E6;rkets to dele, &#x201C;Hr. Sandsiger!&#x201D; og &#x201C;De hellige tre Konger&#x201D;, men f&#x00F8;lgende findes i Grundtvig-arkivet, Det Kongelige Bibliotek, K&#x00F8;benhavn:</p>
+                    <table rend="msDesc">
+                        
+                        <row>
+                            <cell>Signatur</cell>
+                            <cell>Type</cell>
+                            <cell>Indhold</cell>
+                        </row>
+                        
+                        <row>
+<!-- mangler i Registranten -->
+<cell>Fasc. 382</cell>
+                            <cell>udkast</cell>
+                            
+                            <cell>&#x201C;Hr. Sandsiger!&#x201D;, del af manuskript (af s. 183)</cell>
+                        </row>
+                        
+                        <row>
+                            <cell>
+<ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=892">Fasc. 386.50a</ref>
+</cell>
+                            <cell>udkast</cell>
+                            
+                            <cell>&#x201C;De hellige tre Konger &#x005B;Vi har en Seng saa bred og stor&#x005D;&#x201D;</cell>
+                        </row>
+                        
+                        <row>
+                            <cell>
+<ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=893">Fasc. 386.50b</ref>
+</cell>
+                            <cell>kladde</cell>
+                            
+                            <cell>&#x201C;De hellige tre Konger &#x005B;Deilig er den Himmel blaa&#x005D;&#x201D;</cell>
+                        </row>
+                                        
+                    </table>
+                    <p rend="noIndent">
+<rs type="title" key="title2727">Manuskriptet til &#x201C;Hr. Sandsiger!&#x201D;</rs> findes i samme l&#x00E6;g som <rs type="title" key="title2728">&#x201C;Stjernerne &#x005B;Lyse Stjerner i det H&#x00F8;ie&#x005D;&#x201D;</rs> (<rs type="title" key="title198"><hi rend="italic">Grundtvigs Sang-V&#x00E6;rk</hi> 6 1956-1964</rs>, s. 185; <hi rend="italic">
+<rs type="title" key="title35">Bibliografien</rs>
+</hi>  154.a. nr. 12). Skriftbilledet i de to manuskriptdele er temmeligt forskellige og tyder p&#x00E5;, at manuskripterne er skrevet uafh&#x00E6;ngigt af hinanden.</p>
+                    
+                    <p rend="firstIndent"><rs type="title" key="title2562">&#x201C;De hellige tre Konger &#x005B;Vi har en Seng saa bred og stor&#x005D;&#x201D;</rs> er noteret i <hi rend="italic">
+<rs type="title" key="title35">Bibliografien</rs>
+                    </hi> som 154.a. nr. 11. Ang&#x00E5;ende manuskripternes indbyrdes forhold i &#x00F8;vrigt, se indledningens afsnit <ref type="docOut" target="1811_157_intro.xml#docIn4">V&#x00E6;rkets tilblivelse</ref>.</p>
+                    <!-- <p rend="noIndent">Begge forarbejder til &#x005B;Deilig er den Himmel blaa&#x005D; er udgivet som (transskriberede) manuskripter under fanen Varianter.</p> -->
+                </div>              
+              
+              
+                <div>
+                    <head xml:id="docIn3">F&#x00F8;rstetrykket</head>
+                    
+                    <p rend="noIndent">Nummer i <hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi>: 157.</p>               
+                    <p rend="firstIndent">Onsdag den 10. april 1811 blev Grundtvigs v&#x00E6;rk trykt i <hi rend="italic">
+<rs type="title" key="title794">Sandsigeren eller den danske Huusven</rs>,</hi> f&#x00F8;rste &#x00E5;rgang, nr. 12: brevet (indl&#x00E6;gget) &#x201C;Hr. Sandsiger!&#x201D;, s. 179-183, og digtet &#x201C;De hellige tre Konger. (En Barnesang)&#x201D; med f&#x00F8;rstelinjen &#x201C;Deilig er den Himmel blaa&#x201D;, s. 184-187. Ugeskriftet var redigeret af <persName key="pe24">Knud Lyne Rahbek</persName> og trykt og udgivet af <persName key="pe393">Andreas Seidelin</persName>, Store Kannikestr&#x00E6;de 46, K&#x00F8;benhavn.</p>
+                    <p rend="firstIndent">
+<hi rend="italic">
+<rs type="title" key="title794">Sandsigeren</rs>
+</hi> nr. 12 bestod af et par korte digte (s. &#x005B;177&#x005D;-179), Grundtvigs v&#x00E6;rk (s. 179-187), et indl&#x00E6;g fra redakt&#x00F8;ren, der bl.a. kommenterede Grundtvigs indl&#x00E6;g (<ref type="image" target="1811_157_fax014.jpg">s. 188,</ref> <ref type="image" target="1811_157_fax015.jpg">189,</ref> <ref type="image" target="1811_157_fax016.jpg">190,</ref> <ref type="image" target="1811_157_fax017.jpg">191</ref> <ref type="image" target="1811_157_fax018.jpg">og 192</ref>),<!-- (s. 188-192) --> samt en trykfejlsliste vedr&#x00F8;rende forrige nummer (s. 192). Hele nummeret er lagt ud i faksimile, se fanen &#x201C;Fax&#x201D;. Se desuden indledningens afsnit <ref type="docOut" target="1811_157_intro.xml#docIn17">Rahbeks reaktion</ref>.</p>                  
+                </div>
+                
+                <div>
+                    <head xml:id="docIn4">Senere udgaver</head>
+                    
+                    <p rend="noIndent">&#x201C;Hr. Sandsiger!&#x201D; er ikke genoptrykt i Grundtvigs levetid. Til geng&#x00E6;ld er der fundet 46 varianter af &#x201C;De hellige tre Konger &#x005B;Deilig er den Himmel blaa&#x005D;&#x201D; fra perioden. Heri er medregnet forekomst i de enkelte publikationers f&#x00F8;lgende oplag og udgaver, som datidens udgivere i &#x00F8;vrigt ikke havde f&#x00E6;lles definitioner af<!--  n&#x00E5;r de enkelte publikationers f&#x00F8;lgende oplag og udgaver regnes med (datidens udgivere fulgte i &#x00F8;vrigt ikke f&#x00E6;lles definitioner p&#x00E5; 'oplag' og 'udgave')-->:</p>
+                    
+                    <list type="decimal">
+                        
+                        <item>(1815) N.F.S. Grundtvig: <hi rend="italic">
+<rs type="title" key="title334">Kv&#x00E6;dlinger eller Smaakvad</rs>,</hi> s. 229-234 (inkl. &#x201C;Till&#x00E6;g&#x201D;).</item> 
+                        
+                        <item>
+                            (1832) <persName key="pe77">L.C. Hagen</persName>:
+                            <hi rend="italic">
+<rs type="title" key="title36">Historiske Psalmer og Riim til
+                                B&#x00F8;rne-L&#x00E6;rdom</rs>,</hi> nr. 18; 2.-5. opl., nr. 19; 6. opl., nr. 29.</item>
+                        
+                        <item>
+                            (1835 &amp; 1836) <persName key="pe78">&#x005B;Frederik Barfod&#x005D;</persName>: <hi rend="italic">
+<rs type="title" key="title37">Poetisk L&#x00E6;sebog for B&#x00F8;rn og barnlige Sj&#x00E6;le</rs>,</hi> nr. 49; 2. udg., nr. 80.</item>
+                        
+                        <item>
+                            (1843) <persName key="pe80">J.C. Lindberg</persName>:
+                            <hi rend="italic">
+<rs type="title" key="title41">Rosen-Kj&#x00E6;den en Samling af Psalmer og aandelige Sange</rs>,</hi> nr. 82.</item>
+                        
+                        <item>
+                            (1845) <persName key="pe81">J.F.</persName> &amp; <persName key="pe82">R.Th. Fenger</persName>: <hi rend="italic">
+<rs type="title" key="title2723">Psalmer og Sange til Julen</rs>,</hi> nr. 22; 2.-6. opl., samme nr.</item> 
+                        
+                        <item>
+                            (1850) &#x005B;N.F.S. Grundtvig&#x005D;: <hi rend="italic">
+<rs type="title" key="title49">Fest-Psalmer</rs>,</hi> nr. 631; 2.-10. opl., samme nr.</item> <!-- skal 11. opl. fra 1873 regnes med? nej, det plejer vi ikke-->
+                        
+                        <item>(1850) Roskilde-Konvents Psalmekomite: <rs type="title" key="title2724">
+<hi rend="italic">Psalmebog</hi> &#x005B;1. udkast&#x005D;</rs>, nr. 146; 2. opl. &#x005B;2. udkast&#x005D; nr. 143.</item> 
+                        
+                        <item>
+                            (1851) <persName key="pe85">&#x005B;Peter R&#x00F8;rdam&#x005D;</persName>:
+                            <hi rend="italic">
+<rs type="title" key="title50">Fest-Psalmer</rs>,</hi> nr. 633.</item>
+                        
+                        <item>
+                            (1853) <persName key="pe86">P.O. Boisen</persName>: <hi rend="italic">
+<rs type="title" key="title51">Bibelske og Kirkehistoriske Psalmer og Sange for Skolen</rs>,</hi> nr. 53; 2.-5. udg., samme nr.</item> 
+                        
+                        <item>
+                            (1854) <persName key="pe87">D.G. Monrad</persName>: <hi rend="italic">
+<rs type="title" key="title52">Evangelisk-christelig Psalmebog. Ny Udgave. Et Forslag</rs>,</hi> nr. 111.</item>
+                        
+                        <item>
+                            (1856) <rs type="title" key="title54">
+<hi rend="italic">Psalmebog til Kirke- og Huus-Andagt</hi> (Roskilde Konvents salmebog)</rs>, nr. 149.</item> 
+                        
+                        <item>(1856) <hi rend="italic">
+<rs type="title" key="title2725">Nyt Till&#x00E6;g til evangelisk-christelig Psalmebog</rs>,</hi> nr. 149.</item>
+                        
+                        <item> 
+                            (1856) <persName key="pe85">&#x005B;Peter R&#x00F8;rdam&#x005D;</persName>: <hi rend="italic"><rs type="title" key="title509">Psalmer</rs>,</hi> nr. 650.</item>
+                        
+                        <item>
+                            (1857) <persName key="pe88">&#x005B;P.A. Fenger&#x005D;</persName>: <hi rend="italic">
+<rs type="title" key="title55">Till&#x00E6;g til evangelisk-christelig Psalmebog</rs>,</hi> nr. 728; 2.-6. opl., samme nr.</item> 
+                        
+                        <item>(1869) <persName key="pe135">Svend Grundtvig</persName>: <hi rend="italic"><rs type="title" key="title6146">Digte</rs>,</hi> nr. 7.</item>
+                        
+                        <item>                            
+                            (1870) N.F.S. Grundtvig: <hi rend="italic">
+<rs type="title" key="title2246">Sang-V&#x00E6;rk 2 1870, Sang-V&#x00E6;rk til Den Danske Kirke-Skole</rs>,</hi> nr. 61.</item> 
+                        
+                        <item>
+                            (1873) N.F.S. Grundtvig: <hi rend="italic">
+<rs type="title" key="title67">Sang-V&#x00E6;rk 3 1873, Kirke-Aaret i Salme-Sang</rs>,</hi> nr. 93.</item>
+                      
+                    </list>
+                    
+                    <!-- <p rend="noIndent">Et variantapparat til &#x201C;Deilig er den Himmel blaa&#x201D; er under udarbejdelse.</p> -->
+                </div>
+                
+                <div>
+                    <head xml:id="docIn5">Overs&#x00E6;ttelser</head>
+                    
+                    <p rend="noIndent">&#x201C;De hellige tre Konger &#x005B;Deilig er den Himmel blaa&#x005D;&#x201D; udkom 1832 p&#x00E5; tysk med titlen <rs type="title" key="title2729">&#x201C;Die heiligen drei K&#x00F6;nige &#x005B;Blauer Himmel ist so sch&#x00F6;n&#x005D;&#x201D;</rs> i <persName key="pe186">Lorenz Siemonsens</persName> sang- og l&#x00E6;rebog <hi rend="italic">
+<rs type="title" key="title2726">Geistliche Ges&#x00E4;nge und Lieder, zun&#x00E4;chst zum Auswendiglernen f&#x00FC;r die Jugend</rs>
+</hi>, s. 200-204, (da. &#x00C5;ndelige sange og salmer, dern&#x00E6;st til udenadsl&#x00E6;ren for ungdommen). Bogen udkom i K&#x00F8;benhavn (forordet er dateret Christianshavn den 9. februar 1832). Digtet var oversat af redakt&#x00F8;ren selv, der var kateket, dvs. korleder og sangl&#x00E6;rer, ved Frederiks Tyske Kirke og den tilknyttede skole p&#x00E5; Christianshavn (den nuv&#x00E6;rende Christians Kirke). Digtet indledte afsnittet &#x201C;Historische Lieder&#x201D; (da. Historiske Sange) og var oversat med alle 19 strofer.</p> <!-- "Christianshafen d. 9ten Febr. 1832" --> 
+                    <p rend="firstIndent">&#x201C;De hellige tre Konger &#x005B;Deilig er den Himmel blaa&#x005D;&#x201D; udkom 1870 p&#x00E5; svensk med titlen <rs type="title" key="title2771">&#x201C;Dejlig &#x00E4;r den himmel bl&#x00E5;&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title1770">En liten psalmbok till christlig upplysning och uppbyggelse</rs>,</hi> nr. 13. Bogen udkom i K&#x00F8;benhavn og var udgivet af <persName key="pe1304">Chr.M. Kragballe</persName>. Digtet er oversat med syv strofer.</p> 
+              </div> 
+            </div>
+                
+            
+            <div>
+                <head xml:id="docIn6">Bibliografisk beskrivelse</head>
+                
+                <div>
+                    <head xml:id="docIn7">Anvendte eksemplarer</head>
+                    
+                    <list type="decimal">
+                        <!-- &#x005B;assette&#x005D; -->
+                        <item>Eksemplar fra Grundtvig-Biblioteket, katalognr. k ex 2. Eksemplaret indeholder hele ugeskriftets  nr. 12 for onsdag den 10. april 1811 (besk&#x00E5;ret og tidligere indbundet).</item> <!-- Eksemplaret er "Sandsigeren eller den danske Huusven. / No. 12. / Onsdagen den 10.de April 1811", s. &#x005B;177&#x005D;-192; katalognr. k&#x005B;assette&#x005D; ex2, Grundtvig Biblioteket.< -->
+                   
+                        <item>Eksemplar fra Grundtvig-Biblioteket, katalognr. 3.2, ex. 1 (besk&#x00E5;ret og indbundet).</item> <!-- m&#x00E6;rke: Ejnar Skovrup; ; nr. 12, s. 177-192  -->
+                        
+                        <item>Eksemplar fra Grundtvig-Biblioteket, katalognr. 1.; i <hi rend="italic">
+<rs type="title" key="title794">Sandsigeren eller den danske Huusven, et Ugeskrift</rs>
+</hi> (1811), 1. &#x00E5;rgang, 1:1, s. 179-187 (samlebind af 1. &#x00E5;rgang, besk&#x00E5;ret og indbundet).</item>        
+                        
+                    </list>
+                    
+                    <p rend="noIndent">Eksemplar 1 er valgt som tekstgrundlag og har afgivet faksimiler til udgaven.</p>
+                </div>          
+               
+               
+                <div>
+                    <head xml:id="docIn8">
+                        <hi rend="italic">Sandsigeren eller den danske Huusven</hi>
+</head>
+                    
+                    <!-- <p rend="noIndent">For at l&#x00E6;se en bibliografisk beskrivelse af tidskriftet <hi rend="italic"><rs type="title" key="title794">Sandsigeren eller den danske Huusven</rs></hi>, <ref type="biblDesc" target="sandsigeren_biblDesc.xml">klik her</ref>.</p> -->
+                    <p rend="noIndent">
+<ref type="biblDesc" target="sandsigeren_biblDesc.xml">Bibliografisk beskrivelse af tidsskriftet <hi rend="italic">Sandsigeren eller den danske Huusven,</hi> klik her.</ref>
+</p>
+                </div>
+                
+   
+            </div>
+                
+                
+            <div>
+                <head xml:id="docIn9">Intern varians</head>   
+                    
+               <p rend="noIndent">Der er ikke konstateret intern varians i de kollationerede eksemplarer af Grundtvigs v&#x00E6;rk.</p>           
+            </div>
+                
+            <div>
+                <head xml:id="docIn10">Tekstkritik</head>
+                <list type="textualCriticismPluralis"></list>
+                
+                <p rend="noIndent">En tekstrettelse er foretaget efter rettelseslisten i <hi rend="italic">
+   <rs type="title" key="title794">Sandsigeren</rs>,</hi> nr. 13, s. 208.</p>
+
+            </div> 
+            
+            
+            <div type="litList">
+            <head xml:id="docIn11">Anvendt litteratur</head>
+                      
+            <list type="litList">
+             
+                <item>Barfod, Frederik udg. (1836) <rs type="title" key="title37">
+                    <hi rend="italic">Poetisk L&#x00E6;sebog for B&#x00F8;rn og barnlige
+                        Sj&#x00E6;le</hi></rs>. K&#x00F8;benhavn</item>
+                <item>
+                    <hi rend="italic">Bibliografien,</hi> se Johansen, Steen (1948-1954)</item>
+                <item>Boisen, P.O. udg. (1853) <rs type="title" key="title51">
+                    <hi rend="italic">Bibelske og Kirkehistoriske Psalmer og Sange for Skolen</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Fenger, J.F. &amp;  R.Th. Fenger udg. (1845) <rs type="title" key="title2723">
+                    <hi rend="italic">Psalmer og Sange til Julen</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Fenger, P.A. udg. (1857) <rs type="title" key="title55"><hi rend="italic">Till&#x00E6;g til evangelisk-christelig Psalmebog</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Grundtvig, N.F.S. (1815) <rs type="title" key="title334"><hi rend="italic">Kv&#x00E6;dlinger eller Smaakvad</hi>.</rs> K&#x00F8;benhavn</item>
+               
+                <item>Grundtvig, N.F.S. (1832) <rs type="title" key="title2729">&#x201C;Die heiligen drei K&#x00F6;nige&#x201D;</rs> overs. Lorenz Siemonsen i <hi rend="italic"><rs type="title" key="title2726">Geistliche Ges&#x00E4;nge und Lieder, zun&#x00E4;chst zum Auswendiglernen f&#x00FC;r die Jugend</rs>,</hi> udg. Lorenz Siemonsen, s. 200-204. K&#x00F8;benhavn</item>
+                <item>Grundtvig, N.F.S. (1850) <rs type="title" key="title49"><hi rend="italic">Fest-Psalmer</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Grundtvig, N.F.S. (1868-1881) <hi rend="italic"><rs type="title" key="title2246">Psalmer og aandelige Sange</rs>,</hi> 1-5, bind 2 (1870): <hi rend="italic">Sang-V&#x00E6;rk til Den Danske Kirke-Skole.</hi> K&#x00F8;benhavn</item>
+               
+                <item>Grundtvig, N.F.S. (1868-1881) <hi rend="italic"><rs type="title" key="title67">
+                    Salmer og aandelige Sange</rs>,</hi> 1-5, udg. af J. Kristian Madsen, bind 3 (1873): <hi rend="italic">Kirke-Aaret i Salme-Sang.</hi> K&#x00F8;benhavn</item>
+                
+                <item>Grundtvig, N.F.S. (1969) <hi rend="italic"><rs type="title" key="title6146">Digte</rs>,</hi> red. Svend Grundtvig. København</item>
+                
+                <item>Grundtvig, N.F.S. (1944-1964) <rs type="title" key="title198"><hi rend="italic">Grundtvigs Sang-V&#x00E6;rk. Samlet udgave</hi></rs>, udg. af Uffe Hansen, Ejnar Skovrup, Th. Balslev &amp; Ernst J. Borup, 1-6, bind 6 (1956-1964): <hi rend="italic">Varianter, noter og registre</hi>. K&#x00F8;benhavn</item>
+                <item>Hagen, L.C. udg. (1832) <rs type="title" key="title36"><hi rend="italic">Historiske Psalmer og Riim til B&#x00F8;rne-L&#x00E6;rdom</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Johansen, Steen (1948-1954) <rs type="title" key="title35"><hi rend="italic">Bibliografi over N.F.S. Grundtvigs skrifter</hi></rs>. K&#x00F8;benhavn</item>
+                
+                <item>Lindberg, J.C. udg. (1843) <rs type="title" key="title41"><hi rend="italic">Rosen-Kj&#x00E6;den en Samling af Psalmer og aandelige
+                        Sange</hi></rs>. K&#x00F8;benhavn</item>
+                <item>Monrad, D.G. udg. (1854) <rs type="title" key="title52"><hi rend="italic">Evangelisk-christelig Psalmebog. Ny Udgave. Et Forslag</hi></rs>. K&#x00F8;benhavn</item>
+                
+                <item>
+<rs type="title" key="title2725"><hi rend="italic">Nyt Till&#x00E6;g til evangelisk-christelig Psalmebog. (Heri alle de Psalmer af den nye Psalmebog til Kirke- og Huus-Andagt, som ikke findes i evang.-christ. Psalmebog og dennes f&#x00F8;rste Till&#x00E6;g)</hi></rs> (1856). K&#x00F8;benhavn</item>
+                <item>
+<rs type="title" key="title54">
+                    <hi rend="italic">Psalmebog til Kirke- og Huus-Andagt,</hi> (Roskilde Konvents
+                        salmebog)</rs> (1856). K&#x00F8;benhavn</item>
+                <item>Rahbek, Knud Lyne udg. (1811) <rs type="title" key="title794"><hi rend="italic">Sandsigeren eller den danske Huusven</hi></rs>. K&#x00F8;benhavn</item>
+                
+                <!--<item><rs type="title" key="title162">
+                    <hi rend="italic">Registrant over N.F.S. Grundtvigs papirer</hi></rs> (1957-1964) udg. af Grundtvig-Selskabet af 8. September 1947  &#x0026; Det Danske Sprog- og Litteraturselskab, 1-30. K&#x00F8;benhavn</item>  -->
+                
+                <item>Roskilde-Konvents Psalmekomite udg. (1850) <rs type="title" key="title2724"><hi rend="italic">Psalmebog</hi> &#x005B;1. udkast&#x005D; (Fremlagt for Konventet)</rs>. K&#x00F8;benhavn</item>
+                <item>R&#x00F8;rdam, Peter udg. (1851) <rs type="title" key="title50"><hi rend="italic">Fest-Psalmer</hi></rs>. K&#x00F8;benhavn</item>
+                <item>R&#x00F8;rdam, Peter udg. (1856) <rs type="title" key="title509"><hi rend="italic">Psalmer</hi></rs>. K&#x00F8;benhavn</item>
+                <!-- <item>Siemonsen, Lorenz udg. (1832) <rs type="title" key="title2726">
+                    <hi rend="italic">Geistliche Ges&#x00E4;nge und Lieder, zun&#x00E4;chst zum Auswendiglernen f&#x00FC;r die Jugend</hi>.</rs> K&#x00F8;benhavn</item> -->
+            </list>
+            
+            
+            <!-- <div>
+                <head xml:id="docIn13">Utrykt</head>
+                <list type="litList">
+                    <item>Grundtvig, N.F.S. (1810) <rs type="title" key="title2562"> &#x201C;De hellige tre Konger&#x201D;</rs>, ms. i Grundtvig-arkivet fasc. 386.50a</item>
+                    
+                    <item>Grundtvig, N.F.S. (1810) <rs type="title" key="title2561"> &#x201C;De hellige tre Konger&#x201D;</rs>, ms. i Grundtvig-arkivet fasc. 386.50b</item>
+                                        
+                    <item>Grundtvig, N.F.S. (u.&#x00E5;.: ca. 1810) <rs type="title" key="title2728"> &#x201C;Stjernerne&#x201D;</rs>, ms. i Grundtvig-arkivet fasc. 382</item>
+                    <item>Grundtvig, N.F.S. (u.&#x00E5;.: 1811) <rs type="title" key="title2727"> &#x005B;&#x201C;Hr. Sandsiger&#x201D;&#x005D;</rs>, ms. i Grundtvig-arkivet fasc. 382</item>
+                    
+                </list>
+            </div> -->
+            
+            </div>   
+            
+       
+            
+        </body>
+</text>
+</TEI>

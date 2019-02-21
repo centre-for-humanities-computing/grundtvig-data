@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Et Par Ord i Anledning af det forkyndte S&#x00F8;rgespil: Signe.</title>
+        <title rend="shortForm">Et Par Ord om Signe</title>
+        <author>Vibeke A. Pedersen</author>
+        <editor role="editor1">Maria J&#x00F8;rgensen</editor>
+        <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+        <editor role="editor3">Klaus Nielsen</editor>
+        <editor role="student2">Maria Wiggers Pedersen</editor>
+        <editor role="student3">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+        <editor role="student1">Frederik Drei&#x00F8;e Seidelin</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.8.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>58 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+        
+        <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date> 
+      </publicationStmt> 
+       
+      <notesStmt>
+        <note type="txt" target="1807_68_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" target="1807_68_intro.xml" xml:id="thisFile">Indledning</note>
+      </notesStmt>
+      <!--  
+      <notesStmt>y
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>
+      -->
+      <sourceDesc><p /></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      
+     
+    </encodingDesc>
+    <!--  <profileDesc>
+      <creation>
+        <date>2011-03-03</date>
+        <note>Note</note>
+      </creation>
+      </profileDesc> -->
+    <revisionDesc>
+      <change who="VAP" when="2012-11-23">etablering af fil</change>
+      <change who="VAP" when="2012-11-26">etablering af afsnit og begyndende skrivning</change>
+      <change who="VAP" when="2012-11-23">mere skrivnning</change>
+      <change who="VAP" when="2012-12-04">inkorporering af littliste, tilf&#x00F8;jelse af afsnit</change>
+      <change who="VAP" when="2012-12-05">tilf&#x00F8;jelse af sm&#x00E5;ting</change>
+      <change who="VAP" when="2012-12-06">rettelser og tilf&#x00F8;jelser </change>
+      <change who="VAP" when="2012-12-07">rettelser og tilf&#x00F8;jelser </change>
+      <change who="VAP" when="2012-12-10">tilf&#x00F8;jelser om Aristoteles</change>
+      <change who="VAP" when="2012-12-17">tilf&#x00F8;jelser og rettelser</change>
+      <change who="JMR" when="2012-12-18">indf&#x00F8;rt rettelser + opm&#x00E6;rket titel, person og myte + gr&#x00E6;ske unicodes</change>
+      <change who="VAP" when="2012-12-18">tilf&#x00F8;jelser og rettelser</change>
+      <change who="VAP" when="2012-12-21">rettelser efter Marias forslag</change>
+      <change who="VAP" when="2013-01-02">sidste opm&#x00E6;rkninger samt rettelser efter Marias
+      forslag</change>
+      <change who="VAP" when="2013-01-15">rettelser efter FLN's  forslag</change>
+      <change who="VAP" when="2013-01-16">sidste rettelser efter FLN's  forslag</change>     
+      <change who="VAP" when="2013-01-17">fortsatte rettelser efter FLN.</change>
+      <change who="VAP" when="2013-01-18">korrekturrettelser efter FLN-omarbejdelsen.</change>
+      <change who="VAP" when="2013-01-21">korrekturrettelser efter FLN-omarbejdelsen.</change>
+      <change who="VAP" when="2013-01-22">korrekturrettelser og opm&#x00E6;rkninger efter FLN-omarbejdelsen.</change>
+      <change xml:id="FDS" who="FDS" when="2013-01-23">Erstattet plaintext-tegn med heksadecimale koder.</change>
+      <change who="VAP" when="2013-01-29">begyndende korrekturrettelser og opm&#x00E6;rkninger efter KN-redaktion.</change>
+      <change who="VAP" when="2013-01-30">sidste korrekturrettelser og opm&#x00E6;rkninger efter KN-redaktion.</change>
+      <change who="VAP" when="2013-01-31">g&#x00E5;se&#x00F8;jne inden for opm. i titler</change>
+      <change who="VAP" when="2013-02-01">fortsatte korrekturrettelser efter rettelser. Tilf&#x00F8;jelser til littliste </change>
+      <change who="VAP" when="2013-03-05">fortsatte korrekturrettelser efter rettelser. Tilf&#x00F8;jelser til littliste </change>
+      <change who="VAP" when="2013-03-21">rettet Saxo til 1610</change>
+      <change who="VAP" when="2013-04-15">fjernet m&#x00E6;slinger i liteliste og revisionsprotokol</change>
+      <change who="VAP" when="2013-04-22">Rettet flere forkerte personbaseopm&#x00E6;rkninger</change>
+      <change who="VAP" when="2013-05-02">tilrettet head m/ extent, date og versionsnummer</change>
+      <change who="VAP" when="2013-07-31">fjernet fejl i mytebaseopm&#x00E6;rkning efter Karsten Kyndes korpusk&#x00F8;rsel. &#x00C6;ndret topreferencerne til Prometeus (f&#x00F8;lgefejl i head og littliste)</change>
+      <change who="VAP" when="2013-09-16">rettet title9999 til title1895</change>
+      <change xml:id="AP" who="AP" when="2013-09-19">rettet versions-streng</change>
+      <change who="VAP" when="2013-10-02">rettet o til O i kortform</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="VAP" when="2014-03-20">ændret til version 1.4 i editionStmt</change>
+      <change who="VAP" when="2014-03-28">fjernet mæslinger efter valideringskørsel</change>
+      <change who="VAP" when="2014-10-03">fjernet mæslinger efter skemaændring (quote mv. i readMore)</change>
+      <change who="VAP" when="2014-10-16">indsat korrekte links til registranten</change>
+    
+    </revisionDesc>
+  </teiHeader>
+  <text type="intro">
+    <body>
+      <div>
+        <head xml:id="docIn1">Den nordiske fortid</head>
+        <p rend="noIndent">I 1770'erne blev den f&#x00E6;lles nordiske fortid endnu engang
+          noget, der optog b&#x00E5;de digtere og forskere i Danmark.</p> <note type="readMore">
+            <p rend="noIndent">F&#x00F8;rste gang var i begyndelsen af 1200-tallet, hvor <persName key="pe237">Saxo</persName> skrev <hi rend="italic">
+<rs type="title" key="title83">Gesta Danorum</rs>
+</hi> (da. <hi rend="italic">Danernes Bedrifter</hi>) og
+                <persName key="pe49">Snorre</persName> samlede <hi rend="italic">
+<rs key="title112" type="title">Den yngre Edda</rs>.</hi> Anden gang var under ren&#x00E6;ssancen,
+              hvor videnskabsm&#x00E6;nd som <persName key="pe350">Anders S&#x00F8;rensen
+                Vedel</persName>, <persName key="pe901">Ole Worm</persName>, <persName key="pe897">S.H. Stephanius</persName>, <persName key="pe15">P.H. Resen</persName> og <persName key="pe394">Thomas Bartholin</persName> (med <persName key="pe385">&#x00C1;rni
+                Magn&#x00FA;sson</persName> som hj&#x00E6;lper) var mere aktive end digterne.</p>
+          </note>
+        <p rend="noIndent">
+          <persName key="pe1">Bertel Sandvig</persName> havde st&#x00E5;et for overs&#x00E6;ttelser
+          og udgaver af vigtige &#x00E6;ldre danske og nordiske digte. F&#x00F8;rst havde han
+          udgivet <rs type="title" key="title319">
+<hi rend="italic">Danske Sange af det
+              &#x00E6;ldste Tidsrum, indeholdende blant andet nogle Danske og Norske Kongers
+              Bedrifter. Af det gamle Sprog oversatte</hi>
+</rs> (1779, anonymt) og senere <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af
+              S&#x00E6;munds Edda</rs>
+</hi> (1783-1785). Dertil kom f&#x00F8;rste bind af den
+          anonyme udgave af danske folkeviser, <rs type="title" key="title352">
+<hi rend="italic">Levninger af Middel-Alderens Digtekunst</hi> (1780)</rs>, der som <persName key="pe982">Percys</persName> engelske forbillede rummede middelalderlige viser
+          p&#x00E5; folkesproget.</p> <note type="readMore">
+            <p rend="noIndent">
+<persName key="pe982">Thomas Percy</persName> havde i 1765 udgivet
+                <hi rend="italic">
+<rs key="title1770" type="title">Reliques of Ancient English
+                  Poetry, Consisting of Old Heroic Ballads, Songs, and other Pieces of our earlier
+                  Poets</rs>,</hi> der kom til at danne skole i det nordlige Europa.</p>
+          </note> <p rend="noIndent">Der er ingen tvivl om, at disse udgivelser har v&#x00E6;ret af betydning for
+          Grundtvig, der oven i k&#x00F8;bet ejede dem alle tre s&#x00E5; tidligt som i 1805, hvor
+          han udf&#x00E6;rdigede en liste over sine b&#x00F8;ger. Grundtvig ejede ogs&#x00E5;
+            <persName key="pe237">Saxos</persName>
+          <rs key="title83" type="title">
+<hi rend="italic">Gesta Danorom</hi>
+</rs> (i Vedels
+            overs&#x00E6;ttelse:<hi rend="italic">Den Danske Kr&#x00F8;nike</hi>) i <persName key="pe350">Vedels</persName>
+          <rs key="title178" type="title">overs&#x00E6;ttelse</rs> (1610-udgaven, se evt. <ref target="bookInventory1805.xml" type="docOut">Bogfortegnelse 1805</ref>, hvor den har nr.
+          11).</p>
+      </div>
+      <div>
+        <head xml:id="docIn2">Langeland</head>
+        <p rend="noIndent">
+          <p rend="noIndent">Et tre&#x00E5;rigt ophold p&#x00E5; Langeland fra marts 1805 til april
+            1808 som husl&#x00E6;rer hos godsejerparret <persName key="pe14">Constance</persName> og
+              <persName key="pe22">Carl Frederik Steensen-Leth</persName> p&#x00E5; Egel&#x00F8;kke
+            havde ikke kun udviklet hans p&#x00E6;dagogiske evner. Det havde ogs&#x00E5;
+            &#x00E5;bnet to d&#x00F8;re for ham: k&#x00E6;rlighedens og den nordiske mytologis.
+            K&#x00E6;rligheden var ugeng&#x00E6;ldt, idet Grundtvig havde forelsket sig
+            h&#x00E5;bl&#x00F8;st i sin foresattes hustru, <persName key="pe14">Constance
+              Leth</persName>, der var mor til hans elev, <persName key="pe21">Karl</persName>.</p>
+          <p rend="noIndent">S&#x00E5; tidligt som den 10. september 1806 havde han skrevet i sin
+            dagbog, at han m&#x00E5;tte &#x201C;kalde det en Lykke, at min K&#x00E6;rlighed var
+            ulykkelig, siden den gjorde Mig virksom, og bidrog til mine Kundskabers
+            For&#x00F6;gelse&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 383). Samtidig mente han, at hans ulykkelige
+            forelskelse i <persName key="pe14">Constance</persName> &#x00E5;bnede hans sind for en
+            dybere forst&#x00E5;else af den nordiske fortids digtning. I artiklen <rs type="title" key="title2">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs>, som var blevet trykt i
+            tidsskriftet <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>
+</hi> maj
+            1807, findes hentydninger til den fortvivlelse, som forholdet til <persName key="pe14">Constance</persName> satte Grundtvig i: &#x201C;Nutiden fratog mit Liv sin
+            Betydning&#x201D;, skriver han her p&#x00E5; s. 158. I et senere brev til <persName key="pe23">Christian Molbech</persName> (fra maj 1808) citerer han stedet og skriver
+            direkte, at dette udsagn hentydede til <persName key="pe14">Constance</persName> (<rs type="title" key="title16">
+<hi rend="italic">Molbech-Grundtvig</hi> 1888</rs>, s. 14). </p>
+        </p>
+      </div>
+      <div>
+        <head xml:id="docIn3">Grundtvigs foruds&#x00E6;tninger</head>
+        <p rend="noIndent">1806-1807 var en periode, hvor Grundtvig for alvor pr&#x00F8;vede at
+          sl&#x00E5; sit navn som debatt&#x00F8;r fast i en bredere offentlighed. I tidsskriftet <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>
+</hi> fik han
+          offentliggjort en r&#x00E6;kke sm&#x00E5; afhandlinger, der f&#x00F8;rst og fremmest
+          drejede sig om nordisk mytologi og om, hvordan mytologien kunne anvendes af digterne i
+          Grundtvig samtid. Det var: <rs type="title" key="title72">&#x201C;Lidet om Sangene i
+            Edda&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny
+            Minerva</rs>
+</hi> september 1806, <rs key="title2" type="title">&#x201C;Om
+            Asal&#x00E6;ren&#x201D;</rs> i  maj 1807, den her omtalte &#x201C;Et Par Ord i Anledning
+          af det forkyndte S&#x00F8;rgespil: Signe&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> juni 1807 og endelig <rs key="title167" type="title">&#x201C;Om Oehlenschl&#x00E4;gers Baldur hiin Gode&#x201D;</rs> i december 1807. </p>
+        <p rend="noIndent">Dertil kom Grundtvigs artikel <rs type="title" key="title585">&#x201C;Om
+            Schiller og Bruden fra Messina&#x201D;</rs> (Grundtvig 1807d), der stod i samme nummer
+          af <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>
+</hi> som &#x201C;Et Par Ord om
+          Signe&#x201D;, og hvori han havde forholdt sig b&#x00E5;de teoretisk og praktisk til dramaet som
+          genre.</p>
+        <p rend="noIndent">Ved siden af disse mere litter&#x00E6;rt orienterede artikler havde han skrevet
+          en teologisk, <rs type="title" key="title321">&#x201C;Om Religion og Liturgie&#x201D;</rs>
+          (1807a) og en p&#x00E6;dagogisk <rs key="title335" type="title">&#x201C;Om Videnskabelighed og
+            dens Fremme&#x201D;</rs> (1807b). De var alle v&#x00E6;rker i l&#x00F8;s essay-form, ikke streng
+          akademisk stil.</p>
+      </div>
+      <div>
+        <head xml:id="docIn4">Datering af og foruds&#x00E6;tninger for &#x201C;Et Par Ord om Signe&#x201D;</head>
+        <p rend="noIndent">&#x201C;Et Par Ord om Signe&#x201D; blev til i l&#x00F8;bet af sommeren
+          1807. Anledningen var en enkelt scene af et ikke-f&#x00E6;rdiggjort skuespil af den
+          17-&#x00E5;rige <persName key="pe110">Jacob Jacobsen Dampe</persName>, som havde
+          v&#x00E6;ret bragt i martsnummeret af tidsskriftet <rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> 1807. Udkastet havde titlen <rs type="title" key="title1679">&#x201C;Af Signe. Et utrykt S&#x00F8;rgespil. Anden Acts fierde
+            Scene&#x201D;</rs> (<rs type="title" key="title1679">Dampe 1807</rs>). Det var skrevet i
+          h&#x00F8;j stil, som efterlignede det sene 1700-tals sentimentale dramaer og byggede
+          p&#x00E5; <persName key="pe237">Saxos</persName> fort&#x00E6;lling om <rs key="myth345" type="myth">Hagbard</rs> og <rs type="myth" key="myth418">Signe</rs>, der allerede havde
+          fundet en ny litter&#x00E6;r skikkelse i senmiddelalderens folkevise, <rs key="title1673" type="title">&#x201C;Hagbard og Signe&#x201D;</rs> (DgF 20).</p> 
+        <note type="readMore">
+            <p rend="noIndent"> Grundtvigs <ref target="bookInventory1805.xml" type="docOut">Bogfortegnelse 1805</ref> viser, at han har haft <persName key="pe237">Saxo</persName> (i 1610-genoptrykket af <rs type="title" key="title178">Vedels
+                overs&#x00E6;ttelse</rs> fra 1575, nr. 11). </p>
+            <p rend="firstIndent">Ogs&#x00E5; folkevisen har Grundtvig kunnet finde i sin bogsamling. I
+                <ref target="bookInventory1805.xml" type="docOut">Bogfortegnelse 1805</ref> er
+                <persName key="pe1">Sandvigs</persName> anonyme udgave af <rs key="title352" type="title">
+<hi rend="italic">Levninger</hi>
+</rs> opf&#x00F8;rt som nr. 48. Heri
+              st&#x00E5;r visen <rs type="title" key="title1674">&#x201C;Habors ulykkelige
+                Elskov&#x201D;</rs>.</p>
+            <p rend="firstIndent">Om den litter&#x00E6;re anvendelse is&#x00E6;r i 1800-tallets
+              digtning af sagnet om <rs key="myth345" type="myth">Hagbard</rs> og <rs type="myth" key="myth418">Signe</rs> kan man l&#x00E6;se i <rs key="title1862" type="title">Pedersen 2007</rs>.</p>
+            <p rend="firstIndent">De tidligst kendte nedskrifter af visen findes i Karen Brahes Foilo
+              (ca. 1570), i b&#x00E5;de Svaning 1 og 2 og i Rentzels h&#x00E5;ndskrift (alle tre
+              begyndelsen af 1580'erne). Det vil sige, at <persName key="pe350">Anders
+                S&#x00F8;rensen Vedel</persName>, der ejede de sidste tre, har kendt visen, selv om
+              han ikke udgiver den i sin <rs key="title1896" type="title">Hundredvisebog</rs>.</p>
+          </note>
+        <p rend="noIndent"><persName key="pe110">Dampes</persName> uddrag rummer en scene, hvori <rs key="myth345" type="myth">Hagbard</rs> i forkl&#x00E6;dning m&#x00F8;der op hos <rs type="myth" key="myth418">Signe</rs> for at bringe hende bud om sin egen d&#x00F8;d.
+          Gennem et meget langt replikskifte nyder han at se, hvor ulykkelig hun bliver over hans
+          d&#x00F8;d, inden han til sidst giver sig til kende, og de kan m&#x00F8;des i en
+          omfavnelse. Scenen er delvis skrevet i urimede jambiske seksslagsvers med c&#x00E6;sur
+          efter tredje fod, et versem&#x00E5;l, der kan virke temmelig tungt, og som giver plads til
+          en del f&#x00F8;lelsesudbrud med &#x00C5;h! og Ak! Det kongelige Teater kr&#x00E6;vede i
+          begyndelsen af 1800-tallet stadig, at tragedier var p&#x00E5; vers.</p>
+        <p rend="noIndent">Samtiden har ogs&#x00E5; kendt stoffet fra <persName key="pe7">Suhms</persName>
+          anonyme novelle, <rs type="title" key="title613">&#x201C;Signe og Habor eller Kierlighed
+            st&#x00E6;rkere end D&#x00F8;den. Ved Forfatteren af Sigrid&#x201D;</rs>, over samme
+          emne (<rs key="title613" type="title">[Suhm] 1777</rs>).</p>
+      </div> <div>
+        <head xml:id="docIn6">Indholdet i &#x201C;Et Par Ord om Signe&#x201D;</head>
+        <p rend="noIndent">Artiklen var delvist en anmeldelse og rummer naturligt nok referencer til
+            <persName key="pe110">Dampes</persName> tekst (<rs key="title1679" type="title">1807</rs>). Hertil kommer et selvst&#x00E6;ndig digt om <rs type="myth" key="myth19">Freja</rs>, forskellige dramaturgiske overvejelser, der ogs&#x00E5; inddrager fx
+            <persName key="pe972">Shakespeares</persName>
+          <rs key="title1806" type="title">Hamlet</rs>, og en gendigtning af et l&#x00E6;ngere
+          stykke (strofe 5, 42-44, 46 og 49-51) fra eddadigtet <hi rend="italic">
+<rs type="title" key="title141">Svipdagsm&#x00E1;l</rs>
+</hi> (da. <rs type="title" key="title141">
+<hi rend="italic">Svipdagskvadet</hi>
+</rs>). Endelig sammenligner Grundtvig <persName key="pe110">Dampes</persName> dramatiske scene med den simple folkevise, der bygger
+          p&#x00E5; samme stof, <rs type="title" key="title1673">&#x201C;Hagbard og Signe&#x201D;
+            (DgF 20)</rs>. <persName key="pe110">Dampe</persName> citeres i mindre uddrag, som
+          Grundtvig har forsynet med sine egne udr&#x00E5;bstegn og sp&#x00F8;rgsm&#x00E5;lstegn;
+          folkevisens strofer 48 og 22-24 refereres/citeres med sm&#x00E5; un&#x00F8;jagtigheder i
+          forhold til <persName key="pe1">Sandvigs</persName> version fra <hi rend="italic">
+<rs type="title" key="title352">Levninger af Middel-Alderens Digtekunst</rs>
+</hi> 1780,
+          hvor den har nr. 6. Grundtvig har ejet et eksemplar af dette v&#x00E6;rk, hvilket
+          fremg&#x00E5;r af hans <ref target="bookInventory1805.xml" type="docOut">Bogfortegnelse
+            1805</ref>, hvor bogen har nr. 48.</p>
+        <p rend="noIndent">De tirader, som <persName key="pe110">Dampe</persName> l&#x00E6;gger i
+            <rs key="myth418" type="myth">Signes</rs> mund, giver mindelser til <persName key="pe562">Wessels</persName> skuespil, travestien <hi rend="italic">
+<rs type="title" key="title1864">Kierlighed uden Str&#x00F8;mper</rs>
+</hi> (1772), som Grundtvig
+          ogs&#x00E5; selv alludererer til s. 259. Ogs&#x00E5; <persName key="pe110">Dampes</persName> stil bliver underkastet kritik. Den udr&#x00E5;bstyngede dialog med
+          mange p&#x00E5;kaldelser af b&#x00E5;de personer, naturf&#x00E6;nomener og begreber, fx
+          &#x201C;O M&#x00F8;!&#x201D;, &#x201C;O Si&#x00E6;l!&#x201D;, &#x201C;O Nat!&#x201D;,
+          &#x201C;Mit Haab!&#x201D;, er i al sin alvor for Grundtvig p&#x00E5; kanten af det
+          komiske. Som i travestien kan den h&#x00F8;je stil virke latterlig. Grundtvig h&#x00F8;rer
+          i alt fald snarere sin samtids forlystelsessyge fruentimmere end oldtidens <rs type="myth" key="myth418">Signe</rs>:</p>
+        <p rend="quote">&#x201C;Skulde man ikke virkelig troe, at man her h&#x00F8;rte en af Nutidens
+          ki&#x00F8;benhavnske Damer snakke v&#x00E6;k i Takten fra Ballet i Aftes, eller er det maaske dog <rs type="myth" key="myth418">Signe</rs>, som vil til <rs type="myth" key="myth101">Valhal</rs>&#x201D; (s. 261).</p>
+        <p rend="noIndent">Ikke engang <persName key="pe972">Shakespeare</persName>, som Grundtvig
+          ellers var ret begejstret for, kan fuldst&#x00E6;ndigt finde n&#x00E5;de for hans strenge &#x00F8;jne, n&#x00E5;r det
+          g&#x00E6;lder om at omplante det gamle nordiske stof til ny digtning. Om hans <rs key="title1806" type="title">
+<hi rend="italic">Hamlet</hi>
+</rs> (1603) lyder det:</p>
+        <p rend="quote">&#x201C;Stoffet er hentet fra den poetiske Kamps sande F&#x00E6;dreland, fra
+          gamle Nord; men, ski&#x00F8;ndt Figuren er sand poetisk, opdage vi dog ei mindste Spor af
+          den Form, Poesien antog i Norden. [...] [det m&#x00E5;] kaldes
+          ubetinget Pligt for hver den, som vil hente Stof fra Norden, at han ki&#x00E6;nder det, og
+          beskuer det poetisk. Han maa udfinde Handlingens str&#x00E6;nge Forbindelse med
+          Tilv&#x00E6;relsen i hin gamle Tid [...] og derefter passe dens
+          Kl&#x00E6;dning&#x201D; (s. 251).</p>
+        <p rend="noIndent">
+<persName key="pe972">Shakespeares</persName> &#x2018;br&#x00F8;de&#x2019; bestod if&#x00F8;lge
+          Grundtvig i, at man ikke l&#x00E6;ngere kan genkende det &#x2018;gamle Norden&#x2019; i gendigtningen af stoffet
+          fra <persName key="pe237">Saxo</persName>.</p> 
+        <note type="readMore">
+<p rend="noIndent">
+<persName key="pe972">Shakespeare</persName> stod i &#x00F8;vrigt h&#x00F8;jt i
+              Grundtvigs opfattelse; og han havde ogs&#x00E5; s&#x00F8;gt at l&#x00E6;re sig selv
+              engelsk for at kunne l&#x00E6;se bl.a. ham p&#x00E5; originalsproget. I et
+              dagbogsnotat fra september 1805 lyder det:</p>
+<p rend="firstIndent">&#x201C;Ieg har fortsat tydsk og fransk L&#x00E6;sning, og halv gennempl&#x00F8;jet
+              en engelsk L&#x00E6;sebog, Ting der fra Kundskabens Side aabne saare blide Udsigter i
+              Fremtiden, naar min Aand kan nyde fransk Vittighed ved Siden af <persName key="pe972">Sj&#x00E6;kspirs</persName> Poesi og <persName key="pe1023">Lokes</persName> dybe
+              Granskninger&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                  Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 229, intern varians ikke gengivet).
+                <persName key="pe972">Shakespeare</persName> havde Grundtvig kendt i tysk
+              overs&#x00E6;ttelse.</p> <p rend="quote">Det sene 1700-tals dannede danskere kendte
+                f&#x00F8;rst og fremmest <persName key="pe972">Shakespeare</persName> fra <persName key="pe525">A.W. Schlegels</persName> tyske overs&#x00E6;ttelser. I 1800-tallets
+                f&#x00F8;rste &#x00E5;rtier afl&#x00F8;stes kendskabet til <persName key="pe972">Shakespeare</persName> af skuespilleren <persName key="pe977">P.Th.
+                  Foersoms</persName> danske overs&#x00E6;ttelser (1807-1816) (<rs key="title1895" type="title">Henriques 1941</rs>; <rs key="title1808" type="title">Bredsdorff
+                  1969</rs>, s. 35).</p>
+           
+</note>
+
+        <div>
+          <head xml:id="docIn61">Freja</head>
+          <p rend="noIndent">Selv om Grundtvigs overskrift p&#x00E5; artiklen om <persName key="pe110">Dampes</persName> dramatiske fors&#x00F8;g indikerer, at det er en
+            anmeldelse, rummer artiklen bl.a. et helt digt af Grundtvigs egen tilvirkning om <rs type="myth" key="myth19">Freja</rs> (s. 254-255), f&#x00F8;rst genoptrykt efter hans
+            d&#x00F8;d som selvst&#x00E6;ndigt digt i <rs key="title1570" type="title">
+<hi rend="italic">Poetiske Skrifter</hi>
+</rs> 1, s. 5-6. Digtet er et lyrisk udbrud om
+            den s&#x00F8;rgende <rs type="myth" key="myth19">Freja</rs>, henvendt til
+            l&#x00E6;seren: &#x201C;See, hvor i Nattens &#x00D8;de / hun tr&#x00E6;der&#x201D;.
+            Digtet bygger p&#x00E5; tre oldislandske tekster, nemlig <hi rend="italic">
+<rs type="title" key="title139">Loketr&#x00E6;tten</rs>
+</hi>,<hi rend="italic">
+              <rs key="title138" type="title">Hyndlas Sang</rs>
+</hi> og <persName key="pe49">Snorre</persName> i <rs key="title19" type="title">Resens udgave</rs> og p&#x00E5;
+              <persName key="pe7">Suhms</persName>
+            <rs type="title" key="title23">bog</rs> om <rs key="myth59" type="myth">Odin</rs> (<rs type="title" key="title23">1771</rs>, s. 258-260 og 270). </p>
+          
+          <p rend="noIndent">
+            <div>
+              <head xml:id="docIn62">Metriske oplysninger</head>
+              <p rend="noIndent">Omfang: 4 digtafsnit a henholdsvis 10, 10, 5 og 7 vers.</p>
+              <p rend="noIndent">Versem&#x00E5;l: daktylisk-trok&#x00E6;isk, evt. med trykl&#x00F8;s optakt. </p>
+              <p rend="noIndent">Stavelsesantal (1. afsnit): 5 5 5 5 5 5 6 5 5 4.</p>
+              <p rend="noIndent">Rimf&#x00F8;lge: urimet.</p>
+              <p rend="noIndent">Man kan ogs&#x00E5; karakterisere versformen som norr&#x00F8;niserende 2-slags
+                verslinjer med variende antal tryksvage stavelser, hvad der kommer Grundtvigs
+                intention n&#x00E6;rmere.</p>
+            </div>
+          </p>
+        </div>
+      </div>
+      
+      <div>
+        <head xml:id="docIn5">Genre og Grundtvigs dramaturgiske ideer</head>
+        <p rend="noIndent">&#x201C;Et Par Ord om Signe&#x201D; er b&#x00E5;de en anmeldelse (i samtiden
+          kaldet en recension) af <persName key="pe110">J.J. Dampes</persName> <rs type="title" key="title1679">&#x201C;Af Signe. Et utrykt S&#x00F8;rgespil. Anden Acts fierde
+            Scene&#x201D;</rs> (1807) og en spirende digters
+          overvejelser over, hvordan det gamle nordiske stof kan omformes til moderne digtning.</p>
+        <p rend="noIndent">Grundtvig griber ligesom <persName key="pe623">Aristoteles</persName> i
+            <hi rend="italic">
+<rs key="title1513" type="title">Poetikkens</rs>
+</hi> kapitel 6 til en
+            sammenligning med maleriet, n&#x00E5;r han skal beskrive et drama.</p>
+        <p rend="quote">&#x201C;Dramaet, b&#x00F8;r, som ethvert Konstv&#x00E6;rk, anskues heelt;
+          men ligesom Forstanden kan i Maleriet ski&#x00E6;lne mellem Omridset, Gestalten, og
+          Koloriten, saaledes kan den og i Dramaet adskille Stoffet eller Fort&#x00E6;llingen,
+          Materien eller Gemytterne, og Formen eller det poetiske Kl&#x00E6;demon&#x201D; (s.
+          250).</p>
+        <p rend="firstIndent">Maleriet best&#x00E5;r for Grundtvig af tre elementer, omridset,
+          materien og koloritten. Herfra er der ikke langt til <persName key="pe623">Aristoteles</persName>. &#x2018;Omridset&#x2019; svarer til det, der litter&#x00E6;rt
+          kan kaldes plottet, og som <persName key="pe110">Dampe</persName> i dette tilf&#x00E6;lde
+          har fra <persName key="pe237">Saxo</persName>. &#x2018;Materien&#x2019; besk&#x00E6;ftiger
+          sig med personerne, s&#x00E5;dan som de fremstilles for at holde den dramatiske fremdrift
+          ved lige. Endelig ligger udformningen og stillejet i &#x2018;koloritten&#x2019; (eller den
+          poetiske ikl&#x00E6;dning). Herunder h&#x00F8;rer ogs&#x00E5; formen, fx
+          versem&#x00E5;let. </p>
+        <note type="readMore">  <p rend="noIndent">
+<persName key="pe623">Aristoteles</persName> opregner i <rs key="title1513" type="title">
+<hi rend="italic">Poetikken</hi>
+</rs> kapitel 6 seks dele eller
+            elementer, som tragedien best&#x00E5;r af: &#x03BC;&#x1FE6;&#x03D1;&#x03BF;&#x03DB;
+            (mythos), &#x1F24;&#x03D1;&#x03B7; (&#x00E9;th&#x00E9;, i familie med ordet ethos),
+            &#x03BB;&#x03AD;&#x03BE;&#x03B9;&#x03DB; (lexis),
+            &#x03B4;&#x03B9;&#x1F71;&#x03BD;&#x03BF;&#x03B9;&#x03B1; (dianoia),
+            &#x1F44;&#x03C8;&#x03B9;&#x03DB; (opsis) og
+            &#x03BC;&#x03B5;&#x03BB;&#x03BF;&#x03C0;&#x03BF;&#x1F77;&#x03AF;&#x03B1; (melopoiia). En
+            nyere dansk overs&#x00E6;ttelse af disse begreber lyder: &#x201C;plot, karakterer,
+            sprog, t&#x00E6;nkning, ops&#x00E6;tning og sangene&#x201D; (<rs type="title" key="title1513">Aristoteles 2008</rs>, s. 65). Det ser ud, som om plot for Grundtvig
+            var det samme som &#x201C;Stoffet&#x201D;, at &#x201C;Gemytterne&#x201D; og karaktererne
+            n&#x00E6;sten overlapper, og at &#x201C;det poetiske Kl&#x00E6;demon&#x201D; var det
+            samme som sprog.<!-- Men s&#x00E5; entydig mener
+            <persName key="pe52">Flemming Lundgreen-Nielsen</persName> ikke, at sammenh&#x00E6;ngen er. For
+            ham betegner 'Gemyt' nemlig:-->
+            <!--     <p rend="quote">&#x201C;kun den side af karakteren, der ang&#x00E5;r handlingen, myten. &#x005B;...&#x005D; Materien
+            betegner den i dramaet anskueliggjorte handling, heri indbefattet karakterernes samspil;
+            materie omfatter de to Aristoteliske led: fabel og karakterer. &#x005B;...&#x005D; Grundtvig s&#x00F8;ger i
+            virkeligheden bag om <persName key="pe623">Aristoteles</persName>, fra kunstdramaet til myte- eller kultdramaet, n&#x00E5;r han
+            h&#x00E6;vder, at stoffet i sig selv skal have en h&#x00F8;jere betydning&#x201D; (<rs key="title13" type="title">Lundgreen-Nielsen</rs> s. 64-65). </p> -->
+</p>
+</note>   
+        <p rend="noIndent">Det er dog s&#x00E5;dan, at for Grundtvig g&#x00E5;r
+          &#x2018;karakter&#x2019; p&#x00E5; en historisk, sagnhistorisk eller mytisk bestemt
+          person, mens &#x2018;gemyt&#x2019; snarere betyder en karaktertype (h&#x00E6;vet over
+          eller ud af historisk kontekst). Derfor bliver det ogs&#x00E5; vigtigt for ham, at
+          digteren, n&#x00E5;r han v&#x00E6;lger et historisk stof, lader personerne agere i den
+          intenderede historiske kontekst. Og derfor er det uheldigt, at <persName key="pe110">Dampe</persName> lader <rs key="myth418" type="myth">Signe</rs> tale, som var hun en
+          kristen. If&#x00F8;lge Grundtvig burde tilskueren kunne fornemme, at <rs key="myth418" type="myth">Signe</rs> bekender sig til asatroen: &#x201C;Det er ikke nok, at man
+          forgi&#x00E6;ves s&#x00F8;ger et Glimt af Asal&#x00E6;ren; thi <rs type="myth" key="myth418">Signe</rs> er endog ligesaa god Kristen, som En af os&#x201D; (s. 260).<p rend="firstIndent">Af et historisk drama kr&#x00E6;ver Grundtvig, at stoffet
+            &#x201C;tillige indslutter Grundtr&#x00E6;kkene til et Billede af h&#x00F8;iere
+            Gemytter&#x201D; (s. 250), hvilket vil sige, at det ogs&#x00E5; gerne skal have en
+            oph&#x00F8;jet betydning, der n&#x00E6;rmer sig det religi&#x00F8;se. Dertil kommer, at
+            &#x201C;det [er] fra Poesiens Side ligegyldigt, enten Stoffet er et
+            historisk Faktum, eller ikke&#x201D; (s. 250).</p>
+</p>
+        <p rend="noIndent">I Grundtvig-arkivet p&#x00E5; Det Kongelige Bibliotek i K&#x00F8;benhavn
+          findes i <ref type="web" target="http://pubpub.com/g-r/showcard.asp?id=3805">
+fasc. 164,2</ref> et fragment, &#x201C;Om Forbindelsen
+          mellem Poesi og Historie&#x201D;. <hi rend="italic">
+<rs type="title" key="title162">Registranten</rs>
+          </hi> daterer det til for&#x00E5;ret 1809. <ref type="web" target="http://pubpub.com/g-r/showcard.asp?id=872">. 386,31</ref> rummer &#x201C;Udkast til en
+          Afhandling om Dramaet og den dramatiserede Historie&#x201D; og er af Grundtvig dateret
+          april 1809. Endelig rummer <ref type="web" target="http://pubpub.com/g-r/showcard.asp?id=4009">
+fasc. 209,2</ref> et fragment af en dramaturgisk
+          betragtning, der i <hi rend="italic">
+<rs type="title" key="title162">Registranten</rs>
+</hi> er dateret til april 1809. Alle disse fragmenter er
+          s&#x00E5;ledes 2 &#x00E5;r senere end afhandlingen om <rs key="myth418" type="myth">Signe</rs>, men viser, at Grundtvig de n&#x00E6;ste par &#x00E5;r fortsatte med at
+          tumle med de problemstillinger om forholdet mellem poesi, drama og historiske emner, som
+            <persName key="pe110">Dampes</persName> fors&#x00F8;g havde rejst (se <rs key="title13" type="title">Lundgreen-Nielsen 1965</rs>, s. 64-65).</p>
+      </div>
+      
+      <div>
+        <head xml:id="docIn7">Samlet karakteristik af &#x201C;Et Par Ord om Signe&#x201D;</head>
+        <p rend="noIndent">Anmeldelsen var ikke udelukkende en kritik af den meget unge
+          forfatterspires evner &#x2013; han var 17 &#x00E5;r i 1807. Den gik derimod p&#x00E5;
+          udformningen, mythosforst&#x00E5;elsen og den manglende historiske dimension. <persName key="pe110">Dampe</persName> n&#x00E6;vnes faktisk kun meget f&#x00E5; gange. Inden
+          citaterne fra hans fors&#x00F8;g stiller Grundtvig det retoriske sp&#x00F8;rgsm&#x00E5;l:
+          &#x201C;Fra hvilken Idee om Poesie udstammer F&#x00F8;lgende&#x201D; (s. 259, hvorefter
+          Grundtvig citerer <persName key="pe110">Dampe</persName>). Heri tilkendegiver Grundtvig, at
+          han i alt fald ikke er enig i de ideer om poesien, som <persName key="pe110">Dampe</persName> hylder. </p>
+        <p rend="noIndent">Indirekte ligger allerede i begyndelsen af anmeldelsen en opfordring til
+          <persName key="pe110">Dampe</persName> om ikke at g&#x00E5; videre med stykket:</p>
+        <p rend="quote">&#x201C;Af egen Erfaring veed jeg, hvor let man ved f&#x00F8;rste flygtige
+          Blik lokkes til at fremstille gamle Nord, [...] men jeg veed tillige, at hver den, som fik
+          nogen Sands for de Gamles Runestave, og i det Hele for Poesie, vil snart indsee sit
+          Arbeids Usselhed, og tilintetgi&#x00F8;re det, fordi han seer Norden tilintetgiort i
+          det&#x201D; (s. 252).</p>
+        <p rend="noIndent">Denne erfaring er for Grundtvig meget personlig og hentyder til de
+          digteriske fors&#x00F8;g, han tidligere havde gjort &#x2013; b&#x00E5;de de fors&#x00F8;g,
+          der forblev i skuffen, og som vi i dag kender fra hans dagb&#x00F8;ger, og de udkast og
+          fragmenter til st&#x00F8;rre digterv&#x00E6;rker, som han fik offentliggjort i
+          tidsskriftartikler i <hi rend="italic">
+<rs type="title" key="title125">Ny
+            Minerva</rs>,</hi> se <ref type="docIn" target="#docIn8">afsnittet om Placering i
+            Grundtvigs forfatterskab</ref>.</p>
+        <div>
+<head xml:id="docIn71">Kritik af <persName key="pe110">Dampe</persName>
+</head>  <p rend="noIndent">Anmeldelsen problematiserer <persName key="pe110">Dampes</persName> opfattelse
+            af den fortidige, f&#x00F8;rkristne k&#x00E6;rlighed, eller rettere hans opfattelse af
+              <rs key="myth418" type="myth">Signes</rs> k&#x00E6;rlighed, der ikke stemmer med
+            Grundtvigs. For Grundtvig er k&#x00E6;rligheden i det gamle Nord et f&#x00E6;nomen, der
+            g&#x00E6;lder liv og d&#x00F8;d, men hos <persName key="pe110">Dampe</persName> ser han
+            blot en fl&#x00E6;bende, let hysterisk erotik (se s. 259).</p>
+          <p rend="noIndent">
+            <persName key="pe110">Dampes</persName>
+            <rs key="myth418" type="myth">Signe</rs> kommer med sine h&#x00F8;jttravende tirader til
+            kort som en affekteret g&#x00E5;s. <persName key="pe110">Dampes</persName> dramatiske
+            kneb med at lade den forkl&#x00E6;dte <rs type="myth" key="myth345">Hagbard</rs>
+            udsp&#x00F8;rge den ulykkelige <rs key="myth418" type="myth">Signe</rs> om hendes
+            f&#x00F8;lelser for ham &#x2013; for f&#x00F8;rst til sidst at afsl&#x00F8;re sig som
+            hendes elskede &#x2013; er ikke us&#x00E6;dvanligt for tidens dramatik, og kan blandt
+            andet findes hos <persName key="pe3">Oehlenschl&#x00E4;ger</persName>, men huer ikke
+            Grundtvig. </p>
+       </div>
+      
+        
+      </div>
+      <div>
+        <head xml:id="docIn8">Placering i Grundtvigs forfatterskab</head>
+        <p rend="noIndent">Anmeldelsen falder ubesv&#x00E6;ret ind i den lille gruppe af afhandlinger,
+          artikler og anmeldelser om nordisk mytologi og sagnstof og dets anvendelse i moderne
+          digtning, som Grundtvig fik offentliggjort i &#x00E5;rene 1806-1807, og som danner grundlaget for
+          de tanker, der udfoldes samlet i <rs type="title" key="title76">
+<hi rend="italic">Nordens
+              Mytologi</hi>
+</rs> 1808.</p>
+        <p rend="noIndent">&#x201C;Et Par Ord om Signe&#x201D; blev trykt i samme nummer af <rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>,</rs> hvori han skrev om
+            <persName key="pe35">Schiller</persName> og dennes <rs key="title340" type="title">
+<hi rend="italic">Bruden fra Messina</hi>
+</rs> (juni 1807). Men hvor Grundtvig havde to
+          form&#x00E5;l i <rs type="title" key="title585">&#x201C;Om Schiller&#x201D;</rs>, nemlig
+          dels en diskussion af den antikke tragiske digtning over for den moderne, dels et
+          overs&#x00E6;ttelsesprojekt, hvor han overs&#x00E6;tter mindre uddrag af <persName key="pe35">Schillers</persName> tekst (se <ref type="docOut" target="1807_67_intro.xml#docIn7">indledningen til <rs key="title585" type="title">&#x201C;Om Schiller og Bruden fra Messina&#x201D;</rs>
+</ref>), er hans
+          &#x00E6;rinde i &#x201C;Et Par Ord om Signe&#x201D; et andet. Heri vil han f&#x00F8;rst og
+          fremmest kritisere <persName key="pe110">Dampe</persName> for ikke at forst&#x00E5; den
+          hedenske storhed i sagnet om <rs key="myth345" type="myth">Hagbard</rs> og <rs type="myth" key="myth418">Signe</rs>, men derimod at bruge det gamle nordiske stof p&#x00E5; en
+          m&#x00E5;de, der st&#x00F8;der Grundtvig. Grundtvig skelner mellem stoffet eller plottet
+            (<persName key="pe237">Saxo</persName> og folkevisen) og formen (fremstillingen og
+          stillejet) (s. 250) og tager i sin kritik afstand fra <persName key="pe110">Dampes</persName> h&#x00E5;ndtering af begge dele. </p>
+        <p rend="noIndent">De to n&#x00E6;sten samtidige tekster af Grundtvig rummer alts&#x00E5; to
+          parallelle diskussioner af poetologisk karakter, p&#x00E5; den ene side en
+          overs&#x00E6;ttelsesteoretisk og p&#x00E5; den anden en k&#x00E6;rlighedshistorisk og
+          n&#x00E6;sten religionshistorisk. Teksterne forholder sig begge til det, der i samtiden
+          blev kaldt &#x2018;den nyere skole&#x2019;. Det er ogs&#x00E5;, hvad Grundtvig kalder den,
+          fx i et dagbogsnotat fra september 1805 (<rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 220 og 222).</p>
+            
+           <p rend="noIndent">Denne skole stod overordnet set i mods&#x00E6;tning til b&#x00E5;de den
+          antikke gr&#x00E6;ske og romerske litteratur og til den franske klassicisme. Desuden tog
+          &#x2018;skolen&#x2019; afstand fra 1700-tallets digtning, b&#x00E5;de den tidlige
+          oplysningstids ofte moraliserende facon og den sene sentimentale. Derimod s&#x00E5; den
+          positivt p&#x00E5; forfattere som <persName key="pe29">Goethe</persName> og <persName key="pe35">Schiller</persName>.</p>
+      </div>
+      <div>
+<head xml:id="docIn9">Modtagelse og efterliv</head>
+<p rend="noIndent">Det er ikke
+          lykkedes at finde direkte reaktioner p&#x00E5; Grundtvigs tekst, fx i form af et forsvar fra
+        <persName key="pe110">Dampes</persName> side eller polemiske modangreb p&#x00E5; Grundtvig.</p>
+        <p rend="noIndent">En mindre h&#x00E5;ndgribelig reaktion kan dog spores, idet Grundtvigs
+          kritik formentlig afholdt <persName key="pe110">Dampe</persName> fra at skrive resten af
+          dramaet. If&#x00F8;lge <persName key="pe52">Flemming Lundgreen-Nielsen</persName> er der i
+          alt fald ingen spor af et s&#x00E5;dant i hans efterladte papirer i NkS 2465 (<rs key="title14" type="title">1980, s. 218-219</rs>).</p>
+          <p rend="noIndent">Anmeldelsen har ikke v&#x00E6;ret videre behandlet i forskningen, m&#x00E5;ske fordi
+          den har st&#x00E5;et i skyggen af de mere v&#x00E6;sentlige v&#x00E6;rker fra 1807, <rs key="title2" type="title">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> maj 1807, <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <rs key="title1194" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt</hi>
+</rs> februar 1807 og <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> i
+            <rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> marts 1807.
+          Digtet om <rs type="myth" key="myth19">Freja</rs> blev f&#x00F8;rst optrykt efter Grundtvigs d&#x00F8;d,
+          mens flere digte fra de samtidige artikler ellers blev udgivet i <hi rend="italic">
+<rs key="title251" type="title">Kv&#x00E6;dlinger</rs>
+</hi> 1815.</p>
+        <p rend="noIndent">Et enkelt udsagn om <rs type="title" key="title166">&#x201C;Et Par Ord om
+            Signe&#x201D;</rs> findes dog som skjult citat i <persName key="pe994">Morten
+            Bredsdorffs</persName> artikel <rs key="title1808" type="title">&#x201C;Grundtvig og
+            Shakespeare&#x201D;</rs> (1969, s. 43, der bygger p&#x00E5; <rs key="title1895" type="title">Henriques 1941</rs>), ligesom anmeldelsen er behandlet af <persName key="pe52">Lundgreen-Nielsen</persName> (<rs key="title13" type="title">1965</rs>, s.
+          45-72; <rs key="title14" type="title">1980, s. 216-219</rs>) og <persName key="pe51">Sune
+            Auken</persName> (<rs key="title4" type="title">2005, s. 116-117</rs>) .</p>
+</div>
+      <div type="litList">
+        <head xml:id="docIn10">Anvendt litteratur</head>    
+            <list type="litList">
+              <item>Albeck, Gustav (1953) <rs key="title338" type="title">&#x201C;Grundtvigs Vej til
+                de norr&#x00F8;ne Skrifter&#x201D;</rs> i <hi rend="italic">
+<rs key="title337" type="title">Grundtvig-Studier</rs>
+</hi> 1953, s. 103-111</item>
+              <item>Albeck, Gustav (1959) <rs type="title" key="title483">&#x201C;Husl&#x00E6;reren
+                  paa Egel&#x00F8;kke&#x201D;</rs> i <hi rend="italic">
+<rs key="title337" type="title">Grundtvig-Studier</rs>
+</hi> 1959, s. 78-98</item>
+              <item>Aristoteles (2008) <hi rend="italic">
+<rs key="title1513" type="title">Poetikken</rs>,</hi> overs. Niels Henningsen. K&#x00F8;benhavn</item>
+              <item>Auken, Sune (2005) <hi rend="italic">
+<rs type="title" key="title4">Sagas Spejl.
+                    Mytologi, historie og kristendom hos N.F.S. Grundtvig. </rs>
+</hi>
+                K&#x00F8;benhavn</item>
+              <item>
+<rs key="title35" type="title">
+<hi rend="italic">Bibliografien,</hi>
+</rs> se
+                Johansen 1948</item>
+              <item>Bredsdorff, Morten (1969) <rs type="title" key="title1808">&#x201C;Grundtvig og Shakespeare&#x201D;</rs> i <hi rend="italic">
+<rs key="title337" type="title">Grundtvig-Studier</rs>
+</hi>, s. 33-46</item>
+              <item>Dampe, Jacob Jacobsen (1807) <rs key="title1679" type="title">&#x201C;Af Signe. Et utrykt S&#x00F8;rgespil. Anden Acts fierde Scene&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> marts 1807. K&#x00F8;benhavn</item>
+              <item>Den Arnamagn&#x00E6;anske Kommissions udgave (u.&#x00E5;.: 1787-1828) <hi rend="italic">
+<rs type="title" key="title15">Edda S&#x00E6;mundar Hinns
+                  Fr&#x00F3;da. Edda Rhythmica seu antiqvior, vulgo S&#x00E6;mundina
+                dicta</rs>,</hi> bind 1 (1787): <hi rend="italic">Odas mythologicas, a Resenio non
+                editas, continens [...]</hi> udg. Bolle Willum Luxdorph, Peter
+              Frederik Suhm, B&#x00F8;rge Thorlacius, Abraham Kall &amp; Jacob Baden. U. st. (:
+              K&#x00F8;benhavn); fotografisk genoptryk Osnabr&#x00FC;ck 1967</item>
+              <item>Fritzner, Johan (1867) <hi rend="italic">
+<rs type="title" key="title29">Ordbog
+                    over det gamle norske Sprog</rs>.</hi> Kristiania/Oslo</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1806) <rs type="title" key="title72">&#x201C;Lidet om Sangene i Edda&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> september 1806, s. 270-299.
+                K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807a) <rs key="title341" type="title">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <rs type="title" key="title126">
+<hi rend="italic">Theologisk Maanedsskrivt</hi>
+</rs> februar 1807,
+                s. 129-201. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807b) <rs key="title335" type="title">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> i <rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>
+</rs> marts 1807, s. 249-298.
+              K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807c) <rs key="title2" type="title">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs> i <rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> maj 1807, s. 156-188. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807d) <rs key="title127" type="title">&#x201C;Om Schiller og Bruden fra Messina&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> juni 1807, s. 225-248.
+                K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807e) <rs key="title127" type="title">&#x201C;Et Par Ord i Anledning af det forkyndte S&#x00F8;rgespil:
+                  Signe&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny
+                    Minerva</rs>
+</hi> juni 1807, s. 249-263. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1807f) <rs key="title167" type="title">&#x201C;Om Oehlenschl&#x00E4;gers Baldur hiin Gode&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> december 1807, s. 270-299.
+                K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808) <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1815) <hi rend="italic">
+<rs type="title" key="title251">Kv&#x00E6;dlinger eller Smaakvad</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, N.F.S. (1924) <hi rend="italic">
+<rs type="title" key="title7">Breve
+                fra og til Grundtvig, Nicolai Frederik Severin (1807-1820)</rs>,</hi> udg. Georg Christensen
+                &amp; Stener Grundtvig, bind 1. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1880) <hi rend="italic">
+<rs type="title" key="title169">Poetiske Skrifter</rs>,</hi> bind 1, udg. Svend Grundtvig &amp; Georg
+              Christensen. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin &amp; Christian Molbech (1888) <hi rend="italic">
+<rs type="title" key="title16">Christian Molbech og Nikolai Frederik Severin Grundtvig. En Brevvexling, samlet
+                  af Chr. K. F. Molbech, og udgivet af L. Schr&#x00F8;der</rs>.</hi>
+              K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1979) <hi rend="italic">
+<rs key="title3" type="title">N.F.S.
+                    Grundtvig. Dag- og Udtogsb&#x00F8;ger</rs>
+</hi>, udg. Gustav Albeck, bind 1-2.
+                    K&#x00F8;benhavn</item>
+              <item>Henriques, Alf (1941) <hi rend="italic">
+<rs key="title1895" type="title">Shakespeare og Danmark indtil 1840. Vurdering. Opf&#x00F8;relse. Overs&#x00E6;ttelse. Efterligning</rs>.</hi> K&#x00F8;nenhavn</item>
+              <item>Johansen, Steen (1948) <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs skrifter</rs>,</hi> bind 1.
+                K&#x00F8;benhavn</item>
+              <item>Larsen, Martin overs. (1943) <hi rend="italic">
+<rs type="title" key="title71">Den &#x00E6;ldre Edda og Eddica
+                  minora</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming, (1965) <hi rend="italic">
+<rs type="title" key="title13">N.F.S. Grundtvig. Sk&#x00E6;bne og Forsyn. Studier i Grundtvigs
+                  nordisk-romantiske dramatik</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming, (1968) <hi rend="italic">
+<rs type="title" key="title1894">Den nordiske fort&#x00E6;lling i det 18. &#x00E5;rhundrede. Bidrag til en genres historie</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1971) <rs type="title" key="title487">&#x201C;Henrik Steffens' Goethe-Forel&#x00E6;sninger i 1802&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title448">Danske Studier</rs>
+</hi> 1971, s.
+              121-129</item>
+              <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og
+                    poetik 1798-1819</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+              <item>M&#x00F8;inichen, Jacob B&#x00E6;rent (1800) <hi rend="italic">
+<rs type="title" key="title5">Nordiske Folks Overtroe, Guder, Fabler og Helte indtil Frode 7
+                    Tider i Bogstav-Orden</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1804) <rs type="title" key="title313">&#x201C;F&#x00F8;rste Sang af Edda, Epopee i 24 Sange&#x201D;</rs> i <hi rend="italic">
+<rs key="title309" type="title">Charis for 1804</rs>.</hi>
+                K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1805) <hi rend="italic">
+<rs type="title" key="title75">Poetiske Skrifter</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1807) <hi rend="italic">
+<rs key="title306" type="title">Nordiske Digte</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1840)  <hi rend="italic">
+<rs key="title101" type="title">Gamle danske
+                  Folkeviser, udgivne til Almeenl&#x00E6;sning</rs>.</hi>  K&#x00F8;benhavn</item>
+              <item>Percy, Thomas (1765) <hi rend="italic">
+<rs key="title1770" type="title">Reliques of Ancient English
+                Poetry, Consisting of Old Heroic Ballads, Songs, and other Pieces of our earlier
+                Poets, (Chiefly of the Lyric Kind.) Together with some few of later
+                Date</rs>,</hi> bind 1-3. London</item>
+              <item>Pedersen, Vibeke A. (2007) <rs type="title" key="title1862">&#x201C;Hagbard og
+                Signe&#x201D;</rs> i Merete K. J&#x00F8;rgensen, Henrik Blicher, Marita Akh&#x00F8;j
+              Nielsen (red.) <hi rend="italic">
+<rs key="title1863" type="title">T&#x00E6;nkesedler.
+                  20 fort&#x00E6;llinger af f&#x00E6;drelandets litteraturhistorie. Festskrift til
+                  Flemming Lundgreen-Nielsen</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Resen, Peder Hansen (1665a) <hi rend="italic">
+<rs type="title" key="title19">Philosophia antiqvissima Norvego-Danica dicta Woluspa qv&#x00E6; est pars
+                  Edd&#x00E6; S&#x00E6;mundi, Edd&#x00E2; Snorronis non brevi antiqvioris,
+                  Islandic&#x00E8; &amp; Latin&#x00E8; publici juris prim&#x00F9;m
+                facta</rs>
+</hi> [den latinske overs&#x00E6;ttelse er udf&#x00F8;rt af
+              Steph&#x00E1;n &#x00D3;lafsson]. K&#x00F8;benhavn</item>
+              <item>Resen, Peder Hansen (1665b) <hi rend="italic">
+<rs key="title32" type="title">Edda Islandorum an. Chr. M CC XV Islandice. Conscripta per Snorronem
+                  Sturl&#x00E6; islandi&#x00E6;. Nomophylacem nunc, primum Islandice, Danice et
+                  Latine ex antiqvis codicibus m. ss. bibliothec&#x00E6; regis et aliorum in lucem
+                  prodit</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>R&#x00F8;nning, Frederik (1907-1914) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv
+                    i det 19. &#x00E5;rhundrede</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>  
+              <item>Sandvig, Bertel (1779) <hi rend="italic">
+<rs type="title" key="title319">Danske
+                    Sange af det &#x00E6;ldste Tidsrum, indeholdende blandt andet nogle Danske og
+                    Norske Kongers Bedrifter. Af det gamle Sprog oversatte</rs>.</hi>
+                K&#x00F8;benhavn</item>
+              <item>[Sandvig, Bertel] (1780) <hi rend="italic">
+<rs type="title" key="title352">Levninger af Middel-Alderens Digtekunst</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>[Sandvig, Bertel] (1783-1785) <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda</rs>,</hi>
+              h&#x00E6;fte 1-2. K&#x00F8;benhavn</item>
+              <item>Steffens, Henrich (1996)<hi rend="italic">
+                <rs type="title" key="title77">Indledning til philosophiske
+                  Forel&#x00E6;sninger</rs>
+</hi> [1803], udg. Johnny Kondrup.
+              K&#x00F8;benhavn</item>
+              <item>Stef&#x00E1;nsson, Finn (2009) <hi rend="italic">
+<rs type="title" key="title10">Gyldendals leksikon om nordisk mytologi.</rs>
+</hi> K&#x00F8;benhavn</item>
+              <item>Suhm, Peter Frederik (1771) <hi rend="italic">
+<rs type="title" key="title23">Om Odin og den Hedniske Gudel&#x00E6;re og Gudstieneste udi Norden.</rs>
+</hi>
+                K&#x00F8;benhavn</item>
+            <item> [Suhm, Peter Frederik] (1777) <rs type="title" key="title613">&#x201C;Signe og Habor eller Kierlighed st&#x00E6;rkere end D&#x00F8;den. Ved
+                Forfatteren af Sigrid&#x201D;</rs> i <hi rend="italic">
+                <rs key="title612" type="title">Fors&#x00F8;g i de ski&#x00F8;nne og nyttige
+                  Videnskaber</rs>,</hi> Tolvte
+              Stykke. K&#x00F8;benhavn</item>
+              <item>Suhm, Peter Frederik (1782) <hi rend="italic">
+<rs type="title" key="title321">Historie af Danmark</rs>,</hi> bind 1. K&#x00F8;benhavn</item>
+              <item>S&#x00F8;rensen, Preben Meulengracht &amp; Gro Steinsland (2001) <hi rend="italic">
+<rs key="title68" type="title">V&#x00F8;lvens
+                  Sp&#x00E5;dom</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Toldberg, Helge (1946) <hi rend="italic">
+<rs type="title" key="title24">Grundtvig som Filolog</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Vedel, Anders S&#x00F8;rensen (1610) <hi rend="italic">
+<rs type="title" key="title178">Den Danske Kr&#x00F8;nike Som Saxo Grammaticus screff, Halfffierde
+                  Hundrede Aar forleden. F&#x00F8;rst aff Latinen vds&#x00E6;t, flittelige offuerseet oc
+                  forbedret, Aar M. D. LXXV</rs>.</hi> [1575] K&#x00F8;benhavn</item>
+              <item>Vedel, Anders S&#x00F8;rensen (1591) <hi rend="italic">
+<rs type="title" key="title1896">It Hundrede vduaalde Danske Viser/ Om allehaande Merckelige Krigs Bedrifft/ oc anden seldsom Euentyr/ som sig her vdi Riget/ ved Gamle Kemper/ Naffnkundige Konger oc ellers forneme Personer begiffuet haffuer/ aff arilds tid indtil denne neru&#x00E6;rendis Dag. 
+                Ribe paa Liliebierget aff Hans Brun 1591</rs>.</hi> Ribe</item>
+            </list>
+          
+        
+      </div>
+    </body>
+</text>
+</TEI>

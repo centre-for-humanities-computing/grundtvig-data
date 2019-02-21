@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Til Nordm&#x00E6;nd om en Norsk H&#x00F8;i-Skole</title>
+                <title rend="shortForm">Til Nordm&#x00E6;nd om en Norsk H&#x00F8;i-Skole</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="editionPhilologist">Henrik Yde</editor>
+                <editor role="student">Jesper Lorenzen</editor>
+                <editor role="student">Frederik Drei&#x00F8;e Seidelin</editor>
+            </titleStmt>
+            
+            <editionStmt>
+<edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+</editionStmt>
+            <extent>1 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+                <publisher>Aarhus Universitet, Kulturvidenskab</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                
+                <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note xml:id="thisFile" type="txt" target="1837_580_txt.xml">L&#x00E6;setekst</note>
+                <note type="com" target="1837_580_com.xml">Punktkommentar</note>
+                <note type="intro" target="1837_580_intro.xml">Indledning</note>
+                <note type="txr" target="1837_580_txr.xml">Tekstredeg&#x00F8;relse</note>
+                <note type="minusVar">Variant</note>
+            
+            </notesStmt>
+            
+            <sourceDesc>
+                <bibl>
+                    <pubPlace>Christiania</pubPlace>
+                    <publisher>Chr. Gr&#x00F8;ndahls Bogtrykkeri</publisher>
+                    <date>1837</date>
+                </bibl>
+                <listWit xml:id="emendation">
+                    <witness xml:id="A" n="580"><desc>F&#x00F8;rstetrykket</desc> <num>1837</num></witness>
+                    
+                </listWit>
+                <listWit xml:id="pageNumber">
+                    <witness xml:id="VU">
+<desc>V&#x00E6;rker i Udvalg</desc> <num>4</num></witness>
+                    <witness xml:id="Gskv">
+<desc>Grundtvigs skoleverden</desc> <num>2</num></witness>
+                    
+                </listWit>
+            </sourceDesc>
+            
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                    <term>prosa</term>
+                    <term>afhandlinger</term>
+                </classCode>
+                <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                    <term>skolen</term>
+                    <term>folket</term>
+                    <term>nordisk</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>          
+        </encodingDesc>
+        <revisionDesc>
+            <change xml:id="KSR" who="KSR" when="2011-10-07">skabelon</change> 
+            <change xml:id="JEL" who="JEL" when="2012-01-03">JEL: F&#x00F8;rste grundkollation, sideskifthenvisninger til GSV og VU, Unicodes indsat, Spaced til italic</change>
+            <change who="HY" when="2012-01-03">Lemmatiseret til og med com18; sat , ; ! og ? indenfor afslutning af italic; opm&#x00E6;rket place.</change>
+            <change who="HY" when="2012-01-03">Lemmatiseret til og med com47; opm&#x00E6;rket place, pe, myth, title.</change>
+            <change who="HY" when="2012-01-03">Lemmatiseret f&#x00E6;rdig; opm&#x00E6;rket f&#x00E6;rdig.</change>
+            <change who="JMR" when="2012-01-09">Indsat faksimilenumre</change>
+            <change who="HY" when="2012-01-10">Justeret til og med com21</change>
+            <change who="HY" when="2012-01-11">Justeret til og med com35</change>
+            <change who="HY" when="2012-01-12">Justeret til og med com48</change>
+            <change who="HY" when="2012-01-13">Justeret til og med com52</change>
+            <change who="HY" when="2012-01-18">Justeret til og med com65</change>
+            <change who="HY" when="2012-01-27">indf&#x00F8;rt JMRs 2. korrektur og kollation</change>
+            <change who="HY" when="2012-02-21">3. korrektur og kollation f&#x00E6;rdig</change>
+            <change who="HY" when="2012-02-24">tilrettet efter NHB's forslag</change>
+            <change who="HY" when="2012-03-14">Rettelser efter KEB's red.</change>
+            <change who="HY" when="2012-03-23">Rettelser efter JK's red.</change>
+            <change xml:id="FDS" who="FDS" when="2012-06-28">Tilretning af edition-pb-elemeter.</change>
+            <change who="HY" when="2012-08-16">&#x00C6;ndret versionsnummer til 1.1</change>
+            <change who="HY" when="2012-10-24">&#x00C6;ndret GSV til Gskv</change>
+            <change xml:id="JT" who="JT" when="2013-04-30">Kolofon rettet: Oplysning om "B" er slettet. Ingen tekstkritisk rettelser. Afgiver heller ikke sidetal.</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+            <change who="HY" when="2015-03-05">fjernet spatiering af o. s. v.</change>
+        </revisionDesc>
+    </teiHeader>
+        <text type="txt">
+                
+        
+        <pb type="periText" facs="1837_580_fax001.jpg" />
+        <pb type="periText" facs="1837_580_fax002.jpg" />
+        <pb type="periText" facs="1837_580_fax003.jpg" />
+        <pb type="periText" facs="1837_580_fax004.jpg" />
+        <pb type="periText" facs="1837_580_fax005.jpg" />
+        <pb type="periText" facs="1837_580_fax006.jpg" />
+        
+        <front rend="[Titelblad]">
+            
+            <titlePage type="first">
+                <pb type="text" ed="A" n="I" rend="supp" facs="1837_580_fax007.jpg" />
+                
+                <docTitle>                    
+                    <titlePart type="main">Til Nordm&#x00E6;nd</titlePart>
+                    <titlePart type="main">om en</titlePart>
+                    <titlePart type="main">Norsk <seg n="com1" type="com">H&#x00F8;i-Skole</seg>
+</titlePart>
+                </docTitle>
+                
+                
+                <byline>fra</byline>
+                
+                <docAuthor>
+                    Nik. Fred. Sev. Grundtvig.
+                </docAuthor>
+                
+                <fw type="longLine" />
+                
+                <docImprint>
+                    <date></date>
+                    <pubPlace>Christiania, 1837.</pubPlace>
+                    <publisher>Trykt hos <persName key="pe609">Chr. Gr&#x00F8;ndahl</persName>.</publisher>
+                </docImprint>
+                
+            </titlePage>
+            
+        </front>
+        
+        
+        <pb type="text" ed="A" n="II" rend="supp" facs="1837_580_fax008.jpg" />
+        
+        <body>
+            <div type="[Tekst]">
+                <pb n="1" ed="A" type="text" facs="1837_580_fax009.jpg" />
+<pb n="186" ed="VU" type="edition" />
+<pb n="63" ed="Gskv" type="edition" />
+                <p rend="noIndent">
+                    <hi rend="initial">V</hi>ed <seg type="comStart" n="com3"/>min <seg n="com2"
+                        type="com">Optr&#x00E6;delse</seg> i den Nordiske L&#x00E6;se-Verden, for
+                    tredive Aar siden<seg type="comEnd" n="com3"/>, viiste min Skrift en afgjort
+                    Forki&#x00E6;rlighed til <placeName key="fak24">Nordens</placeName> Oltid og,
+                    efter den almindelige Mening, saavel en us&#x00E6;dvanlig Fortroelighed med dens
+                    Aand, som et Gran af dens K&#x00E6;mpe-Styrke; men i den <hi rend="italic"
+                        >Latinske Forkvakling</hi> og i hele det magel&#x00F8;se Tanke-Virvar,
+                    hvoraf vi Alle udsprang, laae der Grund Nok til at det seent eller aldrig skulde
+                        <seg type="com" n="com5">klare sig</seg> enten for mine Samtidige eller mig
+                    selv, hvad jeg i denne min afgjort Nordiske Aands-Retning egenlig vilde, kunde
+                    og skulde. Mit Sv&#x00E6;rmerie for Oltiden, som om Man virkelig kunde og skulde
+                    opmane de Hedenfarne, eller omskabe hinanden <seg n="com71" type="com">efter
+                        deres Lignelse</seg>, var <seg n="com8" type="com">vist nok</seg> meget
+                    naturligt, men derfor ikke desrimeligere; <seg n="com6" type="com"
+                        >Sammenblandingen af to, vist nok meget
+                        forenelige, men dog yderst forskiellige Ting, nemlig <hi rend="italic"
+                            >Christendom</hi> og <hi rend="italic">Nordiskhed</hi>
+                    </seg>, som derpaa fulgde, var slet ikke klogere, og <seg type="com" n="com7">de
+                        politiske Forandringer i <placeName key="fak24">Norden</placeName>
+                    </seg> betragtede jeg saa ganske med Middel-Alderens &#x00D8;ine, at der umuelig
+                    kunde v&#x00E6;re noget Hensyn til Nutidens Tarv. Det havde derfor <seg n="com8"
+                        type="com">vist nok</seg> sine gode Grunde, at jeg l&#x00E6;nge saa godt som
+                    Intet udrettede til det i &#x00D8;vrigt priselige &#x00D8;iemed, <pb n="2"
+                        ed="A" type="text" facs="1837_580_fax010.jpg"/>som un&#x00E6;gtelig var <hi
+                        rend="italic">
+                        <placeName key="fak24">Nordens</placeName> Gienf&#x00F8;delse</hi> i sin
+                    k&#x00E6;mpem&#x00E6;ssige og &#x00E6;dle Eiendommelighed, men hvorfor Man endnu
+                    seer faa eller ingen Tegn til en Saadan, kan ingenlunde blot v&#x00E6;re min
+                    Skyld, da Sagen <seg n="com73" type="com">i senere Tid</seg>
+                    <seg type="com" n="com72">m&#x00E6;rkelig</seg> har klaret sig for mig, deels
+                    ved Tidens naturlige Virksomhed, deels ved folkehistorisk Granskning, og ei
+                    mindst ved <seg type="com" n="com9">mine Bes&#x00F8;g hos det store <hi
+                            rend="italic">&#x00D8;folk,</hi></seg> hvor Man vel aldrig m&#x00F8;der
+                        <hi rend="italic"><placeName key="fak24">Nordens</placeName> Aand,</hi> men
+                    sporer ham, saa at sige, ved hvert Skridt, i gavnlige <hi rend="italic"
+                        >Kr&#x00E6;fters Frihed</hi> og <hi rend="italic">k&#x00E6;mpem&#x00E6;ssig
+                        Virksomhed.</hi> Denne Nordiskhedens <hi rend="italic">
+                        <seg n="com10" type="com">Borgerlige</seg> Side</hi> l&#x00E6;rde jeg nemlig
+                    f&#x00F8;rst <pb n="187" ed="VU" type="edition"/>ved <placeName key="fak108"
+                        >Th&#x00E6;msen</placeName> at kjende og skatte, og at betragte som <pb
+                        n="64" ed="Gskv" type="edition"/>det hjemlige <placeName key="fak24"
+                        >Nordens</placeName> store Savn, uden hvis <seg type="com" n="com11"
+                        >Afhjelp</seg> al <placeName key="fak24">Nordens</placeName> saakaldte
+                    Gienf&#x00F8;delse var i det H&#x00F8;ieste en k&#x00E6;mpem&#x00E6;ssig <seg
+                        n="com12" type="com">Ligbeg&#x00E6;ngelse</seg>. Uagtet jeg derfor endnu er
+                    lige langt fra at misunde <seg type="com" n="com25">
+                        <hi rend="italic">Angel-Saxers</hi>
+                    </seg> og <seg n="com13" type="com">
+                        <hi rend="italic">Normanners</hi>
+                    </seg> B&#x00F8;rn den Deel af deres Livs-Anskuelse, de ei f&#x00F8;rde med sig
+                    fra <hi rend="italic">
+                        <placeName key="fak24">Norden</placeName>
+                    </hi> men laande i <hi rend="italic">
+                        <placeName key="fak192">Vesten</placeName>
+                    </hi> af <hi rend="italic">Romere</hi> og <hi rend="italic">Galler,</hi> fandt
+                    jeg dog, at <hi rend="italic">
+                        <placeName key="fak24">Norden</placeName>
+                    </hi> vilde v&#x00E6;re reddet af <seg n="com70" type="com">det almindelige
+                        Skibbrud, der truer <hi rend="italic">
+                            <placeName key="fak12">Europas</placeName>
+                        </hi> Folk</seg>, og stige til den Glands, Dets Oltid spaaede, naar de <hi
+                        rend="italic">gavnlige Kr&#x00E6;fter</hi> paa <hi rend="italic"
+                        >Fredens</hi> Vei kunde naae den samme Grad af <seg n="com14" type="com">
+                        <hi rend="italic">Frihed,</hi> som de i <hi rend="italic">
+                            <placeName key="fak5">England</placeName>
+                        </hi> har taget med Staalhandsker</seg>, og benytte derfor tildeels som et
+                    Rov. Dette skulde Man vel synes var ogsaa en let Sag, is&#x00E6;r <seg
+                        type="com" n="com15">nu, da alle <hi rend="italic">
+                            <placeName key="fak24">Nordens</placeName> Folk</hi> har gienvundet
+                        deres <hi rend="italic">offenlige Stemme,</hi>
+                    </seg> og det vilde sikkert v&#x00E6;re let, naar <pb n="3" ed="A" type="text"
+                        facs="1837_580_fax011.jpg"/>Folkene selv vidste, hvad de feilede og forstod
+                    at oplyse Regieringerne om, hvor n&#x00F8;dvendig en saadan <hi rend="italic"
+                        >Kr&#x00E6;fternes Frihed</hi> er til alt Storv&#x00E6;rk og ret egenlig til
+                    Opnaaelsen af det eneste &#x00E6;dle Stats-&#x00D8;iemed, som un&#x00E6;gtelig
+                    er <hi rend="italic">f&#x00E6;lles Bedste;</hi> men hvad der slaaer <seg
+                        n="com16" type="com">Knuden</seg> og synes at gj&#x00F8;re Sagen fortvivlet,
+                    er <hi rend="italic">Folkenes Mangel</hi> paa sand <hi rend="italic"
+                        >menneskelig</hi> og <hi rend="italic">
+                        <seg n="com81" type="com">borgerlig</seg> Oplysning,</hi> en Mangel, der
+                    egenlig hverken kan l&#x00E6;gges dem eller Regieringerne til Last, men er
+                    derfor lige s&#x00F8;rgelig og nu, da kun en saadan Oplysning kan redde fra <hi
+                        rend="italic"><seg n="com81" type="com">Borgerlig</seg> Fortvivlelse,</hi>
+                    en d&#x00F8;delig Sygdom. Den <hi rend="italic"><seg n="com10" type="com"
+                            >Borgerlige</seg> Fortvivlelse</hi> findes nemlig ikke blot der, hvor
+                    den bryder ud i Opr&#x00F8;r og uhyre, urime<pb n="65" ed="Gskv" type="edition"
+                    />lige Misgierninger, men ligesaafuldt, hvor den ligesom skjuler sig i Lede til
+                    gavnlig Anstr&#x00E6;ngelse, i luftige Speculationer og i voxende Lyst til <hi
+                        rend="italic">
+                        <seg type="com" n="com17">Udvandring</seg>
+                    </hi> eller til <hi rend="italic">
+                        <seg n="com18" type="com">visse Levebr&#x00F8;d</seg>,</hi> selv om de
+                    maatte s&#x00F8;ges i <hi rend="italic">Tugthuset,</hi> og hvem kan da tvivle
+                    om, at vi ogsaa i <placeName key="fak24">Norden</placeName> staae paa Randen af
+                    den bundl&#x00F8;se Afgrund. Ingensteds har det vel saal&#x00E6;nge og saadybt
+                    v&#x00E6;ret f&#x00F8;lt, at det er Oplysning, <hi rend="italic">
+                        <seg type="com" n="com74">almindelig Oplysning</seg>,</hi> der fattes og
+                    kunde frelse, men der h&#x00F8;rer ogsaa Oplysning til at kjende den sande og
+                    gavnlige Oplysning fra den Falske og Tomme, saa det er intet Under, Man hidtil
+                    bestandig <seg n="com84" type="com">greb feil ad</seg> de rette
+                    Oplysnings-Midler, men det maa drive hver Nordbo, som seer det, til at
+                    pr&#x00F8;ve selv det <hi rend="italic">Urimelige,</hi> for, om mueligt, at
+                    bringe Folkene paa bedre Spor. Selv maa jeg saaledes vel finde det h&#x00F8;ist
+                        <pb n="4" ed="A" type="text" facs="1837_580_fax012.jpg"/>urimeligt, at min
+                        <hi rend="italic">Pen</hi> skulde kunne bortvifte det Mindste af Taagen for
+                    Folkenes &#x00D8;ine eller formaae Noget mod <hi rend="italic">tusinde
+                        Munde,</hi> som tilforladelig forsikkre Folkene, at det <hi rend="italic"
+                        >levende Ord</hi> har ingenlunde hjemme i <hi rend="italic">Folke-Munde</hi>
+                    men i l&#x00E6;rde M&#x00E6;nds <hi rend="italic">Penne,</hi> og at <hi
+                        rend="italic">Moders-Maalet</hi> til <hi rend="italic">aandeligt</hi> Brug
+                    er ikke v&#x00E6;rdt at n&#x00E6;vne ved Siden ad <hi rend="italic"
+                        >Latinen,</hi> og at det <pb n="188" ed="VU" type="edition"/>endelig <hi
+                        rend="italic">ingenlunde</hi> er ved Betragtningen af det virkelige <hi
+                        rend="italic">Menneske-Liv</hi> hos sig selv og Andre, men ved <hi
+                        rend="italic">L&#x00E6;sning,</hi> is&#x00E6;r i <hi rend="italic"
+                        >Latinske</hi> B&#x00F8;ger, man samler den rette <hi rend="italic"
+                        >Menneske-Kundskab</hi> og <hi rend="italic">Verdens-Klogskab,</hi> lige
+                    anvendelig under alle Himmel-Egne. Ja, det er h&#x00F8;istm&#x00E6;rkeligt, at
+                    netop fordi <hi rend="italic">Pennes</hi> og <hi rend="italic"
+                        >B&#x00F8;gers</hi> Forgudere har <hi rend="italic">aabenbar Uret,</hi>
+                    derfor netop maa jeg finde det <hi rend="italic">urimeligt,</hi> at <hi
+                        rend="italic">Pennen</hi> kan udrette saa store Ting eller udrette det
+                    Mindste mod <hi rend="italic">Munde,</hi> der ikke blot kan beraabe sig paa
+                    hundredetusinde <hi rend="italic">Penne</hi> og Aarhundreders H&#x00E6;vd, men
+                    har i <hi rend="italic">Livet,</hi> det v&#x00E6;re nok saa daarligt, et Fortrin
+                    for alle <hi rend="italic">Penne</hi> selv i <hi rend="italic"><seg type="com"
+                            n="com19">Engle-H&#x00E6;nder</seg>,</hi> kun Almagten kan ber&#x00F8;ve
+                    dem. Imidlertid: <hi rend="italic">alt</hi> Mueligt er ikke Rimeligt og <hi
+                        rend="italic">alt</hi> urimeligt <hi rend="italic">ei</hi> heller <hi
+                        rend="italic">umueligt,</hi> og da den h&#x00F8;ist urimelige Muelighed, at
+                    Munden kunde tage Pennen til sin Sprog-Mester og et Folks Moders-Maal taalmodig
+                    lade sig tyrannisere i F&#x00E6;drenelandet af et <hi rend="italic">d&#x00F8;dt
+                        Sprog,</hi> fordum <seg n="com75" type="com">den store <hi rend="italic"
+                            >Folke-Fiendes</hi> og almindelige <hi rend="italic">Mand-Drabers</hi>
+                        Moders-Maal</seg>; da en saa urimelig Muelighed, desv&#x00E6;rre, er blevet
+                    til en <hi rend="italic">Virkelighed,</hi> hvor<pb n="5" ed="A" type="text"
+                        facs="1837_580_fax013.jpg"/>for skulde Man da ikke, til Forsynets &#x00C6;re
+                    og Menneske-Aandens Frelse, turde haabe den <hi rend="italic">Urimelighed,</hi>
+                    at en <hi rend="italic">Pen</hi>, der dog har den i Grunden store Lykke, at
+                    staae i Pagt med den st&#x00E6;rkeste Mund i alle Lande, som den <hi
+                        rend="italic">levende Folke-Mund</hi> un&#x00E6;gtelig er, kan blive saa
+                    l&#x00E6;nge ved at pege paa den ene <hi rend="italic">Folke-Mund</hi> efter den
+                    Anden, til den omsider tr&#x00E6;ffer paa en <hi rend="italic">Folke-Mund,</hi>
+                    som har baade Lyst og Held til at <hi rend="italic">
+                        <seg type="com" n="com85">indtale</seg>
+                    </hi> sine og <hi rend="italic">Moders-Maalets</hi> naturlige og i Grunden
+                    utabelige Rettigheder! Idet jeg derfor herved peger paa den <hi rend="italic"
+                        >Norske Folke-Mund</hi> og <seg n="com20" type="com">rister Gaade-Runer paa
+                        V&#x00E6;ggen ligeover for Lyse-Stagen</seg>, da n&#x00E6;gter jeg <pb
+                        n="66" ed="Gskv" type="edition"/>ingenlunde, det er ganske rimeligt, de
+                    Runer blive hverken l&#x00E6;ste eller forstaaede, da de mange lignende, jeg har
+                    ristet for den <hi rend="italic">Danske Folke-Mund</hi> og brugde <hi
+                        rend="italic">min Mund,</hi> om ikke det Bedste, jeg kunde, saa dog temmelig
+                    til at forklare, enten er forblevet ul&#x00E6;ste eller uforstaaede, eller dog,
+                    som det synes, aldeles uvirksomme; men deels paastaaer jeg endnu, som altid, at
+                    i <hi rend="italic">
+                        <placeName key="fak14">Danmark</placeName>
+                    </hi>
+                    <seg n="com76" type="com">bedrager <hi rend="italic">Skinnet</hi>
+                    </seg> paa alle muelige Maader, og dern&#x00E6;st paastaaer jeg, at, rimeligt
+                    eller urimeligt, er det dog immer <hi rend="italic">mueligt,</hi> at Man i
+                        <placeName key="fak41">
+                        <hi rend="italic">Norge</hi>
+                    </placeName>, saasnart Man blot f&#x00E6;ster &#x00D8;ie paa de Runer, vil paa
+                    Timen see, der staaer skrevet: <hi rend="italic">Norske Folke-Mund,</hi> luk dig
+                    op og siig os, hvad ingen <hi rend="italic">Romer</hi> vidste og ingen <hi
+                        rend="italic">Latiner</hi> kan stave sig til: hvad det <hi rend="italic"
+                        >Norske Folk</hi> t&#x00E6;nker og hvordan Det formaaer at udtrykke sig frit
+                    paa sit <hi rend="italic">
+                        <seg type="com" n="com21">eget Maal</seg>
+                    </hi> om sine egne Forn&#x00F8;denheder og Tilb&#x00F8;ielig<pb n="6" ed="A"
+                        type="text" facs="1837_580_fax014.jpg"/>heder, Byrder og Savn, &#x00D8;nsker
+                    og Forhaabninger til Folkets Held og Landets Flor! <hi rend="italic">Norske
+                        Folke-Mund!</hi> v&#x00E6;r den <hi rend="italic">F&#x00F8;rste,</hi> der
+                    viser, at et <hi rend="italic">Folk</hi> endnu har Mod til at <hi rend="italic"
+                        >ligne sig selv,</hi> det har <pb n="189" ed="VU" type="edition"/>du baade
+                    Gavn og &#x00C6;re af! Det er meget mueligt, siger jeg, og derfor peger jeg, og
+                    hjalp det ikke, da vilde jeg pege paa den <hi rend="italic">Svenske
+                        Folke-Mund,</hi> og var det forgj&#x00E6;ves, paa den <hi rend="italic"
+                        >Engelske,</hi> og, naar endelig galt skulde vare, selv i <hi rend="italic"
+                        >Fortvivlelse</hi> paa den <hi rend="italic">Franske,</hi> der ei
+                    beh&#x00F8;ver at lukkes op, men kun fra den rette Side at s&#x00E6;ttes i Gang,
+                    for at vise Verden, hvad selv den sladderagtigste Folke-Mund i Verden, naar den
+                    bruges fornuftig, kan udrette til at afvende Folke-D&#x00F8;den og
+                    forskj&#x00F8;nne Menneske-Livet. Ingen Spaadom kan derfor klinge saa rimelig og
+                    advarende, at den maatte afholde mig fra hvad jeg her gj&#x00F8;r, thi da mine
+                        <hi rend="italic">egne Landsm&#x00E6;nd</hi> enten slet ikke har Mod til at
+                    ligne sig selv eller synes dog f&#x00F8;rst at ville have efterlignet alle andre
+                    Folk, selv <hi rend="italic">
+                        <seg n="com22" type="com">Chineserne</seg>,</hi> saa ligge <hi rend="italic"
+                        >Nordm&#x00E6;ndene</hi> un&#x00E6;gtelig min <hi rend="italic">Pen</hi>
+                    n&#x00E6;rmest, ikke blot fordi den mellem Dem har v&#x00E6;ret ligesaa
+                    l&#x00E6;nge bekiendt, som mellem mine N&#x00E6;rmeste, men is&#x00E6;r fordi
+                        <hi rend="italic">Historien</hi> vidner, at intet <hi rend="italic"
+                        >Nordisk</hi> Folk har havt saameget Mod til <hi rend="italic">at ligne sig
+                        selv</hi> eller saamegen &#x00C6;re af F&#x00F8;lgerne. Uden her at tale om
+                        <seg type="com" n="com23">
+                        <hi rend="italic">Normannernes</hi> Storv&#x00E6;rk</seg>, vil jeg kun
+                    ihukomme at <pb n="67" ed="Gskv" type="edition"/>
+                    <hi rend="italic">Nordm&#x00E6;ndene</hi> paa <hi rend="italic">
+                        <placeName key="fak4">Island</placeName>
+                    </hi> var de F&#x00F8;rste herhjemme, som i <hi rend="italic"
+                        >Middel-Alderen</hi> vovede at kaste Vrag paa <hi rend="italic">Latin</hi>
+                    og <hi rend="italic">Romerskhed,</hi> ved ikke blot at <pb n="7" ed="A"
+                        type="text" facs="1837_580_fax015.jpg"/>gi&#x00F8;re deres <hi rend="italic"
+                        >Moders-Maal</hi> til <hi rend="italic">Skrift-Sprog,</hi> men ved at bruge
+                        <hi rend="italic">Pennen</hi> saavelsom <hi rend="italic">Munden</hi> ikke
+                    efter <hi rend="italic">Romerske</hi> Forskrifter eller til Overs&#x00E6;ttelse
+                    af <hi rend="italic">Latinen,</hi> men til Aabenbarelse, Udvikling og
+                    Oph&#x00F8;jelse af den <hi rend="italic">Nordiske <seg type="com" n="com78"
+                            >K&#x00E6;mpe-Natur</seg>,</hi> de fandt hos sig selv, og
+                    bet&#x00E6;nkde sig intet &#x00D8;ieblik paa at l&#x00F8;slade ogsaa aandelig
+                    til Kamp mod <seg n="com24" type="com">
+                        <hi rend="italic">Ulve-Naturen</hi> fra <placeName key="fak17">
+                            <hi rend="italic">Rom</hi>
+                        </placeName>
+                    </seg>, hvor smukt den saa end indhyllede sig i <hi rend="italic"
+                        >Faare-Kl&#x00E6;der!</hi> Vel maa det ikke glemmes, at <hi rend="italic"
+                        >Nordm&#x00E6;ndene</hi> herved <hi rend="italic">tildeels</hi> havde <hi
+                        rend="italic">
+                        <seg type="com" n="com25">Angel-Sachserne</seg>
+                    </hi>, det gamle <placeName key="fak24">Nordens</placeName>
+                    <seg type="com" n="com26">M&#x00E6;rkes-M&#x00E6;nd</seg>, til Forbilleder, men
+                    det maa ligesaalidt glemmes, at <seg n="com25" type="com">Angel-Sachserne</seg>,
+                    ski&#x00F8;ndt de gjorde et K&#x00E6;mpe-Skridt, vel ingen Andre <seg n="com27"
+                        type="com">var m&#x00E6;gtige</seg>, da de <hi rend="italic"
+                        >f&#x00F8;rst</hi> satte deres <hi rend="italic">Moders-Maal i Latinens</hi>
+                    Sted, saa forfulgde de dog ikke Seieren, men <seg n="com77" type="com"
+                        >underkastede sig, kun med lidt <hi rend="italic">Forbeholdenhed,
+                            Romerskheden,</hi>
+                    </seg> medens de <hi rend="italic">Islandske Nordm&#x00E6;nd</hi> var de Eneste,
+                    som skabde en af <placeName key="fak17">
+                        <hi rend="italic">Rom</hi>
+                    </placeName> aldeles uafh&#x00E6;ngig <hi rend="italic">Dannelse og
+                        Bogskat,</hi> som Man, fordi de er <placeName key="fak24">Norden</placeName>
+                    aldeles eiendommelige, maa kalde <hi rend="italic">Nordiske.</hi>
+                    Nordm&#x00E6;ndene var det altsaa, som gyldig beviiste, hvad nu kun
+                    afm&#x00E6;gtig Trods kan n&#x00E6;gte, at <hi rend="italic">
+                        <placeName key="fak24">Nordens</placeName> Folk</hi> har af Naturen Kald til
+                        <hi rend="italic">aandelig Selvst&#x00E6;ndighed,</hi> saa det er kun
+                    Sp&#x00F8;rgsmaalet, om de endnu har <hi rend="italic">Mod</hi> og <hi
+                        rend="italic">Kraft</hi> til at h&#x00E6;vde den mod <hi rend="italic">
+                        <placeName key="fak17">Roms</placeName> Tyran,</hi> der nu vel kun er et <hi
+                        rend="italic">Gienf&#x00E6;rd</hi> uden Ki&#x00F8;d og Been, aldeles
+                    d&#x00F8;dt og magtesl&#x00F8;st, men har dog forstaaet <seg n="com43"
+                        type="com">den sorte Konst</seg> at kyse Livet (det naturlige <pb n="190"
+                        ed="VU" type="edition"/>Aandsliv) af alle <pb n="8" ed="A" type="text"
+                        facs="1837_580_fax016.jpg"/>Folkef&#x00E6;rd og paa en Maade bes&#x00E6;tte
+                    Ligene, saa de maae sige og gj&#x00F8;re Alt hvad han peger paa, og hvi skulde
+                    jeg da ikke tiltroe <hi rend="italic">Nordm&#x00E6;ndene Mod</hi> til at ligne
+                    sig selv, da de vilde have dobbelt Skam af at mangle det; hvorfor ikke tiltroe
+                        <hi rend="italic">Nutidens</hi> Nordm&#x00E6;nd Mod til at h&#x00E6;vde hvad
+                        <hi rend="italic">Middel-Alderens</hi> Nordm&#x00E6;nd skabde, ja Mod til at
+                    f&#x00F8;lge deres <hi rend="italic">egne</hi> priselige Fodspor, fordi en Flok
+                        <hi rend="italic">Latinere</hi> stiller sig i Veien og raaber af fuld Hals:
+                    alle Nordm&#x00E6;nd er af Naturen <hi rend="italic">Barbarer,</hi> og kan kun
+                    af den <hi rend="italic">Latinske Grammatik</hi> l&#x00E6;re at tale <hi
+                        rend="italic">Aandens Sprog,</hi> og kun ved <hi rend="italic">Romersk
+                        Tr&#x00E6;lle-Tugt</hi>
+                    <pb n="68" ed="Gskv" type="edition"/> afrettes til ordenlige og dannede
+                    Mennesker! Ligesom <hi rend="italic">
+                        <seg n="com25" type="com">Angel-Sachserne</seg> i Middel-Alderen,</hi>
+                    saaledes har <hi rend="italic">Engelsk-M&#x00E6;ndene i <seg type="com"
+                            n="com29">Nyaars-Tiden</seg>
+                    </hi> brudt Isen, tilk&#x00E6;mpet sig en <hi rend="italic">fri
+                        Folke-Stemme</hi> og <hi rend="italic">Moders-Maalet</hi>
+                    <seg n="com30" type="com">Enevoldsmagten</seg>, men sluttede saa under <seg
+                        type="com" n="com31">denne Forbeholdenhed</seg>, et <seg type="com"
+                        n="com66">farligt Forbund med <hi rend="italic">Latin</hi> og <hi
+                            rend="italic">Romerskhed,</hi> som de selv maae tilstaae, har, lige fra
+                            <hi rend="italic">
+                            <persName key="pe618">Elisabeths</persName>
+                        </hi> til vore Dage</seg>, udkl&#x00E6;kket en frygtelig Undertrykkelse af
+                    de Ringe og en skammelig Forkvakling af det Boglige Moders-Maal, og som,
+                    ski&#x00F8;ndt de endnu ikke see det, s&#x00E6;tter dem i Fare for igjen at
+                    miste den <hi rend="italic">Kr&#x00E6;fternes Frihed,</hi> der umuelig kan <hi
+                        rend="italic">ordnes paa Romersk</hi> uden derved at gaae <seg n="com32"
+                        type="com">aldeles forloren</seg>. Vil derfor noget andet Folk sikkre sig
+                        <hi rend="italic">
+                        <placeName key="fak5">Englands</placeName>
+                    </hi> Fortrin men undgaae Dets Plager og truende Fare, da maa de ingenlunde, som
+                    Engelsk-M&#x00E6;ndene n&#x00F8;ies med at paastaae den fri Folke-Stemme og <pb
+                        n="9" ed="A" type="text" facs="1837_580_fax017.jpg"/>Moders-Maalets <seg
+                        type="com" n="com30">Enevoldsmagt</seg>
+                    <hi rend="italic">mod</hi> Regieringen, men fremfor Alt h&#x00E6;vde begge Dele
+                    mod <hi rend="italic">Romer-Tyranniet</hi> og <hi rend="italic">Latinen,</hi>
+                    som ellers <seg n="com33" type="com">i L&#x00F8;n</seg> deels fort&#x00E6;re og
+                    deels lamme de &#x00E6;dleste Folke-Kr&#x00E6;fter og smedde usynlige
+                    L&#x00E6;nker til <hi rend="italic">Folke-Naturen,</hi>
+                    <seg type="com" n="com34">som Dv&#x00E6;rgene til <rs type="myth" key="myth14"
+                            >Fenris-Ulven</rs>
+                    </seg>. Det eneste Forsvars-Middel mod en <hi rend="italic">unaturlig</hi> og
+                        <hi rend="italic">tyrannisk Skole</hi> er imidlertid en <hi rend="italic"
+                        >naturlig</hi> og <hi rend="italic">fri Skole,</hi> og den eneste Maade,
+                    hvorpaa et Folk kan h&#x00E6;vde sin aandelige Selvst&#x00E6;ndighed mod en <hi
+                        rend="italic">falsk Oplysning,</hi> der hviler paa <hi rend="italic"
+                        >B&#x00F8;ger</hi> og <hi rend="italic">d&#x00F8;de Sprog,</hi> er at
+                    str&#x00E6;be efter en <hi rend="italic">sand Oplysning,</hi> der udspringer af
+                        <hi rend="italic">Livet</hi> og <hi rend="italic">Moders-Maalets
+                        levende</hi> Skole-Brug, hvad kun tilgavns kan skee, ved at reise en <hi
+                        rend="italic">
+                        <seg type="com" n="com35">Folkelig</seg>
+                        <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> hvor der slet ikke er
+                    Sp&#x00F8;rgsmaal om, enten hvad der staaer i Gr&#x00E6;kers eller Romeres
+                    B&#x00F8;ger, eller hvad nogle Enkelte kunde f&#x00F8;le Lyst eller Trang til at
+                    vide, men kun om <hi rend="italic">Folkets</hi> og <hi rend="italic"
+                        >Landets</hi> og <hi rend="italic">Moders-Maalets</hi> Natur og
+                    Beskaffenhed, n&#x00E6;rv&#x00E6;rende Tilstand og <hi rend="italic"
+                        >naturlige</hi> Forbedring og Fremgang, og hvor disse enhver Borger
+                    magtpaaliggende Ting ei behandles som Gjenstande for en d&#x00F8;d og ufrugtbar
+                    Kundskab, men <hi rend="italic">l&#x00E6;gges for Dagen i levende
+                        Vexel-Virkning!</hi>
+                </p>
+                
+                <p rend="firstIndent">Til uopholdelig at oprette en saadan <hi rend="italic">
+<seg type="com" n="com35">Folkelig</seg>
+                    <seg n="com1" type="com">H&#x00F8;iskole</seg>
+</hi> er det da jeg opkalder Eder, <hi rend="italic">Norske Fr&#x00E6;nder!</hi> og kunde det nytte,<pb n="69" ed="Gskv" type="edition" /> vilde jeg <pb n="191" ed="VU" type="edition" />jo besv&#x00E6;rge
+                    Eder ved Alt, hvad der kunde t&#x00E6;nkes at v&#x00E6;re Eder ki&#x00E6;rt og
+                    helligt, ei at undlade eller forhale et Storv&#x00E6;rk, alle <pb n="10" ed="A" type="text" facs="1837_580_fax018.jpg" />Minder i <seg n="com37" type="com">K&#x00E6;mpers F&#x00F8;deland</seg> v&#x00E6;rdigt og K&#x00E6;mpernes B&#x00F8;rn
+                    uundv&#x00E6;rligt, hvis de virkelig skal h&#x00F8;ste hvad F&#x00E6;drene saaede og
+                    pryde sig med den H&#x00E6;ders-Krands, hvortil Hine saa priselig beilede, bevise
+                    for al Verden, at hvor der ved h&#x00F8;ilys Dag fandtes saadanne <hi rend="italic">
+<seg type="com" n="com35">folkelige</seg> Helte</hi> som <hi rend="italic">
+<persName key="pe403">Hakon Adelsteen</persName>
+</hi> og
+                        <hi rend="italic">
+<persName key="pe436">Olav Trygges&#x00F8;n,</persName>
+</hi> saa store og saa &#x00E6;dle Kr&#x00E6;fter, som de
+                    der skabde <placeName key="fak41">Norges</placeName> Kongelige <seg type="com" n="com38">Ridderspil</seg> fra <hi rend="italic">
+<persName key="pe620">Halvdan Svarte</persName>
+</hi>
+                    til <hi rend="italic">
+<persName key="pe621">Sverre</persName>,</hi> og hvor der endelig, midt under det <hi rend="italic">Latinske <seg n="com39" type="com">Pavedom</seg>
+</hi> var en saadan Ki&#x00E6;rlighed til
+                    Moders-Maalet, i Middel-Alderens Dunkelhed et saadant &#x00D8;ie for Folke-Livet, som
+                        <seg type="com" n="com79">
+<hi rend="italic">
+<rs type="title" key="title551">Heimskringle</rs>
+</hi>
+</seg> og hele <hi rend="italic">Saga-R&#x00E6;kken</hi> soleklart aabenbare, der fattes i <seg type="com" n="com29">Nyaars-Tiden</seg> heller
+                    hverken <hi rend="italic">Mod</hi> eller <hi rend="italic">Kraft</hi> til, trods alle Latinske og Romerske <seg n="com41" type="com">Bans&#x00E6;ttelser</seg>,
+                    at forts&#x00E6;tte, <seg type="com" n="com42">forklare</seg> og fuldende det l&#x00E6;nge afbrudte, men aldrig
+                    opgivne, <hi rend="italic">
+<seg n="com35" type="com">folkelige</seg> Levnets-L&#x00F8;b!</hi> Jeg vilde derfor
+                    ogsaa gi&#x00F8;re det, hvis jeg levede og virkede iblandt Eder, Ansigt til
+                    Ansigt, men Erfaring har l&#x00E6;rt mig, at Man aldrig skal str&#x00E6;be at
+                    gi&#x00F8;re med Pennen, hvad kun Munden formaaer, da Man derved ei alene spilder
+                    Liv og Varme paa Pen og Papir, men stadf&#x00E6;ster tillige, saavidt Man kan,
+                    sine L&#x00E6;sere i den <hi rend="italic">Romerske Overtroe,</hi> at Ordet er
+                    fuldt saa levende i Bog som paa Tunge, eller med andre Ord, at <hi rend="italic">D&#x00F8;d i Aandens Rige</hi> er meget bedre og tilforladeligere end <hi rend="italic">Livet,</hi> en Overtroe, der altid lidt f&#x00F8;r eller senere,
+                    giver <placeName key="fak17">
+<hi rend="italic">Rom</hi>
+</placeName> og <hi rend="italic">Latinen</hi> Spillet vundet, da det naturligviis kun er <pb n="11" ed="A" type="text" facs="1837_580_fax019.jpg" />Talens <hi rend="italic">naturlige</hi> og <hi rend="italic">levende
+                        Redskab,</hi> der med Fynd og Frugt kan f&#x00F8;re <hi rend="italic">Naturens</hi> og <hi rend="italic">Livets</hi> Sag mod kloge Modstandere,
+                    hvis <seg type="com" n="com43">sorte Konst</seg> det netop er i <hi rend="italic">Aandens</hi> Verden at give
+                    alt det <hi rend="italic">D&#x00F8;de</hi> Skin af <hi rend="italic">Liv,</hi> og
+                    B&#x00F8;gerne Skin af al den Dyd, &#x00C6;delmodighed og Varme, Man fattes, saa,
+                    kan ogsaa vi skrive B&#x00F8;ger, der synes levende, da er det ingenlunde i <hi rend="italic">Livets</hi> men i <hi rend="italic">D&#x00F8;dens Skole</hi> vi
+                    har l&#x00E6;rt den <seg n="com43" type="com">sorte Konst</seg>, Man vel i vore Dage kan v&#x00E6;re kommet uskyldig til,
+                    men maa da vel, langt bedre end hidindtil jeg, vogte sig for at misbruge.</p>
+                <p rend="firstIndent">
+<pb n="70" ed="Gskv" type="edition" />Hvor urimeligt det derfor end maatte synes eller v&#x00E6;re,
+                    vil jeg foruds&#x00E6;tte, at endeel <hi rend="italic">Nordm&#x00E6;nd</hi> er
+                    aldeles enige med mig baade om, at der b&#x00F8;r oprettes en <hi rend="italic">
+<seg type="com" n="com35">folkelig</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>
+</hi> og at Denne, for at svare til sit Navn og sin
+                    Hensigt, ei maa hvile paa <hi rend="italic">B&#x00F8;ger</hi> eller noget <hi rend="italic">D&#x00F8;dt,</hi> da <hi rend="italic">Folket</hi> hverken er <hi rend="italic">B&#x00F8;ger</hi> i Skindbind eller en <hi rend="italic">mathematisk
+                        St&#x00F8;rrelse</hi> og et <hi rend="italic">d&#x00F8;dt Begreb,</hi> men et
+                    stort, <hi rend="italic">
+<seg n="com86" type="com">Borgerligt Selskab</seg>
+</hi> af levende Mennesker, der
+                    tr&#x00E6;nge til en fri og levende Vexel-Virkning, under Veiledning af de bedst
+                    Erfarne, baade for at opdage og bestandig blive sig det klarere <pb n="192" ed="VU" type="edition" />bevidste, <hi rend="italic">hvad</hi> der virkelig for <hi rend="italic">Nordm&#x00E6;nd</hi> er <hi rend="italic">f&#x00E6;lles Bedste,</hi> og da
+                    tillige for at &#x00F8;ve sig i Moders-Maalet, som det naturlige, levende Udtryk
+                    for deres Tanker og F&#x00F8;lelser, saa de efterhaanden maae blive det i alle
+                    Henseender omtrent lige saa m&#x00E6;gtige, som de nu kun er det til Hverdags-Brug
+                    i den snevreste Kreds. Ja, jeg maa <pb n="12" ed="A" type="text" facs="1837_580_fax020.jpg" />her foruds&#x00E6;tte, at en
+                    god Deel Nordm&#x00E6;nd klarlig indseer, der beh&#x00F8;ves en saadan <hi rend="italic">Norsk <seg type="com" n="com1">H&#x00F8;iskole</seg>,</hi> da en Saadan ligesaa lidt findes i
+                        <hi rend="italic">
+<placeName key="fak42">Christiania</placeName>
+</hi> som i <hi rend="italic">
+<placeName key="fak8">Ki&#x00F8;benhavn</placeName>
+</hi> eller <hi rend="italic">
+<placeName key="fak193">Berlin</placeName>,</hi> men alle <hi rend="italic">
+<placeName key="fak12">Europas</placeName> <seg n="com1" type="com">H&#x00F8;iskoler</seg>
+</hi> er meer eller mindre <hi rend="italic">Latinske</hi> og aldeles <hi rend="italic">Romerske,</hi>
+                    fiendtlige mod alle <hi rend="italic">Folke-Naturer,</hi> som lutter <hi rend="italic">Barbariske</hi> Levninger fra Middel-Alderen, der, snarest
+                    mueligt, skal udryddes ved &#x201C;Classisk Dannelse.&#x201D; Kun under denne
+                    Foruds&#x00E6;tning nytter det at skrive til Nordm&#x00E6;nd om en <hi rend="italic">
+<seg type="com" n="com35">Folkelig</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> og kan v&#x00E6;re mueligt med <hi rend="italic">Pennen</hi> at bortrydde de Hindringer, der rimeligviis is&#x00E6;r have
+                    forsinket Oprettelsen og true endnu med at kv&#x00E6;le det <seg type="com" n="com35">folkelige</seg>
+                    Storv&#x00E6;rk i F&#x00F8;dselen.</p>
+                <p rend="firstIndent">Blandt alle de utallige Hindringer for Oprettelsen af <hi rend="italic">
+<seg n="com35" type="com">Folkelige</seg> <seg type="com" n="com1">H&#x00F8;iskoler</seg>,</hi> som svare til Navnet, er vist
+                    ingen st&#x00F8;rre eller vanskeligere at overvinde, end den <hi rend="italic">Indbildning,</hi> at en saadan <seg type="com" n="com44">H&#x00F8;iskole, <hi rend="italic">ligesom</hi> den <hi rend="italic">Latinske,</hi> maatte have endeel <hi rend="italic">Drenge-Skoler</hi> under sig, hvor de Smaa ved Erhvervelsen af
+                    allehaande <hi rend="italic">reelle</hi> Kundskaber, saasom Mathematik, Physik,
+                    fremmede Sprog o. s. v. forberedtes til en h&#x00F8;iere
+                    Dannelse</seg>. Jeg kalder denne <hi rend="italic">Indbildning</hi> en af de
+                    st&#x00F8;rste Hindringer, ei blot fordi H&#x00F8;jskolens Oprettelse derved
+                    n&#x00F8;dvendig gaaer i Langdrag, <pb n="71" ed="Gskv" type="edition" />men is&#x00E6;r fordi den truer med at undergrave
+                    hvad den har Skin af at ville grundig forberede.</p>
+                <p rend="firstIndent">I mine &#x00D8;ine er nu <seg n="com8" type="com">vist
+                        nok</seg> denne <hi rend="italic">Indbildning</hi> saa grundl&#x00F8;s og
+                    stridende mod Erfaring og sund For<pb n="13" ed="A" type="text" facs="1837_580_fax021.jpg" />nuft, at selv de <hi rend="italic">Latinske <seg n="com1" type="com">H&#x00F8;iskoler</seg>
+</hi> har blomstret langt
+                    anderledes i <hi rend="italic">
+<placeName key="fak5">England</placeName>
+</hi> og
+                        <hi rend="italic">
+<placeName key="fak21">Tydskland</placeName>,</hi> hvor
+                    Man lod det blive Enhvers egen eller deres For&#x00E6;ldres og V&#x00E6;rgers Sag,
+                    hvorvidt de var modne til H&#x00F8;iskolen, end hos os, hvor Man vilde kaldt baade
+                        <hi rend="italic">
+<persName key="pe622">Plato</persName>
+</hi> og <hi rend="italic">
+<persName key="pe623">Aristoteles</persName> umodne,</hi>
+                    fordi de <hi rend="italic">ikke</hi> kunde skrive <hi rend="italic">
+<seg type="com" n="com45">Latinsk Stil</seg>;</hi> men hvad Pennen kan
+                    gi&#x00F8;re til at oplyse det for dem af <hi rend="italic">Folke-Livets
+                        Venner,</hi> Latinerne kan have forblindet, maa jeg dog ikke undlade.</p>
+                <p rend="firstIndent">Uagtet derfor <hi rend="italic">Drenge-Skolen</hi> i det Hele,
+                    som vi kiende den, er en <hi rend="italic">Uting,</hi> <hi rend="italic">
+<seg n="com46" type="com">Byzantiner</seg>
+</hi> og <hi rend="italic">Latiner</hi> have f&#x00F8;rt os paa
+                    Halsen, vil vi, for en Sikkerheds Skyld, her lade det staae ved sit V&#x00E6;rd,
+                    om en Saadan, som <hi rend="italic">Latinerne</hi> paastaae, er aldeles eller
+                    dog n&#x00E6;sten uundv&#x00E6;rlig for tilkommende <hi rend="italic">Videnskabs-M&#x00E6;nd</hi> eller ikke, ja, for L&#x00F8;iers Skyld, kan vi
+                    endog lade, som om vi ei turde afgi&#x00F8;re, enten Indsp&#x00E6;rringen i et
+                    saadant <pb n="193" ed="VU" type="edition" />
+<seg type="com" n="com47">B&#x00F8;rne-Huus</seg> paa saa smal en Kost som Bl&#x00E6;k og Papir, skulde
+                    v&#x00E6;re uundv&#x00E6;rlig eller dog saare tjenlig for tilkommende <hi rend="italic">Pr&#x00E6;ster,</hi> Amtm&#x00E6;nd, Fogeder og andre <hi rend="italic">Embeds-M&#x00E6;nd;</hi> thi her, hvor Talen kun er om en <hi rend="italic">
+<seg n="com35" type="com">Folkelig</seg> Dannelse,</hi> en Dannelse altsaa, hvori <hi rend="italic">hele Folket,</hi> til Livets Gavn og Landets Tarv, kan og
+                    saavidt mueligt, b&#x00F8;r deeltage, her er det jo slet ikke Sp&#x00F8;rgsmaalet,
+                    hvad der kan v&#x00E6;re tjenligt enten for <hi rend="italic">Videnskabs-M&#x00E6;nd</hi>
+                    eller for <hi rend="italic">Embeds-M&#x00E6;nd,</hi> men netop for dem, der <hi rend="italic">ingen af Delene</hi> skal v&#x00E6;re. Naar Man nemlig indretter
+                    hvad Man kalder <hi rend="italic">Almeen-Op<pb n="14" ed="A" type="text" facs="1837_580_fax022.jpg" />lysning,</hi> som
+                    om <hi rend="italic">hele Folket</hi> skulde enten v&#x00E6;re
+                    Videnskabs-M&#x00E6;nd, Embeds-M&#x00E6;nd eller <seg n="com67" type="com">Almisse-Lemmer</seg>, da glemmer Man,
+                    blandt meget Andet, at hvis det lykkedes, da maatte hele Folket sulte ihjel,
+                    hvis ikke et andet Folk var &#x00E6;delmodigt nok til at give dem et &#x201C;<hi rend="italic">
+<seg type="com" n="com18">vist Levebr&#x00F8;d</seg>
+</hi>&#x201D; for deres <hi rend="italic">Dannelse</hi> eller dog for deres m&#x00F8;isommelige <hi rend="italic">Skole-Gang</hi> og glimrende <hi rend="italic">Examen.</hi> Saal&#x00E6;nge
+                    vi derfor &#x00F8;nske, at M&#x00E6;ngden af Folket ikke blot skal have baade Kraft
+                    og Lyst til at ern&#x00E6;re sig selv, men ogsaa <pb n="72" ed="Gskv" type="edition" />Raad og Villie til at underholde
+                    nogle faa Videnskabs-M&#x00E6;nd og endeel Embeds-M&#x00E6;nd, da maae vi enten, som
+                    de <hi rend="italic">Papistiske Pr&#x00E6;ster</hi> og de <hi rend="italic">Protestantiske
+                        Herrem&#x00E6;nd,</hi> &#x00F8;nske <hi rend="italic">Borger</hi> og <hi rend="italic">Bonde</hi> frie for al muelig Dannelse og Oplysning, eller vi
+                    maae &#x00F8;nske dem en Dannelse og Oplysning, der gi&#x00F8;r dem dueligere til
+                    deres Dont og lykkeligere i deres Stilling, eller vi er splittergale, og
+                    &#x00F8;nske at gi&#x00F8;re baade dem og os selv ulykkelige, til &#x00C6;re for et
+                        <hi rend="italic">tomt Hjerne-Spind,</hi> vi kalde Oplysning og
+                    Dannelse.</p>
+                <p rend="firstIndent">Nu t&#x00F8;r jeg <seg type="com" n="com8">vist nok</seg> mene, at for enhver <hi rend="italic">Livs-Stilling</hi> under Solen, undtagen Lediggi&#x00E6;ngerens,
+                    Tr&#x00E6;llens, Tyvens og deslige, er <hi rend="italic">Drenge-Skolen,</hi> hvor
+                    Man l&#x00F8;srevet fra Naturen, det huuslige og virksomme Liv, h&#x00E6;nger over
+                    B&#x00F8;ger og Regne-Br&#x00E6;tter fra Morgen til Aften, en reen <hi rend="italic">Pestilens,</hi> ja, selv for <hi rend="italic">Livs-Stillingen</hi> i et
+                    Bog-Skab med Glas-D&#x00F8;rre og med Pennen i Haanden, en Stilling, jeg af
+                    <hi rend="italic">tredive</hi> Aars Erfaring kiender saa godt som Nogen af <pb n="15" ed="A" type="text" facs="1837_580_fax023.jpg" />alle mine
+                    Samtidige, selv for denne <hi rend="italic">boglige Livs-Stilling</hi> er
+                    Drenge-Skolen en Pestilens; men s&#x00E6;t engang, jeg heri tog <seg n="com72" type="com">m&#x00E6;rkelig</seg>
+                    feil, saa kan det dog umuelig feile, den er det for <hi rend="italic">Bondens</hi> og <hi rend="italic">S&#x00F8;mandens, Haandv&#x00E6;rkerens</hi>
+                    og enhver Anden, der aabenbar ei kan v&#x00E6;re gavnlig og findes lykkelig, uden
+                    legemlig Arbeidsomhed, <seg n="com80" type="com">Raskhed</seg> og Livlighed, Ki&#x00E6;rlighed til Donten og Greb
+                    paa den, saavidt muelig, fra Barns-Been, lutter Ting for hvilke <hi rend="italic">Drenge-Skolen</hi> if&#x00F8;lge sin Natur og efter al Erfaring
+                    er en reen Pestilens.</p>
+                <p rend="firstIndent">&#x00D8;nske vi altsaa en <hi rend="italic">
+<seg n="com35" type="com">Folkelig</seg>
+                        <seg type="com" n="com1">H&#x00F8;iskole</seg>,</hi> hvor Alt, paa en s&#x00F8;mmelig Maade, gaaer <hi rend="italic">frit</hi> og <hi rend="italic">levende</hi> til, saa
+                    Folke-Ungdommen veiledes til at <pb n="194" ed="VU" type="edition" />kiende, skatte og paa det Fordeelagtigste til
+                    &#x201C;<hi rend="italic">f&#x00E6;lles Bedste</hi>&#x201D; benytte sine Kr&#x00E6;fter, sin
+                    Stilling, sit Moders-Maal, og, i det Hele, den indvortes og udvortes givne
+                    <hi rend="italic">Natur,</hi> hvorom Alt levende maa dreie sig, da kan vi rolig overlade <hi rend="italic">Drenge-Skolen</hi> til sin egen Sk&#x00E6;bne, og kan v&#x00E6;re
+                    visse paa at finde Ungdommen aabnere, kraftigere og danneligere i en naturlig og
+                    levende Retning, altsaa <hi rend="italic">haabefuldere,</hi> jo mindre den har
+                    havt med Drenge-Skolen at skaffe, og jo gladere den under <pb n="73" ed="Gskv" type="edition" />en nyttig men let
+                    Virksomhed er voxet op til fuld Besiddelse af sine Sj&#x00E6;ls og Legems
+                    Kr&#x00E6;fter.</p>
+                <p rend="firstIndent">Er Man nu enig med mig om, at hverken er det noget Folk
+                    tjenligt at lade <hi rend="italic">dem</hi> t&#x00E6;nke, tale og d&#x00F8;mme i sit Sted, hvis
+                    ki&#x00E6;reste F&#x00E6;derneland er den Classiske Jordbund, hvis M&#x00F8;nster paa en
+                    fuldkommen Lov er den <pb n="16" ed="A" type="text" facs="1837_580_fax024.jpg" />menneskefiendske, tyranniske <seg n="com48" type="com">Romer-Ret</seg>,
+                    og hvis Yndlings-Sprog er Moders-Maalets arrigste Fiende, <hi rend="italic">Latinen,</hi> ikke heller beh&#x00F8;ver Man at s&#x00F8;rge men kun, saavidt
+                    mueligt, at vogte sig for <hi rend="italic">Drenge-Skolen;</hi> da veed jeg
+                    ikke, hvad der skulde v&#x00E6;re iveien for en <hi rend="italic">
+<seg type="com" n="com35">Folkelig</seg>-<seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> hvor Man har Mod til at Smile ad <hi rend="italic">Latinernes</hi> Graad over det <hi rend="italic">Barbari,</hi>
+                    der vil f&#x00F8;lge paa S&#x00F8;nderbrydelsen ad det <hi rend="italic">Romerske</hi> Aag, og Vid til at vurdere deres latterlige Paastand, at Man
+                    bliver st&#x00E6;rkest i <hi rend="italic">Moders-Maalet</hi> ved at slide i den
+                    Latinske Grammatik fra Barns-Been, mest <hi rend="italic">frisindet</hi> ved at
+                    <hi rend="italic">tr&#x00E6;lle</hi> for <hi rend="italic">Romerne,</hi> og dygtigst til at
+                    bet&#x00E6;nke <hi rend="italic">
+<placeName key="fak41">Norges</placeName> Vel,</hi> ved at glemme hele Verden over
+                    B&#x00F8;gerne og sin egen lille Person.</p>
+                <p rend="firstIndent">Skulde imidlertid, under saa gunstige Omst&#x00E6;ndigheder, som
+                    jeg maa t&#x00E6;nke mig, for ei at kaste Pennen, <hi rend="italic">
+<seg type="com" n="com1">H&#x00F8;iskolens</seg> Oprettelse</hi> endda forsinkes, maatte det vel enten
+                    v&#x00E6;re, fordi Man <seg n="com64" type="com">endelig</seg> <seg n="com49" type="com">vilde have den oprettet paa <hi rend="italic">offenlig Bekostning</hi>
+</seg> eller fordi Man gjorde sig Skrupler over en <hi rend="italic">fri, <seg type="com" n="com35">folkelig</seg> Oplysnings</hi> muelige F&#x00F8;lger enten for
+                        <hi rend="italic">Salighedens</hi> eller den <hi rend="italic">grundige
+                        L&#x00E6;rdoms</hi> Sag, og ski&#x00F8;ndt det vilde v&#x00E6;re aldeles umueligt
+                    med Pennen at bortrydde disse Hindringer, hvor de i h&#x00F8;i Grad fandt Sted,
+                    kunde maaskee dog en lille Oplysning bidrage dertil, hvor de kun synes store,
+                    fordi Man ikke r&#x00F8;rer ved dem.</p>
+                <p rend="firstIndent">
+<seg type="com" n="com83">Hernede</seg>, hvor Man virkelig synes at t&#x00E6;nke sig den
+                    fuldkomne Stat, som en offenlig Indretning til, uden <pb n="17" ed="A" type="text" facs="1837_580_fax025.jpg" />videre
+                    Uleilighed, at skaffe os Allesammen <seg type="com" n="com50">Mad og Drikke, Kl&#x00E6;der, Sko, visse
+                    V&#x00E6;relser, en god Hustru, lydige B&#x00F8;rn, sund Luft, almindelig Fred og
+                    Alt hvad Ens Hjerte kan forlange</seg>, her nytter det aldrig at tale, end sige da at
+                    skrive om en <hi rend="italic">
+<seg type="com" n="com35">folkelig</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> som Folket kunde
+                    skaffe sig selv, thi bliver den os ikke <hi rend="italic">ski&#x00E6;nket og
+                        givet,</hi> da reiste vi vist snarere al Verden rundt for at finde <pb n="195" ed="VU" type="edition" />
+<pb n="74" ed="Gskv" type="edition" />end vi
+                    r&#x00F8;rde os af Stedet for at reise den, men saa raadvilde, formoder jeg, Man
+                    er ikke i <placeName key="fak41">Norge</placeName>, saa, overlod Man det der til Staten, kom det vel mest af, at
+                    Sagen syndes let at s&#x00E6;tte igjennem ved <hi rend="italic">
+<seg n="com51" type="com">Storthinget</seg>,</hi>
+                    og <hi rend="italic">
+<seg n="com1" type="com">H&#x00F8;iskolen</seg>
+</hi> bedst at svare til sin Hensigt, naar
+                    Den, oprettet paa offenlig Bekostning, kunde, uden videre Betaling, staae hele
+                    Folket aaben. <seg type="com" n="com76">Skinnet kunde imidlertid ogsaa her lettelig bedrage</seg>, saa det er
+                    raadeligt for Vennerne ad <seg type="com" n="com35">folkelig</seg> Dannelse, slet ikke at troe det, thi om Sagen
+                    end ved Omveien blot forsinkedes en <hi rend="italic">halvsnees</hi> Aar, var
+                    det maaskee til ubodelig Skade, og det var dog hverken den eneste eller
+                    st&#x00F8;rste Fare, en hele Folket magtpaaliggende Sag derved udsattes for. Jeg
+                    har <seg n="com8" type="com">vist nok</seg> kun en meget dunkel Forestilling om <seg type="com" n="com52">Sammens&#x00E6;tningen af det <hi rend="italic">Norske Storthing,</hi>
+</seg> og vil gierne t&#x00E6;nke mig det saa
+                        <hi rend="italic">
+<seg type="com" n="com35">folkeligt</seg>,</hi> som jeg kan, men havde Det indseet <hi rend="italic">Uundv&#x00E6;rligheden</hi> af en <hi rend="italic">
+<seg type="com" n="com35">folkelig</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> vilde
+                    Det upaatvivlelig for l&#x00E6;nge siden foreslaaet Dens Oprettelse, saa jeg
+                    n&#x00F8;des til at slutte, hvad ogsaa er h&#x00F8;ist rimeligt, at den <hi rend="italic">
+<seg type="com" n="com35">folkelige</seg> Dannelses</hi> afgjorte Velyndere <hi rend="italic">der</hi> <pb n="18" ed="A" type="text" facs="1837_580_fax026.jpg" />hidtil have fundet sig enten for faa eller for lidet udrustede til
+                    seierrig at bestaae Kampen, der neppe kunde blive let, hvor det lykkedes den <hi rend="italic">Latinske Dannelse</hi> giennem <seg n="com53" type="com">tre Aarhundreder</seg> ei blot at
+                    fordunkle men at undertrykke og n&#x00E6;sten udrydde enhver Anden. I alt Fald maa
+                    Man bet&#x00E6;nke, at alle Indvendingerne mod en <hi rend="italic">
+<seg type="com" n="com35">folkelig</seg>
+                        Dannelse,</hi> baade naar man skildrer den som aldeles ubetydelig og naar
+                    man sv&#x00E6;rter den som et frygteligt Barbari, kun lade sig grundig giendrive
+                    ved <hi rend="italic">virkelig</hi> at fremme den, og lade den Selv berolige
+                    sine <seg type="com" n="com65">mist&#x00E6;nkelige</seg> Venner og beski&#x00E6;mme sine arrige Fiender. Dens
+                    afgjorte Velyndere skulde derfor ikke n&#x00F8;le noget &#x00D8;ieblik med Fors&#x00F8;get
+                    paa, ved frivilligt <hi rend="italic">Sammenskud paa Actier,</hi> at faae gjort
+                    en Begyndelse; thi fulgde end deraf, at Alt for det F&#x00F8;rste maatte indrettes
+                    efter en mindre Maalestok og at Andre end de, Actierne gav Ret, kun for en
+                    passende Betaling kunde aabnes Adgang til den <hi rend="italic">Norske
+                        <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> ligesom til <seg type="com" n="com54">det <hi rend="italic">Londonske
+                        Universitet,</hi>
+</seg> saa var derved dog ei blot vundet Tid, men det f&#x00F8;rste
+                    Skridt, som er det <pb n="75" ed="Gskv" type="edition" />Eneste, der koster, vilde snart drage flere efter sig, og <hi rend="italic">Grund-Pr&#x00E6;get,</hi> hvorpaa her egenlig Alt kommer an,
+                    vilde v&#x00E6;re <hi rend="italic">H&#x00F8;iskolen</hi> givet af den <hi rend="italic">fri Folke-Virksomhed,</hi> der altid skal v&#x00E6;re dens levende
+                    Grundvold og oph&#x00F8;iede Maal.</p>
+                <p rend="firstIndent">Det maa imidlertid ikke glemmes, at netop, naar den <hi rend="italic">
+<seg type="com" n="com35">folkelige</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>
+</hi> skal v&#x00E6;re et privat
+                    Foretagende, der kun med lidt Opoffrelse eller dog med lidt For<pb n="19" ed="A" type="text" facs="1837_580_fax027.jpg" />skud kan fremmes, da kan selv de, der rolig vilde see en saadan oprettet paa
+                    offenlig Bekostning, fristes til at gi&#x00F8;re sig <pb n="196" ed="VU" type="edition" />Skrupler over de muelige
+                    F&#x00F8;lger en fri, <seg type="com" n="com35">folkelig</seg> Oplysning og Dannelse kunde have enten for Tro og
+                    Gudsfrygt eller for grundig L&#x00E6;rdom og Videnskabelighed; thi vi er Alle fra
+                    Barns-Been vant til at h&#x00F8;re af de Fromme, at <seg n="com55" type="com">Menneske-Naturen er aldeles
+                    ford&#x00E6;rvet</seg>, saa den maa ikke f&#x00F8;lges, men skal undertrykkes, og at h&#x00F8;re
+                    af de L&#x00E6;rde, at med <hi rend="italic">Latin-Skolen</hi> staaer og falder al grundig L&#x00E6;rdom og
+                    &#x00E6;gte Videnskabelighed.</p>
+                <p rend="firstIndent">Uden nu at ville r&#x00F8;re ved disse Skrupler, hvor de virkelig har
+                    faaet Indpas, foruds&#x00E6;tter jeg, En af dem kunde friste <hi rend="italic">Nordm&#x00E6;nd,</hi> der ellers ikke synderlig &#x00E6;ndsede dem, til at skye
+                    den Anstr&#x00E6;ngelse, det f&#x00F8;rste Skridt paa den ny L&#x00F8;be-Bane sagtens
+                    vilde koste, og vil da bem&#x00E6;rke, at naar Man veed, det ligger <hi rend="italic">ingenlunde i den <seg type="com" n="com35">folkelige</seg> Dannelses Natur</hi> enten at
+                    gi&#x00F8;re Folk vantroe og ugudelige eller at f&#x00F8;de Ringeagt for grundig
+                    L&#x00E6;rdom og &#x00E6;gte Videnskabelighed, da maa Man aabenbar slet ikke bryde
+                    sig om de <hi rend="italic">muelige F&#x00F8;lger</hi> hos En og Anden, men
+                    sp&#x00F8;rge sig selv og hvem der ellers i dette Stykke vil have &#x201C;<hi rend="italic">alle muelige Misbrug forebyggede</hi>&#x201D; om det vilde v&#x00E6;re
+                    v&#x00E6;rre, at maaskee Endeel forlod den <hi rend="italic">
+<seg type="com" n="com35">Folkelige</seg>
+                        <seg n="com1" type="com">H&#x00F8;iskole</seg>
+</hi> med meget for ringe Tanker om vor Herre og meget for
+                    store om sig selv, eller med dyb Foragt for al den Kundskab, der ei svarer
+                    Renter i det daglige Liv, om det vilde v&#x00E6;re s&#x00F8;rgeligere, end at
+                    saadanne Folk i Hun<pb n="20" ed="A" type="text" facs="1837_580_fax028.jpg" />drede- og Tusind-Viis er udgaaet fra den
+                        <hi rend="italic">Latinske H&#x00F8;iskole,</hi> opbl&#x00E6;ste ei engang af
+                    deres Natur men af deres Unatur, og slet ikke bange for at sige, at naar de ikke
+                    betimelig fik et &#x201C;<hi rend="italic">
+<seg type="com" n="com18">vist Leve-Br&#x00F8;d</seg>
+</hi>&#x201D; for deres
+                    Skolegang og Examen, &#x00F8;n<pb n="76" ed="Gskv" type="edition" />skede de alle deres Kundskaber Pokker i Vold og
+                    havde skammelig spildt deres Ungdoms-Aar. Er nemlig det Sidste en <hi rend="italic">Misbrug,</hi>
+                    Vedkommende selv har v&#x00E6;rst af, og for hvis Skyld det var Galenskab at laste
+                    Brugen, saa gi&#x00E6;lder det Samme dog vel ogsaa om det F&#x00F8;rste, og
+                    gi&#x00E6;lder tidobbelt derom, da der i enhver levende og naturlig Udvikling dog
+                    er <hi rend="italic">timelig Sandhed</hi> og Gavnlighed, medens i den Latinske
+                    Dannelse Alt er <hi rend="italic">Bl&#x00E6;ndv&#x00E6;rk</hi> og <hi rend="italic">Unatur,</hi> saa de slette F&#x00F8;lger af den er n&#x00E6;sten uundgaaelige.
+                    Enten maa Man da ford&#x00F8;mme al <hi rend="italic">Dannelse</hi> og <hi rend="italic">Oplysning,</hi> fordi den <hi rend="italic">muelig</hi> kan
+                        <hi rend="italic">misbruges,</hi> og det er at gi&#x00F8;re <seg n="com56" type="com">som <hi rend="italic">Pharao</hi> ved de israelitiske Drenge-B&#x00F8;rn, han lod
+                    drukne</seg>, eller Man maa tilstaae, at den <hi rend="italic">
+<seg type="com" n="com35">folkelige</seg>
+                    Dannelse,</hi> der gi&#x00F8;r os fortroelige med det virkelige Liv og saavel med
+                    vor Naturs Mangler og Br&#x00F8;st, som med Dens Kr&#x00E6;fter og Fortrin, er
+                    aldeles uskyldig i hvad Misbrug Den, ligesom <hi rend="italic">Livet</hi> og <hi rend="italic">Lyset</hi> i det Hele, med N&#x00F8;dvendighed er udsat for.</p>
+                <p rend="firstIndent">
+<hi rend="italic">For Resten</hi> er det min velgrundede
+                    Overbeviisning, at &#x00E6;gte <hi rend="italic">Gudsfrygt</hi> og <hi rend="italic">Videnskabelighed</hi> trives bedst, hvor Folk har Lov til
+                    baade <hi rend="italic">at troe og <pb n="197" ed="VU" type="edition" />at l&#x00E6;re,</hi> hvad de vil, og at skulde
+                    den Tid nogensinde komme, da <hi rend="italic">
+<placeName key="fak24">Nordens</placeName> Folk</hi> i det Hele
+                    enten vilde <pb n="21" ed="A" type="text" facs="1837_580_fax029.jpg" />trodse Himlen eller landsforvise L&#x00E6;rdom, da
+                    maatte det v&#x00E6;re af Harme over den <hi rend="italic">Samvittigheds-Tvang</hi> og <hi rend="italic">Undertrykkelse</hi> af alt
+                        <hi rend="italic">Naturligt</hi> og <hi rend="italic">Folkeligt,</hi> der
+                    med N&#x00F8;dvendighed udspringer af <hi rend="italic">Romersk</hi> Tankegang og
+                        <hi rend="italic">Latinsk</hi> Dannelse. Faae derimod kun Rigerne i <placeName key="fak24">Norden</placeName>
+                    hver sin <hi rend="italic">
+<seg type="com" n="com35">folkelige</seg> <seg n="com1" type="com">H&#x00F8;iskole</seg>,</hi> hvor Natur-Livet
+                    styrkes, for&#x00E6;dles og klares, da vil den <hi rend="italic">kirkelige</hi> og
+                        <hi rend="italic">videnskabelige</hi> Frihed, som deraf n&#x00F8;dvendig maa
+                    udspringe, baade for Religi&#x00F8;sitet og Videnskabelighed b&#x00E6;re de mest
+                    velsignede Frugter; thi hvad enten vi raadsp&#x00F8;rge <seg n="com57" type="com">F&#x00E6;drenes <hi rend="italic">&#x201C;st&#x00E6;rke
+                    Dr&#x00F8;mme&#x201D;</hi>
+</seg> om det Guddommelige i Hedenold, eller deres <hi rend="italic">Kraft-Yttringer</hi> i Daad og Sang og Skrift, f&#x00F8;r <hi rend="italic">Latin</hi> og <hi rend="italic">Romerskhed</hi> forknyttede og forkvaklede
+                    dem, da l&#x00E6;re vi, at ingensteds var der af Naturen dybere F&#x00F8;lelse for
+                    det vidunderlige Sl&#x00E6;gtskab mellem Himmel og Jord, eller inderligere Lyst
+                    til at see hele det store, vidunderlige Menneske-Liv efterhaanden udvikle og
+                    <seg type="com" n="com42">forklare</seg> <pb n="77" ed="Gskv" type="edition" />sig selv. Ret mange Skridt vilde den <seg type="com" n="com35">folkelige</seg> Dannelse da vist ikke
+                    gi&#x00F8;re, f&#x00F8;r det blev <placeName key="fak24">Nordens</placeName> Lyst at reise <seg n="com58" type="com">en stor <hi rend="italic">videnskabelig H&#x00F8;iskole,</hi>
+</seg> <seg type="com" n="com8">vist nok</seg> ikke for <hi rend="italic">Latineri</hi> og <hi rend="italic">Romer-Ret,</hi> men for <hi rend="italic">Menneske-Livets</hi> Udvikling og Forklaring i hele Dets
+                    gaadefulde Dybde og herlige Mangfoldighed, altsaa et <hi rend="italic">Universitet</hi> (en altomfattende Granskning) der ikke er et Romersk
+                    Praleri, men virkelig svarer til sit Navn og l&#x00E6;rer Verden at kiende en <hi rend="italic">Nordisk Videnskabelighed,</hi> der overgaaer den <hi rend="italic">Romerske</hi> ligesaameget som <placeName key="fak24">Nordens</placeName> K&#x00E6;mper overgik <pb n="22" ed="A" type="text" facs="1837_580_fax030.jpg" />Roms forki&#x00E6;lede, udmarvede, kun <seg type="com" n="com87">Snue</seg> og tr&#x00E6;dske
+                    Dv&#x00E6;rge. Denne min Betragtning af <placeName key="fak24">Norden</placeName>, som fra Arildstid forberedt til
+                    &#x00E6;gte, grundig, altomfattende L&#x00E6;rdoms og <seg n="com88" type="com">Vidskabs</seg> S&#x00E6;de, h&#x00F8;rer vel
+                    egenlig ikke hid, da &#x00E6;gte og grundig Videnskabelighed, ski&#x00F8;ndt det er
+                    Folkenes &#x00C6;re og Gavn at agte og <seg type="com" n="com68">forstre</seg> den, dog altid bliver kun <hi rend="italic">Enkeltes Hoved-Sag,</hi> men tjener det ikke til Andet, kan
+                    det dog minde om, hvorlangt det er fra mine Tanker, hvad Man, trods mit boglige
+                    og videnskabelige Levnetsl&#x00F8;b, har villet paabyrde mig, som om jeg
+                    &#x00F8;nskede enten <hi rend="italic">Latinen</hi> eller Noget, Godt eller Ondt,
+                    som har virket kiendelig og <seg type="com" n="com72">m&#x00E6;rkelig</seg> paa Jorden neds&#x00E6;nket i Glemsel.
+                    Hvad jeg vil er netop, at <hi rend="italic">Alt</hi> skal komme <hi rend="italic">for Lyset,</hi> og jeg bek&#x00E6;mper derfor den <hi rend="italic">Latinske Dannelse</hi> i sin n&#x00E6;rv&#x00E6;rende
+                    Udstr&#x00E6;kning og Eneraadighed, kun fordi den udbreder et s&#x00F8;rgeligt M&#x00F8;rke
+                    over hele den menneskelige Tilv&#x00E6;relse, har, som den selv bekiender, gjort <seg type="com" n="com59">&#x201C;<hi rend="italic">Pagt med D&#x00F8;den</hi>&#x201D;</seg> ei at lade <hi rend="italic">Livet</hi> komme for <hi rend="italic">Lyset,</hi> hvortil Det dog ligesaa
+                    un&#x00E6;gtelig har Ret, som ethvert dristigt Fors&#x00F8;g vil vise, Det har <hi rend="italic">Kraft.</hi>
+                    Hvem der, naar han er kommet til Skiels-Aar og Alder, frivillig fore<pb n="198" ed="VU" type="edition" />tr&#x00E6;kker
+                    Pennen for Munden, B&#x00F8;gerne for Mennesket, de d&#x00F8;de Sprog for de
+                    Levende, Latinen for Moders-Maalet, den Romerske Konst for den Nordiske Natur,
+                    kort sagt: foretr&#x00E6;kker <hi rend="italic">D&#x00F8;den for Livet,</hi> b&#x00F8;r visselig
+                    have Lov dertil, og det var Synd at misunde dem den Dannelse og Oplysning, som
+                    enten f&#x00F8;rde til dette Valg eller udsprang deraf; men da det <pb n="23" ed="A" type="text" facs="1837_580_fax031.jpg" />er soleklart, at <seg type="com" n="com69">Landet maatte &#x00F8;des og Folket forgaae</seg>, naar de,
+                    der umuelig kan gi&#x00F8;re samme Valg, skulde op<pb n="78" ed="Gskv" type="edition" />lyses og dannes derefter, saa er
+                    det hver Folke-Vens hellige Pligt, som seer Grunden til den n&#x00E6;rv&#x00E6;rende
+                    N&#x00F8;d og truende Ford&#x00E6;rvelse, at tale en <hi rend="italic">
+<seg type="com" n="com35">folkelig</seg>
+                        Oplysnings Sag,</hi> der n&#x00F8;dvendig er lige det Modsatte af den <hi rend="italic">Romersk-Latinske,</hi> og om saa end alt Haab om videnskabelig
+                    Glands derved afsk&#x00E6;res for <placeName key="fak24">Norden</placeName>, gjorde det dog ei mindste Forandring,
+                    thi naar Folket d&#x00F8;er, synker Glandsen jo i Graven, og har desuden den Latinske
+                    Videnskabelighed ingen Glands udbredt over <placeName key="fak24">Norden</placeName>, giennem de <seg n="com53" type="com">tre Aarhundreder</seg>
+                    Den var i sin Kraft, fordi der endnu var Folke-Kraft at fort&#x00E6;re, da vil den
+                    sikkert mindre herefter, da den aabenbar gaaer med sin <seg n="com60" type="com">Helsot</seg>, og ingen
+                    Sj&#x00E6;l meer vil l&#x00E6;dske den med sit Hjerte-Blod.</p>
+                <p rend="firstIndent">Dette v&#x00E6;re Slutningen, som et godt Varsel, og
+                    ski&#x00F8;ndt det ei kan undre mig, at n&#x00E6;sten Ingen af <hi rend="italic">Livets</hi> og det <hi rend="italic">
+<seg type="com" n="com35">Folkeliges</seg> Venner</hi> endnu kan dele
+                    mine lyse Forhaabninger om den d&#x00F8;de, unaturlige, aandsfort&#x00E6;rende
+                    L&#x00E6;rdoms Undergang, ved <hi rend="italic">Folke-Livets</hi> og en
+                    tilsvarende <hi rend="italic">Oplysnings</hi> og <hi rend="italic">
+<seg n="com88" type="com">Vidskabs</seg>
+</hi>
+                    Opblomstring i <placeName key="fak24">
+<hi rend="italic">Norden</hi>
+</placeName>, saa maa det dog v&#x00E6;re Alle, som dele mine
+                    &#x00D8;nsker, ki&#x00E6;rt at see, de blive ikke haabl&#x00F8;se, men sikkrere paa
+                    Opfyldelse hos mig, alt som jeg &#x00E6;ldes og mine Ungdoms-Dr&#x00F8;mme klare sig
+                    giennem Erfaringens og den koldsindige Eftertankes Ski&#x00E6;rsild. <seg type="com" n="com61">
+<hi rend="italic">Haabets Gudinde,</hi> sagde de fortvivlede <hi rend="italic">Romere,</hi> har, <pb n="24" ed="A" type="text" facs="1837_580_fax032.jpg" />ski&#x00F8;ndt sildig, ogsaa forladt Jorden</seg>, og det var intet
+                    Under, at vi, under <hi rend="italic">Romerskhedens</hi> Herred&#x00F8;mme, fristedes
+                    til at troe, de havde, desv&#x00E6;rre, deri kun alt for meget Ret, thi naar
+                    Folkene staae paa Randen af <seg n="com81" type="com">borgerlig</seg> Fortvivlelse, da er <seg n="com62" type="com">Haabets Dise med
+                    Fjeder-Hammen</seg> ogsaa if&#x00E6;rd med at bortflyve, men endnu sv&#x00E6;ver hun os
+                    dog aabenbar t&#x00E6;t over Issen, og saasnart en <hi rend="italic">
+<seg type="com" n="com35">Folkelig</seg>
+                        <seg n="com1" type="com">H&#x00F8;iskole</seg>
+</hi> aabner lyse Udsigter for alt <hi rend="italic">
+<seg n="com35" type="com">Folkeligt</seg>,</hi> da vil hun atter dale og fryde sig i sit Nordiske Tempel
+                    ved <hi rend="italic">Offrene</hi> til &#x201C;<hi rend="italic">f&#x00E6;lles Bedste</hi>&#x201D;, som baade H&#x00F8;ie
+                    og Lave, baade <seg type="com" n="com63">L&#x00E6;ge</seg> og L&#x00E6;rde, vil kappes om at bringe, saavist som
+                    <placeName key="fak41">Norges</placeName> Klipper ei er Bautastene over <placeName key="fak24">Nordens</placeName> Aand, men K&#x00E6;mpe-H&#x00F8;iene,
+                    hvorfra Han vil overskue Menneske-Livet og med fuldvoxne Vinger fare i Sky!</p>
+                <pb type="periText" facs="1837_580_fax033.jpg" />
+                <pb type="periText" facs="1837_580_fax034.jpg" />
+                <pb type="periText" facs="1837_580_fax035.jpg" />
+                <pb type="periText" facs="1837_580_fax036.jpg" />
+                <pb type="periText" facs="1837_580_fax037.jpg" />
+                <pb type="periText" facs="1837_580_fax038.jpg" />
+            </div>
+            
+            
+        </body>
+    
+</text>
+</TEI>

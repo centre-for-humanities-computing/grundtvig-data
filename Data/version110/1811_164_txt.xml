@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Farvel. (Til min Ven F. C. Sibbern)</title>
+      <title rend="shortForm">Farvel (Sibbern)</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Vibeke A. Pedersen</editor>
+      <editor role="student">Kirsten Vad</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.8</idno>
+               <idno type="technic">1.8.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>20 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2013-05-02">www.grundtvigsværker.dk, version 1.2, 2. maj 2013</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>K.L. Rahbek</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>2015-02-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1811_164_txt.xml" type="txt">Læsetekst</note>
+            <note target="1811_164_com.xml" type="com">Punktkommentar</note>
+            <note target="1811_164_intro.xml" type="intro">Indledning</note>
+            <note target="1811_164_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="164"><desc>Førstetrykket</desc><num>1811</num></witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS"><desc>Poetiske Skrifter</desc><num>1<!--VAP kontrollér --></num></witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+      <profileDesc>
+  <textClass>
+   <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+    <term>lyrik</term>
+    <term>lejlighedsdigte</term>
+   </classCode>
+   <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+    <term>kristendom</term>
+    <term>historie</term>
+    <term>filosofi</term>
+   </keywords>
+  </textClass>
+</profileDesc>
+
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+     <change who="VS" when="2014-07-30" xml:id="VS">indsætter sidetal og markere teksten hvor den er spatieret</change> 
+       <change who="VAP" when="2014-09-05" xml:id="VAP">rettelse i head og fjernelse af mæslinger i head og txt. Personopm. mm. er ikke udført, kun 000-markeret. Stadig fejl i alle pb. Opsætning kontrolleret</change> 
+        <change who="VAP" when="2014-09-08">kollationsrettelser (efter Vanja/Elses eksemplar) og emenderinger efter PS og egne fund (som i øvrigt også var rettet i PS). PS's emenderinger er nogle gange voldsomme og - måske  - diskutable. Andre giver sig selv, især af rimhensyn</change> 
+        <change who="VAP" when="2014-10-15">bibelstedsopmærkning</change>
+        <change who="VAP" when="2014-10-21">flere bibelstedsopmærkninger og kollationeringsrettelser</change>
+       <change xml:id="AP" who="AP" when="2012-12-12">seg-opm.</change>
+         <change xml:id="JT" who="JT" when="2014-12-15">comFIL</change>
+        <change who="VAP" when="2014-12-15">oprettet com62-63; slettet com11, 28. Indført rettelser efter Klaus' kollation (2. koll) af 25. november</change>
+        <change who="VAP" when="2014-12-23">oprettet com64-68. slettet 20, 23 (slået sm). Yderligere bibelhenvisning</change>
+        <change who="VAP" when="2015-01-14">oprettet com69-86. genoprettet 23 efter Steen. Yderligere bibelhenvisning</change>
+       <change who="VAP" when="2015-01-16">kontrolleret rettelser efter Steen. Oprettet com87</change>
+        <change who="VAP" when="2015-01-20">efterkontrolleret rettelser efter Steen. oprettet 88-89</change>
+     <change who="VAP" when="2015-01-27">Oprettet 90</change>
+        <change who="VAP" when="2015-02-03">ændret i emenderinger efter samtale med KN 30. jan</change>
+         <change who="VAP" when="2015-02-06">ændret i emenderinger efter udgavemøde. Oprettet com 91 og 92</change>
+        <change who="VAP" when="2015-03-06">Oprettet com 93, slettet com1 efter Klaus samt andre rettelser</change>
+        <change who="VAP" when="2015-03-09">rettelser efter Klaus, fortsat. Oprettet com94</change>
+       <change who="VAP" when="2015-04-14">tilrettet faxer</change>
+       <change who="AP" when="2015-04-14">tilrettet faxer</change>
+       <change who="KV" when="2015-10-15">indført genre, emne</change>
+    </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt"> 
+       <pb type="periText" facs="1811_164_fax001.jpg"/>
+      
+    <body>   
+<div type="[Tekst]">
+<pb type="text" facs="1811_164_fax002.jpg" ed="A" n="463"/>
+   <pb type="edition" ed="PS" n="322"/>
+
+<head rend="2">Farvel.</head>
+<head rend="1">(Til min Ven <hi rend="spaced"><persName key="pe122">F. C. Sibbern</persName></hi>).</head>  
+   
+<lg n="1">
+<l><hi rend="initial">H</hi>er sidder jeg i aabne lyse Skur,</l>
+<l>Fra Jord og Træ mig Blomsterduft omringer,</l>
+<l>Og nødig kun til Stadens Fangebur,</l>
+<l>Til kvalme Dunkelhed sig Aanden svinger.</l>
+<l>Dog hisset i den kvalme <placeName key="poet396">Axelstad</placeName></l>
+<l>En Ven jeg har, som jeg Farvel maa sige,</l>
+<l>Og tegne vil jeg paa det hvide Blad,</l>
+<l>Hvad mig det grønne tykkes at tilsige.</l>
+
+<l><pb type="text" facs="1811_164_fax003.jpg" ed="A" n="464"/>
+   <pb type="edition" ed="PS" n="323"/><rs type="bible" key="ApG 2,1-13" rend="allusion" n="bible4" subtype="bibleStart"/>Os Pindse sanked i den store Stad</l>
+<l>Og Pindsedagen der os skilte ad:<rs type="bible" key="ApG 2,1-13" rend="allusion" n="bible4" subtype="bibleEnd"/></l>
+<l><seg type="com" n="com2">Der</seg> Vaaren kom med sine lune Vinde,</l>
+<l>Det for beklumret <app type="corrNote" select="yes"><lem wit="B">tykdes</lem><rdg wit="A">tykkes</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> os derinde</l>
+<l>Bag <placeName key="fak31">Valkendorfs</placeName> de gamle, skumle Mure,</l>
+<l>For Snævert blev det inden fire Vægge,</l>
+<l>Og flagrende, som Fuglene i Bure</l>
+<l>Ud i det <seg type="com" n="com3">brede</seg> Fri vi higed begge.</l>
+<l>Dog til Farvel vi stirre venlig ind</l>
+<l>I Kamrene foroven og forneden,</l>
+<l>En Taare perler paa den varme Kind</l>
+<l>Ved Mindet om hvad der er nu <seg type="com" n="com69">forleden</seg>.</l>
+<l>Ei mindes jeg de svundne <seg type="com" n="com4">Samlivs-Dage</seg></l>
+<l>For <seg type="com" n="com5">daarlig</seg> nu at ønske dem tilbage</l>
+<l>Nei kun for rørt dig Vennehaand at byde</l>
+<l>Og mest for Ham mit Hjertes Tak at yde</l>
+<l>Som hjem til sig mig lokkede og tvang:</l>
+<l>Som stilled mig for Øie <seg type="com" n="com6">Luesværdet</seg></l>
+<l>Hvormed vort Fald har <placeName key="fik83">Paradis</placeName> omgærdet</l>
+<l>Og endte <seg type="com" n="com7">saa</seg> forvovne <app type="corrNote" select="yes"><lem wit="B">Styltegang</lem><rdg wit="A">Skyltegang</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+<l>Paa Randen af de brede Fjeldekløfter;</l>
+<l>Han splitted vældig med sit stærke Lyn</l>
+<l>Det Mørke som formaaede at skiule</l>
+<l>Saa tæt og trædsk Afgrundens dybe Hule</l>
+<l>At over den <app type="corrNote" select="yes"><lem wit="B"><seg type="com" n="com8">hengøgled</seg></lem><rdg wit="A">hengøgle</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>
+   fagre Syn</l>
+<l>Der skuffende i Drømme mig forlysted.</l>
+<l>Han hjem til sig mig lokkede og tvang:</l>
+<l>Han Aanden til sig vinkede i Sang,</l>
+<l><pb type="text" facs="1811_164_fax004.jpg" ed="A" n="465"/>Han kaldte mig igennem Vennemunde,</l>
+<l>Han gav mig Kløgt og Lyst til <seg type="com" n="com9">saa</seg> at grunde,</l>
+<l>Paa <rs key="myth64" type="myth">Sagas</rs> Runer, at af dem jeg saae</l>
+<l>En <seg type="com" n="com10">Solekrands</seg> vidunderlig sig vinde</l>
+<l>Om <persName key="pe45">Jesu Kristi</persName> høie Guddomstinde</l>
+<l>Og lærte mig af Tidens Tegn at <app type="corrNote" select="yes"><lem wit="GV">spaa<!-- pktcom i stedet? --></lem><rdg wit="A">syne</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>;</l>
+<l> <pb type="edition" ed="PS" n="324"/>Ja da saa lidt jeg skønned paa hans Naade,</l>
+<l>Han revsed mig, men revsede med Maade:</l>
+<l>Han bøied <seg type="com" n="com12">vældigen</seg> det stolte Sind</l>
+<l>Han smelted Isen i det kolde Hjerte</l>
+<l>Og jeg fornam det i den dybe Smerte</l>
+<l>At til sit Tempel Han det vied ind.</l>
+<l>O, kære Ven, vel maa da Taaren dirre</l>
+<l>I Øiet klar, naar did det <seg type="com" n="com70">mon</seg> henstirre</l>
+<l>Hvor Gud mig lærte under Tvivl og Strid</l>
+<l>At <hi rend="spaced">føle</hi> Sorrig og at <hi rend="spaced">føle</hi> Glæde</l>
+<l>At føle sukkende i lange Tid</l>
+<l>Hvor tungt det er at ikke <hi rend="spaced">kunne</hi> græde.</l>
+<l>Jeg takker Gud og Ham i dig, min Ven,</l>
+<l>Og i de andre kære Ungersvende,</l>
+<l>I hvis Forsamling jeg blev Barn igen</l>
+<l>Og lærte Hovmods <seg type="com" n="com71">Daarlighed</seg> at kiende;</l>
+<l>Jeg takker dig for hvert et Øieblik,</l>
+<l>Som under Skemt og <app type="corrNote" select="yes"><lem wit="GV">Alvorstale</lem><rdg wit="A">Alvortale</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> gik,</l>
+<l>Da Venskabs Engel snoed Vennebaand</l>
+<l>Af <app type="corrNote" select="yes"><lem wit="GV">Tvistens</lem><rdg wit="A">Cristnes</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> som af Enighedens Traade!</l>
+<l><pb type="text" facs="1811_164_fax005.jpg" ed="A"  n="466"/>Vi grubled begge over Livets Gaade,</l>
+<l>Men om dens Løsning vi forligtes ei,</l>
+<l>Derfor <seg type="com" n="com13">og</seg> nu vi paa <seg type="com" n="com14">adskællig Vei</seg></l>
+<l><seg type="com" n="com15">Udhigede</seg> fra <placeName key="poet396">Axelstadens</placeName> Volde:</l>
+<l>Du <seg type="com" n="com93">higed</seg> ud saa fiernt i Folkevrimmel,</l>
+<l>Jeg <seg type="com" n="com93">higed</seg> hjem til Fødeegnens Himmel,</l>
+<l>Til <seg type="com" n="com16">Faderhusets</seg> kære, stille Krog;</l>
+<l>Thi jeg har fundet i den ene Bog,</l>
+<l>Hvad i dig selv og i de mange Bøger,</l>
+<l>Hos fjerne Folk og vise Mænd du søger.</l>
+<l>Min Vei var kort, og din er saare lang,</l>
+<l>Derfor <seg type="com" n="com17">og</seg> jeg har <seg type="com" n="com72">alt</seg> fuldendt min Gang</l>
+<l>Mens du til din <seg type="com" n="com73">end</seg> <seg n="com62" type="com">monne</seg> dig <seg type="com" n="com18">omgjorde</seg>.</l>
+<l><pb type="edition" ed="PS" n="325"/>Ei <seg type="com" n="com19">mene</seg> du, jeg stolt min Nakke hæver!</l>
+<l>Ei <app type="corrNote" select="yes"><lem wit="B"><seg type="com" n="com19">mene</seg> du,</lem><rdg wit="A">mene, du</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> jeg <hi rend="spaced">dømmer</hi> dine Skridt!</l>
+<l>Den samme Haand vor indre Klædning væver</l>
+<l>Men <seg type="com" n="com21">konstig</seg> ændrer den sit Mønster til.</l>
+<l>Ei <seg type="com" n="com74">daarlig</seg> Hovmod skal mit Øie blænde:</l>
+<l>Hvad jeg erkender, vil jeg frit bekende:</l>
+<l>At skarpere er <seg type="com" n="com22">vist</seg> det Siæleøie,</l>
+<l>Som laantes dig i Naade fra det Høie;</l>
+<l>Men derfor ei jeg dølger faste Tro,</l>
+<l><rs type="bible" key="2 Mos 19,9-19" rend="allusion" n="bible2" subtype="bibleStart"/>At om du stirrer nok saa <seg type="com" n="com22">vist</seg> og længe,</l>
+<l><rs type="bible" key="2 Krøn 5,13-14" rend="allusion" n="bible8" subtype="bibleStart"/>Du Skyen ei formaaer at gennemtrænge,</l>
+<l>Bag hvilken Gud i skjulte Lys <seg type="com" n="com75">mon</seg> bo<rs type="bible" key="2 Krøn 5,13-14" rend="allusion" n="bible8" subtype="bibleEnd"/>.<rs type="bible" key="2 Mos 19,9-19" rend="allusion" n="bible2" subtype="bibleEnd"/></l>
+<l>Ja, <seg n="com89" type="com">end</seg> jeg vover det for <seg type="com" n="com23">vist</seg> at mene,</l>
+<l>At om al Jordens Vise sig forene;</l>
+<l>Opsvinge sig mod Himlens <seg type="com" n="com24">hvalvte</seg> Bue,</l>
+<l><pb type="text" facs="1811_164_fax006.jpg" ed="A"  n="467"/>Nedgrave sig i Jordens dunkle Stue,</l>
+<l>De aldrig dog i Klippens <seg type="com" n="com25">Agerreen</seg></l>
+<l>Oppløie nogentid de Vises Steen,</l>
+<l>De komme dog ei til Magnetens Leie,</l>
+<l>Som styrer Jorden paa sin lange Færd,</l>
+<l>Ei til den Sol, om hvilken sig <seg type="com" n="com77">mon</seg> dreie</l>
+<l>De lyse og de mørke Kloders Hær.</l>
+<l>Tilsidst jeg tro'r, at om hver kløgtig Aand</l>
+<l>Gik villig frem i Herrens <seg type="com" n="com26">Ledebaand</seg>,</l>
+<l>Blev <seg type="com" n="com67">sikkerlig</seg> langt <seg n="com90" type="com">høiere</seg> hans <hi rend="spaced">Gang</hi></l>
+<l>End nu hans <hi rend="spaced">Flugt</hi>; <rs type="bible" key="4 Mos 11,23" rend="allusion">thi Herrens Arm er lang</rs></l>
+<l>Og vandre kan man i den løse Lænke,</l>
+<l>Saavidt som jordisk Aand formaar at tænke.</l>
+<l>Ja naar vi staa ved Tankens Grændseskel,</l>
+<l>Sig for os løfter Troens høje Fjeld,</l>
+<l><rs type="bible" rend="allusion" key="1 Kor 13,12">Hvorfra vi <hi rend="spaced">det</hi> i klare Speil <seg type="com" n="com78">mon</seg> skue,</rs></l>
+<l>Som skimtes ei fra Kløgtens Myretue.</l>
+</lg>
+<lg n="2">
+<l><pb type="edition" ed="PS" n="326"/>Dog, blandt de Urter, som saa <app type="addNote" select="yes"><lem wit="A"><seg type="com" n="com91">færdig</seg></lem><rdg  type="add" wit="B">yppig<!-- evt pkt her? --></rdg><rdg  type="add" wit="PS">frodig<!-- evt pkt her? --></rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> gro</l>
+<l>I <placeName key="fik83">Paradisets</placeName> nyoplukte Have,</l>
+<l>Ei Kundskab, men den høie Sjælero</l>
+<l>Maa agtes for hin bedste Himlens <app type="corrNote" select="yes"><lem wit="B">Gave<!-- evt pkt her --></lem><rdg wit="A">Gavn</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>.</l>
+<l>Thi hin er fager kun, men dennes Duft</l>
+<l><seg type="com" n="com27">Hel</seg> liflig blander sig med Livets Luft,</l>
+<l>Og skal som Kærlighedens Blomst bestaa,</l>
+<l>Naar Jorden med sin Kundskab maa forgaa.</l>
+<l>Du veed det, Ven, min syge, <app type="corrNote" select="yes"><lem wit="GV">matte</lem><rdg wit="A">maatte</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Aand</l>
+<l>Sig krympet har <seg type="com" n="com64">i kolde Vinterbaand</seg></l>
+<l><pb type="text" facs="1811_164_fax007.jpg" ed="A" n="468"/>
+Du veed at der med Vaarens lune Vinde</l>
+<l>Blev lunere og lysere derinde;</l>
+<l>Men at dog hid og did de Skyer droge</l>
+<l>Og Solens varme Straaler tit <seg type="com" n="com63">forjoge</seg>.</l>
+<l><rs type="bible" key="ApG 2,4" rend="reference" n="bible3" subtype="bibleStart"/>Apostlene paa hellig Pindsefest</l>
+<l>Iførte blev med Kraften fra det Høie<rs type="bible" key="ApG 2,4" rend="reference" n="bible3" subtype="bibleEnd"/></l>
+<l>I Pindseugen det sig maatte føie</l>
+<l>At jeg indviedes til Herrens Præst;</l>
+<l>Adskillige de Naadegaver ere,</l>
+<l>Men skænkes alle af den samme Aand,</l>
+<l><seg type="com" n="com29">Der</seg> <seg type="com" n="com30">Brødrene</seg> udrakte høire Haand</l>
+<l>For det med Suk af Herren at begære</l>
+<l>At Kærligheds og Krafts og Sandheds Aand</l>
+<l>Miskundelig paa mig <seg type="com" n="com31">nedlade</seg> vilde,</l>
+<l>Da aabnede sig Hiertets Taarekilde,</l>
+<l>Da sprængte Siælen sine Fængselsbaand,</l>
+<l>Og der jeg hørte <seg type="com" n="com68">Brødrene</seg> tilsammen</l>
+<l>I <persName key="pe45">Jesu Kristi</persName> Navn at sige Amen,</l>
+<l>Da blev det Samme i mit Bryst <seg n="com88" type="com">udtonet</seg></l>
+<l>Og jeg mig følte med min Gud forsonet.</l>
+<l>Da hastede jeg ud fra <placeName key="poet396">Axelstad</placeName>,</l>
+<l>Jeg takkede, jeg higede, jeg bad:</l>
+<l>Jeg vandred frem i blide Morgenstund,</l>
+<l>Men <seg type="com" n="com33">der</seg> jeg nærmed mig den kære Grund,</l>
+<l><pb type="edition" ed="PS" n="327"/>Hvor Barnedagene henflød saa trygge,</l>
+<l>Hvor gamle Fader <seg type="com" n="com80">end</seg> <seg type="com" n="com34">mon</seg> rolig <seg type="com" n="com81">bygge</seg>,</l>
+<l>Og med sin kære, alderstegne Viv</l>
+<l>Henstirre munter paa det <seg type="com" n="com92">sunde</seg> Liv;</l>
+<l><pb type="text" facs="1811_164_fax008.jpg" ed="A"  n="469"/>Da giordes det mig <seg type="com" n="com35">trangere</seg> om Hierte</l>
+<l>Ved Mindet om den glade Barnetid,</l>
+<l>Ved Mindet om de sidste Tiders Smerte,</l>
+<l>Ved Tanken om den store, tunge <seg n="com94" type="com">Id</seg></l>
+<l>Som jeg fra Nu, for Gud begynde skulde</l>
+<l>I Skovens <seg type="com" n="com36">Udgang</seg> paa en gammel Steen</l>
+<l>Jeg satte mig, optog af lidet Gemme,</l>
+<l>Det <hi rend="spaced"><seg type="com" n="com37">Testament</seg></hi> hvori jeg læste hjemme</l>
+<l>Da jeg som Barn fra dunkle <app type="corrNote" select="yes"><lem wit="GV">Dagligstue</lem><rdg wit="A">Daglistue</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+<l>Oplærtes til mod Himlene at skue.</l>
+<l>Den gamle Bog mig trolig havde fulgt</l>
+<l>Paa <placeName key="fak76">Jyllands</placeName> Heder, <placeName key="fak3">Lavinds</placeName> Blomsterenge,</l>
+<l>Men dog, desværre, eengang alt for længe</l>
+<l>Dens blanke Lys var for mit Øie dulgt.</l>
+<l>Jeg den <seg type="com" n="com38">oplod</seg> og hvor mit Øie faldt</l>
+<l>Der fandt det ogsaa uden Leden Alt:</l></lg>
+   <lg n="3">
+<l><rs type="bible" key="1 Kor 15,55-58" rend="reference1787"  subtype="bibleStart" n="bible1"/>&#x201C;Du Død, hvor er din Braad?</l>
+<l>Hvor, Helvede, din Seier?</l>
+<l>Vor Synd er Dødens Braad,</l>
+<l>Og Loven Braaddens <seg type="com" n="com39">Størke</seg>;</l>
+<l>Men takket være Gud,</l>
+<l>Som os ved <app type="corrNote" select="yes"><lem wit="GV"><persName key="pe45">Jesum</persName>,</lem><rdg wit="A">Jesum;</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Herren,</l>
+<l><pb type="text" facs="1811_164_fax009.jpg" ed="A" n="470"/>
+<app type="corrNote" select="yes"><lem wit="B">Har</lem><rdg wit="A">Her</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Seier givet nu!</l>
+<l>Og derfor, Brødre, <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com40">staaer</seg></lem><rdg wit="A">staae</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> soYm Klippeblokke,</l>
+<l>Ei <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com41">lader</seg></lem><rdg wit="A">lade</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> eder ryste, ja ei rokke!</l>
+<l><seg type="com" n="com83">Udretter</seg> <seg type="com" n="com42">flittelig</seg> det Herrens Værk!</l>
+<l>Vel vidende, at ei forfængelig</l>
+<l>Den Gerning er, som Herren valgte sig.<note type="footnote"><p rend="noIndent"><rs type="bible" rend="normForm" key="1 Kor 15,55-58">1 Cor. 15, 55</rs>.</p></note>&#x201D;<rs type="bible" key="1 Kor 15,55-58" rend="reference1787"  subtype="bibleEnd" n="bible1"/>.</l></lg>
+<lg n="4">
+<l><pb type="edition" ed="PS" n="328"/>Jeg reiste mig <seg type="com" n="com84">alt som</seg> en Blomst, der mat</l>
+<l>Sit Hoved har i Dagens Hede sænket.</l>
+<l>Men kæk det løfter udi Sommernat</l>
+<l>Af mild og <seg type="com" n="com43">kvægsom</seg> <seg type="com" n="com65">Himmeldug</seg> bestænket.</l>
+<l>Nu Kirketaarnet løfted sig deroppe,</l>
+<l>Ved <app type="corrNote" select="yes"><lem wit="GV"><placeName key="fak953">Grinebakken</placeName></lem><rdg wit="A">Gvinebakken</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mellem Asketoppe;</l>
+<l>Blandt hine Aske leged jeg, som Dreng</l>
+<l>Og slumred under dem saa sødt i <app type="corrNote" select="yes"><lem wit="GV">Eng</lem><rdg wit="A">Egn</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>
+<l>Men hvad er disse dunkle Barneminder</l>
+<l>Mod lyse Ahnelser af Manddomsfærd,</l>
+<l>Saamangt et Baand til Kirken hist mig binder:</l>
+<l>Det <seg type="com" n="com44">skøreste</seg> er at jeg døbtes der,</l>
+<l>Det stærkeste at Gud mig sendte did,</l>
+<l>Og hvor min Fader i saa lang en Tid</l>
+<l>Gudfrygtig talte Herrens rene Ord</l>   
+<l><pb type="text" facs="1811_164_fax010.jpg" ed="A" n="471"/>Nu jeg skal tale til det aabne Hierte:</l>
+<l>Velsigne Folket fra det <seg type="com" n="com45">høie Kor</seg></l>
+<l>Med Ordets <seg type="com" n="com46">Balsom</seg> lindre Siælens Smerte.</l>
+<l>Hvad jeg <seg type="com" n="com47">mon</seg> tale under <seg type="com" n="com48">hvalvte</seg> Bue</l>
+<l>Og hvad jeg taler i den lave Stue</l>
+<l>Mig selv kan røre, glæde og husvale,</l>
+<l>Thi ikke min, men Herrens egen Tale</l>
+<l>Det er som mig udgange skal af <app type="corrNote" select="yes"><lem wit="GV">Mund</lem><rdg wit="A">Mnnd</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+<l>Og trænge stærk til dybe Hjertegrund.</l>
+<l>O, det er kvægende, min Ven, at vide</l>
+<l>Et Ord, hvorpaa <hi rend="italic">man selv</hi> kan sikkert lide!</l>
+<l>Slet ingen Tanke er saa trøsterig,</l>
+<l>Som den at ei derved, forfængelig</l>
+<l>Vor Gerning er, thi den er Herrens egen.</l>
+<l>O, gid det Mod, den Fred, som strømmed ind</l>
+<l>Ved denne Vished udi Sjæl og Sind</l>
+<l>Og ved din Vandrings Maal maa dig opfylde!</l>
+<l>Saa reis da, Ven, og tro, min stille Tanke</l>
+<l>Dig følge skal, <seg type="com" n="com85">hvorvidt</seg> du end <seg type="com" n="com49">mon</seg> vanke</l>
+<l><pb type="edition" ed="PS" n="329"/>Og ofte vil jeg knæle for den Høie</l>
+<l>Med Bøn, at han <seg type="com" n="com50">oplade</seg> vil dit Øie,</l>
+<l>Saa gennem <persName key="pe45">Kristi</persName> ringe Klædedragt</l>
+ <l><pb type="text" facs="1811_164_fax011.jpg" ed="A" subtype="column" n="472"/>Du <seg type="com" n="com86">klarlig</seg> seer den indre <app type="corrNote" select="yes"><lem wit="B">Guddomspragt</lem><rdg wit="A">Guddomspræst</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>
+<l>O, da blev du en <persName key="pe45">Jesu <app type="corrNote" select="yes"><lem wit="B">Kristi</lem><rdg wit="A">Kriste</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></persName> Kæmpe,</l>
+<l>Som skulde med din Tordenrøst neddæmpe</l>
+<l>Det hæse Skrig af tusind usle Dværge,</l>
+<l>Som mene, deres Muldvarpskud er Bierge,</l>
+<l>Og, løftede paa Tæerne, <seg type="com" n="com51">bele</seg></l>
+<l>Alt hvad de ei fra <seg type="com" n="com66">Dværgebakken</seg> <!-- opmærkes til Grinebakken? -->see.</l></lg>
+<p rend="center">I Juni 1811.</p>
+<p rend="right"><hi rend="spaced">N. F. S. Grundtvig.</hi></p>
+<fw type="shortLine"/>
+
+
+
+</div>
+     
+    </body>    
+   </text>   
+  </TEI>

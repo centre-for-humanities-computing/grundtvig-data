@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc" type="application/relax-ng-compact-syntax"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+    <fileDesc>
+     
+     <titleStmt>
+      <title rend="main">Den christelige Kamp. Pr&#x00E6;diken paa eenogtyvende Trinitatis-S&#x00F8;ndag 1825</title>
+      <title rend="shortForm">Den christelige Kamp</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Vanja Thaulow</editor>
+       <editor role="student2">Maria Wiggers Pedersen</editor>
+       <editor role="student1">Anna Poulsen</editor>
+       <editor role="student3">Frederik Drei&#x00F8;e Seidelin</editor>
+       <editor role="student4">Kirsten Vad</editor>
+     </titleStmt>
+     
+     <editionStmt>
+      <edition>
+         <idno type="firstUpload">1.4</idno>
+          <idno type="content">1.4</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+     </editionStmt>
+     
+     <extent>50 KB</extent>     
+     
+     <publicationStmt>
+      <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+      <publisher>Faculty of Arts, Aarhus University</publisher>
+      <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+      
+      <date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1. maj 2014</date>
+     </publicationStmt>
+     
+     <notesStmt>
+      <note xml:id="thisFile" target="1825_421A_txt.xml" type="txt">L&#x00E6;setekst</note>
+      <note target="1825_421A_com.xml" type="com">Punktkommentar</note>
+      <note target="1825_421A_intro.xml" type="intro">Indledning</note>
+      <note target="1825_421A_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+      <note type="minusVar">Variant</note>
+     
+     </notesStmt>
+     <!--
+     <seriesStmt>
+      <title>Den christelige Kamp</title>
+      <idno>1825</idno>
+      <respStmt>
+       <name>den Wahlske Boghandling</name>
+       <resp>[evt.]</resp>
+      </respStmt>
+     </seriesStmt>-->     
+     <sourceDesc>
+      <bibl>
+       <title type="main">Den christelige Kamp</title>
+       <author>N.F.S. Grundtvig</author>           
+       <pubPlace>K&#x00F8;benhavn</pubPlace>
+       <publisher>Fabritius Tengnagel</publisher>
+       <date>1825</date>
+      </bibl>
+             
+         <listWit xml:id="emendation">
+            <witness xml:id="A" n="421A">
+               <desc>Førstetrykket</desc>
+               <num>1825</num>
+            </witness>
+            <witness xml:id="B" n="421B">
+               <desc>Anden udgave</desc>
+               <num>1825</num>               
+            </witness>
+         </listWit>
+         
+        <listWit xml:id="pageNumber">
+           <witness xml:id="US">
+              <desc>Udvalgte Skrifter</desc>
+              <num>4</num>
+           </witness>
+           <!--ifølge SJ ikke i VU, men tjek-->
+        </listWit>
+     </sourceDesc>
+    </fileDesc>
+      <profileDesc>
+         <textClass>
+            <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+               <term>prosa</term>
+               <term>prædikener</term>                    
+            </classCode>
+            <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+               <!--<term>teologi</term>--> 
+               <term>kristendom</term>
+            </keywords>
+         </textClass>
+      </profileDesc>    
+    
+    <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+            <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>         
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      </encodingDesc>
+    
+    <revisionDesc>
+     <change xml:id="KN" who="KN" when="2013-10-25">txt2tei</change>
+      <change xml:id="AP" who="AP" when="2013-11-14">rettelser efter 1. kollation (Grundtvig Bibliotek ex. 2)</change>
+        <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+     <change xml:id="VTH" who="VTH" when="2013-12-16">sm&#x00E5;rettelser</change>
+     <change who="VTH" when="2013-12-17">lemmatiserer og opm&#x00E6;rker til pers.base</change>
+     <change xml:id="FDS" who="FDS" when="2013-12-18">Indf&#x00F8;rsel af titelblad.</change>     
+        <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+       <change who="VTH" when="2013-12-19">P&#x00E5;begynder bibelopm&#x00E6;rkning</change>
+       <change who="VTH" when="2013-12-19">forts&#x00E6;tter bibelopm&#x00E6;rkning og inds&#x00E6;tter rettelser fra FDS's kollation - efter Gr.bib, ex 3.</change>
+        <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+       <change who="VTH" when="2014-01-06">Mere bibelopmærkning</change>
+       <change who="VTH" when="2014-01-07">Bibelopmærkning tjekket ift 1787</change>
+       <change who="VTH" when="2014-01-09">Ekstra lemmata</change>
+       <change who="VTH" when="2014-01-17">Vth kollationerer efter Gr. bib ex 1</change>
+       <change who="VTH" when="2014-01-20">Indsætter 5 stk corr-notes</change>
+       <change who="VTH" when="2014-03-03">Indsætter sidetal fra US</change>
+       <change who="VTH" when="2014-03-10">Retter efter STs redaktion. Nye com fra 200</change>
+       <change who="VTH" when="2014-03-17">retter efter NJCs redaktion. Nye bibelsteder og nye com fra 300-303</change>
+       <change who="VTH" when="2014-03-18">Sætter et par ekstra bibelref. ind i ny kodning med 'og'</change>
+       <change who="VTH" when="2014-04-10">Unicodes</change>
+       <change who="VTH" when="2014-04-11">Retter efter KN</change>
+       <change who="VTH" when="2014-08-18">Retter kodning af listWit</change>
+       <change who="VTH" when="2015-10-26">Indsætter genre- og emneord</change>
+       <change who="VTH" when="2016-03-07">Retter genre- og emneord.</change>
+       <change when="2017-04-28" who="KV">bibleStart og bibleEnd ved opmærkninger ved pb-element</change>
+  
+    </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">
+      
+      <!--<front rend="[Titelblad]">
+     <titlePage type="main">
+      <pb type="text" facs="1830_487A_fax.jpg" ed="A" rend="supp" n="1" />
+      
+      <docTitle>
+       <titlePart type="main">Den christelige Kamp.</titlePart>
+       <fw type="shortLine" />
+       <titlePart type="part">Pr&#x00E6;diken</titlePart>
+       <titlePart type="part">paa</titlePart>
+       <titlePart type="part">eenogtyvende Trinitatis-S&#x00F8;ndag 1825</titlePart>
+      </docTitle>
+      
+      <fw type="longLine" />
+      <byline>af</byline>
+      <byline>Nik. Fred. Sev. Grundtvig,</byline>
+      <epigraph>residerende Capellan ved vor Frelsers Kirke.</epigraph>
+      <fw type="longLine" />
+      
+      <docImprint>
+      
+       <pubPlace>Kj&#x00F8;benhavn.:</pubPlace>
+       <publisher>Forlagt af den Wahlske Boghandling.</publisher>
+       <publisher>Trykt hos Fabritius Tengnagel.
+</publisher>
+       </docImprint>
+     </titlePage>
+    </front>-->
+      
+      <!-- HUSK at indsætte sidetal fra US-->
+      <pb type="periText" facs="1825_421A_fax001.jpg"/>
+      <pb type="periText" facs="1825_421A_fax002.jpg"/>      
+      <pb type="periText" facs="1825_421A_fax003.jpg"/>
+      <pb type="periText" facs="1825_421A_fax004.jpg"/>
+      <pb type="periText" facs="1825_421A_fax005.jpg"/>
+      <pb type="periText" facs="1825_421A_fax006.jpg"/>      
+      <front rend="&#x005B;Titelblad&#x005D;">
+         
+         
+         <titlePage type="first">
+            
+            <pb type="text" facs="1825_421A_fax007.jpg" n="1" ed="A" rend="supp"/>
+            
+            
+            <docTitle>
+               <titlePart type="main">Den christelige Kamp.</titlePart>
+               <!--repr&#x00E6;senteres ikke <fw type="shortLine"/>-->
+               <titlePart type="part">Pr&#x00E6;diken</titlePart>
+               <titlePart type="part">paa</titlePart>
+               <titlePart type="part">eenogtyvende Trinitatis-S&#x00F8;ndag 1825</titlePart>
+            </docTitle>
+            
+            <byline>af</byline>
+            <docAuthor>Nik. Fred. Sev. Grundtvig,
+               <note type="prof">residerende Capellan ved <placeName key="fak9">vor Frelsers Kirke</placeName>.</note>
+            </docAuthor>
+            
+            
+            <fw type="longLine"/>
+            <docImprint>
+               <pubPlace>Kj&#x00F8;benhavn.</pubPlace>
+               <publisher>Forlagt af den Wahlske Boghandling.</publisher>
+               <publisher>Trykt hos Fabritius Tengnagel.</publisher>	
+            </docImprint>
+            
+         </titlePage>
+      </front>
+      
+      <body>
+         
+         
+         <div type="&#x005B;Pr&#x00E6;diken&#x005D;">
+            <pb type="text" facs="1825_421A_fax008.jpg" n="2" ed="A" rend="supp"/>
+            <pb type="text" facs="1825_421A_fax009.jpg" n="3" ed="A" rend="supp"/>
+            <pb type="edition" ed="US" n="432"/>
+           
+            <!-- lang prydstreg for oven repr&#x00E6;senteres ikke -->
+            <p rend="center">Epistelen. <rs type="bible" key="Ef 6,10-17" rend="quote">Ephes. VI, 10-17</rs>.</p>
+            <!-- skal skriften v&#x00E6;re mindre? i denne linje og/eller i hele bibelteksten? Og b&#x00F8;r vi kode for 'pr&#x00E6;dike-tekst'? -->
+            <fw type="blank"/>
+            
+            <p rend="noIndent"><seg type="com" n="com200">I det &#x00D8;vrige</seg> mine Br&#x00F8;dre! <seg type="com" n="com1">vorder</seg> st&#x00E6;rke i Herren og i Hans Styrkes Kraft! <seg type="com" n="com2">If&#x00F8;rer</seg> Guds fulde Harnisk, <seg type="com" n="com201">at</seg> I <seg type="com" n="com202">kan v&#x00E6;re m&#x00E6;gtige til</seg> at staae imod Dj&#x00E6;velens snedige <seg type="com" n="com3">Anl&#x00F8;b</seg>! Thi vi<!-- I mangler prik i alle tre ekspl.--> have ikke Kamp mod Ki&#x00F8;d og Blod, men mod Fyrstend&#x00F8;mmer og V&#x00E6;lde, mod Verdens Herrer, som regiere i denne Verdens M&#x00F8;rke, mod Ondskabs Aander, som ere under Himmelen. Derfor <seg type="com" n="com4">tager</seg> Guds fulde Harnisk paa, <seg type="com" n="com5">at</seg> I kan modstaae paa den onde Dag, og <seg type="com" n="com203">staae</seg>, naar I have udrettet alle Ting! <seg type="com" n="com6">Staaer</seg> derfor <seg type="com" n="com7">opbundne omkring eders L&#x00E6;nder med Sandhed</seg>, og if&#x00F8;rte med Retf&#x00E6;rdigheds Pantser! Og <seg type="com" n="com8">v&#x00E6;rer</seg> if&#x00F8;rte paa F&#x00F8;dderne med Fredens <seg type="com" n="com9">Evangelii</seg> F&#x00E6;rdighed, saa I <seg type="com" n="com204">for alle Ting</seg> <seg type="com" n="com205">antage</seg> Troens Skjold, hvormed I skal kunne slukke alle den Ondes gloende Pile! Og <seg type="com" n="com10">tager</seg> Saliggj&#x00F8;relsens Hjelm, og Aandens Sv&#x00E6;rd som er <hi rend="spaced">Guds Ord!</hi>
+            </p>
+            
+            <fw type="shortLine"/>
+            
+            <p rend="noIndent">
+               <hi rend="spaced">
+                  <rs type="bible" key="Ef 6,10-12" rend="reference"><hi rend="initialSpaced">B</hi>r&#x00F8;dre! vi have Kamp</rs>;</hi> <seg type="com" n="com11">saa</seg> siger <persName key="pe343">Apostelen</persName> til sine Med-Christne, og <rs type="bible" key="Ef 6,11" rend="quote">formaner dem paa det Alvorligste til at fare i Harnisk, saa de, i Guds fulde Rustning, kunne m&#x00F8;de Fienden, <seg type="com" n="com206">m&#x00E6;gtige til</seg> at imodstaae alle hans snedige <seg type="com" n="com207">Anl&#x00F8;b</seg></rs>, <seg type="com" n="com208">dygtige til</seg> at <seg type="com" n="com12">beholde Marken</seg>, og lyksalige nok til i Himlen at ende deres <seg type="com" n="com13">Bane</seg> med Seier og &#x00C6;re. <rs type="bible" key="Ef 6,10-12" rend="reference" n="bible2" subtype="bibleStart"/>Br&#x00F8;dre! vi have <pb type="text" facs="1825_421A_fax010.jpg" n="4" ed="A"/>Kamp<rs type="bible" key="Ef 6,10-12" rend="reference" n="bible2" subtype="bibleEnd"/>, det maa da, Christne Venner! ogsaa v&#x00E6;re det store Alvors-Ord, hvormed vi tiltale hverandre, saasandt vi ellers vil bevare Broderskabet med <persName key="pe343">Apostelen</persName>, det er: saasandt vi ville v&#x00E6;re <rs type="bible" key="Gal 3,26" rend="quote">Guds B&#x00F8;rn med ham i <persName key="pe45">Christo Jesu</persName></rs>! Lad da kun Verdens Pr&#x00E6;ster og Propheter raabe: Br&#x00F8;dre! vi vil have Fred, Verdens Fred, hvad det saa end skal koste! lad dem kun h&#x00F8;ste Verdens <seg type="com" n="com400">Pris</seg> for Mildhed og Sagtmodighed, for Viisdom og Ki&#x00E6;rlighed! lad dem kun hellige og velsigne Verdens Had og Forbittrelse mod os, fordi vi, <pb type="edition" ed="US" n="433"/>som Frelseren, <rs type="bible" key="Joh 7,7" rend="quote">vidne om den, at dens Gierninger ere onde</rs>! <seg type="com" n="com14">Lad kun saa v&#x00E6;re</seg>, da det, efter Herrens Ord, kan ikke v&#x00E6;re anderledes, end at <rs type="bible" key="1 Joh 4,5" rend="quote">de som ere af Verden, maae tale af Verden, og h&#x00F8;res af den</rs>, <rs type="bible" key="Joh 15,18-19" rend="reference">som elsker kun sit Eget, og at vi maae hades af den Verden, der haver hadet vor Herre og Mester, <hi rend="spaced">
+                     <persName key="pe45">Jesum Christum</persName>,</hi>
+                  </rs> og alle vore &#x00E6;gte Br&#x00F8;dre i ham, med Apostlerne og deres rette Efterf&#x00F8;lgere, haver hadet dem f&#x00F8;rend os! Lad det ei undre, end sige da forf&#x00E6;rde os, at <rs type="bible" key="Matt 5,11" rend="reference1787"><!-- + evt henv. til Matt 10,22 -->man taler allehaande Ondt om os for <hi rend="spaced">
+                     <persName key="pe45">Jesu</persName>
+                  </hi> Navns Bekiendelses Skyld</rs>; <rs type="bible" key="Joh 15,20" rend="eg">thi Tjenerne ere jo dog ikke bedre end Herren</rs>, og <rs type="bible" key="Matt 10,25" rend="reference" subtype="bibleStart" n="bible3"/>haver man kaldt vor <seg type="com" n="com15">Hosbond</seg> den &#x00D8;verste blandt Dj&#x00E6;vlene, maa dumme Smaa-Dj&#x00E6;vle naturligviis blive det ypperste Navn, man <pb type="text" facs="1825_421A_fax011.jpg" n="5" ed="A"/>kan give hans <seg type="com" n="com209">Husfolk</seg><rs type="bible" key="Matt 10,25" rend="reference" subtype="bibleEnd" n="bible3"/>! Rolig og frimodig sige vi da: <rs type="bible" key="Ef 6,10-12" rend="reference">Br&#x00F8;dre! vi maae, <hi rend="spaced">vi vil have Kamp,</hi></rs> <hi rend="italic">i Herrens Navn,</hi> vi vil det, <seg type="com" n="com16">vist nok</seg> ikke, fordi Kampen er behagelig, ei fordi vi fattes den h&#x00F8;ie Viisdom, at det er langt mageligere, medens Fienden raser, at sidde med H&#x00E6;nderne i Ski&#x00F8;det, end i aaben Mark at <seg type="com" n="com300">gaae ham paa Klingen</seg>, langt nemmere at tale Verden end at tale Herren efter Munden, til Behag, langt klogere, i ki&#x00F8;delig Forstand, at <seg type="com" n="com17">l&#x00E6;mpe sig efter</seg> Verden end at <seg type="com" n="com18">byde den Spidsen</seg>; nei visselig, ei derfor ville vi have Kamp, men fordi vi see, af Herrens Ord og af Christen-Folkets store Levnets-L&#x00F8;b, at Kampen er uundgaaelig, naar vi ikke som Krystere vil r&#x00F8;mme fra Sandheds, fra vor Herres <hi rend="spaced">
+                     <persName key="pe45">Jesu Christi</persName>
+                  </hi> og Hans Korses Banner, naar vi ikke vil have vor Deel med Verdens Folk, hvis Lykke og Gl&#x00E6;de forsvinder som Dr&#x00F8;mmen, men f&#x00F8;le Lyst til med evig Fryde-Sang at <seg type="com" n="com19">b&#x00E6;re Blus</seg> for <rs type="bible" key="Matt 21,1-11" rend="reference">vor Konge ved Hans store Indtog i <placeName key="fik190">det himmelske Jerusalem</placeName></rs>, ved den store <rs type="bible" key="&#x00C5;b 19,7" rend="allusion">Bryllups-H&#x00F8;itid i Faderens Hus</rs>
+               <!-- usikker --> <rs type="bible" key="Joh 14,2" rend="reference1787">med de liflige V&#x00E6;relser</rs>! Ja, <hi rend="spaced">derfor,</hi> for evig <hi rend="spaced">Sandheds</hi> og <hi rend="spaced">Saligheds:</hi> <rs type="bible" key="2 Thess 2,1" rend="reference1787">for <hi rend="spaced">
+                  <persName key="pe45">Jesu Christi</persName>
+               </hi> Skyld og <seg type="com" n="com210">vor Forsamlings til</seg> Ham</rs>, <hi rend="spaced">derfor,</hi> Christne, <rs type="bible" key="Ef 6,12" rend="reference">vil vi have <hi rend="spaced">Kamp,</hi></rs> den samme Kamp, som Herrens Apostler og alle <pb type="text" facs="1825_421A_fax012.jpg" n="6" ed="A"/>vore Med-Br&#x00F8;dre og Med-Tienere i Herren, der i de forbigangne Tider have agtet <rs type="bible" key="1 Kor 1,25" rend="quote">Guds Daarskab for visere end Menneskene</rs>, <rs type="bible" key="2 Tim 4,7" rend="quote">have stridt den gode Strid, fuldendt L&#x00F8;bet, og bevaret Troen</rs>; ere hensovne i Fred, <rs type="bible" key="Joh 14,27" rend="reference">ei i den Fred, som Verden giver</rs>, men i <rs type="bible" key="Fil 4,7" rend="quote">Guds Fred, som overgaaer al Forstand og <seg type="com" n="com211">forvarer</seg> Hjerter og Tanker i <hi rend="spaced">
+                  <persName key="pe45">Christo Jesu</persName>;</hi>
+               </rs> ere indgangne i Hvilen, <rs type="bible" key="Hebr 4,9-10" rend="reference">den store Hvile, som Gud haver beredt sit Folk</rs>, og bie kun paa os som <seg type="com" n="com20">end</seg> vil stride samme Strid, for at istemme <rs type="bible" key="&#x00C5;b 19,1-10" rend="reference">Seiers-Sangen: det evige Halleluja</rs>! o store Gud, vi love Dig! <rs type="bible" key="Ef 6,10-12" rend="reference">Ja, Br&#x00F8;dre, derfor vil vi have Kamp</rs> i Herrens Navn, og det skal v&#x00E6;re vor Tr&#x00F8;st, at for Hans &#x00D8;ine, <rs type="bible" key="Joh 8,15-16" rend="reference">der ikke d&#x00F8;mmer efter Skin, <pb type="edition" ed="US" n="434"/>men efter Sandhed</rs>, <seg type="com" n="com21">omgaaes vi</seg> <rs type="bible" key="Ef 5,15" rend="quote">ikke som de Uvise men som de Vise</rs>, aldenstund vi <rs type="bible" key="1 Kor 9,26" rend="reference1787">k&#x00E6;mpe ei for det Uvisse</rs>, men for det Visse, <rs type="bible" key="1 Kor 9,25" rend="reference">ei for en forg&#x00E6;ngelig, men for en uforg&#x00E6;ngelig Krone</rs>, ja, det skal tr&#x00F8;ste os over al vor M&#x00F8;ie paa Jorden, at, er end <hi rend="spaced">Kampen haard,</hi> saa er <seg type="com" n="com22">og</seg> <hi rend="spaced">Seiren n&#x00E6;r,</hi> og <hi rend="spaced">Hvilen s&#x00F8;d!</hi>
+            </p>
+            
+            <p rend="firstIndent"><rs type="bible" key="Ef 6,12-13" rend="quote" n="bible5" subtype="bibleStart"/>Br&#x00F8;dre! siger <persName key="pe343">Apostelen</persName>, vi have Kamp, ikke med Kj&#x00F8;d og Blod, men med Fyrstend&#x00F8;mmer og Magter, med Verdens Herrer, som regiere i denne Verdens, denne Tids-Alders, M&#x00F8;rke, med det aandelige Ondskab under <pb type="text" facs="1825_421A_fax013.jpg" n="7" ed="A"/>Himmelen; derfor <seg type="com" n="com23">tager</seg> Guds fulde Rustning paa<rs type="bible" key="Ef 6,12-13" rend="quote" n="bible5" subtype="bibleEnd"/>! Sandelig, lytte vi kun troende til denne Apostel-Tale, som <hi rend="spaced">Aanden</hi> f&#x00F8;rer til Menigheden, da kan vi umuelig tvivle om, at Kampen jo er haard, at Striden jo er heed; thi, er det <hi rend="spaced">ikke</hi> Ki&#x00F8;d og Blod, men en, med M&#x00F8;rkets Scepter, <seg type="com" n="com212">denne Verdens-Tid</seg> beherskende ondskabsfuld Aandelighed, vi have at bek&#x00E6;mpe, er det ikke vore egne de synlige, men <hi rend="spaced">Guds</hi> og vor Herres <hi rend="spaced">
+               <persName key="pe45">Jesu Christi</persName>
+            </hi> <app type="corrNote" select="yes"><lem wit="B">usynlige</lem><rdg wit="A">nsynlige</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Fiender, med hvilke vi skal pr&#x00F8;ve Styrke, og kan vi derfor kun bestaae i Kampen, ved omhyggelig at if&#x00F8;re os <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs>; o, da maa<!-- sidste a en smule l&#x00E6;deret --> Kampen sagtens v&#x00E6;re haard <hi rend="spaced">for os,</hi> der af Naturen selv ere ki&#x00F8;delige, og sandse kun de ki&#x00F8;delige Ting, haard <hi rend="spaced">for os,</hi> som, naar vi <rs type="bible" key="Gal 3,3" rend="quote">end have begyndt i Aanden, dog idelig fristes til at fuldende i Ki&#x00F8;det</rs>, haard <hi rend="spaced">for os,</hi> som, under Kampen altid <seg type="com" n="com301">staae Fare for</seg>, snart at hovmodes og snart at forsage: snart at forlade os paa vor egen Rustning, og snart at <seg type="com" n="com213">mistvivle</seg> om, at selv <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs> kan gi&#x00F8;re os <seg type="com" n="com214">dygtige til</seg> at <rs type="bible" key="Ef 6,13" rend="quote">bestaae paa den onde Dag</rs>, og som uovervindelige <seg type="com" n="com401">K&#x00E6;mper</seg> &#x00E6;re det Banner, den <seg type="com" n="com24">Herre Zebaoths</seg> 
+               Banner, vi f&#x00F8;lge! Ja, Br&#x00F8;dre, <hi rend="spaced">derfor,</hi> men ogsaa <hi rend="spaced">kun derfor</hi> er Kampen haard og farlig; thi var Fienden kun aldeles <pb type="text" facs="1825_421A_fax014.jpg" n="8" ed="A"/>udenfor os, da var Kampen i <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs> let, da var den som en Leg, <rs type="bible" key="1 Kor 9,24-26" rend="reference">et V&#x00E6;dde-L&#x00F8;b og <seg type="com" n="com25">F&#x00E6;gter-Spil</seg> om H&#x00E6;ders-Krandsen</rs>; thi hvad formaaer al Verdens Magt og hele Helvede mod <rs type="bible" key="Matt 28,18" rend="reference">Ham, som haver al Magt i Himlen og paa Jorden</rs>, mod Ham, hvis Helte-Gierninger i Tidens L&#x00F8;b med <rs type="bible" key="Job 37,5" rend="reference">Torden-R&#x00F8;st</rs>
+               gientage hvad Han siger ved Propheten: <rs type="bible" key="Es 10,15" rend="reference">vil &#x00D8;xen l&#x00F8;fte sig mod den, som hugger, Kieppen imod den, som slaaer?</rs> Vil Nogen pr&#x00F8;ve Styrke med <hi rend="spaced">Mig!</hi> o, lad ham dog heller slutte Fred med Mig!</p>
+            
+            <p rend="firstIndent">Ja, vare vi kun <seg type="com" n="com215">fuldkommelig</seg> <rs type="bible" key="1 Thess 1,9 og Hebr 9,14" rend="reference">den levende Guds Tienere</rs>, altid, fra Top til Taa, fra Hoved-Isse til Fod-Saale, kl&#x00E6;dte i <rs type="bible" key="Ef 6,11.13" rend="reference">Hans Rustning</rs>: med evangelisk Nidki&#x00E6;rhed, med <rs type="bible" key="Ef 6,14" rend="reference">Sandheds Belte</rs>, og <rs type="bible" key="Ef 6,17" rend="quote">Aandens Sv&#x00E6;rd</rs>, som er Guds Ord, med <rs type="bible" key="Ef 6,16" rend="quote">Troens Skjold</rs>, med <rs type="bible" key="Ef 6,14" rend="quote">Retf&#x00E6;rdigheds Brynie</rs>, og <rs type="bible" key="Ef 6,17" rend="quote1787">Saligheds Hjelm</rs>, da skulde vi <seg type="com" n="com26">og</seg> al<pb type="edition" ed="US" n="435"/>tid <rs type="bible" key="Ef 6,12" rend="reference">gaae i Strid mod M&#x00F8;rkets Magt og Verdens Aand</rs>, som til en Dands, da skulde vort <seg type="com" n="com27">Krigs-L&#x00F8;sen</seg> kun v&#x00E6;re <seg type="com" n="com216">Nyn</seg> paa Seiers-Sangen, da skulde vor <hi rend="spaced">aandelige</hi> Kamp kun v&#x00E6;re Sv&#x00E6;rde-Lyn over Fiendens Isse, til han forsvandt i det yderste M&#x00F8;rke, hvor der ei meer er Magt til Strid, men kun til <rs type="bible" key="Matt 8,12" rend="eg1787">Graad og T&#x00E6;nders Gnidsel</rs>! Men de Christnes Kamp er haard, fordi Hoved-Slagene staae langt fra Verdens 
+               <pb type="text" facs="1825_421A_fax015.jpg" n="9" ed="A"/>&#x00D8;ine, staae inden i os, om <rs type="bible" key="Luk 17,20-21" rend="quote">det Guds-Rige, der kommer ikke <seg type="com" n="com28">saa</seg>, at man kan pege derpaa, og sige: see her og see der!</rs> ja, derfor er den haard, de Christnes Kamp, fordi vi have Fienden <seg type="com" n="com29">inden</seg> Voldene, fordi den udvortes Kamp er kun som en Skygge af den Indvortes, fordi i os <hi rend="spaced">selv,</hi> <seg type="com" n="com102">det er</seg> <rs type="bible" key="Rom 7,18" rend="quote">i vort Ki&#x00F8;d boer intet Godt</rs>; fordi den falske Viisdom, den Vantro, den Spot, den Hovmod, den Verdens-Ki&#x00E6;rlighed, den Dorskhed, Ligegyldighed og Lunkenhed, vi i Verden har at drages med, de beleire idelig vort eget Hjerte, bryde ind, saasnart vi slumre kun et &#x00D8;ieblik, og kan da umuelig uden haardnakket Kamp og dybe Saar igjen uddrives!</p>
+            <p rend="firstIndent">O, christne Venner! det maae, det ville vi da aldrig glemme, at kun derfor er vor christelige Kamp saa haard, fordi Ki&#x00F8;dets <seg type="com" n="com30">Sands</seg> ogsaa i os er Fiendskab imod Gud, saa at selv <rs type="bible" key="Luk 1,2" rend="eg"><!-- evt. en bibelref mere: Apg 6,4 --><seg type="com" n="com31">Ordets Tienere</seg></rs>, ski&#x00F8;ndt deres Kamp for Menigheden er af en egen Art, dog <seg type="com" n="com32">vist</seg> alle maae bekiende, det er den haardeste Kamp, de f&#x00F8;re hos sig selv i det Skjulte, med Verdens Aand i deres eget Bryst, med Slangen i Barmen! Ingenlunde vil vi d&#x00F8;lge for os selv og for hverandre, at den christelige Kamp er haard, men beski&#x00E6;mme ville vi vor egen Lunkenhed, ved h&#x00F8;it og frit at bekiende, den <pb type="text" facs="1825_421A_fax016.jpg" n="10" ed="A"/>Kamp er kun haard, fordi vi have Fienden ki&#x00E6;r; thi det er den christelige Kamps Hemmelighed, som Verden aldrig kan forstaae, da det er tvertimod dens Aand og Skik, at <rs type="bible" key="Matt 5,44" rend="reference">
+               <hi rend="spaced">vore egne Fiender</hi> skal vi <hi rend="spaced">elske</hi></rs>, men <hi rend="spaced">Herrens Fiender</hi> skal vi <hi rend="spaced">hade!</hi> Alt <hi rend="spaced">det Fiendtlige,</hi> som <hi rend="spaced">kun</hi> er <hi rend="spaced">Ki&#x00F8;d</hi> og <hi rend="spaced">Blod,</hi> og kan i det H&#x00F8;ieste <rs type="bible" key="Matt 10,28" rend="allusion">slaae legemlig ihjel</rs>, det skal vi elske, ski&#x00F8;ndt det piner os, og overvinde ved Taalmodighed; thi saaledes gi&#x00F8;r vi med vort eget Ki&#x00F8;d og Blod, hade det ikke, men <seg type="com" n="com33">f&#x00F8;de</seg> og vederkv&#x00E6;ge det, endski&#x00F8;ndt det smerter os, og f&#x00F8;rer os til Graven, og vi skal <rs type="bible" key="Matt 22,39" rend="eg">elske N&#x00E6;sten som os selv</rs>; men alt det Fiendtlige som er <hi rend="spaced">aandelig</hi> Ondskab, strider imod Gud og Sandhed, og <rs type="bible" key="Matt 10,28" rend="allusion">kan myrde Sj&#x00E6;le</rs>, det skal vi i Sandhed hade, aldrig skaane, men i <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs> <hi rend="spaced">aandelig</hi> <seg type="com" n="com218">bestride</seg>, og af al Magt &#x00F8;del&#x00E6;gge, som skrevet staaer: <rs type="bible" key="Sl 97,10" rend="quote">I, som elske Herren, <seg type="com" n="com103">hader</seg> det Onde!</rs> <rs type="bible" key="Jer 48,10" rend="quote1787">forbandet den som gi&#x00F8;r Herrens Gierning med Svig og <seg type="com" n="com217">forhindrer</seg> sit Sv&#x00E6;rd</rs>; thi <rs type="bible" key="2 Kor 6,14-15" rend="quote1787">hvad <seg type="com" n="com34">Samfund</seg> er der <pb type="edition" ed="US" n="436"/>mellem Lys og M&#x00F8;rke, hvordan kan<!-- n l&#x00E6;deret, men kun i ekspl 2 --> <persName key="pe45">Christus</persName> komme overeens med <seg type="com" n="com109">Belial</seg>, og hvad Deel haver den Troende med de Vantroe</rs>! Saaledes skal vi forstaae <persName key="pe343">Apostelens</persName> Ord i <rs type="bible" key="Ef 6,10-17" rend="quote">Dagens Epistel</rs>, at det er ikke med Ki&#x00F8;d og Blod, men med den <hi rend="spaced">aandelige</hi> Ondskab vi have Kamp, og at vore <pb type="text" facs="1825_421A_fax017.jpg" n="11" ed="A"/>Strids-Vaaben derfor naturligviis ei kan eller maae v&#x00E6;re<!-- spies i ekspl. 2 & 3--> ki&#x00F8;delige, men aandelige, til at nedbryde alle de Bef&#x00E6;stninger, som trodse Guds Ord, <rs type="bible" key="Ef 6,17" rend="quote">det Aandens Sv&#x00E6;rd</rs>, vi kaldtes til i Herrens Navn at f&#x00F8;re. Og sandelig, dersom vi efter denne Oplysning endnu sammenblande de Fiender vi skal elske og <seg type="com" n="com35">spare</seg>, med dem vi skal hade og nedhugge, forvexle <rs type="bible" key="Joh 18,11" rend="reference">det Sv&#x00E6;rd vi skal stikke i <seg type="com" n="com36">Balgen</seg></rs>, <app type="corrNote" select="yes"><lem wit="GV">med</lem><rdg wit="A">men</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> d<!-- d l&#x00E6;deret, men kun i ekspl 2-->et vi paa Herrens Ord skal lade udfare, at gi&#x00F8;re Hans Gierning uden Svig, sammenblande og forvexle vi endnu disse himmelvidt forskiellige Ting, og <rs type="bible" key="Jer 6,14 og Jer 8,11" rend="reference">raabe Fred, hvor der er ingen Fred</rs>, Fred med Herrens Fiender, som med Br&#x00F8;dre, ski&#x00F8;ndt det er hvad Herren hader, <rs type="bible" key="1 Sam 2,12-36" rend="reference">vil vi, som <hi rend="spaced">
+               <persName key="pe1444">Eli</persName>,</hi> v&#x00E6;re fredelige, sagtmodige, venlige mod den aandelige Ondskab i Verden</rs>; sandelig, da er det kun fordi vi have sluttet Fred med Fienden i vort Inderste; thi vi kunde bestride Sandheds Fiender i Verden og dog skaane dem hos os selv, men opv&#x00E6;kkes vi end ikke til Nidki&#x00E6;rhed, naar vi m<!-- m mangler sværte i ekspl. 2 -->&#x00F8;de dem paa fremmed Grund, da pleie vi ustridig Venskab med dem i vort eget Huus, og hvad vi hade hos os selv, kan vi umuelig elske hos <app type="corrNote" select="yes"><lem wit="B">Andre</lem><rdg wit="A">Audre</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>!</p>
+            
+            <fw type="blank"/>
+            <!-- intet indryk pga mellemslag -->
+            <p rend="noIndent">Saaledes, Christne! skal vi beski&#x00E6;mme vor <hi rend="spaced">Lunkenhed</hi>, som vi, for at undgaae <pb type="text" facs="1825_421A_fax018.jpg" n="12" ed="A"/>Verdens Had og Kampens Hede, har af Naturen Lyst til at skjule under Fredeligheds og Ki&#x00E6;rligheds, under Sindigheds, Sagtmodigheds og Mildheds D&#x00E6;kke, saaledes skal vi beski&#x00E6;mme den, og komme Herrens Ord ihu: <rs type="bible" key="&#x00C5;b 3,16" rend="quote">fordi du er lunken, er hverken kold eller varm, derfor udspytter jeg dig af min Mund</rs>!</p>
+            
+            <p rend="firstIndent">Dog, <seg type="com" n="com38">vel os</seg>, <hi rend="spaced">Christne</hi> Venner! thi seer kun Han, som seer vort Hjerte, at <rs type="bible" key="Matt 26,41" rend="quote">Aanden er villig, ski&#x00F8;ndt Ki&#x00F8;det er skr&#x00F8;beligt</rs>, seer Han kun, at vi dog i Grunden str&#x00E6;be at hade hans Fiender, i os selv og i Verden, med et aandeligt, et himmelsk, et sandhedski&#x00E6;rligt Had; seer Han kun, at, om vi end krympe os for Kampen, saa er det dog i Grunden vort Hjertes <seg type="com" n="com303">Begi&#x00E6;ring</seg> at bestaae den <seg type="com" n="com40">mandelig</seg> i Herren, i <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs>; o, da er ingen Herre, ingen H&#x00F8;vding naadig, from og god som Han, da tugter og beski&#x00E6;mmer Han kun vor <hi rend="spaced">Lunkenhed</hi>, for at kunne komme vor Skr&#x00F8;belighed til Hjelp, saa vi ei falde i Fiendernes H&#x00E6;nder; og er Hans Ord end <rs type="bible" key="Jer 23,29" rend="reference">som en Hammer, der knuser <pb type="edition" ed="US" n="437"/>Klipper</rs>, <rs type="bible" key="&#x00C5;b 3,20" rend="reference">saa banker Han dog kun med den paa vort Hjerte-Kammer, for at vi skal lukke op, <seg type="com" n="com219">at</seg> Han kan indgaae og holde Nadver med os</rs>; og ki&#x00E6;rlig tr&#x00F8;ster Han <pb type="text" facs="1825_421A_fax019.jpg" n="13" ed="A"/>os under Kampens Hede med Seirens Glands og Hvilens S&#x00F8;dhed!</p>
+            
+            <p rend="firstIndent">Ja, Christne Venner! bliver Kampen derved haard, at Hoved-Slagene maae staae paa vore egne Enem&#x00E6;rker, maae koste Hjerte-Saar og Hjerte-Blod, o, saa bliver ogsaa netop derved, naar vi &#x00E6;rlig k&#x00E6;mpe, Forvisningen om herlig Seier og om liflig Hvile saa fast og levende, som den var ellers aldrig blevet, <seg type="com" n="com402">saa</seg> her, som allevegne, vender Gud det for Sine til Godt, hvad Fienden af Ondskab opt&#x00E6;nker imod dem, og de maae taknemmelig f&#x00F8;le, det er en velsignet Sandhed, at <rs type="bible" key="Rom 8,28" rend="quote">alle Ting tjene dem til Gode, som elske Gud</rs>!</p>
+            
+            <p rend="firstIndent">
+               <rs type="bible" key="2 Pet 1,19" rend="reference">Vi have et fast prophetisk Ord, der skal lyse for os, som en Nat-Lampe, til Dagen gryer og Morgen-Stjernen oprinder i vort Hjerte</rs>, og Ordet er den Forj&#x00E6;ttelse, at <rs type="bible" key="Matt 28,20" rend="reference">Herren vil v&#x00E6;re med os alle Dage til Verdens Ende</rs>, at <rs type="bible" key="Matt 16,18" rend="reference">Helvedes Porte skal aldrig faae Overhaand over Hans Kirke og Menighed</rs>, og at, <rs type="bible" key="Matt 24,35" rend="reference">om end Himmel og Jord forgaaer, skal Hans Ord dog ingenlunde forgaae</rs>: svigte og glippe. Denne Forvisning, at Herren er med os, strider med os og strider for os, alle saamange som Han finder i <rs type="bible" key="Matt 7,24-25" rend="reference"><!-- og Matt 16,18 --> Huset paa Klippen</rs>, den allene er det som spaaer os Seier <pb type="text" facs="1825_421A_fax020.jpg" n="14" ed="A"/>i vor Strid for Evangelium; thi som vore F&#x00E6;dre sang paa denne Dag:</p>
+            
+            <lg>
+               <!-- skal der v&#x00E6;re mindre skriftype her? -->
+               <l>Vil Gud vor Herre ei med os staae;</l>
+               <l>Naar vore Fiender komme,</l>
+               <l>Vil Gud vor Sag ei tage sig paa,</l>
+               <l>Og stride os til <seg type="com" n="com104">Fromme</seg>;</l>
+               <l><seg type="com" n="com42">Uden</seg> Han <seg type="com" n="com220">Israel</seg> hjelper <seg type="com" n="com43">vist</seg>,</l>
+               <l>Og selv forstyrrer Fiendens List,</l>
+               <l>Da <seg type="com" n="com44">have vi forloret</seg>!</l>
+            </lg>
+            
+            <p rend="noIndent">
+               <seg type="com" n="com45">saa</seg> er det alle Dage, og troede vi da ikke med F&#x00E6;drene, at den v&#x00E6;ldige Helt, som <seg type="com" n="com46">beholder altid Marken</seg>, at han vil stride for os, hvis egen Magt er intet v&#x00E6;rd, da lode vi vel v&#x00E6;re at tilegne os det store christelige Helte-Ord:</p>
+            
+            <lg>
+               <l>Om Verden fuld af Dj&#x00E6;vle <seg type="com" n="com105">vaar</seg>,</l>
+               <l>Som vilde os <seg type="com" n="com47">slet</seg> opsluge,</l>
+               <l>Vi frygte dem <seg type="com" n="com48">ikke ved et Haar</seg>;</l>
+            </lg>
+            
+            <p rend="noIndent"><pb type="edition" ed="US" n="438"/>kun med den gamle, enfoldige, pr&#x00F8;vede, aldrig skuffede Tillid til vor Herres <hi rend="spaced">
+               <persName key="pe45">Jesu Christi</persName>
+            </hi> ki&#x00E6;rlige, guddomskraftige N&#x00E6;rv&#x00E6;relse iblandt os, kun med den kan vi trodse Hans Fiender og synge:</p>
+            
+            
+            <lg>
+               <l>Deres Snarer vil Han s&#x00F8;nderrive,</l>
+               <l>Deres falske L&#x00E6;re skal <seg type="com" n="com221">&#x00F8;de blive</seg>,</l>
+               <l>Det kunne de ikke forhindre!</l>
+            </lg>
+            
+            <!-- er det OK med noIndent her pga. det tiln&#x00E6;rmelsesvise mellemslag efter lg? -->
+            <p rend="noIndent">Men, Christne Venner! <hi rend="spaced">hvorved</hi> er det vel, at denne Tro paa Herrens N&#x00E6;rv&#x00E6;relse, og denne Overbeviisning om Fiendens Afmagt imod Ham, hvorved er det vel, at denne Tro
+               <pb type="text" facs="1825_421A_fax021.jpg" n="15" ed="A"/>og Forsikkring bliver levende, styrkende, <seg type="com" n="com222">tr&#x00F8;stelig</seg> for os, hvorved, <seg type="com" n="com49">uden</seg> ved den Erfaring, hvorpaa de Christnes indvortes Kamp er saa rig, ved den Erfaring, at Herren <seg type="com" n="com50">end</seg> er n&#x00E6;r hos alle dem, som Ham i Sandhed paakalde, og at <rs type="bible" key="Es 59,1" rend="reference">Hans Arm er ingenlunde forkortet, at Han h&#x00F8;rer de Gudfrygtiges Raab og hjelper dem</rs>, <rs type="bible" key="Es 65,24" rend="reference">h&#x00F8;rer ofte, f&#x00F8;r vi raabe, svarer, f&#x00F8;r vi kalde</rs>, frelser<!-- rest af spies i alle tre ekspl. -->, f&#x00F8;r vi skue Faren! Kun da, naar vi saaledes have l&#x00E6;rt at kiende, hvor eiegod den Herre er, vi tjene, hvor alm&#x00E6;gtig Han er, den Helt, hvis Seier over D&#x00F8;d og Dj&#x00E6;vel vi bevidne, hvilken livsalig Hjelper i N&#x00F8;d Han er, den Frelser, hvis Navn vi udraabe, som <hi rend="spaced">det Eneste</hi> under Himlen, hvori det er Syndere givet at finde L&#x00E6;gedom, at finde Fred og Salighed for Sj&#x00E6;l og Hjerte; kun da, naar vi saaledes af Erfaring have l&#x00E6;rt at kiende vor Herres og Frelsers <hi rend="spaced">
+                  <persName key="pe45">Jesu Christi</persName>
+               </hi> Venne-Hjerte og Helte-Kraft, Menneske-&#x00D8;mhed og Guddoms-Magt, kun da faae vi Magt til at stole paa Ham, til med Hans Ord som vort Skjold at trodse Verden og dens Aand, som for Hans, for <hi rend="spaced">
+                  <persName key="pe45">Jesu</persName>
+               </hi> Navns Bekiendelses Skyld, opfarer og raser imod os; kun da bliver det os midt i Kampens Hede en urokkelig Vished, en livsalig Opmuntring, at <hi rend="spaced">Seiren</hi> er <hi rend="spaced">n&#x00E6;r!</hi>
+            </p>
+            
+            <p rend="firstIndent">
+               <pb type="text" facs="1825_421A_fax022.jpg" n="16" ed="A"/>Dog, Christne Venner! ski&#x00F8;ndt Seiers-Haabet er os n&#x00F8;dvendigt under Kampen, og ski&#x00F8;ndt det er aldeles <seg type="com" n="com51">vist</seg>, at jo mere <persName key="pe45">Christi</persName> Fiender larme, jo st&#x00E6;rkere de trodse, des vissere, des n&#x00E6;rmere er Seiren over dem, saa lad os dog aldrig glemme, hvad daglig Erfaring i vort Inderste indski&#x00E6;rper os, at med vore Seire herneden haver det ingen Bestandighed, er det kun lidet bevendt, uden forsaavidt de stadf&#x00E6;ste og oplive os i Troen paa den ene store aandelige Seier, som er vundet under Himlen, paa <rs type="bible" key="1 Mos 3,15 og Rom 16,20" rend="reference">
+                  <!-- HUSK også Rom 16,20 -->Seiren, <hi rend="spaced"><persName key="pe45">Jesus <app type="corrNote" select="yes"><lem wit="B">Christus</lem><rdg wit="A">Chistus</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></persName></hi> vandt for os alle, da han s&#x00F8;nderknuste Slangens Hoved</rs>, Seiren, som Engle kun v&#x00E6;rdig besynge, <pb type="edition" ed="US" n="439"/>og hvis salige F&#x00F8;lger kun en herlig Evighed kan ret aabenbare! Lad os aldrig knytte vor Tr&#x00F8;st og Gl&#x00E6;de til de timelige Seire, vi i Herrens Navn kan vinde; thi dermed skabe vi os bittre Sorger, ei blot fordi der, saal&#x00E6;nge vi vandre herneden, altid kommer Nat efter Dag, og Fald efter Seier, men is&#x00E6;r, fordi vi aldrig ere lettere at overvinde end i Seiers-Rusen, aldrig st&#x00E6;rkere, end naar vi seire, fristes til at <rs type="bible" key="Gal 6,8" rend="allusion">h&#x00F8;ste i Ki&#x00F8;det, hvad der blev saaet i Aanden</rs>, aldrig <seg type="com" n="com106">snarere</seg> <rs type="bible" key="Matt 26,36-46" rend="allusion">glemme at vaage og bede</rs>, og dermed if&#x00F8;re os den <rs type="bible" key="Ef 6,11" rend="quote">Guds fulde Rustning, som ene kan beski&#x00E6;rme os mod Dj&#x00E6;velens snedige <seg type="com" n="com52">Anl&#x00F8;b</seg></rs>! Dybt skal <pb type="text" facs="1825_421A_fax023.jpg" n="17" ed="A"/>vi indpr&#x00E6;nte os hvad <hi rend="spaced">
+                     <persName key="pe45">Jesus</persName>
+                  </hi> sagde til sine Discipler, <rs type="bible" key="Luk 10,17" rend="reference">da de hoverede over, at ogsaa de urene Aander vare dem lydige i Hans Navn</rs>; thi da sagde Herren: <rs type="bible" key="Luk 10,20" rend="quote"><seg type="com" n="com107">gl&#x00E6;der</seg> eder ikke derover, at Aanderne ere eder underdanige, men <seg type="com" n="com107">gl&#x00E6;der</seg><!-- e klattet kun i ekskpl. 2 --> eder heller over at eders Navne ere skrevne</rs> <rs type="bible" key="Fil 4,3" rend="quote">i <hi rend="spaced">Livsens</hi> Bog</rs>!                  
+            </p>
+            <!-- både 1992 og biblia har 'himlene i st.f. livets bog. Der er m&#x00E5;ske tale om en sammenblanding med livets bog fra &#x00C5;b?-->
+            
+            <p rend="firstIndent">Ja Christne! <seg type="com" n="com53">saa</seg> skal det v&#x00E6;re: hver en Seier over aandeligt Ondskab, vi, indvortes eller udvortes, i Herrens Navn vente og vinde, enhver saadan Seier skal vi kun regne til Vinding for Herren, kun gl&#x00E6;de os over, som et nyt Beviis til de Mange paa, at <rs type="bible" key="Matt 28,18" rend="reference">han som har al Magt i Himlen og paa Jorden</rs>, at han er med sin <hi rend="spaced">Aand</hi> og Kraft tilst&#x00E6;de blandt os, som blandt sine gamle Tienere og Vidner; kun gl&#x00E6;de os over, som en ny R&#x00F8;st, hvormed Jorden udstammer et Ord til Hans Pris, <rs type="bible" key="Sl 19,2" rend="quote1787">hvis &#x00C6;re Himlene fort&#x00E6;lle</rs>, som et Led af den store Seiers-Ki&#x00E6;de, <rs type="bible" key="Sl 19,3" rend="reference">hvorom Dage alt i mange Aarhundreder <seg type="com" n="com100">talde</seg> med Dage, og N&#x00E6;tter kundgjorde hinanden <seg type="com" n="com54">Vidskab</seg>
+            </rs>! Paa vore<!-- læderet e i alle tre ekspl.--> egne Vegne skal vi ingenlunde gl&#x00E6;de os over vundne Seire, men, som <persName key="pe343">Apostelen</persName>, <rs type="bible" key="Fil 3,13-14" rend="reference1787">glemme det Tilbagelagte, og <seg type="com" n="com55">stunde mod</seg> det Tilkommende, r&#x00E6;kke efter Klenodiet</rs>, og aldrig oversee <rs type="bible" key="Matt 20,22 og Matt 26,39.42" rend="reference1787" subtype="bibleStart" n="bible6"/><hi rend="spaced">Kalken:</hi> den sidste, bittre Kalk, som vi ved hvert Skridt paa Banen <pb type="text" facs="1825_421A_fax024.jpg" n="18" ed="A"/>n&#x00E6;rme os, og som n&#x00F8;dvendig maa t&#x00F8;mmes<rs type="bible" key="Matt 20,22 og Matt 26,39.42" rend="reference1787" subtype="bibleEnd" n="bible6"/>, f&#x00F8;r <rs type="bible" key="2 Tim 4,7-8" rend="reference1787">Kronen vindes</rs>! Paa vore egne Vegne skal vi kun gl&#x00E6;de os over Seiren, <hi rend="spaced">
+               <persName key="pe45">
+                  <persName key="pe45">Jesus</persName>
+               </persName>
+            </hi> vandt, da <rs type="bible" key="2 Tim 1,10" rend="reference">Han <seg type="com" n="com56">f&#x00F8;rde</seg> Liv og <seg type="com" n="com57">Uforkr&#x00E6;nkelighed</seg> igien for Lyset</rs>, da Han i <rs type="bible" key="Mark 16,1-8" rend="reference">Graven, hvoraf Han seierrig opstod</rs>, beredte os en rolig S&#x00F8;vn og glad Opvaagnelse, da Han i Faderens Huus, <rs type="bible" key="ApG 1,9-11" rend="reference">hvortil Han forklaret opfoer</rs>, beredte os en s&#x00F8;d og salig Hvile efter Tidens Kamp og M&#x00F8;ie! Ja, dette store, <seg type="com" n="com58">uforkr&#x00E6;nkelige</seg> Haab, det er den <rs type="bible" key="Ef 6,17" rend="quote">Salighedens Hjelm</rs>, der holder de Christnes Hoved opreist under Kampen; <rs type="bible" key="1 Kor 10,16" rend="quote1787">
+               Velsignelsens Kalk</rs>, hvori vi troende inddrikke Guddoms-Livet, som er i <hi rend="spaced">
+                  <persName key="pe45">Christo Jesu</persName>,</hi> det er vor uudt&#x00F8;mmelige Tr&#x00F8;stens og Gl&#x00E6;dens Kilde; thi det er med Hvilen, som med Seiren: staaer <app type="corrNote" select="yes"><lem wit="GV">Hoved-Slaget</lem><rdg wit="A">Hoved Slaget</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> i vort Inderste, og seire vi i <pb type="edition" ed="US" n="440"/>Herren, saa Guds Rige kommer til os, da l&#x00E6;re vi ei blot at kiende Seierens Storhed, men ogsaa Fredens Velsignelse; <rs type="bible" key="Joh 20,19-23" rend="reference">hvor den Korsf&#x00E6;stede, igien Opstandne, indtr&#x00E6;der blandt Sine, som forvente Ham, der siger Han altid: Fred v&#x00E6;re med eder! <seg type="com" n="com59">annammer</seg> den Hellig-Aand!</rs> hvor Guds Rige kommer, der er Guds Fred, thi <rs type="bible" key="Rom 14,17" rend="quote">Guds Rige er Retf&#x00E6;rdighed, Fred og Gl&#x00E6;de i den Hellig-Aand</rs>! Medens derfor Verden t&#x00E6;nker, Verden raaber, vi er Fredens Fiender, da f&#x00F8;le vi dybest, <pb type="text" facs="1825_421A_fax025.jpg" n="19" ed="A"/>at kun for Freden er det v&#x00E6;rdt at stride, kun fordi det Guds Ord, som Verden forsmaaer, hader og forhaaner, kun fordi det er et <hi rend="spaced"><rs type="bible" key="Ef 6,15" rend="quote">Fredens Evangelium</rs>,</hi> der giver alle Troende <rs type="bible" key="Matt 11,29" rend="reference">Hvile for Sj&#x00E6;len</rs>, kun derfor er Strid og M&#x00F8;ie, Saar og Smerte, Frygt og Sorg ei v&#x00E6;rd at regne, kun fordi <rs type="bible" key="&#x00C5;b 7,9" rend="allusion">Paradisets Palmer</rs> vinke, kun derfor kan og vil vi ringeagte <rs type="bible" key="Hebr 12,2" rend="reference">Korsets Skam</rs>!</p>
+            
+            <p rend="firstIndent">O Christne! saa lad os i <rs type="bible" key="Ef 6,11.13" rend="quote">Guds fulde Rustning</rs> <seg type="com" n="com108">mandelig</seg> bestaae den Kamp, som er vor Lodd, ei <rs type="bible" key="4 Mos 14,2" rend="allusion1787">knurre imod Herren</rs>, men takke Ham for <seg type="com" n="com60">Kaaret</seg>, aldenstund vi vide, at vi har en H&#x00F8;vding, der uddrog som Helten, der skal vinde, ski&#x00E6;nker sine Stridsm&#x00E6;nd <seg type="com" n="com61">overfl&#x00F8;dig Mod og Kraft</seg>, med fast beseiglet Seiers-Haab, paa Kampens Dag, og haver beredt dem, naar Time-Glasset vendes, og Verden siger, de faldt afm&#x00E6;gtige til Jorden, haver da beredt dem en salig Hvile i Faderens Ski&#x00F8;d, hvor de skal <rs type="bible" key="Hebr 4,10 og 1 Mos 2,2" rend="reference">hvile af deres Gierninger som Han hviler af sine</rs>, og dele Hans <rs type="bible" key="Joh 17,5.24" rend="reference">Herlighed, som han havde hos Faderen f&#x00F8;r Verden blev</rs>! Ja, <seg type="com" n="com223">love</seg>, prise og takke vor H&#x00F8;vding, vor Konge, vor Frelser, <rs type="bible" key="Sl 61,4" rend="reference1787">det st&#x00E6;rke Taarn, vi altid have at henflye til fra Fiendens Ansigt</rs>, vor Saligheds Fyrste, som giver os Fred, den Guds Eenbaarne, <hi rend="spaced">
+               <persName key="pe45">Jesus</persName> <!-- kan slutm&#x00E6;rket flyttes hen efter Christus? --> Chri</hi><pb type="text" facs="1825_421A_fax026.jpg" n="20" ed="A"/><hi rend="spaced">stus,</hi> den uovervindelige Helt, som strider for os, og som strider med os, love, prise og takke ham vil vi, i Kamp og Seier, i Medgang og Modgang, i Liv og i D&#x00F8;d, og lade vor ydmyge B&#x00F8;n falde for Hans Ansigt, sjungende med christne F&#x00E6;dre:</p>
+            
+            <lg>
+               <l>O m&#x00E6;gtig Seier-Herre,</l>
+               <l>Som <rs type="bible" key="Sl 110,1 og Matt 22,44" rend="reference" subtype="bibleStart" n="bible1"/>Fiendens hele Magt,</l><!-- NB! NJC: 1 mere: Hebr 1,13 -->
+               <l>Dit store Navn til &#x00C6;re,</l>
+               <l>Har under F&#x00F8;dder lagt<rs type="bible" key="Sl 110,1 og Matt 22,44" rend="reference" subtype="bibleEnd" n="bible1"/>,</l>
+               <l>L&#x00E6;r os at k&#x00E6;mpe <seg type="com" n="com62">saa</seg>,</l>
+               <l>At naar vor Strid har Ende,</l>
+               <l><rs type="bible" key="&#x00C5;b 7,9" rend="reference">Vi Palmer kan i H&#x00E6;nde</rs></l>
+               <l><rs type="bible" key="&#x00C5;b 2,10" rend="reference">Og Seiers-Krone faae</rs>!</l><!-- 1787: Livsens krone; 1992: Sejrskrans --><!-- evt. også 1 Kor 9,25 -->
+            </lg>
+            <!-- noIndent her pga. indholdsm&#x00E6;ssigt nyt afsnit efter lg, selvom mellemslag mangler -->
+            <p rend="noIndent"><pb type="edition" ed="US" n="441"/>O! gi&#x00F8;re vi kun det af Hjertens Grund, da er Seiren og Hvilen os saa <seg type="com" n="com63">vis</seg> som Kampen, da hviske Engle til vort Hjerte, hvad Kongen selv vil h&#x00F8;it udraabe, naar Han <rs type="bible" key="Kol 1,12" rend="reference"><seg type="com" n="com224">skifter</seg> Arv med de Hellige i Lyset</rs>, og byder hver &#x00E6;rlig Stridsmand hjertelig Velkommen, sigende: vel! <rs type="bible" key="Matt 25,21.23" rend="quote">Du gode og tro Tiener! du haver v&#x00E6;ret tro over Lidet, Jeg vil s&#x00E6;tte dig over Meget, <seg type="com" n="com64">gak</seg> ind til din Herres Gl&#x00E6;de</rs>! <rs type="bible" key="Luk 8,8" rend="eg">Hvo som haver &#x00D8;ren at h&#x00F8;re med, han h&#x00F8;re</rs>! Amen, i <hi rend="spaced">
+               <persName key="pe45">Jesu</persName>
+            </hi> Navn, Amen!!</p>
+            <fw type="longLine"/>
+            <!-- repr&#x00E6;senterer vi afslutnings-prydstreger? -->
+         </div>
+         
+         
+         
+      </body>
+      
+      <pb type="periText" facs="1825_421A_fax027.jpg"/>
+      <pb type="periText" facs="1825_421A_fax028.jpg"/>
+      <pb type="periText" facs="1825_421A_fax029.jpg"/>
+      <pb type="periText" facs="1825_421A_fax030.jpg"/>
+      
+      
+   </text>
+</TEI>

@@ -1,0 +1,2657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet</title>
+            <title rend="shortForm">Om Videnskabelighed og dens Fremme</title>
+            <author>Niels W. Bruun</author>
+            <author>Maria J&#x00F8;rgensen</author>
+            <editor role="editor3">Johnny Kondrup</editor>
+            <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+            <editor role="editor1">Henrik Yde</editor>
+            <editor role="student3">Maria Wiggers Pedersen</editor>
+            <editor role="student2">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+            <editor role="student1">Frederik Drei&#x00F8;e Seidelin</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>149 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+         </publicationStmt>
+         
+         <notesStmt>
+            <note target="1807_63_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note xml:id="thisFile" target="1807_63_com.xml" type="com">Punktkommentar</note>
+         </notesStmt>         
+         
+         
+         <sourceDesc><p /></sourceDesc>
+      </fileDesc>
+<encodingDesc>
+            <projectDesc>
+               <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+               <p>Grundtvig Centeret arbejder med:</p>
+               <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+               <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+               <p>2.a. Teologi og kirke</p>
+               <p>2.b. Demokrati og folkelighed</p>
+               <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+               <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         </encodingDesc>
+<revisionDesc>
+            <change xml:id="MJ" who="MJ" when="2012-03-09">oprettet ny revisionsprotokol, da NWB
+               ikke havde protokolleret</change>
+            <change who="MJ" when="2012-03-15">l&#x00F8;bende redaktion af kommentarerne</change>
+            <change who="MJ" when="2012-04-30">p&#x00E5;begyndt indf&#x00F8;ring af kommentarer fra
+               500 og op</change>
+            <change who="MJ" when="2012-05-15">indf&#x00F8;rt kommentarer om Schiller</change>
+            <change who="MJ" when="2012-05-16">indf&#x00F8;rt kommentarer om litteratur</change>
+            <change who="MJ" when="2012-05-21">indf&#x00F8;rt kommentarer om Lessing m.m.</change>
+            <change who="MJ" when="2012-05-22">indf&#x00F8;rt kommentarer om myter og
+               oldtidsminder</change>
+            <change who="MJ" when="2012-05-23">indf&#x00F8;rt kommentarer om biografi og platonisk
+               k&#x00E6;rlighed</change>
+            <change who="MJ" when="2012-07-04">genopretning efter kaotisk filforvirring.</change>
+            <change who="JMR" when="2012-07-05">opm&#x00E6;rket person, titel og myte
+               (com1-com58)</change>
+            <change who="JMR" when="2012-07-09">opm&#x00E6;rket person, titel og myte
+               (com406-com568) (f&#x00E6;rdig) </change>
+            <change who="MJ" when="2012-07-18">kommentarer om Steffens indf&#x00F8;rt</change>
+            <change who="MJ" when="2012-07-19">litteraturliste opdateret</change>
+            <change who="MJ" when="2012-07-27">l&#x00F8;bende arbejde p&#x00E5;
+               litteraturliste</change>
+            <change who="MJ" when="2012-07-30">interne henvisninger oprettet</change>
+            <change xml:id="FDS" who="FDS" when="2012-08-01">Opm&#x00E6;rkning med &lt;persName&gt;
+               og &lt;rs key="title"&gt; i litteraturlisten.</change>
+            <change who="MJ" when="2012-08-20">og ff. FLN's kommentarer indf&#x00F8;rt</change>
+            <change who="MJ" when="2012-09-17">korrektur indf&#x00F8;rt + sidste
+               opm&#x00E6;rkninger</change>
+            <change who="MJ" when="2012-09-18">korrektur indf&#x00F8;rt + allersidste
+               opm&#x00E6;rkninger</change>
+            <change who="MJ" when="2013-04-17">littlist uden pers indsat + mindre rettelser - sammenlignet med andre mapper</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+   <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+   <change who="KSR" when="2013-01-13">validering teiHeader</change>
+         </revisionDesc>
+   </teiHeader>
+   <text type="com">
+      <body>
+
+         <note xml:id="com2">
+<!--lemma: Hensyn paa-->
+            <p>henblik.</p>
+         </note>
+
+         <note xml:id="com5">
+<!--lemma: Issen r&#x00F8;rer Stiernerne-->
+            <p>Allusion til <persName key="pe29">J.W. Goethes</persName> digt <rs key="title503" type="title">&#x201C;Grenzen der Menschheit&#x201D;</rs> (1789, da.
+               Menneskehedens gr&#x00E6;nser): &#x201C;For med guder / skal intet menneske
+               / sig m&#x00E5;le. / H&#x00E6;ver han sig opad / og r&#x00F8;rer
+               / stjernerne med sin isse, / Intetsteds h&#x00E6;fter / de
+               usikre s&#x00E5;ler, / og med ham leger / skyer og vinde&#x201D;
+               (oversat af GV, original: &#x201C;Denn mit G&#x00F6;ttern / Soll sich nicht
+               messen / Irgend ein Mensch. / Hebt er sich aufw&#x00E4;rts, /
+               Und ber&#x00FC;hrt / Mit dem Scheitel die Sterne, / Nirgends haften
+               dann / Die unsichern Sohlen, / Und mit ihm spielen / Wolken und
+               Winde.&#x201D; <rs key="title998" type="title">Goethe 1987</rs>, s. 332) Grundtvig
+               citerer f&#x00F8;rste strofe i sin afhandling <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> (1807a, s. 165). Se indledningens
+               afsnit <ref type="docOut" target="1807_63_intro.xml#docIn9">
+<persName key="pe29">J.W. Goethe</persName>
+</ref>. </p>
+         </note>
+
+         <note xml:id="com6">
+<!--lemma: omfatte-->
+            <p>omslutter.</p>
+         </note>
+
+         <note xml:id="com9">
+<!--lemma: Scribendi recte sapere est et principium et fons-->
+            <p>Citat fra <persName key="pe512">Horats'</persName>
+               <rs key="title345" type="title">
+<hi rend="italic">Ars Poetica</hi>
+</rs>
+               (<hi rend="italic">Digtekunsten</hi>): &#x201C;Kundskab og Aand og Kultur betinger betydelig
+               Digtning&#x201C; (<rs type="title" key="title496">Horats 1945</rs>, s. 109, v.
+               309).</p>
+         </note>
+
+         <note xml:id="com12">
+<!--lemma: trindt om-->
+            <p>rundt omkring.</p>
+         </note>
+
+         <note xml:id="com15">
+<!--lemma: tilstundende Aldere-->
+            <p>kommende tider.</p>
+         </note>
+
+         <note xml:id="com24">
+<!--lemma: Organer-->
+            <p>noget, der tjener til at give udtryk for en id&#x00E9; eller tendens, fx
+               institutioner eller medier.</p>
+         </note>
+
+         <note xml:id="com25">
+<!--lemma: Viises Steen-->
+            <p>oprindelig stof eller pr&#x00E6;parat, der if. alkymisterne kunne forvandle
+               u&#x00E6;dle metaller til guld. Billedligt om noget, som giver finderen en dybere
+               indsigt.</p>
+         </note>
+
+         <note xml:id="com26">
+<!--lemma: alm&#x00E6;gtige Metal-->
+            <p>guld.</p>
+         </note>
+
+         <note xml:id="com27">
+<!--lemma: Naar Tvivlerne, ... velte sig knusende hen over Kloden. -->
+            <p>Grundtvigs mods&#x00E6;tning mellem de videnskabelige og de militaristiske nationer
+               bringer mindelser om <persName key="pe18">Steffens'</persName>
+               mods&#x00E6;tning mellem de materialistiske og videnskabelige nationer, som han
+               beskriver den i <rs key="title117" type="title">
+<hi rend="italic">Indledning til
+                     philosophiske Forel&#x00E6;sninger</hi>
+</rs>: &#x201C;Vi kalde de Nationer
+               barbariske, som blot indskr&#x00E6;nke deres Virksomhed til at forbedre og
+               forh&#x00F6;je deres physiske Existenz, og har end Industrie og Flid bragt dem nok
+               saa vidt, skulde de end &#x2013; endski&#x00F6;nt det end neppe er mueligt &#x2013; uden
+               Videnskabelighed have erhvervet sig nok saa mange Beqvemmeligheder, ja herskede endog
+               den st&#x00F6;rste Nationalvelstand og den pragtfuldeste Luxus blant dem, saa
+               for&#x00F6;ger det ikke vor Agtelse for dem i ringeste Maade. Vi fordre af enhver
+               Nation, at den skal <hi rend="italic">agte</hi> Videnskaberne <hi rend="italic">for
+                  deres egen Skyld</hi>&#x201D; (<rs key="title117" type="title">Steffens 1996</rs>,
+               s. 32). Se indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn10">
+<persName key="pe18">Henrich
+                     Steffens</persName>
+</ref>.</p>
+         </note>
+
+         <note xml:id="com400">
+<!--lemma: Historiens Rulle-->
+            <p>om dokument, skrevet p&#x00E5; sammenrulleligt materiale; &#x201C;historiens
+               bog&#x201D;.</p>
+         </note>
+
+         <note xml:id="com28">
+<!--lemma: Perser, og Hunner-->
+            <p>Perserne og hunnerne skildres her fra et europ&#x00E6;isk perspektiv som barbariske
+               erobrere. F&#x00F8;rstn&#x00E6;vnte henviser antagelig til perserkrigene (499-449)
+               under bl.a. <persName key="pe804">Xerxes 1.</persName> mellem perserne og hellenerne,
+               der i eftertiden er blevet fortolket som en grundkonflikt mellem civilisation og
+               barbari. Hunnerne var et asiatisk nomadefolk, som ofte forbindes med <persName key="pe805">Attila</persName> (regeringstid 434-453), der erobrede en stor del af
+               det nordlige Balkan.</p>
+         </note>
+
+         <note xml:id="com30">
+<!--lemma: medlevende Sl&#x00E6;gt-->
+            <p>samtidige generation.</p>
+         </note>
+
+         <note xml:id="com500">
+<!-- den, vi paa Oceanets Bredder maatte f&#x00F8;le ved Skimt af en Lavastr&#x00F8;m, der omslyngede Palladser og Hytter med sine gloende Arme, -->
+            <p>Billedet af vulkanudbruddet alluderer til <persName key="pe806">Plinius
+                  d.y.'s</persName> beskrivelse af Vesuvs udbrud i 79 e.Kr., hvor Pompeji
+               blev udslettet. I et brev til <persName key="pe407">Tacitus</persName> beskriver
+                  <persName key="pe806">Plinius d.y.</persName>, hvordan hans onkel, <persName key="pe807">Plinius d.&#x00E6;.</persName>, iagttog vulkanudbruddet fra
+               s&#x00F8;siden (<rs type="title" key="title949">Plinius 1966</rs>, s. 191). <rs type="title" key="title949">
+<hi rend="italic">Plinius' breve</hi>
+</rs>
+               findes i <ref type="docOut" target="bookInventory1805.xml#docIn38">Bogfortegnelsen
+                  1805</ref> som nr. XXXVIII (fasc. 501).</p>
+         </note>
+
+         <note xml:id="com31">
+<!--lemma: Skimt-->
+            <p>glimt.</p>
+         </note>
+
+         <note xml:id="com33">
+<!--lemma: Brenni Legioner-->
+            <p>
+<persName key="pe808">Brennus</persName> var anf&#x00F8;rer for de gallere, der 279
+               f. Kr. tr&#x00E6;ngte ned i Gr&#x00E6;kenland, men blev besejret ved Delfi samme
+               &#x00E5;r, if&#x00F8;lge sagnet ved <rs type="myth" key="myth426">Apollons</rs>
+               indgriben. <persName key="pe18">Steffens</persName> refererer til dette sagn i den
+               ottende forel&#x00E6;sning af <rs key="title117" type="title">
+<hi rend="italic">Indledning til philosophiske Forel&#x00E6;sninger</hi>
+</rs>, der handler om
+               historiens forl&#x00F8;b fra Kristi f&#x00F8;dsel til romantikken (<rs type="title" key="title117">Steffens 1996</rs>, s. 133).</p>
+         </note>
+
+         <note xml:id="com501">
+<!--lemma: Digteren-->
+            <p>
+<persName key="pe35">Friedrich Schiller</persName>.</p>
+         </note>
+
+         <note xml:id="com35">
+<!--lemma: qvad-->
+            <p>Citatet stammer fra <persName key="pe35">Friedrich Schillers</persName>
+               s&#x00F8;rgespil <rs key="title340" type="title">
+<hi rend="italic">Die Braut von
+                  Messina</hi>
+</rs> (1803, akt 1, scene 3, v. 242-252, da. <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>,</hi> 1896). I sin artikel <rs type="title" key="title585">&#x201C;Om Schiller og Bruden fra Messina&#x201D;</rs>
+               gengiver Grundtvig den citerede passage s&#x00E5;ledes: &#x201C;Flokke af Hagelens
+               Kugler blande / Sig med Skyens nedstyrtende Vande, / Og i svulmende
+               B&#x00E6;kke sig gyde; / Ned fra Bierget de skummende flyde, / Og
+               giennem Dalen sig brusende skyde, / Broernes Hv&#x00E6;lving og
+               D&#x00E6;mninger f&#x00F8;lger, / Hvirvlende sig i de rullende B&#x00F8;lger,
+               / Intet kan standse de V&#x00E6;ldiges F&#x00E6;rd. / Dog kun et
+               &#x00D8;ieblik var deres Skaber, / Og deres Baner, det r&#x00E6;dsomme Spor,
+               / Rindende hen giennem Sandet, sig taber. / Kun i Forstyrrelsen Mindet
+               end boer&#x201D; (<rs key="title585" type="title">Grundtvig 1807c</rs>, s. 239). Grundtvigs gengivelse af det tyske citat indeholder en
+               lang r&#x00E6;kke sproglige fejl.</p>
+         </note>
+
+         <note xml:id="com37">
+<!--lemma: Grundst&#x00F8;tter-->
+            <p>grundpiller.</p>
+         </note>
+
+         <note xml:id="com39">
+<!--lemma: Digten og Tragten-->
+            <p>efter ty. &#x201C;Dichten und Trachten&#x201D;; higen og str&#x00E6;ben. Udtrykket
+               optr&#x00E6;der i <persName key="pe787">Grimms</persName>
+               <rs key="title954" type="title">
+<hi rend="italic">Deutsches
+                  W&#x00F6;rterbuch</hi>
+</rs>, der henviser til <persName key="pe42">Luthers</persName> bibelovers&#x00E6;ttelse af 1545 som kilde: &#x201C;Da aber
+               der HERRE sahe, das der menschen bosheyt gros war auff erden, vnd alles tichten vnd
+               trachten yhrs hertzen nur boss war ymerdar&#x201D;, <rs type="bible" key="1 Mos 6,5">1 Mos 6,5</rs> (da. &#x201C;Herren s&#x00E5;, at menneskenes ondskab var stor
+               p&#x00E5; jorden, og at alt, hvad de ville og planlagde dagen lang, kun var
+               ondt&#x201D;).</p>
+         </note>
+
+         <note xml:id="com41">
+<!--lemma: deres Eiendommelige-->
+            <p>deres ejendommelige karakter. Muligvis en germanisme efter propriet
+               &#x201C;Eigenth&#x00FC;mlich&#x201D; (jf. <persName key="pe787">Grimms</persName>
+               <rs type="title" key="title954">
+<hi rend="italic">Deutsches
+                  W&#x00F6;rterbuch</hi>
+</rs>).</p>
+         </note>
+
+         <note xml:id="com42">
+<!--lemma: endelig Tendents-->
+            <p>str&#x00E6;ben mod det jordiske. Udtrykket stammer fra <persName key="pe18">Steffens'</persName> vokabular. <persName key="pe18">Steffens</persName>
+               bruger det til at beskrive videnskabeligheden som menneskehedens h&#x00F8;jere
+               bestemmelse: &#x201C;<hi rend="italic">At</hi> denne h&#x00F6;jere Virksomhed er
+               Menneskesl&#x00E6;gtens <hi rend="italic">Tendenz</hi>, det er vist&#x201D; (<rs key="title117" type="title">Steffens 1996</rs>, s. 32).</p>
+         </note>
+
+         <note xml:id="com502">
+<!--lemma: Det er ikke blot ... sand Videnskabelighed og Menneskeadel-->
+            <p>Blandt dem, der klager over tidernes forfald, s&#x00E6;tter Grundtvig navn p&#x00E5;
+                  <persName key="pe500">Johann Gottlieb Fichte</persName> og <persName key="pe577">Ernst Moritz Arndt</persName>. <persName key="pe500">Fichte</persName> havde i
+               1804-1805 holdt en forel&#x00E6;sningsr&#x00E6;kke med titlen <rs key="title577" type="title">
+<hi rend="italic">Die Grundz&#x00FC;ge des gegenw&#x00E4;rtigen
+                     Zeitalters</hi>
+</rs> (da. Den nuv&#x00E6;rende tidsalders grundtr&#x00E6;k), hvori
+               han karakteriserede sin samtid som den mest autoritetskritiske, men ogs&#x00E5; mest
+               syndefulde epoke, hvis levevis var pr&#x00E6;get af en individualistisk hedonisme.
+                  <persName key="pe500">Fichtes</persName> idealstat var en stat, hvor borgerne
+               havde lige rettigheder, og hvor alle str&#x00E6;bte efter det f&#x00E6;lles bedste
+               (ibid., 308). <persName key="pe577">E.M. Arndts</persName> skrift <rs key="title955" type="title">
+<hi rend="italic">Geist der Zeit</hi>
+</rs> (da. Tidens &#x00E5;nd) fra
+               1806 kritiserede s&#x00E6;dernes forfald i de tyske stater. Det moralske forfald
+               havde if&#x00F8;lge <persName key="pe577">Arndt</persName> banet vejen for <persName key="pe104">Napoleon</persName>.</p>
+         </note>
+
+         <note xml:id="com46">
+<!--lemma: Herlige-->
+            <p>ber&#x00F8;mte (m&#x00E6;nd).</p>
+         </note>
+
+         <note xml:id="com403">
+<!--lemma: Vanart-->
+            <p>uorden; ford&#x00E6;rv.</p>
+         </note>
+
+         <note xml:id="com503">
+<!--lemma: en ny Himmel paa Jorden-->
+            <p>ironisk allusion til <rs type="bible" key="&#x00C5;b 21,1">&#x00C5;b 21,1</rs>:
+               &#x201C;Og jeg s&#x00E5; en ny himmel og en ny jord. For den f&#x00F8;rste himmel og
+               den f&#x00F8;rste jord forsvandt, og havet findes ikke mere.&#x201C;</p>
+         </note>
+
+         <note xml:id="com48">
+<!--lemma: Skiolds Afkom-->
+            <p>efterkommere af sagnkongen <rs key="myth67" type="myth">Skjold</rs>, dvs. den danske
+               kongesl&#x00E6;gt.</p>
+         </note>
+
+         <note xml:id="com504">
+<!--lemma: Kosmopolit i Ordets &#x00E6;dle Betydning-->
+            <p>Grundtvigs formulering kan muligvis v&#x00E6;re en allusion til <persName key="pe35">Friedrich Schillers</persName> tiltr&#x00E6;delsesforel&#x00E6;sning som
+               historieprofessor ved Jenas Universitet fra 1789, <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert man
+                  Universalgeschichte?&#x201D;</rs> (da. Hvad er og med hvilket form&#x00E5;l studerer
+               man universalhistorie?), som Grundtvig l&#x00E6;ste i 1806 (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s.
+               275-282). Gennem <persName key="pe35">Schiller</persName> overtager Grundtvig
+               oplysningstidens ideal om en <hi rend="italic">Res publica literaria,</hi> dvs. ideen
+               om, at de l&#x00E6;rde udg&#x00F8;r en republik p&#x00E5; tv&#x00E6;rs af
+               landegr&#x00E6;nser.</p>
+            <note type="readMore">
+<p>I forel&#x00E6;sningen hylder <persName key="pe35">Schiller</persName> netop en kosmopolitisme, der udg&#x00E5;r fra videnskabens
+                  &#x00E5;ndsf&#x00E6;llesskab: &#x201C;Skrankerne, som isolerede stater og nationer
+                  i fjendtligtsindet egoisme, er nu gennembrudte. Alle t&#x00E6;nkende hoveder
+                  knyttes nu sammen af et verdensborgerligt b&#x00E5;nd, og al &#x00E5;rhundredets
+                  lys kan nu skinne p&#x00E5; en ny <persName key="pe809">Galileis</persName> og
+                     <persName key="pe810">Erasmus'</persName> &#x00E5;nd&#x201D; (oversat af
+                  GV, original: &#x201C;Die Schranken sind durchbrochen, welche Staaten und Nationen
+                  in feindseligem Egoismus absonderten. Alle denkenden K&#x00F6;pfe verkn&#x00FC;pft
+                  jetzt ein weltb&#x00FC;rgerliches Band, und alles Licht seines Jahrhunderts kann
+                  nunmehr den Geist eines neuern <persName key="pe809">Galilei</persName> und
+                     <persName key="pe810">Erasmus</persName> bescheinen&#x201D;, <rs key="title952" type="title">Schiller 1792</rs>, s. 72-73).</p>
+</note>
+         </note>
+
+         <note xml:id="com52">
+<!--lemma: Borgeren allene blev Menneske-->
+            <p>Individets menneskeligg&#x00F8;relse er et centralt tema i <persName key="pe35">Friedrich Schillers</persName> forfatterskab, mere specifikt ogs&#x00E5; i hans
+               tiltr&#x00E6;delsesforel&#x00E6;sning som historieprofessor ved Jenas Universitet fra
+               1789, <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert
+                  man Universalgeschichte?&#x201D;</rs> (da. Hvad er og med hvilket form&#x00E5;l
+               studerer man universalhistorie?), som Grundtvig l&#x00E6;ste i 1806 (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s.
+               275-282). I forel&#x00E6;sningen udn&#x00E6;vner <persName key="pe35">Schiller</persName> individets dannelse som menneske til at v&#x00E6;re det
+               v&#x00E6;sentligste form&#x00E5;l med studiet af universalhistorien.</p>
+            <note type="readMore">
+<p>&#x201C;En bestemmelse deler I alle med hinanden p&#x00E5; den
+                  samme m&#x00E5;de; den, som I bragte med jer til verden &#x2013; at uddanne jer som
+                  menneske &#x2013; og til dette menneske taler historien netop&#x201D; (oversat af GV,
+                  original: &#x201C;Eine Bestimmung theilen Sie alle auf gleiche Weise mit einander,
+                  diejenige, welche Sie auf die Welt mitbrachten &#x2013; sich als Menschen auszubilden &#x2013;
+                  und zu dem Menschen eben redet die Geschichte&#x201D;, <rs key="title952" type="title">Schiller 1792</rs>, s. 96-97). Muligvis er det denne
+                  menneskeligg&#x00F8;relse af borgeren gennem dannelsen, som Grundtvig alluderer
+                  til. Menneskeligg&#x00F8;relsen af individet gennem kunst og videnskab er et
+                  hovedtema i <persName key="pe35">Schillers</persName> &#x00E6;stetisk-politiske
+                  filosofi, hvilket bl.a. fremg&#x00E5;r af det ber&#x00F8;mte citat fra det
+                  femtende brev i <hi rend="italic">&#x00DC;ber die &#x00E4;sthetische Erziehung des
+                     Menschen</hi> (da. <rs key="title956" type="title">Menneskets &#x00E6;stetiske
+                     opdragelse</rs> 1996): &#x201C;mennesket leger kun, n&#x00E5;r det i ordets fulde
+                  betydning er menneske, og <hi rend="italic">kun n&#x00E5;r det leger, er det helt
+                     og fuldt menneske</hi>&#x201D; (<rs type="title" key="title956">Schiller
+                     1996</rs>, s. 76, original: &#x201C;der Mensch spielt nur, wo er in voller
+                  Bedeutung des Wortes Mensch ist, und <hi rend="italic">er ist nur da ganz Mensch,
+                     wo er spielt</hi>&#x201D;, <rs key="title1031" type="title">Schiller 1992</rs>,
+                  s. 614).</p>
+</note>
+         </note>
+
+         <note xml:id="com54">
+<!--lemma: kortsynede-->
+            <p>her: begr&#x00E6;nsede udsyn.</p>
+         </note>
+
+         <note xml:id="com55">
+<!--lemma: eller-->
+            <p>det vil sige.</p>
+         </note>
+
+         <note xml:id="com57">
+<!--lemma: inden-->
+            <p>inden for.</p>
+         </note>
+
+         <note xml:id="com58">
+<!--lemma: fredrige-->
+            <p>fredselskende, den us&#x00E6;dvanlige sammens&#x00E6;tning er et ordspil p&#x00E5;
+               den regerende <persName key="pe96">kronprins Frederiks</persName> navn.</p>
+         </note>
+
+         <note xml:id="com406">
+<!--lemma: Digteren-->
+            <p>
+<persName key="pe3">Adam Oehlenschl&#x00E4;ger</persName>.</p>
+         </note>
+
+         <note xml:id="com408">
+<!--lemma: Digteren-->
+            <p>Citatet stammer fra <persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName>
+               pamflet <rs key="title957" type="title">
+<hi rend="italic">Svar til Baggesen paa hans
+                     Brev Noureddin til Aladdin</hi>
+</rs> (s. 20-21). Da pamfletten er udgivet i
+               januar 1807, kan den medvirke til at datere affattelsestidspunktet for Grundtvigs
+               afhandling til januar-februar 1807.</p>
+         </note>
+
+         <note xml:id="com63">
+<!--lemma: Maskiner-->
+            <p>Metaforen dukker op i Grundtvigs kritik af skemalagt undervisning i hans optegnelser
+               om l&#x00E6;rergerningen p&#x00E5; Egel&#x00F8;kke: &#x201C;Men monne ikke de gode
+               Herrer have forhastet sig, forvekslet det fornuftige Menneske med et mekanisk
+               Konstv&#x00E6;rk?&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 284). Forestillingen om mennesket som
+               et maskinelt v&#x00E6;sen blev bl.a. anvendt af den rationalistiske filosof <persName key="pe903">Julien Offray de la Mettrie</persName>.</p>
+         </note>
+
+         <note xml:id="com569">
+<!--og-->
+            <p>ogs&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com76">
+<!--lemma: begabes-->
+            <p>beglos.</p>
+         </note>
+
+         <note xml:id="com78">
+<!--lemma: Asamaal-->
+            <p>her: de nordiske guders tungem&#x00E5;l.</p>
+         </note>
+
+         <note xml:id="com80">
+<!--lemma: trindt-->
+            <p>rundt om.</p>
+         </note>
+
+         <note xml:id="com81">
+<!--lemma: Daarlighed-->
+            <p>t&#x00E5;belighed.</p>
+         </note>
+
+         <note xml:id="com82">
+<!--lemma: vindskibelige-->
+            <p>(overdrevent) arbejdsomme.</p>
+         </note>
+
+         <note xml:id="com85">
+<!--lemma: Qv&#x00E6;gelse-->
+            <p>vederkv&#x00E6;gelse.</p>
+         </note>
+
+         <note xml:id="com86">
+<!--lemma: Kloge paa Himmelens L&#x00F8;b, de ere kun Narre paa Jorden-->
+            <p>Heksameteret kendes kun fra Grundtvigs afhandling, men talem&#x00E5;den anvendes i
+                  <persName key="pe172">Ludvig Holbergs</persName> komedie <rs key="title477" type="title">
+<hi rend="italic">Erasmus Montanus</hi>
+</rs> (akt 1, scene 6):
+                  &#x201C;<persName key="pe811">Rasmus Berg</persName> er vel en klog Mand paa
+               Himmelen, men en Nar paa Jorden&#x201D; (<rs key="title991" type="title">Holberg
+                  2004</rs>, s. 220). Om Holbergs kilder se <ref type="web" target="http://holbergordbog.dk/ordbog?query=himmel">
+<hi rend="italic">Holbergordbogen</hi>
+</ref>.</p>
+         </note>
+
+         <note xml:id="com88">
+<!--lemma: Kommune-->
+            <p>her: samfund, f&#x00E6;llesskab. <persName key="pe10">Jacob Baden</persName>
+               definerer ordet som &#x201C;Menighed, Sogn; it. [:item, ligeledes] et
+               Steds Almue&#x201D; i sin <hi rend="italic">
+<rs key="title358" type="title">Almeennyttig Alphabetisk Ordbog</rs>
+</hi> fra 1820.</p>
+         </note>
+
+         <note xml:id="com91">
+<!--lemma: Oldtidens hellige Ege-->
+            <p>Egen blev p&#x00E5; Grundtvigs tid fejlagtigt betragtet som de nordiske folks hellige
+               tr&#x00E6; (<rs key="title119" type="title">Simek 2006</rs>, s. 84), en opfattelse,
+               som Grundtvig antagelig har delt.</p>
+         </note>
+
+         <note xml:id="com505">
+<!--lemma: Af Bi&#x00F8;rnesener og af Egetr&#x00E6;-->
+            <p>citat fra <persName key="pe3">Oehlenschl&#x00E4;gers</persName> prolog til
+               lystspillet <rs key="title307" type="title">
+<hi rend="italic">Aladdin</hi>
+</rs> fra
+               1805 (<rs type="title" key="title711">Oehlenschl&#x00E4;ger 1927</rs>, s. 65).</p>
+         </note>
+
+         <note xml:id="com506">
+<!--lemma: &#x2014; sorte skjold-->
+            <p>allusion til <persName key="pe3">Oehlenschl&#x00E4;gers</persName> prolog til
+               lystspillet <rs key="title307" type="title">
+<hi rend="italic">Aladdin</hi>
+</rs> fra
+               1805, hvor et sort skjold netop optr&#x00E6;der som en af de attributter, der knytter
+               sig til &#x201C;Nordens m&#x00F8;rke M&#x00F8;e, Melancholia&#x201D; (<rs type="title" key="title711">Oehlenschl&#x00E4;ger 1927</rs>, s. 66).</p>
+         </note>
+
+         <note xml:id="com507">
+<!--lemma: rigelig indspr&#x00E6;ngte etc etc -->
+            <p>citat fra <persName key="pe3">Oehlenschl&#x00E4;gers</persName> prolog til
+               lystspillet <rs key="title307" type="title">
+<hi rend="italic">Aladdin</hi>
+</rs> fra
+               1805 (<rs type="title" key="title711">Oehlenschl&#x00E4;ger 1927</rs>, s. 66).</p>
+         </note>
+
+         <note xml:id="com83">
+<!--lemma: rigelig indspr&#x00E6;ngte-->
+            <p>spraglede; farverige.</p>
+         </note>
+
+         <note xml:id="com84">
+<!--lemma: hvis-->
+            <p>dvs. vangenes.</p>
+         </note>
+
+         <note xml:id="com570">
+<!--lemma: den lang&#x00F8;rede sl&#x00E6;gt-->
+            <p>dvs. &#x00E6;slerne.</p>
+         </note>
+
+         <note xml:id="com104">
+<!--lemma: egner-->
+            <p>egner sig for.</p>
+         </note>
+
+         <note xml:id="com105">
+<!--lemma: F&#x00E6;drelandets Alter-->
+            <p>give ofre for det f&#x00E6;lles bedste. Udtrykket h&#x00F8;rer til blandt datidens
+               patriotiske slagord. For en n&#x00E6;rmere begrebshistorisk redeg&#x00F8;relse, se
+               afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn15">F&#x00E6;drelandets alter</ref> i indledningen til <hi rend="italic">Maskeradeballet i Dannemark 1808. Et Syn.</hi>
+</p>
+         </note>
+
+         <note xml:id="com87">
+<!--lemma: &#x00D8;dets-->
+            <p>selvbiografisk hentydning til Grundtvigs forelskelse i <persName key="pe14">Constance
+                  Steensen-Leth</persName>, se indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn14">K&#x00E6;rlighed og videnskabelighed</ref>.</p>
+         </note>
+
+         <note xml:id="com106">
+<!--lemma: &#x00D8;dets-->
+            <p>sk&#x00E6;bnens.</p>
+         </note>
+
+         <note xml:id="com109">
+<!--lemma: Trykkelove-->
+            <p>Grundtvig hentyder til <rs key="title276" type="title">trykkefrihedsforordningen af
+                  27. september 1799</rs>, der blev indf&#x00F8;rt som en reaktion p&#x00E5;
+               is&#x00E6;r Ruslands kritik af republikanske tendenser i den danske presse.
+               Forordningen bet&#x00F8;d en genindf&#x00F8;relse af forh&#x00E5;ndscensuren for
+               skrifter under 24 ark (384 sider), l&#x00E6;ngere skrifter var undtaget
+               forh&#x00E5;ndscensuren. Siden forordningens udstedelse havde regeringens uvilje over
+               for kritiske skribenter ydermere v&#x00E6;ret tiltagende.</p>
+            <note type="readMore">
+<p> Trykkefrihedsforordningen kan karakteriseres som en
+                  &#x201C;Straffelov i Trykkefrihedssager&#x201D; (<rs key="title899" type="title">J&#x00F8;rgensen 1944</rs>, s. 31), hvis strengeste straf var d&#x00F8;den for
+                  opfordringer til opstand mod regeringen, mens straffen for at udbrede &#x201C;Had
+                  og Misn&#x00F8;ie&#x201D; (<rs key="title899" type="title">J&#x00F8;rgensen
+                     1944</rs>, s. 31) mod samme var landsforvisning. Forordningen
+                  genindf&#x00F8;rte dermed de straffe, som var blevet sat ud af kraft ved <persName key="pe560">J.F. Struensees</persName> afskaffelse af censuren den 4. september
+                  1770.</p>
+</note>
+         </note>
+
+         <note xml:id="com110">
+<!--lemma: &#x00E6;ldre trykkelove-->
+            <p>De &#x201C;&#x00E6;ldre Trykkelove&#x201D; kan i en bred forstand opfattes som det
+               uklare lovgrundlag, der blev resultatet af de mange reskripter, som blev udsendt i
+               &#x00E5;rene op til trykkefrihedsforordningens indf&#x00F8;relse i 1799 for at
+               tilbagekalde <persName key="pe560">Struensees</persName> oph&#x00E6;velse af enhver
+               begr&#x00E6;nsning af trykkefriheden den 4. september 1770. I en mere sn&#x00E6;ver
+               forstand kan det hentyde til retssagen mod <persName key="pe398">P.N.
+                  Skougaard</persName>, som ogs&#x00E5; blev d&#x00F8;mt efter <rs key="title1185" type="title">Kirkeritualet af 1685</rs> (se indledningens afsnit om <ref type="docOut" target="1807_63_intro.xml#docIn5">Trykkefrihedsforordningen af 27.
+                  september 1799</ref>).</p>
+            <!--<note type="readMore"><p>Den ubegr&#x00E6;nsede trykkefrihed blev delvist tilbagekaldt allerede den 7. oktober 1771 bl.a. gennem et forbud mod injurier og opfordringer til opr&#x00F8;r samt gennem en for&#x00F8;get indsk&#x00E6;rpelse af forfatternes og bogtrykkernes ansvar for skrifternes indhold. Udgivelsen af anonyme skrifter var dog stadig en mulighed, som f&#x00F8;rst blev endeligt afskaffet med <rs key="title276" type="title">trykkefrihedsforordningen af 27. september 1799</rs>.</p></note>-->
+         </note>
+
+         <note xml:id="com111">
+<!--lemma: Forordningen af 27. september 1799-->
+            <p>
+<rs key="title276" type="title">Trykkefrihedsforordningen af 27. september 1799</rs>
+               genindf&#x00F8;rte forh&#x00E5;ndscensuren for skrifter under 24 ark (384 sider) og
+               forb&#x00F8;d enhver form for anonyme udgivelser, se kommentaren til <ref type="docIn" target="#com109">&#x201C;Trykkelove&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com112">
+<!--lemma: Kongebud-->
+            <p>kongelig befaling.</p>
+         </note>
+
+         <note xml:id="com113">
+<!--lemma: dadle en afd&#x00F8;d dansk Konge-->
+            <p>Grundtvig sigter til sin ven <persName key="pe398">P.N. Skougaard</persName>, der i
+               sit skrift <rs type="title" key="title958">
+<hi rend="italic">Beskrivelse over
+                     Bornholm</hi>
+</rs> fra 1804 havde kritiseret <persName key="pe496">Frederik
+                  3.s</persName> behandling af <persName key="pe581">Corfitz Ulfeldt</persName>. Som
+               straf blev bogen konfiskeret, og forfatteren id&#x00F8;mt 14 dages f&#x00E6;ngsel
+               p&#x00E5; vand og br&#x00F8;d. Desuden kom han som vitterlig overtr&#x00E6;der af
+               trykkelovene under livsvarig censur.</p>
+            <note type="readMore">
+<p>Selvom <persName key="pe241">A.S. &#x00D8;rsted</persName>, der
+                  var en af de syv dommere i sagen mod <persName key="pe398">Skougaard</persName>,
+                  argumenterede for, at man ikke kunne d&#x00F8;mmes for injurier mod afd&#x00F8;de
+                  konger, blev <persName key="pe398">P.N. Skougaard</persName> - sk&#x00F8;nt han
+                  ikke var pr&#x00E6;st - d&#x00F8;mt efter <rs type="title" key="title1185">Kirkeritualet af 1685</rs>. <rs type="title" key="title1185">Kirkeritualet</rs> indeholder en bestemmelse om, at pr&#x00E6;ster ikke
+                  m&#x00E5; tale d&#x00E5;rligt om den afd&#x00F8;de i ligpr&#x00E6;dikenen (se
+                  indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn5">Trykkefrihedsforordningen af 27. september 1799</ref>). <persName key="pe398">P.N. Skougaards</persName>
+                  <rs type="title" key="title958">
+<hi rend="italic">Beskrivelse over
+                     Bornholm</hi>
+</rs> fandtes i Grundtvigs bogsamling, <ref type="docOut" target="bookInventory1805.xml#docIn103">Bogfortegnelsen 1805</ref> nr. CIII
+                  (fasc. 501).</p>
+</note>
+         </note>
+
+         <note xml:id="com508">
+<!--lemma: &#x2014; videnskabelig Anonymitet-->
+            <p>Anonyme udgivelser i enhver form var blevet forbudt med <rs key="title276" type="title">trykkefrihedsforordningen af 27. september 1799</rs>, se kommentaren til <ref type="docIn" target="#com109">&#x201C;Trykkelove&#x201D;</ref>. Udgiverne af <hi rend="italic">
+<rs type="title" key="title646">K&#x00F8;benhavns L&#x00E6;rde
+                     Efterretninger</rs>,</hi> f&#x00F8;rst <persName key="pe2">Rasmus
+                  Nyerup</persName> i 1801 og derefter <persName key="pe117">P.E.
+                  M&#x00FC;ller</persName> i 1806, anmodede om dispensation fra anonymitetsforbuddet
+               for at f&#x00E5; mulighed for at trykke anonymiserede anmeldelser. Ligesom Grundtvig
+               &#x00F8;nskede de herved at h&#x00F8;jne anmeldelsernes kvalitet.</p>
+         </note>
+
+         <note xml:id="com114">
+<!--lemma: med Flid-->
+            <p>med fors&#x00E6;t; med velber&#x00E5;d hu.</p>
+         </note>
+
+
+         <note xml:id="com115">
+<!--lemma: Tabet af dansk Borgerret-->
+            <p>
+<rs key="title276" type="title">Trykkefrihedsforordningen af 27. september 1799</rs>
+               straffede forh&#x00E5;nelse af kristendommen, regeringen og kongehusets personer med
+               landsforvisning enten p&#x00E5; livstid eller i 3-10 &#x00E5;r.</p>
+         </note>
+
+         <note xml:id="com571">
+<!--lemma: tilholden-->
+            <p>p&#x00E5;budt.</p>
+         </note>
+
+         <note xml:id="com509">
+<!--lemma: &#x2014; at opgive Navnet paa Forfatteren til ethvert Skrift-->
+            <p>Dette forslag kan l&#x00E6;ses som en variant over <rs type="title" key="title276">trykkefrihedsforordningen af 27. september 1799's</rs> bestemmelse om, at
+               bogtrykkeren stod til ansvar for rigtigheden af forfatterens identitet. Kunne
+               forfatteren ikke identificeres, m&#x00E5;tte bogtrykkeren tage det retlige ansvar.
+               Lignende regler gjaldt for tidsskrifter og aviser, der risikerede at f&#x00E5;
+               oplaget beslaglagt.</p>
+         </note>
+
+         <note xml:id="com116">
+<!--lemma: Palladium-->
+            <p> beskyttelse; v&#x00E6;rn. Forestillingen om trykkefriheden som skribentens
+               &#x201C;palladium&#x201D; kan spores tilbage til dedikationen i bogudgaven af den
+               pseudonyme forfatter <persName key="pe904">Junius'</persName> breve fra 1772
+                  (<rs type="title" key="title1193">Junius 1927</rs>, s. 4). Grundtvig kan muligvis
+               kende udtrykket fra <persName key="pe20">Baggesens</persName> rimfort&#x00E6;lling <rs key="title1186" type="title">&#x201C;Kallundborgs Kr&#x00F8;nike, eller Censurens Oprindelse&#x201D;</rs> fra
+               1786, hvor byens indbyggere efter tabet af trykkefriheden udbryder: &#x201C;Ak! Vi
+               har mistet vort Palladium!&#x201D; (<rs key="title1186" type="title">Baggesen
+                  1889</rs>, s. 180).
+               <!-- p.a. heiberg:  Sandheden endnu har mange m&#x00E6;gtige Venner, der ville beskytte Pressefriheden, som vores Palladium (US 233)-->
+</p>
+         </note>
+
+         <note xml:id="com420">
+<!--lemma: kl&#x00E6;der-->
+            <p>bekl&#x00E6;der; sidder p&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com119">
+<!--lemma: Leirekongens Stoel-->
+            <p>If&#x00F8;lge traditionen var Lejre Danmarks f&#x00F8;rste konges&#x00E6;de; herfra
+               nedstammede de danske sagnkonger, <rs key="myth115" type="myth">skjoldungerne</rs>.
+               Med den &#x00E5;bne betegnelse &#x201C;Leirekongens Stoel&#x201D; lader Grundtvig det
+               st&#x00E5; hen, hvorvidt han henviser til <persName key="pe105">Christian
+                  7.</persName> eller til den regerende kronprins, den senere <persName key="pe96">Frederik 6.</persName>
+</p>
+         </note>
+
+         <note xml:id="com510">
+<!--lemma: &#x2014;Anonymitetens Oph&#x00E6;velse-->
+            <p>Anonyme udgivelser i enhver form var blevet forbudt med <rs type="title" key="title276">trykkefrihedsforordningen af 27. september 1799</rs>, se kommentaren til <ref type="docIn" target="#com110">&#x201C;alle &#x00E6;ldre Trykkelove&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com512">
+<!--lemma: den ringe Afs&#x00E6;tning-->
+            <p>Mens bogbranchen blomstrede i det sidste ti&#x00E5;r af 1700-tallet, lagde <rs key="title276" type="title">trykkefrihedsforordningen af 27. september 1799</rs>
+               (se kommentaren til <ref type="docIn" target="#com109">&#x201C;Trykkelove&#x201D;</ref>) en r&#x00E6;kke
+               begr&#x00E6;nsninger p&#x00E5; bogbranchen. <persName key="pe421">K.H.
+                  Seidelins</persName>
+               <rs type="title" key="title960">
+<hi rend="italic">L&#x00E6;sendes Aarbog af
+                  1799</hi>
+</rs> skildrer situationen i dystre vendinger: &#x201C;Boghandlen har i
+               et par Aar v&#x00E6;ret st&#x00E6;rkt aftagende, og vil sikkert synke endnu
+               dybere&#x201D; (<rs type="title" key="title960">Seidelin 1800</rs>, s. 103), og
+               forts&#x00E6;tter klagerne: &#x201C;De periodiske Blade vegetere, Hykleskrivter,
+               Hyklesange florere, videnskabelige V&#x00E6;rker stagnere, Satiren expirerer. Poesi
+               finder kun Bifald jo mere den n&#x00E6;rmer sig Prosa. Man skriver om Hexametrer.
+               Romaner overs&#x00E6;tter man. Videnskabernes Selskabsskrivter skal have 25
+               Subskribenter&#x201D; (<rs type="title" key="title960">Seidelin 1800</rs>, s. 108).
+               Landets begr&#x00E6;nsede muligheder for udenlandshandel under Napoleonskrigene
+               bet&#x00F8;d ogs&#x00E5; en indskr&#x00E6;nkning af k&#x00F8;bekraften, hvilket bl.a.
+               afspejlede sig i, at b&#x00F8;gernes omslag blev mere spartanske efter 1800 (<rs key="title959" type="title">Fr&#x00F8;land 1974</rs>, s.
+               125)<!--Grundtvig i kirkespeil: Trykkeforordningen af 1799 havde standset omtrent al Trykning, undtagen af Almanakker paa Tysk og Dansk, Plakater og Forordninger, Berlings-Avisen, Politivennen og Overs&#x00E6;ttelser af Lafontaines Romaner og Kotzebues Komedier - 336, bd 10 begtrup.-->.
+            </p>
+         </note>
+
+         <note xml:id="com133">
+<!--lemma: den ny Retskrivning-->
+            <p>I 1805 havde Kommissionen for Universitetet og de l&#x00E6;rde Skoler bedt
+               Videnskabernes Selskab om at neds&#x00E6;tte en kommission, der skulle udarbejde et
+               forslag til en dansk retskrivning. Kommissionens skrivelser blev hurtigt offentligt
+               kendt, og n&#x00F8;dvendigheden af en standardiseret retsskrivning blev debatteret i
+                  <rs key="title125" type="title">
+<hi rend="italic">Minerva</hi>
+</rs>. Debatten
+               resumeredes bl.a. i <persName key="pe2">Rasmus Nyerups</persName> <hi rend="italic">
+<rs type="title" key="title1568">Det Danske Sprogs Retskrivningstheorier, fremstillede i
+                  chronologisk Orden</rs>
+</hi>, som fandtes i Grundtvigs bogsamling, <ref type="docOut" target="bookInventory1805.xml#docIn104">Bogfortegnelsen 1805</ref> nr. CIV
+               (fasc. 501).<!-- Skautrup 160 ff: niels: I et brev af 23.2.1805 fra Kommissionen for Universitetet og de l&#x00E6;rde Skoler til Videnskabernes Selskab udbad man sig selskabets &#x201C;Raad, hvorledes de paa faste og af Sprogets Natur hentede Grundregler for Retskrivning i Modersmaalet kunde tilveie bringes.&#x201D; -->
+</p>         </note>
+
+         <note xml:id="com514">
+<!--lemma: Foragt for Modersmaalet-->
+            <p>Den s&#x00E5;kaldte foragt for det danske sprog var et omdiskuteret emne i
+               1700-tallet, hvor tysk var det g&#x00E6;ngse hof-, milit&#x00E6;r-, og
+               administrationssprog, latin anvendtes i latinskolen og p&#x00E5; universitetet, mens
+               fransk var tidens modesprog.</p>
+         </note>
+
+         <note xml:id="com134">
+<!--lemma: Ingen troe-->
+            <p>Ingen m&#x00E5; tro (optativ).</p>
+         </note>
+
+         <note xml:id="com136">
+<!--lemma: Tilv&#x00E6;r-->
+            <p>eksistens.</p>
+         </note>
+
+         <note xml:id="com137">
+<!--lemma: fremlyser-->
+            <p>fremg&#x00E5;r.</p>
+         </note>
+
+         <note xml:id="com135">
+<!--lemma: en vis l&#x00E6;rd Philolog-->
+            <p>Personen har ikke kunnet identificeres.</p>
+         </note>
+
+         <note xml:id="com138">
+<!--lemma: usynlig (!!!)-->
+            <p>Udr&#x00E5;bstegnene skyldes <rs type="title" key="title125">
+<hi rend="italic">Ny
+                     Minervas</hi>
+</rs> udgiver <persName key="pe24">Knud Lyne Rahbek</persName>,
+               der undrede sig over, at &#x201C;usynlig&#x201D; angiveligt ogs&#x00E5; skulle kunne
+               betegne &#x201C;den Ting, man ei har set&#x201D;.</p>
+         </note>
+
+         <note xml:id="com139">
+<!--lemma: crimen l&#x00E6;sorum summorum honorum-->
+            <p>lat. &#x201C;forn&#x00E6;rmelse mod de h&#x00F8;jeste (akademiske)
+               &#x00E6;resbevisninger&#x201D; dvs. doktorgraden. Formuleringen spiller p&#x00E5;
+               crimen l&#x00E6;s&#x00E6; majestatis (lat.
+               &#x201C;majest&#x00E6;tsforn&#x00E6;rmelse&#x201D;).</p>
+         </note>
+
+         <note xml:id="com141">
+<!--lemma: Qvod cavere possis, stultum est
+        admittere-->
+            <p>bearbejdet citat fra <persName key="pe812">Terents'</persName> komedie <hi rend="italic">
+<rs type="title" key="title1039">Eunukken</rs>,</hi> vers 761:
+               &#x201C;Det er dumt at indlade sig p&#x00E5; noget, man ikke beh&#x00F8;ver&#x201D;
+               (oversat af GV). En udgave af <persName key="pe812">Terents'</persName>
+               komedier fandtes i Grundtvigs bogsamling, <ref type="docOut" target="bookInventory1805.xml#docIn64">Bogfortegnelsen 1805</ref> nr. LXIV-LXV
+               (fasc. 501).</p>
+         </note>
+
+         <note xml:id="com425">
+<!--lemma: med en T&#x00F8;ddel-->
+            <p>p&#x00E5; nogen m&#x00E5;de.</p>
+         </note>
+
+         <note xml:id="com515">
+<!--lemma: Begeistring, som ved Holberg vaktes for Modersmaalet,-->
+            <p>
+<persName key="pe172">Ludvig Holberg</persName> blev betragtet som den, der bragte
+               det danske sprog til &#x00E6;re og v&#x00E6;rdighed. Fx skriver <persName key="pe7">Suhm</persName>, at &#x201C;<persName key="pe172">Holberg</persName>
+               [gav] sit Folk og dets T&#x00E6;nkemaade samme St&#x00F8;d, som hiin
+               store Romer [: <persName key="pe742">Cicero</persName>], i det han
+               opvakte det til at skrive, t&#x00E6;nke, philosophere i dets eget Sprog&#x201C; (<rs type="title" key="title964">Suhm 1789</rs>, s. 306).</p>
+         </note>
+
+         <note xml:id="com143">
+<!--lemma: skyde til Maals efter Sproget-->
+            <p>hentydning til <persName key="pe813">J.C. Ryge</persName>, der i sin
+               overs&#x00E6;ttelse af <persName key="pe814">C.R.W. Wiedemanns</persName>
+               l&#x00E6;rebog <rs type="title" key="title962">
+<hi rend="italic">Underviisning for
+                     Giordem&#x00F8;dre</hi>
+</rs> havde beklaget sig over &#x201C;det danske Sprogs
+               Armod&#x201D; (<rs key="title962" type="title">Wiedemann 1805</rs>, III).</p>
+         </note>
+
+         <note xml:id="com142">
+<!--lemma: garstig-->
+            <p>l&#x00E5;neord fra ty., afskyeligt.</p>
+         </note>
+
+         <note xml:id="com144">
+<!--lemma: garstig-->
+            <p>henvisning fra <persName key="pe97">P.A. Heibergs</persName> komedie <rs key="title967" type="title">
+<hi rend="italic">Virtuosen</hi>
+</rs> (trykt 1789,
+               opf&#x00F8;rt 1793), hvor den dansktalende tysker Spatzier leverer f&#x00F8;lgende
+               replik: &#x201C;denn jeg kan den danske Sprog ikke lide; den er en garstig Sprog, ret
+               en garstig, abscheulich Sprog&#x201D; (<rs type="title" key="title967">Heiberg
+                  1884</rs>, s. 291).</p>
+         </note>
+
+         <note xml:id="com516">
+<!--lemma: enhver &#x00E6;gte Dansk,-->
+            <p>Grundtvig appellerer her til en dansk nationalf&#x00F8;lelse, som havde v&#x00E6;ret
+               tiltagende gennem anden halvdel af 1700-tallet.</p>
+         </note>
+
+         <note xml:id="com517">
+<!--lemma: en saa dansk Regiering-->
+            <p>Indlemmelsen af Holsten i Helstaten i 1806 f&#x00F8;rte til et brud i det ledende
+               regeringsorgan, statsr&#x00E5;det. De fleste dansktalende medlemmer var
+               tilh&#x00E6;ngere af indlemmelsen. Modstanderne var overvejende tysktalende, og de
+               forlod i den f&#x00F8;lgende tid statsr&#x00E5;det.</p>
+         </note>
+
+         <note xml:id="com553">
+<!--lemma: Guldberg</persName> og andre slemme Folk -->
+            <p>Som kontrast til br&#x00F8;dtekstens patriotiske harme indtager Grundtvig ironisk det
+               modsatte synspunkt i denne fodnote og solidariserer sig p&#x00E5; skr&#x00F8;mt med
+               &#x201C;sprogets foragtere&#x201D;. <persName key="pe321">Ove
+                  H&#x00F8;egh-Guldberg</persName>, der som gehejmestatsminister fulgte efter
+                  <persName key="pe560">Struensees</persName> regering, udnyttede den antityske
+               stemning til at indf&#x00F8;re dansk som rigssprog og kommandosprog i
+               h&#x00E6;ren (13. februar 1772) og som undervisningssprog i latinskolerne (11. maj
+               1775). <persName key="pe321">Guldberg</persName> var med til at indf&#x00F8;re
+               &#x201C;indf&#x00F8;dsretsloven&#x201D; den 15. januar 1776, hvorved statens embeder
+               blev forbeholdt helstatens borgere.</p>
+         </note>
+
+         <note xml:id="com151">
+<!--lemma: at fraki&#x00E6;nde Nogen Navn af god Patriot-->
+            <p>Grundtvig hentyder her <persName key="pe172">Holbergs</persName> gennemf&#x00F8;rt
+               ironiske <rs key="title970" type="title">epistel 312</rs> (1750): &#x201C;I
+               Hoved-Poster lader han jo see en bestandig Ki&#x00E6;rlighed mod sit
+               F&#x00E6;derneland og et retskaffent patriotisk Hierte, thi ingen kand bevise, at han
+               nogen Tiid haver kastet Foragt paa Landets Penger eller vraget Landets Korn og feede
+               Vahrer. Naar et eller andet af de Beneficier, som Riget har at uddeele, er ham bleven
+               tilbudet, haver han jo stedse villigen som en oprigtig Patriot det imodtaget. Hvad er
+               det da, som han vrager? Det er ikkun Bagateller.&#x201D; Epistlen advarer mod at
+               praktisere &#x2018;patriotisk Nidki&#x00E6;rhed&#x2019; og opfordrer til at
+               &#x201C;see igiennem Fingre med Bagateller&#x201D; (<rs key="title970" type="title">Holberg 1939</rs>, s. 241).</p>
+         </note>
+
+         <note xml:id="com518">
+<!--lemma: Hr. Baronens
+       312te Brev-->
+            <p>jf. <rs key="title970" type="title">Holberg 1939</rs>, s. 241 (se kommentar til <ref type="docIn" target="#com151">&#x201C;at fraki&#x00E6;nde...&#x201D;</ref>).</p>
+         </note>
+
+         <note xml:id="com519">
+<!--lemma: Tr&#x00E6;billede-->
+            <p>allusion til <rs type="bible" key="Es 45,20">Es 45,20</rs>: &#x201C;De vide ikke [noget,] som
+               opl&#x00F8;fte deres udskaarne tr&#x00E6;-billeder, og som bede til en gud, som ikke
+               kan frelse&#x201D; (<rs type="title" key="title236">
+<hi rend="italic">Biblia</hi>
+                  1787</rs>).</p>
+         </note>
+
+         <note xml:id="com428">
+<!--lemma: Contrafei-->
+            <p>portr&#x00E6;t.</p>
+         </note>
+
+         <note xml:id="com429">
+<!--lemma: f&#x00F8;des-->
+            <p>ern&#x00E6;res.</p>
+         </note>
+
+         <note xml:id="com156">
+<!--lemma: uegentlig-->
+            <p>dvs. i en forstand, som ikke har med det v&#x00E6;sentlige indhold af hans kristentro
+               at g&#x00F8;re.</p>
+         </note>
+
+         <note xml:id="com157">
+<!--lemma: Augsburgconfessionen-->
+            <p>
+<rs type="title" key="title619">Den Augsburgske Bekendelse</rs> (lat. Confessio
+               Augustana) er bekendelsesskriftet for den evangelisk-lutherske kirke, udarbejdet i
+               Augsburg 1530. I Danmark blev <rs type="title" key="title619">Den Augsburgske
+                  Bekendelse</rs> anerkendt ved Reformationens indf&#x00F8;relse 1536; siden
+               Kongelovens indf&#x00F8;relse i 1665 har den v&#x00E6;ret det officielle udtryk for
+               den danske kirkes tro.</p>
+         </note>
+
+         <note xml:id="com152">
+<!--lemma: Gud er deres Bug-->
+            <p>allusion til <rs type="bible" key="Fil 3,19">Fil 3,19</rs>.</p>
+         </note>
+
+         <note xml:id="com153">
+<!--lemma: Himmelens rene D&#x00F8;ttre-->
+            <p>antagelig en henvisning til <rs key="myth428" type="myth">muserne</rs> som
+               videnskabernes og kunstens beskyttere.</p>
+         </note>
+
+         <note xml:id="com158">
+<!--lemma: men under hvilken Form ... den h&#x00F8;iere Ski&#x00F8;nhed.-->
+            <p>Denne tankegang er antagelig inspireret af <persName key="pe35">Friedrich
+                  Schillers</persName> fortale til <hi rend="italic">
+<rs key="title340" type="title">Die Braut von Messina</rs>
+</hi> (1803, da. <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>,</hi> 1896): &#x201C;Og derfor
+               finder jeg, at det er poesiens ret at behandle de forskellige religioner som et
+               kollektivt hele for indbildningskraften, i hvilken alt, der har sin egen karakter,
+               alt, der udtrykker en egen f&#x00F8;lsomhed, finder sit eget sted. Bag alle
+               religioners sl&#x00F8;r ligger religionen selv, ideen om det guddommelige, og det
+               m&#x00E5; v&#x00E6;re digteren tilladt at udtale denne, i hvilken form han end fra
+               gang til gang finder mest bekvem og mest tr&#x00E6;ffende&#x201D; (<rs key="title340" type="title">Schiller 1803</rs>, s. XIV, oversat af GV, orig.: &#x201C;Und dann
+               halte ich es f&#x00FC;r ein Recht der Poesie, die verschiedenen Religionen als ein
+               kollektives Ganze f&#x00FC;r die Einbildungskraft zu behandeln, in welchem alles, was
+               einen eignen Charakter tr&#x00E4;gt, eine eigne Empfindungsweise ausdr&#x00FC;ckt,
+               seine Stelle findet. Unter der H&#x00FC;lle aller Religionen liegt die Religion
+               selbst, die Idee eines G&#x00F6;ttlichen, und es mu&#x00DF; dem Dichter erlaubt sein,
+               dieses auszusprechen, in welcher Form er jedesmal am bequemsten und am treffendsten
+               findet&#x201D;). F&#x00F8;rste del af den afsluttende s&#x00E6;tning anvendte
+               Grundtvig som motto for den samtidige afhandling <rs key="title341" type="title">&#x201C;Om Religion og Liturgie&#x201D;</rs> (1807a).</p>
+         </note>
+
+         <note xml:id="com520">
+<!--lemma: den, for hvem det Himmelske kun er Moralitetens Maximum-->
+            <p>If&#x00F8;lge de rationalistiske teologer f&#x00F8;rte et liv, levet i
+               overensstemmelse med moralloven, direkte til frelsen. Denne fortolkning st&#x00E5;r i
+               mods&#x00E6;tning til den protestantiske l&#x00E6;re om, at frelsen alene er et
+               resultat af Guds n&#x00E5;de (sola gratia Dei). Ligesom i <rs key="title341" type="title">&#x201C;Om Religion og Liturgie&#x201D;</rs> (1807a) tager Grundtvig
+               her afstand fra den rationalistiske teologi. De rationalistiske teologer afviste en
+               r&#x00E6;kke af kristendommens dogmer som irrationelle og naturstridige og betragtede
+               prim&#x00E6;rt <persName key="pe45">Jesus</persName> som et etisk forbillede.</p>
+         </note>
+
+         <note xml:id="com159">
+<!--lemma: positive Religioner-->
+            <p>&#x00E5;benbaringsreligioner; religioner, hvis grundlag foreligger i skreven form som
+               en meddelelse fra guddommen.</p>
+         </note>
+
+         <note xml:id="com161">
+<!--lemma: Himmelvei-->
+            <p>m&#x00E5;de at blive salig p&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com160">
+<!--lemma: Nathans Forfatter-->
+            <p>
+<!-- i allerh&#x00F8;jeste grad i verdenskr&#x00F8;niken af 1812 kan findes p&#x00E5; ADL US 326-327 -->
+<persName key="pe675">G.E. Lessing</persName>. <persName key="pe815">Nathan</persName> er
+               navnet p&#x00E5; den j&#x00F8;diske hovedperson i <persName key="pe675">Lessings</persName> dramatiske digt <rs key="title973" type="title">
+<hi rend="italic">Nathan der Weise</hi>
+</rs> (1779, da. <rs type="title" key="title1162">
+<hi rend="italic">Nathan den Viise</hi>
+</rs>, 1799), hvis
+               b&#x00E6;rende id&#x00E9; er forestillingen om de monoteistiske religioners
+               ligev&#x00E6;rdighed og den deraf f&#x00F8;lgende n&#x00F8;dvendighed af gensidig
+               tolerance. I dramaet, som foreg&#x00E5;r i Jerusalem p&#x00E5; korstogenes tid,
+               sejrer humanisme og fornuft, inkarneret af den vise <persName key="pe815">Nathan</persName>, over trossamfundenes indbyrdes konflikter.</p>
+         </note>
+
+         <note xml:id="com163">
+<!--lemma: Lessings Religion-->
+            <p>
+<persName key="pe675">Lessings</persName> fornuftsreligion, som den bl.a. fremstilles
+               i <rs type="title" key="title973">
+<hi rend="italic">Nathan der Weise</hi>
+</rs> (1779, da. <rs type="title" key="title1162">
+<hi rend="italic">Nathan den Viise</hi>
+</rs>,
+               1799), se kommentar til <ref type="docIn" target="#com160">&#x201C;Nathans Forfatter&#x201D;</ref>. <persName key="pe675">Lessings</persName> forestilling om religion udg&#x00F8;r et kompromis
+               mellem den rationalistiske teologi og supranaturalismen (fastholdelse af en
+               overnaturlig &#x00E5;benbaringstro), idet han mener, at kristendommens
+               &#x00E5;benbarede sandheder skal bekr&#x00E6;ftes af fornuften. Denne forestilling
+               opsummeres i skriftet <rs type="title" key="title1009">
+<hi rend="italic">Die
+                     Erziehung des Menschengeschlechts</hi>
+</rs> (da. <rs key="title974" type="title">Menneskesl&#x00E6;gtens opdragelse</rs> 1994): &#x201C;udformningen af
+               &#x00E5;benbarede sandheder i fornuftssandheder er slet og ret n&#x00F8;dvendig, hvis
+               menneskesl&#x00E6;gten skal have nogen gavn af den. Da de &#x00E5;benbaredes, var de
+               rigtignok endnu ikke fornuftssandheder; men de &#x00E5;benbaredes for at blive
+               det&#x201D; (<rs type="title" key="title974">Lessing 1994</rs>, s. 31).</p>
+            <note type="readMore">
+<p>Originalen lyder: &#x201C;die Ausbildung geoffentbarter
+                  Wahrheiten in Vernunftswahrheiten ist schlechterdings nothwendig, wenn dem
+                  menschlichen Geschlechte damit geholfen seyn soll. Als sie geoffenbaret wurden,
+                  waren sie freylich noch keine Vernunftswahrheiten; aber sie wurden geoffenbaret,
+                  um es zu werden&#x201D; (<rs type="title" key="title1009">Lessing 1785</rs>, s.
+                  73).</p>
+</note>
+         </note>
+
+         <note xml:id="com523">
+<!--lemma: vor Tids Falskoplyste-->
+            <p>Grundtvig kan muligvis hentyde til den s&#x00E5;kaldte ateismestrid i Jena i
+               1798&#x2013;1799, der blev udl&#x00F8;st af to artikler af hhv. <persName key="pe500">J.G. Fichte</persName> og <persName key="pe817">Friedrich Karl Forberg</persName>
+               i <rs key="title975" type="title">
+<hi rend="italic">Philosophisches Journal einer
+                     Gesellschaft Teutscher Gelehrten</hi>
+</rs> i 1798. Is&#x00E6;r <persName key="pe817">Forbergs</persName> artikel, der radikaliserede <persName key="pe508">Kants</persName> gudsbegreb, blev genstand for debat. <persName key="pe508">Kant</persName> havde allerede i 1781 afvist kristendommens gudsbeviser: Gud kan
+               ikke v&#x00E6;re genstand for erkendelsen, men tjener alene som et &#x2018;praktisk
+               postulat&#x2019; p&#x00E5; samme m&#x00E5;de som friheden og sj&#x00E6;lens
+               ud&#x00F8;delighed. <persName key="pe817">Forberg</persName> drog derfor
+               konklusionen: N&#x00E5;r Gud ikke kan erkendes, m&#x00E5; troen v&#x00E6;re en privat
+               sag. Mennesket kan derfor ikke g&#x00F8;re andet end at leve et moralsk liv, som om
+               der fandtes en Gud: &#x201C;Det er sandt, du kan ikke bevise videnskabeligt, at det
+               altsammen m&#x00E5; v&#x00E6;re s&#x00E5;dan, men nok om det, dit hjerte
+               fort&#x00E6;ller dig, at du skal handle, som om det forholdt sig s&#x00E5;dan, og
+               n&#x00E5;r du handler p&#x00E5; denne m&#x00E5;de, s&#x00E5; viser du netop
+               derigennem, at du har religion!&#x201D; (oversat af GV, original: &#x201C;Es ist
+               wahr, du kannst von dem Allem nicht scientifistisch beweisen, da&#x00DF; es so seyn
+               m&#x00FC;sse, aber genug, dein Herz sagt dir, du sollst so handeln, als ob es so
+               w&#x00E4;re, und wenn du so handelst, so zeigt du eben dadurch, dass du Religion
+               hast!&#x201D; <rs type="title" key="title976">Forberg 1798</rs>, s. 36).
+               Ateismestriden f&#x00F8;rte til <persName key="pe500">J.G. Fichtes</persName>
+               afskedigelse som professor. Grundtvig kan have h&#x00F8;rt om ateismestriden fra
+                  <persName key="pe18">Steffens</persName>, der omtalte den i <rs key="title117" type="title">
+<hi rend="italic">Indledning til philosophiske
+                     Forel&#x00E6;sninger</hi>
+</rs> (<rs key="title117" type="title">Steffens
+                  1996</rs>, s. 24-25).</p>
+         </note>
+
+         <note xml:id="com165">
+<!--lemma: Deus in nobis-->
+            <p>bearbejdet citat fra <persName key="pe264">Ovids</persName>
+               <rs key="title978" type="title">
+<hi rend="italic">Fasti</hi>
+</rs>: &#x201C;est deus
+               in nobis; agitante calescimus illo&#x201D; (6. bog, v. 5, da. &#x201C;I os bor der en
+               Gud. Han er Ophav til vor Begejstring&#x201D;, <rs type="title" key="title977">Ovid
+                  1945</rs>, s. 143).</p>
+         </note>
+
+         <note xml:id="com167">
+<!--lemma: Bevidstl&#x00F8;shed-->
+            <p>dvs. manglende bevidsthed.</p>
+         </note>
+
+         <note xml:id="com170">
+<!--lemma: Ulyssis Staldbr&#x00F8;dre-->
+            <p>
+<rs key="myth416" type="myth">Odysseus'</rs> kammerater. Der sigtes til, at
+               troldkvinden Kirke forvandlede nogle af <rs key="myth416" type="myth">Odysseus'</rs> m&#x00E6;nd til svin. De tog derfor ophold i en svinesti
+                  (<rs type="title" key="title631">Odysseen</rs> 10. sang, v. 230-243).</p>
+         </note>
+
+         <note xml:id="com171">
+<!--lemma: anden Examen-->
+            <p>ogs&#x00E5; kaldet filosofikum; en eksamen i forskellige fag, som studenterne fra
+               1788 til 1850 indstillede sig til efter studentereksamen. Den f&#x00F8;rste eksamen
+               var netop studentereksamen, som indtil 1850 blev aflagt p&#x00E5; universitetet.</p>
+         </note>
+
+         <note xml:id="com524">
+<!--lemma: ei have noget h&#x00F8;iere Maal for deres Studeringer, end i det h&#x00F8;ieste bedste Karakter til Embedsexamen, og derpaa &#x2014; et godt Embede-->
+            <p>Grundtvig l&#x00E6;gger sig i sin kritik af br&#x00F8;dstudenterne t&#x00E6;t op ad
+                  <persName key="pe35">Friedrich Schillers</persName>
+               tiltr&#x00E6;delsesforel&#x00E6;sning som historieprofessor ved Jenas Universitet fra
+               1789, <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert
+                  man Universalgeschichte?&#x201D;</rs> (da. Hvad er og med hvilket form&#x00E5;l
+               studerer man universalhistorie?). <persName key="pe35">Schiller</persName> indleder
+               sin forel&#x00E6;sning med at skelne skarpt mellem den egentligt videnskabeligt
+               kaldede &#x2014; med hans ord &#x201C;der philosophische Kopf&#x201D; &#x2014; og
+               br&#x00F8;dstudenterne (dvs. de, der studerer embedsstudierne teologi, medicin og
+               jura). Denne skelnen g&#x00E5;r i en noget formildet form igen i Grundtvigs
+               afhandling.</p>
+            <note type="readMore">
+<p>I Grundtvigs excerpter fra l&#x00E6;sningen af <persName key="pe35">Schiller</persName> kan man bl.a. finde f&#x00F8;lgende passage:
+                  &#x201C;Den Br&#x00F6;dl&#x00E6;rdes Studereplan er saare forskellig fra det
+                  filosofiske Hoveds. Ham er det allene om at g&#x00F8;re ved sin Flid at opfylde de
+                  Betingelser under hvilke Han kan erholde et Embede og de dermed forbundne Fordele.
+                  / Han anstr&#x00E6;nger blot sine Sjels-Kr&#x00E6;fter for derved at
+                  forbedre sin udvortes Tilstand, og tilfredsstille sin lave Rosbeg&#x00E6;r&#x201D;
+                     (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                        Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 275, intern varians
+               udeladt).</p>
+</note>
+         </note>
+
+         <note xml:id="com173">
+<!--lemma: Embedspr&#x00F8;ven-->
+            <p>embedseksamen.</p>
+         </note>
+
+         <note xml:id="com174">
+<!--lemma: ars longa, vita brevis-->
+            <p>lat. &#x201C;kunsten er lang, livet er kort.&#x201D; Bearbejdet latinsk
+               overs&#x00E6;ttelse af <persName key="pe818">Hippokrates'</persName>
+               indledende ord i hans f&#x00F8;rste aforisme, der vedr&#x00F8;rer den praktiserende
+               l&#x00E6;gekunst og de dermed forbundne vanskeligheder. R&#x00E6;kkef&#x00F8;lgen er
+               normalt: &#x201C;Livet er kort, kunsten er lang&#x201D;.</p>
+         </note>
+
+         <note xml:id="com177">
+<!--lemma: om summis honoribus-->
+            <p>lat. &#x201C;de h&#x00F8;jeste (akademiske) &#x00E6;resbevisninger&#x201D;, dvs.
+               doktorgraden.</p>
+         </note>
+
+         <note xml:id="com178">
+<!--lemma: Hallische Litteraturzeitung-->
+            <p>
+<hi rend="italic">Hallische Literaturzeitung</hi> (Hallensisk litteraturtidende) er
+               et tilnavn til tidsskriftet <rs key="title1011" type="title">
+<hi rend="italic">Allgemeine Literatur-Zeitung</hi>
+</rs> (Almen litteraturtidende). Det udkom
+               mellem 1785 og 1849, fra 1803 i Halle. Det var samtidens st&#x00F8;rste og mest
+               indflydelsesrige, tysksprogede organ for litteraturanmeldelser og -debat.</p>
+         </note>
+
+         <note xml:id="com179">
+<!--lemma: Danmarks Pharmakopee-->
+            <p>dvs. farmakop&#x00E9;, autoriseret fortegnelse over l&#x00E6;gemidler med forskrifter
+               for deres sammens&#x00E6;tning og anvendelse. <rs key="title1040" type="title">
+<hi rend="italic">Pharmacopoea Danica</hi>
+</rs> (1805, Dansk farmakop&#x00E9;) blev
+               anmeldt i <rs key="title1012" type="title">
+<hi rend="italic">Allgemeine
+                     Literatur-Zeitung</hi> (Almen litteraturtidende), 1806, 1, nr. 42</rs> og <rs key="title1013" type="title">43</rs>.</p>
+         </note>
+
+         <note xml:id="com180">
+<!--lemma: Pr&#x00E6;ses-->
+            <p>her en disputats' leder, der opstillede en r&#x00E6;kke s&#x00E6;tninger eller
+               sp&#x00F8;rgsm&#x00E5;l, som skulle im&#x00F8;deg&#x00E5;s af den disputerende.</p>
+         </note>
+
+         <note xml:id="com172">
+<!--lemma: Efter Naturen-->
+            <p>naturtro; i overensstemmelse med virkeligheden.</p>
+         </note>
+
+         <note xml:id="com175">
+<!--lemma: vansl&#x00E6;gtede-->
+            <p>afveg (uheldigt) fra sl&#x00E6;gten, her anvendt ironisk.</p>
+         </note>
+
+         <note xml:id="com184">
+<!--lemma: Leiebibliotheket-->
+            <p>bogsamling, hvis b&#x00F8;ger udl&#x00E5;nes mod betaling pr. bog eller i abonnement. Danske lejebiblioteker kendes fra 1750'erne, de rummede gerne den mest popul&#x00E6;re litteratur.</p>
+         </note>
+
+         <note xml:id="com185">
+<!--lemma: Hovmestere-->
+            <p>her personer, der st&#x00E5;r for en fornem, ung mands opdragelse og uddannelse.</p>
+         </note>
+
+         <note xml:id="com186">
+<!--lemma: Informatorer-->
+            <p>privatl&#x00E6;rere; husl&#x00E6;rere.</p>
+         </note>
+
+         <note xml:id="com187">
+<!--lemma: Pr&#x00E6;stehielpere -->
+            <p>hj&#x00E6;lpepr&#x00E6;ster.</p>
+         </note>
+
+         <note xml:id="com191">
+<!--lemma: Ledebaand-->
+            <p>gangsele (til b&#x00F8;rn), her anvendt metaforisk om universitetets myndighed over
+               den studerende.</p>
+         </note>
+
+         <note xml:id="com192">
+<!--lemma: n&#x00F8;de-->
+            <p>pr&#x00E6;teritum pluralis af &#x201C;nyde&#x201D;; end de (selv) n&#x00F8;d.</p>
+         </note>
+
+         <note xml:id="com525">
+<!--lemma: Schillings Romaner-->
+            <p>
+<persName key="pe819">Friedrich Gustav Schilling</persName> var en produktiv
+               forfatter af popul&#x00E6;rlitteratur, ofte af erotisk karakter.
+               <!--Blandt hans mere kendte v&#x00E6;rker er den erotiske roman <hi rend="italic">Denkw&#x00FC;rdigkeiten des Herrn von H., eines teutschen Edelmanns</hi> (da. En tysk adelsmands, Hr. von H.s erindringer).-->
+</p>
+         </note>
+
+         <note xml:id="com572">
+<!--lemma: mutatis mutandi-->
+            <p>lat. &#x2018;n&#x00E5;r det er &#x00E6;ndret, som b&#x00F8;r &#x00E6;ndres&#x2019;,
+               fast udtryk.</p>
+         </note>
+
+         <note xml:id="com196">
+<!--lemma: Pr&#x00E6;kediminutiverne-->
+            <p>Grundtvigs satiriske betegnelse for hj&#x00E6;lpepr&#x00E6;ster.</p>
+         </note>
+
+         <note xml:id="com573">
+<!--lemma: br&#x00F8;dre i minerva-->
+            <p>akademiske kolleger.</p>
+         </note>
+
+         <note xml:id="com201">
+<!--lemma: renset-->
+            <p>klart, uhildet.</p>
+         </note>
+
+         <note xml:id="com202">
+<!--lemma: Kaldsforretninger-->
+            <p>embedsm&#x00E6;ssige g&#x00F8;rem&#x00E5;l.</p>
+         </note>
+
+         <note xml:id="com203">
+<!--lemma: Viintapperens-->
+            <p>v&#x00E6;rtshusholder, der (kun) serverer vin.</p>
+         </note>
+
+         <note xml:id="com205">
+<!--lemma: forbinder-->
+            <p>forpligter.</p>
+         </note>
+
+         <note xml:id="com206">
+<!--lemma: Gienstande-->
+            <p>emner.</p>
+         </note>
+
+         <note xml:id="com208">
+<!--lemma: p&#x00E6;dagogiske Seminariums-->
+            <p>Grundtvig henviser til det f&#x00F8;rste statslige p&#x00E6;dagogiske seminarium, som
+               blev grundlagt i &#x00E5;r 1800 og fungerede indtil 1811. Seminariet h&#x00F8;rte
+               under K&#x00F8;benhavns Universitet og fungerede i praksis som et selvst&#x00E6;ndigt
+               fakultet. Form&#x00E5;let med seminariet var at professionalisere
+               l&#x00E6;rergerningen efter datidens mest moderne p&#x00E6;dagogiske principper og
+               dermed l&#x00F8;srive de statslige undervisningsopgaver fra kirken.</p>
+         </note>
+         <note xml:id="com209">
+<!--lemma: Forbedringen ved de l&#x00E6;rde Skoler-->
+            <p>I &#x00E5;rerne 1805-1809 blev der udsendt en ny og udvidet l&#x00E6;seplan for de
+               statslige latinskoler. Klassel&#x00E6;rere blev erstattet af fagl&#x00E6;rere, og
+               latin blev formelt erstattet af dansk som eksamenssprog.</p>
+         </note>
+
+         <note xml:id="com207">
+<!--lemma: Examen Artium-->
+            <p>studentereksamen.</p>
+         </note>
+
+         <note xml:id="com204">
+<!--lemma: Skoleindretning-->
+            <p>skoleordning.</p>
+         </note>
+
+         <note xml:id="com526">
+<!--lemma: har selv den Gl&#x00E6;de at vide det-->
+            <p>Fra marts 1805 fungerede Grundtvig som husl&#x00E6;rer for den dengang
+               syv&#x00E5;rige <persName key="pe21">Karl Frederik Steensen-Leth</persName> p&#x00E5;
+               herreg&#x00E5;rden Egel&#x00F8;kke p&#x00E5; Langeland, indtil han vendte tilbage til
+               K&#x00F8;benhavn i april 1808. Grundtvig f&#x00F8;rte en grundig dagbog over sine
+               egne p&#x00E6;dagogiske erfaringer i <rs key="title1010" type="title">&#x201C;Leksjons Og Karakterbog For Karl Frederik Stensen Leth&#x201D;</rs> (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1
+                  1979</rs>, s. 281-365).</p>
+         </note>
+
+         <note xml:id="com527">
+<!--lemma: den h&#x00F8;iere Kundskabs Kilde, vi have i os selv,-->
+            <p>fornuften.</p>
+            <note type="readMore">
+<p>Grundtvigs romantisk inspirerede p&#x00E6;dagogik
+                  fors&#x00F8;ger at bygge bro mellem &#x00E5;nd og erfaring, mellem det ideelle og
+                  det reelle, hvilket han beskriver i sin <rs key="title1010" type="title">&#x201C;Leksjons Og Karakterbog For Karl Frederik Stensen Leth&#x201D;</rs> i
+                  maj 1806: &#x201C;Anskuelsen og Forstanden, der synes at leve i evigt Fjendskab,
+                  dem vilde jeg samle i en fornuftig Identitet &#x2014; Jeg vilde ej subordinere men
+                  koordinere hans Kr&#x00E6;fter &#x2014; Jeg vilde l&#x00E6;re ham at h&#x00E6;ve
+                  sig over alt Jordisk til det Evige H&#x00F6;jeste, uden at lade ham &#x00E6;kles
+                  ved Eksistensen&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                        Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 330).</p>
+</note>
+         </note>
+
+         <note xml:id="com211">
+<!--lemma: meddeelt-->
+            <p>bibragt.</p>
+         </note>
+
+         <note xml:id="com213">
+<!--lemma: Modstr&#x00E6;belser-->
+            <p>modstand.</p>
+         </note>
+
+         <note xml:id="com528">
+<!--lemma: hverken ved Opdragelse kunne frembringes, eller &#x2014;  t&#x00F8;r man vel sige &#x2014;  opdrages af Andre,-->
+            <p>Grundtvig tr&#x00E6;kker her p&#x00E5; en tidstypisk opfattelse af geniet som en,
+               hvis evner alene udspringer af en medf&#x00F8;dt gave, og som derfor ikke kan
+               opdrages. Opfattelsen kan bl.a. findes i <persName key="pe508">Kants</persName>
+               <hi rend="italic">
+<rs key="title1248" type="title">Kritik der Urteilskraft</rs>
+</hi>
+               &#x00A7;47 (da. <rs type="title" key="title979">
+<hi rend="italic">Kritik af d&#x00F8;mmekraften</hi>
+</rs>
+                  2007, s. 148-149) og i <persName key="pe18">Steffens'</persName>
+               filosofiske indledningsforel&#x00E6;sninger (<rs key="title117" type="title">Steffens
+                  1996</rs>, s.
+               146-147).<!-- Grundtvig anvender en lignende definition af geniet i sine
+               dagbogsoptegnelser fra 24. februar 1805: &#x201C;da Ieg ved Sjeniet er sig selv en Lov
+               og ey kan d&#x00F8;mmes uden af Den som har dybere Naturanskuelse end Han, tier Ieg og
+               t&#x00E6;nker&#x201C; (<rs key="title3" type="title"><hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 206).-->
+</p>
+         </note>
+
+         <note xml:id="com219">
+<!--lemma: Subjecter-->
+            <p>personer.</p>
+         </note>
+
+         <note xml:id="com220">
+<!--lemma: Begyndelsesgrundene-->
+            <p>de element&#x00E6;re dele.</p>
+         </note>
+
+         <note xml:id="com224">
+<!--lemma: urettelig-->
+            <p>med urette.</p>
+         </note>
+
+         <note xml:id="com229">
+<!--lemma: Drik Viin, v&#x00E6;r doven, og fias med piger,-->
+            <p>un&#x00F8;jagtigt citat fra <persName key="pe440">Werner Abrahamsons</persName> digt
+                  <rs key="title980" type="title">&#x201C;Norma Morum &#x2014; efter Tidernes
+                  Leilighed&#x201D;</rs>, som er kendt for den gennemg&#x00E5;ende sentens:
+               &#x201C;Min S&#x00F8;n, om Du vil i Verden frem, / Saa buk&#x201D;. Digtet blev
+               trykt f&#x00F8;rste gang i februarnummeret af <persName key="pe24">Knud Lyne
+                  Rahbeks</persName>
+               <rs key="title125" type="title">
+<hi rend="italic">Minerva</hi>
+</rs> 1790. Originalen
+               lyder &#x201C;Drik Punsch, v&#x00E6;r doven og fjas med Piger&#x201D;.</p>
+         </note>
+
+         <note xml:id="com230">
+<!--lemma: Ki&#x00F8;nnets-->
+            <p>kvinders. Anvendelse af ordet &#x2018;k&#x00F8;n&#x2019; uden n&#x00E6;rmere
+               specificering betegner her kvinder, jf. udtrykkene det smukke eller svage
+               k&#x00F8;n.</p>
+         </note>
+
+         <note xml:id="com231">
+<!--lemma: hulde-->
+            <p>behagelige.</p>
+         </note>
+
+         <note xml:id="com574">
+<!--lemma: stadige-->
+            <p>faste, sikre.</p>
+         </note>
+
+         <note xml:id="com529">
+<!--lemma: Str&#x00E6;ben mod den Herlighed, han egentlig kun ahnede; men troede i Ahnelsen at eie-->
+            <p>Grundtvig ser k&#x00E6;rligheden som en kraft, der i sin ideelle form ansporer til at
+               tragte efter sk&#x00F8;nhed og viden. Tankegangen er influeret af samtidens
+               nyplatoniske str&#x00F8;mninger, som ogs&#x00E5; kan findes hos fx
+                  <persName key="pe16">Schack Staffeldt</persName>. Det er netop anelsen om ideernes
+               fuldkomne sk&#x00F8;nhed, der f&#x00E5;r digteren til at str&#x00E6;be efter den i
+               det jordiske. Hos <persName key="pe622">Platon</persName> er Eros den metafysiske
+               k&#x00E6;rlighed, der str&#x00E6;ber efter det gode, det sande og det sk&#x00F8;nne,
+               som det beskrives i <persName key="pe502">Sokrates'</persName> tale i dialogen
+                  <rs type="title" key="title983">
+<hi rend="italic">Symposion</hi>
+</rs>. At erstatte
+               str&#x00E6;ben efter k&#x00E6;rlighed med str&#x00E6;ben efter viden gjorde Grundtvig
+               selv erfaringer med p&#x00E5; Langeland, se indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn14">K&#x00E6;rlighed og
+                  videnskabelighed</ref>.</p>
+         </note>
+
+         <note xml:id="com236">
+<!--lemma: Verthers Gravh&#x00F8;i-->
+            <p>I <persName key="pe29">Goethes</persName> brevroman <rs key="title1014" type="title">
+<hi rend="italic">Die Leiden des jungen Werthers</hi>
+</rs> (1774, da. <hi rend="italic">
+<rs key="title2255" type="title">Den unge
+               Werther's Lidelser</rs>,</hi> 1832) beg&#x00E5;r hovedpersonen <persName key="pe678">Werther</persName> selvmord p&#x00E5; grund af ulykkelig k&#x00E6;rlighed.</p>
+         </note>
+
+         <note xml:id="com237">
+<!--lemma: iig Lazarus, tilbage fra Graven,-->
+            <p>hentydning til <rs type="bible" key="Joh 11,43-44">Joh 11,43-44</rs>.</p>
+         </note>
+
+         <note xml:id="com239">
+<!--lemma: stunde did-->
+            <p>str&#x00E6;be derhen.</p>
+         </note>
+
+         <note xml:id="com531">
+<!--lemma: det dobbelte V&#x00E6;sens Vinger -->
+            <p>Beskrivelsen af det dobbelte v&#x00E6;sen svarer til det hyppigt citerede billede fra
+                  <persName key="pe633">Aristofanes'</persName> tale i <persName key="pe622">Platons</persName>
+               <rs key="title983" type="title">
+<hi rend="italic">Symposion</hi>
+</rs> af de elskende,
+               der udg&#x00F8;r de genforenede halvdele af en oprindelig enhed: &#x201C;Grunden til
+               det er nemlig, at vores oprindelige natur var s&#x00E5;dan: Vi var hele Mennesker.
+               Ordet k&#x00E6;rlighed er alts&#x00E5; betegnelsen for denne str&#x00E6;ben efter
+               helhed. F&#x00F8;r i tiden var vi som sagt &#x00E9;t, nu er vi p&#x00E5; grund af
+               denne forbrydelse delt af <rs key="myth171" type="myth">Zeus</rs>&#x201D; (<rs key="title983" type="title">Platon 2010</rs>, s. 347). Se ogs&#x00E5;
+               indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn14">K&#x00E6;rlighed og videnskabelighed</ref>.</p>
+         </note>
+
+         <note xml:id="com241">
+<!--lemma: Ki&#x00F8;nnet-->
+            <p>kvinderne. Anvendelse af ordet &#x2018;k&#x00F8;n&#x2019; uden n&#x00E6;rmere
+               specificering betegner her kvinder, jf. udtrykkene det smukke eller svage
+               k&#x00F8;n.</p>
+         </note>
+
+         <note xml:id="com532">
+<!--lemma: Naar Dumhed sig og Elskov parre,... Aldrig meer i Verden saae, -->
+            <p>Citatet har ikke kunnet identificeres. B&#x00E5;de budskab og struktur kan minde om
+               det tyske ordsprog: &#x201C;Wenn Hoffart und Dummheit einander heirathen, so haben
+               sie ein T&#x00F6;chterlein, das hei&#x00DF;t Narrheit&#x201D; (da. N&#x00E5;r hovmod og dumhed
+               gifter sig, s&#x00E5; f&#x00E5;r de en datterlil, som hedder naragtighed, <rs key="title1018" type="title">Wander 1964</rs>, bind 2, sp. 717, oversat af GV).</p>
+         </note>
+
+         <note xml:id="com246">
+<!--lemma: Smaahedsaanden-->
+            <p>en interesse for sm&#x00E5;ting alene.</p>
+         </note>
+
+         <note xml:id="com575">
+<!--lemma: og ikke-->
+            <p>ikke ligefrem.</p>
+         </note>
+
+         <note xml:id="com250">
+<!--lemma: Vittighed-->
+            <p>vid.</p>
+         </note>
+
+         <note xml:id="com533">
+<!--lemma: han aldrig ki&#x00E6;ndte nogen ret fornuftig Mand, der i Almindelighed var yndet af Fruentimmerne, -->
+            <p>Formuleringen er et n&#x00E6;sten ordret citat fra den danske overs&#x00E6;ttelse af
+                  <persName key="pe677">Joseph Addisons</persName>
+               <hi rend="italic">
+<rs key="title1562" type="title">The Spectator</rs>:</hi> &#x201C;I
+               al denne min Unders&#x00F8;gning har jeg aldrig kiendt en Mand af god sund Fornuft,
+               som i Almindelighed har v&#x00E6;ret yndet af Fruentimmer&#x201D; (<rs type="title" key="title1562">Addison 1743</rs>, s. 443). Overs&#x00E6;ttelsen af <hi rend="italic">
+<rs key="title1562" type="title">The Spectator</rs>
+</hi> fandtes i
+               Grundtvigs bogsamling, <ref type="docOut" target="bookInventory1805.xml#docIn59">Bogfortegnelsen 1805</ref> nr. LIX-LX (fasc.
+               501).<!--Grundtvig vender flere gange tilbage til denne passage hos <persName key="pe677"
+                  >Addison</persName> i sine dag- og udtogsb&#x00F8;ger: &#x201C;443 l&#x00E6;ses &#x2018;Ieg har
+               aldrig kiendt en Mand af god sund Forstand som i Almindelighed har v&#x00E6;ret yndet af
+               Fruentimmer&#x2019; Denne Bem&#x00E6;rkning fandt Ieg ypperlig, thi &#x2014; Ieg er ikke
+               yndet af Damerne&#x201D; (<rs key="title3" type="title"><hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 27, se ogs&#x00E5; s. 95, s. 259-260).-->
+</p>
+         </note>
+
+         <note xml:id="com253">
+<!--lemma: smaavurne-->
+            <p>dvs. sm&#x00E5;vorne, sm&#x00E5;tsk&#x00E5;rne.</p>
+         </note>
+
+         <note xml:id="com261">
+<!--lemma: beobagte-->
+            <p>af ty., varetager, passer.</p>
+         </note>
+
+         <note xml:id="com262">
+<!--lemma: Partes-->
+            <p>forretninger.</p>
+         </note>
+
+         <note xml:id="com263">
+<!--lemma: publice, privatim og privatissime-->
+            <p>(lat.) offentligt, privat og meget privat. Der sigtes til, at professoren b&#x00E5;de
+               afholdt offentlige forel&#x00E6;sninger (collegia publica) og forel&#x00E6;sninger
+               mod honorar (collegia privata) samt forel&#x00E6;sninger eller &#x00F8;velser for en
+               sn&#x00E6;vrere kreds af studerende (collegia privatissima). Sidstn&#x00E6;vnte
+               foregik i professorens hjem og var ligeledes mod honorar.</p>
+         </note>
+
+         <note xml:id="com536">
+<!--lemma: sine Forel&#x00E6;sninger over Litterairhistorien -->
+            <p>Sammen med <persName key="pe24">Knud Lyne Rahbek</persName> holdt <persName key="pe2">Rasmus Nyerup</persName> litteraturhistoriske forel&#x00E6;sninger p&#x00E5;
+               universitetsbibliotekets etage over Trinitatis kirke. If&#x00F8;lge <persName key="pe65">R&#x00F8;nning</persName> kan det dog ikke dokumenteres, at
+               Grundtvig selv fulgte <persName key="pe2">Nyerups</persName> litteraturhistoriske
+               forel&#x00E6;sninger.</p>
+            <note type="readMore">
+<p>Derimod optr&#x00E6;der navnene p&#x00E5; Grundtvigs venner
+                     <persName key="pe23">Christian Molbech</persName> og <persName key="pe176">Povl
+                     Dons</persName> p&#x00E5; <persName key="pe2">Nyerups</persName> bevarede
+                  deltagerlister fra forel&#x00E6;sningerne (<rs key="title20" type="title">R&#x00F8;nning 1907</rs>, bind 1:2, s. 177).</p>
+</note>
+         </note>
+
+         <note xml:id="com270">
+<!--lemma: hvi man udskreg-->
+            <p>
+<persName key="pe18">Steffens</persName>, der havde begejstret sine tilh&#x00F8;rere
+               med sine filosofiske indledningsforel&#x00E6;sninger i 1802, blev kritiseret for at
+               g&#x00F8;re ungdommen forrykt med sin romantiske naturfilosofi. Dette resulterede
+               blandt andet i, at <persName key="pe18">Steffens</persName> blev forbig&#x00E5;et i
+               efter&#x00E5;ret 1803, da professoratet i Filosofi ved K&#x00F8;benhavns Universitet
+               blev ledigt.</p>
+         </note>
+
+
+         <note xml:id="com271">
+<!--lemma: paa hans Ryg-->
+            <p>bag hans ryg.</p>
+         </note>
+
+         <note xml:id="com537">
+<!--lemma: den geniefulde
+     Steffens, der paa sin egen Vei str&#x00E6;bte at v&#x00E6;kke Videnskabelighed, og neppe ganske forfeilede
+     sin Hensigt -->
+            <p>Sp&#x00F8;rgsm&#x00E5;let om videnskabelighed er ogs&#x00E5; et centralt emne i
+                  <persName key="pe18">Steffens'</persName> filosofiske
+               indledningsforel&#x00E6;sninger fra 1802. <persName key="pe18">Steffens</persName>
+               havde vakt opsigt med sin medrivende pr&#x00E6;sentation af den tyske romantiske
+               filosofi. Grundtvig var selv blandt <persName key="pe18">Steffens'</persName>
+               tilh&#x00F8;rere p&#x00E5; Elers' Kollegium. Grundtvigs afhandling har
+               st&#x00E6;rke tematiske ligheder med <persName key="pe18">Steffens'</persName>
+               overvejelser over videnskabeligheden i den anden forel&#x00E6;sning af <rs key="title118" type="title">
+<hi rend="italic">Indledning til philosophiske
+                     Forel&#x00E6;sninger</hi>
+</rs>. Se indledningens afsnit <ref type="docOut" target="1807_63_intro.xml#docIn10">
+<persName key="pe18">Henrich
+                     Steffens</persName>
+</ref>.</p>
+         </note>
+
+         <note xml:id="com268">
+<!--lemma: academiske Borgere-->
+            <p>Siden middelalderen opfattedes universitetet som et selvst&#x00E6;ndigt samfund med
+               egen jurisdiktion. L&#x00E6;rere og studerende var derfor borgere i dette samfund, og
+               som bevis modtog de et akademisk borgerbrev.</p>
+         </note>
+
+         <note xml:id="com269">
+<!--lemma: privat Pr&#x00E6;ceptor-->
+            <p>privatl&#x00E6;rer. Her om den professor, som valgtes af en studerende til at fungere
+               som vejleder og mentor i studietiden.</p>
+         </note>
+
+         <note xml:id="com276">
+<!--lemma: Omd&#x00F8;mme-->
+            <p>bed&#x00F8;mmelse; vurdering.</p>
+         </note>
+
+         <note xml:id="com279">
+<!--lemma: Privatissima-->
+            <p>underforst&#x00E5;et collegia privatissima (lat., superlativ af privata),
+               forel&#x00E6;sninger eller &#x00F8;velser for en sluttet kreds af (betalende)
+               studerende.</p>
+         </note>
+
+         <note xml:id="com280">
+<!--lemma: 10 Rd.-->
+            <p>10 rigsdaler. Prisen for privatlektionerne er h&#x00F8;j i sammenligning med tidens
+               huslejepriser, da en &#x201C;anst&#x00E6;ndig&#x201D; familie i begyndelsen af 1807
+               brugte 150-200 rigsdaler p&#x00E5; husleje om &#x00E5;ret (<rs key="title1163" type="title">Rubin 1870</rs>, s. 150).</p>
+         </note>
+
+         <note xml:id="com281">
+<!--lemma: Br&#x00F8;dvidenskaben-->
+            <p>videnskab, som man bedriver for at opn&#x00E5; et levebr&#x00F8;d.</p>
+         </note>
+
+         <note xml:id="com282">
+<!--lemma: Sv&#x00E6;rmens-->
+            <p>m&#x00E6;ngdens.</p>
+         </note>
+
+         <note xml:id="com538">
+<!--lemma: de academiske Stipendier -->
+            <p>Det var muligt at s&#x00F8;ge en r&#x00E6;kke stipendier til universitetsstudier
+               omkring &#x00E5;r 1800, som det fremg&#x00E5;r af de s&#x00E5;kaldte <rs type="title" key="title984">
+<hi rend="italic">Hofmans Fundatser</hi>
+</rs>, der samlede danske
+               og norske legater i et v&#x00E6;rk p&#x00E5; 10 bind. Den mest betydningsfulde
+               akademiske stiftelse var Kommunitetet, der dels uddelte et pengelegat, som i daglig
+               tale ben&#x00E6;vntes &#x201C;Klosterdaleren&#x201D; (se kommentaren <ref type="docIn" target="#com287">&#x201C;Klosterdaleren&#x201D;</ref>), dels finansierede kollegiet
+               Regensen.</p>
+         </note>
+
+         <note xml:id="com287">
+<!--lemma: Klosterdaleren-->
+            <p>&#x201C;Klosterdaleren&#x201D; var et legat p&#x00E5; en sletdaler (4 mark) om ugen,
+               som fattige studerende kunne f&#x00E5; tildelt af Kommunitetet.</p>
+            <note type="readMore">
+<p>Begrebet er afledt af &#x201C;Klosteret&#x201D;, dvs.
+                  Hellig&#x00E5;ndsklostret, hvor fattige studenter blev bespist p&#x00E5; <persName key="pe456">Christian 2.s</persName> tid. Senere blev betegnelsen
+                  &#x201C;Klosteret&#x201D; brugt om Kommunitetets bygning, hvor hundrede studenter
+                  frem til 1736 spiste to gange om dagen. &#x201C;Klosterdaleren&#x201D; erstattede
+                  denne bespisningsordning.</p>
+</note>
+         </note>
+
+         <note xml:id="com288">
+<!--lemma: naae-->
+            <p>opn&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com290">
+<!--lemma: videnskabelige Stiftelser-->
+            <p>Grundtvig hentyder navnlig til Kommunitetet, der var en stiftelse, prim&#x00E6;rt for
+               studerende, oprettet af <persName key="pe230">Frederik 2.</persName> i 1569 og
+               udbygget af <persName key="pe231">Christian 4.</persName> i 1623.</p>
+         </note>
+
+         <note xml:id="com293">
+<!--lemma: lader sig tilsyne-->
+            <p>fremst&#x00E5;r.</p>
+         </note>
+
+         <note xml:id="com295">
+<!--lemma: Klosterets Ruiner-->
+            <p>Klosteret var oprindeligt en kortform for Hellig&#x00E5;ndsklosteret, hvor fattige
+               studenter blev bespist p&#x00E5; <persName key="pe456">Christian 2.s</persName> tid.
+               Senere blev betegnelsen brugt om Kommunitetets bygning i N&#x00F8;rregade, hvor
+               hundrede studenter frem til 1736 spiste to gange om dagen. Som bespisningsordning var
+               Klosteret tr&#x00E5;dt ud af funktion p&#x00E5; Grundtvigs tid og erstattet af
+               stipendiet &#x201C;Klosterdaleren&#x201D;.</p>
+         </note>
+
+         <note xml:id="com296">
+<!--lemma: Decanernes for&#x00E6;ldede Borde-->
+            <p>hentydning til de &#x00F8;velser, som afholdtes for modtagerne af
+               &#x201C;Klosterdaleren&#x201D; og for regensianerne. &#x00D8;velserne foregik ved
+               borde i Kommunitetets spisesal, hvor grupper af tretten studerende, inddelt efter
+               fakultet, blev h&#x00F8;rt i dagens opgaver af dekanerne over m&#x00E5;ltidet.
+               Muligvis hentydes der til, at bespisningsordningen p&#x00E5; dav&#x00E6;rende
+               tidspunkt var oph&#x00F8;rt.</p>
+         </note>
+
+         <note xml:id="com297">
+<!--lemma: opl&#x00F8;fte deres
+     Hoveder, thi deres Forl&#x00F8;sning stunder til-->
+            <p>allusion til <rs type="bible" key="Luk 21,28">Luk 21,28</rs>.</p>
+         </note>
+
+         <note xml:id="com539">
+<!--lemma: Fortidens Rosenkrandse -->
+            <p>Grundtvigs formulering spiller muligvis p&#x00E5; adelsfamilien Rosenkrantz fra
+               baroniet Rosenholm, blandt hvis medlemmer t&#x00E6;lles &#x201C;den
+               l&#x00E6;rde&#x201D; <persName key="pe820">Holger Rosenkrantz</persName>.</p>
+         </note>
+
+         <note xml:id="com540">
+<!--lemma: Merkurs S&#x00F8;nner
+skulle l&#x00E6;re, at valgte end Guden Bachus til sin Yndling, ja solgte han end den tonende Luth for de h&#x00F8;ihornede Oxer, saa sluttedes og derved den evige Fred mellem ham og Apollo -->
+            <p>Passagen henviser til myten om handelsguden <rs key="myth425.a" type="myth">Merkurs</rs> barndom, hvor den sp&#x00E6;de <rs key="myth425.a" type="myth">Merkur</rs> f&#x00F8;rst fanger en skildpadde og fremstiller en lyre af dens
+               skjold. Straks derefter stj&#x00E6;ler han halvtreds af <rs key="myth426" type="myth">Apollons</rs> okser, men afsl&#x00F8;res og m&#x00E5; som erstatning aflevere
+               lyren til <rs key="myth426" type="myth">Apollon</rs>. Grundtvig anvender myten som et
+               billede p&#x00E5; en ideel forsoning mellem samfundets merkantile interesser
+               p&#x00E5; den ene side og p&#x00E5; den anden side de &#x00E6;stetiske og
+               videnskabelige interesser, inkarneret af hhv. <rs key="myth425.a" type="myth">Merkur</rs> og <rs key="myth426" type="myth">Apollon</rs>.</p>
+         </note>
+
+         <note xml:id="com541">
+<!--lemma: de drevet de aandl&#x00F8;se Skygger -->
+            <p>Foruden at v&#x00E6;re gud for handel og tyveri er <rs key="myth425.a" type="myth">Merkur</rs> ogs&#x00E5; sj&#x00E6;lef&#x00F8;reren, <rs key="myth425.b" type="myth">Psychopompos</rs>, der f&#x00F8;rer de d&#x00F8;de sj&#x00E6;le til
+               Hades.</p>
+         </note>
+
+         <note xml:id="com542">
+<!--lemma: Sangens Fader -->
+            <p>
+<rs key="myth426" type="myth">Apollon</rs>.</p>
+         </note>
+
+         <note xml:id="com543">
+<!--lemma: Ei vil Bonden glemme sin Ploug, men vel, fuld af &#x00C6;refrygt, byde den standse ved F&#x00E6;drenes Gravh&#x00F8;ie. -->
+            <p>Grundtvig refererer her til den i samtiden verserende debat om bevaring af
+               oldtidsminder. Som mange andre l&#x00E6;rde i samtiden kritiserer Grundtvig den
+               alvorlige bivirkning ved udskiftningen, dvs. 1700-tallets landboreformer, at den
+               indirekte tilskyndede b&#x00F8;nderne til at fjerne gravh&#x00F8;je og andre
+               oldtidsminder fra de udstykkede jordlodder for at optimere udnyttelsen af jorden.</p>
+            <note type="readMore">
+<p>Den 22. maj 1807, f&#x00E5; m&#x00E5;neder efter at Grundtvigs
+                  afhandling blev trykt, oprettedes Den Kongelige Commission til Oldsagernes
+                  Opbevaring. Det skete ikke mindst p&#x00E5; foranledning af <persName key="pe2">Rasmus Nyerup</persName>, som tidligere havde bidraget til debatten i det
+                  fjerde bind af <rs key="title985" type="title">
+<hi rend="italic">Historisk-statistisk Skildring af Tilstanden i Danmark og Norge i
+                        &#x00E6;ldre og nyere Tider</hi>
+</rs>, <hi rend="italic">
+<rs key="title986" type="title">Oversyn over F&#x00E6;dernelandets Mindesm&#x00E6;rker fra
+                        Oldtiden, saaledes som samme kan t&#x00E6;nkes opstillede i et tilkommende
+                        National-Museum. Et fors&#x00F8;g</rs>,</hi> fra 1806. F&#x00F8;rste bind af
+                  dette v&#x00E6;rk kan findes i Grundtvigs <ref type="docOut" target="bookInventory1805.xml#docIn25">Bogfortegnelse 1805</ref> som nr. XXV
+                  (fasc. 501). I fjerde bind skildrer den bondef&#x00F8;dte <persName key="pe2">Nyerup</persName>, hvordan gravh&#x00F8;jene i hans barndomslandskab er
+                  forsvundet, og opfordrer til grundl&#x00E6;ggelsen af et nationalmuseum til
+                  indsamling af de truede oldtidsminder.</p>
+</note>
+         </note>
+
+         <note xml:id="com544">
+<!--lemma: de sorte Kunster, Loke l&#x00E6;rte Mennesket -->
+            <p>Metaforisk peger omtalen af de sorte kunster i retning af s&#x00E5;vel magi (jf.
+               sortekunst) som brugen af ild og krudt (jf. sortkrudt). <rs key="myth48" type="myth">Loke</rs> fremstilles i denne passage som en nordisk pendant til <rs key="myth440" type="myth">Prometheus</rs>, der stjal ilden fra guderne og gav den
+               til menneskene.</p>
+            <note type="readMore">
+<p>Fremstillinger fra 1700-tallet tyder p&#x00E5;, at der blev
+                  anvendt spr&#x00E6;ngstof til at fjerne sten fra gravh&#x00F8;je m.m. i
+                  forbindelse med modernisering af landbruget: &#x201C;Vorzeiten war die Land mit
+                  Steinen und Begr&#x00E4;bni&#x00DF;-H&#x00FC;geln der alten Heiden
+                  angef&#x00FC;llet. Die Einh&#x00E4;gung der L&#x00E4;ndereien aber hat Gelegenheit
+                  gegeben, da&#x00DF; die Einwohner alle Steine gleich viel wo sie Stekken
+                  aufsuchen, spalten, sprengen, und theils zur Grund-Mauer ihrer H&#x00E4;user,
+                  theils aber zur Anlage einfacher und mit Dornen besezter Stein-W&#x00E4;lle
+                  anwenden&#x201D; (<hi rend="italic">
+<rs type="title" key="title1564">Schleswig-Holsteinische Anzeigen 1767</rs>,</hi> s, 662, da. Tidligere var
+                  landet fyldt med sten og de gamle hedninges begravelsesh&#x00F8;je. Men
+                  indhegningen af markerne har medf&#x00F8;rt, at indbyggerne ops&#x00F8;ger alle
+                  sten, lige meget hvor og hvor mange de findes, spalter og spr&#x00E6;nger dem og
+                  dels anvender dem til fundament i deres huse, dels til anl&#x00E6;ggelse af
+                  stenvolde, med og uden tj&#x00F8;rn, oversat i <rs key="title1567" type="title">Henningsen 2010</rs>, s. 15).</p>
+</note>
+         </note>
+
+
+         <note xml:id="com545">
+<!--lemma: ei mere henkastes mellem
+     vanhellige Br&#x00F8;dre til forg&#x00E6;ngeligt Hegn -->
+            <p>Materiale fra de &#x00F8;delagte gravh&#x00F8;je og runesten blev bl.a. anvendt til
+               murv&#x00E6;rk: &#x201C;Ved Udskiftningen, og allerede noget f&#x00F8;r, ere Stenene
+               bortf&#x00F8;rte, og deraf er ikke langt fra Stedet opf&#x00F8;rt et skj&#x00F8;nt
+               Stengjerde&#x201D; (<rs type="title" key="title986">Nyerup 1806</rs>, s. XXXIX).
+               Grundtvig har muligvis kendt <persName key="pe2">Nyerups</persName> v&#x00E6;rk, se kommentar til
+               <ref type="docIn" target="#com543">&#x201C;Ei vil Bonden glemme sin Ploug...&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com304">
+<!--lemma: grundet-->
+            <p>begrundet.</p>
+         </note>
+
+         <note xml:id="com305">
+<!--lemma: Sammenst&#x00F8;d-->
+            <p>sammentr&#x00E6;f.</p>
+         </note>
+
+         <note xml:id="com308">
+<!--lemma: h&#x00E6;derlig-->
+            <p>agtv&#x00E6;rdig.</p>
+         </note>
+
+         <note xml:id="com576">
+<!--lemma: og-->
+            <p>ogs&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com314">
+<!--lemma: stemmede med-->
+            <p>svarede til.</p>
+         </note>
+
+         <note xml:id="com318">
+<!--lemma: Suhms Skrifter-->
+            <p>Den velhavende <persName key="pe7">P.F. Suhm</persName> bekostede selv udgivelsen af
+               sit monumentale fjortenbinds v&#x00E6;rk <hi rend="italic">
+<rs key="title321" type="title">Historie af Danmark</rs>,</hi> som omhandler Danmarks historie
+               indtil 1448. De tre f&#x00F8;rste bind heraf samt andre af <persName key="pe7">Suhms</persName> v&#x00E6;rker optr&#x00E6;der i <ref type="docOut" target="bookInventory1805.xml#docIn15">Bogfortegnelsen 1805</ref> som nr. XV-XVII
+               (fasc. 501).</p>
+         </note>
+
+
+         <note xml:id="com546">
+<!--lemma: assimilerende Stof -->
+            <p>Grundtvig har antagelig stiftet bekendtskab med begrebet, da han overv&#x00E6;rede
+                  <persName key="pe18">Steffens'</persName> indledningsforel&#x00E6;sninger i
+               1802. <persName key="pe18">Steffens</persName> anvender assimilationen som billede
+               p&#x00E5;, hvordan fornuften bem&#x00E6;gtiger sig menneskets indre liv:
+               &#x201C;Altsaa &#x2013; som Dyret ved et indvortes Livsprincip overvinder Massen, og
+               tvinger den til at assimilere sig dets V&#x00E6;sen &#x2013; saaledes synes et
+               h&#x00F6;jere Livsprincip at spire i Menneskets Inderste, hvilket s&#x00F6;ger at
+               tvinge <hi rend="italic">alt</hi> til at assimilere sig <hi rend="italic">Fornuften</hi>; thi at <hi rend="italic">denne</hi> er Udtrykket for hiint
+               h&#x00F6;jere Livsprincip, indseer enhver&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s. 32).</p>
+         </note>
+
+         <note xml:id="com547">
+<!--lemma: engelske T&#x00E6;pper -->
+            <p>Grundtvig g&#x00F8;r sig til part i en debat, som is&#x00E6;r skulle sprede sig
+               f&#x00E5; m&#x00E5;neder senere, efter engl&#x00E6;ndernes bombardement af
+               K&#x00F8;benhavn i september 1807, nemlig kritikken af danske borgeres hang til
+               udenlandske luksusgoder og den deraf f&#x00F8;lgende opfordring til et n&#x00F8;jsomt
+               liv &#x2013; med datidens modeord: et liv i &#x201C;tarvelighed&#x201D; (<rs type="title" key="title526">Glenth&#x00F8;j 2007</rs>, s. 103-110). At leve efter
+               tarv var at leve simpelt og med hensyn til det f&#x00E6;lles
+               bedste.<!--En lignende kritik kan findes i Christen Prams artikel "Noget om Maleri, Smag og Luxe" i <hi rend="italic">Minerva</hi> juli 1791, hvor Pram kritiserer borgerskabet for at investere i luksusgenstande til hjemmet i stedet for at st&#x00F8;tte danske kunstnere.Og sv&#x00E6;rg da Had til Sydens lumske Gift, / Til Vellyst, Pragt, og Guldets dorske Glimmer!  -->
+</p>
+         </note>
+
+         <note xml:id="com322">
+<!--lemma: Kl&#x00E6;demon-->
+            <p>kl&#x00E6;dedragt.</p>
+         </note>
+
+         <note xml:id="com323">
+<!--lemma: n&#x00F8;iet-->
+            <p>dvs. forn&#x00F8;jet, tilfreds.</p>
+         </note>
+
+         <note xml:id="com549">
+<!--lemma: varme Fortalere -->
+            <p>For at modvirke de bemidlede klassers trang til udenlandske luksusvarer blev der
+               under Napoleonskrigene opfordret til, at borgerne i stedet brugte deres penge
+               p&#x00E5; indenlandsk producerede luksusgoder (<rs key="title526" type="title">Glenth&#x00F8;j 2007</rs>, s. 103-110). Det er muligvis denne debat, Grundtvig
+               refererer til.</p>
+         </note>
+
+         <note xml:id="com577">
+<!--lemma: begrunde-->
+            <p>t&#x00E6;nke over, fors&#x00F8;ge at forst&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com327">
+<!--lemma: Minerva-->
+            <p>hentyder p&#x00E5; dette sted til tidsskriftet <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> hvori Grundtvigs artikel stod.</p>
+         </note>
+
+         <note xml:id="com330">
+<!--lemma: navne-->
+            <p>navnef&#x00E6;lle, dvs. gudinden <rs key="myth275.a" type="myth">Minerva</rs>, der var
+               det videnskabelige samfunds beskytter.</p>
+         </note>
+
+         <note xml:id="com328">
+<!--lemma: Udg. Anm.-->
+            <p>
+<persName key="pe24">Knud Lyne Rahbeks</persName> kommentar.</p>
+         </note>
+
+         <note xml:id="com329">
+<!--lemma: N&#x00E6;ringssorger-->
+            <p>&#x00F8;konomiske bekymringer.</p>
+         </note>
+
+         <note xml:id="com331">
+<!--lemma: Opsynsm&#x00E6;nd-->
+            <p>tilsynsf&#x00F8;rende.</p>
+         </note>
+
+         <note xml:id="com550">
+<!--lemma: Klokkere -->
+            <p>overordnede kirkebetjente.</p>
+         </note>
+
+         <note xml:id="com332">
+<!--lemma: Kaldsforretninger-->
+            <p>opgaver, der udf&#x00F8;res i embeds medf&#x00F8;r.</p>
+         </note>
+
+         <note xml:id="com336">
+<!--lemma: Tiendeforeningen-->
+            <p>overenskomst om at erstatte tiende med en fast &#x00E5;rlig afgift. I 1796 opfordrede
+               regeringen pr&#x00E6;sterne og deres sogneb&#x00F8;rn til at indg&#x00E5; aftaler
+               herom, og fra 1810 blev det gjort til lov, at enhver yder kunne kr&#x00E6;ve sin
+               tiende omsat til en fast afgift.</p>
+         </note>
+
+         <note xml:id="com337">
+<!--lemma: middelmaadige-->
+            <p>af gennemsnitlig st&#x00F8;rrelse.</p>
+         </note>
+
+         <note xml:id="com338">
+<!--lemma: Skoleseminarier-->
+            <p>l&#x00E6;rerseminarier. Det f&#x00F8;rste l&#x00E6;rerseminarium i Danmark var
+               Blaagaard Statsseminarium, der blev grundlagt i 1791.</p>
+         </note>
+
+         <note xml:id="com339">
+<!--lemma: Skolekasser-->
+            <p>kasse for en skoles indt&#x00E6;gter.</p>
+         </note>
+
+         <note xml:id="com340">
+<!--lemma: Overfl&#x00F8;dighed-->
+            <p>rigelighed, dvs. rigdom.</p>
+         </note>
+
+         <note xml:id="com345">
+<!--lemma: Godhed-->
+            <p>kvalitet.</p>
+         </note>
+
+         <note xml:id="com551">
+<!--lemma: Videnskabsselskaber -->
+            <p>Det Kongelige Danske Videnskabernes Selskab blev stiftet i 1742, Det trondhjemske
+               l&#x00E6;rde Selskab (i dag: Det Kongelige Norske Videnskabernes Selskab) kom til i
+               1760. Et tredje af datidens videnskabsselskaber var Det Kongelige Danske Selskab for
+               F&#x00E6;drelandets Historie (grundlagt 1745).</p>
+         </note>
+
+         <note xml:id="com554">
+<!--lemma: Fond -->
+            <p>Det Kongelige Danske Videnskabernes Selskab r&#x00E5;dede over en formue, som efter
+                  <persName key="pe23">Christian Molbechs</persName> skildring (1843) at
+               d&#x00F8;mme ikke var imponerende. Videnskabernes Selskab havde siden 1767 udlovet
+               tre pr&#x00E6;mier a 100 rigsdaler til de bedste besvarelser af selskabets
+               prisopgaver.
+               <!--Fonden havde ydermere siden 1761 og frem til 1843 finansieret en geografisk og trigonometrisk opm&#x00E5;ling af Danmark og Slesvig-Holsten, fra 1793 og frem udgave Videnskabernes Selskab <hi rend="italic">Dansk Ordbog</hi>.-->
+</p>
+         </note>
+
+         <note xml:id="com552">
+<!--lemma: Nutids eller Fremtids Brok -->
+            <p>Handelsmanden <persName key="pe690">Niels Brock</persName> var d&#x00F8;d i 1802 og
+               havde i sit testamente bet&#x00E6;nkt offentlige institutioner m.m. i
+               K&#x00F8;benhavn og Randers med ca. 550.000 rigsdaler, heraf en sum til
+               grundl&#x00E6;ggelsen af en handelsskole, det nuv&#x00E6;rende Niels Brock Copenhagen
+               Business College. </p>
+         </note>
+
+         <note xml:id="com349">
+<!--lemma: pios usus-->
+            <p>lat., fast vending, &#x201C;fromme form&#x00E5;l&#x201D;.</p>
+         </note>
+
+         <note xml:id="com350">
+<!--lemma: Skede-->
+            <p>dvs. skete.</p>
+         </note>
+
+         <note xml:id="com555">
+<!--lemma: Recensentv&#x00E6;sen-->
+            <p>Grundtvig kan muligvis alludere til <hi rend="italic">
+<rs key="title160" type="title">Den Danske Tilskuer</rs>,</hi> som
+               ogs&#x00E5; blev redigeret af <persName key="pe24">Knud Lyne Rahbek</persName>. Tidsskriftet var
+               p&#x00E5; dav&#x00E6;rende tidspunkt det toneangivende organ for boganmeldelser.</p>
+         </note>
+
+         <note xml:id="com353">
+<!--lemma: Pr&#x00E6;mieuddelinger-->
+            <p>hentyder til K&#x00F8;benhavns Universitets prisopgaver, som blev udskrevet fra 1762.
+               Ordningen oph&#x00F8;rte kortvarigt i 1768, men blev genoptaget i 1791. Siden da er
+               der &#x00E5;rligt blevet udskrevet prisopgaver.</p>
+         </note>
+
+         <note xml:id="com355">
+<!--lemma: Heelt-->
+            <p>som en helhed, samlet.</p>
+         </note>
+
+         <note xml:id="com556">
+<!--lemma: Anonymitet-->
+            <p>Anonyme udgivelser i enhver form var blevet forbudt med <rs type="title" key="title276">trykkefrihedsforordningen af 27. september 1799</rs> (se kommentar til <ref type="docIn" target="#com110">&#x201C;alle &#x00E6;ldre Trykkelove&#x201D;</ref>).</p>
+         </note>
+
+         <note xml:id="com357">
+<!--lemma: Udtoge-->
+            <p>uddrag af en teksts indhold.</p>
+         </note>
+
+         <note xml:id="com557">
+<!--lemma: alt for n&#x00F8;ie svare til Navnet
+     Anm&#x00E6;ldelser-->
+            <p>Grundtvig spiller her p&#x00E5; ordets oprindelige betydning: I 1700-tallet var en
+               anmeldelse intet andet end en meddelelse om, at en bog var udkommet. Henimod
+               slutningen af &#x00E5;rhundredet gled ordets betydning i retning af en
+               &#x201C;vurderende redeg&#x00F8;relse&#x201D;. Anmeldelsen betragtedes omkring 1800
+               som mindre udf&#x00F8;rlig end en &#x201C;recension&#x201D;.</p>
+         </note>
+
+         <note xml:id="com361">
+<!--lemma: Skriblere-->
+            <p>d&#x00E5;rlige skribenter.</p>
+         </note>
+
+         <note xml:id="com362">
+<!--lemma: (???)-->
+            <p>
+<persName key="pe24">Knud Lyne Rahbeks</persName> fremh&#x00E6;velse. <persName key="pe24">Rahbek</persName> f&#x00F8;lte sig muligvis ramt af den kritik, der her
+               rettes mod anmeldelsernes niveau. Grundtvig gentog samme kritik i <hi rend="italic">
+<rs key="title629" type="title">Kort Begreb af Verdens
+                  Kr&#x00F8;nike</rs>
+</hi> fra 1812, denne gang adresseret direkte til <persName key="pe24">Rahbek</persName>: &#x201C;Ved siden af Damerne stod <persName key="pe24">Rahbek</persName> som Tilskuer og i F&#x00F8;rstningen var hans
+               &#x00D8;ie ei dertil udygtigt, mangen Daarlighed udspeidede Han, og snertede den
+               f&#x00F8;lelig med sin fine Sv&#x00F8;be; men jo l&#x00E6;ngere han stod, des
+               st&#x00E6;rkere blev Taagen og Stadet sank synlig under ham, indtil Han omsider roste
+               Alt hvad der skyggede paa Parnas fra Fod til Top&#x201D; (s. 409).</p>
+         </note>
+
+         <note xml:id="com363">
+<!--lemma: (!!)-->
+            <p>
+<persName key="pe24">Knud Lyne Rahbeks</persName> fremh&#x00E6;velse.</p>
+         </note>
+
+         <note xml:id="com559">
+<!--lemma: h&#x00F8;il&#x00E6;rde Forfatter-->
+            <p>Forfatteren har ikke kunnet identifices. I noterne til <rs key="title156" type="title">
+<hi rend="italic">Udvalgte Skrifter</hi>
+</rs> g&#x00E6;tter <persName key="pe8">Holger Begtrup</persName> p&#x00E5;, at det kunne v&#x00E6;re <persName key="pe262">G.L.
+               Baden</persName>.<!-- inge smoking gun hvilket endnu ikke har kunnet be- eller afkr&#x00E6;ftes -->
+</p>
+         </note>
+
+         <note xml:id="com365">
+<!--lemma: fehirder-->
+            <p>skatmestre for de norske konger. Ordet er afledt af den gammelnorske betegnelse for
+               en hyrde eller anden person, der vogter en andens f&#x00E6; (dvs. kv&#x00E6;g, gods
+               eller penge). Den ubekendte, som Grundtvig harcelerer over, har forvekslet ordets
+               betydning med dets etymologi.</p>
+         </note>
+
+         <note xml:id="com560">
+<!--lemma: M&#x00E6;nd-->
+            <p>muligvis en hentydning til <persName key="pe24">Knud Lyne Rahbek</persName>, som
+               p&#x00E5; dav&#x00E6;rende tidspunkt var redakt&#x00F8;r af <rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> og <rs type="title" key="title160">
+<hi rend="italic">Den Danske Tilskuer</hi>
+</rs>.</p>
+         </note>
+
+         <note xml:id="com366">
+<!--lemma: L&#x00E6;rde Efterretning-->
+            <p>allusion til tidsskriftet <hi rend="italic">
+<rs type="title" key="title646">Ki&#x00F8;benhavnske L&#x00E6;rde Efterretninger</rs>,</hi> som <persName key="pe117">P.E. M&#x00FC;ller</persName> redigerede.</p>
+         </note>
+
+         <note xml:id="com367">
+<!--lemma: Doctorhat-->
+            <p>v&#x00E6;rdighedstegn, som tidligere blev tildelt nyudn&#x00E6;vnte doktorer.</p>
+         </note>
+
+         <note xml:id="com561">
+<!--lemma: hiin Videnskabernes &#x00E6;dle Ven-->
+            <p>Det er uklart, hvem der sigtes til.
+               <!--Dog kan denne kritik af trangen til en h&#x00E5;ndgribelig anerkendelse af videnskabeligt arbejde findes i en mere overordnet form i Friedrich Schillers tiltr&#x00E6;delsesforel&#x00E6;sning som historieprofessor ved Jenas Universitet fra 1789, "Was heisst und zu welchem Ende studiert man Universalgeschichte?", som Grundtvig l&#x00E6;ste i 1806 (Grundtvig 1979, s. 275-282). I denne forbindelse skriver Schiller om den br&#x00F8;dstuderende: "Er hat umsonst nach Wahrheit geforscht, wenn sich Wahrheit, f&#x00FC;r ihn nicht in Gold, in Zeitungslob, in F&#x00FC;rstengunst verwandelt." (Schiller 1792, s. 60)-->
+</p>
+         </note>
+
+         <note xml:id="com562">
+<!--lemma: Si&#x00E6;len
+     derimod er sin egen Gienstand, og kan udtale sin hele Kraft, naar den er sig samme bevidst-->
+            <p>Formuleringen er antagelig inspireret af <persName key="pe500">J.G.
+               Fichte</persName>, hvis filosofiske projekt var at forsone mods&#x00E6;tningen mellem
+               friheden og n&#x00F8;dvendigheden med udgangspunkt i subjektets selvs&#x00E6;ttelse,
+               &#x201C;Ich bin Ich&#x201D;.</p>
+            <note type="readMore">
+<p>Grundtvig havde i 1806 l&#x00E6;st Fichtes popul&#x00E6;re
+                  fremstilling af sin filosofi, <rs type="title" key="title965">
+<hi rend="italic">Die Bestimmung der Menschen</hi>
+</rs> (&#x201C;Jeg l&#x00E6;ste <persName key="pe500">Fichtes</persName> sk&#x00F8;nne Bog om Menneskets
+                  Bestemmelse&#x201D;, <rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                        Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 402). Hos Fichte finder man bl.a.
+                  denne beskrivelse af subjektets selvs&#x00E6;ttelse, som kunne have inspireret
+                  Grundtvig: &#x201C;Alle forestillinger, som bliver ledsaget af den umiddelbare
+                  bevidsthed om, at jeg forestiller mig noget, skal if&#x00F8;lge dette opdigt
+                  [: selvbevidstheden], udg&#x00E5; fra den ene og samme evne, som er
+                  det ene og samme v&#x00E6;sen iboende, og s&#x00E5;ledes opst&#x00E5;r tanken om
+                  identitet hos mig og om mit jegs personlighed og om denne persons virkende og
+                  reelle kraft&#x201D; (oversat af GV, original: &#x201C;Alle Vorstellungen, die von
+                  dem unmittelbaren Bewu&#x00DF;tseyn meines Vorstellens begleitet werden, sollen, zufolge
+                  dieser Erdichtung, aus einem und demselben Verm&#x00F6;gen, das in Einem und
+                  demselben Wesen ruht, hervorgehen; und so erst entsteht mir der Gedanke von
+                  Identit&#x00E4;t, und Pers&#x00F6;nlichkeit meines Ichs und von einer wirkenden
+                  und reellen Kraft dieser Person&#x201D;, <rs type="title" key="title965">Fichte
+                     1800</rs>, s. 171-172).</p>
+</note>
+         </note>
+
+         <note xml:id="com563">
+<!--lemma: den Afhandling, der skulde krones, maatte omfatte hele Videnskaben-->
+            <p>If&#x00F8;lge <persName key="pe35">Friedrich Schiller</persName> anskuer den sande
+               videnskabsmand &#x2013; &#x201C;der philosophische Kopf&#x201D; &#x2013; videnskaben
+               som en universel enhed og ikke som en r&#x00E6;kke af afsondrede discipliner.
+               Grundtvig stiftede bekendtskab med denne id&#x00E9; igennem sin l&#x00E6;sning af
+                  <persName key="pe35">Schillers</persName> tiltr&#x00E6;delsesforel&#x00E6;sning
+               som historieprofessor ved Jenas Universitet fra 1789, <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert man
+                  Universalgeschichte?&#x201D;</rs> (da. Hvad er og med hvilket form&#x00E5;l studerer
+               man
+               universalhistorie?).<!--Grundtvig oversatte f&#x00F8;lgende passage i sin
+               dagbog: &#x201C;Ligesaa &#x00E6;ngstelig som den Br&#x00F8;dl&#x00E6;rde skiller sin Videnskab fra alle
+               andre, str&#x00E6;ber Han &#x005B;GV: det filosofiske hovede&#x005D; at udvide dens Gr&#x00E6;nser,
+               og genoprette dens Forbindelse med de &#x00F8;vrige. Genoprette, thi det er blot den
+               abstraherende Forstand der afp&#x00E6;lede Gr&#x00E6;nsen, og skilte Videnskaberne fra
+               hinanden.&#x201D; (<rs key="title3" type="title"><hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 277).-->
+</p>
+         </note>
+
+         <note xml:id="com372">
+<!--lemma: Rendebanen-->
+            <p>v&#x00E6;ddel&#x00F8;bsbanen.</p>
+         </note>
+
+         <note xml:id="com565">
+<!--lemma: Hvad er Epopeens S&#x00E6;rki&#x00E6;nde, og hvilke af de nyere
+     Digte fortiene dette Navn?-->
+            <p>Grundtvig kommenterer dette prisopgavesp&#x00F8;rgsm&#x00E5;l i sin dagbog den 18.
+               februar 1805, hvor han, ligesom i denne tekst, mener, at besvarelsen af
+               sp&#x00F8;rgsm&#x00E5;let kr&#x00E6;ver evner inden for b&#x00E5;de klassisk og
+               moderne filologi, der langt overstiger s&#x00E5;vel hans som enhver anden
+               studerendes: &#x201C;Synes det med Hensyn herpaa, ikke saare forvovent, af Opgavens
+               Giver, at vente den besvaret?&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi> 1 1979</rs>, s. 200).</p>
+         </note>
+
+         <note xml:id="com380">
+<!--lemma: Epopeens-->
+            <p>st&#x00F8;rre episk digt.</p>
+         </note>
+
+         <note xml:id="com373">
+<!--lemma: Selskabet til de ski&#x00F8;nne Videnskabers Befordring-->
+            <p>Selskabet til de ski&#x00F8;nne og nyttige Videnskabers Forfremmelse, ogs&#x00E5;
+               kaldet Det smagende Selskab, blev grundlagt i 1759. I 1966 blev det indlemmet i Det
+               Danske Akademi.</p>
+         </note>
+
+         <note xml:id="com566">
+<!--lemma: Selskabet vilde modtage
+     ethvert &#x00E6;sthetisk Product, der havde V&#x00E6;rd, til Indf&#x00F8;relse i sine Skrifter,-->
+            <p>Selskabet til de ski&#x00F8;nne og nyttige Videnskabers Forfremmelse (se kommentaren til <ref type="docIn" target="#com373">&#x201C;Selskabet...&#x201D;</ref>) udgav skriftr&#x00E6;kken
+                  <hi rend="italic">Fors&#x00F8;g i de ski&#x00F8;nne og nyttige Videnskaber,</hi>
+               der, som Grundtvig skriver, netop optog bidrag, som blev fundet kvalificerede.</p>
+            <note type="readMore">
+<p>Af fundatsen fremg&#x00E5;r det: &#x201C;Vi paatage os hvert
+                  Aar at befordre til Trykken et vist Antal af Danske Udarbeidninger, der
+                  h&#x00F8;re til Smagen og de ski&#x00F8;nne Videnskaber; hvorved vi love dennem,
+                  der betroe os deres Arbeyder, at de skulle nyde alt det, der indkommer for de af
+                  deres Verker solgte Exemplarier, enhver i Forhold af det Rum, hans Skrift indtager
+                  i de Hefter, hvilke vi ville udgive&#x201D; (<rs type="title" key="title987">Plesner 1959</rs>, s. 13-14). I perioden fra 1767 til 1966, hvor selskabet
+                  blev lagt sammen med Det Danske Akademi, gav Selskabet st&#x00F8;tte til udgivelse
+                  af publikationer.</p>
+</note>
+         </note>
+
+         <note xml:id="com567">
+<!--lemma: en umyndig theologisk Candidat, der pr&#x00F8;ver Penne i en Afkrog, for at glemme sig selv-->
+            <p>selvbiografisk hentydning til tiden p&#x00E5; Langeland fra 1805.</p>
+         </note>
+
+         <note xml:id="com568">
+<!--lemma: umyndig-->
+            <p>her i betydningen ubemyndiget; embedsl&#x00F8;s.</p>
+         </note>
+
+            <div type="litList">
+               <head xml:id="docIn1">Anvendt litteratur</head>
+               <list type="litList">
+                  <item>
+                     Abrahamson, Werner (1790) <rs key="title980" type="title">&#x201C;Norma Morum &#x2013; efter Tidernes
+                        Leilighed&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Minerva</rs>,</hi> februar 1790, s. 285-288. K&#x00F8;benhavn</item>
+                  <item>
+                     Adamsen, Christian (2006) <rs type="title" key="title541">&#x201C;Antikvarer og oldforskning p&#x00E5; Grundtvigs
+                        tid&#x201D;</rs> i <hi rend="italic">Grundtvig-Studier,</hi> s. 99-109.
+                     K&#x00F8;benhavn</item>
+                  <item> [Addison, Joseph] &amp; [Daniel Steel] (1743)
+                        <hi rend="italic">
+<rs key="title1562" type="title">Spectator</rs>,</hi> bind
+                     2, overs. Peder Kraft. K&#x00F8;benhavn</item>
+                  <item>
+                     Arndt, Ernst Moritz (1807) <hi rend="italic">
+<rs type="title" key="title955">Geist der Zeit</rs>
+</hi>
+                     [1806]. U.st</item>
+                  <item>
+                     Baden, Jacob (1824) <hi rend="italic">
+<rs type="title" key="title358">Almeennyttig Alphabetisk Ordbog over de i
+                           danske Skrifter og i Omgangssproget meest brugelige, af fremmede Sprog
+                           laante, Ord, Talemaader og Konstudtryk; samt de til den gr&#x00E6;ske,
+                           romerske og nordiske Mythologie henh&#x00F8;rende vigtigste Personer og
+                           Gienstande; med hosf&#x00F8;iet kortfattet Forklaring</rs>
+</hi>
+                     [1820]. K&#x00F8;benhavn </item>
+                  <item>
+                     Baggesen, Jens (1899) <rs type="title" key="title1186">&#x201C;Kallundborgs Kr&#x00F8;nike eller Censurens
+                        Oprindelse&#x201D;</rs> [1786] i <hi rend="italic">
+<rs key="title1164" type="title">Poetiske Skrifter</rs>
+</hi> 1, udg. af
+                        A. Arlaud. K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">Bibliografien,</hi> se Johansen, Steen 1948</item>
+                  <item>
+                     Bugge, Knud Eyvin (1965) <hi rend="italic">
+<rs type="title" key="title445">Skolen for Livet. Studier over N.F.S.
+                           Grundtvigs p&#x00E6;dagogiske tanker.</rs>
+</hi> K&#x00F8;benhavn</item>
+                  <item> Collegio sanitatis regio medico chirurgico hafniensi (1805) <hi rend="italic">
+<rs type="title" key="title1040">Pharmacopoea danica, regia
+                           autoritate</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Damsholt, Tine (2000) <hi rend="italic">
+<rs type="title" key="title546">F&#x00E6;drelandsk&#x00E6;rlighed og
+                           borgerdyd. Patriotisk diskurs og milit&#x00E6;re reformer i Danmark i
+                           sidste del af 1700-tallet</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title1185">Danmarks og Norgis
+                           Kirke-ritual 1685-1985</rs>
+</hi> (1985). Udg. af Udvalget for konvent for
+                     kirke og theologi. U.st</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title619">Die Bekenntnisschriften der
+                           evangelisch-lutherischen Kirche</rs>
+</hi> (1952). G&#x00F6;ttingen</item>
+                  <item>
+                     Feldb&#x00E6;k, Ole (red.) (1991) <rs key="title988" type="title">
+<hi rend="italic">Dansk Identitetshistorie</hi>
+                        1: <hi rend="italic">F&#x00E6;dreland og Modersm&#x00E5;l
+                        1539-1789</hi>
+</rs>. K&#x00F8;benhavn</item>
+                  <item>
+                     Fichte, Johann Gottlieb (1800) <hi rend="italic">
+<rs key="title965" type="title">Die Bestimmung des
+                           Menschen</rs>.</hi> Berlin</item>
+                  <item>
+                     Fichte, Johann Gottlieb (1991) <rs type="title" key="title577">&#x201C;Die Grundz&#x00FC;ge des
+                        gegenw&#x00E4;rtigen Zeitalters. Dargestellt von Johann Gottlieb Fichte, in
+                        Vorlesungen, gehalten zu Berlin, im Jahre 1804&#x2013;5&#x201D;
+                        [1806]</rs> i <hi rend="italic">
+<rs type="title" key="title518">J.G. Fichte-Gesamtausgabe der Bayerischen Akademie der
+                           Wissenschaften</rs>,</hi> 1. r&#x00E6;kke, bind 8, udg. af Reinhard Lauth &amp; Hans
+                        Gliwitzky. Stuttgart-Bad Cannstatt</item>
+                  <item>
+                     Forberg, Friedrich Karl (1798) <rs key="title976" type="title">&#x201C;Entwicklung des Begriffs der
+                        Religion&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title975">Philosophisches Journal einer Gesellschaft teutscher
+                        Gelehrten</rs>,</hi> bind 8 1798, s. 21-46. Jena &amp; Leipzig</item>
+                  <item>
+                     Frederiksen, Emil (1948) <hi rend="italic">
+<rs type="title" key="title294">Den unge Grundtvig og andre Essays</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Fr&#x00F8;land, Aleks. (1974) <hi rend="italic">
+<rs key="title959" type="title">Dansk boghandels historie 1482
+                           til 1945. Med et kapitel om bogen i oldtid og middelalder</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Glenth&#x00F8;j, Rasmus (2007) <hi rend="italic">
+<rs type="title" key="title526">P&#x00E5; f&#x00E6;drelandets
+                           alter. National identitet og patriotisme hos det danske borgerskab
+                           1807-1814</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Goethe, Johann Wolfgang von (1832) <rs type="title" key="title2255">&#x201C;Den unge Werther's Lidelser&#x201C;</rs> i <hi rend="italic">
+                     <rs type="title" key="title2254">Udvalgte Skrifter</rs>,</hi>  1-6, bind 1, overs. af Simon Meisling, s. 1-174. K&#x00F8;benhavn</item>
+                  <item>
+                     Goethe, Johann Wolfgang von (1987) <rs type="title" key="title998">&#x201C;Grenzen der Menschheit&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title997">Gedichte 1756-1799</rs>,</hi>
+                     udg. af Karl Eibl, s. 332-333. Frankfurt am
+                     Main</item>
+                  <item>
+                     Goethe, Johann Wolfgang von (1994) <rs type="title" key="title1014">
+<hi rend="italic">Die Leiden des jungen Werthers</hi>
+</rs> i
+                        <hi rend="italic">
+<rs type="title" key="title1015">Die Leiden des jungen
+                           Werthers, Die Wahlverwandtschaften, kleine Prosa, Epen</rs>,</hi> udg. af
+                        Waltraud Wieth&#x00F6;lter &amp; Christoph Brecht, s. 10-267. Frankfurt am Main</item>
+                  <item>
+                     Grimm, Jacob &amp; Wilhelm (1860) <hi rend="italic">
+<rs type="title" key="title954">Deutsches W&#x00F6;rterbuch</rs>,</hi> bind 2. Leipzig</item>
+                  <item> Grundtvig, Nicolai Frederik Severin (1807a) <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title241">Theologisk Maanedsskrivt</rs>,</hi> februar,
+                     s. 129-201. K&#x00F8;benhavn</item>
+                  <item> Grundtvig, Nicolai Frederik Severin (1807b) <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn
+                        p&#x00E5; F&#x00E6;drelandet&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> marts, s. 249-298.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Grundtvig, Nicolai Frederik Severin (1807c) <rs type="title" key="title585"> &#x201C;Om Schiller og Bruden i Messina&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> juni, s. 225-248. K&#x00F8;benhavn</item>
+                  <item> Grundtvig, Nicolai Frederik Severin (1812) <hi rend="italic">
+<rs type="title" key="title629">Kort Begreb af Verdens Kr&#x00F8;nike i
+                           Sammenh&#x00E6;ng</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item> Grundtvig, Nicolai Frederik Severin (1968) <hi rend="italic">
+<rs type="title" key="title465">Grundtvigs skoleverden i tekster og
+                           udkast</rs>
+</hi>, udg. af K.E. Bugge,
+                     bind 1-2. K&#x00F8;benhavn</item>
+                  <item> Grundtvig, Nicolai Frederik Severin (1979) <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>
+</hi> 1-2, udg.
+                     af Gustav Albeck. K&#x00F8;benhavn</item>
+                  <item>
+<rs key="title1011" type="title">
+<hi rend="italic">Hallische
+                           Literaturzeitung</hi>
+</rs> 1806, 1, nr. <rs key="title1012" type="title">42</rs> &amp; <rs type="title" key="title1013">43</rs>
+</item>
+                  <item>
+                     Heiberg, Peter Andreas (1884) <rs key="title967" type="title">&#x201C;Virtuosen&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title966">Udvalgte Skrifter</rs>,</hi>
+                     udg. af Otto Borchsenius &amp; Frederik Winkel Horn, s. 289-336.
+                     K&#x00F8;benhavn</item>
+                  <item> Henningsen, Lars N. (2010) <rs type="title" key="title1567">&#x201C;Laurids
+                        de Thurah og kilderne til Pontoppidans Danske Atlas&#x201D;</rs> i <hi rend="italic">
+<rs key="title1566" type="title">Oldsagskommissionens tidlige
+                           &#x00E5;r foruds&#x00E6;tninger og internationale forbindelser</rs>
+</hi>
+                     udg. af Poul Otto Nielsen &amp; Ulla Lund Hansen, s. 13-36.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Hofman, Hans de (1755-1780) <hi rend="italic">
+<rs key="title984" type="title">Samlinger af Publique og Private
+                           Stiftelser, Fundationer og Gavebreve, som forefindes udi Danmark og
+                           Norge</rs>,</hi> 1-11. K&#x00F8;benhavn</item>
+                  <item>
+                     Holberg, Ludvig (1939) <rs key="title970" type="title">&#x201C;Epistola CCCXII&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title968">Samlede Skrifter</rs>,</hi> udg. af Carl S. Petersen, bind 16, s. 242-243.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Holberg, Ludvig (2004) <rs key="title991" type="title">
+<hi rend="italic">Erasmus Montanus</hi>
+</rs> i <hi rend="italic">
+<rs type="title" key="title990">Seks komedier</rs>,</hi> udg.
+                     af Jens Kr. Andersen, s. 207-278.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title631">Homers Odyss&#x00E9;</rs>
+</hi> (2002) overs. Otto Steen Due, K&#x00F8;benhavn</item>
+                  <item>
+                     Horats (1863) <hi rend="italic">
+<rs key="title992" type="title">Oder og Jubeldigt</rs>,</hi> overs. L. Ove Kj&#x00E6;r. K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs key="title496" type="title">Horats' Satirer og Breve</rs>
+</hi> (1945) overs.
+                        Axel Juel. K&#x00F8;benhavn</item>
+                  <item>
+                     Jespersen, Knud J.V. &amp; Ole Feldb&#x00E6;k (2002) <rs key="title994" type="title">
+<hi rend="italic">Dansk udenrigspolitisk historie</hi> 2: <hi rend="italic">Revanche og neutralitet 1648-1814</hi>
+</rs>.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Johansen, Steen (1948) <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs
+                           skrifter</rs>,</hi> bind 1. K&#x00F8;benhavn</item>
+                  <item>Junius (1927) <hi rend="italic">
+<rs type="title" key="title1193">The Letters of Junius</rs>,</hi> udg. af
+                        Charles Warren Everett. London</item>
+                  <item>
+                     J&#x00F8;rgensen, Harald (1944) <hi rend="italic">
+<rs key="title899" type="title">Trykkefrihedssp&#x00F8;rgsmaalet i Danmark 1799-1848 &#x2014; Et Bidrag
+                           til en Karakteristik af den danske Enev&#x00E6;lde i Frederik IV's
+                           og Christian VIII's Tid</rs>
+</hi>. K&#x00F8;benhavn</item>
+                  <item>
+                     J&#x00F8;rgensen, John Chr. (1994) <hi rend="italic">
+<rs type="title" key="title995">Det danske anmelderis
+                           historie. Den litter&#x00E6;re anmeldelses opst&#x00E5;en og udvikling
+                           1729&#x2013;1906</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Kant, Immanuel (1995) <hi rend="italic">
+<rs key="title1248" type="title">Kritik der Urteilskraft</rs>,</hi> udg. af
+                        Wilhelm Weischedel. Frankfurt am
+                     Main</item>
+                  <item>
+                     Kant, Immanuel (2007) <hi rend="italic">
+<rs key="title979" type="title">Kritik af d&#x00F8;mmekraften</rs>,</hi>
+                     overs. Claus Bratt &#x00D8;stergaard.
+                     Frederiksberg</item>
+                  <item>
+                     Lessing, Gotthold Ephraim (1799) <hi rend="italic">
+<rs key="title1162" type="title">Nathan den Viise. Et
+                           dramatisk Digt i fem Optog</rs>,</hi> overs. Knud
+                        Lyne Rahbek. K&#x00F8;benhavn</item>
+                  <item>
+                     Lessing, Gotthold Epraim (1993) <rs type="title" key="title973">
+<hi rend="italic">Nathan der Weise</hi>
+</rs>
+                     [1779] i <hi rend="italic">
+<rs key="title972" type="title">Werke
+                           1778-1780</rs>,</hi> bind 9, udg. af Klaus
+                        Bohnen &amp; Arno Schilson, s.
+                     483-666. Frankfurt am Main</item>
+                  <item>
+                     Lessing, Gotthold Ephraim (1994) <hi rend="italic">
+<rs key="title974" type="title">Menneskesl&#x00E6;gtens
+                           Opdragelse</rs>,</hi> overs. F.J. Billeskov
+                        Jansen. Frederiksberg</item>
+                  <item>
+                     Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S.
+                           Grundtvigs digtning, litteraturkritik og poetik 1798-1819</rs>,</hi> bind
+                     1-2. K&#x00F8;benhavn</item>
+                  <item>
+                     Lundgreen-Nielsen, Flemming (2007) <rs type="title" key="title1191">&#x201C;Grundtvig og censuren&#x201D;</rs> i
+                        <hi rend="italic">Grundtvig Studier</hi>, s. 44-90. K&#x00F8;benhavn</item>
+                  <item>
+                     Lyngby, Thomas (2001) <hi rend="italic">
+<rs type="title" key="title601">Den sentimentale patriotisme. Slaget
+                           p&#x00E5; Rheden og H.C. Knudsens patriotiske handlinger</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Molbech, Christian (1843) <hi rend="italic">
+<rs type="title" key="title1001">Det kongelige Danske Videnskabernes Selskabs
+                           Historie i det f&#x00F8;rste Aarhundrede 1742-1842</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Nielsen, Einar Brandt (1966) <rs type="title" key="title1192">&#x201C;Grundtvigs mathematiske ven&#x201C;</rs> i <hi rend="italic">Grundtvig Studier</hi>, s. 7-38. K&#x00F8;benhavn</item>
+                  <item>
+                     Nordenbo, Sven Erik (1984) <hi rend="italic">
+<rs type="title" key="title1002">Bidrag til den danske p&#x00E6;dagogiks
+                           historie</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Nyerup, Rasmus (1806) <hi rend="italic">
+<rs type="title" key="title986">Oversyn over F&#x00E6;dernelandets
+                           Mindesm&#x00E6;rker fra Oldtiden, saaledes som samme kan t&#x00E6;nkes
+                           opstillede i et tilkommende National-Museum. Et Fors&#x00F8;g</rs>,</hi>
+                     bind 4 af <hi rend="italic">
+<rs type="title" key="title985">Historisk-statistisk Skildring af Tilstanden i Danmark og Norge i
+                           &#x00E6;ldre og nyere Tider</rs>
+</hi>. K&#x00F8;benhavn</item>
+                  <item> Nyerup, Rasmus (1805) <hi rend="italic">
+<rs type="title" key="title1568">Det Danske Sprogs
+                        Retskrivningstheorier, fremstillede i chronologisk Orden</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Oehlenschl&#x00E4;ger, Adam (1807) <hi rend="italic">
+<rs type="title" key="title957">Svar til Baggesen paa hans
+                           Brev Noureddin til Aladdin</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Oehlenschl&#x00E4;ger, Adam (1927) <hi rend="italic">
+<rs type="title" key="title1003">Poetiske Skrifter</rs>,</hi>
+                     udg. af H. Tops&#x00F8;e-Jensen, bind 2.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Ovid (1945) <hi rend="italic">
+<rs key="title977" type="title">Fasti. Ovids Almanak og romerske
+                           Mytologi</rs>,</hi> overs. Carsten
+                        H&#x00F8;eg &amp; Paul V. Rubow.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title978">Ovid's Fasti</rs>
+</hi> (1967) udg. af James George Frazer, Loeb Classical Library.
+                     Cambridge</item>
+                  <item>
+                     Platon (2010) <rs type="title" key="title983">
+<hi rend="italic">Symposion</hi>
+</rs> i <hi rend="italic">
+<rs key="title982" type="title">Samlede v&#x00E6;rker i ny
+                           overs&#x00E6;ttelse</rs>,</hi> bind 2, udg. af J&#x00F8;rgen Mejer &amp; Chr. Gorm
+                        Tortzen. K&#x00F8;benhavn</item>
+                  <item>
+                     Plesner, K.F. (1959) <hi rend="italic">
+<rs key="title987" type="title">Det smagende Selskab. Selskabet til de
+                           ski&#x00F8;nne og nyttige Videnskabers Forfremmelse 1759-1959</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title949">Plinius' breve</rs>
+</hi> (1966) overs. Gunnar Andersen. K&#x00F8;benhavn</item>
+                  <item>
+                     Reinhardt, C.E.F (1862) <hi rend="italic">
+<rs key="title1004" type="title">Kommunitetet og Regentsen fra deres
+                           Stiftelse indtil vore Dage, et Bidrag til det kj&#x00F6;benhavnske
+                           Universitets og Studenterlivs Historie</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     R&#x00F8;nning, Frederik (1907-14) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til
+                           skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi>
+                     bind 1-4. K&#x00F8;benhavn</item>
+                  <item>
+                     Rubin, Marcus (1970) <hi rend="italic">
+<rs key="title1163" type="title">1807-14. Studier til K&#x00F8;benhavns og
+                           Danmarks Historie</rs>
+</hi> [1892]. K&#x00F8;benhavn</item>
+                  <item>
+                     Scharling, C.I. (1947) <hi rend="italic">
+<rs type="title" key="title21">Grundtvig og Romantiken belyst ved Grundtvigs
+                           Forhold til Schelling</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Schiller, Friedrich von (1792) <rs key="title952" type="title">&#x201C;Was hei&#x00DF;t und zu welchem Ende studiert
+                        man Universalgeschichte?&#x201D;</rs> i <hi rend="italic">
+<rs key="title951" type="title">Kleinere prosaische Schriften</rs>,</hi> bind 1, s. 54-98.
+                     Leipzig</item>
+                  <item>
+                     Schiller, Friedrich von (1803) <hi rend="italic">
+<rs type="title" key="title340">Die Braut von
+                        Messina</rs>.</hi> T&#x00FC;bingen</item>
+                  <item>
+                     Schiller, Friedrich von (1896) <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina eller de fjendtlige Br&#x00F8;dre</rs>,</hi> overs. af Johannes Magnussen.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Schiller, Friedrich von (1992) <hi rend="italic">
+<rs key="title1031" type="title">&#x00DC;ber die
+                           &#x00E4;sthetische Erziehung des Menschen</rs>
+</hi> [1795]
+                     i <hi rend="italic">
+<rs type="title" key="title1030">Theoretische
+                           Schriften</rs>,</hi> bind 8, udg. af Rolf-Peter
+                        Janz, Hans Richard Brittnacher,
+                        Gerd Kleiner &amp; Fabian St&#x00F6;rmer. Frankfurt am Main</item>
+                  <item>
+                     Schiller, Friedrich von (1996) <hi rend="italic">
+<rs key="title956" type="title">Menneskets &#x00E6;stetiske
+                           opdragelse</rs>,</hi> overs. Per
+                        &#x00D8;hrgaard. K&#x00F8;benhavn</item>
+                  <item>
+                     <hi rend="italic">
+<rs type="title" key="title1564">Schleswig-Holsteinische
+                           Anzeigen</rs>
+</hi> 1767, nr. 42, 19. oktober 1767</item>
+                  <item>
+                     Seidelin, K.H. (1800) <hi rend="italic">
+<rs key="title960" type="title">L&#x00E6;sendes Aarbog for 1799</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Simek, Rudolf (2006) <hi rend="italic">
+<rs type="title" key="title79">Lexikon der germanischen Mythologie</rs>.</hi>
+                     Stuttgart</item>
+                  <item>
+                     Skautrup, Peter (1953) <hi rend="italic">
+<rs type="title" key="title421">Det danske Sprogs Historie</rs>,</hi> bind 3.
+                     K&#x00F8;benhavn</item>
+                  <item>
+                     Skougaard, Peder Nikolai (1804) <hi rend="italic">
+<rs key="title958" type="title">Beskrivelse over
+                        Bornholm</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>
+                     Steenstrup, Johannes; Kristian Erslev, m.fl. (u.&#x00E5;.: 1896-1903) <hi rend="italic">
+<rs type="title" key="title398">Danmarks Riges
+                        Historie</rs>
+</hi> 1-6, bind 5. K&#x00F8;benhavn</item>
+                  <item>
+                     Steffens, Henrich (1996) <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske
+                           Forel&#x00E6;sninger</rs>,</hi> udg. af Johnny
+                        Kondrup [1803]. K&#x00F8;benhavn</item>
+                  <item>
+                     Suhm, Peter Friderich (1789) <hi rend="italic">
+<rs key="title964" type="title">Samlede Skrifter</rs>,</hi> bind 4.
+                     K&#x00F8;benhavn</item>
+                  <item>Terents (1964) <hi rend="italic">
+<rs type="title" key="title1039">The
+                           Eunuch</rs>
+</hi> i <rs type="title" key="title1038">
+<hi rend="italic">Terence</hi> 1</rs>, overs. John
+                        Sargeaunt, Loeb Classical Library. Cambridge</item>
+                  <item>
+                     Terents (1982) <hi rend="italic">
+<rs key="title961" type="title">Eunukken</rs>,</hi> overs. Otto Sten Due. K&#x00F8;benhavn</item>
+                  <item>
+                     Wander, Karl Friedrich Wilhelm (1964) <hi rend="italic">
+<rs key="title1017" type="title">Deutsches
+                           Sprichw&#x00F6;rter-Lexikon: ein Hausschatz f&#x00FC;r das deutsche
+                           Volk</rs>
+</hi> 1-5, bind 2. Darmstadt</item>
+                  <item>  
+                     Wiedemann, Christian Rudolph Wilhelm (1805)
+                        <hi rend="italic">
+<rs key="title962" type="title">Underviisning for
+                           Giordem&#x00F8;dre</rs>,</hi> overs. Johann
+                        Christian Ryge. Kiel</item>
+                  <item>
+                     &#x00D8;rsted, Anders Sand&#x00F8;e (1801) <hi rend="italic">
+<rs key="title1016" type="title">Fors&#x00F8;g til en rigtig
+                           Fortolkning og Bed&#x00F8;mmelse over Forordningen om Trykkefrihedens
+                           Gr&#x00E6;ndser, dateret den 27de Sept. 1799</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+               </list>
+            </div>
+
+         <div type="webList">
+            <head xml:id="docIn2">Anvendte websider</head>
+            <list type="webList">
+               <item n="2012-04-17" target="http://zs.thulb.uni-jena.de/content/main/journals/alz.xml">Allgemeine Literatur-Zeitung</item>
+               <item n="2012-09-03" target="http://holbergordbog.dk/ordbog?query=himmel">Holbergordbog</item>
+            </list>
+         </div>
+
+      </body>
+</text>
+</TEI>

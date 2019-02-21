@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Lyk&#x00F8;nskning til Danmark med Det Danske Dummerhoved og Den Danske H&#x00F8;iskole</title>
+        <title rend="shortForm">Lyk&#x00F8;nskning til Danmark</title>
+        <author>Henrik Yde</author>
+        <editor role="editor2">dr.theol. K.E. Bugge</editor>
+        <editor role="editor3">Klaus Nielsen</editor> 
+        <editor role="editor1">Stine Holst Petersen</editor>
+           
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.14</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>9 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        
+        <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1. maj 2014</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1847_891_txt.xml">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" type="intro" target="1847_891_intro.xml">Indledning</note>
+      </notesStmt>
+      
+        <sourceDesc><p /></sourceDesc>
+      
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    
+    <revisionDesc>
+      <change xml:id="KSR" who="KSR" when="2011-10-07">skabelon</change>
+      <change who="HY" when="2013-03-12">P&#x00E5;begyndt.</change>
+      <change who="HY" when="2013-08-20">Korrekt TEI-hoved indsat, valideret m.v.</change>
+      <change who="HY" when="2013-08-29">Afleveret til SJ til 1. red.</change>
+      <change who="HY" when="2013-09-02">F&#x00E5;et retur SJ, iondf&#x00F8;rt SJ's rettelser, sendt til Bugge</change>
+      <change who="HY" when="2013-09-03">Korrekturl&#x00E6;st</change>
+      <change who="HY" when="2013-10-02">Indf&#x00F8;rt KN's 3. red.</change>
+      <change who="HY" when="2013-10-10">Indf&#x00F8;rt KN's 4. red.</change>
+      <change who="HY" when="2013-10-14">Indf&#x00F8;rt enkelte konsekvensrettelser m.v.</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="NHB" xml:id="NHB" when="2014-11-04">ved ...-tegn erstattet koden 0085 med unicode 2026</change>
+      <change who="KN" xml:id="KN" when="2018-11-29">Ændret kortformen i indledningens brødtekst fra 'Lykønskning til Danmark med Det Danske Dummerhoved' til blot 'Lykønskning til Danmark med Det Danske Dummerhoved'. Versionsnummer for content ændret her og i txt-filen.</change>
+    </revisionDesc>
+  </teiHeader>
+    <text type="intro">
+        <body>
+      <div>
+        <head xml:id="docIn1">Kongelig resolution af 27. marts 1847</head>
+        <p rend="noIndent">
+<rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark
+  med Det Danske Dummerhoved og Den Danske H&#x00F8;iskole,</hi> (herefter <hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>)
+</rs> der udkom i juni 1847, er Grundtvigs femte og
+          sidste st&#x00F8;rre h&#x00F8;jskoleskrift.</p> 
+        <note type="readMore">
+            <p rend="noIndent">De fire f&#x00F8;rste var: <hi rend="italic">
+<rs type="title" key="title170">Det
+                  Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</rs>
+</hi> fra 1836,
+                <hi rend="italic">
+<rs type="title" key="title454">Til Nordm&#x00E6;nd om en Norsk
+                  H&#x00F8;i-Skole</rs>
+</hi> fra 1837, <hi rend="italic">
+<rs key="title455" type="title">Skolen for Livet og Academiet i Soer</rs>
+</hi> fra 1838 og <hi rend="italic">
+<rs type="title" key="title159">B&#x00F8;n og Begreb om en Dansk
+                  H&#x00F8;iskole i Soer</rs>
+</hi> fra 1840.</p>
+          </note>
+        <p rend="firstIndent">Anledningen til v&#x00E6;rkets fremkomst var en kongelig resolution af 27.
+          marts 1847 &#x201C;Angaaende den fremtidige Organisation af Sor&#x00F8; Academie&#x201D;. Resolutionen blev offentliggjort 3. april 1847.</p>
+        <p rend="firstIndent">Resolutionens hovedpunkt var, at latinskolen omd&#x00F8;btes til
+          realskole og akademiet til realakademi. Realakademiet skulle ikke mindst fremme
+          modersm&#x00E5;lsundervisningen, Danmarkshistorien og en r&#x00E6;kke statsvidenskabelige
+          fag. Dertil kom, at akademiet &#x00E5;bnedes for offentligheden, s&#x00E5;ledes at adgang
+          til akademiets forel&#x00E6;sninger ikke l&#x00E6;ngere var forbeholdt dimittender fra
+          Sor&#x00F8; Skole. Endelig dekreteredes der en vis administrativ og &#x00F8;konomisk
+          adskillelse af skole og akademi. (Resolutionen er optrykt i sin helhed i <rs key="title465" type="title">Grundtvig 1968</rs>, bind 2, s. 322-324.)</p>
+          
+        <p rend="firstIndent">Denne resolution var resultatet af et flere &#x00E5;r langt
+          tovtr&#x00E6;kkeri. Universitetsdirektionen, hvorunder akademiet h&#x00F8;rte siden dets
+          gen&#x00E5;bning i 1826, havde aldrig v&#x00E6;ret Sor&#x00F8; Akademi venligt stemt og
+          s&#x00E5; det helst nedlagt, s&#x00E5; dets rige midler kunne overg&#x00E5; til
+          K&#x00F8;benhavns Universitet. Kongen, der p&#x00E5; sin side &#x00F8;nskede at bevare
+          akademiet, havde derfor i 1845 personligt, p&#x00E5; tv&#x00E6;rs af
+          universitetsdirektionen, ladet udarbejde det reskript, der kom til at danne grundlag for
+          den videre forhandling (<rs key="title1764" type="title">Rosendal 1897</rs>, s.
+          33-38).</p>
+          <note type="readMore">
+<p rend="noIndent">
+            <persName key="pe98">Christian 8.</persName>, der altid havde v&#x00E6;ret Grundtvigs
+            tanker om en folkelig h&#x00F8;jskole venligt stemt, havde i 1843 indvilliget i at modtage en
+            bet&#x00E6;nkning fra ham <rs key="title2669" type="title">&#x201C;Om Indretningen af Sor&#x00F8;
+              Academi til en Folkelig H&#x00F8;iskole&#x201D;</rs>. Bet&#x00E6;nkningen publiceredes f&#x00F8;rst i 1889,
+            l&#x00E6;nge efter b&#x00E5;de <persName key="pe98">Christian 8.s</persName> og Grundtvigs d&#x00F8;d og Sor&#x00F8;
+            Akademis nedl&#x00E6;ggelse, men er m&#x00E5;ske det af alle Grundtvigs h&#x00F8;jskoleskrifter, der har
+            virket kraftigst og mest direkte ind i en forhandlingssituation (<rs key="title2776" type="title">H&#x00F8;rby 1967</rs>, s. 65-70).
+            Hvad ang&#x00E5;r indholdet af Grundtvigs brev til kongen, henvises der til bet&#x00E6;nkningen selv og
+            til dens <ref type="docOut" target="1843_741_intro.xml#docIn1">indledning</ref>. Resolutionen af 27. marts 1847 blev &#x2013; p&#x00E5; direkte
+            foranledning af kongen &#x2013; i ret vid udstr&#x00E6;kning pr&#x00E6;get af Grundtvigs bet&#x00E6;nkning af
+            1843, men den er ogs&#x00E5; udtryk for et kompromis mellem flere andre kr&#x00E6;fter. Se herom i n&#x00E6;rv&#x00E6;rende
+            indlednings kapitel 4, <ref target="#docIn40" type="docIn">&#x201C;Realh&#x00F8;jskole eller folkelig h&#x00F8;jskole&#x201D;</ref>.</p>
+          </note>
+        <p rend="firstIndent">Men ogs&#x00E5; det p&#x00E5;f&#x00F8;lgende kommissionsarbejde var
+          fors&#x00E6;tligt blevet trukket i langdrag af universitetsdirektionen. Denne kommission
+          havde best&#x00E5;et af universitetsdirektionens tre medlemmer samt <persName key="pe119">H.C. &#x00D8;rsted</persName> som s&#x00E6;rlig repr&#x00E6;sentant for universitetet,
+            <persName key="pe138">B.S. Ingemann</persName>, der siden 1842 havde v&#x00E6;ret
+          konstitueret som akademiets director (rektor), og endelig grev <persName key="pe1283">F.M.
+            Knuth</persName>, der som amtmand i Sor&#x00F8; ogs&#x00E5; bestred embedet som
+          overdirekt&#x00F8;r for Sor&#x00F8; Akademi. Kun de to sidstn&#x00E6;vnte var stemt for
+          akademiets bevarelse og reform i kongens &#x00E5;nd. L&#x00E6;s n&#x00E6;rmere i <rs type="title" key="title2776">H&#x00F8;rby (1967)</rs>, s. 75-80 og <rs type="title" key="title1764">Rosendal (1897)</rs>, s. 38 f.</p> 
+        
+          <p rend="firstIndent">Resolutionen var imidlertid ikke i sig selv nogen organisations-
+          eller undervisningsplan, men en rammebestemmelse. Og d&#x00E9;t afgav spillerum for, at sagens
+          interessenter &#x2013; herunder Grundtvig &#x2013; endnu kunne g&#x00F8;re deres indflydelse
+          g&#x00E6;ldende. Grundtvigs v&#x00E6;rk lader sig derfor l&#x00E6;se som et fors&#x00F8;g p&#x00E5; at tolke resolutionen
+          s&#x00E5; gunstigt som muligt i retning af hans egne tanker om Sor&#x00F8; Akademis omdannelse til en folkelig
+          h&#x00F8;jskole.</p>
+        </div>
+      
+      <div>
+        <head xml:id="docIn2">Skolepolitik</head>
+        <p rend="noIndent">Tidens
+          varmeste skolepolitiske sp&#x00F8;rgsm&#x00E5;l var kravet om realundervisning og realskoler
+          til byborgerskabets konfirmerede drenge som et alternativ til latinskolerne. Ved
+          realundervisning forst&#x00E5;s undervisning i de matematisk-naturvidenskabelige fag og i
+          de levende sprog, i mods&#x00E6;tning til de l&#x00E6;rde skolers undervisning i de
+          d&#x00F8;de (eller klassiske) sprog: latin, gr&#x00E6;sk og hebraisk.</p>
+        <p rend="firstIndent">Private realskoler havde man haft i Danmark siden 1787, hvor
+          Eftersl&#x00E6;gtselskabets Skole &#x00E5;bnede i K&#x00F8;benhavn, og i henhold til kongelig anordning af 29.
+          juli 1814 var der ogs&#x00E5; &#x00E5;bnet mulighed for at danne <hi rend="italic">offentlige</hi> realskoler. Som en begyndelse h&#x00E6;gtede man da i nogle
+          k&#x00F8;bst&#x00E6;der realklasser med undervisning i matematik, naturfag og de levende
+          sprog, navnlig tysk, til borgerskolerne. Men med industrialismens og
+          samf&#x00E6;rdselsmidlernes udvikling sk&#x00E6;rpedes behovet for egentlige realskoler
+          for konfirmerede borgerdrenge, og sagen diskuteredes i 1830'erne livligt i byernes
+          borgerskab. Tilsvarende debatter og bestr&#x00E6;belser fandt sted i andre
+          nordeurop&#x00E6;iske stater, tidligst i de tyske. Herhjemme samlede debatten sig om
+          sp&#x00F8;rgsm&#x00E5;let: <hi rend="italic">
+<rs key="title512" type="title">Hvor skal jeg
+            s&#x00E6;tte min S&#x00F8;n i Skole?</rs>,</hi> hvilket var hovedtitlen p&#x00E5; en pjece fra
+          1833 af handelskommis <persName key="pe540">Knud H. Gad</persName>.</p>
+        <p rend="firstIndent">Dette blev ogs&#x00E5; et af hovedsp&#x00F8;rgsm&#x00E5;lene, da de
+          f&#x00F8;rste r&#x00E5;dgivende st&#x00E6;nderforsamlinger afvikledes fra oktober 1835 til
+          og med februar 1836. P&#x00E5; m&#x00F8;det i Roskilde gjorde ikke mindst juristen
+            <persName key="pe333">Tage Algreen-Ussing</persName>, sekret&#x00E6;r i Danske Kancelli
+          og en af forsamlingens mest fremtr&#x00E6;dende og reformivrige m&#x00E6;nd, sig til
+          talsmand for realskoletanken.</p>
+        <p rend="firstIndent">
+<persName key="pe333">Algreen-Ussing</persName> betonede, at de
+          kommende realskoler f&#x00F8;rst og fremmest skulle v&#x00E6;re skoler for byborgerskabets drenge, og
+          det har givetvis irriteret Grundtvig, at der s&#x00E5;ledes pl&#x00E6;deredes for en ny og s&#x00E6;rlig
+          stands- eller klasseskole. Det blev hovedpointen i <hi rend="italic">
+<rs type="title" key="title455">Skolen for Livet og Academiet i Soer</rs>
+</hi> fra 1838, at realskoler
+          ville v&#x00E6;re lige s&#x00E5; skadelige som latinskolerne, og i s&#x00E6;rdeleshed at de ville st&#x00E5; i vejen
+          for en dansk h&#x00F8;jskole.</p>
+        <p rend="firstIndent">For disse synspunkter havde Grundtvig i 1838 indkasseret dr&#x00F8;je hug og
+          havde m&#x00E5;ttet se sig isoleret; se herom <ref type="docOut" target="1838_593_intro.xml#docIn1">indledningen</ref> til <hi rend="italic">
+<rs type="title" key="title455">Skolen for Livet</rs>.</hi> I kritikken af realskoletanken havde han derfor siden 1838 holdt en noget lavere
+          profil. Det er p&#x00E5; denne baggrund, man skal forst&#x00E5;, hvorfor han f&#x00F8;rst langt inde i <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>
+</rs> &#x2013; og kun p&#x00E5; dette
+          ene sted &#x2013; giver sin mening herom klart til kende:</p>
+        <p rend="quote">&#x201C;en af <hi rend="spaced">Grundfeilene</hi> ved vort saakaldte <hi rend="spaced">Real-Skolev&#x00E6;sen,</hi> [er] at det begunstiger <hi rend="spaced">videnskabeligt Fuskeri</hi> paa alle gavnlige Syslers Bekostning, og det vilde
+          v&#x00E6;re Nok, om det end ikke havde den anden Grundfeil: at ville, ligesom Latinskolen,
+          forvandle <hi rend="spaced">B&#x00F8;rn</hi> til <hi rend="spaced">vise</hi> Oldinger, saa
+          ingen af disse Feil maa en H&#x00F8;iskole have, naar den skal virke ei til Skade, men til
+          Gavn&#x201D; (1847, s. 31).</p>
+        </div>
+      
+      <div>
+        <head xml:id="docIn4">Den &#x00E5;bne adgang til akademiet</head>
+        <p rend="noIndent">Et af de punkter i den kongelige resolution af 27. marts 1847, Grundtvig
+          fremh&#x00E6;ver, er stk. 3 om adgangen til realh&#x00F8;jskolen, hvorom det hedder:</p>
+        <p rend="quote">&#x201C;Adgangen til Realh&#x00F8;iskolen staaer aaben ikke blot for dem, som enten
+          i Sor&#x00F8; Skole eller i andre Underviisningsanstalter have gjennemgaaet et fuldst&#x00E6;ndigt
+          realvidenskabeligt Skolecursus [&#x2026;], men ogsaa for Andre, som maatte &#x00F8;nske at bivaane
+          Forel&#x00E6;sningerne over alle eller enkelte af de Videnskabsfag, som blive foredragne&#x201D; (<rs key="title1956" type="title">Grundtvig 1968, bind 2</rs>, s. 323).</p>
+        <p rend="firstIndent">Allerede i f&#x00F8;rste afsnit af forordet betoner Grundtvig
+          s&#x00E5;ledes vigtigheden &#x201C;ved at aabne denne [h&#x00F8;jskolen] for
+            <hi rend="spaced">Alle</hi> dem, der &#x00F8;nske at benytte den&#x201D; (1847, s.
+          [3]). Det var et kardinalpunkt for ham, at der skulle v&#x00E6;re
+          &#x00E5;ben adgang til den folkelige h&#x00F8;jskole, hvor man netop ikke skulle studere
+          for at opn&#x00E5; eksamen og embede, men for frivilligt og for sagens egen skyld at
+          oplyses om det, der var f&#x00E6;lles for <hi rend="italic">alle</hi> danske borgere,
+          navnlig modersm&#x00E5;let, f&#x00E6;drelandets historie og dets nuv&#x00E6;rende
+          tilstand. Og med resolutionens stk. 3 havde han i princippet opn&#x00E5;et denne
+          &#x00E5;benhed. Sp&#x00F8;rgsm&#x00E5;let var imidlertid, hvordan dette kunne
+          udm&#x00F8;ntes i praksis. Den vision&#x00E6;re Grundtvig forholdt sig ikke til s&#x00E5;
+          banale og jordn&#x00E6;re sp&#x00F8;rgsm&#x00E5;l, som hvor mange unge m&#x00E6;nd man vel kunne
+          friste til at tage ophold i den afsides fl&#x00E6;kke Sor&#x00F8;, hvis de ikke kunne
+          afl&#x00E6;gge meriterende eksamen i noget fag. Den mere praktisk t&#x00E6;nkende
+            <persName key="pe138">Ingemann</persName> havde advaret ham allerede i 1837:</p>
+        <p rend="quote">&#x201C;Men stod her ogsaa i Morgen et saadant Akademi, hvor stor mener du,
+          Frekvensen [s&#x00F8;gningen] blev, naar den almindelige Dannelse, der
+          tilb&#x00F8;des, ikke medf&#x00F8;rte Rettigheder til Embeder og anden
+          Fors&#x00F8;rgelse?&#x201D; (<rs key="title447" type="title">Grundtvig
+              og Ingemann 1882</rs>, s. 201).</p>
+        <p rend="firstIndent">Sor&#x00F8; Akademis omdannelse til realh&#x00F8;jskole medf&#x00F8;rte ingen &#x00E6;ndring i det
+          forhold, at man her kunne afl&#x00E6;gge eksamen. Det tilf&#x00F8;jedes blot, at forel&#x00E6;sningerne
+          herefter principielt skulle v&#x00E6;re offentlige, hvis nogen ikke-akademist ellers skulle f&#x00E5;
+          lyst til at indfinde sig til dem.</p>
+      </div>
+        
+      <div>
+        <head xml:id="docIn40">Realh&#x00F8;jskole eller folkelig h&#x00F8;jskole</head>
+          <p rend="noIndent">Det f&#x00F8;rste ord i forordet til <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>
+</rs>
+          er et forbehold: &#x201C;Forsaavidt&#x201D;. Og forordet forts&#x00E6;tter med den
+          p&#x00E5;stand, at den kongelige resolution af 27. marts 1847, som ikke n&#x00E6;vner
+          begrebet en dansk eller folkelig h&#x00F8;jskole med et ord, ganske vist &#x201C;ei
+          stempler, men omskriver Navnet&#x201D; til &#x2018;realh&#x00F8;jskole&#x2019; (1847, s.
+          [3]). </p>
+        <p rend="firstIndent">Der var imidlertid ikke tale om nogen omskrivning, men om et
+          kompromis.</p>
+        <p rend="firstIndent">Sor&#x00F8; Akademi og skole havde en stolt tradition for undervisning
+          i de reale fag; i august 1837 var der p&#x00E5; skolen &#x2013; som en af de f&#x00F8;rste
+          i landet &#x2013; blevet oprettet en realafdeling med moderne sprog og naturvidenskab som
+          fag. Og akademiets l&#x00E6;rerstab rummede st&#x00E6;rke fortalere for og fagligt dygtige
+          l&#x00E6;rere i realvidenskaberne. <persName key="pe749">J.C. L&#x00FC;tken</persName> var
+          p&#x00E5; dette tidspunkt den mest fremtr&#x00E6;dende og kendte.</p>
+        
+        <p rend="firstIndent">Zoologen <persName key="pe749">L&#x00FC;tken</persName> havde tidligt
+          gjort sig til talsmand for realfagenes &#x00E5;ndsdannende potentiale. I en afhandling fra
+          1830 <hi rend="italic">
+<rs key="title1459" type="title">Om almindelig Dannelse og dens
+              Midler</rs>
+</hi> kritiserede han den herskende opfattelse af, at realfagene bare havde
+          nyttev&#x00E6;rdi, mens kun de humanistiske fag skulle kunne udvikle elevernes &#x00E5;nd.
+          Og blandt akademiets l&#x00E6;rere i 1840'erne var navnlig <persName key="pe749">L&#x00FC;tken</persName> offentligt aktiv for at fremme realvidenskabernes position.
+          Nogle m&#x00E5;neder inden Grundtvig udsendte <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark,</hi>
+</rs>
+          udgav han s&#x00E5;ledes de to pjecer <rs type="title" key="title2667">
+<hi rend="italic">Om Sor&#x00F8; Akademies Idee</hi>
+</rs> (10. marts, alts&#x00E5; f&#x00F8;r
+          resolutionen af 27. marts) og <rs type="title" key="title2668">
+<hi rend="italic">Om
+              Sor&#x00F8; Akademies Idee Nr 2</hi>
+</rs> (30. april, alts&#x00E5; efter resolutionens
+          fremkomst).</p> 
+          <note type="readMore">
+            <p rend="noIndent">Grundtvig ejede i hvert fald den f&#x00F8;rste, jf. Bogfortegnelse 1873, nr.
+            6.805. Muligvis omfatter denne post i bogfortegnelsen begge L&#x00FC;tkens pjecer.</p>
+          </note>
+          <p rend="firstIndent">
+<persName key="pe749">L&#x00FC;tken</persName> selv s&#x00E5; ingen
+          mods&#x00E6;tning mellem sin id&#x00E9; om en realh&#x00F8;jskole og, som han jovialt
+          udtrykte det, &#x201C;den Danske H&#x00F8;iskoles graah&#x00E6;rdede Prophet og
+          Patriarch&#x201D; Grundtvigs forestillinger om en folkelig h&#x00F8;jskole (<rs key="title2668" type="title">L&#x00FC;tken 1847b</rs>, s. 41). Men han var ganske klar over Grundtvigs skepsis overfor naturvidenskaberne.
+          Grundtvig selv holdt i dette sp&#x00F8;rgsm&#x00E5;l klogeligt en lavere profil end
+          ellers.</p>
+        <p rend="firstIndent">
+<persName key="pe749">L&#x00FC;tken</persName> gjorde regnskabet
+          s&#x00E5;ledes op:</p>
+        <p rend="quote">&#x201C;Den Danske H&#x00F8;iskoles Forf&#x00E6;gtere have vistnok megen Grund til at
+          vente Noget efter deres Sind [&#x2026;] af Realh&#x00F8;iskolen, der jo efter Resolutionens &#x00A7; 2, a
+          skal have en s&#x00E6;rdeles Retning paa Alt, hvad Dansk monne v&#x00E6;re [&#x2026;] og ville vistnok troe
+          at finde en Tr&#x00F8;st for det dem n&#x00E6;ppe behagende Ord &#x2018;Real-(Videnskaber og
+          Skole)&#x2019; deri, at just hine ovenn&#x00E6;vnte Fag ere fremh&#x00E6;vede is&#x00E6;r, og ikke de dem n&#x00E6;ppe
+          saavel anstaaende Naturvidenskaber. [&#x2026;] At i en &#x2018;Realskole&#x2019;
+          Naturvidenskaberne ikke kunne v&#x00E6;re udelukkede, og just derfor ikke ere n&#x00E6;vnede, antage vi
+          at f&#x00F8;lge af sig selv [&#x2026;]&#x201D; (<rs key="title2668" type="title">L&#x00FC;tken 1847b</rs>, s. 30).</p>
+        <p rend="firstIndent">Ogs&#x00E5; det nationalliberale dagblad <rs key="title1134" type="title">
+<hi rend="italic">F&#x00E6;drelandet,</hi>
+</rs> der 27.-28. august bragte
+          et referat af Grundtvigs og L&#x00FC;tkens b&#x00F8;ger om emnet, ans&#x00E5; deres
+          respektive opfattelser af akademiet som forskellige, men forenelige (<rs key="title2776" type="title">H&#x00F8;rby 1967</rs>, s. 78 f.).</p>
+        
+        <note type="readMore">
+          <p rend="noIndent">En tilsvarende f&#x00E6;llesanmeldelse af Grundtvigs og
+              <persName key="pe749">L&#x00FC;tkens</persName> skrifter gaves i <hi rend="italic">
+<rs type="title" key="title2635">For Literatur og Kritik. Et Fjerdingaarsskrift udgivet
+                af Fyens Stifts liter&#x00E6;re Selskab</rs>
+</hi> 1847, s. 307-316. Grundtvigs skrift
+            anmeldtes desuden (overstr&#x00F8;mmende) i <rs key="title2633" type="title">
+<hi rend="italic">Christeligt Folkeblad,</hi>
+</rs> 26. september 1847.</p>
+          <p rend="firstIndent">Om <persName key="pe749">L&#x00FC;tkens</persName> opfattelse se
+            ogs&#x00E5; <hi rend="italic">
+<rs key="title78" type="title">Sor&#x00F8;. Klostret,
+                Skolen, Akademiet gennem Tiderne. Skrevet af gamle Soranere</rs>,</hi> bind 2, 2.
+            halvdel (1931), s. 421 f.</p>
+        </note>
+        <p rend="firstIndent">Debatten om realfagene og om behovet for realskoler og h&#x00F8;jere
+          l&#x00E6;reanstalter i disse fag havde p&#x00E5;g&#x00E5;et i to &#x00E5;rtier. I forvejen
+          havde man Den Polytekniske L&#x00E6;reanstalt (oprettet 1829) og Den Kongelige Militaire
+          H&#x00F8;iskole (oprettet 1830). <persName key="pe119">H.C. &#x00D8;rsted</persName> var
+          leder af f&#x00F8;rstn&#x00E6;vnte og var som n&#x00E6;vnt medlem af den kommission, der
+          udf&#x00E6;rdigede den kongelige resolution af 27. marts 1847. Han var blandt dem, der helst s&#x00E5;
+          Sor&#x00F8; Akademi nedlagt.</p>
+        <p rend="firstIndent">Det reformerede akademi fik alts&#x00E5; navn af realh&#x00F8;jskole. Det er derfor
+          p&#x00E5;faldende, at ingen af de fag, man traditionelt kalder realfag, alts&#x00E5; naturfagene og de
+          levende sprogs fag, er n&#x00E6;vnt, hvorimod dansk og Danmarkshistorie, en lang r&#x00E6;kke
+          samfundsfag og land&#x00F8;konomi er fremh&#x00E6;vede.</p>
+        <p rend="firstIndent">Navneskiftet har alligevel tilfredsstillet de lokale tilh&#x00E6;ngere
+          af realvidenskaberne (<persName key="pe749">L&#x00FC;tken</persName> s&#x00E5; som citeret
+          ikke realfagene truede). Og den l&#x00E6;rde skoles navneskifte har gl&#x00E6;det alle
+          tilh&#x00E6;ngere af realskoletanken. Det har muligvis tilfredsstillet <persName key="pe119">&#x00D8;rsted</persName>, at ingen realfag n&#x00E6;vntes konkret, og at
+          realh&#x00F8;jskolen ikke skulle konkurrere med Den Polytekniske L&#x00E6;reanstalt.
+          Indf&#x00F8;relsen af samfundsfagene, hvori der (bortset fra jura) ikke undervistes
+          p&#x00E5; universitetet, har tilfredsstillet kongen, som gerne ville have akademiet som en
+          l&#x00E6;reanstalt i sin egen ret og med sin egen v&#x00E6;gtning af fagene, herunder
+          realfagene. Betoningen af dansk sprog og historie gl&#x00E6;dede Grundtvig og akademiets
+          director <persName key="pe138">Ingemann</persName>. Indf&#x00F8;relsen af
+          land&#x00F8;konomi som fag var en nyskabelse, ogs&#x00E5; p&#x00E5; landsplan; forslaget
+          var kommet fra universitetsdirektionen (<rs key="title1764" type="title">Rosendal
+            1897</rs>, s. 41-43).</p>
+        <note type="readMore">
+          <p rend="noIndent">Den Kongelige Veterin&#x00E6;r- og Landboh&#x00F8;jskole oprettedes f&#x00F8;rst 1856 som en
+            videref&#x00F8;relse og udbygning af Veterin&#x00E6;rskolen, der var blevet etableret i 1773.</p>
+        </note>
+        <p rend="firstIndent">Alle havde alts&#x00E5; f&#x00E5;et noget, de kunne kalde deres. Men kompromisset kunne
+          dog ogs&#x00E5; fremstilles mindre elskv&#x00E6;rdigt, som her af juraprofessoren <persName key="pe1284">A.F. Krieger</persName> i et privat brev april 1847:</p>
+          
+        <p rend="quote">&#x201C;De har vel seet det glimrende Resultat [resolutionen af 27. marts
+          1847] af Sor&#x00F8;sagen &#x2013; Et Stykke Algrenussingsk Skole for Drengene med det blaae &#x00D8;ie,
+          et Stykke for Grundtvig[s] levende Ord, et Stykke Bernhard-ransk [ingemannsk]
+          Agerbrugsskole, enfin Vr&#x00F8;vl; &#x2013; det kan da vare mange Aar, inden denne i sit Slags eneste
+          hardtad magel&#x00F8;se h&#x00F8;iere Realskole bliver aabnet; dog maaskee [medlem af
+          universitetsdirektionen Jens Olaus] <persName key="pe939">Hansen</persName> faaer den
+          dr&#x00E6;bt, inden den f&#x00F8;des&#x201D; (<rs type="title" key="title2718">Bagge 1949</rs>, brev nr. 827, s. 330). </p>
+        </div>
+      
+        <div>
+          <head xml:id="docIn3">Det slesvig-holstenske sp&#x00F8;rgsm&#x00E5;l</head>
+          <p rend="noIndent">Den 4. januar 1847 havde <persName key="pe138">Ingemann</persName> i vage vendinger skrevet til Grundtvig om reformplanerne for akademiet:</p>
+          <p rend="quote">&#x201C;Hvad nu den vordende soranske H&#x00F8;jskole angaar, vilde jeg gj&#x00E6;rne
+          kunne meddele dig en lys Udsigt med det nye Aars Begyndelse; men des v&#x00E6;rre staar dens
+          Fremtid lige uvis og omtaaget for os. Den slesvig-holstenske Mosedam giver sagtens <hi rend="spaced">ham</hi> nok at tage vare, som alene skal slaa Hovedet paa S&#x00F8;mmet&#x201D;
+            (<rs key="title447" type="title">Grundtvig og Ingemann 1882</rs>, s. 287).</p>
+          <p rend="firstIndent">Den forsigtige <persName key="pe138">Ingemann</persName>, som jo
+          ogs&#x00E5; selv havde s&#x00E6;de i den kommission, der tre m&#x00E5;neder senere
+          barslede med resolutionen af 27. marts 1847, satte alts&#x00E5; her alene sin lid til
+          kongen og berettede intet om sin egen rolle og vilje i kommissionsarbejdet. Men i
+          &#x00F8;vrigt er det sandt, at kongen havde nok at g&#x00F8;re med det slesvig-holstenske
+          sp&#x00F8;rgsm&#x00E5;l. Blot betragtede Grundtvig i mods&#x00E6;tning til <persName key="pe138">Ingemann</persName> dette sp&#x00F8;rgsm&#x00E5;l i dets sammenh&#x00E6;ng
+          med, ikke i mods&#x00E6;tning til reformplanerne for akademiet.</p>
+          <p rend="firstIndent">Om det slesvig-holstenske sp&#x00F8;rgsm&#x00E5;l skal der her kun
+          opridses ganske f&#x00E5; tr&#x00E6;k, idet der i &#x00F8;vrigt kan henvises til den
+          omfattende faglitteratur herom, f.eks. Hansen m.fl.: <rs key="title2637" type="title">
+<hi rend="italic">S&#x00F8;nderjyllands Historie,</hi>
+</rs> bind 2, s. 59-90.</p>
+            
+          <p rend="firstIndent">I det dansk-tyske gr&#x00E6;nseland opstod der i 1830'erne og 1840&#x2019;erne b&#x00E5;de dansksindede og tysksindede nationale bev&#x00E6;gelser. Begge f&#x00F8;rte sprog- og kulturkamp gennem folkem&#x00F8;der, nationale sange og nationale symboler.</p>
+          <p rend="firstIndent">Den slesvig-holstenske, tysksindede bev&#x00E6;gelse mente, at Slesvig og
+          Holsten h&#x00F8;rte sammen, og at hertugd&#x00F8;mmerne skulle have st&#x00F8;rre selvst&#x00E6;ndighed i forhold til
+          kongeriget Danmark eller helt l&#x00F8;srive sig. Hvor den slesvig-holstenske bev&#x00E6;gelse
+          oprindeligt blot &#x00F8;nskede st&#x00F8;rre frihed og uafh&#x00E6;ngighed inden for den danske helstat, blev
+          kravet, som n&#x00F8;d stadigt st&#x00F8;rre folkelig opbakning i l&#x00F8;bet af 1840'erne, efterh&#x00E5;nden en
+          fuldst&#x00E6;ndig l&#x00F8;srivelse samt Slesvigs optagelse i Det Tyske Forbund. Grundtvig
+          fulgte begivenhederne ganske n&#x00F8;je og havde allerede i januar 1831 p&#x00E5; b&#x00E5;de dansk og
+          tysk udgivet den lille bog <rs key="title446" type="title">
+<hi rend="italic">Politiske
+              Betragtninger med Blik paa Danmark og Holsteen.</hi>
+</rs>
+</p>
+          <p rend="firstIndent">Kongen var p&#x00E5; sin side f&#x00F8;rst og fremmest optaget af at bevare
+          helstaten. Men fra dansksindet side &#x00F8;nskede mange, navnlig de nationalliberale, at
+          Danmarks sydgr&#x00E6;nse skulle g&#x00E5; mellem Slesvig og Holsten og v&#x00E6;re Ejderen, s&#x00E5;dan som den
+          havde v&#x00E6;ret i h&#x00F8;jmiddelalderen. Grundtvig havde st&#x00F8;ttet Ejder-politikken ved et
+          nationalliberalt arrangeret folkem&#x00F8;de den 4. juli 1844 p&#x00E5; Skamlingsbanken, hvor han talte
+          for cirka 12.000 dansksindede deltagere, og han fastholdt i 1847 endnu denne st&#x00F8;tte. (Senere modificerede han sin holdning og ville lade gr&#x00E6;nsen g&#x00E5; der, hvor der var dansksindet flertal.)</p>
+          
+          <p rend="firstIndent">Det er p&#x00E5; denne baggrund, man skal forst&#x00E5; Grundtvigs angreb p&#x00E5;
+          tyskheden, p&#x00E5; tyske historikere og p&#x00E5; den slesvig-holstenske opfattelse af Slesvigs
+          samh&#x00F8;righed med Holsten i <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning
+              til Danmark.</hi>
+</rs> Disse
+          sp&#x00F8;rgsm&#x00E5;l var kun blevet ber&#x00F8;rt mere perifert i de tidligere h&#x00F8;jskoleskrifter 1836-1840,
+          men fyldte det meste af v&#x00E6;rkets f&#x00F8;rste kapitel, &#x201C;Det Danske Dummerhoved&#x201D;.
+          &#x00C5;ret efter f&#x00F8;rte disse sp&#x00F8;rgsm&#x00E5;l, som oprindeligt mest havde v&#x00E6;ret udtryk for en sp&#x00E6;nding
+          mellem rigets centralmagt og en provins, men nu var tilspidsede som nationale sp&#x00F8;rgsm&#x00E5;l,
+          til udbruddet af den borgerkrig, der kaldes F&#x00F8;rste Slesvigske Krig eller Tre&#x00E5;rskrigen
+          1848-1851.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn65">Historikerstriden Wegener versus Dahlmann</head>
+          <p rend="noIndent">Grundtvig satiriserer flere steder over l&#x00E6;rde tyskere, som if&#x00F8;lge
+          ham &#x201C;ikke bryder sig stort om, eller kiender stort til det lille <hi rend="spaced">Danmark,</hi> men har dog l&#x00E6;nge, for Naboskabs Skyld, taget sig <hi rend="spaced">skolemesterlig</hi> af vor Opdragelse&#x201D; (s. 9). Men l&#x00E6;ngere
+          fremme bliver den generelle anti-tyske satire sk&#x00E6;rpet til det yderste:</p> 
+          <p rend="quote">&#x201C;Ligesom [&#x2026;] alle de storm&#x00E6;gtige <hi rend="spaced">Tydske</hi> Keisere i <hi rend="spaced">Middelalderen</hi> haardnakket
+          paastod, at <hi rend="spaced">
+Dan-Mark,</hi> ligesom
+            <hi rend="spaced">Ucker-Mark</hi> og hele <hi rend="spaced">Mark-Brandenburg,</hi> og
+          saa mange andre <hi rend="spaced">&#x2018;Marker,&#x2019;</hi> h&#x00F8;rde oprindelig til
+          det <hi rend="spaced">hellige Romerske</hi> Rige, [&#x2026;] saaledes veed
+          vi jo, at alle de stortalende <hi rend="spaced">Tydske</hi> Skribenter i det <hi rend="spaced">Nittende</hi> Aarhundrede ligesaa haardnakket paastaaer, at baade <hi rend="spaced">S&#x00F8;nder</hi> og <hi rend="spaced">N&#x00F8;rre-Jylland</hi>
+          [&#x2026; og] de saakaldte <hi rend="spaced">Danske &#x00D8;er,</hi>
+          [&#x2026;  m&#x00E5;] indlemmes i det <hi rend="spaced">Tydske
+          Forbund</hi>&#x201D; (s. 19).</p>
+          <p rend="firstIndent">Et tysk krav p&#x00E5; hele Danmark? Dette sidste udfald g&#x00E5;r
+          tydeligvis l&#x00E6;ngere end blot polemik imod den slesvig-holstenske bev&#x00E6;gelse.
+          Dennes mest vidtg&#x00E5;ende krav var jo alene Slesvigs og Holstens l&#x00F8;srivelse fra
+          den danske helstat og Slesvigs optagelse i Det tyske Forbund, som Holsten allerede var
+          medlem af. Men <hi rend="italic">hele</hi> Danmarks indlemmelse i Det tyske Forbund?</p>
+          <p rend="firstIndent">Der var ikke noget s&#x00E5;dant krav fra nogen side. N&#x00E5;r Grundtvig bruger en
+            s&#x00E5; polemisk vending, m&#x00E5; det h&#x00F8;jst sandsynligt forst&#x00E5;s p&#x00E5; baggrund af en aktuel
+            historikerstrid om Danmarks historie frem til h&#x00F8;jmiddelalderen.</p>
+        <p rend="firstIndent">Den ansete tyske historiker <persName key="pe1204">Friedrich Christoph
+            Dahlmann</persName> var siden 1842 professor i Bonn, tidligere docent i K&#x00F8;benhavn
+          og professor i Kiel og G&#x00F6;ttingen. Han havde i en r&#x00E6;kke v&#x00E6;rker
+          besk&#x00E6;ftiget sig indg&#x00E5;ende med hertugd&#x00F8;mmernes historie. Han var
+          oprindeligt tilh&#x00E6;nger af den danske helstat, men ans&#x00E5;s p&#x00E5; dette
+          tidspunkt (og anses stadig) for at v&#x00E6;re den slesvig-holstenske bev&#x00E6;gelses
+          ideologiske ophav. Som hans hovedv&#x00E6;rk regnes <hi rend="italic">
+<rs key="title2492" type="title">Geschichte von D&#x00E4;nnemark</rs>,</hi> der udgaves i Hamburg
+          1840-1843; v&#x00E6;rket udkom desuden i dansk overs&#x00E6;ttelse fra 1841: <hi rend="italic">
+<rs key="title2674" type="title">Danmarks Historie indtil
+              Reformationen;</rs>
+</hi> tredje dels sidste h&#x00E6;fte forel&#x00E5; p&#x00E5; dansk
+          netop i 1847.</p>
+          <p rend="firstIndent">Men allerede efter fremkomsten af v&#x00E6;rkets f&#x00F8;rste bind p&#x00E5; henholdsvis tysk og
+          dansk reagerede den dengang 39-&#x00E5;rige danske historiker <persName key="pe1282">Caspar Frederik
+            Wegener</persName> med en 148 sider lang kritisk anmeldelse: <hi rend="italic">
+<rs key="title2634" type="title">Om Dahlmanns Danmarkshistories F&#x00F8;rste
+              Bind</rs>
+</hi> (1841). F&#x00F8;rste bind omfatter tiden frem til <persName key="pe220">Valdemar 4. Atterdag</persName>
+</p>
+        <p rend="firstIndent">Grundtvig ejede b&#x00E5;de <persName key="pe1204">Dahlmanns</persName> v&#x00E6;rk (p&#x00E5; tysk) og <persName key="pe1282">Wegeners</persName> svar (if. Bogfortegnelse 1873, nr. 5.695-5.698); og der er
+          s&#x00E6;rligt tre hovedpunkter i <persName key="pe1282">Wegeners</persName> kritik, som
+          m&#x00E5; have interesseret ham:</p>
+        
+          <p rend="firstIndent">1) <persName key="pe1204">Dahlmann</persName> fremh&#x00E6;ver ofte
+          og med bem&#x00E6;rkelsesv&#x00E6;rdig &#x201C;Smaalighed&#x201D; nogle af de danske
+          middelalderkongers lensed eller formelle vasalforhold til de tysk-romerske kejsere (s.
+          31). Men om noget reelt vasalforhold var der aldrig tale, og dette tager <persName key="pe1282">Wegener</persName> ogs&#x00E5; andre tyske historikeres udsagn i ed
+          p&#x00E5; (s. 33; se ogs&#x00E5; s. 75 f. og s. 131 f.). Her er vel grunden til Grundtvigs
+          polemik imod et angiveligt tysk krav p&#x00E5; hele Danmark.</p>
+          <p rend="firstIndent">2) I behandlingen af sagnhistorien till&#x00E6;gger <persName key="pe1204">Dahlmann</persName> oftest udenlandske (islandske) kilder st&#x00F8;rre
+          v&#x00E6;gt end de danske, navnlig <persName key="pe237">Saxo</persName> (s. 5 f.). Dette
+          kritikpunkt m&#x00E5; have interesseret Grundtvig s&#x00E6;rligt, idet han selv havde
+          forsvaret den saxoske tradition vedr&#x00F8;rende sagnhistorien imod <persName key="pe1204">Dahlmann</persName>.</p> 
+          <note type="readMore">
+              <p rend="noIndent">I Grundtvig Arkivet, fasc. 267.2, befinder der sig 3 hefter med
+                notater om <persName key="pe237">Saxo</persName> samt et l&#x00F8;st ark foldet til
+                to blade med et upubliceret notat &#x201C;Om Oldsagnene hos <persName key="pe237">Saxo</persName>&#x201D;. Grundtvig henviser heri til en strid mellem <persName key="pe1204">Dahlmann</persName> og den danske <persName key="pe237">Saxo</persName>-ekspert <persName key="pe117">P.E. M&#x00FC;ller</persName> om
+                  <persName key="pe237">Saxos</persName> p&#x00E5;lidelighed som historisk kilde og
+                tager <persName key="pe117">M&#x00FC;llers</persName> parti.</p>
+            </note>
+          
+          <p rend="firstIndent">3) <persName key="pe1282">Wegener</persName> retter en
+          s&#x00F8;nderlemmende kritik imod de meget talrige fejl i den danske udgave af
+          v&#x00E6;rket, men navnlig af, at overs&#x00E6;ttelsen overhovedet var blevet foretaget:
+          &#x201C;En Overs&#x00E6;ttelse af Dahlmanns Historie giver os en i tydsk Aand forfattet
+          Danmarkshistorie, og en saadan var det &#x2013; synes mig &#x2013; naturligst, at vi
+          s&#x00F8;gte paa Tydsk&#x201D; (s. 136). Det m&#x00E5; v&#x00E6;re i tilslutning til denne
+          kritik, Grundtvig bem&#x00E6;rker, at &#x201C;vore fleste <hi rend="spaced">Overs&#x00E6;ttelser</hi> af Tydske B&#x00F8;ger, er aldeles hovedl&#x00F8;s&#x201D;
+          (1847, s. 17).</p>
+        <p rend="firstIndent">Symbolikken i striden mellem netop <hi rend="italic">denne</hi> tyske
+          og <hi rend="italic">denne</hi> danske historiker m&#x00E5; for Grundtvig have
+          v&#x00E6;ret sl&#x00E5;ende: Selve den slesvig-holstenske bev&#x00E6;gelses
+          &#x00E5;ndelige fader kontra <persName key="pe1282">C.F. Wegener</persName>, som bestred
+          lektoratet i historie netop p&#x00E5; Sor&#x00F8; Akademi.</p>
+          
+        <p rend="firstIndent">Grundtvigs opg&#x00F8;r i <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>
+</rs> med
+          den slesvig-holstenske bev&#x00E6;gelse i almindelighed og med tyske historikeres syn
+          p&#x00E5; Danmarks og Slesvigs historie i s&#x00E6;rdeleshed m&#x00E5; ses p&#x00E5;
+          baggrund af historikerstriden mellem <persName key="pe1282">Wegener</persName> og
+            <persName key="pe1204">Dahlmann</persName>. </p>
+          <note type="readMore">
+<p rend="noIndent">Det var hverken f&#x00F8;rste eller sidste gang, Grundtvig t&#x00F8;rnede sammen
+            med <persName key="pe1204">Dahlmann</persName>. &#x00C5;ret efter skrev Grundtvig i sit
+            ugeblad <rs key="title325" type="title">
+<hi rend="italic">Danskeren,</hi>
+</rs> at
+            &#x201C;det er snart en heel Menneske-Alder siden, at <hi rend="italic">
+<persName key="pe1204">Dahlmann</persName>
+</hi> offenlig kr&#x00E6;vede mig til Regnskab for
+            den Udaad at ville <hi rend="italic">aandelig</hi> bygge <hi rend="italic">Dannevirke</hi> op paa ny [&#x2026;] Det var i Anledning af
+            Tidsskriftet &#x2018;Dannevirke&#x2019; som jeg udgav i Aarene 1816 og 17&#x201D;
+            (Grundtvig 1848, s. 350). Det har endnu ikke v&#x00E6;ret muligt at fastsl&#x00E5;,
+            hvilken udtalelse af <persName key="pe1204">Dahlmann</persName>, Grundtvig refererer
+            til.</p>
+</note>
+        
+        </div>
+          <div>
+        <head xml:id="docIn5">Eftervirkning</head>
+        <p rend="noIndent">
+<persName key="pe138">Ingemann</persName> takkede Grundtvig varmt for <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>
+</rs>, som han straks l&#x00E6;ste to gange, men takkebrevet af
+          2. juli 1847 afsl&#x00F8;rer alligevel visse mods&#x00E6;tninger imellem vennerne.
+            <persName key="pe138">Ingemann</persName> mente, at det nu gik i den rigtige retning,
+          &#x201C;skj&#x00F8;ndt vel ikke ganske i den Retning, som du bifalder&#x201D; (<rs key="title447" type="title">Grundtvig og Ingemann 1882</rs>, s. 293). Og han gentog sit
+          gamle forbehold med hensyn til det mindre attraktive ved en eksamensfri
+          l&#x00E6;reanstalt, et forbehold grundet i hans 20-&#x00E5;rige erfaring fra et
+          Sor&#x00F8; Akademi med meget ringe s&#x00F8;gning:</p>
+        <p rend="quote">&#x201C;Skal et saa afsides og n&#x00E6;ringsl&#x00F8;st Sted som
+          Sor&#x00F8; drage &#x2018;Kj&#x00E6;rnen af den danske Ungdom i alle Stillinger og fra
+          alle Sider til sig&#x2019; (som du ytrer Side 36), saa beh&#x00F8;ves her ikke alene de
+          lyslevende, dansksindede Ledere og L&#x00E6;rere, som du fordrer, men tillige Frihed til
+          og Haab om her at kunne danne sig til hvilken som helst Stand og Stilling i Landet, og
+          [&#x2026;] til &#x2013; med samme endelige Pr&#x00F8;ve som andre &#x2013;
+          at tr&#x00E6;de i Kongens og F&#x00E6;drelandets Tjeneste&#x201D; (<rs key="title447" type="title">Grundtvig og Ingemann 1882</rs>, s. 294).</p>
+        <p rend="firstIndent">Grundtvig affejede <persName key="pe138">Ingemanns</persName>
+          indvending uden anden begrundelse, end at &#x201C;den s&#x00E6;landske J&#x00E6;rnbane jo snart maa
+          bringe Sor&#x00F8; Hovedstaden meget n&#x00E6;rmere, end Roskilde hidtil har v&#x00E6;ret&#x201D; (<rs key="title447" type="title">Grundtvig og Ingemann 1882</rs>, s. 295). Jernbanestr&#x00E6;kningen K&#x00F8;benhavn-Roskilde, den f&#x00F8;rste i
+          kongeriget, var taget i brug 26. juni 1847, hvilket var et af tidens store
+          samtaleemner.</p>
+            <note type="readMore">
+              <p rend="noIndent">F&#x00F8;rst efter <persName key="pe98">Christian 8.s</persName>
+            d&#x00F8;d udtrykte Grundtvig bekymring for, dels om akademiets l&#x00E6;rere havde lyst
+            og evne til at undervise andre end dem, der s&#x00F8;gte en eksamen, dels om der under
+            disse omst&#x00E6;ndigheder overhovedet ville indfinde sig andre studerende end dem, der
+            s&#x00F8;gte en eksamen. Se brev af 7. marts 1848 til grev <persName key="pe1283">F.M.
+              Knuth</persName>, <hi rend="italic">
+<rs type="title" key="title277">Breve fra og til
+                N.F.S. Grundtvig</rs>,</hi> bind 2, s. 457-461.</p>
+            </note> 
+        <p rend="firstIndent">Vigtigere for Grundtvig end <persName key="pe138">Ingemanns</persName>
+          ros og forbehold var det dog nok, at <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark</hi>
+</rs>
+          havde f&#x00E5;et den gunstigst mulige modtagelse af kongen, som if&#x00F8;lge dronning <persName key="pe108">Caroline Amalie</persName> havde &#x201C;slugt&#x201D; den (<rs key="title447" type="title">Grundtvig og Ingemann 1882</rs>, s. 296).
+          Og Grundtvig var efterf&#x00F8;lgende blevet kaldt til privataudiens hos kongen, som havde stillet ham
+          meget i udsigt:</p>
+        <p rend="quote">&#x201C;[&#x2026;] han baade lovede at tale med mig under Sagens videre Udvikling
+          og fandt selv, at den ikke for &#x00D8;jeblikket var i de bedste H&#x00E6;nder, samt at jeg vel turde
+          have Ret i, at min personlige Medvirkning ved Udf&#x00F8;relsen ej vilde v&#x00E6;re overfl&#x00F8;dig. Han
+          slog ved denne Lejlighed paa, om jeg vilde forflyttes til Sor&#x00F8; som Pr&#x00E6;st&#x201D;, hvilket
+          dog ikke var Grundtvigs &#x00F8;nske, men noget som han i givet fald ikke ville mods&#x00E6;tte sig,
+          hvis det kunne gavne sagen (<rs key="title447" type="title">Grundtvig og
+              Ingemann 1882</rs>, s. 298).</p>
+            <p rend="firstIndent">Grundtvig havde forestillet sig selv i en mere direkte forbindelse til akademiet. Men han fik hverken indflydelse p&#x00E5; valget af l&#x00E6;rerkr&#x00E6;fter eller plads i den kommission, der under grev <persName key="pe1283">Knuths</persName> fors&#x00E6;de skulle udm&#x00F8;nte resolutionen af 27. marts 1847 i konkrete undervisningsplaner (<rs type="title" key="title1764">Rosendal 1897</rs>, s. 48). <persName key="pe1283">Knuth</persName> forbigik Grundtvig.</p>
+            <p rend="firstIndent">Det var <persName key="pe1283">Knuth</persName> meget om at
+          g&#x00F8;re, at akademiet fik de bedst t&#x00E6;nkelige l&#x00E6;rerkr&#x00E6;fter. Og han
+          ans&#x00E5; den nu 45-&#x00E5;rige lektor i historie <persName key="pe1282">C.F.
+            Wegener</persName>, <persName key="pe1204">Dahlmanns</persName> opponent, for akademiets
+          absolut dygtigste l&#x00E6;rer og for s&#x00E6;rligt v&#x00E6;rdifuld netop nu, hvor
+          skolen skulle styrke historiefaget og statskundskaben. Derfor skrev han til kongen og
+          opfordrede denne til at udn&#x00E6;vne <persName key="pe1282">Wegener</persName> til
+          kongelig historiograf, dvs. rigshistoriker, for herved at holde p&#x00E5; ham i
+          Sor&#x00F8;. I midten af juli modtog Wegener udn&#x00E6;vnelsen, hvilket Grundtvig
+          erfarede kort f&#x00F8;r sin privataudiens hos kongen. Det var et
+          &#x2018;hjertest&#x00F8;d&#x2019; for ham &#x2013; han havde selv &#x00F8;nsket sig netop
+          denne post (<rs key="title1764" type="title">Rosendal 1897</rs>, s. 54). Ogs&#x00E5; her m&#x00E5;tte han se sig
+          forbig&#x00E5;et.</p>
+        <p rend="firstIndent">Sagen selv &#x2013; den folkelige h&#x00F8;jskole &#x2013; var
+          imidlertid i ganske gode h&#x00E6;nder hos <persName key="pe1283">Knuth</persName> og
+          kongen personligt. Efter et halvt &#x00E5;rs nye forhandlinger og tovtr&#x00E6;kkerier med
+          universitetsdirektionen fremkom en kongelig resolution af 31. december, som kong <persName key="pe98">Christian 8.</persName> egenh&#x00E6;ndigt havde &#x00F8;vet indflydelse
+          p&#x00E5;. Det g&#x00E6;lder navnlig f&#x00F8;lgende punkter, som ogs&#x00E5; var
+          afg&#x00F8;rende for Grundtvig:</p>
+        <list type="simple">
+          <item>&#x201C;Sor&#x00F8; Akademis Realh&#x00F8;jskole bestemmes til at v&#x00E6;re en fri L&#x00E6;reanstalt for enhver, der &#x00F8;nsker at uddanne sig i Kendskab til og Brugen af Modersmaalet, i Kundskab om F&#x00E6;drelandets Historie og Statistik, Statsforfatning og kommunale Forhold [&#x2026;]&#x201D;.</item>
+        <item>&#x201C;Adgang til i st&#x00F8;rre eller mindre Omfang efter frit Valg at h&#x00F8;re Forel&#x00E6;sninger ved Sor&#x00F8; Akademi b&#x00F8;r staa aaben for alle uden Optagelses- eller Adgangspr&#x00F8;ve [&#x2026;]&#x201D;.</item>
+        <item>&#x201C;Undervisningen [&#x2026;] b&#x00F8;r omfatte [&#x2026;] F&#x00E6;llesfag i Dansk
+          med Vejledning til Sprogets rette Brug saavel skriftligt som mundtligt og omfattende
+          Foredrag over Modersmaalets Litteratur samt Anvisning til at kende Sprogets Kilde i
+          Islandsk.&#x201D;</item>
+          <item>&#x201C;Alle Forel&#x00E6;sninger, og navnligen de, der holdes over F&#x00E6;drelandets Historie, Statistik m. m., b&#x00F8;r holdes i popul&#x00E6;re Foredrag, saaledes at de kunne benyttes af Tilh&#x00F8;rere med h&#x00F8;jst forskellig Fordannelse&#x201D; (<rs type="title" key="title1764">Rosendal 1897</rs>, s. 71-73; se ogs&#x00E5; <rs type="title" key="title2776">H&#x00F8;rby 1967</rs>, s. 76-79).</item>
+        </list>
+            <p rend="firstIndent">Aldrig havde Grundtvig v&#x00E6;ret t&#x00E6;ttere p&#x00E5; en realisering af sin vision. Kongen havde personligt k&#x00E6;mpet h&#x00E5;rdt for sagen, ikke mindst imod sin egen universitetsdirektion. Men den 20. januar 1848, blot tre uger efter udstedelsen af den endelige resolution vedr&#x00F8;rende akademiets fremtidige &#x2018;grundbestemmelser&#x2019; d&#x00F8;de kong <persName key="pe98">Christian 8.</persName>, Danmarks sidste enev&#x00E6;ldige konge, og med ham ogs&#x00E5; Sor&#x00F8; Akademi og Grundtvigs vision om dets omdannelse til en folkelig h&#x00F8;jskole.</p>
+           <p rend="firstIndent">Akademiets l&#x00E6;rerkollegium arbejdede ganske vist endnu ih&#x00E6;rdigt
+            p&#x00E5; en ny undervisningsplan, der skulle realisere resolutionen af 31. december
+            1847, men i marts 1848 indtraf der
+            afg&#x00F8;rende politiske begivenheder (<hi rend="italic"><rs key="title460" type="title">Academia Sorana. Kloster &#x2013;
+              Akademi &#x2013; Skole</rs>,</hi> s. 435-439). Den 22. marts tiltr&#x00E5;dte
+            Martsministeriet, og to dage senere udbr&#x00F8;d Den F&#x00F8;rste Slesvigske Krig. Grev
+              <persName key="pe1283">Knuth</persName> udn&#x00E6;vntes til Martsministeriets
+            udenrigsminister og blev herved brat draget bort fra Sor&#x00F8;.</p>
+            <p rend="firstIndent">Den 1. april 1849, kort f&#x00F8;r Junigrundlovens vedtagelse, lukkedes akademiet endeligt.</p>
+      </div>
+      
+      <div type="litList">
+        <head xml:id="docIn99">Anvendt litteratur</head>
+        <div>
+          <head xml:id="docIn100">Trykt</head>
+        <list type="litList">
+          
+        
+          <item>
+<rs key="title460" type="title">
+<hi rend="italic">Academia Sorana. Kloster &#x2013; Akademi &#x2013; Skole</hi>
+</rs> (1962) udg. af Soransk Samfund. K&#x00F8;benhavn</item>
+          <item>Bagge, Povl og Povl Engelstoft (red.) (1949) <hi rend="italic">
+<rs key="title2718" type="title">Danske politiske Breve fra 1830erne og 1840erne</rs>,</hi> 3. K&#x00F8;benhavn</item>
+          <item>Bloch, J&#x00F8;rgen Victor (red.) (1847) <rs key="title2633" type="title">
+<hi rend="italic">Christeligt Folkeblad</hi>
+</rs> 26. september 1847. Ringk&#x00F8;bing</item>
+          <item>Dahlmann, Friedrich Christoph (1840-1843) <hi rend="italic">
+<rs key="title2492" type="title">Geschichte von D&#x00E4;nnemark</rs>
+</hi>, 1-3. Hamburg</item>
+          <item>Dahlmann, Friedrich Christoph (1841-1847) <hi rend="italic">
+<rs key="title2674" type="title">Danmarks Historie indtil Reformationen, med Indbegreb af Norge og Island. Efter den Tydske Original ved v. Jenssen Tusch. Med en Skizze af det gamle Norges Thingdistrikter og 13 Bilag til Originalen og Overs&#x00E6;ttelsen, samt et Kort over det gamle Norges Thingdistrikter</rs>,</hi> 1-3. K&#x00F8;benhavn</item>
+          <item>Gad, Knud H. (1833) <hi rend="italic">
+<rs key="title512" type="title">Hvor skal jeg s&#x00E6;tte min S&#x00F8;n i Skole? Et Sp&#x00F8;rgsmaal til Directionen for Universitetet og de l&#x00E6;rde Skoler i S&#x00E6;rdeleshed, og til enhver offentlig Skolebestyrelse i Almindelighed, eller en L&#x00E6;gmands Tanker om N&#x00F8;dvendigheden og F&#x00F8;lgerne af en Skolereform i Danmark</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1831) <rs key="title446" type="title">
+<hi rend="italic">Politiske Betragtninger med Blik paa Danmark og Holsteen.</hi>
+</rs> K&#x00F8;benhavn</item>           
+          <item>Grundtvig, N.F.S. (1836) <hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</rs>.</hi> K&#x00F8;benhavn</item>  
+          <item>Grundtvig, N.F.S. (1837) <rs key="title454" type="title">
+<hi rend="italic">Til Nordm&#x00E6;nd
+            om en Norsk H&#x00F8;i-Skole.</hi>
+</rs> Christiania</item>
+          <item>Grundtvig, N.F.S. (1838) <hi rend="italic">
+<rs type="title" key="title455">Skolen
+                  for Livet og Academiet i Soer</rs>.</hi> K&#x00F8;benhavn</item>
+     <item>Grundtvig, N.F.S. (1847) <rs key="title286" type="title">
+<hi rend="italic">Lyk&#x00F8;nskning til Danmark med Det Danske Dummerhoved og Den
+            Danske H&#x00F8;iskole.</hi>
+</rs> K&#x00F8;benhavn</item> 
+          <item>Grundtvig, N.F.S. (1848) <rs key="title325" type="title">
+<hi rend="italic">Danskeren. Et Ugeblad,</hi>
+</rs> 1. K&#x00F8;benhavn</item> 
+          <item>Grundtvig, N.F.S. &amp; B.S. Ingemann (1882) <rs key="title447" type="title">
+<hi rend="italic">Grundtvig og Ingemann. Brevvexling
+              1821-1859,</hi>
+</rs> udg. af Svend Grundtvig.
+            K&#x00F8;benhavn</item> 
+          <item>Grundtvig, N.F.S. (1889) <hi rend="italic">
+<rs key="title2669" type="title">Om
+            Indretningen af Sor&#x00F8; Academi til en Folkelig H&#x00F8;iskole</rs>,</hi> udg. af A.D.
+            J&#x00F8;rgensen i <hi rend="italic">
+<rs type="title" key="title2732">Danskeren. Tidsskrift for Land og By</rs>.</hi> Kolding</item>
+          <item>Grundtvig, N.F.S. (1924-1926) <hi rend="italic">
+<rs type="title" key="title277">Breve fra og til N.F.S. Grundtvig</rs>,</hi>
+            1-2. Udg. af Georg Christensen &amp; Stener Grundtvig. K&#x00F8;benhavn</item> 
+          <item>Grundtvig, N.F.S. (1968) <hi rend="italic">
+<rs key="title465" type="title">Grundtvigs skoleverden i tekster og udkast</rs>,</hi>
+            1-2, udg. af K.E. Bugge. K&#x00F8;benhavn</item> 
+          <item>Hansen, Hans Schultz, Lars N. Henningsen, Carsten Porskrog Rasmussen &amp; Henrik Becker-Christensen red. (2008-2009) <rs key="title2637" type="title">
+<hi rend="italic">S&#x00F8;nderjyllands Historie,</hi>
+</rs> 1-2. Aabenraa</item>
+          
+          <item>Helweg, Ludvig (red.) (1847) <hi rend="italic">
+<rs type="title" key="title2635">For
+                  Literatur og Kritik. Et Fjerdingaarsskrift udgivet af Fyens Stifts liter&#x00E6;re
+                  Selskab</rs>
+</hi> 1847. Odense</item>
+          <item>H&#x00F8;rby, Kai (u.&#x00E5;: 1967) &#x201C;<rs type="title" key="title2776">Grundtvigs h&#x00F8;jskoletanke og Sor&#x00F8; Akademis reform
+            1842-1849</rs>&#x201D; i <hi rend="italic">
+<rs key="title2775" type="title">&#x00C5;rbog for Dansk Skolehistorie 1967.</rs>
+</hi> K&#x00F8;benhavn</item>
+          
+          <item>L&#x00FC;tken, Johannes Christian (1830) <hi rend="italic">
+<rs key="title1459" type="title">Om almindelig Dannelse og dens Midler, Indbydelsesskrift til den
+            offentlige Examen i Sor&#x00F8;e Akademies Skole, som begynder den 23de Julii
+            1830</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>L&#x00FC;tken, Johannes Christian (1847a) <rs type="title" key="title2667">
+<hi rend="italic">Om Sor&#x00F8; Akademies Idee.</hi>
+</rs> K&#x00F8;benhavn</item>
+          <item>L&#x00FC;tken, Johannes Christian (1847b) <rs type="title" key="title2668">
+<hi rend="italic">Om Sor&#x00F8; Akademies Idee Nr 2.</hi>
+</rs> K&#x00F8;benhavn</item>
+          <item>Rosendal, Hans (1897) <hi rend="italic">
+<rs key="title1764" type="title">Om Kong
+            Kristian VIIIs Planer med Hensyn til Sor&#x00F8; Akademi</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">
+<rs key="title78" type="title">Sor&#x00F8;. Klostret, Skolen,
+            Akademiet gennem Tiderne. Skrevet af gamle Soranere</rs>
+</hi> (1923-1931) udg. af
+            Soranske Samfund. K&#x00F8;benhavn</item>
+          <item>Wegener, Caspar Frederik (1841) <hi rend="italic">
+<rs key="title2634" type="title">Om Dahlmanns Danmarkshistories F&#x00F8;rste Bind</rs>.</hi> K&#x00F8;benhavn</item> 
+        </list>  
+        </div>
+        
+        <div>
+          <head xml:id="docIn101">Utrykt</head>
+          <list type="litList">
+          
+            <item>Grundtvig-arkivet, notater om Saxo, <ref target="http://www.pubpub.com/g-r/showcard.asp?id=4802" type="web">fasc.
+              267.2</ref>
+</item>
+          
+        </list>
+        
+      </div>
+      </div>
+      
+      
+      
+    </body>
+</text>
+</TEI>

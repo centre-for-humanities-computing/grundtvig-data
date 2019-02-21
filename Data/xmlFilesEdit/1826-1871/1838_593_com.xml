@@ -1,0 +1,1605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Skolen for Livet og Academiet i Soer borgerlig betragtet</title>
+               <title rend="shortForm">Skolen for Livet og Academiet i Soer</title>
+                <author>Henrik Yde</author>
+               <editor role="editor1">Holger Berg</editor>
+               <editor role="editor2">dr.theol. K.E. Bugge</editor> 
+               <editor role="editor3">Johnny Kondrup</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>50 KB</extent>
+            
+           <publicationStmt>
+              <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+              <publisher>Aarhus Universitet, Kulturvidenskab</publisher>
+              <distributor>Grundtvig Centeret, Vartov</distributor>
+              
+              <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+           </publicationStmt>
+           
+           <notesStmt>
+                <note target="1838_593_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" target="1838_593_com.xml" type="com">Punktkommentar</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+<encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+                <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            </encodingDesc>
+<revisionDesc>
+                <change xml:id="KSR" who="KSR" when="2012-06-13"></change>
+                <change who="HY" when="2012-06-13">Valideret og tilrettelagt</change>
+               <change who="HY" when="2012-06-28">Sidste lemmata indf&#x00F8;rt. Slettet dobbelt-lemmata</change>
+               <change who="HY" when="2012-07-02">Skrevet til com175</change>
+               <change who="HY" when="2012-07-10">Skrevet til com18</change>
+               <change who="HY" when="2012-07-11">Skrevet til com30</change>
+               <change who="HY" when="2012-07-12">Skrevet til com32</change>
+               <change who="HY" when="2012-08-15">Skrevet til com39</change>
+               <change who="HY" when="2012-08-16">&#x00E6;ndret versionsnummer til 1.3</change>
+               <change who="HY" when="2012-09-06">Skrevet til com50</change>
+               <change who="HY" when="2012-09-07">Skrevet til com53</change>
+               <change who="HY" when="2012-09-11">Skrevet til com85</change>
+               <change who="HY" when="2012-09-12">Skrevet til com104</change>
+               <change who="HY" when="2012-09-18">Skrevet til com113</change>
+               <change who="HY" when="2012-09-20">Skrevet til com121</change>
+               <change who="HY" when="2012-09-20">Skrevet til com139</change>
+               <change who="HY" when="2012-09-25">Skrevet til com144</change>
+               <change who="HY" when="2012-09-26">Skrevet til com154</change>
+               <change who="HY" when="2012-09-27">Skrevet til com162</change>
+               <change who="HY" when="2012-10-02">Skrevet til com163</change>
+               <change who="HY" when="2012-10-03">Skrevet til com190</change>
+               <change who="HY" when="2012-10-16">F&#x00E6;rdig, afleveret til NHB</change>
+               <change who="HY" when="2013-02-15">f&#x00F8;rt KEB's rettelser ind, afleveret til KN</change>
+               <change who="HY" when="2013-03-18">f&#x00F8;rt JK's rettelser ind</change>
+               <change who="HY" when="2013-03-22">f&#x00F8;rt KN's rettelser ind</change>
+               <change who="HY" when="2013-05-03">f&#x00F8;rt KN's rettelse af Kolderup fra pe939 til pe938 ind</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+               <change who="KN" when="2018-10-31">kodning ifm. com316 com215 tilpasset her og i tekstfilen.</change>
+            </revisionDesc>
+    </teiHeader>
+    <text type="com">
+        <body>
+         <note xml:id="com1" changes="corr">
+<!--Slettet readMore-->
+<!--lemma: Skolen for Livet-->
+            <p>Udtrykket stammer fra juristen <persName key="pe333">Tage Algreen-Ussing</persName>,
+               som  p&#x00E5; st&#x00E6;nderforsamlingsm&#x00F8;det i Roskilde 1. februar 1836
+               fremsatte forslag om realskoler med v&#x00E6;gt p&#x00E5; de levende sprog og de
+               matematisk-naturvidenskabelige fag &#x2013; retorisk kaldet &#x201C;Skolen for
+               Livet&#x201D;.</p> 
+         </note>
+         
+         <note xml:id="com2">
+<!--lemma: Soer-->
+            <p>arkaiserende for Sor&#x00F8;, som i de &#x00E6;ldste kilder ben&#x00E6;vnes Sor.</p>
+         </note>
+         
+         <note xml:id="com37">
+<!--lemma: borgerlig-->
+            <p>samfundsm&#x00E6;ssig.</p>
+         </note>
+         
+         <note xml:id="com4">
+<!--lemma: Historieskriver-->
+            <p>Grundtvig f&#x00F8;lte sig kaldet til at blande sig i
+               debatten i sin egenskab af historiker, ikke i sin egenskab af pr&#x00E6;st.</p>
+         </note>      
+         
+         <note xml:id="com5">
+<!--lemma: 
+		                Lyset og Livet er Tvillinger bolde,
+		                D&#x00C3;&#x00B8;den alene kan skille dem ad!
+		            -->
+            <p>de to f&#x00F8;rste vers i f&#x00F8;rste strofe af Grundtvigs <rs type="title" key="title57">
+<hi rend="italic">Sang-V&#x00E6;rk,</hi>
+</rs> 1, nr. 139.</p>
+         </note>
+         
+         <note xml:id="com6">
+<!--lemma: Wahlske Boghandel-->
+            <p>Den Wahlske Boghandel l&#x00E5; p&#x00E5; Ulfeltsplads (det nuv&#x00E6;rende
+               Gr&#x00E5;br&#x00F8;dretorv) 118, K&#x00F8;benhavn. Virksomheden omfattede desuden
+               bogbinderi og forlag. 1822-1841 ejedes den af <persName key="pe211">Jacob Frederik
+                  Milo</persName>, s&#x00F8;n af den kendte boghandler <persName key="pe213">Friedrich Wilhelm Milo</persName> fra Odense. Forlaget var grundtvigsk
+               pr&#x00E6;get.</p>
+         </note>
+         
+         <note xml:id="com302" changes="new">
+<!--lemma: de Faures-->
+         <p>de smukkes, kvindernes.</p>
+         </note>
+         
+         <note xml:id="com303" changes="new">
+<!--Os tryller-->
+         <p>som fortryller os.</p>
+         </note>
+         
+         <note xml:id="com216" changes="corr">
+<!--lemma: K&#x00E6;mpers-->
+            <p>heltes, krigeres.</p>
+         </note>
+         
+         <note xml:id="com304" changes="new">
+<!--lemma: Som-->
+         <p>her formentlig: eftersom.</p>
+         </note>
+         
+         <note xml:id="com300" changes="new">
+<!--lemma: og-->
+            <p>ogs&#x00E5;.</p>
+         </note>
+         
+         <note xml:id="com7" changes="corr">
+<!--lemma: Da trykke vi Langbeen Rise-->
+            <p>formentlig: da f&#x00E5;r vi magt over Langben Rise, en v&#x00E6;ldig k&#x00E6;mpe, kendt fra folkeviserne.</p>
+         </note>
+         
+         <note xml:id="com301" changes="new">
+<!--lemma: om Land-->
+            <p>trindt om land, rundt om i verden.</p>
+         </note>
+         
+         <note xml:id="com8">
+<!--lemma: I Piger smaa-->
+            <p>muligt citat fra Grundtvigs digt <rs key="title793" type="title">&#x201C;Ki&#x00E6;kheds Erindring, Willemoes&#x201D;</rs> (1810), hvis f&#x00F8;rste vers i f&#x00F8;rste strofe lyder: &#x201C;Kommer hid, I Piger smaa&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com204">
+<!--lemma: Agerende-->
+            <p>ordet deles: ager-ende; markens rand.</p>
+         </note>
+         
+         <note xml:id="com175">
+<!--lemma: B&#x00F8;r-->
+            <p>medvind.</p>
+         </note>
+         
+         <note xml:id="com305" changes="new">
+<!--lemma: Op det stande i Pigesang Hvad Godt der i Danmark d&#x00F8;de,-->
+            <p>dvs.: Lad alt det gode, der d&#x00F8;de i Danmark, genopst&#x00E5; i pigernes sang.</p>
+         </note>
+         
+         <note xml:id="com9">
+<!--lemma: Konge og Folk, F&#x00C3;&#x00A6;dreneland og Modersmaal-->
+            <p>Mellemrubrikkerne p&#x00E5; de to hovedafsnit i <hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk
+                     betragtet</rs>
+</hi> (1836) var hhv. &#x201C;Kongen og Folket&#x201D; og
+               &#x201C;F&#x00E6;derne-Landet og Moders-Maalet&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com10">
+<!--lemma: l&#x00C3;&#x00A6;st af Faa og &#x00C3;&#x00A6;ndset af endnu f&#x00C3;&#x00A6;rre-->
+            <p>Ved sin fremkomst blev <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+                     Fiir-Kl&#x00F8;ver</rs>
+</hi> stort set ikke bem&#x00E6;rket af offentligheden, og end
+               ikke Grundtvigs n&#x00E6;rmeste tilh&#x00E6;ngere forstod, at der her var lagt teoretisk grund
+               under en helt ny skoleform.</p>
+            <note type="readMore">
+               <p>Se herom indledning til <hi rend="italic">
+<rs type="title" key="title170">Det
+                        Danske Fiir-Kl&#x00F8;ver</rs>
+</hi>, afsnit 8.</p>
+            </note>
+         </note>
+         
+         <note xml:id="com11">
+<!--lemma: det Danske Firkl&#x00C3;&#x00B8;ver-->
+            <p>Dvs. &#x201C;<hi rend="italic">Konge</hi> og <hi rend="italic">Folk, F&#x00E6;dreneland</hi> og <hi rend="italic">Modersmaal</hi>&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com12">
+<!--lemma: Mistr&#x00F8;stning-->
+            <p>mangel p&#x00E5; fortr&#x00F8;stning.</p>
+         </note>
+         
+         <note xml:id="com13">
+<!--lemma: H&#x00F8;iskole-->
+            <p>universitet eller h&#x00F8;jere l&#x00E6;reanstalt.</p>
+         </note>
+         
+         <note xml:id="com205" changes="corr">
+<!--lemma: den Latinske-->
+            <p>den latinske h&#x00F8;jskole, dvs. universitetet.</p>
+         </note>
+         
+         <note xml:id="com14" changes="corr">
+<!--lemma: det fremmede, stive, tvungne og d&#x00F8;de Skolev&#x00E6;&#x00A6;sen fra Middelalderen,-->
+            <p>I middelalderen var alle danske skoleformers undervisningssprog latin. Undervisningen
+               omfattede oftest de syv &#x2018;frie kunster&#x2019; (lat.: artes liberales), som
+               opdeltes i trivium (trevejen): grammatik, dialektik og retorik, der l&#x00E6;rtes i
+               underskolerne, og i qvadrivium (firvejen): aritmetik, geometri, astronomi og musik,
+               der l&#x00E6;rtes i de h&#x00F8;jere skoler.</p>
+         </note>
+         
+         <note xml:id="com306">
+<!--lemma: h&#x00F8;ilovlige-->
+            <p>h&#x00F8;jst rosv&#x00E6;rdige.</p>
+         </note>
+         
+         <note xml:id="com17">
+<!--lemma: Almue-Skole-->
+            <p>1806-1899 betegnelse for den kommunale b&#x00F8;rneskole p&#x00E5; landet; i k&#x00F8;bst&#x00E6;derne
+               anvendtes betegnelsen borger- og almueskole.</p>
+         </note>
+         
+        
+         <note xml:id="com18">
+<!--lemma: Mulcterne-->
+            <p>de pengeb&#x00F8;der, som for&#x00E6;ldre til skulkende skoleb&#x00F8;rn kunne id&#x00F8;mmes i henhold til
+               skoleforordningen af 1814.</p>
+         </note>
+         
+         <note xml:id="com217">
+<!--lemma: al Tvangen-->
+            <p>Med skoleforordningen af 1814 indf&#x00F8;rtes der almindelig undervisningspligt med begr&#x00E6;nset adgang til, at hjemmet selv kunne st&#x00E5; for undervisningen. Dette opfattedes is&#x00E6;r af mange landboere som et statsligt overgreb, en indskr&#x00E6;nkning af for&#x00E6;ldremyndigheden og en &#x00F8;konomisk byrde, idet skolegangen indskr&#x00E6;nkede anvendelsen af b&#x00F8;rnearbejde i landbruget.</p>
+         </note>
+         
+         <note xml:id="com19">
+<!--lemma: Latin-Skolen-->
+            <p>skoleform som forberedte
+               til studentereksamen. </p>
+               <note type="readMore">
+<p>Latinskolen, der udsprang af middelalderens katolske kirke- og
+               klosterskoler, eksisterede fra Reformationen indtil 1903 og formidlede en kristen, klassisk p&#x00E5;virket undervisning. I perioden 1805-1809 blev
+               latinskolen omdannet til en bredere humanistisk forskole for embedsuddannelserne med
+               det form&#x00E5;l at forberede velbegavede 10-18-&#x00E5;rige drenge til universitetet. Latin,
+               gr&#x00E6;sk og religion var stadig hovedfagene, men hertil kom nu ogs&#x00E5; bl.a. dansk, tysk,
+               fransk, historie, geografi, matematik og om muligt naturl&#x00E6;re.</p>
+</note>
+         </note>
+         
+         <note xml:id="com20">
+<!--lemma: de D&#x00F8;de begrave deres D&#x00F8;de-->
+            <p>
+<rs key="Matt 8,22" type="bible">Matt 8,22</rs>, <rs type="bible" key="Luk 9,60">Luk 9,60</rs>.</p>
+         </note>
+         
+         <note xml:id="com21" changes="corr">
+<!--lemma: &#x2013; om Danebod at tale, Naar hun er i Dvale!-->
+            <p>&#x201C;Og om Dannebod end tale / Naar hun er i Dvale!&#x201D;, de sidste vers i Grundtvig: &#x201C;<rs type="title" key="title948">Thyre Dannebods Vise</rs>&#x201D;, 1816.</p>
+         </note>
+         
+         <note xml:id="com22" changes="corr">
+<!--lemma: Thyras Vise-->
+            <p>&#x201C;<rs key="title948" type="title">Thyre Dannebods Vise</rs>&#x201D; fra 1816 er Grundtvigs f&#x00F8;rste gendigtning af <persName key="pe221">Laurids O. Koks</persName>
+               <rs type="title" key="title77">
+<hi rend="italic">Dannevirkevisen</hi> eller &#x201C;Danmark
+                  deiligst vang og v&#x00E6;nge&#x201D;</rs> (trykt 1695; melodi af <persName key="pe222">P.E. Rasmussen</persName> 1811). Grundtvig udgav mellem 1816 og 1848
+               fire bearbejdelser af denne sang.</p>
+         </note>
+         
+         <note xml:id="com307" changes="new">
+<!-- lemma: alt -->
+         <p>allerede.</p>
+         </note>
+         
+         <note xml:id="com24" changes="corr">
+<!--lemma: menneskeki&#x00C3;&#x00A6;rlige-->
+            <p>filantropiske. N&#x00E5;r Grundtvig anvender betegnelsen
+               &#x2018;menneskek&#x00E6;rlige&#x2019; her, kan det skyldes (a) uvilje mod den
+               p&#x00E6;dagogiske retning filantropismen eller filantropinismen, eller (b) hans
+               m&#x00F8;de med den oldgr&#x00E6;ske salmedigtning i 1837 og dennes positive brug af
+               betegnelsen &#x201C;Menneske-Ven&#x201D;, gr.: philanthropos, om Jesus, jf. <hi rend="italic">
+<rs key="title280" type="title">Sang-V&#x00E6;rk 1</rs>,</hi> nr. 339.</p>
+         </note>
+         
+         <note xml:id="com25">
+<!--lemma: Nyaarstidens-->
+            <p>Begrebet &#x2018;nyt&#x00E5;r&#x2019; har for Grundtvig vide, symbolske betydninger, jf. titlerne p&#x00E5; <rs type="title" key="title102">
+<hi rend="italic">Nyaars-Morgen</hi>
+</rs> og en lang r&#x00E6;kke
+               andre skrifter hvori ordet indg&#x00E5;r: menneskelig, folkelig, national
+               og&#x002F;eller &#x00E5;ndelig genf&#x00F8;dsel, til dels i et tidsskifte, der if&#x00F8;lge Grundtvig
+               fandt sted omkring 1800.</p>
+         </note>
+         
+         <note xml:id="com26" changes="corr">
+<!--lemma: Drenge-Videnskabelighed-->
+            <p>En neds&#x00E6;ttende betegnelse, som Grundtvig havde dannet for en umoden og sn&#x00E6;vert fornuftsm&#x00E6;ssig forskning eller undervisning, f.eks. latinskolens udenadsl&#x00E6;re, som han fandt &#x00E5;ndl&#x00F8;s, unaturlig og skadelig; &#x201C;det vrange Begreb om Videnskabelighed som blot <hi rend="italic">L&#x00E6;sning, L&#x00E6;rdom og Boglig Konst</hi>&#x201D;, Grundtvig (1839) s. 38.</p>
+         </note>
+         
+         <note xml:id="com27">
+<!--lemma: det kun var Legemet, der sloges ihjel, kun vor aldeles ford&#x00C3;&#x00A6;rvede Natur, der mishandledes-->
+            <p>jf. generelt <rs type="bible" key="Rom 8">Rom 8</rs>; her ironisk polemik imod pietismen.</p>
+         </note>
+         
+         <note xml:id="com28">
+<!--lemma: vor Bog og Bibelsprog-->
+            <p>katekismus og skriftsteder.</p>
+         </note>
+         
+         <note xml:id="com29">
+<!--lemma: timelige-->
+            <p>som vedr&#x00F8;rer menneskenes jordiske tilv&#x00E6;relse, modsat det evige.</p>
+         </note>
+         
+         <note xml:id="com308" changes="new">
+<!-- lemma: vist nok -->
+         <p>ganske vist.</p>
+         </note>
+         
+         <note xml:id="com31">
+<!--lemma: Folke-Stemme-->
+            <p>de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet
+               st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne Slesvig og Holsten,
+               indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+         </note>
+         
+         <note xml:id="com32">
+<!--lemma: Roskild og Viborg-->
+            <p>de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) for &#x00F8;erne og for Jylland tr&#x00E5;dte sammen i hhv. Roskilde og Viborg. De tilsvarende provinsialst&#x00E6;nder for Slesvig og Holsten tr&#x00E5;dte sammen i hhv. Slesvig by og Itzehoe.</p>
+         </note>
+         
+         <note xml:id="com176" changes="corr">
+<!--lemma: beder om flere Skoler for D&#x00C3;&#x00B8;den,-->
+            <p>polemik imod de &#x00F8;nsker om offentlige realskoler, som i februar og april 1836 var blevet fremsat p&#x00E5; st&#x00E6;nderforsamlingerne i hhv. Roskilde og Viborg.</p>
+         </note>
+         
+         <note xml:id="com206">
+<!--lemma: &#x201C;Pagt med D&#x00F8;den&#x201D;-->
+            <p>
+<rs type="bible" key="Es 28,18">Es 28,18</rs>.</p>
+         </note>
+         
+         <note xml:id="com207">
+<!--lemma: &#x201C;Livets trange Vei,&#x201D;-->
+            <p>
+<rs type="bible" key="Matt 7,14">Matt 7,14</rs>.</p>
+         </note>
+         
+         <note xml:id="com33" changes="corr">
+<!--lemma: Krebs-Gang-->
+            <p>bagl&#x00E6;ns gang; forv&#x00E6;rring. Jf. 2. strofe, 6. vers af Grundtvigs salme (1836) &#x201C;Har Haand du lagt paa Herrens Plov&#x201D; i: <rs type="title" key="title67">
+<hi rend="italic">Sang-V&#x00E6;rk,</hi>
+</rs> 3, nr. 128: &#x201C;Al Krebs-Gang er kun D&#x00F8;dens Vei!&#x201D;</p>
+         </note>
+         
+         <note xml:id="com309" changes="new">
+<!-- lemma: den honette Ambition -->
+            <p>talem&#x00E5;de, dannet efter titlen p&#x00E5; en af <persName key="pe172">Ludvig Holbergs</persName> komedier (1723): str&#x00E6;ben efter at virke finere, end man er.</p>
+         </note>
+         
+         <note xml:id="com34">
+<!--lemma: Billighed-->
+            <p>rimelighed.</p>
+         </note>
+         
+         <note xml:id="com177">
+<!--lemma: Borgen-->
+            <p>sikkerhed, garanti.</p>
+         </note>
+         
+         <note xml:id="com208" changes="corr">
+<!--lemma: som de Nordamerikanske, maatte udvandre for at finde L&#x00E6;sere-->
+            <p>mulig hentydning til polemikken omkring den amerikanske digter <persName key="pe968">J.F. Cooper</persName>. Han opholdt sig i Europa 1826-1833 som amerikansk konsul i Lyon; efter sin hjemvenden til USA blev han og andre amerikanske digtere kritiseret for upatriotisk at s&#x00F8;ge popularitet i Europa.</p>
+         </note>
+         
+         <note xml:id="com35" changes="corr">
+<!--lemma: Sagam&#x00C3;&#x00A6;ndene-->
+            <p>(arkaiserende) historiefort&#x00E6;llerne.</p>
+         </note>
+         
+         <note xml:id="com36">
+<!--lemma: folkelig-->
+            <p>national. </p>
+               <note type="readMore">
+<p>Om Grundtvigs positive, inkluderende syn p&#x00E5; &#x2018;folkelighed&#x2019; og &#x2018;det
+               folkelige&#x2019;, se f.eks. <persName key="pe384">K.E. Bugge</persName>: <rs type="title" key="title663">&#x201C;Grundtvigs syn p&#x00E5; folkelig dannelse &#x2013; dets muligheder f&#x00F8;r
+                  og nu&#x201D;</rs> (1993), s. 22-26 eller <persName key="pe52">Flemming
+                     Lundgreen-Nielsen</persName>: &#x201C;Grundtvig og danskhed&#x201D; (1992).</p>
+</note>
+         </note>
+         
+         <note xml:id="com39">
+<!--lemma: bands&#x00C3;&#x00A6;tte-->
+            <p>s&#x00E6;tte eller lyse i band; forbande.</p>
+         </note>
+         
+         <note xml:id="com40">
+<!--lemma: det kun var Borger-Skolen, Man i Roskild og Viborg savnede-->
+             <p>P&#x00E5; st&#x00E6;nderforsamlingerne for &#x00F8;erne (i Roskilde) og for Jylland (i Viborg) i hhv. februar og april 1836 vedtoges der petitioner, dvs. b&#x00F8;nskrifter til kongen, om styrkelse af realskoleundervisningen i byerne.</p>
+         </note>
+         
+         <note xml:id="com178">
+<!--lemma: blive hjemme i-->
+            <p>blive fortrolig med.</p>
+         </note>
+         
+         <note xml:id="com41" changes="corr">
+<!--lemma: de Gamle-->
+            <p>de klassiske latinske (og gr&#x00E6;ske) forfattere.</p>
+         </note>
+         
+         <note xml:id="com42">
+<!--lemma: Enkelt-Mandens-->
+            <p>individet.</p>
+         </note>
+         
+         <note xml:id="com43">
+<!--lemma: L&#x00C3;&#x00A6;rd Republik-->
+            <p>et samfund af l&#x00E6;rde, f.eks. et universitet.</p>
+         </note>
+         
+         <note xml:id="com218">
+<!--lemma: den Ahnelse, at Mathematiken kan gi&#x00F8;re Mirakler til at forbedre og for&#x00E6;dle alle Borgerlige Sysler-->
+            <p>polemik imod de &#x00F8;nsker om realskoler med v&#x00E6;gt p&#x00E5; de levende sprog og de matematisk-naturvidenskabelige fag, der var blevet fremsat ved st&#x00E6;nderforsamlingerne i Roskilde og Viborg i 1836.</p>
+         </note>
+         
+         <note xml:id="com44">
+<!--lemma: i deres Slags-->
+            <p>p&#x00E5; deres omr&#x00E5;der, i deres fag.</p>
+         </note>
+         
+         <note xml:id="com45">
+<!--lemma: Latinske Stile-->
+            <p>skriftlig overs&#x00E6;ttelse fra dansk til latin, som var en hoveddisciplin i latinskolernes pensum.</p>
+         </note>
+         
+         <note xml:id="com179">
+<!--lemma: Practisk-->
+            <p>den form for filosofi, der i mods&#x00E6;tning til teoretisk filosofi besk&#x00E6;ftiger sig med menneskelige handlinger og vurderinger, dvs. moralfilosofi, politisk filosofi og &#x00E6;stetik.</p>
+         </note>
+         
+         <note xml:id="com180" changes="corr">
+<!--lemma: Speculativ Philosophi-->
+            <p>fors&#x00F8;g p&#x00E5; indsigt i den &#x2018;h&#x00F8;jeste sandhed&#x2019; gennem en t&#x00E6;nkning, uafh&#x00E6;ngig
+               af erfaringen. Begrebet fandt s&#x00E6;rlig anvendelse i den tyske romantik, specielt hos
+                  <persName key="pe54">F.W.J. Schelling</persName>, hvor den &#x2018;h&#x00F8;jere&#x2019;
+               erkendelse var lig med den kunstneriske intuition. Her m&#x00E5;ske hentydning til tysk
+               romantisk filosofi i almindelighed.</p>
+         </note>
+         
+         <note xml:id="com46">
+<!--lemma: Romer-Retten-->
+            <p>(lat. ius romanum) et retssystem, som stammer fra det antikke romerrige. Som grundlag for det juridiske studium og for den retsvidenskabelige metode har romerretten spillet en afg&#x00F8;rende rolle over det meste af Europa. Ved K&#x00F8;benhavns Universitet var der siden reformationen et professorat i romerret.</p>
+               <note type="readMore">
+                  <p>Om romerrettens status i dansk ret efter indf&#x00F8;relsen af en juridisk embedseksamen i 1736, se <hi rend="italic">
+<rs key="title113" type="title">K&#x00F8;benhavns Universitet 1479-1979</rs>
+</hi> (2001), 6.1, s. 72-73.</p>
+</note>
+         </note>
+         
+         <note xml:id="com47">
+<!--lemma: ki&#x00C3;&#x00A6;r ad-->
+            <p>glad for, indtaget i.</p>
+         </note>
+         
+         <note xml:id="com48">
+<!--lemma: Borger-Liv-->
+            <p>samfundsliv.</p>
+         </note>
+         
+         <note xml:id="com49" changes="corr">
+<!--lemma: opposita juxta posita magis illucescunt-->
+            <p>(lat.) egl. &#x2018;opposita juxta se posita magis illucescunt&#x2019;, modsatte ting bliver
+               tydeligere, n&#x00E5;r de stilles ved siden af hinanden. Alm. l&#x00E6;res&#x00E6;tning fra den klassiske
+               retorik og fra middelalderens skolastiske filosofi og teologi.</p>
+         </note>
+         
+         <note xml:id="com50">
+<!--lemma: Slumpelykken-->
+            <p>heldet, tilf&#x00E6;ldet.</p>
+         </note>
+         
+         <note xml:id="com51">
+<!--lemma: Appiske-->
+            <p>hentydning til den ber&#x00F8;mteste af de romerske veje, Via Appia, der fra Rom f&#x00F8;rer mod syd.</p>
+         </note>
+        
+         <note xml:id="com181">
+<!--lemma: med de Bedste-->
+            <p>ligesom de bedste, de kyndigste p&#x00E5; omr&#x00E5;det.</p>
+         </note>
+         
+         <note xml:id="com52">
+<!--lemma: Sammes Grundsprog-->
+            <p>hebraisk (GT) og gr&#x00E6;sk (NT).</p>
+         </note>
+         
+         <note xml:id="com53" changes="corr">
+<!--lemma: den Latinske Kirke og Pave-Retten i fire-->
+            <p>Kirkelig eller kanonisk ret spillede en vigtig rolle for udviklingen af dansk ret fra slutningen af
+               1100-tallet. Grundtvig regner frem til Reformationen i 1500-tallet.</p>
+               <note type="readMore">
+<p>Kanonisk ret var g&#x00E6;ldende i s&#x00E5;kaldt &#x00E5;ndelige sager, causae spirituales, f&#x00F8;rst og fremmest
+                  &#x00E6;gteskabssager, men samtidig udgik der fra den kirkelige ret vigtige p&#x00E5;virkninger
+                  af den verdslige ret. Inden for strafferetten var kanonisk ret medvirkende til
+                  anerkendelse af et skyldprincip. Kirkelige domstole og kirkelige straffe spillede
+                  en vigtig rolle ved siden af det verdslige domstols- og tvangsfuldbyrdelsessystem,
+                  og kirken kendte andre former for straf, bl.a. kirkelig bod og som et yderste
+                  magtmiddel bandlysning eller trussel herom. For dansk &#x00E6;gteskabsret fik kanonisk
+                  ret stor betydning ved at fastsl&#x00E5;, at der til et gyldigt &#x00E6;gteskab kr&#x00E6;ves begge
+                  parters samtykke; for&#x00E6;ldre eller andre kunne ikke indg&#x00E5; &#x00E6;gteskab p&#x00E5; b&#x00F8;rns
+                  eller sl&#x00E6;gtninges vegne. Vigtig var ogs&#x00E5; den if&#x00F8;lge kanonisk ret g&#x00E6;ldende
+                  grunds&#x00E6;tning om &#x00E6;gteskabets uopl&#x00F8;selighed. </p>
+</note>
+         </note>
+         
+         <note xml:id="com55" changes="corr">
+<!--lemma: F&#x00C3;&#x00A6;stere-->
+            <p>b&#x00F8;nder, som har f&#x00E5;et livslang brugsret til en ejendom eller et jordstykke mod en fastsat modydelse.</p>
+         </note>
+         
+         <note xml:id="com56" changes="corr">
+<!--lemma: Selveiere-->
+            <p>personer, som selv ejer de landbrugsejendomme, de driver. </p>
+         </note>
+         
+         <note xml:id="com57">
+<!--lemma: til Tops-->
+            <p>underforst&#x00E5;et: i en skibsmast.</p>
+         </note>
+         
+         <note xml:id="com58">
+<!--lemma: Kramboden-->
+            <p>butikken.</p>
+         </note>
+         
+         
+         <note xml:id="com182" changes="corr">
+<!--lemma: trods-->
+            <p>(mindst) lige s&#x00E5; godt; mere end.</p>
+         </note>
+         
+         <note xml:id="com209" changes="corr">
+<!--lemma: H&#x00F8;ielofte-->
+            <p>(folkevisestil) de fornemste sale i en borg; kongens sale; h&#x00F8;jsale.</p>
+         </note>
+        
+         
+         
+         <note xml:id="com59">
+<!--lemma: 1660-->
+            <p>det &#x00E5;r, hvor enev&#x00E6;lden indf&#x00F8;rtes i Danmark.</p>
+         </note>
+         
+         <note xml:id="com60">
+<!--lemma: Huusmands-S&#x00F8;nnen fra Fyen-->
+            <p>
+<persName key="pe50">Rasmus Rask</persName> blev f&#x00F8;dt i landsbyen Br&#x00E6;ndekilde SV for Odense; hans far var skr&#x00E6;dder, ikke husmand.</p>
+         </note>
+         
+         <note xml:id="com61">
+<!--lemma: Grammatiker-->
+            <p>
+<persName key="pe50">Rasmus Rask</persName> skrev adskillige grammatikker og arbejdede med sammenlignende fonologi og morfologi. Han tog p&#x00E5; forskerrejse til Island og udgav den f&#x00F8;rste islandske grammatik. Han foretog desuden en efter datidens m&#x00E5;lestok storstilet rejse gennem Rusland til Indien for at studere og sammenligne sprog. </p>
+         </note>
+         
+         <note xml:id="com62" changes="corr">
+<!--lemma: Folkelighed-->
+            <p>(her) k&#x00E6;rlighed til folket. </p>
+            <note type="readMore">
+<p>Om Grundtvigs positive, inkluderende syn p&#x00E5; &#x2018;folkelighed&#x2019; og &#x2018;det
+               folkelige&#x2019;, se f.eks. <persName key="pe384">K.E. Bugge</persName>: <rs type="title" key="title663">&#x201C;Grundtvigs syn p&#x00E5; folkelig dannelse &#x2013; dets muligheder f&#x00F8;r
+                  og nu&#x201D;</rs> (1993), s. 22-26 eller <persName key="pe52">Flemming
+                     Lundgreen-Nielsen</persName>: &#x201C;Grundtvig og danskhed&#x201D; (1992).</p>
+</note>
+         </note>
+         
+         <note xml:id="com63" changes="corr">
+<!--lemma: S&#x00C3;&#x00A6;llands og Jyllands gamle Hovedst&#x00C3;&#x00A6;der-->
+            <p>Roskilde var indtil 1443 rigets hovedstad i den forstand, at den var kongens hjemby. I den tidlige middelalder blev Viborg hjemsted for Landstinget for N&#x00F8;rrejylland, hvor flere kongevalg og kongehyldninger fandt sted frem til enev&#x00E6;ldens indf&#x00F8;relse i 1660.
+            </p>
+         </note>
+         
+         <note xml:id="com64" changes="corr">
+<!--lemma: B&#x00C3;&#x00B8;nnen om en Folke og Borger-Skole for Livet - den Skole-Plan for Livet, der synes at have Folke-Stemmen for sig-->
+            <p>Juristen <persName key="pe333">Tage Algreen-Ussing</persName>
+               fremsatte  p&#x00E5; de r&#x00E5;dgivende st&#x00E6;nders f&#x00F8;rste samling i Roskilde februar 1836
+                forslag om realskoler med v&#x00E6;gt p&#x00E5; de levende sprog, is&#x00E6;r tysk, og de
+               matematisk-naturvidenskabelige fag &#x2013; retorisk kaldet &#x201C;Skolen for
+               Livet&#x201D;. Tilsvarende forslag fremsattes p&#x00E5; st&#x00E6;nderforsamlingsm&#x00F8;det i Viborg april samme &#x00E5;r; forslagene vedtoges med stort flertal.</p>
+         </note>
+         
+         <note xml:id="com65">
+<!--lemma: Guld-Hatten-->
+            <p>(her) kongekronen.</p>
+         </note>
+         
+         <note xml:id="com200" changes="corr">
+<!-- vil give Fienden vundet -->
+            <p>vil give fortabt overfor fjenden.</p>
+         </note>
+         
+         
+         <note xml:id="com86">
+<!--lemma: ene Forn&#x00C3;&#x00B8;dne-->
+            <p>Luk 10,42.</p>
+         </note>
+         
+         <note xml:id="com183">
+<!--lemma: troeste-->
+            <p>mest trofaste, hengivne.</p>
+         </note>
+         
+         <note xml:id="com66">
+<!--lemma: at et Folks Lykke ingenlunde, som hardtad alle de Fremmede mene, beroer paa at de er deres egne Lovgivere,-->
+            <p>polemik mod de liberale krav om, at den lovgivende magt skulle ligge i et folkevalgt parlament.</p>
+         </note>
+         
+         <note xml:id="com67" changes="corr">
+<!--lemma: billig og kvemmelig-->
+            <p>rimelig og bekvem, dvs. passende; af fortalen til <hi rend="italic">
+<rs key="title1188" type="title">Den jyske Lov</rs>
+</hi> (1933-udgaven), s. 2 f.</p>
+         </note>
+                  
+         <note xml:id="com69">
+<!--lemma: Folket i dybeste F&#x00C3;&#x00B8;lelse deraf h&#x00C3;&#x00B8;itidelig overdrog Kongen uindskr&#x00C3;&#x00A6;nket Enevoldsmagt-->
+            <p>Efter forhandlinger mellem kongemagten, borgerne og gejstligheden i
+               K&#x00F8;benhavn blev <persName key="pe496">Frederik 3.</persName> i 1660 tilbudt
+               Danmark-Norge som enev&#x00E6;ldigt arverige i stedet for som hidtil et valgrige under h&#x00F8;jadelens kontrol.</p>
+         </note>
+         
+         <note xml:id="com70">
+<!--lemma: frivillig-->
+            
+            <p>Udenrigspolitiske hensyn havde spillet ind p&#x00E5; <persName key="pe96">Frederik 6.s</persName> beslutning om at oprette r&#x00E5;dgivende st&#x00E6;nderforsamlinger. Som medlem af Det Tyske Forbund var Holsten, hvor <persName key="pe96">Frederik 6.</persName>
+               var hertug, i 1815 blevet stillet en st&#x00E6;nderforfatning efter preussisk forbillede i udsigt, og under indtryk af Julirevolutionen i Frankrig 1830 blev der nu i begge hertugd&#x00F8;mmer stillet krav herom. For at indfri sin forpligtelse over for Holsten og samtidig fastholde rigets enhed besluttede kongen i 1831 at indf&#x00F8;re
+               r&#x00E5;dgivende st&#x00E6;nderforsamlinger ikke blot for Holsten, men ogs&#x00E5; for hertugd&#x00F8;mmet Slesvig og for selve konged&#x00F8;mmet: 
+                        Jylland og &#x00F8;erne. </p>
+            <note type="readMore">
+<p>Om disse udenrigspolitiske aspekter, se indledningen til
+               Grundtvigs p&#x00E6;dagogiske og politiske skrifter i
+               <rs type="title" key="title519">
+<hi rend="italic">Schriften in Auswahl</hi>
+</rs>
+               (2010), s. 367-370.</p>
+</note>
+         </note>
+         
+         <note xml:id="com71" changes="corr">
+<!--lemma: Huuslig-->
+            <p>privat, individuel.</p>
+         </note>
+         
+         <note xml:id="com310" changes="new">
+<!-- uskattterlig -->
+         <p>uvurderlig, fremragende.</p>
+         </note>
+         
+         <note xml:id="com73" changes="corr">
+<!--lemma: den Borgerlige Drenge-Skole, ligesaa str&#x00C3;&#x00A6;ngt videnskabelig baseret paa Mathematiken, som Latin-Skolen paa de d&#x00C3;&#x00B8;de Sprog,-->
+            <p>De forslag om realskoler, der vedtoges p&#x00E5; st&#x00E6;nderforsamlingerne i Roskilde og Viborg i for&#x00E5;ret 1836, betonede i almindelighed n&#x00F8;dvendigheden af undervisning i de levende sprog samt de matematisk-naturvidenskabelige fag og anbefalede oprettelsen af &#x2018;h&#x00F8;jere realskoler&#x2019;. P&#x00E5; den baggrund fremlagdes 1837 en bet&#x00E6;nkning om en statslig videnskabelig realskole p&#x00E5; samme faglige niveau og af samme varighed som den l&#x00E6;rde skole, en plan som dog kun blev realiseret p&#x00E5; fors&#x00F8;gsbasis i Aarhus 1839-1853 og i Helsing&#x00F8;r fra 1843. Grundtvig hentyder sandsynligvis til denne bet&#x00E6;nkning og den forudg&#x00E5;ende debat p&#x00E5; st&#x00E6;nderforsamlingerne.</p>
+            <note type="readMore">
+<p>Tilsvarende fremlagde den anonyme skribent ABH samme &#x00E5;r forslag om en f&#x00E6;lles grundskole til det 12. &#x00E5;r, hvorefter man gik i den l&#x00E6;rde skole eller i realskolen til det 17. &#x00E5;r. Se <persName key="pe902">Chr. Larsen</persName> (red.): <hi rend="italic">
+<rs key="title1189" type="title">Realskolen gennem 200 &#x00E5;r</rs>,</hi> 1, s. 85 samt 2, s. 131-134 og 155.</p>
+</note>
+         </note>
+         
+         <note xml:id="com74">
+<!--lemma: h&#x00C3;&#x00B8;ir&#x00C3;&#x00B8;stet anpriist af vor Folke-Stemme, som den Skole for Livet, vi beh&#x00C3;&#x00B8;vede-->
+            <p>St&#x00E6;nderforsamlingsm&#x00F8;derne i Roskilde februar 1836 og i Viborg april 1836 vedtog med stort flertal
+               forslag om oprettelse af offentlige realskoler.</p>
+         </note>
+        
+         <note xml:id="com195" changes="corr">
+<!--lemma: har seet baade Virksomheden og Velstanden aftage-->
+            <p>Den industrielle revolution og handelen var i Det tyske Forbund h&#x00E6;mmet af indre toldgr&#x00E6;nser. P&#x00E5; preussisk initiativ oprettedes derfor i 1834 en toldunion best&#x00E5;ende af 34 tyske stater. Den &#x00F8;konomiske udvikling forl&#x00F8;b dog stadig relativt langsommere i Det tyske Forbund end i Storbritannien og andre store industrinationer.
+            </p>
+         </note>
+         
+         <note xml:id="com196">
+<!--lemma: visse Levebr&#x00C3;&#x00B8;d-->
+            <p>sikre indt&#x00E6;gter.</p>
+         </note>
+         
+         <note xml:id="com75">
+<!--lemma: letnemmere-->
+            <p>mere l&#x00E6;renem.</p>
+         </note>
+         
+         <note xml:id="com76">
+<!--lemma: Fortunatus-Pungen-->
+            <p>lykkepung, som aldrig t&#x00F8;mmes.</p>
+         </note>
+         
+         <note xml:id="com77">
+<!--lemma: de Vises Steen-->
+            <p>i alkymien et stof med magiske kr&#x00E6;fter, f.eks. evnen til at forvandle u&#x00E6;dle metaller til guld; (overf&#x00F8;rt) den rette eller geniale l&#x00F8;sning p&#x00E5; et givet problem.</p>
+         </note>
+         
+         <note xml:id="com78">
+<!--lemma: Gl&#x00C3;&#x00A6;dens Kilde-->
+            <p>sandsynligvis billede p&#x00E5; <persName key="pe45">Jesu</persName> ord, jf. <rs key="Joh 4,13-15" type="bible">Joh 4,13-15</rs>. Jf. ogs&#x00E5; <rs type="bible" key="Es 12,3">Es 12,3</rs>.</p>
+         </note>
+        
+         <note xml:id="com184">
+<!--lemma: S&#x00F8;nnerne af alle vore Ki&#x00F8;bst&#x00E6;d-Folk, medens paa Landet endda det Brede blev tilbage-->
+            <p>Realskoler var t&#x00E6;nkt som skoler for drenge fra k&#x00F8;bst&#x00E6;dernes middelklasse. &#x2018;Det brede&#x2019;: de brede lag, det brede folk.</p>
+         </note>
+         
+         <note xml:id="com80">
+<!--lemma: Regninger-->
+            <p>beregninger.</p>
+         </note>
+         
+         <note xml:id="com81">
+<!--lemma: Demonstrationer-->
+            <p>(matematiske) bevisf&#x00F8;relser.</p>
+         </note>
+         
+         <note xml:id="com38">
+<!--lemma: det Borgerlige Selskab-->
+            <p>samfundet.</p>
+         </note>
+         
+         <note xml:id="com82">
+<!--lemma: &#x00C3;&#x00A6;de sit Br&#x00C3;&#x00B8;d i sit Ansigts Sveed-->
+            <p>1 Mos 3,19.</p>
+         </note>
+         
+         <note xml:id="com85" changes="corr">
+<!--lemma: Republik-->
+            <p>Grundtvig ejede en tysk overs&#x00E6;ttelse fra 1799 af <persName key="pe622">Platons</persName>
+               <rs key="title789" type="title">
+<hi rend="italic">Staten</hi>
+</rs> med
+               hovedtitlen <hi rend="italic">
+<rs type="title" key="title1184">Platons
+                  Republik</rs>,</hi> Bogfortegnelse 1839, nr. 2.063; ordet &#x2018;republik&#x2019; kunne p&#x00E5; b&#x00E5;de dansk og tysk betyde &#x2018;stat&#x2019;, &#x2018;statssamfund&#x2019; og &#x2018;samfund&#x2019; i almindelighed.</p>
+         </note>
+         
+         <note xml:id="com197">
+<!--lemma: hvor Frihedens og Dannelsens Vogtere-->
+            <p>
+               <persName key="pe622">Platon</persName> inddeler i <rs key="title789" type="title">
+<hi rend="italic">Staten</hi>
+</rs> sit idealsamfunds borgere i tre klasser:
+               1) Producenterne, som skal arbejde, udvise m&#x00E5;dehold og overlade samfundets
+               forsvar og ledelse til de h&#x00F8;jere klasser. 2) Vogterne, som er byens soldater og b&#x00F8;r
+               udvise m&#x00E5;dehold og mod. 3) Filosofferne, som er samfundets regenter og b&#x00F8;r udvise
+               b&#x00E5;de m&#x00E5;dehold, mod og visdom. </p>
+         </note>
+         
+         <note xml:id="com84">
+<!--lemma: Skyggen-->
+            <p>ironisk hentydning til <persName key="pe622">Platons</persName> hulebillede.</p>
+         </note>
+         
+         <note xml:id="com87" changes="corr">
+<!--lemma: Ja, Brage
+                        B&#x00C3;&#x00A6;nkepryder!
+                    Jeg &#x00C3;&#x00B8;iner dig i Soer.-->
+            <p>af Grundtvigs digt <rs type="title" key="title482">&#x201C;Gylden-Aaret&#x201D;</rs>, strofe 44, i <rs key="title458" type="title">
+<hi rend="italic">Nordisk Kirke-Tidende</hi>
+</rs> nr. 4, 1834.</p>
+         </note>
+         
+         <note xml:id="com88">
+<!--lemma: B&#x00C3;&#x00A6;nkepryder-->
+            <p>&#x2018;B&#x00E6;nkepryder&#x2019; bruges normalt som &#x00F8;genavn om den, der kun duer til at sidde til pynt. Som spottende tilnavn til <rs key="myth8" type="myth">Brage</rs> bruges det af <rs key="myth48" type="myth">Loke</rs> i eddadigtet <hi rend="italic">Lokasenna</hi> eller <rs type="title" key="title139">
+<hi rend="italic">&#x00C6;girs G&#x00E6;stebud</hi>
+</rs>. Grundtvig benytter ikke navnet i neds&#x00E6;ttende betydning.</p>
+         </note>
+         
+         <note xml:id="com89">
+<!--lemma: tjent en T&#x00C3;&#x00B8;nde Guld,-->
+            <p>
+<persName key="pe172">Ludvig Holberg</persName> var en dygtig &#x00F8;konom og opbyggede gennem &#x00E5;rene en st&#x00F8;rre formue, prim&#x00E6;rt ved sit forfatterskab.</p>
+         </note>
+         
+         <note xml:id="com311" changes="new">
+<!--lemma: vist nok -->
+         <p>bestemt, med sikkerhed.</p>
+         </note>
+         
+         <note xml:id="com91">
+<!--lemma: i &#x00E2;&#x20AC;&#x0153;Papir&#x00E2;&#x20AC;&#x009D;-->
+            <p>
+<persName key="pe739">Walter Scott</persName> tjente en formue p&#x00E5; sit forfatterskab, men mistede den, da et trykkeri, han havde investeret i, gik fallit som f&#x00F8;lge af en bankkrise 1825-1826. Herefter besluttede <persName key="pe739">Scott</persName> at afvise tilbudt hj&#x00E6;lp og i stedet arbejde sig ud af miseren ved personligt at betale trykkeriets g&#x00E6;ld med de kommende indt&#x00E6;gter fra sit forfatterskab.</p>
+         </note>
+         
+         <note xml:id="com92">
+<!--lemma: spille af-->
+            <p>indvinde et tab.</p>
+         </note>
+         
+         <note xml:id="com312" changes="new">
+<!-- lemma: gabende -->
+            <p>m&#x00E5;bende.</p>
+         </note>
+         
+         <note xml:id="com93">
+<!--lemma: for&#x00C3;&#x00A6;re Pengene til Academiet i Soer,-->
+            <p>
+<persName key="pe172">Ludvig Holberg</persName> bestemte i 1747, at hans formue skulle tilfalde Sor&#x00F8; Akademi.</p>
+         </note>
+         
+         <note xml:id="com94">
+<!--lemma: Han, som
+                        reddede Danmark
+                        fra Slaverne-->
+            <p>
+<persName key="pe223">Absalon</persName> nedk&#x00E6;mpede if. sidste bog af <persName key="pe237">Saxos</persName> <rs key="title83" type="title">
+<hi rend="italic">Gesta Danorum</hi>
+</rs> det vestslaviske folkeslag venderne.</p>
+         </note>
+         
+         <note xml:id="com95">
+<!--lemma: gamle Helte fra Glemsel-->
+            <p>
+<persName key="pe223">Absalon</persName> befalede munken <persName key="pe237">Saxo</persName> at skrive <rs key="title83" type="title">
+<hi rend="italic">Gesta Danorum.</hi>
+</rs>
+</p>
+         </note>
+         
+         <note xml:id="com96">
+<!--lemma: Axel hviler sine Been-->
+            <p>
+<persName key="pe223">Absalon</persName> ligger begravet i Sor&#x00F8; Kirke.</p>
+         </note>
+         
+         <note xml:id="com97">
+<!--lemma: grundede Klostret-->
+            <p>1162 lod <persName key="pe223">Absalon</persName> sin families benediktinerkloster i Sor&#x00F8; omdanne til en cistercienserstiftelse. Kirken var opf&#x00F8;rt som den magtfulde Hvide-sl&#x00E6;gts gravkirke og blev fra 1300-tallet ogs&#x00E5; kongelig gravkirke. </p>
+               <note type="readMore">
+                  <p>Foruden <persName key="pe223">Absalon</persName> ligger bl.a. hans farfar <persName key="pe224">Skjalm Hvide</persName>, hans for&#x00E6;ldre <persName key="pe225">Asser Rig</persName> og <persName key="pe226">Inge Eriksdatter</persName> samt hans bror <persName key="pe227">Esbern Snare</persName> begravet her. Desuden kongerne <persName key="pe228">Christoffer 2.</persName>, <persName key="pe220">Valdemar 4. Atterdag</persName> og <persName key="pe229">Oluf 2.</persName>
+</p>
+</note>
+         </note>
+         
+         <note xml:id="com313" changes="new">
+<!--lemma: H&#x00F8;ilovlig Ihukommelse-->
+            <p>formelsprog ved omtale af afd&#x00F8;de konger: Hans minde v&#x00E6;re i h&#x00F8;j grad priset.</p>
+         </note>
+         
+         <note xml:id="com210">
+<!--lemma: den gamle Biskop-->
+            <p>
+<persName key="pe223">Absalon</persName>.</p>
+         </note>
+         
+         <note xml:id="com98">
+<!--lemma: grundede et &#x00E2;&#x20AC;&#x0153;Ridderligt Academi&#x00E2;&#x20AC;&#x009D;-->
+            <p>I tilknytning til Sor&#x00F8; Skole for adelige og borgerlige drenge, som var oprettet 1586 af <persName key="pe230">Frederik 2.</persName>, grundlagde <persName key="pe231">Christian
+               4.</persName> i 1623 et ridderakademi (et akademi for adelens unge s&#x00F8;nner), som
+               senere blev udvidet til reelt at v&#x00E6;re et nyt universitet, der eksisterede i
+               ca. 20 &#x00E5;r. Pga. den svenske h&#x00E6;rs h&#x00E6;rgen og plyndren 1658-1660
+               blev ridderakademiet imidlertid ruineret og nedlagdes <hi rend="italic">de facto</hi>
+               i 1665, mens skolen fortsatte til 1737.</p>
+         </note>
+         
+         <note xml:id="com99">
+<!--lemma: trods Romervagten, staae herlig
+                        op, saasnart Kongen
+                        udsender en Tjener til at v&#x00C3;&#x00A6;lte Stenen fra-->
+            <p>jf. <rs key="Matt 28,1-2" type="bible">Matt 28,1-2</rs>, <rs type="bible" key="Mark 16,3-4">Mark 16,3-4</rs> og <rs key="Luk 24,2-3" type="bible">Luk 24,2-3</rs>.</p>
+         </note>
+         
+         <note xml:id="com100" changes="corr">
+<!--lemma: Badens
+                        Latinske
+                            Grammatik-->
+            <p>
+<persName key="pe10">Jacob Badens</persName> 356 sider lange <rs key="title791" type="title">
+<hi rend="italic">Grammatica Latina, det er Anviisning til det latinske Sprog, udgivet til Skolernes Brug i Dannemark og Norge</hi>
+</rs> (1782 med f&#x00F8;lgende oplag og udgaver), var den ener&#x00E5;dende latinske grammatik i de danske latinskoler frem til 1840. Grundtvig ejede v&#x00E6;rket i en udgave fra 1812, Bogfortegnelse 1839 nr. 2.170.</p>
+         </note>
+         
+         <note xml:id="com101">
+<!--lemma: for 70 Aar
+                        siden stod i sin feireste Ungdoms-Blomster, fik saa hastig en D&#x00C3;&#x00B8;d-->
+            <p>Efter at have ligget stille siden 1665 reorganiseredes akademiet fra 1747 og fik fremragende l&#x00E6;rere. Pga. mangel p&#x00E5; studerende sygnede det imidlertid hen i begyndelsen af 1790'erne og genopstod f&#x00F8;rst i 1826.</p>
+         </note>
+         
+         <note xml:id="com102" changes="corr">
+<!--lemma: det Latinske
+                                Universitets Misundelse-->
+            <p>Der bestod historisk ikke noget hjerteligt forhold mellem K&#x00F8;benhavns Universitet og Sor&#x00F8; Akademi, idet universitetet betragtet akademiet dels som en konkurrent, dels som en opkomling. K&#x00F8;benhavns Universitet var grundlagt i 1479 og havde ogs&#x00E5; efter reformationen pr&#x00E6;steuddannelse som sin hovedopgave. Hverken ren&#x00E6;ssancehumanismen i 1500-1600-tallet, den naturvidenskabelige revolution i 1600-1700-tallet eller oplysningst&#x00E6;nkningen havde nogen s&#x00E6;rlig forbindelse med K&#x00F8;benhavns Universitet, hvorimod oplysningst&#x00E6;nkningen blev institutionaliseret med genoprettelsen af Sor&#x00F8; Akademi i 1747. 
+            </p>
+               <note type="readMore">
+                  <p>Karakteristisk for mods&#x00E6;tningsforholdet i nyere tid er det, at da <persName key="pe96">Frederik 6.</persName> ved festen i 1827 for Sor&#x00F8; Akademis genindvielse tildelte
+                     akademiets lektorer rang af titul&#x00E6;re professorer, ville Universitetsdirektionen, som var den f&#x00E6;lles overstyrelse for K&#x00F8;benhavns Universitet, Sor&#x00F8; Akademi og de l&#x00E6;rde skoler, ikke anerkende titlerne. Se <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>,</hi> 2.2 (1931), s. 512.</p>
+</note>
+         </note>
+         
+         <note xml:id="com103">
+<!--lemma: den sorte Konst-->
+            <p>trolddomskunst eller magi, is&#x00E6;r i forhold til afd&#x00F8;de &#x00E5;nder (nekromanti).</p>
+         </note>
+         
+         <note xml:id="com104">
+<!--lemma: er ikke maaskee Stenen allerede
+                        igien bortv&#x00C3;&#x00A6;ltet, mens vi, som Kvinderne ved den
+                        hellige Grav, sp&#x00C3;&#x00B8;rge &#x00C3;&#x00A6;ngstelig, hvordan det skal skee?-->
+            <p>jf. <rs key="Matt 28,1-2" type="bible">Matt 28,1-2</rs>, <rs type="bible" key="Mark 16,3-4">Mark 16,3-4</rs> og <rs key="Luk 24,2-3" type="bible">Luk 24,2-3</rs>.</p>
+         </note>
+         
+         <note xml:id="com105">
+<!--lemma: Romervagten daanet-->
+            <p>
+<rs type="bible" key="Matt 28,4">Matt 28,4</rs>.</p>
+         </note>
+         
+         <note xml:id="com106" changes="corr">
+<!--lemma: aabnet Academiet for Ustuderede,-->
+            <p>28. januar 1827 fik Sor&#x00F8; Akademi nye statutter, hvori det hed, at akademiet ikke blot skulle forberede til et embedsstudium ved universitetet, men tillige &#x201C;udbrede videnskabelige Kundskaber i Privatlivets forskellige Krese&#x201D;, jf. <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>,</hi> 2.2 (1931), s. 399.</p>
+         </note>
+         
+         <note xml:id="com109">
+<!--lemma: udelukke Modersmaalet af Pr&#x00C3;&#x00A6;ste-Skolen-->
+            <p>Pr&#x00E6;steskolen: K&#x00F8;benhavns Universitets teologiske fakultet.</p>
+               <p>Ved K&#x00F8;benhavns Universitet blev latin som undervisningssprog fra 1762 gradvist fortr&#x00E6;ngt af dansk. Men forel&#x00E6;sningerne i teologisk eksegese og i latinsk filologi blev indtil hhv. 1840 og 1848 afholdt p&#x00E5; latin. I eksamenssystemet holdt latinen sig l&#x00E6;ngere; s&#x00E5;ledes afholdtes den teologiske embedseksamen (som den sidste af embedseksaminerne) indtil 1849 p&#x00E5; latin. </p>
+            <note type="readMore">
+<p>Indtil 1854 skulle magister- og doktorafhandlinger i alle fag affattes p&#x00E5; latin (men med individuelle dispensationsmuligheder). Frem til 1866 skulle det mundtlige forsvar under alle omst&#x00E6;ndigheder foreg&#x00E5; p&#x00E5; latin.</p>
+</note>
+         </note>
+         
+         <note xml:id="com110">
+<!--lemma: ligesom Dyden skulde l&#x00C3;&#x00A6;res og &#x00C3;&#x00B8;ves ei for Nyttens
+                        men for sin egen Skyld-->
+            <p>allusion til <persName key="pe908">Spinozas</persName> anm&#x00E6;rkning til den 18. l&#x00E6;res&#x00E6;tning i 4. del af hans <rs key="title1226" type="title">
+<hi rend="italic">Ethica</hi>
+</rs>, dansk udg. ved <persName key="pe894">Carl Henrik Koch</persName>: <hi rend="italic">
+<rs key="title1268" type="title">Etik</rs>
+</hi>, s. 144: &#x201C;dyden er attr&#x00E5;v&#x00E6;rdig for sin egen skyld&#x201D;. Grundtvig ejede v&#x00E6;rket p&#x00E5; originalsproget latin i en hollandsk udgave fra 1690, Bogfortegnelse 1839 nr. 560.</p>
+         </note>
+         
+         <note xml:id="com111">
+<!--lemma: aut C&#x00C3;&#x00A6;sar aut nihil-->
+            <p>(lat.) enten C&#x00E6;sar eller intet; hos den romerske historiker <persName key="pe909">Sueton</persName> opr. &#x2018;aut Caesar aut nulli&#x2019;, enten C&#x00E6;sar eller ingen. Mere generelt i betydningen: alt eller intet.</p>
+         </note>
+         
+         <note xml:id="com112">
+<!--lemma: saa ford&#x00C3;&#x00A6;rveligt som Dansken.-->
+            <p>s&#x00E5; &#x00F8;del&#x00E6;ggende som det danske sprog.</p>
+         </note>
+         
+         <note xml:id="com113">
+<!--lemma: slaae en D&#x00C3;&#x00B8;d
+                        ihjel-->
+            <p>variant af ordsproget &#x2018;En d&#x00F8;d mand kan man ikke sl&#x00E5; ihjel&#x2019;, <rs type="title" key="title93">Mau</rs> nr. 1539.</p>
+         </note>
+         
+         <note xml:id="com114">
+<!--lemma: reiste Ridder-Academiet i Soer,-->
+            <p>Efter at have ligget stille siden 1665 reorganiseredes akademiet fra 1747.</p>
+         </note>
+         
+         <note xml:id="com115">
+<!--lemma: nedsunket til en
+                            Latinsk Drenge-Skole,-->
+            <p>Mens ridderakademiet blev ruineret og <hi rend="italic">de facto</hi> nedlagt i 1665, fortsatte skolen til 1737.</p>
+         </note>
+         
+         <note xml:id="com211">
+<!--S&#x00F8;nnen af den sidste Latinske Skolemester, Snedorf-->
+            <p>
+<persName key="pe746">Jens Schelderup Sneedorff</persName> var s&#x00F8;n af rektor for Sor&#x00F8; Skole <persName key="pe913">Hans Hansen
+               Sneedorff</persName>.</p>
+         </note>
+         
+         <note xml:id="com117">
+<!--lemma: at fordanske vort Kongehuus,-->
+            <p>Professor ved Sor&#x00F8; Akademi, senere kabinetssekret&#x00E6;r <persName key="pe321">Ove H&#x00F8;egh-Guldberg</persName> var 1764-1771 l&#x00E6;rer for arveprins <persName key="pe914">Frederik</persName>, som derfor fik en dansk opdragelse.</p>
+         </note>
+         
+         <note xml:id="com118">
+<!--lemma: den Guldbergske Skole-Reform-->
+            <p>Med &#x201C;Forordning angaaende Skole-V&#x00E6;senets Forbedring af 11te Maj 1775&#x201D;, som var resultat af et kommissionsarbejde ledet af <persName key="pe321">Ove H&#x00F8;egh-Guldberg</persName>, blev latinskolen nyordnet og til dels &#x2018;fordansket&#x2019;. Det opstilledes i forordningen som et selvst&#x00E6;ndigt m&#x00E5;l, at eleverne skulle &#x201C;blive det Danske som F&#x00E6;dernelandets Sprog m&#x00E6;gtig, tale og skrive samme rigtig&#x201D;. Forordningen kr&#x00E6;vede generelt, at der skulle arbejdes med det danske sprog b&#x00E5;de mundtligt og skriftligt, bl.a. ved l&#x00E6;sning af dansksprogede forfattere og ved anvendelse af danske l&#x00E6;reb&#x00F8;ger, is&#x00E6;r i religion. </p>
+         </note>
+         
+         <note xml:id="com314" changes="new">
+<!-- lemma: herinde -->
+            <p>sandsynligvis: p&#x00E5; K&#x00F8;benhavns Universitet.</p>
+         </note>
+         
+         <note xml:id="com119" changes="corr">
+<!--lemma: de Ustuderende skal dog
+                        ogsaa l&#x00C3;&#x00A6;re Latin i de tre nederste Classer og fries fra at glemme det i de tre &#x00D8;verste-->
+            <p>Sk&#x00F8;nt der if&#x00F8;lge kongelig resolution af 28. august 1837 indf&#x00F8;rtes realskoleundervisning ved Sor&#x00F8; Skole, undervistes alle elever fortsat i latin, de tre nederste klasser seks timer om ugen, de tre &#x00F8;verste hhv. to, to og &#x00E9;n time. Se <persName key="pe902">Chr. Larsen</persName> (red.): <hi rend="italic">
+<rs key="title1189" type="title">Realskolen gennem 200 &#x00E5;r</rs>,</hi> 1, s. 94 f.</p>
+         </note>
+         
+         <note xml:id="com185">
+<!--lemma: T&#x00C3;&#x00B8;i-->
+            <p>noget meningsl&#x00F8;st eller ubehageligt; t&#x00F8;jeri, troldomst&#x00F8;j.</p>
+         </note>
+         
+         <note xml:id="com120">
+<!--lemma: de &#x00E2;&#x20AC;&#x0153;Danske
+                        Jurister&#x00E2;&#x20AC;&#x009D; halvt og haaber at faae de &#x00E2;&#x20AC;&#x0153;Danske L&#x00C3;&#x00A6;ger&#x00E2;&#x20AC;&#x009D; heelt udryddede-->
+            <p>Ved K&#x00F8;benhavns Universitet blev latin som undervisningssprog fra 1762 gradvist fortr&#x00E6;ngt af dansk, men i eksamenssystemet holdt latinen sig l&#x00E6;ngere. S&#x00E5;ledes afholdtes den medicinske embedseksamen indtil 1837 p&#x00E5; latin. P&#x00E5; jura eksamineredes der indtil 1839 p&#x00E5; latin i alle andre fag end dansk ret; 1839-1847 eksamineredes der kun p&#x00E5; latin i romerret, se <hi rend="italic">
+<rs key="title113" type="title">K&#x00F8;benhavns Universitet 1479-1979</rs>,</hi> 6.1, s. 160.</p>
+         </note>
+        
+         <note xml:id="com121">
+<!--lemma: Universitets-Directionen-->
+            <p>Directionen for Universitetet og de l&#x00E6;rde Skoler udgjorde i perioden 1805-1848 statens
+               overstyrelse af K&#x00F8;benhavns Universitet, Sor&#x00F8; Akademi samt de l&#x00E6;rde skoler; den bestod bestod af tre m&#x00E6;nd.</p>
+         </note>
+         
+         <note xml:id="com315" changes="new">
+<!-- lemma: K&#x00E6;mpeskridtet bagl&#x00E6;nds til det Syttende Aarhundrede -->
+            <p>underforst&#x00E5;et: til 1600-tallet, hvor latin var det ener&#x00E5;dende undervisningssprog i latinskolerne og p&#x00E5; universitetet.</p>
+               <note type="readMore">
+                  <p>F&#x00F8;rst med &#x201C;Forordning angaaende Skole-V&#x00E6;senets Forbedring af 11te Maj 1775&#x201D; blev latinskolerne til dels &#x2018;fordanskede&#x2019;.</p>
+               </note>
+         </note>
+         
+         <note xml:id="com122" changes="corr">
+<!--lemma: Forslaget fra Academiet
+                        selv,-->
+            <p>28. januar 1827 fik Sor&#x00F8; Akademi nye statutter, hvor det i paragraf 2b hed, at akademiet ikke blot skulle forberede til et embedsstudium ved universitetet, men tillige &#x201C;udbrede videnskabelige Kundskaber i Privatlivets forskellige Krese&#x201D;, jf. <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>,</hi> 2.2 (1931), s. 399. Alligevel m&#x00E5;tte akademiet kun optage studerende, der udgik fra den l&#x00E6;rde skole i Sor&#x00F8;, hvor latinundervisning, uanset indf&#x00F8;relsen af &#x2018;reale&#x2019; fag, fortsat var obligatorisk.</p>
+         </note>
+         
+         <note xml:id="com123">
+<!--lemma: ligesom de Sorte paa Jamaica, udstaae
+                        en L&#x00C3;&#x00A6;rlingtid, f&#x00C3;&#x00B8;r de kan gives fri-->
+            <p>If. britisk lov af 1833, kaldet <hi rend="italic">Emancipation Act</hi>, afskaffedes slaveriet p&#x00E5; Jamaica gradvist 1834-1840, idet voksne slaver skulle gennemg&#x00E5; en &#x2018;l&#x00E6;rlingetid&#x2019; p&#x00E5; mellem tre og seks &#x00E5;r inden deres endelige frigivelse.</p>
+         </note>
+         
+         <note xml:id="com124">
+<!--lemma: paa gammel Romersk, gaae under
+                        Aaget-->
+            <p>(lat.) sub jugum ire, p&#x00E5; en ydmygende m&#x00E5;de erkl&#x00E6;re sig for overvundet, oprindelig ved at g&#x00E5; under spyd, der var stillet p&#x00E5; en maade, som skulde minde om okse&#x00E5;get.</p>
+         </note>
+         
+         <note xml:id="com125" changes="corr">
+<!--lemma: Stenen, som den velsignede Kongehaand v&#x00C3;&#x00A6;ltede
+                        fra-->
+            <p>jf. <rs type="bible" key="Joh 11,39">Joh 11,39</rs>. Kongeh&#x00E5;nden er <persName key="pe96">Frederik 6</persName>.s.</p>
+         </note>
+         
+         <note xml:id="com127" changes="corr">
+<!--lemma: Academiets Professorer-->
+            <p>L&#x00E6;rerne ved Sor&#x00F8; Akademi i perioden 1826-1849 var lektorer, l&#x00E6;rerne ved
+               skolen adjunkter. Ved festen i maj 1827 for akademiets genindvielse tildelte
+               <persName key="pe96">Frederik 6.</persName> imidlertid skolens og akademiets
+               direkt&#x00F8;r <persName key="pe244">E.G. Tauber</persName> &#x201C;Rang med
+               Etatsraader og alle Lektorerne med Professorer&#x201D;, jf. <hi rend="italic">
+                  <rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem
+                     Tiderne</rs>,</hi> 2.2 (1931), s. 512. </p>
+               <note type="readMore">
+<p>Lektorerne var s&#x00E5;ledes titul&#x00E6;re professorer, dvs. de havde ret til at kalde sig professorer, men havde ikke noget dertil svarende embede, og Universitetsdirektionen anerkendte aldrig titlen, jf. samme v&#x00E6;rk, s. 402. Senere ansatte lektorer var tilsyneladende ikke omfattet af ordningen, men nogle af dem udn&#x00E6;vntes til titul&#x00E6;re professorer i forbindelse med deres afskedigelse.</p>
+</note>
+         </note>
+         
+         <note xml:id="com128" changes="corr">
+<!--lemma: L&#x00FC;tken, Latinens erkl&#x00C3;&#x00A6;rede Avindsmand-->
+            <p>Lektor i filosofi ved Sor&#x00F8; Akademi <persName key="pe749">J.C. L&#x00FC;tken</persName> udgav 1830 <hi rend="italic">
+<rs type="title" key="title1459">Om almindelig Dannelse og dens Midler</rs>.</hi> Skriftet blev im&#x00F8;deg&#x00E5;et af den klassiske filolog
+                  <persName key="pe959">J.N. Madvig</persName>. I tilbageblik mente <persName key="pe749">L&#x00FC;tken</persName>, at &#x201C;i den Strid jeg har yppet i mit Program
+               1830&#x201D; med <persName key="pe959">Madvig</persName>, havde han medvirket til, at &#x201C;Den gamle
+               Overtroe om de saakaldt klassiske Studiers ene saliggj&#x00F8;rende Kraft er falden, og vil
+               aldrig rejse sig mere; Resten vil give sig selv med Tiden&#x201D;, <hi rend="italic">
+<rs key="title1458" type="title">Blandinger fra Sor&#x00F8;e. Et Tidsskrift</rs>
+</hi>
+               (1833), hefte 5, s. 149.</p>
+         </note>
+         
+         <note xml:id="com129">
+<!--lemma: Tyge Rothes S&#x00C3;&#x00B8;nnes&#x00C3;&#x00B8;nner-->
+            <p>
+<persName key="pe918">Ludvig August Rothe</persName> og <persName key="pe919">Wilhelm Rothe</persName>. Deres farfar <persName key="pe748">Tyge Rothe</persName> blev dengang ofte, ikke mindst af Grundtvig, fremstillet som en national foregangsmand.
+            </p>
+         </note>
+         
+         <note xml:id="com130" changes="corr">
+<!--lemma: over hvis Forki&#x00C3;&#x00A6;rlighed for Dansken jeg alt for n&#x00C3;&#x00A6;sten tredive Aar
+                        siden gl&#x00C3;&#x00A6;dede mig-->
+            <p>Direkt&#x00F8;ren for Sor&#x00F8; Akademi, <persName key="pe747">G.H. Waage</persName>, dimitteredes 1811 fra realskolen Det Schouboeske Institut, hvor han havde v&#x00E6;ret Grundtvigs elev; &#x201C;alt&#x201D;: allerede.</p>
+         </note>
+         
+         <note xml:id="com131">
+<!--lemma: &#x00C3;&#x02DC;rnebanneret-->
+            <p>&#x00D8;rnen var det centrale symbol i den romerske h&#x00E6;rs standarter.</p>
+         </note>
+         
+         <note xml:id="com132">
+<!--lemma: Hjerterne-->
+            <p>Tre l&#x00F8;ver omgivet af hjerter er fra Valdemarernes tid det centrale symbol i det danske statsv&#x00E5;ben. </p>
+         </note>
+         
+         <note xml:id="com133">
+<!--lemma: Jubelkongerne-->
+            <p>konger, der regerede l&#x00E6;ngere end 50 &#x00E5;r.</p>
+         </note>
+         
+         <note xml:id="com134">
+<!--lemma: deres Kroner var af Rosen-Torne!-->
+            <p>allusion til Kristi tornekrone.</p>
+         </note>
+         
+         <note xml:id="com135">
+<!--lemma: Kongens N&#x00C3;&#x00B8;gel-->
+            <p>At bruge &#x201C;Kongens N&#x00F8;gel&#x201D; (n&#x00F8;gle) vil sige i lovens navn at bryde en d&#x00F8;r op; <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 4.957;.</p>
+         </note>
+         
+         <note xml:id="com212" changes="corr">
+<!--lemma: opladt-->
+            <p>lukket op.</p>
+         </note>
+         
+         <note xml:id="com136">
+<!--lemma: er odelsbaaret-->
+            <p>har arveret.</p>
+         </note>
+         
+         <note xml:id="com137" changes="corr">
+<!--lemma: saal&#x00C3;&#x00A6;nge Academiet i Soer
+                        skal dele Bestyrelse med Latin-Skolen og det latiniserende Universitet,-->
+            <p>Direktionen for Universitetet og de l&#x00E6;rde Skoler, som bestod af tre m&#x00E6;nd, var i perioden 1805-1848 statens
+               samlede overstyrelse af K&#x00F8;benhavns Universitet, Sor&#x00F8; Akademi og de l&#x00E6;rde skoler.</p>
+         </note>
+         
+         <note xml:id="com138" changes="corr">
+<!--lemma: Tyge Rothes S&#x00C3;&#x00B8;n, af
+                        en Nordisk Historiker og en Practisk H&#x00C3;&#x00A6;dersmand-->
+            <p>Direktionen for Universitetet og de l&#x00E6;rde Skoler bestod p&#x00E5; dette tidspunkt af de tre
+               jurister <persName key="pe940">Andreas Bj&#x00F8;rn Rothe</persName>, medlem 1817-1840,
+               formand fra 1829 (&#x201C;<hi rend="italic">
+<persName key="pe748">Tyge
+                     Rothes</persName>
+</hi> S&#x00F8;n&#x201D;), retshistorikeren <persName key="pe938">J.L.A. Kolderup-Rosenvinge</persName>, medlem 1834-1848 (&#x201C;en
+                  <hi rend="italic">Nordisk</hi> Historiker&#x201D;) samt dommer og kommitteret i rentekammeret <persName key="pe939">Jens
+                  Olaus Hansen</persName>, medlem 1832-1848 (&#x201C;en <hi rend="italic">Practisk</hi> H&#x00E6;dersmand&#x201D;).</p> 
+         </note>
+         
+         <note xml:id="com219" changes="corr">
+<!--lemma: Collegium-->
+            <p>muligvis ordspil p&#x00E5; &#x2018;kollegium&#x2019; i betydningen et kollektiv og i betydningen et administrativt organ. Direktionen for Universitetet og de l&#x00E6;rde Skoler var indtil 1848 &#x00E9;t ud af 16
+               kollegier i enev&#x00E6;ldens statsadministration. Et kollegium administrerede i
+               lighed med et moderne ministerium et afgr&#x00E6;nset omr&#x00E5;de, f.eks.
+               fl&#x00E5;den, postv&#x00E6;senet eller rigets forskellige landsdele, men til forskel
+               fra i ministerialsystemet l&#x00E5; ledelsen ikke hos &#x00E9;n ansvarlig minister, derimod
+               hos en <hi rend="italic">forsamling</hi> af medlemmer, der traf sine
+               afg&#x00F8;relser (indstillinger til kongen) ved afstemning.</p>
+         </note>
+         
+         <note xml:id="com139" changes="corr">
+<!--lemma: Kapitolinsk Orakel-Sprog-->
+            <p>Der hentydes til de Sibyllinske B&#x00F8;ger, som under Romerriget opbevaredes i <rs key="myth171.a" type="myth">Jupiter</rs>-templet p&#x00E5; Capitol, en af Roms syv
+               h&#x00F8;je. B&#x00F8;gerne indeholdt gr&#x00E6;ske orakelord og rituelle tekster; i
+               krisesituationer kunne det romerske senat bede et pr&#x00E6;stekollegium konsultere
+               b&#x00F8;gerne for varsler.</p>
+         </note>
+         
+         <note xml:id="com220">
+<!--lemma: Viisdommens S&#x00E6;de-->
+            <p>refererence til <persName key="pe731">Salomons</persName> trone i <rs key="1 Kong 10,18-20" type="bible">1 Kong 10,18-20</rs>. I romersk-katolsk
+               tradition er &#x2018;Visdommens S&#x00E6;de&#x2019; eller &#x2018;Visdommens
+               Trone&#x2019; (lat. sedes sapientiae) desuden et af <persName key="pe307">Jomfru
+                  Marias</persName> mange tilnavne.</p>
+         </note>
+         
+         <note xml:id="com140" changes="corr">
+<!--lemma: Hofmester-->
+            <p>Forstanderne for det f&#x00F8;rste soranske akademi, <persName key="pe231">Christian
+               4.s</persName> ridderakademi 1623-1665, ben&#x00E6;vntes hofmestre, forstanderne
+               for akademiet 1747-1813 overhofmestre. &#x2018;Hovmester&#x2019; kunne tidligere
+               betyde en studeret, l&#x00E6;rd mand, der ledte en ung, fornem persons undervisning
+               og uddannelse, eller en person, der havde overopsynet med et fornemt hus eller med et skibs madforsyning.</p>
+         </note>
+         
+         <note xml:id="com141">
+<!--lemma: Rosengaard-->
+            <p>
+<rs key="Es 35,1-2" type="bible">Es 35, 1-2</rs>. Jf. Grundtvigs salme fra 1837 &#x201C;Blomstre som en Rosen-Gaard&#x201D;, <hi rend="italic">
+<rs type="title" key="title57">Sang-V&#x00E6;rk</rs>,</hi> 1, nr. 132. </p>
+         </note>
+         
+         <note xml:id="com142">
+<!--lemma: Chinesiske-->
+            <p>Grundtvig anvendte udtrykket &#x2018;kinesisk&#x2019; som sk&#x00E6;ldsord for det, der forekom ham kunstlet og u&#x00E6;gte, herunder et formalistisk uddannelses- og eksamenssystem. </p>
+         </note>
+         
+         <note xml:id="com143" changes="corr">
+<!--lemma: sin velbehagelige Skikkelse, der is&#x00C3;&#x00A6;r fra Guldbergs Dage har
+                        lidt saa meget-->
+            <p>Ved K&#x00F8;benhavns Universitet blev latin som undervisningssprog fra 1762 gradvist fortr&#x00E6;ngt af dansk. Statsmanden <persName key="pe321">Ove H&#x00F8;egh-Guldberg</persName> virkede energisk for styrkelsen af det danske sprog i undervisningssektoren og i h&#x00E6;ren.</p>
+         </note>
+         
+         <note xml:id="com144">
+<!--lemma: f&#x00F8;rste og den Mundfuld Bl&#x00C3;&#x00A6;klatin til sidste
+                            Examen-->
+            <p>F&#x00F8;rste eksamen var <hi rend="italic">examen artium,</hi> dvs. studentereksamen; anden
+               eksamen var <hi rend="italic">examen philosophicum,</hi> dvs. filosofikum eller den
+               almindelige filologisk-filosofiske eksamen ved universitetet.</p>
+         </note>
+         
+         <note xml:id="com146">
+<!--lemma: (Emancipation) ligesom Canning meget rigtig sagde om de Irske Katholikers:-->
+            <p>Den liberale politiker og premiereminister 1827 <persName key="pe750">George Canning</persName> arbejdede i 1820'erne p&#x00E5; at sikre de britiske, navnlig irske, katolikkers ligestilling med medlemmerne af den britiske statskirke. Den undertiden ophedede debat om dette sp&#x00F8;rgsm&#x00E5;l n&#x00E5;ede sin forel&#x00F8;bige afslutning to &#x00E5;r efter <persName key="pe750">Cannings</persName> d&#x00F8;d med vedtagelsen i 1829 af <hi rend="italic">Emancipation Act</hi> (<hi rend="italic">An Act for the Relief of His Majesty&#x2019;s Roman Catholic Subjects</hi>), som gav katolikker adgang til parlamentet og de fleste offentlige embeder.
+            </p>
+         </note>
+         
+         <note xml:id="com147">
+<!--Planteskoler-->
+            <p>(billedligt) uddannelsessteder, gunstige udviklingsk&#x00E5;r.</p>
+         </note>
+         
+         <note xml:id="com213">
+<!--anmasset sig Kundskabs N&#x00F8;gel-->
+            <p>
+<rs key="Luk 11,52" type="bible">Luk 11,52</rs>.</p>
+         </note>
+         
+         <note xml:id="com148">
+<!--lemma: ved i sexhundrede Aar, deels klosterlig og deels classisk-->
+            <p>i klostrene f&#x00F8;r reformationen, i latinskolerne og p&#x00E5; universitetet efter reformationen.</p>
+         </note>
+         
+         <note xml:id="com149">
+<!--lemma: Saxos
+                    Overs&#x00C3;&#x00A6;tter-->
+            <p>Grundtvig havde siden 1809 udgivet forarbejder og pr&#x00F8;veovers&#x00E6;ttelser af <persName key="pe237">Saxo</persName>; 1818-1823 udgav Selskabet for Nordens Oldskrifter hans fordanskning af hele <hi rend="italic">
+<rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus,</rs>
+</hi> 1-3.</p>
+         </note>
+         
+         <note xml:id="com150">
+<!--lemma: Latiums Tungemaal-->
+            <p>latin; Latium (italiensk: Lazio) er den region, hvori Rom ligger.</p>
+         </note>
+         
+         <note xml:id="com151">
+<!--lemma: den Danske Saxo,-->
+            <p>Grundtvigs overs&#x00E6;ttelse 1818-1823, <hi rend="italic">
+<rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus,</rs>
+</hi> 1-3.</p>
+         </note>
+         
+         <note xml:id="com153" changes="corr">
+<!--lemma: indbyrdes Underviisning-->
+            <p>her i begrebets bogstavelige betydning og med underforst&#x00E5;et ironisk brod imod det,
+               begrebet bet&#x00F8;d i samtiden: <hi rend="italic">Den Bell-Lancasterske
+                  Metode,</hi> en undervisningsform, der dominerede 1820-1850, og hvor l&#x00E6;reren
+               med de dygtigste elever som hj&#x00E6;lpel&#x00E6;rere underviste et stort antal
+               elever samtidig. </p>
+               <note type="readMore">
+                  <p>Vha. undervisningstavler l&#x00E6;ste eller regnede b&#x00F8;rnene i
+               kor eller individuelt, mens l&#x00E6;reren dirigerede undervisningen med en
+               fl&#x00F8;jte eller en klokke. Metoden, hvis tyngdepunkt var udenadsl&#x00E6;re, var
+               udviklet i store britiske fattigskoler og m&#x00F8;dte st&#x00E6;rk modstand i danske
+               skolekredse, men den blev gennemtvunget is&#x00E6;r af &#x00F8;konomiske grunde.</p>
+               </note>
+         </note>
+         
+         <note xml:id="com154">
+<!--lemma: taalelig fordansket Friser eller Angelsachser-->
+            <p>selvironisk hentydning til Grundtvigs optagethed af oldengelsk digtning og til hans tre Englandsrejser 1829-1831.</p>
+         </note>
+         
+         <note xml:id="com155" changes="corr">
+<!--lemma: mine s&#x00C3;&#x00B8;de Dr&#x00C3;&#x00B8;mme-->
+            <p>&#x201C;&#x2013; en s&#x00F8;d Dr&#x00F8;m&#x201D; er undertitlen p&#x00E5; et Grundtvig-manuskript fra efter&#x00E5;ret 1837,
+               som indeholder en utopi om fremtidens h&#x00F8;jskole: &#x201C;Academiet i Soer&#x201D;. Det blev udgivet i 1983, <hi rend="italic">
+<rs key="title839" type="title">To Dialoger om H&#x00F8;jskolen</rs>.</hi>
+</p>
+         </note>
+         
+<!--          <note xml:id="com316" changes="new">
+lemma: Bog-Lighed
+            <p>ordspil p&#x00E5; &#x2018;boglighed&#x2019; og &#x2018;lighed med b&#x00F8;ger&#x2019;.</p>
+         </note>
+ -->
+         <note xml:id="com156">
+<!--lemma: den gyldne Bro over Sv&#x00C3;&#x00A6;lget-->
+            <p>mulig allusion til <rs type="myth" key="myth166">Bifrost</rs>-broen (regnbuen) i nordisk mytologi.</p>
+         </note>
+         
+         <note xml:id="com157">
+<!--lemma: Glimmersyge-->
+            <p>tilb&#x00F8;jelighed til at ville glimre med ydre pragt, pynt, penge og rang.</p>
+         </note>
+         
+         <note xml:id="com158">
+<!--lemma: Livs-Stillingen-->
+            <p>professionen.</p>
+         </note>
+         
+         <note xml:id="com159">
+<!--lemma: Sort paa
+                        Hvidt-->
+            <p>(her) skriftligt bevis, eksamensbevis.</p>
+         </note>
+         
+         <note xml:id="com160" changes="corr">
+<!--lemma: gamle
+                            Danske Kr&#x00C3;&#x00B8;niker-->
+            <p>Der hentydes sandsynligvis til <hi rend="italic">
+<rs key="title84" type="title">Den danske kr&#x00F8;nike</rs>,</hi> senere kaldet <hi rend="italic">Den danske rimkr&#x00F8;nike,</hi> som er den tidligst kendte bog trykt p&#x00E5; dansk. Den blev trykt 1495 i K&#x00F8;benhavn af den hollandske bogtrykker <persName key="pe236">Gotfred af Ghemen</persName> og optrykt flere gange. </p>
+               <note type="readMore">
+<p>V&#x00E6;rket er en kongekr&#x00F8;nike, der omfatter alle danske konger fra <rs key="myth138" type="myth">Dan</rs> til <persName key="pe41">Christian 1.</persName> Tekstens hovedkilde er en st&#x00E6;rkt forkortet version af <persName key="pe237">Saxos</persName> <hi rend="italic">
+               <rs type="title" key="title83">Gesta Danorum</rs>.</hi> Grundtvig gav
+               i 1816 i f&#x00F8;rste nr. af sit tidsskrift <hi rend="italic">
+<rs type="title" key="title270">Danne-Virke</rs>
+</hi>
+               pr&#x00F8;ver p&#x00E5; en gengivelse p&#x00E5; moderne dansk, og 1834 udgav han <rs type="title" key="title85">
+<hi rend="italic">Pr&#x00F8;ver af Den Gammel-Danske
+                     Rim-Kr&#x00F8;nike i en ny Skikkelse</hi>
+</rs> (p&#x00E5;begyndt 1826), hvor han
+               havde tilf&#x00F8;jet egne digte om senere konger frem til <persName key="pe105">Christian 7.</persName> </p>
+</note>
+         </note>
+         
+         <note xml:id="com161" changes="corr">
+<!--lemma: et Skomager-V&#x00C3;&#x00A6;rksted,-->
+            <p>Der l&#x00E5; et ret betydeligt skomagerv&#x00E6;rksted i Skolegade i en nabobygning
+               til Aarhus Katedralskole, men det har ikke kunnet afg&#x00F8;res med sikkerhed, om
+               Grundtvig er kommet her eller hos en af byens 25 &#x00F8;vrige selvst&#x00E6;ndige
+               skomagere. Se herom Steen Johansen: &#x201C;N.F.S. Grundtvigs bop&#x00E6;le
+               (adresser) i K&#x00F8;benhavn&#x201D;, <rs key="title337" type="title">
+<hi rend="italic">Grundtvig-Studier</hi>
+</rs> 1960, s. 56.</p>
+         </note>
+         
+         <note xml:id="com187">
+<!--lemma: Skriften staaer men Ordet gaaer.-->
+            <p>variant af ordsproget &#x2018;ord g&#x00E5;r, men skrift st&#x00E5;r&#x2019;, <hi rend="italic">
+<rs key="title93" type="title">Mau</rs>
+</hi> nr. 7.276. Grundtvig anvendte det tidligere i salmen <rs type="title" key="title30">&#x201C;Tusind Aar stod Christi Kirke&#x201D;</rs> (1826), 4. strofe, 4. vers: &#x201C;Ordet lever, Skriften staaer!&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com162">
+<!--lemma: vasket mine H&#x00C3;&#x00A6;nder-->
+            <p>jf. <rs type="bible" key="Matt 27,24">Matt 27,24</rs>.</p>
+         </note>
+         
+         <note xml:id="com221">
+<!--Kone-Maalets-->
+            <p>Ordet er dannet af Grundtvig.</p>
+         </note>
+         
+         <note xml:id="com163">
+<!--lemma: den &#x00E2;&#x20AC;&#x0153;blaa&#x00C3;&#x00B8;iede Athenes&#x00E2;&#x20AC;-->
+            <p>I 7. og 22. sang af <persName key="pe917">Chr. Wilsters</persName> netop udkomne
+               overs&#x00E6;ttelse af <rs key="title1460" type="title">
+<hi rend="italic">Homers Illiade</hi>
+</rs>
+               (1836) kaldes <rs type="myth" key="myth275">Athene</rs> &#x201C;den lysblaa&#x00F8;iede&#x201D; jomfru eller &#x201C;den
+               lysblaa&#x00F8;iede&#x201D; Pallas. Grundtvig ejede denne udgave, Bogfortegnelse 1839 nr. 2.487-2.488. <persName key="pe917">Wilster</persName> var
+               lektor i gr&#x00E6;sk og engelsk ved Sor&#x00F8; Akademi.</p>
+         </note>
+         
+         <note xml:id="com203">
+<!--lemma: den &#x201C;blaa&#x00F8;iede Athenes&#x201D; Sydskendeb&#x00F8;rn-->
+            <p>visdomsgudindens nev&#x00F8;er og niecer: de l&#x00E6;rde, den l&#x00E6;rde verden.</p>
+         </note>
+         
+         <note xml:id="com202" changes="corr">
+<!--lemma: letnemme-->
+            <p>l&#x00E6;renemme.</p>
+         </note>
+         
+         <note xml:id="com164">
+<!--lemma: Mose-Lov, Propheterne og Psalmerne,-->
+            <p>J&#x00F8;dernes hellige skrift, Tanakh, inddeles traditionelt i loven (Torahen, i kristenheden kaldet Moseb&#x00F8;gerne), profeterne (Nevi'im) og skrifterne (Kethuvim), herunder salmerne.</p>
+               <note type="readMore">
+                  <p>Tanakh modsvares af kristenhedens GT, der dog placerer profeterne sidst for derved at lade dem pege frem mod NT.</p>
+               </note>
+         </note>
+         
+         <note xml:id="com188">
+<!--lemma: det vingede Ord-->
+            <p>det talte ord. Vendingen forekommer i <persName key="pe917">Chr. Wilsters</persName> netop udkomne overs&#x00E6;ttelse af <rs key="title1460" type="title">
+<hi rend="italic">Homers Illiade</hi>
+</rs> (1836), 8. sang, vers 496, og i formen &#x201C;bevingede Ord&#x201D; i 5. sang, vers 123. Grundtvig ejede denne udgave, Bogfortegnelse 1839 nr. 2.487-2.488.</p>
+         </note>
+         
+         <note xml:id="com189">
+<!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com190" changes="corr">
+<!--lemma: en ureen Aand-->
+            <p>sygdom eller bes&#x00E6;ttelse, et almindeligt udtryk i NT.</p>
+         </note>
+         
+         <note xml:id="com165" changes="corr">
+<!--lemma: selv i England,-->
+            <p>Den engelske statskirke (Church of England) etablerede under <persName key="pe618">Elizabeth 1.</persName> en position imellem protestantisme og katolicisme. Denne anglikanske tradition omfattede bl.a. brug af latin i gudstjenesten. Siden 1833 havde den h&#x00F8;jkirkelige &#x2018;Oxfordbev&#x00E6;gelse&#x2019; s&#x00F8;gt at styrke ikke blot latinsk liturgi i statskirken, men ogs&#x00E5; statskirkens b&#x00E5;nd til paven.</p>
+         </note>
+         
+         <note xml:id="com166">
+<!--lemma: Man feiede og prydede Skolen til Bolig for den uddrevne Meenv&#x00C3;&#x00A6;tte, ledsaget af andre Syv, arrigere end han, saa det Sidste blev v&#x00C3;&#x00A6;rre end det F&#x00C3;&#x00B8;rste-->
+            <p>jf. <rs type="bible" key="Matt 12,43-45">Matt 12,43-45</rs> og <rs key="Luk 11,24-26" type="bible">Luk 11,24-26</rs>. Menv&#x00E6;tte: ond &#x00E5;nd.</p>
+         </note>
+         
+         <note xml:id="com167" changes="corr">
+<!--lemma: togange-->
+            <p>to gange, &#x2018;tvende&#x2019;.</p>
+         </note>
+         
+         <note xml:id="com168">
+<!--lemma: Man maa vel mindes Folket i &#x00C3;&#x02DC;rken, der dandsede om det gyldne men livl&#x00C3;&#x00B8;se Konstv&#x00C3;&#x00A6;rk, og sang: see, Israel, det er dine Guder, som udf&#x00C3;&#x00B8;rde dig af &#x00C3;&#x2020;gypten!-->
+            <p>
+<rs type="bible" key="2 Mos 32,1-4">2 Mos 32,1-4</rs>.</p>
+         </note>
+         
+         <note xml:id="com191" changes="corr">
+<!--lemma: storagtigt-->
+            <p>stolt, selvtillidsfuldt.</p>
+         </note>
+         
+         <note xml:id="com214">
+<!--lemma: lovlig-->
+            <p>prisv&#x00E6;rdigt.</p>
+         </note>
+         
+         <note xml:id="com169">
+<!--lemma: Byzantinske-->
+            <p>Grundtvig anvendte udtrykket &#x2018;byzantinsk&#x2019; (p&#x00E5; linje med udtrykket &#x2018;kinesisk&#x2019;) som
+               sk&#x00E6;ldsord for det, der forekom ham kunstlet og u&#x00E6;gte, herunder et
+               strengt formalistisk uddannelsessystem (hvilket dog ikke forhindrede ham i at
+               v&#x00E6;re en glad overs&#x00E6;tter af byzantinske salmer). Byzans er det gamle
+               navn for det senere Konstantinopel (i dag Istanbul), hovedstad i det
+               &#x00F8;stromerske rige.</p>
+         </note>
+         
+         <note xml:id="com170">
+<!--lemma: sprang ei ud af Flintesteen-->
+            <p>er ikke som dv&#x00E6;rge o.a. underjordiske v&#x00E6;sener i nordisk mytologi, der ikke t&#x00E5;ler dagslys og &#x2018;farer i flint&#x2019;, dvs. forstener, n&#x00E5;r de rammes af det.</p>
+         </note>
+         
+         <note xml:id="com171">
+<!--lemma: Forstands-Digtere-->
+            <p>oplysningstidens folkelige digtere, f.eks. <persName key="pe864">Thomas Thaarup</persName>.</p>
+         </note>
+         
+         <note xml:id="com192">
+<!--lemma: den store Basuun-->
+            <p>
+<rs key="&#x00C5;b 11,15" type="bible">&#x00C5;b 11,15</rs>.</p>
+         </note>
+         
+         <note xml:id="com201">
+<!--lemma: en Latinsk Disputats for Lov til offenlig at tale Dansk andensteds end i Kirken-->
+            <p>nemlig p&#x00E5; universitetet, hvor en doktorgrad giver ret til at holde offentlige forel&#x00E6;sninger (&#x2018;jus docendi&#x2018;).</p>
+         </note>
+         
+         <note xml:id="com172">
+<!--lemma: Indbydelser til academiske V&#x00C3;&#x00A6;rdigheder saa aldeles forbigaaet mig-->
+            <p>Ved 300-&#x00E5;rsjubil&#x00E6;et i 1836 for reformationen i Danmark havde det regnet med ordener og doktorpromotioner, men Grundtvig blev til sin fortrydelse forbig&#x00E5;et. Se herom <rs type="title" key="title20">R&#x00F8;nning</rs> 3.2 (1912), s. 157 f.</p>
+         </note>
+         
+         <note xml:id="com215" changes="corr">
+<!--lemma: Studigaard-->
+            <p>dvs. studieg&#x00E5;rd, universitetets bygninger rundt om hovedbygningen.</p>
+         </note>
+         
+         <note xml:id="com173">
+<!--lemma: min indeklemte Stilling-->
+            <p>Grundtvig havde 1826-1839 intet egentligt embede og ingen fast indt&#x00E6;gt, men fungerede dog siden 1832 som aftensangspr&#x00E6;st i Frederiks tyske Kirke, den nuv. Christianskirke p&#x00E5; Christianshavn.</p>
+         </note>
+         
+         <div type="litList">
+            <head xml:id="docIn999">Anvendt litteratur</head>
+            
+               <list type="litList">
+                  <item>
+<hi rend="italic">
+<rs key="title1458" type="title">Blandinger fra Sor&#x00F8;e. Et Tidsskrift</rs>,</hi> hefte 5 (1833). Slagelse</item>
+                  <item>Bugge, Knud Eyvin (1993) <rs type="title" key="title663">&#x201C;Grundtvigs
+                     syn p&#x00E5; folkelig dannelse &#x2013; dets muligheder f&#x00F8;r og
+                     nu&#x201D;</rs>, i Lilian Z&#x00F8;lner (red.) <hi rend="italic">
+<rs key="title665" type="title">Almen dannelse, folkelig dannelse, folkelig
+                     livsoplysning</rs>.</hi> Vejle</item>
+                  <item>
+<hi rend="italic">
+<rs type="title" key="title1188">Den jyske Lov. Text med Overs&#x00E6;ttelse og Kommentar</rs>
+</hi> (1933) udg. af Peter Skautrup. K&#x00F8;benhavn &amp; Aarhus</item>
+                  <item>Grundtvig, N.F.S. (1816) &#x201C;<rs type="title" key="title948">Thyre
+                     Dannebods Vise</rs>&#x201D;, i <hi rend="italic">
+<rs key="title271" type="title">Danne-Virke</rs>
+</hi> nr. 1. K&#x00F8;benhavn</item>
+                  
+                  <item>Grundtvig, N.F.S. (1826) <rs type="title" key="title30">&#x201C;Tusind Aar
+                     stod Christi Kirke&#x201D;</rs>, i <hi rend="italic">
+<rs type="title" key="title32">Danske H&#x00F8;itids-Psalmer til Tusindaars-Festen</rs>.</hi>
+                  K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1834) <rs type="title" key="title482">&#x201C;Gylden-Aaret&#x201D;</rs>, i <rs key="title458" type="title">
+<hi rend="italic">Nordisk Kirke-Tidende</hi>
+</rs> nr. 4. K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1836) <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+                     Fiir-Kl&#x00F8;ver</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1839) &#x201C;<rs key="title110" type="title">Om Nordens
+                     videnskabelige Forening</rs>&#x201D;, i <hi rend="italic">Brage og Idun, et
+                     nordisk Fj&#x00E6;rding&#x00E5;rsskrift,</hi> 1, 1. hefte.
+                  K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1868) <rs type="title" key="title57">
+<hi rend="italic">Sang-V&#x00E6;rk,</hi>
+</rs> 1. K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1873) <rs type="title" key="title280">
+<hi rend="italic">Sang-V&#x00E6;rk,</hi>
+</rs> 3, udg. af J. Christian Madsen.
+                  K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1983) <hi rend="italic">
+<rs key="title839" type="title">To Dialoger om H&#x00F8;jskolen</rs>
+</hi> udg. af Dan Charly Christensen. Holb&#x00E6;k</item>
+                  <item>Grundtvig, N.F.S. (2010) <rs type="title" key="title519">
+<hi rend="italic">Schriften in Auswahl</hi>
+</rs> udg. af Knud Eyvin Bugge, Flemming Lundgreen-Nielsen &amp; Theodor J&#x00F8;rgensen. G&#x00F6;ttingen
+                  (2010)</item>
+                  <item>Kok, Laurids O. (1695) <rs type="title" key="title77">
+<hi rend="italic">Dannevirkevisen</hi> eller &#x201C;Danmark
+                        deiligst vang og v&#x00E6;nge&#x201D;</rs>. K&#x00F8;benhavn</item>
+                  <item>Larsen, Chr. (red.) (2010) <hi rend="italic">
+<rs key="title1189" type="title">Realskolen gennem 200 &#x00E5;r</rs>,</hi> 1-2. U.st.:
+                  K&#x00F8;benhavn</item>
+                  <item>Lundgreen-Nielsen, Flemming (1992) &#x201C;Grundtvig og danskhed&#x201D;, i
+                  Ole Feldb&#x00E6;k (red.) <hi rend="italic">
+<rs key="title462" type="title">Dansk
+                        identitetshistorie</rs>,</hi> 3. K&#x00F8;benhavn</item>
+                  <item>L&#x00FC;tken. J.C. (1830) <hi rend="italic">
+<rs type="title" key="title1459">Om almindelig Dannelse og dens Midler</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Mau, E. (1879) <hi rend="italic">
+<rs key="title93" type="title">Dansk Ordsprogs-Skat</rs>
+</hi>, 1-2. K&#x00F8;benhavn</item>
+                  <item>Platon (1799) <hi rend="italic">
+<rs type="title" key="title1184">Platons Republik oder Unterredung vom Gerechten, in zehn B&#x00FC;chern</rs>,</hi> overs. Karl Friedrich Wolf. Altona</item>
+                  <item>R&#x00F8;nning, Frederik (1911-1914) <hi rend="italic">
+<rs key="title20" type="title">N.F.S. Grundtvig. Et bidrag til
+                        skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi> 1-4.
+                     K&#x00F8;benhavn</item>
+                  <item>
+<hi rend="italic">
+<rs key="title78" type="title">Sor&#x00F8;. Klostret,
+                           Skolen, Akademiet gennem Tiderne. Skrevet af gamle Soranere</rs>
+</hi>
+                     (1923-1931) udg. af Soranske Samfund. K&#x00F8;benhavn</item>
+               </list>
+            
+         </div>
+      </body>
+</text>
+</TEI>

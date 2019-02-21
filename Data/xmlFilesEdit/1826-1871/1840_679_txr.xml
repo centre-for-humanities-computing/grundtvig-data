@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrEditXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc" type="application/relax-ng-compact-syntax"?>
+<?xml-stylesheet type="text/css" href="https://prometheus.statsbiblioteket.dk/gvData/css/oxyAuthorEdit.css"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Phenix-Fuglen. Et Angelsachsisk Kvad förstegang udgivet med Indledning,
+          Fordanskning og Efterklang</title>
+        <title rend="shortForm">Phenix-Fuglen. Et Angelsachsisk Kvad</title>
+        <author>Vibeke A. Pedersen</author>
+        <editor role="editor2">Klaus Nielsen</editor>
+        <editor role="editor1">Henrik Yde</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <!-- <idno type="firstupload">1.12</idno>-->
+          <idno type="content">1.12</idno>
+          <idno type="technic">1.12.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>11 KB</extent>
+      <publicationStmt>
+        <availability status="restricted">
+          <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+        </availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority/>
+        <date when="2018-04-03">www.grundtvigsværker.dk, version 1.12, 3. april 2018</date>
+      </publicationStmt>
+      <notesStmt>
+        <note type="txt" target="1840_679_txt.xml">L&#x00E6;setekst</note>
+        <note type="txr" xml:id="thisFile" target="1840_679_txr.xml">Tekstredegørelse</note>
+      </notesStmt>
+      <sourceDesc>
+        <p/>
+      </sourceDesc>
+      <!--<seriesStmt>
+        <title></title>
+        <idno n=""/>
+        <respStmt>
+          <name></name>
+          <resp></resp>
+        </respStmt>
+      </seriesStmt>-->
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change who="NHB" when="2015-03-09" xml:id="NHB">oprettet skabelon</change>
+      <change who="VAP" when="2017-09-29">tilpasset skabelon - ikke færdig</change>
+      <change who="VAP" when="2017-10-26">fortsat udfyldning</change>
+      <change who="VAP" when="2018-01-03">tilføjelse af digt, der har været trykt tidligere</change>
+      <change who="VAP" when="2018-01-08">yderligere tilpasning og udfyldning af manglende
+        afsnit</change>
+      <change who="VAP" when="2018-01-10">manuskripter</change>
+      <change who="VAP" when="2018-01-11">tilretning</change>
+      <change who="VAP" when="2018-04-25">rettelser efter Klaus</change>
+      <change who="VAP" when="2018-07-17">fortsat rettelser efter Klaus</change>
+      <change who="VAP" when="2018-07-18">fortsat rettelser efter Klaus samt kontrol</change>
+      <change who="VAP" when="2018-10-29">slettet en dobbeltoplysning efter Kirstens kontrol af
+        Stage</change>
+      <change who="VAP" when="2018-12-07">rettelser efter Stine students gennemgang af KN</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">I Grundtvig-arkivet på Det Kongelige Bibliotek, København, findes
+            følgende manuskripter, som kan knyttes til tilblivelsen af <hi rend="italic"
+              >Phenix-Fuglen</hi>.</p>
+          <!--
+            Noter fortsætter til linje 135
+            <p rend="noIndent">I det første afsnit gives en oversigt over, hvilke manuskripter og tryk der findes til det p&#x00E5;g&#x00E6;ldende v&#x00E6;rk. Desuden nævnes evt. oversættelser fra Grundtvigs levetid.
+          Det drejer sig m.a.o. om at identificere mulige tekstkilder til v&#x00E6;rket og evt. oplyse, hvordan de genetisk forholder sig til hinanden. Oversigten begr&#x00E6;nses til Grundtvigs levetid.
+          For trykkenes vedkommende er dette arbejde allerede udf&#x00F8;rt af Steen Johansen, og oversigten oplyser <hi rend="italic">Bibliografiens</hi> nummerering.</p>-->
+          <p rend="noIndent">
+            <table rend="msDesc">
+              <!--<p rend="noIndent">Indholdet af tabellens tredje kolonne kan tilpasses efter behov. Har selve manuskriptet en sigende overskrift, kan denne bruges.</p>
+                <p rend="noIndent">Hvor overskriften derimod ikke giver et indblik i manuskriptets karakter, kan man i stedet skrive en kort indholdsbestemmelse, fx "Udkast til en anmeldelse af Clausens bog" til 
+                        <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=2620">Fasc.-nr. 100.I.</ref> Dette manuskript har titlen på Clausens bog som overskrift, 
+                        men det er ingen god hjælp for læseren af tekstredegørelsen. Af hensyn til overskueligheden må en indholdsbestemmelse foretrækkes.
+                        Overskrift og indholdsbestemmelse kan også kombineres, men da må sidstnævnte optræde i kantet parentes. Hvis det er relevant og lader sig gøre, kan man også angive, hvilke kapitler de enkelte manuskripter dækker fx. "Kap. 4-7".</p>
+                
+                <p rend="noIndent">Bestemmelserne af manuskripternes typer benytter f&#x00F8;lgende terminologi:
+                        
+                        <list type="simple">
+                            <item><hi rend="italic">forarbejde (dvs. arbejdsnotater, ekscerpter, dispositioner og lignende)</hi></item>
+                            <item><hi rend="italic">udkast</hi></item>
+                            <item><hi rend="italic">kladder</hi> (dvs. arbejdsmanuskripter)</item>
+                            <item><hi rend="italic">renskrifter</hi> (hvad enten de er v&#x00E6;sentligt afvigende fra trykket eller v&#x00E6;sentligt overensstemmende med trykket)</item>
+                            <item><hi rend="italic">afskrifter</hi></item>
+                        </list>                            
+                    </p>-->
+              <row>
+                <cell>Signatur</cell>
+                <cell>Type</cell>
+                <!--<cell>Indhold</cell>-->
+                <cell>Indhold</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="X-1_042.pdf">Fasc. 208.9<!--100.I.--></ref></cell>
+                <cell>Udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>Ubenyttet afslutning til fortalen, dateret dagen før kroningsdagen</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="X-2_176.pdf">Fasc. 225.18 <!--100.I.--></ref></cell>
+                <cell>Noter</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til <rs type="myth" key="myth20">Føniks</rs>-motivets historie</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XX-1_0094.pdf">Fasc. 389.40 <!--100.I.--></ref></cell>
+                <cell>Udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>Heri bl.a. fem ubenyttede strofer til &#x201C;Jeg gik mig ud en Sommerdag at
+                  høre&#x201D;, se <hi rend="italic"><rs key="title35" type="title"
+                      >Bibliografien</rs></hi> 2, s. 172</cell>
+              </row>
+              <row>
+                <cell><ref type="web" target="XX-1_0096.pdf">Fasc. 389.42 <!--100.I.--></ref></cell>
+                <cell>Udkast</cell>
+                <!--Typebestemmelse (dvs. udkast, kladde, renskrift etc.)-->
+                <cell>til 48 strofer af &#x201C;Dansk Efterklang&#x201D;</cell>
+              </row>
+            </table>
+            <hi rend="italic"><rs type="title" key="title169">Poetiske Skrifter</rs></hi> 3 bringer
+            de ubenyttede strofer til sangen &#x201C;Jeg gik mig ud en Sommerdag at høre&#x201D; i
+            fodnoterne s. 359-361. </p>
+          <!--<p rend="noIndent">I tekstredegørelsen tilbyder GV læseren en liste over det eksisterende manuskriptmateriale. Denne kan i alt v&#x00E6;sentligt baseres p&#x00E5; 
+            <hi rend="italic">Registrant over N.F.S. Grundtvigs papirer</hi> (bd. 1-30, 1957-1964), men må verificeres. Listen opstilles som en tabel med tre kolonner:</p>-->
+        </div>
+        <div>
+          <head xml:id="docIn3">F&#x00F8;rstetrykket</head>
+          <p rend="noIndent">Nummer i <hi rend="italic"><rs key="title35" type="title"
+                >Bibliografien</rs></hi>: 679.</p>
+          <p rend="noIndent"><hi rend="italic">Phenix-Fuglen. Et Angelsachsisk Kvad förstegang
+              udgivet med Indledning, Fordanskning og Efterklang</hi> udkom i begyndelsen af oktober
+            1840. Den var annonceret den 8. og 10. oktober i <hi rend="italic"><rs type="title"
+                key="title189">Adresseavisen</rs>.</hi> Den blev udgivet af Grundtvig selv og trykt
+            i Fabritius de Tengnagels bogtrykkeri.</p>
+          <p rend="noIndent">Oplagets st&#x00F8;rrelse er ukendt.</p>
+          <p rend="noIndent">Prisen var 4 mark pr. hæfte (se <hi rend="italic"><rs type="title"
+                key="title189">Adresseavisen</rs>,</hi> den 8. oktober
+            1840).<!--i 1845 ½ rigsbankdaler for et hæftet eksemplar (<rs type="title" key="title00">Salomon 1845</rs>, s. 129)-->
+          </p>
+          <p rend="noIndent">Tilegnelsesdigtet, &#x201C;Kongen døde under Vinters Hjerte&#x201D;,
+            der er et lykønskningsdigt i forbindelse med <persName key="pe98">Christian
+              8.'s</persName> kroning, var allerede blevet bragt i <hi rend="italic"><rs
+                type="title" key="title33">Adresseavisen</rs></hi> den 27. juni 1840 og genoptrykt i
+              <hi rend="italic"><rs type="title" key="title458">Nordisk Kirke-Tidende</rs>,</hi> nr.
+            26-27, den 5. juli. </p>
+          <!--<p rend="noIndent">Under dette punkt angives førstetrykkets bibliografiske oplysninger. Først gives i et separat afsnit værkets nummer i bibliografien. Dernæst følgende oplysninger:</p>
+        <div>
+          <head xml:id="">Bøger</head>
+          <p rend="noIndent">For selvstændigt trykte bøger oplyses:</p>
+          
+          <list type="simple">
+            <item>fulde titel</item>
+            <item>trykkested</item>
+            <item>forlag</item>
+            <item>trykkeri</item>
+          </list>
+          
+          <p rend="noIndent">Desuden angives oplysninger om udgivelsesmåde i det omfang, de kendes, og med angivelse af kilde, dvs.</p>
+          <list type="simple">
+            <item>udgivelsesdato (fx ifølge annonce i <rs type="title" key="title189"><hi rend="italic">Adresseavisen</hi></rs>)</item>
+            <item>oplagsstørrelse</item>
+            <item>boghandelspris</item>
+            <item>salgstal</item>    
+          </list>
+        </div>        
+       -->
+        </div>
+        <div>
+          <head xml:id="docIn4">Senere udgaver</head>
+          <p rend="noIndent"><hi rend="italic">Phenix-Fuglen</hi> blev ikke optrykt i sin helhed i
+            Grundtvigs levetid, men den afsluttende sang, &#x201C;Jeg gik mig ud en
+            Sommerdag&#x201D;, blev under overskriften &#x201C;Sommerdagen&#x201D; optrykt i <hi
+              rend="italic"><rs type="title" key="title880">Viser og Sange for Danske
+              Samfund</rs>,</hi> tredje hæfte, s. 63-64, med flere mindre ændringer.</p>
+          <p rend="noIndent">
+            <!--  <table rend="printDesc">
+              <row>
+                <cell>ÅR</cell>
+                <cell>TITEL</cell>
+              </row>
+              <row>
+                <cell>1841</cell>
+                <cell>Under overskriften &#x201C;Sommerdagen&#x201D; er &#x201C;Jeg gik mig ud en
+                  Sommerdag&#x201D; optrykt i <hi rend="italic"><rs type="title" key="title880"
+                      >Viser og Sange for Danske Samfund</rs>,</hi> tredje hæfte, s. 63-64, med
+                  flere mindre ændringer. </cell>
+              </row>
+            </table>--><!--Sangen er også optrykt i <hi rend="italic"><rs type="title" key="title169"
+                >Poetiske Skrifter</rs></hi> 6, s. 359-361. Efterklangen er optrykt i <hi
+              rend="italic"><rs type="title" key="title169">Poetiske Skrifter</rs></hi> 6, s.
+            341-358. Begge tekster har varianter fra manuskript i fodnoter. </p>
+          <p rend="noIndent">Uddrag af fortalen, som omhandler Englands-opholdene, er optrykt i <hi
+              rend="italic"><rs type="title" key="title3910">Grundtvigs Erindringer</rs>,</hi> s.
+            73-75 (<rs type="title" key="title3910">Johansen og Høirup 1948</rs>).-->
+            <!--VAP: 2017-12-22--></p>
+          <!--    
+        <div>
+          <head xml:id="">Oversættelser</head>
+          <p rend="noIndent">Herunder gives oplysninger om, hvilke overs&#x00E6;ttelser der blev foranstaltet i forfatterens levetid. Kun overs&#x00E6;ttelser af hele v&#x00E6;rket eller substantielle dele deraf opregnes.</p>
+        </div>-->
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn5">Bibliografisk beskrivelse</head>
+        <!--  <p rend="noIndent"><hi rend="bold">NB:</hi> Bemærk, at tekstredegørelsen <hi rend="italic">ikke</hi> skal beskrive bogens typografi, dvs.:</p>
+        <list type="simple">
+         <!-\- <item>kolumnest&#x00F8;rrelse</item>-\->
+          <item>skriftsnit og skriftarter: Bogen er sat med antikva</item>
+          <item>fremh&#x00E6;velsesmidler</item>
+         <!-\- <item>initialer, uncialer og pynt</item>
+          <item>forekomster af kustoder</item>-\->
+        </list>-->
+        <head xml:id="docIn6">De anvendte eksemplarer</head>
+        <!--<p rend="noIndent">Skriv kun tekst, hvis der er kollationeret mindre end 3 eksemplarer</p>-->
+        <list type="decimal">
+          <item>Eksemplar fra Grundtvig-Biblioteket, katalognr. 3.5 (ex. 2; besk&#x00E5;ret og
+            indbundet).</item>
+          <item>Eksemplar fra Det Kongelige Bibliotek, katalognr. Germ. 45000 8<hi rend="raised"
+              >o</hi> (stregkode: 130006305661; besk&#x00E5;ret og indbundet).</item>
+          <item>Eksemplar fra Grundtvig-Biblioteket, katalognr. 3.5 (ex. 1, tidligere Ejnar Skovrup;
+            besk&#x00E5;ret og indbundet).</item>
+          <!--item>Eksemplar fra Grundtvig Centeret (tidligere Aarhusianer Samfundet; besk&#x00E5;ret og indbundet).KONTROLLER eller slet</item>-->
+        </list>
+        <p rend="noIndent">Eksemplar 1 er valgt som grundtekst og har afgivet faksimiler til
+          udgaven. Den følgende bibliografiske beskrivelse tager udgangspunkt i eksemplar 1.</p>
+        <p rend="noIndent">Det primære fremhævelsesmiddel fra fortalen og fremefter (s. 15) er
+          spatiering, i nærværende udgave gengives det som kursiv. I tilegnelsesdigtet er det
+          primære fremhævelsesmiddel halvfed, i nærværende udgave gengives det ligeledes som
+          kursiv</p>
+        <!--
+          BØGER
+          <p rend="noIndent">Som første led af den bibliografiske beskrivelse angives de minimum tre eksemplarer, som er blevet konsulteret og kollationeret under tekstetableringen.
+          Disse anføres på en nummeret liste med følgende oplysninger:</p>
+        <list type="simple">
+          <item>ejer (fx KB, Grundtvigbiblioteket eller Grundtvig Centeret)</item>
+          <item>signatur eller eksemplarnummer (fx "29,-76 8°" eller "Gr.1")</item>
+          <item>kortfattede oplysninger om indbinding (fx "indbundet og ubeskåret")</item>
+          <item>stregkode (hvis den findes) anført i parentes</item>
+        </list>
+        <p rend="noIndent"> Det specificeres herunder, hvilket eksemplar (1, 2 eller 3), der er faksimileret, og hvilket eksemplar, der har leveret grundteksten.
+          Oplysning om hvilket eksemplar, der er blevet OCR-behandlet, gives ikke. Det eksemplar, som udsættes for bibliografisk beskrivelse, anføres altid som eksemplar nummer 1.</p>-->
+        <div>
+          <head xml:id="docIn7">Formler</head>
+          <p rend="noIndent">Format: 8<hi rend="raised">o</hi>.</p>
+          <p rend="noIndent">Eksemplaret er beskåret og måler ca. 245 &#x00D7; 164 mm</p>
+          <p rend="noIndent">Kollationsformel: <hi rend="italic">1</hi><hi rend="raised">8</hi>
+              2-4<hi rend="raised">8</hi> 5<hi rend="raised">4</hi>.</p>
+          <p rend="noIndent">Signaturformel: &#x0024;1 signeret (første blad i hvert læg signeret,
+            undtagen læg 1).</p>
+          <p rend="noIndent">Pagineringsformel: 36 blade, pagineret <hi rend="italic">1-9,</hi>
+            10-14, <hi rend="italic">15,</hi> 16-22, <hi rend="italic">23,</hi> 24-43, <hi
+              rend="italic">44,</hi> 45-71, <hi rend="italic">72</hi> [= 72].</p>
+          <p rend="noIndent">Bogens format er oktav. Den består af fire læg på hver otte blade og et
+            læg på fire blade.
+            <!--Det første signerede læg (2) bærer signatur på første blad, og
+            således fortsætter det med alle følgende læg.--></p>
+          <!--  <p rend="noIndent">Der er primær arksignaturer på s. 17, 33, 49 og 65.</p>
+          <p rend="noIndent"> I første læg er de første 9 sider upaginerede. De øvrige læg (2-5) er
+            pagineret med arabertal. Der er stum paginering af s. 1-9, 15, 23, 44 og 72.</p>
+          <p rend="noIndent">Brødtekstens klummebredde er ca. 136 x 216 mm for fortalens
+            vedkommende.</p>-->
+          <!--<list type="simple">
+            <item><hi rend="italic">formatbestemmelse</hi> (fx 8<hi rend="raised">o</hi>) og oplysning om bogblokkens m&#x00E5;l i millimeter (højde x bredde), s&#x00E5; vidt muligt m&#x00E5;lt p&#x00E5; et ubesk&#x00E5;ret eksemplar (fx ca. 193 &#x00D7; 115 mm.).</item>
+            <item><hi rend="italic">kollationsformel</hi> (ogs&#x00E5; kaldet l&#x00E6;gformel), dvs. oplysninger om bogens fysiske opbygning og dens fordeling p&#x00E5; l&#x00E6;g og blade, som f&#x00F8;lger den analytisk-deskriptive bibliografis konventioner). En typisk kollationsformel kan lyde: &#x03C0;<hi rend="raised">4</hi> 1-8<hi rend="raised">8</hi> &#x03C7;<hi rend="raised">2</hi> 9-20<hi rend="raised">8</hi> 21<hi rend="raised">4</hi></item>
+            <item><hi rend="italic">signaturformel, </hi> dvs. oplysninger om, hvilke blade i hvilke l&#x00E6;g der er signeret. En typisk signaturformel kan lyde: &#x0024;2 signeret (-5<hi rend="subscript">2</hi>)</item>
+            <item><hi rend="italic">pagineringsformel, </hi> dvs. oplysninger om bogens paginering eller foliering. De stumt paginerede sider angives med kursive tal. En typisk pagineringsformel kan lyde:
+              100 blade, pagineret <hi rend="italic">I-III,</hi> IV-X, <hi rend="italic">1-3,</hi> 4-36, <hi rend="italic">37-39,</hi> 40-54, <hi rend="italic">55-57,</hi> 58-75, <hi rend="italic">76-79,</hi> 80-122, <hi rend="italic">123-125,</hi> 126-175, <hi rend="italic">176-179,</hi> 180-190 [= X, 190].</item>
+          </list>
+          
+          <p rend="noIndent">Den sidste kantparentes oplyser det egentlige antal sider. Hvis der fx mangler enkelte sidetal i pagineringen, vil det samlede antal sider være lavere end det sidste sidetal (se eksempel i Kondrup 2011, s. 319).</p>
+          
+          <p rend="noIndent">Oplysningerne fra formatbestemmelse, kollationsformel og signaturformel sammenfattes i en kortfattet beskrivelse, der redeg&#x00F8;r for de samme forhold i l&#x00F8;bende prosa. 
+            Ovenst&#x00E5;ende formler kan opl&#x00F8;ses i prosa s&#x00E5;ledes: Bogens format er oktav. Den best&#x00E5;r af et pr&#x00E6;limin&#x00E6;rt, usigneret l&#x00E6;g p&#x00E5; 4 blade, otte l&#x00E6;g a 8 blade, et usigneret l&#x00E6;g p&#x00E5; 2 blade, 
+            tolv l&#x00E6;g a 8 blade samt et l&#x00E6;g p&#x00E5; 4 blade. Alle signerede l&#x00E6;g b&#x00E6;rer signatur p&#x00E5; de to f&#x00F8;rste blade, 
+            bortset fra femte l&#x00E6;g, hvor signaturen mangler p&#x00E5; andet blad. Der er stum paginering af s. I-III, 1-3, 37-39, 55-57, 76-79 og 123-125.</p>-->
+        </div>
+        <div>
+          <head xml:id="docIn8">Indholdsoversigt</head>
+          <p rend="noIndent">[1] <hi rend="italic">titelblad.</hi> [2] <hi rend="italic">blank.</hi>
+            [3] <hi rend="italic">tilegnelse.</hi> [4] <hi rend="italic">blank.</hi> [5-8] <hi
+              rend="italic">tilegnelsesdigt.</hi> [9]-14: Fortale. [15]-22: PHENIX-MYTHEN. [23]-43:
+            FENIX. [44]-65: FRI FORDANSKNING. 65-71: DANSK EFTERKLANG. [72] Rettelser.</p>
+          <!--<p rend="noIndent"><hi rend="italic">Indholdsoversigten</hi> er en formaliseret oversigt over, hvad bogens sider rummer.
+          En indholdsoversigt for <hi rend="italic">Udsigt over Verdens-Kr&#x00F8;niken</hi> (1817) lyder som følger:</p>
+        
+        <p rend="hangingIndent">&#x005B;I&#x005D; <hi rend="italic">titelblad.</hi> &#x005B;II&#x005D; 
+          <hi rend="italic">blank.</hi> &#x005B;III&#x005D;  <hi rend="italic">tilegnelse til Morten Luthers minde.</hi> &#x005B;IV&#x005D; 
+          <hi rend="italic">blank. </hi> &#x005B;V&#x005D;-XLIV: Fortale. &#x005B;1&#x005D;-675: <hi rend="italic">tekst. </hi> &#x005B;676&#x005D; Rettelser.</p>
+        <p rend="noIndent">Det kursiverede er udgivertekst, det ordin&#x00E6;re citater. Sidetal i kantede parenteser &#x005B; &#x005D; er suppleret af udgiverne.
+                    Bemærk, at størstedelen af værkets brødtekst angives samlet med den lakoniske beskrivelse 'tekst'.
+                    Indholdsoversigten skal ses som et bibliografisk apparat, ikke en egentlig oversigt over det tekstlige indhold. Denne har læseren nemt adgang til i læseteksten.</p>-->
+        </div>
+        <div>
+          <head xml:id="docIn9">Papir</head>
+          <p rend="noIndent">Bogen er tryk på maskinpapir uden kædelinjer.</p>
+          <!--  <p rend="noIndent">Her gives kortfattede oplysninger om <hi rend="italic">papirkvalitet,</hi> herunder om forekomsten af vandmærker. Kun i særtilfælde, hvor det er 
+              relevant at angive navn på papirfabrikanten, kan dette oplyses.</p>-->
+        </div>
+        <div>
+          <!--<head xml:id="docIn10">Omslag</head> <p rend="noIndent">Ingen af de kollationerede eksemplarer har originalomslag.</p> --><!--<p rend="noIndent">Her gives kortfattede oplysninger om evt. oprindelige <hi rend="italic">omslag,</hi> dvs. ikke selve indbindingen, men udelukkende trykte omslag.
+              Disse kan være løse, men vil oftest være at finde indbundet sammen med bogblokken. Heller ikke ejesignaturer eller exlibriser beskrives. Derimod bør her nævnes evt. særheder: 
+              Fx er der på forsatsbladet af det faksimilerede eksemplar af <hi rend="italic">Kirkens Gienmæle</hi> klistret to udklip fra <hi rend="italic">Adresseavisen.</hi></p>-->
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn11">Intern varians</head>
+        <p rend="noIndent">Der er ikke konstateret intern varians.</p>
+        <!--<p rend="noIndent">I afsnit 3 angives det, om der ved kollationeringen er blevet konstateret intern varians, dvs. tekstuelle eller materielle forskelle mellem de enkelte eksemplarer. 
+          Hvis der hverken er fundet varians i tekst eller materiale, afklares dette med en enkelt sætning i afsnit 3, fx: "Der er ikke blevet konstateret intern varians, hverken af tekstlig eller materiel art."</p>
+        
+        <table>
+                        <row>
+                            <cell>Side, linje</cell>
+                            <cell>Eks. 1</cell>
+                            <cell>Eks. 2</cell>
+                            <cell>Eks. 3</cell>
+                        </row>
+                        <row>
+                            <cell>19,9</cell>
+                            <cell>Frændenavn</cell>
+                            <cell>Fædrenavn</cell>
+                            <cell>Fædrenavn</cell>
+                        </row>
+                    </table>
+                    
+                    <div>
+                    <head xml:id="">Materiel</head>
+                    <p rend="noIndent">Den interne varians kan imidlertid også være materiel. Under dette punkt angives det, hvis der er materielle forskelle mellem de tre konsulterede eksemplarer.
+                    Det kan fx dreje sig om forskelle i papirkvalitet, antallet af bevarede forsatsblade eller præliminære blanke ark, eller andre farver på omslag end det beskrevne eksemplar. 
+                    Hvis der findes varierende titelblade, hvor teksten er den sammen, men hvor opsætningen er forskellig fra det beskrevne eksemplar, kan det også angives her.</p>
+                    
+                    <p rend="noIndent">Terminologien f&#x00F8;lger Kondrup (2011) og <hi rend="italic">www.informationsordbogen.dk</hi>.</p>
+                </div>
+        -->
+      </div>
+      <div>
+        <head xml:id="docIn12">Tekstkritik</head>
+        <list type="textualCriticismPluralis"/>
+        <!--<p rend="noIndent">Rettelser er for det latinske og angelsaksiskes vedkommende foretaget efter rettelseslisten s. 72.</p>-->
+        <!--<p rend="noIndent">Fodnoteindvisning s. 30 er rettet fra 370 til 470.</p>-->
+        <p rend="noIndent">Linjetal s. 24, anden spalte, linje 3, er rettet fra S5 til 85.</p>
+        <!-- <p rend="noIndent">Den bibliografiske beskrivelse afsluttes af en tekstkritisk liste over rettelser og supplerende noter til grundteksten. 
+          Listen dannes automatisk ved hjælp af attributv&#x00E6;rdien "textualCriticism" (se Kodebogen).</p>
+        
+        <p rend="noIndent">Hvis der er foretaget tekstrettelser ud fra værk-eksterne kilder, dvs. ud fra fx Bibelen eller originalen til en tekst citeret af Grundtvig, angives det efter rettelseslisten.
+          Dvs. vi angiver ikke sigler til eksterne kilder i kolofonen. I stedet opremses de i et separat afsnit, som indledes med: &#x201C;Følgende eksterne kilde(r) er brugt i forbindelse med tekstrettelserne:&#x201D;</p>
+        
+        <p rend="noIndent">Kilderne ompremses i en simpel liste, og selve tekstrettelserne angiver med fri udgivetekst at være foretaget 
+          &#x201C;efter kilden&#x201D;, &#x201C;efter NT&#x201D; eller forfatterens efternavn fx &#x201C;efter Clausen&#x201D;.</p>-->
+      </div>
+      <div type="litList">
+        <head xml:id="docIn20">Anvendt litteratur</head>
+        <list type="litList">
+          <item><span type="proofread"/><rs type="title" key="title33"><hi rend="italic"
+                >Adresseavisen</hi></rs>, se <hi rend="italic">Kj&#x00F8;benhavns Kongelig
+              Adressecomptoirs alene privilegerede Efterretninger</hi>. København</item>
+          <item>
+            <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> se Johansen,
+            Steen (1948-1954)</item>
+          <item>Grundtvig, N.F.S. (1880-1930) <rs type="title" key="title169"><hi rend="italic"
+                >N.F.S. Grundtvigs Poetiske Skrifter</hi></rs>, udg. Svend Grundtvig &amp; Georg
+            Christensen bind 1-9. København</item>
+          <item> Johansen, Steen (1948-1954) <rs type="title" key="title35"><hi rend="italic"
+                >Bibliografi over N.F.S. Grundtvigs skrifter</hi></rs> 1. K&#x00F8;benhavn</item>
+          <!-- <item><span type="proofread"/>Johansen, Steen &amp; (1983) <rs type="title"
+              key="title3910"><hi rend="italic">Grundtvigs Erindringer og Erindringer om Grundtvig.
+                I Udvalg</hi></rs>. København</item>-->
+          <item><hi rend="italic">Kj&#x00F8;benhavns Kongelig Adressecomptoirs alene privilegerede
+              Efterretninger</hi> (1840), nr. 236, 8. oktober. København</item>
+          <item><span type="proofread"/><rs type="title" key="title458"><hi rend="italic">Nordisk
+                Kirke-Tidende</hi></rs> (1840), nr. 26-27, den 5. juli. København</item>
+          <!--  <item><hi rend="italic">Poetiske Skrifter</hi> 1-9 1880-1930, se Grundtvig, N.F.S.
+            (1880-1930) <rs type="title" key="title169"><hi rend="italic">N.F.S. Grundtvigs Poetiske
+                Skrifter</hi></rs>, udg. Svend Grundtvig &amp; Georg Christensen bind 1-9.
+            København</item>-->
+          <!--  <item>Salomon, Amsel Gottschalk (1845) <hi rend="italic"><rs type="title" key="title00"
+                >II, Fortegnelse over ældre og nyere Bøger (22000 Bind) i alle Videnskaber og flere
+                Sprog, som til vedføiede Priser faaes hos A. G. Salomon</rs>.</hi>
+            København<!-\- 
+https://books.google.dk/books?id=VWZWAAAAYAAJ&pg=PA136-IA1&lpg=PA136-IA1&dq=Phenix-Fuglen+pris+1840&source=bl&ots=tRBMeYqF76&sig=LYDKoWzWdI1hNSAA3uP49d1aqdA&hl=da&sa=X&ved=0ahUKEwiDnYDizsDXAhVDJ5oKHbzRCRcQ6AEIPDAD#v=onepage&q=Phenix-Fuglen%20pris%201840&f=false
+ -\-></item>-->
+          <item><rs type="title" key="title880"><hi rend="italic">Viser og Sange for Danske
+                Samfund</hi></rs> (1840-1842), hæfte 1-4. København</item>
+        </list>
+      </div>
+    </body>
+  </text>
+</TEI>

@@ -1,0 +1,441 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<!--<?xml-model type="application/relax-ng-compact-syntax" href="txrRNC.rnc"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Krigssang for Nordm&#x00E6;nd</title>
+        <title rend="shortForm">Krigssang for Nordm&#x00E6;nd</title>
+        <author>Holger Berg</author>
+        <editor role="editor1">Henrik Yde</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>43 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Aarhus Universitet, Det Teologiske Fakultet</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1808_83_txt.xml">L&#x00E6;setekst</note>
+        <note type="txr" target="1808_83_txr.xml" xml:id="thisFile">Tekstredeg&#x00F8;relse</note>
+      </notesStmt>
+      
+      <!--<notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>-->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="NHB" who="NHB" when="2012-01-16">Kopieret efter 1807-65 og tilpasset</change>
+      <change who="NHB" when="2012-03-06">&#x00E6;ndret indhold</change>
+      <change who="NHB" when="2012-05-08">p&#x00E5;begyndt generelt afsnit</change>
+      <change who="NHB" when="2012-05-11">skrevet p&#x00E5; generelt afsnit</change>
+      <change who="NHB" when="2012-07-06">opm&#x00E6;rket personer og steder</change>
+      <change who="NHB" when="2012-07-06">opm&#x00E6;rket personer (eftermiddag)</change>
+      <change who="NHB" when="2012-07-09">title880 til 908</change>
+      <change when="2012-10-09" who="NHB">valideret</change>
+      <change when="2012-10-11" who="NHB">valideret</change>
+      <change when="2012-10-11" who="NHB">textualCriticism</change>
+      <change who="NHB" when="2012-11-19">persName fjernet fra litList</change>
+      <change who="NHB" when="2013-01-21">Adresseavisen tilf&#x00F8;jet</change>
+      <change who="NHB" when="2013-04-28">pe787 til 737</change>
+      <change xml:id="JT" who="JT" when="2013-09-26">i forb. med oplast af 1.3: tidslinjehenvisninger beholdt p&#x00E5; trods af m&#x00E6;slinger</change>
+      
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      
+    <change who="NHB" when="2014-03-20">valideret</change>
+         <change who="NHB" when="2016-04-13">valid</change>
+</revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">Der er ikke bevaret manuskripter til v&#x00E6;rket.</p>
+        </div>
+        <div>
+          <head xml:id="docIn3">Tryk</head>
+          <table rend="printDesc">
+            <row>
+              <cell>1808</cell>
+              <cell>
+<hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer. Et Ugeskrivt</rs>
+</hi> nr. 55, s. 438-440 (<hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi> nr. 83).</cell>
+            </row>
+            <row>
+              <cell>1815</cell>
+              <cell>
+<rs key="title334" type="title">
+<hi rend="italic">Kv&#x00E6;dlinger eller Smaakvad</hi> (1815)</rs>, s. 29-32.</cell>
+            </row>
+          </table>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn4">Bibliografisk beskrivelse</head>
+        <div>
+          <head xml:id="docIn5">
+            <hi rend="italic">
+              <rs key="title659" type="title">Ny danske Tilskuer. Et Ugeskrivt</rs>
+            </hi>
+          </head>
+          <div>
+            <head xml:id="docIn6">Titel</head>
+            <p rend="noIndent">Hovedtitlen <hi rend="italic">Ny danske Tilskuer</hi> blev benyttet for tidsskriftets to sidste &#x00E5;rgange, fra januar 1807 til december 1808. Den forudg&#x00E5;ende hovedtitel var <hi rend="italic">Den danske Tilskuer.</hi> Undertitlen <hi rend="italic">Et Ugeskrivt</hi> benyttedes b&#x00E5;de f&#x00F8;r og efter 1807 p&#x00E5; bindtitelbladet, men ikke i bladhovedet.</p>
+          </div>
+          <div>
+            <head xml:id="docIn7">Redakt&#x00F8;r</head>
+            <table rend="contentDesc">
+              <row>
+                <cell>1791-1808</cell>
+                <cell>
+                  <persName key="pe24">Knud Lyne Rahbek</persName>
+                </cell>
+              </row>
+            </table>
+          </div>
+          <div>
+            <head xml:id="docIn8">Trykker og trykkeri</head>
+            <p rend="noIndent">
+<hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> blev trykt af <persName key="pe73">Johan Frederik Schultz</persName>. Han kom fra Odense til K&#x00F8;benhavn i 1777 og k&#x00F8;bte i 1783 et mindre trykkeri. Af bindtitelbladet fremg&#x00E5;r, at han var &#x201C;Kongelig og Universitetsbogtrykker&#x201D; i K&#x00F8;benhavn. Disse privilegier havde han opn&#x00E5;et i henholdsvis 1789 og 1786. <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> og <persName key="pe24">Knud Lyne Rahbeks</persName> m&#x00E5;nedsblad <rs type="title" key="title125">
+<hi rend="italic">Minerva</hi>
+</rs> var blandt <persName key="pe73">Schultz'</persName> st&#x00F8;rste indt&#x00E6;gtskilder.</p>
+          </div>
+          <div>
+            <head xml:id="docIn9">Indhold</head>
+            <p rend="noIndent">Grundtvig bidrog i 1808 til dette velrenommerede tidsskrift, som &#x00E5;ret forinden havde &#x00E6;ndret sin kurs markant. Titlen <rs type="title" key="title160">
+<hi rend="italic">Den danske Tilskuer</hi>
+</rs> hentydede til <persName key="pe677">Joseph Addisons</persName> klassiske tidsskrift <hi rend="italic">
+<rs type="title" key="title901">The Spectator</rs>
+</hi> (1711-1712, 1714), der gav navn til en egen genre. Spectatorlitteraturen var i sin sene danske fase fra og med 1761 ret tro mod <persName key="pe677">Addisons</persName> forbillede, s&#x00E5; tidsskrifterne behandlede moral og litteratur med satirisk brod i essays og fingerede breve. <persName key="pe24">Rahbeks</persName> ugeskrift udm&#x00E6;rkede sig desuden ved sine digte og viser. D&#x00E6;kningen af hovedstadens liv var inspireret af det franske tidsskrift <hi rend="italic">
+<rs type="title" key="title908">Tableau de Paris</rs>
+</hi> (1781-1788).</p>
+            <p rend="noIndent">Denne blanding havde v&#x00E6;ret efterspurgt af det frisindede borgerskab, men efter &#x00E5;rhundredskiftet var mange l&#x00E6;sere utilfredse med bladets udvikling. Debatten om <rs type="title" key="title160">
+<hi rend="italic">Den danske Tilskuer</hi>
+</rs> giver en fordybet forst&#x00E5;else af det nye ved <hi rend="italic">Ny danske Tilskuer.</hi> Man forst&#x00E5;r dog ogs&#x00E5; Grundtvigs bidrag uden denne baggrund. </p>
+            <note type="readMore">
+              <p rend="noIndent">I 1790'erne kunne ugeskriftet betegnes som de &#x201C;t&#x00E6;nkende Menneskers Yndlingslekture&#x201D; (<rs type="title" key="title889">Pavels 1806</rs>, s. 177). En af dets ivrige l&#x00E6;sere mindedes tiden, hvor man i &#x201C;enhver Dagligstue fandt [...] &#x2018;<rs type="title" key="title160">den danske Tilskuer</rs>&#x2019; paa Bordet&#x201D; (<rs type="title" key="title886">Mynster 1853</rs>, s. 152). I denne storhedstid kunne <persName key="pe24">Rahbek</persName> endnu samle bidrag fra sin brede vennekreds, men i 1806 var antallet af digte aftagende. <persName key="pe24">Rahbek</persName> m&#x00E5;tte selv st&#x00E5; for prosaen, og han medgav, at hans pen &#x201C;ved det femten Aars n&#x00E6;sten daglige Brug til Tilskuerconcepter&#x201D; efterh&#x00E5;nden var &#x201C;endeel udslidt&#x201D; (<rs type="title" key="title890">Rahbek 1806a</rs>, s. 3).</p>
+              <p rend="noIndent">Utilfredsheden efter &#x00E5;rhundredskiftet fandt flere udtryk. For det f&#x00F8;rste mente mange, at <persName key="pe24">Rahbek</persName> havde tabt fornemmelsen for &#x201C;Kj&#x00F8;benhavns galante Verden&#x201D;, efter at han i 1798 var blevet gift (<rs type="title" key="title889">Pavels 1806</rs>, s. 178). Desuden m&#x00E5;tte de bredt orienterede essays, der blev beskrevet som en blanding af &#x201C;sund Folkephilosophie&#x201D; og letl&#x00E6;selig &#x201C;Fruentimmerlekture&#x201D;, efterh&#x00E5;nden vige for <persName key="pe24">Rahbeks</persName> gamle yndlingsemner: overs&#x00E6;ttelser af udenlandsk samt danske litteratur og teater. Dette appellerede ganske vist til den dannede elite, men &#x201C;mangen L&#x00E6;ser [vil dog ...] l&#x00E6;gge et og andet Blad bort med et Misn&#x00F8;ie, som han forhen aldrig f&#x00F8;lte ved at l&#x00E6;se <rs type="title" key="title160">Tilskueren</rs>&#x201D; (<rs type="title" key="title889">Pavels 1806</rs>, s. 180 f.).</p>
+              <p rend="noIndent">Abonnenternes stigende utilfredshed var til dels en f&#x00F8;lge af trykkefrihedsanordningen af 1799. Rahbek var i 1790'erne allerede i flere omgange blevet retsforfulgt for de &#x00E5;benmundede indl&#x00E6;g i <hi rend="italic">
+<rs type="title" key="title160">Tilskueren</rs>.</hi> Efter landsforvisningen af hans n&#x00E6;re og dristigere ven <persName key="pe97">P.A. Heiberg</persName> i 1800 var <persName key="pe24">Rahbek</persName> tilb&#x00F8;jelig til at undg&#x00E5; &#x201C;Politikens slibrige Glatiis&#x201D; (<rs type="title" key="title897">Rahbek 1811</rs>, s. 10). Han vidste dog samtidig, at hans publikum efterspurgte de frimodige &#x201C;Betragtninger over hver uden- og indenlandsk m&#x00E6;rkelig Begivenhed&#x201D;. De havde, som <persName key="pe24">Rahbeks</persName> ven <persName key="pe737">Claus Pavels</persName> fremh&#x00E6;vede, &#x201C;desuden [...] det s&#x00E6;regne V&#x00E6;rd, at de siden
+                Anonymitetsforbudet n&#x00E6;sten ere de eneste, der frems&#x00E6;ttes paa Tryk over offentlige Begivenheder&#x201D; (<rs type="title" key="title889">Pavels 1806</rs>, s. 178 f.)</p>
+              <p rend="noIndent">Som spectatorblad havde <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> udviklet en tradition for at udgive satirer og digte pseudonymt. Det ramte alts&#x00E5; tidsskriftets livsnerve, da fremmede, pseudonyme bidrag i 1799 blev forbudt: &#x201C;[jeg] sukker [...] end endnu forgi&#x00E6;ves efter det &#x00D8;ieblik, da det tillades enhver vor &#x00E6;rlige Ven uki&#x00E6;ndt at indbyde os til sig, uden at skylde Nogen Rede for sit Navn, med mindre saa er, at han har Br&#x00F8;de at svare for&#x201D; skrev <rs type="title" key="title872">Rahbek (1806d</rs>, s. 92).</p>
+            </note>
+            <p rend="noIndent">
+<persName key="pe60">Rahbek</persName> svarede sine kritikere i en r&#x00E6;kke artikler, men var sig fuldt ud bevidst om faren for at v&#x00E6;re &#x201C;smagfuld og classisk for tomt Huus&#x201D;: &#x201C;Bliver hans Blad [dvs. Tilskueren] ul&#x00E6;st, hend&#x00F8;er det omsider lidt efter lidt i Glemsel og Ringeagt&#x201D; (<rs type="title" key="title892">Rahbek 1806e</rs>, s. 202). Derfor tog han deres forslag til efterretning: &#x201C;efter saal&#x00E6;nge at have seet <hi rend="italic">indad</hi>&#x201D;, ville han, Rahbek, nu ogs&#x00E5; vende &#x201C;sit &#x00D8;ie <hi rend="italic">udad</hi>, agter og vagter paa Tidernes Tegn og Tone i det Store og Almene.&#x201D; Han ville udgive &#x201C;sit Blad, under Navn af den <hi rend="italic">
+<rs type="title" key="title659">ny danske Tilskuer</rs>,</hi> i det Hele i samme Form; kun i Henseende til Materien vil han udvide sin Sph&#x00E6;re&#x201D; med et dansk blik p&#x00E5; den udenlandske
+              litteratur og politik (<rs type="title" key="title894">Rahbek 1806g</rs>, s. 831 f.). Den danske neutralitetspolitik gjorde det udenrigspolitiske stof endnu mere eksplosivt, og det kan v&#x00E6;re grunden til, at <persName key="pe24">Rahbek</persName> betonede sin (i &#x00F8;vrigt dybtf&#x00F8;lte) patriotiske hensigt: enhver god mand &#x201C;b&#x00F8;r ki&#x00E6;mpe, ivre, advare imod&#x201D; tidens &#x201C;dybe Demoralisation&#x201D;, &#x201C;den aandelige [...] Smitsot&#x201D; forbundet med de mange statsomv&#x00E6;ltninger (<rs type="title" key="title895">Rahbek 1807a</rs>, s. 4). S&#x00E5;danne ulykker burde tv&#x00E6;rtimod &#x201C;have v&#x00E6;kket og n&#x00E6;ret&#x201D; en &#x201C;heltemodig F&#x00E6;drelandski&#x00E6;rlighed, urokkelig Trofasthed i enhver Forbindelse, mandig Standhaftighed i egne Lidelser, og menneskeki&#x00E6;rlig Deeltagelse i Andres&#x201D; (s. 3). <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi>
+              sk&#x00E6;rpede den moralske kritik af dem, der kastede sig i sansernes vold. En af de mest sigende forandringer var overgangen fra klubviser om livets gl&#x00E6;der til patriotiske krigssange. Fra andet bind af &#x00E5;rgang 1807 tog <persName key="pe24">Rahbeks</persName> &#x00E5;ndelige mobilisering til i takt med den milit&#x00E6;re. </p>
+            <note type="readMore">
+              <p rend="noIndent">Slaget p&#x00E5; Reden 1801 havde ogs&#x00E5; givet udslag i et stort antal krigssange; de dominerede denne &#x00E5;rgang af <hi rend="italic">Den danske Tilskuer.</hi>
+                <persName key="pe24">Rahbek</persName> var ikke privilegeret til at bringe decideret nyhedsstof. Han forklarede i en separat artikel, at det ikke var jagten p&#x00E5; profit, som f&#x00F8;rte ham til at besk&#x00E6;ftige sig med &#x201C;<hi rend="italic">Dagens</hi> Anliggende [...] noget, som <hi rend="italic">i det h&#x00F8;ieste</hi> maa v&#x00E6;re <hi rend="italic">
+<rs type="title" key="title564">Dagens</rs>
+</hi> og andre saadanne Avisers og Blades Sag&#x201D; (<rs type="title" key="title893">Rahbek 1806f</rs>, s. 274). </p>
+            </note>
+            <!--</note>-->
+          </div>
+        </div>
+        <div>
+          <head xml:id="docIn10">Udgivelseshistorie</head>
+          <div>
+            <head xml:id="docIn11">Udgivelsesperiode og oplag</head>
+            <p rend="noIndent">
+<persName key="pe24">Knud Lyne Rahbeks</persName> ugeskrift udkom fra 1791 til 1808, og det f&#x00F8;rste nummer med titlen <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> var fra 12. januar 1807. Oplaget omkring &#x00E5;rhundredskiftet var p&#x00E5; ca. 1000 eksemplarer, og i 1798 blev 116 styk forsendt med posten (bl.a. til Norge). Ugeskriftets l&#x00E6;sere var is&#x00E6;r at finde blandt det dannede, velhavende borgerskab (<rs type="title" key="title770">Kirchhoff-Larsen 1947</rs>, s. 174). Fra august 1807 ramte krigen dette publikum h&#x00E5;rdt i &#x00F8;konomisk henseende, og 1808 blev den forel&#x00F8;big sidste &#x00E5;rgang. I det sidste nummer bem&#x00E6;rkede <persName key="pe24">Rahbek</persName>, at &#x201C;dette Ugeblad&#x201D; med 18 &#x00E5;r &#x201C;har bragt det til en saa us&#x00E6;dvanlig, og &#x2013; han t&#x00F8;r vel tilf&#x00F8;ie &#x2013; saavidt ham er beki&#x00E6;ndt, af et Skrift af lignende
+              Natur neppe nogensinde opnaaet Varighed&#x201D; (<rs type="title" key="title874">Rahbek 1808</rs>, s. 828). </p>
+            <note type="readMore">
+              <p rend="noIndent">I det f&#x00F8;rste freds&#x00E5;r, 1815, s&#x00F8;satte <persName key="pe24">Rahbek</persName> p&#x00E5;ny et ugeskrift under hovedtitlen <hi rend="italic">
+<rs type="title" key="title900">Tilskueren</rs>.</hi> Allerede i 1811 havde han uden held fors&#x00F8;gt relanceringen under titlen <hi rend="italic">
+<rs key="title794" type="title">Sandsigeren, eller den danske Huusven, et Ugeskrift</rs>.</hi>
+</p>
+              <p rend="noIndent"></p>
+            </note>
+          </div>
+          <div>
+            <head xml:id="docIn12">Hyppighed</head>
+            <p rend="noIndent">
+<hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> udkom som regel to gange ugentligt, mandag og torsdag. Det forekom dog ikke sj&#x00E6;ldent, at <persName key="pe24">Rahbek</persName> udgav to h&#x00E6;fter under et f&#x00E6;lles bladhoved: nr. 2 og 3 af &#x00E5;rgang 1808 udkom fx mandag den 25. januar (s. 9-24) fulgt af endnu et dobbelth&#x00E6;fte mandag den 1. februar (nr. 4-5, s. 25-40). <persName key="pe24">Rahbek</persName> fastholdt alts&#x00E5; h&#x00E6;fternes l&#x00E6;ngde (8 sider pr. h&#x00E6;fter) og bestr&#x00E6;bte sig p&#x00E5; at udgive det forventede antal h&#x00E6;fter pr. halv&#x00E5;r (52). I perioder med meget stof fulgte flere dobbelth&#x00E6;fter hinanden inden for kort tid.</p>
+            <p rend="noIndent">I de f&#x00F8;rste m&#x00E5;neder af den v&#x00E6;bnede konflikt med Storbritannien udkom <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> uregelm&#x00E6;ssigt: den <ref type="docOut" target="domestic.xml#Aug 16 1807 00:00:00 GMT">britiske landgang p&#x00E5; Sj&#x00E6;lland</ref> forsinkede ganske vist blot udgivelsen af nr. 65 med tre dage, men nr. 68 fra 31. august blev fulgt af &#x201C;syv Ugers Taushed&#x201D;. &#x201C;Eet Nummer var allerede ikke blot skrevet, men i Trykkeriet samme Dag [2. september] da <ref type="docOut" target="domestic.xml#Sep 02 1807 00:00:00 GMT">det frygtelige Bombardement</ref> saa pludselig afbr&#x00F8;d al fredelig Virksomhed&#x201D; (<rs type="title" key="title896">Rahbek 1807b</rs>, s. 545). </p>
+            <note type="readMore">
+              <p rend="noIndent">K&#x00F8;benhavn kapitulerede, og briterne truede med at bes&#x00E6;tte selve byen, s&#x00E5;fremt indbyggerne i handling eller tale gjorde yderligere modstand. <persName key="pe24">Rahbek</persName> redegjorde for sine egne overvejelser om &#x201C;det h&#x00F8;ist vigtige Sp&#x00F8;rgsmaal: <hi rend="italic">hvad kan, hvad t&#x00F8;r</hi> &#x2013; det er efter <rs type="title" key="title659">Tilskuerens</rs> Sprogtolkning &#x2013; <hi rend="italic">hvad b&#x00F8;r man sige?</hi>&#x201D; og den deraf f&#x00F8;lgende beslutning om ikke at udgive under s&#x00E5;danne vilk&#x00E5;r (s. 547).</p>
+            </note>
+            <p rend="noIndent">Efter den britiske tilbagetr&#x00E6;kning fors&#x00F8;gte <persName key="pe24">Rahbek</persName> at opfylde abonnenternes forventning, og med en r&#x00E6;kke dobbelth&#x00E6;fter i november m&#x00E5;ned (fra nr. 73-74 den 2. november til nr. 87-88 den 26.) n&#x00E5;ede han ved &#x00E5;rets udgang n&#x00E6;sten det lovede antal: nr. 99 blev dateret 4. januar 1808, mens dobbelth&#x00E6;fterne 100-101, 102-103 og h&#x00E6;fte 104 i bladhovedet alle anf&#x00F8;rte &#x201C;December 1807&#x201D;.</p>
+            <p rend="noIndent">F&#x00F8;rste nummer af &#x00E5;rgang 1808 udkom derfor 18. januar, men inden udgangen af juni n&#x00E5;ede <persName key="pe24">Rahbek</persName> til nr. 52. Andet halv&#x00E5;r b&#x00F8;d is&#x00E6;r i december p&#x00E5; forsinkelser, og nr. 95 er det sidste korrekt daterede h&#x00E6;fte (29. december). De resterende udkom som dobbelth&#x00E6;fter (undtagen nr. 104) med den vanlige datering &#x201C;December 1808&#x201D;. Det sidste h&#x00E6;fte udkom mellem 14. januar og 11. februar 1809 (<rs type="title" key="title884">Oehlenschl&#x00E4;ger 3 1945</rs>, s. 224; <rs type="title" key="title564">Dagen 1809</rs>, sp. 4).</p>
+          </div>
+          <div>
+            <head xml:id="docIn13">Pris</head>
+            <p rend="noIndent">Prisen kendes ikke. I 1810 solgte en boghandler &#x201C;20 Dele&#x201D; for 14 rigsdaler (Till&#x00E6;gget til <rs type="title" key="title189">Adresseavisen</rs> 23. juni 1810); dette kunne hentyde til et halv&#x00E5;rsbind.</p>
+          </div>
+          <div>
+            <head xml:id="docIn14">Opbygning</head>
+            <p rend="noIndent">Hvert nummer af <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> blev indledt af et til to mottoer, der som regel var forsynet med forfatterhenvisning. De blev fulgt af anmeldelser og korte essays, der kunne forts&#x00E6;ttes over flere numre; af l&#x00E6;serbreve, som tog emner fra tidligere h&#x00E6;fter op til fortsat debat; og af sange, der som de eneste bidrag var forsynet med titler. Forfattere underskrev tit deres bidrag med kun efternavn eller under pseudonym. Denne opbygning livede op i debatten, men gjorde den sv&#x00E6;rt tilg&#x00E6;ngelig for udenforst&#x00E5;ende l&#x00E6;sere af et l&#x00F8;srevet h&#x00E6;fte.</p>
+            <p rend="noIndent">Abonnenter fik for hvert af &#x00E5;rgangens to bind tilsendt titelblade og indholdsfortegnelser med en titellignende karakteristik af de enkelte bidrag.</p>
+          </div>
+          <div>
+            <head xml:id="docIn15">Omfang</head>
+            <p rend="noIndent">Hvert h&#x00E6;fte af <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> bestod af 8 sider.</p>
+          </div>
+        </div>
+        <div>
+          <head xml:id="docIn16">Format, typografi og papirkvalitet</head>
+          <div>
+            <head xml:id="docIn17">Format og paginering</head>
+            <p rend="noIndent">I den tid, hvor Grundtvig skrev i tidsskriftet, blev det trykt i oktav med fortl&#x00F8;bende paginering af &#x00E5;rgangen. Ved indbinding deltes &#x00E5;rgangen i to bind, hvis titelblade ikke indgik i pagineringen.</p>
+            <p rend="noIndent">Sideformatet er op til 189 &#x00D7; 115 mm p&#x00E5; det uindbundne, ubesk&#x00E5;rede eksemplar af &#x00E5;rgang 1807 fra Syddansk Universitetsbibliotek (katalognr. 435.1, s. 584).</p>
+            <p rend="noIndent">Der er hverken kustoder eller arknummerering.</p>
+          </div>
+          <div>
+            <head xml:id="docIn18">Papir</head>
+            <p rend="noIndent">Tidsskriftet udkom p&#x00E5; to typer papir. Mest almindeligt er groft h&#x00E5;ndgjort papir med tydelige k&#x00E6;delinjer, men uden vandm&#x00E6;rker. Et eksemplar fra Det Kongelige Bibliotek er set p&#x00E5; finere, hvidt papir med tydelige k&#x00E6;delinjer og vandm&#x00E6;rke i falsen mellem bladene (se <ref type="docIn" target="#docIn28">Beskrivelse af eksemplar fra Det Kongelige Bibliotek, katalognr. 60,- 29. 8<hi rend="raised">o</hi>
+</ref>). Vandm&#x00E6;rket er et kronet v&#x00E5;benskjold med posthorn; der ses intet modm&#x00E6;rke.</p>
+          </div>
+          <div>
+            <head xml:id="docIn19">Typografi</head>
+            <p rend="noIndent">Tidsskriftet er enspaltet. Klummen m&#x00E5;ler ca. 134 &#x00D7; 76 mm.</p>
+            <p rend="noIndent">Hver ny artikel begynder med en uncial og findes som regel efter en kort skillestreg p&#x00E5; ca. 22 mm. Titler p&#x00E5; sange afsluttes af en endnu kortere skillestreg. H&#x00E6;ftet afsluttes med en b&#x00F8;lget skillestreg og udgiverens navn; i sj&#x00E6;ldne tilf&#x00E6;lde rettes trykfejl (fx &#x00E5;rgang 1808, s. 304). Der anvendes forskellige skriftgrader: strofisk tekst og fodnoter er sat med mindre grad end br&#x00F8;dteksten. Fodnoter er indvist i teksten med en asterisk og en halv, h&#x00F8;jreparentes, &#x2217;), og fodnoterne adskilles fra br&#x00F8;dteksten med et dobbelt mellemslag. I 1807 anvendes en skillestreg i klummens bredde ved alle fodnoter; i 1808 optr&#x00E6;der skillestregen kun ved enkelte digte. Den mindre skriftgrad blev af og til anvendt p&#x00E5; h&#x00E6;ftets sidste side for at afslutte en artikel inden for arket (som et s&#x00E6;rsyn findes to sider sat i mindre grad ved slutningen af &#x00E5;rgang 1807, s. 831
+              f.).</p>
+            <p rend="noIndent">Skriftsnittet er fraktur. Engelske, romanske og latinske ord s&#x00E6;ttes i antikva. Spatiering er det prim&#x00E6;re middel til at fremh&#x00E6;ve forfattertekst og tekst i bladhovedet. Ved forfatterangivelse og ved ordret gengivelse eller fremh&#x00E6;velse af andres udsagn anvendes schwabacher, til tider kombineret med spatiering.</p>
+            <p rend="noIndent">Bladhovedet angiver titel, h&#x00E6;ftenummer, trykkested, ugedag og dato samt navne p&#x00E5; trykker og forl&#x00E6;gger.</p>
+          </div>
+        </div>
+        <div>
+          <head xml:id="docIn20">&#x201C;Krigssang for Nordm&#x00E6;nd&#x201D;, <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 55, 18. juli 1808</head>
+          <div>
+            <head xml:id="docIn21">Lokalisering</head>
+            <p rend="noIndent">Grundtvigs &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; st&#x00E5;r i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> nr. 55, mandag den 18. juli 1808, s. 438-440.</p>
+            <p rend="noIndent">Dette nummer indeholder f&#x00F8;lgende bidrag:</p>
+            <list type="simple">
+              <item>Sommersang af [L.C.] Sander</item>
+              <item>[Noget om Felttoget i Norge] uden underskrift, dvs. af Knud Lyne Rahbek; titlen er taget fra bindets indholdsfortegnelse</item>
+              <item>Krigssang for Nordm&#x00E6;nd af Nik. Fred. Sev. Grundtvig</item>
+            </list>
+          </div>
+          <div>
+            <head xml:id="docIn22">Afvigelser</head>
+            <p rend="noIndent">Grundvigs bidrag afviger fra de &#x00F8;vrige digte i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> ved placering af fodnotetegnet &#x2217;) i linjens begyndelse (linje 16, s. 440) og ved skillestregerne. Den manglende skillestreg f&#x00F8;r digtets begyndelse kan skyldes pladsmangel (se et lignende eksempel i &#x00E5;rgang 1807, s. 126). Derimod er den korte skillestreg yderst tv. i spalten p&#x00E5; s. 440 et eksempel p&#x00E5; den typografiske uorden i &#x00E5;rgang 1808: ved fodnoten p&#x00E5; side 479 blev der, som i prosa, ikke anvendt en skillestreg til at adskille fodnoten fra digtet. I et tidligere tilf&#x00E6;lde blev der, som i &#x00E5;rgang 1807, anvendt en skillestreg i klummebredde (s. 295).</p>
+          </div>
+          <div>
+            <head xml:id="docIn23">Intern varians</head>
+            <p rend="noIndent">F&#x00F8;lgende tre eksemplarer er blevet kollationeret og beskrives nedenfor:</p>
+            <list type="simple">
+              <item>A. Syddansk Universitetsbibliotek, Odense (stregkode 550202662773)</item>
+              <item>B. Det Kongelige Bibliotek, K&#x00F8;benhavn (katalognr.: 60,- 29. 8<hi rend="raised">o</hi>)</item>
+              <item>C. Det Kongelige Bibliotek, K&#x00F8;benhavn (katalognr.: K, 468 8<hi rend="raised">o</hi>)</item>
+            </list>
+            <p rend="noIndent">Ved intern kollation af disse tre eksemplarer af f&#x00F8;rstetrykket er der ikke konstateret egentlig intern varians.</p>
+            <p rend="noIndent">I eksemplar A mangler enkelte bogstaver sv&#x00E6;rte. Eksemplar B har generelt for lidt tryksv&#x00E6;rte. Eksemplar C har det klareste trykspejl og er derfor valgt som tekstgrundlag.</p>
+          </div>
+          <div>
+            <head xml:id="docIn24">De kollationerede eksemplarer</head>
+            <div>
+              <head xml:id="docIn27">Beskrivelse af eksemplar fra Syddansk Universitetsbibliotek, Odense (stregkode 550202662773)</head>
+              <p rend="noIndent">Dette er et ubesk&#x00E5;ret eksemplar, som findes indbundet i 2. bind i &#x00E5;rgang 1808. Bladhovedet er centreret og er fra tredje linje sat med aftagende skriftgrader (&#x2215; markerer linjeskift): &#x201C;Ny / danske Tilskuer. / [lang b&#x00F8;lget skillestreg] / No. 55. / [b&#x00F8;lget skillestreg i klummebredden] / Ki&#x00F8;benhavn. Mandagen den 18 Juli 1808. / Trykt og forlagt af Directeur <persName key="pe73">Johan Frederik Schultz</persName>. / [prydstreg i klummebredden]&#x201D;. Titlen og trykkerens navn er spatierede. </p>
+              <p rend="noIndent">Eksemplaret er indbundet i et tarveligt bl&#x00E5;gr&#x00E5;t papbind med fast ryg, uden nogen bevaret p&#x00E5;skrift. Forpermen er stemplet: ODENSE / 30 AUG. 1967 / UNIVERSITETSBIBLIOTEK. Stemplet p&#x00E5; titelbladet er &#x201C;Studenterforeningen&#x201D;, og p&#x00E5; det modst&#x00E5;ende, p&#x00E5;kl&#x00E6;bede forsatsblad er der med blyant skrevet &#x201C;No1&#x201D; og med bl&#x00E6;k, i &#x00E6;ldre h&#x00E5;nd, &#x201C;N<hi rend="raised">o</hi> 1707.&#x201D;</p>
+              <p rend="noIndent">Dette eksemplar har afgivet faksimiler til <hi rend="italic">Grundtvigs V&#x00E6;rker,</hi> da det er ubesk&#x00E5;ret. Siderne m&#x00E5;ler op til 190 &#x00D7; 171 mm.</p>
+            </div>
+            <div>
+              <head xml:id="docIn26">Beskrivelse af eksemplar fra Det Kongelige Bibliotek, katalognr. K, 468 8<hi rend="raised">o</hi>
+</head>
+              <p rend="noIndent">Dette er et besk&#x00E5;ret eksemplar med r&#x00F8;dt snit og indbundet i hell&#x00E6;der. Det har en fast, st&#x00E6;rkt forgyldt ryg, hvis r&#x00F8;de titelfelt lyder &#x201C;Den Danske / Tilskuer.&#x201D;, med &#x00E5;rstallet 1808 i det sorte bindfelt. P&#x00E5; foden af ryggen st&#x00E5;r der &#x201C;B.[ibliotheca]U.[niversitatis]H.[afniensis]&#x201D;, og Universitetsbibliotekets initialer er ogs&#x00E5; blevet p&#x00E5;stemplet titelbladet. P&#x00E5; det p&#x00E5;kl&#x00E6;bede forsatsblad findes det senere stempel for Det Kongelige Bibliotek samt katalognummer og stregkode.</p>
+              <p rend="noIndent">Eksemplaret rummer hele &#x00E5;rgangen og er trykt p&#x00E5; groft, tarveligt papir. En side m&#x00E5;ler 170 &#x00D7; 98 mm.</p>
+            </div>
+            <div>
+              <head xml:id="docIn28">Beskrivelse af eksemplar fra Det Kongelige Bibliotek, katalognr. 60,- 29. 8<hi rend="raised">o</hi>
+</head>
+              <p rend="noIndent">Dette besk&#x00E5;rne pragteksemplar med hvidt snit rummer 2. bind af &#x00E5;rgang 1808 og er indbundet i et forgyldt, brunt hell&#x00E6;derbind. Den slidte ryg har fem oph&#x00F8;jede bind. P&#x00E5; titelfeltets r&#x00F8;de skind er der trykt med guld: &#x201C;<persName key="pe24">Rahbeks</persName> / Danske / Tilskuer&#x201D;; bindfeltet er bekl&#x00E6;dt med m&#x00F8;rkebrunt skind og lyder: &#x201C;1808 / [2]. Bind&#x201D;. Der st&#x00E5;r C7 i superexlibris, og <persName key="pe105">Christian 7.s</persName> monogram ses ogs&#x00E5; som vandm&#x00E6;rke p&#x00E5; det l&#x00F8;se forsatsblad ved bagpermen. Det tilsvarende forsatsblad ved forpermen har bim&#x00E6;rket CD. Ejerstemplet &#x201C;BIBLIOTHECA REGIA HAFNIENSIS&#x201D; med logo findes b&#x00E5;de p&#x00E5; det p&#x00E5;kl&#x00E6;bede forsatsblad og bag p&#x00E5; det l&#x00F8;se forsatsblad; p&#x00E5; bagsiden st&#x00E5;r desuden katalogsignaturen skrevet med bl&#x00E6;k:
+                60,-29. Fribladet er blankt, og stregkoden findes forrest p&#x00E5; det l&#x00F8;se forsatsblad, der som det p&#x00E5;kl&#x00E6;bede er marmoreret.</p>
+              <p rend="noIndent">Selve eksemplaret er trykt p&#x00E5; fint, hvidt papir. I eksemplaret ses flige af vandm&#x00E6;rket &#x00F8;verst p&#x00E5; bladene ved falsen. Vandm&#x00E6;rket best&#x00E5;r af et kronet v&#x00E5;benskjold med posthorn og et bim&#x00E6;rke, der indeholder bogstavet D. Vandm&#x00E6;rket har ikke med sikkerhed kunne rekonstrueres i detaljer. En side m&#x00E5;ler 176 &#x00D7; 110 mm.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn30">Tekstkritik</head>
+        <list type="textualCriticismPluralis"></list>
+      </div>
+      <div type="litList">
+        <head xml:id="docIn29">Anvendt litteratur</head>
+        <list type="litList">
+          <item>
+<rs type="title" key="title189">
+<hi rend="italic">Adresseavisen</hi>
+</rs> (<hi rend="italic">Kj&#x00F8;benhavns Kongelig Adressecomptoirs alene privilegerede Efterretninger</hi>), 23. juni 1810, Till&#x00E6;gget. K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">Bibliografien,</hi> se Johansen, Steen</item>
+          <item>
+<hi rend="italic">
+<rs type="title" key="title564">Dagen</rs>
+</hi> (1809) nr. 28, 11. februar. K&#x00F8;benhavn</item>
+          <item>
+<rs type="title" key="title887">
+<hi rend="italic">Dansk Biografisk Leksikon</hi> 1. udgave</rs>, 1-19 (1887-1905), bind 12 (1898). K&#x00F8;benhavn</item>
+          <item>
+<rs type="title" key="title556">
+<hi rend="italic">Dansk Biografisk Leksikon,</hi> 3. udgave</rs> (1979-1984). K&#x00F8;benhavn</item>
+          <item>Erslew, Thomas Hansen (1962-1965) <hi rend="italic">
+<rs type="title" key="title116">Almindeligt Forfatter-Lexicon for Kongeriget Danmark med tilh&#x00F8;rende Bilande, fra 1814 til 1840</rs>.</hi> K&#x00F8;benhavn [1847]. Fotografisk optryk. K&#x00F8;benhavn</item>
+          <item>Grundtvig, Nicolai Frederik Severin (1815) <hi rend="italic">
+<rs type="title" key="title334">Kv&#x00E6;dlinger eller Smaakvad</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Ils&#x00F8;e, Harald (1992) <hi rend="italic">
+<rs type="title" key="title427">Bogtrykkerne i K&#x00F8;benhavn og deres virksomhed ca. 1600-1810. En biobibliografisk h&#x00E5;ndbog med bidrag til bogproduktionens historie</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Jensen, Anne E. (1960) <hi rend="italic">
+<rs type="title" key="title888">Rahbek og de danske Digtere. I Anledning af Rahbeks 200 Aars F&#x00F8;dselsdag den 18. December 1960</rs>.</hi> Frederiksberg</item>
+          <item> Johansen, Steen (1948-54) <rs type="title" key="title35">
+<hi rend="italic">Bibliografien</hi> 1-4</rs>. K&#x00F8;benhavn</item>
+          <item>J&#x00F8;rgensen, Harald (1978) <hi rend="italic">
+<rs key="title799" type="title">Trykkefrihedssp&#x00F8;rgsmaalet i Danmark 1799-1848. Et Bidrag til en Karakteristik af den danske Enev&#x00E6;lde i Frederik VI's og Christian VIII's Tid</rs>
+</hi> [1944]. K&#x00F8;benhavn</item>
+          <item>Kirchhoff-Larsen, Chr. (1942-1962) <rs type="title" key="title660">
+<hi rend="italic">Den danske Presses Historie</hi>
+</rs> 1-3, bind 2: <hi rend="italic">1749-1827</hi> (1947). K&#x00F8;benhavn</item>
+          <!--item><persName key="pe52">Lundgreen-Nielsen, Flemming (1980) <hi rend="italic"><rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819.</rs></hi> K&#x00F8;benhavn</item>-->
+          <!--<item>R&#x00F8;nning, Frederik (1907) <hi rend="italic"><rs type="title" key="title20">N.F.S. Grundtvig. Et Bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;hundrede</rs></hi> bind 2:1. K&#x00F8;benhavn</item>-->
+          <item>Mynster, J.P. (1852-1857) &#x201C;Indledning til: &#x2018;Samling af Skrivter til Erindring af K. L. Rahbek og K. M. Rahbek, f&#x00F8;d Heger.&#x2019; 1830&#x201D; i <rs type="title" key="title885">
+<hi rend="italic">Blandede Skrivter</hi>
+</rs> 1-6, bind 3 (1853), s. 146-166. K&#x00F8;benhavn</item>
+          <item>Oehlenschl&#x00E4;ger, Adam (1945-1950) <hi rend="italic">
+<rs type="title" key="title883">Breve fra og til Adam Oehlenschl&#x00E4;ger. Januar 1798 &#x2013; November 1809</rs>
+</hi> 1-5, udg. af H.A. Paludan, Daniel Preisz, Morten Borup, m.fl. K&#x00F8;benhavn</item>
+          <item>Pavels, C[laus] (1806) &#x201C;[Anmeldelse af] Den danske Tilskuer; udgivet af K. L. Rahbek, fra 1799 til 1805&#x201D; i <hi rend="italic">
+<rs type="title" key="title646">Kj&#x00F8;benhavnske l&#x00E6;rde Efterretninger for Aar 1806</rs>
+</hi> nr. 12, s. 177-184. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806a) &#x201C;Brev fra Tilskuerens Pen&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 1, 16. januar, s. 1-8. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806b) &#x201C;Brev fra Qvinbus Flestrin om, hvad Tilskueren ikke skulde gi&#x00F8;re&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 2, 20. januar, s. 9-14. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806c) &#x201C;Brev fra Sprogsmag, Menneskesands, Vid, Grundighed, og F&#x00F8;lelse&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 8, 13. februar, s. 57-63. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806d) &#x201C;Brev fra Almeenaand&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 12, 24. februar, s. 89-96. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806e) &#x201C;Noget angaaende Tilskuerens forandrede Tone, med en Pr&#x00F8;ve af Clausens nysudkomne trende Taler, om hvad der udfordres til et lykkeligt &#x00C6;gteskab&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 26, 7. april, s. 201-208. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806f) &#x201C;Brev fra Hr. Skriver om Maaden at skrive Nyt&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 35, 15. maj, s. 273-280. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1806g) &#x201C;Tilskuerens Afsked&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>
+</hi> nr. 104, 29. december 1806, s. 825-832. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1807a) &#x201C;Om Tilskuerens nuv&#x00E6;rende Formaal&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 1, 12. januar 1807, s. 1-8. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1807b) &#x201C;Om Tilskuerens Taushed i Capitulationstiden&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 69, 19. oktober 1807, s. 545-550. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1808: 1809) &#x201C;Tilskuerens Afsked&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 104, december 1808 (: 1809), s. 827-832. K&#x00F8;benhavn</item>
+          <item>[Rahbek, Knud Lyne] (1811) &#x201C;Brev fra Sandsigerens Sandsiger&#x201D; [overskrift fra bindoversigten] i <rs type="title" key="title794">
+<hi rend="italic">Sandsigeren, eller den danske Huusven, et Ugeskrift</hi>
+</rs> nr. 1, 6. februar 1811, s. 3-12. K&#x00F8;benhavn</item>
+          <item>Rahbek, Knud Lyne (1824-1829) <hi rend="italic">
+<rs type="title" key="title898">Erindringer af mit Liv</rs>
+</hi> 1-5, bind 4 (1827) og 5 (1829). K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">
+<rs type="title" key="title794">Sandsigeren, eller den danske Huusven, et Ugeskrift</rs>
+</hi> (1811) udg. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+          <item>S&#x00F8;llinge, Jette D. &amp; Niels Thomsen (u.&#x00E5;.: 1988-1991) <hi rend="italic">
+<rs type="title" key="title1">De danske aviser 1634-1989</rs>
+</hi> 1-2, bind 1 (1988): <hi rend="italic">1634-1848.</hi> K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">
+<rs type="title" key="title908">Tableau de Paris</rs>
+</hi> (1781-1788) udg. af [Louis S&#x00E9;bastien Mercier]. Amsterdam [f&#x00F8;rsteudgave: Hamburg &amp; Neuch&#x00E2;tel, 1781-1788]</item>
+          <item>Wors&#x00F8;e-Schmidt, Lisbeth (2007) &#x201C;Spectators in Denmark&#x201D;, i <hi rend="italic">
+<rs type="title" key="title881">Nordic Light</rs>,</hi> udg. af Thomas Bredsdorff, S&#x00F8;ren Peter Hansen &amp; Anne-Marie Mai, s. 23-34. Odense</item>
+        </list>
+
+      </div>
+
+    </body>
+</text>
+</TEI>

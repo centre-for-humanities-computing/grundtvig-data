@@ -1,0 +1,1506 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="main">B&#x00F8;n og Begreb om en Dansk H&#x00F8;iskole i Soer</title>
+            <title rend="shortForm">B&#x00F8;n og Begreb</title>
+            <author>Henrik Yde</author>
+            <editor role="editor2">dr.theol. K.E. Bugge</editor>
+            <editor role="editor3">Johnny Kondrup</editor> 
+            <editor role="editor1">Kim Steen Ravn</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>9 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, University of Aarhus</publisher>
+            <distributor>Grundtvig Centeret, Vartov</distributor>
+                 
+            <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+         </publicationStmt>
+         
+         <notesStmt>
+            <note type="txt" target="1840_680_txt.xml">L&#x00E6;setekst</note>
+            <note xml:id="thisFile" type="com" target="1840_680_com.xml">Punktkommentar</note>
+         </notesStmt>
+         
+         
+            <sourceDesc><p /></sourceDesc>
+      </fileDesc>
+<encodingDesc>
+            <projectDesc>
+               <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+               <p>Grundtvig Centeret arbejder med:</p>
+               <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+               <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+               <p>2.a. Teologi og kirke</p>
+               <p>2.b. Demokrati og folkelighed</p>
+               <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+               <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         </encodingDesc>
+<revisionDesc>
+            <change xml:id="KSR" who="KSR" when="2010-11-24">forel&#x00F8;big kom-model</change>
+            <change xml:id="RSB" who="RSB" when="2010-11-25">slettet lemmata</change>
+            <change who="KSR" when="2010-11-25">00BB og 00AB rettet til 201C og 201D</change>
+            <change who="KSR" when="2011-01-11">kommentarer lagt ind for anden gang</change>
+            <change who="HY" when="2011-01-19">opm&#x00E6;rkning til navnebase</change>
+            <change who="HY" when="2011-01-20">opm&#x00E6;rkning til navnebase</change>
+            <change who="KSR" when="2011-01-20">ny struktur og nyt skema (rnc + include); mulighed for to etager i kommentaren</change>
+            <change who="HY" when="2011-01-21">opm&#x00E6;rkning til navnebase</change>
+            <change who="HY" when="2011-01-24">opm&#x00E6;rkning til mytebase</change>
+            <change who="HY" when="2011-01-25">opm&#x00E6;rkning til titelbase</change>
+            <change who="HY" when="2011-01-26">opm&#x00E6;rkning til titel- og personbaser</change>
+            <change who="KSR" when="2011-01-26">validering; en fejl genst&#x00E5;r</change>
+            <change who="KSR" when="2011-01-26">fejl rettet</change>
+            <change who="HY" when="2011-02-03">Fejl rettet. Korrektur p&#x00E5; mytehenvisninger. Indrettet underetager i mange noter</change>
+            <change who="KSR" when="2011-02-14">fejl valideret; sendt til PE og JT</change>
+            <change who="HY" when="2011-02-23">litteraturliste tilf&#x00F8;jet</change>
+            <change who="HY" when="2011-02-23">litteraturliste valideret. Afgang til Norge</change>
+            <change who="HY" when="2011-02-23">rettet en kommentar. Afgang til Norge</change>
+            <change who="KSR" when="2011-04-01">rettelse i henhold til nye skema</change>
+            <change who="HY" when="2011-04-04">tilf&#x00F8;jet kommentar nr. 252.</change>
+            <change who="HY" when="2011-05-05">indf&#x00F8;rt korrekturrettelser efter sk&#x00E6;rm med KSR</change>
+            <change who="HY" when="2011-05-06">indf&#x00F8;rt korrekturrettelser efter sk&#x00E6;rm</change>
+            <change who="HY" when="2011-07-06">indf&#x00F8;rt rettelser efter NWBs redaktion</change>
+            <change who="HY" when="2011-08-10">indf&#x00F8;rt rettelser i com 235</change>
+            <change who="HY" when="2011-08-12">indf&#x00F8;rt rettelser i com 144</change>
+            <change who="HY" when="2011-08-31">indf&#x00F8;rt rettelser i com 21. Fjernet m&#x00E6;slinger fra readMore.</change>
+            <change who="HY" when="2011-09-27">Fjernet m&#x00E6;slinger fra readMore: p forsynet med rend="noIndent".</change>
+            <change who="HY" when="2011-09-29">indf&#x00F8;rt title i hoved. Forholdt mig til FLNs forslag til og med com36.</change>
+            <change who="HY" when="2011-10-03">Forholdt mig til FLNs forslag til og med com121.</change>
+            <change who="HY" when="2011-10-04">Forholdt mig til FLNs forslag til og med com191.</change>
+            <change who="HY" when="2011-10-05">Forholdt mig til FLNs forslag til og med com225. Tilf&#x00F8;jet noter til og med 411.</change>
+            <change who="HY" when="2011-10-06">Forholdt mig til FLNs forslag fra com225 og ud. Forholdt mig til KEBs forslag til og med com268. Tilf&#x00F8;jet note 412.</change>
+            <change who="HY" when="2011-10-07">Forholdt mig til KEBs forslag - f&#x00E6;rdig.</change>
+            <change who="HY" when="2011-10-10">&#x00C6;ndret bogfortegnelse &gt; Bogfortegnelse.</change>
+            <change who="HY" when="2011-10-28">Rettet hist og pist.</change>
+            <change who="HY" when="2011-11-01">Rettet pist.</change>
+            <change who="HY" when="2011-11-04">Rettet tei-header efter evne.</change>
+            <change who="HY" when="2011-11-17">Rettet til version 0.9.</change>
+            <change who="KSR" when="2011-11-28">tilretning af teiHeader, etc.</change>
+            <change who="HY" when="2011-11-30">fjernet ordet 'bind' efter nyt sm&#x00E5;tingstalalog</change>
+            <change who="HY" when="2011-12-02">valideret!</change>
+            <change who="HY" when="2011-12-08">valideret com225, der havde en henvisning til 1807/65, com225.</change>
+            <change who="HY" when="2012-01-17">slettet place-opm&#x00E6;rkninger</change>
+            <change who="HY" when="2012-03-02">Sammensatte &#x00E5;rstal skrevet helt ud</change>
+            <change who="HY" when="2012-04-23">valdideret</change>
+            <change who="HY" when="2012-08-16">&#x00C6;ndret versionsnummer til 1.1</change>
+            <change who="HY" when="2013-05-03">&#x00C6;ndret koden for Zeus</change>
+            <change who="HY" when="2013-09-23">Rettet i henhold til KNs rettelse af 19.8.13, som i dag blev fejlagtigt overskrevet</change>
+               <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+         <change who="NHB" xml:id="NHB" when="2014-11-04">ved ...-tegn erstattet koden 0085 med unicode 2026</change> 		</revisionDesc>
+   </teiHeader>
+      <text type="com">
+            <body>
+         
+
+<note xml:id="com1">
+   <p>id&#x00E9;.</p>
+</note>
+   
+<note xml:id="com2">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com3">
+   <p>arkaiserende for Sor&#x00F8;, som i de &#x00E6;ldste kilder ben&#x00E6;vnes Sor.</p>
+</note>
+   
+<note xml:id="com4">
+   <p>Den Wahlske Boghandling, dvs. boghandel, l&#x00E5; i K&#x00F8;benhavn, og virksomheden
+               omfattede desuden bogbinderi og forlag. 1822-1841 ejedes den af <persName key="pe211">Jacob Frederik Milo</persName>, s&#x00F8;n af den kendte boghandler <persName key="pe213">Friedrich Wilhelm Milo</persName> fra Odense. Forlaget var under Milo
+               og efterf&#x00F8;lgeren 1841-1858 <persName key="pe214">E. Skouboe</persName>
+               grundtvigsk pr&#x00E6;get.</p>
+</note>
+   
+<note xml:id="com5">
+   <p>k&#x00F8;benhavnsk bogtrykkeri, grundlagt 1809 af <persName key="pe38">Christopher
+                  Gr&#x00E6;be</persName>, 1840-1882 ledet af s&#x00F8;nnen <persName key="pe215">Johan Christian Frederik Gr&#x00E6;be</persName>.</p>
+</note>
+     
+
+<note xml:id="com7">
+   <p>vedr&#x00F8;rende, om.</p>
+</note>
+   
+<note xml:id="com8">
+   <p>(arkaiserende) konge.</p>
+</note>
+   
+<note xml:id="com9">
+   <p>Udtrykket, som Grundtvig ogs&#x00E5; bruger enkelte andre steder, er dannet af ham selv og er et billede p&#x00E5; Danmark.</p>
+</note>
+   
+<note xml:id="com10">
+   <p>allusion til sagnet om det skib uden mandskab, der bragte den sp&#x00E6;de kong <rs key="myth67" type="myth">Skjold</rs>, og med ham lykke og velstand, til Danmark.</p>
+   <note type="readMore">
+      <p>Grundtvig var den f&#x00F8;rste forsker, der fandt kilden til sagnet om <rs key="myth67" type="myth">Skjold</rs> i det oldengelske heltekvad om <rs key="myth406" type="myth">Bjoulf</rs> og hos senere, middelalderlige engelske skribenter (men ikke hos Saxo); Grundtvig formulerede sig tydeligst herom 1820 i &#x201C;Indledning og Fortale&#x201D; til sin fri gendigtning af dette oldengelske kvad, hos ham: <hi rend="italic">
+<rs key="title326" type="title">Bjowulfs Drape. Et Gothisk Helte-digt fra forrige Aar-Tusinde af Angel-Saxisk paa Danske Riim,</rs>
+</hi> s. XXXVII-XXXIX.</p>
+   </note>
+</note>
+   
+<note xml:id="com13">
+   <p>endnu, stadig.</p>
+</note>
+   
+<note xml:id="com14">
+   <p>regel eller godt eksempel, som en konge kan tage til rettesnor for sin regeringsf&#x00F8;relse; med allusion til <hi rend="italic">Konungsskuggsj&#x00E1; (Speculum regale),</hi> en norsk l&#x00E6;rebog fra 1200-tallet om h&#x00F8;viske s&#x00E6;der for konger, hirdm&#x00E6;nd og k&#x00F8;bm&#x00E6;nd.</p>
+</note>
+   
+<note xml:id="com16">
+   <p>(her) landet, Danmark.</p>
+</note>
+   
+<note xml:id="com17">
+   <p>scepteret.</p>
+</note>
+   
+<note xml:id="com18">
+   <p>adelsskjold, ridderskjold.</p>
+</note>
+   
+<note xml:id="com19">
+   <p>(her, som ofte hos Grundtvig) landet, Danmark.</p>
+</note>
+   
+<note xml:id="com20">
+   <p>hals- og h&#x00E5;ndsret, dvs. uindskr&#x00E6;nket magt over nogen eller noget.</p>
+</note>
+   
+<note xml:id="com21">
+   <p>Muligvis alluderes der til de ord fra <rs key="Rom 10,8-10" type="bible">Rom 10,8-10</rs>
+               (hvor der i begyndelsen er indarbejdet et citat fra <rs key="5 Mos 30,14" type="bible">5 Mos 30,14</rs>), som Grundtvig ofte l&#x00E6;nede sig op ad i sin teologi:
+      &#x201C;&#x2018;(&#x2026;) Ordet er dig n&#x00E6;r, i din mund og i dit hjerte,&#x2019; og
+               det ord er troens ord, som vi pr&#x00E6;diker. For hvis du med din mund bekender, at
+               Jesus er Herre, og i dit hjerte tror, at Gud har oprejst ham fra de d&#x00F8;de, skal
+               du frelses. For med hjertet tror man til retf&#x00E6;rdighed, med munden bekender man
+               til frelse&#x201D;.</p>
+</note>
+   
+<note xml:id="com22">
+   <p>bier.</p>
+</note>
+   
+<note xml:id="com23">
+   <p>Valdemarerne er en samlebetegnelse for <persName key="pe216">Valdemar 1. den Store</persName> og hans to s&#x00F8;nner <persName key="pe217">Knud 6.</persName> og <persName key="pe218">Valdemar 2. Sejr</persName>. </p>
+   <note type="readMore">
+      <p>Derimod regnes <persName key="pe219">Valdemar 3.</persName> og <persName key="pe220">Valdemar 4. Atterdag</persName> ikke til Valdemarerne.</p>
+   </note>
+</note>
+   
+<note xml:id="com24">
+   <p>(h&#x00F8;jtideligt, arkaiserende) varsel om nu- og fremtidige lykkelige begivenheder; herligt
+               &#x00E5;r, i hvilket en lykkelig begivenhed fejres; her hentydning til <persName key="pe98">Christian 8.s</persName> og dronning <persName key="pe108">Caroline
+                  Amalies</persName> s&#x00F8;lvbryllup 22. maj 1840 og/eller til kongens salving i
+               Frederiksborg Slotskirke 28. juni 1840, jf. Grundtvigs <hi rend="italic">
+<rs key="title428" type="title">Skjalde-Blik paa Danmarks Stjerne i S&#x00F8;lv-Bryllups og Kroningsaaret 1840.</rs>
+</hi>
+</p>
+</note>
+   
+<note xml:id="com25">
+   <p>p&#x00E5; tryk, f.eks. af danske digtere og sprogvidenskabsm&#x00E6;nd.</p>
+</note>
+   
+<note xml:id="com26">
+   <p>allerede.</p>
+</note>
+   
+<note xml:id="com27">
+   <p>billede p&#x00E5; Danmark i 1. strofe, 1. vers af <persName key="pe221">Laurids O.
+                  Koks</persName>
+               <rs type="title" key="title77">&#x201C;Dannevirkevisen&#x201D; eller &#x201C;Danmark
+                  deiligst vang og v&#x00E6;nge&#x201D;</rs> (trykt 1695; mel. af <persName key="pe222">P.E. Rasmussen</persName> 1811). Grundtvig udgav mellem 1816 og 1848
+               fire bearbejdelser af denne sang.</p>
+</note>
+   
+<note xml:id="com28">
+   <p>dyrket jordstykke, mark.</p>
+</note>
+   
+<note xml:id="com29">
+   <p>indhegnet jordstykke, mark, eng; siden <persName key="pe221">Koks</persName> <rs type="title" key="title77">&#x201C;Dannevirkevisen&#x201D;</rs> i poetisk betydning om Danmark som det frodige, af havet omgivne (indhegnede) land, jf. 1. strofe, 2. vers: &#x201C;Lukt [lukket, afsp&#x00E6;rret] med b&#x00F8;lgen blaa&#x201D;.</p>
+</note>
+   
+<note xml:id="com31">
+   <p>n&#x00F8;den, tr&#x00E6;ngslen, smerten.</p>
+</note>
+   
+<note xml:id="com32">
+   <p>underforst&#x00E5;et: kvindek&#x00F8;nnets.</p>
+</note>
+   
+<note xml:id="com33">
+   <p>endog, selv.</p>
+</note>
+   
+<note xml:id="com34">
+   <p>Efter afsk&#x00E6;ring af kornet sattes neget &#x2018;p&#x00E5; rod&#x2019;, dvs. med sk&#x00E6;refladen nedad og aksene opad.</p>
+</note>
+   
+<note xml:id="com35">
+   <p>If&#x00F8;lge sagnet l&#x00E5; den sp&#x00E6;de kong <rs type="myth" key="myth67">Skjold</rs> i det f&#x00F8;rerl&#x00F8;se skib med hovedet hvilende p&#x00E5; et kornneg.</p>
+</note>
+   
+<note xml:id="com36">
+   <p>(arkaiserende) barnefyrsten, barnekongen.</p>
+</note>
+   
+<note xml:id="com38">
+   <p>hentydning til <rs type="myth" key="myth137">Frode Fredegods</rs> og til <persName key="pe96">Frederik 6.s</persName> ligf&#x00E6;rd. <rs type="myth" key="myth137">Frode
+                  Fredegod</rs> blev if&#x00F8;lge <persName key="pe237">Saxo</persName> efter sin
+               d&#x00F8;d b&#x00E5;ret rundt i landet i tre &#x00E5;r, f&#x00F8;r man kunne bekvemme
+               til at acceptere hans d&#x00F8;d og lade ham begrave; <persName key="pe96">Frederik
+                  6.s</persName> kiste blev b&#x00E5;ret gennem Roskilde by til domkirken af 250
+               b&#x00F8;nder i skiftende hold p&#x00E5; 46.</p> 
+</note>
+   
+<note xml:id="com39">
+   <p>billede p&#x00E5; Sor&#x00F8;.</p>
+</note>
+   
+<note xml:id="com40">
+   <p>(poetisk; omr&#x00E5;de i en) l&#x00F8;vskov, der minder om en h&#x00F8;jloftet sal med s&#x00F8;jler.</p>
+</note>
+   
+<note xml:id="com41">
+   <p>(arkaiserende, folkevisevending) p&#x00E5; en &#x00F8; eller langs stranden af en &#x00F8; eller et land.</p>
+</note>
+   
+<note xml:id="com42">
+   <p>plantesl&#x00E6;gt i rubladsfamilien, besl&#x00E6;gtet med forglemmigej, oftest med lysebl&#x00E5; blomster; (her poetisk) k&#x00E6;re minder eller noget, som b&#x00E6;rer pr&#x00E6;g af beskedenhed, troskyldighed o.l. Grundtvig g&#x00F8;r desuden ordet til et symbol p&#x00E5; (k&#x00E6;rlighed til) den danske f&#x00E6;drelandshistorie.</p>
+</note>
+   
+<note xml:id="com43">
+   <p>dansk form af <persName key="pe223">Absalon</persName>; 1162 lod han sin families benediktinerkloster i Sor&#x00F8; omdanne til en cistercienserstiftelse. Han ligger begravet i Sor&#x00F8; Kirke.</p>
+</note>
+   
+<note xml:id="com44">
+   <p>(arkaiserende) hv&#x00E6;lvede.</p>
+</note>
+   
+<note xml:id="com45">
+   <p>Kirken var opf&#x00F8;rt som den magtfulde Hvide-sl&#x00E6;gts gravkirke og blev fra 1300-tallet ogs&#x00E5; kongelig gravkirke. </p>
+   <note type="readMore">
+<p>Foruden <persName key="pe223">Absalon</persName> ligger bl.a. hans farfar <persName key="pe224">Skjalm Hvide</persName>, hans for&#x00E6;ldre <persName key="pe225">Asser Rig</persName> og <persName key="pe226">Inge Eriksdatter</persName> samt hans bror <persName key="pe227">Esbern Snare</persName> begravet her. Desuden kongerne <persName key="pe228">Christoffer 2.</persName>, <persName key="pe220">Valdemar 4. Atterdag</persName> og <persName key="pe229">Oluf 2.</persName>
+</p>
+</note>
+</note>
+   
+<note xml:id="com46">
+   <p>En malet skjoldfrise i Sor&#x00F8; Kirke, p&#x00E5;begyndt ca. 1290 og suppleret frem til reformationen, gengiver navne og v&#x00E5;benskjolde p&#x00E5; en lang r&#x00E6;kke af klosterets og kirkens velg&#x00F8;rere. Grundtvig havde tidligere n&#x00E6;vnt frisen i digtet <rs type="title" key="title104">&#x201C;Sor&#x00F8; Kirke&#x201D;</rs> (1810).</p> 
+   <note type="readMore">
+<p>P&#x00E5; Grundtvigs tid var is&#x00E6;r de &#x00E6;ldste dele af
+                  frisen delvis overkalkede. Frisen restaureredes til sin nuv&#x00E6;rende form
+                  1871-1873. En (st&#x00E6;rkt) kritisk gennemgang af restaureringen findes i
+                     <persName key="pe289">Henry Petersen</persName>: <rs type="title" key="title111">&#x201C;Skjoldefrisen i Sor&#x00F8; Kirke. Et kritisk Bidrag til
+                     dansk Heraldik&#x201D;</rs>, i: <hi rend="italic">Aarb. for nord. Oldk. og
+                     Historie</hi> (1883).</p>
+</note>
+</note>
+   
+<note xml:id="com47">
+   <p>Begrebet &#x2018;nyt&#x00E5;r&#x2019; har, jf. titlerne p&#x00E5; <rs type="title" key="title102">
+<hi rend="italic">Nyaars-Morgen</hi>
+</rs> og en lang r&#x00E6;kke andre skrifter hvori ordet indg&#x00E5;r, for Grundtvig vide, symbolske betydninger: menneskelig, folkelig, national og/eller &#x00E5;ndelig genf&#x00F8;dsel.</p>
+</note>
+   
+<note xml:id="com48">
+   <p>plantesl&#x00E6;gt i rubladsfamilien, besl&#x00E6;gtet med forglemmigej, oftest med lysebl&#x00E5; blomster; (her poetisk) k&#x00E6;re minder eller noget, som b&#x00E6;rer pr&#x00E6;g af beskedenhed, troskyldighed o.l. Grundtvig g&#x00F8;r desuden ordet til et symbol p&#x00E5; (k&#x00E6;rlighed til) den danske f&#x00E6;drelandshistorie.</p>
+</note>
+   
+<note xml:id="com49">
+   <p>I nordisk mytologi forts&#x00E6;tter de krigere, der er faldet med &#x00E6;re p&#x00E5; slagmarken, deres krigertilv&#x00E6;relse i <rs type="myth" key="myth101">Valhal</rs>; om dagen k&#x00E6;mper de, men vender alle hjem til hallen om aftenen, ogs&#x00E5; de, der er blevet sl&#x00E5;et ihjel igen i dagens l&#x00F8;b.</p>
+</note>
+   
+<note xml:id="com51">
+   <p>Lejre er if&#x00F8;lge traditionen Danmarks &#x00E6;ldste konges&#x00E6;de; flere middelalderlige kilder, bl.a. <persName key="pe237">Saxo</persName>, omtaler Lejre som s&#x00E6;de for skjoldunge&#x00E6;tten med sagnkongerne <rs type="myth" key="myth30">Halfdan</rs>, <rs type="myth" key="myth62">Roar</rs>, <rs type="myth" key="myth34">Helge</rs> og <rs type="myth" key="myth63">Rolf Krake</rs>.</p>
+</note>
+   
+<note xml:id="com52">
+   <p>n&#x00E6;ppe i konkret betydning, men som billede p&#x00E5; latinsk sprog og dannelse som tyranniske magter.</p>
+</note>
+     
+<note xml:id="com53">
+   <p>id&#x00E9;.</p>
+</note>
+   
+<note xml:id="com54">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com55">
+   <p>Is&#x00E6;r siden afholdelsen af de f&#x00F8;rste r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Roskilde 1. oktober 1835-26. februar 1836, hvor der forhandledes mundtligt og p&#x00E5; dansk, h&#x00E6;vdede Grundtvig energisk, at der burde v&#x00E6;re et sted - en folkelig h&#x00F8;jskole - hvor modersm&#x00E5;let var ener&#x00E5;dende som undervisningssprog, og hvor borgere og b&#x00F8;nder, der kun mestrede deres modersm&#x00E5;l, kunne erhverve sig selvtillid og kundskab til at g&#x00F8;re sig direkte g&#x00E6;ldende i provinsialst&#x00E6;nderne.</p> 
+   <note type="readMore">
+<p>S&#x00E5;ledes i <hi rend="italic">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</hi> (1836).</p>
+</note>
+</note>
+   
+<note xml:id="com56">
+   <p>Et s&#x00E5;dant idiom eller citat har ikke kunnet identificeres; i tilstr&#x00E6;bt
+               popul&#x00E6;r stil kunne Grundtvig ofte kombinere nogle n&#x00F8;gleord af eller fra
+               et emne og s&#x00E6;tte dem i anf&#x00F8;rselstegn, uden at der n&#x00F8;dvendigvis
+               derfor er tale om et citat eller idiom.</p>
+</note>
+   
+<note xml:id="com57">
+   <p>dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com58">
+   <p>dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com59">
+   <p>til sin tid.</p>
+</note>
+   
+<note xml:id="com60">
+   <p>medlemmer af de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com62">
+   <p>28. januar 1827 fik Sor&#x00F8; Akademi nye statutter, hvori det hed, at akademiet ikke blot skulle forberede til et embedsstudium ved universitetet, men tillige &#x201C;udbrede videnskabelige Kundskaber i Privatlivets forskellige Krese&#x201D;, <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>,</hi> 2.2 (1931), s. 399.</p>
+</note>
+   
+<note xml:id="com63">
+   <p>Akademiet m&#x00E5;tte kun optage studerende, der udgik fra latinskolen i Sor&#x00F8;, ligesom denne kun m&#x00E5;tte dimittere til akademiet.</p>
+</note>
+   
+<note xml:id="com64">
+   <p>den l&#x00E6;rde skole (latinskolen) i Sor&#x00F8;.</p>
+</note>
+   
+<note xml:id="com65">
+   <p>Sk&#x00F8;nt der if&#x00F8;lge kongelig resolution af 28. august 1837 indf&#x00F8;rtes realskoleundervisning ved Sor&#x00F8; Skole (drengeskolen, den l&#x00E6;rde skole), undervistes eleverne i de nederste klasser fortsat i latin seks timer om ugen.</p>
+</note>
+   
+<note xml:id="com66">
+   <p>1840 for&#x00F8;gedes antallet af ugentlige latintimer i de nederste klasser i Sor&#x00F8; Skole fra seks til syv.</p>
+</note>
+   
+<note xml:id="com67">
+   <p>for&#x00F8;get.</p>
+</note>
+   
+<note xml:id="com68">
+   <p>arkaiserende for Sor&#x00F8;, som i de &#x00E6;ldste kilder ben&#x00E6;vnes Sor.</p>
+</note>
+   
+<note xml:id="com69">
+   <p>rimeligt.</p>
+</note>
+   
+<note xml:id="com70">
+   <p>1586 oprettede <persName key="pe230">Frederik 2.</persName> den &#x201C;besynderlige
+               [s&#x00E6;rlige el. fremragende] og bedre&#x201D; skole for 30 adelige og 30
+               borgerlige drenge og sk&#x00E6;nkede samtidig skolen hele Sor&#x00F8; Klosters gods;
+               i tilknytning til denne skole grundlagde <persName key="pe231">Christian
+                  4.</persName> i 1623 et ridderakademi (et akademi for adelens s&#x00F8;nner), som
+               senere blev udvidet til reelt at v&#x00E6;re et nyt universitet, der eksisterede i
+               ca. 20 &#x00E5;r. Pga. den svenske h&#x00E6;rs h&#x00E6;rgen og plyndren 1658-1660
+               blev ridderakademiet imidlertid ruineret og nedlagdes <hi rend="italic">de facto</hi>
+               i 1665, mens skolen fortsatte til 1737.</p>
+</note>
+   
+<note xml:id="com71">
+   <p>Under <persName key="pe232">Christian 6.</persName> ombyggede arkitekt <persName key="pe233">Lauritz de Thurah</persName> omkring 1740 de gamle klosterbygninger.</p>
+</note>
+   
+<note xml:id="com72">
+   <p>Det nye akademi, der fungerede 1747-1793, kom f&#x00F8;rst i gang, efter at <persName key="pe172">Ludvig Holberg</persName> havde sk&#x00E6;nket det st&#x00F8;rstedelen
+               af sin formue.</p>
+</note>
+   
+<note xml:id="com74">
+   <p>Dvs. i 1821, hvor der blev offentliggjort en ny plan for undervisningen ved det genopbyggede Sor&#x00F8; Akademi efter branden i 1813.</p>
+</note>
+   
+<note xml:id="com75">
+   <p>At bruge &#x201C;Kongens N&#x00F8;gel&#x201D; (n&#x00F8;gle) vil sige i lovens navn at bryde en d&#x00F8;r op; <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 4.957.</p>
+</note>
+   
+<note xml:id="com77">
+   <p>Siden 1827 havde Grundtvig i det af ham upublicerede skrift <rs type="title" key="title112">
+<hi rend="italic">Universitetet i London og Academiet i Sor&#x00F8;</hi>
+</rs> og i adskillige senere,  publicerede skrifter vedholdende, men uden held argumenteret for Sor&#x00F8; Akademis omdannelse til en folkelig h&#x00F8;jskole.</p>
+</note>
+   
+<note xml:id="com78">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com79">
+   <p>F&#x00F8;rste eksamen var <hi rend="italic">examen artium,</hi> dvs. studentereksamen; anden
+               eksamen var <hi rend="italic">examen philosophicum,</hi> dvs. filosofikum eller den
+               almindelige filologisk-filosofiske eksamen ved universitetet. Akademiets afsluttende
+               pr&#x00F8;ve var ligestillet med universitetets anden eksamen. Der kunne m.a.o.
+               p&#x00E5; akademiet afl&#x00E6;gges og ikke blot (som Grundtvig skriver)
+               &#x201C;l&#x00E6;ses til&#x201D; anden eksamen.</p> 
+   <note type="readMore">
+<p>Se <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>,</hi> 2.2 (1931), s. 399.</p>
+</note>
+</note>
+   
+<note xml:id="com80">
+   <p>bliver det aldrig til noget.</p>
+</note>
+   
+<note xml:id="com81">
+   <p>den l&#x00E6;rde skole (latinskolen) i Sor&#x00F8;.</p>
+</note>
+   
+<note xml:id="com82">
+   <p>I tilknytning til den l&#x00E6;rde skole husede institutionen en s&#x00E5;kaldt opdragelsesanstalt, dvs. skolens kostafdeling (i nyere tid: alumnat). Skolens officielle navn 1822-1903 var derfor: Sor&#x00F8; Akademis l&#x00E6;rde Skole og Opdragelsesanstalt.</p>
+</note>
+   
+<note xml:id="com83">
+   <p>skriftlig overs&#x00E6;ttelse fra dansk til latin.</p>
+</note>
+   
+<note xml:id="com84">
+   <p>Ved K&#x00F8;benhavns Universitet blev latin som undervisningssprog fra 1762 gradvist fortr&#x00E6;ngt af dansk. Kun forel&#x00E6;sningerne i teologisk eksegese og i latinsk filologi blev indtil hhv. 1840 og 1848 afholdt p&#x00E5; latin. I eksamenssystemet holdt latinen sig l&#x00E6;ngere; s&#x00E5;ledes afholdtes den medicinske embedseksamen indtil 1837 p&#x00E5; latin. Indtil 1854 skulle magister- og doktorafhandlinger i alle fag (men med individuelle dispensationsmuligheder) affattes p&#x00E5; latin. Frem til 1866 skulle det mundtlige forsvar under alle omst&#x00E6;ndigheder foreg&#x00E5; p&#x00E5; latin.</p> 
+   <note type="readMore">
+<p>Se generelt <persName key="pe245">Svend Elleh&#x00F8;j</persName> &amp; <persName key="pe246">Leif Grane</persName> (hovedred.): <rs type="title" key="title113">
+<hi rend="italic">K&#x00F8;benhavns Universitet 1479-1979</hi>
+</rs> (1979-2005), 2, <persName key="pe246">Leif Grane</persName> &amp; <persName key="pe247">Kai H&#x00F8;rby</persName> (red.): <rs type="title" key="title113">
+<hi rend="italic">Almindelig historie 1788-1936</hi>
+</rs> (1993).</p>
+</note>
+</note>
+   
+<note xml:id="com85">
+   <p>skriftlig overs&#x00E6;ttelse fra dansk til latin.</p>
+</note>
+   
+<note xml:id="com86">
+   <p>
+<hi rend="italic">examen artium,</hi> dvs. studentereksamen.</p>
+</note>
+   
+<note xml:id="com87">
+   <p>i alkymien et stof med magiske kr&#x00E6;fter, f.eks. evnen til at forvandle u&#x00E6;dle metaller til guld; (her overf&#x00F8;rt) den rette eller geniale l&#x00F8;sning p&#x00E5; et givet problem.</p>
+</note>
+   
+<note xml:id="com88">
+   <p>(un&#x00F8;digt) komplicerede, sv&#x00E6;rttilg&#x00E6;ngelige.</p> 
+   <note type="readMore">
+<p>Grundtvig anvendte desuden udtrykket (p&#x00E5; linje med udtrykket &#x2018;kinesisk&#x2019;) som
+                  sk&#x00E6;ldsord for det, der forekom ham kunstlet og u&#x00E6;gte, herunder et
+                  strengt formalistisk uddannelsessystem (hvilket dog ikke forhindrede ham i at
+                  v&#x00E6;re en glad overs&#x00E6;tter af byzantinske salmer). Byzans er det gamle
+                  navn for det senere Konstantinopel (i dag Istanbul), hovedstad i det
+                  &#x00F8;stromerske rige.</p>
+</note>
+</note>
+   
+<note xml:id="com89">
+   <p>En neds&#x00E6;ttende betegnelse, Grundtvig havde dannet for en umoden og sn&#x00E6;vert fornuftsm&#x00E6;ssig forskning eller undervisning, f.eks. latinskolens udenadsl&#x00E6;re, som han fandt &#x00E5;ndl&#x00F8;s, unaturlig og skadelig; &#x201C;det vrange Begreb om Videnskabelighed som blot <hi rend="italic">L&#x00E6;sning, L&#x00E6;rdom og Boglig Konst</hi>&#x201D;, &#x201C;<rs key="title110" type="title">Om Nordens videnskabelige Forening</rs>&#x201D;, i: <hi rend="italic">Brage og Idun, et nordisk Fj&#x00E6;rding&#x00E5;rsskrift,</hi> 1, 1. hefte (1839), s. 38.</p>
+</note>
+   
+<note xml:id="com90">
+   <p>almindeligt sk&#x00E6;ldsord om noget kunstlet og u&#x00E6;gte, for&#x00E6;ldet, omst&#x00E6;ndeligt eller bagvendt.</p>
+</note>
+   
+<note xml:id="com91">
+   <p>generations eller tidsalders.</p>
+</note>
+   
+<note xml:id="com92">
+   <p>Vendingen, her anvendt ironisk, stammer fra den f&#x00F8;rste, vidt udbredte katekismeforklaring til brug for konfirmationsundervisningen i Danmark og Norge, <persName key="pe234">Erik Pontoppidan</persName>: <rs type="title" key="title79">
+<hi rend="italic">Sandhed til Gudfrygtighed udi en enfoldig Forklaring over sal. Dr. Morten Luthers liden Catechismus</hi>
+</rs> (1737), stk. 351, s. 112: &#x201C;Hvad er det at skabe? / Det er at gi&#x00F8;re noget af intet, eller af en ubeqvem Materie.&#x201D; &#x201C;ubeqvem&#x201D; her i betydningen: som er vanskelig at have med at g&#x00F8;re. Jf. <rs key="Hebr 11,3" type="bible">Hebr 11,3</rs>. </p>
+</note>
+   
+<note xml:id="com93">
+   <p>m&#x00E6;rkbart.</p>
+</note>
+   
+<note xml:id="com94">
+   <p>arbejdede med eller her snarere: fuskede, arbejdede overfladisk med.</p>
+</note>
+   
+<note xml:id="com95">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com96">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com97">
+   <p>En neds&#x00E6;ttende betegnelse, Grundtvig havde dannet for en umoden og sn&#x00E6;vert fornuftsm&#x00E6;ssig forskning eller undervisning, f.eks. latinskolens udenadsl&#x00E6;re, som han fandt &#x00E5;ndl&#x00F8;s, unaturlig og skadelig; &#x201C;det vrange Begreb om Videnskabelighed som blot <hi rend="italic">L&#x00E6;sning, L&#x00E6;rdom og Boglig Konst</hi>&#x201D;, <rs type="title" key="title110">&#x201C;Om Nordens videnskabelige Forening&#x201D;</rs>, i: <hi rend="italic">Brage og Idun, et nordisk Fj&#x00E6;rding&#x00E5;rsskrift,</hi> 1, 1. hefte (1839), s. 38.</p>
+</note>
+   
+<note xml:id="com98">
+   <p>skriftlig overs&#x00E6;ttelse fra dansk til latin.</p>
+</note>
+   
+<note xml:id="com99">
+   <p>n&#x00E6;sten.</p>
+</note>
+   
+<note xml:id="com100">
+   <p>Det er ikke klart, om der sigtes til latinskolen eller til universitetet.</p>
+</note>
+   
+<note xml:id="com101">
+   <p>skriftlig overs&#x00E6;ttelse fra dansk til latin.</p>
+</note>
+   
+<note xml:id="com102">
+   <p>betone, fremme.</p>
+</note>
+   
+<note xml:id="com103">
+   <p>ganske vist.</p>
+</note>
+  
+<note xml:id="com104">
+   <p>gennemf&#x00F8;rt med (v&#x00E5;ben)magt.</p>
+</note>
+   
+<note xml:id="com105">
+   <p>vr&#x00F8;vl, forrykt tale.</p>
+</note>
+   
+<note xml:id="com106">
+   <p>rimeligt.</p>
+</note>
+   
+<note xml:id="com107">
+   <p>Forstanderne for det f&#x00F8;rste soranske akademi, <persName key="pe231">Christian
+                  4.s</persName> ridderakademi 1623-1665, ben&#x00E6;vntes hofmestre, forstanderne
+               for akademiet 1747-1813 overhofmestre. &#x2018;Hovmester&#x2019; kunne tidligere
+               betyde en studeret, l&#x00E6;rd mand, der leder en ung, fornem persons undervisning
+               og uddannelse, eller en person, der har overopsynet med et fornemt hus.</p>
+</note>
+  
+<note xml:id="com108">
+   <p>ganske vist.</p>
+</note>
+   
+<note xml:id="com109">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com110">
+   <p>hentydning til tidens liberale r&#x00F8;relser, herunder de mange henvendelser (&#x2018;adresser&#x2019;) med krav om en fri forfatning og om uindskr&#x00E6;nket trykkefrihed, som <persName key="pe98">Christian 8.</persName> modtog fra talrige studenter, borgere og borgerrepr&#x00E6;sentanter straks efter sin regeringsovertagelse 3. december 1839. Han afviste begge krav.</p> 
+</note>
+   
+<note xml:id="com111">
+   <p>samfund.</p>
+</note>
+   
+<note xml:id="com112">
+   <p>(her) omkalfatre, lave kraftigt om, vende op og ned p&#x00E5;.</p>
+</note>
+
+<note xml:id="com113">
+   <p>polemik imod den nationalliberale kritik af enev&#x00E6;lden.</p>
+</note>
+   
+<note xml:id="com114">
+   <p>(her) skriftligt bevis.</p>
+</note>
+   
+<note xml:id="com115">
+   <p>Dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com116">
+   <p>hentydning til den formular, hvormed kongen p&#x00E5; et opslag, en plakat el.lign. henvendte sig til unders&#x00E5;tterne i almindelighed eller til en st&#x00F8;rre kreds af dem, og som indledtes med ordene: &#x201C;Vi g&#x00F8;re alle vitterligt, at &#x2026;&#x201D;.</p>
+</note>
+   
+<note xml:id="com117">
+   <p>Dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com118">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com121">
+   <p>(faste, sikre) ans&#x00E6;ttelser, embeder.</p>
+</note>
+   
+<note xml:id="com122">
+   <p>kviet, undsl&#x00E5;et sig.</p>
+</note>
+
+<note xml:id="com123">
+   <p>her i begrebets bogstavelige betydning og med underforst&#x00E5;et ironisk brod imod det,
+               begrebet bet&#x00F8;d i samtiden: <hi rend="italic">Den Bell-Lancasterske
+                  Metode,</hi> en undervisningsform, der dominerede 1820-1850, hvor l&#x00E6;reren
+               med de dygtigste elever som hj&#x00E6;lpel&#x00E6;rere underviste et stort antal
+               elever samtidig. Vha. undervisningstavler l&#x00E6;ste eller regnede b&#x00F8;rnene i
+               kor eller individuelt, mens l&#x00E6;reren dirigerede undervisningen med en
+               fl&#x00F8;jte eller en klokke. Metoden, hvis tyngdepunkt var udenadsl&#x00E6;re, var
+               udviklet i store britiske fattigskoler og m&#x00F8;dte st&#x00E6;rk modstand i danske
+               skolekredse, men den blev gennemtvunget is&#x00E6;r af &#x00F8;konomiske grunde.</p>
+</note>
+   
+<note xml:id="com124">
+   <p>n&#x00E6;sten.</p>
+</note>
+   
+<note xml:id="com125">
+   <p>samfund.</p>
+</note>
+   
+<note xml:id="com126">
+   <p>dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com127">
+   <p>Det er uklart, om der sigtes til folkestemningen i almindelighed eller til konkrete indsamlinger af underskrifter fra navngivne enkeltpersoner p&#x00E5; &#x2018;adresser&#x2019; (henvendelser) eller &#x2018;petitioner&#x2019; (anmodninger) til kongen.</p>
+</note>
+   
+<note xml:id="com128">
+   <p>allerede.</p>
+</note>
+
+<note xml:id="com129">
+   <p>Det er uvist, om der hentydes til folkel&#x00E6;sning i almindelighed eller til den moderat
+               liberale ugeavis <hi rend="italic">Dansk Folkeblad,</hi> udgivet 1835-1848 som
+               medlemsblad for Selskabet til Trykkefrihedens rette Brug.</p> 
+   <note type="readMore">
+<p>Dette selskab var blandt dem, der rettede henvendelse til Christian 8. efter hans regeringsovertagelse 3. december 1839 med krav om en fri forfatning og om uindskr&#x00E6;nket trykkefrihed; kongen afviste begge krav.</p>
+</note>
+</note>
+   
+<note xml:id="com130">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com131">
+   <p>samfundsm&#x00E6;ssig.</p>
+</note>
+   
+<note xml:id="com132">
+   <p>letfattende, l&#x00E6;renem.</p>
+</note>
+   
+<note xml:id="com133">
+   <p>Muligvis hentydning til den kollektive historiefornemmelse knyttet til at v&#x00E6;re dansker og bo i Danmarks &#x00E6;ldgamle kongerige, s&#x00E5;dan som det er udtrykt i digteren og sprogmanden <persName key="pe221">Laurids O. Koks</persName> <rs type="title" key="title77">&#x201C;Dannevirkevisen&#x201D;</rs> eller &#x201C;Danmark deiligst vang og v&#x00E6;nge&#x201D; (trykt 1695; mel. af <persName key="pe222">P.E. Rasmussen</persName> 1811). </p>
+</note>
+
+<note xml:id="com134">
+   <p>Dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com135">
+   <p>samfund, f&#x00E6;llesskab.</p>
+</note>
+   
+<note xml:id="com136">
+   <p>ganske vist.</p>
+</note>
+   
+<note xml:id="com137">
+   <p>ytrer, udtaler.</p>
+</note>
+  
+<note xml:id="com138">
+   <p>allerede.</p>
+</note>
+   
+<note xml:id="com139">
+   <p>uddrag af <rs type="title" key="title102">
+<hi rend="italic">Nyaars-Morgen</hi>
+</rs> (1824), strofe 198 og 199. Enkelte spatieringer (her gengivet som kursiveringer) er oph&#x00E6;vet og nye tilf&#x00F8;jet.</p>
+</note>
+   
+<note xml:id="com140">
+   <p>(arkaiserende, folkevisevending) langs stranden af en &#x00F8; eller et land.</p>
+</note>
+   
+<note xml:id="com141">
+   <p>Dvs. tilegne sig folkets sprog og l&#x00E6;re at udtrykke sig p&#x00E5; det.</p>
+</note>
+   
+<note xml:id="com142">
+   <p>(Grundtvigs orddannelse) bundl&#x00F8;shed.</p>
+</note>
+
+<note xml:id="com143">
+   <p>hentydning til filantropinisterne, tilh&#x00E6;ngerne af en p&#x00E6;dagogisk retning, der opstod i slutningen af oplysningstiden og fik navn efter tyskeren <persName key="pe235">J.B. Basedows</persName> ber&#x00F8;mte kostskole i Dessau, Philantropinum, grundlagt 1774. Filantropinismen ans&#x00E5; undervisning af den brede befolknings b&#x00F8;rn for at v&#x00E6;re en vej til menneskelig og samfundsm&#x00E6;ssig fremgang.</p> 
+   <note type="readMore">
+<p>M&#x00E5;let var at danne gode, fornuftige, oplyste og lykkelige mennesker. Filantropinismen
+                  &#x00F8;nskede at fjerne b&#x00E5;de udenadsl&#x00E6;re og korporlig afstraffelse
+                  fra skolen, al l&#x00E6;ren skulle ske med lyst og s&#x00E5; vidt muligt i legens
+                  form. Filantropinismen stod tillige for en selvst&#x00E6;ndigg&#x00F8;relse af
+                  skolen i forhold til kirken og m&#x00F8;dte derfor modstand i dele af
+                  gejstligheden. Filantropinismen gav st&#x00F8;det til skolereformer i flere lande,
+                  og nogle af dens id&#x00E9;er genfindes i Skoleanordningen af 1814. <persName key="pe235">Basedow</persName> havde 1754-1761 v&#x00E6;ret ansat ved
+                  Sor&#x00F8; Akademi som professor i moralfilosofi og tysk sprog, men blev fjernet
+                  pga. sine teologisk-filosofiske anskuelser; se herom <hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem
+                        Tiderne</rs>,</hi> 2.1 (1928), s. 195 ff. Grundtvig havde i 1804 uden forbehold tilsluttet sig
+                  filantropinismen, og han bevarede sympatien for visse af dens programpunkter
+                  (f.eks. brugen af ordsprog i undervisningen), men blev i l&#x00F8;bet af
+                  1830'erne generelt skeptisk over for oplysningstidens p&#x00E6;dagoger.</p>
+</note>
+</note>
+   
+<note xml:id="com144">
+   <p>Udtalelsen vender sig sandsynligvis imod en bestemt passage i <persName key="pe235">J.B. Basedow</persName>: <rs type="title" key="title81">
+<hi rend="italic">Das Basedowische Elementarwerk. Ein Vorrath der besten Erkenntnisse zum Lernen, Lehren, Wiederholen und Nachdenken,</hi>
+</rs> 2. udgave (1785), 1, s. 94: &#x201C;und der J&#x00FC;ngling studiert in eigentlicher Bedeutung, d. i. es wird ihm Anweisung gegeben, Alles, was er schon weis, durch H&#x00FC;lfe der B&#x00FC;cher zu wiederhohlen" (&#x2018;og den unge mand studerer i egentlig betydning, dvs. han vejledes i, hvorledes han ved hj&#x00E6;lp af b&#x00F8;ger kan genkalde sig alt det, han allerede ved&#x2019;. Oversat af GV.).</p> 
+   <note type="readMore">
+<p>Citatet vedr&#x00F8;rer ikke i sn&#x00E6;ver forstand undervisningen af b&#x00F8;rn, men af unge m&#x00E6;nd i 16-&#x00E5;rsalderen og piger i 15-&#x00E5;rsalderen. Grundtvig ejede <persName key="pe235">Basedows</persName> <hi rend="italic">Elementarwerk,</hi> 2. udgave (1785), 1-3, Bogfortegnelse 1839 nr. 2.799-2.801 / Bogfortegnelse 1873, nr. 8.324-26.</p>
+</note>
+</note>
+   
+<note xml:id="com145">
+   <p>(her muligvis) besv&#x00E6;r eller vanskelighed, jf. &#x2018;et tungt l&#x00E6;s&#x2019;.</p>
+</note>
+ 
+<note xml:id="com146">
+   <p>flove, (her) vage, &#x00E5;ndl&#x00F8;se, platte.</p>
+</note>
+   
+<note xml:id="com147">
+   <p>(arkaiserende) egl. en person, der farer (dvs. h&#x00F8;rer hjemme) p&#x00E5; Sj&#x00E6;lland, sj&#x00E6;ll&#x00E6;nder; Grundtvig var f&#x00F8;dt i Udby p&#x00E5; Sydsj&#x00E6;lland.</p>
+</note>
+   
+<note xml:id="com148">
+   <p>(arkaiserende) fosterbarn (adoptivbarn) af jyder. Som forberedelse til latinskolen opholdt
+                  Grundtvig sig 1792-1798 hos pastor <persName key="pe167">Laurits Feld</persName> i Thyregod ved Vejle; dern&#x00E6;st gik han
+               p&#x00E5; Aarhus Katedralskole 1798-1800.</p>
+</note>
+   
+<note xml:id="com149">
+   <p>forel&#x00E6;ste.</p>
+</note>
+   
+<note xml:id="com150">
+   <p>
+<hi rend="italic">
+<rs key="title84" type="title">Den danske kr&#x00F8;nike</rs>,</hi> senere kaldet <hi rend="italic">Den danske rimkr&#x00F8;nike,</hi> er den tidligst kendte trykte bog p&#x00E5; dansk, trykt 1495 i K&#x00F8;benhavn af den hollandske bogtrykker <persName key="pe236">Gotfred af Ghemen</persName> og optrykt flere gange. V&#x00E6;rket er en kongekr&#x00F8;nike, der omfatter alle danske konger fra <rs key="myth138" type="myth">Dan</rs> til <persName key="pe41">Christian 1.</persName> Tekstens hovedkilde er en st&#x00E6;rkt forkortet version af <persName key="pe237">Saxos</persName> <hi rend="italic">
+      <rs type="title" key="title83">Gesta Danorum</rs>;</hi> &#x00E9;n efter &#x00E9;n tr&#x00E6;der kongerne frem og beretter i monologform og p&#x00E5; vers om deres bedrifter.</p> 
+   <note type="readMore">
+<p>Teksten har muligvis flere forfattere end den kendte, munken Niels fra
+                  cistercienserklosteret i Sor&#x00F8;. Grundtvig gav
+                  i 1816 i f&#x00F8;rste nr. af sit tidsskrift <hi rend="italic">
+<rs type="title" key="title270">Danne-Virke</rs>
+</hi>
+                  pr&#x00F8;ver p&#x00E5; en gengivelse p&#x00E5; moderne dansk, og 1834 udgav han <rs type="title" key="title85">
+<hi rend="italic">Pr&#x00F8;ver af Den Gammel-Danske
+                        Rim-Kr&#x00F8;nike i en ny Skikkelse,</hi>
+</rs> (p&#x00E5;begyndt 1826), hvor han
+                  havde tilf&#x00F8;jet egne digte om senere konger frem til <persName key="pe105">Christian 7.</persName> En samtidig udgave var <persName key="pe23">Chr.
+                     Molbechs</persName> komplette og koncise oms&#x00E6;ttelse til moderne dansk,
+                     <rs type="title" key="title86">
+<hi rend="italic">Den Danske Riimkr&#x00F8;nike
+                        efter Gotfried af Ghemens udgave af Aaret 1495, trykt paa ny, med afvigende
+                        L&#x00E6;semaader i sildigere Udgaver, og Ordfortolkninger</hi>
+</rs> (1825).
+                  Grundtvig anmeldte den udf&#x00F8;rligt og kritisk i <hi rend="italic">Nyt Aftenblad</hi>
+                  1. april - 6.maj 1826. Mere i Grundtvigs smag var <persName key="pe238">C.S.
+                     Ley</persName>: <rs type="title" key="title87">
+<hi rend="italic">Den
+                        gammel-danske Rimkr&#x00F8;nike fra Sor&#x00F8;-Kloster</hi>
+</rs> (1841).
+                  Grundtvig ejede begge v&#x00E6;rker i hver to eksemplarer, Bogfortegnelse 1873,
+                  nr. 3.162-63 og 3.165-66, og desuden <persName key="pe23">Chr. Molbech</persName>:
+                     <rs type="title" key="title88">
+<hi rend="italic">Glossarium til den danske
+                        Riimkr&#x00F8;nike</hi>
+</rs> (1825), nr. 3.164.</p>
+</note> 
+</note>
+   
+<note xml:id="com151">
+   <p>
+<persName key="pe239">Peder Syv</persName>: <rs type="title" key="title89">
+<hi rend="italic">Aldmindelige Danske Ord-Sproge og korte L&#x00E6;rdomme,</hi>
+</rs> 1-2 (1682
+               og 1688) indeholder ca. 15.000 ordsprog, talem&#x00E5;der m.v. og udg&#x00F8;r kernen
+               i alle senere danske ordsprogssamlinger.</p> 
+   <note type="readMore">
+<p>En samtidig udgave var <rs type="title" key="title90">
+<hi rend="italic">Peder Syvs kiernefulde Ordsprog, uds&#x00F8;gte og ordnede ved <persName key="pe2">R. Nyerup</persName>, Professor</hi>
+</rs> (1807).</p>
+</note>
+</note>
+
+<note xml:id="com152">
+   <p>ganske vist.</p>
+</note>
+   
+<note xml:id="com153">
+   <p>talrige, mange, jf. <rs key="Mark 5,9" type="bible">Mark 5,9</rs>.</p>
+</note>
+   
+<note xml:id="com154">
+   <p>I det danske rige var der 1840 to universiteter, K&#x00F8;benhavns (grundlagt 1479) og Kiels (grundlagt 1665). Det sidste l&#x00E5; i hertugd&#x00F8;mmet Holsten, som ikke h&#x00F8;rte til kongeriget.</p>
+</note>
+   
+<note xml:id="com155">
+   <p>t&#x00E5;belighed.</p>
+</note>
+   
+<note xml:id="com156">
+   <p>individer.</p>
+</note>
+ 
+<note xml:id="com157">
+   <p>(arkaiserende) kundskaber el. videnskab.</p>
+   <note type="readMore">
+<p>Begrebet &#x2018;vidskab&#x2019; betegner hos Grundtvig to forskellige former for videnskabelig str&#x00E6;ben: Dels de enkelte videnskabers bestr&#x00E6;belse p&#x00E5; at forklare afgr&#x00E6;nsede omr&#x00E5;der af virkeligheden, dels den aldrig afsluttede bestr&#x00E6;belse p&#x00E5; (i vekselvirkning med de enkelte videnskaber) at forklare virkeligheden i sin helhed. Hovedv&#x00E6;rket herom er <persName key="pe62">Bent Christensens</persName> disputats: <hi rend="italic">
+<rs key="title6" type="title">Omkring Grundtvigs vidskab - en unders&#x00F8;gelse af N.F.S. Grundtvigs forhold til den erkendelsesm&#x00E6;ssige side af det kristeligt n&#x00F8;dvendige livsengagement</rs>
+</hi>(1998).</p>
+</note>
+</note>
+   
+<note xml:id="com158">
+   <p>underforst&#x00E5;et: folkeviserne.</p>
+</note>
+   
+<note xml:id="com159">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com160">
+   <p>sj&#x00E6;ll&#x00E6;nder og jyde. Muligvis er vendingen, som Grundtvig bruger flere steder, l&#x00E5;nt fra en variant af den af <persName key="pe350">Anders S&#x00F8;rensen Vedel</persName> nedskrevne &#x201C;Lenavisen&#x201D; eller <rs type="title" key="title91">&#x201C;Slaget ved Lena. (1208)&#x201D;</rs>, her citeret efter DgF, bind
+               3, nr. 136, 2. strofe: &#x201C;Jeg vil laane dig af mine M&#x00E6;nd, / baade
+               S&#x00E6;llandsfar og Jyde; / det er de bedste Slagsm&#x00E6;nd, / de baade kan
+               sp&#x00E6;nde og skyde.&#x201D; </p>
+</note>
+ 
+<note xml:id="com161">
+   <p>ogs&#x00E5; bestemt vil lykkes.</p>
+</note>
+   
+<note xml:id="com162">
+   <p>Der hentydes til nogle deputerede jurister ved st&#x00E6;nderforsamlingen i Roskilde 15.
+               juli-22. september 1840, hvis indl&#x00E6;g Grundtvig
+               var bekendt med gennem l&#x00E6;sning af <hi rend="italic">St&#x00E6;ndertidende</hi>
+                  (<hi rend="italic">Tidende for Forhandlingerne ved Provindsialst&#x00E6;nderne for
+                  Sj&#x00E6;llands, Fyens og Lollands-Falsters Stifter samt Island og
+                  F&#x00E6;r&#x00F8;erne,</hi> ogs&#x00E5; kaldet <hi rend="italic">Roeskilde
+                  St&#x00E6;ndertidende</hi> eller <hi rend="italic">St&#x00E6;ndertidende for
+                  &#x00D8;stifterne</hi>). Grundtvig var utilfreds
+               med, at de ikke talte levende og anskueligt, men t&#x00F8;rt og med brug af mange
+               fremmedord.</p> 
+</note>
+   
+<note xml:id="com163">
+   <p>dvs. de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger) i Danmark og hertugd&#x00F8;mmerne, indf&#x00F8;rt ved kongelig forordning af 28. maj 1831.</p>
+</note>
+   
+<note xml:id="com164">
+   <p>Talem&#x00E5;den har ikke kunnet stedf&#x00E6;stes; muligvis variant af den internationalt kendte talem&#x00E5;de &#x2018;at tale som en bog&#x2019;, dvs. stift, unaturligt.</p>
+</note>
+   
+<note xml:id="com165">
+   <p>almindeligt ordsprog, <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 7.614.</p>
+</note>
+   
+<note xml:id="com166">
+   <p>ordsprog, <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 7.633. Dette ordsprog var <persName key="pe166">Grundtvigs mors</persName> valgsprog, jf. F. R&#x00F8;nning: <rs key="title432" type="title">
+<hi rend="italic">Den Grundtvigske Sl&#x00E6;gt,</hi>
+</rs> s. 56.</p>
+</note>
+
+<note xml:id="com167">
+   <p>
+<persName key="pe239">Peder Syv</persName>: <hi rend="italic">Aldmindelige Danske Ord-Sproge
+                  og korte L&#x00E6;rdomme,</hi> 1-2 (1682 og 1688) indeholder ca. 15.000 ordsprog,
+               talem&#x00E5;der m.v. og udg&#x00F8;r kernen i alle senere danske
+               ordsprogssamlinger.</p>
+   <note type="readMore">
+<p>En samtidig udgave var <hi rend="italic">Peder Syvs kiernefulde Ordsprog, uds&#x00F8;gte og ordnede ved <persName key="pe2">R. Nyerup</persName>, Professor</hi> (1807).</p>
+</note>
+</note>
+   
+<note xml:id="com168">
+   <p>
+<persName key="pe243">Peder Laale</persName>; Grundtvig ejede <rs type="title" key="title94">
+<hi rend="italic">Peder Lolles Samling af danske og latinske Ordsprog ved <persName key="pe2">R. Nyerup</persName>
+</hi>
+</rs> (1828) og <persName key="pe238">Chr. S. Ley</persName> (udg.): <rs type="title" key="title95">
+<hi rend="italic">Peder Laales Danske Mundheld</hi>
+</rs> (1842), Bogfortegnelse 1873 nr. 4.377 og 4.378.</p>
+</note>
+   
+<note xml:id="com169">
+   <p>
+<hi rend="italic">
+<rs key="title96" type="title">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</rs>
+</hi> (1845), som indeholdt 3.012 numre; den udkom dog uden ydre anledning i nogen h&#x00F8;jskoles &#x00E5;bning, heller ikke R&#x00F8;dding H&#x00F8;jskoles i 1844.</p>
+</note>
+   
+<note xml:id="com170">
+   <p>m&#x00E6;rkbar.</p>
+</note>
+   
+<note xml:id="com171">
+   <p>(arkaiserende) hvorfor.</p>
+</note>
+
+<note xml:id="com172">
+   <p>L&#x00E6;rerne ved Sor&#x00F8; Akademi i perioden 1826-1849 var lektorer, l&#x00E6;rerne ved
+               skolen adjunkter. Ved festen i maj 1827 for akademiets genindvielse tildelte
+                  <persName key="pe96">Frederik 6.</persName> imidlertid skolens og akademiets
+               direkt&#x00F8;r <persName key="pe244">E.G. Tauber</persName> &#x201C;Rang med
+               Etatsraader og alle Lektorerne med Professorer&#x201D;, <hi rend="italic">
+                  <rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem
+                     Tiderne</rs>,</hi> 2.2 (1931), s. 512.</p> 
+   <note type="readMore">
+<p>Lektorerne var s&#x00E5;ledes titul&#x00E6;re professorer, dvs. de havde ret til at kalde sig professorer, men havde ikke noget dertil svarende embede (og universitetsdirektionen i K&#x00F8;benhavn anerkendte aldrig titlen, jf. samme v&#x00E6;rk, s. 402). Senere ansatte lektorer var tilsyneladende ikke omfattet af ordningen, men nogle af dem udn&#x00E6;vntes til titul&#x00E6;re professorer i forbindelse med deres afskedigelse.</p>
+</note>
+</note>
+
+<note xml:id="com173">
+   <p>sikre indt&#x00E6;gter.</p>
+</note>
+   
+<note xml:id="com174">
+   <p>afskeden; substantiveringen af verbet &#x2018;aftakke&#x2019; er ikke belagt i <rs type="title" key="title97">ODS</rs>.</p>
+</note>
+   
+<note xml:id="com175">
+   <p>til (skolens) tilfredshed.</p>
+</note>
+
+<note xml:id="com176">
+   <p>forh&#x00F8;r, hvorunder der anvendes tortur (pinsler); her hentydning til overh&#x00F8;ring (af udenadsl&#x00E6;re) og eksaminationer i det almindelige skolesystem.</p>
+</note>
+ 
+<note xml:id="com177">
+   <p>Ved K&#x00F8;benhavns Universitet blev latin som undervisningssprog fra 1762 gradvist fortr&#x00E6;ngt af dansk. Kun forel&#x00E6;sningerne i teologisk eksegese og i latinsk filologi blev indtil hhv. 1840 og 1848 afholdt p&#x00E5; latin. I eksamenssystemet holdt latinen sig l&#x00E6;ngere; s&#x00E5;ledes afholdtes den medicinske embedseksamen indtil 1837 p&#x00E5; latin. Indtil 1854 skulle magister- og doktorafhandlinger i alle fag (men med individuelle dispensationsmuligheder) affattes p&#x00E5; latin. Frem til 1866 skulle det mundtlige forsvar under alle omst&#x00E6;ndigheder foreg&#x00E5; p&#x00E5; latin. Begrebet latinsk oplysning (i mods&#x00E6;tning til dansk oplysning) har for Grundtvig dog en videre betydning end selve undervisningen i eller p&#x00E5; latin.</p>
+</note>
+   
+<note xml:id="com178">
+   <p>(faste, sikre) ans&#x00E6;ttelses, embedes.</p>
+</note>
+   
+<note xml:id="com179">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+ 
+<note xml:id="com180">
+   <p>f&#x00E6;drelandsk&#x00E6;rligt universitet.</p>
+</note>
+   
+<note xml:id="com181">
+   <p>rosende, smukt.</p>
+</note>
+   
+<note xml:id="com183">
+   <p>sandelig, helt sikkert.</p>
+</note>
+   
+<note xml:id="com184">
+   <p>el. Danevirke, voldkompleks, der ca. 650-1300 dannede et frontalforsvar ved rigets sydgr&#x00E6;nse og udg&#x00F8;r det st&#x00F8;rste forhistoriske forsvarsv&#x00E6;rk i Nordeuropa. Efter ca. 1300 kom anl&#x00E6;gget f&#x00F8;rst i brug igen under de slesvigske krige, men beholdt ogs&#x00E5; f&#x00F8;r det en st&#x00E6;rk symbolv&#x00E6;rdi. (Billedligt) nationalt forsvar, dansk forsvarsvilje.</p>
+</note>
+   
+<note xml:id="com185">
+   <p>adskilte, uden indbyrdes forbindelse.</p>
+</note>
+  
+<note xml:id="com186">
+   <p>ogs&#x00E5;: i Danmark.</p>
+</note>
+   
+<note xml:id="com187">
+   <p>dv&#x00E6;rgen <rs type="myth" key="myth47">Lit</rs>.</p>
+</note>
+   
+<note xml:id="com188">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com189">
+   <p>Danevirke, voldkompleks, der ca. 650-1300 dannede et frontalforsvar ved rigets sydgr&#x00E6;nse og udg&#x00F8;r det st&#x00F8;rste forhistoriske forsvarsv&#x00E6;rk i Nordeuropa. Efter ca. 1300 kom anl&#x00E6;gget f&#x00F8;rst i brug igen under de slesvigske krige, men beholdt ogs&#x00E5; f&#x00F8;r det en st&#x00E6;rk symbolv&#x00E6;rdi. (Billedligt) nationalt forsvar, dansk forsvarsvilje.</p>
+</note>
+   
+<note xml:id="com190">
+   <p>tr&#x00E6;de frygtl&#x00F8;st frem imod, konfrontere.</p>
+</note>
+   
+<note xml:id="com191">
+   <p>europ&#x00E6;isk sagnfigur med s&#x00E6;rlig betydning som dansk nationalhelt. <rs type="myth" key="myth37">Holger Danske</rs> blev en central figur i dansk litter&#x00E6;r og musikalsk romantik, kulminerende med <persName key="pe138">B.S. Ingemanns</persName> episke digtcyklus <rs type="title" key="title99">
+<hi rend="italic">Holger Danske. Et Digt</hi>
+</rs> (1837). Nogle af digtene heri - bl.a. <rs type="title" key="title100">&#x201C;Holger Danskes M&#x00E6;rke&#x201D;</rs> (<rs type="title" key="title100">&#x201C;I alle de Riger og Lande&#x201D;</rs>) - sattes i musik og fik siden stor betydning i nationale krisetider og som skolesang.</p>
+</note>
+   
+<note xml:id="com192">
+   <p>allerede.</p>
+</note>
+   
+<note xml:id="com193">
+   <p>p&#x00E5; flugt.</p>
+</note>
+ 
+<note xml:id="com194">
+   <p>h&#x00F8;jere l&#x00E6;reanstalt eller universitet.</p>
+</note>
+   
+<note xml:id="com195">
+   <p>
+<persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName> nyligt udkomne <rs type="title" key="title101">
+<hi rend="italic">Gamle danske Folkeviser, udgivne til
+                     Almeenl&#x00E6;sning</hi>
+</rs> (1840), som Grundtvig ejede (Bogfortegnelse 1873 nr. 3.119), var i skrivende stund
+               den senest udkomne folkeviseudgave. Men de folkeviser, som hidtil kun havde
+               v&#x00E6;ret litter&#x00E6;re, trykte tekster, var i de seneste &#x00E5;rtier blevet
+               sangbare, idet f&#x00F8;rromantiske og romantiske komponister som <persName key="pe466">J.A.P. Schulz</persName>,
+                  <persName key="pe75">C.E.F. Weise</persName> m.fl. gav dem melodier, hvilket rejste
+               et veritabelt &#x201C;Tone-Hav&#x201D;, som gjorde indtryk p&#x00E5; (den i
+               &#x00F8;vrigt umusikalske) Grundtvig.</p>
+   <note type="readMore">
+      <p>
+<persName key="pe2">Rasmus Nyerup</persName> og <persName key="pe24">Knud Lyhne
+                     Rahbek</persName> m.fl. udgav <hi rend="italic">
+<rs key="title436" type="title">Udvalgte danske Viser,</rs>
+</hi> 1-5 (1812-1814, samlet 1815), hvis bind 5
+                  for f&#x00F8;rste gang i dansk litteraturhistorie indeholdt trykte
+                  folkevisemelodier, indsamlet til form&#x00E5;let. Et kortere udvalg med melodier
+                  udkom 1821 ved <persName key="pe2">Nyerup</persName> og <persName key="pe222">P.E.
+                     Rasmussen</persName>. 1840 udgav <persName key="pe75">Weise</persName>
+                  <hi rend="italic">
+<rs type="title" key="title437"> Halvtredsindstyve gamle
+                        K&#x00E6;mpevise-Melodier harmonisk bearbeidede</rs>;</hi> samme &#x00E5;r
+                  udkom <hi rend="italic">
+<rs key="title438" type="title">Kiempeviser</rs>,</hi> 1.
+                  bind (af 2) ved <persName key="pe69">Chr. Winther</persName>, igen med melodistof
+                  af <persName key="pe75">Weise</persName>.</p>
+   </note>
+</note>
+     
+<note xml:id="com197">
+   <p>Valdemarerne er en samlebetegnelse for <persName key="pe216">Valdemar 1. den Store</persName> og hans to s&#x00F8;nner <persName key="pe217">Knud 6.</persName> og <persName key="pe218">Valdemar 2. Sejr</persName>.</p> 
+   <note type="readMore">
+<p>Derimod regnes <persName key="pe219">Valdemar 3.</persName> og <persName key="pe220">Valdemar 4. Atterdag</persName> ikke til Valdemarerne.</p>
+</note>
+</note>
+   
+<note xml:id="com204">
+   <p>(h&#x00F8;jtideligt, arkaiserende) jubel&#x00E5;r; herligt &#x00E5;r, i hvilket mindet om en lykkelig begivenhed fejres.</p>
+</note>
+   
+<note xml:id="com207">
+   <p>i det skjulte.</p>
+</note>
+   
+<note xml:id="com208">
+   <p>i det skjulte.</p>
+</note>
+ 
+<note xml:id="com209">
+   <p>Digtet er skrevet 1821 med titlen <rs type="title" key="title103">&#x201C;Fortale-Rim, fra Pr&#x00E6;st&#x00F8; til Sor&#x00F8;&#x201D;</rs>, men tryktes f&#x00F8;rst, lidt forkortet, i <hi rend="italic">B&#x00F8;n og Begreb om en Dansk H&#x00F8;iskole i Soer.</hi>
+</p>
+   <p>&#x201C;Morgendr&#x00F8;m&#x201D;: If&#x00F8;lge folketroen vil kun dr&#x00F8;mme dr&#x00F8;mt mellem midnat og morgengry g&#x00E5; i opfyldelse.</p>
+</note>
+   
+<note xml:id="com210">
+   <p>Digtet <rs type="title" key="title104">&#x201C;Sor&#x00F8; Kirke&#x201D;</rs>, som ikke m&#x00E5; forveksles med det n&#x00E6;rv&#x00E6;rende digt <rs type="title" key="title105">&#x201C;Morgendr&#x00F8;m om Sor&#x00F8;&#x201D;</rs>, udkom f&#x00F8;rste gang i samlingen <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat eller Blik paa Kristendom og Historie</hi>
+</rs> 24. december 1810.</p> 
+   <note type="readMore">
+<p>Af hensyn til titlen var fortalen efterdateret &#x201C;den 31te Decbr. 1810&#x201D;, og p&#x00E5; titelbladet anf&#x00F8;rtes 1811 som trykke- og udgivelses&#x00E5;r.</p>
+</note>
+</note>
+   
+<note xml:id="com211">
+   <p>sandsynligvis en af rimn&#x00F8;d betinget omskrivelse af fjerpen.</p>
+</note>
+   
+<note xml:id="com212">
+   <p>Kirken var opf&#x00F8;rt som den magtfulde Hvide-sl&#x00E6;gts gravkirke og blev fra 1300-tallet ogs&#x00E5; kongelig gravkirke.</p> 
+   <note type="readMore">
+<p>Foruden <persName key="pe223">Absalon</persName> ligger bl.a. hans farfar <persName key="pe224">Skjalm Hvide</persName>, hans for&#x00E6;ldre <persName key="pe225">Asser Rig</persName> og <persName key="pe226">Inge Eriksdatter</persName> samt hans bror <persName key="pe227">Esbern Snare</persName> begravet her. Desuden kongerne <persName key="pe228">Christoffer 2.</persName>, <persName key="pe220">Valdemar 4. Atterdag</persName> og <persName key="pe229">Oluf 2.</persName>
+</p>
+</note>
+</note>
+   
+<note xml:id="com213">
+   <p>jeg syntes.</p>
+</note>
+   
+<note xml:id="com214">
+   <p>plantesl&#x00E6;gt i rubladsfamilien, besl&#x00E6;gtet med forglemmigej, oftest med lysebl&#x00E5; blomster; (her poetisk) k&#x00E6;re minder eller noget, som b&#x00E6;rer pr&#x00E6;g af beskedenhed, troskyldighed o.l. Grundtvig g&#x00F8;r desuden ordet til et symbol p&#x00E5; (k&#x00E6;rlighed til) den danske f&#x00E6;drelandshistorie.</p>
+</note>
+   
+<note xml:id="com215">
+   <p>allerede.</p>
+</note>
+   
+<note xml:id="com216">
+   <p>endnu.</p>
+</note>
+   
+<note xml:id="com218">
+   <p>jf. <rs key="2 Mos 14,21-29" type="bible">2 Mos 14,21-29</rs>.</p>
+</note>
+   
+<note xml:id="com219">
+   <p>&#x00F8;st; i vikingernes verdensbillede drog man i leding mod &#x00F8;st ved f.eks. at k&#x00E6;mpe i &#x00D8;sters&#x00F8;en, i Finland eller Rusland.</p>
+</note>
+   
+<note xml:id="com220">
+   <p>endnu.</p>
+</note>
+   
+<note xml:id="com221">
+   <p>(poetisk) &#x00D8;sters&#x00F8;en.</p>
+</note>
+   
+<note xml:id="com222">
+   <p>endnu.</p>
+</note>
+   
+<note xml:id="com223">
+   <p>tapre, st&#x00E6;rke.</p>
+</note>
+   
+<note xml:id="com224">
+   <p>mast p&#x00E5; et krigsskib.</p>
+</note>
+   
+<note xml:id="com225">
+   <p>I nordisk mytologi t&#x00E5;ler dv&#x00E6;rge o.a. underjordiske v&#x00E6;sener ikke dagslys og &#x2018;farer i flint&#x2019;, dvs. forstener, n&#x00E5;r de rammes af det. </p>
+</note>
+
+<note xml:id="com227">
+   <p>jf. forestillingerne om det fortsatte krigerliv i <rs type="myth" key="myth101">Valhal</rs> for de krigere, der var faldet med &#x00E6;re.</p>
+</note>
+   
+<note xml:id="com228">
+   <p>arkaiserende for Sor&#x00F8;, som i de &#x00E6;ldste kilder ben&#x00E6;vnes Sor.</p>
+</note>
+   
+<note xml:id="com229">
+   <p>Kirken var opf&#x00F8;rt som den magtfulde Hvide-sl&#x00E6;gts gravkirke og blev fra 1300-tallet ogs&#x00E5; kongelig gravkirke.</p> 
+   <note type="readMore">
+<p>Foruden <persName key="pe223">Absalon</persName> ligger bl.a. hans farfar <persName key="pe224">Skjalm Hvide</persName>, hans for&#x00E6;ldre <persName key="pe225">Asser Rig</persName> og <persName key="pe226">Inge Eriksdatter</persName> samt hans bror <persName key="pe227">Esbern Snare</persName> begravet her. Desuden kongerne <persName key="pe228">Christoffer 2.</persName>, <persName key="pe220">Valdemar 4. Atterdag</persName> og <persName key="pe229">Oluf 2.</persName>
+</p>
+</note>
+</note>
+   
+<note xml:id="com231">
+   <p>I tilknytning til sin g&#x00E5;rd Fjenneslevlille ved Ringsted lod <persName key="pe225">Asser Rig</persName> ca. 1130 Fjenneslev Kirke opf&#x00F8;re. Han ligger begravet i Sor&#x00F8; Kirke.</p>
+</note>
+   
+<note xml:id="com232">
+   <p>dansk form af <persName key="pe223">Absalon</persName>. </p>
+</note>
+   
+<note xml:id="com233">
+   <p>fornemt, &#x00E6;delt, smukt.</p>
+</note>
+   
+<note xml:id="com234">
+   <p>krigstogt eller fornemt optog.</p>
+</note>
+
+<note xml:id="com235">
+   <p>
+<rs type="myth" key="myth20">Fugl F&#x00F8;niks</rs> indf&#x00F8;rtes som hovedmotiv i Sor&#x00F8; Akademis v&#x00E5;ben ved <persName key="pe251">Frederik 5.s</persName> genoprettelse af akademiet i 1747, jf. <persName key="pe252">Sven Tito Achen</persName>: <rs type="title" key="title107">&#x201C;Sor&#x00F8; Akademis skoles v&#x00E5;ben&#x201D;</rs>, <hi rend="italic">Soraner-bladet</hi> nr. 3, 1981.</p>
+</note>
+   
+<note xml:id="com236">
+   <p>ogs&#x00E5;.</p>
+</note>
+ 
+<note xml:id="com237">
+   <p>et m&#x00F8;rkt og snavset, foragteligt sted.</p>
+</note>
+   
+<note xml:id="com238">
+   <p>forg&#x00E6;ngelig eller v&#x00E6;rdil&#x00F8;s viden; ordet &#x2018;askedom&#x2019; er en selvlavet parallel til &#x2018;visdom&#x2019;.</p>
+</note>
+   
+<note xml:id="com239">
+   <p>ligesom.</p>
+</note>
+   
+<note xml:id="com240">
+   <p>Der hentydes til helten <rs type="myth" key="myth35">Herakles'</rs> skjold, som ild- og smedeguden <rs type="myth" key="myth31">Hefaistos</rs> havde lavet til ham p&#x00E5; <rs type="myth" key="myth171">Zeus'</rs> befaling. Hovedkilden hertil er <hi rend="italic">Skjoldet,</hi> et lille oldgr&#x00E6;sk epos, der traditionelt tilskrives <persName key="pe253">Hesiod</persName>.</p> 
+   <note type="readMore">
+<p>Den detaljerede beskrivelse af skjoldet udg&#x00F8;r mere end en tredjedel af hele v&#x00E6;rket, se <persName key="pe253">Hesiod</persName>: [<hi rend="italic">Theogonien, V&#x00E6;rker og dage,</hi>] <hi rend="italic">Skjoldet,</hi> s. 69-74, vers 139-320, oversat, indledt og kommenteret af <persName key="pe254">Lene Andersen</persName> (1973). Grundtvig ejede syv bind <persName key="pe253">Hesiod</persName> p&#x00E5; latin og gr&#x00E6;sk, Bogfortegnelse 1873 nr. 2.646-54.</p>
+</note>
+</note>
+   
+<note xml:id="com241">
+   <p>Det er uklart, hvad der menes. I <persName key="pe253">Hesiods</persName> epos <rs type="title" key="title108">
+<hi rend="italic">Skjoldet,</hi>
+</rs> hovedkilden
+               vedr&#x00F8;rende <rs type="myth" key="myth35">Herakles'</rs> skjold, er dette
+               ikke forbundet med nogen form for indsigt eller selvindsigt. Skjoldet er imidlertid
+               udsmykket med motiver, der omfatter hele tilv&#x00E6;relsen og flere kendte myter; og
+               det kunne dermed for Grundtvig v&#x00E6;re et symbol
+               p&#x00E5; livsoplysning.</p> 
+   <note type="readMore">
+<p>Grundtvig kan muligvis ogs&#x00E5; have t&#x00E6;nkt p&#x00E5;
+                  myten om Herakles, der som ung stilles overfor valget mellem dyd og last og
+                  v&#x00E6;lger rigtigt - et motiv, der er vidt udbredt i europ&#x00E6;isk
+                  litteratur, billedkunst og moralfilosofi som sindbillede p&#x00E5; det menneske,
+                  der opn&#x00E5;r ud&#x00F8;delighed gennem dyd og udholdenhed i strabadser. Myten
+                  er f&#x00F8;rst formuleret i et skrift af <persName key="pe255">Prodikos</persName>, refereret i <persName key="pe256">Xenofon</persName>: <rs type="title" key="title109">
+<hi rend="italic">Memorabilia,</hi>
+</rs> 2. bog
+                  1,20-34 (dansk <rs type="title" key="title109">
+<hi rend="italic">Xenophons
+                        Sokratiske Merkv&#x00E6;rdigheder,</hi>
+</rs> oversat af <persName key="pe257">J. Bloch</persName>, 1792, s. 113-129). Grundtvig ejede to forskellige udgaver af dette v&#x00E6;rk
+                  p&#x00E5; latin samt <persName key="pe257">Blochs</persName> danske i 2. oplag
+                  (1802), Bogfortegnelse 1873, nr. 2.801-02 og 04.</p>
+</note>
+</note>
+   
+<note xml:id="com242">
+   <p>st&#x00E6;rk, modig, brav.</p>
+</note>
+   
+<note xml:id="com243">
+   <p>ror, dvs. styre, regering.</p>
+</note>
+   
+<note xml:id="com244">
+   <p>Valdemarerne er en samlebetegnelse for <persName key="pe216">Valdemar 1. den Store</persName> og hans to s&#x00F8;nner <persName key="pe217">Knud 6.</persName> og <persName key="pe218">Valdemar 2. Sejr</persName>.</p> 
+   <note type="readMore">
+<p>Derimod regnes <persName key="pe219">Valdemar 3.</persName> og <persName key="pe220">Valdemar 4. Atterdag</persName> ikke til Valdemarerne.</p>
+</note>
+</note>
+   
+<note xml:id="com245">
+   <p>egl: brev, der lover en et embede, et len el.lign., n&#x00E5;r det bliver ledigt; her overf&#x00F8;rt: l&#x00F8;fte om.</p>
+</note>
+     
+<note xml:id="com247">
+   <p>m&#x00E5;ske et ordspil p&#x00E5; begrebets to betydninger: sted, hvor man holder andagt, (kirke eller tempel, jf. bl.a. <rs type="bible" key="Es 56,7">Es 56,7</rs>) eller hvile- og overnatningssted.</p>
+</note>
+   
+<note xml:id="com248">
+   <p>(arkaiserende) ligesom tidligere, endnu eller allerede.</p>
+</note>
+
+<note xml:id="com249">
+   <p>dvs. id, str&#x00E6;ben.</p>
+</note>
+   
+<note xml:id="com250">
+   <p>1586 oprettede <persName key="pe230">Frederik 2.</persName> den &#x201C;besynderlige
+               [s&#x00E6;rlige el. fremragende] og bedre&#x201D; skole for 30 adelige
+               og 30 borgerlige drenge og sk&#x00E6;nkede samtidig skolen hele Sor&#x00F8; Klosters
+               gods; i tilknytning til denne skole grundlagde <persName key="pe231">Christian
+                  4.</persName> i 1623 et ridderakademi (et akademi for adelens s&#x00F8;nner), som
+               senere blev udvidet til reelt at v&#x00E6;re et nyt universitet, der eksisterede i
+               ca. 20 &#x00E5;r. Pga. den svenske h&#x00E6;rs h&#x00E6;rgen og plyndren 1658-1660
+               blev ridderakademiet imidlertid ruineret og nedlagdes i 1665, mens skolen fortsatte
+               til 1737.</p>
+</note>
+   
+<note xml:id="com251">
+   <p>Der hentydes sandsynligvis til den voldsomme brand, som i 1813 h&#x00E6;rgede akademiets hovedbygning; genopbygningsarbejdet kom f&#x00F8;rst i gang omkring 1820.</p>
+</note>   
+   
+   <note xml:id="com252">
+      <p>milde eller f&#x00F8;jelige.</p>
+   </note>
+   
+   <note xml:id="com253">
+      <p>latinskolen.</p>
+   </note>
+   
+   <note xml:id="com254">
+      <p>har tillid til, tror p&#x00E5; verden. Muligvis allusion til <persName key="pe294">Thomas Kingo</persName>: &#x201C;Dend syvende Morgen-sang&#x201D; (&#x201C;VAag op og slae paa dine Strenge&#x201D;), strofe 15, vers 1-2: &#x201C;Jeg vil dog ey paa Verden bygge, / Om Lykken end vil med mig staa&#x201D;, <hi rend="italic">
+<rs key="title201" type="title">Samlede Skrifter</rs>,</hi> 3, s. 100.</p>
+   </note>
+   
+   <note xml:id="com255">
+      <p>eksaminerne.</p>
+   </note>
+   
+   <note xml:id="com256">
+      <p>klassiske litteratur.</p>
+   </note>
+   
+   <note xml:id="com257">
+      <p>det er en oplagt sag.</p>
+   </note>
+   
+   <note xml:id="com258">
+      <p>&#x00F8;delagde eller forspildte situationen.</p>
+   </note>
+   
+   <note xml:id="com259">
+      <p>bekymringer m.h.t. indkomster.</p>
+   </note>
+   
+   <note xml:id="com260">
+      <p>den tid, hvor de havde mindst adkomst.</p>
+   </note>
+   
+   <note xml:id="com261">
+      <p>med undtagelse af.</p>
+   </note>
+   
+   <note xml:id="com262">
+      <p>lampesk&#x00E6;r.</p>
+   </note>
+   
+   <note xml:id="com263">
+      <p>ramte af lynet.</p>
+   </note>
+   
+   <note xml:id="com264">
+      <p>tydeligt, klart.</p>
+   </note>
+   
+   <note xml:id="com265">
+      <p>n&#x00F8;gle.</p>
+   </note> 
+   
+   <note xml:id="com266">
+      <p>personer af fornem sl&#x00E6;gt; fremragende eller &#x00E6;dle personer.</p>
+   </note> 
+   
+   <note xml:id="com400">
+      <p>Grundtvigs betegnelse for de danske digtere, filosoffer og kunstnere, der slog igennem omkring 1800.</p>
+   </note>
+   
+   <note xml:id="com401">
+      <p>national.</p>
+   </note> 
+   
+   <note xml:id="com402">
+      <p>udanske, unationale.</p>
+   </note> 
+   
+   <note xml:id="com403">
+      <p>her for en gangs skyld i betydningen: demokratiske.</p>
+   </note>
+   
+   <note xml:id="com404">
+      <p>variant af sj&#x00E6;llandsk ordsprog, <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 2.871: &#x201C;Det er en Skj&#x00E6;lm, som giver bedre, end han har.&#x201D; Bruges is&#x00E6;r om kundskaber og &#x00E5;ndsevner.</p>
+   </note>
+   
+   <note xml:id="com405">
+      <p>jf. Mark 12,42 om den fattige enkes gave, i tidligere Bibel-overs&#x00E6;ttelser hendes
+               "Ski&#x00E6;rv"; billede p&#x00E5; offervilje trods fattigdom, dvs. et godt, omend
+               beskedent bidrag.</p>
+   </note>
+   
+   <note xml:id="com406">
+      <p>Ved den latinske oplysning (i mods&#x00E6;tning til den danske oplysning) forst&#x00E5;r Grundtvig ikke blot latin som arbejdssprog, men ogs&#x00E5; et stofomr&#x00E5;de (antikken som forbillede) og mere generelt en holdning af materialistisk, ateistisk eller katolsk art.</p>
+   </note>
+   
+   <note xml:id="com407">
+      <p>alm. ordsprog, <rs type="title" key="title93">
+<hi rend="italic">Mau</hi>
+</rs> nr. 2.604. <persName key="pe288">Mau</persName> havde overtaget ordsproget fra <hi rend="italic">
+<rs key="title96" type="title">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</rs>
+</hi> (1845), nr. 785.</p>
+   </note>
+   
+   <note xml:id="com408">
+      <p>mulig allusion til <persName key="pe138">B.S. Ingemanns</persName> f&#x00E6;drelandsdigt <hi rend="italic">
+<rs key="title433" type="title">Dannevang, med gr&#x00F8;nne Bred</rs>
+</hi>, hvor det i strofe 1, vers 3-4 hedder om Danmark: &#x201C;I dit Ski&#x00F8;d er Kj&#x00E6;rlighed, / Fred i dine Skove.&#x201D;</p>
+   </note>
+   
+   <note xml:id="com409">
+      <p>Jf. begyndelsesordene til <persName key="pe42">Luthers</persName> julesalme <rs type="title" key="title440">&#x201C;Vom Himmel hoch, da komm' ich her&#x201D;</rs>
+               (<rs key="title202" type="title">
+<hi rend="italic">Den Danske Salmebog</hi>
+</rs> nr. 95: &#x201C;Fra Himlen h&#x00F8;jt kom budskab her&#x201D;); denne salme var
+               i 1817 blevet &#x201C;Frit fordansket&#x201D; af Grundtvig som: <rs key="title439" type="title">"Det kimer nu til
+                  Jule-Fest"</rs>.</p>
+   </note>
+   
+   <note xml:id="com410">
+      <p>st&#x00F8;v gennemlyst af solen, jf. forklarelsen p&#x00E5; bjerget i NT.</p>
+   </note>
+   
+   <note xml:id="com411">
+      <p>hurtigt.</p>
+   </note>
+   
+   <note xml:id="com412">
+      <p>vise sig, dukke op, ses.</p>
+   </note>   
+         
+         
+         <div type="litList">
+            <head xml:id="docIn99">Anvendt litteratur</head>
+            
+           
+               <list type="litList">
+                  <item>Grundtvig, N.F.S. (1810) <rs type="title" key="title104">&#x201C;Sor&#x00F8;
+                        Kirke&#x201D;</rs>. K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1824) <rs type="title" key="title102">
+<hi rend="italic">Nyaars-Morgen</hi>
+</rs>. K&#x00F8;benhavn</item>
+                  <item>Grundtvig, N.F.S. (1827) <rs type="title" key="title112">
+<hi rend="italic">Universitetet i London og Academiet i Sor&#x00F8;,</hi>
+</rs> publiceret 1968 i <hi rend="italic">
+<rs key="title465" type="title">Grundtvigs skoleverden i tekster og udkast</rs>. K&#x00F8;benhavn</hi>
+                     1-2, udg. af K.E. Bugge. K&#x00F8;benhavn</item>
+                  <item>Kok, Laurids O. (1695) <rs type="title" key="title77">&#x201C;Dannevirkevisen&#x201D; eller &#x201C;Danmark deiligst
+                     vang og v&#x00E6;nge&#x201D;</rs>. K&#x00F8;benhavn</item>
+                  <item>Mau, E. (1879) <hi rend="italic">
+<rs key="title93" type="title">Dansk Ordsprogs-Skat</rs>
+</hi>, 1-2. K&#x00F8;benhavn</item>
+                  <item>Petersen, Henry (1883) <rs type="title" key="title111">&#x201C;Skjoldefrisen i Sor&#x00F8; Kirke. Et kritisk Bidrag til dansk Heraldik&#x201D;</rs>, i: <hi rend="italic">Aarb. for nord. Oldk. og Historie 1883</hi>. K&#x00F8;benhavn</item>
+                  <item>
+<hi rend="italic">
+<rs type="title" key="title78">Sor&#x00F8;. Klosteret, Skolen, Akademiet gennem Tiderne</rs>
+</hi> (1931), 2.2. K&#x00F8;benhavn</item>
+               </list>
+            
+         </div>
+
+</body>
+</text>
+</TEI>

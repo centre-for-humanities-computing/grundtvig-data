@@ -1,0 +1,1710 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader> 
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Om Religion og Liturgie</title>
+            <title rend="shortForm">Om Religion og Liturgie</title>
+            <author>Vanja Thaulow</author>
+            <editor role="editor2">lic.theol. Carsten Bach-Nielsen</editor>
+            <editor role="editor3">dr.phil. Johnny Kondrup</editor>
+            <editor role="editor1">Else Riisager</editor>
+          </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>100 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            <date when="2016-04-29">www.grundtvigsv&#x00E6;rker.dk, version 1.8, 29. april 2016</date>
+         </publicationStmt>
+         
+         <notesStmt>
+            <note type="txt" target="1807_61_txt.xml">L&#x00E6;setekst</note>
+            <note type="com" target="1807_61_com.xml" xml:id="thisFile">Punktkommentar</note>
+         </notesStmt>         
+         
+         
+             <sourceDesc><p /></sourceDesc>
+      </fileDesc>
+<encodingDesc>           
+            <projectDesc>
+               <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+               <p>Grundtvig Centeret arbejder med:</p>
+               <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+               <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+               <p>2.a. Teologi og kirke</p>
+               <p>2.b. Demokrati og folkelighed</p>
+               <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+               <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         </encodingDesc>
+<revisionDesc>
+            <change xml:id="KSR" who="KSR" when="2011-09-15">com-fil fra txt-fil</change>
+            <change xml:id="VTH" who="VTH" when="2011-09-19">Skrevet com 1-60</change>
+            <change who="VTH" when="2011-09-20">Skrevet com 61-83</change>
+            <change who="VTH" when="2011-09-21">Skrevet com 84-121 og tilf&#x00F8;jet 200-207</change>
+            <change who="VTH" when="2011-10-10">Skriver videre</change>
+            <change who="VTH" when="2011-10-13">Rettet forskelligt og tilf&#x00F8;jet com 208-210</change>
+            <change who="VTH" when="2011-10-13">Rettet forskelligt, slettet en del dobbeltposter og tilf&#x00F8;jet com211-212</change>
+            <change who="VTH" when="2011-11-08">Opm&#x00E6;rkning til navneregister og inds&#x00E6;ttelse af unicodes</change>
+            <change who="VTH" when="2011-11-15">Opm&#x00E6;rkning til titelregister</change>
+            <change who="VTH" when="2011-11-18">Tilf&#x00F8;jet com213-214</change>
+            <change who="VTH" when="2011-11-24">Litteraturliste oprettet.</change>
+            <change who="VTH" when="2011-11-25">Rettet i TEI-header og tilf&#x00F8;jet com215-228</change>
+            <change who="KSR" when="2011-11-28">tilretning af teiHeader</change>
+            <change who="VTH" when="2011-11-28">Tilf&#x00F8;jet com229</change>
+            <change who="VTH" when="2011-12-01">Rettet i TEI-header og indsat lidt unicodes</change>
+            <change who="VTH" when="2011-12-13">Tilf&#x00F8;jet com 230 og 231</change>
+            <change who="VTH" when="2011-12-14">Inds&#x00E6;tter 232</change>
+            <change who="VTH" when="2011-12-19">Retter</change>
+            <change who="VTH" when="2011-12-20">Retter litteraturliste</change>
+            <change who="VTH" when="2011-12-22">Titelopm&#x00E6;rker, tilf&#x00F8;jer com 235</change>
+            <change who="VTH" when="2011-12-22">Retter igen</change>
+            <change who="VTH" when="2012-01-02">Com223 slettet</change>
+            <change who="VTH" when="2012-01-02">Rettelse og tilf&#x00F8;jelser til litteraturlisten.</change>
+            <change who="VTH" when="2012-01-05">Indsat com 236, 237</change>
+            <change who="VTH" when="2012-01-10">Retter til efter ELRs redaktion</change>
+            <change who="VTH" when="2012-01-12">Ekstra lemmatisering efter ELRs redaktion, com 238-244</change>
+            <change who="VTH" when="2012-01-13">245-291 s&#x00E6;ttes indog herefter rettes alle comtal, s&#x00E5; de er fortl&#x00F8;bende + ekstra 300-303</change>
+            <change who="VTH" when="2012-01-16">Retter til</change>
+            <change who="VTH" when="2012-01-18">Retter til</change>
+            <change who="VTH" when="2012-01-19">Retter til</change>
+            <change who="VTH" when="2012-01-20">indgr&#x00F8;nning af felter mhp. oplastning. Unicodes &#x00E6;,&#x00F8;,&#x00E5;.</change>
+            <change who="VTH" when="2012-01-23">Retter sm&#x00E5;ting</change>
+            <change who="VTH" when="2012-01-24">Retter efter JKs korrektur frem til lemma 111. Indsat nye lemmata 309-320</change>
+            <change who="VTH" when="2012-01-25">Genindf&#x00F8;rt com304, men til nyt lemma</change>
+            <change who="VTH" when="2012-01-26">Retter efter JKs korrektur af resten. Extra lemma 321-332</change>
+            <change who="VTH" when="2012-01-27">Retter. Indsat com333-335</change>
+            <change who="VTH" when="2012-01-29">sm&#x00E5; rettelser. Indsat com336-337</change>
+            <change who="VTH" when="2012-01-30">Rettelser efter CBN og FLN. Indsat com338</change>
+            <change who="VTH" when="2012-01-31">Sm&#x00E5; korrektur-rettelser</change>
+            <change who="VTH" when="2012-01-31">com330 aktiveret igen. Rettelser i litteraturliste</change>
+            <change who="VTH" when="2012-03-06">com339 indsat</change>
+            <change who="VTH" when="2012-04-12">fjerner opm&#x00E6;rkning af pe4 og title341</change>
+            <change who="VTH" when="2012-04-13">Inds&#x00E6;tter ref til 61_intro</change>
+            <change who="VTH" when="2012-04-18">Retter et par sm&#x00E5;ting efter Th. J&#x00F8;rgensens redaktion af intro</change>
+            <change who="VTH" when="2012-04-30">Inds&#x00E6;tter com340 og 341</change>
+            <change who="VTH" when="2012-04-30">Inds&#x00E6;tter nye refs.</change>
+            <change who="VTH" when="2012-10-23">Rettet com4 og com26 efter HJLJs kommentarer p&#x00E5; Metochi</change>
+            <change who="VTH" when="2012-10-25">Sm&#x00E5; rettelser. Unicodes igen. Pe141 rettet til pe505. Fjerner placenames</change>
+            <change who="VTH" when="2012-10-30">Indlagt readmore i com61, rettet i com73 og tilf&#x00F8;jet com342-345</change>
+            <change who="VTH" when="2012-10-31">slettet com343, 344</change>
+            <change who="VTH" when="2012-11-01">slettet com 160</change>
+            <change who="VTH" when="2013-04-16">fjernet nye m&#x00E6;slinger op til upload af 1.2.</change>            
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>              
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>  
+   <change who="VTH" when="2016-03-15">Nyt versionsnummer pga. rettelser i intro. Desuden rettet uhensigtsmæssige mellemrum efter omorganisering af TEI-header.</change>
+   <change who="VTH" when="2016-03-15">Indsætter to gange manglende slutpunktum.</change>         
+         </revisionDesc>
+   </teiHeader>
+       <text type="com">
+              <body>
+
+         <note xml:id="com1">
+<!--lemma: Unter der Hu?lle aller Religionen liegt die Religion selbst-->
+            <p>&#x2018;Bag religionernes d&#x00E6;kke ligger religionen selv&#x2019;. Citat fra forordet til <persName key="pe35">Friedrich Schillers</persName> drama <rs type="title" key="title340">
+<hi rend="italic">Die Braut von Messina</hi></rs> (1803). Mottoet angiver Grundtvigs anliggende med afhandlingen, som han formulerer over de f&#x00F8;rste 5 sider: at g&#x00E5; bag om det ydre (i sammenh&#x00E6;ngen liturgien) og finde ind til essensen af, hvad religion er.</p>
+            <note type="readMore">
+<p>Grundtvig var i &#x00E5;rene 1806-07 meget optaget af <rs type="title" key="title340"><hi rend="italic">Die Braut von Messina</hi></rs>, som er et drama bygget op efter den gr&#x00E6;ske tragedies m&#x00F8;nster med et forord omhandlende brugen af kor i tragedien. Han udarbejdede en overs&#x00E6;ttelse af en del af v&#x00E6;rket, som han fik trykt i tidsskriftet <rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>
+</rs> i juni 1807 under titlen <rs type="title" key="title585">&#x201C;Om Schiller og Bruden fra Messina&#x201D;</rs>.</p>
+</note>
+<!-- afh er udarbejdet i f&#x00F8;rste halvdel af 1806, jf bibliografiens oplysninger -->
+            <!-- Anden overs&#x00E6;ttelse, konfereret med NHB: Under alle religioners skal ligger religionen selv. Evt. anden betydning af motto: De synkretistiske tanker, jf. Auken. Schiller: Synkretisme. -->
+         </note>
+
+         <note xml:id="com2">
+<!--lemma: Dagsliteraturen-->
+            <p>de nyeste b&#x00F8;ger. Der hentydes her til de mange sm&#x00E5;skrifter, som var blevet udgivet i anledning af biskop <persName key="pe364">P.O. Boisens</persName> <hi rend="italic">
+<rs type="title" key="title615">Plan til Forbedring af den Offentlige Gudsdyrkelse</rs>
+</hi> (1806). Se indledningen, afsnittet <ref type="docOut" target="1807_61_intro.xml#docIn1">&#x201C;Liturgidebatten 1806-1807&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com3">
+<!--lemma: Regieringen just nu har v&#x00E6;rdiget den sin s&#x00E6;rdeles Opm&#x00E6;rksomhed-->
+            <p>Regeringen havde i 1805 nedsat en liturgikommission, der skulle tage stilling til det forslag til &#x00E6;ndring af kirkens liturgi, som biskop over <!--<placeName key="fak176">-->Lolland-Falsters stift, <persName key="pe364">P.O. Boisen</persName>, havde udarbejdet p&#x00E5; opfordring af Sj&#x00E6;llands biskop, <persName key="pe39">N.E. Balle</persName><!-- Thodberg: Et officielt arbejde, han blev tilskyndet til at Balle. -->. Kommissionen lod forslaget trykke og sendte det i h&#x00F8;ring hos pr&#x00E6;sterne i <!--<placeName key="fak14">-->Danmark og <!--<placeName key="fak41">-->Norge. Se indledningen, afsnittet <ref type="docOut" target="1807_61_intro.xml#docIn3">&#x201C;Reaktioner p&#x00E5; Boisens forslag&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com4">
+<!--den store Revolution af Sigte, som
+            Menneskenes Begreber ere undergangne i de sidste 10 Aar-->
+            <p>Her hentydes formentlig til den franske revolution og dens meget kritiske syn p&#x00E5; religionen. S. 169 skriver Grundtvig om &#x201C;den Ringeagt for Religion,
+               der i de sidste 10 Aar som en Pest bef&#x00E6;ngte Menneskene&#x201D;. Se desuden indledningen, afsnittet <ref type="docOut" target="1807_61_intro.xml#docIn5">&#x201C;Oplysningstidens religionsbegreb&#x201D;</ref>.</p>
+             
+            <!-- TIDLIGERE NOTE: <p>Her t&#x00E6;nkes formentlig p&#x00E5; de romantiske filosoffers tilgang til religionssp&#x00F8;rgsm&#x00E5;let, som adskilte sig v&#x00E6;sentligt fra den herskende rationalismes. Hvor rationalisterne tog afstand fra de kristne dogmer, der stred imod fornuften, og lagde hovedv&#x00E6;gten p&#x00E5; kristendommens moralske funktion, tilb&#x00F8;d de romantiske filosoffer, s&#x00E6;rligt <persName key="pe54">F.W.J. Schelling</persName>, en helhedst&#x00E6;nkning, som ikke reserverede Gud til den del af tilv&#x00E6;relsen, der har med moral at g&#x00F8;re, men identificerede Gud med &#x2018;det Ene&#x2019;, &#x2018;det absolutte&#x2019;, dvs. den f&#x00E6;lles grund, der b&#x00E6;rer tilv&#x00E6;relsen og udg&#x00F8;r identiteten af alle de ydre fremtr&#x00E6;delsesformer.</p>-->
+                        
+            <!--  <note type="readMore"><p><persName key="pe54">Schelling</persName> tog desuden kristendommens hoveddogmer op til ny overvejelse. Treenighedsl&#x00E6;ren, inkarnationen og forsoningen &#x2013; de dogmer som oplysningstiden havde betragtet som mest urimelige &#x2013; gav <persName key="pe54">Schelling</persName> ny betydning, idet han understregede, at dogmerne ikke skulle forst&#x00E5;s som udtryk for empirisk virkelighed alene, men som udtryk for de h&#x00F8;jeste id&#x00E9;er. If&#x00F8;lge <persName key="pe54">Schelling</persName> er en historisk opfattelse af kristendommen ikke tilstr&#x00E6;kkelig; den m&#x00E5; suppleres af en filosofisk, spekulativ forst&#x00E5;else. [plus en omfortolkning inkarnationen, tonaturl&#x00E6;ren, forsoningen, andet syn p&#x00E5; rel. som mysterie - Senere omtales de seneste 10 &#x00E5;r som en tid, hvor religionen er blevet ringeagtet? Det lyder umiddelbart mere som rationalismen. ELR: Universalromantikerne var nu ogs&#x00E5; ateister.</p></note>-->                      
+            </note>
+         
+
+         <note xml:id="com5">
+<!--&#x00F8;iebliklig-->
+            <p>her: flygtigt.</p>
+         </note>
+         
+
+         <note xml:id="com6">
+<!--lemma: ei have uden-->
+            <p>udelukkende har.</p>
+         </note>
+         
+         <note xml:id="com7">
+<!--lemma: lade det beroe-->
+            <p>lade det v&#x00E6;re nok.</p>
+         </note>
+         
+
+         <note xml:id="com8">
+<!--lemma: uden-->
+            <p>her: medmindre.</p>
+         </note>
+                           
+         <note xml:id="com9">
+<!--lemma: &#x00F8;iebliklig-->
+            <p>her: momentvis.</p>
+         </note>
+
+         <note xml:id="com10">
+<!--lemma: ligegyldig-->
+            <p>uinteresseret, ligeglad.</p>
+         </note>
+
+         <note xml:id="com11">
+<!--lemma: stundum-->
+            <p>dvs. stundom, af og til.</p>
+         </note>
+
+         <note xml:id="com12">
+<!--lemma: indknibe-->
+            <p>trykke.</p>
+         </note>
+         
+         <note xml:id="com13">
+<!--lemma: blevet eens-->
+            <p>kommet overens, kommet i harmoni.</p>
+         </note>
+        
+         <note xml:id="com14">
+<!--lemma: indknibes han-->
+            <p>klemmes han inde.</p>
+         </note>
+
+         <note xml:id="com15">
+<!--lemma: end-->
+            <p>endnu.</p>
+         </note>
+         
+         <note xml:id="com309">
+<!--lemma: Skuffelse-->
+            <p>Illusion.</p>
+         </note>
+
+         <note xml:id="com16">
+<!--lemma: Tilv&#x00E6;relsen-->
+            <p>dvs. den jordiske, dennesidige tilv&#x00E6;relse.</p>
+         </note>
+
+         <!--  <note xml:id="com17">lemma: foragtede sin Natur og blev den dyriske Nydelses forf&#x00F8;rende Maler
+            <p>If&#x00F8;lge FL-N:Her hentydes til sensualismen i anden halvdel af 1700-tallet, fx den franske t&#x00E6;nker C.A. Helvetius, if&#x00F8;lge hvem mennesket er et driftsv&#x00E6;sen, styret af sin sanselige lyst.</p>
+            en radikal form for empirisme, der h&#x00E6;vdede, at al erkendelse stammer fra sanserne. I etisk henseende minder sensualismen om hedonismen: Menneskets lyst er det eneste, der er godt i sig selv. Condillac, Etienne Bonnot
+         </note>-->
+         
+         <!-- <note xml:id="com18">sank under Tilv&#x00E6;relsens tunge Byrde, som den med sig vilde h&#x00E6;ve til det Evige
+            <p>Her hentydes til Weimar-klassiken, <persName key="pe29">J.W. Goethe</persName> og <persName key="pe35">F. Schiller</persName>. Grundtvig anerkendte de &#x00E6;rlige motiver, der l&#x00E5; bag Goethe og Schillers digtning, men kunne ikke tilslutte sig deres humanistiske livsanskuelse, som gik uden om kristendommen. De str&#x00E6;bte efter harmoni, sk&#x00F8;nhed og idealitet, men ofte m&#x00E5;tte indse, at m&#x00E5;let ikke kunne n&#x00E5;s, jf. fx. <persName key="pe29">Goethes</persName> <hi rend="italic"><rs type="title" key="title0">Die Leiden junge Werthers</rs></hi> (1774) om den begejstrede og forelskede Werther, der ender med at tage sit eget liv. </p>
+             <p>[Dette skal nok uddybes. JK eller FLN sp&#x00F8;rges til r&#x00E5;ds]</p> 
+         </note>-->
+
+         <note xml:id="com19">
+<!--lemma: Fichtes og Schillers og Schellings Fors&#x00F8;g-->
+            <p>
+<persName key="pe500">Fichte</persName>, <persName key="pe35">Schiller</persName> og <persName key="pe54">Schelling</persName> var alle deltagere i den romantiske bev&#x00E6;gelse i <!--<placeName key="fak21">-->Tyskland i slutningen af 1700-tallet og begyndelsen af 1800-tallet. Det var prim&#x00E6;rt <persName key="pe54">Schelling</persName>, der tegnede den romantiske filosofi, hvor <persName key="pe500">Fichte</persName> n&#x00E6;rmere var dens foruds&#x00E6;tning, og <persName key="pe35">Schiller</persName> mere gjorde sig g&#x00E6;ldende p&#x00E5; det &#x00E6;stetiske og litter&#x00E6;re omr&#x00E5;de. Alligevel er der det f&#x00E6;lles for de tre, at de opfattede virkeligheden som et sammenh&#x00E6;ngende hele og mente, at det var filosofiens opgave at udarbejde et sammenh&#x00E6;ngende system.</p>
+            <note type="readMore">
+<p>De romantiske filosoffers udgangspunkt var erfaringen af <hi rend="italic">splittelse</hi> mellem de forskellige livsomr&#x00E5;der, mellem natur og &#x00E5;nd, subjekt og objekt, den faktiske historiske virkelighed og de ideale form&#x00E5;l. Det er denne splittelse, Grundtvig omtaler som filosofiens p&#x00E5;pegning af tilv&#x00E6;relsens &#x201C;strid&#x201D;. Forsoningen af disse st&#x00F8;rrelser blev et p&#x00E5;tr&#x00E6;ngende problem for den romantiske filosofi, men Grundtvig finder alts&#x00E5; ikke, at de romantiske filosoffer giver en tilfredsstillende forklaring p&#x00E5;, hvordan disharmonien i tilv&#x00E6;relsen er opst&#x00E5;et, og hvordan harmonien skal genoprettes. Svarene finder han i stedet i kristendommens l&#x00E6;re om hhv. syndefald og forsoning.<!-- Se indledningen, afsnit 4. -->
+<!-- [deres udl&#x00E6;gning af hvor striden komme fra og hvordan den oph&#x00E6;ves og at den er "blot tilsyndeladende" skal m&#x00E5;ske uddybes. -->
+</p>
+            </note>
+            
+         </note>
+
+         <note xml:id="com20">
+<!--lemma: Tilv&#x00E6;r-->
+            <p>eksistens.</p>
+         </note>
+         
+         <note xml:id="com21">
+<!--lemma: stundum-->
+            <p>her: i al almindelighed.</p>
+<!-- ELR: undertiden -->
+         </note>
+
+         <note xml:id="com22">
+<!--lemma: det f&#x00F8;rste Led-->
+            <p>pr&#x00E6;missen for det filosofiske system<!-- = antagelsen af det evige -->.</p>
+         </note>
+
+         <note xml:id="com23">
+<!--lemma: Sluttelsen-->
+            <p>tilslutningen, forbindelsen.<!-- FLN: ubetinget engagement-->
+</p>
+         </note>
+
+         <note xml:id="com24">
+<!--lemma: (?)-->
+            <p>indsat af udgiveren, <persName key="pe505">L.N. Fallesen</persName>.</p>
+         </note>
+         
+         <note xml:id="com25">
+<!--lemma: Uformuenhed-->
+            <p>manglende evne.</p>
+         </note>         
+         
+
+         <note xml:id="com26">
+<!--lemma: Religionen som Baand paa den Uoplyste, eller st&#x00F8;tte for Moralsystemets vankende Bygning, der skal borttages, saasnart denne haer n&#x00E5;et sin beh&#x00F8;rige Fasthed-->
+            <p>hentydning til den oplyste, rationalistiske tilgang til religionen, som var udbredt i Grundtvigs samtid. Rationalisterne tog afstand fra de dele af religionen, der stred imod fornuften, og lagde hovedv&#x00E6;gten p&#x00E5; dens moralske og opdragende funktion. Religionen blev desuden opfattet som et redskab til at bevare den samfundsm&#x00E6;ssige orden.</p>
+            <!-- <p>"Baand p&#x00E5; den Uoplyste" - det kunne meget vel lyde som Kant, men det er formentlig ikke et citat. Th. J&#x00F8;rgensen: "Det er en almen vending"</p>  --> 
+         </note>
+
+         <note xml:id="com27">
+<!--lemma: vankende-->
+            <p>vaklende.</p>
+         </note>
+         
+         <note xml:id="com28">
+<!--lemma: Tilv&#x00E6;relsen-->
+            <p>her: eksistensen.</p>
+         </note>
+
+         <note xml:id="com29">
+<!--lemma: den gyldne Ki&#x00E6;de i Jupiters Haand-->
+            <p>jf. <hi rend="italic"><rs type="title" key="title304">Iliaden</rs></hi> 8, 19-27, hvor <rs type="myth" key="myth171">Zeus</rs> (<rs type="myth" key="myth171.a">Jupiter</rs>) omtaler en gylden k&#x00E6;de, der h&#x00E6;nger ned fra <rs type="myth" key="myth60">Olympen</rs>, hvorved han kan tr&#x00E6;kke hele verden op til sig. Grundtvig ejede selv <hi rend="italic"><rs type="title" key="title304">Iliaden</rs></hi>, se <rs type="title" key="title308"><ref type="docOut" target="bookInventory1805.xml#docIn51">Bogfortegnelse 1805</ref></rs>, nr. 51.</p> 
+            <note type="readMore">
+<p>Grundtvig benytter sig ogs&#x00E5; af billedet af den gyldne k&#x00E6;de i <rs type="title" key="title650">Dimispr&#x00E6;dikenen</rs> (1810), s. [8].</p>
+</note>
+         </note>
+
+         <note xml:id="com30">
+<!--lemma: en gylden alder...-->
+            <p>Dette er en af romantikkens hovedid&#x00E9;er. Grundtvig kendte den fra <persName key="pe18">Henrich Steffens</persName>' <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi> (1803), en bog som Grundtvig selv ejede, jf. <ref type="docOut" target="bookInventory1805.xml#docIn72">Bogfortegnelse 1805</ref>, nr. 72. Hele Grundtvigs hovedafsnit om religionen (s. 141-169) er bygget op omkring <persName key="pe18">Steffens'</persName> 7. og 8. forel&#x00E6;sning.<!--  Se indledningen, afsnit 3.1. -->
+</p>
+         </note>
+<!-- For det konkrete sted, se Steffens 1996, s. 120.  -->
+
+         <note xml:id="com31">
+<!--lemma: Religion er det endeliges samfund med det evige-->
+            <p>Grundtvig har formentlig hentet inspiration til denne definition i <persName key="pe54">F.W.J. Schellings</persName> <hi rend="italic">
+<rs type="title" key="title634">Vorlesungen &#x00FC;ber die Methode des academischen Studium</rs>
+</hi> (1803), forel&#x00E6;sning 8 og 9.</p>
+         </note>
+         
+         <note xml:id="com300">
+<!--lemma: Samfund-->
+            <p>forening, f&#x00E6;llesskab.<!--alternativer: samleven, forbindelse, omgang. F&#x00E6;llesskab synes mest oplagt. Det er bibelsk inspireret fra gr.:koinonia. Det oversattes tidligere med "samfund", nu med "f&#x00E6;llesskab". Scharling bruger "forening"]-->
+</p>
+         </note>         
+
+         <note xml:id="com32">
+<!--lemma: hin episke Old-->
+            <p>den tidlige gr&#x00E6;ske kultur p&#x00E5; <persName key="pe378">Homers</persName> tid, ca. 800 f.Kr. &#x2018;Old&#x2019; kan betyde b&#x00E5;de &#x2018;tidsalder&#x2019; og &#x2018;oldtid&#x2019;.</p>
+         </note>
+         
+         <note xml:id="com33">
+<!--lemma: de nye Philosophers evige Idee-->
+            <p>De romantiske filosoffers (s&#x00E6;rligt <persName key="pe54">F.W.J. Schellings</persName>) begreb om det evige som det ideelle sted, hvor alle mods&#x00E6;tninger forenes, og hvor endeligt og uendeligt smelter sammen.<!--   Se indledningen, afsnit 2.2 -->
+<!-- eller: begreb om en enhed, der b&#x00E6;rer tilv&#x00E6;relsen, en universel fornuft ogs&#x00E5; kaldet det &#x2018;absolutte&#x2019;, hvori hver enkelthed i s&#x00E5;vel naturens som &#x00E5;ndens verden har sin plads -->
+</p>
+         </note>
+       
+         <note xml:id="com34">
+<!--lemma: Tidens-->
+            <p>dvs. historiens.</p>
+         </note>
+         
+         <note xml:id="com35">
+<!--lemma: uddannede-->
+            <p>f&#x00E6;rdigt dannede.</p>
+         </note>                       
+       
+         <note xml:id="com37">
+<!--lemma: Uskyldighedsstanden-->
+            <p>I de f&#x00F8;lgende afsnit henvises til syndefaldsberetningen i <rs type="bible" key="1 Mos 3">1 Mos 3</rs>.</p>
+         </note>
+
+         <note xml:id="com38">
+<!--lemma: Guds Billede-->
+            <p>dvs. menneskets gudbilledlighed.</p>
+         </note>
+
+         <note xml:id="com39">
+<!--lemma: uden-->
+            <p>her: undtagen.</p>
+         </note>
+
+         <note xml:id="com40">
+<!--lemma: Samfundet-->
+            <p>f&#x00E6;llesskabet.</p>
+         </note>
+
+         <note xml:id="com41">
+<!--lemma:  "paa hvilken Dag du &#x00E6;der deraf, skal du d&#x00F8;e!"-->
+            <p>sammenskrivning af <rs type="bible" key="1 Mos 3,3">1 Mos 3, vers 3 og 5<!--1787 bibel har i v. 3: "&#x00E6;der ikke deraf, og r&#x00F8;rer ikke derved; at I skulle ikke d&#x00F8;e." og v. 5: ...hvilken Dag I &#x00E6;de deraf, der skal eders &#x00F8;jne oplades...--></rs>.</p>
+         </note>
+
+         <note xml:id="com43">
+<!--lemma: Mennesket udjoges...endelige-->
+            <p>Jf. <rs type="bible" key="1 Mos 3,23">1 Mos 3,24</rs>. En kerub er et englelignende v&#x00E6;sen, som if&#x00F8;lge Det Gamle Testamente bevogtede <!--<placeName key="fik83">-->Edens have.</p>
+         </note>
+
+         <note xml:id="com44">
+<!--lemma: L&#x00F8;gner fra Begyndelsen-->
+            <p>allusion til <rs type="bible" key="Joh 8,44">Joh 8,44</rs>: &#x201C;I har Dj&#x00E6;velen til fader, og I er villige til at g&#x00F8;re, hvad jeres fader lyster. Han har v&#x00E6;ret en morder fra begyndelsen, og han st&#x00E5;r ikke i sandheden, for der er ikke sandhed i ham. N&#x00E5;r han farer med l&#x00F8;gn, taler han ud fra sig selv; for l&#x00F8;gner er han og fader til l&#x00F8;gnen&#x201D;.</p>
+         </note>
+
+         <note xml:id="com45">
+<!--lemma: Qvindens s&#x00E6;d-->
+            <p>
+<rs type="bible" key="1 Mos 3,15">1 Mos 3,15</rs>.</p>
+         </note>
+
+         <note xml:id="com46">
+<!--lemma: S&#x00E6;d-->
+            <p>afkom.</p>
+         </note>
+         
+         <note xml:id="com304">
+<!--  lemma: da denne i hin gyldne Alder havde v&#x00E6;ret Eet med Religionen-->
+            <p>En tanke, som Grundtvig har fra Henrich <persName key="pe18">Steffens</persName>. I sine <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi> (1803), <ref type="docOut" target="bookInventory1805.xml#docIn72">Bogfortegnelse 1805</ref>, nr. 72, skriver <persName key="pe18">Steffens</persName>: &#x201C;Udtrykket for Gudernes Periode er den reneste, klareste Poesi&#x201D; (1996, s. 121).</p>
+         </note>
+         
+         <note xml:id="com310">
+<!--lemma: litterale-->
+            <p>bogstavelige.</p>
+<!-- findes ikke i ODS -->
+         </note>
+         
+         <note xml:id="com47">
+<!--lemma: Udtydere-->
+            <p>fortolkere.</p>
+         </note>
+         
+         <note xml:id="com48">
+<!--lemma: Sands-->
+            <p>her: mening.</p>
+         </note>
+         
+         <note xml:id="com311">
+<!--lemma: de Gamle d&#x00F8;mte rigtigen, at den Kundskab, der styrtede Menneskene var Philosophie-->
+            <p>Der hentydes til syndefaldsberetningen i <rs type="bible" key="1 Mos 3">1 Mos 3</rs>.</p>
+         </note>
+
+         <note xml:id="com49">
+<!--lemma: De fragmentariske skildringer af gr&#x00E6;kernes episke old, vi have under Homers navn-->
+            <p>de episke v&#x00E6;rker, <hi rend="italic">
+<rs type="title" key="title304">Iliaden</rs>
+</hi> og <hi rend="italic">
+<rs type="title" key="title631">Odyseen</rs>,</hi> som tilskrives <persName key="pe378">Homer</persName> (ca. 800 f.Kr.). &#x2018;Old&#x2019; kan betyde b&#x00E5;de &#x2018;tidsalder&#x2019; og &#x2018;oldtid&#x2019;.</p>
+         </note>
+         
+         <note xml:id="com50">
+<!--lemma: den dramatiske Digtning -->
+            <p>den klassiske, gr&#x00E6;ske dramatiske digtning som fx. <persName key="pe632">Aischylos'</persName> tragedier og <persName key="pe633">Aristofanes'</persName> komedier (ca. 500-400 f.Kr).</p>
+         </note>
+         
+         <note xml:id="com312">
+<!--lemma: vist nok-->
+            <p>sandt nok, ganske vist.</p>
+         </note>
+         
+         
+         <note xml:id="com51">
+<!--lemma: Tendents til-->
+            <p>her: sigte p&#x00E5;, str&#x00E6;ben efter.<!-- JK: retning mod -->
+</p>
+         </note>
+
+         <note xml:id="com52">
+<!--lemma: Ingen kan fare op til Himmelen, uden Den, som nedsteg derfra-->
+            <p>
+<rs type="bible" key="Joh 3,13">Joh 3,13</rs>, forkortet. Verset lyder i den autoriserede overs&#x00E6;ttelse af 1992: &#x201C;Ingen er steget op til himlen undtagen den, der steg ned fra himlen, Menneskes&#x00F8;nnen&#x201D;.</p>
+         </note>
+
+         <note xml:id="com53">
+<!--&#x3bb;&#x3bf;&#x3b3;&#x3bf;&#x3c2;-->
+            <p>gr. logos, den guddommelige fornuft, der gennemtr&#x00E6;nger og styrer verden. At ogs&#x00E5; hedninger kunne have en gnist af det guddommelige, var en almindelig tankegang hos de tidlige kristne t&#x00E6;nkere. De overtog begrebet &#x2018;logos spermatikos&#x2019; fra stoikerne, dvs. id&#x00E9;en om, at den guddommelige fornuft har indplantet kim af det fornuftige og hensigtsm&#x00E6;ssige i skabningen, herunder alle mennesker.</p>
+         </note>
+
+         <note xml:id="com54">
+<!--lemma: H&#x00F8;resale-->
+            <p>auditorier.</p>
+         </note>
+
+         <note xml:id="com55">
+<!--lemma: Overdaads-->
+            <p>overd&#x00E5;digheds.</p>
+         </note>
+
+         <note xml:id="com56">
+<!--lemma: Kl&#x00E6;demon-->
+            <p>kl&#x00E6;debon, kl&#x00E6;de.</p>
+         </note>
+
+         <note xml:id="com57">
+<!--lemma: borgede-->
+            <p>l&#x00E5;nte.</p>
+         </note>
+
+         <note xml:id="com58">
+<!--lemma: Asal&#x00E6;rens-->
+            <p>den nordiske mytologis.</p>
+         </note>
+         
+         <note xml:id="com59">
+<!--lemma: merkelige-->
+            <p>her: p&#x00E5;faldende.</p>
+         </note>    
+         
+         <note xml:id="com320">
+<!--lemma: Erebos-->
+            <p>refererer her til underverdenen i den gr&#x00E6;ske mytologi. Navnet betyder &#x2018;m&#x00F8;rke&#x2018;.</p>
+         </note>    
+         <!-- i txt er myth-m&#x00E6;rket pillet af aht. visningen: <rs type="myth" key="myth317"> -->
+         
+         <note xml:id="com60">
+<!--lemma: &#x3bc;&#x3b5;&#x3b3;&#x3b1;
+            &#x3b5;&#x3c3;&#x3c4;&#x3b9; &#x3c4;&#x3bf; &#x3c4;&#x3b7;&#x3c2;
+            &#x3b5;&#x3c5;&#x3c3;&#x3b5;&#x3b2;&#x3b5;&#x3b9;&#x3b1;&#x3c2;
+            &#x3bc;&#x3c5;&#x3c3;&#x3c4;&#x3b5;&#x3f1;&#x3b9;&#x3bf;&#x3bd;.
+            &#x398;&#x3b5;&#x3bf;&#x3c2;
+            &#x3b5;&#x3a6;&#x3b1;&#x3bd;&#x3b5;&#x3f1;&#x3c9;&#x3d1;&#x3b7; &#x3b5;&#x3bd;
+            &#x3c3;&#x3b1;&#x3f1;&#x3f0;&#x3b9;-->
+            <p>gr. mega esti to tes eusebeias mysterion. Theos efanerothe en sarki. <rs type="bible" key="1 Tim 3,16">1 Tim 3,16</rs>: &#x201C;stor er gudsfrygtens hemmelighed: Gud blev
+               &#x00E5;benbaret i k&#x00F8;det&#x201D;.</p>
+<!--find kilden: Hvilket gr&#x00E6;sk NT? Nestle-Aland skriver Han i stedet for Gud. Ligeledes 1992-->
+         </note>
+
+         <note xml:id="com61">
+<!--lemma: Forestillingen om de tvende Naturer i Christi
+                    Person-->
+            <p>Kristent dogme, der l&#x00E6;rer, at <persName key="pe45">Kristus</persName> havde to naturer, en menneskelig og en guddommelig, og at disse to naturer hverken m&#x00E5; adskilles eller sammenblandes.</p>
+               <note type="readMore">
+<p>Dogmet blev fastlagt p&#x00E5; koncilet i <!--<placeName key="fak189">-->Kalchedon &#x00E5;r 451 e.Kr. som et v&#x00E6;rn mod to former for k&#x00E6;ttersk l&#x00E6;re: dels doketismen, der betonede den guddommelige side af <persName key="pe45">Kristus</persName> og h&#x00E6;vdede, at hans menneskelighed kun var tilsyneladende; dels ebjonitismen, der modsat l&#x00E6;rte, at <persName key="pe45">Jesus Kristus</persName> blot var et menneske. Over for disse positioner formuleredes to-naturl&#x00E6;ren: <persName key="pe45">Kristus</persName> er sand Gud og sandt menneske.</p>                       
+               </note>
+               
+         </note>
+
+         <note xml:id="com62">
+<!--lemma: F&#x00E6;drene-->
+            <p>de tidlige kirkef&#x00E6;dre, apologeterne i det 2. &#x00E5;rhundrede, som i deres forsvar for kristendommen s&#x00F8;gte at forklare teologiske l&#x00E6;res&#x00E6;tninger med samtidens filosofiske termer.</p>
+         </note>
+
+         <note xml:id="com63">
+<!--lemma:&#x3bb;&#x3bf;&#x3b3;&#x3bf;&#x3c2;-->
+            <p>gr. logos, den fornuft, der gennemtr&#x00E6;nger og styrer verden. Dette filosofiske begreb benyttede de tidlige kristne t&#x00E6;nkere til at udfolde det kristne gudsbegreb. Logos betyder b&#x00E5;de fornuft og ord, og det brugte kirkef&#x00E6;drene til at dele logos op i den fornuft, der fandtes fra evighed af som Guds egen fornuft (den immanente logos), og det ord, hvormed Gud ved skabelsen gik ud af sig selv (den &#x00E5;benbarede logos). Skaberordet identificeredes med <persName key="pe45">Kristus</persName>, jf. Johannesevangeliets prolog <rs type="bible" key="Joh 1,1-18">Joh 1, 1-18</rs>. Denne s&#x00E5;kaldte &#x2018;logoskristologi&#x2019; (l&#x00E6;ren om <persName key="pe45">Kristus</persName> som det menneskeblevne Guds ord) var en m&#x00E5;de at forklare Faderens og S&#x00F8;nnens indbyrdes forhold i allerede kendte filosofiske termer. <!-- Begreberne skulle forklare, at Kristus er en del af Gud, og at Far og S&#x00F8;n er en enhed p&#x00E5; samme m&#x00E5;de som ord og tanke er en enhed. -->
+</p>
+         </note>
+
+         <note xml:id="com64">
+<!--lemma: &#x3b5;&#x3c5;&#x3b4;&#x3b9;&#x3b1;&#x3d1;&#x3b5;&#x3c4;&#x3bf;&#x3c2;-->
+            <p>gr. endiathetos, &#x2018;den, der bliver inde&#x2019;, den immanente.</p>
+         </note>
+
+         <note xml:id="com65">
+<!--lemma: &#x3c0;&#x3f1;&#x3bf;&#x3c6;&#x3bf;&#x3f1;&#x3b9;&#x3f0;&#x3bf;&#x3c2;-->
+            <p>gr. proforikos, &#x2018;den, der g&#x00E5;r ud&#x2019;, den &#x00E5;benbarede.</p>
+         </note>
+
+         <note xml:id="com66">
+<!--lemma: Jesus forsonede Menneskene med Gud-->
+            <p>jf. <rs type="bible" key="Kol 1,19-20">Kol 1,19-20</rs>: &#x201C;For i ham [Jesus Kristus] besluttede hele guddomsfylden at tage bolig og ved ham at forsone alt med sig, p&#x00E5; jorden som i himlene, ved at stifte fred ved hans blod p&#x00E5; korset&#x201D;.
+               <!-- Skal der overhovedet v&#x00E6;re en konkret henvisning? Det er nok ment i generelle vendinger. NB Grundtvigs bibel siger forligte. Men samme vb. p&#x00E5; gr&#x00E6;sk. -->
+            </p>
+         </note>
+
+         <note xml:id="com67">
+<!--lemma: det Endeliges Forsoning med det Evige-->
+            <p>Grundtvig har formentlig hentet inspiration til denne definition i <persName key="pe54">F.W.J. Schellings</persName> <hi rend="italic">
+<rs type="title" key="title634">Vorlesungen &#x00FC;ber die Methode des academischen Studium</rs>
+</hi> (se fx Schelling 1803, s. 180).</p>
+         </note>
+
+         <note xml:id="com68">
+<!--lemma: forlorne-->
+            <p>tabte.</p>
+         </note>
+
+         <note xml:id="com69">
+<!--lemma: "Ingen kiender Faderen, uden S&#x00F8;nnen, og den som S&#x00F8;nnen det vil aabenbare."-->
+            <p>
+<rs type="bible" key="Matt 11,27">Matt 11,27</rs>.</p>
+<!-- "vil" og "det" er byttet om ift. 1787-Bibelen -->
+         </note>
+
+         <note xml:id="com70">
+<!--lemma: "det naturlige Menneske fatter ikke de Ting, som h&#x00F8;re Guds Aand til"-->
+            <p>
+<rs type="bible" key="1 Kor 2,14">1 Kor 2,14</rs>. &#x2018;Det naturlige menneske&#x2019; skal i denne sammenh&#x00E6;ng forst&#x00E5;s som mods&#x00E6;tning til &#x2018;det genf&#x00F8;dte menneske&#x2019;. Det var et meget anvendt begreb i datidens teologiske diskussion mellem naturlig og &#x00E5;benbaret religion.</p>
+<!-- overs&#x00E6;tt. = 1787. Evt give en forklaring til "det naturlige msk, jf. Else"-->
+         </note>
+
+         <note xml:id="com71">
+<!--lemma: "Ingen kiender det som er i Gud uden Guds Aand."-->
+            <p>
+<rs type="bible" key="1 Kor 2,11">1 Kor 2,11</rs>.</p> <!-- 1787: saa veed og ingen de ting, som ere i Gud, uden Guds Aand. Gr. egnoken -->
+         </note>
+
+         <note xml:id="com72">
+<!--lemma: det f&#x00F8;rste Kapitel af Brevet til Romerne-->
+            <p>N&#x00E6;rmere bestemt <rs type="bible" key="Rom 1,18-32">Rom 1,18-32</rs>, hvor menneskenes (hedningernes) syndighed og dens f&#x00F8;lger beskrives.</p>
+<!-- giv en parafrase? Hvem er "de"? (Guds usynlige v&#x00E6;sen, b&#x00E5;de hans evige kraft og hans guddommelighed har kunnet ses siden verdens skabelse). Her n&#x00E6;vnes nogle mennesker, som kender Gud, men ikke &#x00E6;rer ham som Gud. "Deres tanker endte i tomhed og og de blev form&#x00F8;rkede i deres uforstandige hjerte. De h&#x00E6;vdede at v&#x00E6;re vise, men blev t&#x00E5;ber". At der her hentydes til filosofiens bestr&#x00E6;belse p&#x00E5; at blive religion er Grundtvigs fortolkning. -->
+         </note>
+
+         <note xml:id="com73">
+<!--lemma: Moralloven-->
+            <p>Grundtvig polemiserer her imod filosoffen <persName key="pe508">Immanuel Kant</persName>, if&#x00F8;lge hvem moralloven ikke skal udeledes af fx religionen, men udspringer af menneskets egen fornuft.<!-- Moralloven er if&#x00F8;lge Kant f&#x00E6;llesmenneskelig og objektiv.<persName key="pe508">Kant</persName> formulerede moralloven i det kategoriske imperativ: &#x201C;Du skal handle s&#x00E5;ledes, at den maksime, under hvilken du handler, skal kunne v&#x00E6;re en almen lov&#x201D;-->
+</p>
+         </note>
+
+         <note xml:id="com74">
+<!--lemma: v&#x00E6;sentlig-->
+            <p>i kraft af sit v&#x00E6;sen.</p>
+         </note>
+         
+         <note xml:id="com75">
+<!--lemma: Rom. 5te-->
+            <p>Der sigtes formentlig s&#x00E6;rligt til <rs type="bible" key="Rom 5,12-13">Rom 5,12-13</rs>, hvor <persName key="pe343">Paulus</persName> siger, at synden kom ind i verden ved <persName key="pe635">Adams</persName> fald og gjorde loven n&#x00F8;dvendig.</p>
+         </note>
+                 
+         <note xml:id="com308">
+<!--lemma: 7de-->
+            <p>Der sigtes formentlig s&#x00E6;rligt til <rs type="bible" key="Rom 7,14-25">Rom 7, 14-25</rs>, der handler om menneskets manglende evne til at leve op til Guds lov: &#x201C;For det gode, som jeg vil, det g&#x00F8;r jeg ikke, men det onde som jeg ikke vil, det g&#x00F8;r jeg&#x201D;. Dette er fjernt fra det rationalistiske synspunkt, at loven ligger i menneskets eget indre og lader sig efterleve.</p>
+         </note>
+         
+         <note xml:id="com313">
+<!--lemma: slutte sig til det-->
+            <p>forbinde sig med det, tr&#x00E6;de i kontakt med det.</p>
+         </note>             
+
+
+         <note xml:id="com76">
+<!--lemma: Joh. 3. 16. og 17.-->
+            <p>&#x201C;For s&#x00E5;ledes elskede Gud verden, at han gav sin enb&#x00E5;rne s&#x00F8;n, for at enhver, som tror p&#x00E5; ham, ikke skal fortabes, men have evigt liv. For Gud sendte ikke sin s&#x00F8;n til verden for at d&#x00F8;mme verden, men for at verden skal frelses ved ham&#x201D;.</p>
+         </note>
+
+         <note xml:id="com77">
+<!--lemma: Rom. 8. 19 - 25.-->
+            <p>If&#x00F8;lge <rs type="bible" key="Rom 8,19-25">Rom 8,19-25</rs> blev skabningen ved faldet underlagt tomheden, s&#x00E5; den nu sukker og v&#x00E5;nder sig, men den har det h&#x00E5;b, at den en dag skal befries fra &#x201C;tr&#x00E6;ldommen under forg&#x00E6;ngeligheden&#x201D;.</p>
+         </note>
+
+         <note xml:id="com78">
+<!--lemma: da han b&#x00F8;iede sine Kn&#x00E6; for vor Herres Jesu Christi Fader, og
+                    bad, at Christus maatte boe formedelst Troen i hans Br&#x00F8;dres Hierter, paa det de
+                    med alle de Hellige kunde begribe, hvilket der er det Brede og Lange, og H&#x00F8;ie og
+                    Dybe, at de kunde kiende den Christi Kierlighed, der overgaaer al Kundskab og
+                    opfyldes til al Guds Fylde.-->
+            <p>parafrase over <rs type="bible" key="Ef 3,14-19">Ef 3,14-19</rs>.</p>
+         </note>
+         
+         <note xml:id="com314">
+<!--lemma: paa det-->
+            <p>for at.</p>
+         </note>      
+         
+         <note xml:id="com342">
+<!--lemma: Moralloven-->
+            <p>de moralske principper, der vejleder menneskets handlinger.</p>
+         </note> 
+         
+
+         <note xml:id="com333">
+<!--lemma: da mennesket kun skabtes for at stige fra begreb til individ-->
+            <p>Der hentydes til syndefaldsberetningen i <rs type="bible" key="1 Mos 3">1 Mos 3</rs>, her formuleret i platonisk-romantiske vendinger. I uskyldighedstilstanden &#x201C;udtrykte mennesket sit begreb helt&#x201D; (jf. s. 142), men faldt fra den ideelle, evige verden ned i den endelige.</p>
+         </note>  
+         
+         <note xml:id="com334">
+<!--lemma: for at-->
+            <p>for dern&#x00E6;st at; &#x2018;for at&#x2018; udtrykker her en (utilsigtet) f&#x00F8;lgevirkning, ikke en hensigt.</p>
+         </note> 
+
+         <note xml:id="com335">
+<!--lemma: stige-->
+            <p>her: stige ned.</p>
+         </note>  
+
+         <note xml:id="com79">
+<!--lemma: &#x00F8;iebliklig-->
+            <p> her: for et &#x00F8;jeblik, kortvarigt.</p>
+         </note>
+
+         <note xml:id="com80">
+<!--lemma: Sandsen af-->
+            <p> her: meningen med.</p>
+         </note>
+
+         <note xml:id="com81">
+<!--lemma: et betydende Ziffer i Approximationens Tabel-->
+            <p>dvs. et vigtigt led i tiln&#x00E6;rmelsesprocessen. Udtrykket er hentet fra <persName key="pe18">Henrich Steffens'</persName> <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi> (1803), <ref type="docOut" target="bookInventory1805.xml#docIn72">Bogfortegnelse 1805</ref>, nr. 72. <persName key="pe18">Steffens</persName> betegner i sin 6. forel&#x00E6;sning den empiriske naturvidenskab som en &#x201C;Approximation i det Uendelige&#x201D; til den sande viden om naturen (se Steffens 1996, s. 112). Den tanke overf&#x00F8;rer Grundtvig p&#x00E5; sit emne, og her bliver det filosofien, der kan tiln&#x00E6;rme sig det evige, men aldrig n&#x00E5; det.</p>
+         </note>
+
+         <note xml:id="com82">
+<!--lemma: elsk Gud over alle Ting, og din N&#x00E6;ste som dig selv!-->
+            <p>
+<rs type="bible" key="Matt 22,36-39">jf. Matt 22,37-39</rs>.</p>
+         </note>
+
+         <note xml:id="com83">
+<!--lemma: i disse to Bud indfattes baade Loven og Propheterne-->
+            <p>
+<rs type="bible" key="Matt 22,40">Matt 22,40</rs>.</p>
+         </note>
+
+         <note xml:id="com84">
+<!--lemma: det hellige Jerusalem-->
+            <p>forestilling i Det Nye Testamente om et <!--<placeName key="fik190">-->himmelsk Jerusalem, som h&#x00F8;rer den kommende, evige verden til, jf. <rs type="bible" key="Åb 21,1-22,5">&#x00C5;b 21,1-22,5</rs>. <!-- tjek "det fornyede livets tr&#x00E6;"-->
+</p>
+         </note>
+
+         <note xml:id="com85">
+<!--lemma: den Naadestol, som Herren fremsatte for Troen i Christi Blod-->
+            <p>hentydning til <rs type="bible" key="Rom 3,25">Rom 3,25</rs>. Om forl&#x00F8;sningen i <persName key="pe45">Jesus Kristus</persName> hedder det i <hi rend="italic">
+<rs type="title" key="title236">Biblia 1787</rs>,</hi> at Gud har fremsat den &#x201C;til en naadestoel formedelst troen i hans blod&#x201D;.</p>
+            <note type="readMore">
+<p>N&#x00E5;destol var oprindelig betegnelsen for den guldplade, der d&#x00E6;kkede pagtens ark, og som p&#x00E5; forsoningsdagen skulle st&#x00E6;nkes med forsoningsofferets blod. Det var <persName key="pe42">Martin Luther</persName>, der oversatte det hebraiske <hi rend="italic">kapporet</hi> til &#x2018;Gnadenstuhl&#x2019;, og herfra gik det over i dansk sprog. Betegnelsen brugtes i Det Nye Testamente i overf&#x00F8;rt betydning om <persName key="pe45">Kristus</persName> som forsoneren.</p>
+               <p>Ordet er blevet oversat meget forskelligt gennem tiderne. Dette kan ses netop i Rom 3,25. Her hedder det i 1787 &#x2018;Naadestol&#x2019;, i 1819 &#x2018;Forsoning&#x2019; og i 1992 &#x2018;sonoffer&#x2019;. Grundtvig brugte ofte ordet Naadestol, bl.a. i den kendte pinsesalme &#x201C;I al sin Glans nu straaler Solen, Livs-Lyset over Naadestolen&#x201D;.</p>
+<!-- titelopm&#x00E6;rke -->
+         </note>
+<!-- tjek salme-ordbog for betydningen-->
+         </note>
+         
+         <note xml:id="com86">
+<!--lemma: En Gaade er endnu tilbage, og fordrer saa meget mere Omtale,
+            som den synes mindst tilfredsstillende l&#x00F8;st af den christelige Religion. Dens
+            Gienstand er: de Ondes Ski&#x00E6;bne efter D&#x00F8;den.-->
+            <p>Dette afsnit om de ondes sk&#x00E6;bne efter d&#x00F8;den (s. 153-162) er en afskrift af en l&#x00E6;ngere dagbogspassage, som Grundtvig skrev d. 8.-9. september 1806, alts&#x00E5; samtidig med at han arbejdede p&#x00E5; afhandlingen <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> (<hi rend="italic"><rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger 1</rs></hi> 1979, s. 374-380). Den er sat ind stort set uden omarbejdelse. Se indledningen, afsnittet <ref type="docOut" target="1807_61_intro.xml#docIn16">&#x201C;Ekskurs om de ondes sk&#x00E6;bne efter d&#x00F8;den&#x201D;</ref>.</p>
+         </note>
+         
+         <note xml:id="com319">
+<!--lemma: tilv&#x00E6;relsens-->
+            <p>dvs. den jordiske, dennesidige tilv&#x00E6;relses.</p>
+         </note>
+         
+         <note xml:id="com87">
+<!--lemma: endeligt Maal-->
+            <p>dvs. et m&#x00E5;l i den endelige, forg&#x00E6;ngelige verden.</p>
+         </note>
+         
+         <note xml:id="com88">
+<!--lemma: de gamle Teologer-->
+            <p>Der sigtes formentlig s&#x00E6;rligt til <persName key="pe640">Gregor den Store</persName>, som var den af kirkef&#x00E6;drene, der kom til at p&#x00E5;virke middelalderens kristendom mest med sin bodsl&#x00E6;re og forestillingen om sk&#x00E6;rsilden.</p>
+         </note>
+         
+         <note xml:id="com89">
+<!--lemma: den evige Ild, som er beredt Dievelen og hans Engle-->
+            <p>
+<rs type="bible" key="Matt 25,41">Matt 25,41</rs>.</p>
+         </note>
+
+         <note xml:id="com90">
+<!--lemma: den evige D&#x00F8;d-->
+            <p>Udtrykket &#x2018;den evige d&#x00F8;d&#x2019; findes faktisk ikke i Det Nye Testamente. Der tales til geng&#x00E6;ld om &#x2018;evig pine&#x2019; (<rs type="bible" key="Matt 25,46">Matt 25,46</rs>), &#x2018;evig straf&#x2019; (<rs type="bible" key="Mark 3,46">Mark 3,46</rs>), &#x2018;evig dom&#x2019; (<rs type="bible" key="Hebr 6,2">Hebr 6,2</rs>), &#x2018;evig undergang&#x2019; (<rs type="bible" key="2 Thess 1,9">2 Thess 1,9</rs>) og &#x2018;evig ild&#x2019; (<rs type="bible" key="Matt 18,8">Matt 18,8</rs>). Grundtvig har formentlig kendt udtrykket fra <persName key="pe39">Biskop Balles</persName> L&#x00E6;rebog, hvor kapitel 8, &#x00A7; 7 omhandler &#x201C;ford&#x00F8;mmelsen, som kaldes den evige D&#x00F8;d&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com315">
+<!--lemma: pinlig-->
+            <p>pinefuld, ubehagelig.</p>
+         </note>
+
+         <note xml:id="com91">
+<!--lemma: Lignelsen om den rige Mand-->
+            <p>
+<rs type="bible" key="Luk 16,19-31">Luk 16,19-31</rs>. Lignelsen handler om en rig mand, som undlader at tage sig af den fattige <persName key="pe637">Lazarus</persName>, som ligger ved hans port. Da de to d&#x00F8;r, ender <persName key="pe637">Lazarus</persName> i <persName key="pe636">Abrahams</persName> sk&#x00F8;d, mens den rige pines. D&#x00F8;dsriget er imidlertid s&#x00E5;dan indrettet, at den rige derfra kan se over til <persName key="pe636">Abraham</persName> og <persName key="pe637">Lazarus</persName>, men ikke komme derhen eller f&#x00E5; hj&#x00E6;lp derfra, da en dyb kl&#x00F8;ft skiller dem.</p>
+         </note>
+
+         <note xml:id="com92">
+<!--lemma: ginge-->
+            <p>gik (ville g&#x00E5;), pr&#x00E6;teritum pluralis konjunktiv af &#x2018;g&#x00E5;&#x2019;.</p>
+         </note>
+
+         <note xml:id="com93">
+<!--lemma: aftoer-->
+            <p>afvasker.</p>
+         </note>
+
+         <note xml:id="com94">
+<!--lemma: Ideen om Sk&#x00E6;rsild i sin &#x00E6;dlere Betydning-->
+            <p>Forestillingen om sk&#x00E6;rsilden (lat. purgatorium) som en mellemtilstand mellem d&#x00F8;d og dommedag, hvor sj&#x00E6;lene kunne blive renset ved ild og gjort v&#x00E6;rdige til frelsen, opstod allerede i oldkirken hos bl.a. <persName key="pe506">Origines</persName> og <persName key="pe634">Augustin</persName>. I slutningen af middelalderen blev l&#x00E6;ren om sk&#x00E6;rsilden bragt i forbindelse med l&#x00E6;ren om aflad og afladshandelen, s&#x00E5;dan at man ved at k&#x00F8;be et afladsbrev kunne f&#x00E5; gjort bod for de timelige straffe og f&#x00E5; forkortet sin tid i sk&#x00E6;rsilden. N&#x00E5;r Grundtvig kalder den tidlige sk&#x00E6;rsildsl&#x00E6;re &#x2018;&#x00E6;dlere&#x2018;, er det formentlig, fordi afladstanken endnu ikke var bragt ind i sp&#x00F8;rgsm&#x00E5;let. <persName key="pe42">Luther</persName> og de &#x00F8;vrige reformatorer afviste l&#x00E6;ren om sk&#x00E6;rsilden, men alligevel har tanken om et renselsessted for sj&#x00E6;lene haft en vis tiltr&#x00E6;kning ogs&#x00E5; for protestanter.</p>
+         </note>
+         
+         <!-- <note xml:id="comxx">
+            <p>kirkef&#x00E6;drene [oven for forklaret som Origenes og Augustin]</p>
+            </note> -->
+         
+         <note xml:id="com95">
+<!-- lemma: det Eviges Samfund -->
+            <p>dvs. sin forening med det Evige.</p>
+         </note>
+
+         <note xml:id="com96">
+<!--lemma: sin Herligheds Glands og sit V&#x00E6;sens rette Billede-->
+            <p>
+<rs type="bible" key="Hebr 1,3">Hebr 1,3</rs>; om Kristus.</p>
+<!-- 1787 han er herligheds glands, og hans V&#x00E6;sens rette billede-->
+         </note>
+
+         <note xml:id="com97">
+<!--lemma: Sluttelse til-->
+            <p>tilslutning til.</p>
+         </note>
+
+         <note xml:id="com98">
+<!--lemma: Synd mod den Hellig Aand, som aldrig kan forlades-->
+            <p>
+<rs type="bible" key="Mark 3,29">jf. Mark 3,29</rs>.</p> <!-- 1787: Men hvo som taler bespottelig mod den Hellig Aand, hvader ingen forladelse evindelig, men er skyldig til en evig Dom-->
+         </note>
+        
+         <note xml:id="com99">
+<!--lemma: De nyere Philosopher-->
+            <p>Det har ikke ladet sig identificere, hvem Grundtvig hentyder til her.</p>
+         </note>
+        
+         <note xml:id="com100">
+<!--lemma: os selv-->
+            <p>dvs. Grundtvig selv.</p>
+         </note>
+
+         <note xml:id="com102">
+<!--lemma: ops&#x00E6;tter-->
+            <p>uds&#x00E6;tter.</p>
+         </note>
+
+         <note xml:id="com103">
+<!--lemma: 
+                        "Jeg frygter slet ikke at blive fortabt
+                        Af den som har Vinen og Pigerne skabt."
+                    -->
+            <p>Verselinjerne stammer fra visen <rs type="title" key="title504">&#x201C;Den Skaberen sk&#x00E6;nkte en oplyst Forstand&#x201D;</rs> af <persName key="pe522">Johan Vibe</persName>. Visen er trykt f&#x00F8;rste gang i <rs type="title" key="title497">
+<hi rend="italic">Arier og Sange,</hi>
+</rs> 2. del, 1777. Her lyder verset: &#x201C;Jeg frygter kun lidet at blive fortabt / Af den, som har Piger og Vindruer skabt.&#x201D; Verset findes ogs&#x00E5; opf&#x00F8;rt i Det Norske Selskabs Viseprotokol, s. 58, her igen med en lidt anden ordlyd: &#x201C;Jeg frygter slet ikke at blive fortabt af den som har Elskov og Druerne skabt&#x201D;.<!-- Opm&#x00E6;rke viseprotokollen? Kan vi opm&#x00E6;rke manuskripter? Ellers slette henvisningen -->
+<!-- evt. skrive noget om klubberne, jf NHB -->
+</p>
+         </note>
+
+         <note xml:id="com104">
+<!--lemma: n&#x00F8;de-->
+            <p>n&#x00F8;d, pr&#x00E6;t. plur. af nyde.</p>
+         </note>
+
+         <note xml:id="com301">
+<!--lemma: Tiden-->
+            <p>det dennesidige.</p>
+         </note>
+
+         <note xml:id="com105">
+<!--lemma: han kom ikke for at tiene de Sunde, men kun dem, som have L&#x00E6;gedom behov-->
+            <p>
+<rs type="bible" key="Mark 2,17">Mark 2,17</rs>.</p>
+<!-- 1787: de karske have ikke l&#x00E6;ge behov; men de som have ont. Jeg er ikke kommen, at kalde de retf&#x00E6;rdige, men syndere til omvendelse. Er der andre bibelteder, der er mere oplagte?-->
+         </note>
+         
+         <note xml:id="com317">
+<!--lemma: de-->
+            <p>dvs. de onde.</p>
+         </note>
+
+         <note xml:id="com106">
+<!--lemma: Mysterium-->
+            <p>Grundtvig har denne forst&#x00E5;else af religionen som mysterium fra den romantiske filosofi, s&#x00E6;rligt <persName key="pe54">F.W.J. Schelling</persName>. Denne opfattelse l&#x00E5; langt fra det herskende rationalistiske syn p&#x00E5; religionen, if&#x00F8;lge hvilket religionens mystiske og spekulative elementer var unyttige og f&#x00F8;lgelig skulle skubbes til side.</p>
+         </note>
+         
+         <note xml:id="com107">
+<!--lemma: Katholicismens betydningsfuldere Periode -->
+            <p>den katolske middelalder.</p>
+         </note>
+         
+         <note xml:id="com108">
+<!--lemma: Digteren-->
+            <p>
+<persName key="pe525">August Wilhelm Schlegel</persName>.</p>
+         </note>
+         
+         <note xml:id="com109">
+<!--lemma: Raphael dichtete liebend, prophetisch ersann Bonarotti,
+                        W&#x00E4;gte des Pantheons Dom stolz in den Aether hinauf. -->
+            <p>Citat fra <persName key="pe525">August Wilhelm Schlegels</persName> <rs type="title" key="title498">
+<hi rend="italic">Rom. Elegie</hi>
+</rs> (1805). &#x2018;Rafael digtede med k&#x00E6;rlighed, profetisk udgrundede Buonarotti, h&#x00E6;vede Pantheons kuppel stolt i &#x00E6;teren op&#x2019;. Kunstnerne <persName key="pe352">Rafael</persName> og <persName key="pe515">Michelangelo</persName> var pavelige arkitekter p&#x00E5; 1500-tallets nye Peterskirke i Rom. Verselinjerne skal formentlig forst&#x00E5;s metaforisk: den lavere beliggende kuppel p&#x00E5; Pantheon blev af <persName key="pe515">Michelangelo</persName> l&#x00F8;ftet h&#x00F8;jere mod himlen.</p>
+            <note type="readMore">
+<p>Det tyske verbum &#x2018;w&#x00E4;gen&#x2019; betyder egentlig &#x2018;veje&#x2019; eller &#x2018;overveje&#x2019;. &#x2018;&#x00C6;teren&#x2019; er de h&#x00F8;je, lyse luftlag.</p>
+</note>
+            <!-- NHBs kommentar: du b&#x00F8;r nok tilf&#x00F8;je en note: "w&#x00E4;gen betyder her: at afveje noget i tankerne." profetisk overvejede Buonarotti, [han] opfattede balancen i Panteons kuppel og l&#x00F8;ftede den stolt op i &#x00E6;teren."-->
+         </note>        
+
+         <note xml:id="com110">
+<!--lemma: Skranker-->
+            <p>her: gr&#x00E6;nser.</p>
+         </note>
+         
+         <note xml:id="com318">
+<!--lemma: tilbagef&#x00F8;rte-->
+            <p>bragte tilbage, genindf&#x00F8;rte.</p>
+         </note>
+         
+         <note xml:id="com215">
+<!--lemma: &#x00F8;iebliklig-->
+            <p>for et &#x00F8;ieblik.</p>
+         </note>
+         
+         <note xml:id="com305">
+<!--lemma: han foragter Tilv&#x00E6;relsen-->
+            <p>Grundtvig har den tanke, at poesien m&#x00E5; ytre sig som en &#x2018;opponeren imod eksistensen&#x2019; fra <persName key="pe18">Henrich Steffens</persName>, se <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger 1</rs></hi> 1979, s. 221.</p>
+         </note> <!-- evt. udbygge efter FLN s. 158: poetens ulykke ligger i, at han aldrig form&#x00E5;r at bringe sin h&#x00F8;jere indre anskuelse i overensstemmelse med sin oplevelse af den ydre og endelige virkelighed -->
+         
+         <note xml:id="com111">
+<!--lemma: I Analogie af den lavere Natur-->
+            <p>ved en analogislutning fra den organiske natur.</p>
+         
+         </note>       
+       
+         <note xml:id="com113">
+<!--lemma: den st&#x00F8;rste, der f&#x00F8;dtes af Qvinde-->
+            <p>
+<rs type="bible" key="Matt 11,11">jf. Matt 11,11</rs>.</p> <!-- 1787: iblant dem, som ere f&#x00F8;dte af qvinder, er ingen st&#x00F8;rre opstanden end Johannes den d&#x00F8;bere;-->
+         </note>
+
+         <note xml:id="com114">
+<!--lemma: dog er den mindste i Himmeriges Rige-->
+            <p>
+<rs type="bible" key="Matt 11,11">jf. Matt 11,11</rs>.</p> <!-- 1787: men den, som er mindre i himmeriges rige, er st&#x00F8;rre end ham.-->
+         </note>
+
+         <note xml:id="com115">
+<!--lemma: 
+                        Hebt er sich aufwa?rts
+                        Und beru?hrt
+                        Mit dem Scheitel die Sterne,
+                        Nirgends haften dann
+                        Die unsichern Sohlen;
+                        Und mit ihm spielen
+                        Wolken und Winde. -->                    
+            <p>Citat fra <persName key="pe29">Johann Wolfgang Goethes</persName> digt <rs type="title" key="title503">&#x201C;Grenzen der Menschheit&#x201D;</rs> (2. strofe).
+               <lg n="2">
+                  <l>&#x2018;H&#x00E6;ver han sig mod oven</l>
+                  <l>og r&#x00F8;rer med sin isse</l>
+                  <l>stjernerne,</l>
+                  <l>da mister hans fod</l>
+                  <l>det sikre f&#x00E6;ste,</l>
+                  <l>og med ham spiller</l>
+                  <l>skyer og vinde&#x2019;</l>        
+               </lg>   
+            (oversat af <persName key="pe572">P.A. Rosenberg</persName>).</p>            
+         </note>
+         
+         <note xml:id="com116">
+<!--lemma: Jordlivet indslutter de betydende Ziffre, hvortil
+                    Evigheden kun f&#x00F8;ies som et Nul, istedet for at det selv burde v&#x00E6;re Nullet, der
+                    kun fik sin Betydning ved Stillingen mellem det Eviges Ziffre-->
+            <p>Grundtvig kritiserer her rationalisterne for at regne jordelivet for det eneste betydningsfulde og evigheden for et nul, hvor det if&#x00F8;lge ham er omvendt: jordelivet har ingen betydning i sig selv, men f&#x00E5;r det kun i kraft af sin forbindelse til &#x2018;det Evige&#x2019;. Grundtvigs lidt kunstige brug af ordet &#x2018;Ziffer&#x2019; skyldes formentlig hans l&#x00E6;sning af <persName key="pe18">Henrich Steffens'</persName> <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi> (1803), <ref type="docOut" target="bookInventory1805.xml#docIn72">Bogfortegnelse 1805</ref>, nr. 72. Her skriver <persName key="pe18">Steffens</persName>, at &#x201C;Kunsten er det <hi rend="italic">betydningsfulde Ziffer</hi> p&#x00E5; Tidernes Sarkofag&#x201D;, se <rs type="title" key="title118">Steffens 1996</rs>, s. 132.</p>
+         </note>
+         
+         <note xml:id="com302">
+<!--lemma: De nyere theologer/religionsphilosopher??-->
+            <p>Der hentydes formentlig til teologer inspireret af filosoffen <persName key="pe508">Immanuel Kant</persName>. I det f&#x00F8;lgende henvises til <persName key="pe508">Kants</persName> moralfilosofi, if&#x00F8;lge hvilken de moralske principper, der vejleder mennesket, udspringer af menneskets egen fornuft. <persName key="pe508">Kant</persName> lagde desuden v&#x00E6;gt p&#x00E5; pligten og sagde, at kun den handling, der udf&#x00F8;res af pligt, er god.<!-- [Th. J&#x00F8;rgensen: komm. er OK,  og det lader sig ikke pr&#x00E6;cisere n&#x00E6;rmere. Spm. bliver st&#x00E5;ende: Henvises der mon til nogle religionsfilosoffer p&#x00E5; dansk grund?] -->
+</p>
+         </note>
+
+         <note xml:id="com118">
+<!--lemma: kategorisk Imperativ-->
+            <p>ubetinget p&#x00E5;bud. Det kategoriske imperativ er desuden filosoffen <persName key="pe508">Immanuel Kants</persName> betegnelse for den grundl&#x00E6;ggende morallov: &#x201C;Du skal handle s&#x00E5;ledes, at den maksime, under hvilken du handler, skal kunne v&#x00E6;re en almen lov&#x201D;.</p>
+<!-- evt. find pr&#x00E6;cis txt -->
+         </note>
+         
+         <note xml:id="com341">
+<!--lemma: Jette-->
+            <p>her: k&#x00E6;mpe. Betegnelsen <rs type="myth" key="myth111">j&#x00E6;tte</rs> stammer fra den nordiske mytologi.</p>
+         </note>
+
+         <note xml:id="com119">
+<!--lemma: Digteren-->
+            <p>
+<persName key="pe29">Johann Wolfgang Goethe</persName>.</p>
+         </note>
+
+         <note xml:id="com120">
+<!--lemma: 
+                    
+                        Steht er mit festen
+                        Markigen Knochen
+                        Auf der wohlgegru?ndeten
+                        Dauernden Erde,
+                        Reicht er nicht auf
+                        Nur mit der Eiche
+                        Oder der Rebe
+                        Sich zu vergleichen.   -->
+            <p>Citat fra <persName key="pe29">Johann Wolfgang Goethes</persName> digt &#x201C;Grenzen der Menschheit&#x201D; (3. strofe).
+              <lg n="3">
+                  <l>&#x2018;St&#x00E5;r han med faste,</l>
+                  <l>marvfulde knogler</l>
+                  <l>p&#x00E5; den grundf&#x00E6;stede,</l>
+                  <l>varige jord,</l>
+                  <l>rager han end ikke op til</l>
+                  <l>at kunne sammenligne sig</l>
+                 <l>med egen eller vinranken&#x2019;.</l>   
+               </lg>
+</p>
+         </note>
+        
+         
+         <note xml:id="com321">
+<!--lemma: Ogsaa vi-->
+            <p>dvs. Grundtvig selv.</p>
+         </note>
+         
+         <note xml:id="com345">
+<!--lemma: glimrende-->
+            <p>prangende.</p>
+         </note>
+         
+          
+         <note xml:id="com121">
+<!--lemma: raserie-->
+            <p>t&#x00E5;belighed, galskab.</p>
+         </note>
+         
+         <note xml:id="com122">
+<!--lemma: daarlighed-->
+            <p>t&#x00E5;belighed.</p>
+         </note>
+
+         <note xml:id="com340">
+<!--lemma: man havde giort det
+                    Helligste til Barnesyssel, og brugt til Stave&#x00F8;velser de dybeste Toner-->
+            <p>Der hentydes til, at man i mange landbyskoler brugte biskop <persName key="pe39">Balles</persName> <rs type="title" key="title655">
+<hi rend="italic">L&#x00E6;rebog i den Evangelisk-christelige Religion</hi>
+</rs> som l&#x00E6;sebog.</p>
+         </note>
+
+         <note xml:id="com123">
+<!--lemma: Guds hemmelige Viisdom-->
+            <p>
+<rs type="bible" key="1 Kor 2,7">1 Kor 2,7</rs>.</p> <!-- Guds viisdom i Hemmeligheden-->
+         </note>
+         
+
+         <note xml:id="com124">
+<!--lemma: Apostlernes Skrivter-->
+            <p>Jf. <rs type="bible" key="ApG 13,1-2">Apg 13,1-2</rs>, hvor det n&#x00E6;vnes, at der i menigheden i <!--<placeName key="fak149">-->Antiokia var profeter og l&#x00E6;rere.</p>
+         </note>
+
+         <note xml:id="com303">
+<!--lemma: uden-->
+            <p>her: andet end.</p>
+         </note>
+
+         <note xml:id="com125">
+<!--lemma: L&#x00E6;ren om Forligelsen mellem Gud og Mennesket ved Christum-->
+            <p>jf. <rs type="bible" key="2 Kor 5,18-19">2 Kor 5,18-19</rs>: &#x201C;Men alt dette skyldes Gud, som forligte os med sig selv ved Kristus og gav os forligelsens tjeneste, for det var Gud, der i Kristus forligte verden med sig selv og ikke tilregnede dem deres overtr&#x00E6;delser, men betroede os ordet om forligelsen&#x201D;.</p>
+         </note>
+<!--skal dette overhovedet v&#x00E6;re en bibelhenvisning eller snarere en henvisning til et dogme?-->
+
+         <note xml:id="com126">
+<!--lemma: den ny Himmel og ny Jord, Christus lovede sine Troende-->
+            <p>jf. <rs type="bible" key="2 Pet 3,13">2 Pet 3,13</rs>.</p>
+<!-- 1787: Men vi forvente nye himle og en ny jord, efter hans forj&#x00E6;ttelse...-->
+         </note>
+
+         <note xml:id="com127">
+<!--lemma: Sandsen af-->
+            <p>meningen med.</p>
+         </note>
+
+         <note xml:id="com128">
+<!--lemma: Gi&#x00F8;rer dette til min Ihukommelse!-->
+            <p>Nadverordene ved gudstjenesten har bibelsk forl&#x00E6;g i bl.a. <rs type="bible" key="Luk 22,19">Luk 22,19</rs> og <rs type="bible" key="1 Kor 11,24">1 Kor 11,24</rs>. Verbalformen &#x2018;gi&#x00F8;rer&#x2019; er imperativ pluralis.</p>
+         </note>
+         
+         <note xml:id="com129">
+<!--lemma: daarligere-->
+            <p>t&#x00E5;beligere.</p>
+         </note>
+         
+         <note xml:id="com130">
+<!--lemma: den paastand, at Liturgien skal skride frem med Tiden-->
+            <p>Grundtvig polemiserer her imod biskop <persName key="pe364">P.O. Boisens</persName> liturgiforslag.<!--  se indledningen afsnit 1. -->
+</p>
+         </note>
+
+         <note xml:id="com131">
+<!--lemma: v&#x00E6;re-->
+            <p>er. Verbalformen &#x2018;v&#x00E6;re&#x2019; er en konjunktiv (udtrykker her tvivl).</p>
+         </note>
+                  
+         <note xml:id="com132">
+<!--lemma: man havde hyldet den S&#x00E6;tning, at Tiden f&#x00F8;dte Christendommen, hvilket jo dog er noget ganske andet, end Christus kom i Tidens Fylde-->
+            <p>Grundtvig polemiserer her imod <persName key="pe18">Henrich Steffens</persName>, der i sine filosofiske forel&#x00E6;sninger fremstillede <persName key="pe45">Jesu</persName> f&#x00F8;dsel, ikke som en enest&#x00E5;ende &#x00E5;benbaring, men som en historisk begivenhed, indf&#x00E6;ldet i tidens gang (<rs type="title" key="title118">Steffens 1996</rs>, s. 204). Over for dette synspunkt bringer Grundtvig den bibelske formulering i spil, at <persName key="pe45">Jesus Kristus</persName> kom i &#x2018;tidens fylde&#x2019;, jf. <rs type="bible" key="Gal 4,4">Gal 4,4</rs>. Hvor <persName key="pe45">Jesu</persName> f&#x00F8;dsel udg&#x00F8;r et nul- og vendepunkt hos <persName key="pe18">Steffens</persName>, udg&#x00F8;r den et h&#x00F8;jdepunkt for Grundtvig.</p>
+         </note>
+         
+         <note xml:id="com336">
+<!--lemma: (??)-->
+            <p>indsat af udgiveren, <persName key="pe505">L.N. Fallesen</persName>.</p>
+         </note>         
+         
+         <note xml:id="com134">
+<!--lemma: &#x00F8;re kildret-->
+            <p>jf. <rs type="bible" key="2 Tim 4,3">2 Tim 4,3</rs>.</p>
+         </note>
+<!-- 1787 passer d&#x00E5;rligt: eftersom &#x00F8;rnene kl&#x00F8;e [paa dem]. -->
+            
+         <note xml:id="com135">
+<!--lemma: ventelig-->
+            <p>formentlig.</p>
+         </note>
+         
+         <note xml:id="com322">
+<!--lemma: varslende-->
+            <p>meddelende (ikke n&#x00F8;dvendigvis om fremtiden)<!-- ?? -->.</p>
+         </note>
+         
+         <note xml:id="com323">
+<!--lemma: Liturgien inddeler sig selv i den opl&#x00F8;ftende og den undervisende -->
+            <p>Den protestantiske gudstjeneste har to hoveddele: ordets tjeneste svarende til det, Grundtvig kalder den &#x2018;undervisende&#x2019; del, og nadvertjenesten svarende til det, Grundtvig kalder den &#x2018;opl&#x00F8;ftende&#x2019; del (jf. indledningen til nadveren: &#x2018;Opl&#x00F8;ft jeres hjerter til Herren&#x2019;). I det f&#x00F8;lgende regner Grundtvig ogs&#x00E5; d&#x00E5;b, b&#x00F8;nner og salmer med til den opl&#x00F8;ftende del.</p>
+         </note>
+
+
+         <note xml:id="com136">
+<!--lemma: dybt f&#x00F8;lende med Paulus, det var bedre at fare herfra og v&#x00E6;re med Herren-->
+            <p>hentydning til <rs type="bible" key="Fil 1,23">Fil 1,23</rs>.</p> 
+         </note>
+
+         <note xml:id="com137">
+<!--lemma: det himmelske Jerusalem, der ei t&#x00F8;r betr&#x00E6;des med besmittet Fod-->
+            <p>jf. <rs type="bible" key="&#x00C5;b 21">&#x00C5;b 21, herunder s&#x00E6;rligt v. 27.</rs>
+</p> <!-- 1787: Og intet almindeligt skal komme ind i den, eller det, som g&#x00F8;r vederstyggelighed og l&#x00F8;gn...-->
+         </note>
+
+         <note xml:id="com138">
+<!--lemma: Arbeidere i Herrens Viingaard-->
+            <p>allusion til <rs type="bible" key="Es 5">Es 5</rs> og <rs type="bible" key="Matt 20,1-16">Matt 20,1-16</rs>.</p>
+         </note>
+       
+         <note xml:id="com139">
+<!--lemma: beskueligt-->
+            <p>anskueligt.</p>
+         </note>
+       
+         <note xml:id="com140">
+<!--lemma: de Vinger, der skulle h&#x00E6;ve ham op i Lysets herlige
+                    Egne-->
+            <p>muligvis allusion til den gr&#x00E6;ske Ikaros-myte, hvor et s&#x00E6;t vinger f&#x00F8;rer <rs type="myth" key="myth422">Ikaros</rs> t&#x00E6;t p&#x00E5; solen.</p>
+         </note>
+         
+         <note xml:id="com141">
+<!--lemma: Fallesens-->
+            <p>
+<persName key="pe505">Lorenz Nikolai Fallesen</persName>, udgiveren af <hi rend="italic">
+<rs type="title" key="title126">Theologisk Maanedsskrivt</rs>,</hi> hvori <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201C;</rs> blev trykt. I det f&#x00F8;lgende henvises til den bet&#x00E6;nkning over <rs type="title" key="title615">Boisens liturgiforslag</rs>, som <persName key="pe505">Fallesen</persName> selv skrev i <hi rend="italic">
+<rs type="title" key="title126">Theologisk Maanedsskrivt</rs></hi>, Juni 1806. Her efterlyste han bl.a. bedre pr&#x00E6;dikanter og &#x00F8;nskede, at universiteterne ville oprette en &#x201C;L&#x00E6;restol for den gejstlige Veltalenhed&#x201D; (<rs type="title" key="title654">Fallesen 1806</rs>, s. 19-30).</p>
+         </note>
+         
+         <note xml:id="com142">
+<!--lemma: Actionen-->
+            <p>den retoriske fremstilling.</p>
+         </note>
+         
+         <note xml:id="com306">
+<!--lemma: Qvinctilian-->
+            <p>Der sigtes formentlig til <persName key="pe503">Quintillians</persName> 12-bindsv&#x00E6;rk om talekunstens grundregler <hi rend="italic">Institutio Oratoria.</hi> Grundtvig ejede selv <hi rend="italic">
+<rs type="title" key="title656">Qvinctilians Undervisning i Veltalenheden ellevte Bog</rs>,</hi> se <rs type="title" key="title308">
+<ref type="docOut" target="bookInventory1805.xml#docIn79">Bogfortegnelse 1805</ref></rs>, nr. 79.</p>
+            <!-- Spm. til udgaven: Er en simpel henvisning (bogfortegn. 1805, nr. 79 ikke for kryptisk?): Er titlen hans eller har vi suppleret? Kan vi tillade os at sige, at han ejede den? Alt. formulering: Bind 11 er opf&#x00F8;rt p&#x00E5; den liste, Grundtvig p&#x00E5;begyndte i 1805 over hvilke b&#x00F8;ger, han ejede og &#x00F8;nskede at eje./Bind 11 er opf&#x00F8;rt p&#x00E5; Grundtvigs bogfortegnelse, 1805.-->
+         </note>
+
+         <note xml:id="com143">
+<!--lemma: v&#x00E6;re-->
+            <p>skal det v&#x00E6;re. Verbalformen &#x2018;v&#x00E6;re&#x2019; er en konjunktiv (udtrykker her et &#x00F8;nske).</p>
+         </note>
+
+         <note xml:id="com144">
+<!--lemma: moralske-->
+            <p>Hermed menes de moraliserende pr&#x00E6;ster. Grundtvig har valgt at kalde dem &#x2018;moralske&#x2019; for kortheds skyld. Se s. 201.</p>
+         </note>
+
+         <note xml:id="com145">
+<!--lemma: ovent&#x00F8;rre-->
+            <p>t&#x00F8;rvejr.</p>
+         </note>
+         
+         <note xml:id="com337">
+<!--lemma: (!!!)-->
+            <p>formentlig indsat af udgiveren, <persName key="pe505">L.N. Fallesen</persName>.</p>
+         </note> 
+         
+         <note xml:id="com146">
+<!--lemma: de M&#x00E6;nd-->
+            <p>Der henvises bl.a. til <persName key="pe364">P.O. Boisen</persName>. Afsnittet giver ekkoer af hans <rs type="title" key="title615">
+<hi rend="italic">Plan til Forbedring af den offentlige Gudsdyrkelse</hi>
+</rs> (1806), hvor han &#x00F8;nsker, at gudstjenesten skal tale til forstand og hjerte og opmuntre til dyd.</p>
+         </note>
+         
+         <note xml:id="com147">
+<!--lemma: det daarlige skrig-->
+            <p>dvs. de t&#x00E5;belige ytringer.</p>
+         </note>     
+         
+         <note xml:id="com204">
+<!--lemma: Religionsl&#x00E6;rere-->
+            <p>pr&#x00E6;ster.</p>
+         </note>
+
+         <note xml:id="com148">
+<!--lemma: indknibes-->
+            <p>klemmes inde.</p>
+         </note>
+
+         <note xml:id="com149">
+<!--lemma: Maxime-->
+            <p>princip, grunds&#x00E6;tning.</p>
+         </note>
+         
+         <note xml:id="com151">
+<!--lemma: det eneste Absolute-->
+            <p>der sigtes til <persName key="pe508">Kant</persName>, for hvem moralloven er absolut, da den udspringer af fornuftens indre logik.</p>
+         </note>
+         
+         <note xml:id="com152">
+<!--lemma: Intet kunde kaldes absolut, uden det, der h&#x00E6;vet over tids og rums bestemmelser, indslutter alles bestemmende grund, hint t&#x00E6;nkens og v&#x00E6;rens evige identitet, Gud-->
+            <p>Formuleringen er pr&#x00E6;get af <persName key="pe54">F.W.J. Schellings</persName> tanke om &#x2018;det absolute&#x2019; som det ene, der b&#x00E6;rer tilv&#x00E6;relsen, en oprindelig identitet af alle fremtr&#x00E6;delsesformer.</p>
+         </note>
+
+         <note xml:id="com153">
+<!--lemma: ere gangne-->
+            <p>er g&#x00E5;et; perfektum participium pluralis.</p>
+         </note>
+
+         <note xml:id="com339">
+<!--lemma: de Fleste ere gangne den anden vej, i det de have beregnet, hvormegen Nytte vi kunne have af at g&#x00F8;re godt og skade af at g&#x00F8;re ondt-->
+            <p>Der sigtes til eudaimonismen, en popul&#x00E6;rfilosofisk retning, som fik stor udbredelse i Danmark i slutningen af 1700-tallet. Eudaimonismen, også kaldet lyksalighedsl&#x00E6;ren, var en l&#x00E6;re, der alene havde fokus på det praktiske liv, på moralfilosofien. Det er en form for nytte- eller lykkeetik, der siger, at den gode handling er den, der fremmer lykken for mennesker (R&#x00F6;nning 1899 3. del 2, s. 130 ff.).</p> <!--  er det rigtigt?? Kan nytte og lykke sl&#x00F8;s i hartkorn? R&#x00F6;nning g&#x00F8;r det s. 131-->
+         </note>
+
+         <note xml:id="com154">
+<!--lemma: Borgerskab er i Himlene-->
+            <p>jf. <rs type="bible" key="Fil 3,20">Fil 3,20</rs>.</p>
+         </note>
+
+         <note xml:id="com155">
+<!--lemma: affordre-->
+            <p>afkr&#x00E6;ve.</p>
+         </note>
+         
+         <note xml:id="com156">
+<!--lemma: ikkun-->
+            <p>kun.</p>
+         </note>
+
+         <note xml:id="com157">
+<!--lemma: Knigges Regler for Omgang med Mennesker-->
+            <p>Her henvises til friherre <persName key="pe504">Adolf von Knigges</persName> etikette-bog fra 1788: <rs type="title" key="title500">
+<hi rend="italic">&#x00DC;ber den Umgang mit Menschen</hi></rs>. Bogen blev popul&#x00E6;r overalt i <!--<placeName key="fak12">-->Europa og er ogs&#x00E5; oversat til dansk.</p>
+         </note>
+
+         <note xml:id="com158">
+<!--lemma: Old-->
+            <p>tidsalder.</p>
+         </note>
+
+         <note xml:id="com159">
+<!--lemma: byder-->
+            <p>stiller krav om.</p>
+         </note>
+         
+         <note xml:id="com162">
+<!--lemma: indknibe-->
+            <p>indskr&#x00E6;nke.</p>
+         </note>
+
+         <note xml:id="com324">
+<!--lemma: dens danske Navn-->
+            <p>Fantasi hed ogs&#x00E5; indbildningskraft.</p>
+         </note>
+
+         <note xml:id="com163">
+<!--lemma: paa Gangen-->
+            <p>ad gangen, p&#x00E5; &#x00E9;n gang.</p>
+         </note>
+         
+         <note xml:id="com161">
+<!--lemma: Tendents-->
+            <p>her: tilb&#x00F8;jelighed.</p>
+         </note>  
+         
+         <note xml:id="com325">
+<!--lemma: spotte-->
+            <p>trodse og s&#x00E6;tte sig ud over.</p>
+         </note>   
+         
+         <note xml:id="com326">
+<!--lemma: saa og-->
+            <p>s&#x00E5;ledes ogs&#x00E5;.</p>
+         </note>  
+         
+         <note xml:id="com307">
+<!--lemma: gi&#x00F8;res meddeelagtig-->
+            <p>I originalteksten mangler verbet. I de tidligere udgaver af teksten har man rettet til &#x201C;til at vorde meddeelagtig&#x201D; (<hi rend="italic"><rs type="title" key="title0">Udvalgte Skrifter</rs>,</hi> bind 1 (1904) og <hi rend="italic">
+<rs type="title" key="title0">V&#x00E6;rker i Udvalg</rs>,</hi> bind 1 (1940)), men denne formulering er uheldig, da d&#x00E5;ben if&#x00F8;lge evangelisk-luthersk teologi ikke er en <hi rend="italic">indvielse</hi> til med tiden at blive delagtig i Guds n&#x00E5;de; n&#x00E5;den sk&#x00E6;nkes faktisk i d&#x00E5;ben. Rettelsen &#x201C;gi&#x00F8;res meddeelagtig&#x201D; foretr&#x00E6;kkes derfor her. Rettelsen st&#x00F8;ttes af en parallel formulering s. 171: &#x201C;Ved Daaben giortes Mennesket deelagtigt i den skeete Forsoning&#x201D;.</p>
+         </note>
+
+         <note xml:id="com164">
+<!--lemma: Man har fundet det saa upassende, at der tales til Barnet-->
+            <p>Der henvises til <persName key="pe136">J.P. Mynster</persName>, som i sit indl&#x00E6;g i liturgidebatten i <hi rend="italic">Ny Minerva</hi> bl.a. talte for, at sp&#x00F8;rgsm&#x00E5;lene ved d&#x00E5;ben skulle rettes til fadderne og ikke til barnet (<rs type="title" key="title0">1806</rs>, s. 102).</p>
+         </note>
+
+         <note xml:id="com165">
+<!--lemma: fornemmelig-->
+            <p>f&#x00F8;rst og fremmest.</p>
+         </note>
+
+         <note xml:id="com166">
+<!--lemma: Iilf&#x00E6;rdighed-->
+            <p>hast.</p>
+         </note>
+
+         <note xml:id="com167">
+<!--lemma: de Helliges Arvedeel i Lyset-->
+            <p>jf. <rs type="bible" key="Kol 1,12">Kol 1,12</rs>.</p>
+<!-- d&#x00E5;bsritualet er tjekket: Ordene indg&#x00E5;r hverken i kirkeritualet 1685 eller i Balles d&#x00F8;beformular 1783.-->
+         </note>
+
+         <note xml:id="com327">
+<!--lemma: Skrivtsprogene-->
+            <p>skriftstederne, bibelcitaterne.</p>
+         </note>
+
+         <note xml:id="com168">
+<!--lemma: sandsl&#x00F8;s-->
+            <p>her: meningsl&#x00F8;st.</p>
+         </note>
+
+         <note xml:id="com169">
+<!--lemma: den gamle Psalmebog-->
+            <p>
+<rs type="title" key="title283">Guldbergs Salmebog 1778</rs>.<!-- tjek med ELR -->
+</p>
+         </note>
+
+         <note xml:id="com170">
+<!--lemma: den Nyes-->
+            <p>
+<rs type="title" key="title187">Evangelisk-kristelig Psalmebog 1798</rs>.</p>
+         </note>
+
+         <note xml:id="com171">
+<!--lemma: Poesien kun b&#x00F8;r fremhielpe Moraliteten ved
+                    den oph&#x00F8;iede Stemning, hvori den
+                    s&#x00E6;tter Mennesket, men at den oph&#x00F8;rer at v&#x00E6;re Poesie og h&#x00E6;ve Mennesket, saasnart
+                    den tr&#x00E6;der i Moralitetens Tieneste-->
+            <p>Der er her ikke tale om et citat, men Grundtvig henviser i egne vendinger til <persName key="pe35">Schillers</persName> syn p&#x00E5; forholdet mellem &#x00E6;stestik og etik. <persName key="pe35">Schiller</persName> gik ind for id&#x00E9;en om kunstens frihed og mente ikke, at kunsten i udgangspunktet skulle have et moralsk eller didaktisk sigte. Dette emne behandler han flere steder, fx i <hi rend="italic">&#x00DC;ber den Grund des Vergn&#x00FC;gen an tragischen Gengenst&#x00E4;nde</hi> (<rs type="title" key="title831">1905a</rs>, s. 140-141), i <hi rend="italic">&#x00DC;ber das Pathetische</hi> (<rs type="title" key="title831">1905a</rs>, s. 269-270), i <hi rend="italic">&#x00DC;ber die &#x00E4;sthetische Erziehung des Menschen</hi> (<rs type="title" key="title832">1905b</rs>, s. 86) og i <hi rend="italic">&#x00DC;ber naive und sentimentalische Dichtung</hi> (<rs type="title" key="title832">1905b</rs>, s. 194-195).</p>                
+            <!-- s. 75 i den danske: at digterens hverv ikke t&#x00E5;ler revselsens tone...det er for alvorligt for den leg, poesien altid skal v&#x00E6;re. Det poetiske indhold m&#x00E5; v&#x00E6;re det uendelige. Den danske har "title292"-->
+         </note>
+         
+         <note xml:id="com173">
+<!--lemma: saal&#x00E6;nge m&#x00E6;ngden af vore kirkers syngemestre...dyb f&#x00F8;lelse-->
+            <p>Salmesangen i kirken var p&#x00E5; denne tid meget stiv og uden rytmisk bev&#x00E6;gelse i melodierne. Samtidig var tempoet meget langsomt (<rs type="title" key="title636">H. Glahn 1972</rs>, s. 215).</p>
+         </note>
+
+         <note xml:id="com174">
+<!--lemma: Br&#x00E6;ger-->
+            <p>Navnet p&#x00E5; degnen i det komiske v&#x00E6;rk <rs type="title" key="title499">
+<hi rend="italic">Br&#x00E6;ger, et Heltedigt</hi>
+</rs> (1774) af <persName key="pe523">Edvard Storm</persName>.</p>
+         </note>
+
+         <note xml:id="com175">
+<!--lemma: Peer Degn-->
+            <p>Navnet p&#x00E5; degnen i <persName key="pe172">Ludvig Holbergs</persName> komedie <rs type="title" key="title477">
+<hi rend="italic">Erasmus Montanus</hi>
+</rs> (1723).</p>
+         </note>
+
+         <note xml:id="com177">
+<!--lemma: Digterens-->
+            <p>
+<persName key="pe3">Adam Oehlenschl&#x00E4;gers.</persName>
+</p>
+         </note>
+
+         <note xml:id="com178">
+<!--lemma: 
+                        Da Himlen sig fra Jorden skilled
+                        Da sank din Aand igien til Jord
+                        Det himmelske, det rene Billed
+                        Ei l&#x00E6;nger i dit Hierte boer.
+                    
+                    
+                        Det Barnlige var l&#x00E6;ngst forsvundet,
+                        Nu gaaer du bleg mod Jorden bukt,
+                        Med H&#x00F8;sten har du dig forbundet,
+                        Og &#x00E6;dt af giftig Kundskabs Frugt.
+                    
+                    
+                        O drik, at du kan atter glemme
+                        Hvad koldt kun Hovmod l&#x00E6;rte dig!
+                        Da vaagner atter Livets Stemme,
+                        Da seer du atter Himmerig.
+                    -->
+            <p>Uddrag af <persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName> digt &#x201C;Den hellige Nadver&#x201D;, som er en del af digtkredsen <rs type="title" key="title501">&#x201C;Jesu Christi gientagne Liv i den aarlige Natur&#x201D;</rs>, <hi rend="italic">
+<rs type="title" key="title75">Poetiske Skrifter</rs>
+</hi> (1805).</p>
+         </note>
+    
+         <note xml:id="com179">
+<!--lemma: han forligte verden med Gud-->
+            <p>jf. <rs type="bible" key="2 Kor 5,19">2 Kor 5,19</rs>.</p>
+         </note>
+         
+         <note xml:id="com180">
+<!--lemma: Vel siger man, at de som synde i
+                        Tillid til den, vilde synde alligevel -->
+            <p>Der henvises til en udtalelse af <persName key="pe136">J.P. Mynster</persName> i hans indl&#x00E6;g i liturgidebatten i tidsskriftet <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> (1806, s. 98 f.).</p>
+         </note>
+
+         <note xml:id="com181">
+<!--lemma: Ildgerningsmand-->
+            <p>ugerningsmand, forbryder.</p>
+         </note>
+
+         <note xml:id="com182">
+<!--lemma: Transubstantiasionens bespottelige L&#x00E6;re-->
+            <p>Katolsk l&#x00E6;re, der siger, at br&#x00F8;d og vin ved indstiftelsesordene bliver forvandlet til Kristi legeme og blod. L&#x00E6;ren g&#x00E5;r helt tilbage til kirkefaderen <persName key="pe524">Ambrosius</persName> (300-tallet), men blev f&#x00F8;rst dogmatiseret ved det 4. Laterankoncil i 1215. <persName key="pe42">Luther</persName> og de &#x00F8;vrige reformatorer afviste l&#x00E6;ren.</p>
+         </note>        
+
+         <note xml:id="com183">
+<!--lemma: sophistisk-->
+            <p>spidsfindig.</p>
+         </note>
+
+         <note xml:id="com184">
+<!--lemma: Spotteren Volt&#x00E6;re-->
+            <p>
+<persName key="pe465">Voltaire</persName>, som var oplysningsmand og frit&#x00E6;nker, leverede en sk&#x00E5;nselsl&#x00F8;s kritik af kristendom og kirke. Derfor kalder Grundtvig ham en &#x2018;spotter&#x2019;. Ordvalget kan ogs&#x00E5; skyldes <persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName> digt &#x201C;Gibsbilledet&#x201D; fra digtkredsen &#x201C;Langelands-Reise&#x201D; (<rs type="title" key="title75"><hi rend="italic">Poetiske Skrifter</hi></rs> 1805), hvor han kalder <persName key="pe465">Voltaire</persName> &#x201C;Den frosne Spottefugl&#x201D;.</p>
+         </note>
+         
+         <note xml:id="com185">
+<!--lemma: Sandsen-->
+            <p>her: betydningen.</p>
+         </note>
+
+         <note xml:id="com186">
+<!--lemma: Velsignelsens Kalk, som vi velsigne, er
+                    Christi Blods Samfund, det Br&#x00F8;d som vi bryde er Christi Legems Samfund-->
+            <p>
+<rs type="bible" key="1 Kor 10,16">1 Kor 10,16</rs>.</p> <!-- 1787 er formuleret som spm. med 2 gange "ikke"-->
+         </note>
+ 
+         <note xml:id="com187">
+<!--lemma: de, der forfattede vor Confession-->
+            <p>
+<persName key="pe42">Martin Luther</persName> og <persName key="pe526">Philipp Melanchton</persName>, som stod bag <hi rend="italic">den augsburgske bekendelse</hi> (1530), et af den evangelisk-lutherske kirkes vigtigste bekendelsesskrifter.</p>
+<!-- titelopm&#x00E6;rke CA? -->
+         </note>
+
+         <note xml:id="com188">
+<!--lemma: Christi Legeme i, med og under Br&#x00F8;det-->
+            <p>Her sigtes til den lutherske nadverl&#x00E6;re, der siger, at <persName key="pe45">Kristus</persName> er til stede i nadveren &#x2018;i, med og under&#x2019; br&#x00F8;dets og vinens skikkelse. Br&#x00F8;d og vin forvandles ikke til <persName key="pe45">Jesu</persName> legeme og blod, som i den katolske transsubstantiationsl&#x00E6;re, men de to substanser eksisterer side om side. L&#x00E6;ren kaldes derfor ogs&#x00E5; konsubstantiationsl&#x00E6;ren.<!-- er litteraturhenvisninger n&#x00F8;dvendige her? LLK har n&#x00E6;sten formuleringen-->
+</p> 
+         </note>
+                  
+         <note xml:id="com189">
+<!--lemma: knuses imellem T&#x00E6;nderne-->
+            <p>Her alluderes til den latinske betegnelse <hi rend="italic">manducatio oralis</hi> (spisning med munden), som <persName key="pe42">Luther</persName> brugte for at understrege, at den troende i nadveren virkelig spiser <persName key="pe45">Kristi</persName> legeme.</p>
+        </note>
+
+         <note xml:id="com190">
+<!--lemma: L&#x00E6;ren om den saakaldte pr&#x00E6;sentia realis-->
+            <p>Den lutherske l&#x00E6;re om <persName key="pe45">Kristi</persName> legemlige n&#x00E6;rv&#x00E6;r i nadveren (realpr&#x00E6;sens). L&#x00E6;ren g&#x00E5;r tilbage til oldkirken og blev antaget af <persName key="pe42">Martin Luther</persName> under forkastelse af den katolske transsubstantiationsl&#x00E6;re. <persName key="pe42">Luther</persName> mente, at <persName key="pe45">Kristus</persName> er virkelig til stede &#x2018;i, med og under&#x2019; br&#x00F8;det og vinens skikkelser, der dog samtidig forbliver br&#x00F8;d og vin.</p>
+         </note>
+
+         <note xml:id="com338">
+<!--lemma: philosophien anticipeerer sig selv ved at g&#x00E5; over til religion-->
+            <p>Der hentydes formentlig til <persName key="pe54">F.W.J. Schelling</persName>, som i sin tidlige t&#x00E6;nkning havde indtaget en negativ holdning over for religionen, men hvis filosofiske forfatterskab med tiden blev mere religi&#x00F8;st. <persName key="pe54">Schellings</persName> store fortjeneste var, if&#x00F8;lge Grundtvig, at han udlagde den h&#x00F8;jere betydning af kristendommens mysterier. Han tog ikke afstand fra kirkens dogmer, s&#x00E5;dan som samtidens rationalister gjorde, men omtydede dem til id&#x00E9;er.</p>
+         </note>
+
+         <note xml:id="com191">
+<!--lemma: sandsesl&#x00F8;s-->
+            <p>her: meningsl&#x00F8;s.</p>
+         </note>
+   
+         <note xml:id="com192">
+<!--lemma: Bogstaven ihielslaaer, men Aanden
+                    gi&#x00F8;r levende-->
+            <p>
+<rs type="bible" key="2 Kor 3,6">2 Kor 3,6.</rs>
+</p>
+<!--1787: levendegi&#x00F8;rer-->
+         </note>     
+
+         <note xml:id="com193">
+<!--lemma: udm&#x00E6;rket-->
+            <p>tydeligt adskilt.</p>
+         </note>
+         
+         <note xml:id="com328">
+<!--lemma: vist-->
+            <p>ganske vist, godt nok.</p>
+         </note>
+         
+         <note xml:id="com194">
+<!--lemma: synderlige-->
+            <p>s&#x00E6;rlige.</p>
+         </note>
+         
+         <note xml:id="com329">
+<!--lemma: Kirkeeierne-->
+            <p>P&#x00E5; Grundtvigs tid var det normalt, at kirkerne p&#x00E5; landet tilh&#x00F8;rte de lokale godsejere. Godsejeren havde ejendomsretten over kirken og skulle s&#x00F8;rge for dens vedligeholdelse, og indtil grundloven i 1849 havde han ogs&#x00E5; kaldsretten, dvs. retten til at foresl&#x00E5; en person til et ledigt pr&#x00E6;steembede ved kirken. P&#x00E5; <!--<placeName key="fak3">-->Langeland, hvor Grundtvig boede, da han skrev afhandlingen <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i 1806, tilh&#x00F8;rte alle landsbykirkerne greven p&#x00E5; <!--<placeName key="fak202">-->Tranek&#x00E6;r, <persName key="pe511">Frederik Ahlefeldt-Laurvig</persName>.<!--  Kirken i k&#x00F8;bstaden <placeName key="fak0">Rudk&#x00F8;bing</placeName> var den eneste kirke, der var ejet af menigheden [tjek]. Disse ejerforhold var typiske for hele Danmark p&#x00E5; enev&#x00E6;ldens tid.-->
+</p>
+         </note>
+
+         <note xml:id="com195">
+<!--lemma: Kirkelader-->
+            <p>lader til kirkens tiendekorn.</p>
+         </note>
+
+         <note xml:id="com196">
+<!--lemma: vanh&#x00E6;ldede-->
+            <p>miskl&#x00E6;dte.</p>
+         </note>
+
+         <note xml:id="com197">
+<!--lemma: Ringmuren-->
+            <p>muren rundt om kirkeg&#x00E5;rden.</p>
+         </note>
+
+         <note xml:id="com330">
+<!--lemma: naar Kornets Priis ei mere er saa lav-->
+            <p>Kornprisen var relativt lav i 1806, da Grundtvig skrev afhandlingen. Mens jordpriserne steg voldsomt i begyndelsen af 1800-tallet, stagnerede kornpriserne (<rs type="title" key="title717">Dombernowsky 1988</rs>, s. 381). Kornsalg var en prim&#x00E6;r indt&#x00E6;gtskilde for de godsejere, som ejede kirkerne.</p>
+            </note>
+
+         <note xml:id="com331">
+<!--lemma: Haabets liflige Gr&#x00F8;nt paa de indre V&#x00E6;gge-->
+            <p>formentlig ironisk omtale af skimmel p&#x00E5; v&#x00E6;ggene i de d&#x00E5;rligt vedligeholdte, uopvarmede kirker.<!-- Der findes beretninger fra denne tid om landsbykirker, der var overbegroet med mos indvendig. -->
+</p>
+         </note>
+
+         <note xml:id="com198">
+<!--lemma: saasom-->
+            <p>eftersom.</p>
+         </note>
+
+         <note xml:id="com199">
+<!--lemma: mere end endelig Tendents-->
+            <p>str&#x00E6;ben ud over det endelige, jordiske.</p>
+         </note>
+
+         <note xml:id="com200">
+<!--lemma: rasende daarlighed-->
+            <p>vanvittig t&#x00E5;belighed.</p>
+         </note>
+
+         <note xml:id="com201">
+<!--lemma: halvtredie sekul-->
+            <p>to og et halvt &#x00E5;rhundrede.</p>
+         </note>
+
+         <note xml:id="com202">
+<!--lemma: Iid-->
+            <p>gerning.</p>
+         </note>
+
+         <note xml:id="com203">
+<!--lemma: Afkrog-->
+            <p>Grundtvig boede p&#x00E5; <!--<placeName key="fak3">-->Langeland, da han skrev afhandlingen.</p>
+         </note>
+         
+         <note xml:id="com205">
+<!--lemma: det hellige L&#x00E6;reembede-->
+            <p>pr&#x00E6;steembedet.</p>
+         </note>
+
+         <note xml:id="com206">
+<!--lemma: overantvordes-->
+            <p>overgives.</p>
+         </note>
+         
+         <note xml:id="com332">
+<!--lemma: uden-->
+            <p>her: mere end.</p>
+         </note>
+         
+         <note xml:id="com207">
+<!--lemma: privilegium-->
+         <p>egl. bevilling eller rettighedsbevis; her formentlig doktorbrev, der gav ret til at forel&#x00E6;se ved universitetet.</p>
+         </note>
+         
+         <note xml:id="com208">
+<!--lemma: l&#x00E6;rt-->
+            <p>dvs. l&#x00E6;rd. Det &#x2018;l&#x00E6;rde katalog&#x2019; er formentlig universitetets lektionskatalog.</p>
+         </note>
+         
+         
+         
+         <div type="litList">
+            <head xml:id="docIn1000">Anvendt litteratur</head>
+            <list type="litList">               
+                   
+                  <item>Balle, Nicolai Edinger (1824) <hi rend="italic">
+<rs type="title" key="title655">L&#x00E6;rebog i den Evangelisk-christelige Religion, indrettet til Brug i de danske Skoler</rs></hi>. K&#x00F8;benhavn</item>
+                   
+                  <item>(1992) <hi rend="italic">
+<rs type="title" key="title235">Bibelen. Den hellige Skrifts kanoniske B&#x00F8;ger. Autoriseret af Hendes Majest&#x00E6;t Dronning Margrethe II</rs>,</hi> udg. af Det Danske Bibelselskab. K&#x00F8;benhavn</item>
+                  
+                  <item>(1787) <hi rend="italic">
+<rs type="title" key="title236">Biblia, Det er Den ganske Hell. Skriftes B&#x00F8;ger, Ved Hans Kongl. Majests. Vor allernaadigste Arve-Herres Kong Christian Den Syvendes Christelige Omsorg, med Fliid og efter Grund-Texten efterseete og rettede? saa og med mange Paralleler og udf&#x00F8;rlige Summarier forsynede</rs>,</hi> 13. opl. K&#x00F8;benhavn</item>
+                  
+                  <item>Boisen, Peter Outzen (1806) <hi rend="italic">
+<rs type="title" key="title615">Plan til Forbedring ved den offentlige Gudsdyrkelse</rs>.</hi> K&#x00F8;benhavn</item>
+                  
+                  <item>Dombernowsky, Lotte (1988) &#x201C;Ca. 1720-1810&#x201D; i <hi rend="italic">
+<rs type="title" key="title716">Det danske landbrugs historie</rs>,</hi> bind 2, udg. af Claus Bj&#x00F8;rn, s. 211-382. K&#x00F8;benhavn</item>
+<!-- LDs artikel har nr. 717 -->
+                   
+                  <item>(1798) <hi rend="italic">
+<rs type="title" key="title187">Evangelisk-kristelig Psalmebog, til Brug ved Kirke- og Huus-Andagt</rs>.</hi> K&#x00F8;benhavn</item>
+                  
+                  <item>Fallesen, Lorenz Nikolai (1806) <hi rend="italic">
+<rs type="title" key="title654">Bet&#x00E6;nkning over S.T. Hr. Biskop Boysens Plan til Forbedring ved den offentlige Gudstieneste</rs>,</hi> s&#x00E6;rtryk af <rs type="title" key="title126">Theologisk Maanedsskrivt</rs>, Juni 1806. K&#x00F8;benhavn</item>
+                  
+                  <item>Glahn, Henrik (1972) &#x201C;Salmesangen i dansk tradition&#x201D; i Th. Borup Jensen og K.E. Bugge: <hi rend="italic">
+<rs type="title" key="title635">Salmen som lovsang og litteratur</rs>,</hi> bind 1, s. 191-234. K&#x00F8;benhavn</item>
+                     
+                  <item>Goethe, Johann Wolfgang (1954) &#x201C;Menneskehedens gr&#x00E6;nser&#x201D; i <hi rend="italic">
+<rs type="title" key="title616">Johann Wolfgang Goethe: Digte i Udvalg</rs>,</hi> overs. af P.A. Rosenberg, s. 52-53. K&#x00F8;benhavn</item>
+                  
+                  <item>Goethe, Johann Wolfgang (1815) &#x201C;Grenzen der Menschheit&#x201D; i <hi rend="italic">
+<rs type="title" key="title502">Goethe's Werke</rs>,</hi> bind 2, s. 77-78. Stuttgart &amp; T&#x00FC;bingen</item>
+                  
+                  <!-- <item>Grundtvig, N.F.S. (1807) &#x201C;Om Religion og Liturgie&#x201D; i <hi rend="italic"><rs type="title" key="title126">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</rs>,</hi> februar 1807, s. 129-201. K&#x00F8;benhavn</item> -->
+                  
+                  <item>
+                     Grundtvig, N.F.S. (1979) <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>,</hi> bind 1-2, udg. af Gustav Albeck. K&#x00F8;benhavn</item>
+                                   
+                  <item>Holberg, Ludvig (1723) <hi rend="italic">
+<rs type="title" key="title477">Erasmus Montanus</rs>.</hi> K&#x00F8;benhavn</item>
+                  
+                  <item>Homer (2002) <rs type="title" key="title304">
+<hi rend="italic">Iliaden,</hi>
+</rs> overs. af Otto Steen Due. K&#x00F8;benhavn</item> 
+                  
+                  <item>H&#x00E4;gglund, Bengt (1956) <hi rend="italic">
+<rs type="title" key="title617">Teologins historia. En dogmhistorisk &#x00F6;versikt</rs>.</hi> Kristianstad</item>
+                  
+                  <item>Knigge, Adolf Franz Friedrich von (1788) <hi rend="italic">
+<rs type="title" key="title500">&#x00DC;ber den Umgang mit Menschen</rs></hi>. Hannover</item>
+                  
+                  <item>
+                     Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+                  
+                  <item>Mynster, Jakob Peter (1806) <hi rend="italic"></hi>&#x201C;Om den foreslagne Forandring ved den offentlige Gudsdyrkelse&#x201D; i <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> april 1806, s. 74-112. K&#x00F8;benhavn</item>
+                  
+                  <item>Oehlenschl&#x00E4;ger, Adam (1805) &#x201C;Gibsbilledet&#x201D; i <hi rend="italic"><rs type="title" key="title75">Poetiske Skrifter</rs>,</hi> bind 1, s. 358-360. K&#x00F8;benhavn</item>
+               
+                  <item>Oehlenschl&#x00E4;ger, Adam (1805) &#x201C;Den Hellige Nadver&#x201D; i <hi rend="italic">
+<rs type="title" key="title75">Poetiske Skrifter</rs>,</hi> bind 1, s. 461-464. K&#x00F8;benhavn</item>
+                  
+                  <item>
+                     R&#x00F6;nning, Frederik (1899) <hi rend="italic">
+<rs type="title" key="title715">Rationalismens Tidsalder. Sidste halvdel af 18. &#x00F8;rhundrede. En litter&#x00E6;rhistorisk Fremstilling</rs>,</hi> bind 3:2. K&#x00F8;benhavn</item>
+                  
+                  <item>Scharling, C. I. (1947) <hi rend="italic">
+<rs type="title" key="title21">Grundtvig og Romantikken belyst ved Grundtvigs forhold til Schelling</rs>.</hi> K&#x00F8;benhavn</item>
+                  
+                  <item>Schiller, Friedrich (1803) <hi rend="italic">
+<rs type="title" key="title340">Die Braut von Messina oder die feindlichen Brueder. Ein Trauerspiel mit Choeren</rs>.</hi> T&#x00FC;bingen</item>
+                  
+                  <item>Schiller, Friedrich (1905a) <hi rend="italic">
+<rs type="title" key="title831">S&#x00E4;mtliche Werke</rs>,</hi> bind 11. Stuttgart</item>
+                  
+                  <item>Schiller, Friedrich (1905b) <hi rend="italic">
+<rs type="title" key="title832">S&#x00E4;mtliche Werke</rs>,</hi> bind 12. Stuttgart</item>
+                  
+                  <item>Schelling, F.W.J. (1803) <hi rend="italic">
+<rs type="title" key="title634">Vorlesungen &#x00FC;ber die Methode des academischen Studium</rs>.</hi> T&#x00FC;bingen</item>
+                  
+                  <item>Schlegel, August Wilhelm von (1805) <hi rend="italic">
+<rs type="title" key="title498">Rom. Elegie</rs>.</hi> Berlin</item>
+                                                      
+                  <item>Steffens, Henrich (1996) <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>,</hi> udg. af Johnny Kondrup. K&#x00F8;benhavn [1803]</item>
+                  
+                  <item>Storm, Edvard (1774) <hi rend="italic">
+<rs type="title" key="title498">Br&#x00E6;ger. Et Heltedigt.</rs>
+</hi> K&#x00F8;benhavn</item>
+                  
+                  <item>Vibe, Johann (1797) &#x201C;Den, Skaberen skj&#x00E6;nkte en oplyst Forstand&#x201D; i <hi rend="italic">
+<rs type="title" key="title497">Arier og Sange</rs>
+</hi> 1-2, udg. af H.J. Graae, s. 290-293. K&#x00F8;benhavn</item> <!-- sangen m&#x00E6;rkes? <rs type="title" key="title502"> -->
+                  
+                  <!-- Vibe opf&#x00F8;rt p&#x00E5; Holgers m&#x00E5;de: <item>Vibe, Johann (1797) <hi rend="italic"><rs type="title" key="title502">Den, Skaberen skj&#x00E6;nkte en oplyst Forstand</rs></hi> i H.J. Graae udg. <hi rend="italic"><rs type="title" key="title497">Arier og Sange</rs></hi> 1-2, bind 2: <hi rend="italic">Bestaaende af to Hundrede og Firesindstyve Stykker</hi> udg. af &#x005B;Thomas Severin Heiberg&#x005D;. K&#x00F8;benhavn</item> -->
+               
+                  <!-- Bogfortegnelse 1805 [&#x201D;Optegnelse paa de B&#x00F8;ger Jeg ejer og ejende vorder begyndt d. XXd Decbr MDCCCV / Nikolaj Frederik Severin Grundtvig / Ludimagister Egel&#x00F8;kkis&#x201D;; Grundtvig-arkivet, fasc. 501.]  -->
+               
+               </list> 
+               
+                     
+         </div>
+        
+        
+         <div type="webList">
+            <head xml:id="docIn2000">Anvendt webside</head>
+            <list type="webList">
+               <item n="2011-11-24" target="http://bibelselskabet.dk/">www.bibelselskabet.dk</item>          
+            </list>
+         </div>
+         <!-- Hvis 'rationalister' skal forklares: Som betegnelsen antyder, h&#x00E6;vdede r. at der m&#x00E5;tte v&#x00E6;re overensstemmelse mellem tro og fornuft (ratio). Eller fornuft og &#x00E5;benbaring. Denne retning inden for teologien kaldes ogs&#x00E5; neologi (ny l&#x00E6;re) og var inspireret af filosoffen Christian von Wolff (1679-1754). 4 typer af rationalister: naturalisme (ben&#x00E6;gter overnaturlig guddommelig &#x00E5;benbaring), supranaturalisme (&#x00E5;benbaringen ER overnaturlig), supranatural rationalisme og kristelig rationalisme (religion er n&#x00F8;dvendig for moralen og er en pligt). F&#x00E6;lles var ogs&#x00E5; den historiske tilgang til Bibelen (Semler) og at man inden for dogmatikken kun ville lade det st&#x00E5;, som ikke stred imod fornuften (man anf&#x00E6;gtede bl.a. arvesyndsl&#x00E6;ren). I rationalismens slutfase [NB] var man inspirerede af Kant og lagde i religi&#x00F8;se spm. hovedv&#x00E6;gten p&#x00E5; kristendommens moralske funktion. Se Glebe i Grundtvigstudier 2011-->
+         
+      </body>
+</text>
+</TEI>

@@ -1,0 +1,734 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Saga om Nor og hans &#x00C6;t. Med et Kvad til mit F&#x00E6;dreland den 28 Jan. 1809</title>
+      <title rend="shortForm">Saga om Nor og hans &#x00C6;t</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Stine Holst Petersen</editor>
+      <editor role="student1">Anna Poulsen</editor>
+      <editor role="student3">Frederik Drei&#x00F8;e Seidelin</editor>
+      <editor role="student2">Kirsten Vad</editor>
+    </titleStmt>
+     <editionStmt>
+      <edition>
+          <idno type="firstUpload">1.3</idno>
+          <idno type="content">1.3</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+     </editionStmt>
+     <extent>37 KB</extent>
+     
+     <publicationStmt>
+      <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+      <publisher>Faculty of Arts, Aarhus University</publisher>
+      <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+      
+      <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+     </publicationStmt>
+     <seriesStmt>
+      <title>Nyeste Skilderie af Kj&#x00F8;benhavn.<!--Sjette Aagang. No 32.-->
+</title>
+      <respStmt>
+       <name>Udgivet og forlagt af J. Werfel</name>
+       <resp></resp>
+      </respStmt>
+      <idno>1809-01-28</idno>
+     </seriesStmt>
+     <notesStmt>
+      <note target="1809_106_txt.xml" type="txt" xml:id="thisFile">L&#x00E6;setekst</note>
+      <note target="1809_106_com.xml" type="com">Punktkommentar</note>
+      <note target="1809_106_intro.xml" type="intro">Indledning</note>
+      <note target="1809_106_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+      <note type="minusVar">Variant</note>
+     
+     </notesStmt>
+        
+     <sourceDesc>
+      <bibl>
+       <title type="part">Saga om Nor og hans &#x00C6;t.</title>
+       <author>Nik. Fred. Sev. Grundtvig.
+        <note></note>
+       </author>
+       <pubPlace>trykt i Kj&#x00F8;benhavn,</pubPlace>
+       <publisher>hos P. H. H&#x00F6;eckes Enke.
+        <note></note>
+       </publisher>
+       <date>1809</date>
+      </bibl>
+      
+         <listWit xml:id="emendation">
+             <witness xml:id="A" n="106"><desc>F&#x00F8;rstetrykket</desc> <num>1809</num></witness>
+             <witness xml:id="B" n="251"><desc>Anden udgave</desc> <num>1815</num></witness>
+         </listWit>
+           
+         
+     <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+<desc>Poetiske Skrifter</desc> <num>1</num></witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+       
+       <profileDesc>
+           <textClass>
+               <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                   <term>lyrik</term>
+                   <term>digte</term>
+                   <term>lejlighedsdigte</term>
+               </classCode>
+               <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                   <term>kongehuset</term>
+                   <term>nordisk</term>
+                   <term>mytologi</term>
+                    <term>Danmark</term>
+               </keywords>
+           </textClass>
+       </profileDesc>
+       
+       
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+     <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+        <change xml:id="FDS" who="FDS" when="2013-06-19"></change>
+    <change xml:id="SHP" who="SHP" when="2013-06-19">klargjort fil til Prometheus</change> 
+    <change who="SHP" when="2013-06-20">&#x00E6;ndret variantstatus til "unknownvar"</change>
+      <change who="SHP" when="2013-06-25">rettelser efter 1. redaktion</change>
+    <change who="SHP" when="2013-07-08">Indf&#x00F8;rt tekstrettelser</change>
+    <change who="SHP" when="2013-07-08">Indf&#x00F8;rt faxreferencer</change>
+    <change who="SHP" when="2013-09-19">Indf&#x00F8;rt dato og k&#x00F8;rt unicode</change>
+    <change who="SHP" when="2013-09-24">Indf&#x00F8;rt rettelser efter 2/3 redaktion</change>
+        <change who="FDS" when="2013-09-30">Rettet _fax0003-9 til _fax003-9</change>
+       <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+       <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+        <change xml:id="JT" who="JT" when="2015-04-10">indsat peri-faxhenvisning til fax0001 og fax0002</change>
+        <change who="JT" when="2015-10-12">indsat profileDesc</change>
+        <change who="JT" when="2016-03-04">slettet emnet litteratur i profileDesc</change>
+        <change who="SKP" when="2017-04-20">tilføjet firstUpload</change>
+    </revisionDesc>
+   </teiHeader>
+   <text type="txt">
+       
+       <pb type="periText" facs="1809_106_fax0001.jpg"/>
+       <pb type="periText" facs="1809_106_fax0002.jpg"/>
+      <body>     
+     
+	 <!--
+		
+			
+				Skilderie af Kj&#x00F8;benhavn
+				Nik. Fred. Sev. Grundtvig
+				
+					Generated 
+					BookPartnerMedia
+				
+			
+			
+				
+			
+			
+				1809
+			
+			
+			[Source decription]
+			
+		
+	
+	
+		<front/>-->
+          
+          
+    <div type="[Tekst]">
+    
+    <pb type="text" facs="1809_106_fax003.jpg" ed="A" subtype="column" n="497" rend="supp"/>
+<pb type="edition" ed="PS" n="109"/>
+<head rend="2">Saga om <rs type="myth" key="myth527">Nor</rs> og hans &#x00C6;t.</head>
+<head rend="1">
+<hi rend="spaced">Med et Kvad til mit F&#x00E6;dreland</hi>
+</head> 
+<head rend="0">den 28 Jan. 1809.</head>
+
+    <fw type="shortLine"/>
+  
+    <lg>
+    <l>
+<hi rend="initial">H</hi>&#x00F8;itiden byder hver Haand</l>
+<l>Hvile fra Hverdagens Syssel;</l>
+<l>Vinteren driver os ind,</l>
+<l>Trindtomkring Arnen os sanker;</l>
+<l>Ret er at lytte til Sagn,</l>
+<l>
+<pb type="edition" ed="PS" n="110"/>Sagn om de <seg type="com" n="com1">fremfarne</seg> Tider.</l>
+<l>Saa lytted F&#x00E6;dre i <placeName key="fak24">Nord</placeName>.</l>
+<l>Nordboer! <seg type="com" n="com2">lytter</seg> til mig!</l>
+<l>Jeg vil en Saga fort&#x00E6;lle</l>
+<l>Medens i <rs type="myth" key="myth115">Skjoldungens</rs> Hal</l>
+<l>Holdes den herlige Fest.</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <p rend="noIndent">
+<seg type="com" n="com103">
+<hi rend="initial">S</hi>aa</seg> er sagt af sagnkyndige M&#x00E6;nd, at i meget gammel Tid, end f&#x00F8;r Asam&#x00E6;nd <seg type="com" n="com104">indkom</seg> i <placeName key="fak24">Nord</placeName>, da var en K&#x00E6;mpe af Gudernes &#x00C6;t, rig og m&#x00E6;gtig, og dertil begavet med allehaande Kl&#x00F8;gt, men mest med den, som Spaakl&#x00F8;gt <seg type="com" n="com301">heder</seg>, og som af al er f&#x00F8;rst at n&#x00E6;vne; thi vel er det <hi rend="spaced">Noget,</hi> at kende <pb type="text" facs="1809_106_fax003.jpg" ed="A" subtype="column" n="498" rend="supp"/>Tiden, som hun <hi rend="spaced">nu</hi> er, og end <hi rend="spaced">Mere,</hi> ret at vide, hvordan hun <hi rend="spaced">v&#x00E6;ret</hi> haver, men <hi rend="spaced">Mest</hi> er det at se og forstaa, hvad hun skal <hi rend="spaced">vorde.</hi> <hi rend="spaced">
+<rs type="myth" key="myth527">Nor</rs>
+</hi> var K&#x00E6;mpens Navn, og ham f&#x00F8;dtes tvende S&#x00F8;nner, hed En <hi rend="spaced">
+<rs type="myth" key="myth526">Noreg</rs>,</hi> og <hi rend="spaced">
+<rs type="myth" key="myth531">Gautur</rs>
+</hi> den Anden, men kun een Datter <seg type="com" n="com3">aatte</seg> han, og er hun <seg type="com" n="com501">n&#x00E6;vnet</seg> <hi rend="spaced">
+<seg type="com" n="com401">Dana</seg>.</hi> Han skiftede <placeName key="poet310">Nordurlande</placeName> udi trende Parter, og fik <rs key="myth526" type="myth">Noreg</rs> den Part, som efter ham er <seg type="com" n="com501">n&#x00E6;vnet</seg> <placeName key="poet415">Norrige</placeName>, og er det et haardt Land, og fuldt med Elv og Fjelde, men dog fagert i sin Maade, og rigt paa Malm og Stene. <seg type="com" n="com401">Dana</seg> fik de &#x00D8;er, som sv&#x00F8;mme udi <placeName key="poet18">&#x00D8;stersaltet</placeName>, lystelige at bygge paa, med Korn, med Eg og B&#x00F8;g og med <seg type="com" n="com5">blommede</seg> Enge; saa fik hun <seg type="com" n="com7">og</seg> <placeName key="fak76">Jotland</placeName> og Alt hvad som M&#x00E6;nd <seg type="com" n="com502">n&#x00E6;vne</seg> <hi rend="spaced">
+<placeName key="fak14">Danmark</placeName>.</hi> <rs type="myth" key="myth531">Gautur</rs> fik <placeName key="fak309">Gautland</placeName>, som nu <seg type="com" n="com126">n&#x00E6;vnes</seg> <placeName key="fak453">Svithjod</placeName>, og er det sandt at sige, at <seg type="com" n="com106">ligervis som</seg> han <seg type="com" n="com107">byggede</seg> mellem <seg type="com" n="com6">baade</seg> S&#x00F8;dskende, saa havde <seg type="com" n="com7">og</seg> hans Odel i mange Maader <seg type="com" n="com9">Ligning</seg> med Begges, aldenstund han ligesom kunde r&#x00E6;kke den ene Haand til sin Broder paa det h&#x00F8;ie Fjeld, og den anden til S&#x00F8;steren i Dal. <seg type="com" n="com103">Saa</seg> var <seg type="com" n="com78">Landeskifte</seg>, men ei kommer <rs type="myth" key="myth531">Gautur</rs> mer ved denne Saga.</p>
+<p rend="firstIndent">
+<pb type="text" facs="1809_106_fax004.jpg" ed="A" subtype="column" n="499"/>
+<pb type="edition" ed="PS" n="111"/>
+<seg type="com" n="com103">Saa</seg> er det sagt, at <rs type="myth" key="myth527">Nor</rs> skulde aldrig d&#x00F8;, men <seg type="com" n="com10">der</seg> han &#x00E6;ldedes, drog han til det gr&#x00F8;nne <rs type="myth" key="myth521">Godheim</rs>, at v&#x00E6;re med Guderne, og f&#x00F8;r han drog did, da tog han til sig alle sine B&#x00F8;rn, og gav dennem kostelige Raad, b&#x00F8;d dem leve <seg type="com" n="com11">endr&#x00E6;gtelig</seg> tilhobe og <seg type="com" n="com12">varede dem ad</seg> deres Skade, om de ei vilde g&#x00F8;re derefter. <seg type="com" n="com103">Saa</seg> tog han <seg type="com" n="com7">og</seg> <rs type="myth" key="myth526">Noreg</rs> og <seg type="com" n="com401">Dana</seg> til Enetale hos sig, og sagde dem forud, at der vilde komme megen Ufred mellem de S&#x00F8;dskende, men at de dog, som Ret var, skulde enes paa det Sidste. Som han var vel &#x00F8;vet i Skjaldskab, da kvad han for dennem om al deres Landes <seg type="com" n="com14">Leilighed</seg>,  og hvorledes de bedst kunde hjelpe og tjene hinanden, og var det et langt <seg type="com" n="com15">Kv&#x00E6;de</seg>, det Ingen nuomtide ved at sjunge <seg type="com" n="com16">fuldelig</seg>, dog M&#x00E6;nd sige <seg type="com" n="com17">for Sanden</seg>, at en Part var <seg type="com" n="com103">saa</seg>, som end kv&#x00E6;des i <seg type="com" n="com302">Normal</seg> hint gamle:</p>
+
+    <lg>
+<l rend="firstIndent">Malmet vokser</l>
+<l rend="firstIndent">Dybt i Fjelde,</l>
+<l rend="firstIndent">Kornet vokser</l>
+<l rend="firstIndent">H&#x00F8;it paa Sletten.</l>
+<l rend="firstIndent">
+<rs type="myth" key="myth59">
+<hi rend="spaced">Odin</hi>
+</rs> <seg type="com" n="com503">skifted</seg>.</l>
+<l rend="firstIndent">Hvi han <seg type="com" n="com503">skifted</seg>
+</l>
+<l rend="firstIndent">
+<seg type="com" n="com103">Saa</seg>, det vide</l>
+<l rend="firstIndent">Taaber ikke;</l>
+<l rend="firstIndent">Mon I veed det?</l>
+</lg>
+
+    <lg>
+<l rend="firstIndent">Jorden b&#x00E6;rer</l>
+<l rend="firstIndent">H&#x00F8;r, men Faaret</l>
+<l rend="firstIndent">Uld paa Heden.</l>
+<l rend="firstIndent">Deri Datter!</l>
+<l rend="firstIndent">Kl&#x00E6;d dig! Smyk dig</l>
+<l rend="firstIndent">Med din Broders</l>
+<l rend="firstIndent">
+<seg type="com" n="com303">Maard</seg> og Sobel!</l>
+<l rend="firstIndent">Staa i <placeName key="fak24">Nord</placeName>, som</l>
+<l rend="firstIndent">
+<placeName key="fak24">
+<hi rend="spaced">Nordens</hi>
+</placeName> M&#x00F8;!</l>
+</lg>
+
+
+    <lg>
+<l rend="firstIndent">
+<pb type="text" facs="1809_106_fax004.jpg" ed="A" subtype="column" n="500"/>
+<pb type="edition" ed="PS" n="112"/>Tag ei Silke,</l>
+<l rend="firstIndent">Tag ei Smykker,</l>
+<l rend="firstIndent">Tag ei Perler,</l>
+<l rend="firstIndent">Som dig <placeName key="poet454">Sakslands</placeName>,</l>
+<l rend="firstIndent">Som dig <placeName key="poet455">Vallands</placeName>
+</l>
+<l rend="firstIndent">S&#x00F8;nner byde!</l>
+<l rend="firstIndent">Naar de beile,</l>
+<l rend="firstIndent">Naar de byde:</l>
+<l rend="firstIndent">Skuffes <hi rend="spaced">du.</hi>
+</l>
+</lg>
+
+    <lg>
+<l rend="firstIndent">
+<placeName key="poet454">Sakslands</placeName> D&#x00F8;ttre,</l>
+<l rend="firstIndent">
+<placeName key="poet455">Vallands</placeName> D&#x00F8;ttre</l>
+<l rend="firstIndent">Vil dig lokke</l>
+<l rend="firstIndent">S&#x00F8;n! til Leflen;</l>
+<l rend="firstIndent">H&#x00F8;it i B&#x00E6;gret</l>
+<l rend="firstIndent">Bruser Eddren,</l>
+<l rend="firstIndent">S&#x00F8;dt de kv&#x00E6;de:</l>
+<l rend="firstIndent">Der er Kraften!</l>
+<l rend="firstIndent">Tro dem ei!</l>
+</lg>
+
+    <lg>
+<l rend="firstIndent">Elven fraader</l>
+<l rend="firstIndent">Ud af Fjeldet,</l>
+<l rend="firstIndent">
+<hi rend="spaced">Der</hi> er Kraften.</l>
+<l rend="firstIndent">&#x00D8;s af Elven!</l>
+<l rend="firstIndent">Bed din S&#x00F8;ster</l>
+<l rend="firstIndent">&#x00D8;l at brygge,</l>
+<l rend="firstIndent">Mj&#x00F8;d at blande!</l>
+<l rend="firstIndent">Staa som <placeName key="fak24">
+<hi rend="spaced">Nordens</hi>
+</placeName>
+</l>
+<l rend="firstIndent">S&#x00F8;n i <placeName key="fak24">Nord</placeName>!</l>
+</lg>
+<p rend="noIndent">Og <seg type="com" n="com114">end</seg> kvad han:</p>
+
+    <lg>
+<l rend="firstIndent">
+<rs type="myth" key="myth112">Norner</rs> styre,</l>
+<l rend="firstIndent">
+<rs type="myth" key="myth106">Aser</rs> <seg type="com" n="com19">aarke</seg>,</l>
+<l rend="firstIndent">
+<rs type="myth" key="myth118">Vaner</rs> vide.</l>
+<l rend="firstIndent">Tro paa <rs type="myth" key="myth112">Norner</rs>!</l>
+<l rend="firstIndent">
+<pb type="edition" ed="PS" n="113"/>Blot til <rs type="myth" key="myth106">Aser</rs>!</l>
+<l rend="firstIndent">Bed til <rs type="myth" key="myth118">Vaner</rs>!</l>
+<l rend="firstIndent">
+<seg type="com" n="com103">Saa</seg> har forne</l>
+<l rend="firstIndent">Skjalde kv&#x00E6;det.</l>
+</lg>
+
+<p rend="noIndent">
+<pb type="text" facs="1809_106_fax005.jpg" ed="A" subtype="column" n="501"/>
+<seg type="com" n="com103">Saa</seg> sige gamle M&#x00E6;nd, de som bedst mindes F&#x00E6;dres <seg type="com" n="com20">Frasagn</seg>, at <rs type="myth" key="myth527">Nor</rs> m&#x00E6;lte, og er det vel troligt det var udi denne Mening, dog det ei var saa <seg type="com" n="com21">l&#x00E6;mpet</seg> med <seg type="com" n="com22">Rimstave</seg> og anden Konst; thi det vide Alle som nogen Kl&#x00F8;gt eie, at ret Skjaldskab er at agte som Asam&#x00E6;nds <seg type="com" n="com24">Sk&#x00E6;nk</seg> til dem som bo i <placeName key="poet310">Norderlande</placeName>, saa som <rs type="myth" key="myth59">Odin</rs> siger i <rs type="title" key="title145">Havamal</rs>:</p>
+
+    <lg>
+<l rend="firstIndent">
+<rs type="myth" key="myth181">Gunl&#x00F8;d</rs> paa gyldne</l>
+<l rend="firstIndent">Stol har mig sk&#x00E6;nket</l>
+<l rend="firstIndent">Drik af den dyre Mj&#x00F8;d.</l>
+</lg>
+    
+<p rend="noIndent">Og <seg type="com" n="com114">end</seg>:</p>
+    
+
+    <lg>
+<l rend="firstIndent">Letk&#x00F8;bte V&#x00E6;dske</l>
+<l rend="firstIndent">Vel har jeg nydt,</l>
+<l rend="firstIndent">Skjaldskabet vokser</l>
+<l rend="firstIndent">Frem nu paa Jord.</l>
+</lg>
+
+    <p rend="noIndent">Nu er det at sige, at i mange Aldre ihukommede B&#x00F8;rnene vel deres Faders Ord, og, som det pleier at ske, at de som mest g&#x00F8;re efter de Gamles og Kl&#x00F8;gtiges Raad, dem gange <seg type="com" n="com7">og</seg> alle Ting bedst tilhaande, <seg type="com" n="com103">saa</seg> bleve <seg type="com" n="com7">og</seg> de S&#x00F8;dskende st&#x00E6;rke og mandelige og deres <seg type="com" n="com27">&#x00C6;tm&#x00E6;nd</seg> spredtes vide om Lande, og Ingen m&#x00E6;gtede at modstaa dem, der <seg type="com" n="com121">som</seg> de fore frem. Men som de S&#x00F8;dskende &#x00E6;ldedes, saa <seg type="com" n="com28">argedes</seg> de, og troede paa deres egen Styrke og tyktes sig klogere at v&#x00E6;re end <app type="corrNote" select="yes">
+<lem wit="B">deres</lem>
+<rdg wit="A">dens</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Fader; thi sloge de hans Tale mestendels hen i Veir og Vind.</p>
+
+    <p rend="firstIndent">
+<seg type="com" n="com29">Nu er det til Tidende</seg>, at en ny S&#x00E6;d kom ind i <placeName key="poet310">Norderlande</placeName>, og vist var hun god ja fuldbedre <pb type="edition" ed="PS" n="114"/>end hin gamle, saa som hun forkyndtes udi <placeName key="poet25">&#x00D8;sterleden</placeName>; men sandt er det <seg type="com" n="com7">og</seg> at sige, at i den Time hun kom hid, var det Kosteligste ei mere tilsyne. Somme mene, at hun havde tabt det paa <pb type="text" facs="1809_106_fax005.jpg" ed="A" subtype="column" n="502"/>de lange Veie, men Somme mene det, som <seg type="com" n="com31">ligeligst</seg> kan v&#x00E6;re, at hun havde gemt det saa vel og inderlig, som Klippen sin dyre Malm, og at hendes F&#x00F8;lgesvende ei vidste det at fremf&#x00F8;re for Dagens Lys. For den Sags Skyld h&#x00E6;ndtes det <seg type="com" n="com7">og</seg> <seg type="com" n="com103">saa</seg>, at hine f&#x00F8;rste Klerke og <seg type="com" n="com33">Kendem&#x00E6;nd</seg> ei talte som <seg type="com" n="com34">Sandingen</seg> var, at den Gud, som M&#x00E6;nd nu skulde tjene, var hin samme, som de fordum tjente, <seg type="com" n="com125">dog</seg> de havde <seg type="com" n="com35">forvendt</seg> hans Navn og <seg type="com" n="com504">Idr&#x00E6;tter</seg>; men sagde <seg type="com" n="com36">idensted</seg>, at hine gamle Guder maatte <seg type="com" n="com126">n&#x00E6;vnes</seg> Dj&#x00E6;vle og <seg type="com" n="com201">Menv&#x00E6;tter</seg>, <seg type="com" n="com106">ligervis som</seg> den Jord, hvorpaa de <seg type="com" n="com37">ginge</seg>, og den Himmel med de store og smaa Lys, som l&#x00F8;ftede sig over deres Hoved, ei havde v&#x00E6;ret de rette, <seg type="com" n="com38">denstund</seg> de mente dem bygte af <rs type="myth" key="myth106">Aser</rs>. Da <seg type="com" n="com39">forg&#x00E6;ttedes</seg> hartad alle de Ord, som <rs type="myth" key="myth527">Nor</rs> havde talt, i det hans B&#x00F8;rn <seg type="com" n="com41">finge</seg> den gruelige Tanke, at <seg type="com" n="com10">der</seg> han drog til Guderne, da drog han til Dj&#x00E6;vlene udi Helvede, som de nu mente Guderne at v&#x00E6;re, og at det ei s&#x00F8;mmede sig for dem, nu de skulde tjene <persName key="pe45">Krist</persName>, at lyde hans Raad.</p>
+
+    <p rend="firstIndent">Lyster Nogen at vide alle de Ting, som h&#x00E6;ndtes ere de S&#x00F8;dskende indtil denne Time, han maa vel rette sin Leilighed til at efterforske i alle de Sagaer, som om dem ere <seg type="com" n="com43">sams&#x00E6;tte</seg>
+<!--tekstrettelse?!-->! Her er det kortelig at melde, hvorlunde det gik dem i alle Maader efter som <rs type="myth" key="myth527">Nor</rs> havde spaaet, baade at der kom megen Ufred imellem dem, indtil en Kvinde med Mande<pb type="edition" ed="PS" n="115"/>mod, <seg type="com" n="com44">dannis</seg> og kl&#x00F8;gtig og n&#x00E6;r i <seg type="com" n="com45">Fr&#x00E6;ndskab</seg> med begge, forligede dennem; <seg type="com" n="com46">saaog</seg> at <seg type="com" n="com128">ihvorvel</seg> <rs type="myth" key="myth527">Nor</rs> udentvivl mente Mere, kan vel v&#x00E6;re <seg type="com" n="com7">og</seg> Andet, <seg type="com" n="com10">der</seg> han talte om Drik og om Kl&#x00E6;de, saa maatte dog <seg type="com" n="com7">og</seg> i disse Dele hans Spaadom opfyldes.</p>
+
+
+    <p rend="firstIndent">
+<pb type="text" facs="1809_106_fax006.jpg" ed="A" subtype="column" n="503"/>Fra den Time <seg type="com" n="com401">Dana</seg> hentede sine <seg type="com" n="com50">Kl&#x00E6;dningsmon</seg> fra <placeName key="his121">Bretlands</placeName> &#x00D8;er og sin Drik fra <placeName key="poet456">S&#x00F8;nderleden</placeName>, da hovmodedes og bedaaredes hun <seg type="com" n="com103">saa</seg>, at Intet som groede paa Dyr eller Jord i hendes Sletter var hende <seg type="com" n="com505">til Maade</seg>, og hengav hun det for en ringe Pris, at hun kunde <seg type="com" n="com52">bramme</seg> med braagede og <seg type="com" n="com53">blommede</seg> <seg type="com" n="com54">Mon</seg>, og hellere vilde hun <hi rend="spaced">&#x00F8;ge</hi> sin T&#x00F8;rst med <hi rend="spaced">fremmet</hi> Drik, end <hi rend="spaced">l&#x00E6;dske</hi> den i sin <hi rend="spaced">egen.</hi> Da blev hun <seg type="com" n="com304">bl&#x00F8;d</seg> i Sind og Hjerte, og er det Sommes Mening, at hun ved det Levnet kortede sine Dage.</p>
+
+    <p rend="firstIndent">Bedre bleve <rs type="myth" key="myth526">Noregs</rs> Vilkaar, dog han i mange Stykker ei var klogere paa det Sidste; men <seg type="com" n="com130">fast</seg> maatte Man sige, at lige som de giftige Urter ei trives paa Fjeldene, saa kan ei heller Bl&#x00F8;dhed og Vellyst, der vel maa lignes ved giftige Urter, ret f&#x00E6;ste Rod i hannem, for den st&#x00E6;rke og rene Lufts Skyld, som bl&#x00E6;ser mellem Klipperne. Ei var det dog derfor et <seg type="com" n="com131">um&#x00E6;rkeligt</seg> Ord, hvad som <rs type="myth" key="myth527">Nor</rs> talte til sin S&#x00F8;n; thi fra den Stund at <placeName key="poet454">Sakslands</placeName> M&#x00E6;nd komme til at <seg type="com" n="com132">bygge</seg> og k&#x00F8;bslaa i <placeName key="poet452">Bj&#x00F8;rgvin</placeName>, da kom mangen ny og overfl&#x00F8;dig Skik, som ei var den bedste. Ondt maatte Man <seg type="com" n="com7">og</seg> hartad n&#x00E6;vne det, at Noget blev fundet i <rs type="myth" key="myth526">Noregs</rs> Land, udaf hvilket det underlig Klare gjordes som <seg type="com" n="com57">Glar</seg> bliver kaldt; thi ligesom <seg type="com" n="com58">Glarmon</seg> kom til at stande paa Bordene isteden for de dunkle Horn og de m&#x00F8;rke B&#x00E6;gere, saa maatte &#x00D8;llet og Mj&#x00F8;den lade sig drive paa Flugt af Vin og anden <seg type="com" n="com133">udl&#x00E6;ndisk</seg> Drik. Men, om <pb type="edition" ed="PS" n="116"/>Drik at tale, da haver den mest ford&#x00E6;rvet <seg type="com" n="com6">baade</seg> S&#x00F8;dskende, som de ugudeligen pinte af det velsignede Korn, og ei er det at undres paa, aldenstund den laves ved Ild og ved Nat, ved den gruelige Troldomskonst, som <hi rend="spaced">Seid</hi> monne kaldes; <pb type="text" facs="1809_106_fax006.jpg" ed="A" subtype="column" n="504"/>thi vel er det <seg type="com" n="com61">kundbart</seg> af gamle B&#x00F8;ger, at med den Konst vilde onde <rs type="myth" key="myth111">Jetter</rs> ford&#x00E6;rve Jorden, og var det med hende, at Folk forgjordes fra Liv og Helsen, Vid og Forstand, ret som vi end dagligen se for &#x00D8;ie.</p>
+
+    <lg n="1">
+<l rend="firstIndent">Nu er <seg type="com" n="com302">Normal</seg> kv&#x00E6;det</l>
+<l rend="firstIndent">Og fremtalt er Sagnet,</l>
+<l rend="firstIndent">Gavnlig for <rs type="myth" key="myth5">Askurs</rs> &#x00C6;t,</l>
+<l rend="firstIndent">Ikke for <rs type="myth" key="myth111">Jetters</rs>.</l>
+<l rend="firstIndent">
+<seg type="com" n="com506">Vel ham</seg>, som kvad!</l>
+<l rend="firstIndent">
+<seg type="com" n="com506">Vel ham</seg>, som kan!</l>
+<l rend="firstIndent">Han <seg type="com" n="com137">nyde</seg> som <hi rend="spaced">
+<seg type="com" n="com62">nemmed</seg>!</hi>
+</l>
+<l rend="firstIndent">
+<seg type="com" n="com507">Vel dem</seg> som <hi rend="spaced">h&#x00F8;rte!</hi>
+</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <lg n="2">
+<l>Landsm&#x00E6;nd! Fr&#x00E6;nder i <placeName key="fak24">Nord</placeName>!</l>
+<l>Vil I <seg type="com" n="com114">end</seg> <seg type="com" n="com63">lyde paa</seg> Skjalden,</l>
+<l>Medens han, kyndig ved Sagn,</l>
+<l>Kyndig ved F&#x00E6;drenes Kvad,</l>
+<l>Str&#x00E6;ber i Nutidens Maal</l>
+<l>Oldtidens Kl&#x00F8;gt at udtale?</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <lg n="3">
+<l>
+<rs type="myth" key="myth526">Noreg</rs>! sku fra dine Fjelde</l>
+<l>Ei saa kold til Dalens S&#x00F8;n!</l>
+<l>Han har set dig i din V&#x00E6;lde,</l>
+<l>Og <seg type="com" n="com508">fornummet</seg> Kvadets D&#x00F8;n</l>
+<l>Som udgik fra <hi rend="spaced">dine</hi> Skjalde,</l>
+<l>Fro han <seg type="com" n="com114">end</seg> dig ser genkalde</l>
+<l>I din <hi rend="spaced">Daad</hi> den svundne Tid.</l>
+</lg>
+
+    <lg n="4">
+<l>
+<pb type="edition" ed="PS" n="117"/>
+<seg type="com" n="com401">Dana</seg> kalder han sin Moder,</l>
+<l>Elsker hende som en S&#x00F8;n;</l>
+<l>Dog til hendes dj&#x00E6;rve Broder</l>
+<l>Sneg han sig saa tit <seg type="com" n="com65">i L&#x00F8;n</seg>.</l>
+<l>&#x00D8;iet funkled, Kinden lued,</l>
+<l>Naar den K&#x00E6;kkes F&#x00E6;rd han skued,</l>
+<l>Naar han h&#x00F8;rte st&#x00E6;rke Maal.</l>
+</lg>
+
+    <lg n="5">
+<l>
+<pb type="text" facs="1809_106_fax007.jpg" ed="A" subtype="column" n="505"/>Derfor <rs type="myth" key="myth526">Noreg</rs>! t&#x00F8;r, som Fr&#x00E6;nde,</l>
+<l>Til dig tr&#x00E6;de <seg type="com" n="com402">Danas</seg> Skjald,</l>
+<l>Frygter ei, at du skal vende</l>
+<l>Ryggen mod ham i din Hal.</l>
+</lg>
+
+    <lg n="6">
+<l>Naar paa h&#x00F8;ie Fjeld du stander,</l>
+<l>Og paa <seg type="com" n="com401">Dana</seg> skuer ned,</l>
+<l>Glem da aldrig, det er <hi rend="spaced">Fjeldet,</hi>
+</l>
+<l>Ei  <hi rend="spaced">dig selv</hi> som <hi rend="spaced">h&#x00E6;ver</hi> dig!</l>
+</lg>
+
+    <lg n="7">
+<l>Husk at <seg type="com" n="com401">Dana</seg> er en Kvinde!</l>
+<l>Se hvor Blomsterflokken t&#x00E6;t,</l>
+<l>Trindt om hendes Fod sig slynger!</l>
+<l>
+<hi rend="spaced">Maa</hi> hun ei af den en Krands</l>
+<l>
+<seg type="com" n="com66">Vinde</seg> om sin fagre Tinding?</l>
+</lg>
+
+    <lg n="8">
+<l>H&#x00F8;r hvor Nattergalens Kvad</l>
+<l>Smeltende og liflig toner!</l>
+<l>
+<hi rend="spaced">Maa</hi> ei Taaren da paa Kind</l>
+<l>Mildt og sagtelig nedrinde?</l>
+<l>
+<hi rend="spaced">Maa</hi> da hendes Stemme ei</l>
+<l>S&#x00E6;nke sig i &#x00F8;mme Toner?</l>
+</lg>
+
+    <lg n="9">
+<l>
+<hi rend="spaced">T&#x00F8;r</hi> du kalde hende svag?</l>
+<l>T&#x00F8;r du <seg type="com" n="com67">
+<hi rend="spaced">pukke</hi> paa</seg> din Styrke?</l>
+<l>
+<hi rend="spaced">Vil</hi> du, at den gr&#x00F8;nne Eng</l>
+<l>Skal sig brad som Klippen l&#x00F8;fte,</l>
+<l>
+<pb type="edition" ed="PS" n="118"/>Og det <hi rend="spaced">runde</hi> B&#x00F8;geblad</l>
+<l>Sig som Granenaalen <hi rend="spaced">spidse?</hi>
+</l>
+</lg>
+
+    <lg n="10">
+<l>Om paa &#x00D8;ers Blomsterbred</l>
+<l>S&#x00F8;steren du seer at stande,</l>
+<l>Stirre paa sit Billed ned</l>
+<l>I de blaa, de stille Vande:</l>
+<l>Husk at hun en Kvinde er,</l>
+<l>At, som Kvinde, hun sig speiler</l>
+<l>Kun fordi at Speilet h&#x00F8;rer</l>
+<l>Med til Kvindernes Natur!</l>
+</lg>
+
+    <lg n="11">
+<l>
+<pb type="text" facs="1809_106_fax007.jpg" ed="A" subtype="column" n="506"/>Ser du hende stundum sp&#x00F8;ge</l>
+<l>Vild med Ynglinge fra <placeName key="fak457">Syden</placeName>,</l>
+<l>Husk at Fristelsen er stor</l>
+<l>For den fagre, &#x00F8;mme Kvinde,</l>
+<l>Naar en fyrig Ynglings Mund</l>
+<l>Blusser, br&#x00E6;nder hendes H&#x00E6;nder!</l>
+</lg>
+
+    <lg n="12">
+<l>Speiler hun sig <hi rend="spaced">alt</hi> for l&#x00E6;nge,</l>
+<l>Saa hun glemmer <hi rend="spaced">Husets</hi> Dont;</l>
+<l>Sp&#x00F8;ger hun dig <hi rend="spaced">alt</hi> for k&#x00E6;len,</l>
+<l>Saa hun glemmer <hi rend="spaced">h&#x00F8;ie</hi> Byrd;</l>
+<l>Slaa da med dit Sv&#x00E6;rd paa Skjoldet!</l>
+<l>Syng et gammelt Heltekvad!</l>
+<l>Husk, du taler til en <hi rend="spaced">S&#x00F8;ster!</hi>
+</l>
+<l>Talen <seg type="com" n="com142">v&#x00E6;re</seg> <hi rend="spaced">broderlig!</hi>
+</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <lg n="13">
+<l>
+<seg type="com" n="com401">Dana</seg>! k&#x00E6;re, &#x00F8;mme Moder!</l>
+<l>Ei det s&#x00F8;mmer sig en S&#x00F8;n</l>
+<l>Om sin <hi rend="spaced">Moders</hi> Feil at tale,</l>
+<l>K&#x00E6;rlig skal han d&#x00F8;lge  dem,</l>
+<l>Kysse dem fra hendes L&#x00E6;ber;</l>
+<l>Men en hed og heftig B&#x00F8;n</l>
+<l>Kan sig dog <seg type="com" n="com7">og</seg> for ham s&#x00F8;mme.</l>
+</lg>
+
+    <lg n="14">
+<l>
+<pb type="edition" ed="PS" n="119"/>Hed og heftig er min B&#x00F8;n:</l>
+<l>Aldrig <seg type="com" n="com143">glemme</seg> du din Broder!</l>
+<l>Er han <hi rend="spaced">stiv,</hi>  saa er han <hi rend="spaced">fast,</hi>
+</l>
+<l>Er han <hi rend="spaced">stolt,</hi> saa er han <hi rend="spaced">kraftig,</hi>
+</l>
+<l>S&#x00F8;g ei sp&#x00E6;de Blomster der</l>
+<l>Hvor de store Fjelde vokse!</l>
+</lg>
+
+    <lg n="15">
+<l>Har du en vanartet S&#x00F8;n,</l>
+<l>Som t&#x00F8;r spotte med din Broder,</l>
+<l>Haardt du <seg type="com" n="com144">revse</seg> ham! thi ei</l>
+<l>Drengespot den Gamle taaler,</l>
+<l>Ei han det <seg type="com" n="com69">forskylder</seg>. Se!</l>
+<l>Hvor han vogter sine Klipper,</l>
+<l>Hvor den kolde Is og Sne</l>
+<l>H&#x00E6;nger i hans hvide Lokker,</l>
+<l>
+<pb type="text" facs="1809_106_fax008.jpg" ed="A" subtype="column" n="507"/>Mens han staar med n&#x00F8;gent Bryst</l>
+<l>Og med Sv&#x00E6;rd i Haanden &#x00E6;sker</l>
+<l>Hvem som t&#x00F8;r, til Enekamp!</l>
+</lg>
+
+    <lg n="16">
+<l>T&#x00F8; du op de frosne Lokker!</l>
+<l>L&#x00F8;n hans Kamp med K&#x00E6;rlighed!</l>
+<l>Vis ham, at du er <hi rend="spaced">hans</hi> S&#x00F8;ster,</l>
+<l>Sprungen ud af <hi rend="spaced">samme</hi> L&#x00E6;nd!</l>
+<l>
+<hi rend="spaced">Kvinde</hi> er du,  men ei <placeName key="fak457">
+<hi rend="spaced">Sydens</hi>
+</placeName>
+</l>
+<l>Bl&#x00F8;de, svage Kvinde. Husk!</l>
+<l>Til en <rs type="myth" key="myth368">
+<hi rend="spaced">Skjoldm&#x00F8;</hi>
+</rs> <seg type="com" n="com145">est</seg> du baaret,</l>
+<l>F&#x00F8;dt til Kamp og K&#x00E6;rlighed!</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <lg n="17">
+<l>
+<rs type="myth" key="myth526">Noreg</rs>! <seg type="com" n="com401">Dana</seg>! <seg type="com" n="com114">end</seg> en B&#x00F8;n!</l>
+<l>
+<seg type="com" n="com70">Glemmer</seg> aldrig hvad den Gamle</l>
+<l>Talte om de h&#x00F8;ie Guder!</l>
+<l>Navn og Form kan sig forvandle,</l>
+<l>Men det Evige, som var</l>
+<l>F&#x00F8;rend Form og f&#x00F8;rend Navn,</l>
+<l>Var, og er og vorder Kilden</l>
+<l>Hvorfra Kraft og Kl&#x00F8;gt udstr&#x00F8;mmer,</l>
+<l>
+<pb type="edition" ed="PS" n="120"/>Hvorhen Kraft og Kl&#x00F8;gt henpeger,</l>
+<l>Som en Straale til sin Sol.</l>
+</lg>
+
+    <lg n="18">
+<l>
+<persName key="pe45">Kristus</persName>, Herlighedens Glands</l>
+<l>Og Guds V&#x00E6;sens rette Billed</l>
+<l>Aabenbarede paa Jord,</l>
+<l>I sig selv og i sin L&#x00E6;re.</l>
+<l>
+<rs type="myth" key="myth106">Aser</rs>,  <rs type="myth" key="myth118">Vaner</rs> er ei mer,</l>
+<l>Himlen er ei l&#x00E6;nger kl&#x00F8;vet,</l>
+<l>Kraft og Kl&#x00F8;gt og K&#x00E6;rlighed,</l>
+<l>
+<hi rend="spaced">Tre</hi> til <hi rend="spaced">Een,</hi> til <hi rend="spaced">Gud</hi> er blevet.</l>
+<l>Vil I l&#x00F8;fte eders Isse</l>
+<l>Kraftig imod Himmelbuen,</l>
+<l>F&#x00F8;rst I kn&#x00E6;le dybt i St&#x00F8;vet</l>
+<l>Ned for ham, som Kraften eier!</l>
+</lg>
+
+    <fw type="shortLine"/>
+
+    <lg n="19">
+<l>
+<pb type="text" facs="1809_106_fax008.jpg" ed="A" subtype="column" n="508"/>
+<rs type="myth" key="myth526">Noreg</rs> og <seg type="com" n="com401">Dana</seg>! I elskede To!</l>
+<l>H&#x00F8;rte I Sagnet og <seg type="com" n="com62">nemmed</seg> I Kv&#x00E6;det,</l>
+<l>Haand udi Haand da I S&#x00F8;dskende tvende!</l>
+<l>
+<seg type="com" n="com147">Ganger</seg> <seg type="com" n="com103">saa</seg> begge til <rs type="myth" key="myth115">Skjoldungens</rs> Hal!</l>
+<l>
+<seg type="com" n="com148">Kommer</seg>! o <seg type="com" n="com305">f&#x00F8;lger</seg> den ilende Skjald!</l>
+</lg>
+
+    <lg n="20">
+<l>Hisset han skuer en Herre saa bold,</l>
+<l>
+<seg type="com" n="com149">H&#x00F8;it</seg> er <hi rend="spaced">Hans</hi> Hjerte og h&#x00F8;it er <hi rend="spaced">Hans</hi> S&#x00E6;de,</l>
+<l>Mandig han sidder som <rs type="myth" key="myth493">
+<hi rend="spaced">Yngve</hi>
+</rs> og <hi rend="spaced">
+<rs type="myth" key="myth67">Skjold</rs>,</hi>
+</l>
+<l>Gammelt og herligt er <rs type="myth" key="myth115">Skjoldungens</rs> S&#x00E6;de.</l>
+<l>Venlig Hans F&#x00F8;dedags stigende Sol</l>
+<l>
+<hi rend="spaced">F&#x00F8;rstegang</hi> ser ham paa Kongernes Stol.</l>
+<l>Nordsolens Straaler de lyse, de kolde,</l>
+<l>Speile sig glade i blinkende Skjolde,</l>
+<l>Skjoldene blinke om <placeName key="poet310">Nordurlands</placeName> Drot.</l>
+</lg>
+
+    <lg n="21">
+<l>
+<pb type="edition" ed="PS" n="121"/>Skjalden, hvis &#x00D8;ie er f&#x00E6;ngslet i <placeName key="fak24">Nord</placeName>,</l>
+<l>Som ikkun m&#x00E6;gter om <placeName key="fak24">
+<hi rend="spaced">Norden</hi>
+</placeName> at kv&#x00E6;de,</l>
+<l>Som, naar han skuer et Oldtidens Spor,</l>
+<l>Standser og stirrer beruset af Gl&#x00E6;de,</l>
+<l>Stirrer paa <hi rend="spaced">Kors</hi> og paa <hi rend="spaced">l&#x00F8;ftede</hi> Sv&#x00E6;rd,</l>
+<l>Herlige Minder om Heltenes F&#x00E6;rd.</l>
+<l>Sv&#x00E6;rdet nedsynker paa Dannemands Skulder,</l>
+<l>Vier til <hi rend="spaced">Daad</hi> og til Sv&#x00E6;rdenes Bulder,</l>
+<l>
+<hi rend="spaced">Ridderen</hi> stander for <placeName key="poet310">Nordurlands</placeName> Drot.</l>
+</lg>
+
+    <lg n="22">
+<l>
+<persName key="pe218">
+<hi rend="spaced">Valdemar</hi>
+</persName> havde et Banner saa <seg type="com" n="com73">prud</seg>,</l>
+<l>Korset i Midten saa skinnende lued,</l>
+<l>Vist kom det hellige Banner fra Gud,</l>
+<l>Fienderne b&#x00E6;ved, naar Korset de skued!</l>
+<l>
+<persName key="pe218">Valdemar</persName> kaared de g&#x00E6;veste M&#x00E6;nd,</l>
+<l>Slog dem med Sv&#x00E6;rdet ved Skulder og L&#x00E6;nd,</l>
+<l>B&#x00F8;d dem at tegnes med hellige M&#x00E6;rke;</l>
+<l>
+<hi rend="spaced">Ridderne</hi> l&#x00F8;fted sig mandige, st&#x00E6;rke,</l>
+<l>Stred under Korset trehundrede Aar.</l>
+</lg>
+
+    <lg n="23">
+<l>Det Herlige svinder i l&#x00F8;bende Tid;</l>
+<l>En <seg type="com" n="com509">Konning</seg> uddrog med saa fager en Skare,</l>
+<l>Han agted at k&#x00E6;mpe saa <seg type="com" n="com74">syndig</seg> en Strid,</l>
+<l>Dog <hi rend="spaced">hellige</hi> Banner for H&#x00E6;ren de bare.</l>
+<l>
+<pb type="text" facs="1809_106_fax009.jpg" ed="A" subtype="column" n="509"/>Ei l&#x00E6;nger det v&#x00E6;rged om K&#x00E6;mper fra <placeName key="fak24">Nord</placeName>,</l>
+<l>De sjunke, de segned paa blodige Jord,</l>
+<l>Det Banner var svundet, man aldrig det fandt,</l>
+<l>Fra Riddernes Bryst da <seg type="com" n="com7">og</seg> Korset forsvandt,</l>
+<l>Og flygted til Snekken paa Havet.</l>
+</lg>
+
+    <lg n="24">
+<l>Tregange skjulte sig Seklet i Tid,</l>
+<l>Britter uddroge, saa talrig en Skare,</l>
+<l>R&#x00F8;vede Korset i syndige Strid,</l> 
+<l>Venskabets Banner til Sk&#x00E6;ndsel de bare,</l>
+<l>
+<pb type="edition" ed="PS" n="122"/>
+<placeName key="poet219">Dannemarks</placeName> Br&#x00F8;de <hi rend="spaced">udsonedes</hi> brat,</l>
+<l>Tabt var for evig hin herlige Skat,</l>
+<l>Dog sig de Riddere, mandige, st&#x00E6;rke,</l>
+<l>Reiste med Korsets det hellige M&#x00E6;rke,</l>
+<l>R&#x00F8;rte af Sv&#x00E6;rdet i <persName key="pe96">
+<hi rend="spaced">Frederiks</hi>
+</persName> Haand.</l>
+</lg>
+
+    <lg n="25">
+<l>Skjalden, hvis &#x00D8;ie er f&#x00E6;ngslet i Nord,</l>
+<l>Som ikkun m&#x00E6;gter om <placeName key="fak24">
+<hi rend="spaced">Norden</hi>
+</placeName> at kv&#x00E6;de,</l>
+<l>Som, naar han skuer et Oldtidens <app type="corrNote" select="yes">
+<lem wit="B">Spor</lem>
+<rdg wit="A">Syn</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>
+<l>
+<pb type="text" facs="1809_106_fax009.jpg" ed="A" subtype="column" n="510"/>Standser og stirrer, beruset af Gl&#x00E6;de,</l>
+<l>Stirrer paa Kors og paa l&#x00F8;ftede Sv&#x00E6;rd,</l>
+<l>Herlige Minder om Heltenes F&#x00E6;rd,</l>
+<l>Sv&#x00E6;rdet nedsynker paa Dannemands Skulder,</l>
+<l>Vier til <hi rend="spaced">Daad</hi> og til Sv&#x00E6;rdenes Bulder,</l>
+<l>Ridderen stander for <placeName key="poet310">Nordurlands</placeName> Drot.</l>
+</lg>
+<fw type="shortLine"/>
+
+    <lg n="26">
+<l>
+<rs type="myth" key="myth526">Noreg</rs> og <seg type="com" n="com401">Dana</seg>! i <rs type="myth" key="myth115">Skjoldungens</rs> Hal</l>
+<l>Rinde nu Festens oph&#x00F8;iede Timer.</l>
+<l>N&#x00E6;rmere <seg type="com" n="com306">tr&#x00E6;de</seg> I <placeName key="poet310">Nordurlands</placeName> Drot!</l>
+<l>
+<seg type="com" n="com75">Skuer</seg> i Korset det genf&#x00F8;dte Banner!</l>
+<l>
+<seg type="com" n="com76">Vover</seg> at bryde det festlige Stille!</l>
+<l>
+<seg type="com" n="com77">Sv&#x00E6;rger</seg> for Guds og hans Salvedes Aasyn,</l>
+<l>
+<hi rend="spaced">Dem</hi> og hinanden i Liv og i D&#x00F8;d</l>
+<l>Trolig at elske og trolig at tjene,</l>
+<l>Korset at <hi rend="spaced">f&#x00F8;lge</hi> og Korset at <hi rend="spaced">b&#x00E6;re,</hi>
+</l>
+<l>Aldrig at glemme I stamme fra <rs type="myth" key="myth527">Nor</rs>!!!</l>
+</lg>
+
+    <p rend="firstIndentRight">
+<hi rend="spaced">Nik. Fred. Sev. Grundtvig.</hi>
+</p>
+
+    <fw type="longLine"/>
+
+    <p rend="firstIndent"></p>
+
+    </div>
+
+
+     
+    </body>
+</text>
+</TEI>

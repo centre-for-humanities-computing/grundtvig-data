@@ -1,0 +1,330 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc" type="application/relax-ng-compact-syntax"?> <!--<?xml-model href="introRNC.rnc" type="application/relax-ng-compact-syntax"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Krigssang for Nordm&#x00E6;nd</title>
+        <title rend="shortForm">Krigssang for Nordm&#x00E6;nd</title>
+        <author>Holger Berg</author>
+        <editor role="editor3">Johnny Kondrup</editor>
+        <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+           <editor role="editor1">Vibeke A. Pedersen</editor>
+           
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>40 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1808_83_txt.xml">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" type="intro" target="1808_83_intro.xml">Indledning</note>
+      </notesStmt>
+      
+      <sourceDesc><p /></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change who="NHB" when="2012-06-14">tilpasset teiHeader, p&#x00E5;begyndt egt. skrivning</change>
+      <change who="NHB" when="2012-06-29">afrundet skrivning</change>
+      <change who="NHB" when="2012-07-02">rettet efter HY</change>
+      <change who="NHB" when="2012-07-03">rettet efter HY, indf&#x00F8;jet tabt(!) afsnit</change>
+      <change who="NHB" when="2012-07-05">opm&#x00E6;rkning titler</change>
+      <change who="NHB" when="2012-07-08">docIn-numre</change>
+      <change who="NHB" when="2012-07-25">rettelser fra FLN</change>
+      <change who="NHB" when="2012-07-27">indsat bog til litteraturliste</change>
+      <change who="NHB" when="2012-08-08">indsat gardin-overskrift i kantede parenteser "[]"</change>
+      <change who="NHB" when="2012-10-05">fjernet m&#x00E6;slinger</change>
+      <change who="NHB" when="2012-10-09">indsat GMT-tidspunkter til tidslinjehenvisning. Indtastet JKs rettelser</change>
+      <change who="NHB" when="2012-10-11">rettet readMore-kodning</change>
+      <change who="NHB" when="2012-10-26">rettet i litteraturlisten</change>
+      <change who="NHB" when="2012-11-19">persName fjernet fra litList</change>
+      <change who="NHB" when="2013-04-02">valid, undtagen henvisninger til tidslinjen</change>
+      <change xml:id="JT" who="JT" when="2013-09-26">m&#x00E6;slinger pga. tidslinjehenvisninger beholdt i forb. med oplast af 1.3</change>
+      <change who="JT" when="2013-09-27">1.3.: ny kodning: udskiftet faxhenv. til ikke-Grundtvig-v&#x00E6;rker fra ref/image med ref/epiText, og fjernet havel&#x00E5;ge, der ikke l&#x00E6;ngere er n&#x00F8;dvendig. For indev&#x00E6;rende henvises kun til v&#x00E6;rkets f&#x00F8;rste side, der indeholder en pdf med alle sider</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+    <change who="NHB" when="2014-03-20">valideret</change>
+         <change who="NHB" when="2017-04-28">valid</change>
+</revisionDesc>
+  </teiHeader>
+  <text type="intro">
+    <body>
+      <div>
+        <head xml:id="docIn1">Karakteristik</head>
+        <p rend="noIndent">&#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; udkom i det velansete tidsskrift <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> der blev l&#x00E6;st i b&#x00E5;de danske og norske dannede kredse. Teksten er konventionel, men for en krigssang var det snarere en fordel end en ulempe. Den manglende melodi og det store antal konkurrenter forhindrede dog sangen i at tiltr&#x00E6;kke sig samme opm&#x00E6;rksomhed som Grundtvigs &#x00F8;vrige lyrik fra krigen 1807-1814. &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; belyser dermed vilk&#x00E5;rene for en krigssang.</p>
+      </div>
+      <div>
+        <head xml:id="docIn2">Datering og anledning</head>
+        <p rend="noIndent">Grundtvigs sang udkom den 18. juli 1808, mens der stadig blev k&#x00E6;mpet i Norge. Sverige var modstander af Frankrig og havde i marts derfor erkl&#x00E6;ret krig mod dets allierede, Danmark-Norge. I begyndelsen af april angreb en svensk h&#x00E6;r det &#x00F8;stlige Norge<!-- (se <ref>Oversigskortet</ref>)-->. Norske styrker vandt de st&#x00F8;rre tr&#x00E6;fninger midt i april (<rs type="title" key="title720">R&#x00E6;der 1847</rs>, kap. 14). Dette var de f&#x00F8;rste sejre siden krigens udbrud i efter&#x00E5;ret 1807, og nyhederne vakte dansk-norsk begejstring. <persName key="pe176">Povel Dons</persName> hyldede overgangen fra &#x201C;Nordens Vinternat&#x201D; til &#x201C;Vaarens friske L&#x00F8;v&#x201D; i et digt henvendt til Grundtvig fra slutningen af maj (<rs type="title" key="title595">Dons 1808</rs>, versafsnit 5, vers 1 og 5; se <ref type="docOut" target="1808_82_intro.xml#docIn2">afsnittet om <persName key="pe176">Dons</persName> i indledningen
+            til &#x201C;I Anledning af mit Syns Mistydning&#x201D;</ref>). <persName key="pe176">Dons</persName> opfordrede Grundtvig til at v&#x00E6;kke Nordens heltemod ved at skrive en ny sang: &#x201C;Fornye i Str&#x00E6;ngens Klang den svundne Tid&#x201D; (<rs type="title" key="title595">Dons 1808</rs>, versafsnit 10, vers 4). Udgiveren af <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> <persName key="pe24">Knud Lyne Rahbek</persName>, efterspurgte p&#x00E5; denne tid patriotisk lyrik, og han havde i maj allerede optaget Grundtvigs <rs type="title" key="title669">digt om <persName key="pe99">Peter Willemoes</persName> (1808b)</rs>.</p>
+        <p rend="noIndent">Grundtvig fulgte opfordringen. I et brev dateret 16. juli skrev han til sin bror, <persName key="pe178">Otto</persName>: &#x201C;Jeg har i disse Dage skrevet en Krigssang for de tappre Nordm&#x00E6;nd, som nogle af de her v&#x00E6;rende Klippeb&#x00F8;rn ville lade komponere og sende til Fjelds&#x201D;, dvs. til Norge (<rs type="title" key="title7">Breve 1 1924</rs>, s. 17 f.). Grundtvig havde efter sin ankomst til hovedstaden i maj m&#x00E5;ned p&#x00E5; sin nye bop&#x00E6;l, Valkendorfs kollegium, allerede l&#x00E6;rt flere nordm&#x00E6;nd at kende. Af varig betydning var venskaberne med <persName key="pe765">Svend Borchmann Hersleb</persName>, <persName key="pe179">Georg Sverdrup</persName> og <persName key="pe36">Niels Treschow</persName>.</p>
+      </div>
+      <div>
+        <head xml:id="docIn3">Kilder</head>
+        <p rend="noIndent">Nyheder fra Norge blev bragt i <hi rend="italic">
+<rs type="title" key="title841">Budstikken</rs>.</hi> Det var den levedygtigste blandt de norske aviser, som blev lanceret fra august 1807 og m&#x00E5;nederne derefter for at sikre en statstro nyhedsformidling (<rs key="title856" type="title">Ringvej 2009</rs>). <hi rend="italic">
+<rs type="title" key="title841">Budstikken</rs>
+</hi> udkom i Oslo fra 14. april 1808. Generalstaben genoptrykte p&#x00E5; kongelig befaling numrene i K&#x00F8;benhavn, og de danske aviser gav herfra nyhederne videre til deres l&#x00E6;sere. Sejrene ved Aurskog og H&#x00F8;land mellem den 14. og 25. april blev f&#x00F8;rst omtalt i dobbelth&#x00E6;ftet nr. 5-6 af <hi rend="italic">
+<rs type="title" key="title845">Budstikken</rs>,</hi> som udkom i K&#x00F8;benhavn den 21. maj.</p>
+        <p rend="noIndent">Hvis Grundtvig l&#x00E6;ste <hi rend="italic">
+<rs type="title" key="title845">Budstikken</rs>,</hi> kan beretningen om sejrene ved H&#x00F8;land have inspireret strofer i &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D;. Den &#x00F8;verstkommanderende for h&#x00E6;ren i Norge, <persName key="pe149">prins Christian August</persName>, afrundede sin beskrivelse af tr&#x00E6;fningerne med en appel til forf&#x00E6;drenes &#x00E5;nd: &#x201C;Saaledes er da for det f&#x00F8;rste givet Fienden et Beviis, at det ej bliver saa let at betvinge Nordmanden, naar han med Forf&#x00E6;dres Aand og Kraft v&#x00E6;rger sit F&#x00E6;dreneland&#x201C; (<rs type="title" key="title875">Christian August 1808</rs>, s. 20).</p>
+        <p rend="noIndent">Opfordringen til at v&#x00E6;rne landet er den n&#x00E6;rmeste parallel mellem <persName key="pe149">Christian Augusts</persName> beretning og Grundtvigs digt. Strofe 7, vers 3-6, henvender sig til m&#x00E6;nd fra omr&#x00E5;der nordenfjelds, dvs. vest og nord for det geografiske skel Dovrefjell. Styret i K&#x00F8;benhavn frygtede, at kampene mod svenskerne i &#x00D8;stnorge af nordm&#x00E6;nd nordenfjelds ville blive set som et uvedkommende anliggende, og at disse nordm&#x00E6;nd betragtede krigen med Storbritannien som en katastrofe for handelen.</p>
+        <note type="readMore">
+          <p rend="noIndent">Se den omtalte beretning, der ogs&#x00E5; stemmer overens med skildringen af svensk &#x201C;Rov og Brand&#x201D; i strofe 4 i &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D;:</p>
+          <p rend="noIndent">&#x201C;Generalcommandoen &#x00F8;nsker at dette maa have Indflydelse paa de &#x00F8;vrige Landets Beboere, for med forenet Kraft at bortfjerne en Fiende, som mere kan ansees for en R&#x00F8;verbande, der ved enkelte smaae Troppecorps s&#x00F8;ger at indsnige sig i Landet, og &#x00F8;del&#x00E6;gge samme, naar den ej finder Modstand, og tillader sig at plyndre, og til aldeles at forhindre dette er Armeen ikke tilstr&#x00E6;kkelig st&#x00E6;rk. Ikkuns forenet Kraft, efter vore Forf&#x00E6;dres Exempel, kan forekomme dette.&#x201D; (<rs type="title" key="title875">Christian August 1808</rs>, s. 21 f.)</p>
+        </note>
+        <p rend="noIndent"></p>
+      </div>
+      <div>
+        <head xml:id="docIn4">Forbilleder</head>
+        <div>
+          <head xml:id="docIn5">Lovsange til Norge i Danmark</head>
+          <p rend="noIndent">&#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; ligger i forl&#x00E6;ngelse af de lovsange til Norge, der var udkommet i Danmark fra anden halvdel af 1700-tallet. Nordm&#x00E6;nd m&#x00E5;tte drage til K&#x00F8;benhavn for at l&#x00E6;se p&#x00E5; universitetet, og blandt hovedstadens digtere fandtes mange nordm&#x00E6;nd. De havde is&#x00E6;r v&#x00E6;ret aktive i Det norske Selskab, der fra sin grundl&#x00E6;ggelse (1772) indtil <persName key="pe562">Johan Herman Wessels</persName> d&#x00F8;d (1785) havde v&#x00E6;ret en af hovedstadens f&#x00F8;rende litter&#x00E6;re klubber.</p>
+          <p rend="noIndent">Fortalere for reformer havde l&#x00E6;nge stiliseret norske forhold som et forbillede for Danmark. Den frie norske odelsbonde optr&#x00E5;dte p&#x00E5; poetisk og prosaisk vis i debatten om danske landboreformer, og det norske forbillede fik fornyet relevans under krigen. Stavnsb&#x00E5;ndets oph&#x00E6;velse i &#x00E5;rene efter 1788 knyttede danske f&#x00E6;steb&#x00F8;nders ret til at flytte bop&#x00E6;l til en udvidet v&#x00E6;rnepligt. Helstatens v&#x00E6;rnepligtige h&#x00E6;r stod fra 1807 sin f&#x00F8;rste pr&#x00F8;ve i en l&#x00E6;ngere krig, og resultaterne var blandede. I denne situation fremh&#x00E6;vede &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; den frie bondestands evne og vilje til at forsvare sit land.</p>
+          <p rend="noIndent">Moderskikkelsen &#x201C;gamle Norrig&#x201D; som personifikation af Norge er derimod mindre konventionel. Siden Indf&#x00F8;dsretten (1776) havde den patriotiske tradition snarere fremstillet en helstatslig moderskikkelse med sine tre drengeb&#x00F8;rn som en allegori for kongens f&#x00E6;drelandsk&#x00E6;rlighed (Pietas Augusta) til Danmark, Holsten og Norge (<rs type="title" key="title607">Kryger 1991</rs>, s. 291-294). Grundtvig havde i <hi rend="italic">
+<rs type="title" key="title128">Maskeradeballet 1808</rs>
+</hi> lanceret andre skr&#x00F8;belige figurer med nationalt isl&#x00E6;t: den d&#x00F8;ende olding Danmark og den bl&#x00F8;dende Dana (<rs type="title" key="title128">Grundtvig 1808a</rs>, s. 5).</p>
+        </div>
+        <div>
+          <head xml:id="docIn6">Krigssange</head>
+          <p rend="noIndent">Krigssangen var under Englandskrigene en popul&#x00E6;r genre, hvis bedste bidrag genl&#x00F8;d i gaderne og med tiden blev folkeeje. Der var dog ikke tale om organiseret f&#x00E6;llessang, som f&#x00F8;rst dukkede op ved Mands Minde-forel&#x00E6;sningerne fra 1838 (<rs type="title" key="title696">Grundtvig 1877</rs>). <rs type="title" key="title876">&#x201C;Kong Christjan stoed ved h&#x00F8;ien Mast&#x201D; (Ewald 1916</rs>) er et velkendt eksempel p&#x00E5; en krigssang og peger ogs&#x00E5; p&#x00E5; forskellene i fremf&#x00F8;relsen: sangen blev f&#x00F8;rst sunget fra scenen i et syngespil fra 1779, men vandt som krigssang snart indpas i fl&#x00E5;den og klubberne. Siden opf&#x00F8;relsen i 1828 af <rs type="title" key="title1520">&#x201C;Elverh&#x00F8;i&#x201D; (Heiberg 1932)</rs> har den som kongesang overlevet til vore dage. Tekster til andre krigssange blev genoptrykt over nogle &#x00E5;r eller et &#x00E5;rti, og deres melodier blev genanvendt. De fleste
+            krigssange forblev dog bundet til den begivenhed, som de kommenterede (<rs type="title" key="title849">Albertsen 1975</rs>; <rs type="title" key="title879">Conrad 1991</rs>, s. 223-238). I det mangfoldige marked for krigssange var digterne blot et enkelt led.</p>
+          <div>
+            <head xml:id="docIn7">Eftersp&#x00F8;rgslen</head>
+            <p rend="noIndent">Krigssange skulle som regel synges i f&#x00E6;llesskab, og derfor adskilte tekstens kvaliteter sig fra l&#x00E6;sedigtets. Verslinjer skulle v&#x00E6;re korte og temaet enkelt. Grundtvig anvendte til sin &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; den fra salmerne let genkendelige Lutherstrofe (se afsnittet med <ref type="docIn" target="#docIn11">Metriske oplysninger</ref>). Teksten varierer et genkendeligt tema, hyldesten af Norge. Hovedproblemet var <ref type="docIn" target="#docIn12">den manglende melodi (se afsnittet herom)</ref>.</p>
+            <p rend="noIndent">Et sidste og ufravigeligt krav var aktualitet. Dette krav kunne let honoreres i aviser og tidsskrifter, men for opsamlinger i bogform var det en udfordring at bevare aktualiteten. Dette m&#x00E5;tte <persName key="pe767">L.C. Sander</persName> erfare i 1807. Den erfarne sangdigter havde i august skrevet otte krigssange, som kommenterede den igangv&#x00E6;rende britiske bes&#x00E6;ttelse af Nordsj&#x00E6;lland og mobiliserede modstanden. Pjecen var trykt &#x201C;da Septemberens ulykkelige Katastrophe [K&#x00F8;benhavns bombardement og byens overgivelse] n&#x00F8;dte mig til at undertrykke det hele Oplag.&#x201D; <persName key="pe767">Sander</persName> udgav f&#x00F8;rst efter &#x00E5;rsskiftet &#x201C;disse &#x00E6;ldre Digte i Forening med nogle nye&#x201D;. Han fremh&#x00E6;vede, at omend &#x201C;de fleste deraf vel ere uddelte&#x201D;, var de dog endnu &#x201C;ikke brugte&#x201D;, alts&#x00E5; forslidte (<rs type="title" key="title858">Sander 1808b</rs>, s. 26). Publikum tog vel imod opsamlingen, som f&#x00E5; m&#x00E5;neder efter udkom i anden for&#x00F8;gede udgave, inklusive to aktuelle norske sange: &#x201C;De Norskes og Danskes Kredssang&#x201D; (<rs type="title" key="title859">Sander 1808c</rs>; <rs type="title" key="title862">Sander 1808f</rs>) og en &#x201C;Sommersang&#x201D; (<rs type="title" key="title860">Sander 1808d</rs>).</p>
+            <note type="readMore"><p rend="noIndent">&#x201C;Af det f&#x00F8;rste Oplag ere 480 Exemplarer solgte ved en patriotisk Subscription i det <hi rend="italic">borgerlige Selskab,</hi> og 1000 Exemplarer efter allerh&#x00F8;ieste Befaling uddelte til S&#x00F8;e- og Landetaten.&#x201D; (<rs type="title" key="title858">Sander 1808b</rs>, s. 37).</p></note>
+            <p rend="noIndent">Sidstn&#x00E6;vnte <rs type="title" key="title858">&#x201C;Sommersang&#x201D;</rs> genoptrykte <persName key="pe24">Knud Lyne Rahbek</persName> forrest i det nummer af <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> der ogs&#x00E5; rummer &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D;. <persName key="pe24">Rahbek</persName> gjorde reklame for <persName key="pe767">Sanders</persName> &#x201C;h&#x00E6;derv&#x00E6;rdige Samling F&#x00E6;drelandssange&#x201D; (<rs type="title" key="title873">Rahbek 1808a</rs>, s. 436; se faksimiler af s. <ref type="epiText" target="title873_fax435.pdf">435-438</ref>). &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; blev sigende nok placeret bagest, og Grundtvig fik ingen s&#x00E6;rlig omtale. </p>
+          </div>
+          <div>
+            <head xml:id="docIn8">Udgiverne</head>
+            <p rend="noIndent">Opsamlinger med krigssange udkom fra 1807 i reglen som pjecer eller lommeb&#x00F8;ger (<rs type="title" key="title849">Albertsen 1975</rs>). Udgiverne af disse gjorde sig m&#x00F8;je med at udv&#x00E6;lge publikumsfavoritterne, mens redakt&#x00F8;rer af aviser og tidsskrifter snarere var p&#x00E5; udkig efter digtere, der kunne levere med kort varsel. (Den <ref type="docIn" target="#docIn3">f&#x00F8;romtalte avis <hi rend="italic">
+<rs type="title" key="title845">Budstikken</rs>
+</hi>
+</ref> havde i <persName key="pe382">Enevold Falsens</persName> person en mand, der b&#x00E5;de var redakt&#x00F8;r og digter, hvilket f&#x00F8;rte til en lang r&#x00E6;kke krigssange.) <hi rend="italic">
+<rs type="title" key="title659">Ny Danske Tilskuer</rs>
+</hi> var kendt for sin lyrik, men dens udgiver <persName key="pe24">Knud Lyne Rahbek</persName> havde efter censurforordningen af 1799 haft besv&#x00E6;r med at indsamle kvalificerede bidrag (se <ref type="docOut" target="1808_83_txr.xml#docIn6">tekstredeg&#x00F8;relsens afsnit om indholdet</ref>). </p>
+          </div>
+          <div>
+            <head xml:id="docIn9">Digterne</head>
+            <p rend="noIndent">1807 og 1808 var gode &#x00E5;r for debuterende digtere af patriotisk lyrik. De etablerede digtere var af flere grunde frav&#x00E6;rende. <persName key="pe24">Rahbek</persName> sammenfattede i 1806 de vigtigste &#x00E5;rsager: &#x201C;mange, mange af vore ki&#x00E6;re Gi&#x00E6;stvenner slumre i Graven; vel sandt, at andre, ski&#x00F8;ndt de endnu leve, synes d&#x00F8;de for os; vel sandt, at atter andre, ski&#x00F8;ndt de vedblive at v&#x00E6;re mine varmeste og virksomste Venner, ved anden Virkekreds synes satte ud af Stand&#x201D; til at digte og p&#x00E5; anden vis tage del i det litter&#x00E6;re liv (<rs type="title" key="title872">Rahbek 1806b</rs>, s. 91; se ogs&#x00E5; <rs type="title" key="title871">Rahbek 1806a</rs>, s. 63). Nogle digtere vendte efter krigens udbrud i 1807 tilbage til <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>;</hi> fra Norge bidrog is&#x00E6;r <persName key="pe768">Jens Zetlitz</persName> og
+                <persName key="pe769">Lyder Christian Sagen</persName>. Blandt de nyere digtere var <persName key="pe3">Adam Oehlenschl&#x00E4;ger</persName>
+              <persName key="pe24">Rahbeks</persName> bedste bidragsyder, men <persName key="pe3">Oehlenschl&#x00E4;ger</persName> opholdt sig i Paris sammen med <persName key="pe20">Jens Baggesen</persName>. Begge digtede om krigen derhjemme, men n&#x00E5;r digtene endelig udkom, havde de mistet nyhedens v&#x00E6;rdi. <persName key="pe3">Oehlenschl&#x00E4;gers</persName>
+              <rs type="title" key="title866">&#x201C;Nordmandssang&#x201D;</rs> blev eksempelvis skrevet samtidig med Grundtvigs, men udkom f&#x00F8;rst et halvt &#x00E5;r senere (<rs type="title" key="title866">Oehlenschl&#x00E4;ger 1808: 1809</rs>). Efter sin ankomst til K&#x00F8;benhavn havde Grundtvig dermed et forspring (<rs type="title" key="title865">Svane 2007</rs>; <rs type="title" key="title581">Kuhn 1976</rs>).</p>
+          </div>
+        </div>
+      </div>
+      <div>
+        <head xml:id="docIn10">Grundtvig og krigssangen</head>
+        <p rend="noIndent">Grundtvig kendte til tidens krigssange: 1801 var han frivillig i studenterkorpset og har givetvis h&#x00F8;rt det v&#x00E6;ld af sange, der udkom i K&#x00F8;benhavn efter Slaget p&#x00E5; Rheden; et tre-binds v&#x00E6;rk samlede over 130 sange (<rs type="title" key="title850">Beckstr&#x00F8;m u.&#x00E5;.: 1802</rs>). Grundtvig reagerede dog dengang med humoristisk distance i en parodisk ballade (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 47-50). Tonen blev mere alvorlig, da der fra 1807 p&#x00E5;ny blev k&#x00E6;mpet mod briterne. I maj 1808 fik Grundtvig udgivet et patriotisk digt i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>.</hi> Emnet var <persName key="pe99">Willemoes'</persName> d&#x00F8;d i tr&#x00E6;fningen ved Sj&#x00E6;llands Odde (<rs type="title" key="title669">Grundtvig 1808b</rs>). </p>
+      </div>
+      <div>
+        <head xml:id="docIn11">Metriske oplysninger</head>
+        <p rend="noIndent">Se <ref type="web" target="http://www.grundtvigsv&#x00E6;rker.dk/vejledning/metrik_vej">Vejledning til metriske oplysninger</ref>
+</p>
+        <p rend="noIndent">&#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; f&#x00F8;lger den velkendte barform med to perioder p&#x00E5; hver to verslinjer og en periode over tre verslinjer. Denne s&#x00E5;kaldte Lutherstrofe anvendte Grundtvig her for f&#x00F8;rste gang igennem et helt digt. Strofen blev senere en fast bestanddel i hans digtning (<rs type="title" key="title863">Fafner 2000</rs>, s. 267-270).</p>
+        <p rend="noIndent">8 strofer a 7 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: trok&#x00E6;isk.</p>
+        <p rend="noIndent">Stavelsesantal: 8 7 8 7 8 4 7.</p>
+        <p rend="noIndent">Rimstilling strofe 2-7: ababccx; strofe 1 og 8: ababaax. Skiftevis &#x2642; og &#x2640;.</p>
+      </div>
+      <div>
+        <head xml:id="docIn12">Den manglende melodi</head>
+        <p rend="noIndent">En brugbar og gerne let genkendelig melodi var foruds&#x00E6;tningen for at synge en krigssang i kor. Melodien var derfor med til at afg&#x00F8;re, om en krigssang f&#x00E6;ngede eller forblev p&#x00E5; papiret. <persName key="pe767">Sander</persName> angav, at hans <rs type="title" key="title862">&#x201C;Sommersang&#x201D; (1808e</rs>, s. 433) forrest i h&#x00E6;ftet skulle synges &#x201C;Efter <persName key="pe466">[J.A.P.] Schultz's</persName> Mel.[odi] Vi bringe Dig med Sang og Dands&#x201D; (jf. <rs type="title" key="title868">Vo&#x00DF; &amp; Schulz 1801 [1776]</rs>). &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; angav ingen melodi, og Grundtvig var sig denne mangel bevidst. Han opfordrede i en fodnote en unavngiven komponist til at skrive en melodi, men det var forg&#x00E6;ves (s. 439: &#x201C;Harmoniens store Tolk&#x201D;).</p>
+      </div>
+      <div>
+        <head xml:id="docIn13">Modtagelse</head>
+        <p rend="noIndent">&#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; vakte hverken p&#x00E5; kortere eller l&#x00E6;ngere sigt nogen genklang. I l&#x00F8;bet af for&#x00E5;ret og sommeren 1808 udkom der talrige krigssange af og til nordm&#x00E6;nd. De popul&#x00E6;re blev genoptrykt i aviser og separate samlinger. &#x201C;Krigssang for Nordm&#x00E6;nd&#x201D; findes hverken her eller blandt de sange af Grundtvig om Norge, som holdt deres indtog i norske viseb&#x00F8;ger fra midten af 1800-tallet. Grundtvig havde i sin egen levetid st&#x00F8;rre succes med digte om enkelte krigshelte, navnlig <persName key="pe149">prins Christian August</persName> og <persName key="pe99">Peter Willemoes</persName> (<rs type="title" key="title1522">Grundtvig 1810a</rs> og <rs type="title" key="title793">1810b</rs>).</p>
+      </div>
+      <div type="litList">
+        <head xml:id="docIn14">Anvendt litteratur</head>
+        <list type="litList">
+              <item>Albeck, Gustav (1955) <hi rend="italic">
+<rs type="title" key="title354">Omkring Grundtvigs Digtsamlinger. Studier i Grundtvigs lyriske Forfatterskab 1808-16</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Albeck, Gustav (1985) &#x201C;Den unge Grundtvig og Norge&#x201D; i <hi rend="italic">
+<rs type="title" key="title337">Grundtvig-Studier</rs>,</hi> s. 47-66. K&#x00F8;benhavn</item>
+              <item>Albertsen, Leif Ludwig (1975) <hi rend="italic">
+<rs type="title" key="title849">Sang og slagkraft. Med et udblik over nationallyrikken under Englandskrigene</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Albertsen, Leif Ludwig (1978) <hi rend="italic">
+<rs type="title" key="title1521">Lyrik der synges</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Arnholtz, Arthur (1952) &#x201C;Grundtvigs salmer og deres melodier&#x201D; i <hi rend="italic">
+<rs type="title" key="title337">Grundtvig-Studier</rs>,</hi> s. 7-38. K&#x00F8;benhavn</item>
+              <item>Beckstr&#x00F8;m, Daniel, udg. (u.&#x00E5;.: 1802) <rs type="title" key="title850">
+<hi rend="italic">H&#x00E6;dersminde for 2. April eller Sange og Digte, som ere udkomne i Anledning af Krigen mellem England og Danmark</hi> 1-3</rs>. K&#x00F8;benhavn</item>
+              <item>
+<hi rend="italic">
+<rs type="title" key="title845">Budstikken</rs>
+</hi> (1808), 1. &#x00E5;rgang. K&#x00F8;benhavn [1. udg. trykt Christiania 1808]</item>
+              <item>Christian August (1808) [Beretning dateret Blakjer 22. april] i <hi rend="italic">
+<rs type="title" key="title845">Budstikken</rs>,</hi> nr. 5-6, Christiania 23.-24. april (genoptrykt 21. maj), s. 18-21. K&#x00F8;benhavn</item>
+              <item>Conrad, Flemming (1991) &#x201C;Konkurrencen 1818 om en dansk nationalsang&#x201D; i <hi rend="italic">
+<rs type="title" key="title462">Dansk Identitetshistorie</rs>
+</hi> 1-4, udg. af Ole Feldb&#x00E6;k, bind 2: <hi rend="italic">Et yndigt land 1789-1848,</hi> s. 150-252. K&#x00F8;benhavn</item>
+              <item>Damsholt, Tine (2000) <hi rend="italic">
+<rs type="title" key="title546">F&#x00E6;drelandsk&#x00E6;rlighed og borgerdyd. Patriotisk diskurs og milit&#x00E6;re reformer i Danmark i sidste del af 1700-tallet</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Dons, Povel (1808) &#x201C;Til Hr. N. F. S. Grundtvig i Anledning af hans Digt: <hi rend="italic">Maskeradeballet i Danmark 1808</hi>&#x201D; i <hi rend="italic">
+<rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+</hi> 28. maj, nr. 66, sp. 1039-1041. K&#x00F8;benhavn</item>
+              <item>Ewald, Johannes (1916) &#x201C;Kong Christjan stoed ved h&#x00F8;ien Mast&#x201D;, s. 187 f. i <rs type="title" key="title877">
+<hi rend="italic">Johannes Ewalds samlede Skrifter efter Tryk og Haandskrifter</hi> 1-6</rs> (1914-1924), udg. af Hans Brix &amp; Victor Kuhr, bind 3, s. 146-220: <hi rend="italic">
+<rs type="title" key="title879">Fiskerne. Et Syngespil i tre Handlinger. En Priisdigt</rs>
+</hi> [1779]. K&#x00F8;benhavn. Anvendt i den digitaliserede udgave <ref type="litListWeb" target="http://www.adl.dk/adl_pub/pg/cv/ShowPgImg.xsql?nnoc=adl_pub&amp;p_udg_id=202&amp;p_sidenr=187">http://www.adl.dk/adl_pub/pg/cv/ShowPgImg.xsql?nnoc=adl_pub&amp;p_udg_id=202&amp;p_sidenr=187</ref>
+</item>
+              <item>Fafner, J&#x00F8;rgen (1994-2000) <hi rend="italic">
+<rs type="title" key="title547">Dansk vershistorie</rs>
+</hi> 1-2, bind 2: <hi rend="italic">Fra romantik til modernisme.</hi> K&#x00F8;benhavn</item>
+              <item>Fjeld, Sindre (2010) <hi rend="italic">
+<rs type="title" key="title846">Budstikken &#x2013; En propagandaavis? En innholdsanalyse av regjeringskommisjonens offentlige ytringer i Budstikken 1808. Masteropgave i historie</rs>,</hi> udg. af Institutt for arkeologi, konservering og historie, Oslo Universitet <ref type="litListWeb" target="http://www.duo.uio.no/publ/IAKH/2010/102478/Masteroppgaven_til_Sindre_Fjeld.pdf">http://www.duo.uio.no/publ/IAKH/2010/102478/Masteroppgaven_til_Sindre_Fjeld.pdf</ref>
+</item>
+              <item>Glenth&#x00F8;j, Rasmus (2008) <hi rend="italic">
+<rs type="title" key="title848">En moderne nations f&#x00F8;dsel. Norsk national identifikation hos embedsm&#x00E6;nd og borgere 1807-1820</rs>.</hi> Odense</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808a) <hi rend="italic">
+<rs type="title" key="title128">Maskeradeballet i Dannemark 1808. Et Syn</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1808b) &#x201C;Villemoes&#x201D; i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> 26. maj, nr. 43-44, s. 349-352. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1810a) <hi rend="italic">
+<rs type="title" key="title1522">S&#x00F8;rgekvad ved Prinds Kristians D&#x00F8;d</rs>.</hi> K&#x00F8;benhavn [udkom ogs&#x00E5; i Christiania]</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1810b) &#x201C;Ki&#x00E6;kheds Erindring, Willemoes. Kommer hid, I Piger smaa&#x201D; i <rs type="title" key="title795">
+<hi rend="italic">Danske og Norske historiske Mindesange, samlede og med oplysende Indledninger</hi> 1-2</rs> udg. af Knud Lyne Rahbek, bind 1, s. 166-172. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1877) <rs type="title" key="title696">
+<hi rend="italic">Mands Minde 1788-1838. Foredrag over det sidste halve Aarhundredes Historie, holdte 1838</hi>
+</rs> udg. af Svend Grundtvig. K&#x00F8;benhavn</item>
+              <item>Grundtvig, Nicolai Frederik Severin (1924-1926) <rs type="title" key="title7">
+<hi rend="italic">Breve fra og til N.F.S. Grundtvig</hi> 1-2</rs> udg. af Georg Christensen &amp; Stener Grundtvig, bind 1: <hi rend="italic">(1807-1820).</hi> K&#x00F8;benhavn</item>
+              <item>Heiberg, Johan Ludvig (1932) &#x201C;Elverh&#x00F8;i. Skuespil i 5 Acter. F&#x00F8;rste Gang opf&#x00F8;rt paa det Kongelige Theater, den 6te November 1828, i Anledning af Deres Kongelige H&#x00F8;iheder Prinds Frederik Carl Christians og Prindsesse Wilhelmine Maries h&#x00F8;ie Form&#x00E6;ling&#x201D; i <rs type="title" key="title1518">
+<hi rend="italic">Poetiske Skrifter </hi>1-3</rs> (1931-1932) udg. af Carl S. Petersen, bind 2, s. 1-125 [1828]. K&#x00F8;benhavn</item>
+              <item>Jensen, Niels Martin (1975) &#x201C;Et sanghistorisk problem. Gammelt og nyt om Kong Christian stod ved h&#x00F8;jen Mast&#x201D; i <hi rend="italic">
+<rs type="title" key="title836">Fund og Forskning i Det Kongelige Biblioteks samlinger</rs>,</hi> 12, s. 67-84. K&#x00F8;benhavn. Anvendt i den digitaliserede udgave <ref type="litListWeb" target="http://img.kb.dk/tidsskriftdk/pdf/ffo/ffo_1965_12-PDF/ffo_1965_12_100848.pdf">http://img.kb.dk/tidsskriftdk/pdf/ffo/ffo_1965_12-PDF/ffo_1965_12_100848.pdf</ref>
+</item>
+              <item>Kuhn, Hans (1976) &#x201C;Der Dichter in der nationalen Krise. Oehlenschl&#x00E4;ger, Grundtvig und die Ereignisse von 1807/08&#x201D; i <hi rend="italic">
+<rs type="title" key="title580">Studien zur d&#x00E4;nischen Literatur des 19. Jahrhunderts</rs>
+</hi> udg. af Oskar Bandle, s. 47-78. Basel</item>
+              <item>Kuhn, Hans (1990) <hi rend="italic">
+<rs key="title1523" type="title">Defining a nation in song. Danish patriotic songs in songbooks of the period 1832-1870</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Liebe, P.I. &amp; E. Borgstr&#x00F8;m (1981) <hi rend="italic">
+<rs type="title" key="title851">Dansk Krigshistorie i det nittende &#x00E5;rhundrede 1800-1899</rs>.</hi> U.st.: K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14">
+<hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</hi> 1-2</rs>. K&#x00F8;benhavn</item>
+              <item>Lundgreen-Nielsen, Flemming (2008) &#x201C;Concepts of freedom reflected in Danish literature 1754-1802&#x201D; i Knud Haakonssen &amp; Henrik Horstb&#x00F8;ll, udg. <hi rend="italic">
+<rs type="title" key="title852">Northern antiquities and national identities. Perceptions of Denmark and the North in the eighteenth century. Symposium held in Copenhagen, August 2005</rs>,</hi> s. 251-276, 361-364. K&#x00F8;benhavn</item>
+              <item>Oehlenschl&#x00E4;ger, Adam (1808: 1809) &#x201C;Nordmandssang&#x201D; i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> nr. 104, december (: januar 1809), s. 825-827. K&#x00F8;benhavn</item>
+              <item>Ottesen, Morten Nordhagen (2009) &#x201C;Bondebev&#x00E6;pning i norske grenseomr&#x00E5;der 1807-1814&#x201D; i B&#x00E5;rd Frydenlund &amp; Rasmus Glenth&#x00F8;j, udg. <hi rend="italic">
+<rs type="title" key="title854">1807 og Danmark-Norge. P&#x00E5; vei mot atskillelsen</rs>,</hi> s. 123-143. U. st.: Oslo</item>
+              <item>Nyg&#x00E5;rd, Frederik (1880) <hi rend="italic">
+<rs type="title" key="title748">Det Schouboeske Institut og N.F.S. Grundtvigs L&#x00E6;rervirksomhed sammesteds. Et Tidsbillede</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>
+<rs type="title" key="title769">
+<hi rend="italic">Meddelelser fra Krigsarkiverne</hi> 1-9</rs> (1883-1902) udg. af Generalstaben, bind 3 (1888) udg. af Carl Th. S&#x00F8;rensen. K&#x00F8;benhavn</item>
+              <item>Rahbek, Knud Lyne (1806a) &#x201C;Brev fra Sprogsmag, Menneskesands, Vid, Grundighed, og F&#x00F8;lelse&#x201D; [overskrift fra bindoversigten] i <rs type="title" key="title160">
+<hi rend="italic">Den danske Tilskuer</hi>
+</rs> nr. 8, 13. februar, s. 57-63. K&#x00F8;benhavn</item>
+              <item>Rahbek, Knud Lyne (1806b) &#x201C;Brev fra Almeenaand&#x201D; [overskrift fra bindoversigten] i <rs type="title" key="title160">
+<hi rend="italic">Den danske Tilskuer</hi>
+</rs> nr. 12, 24. februar, s. 89-96. K&#x00F8;benhavn</item>
+              <item>Rahbek, Knud Lyne (1808a) &#x201C;Noget om Felttoget i Norge&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 55, 18. juli, s. 435-438. K&#x00F8;benhavn</item>
+              <item>Rahbek, Knud Lyne (1808b: 1809) &#x201C;Tilskuerens Afsked&#x201D; [overskrift fra bindoversigten] i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>
+</hi> nr. 104, december (: januar 1809), s. 827-832. K&#x00F8;benhavn</item>
+              <item>Ringvej, Mona (2009) &#x201D;K&#x00F8;benhavns nyhetsmonopol ved veis ende. Christianias f&#x00F8;rste nyhetsavis <hi rend="italic">Efterretninger og Opmuntringer angaaende de n&#x00E6;rv&#x00E6;rende Krigsbegivenheder</hi> blir til&#x201D; i B&#x00E5;rd Frydenlund &amp; Rasmus Glenth&#x00F8;j, udg. <hi rend="italic">
+<rs type="title" key="title854">1807 og Danmark-Norge. P&#x00E5; vei mot atskillelsen</rs>,</hi> s. 49-68. U. st.: Oslo</item>
+              <item>R&#x00E6;der, Jacob Thode (1845-1852) <rs type="title" key="title719">
+<hi rend="italic">Danmarks Krigs- og Politiske Historie fra Krigens Udbrud 1807 indtil Freden til J&#x00F6;nkj&#x00F6;ping den 10de December 1808</hi> 1-3</rs>, bind 2 (1847). K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808a) <hi rend="italic">
+<rs type="title" key="title857">Nye Krigssange for 1807 og 1808</rs>
+</hi>. K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808b) <hi rend="italic">
+<rs type="title" key="title858">Nye Krigssange for 1807 og 1808. Andet for&#x00F8;gede Oplag</rs>
+</hi> [1808]. K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808c) &#x201C;De Norskes og Danskes Kredssang&#x201D; i <hi rend="italic">
+<rs type="title" key="title858">Nye Krigssange for 1807 og 1808. Andet for&#x00F8;gede Oplag</rs>
+</hi> [1808], s. 45-48. K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808d) &#x201C;Sommersang&#x201D; i <hi rend="italic">
+<rs type="title" key="title858">Nye Krigssange for 1807 og 1808. Andet for&#x00F8;gede Oplag</rs>
+</hi> [1808], s. 42-44. K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808e) &#x201C;Sommersang&#x201D; i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> nr. 55, 18. juli, s. 433-435. K&#x00F8;benhavn</item>
+              <item>Sander, L.C. (1808f) &#x201C;De Norskes og Danskes Kredssang&#x201D; i <hi rend="italic">
+<rs type="title" key="title659">Ny danske Tilskuer</rs>,</hi> nr. 60, 4. august, s. 479 f. K&#x00F8;benhavn</item>
+              <item>Svane, Marie-Louise (2007) &#x201C;Bombernes nedslag i Paris&#x201D; i Rasmus Glenth&#x00F8;j &amp; Jens Rahbek Rasmussen, udg. <hi rend="italic">
+<rs type="title" key="title527">Det venskabelige bombardement. K&#x00F8;benhavn 1807 som historisk begivenhed og national myte</rs>.</hi> K&#x00F8;benhavn, s. 179-187</item>
+              <item>Vig, Ole, udg. (1854) <hi rend="italic">
+<rs type="title" key="title869">Sange og Rim for det norske Folk. Samlet og med Anm&#x00E6;rkninger ledsaget</rs>.</hi> Christiania. Ogs&#x00E5; tilg&#x00E6;ngelig digitalt <ref type="litListWeb" target="http://urn.nb.no/URN:NBN:no-nb_digibok_2008111903017">http://urn.nb.no/URN:NBN:no-nb_digibok_2008111903017</ref>
+</item>
+              <item>Vo&#x00DF;, Johann Heinrich &amp; J.A.P. Schulz, komponist (1801) &#x201C;Wir bringen mit Gesang und Tanz / Dir diesen blanken &#x00C4;hrenkranz&#x201D; [Lied von der Freyheit], s. 90-93 i Johann Heinrich Vo&#x00DF; (1801) <hi rend="italic">
+<rs type="title" key="title867">Idyllen</rs>,</hi> s. 72-98: <hi rend="italic">
+<rs type="title" key="title843">V. Die Freigelassenen</rs>
+</hi> [1776]. K&#x00F6;nigsberg</item>
+            </list>
+      </div>
+        <div>
+          <head xml:id="docIn16">Anvendte websider</head>
+          <list type="webList">
+            <item n="2012-06-21" target="http://www.duo.uio.no/publ/IAKH/2010/102478/Masteroppgaven_til_Sindre_Fjeld.pdf">http://www.duo.uio.no/publ/IAKH/2010/102478/Masteroppgaven_til_Sindre_Fjeld.pdf</item>
+            <item n="2012-06-27" target="http://img.kb.dk/tidsskriftdk/pdf/ffo/ffo_1965_12-PDF/ffo_1965_12_100848.pdf">http://img.kb.dk/tidsskriftdk/pdf/ffo/ffo_1965_12-PDF/ffo_1965_12_100848.pdf</item>
+            <item n="2012-06-29" target="http://www.adl.dk/adl_pub/pg/cv/ShowPgImg.xsql?nnoc=adl_pub&amp;p_udg_id=202&amp;p_sidenr=187">http://www.adl.dk/adl_pub/pg/cv/ShowPgImg.xsql?nnoc=adl_pub&amp;p_udg_id=202&amp;p_sidenr=187</item>
+            <item n="2012-06-29" target="http://urn.nb.no/URN:NBN:no-nb_digibok_2008111903017">http://urn.nb.no/URN:NBN:no-nb_digibok_2008111903017</item>
+            </list>
+        </div>
+      
+    </body>
+</text>
+</TEI>

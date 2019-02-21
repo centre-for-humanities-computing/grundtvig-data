@@ -1,0 +1,416 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comSingles.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?><!--<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comEditXSLT.xsl"?>
+<?oxygen type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Hvad kommer der ud af al den Vind med Saxo og Snorro?</title>
+            <title rend="shortForm">Hvad kom der ud af al den Vind med Saxo og Snorro?</title>
+            <author>Vibeke A. Pedersen</author>
+            <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+            <editor role="editor3">Steen Tullberg</editor>
+            <editor role="editor1">Kirsten Vad</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.11</idno>
+               <idno type="technic">1.11.1</idno>
+            </edition>
+         </editionStmt>
+         <extent>20 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2017-11-01">www.grundtvigsværker.dk, version 1.11, 1. november 2017</date>
+         </publicationStmt>
+         <notesStmt>
+            <note target="1818_324_txt.xml" type="txt">Læsetekst</note>
+            <note target="1818_324_com.xml" xml:id="thisFile" type="com">Punktkommentar</note>
+         </notesStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+            <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. Pædagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change xml:id="KV" who="KV" when="2017-03-01">comFIL</change>
+         <change xml:id="VAP" who="VAP" when="2017-03-01">påbegyndt udfyldning. 42 mangler ud af 53, heraf 13 om krønikerne. To er svære, 10 er ordsprog eller talemåder. Oprettet com54-56 (som ikke var segopmærket i første omgang)</change>
+         <change who="VAP" when="2017-03-02">slettet 16, 31, 35 (delvis dobbeltforekomster). Indføjet i litteraturliste</change>
+         <change who="VAP" when="2017-07-27">oprettet 57-62</change>
+         <change who="VAP" when="2017-08-16">smårettelser</change>
+         <change who="VAP" when="2017-08-24">påbegyndt rettelser efter Kirsten. Oprettet com 63/64-71 genoprettet 35 med nyt  indhold, ændret minimalt i com med GR's oversættelser efter aftale med Kirsten, men uden corr</change>
+         <change who="VAP" when="2017-08-28">fortsat rettelser efter Kirsten</change>
+         <change who="VAP" when="2017-08-29">kontrol af rettelser efter Kirsten</change>
+         <change who="VAP" when="2017-09-05">rettelser efter FLN. oprettet 72-79</change>
+         <change who="VAP" when="2017-09-12">rettelser efter Kirstens gennemsyn af FLN-rettelser. Slettet 75 igen</change>
+         <change who="VAP" when="2017-10-04">rettelser efter Steen. Oprettet com81-96 og genoprettet 75 med nyt indhold</change>
+         <change who="VAP" when="2017-10-05">kontrol af rettelser efter Steen</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="com">
+      <body>
+         <note xml:id="com1"><!--lemma: Krønikernes-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+        
+         <note xml:id="com2"  changes="corr"><!--lemma: Drenge-Pibe-->
+            <p>lille pibe; overført: spinkelt fremsat kritik.<!--stedfortræder af ringe betydning???; http://www.dba.dk/pibe-helt-ny-drengepibe/id-1034059194/--></p>
+         </note>
+         <note xml:id="com3"><!--lemma: beopagtet-->
+            <p>iagttaget.</p>
+         </note>
+         <note xml:id="com4"><!--lemma: Barberisserne-->
+            <p>eksemplarer af planten berberis.</p>
+            <note type="readMore"><p>Nytteværdien af denne plante blev diskuteret i datidens aviser, se fx <hi rend="italic"><rs type="title" key="title468">Fyens Stifts Kongelig allene privilegerede Adresse-Avis og Avertissements-Tidende</rs>,</hi> 2. september 1816, s. 470. <!--(http://www2.statsbiblioteket.dk/mediestream/avis/record/doms_aviser_page%3Auuid%3Ad8d15110-fdbc-4af1-961a-dd2f9c7571ab/query/Barberisser/page/doms_aviser_page%3Auuid%3A8cb7ae0d-59be-4272-97d4-2b52d510ad30)--></p></note>
+         </note>
+         <note xml:id="com57"><!--lemma: -->
+            <p>dvs. nytår.</p>
+         </note>
+         <note xml:id="com72" changes="corr"><!--lemma: -->
+            <p>ordsprog; jf. <rs key="title93" type="title">Mau 1879</rs>, bind 2, s. 451, efter <rs key="Joh 20,24-29" type="bible">Joh 20,24-29</rs> om den vantro <persName key="pe780">Thomas</persName>.</p>
+         </note>
+         <note xml:id="com5"><!--lemma: oplægge-->
+            <p>udgive, forlægge.</p>
+         </note>
+         <note xml:id="com6" ><!--lemma: Krønikerne-->
+            <p><persName key="pe237">Saxos</persName> <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+               key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com7"><!--lemma: Oversættelser-->
+            <p>her: af <persName key="pe237">Saxos</persName>
+               <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+                  key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com8"><!--lemma: Aar-Tylvt-->
+            <p>tidsrum af tolv år.</p>
+         </note>
+         <note xml:id="com70" ><!--lemma: Krønikerne-->
+            <p><persName key="pe237">Saxos</persName> <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+               key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com58"><!--lemma: -->
+            <p>mennesker, der blot bladrer i bøger eller skimmer dem.</p>
+         </note>
+         <note xml:id="com9" ><!--lemma: Krønikerne-->
+            <p><persName key="pe237">Saxos</persName> <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+               key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com94" changes="new"><!--lemma: -->
+            <p>i forhold til hvordan.</p>
+         </note>
+         <note xml:id="com81" changes="new"><!--lemma: -->
+            <p>grundlaget.</p>
+         </note>
+         <note xml:id="com73" ><!--lemma: -->
+            <p>oplyst.</p>
+         </note>
+         <note xml:id="com63"  ><!--lemma: -->
+            <p>billedet eller fremstillingen af forfædrene.</p>
+         </note>
+         <note xml:id="com64" ><!--lemma: -->
+            <p>uden tvivl.</p>
+         </note>
+         <note xml:id="com66" ><!--lemma: -->
+            <p>forfædrene.</p>
+         </note>
+         <note xml:id="com10"><!--lemma: saa-->
+            <p>således.</p>
+           </note>
+         <note xml:id="com82" changes="new"><!--lemma: -->
+            <p>kraftig, eftertrykkelig.</p>
+         </note>
+         <note xml:id="com83" changes="new"><!--lemma: -->
+            <p>forfædrenes ånd.</p>
+         </note>
+         <note xml:id="com84" changes="new"><!--lemma: -->
+            <p>tillempe, tilpasse.</p>
+         </note>
+         <note xml:id="com11"><!--lemma: nye Lapper paa Gamle Skoe-->
+            <p>talemåde, variant af et udtryk fra <hi rend="italic"><rs type="title" key="title787">Det nye Testamente</rs></hi>: &#x201C;Ingen sætter en lap af ukrympet stof på en gammel kappe; for så river lappen den i stykker, og hullet bliver værre. Man fylder heller ikke ung vin på gamle lædersække; for så sprænges sækkene, og vinen går til spilde, og sækkene ødelægges. Nej, man fylder ung vin på nye sække, så bevares begge dele&#x201D;, jf. <rs type="bible" key="Matt 9,16-17">Matt 9,16-17</rs>.</p>
+         </note>
+         <note xml:id="com74" ><!--lemma: -->
+            <p>gløde, stråle.</p>
+         </note>
+         <note xml:id="com12" changes="corr" ><!--lemma: Veien lang gjør liden Byrde trang-->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 1.112. og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.569.</p>
+         </note>
+         <note xml:id="com13"><!--lemma: saa-->
+            <p>sådan, således.</p>          
+         </note>
+         <note xml:id="com71" changes="corr" ><!--lemma: -->
+            <p>ordsprog, jf. <rs key="title3173" type="title">Grundtvig 1845</rs>, nr. 959, og <rs key="title93" type="title">Mau 1879</rs>, nr. 7.248.</p>
+         </note>
+         <note xml:id="com14"><!--lemma: Sammenskud-->
+            <p>indskud, tilskud.</p>
+         </note>
+       <note xml:id="com85" changes="new"><!--lemma: -->
+          <p>sagen.</p>
+       </note>
+         <note xml:id="com15"><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+        <note xml:id="com16" changes="corr"><!--lemma: skikkelig-->
+            <p>passende; pålidelig.</p>
+         </note>
+         <note xml:id="com59"><!--lemma: -->
+            <p>være forlægger for; udgive.</p>
+         </note>
+         <note xml:id="com67" ><!--lemma: -->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com86" changes="new"><!--lemma: -->
+            <p>sagen.</p>
+         </note>
+        <note xml:id="com75" changes="new" ><!--lemma: -->
+            <p>hverken.</p>
+         </note>
+         <note xml:id="com17" ><!--lemma: absit invidia verbo-->
+            <p>lat., må misundelse mangle i mine ord (overs. GV).</p>
+         </note>
+         <note xml:id="com18"><!--lemma: Sammenskud-->
+            <p>indsamling.</p>
+         </note>
+         <note xml:id="com19"><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com60"><!--lemma: -->
+            <p>48.</p>
+         </note>
+         <note xml:id="com20" changes="corr"><!--lemma: kjøbe Katten i Sækken-->
+            <p>ordsprog, jf.  <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 531, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.431.</p>
+         </note>
+         <note xml:id="com21" ><!--lemma: smurde dem om Munden med Syltetøi-->
+            <p>ordsprog, variant om bestikkelse af naive: &#x201C;Gamle Folk og Børn plejer man at <hi rend="spaced">smøre</hi> om Munden med Sirup&#x201D;, jf. <rs key="title93" type="title">Mau 1879</rs>, bind 2, s. 313, og <rs key="title93" type="title">Grundtvig 1845</rs>, nr. 2.440.</p>
+         </note>
+         <note xml:id="com76" changes="corr" ><!--lemma: -->
+            <p>slåen til lyd for, påkaldelsen (som ved kirkeklokker).</p>
+         </note>
+         <note xml:id="com22"  ><!--lemma: naar Dørren er lukt, og Lyset slukt, og den forglemt, som ude er lukt-->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 3.118, og <rs key="title93" type="title">Grundtvig 1845</rs>, nr. 933.</p><note type="readMore"><p><persName key="pe4492">Matthias Moths</persName> utrykte, men digitaliserede <rs type="title" key="title5264">ordbog</rs> har under opslagsordet &#x2018;glemt&#x2019;: &#x201C;Nâr dørren er stengt, og lyset er slukt, sâ er den glemt som ude er lukt. dvs. mand sauner ei den, som er borte, eller mand lier ei efter [dvs. venter ikke på] den, som kommer ei i rette tide&#x201D; (<rs type="title" key="title5364">manuskript på Det Kongelige Bibliotek i København, GkS 774,1 folio</rs>, se <ref type="web" target="http://mothsordbog.dk/">http://mothsordbog.dk/</ref>)</p></note>
+         </note>
+         <note xml:id="com77" ><!--lemma: -->
+            <p>langsommelighed; karakteristik af et projekt, der bevæger sig med sneglefart.</p>
+         </note>
+         <note xml:id="com87" changes="new"><!--lemma: -->
+            <p>slet ikke, på ingen måde.</p>
+         </note>
+         <note xml:id="com23"><!--lemma: Øie-Syn-->
+            <p>evne til at se.</p>
+         </note>
+         <note xml:id="com24"><!--lemma: Dansken-->
+         <p>danskerne.</p></note>
+         
+         <note xml:id="com25"><!--lemma: Normanden-->
+            <p>nordmændene.</p>
+         </note>
+         <note xml:id="com88" changes="new"><!--lemma: -->
+            <p>i overmål.</p>
+         </note>
+         <note xml:id="com26"><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com27"><!--lemma: Krøniken-->              
+           <p>historien, både som et skriftligt værk og som indbegrebet af de fortidige begivenheder.
+</p>  </note>
+         <note xml:id="com78" ><!--lemma: -->
+            <p>at give en nogen eller noget god dag betyder at være ligeglad med.</p>
+         </note>
+         <note xml:id="com28" ><!--lemma: Krøniken-->
+            <p>her nok begge Grundtvigs overs&#x00E6;ttelser: <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823). </p>
+         </note>
+         <note xml:id="com29"><!--lemma: saa-->
+           <p>således.</p>
+          </note>
+         <note xml:id="com30" ><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823), <ref type="docOut" target="1816_294_intro.xml#docIn9">se indledningen, afsnittet om de færdige udgaver</ref>.</p>
+         </note>
+       <!--  <note xml:id="com31"><!-\-lemma: Krønikerne-\->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>-->
+         <note xml:id="com32"><!--lemma: Slumpen-->
+            <p>resten<!-- ODS 3.1 -->.</p>
+         </note>
+         <note xml:id="com89"  changes="new"><!--lemma: Krønikerne-->
+            <p><persName key="pe237">Saxos</persName> <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+               key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com79" ><!--lemma: -->
+            <p>det er ikke lykkedes at finde ud af, hvem eller hvad Grundtvig hentyder til her.</p>
+         </note>
+         <note xml:id="com33"  ><!--lemma: afseet-->
+            <p>ladt ude af betragtning; blevet færdig med at blive betragtet.<!-- ODS --></p>
+         </note>
+         <note xml:id="com34"><!--lemma: Krønikernes-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com54"><!--lemma: -->
+            <p>person, der ejer en papirmølle; papirfremstiller.</p>
+         </note>
+         <note xml:id="com55"><!--lemma: -->
+            <p>papirarket. Et ark giver 8 blade i oktavformat, dvs. 16 sider.</p>
+         </note>
+         <note xml:id="com56"><!--lemma: -->
+            <p>bundt af papirark, specielt om 10 ris papir (ofte svarende til 20 bøger).<!-- ODS under balle og ris --></p>
+         </note>
+         <note xml:id="com35" ><!--lemma: det er dyre Tider, man lever i!-->
+            <p>ordsprog, jf. <rs key="title3173" type="title">Grundtvig 1875</rs>, nr. 478.</p>
+         </note>
+         <note xml:id="com68" ><!--lemma: -->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com90" changes="new"><!--lemma: -->
+            <p>sagen.</p>
+         </note>
+         <note xml:id="com91" changes="new"><!--lemma: -->
+            <p>i stort antal.</p>
+         </note>
+         <note xml:id="com69" ><!--lemma: !-->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 7.595.</p>
+         </note>
+         <note xml:id="com36"><!--lemma: Kjøbstæd-->
+            <p>dvs. købstad.</p>
+         </note>
+         <note xml:id="com92" changes="new"><!--lemma: -->
+            <p>undtagen.</p>
+         </note>
+         <note xml:id="com37" changes="corr"><!--lemma: Hælvden-->
+          <p>dvs. hælvten, halvdelen.</p>
+         </note>
+         <note xml:id="com65" ><!--lemma: -->
+            <p>papirarket. Et ark giver 8 blade i oktavformat, dvs. 16 sider.</p>
+         </note>
+         <note xml:id="com38"><!--lemma: ligefrem-->           
+            <p>klart, indlysende.</p>
+              </note>
+         <note xml:id="com93" changes="new"><!--lemma: -->
+            <p>skal eller bør sige (optativ).</p>
+         </note>
+         <note xml:id="com39" ><!--lemma: Proces-->
+            <p>retssag, sagsanlæg, evt. om tilbagebetaling, hvis krønikerne ikke bliver til noget.</p>
+         </note>
+         <note xml:id="com40"><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com41" ><!--lemma:  haardt Høe at trække-->
+            <p>talemåde, variant af <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 385: &#x201C;Det er <hi rend="spaced">haardt</hi> Hø at drage&#x201D;, dvs. noget er vanskeligt.</p>
+         </note>
+         <note xml:id="com42" changes="corr"><!--lemma: lidt bedre hen-->
+            <p>senere hen.<!-- ODS 6.2 --></p>
+         </note>
+         <note xml:id="com43"><!--lemma: forbunden-->
+            <p>forpligtede.</p>
+         </note>
+         <note xml:id="com44"><!--lemma: overstridt-->
+            <p>perioden er overstået; tiden er gået.</p>
+         </note>
+         <note xml:id="com80" changes="corr" ><!--lemma: -->
+            <p>sigter til Grundtvig selv, der på dette tidstpunkt beklædte embedet som kapellan.</p>
+         </note>
+         <note xml:id="com45"><!--lemma: Krøniker-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com95" changes="new"><!--lemma: -->
+            <p>synes, se ud til.</p>
+         </note>
+         <note xml:id="com46"><!--lemma: meende-->
+            <p>dvs. mente.</p>
+         </note>
+         <note xml:id="com47"><!--lemma: min Sanden-->
+            <p>dvs. minsandten.</p>
+         </note>
+      <!--   <note xml:id="com61"><!-\-lemma: -\->
+            <p>kritikken.</p>
+         </note>-->
+       
+         <note xml:id="com48" ><!--lemma: Døgn-Frygt-->
+            <p>frygt for dagen og vejen, for at mangle det daglige brød; evt. en allusion til <rs type="bible"  key="Matt 6,26" >Matt 6,26</rs>.</p>
+         </note>
+         <note xml:id="com49"><!--lemma: saa-->
+         <p>således.</p>   </note>
+         <note xml:id="com62"><!--lemma: -->
+            <p>kan betragte (optativ).</p>
+         </note>
+         <note xml:id="com96" changes="new"><!--lemma: -->
+            <p>formentlig <persName key="pe237">Saxos</persName> <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og <persName
+               key="pe49">Snorres</persName>
+               <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>.</hi></p>
+         </note>
+         <note xml:id="com50"><!--lemma: Krønikerne-->
+            <p>Grundtvigs overs&#x00E6;ttelser, <hi rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) og <hi rend="italic"><rs key="title153" type="title">Danmarks Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823).</p>
+         </note>
+         <note xml:id="com51"><!--lemma: Islandsken-->
+            <p>det (gamle) islandske sprog.</p>
+         </note>
+         <note xml:id="com52"  changes="corr"><!--lemma: Sællandsfar-->
+            <p>sjællænder (arkaiserende); egl. en person, der farer (dvs. hører hjemme) på Sjælland. Grundtvig var født i Udby på Sydsjælland.</p></note>
+          <note xml:id="com97" changes="new"><!--lemma: -->
+             <p>hvad enten.</p>
+          </note>
+         
+         <note xml:id="com53"><!--lemma: Haandrækning-->
+            <p>dvs. håndsrækning.</p>
+         </note>
+         <div type="litList"><head xml:id="docIn1">Anvendt litteratur</head>
+            <list type="litList">
+               <item>Grundtvig, N.F.S. overs. (1818-1823a), se <rs key="title153" type="title">Saxo Grammaticus (1818-1823)</rs>, bind 1-3. København</item>
+               <item>Grundtvig, N.F.S. overs. (1818-1823b), se <rs type="title" key="title697">Snorre Sturluson (1818-1823)</rs>, bind 1-3. København</item>            
+               <item>Grundtvig, N.F.S. (1845) <hi rend="italic"><rs key="title96" type="title">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</rs>.</hi> København</item>
+               <item>Grundtvig, N.F.S. (1875) <hi rend="italic"><rs key="title3173" type="title">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</rs>. København</hi> København</item>               
+               <item>Mau, E.<!--Jens Christian Edvard Theodor--> udg. (1879) <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs>,</hi> bind 1-2. København</item> 
+               <item><span type="proofread"/>Saxo Grammaticus (1575) <rs type="title" key="title178"><hi rend="italic">Den Danske Krønicke som Saxo Grammaticvs screff, halfffierde hundrede Aar forleden: Nu først aff Latinen vdsæt, flittelige offuerseet oc forbedret</hi></rs>, overs. Anders Sørensen Vedel. København</item>
+               <item><span type="proofread"/>Saxo Grammaticus (1818-1823) <rs type="title" key="title153"><hi rend="italic">Danmarks Krønike af Saxo Grammaticus</hi></rs>, overs. af N.F.S. Grundtvig, bind 1-3. København</item> <item><span type="proofread"/>Snorre Sturluson (1633) <rs type="title" key="title576"><hi rend="italic">Snorre Sturlesøns Norske Kongers Chronica. Vdsat paa Danske [...] Nu nyligen menige mand til gaffn/ igiennemseet/ continuerit oc til Trycken forferdiget</hi></rs>, udg. Peder Claussøn &amp; Ole Worm. København</item>
+               <item><span type="proofread"/>Snorre Sturluson (1818-1823) <rs type="title" key="title697"><hi rend="italic">Norges Konge-Krønike af Snorro Sturlesøn</hi></rs>, overs. af N.F.S. Grundtvig,  bind 1-3. København</item>
+            </list></div>
+         <div type="webList">
+            <head xml:id="docIn2">Anvendt webside</head>
+            <list type="webList"><item n="2017-03-02" target="http://mothsordbog.dk/">http://mothsordbog.dk/</item></list>
+         </div>
+      </body>
+   </text>
+</TEI>

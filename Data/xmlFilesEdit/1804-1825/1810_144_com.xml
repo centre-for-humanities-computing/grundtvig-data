@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<!--<?xml-model type="application/relax-ng-compact-syntax" href="comRNC.rnc"?>-->
+<!--<?xml-model type="application/relax-ng-compact-syntax" href="comRNC.rnc"?> -->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="part">Ki&#x00E6;kheds Erindring, Willemoes</title>
+                <title rend="shortForm">Ki&#x00E6;kheds Erindring</title>
+                <author>Vibeke A. Pedersen</author>               
+                <editor role="editor2">Klaus Nielsen</editor>
+                 <editor role="editor1">Else Riisager</editor>
+                 <editor role="student1">Frederik Drei&#x00F8;e Seidelin</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.4</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>10 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                
+                <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note target="1810_144_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" target="1810_144_com.xml" type="com">Punktkommentar</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+<encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+                <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            </encodingDesc>
+<revisionDesc>
+                <change xml:id="KSR" who="KSR" when="2013-03-14">comFIL</change>
+                <change xml:id="FDS" who="FDS" when="2013-03-15">indsat VAPs forel&#x00F8;bige kommentarer.</change>
+                <change xml:id="VAP" who="VAP" when="2013-03-15">opm&#x00E6;rket og sm&#x00E5;rettet og gjort filen valid ved rettelser i head</change>
+                <change who="VAP" when="2013-03-20">opm&#x00E6;rket sidste kommentarer</change>
+                <change who="VAP" when="2013-03-22">kommentarer efter korrektur. Oprettet com 37-49</change>
+                <change who="VAP" when="2013-04-02">Skrevet og opm&#x00E6;rket com 37-49; slettet 48</change>
+                <change who="VAP" when="2013-04-03">genindsat txt til com30</change>
+                <change who="VAP" when="2013-04-05">litteraturliste og rettelser i overskrift hertil</change>
+                <change who="VAP" when="2013-04-09">rettelser efter Holger</change>
+                <change who="VAP" when="2013-04-11">gr&#x00F8;nnet kommentarer til prosaindledningen ind og tilf&#x00F8;jet i littliste og f&#x00F8;rste rettelser fra Holger</change>
+                <change who="VAP" when="2013-04-19">sidste rettelser fra Holger og "corr" p&#x00E5; de rettede</change>
+                <change who="VAP" when="2013-05-06">skrevet com 31-33. Oprettet com50-51. Slettet stednavneopm&#x00E6;rkninger. Begyndende rettelser efter Else</change>
+                <change who="VAP" when="2013-05-07">fortsatte rettelser efter Else. Fjernet placeopm&#x00E6;rkning</change>
+                <change who="VAP" when="2013-05-08">fortsatte rettelser, ogs&#x00E5; i littliste</change>
+                <change who="VAP" when="2013-05-23">rettelser efter FLN. oprettelse af com52</change>
+                <change who="VAP" when="2013-06-07">kontrol af rettelser efter FLN. autogenereret littliste</change>
+                <change who="VAP" when="2013-06-25">sidste rettelser gennemset</change>
+                <change who="VAP" when="2013-07-30">rettelser efter Else, 2. omgang</change>
+                <change who="VAP" when="2013-08-01">kontrolrettelser efter Elses samt yderligere VAP-rettelser og opm&#x00E6;rkninger</change>
+                <change who="VAP" when="2013-08-27">inkorporeret autogenererede litteratur- og weblister</change>
+                <change who="VAP" when="2013-08-28">sidste rettelser efter gennemgang af Elses kommentarer samt oprydning i littliste</change>
+                <change who="VAP" when="2013-08-30">kontrol af sidste rettelser efter gennemgang af Elses kommentarer samt oprydning i littliste</change>
+                <change who="VAP" when="2013-09-10">rettelser efter KN. Oprettelse af com 53-58, slettet com7, 21</change>
+                <change who="VAP" when="2013-09-16">kontrol af rettelser efter KN</change>
+                <change who="VAP" when="2013-09-18">sidste rettelser efter KN efter dialog. Slettet com57</change>
+                <change who="VAP" when="2013-09-19">unicodes</change>
+                <change xml:id="AP" who="AP" when="2013-09-19">rettet versions-streng</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+    <change who="VAP" when="2014-03-05">rettelse i com4</change>
+    <change who="VAP" when="2014-03-07">opmærkning ved Rahbek-tekst</change>
+            <change who="NHB" when="2014-03-20">valideret</change>
+    <change who="NHB" when="2014-10-22">rettet webList i samråd med JT. Afkortet og genoplivet et dødt link</change>
+</revisionDesc>
+    </teiHeader>
+    <text type="com">
+        <body>
+            <!--<note xml:id="com38"><p>Slaget ved <placeName key="fak414">Kongedybet</placeName>, som havde fundet sted 2. april 1801, og hvori <persName key="pe99">Willemoes</persName> havde udm&#x00E6;rket sig, faldt en Sk&#x00E6;rtorsdag dette &#x00E5;r. Slaget ved <placeName key="fak409">Sj&#x00E6;llands Odde</placeName>, hvor <persName key="pe99">Peter Willemoes</persName> d&#x00F8;de, stod den 22. marts 1808.</p></note>
+            
+            <note xml:id="com39"><p>overgav.</p></note>
+            
+            <note xml:id="com40"><p>I en alder af knap 18 &#x00E5;r var <persName key="pe99">Peter Willemoes</persName> blevet chef for det Gernerske flydebatteri (med 156 mands bes&#x00E6;tning). Ombord p&#x00E5; dette flydebatteri, der var s&#x00E5; lavt, at engl&#x00E6;ndernes kanoner ikke kunne ramme det, fyrede <persName key="pe99">Willemoes</persName> under Slaget p&#x00E5; Reden adskillige bredsider af mod det engelske krigsskib, The Elephant, hvorp&#x00E5; den engelske admiral lord <persName key="pe100">Nelson</persName> befandt sig.</p></note>
+            
+            <note xml:id="com41"><p>dvs. den engelske admiral, lord <persName key="pe100">Horatio Nelson</persName>.</p></note>
+            
+            <note xml:id="com42"><p>vente.</p></note>
+            
+            <note xml:id="com43"><p><persName key="pe99">Willemoes</persName> havde i 1807 s&#x00F8;gt russisk tjeneste.</p>
+                <note type="readMore"><p>Efter at han havde udm&#x00E6;rket sig i Slaget p&#x00E5; <placeName key="fak421">Reden</placeName> 2. april 1801, var <persName key="pe99">Willemoes</persName> dels begyndt at studere jura og havde dels s&#x00F8;gte at forts&#x00E6;tte en karriere som s&#x00F8;officer.</p></note>
+            </note>
+            
+            <note xml:id="com44"><p><persName key="pe99">Willemoes</persName> havde i 1807 f&#x00E5;et  tilladelse til at s&#x00F8;ge russisk orlogstjeneste. Men da det engelske angreb p&#x00E5; <placeName key="fak14">Danmark</placeName> kom i sensommeren 1807, vendte han om og meldte sig ved kronprinsens hovedkvarter i <placeName key="fak424">Rendsborg</placeName>. Han blev derefter sat til at lede troppetransporterne mellem <placeName key="fak3">Langeland</placeName> og <placeName key="fak179">Lolland</placeName> i september-oktober 1807.</p></note>
+            
+            <note xml:id="com45"><p>Efter slaget p&#x00E5; <placeName key="fak421">Reden</placeName> 2. april 1801 sejlede engl&#x00E6;nderne tilbage til<placeName key="fak5"> England</placeName> og tog det meste af den danske handelsfl&#x00E5;de med. Men i eftersommeren 1807 vendte de tilbage og gik i land ved <placeName key="fak432">Vedb&#x00E6;k</placeName> den 16. august. Efter at det sj&#x00E6;llandske landev&#x00E6;rn var blevet sl&#x00E5;et 29. august ved <placeName key="fak74">K&#x00F8;ge</placeName>, udsatte engl&#x00E6;nderne den 2-4. september <placeName key="fak8">K&#x00F8;benhavn</placeName> for et voldsomt bombardement, historiens f&#x00F8;rste store terrorbombardement. Det kostede omkring 200 civile borgere og 3-400 milit&#x00E6;re livet og lagde flere hundrede ejendomme i grus.</p></note>
+            
+            <note xml:id="com46"><p>Grundtvig.</p></note>
+            
+            <note xml:id="com47"><p>Der hentydes til Grundtvigs digt &#x201C;Villemoes&#x201D;, der var blevet bragt i <hi rend="italic"><rs type="title" key="title659">Ny danske Tilskuer</rs></hi> den 26. maj 1808.</p></note>
+            
+            <note xml:id="com49"><p>Linjeskibet Prinds Christian Frederik, der var under kaptajn <persName key="pe1080">Jessens</persName> kommando, havde den 18. marts 1808 f&#x00E5;et hemmelig ordre fra kongen til at jage en engelsk fregat bort, der havde taget post ved <placeName key="fak431">Sprog&#x00F8;</placeName> (Rosendal 1908, s. 8-9). Det var i fors&#x00F8;get p&#x00E5; at efterkomme denne ordre, at linjeskibet var g&#x00E5;et nord om <placeName key="fak15">Sj&#x00E6;lland</placeName> og ud for <placeName key="fak409">Sj&#x00E6;llands Odde</placeName> blev m&#x00F8;dt af en engelsk overmagt, best&#x00E5;ende af linjeskibene Stately og Nassau. Et tredje engelsk linjeskib, Vaugard, var blevet ved <placeName key="fak110">&#x00D8;resunds</placeName> indl&#x00F8;b for om muligt at afsk&#x00E6;re <persName key="pe1080">Jessens</persName> tilbagetog (Rosendal 1908, s. 11-12).</p></note>-->
+            
+            <note xml:id="com1">
+<!--lemma: Kommer-->
+                <p>kom (imperativ pluralis).</p>
+            </note>
+            
+            <note xml:id="com2" changes="corr">
+<!--lemma: Vaaren er nu kommet n&#x00E6;r-->
+                <p>Digtet er en omarbejdelse af et digt med samme emne, som Grundtvig forfattede i
+                    for&#x00E5;ret 1808 (<rs key="title2229" type="title">Albeck 1934</rs>, s. 23). Dette
+                    var alts&#x00E5; kort tid efter tr&#x00E6;fningen ved Sj&#x00E6;llands Odde den 22. marts 1808, hvor
+                        <persName key="pe99">Peter Willemoes</persName> led helted&#x00F8;den.</p>
+            </note>
+            
+            <note xml:id="com53">
+                <p>Dagene bliver l&#x00E6;ngere.</p>
+            </note>
+            
+            <note xml:id="com3">
+<!--lemma: en Vaar-->
+                <p>hentydning til, at <persName key="pe99">Willemoes</persName> d&#x00F8;de om for&#x00E5;ret, den 22. marts 1808.</p>
+            </note>
+            
+            <note xml:id="com4" changes="corr">
+<!--lemma: Kongedyb er Str&#x00F8;mmens Navn,
+               Der blev Helten viet.-->
+               
+                <p>Allerede i Slaget p&#x00E5; Reden (eller Slaget ved Kongedybet), den 2. april 1801,
+                    havde <persName key="pe99">Willemoes</persName> som kun 17-&#x00E5;rig gjort sig
+                    heldigt bem&#x00E6;rket. Ved sit mod og sin tapperhed fik han positiv opm&#x00E6;rksomhed fra
+                    sin fjende, den engelske admiral, lord <persName key="pe100">Nelson</persName>.
+                    Ombord p&#x00E5; et flydebatteri (dvs. en lav pram med kanoner og mandskab) var
+                        <persName key="pe99">Willemoes</persName> sejlet langs <persName key="pe100">Nelsons</persName> krigsskib, The Elephant, og havde affyret adskillige
+                    bredsider imod skibet. Flydebatteriet l&#x00E5; s&#x00E5; lavt i vandet, at engl&#x00E6;ndernes
+                    kanoner ikke kunne ramme det. Efter slaget n&#x00F8;d <persName key="pe99">Willemoes</persName> stor popularitet i det k&#x00F8;benhavnske borgerskab.</p>
+                    <note type="readMore">
+<p> I en samtale, lord <persName key="pe100">Nelson</persName> siden havde med <persName key="pe96">kronprins Frederik</persName>, skal han have rost <persName key="pe99">Willemoes</persName> og udtalt, at denne burde v&#x00E6;re admiral. Hertil
+                        svarede kronprinsen, at hvis alle hans tapre m&#x00E6;nd skulle v&#x00E6;re admiraler,
+                        ville han ikke l&#x00E6;ngere have l&#x00F8;jtnanter og kaptajner til r&#x00E5;dighed.
+                        Oprindelsen til denne anekdote er imidlertid usikker og har ikke
+                        kunnet bel&#x00E6;gges med autoritative kildeudsagn, men <persName key="pe24">Rahbek</persName> hentyder til den i <hi rend="italic"><rs key="title659" type="title">Ny danske Tilskuer</rs></hi> 7. april 1808 (<rs key="title3127" type="title">Rahbek 1808</rs>). Anekdoten har givetvis
+                        tjent til at forst&#x00E6;rke <persName key="pe99">Willemoes&#x2019;</persName>
+                        popularitet i det k&#x00F8;benhavnske borgerskab.</p>
+</note>
+            </note>
+            
+            <note xml:id="com54">
+                <p>bar (pr&#x00E6;teritum pluralis).</p>
+            </note>
+            
+            <note xml:id="com5">
+<!--lemma: fagre Liljevaand-->
+                <p>smukke liljegren; et folkeviseudtryk, der betegner en smuk og slank ung pige.</p>
+            </note>
+            
+            <note xml:id="com55">
+                <p>ogs&#x00E5;.</p>
+            </note>
+            
+            <note xml:id="com6" changes="corr">
+<!--lemma: i Snarer hilde-->
+                <p>fange i (k&#x00E6;rligheds)f&#x00E6;lder.</p>
+            </note>
+            
+            <note xml:id="com50" changes="new">
+<!--lemma: drog til fremmed Land-->
+                <p>Efter Slaget ved Kongedybet 1801 kom <persName key="pe99">Willemoes</persName> med et
+                    skib til Middelhavet; i 1807 tog han til Sankt Petersborg for at g&#x00E5; i russisk
+                    krigstjeneste.</p>
+            </note>
+            
+            <!--<note xml:id="com7" changes="corr"><!-\-lemma: d&#x00F8;nner-\->
+                <p>buldrer, tordner.</p>
+            </note>-->
+            
+            <note xml:id="com8">
+<!--lemma: Hvor de stolte Snekker laae,
+               Var saa tomt og &#x00F8;de-->
+                <p>Efter bombardementet af K&#x00F8;benhavn den 2.-5. september 1807 overgav byen sig den 7. september. Engl&#x00E6;nderne sejlede dog f&#x00F8;rst bort med den danske orlogsfl&#x00E5;de som krigsbytte den 20.-21. oktober 1807.</p>
+            </note>
+            
+            <note xml:id="com9" changes="corr">
+<!--lemma: opvoxed mellem dem-->
+                <p>Allerede som 4-&#x00E5;rig var <persName key="pe99">Willemoes</persName> blevet
+                    indskrevet som kadet, og 12 &#x00E5;r gammel begyndte han p&#x00E5; S&#x00F8;kadet-akademiet. I en
+                    alder af knap 18 &#x00E5;r blev han chef for det Gernerske flydebatteri, der havde en
+                    bes&#x00E6;tning p&#x00E5; 156 mand.</p>
+            </note>
+            
+            <note xml:id="com10" changes="corr">
+<!--lemma: Vold-->
+                <p>dvs. Danmarks v&#x00E6;rn eller beskyttelse.</p>
+                           </note>
+            
+            <note xml:id="com11">
+<!--lemma: gange-->
+                <p>g&#x00E5; (gl. infinitiv til g&#x00E5;).</p>
+            </note>
+            
+            <note xml:id="com12">
+<!--lemma: Vinter leed-->
+                <p>vinteren (1807-1808) gik.</p>
+            </note>
+            
+            <note xml:id="com13" changes="corr">
+<!--lemma: Kristjan med sin h&#x00F8;ie Mast
+               Lod fra Norrig stande-->
+                <p>Linjeskibet Prinds Christian Frederik var sejlet fra Norge den 4. marts 1808.
+                    Skibet var det eneste tilbagev&#x00E6;rende linjeskib i den danske fl&#x00E5;de.</p>
+                <p>
+<persName key="pe99">Willemoes</persName> p&#x00E5;m&#x00F8;nstrede formentlig linjeskibet Prinds Christian  allerede i slutningen af december 1807 (<rs key="title2265" type="title">Andersen 1993</rs>, s. 70). </p>
+                <p>Formuleringen hentyder til den allerede i samtiden popul&#x00E6;re sang fra 1779 <rs type="title" key="title876">&#x201C;Kong Christjan stoed ved h&#x00F8;ien
+                        Mast&#x201D; (Ewald 1969)</rs>.</p>
+                <note type="readMore">
+<p>Melodien er anonym og blev senere brugt til det afsluttende hyldestdigt til kongen i <persName key="pe115">J.L. Heibergs</persName> festspil <hi rend="italic">
+<rs key="title1520" type="title">Elverh&#x00F8;i</rs>
+</hi> (1828). F&#x00F8;rst fra 1906 brugtes den popul&#x00E6;re
+                        sang officielt som kongesang.<!-- FLN -->
+</p>
+</note>
+            </note>
+            
+            <note xml:id="com56">
+                <p>st&#x00E5; ud.</p>
+            </note>
+            
+           
+            <note xml:id="com14">
+<!--lemma: Kristjan-->
+                <p>linjeskibet Prinds Christian Frederik.</p>
+            </note>
+            
+            <note xml:id="com15" changes="corr">
+<!--lemma: h&#x00F8;ie Borde-->
+                <p>h&#x00F8;je skibssider. Linjeskibet Prinds Christian Frederik havde tre d&#x00E6;k (etager),
+                    nemlig to overd&#x00E6;kkede batterid&#x00E6;k og fart&#x00F8;jets &#x00E5;bne d&#x00E6;k med r&#x00E6;lingen.
+                    Forskellen var stor i forhold til den meget lave flydebatteripram, hvor
+                        <persName key="pe99">Willemoes</persName> havde f&#x00E5;et sin ildd&#x00E5;b i Slaget p&#x00E5;
+                    Reden den 2. april 1801.</p>
+            </note>
+            
+            <note xml:id="com16">
+<!--lemma: Afgang-->
+                <p>d&#x00F8;d.</p>
+            </note>
+            
+            <note xml:id="com17" changes="corr">
+<!--lemma: Bane-->
+                <p>d&#x00F8;d (i kamp).</p>
+            </note>
+            
+            <note xml:id="com18">
+<!--lemma: r&#x00F8;de Tilje-->
+                <p>gulv, der er farvet r&#x00F8;dt (af blodet fra de faldne og s&#x00E5;rede), her om skibsd&#x00E6;kket.</p>
+            </note>
+            
+            <note xml:id="com19">
+<!--lemma: under &#x00C3;&#x02DC;-->
+                <p>her: ind under land, dvs. t&#x00E6;t p&#x00E5; kysten. Vendingen er egl. et folkeviseudtryk, der almindeligvis betyder et ubestemt sted p&#x00E5; landjorden.</p>
+            </note>
+            
+            <note xml:id="com20" changes="corr">
+<!--lemma: Ki&#x00E6;mper-->
+                <p>krigshelte, her soldater.</p>
+            </note>
+            
+            <note xml:id="com58">
+                <p>turde.</p>
+            </note>
+            
+            <note xml:id="com22" changes="corr">
+<!--lemma: gamle Kristian
+               Staaer han fast paa danske Strand,
+               Ski&#x00F8;ndt hans Blod udrinder-->               
+                <p>Da kaptajn <persName key="pe1080">Carl Vilhelm Jessen</persName> om aftenen den
+                    22. marts 1808 inds&#x00E5;, at slaget var tabt, beordrede han, at Prinds Christian
+                    Frederik blev sejlet p&#x00E5; grund. S&#x00E5;ledes undgik han, at skibet blev erobret og
+                    taget i brug af briterne.</p>
+                <p>Linjen rummer ogs&#x00E5; en hentydning til <persName key="pe231">Christian 4</persName>, der den 1. juli
+                    1644 ombord p&#x00E5; skibet Trefoldigheden mistede sit h&#x00F8;jre &#x00F8;je i kamp mod den
+                    svenske fl&#x00E5;de  i Kielerbugten, ved Kolberger Heide. Selv om han faldt om, da
+                    hans &#x00F8;je blev ramt, rejste han sig op, og bl&#x00F8;dende fra over 20 s&#x00E5;r og skrammer
+                    opfordrede han sine m&#x00E6;nd til at forts&#x00E6;tte kampen. </p>
+                <note type="readMore">
+<p>Scenen med <persName key="pe231">Christian 4</persName> ombord p&#x00E5; Trefoldigheden er senere
+                        ud&#x00F8;deliggjort af maleren <persName key="pe207">Vilhelm Marstrand</persName>
+                        i 1865 og kan ses i Roskilde Domkirke.</p>
+</note>
+            </note>
+            
+          
+            
+            <note xml:id="com23">
+<!--lemma: Bretlands Viking-->
+                <p>Englands s&#x00F8;mand eller m&#x00E5;ske snarere s&#x00F8;r&#x00F8;ver. Der spilles ogs&#x00E5; p&#x00E5;, at Danmark i vikingetiden havde underlagt sig Danelagen i England, hvorfor en del engl&#x00E6;ndere kan siges at stamme fra de danske vikinger.</p>
+            </note>
+            
+            <note xml:id="com24" changes="corr">
+<!--lemma: gamle Dannebrog,
+               Som du nys uheiset tog
+               Med saa ringe M&#x00F8;ie-->
+                <p>hentydning til, at engl&#x00E6;nderne den 20.-21. oktober 1807 &#x2013; efter bombardementet
+                    af K&#x00F8;benhavn i september &#x2013; var sejlet bort med st&#x00F8;rstedelen af den danske
+                    fl&#x00E5;de som krigsbytte. De erobrede skibe f&#x00F8;rte ikke flag ved
+                    bortsejlingen.</p>
+                <p>Dannebrog blev p&#x00E5; denne tid endnu kun brugt som fl&#x00E5;dens og kongens flag og blev f&#x00F8;rst et nationalt symbol i l&#x00F8;bet af 1800-tallet.</p>
+            </note>
+            
+            <note xml:id="com51" changes="new">
+                <p> Dvs. dit [den engelske s&#x00F8;r&#x00F8;vers] flag vil snart ikke blive set mere, hvis
+                    prisen for de skibe [du tog] skulle v&#x00E6;re, hvad du gav for Prinds Christians
+                    vrag.<!-- FLN -->
+</p>
+                <p>Grundtvig lader s&#x00E5;ledes digtets &#x2018;fort&#x00E6;ller&#x2019; sp&#x00F8;rge den britiske (s&#x00F8;)r&#x00F8;ver, om han har mod til at indr&#x00F8;mme, at han m&#x00E5;tte b&#x00F8;de (dvs. betale dyrt) til de danske vande (i
+                    kraft af det sidste danske linjeskibs h&#x00E5;rdnakkede modstand ved Odden). Denne bod kan ses som
+                    geng&#x00E6;ld for de mange skibe i den danske fl&#x00E5;de, han sejlede bort med uden deres
+                    danske ejerflag.</p>
+                <p></p>
+                <note type="readMore">
+<p>Det kan m&#x00E5;ske ses som et fors&#x00F8;g p&#x00E5; at udtrykke, at det mistede Dannebrogsflag blev h&#x00E6;vnet ved
+                        tr&#x00E6;fningen ud for Sj&#x00E6;llands Odde.</p>
+</note>
+</note>
+            
+            
+            <note xml:id="com25" changes="corr">
+<!--lemma: Kristjans Vrag-->
+                <p>Kaptajn <persName key="pe1080">Jessen</persName> overgav f&#x00F8;rst Prinds Christian
+                    Frederik den 22. marts 1808 kl. 22.30 om aftenen, efter at han havde ladet
+                    skibet g&#x00E5; p&#x00E5; grund. P&#x00E5; dette tidspunkt var tabene omfattende, de fleste af
+                    kanonerne var sat ud af kraft, og r&#x00E5;en var skudt over t&#x00E6;t ved m&#x00E6;rset. Skibet
+                    blev herefter forladt. Om aftenen den 23. marts satte briterne ild til skibet,
+                    og omkring kl. 22 n&#x00E5;ede ilden ammunitionsrummet, hvorefter det sprang i
+                    luften.</p>
+            </note>
+            
+            <note xml:id="com26">
+<!--lemma: Andet Hiem at finde-->
+                <p>at d&#x00F8;.</p>
+            </note>
+            
+            <note xml:id="com37">
+<p>ville, ville &#x00F8;nske (optativ pluralis af ville).</p>
+</note>
+            
+            <note xml:id="com27">
+<!--lemma: vanke her endnu-->
+                <p>g&#x00E5; her endnu, stadig v&#x00E6;re levende.</p>
+            </note>
+            
+            <note xml:id="com28">
+<!--lemma: Kristjan-->
+                <p>linjeskibet Prinds Christian Frederik.</p>
+<!-- FDS: Her ville du vist anf&#x00F8;re at det b&#x00E5;de var skibet og en allusion til kongen. -->
+            </note>
+            
+            <note xml:id="com29" changes="corr">
+<!--lemma: Ki&#x00E6;mpebeen-->
+                <p>jordiske rester af en helt; her <persName key="pe99">Willemoes'</persName>.</p>
+            </note>
+            
+            <note xml:id="com30" changes="corr">
+<!--lemma: Reise vi en Bautasteen,
+                Give Stenen M&#x00E6;le-->
+<p>hentydning til mindes&#x00F8;jlen over de faldne fra linjeskibet Prinds Christian Frederik p&#x00E5; Odden
+                    Kirkeg&#x00E5;rd. Grundtvig havde i sensommeren 1809 forfattet mindedigtet p&#x00E5;
+                    monumentet, <rs type="title" key="title2270">&#x201C;[De Snekker m&#x00F8;dtes i Kveld
+                        paa Hav]&#x201D;</rs>. Monumentet blev indviet i for&#x00E5;ret 1810. Efter en
+                    familietradition i sl&#x00E6;gten til <persName key="pe1085">Lorenz Fribert</persName>,
+                    der lod s&#x00F8;jlen rejse, skete det p&#x00E5; to&#x00E5;rsdagen for s&#x00F8;tr&#x00E6;fningen, den 22. marts
+                        (<rs key="title2297" type="title">Albeck 1948</rs>, s. 38). </p>
+            </note>
+            
+            <note xml:id="com31">
+<!--lemma: H&#x00F8;rer-->
+                <p>h&#x00F8;r (imperativ pluralis).</p>
+            </note>
+            
+            <note xml:id="com32">
+<!--lemma: Binder-->
+                <p>bind (imperativ pluralis).</p>
+            </note>
+            
+            <note xml:id="com33">
+<!--lemma: Parrer-->
+                <p>par (imperativ pluralis af parre).</p>
+            </note>
+            
+            <note xml:id="com52">
+<p>her: med smag.</p>
+</note>
+            
+            <note xml:id="com34">
+<!--lemma: Siunger-->
+                <p>syng (imperativ pluralis af &#x2018;siunge&#x2019;, dvs. synge).</p>
+            </note>
+            
+            <note xml:id="com36">
+<!--lemma: breden Strand-->
+                <p>folkeviseudtryk for strand.</p>
+            </note>
+            
+            
+            
+            <div type="litList">
+                <head xml:id="docIn1">Anvendt litteratur</head>
+                <list type="litList">
+                    <item>Adriansen, Inge (2003) <rs key="title668" type="title">
+<hi rend="italic">Nationale symboler i Det Danske Rige 1830-2000</hi> 1-2</rs>, bind
+                        1: <hi rend="italic">Fra fyrstestat til nationalstater</hi>.
+                        K&#x00F8;benhavn</item>
+                    <item>Albeck, Gustav (1934) <rs type="title" key="title2229">&#x201C;N.F.S. Grundtvigs
+                            Digtning om Peter Villemoes&#x201D;</rs> i <hi rend="italic">
+                            <rs type="title" key="title2230">Fem danske Studier tilegnet Vilh.
+                                Andersen. Den 16. Oktober 1934</rs>
+</hi>, s. 5-24. K&#x00F8;benhavn</item>
+                    <item>Albeck, Gustav (1948) <rs type="title" key="title2229">&#x201C;Indskriften paa
+                        Oddens Mindest&#x00F8;tte&#x201D;</rs> i <hi rend="italic">
+                            <rs type="title" key="title337">Grundtvig-Studier 1948</rs>,</hi> s.
+                        32-41. K&#x00F8;benhavn</item>
+                    
+                    <item>Andersen, Helge (1993) <hi rend="italic">
+<rs key="title2265" type="title">Orlogsskibet Prinds Christian Frederik</rs>. K&#x00F8;benhavn</hi>
+</item>
+                    <item>Ewald, Johannes  [1779] (1969) <rs key="title876" type="title">&#x201C;Kong Christjan stoed ved h&#x00F8;ien Mast&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title879">Johannes Ewalds samlede
+                                Skrifter efter Tryk og Haandskrifter</rs>,</hi> s. 187f.
+                        K&#x00F8;benhavn</item>
+                    <item>Grundtvig, N.F.S. (1810) <rs key="title2270" type="title">&#x201C;[De
+                            Snekker m&#x00F8;dtes i Kveld paa Hav]&#x201D;</rs>. Odden Kirkeg&#x00E5;rd</item>
+                    <item>Rahbek, Knud Lyne (1808) <rs key="title3127" type="title">[Uden titel]</rs> i <hi rend="italic"><rs key="title659" type="title">Ny danske Tilskuer</rs>,</hi> nr. 24, s. 185-192. København</item>
+                    <item>Rosendal, Hans (1908) <rs key="title2231" type="title">&#x201C;Kampen ved
+                            Sj&#x00E6;llands Odde den 22. Marts 1808&#x201D;</rs> i H.J. Hansen (red.) <hi rend="italic">
+<rs type="title" key="title2232">Fra Holb&#x00E6;k Amt.
+                                Historiske Aarb&#x00F8;ger. II. Udgivet af Historisk Samfund for Holb&#x00E6;k
+                                Amt</rs>
+</hi>, s. 5-27. K&#x00F8;benhavn</item>
+                </list>
+            </div>
+            <div type="webList">
+                <head xml:id="docIn2">Anvendte websider</head>
+                <list type="webList">
+                    <item n="2014-10-22" target="http://www.milhist.dk">Christiansen, Claus &#x201C;Slaget ved Sj&#x00E6;llands Odde&#x201D; fra Dansk Milit&#x00E6;rhistorie</item>
+                </list>
+            </div>
+        </body>
+</text>
+</TEI>

@@ -1,0 +1,854 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Nornerne</title>
+      <title rend="shortForm">Nornerne</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Agathe M. Hahn</editor>
+      <editor role="student">Maria Wiggers Pedersen</editor>
+     </titleStmt>
+     <editionStmt>
+      <edition>
+          <idno type="content">1.4</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+     </editionStmt>
+     <extent>31 KB</extent>
+     
+     <publicationStmt>
+      <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+      <publisher>Faculty of Arts, Aarhus University</publisher>
+      <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+      
+      <date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1. maj 2014</date>
+     </publicationStmt>
+     
+     <notesStmt>
+      <note target="1866_1403_txt.xml" type="txt" xml:id="thisFile">L&#x00E6;setekst</note>
+      <note target="1866_1403_com.xml" type="com">Punktkommentar</note>
+      <note target="1866_1403_intro.xml" type="intro">Indledning</note>
+      <note target="1866_1403_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+      <note type="minusVar">Variant</note>
+     
+     </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">Vintergr&#x00F8;nt</title>
+       <author>Chr. Richardt
+        <note>udgiver</note>
+       </author>
+       <pubPlace>Kj&#x00F8;benhavn</pubPlace>
+       <publisher>Gyldendalske Boghandels Forlag
+        <note>F. Hegel</note>
+       </publisher>
+       <date>1866</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="1403"><desc>F&#x00F8;rstetrykket</desc><num>1866</num></witness>
+      </listWit>
+      <listWit xml:id="pageNumber">   
+       <witness xml:id="PS"><desc>Poetiske Skrifter</desc><num>9</num></witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+       <profileDesc>
+           <textClass>
+               <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                   <term>lyrik</term>
+                   <term>digte</term>
+               </classCode>
+               <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                   <term>norrønt</term>
+                   <term>mytologi</term>
+               </keywords>
+           </textClass>
+       </profileDesc>
+       
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+     <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+     <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+     <change xml:id="AH" who="AH" when="2013-09-23">korrekturl&#x00E6;st mod 2. udgave (1867)</change>
+     <change who="KSR" when="2013-09-24">comnum</change>
+     <change who="AH" when="2013-09-25">supplerende kommentarer</change>
+     <change who="AH" when="2013-09-25">placeName</change>
+     <change who="AH" when="2013-09-25">bibelhenvisninger</change>
+     <change who="AH" when="2013-09-30">supplerende kommentarer</change>
+     <change who="AH" when="2013-09-30">korrigieret mod 1. udgave (GV-eksemplar)</change>
+     <change who="AH" when="2013-10-02">flere bibelhenvisninger</change>
+     <change who="AH" when="2013-10-02">supplerende kommentarer</change>
+     <change who="AH" when="2013-10-08">supplerende kommentarer</change>
+     <change who="AH" when="2013-10-09">supplerende bibelhenvisninger</change>
+     <change who="AH" when="2013-10-22">supplerende kommentarer efter 1. redaktion. Unicodet.</change>
+     <change xml:id="auto" who="auto" when="2013-10-30">Autoopm&#x00E6;rket af autotag.awk v04 KK 2013-10-30</change>
+     <change who="AH" when="2013-10-30">manuel rettelse af autoopm&#x00E6;rkning til mytebasen.</change>
+     <change who="AH" when="2013-11-13">supplerende bibelhenvisning</change>
+     <change xml:id="AP" who="AP" when="2013-11-14">indsat faxnr.</change>
+     <change who="AH" when="2013-12-10">korrekturer efter 3. redaktion</change>
+     <change who="AH" when="2013-12-11">bibelhenvisninger udstyret med nye "rend"-attributter</change>
+     <change who="AH" when="2013-12-11">oprydning i head</change>
+     <change who="AH" when="2013-12-11">indsat sidetal efter PS</change>
+     <change who="AH" when="2013-12-12">indsat en ny allusion-bibelhenvisning</change>
+     <change who="AH" when="2014-05-08">korrigeret fejl i "rullegardin"</change>
+        <change who="TRA" when="2016-03-08">ændring i emneord: nordisk --> norrønt</change>
+        <change who="KV" when="2016-03-30">ændret i div</change>
+        
+    
+
+        <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+    
+
+        <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+    
+
+        <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+        <change who="AH" when="2014-10-15">korrigeret fejl i "rullegardin"</change>
+<change who="KV" when="2015-10-15">indført genre, emne</change>
+     </revisionDesc>
+   </teiHeader>
+   <text type="txt">
+       <body>     
+           
+           
+           
+           
+           
+           <div type="[Tekst]">
+               
+  <pb type="periText" facs="1866_1403_fax001.jpg" />
+	    <pb type="periText" facs="1866_1403_fax002.jpg" />
+	    <pb type="periText" facs="1866_1403_fax003.jpg" />
+	    <pb type="periText" facs="1866_1403_fax004.jpg" />
+	    <pb type="periText" facs="1866_1403_fax005.jpg" />
+   <pb type="periText" facs="1866_1403_fax006.jpg" />
+   <pb type="periText" facs="1866_1403_fax007.jpg" />
+   <pb type="periText" facs="1866_1403_fax008.jpg" />
+   <pb type="periText" facs="1866_1403_fax009.jpg" />
+   <pb type="periText" facs="1866_1403_fax010.jpg" />
+   <pb type="periText" facs="1866_1403_fax011.jpg" />
+   <pb type="periText" facs="1866_1403_fax012.jpg" />
+   <pb type="periText" facs="1866_1403_fax013.jpg" />
+   <pb type="periText" facs="1866_1403_fax014.jpg" />
+<pb type="text" facs="1866_1403_fax015.jpg" ed="A" subtype="column" n="252" />
+		
+	<head rend="2">
+<rs type="myth" key="myth112">Nornerne</rs>.</head>
+
+<head rend="1">[Af N. F. S. Grundtvig.]</head>
+
+ 
+ 
+<lg n="1">
+<l>
+<pb n="204" ed="PS" type="edition" />
+<hi rend="spaced">
+<hi rend="initial">A</hi>sken</hi>, som ved <rs type="myth" key="myth100">
+<rs type="myth" key="myth77">Urdas</rs> <rs type="myth" key="myth100">Kilde</rs>
+</rs>
+</l>
+<l>R&#x00F8;dder slog i Tidens Grund,</l>
+<l>Aarle gr&#x00F8;n, udgaaet silde</l>
+<l>I den sidste Aftenstund,</l>
+<l>Plantet ud fra <seg type="com" n="com58">Gaade-Landet</seg>,</l>
+<l>Af Livs-Kilden altid vandet,</l>
+<l>Hedd i Norden <hi rend="spaced">
+<rs type="myth" key="myth103">Ygdrasil</rs>
+</hi>.</l>
+</lg>
+<lg n="2">
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth112">Nornerne</rs>
+</hi>, som <rs type="myth" key="myth103">Asken</rs> vande:</l>
+<l>&#x201C;<hi rend="spaced">
+<rs type="myth" key="myth77">Vorde</rs>, <rs type="myth" key="myth80">V&#x00E6;grende</rs>
+</hi> og <hi rend="spaced">
+<rs type="myth" key="myth68">Skal</rs>
+</hi>&#x201D;,</l>
+<l>Alle Folk i alle Lande</l>
+<l>Skabe Kaar og <seg type="com" n="com1">Arvetal</seg>,</l>
+<l>
+<pb n="205" ed="PS" type="edition" />Regne ud med Runer <seg type="com" n="com2">strage</seg>
+</l>
+<l>
+<seg type="com" n="com53">
+<hi rend="spaced">Mandhjems</hi> Aar</seg> og <seg type="com" n="com54">
+<hi rend="spaced">Gudhjems</hi> Dage</seg>,</l>
+<l>
+<hi rend="spaced">Tidens</hi> Gry, Midtvei og Kv&#x00E6;ld!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax016.jpg" ed="A" subtype="column" n="253" />
+
+<lg n="3">
+<l>Ingensteds fra Hedning-<seg type="com" n="com59">Stader</seg>
+</l>
+<l>Man i <seg type="com" n="com3">N&#x00E6;de</seg> eller <seg type="com" n="com66">Ny</seg>
+</l>
+<l>Slige D&#x00F8;ttre af <hi rend="spaced">
+<rs type="myth" key="myth1">Alfader</rs>
+</hi>
+</l>
+<l>Skimted over Skov i Sky,</l>
+<l>Som, med <hi rend="spaced">Fremsyn</hi> i det H&#x00F8;ie,</l>
+<l>Holdt med hele <hi rend="spaced">Tiden</hi> &#x00D8;ie,</l>
+<l>Styred Sl&#x00E6;gtens Levnetsl&#x00F8;b.</l>
+</lg>
+<lg n="4">
+<l>Dertil sporedes ei Mage</l>
+<l>Selv i <placeName key="fak118">Gr&#x00E6;kenland</placeName> og <placeName key="fak17">Rom</placeName>,</l>
+<l>Saa, hvad <hi rend="spaced">der</hi> i gamle Dage</l>
+<l>Skjalden kaldte <hi rend="spaced">
+<rs type="myth" key="myth701">Nornedom</rs>
+</hi>,</l>
+<l>Gjaldt kun Spindet af Livs-Traaden,</l>
+<l>Medens Menneskelivs-Gaaden</l>
+<l>Blev den <hi rend="spaced">blinde</hi> Ski&#x00E6;bnes V&#x00E6;rk.</l>
+</lg>
+<lg n="5">
+<l>Ogsaa mellem <placeName key="fak24">Nordens</placeName> Bjerge</l>
+<l>Man sig lod sin Lykke spaae,</l>
+<l>Men til <rs type="myth" key="myth108">Alfer</rs> kun og <rs type="myth" key="myth109">Dv&#x00E6;rge</rs>
+</l>
+<l>Regnedes de <rs type="myth" key="myth112">Norner</rs> smaa,</l>
+<l>Der, som efter eget Tykke,</l>
+<l>Hverdags-Liv og <seg type="com" n="com60">Slumpe-Lykke</seg>
+</l>
+<l>Maalte ud i <seg type="com" n="com4">Alenviis</seg>.</l>
+</lg>
+<lg n="6">
+<l>Ja, det var kun i <hi rend="spaced">
+<placeName key="poet457">H&#x00F8;inorden</placeName>
+</hi>,</l>
+<l>Giennem Skjaldens Hjernespind,</l>
+<l>
+<seg type="com" n="com5">
+    <rs type="myth" key="myth1120">Irmin</rs>-Str&#x00E6;det</seg> over Jorden</l>
+<l>Gik i <rs type="myth" key="myth121">Gimle</rs>-Borgen ind,</l>
+<l>
+<pb n="206" ed="PS" type="edition" />Frit sig selv opgav omsider</l>
+<l>Guderne for Aar og Tider,</l>
+<l>Evighedens <seg type="com" n="com6">M&#x00E6;rkesm&#x00E6;nd</seg>!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax017.jpg" ed="A" subtype="column" n="254" />
+
+<lg n="7">
+<l>Alle andre Hedning-Guder</l>
+<l>
+<seg type="com" n="com7">Sig tillyve</seg> Evighed,</l>
+<l>Tid for dem har ingen Knuder,</l>
+<l>Om dens Maal de intet veed,</l>
+<l>Menneskene de opfatte</l>
+<l>Kun som Guders Abekatte,</l>
+<l>Skabt til dem at lege med.</l>
+</lg>
+<lg n="8">
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth106">Aser</rs>
+</hi> alle &#x00E6;dle Helte,</l>
+<l>Efter deres Pr&#x00F8;vetid,</l>
+<l>Vil i <hi rend="spaced">
+<rs type="myth" key="myth101">Valhall</rs>
+</hi> sammensmelte,</l>
+<l>&#x00D8;ve til den store <seg type="com" n="com8">Id</seg>:</l>
+<l>Selv-Opoffrelse ved <seg type="com" n="com41">Maalet</seg>,</l>
+<l>Af <seg type="com" n="com42">Ny-Solen</seg> overstraalet:</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth121">Gimle</rs>-Borgens</hi> Gylden-Tag!</l>
+</lg>
+<lg n="9">
+<l>Alle andre Hedning-Stammer,</l>
+<l>Naar de s&#x00F8;gte Viisdoms Skat,</l>
+<l>S&#x00F8;gte den i Stumheds Kammer</l>
+<l>Og i D&#x00F8;dens m&#x00F8;rke Nat,</l>
+<l>Ledte op paa Tomheds Hylde</l>
+<l>
+<seg type="com" n="com9">Solegran</seg> til <hi rend="spaced">Rummets</hi> <seg type="com" n="com10">Fylde</seg>,</l>
+<l>
+<seg type="com" n="com68">Traad</seg> til Livets Labyrint!</l>
+</lg>
+<lg n="10">
+<l>Kun hos <hi rend="spaced">
+<rs type="myth" key="myth106">Aser</rs>
+</hi> og hos <hi rend="spaced">
+<rs type="myth" key="myth118">Vaner</rs>
+</hi>
+</l>
+<l>Syn der var for <hi rend="spaced">Tidens Tegn</hi>,</l>
+<l>Hvor sig Aanden <rs type="bible" key="Sl 19,6" rend="allusion">Heltebaner</rs>
+</l>
+<l>Bryder i hver Himmelegn,</l>
+<l>
+<pb n="207" ed="PS" type="edition" />Og hvor K&#x00E6;mpen, som <hi rend="spaced">
+<rs type="myth" key="myth74.d">Hlorride</rs>
+</hi>,</l>
+<l>Er saavel paa <hi rend="spaced">Jordens</hi> Side</l>
+<l>Som paa <hi rend="spaced">Himmelens</hi> indf&#x00F8;dt.</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax018.jpg" ed="A" subtype="column" n="255" />
+
+<lg n="11">
+<l>
+<seg type="com" n="com50">D&#x00F8;gnets</seg> Hedenskab i Verden</l>
+<l>Er, paa Tydsk og paa Latin,</l>
+<l>Blindt for <rs type="myth" key="myth106">Asa</rs>-<seg type="com" n="com43">Herref&#x00E6;rden</seg>,</l>
+<l>Her ved <placeName key="fak110">Sund</placeName>, som hist ved <placeName key="fak77">Rhin</placeName>,</l>
+<l>Leder op paa Tomheds Hylde</l>
+<l>
+<seg type="com" n="com11">Solegran</seg> til <hi rend="spaced">Rummets</hi> <seg type="com" n="com10">Fylde</seg>,</l>
+<l>
+<seg n="com68" type="com">Traad</seg> til Livets Labyrint.</l>
+</lg>
+<lg n="12">
+<l>H&#x00F8;it udraabes <seg type="com" n="com56">end</seg> med Latter:</l>
+<l>&#x201C;Biblens fem Gang tusind Aar</l>
+<l>Selv for Himlens yngste Datter</l>
+<l>Ei til Vuggetid forslaaer,</l>
+<l>Og hvert <seg type="com" n="com13">Arvetal</seg> fra <hi rend="spaced">Eden</hi>
+</l>
+<l>Synker ned i <hi rend="spaced">Bundl&#x00F8;sheden</hi>
+</l>
+<l>Som et Fnug i Verdens Alt.</l>
+</lg>
+<lg n="13">
+<l>&#x201C;Kr&#x00F8;niken om Verdens Riger</l>
+<l>Og Halvguders Heltery,</l>
+<l>Der til Stjernerne opstiger,</l>
+<l>Bryder med sin Glands hver Sky,</l>
+<l>Det er <seg type="com" n="com14">Tommelidens</seg> Pralen,</l>
+<l>Som vil maale med sin Alen</l>
+<l>
+<hi rend="spaced">Tid</hi> og <hi rend="spaced">Rum</hi> og <hi rend="spaced">Evighed</hi>.</l>
+</lg>
+<lg n="14">
+<l>&#x201C;<hi rend="spaced">Pattedyret</hi> med <seg type="com" n="com61">H&#x00F8;in&#x00E6;sen</seg>,</l>
+<l>Som gaaer dagligdags paa To,</l>
+<l>Kalder sig et fornemt V&#x00E6;sen:</l>
+<l>&#x201C;<hi rend="spaced">Menneske</hi>&#x201D; med <hi rend="spaced">Ord</hi> og <hi rend="spaced">Tro</hi>,</l>
+<l>
+<pb n="208" ed="PS" type="edition" />Naar han <seg type="com" n="com62">gi&#x00F8;er</seg> og naar han <seg type="com" n="com74">gaber</seg>,</l>
+<l>Er han meer end andre <hi rend="spaced">Aber</hi>?</l>
+<l>Er hans <hi rend="spaced">Aande</hi> meer end <hi rend="spaced">Damp</hi>?</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax019.jpg" ed="A" subtype="column" n="256" />
+
+<lg n="15">
+<l>&#x201C;Hvad er det man kalder <hi rend="spaced">Guder</hi>,</l>
+<l>Hvad er det man kalder <hi rend="spaced">Aand</hi>,</l>
+<l>Som skal l&#x00F8;se alle Knuder</l>
+<l>Uden Mund og uden Haand!</l>
+<l>Hvad kan de mod <seg type="com" n="com48">&#x201C;<hi rend="spaced">Dampens</hi>&#x201D; <rs type="myth" key="myth232">V&#x00E6;tte</rs>
+</seg>
+</l>
+<l>Med et Aandepust udrette!</l>
+<l>Hvad er de mod <hi rend="spaced">Ilt</hi> og <hi rend="spaced">Brint</hi>!&#x201D;</l>
+</lg>
+<lg n="16">
+<l>Kun i Skoven, hvor <seg type="com" n="com55">end</seg> blusser</l>
+<l>Hjertets Ild af Aandens Gl&#x00F8;d,</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth106">Aser</rs>
+</hi> vove mod <rs type="myth" key="myth114">Rimthusser</rs>
+</l>
+<l>Tvekamp <seg type="com" n="com55">end</seg> paa Liv og D&#x00F8;d,</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth59">Odins</rs> Ord</hi> ved <rs type="myth" key="myth6">Balders</rs>-Baalet</l>
+<l>
+<seg type="com" n="com55">End</seg>, som i <rs type="myth" key="myth78">Vafthrudners</rs>-Maalet,</l>
+<l>Knuser <rs type="myth" key="myth111">Jettens</rs> Pandebrask!</l>
+</lg>
+<lg n="17">
+<l>Ja, hvor <hi rend="spaced">Mennesket</hi> paa Jorden</l>
+<l>Vaagner op med Aand og Ord,</l>
+<l>Og hvor Hjertet, som i Norden,</l>
+<l>Slaaer for Daad af <hi rend="spaced">
+<rs type="myth" key="myth74.b">Asa-Thor</rs>
+</hi>,</l>
+<l>Indeklemte mellem Skjolde,</l>
+<l>Arrige som andre <rs type="myth" key="myth265">Trolde</rs>,</l>
+<l>
+<rs type="myth" key="myth116">Thusser</rs> <seg type="com" n="com15">springe maae i Flint</seg>.</l>
+</lg>
+<lg n="18">
+<l>Thi kun hvor i K&#x00E6;mpe-R&#x00F8;sten</l>
+<l>Larmen d&#x00F8;nner h&#x00F8;it i Sky,</l>
+<l>Som i Vaaren, <seg type="com" n="com73">saa</seg> i H&#x00F8;sten</l>
+<l>
+<rs type="myth" key="myth265">Troldene</rs> for Lynet flye,</l>
+<l>
+<pb n="209" ed="PS" type="edition" />Maae bekiende, at oph&#x00F8;iet</l>
+<l>
+<hi rend="spaced">Ordets Kraft</hi> er over <hi rend="spaced">&#x00D8;iet</hi>,</l>
+<l>
+<hi rend="spaced">F&#x00F8;lelig</hi> som Tordenslag!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax020.jpg" ed="A" subtype="column" n="257" />
+
+<lg n="19">
+<l>
+<hi rend="spaced">Ordet</hi> med sin Klang i R&#x00F8;sten,</l>
+<l>Med sin Fart til Hjertensgrund,</l>
+<l>Som en Lynilds-Fart fra &#x00D8;sten,</l>
+<l>Slag i Slag fra Mund til Mund,</l>
+<l>Det er Guddoms-Underv&#x00E6;rket,</l>
+<!-- i 2. udgave mangler kommaet. -->
+<l>Det er <hi rend="spaced">Folke-Kiendem&#x00E6;rket</hi>
+</l>
+<l>Mellem <hi rend="spaced">Dyr</hi> som mellem Steen.</l>
+</lg>
+<lg n="20">
+<l>Mellem Jord og Himmel svinger</l>
+<l>Ordet sig af Munden ud,</l>
+<l>
+<rs type="bible" key="1 Mos 2,7" rend="reference">
+<hi rend="spaced">Livet</hi>, som deraf udspringer</rs>,</l>
+<l>Har kun <hi rend="spaced">Mennesket</hi> af Gud,</l>
+<l>Deraf sig hos Mand og Kvinde</l>
+<l>Skal et Levnetsl&#x00F8;b udspinde,</l>
+<l>Som til Maal har Evighed!</l>
+</lg>
+<lg n="21">
+<l>Derfor ikke Bjerges Alder</l>
+<!-- 2. udgave har "Bjergets" -->
+<l>Eller Maanens f&#x00F8;rste <seg type="com" n="com67">Ny</seg>
+</l>
+<l>
+<hi rend="spaced">
+<seg type="com" n="com32">Tidens F&#x00F8;dsel</seg>
+</hi> Aanden kalder,</l>
+<l>Men Kraft-Ordets Klang i Sky,</l>
+<l>Med <hi rend="spaced">det</hi> Storv&#x00E6;rk <hi rend="spaced">Tid</hi> er givet,</l>
+<l>Og for Mennesket <hi rend="spaced">Ord-Livet</hi>
+</l>
+<l>Er det aandelige Lys.</l>
+</lg>
+<lg n="22">
+<l>Ja, <rs type="bible" rend="reference" key="2 Pet 1,19">Livs-Ordet er Nat-Lampen</rs>
+</l>
+<l>For vor Sl&#x00E6;gt, og ei for Dyr,</l>
+<l>I vor Aande har Ord-Dampen</l>
+<l>Magt og Mod som <hi rend="spaced">
+<rs type="myth" key="myth74">Thor</rs>
+</hi> og <hi rend="spaced">
+<rs type="myth" key="myth73">Tyr</rs>
+</hi>,</l>
+<l>
+<pb n="210" ed="PS" type="edition" />Kan med Liv og Lys udrette</l>
+<l>Meer end hele <seg type="com" n="com51">
+<hi rend="spaced">Rummets</hi> <rs type="myth" key="myth232">V&#x00E6;tte</rs>
+</seg>
+</l>
+<l>Med sin Tr&#x00E6;ldoms blinde Drift.</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax021.jpg" ed="A" subtype="column" n="258" />
+
+<lg n="23">
+<l>Uden &#x201C;<rs type="title" key="title2819">Ordet som det <hi rend="spaced">lyder</hi>
+</rs>,&#x201D;</l>
+<l>Ord-Skrift er ut&#x00E6;nkelig,</l>
+<l>Bogstav-Skrift kun Ord betyder,</l>
+<l>Som kan <hi rend="spaced">h&#x00F8;rlig</hi> n&#x00E6;vne sig,</l>
+<l>
+<seg type="com" n="com57">Saa</seg> naar Ordet var forstummet,</l>
+<l>Ei i hele Verdens-Rummet,</l>
+<!-- i 2. udgave mangler kommaet. -->
+<l>Var et Glimt af Tanke-Lys.</l>
+</lg>
+<lg n="24">
+<l>Eller kan selv <seg type="com" n="com44">Rummets Pave</seg>,</l>
+<l>Som forn&#x00E6;gter Livets Ord,</l>
+<l>Uden R&#x00F8;st og Runestave</l>
+<l>Raabe ud sin Kl&#x00F8;gt paa Jord?</l>
+<l>Eller kan en Tanke f&#x00F8;des,</l>
+<l>Uden med en Lyd at m&#x00F8;des</l>
+<l>I det <rs type="bible" rend="reference" key="1 Mos 1,3">Ord, som skaber Lys</rs>?</l>
+</lg>
+<lg n="25">
+<l>Kun til <hi rend="spaced">Aand</hi> kan <hi rend="spaced">Ordet</hi> svare,</l>
+<l>Gaae i Hjertet ind og ud,</l>
+<l>Kun i Ordet <hi rend="spaced">aabenbare</hi>
+</l>
+<l>Kan sig <hi rend="spaced">Menneske</hi> og <hi rend="spaced">Gud</hi>,</l>
+<l>Kun i <hi rend="spaced">Ord</hi> kan alt udtrykkes,</l>
+<l>Hvad vi troe og hvad os tykkes,</l>
+<l>Ord og Tanke gaaer i eet.</l>
+</lg>
+<lg n="26">
+<l>Kun i Ord kan Tanker giemmes,</l>
+<l>Kun med Ord de gaae i Arv,</l>
+<l>Derved kun Oplysning fremmes</l>
+<l>Skridt for Skridt til Livets Tarv;</l>
+<l>
+<pb n="211" ed="PS" type="edition" />Kun i <hi rend="spaced">Ordet</hi> Jorderige</l>
+<l>Fundet har en <rs type="bible" rend="reference" key="1 Mos 28,12">Himmel-Stige</rs>,</l>
+<l>
+<hi rend="spaced">Sl&#x00E6;gten</hi> har et <hi rend="spaced">Levnetsl&#x00F8;b</hi>!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax022.jpg" ed="A" subtype="column" n="259" />
+
+<lg n="27">
+<l>Levnetsl&#x00F8;bet i det Store,</l>
+<l>Stykket ud i Baner smaa,</l>
+<l>Hvor Livs-Ordet vi kan spore,</l>
+<l>
+<seg type="com" n="com16">L&#x00E6;res til vi at forstaae</seg>,</l>
+<l>Som en Livs-Vei over D&#x00F8;den,</l>
+<l>Giennem Nat til Morgenr&#x00F8;den:</l>
+<l>
+<rs type="myth" key="myth101">Valhals</rs>-Vei til <hi rend="spaced">
+<rs type="myth" key="myth121">Gimleborg</rs>
+</hi>!</l>
+</lg>
+<lg n="28">
+<l>Det er klarlig <hi rend="spaced">
+<rs type="myth" key="myth701">Norne-Dommen</rs>
+</hi>,</l>
+<l>Liv og Fred er <hi rend="spaced">
+<rs type="myth" key="myth77">Urdas</rs>
+</hi> <seg type="com" n="com17">Maal</seg>,</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth80">Verdand</rs>
+</hi> slaaer med D&#x00F8;dsord <seg type="com" n="com69">Bommen</seg>,</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth68">Skulda</rs>
+</hi> drikker <rs type="myth" key="myth77">Urdas</rs> <seg type="com" n="com49">Skaal</seg>,</l>
+<l>Rister Runer for Livs-Ordet,</l>
+<l>Som, hvor dybt det end er jordet,</l>
+<l>Staaer med Solen op igien.</l>
+</lg>
+<lg n="29">
+<l>Derom <hi rend="spaced">
+<rs type="myth" key="myth347">Gladhjems</rs>
+</hi> Haner gale</l>
+<l>H&#x00F8;it i Nordens <hi rend="spaced">
+<seg type="com" n="com18">Asamaal</seg>
+</hi>,</l>
+<l>Det er <hi rend="spaced">
+<rs type="myth" key="myth59">Odins</rs>
+</hi> m&#x00F8;rke Tale</l>
+<l>Ved Nordlysets <rs type="myth" key="myth6">Balder</rs>sbaal,</l>
+<l>Det er Hjertets Toner &#x00F8;mme,</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth19">Freias</rs>
+</hi> gyldne Taare-Str&#x00F8;mme,</l>
+<l>Morgenr&#x00F8;dens Moderski&#x00F8;d!</l>
+</lg>
+<lg n="30">
+<l>Ja, <hi rend="spaced">Livs-Ordet</hi> op af D&#x00F8;de</l>
+<l>Stod med <hi rend="spaced">ham</hi>, som kaldes ret</l>
+<l>&#x201C;<rs type="bible" rend="reference" key="1 Kor 15,20">De Opstandnes F&#x00F8;rstegr&#x00F8;de</rs>,&#x201D;</l>
+<l>I sin Grav af Gud begr&#x00E6;dt,</l>
+<l>
+<pb n="212" ed="PS" type="edition" />I sit Ord til alle Sj&#x00E6;le</l>
+<l>Aandens R&#x00F8;st og Himlens M&#x00E6;le,</l>
+<l>Selv det evige <hi rend="spaced">Guds-Ord</hi>!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax023.jpg" ed="A" subtype="column" n="260" />
+
+<lg n="31">
+<l>Med hans Ord til hele Jorden</l>
+<l>
+<hi rend="spaced">Aand</hi> og <hi rend="spaced">Liv</hi> <seg type="com" n="com20">udgaae</seg> paany,</l>
+<l>Som i &#x00D8;sten, <seg type="com" n="com70">saa</seg> i Norden</l>
+<l>Svinger Ordet sig i Sky,</l>
+<l>
+<seg type="com" n="com71">Saa</seg> sin Byrd det aabenbarer,</l>
+<l>Thi kun det tilhimmels farer,</l>
+<l>Som fra Himlen daled ned.</l>
+</lg>
+<lg n="32">
+<l>Om <hi rend="spaced">Livs-Ordet</hi> i <placeName key="poet457">H&#x00F8;inorden</placeName>
+</l>
+<l>Nu der Syn for Sagnet gaaer,</l>
+<l>Om Guds <hi rend="spaced">Forsyns</hi> Vei paa Jorden,</l>
+<l>Om Guds-Folkets <seg type="com" n="com21">Gyldenaar</seg>,</l>
+<l>Levnets-L&#x00F8;bet af Livs-Aanden</l>
+<l>
+<seg type="com" n="com22">Selv sig klarer</seg> efterhaanden</l>
+<l>I Guds-Ordets Middags-Lys!</l>
+</lg>
+<lg n="33">
+<l>
+<hi rend="spaced">Folke-Livet</hi>, fra de D&#x00F8;de</l>
+<l>Her opreist med Ungdoms-Mod,</l>
+<l>I sin anden Morgenr&#x00F8;de</l>
+<l>
+<rs type="bible" rend="reference" key="1 Kor 15,25-27">Tr&#x00E6;der D&#x00F8;den under Fod</rs>,</l>
+<l>Og dermed er <rs type="bible" subtype="bibleStart" n="bible1" rend="reference" key="Ef 1,14" />Pant os givet</l>
+<l>Paa Opstandelse til Livet<rs type="bible" subtype="bibleEnd" n="bible1" rend="reference" key="Ef 1,14" />
+</l>
+<l>Af det hele <seg type="com" n="com45">Adams-Ki&#x00F8;n</seg>!</l>
+</lg>
+<lg n="34">
+<l>Ja, Guds-Ordet i vor Midte</l>
+<l>Gi&#x00F8;r <hi rend="spaced">
+<rs type="bible" rend="reference" key="Matt 16,3">et <seg n="com24" type="com">Tidens</seg> Tegn</rs>
+</hi> fuldstort,</l>
+<l>Hvortil <seg type="com" n="com23">Speilet</seg> er at hitte</l>
+<l>Kun i &#x00D8;st ved <hi rend="spaced">
+<placeName>Nain</placeName>s</hi> Port,</l>
+<l>
+<pb n="213" ed="PS" type="edition" />Hvor en <rs type="bible" subtype="bibleStart" n="bible2" rend="reference" key="Luk 7,11-14" />
+<hi rend="spaced">Ungersvend</hi> fra Baaren</l>
+<l>Reiste sig og kyssed Taaren</l>
+<l>Fra sin gamle Moders Kind<rs type="bible" subtype="bibleEnd" n="bible2" rend="reference" key="Luk 7,11-14" />.</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax024.jpg" ed="A" subtype="column" n="261" />
+
+<lg n="35">
+<l>Og Guds-Ordet ved vor Side</l>
+<l>I sin egen Konge-Stad</l>
+<l>Gi&#x00F8;r et Tegn, som rygtes <seg type="com" n="com25">vide</seg>
+</l>
+<!-- i 2. udgave mangler kommaet. -->
+<l>Og gi&#x00F8;r <hi rend="spaced">Menigheden</hi> glad,</l>
+<l>Moder-Hjertet i Guds Rige,</l>
+<l>Moder til den <rs type="bible" subtype="bibleStart" n="bible3" rend="eg" key="Mark 5,21-43" />
+<hi rend="spaced">tolvaars Pige</hi>,</l>
+<l>Som sad op ved Herrens Haand<rs type="bible" subtype="bibleEnd" n="bible3" rend="eg" key="Mark 5,21-43" />!</l>
+<!-- parallel bibelsted: key="Luk 8,40-56" -->
+</lg>
+<lg n="36">
+<l>Levnetsl&#x00F8;bet i det Store,</l>
+<l>Giennem Sl&#x00E6;gtens Tusindaar,</l>
+<l>L&#x00E6;nge nok var kun at spore</l>
+<l>Til <hi rend="spaced">
+<seg type="com" n="com64">Utidens</seg>
+</hi> Ormegaard;</l>
+<l>Under alle Himmel-Egne</l>
+<l>For udlevet var at regne</l>
+<l>
+<hi rend="spaced">Folke-Livet</hi> trindt paa Jord!</l>
+</lg>
+<lg n="37">
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth103">Asken</rs>
+</hi> syntes nys forbandet</l>
+<l>Til at visne og gaae ud,</l>
+<l>Atter dog, af <hi rend="spaced">
+<rs type="myth" key="myth112">Norner</rs>
+</hi> vandet,</l>
+<l>Skyder nu den friske Skud;</l>
+<l>Dagligdags dog meer den <seg type="com" n="com26">fr&#x00F8;nnes</seg>,</l>
+<l>Og om end den synlig gr&#x00F8;nnes,</l>
+<l>
+<rs type="bible" rend="reference" key="Matt 3,10">&#x00D8;xen er ved Roden lagt</rs>.</l>
+<!-- ogs&#x00E5; Luk 3,9 -->
+</lg>
+<lg n="38">
+<l>
+<hi rend="spaced">Folke-Livet</hi> trindt paa Jorden,</l>
+<l>Hvor engang det havde Vaar,</l>
+<l>Faaer, saavelsom i vort <placeName key="fak24">Norden</placeName>,</l>
+<l>H&#x00F8;st i samme <hi rend="spaced">Hundredaar</hi>;</l>
+<l>
+<pb n="214" ed="PS" type="edition" />Men, if&#x00F8;lge Himmel-R&#x00F8;sten,</l>
+<l>
+<rs type="bible" rend="reference" key="Gal 6,7">Alt som S&#x00E6;den, <seg type="com" n="com27">saa</seg> er H&#x00F8;sten</rs>,</l>
+<l>
+<rs type="bible" rend="reference1787" key="Hos 8,7">Veirets Frugt er Hvirvelvind</rs>.</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax025.jpg" ed="A" subtype="column" n="262" />
+
+<lg n="39">
+<l>De, som saaed St&#x00F8;v i Luften</l>
+<l>Til et himmelh&#x00F8;it Kastel,</l>
+<l>De kun h&#x00F8;ste med Fornuften</l>
+<l>
+<seg type="com" n="com28">Rulle-Vei</seg> med Damp til <rs type="myth" key="myth33">Hel</rs>,</l>
+<l>Det er, hvad de blinde Kr&#x00E6;fter</l>
+<l>Pege paa og hige efter,</l>
+<l>Det er deres <seg type="com" n="com29">D&#x00F8;dning-Dands</seg>.</l>
+</lg>
+<lg n="40">
+<l>Men hos <hi rend="spaced">Folket i <placeName key="poet457">H&#x00F8;inorden</placeName>
+</hi>
+</l>
+<l>Nu der Syn for Sagnet gaaer</l>
+<l>Om Guds <hi rend="spaced">Forsyns</hi> Vei paa Jorden</l>
+<l>Og Guds-Folkets <seg type="com" n="com30">Gyldenaar</seg>;</l>
+<l>Levnetsl&#x00F8;bet med Livs-Aanden</l>
+<l>Her <seg type="com" n="com31">sig klarer</seg> efterhaanden</l>
+<l>I Guds-Ordets Middags-Lys!</l>
+</lg>
+<lg n="41">
+<l>
+<hi rend="spaced">
+<seg type="com" n="com19">Tidens F&#x00F8;dsel</seg>
+</hi>, <seg type="com" n="com47">Tidens <hi rend="spaced">Fylde</hi>
+</seg>,</l>
+<l>Derpaa gi&#x00E6;tted <placeName key="fak24">Nordens</placeName> Aand,</l>
+<l>Derom <hi rend="spaced">han</hi>, hvem Engle hylde,</l>
+<l>Giver Svar fra f&#x00F8;rste Haand;</l>
+<l>I <placeName key="poet457">H&#x00F8;inorden</placeName> findes &#x00D8;re</l>
+<l>Til om Tidens L&#x00F8;b at h&#x00F8;re</l>
+<l>Klare Ord af Sandheds Mund.</l>
+</lg>
+<lg n="42">
+<l>Livets Kilde, <rs type="bible" rend="eg1787" key="Jak 1,12">Livets Krone</rs>,</l>
+<!-- ogs&#x00E5; &#x00C5;b 3,11 -->
+<l>Ki&#x00E6;rlighedens <seg type="com" n="com52">Dronning-Stol</seg>,</l>
+<l>Skjult i Hjertedybets Tone</l>
+<l>For <hi rend="spaced">
+<rs type="myth" key="myth437">Valguders</rs>
+</hi> Vinter-Sol,</l>
+<l>
+<pb n="215" ed="PS" type="edition" />For <hi rend="spaced">den</hi> gr&#x00E6;d i <hi rend="spaced">danske <seg type="com" n="com46">Aarer</seg>
+</hi>
+</l>
+<l>
+<hi rend="spaced">
+<rs type="myth" key="myth19">Freia</rs>
+</hi> hemmelig Guld-Taarer,</l>
+<l>
+<rs type="bible" rend="reference" key="Sl 126,5">Taare-S&#x00E6;d</rs> gav gylden H&#x00F8;st!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax026.jpg" ed="A" subtype="column" n="263" />
+
+<lg n="43">
+<l>Her paa <hi rend="spaced">K&#x00E6;mpe-Tungemaalet</hi>
+</l>
+<l>
+<seg type="com" n="com33">Klarer sig</seg> hver Heltedaad,</l>
+<l>Her paa <hi rend="spaced">Hjerte-Modersmaalet</hi>
+</l>
+<l>R&#x00F8;bes Hjertets skjulte Raad,</l>
+<l>
+<seg type="com" n="com34">Klarer sig</seg> paa <hi rend="spaced">jordisk</hi> Maade</l>
+<l>Ki&#x00E6;rlighedens <hi rend="spaced">Himmel-Gaade</hi>:</l>
+<!-- 2. udgave har "Kj&#x00E6;rlighedens" -->
+<l>Aandens Frihed, Hjertets Fred!</l>
+</lg>
+<lg n="44">
+<l>F&#x00F8;rst og sidst <seg type="com" n="com35">sig klarer</seg> <hi rend="spaced">Ordet</hi>,</l>
+<l>Aandens Tolk og <seg type="com" n="com36">Kvindens S&#x00E6;d</seg>,</l>
+<l>
+<rs type="bible" subtype="bibleStart" rend="allusion" n="bible5" key="Luk 1,41-45" />
+<seg type="com" n="com72">End</seg> uf&#x00F8;dt med Kraft omgjordet,</l>
+<l>Men i Moder-Ski&#x00F8;det sp&#x00E6;d<rs type="bible" subtype="bibleEnd" rend="allusion" n="bible5" key="Luk 1,41-45" />,</l>
+<l>Som vi nu til Verdens Ende</l>
+<l>Glade troe og frit bekiende</l>
+<l>Om <rs type="bible" rend="reference" key="Joh 1,14">Guds-Ordet, som blev Ki&#x00F8;d</rs>!</l>
+</lg>
+<lg n="45">
+<l>Sagnet gik for Vind og Vove</l>
+<l>Her paa B&#x00F8;lgen under &#x00D8;</l>
+<l>Om et <seg type="com" n="com65">Bur</seg> i <hi rend="spaced">
+<placeName key="fak15">S&#x00E6;llands</placeName>
+</hi> Skove</l>
+<l>Ved den stille, dybe S&#x00F8;,</l>
+<l>Hvor i <rs type="myth" key="myth106">Asernes</rs> <hi rend="spaced">
+<seg type="com" n="com37">H&#x00F8;ialder</seg>
+</hi>
+</l>
+<l>Mad til L&#x00E6;gedom for <hi rend="spaced">
+<rs type="myth" key="myth6">Balder</rs>
+</hi>
+</l>
+<l>Laved <hi rend="spaced">
+<rs type="myth" key="myth112">Norne</rs>-S&#x00F8;stre</hi> tre.</l>
+</lg>
+<lg n="46">
+<l>Nu paa Grund er Sagnet drevet,</l>
+<l>Maa behandles som et Vrag,</l>
+<l>Thi sin <seg type="com" n="com38">Helsot</seg> overlevet</l>
+<l>
+<rs type="myth" key="myth6">Balder</rs> har den Dag idag,</l>
+<l>
+<pb n="216" ed="PS" type="edition" />Ladet <seg type="com" n="com39">
+<hi rend="spaced">
+    <rs type="myth" key="myth1117">Gevars</rs>
+</hi> Datter</seg> fare,</l>
+<l>&#x00C6;gtet <hi rend="spaced">
+<rs type="myth" key="myth22">Gefion</rs>
+</hi> den klare,</l>
+<l>Enke-Dronning efter <hi rend="spaced">
+<rs type="myth" key="myth67">Skjold</rs>
+</hi>!</l>
+</lg> 
+<pb type="text" facs="1866_1403_fax027.jpg" ed="A" subtype="column" n="264" />
+
+<lg n="47">
+<l>Om med <hi rend="spaced">
+    <rs type="myth" key="myth1118">Gelder</rs>
+</hi> da end <hi rend="spaced">
+<rs type="myth" key="myth128">H&#x00F8;der</rs>
+</hi>
+</l>
+<l>Harmelig gi&#x00F8;r f&#x00E6;lles Sag,</l>
+<l>Brat han for sin <seg type="com" n="com40">Kryhed</seg> b&#x00F8;der,</l>
+<l>Stryge maa sit F&#x00E6;llesflag;</l>
+<l>Thi, hvor tit end Verden skifter,</l>
+<l>Atter dog sit Kys tilvifter</l>
+<l>
+<hi rend="spaced">Lykke-<rs type="myth" key="myth499">Disen</rs> Dannebrog</hi>!</l>
+</lg>
+				<p rend="firstIndentRight">
+					<hi rend="italic">N. F. S. Grundtvig.</hi>
+				</p>
+<p rend="firstIndent">
+<fw type="longLine" />
+
+
+	    <pb type="periText" facs="1866_1403_fax028.jpg" />
+	    <pb type="periText" facs="1866_1403_fax029.jpg" />
+	    <pb type="periText" facs="1866_1403_fax030.jpg" />
+	    <pb type="periText" facs="1866_1403_fax031.jpg" />
+        <pb type="periText" facs="1866_1403_fax032.jpg" />
+        <pb type="periText" facs="1866_1403_fax033.jpg" />
+        <pb type="periText" facs="1866_1403_fax034.jpg" />
+        <pb type="periText" facs="1866_1403_fax035.jpg" />
+</p>
+   
+   
+           </div>
+       </body>
+</text>
+</TEI>

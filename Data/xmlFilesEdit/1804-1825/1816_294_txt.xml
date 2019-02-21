@@ -1,0 +1,499 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="main">Kundgjørelse angaaende Udgaven af Saxos og Snorros Krøniker
+      </title>
+      <title rend="shortForm">Kundgjørelse angaaende Udgaven</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Vibeke A. Pedersen</editor>
+      <editor role="student2">Jeppe Karnøe Knudsen</editor>
+      <editor role="student1">Jørgen Lauge Nielsen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.11</idno>
+               <idno type="content">1.11</idno>
+               <idno type="technic">1.11.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>10 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2017-11-01">www.grundtvigsværker.dk, version 1.11, 1. november 2017</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>2017-11-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1816_294_txt.xml" type="txt">Læsetekst</note>
+            <note target="1816_294_com.xml" type="com">Punktkommentar</note>
+            <note target="1816_294_intro.xml" type="intro">Indledning</note>
+            <note target="1816_294_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>1816</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="294">
+        <desc>Førstetrykket</desc>
+        <num>1816</num>
+       </witness>
+      </listWit>
+     <!-- <listWit xml:id="pageNumber">
+       <witness xml:id="PS|US|VU">
+        <desc>[udgave]</desc>
+        <num>[bindnummer]</num>
+       </witness>
+      </listWit>-->
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>prosa</term>
+       <term>pamfletter</term>
+      
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>litteratur</term>
+       <term>norrønt</term>
+       <term>historie</term>
+       <term>nordisk</term>
+     
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KV" who="KV" when="2012-05-14">txt2tei</change>
+          <change xml:id="VAP" who="VAP" when="2012-05-14">påbegyndt skema og ryddet lidt ud i mæslinger ved udfyldning   <!-- Kære Student! Prøv at få tal og tekst fra originalen ind i skemaet (tabellen) som angivet for de første to rækker (rows) mvh. Vibeke.
+   
+   Der mangler størrelser på overskrifter og underskrifter--></change>
+      <change xml:id="auto" who="auto" when="2017-08-10">Autoopmærket af autotag.awk v12 KK 2017-03-09</change>
+         <change who="VAP" when="2017-08-11">færdig udfyldning Oprettet 39-42 (fra fotokopi, som ikke lå til grund for seg-opmærkningen samt 43-58 efter 2. kollation. fjernet mæslinger på place</change>
+       <change xml:id="JLN" who="JLN" when="2017-08-11">1.kollationering færdiggjort ud fra løsark mærket nr. 36789, dog mangler programmering af tabel. Yderligere seg-opmærket</change>
+              <change who="JLN" when="2017-08-11">2K færdig undtagen to tankestreger til allersidst. Der mangler fortsat programmering af tabel v. Kim, som er informeret. Indført 2. kollation efter Thorkelin (VAP's kollation)</change>
+         <change who="VAP" when="2017-08-16">smårettelser, slettet com16. (slået sm m 15). oprettet com59</change>
+         <change xml:id="JKK" who="JKK" when="2017-08-18">3. kollationering ved anvendelse af eksemplar fra KB, N.F.S. Grundtvigs Arkiv</change>
+         <change who="VAP" when="2017-08-18">rettelser efter Kirsten. oprettet com60-65</change>
+        <change who="VAP" when="2017-09-05">rettelser efter FLN. oprettet 66-68. Slettet 33</change>
+         <change who="VAP" when="2017-09-12">rettelser efter Kirstens gennemsyn af FLN-rettelser</change>
+        <change who="VAP" when="2017-10-02">rettelser efter Steen. Oprettet com69-78, genoplivet 33 og 37 med nyt indhold</change>
+        <change who="VAP" when="2017-10-05">kontrol af rettelser efter Steen</change>
+       <change xml:id="JR" who="JR" when="2017-10-20">Rettet tabel</change>
+    	<change xml:id="KSR" who="KSR" when="2017-10-23">tilpasset tabel</change>
+    	   <change who="VAP" when="2017-11-07">korrekstet faxnumre</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">    
+         <pb type="periText" facs="1816_294_fax001.jpg"/>
+        <pb type="periText" facs="1816_294_fax002.jpg"/>
+     
+	 <!--
+		
+			
+				Kundgjørelse
+				Nik. Fred. Sev. Grundtvig
+				
+					Generated 
+					BookPartnerMedia
+				
+			
+			
+				
+			
+			
+				1816
+			
+			
+			[Source decription]
+			
+		
+	-->
+	
+		<front rend="[Titelblad]">
+			<titlePage type="first">
+			<pb type="text" facs="1816_294_fax002.jpg" ed="A" n="1"  rend="supp"/>
+			
+				<docTitle>
+				   <titlePart type="main">Kundgjørelse</titlePart>
+				   <titlePart type="main">angaaende</titlePart>
+				   <titlePart type="main">Udgaven af <persName key="pe237">Saxos</persName> og <persName key="pe49">Snorros</persName> Krøniker.</titlePart>
+</docTitle>
+<byline/>
+				<graphic style="longLine"/>
+				<epigraph>
+				</epigraph>
+				
+				<docImprint>
+</docImprint>
+</titlePage>
+</front>
+<body xml:space="preserved">
+   
+<div type="[Tekst]">
+
+
+<p rend="noIndent"><hi rend="initial">E</hi>t Aar er nu henrundet, siden vi kundgjorde Oprettelsen af et Selskab, hvis Øiemeed er, ved Fleres Understøttelse at gjøre de Skatte <seg type="com" n="com1">Fædrene</seg> i Historien have efterladt os, frugtbare til menig Mands Bedste, ei meget kortere er det siden vi udgav Prøver af <persName key="pe237">Saxos</persName> og <persName key="pe49">Snorros</persName> <seg type="com" n="com59">Rigs-Krøniker</seg> i en ny Oversættelse, og indbød deres danske og norske Venner til, ved frivillige Bidrag at skjænke Folkene de dyrebare Mindesmærker om <seg type="com" n="com61">Fædres</seg> Liv og <seg type="com" n="com2">Idrætter</seg>. Vi haabede dengang at kunne <seg type="com" n="com44">alt</seg> i indeværende Aar have bragt Halvdelen af Værket for Lyset, men, formedelst den længere Tid Bidragenes Indsamling <seg type="com" n="com3">medtager</seg>, er det blevet umueligt. Dette ansee vi imidlertid for vor Pligt at bevise, og troe ei at kunne giøre det be<!-- JKK sænket bogstav, e -->dre end ved en summarisk Fortegnelse paa hvad der i hver Maaned er indkommet.</p>
+   <!-- Kære Student! Prøv at få tal og tekst fra originalen ind i skemaet (tabellen) som angivet for de første to rækker (rows) mvh. Vibeke.
+   
+   Der mangler størrelse på overskrifter og underskrifter-->
+	
+	   <!--<l rend="firstIndent"><hi rend="spaced">September 1815. </hi></l>-->
+   
+   <table type="plain">      
+		<row>
+		   <cell cols="6" rend="center"><hi rend="spaced">September 1815.</hi></cell>
+		</row>
+		<row>
+			<cell>Fra en enkelt Mand</cell>
+			<cell></cell>
+			<cell> 20 <seg type="com" n="com4">Rbd.</seg></cell>
+			<cell>&#x2033;</cell>
+			<cell><seg type="com" n="com5">Mk.</seg> </cell>
+			<cell><seg type="com" n="com6">N. B.</seg></cell>
+		</row>
+	   <row>
+	      <cell cols="6" rend="center"><hi rend="spaced">October.</hi></cell>
+	   </row>
+		<row>
+			<cell>Fra de underordnede Embedsmænd i det kongl. danske Cancellie</cell>
+			<cell>202</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra det forrige Selskab Nordmands-Foreningen</cell>
+			<cell>42</cell>
+			<cell>&#x2013;</cell>
+			<cell>3</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra Enkelte</cell>
+			<cell>35</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="6" rend="center"><hi rend="spaced">November.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra Studenter-Selskabet ved <placeName key="his2547">det kongl. Frederiks-Universitet</placeName> i <placeName key="fak42">Christiania</placeName></cell>
+			<cell>500</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra den øverste Classe i <placeName key="fak2531">Kjøbenhavns Kathedral-Skole</placeName></cell>
+			<cell>56</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra Enkelte</cell>
+			<cell>50</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+      	<cell cols="6" rend="center"><hi rend="spaced">December.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra Alumnerne paa <placeName key="fak2359">Regentsen</placeName></cell>
+			<cell>190</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra Enkelte</cell>
+			<cell>50</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+      	<cell cols="6" rend="center"><hi rend="spaced">Januari 1816.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra enkelte Mænd</cell>
+			<cell>163</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="6" rend="right"><seg type="com" n="com7">Lateris</seg> 1308 <seg type="com" n="com8">Rbd.</seg> 3 <seg type="com" n="com9">Mk.</seg> <seg type="com" n="com45">N. B.</seg></cell>
+		</row>
+      <row>
+			<cell cols="6" rend="right"><pb type="text" facs="1816_294_fax003.jpg" ed="A" n="2"  rend="supp"/>Transport 1308 <seg type="com" n="com10">Rbd.</seg> 3 <seg type="com" n="com11">Mk.</seg> <seg type="com" n="com58">N. B.</seg></cell>
+		</row>
+      <row>
+			<cell cols="6" rend="center"><hi rend="spaced">Februari.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra en <seg type="com" n="com69">Student-Samling</seg> ved det <placeName key="fak20">Kjøbenhavnske Universitet</placeName></cell>
+			<cell>65</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row><row>
+			<cell>Fra <placeName key="fak949">Slagelse</placeName></cell>
+			<cell>55</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra en enkelt Mand</cell>
+			<cell>20</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="3" rend="center"><hi rend="spaced">Marts.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra Søe-Etatens <seg type="com" n="com46">Inventarie-Comptoir</seg></cell>
+			<cell>50</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra Enkelte</cell>
+			<cell>40</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="3" rend="center"><hi rend="spaced">April.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra en enkelt Mand</cell>
+			<cell>10</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="3" rend="center"><hi rend="spaced">Mai.</hi></cell><cell></cell>
+		</row>
+      <row>
+			<cell>Fra <placeName key="fak355">Aalborg Bye</placeName> og dens <seg type="com" n="com47">Omkreds</seg></cell>
+			<cell>521</cell>
+			<cell>&#x2013;</cell>
+			<cell>2</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell>Fra Embedsmænd under General-Post-Directionen</cell>
+			<cell>255</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;<!-- JKK Læderet tegn --></cell>
+		</row>
+      <row>
+			<cell>Fra <placeName key="fak2530">Frederiksborg</placeName> Amt</cell>
+			<cell>52</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="3" rend="center"><hi rend="spaced">Junii.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra en <seg type="com" n="com70">Studenter-Samling</seg> ved det <placeName key="fak20">Kjøbenhavnske Universitet</placeName></cell>
+			<cell>680</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="3" rend="center"><hi rend="spaced">Julii.</hi></cell>
+		</row>
+      <row>
+			<cell>Fra <placeName key="fak70">Fyen</placeName> og Sammes Litteraire Selskab</cell>
+			<cell>2700</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+       <row>
+			<cell>Fra <placeName key="fak187">Colding</placeName></cell>
+			<cell>91</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+       <row>
+			<cell>Fra Enkelte</cell>
+			<cell>160</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+       <row>
+			<cell cols="3" rend="center"><hi rend="spaced">August.</hi></cell>
+		</row>
+       <row>
+			<cell>Fra <placeName key="fak70">Fyen</placeName> og Sammes litteraire Selskab</cell>
+			<cell>300</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+       <row>
+			<cell cols="6" rend="center">Tilsammen 6307 <seg type="com" n="com12">Rbd.</seg> 5 <seg type="com" n="com13">Mk.</seg> <seg type="com" n="com14">N. B.</seg></cell>
+		</row>
+      <row>
+			<cell cols="6" rend="center"><hi rend="spaced">Desuden have vi modtaget:</hi></cell>
+		</row>
+      <row>
+			<cell>Fra Storthinget i <placeName key="fak42">Christiania</placeName></cell>
+			<cell>2275</cell>
+			<cell><seg type="com" n="com15">Rbd.</seg></cell>
+			<cell>Norsk.</cell>
+			<cell></cell>
+			<cell></cell>
+		</row>
+      <row>
+			<cell>Fra Universitets-Lærerne sammesteds</cell>
+			<cell>650</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell></cell>
+			<cell></cell>
+		</row>
+      <row>
+			<cell>Fra en enkelt Mand sammesteds</cell>
+			<cell>50</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2033;</cell>
+			<cell>&#x2013;</cell>
+			<cell>&#x2013;</cell>
+		</row>
+      <row>
+			<cell cols="6" rend="center">Tilsammen 2975 <seg type="com" n="com15">Rbd.</seg> Norsk.</cell>
+		</row>
+      <row>
+			<cell>Fra <placeName key="fak70">Fyens</placeName> literaire Selskab nogle Sølvpenge anslaaede til</cell>
+			<cell>20</cell>
+			<cell>Sølvdaler</cell>
+			<cell><seg type="com" n="com17">R. B.</seg></cell>
+			<cell></cell>
+			<cell></cell>
+		</row>
+	</table>
+
+
+<!--<indsæt mellemrum/p>-->
+<p rend="noIndent">Heraf sees, at vi først ved det afgjørende Tilskud i <hi rend="spaced">Juli</hi> Maaned ere satte i St<!-- JKK Læderet bogstav, t -->and til at bekoste de to første Bind af <seg type="com" n="com62">Krønikerne</seg>, og intet Øieblik <seg type="com" n="com67">ville</seg> vi nu forsømme, men haabe i November <pb type="text" facs="1816_294_fax004.jpg" ed="A" n="3" rend="supp"/>Maaned at kunne lade Trykningen begynde, og <hi rend="spaced">i næste Aars Mai</hi> at see den fuldendt. Vel møde herved adskillige Vanskeligheder, da det <seg type="com" n="com40">end</seg> kunde synes mange tvivlsomt, hvorvidt den hele Sum vil indkomme, og vi dog, for at hele Værket kan ligne sig selv, maae gjøre <seg type="com" n="com18">Tilberedelser</seg>, som forudsætte hvad man kalder tvivlsomt, ja, vi kan ei heller nægte, at, blandt de os gjorte Indvendinger, synes den betydeligst, at et Oplag paa 2000 Exemplarer turde være vel lidet; men deels føle vi det er vor Skyldighed, i Tillid til den historiske Aand, der <seg type="com" n="com71">saavidt</seg> har fremmet Værket, trøstig at begynde, og deels kan vi aldrig glemme, at var der ingen Vanskeligheder, da vare vore Bestræbelser overflødige. For imidlertid, saavidt muligt, at bortrydde hine Vanskeligheder, tillade vi os at yttre følgende Ønsker:</p>
+   
+<p rend="hangingIndent">1) At De som enten paa vor almindelige eller <seg type="com" n="com19">særdeles</seg> Anmodning have umaget sig med, at samle Bidrag, behagelig <seg type="com" n="com66">ville</seg>, saavidt det ikke allerede er skeet, i Septbr. eller Octbr. <seg type="com" n="com63">d. A.</seg> tilsende os hvad der er indkommet, og, om muligt, underrette os om, <seg type="com" n="com64">naar</seg> det Øvrige, som er udlovet enten aarlig eller paa eengang, kan bestemmes til Brug!</p>
+   
+<p rend="hangingIndent">2) At De som have udlovet Bidrag, det være sig aarlig eller samlede, <seg type="com" n="com68">ville</seg> i <seg type="com" n="com60">fornævnde</seg> <seg type="com" n="com72">Tidsløb</seg>, for saavidt det ei <seg type="com" n="com65">alt</seg> er skeet, <seg type="com" n="com20">gunstigst</seg> <seg type="com" n="com48">anmelde</seg>, enten der hvor de have tegnet sig eller til os, til hvad Tid eller hvilke Terminer vi <seg type="com" n="com73">tør gjøre Regning paa</seg> Deres Bidrag.</p>
+<p rend="firstIndent">At gjentage vor Forsikkring om det fuldstændigste Regnskab for de Penge, Kjærlighed til <seg type="com" n="com49">Fædrene</seg> betroer som en Helligdom i vore Hænder, vilde vi agte for upassende, dersom det ei skedte for at spørge, om man ønsker det aflagt i to Dele <seg type="com" n="com50">eftersom</seg> Værket udkommer, eller paa een Gang, ved dets Slutning, da et om det Første yttret Ønske skal være os en Lov! Slutte kan vi derimod ikke, uden at yttre vor inderlige Glæde over de mange utvetydige Beviser vi i det henrundne Aar have modtaget paa den varme Ihukommelse af <seg type="com" n="com51">Fædrene</seg> vi vovede at haabe.</p>
+<p rend="firstIndent">Først maae vi i denne Henseende gladelig anmærke, at det Kongehuus hvis Navn Historien har uadskillelig indflettet i vore <seg type="com" n="com52">Fædres</seg> Ærekrands, har ogsaa ved denne Leilighed udtrykkelig stadfæstet Historiens Vidnesbyrd om det inderlige <seg type="com" n="com21">Samfund</seg> der altid var mellem <placeName key="poet219">Dannemarks</placeName> Kongeslægt og Folk som mellem <seg type="com" n="com22">Løver</seg> og <seg type="com" n="com23">Hjerter</seg> i deres <seg type="com" n="com74">Vaaben</seg>. Til den kongelige Gavmildhed, som <placeName key="fak24">Nordens</placeName> Historie har saa meget at takke, og som vi skylde den store Udgave af <persName key="pe49">Snorros</persName> herlige Bog, maatte vi ved denne Leilighed ikke vende os, men <seg type="com" n="com24">Danner-Kongen</seg> var <seg type="com" n="com39">livsalig</seg> nok til at værdige Sagen den <seg type="com" n="com25">øiensynlige</seg> Opmærksomhed, der kunde vises af Majestæten som den ypperste <seg type="com" n="com41">Odelsmand</seg> i <seg type="com" n="com53">Fædrenes</seg> Minde, og har befalet os at indberette Sagens Udfald for da at modtage et Bidrag Majestæten allernaadigst vil blande med sine troe Undersaatters kiærlige <seg type="com" n="com26">Skierve</seg>. Ligeledes har Hans Høihed Prinds <persName key="pe98">Christian Frederik</persName>, som Søn af den Prinds, hvis Haand har <seg type="com" n="com75">skaaret</seg> <persName key="pe49">Snorros</persName> Hædersdragt, værdiget denne Sag en ligesaa sjelden, som uforglemmelig Opmærksomhed, og ydet et i Sandhed <hi rend="spaced">fyrsteligt</hi> Bidrag ei blot ved Gave, men ved Selv at at være <seg type="com" n="com54">Fædrenes</seg> Talsmand.</p>
+<p rend="firstIndent">Endelig kan og tør vi ikke fortie vor Glæde ved at have seet baade <placeName key="poet219">Dannemarks</placeName> og <placeName key="fak41">Norges</placeName> studerende Ungdom gløde af Følelser, som love og spaae <seg type="com" n="com55"><app type="corrNote" select="yes"><lem wit="GV">Fædrene</lem><rdg wit="A">Fædreue</rdg><witDetail n="38" wit="A"></witDetail></app></seg> værdige Sønner, og deres Minde talrige, kjærlige, <seg type="com" n="com77">kraftige</seg> Talsmænd i <placeName key="fak24">Norden</placeName>!</p>
+<p rend="firstIndent">Til Slutning maae vi med venlig Hu minde <persName key="pe237">Saxos</persName> og <persName key="pe49">Snorros</persName> Landsmænd om at Øieblikket er kostbart, og gode Gjerninger ei at opsætte. Vild <seg type="com" n="com27">Vaabengnye</seg> og alskens Uro har <pb type="text" facs="1816_294_fax005.jpg" ed="A" n="4" rend="supp"/>nu henved en heel Menneske-Alder, næsten uafbrudt forvirret <placeName key="fak12">Europas</placeName> Folkefærd, lagt an paa at forstyrre de <app type="corrNote" select="yes"><lem wit="GV">kjærlige</lem><rdg wit="A">kjærllge</rdg><witDetail n="2" wit="A"></witDetail></app> Forhold og de fredelige Sysler, samt paa at fængsle Opmærksomheden i det flygtige Øiebliks snevre Kreds. Ingen veed hvorlænge den Stilhed kan vare, som igjen har besøgt os, men alle veed vi at Historien ligesaalidt som Naturen er nogensteds sikkert for Uveir, og vel maae vi da føle os dobbelt opfordrede til med Raskhed og Iver, at bruge de flygtige Dage, helbrede paa de <seg type="com" n="com28">slagne</seg> Vunder, <seg type="com" n="com30">bøde</seg> paa den skedte <seg type="com" n="com31">Brøst</seg> og samle Kraft til at bære hvad den uvisse Fremtid kan bringe. At dette nu ingenlunde naaes ved at glemme det Forbigangne, fordybe sig i det Nærværende og blot hige efter legemlig <seg type="com" n="com32">Nødtørft</seg> og <seg type="com" n="com33">Overflødighed</seg>, derpaa, og paa den evige Sandhed at det er <hi rend="spaced">Aandskraft </hi>der behøves og fattes, have de seneste Dage givet et uimodsigeligt Beviis, og skal da Noget sanddru forjætte Staterne Kraft og Menneskeheden lysere Dage, da maa det unægtelig være ivrig Bestræbelse for selv at vinde, og hos det menige Folk at vække og udbrede hvad der aandelig styrker og adler Mennesket, hvad der kan trodse <seg type="com" n="com34">Lykkens</seg> Omskiftelser og forsøde <seg type="com" n="com42">Vandheld</seg>: ophøiende, kjærlige, haabfulde Følelser. At nu <hi rend="spaced">sand Fædrenelands-Kjærlighed </hi>med eet Ord udtrykker hvad der behøves, at den ei kan være tilstede, med mindre et Folk føler sig som een Slægt og eet Legeme i Aanden, og at denne Følelse er umuelig uden kjærligt Minde af den Fortid der <seg type="com" n="com78">indslutter</seg> vore adskilte Slægter i den eene, fælles, <hi rend="spaced">Fædrene-Slægt</hi>, det lader sig ikke vel nægte. Er det nu desuden <seg type="com" n="com43">saa</seg>, som Historien synes at sige, at her i <placeName key="fak24">Norden</placeName> er <seg type="com" n="com56">Fædrenes</seg> Historie den Kundskabs Kilde og blinkende Stjerne, hvortil Folket af Naturen føler sig draget og vinket, da maa den ogsaa være det Middel, hvorigjennem det her bedst vil lykkes at meddele menig Mand Oplysning og Kundskab, men at den ei dertil kan bruges før den henslumrede Kjærlighed atter opvaagner og at den neppe vækkes, hvis det ei kan skee ved Fortids Krøniker, der ere som et levende Ord af <seg type="com" n="com56">Fædrenes</seg> egen Mund, maa vel agtes for <seg type="com" n="com35">vist</seg>. En større Gave end de herlige Krøniker &#x2014; det rige Arvegods efter fattige <seg type="com" n="com57">Fædre</seg> &#x2014; kan vi da ikke skjænke menig Mand i <placeName key="fak24">Norden</placeName>; og vi tør nære det Haab derved at virke til Opvækkelse af en Aand, der vil skjænke Fædrenelandet Slægter, som <seg type="com" n="com36">værdigen</seg> afløse de <seg type="com" n="com37">Hensovne</seg> og Udlevede, i det de med ædel Daad fornye Deres Minde.</p>
+<p rend="firstIndent"><placeName key="fak8">Kjøbenhavn</placeName> den 3die August 1816.</p>
+<p rend="center"><hi rend="size2"><persName key="pe5">Pram</persName>. <persName key="pe240">Treschov</persName>. Grundtvig.</hi></p>
+<p rend="center">Committerede af Selskabet for de Nordiske Oldskrifter.</p>
+</div>
+
+  </body>
+
+       <pb type="periText" facs="1816_294_fax006.jpg"/>
+      
+   </text>   
+  </TEI>
