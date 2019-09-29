@@ -1,0 +1,1314 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Danske K&#x00E6;mpeviser til Skole-Brug udvalgte og till&#x00E6;mpede af Nik. Fred. Sev. Grundtvig</title>
+        <title rend="shortForm">Danske K&#x00E6;mpeviser</title>
+        <author>Vibeke A. Pedersen</author>
+        <editor role="editor2">ph.d. Dorthe Duncker</editor>
+        <editor role="editor3">Klaus Nielsen</editor>
+        <editor role="editor2">dr.phil. Hanne Ruus</editor>
+        <editor role="editor1">Jon Tafdrup</editor>
+        <editor role="student1">Kirsten Vad</editor> 
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.7</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>35 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2015-10-31">Version 1.7</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1847_896A_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" target="1847_896A_intro.xml" xml:id="thisFile">Indledning</note>
+      </notesStmt>
+
+<!--
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+           
+-->
+      
+        <sourceDesc><p /></sourceDesc>
+      
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+                        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+                        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="VAP" who="VAP" when="2013-05-16">etablering af skellet til intro</change>
+      <change who="VAP" when="2013-06-04">begyndende udfyldning</change>      
+      <change who="VAP" when="2013-06-06">fortsat udfyldning. Begyndende opm&#x00E6;rkning af navne og oprettelse af pe 1131-35</change>
+      <change who="VAP" when="2013-06-07">fortsat udfyldning. &#x00C6;ndring i divstruktur. unicodes p&#x00E5; g&#x00E5;se&#x00F8;jne</change>
+      <change who="VAP" when="2013-07-10">rettelser efter indledningsseminar. Oprettelse af diverse tabeller</change>
+      <change who="VAP" when="2013-07-18">rettelser efter indledningsseminar, fortsat.</change>
+      <change who="VAP" when="2013-07-29">redeg&#x00F8;relse for folkevisestriden i skemaform, udfyldning af tabeller, omorganisering i flere afsnit.</change>
+      <change who="VAP" when="2013-08-01">sm&#x00E5;rettelser og pers-opm</change>
+      <change who="VAP" when="2013-08-02">sm&#x00E5;rettelser og flere rettelser fra seminaret, udleveret af Klaus</change>
+      <change who="VAP" when="2013-08-06">sm&#x00E5;rettelser efter udskrift</change>
+      <change who="VAP" when="2013-08-07">mere til oversigten</change>
+      <change who="VAP" when="2013-08-08">mere til oversigt og strid</change>
+      <change who="VAP" when="2013-08-09">mere til oversigt og strid samt sm&#x00E5;rettelser</change>
+      <change who="VAP" when="2013-08-12">mere til oversigt og strid samt sm&#x00E5;rettelser</change>
+      <change who="VAP" when="2013-08-12">opm&#x00E6;rkninger og sm&#x00E5;rettelser</change>
+      <change who="KV" when="2013-08-14">opm&#x00E6;rket titler</change>
+      <change who="VAP" when="2013-08-20">omrokeret. korrekturrettelser. Opm&#x00E6;rket mange af de titler, som KV udelod</change>
+      <change who="VAP" when="2013-08-21">Opm&#x00E6;rket (og oprettet) de sidste titler, som KV udelod</change>
+      <change who="VAP" when="2013-08-22">afsnittet ad usum delphini</change>
+      <change who="VAP" when="2013-09-02">mere i skema</change>
+      <change who="VAP" when="2013-09-02">mere i skema; stavekontrol</change>
+      <change who="VAP" when="2013-09-16">sm&#x00E5;rettelser fra 3-4. sept.</change>
+      <change who="VAP" when="2013-09-17">opm&#x00E6;rkninger (og oprettelser) af div. title. Nye afsnit om Sv's skotske viser, om DgF og om ASV/Syv</change>
+      <change who="VAP" when="2013-09-20">&#x00E6;ndret til noIntro i head</change>
+      <change who="VAP" when="2013-09-23">rettelser</change>
+      <change who="VAP" when="2013-09-30">h&#x00E5;ndlavet litteraturlisten</change>
+      <change who="VAP" when="2013-10-01">udkommenteret alle tabeller. Indsat sidetal p&#x00E5; 1 item i litListe</change>
+      <change who="VAP" when="2013-10-24">gennemf&#x00F8;rt rettelser fra 24. okt</change> 
+      <change who="VAP" when="2013-10-29">sm&#x00E5;rettelser</change>
+        <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="VAP" when="2013-12-17">rettelser efter Jon</change>
+          <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="VAP" when="2014-02-03">rettelser efter korrektur efter Jon</change>
+      <change who="VAP" when="2014-10-03">fjernet mæslinger efter skemaændring (quote mv. i readMore)</change>
+      <change who="VAP" when="2015-08-31">flere opmærkninger af secundær litteratur. Begyndende rettelser efter Klaus </change>
+      <change who="VAP" when="2015-09-01">fortsatte rettelser efter Klaus </change>
+      <change who="VAP" when="2015-10-07">rettelser efter Dorthe</change>
+      <change who="VAP" when="2015-10-12">nye rettelser efter Klaus </change>
+      <change who="VAP" when="2015-10-19">titler på Hanne og Dorthe</change>
+      <change  who="VAP" when="2015-10-21">rettelser i litliste og skema 1</change>
+      <change  who="VAP" when="2015-10-21">rettelser efter afklaring med Klaus</change>
+      <change who="VAP" when="2016-04-27">rettelser efter studenterkontrol</change>
+      <change who="VAP" when="2018-10-26">rettet 1 til 2 i littlist</change>
+    </revisionDesc>
+    
+  </teiHeader>
+    <text type="intro">
+        <body>
+      <div>
+<head xml:id="docIn1">V&#x00E6;rkets anledning</head>
+        <p rend="noIndent">I 1840 havde b&#x00E5;de <persName key="pe3">Adam
+            Oehlenschl&#x00E4;ger</persName> og <persName key="pe69">Christian Winther</persName>
+          udgivet folkeviser (henholdsvis <hi rend="italic"><rs type="title" key="title101">Gamle
+              danske Folkeviser</rs></hi> og <hi rend="italic"><rs type="title" key="title438"
+              >Kjæmpeviser, hvis melodier ere harmonisk bearbeidede af Prof. Ridder
+          Weyse</rs></hi>), men der var stadig et behov for b&#x00E5;de st&#x00F8;rre og bedre
+          udgaver. Is&#x00E6;r <persName key="pe3">Oehlenschl&#x00E4;ger</persName> havde bearbejdet
+          viserne kraftigt ud fra sin egen smag, bl.a. havde han slettet de fleste omkv&#x00E6;d.
+            <persName key="pe69">Winthers</persName> udgave rummede teksterne til f&#x00F8;rste
+          halvdel af <persName key="pe75">C.E.F. Weyses</persName>
+          <hi rend="italic"><rs key="title2768" type="title">Halvtredsindstyve gamle
+              Kæmpevise-Melodier, harmonisk bearbeidede</rs></hi> (1840-1842) og blev derfor mere
+          popul&#x00E6;r. </p>
+        <p rend="noIndent">Grundtvigs samling af folkeviser til skolebrug udkom i oktober 1847
+          &#x2013; midt under den s&#x00E5;kaldte folkevisestrid. Striden var optrappet i
+          k&#x00F8;lvandet p&#x00E5; sønnen <persName key="pe135">Svend Grundtvigs</persName>
+          <rs type="title" key="title2517">&#x201C;Plan til en ny Udgave af Danmarks gamle
+            Folkeviser&#x201D;</rs> (februar 1847) &#x2013; det pilotarbejde, der skulle blive til
+          mammutv&#x00E6;rket <hi rend="italic"><rs key="title1672" type="title">Danmarks gamle
+              Folkeviser</rs></hi> (forkortet <rs key="title1672" type="title">DgF</rs>).
+          St&#x00F8;ttetilsagn fra Samfundet til den danske Literaturs Fremme var givet; og striden
+          havde n&#x00E5;et nye h&#x00F8;jder, kulminerende i efter&#x00E5;ret 1847.</p> <note type="readMore">
+            <p rend="noIndent">Udgiverselskabet m.m., Samfundet til den danske Literaturs Fremme,
+            der var blevet stiftet i 1827, havde i 1846 givet tilsagn om at bekoste en stor
+            folkeviseudgave og kom til at st&#x00E5; bag de fem f&#x00F8;rste bind af <hi
+              rend="italic"><rs key="title1672" type="title">Danmarks gamle Folkeviser</rs>,</hi>
+            som <persName key="pe135">Svend Grundtvig</persName> blev udgiver af. </p>
+          </note> <p rend="noIndent"> N.F.S. Grundtvig udgav da i oktober denne samling p&#x00E5; 72 folkeviser,
+          forsynet med et tilegnelsesdigt til den danske ungdom. </p>
+      <p rend="noIndent">Grundtvig hentyder til den verserende folkevisestrid i sit to sider korte
+          forord, men tilf&#x00F8;jer, at han snarere udgiver viserne, fordi professor <persName
+            key="pe1119">C.R.F. Maribo</persName> havde efterlyst en udgave til skolebrug, end fordi
+          han med v&#x00E6;rket &#x00F8;nsker at bidrage til striden (s. [VII]). D&#x00E9;t gjorde
+          han til geng&#x00E6;ld i en lille pjece (<rs key="title2515" type="title">Grundtvig
+            1847b</rs>, <ref target="#docIn75" type="docIn"> se afsnittet: Stridens
+          kronologi</ref>).<!-- her skal pilles yderligere, hvis 1847_898 kommer med op i samme oplastning --></p>
+      </div>
+      <div>
+<head xml:id="docIn71">Folkevisestriden</head>
+        <p rend="noIndent">Striden gjaldt først og fremmest udgivelsesprincipper, og her stod flere
+          synspunkter over for hinanden. De forskellige holdninger br&#x00F8;des b&#x00E5;de i
+          folkeviseudgivelser og i debatindl&#x00E6;g i forskellige tidsskrifter i slutningen af
+          1840'erne. Striden blev grundigt gennemg&#x00E5;et af <persName key="pe388">Carl S.
+            Petersen</persName> i begyndelsen af 1900-tallet (<rs key="title2520" type="title"
+            >Petersen 1905</rs>), men allerede i 1853 kunne <persName key="pe1134">Folmer
+            Dyrlund</persName> i en artikel i <hi rend="italic"><rs type="title" key="title2603"
+              >Holb&#x00E6;k Amts Avis</rs></hi> (23. marts) dele folkevisestridens deltagere op i
+          tre lejre med hver deres s&#x00E6;rpr&#x00E6;g og hver deres frontk&#x00E6;mpere:</p>
+          <list type="simple">
+            <item> Moderniserende (dvs. foryngende), fx historikeren <persName key="pe23">Christian
+              Molbech</persName>, </item>
+            <item>Antikiserende (dvs. for&#x00E6;ldende eller arkaiserende), fx
+            litteraturhistorikeren <persName key="pe889">N.M. Petersen</persName>,</item>
+            <item>Konserverende (dvs. bevarende), f&#x00F8;rst og fremmest <persName key="pe135"
+              >Svend Grundtvig</persName>.</item>
+          </list>
+       <p rend="noIndent">Hovedakt&#x00F8;rerne i striden var <persName key="pe135">Svend
+            Grundtvig</persName> og <persName key="pe23">Christian Molbech</persName> (N.F.S.'
+          ungdomsven)<!--, mellem hvem meningsudvekslingerne f&#x00F8;g-->. Som
+            udgiver kan N.F.S. Grundtvig ikke placeres entydigt i nogen af de tre lejre, idet han
+            b&#x00E5;de moderniserer og arkaiserer (<ref target="#docIn43" type="docIn">se afsnittet
+              herom</ref>), samtidig med at han ogs&#x00E5; indimellem drejer indholdet af viserne i
+            mere kongetro eller stueren retning.</p>
+          <p rend="noIndent">I det lange l&#x00F8;b blev det den meget unge <persName key="pe135"
+              >Svend Grundtvigs</persName> udgivelsesprincipper, der sejrede, og som resulterede i
+            tolvbindsv&#x00E6;rket <hi rend="italic"><rs key="title1672" type="title">Danmarks gamle
+                Folkeviser</rs></hi> (DgF, 1853-1976). </p>
+        <div>
+<head xml:id="docIn74">Grundtvig og polemikken</head>
+          <p rend="noIndent">Det er om folkevisestriden h&#x00E6;vdet, at modstanden mod <rs
+              key="title1672" type="title">DgF</rs> f&#x00F8;rst og fremmest gjaldt <persName
+              key="pe135">Svend Grundtvigs</persName> far, N.F.S. Grundtvig (jf. <rs key="title4179"
+              type="title">Bang 1972</rs>, s. 344; <ref type="docIn" target="#docIn75"> se
+              oversigten</ref>). Modviljen mod <persName key="pe135">Svend Grundtvigs</persName>
+            plan var for nogens vedkommende s&#x00E5; voldsom, at det ikke var nok at ytre den i
+            dagblade og tidsskrifter. Fader Grundtvig kom s&#x00E5;ledes sin s&#x00F8;n til
+            unds&#x00E6;tning i en hel bog, et lille stridsskrift, <hi rend="italic">
+              <rs key="title2515" type="title">Om K&#x00E6;mpevise-Bogen, en Stemme mod Hr. Levins,
+                Hr. Liebenbergs o.s.v. af Nik. Fred. Sev. Grundtvig</rs>
+            </hi> (<rs key="title2515" type="title">1847b</rs>, <ref type="docOut"
+              target="1847_898_intro.xml#docIn1">se indledning til denne her</ref>). <!--her skal pilles yderligere, hvis 1847_898 kommer med op i samme oplastning-->
+            <persName key="pe135">Svend Grundtvig</persName> forsvarede derudover sig selv i et
+            n&#x00E6;sten 80 sider langt stridsskrift, <hi rend="italic"><rs type="title"
+                key="title2604">Etatsraad Molbech og K&#x00E6;mpeviserne, et Stridsskrift af Svend
+                Grundtvig</rs></hi> (<rs type="title" key="title2604">1848a</rs>), der
+            minuti&#x00F8;st gennemgik <persName key="pe23">Molbechs</persName> forhastede
+            viseudgave fra slutningen af 1847, <hi rend="italic"><rs type="title" key="title2509">Et
+                hundrede udvalgte Danske Folkeviser, hidtil utrykte, samlede og udgivne af C.
+                Molbech</rs>,</hi> og påpegede dens fejl, mangler, inkonsekvenser og misforståede
+            forbedringer. </p>
+          <p rend="noIndent">Som allerede titlen p&#x00E5; det lille skrift angiver, rettede N.F.S.
+            Grundtvig is&#x00E6;r skytset mod udgiveren (og digteren) <persName key="pe280">Frederik
+              Ludvig Liebenberg</persName> og den stridbare litterat og sprogmand <persName
+              key="pe279">Israel Salomon
+            Levin</persName><!-- (der i perioder var sekret&#x00E6;r for
+              <persName key="pe107">S&#x00F8;ren Kierkegaard</persName>)-->.
+            Disse to havde bl.a. i <hi rend="italic">
+              <rs key="title2228" type="title">Berlingske Tidende</rs>
+            </hi> (28. september 1847) og <hi rend="italic">
+              <rs key="title1134" type="title">F&#x00E6;drelandet</rs>
+            </hi> (20. september 1847) protesteret mod <persName key="pe135">Svend
+              Grundtvigs</persName> udgivelsesplaner, der blev underst&#x00F8;ttet af Samfundet til
+            den danske Literaturs Fremme. Is&#x00E6;r <persName key="pe279">Levins</persName> kritik
+            gik p&#x00E5;, at udgaven kun ville blive en materialesamling, og at de
+            folkeviseh&#x00E5;ndskrifter, der havde tilh&#x00F8;rt 1500- og 1600-tallets adelsdamer,
+            var s&#x00E5; fulde af &#x2018;stavefejl&#x2019; og andre forsyndelser mod korrekt dansk
+            sprogbrug, at deres visenedtegnelser umuligt kunne v&#x00E6;re til gl&#x00E6;de for en
+            st&#x00F8;rre offentlighed. Han havde &#x00E5;ret forinden udtalt sig meget
+            st&#x00E6;rkt om netop den danske retskrivning (<rs key="title2631" type="title">Levin
+              1846</rs>). <persName key="pe280">Liebenberg</persName> og <persName key="pe279"
+              >Levin</persName> &#x00F8;nskede i stedet, hvad de kaldte en kritisk, dvs. udvalgt,
+            udgave af de gamle folkeviser. Dette skal ses i mods&#x00E6;tning til den planlagte
+            udgave, der for dem kun ville blive en uredigeret samling, hvoraf mindst to tredjedele
+            ville v&#x00E6;re uden v&#x00E6;rdi. Og det er lige pr&#x00E6;cis h&#x00E9;r, at N.F.S.
+            Grundtvig satte ind. Han forstod simpelthen ikke, hvordan de to herrer (og <persName
+              key="pe23">Christian Molbech</persName> med) kunne udtale sig om det store materiale,
+            som de ikke engang havde set.</p> 
+          <p rend="noIndent">Netop en udgave med det samlede visemateriale ville efter Grundtvigs
+            mening i endnu h&#x00F8;jre grad end en kritisk (men selektiv) udgave kunne blive et
+            id&#x00E9;reservoir for digterne<!--. Som han polemisk anf&#x00F8;rer det med den for ham typiske store
+            m&#x00E6;ngde af fremh&#x00E6;velser-->:</p> 
+          <p rend="quote">Hr. <persName key="pe279">Levin</persName> leer rigtignok h&#x00F8;it ved
+            den Tanke, at en <hi rend="italic">begeistret Digter</hi> skulde slaa op i saadan en
+            tyk, <hi rend="italic">ildestavet</hi>, kiedsommelig Bog, for at see en <hi
+              rend="italic">K&#x00E6;mpevise</hi> i sin &#x00E6;ldste, oprindelige Skikkelse, men,
+            med Hr. <hi rend="italic">
+              <persName key="pe279">Levins</persName>
+            </hi> Tilladelse, jeg leer igien ad hans Forestilling om en <hi rend="italic">Dansk</hi>
+            Digters Begeistring, og skammer mig ingenlunde ved at bekiende, at jeg ganske nylig tit
+            har gjort hvad Hr. <hi rend="italic">
+              <persName key="pe279">Levin</persName>
+            </hi> finder latterligt, ved at eftersee og bet&#x00E6;nke <hi rend="italic">hvert
+              Ord</hi> i de K&#x00E6;mpeviser, jeg holdt meest ad, saaledes, som de meget <hi
+              rend="italic">slet stavede</hi> findes i <rs type="title" key="title2498"
+              >Haandskriften fra Karen Brahes Bibliothek</rs>, og &#x00F8;nskede kun at have <hi
+              rend="italic">hvert Bogstav</hi> trykt, saa L&#x00E6;sningen var saameget lettere, og
+            kunde komme Alle tilgode (<rs key="title2515" type="title">1847b</rs>, s. 16).</p>
+          <p rend="noIndent">P&#x00E5; det personlige plan fremh&#x00E6;ver Grundtvig s&#x00F8;nnens
+            udgiverkvaliteter (<rs key="title2515" type="title">1847b</rs>, s. 4, 8 og 10), som
+            allerede havde vist deres v&#x00E6;rd ved udgivelsen af <hi rend="italic">
+              <rs key="title2507" type="title">Engelske og Skotske Folkeviser, fordanskede af Svenn
+                Grundtvig</rs>
+            </hi> (1842-1846), og hans personlige egenskaber (s. 18 f.). Grundtvig stiller Samfundet
+            til den Danske Literaturs Fremme op som det idealistiske modstykke til <hi rend="italic"
+              >&#x201C;vor Boghandel&#x201D;</hi> som begreb (s. 8 f.), der kun ville se p&#x00E5;
+            fortjenesten. Samfundet derimod &#x201C;har paataget sig at bekoste&#x201D; den store
+            udgave (s. 8). En anden linje i Grundtvigs pjece er den nationale: &#x201C;jeg vil
+            tillige, saavidt muligt, s&#x00E6;tte den Danske L&#x00E6;ser istand til selv at
+            d&#x00F8;mme, paa hvis Side han, som Dansk, maa tr&#x00E6;de&#x201D; (s. 3). I
+            Grundtvigs &#x00F8;jne vil v&#x00E6;rket blive &#x201C;til Folke-&#x00C6;re og til
+            Folke-Gavn&#x201D; (s. 10). </p>
+          <p rend="noIndent">Det lille h&#x00E6;fte, hvis indhold var rettet mod <persName key="pe279">Levin</persName> og <persName key="pe280">Liebenberg</persName>, blev
+            Grundtvigs sidste indl&#x00E6;g i debatten, mens striden fortsatte.</p>
+</div>
+        
+        <div>
+          <head xml:id="docIn75">Stridens kronologi</head>
+          <p rend="noIndent">I kronologisk orden kan en oversigt over vigtige punkter i
+            folkevisestriden og dens forl&#x00F8;bere se s&#x00E5;ledes ud:</p>
+          
+          <table rend="source">
+            
+            <row>
+              <cell>1838</cell>
+              <cell>N.F.S. Grundtvig k&#x00F8;ber det folkeviseh&#x00E5;ndskrift, der senere kommer
+                til at g&#x00E5; under navnet <rs type="title" key="title2499">&#x201C;Grundtvigs
+                  kvart&#x201D;</rs>. H&#x00E5;ndskriftet var med til at v&#x00E6;kke s&#x00F8;nnen
+                  <persName key="pe135">Svend Grundtvigs</persName> interesse for folkeviser og
+                bidrager med flere viser til faderens udgave fra 1847</cell>
+            </row>
+            <row>
+              <cell>1842-1846</cell>
+              <cell>
+                <persName key="pe135">Svend Grundtvig</persName> overs&#x00E6;tter og udgiver en
+                tobindssamling med titlen <hi rend="italic">
+                  <rs key="title2507" type="title">Engelske og Skotske Folkeviser, fordanskede af
+                    Svenn Grundtvig</rs>.</hi></cell>
+            </row>
+            
+            <row>
+              <cell>8. december 1843</cell>
+              <cell>Sammen med <persName key="pe238">Christian S. Ley</persName> udsender <persName
+                  key="pe135">Svend Grundtvig</persName> et opr&#x00E5;b til den danske befolkning i
+                  <hi rend="italic"><rs type="title" key="title2514">Dansk Folkeblad</rs></hi> nr.
+                45 om at indsende viser til Samfundet til den danske Literaturs Fremme (herefter
+                Samfundet).</cell>
+            </row>
+            <row>
+              <cell>december 1843 - januar 1844</cell>
+              <cell>
+                <persName key="pe135">Svend Grundtvig</persName> kommer med
+                f&#x00F8;rste udspil til en folkeviseudgave, artiklen <rs
+                  key="title2513" type="title">&#x201C;Om en ny Udgave af Danmarks
+                  K&#x00E6;mpeviser&#x201D;</rs> i <hi rend="italic"><rs
+                    type="title" key="title2514">Dansk
+                    Folkeblad</rs>.</hi></cell></row>
+              
+          
+            <row>
+              <cell>1846</cell>
+              <cell>Bestyrelsen i Samfundet accepterer <persName key="pe135">Svend
+                Grundtvigs</persName> udkast til en stor, samlet
+                folkeviseudgave.</cell>
+            </row>
+            <row>
+              <cell>februar 1847</cell>
+              <cell>
+                <persName key="pe135">Svend Grundtvig</persName> udgiver <hi rend="italic"><rs
+                    key="title2517" type="title">Plan til en ny Udgave af Danmarks gamle
+                    Folkeviser</rs>
+                </hi> (herefter <hi rend="italic"><rs key="title2517" type="title"
+                >Planen</rs></hi>). Den ledsages af en pr&#x00F8;ve p&#x00E5; <rs key="title1672"
+                  type="title">&#x201C;Harpens Kraft&#x201D;</rs>, som kun Samfundet
+                modtager.</cell>
+            </row>
+            <row>
+              <cell>marts 1847</cell>
+              <cell>
+                <hi rend="italic"><rs key="title2517" type="title">Planen</rs></hi>
+                genoptrykkes med tre viser.</cell>
+            </row>
+            <row>
+              <cell>september 1847</cell>
+              <cell><persName key="pe135">Svend Grundtvig</persName> udgiver <hi rend="italic"><rs
+                    key="title2518" type="title">Pr&#x00F8;ve paa en ny Udgave af Danmarks gamle
+                    Folkeviser for Samfundet til den danske Litteraturs Fremme</rs>
+                </hi> (herefter <hi rend="italic"><rs key="title2518" type="title"
+                    >Pr&#x00F8;ven</rs></hi>). </cell>
+            </row>
+            
+            <row>
+              <cell>20. september 1847</cell>
+              <cell>
+                <persName key="pe279">Israel Levin</persName> offentliggør artiklen
+                <rs type="title" key="title2765">&#x201C;Plan og Pr&#x00F8;ve af
+                  en ny Udgave af Danmarks gamle Folkeviser for Samfundet til den
+                  danske Literaturs Fremme, ved Svend Grundtvig&#x201D;</rs> i <hi
+                    rend="italic"><rs key="title1134" type="title"
+                      >F&#x00E6;drelandet</rs>.</hi>
+              </cell> 
+            </row>
+            
+            <row>
+              <cell>28. september 1847</cell>
+              <cell>
+                <persName key="pe280">F.L. Liebenberg</persName> offentliggør
+                artiklen <rs type="title" key="title2769">&#x201C;Et Par yderligere
+                  Bem&#x00E6;rkninger om den bebudede nye Udgave af de gl.
+                  Folkeviser&#x201D;</rs> i <hi rend="italic"><rs key="title2228"
+                    type="title">Berlingske Tidende</rs>.</hi>
+              </cell> 
+            </row>
+            
+            <row>
+              <cell>o. 16. oktober 1847</cell>
+              <cell>Grundtvig udgiver <hi rend="italic"><rs key="title2516" type="title"
+                >Danske K&#x00E6;mpeviser til Skole-Brug udvalgte og
+                till&#x00E6;mpede af Nik. Fred. Sev. Grundtvig</rs>.</hi>
+              </cell>
+            </row>
+            <row>
+              <cell>oktober 1847</cell>
+              <cell>
+                <persName key="pe23">Christian Molbech</persName> udgiver <hi
+                  rend="italic"><rs type="title" key="title2752">En
+                    Bet&#x00E6;nkning over den bebudede nye Udgave af en
+                    Material-Samling af Danmarks gamle Folkeviser</rs>.</hi>
+              </cell>
+            </row>
+            <row>
+              <cell>23. oktober 1847</cell>
+              <cell>
+                <hi rend="italic"><rs key="title2515" type="title">Om
+                  K&#x00E6;mpevise-Bogen, en Stemme mod Hr. Levins, Hr.
+                  Liebenbergs o.s.v. af Nik. Fred. Sev. Grundtvig</rs></hi>
+                udkommer.</cell>
+            </row>
+            <row>
+              <cell>december 1847</cell>
+              <cell>
+                <hi rend="italic"><rs key="title2517" type="title">Planen</rs></hi>
+                og <hi rend="italic"><rs key="title2518" type="title"
+                  >Pr&#x00F8;ven</rs></hi> trykkes i udvidet skikkelse.</cell>
+            </row>
+            <row>
+              <cell>december 1847</cell>
+              <cell>
+                <persName key="pe23">Molbech</persName> udgiver et h&#x00E6;fte med
+                14 folkeviser: <hi rend="italic"><rs type="title" key="title2509">Et
+                  hundrede udvalgte Danske Folkeviser, hidtil utrykte, samlede
+                  og udgivne af C. Molbech</rs>.</hi> Der kom ikke flere
+                h&#x00E6;fter.</cell>
+            </row>
+            
+            <row>
+              <cell>januar 1848</cell>
+              <cell>
+                <persName key="pe889">N.M. Petersen</persName> udgiver <hi
+                  rend="italic"><rs key="title2766" type="title">Om udgivelsen af
+                    k&#x00E6;mpeviserne</rs></hi>. Heri kritiserer han bl.a.
+                <persName key="pe23">Molbechs</persName> sproghistorisk
+                ukorrekte moderniseringer i folkeviseudgaven fra december
+                1847.</cell>
+            </row>
+            <row>              
+              <cell> januar 1848</cell>
+              <cell>
+                <persName key="pe23">Molbech</persName> udgiver <hi rend="italic"
+                  ><rs type="title" key="title2508">Om de gamle danske
+                    Folkevisers Beskaffenhed og Forhold, deres Skikkelse i
+                    Haandskrifterne og trykte Udgaver, og om
+                    Grunds&#x00E6;tningerne for deres Udgivelse</rs>.</hi>
+              </cell>
+            </row>
+            <row>
+              <cell>januar 1848</cell>
+              <cell>
+                <persName key="pe135">Svend Grundtvig</persName> svarer med <hi
+                  rend="italic"><rs key="title2604" type="title">Etatsraad Molbech
+                    og K&#x00E6;mpeviserne, et Stridsskrift af Svend
+                    Grundtvig</rs>.</hi>
+              </cell>
+            </row>
+            
+            <row>
+              <cell> januar 1848</cell>
+              <cell>
+                <persName key="pe23">Molbech</persName> forts&#x00E6;tter kritikken
+                af <persName key="pe135">Svend Grundtvig</persName> med <hi
+                  rend="italic"><rs type="title" key="title2767">Kritiske
+                    Bem&#x00E6;rkninger og Resultater, angaaende den
+                    Grundtvigske Udgave, Materialsamling og Kildesamling af
+                    gamle danske Folkeviser</rs></hi> (dateret 18. januar
+                1848).</cell>
+            </row>
+            
+          </table>
+          
+       
+          <p rend="noIndent">I l&#x00F8;bet af sidste halvdel af 1847 og f&#x00F8;rste del af 1848
+            kom dertil en snes artikler i <hi rend="italic"><rs type="title" key="title1134"
+                >F&#x00E6;drelandet</rs>,</hi>
+            <hi rend="italic"><rs key="title2228" type="title">Berlingske Tidende</rs></hi> og <hi
+              rend="italic"><rs type="title" key="title2629">Kj&#x00F8;benhavnsposten</rs>.</hi>
+            <persName key="pe23">Molbechs</persName>
+            <rs type="title" key="title2509">folkeviseudgave</rs> fra december 1847 var b&#x00E5;de
+            et praktisk og teoretisk led i folkevisestriden, og den kritiserede N.F.S. Grundtvigs
+            udgave direkte.</p>
+        </div>
+      </div>
+      
+        
+        
+      <div>
+<head xml:id="docIn2">Ældre folkeviseudgaver og Grundtvigs forl&#x00E6;g</head>
+       <div>
+<head xml:id="docIn21">De ældre udgaver i Grundtvigs eje</head> <p rend="noIndent">I folkevisernes udgivelseshistorie kunne man i 1840'erne se tilbage p&#x00E5;
+            flere hovedv&#x00E6;rker: <persName key="pe350">Anders S&#x00F8;rensen Vedels</persName>
+            <hi rend="italic"><rs key="title1896" type="title">Hundredvisebog</rs></hi> fra 1591 og
+            den godt hundrede &#x00E5;r yngre opf&#x00F8;lger ved <persName key="pe239">Peder
+              Syv</persName> (oftest kaldet <rs key="title275" type="title"
+              >&#x201C;Tohundredvisebogen&#x201D;</rs>) fra 1695 med det dobbelte antal viser.</p> <note type="readMore">
+              <p rend="noIndent">
+                <rs key="title1896" type="title">Vedels udgave</rs> bestod af tre afdelinger, og der
+                henvises derfor til viser herfra med I, II eller III samt et nummer, mens
+                henvisninger til viser, som udelukkende findes hos <rs key="title275" type="title">Syv</rs>, sker med IV samt et nummer.</p>
+            </note> 
+         <p rend="noIndent">Begge var kommet i adskillige oplag i l&#x00F8;bet af 1600- og
+            1700-tallet (<rs type="title" key="title2632">Henningsen 1959</rs>, s. 53-84).
+            1700-tallet havde efter engelsk forbillede budt p&#x00E5; to bind med titlen <hi
+              rend="italic"><rs type="title" key="title352">Levninger af Middelalderens
+                Digtekunst</rs></hi> (herefter <hi rend="italic"><rs type="title" key="title352"
+                >Levninger</rs></hi>): et ved <persName key="pe1">Bertel Sandvig</persName> (1780,
+            anonym) og et ved <persName key="pe2">Rasmus Nyerup</persName> (1784). Restoplaget af
+            disse gik tabt ved K&#x00F8;benhavns brand i 1795. I begyndelsen af 1800-tallet var
+              <persName key="pe440">Werner Abrahamson</persName>, <persName key="pe2">Rasmus
+              Nyerup</persName> og <persName key="pe24">Knud Lyne Rahbeks</persName> fembindsudgave,
+              <hi rend="italic"><rs key="title2504" type="title">Udvalgte Danske Viser fra
+                Middelalderen</rs></hi> (1812-1814; herefter <rs key="title2504" type="title"
+              >Abrahamson, Nyerup og Rahbek</rs>), den g&#x00E6;ngse. I 1847 ejede Grundtvig
+            b&#x00E5;de <rs key="title275" type="title">Syv</rs> (i original fra 1695) og <rs
+              key="title2504" type="title">Abrahamson, Nyerup og Rahbek</rs>, som i hans bibliotek
+            var indbundet i to bind. Disse v&#x00E6;rker har numrene 2452, 2453 og 2454 i hans
+            Bogfortegnelse fra
+            1839.<!-- [HER KAN VI LAVE LINKS TIL
+            BOGFORTEGNELSEN 1839, NR 2452, 2453 OG 2454, HVIS DET KAN LADE SIG G&#x00D8;RE TIL DEN TID]-->
+            Grundtvig brugte gerne viseopskrifter fra begge v&#x00E6;rker i sin udgave. Grundtvig
+            ejede ogs&#x00E5; <hi rend="italic">
+              <rs key="title352" type="title">Levninger</rs>,</hi> men det ser ikke ud, som om han
+            har brugt viser herfra som
+            forl&#x00E6;g.<!-- I punktkommentaren til hver enkelt vise er
+            mulige forl&#x00E6;g oplyst. --></p>
+        <p rend="noIndent">
+            <rs key="title1896" type="title">Vedels</rs> og <rs key="title275" type="title"
+              >Syvs</rs> udgaver havde skabt tradition for at udgive viser i portioner à 100,
+            s&#x00E5; Grundtvig s&#x00E5; sig &#x00E5;benbart n&#x00F8;dsaget til at undskylde, at
+            han kun bragte &#x201C;halvfjerdsindstyve&#x201D;  (s. [VII]). Faktisk rummer bogen 72
+            viser.</p>
+</div>
+        <div>
+<head xml:id="docIn3">Forl&#x00E6;g</head>
+          <p rend="noIndent">N&#x00E5;r man ser p&#x00E5;, hvor mange &#x00E6;ndringer Grundtvig har
+            foretaget i hver eneste vise, kan det forekomme mere rigtigt at kalde forl&#x00E6;ggene
+            inspirationskilder, men jeg v&#x00E6;lger det neutrale (og kortere)
+            &#x2018;forl&#x00E6;g&#x2019;. <rs key="title1896" type="title">Vedel</rs> og <rs
+              key="title275" type="title">Syv</rs> er storleverand&#x00F8;rer. Ud af visebogens 72
+            kan man finde forl&#x00E6;g i deres v&#x00E6;rker for de 50. Hvis man indimellem falder
+            over formuleringer, der ikke findes hos <rs key="title1896" type="title">Vedel</rs> og
+              <rs key="title275" type="title">Syv</rs>, kan de stamme fra <rs key="title2504"
+              type="title">Abrahamson, Nyerup og Rahbek</rs>. 51 viser ud af Grundtvigs 72
+            findes i denne udgave &#x2013; herunder 9, som ikke er hos <rs key="title1896"
+              type="title">Vedel</rs> og <rs key="title275" type="title">Syv</rs>. Samtidig har <rs
+              key="title1896" type="title">Vedel</rs> og <rs key="title275" type="title">Syv</rs>
+            andre 9, som ikke er med i <rs key="title2504" type="title">Abrahamson, Nyerup og
+              Rahbek</rs>. Resten overlapper hinanden, men det er tydeligt, at Grundtvig som regel
+            foretr&#x00E6;kker <rs key="title1896" type="title">Vedels</rs> og <rs key="title275"
+              type="title">Syvs</rs> versioner frem for den nyere udgaves.</p>
+          <p rend="noIndent">Herudover benyttede Grundtvig et par af de h&#x00E5;ndskrifter, som
+              <persName key="pe135">Svend</persName> arbejdede med. Grundtvig angiver i sit forord,
+            at han bringer syv viser, der ikke tidligere har v&#x00E6;ret trykt. I den kronologiske
+            indholdsfortegnelse s. IX f. har han m&#x00E6;rket disse viser med en asterisk. Det
+            drejer sig om: <hi rend="italic"><rs type="title" key="title2149"
+              >Gr&#x00E6;shoppen</rs></hi> (<rs type="title" key="title2149">DgF 59</rs>), <hi
+              rend="italic"><rs type="title" key="title2136">Runegaard</rs></hi> (<rs type="title"
+              key="title2136">DgF 12</rs>), <hi rend="italic"><rs key="title2137" type="title"
+                >Hevnersv&#x00E6;rdet</rs></hi> (<rs key="title2137" type="title">DgF 25</rs>), <hi
+              rend="italic"><rs key="title2151" type="title">Linde-M&#x00F8;en</rs></hi> (<rs
+              type="title" key="title2151">DgF 66</rs>), <hi rend="italic"><rs type="title"
+                key="title2155">&#x00C6;lvehjem</rs></hi> (<rs type="title" key="title2155">DgF
+              45</rs>), <hi rend="italic"><rs key="title2127" type="title">Brodermordet</rs></hi>
+              (<rs type="title" key="title2127">DgF 340</rs>), <hi rend="italic"><rs key="title2510"
+                type="title">Systermordet</rs></hi> (<rs type="title" key="title2510">DgF 95</rs>);
+            (se ogs&#x00E5; <rs key="title24" type="title">Toldberg 1946</rs>, s. 128). De to
+            sidstn&#x00E6;vnte stammer m&#x00E5;ske fra mundtlig optegnelse, mens de &#x00F8;vrige
+            har kunnet findes i forskellige folkeviseh&#x00E5;ndskrifter. </p>
+          <p rend="noIndent">Is&#x00E6;r to h&#x00E5;ndskrifter skal fremh&#x00E6;ves, nemlig <rs
+              key="title2498" type="title">Karen Brahes folio</rs> (dateret o. 1570) og <rs
+              type="title" key="title2499">Grundtvigs kvart</rs> (dateret til 1656). Grundtvig havde
+            i 1838 k&#x00F8;bt det sidstn&#x00E6;vnte for 2 rigsbankdaler. <rs key="title2498"
+              type="title">Karen Brahes folio</rs> havde i mere end 200 &#x00E5;r ligget
+            up&#x00E5;agtet hen i biblioteket i Odense adelige Jomfrukloster (grundlagt af <persName
+              key="pe1273">Karen Brahe</persName>), men var blevet omtalt i 1839 af <persName
+              key="pe1209">Caspar Paludan-Müller</persName>, der i tidsskriftet <hi rend="italic">
+              <rs type="title" key="title1190">Brage og Idun</rs>
+              </hi> udgav visen om <persName key="pe1358">Axel</persName> og <persName key="pe1359">Valborg</persName> (<rs key="title2172" type="title">DgF 475</rs>) i
+            versionen herfra. <persName key="pe1273">Karen Brahes</persName> Arkiv h&#x00F8;rer i dag under Roskilde Kloster. </p>
+</div>
+</div>
+     
+      <div>
+<head xml:id="docIn4">V&#x00E6;rkets organisering og Grundtvigs bearbejdelser af forl&#x00E6;ggene</head>
+        <div> <head xml:id="docIn41">Opbygning og indhold</head>
+<p rend="noIndent">Bogen begynder med et tilegnelsesdigt og en fortale af Grundtvig selv. Digtet er
+            ikke i egentlig folkevisestil, men strofeformen (og 1.-strofens indhold) stammer fra en
+            svensk folkevise, hvis stadigt brugte melodi er med i <rs type="title" key="title2504"
+              >Abrahamson, Nyerup og Rahbek</rs> (<rs type="title" key="title2504">1814</rs>, bind 5,
+            s. LXXXIV). Herefter f&#x00F8;lger en indholdsfortegnelse med visetitler og selve
+            viserne. Sidst i bogen findes et alfabetisk register efter visernes f&#x00F8;rstelinjer. </p>
+         
+            <p rend="noIndent">Udvalget rummer 10 k&#x00E6;mpeviser, 24 trylleviser, 21 historiske
+              viser i 22 opskrifter (dvs. to af viserne b&#x00E6;rer samme nummer i
+              standardv&#x00E6;rket <rs type="title" key="title1672">DgF</rs>) og 12 ridderviser.</p>
+                <note type="readMore">
+                <p rend="noIndent"><rs key="title1672" type="title">DgF</rs> rummer 32
+              k&#x00E6;mpevisenumre, 82 tryllevisenumre, 68 historiske visenumre og 357 ridder-,
+              roman- og eftersl&#x00E6;tsvisenumre. Hvert nummer rummer et antal varianter, kaldet
+                <hi rend="italic">opskrifter</hi> (nogle har over 30), hvoraf mange yderligere
+              eksisterer i flere <hi rend="italic">afskrifter</hi> (dvs.
+              n&#x00E6;rtbesl&#x00E6;gtede redaktioner, der evt. er let redigerede afskrifter efter
+              hinanden).</p>
+                </note> 
+            <p rend="noIndent"> Fire af viserne blev ikke optaget i <rs key="title9999" type="title"
+              >DgF</rs>. Af disse fire findes dog &#x00E9;n vise i
+            &#x2018;s&#x00F8;sterudgaven&#x2019; <hi rend="italic">
+              <rs type="title" key="title2512">Danske Viser fra Adelsviseb&#x00F8;ger og Flyveblade
+                1530-1630</rs>, </hi> som indeholder is&#x00E6;r de lyriske og historiske viser fra
+            folkeviseh&#x00E5;ndskrifterne, der ikke var folkeviser, sk&#x00F8;nt de formentlig var
+            lige s&#x00E5; gamle som disse (<rs type="title" key="title2512">Gr&#x00FC;ner-Nielsen
+              &amp; Kristensen 1912-1931</rs>). </p>
+            <p rend="noIndent">Selv om Grundtvig havde til hensigt at lave en folkeviseudgave, er de
+            f&#x00F8;rste to viser, <hi rend="italic"><rs key="title2511" type="title"
+                >Kragemaal</rs></hi> og <hi rend="italic"><rs key="title77" type="title"
+                >Dannevirke</rs></hi>, ikke folkeviser efter de kriterier, som senere indirekte
+            skulle fremgå af <rs key="title9999" type="title">DgF</rs>. Ingen af viserne har den
+            strofiske opbygning, der er den del af genredefinitionen. Desuden er <hi rend="italic"
+                ><rs key="title77" type="title">Dannevirke</rs></hi> ikke anonym, men forfattet af
+              <persName key="pe221">Laurids Kok</persName>. Grundtvig har imidlertid kunnet finde
+            dem i <persName key="pe239">Syvs</persName> &#x201C;<rs type="title" key="title275"
+              >Tohundredevisebog</rs>&#x201D; og mente formodentlig derfor, at de alligevel havde
+            deres berettigelse i en folkeviseudgave. Af det meget korte forord er det ikke muligt at
+            udlede hans genreafgr&#x00E6;nsninger, men hans udvalg afspejler en fork&#x00E6;rlighed
+            for historiske viser og trylleviser. </p>
+          
+          <p rend="noIndent">Grundtvig finder af og til p&#x00E5; en titel, der hverken svarer til
+            de i dag kendte eller tidligere udgavers. De 72 viser er i den fortl&#x00F8;bende
+            indholdsfortegnelse indordnet et system, der kan afspejle en form for indbyrdes
+            kronologi i forhold til emnerne, is&#x00E6;r de historiske. Udgaven følger ikke den
+            inddeling af viserne, som <rs type="title" key="title1672">DgF</rs> siden har gjort til
+            standard, og som delvis bygger p&#x00E5; <rs type="title" key="title2504">Abrahamson,
+              Nyerup og Rahbeks</rs> fra 1812-14. </p>
+          <p rend="noIndent">Taget i betragtning, at der er tale om en udgave til unge mennesker,
+            hvis kendskab til &#x00E6;ldre danske ord n&#x00E6;ppe er s&#x00E6;rlig stort, er der
+            forbl&#x00F8;ffende f&#x00E5; ordforklaringer. Til geng&#x00E6;ld anbringes de
+            d&#x00E9;r, hvor man har brug for dem, nemlig som fodnoter p&#x00E5; de relevante sider.
+            Grundtvigs mange moderniseringer opvejer desuden i nogen grad forl&#x00E6;ggenes
+            sv&#x00E6;rt forst&#x00E5;elige &#x00E6;ldre ordforr&#x00E5;d og ordformer. Som regel
+            kan man stole p&#x00E5; Grundtvigs
+            forklaringer.<!--, men der optr&#x00E6;der ogs&#x00E5; enkelte forkerte, <ref type="docOut" target="1847_896A_com.xml#docIn478">se fx kommentar til &#x201C;Verne&#x201D; (s. 30)</ref>-->
+          </p>
+</div>
+       
+       <div>
+         <head xml:id="docIn42">Forkortelser af viserne</head> 
+         
+         <p rend="noIndent">Grundtvig g&#x00F8;r mange indgreb i teksterne. F&#x00F8;rst og fremmest
+            forkorter han kraftigt, mens han kun i f&#x00E5; tilf&#x00E6;lde selv digter en strofe
+            eller to til. En opt&#x00E6;lling viser, at viserne i hans versioner er kraftigt
+            forkortet. Bogens viser har fra 10 til 200 strofer i forl&#x00E6;ggene og fra 9 til 120
+            strofer hos Grundtvig. Den st&#x00F8;rste afvigelse forekommer ved <hi rend="italic"><rs
+                key="title2153" type="title">Hellig-Olav og Troldene</rs></hi> (<rs type="title"
+              key="title2153">DgF 50</rs>), hvor forl&#x00E6;gget (<rs key="title1896" type="title"
+              >Vedel</rs> og <rs type="title" key="title275">Syv</rs>) har 51 strofer, hvoraf
+            Grundtvig kun bruger de 19. Den gennemsnitlige &#x2018;udnyttelse&#x2019; er 76%.
+            Grundtvig undgår bevidst at gentage hele scener eller strofer med n&#x00E6;sten identisk
+            indhold. Han udelader fx ogs&#x00E5; strofer, der handler om specielle
+            karaktertr&#x00E6;k ved mennesker fra forskellige landsdele, som i <hi rend="italic"><rs
+                key="title2141" type="title">Hr. T&#x00F8;nne fra Als</rs></hi> (<rs type="title"
+              key="title2141">DgF 34</rs>). Det er m&#x00E5;ske et fors&#x00F8;g p&#x00E5; ikke at
+            st&#x00F8;de specielle grupper fra sig, alts&#x00E5; en bevidst refleksion over
+            publikum, der er skoleungdommen i hele landet.</p>
+       </div>
+        
+        <div>
+<head xml:id="docIn44">Omskrivninger af folkeviseformler</head>
+<p rend="noIndent">Noget af det mest karakteristiske ved folkeviser er, at stroferne er bygget op af
+            faste vendinger eller formler. Disse fungerer som &#x2018;byggesten&#x2019; og er
+            medvirkende til, at en sanger under fremf&#x00F8;relsen ikke beh&#x00F8;ver at huske
+            hele tekster udenad, men kan &#x2018;genskabe&#x2019; en vise p&#x00E5; stedet ved hver
+            ny fremf&#x00F8;relse, n&#x00E5;r blot persongalleri og handlingsgang ligger fast (<rs
+              type="title" key="title1746">Pedersen 2001</rs>). Det er v&#x00E6;rd at
+            bem&#x00E6;rke, at Grundtvig undlader at bruge de mest g&#x00E6;ngse formler. For
+            eksempel skaber han en r&#x00E6;kke variationer over formlen &#x2018;det vil jeg for
+            sandingen sige&#x2019;, som han med stor opfindsomhed helt undg&#x00E5;r. Vendingen at
+            &#x2018;smile under skind&#x2019;, der i folkeviserne antyder, at den smilende har
+            bagtanker, erstattes af formuleringer, som ikke giver de samme konnotationer.
+            Ogs&#x00E5; bryllupsformlerne underg&#x00E5;r forvandling (se skemaet nedenfor). 
+  
+          </p>
+          <p rend="noIndent">I følgende skemaer er forlæggenes ordlyd, stavem&#x00E5;der og
+            findested anf&#x00F8;rt i f&#x00F8;rste kolonne, mens Grundtvigs omskrivninger
+            f&#x00F8;lger i anden. Skråstreg angiver evt. linjeskift. Om findestederne,: <ref
+              type="docIn" target="#docIn2">se afsnittet: Ældre folkeviseudgaver</ref>.</p>
+          
+          
+          <table rend="source">
+            <row>
+              <cell>Det vil jeg for Sandingen sige (efter Vedel II 25, <rs key="title2106"
+                  type="title">DgF 135C</rs>)</cell>
+              <cell>Og Blad hun vendte saa s&#x00F8;rgelig (<hi rend="italic">Dronning Dagmars
+                D&#x00F8;d</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>Det vil ieg for Sanden sige (efter Vedel I 5, <rs key="title2132" type="title"
+                  >DgF 7H</rs>)</cell>
+              <cell>Ei vil jeg d&#x00F8;lge hvad Sandhed er (<hi rend="italic">Sivard Snarensvend</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>Det vil jeg for Sanden sige (efter Vedel I 22, <rs key="title2135" type="title"
+                  >DgF 1B</rs>)</cell>
+              <cell>Hun saae paa den saa gladelig (<hi rend="italic">Thors-Hammeren</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>Det vil jeg for sanden sige: / Saa kostelig ere mine heste (efter Syv IV 82, <rs
+                  key="title2160" type="title">DgF 112F</rs>)</cell>
+              <cell>Men ei paa mange Mile n&#x00E6;r / Der er saa gode Heste (<hi rend="italic"
+                >Vildskytterne</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>thett well ieg for sandingenn sygge [sige] (efter <rs type="title"
+                  key="title2498">Karen Brahes folio</rs> nr. 102, <rs key="title2128" type="title"
+                  >DgF 354B</rs> )</cell>
+              <cell>Den Herre, han var baade rig og glad (<hi rend="italic">Ebbe Skammelsen</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>Nu haver stolten Signelild forvunden ald sin harm: / Hun sover hver nat udi en
+                Konge-S&#x00F8;ns arm (efter Syv IV 34, <rs key="title2150" type="title">DgF
+                  65Ab</rs>)</cell>
+              <cell> Det haver stolt Signelil&#x2019; for sin B&#x00F8;n, / Hun favner den ypperste
+                Konges&#x00F8;n (<hi rend="italic">Lindorme-Bruden</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>Daa smiler Daner-kongen vnder skiend (efter <rs type="title" key="title2498"
+                  >Karen Brahes folio</rs> nr. 40, <rs key="title2167" type="title">DgF
+                237B</rs>)</cell>
+              <cell>Da tog Dannerkongen den M&#x00F8; i Favn (<hi rend="italic">Lykkespil</hi>)</cell>
+            </row>
+            
+            <row>
+              <cell>oc smiler hand vnder Skind (efter Vedel I 22, <rs key="title2135" type="title"
+                  >DgF 1B</rs>)</cell>
+              <cell>Saa raser man i Ungdommen (<hi rend="italic">Thors-Hammeren</hi>)</cell>
+            </row>         
+            <row>
+              <cell>&#x00C6;blebarn (efter Syv IV 23, <rs type="title" key="title2172">DgF 475
+                  C</rs>; udtrykket betegner i folkeviserne den lykkelige barndom)</cell>
+              <cell>&#x00E6;dle Barn (<hi rend="italic">Axel og Valborg</hi>)</cell>
+            </row>
+          </table>
+          
+         
+        </div>
+        <div>
+          <head xml:id="docIn43">Arkaiseringer og moderniseringer</head>
+          
+          <p rend="noIndent">Det, der f&#x00F8;rst og fremmest springer en folkevisekender i
+            &#x00F8;jnene, er, at Grundtvig p&#x00E5; &#x00E9;n gang arkaiserer og moderniserer
+            &#x2013; indimellem i samme strofe.
+            <!--I skemaet nedenfor er forl&#x00E6;ggets ordlyd,
+            stavem&#x00E5;de og findested anf&#x00F8;rt i f&#x00F8;rste kolonne, mens Grundtvigs
+            omskrivninger f&#x00F8;lger i anden kolonne. / angiver linjeskift.
+            Hvis f&#x00F8;rste kolonne er tom, er formuleringen Grundtvigs
+            tilf&#x00F8;jelse. Om findestederne, se
+            afsnittet om <ref type="docIn" target="#docIn2">Tidligere folkeviseudgaver</ref>.--></p>
+          
+          <table rend="source">
+            <row>
+              <cell>Tinge frem [...] / mangen Mand (efter Vedel II 18, <rs key="title2103"
+                  type="title">DgF 116b</rs>)</cell>
+              <cell>Thinge Fram [...] / mod ham (<hi rend="italic">Sorte-Plog</hi>)</cell>
+            </row>
+            <row>
+              <cell>at Dagmar skulde d&#x00F8; saa vng (efter Vedel II 25, <rs key="title2106"
+                  type="title">DgF 135C</rs>) </cell>
+              <cell>At d&#x00F8;e skulde Dagmar hin unge (<hi rend="italic">Dronning Dagmars
+                D&#x00F8;d</hi>)</cell>
+            </row>
+            <row>
+              <cell>gaar de (efter Vedel II 21, <rs key="title2112" type="title">DgF
+                137B</rs>)</cell>
+              <cell>ginge de dem (<hi rend="italic">Den Danske Prindsesse i Sverrig</hi>)</cell>
+            </row>
+            <row>
+              <cell>Fr&#x00F8;iken (efter Vedel II 21, <rs key="title2112" type="title">DgF
+                  137B</rs>; her bruger Vedel samtidens ord for en kongedatter,
+                &#x2018;fr&#x00F8;ken')</cell>
+              <cell>Jomfru (<hi rend="italic">Den Danske Prindsesse i Sverrig</hi>)</cell>
+            </row>
+            <row>
+              <cell>Oc melte hand det, Herr Iffuer Lycke (efter Vedel II 44, <rs key="title2116"
+                  type="title">DgF 159F</rs>)</cell>
+              <cell>Hr. <persName key="pe1030">Iver Lykke</persName>, han meldte med Skiel, (<hi
+                  rend="italic">Iver Lykke,</hi>  karakterisering af en talende)</cell>
+            </row>
+            <row>
+              <cell>H&#x00F8;r y thett (efter Karen Brahes folio nr. 102, <rs key="title2128"
+                  type="title">DgF 354B</rs>)</cell>
+              <cell>Hil sidde I (<hi rend="italic">Ebbe Skammelsen</hi>)</cell>
+            </row>
+            <row>
+              <cell>i ildenn som hun stuod (efter Abrahamson, Nyerup og Rahbek nr. 150, <rs
+                  key="title2159" type="title">DgF 108A</rs>)</cell>
+              <cell>Hvor hun i Ild mon staae (<hi rend="italic">Ski&#x00E6;rsilden</hi>)</cell>
+            </row>
+          </table>
+         
+          <p rend="noIndent">Til trods for, at Grundtvig indimellem bruger sin historiske viden til
+            at pr&#x00E6;cisere de ofte mangelfulde oplysninger i de historiske viser, kan han
+            ogs&#x00E5; omtolke forl&#x00E6;ggets ord og erstatte dem med noget, der (formentlig)
+            har været lettere at forst&#x00E5; for samtiden.
+            <!--I skemaet nedenfor er forlæggenes ordlyd og
+            stavem&#x00E5;de og findestedet anf&#x00F8;rt i f&#x00F8;rste kolonne, mens Grundtvigs
+            omskrivninger  f&#x00F8;lger i anden kolonne. / angiver linjeskift. Om findestederne, se
+            afsnittet om <ref type="docIn" target="#docIn2">Tidligere folkeviseudgaver</ref>.--></p> 
+          
+          <table rend="source">
+            <row>
+              <cell>heder (bl.a. efter Vedel II 18, <rs key="title2103" type="title">DgF 116b</rs>) </cell>
+              <cell>kalder (bl.a. <hi rend="italic">Sorte-Plog</hi>)</cell>
+            </row>
+            <row>
+              <cell>krancke Stund (efter Vedel II 31, <rs key="title2110" type="title">DgF
+                145N</rs>)</cell>
+              <cell>bange Stund (<hi rend="italic">Erik Glippings D&#x00F8;d</hi>)</cell>
+            </row>
+            <row>
+              <cell>herlige &#x00D8;rss (efter Vedel II 21, <rs key="title2112" type="title">DgF
+                  137B</rs>)</cell>
+              <cell> pr&#x00E6;gtige Heste (<hi rend="italic">Den Danske Prindsesse i
+                Sverrig</hi>)</cell>
+            </row>
+            <row>
+              <cell>Usen (efter Vedel I 25, <rs key="title2133" type="title">DgF 32B</rs>; ordet
+                ussen betyder &#x2018;ulykkeligt&#x2019;)</cell>
+              <cell>Usalig (<hi rend="italic">Svenn Felding og den Tydske Dronning</hi>)</cell>
+            </row>
+            <row>
+              <cell>mindet (efter Vedel II 1, <rs key="title2144" type="title">DgF 52D</rs>)</cell>
+              <cell>kyssed (<hi rend="italic">Bonden i Vildenskov</hi>)</cell>
+            </row>
+            <row>
+              <cell>stienstoffue (efter <rs key="title2498" type="title">Karen Brahes folio</rs> nr.
+                102, <rs key="title2128" type="title">DgF 354B</rs>; en stenstue er den del af
+                (herre)g&#x00E5;rden, der er bygget i sten, og som f&#x00F8;lge deraf er mindre
+                br&#x00E6;ndbar end dele af bindingsv&#x00E6;rk)</cell>
+              <cell>Storstue (<hi rend="italic">Ebbe Skammelsen</hi>)</cell>
+            </row>
+          </table>
+        
+        </div>
+        
+        <div>
+          <head xml:id="docIn46">Ad usum delphini</head>
+          <p rend="noIndent">Med tanke p&#x00E5; m&#x00E5;lgruppen (skoleungdommen) pr&#x00F8;ver Grundtvig at moderere
+            indholdet ved at omskrive eller forbig&#x00E5; de tydeligste seksuelle hentydninger.</p>
+          
+          <table rend="source">
+            <row>
+              <cell>ieg soffuer hoss eder i Nat (efter Vedel II 31, <rs type="title" key="title2110"
+                  >DgF 145N</rs>)</cell>
+              <cell>Her lyster mig helst at hvile (<hi rend="italic">Erik Glippings
+                D&#x00F8;d</hi>)</cell>
+            </row>
+            <row>
+              <cell>Frue Ingeborg i besoff (efter Vedel II 31, <rs type="title" key="title2110">DgF
+                  145N</rs>)</cell>
+              <cell>Fru Ingeborgs &#x00C6;re og Tro (<hi rend="italic">Erik Glippings
+                  D&#x00F8;d</hi>)</cell>
+            </row>
+            <row>
+              <cell>ved &#x00E6;re oc lempe skild (efter Vedel II 31, <rs type="title"
+                  key="title2110">DgF 145N</rs>)</cell>
+              <cell>Med faure Ord bedaaret (<hi rend="italic">Erik Glippings D&#x00F8;d</hi>)</cell>
+            </row>
+            <row>
+              <cell>Bolden drev i jomfruens ski&#x00F8;d, / Og giorde kinderne blege (efter Syv IV
+                24, <rs type="title" key="title2142">DgF 70Bc</rs>) </cell>
+              <cell>Og Bolden drev i Jomfrubur, / Han mon derefter gaae (<hi rend="italic">Ungen
+                  Svegder</hi>)</cell>
+            </row>
+            <row>
+              <cell>y silcke-serck (efter Karen Brahes folio nr. 177, DgF <rs type="title"
+                  key="title2155">45a/b</rs>; beklædningsgenstanden er en silkeunderkjole)</cell>
+              <cell>Kaaben saa blaa (<hi rend="italic">Elvehjem</hi>)</cell>
+            </row>
+            <row>
+              <cell>Jeg vil sove hos bruden i nat, / Jeg giver hende min tro (efter Syv IV 95, <rs
+                  type="title" key="title2171">DgF 391Ae</rs>)</cell>
+              <cell>Hr. Tyge har dertil mig sendt, / Jeg i hans Sted skal tr&#x00E6;de (<hi
+                  rend="italic">Den &#x00F8;mskindede Brudgom</hi>)</cell>
+            </row>
+          </table>
+         
+        </div>
+      
+        <div>
+<head xml:id="docIn45">Metriske &#x00E6;ndringer</head>
+<p rend="noIndent">Det er p&#x00E5;faldende, at Grundtvig ikke har villet gengive folkevisernes
+            simple metrik, trods hans eget udsagn, &#x201C;med det &#x00D8;re, jeg har for
+            Modersmaalet og Takten&#x201D; (forordet s. [VII], se ogs&#x00E5; <rs key="title24" type="title">Toldberg 1946</rs>, s. 126, og <rs type="title" key="title2608">Pedersen
+              2013</rs>). Snarere har han anvendt den form, der i litteraturhistorien bliver omtalt
+            som kunstballade.</p>
+          <p rend="noIndent">Den traditionelle strofe i en folkevise best&#x00E5;r af fire
+            verslinjer med henholdsvis 4, 3, 4, 3 trykst&#x00E6;rke stavelser i verslinjerne og et
+            frit antal tryksvage stavelser. Dertil kommer rim mellem anden og fjerde verslinje.
+            Grundtvig g&#x00F8;r stroferne helt regelm&#x00E6;ssige, oftest s&#x00E5;ledes at
+            f&#x00F8;rste og tredje verslinje har rimet mandlig udgang (enstavelsesrim), mens andet
+            og fjerde vers har rimet kvindelig udgang (tostavelsesrim). Derudover lader han
+            stroferne i den enkelte vise f&#x00F8;lge samme (gerne jambiske) m&#x00F8;nster,
+            s&#x00E5; visen bliver mere sangbar, idet alle strofer har samme stavelsesantal,
+            s&#x00E5; man hverken skal str&#x00E6;kke tekst eller melodi for at f&#x00E5; det til at
+            &#x2018;g&#x00E5; op&#x2019;. Det medf&#x00F8;rer, at Grundtvig meget ofte m&#x00E5;
+            bytte fuldst&#x00E6;ndigt om p&#x00E5; ordenes r&#x00E6;kkef&#x00F8;lge for at
+            opn&#x00E5; det kvindelige rim. </p>
+          <p rend="noIndent">Mange melodier har formentlig v&#x00E6;ret ukendte for ham, for han
+            optrykker stort set ikke gentagelsesstrofernes specielle opbygning.</p>
+          <note type="readMore">
+<p rend="noIndent">En vise med gentagelsesstrofeform er bygget op p&#x00E5; den m&#x00E5;de, at en
+                strofes sidste 1-1&#x00BD; verslinje gentages (synges) f&#x00F8;rst i n&#x00E6;ste
+                strofe.</p>
+          </note> <p rend="noIndent"> Der er ikke noget system for,
+            hvorvidt han gentager omkv&#x00E6;d (og eventuelle mellemkv&#x00E6;d) ved alle strofer, eller om han
+            kun bringer dem ved f&#x00F8;rste og sidste strofe. </p>
+       </div>
+      </div>
+      <div>
+<head xml:id="docIn5">V&#x00E6;rkets placering i Grundtvigs forfatterskab</head>
+        <div>
+          <head xml:id="docIn51">Grundtvigs interesse for folkeviser </head>
+          <p rend="noIndent">Sk&#x00F8;nt Grundtvigs hovedinteresse i de tidligste voksen&#x00E5;r
+            var den nordiske mytologi, havde han kendt folkevisegenren siden sin ungdom. Allerede af
+            hans <ref target="bookInventory1805.xml" type="docOut">Bogfortegnelse fra 1805</ref>
+            fremg&#x00E5;r det, at han dengang ejede et eksemplar af <hi rend="italic"><rs
+                type="title" key="title352">Levninger</rs></hi>. </p>
+          <p rend="noIndent">I 1809 havde <persName key="pe2">Nyerup</persName> udsendt en
+            pr&#x00F8;ve p&#x00E5; den folkeviseudgave, han sammen med <persName key="pe24"
+              >Rahbek</persName> og <persName key="pe440">Abrahamson</persName> havde planer om at
+            udgive, <hi rend="italic"><rs key="title2605" type="title">Axel Thordsen og Skj&#x00F8;n
+                Valborg, en norsk Ballade, med anm&#x00E6;rkninger af R. Nyerup; som Pr&#x00F8;ve
+                paa den ny Skikkelse, hvori Abrahamson, Rahbek, og Nyerup agte at udgive den saa
+                kaldte Kjempevisebog</rs>.</hi> Pr&#x00F8;ven rummede udelukkende den meget lange
+            vise, <rs type="title" key="title2172">Axel og Valborg</rs> (<rs key="title2172"
+              type="title">DgF 375</rs>). Denne pr&#x00F8;veudgave kommenterede Grundtvig i <hi
+              rend="italic">
+              <rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>
+            </hi> nr. 49, 28. marts 1809. <persName key="pe67">Toldberg</persName> anf&#x00F8;rer
+            &#x2013; noget uretf&#x00E6;rdigt &#x2013; at Grundtvig p&#x00E5; dette tidspunkt
+            snarere interesserede sig for viserne som &#x201C;filologiske aktstykker&#x201D; end for
+            deres egen skyld (<rs key="title24" type="title">1946</rs>, s. 126). I dag ville man
+            snarere sige, at Grundtvig efterlyste oplysninger om, hvilke editionsm&#x00E6;ssige
+            kriterier udgiverne havde i sinde at l&#x00E6;gge til grund for den samlede udgave.</p>
+</div>
+        
+        <div>
+<head xml:id="docIn52">Grundtvigs tidligere folkevisebearbejdelser</head>
+<p rend="noIndent">
+            <p rend="noIndent">Grundtvig havde udgivet et par visebearbejdelser l&#x00E6;nge f&#x00F8;r 1847 (se i
+              &#x00F8;vrigt <hi rend="italic">
+<rs type="title" key="title35">Bibliografien</rs>
+</hi> 2, s.
+              313-319). Det drejer sig om:</p>
+          
+          <list type="simple">
+            
+            <item><rs type="title" key="title2139">&#x201C;Havfruen og Dane-Dronningen&#x201D;</rs> i
+                  <hi rend="italic"><rs key="title270" type="title">Danne-Virke</rs></hi> 1,
+                1816.</item>
+            <item><rs type="title" key="title593">&#x201C;Dannevirke&#x201D;</rs> (som ikke er en
+              folkevise, men en vise, <rs type="title" key="title593">&#x201C;Thyre Dannebods Vise&#x201D;</rs>, forfattet af <persName key="pe221">Laurids Kok</persName> i
+                slutningen af 1600-tallet) i <hi rend="italic">
+                  <rs key="title271" type="title">Danne-Virke</rs></hi> 2, 1817.</item>
+          </list>
+          
+          <p rend="noIndent">Grundtvig lod desuden en enkelt af viserne fra <hi rend="italic">Danske
+                K&#x00E6;mpeviser til Skole-Brug</hi> optrykke senere med sm&#x00E5;
+              &#x00E6;ndringer (se i &#x00F8;vrigt <hi rend="italic"><rs key="title9999"
+                  type="title">Bibliografien</rs>
+              </hi> 2, s. 313-319):</p>
+          <list type="simple">
+            <item><rs type="title" key="title2129">&#x201C;Holger Danske og St&#x00E6;rk
+                Didrik&#x201D;</rs> i <hi rend="italic">
+                  <rs key="title325" type="title">Danskeren</rs>
+                </hi> II, 1849.</item>
+          </list>
+</p>
+</div>
+</div>
+    <!--  
+      <div><head xml:id="docIn6">V&#x00E6;rkets placering i Grundtvigs samtid</head><p rend="noIndent"></p></div>-->
+      
+      <div>
+<head xml:id="docIn7">Dronninger og antologier</head>
+       
+        
+        <div>
+<head xml:id="docIn711">En gave til en dronning</head>
+          <p rend="noIndent">I et brev til dronning <persName key="pe108">Caroline Amalie</persName>
+            skrev Grundtvig den 23. oktober 1847:</p> 
+          
+          <p rend="quote">Vedlagt giver jeg mig den allerunderdanigste Frihed at sende D.M. to Expl.
+            af en lille K&#x00E6;mpevise-Samling, som jeg i disse Dage har udgivet, og som skal
+            finde saa rivende Afs&#x00E6;tning, at den synes at v&#x00E6;re efter
+            L&#x00E6;severdenens Smag, hvad naturligviis meget forn&#x00F8;ier mig, da den er efter
+            min, og Dronningen vil vist vise mig den Naade at r&#x00E6;kke den lille Bog til Kongen,
+            da jeg maaskee ikke saa snart kunde faa Adgang til Majest&#x00E6;ten (<rs key="title7"
+              type="title">Breve 2</rs>, s. 450).</p>
+        <p rend="noIndent">Hermed skrev han ubem&#x00E6;rket sig selv ind i en litteraturhistorisk
+            tradition for med en folkeviseudgave at henvende sig til en dronning. Det havde
+              <persName key="pe350">Vedel</persName> gjort i fortalen til sin udgave i 1591, hvor
+            dronningen var <persName key="pe231">Christian 4.s</persName> moder, den
+            folkeviseinteresserede dronning <persName key="pe1131">Sophie</persName>, og <persName
+              key="pe239">Syv</persName> fulgte ham i 1695 med en dedikation til dronning <persName
+              key="pe1132">Charlotte Amalie</persName>, mens <persName key="pe440">Abrahamson</persName>,  <persName key="pe2"
+              >Nyerup</persName> og <persName key="pe24">Rahbek</persName> tilegnede deres
+            v&#x00E6;rk til dronning <persName key="pe248">Marie Sophie Frederikke</persName>.</p>
+</div>
+        
+        <div>
+<head xml:id="docIn72">Genoptryk, melodier og antologier</head>
+          <p rend="noIndent"><hi rend="italic">Danske K&#x00E6;mpeviser</hi>  udkom i andet oplag i 1875 p&#x00E5; <persName key="pe313">Karl
+              Sch&#x00F8;nbergs</persName> forlag, tre &#x00E5;r efter Grundtvigs d&#x00F8;d. Om denne
+            udgave formoder <persName key="pe76">Steen Johansen</persName>, at det er
+            s&#x00F8;nnen, <persName key="pe135">Svend Grundtvig</persName>, der har bes&#x00F8;rget
+            andet oplag, der i &#x00F8;vrigt har u&#x00E6;ndret ordlyd (<hi rend="italic"><rs
+              key="title35" type="title">Bibliografien</rs>
+            </hi> 2, s. 319). </p>
+          <p rend="noIndent">Ud over hvad der er nævnt i tekstredegørelsen (<ref type="docOut"
+              target="1847_896A_txr.xml#docIn33">se afsnittet: Senere udgaver</ref>), udkom der en
+            folkelig melodisamling til v&#x00E6;rket ved <persName key="pe1135">Morten
+              Eskesen</persName> i 1872 (<rs type="title" key="title2538">Eskesen 1872</rs>).
+              <persName key="pe1135">Morten Eskesen</persName> var b&#x00E5;de forfatter og
+            komponist og desuden en af friskolebev&#x00E6;gelsens fremtr&#x00E6;dende pionerer, der
+            interesserede sig for folkeminder og st&#x00F8;ttede danskheden blandt
+            s&#x00F8;nderjyderne (<rs key="title2612" type="title">Yde 1991</rs>, s. 306-308).</p>
+          <p rend="noIndent">Endelig optræder mange af viserne i senere antologier. <persName
+              key="pe364">P.O. Boisens</persName> visebog, <hi rend="italic">
+              <rs key="title2291" type="title">Nye og gamle Viser af og for Danske Folk</rs>,</hi>
+            der kom i ni oplag i &#x00E5;rene 1849-1870, gav mange af Grundtvigs tillempninger et
+            videre liv, der rakte langt ud over selve visebogens.</p>
+<!--          
+          <p rend="noIndent">Endelig optr&#x00E6;der mange af viserne i senere antologier. Her skal
+            is&#x00E6;r fremh&#x00E6;ves <persName key="pe83">J.C. Brandt</persName> (<rs type="title" key="title61">1849</rs>, der forkorter) og <persName key="pe283">K&#x00F8;ster</persName> (<rs key="title2290" type="title">1865</rs>). For en
+            fuldst&#x00E6;ndig oversigt henvises til <hi rend="italic">
+              <rs type="title" key="title35">Bibliografien</rs>
+            </hi> 2, s. 313-319. <hi rend="italic">
+              <rs key="title35" type="title">Bibliografien</rs>
+            </hi> n&#x00E6;vner i &#x00F8;vrigt, at ogs&#x00E5; andre antologier bragte viser fra
+            Grundtvigs udvalg, bl.a. <persName key="pe364">P.O. Boisens</persName> visebog, <hi rend="italic">
+              <rs key="title2291" type="title">Nye og gamle Viser af og for Danske Folk</rs>,</hi>
+            der kom i ni oplag i &#x00E5;rene 1849-1870. Disse samlinger gav mange af Grundtvigs
+            tillempninger et videre liv, der rakte langt ud over selve visebogens.</p>-->
+</div>
+        <div>
+<head xml:id="docIn73">H&#x00F8;jskolesangbogen</head>
+<p rend="noIndent"> Grundtvig angiver allerede i titlen, at udgaven er tillempet til skoleungdommen.
+            Det kan derfor ikke undre, at <hi rend="italic">
+              <rs type="title" key="title2607">H&#x00F8;jskolesangbogen</rs>
+            </hi> op gennem tiderne har bragt viser fra Grundtvigs udgave. Den seneste udgave (2006)
+            bringer fire af sine 21 &#x2018;folkeviser&#x2019; i forkortede udgaver af netop
+            Grundtvigs versioner &#x2013; ud over tilegnelsesdigtet, <rs type="title"
+              key="title2630">&#x201C;Jeg gik mig ud en sommerdag&#x201D;</rs>, der ret beset ikke
+            er en folkevise. Hermed f&#x00E5;r Grundtvigs bearbejdelser stor indflydelse p&#x00E5;
+            menigmands oplevelse af folkevisen som genre. Samtidens ungdom fik efter moderne
+            videnskabelige standarder et modereret billede af &#x2018;den &#x00E6;gte (gamle)
+            folkevise&#x2019; (hvis en s&#x00E5;dan findes), men uanset kritikken er der
+            n&#x00E6;ppe tvivl om, at Grundtvig har &#x2018;tillempet&#x2019; ud fra en forestilling
+            om, hvad der kunne bringe folkeviserne og forst&#x00E5;elsen af dem ud til en
+            st&#x00F8;rre kreds. Og publikum fik en stor samling af viser, hvoraf en del tilmed
+            levede videre i andre udgivelser, mens samtiden afventede s&#x00F8;nnens
+            mammutv&#x00E6;rk, <rs key="title1672" type="title">DgF</rs>. </p>
+</div>
+</div>
+      <div>
+<head xml:id="docIn8">Senere forskning</head>
+        <p rend="noIndent">Fordi Grundtvig &#x00E6;ndrede s&#x00E5; kraftigt, som han gjorde, har
+          viserne i hans versioner ikke ligget til grund for viseforskningen. Hans versioner
+          afspejler hverken den gamle adelsvisetradition eller den folketradition, som dele af
+          1800-tallet sv&#x00E6;rmede for. Ikke desto mindre har redakt&#x00F8;rerne af sidste bind
+          af <hi rend="italic">
+            <rs type="title" key="title1672">Danmarks gamle Folkeviser</rs>
+          </hi> (registerbindet) ment, at udgaven var v&#x00E6;sentlig nok til at optr&#x00E6;de i
+          konkordanserne (<rs key="title1672" type="title">DgF bind 12</rs>, s. 97). Og i <persName
+            key="pe519">Vilhelm Andersens</persName> og <persName key="pe388">Carl S.
+              Petersens</persName> <rs type="title" key="title466">Illustreret Dansk Litteraturhistorie</rs> (<rs type="title" key="title466">1929</rs>, s.
+          203) fremh&#x00E6;ver sidstnævnte Grundtvigs udgave frem for fx <persName key="pe3">Oehlenschl&#x00E4;gers</persName> og <persName key="pe69">Winthers</persName>.</p>
+        <p rend="noIndent"><persName key="pe76">Steen Johansen</persName> har i <hi rend="italic"
+              ><rs key="title35" type="title">Bibliografien</rs></hi> oplistet <rs type="title"
+            key="title9999">DgF</rs>-numre til de enkelte viser, men uden at angive pr&#x00E6;cis
+          variant. <persName key="pe388">Carl S. Petersen</persName> behandlede bogen i forbindelse
+          med sin redeg&#x00F8;relse for &#x2018;folkevisestriden&#x2019; (<rs type="title"
+            key="title2520">Petersen 1905</rs>), mens <persName key="pe67">Helge Toldberg</persName>
+          i sin <hi rend="italic">
+            <rs key="title24" type="title">Grundtvig som filolog</rs>
+          </hi> (1946, s. 126-128) bragte enkelte eksempler p&#x00E5; Grundtvigs omdigtninger. Hans
+          karakteristik er stadig rammende:</p>
+          <p rend="quote">[Grundtvigs omskrivninger] har kostet mere Arbejde [sic] end <rs
+            type="title" key="title438">Winthers</rs>, men betegner en vending bort fra den
+          foreliggende overleveringsform i overensstemmelse med tidens pastichepaavirkede opfattelse
+          af folkevisens v&#x00E6;sen. Principielt er denne restitution af lignende karakter som i
+            <rs key="title2159" type="title">Abrahamsons, Nyerups og Rahbeks udg.</rs> (<rs
+            key="title24" type="title">Toldberg 1946</rs>, s. 127).</p>
+<p rend="noIndent">F&#x00F8;rst i 2013 og 2016 er v&#x00E6;rket blevet grundigere behandlet, dvs.
+          sat ind i en editionshistorisk sammenh&#x00E6;ng (<rs key="title2610" type="title"
+            >Pedersen 2016</rs>, in press), ligesom der foreligger en udf&#x00F8;rligere oversigt
+          over arten af de mange &#x00E6;ndringer, Grundtvig udsatte folkeviserne for (<rs
+            type="title" key="title2608">Pedersen 2013</rs>), som n&#x00E6;rv&#x00E6;rende
+          fremstilling b&#x00E5;de bygger p&#x00E5; og p&#x00E5; enkelte omr&#x00E5;der uddyber. </p>
+</div>
+          
+          
+          
+          <div type="litList">
+            <head xml:id="docIn9">Anvendt litteratur</head>
+           
+            <list type="litList">
+          <!--<item>NB: Titler med ** foran er kopieret ind fra dokumentet: 1847_898 (HD) og derfor tidligere korrekturlæst. ** fjernes inden oplastning</item>-->
+          <item>Abrahamson, Werner Hans Frederik, Rasmus Nyerup &amp; Knud Lyne Rahbek (1812-1814)
+              <hi rend="italic">
+              <rs key="title2504" type="title">Udvalgte Danske Viser fra Middelalderen; efter A.S.
+                Vedels og P. Syvs trykte Udgaver og efter haandskrevne Samlinger udgivne paa
+              ny</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Bang, Jørgen (1972) <hi rend="italic"><rs type="title" key="title4179">Synspunkter
+                på Folkevisen</rs>.</hi> København</item>
+          <item><hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> se
+            Johansen, Steen (1948-1954)</item>
+          <item><hi rend="italic"><rs type="title" key="title7">Breve</rs></hi> 2, se Grundtvig,
+            N.F.S. (1924-1926)</item>
+          <!--<item>Boisen, Peter Outzen udg. (1865) <hi rend="italic"><rs type="title" key="title2291"
+                >Nye og gamle Viser af og for Danske Folk, samlede og udgivne af P. O.
+                Boisen</rs>.</hi> K&#x00F8;benhavn</item>
+              <item>Brandt, Carl Joakim (1849) <hi rend="italic"><rs key="title61" type="title">Rim og
+                Sange til F&#x00E6;drelandets Historie</rs>.</hi> K&#x00F8;benhavn</item>
+             
+              <item>Dal, Erik (1956) <hi rend="italic"><rs key="title2815" type="title"> Nordisk
+                folkeviseforskning siden 1800. Omrids af text- og melodistudiets historie og
+                problemer is&#x00E6;r i Danmark</rs>.</hi> K&#x00F8;benhavn</item>-->
+          <item>Dyrlund, Folmer
+            (1853)<!-- <rs type="title" key="title4175">&#x201C;MERE
+              HER&#x201D;</rs>-->
+            i <hi rend="italic"><rs type="title" key="title2603">Holbæk Amts Avis</rs>,</hi> 23.
+            marts. Holbæk</item>
+          <item> Eskesen, Morten (1872) <hi rend="italic"><rs type="title" key="title2538">Nordiske
+                Sange til Brug ved Folkem&#x00F8;der, Skytteforeninger og Skoler</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item><hi rend="italic"><rs type="title" key="title1672">DgF</rs>, </hi>se Grundtvig,
+            Svend (1853-1976)</item>
+          <item>Grundtvig, N.F.S. (1809) <rs type="title" key="title2605">&#x201C;Om den ny Udgave
+              af K&#x00E6;mpeviserne&#x201D;</rs> i <hi rend="italic">
+              <rs key="title538" type="title">Nyeste Skilderie af Kj&#x00F8;benhavn</rs>,</hi> nr.
+            49, 28. marts, sp. 792. K&#x00F8;benhavn</item>
+          <!--<item>Grundtvig, N.F.S. (1810) <hi rend="italic"><rs type="title" key="title1402"
+                >Idunna</rs>.</hi> København</item>-->
+          <item>Grundtvig, N.F.S. (1816) <rs type="title" key="title2139">&#x201C;Havfruen og
+              Dane-Dronningen&#x201D;</rs> i <hi rend="italic"><rs key="title270" type="title"
+                >Danne-Virke 1</rs>,</hi> s. 209-213.K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1817) <rs type="title" key="title593">&#x201C;Thyre Dannebods
+              Vise&#x201D;</rs> i <hi rend="italic"><rs key="title271" type="title">Danne-Virke
+                2</rs>,</hi> s. 1-6. K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1847a) <rs type="title" key="title2516"><hi rend="italic">Danske
+                Kæmpeviser til Skole-Brug udvalgte og tillæmpede af Nik. Fred. Sev.
+              Grundtvig</hi></rs>. København</item>
+          <item>Grundtvig, N.F.S. (1847b) <hi rend="italic"><rs type="title" key="title2515">Om
+                K&#x00E6;mpevise-Bogen, en Stemme mod Hr. Levins, Hr. Liebenbergs o.s.v. </rs></hi>
+            K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1849) <rs type="title" key="title2129">&#x201C;Holger Danske og
+              St&#x00E6;rk Didrik&#x201D;</rs> i <hi rend="italic"><rs key="title325" type="title"
+                >Danskeren 2</rs>,</hi> s. 446-448. K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1924-1926) <hi rend="italic"><rs type="title" key="title7">Breve
+                fra og til N.F.S. Grundtvig</rs>,</hi> udg. Georg Christensen &amp; Stener
+            Grundtvig, bind 1-2. København</item>
+          <item>Grundtvig, Svend overs. (1842-1846) <hi rend="italic"><rs type="title"
+                key="title2507">Engelske og Skotske Folkeviser, fordanskede af Svenn
+              Grundtvig</rs>,</hi> bind 1-2. København</item>
+          <item>Grundtvig, Svend &amp; Christian S. Ley (1843) &#x201C;Om Kæmpeviserne, til danske
+            Mænd og Quinder&#x201D;, i <hi rend="italic"><rs type="title" key="title2514">Dansk
+                Folkeblad</rs></hi> nr. 45, 8. december. København</item>
+          <item>Grundtvig, Svend (1843-1844) <rs type="title" key="title2513">“Om en ny Udgave af
+              Danmarks Kæmpeviser”</rs> i <hi rend="italic"><rs type="title" key="title2514">Dansk
+                Folkeblad</rs>,</hi> nr. 48, 22. december, s. 197-201, og 51/52, s. 205-209.
+            København</item>
+          <item>Grundtvig, Svend (1847a) <rs type="title" key="title2517"><hi rend="italic">Plan til
+                en ny Udgave af Danmarks gamle Folkeviser</hi></rs>. København</item>
+          <item>Grundtvig, Svend (1847b) <rs type="title" key="title2518"><hi rend="italic">Prøve
+                paa en ny Udgave af Danmarks gamle Folkeviser for Samfundet til den danske
+                Litteraturs Fremme ved Svend Grundtvig</hi></rs>. København</item>
+          <item>Grundtvig, Svend (1847c) <hi rend="italic"><rs key="title2519" type="title"
+                >Pr&#x00F8;ve paa en ny Udgave af Danmarks gamle Folkeviser for Samfundet til den
+                danske Litteraturs Fremme ved Svend Grundtvig</rs>
+            </hi> (2. oplag ). K&#x00F8;benhavn</item>
+          <item>Grundtvig, Svend (1848) <rs type="title" key="title2604"><hi rend="italic">Etatsraad
+                Molbech og Kæmpeviserne, et Stridsskrift af Svend Grundtvig</hi></rs>.
+            København</item>
+          <item>Grundtvig, Svend m.fl. udg. (1853-1976) <hi rend="italic"><rs type="title"
+                key="title1672">Danmarks gamle Folkeviser</rs>,</hi> bind 1-12. København</item>
+          <item>Gr&#x00FC;ner-Nielsen, Hakon &amp; Marius Kristensen udg. (1912-1931) <hi
+              rend="italic">
+              <rs key="title2512" type="title">Danske Viser fra Adelsviseb&#x00F8;ger og Flyveblade
+                1530-1630</rs>,</hi> bind 1-7. K&#x00F8;benhavn</item>
+          <item>Henningsen, Gustav (1959) <rs key="title2632" type="title">&#x201C;Vedel og Syv og
+              bogtrykkerne. En bibliografisk unders&#x00F8;gelse af Hundredvisebogen&#x201D;</rs> i
+              <hi rend="italic"><rs key="title488" type="title">Danske Studier</rs>,</hi> s. 53-84.
+            K&#x00F8;benhavn</item>
+          <item>
+            <hi rend="italic">
+              <rs key="title2808" type="title">H&#x00F8;jskolesangbogen</rs></hi> (2006).
+            Gylling</item>
+          <item>Johansen, Steen (1948-1954) <hi rend="italic"><rs type="title" key="title35"
+                >Bibliografi over N.F.S. Grundtvigs skrifter</rs>,</hi> bind 1-4.
+            K&#x00F8;benhavn</item>
+          <!--<item>K&#x00F8;ster, Kristian udg. (1865) <hi rend="italic"><rs key="title2290"
+                type="title">Et Hundrede Danske Sange, samlede af Kristian K&#x00F8;ster</rs>.</hi>
+            K&#x00F8;benhavn</item>-->
+          <item>Levin, Israel Salomon (1846) <rs type="title" key="title2631">&#x201C;Nogle
+              Betragtninger over dansk Sprog og dansk Retskrivning&#x201D;</rs> i <rs type="title"
+              key="title2198"><hi rend="italic">Nordisk Literatur-Tidende</hi>,</rs> nr. 43, 8.
+            november, sp. 337-343, nr. 45, 22. november, sp. 353-360, nr. 48, 13. december, sp.
+            377-384 og nr. 49, 13. december [!], sp. 385-389. København</item>
+          <item>Levin, Israel Salomon (1847) <rs type="title" key="title2765">“Plan og Prøve af en
+              ny Udgave af Danmarks gamle Folkeviser for Samfundet til den danske Litteraturs
+              Fremme, ved Svend Grundtvig”</rs> i <hi rend="italic"><rs type="title" key="title1134"
+                >Fædrelandet</rs></hi> nr. 222. København</item>
+          <item>Liebenberg, Frederik Ludvig (1847) <rs type="title" key="title2769">“Et Par
+              yderligere Bemærkninger om den bebudede nye Udgave af de gl. Folkeviser”</rs> i <hi
+              rend="italic"><rs type="title" key="title2228">Berlingske Tidende</rs>,</hi> nr. 226,
+            28. september. København</item>
+          <item>Molbech, Christian (1847a) <rs type="title" key="title2752"><hi rend="italic">En
+                Betænkning over den bebudede nye Udgave af en Material-Samling af Danmarks gamle
+                Folkeviser</hi></rs>. København</item>
+          <item>Molbech, Christian (1847b) <rs type="title" key="title2509"><hi rend="italic">Et
+                hundrede udvalgte Danske Folkeviser, hidtil utrykte, samlede og udgivne af C.
+                Molbech</hi></rs>. København</item>
+          <item>Molbech, Christian (1848a) <rs type="title" key="title2508"><hi rend="italic">Om de
+                gamle danske Folkevisers Beskaffenhed og Forhold, deres Skikkelse i Haandskrifter og
+                trykte Udgaver, og om Grundsætningerne for deres Udgivelse</hi></rs>.
+            København</item>
+          <item>Molbech, Christian (1848b) <rs type="title" key="title2767"><hi rend="italic"
+                >Kritiske Bemærkninger og Resultater, angaaende den Grundtvigske Udgave,
+                Materialsamling og Kildesamling af gamle danske Folkeviser</hi></rs>.
+            København</item>
+          <item>Nyerup, Rasmus udg. (1784) <hi rend="italic"><rs key="title352" type="title"
+                >Levninger af Middel-Alderens Digtekunst</rs>,</hi> bind 2. K&#x00F8;benhavn</item>
+          <item>Nyerup, Rasmus udg. (1809) <hi rend="italic"><rs key="title2605" type="title">Axel
+                Thordsen og Skj&#x00F8;n Valborg, en norsk Ballade, med anm&#x00E6;rkninger af R.
+                Nyerup; som Pr&#x00F8;ve paa den ny Skikkelse, hvori Abrahamson, Rahbek, og Nyerup
+                agte at udgive den saa kaldte Kjempevisebog</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Oehlenschl&#x00E4;ger, Adam udg. (1840) <hi rend="italic"><rs key="title101"
+                type="title">Gamle danske Folkeviser, udgivne til Almeenl&#x00E6;sning</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>Paludan-Müller, Caspar (1839) <rs type="title" key="title4177">&#x201C;Skjön Volborg
+              og Aslag Tordsen&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title1190"
+                >Brage og Idun</rs>,</hi> bind 2, s. 187-219. København</item>
+          <item>Pedersen, Vibeke A. (2001) <rs type="title" key="title1746">&#x201C;Formler i
+              Dronning Sophies visebog&#x201D;</rs> i Hanne Ruus &amp; Flemming Lundgreen-Nielsen
+            red. <hi rend="italic">
+              <rs key="title1747" type="title">Sv&#x00F8;bt i M&#x00E5;r</rs>,</hi> bind 3, s.
+            357-448. K&#x00F8;benhavn</item>
+          <item>Pedersen, Vibeke A. (2013) <rs key="title2608" type="title">&#x201C;Gammel
+              k&#x00E6;rlighed ruster ikke - men kan sagtens pudses. Om
+              &#x2018;tillempningen&#x2019; i Danske K&#x00E6;mpeviser til Skole-Brug udvalgte og
+              till&#x00E6;mpede af Nik. Fred. Sev. Grundtvig&#x201D;</rs> i Dorthe Duncker, Anne
+            Mette Hansen &amp; Karen Skovgaard-Petersen red. <hi rend="italic">
+              <rs key="title2608" type="title">Betydning &amp; Forst&#x00E5;else. Festskrift til
+                Hanne Ruus</rs>,</hi> s. 89-102. K&#x00F8;benhavn</item>
+          <item>Pedersen, Vibeke A. (2016, in press) <rs key="title2605" type="title">&#x201C;Den
+              danske folkevises editionshistorie&#x201D;</rs> i Johnny Kondrup red. <hi
+              rend="italic"><rs key="title2609" type="title">Dansk Editionshistorie</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>Petersen, Carl S. (1905) <rs key="title2520" type="title">&#x201C;Fra
+              Folkevisestriden&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title488"
+                >Danske Studier</rs>,</hi> s. 65-114. København</item>
+          <item>Petersen, Carl S. (1929) <hi rend="italic">
+              <rs key="title466" type="title">Illustreret Dansk Litteraturhistorie</rs>,</hi> bind
+            1. K&#x00F8;benhavn</item>
+          <item>Petersen, Niels Matthias (1848) <rs type="title" key="title2766"><hi rend="italic"
+                >Om udgivelsen af kæmpeviserne</hi></rs>. København</item>
+          <item>[Sandvig, Bertel udg.] (1780) <hi rend="italic"><rs key="title352" type="title"
+                >Levninger af Middel-Alderens Digtekunst</rs>,</hi> bind 1. K&#x00F8;benhavn</item>
+          <item>Syv, Peder (1695) <hi rend="italic"><rs key="title275" type="title">Et Hundrede
+                Udvalde Danske Viser, Om Allehaande merkelige Krigs-Bedrivt og anden selsom Eventyr,
+                Som sig her udi Riget Ved Gamle Kemper, Navnkundige Konger, oc ellers fornemme
+                Personer begivet haver, af Arilds Tid til denne n&#x00E6;rv&#x00E6;rende Dag.
+                For&#x00F8;gede med det Andet Hundrede Viser Om Danske Konger, K&#x00E6;mper og
+                Andre, Samt hosf&#x00F8;iede Antegnelser, Til Lyst og L&#x00E6;rdom</rs>.</hi>
+            K&#x00F8;benhavn</item>
+          <item>Toldberg, Helge (1946) <hi rend="italic"><rs key="title24" type="title">Grundtvig
+                som filolog</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Vedel, Anders S&#x00F8;rensen (1591) <hi rend="italic"><rs key="title1896"
+                type="title">It Hundrede vduaalde Danske Viser/ Om allehaande Merckelige Krigs
+                Bedrifft/ oc anden seldsom Euentyr/ som sig her vdi Riget/ ved Gamle Kemper/
+                Naffnkundige Konger oc ellers forneme Personer begiffuet haffuer/ aff arilds tid
+                indtil denne neru&#x00E6;rendis Dag</rs>.</hi> Ribe</item>
+          <item>Weyse, Christoph Ernst Friedrich udg. (1840-1842) <hi rend="italic"><rs
+                key="title2768" type="title">Halvtredsindstyve gamle Kæmpevise-Melodier, harmonisk
+                bearbeidede</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Winther, Christian udg. (1840) <hi rend="italic"><rs key="title438" type="title"
+                >Kj&#x00E6;mpeviser, hvis melodier ere harmonisk bearbeidede af Prof. Ridder Weyse,
+                samlede og udgivne af Christian Winther</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Yde, Henrik (1991) <hi rend="italic"><rs key="title2612" type="title">Det
+                grundtvigske i Martin Andersen Nex&#x00F8;s liv</rs>.</hi> K&#x00F8;benhavn</item>
+        </list>
+          </div>     
+    <!--  <div>
+<head xml:id="docIn10">Anvendte websider</head>
+      <list type="webList">
+        <item n="2013-12-17" target="http://www.roskildekloster.dk/historie#!karen-brahes-bibliotek/cleq">Karen Brahes Bibliotek i Roskilde Kloster</item>
+      </list>
+</div>-->     
+    </body>
+</text>
+</TEI>

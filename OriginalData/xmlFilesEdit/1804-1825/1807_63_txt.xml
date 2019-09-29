@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title rend="part">Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet</title>
+    <title rend="shortForm">Om Videnskabelighed og dens Fremme</title>
+    <author>Nicolai Frederik Severin Grundtvig</author>
+    <editor role="philologist">Niels W. Bruun</editor>
+    <editor role="philologist">Maria J&#x00F8;rgensen</editor>
+    <editor role="student1">Jesper Lorenzen</editor>
+     <editor role="student4">Maria Wiggers Pedersen</editor>
+    <editor role="student2">Johanne Marie N&#x00F8;rrelund Rasmussen</editor> 
+    <editor role="student3">Frederik Drei&#x00F8;e Seidelin</editor>
+    
+   </titleStmt>
+   <editionStmt>
+    <edition>
+          <idno type="firstUpload">1.0</idno>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+   </editionStmt>
+   <extent>103 KB</extent>   
+   <publicationStmt>
+    <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+    <publisher>Faculty of Arts, Aarhus University</publisher>
+    <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>    
+    <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+   </publicationStmt>
+   <seriesStmt>
+    <title>Ny Minerva</title>
+    <respStmt>
+     <name>Knud Lyne Rahbek</name>
+     <resp>Professor</resp>
+    </respStmt>
+    <idno type="date">1807-03-01</idno>
+   </seriesStmt>
+   <notesStmt>
+    <note type="txt" target="1807_63_txt.xml" xml:id="thisFile">L&#x00E6;setekst</note>
+    <note type="com" target="1807_63_com.xml">Punktkommentar</note>
+    <note type="intro" target="1807_63_intro.xml">Indledning</note>
+    <note type="txr" target="1807_63_txr.xml">Tekstredeg&#x00F8;relse</note>
+    <note type="unknownVar">Variant</note>   
+   </notesStmt>    
+   <sourceDesc>
+    <bibl>
+     <title type="main">Ny Minerva</title>
+     <title type="part">Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet</title>
+     <author>Nik. Fred. Sev. Grundtvig.
+      <note>Kandidat i Theologien.</note>
+     </author>
+     <pubPlace>Ki&#x00F8;benhavn</pubPlace>
+     <publisher>Trykt og forlagt af Directeur Johan Frederik Schultz, kongelig og Universitets-Bogtrykker</publisher>
+     <date>1807</date>
+    </bibl>
+    <listWit xml:id="emendation">
+     <witness xml:id="A" n="63">
+      <desc>F&#x00F8;rstetrykket</desc>
+      <num>1807</num>
+     </witness>
+     <witness>
+      <desc>Rettelsesblad i A</desc>
+     </witness>
+    </listWit>
+    <listWit xml:id="pageNumber">
+     <witness xml:id="US">
+     <desc>Udvalgte Skrifter</desc>
+      <num>1</num>
+     </witness>
+     <witness xml:id="Gskv">
+      <desc>Grundtvigs skoleverden</desc>
+      <num>1</num>
+     </witness>
+    </listWit>
+   </sourceDesc>
+  </fileDesc>  
+  <profileDesc>
+   <textClass>
+    <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+     <term>prosa</term>
+     <term>afhandlinger</term>
+    </classCode>
+    <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+      <term>skolen</term>
+      <term>polemik</term>
+     <term>Danmark</term>
+      </keywords>
+   </textClass>
+  </profileDesc>  
+  <encodingDesc>
+   <projectDesc>
+    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+    <p>Grundtvig Centeret arbejder med:</p>
+    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+    <p>2.a. Teologi og kirke</p>
+    <p>2.b. Demokrati og folkelighed</p>
+    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+    <p>3. Videnudveksling, undervisning og formidling</p>                    
+   </projectDesc>
+   <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+    <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+    <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+    <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+    <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+    <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+    <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+    <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+    <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+  </encodingDesc>
+  <revisionDesc>
+   <change who="JEL" when="2011-07-08">korrektur gennemgang</change>
+   <change who="JEL" when="2011-07-26">korrektur gennemgang igen</change>
+   <change who="JEL" when="2011-07-29">korrektur gennemgang igen (fortsat)</change>
+   <change who="JMR" when="2012-01-06">opm&#x00E6;rkning af lemmaer</change>
+   <change who="JMR" when="2012-03-07">opm&#x00E6;rkning af personer, steder, myte og titel + rettet enkelte OCR-fejl</change>
+   <change who="JMR" when="2012-03-08">indsat rigtige faksimilenumre</change>
+   <change who="HY" when="2012-03-09">efterset faksimilenumre</change>
+   <change who="VTH" when="2012-03-14">Rettet header og fjernet en bunke m&#x00E6;slinger. JMR kollationerer</change>
+   <change who="MJ" when="2012-03-21">Rettet kommentarer til: prim&#x00E6;rt vha. sletning</change>
+   <change who="MJ" when="2012-03-21">Rettet kommentarer til: slettet og tilf&#x00F8;jet, fors&#x00F8;gt bragt i overensstemmelse med kommentarapparatet</change>
+   <change who="MJ" when="2012-03-22">slettet overfl&#x00F8;dig kommentaropm&#x00E6;rkning. Johannes rettelser indf&#x00F8;rt.</change>
+   <change who="MJ" when="2012-03-26">oprettet tekstkritiske noter</change>
+   <change who="MJ" when="2012-03-27">indf&#x00F8;ring af nyoprettede mytologiske figurer, personer, probleml&#x00F8;sning ifht. gr&#x00F8;nnede passager</change>
+   <change who="MJ" when="2012-03-28">Maria W.'s rettelser indf&#x00F8;rt.</change>
+   <change who="MJ" when="2012-04-02">Frederiks rettelser indf&#x00F8;rt</change>
+   <change who="MJ" when="2012-07-31">unicodes indsat</change>
+   <change who="MWP" when="2013-02-18">indsat sidetal fra US</change>
+   <change who="MJ" when="2013-08-13">indsat "same as" i Minerva (br&#x00F8;dre i Minerva)</change>
+   <change who="VAP" xml:id="VAP" when="2013-11-04">&#x00E6;ndret myth 426 til 426.a</change>
+    <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+   <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+   <change who="KSR" when="2014-01-13">valideret teiHeader</change>
+   <change who="KSR" when="2014-09-26">validering</change>
+   <change who="KSR" when="2015-10-27">genre, emneord</change>
+    <change who="JT" when="2016-03-04">ændret emneord fra selvbiografi til Danmark</change>
+    <change who="JT" when="2017-04-19">gjort seg-opmærkning til milestones omkring pb-elementer</change>
+  </revisionDesc>
+ </teiHeader>
+  <text type="txt">
+    <body>
+     <div type="[Tekst]">
+   
+    <pb type="periText" facs="1807_63_fax001.jpg"/>
+    <pb type="periText" facs="1807_63_fax002.jpg"/>
+    <pb type="periText" facs="1807_63_fax003.jpg"/>
+    <pb type="periText" facs="1807_63_fax004.jpg"/>
+
+      <pb type="text" facs="1807_63_fax005.jpg" ed="A" n="249"/>
+<pb ed="US" n="175" type="edition"/>
+<pb ed="Gskv" n="125" type="edition"/>
+    
+      <head rend="2">Om Videnskabelighed<note type="footnote">
+       <p rend="noIndent">Ved Videnskabelighed forstaaer jeg Sands for den menneskelige Aands harmoniske Udvikling, uden <seg type="com" n="com2">Hensyn</seg> paa dennes Forhold til Hverdagslivet. Idealet for den harmonisk udviklede menneskelige Aand anskuer jeg, som en Gestalt, <seg type="com" n="com5">hvis F&#x00F8;dder h&#x00E6;fte ved Jorden, ski&#x00F8;ndt Issen r&#x00F8;rer Stiernerne</seg>, hvis vidtstrakte Arme <seg type="com" n="com6">omfatte</seg> Naturen, for hvis &#x00D8;ine Fortid og <app type="corrNote" select="yes"> <lem wit="GV">Nutid</lem> <rdg wit="A">Nntid</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> ligge klare, og selv Himlen er giennemsigtig. Man misforstaae mig kun <pb type="text" facs="1807_63_fax006.jpg" ed="A" n="250"/>her ikke, og forvexle ei Tankens Ideal med den h&#x00F8;ieste Udviklingsgrad, Aanden under Jordlivets Indskr&#x00E6;nkning kan naae.</p>
+      </note>
+       og dens Fremme, is&#x00E6;r med <seg type="com" n="com2">Hensyn</seg> paa F&#x00E6;drelandet.</head>
+    
+      <div type="motto">
+      <p rend="noIndent"> <hi rend="romanType"> <seg type="com" n="com9">Scribendi recte sapere est et principium et fons</seg>.</hi> </p>
+     <p rend="right"> <hi rend="romanType"> <hi rend="italic"> <hi rend="bold"> <persName key="pe512">Horats</persName>.</hi> </hi> </hi> </p>
+     </div>
+   
+    <p rend="noIndent"> <hi rend="initial">E</hi>n for det t&#x00E6;nkende Menneske saare v&#x00E6;rdig Syssel er det, med opm&#x00E6;rksomt &#x00D8;ie at betragte Videnskabe<pb type="text" facs="1807_63_fax006.jpg" ed="A" n="250"/>lighedens Stilling i hans Tidsalder. Seer han den blomstrende str&#x00E6;be med sin mangfoldige Krone mod Himlen; seer han Menneskene <seg type="com" n="com12">trindt om</seg> dens Rod indsuge Safterne, der ved Kredsl&#x00F8;b i Skabningens store Legeme ene kan vise dette som besi&#x00E6;let, og give Livet Betydning; da har han fundet Gl&#x00E6;dens rene Kilde, hvis klare Vande vise ham, ved stadig Rinden, Veien ind i de <seg type="com" n="com15">tilstundende Aldere</seg>, hvor en tifold ski&#x00F8;nnere Tilv&#x00E6;relse aabner sig for hans Blik.</p>
+     
+       <p rend="firstIndent">Seer han den derimod som en visnende Plante, hvis splittede St&#x00E6;ngler ligesom trygle et uselt Livsskin af de kneisende Stammer, der ranede dens Safter; da kan han vel, nedb&#x00F8;iet af Kummer, &#x00F8;iebliklig tabe Modet, men aldrig vil han dog fristes til at ligne Leiesvendene, der kun forhale Plantens D&#x00F8;d, ved at lade den d&#x00F8;e daglig. Et Blik paa de svundne Tider, paa Videnskabeligheds eget V&#x00E6;rd, og han vil med Foragt nedskue paa de usle Bestr&#x00E6;belser, der van&#x00E6;re deres <seg type="com" n="com24">Organer</seg> og Tidsalderen. Kun med bitter Spot vil han svare de Elendige, der haane Videnskaberne, og sp&#x00F8;rge med sand dyrisk Naivitet, om da <seg type="comStart" n="com25"/>de Viises <pb ed="US" n="176" type="edition"/> <pb ed="Gskv" n="126" type="edition"/>Steen<seg type="comEnd" n="com25"/> er funden, om de af dem kunne l&#x00E6;re at skabe <seg type="com" n="com26">det alm&#x00E6;gtige Metal</seg>? Han vil <pb type="text" facs="1807_63_fax007.jpg" ed="A" n="251"/>sige dem, at Naturen skiulte Guldet i de haarde Klipper, for at hindre dets Opstigen blandt Menneskene, da den forudsaae, de derved vilde ligesom nedstige i dets t&#x00F8;mte Leie.</p>
+     
+    <p rend="firstIndent"> <seg type="comStart" n="com27"></seg>Naar Tvivlerne, som ei erki&#x00E6;nde anden H&#x00F8;ihed, end den, der kan rage frem for det ydre &#x00D8;ie, kun aabne <seg type="com" n="com400">Historiens Rulle</seg>, for at pege hen paa <seg type="com" n="com28">Perser, og Hunner</seg>, og de Flere, der ei skyldte Videnskabelighed den oph&#x00F8;iede Plads, de bekl&#x00E6;dte; da vil han svare: som Masser, kunne Nationerne, uden sand Agtelse for Videnskab i h&#x00F8;iere Betydning, uden fortrolig Kundskab til den, velte sig knusende hen over Kloden.<seg n="com27" type="comEnd"></seg> De kunne aftvinge den <seg type="com" n="com30">medlevende Sl&#x00E6;gt</seg> et Noget, de selv kalde Beundring, ski&#x00F8;ndt det kun er en Gruen af samme Art, som <seg type="comStart" n="com500"></seg>den, vi paa Oceanets Bredder maatte f&#x00F8;le ved <seg type="com" n="com31">Skimt</seg> af en Lavastr&#x00F8;m, der omslyngede Palladser og Hytter med sine gloende Arme,<seg type="comEnd" n="com500"></seg> og som vi forgi&#x00E6;ves vilde str&#x00E6;be at standse, hvis den naaede os; men dog var den delphiske <rs key="myth426" type="myth">Apol</rs> st&#x00E6;rkere end <seg type="com" n="com33">Brenni Legioner</seg>, og med sande Farver malte <seg type="com" n="com501">Digteren</seg> disse Fortids og Fremtids Scener, da han qvad:</p>
+      
+      <seg type="com" n="com35">
+<lg>
+       <l>
+<hi rend="size-1">Jene gewaltiger Wetterb&#x00E4;che</hi>
+</l>
+       <l>
+<hi rend="size-1">Aus des Hagels unendliche Schlossen,</hi>
+</l>
+       <l>
+<hi rend="size-1">Aus den Wolkenbr&#x00FC;ken zusammengeflossen,</hi>
+</l>
+       <l>
+<hi rend="size-1">Kommen finster gerauscht und gegossen,</hi>
+</l>
+       <l>
+<hi rend="size-1">Reissen die Br&#x00FC;cke, und reissen die D&#x00E4;mme</hi>
+</l>
+       <l>
+<hi rend="size-1">
+<pb type="text" facs="1807_63_fax008.jpg" ed="A" n="252"/>Donnernd mit fort in Wogengeschwemme,</hi>
+</l>
+       <l>
+<hi rend="size-1">Nicht ist, was die Gewaltigen hemmt;</hi>
+</l>
+       <l>
+<hi rend="size-1">Doch nur die Augenblick hat sie gebohren,</hi>
+</l>
+       <l>
+<hi rend="size-1">Ihres Laufes furchtbare Spur</hi>
+</l>
+       <l>
+<hi rend="size-1">Geht verrinnend im Sande verloren,</hi>
+</l>
+       <l>
+<hi rend="size-1">Die Zerst&#x00F6;rung verk&#x00FC;ndigt sie nur.</hi>
+</l>
+      </lg>
+</seg> 
+    
+      <p rend="firstIndent">Kun Videnskabelighed er det, der kan give Sl&#x00E6;gter og Individer den varige Storhed, og kun den var det ogsaa, der reiste <pb ed="Gskv" n="127" type="edition"/>Gr&#x00E6;kerne et Tempel, hvis S&#x00F8;iler ere sammenvoxede med Jordens <seg type="com" n="com37">Grundst&#x00F8;tter</seg>, og paa hvis Alter de st&#x00F8;rste Genier skulle, som Sl&#x00E6;gtens Udvalgte, ofre sig selv til de sildigste Tider.</p>
+     
+    <p rend="firstIndent">Disse Bem&#x00E6;rkninger ere langt fra at v&#x00E6;re nye, men med ubehagelig Kraft maa de indtr&#x00E6;nge sig hos enhver opm&#x00E6;rksom <pb ed="US" n="177" type="edition"/>Beskuer af Nutidens <seg type="com" n="com39">Digten og Tragten</seg>. At gi&#x00F8;re Videnskaberne til blotte Vehikler for Livsnydelsen, er at betage dem <seg type="com" n="com41">deres Eiendommelige</seg>, da de derved faae en blot <seg type="com" n="com42">endelig Tendents</seg>, og ligesom indskr&#x00E6;nkes til Menneskets afmaalte Jordliv. At s&#x00E6;tte dem i Politikens eller hvilkensomhelst anden Tieneste, er at bortjage dem fra Jorden; thi fri, som den himmelske Gnist, hvorfra de alle udspringe, taale de ingen Slavel&#x00E6;nker, men svinge sig op i den rene &#x00C6;ther, fulgte af M&#x00E6;ngdens Haan, og deres Venners dybe Sukke.</p>
+     
+       <p rend="firstIndent"> <seg type="comStart" n="com502"></seg>Det er ikke blot en <persName key="pe500">Fichte</persName> og <persName key="pe577">Arndt</persName>, men alle <placeName key="fak12">Europas</placeName> <seg type="com" n="com46">Herlige</seg>, der sukke over Tidsalderens <seg type="comStart" n="com403"/>Van<pb type="text" facs="1807_63_fax009.jpg" ed="A" n="253"/>art<seg type="comEnd" n="com403"/>, dens Blindhed for sand Videnskabelighed og Menneskeadel;<seg n="com502" type="comEnd"></seg> og t&#x00F8;r man vel n&#x00E6;gte, at det var <placeName key="fak106">Frankerigs</placeName> Revolution, der standsede Videnskabelighed, ved at drage det oplyste <placeName key="fak12">Europas</placeName> &#x00D8;ie fra Himlen til Jorden, for at skue <seg type="com" n="com503">en ny Himmel paa Jorden</seg>?</p>
+     
+    <p rend="firstIndent">Dog, jeg vil ikke dv&#x00E6;le ved de s&#x00F8;rgelige Syner, <placeName key="fak12">Europa</placeName> frembyder, men vende mig til F&#x00E6;drelandet. Ikke, som om jeg troede, at det kan v&#x00E6;re <seg type="com" n="com48"> <rs key="myth67" type="myth">Skiolds</rs> Afkom</seg> ligegyldigt, hvorledes Tingenes L&#x00F8;b omskiftes i det &#x00F8;vrige <placeName key="fak12">Europa</placeName>, eller holder det for van&#x00E6;rende, at v&#x00E6;re <seg type="com" n="com504">Kosmopolit i Ordets &#x00E6;dle Betydning</seg>; thi aldrig kan &#x00E6;gte F&#x00E6;drelandski&#x00E6;rlighed byde Mennesket, at forst&#x00F8;rre sin Indskr&#x00E6;nkning, ved at binde sig til et Lands Gr&#x00E6;ndsep&#x00E6;le, og jeg troer, med <persName key="pe35">Schiller</persName>, det var et stort Skridt fremad, at <seg type="com" n="com52">Borgeren <app type="corrNote" select="yes"> <lem wit="Rettelsesblad">atter</lem> <rdg wit="A">allene</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> blev Menneske</seg>.</p>
+     
+    <p rend="firstIndent">Jeg kaarede denne Plet, fordi den lettere lod sig overskue af mit mere <seg type="com" n="com54">kortsynede &#x00D8;ie</seg>; fordi <placeName key="fak24">Nordens</placeName> kraftfulde Old bandt mig st&#x00E6;rkere til den, end F&#x00F8;dselen kunde; og fordi jeg ei troede det ganske unyttigt at sige mine Landsm&#x00E6;nd, hvad der efter min Mening bidrager eller kan bidrage til at give dem en h&#x00F8;iere eller lavere Rang som Mennesker.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="128" type="edition"/> <placeName key="fak14">Danmark</placeName> og <placeName key="fak41">Norge</placeName> <seg type="com" n="com55">eller</seg> F&#x00E6;drelandet burde v&#x00E6;re et trygt Fristed for Videnskab og Konst, naar Vaabengny og M&#x00F8;rkets Aander forjage dem. Der er Fred <pb type="text" facs="1807_63_fax010.jpg" ed="A" n="254"/> <seg type="com" n="com57">inden</seg> vore Landem&#x00E6;rker, og Han, <seg type="comStart" n="com408"></seg>Landets <seg type="com" n="com58">fredrige</seg> Fader<seg type="comEnd" n="com408"></seg>, der, som <seg type="com" n="com406">Digteren</seg> saa ski&#x00F8;nt siger:</p>
+      
+    <seg type="com" n="com408">
+<lg>
+     <l>
+<hi rend="size-1">Med Retsind og Aarvaagenhed utr&#x00E6;ttet staaer</hi>
+</l> 
+     <l>
+<hi rend="size-1">For <placeName key="fak14">Danmarks</placeName> Eden, ei med H&#x00E6;vnens Sv&#x00E6;rd, men liig</hi>
+</l>
+     <l>
+<hi rend="size-1">En Engel, med Uskyldighedens Palmegreen,</hi>
+</l>
+     <l>
+<hi rend="size-1">Og vifter Kampens sorte Pest fra sine B&#x00F8;rn,</hi>
+</l>
+    </lg>
+</seg>
+    <p rend="noIndent">Han &#x00F8;nsker ikke, at dr&#x00E6;be Aanden, for at lede <seg type="com" n="com63">Maskiner</seg>.</p>
+     
+      <p rend="firstIndent">Men kunne vi rose os af at v&#x00E6;re, hvad vi i denne Henseende <pb ed="US" n="178" type="edition"/>burde? Det er kun en Gientagelse af vore Ypperstes Udsagn, naar jeg svarer: nei! Men desv&#x00E6;rre! Svaret er ikke bygget paa Autoritet; thi Enhver, som ki&#x00E6;nder noget til vor Litteratur og den herskende Tone, kan og maa give det samme.</p>
+     
+    <p rend="firstIndent">Str&#x00E6;ngt taget, har man vel ikke Ret til at slutte fra et Lands Litteratur til dets Videnskabelighed; thi ligesom hiin kan blomstre en kort Tid, ski&#x00F8;ndt denne er indskr&#x00E6;nket til faa Individer; saaledes var det <seg type="com" n="com569">og</seg> muligt, at denne kunde bestaae, efter at hiin var gaaet til Grunde. Imidlertid t&#x00F8;r man dog antage, at det Folk, hos hvem gode Skrifter blive en Si&#x00E6;ldenhed, enten har tabt eller snart vil tabe Videnskabelighed og h&#x00F8;iere Dannelse. Ogsaa er Grunden klar, thi det udviklede Menneske sporer stedse Trang til at overf&#x00F8;re sin Form paa Andre, og st&#x00E6;rk maa den Muur v&#x00E6;re, som skal standse ham; men er Muren saa st&#x00E6;rk, da vil ogsaa Videnskabernes Sol snart skiule sig bag <pb type="text" facs="1807_63_fax011.jpg" ed="A" n="255"/>den, og Efterskinnets matte Lysning tabe sig i det fremv&#x00E6;ldende M&#x00F8;rke.</p>
+     
+    <p rend="firstIndent">Videnskabelighed og Litteratur forholde sig da til hinanden vexelviis som Aarsag og Virkning, i det denne foruds&#x00E6;tter hiin, og tillige fremhielper den.</p>
+     
+    <p rend="firstIndent">Jeg d&#x00F8;lger slet ikke min Frygt for, at vi allerede staae paa et Punkt, der spaaer Begges Undergang. End ikke da viger Frygten, naar jeg frydfuld beskuer <app type="corrNote" select="yes"> <lem wit="GV">nogle af</lem> <rdg wit="A">nogle</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> de sildigere Dages Digte, <pb ed="Gskv" n="129" type="edition"/>som <placeName key="fak12">Europa</placeName> burde ki&#x00E6;nde, de enkelte Skud, der vidne om livfuld V&#x00E6;ren; thi dette Liv og denne Kraft udsprang ikke af D&#x00F8;gnets Ski&#x00F8;d, det er opfangede Straaler, der endnu varme og lyse en f&#x00F8;ie Tid, efterat vor Sol vendte sig paa Banen; den Lunkenhed, n&#x00E6;sten maatte jeg sige, Kulde, hvormed de modtages, den u&#x00E6;dle Nysgi&#x00E6;rrighed, hvormed de <seg type="com" n="com76">begabes</seg>, isteden for at nydes, ere mig en s&#x00F8;rgelig Borgen for, at jeg taler Sandhed. Vor Litteratur anskuer jeg som en Druknet, der for sidste Gang ansp&#x00E6;nder sin Kraft, og raaber h&#x00F8;it om Hielp i <seg type="com" n="com78">Asamaal</seg>; men, n&#x00E6;sten tom er Strandbredden, og de Faa, som stande der, tvivle saare paa, at han kan betale sin Redning i en Mynt, for hvilken de have Sands.</p>
+     
+    <p rend="firstIndent">Skal denne Ringeagt for Videnskabeligheds &#x00E6;dle Tolk vedvare, hvad bliver da F&#x00F8;lgen?</p>
+     
+    <p rend="firstIndent">Svaret h&#x00F8;rer jeg <seg type="com" n="com80">trindt</seg> mig: at Ingen mere fristes til den <seg type="com" n="com81">Daarlighed</seg>, at s&#x00E6;tte Penge i B&#x00F8;ger, som <pb type="text" facs="1807_63_fax012.jpg" ed="A" n="256"/>dog egentlig nytte til Intet, og bestandig tabe deres V&#x00E6;rd, at man snakker mindre, og handler mere, kort, man bliver ret forstandige og <seg type="com" n="com82">vindskibelige</seg> Jordborgere, som finde en reellere <seg type="com" n="com85">Qv&#x00E6;gelse</seg> i god Mad og <pb ed="US" n="179" type="edition"/>den &#x00E6;dle Druesaft, end Kr&#x00F8;niker, Spidsfindigheder og Rimerier kan give.</p>
+     
+    <p rend="firstIndent">Uagtet jeg nu har den dybeste &#x00C6;rb&#x00F8;dighed baade for hiin gyldne Sentents:</p>
+     
+      <lg>
+       <l><hi rend="size-1"><seg type="com" n="com86">Kloge paa Himmelens L&#x00F8;b, de ere kun Narre paa Jorden,</seg></hi></l>
+      </lg>
+      
+    <p rend="noIndent">og for den hele <seg type="com" n="com88">Kommune</seg>, som ved den blev riig, og feed, og m&#x00E6;t af Dage, vil dog vel Ingen fort&#x00E6;nke mig i, at jeg siger omtrent det samme i mit eget Sprog.</p>
+     
+    <p rend="firstIndent">F&#x00F8;lgen vil blive, at de Vange, som, r&#x00F8;rte af <persName key="pe172">Holbergs</persName> Tryllestav, atter fremski&#x00F8;de saa herlige V&#x00E6;xter, som <persName key="pe19">Evald</persName> beplantede med <seg type="com" n="com91">Oldtidens hellige Ege</seg>, som <persName key="pe237">Saxos</persName> og <persName key="pe49">Snorros</persName> de herlige S&#x00F8;nner fyldte med Gienlyd af Nordboens klirrende Skiolde, som en <persName key="pe20">Baggesen</persName> bestr&#x00F8;ede med Vaarens s&#x00F8;dtduftende Lillier, men som allerede synes at mangle Plads for en <persName key="pe3">Oehlenschl&#x00E4;gers</persName> Harpe</p>
+     
+    <seg type="com" n="com505">
+     <lg>
+      <l><hi rend="size-1"><pb ed="Gskv" n="130" type="edition"/>Af Bi&#x00F8;rnesener og af Egetr&#x00E6;,</hi></l>
+    </lg>
+</seg>
+     
+    <p rend="noIndent">for <seg type="com" n="com506">det sorte Skiold</seg>, hvorpaa han opruller det</p>
+     
+    <lg>
+     <l><hi rend="size-1"><seg type="comStart" n="com507"></seg>&#x2014; <seg type="com" n="com83">rigelig indspr&#x00E6;ngte</seg> Blomsterflor,</hi></l>
+     <l><hi rend="size-1">Som &#x00D8;stens &#x00C6;ther let og giennemsigtigt,<seg n="com507" type="comEnd"></seg></hi></l>
+    </lg>
+     
+    <p rend="noIndent">og <seg type="com" n="com84">hvis</seg> hyppige Tidsler alt synes at vente paa <seg type="com" n="com570">den lang&#x00F8;rede Sl&#x00E6;gt</seg>; at disse vorde en Sand&#x00F8;rk, kun <pb type="text" facs="1807_63_fax013.jpg" ed="A" n="257"/>giennemvandret af bel&#x00E6;ssede Kameler, der bringe Hverdagslivet sin n&#x00F8;isomme F&#x00F8;de.</p>
+     
+    <p rend="firstIndent">Men skulle vi klage mistr&#x00F8;stige, og v&#x00E6;re uvirksomme Tilskuere af &#x00D8;del&#x00E6;ggelsen, der n&#x00E6;rmer sig?</p>
+     
+    <p rend="firstIndent">Nei, dristig ville vi beskue de Hindringer, der m&#x00F8;de Videnskabeligheds Opkomst, beki&#x00E6;mpe, og, om muligt, seire over dem; thi kun en saadan Sorg, der arbeider paa sit Oph&#x00F8;r, <seg type="com" n="com104">egner</seg> M&#x00E6;nd, og danske M&#x00E6;nd.</p>
+     
+    <p rend="firstIndent">Ogsaa jeg vil her <seg type="com" n="com105">nedl&#x00E6;gge mit Offer paa F&#x00E6;drelandets Alter</seg>, og t&#x00F8;r troe, at det, trods sin Ubetydelighed, vil behage de alraadende Guder; <seg type="comStart" n="com87"></seg>thi det kom fra et Hierte, der, knust af <seg type="com" n="com106">&#x00D8;dets</seg> tunge Haand, endnu er giennemgl&#x00F8;det af F&#x00F8;lelse for de Himmelske, og for Videnskab og Konst, deres Billeder paa Jorden<seg type="comEnd" n="com87"></seg>.</p>
+     
+    <fw type="shortLine"/>
+     
+    <p rend="firstIndent">Det er ingen ualmindelig Paastand, at det er vore <seg type="com" n="com109">Trykkelove</seg>, og Umuligheden af stor Afs&#x00E6;tning i et lidet Land, der foraarsager Litteraturens Magerhed.</p>
+    <p rend="firstIndent"> <pb ed="US" n="180" type="edition"/>Dersom Lyst til Videnskab var almindelig, og der vistes varm Interesse for hvert si&#x00E6;ldent Produkt, der fortiente den, da vilde hiin Paastand v&#x00E6;re langt vigtigere, end nu, da det Modsatte er Tilf&#x00E6;ldet; men dog ville vi lidt n&#x00F8;iere betragte den.</p>
+    
+    <p rend="firstIndent"> <pb type="text" facs="1807_63_fax014.jpg" ed="A" n="258"/>Jeg veed ikke rettere, end at <seg type="com" n="com110">alle &#x00E6;ldre Trykkelove</seg> ere oph&#x00E6;vede ved <seg type="com" n="com111">Forordningen af 27de Sept. 1799</seg>, og uagtet nogle Punkter i samme maaskee taale en, for Videnskaberne mindre gunstig, Tydning, troer jeg dog ikke, de ville finde sig synderlig trykkede af den, is&#x00E6;r dersom det ved et <seg type="com" n="com112">Kongebud</seg> indski&#x00E6;rpedes Dommeren at holde sig n&#x00F8;ie til den, uden nogen Anven<pb ed="Gskv" n="131" type="edition"/>delse af &#x00E6;ldre Love<note type="footnote"> <p rend="noIndent">Her v&#x00E6;re det mig tilladt at gi&#x00F8;re et Sp&#x00F8;rgsmaal til <placeName key="fak14">Danmarks</placeName> Lovkyndige: hvorvidt kan en Forfatter, efter de gi&#x00E6;ldende Love for Trykkefriheden, ansees strafskyldig ved at <seg type="com" n="com113">dadle en afd&#x00F8;d dansk Konge</seg>? Sp&#x00F8;rgsmaalet er ikke uvigtigt for <placeName key="fak24">Nordens</placeName> Historie, og sikkert var det at &#x00F8;nske, vi herom havde en n&#x00F8;iagtig Bestemmelse, hvorved Historieskriveren sikkredes for, imod sin Villie at paadrage sig Tiltale.</p> </note>, og naar <seg type="com" n="com508">videnskabelig Anonymitet</seg> tillodes.</p>
+     
+    <p rend="firstIndent">Jeg siger <seg type="com" n="com114">med Flid</seg>: videnskabelig Anonymitet; thi dermed beh&#x00F8;vede den juridiske jo slet ikke at v&#x00E6;re forbunden.</p>
+     
+    <p rend="firstIndent">Naar enhver Bogtrykker blev, under <seg type="com" n="com115">Tabet af dansk Borgerret</seg>, Skribentens haardeste Straf, <seg type="com" n="com571">tilholden</seg>, <seg type="com" n="com509">at opgive Navnet paa Forfatteren til ethvert Skrift</seg>, der sattes under Tiltale, da vilde neppe i et heelt Aarhundrede det Tilf&#x00E6;lde indtr&#x00E6;ffe, at den Skyldige undgik Lovens Straf.</p>
+    
+    <p rend="firstIndent"> <pb type="text" facs="1807_63_fax015.jpg" ed="A" n="259"/>Gives derfor ingen anden Grund imod Anonymiteten, vil sikkert vor oplyste og liberale Regiering giengive F&#x00E6;drelandet sit videnskabelige <seg type="com" n="com116">Palladium</seg>.</p>
+     
+    <p rend="firstIndent">Under den foreslagne eller en lignende Indskr&#x00E6;nkning, vilde den aldrig kunne tillokke Bagvaskelse eller Kaadhed <app type="corrNote" select="yes"> <lem wit="GV">til at</lem> <rdg wit="A">til</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> omsprede sin giftige eller umodne S&#x00E6;d; men i dens Ly vilde mangen ski&#x00F8;n og duftrig Blomst, der nu ei t&#x00F8;r h&#x00E6;ve sig fra Jordens moderlige Ski&#x00F8;d, spire og fremvoxe til F&#x00E6;drelandets H&#x00E6;der og Gavn, til Videnskabeligheds Fremme.</p>
+     
+    <p rend="firstIndent">O! at de M&#x00E6;nd, der stande Thronen n&#x00E6;r, ville h&#x00E6;dre sig selv ved at v&#x00E6;re Videnskabernes Talsm&#x00E6;nd! Sikkert vilde den &#x00C6;dle, der <seg type="com" n="com420">kl&#x00E6;der</seg> <seg type="com" n="com119">Leirekongens Stoel</seg>, aabne sit &#x00D8;re for Musernes B&#x00F8;n, og da skulle deres Navne hos den sildigste Eftersl&#x00E6;gt glimre ved Siden af Kristians og Frederiks.</p>
+     
+    <p rend="firstIndent"> <pb ed="US" n="181" type="edition"/>Men, naar jeg tilstaaer, at <seg type="com" n="com510">Anonymitetens Oph&#x00E6;velse</seg> har skadet og maa n&#x00F8;dvendig skade Videnskaberne, i det Skribenten n&#x00F8;des til en Forsigtighed, der slet ikke er grundet i Sagens Natur, og i det den undseelige Yngling savner <rs key="myth366" type="myth">&#x00C6;giden</rs>, der ene kunde beskytte ham i Pr&#x00F8;vetiden mod de Pile, der blive saarende, naar et ki&#x00E6;ndt Individ er deres Maal; saa troer jeg derfor <pb ed="Gskv" n="132" type="edition"/>ingenlunde, at Litteraturen staaer og falder med den, da det er en langt h&#x00F8;iere Aand, hvis N&#x00E6;rv&#x00E6;relse fremdriver, og hvis Frav&#x00E6;relse standser <pb type="text" facs="1807_63_fax016.jpg" ed="A" n="260"/>Presserne, saavidt disse staae i Videnskabeligheds Tieneste.</p>
+     
+    <fw type="shortLine"/>
+     
+    <p rend="firstIndent">Er det saa, at vort Land er for lidet til at have en egen Litteratur, og er denne Videnskabelighedens n&#x00F8;dvendige Betingelse, da maatte man, trods den inderligste Ki&#x00E6;rlighed til Dannersproget, fristes til at afsv&#x00E6;rge det; men det er ikke saa. <placeName key="fak14">Danmarks</placeName> Litteratur oplevede ingen Middag, men en Morgenr&#x00F8;de havde den engang, og da saae man, den kunde v&#x00E6;re til.</p>
+     
+    <p rend="firstIndent">Naar man derfor siger, at <seg type="com" n="com512">den ringe Afs&#x00E6;tning</seg> er Aarsagen til Faaheden af de litteraire Producter, da maa det vel forstaaes saaledes, at Nationen har tabt sit Anl&#x00E6;g til videnskabelig Stemning. Der ki&#x00F8;bes dog sikkert nu flere B&#x00F8;ger, end i hiin heldigere Epoke, og at Skrifterne af dem, der dannedes i den, og efter dens Billede, blive uafsatte, er en n&#x00F8;dvendig F&#x00F8;lge af den bedre Sandses atter fornyede Slummer.</p>
+     
+    <p rend="firstIndent">L&#x00E6;sning er blevet Tidsfordriv, og hvad Under da, at B&#x00F8;ger, der foruds&#x00E6;tte T&#x00E6;nkning og dybere F&#x00F8;lelse, og altsaa for hiint st&#x00F8;rre &#x00D8;iemeed ere aldeles upassende, afskyes, endnu mere end &#x2013; <seg type="com" n="com133">den ny Retskrivning</seg>?</p>
+     
+    <p rend="firstIndent"> <seg type="com" n="com514">Foragt for Modersmaalet</seg>, angives ogsaa som Aarsag til Litteraturens Forfald. Man indseer let, <pb type="text" facs="1807_63_fax017.jpg" ed="A" n="261"/>jeg ei heller troer at kunne underskrive dette, thi var end denne Foragt mere udbredt, kunde den dog aldrig hindre Skribenten, der f&#x00F8;ler sit Kald, fra at skrive i det Sprog, der ene forstodes af M&#x00E6;ngden blandt hans Landsm&#x00E6;nd, ei heller disse <app type="corrNote" select="yes"> <lem wit="GV">fra</lem> <rdg wit="A">faa</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> at l&#x00E6;se og anskaffe hans Skrifter, naar de kun selv vare videnskabelig stemte, og ventede noget Udbytte.</p>
+     
+    <p rend="firstIndent"> <seg type="com" n="com134">Ingen troe</seg> imidlertid, jeg vil n&#x00E6;gte denne Ringeagts <seg type="com" n="com136">Tilv&#x00E6;r</seg> <note type="footnote"> <p rend="noIndent">Al denne Ringeagt, som, st&#x00F8;ttende sig paa Sprogets Fattigdom, kan v&#x00E6;re ret godt motiveret, <seg type="com" n="com137">fremlyser</seg> af f&#x00F8;lgende Samtale, jeg engang <pb ed="Gskv" n="133" type="edition"/>havde med <seg type="com" n="com135">en vis l&#x00E6;rd Philolog</seg>: <hi rend="italic">Han.</hi> Det danske Sprog er fattigt. <hi rend="italic">Jeg.</hi> Saa? <hi rend="italic">Han.</hi> Ja, thi mange tydske Adjectiver kunne ei overs&#x00E6;ttes uden ved Omskrivning. <hi rend="italic">Jeg.</hi> Saa er Romersproget ogsaa fattigt, thi mange danske Adjectiver, f. Ex. usynlig, ubegribelig, &amp;c, maa jo paa Latin omskrives. <hi rend="italic">Han.</hi> Nei, deri ligger just Romersprogets Kraftfortrin, og n&#x00E6;sten alle de danske Adjectiver, som ere sammensatte med u, ere tvetydige. Man kalder saaledes baade den Ting, man ei har seet, og den, man ei kan see, <seg type="com" n="com138">usynlig (!!!)</seg>&#x201D; At jeg maatte skamme mig, og tie, begribes let; men vil man sige, at den L&#x00E6;rdes Beviisf&#x00F8;relse ikke var saa ganske logisk, da svarer jeg, at det er en <hi rend="romanType"> <seg type="com" n="com139">crimen l&#x00E6;sorum summorum honorum</seg>;</hi> thi hiin L&#x00E6;rde er Doctor i Philosophien. Jeg har is&#x00E6;r antegnet denne Anecdote til Advarsel for de Faa, der maatte <pb type="text" facs="1807_63_fax018.jpg" n="262" ed="A"/>finde sig fristede til at paastaae det Paradox, at der paa Dansk kan skrives noget, som er v&#x00E6;rdt at l&#x00E6;se. Det er sandelig ei den eneste Gang, jeg af saadanne st&#x00E6;rke K&#x00E6;mper er &#x2013; figurlig talt &#x2013; slagen til Jorden, naar jeg var enfoldig nok til at forsvare dansk Sprog og dansk Litteratur. <hi rend="romanType"> <seg type="com" n="com141">Qvod cavere possis, stultum est admittere</seg> </hi>.</p> </note>, <pb ed="US" n="182" type="edition"/>eller <seg type="com" n="com425">med en T&#x00F8;ddel</seg> forsvare den, <pb type="text" facs="1807_63_fax018.jpg" ed="A" n="262"/>fordi den ikke kan <pb ed="Gskv" n="133" type="edition"/>gi&#x00F8;re saamegen Skade, som den gierne vilde. Nei, sandt er det, at den <seg type="com" n="com515">Begeistring, som ved <persName key="pe172">Holberg</persName> vaktes for Modersmaalet</seg>, er en Antiqvitet, der, som alt Sligt, belees af de Forstandige, og at den baade i sin F&#x00F8;dsel og D&#x00F8;d fulgtes af hiin bedre Stemning for Videnskab, hvilket er Aarsag i, at man stundom forvexler dem. Gives der end ikke mange <seg type="com" n="com143"> <app type="corrNote" select="yes"> <lem wit="Rettelsesblad">Ryger</lem> <rdg wit="A">B&#x00F8;ger</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>, der offentlig ville skyde til Maals efter Sproget</seg>, saa gives dog Mange, i hvis &#x00D8;ren det klinger <seg type="comStart" n="com144"></seg>ligesaa <seg type="com" n="com142">garstig</seg>, som fordum i Spaziers<seg n="com144" type="comEnd"></seg>. Der gives vist flere Huse, hvor dansk er Tienersproget, og andre, hvor det ei engang er saa meget, ligesom der vel gives Cirkler, hvor en dansk og dum Bog ere eenstydige Ord, hvor Cavalieren vilde r&#x00F8;dme og Damen lee, naar de overraskedes med en saadan. Der findes sikkert Mange, som troe at skaffe sig en vis Anseelse ved at kunne stave Tydsk eller Fransk, men ikke l&#x00E6;se Dansk. Det er endelig vel ikke si&#x00E6;ldent, at de, som is&#x00E6;r have Evne til at ki&#x00F8;be B&#x00F8;ger, troe, disse maa i det mindste have passeret <pb type="text" facs="1807_63_fax019.jpg" ed="A" n="263"/> <placeName key="fak87">Elben</placeName>, om ikke <placeName key="fak77">Rhinen</placeName> med, for at fortiene en Plads paa deres Hylder.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="134" type="edition"/>Alt dette er harmeligt for <seg type="com" n="com516">enhver &#x00E6;gte Dansk</seg>, og dobbelt harmeligt under <seg type="com" n="com517">en saa dansk Regiering</seg> <note type="footnote"> <p rend="noIndent">Vort Sprogs Foragtere maa ikke troe, jeg mener det saa slemt, som jeg siger. Af Frygt for <seg type="com" n="com553"> <persName key="pe321">Guldberg</persName> og andre slemme Folk</seg> t&#x00F8;r jeg ikke offentlig gi&#x00F8;re f&#x00E6;lles Sag med dem; men i Grunden er jeg dog fuldkommen enig med Fader <persName key="pe172">Holberg</persName>, der &#x2013; Gud l&#x00F8;nne ham for det og mere! &#x2013; kaldte det skammeligt, <seg type="com" n="com151">at fraki&#x00E6;nde Nogen Navn af god Patriot</seg>, fordi han ringeagtede Landets Sprog, naar han kun ikke vragede dets Penge, Embeder, Korn, og andre vigtige Ting. Alt dette er for dem og mig endnu langt lysteligere at l&#x00E6;se i <seg type="com" n="com518">Hr. Baronens 312te Brev</seg>, hvortil jeg for Kortheds Skyld vil henvise.</p> </note>, men paa Hovedsagen har det efter mine Tanker ei megen Indflydelse, da det Modsatte kunde v&#x00E6;re Tilf&#x00E6;ldet, uden at Videnskabelighed her<pb ed="US" n="183" type="edition"/>ved vandt noget. De, der kunne ringeagte en Bog for Sprogets Skyld, vide ei, hvortil B&#x00F8;ger skulle bruges, og temmelig ligegyldigt er det vel, enten danske, eller tydske, eller franske B&#x00F8;ger ki&#x00F8;bes af den, der kun som Guddomme hylder de forvanskede <seg type="com" n="com519">Tr&#x00E6;billeder</seg> af <rs key="myth146.a" type="myth">Venus</rs> eller <rs type="myth" key="myth183.a">Bachus</rs>, og sig selv, som Tankel&#x00F8;shedens levende <seg type="com" n="com428">Contrafei</seg>. Tilf&#x00E6;ldige Omst&#x00E6;ndigheder kunne modificere denne Dom; men Vindingen ved, at danske <pb type="text" facs="1807_63_fax020.jpg" ed="A" n="264"/>B&#x00F8;ger ki&#x00F8;btes uden at bruges, vilde dog <app type="corrNote" select="yes"> <lem wit="GV">stedse</lem> <rdg wit="A">ste dse</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> <app type="corrNote" select="yes"> <lem wit="GV">v&#x00E6;re</lem> <rdg wit="A">v&#x00E6;r</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> liden, og meest betydelig for Provindsernes M&#x00F8;l, der nu maa faste, medens deres lykkeligere Br&#x00F8;dre <seg type="com" n="com429">f&#x00F8;des</seg> af det gamle og nye Nord i Bogladerne.</p>
+     
+    <p rend="firstIndent">Skulde man nu endog, efter n&#x00F8;ie Overveielse, finde, jeg lagde for liden V&#x00E6;gt paa de n&#x00E6;vnte Litteraturens Hindringer, vil man alligevel v&#x00E6;re enig med mig i, at Hovedgrunden til vor n&#x00E6;rv&#x00E6;rende litteraire Stilling er Mangel paa videnskabelig Stemning, og Opdagelsen af denne Mangels Aarsager bliver lige n&#x00F8;dvendig.</p>
+     
+    <p rend="firstIndent">Jeg troer, de vigtigste ere:</p>
+     
+    <p rend="firstIndent">Den voxende Irreligi&#x00F8;sitet og Us&#x00E6;delighed, og Mangel paa videnskabelig Dannelse hos vore unge Studerende.</p>
+     
+    <p rend="firstIndent">Maaskee ville nogle Videnskabsvenner smile ved min f&#x00F8;rste Paastand, og ansee dens Mulighed for et af Tidernes mindre <pb ed="Gskv" n="135" type="edition"/>gunstige Tegn; men jeg t&#x00F8;r troe, man vil d&#x00F8;mme noget anderledes, dersom det lykkes mig at udvikle, hvad jeg herom t&#x00E6;nker.</p>
+     
+    <p rend="firstIndent">Jeg er Kristen, og i de fleste Dele, hvad man <seg type="com" n="com156">uegentlig</seg> kalder: luthersk Kristen, men derfor kan jeg aldrig mene, at enhver Afvigelse fra <seg type="com" n="com157">Augsburgconfessionen</seg> skulde v&#x00E6;re skadelig for Videnskaberne. At derimod de, hvis <seg n="com152" type="com">Gud er deres Bug</seg>, ei kunne elske hine <seg type="com" n="com153">Himmelens rene D&#x00F8;ttre</seg>, vil man da vel ogsaa indr&#x00F8;mme mig.</p>
+      <p rend="firstIndent"> <pb type="text" facs="1807_63_fax021.jpg" ed="A" n="265"/>Hvad, jeg troer, Videnskabelighed maa foruds&#x00E6;tte, er et virkelig religi&#x00F8;st Sindelag, en urokkelig Tro paa det Himmelske, og Ahnelse af dets Herlighed; <seg type="com" n="com158">men under hvilken Form Phantasien fremstiller hiint, synes ligegyldigt for Videnskaberne, naar kun Formen besidder den h&#x00F8;iere Ski&#x00F8;nhed.</seg> Hverken Atheisten, ei heller <seg type="com" n="com520">den, for hvem det Himmelske kun er Moralitetens Maximum</seg>, kan have Videnskabelighed; thi for dem har Existencen en saadan Vigtighed, at Videnskaberne maa, for at t&#x00E6;nkes, tr&#x00E6;de i dens Tieneste. Naar man derfor saa ofte sagde, <pb ed="US" n="184" type="edition"/>at de <seg type="com" n="com159">positive Religioner</seg> hindrede den menneskelige Aands fri Stigen, da havde man vel for saavidt Ret, at de, som troe sig at vandre paa den eneste Vei til Himlen, ikke gierne erki&#x00E6;nde nogen anden, men Geniet vil stedse kunne reducere tvende Veie til een, da det derimod vel dog er umuligt, halv kun at finde deres <seg type="com" n="com161">Himmelvei</seg>, som ingen Himmel troe. Ikke heller troer jeg, man vil finde det underligt, naar jeg paastaaer, at alle de mere udviklede Genier, der selv have aabnet os et Blik i deres Inderste, vare religi&#x00F8;se, og dette var un&#x00E6;gtelig, selv hos <seg type="com" n="com160">Nathans Forfatter</seg>, langt mere Tilf&#x00E6;ldet, end han vilde tilstaae sig selv; <app type="corrNote" select="yes"> <lem wit="GV">i det</lem> <rdg wit="A">i det,</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> den Menneskevenlige troede det n&#x00F8;dvendigt, at indskr&#x00E6;nke sig til den simpleste Form. Han greb Harmoniens Billede, istedenfor Harmonien selv, men i hiint var han dennes uskr&#x00F8;mtede Tilbeder.</p>
+     
+    <p rend="firstIndent"> <pb type="text" facs="1807_63_fax022.jpg" ed="A" n="266"/>Dog, jeg vil afbryde, for ikke, selv hos den svageste Si&#x00E6;l, at v&#x00E6;kke Mistanken om, at jeg vilde s&#x00E6;tte en <seg type="com" n="com163"> <persName key="pe675">Lessings</persName> Religion</seg> ved Siden af de Elendiges blasphemiske Tilstaaelse: vi ville gierne troe, der er en Gud til! der b&#x00E6;rer sin Lavhed i sig selv, <pb ed="Gskv" n="136" type="edition"/>og dog er det H&#x00F8;ieste, <seg type="com" n="com523">vor Tids Falskoplyste</seg> kunne bringe over de besmittede L&#x00E6;ber. Det undrer mig aldeles ikke, at disse ansee Gud, denne med Menneskets V&#x00E6;sen saa fast sammenknyttede Idee, for et noget, dem uvedkommende, metaphysisk Halvintet; thi dersom de fra Sumpen, hvor de med Gl&#x00E6;de boe, n&#x00E6;rende sig af Orme og Insecter, udraabte: <hi rend="romanType"> <seg type="com" n="com165">Deus in nobis!</seg> </hi> vilde det v&#x00E6;re den bitterste Satire paa dem selv, og dertil ere de ei engang dygtige, da <seg type="com" n="com167">Bevidstl&#x00F8;shed</seg> er deres h&#x00F8;ieste Lyksalighed, og de alt l&#x00E6;nge manglede Kraft til at anskue sig selv.</p>
+     
+    <p rend="firstIndent">Uden at tr&#x00E6;tte mine L&#x00E6;sere med det un&#x00F8;dvendige Sp&#x00F8;rgsmaal: om de troe, saadanne Folk kunne v&#x00E6;re videnskabelig stemte? vil jeg blot anm&#x00E6;rke, at dersom hele Nationen h&#x00F8;rte til denne Klasse, da var n&#x00E6;rv&#x00E6;rende Unders&#x00F8;gelse unyttig; men til Lykke have mange endnu ikke naaet den Grad af Kultur, og Andre bleve kun ved ugunstige Omst&#x00E6;ndigheder indbragte i den Vaaning, som <seg type="com" n="com170"> <rs key="myth416.a" type="myth">Ulyssis</rs> Staldbr&#x00F8;dre</seg> fordum beboede. Netop dette udgi&#x00F8;r Vigtigheden af den Paastand, at de Studerendes Mangel paa videnskabelig <pb type="text" facs="1807_63_fax023.jpg" ed="A" n="267"/>Dannelse er en af Hovedaarsagerne til det Onde, som trykker os.</p>
+     
+    <p rend="firstIndent">At hiin Mangel maa, naar den findes, have s&#x00F8;rgelige F&#x00F8;lger for Videnskabelighed, og en med samme forbunden Litteratur, er klart; men at den virkelig findes, tr&#x00E6;nger neppe til Beviis.</p>
+     
+      <p rend="firstIndent"> <pb ed="US" n="185" type="edition"/>Skulde det v&#x00E6;re overdrevent at antage, at de tre Fierdedele af Ki&#x00F8;benhavns Studenter neppe kunne skrive dansk, ei kunne anden Historie, end den, hvoraf de i Skolen og ved Universitetet l&#x00E6;rte nogle Stumper, ei have andet Begreb om Philosophie, end at det er et slemt t&#x00F8;rt Noget, man skal l&#x00E6;re til <seg type="com" n="com171">anden Examen</seg>; ei vide andet om Poesie, end at det er Noget, som oftest L&#x00F8;gn, der rimer sig, eller dog, Gud veed, hvorfor, klinger ret smukt; og endelig <seg type="com" n="com524">ei have noget h&#x00F8;iere Maal for deres Studeringer, end i det h&#x00F8;ieste bedste Karakter til Embedsexamen, og derpaa &#x2013; et godt Embede</seg> <note type="footnote"> <p rend="noIndent">Det f&#x00F8;lger af sig selv, at jeg her bestemt undtager de medicinske Studenter, der jo, som oftest, endnu f&#x00F8;r <seg type="com" n="com173">Embedspr&#x00F8;ven</seg> begynde paa <pb ed="Gskv" n="137" type="edition"/>Doctordisputatsen, og altsaa maa have en ganske anden videnskabelig Tendents. Vel er jeg, som l&#x00E6;g Mand i L&#x00E6;gevidenskaben, temmelig ubef&#x00F8;iet Dommer; men jeg mener, det flyder af Sagens Natur, og forklarer Ph&#x00E6;nomenet af den Lethed, hvormed Medicinerne komme til bestemteste Anskuelse af hiin herlige Sandhed: <hi rend="romanType"> <seg type="com" n="com174">ars longa, vita brevis</seg> </hi>. Det Eneste, som i denne Henseende undrer mig, er, hvi denne Legion af Disputatser, der dog, efter mit Begreb om <hi rend="romanType"> <seg type="com" n="com177">summis honoribus</seg>,</hi> sikkert maa have giort Epoke i Videnskaben, ei er, med fortient Roes, omtalt i <seg type="com" n="com178">Hallische Litteraturzeitung</seg>, ved Siden af Lovtalen over <seg type="com" n="com179"> <placeName key="fak14">Danmarks</placeName> Pharmakopee</seg>. Jeg erindrer ikke engang, at have seet det anm&#x00E6;rket, hvem den F&#x00F8;rste var, som med beskeden F&#x00F8;lelse af sit Arbeids Fuldendthed, frabad sig <seg type="com" n="com180">Pr&#x00E6;ses</seg>.</p> </note>. <seg n="com172" type="com">Efter Naturen</seg> var i det <pb type="text" facs="1807_63_fax024.jpg" ed="A" n="268"/>mindste <pb ed="Gskv" n="137" type="edition"/>dette Maleri for nogle Aar siden. Maaskee er det ikke l&#x00E6;ngere saa, og det vilde gl&#x00E6;de mig; men saare meget kunne dog vel ikke Musernes S&#x00F8;nner v&#x00E6;re <seg type="com" n="com175">vansl&#x00E6;gtede</seg> i de faa Aar, jeg ikke ki&#x00E6;nder Universitetet.</p>
+     
+    <p rend="firstIndent">Af Frygt for, man skal troe, jeg dog vel blandede for meget sort i mine Farver, vil jeg bede Enhver, som har Lyst og Leilighed, at betragte Udlaaningsprotocollerne og L&#x00E6;sesalene paa Kongens og Universitetets Bibliotheker. Mange Studenter ville de vist ikke m&#x00F8;de i disse Musernes Helligdomme, og meget Papir forbruges neppe til deres Navne. Find f&#x00F8;rst den ene Fierdedeel, som jeg med temmelig rundt Tal har angivet, og ere der flere Navne, staae de sikkert for en ny Roman, eller et Skuespil i str&#x00E6;ngeste Forstand, som ei var hiemme i <seg type="com" n="com184">Leiebibliotheket</seg>, og som dog Laaneren enten selv maatte giennemstudere, <pb type="text" facs="1807_63_fax025.jpg" ed="A" n="269"/>eller skaffe til Tidsfordriv for en af sine aandfulde Veninder.</p>
+     
+    <p rend="firstIndent">Dog, vi ville f&#x00F8;lge dem fra Hovedstaden, hvis brogede Vrimmel maaskee bl&#x00E6;ndede deres &#x00D8;ie, ud paa Landet, hvor en stor Deel omspredes som <seg type="com" n="com185">Hovmestere</seg>, <seg type="com" n="com186">Informatorer</seg>, <seg type="com" n="com187">Pr&#x00E6;kehielpere</seg>, Fuldm&#x00E6;gtige, Faders og Moders S&#x00F8;nner, &amp;c.</p>
+     
+      <p rend="firstIndent"> <pb ed="US" n="186" type="edition"/>Mon vi her ville finde dem sysselsatte med at ford&#x00F8;ie og for&#x00F8;ge de indsamlede Kundskaber?</p>
+     
+      <p rend="firstIndent">Skrev jeg Satire, kunde jeg vel uden Samvittighedsnag svare: <pb ed="Gskv" n="138" type="edition"/>ja! men nu maa jeg svare det bestemteste nei, naar Sp&#x00F8;rgsmaalet gi&#x00E6;lder Flerheden.</p>
+     
+    <p rend="firstIndent">Ere de blevne Ungdomsl&#x00E6;rere, da bearbeide de samvittighedsfuldeste dette Kald med Frygt og B&#x00E6;velse, uden at benytte Udl&#x00F8;sningen af de academiske <seg type="com" n="com191"> Ledebaand</seg> til at bestige Videnskabernes h&#x00F8;iere Standpuncter, uden at ahne, at den Unge burde have en anden og h&#x00F8;iere Dannelse, end de <seg type="com" n="com192">n&#x00F8;de</seg>. De &#x00D8;vrige, hvis Tal ikke er lidet, ansee Underviisningen som en Biting, &#x00F8;ve sig flittelig i Dandsen, Riden, Jagen, Lombrespil, og hvad de andre for Konster hedde<note type="footnote"> <p rend="noIndent">Have de ret deres Bestemmelse for &#x00D8;ie, da l&#x00E6;gge de sig efter Landv&#x00E6;senet.</p> </note>,  erhverve sig en Glut, eller, om de alt andensteds have en, giennemgaae <seg type="com" n="com525"> <persName key="pe819">Schillings</persName> Romaner</seg> med een eller flere af Egnens Koner og Piger. <hi rend="romanType"> <seg n="com572" type="com"> <app type="corrNote" select="yes"> <lem wit="GV">Mu&#x2013;<pb type="text" facs="1807_63_fax026.jpg" ed="A" n="270"/>tatis</lem> <rdg wit="A">Mu-Mutatis</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mutandis</seg>,</hi> passer samme Skilderi paa <seg type="com" n="com196">Pr&#x00E6;kediminutiverne</seg>, Opvarterne i <rs key="myth424" type="myth">Themis</rs> Forgaarde, og dem, der studerede for at hedde Familiens L&#x00E6;rde, og glimre ved at vide, <placeName key="fak206">Friderikssteen</placeName> er ikke F&#x00E6;stningen ved <placeName key="fak205">Tronhiem</placeName>.</p>
+     
+    <p rend="firstIndent">Hvorledes skulle ogsaa disse haabefulde Ynglinge, der i Hovedstaden vare blinde for Litteraturens Skatte, og d&#x00F8;ve for Videnskabernes venlige Kalden, her faae Sands og &#x00D8;ie for noget Saadant? Det maatte da vel skee, ved at beskue deres &#x00E6;ldre <seg type="com" n="com573">Br&#x00F8;dre i <rs key="myth275.a" type="myth">Minerva</rs> </seg>; men jeg tvivler meget paa, at et saadant Skue kan, i F&#x00F8;lge sit V&#x00E6;sen, <app type="corrNote" select="yes"> <lem wit="GV">have</lem> <rdg wit="A">h&#x00E6;ve</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> saadanne Virkninger.</p>
+     
+    <p rend="firstIndent">Ikke er jeg dum eller skaml&#x00F8;s nok til at n&#x00E6;gte, at der gives baade geistlige og verdslige Embedsm&#x00E6;nd, der betragte Videnskaberne med <seg type="com" n="com201">renset</seg> Blik, og ofre dem Tiden, deres <seg type="com" n="com202">Kaldsforretninger</seg> levne; men, jeg t&#x00E6;nker, at om disse end ikke ere saa faa, ere de dog langt fra at v&#x00E6;re mange nok til at indgyde deres unge slumrende Br&#x00F8;dre en videnskabelig Stemning; ja, jeg t&#x00F8;r mene, at de i den seneste Tid ere snarere blevne f&#x00E6;rre end flere.</p>
+     
+    <p rend="firstIndent">Jeg gad vide, hvor man sikkerst tr&#x00E6;ffer en stor Deel af vor Tids Pr&#x00E6;ster, i Mark og Stald, eller i Studerekamret, ved Pulten, eller Spillebordet? Jeg gad sammenligne deres Bogsamling <pb ed="Gskv" n="139" type="edition"/>med deres M&#x00F8;gdynge, Boghandlerens Regning med Urtekr&#x00E6;mmerens <pb type="text" facs="1807_63_fax027.jpg" ed="A" n="271"/>og <seg type="com" n="com203">Viintapperens</seg>. Jeg gad have et Instrument, hvorved jeg, efter St&#x00F8;vets M&#x00E6;ngde, eller Bladenes Sammenpresning, <pb ed="US" n="187" type="edition"/>kunde beregne, hvor l&#x00E6;nge hver Bog havde staaet ur&#x00F8;rt i Hylden; og jeg gad endelig veie deres Kundskabsmasse ved Afgangen fra Universitetet, og efter ti Embedsaar. Resultaterne, der saaledes kunde uddrages, vilde neppe v&#x00E6;re ubetydelige, naar man skal besvare Sp&#x00F8;rgsmaalene: hvi er Videnskabelighed saa liden? hvi er vor Litteratur kun en Skygge, der peger hen paa enkelte Lemmer af et Legeme, der, som Heelt, ligger ganske udenfor vor Synskreds. Ingen tro imidlertid, at jeg herved vil neds&#x00E6;tte Pr&#x00E6;sterne under de juridiske og medicinske Embedsm&#x00E6;nd! Nei, efter min Erfaring ere disse endnu langt mindre videnskabelige, og mange blandt dem vilde vel endog vredes, hvis man kaldte dem Videnskabsm&#x00E6;nd.</p>
+     
+    <p rend="firstIndent">Skal jeg nu sige, hvilket Middel der, efter min Formening, er det virksomste til at udbrede Videnskabelighed, og fremskaffe en med samme harmonerende Litteratur i F&#x00E6;drelandet, da <seg type="com" n="com205">forbinder</seg> allerede det Foregaaende mig til at svare: de Studerendes mere videnskabelige Dannelse, hvorved jeg forstaaer, at der indgydes dem Ki&#x00E6;rlighed til Videnskab og Konst.</p>
+     
+       <p rend="firstIndent">At Videnskabernes Anpriisning, et n&#x00E6;rmere Forhold mellem L&#x00E6;rere og L&#x00E6;rlinge, og N&#x00F8;dvendigheden af, i Tale og Skrift at behandle videnskabelige <seg type="comStart" n="com206"/>Gien<pb type="text" facs="1807_63_fax028.jpg" ed="A" n="272"/>stande<seg type="comEnd" n="com206"/>, is&#x00E6;r tiene til at indgyde de Studerende Agtelse for Videnskaberne, og Lyst til deres Dyrkelse, beh&#x00F8;ver vel Erfaringen neppe at l&#x00E6;re os. Imidlertid er denne Sandhed tildeels ogsaa hos os stadf&#x00E6;stet ved det <seg type="com" n="com208">p&#x00E6;dagogiske <app type="corrNote" select="yes"> <lem wit="GV">Seminariums</lem> <rdg wit="A">Seminarinms</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> </seg> Historie, ligesom den sees at have sv&#x00E6;vet for Regieringens &#x00D8;ine, da den iv&#x00E6;rksatte <seg type="com" n="com209">Forbedringen ved de l&#x00E6;rde Skoler</seg> og <seg type="com" n="com207">Examen Artium</seg>.</p>
+     
+    <p rend="firstIndent">Herved er meget giort, under den Betingelse, at Ynglingen, naar han forlader Skolen, kan tr&#x00E6;de ind i et Forhold, der kan beskytte hans fremskridende Udvikling; men uden dette vil den ny <seg type="com" n="com204">Skoleindretning</seg> neppe gavne Videnskaberne meget.</p>
+     
+    <p rend="firstIndent">Beviset synes mig klart.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="140" type="edition"/>Den Alder, der tilbringes i Skolerne, vil stedse v&#x00E6;re mere skikket til at gi&#x00F8;re Videnskabelighed mulig for Individet, end til at frembringe den hos ham.</p>
+     
+    <p rend="firstIndent">Jeg ikke blot troer, men <seg type="com" n="com526">har selv den Gl&#x00E6;de at vide det</seg>: end ikke Barnet <app type="corrNote" select="yes"> <lem wit="Rettelsesblad">er saa</lem> <rdg wit="A">er ikke saa</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> ganske h&#x00E6;ftet til Jorden, at dets &#x00D8;ie ei skulde kunne h&#x00E6;ves mod Himlen. Ski&#x00F8;ndt det langt mere end det udvortes og indvortes voxne Menneske er bundet til Erfaring, vil det dog kunne ledes til Begreb om <seg type="com" n="com527">den h&#x00F8;iere Kundskabs Kilde, vi have i os selv</seg>, og saaledes paa en Maade erholde Sands for Videnskab i h&#x00F8;iere Betydning. Men, deels vil <pb ed="US" n="188" type="edition"/>denne Sands, som, mere <seg type="com" n="com211">meddeelt</seg>, end v&#x00E6;kket, ikke kunne slaae saa dybe R&#x00F8;dder i <pb type="text" facs="1807_63_fax029.jpg" ed="A" n="273"/>den Unges V&#x00E6;sen, at den, ved egen Kraft, midt iblandt <seg type="com" n="com213">Modstr&#x00E6;belser</seg> udenfra, kan naae sin fulde V&#x00E6;xt, og b&#x00E6;re moden Frugt; og deels lader neppe det samme sig udrette ved offentlig, som ved privat Underviisning.</p>
+     
+    <p rend="firstIndent">Vi maa her ei heller glemme, at selv det Barn, der kan fyldes med Beundring ved Skuet af den ski&#x00F8;nne farvede Tegning, og f&#x00F8;le Lyst til at efterligne den, dog med Ulyst gientager de f&#x00F8;rste Streger og Linier, hvis str&#x00E6;nge Forbindelse med Konstv&#x00E6;rket det ei lettelig fatter. For at v&#x00E6;kke Lysten, der ved hver ny uventet Vanskelighed er n&#x00E6;r ved at slumre, vil det ingenlunde stedse v&#x00E6;re nok at pege hen paa den fuldendte Bygning, hvis Glands vel kan henrive Barnets noget ski&#x00E6;rpede &#x00D8;ie, men hvis eiendommelige V&#x00E6;rd ei derfor f&#x00F8;les. L&#x00E6;reren n&#x00F8;des da til, selv mod sin Villie, at give det borgerlige Liv, og Videnskabernes Indflydelse paa samme, en alt for stor Vigtighed.</p>
+     
+    <p rend="firstIndent">Her befinder den Unge sig paa en Afvei, og h&#x00F8;rer han ikke til de faa h&#x00F8;ie Si&#x00E6;le, der ligesom f&#x00F8;dtes uden Baand, og aldrig taale samme, da vil han, uden virksom Hielp udenfra, f&#x00F8;lge den paa sin hele Bane.</p>
+     
+    <p rend="firstIndent">Naar vi undtage de sande store Genier, der <seg type="com" n="com528">hverken ved Opdragelse kunne frembringes, eller &#x2013; t&#x00F8;r man vel sige &#x2013; opdrages af Andre</seg>, end sig selv, <pb type="text" facs="1807_63_fax030.jpg" ed="A" n="274"/>er det vel ikke vanskeligt at betegne den Vei, de <seg type="com" n="com219">Subjecter</seg>, som under n&#x00E6;rv&#x00E6;rende Omst&#x00E6;ndigheder forlade Skolerne, ville betr&#x00E6;de.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="141" type="edition"/>De have l&#x00E6;rt <seg type="com" n="com220">Begyndelsesgrundene</seg> af endeel Videnskaber og Sprog, uden endnu at have adopteret Menneskers h&#x00F8;ieste Maal, og uden at have beregnet de mulige Skridt, der kunne gi&#x00F8;res mod det. Vi maa da allerede kalde det meget, om de strax s&#x00E6;tte sig et mindre fiernt Maal, Duelighed til et vist Embede, og ikke tankel&#x00F8;se henslingre mod den n&#x00E6;rmeste Examen. Blandt de Embedsm&#x00E6;nd, de l&#x00E6;re at ki&#x00E6;nde, findes adskillige, de troe under sig i Kundskaber, og stundom maaskee ei saa ganske <seg type="com" n="com224">urettelig</seg>. Med hiint Studeremaal for &#x00D8;ie, vil allerede dette slappe deres Kraftanstr&#x00E6;ngelse; thi Biergene, de nys troede at maatte overstige, mene de nu at kunne undgaae, eller dog blot sparsomt ber&#x00F8;re.</p>
+     
+    <p rend="firstIndent">Har Ynglingen sat &#x00C6;re og Yndest som Maal for sin Str&#x00E6;ben, da vil han snart bem&#x00E6;rke, at disse Ting ofte langt lettere erhverves, og han vil da lettelig give Slip paa, hvad der for ham kun var Middel, ikke &#x00D8;iemeed, Pligt, men ikke Trang.</p>
+     
+      <p rend="firstIndent">Hans Legeme modnes, uden at v&#x00E6;re traadt i villig Tieneste <pb ed="US" n="189" type="edition"/>hos Si&#x00E6;len. Dennes h&#x00F8;iere Evner indslumre, og de lavere tr&#x00E6;de i Legemets Tieneste. Han f&#x00F8;ler sig hendragen til det andet Ki&#x00F8;n, og fasts&#x00E6;tter let Blodets varme Str&#x00F8;mmen ved Qvindens <pb type="text" facs="1807_63_fax031.jpg" ed="A" n="275"/>Smiil, og egen Nyden, som Idealet for jordisk Lyksalighed. Betragter han Videnskaberne som Middel, da vil han snart finde, at de ei blot ere un&#x00F8;dvendige, men vel endog skadelige, naar det gi&#x00E6;lder om at erhverve Qvindegunst, da de give Si&#x00E6;len en Alvor, og F&#x00F8;lelsen en Dybde, der slet ikke passer med den sp&#x00F8;gfulde Flagren giennem Livet.</p>
+     
+    <lg>
+     <l><seg type="com" n="com229"><hi rend="size-1">Drik Viin, v&#x00E6;r doven, og fias med Piger,</hi></seg></l>
+    </lg>
+     
+    <p rend="noIndent">taber for hans &#x00D8;ie det ironisk Bidende, og vorder ham den h&#x00F8;ieste Livsphilosophie.</p>
+     
+    <p rend="firstIndent">Mit Hierte vilde saares, hvis man troede, jeg ved disse Yttringer udtrykte Ringeagt for Naturens herligste Smykke, eller det &#x00D8;nske, at den unge Videnskabernes Dyrker kunde udelukkes fra <seg type="com" n="com230">Ki&#x00F8;nnets</seg> <seg type="com" n="com231">hulde</seg> Omgang.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="142" type="edition"/>Stod det altsaa endnu i fiernere Forhold til mit egentlige Maal, turde jeg vel haabe L&#x00E6;serens Tilgivelse for de &#x00D8;ieblikke, jeg ber&#x00F8;ver ham ved min Menings n&#x00E6;rmere Udvikling.</p>
+     
+    <p rend="firstIndent">For Geniets Videnskabelighed vil Ki&#x00F8;nnet neppe blive farlig. Den dyriske Nydelse kan maaskee lokke, men aldrig fastholde ham, thi den kan ikke omfatte hans V&#x00E6;sen. Ki&#x00E6;rlighed kan vel f&#x00E6;ngsle, men ikke standse ham, thi hans &#x00D8;ie kan vel bl&#x00E6;ndes, men ikke lukkes. </p>
+     
+    <p rend="firstIndent">Elsker han lykkelig, da flyver han ad en kortere Vei til Maalet, han burde n&#x00E6;rme sig med <seg type="com" n="com574">stadige</seg> <pb type="text" facs="1807_63_fax032.jpg" ed="A" n="276"/>Fied. Udmattet af den overnaturlige Kraftyttring, hvorved det kun blev ham muligt, &#x00F8;iebliklig at s&#x00F8;nderrive St&#x00F8;vets Baand, vil han en Tidlang slumre i salig Nydelse, ja vel endog spotte over den langsomme N&#x00E6;rmen til et Maal, der kun ber&#x00F8;res af den, som Englevinger h&#x00E6;vede. Men Rusen vil bortdampe, fordi den, trods sin H&#x00F8;ihed og Hellighed, dog er en Ruus, og han vil af den nydte Salighed kun beholde det dybt grundf&#x00E6;stede Minde, der ansporer ham til <seg type="com" n="com529">Str&#x00E6;ben mod den Herlighed, han egentlig kun ahnede; men troede i Ahnelsen at eie.</seg> </p>
+     
+    <p rend="firstIndent">Elsker han ulykkelig, da er han ikke mere sin egen, men Ski&#x00E6;bnens, og han kan ikke vide, om hans Muskler ville tabe Sp&#x00E6;ndekraften i den uhyre Kamp mellem Alt og Intet, og han nedsegne, som en visnet Blomst, paa <seg type="com" n="com236"> <persName key="pe678">Verthers</persName> Gravh&#x00F8;i</seg>, eller ikke. Men, overlever han sin Krisis, og vender, <seg type="com" n="com237">liig <persName key="pe637">Lazarus</persName>, tilbage fra Graven</seg>, hvor han str&#x00E6;bte at skiule sig for sig selv, da <pb ed="US" n="190" type="edition"/>vil han f&#x00F8;le dobbelt Trang til at <seg type="com" n="com239">stunde did</seg>, hvorhen der kun iles paa <seg type="com" n="com531">det dobbelte V&#x00E6;sens</seg> Vinger, men hvis Herlighed han anskuede midt i Selvkampen, der vilde s&#x00F8;nderslide ham, halv h&#x00E6;vet ved den ene Vinge, hans eget V&#x00E6;sen gav ham.</p>
+     
+    <p rend="firstIndent">Vare da alle de Studerende Genier, troer jeg, man burde tie, ligesom det vel ei heller nyttede at tale, men da en Undtagelse ei kan vorde Regel, t&#x00F8;r jeg troe, at <seg type="com" n="com241">Ki&#x00F8;nnet</seg> nedbryder den videnskabelige <pb type="text" facs="1807_63_fax033.jpg" ed="A" n="277"/>Stemning hos en saare betydelig Deel af de udm&#x00E6;rkede Studerende, naar disse ere overladte til sig selv. Jeg vil ikke engang tale om det Tilf&#x00E6;lde:</p>
+     
+    <lg>
+     <l><seg type="com" n="com532"><hi rend="size-1"><pb ed="Gskv" n="143" type="edition"/>Naar Dumhed sig og Elskov parre,</hi></seg></l>
+    </lg>
+     
+      <p rend="noIndent">da det er beki&#x00E6;ndt nok,</p>
+     
+    <seg type="com" n="com532">
+     <lg>
+      <l><hi rend="size-1">Man et Par saa dumme Narre</hi></l>
+      <l><hi rend="size-1">Aldrig meer i Verden saae,</hi></l>
+    </lg>
+    </seg>
+     
+    <p rend="noIndent">og den Nytte, Videnskabelighed skal have af den Dumme, er blot passivisk. Men, hvormangen &#x00C6;del blev ikke et Rov for hiin phantasil&#x00F8;se Ki&#x00E6;rlighed, der f&#x00E6;ngsler til den Elskedes Legeme, og s&#x00F8;vndysser Si&#x00E6;len, for den slappende Vellyst, der raner al h&#x00F8;iere Kraft? Hvormange giorde ikke hiin ulyksalige Mellemting, Flaggren omkring Ki&#x00F8;nnet, til deres Gl&#x00E6;de, og mon den v&#x00E6;re mindre ford&#x00E6;rvelig?</p>
+     
+    <p rend="firstIndent">Det er tusinde Gange sagt, at Omgang med dannede Fruentimmer sliber Manden, og hvo vil n&#x00E6;gte det? men det burde ligesaa ofte v&#x00E6;ret sagt, at den Yngling, der ret finder Behag i Qvindeselskab, vil bringe <seg type="com" n="com246">Smaahedsaanden</seg> og Ustadigheden med sig i sine alvorligere Beski&#x00E6;ftigelser, hvis han <seg n="com575" type="com">og ikke</seg> lader dem ganske hvile. Har han nogen Aand, da vil han blive, hvad man kalder en behagelig Mand, tale eller skrive i en halvlevende Maneer, og kryddre Alt, hvad han ber&#x00F8;rer, med en vis letspillende <seg type="com" n="com250">Vittighed</seg>; har han Hierte, da vil han udtale saamegen F&#x00F8;lelse, som kan lokke Taarer af et Qvinde&#x00F8;ie; men den dy<pb type="text" facs="1807_63_fax034.jpg" ed="A" n="278"/>bere F&#x00F8;lelse og det dybere Blik maa han tabe, thi, forki&#x00E6;let, vil han udmattes af vedholdende Anstr&#x00E6;ngelse, og gyse tilbage for de st&#x00E6;rkere Syner.</p>
+     
+    <p rend="firstIndent">Saaledes forstaaer jeg <persName key="pe677">Addison</persName>, naar han siger, <seg type="com" n="com533">han aldrig ki&#x00E6;ndte nogen ret fornuftig Mand, der i Almindelighed var yndet af Fruentimmerne,</seg> og i denne Betydning lader det sig vist sige, uden at tr&#x00E6;de Sandheden for n&#x00E6;r, eller v&#x00E6;kke det smukke Ki&#x00F8;ns retm&#x00E6;ssige Vrede.</p>
+     
+      <p rend="firstIndent">Jeg f&#x00F8;ler det med Vemod og Overbeviisning: Qvinden kunde <pb ed="US" n="191" type="edition"/>vorde, ikke blot uskadelig, men endog den st&#x00E6;rkeste Spore til Videnskabelighed, uden derfor at tabe det mindste af sit s&#x00E6;regne V&#x00E6;sen; men da maatte ogsaa hendes Dannelse v&#x00E6;re noget ganske andet, end hvad den nu er: v&#x00E6;rdl&#x00F8;s Glimmer; og Qvinden kan kun dannes i Manden.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="144" type="edition"/>Man slutter let heraf, at jeg mener, den unge Studerende burde hos Ki&#x00F8;nnet, som det nu er, ikke troe at burde l&#x00E6;re: at v&#x00E6;re, men at hvile, og dets Gunst maatte v&#x00E6;re ham en Bisag, ligesom Polituren selv, trods al den Vigtighed, vor <seg type="com" n="com253">smaavurne</seg> Tid har villet give den, dog virkelig er det. Dette vilde blive Tilf&#x00E6;ldet da, naar han l&#x00E6;rte at slutte sig til de svundne Tider, saaledes, som de staae for vort &#x00D8;ie, og skatte den fortrolige Omgang med Sagaens<note type="footnote"> <p rend="noIndent">Jeg maa vel anm&#x00E6;rke, at jeg her ved Saga forstaaer &#x2013; Historie.</p> </note> ud&#x00F8;<pb type="text" facs="1807_63_fax035.jpg" ed="A" n="279"/>delige Store, og at ski&#x00E6;lne mellem <persName key="pe378">Homers</persName> og <persName key="pe676">Lafontaines</persName> Helte; kort, naar Videnskabelighed blev hans h&#x00F8;ieste Maal.</p>
+     
+    <p rend="firstIndent">Finder nu virkelig den vel forberedede Yngling Hindringer, der lettelig standse, aflokke eller afskr&#x00E6;kke ham fra Videnskabsbanen, og kunne disse Hindringer ene bortryddes eller formindskes ved en kraftfuld Modv&#x00E6;gt, da fremskyder sig Sp&#x00F8;rgsmaalet: om en saadan Modv&#x00E6;gt hos os existerer?</p>
+     
+    <p rend="firstIndent">Er Modv&#x00E6;gtens Kraft vis, og er det sandt, at en uvidenskabelig, eller rettere, slet ingen, Aand, besi&#x00E6;ler Nutidens Studerende, naar de betragtes som et Heelt; da er Sp&#x00F8;rgsmaalet ogsaa egentlig besvaret; men Sagen tr&#x00E6;nger til en n&#x00F8;iere Analyse. Vel overstiger det baade min Kraft og Villie, at give en saadan, som den burde gives; men dog maa jeg bede om Tilgivelse, hvis jeg et &#x00D8;ieblik synes at glemme den borgerlige og litteraire H&#x00F8;ide, paa hvilken <placeName key="fak8">Ki&#x00F8;benhavns</placeName> Professorer staae over mig, i det jeg tillader mig nogle Sp&#x00F8;rgsm&#x00E5;l om deres Virken til Videnskabeligheds Fremme!</p>
+     
+    <p rend="firstIndent">Jeg antager som afgiort, at de H&#x00F8;il&#x00E6;rde paa det samvittighedsfuldeste <seg type="com" n="com261">beobagte</seg> deres <seg type="com" n="com262">Partes</seg> <seg type="com" n="com263"> <hi rend="romanType">publice,</hi> <hi rend="romanType">privatim,</hi> og <hi rend="romanType">privatissime</hi> </seg> <hi rend="romanType">;</hi> men gribe de ogsaa enhver Leilighed til, i Forel&#x00E6;sningen over deres s&#x00E6;regne Videnskab, at tale med Varme og Kraft om sand videnskabelig Dannelse, at opmuntre de Unge <pb type="text" facs="1807_63_fax036.jpg" ed="A" n="280"/>til Afbenyttelse af de offentlige Bogsamlinger, at vise og lette dem Veien, de b&#x00F8;r vandre?</p>
+     
+      <p rend="firstIndent">Er det saa, da maa det synes underligt, hvi en <persName key="pe2">Nyrup</persName> i min <pb ed="Gskv" n="145" type="edition"/>Tid ei kunde samle 5, siger og skriver fem Tilh&#x00F8;rere ved <seg type="com" n="com536">sine Forel&#x00E6;sninger over Litterairhistorien</seg>. Da maa det nu synes <pb ed="US" n="192" type="edition"/>underligere, <seg type="com" n="com270">hvi man udskreg</seg>, og endnu <seg n="com271" type="com">paa hans Ryg</seg> udskriger <seg type="com" n="com537">den geniefulde <persName key="pe18">Steffens</persName>, der paa sin egen Vei str&#x00E6;bte at v&#x00E6;kke Videnskabelighed, og neppe ganske forfeilede sin Hensigt</seg>.</p>
+     
+    <p rend="firstIndent">Enhver Student skal, som beki&#x00E6;ndt, ved sin Indskrivelse blandt de <seg type="com" n="com268">academiske Borgere</seg> v&#x00E6;lge en Professor til sin <seg type="com" n="com269">privat Pr&#x00E6;ceptor</seg>.</p>
+     
+    <p rend="firstIndent">Endski&#x00F8;ndt denne Indretning er saare langt fra Fuldkommenhed, er det dog deraf klart, at Fortidens Viise fuldelig indsaae N&#x00F8;dvendigheden af et n&#x00E6;rmere Forhold mellem de Studerende og deres L&#x00E6;rere. Men, veed ogsaa virkelig enhver af <placeName key="fak8">Ki&#x00F8;benhavns</placeName> Professorer, hvilke der have valgt ham til Opsynsmand og Raadgiver? Eller, da denne feilfulde Indretning maaskee overl&#x00E6;ssede Professorerne saaledes, at de gierne saae, den blev til en Skygge, str&#x00E6;ber da hver is&#x00E6;r at ops&#x00F8;ge nogle talentfulde Ynglinge, som de indgyde Sands for Videnskab, veilede ved gode Raad, l&#x00E6;rerige Samtaler, og Opgaver til skriftlig Bearbeidelse? Veed den videlystne Unge, at den Professor, hvis Raad og Veiledning han &#x00F8;nskede, er villig til at med<pb type="text" facs="1807_63_fax037.jpg" ed="A" n="281"/>dele disse, til at gi&#x00F8;re end mere, end der forlanges? Er den Fattige, som higer efter Kundskab, vis paa, uden anden Anbefaling, at nyde godt af de academiske Stipendier, eller er denne Forening af Fattigdom og Lyst til Videnskab saa almindelig, at ikke alle, der sukke under denne dobbelte Trang, kunne hielpes paa een eller anden Maade? Er det end uundgaaeligt, at f&#x00F8;res bag Lyset i Henseende til Fattigdom, er da det samme Tilf&#x00E6;ldet med de S&#x00F8;gendes Flid og Anl&#x00E6;g?</p>
+     
+    <p rend="firstIndent">Disse Sp&#x00F8;rgsmaal er af yderste Vigtighed; men da jeg ingenlunde vil forn&#x00E6;rme, og endnu mindre sige et Ord, jeg ei erki&#x00E6;nder for str&#x00E6;ngeste Sandhed, saa vil jeg end ikke pr&#x00F8;ve paa, at besvare dem fyldestgi&#x00F8;rende. Kun, hvad jeg veed, vil jeg ligefrem anf&#x00F8;re, kun enkelte Vink vil jeg give til Kyndigeres <seg type="com" n="com276">Omd&#x00F8;mme</seg>.</p>
+     
+      <p rend="firstIndent">Vist er det, at Studenten ved <placeName key="fak20">Ki&#x00F8;benhavns Universitet</placeName> i min <pb ed="Gskv" n="146" type="edition"/>Tid troede at see et sv&#x00E6;lgende Dyb bef&#x00E6;stet mellem Professoren og sig, og at han vist ikke vovede at uleilige en Saadan med Raadsp&#x00F8;rgsel om Tilfredsstillelsen af hans Aandstrang, med mindre Familieforbindelser eller andre Omst&#x00E6;ndigheder lagde en Bro over Dybet.</p>
+     
+    <p rend="firstIndent">At der existere <seg type="com" n="com279">Privatissima</seg>, veed jeg, og at de faa Lykkelige der aabnes de h&#x00F8;iere Udsigter i Videnskaben, vil jeg troe; men det veed jeg ogsaa, at mange af dem, der bes&#x00F8;ge disse, ei ere <pb ed="US" n="193" type="edition"/>istand til at <pb type="text" facs="1807_63_fax038.jpg" ed="A" n="282"/>nyde de h&#x00F8;iere Udsigter; og jeg veed end mere, at den Fattige ei kan betale dem med <seg type="com" n="com280">10 Rd.</seg> hvert Halvaar, hvilket man sagde mig, var Prisen.</p>
+     
+    <p rend="firstIndent">Vist er det, at Endeel f&#x00F8;lte midt i <seg type="com" n="com281">Br&#x00F8;dvidenskaben</seg> en Tomhed, de ikke vidste at udfylde, str&#x00E6;bte at glemme den i <seg type="com" n="com282">Sv&#x00E6;rmens</seg> Tummel, og ginge forlorne for Videnskaberne, til hvis Ypperlige Naturen syntes at have bestemt dem; at Andre, der str&#x00E6;bte at udvikle sig selv, geraadede paa Afveie, som ofte giorde dem uduelige baade for Livet og Videnskaben, men stedse ranede den kostbare, ugienkaldelige Tid. Var dette en N&#x00F8;dvendighed, er det s&#x00F8;rgeligt, hvis ikke, er det dobbelt.</p>
+     
+    <p rend="firstIndent">Vist er det, at ikke blot de Tr&#x00E6;ngende og Duelige, men ogsaa de Velhavende og Dosmerne ofte s&#x00F8;ge <seg type="com" n="com538">de academiske Stipendier</seg>, og det vilde vel ikke let lade sig bevise, at blot de F&#x00F8;rste erholde dem.</p>
+     
+    <p rend="firstIndent">Harmeligt er det, at h&#x00F8;re En sige, han vil s&#x00F8;ge <seg type="com" n="com287">Klosterdaleren</seg>, for at kunne gaae ugentlig et Par Gange oftere paa Comedie, og det har jeg h&#x00F8;rt; men Harmen forener sig med dybeste Vemod, naar man ved Uslingens Side seer en Tr&#x00E6;ngende, der, med Taarer i &#x00D8;iet, n&#x00F8;des til, trods sin inderlige Ki&#x00E6;rlighed til Videnskab, at forlade Universitetet, fordi han ikke kunde <seg type="com" n="com288">naae</seg> Underst&#x00F8;ttelsen, og det har jeg seet.</p>
+    
+      <p rend="firstIndent"> <pb type="text" facs="1807_63_fax039.jpg" ed="A" n="283"/>Det v&#x00E6;re langt fra mig, at beskylde Nogen for Partiskhed; men et Forslag v&#x00E6;re mig tilladt, hvorved, jeg troer, der vandtes mere Sikkerhed for, at ingen Uduelig fik den Hielp, den Duelige ene b&#x00F8;r have; thi Fattigdom allene er ingen Grund til at nyde Godt af <seg type="com" n="com290">videnskabelige Stiftelser</seg>.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="147" type="edition"/>Dersom f. Ex. alle de, der ans&#x00F8;gte om Stipendier, bleve enten af Professorerne eller andre agtede Videnskabsm&#x00E6;nd pr&#x00F8;vede, med Hensyn paa deres Anl&#x00E6;g, mon da ikke Veien derved mere tilsp&#x00E6;rredes for de Uduelige, og mon ikke enhver Duelig, som tr&#x00E6;ngte, da vilde blive hiulpen? Mon end videre ei herved lagdes Grunden til et n&#x00F8;iere Beki&#x00E6;ndtskab mellem Professorerne og de Studerende, der, fortsat, vilde b&#x00E6;re de ski&#x00F8;nneste Frugter?</p>
+     
+       <p rend="firstIndent">Ved Universitetets Indretning, saaledes, som den ved Lovene er bestemt, og endnu mere, som den, halv dispenseret fra disse, <seg type="com" n="com293">lader sig tilsyne</seg>, findes vist nok ikke lidet, Videnskabelighedens Ven &#x00F8;nskede forandret; men hvo giemmer ikke gierne saadanne &#x00D8;nsker i sin Barm, naar han lever paa en Tid, da Fornuft nys seirede over Vane, og ski&#x00E6;nkede Videnskaberne et videnskabeligt Forum? Hvo seer ikke i Aanden af <seg type="com" n="com295">Klosterets</seg> Ruiner at fremh&#x00E6;ve sig et Musernes Tempel, Architecturens Triumph, <seg type="comStart" n="com296"/>Deca<pb ed="US" n="194" type="edition"/>nernes for&#x00E6;ldede Borde<seg type="comEnd" n="com296"/> omskabte til herlige Altere, hvor <rs key="myth426.a" type="myth">Apollos</rs> unge Tilbedere ofre aandige Gaver, og af <pb type="text" facs="1807_63_fax040.jpg" ed="A" n="284"/>hans hellige Pr&#x00E6;ster indvies til Gudens v&#x00E6;rdige Dyrkelse? Hvo ahner og seer ikke saa meget mere, som det for mig vilde v&#x00E6;re ubeskedent at n&#x00E6;vne?</p>
+     
+    <p rend="firstIndent">Naar disse Ting begynde at skee, da skulle Videnskaberne <seg type="com" n="com297">opl&#x00F8;fte deres Hoveder, thi deres Forl&#x00F8;sning stunder til</seg>. Folket skal see sine straalende Genier omringede af de Musernes jublende S&#x00F8;nner, der, f&#x00F8;lende sig for svage at v&#x00E6;re Sole, fryde sig i hines Lys, og som tindrende Stierner adsprede det natlige M&#x00F8;rke, der endnu ruger over den talrigste Deel af Nationen. <placeName key="fak14">Danmarks</placeName> Adel skal indfl&#x00E6;tte sig selv i <seg type="com" n="com539">Fortidens Rosenkrandse</seg>, og <rs key="myth425.a" type="myth">Merkurs</rs> S&#x00F8;nner skulle l&#x00E6;re, at valgte end Guden <rs key="myth183.a" type="myth">Bachus</rs> til sin Yndling, <seg type="com" n="com540">ja solgte han end den tonende Luth for de h&#x00F8;ihornede Oxer, saa sluttedes og derved den evige Fred mellem ham og <rs key="myth426.a" type="myth">Apollo</rs> </seg>; saa h&#x00E6;ver han sig dog til <rs type="myth" key="myth60">Olymp</rs>, efterat have <seg type="com" n="com541">drevet de aandl&#x00F8;se Skygger</seg>, for at lytte til de henrivende Toner, <seg type="com" n="com542">Sangens Fader</seg> udlokker af Luthens de klingende Str&#x00E6;nge. <seg type="com" n="com543">Ei vil Bonden glemme sin Ploug, men vel, fuld af &#x00C6;refrygt, byde den standse ved F&#x00E6;drenes Gravh&#x00F8;ie.</seg> Disses Bautastene skulle <pb ed="Gskv" n="148" type="edition"/>stande som Skytsguder midt i hans Vange, ei mere spr&#x00E6;nges ved <seg type="com" n="com544">de sorte Kunster, <rs key="myth48" type="myth">Loke</rs> l&#x00E6;rte Mennesket</seg>, ligesom for at trodse Bulderet af <rs type="myth" key="myth74.a">Akathors</rs> luende Vogn; <seg type="com" n="com545">ei mere henkastes mellem vanhellige Br&#x00F8;dre til forg&#x00E6;ngeligt Hegn</seg>. Den betydningsfulde Natur, for hvilken hans &#x00D8;ie er opladt, vil f&#x00F8;lge ham <pb type="text" facs="1807_63_fax041.jpg" ed="A" n="285"/>til Herrens Tempel, og der, harmonisk udtalt i Sangens Toner, og giennem Ordets Tiener, stemme alle hans Si&#x00E6;ls Str&#x00E6;nge til et, mod Himlen stigende, Halleluja.</p>
+     
+    <p rend="firstIndent">Dog, henreven af den glade F&#x00F8;lelses rullende Str&#x00F8;m, fristedes jeg til at glemme vor n&#x00E6;rv&#x00E6;rende Standpunkt, saa v&#x00E6;sentlig forski&#x00E6;llig fra den, hvorpaa jeg i Ahnelsen stod, og skuede ud over det livfulde <placeName key="fak24">Norden</placeName>. Altsaa tilbage paa T&#x00E6;nkningens rolige Vei!</p>
+     
+    <p rend="firstIndent">Naar Universitetet har tabt al Liighed med Fabriker, og er blevet en sand Planteskole for Videnskaberne, da vil en dem v&#x00E6;rdig Litteratur, og en videnskabelig Stemning hos Nationen v&#x00E6;re en n&#x00E6;sten uudeblivelig F&#x00F8;lge.</p>
+     
+    <p rend="firstIndent">F&#x00F8;r jeg udvikler den f&#x00F8;rste Paastand, vil jeg sige et Par Ord til Besvarelse af en <seg type="com" n="com304">grundet</seg> Indvending, der kan gi&#x00F8;res mod den sidste.</p>
+     
+    <p rend="firstIndent">Da H&#x00F8;ihed og Rigdom ere Tidens Afguder, og Videnskabelighed vel giver begge i h&#x00F8;iere, men ingenlunde i lavere For<pb ed="US" n="195" type="edition"/>stand, t&#x00F8;r man da vente, at hines Templer skulle blive forladte, eller at de selv skulle give sig i Videnskabeligheds Tieneste?</p>
+     
+    <p rend="firstIndent">Det F&#x00F8;rste kan neppe t&#x00E6;nkes, men vel det Sidste; thi naar de Studerende ere videnskabelig stemte, maa de ogsaa hos den yngre Sl&#x00E6;gt, de opdrage og undervise, indpr&#x00E6;nte Agtelse for Videnskab, og den Sl&#x00E6;gt, som har samme, vil ikke blot tillade, men <pb type="text" facs="1807_63_fax042.jpg" ed="A" n="286"/>fordre, at den f&#x00F8;lgende opdrages til Videnskabelighed.</p>
+     
+    <p rend="firstIndent">Naar altsaa den f&#x00F8;rste Betingelse opfyldes, er vort Haab ikke l&#x00E6;nger grundet paa et muligt <seg type="com" n="com305">Sammenst&#x00F8;d</seg> af Tilf&#x00E6;lde, men paa det naturlige Forhold mellem Aarsag og Virkning. Men fordi jeg s&#x00E6;tter Adelens og Handelsstandens videnskabelige Stemning saa fiern, for at kunde gi&#x00F8;re den til Productet af den h&#x00F8;ieste Rimelighed, derfor n&#x00E6;gter jeg ingenlunde, at allerede <pb ed="Gskv" n="149" type="edition"/>nu baade kan og b&#x00F8;r gribes til dette Maal. Kun love man sig ikke formeget heraf, da den Enkelte endnu saa let staaer Fare for at henrives af Str&#x00F8;mmen i sine naturlige Cirkler<note type="footnote"> <p rend="noIndent">Dersom jeg torde troe, det fra min Haand kunde paa nogen Maade interessere, skulde jeg n&#x00F8;iere udvikle dette og mere i en egen Unders&#x00F8;gelse om Huusl&#x00E6;rere og deres Stilling.</p> </note>.</p>
+     
+    <p rend="firstIndent">En <seg type="com" n="com308">h&#x00E6;derlig</seg> Litteratur kunde <placeName key="fak14">Danmark</placeName> under tidtn&#x00E6;vnte Betingelse umulig savne; thi de Studerende vilde da ei bortsove Aarene mellem Embedspr&#x00F8;ven og et Embedes Tiltr&#x00E6;delse; men benytte dem, ved Siden af Yngeres Dannelse, til egen videre Udvikling, vel <seg type="com" n="com576">og</seg> til Overs&#x00E6;ttelser af andre Landes udm&#x00E6;rkede Producter. Med udviklet Sands og dannet Sprog ville de vorde Embedsm&#x00E6;nd, og, foruden det st&#x00F8;rre Anl&#x00E6;g til practisk Duelighed, de medbragte i deres Virkekreds, vilde de vide at bruge &#x00D8;ieblikkene, deres Forretninger ei medtoge, til Aandsarbeider, <pb type="text" facs="1807_63_fax043.jpg" ed="A" n="287"/>der <seg type="com" n="com314">stemmede med</seg> deres Lyst og Kr&#x00E6;fter. De vilde gi&#x00F8;re det, fordi saadanne Beski&#x00E6;ftigelser da vare dem en Trang, en Vederqv&#x00E6;gelse, de ei beh&#x00F8;vede at s&#x00F8;ge ved Spillebordet eller Punschbollen, i Balsalen, eller larmende Selskaber. Ikke kan det v&#x00E6;re min Mening, at alle de Studerende skulle v&#x00E6;re Skribenter; men der var allerede saare meget vundet, naar de alle vare Videnskabernes Venner.</p>
+     
+    <p rend="firstIndent">Jeg vil ikke paastaae, at Nogen i <placeName key="fak14">Danmark</placeName> kunde skrive sig riig, ja jeg vil ikke engang ber&#x00F8;re, hvad dog under slige Omst&#x00E6;ndigheder vilde v&#x00E6;re Tilf&#x00E6;ldet, at adskillige gode Skribenter kunne leve uden Embede; thi saa &#x00F8;nskeligt end dette var, er det dog ikke saa ganske n&#x00F8;dvendigt. Men saameget t&#x00F8;r jeg troe, at en <seg type="com" n="com318"> <persName key="pe7">Suhms</persName> Skrifter</seg> da ikke kunde mangle Forl&#x00E6;gger, og ingen god dansk Bog den n&#x00F8;dvendigste Afs&#x00E6;tning.</p>
+     
+    <p rend="firstIndent"> <pb ed="US" n="196" type="edition"/>Jeg gi&#x00F8;r her slet ingen Regning paa en udbredt videnskabelig Stemning hos Nationen, men blot hos dens Embedsm&#x00E6;nd. Havde det Ydre for dem tabt sin tilranede Interesse, saa det kun agtedes, saavidt det er Legemets n&#x00F8;dvendige Tiener, da vilde det Indres Kraft tr&#x00E6;de virksom frem, og str&#x00E6;be efter Ud<pb ed="Gskv" n="150" type="edition"/>videlse ved Ydertingenes Forvandling til <seg type="com" n="com546">assimilerende Stof</seg>. <seg type="com" n="com547">Mahogni Meubler, Speile af Garderh&#x00F8;ide, engelske Tepper, og Vine, og Kaffe &amp;c</seg> vilde forvandle sig til N&#x00E6;ring og <seg type="com" n="com322">Kl&#x00E6;demon</seg> for Aanden, der nu saa <pb type="text" facs="1807_63_fax044.jpg" ed="A" n="288"/>ofte maa sukke udt&#x00E6;ret, og evig holde Sengen, for at skiule sin N&#x00F8;genhed, medens Legemet er n&#x00E6;r ved at segne under sin forvovne Str&#x00E6;ben efter at udfylde Rummet. Det da underordnede Legeme vilde aldrig lade sig forlyde med Trang til den bl&#x00F8;de Sopha, der nu saa ofte lukker &#x00D8;iet for Aandens de ski&#x00F8;nneste Syner; men, <seg type="com" n="com323">n&#x00F8;iet</seg> med Nattens Hvile, stedse v&#x00E6;re et f&#x00F8;ieligt Redskab for den virksomme Si&#x00E6;l.</p>
+     
+    <p rend="firstIndent">Jeg veed det, Luxus har, is&#x00E6;r i de seneste Tider, fundet <seg type="com" n="com549">adskillige varme Forsvarere</seg>; men, uden at paastaae, at den selv stedse var Aanden, som begeistrede dens Lovtalere, vil dog dens Nytte aldrig vorde indlysende for mig<note type="footnote"> <p rend="noIndent">At udvikle dette n&#x00F8;iere, er her un&#x00F8;dvendigt, da man sagtens vil v&#x00E6;re enig med mig i at, naar de, der skulle v&#x00E6;re Videnskabsm&#x00E6;nd, anvende det, Livets N&#x00F8;dvendigheder levne dem, til Pragt eller Vellevnet, ist&#x00E6;denfor til v&#x00E6;rdigt Stof for T&#x00E6;nkning, da vinde Videnskaberne ikke derved. Interessant er det imidlertid, at <seg n="com577" type="com">begrunde</seg> de Sophismer, hvormed man har villet forsvare denne Uting, der bestandig vil blive uforsvarlig, saal&#x00E6;nge ikke det Modsatte af Videnskabelighed erki&#x00E6;ndes som Menneskets h&#x00F8;ieste Maal. &#x2013; Ogsaa skal jeg, dersom <seg type="com" n="com327">Minerva</seg> ikke bortviser mig<note type="footnote"> <p rend="noIndent"> <hi rend="italic"> <seg type="com" n="com328">Udg. Anm.</seg> </hi> Skulde Forf. have nogen F&#x00F8;ie til denne Frygt, om endog <rs key="title125" type="title">Minervas</rs> <app type="corrNote" select="yes"> <lem wit="GV">Udgiver</lem> <rdg wit="A">Ugdiver</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> var Luxus gunstigere, end han nogensinde har viist sig? <hi rend="italic"> <persName key="pe24">K.R.</persName> </hi> </p> </note>, som en Bespotter af dens h&#x00F8;ie <seg type="com" n="com330">Navne</seg>, str&#x00E6;be at godtgi&#x00F8;re min Paastand.</p> </note>.</p>
+    <p rend="firstIndent"> <pb type="text" facs="1807_63_fax045.jpg" ed="A" n="289"/>Jeg forudseer en Indvending, der kan gi&#x00F8;res mod det Haab, at Nationen vil blive videnskabelig, naar de Studerende blive det. Indvendingen er: ville ikke <seg type="com" n="com329">N&#x00E6;ringssorger</seg> sv&#x00E6;kke Embedsmandens Enthusiasme for Videnskab, eller i det mindste hindre dens Indvirkning paa Nationen?</p>
+     
+    <p rend="firstIndent">Det f&#x00F8;rste Sp&#x00F8;rgsmaal maa vel her v&#x00E6;re: af hvilke Embedsm&#x00E6;nd Videnskaberne kunne vente sig virksomst Tieneste? Jeg troer, af Pr&#x00E6;sterne; thi, naar deres heterogene Forretninger <pb ed="Gskv" n="151" type="edition"/>ikke for&#x00F8;gedes, men, om muligt, endnu bleve f&#x00E6;rre, naar de vel vedbleve at v&#x00E6;re <seg type="com" n="com331">Opsynsm&#x00E6;nd</seg> over Skolerne, men ikke bleve selv Skolel&#x00E6;rere, da havde de, blandt alle Statens Embedsm&#x00E6;nd, Professorer og <seg type="com" n="com550">Klokkere</seg> <note type="footnote"> <p rend="noIndent">Neppe vil Nogen n&#x00E6;gte, at det var &#x00F8;nskeligt, hvis de gode Klokkerembeder vedbleve, og besattes med fortiente Videnskabsm&#x00E6;nd, der ei f&#x00F8;lte Lyst til noget Embede, og saaledes ganske kunde leve for Menneskets h&#x00F8;ieste Syssel.</p> </note> undtagne, den meste Tid at hellige <pb ed="US" n="197" type="edition"/>Videnskaberne, og dertil den Fordeel, at mange af deres <seg type="com" n="com332">Kaldsforretninger</seg> staae i Forbindelse med samme. Er det nu rimeligt, at N&#x00E6;ringssorger ville tilintetgi&#x00F8;re st&#x00F8;rste Delen af det Udbytte, en mere videnskabelig Stemning hos F&#x00E6;drelandets Pr&#x00E6;ster lod os haabe?</p>
+     
+    <p rend="firstIndent">Sandt er det, at allerede nu mange Pr&#x00E6;ster leve kummerlig; at de, for dog nogenledes at ern&#x00E6;re sig <pb type="text" facs="1807_63_fax046.jpg" ed="A" n="290"/>og Familie, n&#x00F8;des til, bag Plougen at glemme Videnskaberne, og have ligesaalidet Evne til at ki&#x00F8;be B&#x00F8;ger, som Lyst eller Tid til at formere disses Antal.</p>
+     
+    <p rend="firstIndent">Er det saa, at Pr&#x00E6;sternes Indkomster formindskes ved <seg type="com" n="com336">Tiendeforeningen</seg>, da maa n&#x00F8;dvendig de <seg type="com" n="com337">middelmaadige</seg> Kald blive smaa, og de smaa endnu mindre. Skulle de store Kald endnu afgive betydelige Bidrag til <seg type="com" n="com338">Skoleseminarier</seg> og <seg type="com" n="com339">Skolekasser</seg>, da forsvinder det Haab, at disses <seg type="com" n="com340">Overfl&#x00F8;dighed</seg> kunde engang formindsket hines Ringhed.</p>
+     
+    <p rend="firstIndent">Alt dette aabner vist ikke de ski&#x00F8;nneste Udsigter for Pr&#x00E6;sternes Kaar, og deraf flydende udvortes Duelighed til at v&#x00E6;re Videnskabeligheds Fosterf&#x00E6;dre; men kan Bondestanden og Skolev&#x00E6;senet paa denne og ingen anden Maade ophielpes, da maa vi, selv naar et ufrivilligt Suk fremtr&#x00E6;nger sig, hylde den Regierings Viisdom, der, endogsaa herved, viser sig besi&#x00E6;let af varm Iver for Oplysnings Fremme. Men, imedens vi, som gode Borgere, &#x00E6;re Regieringens vise Hensigter, b&#x00F8;r vi, som Videnskabernes Venner, str&#x00E6;be at formindske, eller, om muligt, erstatte det Tab, vi troe, de ville lide. Med Hensyn herpaa, troer jeg, det var nyttigt, hvis et Selskab forenede sig, med det Hoved<pb ed="Gskv" n="152" type="edition"/>&#x00F8;iemeed, at udgive alle dem tilsendte Skrifter, naar samme fandtes at have noget videnskabeligt V&#x00E6;rd. De bemidlede Forfattere, eller de vel l&#x00F8;nnede Embedsm&#x00E6;nd vilde sikkert ikke forlange, og kunde ikke <pb type="text" facs="1807_63_fax047.jpg" ed="A" n="291"/>erholde noget Honorar, da den Fattige derimod erholdt sit Skrifts hele Udbytte, eller mere, i Forhold til hans Trang og Skriftets <seg type="com" n="com345">Godhed</seg>. At herved meget var vundet, n&#x00E6;gtes neppe; men maaskee vil man erkl&#x00E6;re Forslaget for et Greb i Luften, da det foruds&#x00E6;tter en Fond, som ikke haves.</p>
+     
+    <p rend="firstIndent">Jeg veed ikke, men formoder dog, at de <seg type="com" n="com551">Videnskabsselskaber</seg>, der existere i <placeName key="fak14">Danmark</placeName> og <placeName key="fak41">Norge</placeName>, have nogen <seg type="com" n="com554">Fond</seg>; og, hvis saa er, synes mig, dens Anvendelse paa hiin Maade, og Selskabernes Forening, vilde stemme med det Maal, de maa have sat sig, og v&#x00E6;re til mere Nytte for Videnskabelighed, end deres n&#x00E6;rv&#x00E6;rende Existence, med mindre dens Frugter ere mig ube<pb ed="US" n="198" type="edition"/>ki&#x00E6;ndte. Maaskee turde man endog vente nogen Underst&#x00F8;ttelse fra Regieringen, eller dog dens Opmuntring og Anbefaling, der hos vore Rigm&#x00E6;nd neppe vilde v&#x00E6;re uden Kraft, og var det vel umuligt, at en <seg type="com" n="com552">Nutids eller Fremtids <hi rend="italic"> <persName key="pe690">Brok</persName> </hi> </seg> kunde faae i Sinde at ski&#x00E6;nke en anseelig Kapital til disse, i enhver Henseende <hi rend="romanType"> <seg type="com" n="com349">pios usus</seg>?</hi> </p>
+     
+    <p rend="firstIndent"> <seg type="com" n="com350">Skede</seg> dette, og hiin f&#x00F8;rste Betingelse, de Studerendes h&#x00F8;iere Dannelse, var opfyldt, da synes mig, Videnskabelighed var saa vel forberedet i <placeName key="fak14">Danmark</placeName>, som den ved menneskelig Indretning kan blive.</p>
+     
+    <fw type="shortLine"/>
+     
+    <p rend="firstIndent">At jeg slet ikke har n&#x00E6;vnet vor <seg type="com" n="com555">Recensentv&#x00E6;sen</seg> eller <seg type="com" n="com353">Pr&#x00E6;mieuddelinger</seg>, kunde lede til den Tanke, at <pb type="text" facs="1807_63_fax048.jpg" ed="A" n="292"/>jeg enten ikke ansaae disse Indretninger som nyttige til Videnskabeligheds Fremme, eller ikke troede, de hos os udtrykte deres Begreb. Jeg vil derfor til Slutning sige mine ringe Tanker om disse Gienstande.</p>
+     
+    <p rend="firstIndent">Der kan vel neppe v&#x00E6;re uden een fornuftig Dom over Recensioner, naar de ere, hvad de b&#x00F8;r v&#x00E6;re, en tro Angivelse af Skriftets Forhold til den Videnskabs eller Konsts Hovedbegreber, under hvilken det har stillet sig, og en motiveret Dom over dets <pb ed="Gskv" n="153" type="edition"/>indre og ydre Harmonie med sig selv. Er Recensionen saadan, da maa den n&#x00F8;dvendig v&#x00E6;re bel&#x00E6;rende, som enhver rigtig, speciel Anvendelse af almindelige Ideer; men at dette skulde v&#x00E6;re Tilf&#x00E6;ldet hos os, naar Recensionerne betragtes <seg type="com" n="com355">som et Heelt</seg>, lader sig vel neppe engang paastaae. Vist forekommer det mig, at <seg type="com" n="com556">Anonymitet</seg> er aldeles n&#x00F8;dvendig for Kritiken; thi naar man ved hvert Skridt skal see baade til H&#x00F8;ire og Venstre, og bag sig, kan man umulig stedse h&#x00E6;fte &#x00D8;ie paa den foranliggende Punkt, ja n&#x00F8;des vel endog stundom til ganske at tabe den af Sigte. Saaledes opstaae alle disse <seg type="com" n="com357">Udtoge</seg> og Indholdslister, der, desv&#x00E6;rre! <seg type="com" n="com557">alt for n&#x00F8;ie svare til Navnet Anm&#x00E6;ldelser</seg>, og aldrig ville nytte Videnskaberne. Men, selv da, naar Veien synes mere fri, have vore Recensenter ofte en underlig, og &#x2013; hvis Ordet ei er u&#x00E6;delt &#x2013; slingrende Gang.</p>
+      
+    <p rend="firstIndent"> <pb type="text" facs="1807_63_fax049.jpg" ed="A" n="293"/>Endeel troe det med Rette Pligt, at oppuste hvert Glimt af Genie, der viser sig, men synes at gaae saavidt i Patriotismen, <pb ed="US" n="199" type="edition"/>at de opmuntre selv <seg type="com" n="com361">Skriblere</seg> <seg type="com" n="com362">(???)</seg> til Fremgang paa en Bane, der enten slet ikke var bestemt for dem, eller dog maatte forsvares mod deres plumpe Trasken.</p>
+     
+    <p rend="firstIndent">Dersom <seg type="com" n="com363">(!!)</seg> saaledes En s&#x00F8;nderlemmede et slet Produkt, og, naar han, uagtet al Umage, ei fandt Noget Roes v&#x00E6;rd, dog bestandig udraabte: det er Stoffets, og ikke Konstnerens Br&#x00F8;de! som om hint havde paatr&#x00E6;ngt sig denne; mon det da kunde kaldes, at befordre Videnskabelighed, eller en Litteratur, <placeName key="fak14">Danmark</placeName> v&#x00E6;rdig? Dersom en Anden, af Ki&#x00E6;rlighed til <placeName key="fak24">Nordens</placeName> Oldtid, omtalte med H&#x00E6;der og Skaansel en Compilation om F&#x00E6;dres Skikke, ski&#x00F8;ndt samme tydelig viste, den <seg type="com" n="com559">h&#x00F8;il&#x00E6;rde Forfatter</seg> ei engang ki&#x00E6;ndte <app type="corrNote" select="yes"> <lem wit="Rettelsesblad"> <rs key="myth186" type="myth">Stridsk&#x00F8;gul</rs> </lem> <rdg wit="A">Stridsflaget</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>, som dog &#x2013;  mod sin Villie &#x2013; giorde ham til H&#x00E6;dersmand, og at han gierne &#x2013; beundrende Sprogenes Liighed &#x2013; kunde overs&#x00E6;tte <hi rend="italic"> <seg type="com" n="com365">fehirder</seg> </hi> ved F&#x00E6;hyrde; <app type="corrNote" select="yes"> <lem wit="GV">mon</lem> <rdg wit="A">men</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> det da var Maaden, hvorpaa Musernes yngre S&#x00F8;nner burde opmuntres til at kaste dybere Blik paa gamle Nord, og fremtrylle et glandsfuldt Billede af samme?</p>
+     
+    <p rend="firstIndent">Men, hvad om nu lignende Recensioner endog affattes af <seg type="com" n="com560">M&#x00E6;nd</seg>, vi ellers med Gl&#x00E6;de see paa Dommers&#x00E6;det; er det da <pb ed="Gskv" n="154" type="edition"/>saa underligt, om jeg ikke an<pb type="text" facs="1807_63_fax050.jpg" ed="A" n="294"/>slaaer Nytten, Videnskabelighed h&#x00F8;ster af vore <seg type="com" n="com366">L&#x00E6;rde Efterretninger</seg>, synderlig h&#x00F8;it?</p>
+     
+    <fw type="shortLine"/>
+     
+    <p rend="firstIndent">Pr&#x00E6;mieuddelinger erki&#x00E6;ndes og bruges almindelig som et passende Middel til at befordre Videnskabelighed; men saameget er dog vel vist, at ingen videnskabelig Stemning findes hos de Studerende, naar Pr&#x00E6;mier beh&#x00F8;ves, og at de, som skrive for at erholde Pr&#x00E6;mie, ere ligesaalidt videnskabelig stemte, som de, der skrive for en <seg type="com" n="com367">Doctorhat</seg>. Dette f&#x00F8;lte ogsaa <seg type="com" n="com561">hiin Videnskabernes &#x00E6;dle Ven</seg>, da han beki&#x00E6;ndtgiorde os en Uds&#x00E6;ttelse af Pr&#x00E6;mier som et s&#x00F8;rgeligt Ki&#x00E6;ndetegn paa den voxende Ringeagt for <rs key="myth428.a" type="myth">Pieridernes</rs> hulde Smil, denne herlige L&#x00F8;n, de selv ski&#x00E6;nke deres varme Tilbedere. Hvorledes skulde jeg da kunne lovsynge et Middel, hvis N&#x00F8;dvendighed jeg saa gierne vilde skiule for mig selv, ski&#x00F8;ndt jeg agter og &#x00E6;rer de M&#x00E6;nd, der i deres Stilling giorde, hvad der stod til dem?</p>
+     
+    <p rend="firstIndent">Imidlertid troer jeg ikke, de ere ganske unyttige, ja de torde vel endog, ski&#x00F8;ndt under en h&#x00F8;iere Form, existere da, naar Videnskabelighed selv begeistrede Skribenterne.</p>
+     
+      <p rend="firstIndent"> <pb ed="US" n="200" type="edition"/>Og i denne Idees n&#x00F8;iere Udvikling vil jeg s&#x00F8;ge at finde Forholdet mellem disse aandige Veddekampe, og hine olympiske Lege, dette udvortes glimrende Symbol paa Menneskets Udvikling. Ligesom i disse <pb type="text" facs="1807_63_fax051.jpg" ed="A" n="295"/>var Sted for Yttring af enhver Legemets Kraft, saa burde <seg type="com" n="com576">og</seg> Si&#x00E6;len finde fri Tumleplads her. Men nu opstaaer en Forski&#x00E6;l, i det Legemets Kr&#x00E6;fter ere i deres Virksomhed bundne til Stoffet, der gives udenfra, og derfor ei kunne virke samlede paa et Punkt, da <seg type="com" n="com562">Si&#x00E6;len derimod er sin egen Gienstand, og kan udtale sin hele Kraft, naar den er sig samme bevidst</seg>. Derfor maatte i de olympiske Lege gives flere &#x00D8;velser, medens der i de aandige Veddekampe egentlig kun gives een.</p>
+     
+    <p rend="firstIndent">Prisen maatte da tilki&#x00E6;ndes den, hvis Product vidnede om st&#x00F8;rst Videnskabelighed.</p>
+     
+    <p rend="firstIndent">Dog, den Tid, da en saadan Indretning kunde blive til, som Resultatet af Nationens Stemning, er vel fiern, og blev den til paa anden Maade, var den latterlig.</p>
+     
+      <p rend="firstIndent"> <pb ed="Gskv" n="155" type="edition"/>Saal&#x00E6;nge man endnu har Videnskaber, og ikke Videnskab, maa ogsaa st&#x00F8;rre Liighed med hine gr&#x00E6;ske Lege beholdes, og Pr&#x00E6;mier uds&#x00E6;ttes i enkelte Videnskaber. Det maatte synes, baade analogisk, og med Hensyn paa det h&#x00F8;iere Maal, at <seg type="com" n="com563">den Afhandling, der skulde krones, maatte omfatte hele Videnskaben</seg>; thi enkelte Hiul l&#x00F8;b ikke paa <seg type="com" n="com372">Rendebanen</seg>, men dette Skridt vilde v&#x00E6;re for rask. Der kunde ikkun gives een saadan Afhandling over Videnskaben, thi dennes Tilv&#x00E6;relse som enkelt maatte derved oph&#x00E6;ves, og vi <pb type="text" facs="1807_63_fax052.jpg" ed="A" n="296"/>staae paa Punkten, hvor hiin f&#x00F8;rstomtalte Indretning kunde begynde.</p>
+     
+    <p rend="firstIndent">Vi maa da begynde et Trin lavere, og uds&#x00E6;tte Pr&#x00E6;mie for Afhandlinger over Videnskabernes enkelte Dele, thi f&#x00F8;rst, naar alle Delene ere blevne et organiseret Heelt, kan det tydelig indsees, at dette Hele kun atter er en Deel. Et andet Sp&#x00F8;rgsmaal er, om det burde fasts&#x00E6;ttes, hvilken Videnskabens Deel der skal afhandles? Jeg troer nei, thi hiint forekommer mig at v&#x00E6;re det samme, som om man, ved at forberede en Konstudstilling, vilde bestemme, hvilke Ideer Maleren og Billedhuggeren skulde udf&#x00F8;re, og i Aandsarbeider b&#x00F8;r Individet have al den Frihed, der kan bestaae med &#x00D8;iemedet. Nu er &#x00D8;iemedet ved Pr&#x00E6;mier, at fremme Videnskabelighed, og det maa da agtes ligegyldigt, hvilket &#x00C6;mne der v&#x00E6;lges, naar det kun har Interesse, og behandles v&#x00E6;rdigt. Desuden vilde Concurrencen vorde st&#x00F8;rre, altsaa mere T&#x00E6;nkning v&#x00E6;kkes, og Afhandlingerne blive mere fyldestgi&#x00F8;rende. Det Sidste kan maaskee holdes for uafgiort, men min Pligt er det, <pb ed="US" n="201" type="edition"/>at frems&#x00E6;tte de Pr&#x00E6;misser, med hvis Rigtighed Slutningens maa staae eller falde.</p>
+     
+    <p rend="firstIndent">Det maa, efter min Overbeviisning, v&#x00E6;re umuligt, at et Menneske, med hvis Arbeide Videnskaben kan v&#x00E6;re tient, vil, for at vinde en Pr&#x00E6;mie, ombytte den T&#x00E6;nkning, og de Beski&#x00E6;ftigelser, som just <pb type="text" facs="1807_63_fax053.jpg" ed="A" n="297"/>da interessere ham, med dem, som ere Prisens Betingelser, og om han end vilde, stod det vel neppe saa ganske i hans Magt; thi man vil dog vel ikke paastaae, at ligesom det kan v&#x00E6;re Skomageren det samme, enten han syer St&#x00F8;vler eller Sko, det saaledes ogsaa kan v&#x00E6;re den T&#x00E6;nkende ligemeget, hvor<pb ed="Gskv" n="156" type="edition"/>til han ansp&#x00E6;nder sin Aandskraft. Et bestemt Sp&#x00F8;rgsmaals gode Besvarelse er da afh&#x00E6;ngig af det saare uvisse Tilf&#x00E6;lde, at En, som kan give samme, just da forel&#x00E6;gger sig samme Sp&#x00F8;rgsmaal.</p>
+     
+    <p rend="firstIndent">Men, end mere. Naar Sp&#x00F8;rgsmaalene skulle have Vigtighed og Interesse, ville de ofte ikke kunne besvares fyldestgi&#x00F8;rende i den givne Frist. Man maa da foruds&#x00E6;tte, at Individet allerede forhen har sysselsat sig med samme; men lader der sig bygge paa en saadan Tilf&#x00E6;ldighed?</p>
+     
+    <p rend="firstIndent">Saaledes udsatte Universitetet &#x2013; om jeg husker ret &#x2013; 1804 en Pr&#x00E6;mie for Besvarelsen af det interessante Sp&#x00F8;rgsmaal: <seg type="com" n="com565">Hvad er <seg type="com" n="com380">Epopeens</seg> S&#x00E6;rki&#x00E6;nde, og hvilke af de nyere Digte fortiene dette Navn?</seg> Hvad her foruds&#x00E6;ttes, beh&#x00F8;ver jeg ikke at anm&#x00E6;rke.</p>
+     
+    <p rend="firstIndent">Det blev, saavidt jeg veed, ubesvaret, og &#x2013; var det underligt?</p>
+     
+    <p rend="firstIndent"> <seg type="com" n="com373">Selskabet til de ski&#x00F8;nne Videnskabers Befordring</seg> har ogsaa nylig tildeels vedki&#x00E6;ndt sig Troen paa Friheds Nytte i denne Henseende; thi, ski&#x00F8;ndt det ogsaa fulgte Skikken i at uds&#x00E6;tte Pr&#x00E6;mier for <pb type="text" facs="1807_63_fax054.jpg" ed="A" n="298"/>Producter af bestemt Indhold, tilf&#x00F8;iedes dog, at <seg type="com" n="com566">Selskabet vilde modtage ethvert &#x00E6;sthetisk Product, der havde V&#x00E6;rd, til Indf&#x00F8;relse i sine Skrifter</seg>, og hvem dette ikke er Pr&#x00E6;mie nok, fortiener ingen.</p>
+     
+    <fw type="shortLine"/>
+     
+    <p rend="firstIndent">Jeg vil ikke gi&#x00F8;re nogen Undskyldning, fordi jeg vovede mig til en Materie, hvis rigtige Behandling maaskee alt for synlig oversteeg mine Kr&#x00E6;fter; thi har jeg slet intet sagt, som er v&#x00E6;rdt at l&#x00E6;se, eller <seg n="com577" type="com">begrunde</seg>, da fortiener jeg ingen Skaansel, og er <pb ed="US" n="202" type="edition"/>det Hele ikke en ret, net, slet Plet, da vide alle Fornuftige, hvormegen Viisdom man b&#x00F8;r vente af <seg type="comStart" n="com567"></seg>en <seg type="com" n="com568">umyndig</seg> theologisk Candidat, der pr&#x00F8;ver Penne i en Afkrog, for at glemme sig selv<seg type="comEnd" n="com567"></seg>.</p>
+     
+    <p rend="firstIndent">Hvad jeg derimod ret inderlig vil bede, er, at om man end skulde finde noget Urigtigt i disse Blade, man dog vil troe, som Sandhed er, at det ene har sin Grund i ufors&#x00E6;tlig Uvidenhed!</p>
+     
+      <hi rend="italic">
+<p rend="firstIndentRight"> <persName key="pe4">Nic. Fred. Sev. Grundtvig</persName>.</p>
+</hi>
+      
+      <fw type="longLine"/>
+   </div>
+  </body>
+</text>
+</TEI>

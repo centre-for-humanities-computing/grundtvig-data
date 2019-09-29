@@ -1,0 +1,544 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet.</title>
+        <title rend="shortForm">Om Videnskabelighed og dens Fremme</title>
+        <author>Niels W. Bruun</author>
+        <editor role="editor2">Johnny Kondrup</editor>
+        <editor role="editor1">Vibeke A. Pedersen</editor>    
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>34 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+        
+        <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note target="1807_63_txt.xml" type="txt">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" target="1807_63_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+      </notesStmt> 
+         <!--   
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+         -->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      
+    </encodingDesc>
+       <revisionDesc>
+         <change xml:id="NWB" who="NWB" when="2012-01-20">txr p&#x00E5;begyndt</change>
+         <change who="NWB" when="2012-01-20">videre</change>
+         <change who="JMR" when="2012-03-08">opm&#x00E6;rket person, titel mv.</change>
+         <change who="HY" when="2012-06-15">Fjernet m&#x00E6;slinger en masse. Indf&#x00F8;rt egne og JK's rettelser. Indf&#x00F8;rt unicodes</change>
+         <change who="HY" when="2012-06-18">Endeligt valideret efter nye skemaer.</change>
+         <change who="HY" when="2012-06-21">Tilrettet efter JKs &#x00F8;nsker.</change>
+         <change who="MJ" when="2013-04-19">indholdsoversigt opm&#x00E6;rket.</change>
+         <change xml:id="JT" who="JT" when="2013-09-26">fjernet m&#x00E6;sling(er) i forb. med oplast af 1.3</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+         <change who="NHB" xml:id="NHB" when="2014-11-04">ved ...-tegn erstattet koden 0085 med unicode 2026</change>
+       </revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">Der eksisterer ingen manuskripter til &#x201C;Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D; i Grundtvig-arkivet p&#x00E5; Det Kongelige Bibliotek.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn3">Tryk</head>
+            <table>
+              <row>
+                <cell>1807</cell>
+                <cell>
+<hi rend="italic">Ny Minerva,</hi> marts s. 249-298 (<hi rend="italic">
+<rs type="title" key="title35">Bibliografien</rs>
+</hi> nr. 63).</cell>
+              </row>
+            </table>
+        </div>        
+      </div>
+
+      <div>
+        <head xml:id="docIn4">Bibliografisk beskrivelse</head>
+
+        <div>
+          <head xml:id="docIn5">
+<rs key="title125" type="title">
+<hi rend="italic">(Ny) Minerva</hi>
+</rs>
+</head>
+          <div>
+            <head xml:id="docIn6">Titel</head>
+            <p rend="noIndent">Oprindelig var titlen <hi rend="italic">Minerva, et Maanedsskrivt,</hi> hvilket tidsskriftet hed til og med juni 1799, hvor titlen blev &#x00E6;ndret til <hi rend="italic">Maanedskriftet Minerva</hi>. Fra januar 1806 var titlen <hi rend="italic">Maanedsskriftet Ny Minerva.</hi>
+</p>
+          </div>
+        </div>
+        
+          <div>
+            <head xml:id="docIn7">Redakt&#x00F8;rer</head>
+            
+            <table>
+              <row>
+                <cell>1785-1789</cell>
+                <cell>
+<persName key="pe5">Christen Pram</persName> og <persName key="pe24">Knud Lyne Rahbek</persName>.</cell>
+              </row>
+              <row>
+                <cell>1790-1794</cell>
+                <cell>
+<persName key="pe5">Christen Pram</persName>.</cell>
+              </row>
+              <row>
+                <cell>1794-1798</cell>
+                <cell>
+<persName key="pe24">Knud Lyne Rahbek</persName>.</cell>
+              </row>
+              <row>
+                <cell>1798-1799</cell>
+                <cell>
+<persName key="pe24">Knud Lyne Rahbek</persName> og <persName key="pe261">Peter Collet</persName>.</cell>
+              </row>
+              <row>
+                <cell>1799-1808</cell>
+                <cell>
+<persName key="pe24">Knud Lyne Rahbek</persName>.</cell>
+              </row>
+            </table>
+          </div>
+          
+          <div>
+            <head xml:id="docIn8">Andre faste medarbejdere</head>
+            <table>
+              <row>
+                <cell>
+<persName key="pe258">Frederik Christian af Augustenborg</persName>, medlem af statsr&#x00E5;det, minister for undervisning m.v.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe259">Christian Colbi&#x00F8;rnsen</persName>, assessor, generalprokur&#x00F8;r.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe2">Rasmus Nyerup</persName>, professor.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe36">Niels Treschow</persName>, professor, politiker.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe260">Frederik Sneedorff</persName>, professor.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe97">Peter Andreas Heiberg</persName>, forfatter.</cell>
+              </row>
+              <row>
+                <cell>
+<persName key="pe20">Jens Baggesen</persName>, forfatter.</cell>
+              </row>
+            </table>
+          </div>
+          
+          <div>
+            <head xml:id="docIn9">Trykker og trykkeri</head>
+            <p rend="noIndent">
+<hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>s</hi> trykker var <persName key="pe73">Johan Frederik Schultz</persName>. Han kom fra Odense til K&#x00F8;benhavn i 1777 og k&#x00F8;bte i 1783 et mindre trykkeri. Af titelbladet til <rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> fremg&#x00E5;r, at han var &#x201C;Kongelig og Universitets-Bogtrykker&#x201D; i K&#x00F8;benhavn. Disse privilegier havde han opn&#x00E5;et i henholdsvis 1789 og 1786. Trykkeriet fremg&#x00E5;r dog ikke af alle numres titelblade.</p>
+            
+            <p rend="firstIndent">
+<persName key="pe73">Schultz</persName> var ven med en r&#x00E6;kke af tidens betydeligste forfattere, f.eks. <persName key="pe24">Knud Lyne Rahbek</persName>, <persName key="pe5">Christen Pram</persName>, <persName key="pe20">Jens Baggesen</persName> og <persName key="pe2">Rasmus Nyerup</persName>. Ud over universitetets skrifter, heriblandt den meget indbringende almanak, trykte han en r&#x00E6;kke af tidens sk&#x00F8;nlitter&#x00E6;re v&#x00E6;rker og tidsskrifter, f.eks. <rs type="title" key="title160">
+<hi rend="italic">Den danske Tilskuer.</hi>
+</rs>
+</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn10">Indhold</head>
+            
+            <p rend="noIndent">
+<rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> var et centralt organ for tidens liberale politiske og kulturelle synspunkter. Tidsskriftet bragte is&#x00E6;r omtaler af og debat om litteratur og nationale s&#x00E5;vel som internationale samfundsforhold, ligesom det ogs&#x00E5; bragte nyheder om udenlandske forhold i &#x00F8;vrigt, bl.a. den franske revolution.</p>   
+           
+            <p rend="firstIndent">De litter&#x00E6;re bidrag kunne best&#x00E5; af hele, afsluttede v&#x00E6;rker, f.eks. digte, eller udkast til st&#x00F8;rre v&#x00E6;rker, f.eks. scener af et drama.</p>
+           
+            <p rend="firstIndent">De sidste sider i hvert nummer rummede indl&#x00E6;g under overskriften &#x201C;Litteratur&#x201D; og bragte som regel oversigter over nyudkommen sk&#x00F8;n- og faglitteratur.</p>
+           
+            <p rend="firstIndent">Et banebrydende tr&#x00E6;k ved tidsskriftet var den n&#x00E6;sten helt faste artikel under overskriften &#x201C;Historien&#x201D;. Her bragte tidsskriftet udenrigspolitiske reportager. &#x201C;Historien&#x201D; blev s&#x00E6;rligt efter udbruddet af den franske revolution i 1789, under de efterf&#x00F8;lgende revolutionskrige og under Napoleonskrigene af stor betydning for bladet. Beretningerne st&#x00F8;ttede sig p&#x00E5; l&#x00E6;sningen af udenlandske tidsskrifter samt p&#x00E5; brevveksling med udl&#x00E6;ndinge og danskere i udlandet. Tidsskriftet blev sin tids vigtigste kilde til udenrigspolitiske begivenheder.</p>
+           
+            <p rend="firstIndent">Bagsiden kunne rumme alt fra friske oplysninger om krigssituationen i Europa (f.eks. september 1806) til oversigter over bogtrykker <persName key="pe73">Schultz</persName>&#x2019; &#x00F8;vrige udgivelser.</p>
+          </div>
+          
+        </div>
+
+        <div>
+          <head xml:id="docIn11">Udgivelseshistorie</head>
+          <div>
+            <head xml:id="docIn12">Udgivelsesperiode og oplag</head>
+            <p rend="noIndent">Tidsskriftet, der udkom i &#x00E5;rene 1785-1808, blev grundlagt af <persName key="pe5">Christen Henriksen Pram</persName> og <persName key="pe24">Knud Lyne Rahbek</persName>. Det udkom som m&#x00E5;nedsskrift i perioden fra juli 1785 til december 1807, men fortsatte som kvartalsskrift fra 1808 og havde alts&#x00E5; hermed en nedgang fra 12 til fire numre om &#x00E5;ret. Nedgangen skyldtes &#x00F8;konomiske vanskeligheder, der dog fortsatte, og tidsskriftet m&#x00E5;tte derfor g&#x00E5; ind i 1808.</p>
+           
+            <p rend="firstIndent">
+<rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>
+</rs> blev delvist genoptaget under titlen <rs key="title161" type="title">
+<hi rend="italic">Dansk Minerva</hi>
+</rs> 1815-19 med <persName key="pe24">Knud Lyne Rahbek</persName> som redakt&#x00F8;r.</p>
+           
+            <p rend="firstIndent">Oplagene omkring &#x00E5;rhundredskiftet var p&#x00E6;ne, f.eks. var postoplaget 1798 p&#x00E5; 224 stk. pr. nummer. Hertil kommer formentlig et mindre l&#x00F8;ssalgsoplag af ukendt st&#x00F8;rrelse. I &#x00E5;r 1800 var hele oplaget p&#x00E5; ca. 1000 stk.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn13">Hyppighed</head>
+            <p rend="noIndent">Selv om bladet efter titlen var et m&#x00E5;nedsskrift, kunne det samles i kvartalsudgivelser (f.eks. &#x201C;Januarii, Februarii og Martii, 1807.&#x201D;) med en f&#x00E6;lles, m&#x00E5;nedsopdelt indholdsfortegnelse. Ogs&#x00E5; arknummereringen og pagineringen var fortl&#x00F8;bende inden for et kvartal.</p>
+           
+            <p rend="firstIndent">
+<rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>
+</rs> var ofte forsinket, og den p&#x00E5;trykte udgivelsesm&#x00E5;ned svarer derfor kun sj&#x00E6;ldent til det faktiske udgivelsestidspunkt. Det sidste indl&#x00E6;g i martsnummeret 1807, <persName key="pe24">Knud Lyne Rahbeks</persName> &#x201C;Historien&#x201D;, er s&#x00E5;ledes dateret &#x201C;30te April. &#x201D; Det betyder, at f&#x00F8;rste kvartal af tidsskriftet tidligst kan v&#x00E6;re udkommet et stykke inde i andet kvartal af 1807.</p>
+           
+            <p rend="firstIndent">B&#x00E5;de f&#x00F8;r og i den periode, hvor Grundtvig bidrager, samles tidsskriftets numre undertiden til kvartalsudgivelser.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn14">Opbygning</head>
+            <p rend="noIndent">Hver kvartalsudgave er forsynet med en fortegnelse over sit indhold.</p>
+            
+            <p rend="firstIndent">
+<rs key="title125" type="title">
+<hi rend="italic">Ny Minerva</hi>
+</rs> 1807 indeholder rettelseslister. I samme &#x00E5;rgang har antagelig ogs&#x00E5; v&#x00E6;ret indlagt rettelsesbladet til artiklen &#x201C;Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet.&#x201D;</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn15">Omfang</head>
+            <p rend="noIndent">Oprindelig bestod tidsskriftet af 85-110 sider pr. nummer, dvs. pr. m&#x00E5;ned. Maksimum n&#x00E5;s omkring 1791 med 150 sider pr. nummer. Fra 1803 er der i gennemsnit 110 sider pr. nummer. I 1808 blev sidetallet nedsat til 96 sider pr. nummer.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn16">Pris</head>
+            <p rend="noIndent">Abonnementsprisen var i 1808 1 rigsdaler pr. nummer. L&#x00F8;ssalgsprisen kendes ikke.</p>
+          </div>
+          
+        </div>
+
+        <div>
+          <head xml:id="docIn17">Format, typografi og papirkvalitet</head>
+          <div>
+            <head xml:id="docIn18">Format og paginering</head>
+            <p rend="noIndent">Tidsskriftet er i lille oktav med arknummerering. I &#x00E5;rgang 1807 har tidsskriftet fortl&#x00F8;bende paginering for hvert kvartal. </p>
+            
+            <p rend="firstIndent">I et indbundet og besk&#x00E5;ret eksemplar m&#x00E5;ler siderne ca. 165
+              &#x00D7; 100 mm. I et ubesk&#x00E5;ret eksemplar m&#x00E5;ler den st&#x00F8;rste side ca. 175 &#x00D7; 115 mm.</p>
+
+            <p rend="firstIndent">Der er arksignatur med angivelse af titel, m&#x00E5;ned og
+            &#x00E5;r. Primasignaturen p&#x00E5; f&#x00F8;rste ark i januar kvartal 1807 er &#x201C;Ny Min. Jan.
+            1807. A&#x201D;, sekundasignaturen &#x201C;A2&#x201D;.</p>
+           
+            <p rend="firstIndent">Der er kustoder.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn19">Papir</head>
+            <p rend="noIndent">Groft, tarveligt h&#x00E5;ndgjort papir med tydelige k&#x00E6;delinjer. Oprindelig har papiret v&#x00E6;ret svagt gr&#x00E5;ligt; nu er det gulligt. De fleste eksemplarer er brunplettede, is&#x00E6;r ved randen. Der ses ingen vandm&#x00E6;rker.</p>
+            
+            <p rend="firstIndent">Deltitelbladene er trykt p&#x00E5; papir af samme kvalitet som resten af tidsskriftet.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn20">Typografi</head>
+            <p rend="noIndent">Tidsskriftets klumme er trykt i &#x00E9;n spalte. Klummen m&#x00E5;ler fraregnet
+            klummetitel ca. 132 &#x00D7; 75 mm.</p>
+            
+            <p rend="firstIndent">Hver ny artikel begynder efter en dobbelt skillestreg i hele
+            klummens bredde. I de enkelte bidrag angives nye afsnit med en kort, centreret
+            skillestreg. Hvis en artikel slutter midt p&#x00E5; en side, kan der v&#x00E6;re en
+            prydstreg. Derudover opereres med forskellige skriftgrader; fodnoter og
+            stillingsbetegnelser for forfatterne er sat med mindre grad. Fodnoter er indvist i
+            teksten med en asterisk og en halv, h&#x00F8;jrevendt parentes, *). Fodnoterne adskilles
+            fra br&#x00F8;dteksten ved to mellemslag (blanke linjer).</p>
+            
+            <p rend="firstIndent">Skriftsnittet er fraktur. Romanske og latinske ord og vendinger, f.eks. &#x201C;ars longa, vita brevis&#x201D;, s&#x00E6;ttes i antikva. Schwabacher kan, ligesom spatiering, bruges til fremh&#x00E6;velse. Strofiske tekster kan v&#x00E6;re sat med mindre skriftgrad.</p>
+            
+            <p rend="firstIndent">Afsnittene med &#x201C;Litteratur&#x201D; og
+            &#x201C;Historien&#x201D; &#x2013; som de redaktionelle bidrag kaldtes &#x2013; er sat
+            med mindre skydning end de &#x00F8;vrige artikler og litter&#x00E6;re bidrag, men med samme
+            skriftgrad.</p>
+            
+            <p rend="firstIndent">Kvartalsudgavens titelblad fylder en hel side og best&#x00E5;r af bladhoved, prydstreg, m&#x00E5;neds- og &#x00E5;rsangivelse samt udgiverens navn. Herefter f&#x00F8;lger en prydstreg, under hvilken der oplyses trykkested samt forl&#x00E6;gger og bogtrykker. M&#x00E5;nedsudgivelsens titelblad fylder ca. 1/5 af siden og best&#x00E5;r kun af tidsskriftets navn samt m&#x00E5;ned og &#x00E5;r. Det afsluttes med en prydstreg. Dern&#x00E6;st f&#x00F8;lger den f&#x00F8;rste artikel.</p>             
+         </div>
+        </div>
+        
+        <div>
+          <head xml:id="docIn21">&#x201C;Om Videnskabeligehed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D;, <hi rend="italic">Ny Minerva,</hi> marts 1807</head>
+          <div>
+            <head xml:id="docIn22">Lokalisering</head>
+            <p rend="noIndent">Grundtvigs bidrag, &#x201C;Om
+            Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D;, st&#x00E5;r p&#x00E5; s.
+            249-298 i <rs key="title125" type="title">
+              <hi rend="italic">Ny Minerva,</hi>
+</rs> marts 1807.</p>
+            
+            <p rend="firstIndent">Bidraget er ikke dateret.</p>
+            
+            <p rend="firstIndent">If&#x00F8;lge indholdsfortegnelsen indeholder martsnummeret 1807, der tidligst kan v&#x00E6;re udkommet efter den 30. april 1807, f&#x00F8;lgende artikler:</p>
+            
+            
+              <list type="simple">
+<item>
+                Om Undervisningen i Landsbyskoler,  af Hr. Kammerherre <persName key="pe975">Hennings</persName>
+</item>
+              <item>
+                Om Videnskabelighed og dens Fremme, af Hr. Candidat Grundtvig</item>
+              <item>
+                Anden Acts fierde Scene af Signe, utrykt S&#x00F8;rgespil af Hr. Cand. <persName key="pe110">Dampe</persName>
+</item>
+              <item>
+                Bilag til historisk Artikel:                
+                <list type="subSimple">
+              <item>
+                Den ny Statsret</item>
+              <item>
+                Item</item>
+              <item>
+                Fransk nyere Obscurantismus</item>
+                </list>                
+              </item>
+              <item>
+                Litteraturen</item>
+              <item>
+                Historien</item>
+            </list>
+          </div>
+          
+          <div>
+            <head xml:id="docIn23">Afvigelser</head>
+            <p rend="noIndent">Indholdsfortegnelsens titelangivelse kan v&#x00E6;re bearbejdet og derfor afvige fra den originale titel.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn24">Intern varians</head>
+            <p rend="noIndent">F&#x00F8;lgende tre eksemplarer af &#x201C;Om Videnskabelighed og dens
+            Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D; er blevet kollationeret:</p>
+            
+            <list type="upperAlpha">
+              <item>Det Kongelige Bibliotek (katalognummer: K, 335 8<hi rend="raised">o</hi>, stregkode: 13007372575)</item>
+              <item>Grundtvig-Bibliotekets eksemplar 1 (katalognummer: 3.2; ejersignaturer: Svend Grundtvig og Karl Sch&#x00F8;nberg)</item>
+              <item>Grundtvig-Bibliotekets eksemplar 2 (katalognummer: 3.2; ejersignatur: F.O. Linde(?))</item>
+            </list>
+            
+            <p rend="noIndent">Ved intern kollation af de tre eksemplarer af f&#x00F8;rstetrykket er der ikke fundet afg&#x00F8;rende varians. I sj&#x00E6;ldne tilf&#x00E6;lde forekommer det, at enkelte bogstaver i satsen har forskubbet sig under trykningen, s&#x00E5;ledes at aftrykket kan v&#x00E6;re blevet forstyrret i et eksemplar, men er intakt i de &#x00F8;vrige.</p>
+            
+            <p rend="firstIndent">Eksemplar A er valgt som tekstgrundlag, da det indg&#x00E5;r i et
+            samlebind med kvartalsudgivelserne for januar og april 1807, hvilket g&#x00F8;r det muligt at
+            kontrollere arksignaturer og at bestemme martsnummerets udgivelsesdato (terminus post
+            quem eller ante quem).</p>
+            
+            <p rend="firstIndent">Af de kollationerede eksemplarer indeholder B et rettelsesblad.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn25">De kollationerede eksemplarer</head>
+            
+            <div>
+              <head xml:id="docIn26">Beskrivelse af Det Kongelige Biblioteks eksemplar, stregkode: 13007372575 (eksemplar A)</head>
+              
+              <p rend="noIndent">Det Kongelige Biblioteks eksemplar findes i et samlebind, der indeholder de seks numre af <rs type="title" key="title125">
+<hi rend="italic">Ny Minerva,</hi>
+</rs> som udkom i f&#x00F8;rste halv&#x00E5;r af 1807. Der er trykt et separat deltitelblad for hvert af de to kvartaler januar og april. P&#x00E5; deltitelbladet for januar kvartal er der under skillestregen med trykkeoplysninger allernederst stemplet &#x201C;B. U. H.&#x201D; (Bibliotheca Universitatis Hafniensis). P&#x00E5; deltitelbladets versoside er stemplet &#x201C;Universitetsbiblioteket / 1. Afd. / K&#x00F8;benhavn&#x201D;. P&#x00E5; forpermens rectoside er nederst med guldbogstaver trykt &#x201C;B. U. H.&#x201D; Bogens nuv&#x00E6;rende ejerforhold fremg&#x00E5;r af Det Kongelige Biblioteks stempel med logo og ordene &#x201C;BIBLIOTHECA REGIA HAFNIENSIS&#x201D; p&#x00E5; versosiden af forpermen samt af en m&#x00E6;rkat sammesteds med stregkode og ordene &#x201C;DET KONGELIGE BIBLIOTEK&#x201D;.</p>
+              
+              <p rend="firstIndent">M&#x00E5;l af side 249: ca. 165 &#x00D7; 100 mm.</p>
+              
+              <p rend="firstIndent">De to deltitelblade har samme ordlyd, bortset fra angivelsen af
+              kvartalsm&#x00E5;nederne; for f&#x00F8;rste kvartal lyder den: &#x201C;Maanedsskriftet / Ny Minerva.
+              / [prydstreg] / Januarii, Februarii og Martii, / 1807. / Udgivet / ved / <persName key="pe24">Knud Lyne Rahbek</persName>, / Professor. / [skillestreg] / Ki&#x00F8;benhavn, /
+              Trykt og forlagt af Directeur <persName key="pe73">Johan Frederik Schultz</persName>,
+              / Kongelig og Universitets-Bogtrykker.&#x201D; Deltitelbladenes versosider er blanke.
+              Begge deltitelblade efterf&#x00F8;lges af et blad med en fortegnelse over indholdet i det
+              p&#x00E5;g&#x00E6;ldende kvartal.</p>
+              
+              <p rend="firstIndent">Martsnummeret 1807 begynder p&#x00E5; ark P og er udstyret med et
+              bladhoved. Det er sat med vekslende skriftgrader og lyder: <rs key="title125" type="title">&#x201C;Ny Minerva</rs>, / for / Martii Maaned 1807. /
+              [prydstreg]&#x201D;. Grundtvigs bidrag &#x201C;Om Videnskabelighed og dens Fremme,
+              is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D; begynder p&#x00E5; ark Q blad 5 recto og slutter p&#x00E5;
+              ark T blad 5 verso, svarende til s. 249-298.</p>
+              
+              <p rend="firstIndent">Eksemplaret er indbundet i et stift, m&#x00F8;rkebrunt hell&#x00E6;derbind.
+              Ryggen er inddelt i seks felter. Andet, tredje og fjerde felt er udstyret med
+              guldornamenterede etiketter, der angiver henholdsvis titel, &#x00E5;rgang og bindnummer. De
+              &#x00F8;vrige felter er ornamenterede. For- og bagperm samt ryg har tydelige brugsspor.</p>
+              
+              <p rend="firstIndent">P&#x00E5; s. 293 lin. 7 f.n. er bogstavet &#x2018;e&#x2019; i &#x2018;men&#x2019; udstreget med bl&#x00E6;k og i marginen erstattet med &#x2018;o&#x2019;.</p>                      
+                                   
+            </div>
+            
+            
+            <div>
+              <head xml:id="docIn27">Beskrivelse af eksemplar fra Grundtvig-Biblioteket, katalognummer 3.2 (eksemplar B)</head>
+              
+              <p rend="noIndent">Af ejernavnene &#x00F8;verst p&#x00E5; det l&#x00F8;se forsatsblads rectoside fremg&#x00E5;r, at dette eksemplar har tilh&#x00F8;rt Grundtvigs s&#x00F8;n, <persName key="pe135">Svend Grundtvig</persName>, og forlagsboghandler <persName key="pe313">Karl Sch&#x00F8;nberg</persName>. Det er indbundet og besk&#x00E5;ret og stammer som st&#x00F8;rstedelen af bibliotekets f&#x00F8;rstetryk af Grundtvigs v&#x00E6;rker fra <persName key="pe313">Sch&#x00F8;nbergs</persName> bogsamling.</p>
+              
+              <p rend="firstIndent">M&#x00E5;l af f&#x00F8;rste side (s. 249): ca. 98 &#x00D7; 167 mm.</p>
+              
+              <p rend="firstIndent">Eksemplaret indeholder kun selve teksten til &#x201C;Om
+              Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet&#x201D;. Til
+              erstatning for titelbladet er &#x00F8;verst p&#x00E5; den del af side 249, der indeholder slutningen
+              p&#x00E5; den forudg&#x00E5;ende artikel, kl&#x00E6;bet en seddel, som b&#x00E6;rer p&#x00E5;skriften &#x201C;Ny Minerva.
+              / Marts 1807.&#x201D; At d&#x00F8;mme efter h&#x00E5;ndskriften og bl&#x00E6;kkets lysebrune farve er det
+                <persName key="pe135">Svend Grundtvig</persName>, der har skrevet sedlen.</p>               
+              <p rend="firstIndent">Nederst p&#x00E5; s. 298 er opkl&#x00E6;bet et rettelsesblad, der formentlig har v&#x00E6;ret l&#x00F8;st indlagt i <rs key="title125" type="title">Ny Minerva</rs> 1807. Det er forg&#x00E6;ves s&#x00F8;gt verificeret i andre eksemplarer af <rs type="title" key="title125">
+<hi rend="italic">Ny Minerva</hi>
+</rs> 1807. Rettelsesbladet har denne tekst: 
+              
+              &#x201C;I Afhandlingen om Videnskabelighed i Martiih&#x00E6;ftet ere f&#x00F8;lgende Trykfeil indl&#x00F8;bne:
+              
+              S. 253. L. 15. Alene, l&#x00E6;s: atter.
+              
+              &#x2013;  262.  &#x2013;    8. B&#x00F8;ger, l. Ryger.
+              
+              &#x2013;  272.  &#x2013;   19. Barnet er ikke, l. Barnet er. 
+              
+              &#x2013;  293.  &#x2013;    17. Strids[s]laget, l. Stridsk&#x00F8;gul.&#x201D;</p> 
+              
+              
+              <p rend="firstIndent">P&#x00E5; versosiden af det l&#x00F8;se forsatsblad er &#x00F8;verst skrevet med
+              blyant &#x201C;Gr / 4.&#x201D;; nederst ses Kirkeligt Samfunds exlibris med teksten
+              &#x201C;KS 1898&#x201D;.</p>
+              
+              <p rend="firstIndent">Eksemplaret er indbundet i sort halvshirting med overtr&#x00E6;kspapir
+              i sort og bl&#x00E5;t. Hj&#x00F8;rnerne er ogs&#x00E5; betrukket med shirting. P&#x00E5; forpermen er der i
+              &#x00F8;verste venstre hj&#x00F8;rne en m&#x00F8;rklilla etiket, indrammet i guld, hvori forfatter og
+              titel, &#x201C;Grundtvig. / Om Videnskabelighed / og dens Fremme.&#x201D;, ligeledes
+              er trykt i guld. Nederst p&#x00E5; side 249 (f&#x00F8;rste side af Grundvigs bidrag) er stemplet
+              &#x201C;B. G. H.&#x201D; (Bogsamlingen Grundtvigs Hus).</p>
+              <p rend="firstIndent">Under indtryk af rettelsesbladet (anf&#x00F8;rt ovenfor) er &#x2018;alene&#x2019; p&#x00E5;
+              s. 253 lin. 15 overstreget. P&#x00E5; s. 262 lin. 8 er &#x2018;B&#x00F8;ger&#x2019; udstreget og i marginen
+              erstattet med &#x2018;Ryger&#x2019;. P&#x00E5; s. 272 lin. 19 er &#x2018;ikke&#x2019; blevet overstreget, og p&#x00E5; s. 293
+              lin. 17 er de f&#x00F8;rste fem bogstaver i ordet &#x2018;Stridsslaget&#x2019; understreget. Resten af
+              ordet er udstreget og i marginen erstattet med &#x2018;sk&#x00F8;gul&#x2019;; p&#x00E5; grund af bogens t&#x00E6;tte
+              besk&#x00E6;ring er tilf&#x00F8;jelsen dog ikke fuldt l&#x00E6;selig.</p>           
+                           
+              
+            </div>
+            
+            <div>
+              <head xml:id="docIn28">Beskrivelse af eksemplar fra Grundtvig-Biblioteket, katalognummer 3.2 (eksemplar C)</head>
+              
+              <p rend="noIndent">
+<rs key="title125" type="title">
+<hi rend="italic">Ny Minervas</hi>
+</rs> deltitelblad for januar kvartal 1807 udg&#x00F8;r eksemplarets f&#x00F8;rste blad. P&#x00E5; dette er skrevet ejernavnet F.O. Linde(?), men eksemplarets proveniens er ellers ukendt.</p>
+              
+              <p rend="firstIndent">Eksemplaret er st&#x00E6;rkt besk&#x00E5;ret. Det indeholder udover deltitelbladet ogs&#x00E5; tidsskriftets martsnummer, heri teksten til &#x201C;Om Videnskabelighed og dens Fremme, is&#x00E6;r med Hensyn paa F&#x00E6;drelandet.&#x201D;</p>
+              
+              <p rend="firstIndent">M&#x00E5;l af f&#x00F8;rste side (s. 249): ca. 91 &#x00D7; 158 mm.</p>
+              
+                       
+              <p rend="firstIndent">Eksemplaret er indbundet i m&#x00F8;rkebl&#x00E5; halvshirting med
+              overtr&#x00E6;kspapir i sort bakkemarmor. Mens bagpermens shirting i bredden m&#x00E5;ler ca. 18 mm,
+              ligger forpermens shirting i en bredde af ca. 48 mm; herp&#x00E5; er der &#x00F8;verst med
+              guldbogstaver i fraktur skrevet &#x201C;<persName key="pe24">Knud Lyne
+                Rahbek</persName> / Ny Minerva&#x201D;. P&#x00E5; forpermens inderside er med blyant
+              skrevet signaturen &#x201C;3.2 / ex. 2 / dbl.&#x201D; Lidt over midten l&#x00E6;ses
+              blyantp&#x00E5;skriften: &#x201C;Om videnskabelighed &#x2026; / s. 249&#x201D;. P&#x00E5; bagpermens
+              inderside findes nederst til venstre en brunlig oval m&#x00E6;rkat med teksten: &#x201C;A.
+              Olsen / Bogbinder / Kerteminde&#x201D;, til h&#x00F8;jre blyantnotitsen: &#x201C;Bibliografi
+              nr. 63&#x201D;.</p>
+                
+            </div>      
+            </div>
+ 
+        </div>       
+            <div>
+              <head xml:id="docIn29">Tekstkritik</head>
+              <list type="textualCriticismPluralis"></list>
+            </div>
+ 
+      <div type="litList">
+        <head xml:id="docIn30">Anvendt litteratur</head>
+        <list type="litList">
+          <item>Johansen, Steen (1948-54) <rs type="title" key="title35">
+<hi rend="italic">Bibliografien,</hi>
+</rs> bind 1-4. K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">Dansk Biografisk Leksikon,</hi> 3. udgave 1979-1984. K&#x00F8;benhavn</item>
+          <item>Erslew, Thomas Hansen (1962-1965 [1847]) <hi rend="italic">
+<rs type="title" key="title116">Almindeligt Forfatter-Lexicon for Kongeriget Danmark med tilh&#x00F8;rende Bilande, fra 1814 til 1840</rs>
+</hi>. K&#x00F8;benhavn. Fotografisk optryk, Villadsen &amp; Christensen. K&#x00F8;benhavn; 1. udgave 1847</item>
+          <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819.</rs>
+</hi> K&#x00F8;benhavn</item>
+          <item>R&#x00F8;nning, Frederik (1908) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et Bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;hundrede</rs>,</hi> bind 2:1. K&#x00F8;benhavn</item>
+          <item>S&#x00F8;llinge, Jette D. &amp; Niels Thomsen (u.&#x00E5;. [1989]) <hi rend="italic">
+<rs type="title" key="title1">De danske aviser 1634-1989</rs>, bind 1: 1634-1848</hi>.  K&#x00F8;benhavn</item>
+          <item>Toldberg, Helge (1946) <rs key="title24" type="title"></rs>
+<hi rend="italic">Grundtvig som filolog</hi>. K&#x00F8;benhavn</item>
+        </list>
+      </div>
+ </body>
+</text>
+</TEI>

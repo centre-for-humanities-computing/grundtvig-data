@@ -1,0 +1,1489 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/varXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/varRNC.rnc"?><!--<?xml-model href="varRNC.rnc" type="application/relax-ng-compact-syntax"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>            
+            <titleStmt>
+                <title rend="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+                <title rend="shortForm">Kvædlinger</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="philologist">Holger Berg</editor>
+                <editor role="student1">Jesper Lorenzen</editor>
+                <editor role="student2">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+                <editor role="student3">Frederik Drei&#x00F8;e Seidelin</editor>
+            </titleStmt>            
+            <editionStmt>
+                <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>62 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                <authority></authority>
+                
+                <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1808_76_txt.xml">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="var" target="1808_76_v1.xml">Variant</note>
+            </notesStmt>           
+            <sourceDesc>               
+                <p />
+            </sourceDesc>           
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>                    
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="NHB" when="2011-08-03">Grundkollationeret af NHB fra 2011-08-03 til 2011 08 10</change>
+            <change who="JEL" when="2011-08-12">2. grundkollation</change>
+            <change who="NHB" when="2011-08-24">rettelser og opm&#x00E6;rkninger</change>
+            <change who="JMR" when="2011-09-01"> 3. grundkollation</change>            
+            <change who="NHB" when="2011-09-05"> opm&#x00E6;rkning, punktkommentarer</change>
+            <change who="NHB" when="2011-09-06"> opm&#x00E6;rkning af punktkommentarer</change>
+            <change who="NHB" when="2011-09-07">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-08">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-13">fjernet m&#x00E6;slinger</change>
+            <change who="NHB" when="2011-09-26">kodet titelbladet</change>
+            <change who="NHB" when="2011-09-27">rettet typografi mv.</change>
+            <change who="NHB" when="2011-10-03">FDS kollation indtastet</change>
+            <change who="NHB" when="2011-10-17">VAP forslag indtastet</change>
+            <change who="NHB" when="2011-10-20">to tekstrettelser indtastet</change>
+            <change who="NHB" when="2011-11-03">tekstkritiske noter er tilpasset den nye grundtekst</change>
+            <change who="NHB" when="2010-11-10">TEI header &#x00E6;ndret</change>
+            <change who="NHB" when="2011-11-25">tilpasset tr&#x00E6;strukturen</change>
+            <change who="KSR" when="2011-11-28">rettelser i tei-header</change> 
+            <change who="NHB" when="2011-11-29">tilpasning af pb-elementer</change>
+            <change who="NHB" when="2011-12-01">rettelser i TEI header</change>
+            <change who="NHB" when="2011-12-12">rettelser efter nyt txtRNC-skema</change>
+            <change who="NHB" when="2011-01-11">rettet i witness-listen</change>
+            <change who="NHB" when="2011-01-23">tilpasset TEIheader</change>
+            <change who="NHB" when="2011-01-24">omd&#x00F8;bt fra _txt til til _vartxt-fil</change>
+            <change who="NHB" when="2011-02-20">rettet TEIheader</change>
+            <change who="NHB" when="2012-03-28">p&#x00E5;begyndt kodning</change>
+            <change who="NHB" when="2012-03-30">TEIheader tilpasset, u&#x00F8;nsket kodning fjernet. Kodning p&#x00E5;begyndt fra s. 4</change>
+            <change who="NHB" when="2012-04-02">grundkodning af vartxt afsluttet</change>
+            <change who="NHB" when="2012-04-02">oprettet v1 ud fra v0</change>
+            <change who="NHB" when="2012-04-03">v1 kodet med type og ankre</change>
+            <change who="NHB" when="2012-04-11">kodet pb</change>
+            <change who="NHB" when="2012-05-14">gennemgang af kodninger</change>
+            <change who="NHB" when="2012-05-21">gennemgang af kodninger</change>
+            <change who="NHB" when="2012-05-22">tilf&#x00F8;jet var323</change>
+            <change who="NHB" when="2012-05-25">rettet tastefejl/copy-paste-fejl fra v0 og indf&#x00F8;jet JKs rettelser</change>
+            <change who="NHB" when="2012-05-25">rettet fra type=int til ort ved stavning aff&#x00F8;dt af ny interpunktion. Id = 331 ff.</change>
+            <change who="NHB" when="2013-04-02">valideret</change>
+            <change who="NHB" when="2013-10-02">valideret: type=text p&#x00E5; pb-elementer</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-17">Omorganiseret teiHeader, 2</change>
+        <change who="NHB" when="2014-03-20">valideret</change>
+            
+            <change who="NHB" when="2013-03-28">rettet shortForm</change>
+            <change who="NHB" when="2014-04-09">valideret</change>
+            <change who="NHB" when="2014-10-27">valideret</change>
+            <change who="NHB" when="2014-11-27">fjernet linjeskift ved fodnote</change>
+</revisionDesc>
+    </teiHeader>
+        <text type="var">
+                <body>
+            
+                <div>
+                    <pb type="text" n="1" rend="supp" ed="A" ><!--type="text"--></pb>
+<head rend="4">Maskeradeballet i <app id="var1" type="ort">
+<rdg>Danmark</rdg>
+</app>
+</head>
+                    <head rend="1">
+<app id="var323" type="ort">
+<rdg>1808.</rdg>
+</app>
+</head>
+                    <head rend="2">
+<app id="var2" type="sub ort">
+<rdg>(<hi rend="italic">Et Syn</hi>).</rdg>
+</app>
+</head>
+                
+                    <anchor id="struct01a"></anchor>
+<anchor id="struct01b"></anchor>
+                    <lg n="1">
+                        <l>Tid er at <app id="var3" type="int">
+<rdg>tale</rdg>
+</app>
+</l>
+                        <l>&#x2013; &#x2013; &#x2013;</l>
+                        <l>&#x2013; &#x2013; &#x2013;</l>
+                        <l>Jeg <app id="var4" type="int ort">
+<rdg>saae,</rdg>
+</app> og <app id="var5" type="ort">
+<rdg>t&#x00E6;nkde</rdg>
+</app>,</l>
+                        <l>Jeg <app id="var6" type="int ort">
+<rdg>saae,</rdg>
+</app> og <app id="var7" type="sub">
+<rdg>tav</rdg>
+</app>.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Jeg <app id="var8" type="ort">
+<rdg>lytted</rdg>
+</app> til Raad,</l>
+                        <l>Til Taleruner,</l>
+                        <l>Da jeg <app id="var10" type="ort">
+<rdg>h&#x00F8;rde</rdg>
+</app> Domme</l>
+                        <l>&#x2013; &#x2013; &#x2013;</l>
+                        <l>I den <app id="var11" type="ort">
+<rdg>h&#x00F8;ie</rdg>
+</app> Sal.</l>
+                    </lg>
+                    <lg n="3">
+                        <l>D&#x00F8;er <app id="var12" type="int">
+<rdg>F&#x00E6;</rdg>
+</app>
+</l>
+                        <l>
+<app id="var13" type="ort">
+<rdg>D&#x00F8;e</rdg>
+</app> Fr&#x00E6;nder,</l>
+                        <l>Selv hver paa det <app id="var14" type="int ort">
+<rdg>Sidste,</rdg>
+</app>
+</l>
+                        <l>
+<app id="var15" type="ort">
+<rdg>Eet</rdg>
+</app> dog <app id="var16" type="ort">
+<rdg>veed</rdg>
+</app> <app id="var17" type="int">
+<rdg>jeg.</rdg>
+</app>
+</l>
+                        <l>Som ret aldrig d&#x00F8;er:</l>
+                        <l>Dom <app id="var18" type="sub">
+<rdg>over</rdg>
+</app> hver en D&#x00F8;d.</l>
+                    </lg>
+                    <lg n="4">
+                        
+                        <l rend="right">
+<anchor id="struct02a"></anchor>
+<hi rend="italic">Havamal.</hi>
+</l>
+                    </lg>
+                    <p rend="noIndent"></p>
+                    <head rend="3">
+<hi rend="italic">Fortale.</hi>
+</head>
+                    <p rend="noIndent">
+<hi rend="initial">H</hi>er er da den f&#x00F8;rste Bog jeg lod udgaae paa Pr&#x00E6;nt, det er kun faa Blade, og der staae Ord udi, som jeg nu <pb n="2" ed="A" type="text"/>for ingen Priis vilde gientage, men alligevel anseer jeg den for det Bedste og Vigtigste jeg skrev mellem min Afhandling om Religion og Liturgi og min Dimispr&#x00E6;ken. Det er et begeistret Syn af Danmarks dybe Fornedrelse, som dets S&#x00F8;nners Br&#x00F8;de, og den visse Undergang, naar ei F&#x00E6;drenes Tro og Dyder gjenf&#x00F8;dtes. Sangen, i hvilken Synet tolkedes, ski&#x00E6;mmes af enkelte hedenske Vildtoner: men Synet var Sandhed, det er stadf&#x00E6;stet for vore &#x00D8;ine, det vil gruelig opfyldes, dersom vi, hvad Gud forbyde! v&#x00E6;gre os gjenstridige mod Herrens Kald.</p>
+                    <p rend="firstIndent">Rygtet om Hovedstadens Forlystelser umiddelbar efter Tugtelsen 1807, og en Maskerade paa Langeland, hvor jeg da opholdt mig, gave Anledning saavel til Synet selv, som til dets Indkl&#x00E6;dning og Navn.<anchor id="struct02b"></anchor>
+</p>
+                    <p rend="firstIndent"></p>
+                </div>
+                <div>
+                    <fw type="longLine"></fw>
+                    <p rend="firstIndent">
+<hi rend="initial">S</hi>karer af alle St&#x00E6;nder samledes i Danmarks S&#x00F8;rgetid, i dets Lykkes haarde Vinter, i Vinteren Attenhundrede og <app id="var19" type="int">
+<rdg>otte;</rdg>
+</app> <app id="var331" type="ort">
+<rdg>de</rdg>
+</app> samledes, for i overgiven Sp&#x00F8;g at pr&#x00E6;ge deres Gl&#x00E6;de.</p>
+                    <p rend="firstIndent">Enkelte traadte frem, med Billedet af den <app id="var21" type="int">
+<rdg>lidende</rdg>
+</app> den bl&#x00F8;dende Dana i Haand, og stillede det for de Jublendes <app id="var22" type="int ort">
+<rdg>&#x00D8;ie;</rdg>
+</app>
+<app id="var332" type="ort">
+<rdg> enkelte</rdg>
+</app> Stemmer <app id="var24" type="ort">
+<rdg>l&#x00F8;d</rdg>
+</app>: skammer <app id="var25" type="ort">
+<rdg>eder</rdg>
+</app> dog, S&#x00F8;nner af Nord! skammer <app id="var26" type="ort">
+<rdg>eder</rdg>
+</app> dog ved at dandse og <app id="var27" type="ort">
+<rdg>gi&#x00F8;gle</rdg>
+</app> paa Bredden af Dannemarks <app id="var28" type="int">
+<rdg>Grav.</rdg>
+</app> Dog &#x2013; blind og d&#x00F8;v var Skaren for Synet og <app id="var29" type="int">
+<rdg>Stem<pb n="3" ed="A" type="text"/>men;</rdg>
+</app> <app id="var30" type="int ort">
+<rdg>Str&#x00E6;ngelegen</rdg>
+</app> tonede <app id="var31" type="ort">
+<rdg>h&#x00F8;it</rdg>
+</app>, og med den blandede sig i r&#x00E6;dsom lystige <app id="var32" type="ort">
+<rdg>Accorder</rdg>
+</app>:
+                    </p>
+                    
+                    <lg n="1">
+                        <l>Fryd dig ved Livet!</l>
+                    </lg>
+                    
+                    <p rend="firstIndent">Gulvet dundrede under de Dandsende, medens andre Formummede <app id="var33" type="ort">
+<rdg>dreiede</rdg>
+</app> sig under <anchor id="struct03a"></anchor>R&#x00E6;grimen<note type="footnote">
+<p rend="noIndent">R&#x00E6;grime (R&#x00E6;dselsgrime) er hos Anders Vedel det danske Ord paa Maske efter det Islandske Grima som betyder en Maske og hos Digterne Natten, som d&#x00F8;lger og forvender Skikkelser. Ordet: <hi rend="italic">grimet</hi> (besmurt i Ansigtet) er hermed besl&#x00E6;gtet.</p>
+</note>
+<anchor id="struct03b"></anchor> i lystige Kredse, og skreve i hinandens H&#x00E6;nder, som kunde der tvivles om deres <app id="var34" type="int">
+<rdg>Navne:</rdg>
+</app> <app id="var35" type="ort">
+<rdg>
+<hi rend="italic">de rette.</hi>
+</rdg>
+</app>
+                        
+                    </p>
+                    <p rend="firstIndent">Men, <app id="var36" type="ort">
+<rdg>see</rdg>
+</app>! Lysenes Lue fl&#x00F8;d over i blaalige Flammer, raslende aabnedes <app id="var37" type="int">
+<rdg>D&#x00F8;rren</rdg>
+</app> og ind traadte en <app id="var38" type="int">
+<rdg>bleg,</rdg>
+</app> <app id="var20" type="ort">
+<rdg>ski&#x00E6;lvende</rdg>
+</app> <app id="var39" type="int">
+<rdg>Olding,</rdg>
+</app>
+<app id="var333" type="ort">
+<rdg> et</rdg>
+</app> Spyd var hans Stav, haardt havde han l&#x00E6;net sig til det paa sin tunge Gang, og farvet var det af hans <app id="var40" type="int">
+<rdg>Blod, Faa</rdg>
+</app> men Trofaste <app id="var41" type="ort">
+<rdg>fulgde</rdg>
+</app> <app id="var42" type="int">
+<rdg>ham</rdg>
+</app> med l&#x00F8;ftet Sv&#x00E6;rd i den st&#x00E6;rke Haand, og en Taare hang i det<!--<app type="corrNote"><rdg wit="A">bet</rdg><lem wit="a76">det</lem></app>--> ildfulde <anchor id="struct10a"></anchor>
+<app id="var43" type="int ort">
+<rdg>&#x00D8;ie,</rdg>
+</app> <app type="ort" id="var320">
+<rdg>fremmerst</rdg>
+</app>
+<anchor id="struct10b"></anchor> var <app id="var44" type="ort">
+<rdg>Danmarks</rdg>
+</app> Konges&#x00F8;n blandt <app id="var45" type="int ort">
+<rdg>dem,</rdg>
+</app> <app id="var334" type="ort">
+<rdg>t&#x00E6;t</rdg>
+</app> vandrede han ved Oldingens <app id="var46" type="int">
+<rdg>Side</rdg>
+</app> og b&#x00F8;d ham hvile sig paa den kraftige <anchor id="struct04a"></anchor>Arm<note type="footnote">
+<p rend="noIndent">Bogen er skrevet i Begyndelsen af 1808 f&#x00F8;r Kong Christian den Syvendes D&#x00F8;d, og udkom, enten kort f&#x00F8;r han sov hen, eller i de samme Dage, hvilket <hi rend="italic">nu</hi> synes mig m&#x00E6;rkeligt.</p>
+</note>.<anchor id="struct04b"></anchor>
+</p>
+                    <p rend="firstIndent">Forvirret samledes Skaren trindt Gubben, paa hvis Bryst stod Dannemarks Navn med halv udslettet Skrift. Tale vilde han, men kun en utydelig, jamrende Lyd kom over de sittrende <app id="var47" type="int">
+<rdg>L&#x00E6;ber;</rdg>
+</app> <app id="var335" type="ort">
+<rdg>den</rdg>
+</app> &#x00C6;dle ved <pb n="4" ed="A" type="text"/>hans <app id="var48" type="int">
+<rdg>Side</rdg>
+</app> stod rede til at styrke ham med sit <app id="var49" type="int">
+<rdg>Blod,</rdg>
+</app> men da rystede den Gamle <app id="var50" type="sub">
+<rdg>sine</rdg>
+</app> hvide Lokker med truende <anchor id="struct11a"></anchor>
+<app id="var51" type="int">
+<rdg>Alvor;</rdg>
+</app> <app id="var319" type="ort">
+<rdg>flux</rdg>
+</app>
+<anchor id="struct11b"></anchor> traadte Tvende frem af F&#x00F8;lget, <app id="var52" type="ort">
+<rdg>skjulde</rdg>
+</app> Spydsodden i det blottede Bryst, og l&#x00E6;dskede Oldingen med <app id="var53" type="sub">
+<rdg>det</rdg>
+</app> varme <app id="var54" type="int">
+<rdg>Hjerteblod,</rdg>
+</app> <app type="ort" id="var336">
+<rdg>skr&#x00E6;kket</rdg>
+</app> <app id="var55" type="ort">
+<rdg>veeg</rdg>
+</app> Skaren tilbage,<!--<app type="corrNote"><rdg wit="A">tilbage.</rdg><lem wit="a76">tilbage,</lem></app>--> men den Gamle <app id="var56" type="ort">
+<rdg>reisde</rdg>
+</app> sig <app id="var57" type="ort">
+<rdg>ki&#x00E6;mpeh&#x00F8;i</rdg>
+</app> og <app id="var58" type="ort">
+<rdg>talde</rdg>
+</app>:</p>
+                </div>
+                <div>
+                    <lg n="1">
+                        <l>Saa stod jeg <app id="var59" type="ort">
+<rdg>gjennem</rdg>
+</app> <app id="var60" type="ort">
+<rdg>Seclers</rdg>
+</app> Aar,</l>
+                        <l>I Manddoms fulde <app id="var61" type="int">
+<rdg>Styrke,</rdg>
+</app>
+</l>
+                        <l>Kraft var min S&#x00F8;n, Bluf&#x00E6;rdighed</l>
+                        <l>Min <app id="var62" type="ort">
+<rdg>favre</rdg>
+</app>, rene <anchor id="struct12a"></anchor>
+<app id="var63" type="ort">
+<rdg>Daatter.</rdg>
+</app>
+</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Naar<anchor id="struct12b"></anchor> B&#x00F8;lgen slog i Syd og Vest</l>
+                        <l>Mod fjerne Landes <app id="var64" type="int">
+<rdg>Kyster;</rdg>
+</app>
+</l>
+                        <l>Mit Navn den bar, og <app id="var65" type="ort">
+<rdg>Feighed</rdg>
+</app> skjalv</l>
+                        <l>I stolte <anchor id="struct13a"></anchor>Marmorsale.</l>
+                    </lg>
+                    <lg n="3">
+                        <l>Hovmodig<anchor id="struct13b"></anchor> paa sin brede B&#x00E6;nk</l>
+                        <l>Som Havets Dronning <app id="var67" type="ort">
+<rdg>throner</rdg>
+</app>
+</l>
+                        <l>Nu <app id="var68" type="int">
+<rdg>Bretland,</rdg>
+</app> men i Jernet sp&#x00E6;ndt</l>
+                        <l>Hun ved min Fod har hvilet.</l>
+                    </lg>
+                    <lg n="4">
+                        
+                        <l>Jeg <app id="var69" type="int ort">
+<rdg>slumred,</rdg>
+</app> Valmusaften <app id="var70" type="ort">
+<rdg>gi&#x00F8;d</rdg>
+</app>
+</l>
+                        <l>En Trolddom paa mit <app id="var71" type="int ort">
+<rdg>&#x00D8;ie,</rdg>
+</app>
+</l>
+                        <l>Mit Navn <app id="var72" type="ort">
+<rdg>forglemdes</rdg>
+</app>, paa min Ryg</l>
+                        <l>Opkravled kaade <anchor id="struct05a"></anchor>
+<app id="var73" type="ort">
+<rdg>Dv&#x00E6;rge</rdg>
+</app><note type="footnote">
+<p rend="noIndent">I Dagene mellem Svend Estridsen og Valdemar.</p>
+</note>.</l>
+                    </lg>
+                    <lg n="5">
+                        <l>
+<pb n="5" ed="A" type="text"/>Jeg<anchor id="struct05b"></anchor> <app id="var74" type="ort">
+<rdg>vaagned</rdg>
+</app>, <app id="var75" type="ort">
+<rdg>saae</rdg>
+</app> og skjalv, men frem</l>
+                        <l>Jeg <app id="var324" type="ort">
+<rdg>raabde</rdg>
+</app> mine <app id="var76" type="int">
+<rdg>S&#x00F8;nner,</rdg>
+</app>
+</l>
+                        <l>Med Staal i Bryst og Staal i Haand,</l>
+                        <l>De t&#x00E6;mmed kaade <anchor id="struct06a"></anchor>
+<app id="var77" type="ort">
+<rdg>Dv&#x00E6;rge<!--<app type="corrNote"><lem wit="GV">Dv&#x00E6;rge</lem><rdg type="A">Dv&#x00E6;rge.</rdg></app>-->
+</rdg>
+</app><note type="footnote">
+<p rend="noIndent">I Absalons og Valdemarernes Dage; at jeg dengang saae kun Dagenes Glimmer, ei deres Br&#x00F8;st, er ligefrem.</p>
+</note>
+<anchor id="struct06b"></anchor>.</l>
+                        
+                    </lg>
+                    
+                    <lg n="6">
+                        
+                        <l>Jeg <app id="var78" type="int">
+<rdg>&#x00E6;ldedes,</rdg>
+</app> <app id="var325" type="ort">
+<rdg>en</rdg>
+</app> S&#x00F8;n af Skjold,</l>
+                        <l>(End staaer han ved min <app id="var79" type="int">
+<rdg>Side</rdg>
+</app>)</l>
+                        <l>
+<app id="var80" type="ort">
+<rdg>Gjenf&#x00F8;dte</rdg>
+</app> mig, og Ungdoms Blod</l>
+                        <l>Alt varmede mit <anchor id="struct14a"></anchor>Hjerte.</l>
+                    </lg>
+                    <lg n="7">
+                        <l>Da<anchor id="struct14b"></anchor> kom fra <app id="var82" type="ort">
+<rdg>Vesterleed</rdg>
+</app> en Vind,</l>
+                        <l>Saa <app id="var83" type="int ort">
+<rdg>luun,</rdg>
+</app> som <app id="var84" type="int">
+<rdg>Vestenvinde,</rdg>
+</app>
+</l>
+                        <l>Ak! Storm den blev, bortrev min <app id="var85" type="int">
+<rdg>Krands,</rdg>
+</app>
+</l>
+                        <l>Som <app id="var86" type="ort">
+<rdg>dulgde</rdg>
+</app> hvide <anchor id="struct15a"></anchor>Lokker.</l>
+                    </lg>
+                    <lg n="8">
+                        <l>Naar<anchor id="struct15b"></anchor> B&#x00F8;lgen, som mit stolte Navn</l>
+                        <l>Henbar til fjerne <app id="var88" type="int">
+<rdg>Lande,</rdg>
+</app>
+</l>
+                        <l>I Syd og Vest nu <app id="var89" type="ort">
+<rdg>slaaer</rdg>
+</app> mod Kyst,</l>
+                        <l>Den b&#x00E6;rer &#x2013; mine <anchor id="struct07a"></anchor>Sukke<note type="footnote">
+<p rend="noIndent">At jeg ei havde klart og stadigt Syn paa det som gienf&#x00F8;dte Danmark, nemlig Troen og Guds Ord, m&#x00E6;rkes let, knap t&#x00E6;nkde jeg engang ret paa den hele Oldenborgske Stamme ved at n&#x00E6;vne <hi rend="italic">S&#x00F8;nnen</hi> af <hi rend="italic">Skjold,</hi> eller paa den aandelige Pest, ved at <pb ed="A" n="6" type="text"/>n&#x00E6;vne Vestenvinden, som drev Bretlands Snekker hid; men det er ikke derfor desmindre Ordenes rette Mening, og at jeg dog ei var blind for Troens Kraft og vort st&#x00F8;rste Savn viser det F&#x00F8;lgende.</p>
+</note>
+<anchor id="struct07b"></anchor>.</l>
+                    </lg>
+                    
+                    <lg n="9">
+                        <l>Jeg raaber mine S&#x00F8;nner <app id="var90" type="int">
+<rdg>frem,</rdg>
+</app>
+</l>
+                        <l>Ak! Faa er de som h&#x00F8;re,</l>
+                        <l>I Bl&#x00F8;dheds Favn og Lystens <app id="var91" type="int ort">
+<rdg>Ski&#x00F8;d</rdg>
+</app>
+</l>
+                        <l>De slumrende sig <anchor id="struct16a"></anchor>velte.</l>
+                    </lg>
+                    <lg n="10">
+                        <l>
+<app id="var92" type="ort">
+<rdg>See</rdg>
+</app>!<anchor id="struct16b"></anchor> tomme Herrens Templer <app id="var93" type="ort">
+<rdg>staae</rdg>
+</app>,</l>
+                        <l>Og St&#x00F8;vet <app id="var94" type="ort">
+<rdg>ei</rdg>
+</app> vil kn&#x00E6;le</l>
+                        <l>I St&#x00F8;vet ned for St&#x00F8;vets Gud,</l>
+                        <l>At angre sine <anchor id="struct17a"></anchor>
+<app id="var321" type="int">
+<rdg>Synder!</rdg>
+</app>
+</l>
+                    </lg>
+                    <lg n="11">
+                        <l>Ak<anchor id="struct17b"></anchor>! <app id="var95" type="ort">
+<rdg>mine</rdg>
+</app> B&#x00F8;rn det <app id="var311" type="int">
+<rdg>er</rdg>
+</app> som saa</l>
+                        <l>
+<app id="var96" type="ort">
+<rdg>Foragte</rdg>
+</app> Himlens Konge,</l>
+                        <l>Som <app id="var97" type="ort">
+<rdg>see</rdg>
+</app> mig syg, og springe dog</l>
+                        <l>Med Lyst i <app id="var98" type="int ort">
+<rdg>Gi&#x00F8;glerhammen!</rdg>
+</app>
+</l>
+                        
+                    </lg>
+                    
+                    <lg n="12">
+                        
+                        <l>O! <app id="var99" type="ort">
+<rdg>reis</rdg>
+</app> dig dog, <app id="var100" type="sub">
+<rdg>nedfaldne sjunkne</rdg>
+</app> Sl&#x00E6;gt!</l>
+                        <l>Mod Himlen op fra Bl&#x00F8;dheds fule <app id="var101" type="ort">
+<rdg>Leie</rdg>
+</app>!</l>
+                        <l>
+<app id="var103" type="int">
+<rdg>Husk,</rdg>
+</app> <app id="var104" type="ort">
+<rdg>du</rdg>
+</app> udsprang af Nordens <app id="var105" type="ort">
+<rdg>Ki&#x00E6;mpe&#x00E6;t</rdg>
+</app>,</l>
+                        <l>Til Daad, og <app id="var106" type="ort">
+<rdg>ei</rdg>
+</app> til Sydens <app id="var107" type="ort">
+<rdg>ki&#x00E6;lne</rdg>
+</app> Vellyst!</l>
+                        <l>
+<app id="var109" type="int">
+<rdg>O,</rdg>
+</app> kaster dog den f&#x00E6;le <app id="var110" type="ort">
+<rdg>Gi&#x00F8;glerham</rdg>
+</app>!</l>
+                        <l>
+<app id="var111" type="int">
+<rdg>O!</rdg>
+</app> d&#x00E6;mper dog de vilde Gl&#x00E6;destoner!</l>
+                        <l>Ombytter Prunk med festlig <app id="var112" type="int">
+<rdg>S&#x00F8;rgedragt,</rdg>
+</app>
+</l>
+                        <l>
+<pb n="7" ed="A" type="text"/>Og ganger hen i Herrens <app id="var113" type="ort">
+<rdg>Huus</rdg>
+</app> at bede!</l>
+                        <l>Med hellig Sang, det fromme Hjertes B&#x00F8;n</l>
+                        <l>Sig h&#x00E6;ver da paa Andagts Luevinge,</l>
+                        <l>Og Ungdoms Kraft nedstiger i min <app id="var114" type="int">
+<rdg>Barm</rdg>
+</app>
+</l>
+                        <l>Fra <app id="var115" type="int">
+<rdg>Ham</rdg>
+</app> som holdt mig <app id="var116" type="ort">
+<rdg>reist</rdg>
+</app> i lange <anchor id="struct18a"></anchor>Tider.</l>
+                        <l>
+<app id="var117" type="int">
+<rdg>Da<anchor id="struct18b"></anchor> hv&#x00E6;s,</rdg>
+</app> o <app id="var326" type="int">
+<rdg>Mand</rdg>
+</app>, paa hellig Alterfod</l>
+                        <l>
+<app id="var118" type="sub">
+<rdg>Det</rdg>
+</app> tunge <app id="var119" type="int">
+<rdg>Sv&#x00E6;rd</rdg>
+</app> til Bretlands Skjold at <app id="var120" type="int">
+<rdg>kl&#x00F8;ve!</rdg>
+</app>
+</l>
+                        <l>Og sv&#x00E6;rg da Had til Sydens lumske <app id="var121" type="int">
+<rdg>Gift!</rdg>
+</app>
+</l>
+                        <l>Til Vellyst, <app id="var122" type="int">
+<rdg>Pragt</rdg>
+</app> og Guldets dorske Glimmer!</l>
+                        <l>Men Kvinde! <app id="var123" type="int ort">
+<rdg>du,</rdg>
+</app> som Herren af <app id="var124" type="ort">
+<rdg>Sin Soel</rdg>
+</app>
+</l>
+                        <l>En Straale gav <app id="var125" type="sub">
+<rdg>til</rdg>
+</app> Mandens Bryst at varme,</l>
+                        <l>Kys Altrets <app id="var126" type="int">
+<rdg>Fod!</rdg>
+</app> og sv&#x00E6;rg ved Straalen <app id="var127" type="int">
+<rdg>selv!</rdg>
+</app>
+</l>
+                        <l>At <app id="var128" type="ort">
+<rdg>ei</rdg>
+</app> med den <app id="var129" type="ort">
+<rdg>du meer</rdg>
+</app> min S&#x00F8;n vil <app id="var130" type="int">
+<rdg>daare,</rdg>
+</app>
+</l>
+                        <l>At du med Smil vil n&#x00E6;re Himlens <app id="var131" type="int">
+<rdg>Ild,</rdg>
+</app>
+</l>
+                        <l>Og svale med din Taare Jordens <app id="var132" type="int">
+<rdg>Flamme,</rdg>
+</app>
+</l>
+                        <l>At med din Haand <app id="var133" type="ort">
+<rdg>du</rdg>
+</app> huld vil kl&#x00E6;de mig,</l>
+                        <l>Og vandre <app id="var134" type="int">
+<rdg>frem,</rdg>
+</app> som &#x00E6;rbar Dannekvinde!</l>
+                        <l>Naar B&#x00F8;lgen da mod Syd og Vest henruller,</l>
+                        <l>Og naar den <app id="var135" type="ort">
+<rdg>slaaer</rdg>
+</app> mod fjerne Landes Kyst;</l>
+                        <l>Da atter skal den, som i Oldtids Dage,</l>
+                        <l>Henb&#x00E6;re did mit n&#x00E6;sten <app id="var136" type="ort">
+<rdg>glemde</rdg>
+</app> Navn.</l>
+                        
+                    </lg>
+                    <lg n="13">
+                        
+                        <l>O S&#x00F8;n! <app id="var137" type="ort">
+<rdg>o Daatter</rdg>
+</app>! h&#x00F8;r en Faders &#x00F8;mme Stemme!</l>
+                        <l>O! <app id="var138" type="ort">
+<rdg>h&#x00F8;rer</rdg>
+</app> dog, imens det end er <app id="var139" type="int">
+<rdg>Tid!</rdg>
+</app>
+</l>
+                        <l>F&#x00F8;r, dr&#x00E6;bt af Sorg og M&#x00F8;dighed jeg segner</l>
+                        <l>I skumle Grav til evig Glemsel ned!</l>
+                    </lg>
+                    <fw type="shortLine"></fw>
+                </div>
+                <div>
+                    
+                    <p rend="firstIndent">
+<pb n="8" ed="A" type="text"/>Oldingen <app id="var140" type="int">
+<rdg>tav,</rdg>
+</app> <app id="var337" type="ort">
+<rdg>et</rdg>
+</app> <app id="var141" type="ort">
+<rdg>&#x00D8;ieblik</rdg>
+</app> stod Skaren som <app id="var142" type="int">
+<rdg>grublende,</rdg>
+</app> men nu l&#x00F8;d det i Salens &#x00F8;vre Ende:</p>
+                    <p rend="center"></p>
+                    <p rend="center">
+<hi rend="italic">Glaubt nicht </hi>
+<app id="var143" type="sub">
+<rdg>
+<hi rend="initial">an</hi>
+</rdg>
+</app>
+<hi rend="italic"> solche dumme Dinge!</hi>
+</p>
+                    <p rend="center"></p>
+                    <p rend="noIndent">og i den <app id="var144" type="sub">
+<rdg>anden</rdg>
+</app>:</p>
+                    <lg n="1">
+                        <l>
+<hi rend="italic">Tro </hi>
+<app id="var145" type="ort">
+<rdg>
+<hi rend="italic">ei Zelotens</hi>
+</rdg>
+</app>
+<hi rend="italic"> m&#x00F8;rke L&#x00E6;re:</hi>
+</l>
+                        <l>
+<hi rend="italic">At Himlen er den Glade vred!</hi>
+</l>    
+                    </lg>
+                    <p rend="noIndent">
+<app id="var146" type="ort">
+<rdg>fordobblet</rdg>
+</app> vendte den vilde Fryd tilbage.</p>
+                    
+                    <p rend="firstIndent">End ravede <app id="var147" type="sub">
+<rdg>Oldingen</rdg>
+</app> <app id="var148" type="ort">
+<rdg>enstund<!--<app type="corrNote"><rdg wit="A">enstnnd</rdg><lem wit="GV">enstund</lem></app>-->
+</rdg>
+</app>, st&#x00F8;ttet af sin &#x00E6;dle <app id="var149" type="int">
+<rdg>Ledsager</rdg>
+</app> og hans mandige <app id="var150" type="int">
+<rdg>F&#x00F8;lge,</rdg>
+</app> men &#x2013; <app id="var151" type="ort">
+<rdg>D&#x00F8;dninguhret</rdg>
+</app> slog sit tolvte Slag, og livl&#x00F8;s nedsank den <app id="var152" type="int">
+<rdg>Gamle,</rdg>
+</app> med sine tro S&#x00F8;nner bl&#x00F8;dende trindt sig. Stort var <app id="var153" type="int">
+<rdg>Faldet,</rdg>
+</app> Salen rystede som Blad i Storm, og Skr&#x00E6;k udpustede Livsaanden af de <app id="var154" type="int">
+<rdg>Dandsende,</rdg>
+</app> <app id="var338" type="ort">
+<rdg>gispende</rdg>
+</app> fore de til Hel.
+                    </p>
+                </div>
+                <div>
+                    <p rend="firstIndent">Lysskinnet blaanede end <app id="var155" type="int">
+<rdg>mere,</rdg>
+</app> Jorden <app id="var156" type="int">
+<rdg>gungrede,</rdg>
+</app> som under <app id="var157" type="int ort">
+<rdg>Ki&#x00E6;mpefod</rdg>
+</app> og ind traadte tvende Skarer af Nordens gamle <app id="var158" type="int">
+<rdg>Helte,</rdg>
+</app> Hedningene havde <app id="var159" type="int">
+<rdg>sorte,</rdg>
+</app> men de <app id="var160" type="ort">
+<rdg>Christne</rdg>
+</app> <app id="var161" type="int">
+<rdg>hvide</rdg>
+</app> med Kors udsmykkede <app id="var162" type="ort">
+<rdg>Brynier</rdg>
+</app>, og alle havde de gyldne Hjelme. For <app id="var163" type="ort">
+<rdg>dem</rdg>
+</app> gik en <app id="var164" type="int">
+<rdg>Skjald</rdg>
+</app> med Harpen i <app id="var165" type="int ort">
+<rdg>Haand,</rdg>
+</app> <app id="var339" type="ort">
+<rdg>taus</rdg>
+</app> s&#x00F8;rgende <app id="var166" type="ort">
+<rdg>stirred</rdg>
+</app> de <app id="var167" type="ort">
+<rdg>Christne</rdg>
+</app> paa den <app id="var168" type="int">
+<rdg>D&#x00F8;de,</rdg>
+</app> men Hedningene omginge trende Gange Liget og <app id="var169" type="ort">
+<rdg>kvad</rdg>
+</app>:
+                    </p>
+                    
+                    <lg n="1">
+                        <l>Af dine L&#x00E6;nder</l>
+                        <l>Vi alle sprang.</l>
+                        <l>Vi, baarne Fr&#x00E6;nder,</l>
+                        <l>Gik <app id="var170" type="ort">
+<rdg>Ki&#x00E6;mpegang</rdg>
+</app>.</l>
+                        <l>
+<pb n="9" ed="A" type="text"/>Med Sv&#x00E6;rd vi <app id="var171" type="int ort">
+<rdg>h&#x00E6;rged,</rdg>
+</app>
+</l>
+                        <l>Med Skjold vi <app id="var172" type="int ort">
+<rdg>v&#x00E6;rged,</rdg>
+</app>
+</l>
+                        <l>Vor Fader! Dig.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Vi <app id="var173" type="ort">
+<rdg>h&#x00F8;rde</rdg>
+</app> runge</l>
+                        <l>I Valhals <app id="var174" type="int">
+<rdg>Borg</rdg>
+</app>
+</l>
+                        <l>Dit Fald, det <app id="var175" type="int">
+<rdg>tunge,</rdg>
+</app>
+</l>
+                        <l>Da <app id="var176" type="ort">
+<rdg>voxde</rdg>
+</app> Sorg,</l>
+                        <l>Hvor Roser <app id="var177" type="int">
+<rdg>stode;</rdg>
+</app>
+</l>
+                        <l>Hvor <app id="var178" type="ort">
+<rdg>Liljer groede</rdg>
+</app>,</l>
+                        <l>Paa Vigrids <anchor id="struct08a"></anchor>Mark<note type="footnote">
+<p rend="noIndent">Det kan omtvivles, hvor de Roser og Lilier havde mindst hjemme, paa Vigrids Mark, paa de gamle Ki&#x00E6;mpers eller min Tunge, men det er vist, at de havde der ingensteds hjemme. Sagen er, at jeg fandt Blomster kl&#x00E6;dte godt, der var ingen i det Iisland, hvor jeg dengang boede, jeg stjal da det Par i Oehlenschl&#x00E4;gers Have, og for at vise, hvor godt jeg forstod mig paa Blomster, plantede jeg dem paa Vigrids Mark, og i de nordiske Hedningers Hjelme. Latterligt var det tilvisse, dog, gid det<!--<app type="corrNote"><rdg wit="A">drt</rdg><lem wit="GV">det</lem></app>--> var min <!--<app type="corrNote"><rdg wit="A">-->storste<!--</rdg><lem wit="GV">st&#x00F8;rste</lem></app>--> Synd!</p>
+</note>
+<anchor id="struct08b"></anchor>.</l>
+                    </lg>
+                    <p rend="firstIndent">Skjalden <app id="var179" type="sub">
+<rdg>greb i</rdg>
+</app> <app id="var312" type="int">
+<rdg>Str&#x00E6;ngene</rdg>
+</app> og kvad saa gladelig om den Hedenfarnes Manddom, saa <app id="var180" type="ort">
+<rdg>s&#x00F8;rgelig</rdg>
+</app> om hans D&#x00F8;d. Som stivnede stode alle <app id="var181" type="int">
+<rdg>Heltene,</rdg>
+</app> og lyttede til <app id="var182" type="int">
+<rdg>Kv&#x00E6;det,</rdg>
+</app> men da det var endt, fremtraadte <app id="var183" type="ort">
+<rdg>Regner</rdg>
+</app> Lodbrok og kvad:
+                    </p>
+                    
+                    
+                    <lg n="1">
+                        <l>
+<pb n="10" ed="A" type="text"/>I Bretland fangen</l>
+                        <l>Jeg sad <app id="var184" type="ort">
+<rdg>enstund</rdg>
+</app>,</l>
+                        <l>Mig <app id="var185" type="ort">
+<rdg>favned</rdg>
+</app> <app id="var186" type="int">
+<rdg>Slangen</rdg>
+</app>
+</l>
+                        <l>I <app id="var187" type="int">
+<rdg>Ormegrund,</rdg>
+</app>
+</l>
+                        <l>Den fast mig <app id="var188" type="ort">
+<rdg>knuged</rdg>
+</app>
+</l>
+                        <l>Mit Blod den <app id="var189" type="int ort">
+<rdg>suged,</rdg>
+</app>
+</l>
+                        <l>Jeg <app id="var190" type="sub">
+<rdg>blegned</rdg>
+</app> <app id="var191" type="ort">
+<rdg>ei</rdg>
+</app>.</l>
+                        <l>I Ellas <app id="var192" type="int">
+<rdg>Taarne</rdg>
+</app>
+</l>
+                        <l>Da l&#x00F8;d min <app id="var193" type="int">
+<rdg>Sang:</rdg>
+</app>
+</l>
+                        <l>For gamle Orne</l>
+                        <l>Blir Tiden <app id="var194" type="int">
+<rdg>lang,</rdg>
+</app>
+</l>
+                        <l>Men vidste <app id="var195" type="int">
+<rdg>Grise,</rdg>
+</app>
+</l>
+                        <l>Hvad Orme spise,</l>
+                        <l>De <app id="var196" type="ort">
+<rdg>t&#x00F8;ved ei</rdg>
+</app>.</l>
+                    </lg>
+                    
+                    
+                    <p rend="noIndent">Frem stod <app id="var197" type="sub">
+<rdg>da</rdg>
+</app> Ivar <anchor id="struct09a"></anchor>
+<app id="var198" type="ort">
+<rdg>Beenl&#x00F8;s</rdg>
+</app><note type="footnote">
+<p rend="noIndent">Vist nok er det forvovent at lade en <hi rend="italic">beenl&#x00F8;s</hi> Mand <hi rend="italic">staa,</hi> men i en Tidsalder da de Fleste indbilde sig at kunne baade levende og d&#x00F8;de staae i Luften baade beenl&#x00F8;se og grundl&#x00F8;se, l&#x00F8;nner det <pb n="11" ed="A" type="text"/>ei Umagen at gaae i Rette med Ivar, som dog havde Spydet og Valhals St&#x00F8;tter at l&#x00E6;ne sig til; thi i en <hi rend="italic">saadan</hi> Tid maae Man jo ansee ham for en ret standhaftig Mand.</p>
+</note>
+<anchor id="struct09b"></anchor> og kvad:</p>
+                    
+                    
+                    <lg n="1">
+                        <l>Vi <app id="var199" type="ort">
+<rdg>t&#x00F8;ved</rdg>
+</app> ikke,</l>
+                        <l>Men dj&#x00E6;rve lod</l>
+                        <l>Vi Ulve <app id="var200" type="int">
+<rdg>drikke</rdg>
+</app>
+</l>
+                        <l>Af Bretlands <app id="var201" type="int">
+<rdg>Blod,</rdg>
+</app>
+</l>
+                        <l>Vi Ryggen <app id="var202" type="ort">
+<rdg>risted</rdg>
+</app>,</l>
+                        <l>Og Hjertet <app id="var203" type="ort">
+<rdg>vristed</rdg>
+</app>
+</l>
+                        <l>Af Ellas Bryst.</l>
+                    </lg>
+                    
+                    
+                    <p rend="firstIndent">
+<pb n="11" ed="A" type="text"/>Af den <app id="var204" type="ort">
+<rdg>christne</rdg>
+</app> Skare fremtraadte <app id="var205" type="ort">
+<rdg>Gunhild</rdg>
+</app>, Svend <app id="var206" type="ort">
+<rdg>Tveski&#x00E6;gs</rdg>
+</app> den stolte, den <app id="var207" type="ort">
+<rdg>deilige Syster</rdg>
+</app>, og kvad:</p>
+                    
+                    
+                    <lg n="1">
+                        <l>Udsprungen af Dannemarks kraftige Rod,</l>
+                        <l>Udrunden af Skjoldungers herlige Blod,</l>
+                        <l>I Bretland mig timedes <app id="var208" type="int">
+<rdg>Kvide,</rdg>
+</app>
+</l>
+                        <l>Paa trol&#x00F8;se &#x00D8;,</l>
+                        <l>Der maatte jeg d&#x00F8;,</l>
+                        <l>I Ungdommens <app id="var209" type="ort">
+<rdg>favreste</rdg>
+</app> Tide.</l>
+                    </lg>                
+                    
+                    <lg n="2">
+                        <l>Paa Kongestol Nidingen Edelred <app id="var210" type="int">
+<rdg>sad,</rdg>
+</app>
+</l>
+                        <l>Han <app id="var211" type="ort">
+<rdg>blanded</rdg>
+</app> og <app id="var212" type="ort">
+<rdg>laved</rdg>
+</app> saa <app id="var213" type="ort">
+<rdg>blodigt</rdg>
+</app> et <app id="var214" type="int">
+<rdg>Bad</rdg>
+</app>
+</l>
+                        <l>For <app id="var215" type="int">
+<rdg>Danske,</rdg>
+</app> <app id="var340" type="ort">
+<rdg>det</rdg>
+</app> havde <app id="var216" type="ort">
+<rdg>ei</rdg>
+</app> <app id="var217" type="int">
+<rdg>Lige;</rdg>
+</app>
+</l>
+                        <l>Da <app id="var218" type="ort">
+<rdg>dr&#x00E6;bdes</rdg>
+</app> i L&#x00F8;n</l>
+                        <l>Hver Dannemarks S&#x00F8;n,</l>
+                        <l>Som bygged&#x2019; i Engellands Rige.</l>
+                    </lg>
+                    <lg n="3">
+                        <l>
+<app id="var219" type="ort">
+<rdg>Ei</rdg>
+</app> havde de Vaaben, de dristige M&#x00E6;nd,</l>
+                        <l>Saa tr&#x00F8;stig de <app id="var220" type="ort">
+<rdg>flydde</rdg>
+</app> til Kirkerne hen,</l>
+                        <l>Men Kirkerne t&#x00E6;ndtes i <app id="var221" type="int">
+<rdg>Lue,</rdg>
+</app>
+</l>
+                        <l>Saa ynkelig klang</l>
+                        <l>Da Hylen for <app id="var222" type="int">
+<rdg>Sang</rdg>
+</app>
+</l>
+                        <l>Alt under den hellige Bue.</l>
+                    </lg>
+                    <lg n="4">
+                        <l>
+<pb n="12" ed="A" type="text"/>Af nyf&#x00F8;dte Sp&#x00E6;de, forbarme <app id="var223" type="ort">
+<rdg>Sig</rdg>
+</app> Gud!</l>
+                        <l>
+<app id="var224" type="ort">
+<rdg>Fl&#x00F8;i</rdg>
+</app> Hjernen mod <app id="var225" type="int">
+<rdg>Stolper,</rdg>
+</app> mod Stenene <app id="var226" type="int">
+<rdg>ud,</rdg>
+</app>
+</l>
+                        <l>Kun <app id="var227" type="ort">
+<rdg>Faa kiende</rdg>
+</app> <app id="var228" type="sub">
+<rdg>Moderens</rdg>
+</app> <app id="var229" type="int">
+<rdg>Smerte,</rdg>
+</app>
+</l>
+                        <l>Da groves i <app id="var230" type="int">
+<rdg>Jord</rdg>
+</app>
+</l>
+                        <l>De Kvinder fra Nord,</l>
+                        <l>Og Hundene <app id="var231" type="ort">
+<rdg>sleed</rdg>
+</app> deres Hjerte.</l>
+                    </lg>
+                    
+                    <lg n="5">
+                        <l>
+<app id="var232" type="int">
+<rdg>Dog</rdg>
+</app> end havde Bretland <app id="var234" type="ort">
+<rdg>ei</rdg>
+</app> styret sin Lyst,</l>
+                        <l>Jeg maatte i S&#x00F8;ns og i &#x00C6;gtemands Bryst</l>
+                        <l>De blodige Spyde <app id="var235" type="int">
+<rdg>beskue;</rdg>
+</app>
+</l>
+                        <l>Den <app id="var236" type="ort">
+<rdg>H&#x00F8;ieste veed</rdg>
+</app>,</l>
+                        <l>Hvad Angest jeg <app id="var237" type="int ort">
+<rdg>leed,</rdg>
+</app>
+</l>
+                        <l>Men Ingen dog <app id="var238" type="ort">
+<rdg>saae</rdg>
+</app> mig at grue.</l>
+                    </lg>
+                    <lg n="6">
+                        <l>Nu l&#x00F8;ftedes <app id="var239" type="int ort">
+<rdg>&#x00D8;xen,</rdg>
+</app> <app id="var341" type="ort">
+<rdg>jeg</rdg>
+</app> gjorde min <app id="var240" type="int">
+<rdg>B&#x00F8;n</rdg>
+</app>
+</l>
+                        <l>Til <app id="var241" type="ort">
+<rdg>Christ</rdg>
+</app> og hans hellige Moder i L&#x00F8;n,</l>
+                        <l>Og d&#x00F8;ende tog jeg til Orde:</l>
+                        <l>
+<app id="var242" type="ort">
+<rdg>
+<hi rend="italic">Gr&#x00E6;d Bretland! o gr&#x00E6;d!</hi>
+</rdg>
+</app>
+</l>
+                        <l>
+<app id="var244" type="ort">
+<rdg>
+<hi rend="italic">Thi Blod var din </hi>
+</rdg>
+</app>
+<app id="var245" type="int ort">
+<rdg>
+<hi rend="italic">S&#x00E6;d</hi>
+</rdg>
+</app>
+</l>
+                        <l>
+<app id="var330" type="ort">
+<rdg>
+<hi rend="italic">Og blodig vil H&#x00F8;stdagen </hi>
+<anchor id="struct25a"></anchor>
+<hi rend="italic">vorde</hi>
+</rdg>
+</app><note type="footnote">
+<p rend="noIndent">Alt dette, og selv Gunhilds Spaadomsord, som dog ei er <hi rend="italic">fuldkommedes</hi> under Svend og Knud, er en aldeles tro historisk Fort&#x00E6;lling, som man kan see i Suhms Dannemarks Historie. Tom. 3. Side 349-52. De engelske Skribentere sige selv at <hi rend="italic">alle</hi> Danske bleve udryddede, dog er det vel troligt, hvad Suhm mener, at foruden de tolv unge Karle <pb n="13" ed="A" type="text"/>som undflydde med den Tidende til Dannemark, Flere kan have reddet sig. Til Ihukommelse af dette gruelige Nidingsv&#x00E6;rk, holdt Engell&#x00E6;nderne i lang Tid en H&#x00F8;itidsdag, som fortrinlig kaldtes <hi rend="italic">H&#x00F8;itidsdagen</hi> <hi rend="bold">(Hockeday)</hi>.
+                </p>
+                        </note>
+<anchor id="struct25b"></anchor>
+<hi rend="italic">.</hi>
+</l>
+                    </lg>
+                    
+                    
+                    <fw type="shortLine"></fw>
+                    <p rend="firstIndent">
+<pb n="13" ed="A" type="text"/>Frem stod <app id="var246" type="sub">
+<rdg>da</rdg>
+</app> Ottar <app id="var247" type="sub">
+<rdg>den</rdg>
+</app> Sorte og kvad:</p>
+                    
+                    
+                    <lg n="1">
+                        <l>Ja, hevnet <app id="var248" type="ort">
+<rdg>du</rdg>
+</app> blev,</l>
+                        <l>
+<app id="var249" type="int">
+<rdg>Du,</rdg>
+</app> Gunnild hin fagre!</l>
+                        <l>Med Blod vi beskrev</l>
+                        <l>Paa Engellands <app id="var250" type="int">
+<rdg>Agre</rdg>
+</app>
+</l>
+                        <l>Dit Mord og vor Hevn.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Saa harmefuld drog</l>
+                        <l>Kong Svend over <app id="var251" type="int">
+<rdg>Strande,</rdg>
+</app>
+</l>
+                        <l>Han Edelred jog</l>
+                        <l>Til fremmede Lande,</l>
+                        <l>Fra Rige og <app id="var252" type="ort">
+<rdg>Stoel.</rdg>
+</app>
+</l>
+                    </lg>
+                    <lg n="3">
+                        <l>Han <app id="var253" type="ort">
+<rdg>synded</rdg>
+</app> mod Gud,</l>
+                        <l>Mod <app id="var254" type="int">
+<rdg>Edmund,</rdg>
+</app> og <app id="var255" type="int">
+<rdg>d&#x00F8;de,</rdg>
+</app>
+</l>
+                        <l>Da farvede Knud</l>
+                        <l>De Hjelme saa r&#x00F8;de,</l>
+                        <l>Og Bretland var Tr&#x00E6;l.</l>
+                    </lg>
+                    
+                    
+                </div>
+                <div>
+                    
+                    
+                    <p rend="firstIndent">
+<app id="var256" type="ort">
+<rdg>Christne</rdg>
+</app> og Hedninge sloge <app id="var257" type="sub">
+<rdg>Kreds</rdg>
+</app> om Liget og <app id="var258" type="ort">
+<rdg>kvad</rdg>
+</app> i <app id="var259" type="ort">
+<rdg>Chor</rdg>
+</app>:</p>
+                    
+                    
+                    <lg n="1">
+                        <l>
+<pb ed="A" n="14" type="text"/>
+<app id="var260" type="int">
+<rdg>Ja,</rdg>
+</app> Fader! <app id="var261" type="int">
+<rdg>tro</rdg>
+</app>
+</l>
+                        <l>Vi stod og <app id="var262" type="ort">
+<rdg>streed</rdg>
+</app>,</l>
+                        <l>Og <app id="var263" type="ort">
+<rdg>h&#x00F8;it</rdg>
+</app> vi <app id="var264" type="int">
+<rdg>lo</rdg>
+</app>
+</l>
+                        <l>I blodig <app id="var265" type="ort">
+<rdg>Sveed</rdg>
+</app>.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Men <app id="var266" type="ort">
+<rdg>vee</rdg>
+</app> den Svend,</l>
+                        <l>Og <app id="var267" type="ort">
+<rdg>vee</rdg>
+</app> den M&#x00F8;,</l>
+                        <l>Som <app id="var268" type="ort">
+<rdg>saae dig</rdg>
+</app> d&#x00F8;,</l>
+                        <l>Og lever <app id="var269" type="int">
+<rdg>end!</rdg>
+</app>
+</l>
+                    </lg>
+                    
+                    <fw type="shortLine"></fw>    
+                    <p rend="firstIndent">Baalet t&#x00E6;ndtes midt i <app id="var270" type="int">
+<rdg>Salen,</rdg>
+</app> og viedes med Korsets og Hammerens <app id="var271" type="int">
+<rdg>Tegn,</rdg>
+</app> <app id="var272" type="sub">
+<rdg>mens Choret kvad:</rdg>
+</app>
+</p>
+                    
+                    <lg n="1">
+                        <l>
+<app id="var273" type="ort">
+<rdg>H&#x00F8;ie</rdg>
+</app> <app id="var322" type="int">
+<rdg>Odin,</rdg>
+</app> Hvide <app id="var274" type="ort">
+<rdg>Christ</rdg>
+</app>!</l>
+                        <l>Slettet ud er <app id="var275" type="ort">
+<rdg>eders</rdg>
+</app> Tvist,</l>
+                        <l>Begge S&#x00F8;nner af <anchor id="struct21a"></anchor>Alfader<note type="footnote">
+<p rend="noIndent">Hver Christen seer let, at det er formastelige Ord, som, naar de toges str&#x00E6;ngt, maatte betyde, at Christus var som Odin kun en Idee, et luftigt, indbildt V&#x00E6;sen. Det var nu <hi rend="italic">ikke min</hi> Mening jeg f&#x00F8;lde selv, det var us&#x00F8;mmelig talt, og sendte <hi rend="italic">derfor</hi> aldrig min salig Fader den Bog; men det er aabenbart, at jeg ei for Klangens Skyld havde ladet saadanne Ord staae, og end mindre sagt noget lignende i min Mythologie, dersom jeg havde v&#x00E6;ret ret omhyggelig for at undgaae <pb n="15" ed="A" type="text"/>Mistydning i saa vigtige Ting, og havt den Tro i Hjertet at der er ikke Salighed i noget Navn, uden i Jesu. Langt er det endnu, som altid, fra mig at ford&#x00F8;mme fromme Hedninger som vandrede redelig for Gud ved de Stjerner de saae, men ligesaalangt er det fra mig, at n&#x00E6;vne et Afgudsnavn ved Siden af Christi, og Ordene lader jeg kun staa <hi rend="italic">til min Skam,</hi> og til et Vidnesbyrd om, hvad et Menneske, som dog troede paa Christus, i den galne Tid, kunde f&#x00F8;re det over sit Hjerte at sige.</p>
+                        </note>
+                            <anchor id="struct21b"></anchor>
+<app id="var276" type="int">
+<rdg>,</rdg>
+</app>
+</l>
+                        <l>Med vort Kors og med vort <app id="var277" type="int">
+<rdg>Sv&#x00E6;rd</rdg>
+</app>
+</l>
+                        <l>Vies <app id="var278" type="ort">
+<rdg>eder</rdg>
+</app> Baalet her,</l>
+                        <l>Begge <app id="var279" type="ort">
+<rdg>elskde</rdg>
+</app> I vor Fader.</l>
+                    </lg>
+                    
+                    
+                    <p rend="firstIndent">
+<pb n="15" ed="A" type="text"/>
+<app id="var280" type="ort">
+<rdg>Tregange</rdg>
+</app> bares den D&#x00F8;de paa Skjolde <app id="var281" type="sub">
+<rdg>trindt</rdg>
+</app> om Baalet, og <app id="var283" type="ort">
+<rdg>Choret</rdg>
+</app> kvad:</p>
+                    
+                    
+                    <lg n="1">
+                        <l>Os Guderne sende,</l>
+                        <l>At h&#x00E6;dre dit <app id="var284" type="int ort">
+<rdg>Liig,</rdg>
+</app>
+</l>
+                        <l>Til Aske vi br&#x00E6;nde,</l>
+                        <l>O Elskede! Dig.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>En <app id="var285" type="ort">
+<rdg>H&#x00F8;i</rdg>
+</app> vi skal <app id="var286" type="ort">
+<rdg>reise</rdg>
+</app>
+</l>
+                        <l>Paa smuldrede <app id="var289" type="ort">
+<rdg>Been</rdg>
+</app>,</l>
+                        <l>Og paa den skal <app id="var290" type="int ort">
+<rdg>kneise</rdg>
+</app>
+</l>
+                        <l>En varslende <app id="var291" type="ort">
+<rdg>Steen</rdg>
+</app>.</l>
+                    </lg>
+                    <lg n="3">
+                        
+                        <l>Den <app id="var292" type="ort">
+<rdg>H&#x00F8;i</rdg>
+</app> skal <app id="var293" type="ort">
+<rdg>ei</rdg>
+</app> l&#x00E6;gges af Jord eller <app id="var294" type="int">
+<rdg>Muld,</rdg>
+</app>
+</l>
+                        <l>Men af S&#x00F8;lv og af Guld,</l>
+                        <l>Men af Silke og <app id="var295" type="ort">
+<rdg>Liin</rdg>
+</app>,</l>
+                        <l>Begydt med den skummende <app id="var296" type="ort">
+<rdg>Viin</rdg>
+</app>,</l>
+                        <l>
+<pb n="16" ed="A" type="text"/>Og af Skarlagen r&#x00F8;d,</l>
+                        <l>Og af Fraadsernes <app id="var297" type="ort">
+<rdg>Ki&#x00F8;d</rdg>
+</app>,</l>
+                        <l>Saa Guderne <anchor id="struct19a"></anchor>b&#x00F8;d.</l>
+                    </lg>
+                    <lg n="4"> 
+                        <l>Paa<anchor id="struct19b"></anchor> <app id="var299" type="ort">
+<rdg>H&#x00F8;ien</rdg>
+</app> vi <app id="var300" type="ort">
+<rdg>reise</rdg>
+</app> en <app id="var301" type="int ort">
+<rdg>Bautasteen,</rdg>
+</app>
+</l>
+                        <l>Af <app id="var302" type="ort">
+<rdg>D&#x00F8;dningebeen</rdg>
+</app>,</l>
+                        <l>Af <app id="var303" type="ort">
+<rdg>Horm&#x00E6;nds Been</rdg>
+</app>,</l>
+                        <l>Af <app id="var304" type="ort">
+<rdg>Hoerkvindebeen</rdg>
+</app>,</l>
+                        <l>Af <app id="var305" type="ort">
+<rdg>Nidingebeen</rdg>
+</app>,</l>
+                        <l>Og den <app id="var306" type="ort">
+<rdg>Bautasteen</rdg>
+</app>
+</l>
+                        <l>Skal stande i <app id="var307" type="int">
+<rdg>Nord</rdg>
+</app>
+</l>
+                        <l>Til for&#x00E6;ldede Jord</l>
+                        <l>Opl&#x00F8;ses i Damp.</l>
+                    </lg>
+                    
+                    
+                    <p rend="firstIndent">Liget lagdes paa <app id="var308" type="int">
+<rdg>Baal,</rdg>
+</app> <app id="var309" type="sub">
+<rdg>Flammerne</rdg>
+</app> omsnoede hele <app id="var310" type="int">
+<rdg>F&#x00F8;lget</rdg>
+</app> og Alt forsvandt.<anchor id="struct20a"></anchor>
+</p>
+                </div>
+                <div>
+                    <head rend="3">
+<hi rend="italic">Till&#x00E6;g.</hi>
+</head>
+                    <p rend="noIndent">Dette Kvad gjorde ikke mindste Opsigt, ja udentvivl ere der mange, som kiende mine senere Arbeider og veed dog ei at det er til. For min egen Skyld var det saare godt, at saavel dette, som min &#x00F8;vrige Skrift i hine Aar blev saa godt som u&#x00E6;ndset, thi jeg var langt fra at v&#x00E6;re fri for Lyst til Bifald og Navnkundighed, naar de kun vare at vinde uden Opoffrelse af min Overbeviisning, og havde man misbilliget denne men rost mine Anl&#x00E6;g, da var jeg uden Tvivl kommet <pb n="17" ed="A" type="text"/>i et Vilderede, hvoraf Udveien er vanskelig at finde og end tungere at vandre, fordi man da skal bortkaste de Verdens Krandse, Man elsker, og agter for sit <hi rend="italic">Hovedsmykke.</hi> Jeg forvildedes alt for meget ved Bifaldet i en snever Kreds, Gud skee Lov! at Fristelsen ikke blev st&#x00F8;rre.</p>
+                    <p rend="noIndent">Seer jeg derimod hen til Danmark, da maa jeg kalde det s&#x00F8;rgeligt, at en saadan Tale ingen Opsigt gjorde, thi det beviste, at den desv&#x00E6;rre! var alt for sand, at Aanden ingenlunde var vaagnet ved Tordenen, Hjertet ei ydmyget ved Tugtelsen, men at Man i Sikkerhed begyndte det gamle Syndelevnet, uden at frygte for den H&#x00F8;iestes Dom, uden at &#x00E6;ndse de R&#x00F8;ster, som forkyndte den. Aldrig blev Maskeradeballet recenseret og aldrig var det vel indtil nu blevet n&#x00E6;vnet paa Pr&#x00E6;nt, hvis ikke en ung Mand med christen Tro, inderlig Ki&#x00E6;rlighed til alt Godt og til det gamle Danmark, men ei noksom bekiendt med Tidens Elendighed og dybe Ford&#x00E6;rvelse, havde fundet mit Syn for m&#x00F8;rkt og udsagt det i et Vers til mig <note type="footnote">
+<p rend="noIndent">Ki&#x00F8;benhavns Skilderie No. 66 1808. Herved foranledigedes det Bekiendskab, der h&#x00F8;rer til de gl&#x00E6;delige og vigtige Optrin i mit Liv, og det i mange Maader: Bekiendskabet med Povel Dons, hvem det her ei passer sig at rose, men visselig at n&#x00E6;vne som den redelige, frimodige og trofaste Ven, han var og er for mig.</p>
+</note>. Vist havde han Ret deri, at Livet var ei reent forsvundet og troede det <pb n="18" ed="A" type="text"/>sagtens <hi rend="italic">inderligere</hi> end jeg, at Sl&#x00E6;gten kunde gjenf&#x00F8;des ved Troen, men Uret havde han i at tiltro Krigens Bulder formeget, og mig den Tanke, at Danmarks Undergang var uafvendelig. Derom mindede jeg, men ikke venlig som jeg burde, i f&#x00F8;lgende Vers<note type="footnote">
+<p rend="noIndent">Kbh. Skild. No. 69 1808.</p>
+</note>:</p>
+                    <lg n="1">
+                        <l>Meer end man veed,</l>
+                        <l>Tr&#x00E6;nges og lider</l>
+                        <l>Ygdrasils Ask,</l>
+                        <l>H&#x00F8;it bider Hjorten,</l>
+                        <l>Tr&#x00F8;sket er Siden,</l>
+                        <l>Nidh&#x00F8;g gnaver forneden,</l>
+                        <l rend="right">Grimnismal.</l>
+                    </lg>
+                    <lg n="1">
+                        <l>Hvorfor mon Danmarks Tale l&#x00F8;d</l>
+                        <l>Ved Siden af de gamle<!--<app type="corrNote"><rdg wit="A">gamlr</rdg><lem wit="GV">gamle</lem></app>--> Sange,</l>
+                        <l>Ifald jeg troede Kraften d&#x00F8;d</l>
+                        <l>Og Jorden gold i Nordens Vange!</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Nei, v&#x00E6;kke vilde jeg den Aand,</l>
+                        <l>Der slumrede i Fortids Grave,</l>
+                        <l>Og derfor grov min svage Haand<!--<app type="corrNote"><rdg wit="A">Haand.</rdg><lem wit="a82">Haand</lem></app>-->
+</l>
+                        <l>I Bautastenen Runestave.</l>
+                    </lg>
+                    <lg n="3">
+                        <l>Men er jeg feig, fordi jeg ei</l>
+                        <l>Tiltroer mig Vegtams h&#x00F8;ie Galder,</l>
+                        <l>Og seer vel den, som skuer ei</l>
+                        <l>Tungs&#x00F8;vned Hela i vor Alder?</l>
+                    </lg>
+                    
+                    <lg n="4">
+                        <l>
+<pb n="19" ed="A" type="text"/>Jeg f&#x00F8;ler det, om Nordens Tr&#x00E6;,</l>
+                        <l>End stod med t&#x00F8;rre, visne Grene,</l>
+                        <l>Et nyt dog i det Gamles L&#x00E6;</l>
+                        <l>Opvoxde vist blandt Klippens Stene.</l>
+                    </lg>
+                    <lg n="5">
+                        <l>Men, synker, under tunge V&#x00E6;gt,</l>
+                        <l>Den gamle Eeg i Baalets Flamme,</l>
+                        <l>Da ligefuldt dog Vee den Sl&#x00E6;gt,</l>
+                        <l>Som falde laer den gamle Stamme!</l>
+                    </lg>
+                    <lg n="6">
+                        <l>Jeg henrykt skuer hver en Gnist,</l>
+                        <l>Som minder mig om Oldtids Lue,</l>
+                        <l>Men Valhal faldt ved Lokes List,</l>
+                        <l>Og maa da Nordens S&#x00F8;n ei grue?</l>
+                    </lg>
+                    <lg n="7">
+                        <l>Naar Ormen gnaver Tr&#x00E6;ets Rod,</l>
+                        <l>Da maa, trods &#x00D8;rnens &#x00E6;dle Vrede,</l>
+                        <l>Det falde, hvis i Mandeblod</l>
+                        <l>Ei drukne, d&#x00F8;des kan den Lede.</l>
+                    </lg>
+                    <lg n="8">
+                        <l>Vil Nidh&#x00F8;g med sin Ormeh&#x00E6;r <note type="footnote">
+<p rend="noIndent">Saaledes husker jeg tydelig der stod i min Haandskrift, men til Trykningen l&#x00E6;mpede og forvanskede jeg det ret m&#x00E6;rkelig til det flaue:</p>
+<p rend="firstIndent">Vil Nidh&#x00F8;g <hi rend="italic">Luxus</hi> med sin H&#x00E6;r.</p>
+</note>
+</l>
+                        <l>Fra Danmark flye til fjerne Lande,</l>
+                        <l>Da skal, i Ly af Fredriks Sv&#x00E6;rd,</l>
+                        <l>Den gamle Eeg urokket stande.</l>
+                    </lg>
+                    
+                    <lg n="9">
+                        <l>
+<pb n="20" ed="A" type="text"/>Men, hist i Salen seierrig</l>
+                        <l>Uhyret kl&#x00E6;dte Herres&#x00E6;de,</l>
+                        <l>Og derfor l&#x00F8;d ved Danmarks Liig</l>
+                        <l>De gamle Heltes S&#x00F8;rgekv&#x00E6;de.</l>
+                    </lg>
+                    <p rend="firstIndent">Endnu engang blev mit Syn bem&#x00E6;rket, men kun for at belees og udski&#x00E6;ldes. Da jeg nemlig, ei uden F&#x00F8;ie, men ei heller uden Kaadhed, lastede en Comedie i nogle Linier, fik jeg et Svar fra en Navnl&#x00F8;s, der b&#x00F8;r anf&#x00F8;res, ei fordi det har mindste V&#x00E6;rd i nogen Maade, men fordi det viser hvad Man, og vel ikke forgi&#x00E6;ves, dengang ventede at v&#x00E6;kke Latter med i Dannemark. Saa l&#x00F8;d det <note type="footnote">
+<p rend="noIndent">Kbh. Skild. No. 98 1808.</p>
+</note>:</p>
+                    <lg n="1">
+                        <l>Du som reisde dit Land en Bautasteen</l>
+                        <l>Af D&#x00F8;dningebeen og Hoerm&#x00E6;ndsbeen,</l>
+                        <l>Af Hoerkvindebeen og Niddingebeen,</l>
+                        <l>Hvor kan din Barm, saa h&#x00F8;i og reen,</l>
+                        <l>Selv n&#x00E6;re Selvtens<note type="footnote">
+<p rend="noIndent">Jeg skrev dengang Selotens, ved en Trykfel stod der Selvtens, og det var en af Blomsterne jeg fik for min kloge Orthographie.</p>
+                        </note> nidske Smerte?</l>
+                        <l>Hvor kan du midt i Syner om Nord,</l>
+                        <l>Mens Hundene slide Kvindernes Hjerte</l>
+                        <l>Og Ryggen ristes, og, kort hvor du<!--<app type="corrNote"><rdg wit="A">dn</rdg><lem wit="efter Anonym">du</lem></app>--> l&#x00E6;rte</l>
+                        <l>Os Dannemarks D&#x00F8;d saa komisk stor,</l>
+                        <l>I Hjertet saa lav en Misundelse n&#x00E6;re,</l>
+                        <l>At Latteren heel du beholde vil?</l>
+                    </lg>
+                    
+                    <p rend="firstIndent">
+<pb n="21" ed="A" type="text"/>Mit Svar viisde tydelig, at Forn&#x00E6;rmelsen mod mig selv gik mig n&#x00E6;rmere end den mod Sandhed og Danmarks Aand, men dog paatalte jeg denne ikke<!--<app type="corrNote"><rdg wit="A">ikk&#x01DD;</rdg><lem wit="GV">ikke</lem></app>--> us&#x00F8;mmelig i f&#x00F8;lgende Vers <note type="footnote">
+<p rend="noIndent">Kbhavns. Skild. No. 99. 1808.</p>
+</note>:</p>
+                    <lg n="1">
+                        <l>Engellands Niding lod grave i Jord</l>
+                        <l>De Kvinder<!--<app type="corrNote"><rdg wit="A">Kvindrr</rdg><lem wit="GV">Kvinder</lem></app>--> fra Nord,</l>
+                        <l>Og Hundene sleed deres Hjerte,</l>
+                        <l>Harmer det dig, da lyd mit Raad:</l>
+                        <l>Afskye hver Nidingsdaad!</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Ikke du lider en Bautasteen</l>
+                        <l>Af Nidingebeen</l>
+                        <l>Paa Dannemarks Grav, naar Dannemark faldt:</l>
+                        <l>Gyser du ved,</l>
+                        <l>At ei dine Been skulde hvile i Fred;</l>
+                        <l>H&#x00F8;r da mit Raad:</l>
+                        <l>Vogt dig for Nidingedaad!</l>
+                    </lg>
+                    <lg n="3">
+                        <l>Du snakker om Syner fra Nord,</l>
+                        <l>Og veed, at det rimer paa stor,</l>
+                        <l>Hvis i det var tr&#x00E6;ngt dine Blikke,</l>
+                        <l>Du om det vist snakkede ikke.</l>
+                        <l>Kunde du see</l>
+                        <l>Dannemarks Gravh&#x00F8;i, og lee,</l>
+                        <l>(M&#x00E6;rk da mit Ord!)</l>
+                        <l>Var du hin argeste Niding paa Jord.</l>
+                    </lg>
+                    <fw type="longLine"></fw>
+                    <anchor id="struct20b"></anchor>
+                </div>
+                
+                
+    </body>
+</text>
+</TEI>

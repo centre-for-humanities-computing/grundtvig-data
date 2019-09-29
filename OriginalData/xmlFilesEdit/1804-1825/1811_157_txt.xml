@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+		<fileDesc>
+			<titleStmt>
+				<title rend="part">De hellige tre Konger</title>			
+			    <title rend="shortForm">De hellige tre Konger</title>
+				<title rend="partForm">
+					<desc>
+						<label>Hr. Sandsiger!</label>
+						<ident>1</ident>
+					</desc>
+					<desc>
+						<label>Deilig er den Himmel blaa</label>
+						<ident>2</ident>
+					</desc>
+				</title>
+			    <author>Nicolai Frederik Severin Grundtvig</author>
+			    <editor role="philologist">Else Riisager</editor> 
+			    <editor role="student3">Maria Wiggers Pedersen</editor>
+				<editor role="student2">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+				<editor role="student1">Frederik Drei&#x00F8;e Seidelin</editor>
+				<!--<respStmt>
+					<resp>Generated <date when="2009-10-28"/></resp>
+					<name>BookPartnerMedia</name>
+				<editionStmt>
+				<edition n="002"/>
+			</editionStmt>
+				</respStmt>
+				<publicationStmt>
+				<date when="1811">1811</date>
+			</publicationStmt>-->
+			</titleStmt>
+		    <editionStmt>
+		        <edition>
+		        	<idno type="firstUpload">1.2</idno>
+          <idno type="content">1.5</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+		    </editionStmt><!-- <idno type="content">1.4</idno>
+          <idno type="technic">1.3.1</idno> -->
+		    <extent>26 KB</extent>
+		     
+		    <publicationStmt>
+		        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+		        <publisher>Faculty of Arts, Aarhus University</publisher>
+		        <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+		    	<date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1.maj 2014</date>
+		    	<!-- <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date> -->
+		    </publicationStmt>
+		    
+		    <notesStmt>
+		        <note xml:id="thisFile" type="txt" target="1811_157_txt.xml">L&#x00E6;setekst</note>
+		        <note type="com" target="1811_157_com.xml">Punktkommentar</note>
+		        <note type="intro" target="1811_157_intro.xml">Indledning</note>
+		        <note type="txr" target="1811_157_txr.xml">Tekstredeg&#x00F8;relse</note>
+		        <note type="noVar" target="1811_157_v0.xml">Variant</note>
+		    
+		    </notesStmt>
+		    <!-- 
+		        <notesStmt>
+		        <note>bibelhistorisk sang</note>
+		        <note>salmegenre</note>
+		        <note>essay</note>
+		        <note>barnesang</note>
+		        <note>salme</note>
+		        <note></note>
+		        
+		        </notesStmt> -->
+			
+			
+			<sourceDesc>
+			<bibl>
+			    <title type="main">Sandsigeren eller den danske Huusven, et Ugeskrift</title> <!-- nr. 12, s. 179-187 -->
+			    <title type="part">Hr. Sandsiger!; De hellige tre Konger</title> 
+			    <author>N.F.S. Grundtvig</author>
+			    <pubPlace>Ki&#x00F8;benhavn</pubPlace>
+			    <publisher>
+			        <note>Ved K.L. Rahbek</note>
+			        <note>Trykt hos og forlagt af Andreas Seidelin</note>
+			    </publisher>
+			    <date>1811</date>
+			</bibl>
+			    <listWit xml:id="emendation">
+			    	<witness xml:id="A" n="157"><desc>F&#x00F8;rstetrykket</desc><num>1811</num></witness> <!-- 10. april 1811 -->
+			    	<witness><desc>Rettelsesliste til A</desc></witness> <!--  <hi rend="italic">Sandsigeren</hi> no. 13, 17. april 1811-->
+			    </listWit>
+			    <listWit xml:id="pageNumber">
+			        <witness xml:id="PS"><desc>Poetiske Skrifter</desc><num>1</num></witness>
+			        <witness xml:id="US"><desc>Udvalgte Skrifter</desc><num>2</num></witness>
+			        <witness xml:id="VU"><desc>V&#x00E6;rker i Udvalg</desc><num>9</num></witness>
+<!-- digtet med samme tekst findes ogs&#x00E5; i VU 1 s. 295f. -->
+			    	<witness xml:id="GSV"><desc>Grundtvigs Sang-V&#x00E6;rk</desc><num>2, nr. 61</num></witness><!-- nr. 61 -->
+			    </listWit>
+			</sourceDesc> <!-- også kodning til prosa/artikel/hymnologi ?? -->
+		</fileDesc><profileDesc>
+			<textClass>
+				<classCode scheme="http://grundtvigsværker.dk/genre.xml">
+					<term>lyrik</term>
+					<term>sange</term>					
+				</classCode>
+				<keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+					<term>jul</term>
+					<term>bibelhistorie</term>
+					<term>kristendom</term>					
+				</keywords>
+			</textClass>
+		</profileDesc>
+  	
+	     <encodingDesc>
+	         <projectDesc>
+	             <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+	             <p>Grundtvig Centeret arbejder med:</p>
+	             <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+	             <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+	             <p>2.a. Teologi og kirke</p>
+	             <p>2.b. Demokrati og folkelighed</p>
+	             <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+	             <p>3. Videnudveksling, undervisning og formidling</p>
+	         </projectDesc>
+	         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+	     </encodingDesc>
+	     <revisionDesc>
+	         <change xml:id="FDS" who="FDS" when="2012-06-25">indskrivning af brevet efter Grundtvig Biblioteket, ex 2, da teksten manglede ved ORC</change>
+	         <change xml:id="ELR" who="ELR" when="2012-06-25">delvis oprettelse af TEIHeader; afsnit</change>
+	         <change xml:id="MWP" who="MWP" when="2012-06-29">Kollation fra tekst til sk&#x00E6;rm foretaget, sidetal sat ind, strofenummer indsat</change>
+	         <change who="ELR" when="2012-06-29">tilrettet det meste af typografien</change>
+	         <change who="JMR" when="2012-08-08">kollation fra tekst til sk&#x00E6;rm</change>
+	         <change who="ELR" when="2012-10-08">tilrettet TEIHeader; intern kollation foretaget; kollationeret af ELR; kollation f&#x00E6;rdig</change>
+	         <change who="ELR" when="2012-10-09">indsat sidetal fra PS, US, VU indsat; lavet 3 emenderinger</change>
+	         <change who="ELR" when="2012-10-22">Barners tekstfejl</change>
+	     	<change who="ELR" when="2012-11-20">indsat korrrekt witness i corrReg</change>
+	     	<change who="ELR" when="2012-12-07">kontrolleret listWit; indsat links til faksimiler</change>
+	     	<change who="ELR" when="2013-03-25">indsat unicodes for &#x00E6;&#x00F8;&#x00C6;&#x00D8; og efterset dem</change>
+	     	<change who="ELR" when="2013-04-12">m&#x00E6;rkning til registre, dog evt. &#x00D8;sterland</change>
+	     	<change who="ELR" when="2013-04-29">m&#x00E6;rkning til &#x00D8;sterland</change>
+	     	<change who="ELR" when="2013-04-30">faksimiler rettet og kontrolleret rettelser til kolofon; rettet placering af underskrift</change>
+	     	<change who="ELR" when="2013-05-01">opdatering af TEIHeader til oplastning</change>
+	     	<change who="ELR" when="2013-05-23">ekstra kodning til registre; bibelstedsopm&#x00E6;rkning; verbalkommentarer indtil s. 183</change>
+	     	<change who="ELR" when="2013-05-24">kodning til com; bibelsteder fundet, kodning efterses</change>
+	     	<change who="ELR" when="2013-07-31">revision af com ifm. indledningen og salmebogskommentarer</change>
+	     	<change who="ELR" when="2013-08-09">revision f&#x00E6;rdig; bibelopm&#x00E6;rkning lavet om til com</change>
+	     	<change who="ELR" when="2013-08-16">rettelser efter 1. redaktion</change>
+	     	<change who="ELR" when="2013-08-16">rettelser efter korrekturl&#x00E6;sning</change>
+	     	<change who="ELR" when="2013-09-26">rettelser efter 3. redaktion; 2. redaktion ikke foretaget</change>
+	     	<change who="ELR" when="2013-10-14">rettelse af fax-nr.</change>
+	        <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+	     	<change who="ELR" when="2013-12-18">kodning af bibelsteder direkte i tekstfilen</change>
+	     	<change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+	     	<change who="ELR" when="2014-02-05">tilpasning til register</change>
+	     	<change who="ELR" when="2014-03-20">indsat alternativ titel</change>
+	     	<change who="ELR" when="2014-04-28">kontrolleret kodning af bibelhenvisninger især dobbelte henvisninger</change>
+	     	<change who="ELR" when="2016-03-17">genremenukodning; tilpasning af app</change>
+	     	<change who="ELR" when="2017-03-29">indsat partForm</change>
+	     </revisionDesc>  
+</teiHeader>
+<!-- er Barners (som ogs&#x00E5; findes i Kv&#x00E6;dlinger) en tekstfejl? ja. mail af 16.10. fra Asgerd Gudiksen-->
+	<!-- sidetal PS 1, side 298ff; US 2 side 77 ff; VU 1 s. 295f. og 9 s. XIII-XV og 15-17; GSV 2. nr 61 -->
+    	 <text type="txt">
+    	     	 <body>
+    
+    
+    <div type="[Brev]">
+    	<pb type="periText" facs="1811_157_fax001.jpg"/> 
+    	<pb type="periText" facs="1811_157_fax002.jpg"/> 
+    	<pb type="periText" facs="1811_157_fax003.jpg"/>
+    	<pb type="periText" facs="1811_157_fax004.jpg"/>
+    	<pb type="text" facs="1811_157_fax005.jpg" n="179" ed="A"/>
+    	
+    	  	
+        
+        <pb type="edition" n="298" ed="PS"/>
+        <pb type="edition" n="77" ed="US"/>
+        <pb type="edition" n="XIII" ed="VU"/>
+        
+        
+    	<head rend="2">
+<hi rend="bold">Hr. <seg type="com" n="com1">Sandsiger</seg>!</hi>
+</head> <!-- evt.: <p rend="secondIndent">Hr. Sandsiger!</p>  -->
+    	<p rend="noIndent">I det jeg tager mig den Frihed at tilsende Dem medf&#x00F8;lgende Sang til Indrykkelse i Deres Blad, beder jeg om Tilladelse til at <pb type="edition" n="299" ed="PS"/>sige et Par Ord om den Art af Sange, hvortil den tildels h&#x00F8;rer, nemlig de historisk-kristelige. I Lutherdommets f&#x00F8;rste halvtredie Aarhundrede udgjorde saadanne den st&#x00F8;rste Del af de forordnede Psalmer, og mig tykkes, med Rette, da den historiske Psalme er at ligne ved en rindende B&#x00E6;k, og den dogmatiske eller moralske derimod langt <seg type="com" n="com27">ligere</seg> de stillestaaende Vande. Ingen kan fort&#x00E6;nke mig i, at jeg med denne Overbevisning er utilfreds med den aldeles Fortr&#x00E6;ngelse af historiske Psalmer, der i den nyeste Psalmebog lader sig tilsyne. Visselig ville Mange med mig i denne Bogs fleste Sange finde den gamle Sandhed bekr&#x00E6;ftet, at det blot lyriske Digt af N&#x00F8;dvendighed udmattes, da den begeistrede Digter ved det f&#x00F8;rste Greb i Str&#x00E6;ngen maa str&#x00E6;be at fremlokke en Tone, der heelt udtaler <pb type="text" facs="1811_157_fax006.jpg" ed="A" n="180"/>hans F&#x00F8;lelse, og siden n&#x00F8;ies med enten at <pb type="edition" n="XIV" ed="VU"/>opl&#x00F8;se, gjentage, eller sagte antyde en mere eller mindre besl&#x00E6;gtet F&#x00F8;lelse. De mest <seg type="com" n="com2">overfl&#x00F8;dige</seg> Bilag hertil vil Man finde i de mange Psalmer over Guds Egenskaber, der ei allene ere Gjentagelser og Opl&#x00F8;sninger af sig selv, men som oftest af hinanden. L&#x00E6;gger Man nu til, at disse dog, i det Hele taget, ere og maa v&#x00E6;re de fortrinligste, og at de egenlig moralske <seg type="com" n="com3">L&#x00E6;redigte</seg> if&#x00F8;lge deres Natur maa vorde endnu mere enstonede, t&#x00F8;rre og kolde, maa Man endnu mere beklage Mangelen af det historiske Liv, og <pb type="edition" n="78" ed="US"/>jeg t&#x00F8;r frimodig paastaae, at selv naar Moral og Fornuftreligion skulde v&#x00E6;re Hovedgjenstanden for de kirkelige Sange, vilde den <seg type="com" n="com4">historiske</seg> Dragt v&#x00E6;re saare &#x00F8;nskelig; thi det er dog udentvivl vist, at Digterens Begeistring er langt varigere og fastere, naar den er knyttet til M&#x00E6;nd og Tildragelser, samt at det Pusterum, der undes ham under den <seg type="com" n="com4">historiske</seg> Fremskriden, s&#x00E6;tter Aanden istand til, paa de mest <seg type="com" n="com11">udm&#x00E6;rkede</seg> Punkter at virke med sin hele <app type="corrNote" select="yes">
+<lem wit="GV">Kraft.</lem>
+<rdg wit="A">Kraft</rdg><witDetail n="0" wit="A"></witDetail>
+</app> Jeg anseer det for ligesaavist, at M&#x00E6;ngden og ikke blot M&#x00E6;ngden, baade igiennem det levende Exempel kommer til en klarere Beskuelse af Dydens Herlighed og Glands, end igiennem den halvd&#x00F8;de l&#x00E6;rende Fremstilling, samt at den blotte Formanings Virkning aldrig kan v&#x00E6;re saa st&#x00E6;rk, som den de enkelte Opmuntringstoner, kunne frem<pb type="text" facs="1811_157_fax007.jpg" n="181" ed="A"/>bringe, der i den historiske Sang synede mindre at v&#x00E6;re fremlokkede med Overl&#x00E6;g end at have dannet sig selv i Digterens &#x00D8;re. Dette lod sig omst&#x00E6;ndelig udvikle ved igiennem Historien at henpege paa de Sange, hvori de Gamle fremsatte deres Myther, og i det hele paa den Virkning, Historien gennem alle Tider i <seg type="com" n="com25">K&#x00E6;mpeviser</seg> og Kr&#x00F8;niker, Legender og Eventyr har havt paa Folkene; men det beh&#x00F8;ves her saameget desmindre, som Sp&#x00F8;rgsmaalet her egenlig bliver, hvorledes kristelig religi&#x00F8;se Sange b&#x00F8;r v&#x00E6;re beskafne. Maa nu enhver <pb type="edition" n="300" ed="PS"/>Kristen ansee <rs type="title" key="title788">Bibelen</rs> for et Indbegreb af Alt, hvad der troet og fulgt kan gi&#x00F8;re os timelig og evig lyksalige, og tillige er sandere og h&#x00F8;iere end Alt, hvad Mennesker kan opt&#x00E6;nke, saa f&#x00F8;lger heraf baade, at <rs type="title" key="title788">Bibelens</rs> Indhold maa v&#x00E6;re Sangenes, og at disse maa v&#x00E6;re digtede i hins Aand. Men nu er saa stor en Del af begge Testamenter aldeles historisk, nu er <persName key="pe45">Jesu</persName> Liv ei allene det fuldkomneste Dydsm&#x00F8;nster, men indeholder tillige Fakta, hvorpaa en Kristens hele Tro og Saligheds Haab maa grunde sig, saasom: <persName key="pe45">Kristi</persName> Mirakler, Lidelse, Opstandelse og Himmelfart, og endelig ere <persName key="pe45">Jesu</persName> Lignelser et nyt Bevis for, hvorledes selv Moralen b&#x00F8;r if&#x00F8;re sig en mere eller mindre <seg type="com" n="com5">historisk</seg> Dragt for at vinde <seg type="com" n="com12">Indgang</seg>. F&#x00F8;ier Man til, at det mindre er Kundskab om Pligterne end Villie og <seg type="com" n="com15">St&#x00F8;rke</seg> til at opfylde dem og til at forsage, hvad der beha<pb type="text" facs="1811_157_fax008.jpg" n="182" ed="A"/>ger Sandserne, der fattes Menneskene, beh&#x00F8;ves der vel ei mere Bevis for, at de fleste Kirkesange burde v&#x00E6;re levende Billeder af <persName key="pe45">Jesu</persName> og de hellige M&#x00E6;nds Liv; og de <seg type="com" n="com6">fremfarne</seg> Tider have l&#x00E6;rt, at saadanne tale kraftig til Hjertet og laane Sj&#x00E6;len Vinger til h&#x00F8;i Flugt over det Jordiske. Naar derfor en Tidsalders Mennesker ei l&#x00E6;ngere finde Behag i eller kunne opbygges ved saadanne, da er det et sandru<!-- stavefejl: mangler d --> Vidnesbyrd om, at Kristendommen ei l&#x00E6;ngere boer i <pb type="edition" n="79" ed="US"/>deres Hjerte, at dens H&#x00F8;itider ei l&#x00E6;ngere ere deres, at <persName key="pe45">Jesu</persName> Liv ei l&#x00E6;ngere er det menneskelige Gudsbillede, hvorpaa &#x00D8;iet lyster at dv&#x00E6;le, at <rs type="bible" rend="reference" key="Gal 5,11">hans Kors forarger dem</rs>, at <rs type="bible" rend="reference" key="Rom 6,4-6">de ei med ham ville <!-- spis i oprindeligt tryk -->begrave det gamle Menneske for at opstaae forklarede med ham</rs>, og at i det Hele &#x00D8;iet er blindt for den hellige Aand, der hvilede over de hedenfarne Guds M&#x00E6;nd, og endnu sv&#x00E6;ver saa kraftelig over deres evige Mindesm&#x00E6;rker, at Enhver, som bes&#x00F8;ger dem med ydmyg F&#x00F8;lelse af sin Trang vil f&#x00F8;le sig grebet og <seg type="com" n="com16">st&#x00F8;rket</seg> og <pb type="edition" n="XV" ed="VU"/>l&#x00F8;ftet til et h&#x00F8;iere Samfund. Jeg kan ikke andet end med inderlig Bedr&#x00F8;velse her gjentage den lette men dog saa tunge Spaadom: at dersom vi endnu l&#x00E6;ngere ville vedblive at ringeagte sand Kristendom og <seg type="com" n="com7">daarligen</seg> sysle med at opelske et <rs type="bible" rend="reference" key="1 Mos 2,17">Kundskabstr&#x00E6;</rs> af <rs type="bible" rend="reference" key="Joh 15,6">den halvvisne Gren</rs>, som er l&#x00F8;srevet fra <rs type="bible" rend="reference" key="Es 11,1">sin hellige Rod</rs>, da vil Sl&#x00E6;gten snart vorde <rs type="bible" rend="reference" key="1 Mos 3,24">udjaget af sit dr&#x00F8;mte Paradis</rs>, uden anden Vinding end den raadnende <pb type="text" facs="1811_157_fax009.jpg" n="183" ed="A"/>
+    		<rs type="bible" rend="allusion" key="1 Mos 3,6">Frugt, den stjal med formastelig Haand</rs>, og da vil den forgj&#x00E6;ves l&#x00E6;nges efter det foragtede <rs type="bible" rend="reference" key="1 Mos 2,9">Livets Tr&#x00E6;</rs>, fortvivlende vil den staae med den m&#x00F8;rke Grav for sig, og bag sig <rs type="bible" rend="reference" key="1 Mos 3,24">Keruben med det flammende Sv&#x00E6;rd</rs>. Da den foragtede Sandheden, vil den komme til at troe L&#x00F8;gnen, atter vil <placeName key="fak12">Europa</placeName> ligge kraftl&#x00F8;s nedsunken mellem Vantroens og Overtroens gabende Afgrunde og kun sl&#x00E6;be sig frem drevet af Despotismens Jernsv&#x00F8;ber, som den romerske Verden fordum. At bortvende denne Ulykke kan den Gud allene, <pb type="edition" n="301" ed="PS"/>som fordum gav det stinkende Lig Liv og Kraft, men at <seg type="com" n="com17">st&#x00F8;rke</seg> det d&#x00F8;ende maa v&#x00E6;re enhver Kristens Bestr&#x00E6;belse. Under den Foruds&#x00E6;tning, at der endnu ere mange Tusinder i <placeName key="fak24">Norden</placeName>, som ei have 
+    		<rs type="bible" key="2 Kong 1,13-17 og Visd 14,29" rend="allusion">b&#x00F8;iet Kn&#x00E6; for Tidens livl&#x00F8;se Afgudsbilleder</rs>, men som dog kunne tr&#x00E6;nge til at <seg type="com" n="com18">st&#x00F8;rkes</seg> i Troen og Haabet, troer jeg, at en Samling af kristelige, mest historiske Sange vilde v&#x00E6;re Mange kj&#x00E6;rkommen, og en saadan agter jeg at udgive, om Gud under Liv og Helsen. Endel skulle v&#x00E6;re selvgjorte, men den st&#x00F8;rste Del <seg type="com" n="com19">borgede af</seg> <persName key="pe294">Kingo</persName>, <persName key="pe42">Luther</persName>, og flere af de &#x00E6;ldre kristelige Digtere med de Forandringer, Tiden <hi rend="italic">med Ret</hi> kan fordre. Skulde Nogen af vore nulevende Digtere, besj&#x00E6;let af sand kristelig Tro og Iver ville h&#x00E6;dre denne Samling med Bidrag, skal det v&#x00E6;re mig saare kj&#x00E6;rt.</p>
+        
+    	<fw type="longLine"/><!-- 2 Kong 1,13-17 og Visd 14,29 -->
+    </div>
+    	     	 	<div type="&#x005B;Deilig er den Himmel blaa&#x005D;">
+    <pb type="text" facs="1811_157_fax010.jpg" n="184" ed="A"/>
+        <pb type="edition" n="80" ed="US"/>
+        <pb type="edition" n="15" ed="VU"/>
+        <pb type="edition" n="61" ed="GSV"/>
+        
+        
+<head rend="2">
+<hi rend="bold">De hellige tre Konger.</hi>
+</head>
+<head rend="0">(En Barnesang.)</head>
+    
+<lg n="1">
+<l>Deilig er den Himmel blaa,</l>
+<l>Lyst det er, at see derpaa,</l>
+<l>Hvor de gyldne Stjerner blinke,</l>
+<l>Hvor de smile, hvor de vinke,</l>
+<l>Os fra Jorden op til sig.</l>
+</lg>
+    
+<lg n="2">
+<l><seg type="com" n="com20">Kommer</seg> Smaa, og <seg type="com" n="com21">h&#x00F8;rer til</seg>!</l>
+<l>Jeg for eder sjunge vil</l>
+<l>Om saa lys og mild en Stjerne,</l>
+<l>Jeg det veed, I h&#x00F8;re gierne:</l>
+<l><rs type="bible" rend="reference1787" key="Matt 19,14">Himlen h&#x00F8;rer eder til</rs>.</l>
+</lg>
+
+<lg n="3">
+<l><pb type="edition" n="16" ed="VU"/>Det var midt i Julenat,</l>
+<l>Hver en Stjerne glimted mat,</l>
+<l><rs type="bible" rend="reference" key="Matt 2,2" subtype="bibleStart" n="bible20"/>Men med Eet der blev at skue</l> 
+<l>En saa klar paa Himlens Bue<rs type="bible" rend="reference" key="Matt 2,2" subtype="bibleEnd" n="bible20"/>,</l>
+<l>Som en liden Stjernesol.</l>
+</lg>
+
+<lg n="4">
+<l>Langt herfra, i <placeName key="poet441">&#x00D8;sterland</placeName></l> 
+<l>Stod en gammel <seg type="com" n="com8">Stjernemand</seg>,</l>
+<l>Saae fra Taarnet vist paa Himlen,</l>
+<l>	<rs type="bible" rend="reference" key="Matt 2,2">Saae det Lys</rs> i Stjernevrimlen,</l>
+<l>Blev i Sind saa barneglad.</l>
+</lg>
+
+<lg n="5"> <!-- hele strofen skal faktisk m&#x00E6;rkes til Matt 2,2 samt 4 Mos 24,15 og 17 (Mika 5, 1 og 3)-->
+<l><pb type="text" facs="1811_157_fax011.jpg" n="185" ed="A"/><pb type="edition" n="302" ed="PS"/>Naar <rs type="bible" rend="reference" key="Matt 2,2">den Stjerne</rs> lys og blid</l>
+<l>Sig lod see ved Midnatstid,</l>
+<l>Var det <rs type="bible" rend="reference" key="Matt 2,5-6 og Mika 5,1.3">Sagn fra gamle Dage</rs>,</l>
+<l><rs type="bible" rend="allusion" key="4 Mos 24,17" subtype="bibleStart" n="bible21"/>At en Konge uden Mage</l>
+<l>Skulde f&#x00F8;des paa vor Jord<rs type="bible" rend="allusion" key="4 Mos 24,17" subtype="bibleEnd" n="bible21"/>.</l>
+</lg>
+
+<lg n="6">
+<l>Derfor blev i <placeName key="poet441">&#x00D8;sterland</placeName></l> 
+<l>Nu saa glad den gamle Mand;</l>
+<l>Thi han vilde dog saa gierne</l>
+<l>See den lyse Kongestjerne,</l>
+<l>F&#x00F8;r han lagdes i sin Grav.</l>
+</lg>
+
+<lg n="7">
+<l><pb type="edition" n="81" ed="US"/>Han gik til sin Konges Slot,</l>
+<l>Kongen kiendte ham saa godt,</l>
+<l>H&#x00F8;rte <seg type="com" n="com14">og</seg> med Hjertens Gl&#x00E6;de,</l>
+<l>At det Lys var nu <seg type="com" n="com9">tilst&#x00E6;de</seg>,</l>
+<l>Hvorom gamle Spaadom l&#x00F8;d.</l>
+</lg>
+
+<lg n="8">
+<l>Han med S&#x00F8;n og <seg type="com" n="com8">Stjernemand</seg></l>
+<l>Flux uddrog af <placeName key="poet441">&#x00D8;sterland</placeName>,</l> 
+<l>For den Konge at oplede,</l>
+<l>For den Konge at <app type="corrNote" select="yes">
+<lem wit="Rettelsesliste">tilbede</lem>
+<rdg wit="A">oplede</rdg><witDetail n="0" wit="A"></witDetail>
+</app>,</l>
+<l>Som var f&#x00F8;dt i samme Stund.</l>
+</lg>
+    
+<lg n="9">
+<l><rs type="bible" rend="reference" key="Matt 2,1-2" subtype="bibleStart" n="bible22"/>Klare Stjerne ledte dem</l>
+<l>Lige til <placeName key="fak10">Jerusalem</placeName><rs type="bible" rend="reference" key="Matt 2,1-2" subtype="bibleEnd" n="bible22"/>,</l>
+<l>Kongens Slot de gik at finde,</l>
+<l>Der var vel en Konge inde,</l>
+<l>Men ei den de <seg type="com" n="com22">ledte om</seg>.</l>
+</lg>
+
+<lg n="10">
+<l><pb type="text" facs="1811_157_fax012.jpg" n="186" ed="A"/><rs type="bible" rend="reference" key="Matt 2,9" subtype="bibleStart" n="bible23"/>Klare Stjerne hasted frem,</l>
+<l>Ledte dem til <placeName key="fak439">Betlehem</placeName>,</l>
+<l>Over Hytten lav og lille</l>
+<l>Stod saa pludselig den stille<rs type="bible" rend="reference" key="Matt 2,9" subtype="bibleEnd" n="bible23"/>,</l>
+<l>Straalede saa lyst og mildt.</l>
+</lg>
+
+<lg n="11">
+<l><pb type="edition" n="303" ed="PS"/><rs type="bible" rend="quote" key="Matt 2,10">Glade udi Sj&#x00E6;l og Sind</rs></l>
+<l><rs type="bible" rend="reference" key="Matt 2,11" subtype="bibleStart" n="bible24"/>
+<seg type="com" n="com10">Ginge</seg> de i Hytten ind,</l>
+<l>Der var ingen Kongetrone,</l>
+<l>Der kun sad en fattig Kone,</l>
+<l>Vugged Barnet i sit Ski&#x00F8;d<rs type="bible" rend="reference" key="Matt 2,11" subtype="bibleEnd" n="bible24"/>.</l>
+</lg>
+
+<lg n="12">
+<l><placeName key="poet441">&#x00D8;sterlands</placeName> de vise M&#x00E6;nd</l>
+<l>Fandt dog Stjernen der igien,</l> 
+<l>Som de skued i det H&#x00F8;ie,</l> <!-- evt. Matt 2,9 -->
+<l>Thi i <app type="corrNote" select="yes">
+<lem wit="GV">Barnets</lem>
+<rdg wit="A">Barners</rdg><witDetail n="0" wit="A"></witDetail>
+</app> milde &#x00D8;ie</l>
+<l>Funklende og klar den sad.</l>
+</lg>
+
+<lg n="13">
+<l>Den var dem et Tegn saa vist,</l>
+<l>At de saae den sande <seg type="com" n="com13">
+<persName key="pe45">Krist</persName></seg>,</l>
+<l>Derfor <rs type="bible" rend="reference" key="Matt 2,11" subtype="bibleStart" n="bible25"/>neied de sig glade,</l>
+<l>Offrede paa gyldne Fade</l>
+<l>R&#x00F8;gelser med s&#x00F8;de Lugt<rs type="bible" rend="reference" key="Matt 2,11" subtype="bibleEnd" n="bible25"/>.</l>
+</lg>
+
+<lg n="14">
+<l><pb type="edition" n="82" ed="US"/>Vil I Smaa ei ogsaa gierne</l>
+<l>See den lyse milde Stjerne,</l>
+<l>For den Konge dybt jer neie,</l>
+<l>Som Guds Rige har i Eie,</l>
+<l>Og vil lukke jer derind?</l>
+</lg>
+
+<lg n="15">
+<l><pb type="text" facs="1811_157_fax013.jpg" n="187" ed="A"/><pb type="edition" n="17" ed="VU"/>Seer I til den Himmel blaa,</l>
+<l>Med de gyldne Stjerner paa,</l>
+<l><rs type="bible" rend="allusion" key="&#x00C5;b 22,16" subtype="bibleStart" n="bible26"/>Der den Stjerne ei I finde,</l>
+<l>Men den er dog <seg type="com" n="com26">vist</seg> derinde</l>
+<l>Over <persName key="pe45">Jesu</persName> Kongestol<rs type="bible" rend="allusion" key="&#x00C5;b 22,16" subtype="bibleEnd" n="bible26"/>.</l>
+</lg>
+
+<lg n="16">
+<l>Thi det Barn, som var paa Jord</l>
+<l>Blevet er en Konge stor,</l>
+<l><rs type="bible" rend="eg" key="1 Pet 3,22" subtype="bibleStart" n="bible27"/>Og han sidder nu deroppe,</l> 
+<l>Over alle Stjernetoppe</l>
+<l>Hos Gud Faders h&#x00F8;ire Haand<rs type="bible" rend="eg" key="1 Pet 3,22" subtype="bibleEnd" n="bible27"/>.</l>
+</lg>
+
+<lg n="17">
+<l><pb type="edition" n="304" ed="PS"/><seg type="com" n="com23">Neier eder</seg> kun, I Smaa!</l>
+<l>Han fra Himlen seer derpaa.</l>
+<l><seg type="com" n="com24">Sender</seg> ham med Hjertensgl&#x00E6;de</l>
+<l>Lov og Pris til h&#x00F8;ie S&#x00E6;de!</l>
+<l>Det er R&#x00F8;gelse for ham.</l>
+</lg>
+
+<lg n="18">
+<l>	<rs type="bible" rend="reference" key="Matt 2,9" subtype="bibleStart" n="bible28"/>Stjernen ledte vise M&#x00E6;nd</l>
+<l>Til nyf&#x00F8;dte Konge hen<rs type="bible" rend="reference" key="Matt 2,9" subtype="bibleEnd" n="bible28"/>,</l>
+<l>I har <seg type="com" n="com14">og</seg> en saadan Stjerne,</l>
+<l>Og naar I den f&#x00F8;lge gierne,</l>
+<l>Komme I til <persName key="pe45">Jesum</persName> vist.</l>
+</lg>
+
+<lg n="19">
+<l><rs type="bible" rend="reference1787" key="2 Pet 1,19 og Sl 119,105" subtype="bibleStart" n="bible29"/>Denne Stjerne, lys og mild,</l>
+<l>Som kan aldrig lede vild,</l>
+<l>Er hans Guddomsord det klare,</l>
+<l>Som han lod os aabenbare</l>
+<l>Til at lyse for vor Fod.<rs type="bible" rend="reference1787" key="2 Pet 1,19 og Sl 119,105" subtype="bibleEnd" n="bible29"/></l>
+</lg>
+		
+		<p rend="right">
+<hi rend="italic">N. F. S. Grundtvig.</hi>
+</p>
+		<!-- <p rend="thirdIndent">N. F. S. Grundtvig.</p> -->
+    	
+    	
+    	    	    
+    	<pb type="periText" facs="1811_157_fax014.jpg"/> <!-- Rahbeks tekst -->
+    	<pb type="periText" facs="1811_157_fax015.jpg"/>
+    	<pb type="periText" facs="1811_157_fax016.jpg"/>
+    	<pb type="periText" facs="1811_157_fax017.jpg"/>
+    	<pb type="periText" facs="1811_157_fax018.jpg"/>
+    	<pb type="periText" facs="1811_157_fax019.jpg"/> <!-- omslag -->
+    	<pb type="periText" facs="1811_157_fax020.jpg"/>
+    
+</div>
+    
+    
+    
+</body>
+</text>
+</TEI>

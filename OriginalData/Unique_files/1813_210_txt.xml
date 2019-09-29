@@ -1,0 +1,957 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<!--<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/access.xsl"?>-->
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<?xml-stylesheet type="text/css" href="file://C:/gvDataLocal/css/oxyAuthorEditMinimum.css"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="main">Til Fædrenelandet om dets Tarv og Fare. Et Ord</title>
+      <title rend="shortForm">Til Fædrenelandet</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Holger Berg</editor>
+      <editor role="student1">Bjarke Lynning Nielsen</editor>
+      <editor role="student2">Jeppe Karnøe Knudsen</editor>
+      <!--<editor role="student3">[navn]</editor>-->
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.13</idno>
+               <idno type="content">1.13</idno>
+               <idno type="technic">1.13.1</idno>
+                 <!--<idno type="addCom">1.14</idno>-->
+                 <!--tilføj addIntro osv, se mail-->
+            </edition>
+         </editionStmt>
+     <extent>91 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2019-04-01">www.grundtvigsværker.dk, version 1.14, 1. april 2019</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>2018-11-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1813_210_txt.xml" type="txt">Læsetekst</note>
+            <note target="1813_210_com.xml" type="noCom">Punktkommentar</note>
+            <note target="1813_210_intro.xml" type="noIntro">Indledning</note>
+            <note target="1813_210_txr.xml" type="noTxr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+              <note type="noBible"/>
+              <note type="noMyth"/>
+              <note type="noPersName"/>
+              <note type="noPlaceName"/>
+              <note type="noTitle"/>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="210">
+        <desc>Førstetrykket</desc>
+        <num>1813</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>3</num>
+       </witness>
+           <witness xml:id="US">
+        <desc>Udvalgte Skrifter</desc>
+        <num>2</num>
+       </witness>
+           <witness xml:id="VU">
+        <desc>Værker i Udvalg</desc>
+        <num>2</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>prosa</term>
+       <term>pamfletter</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+           <term>Danmark</term>
+           <term>nordisk</term>
+           <term>historie</term>
+           <term>kristendom</term>
+           <term>politik</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+         <change who="NHB" when="2018-05-08">klargjort til førstekollation</change>
+         <change who="BLN" xml:id="BLN" when="2018-05-15">Rettelser og kommentarer indført i forb. m. 1. koll., Eks. 8996, KB, blåt omslag</change>
+         <change who="NHB" when="2018-05-18">påbegyndt 2. kollation efter eksemplar med blåt omslag fra Grundtvig Centerets samling (indhæftet og beskåret). 3. kollation foretages efter Grundtvig-Bibliotekets ex. 1 (indbundet og beskåret). Nået til side 33 nederst</change>
+         <change who="KN" when="2018-05-25" xml:id="KN">supplerende kommentarer til ovenstående: NHB er færdig med K2 (23/5); omslaget er snarere blågråt.</change>
+         <change xml:id="JKK" who="JKK" when="2018-06-21">Faksimilering udført efter KB-eksemplar. 3. kollation udført efter GB-eksemplar (Schönberg) og rettelser er sammenlignet med de 2 andre eksemplarer og herefter indført. Sidetal indført for PS, UV og VU</change>
+         <change who="NHB" when="2018-10-16">autonummeret sidetal</change>
+      <change who="auto" when="2018-10-17">Autoopmærket af autotag.awk v12 KK 2017-03-09</change>
+         <change who="NHB" when="2018-10-19">gennemset placeName indtil Vardøhus</change>
+         <change who="NHB" when="2018-10-22">indtil og med strofe 38 i digtet Tyge Rothe</change>
+         <change who="NHB" when="2018-10-22">At Gud vil høre vore Hjerters Bøn</change>
+         <change who="NHB" when="2018-10-25">valideret. Eneste fejl skyldes seg i titlePage</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">
+    <pb type="periText" facs="1813_210_fax001.jpg"/>
+    <pb type="periText" facs="1813_210_fax002.jpg"/>
+    
+	 
+		<front rend="[Titelblad]">
+			<titlePage type="first">
+			<pb type="text" facs="1813_210_fax003.jpg" ed="A" n="1" rend="supp"/>
+			
+				<docTitle>
+	<titlePart type="main">Til <seg type="com" n="com0"><!--dvs. fædrelandet.--><!--dvs. fædrelandet.-->Fædrenelandet</seg></titlePart>
+				     <titlePart type="part">Om</titlePart>
+	<titlePart type="main">dets Tarv og Fare.</titlePart>
+				     <titlePart type="part">Et <seg type="com" n="com0"><!--indlæg, meningstilkendegivelse.--><!--ODS 2-->Ord</seg></titlePart>
+</docTitle>
+<byline>ved</byline> 
+	<docAuthor>N. F. S. Grundtvig,
+			     <note type="prof">Præst.</note>
+	     </docAuthor>
+				
+				<epigraph>
+<p rend="firstIndent">Sølv og Guld haver jeg ikke, men det, som jeg haver, det giver jeg dig: i <persName key="pe45"><hi rend="spaced">Jesu</hi> Christi <seg type="com" n="com0"><!--nazaræerens, fra Nazaret.-->Nazaræi</seg></persName> <hi rend="spaced">Navn <seg type="com" n="com0"><!--stå (imperativ).-->stat</seg> op!</hi></p>
+
+				     <p rend="firstIndentRight"><rs type="bible" key="ApG 3,1" rend="normForm">Ap. Gjern. 3.</rs></p>
+				</epigraph>
+				<docImprint>
+				<pubPlace><hi rend="spaced">Kjøbenhavn, 1813.</hi></pubPlace>
+				     <publisher>Forlagt af og trykt hos <hi rend="spaced">P. H. Höeckes</hi> Enke, i store Helliggeiststrædet No. 144.</publisher>
+			     </docImprint>
+
+</titlePage>
+		     
+
+</front>
+        <pb type="text" facs="1813_210_fax004.jpg" ed="A" n="2" rend="supp"/>
+<body>
+   
+
+<div type="Ved Tyge Rothes Minde">
+     <pb type="text" facs="1813_210_fax005.jpg" ed="A" n="3" rend="supp"/>
+     <pb type="edition" n="701" ed="US"/>
+     <pb type="edition" n="106" ed="PS"/>
+
+<head rend="2">Ved <persName key="pe748">Tyge Rothes</persName> Minde.</head>
+
+  
+   
+
+<lg n="1">
+<l><pb type="text" facs="1813_210_fax006.jpg" ed="A" n="4" rend="supp"/><hi rend="initial">I</hi>! <placeName key="fak457">Sydens</placeName> Lande, med den kvalme Hede!</l>
+<l>Som ynke <placeName key="fak24">Norden</placeName> med sin Sne og Iis;</l>
+<l>Hvis Sjælen ei indsovet er dernede,</l>
+<l>Da <seg type="com" n="com0"><!--hør (imperativ pluralis).-->hører</seg> til! jeg sjunger <placeName key="fak24">Nordens</placeName> Pris;</l>
+<l>Hist raadned snart de stille, lune Vande,</l>
+<l>Her sig de frosne, som I selv maa sande,</l>
+<l>Til <seg type="com" n="com0"><!--dvs. styrkelse. Drikkevand var generelt beskidt, så det rene isvand blev som en styrkende drik.--><!--ODS Isvand og Dagligliv i Danmark bind 1, s. 254.-->Størkelse</seg> lod sagtelig optøe.</l>
+</lg>
+<lg n="2">
+<l>I! <placeName key="fak24">Nordens</placeName> Riger, med de høie Fjelde!</l>
+<l>Som <seg type="com" n="com0"><!--vurderer, bedømmer.--><!--neutral betydning, modsat DDO.-->skatte</seg> <placeName key="fak14">Danmark</placeName> efter <seg type="com" n="com0"><!--udstrækning. Hentydning til Danmarks ringe størrelse i forhold til Sverige og Norge.-->Alenmaal</seg>,</l>
+<l>Kom, <seg type="com" n="com0"><!--læg (imperativ pluralis).-->lægger</seg> her mod <placeName key="fak14">Danmarks</placeName> eders Vælde,</l>
+<l>Men <rs type="bible" key="Dan 5,27" rend="allusion"><seg type="com" n="com0"><!--SAMME COM-nummer SOM FORRIGE-->lægger</seg> den i <!--ODS Vejeskaal 2 henviser til Dan 5,27-->Aandens <seg type="com" n="com0"><!--vægtskål.-->Veieskaal</seg></rs>!</l>
+<l>Og, hvis da <seg type="com" n="com0"><!--endog.-->end</seg> den Skaal med <placeName key="fak14">Danmarks</placeName> Vælde</l>
+<l>Ei synker dybt som Agren under Fjelde,</l>
+<l>Skal <hi rend="spaced"><seg type="com" n="com0"><!--her både digterens tunge og formentlig også en hentydning til viseren på vægtskålen, kendt fra vendingen "at være tungen på vægtskålen".-->Tungen</seg></hi> dog sig røre til dens Pris.</l>
+</lg>
+<lg n="3">
+<l>Ei vil jeg tale om de gamle Dage,</l>
+<l>Da <seg type="com" n="com0">Vælden <!--overherredømmet skiftede frem og tilbage og alene afhang af sværdets magt.--><!--ODS Sværdod (overført betydning).-->vaklede paa Sværdeod</seg>,</l>
+<l>I Balg og Kogger som hinandens Mage</l>
+<l>Om den I trak paa Valen ivrig Lod,</l>
+<l>Men den, hos hvem en <persName key="pe49">Snorro</persName> er oprundet,</l>
+<l><app type="corrNote" select="yes"><lem wit="GV">Fra</lem><rdg wit="A">Fro</rdg><witDetail n="20" rend="ft" wit="A">o for a. Fro giver ingen mening, og fra optræder i næste verslinje<note corresp="PS" n="106">Fra</note><note corresp="US" n="701">Fra</note></witDetail></app> <persName key="pe237">Saxos</persName> Amme haver <seg type="com" n="com0"><!--sejren, førstepladsen, belønningen.-->Prisen vundet</seg>,</l>
+<l>Fra stumme <placeName key="fak453">Svithjod</placeName> de den begge vandt.</l>
+</lg>
+<lg n="4">
+<l><pb type="edition" n="107" ed="PS"/>Nei, om de lyse Tider vil jeg melde,</l>
+<l>Da <seg type="com" n="com0"><!--hentydning til <rs type="title" key="title788">Biblen</rs>.--><!--ODS bog 2.1-->Bøgers Bog</seg> i <placeName key="fak24">Norden</placeName> aaben laa,</l>
+<l>Mon videre I da fra eders Fjelde</l>
+<l>End <placeName key="poet219">Dannemark</placeName> paa sine Sletter saae?</l>
+<l>Nei, Taarne kan Man sig paa Sletten bygge,</l>
+<l>Ja skue klarere i Bøgeskygge,</l>
+<l>End mellem Granerne paa Fjeldetop.</l>
+</lg> 
+
+<lg n="5">
+<l><pb type="text" facs="1813_210_fax007.jpg" ed="A" n="5"/><pb type="edition" n="702" ed="US"/>Dog tænk kun ei, du <persName key="pe00"><!--formentlig en personifikation af Norge, som mor for landets norrøne skjalde. Begrebet Skjaldemor er dannet af Grundtvig og hentyder her også til den konkrete <persName key="pe5191">Gunhild Kongemor</persName>. Gun(nh)ild betyder kamp, stridskvinde og valkyrie, jf. skjoldmøen i strofe 5, vers 4.--><!--korpussøgning https://snl.no/Gunnhild-->Gunild Skjaldemoder</persName>!</l>
+<l>At Skjalden vil fra <placeName key="fak14">Danmarks</placeName> Bøgelund</l>
+<l>Dig kogle ned af Fjeld med sine <seg type="com" n="com0"><!--sang.--><!--ODS 2 med denne passage som belæg-->Noder</seg>!</l>
+<l>Nei <placeName key="fak1322">Kattegat</placeName> er intet <placeName key="fak110">Øresund</placeName>,</l>
+<l>Kun søsterlig din Skjoldmøhaand du lægge</l>
+<l>I <placeName key="poet219">Dannemarks</placeName>, da vil <seg type="com" n="com0"><!--om begge under et.-->i Een om begge</seg>,</l>
+<l>Til begge og<!--poetisk inversion, ingen kommentar. Læses med 'og' i verslinjens begyndelse-->, som Een, han tale <seg type="com" n="com0"><!--frimodigt, åbenhjertigt.-->frit</seg>.</l>
+</lg>
+<lg n="6">
+<l>Om Langobarder, vældige Normanner</l>
+<l>Ei stort jeg synger, dog jeg sige maa,</l>
+<l>At de i <persName key="pe28">Tasso</persName> under Korsets Banner</l>
+<l>Sig selv paa <placeName key="his581">Zion</placeName> og ved <placeName key="fak742">Graven</placeName> saae,</l>
+<l>Men syngende jeg vil det høit udsige:</l>
+<l>I Rummet og i Tiden dybt at kige,</l>
+<l>Den høie <seg type="com" n="com0"><!--kunst, kundskab.-->Konst</seg> undfangedes i <placeName key="fak24">Nord</placeName>.</l>
+</lg>
+<lg n="7">
+<l><placeName key="his851">Uraniborg</placeName>! dit Navn vor <seg type="com" n="com0"><!--lovprisning, lovsang.-->Pris</seg> <seg type="com" n="com0"><!--værner om, bevarer.-->omværner</seg>,</l>
+<l><seg type="com" n="com0"><!--dvs. endog, skønt.-->Enddog</seg> du selv nedsunket er i Grus!</l>
+<l>Hvor lærte Verden ret at <seg type="com" n="com0"><!--dvs. kigge. Stjernekiggeri var en fast betegnelse for astronomisk observation.-->kige</seg> Stjerner?</l>
+<l>Mon ei i dig, du danske <seg type="com" n="com0"><!--dannet af Grundtvig efter Urania, gr., det himmelske.--><!--ej i Ods, DSDE Urania-->Himmelhus</seg>?</l>
+<l>Var det ei <placeName key="fak14">Danmarks</placeName> Søn, den <persName key="pe1344">Tyge Brade</persName>,</l>
+<l>Som først kom Stjernen paa sit lave Stade<!--DDO 2--></l>
+<l>Langt nærmere, end Ørnen paa sin Flugt.</l>
+</lg>
+<lg n="8">
+<l>Ved Trolddomslampen gjennem Malmens Gange</l>
+<l>At speide kløgtig Jordens dunkle Slot,</l>
+<l><pb type="edition" n="108" ed="PS"/>Det prøver <placeName key="poet454">Saxland</placeName>, og vi ei forlange</l>
+<l>Det sære Samfund med den Mørkets Drot;</l>
+<l>Men søgte vi vor Hæder under Jorden,</l>
+<l>Da har maaske vi fostret ham i <placeName key="fak24">Norden</placeName>,</l>
+<l>Der kunde see saa dybt, som <persName key="pe1344">Tyge</persName> høit.</l>
+</lg>
+<lg n="9">
+<l>At giennemskue fra ophøiet Stade</l>
+<l>De <seg type="com" n="com0"><!--planter.-->Urter</seg>, som paa Jordens Kugle gro,</l>
+<l>De Dyr, som vrimle paa dens Overflade,</l>
+<l>Og dem, som i dens Skiød og Revner bo,</l>
+
+<l><pb type="text" facs="1813_210_fax008.jpg" ed="A" n="6"/>Det mægtede vel ingen Søn af Jorden,</l>
+<l>Linn<hi rend="romanType">é</hi>e dog fødtes i det svenske <placeName key="fak24">Norden</placeName>,</l>
+<l>Og <placeName key="poet219">Dannemark</placeName> har <persName key="pe00"><!--Martin Vahl, 1749-1804, dansk botaniker og zoolog-->Vahls</persName> og <persName key="pe1326"><!--O.F. Müller, Otto Friderich Müller, 1730-1784, dansk naturforsker. -->Myllers</persName> Been.</l>
+</lg>
+<lg n="10">
+<l><rs type="bible" subtype="bibleStart" n="bible1" key="1 Mos 1,14-28" rend="reference"/>Hvad Solen er blandt Stjernerne paa Himlen,</l>
+<l>Et Billede af Rums og Tids Regent,</l>
+<l>Er Mennesket blandt Dyr og <seg type="com" n="com0"><!--vrimlen af planter.-->Urtevrimlen</seg><rs type="bible" subtype="bibleEnd" n="bible1" key="1 Mos 1,14-28" rend="reference"/>,</l>
+<l>Og uden ham var Jorden lidt bevendt.</l>
+<l><pb type="edition" n="703" ed="US"/><seg type="com" n="com0"><!--Grundtvig danner udtrykket af &#x2018;fodspor&#x2019; samt &#x2018;Guds finger&#x2019;, en gængs betegnelse for det guddommelige forsyn (jf. <rs type="bible" key="2 Mos 8,15">2 Mos 8,15</rs> og <rs type="bible" key="Luk 22,10">Luk 22,10</rs>).-->Guds Fingerspor</seg> er overalt at finde,</l>
+<l>Men kun <rs type="bible" key="1 Mos 1,7" rend="reference">i Mennesket Hans Aand er inde</rs>,</l>
+<l>I Mennesket og Folkenes Bedrift.</l>
+</lg>
+<lg n="11">
+<l>Den første Mand der saae med skiærpet Øie</l>
+<l>I Tidens <seg type="com" n="com0"><!--en ældre, dansk betegnelse for en labyrint. Betegnelsen sammenlignede oprindeligt hjemlige labyrintiske bygningsværker med det velbefæstede antikke Troja.-->Troiborg</seg><note type="footnote"><p rend="noIndent">Labyrinth.</p></note> skjulte Ledetraad,</l>
+<l>Som saae de Kryb, der sig<hi rend="bold"/> mod Gud ophøie</l>
+<l>Udføre <seg type="com" n="com0"><!--forunderligt.-->underlig</seg> Hans vise <seg type="com" n="com0"><!--beslutninger, vilje.--><!--ODS 1.1-->Raad</seg>,</l>
+<l>Hvad heed han, <placeName key="fak14">Danmark</placeName>! veed du hvem jeg mener?</l>
+<l>Du veed det ei, thi du i dig forener</l>
+<l>Med store Evner <seg type="com" n="com0"><!--også.-->og</seg> et dovent Sind.</l>
+</lg>
+<lg n="12">
+<l>Ja, <placeName key="fak14">Danmark</placeName>! jeg det ei formaaer at dølge,</l>
+<l>Du har fortjent at kaldes dorsk og dum,</l>
+<l>Du drives om af hver en fremmed Bølge,</l>
+<l>Du søger Visdom i det vide Rum;</l>
+<l><pb type="edition" n="109" ed="PS"/>Men hvad dig Gud i Naade har beskaaret,</l>
+<l>Foragter eller glemmer du <seg type="com" n="com0"><!--betaget, bedraget og gjort til nar (dåre).--><!--ODS 1 (med overgang til 2).-->bedaaret</seg>,</l>
+<l>Tilbeder dem, som have dig til Spot.</l>
+</lg>
+<lg n="13">
+<l>Du glemte mangen herlig Daad og <seg type="com" n="com0"><!--tale; talere og forfattere.--><!--ODS 3.1-->Tunge</seg>,</l>
+<l>Du drev den gamle <persName key="pe1344">Tyge</persName> fra sin Borg,</l>
+<l>Men at du saa har glemt den giæve Unge,</l>
+<l>Det maa din Søn med bitter Hjertesorg</l>
+<l>Til Skam for dig paa <seg type="com" n="com0"><!--Historiens mindeplade. Grundtvig danner udtrykket af &#x2018;mindetavle&#x2019; (mindeplade) og af <rs type="myth" key="myth64">Saga</rs> som en gudinde for historieskrivningen.-->Sagatavlen</seg> skrive:</l>
+<l>Det er en Synd, som Gud ei kan tilgive</l>
+<l>Før du bodfærdig knæler paa hans Grav.</l>
+</lg>
+
+<lg n="14">
+<l><pb type="text" facs="1813_210_fax009.jpg" ed="A" n="7"/>Ja, <persName key="pe748">Tyge Rothe</persName>! det er dig det Samme<!--DDO har "være (nogen) det samme: være ligegyldigt" https://ordnet.dk/ddo/ordbog?mselect=59008588&query=Samme-->,</l>
+<l>At du forglemtes i den dorske <seg type="com" n="com0"><!--tidsalder, her: vor generation.-->Old</seg>,</l>
+<l>Du vilde ei dig ved din Frelser skamme,</l>
+<l>Nu <rs type="bible" key="Ef 6,16" rend="reference" subtype="bibleStart" n="bible2"/>dækker dig Hans brede <seg type="com" n="com0"><!--ridderskjold.-->Herreskjold</seg></l>
+<l>Mod Sorgens, som mod Tvivlens onde Pile<rs type="bible" key="Ef 6,16" rend="reference" subtype="bibleEnd" n="bible2"/>,</l>
+<l>Du er <seg type="com" n="com0"><!--gået ind, gået bort.-->indgangen</seg> til <rs type="bible" key="Hebr 4" rend="reference" subtype="bibleStart" n="bible3"/><seg type="com" n="com0"><!--fast betegnelse for sjælens hvile i den lange periode efter døden og før genopstandelsen.--><!--ODS Hvile 1.3. DDO har "den evige Hvile", men ikke i den kristne betydning, som netop ikke er evig.-->den store Hvile</seg>,</l>
+<l>Som Herren naadig har beredt sit Folk<rs type="bible" key="Hebr 4" rend="reference" subtype="bibleStart" n="bible4"/>.</l>
+</lg>
+<lg n="15">
+<l>At ingen Skjald opløftet har sin Stemme</l>
+<l>Til <seg type="com" n="com0"><!--lyrisk mindedigt.-->Mindekvad</seg> om dig i <seg type="com" n="com0"><!--dit fædrene Norden.--><!--dannet til lejligheden, parallelt til udtrykket fædrene jord-->Fædrenord</seg>,</l>
+<l>Det veed du ei, det kunde dig ei græmme,</l>
+<l>Der hvor du sjunger udi Englechor,</l>
+<l>Ja selv hernede kan din Færd os lære,</l>
+<l><rs type="bible" key="1 Kor 10,31" rend="eg">At søge Guds og ei vor egen Ære</rs>,</l>
+<l>Saa godt vi <seg type="com" n="com0"><!--dvs. stakler.-->Stakle</seg> det paa Jord formaa.</l>
+</lg>
+<lg n="16">
+<l><pb type="edition" n="704" ed="US"/>At medens du med helligt Digterøie</l>
+<l>Saae <rs type="bible" key="1 Mos 1,2" rend="reference">Aanden svæve over Tidens Hav</rs>,</l>
+<l>Og <rs type="bible" key="Rom 8,11" rend="reference" subtype="bibleStart" n="bible5"/>Frelseren hos Kraften i det Høie,</l>
+<l>Opreise Dødningen af skumle Grav<rs type="bible" key="Rom 8,11" rend="reference" subtype="bibleEnd" n="bible5"/>,</l>
+<l><pb type="edition" n="110" ed="PS"/>At netop <hi rend="spaced">da</hi> dit Fædreland sit Øie</l>
+<l><seg type="com" n="com0"><!--knugede sammen, lukkede.--><!--ODS med denne passage som belæg.-->Tilknugede</seg> for <rs type="bible" key="Luk 1,78" rend="quote1787"><!--1992: solopgangen fra det høje-->Lyset fra det Høie</rs>,</l>
+<l>Det saae du sorgfuld, men det har du glemt.</l>
+</lg>
+<lg n="17">
+<l>Ei er det <seg type="com" n="com0"><!--således.-->saa</seg> med mig, du kiære Døde!</l>
+<l>Jeg sukker <seg type="com" n="com0"><!--endnu.-->end</seg> paa <rs type="bible" key="Matt 7,14" rend="reference">Fjeldets trange Sti</rs>,</l>
+<l>Ved <rs type="bible" key="1 Joh 2,11" rend="reference">Brødres Blindhed</rs> maa mit Hjerte bløde,</l>
+<l>Jeg kjæmpe maa, <rs type="bible" key="Mark 14,35" rend="allusion">mens <seg type="com" n="com0"><!--tidsrum eller stund, her: den hårde tid.-->Timen</seg> gaaer forbi</rs>,</l>
+<l>Jeg mæle maa, med <seg type="com" n="com0"><!--dvs. sorg.-->Sorrig</seg> og med Harme</l>
+<l>Thi ak, jeg seer, at trods dit Syn, din Varme,</l>
+<l>Dog kold og blind vort kiære <placeName key="fak24">Norden</placeName> <seg type="com" n="com0"><!--forblev.-->blev</seg>.</l>
+</lg>
+<lg n="18">
+<l>Ja, <placeName key="fak14">Danmark</placeName>! jeg med dig maa gaa i Rette,</l>
+<l>Dog ei som Dommer, som en kiærlig Søn,</l>
+<l>Der gierne hjalp dig Brøden at udslette,</l>
+<l>Som ihukommer dig i stille Bøn:</l>
+
+<l><pb type="text" facs="1813_210_fax010.jpg" ed="A" n="8"/>Hvor kunde du saa <seg type="com" n="com0"><!--tåbeligt.-->daarlig</seg> dog forglemme</l>
+<l>Den milde og dog stærke <seg type="com" n="com0"><!--varslende stemme, profetiske røst.--><!--ODS-->Varselsstemme</seg></l>
+<l>Fra Himlens Gud igiennem <persName key="pe748">Rothes</persName> Mund.</l>
+</lg>
+<lg n="19">
+<l>Hver Mand, hvert Folk maa eengang her i Livet,</l>
+<l>Som <rs type="myth" key="myth35.a">Hercules</rs> i Tvivl paa <hi rend="spaced">Korsvei</hi> staa<!--'stå ved en korsvej' er i DDO, dog uden Herkules; i Mau uden for nummer (uden Herkules). Med Herkules i ODS Korsvej. Ergo: ingen note. Mytebasens encyc leder i rette retning.-->.</l>
+<l><rs type="bible" key="Sl 128,1" rend="eg1787">Lyksalig hver, hvem</rs> da en Ven blev givet,</l>
+<l>Som af Erfaring vidne kan og spaa!</l>
+<l>Men <rs type="bible" key="Es 5,8-24" rend="eg">vee den Mand, og vee det Folk</rs> tillige,</l>
+<l>Som ændser ei, hvad Vennen monne sige!</l>
+<l>Forhærdet og <seg type="com" n="com0"><!--fortabt.-->forloren</seg> er <seg type="com" n="com0"><!--et og det samme.--><!--ODS én 3.2 med passagen som belæg-->kun Eet</seg>.</l>
+</lg>
+<lg n="20">
+<l><seg type="com" n="com0"><!--da.-->Der</seg> Gud ved <persName key="pe42">Luther</persName> i de favre Dage</l>
+<l><seg type="com" n="com0"><!--åbnede.-->Oplod</seg> sin Grube med <rs type="bible" key="1 Pet 1,7" rend="allusion">det ægte Guld</rs>,</l>
+<l>Da fjendsk <seg type="com" n="com0"><!--åbnede.-->oplod</seg> i Vest <rs type="bible" key="Åb 12,9" rend="reference">den gamle Drage</rs></l>
+<l><seg type="com" n="com0"><!--også.-->Og</seg> <placeName key="fak806">Perus</placeName> Gruber med det <seg type="com" n="com0"><!--guldrige.-->gule</seg> Muld.</l>
+<l>Ak, <placeName key="fak192">Vestens</placeName> Folk sig lode villig <seg type="com" n="com0"><!--bedrage.-->skuffe</seg>,</l>
+<l>Ombytted glade med en <seg type="com" n="com0">Gyldenstuffe<!--afhugget stykke af en rå klump af guld.--><!-- https://ordnet.dk/ods/ordbog?entry_id=60035761&query=Gyldenstuffe&hi=Gyldenstuffe--></seg>,</l>
+<l>De sidste Gran af <rs type="bible" key="1 Pet 1,7" rend="allusion">det ægte Guld</rs>.</l>
+</lg>
+<lg n="21">
+<l><pb type="edition" n="111" ed="PS"/><rs type="bible" key="Joh 4,11-14" rend="allusion" subtype="bibleStart" n="bible7"/>I Bjerget, hvor den ædle Malm er inde,</l>
+<l>Udspringer<!--ODS 2 (passagen som belæg) = DDO 1 (eneste betydninge). Ergo ingen kommentar--> <seg type="com" n="com0"><!--forunderligt.-->underlig</seg> saa klart et Væld<!--=DDO 1; klart i kontekst, ingen kommentar-->,</l>
+<l>Og hvo som drikker, han forstaar at finde</l>
+<l>De rige Aarer i det dybe Fjeld,</l>
+<l><pb type="edition" n="705" ed="US"/><rs type="bible" key="Åb 21,6" rend="reference">Det Livsens Vand kan Tørsten evig slukke</rs>,</l>
+<l>Men ikkun Tro formaaer at <seg type="com" n="com0"><!--åbne.-->oplukke</seg><rs type="bible" key="Joh 4,11-14" rend="allusion" subtype="bibleStart" n="bible7"/>,</l>
+<l>Ei veed jeg selv om Øie eller Fjeld.</l>
+</lg>
+<lg n="22">
+<l>I Bjerget, hvor det <seg type="com" n="com0"><!--guldrige.-->gule</seg> Muld er inde,</l>
+<l>Udspringer skummende et dunkelt Væld,</l>
+<l>Og hvo som drikker kan ei længer finde</l>
+<l>De rige Aarer udi Herrens Fjeld;</l>
+<l>Det Dødens Vand kun <seg type="com" n="com0"><!--øger tørsten.--><!--ODS 5 (sjællandsk)-->hidser</seg>, kan ei slukke,</l>
+<l>Og Øiet maa tilsidst sig der <seg type="com" n="com0"><!--åbne.-->oplukke</seg>,</l>
+<l>Hvor Tørsten brænder som <rs type="bible" key="Matt 18,8" rend="eg">en evig Ild</rs>.</l>
+</lg> 
+
+<lg n="23">
+<l><pb type="text" facs="1813_210_fax011.jpg" ed="A" n="9"/><rs type="bible" key="Åb 17,4 og Åb 18,3" rend="allusion">I Vesten gik omkring det <seg type="com" n="com0"><!--bæger med trylledrik.-->Tryllebæger</seg></rs></l>
+<l>Og vakte Tørsten efter Mandeblod,</l>
+<l>For <seg type="com" n="com0"><!--den guldrige jord (fra Perus miner).-->Gyldenmuld</seg> Man kiøbte arme Neger,</l>
+<l>Man planted <seg type="com" n="com0"><!--sukkerrøret.--><!--ODS 1.1 med passagen som belæg-->Røret</seg> med den søde Rod,</l>
+<l>Man lukked Øret for de hule Sukke,</l>
+<l>Den maatte hidse, den ei kunde slukke</l>
+<l>Den <seg type="com" n="com0"><!--honningsøde gift.-->Honninggift</seg>, thi det var Negerblod.</l>
+</lg>
+<lg n="24">
+<l>Ei længe kan Man <seg type="com" n="com0"><!--bægret med trylledrikken.-->Tryllebægret</seg> tømme,</l>
+<l>Før Sener slappes, Øiet lukkes i,</l>
+<l>Man skifte maa imellem Rus og Drømme;</l>
+<l>Thi blev man ædru, Lysten gik forbi.</l>
+<l>Man kiøber Brødet og de bløde Hynder,</l>
+<l>Den Fattige blir rig ved Riges Synder,</l>
+<l>Han vorder rig paa Guld og <seg type="com" n="com0"><!--syndig lyst; lyst ved at synde og lyst til at synde.--><!--ODS med passagen som belæg-->Syndelyst</seg>.</l>
+</lg>
+<lg n="25">
+<l>Saa Bægret gik mod <placeName key="fak24">Norden</placeName> over Havet,</l>
+<l>Imellem det og <rs type="bible" key="Matt 26,39-41" rend="reference" n="bible8" subtype="bibleStart"/>Herrens Kalk en Stund,</l>
+<l><pb type="edition" n="112" ed="PS"/>Dog vakled der, med Alvor meer begavet</l>
+<l>Det <seg type="com" n="com0"><!--britiske. Under Englandskrigene (1801-1814) blev &#x2018;bretsk&#x2019; synonymt med nedrig, troløs og herskesyg.-->bretske</seg> Sind, forstyrred selv sit Blund<rs type="bible" key="Matt 26,39-41" rend="reference" n="bible8" subtype="bibleEnd"/>;</l>
+<l>Det mærked da <rs type="bible" key="Åb 12,9" rend="reference">den gamle, trædske Slange</rs></l>
+<l>At vilde <seg type="com" n="com0"><!--helt sikkert.-->vist</seg> han <placeName key="fak24">Nordens</placeName> Sjæle fange,</l>
+<l>Han maatte byde end en anden <seg type="com" n="com0"><!--bæger.-->Kalk</seg>.</l>
+</lg>
+<lg n="26">
+<l><rs type="bible" key="2 Kor 11,14" rend="reference" n="bible9" subtype="bibleStart"/>Sin Skikkelse han trædskelig forvandled,</l>
+<l>Og som en Lysets Engel han fremgik<rs type="bible" key="2 Kor 11,14" rend="reference" n="bible9" subtype="bibleEnd"/>,</l>
+<l><rs type="bible" key="1 Mos 3" rend="reference" n="bible10" subtype="bibleStart"/>Med Britten han, som før med <persName key="pe647">Eva</persName> handled,</l>
+<l>Han loved saa at skiærpe Sjælens Blik,</l>
+<l>At klart det skulde som Guds eget blive<rs type="bible" key="1 Mos 3" rend="reference" n="bible10" subtype="bibleEnd"/>,</l>
+<l>Han loved Kløgt og Vellyst her i Live</l>
+<l>Og Gammen dog hos Gud i Evighed.</l>
+</lg>
+<lg n="27">
+<l><pb type="edition" n="706" ed="US"/>Der stod da Fristeren med tvende Bægre</l>
+<l>Saa brusende af Kundskab og af Lyst,</l>
+<l>Ak, ikkun Faa sig ganske kunde vægre,</l>
+<l><rs type="bible" key="ApG 5,3" rend="eg">De havde Fristeren i eget Bryst</rs>.</l>
+
+<l><pb type="text" facs="1813_210_fax012.jpg" ed="A" n="10"/>De Drukne dandsed og de sang tillige,</l>
+<l>De sang om Lys, de sang om Viin og Pige,</l>
+<l>Og Jorden gungred under Sang og Dands.</l>
+</lg>
+<lg n="28">
+<l>De sanddru Sagn om <rs type="bible" key="Joh 4,11-14" rend="reference">Livets klare Kilde</rs>,</l>
+<l>Om Aandens Guld i <rs type="title" key="title788">Skriftens</rs> <seg type="com" n="com0"><!--minegang.-->Aaregang</seg>,</l>
+<l>Forlorne Skjald til Løgn omskifte vilde,</l>
+<l><rs type="bible" key="1 Kong 22,22" rend="allusion">Ham Løgnens Aand begeistrede til Sang</rs>,</l>
+<l>Og Guld og Sang de klang i <placeName key="poet454">Saxlands</placeName> Øre,</l>
+<l>Fra <placeName key="fak24">Nordens</placeName> Fjeld Man Gjenlyd maatte høre,</l>
+<l>Og Sandheds Ord blev nævnet <rs type="bible" key="Ef 6,16" rend="allusion">Løgnens Skjold</rs>.</l>
+</lg>
+<lg n="29">
+<l>Til Løgn Man Alt som leved vilde nøde,</l>
+<l>Ja Stenene paa <rs type="myth" key="myth64">Sagas</rs> Kirkegaard</l>
+<l><pb type="edition" n="113" ed="PS"/>Dem tvang Man til at lyve om de Døde,</l>
+<l>Og mest om <rs type="bible" key="Joh 10,11" rend="reference">Ham, som døde for sin Hjord</rs>,</l>
+<l>Ved Midnatstid <seg type="com" n="com0"><!--såvel som.-->som</seg> ved en Morgenrøde</l>
+<l>Med Hexekonst adspurgte Man de Døde,</l>
+<l>Og <seg type="com" n="com0"><!--troldmanden, her: Satan. Ordet var knyttet til troldmænd i Bibelen (f.eks. <rs type="bible" key="2 Mos 7,11">2 Mos 7,11</rs>), og her hentydes til måske til ordets oprindelige betydning &#x2018;en, der gør kunster med bægre&#x2019; (lat., caucula).-->Kogleren</seg> han svarede sig selv.</l>
+</lg>
+<lg n="30">
+<l>Forgjæves Stenene paa <seg type="com" n="com0"><!--forfaldne.--><!--ODS 2,3-->sjunkne</seg> Grave</l>
+<l>Standhaftig vidnede om Herrens Aand,</l>
+<l>Forgjæves lød det <rs type="bible" key="Joh 19,38-42 og Mark 16,6-7" rend="reference" n="bible11" subtype="bibleStart"/>gjennem <persName key="pe1264">Josephs</persName> Have</l>
+<l>Fra Stenen der: mig vælted Englehaand<rs type="bible" key="Joh 19,38-42 og Mark 16,6" rend="allusion" n="bible11" subtype="bibleEnd"/>,</l>
+<l>Naar Runerne Man kunde ei udslette,</l>
+<l>Med vrange da Man <seg type="com" n="com0"><!--overskrev, indridsede hen over.--><!--ODS 1 med en mere omstændig forklaring: m. h. t. indskaarne tegn: udslette (ved nye, indridsede tegn).-->overskar</seg> de rette,</l>
+<l>Og praled <seg type="com" n="com0"><!--stort, meget.-->storlig</seg> af den <seg type="com" n="com0"><!--dvs. heksekunst, med hentydning til runehuggernes trolddomskraft.-->Hexekonst</seg>.</l>
+</lg>
+<lg n="31">
+<l>Det saae din <persName key="pe748">Rothe</persName>, <placeName key="poet219">Dannemark</placeName>! bedrøvet,</l>
+<l>De vrange Runer ledte Mange vild,</l>
+<l>Ja selv Forvildelsen han havde prøvet,</l>
+<l>Men gjennemskuet det forvorpne Spil,</l>
+<l>Han viste dig hvordan de vrange <seg type="com" n="com0"><!--runer; egentlig de enkelte streger (runestave), som udgør en rune.--><!--ODS runestav 2.-->Stave</seg></l>
+<l>Du skulde kjende, og kun frit <seg type="com" n="com0"><!--skrabe dig frem til, udradere det overskrevne og fastslå.--><!--ODS udskrabe 2-->udskrabe</seg></l>
+<l>Hvordan de rette skulde <seg type="com" n="com0"><!--læses, afkodes.--><!--ODs 2:  ogs.: dechifrere, tyde en vanskelig indskrift, forstaa en vanskelig, dunkel tekst ell. ytring-->staves</seg> ret.</l>
+</lg> 
+
+<lg n="32">
+<l><pb type="text" facs="1813_210_fax013.jpg" ed="A" n="11"/>Han droges ei med <seg type="com" n="com0"><!--accenter og andre små diakritiske tegn.-->Tødler</seg> og med Prikke,</l>
+<l>Han vidste vel, at Man paa Pergament</l>
+<l>Og Bautastene ændsede dem ikke,</l>
+<l>Men at de hørte kun til Tidens <seg type="com" n="com0"><!--udgivelser som er trykt på det mere forgængelige materiale, papir.-->Prænt</seg>,</l>
+<l><pb type="edition" n="707" ed="US"/>Lad løbe Aar, lad skifte <seg type="com" n="com0"><!--dynastiet.-->Herrestamme</seg>!</l>
+<l>Den rette Herre <seg type="com" n="com0"><!--forblev-->blev</seg> jo dog den Samme,</l>
+<l><rs type="bible" key="2 Pet 3,8" rend="reference">For Ham Aartusindet er som en Dag</rs>.</l>
+</lg>
+<lg n="33">
+<l>Ja, <rs type="myth" key="myth64">Sagas</rs> Runer kiæk han lagde sammen,</l>
+<l>Eet Punktum kun han lod i Midten staa,</l>
+<l>Thi <rs type="bible" key="Åb 3,14 og 2 Kor 1,19-20" rend="reference">der stod Han, som er det sande Amen</rs>,</l>
+<l>Hvis Ligsteen selv et Punktum synes maa,</l>
+<l><pb type="edition" n="114" ed="PS"/><rs type="bible" key="1 Kor 15,54-55" rend="reference">Thi Død med den omstyrtedes tillige</rs>,</l>
+<l><seg type="com" n="com0"><!--Da.-->Der</seg> Han opstod, da endtes Satans Rige,</l>
+<l>Ikkun med Ham kom <hi rend="spaced">Nyt</hi> til Jorderig.</l>
+</lg>
+<lg n="34">
+<l>Han saae, og lydt forkyndte han med Gammen</l>
+<l>Hvad Han med Andagt skuede <!--er i DDo https://ordnet.dk/ddo/ordbog?mselect=59006334-->i Løn:</l>
+<l>At <rs type="myth" key="myth64">Sagas</rs> Runer selv sig føie sammen</l>
+<l>Alt til en Sang om <rs type="bible" key="Joh 1,14" rend="reference" subtype="bibleStart" n="bible12"/>den Eenbaarne Søn,</l>
+<l>Om Ordet, som i Kiød blev aabenbaret<rs type="bible" key="Joh 1,14" rend="reference" subtype="bibleStart" n="bible12"/>,</l>
+<l>Om <rs type="bible" key="Joh 14,13" rend="reference">Sønnen, som i Tiden blev <seg type="com" n="com0"><!--herliggjort.-->forklaret</seg></rs></l>
+<l>Af <rs type="bible" key="Joh 1,1-2 og Joh 1,18" rend="reference">Ham, i Hvem Han var fra Evighed</rs>.</l>
+</lg>
+<lg n="35">
+<l>Ja, <placeName key="poet219">Dannemark</placeName>! saa klart ei rundt paa Jorden</l>
+<l>Er <seg type="com" n="com0"><!--kristendommens rolle i historiens epoker. Der hentydes til <persName key="pe748">Tyge Rothes</persName> hovedværk <rs type="title" key="title1603"><hi rend="italic">Christendommens Virkning paa Folkenes Tilstand i Europa</hi> (1774-1783).</rs>-->Christendom i Tiderne</seg> udlagt,</l>
+<l>Saa klart det skuedes ikkun i <placeName key="fak24">Norden</placeName>,</l>
+<l>At <seg type="com" n="com0"><!--både historiens hændelser og historieskrivningen.-->Krønike</seg> med <rs type="title" key="title788">Bibel</rs> er i Pagt,</l>
+<l>Det Syn var gjemt alt til en christen <seg type="com" n="com0"><!--dvs. goter i betydningen nordbo, nordeuropæer.-->Gothe</seg>,</l>
+<l>Det Syn var gjemt til <seg type="com" n="com0"><!--dvs. goteren i betydningen nordbo, nordeuropæer-->Gothen</seg> <persName key="pe748">Thyge Rothe</persName>,</l>
+<l>Det Syn var gjemt, o Fædreland, til dig!</l>
+</lg>
+<lg n="36">
+<l>Ja derfor lød din <persName key="pe748">Rothes</persName> høie Tale,</l>
+<l>Den skulde varsle og den skulde frie,</l>
+<l>Men døv Man var i Hytter og i Sale,</l>
+<l>Og buldrede til Røsten var forbi,</l>
+     <l><pb type="text" facs="1813_210_fax014.jpg" ed="A" n="12"/>End leve Børnene af Herrens <persName key="pe748">Tyge</persName>,</l>
+<l>Og <seg type="com" n="com0"><!--allerede.-->alt</seg> vi visne af den onde Syge,</l>
+<l>Som han forkyndte, ak, og meente fjern.</l>
+</lg>
+<lg n="37">
+<l>Saa grant han saae i <seg type="com" n="com0"><!--tidens forløb, historiens udvikling.-->Tiden</seg> <persName key="pe45">Christus</persName> virke,</l>
+<l>Saa klart han skued Troens Herlighed,</l>
+<l>Saa grant og vist han under faldne Kirke</l>
+<l>Saae Staten synke udi Støvet ned,</l>
+<l>At ei han troede sit eget Øie,</l>
+<l>Naar det ham viste <seg type="com" n="com0"><!--samtidens.-->Tidens</seg> onde Møie,</l>
+<l>For Tro og Kirke at nedrive fræk.</l>
+</lg>
+<lg n="38">
+<l><pb type="edition" n="708" ed="US"/><pb type="edition" n="115" ed="PS"/>O tykke Blindhed i oplyste Dage!</l>
+<l>Hvor fik du dog paa Jord en saadan Magt?</l>
+<l>Veed du det ei, at du til hin er Mage,</l>
+<l>Som dyrked Solen med sin givne Pragt,</l>
+<l>Som over Lyset <rs type="bible" key="Joh 3,19-20" rend="eg">saae ei Lysets Kilde</rs>,</l>
+<l>Saa blind er hver, som stolt sig tør indbilde,</l>
+<l>At hans Fornuft kan lyse for sig selv.</l>
+</lg>
+<lg n="39">
+<l>Ak! naar vor Aand ved Drik af <rs type="bible" key="Sir 1,5" rend="eg">Viisdoms Kilde</rs></l>
+<l>Er <seg type="com" n="com0"><!--er blevet.--><!--DDO har kun "i sin vorden", og bøjning af "vorde" er uklar.-->vorden</seg> klog, og riig af <rs type="title" key="title788">Skriftens</rs> Guld,</l>
+<l><rs type="bible" key="Matt 4,3-9 og Joh 4,13-14" rend="allusion" subtype="bibleStart" n="bible13"/>Da kan os Fristeren saa let indbilde,</l>
+<l>At vi har Væld og Grube i vort Muld<rs type="bible" key="Matt 4,3-9 og Joh 4,13-14" rend="allusion" subtype="bibleStart" n="bible13"/>,</l>
+<l><rs type="bible" key="Rom 6,14-22" rend="reference1787" subtype="bibleStart" n="bible14"/>Da knurrer Lysten imod Lovens Torden</l>
+<l>For stolt Fornuften er til Tjener vorden,</l>
+<l><hi rend="spaced">Til Herrens Tjener, men til Syndens ei<rs type="bible" key="Rom 6,14-22" rend="reference1787" subtype="bibleStart" n="bible14"/>.</hi></l>
+</lg>
+<lg n="40">
+<l>Naar den i <seg type="com" n="com0"><!--historien.-->Krøniken</seg> sig monne speile,</l>
+<l>Som Overtroens og som Løgnens Træl,</l>
+<l>Da raaber Stolthed: det kan aldrig feile,</l>
+<l>At Troen <seg type="com" n="com0"><!--helt sikkert.-->jo</seg> var Overtroens Væld,</l>
+<l>Hvad Ondt, som er i lange Tid bedrevet,</l>
+<l>Det vorder flux paa Troens Regning skrevet,</l>
+<l><hi rend="spaced">Paa <rs type="bible" key="Rom 8,3" rend="reference">Troens Regning, som fordømte Synd</rs>.</hi></l>
+</lg> 
+
+<lg n="41">
+<l><pb type="text" facs="1813_210_fax015.jpg" ed="A" n="13"/>Hensovne! <seg type="com" n="com0"><!--således.-->saa</seg> din Tunge <seg type="com" n="com0"><!--modigt.-->kiæk</seg> du rørte,</l>
+<l>Men ak, dit <seg type="com" n="com0"><!--budskab.-->Ord</seg>, endog før du, hensov<!--modsætning af 11.972. Æren skal overleve den Døde.-->!</l>
+<l>Og ikkun da dig <placeName key="fak14">Danmark</placeName> villig hørte,</l>
+<l>Naar Talen var om Daners Mark og Plov,</l>
+<l>Naar verdslig den sig løfted som en Torden</l>
+<l>Om Odelsret<!--er i ddo--> og Slaveri i <placeName key="fak24">Norden</placeName><!--Nordens Statsforfatning før Lehnstiden, og da Odelskab med Folkefriehed – i Lehnstiden og da Birkerettighed, Hoverie, Livegenskab med Aristokratie-->;</l>
+<l>Den sande Frihed kaldtes <seg type="com" n="com0"><!--slaveåg, slaveri.-->Trælleaag</seg>.</l>
+</lg>
+<lg n="42">
+<l>Dog, ei forgiæves Gud lod Talen lyde,</l>
+<l><seg type="com" n="com0"><!--utvivlsomt, helt sikkert.-->Vist</seg> mangen Sjæl den <seg type="com" n="com0"><!--styrkede-->størkede</seg> i Løn,</l>
+<l><pb type="edition" n="116" ed="PS"/>Og, med Guds Hjelp, har Talen at betyde,</l>
+<l>At Gud vil høre vore Hjerters Bøn,</l>
+<l>At løftes skal i <placeName key="fak24">Norden</placeName> <seg type="com" n="com0"><!--kirkehvælvingen.--><!--ODS Kirkebue-->Kirkens Bue</seg>,</l>
+<l>At under den Man skal som <seg type="com" n="com0"><!--grundpille, søjle.-->Pille</seg> skue</l>
+<l>Den store Ligsteen med sin <seg type="com" n="com0"><!--runeindskrift-->Runeskrift</seg>.</l>
+</lg>
+<lg n="43">
+<l>Ei ledes skal da langt <seg type="com" n="com0"><!--efter.-->om</seg> <persName key="pe748">Tyges</persName> Minde,</l>
+<l>Det har i Kirken baade Syn og Klang;</l>
+<l>Hans Bautasteen i <seg type="com" n="com0"><!--grundpillen, søjlen.-->Pillen</seg> er at finde,</l>
+<l>I <seg type="com" n="com0"><!--dvs. salmernes tone, kirkesangen.-->Psalmetonen</seg> er hans Mindesang.</l>
+<l><pb type="edition" n="709" ed="US"/>O give Gud, mit <seg type="com" n="com0"><!--kors med kristne runeindskrifter på størrelse med amuletter.--><!--runer.ku.dk søgning: "kors". Bedst kendst er Gunhild-korset, se http://runer.ku.dk/VisGenstand.aspx?Titel=Gunhild-korset-->Runekors det lille</seg></l>
+<l>Sig snart maa skjule i den reiste <seg type="com" n="com0"><!--grundpille, søjle.-->Pille</seg>,</l>
+<l>Mit Kvad sig tabe i det <seg type="com" n="com0"><!--dvs. salmekor.-->Psalmechor</seg>!</l>
+</lg>
+<lg n="44">
+<l>O Fædreland! saavidt jeg seer paa Jorden,</l>
+<l>Hvor Stormen farer over vilde Strand,</l>
+<l>Ei seer jeg Landet, der, saavist som <placeName key="fak24">Norden</placeName>,</l>
+<l>Kan løses end af <seg type="com" n="com0"><!--ekskommunikation i den største forstand, dvs. udelukkelse fra den kristne menighed, modsat udelukkelsen fra sakramenterne alene (det lille band). Bandlysning af lande forekom især i middelalderen.--><!--ODS 1.2-->store Kirkeband</seg>;</l>
+<l>Men mærk derpaa: <rs type="bible" key="1 Joh 2,18" rend="quote">det er <hi rend="spaced">den sidste Time,</hi></rs></l>
+<l>Vil dine Klokker ei om <seg type="com" n="com0"><!--hentydning til Kristi snarlige genkomst, der er genstand for læsningerne i kirken fra 1. til 3. søndag i advent.-->Julen</seg> kime,</l>
+<l>De snart maa ringe for dit raadne Lig.</l>
+</lg>
+<lg n="45">
+<l>Endnu engang den <rs type="bible" key="2 Mos 15,11" rend="eg">Guders Gud</rs> i Naade</l>
+<l>Dig standset har paa <rs type="bible" key="Matt 7,14" rend="allusion">Dødens brede Vei</rs>,</l>
+<l>Saa løser <hi rend="spaced">Ordet</hi> mig din Trængsels Gaade,</l>
+<l>Og <rs type="bible" key="Ef 1,13" rend="eg">Sandheds Ord</rs> det svigter, lyver ei;</l>
+   
+<l><pb type="text" facs="1813_210_fax016.jpg" ed="A" n="14"/>O, <seg type="com" n="com0"><!--jf. Bibelstedet ApG 26,14 har dannet ordsproget “det nytter ikke at stampe mod brodden”, dvs. det nytter ikke at sætte sig op mod overmagten, se <rs type="title" key="title96">Grundtvig 1845</rs>, nr. 288, og <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 92.-->stamp dog ei mod Braadden</seg> som en Daare,</l>
+<l>O, knur dog ei, men knæl med Angers Taare</l>
+<l>For <rs type="bible" key="Hebr 12,6" rend="reference">Ham, som tugter hvem han haver kiær</rs>!</l>
+</lg>
+<lg n="46">
+<l>Og nu, far vel! Guds høie Fred bevare</l>
+<l>Din <seg type="com" n="com0"><!--konge.-->Konning</seg> bold, din gamle Kongeslægt!</l>
+<l><pb type="edition" n="117" ed="PS"/>Ja trindt dig leire sig Hans Engleskare,</l>
+<l>Og tryg du hvile i Hans Varetægt!</l>
+<l>Det skeer, naar kun du <rs type="bible" key="Jud 1,25" rend="reference">giver Ham Hans Ære</rs>,</l>
+<l>Da vil igjen din <seg type="com" n="com0"><!--velbefæstede, med hentydning til Luthers salme <rs type="title" key="titl5150">Vor Gud han er så fast en borg</rs> fra 1529.-->faste</seg> Borg Han være,</l>
+<l>Og du skal vorde Hans <hi rend="spaced"><placeName key="fak10">Jerusalem</placeName>.</hi></l>
+</lg>
+<lg n="47">
+<l>Da skal din Skov, o <placeName key="poet219">Dannemark</placeName>! opfyldes</l>
+<l>Af <seg type="com" n="com0"><!--dvs. salmeklang.-->Psalmeklang</seg>, som Herrens <seg type="com" n="com0"><!--den indhegnede mark, som ligger ved en kirke eller hører til en præstegård.-->Kirketoft</seg>,</l>
+<l>Da skal dit Fjeld, o <placeName key="poet415">Norrige</placeName>, forgyldes</l>
+<l>Til <seg type="com" n="com0"><!--søjler under kirkens høje hvælvede loft.--><!--se DSDE gotisk arkitektur og tegningen http://denstoredanske.dk/@api/deki/files/10907/=345717.801.png?size=webview-->Kirkepille under Høieloft</seg>,</l>
+<l><rs type="bible" key="Sl 2,1-2" rend="reference1787">Lad fnyse Hedninge og Drotter true</rs>!</l>
+<l>Naar <rs type="bible" key="Judit 13,11" rend="eg">Gud er med os</rs>, vi for <seg type="com" n="com0"><!--mennesker.-->Kiød</seg> ei grue.</l>
+<l><hi rend="spaced">Og ingen <seg type="com" n="com1"><!--personifikation af de nyere svenske dynastier, hvis konger ofte bar fornavnet Karl.-->Karl</seg> skal rokke <seg type="com" n="com2"><seg type="com" n="com0"><!--Frederik personificerer her den danske oldenborgske kongeslægt. Her hentydes især til den norske fæstning Fredriksten, der ofte havde været under svensk belejring. For Grundtvigs øvrige, udvidede forståelser af Frederiks Sten som synonym for Norge, se <rs type="title" key="title354">Ahlbeck 1955</rs>, s. 185 f.-->Fredriks Steen</seg></seg>.</hi></l>
+</lg>
+<graphic style="shortLine"/>
+</div>
+<div type="[Tekst]"> 
+
+<p rend="noIndent"><pb type="text" facs="1813_210_fax017.jpg" ed="A" n="15" rend="supp"/><pb type="edition" n="24" ed="VU"/><pb type="edition" n="710" ed="US"/><pb type="edition" n="104" ed="PS"/><hi rend="initial">M</hi>ed Kugler og <app type="corrNote" select="no"><lem wit="GV">Mandehoveder</lem><rdg wit="A">Mandehovder</rdg><witDetail wit="A" n="1" rend="ut">(Det bevarede udkast har jeg endnu ikke konsulteret). ODS kender ikke stavemåden, men den findes i folkeviser og samtidens digte, dog som regel med markering af udeladelsen: Hov'der. Denne passage er prosa, så metriske hensyn kan næppe forklare udeladelsen af e'et. Kombinationen Mandehoved står i ODS, så jeg vil anbefale at nøjes med en verbalkommentar (mønter eller metonym for mænd, dvs. soldater). Mandehorder kunne også give mening (Napoleons felttog mod Rusland) og forklares (læse- eller sætterfejl), men 'horde' passer helt så godt ind i billedsproget, og 'Mandehorde' findes heller i ordbøger eller korpus.<note corresp="PS" n="104">Mandehoveder</note><note corresp="US" n="710">Mandehoveder</note><note corresp="VU" n="24">Mandehoveder</note></witDetail></app> <seg type="com" n="com0"><!--spiller.-->lege</seg> de mægtige Folkefærd Tærning og <seg type="com" n="com0"><!--skak.-->Skaktavl</seg> om Verdens Forfængelighed, om Roes og om Vælde, og før skulde <rs type="bible" key="Åb 16,3" rend="allusion">et Blodhav opsluge Jorden, Dynger af Liig fylde Havet</rs>, end de vorde <seg type="com" n="com0"><!--trætte.-->kjede</seg> af den forfængelige Strid, den blodige Leeg. Som spildte ere de <seg type="com" n="com0"><!--forgangne.-->fremfarne</seg> Tiders Vidnesbyrd om hvordan <seg type="com" n="com0"><!--tronerne, kongernes styre.-->Kongestolene</seg> raadnede paa de Ihjelslagnes Liig, hvordan Rigerne sprængte sig selv, naar de udspændte Armene, for at omfavne Verden; hvorledes alle Blomster visnede i Skyggen af de blodige Laurbærgrene, hvorledes de herskende Byer, der kaldte sig Dronninger paa Jorden<!--roma regina mundi, ingen kommentar-->, bleve skrøbelige, hjelpeløse Enker, maatte snarlig paa <seg type="com" n="com0"><!--dronningens trone.-->Dronningstolen</seg> lære at skiælve for Vaabengnyet fra en <seg type="com" n="com0"><!--lille.--><!--ODS med passagen som belæg, forklaring: talsvag-->talringe</seg> Hob, afklædtes haanlig de røvede Smykker, og maatte som Trælkvinder <seg type="com" n="com0"><!--udånde, dø; leve med støn.--><!--ODS 2 hhv. 1-->udstønne Livet</seg> ved Kværnen og paa det <seg type="com" n="com0">forfulede</seg> Straa. <placeName key="his679">Ninive</placeName> og <placeName key="his473">Babylon</placeName>, <placeName key="his1818">Ekbatana</placeName>, <placeName key="fak629">Persepolis</placeName>, <placeName key="his604">Sparta</placeName>, <placeName key="fak129">Athenen</placeName> og <placeName key="fak1668">Pella</placeName>, <placeName key="his149">Antiochia</placeName>, <placeName key="fak529">Alexandrien</placeName> og <placeName key="fak17">Rom</placeName>, <placeName key="fak773">Bagdad</placeName> og <placeName key="fak139">Konstantinopel</placeName>, <placeName key="fak756">Genua</placeName>, <placeName key="fak749">Venedig</placeName> og <pb type="text" facs="1813_210_fax018.jpg" ed="A" n="16"/><placeName key="fak101">Madrid</placeName>, <placeName key="fak2673">Haag</placeName> og <placeName key="fak193">Berlin</placeName>, hvem skulde tænke, at de blege, blodige <seg type="com" n="com0"><!--genfærd.-->Skygger</seg> af disse Dron<pb type="edition" n="24" ed="VU"/>ninger paa Land og paa Sø skulde forgjæves <seg type="com" n="com0"><!--vandre omkring.-->omvanke</seg> og vidne? Men det er med ganske Folkefærd, som med enkelte Mennesker, naar de have <seg type="com" n="com0"><!--tabt.-->forloret</seg> det <rs type="bible" key="Tit 1,2" rend="quote1787">evige Livs Haab</rs>, forsaget <rs type="bible" key="1 Kor 9,24 og Fil 3,14" rend="reference1787">Kampen for det himmelske Klenodie</rs>, holdt op at stirre efter <rs type="bible" key="Åb 7,19" rend="allusion"><seg type="com" n="com0"><!--sejrens palmer.-->Palmen</seg> i <placeName key="fik83">Paradiset</placeName></rs>, da gribe de alt efter deres og Tidernes Leilighed, efter hvad der en stakket Tid kan glimre eller kildre, forblindede, saa de ei see <rs type="bible" key="Sl 69,3 og Sl 40,3" rend="eg">det bundløse Svælg</rs>, paa hvis Rand de søge deres Hjertes Begiæring, døve mod<!--for, forklaring unødvendig--> Hylet af de Millioner, som styrtede ned. Underligt er det ei heller, at de, som for Syndens timelige Nydelse forsage den evige <pb type="edition" n="105" ed="PS"/>Salighed, tilknuge Øiet for <rs type="bible" key="Mark 9,44-48" rend="quote1787">den Afgrund, hvor Ormen ei døer og Ilden ei slukkes</rs>; bekymres kun lidet derom hvad deres Nydelse, Vælde og Roes maa koste deres Brødre og Børn og <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>; det er intet Under, at Sjæle, som i Vantro blinde og døve sig selv for <seg type="com" n="com0"><!--Et begreb fra Leibnitz' udgave af den absolute sande filosofi (philosophia perennis).--><!--ST siger, at vi stadig giver sådanne oplysninger. DSDE-->de evige Sandheders</seg> Lys og Røst om Gud og Dom og Evighed<!--variant af Quattuor Novissimi: "Død og Dom og Evighed", intet bibelsted, men fast vending.-->, vorde til nødvendig Straf døve og blinde for Alt, hvad som aandeligt er, døve og <pb type="edition" n="711" ed="US"/>blinde selv der, hvor de for timelig Gavn maatte ønske at høre og see. Derfor ville vi til Verdens Ende see vantro Folkefærd, <pb type="text" facs="1813_210_fax019.jpg" ed="A" n="17"/>som vantro Mænd, dandse i Kreds om Skøger og Ranker og <rs type="bible" key="2 Mos 32,1-6" rend="reference">Kalve af Guld</rs>, eller udfare til Valen med rullende Øine og hvæssede Sværd, see Folkefærd beile med Svovel og Jern til Krandse af Blomster, hvis Saft dog saalænge som <seg type="com" n="com0"><!--historieskrivningen, den historiske overlevering.-->Krøniken</seg> mindes, blev sydende Svovel, hvis Stilke blev skiærende Staal paa hvert Hoved, som bar dem.</p>
+<p rend="firstIndent">Slige Betragtninger maa vel falde den alvorlige Nordboe paa Sinde; tunge og trange, naar han beskuer Folkenes <seg type="com" n="com0"><!--gerninger, bedrifter.-->Idræt</seg>, naar han beskuer sit store <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>: <seg type="com" n="com0"><!--Danmark, Norge og Sverige. Tvillingeriget var en fast betegnelse for Danmark-Norge.-->Trillinglandet</seg> i <placeName key="fak24">Norden</placeName>. Vi vide det alle, hvad som er skeet i de sidste Dage; Danske og Nordmænd, saamange, som end uden <seg type="com" n="com0"><!--dvs. blusel.-->Blussel</seg> tør bære de arvede, hæderlige Navne, blusse af Harme over de mageløse Krav <placeName key="fak92">Sverrig</placeName> har vovet, <seg type="com" n="com0"><!--endnu.-->end</seg> mere over den mageløse Adfærd, at lade sig et fredeligt Naboland <seg type="com" n="com0"><!--overdrage.-->tilskrive</seg> af fremmede Herrer, af en Regjering, som nylig opfyldte hver redelig Nordboe med den høieste Afskye, og af en anden, med hvilken <placeName key="fak92">Sverrig</placeName> nys kiæmpede om sin Tilværelse, som lemlæstede Riget og nys var høitidelig <seg type="com" n="com0"><!--garant.-->Borgen</seg> for, at hævde <placeName key="fak14">Danmarks</placeName> Ret, og af en tredie, som i 60 Aar skiftede Forbund alt efter sin tilsyneladende Fordeel saa <pb type="text" facs="1813_210_fax020.jpg" ed="A" n="18"/>tit, at det er tungt at sige hvor ofte, <seg type="com" n="com0"><!--og som.-->som</seg> selv staaer paa Randen af Tilintetgiørelse. Om Man skal kalde den Adfærd mest skammelig eller afsindig, kun derom er Tvivlen.</p>
+<p rend="firstIndent">Dansk er jeg af Byrd og Sind, men aldrig vilde jeg <seg type="com" n="com0"><!--tale.-->røre Tungen</seg> <pb type="edition" n="26" ed="VU"/>mod <placeName key="fak92">Sverrig</placeName>, hvis det kun var Danskhed, som kunde drive dertil, <rs type="bible" key="Matt 5,44" rend="reference">thi jeg er Christen</rs>.</p>
+<p rend="firstIndent">Gud haver gjort, at al Menneskens Slægt boer paa Jordens Kreds af eet Blod, og det kan da ei være andet, end at hvo, som <rs type="bible" key="1 Joh 1,3" rend="eg">haver <seg type="com" n="com0"><!--fællesskab-->Samfund</seg> med Gud</rs>, maa kiærlig udbrede sit Hjerte mod alle de Folkefærd, som med alskens Tungemaal <seg type="com" n="com0"><!--udbreder sig mod.-->bygge mod</seg> <rs type="bible" key="Matt 24,31" rend="eg1787">Verdens fire Hjørner</rs>. Gud har ved Tungemaal og Bopæl afsondret Folkene i visse Stammer, og disse ere da paa det stærkeste opfordrede ved Slægtskabets <seg type="com" n="com0"><!--åbenlyse, tydelige.-->aabenbare</seg> Kjendemærker og nærmere Samkvem, til at <seg type="com" n="com0"><!--nære.-->huse</seg> og vise indbyrdes Kiærlighed. Naar det da er saa, at Fiendskab og Had kommer mest tilsyne mellem de Folkefærd, der have Mest tilfælleds, da er det ene fordi Egennytte og <!--er i DDO-->Egenkiærlighed ere de Djævle, der besætte Folkene, ligesom de Enkelte. Langt være det da fra mig paa mindste Maade at oppuste eller billige det ulyksalige Had, der gjennem Aarhundreder, ja vel et Par Aartusinder, gik i Arv <pb type="text" facs="1813_210_fax021.jpg" ed="A" n="19"/>mellem <placeName key="fak24">Nordens</placeName> Folkefærd; det er vores Skiændsel, og vee den, <pb type="edition" n="712" ed="US"/>som deri sætter sin Ære<!--vendingen sætte ære i sin skændsel findes i ODS, men ikke i ordsprogssamlingerne. DDO har "sætte en ære i noget". Ergo ingen forklaring.-->! Men, <rs type="bible" key="3 Mos 19,18" rend="reference">vi skal elske Næsten som os selv</rs>, vi skal hos os selv <rs type="bible" key="1 Joh 2,15" rend="reference">kun elske det, som er af Gud Faderen, vi skal hos os selv hade det, som er af Verden</rs>, og dette maa vi da ogsaa hade hos Andre med et bittert Had, thi det er jo vore Brødres uforsonlige Fiende, det vil jo ødelægge dem, som elske det. <rs type="bible" key="Luk 14,26" rend="eg1787">Hvo, som da ikke hader det Onde</rs>, han elsker visselig ei heller det Gode, <rs type="bible" key="Luk 14,26" rend="eg1787">hvo, som ikke hader Løgn</rs>, han elsker ikke Sandhed; hvad jeg selv gjør <seg type="com" n="com0"><!--uretfærdigt, ulovligt.-->urettelig</seg>, det afskyer og hader jeg, hvad mit <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg> gjør <seg type="com" n="com0"><!--uretfærdigt, ulovligt.-->urettelig</seg>, betragter jeg ligedan, og jeg har kundgjort, at jeg ikke er blind for dets Brøst og Brøde. Naar jeg da griber Pennen, for at kundgjøre bittert Had og evig Afskye for den Aand, som nu styrer <placeName key="fak92">Sverrigs</placeName> offenlige <seg type="com" n="com0"><!--beslutninger, politik.-->Raad</seg> og som saa tit i de forgangne Tider styrede det, da er det ene fordi den Aand er ond, fordi mit <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg> i dette Stykke er Guds og Sandhedens, <placeName key="fak92">Sverrig</placeName> derimod Løgnens og Ondskabens Tjener. Midt under Freden at lade sig love et Naborige af dem, der ikke eie et Fodsbred i Landet, det er saa nederdrægtigt, at det selv i vor ugudelige, lovløse Alder, falder en Nordboe utroligt; at <pb type="text" facs="1813_210_fax022.jpg" ed="A" n="20"/>forlange, at <placeName key="poet1671">Tvillingrigets</placeName> Drot skal stadfæste en Pagt, som er sluttet i Helvede, og herved at tale om Venskab og Ømhed, det er saa formasteligt og bespotteligt, at den, som gjør det, <rs type="bible" key="Sl 73,9" rend="reference1787">sætter sin Mund imod Himlene</rs> og <rs type="bible" key="1 Kor 10,22" rend="eg">udæsker<!--ddo--> den Høieste til Strid</rs>.</p>
+<p rend="firstIndent">Underlig<!--lig DDO, ingen kommentar--> har <placeName key="fak92">Sverrig</placeName> afbildet sig selv paa Stenen i <placeName key="fak359">Stokholms</placeName> <placeName key="fak00"><!--Storkyrkan altNameSyn Sankt Nikolai kyrka grundlagt som domkirke i 1200-tallet facts siden 1942 er den en stiftskirke http://denstoredanske.dk/Kunst_og_kultur/Arkitektur/Kunst_og_arkitektur_i_bybilledet/Stockholm_(Arkitektur_og_museer)-->Store Kirke</placeName>, som skal minde om dets Udfrielse af hin <persName key="pe456">Anden Christians</persName> <pb type="edition" n="27" ed="VU"/>Haand: det er en <hi rend="spaced">Aal,</hi> halvopslugt af en Løve, men uddragen af en fremkrybende Leopard med disse Ord foroven: <seg type="com" n="com0"><!--plattysk, &#x201C;Ålen er en fed og stærk fisk, med de bare næver er hun [!] ikke god [nem] at fange, det er vist&#x201D;. Citatet har en enkelt substantiel fejl: &#x201C;se&#x201D; (hun) burde være &#x201C;he&#x201D; (han, jf. den maskuline artikel <hi rend="italic">Der</hi> Ael). Grundtvigs omtale af den såkaldte Ålesøjle (Ålpelaren) begår desuden vigtige sagfejl og udelader inskriptionens konklusion om, at der er behov for en sikker ålekiste (se <rs type="title" key="title00">Roosval 1927</rs>, s. 342 f.). Roosval, Johnny Nikolai eller Storkyrkan. II. Byggnadshistoria. place Stockholm year 1927, volumeTitle: Sveriges kyrkor 24. Stockholm 1:2, webEdition http://kulturarvsdata.se/raa/samla/html/6869 Evt. readMore: Ålesøjlen er opført på ordre af <persName key="pe456">Christian 2.</persName> i 1521 efter hans erobring af Stockholm og inskriptionens sidste del sammenligner <persName key="pe456">Christian 2.s</persName> nylige befæstning af Storkyrkan med en ålekiste.-->Der Ael ist fet ok en stark fisk, mit ledigen henden is se nickt gut tu fangen, dat is vis</seg>. En Aal er da Sindbilledet <placeName key="fak92">Sverrig</placeName> har kaaret sig selv, og det er vist mere sanddru end pralende, men ligesaalidt som Smidigheden vilde hjulpet, naar ei Leoparden var kommet, saalidet vil den endnu hjelpe, og bliver den ved at trodse Sandhed og Ret, da skal den snart fornemme, at <rs type="bible" key="Matt 4,18-22" rend="allusion">Gud ogsaa har Garn til at fange saadanne Fiske</rs>, og Haand til at holde dem fast, at ingen Løve behøves da til at opsluge den; det kan <rs type="bible" key="ApG 10,12-14" rend="eg1787">et ringe Dyr, det kan <seg type="com" n="com0"><!--alle slags krybende dyr (orme, slanger, krybdyr).-->Orme</seg> og Fugle under Himmelen</rs>, naar den henkastes paa Marken. Ingenlunde anseer jeg Aalen for et tro Sindbillede paa det hele Folks Eiendommelighed, som lyder <placeName key="fak92">Sverrigs</placeName> <pb type="text" facs="1813_210_fax023.jpg" ed="A" n="21"/>Love, det er sammensat af ulige Stammer; <seg type="com" n="com0"><!--mænd fra Dalarne.-->Dalekarlene</seg>, som vare den egenlige Leopard, vare jo da ikke Aalen, og denne afbilder kun de egenlige Svenske, Frænder af dem, som fra umindelige Tider have boet i <placeName key="fak00">Upland</placeName>, Frænder af <pb type="edition" n="713" ed="US"/>den <rs type="myth" key="myth59">Odin</rs>, der sveg Kong <rs type="myth" key="myth193">Gylfe</rs> og satte sit Tempel i <placeName key="fak97">Upsal</placeName>. Men visselig, saalangt tilbage, som <seg type="com" n="com0"><!--historieskrivningen, den historiske overlevering.-->Krøniken</seg> mindes <placeName key="fak97">Upsals</placeName> Drotter, afbilder den en Herskesyge, trædsk og ugudelig, som den saa arvelig neppe nogensteds er kommet tilsyne. Ei vil jeg her tale om de gamle dunkle Dage, i hvilke saamange Navne staa med Nidingsmærke, hvor <persName key="pe4206">Eisten</persName> og <persName key="pe1590">Asa</persName> med Tilnavnet <hi rend="spaced">Ildraade,</hi> staa som Djævle selv i svenske Krøniker; ei heller vil jeg tale stort om Middelalderen, da <placeName key="fak92">Sverrigs</placeName> Aarbøger vrimle af Udyr, som, for Krone og Vælde, hengave alt Menneskeligt paa den udvortes Skikkelse nær, ikke om ham, der indlokkede sine Brødre i Taarnet og kastede Nøglerne i Graven, saa de <seg type="com" n="com3"><!--blev sultet.--><!--ODS svelte 2 (intransitiv).-->sveltedes</seg> tildøde, ikke om Seidkvinden, der blandede Gift til sin kiødelige Søn, endog det vel er mærkværdigt at see hvad Udgang <placeName key="fak97">Upsals</placeName> Kongestammer have havt. Ei engang vil jeg tale om det Væv af Trædskhed og Underfundighed, hvori <persName key="pe00"><!--Erik Puke egl. Erik Nilsson Puke, d. 1437, svensk rigsråd facts: Puke var en af de drivende kræfter i Engelbrektopstanden 1434 mod Erik af Pommern-->Erik Pukke</persName> og <persName key="pe00"><!--Karl 8. Knutsson Bonde, 1408/1409-15.5.1470, konge af Sverige 1448-57, 1464-65 og 1467-70-->Karl Knudsen</persName>, <persName key="pe00"><!--Gustav Trolle, 1488-1535, svensk ærkebiskop facts: medansvarlig for Det Stockholmske Blodbad-->Gustav Trolle</persName> og <seg type="com" n="com0"><!--medlemmerne af adelsslægten Sture.-->Sturerne</seg> ere afbildede. Jeg <pb type="text" facs="1813_210_fax024.jpg" ed="A" n="22"/>vil kun lade Øiet løbe over de <placeName key="fak97">Upsals</placeName> Drotter, som sad i <placeName key="fak359">Stokholm</placeName> fra <persName key="pe2127">Gustav Eriksens</persName> Dage. Hvorledes han selv <seg type="com" n="com0"><!--bredte en rævepels ud foran sin løvehud. Variation af ordsproget “Ræveskindet fæstes ved, naar Løvehuden 
+vil ikke række til”, dvs. når magt ikke længere virker, bruger man list. <rs type="title" key="title93">Mau 1879</rs>, nr. 5.054 og 8.206, samt <rs type="title" key="title96">Grundtvig 1845</rs>, nr. 3.002. -->strakte Rævebelg for Løvehud</seg>, det er bekjendt af hans <seg type="com" n="com0"><!--stridigheder.-->Handler</seg> med hans redelige, gudfrygtige Svoger, vor <persName key="pe1663">Tredie Christian</persName>; det er <seg type="com" n="com4"><!--også.-->og</seg> saa øiensynligt af hans indenrigs Færd, hvor selv Religionen maatte lade sig bruge til Krog og til Klemme, alt som hans Leilighed faldt; det veed Enhver, som blot læste Svenskernes egen Fremstilling af hans Idrætter, og er han ikke dog Svenskernes Afgud. Om <persName key="pe2790">Erik</persName> og <persName key="pe2199">Johan</persName> vil jeg ei melde stort, om dem er Man enig, <pb type="edition" n="28" ed="VU"/>men til den Trædskhed, der udmærker deres Rigsraad inde og ude, maa Man vel lægge Mærke. Ad hvilken Stige <persName key="pe2128">den Niende Karl</persName> opkrøb paa Tronen, er bekiendt, og uden at dømme her den sandelig store <persName key="pe1270">Gustav Adolf</persName>, maa Man vel være blind for ikke at see, at den lumpneste Underfundighed var Sjælen i de Raadslag, som Oxenstjerne efter hans Død styrede. Her i den bolde <persName key="pe231">Fjerde Christians</persName> gamle Dage er, som Man veed, en uaftvættelig Skamplet i den svenske Historie, det første Exempel jeg mindes paa, at et nordisk Folkefærd kan overfalde et Frændefolk, uden først at udskikke Herold og <seg type="com" n="com0"><!--krigserklæring.-->Feidebrev</seg>, og denne Adfærd, da <placeName key="fak92">Sverrig</placeName> kiøbte <pb type="text" facs="1813_210_fax025.jpg" ed="A" n="23"/><placeName key="poet219">Dannemark</placeName> af <hi rend="spaced"><placeName key="fak759">Holland</placeName>,</hi> er og til sin Tid, skiøndt hverken passelig eller rolig, afmalet sort som den var i <placeName key="fak14">Danmarks</placeName> Pines Historie<note type="footnote"><p rend="noIndent">See <rs type="title" key="title1059">Ny Samlinger til den danske Historie</rs>, 3die Bind, S. 360.</p></note>. Hvordan <persName key="pe231">Christian</persName> selv var sindet, behøves ei at meldes, og <persName key="pe1271">Carl Gustav</persName> er dog vel ei glemt mellem Danske. Ingenlunde vil jeg med et Ord forsvare <pb type="edition" n="714" ed="US"/>eller undskylde mit Fædrelands Rigsraad, der dumdristigt og troløs udæskede ham; men hans Trædskhed og Troløshed, der han brød Roskilde Freden, er saa <seg type="com" n="com0">aabenbar</seg>, at det Folk, der forsvarer den, tilegner sig den selv, saa aabenbar, at Man vel maa tro, han ogsaa, uden at være blevet udæsket, vilde giæstet <placeName key="fak14">Danmark</placeName>, saa saare <placeName key="fak397">Polen</placeName> havde været afhærget. Om <persName key="pe1354">Carl den Ellevte</persName> veed Man, at selv Svenske afskyede hans Trædskhed, thi han øvede den mest mod dem selv, og saa særdeles hver sanddru Mand maa undtage <persName key="pe1071">Tolvte Karl</persName> selv for Underfundighed, besjælede den jo dog ret egenlig hans Fortrolige: <persName key="pe00"><!--http://denstoredanske.dk/Geografi_og_historie/Norge_og_Sverige/Sverige_1523-1809/Georg_Heinrich_von_G%c3%b6rtz-->Görtz</persName>. I den største Deel af det attende Aarhundrede veed Man at den svenske Regierings Historie kun er et Væv af smaavurne Rænker, hvorved herskesyge og pengegierrige Adelsmænd søgte at tilintetgiøre Kongemagten, glimre og berige sig, ja om <pb type="text" facs="1813_210_fax026.jpg" ed="A" n="24"/>den eneste Krig, som i dette Tidsløb førtes mellem de nordiske Riger, maa hver sanddru Mand sige, at den fra <placeName key="fak14">Danmarks</placeName> Side var aldeles uforsvarlig, og en Plet paa den Redelighed og Trofasthed, der som en Straalekrands skinner om vor Kongestammes Tinding. Men, hvordan færdedes <placeName key="fak92">Sverrig</placeName>, saasnart der kom en Konge, der overvandt de smaavurne Rænker og sattes istand til at tænke paa Naboer? Hvad er <persName key="pe1682">Gustav den Tredies</persName> Regjering, uden et Væv af Underfundighed, hvad hindrede ham fra at indsnige sig i <placeName key="fak41">Norge</placeName>, uden Gud og Nordmænd, hvordan var hans Udgang, hvad Deel tog <placeName key="fak92">Sverrig</placeName> efter Forbund i Striden mod <placeName key="fak5">England</placeName> 1801? hvorledes teede det sig 1807? ja erklærede ikke dets Regiering offenlig, at det ikke var Frygt for at begaae en <pb type="edition" n="29" ed="VU"/>himmelraabende Synd, som afholdt <app select="no" type="corrNote"><lem wit="A">dem</lem><rdg wit="GV">den</rdg><witDetail wit="A" n="18" rend="ft">m for n. Meningen forstyrres ikke, så ingen rettelsesnote, trods det uelegante skift i pronomenet i en og samme sætning ('den' for Sveriges 'Riegering'). Manuskriptmateriale til dette afsnit er ikke bevaret.<note corresp="US" n="714">den</note><note corresp="VU" n="29">den</note></witDetail></app> fra at række Haand til <placeName key="fak14">Danmarks</placeName> Sønderrivelse, ja at den troede det muligt den kunde fortryde dette Afhold? Har Man saaledes betragtet <placeName key="fak92">Sverrigs</placeName> offenlige Færd gjennem 3 Aarhundreder, da skal der Meget til, før Man studser ved dets Tale, men dog har jeg studset, og det var nødvendigt. Var den svenske Hær uden videre brudt ind i <placeName key="fak41">Norge</placeName>, eller havde den paa Grændsen forlangt det Rige og slaaet paa Sværdet, da var det ei meget at <pb type="text" facs="1813_210_fax027.jpg" ed="A" n="25"/>studse over, thi det var kun Trædskhed eller Overmod; men at forlange: Brev paa Riget, som om det alt var taget, som om Brevet blot var en Formalitet, Man for at undgaae Misforstand vilde forlange; endelig, som af stor Føielighed, for at spare Menneskeblod, at ville nøies med Hælvden, at tale derom, som om det var afsindigt af <placeName key="fak14">Danmark</placeName> at nægte den lille Føielighed, at fløtte sine Grændsepæle det Par Skridt fra <placeName key="fak568">Kiølen</placeName> til <placeName key="fak205">Nidaros</placeName> og Havet, fra <placeName key="fak00">Vardøhus</placeName> til <placeName key="fak307">Dovre</placeName>: see det er Noget, hvorover Man maa studse, thi <pb type="edition" n="715" ed="US"/>det er en grændseløs Overmod og Foragt mod <placeName key="poet1671">Tvillingriget</placeName>, en saa mageløs Forblindelse, at Man neppe troer sine egne Øine og Øren. Det er <app type="addNote" select="no"><!--rettes fra no addNote til disc corrNote i 1.14--><lem wit="A">aabenbaret</lem><note type="add" subtype="Verdenskrøniken 1817">US har: aabenbart</note><witDetail wit="A" n="15">Læsefejl eller sætterfejl. Manuskriptmateriale til dette afsnit er ikke bevaret.- Passagen hentyder til 1 Thess 2,16 og Jer 51,6, og bygger i denne forstand på Bibelens åbenbarede viden. Sagens kerne er imidlertid Grundtvigs diagnose af fædrelandets tilstand anno 1813. Ved denne diagnose er der en væsentlig teologisk forskel mellem viden, som er åbenbaret guddommeligt gennem Bibelen (A's ordlyd: "aabenbaret"), og viden, som bygger på åbenlyse forhold, der ikke kræver nogen guddommelig åbenbaring (den rettede ordlyd: "aabenbart"). Forskellen har formentlig fået den teologisk kyndige Holger Begtrup til at rette i US (VU følger trop). Det ville nemlig være teologisk suspekt for Grundtvig (på sværmerisk vis) at påberåbe sig en ny personlig åbenbaring om, at syndernes nu (i 1814) er fuldt. Grundtvig fremhæver ganske vist, at samtidens hændelser svarer til dem i Johannes Åbenbaring, men han drager parallelen ud fra sine egne iagttagelser, jf. hans følgende formuleringer som "troede jeg" og "betragtede jeg". - Niels Jørgen Cappelørn siger god for denne rettelse<note corresp="US" n="715">aabenbart</note><note n="29" corresp="VU"/></witDetail></app>, snart er <rs type="bible" key="1 Thess 2,16" rend="eg">Syndernes Maal fuldt</rs>, og <rs type="bible" key="Jer 51,6" rend="eg1787"><!-- thi dette er Herrens Hevns Tid; 1992: Tiden er inde til Herrens hævn-->nær er Hevnens Time</rs>, thi saaledes er det at Herren forblinder sit Navns Foragtere, saa de haste til deres egen Fordærvelse; og visselig, troede jeg at <seg type="com" n="com0"><!--dvs. fædrelandet.-->Fædrenelandet</seg> ei havde nogen farligere Fiende, end <placeName key="fak92">Sverrig</placeName>, da vilde jeg flux istemme Seierssangen og skulde vist ei vorde beskiæmmet; betragtede jeg Svenskerne blot som <seg type="com" n="com0"><!--dvs. fædrelandets.-->Fædrenelandets</seg> Uvenner, og ei tillige som Brødre og Frænder, da maatte jeg drive Spot med deres daarlige Anslag, thi af saadanne Ting er intet vissere, end at <placeName key="fak92">Sverrig</placeName> er langt nærmere ved at vorde en Tjenestekvinde, end <placeName key="fak24">Nordens</placeName> Dronning.</p>
+<p rend="firstIndent"><pb type="text" facs="1813_210_fax028.jpg" ed="A" n="26"/>Nu derimod ønskede jeg mig en Strube af Kobber og Torden til Mæle, for at lade Varselsord rulle over <placeName key="fak92">Sverrig</placeName>, gienlyde fra dets Fjelde over <placeName key="fak00">Dalarne</placeName> og <placeName key="fak309">Gothland</placeName>. Dog det nyttede vist ikke, Herskerne ere døve og Timen er vel kommet, da Spiret i det mindste vil vige fra Upland og den fordærvede Adel. Min Tale var da ude, hvis jeg meente, enten at <seg type="com" n="com0"><!--dvs. fædrelandet.-->Fædrenelandet</seg> var uden Fare, eller og uden Redning forlorent, men ingen af Delene troer jeg; det Første kan jeg ikke tro, thi jeg maatte da fornægte en soleklar Sandhed, det Sidste kunde jeg vel fristes til at tro, men jeg har grundet Haab om, at det vil endes bedre, end det har tegnet, jeg har grundet Haab om, at Danske og Norske vil oplade Øiet for deres sande Nød og Fare og søge Hjelpen hvor den ene er at finde. Giennem den bedøvende Tummel af Færdsel og Vaa<pb type="edition" n="30" ed="VU"/>ben, Bespottelser og Horeviser, klinger det, synger det liflig for mit Øre som en Psalmetone, og med Guds Hjelp, den vil bryde igjennem, den vanhellige Tummel skal tie, og i hellige Toner skal Hjertet igjen stræbe mod Himlen. Derfor kiedes jeg ei ved at tale, om end Faa ville høre, thi med Faa maa alt Godt begynde. Apostlene vare kun tolv, kun om trende vide vi nogen Beskeed og deres Ord udgik kraftelig til <pb type="text" facs="1813_210_fax029.jpg" ed="A" n="27"/>Jorderigs Ender, og det er Ordet vi forkynde, hvem vilde da forsage? Just denne Tid agter jeg skikket til at tale udi, thi vi ere trykkede og betrængte, og først da, naar Gud føier Tingene saa, at menneskelig Klogskab maa beskiæmmet forstumme, naar den spørges om Raad i timelige og legemlige Ting, kun da er det venteligt, at Menneskene ville laane Øre til Guds Ord, vende sig længselsfulde mod den Hjelp og Hvile, som det tilbyder. Det er venteligt, thi jo trangere Tiderne ere, jo mindre lysteligt Jordlivet tilbyder, jo uvissere, jo mere farefuldt det sees <pb type="edition" n="716" ed="US"/>at være, desmindre adspredes Tankerne, desmindre beruses Sjælen, desmere hendrages Tanken til Døden og Graven, desmere bekymres Hjertet for hvad der hisset monne være, desmere voxer Ønsket at vide Beskeed derom, og dog der at finde den Tilfredsstillelse, den Havn og liflige Hvile, den her forgjæves søger. Jo tydeligere vi see vore Forventninger og Beregninger skuffede, jo mere raadvilde vi føle os, dessnarere maa det dog vorde indlysende for os, hvor lidt vi formaae, hvor bedragelige vore klogeste Tanker ere, hvor daarligt og afsindigt det er, blot at tro vor Fornuft om de usynlige Ting, da den i Beregning af det Synlige og Dom derover, farer saa tit og saa saare, saa grovelig vild, <pb type="text" facs="1813_210_fax030.jpg" ed="A" n="28"/>at bygge vor Tro og vort Haab, hvor det gjælder en <hi rend="spaced">Evighed,</hi> paa en Rad af Slutninger, enddog vi paa en saadan ei kan bygge nogen Vished om Føden i Morgen. Jo vildere der fremfares i Verden, jo mere Folkene og den Enkelte aflægge Masken, vedkiende sig uden Skye i Ord og i Handling den Mening, at hver har Lov til at staae som Næstens Fiende, og giøre Alt hvad ham synes kan være hans Fordeel, deslettere maa dog Skællet falde os fra Øine, saa vi see hvilken haandgribelig Løgn det maa være, hvilken vi hidtil troede paa som, ja istedenfor og trods et Evangelium, at nemlig vor Alder skulde være mere oplyst i aandelige Ting, mere dydig end vore Fædres. Er Dette Sandhed, da maa vel Øieblikket synes en Christen bekvemt til alvorlig og sanddru Tale, enddog det, desværre! er sandt, at fra denne Side vorder det Dag for Dag end mere bekvemt. Men, der er for Folkefærd som for Enkelte, Tidspunkter, som ei kan ubrugte overskri<pb type="edition" n="31" ed="VU"/>des uden Forhærdelse til Undergang, der ere Tidspunkter, da Sandheden trænger saa vældig ind paa os, fra Uden og fra Inden, at vil vi ikke bøie os, da maa vi saaledes villig udruste os med Løgnens Vaaben, at vi vorde dens evige Trælle, og det Øvrige af Vandringstiden her <pb type="text" facs="1813_210_fax031.jpg" ed="A" n="29"/>maa saaledes hengøgles, hendøses eller overvældes, at vi daglig synke dybere, daglig vorde mere uskikkede til at erkiende Sandheden, mere uvillige og uduelige til at lyde den. Dette er Menneskets Dom, og ligesom <rs type="title" key="title788">Skriften</rs> vidner, at evig Fordømmelse er hvers Lod, som ei vil annamme <hi rend="spaced">Sandhedskjærlighed,</hi> saaledes aabenbares allerede her Dommen paa hvert gienstridigt Folkefærd, det henraadner indvortes; og jo mere det legemlig færdes og bryster sig, dessnarere og grueligere Udgang, som Folk, har det sikkert at vente. Men nu siger jeg, fordi jeg veed det, Danske og Nordmænd staae paa denne Punkt, hvor det maa afgiøres for Aarhundreder, ja maaske for dem alle, som <pb type="edition" n="717" ed="US"/>ere tilbage, om de skal udslettes som Folk i aandelig Forstand, og legemlig nedsynke i Usselhed og Trældom, eller de, gienfødte til et nyt Liv, skal reise sig og skinne som Lys iblandt den vantro og vanartede Slægt. Jeg gientager det, <placeName key="fak92">Sverrigs</placeName> Trudsel har i sig selv intet Frygteligt, men den er frygtelig fordi den lærer os, i hvilket Lys vi af Naboer kan betragtes, thi Overmoden maa være saa stor som den vil, den fører dog kun dette Sprog til et Folk, som har givet Prøver paa Svaghed og Rædsel og lav Egennytte. Allerede dette skulde giøre os opmærksomme, saa <pb type="text" facs="1813_210_fax032.jpg" ed="A" n="30"/>vi, isteden for at dvæle ved den fremmede Brøde, oplode Øiet for vor egen, og mon den skulde være vanskelig at finde? Jeg vil ikke her tale om de mange sørgelige Beviser paa Forræderi og Feighed de seneste Aar have givet os, jeg vil kun omtale det Aabenbareste af Alt, som paa engang lærer os vor Brøde og Fare: det er den lumpne, den grændseløse Egennytte og Vindesyge, der i den seneste Tid har aflagt al Maske, al <seg type="com" n="com0"><!--dvs. blusel.-->Blussel</seg>. Er det dog ikke vist, at saalænge der end er Skygge af Tro paa Gud og Evighed, saalænge der end er en Gnist af Menneskekiærlighed tilovers hos os, søge vi dog at skjule det fule Udyr, der boer os i Barmen; skamme vi os dog ved at give utvetydige Beviser paa, at vi Intet elske uden vort Kiød, uden de forgængelige, legemlige Ting, hvormed vi sysle den stakkede Tid. Men er det da ikke ogsaa sandt, at deres Tal daglig voxer, som uden Skye udsuge og udmarve Næsten, at de Fleste nu ei mene at behøve anden Undskyldning end Andres Exempel, at de Fleste, som have Noget at sælge, ikke vil erkiende anden Grændse for deres Priser, end den Umu<pb type="edition" n="32" ed="VU"/>lighed at opdrive dem høiere, at daglig Færre skamme sig ved at forlange det mest Upassende, at de Fleste kun skamme sig over, at de ei forlangte Mere, at Faa <pb type="text" facs="1813_210_fax033.jpg" ed="A" n="31"/>erkiende anden Indskrænkning i Penges Erhvervelse end den <hi rend="spaced">uomgaaelige,</hi> Lovene kun sjelden kan sætte og sjeldnere hævde. Kan vi endnu tvivle om, at vor Alder er den mest fordærvede Solen længe beskinnede, kan vi paastaa, at Fædrene vare værre, ei bedre, men fattedes kun den Klogskab og Dristighed vi besidde, da er det kun, fordi vi <hi rend="spaced">vil</hi> tvivle, kun fordi vi ere forvorpne nok til at sætte vor Ære i vor Skiændsel, i vor Klogskab til at giøre Ondt, i vor Forvovenhed til at trodse og foragte den himmelske og jordiske Øvrighed, deres Bud og Trudsler. Klart er det da allerede heraf, at vi staa paa Grændsen af den grueligste Udyds og Ugudeligheds Egn, hvorfra Ingen kommer tilbage evindelig, at vi ere nær ved med Bevidsthed at fornægte Gud og Dyden, som Boglærde alt giøre <pb type="edition" n="718" ed="US"/>uden Skye, og er der en levende Gud til, da maa der og være stor Nød paa Færde for hver Enkelt, hvilken ei kan undflyes uden ved en skyndelig Flugt fra Troldomsegnen, en alvorlig <hi rend="spaced">Omvendelse </hi> til Gud og Ydmygelse under Hans vældige Haand. Jeg veed det vel, at kun Faa vil agte paa saadan Tale, men just det er et aldeles usvigeligt Vidnesbyrd om vor dybe Fordærvelse, thi det er Vidnesbyrd om, at vi have aflagt Bekymring <pb type="text" facs="1813_210_fax034.jpg" ed="A" n="32"/>for Sjælens Vel; thi det er vist, at jo dydigere et Menneske bliver, des inderligere bekymres han for sin evige Velfærd, desmere laster og savner han hos sig selv, desvilligere bekiender han Nødvendigheden af en fuld Omvendelse fra Verden og de Ting, som ere i Verden. Nødvendigheden af daglig at gientage og fuldkomme denne Omvendelse. Nødvendigheden heraf for Enhver, som vil renses fra Kiødets og Aandens Besmittelse, fuldende Hellighed i Gudsfrygt, og saaledes vorde dygtig til de Helliges Arvedeel i Lyset, er saa let at indsee, at selv Mange have indrømmet den, uden at lade sig drive af den til sand Omvendelse, og naar da et Menneske og en Tidsalder ei engang kan lide at høre tale om denne Nødvendighed, naar de endog spotte dermed, harmes derover, som Noget, der fornærmer deres Moralitet, da er det umiddelbar vist, at de baade med Hjerte og Hjerne ere i Verdens og Syndens Vold, saa fremmede for Gud, at de endog mene de gaae til Ham, naar de vende Ham Ryggen. Men nu er det jo vist, at vor Alders Mennesker spotte eller skiælde, saasnart Man taler om, at de ere Syndere og trænge til Omvendelse, Noget der dog er aldeles vist selv om de største Helgene, og vi have da ei mere <pb type="edition" n="33" ed="VU"/>Vidnesbyrd <pb type="text" facs="1813_210_fax035.jpg" ed="A" n="33"/>behov om Tidens Elendighed, naar vi høre Mennesker, som jo maa vide, at Egennytte, Æresyge og Vellyst herske, endnu pukke paa deres egen og Tidens Oplysning og Moralitet; men de give os overflødigt Vidnesbyrd, ved tvertimod den hellige Skrift og al sund Fornuft at paastaa, Man kan elske Verden og dog være dydig, Man kan elske Gud og dog søge sin egen Ære, Man kan forlade sig paa Gud og dog stole paa sin egen Dyd, Klogskab og Formue, Man kan ikke allene tjene to, men mange Herrer, Man kan i visse Dele være dydig og i andre lastefuld og dog moralsk i det Hele, der er nært Slægtskab mellem Dyder og Laster, der er Samfund mellem <persName key="pe45">Christus</persName> og Belial, mellem Lys og Mørke, mellem Sandhed og Løgn. Intet roligt, eftertænksomt Menneske kan da ret længe tvivle om Tidens store Vanart, om Nødvendigheden af en fuld Omvendelse af Hjerte, Sjæl og Sind, dersom de Enkelte ei skulle fortabes, og i den næste <pb type="edition" n="719" ed="US"/>Slægt selv Ordene Gud og Dyd vorde til Spot, og frygter han selv Gud og elsker Næsten, da er det ham kun Lidet om Landet alligevel kunde blive ved at give sin Grøde, Menneskene leve hver Dag herligen og i Glæde, klæde sig i Purpur og kosteligt Linklæ<pb type="text" facs="1813_210_fax036.jpg" ed="A" n="34"/>de, thi Enden derpaa er Døden, og naar de svøbes i Jordelinet, da maa de oplade Øiet i Helvede, hvor de ere i Pinen. Imidlertid er det ligefrem vist, at det ei kan gaae saaledes til, thi er der en Gud, som har skabt Menneskene, kan Han dog ikke have skabt dem til at fornægte Ham og trodse Hans Bud, thi da fornægtede Han Sig Selv, som er umuligt; er der en almægtig Gud, som styrer Alt, da maa Han aabenbare Sin Mishag med<!--US retter 'med' til 'mod', men ODS kender kombinationen "Mishag med". DDO har 'Mishag over/ved'. Ergo: højest en verbalkommentar, ingen tekstkritisk note.--> Hans Navns Foragtere og sin Lovs Overtrædere, og naar de forhærde Hjertet mod Hans indvortes Tugtelser, da maa Han i det Eneste de end have Øie og Følelse for, i det Udvortes, Legemlige, lade dem føle sin Arms Magt, sin hellige Afskye for deres onde Raad og ugudelige Idrætter, hvormed de vanhellige Hans Navn og forhindre Hans Rige fra at komme til dem, ja, i den Time, da enten Ingen mere frygtede Gud, eller Ingen mere vilde høre de overblevne Gudfrygtiges Tale, da maatte Verden forgaae, da skal den forgaae; thi ligesom det gik til i <persName key="pe411">Noa</persName> Dage, saa skal og Menneskens Søns Tilkommelse være. Adspørge vi nu <seg type="com" n="com0"><!--historieskrivningen, den historiske overlevering.-->Krøniken</seg>, da stadfæster den det Samme, som nødvendigt er, thi her er ikke Spørgsmaalet, om gudfrygtige Folkefærd, ligesom gudfrygtige Enkelte, have lidt stor Gienvor<pb type="text" facs="1813_210_fax037.jpg" ed="A" n="35"/>dighed, thi det maa jo saa være, dersom det er sandt, at <hi rend="spaced">Alle,</hi> som komme i Guds Rige, skal indgaa der gjennem megen Trængsel, ja, jo mere Gudsfrygt der er i <pb type="edition" n="34" ed="VU"/>et Land, jo mindre Menneskene der arbeide paa at giøre hinanden Livet surt, desflere udvortes Uheld ere ventelige, saasom Korset er nødvendigt til Prøvelse og Renselse. Det er heller ikke Spørgsmaalet om ugudelige Folkefærd, ligesom ugudelige Enkelte, en Tidlang have havt Medbør paa Verdens Hav, thi det hører til Guddommens skjulte Raad, som med stor Langmodighed taaler Vredens Kar, som bruger dem til i deres Hjerters Stivhed at udføre Hans Villie, og ved at unde dem deres Hjerters Begiæring, lader dem paa det Klareste indsee Verdens Forfængelighed, og de jordiske Tings Udygtighed til at giøre lyksalig. <persName key="pe2071">Asaph</persName> haver herom givet os kostelig Undervisning der han synger: jeg var misundelig paa de Galne, der jeg maatte see de Ugudeliges Velstand, de have ei Møie, som <app type="corrNote" select="no"><lem wit="GV">Mennesker</lem><rdg wit="A">Mennesket</rdg><witDetail wit="A" n="21" rend="ft">t for r. Pro rettelse: sætningen og resten af afsnittet har pluralis. Kontra rettelse: 1) Kilden (1787) har singularis ("De haver ikke moye som [et andet] menniske"), modsat 1992 (Salme 73,5), 2) meningen forstyrres ikke synderligt. 3) "Mennesket" kan sagtens stå for alle "Mennesker" (en art pars pro toto). - Manuskriptmateriale til dette afsnit er ikke bevaret.<note corresp="US" n="719">Mennesker</note><note corresp="VU" n="34">Mennesker</note></witDetail></app>, og som Mennesker have de ei Plage, derfor haver Hovmod prydet dem som en Kiæde, Vold bedækket dem som et Smykke, deres Øine stirre af Fedme og deres Tanker faae <pb type="edition" n="720" ed="US"/>Fremgang, de volde Forsmægtelse og tale af Ondskab om Vold, <pb type="text" facs="1813_210_fax038.jpg" ed="A" n="36"/>de tale af det Høie, de sætte deres Mund mod Himlene, og deres Tunge farer frem paa Jorden. See, disse ere de Ugudelige, dog ere de rolige i Verden og formere Godset. Sandeligen, jeg haver forgiæves renset mit Hjerte og toet mine Hænder i Uskyldighed, efterdi jeg er plaget den ganske Dag, og tugtes hver Morgen. Dersom jeg sagde, saadan Tale vil jeg føre, see, da havde jeg fordømt dine Børns Slægt, og jeg tænkte at forstaa det, det var møisommeligt (urede) for mine Øine, <hi rend="spaced">indtil jeg indgik i Guds Helligdom,</hi> jeg gav Agt paa <hi rend="spaced">deres Endeligt,</hi> sandeligen, du sætter dem paa det Slibrige, du lader dem falde til at <hi rend="spaced">ødelægges.</hi> Hvorledes blive de i et Øieblik til en Ødelæggelse! de omkomme, de faae Ende med Forskrækkelse, ligesom en Drøm naar Man opvaagner, skal Du, Herre, naar du vaagner, foragte deres Billede<note type="footnote"><p rend="noIndent">Psalm. 73.</p></note>. Lægge vi hertil <persName key="pe346">Davids</persName> kostelige Ord: mange onde Ting vederfares den Retfærdige, men Herren skal frie ham af dem allesammen<note type="footnote"><p rend="noIndent">Psalm. 34.</p></note>, da have vi et Stade, hvorfra vi kan betragte Tiderne, og stykkevis erkiende Guds Raad og Hans Domme. Ved den enkelte Ugudeliges Død kan vi ei alle være tilstæde, han kan maaske skjule sin Elendighed for vore Øine, og mange onde <pb type="text" facs="1813_210_fax039.jpg" ed="A" n="37"/>Ting kan i den sidste Strid ogsaa vederfares den Retfærdige; men jeg gientager her, at i Folkefærds Liv og Samkvem kommer det Indvortes tilsyne, de leve og døe for vore Øine, og Spørgsmaalet bliver da allene: opslug<pb type="edition" n="35" ed="VU"/>tes, tilintetgjordes nogensinde et gudfrygtigt Folk af sine Fiender; var ikke hvert Folk, som forgik, først ugudeligt og lastefuldt? Maae vi nu besvare det Første med Nei, og det Sidste med Jo, mon da ei Efterkommerne skal komme til at svare ligedan? kan det være anderledes? Vi have seet, det kan ikke være andet, uden Gud skulde nægte sig selv, som Han ikke kan, i hvert ugudeligt Folks Undergang fremstiller Han et Billede af Verdens, af den yderste Dommedag, hvorfor <seg type="com" n="com0"><!--også.-->og</seg> saavel <!--<rs type="bible" key="Ez 7-9 og Matt 23,37-24,31" rend="reference">-->det gamle Testamentes Propheter, som <persName key="pe45">Jesus</persName> sammensmelte <placeName key="fak10">Jerusalems</placeName>, med Verdens Ødelæggelse<!--</rs>-->; <persName key="pe45">Jesus</persName> taler om begge Dele, som <rs type="bible" key="Matt 24,27 og 1 Thess 4,15" rend="reference1787">Menneskens Søns <seg type="com" n="com0"><!--genkomst.-->Tilkommelse</seg></rs>. Men, <rs type="bible" key="Sl 36,10" rend="reference">i dit Lys skal vi see Lys</rs>, synger <persName key="pe346">David</persName> for Herren, og det er sandt i alle Maader, thi først naar vi betragte Gud og os selv og Verden ved Guds Ords Lys, adspredes Mørket, og vi see Alt i sin sande Skikkelse, og naar vi siden blive ved at see vist, da forsvinder Mørket mere og mere og fra alle Sider opgaae Lys, der forene sig med Ordets <pb type="edition" n="721" ed="US"/>Lys. Saaledes kan vi 
+<pb type="text" facs="1813_210_fax040.jpg" ed="A" n="38"/>da ogsaa indsee, hvorledes der i Ugudeligheden selv, betragtet i sine <seg type="com" n="com0"><!--åbenlyse.-->aabenbare</seg>, nødvendige Yttringer, staaer en Undergangsdom, uforanderlig afsagt over hvert Folk, som bliver ved derudi.</p>
+     <p rend="firstIndent">Man maa beskrive et Folks Liv og Hæder, som Man vil, naar Man da ikke, som en Afsindig, vil lade det bestaae i den dybeste og øiensynligste Elendighed, Kraftløshed, Dorskhed og Trældom, da kan det strængt bevises, at Liv og Hæder maa forsvinde med Herrens Frygt; Man maa angive Statens Øiemed hvordan Man vil, naar dens Øiemed ikke er at tilintetgjøre sig selv, da kan det strængt bevises, at det maa forfeiles og den tilintetgiøres, naar Gudsfrygt er borte. Dette er ligesaa let at bevise, som at f. Ex. den nederdrægtige og bespottelige Tale om Gudsfrygts Skadelighed for Staten, hvilken nys i ubegribelig Ubesindighed er fordansket af en hæderværdig Mand, er tillige en af de mest haandgribelige Løgne. En anden Gang, vil Gud, skal jeg i en egen Undersøgelse om Kirkens og Statens indbyrdes Forhold, omstændelig afhandle Dette, ei fordi det jo er soleklart for hvert enfoldigt Øie, men for at stoppe Munden paa de Boglærde, der saa daarligen lyve imod Sandheden. Her være det nok, kortelig at vise, at selv naar en Buchholz havde <pb type="text" facs="1813_210_fax041.jpg" ed="A" n="39"/>Ret i, at en kraftfuld Nationalexistents (Varighed som Stat) bør være Statens egenlige Øiemed, da maa det, uden Gudsfrygt, tilintetgiøres. Er det dog ikke vist, at naar Staten skal have <pb type="edition" n="36" ed="VU"/>Kraft, maa dens Lemmer være sunde og stærke paa Sjæl og Legeme? Er det ikke vist, at Fraadseri, Drukkenskab og Løsagtighed nødvendig maa nedbryde Sundhed og Størke hos et <hi rend="italic">Folk,</hi> om end Enkelte synes at kunne forene disse Ting? Er det ikke vist, at selv de Enkelte, hvis Legeme enstund kan fordølge Svækkelsen, nødvendig miste den Sjælens Alvor og Kraft, som udkræves til at røgte Statens Anliggender med Indsigt og Fasthed? Er det ei ydermere vist, at Lysten til en af hine Laster, eller overhovedet til de sandselige Ting, hvorved Mennesket altid forkjæles og afkræftes, er mægtig hos alle, mægtigst hos de Livligste, hos dem, der ene ere skikkede til at belive Staten? Er det endelig ikke vist, at naar vi ikke tro paa Gud og Evighed, da maa <hi rend="spaced">Egennytte</hi> være vor Gud, og at de fleste Mennesker maa gribe efter det, som for Øieblikket synes dem behageligst, som om det var deres Nytte; kan et ugudeligt Menneske sige noget Fornuftigere end: lader os æde og drikke! thi i Morgen dø vi; kan et Menne<pb type="edition" n="722" ed="US"/>ske, som kun <hi rend="spaced">troer paa Verden,</hi> elske Andet <pb type="text" facs="1813_210_fax042.jpg" ed="A" n="40"/>end det som hører Verden til: Øienslyst, Kiødslyst og et fornemt Levnet? Dog, jeg vil her sætte den Umulighed, at Sjæls og Legems Størke kunde uden Gudsfrygt bevares hos et Folk, og det nytter dog ikke Staten, thi til dens kraftfulde Varighed er det ikke nok, at de Enkelte have Størke, men denne Størke maa <hi rend="spaced">tjene Staten,</hi> og er dette ikke aldeles umuligt, naar Egennytte hersker, naar de Enkelte ei vil erkiende anden Lov end, at <hi rend="spaced">tjene sig selv.</hi> Vel veed jeg hvad Man har vrævlet om Politie og staaende Hære og Ærestegn; men istedenfor langt Bevis for den Snaks Galskab vil jeg kun spørge: om ikke alle disse Tings Virksomhed ene <hi rend="spaced">beroer paa Egennytte,</hi> og skulde vi virkelig være komne saavidt i Oplysningen, at vi kan faae en Djævel til at binde og uddrive sig selv? Vil et <hi rend="spaced">egennyttigt</hi> Politie see paa Statens eller paa sin egen Nytte, vil en egennyttig Soldat gjøre det, ja vil han vove Liv og Blod for Staten, naar Man lover ham begge Dele for at forsage den, naar Man byder ham Guld for at forraade den, eller aflægge Menneskene Egennytten naar de blot stilles i Geled eller blive Embedsmænd; attraaer den Egennyttige Ære, dersom denne ikke baner Vei til Magt og Gods, eller vil han igjen bru<pb type="text" facs="1813_210_fax043.jpg" ed="A" n="41"/>ge disse Ting til Statens Nytte? Talen er saa ravgal, giøres saa bestemt til Løgn af den ganske Krønike, af daglig Erfaring og sund Fornuft, at det var umuligt Nogen kunde mene den, dersom det <hi rend="spaced">at mene</hi> var andet, end <hi rend="spaced">at ønske</hi> Noget maatte være sandt; men klart er det, at den som indseer Følgerne af Statens Undergang, <pb type="edition" n="37" ed="VU"/>som frygter, eller vil lade som han frygter dem, og dog have Lov til at være ugudelig, maa paastaae, at Staten kan bestaa uden Gudsfrygt. At imidlertid flere, større og mindre Stater med egennyttige, ugudelige Borgere, skulde længe kunne bestaa sammen, det er alt for urimeligt at paastaae, derfor drømme Buchholz og Mange med ham om et <hi rend="spaced">Verdensrige,</hi> hvori alle Stater sammensmeltede, hvor Krig kunde ophøre, altsaa Tapperhed ei giøres behov &amp;c. Hvorledes Nogen, som kiender til de forrige Tider, kan, uden at grue, tænke paa Opkomsten af et saadant Rige, uden at blues ved at fremønske det, var utroligt, naar Man ei vidste, at fra Ugudelige maa Ugudelighed komme. Vil Man dog engang betænke, hvor dorske, egennyttige og kraftløse Folkene maatte være, før det Verdensrige kunde opstaa, og mon de da ved at opsluges af det, vilde, kunde vorde mindre egennyttige, mere livlige og kraftige? <pb type="text" facs="1813_210_fax044.jpg" ed="A" n="42"/>eller er det ikke klart, at deres Uduelighed til hvert Statsøiemed, som er Betingelsen for deres Opslugelse, <pb type="edition" n="723" ed="US"/>maatte daglig voxe der, hvor Alt hvad der ellers hjelper til at oplive og sammenknytte Menneskene, dels ophører, dels maa hades af dem, der styre det Verdensrige, hvor Krigshæren blev den Jernarm, der skulde sammenholde de brudte <seg type="com" n="com0"><!--statsringe. Metaforen om hver enkelt stat, som en ring i en verdensrigets kæde, var ikke gængs.--><!--sta(a)tsringe hverken i Google Books; Wörterbuchnetz eller Dan 2-->Statsringer</seg>, og maatte nedknuge eller knuse alt Ædelt, maatte og vilde udvriste alt hvad Verden kalder nydeligt og værdt at eie, maatte, i det den adskilte Fingrene over Riget, igien vorde uens med sig selv, og udtømme al den Ødelæggelse over Landskaberne, for hvilke de forhen som Stater kun i Feidetid vare udsatte, uden at yde Folkene det Mindste af det Staten skiænker sine Lemmer.</p>
+<p rend="firstIndent">Dog, Sligt trænger ei til Beviis, <hi rend="spaced"><placeName key="his726">Romerriget</placeName></hi> staaer i Krøniken som et beskueligt Billede af et saadant Udyr, der med Statsskyggen i sit Skjold, mæskede sig med Staternes døde Kroppe; og dersom Danske og Nordmænd, efterat have betragtet dette Billede, endnu kunde attraae at opsluges af et Verdensrige, da var Tale til dem kun at spilde sine Ord.</p>
+<p rend="firstIndent">Det er sandt, stort er, desværre, deres Tal iblandt os, som, naar Talen blev om, Herreskifte, kun vilde spørge som Eselet, om Byr<pb type="text" facs="1813_210_fax045.jpg" ed="A" n="43"/>dens Vægt, som, for at beholde Liv og Gods, ja endog for at erhverve sig Guld, vilde forsage, ja forraade baade Drot og <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>. Jeg siger, der ere mange, som vilde det, og hvo tør sige imod, hvo kan forlange andet Bevis, end det vi daglig see for Øine? At tale vidt og bredt om Penge, er vist ei min Lyst, men naar Guldkalven er vorden saa tilbedt <pb type="edition" n="38" ed="VU"/>en Afgud, da Penge i en ugudelig Alder kaldes <hi rend="spaced">Sjælen i Livet og Staten,</hi> da de virkelig ere det Hjul, som i <hi rend="spaced">en saadan</hi> Alder synes at raade for al Bevægelse i Maschinen, maa ogsaa Pengevæsnet i et Land være det klareste Speil paa Folkets Tænkemaade, paa dets Sindelag imod Staten. Nu er det jo vist, at Man i vor Tid anseer en Stat som forloren, der ei besidder Forraad af ædel Malm, ei kan give sine Papirer Gyldighed efter Paaskrift; det er for vidtløftigt her at afhandle saa indviklet et Spørgsmaal, men det behøves ei heller, thi det er jo vist, at <hi rend="spaced">vort</hi> Pengevæsen er i stort Forfald, og bliver daglig slettere <hi rend="spaced">tilsyne,</hi> og hvorledes teer Folket sig ved dette Syn? det er kun Spørgsmaalet vi her have med at giøre.</p>
+<p rend="firstIndent">En Stat skulde jo være et stort Legeme, hvori Regjeringen er Sjælen og hvorpaa alle <pb type="text" facs="1813_210_fax046.jpg" ed="A" n="44"/>de Enkelte ere Lemmer, og var det saa hos os, hvilken Sorg maatte ikke da opfylde os, naar det synes os vist, at Legemet er Opløsningen nært, naar vi høre Sjælen sukke under bange Ahnelser, ja pinlige Fornemmelser, hvor ivrig <pb type="edition" n="724" ed="US"/>maatte da ikke Lemmerne arbeide paa at afvende den truende Fare, saa at hvert enkelt Lem glemte sig selv, ja var rede til at opoffre sig for Legemets Redning! Saa maatte det være, dersom Statslegemet ei allerede var kommet vidt i indvortes Opløsning, dersom de fleste Lemmer ei alt før det vare stivnede i Dødens Kulde; men er det saa? Hvad bryde de, der selv have Penge nok, sig om Statens Fare, er det for dens eller for deres egen Skyld, at de bekymres ved Synet? Stræbe de, som kunne, at hjelpe, opoffre de sig høimodig? Hvad skal en sanddru Mand svare hertil? Maa han ikke svare, at saasandt som der hist og her findes Enkelte, der sukke over Statens Nød, ere de dog kun en ringe og for det meste fattig Flok, det er Statens <hi rend="spaced">Hjerte,</hi> der, ligesom hvert Hjerte, senest døer, men kan kun banke og sukke mat, naar Døden kryber i Aarerne og Blodet er nær ved at isne? Hvad er dog det Man har kaldt Offere paa <seg type="com" n="com0"><!--dvs. fædrelandets.-->Fædrenelandets</seg> Alter, hvad var det fra de Fleste, fra <pb type="text" facs="1813_210_fax047.jpg" ed="A" n="45"/>de Rigeste? uden en usel Skiærv, de, for at vinde Ære eller undgaa Skam, storagtige eller vrantne kastede til Staten, som en Almisse, men hvorfor de kun skal have Skam til Takke, saalænge Krøniken taler og høres. Dog det maa kaldes Lidet, at de urørte saae deres eget Kiød og Blod, <hi rend="spaced">som var faldet iblandt Røvere,</hi> udplyndret og saaret drages med Døden; de gik ei forbi; nei, de holdt sig til den, for at rane, hvad Røverne ei kunde finde eller give sig Tid til at tage, og er det ikke vist, at hvis de troede, der var Guld i dens Indvolde, vilde de <pb type="edition" n="39" ed="VU"/>kappes om at give den sit Banesaar? Er det ikke sandt at istedenfor at opoffre, have Tusinder stræbt at berige sig, mange Rige stræbt at vorde rigere paa Statens Bekostning? Er det ikke sandt, at <persName key="pe96">vor Konge</persName> ved en <seg type="com" n="com0"><!--institution, hentydning til Rigsbanken, oprettet 5. januar 1813.-->Indretning</seg>, hvis Anlæg røbe den omhyggeligste Eftertanke, hvis Udførelse vidner om en Retfærdighed og Ømhed, der skal hædre, <rs type="myth" key="myth115">Skjoldungen</rs> i Hans Grav, om saa Statens Lig jordes ved Hans Side, at Han ved en saadan har stræbt at læge Bylden, at afvende Faren, at Han har bedet, hvor Han kunde befale, formanet, hvor Han kunde true, viist ved Opoffrelser, at Han har Lyst til at være Statens uegennyttige<!-- u'et har i kollationseksemplar 1 har fået meget sværte og kan fejltages for et n--> Sjæl; men hvad har det frugtet? <pb type="text" facs="1813_210_fax048.jpg" ed="A" n="46"/>Har Man ikke hørt Tusinder klynke over, at de skulde betale deres Giæld, betale hvad de laante, at de ei fik Tid til at bedrage deres Brødre? Har Man ikke seet vrantne Ansigter i Tusindtal, fordi Kongen paabød <pb type="edition" n="725" ed="US"/>en Opoffrelse, der, naar den itide var blevet tilbudt, kunde afhjulpet Statens Trang, en Opoffrelse, der ei engang er saa stor, som den <hi rend="spaced"><placeName key="fak14">Danmarks</placeName> Adel</hi> godvillig gjorde under <persName key="pe1663">Tredie Christian</persName>, ja seer det ikke ud, som om de Alle af Harme havde sammensvoret sig til Hevn, svoret, at Opoffrelsen, naar den ei kunde undgaaes, dog skulde blive Staten unyttig? maa Man ikke harmefuld see, at Statens Haandskrifter efter den stillede Borgen agtes end mindre gyldige, end forhen? Har vi mere Vidnesbyrd behov om, hvorledes nederdrægtig Egennytte har omspændt os, hvor udslukket Fædrelandskiærlighed er i vort Bryst, hvorledes Hjertet er blevet koldt og haardt, som Malmet mod hvilket det banker? Ja, visselig, <hi rend="spaced">kold er Kiærlighed vorden,</hi> det er saa aabenbart, at den, som nægter det, ret vel veed, han kun dermed vil forsvare sin egen Kulde, høitravende Ord om Kiærlighed til Næste og <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>, ja af dem har vi nok, kan Stat og Brødre nøies med dem, da maa de føre et kongeligt Liv; men, <pb type="text" facs="1813_210_fax049.jpg" ed="A" n="47"/>Børnlille! saa siger Han, som vidste hvad Kiærlighed var, lader os ei elske med Ord eller Tunge, men med <hi rend="spaced">Gjerning og Sandhed!</hi> Paa Frugten skal Træerne kjendes, og et godt Træ kan ei bære raadne Frugter, men ligesaa vist er det ogsaa, at et raaddent Træ kan ei bære god Frugt, og hvordan skulde da Kiærlighed opvoxe af Vantroens Rod, hvordan skulde der voxe Vindruer paa Torne og Figen paa Tidsel, hvordan skulde den, der kun troer paa sig selv, tænke paa andet end sin egen Nytte?</p>
+<p rend="firstIndent">Dog, behøvedes der endnu, foruden Nidskheden og Graadigheden mod Stat og Næste, end Vidnesbyrd om vort egenkiærlige, ukiærlige, <pb type="edition" n="40" ed="VU"/>egennyttige Sindelag, da er det Skriget mod Jøderne: et Skrig, der aldrig opstod, uden naar Man var i Sind, hvad Man beskylder Jøderne for. Jeg vil vist ikke forsvare den Kræmmeraand, der har besat dette ulykkelige Folk; det kan ikke nægtes, at mangfoldige iblandt dem drives af den lumpneste Egennytte, at selv de Bedre maa have ondt ved at betragte sig som Lemmer paa et Statslegeme, de hverken ved Herkomst, Tro eller Sprog synes knyttede til. Saare uenig har jeg altid været med dem, som vilde indlemme dem i Borgersamfundet, saalænge de ei indlemme sig selv i <pb type="text" facs="1813_210_fax050.jpg" ed="A" n="48"/>Menigheden, men desuagtet kan jeg kun med yderste Mishag høre den ligesaa ukiærlige som bagvendte Tale, Man længe om dette Folk har ført i Husene og nu fører paa Prent; den stadfæster ogsaa, hvad der er ligefrem vist, at vor Old kun er tolerant i hvad den anseer for Smaating, i de Ting, der angaae Gud og Menneskenes Salighed, og selv her er den kun tolerant <seg type="com" n="com0"><!--over for.--><!--Belæg for præposition 'med', ODS intolerant 1. Begtrup retter med-mod -->med</seg> sig selv, <seg type="com" n="com0"><!--over for.-->mod</seg> Vantroen, ingenlunde <seg type="com" n="com0"><!--over for.-->med</seg> Troen, men i de Ting, den sætter nogen Pris <pb type="edition" n="726" ed="US"/>paa, saasom i Henseende til Penge og Penges Værd, er den saa intolerant som muligt, thi Folk kan hverken taale selv at miste Noget, eller at see Andre have Noget; Alt, hvad de ikke selv har, tykkes dem at være i slette Hænder. Derfor bagtales den Rige, derfor udsues den Fattige, derfor vil Man Intet give Staten, uden det skulde være Jødernes Penge, siden Man ei selv kan faae dem, siden Jøderne ere for kloge til at lade sig dem frasnyde. Det er ikke nyt at give Jøderne Skyld for alt Ondt, thi det er gammelt, at giøre sig selv reen og skyde Skylden paa Andre, det er ikke nyt, under daarlige Paaskud, at forhaane og udplyndre det arme Folk; vel i hvert europæisk Land har der siden <persName key="pe45">Christi</persName> Tid været en <hi rend="spaced">uchristelig</hi> Tid, da Man bar sig saaledes <pb type="text" facs="1813_210_fax051.jpg" ed="A" n="49"/>ad, men at det kun og i en saadan er skeet, vidner Krøniken. Allerede dette skulde vække vor Opmærksomhed og <seg type="com" n="com0"><!--dvs. blusel.-->Blussel</seg>, og ved lidt nøiere Eftertanke indsee vi let, at det saa maa være. Kun i en saadan lægger Man saadan Vægt paa Penge, at Man for deres Skyld vil støde i Basune, kun i en saadan faae Jøder Leilighed til at berige sig, <hi rend="spaced">derved</hi> at hver kun søger den største øiebliklige Fordeel, <hi rend="spaced">derved</hi> at mange Fattige, formedelst de Riges Ubarmhjertighed, falde i deres Hænder, <hi rend="spaced">derved</hi> at Overdaadighed og Vellyst driver Mange til dem; i en saadan Tid maa de blive rige, fordi de ere de bedste Regnemestre, nøies med den mindste øiebliklige Fordeel, ere de tarveligste og flittigste. Hvad der er Nyt, er kun at deres Fordærvelse udledes af deres Fædres Gudsfrygt, af Troen <pb type="edition" n="41" ed="VU"/>paa de Skrifter, som ogsaa ere de Christne en Helligdom, fra <persName key="pe730">Moses</persName>, og altsaa, om <persName key="pe45">Jesus</persName> sagde Sandhed, fra Gud selv. Dette kan nu vist nok ikke forundre den, som kjender vor Tids Oplysning, som veed, den bestaaer i at giøre Gud til den eneste Synder, at udlede al Synd af det Legems oprindelige Vilkaar, hvormed Gud skabte Mennesket, og af Tro paa Guds Ord, som heder <pb type="text" facs="1813_210_fax052.jpg" ed="A" n="50"/>Overtro; men det er dog noget Nyt, forsaavidt det er Nyt, som sjelden skeer, thi ellers veed Man jo vel, at de forvorpne Manichæer talte om det gamle Testamente, om Jødeguden, Verdens Skaber, den <persName key="pe636">Abrahams</persName>, <persName key="pe1497">Isaks</persName> og <persName key="pe305">Jakobs</persName> Gud, fra Hvem <persName key="pe45">Jesus</persName> kom, og til Hvem Han gik, om de hellige Propheters Gud, i hvilke <persName key="pe45">Christi</persName> Aand, efter <persName key="pe306">Peders</persName> Vidnesbyrd<!--Petersbrevet? -->, var, og talede om <persName key="pe45">Christo</persName>, de talte, siger jeg, om disse Ting, omtrent som vor Tids Oplyste. Denne Maade, at angribe Jøderne i deres hellige Bøger, er da et Beviis mere paa, hvor uchristelig Tidens Boglærde tør tænke og tale, men harmeligt og latterligt er det, naar disse endnu kalde sig Christne, og paa dette Navn, som de tage forfængelig, grunde <pb type="edition" n="727" ed="US"/>deres Adelskab, thi det er, i vor adelfiendske Tid, en Ahnestolthed, der er den latterligste muligt, thi selv Fædrenes Skjoldemærke have vi jo kastet. Her er ikke Rum til at undersøge, hvorledes en Stat af Christne bør ansee og behandle Jøderne, men det behøves ei heller, thi den Stat er ikke til; men bemærke maa jeg, at de, der selv aldrig tee sig, som Lemmer af Staten, uden naar den skiænker Noget, ere høist ubeføiede til at anklage Jøderne, fordi de ei heller tee sig som Statens Lemmer; bemærke maa jeg, at <pb type="text" facs="1813_210_fax053.jpg" ed="A" n="51"/>den gudfrygtige Jøde ligesaalidt kan bedrage eller forurette Nogen, som Nogen kan det, i hvem Gud raader, ja at det jo udtrykkelig er ham befalet, at bede for det Folk, hos hvem han er i Udlændighed, som skrevet staaer: (Jer. 29) søger Stadens Fred, til hvilken jeg lod eder bortføre, og beder for den til Herren, thi naar den haver Fred, have I og Fred! Jeg maa bemærke, at de Jøder, som drives af Egennytte, netop have samme Tro, som de Fleste i Landet, tro kun i Hjertet paa sig selv og Verden, og den hele Forskjel er, at de bedre forstaa at bedrage, og at endel af dem endnu blues ved at bedrage hinanden, og søge et Paaskud for at neddæmpe Samvittighedens Straffetale, søge, ved at iagttage den udvortes Gudstjeneste, at indbilde sig, de endnu ere gudfrygtige. Frit kan man da paastaa, at der hos Jøderne i det Hele er mindre Ugudelighed, mere Følelse af Samvittighed, ligesom der er mere udvortes Tugt, end hos de Forsamlinger, der nu kaldes Christne, og at dersom, da Jøderne <pb type="edition" n="42" ed="VU"/>bleve som disse, bleve de værre end de ere; eller mener Man, at naar Jøderne bleve døbte, bortkastede Ærbødigheden for <persName key="pe730">Moses</persName> og Propheterne, tilligemed deres gudstjenstlige Skikke, <pb type="text" facs="1813_210_fax054.jpg" ed="A" n="52"/>bleve ligesaa vantro Agerdyrkere, Haandværkere, Kiøbmænd og Embedsmænd, som de saakaldte oplyste Christne: de da skulde blive mindre egennyttige, mindre hjelpe til at udsuge og udmarve Staten? Jeg maa spørge hver alvorlig Mand, om han virkelig mener, vort Pengevæsen vilde blive bedre, hvis Man fordrev alle Jøder, eller om der dog ikke ere Folk i Tusindtal, som vilde, uden mindste Betænkning, søge Vinding paa samme Maade, som de, og faae den, naar Mesterne i Haandværket vare borte? Og blev det da bedre, er det ikke langt harmeligere, naar Staten besviges og undergraves af dem, der kalde sig dens Børn, langt harmeligere og skammeligere, naar de, som kalde sig Christne og Brødre, som have Herkomst, Tungemaal og indvortes Vilkaar tilfælleds, bedrage og opæde hinanden, end naar Saadant skeer af Fremmede? Var ikke <hi rend="spaced">christne Jøder</hi> i Folkets Mund alt længe Udtrykket for de <pb type="edition" n="728" ed="US"/>nederdrægtigste og ubarmhjertigste Skabninger i Menneskelignelse, og er ikke deres Tal Legio? Endelig maa jeg bemærke, at gudfrygtige Jøder med al Ret kalde os Gojim, Hedninger, thi det ere vi; kun skulde de kalde deres Landsmænd ligesaa, thi de fleste, næsten alle de rige og fornemme Jøder ere Hedninger; Synagogen ligger <pb type="text" facs="1813_210_fax055.jpg" ed="A" n="53"/>i Grus ved Siden af Kirken, Jøderne omskiæres ligesom vi døbes, efter gammel Skik og Brug, og var det ikke Krigstjenesten og de bekvemme rabbinske Sætninger, seer man slet ikke hvad der skulde afholde de fleste saakaldte Jøder fra at lade sig kalde Christne. Udentvivl vil ogsaa snart, til de Oplystes store Jubel, en heel Mængde afsige Jødedommet og blive christne Jøder, ligesom vi, men vist vil der blive en Levning tilovers af rette Jøder, som vogte paa Lov og Sabbather og vare paa Jehovahs Forjættelser, og Han skal da nok engang nøde Folkene til at bekiende, at er Han Jødegud, da er det ikke, fordi Han jo hersker over alle Folkene fra Solens Opgang til dens Nedgang, da er det kun, fordi Jøderne ere Hans udvalgte Folk; fordi de vel ere Fiender efter Evangelium, men elskelige efter Udvælgelsen for Fædrenes Skyld; thi de Naadegaver og det Guds Kald ere ufortrydelige. <rs type="bible" key="Rom 11" rend="normForm">Rom. 11.</rs> Vel maa de klage med Propheten: “Du sælger dit Folk, <hi rend="spaced">du gjør os til et Ordsprog blandt Hedningene, saa man ryster Hovedet blandt Folkene,</hi> min Forsmædelse er den ganske Dag for mig, og mit Ansigts Skam haver skjult <pb type="edition" n="43" ed="VU"/>mig”; men naar de sanddru kan blive ved: “Alt dette er kommet over os, dog have vi ikke glemt Dig og 
+<pb type="text" facs="1813_210_fax056.jpg" ed="A" n="54"/> ikke handlet falskeligen mod Din Pagt”<note type="footnote"><p rend="noIndent">Ps. 44.</p></note>, da skal den <persName key="pe45">Messias</persName>, paa hvem de stole, visselig udfrie dem af Dødens Skygges Land, og paa Jorden skal Jehovahs Herlighed boe hos dem i de sidste Dage, thi de ere Herrens Folk, <placeName key="fak458">Israel</placeName> ere Hans Præster. Ja, i de sidste Dage skal Herrens Huses Bjerg være beredt oven paa Bjergene, ophøies over Høiene, og alle Hedninge skulle løbe dertil, og mange Folk skulle gaa og sige: kommer og lader os opgaa til Jehovahs Bjerg, til <persName key="pe305">Jakobs</persName> Guds Hus, at Han maa lære os om sine Veie, at vi maa vandre paa Hans Stier, thi af <placeName key="his581">Zion</placeName> skal udgaae en Lov, og Jehovahs Ord af <placeName key="fak10">Jerusalem</placeName><note type="footnote"><p rend="noIndent">Es. 2.</p></note>. Visseligen er det skeet efter Prophetens Tale, men det skal dog <hi rend="spaced">fuldkommes</hi> i de sidste Dage, naar Herren har renset sit Folk, og skinnet i <placeName key="fak458">Israels</placeName> Hjerte, saa han oplyses til at erkjende Guddomsklarheden i <persName key="pe45">Jesu Christi</persName> Guds Billedes Aasyn.</p>
+<p rend="firstIndent">Danske og Nordmænd! indbilder Eder da ikke, at det er <pb type="edition" n="729" ed="US"/>Fremmedes Vaaben eller Rænker, vi have at frygte, som volde vor Nød og true vort <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg> med Skiændsel og Undergang; nei, det er os selv, det er vor Vantro vi have at frygte, det er den, som vil ødelægge <pb type="text" facs="1813_210_fax057.jpg" ed="A" n="55"/>os. Vil vi ikke gaae i aaben Feide med dem, da ere vi forlorne, thi da maa Egennytten være vor Herre, daglig maa dens Herredømme voxe, dens Skiændsel aabenbares, og Staten alt mere opløses, saavist som det er umuligt at agte verdsligt Gods ringe, naar Man ei stoler paa Herren i Himlen, taalmodig at bære Armod, naar Man ei har det evige Livs visse Haab, uegennyttig at elske Næste og <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>, naar Man ei elsker Gud, umuligt at elske Ham, uden at tro paa Hans Kiærlighed i <persName key="pe45">Christo Jesu</persName> vor Frelser, uden at have Samfund med Ham ved den Aand, Han skiænker sine Troende. Egennytten selv skal ødelægge os, og hvad vi ikke undte Stat eller Næste skal bortrøves fra os med Ilden og Sværdet. Herrens blodige Ris er udstrakt over Landene, og mene vi daarlig, det ikke kan naae over Beltet og Klippen, da vee os! da er det nær. Vi see det, hvor de trænges og fortvivle og undergaae de talrige Skarer paa Val og paa Straa, og høit raaber Herren: dersom I ikke omvende eder, skal I alle saaledes omkomme! Dog, jeg veed det jo vel, vil I ikke bekymres alvorligen for Eders Sjæle, for eders evige Velfærd, da er al Tale forgiæves, da tro I den <pb type="edition" n="44" ed="VU"/>ikke, og hvad var det nyttigt, om I ogsaa paa Skrømt omvendte Eder til Ham, som kiender Hjertets, de lønligste Ting, om I, af Banghed for timelig Straf, lode den grove Uteerlighed fare, søgte at dele eders Hjerte mellem Herren og Mammon? Herren vilde jo sige, som fordum ved <persName key="pe1279">Elias</persName>, hvi halte I saa til begge Sider? er Baal eders Gud, da følger <pb type="text" facs="1813_210_fax058.jpg" ed="A" n="56"/>ham; men er Jehovah det, da følger Ham, og ligevist blev det, at kun de <hi rend="spaced">Rene af Hjertet</hi> skal see Gud. <hi rend="spaced">Hvad kan det dog hjelpe et Menneske, om han og vinder al Verden, naar han maa tage Skade paa Sjælen, tabe sig selv?</hi> O, give dog Gud, at disse guddommelige, soleklare Sandheds Ord dog maatte falde os paa Hjerte, ringe for vore Øren aarle og silde, da skulde vi omvende os til Herren af vort ganske Hjerte og os paa Hannem allene forlade, da vare vi frelste! Ei er det saa at forstaa, at vi da ingen Trængsel skal lide; thi den er nødvendig, og visselig, vi have syndet med vore Forfædre, vi have mishandlet og havt os ugudelig, Tugtelsen maa komme for at ydmyge og rense og opvarme os, men da skal Herren ikke straffe os i Vrede eller tugte os i sin Nidkiærhed, faderlig skulle vi revses, som vore Fædre, mange onde Ting kan vederfares os, men Herren skal frie os <pb type="edition" n="730" ed="US"/>af dem alle, og med Tillid til Ham, med det evige Livs salige Vished og Samfund i Hiertet skal vi hjelpe hinanden frimodig og kraftig at bære vort Kors. Om da end Konger og Keisere med mylrende Hære anfaldt os, de skal dog beskjæmmes paa det Sidste og mærke det er Ondt at drages om Reeb med den Stærke, at drages med Hærskarernes Gud, med Herren Zebaoth om Hans Arv. Hvordan det gaaer, skal <placeName key="poet1671">Tvillingrigets</placeName> Mænd blive ved at udgjøre et Folk, at være Lemmer paa et Legeme, hvori Sjælen andægtig og viis skal røre sig kraftig ved Ham, hvis Kraft fuldkommes i Skrøbelighed. Lad da kun <rs type="myth" key="myth1576">Sven</rs><pb type="text" facs="1813_210_fax059.jpg" ed="A" n="57"/>skeren true, men før han har udjævnet <placeName key="fak568">Kjølen</placeName>, skal han ei mægte derover at drage til sig <placeName key="fak518">Trondelagen</placeName><!--stedbasen har denne variant, uden o--> og <placeName key="his461">Halogaland</placeName>, thi stærk er <placeName key="fak307">Dovres</placeName> Rod, som ganger mod Syden og <placeName key="fak24">Norden</placeName>, og stærkere er Han, som plantede Bjerget, og som i de forbigangne Tider gjorde alle <persName key="pe1548">Achitophels</persName> Raad til Daarlighed. Herom vil jeg, til Slutning, minde dig, <seg type="com" n="com0"><!--dvs. fædreland.-->Fædreneland</seg>! med Vers af det Kvad, der lagdes mig i Mund om Kirken i <placeName key="fak22">Roskild</placeName>, om <rs type="bible" key="Es 35,7" rend="eg">Rosenkilden i Nord, som Herren lod vælde og sprudle i Ørken</rs>, medens Aarhundreder løb, det eneste, som kan igien vederkvæge det Tørre, befrugte det Golde, gienføde Egen i Skov og Blomsten i Enge, gienføde Sjælen til det evige Liv.</p>
+<p rend="firstIndent"><pb type="edition" n="45" ed="VU"/>Efter at have hørt over <persName key="pe1666">Niels Hemmings</persName> Grav <hi rend="spaced">hvad</hi> det var som i <persName key="pe1663">Tredie Christians</persName> Dage gjenfødte <placeName key="fak24">Norden</placeName>, ja</p>
+<lg n="1">
+<l rend="thirdIndent">hvad Kilden heed,</l>
+<l>Som igjen har Sneen smeltet,</l>
+<l>Som det gjennemfrosne <placeName key="fak24">Nord</placeName></l>
+<l>Har saa underlig ombeltet</l>
+<l>Med en faver Rosengjord;</l>
+</lg>
+<p rend="firstIndent">da heder det:</p>
+<lg n="2">
+<l>Hvis der kun en Ridder laae,</l>
+<l>Som var med ved <placeName key="fak476">Svarteraa</placeName>;</l>
+<l>Som beskued Manddomsværket,</l>
+<l>Drevet under <hi rend="spaced">Drengemærket;</hi><note type="footnote"><p rend="noIndent">Det var Rytterne under den saa kaldte Drengefane, som gjorde Udslaget paa den hede Dag paa Falkenberg Hede ved <placeName key="fak476">Svarteraa</placeName>.</p></note></l>
+<l>Han da vist til Rosens Ære</l>
+<l>Samme Vidne skulde bære.</l>
+<l><persName key="pe1445">Daniel</persName>! hvis det er sandt,</l>
+<l>At ved Rosens Kraft du vandt,</l>
+<l>Kunde derom du da ikke</l>
+<l><pb type="edition" n="731" ed="US"/>Bud til Rosengraven skikke?</l>
+<l><pb type="text" facs="1813_210_fax060.jpg" ed="A" n="58"/>Du ei kunde det, men Gud,</l>
+<l>Valkendorf er Seiersbud.</l>
+<l>Brudte <persName key="pe00"><!--tjek pe-kode-->Axel</persName>, med dit Blod</l>
+<l><rs type="myth" key="myth981">Hemmings</rs> Brev du har beseiglet,</l>
+<l>Selv du saae i Bølgespeilet,</l>
+<l>At det var af Rosenrod.</l>
+<l>Laurbærgrenen grøn og bold,</l>
+<l>Groed paa den Hede gold;</l>
+<l>Nei, at det var Rosenkrandse,</l>
+<l>Der sig vandt om <placeName key="fak14">Danmarks</placeName> Landse.</l>
+<l><persName key="pe00">Norbye</persName>, <persName key="pe00">Urne</persName>, <persName key="pe00">Skeel</persName> og <persName key="pe00">Lunge</persName>,</l>
+<l><persName key="pe00">Skinkel</persName>, <persName key="pe4204">Kaas</persName> og <persName key="pe00">Munk</persName> og <persName key="pe00">Falk</persName>,</l>
+<l><persName key="pe00">Myre</persName>, om de havde Tunge,</l>
+<l><persName key="pe00">Rosensparre</persName>, <persName key="pe00">Rosengaard</persName></l>
+<l>Med de dybe Ulivssaar,</l>
+<l>Skulde og med dig istemme,</l>
+<l>Hvad vi først har lært at glemme,</l>
+<l>Da ei meer vi det forstod:</l>
+<l>Tro og Bøn og Heltemod</l>
+<l>Ere Sødskende saa kiære,</l>
+<l>Sammen vil de altid være,</l>
+<l>Døer den ene, snart de andre</l>
+<l>Efter den i Graven vandre.</l>
+</lg>
+<p rend="firstIndent">Saa heder det til <persName key="pe231">Fjerde Christian</persName>, ved hvem Gud i saa mange Maader lod sin Omhu for <placeName key="fak24">Norden</placeName> kjende:</p>
+<lg n="3">
+<l>Hvor er vel din Bautasteen?</l>
+<l>Er det dig, du Borg saa prud,</l>
+<l><pb type="edition" n="46" ed="VU"/>Hvor først Verdens Lys han saae,</l>
+<l>Som han løftede med Gud,</l>
+<l>Som mon end urokket staa,</l>
+<l>Mens de mange stolte Buer</l>
+<l>Sank i Grus og Dynd og Luer?</l>
+<l>Staaer den som en Stad paa Land?</l>
+<l>Staaer den paa den vilde Strand,</l>
+<l>Hvor med Øiet paa sin Kind,</l>
+<l>Sværd i Haand og Gud i Sind,</l>
+<l>Oldingen som Kiæmpe stod,</l>
+<l>Skrev sit Ligvers med sit Blod?</l>
+<l>Staar den paa hin stille Sø,</l>
+<l>Hvor paa liden Baadeø</l>
+<l><pb type="text" facs="1813_210_fax061.jpg" ed="A" n="59"/><pb type="edition" n="732" ed="US"/>Han udrugede en Flaade</l>
+<l>Til paa brede Hav at raade?</l>
+<l>Nei, paa enkelt Sted dit Minde,</l>
+<l><persName key="pe231">Christian</persName>, vi nok ei kan finde.</l>
+<l>Som et Træ det maatte staae</l>
+<l>Ved et helligt Kildevæld,</l>
+<l>Og med sine Rødder naae,</l>
+<l>Rundt til Rigets Grændseskjel;</l>
+<l>Thi hvis du ei havde været,</l>
+<l>Havde Ulv og Orm fortæret,</l>
+<l>Rødt paa Val og blaat i Grav</l>
+<l><placeName key="fak14">Danmarks</placeName> Lig for længe siden;</l>
+<l>Frist og, gid vi see med Tiden,</l>
+<l>Frelse Gud ved dig os gav.</l>
+<l>Sjunkne vare <placeName key="fak14">Danmarks</placeName> Volde,</l>
+<l>Hullede dets Herreskjolde,</l>
+<l>Gamle <persName key="pe396">Arild</persName> maatte slænge</l>
+<l>Dem tilhobe udi Hast,</l>
+<l>Ei han mægted dem at hænge</l>
+<l>Sømmelig paa Knage fast;</l>
+<l><persName key="pe820">Holger</persName> brugte al sin <seg type="com" n="com0"><!--kunst, kundskab, kunstfærdighed.-->Konst</seg>,</l>
+<l>Til en Rosenkrands at binde,</l>
+<l>Men det hartad var omsonst,</l>
+<l>Han kun fandt en blaa Kiærminde;</l>
+<l>Vel han fik en Rosenkrands</l>
+<l>Med i Grav, men det var hans.</l>
+<l>Havde du ei Grændsen værget</l>
+<l>Med dit brede Kiæmpesværd,</l>
+<l>Havde i din Kongebaad</l>
+<l>Ei saa vel du Skibet bjerget,</l>
+<l>Der det stod paa <hi rend="spaced">blinde Skiær,</hi></l>
+<l>Havde du ei, midt i Daad,</l>
+<l>Kunnet være Rigens Raad;</l>
+<l>Ak, da vist den <hi rend="spaced">røde Løve,</hi></l>
+<l>Som alt da <hi rend="spaced">paa Springet</hi> stod,</l>
+<l>Havde, uden saa at tøve,</l>
+<l>Drukket <placeName key="fak14">Danmarks</placeName> <hi rend="spaced">Hjerteblod</hi><note type="footnote"><p rend="noIndent">Se det svenske Vaaben.</p></note>.</l>
+</lg>
+
+<p rend="firstIndent"><pb type="text" facs="1813_210_fax062.jpg" ed="A" n="60"/><pb type="edition" n="47" ed="VU"/>Saa ender Talen til <persName key="pe231">Christian</persName> og vender sig til hans Søn:</p>
+<lg n="4">
+<l>Blidelig skal <persName key="pe231">Christian</persName> blunde,</l>
+<l>Gud tilgivet har hans Brøst,</l>
+<l><pb type="edition" n="733" ed="US"/>Og, saasnart igjen det dages,</l>
+<l>Da skal og hans Støv opdrages</l>
+<l>Fra den mørke Kjelderstue,</l>
+<l>Skinne under Chorets Bue.</l>
+<l>Lad saalænge kun i Fred,</l>
+<l>Dybt i Kieldren Støvet hvile!</l>
+<l>Styrte Kirkens Buer ned,</l>
+<l>Kan vemodig der det smile,</l>
+<l>Gjennem Aske, gjennem Grus</l>
+<l>Vist det finder Herrens Hus.</l>
+<l><hi rend="spaced">Gudsfrygt styrker Land og Rige,</hi></l>
+<l>Det var <persName key="pe41">Christians</persName> Kongeord,</l>
+<l>Støvet størker den tillige,</l>
+<l>Fører det til høie Chor;</l>
+<l>Ja, den er et Arvegods,</l>
+<l>Som ei Tyve kan bortliste,</l>
+<l>Som ei Fjender kan udvriste,</l>
+<l>Som til Størkelse og Roes</l>
+<l>Kan i mange snese Led</l>
+<l>Gjennem Ætten vandre ned.</l>
+<l><persName key="pe496">Fredrik</persName>! det maa du beseigle,</l>
+<l>Til din Faders Krone var</l>
+<l>Der vel Nok, som vilde beile,</l>
+<l>Korfits, Karl og <persName key="pe00"><!--Valdemar Christian, 1622 - 1656, søn af Christian 4. og Kirsten Munk, greve til Slesvig og Holsten-->Valdemar</persName></l>
+<l>Beilede med Guld og Skjolde,</l>
+<l>Og med Kløgt til væne Brud,</l>
+<l>Men din Faders Tro paa Gud</l>
+<l>Lod de gjerne dig beholde.</l>
+<l>Siig, hvad hjalp dem Guld og Kløgt?</l>
+<l>Ja, hvad hjalp dem Herreskjolde?</l>
+<l>Kronen fulgte Herrens Frygt,</l>
+<l>Begge Gud lod dig beholde;</l>
+<l>Ja, med Svanefjer Han skrev</l>
+<l>Dig et bedre Kongebrev</l>
+<l>End de kloge Rigers Raade</l>
+<l>Landsens Folk til liden Baade,</l>
+<l>Malede med Ulvehaar.</l>
+<l><pb type="text" facs="1813_210_fax063.jpg" ed="A" n="61"/>Hedningskjalde digtet har:</l>
+<l><rs type="myth" key="myth25">Gefion</rs> med Troldeplov</l>
+<l>Pløiede, og Jernet skjar</l>
+<l><placeName key="poet863">Sjølund</placeName> bort fra <placeName key="fak92">Sverrigs</placeName> Skov.</l>
+<l><persName key="pe1271">Carl</persName> nu med Troldeplov</l>
+<l><pb type="edition" n="734" ed="US"/>Pløiede i <placeName key="fak110">Øresund</placeName>;</l>
+<l>Og fra gamle <placeName key="fak14">Danmarks</placeName> Skov</l>
+<l>Skjar han løs en faver Lund;</l>
+<l>Dog han ei trods Eed og Møie</l>
+<l>Kunde <placeName key="poet863">Sjølund</placeName> til sig pløie.</l>
+<l><pb type="edition" n="48" ed="VU"/>I den Lund der stod et Træ,</l>
+<l>Dybt laa Rødderne saa brede,</l>
+<l>Kongefuglen i dets Læ</l>
+<l>Havde bygget sig en Rede,</l>
+<l><persName key="pe1271">Gustav</persName> brugte Ild og Staal,</l>
+<l>Huggede saa hvast forneden,</l>
+<l>Vilde med sit Svovelbaal</l>
+<l>Ryge Fuglen ud af Reden;</l>
+<l>Kongefuglen frygted Gud,</l>
+<l>Vilde ei af Reden ud,</l>
+<l>Meente, det som fløtter Bjerge</l>
+<l>Kunde og hans Rede værge.</l>
+<l><persName key="pe1271">Gustav</persName> svor, at om den Rede</l>
+<l>Hængte i en Stjernekjede</l>
+<l>Under hvalte Himmelblaa,</l>
+<l>Var han Karl for den at naa;</l>
+<l>Grævlinger kom ud af Roden,</l>
+<l>Og med hvasse Tand de beed</l>
+<l>Svenske Drot saa hardt i Foden,</l>
+<l>At han glemte brat sin Eed;</l>
+<l>Fattig Fugl fra Klosterbord</l>
+<l>Sang saa underligt et Chor,</l>
+<l>Slog saa hardt med Klo og Vinge,</l>
+<l>At hans Øren maatte klinge.</l>
+<l>Gudsfrygt størker Land og Rige,</l>
+<l>Størker Hjerterne tillige;</l>
+<l><persName key="pe1271">Gustav</persName> drog fra <placeName key="poet396">Axelstad</placeName>,</l>
+<l><persName key="pe496">Fredrik</persName> i sin Rede sad,</l>
+<l><persName key="pe1271">Gustavs</persName> Æt er lagt i Jorden,</l>
+<l><persName key="pe496">Fredriks</persName> troner end i <placeName key="fak24">Norden</placeName>.</l>
+</lg> 
+
+<p rend="firstIndent"><pb type="text" facs="1813_210_fax064.jpg" ed="A" n="62"/>Under Sorgen over, at Fjerde <persName key="pe96">Fredrik</persName> feidede paa <placeName key="fak92">Sverrig</placeName>, da</p>
+<lg n="5">
+<l><placeName key="fak14">Danmark</placeName> stod ved <placeName key="fak1775">Stralsunds</placeName> Volde</l>
+<l>Og begræd de faldne Bolde,</l>
+<l>Da paa Landet som paa Sø</l>
+<l>Blomsten visned med sit Frø;</l>
+</lg>
+<p rend="firstIndent"><pb type="edition" n="735" ed="US"/>heder det ved Just Juls Grav:</p>
+<lg n="6">
+<l>Hør du mig, du svenske Kugle!</l>
+<l>Hvem traf du i Pronevig?</l>
+<l>Kiste, du kan ikke skjule</l>
+<l>Kiæmpens Navn som Kiæmpens Lig,</l>
+<l>Staver jeg i Mørket ret:</l>
+<l>Billedet af Julers Æt?<note type="footnote"><p rend="noIndent"> <hi rend="romanType">Imago juliæ gentis</hi>, saa kaldes han paa Tavlen af <persName key="pe1295">Sehsted</persName>, sin kiække Vaabenbroder.</p></note></l>
+<l>Saa har den vel endt sin Færd?</l>
+<l><persName key="pe223">Absalon</persName>! det var dit Sværd,</l>
+<l>Det din Vimpel var tillige,</l>
+<l><pb type="edition" n="49" ed="VU"/>Som i Julers Haand og Stavn</l>
+<l>Atter sank i <placeName key="fak616">Rygens</placeName> Havn;</l>
+<l>Banneret fra <placeName key="fak925">Estlands</placeName> <seg type="com" n="com0"><!--korstog.-->Tog</seg>,</l>
+<l>Vimpelløse <seg type="com" n="com0"><!--dvs. Dannebrog.-->Danebraag</seg>,</l>
+<l>Kun den Herre kiæk og bold,</l>
+<l><persName key="pe1081">Peder Vessel Tordenskjold</persName>,</l>
+<l>Fra sin lave Vikingsstavn</l>
+<l>Vaie lod i Marstrands Havn.</l>
+</lg>
+<lg n="7">
+<l>Dog hvorledes? hvil dig, Aand,</l>
+<l>Hvil dig, Hoved, lidt paa Haand,</l>
+<l>Synerne sig let forvirre,</l>
+<l>Øiet blændes ved at stirre;</l>
+<l>Stir kun ei saa stivt paa <placeName key="fak616">Rygen</placeName>,</l>
+<l>Se dog vist paa <placeName key="fak469">Kiøgebugt</placeName>!</l>
+<l>Under Dækket seer du Sygen</l>
+<l>Og i Luften Fanens Flugt,</l>
+<l>Sygen, ja da den sig sneg</l>
+<l>Graadig fra Pallads til Hytte,</l>
+<l>Medens udi <rs type="myth" key="myth274">Hildurs</rs> Leg</l>
+<l><persName key="pe496"><!--Freder 3.-->Fredrik</persName> søgte Roes og Bytte</l>
+<l><pb type="text" facs="1813_210_fax065.jpg" ed="A" n="63"/>Hvisked den ei: Danedrot!</l>
+<l>Kornet voxte nok for godt,</l>
+<l>Det skal ikke gaae i Leie,</l>
+<l>Jeg vil hjelpe dig at meie;</l>
+<l>Der den røde Hane sad</l>
+<l>Vingebred i <placeName key="poet396">Axelstad</placeName></l>
+<l>Mon da ikke høit den goel</l>
+<l>Over <persName key="pe496"><!--F3-->Fredriks</persName> Kongestol:</l>
+<l><pb type="edition" n="736" ed="US"/>Spar kun Krudt og Steen og Staal!</l>
+<l>Jeg omsonst skal tænde Baal.</l>
+<l><seg type="com" n="com0"><!--dvs. Dannebrog. Her hentydes til linjeskibet Dannebrog, som brændte op i Slaget ved Køge Bugt den 4. oktober 1710.-->Danebraag</seg>! med høie Stavn</l>
+<l>Ei du sank i <placeName key="fak616">Rygens</placeName> Havn.</l>
+<l>Høi og herlig var din <seg type="com" n="com0"><!--himmelflugt.-->Flugt</seg>,</l>
+<l>Du fløi op fra <placeName key="fak469">Kjøgebugt</placeName><!--under Store Nordiske Krig brændte linjeskibet Dannebroge den 4. oktober 1710-->,</l>
+<l>Hvor din Stavn sig modig brysted.</l>
+<l>Hvor <persName key="pe282">Niels Juul</persName> dig blodig krysted,</l>
+<l>Hvor du vaied stolt og vild</l>
+<l>Der du af din egen Ild</l>
+<l>Tændtes an, og udi Luen</l>
+<l>Svang du dig mod Himmelbuen,</l>
+<l>Ovenned du sank til <placeName key="fak24">Nord</placeName>,</l>
+<l>Did igjen du heden foer,</l>
+<l>Hjem dig fulgte Skjoldmænd skjønne,</l>
+<l>Det var <rs type="myth" key="myth414">Ivar</rs> og hans Tønne,</l>
+<l>Deres Mærke var som dit:</l>
+<l>Bunden rød og Baandet hvidt.</l>
+<l>Mester Svenske laae paa Vagt,</l>
+<l>Gav saa nøie paa dig Agt,</l>
+<l>Tænkte nu tilsidst at fange</l>
+<l>Hvad ham jog saa mange Gange,</l>
+<l><pb type="edition" n="50" ed="VU"/>Hvad han vandt, var kun at Luen</l>
+<l>Braged i hans Mast og Dæk,</l>
+<l>Da i den mod Himmelbuen</l>
+<l>Blussende du svang dig kiæk.</l>
+<l>Vel fra Dragør han opsendte</l>
+<l>Tvende Blus dig at nedhente,</l>
+<l>Men to folkeløse Skraag</l>
+<l>Flygtende for Gyldenløve</l>
+<l>Fandt vist aldrig Danebraag,</l>
+<l>Blev vist fri for den at røve.</l>
+<l><pb type="text" facs="1813_210_fax066.jpg" ed="A" n="64"/>Danefolk og Danedrot!</l>
+<l>Herrens Raad er altid godt,</l>
+<l>End I med Kong <persName key="pe346">David</persName> bad:</l>
+<l>Lad os, naar du Tugten sender,</l>
+<l>Falde, Gud! i dine Hænder!</l>
+<l>Derfor brændte <placeName key="poet396">Axelstad</placeName>,</l>
+<l>Men ei tændt af Svovelflammen,</l>
+<l>Skarerne I maatte se</l>
+<l>Synke ned som Ax for Le,</l>
+<l>Men dog ei til Fjendens Gammen,</l>
+<l><pb type="edition" n="737" ed="US"/>Fjenden vandt ei Danebraag,</l>
+<l>Herren selv den til sig drog,</l>
+<l>Den opfløi fra Kiøgebugt,</l>
+<l>Æred <placeName key="fak14">Danmark</placeName> i sin Flugt.</l>
+<l><persName key="pe3717">Hvitfeld</persName>! ja der du fra Jord</l>
+<l>Med det hvide Kors opfoer,</l>
+<l>Med et eenligt Luetræk</l>
+<l>Bedre end med Pen og Blæk</l>
+<l>Gamle <persName key="pe396">Arild</persName>, du en Sage</l>
+<l>Skrev om fromme Heltedage.</l>
+<l><placeName key="poet219">Dannemark</placeName>! o tak dog Gud,</l>
+<l>Som dig skiænked slige Sønner,</l>
+<l>Som end skaaner vilde Skud</l>
+<l>For den gamle Stammes Bønner!</l>
+<l>Der du synded, bort han tog</l>
+<l>Korsets Banner, men med Læmpe,</l>
+<l>Atter faaer du Danebraag,</l>
+<l>Naar du <hi rend="spaced">under</hi> den vil kiæmpe.</l>
+</lg>
+     <graphic style="longLine"/>
+</div>
+
+  </body>
+
+
+    <pb type="periText" facs="1813_210_fax067.jpg"/>
+    <pb type="periText" facs="1813_210_fax068.jpg"/>
+   </text>   
+  </TEI>

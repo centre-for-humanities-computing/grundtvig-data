@@ -1,0 +1,635 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+        <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Hvorfor kaldes vi Lutheraner? Pr&#x00E6;diken paa Alle Helgens Dag</title>
+                <title rend="shortForm">Hvorfor kaldes vi Lutheraner?</title>
+                <author>Vanja Thaulow</author>
+                <editor role="editor2">dr.theol. h.c. Niels J&#x00F8;rgen Cappel&#x00F8;rn</editor>
+                <editor role="editor3">Johnny Kondrup</editor>
+                <editor role="editor1">Else Riisager</editor>
+               
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.4</idno><!-- oprindelig 1.2 -->
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>136 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Aarhus Universitet, Det Teologiske Fakultet</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                <authority></authority>
+                
+                <date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1. maj 2014</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1812_193A_txt.xml">L&#x00E6;setekst</note>
+                <note type="intro" target="1812_193A_intro.xml" xml:id="thisFile">Indledning</note>
+            </notesStmt>
+                <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+                        </editorialDecl>     
+        </encodingDesc>
+        <!--  <profileDesc>
+      <creation>
+        <date>2011-03-03</date>
+        <note>Note</note>
+      </creation>
+      </profileDesc> -->
+        <revisionDesc>
+            <change xml:id="VTH" who="VTH" when="2012-12-01">Fil oprettet. Header kopieret fra 139.intro.xml. L&#x00F8;bende sat stikord ind.</change>
+            <change who="VTH" when="2012-12-12">Skriver</change>
+            <change who="VTH" when="2012-12-13">Skriver</change>
+            <change who="VTH" when="2012-12-17">Skriver</change>
+            <change who="VTH" when="2012-12-18">Skriver</change>
+            <change who="VTH" when="2012-12-19">Skriver</change>
+            <change who="VTH" when="2012-12-20">Retter og skriver</change>
+            <change who="VTH" when="2012-12-21">Retter og skriver</change>
+            <change who="VTH" when="2013-01-13">Retter.</change>
+            <change who="VTH" when="2013-01-14">Retter.</change>
+            <change who="VTH" when="2013-01-16">Retter.</change>
+            <change who="VTH" when="2013-03-01">Retter efter ELRs redaktion.</change>
+            <change who="VTH" when="2013-03-15">Retter efter NJCs redaktion.</change>
+            <change who="VTH" when="2013-03-19">Retter.</change>
+            <change who="VTH" when="2013-04-05">Fjerner m&#x00E6;slinger. Supplere med title-numrer</change>
+            <change who="VTH" when="2013-04-09">Retter efter JKs redaktion</change>
+            <change who="VTH" when="2013-09-26">Retter invaliditeter aht ny upload</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="VTH" when="2014-04-29">Ændrer versionsnummer fra 1.2 til 1.4 pga. en ekstra tekstrettelse i txt.</change>
+            <change who="VTH" when="2014-10-23">fjerner de ekstra mellemrum ved Biblia, som kom ind ved auto-TEI-headeren</change>
+             <change who="VTH" when="2017-06-20">fjerner flere af de overskydende mellemrum, som kom ind ved auto-TEI-headeren</change>
+        </revisionDesc>    
+    </teiHeader>
+        <text type="intro">
+                <body>
+            <div>
+                <head xml:id="docIn1">Grundtvig i Udby</head>
+<!-- tjek bibliografien/tidslinjen, om hvor meget vi skal udgive fra denne periode -->
+                
+                <p rend="noIndent">I &#x00E5;rene 1811-1813 virkede Grundtvig som personlig kapellan for sin far, <persName key="pe164">Johan Grundtvig</persName>, ved Udby og &#x00D8;rslev kirker p&#x00E5; Sydsj&#x00E6;lland. I disse &#x00E5;r var kaldsbevidstheden st&#x00E6;rk hos ham, og han var meget ih&#x00E6;rdig i sit pr&#x00E6;stearbejde. Han s&#x00E5; det som sin opgave at arbejde for menneskers frelse og var st&#x00E6;rkt engageret i at vidne om den sande tro og bek&#x00E6;mpe alt, hvad der efter hans opfattelse stred imod denne tro. Grundtvig antog Bibelen som sandhedskriterium og mente herved at indtage en &#x00E6;gte luthersk position. I Grundtvigs s&#x00E5;kaldte &#x2018;bibelkristne&#x2019; periode l&#x00E5; det ham meget p&#x00E5; sinde at v&#x00E6;re i overensstemmelse med b&#x00E5;de Bibelens ord, <persName key="pe42">Luthers</persName> l&#x00E6;re og sin faders gammeldags kristendomsforst&#x00E5;else (<rs type="title" key="title445">Bugge 1965</rs>, s. 161 f.).<!--[NB! Det var Walchs udgave, Gr. l&#x00E6;ste i Udbytiden, jf Bugge s. 162].</p>-->
+</p>
+                   <p rend="firstIndent"></p>
+      
+            </div>
+            
+            <div>
+                <head xml:id="docIn2">Tilblivelsen af <hi rend="italic">Hvorfor kaldes vi Lutheraner?</hi>
+</head>
+                <p rend="noIndent">Den 10. oktober 1812 modtog Grundtvig et brev fra sin ven <persName key="pe176">Povel Dons</persName>, hvori denne meddelte, at den lutherske professor og overhofpr&#x00E6;dikant i Dresden, <persName key="pe874">Franz Volkmar Reinhard</persName> &#x2013; af <persName key="pe176">Dons</persName> kaldet &#x201C;Tysklands Reinhard&#x201D; &#x2013; var d&#x00F8;d den 6. september (<rs type="title" key="title579">K&#x00F8;ster 1875</rs>, s. 101). Grundtvig havde bl.a. stiftet bekendtskab med <persName key="pe874">Reinhard</persName> gennem dennes homiletiske selvbiografi <hi rend="italic">
+<rs type="title" key="title1899">Gest&#x00E4;ndnisse seine Predigten und seine Bildung zum Prediger betreffend in Briefen an einen Freund</rs>
+</hi> (&#x2019;Bekendelser ang&#x00E5;ende hans pr&#x00E6;dikener og hans dannelse til pr&#x00E6;dikant i breve til en ven&#x2019;)<!-- tjek NHB --> fra 1810<!--(jf. <rs type="title" key="title825">Nielsen 1889</rs>, s. 183)-->. Da Grundtvig cirka tre uger efter at have modtaget nyheden skulle pr&#x00E6;dike p&#x00E5; allehelgensdag (1. s&#x00F8;ndag i november), hvor der var tradition for at tale om reformationens betydning, pr&#x00E6;dikede han med <persName key="pe874">Reinhard</persName> i tankerne over temaet: Hvorfor kaldes vi Lutheranere?, jf. <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> nr. 196. Denne pr&#x00E6;diken er senere optrykt i 2. udgave af <rs type="title" key="title1926">
+<hi rend="italic">Bibelske Pr&#x00E6;dikener efter Tidens Tarv og Leilighed</hi>
+</rs> 1883 [1816].</p>
+                    
+                <p rend="noIndent">Kort efter allehelgensdag m&#x00E5; Grundtvig have f&#x00E5;et ideen til at omarbejde pr&#x00E6;dikenen og udgive den i anledning af <persName key="pe874">Reinhards</persName> d&#x00F8;d. Han skrev den oprindelige pr&#x00E6;diken om, s&#x00E5; den blev mere kritisk over for samtiden &#x2013; is&#x00E6;r over for &#x2018;de Bogl&#x00E6;rde&#x2019;. Han forfattede desuden en fortale til pr&#x00E6;dikenen samt et 25 strofer langt mindedigt over <persName key="pe874">Reinhard</persName> og udgav det hele samlet under titlen <hi rend="italic">Hvorfor kaldes vi Lutheraner?</hi>. Bogen udkom ved &#x00E5;rsskiftet 1812/1813 samtidig med <rs key="title629" type="title">
+<hi rend="italic">Verdens Kr&#x00F8;nike</hi> 1812</rs> (<rs type="title" key="title579">K&#x00F8;ster 1875</rs>, s. 102)<!--[tjek koch/Nielsen - det giver ikke mening-->. B&#x00E5;de digtet og fortalen besk&#x00E6;ftigede sig med <persName key="pe874">Reinhards</persName> rolle som den, der vogtede over Bibelen og holdt den lutherske l&#x00E6;re i h&#x00E6;vd.</p>
+            </div>
+            <!-- Om 196: De f&#x00F8;rste tre sider har kun til f&#x00E6;lles med 193A at benytte nogle af de samme bibelsteder. Men s. 65 kommer spm.: Hvorfor kaldes vi Lutheraner? Tonen virker meget mildere: Har gjaldt det folk i Udby, den udgivne pr&#x00E6;diken siger han selv g&#x00E6;lder hele den lutherske menighed, men mon ikke, han i virkeligheden har haft 'de vantro' rationalister for &#x00F8;je. Han vidste jo hvem, der ville k&#x00F8;be den: Prim&#x00E6;rt de k&#x00F8;benhavnske pr&#x00E6;ster...det kan forklare den h&#x00E5;rde tone. Ens: Om at have navn efter for&#x00E6;ldre/Luther, om samvittigheden, der nager, om at Bibelen er i st&#x00F8;vet.-->
+            
+            <div>
+                <head xml:id="docIn3">Om Franz Volkmar Reinhard</head>
+                
+                <p rend="noIndent">
+<persName key="pe874">Franz Volkmar Reinhard</persName> blev f&#x00F8;dt i 1753 som s&#x00F8;n af en pr&#x00E6;st. Som ung l&#x00E6;ste han filosofi, filologi og teologi ved universitetet i Wittenberg. I 1780 blev han professor i filosofi og i 1782 tillige professor i teologi samme sted. Fra 1784 virkede han desuden som provst ved slots- og universitetskirken i Wittenberg. I 1792 fik <persName key="pe874">Reinhard</persName> ans&#x00E6;ttelse som overhofpr&#x00E6;dikant ved Sophienkirche i Dresden. Han fik med tiden en r&#x00E6;kke hverv ved siden af denne stilling: Han var medlem af overkonsistoriet i Dresden<!-- Nielsen s. 182 --> og blev udn&#x00E6;vnt til statsr&#x00E5;d i det preussiske kultusministerium. Han var desuden med til at revidere de sachsiske universiteter og fyrsteskoler<!--i hvilken egenskab?-->. Han d&#x00F8;de i 1812 i Dresden, 59 &#x00E5;r gammel (<rs type="title" key="title1919">Schott 1978</rs>, s. 16 f.).</p>
+                
+                <p rend="noIndent">
+<persName key="pe874">Reinhard</persName> kan karakteriseres som en konservativ oplysningst&#x00E6;nker. I en tid, hvor nogle ben&#x00E6;gtede &#x00E5;benbaringen (naturalisterne), og andre lod fornuften v&#x00E6;re m&#x00E5;lestok for &#x00E5;benbaringen (rationalisterne), indtog <persName key="pe874">Reinhard</persName> en mere konservativ position. Han tilh&#x00F8;rte supranaturalisterne, som regnede den kristelige &#x00E5;benbaring for en selvst&#x00E6;ndig erkendelseskilde, der ikke kunne henf&#x00F8;res til fornuftens omr&#x00E5;de. Hvor rationalisterne forholdt sig kritisk til de bibelske fort&#x00E6;llinger og ans&#x00E5; <persName key="pe45">Jesus</persName> for et menneske, lagde de konservative, lutherske supranaturalister, som <persName key="pe874">Reinhard</persName> tilh&#x00F8;rte, v&#x00E6;gten p&#x00E5; <persName key="pe45">Jesu</persName> guddommelige natur og ud&#x00F8;vede kun moderat bibelkritik. For <persName key="pe874">Reinhard</persName> var Bibelen en autoritet, som mennesket skulle b&#x00F8;je sig for. <persName key="pe874">Reinhard</persName> beskrives som en af supranaturalismens fremmeste repr&#x00E6;sentanter i Tyskland. I Norden var denne &#x00E5;ndsretning repr&#x00E6;senteret af bl.a. biskop over Sj&#x00E6;llands stift, <persName key="pe39">N.E. Balle</persName>, og biskop i Bergen, <persName key="pe649">Johan Nordahl Brun</persName> (<rs type="title" key="title825">Nielsen 1889</rs>, s. 182).</p>
+<!-- noget om de rationalistiske tendenser i supranat./hos Reinhard - ellers forst&#x00E5;r man ikke Gr.s kritik -->
+                
+                <p rend="noIndent">
+<persName key="pe874">Franz Volkmar Reinhard</persName> var en mand, der vandt stor tilslutning i samtiden. Han var f&#x00F8;rst og fremmest ber&#x00F8;mt for sine pr&#x00E6;dikener. Han beskrives som en af de mest succesfulde oplysningspr&#x00E6;dikanter overhovedet (<rs type="title" key="title1919">Schott 1978</rs>, s. 16)<!-- &#x201C;Seine Name ist der glanzvollste Predigername des ausgehenden 18. und ersten Drittels des 19. Jahrhunderts&#x201D; -->. I de 20 &#x00E5;r, han var overhofspr&#x00E6;dikant i Dresden, pr&#x00E6;dikede han alle s&#x00F8;n- og helligdage og havde op mod 3-4000 tilh&#x00F8;rere<!--(<rs type="title" key="title">Scott 1978</rs>, s. 15)-->. I alt er der bevaret ca. 850 pr&#x00E6;dikener fra hans h&#x00E5;nd (<rs type="title" key="title1919">Schott 1978</rs>, s. 18). En del af dem blev udgivet i samtiden, og mange pr&#x00E6;ster lod sig inspirere af ham og kopierede hans stil<!-- skal tjekkes -->. I 1800 gav hans reformationspr&#x00E6;diken anledning til en stor teologisk fejde i Tyskland. <persName key="pe874">Reinhard</persName> forsvarede <persName key="pe42">Luthers</persName> hovedl&#x00E6;rdomme (Bibelen som teologiens grundlag og retf&#x00E6;rdigg&#x00F8;relsen ved tro) og gik til angreb p&#x00E5; samtidens lutherdom, som han fandt var p&#x00E5; vildspor. Denne pr&#x00E6;diken blev trykt i Danmark i 1804 i <hi rend="italic">
+<rs type="title" key="title126">Theologisk Maanedsskrivt</rs>,</hi> som Grundtvig fulgte med i (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 564). <persName key="pe874">Franz Volkmar Reinhard</persName> udgav desuden en omfattende morall&#x00E6;re i fem bind med titlen <hi rend="italic">
+<rs type="title" key="title2238">System der christlichen Moral</rs>
+</hi> (1802-1816), som blev oversat til dansk af <persName key="pe1063">Andreas Krag Holm</persName> med titlen <hi rend="italic">
+<rs type="title" key="title2239">System i den Kristelige Moral</rs>
+</hi> (1803-1821).</p>
+<!--mere om dette hos Schott?-->
+                
+                <p rend="noIndent">I forbindelse med <persName key="pe874">Reinhards</persName> d&#x00F8;d blev der holdt mindeh&#x00F8;jtideligheder i det meste af Tyskland. Disse h&#x00F8;jtideligheder samt de mange nekrologer, der blev skrevet, vidnede om, hvor stor agtelse <persName key="pe874">Reinhard</persName> n&#x00F8;d i samtiden. I nekrologerne blev han portr&#x00E6;tteret som en mand, der talte imod tids&#x00E5;nden, og som dermed var en st&#x00F8;tte for protestantismen. Man priste hans talegaver og hans dydige og ydmyge karakter og mente, at han fortjente at blive husket i eftertiden (<rs key="title1919" type="title">Schott 1978</rs>, s. 270 f.). Relativ kort tid efter <persName key="pe874">Reinhards</persName> d&#x00F8;d udkom de f&#x00F8;rste biografier om ham: &#x00E9;n skrevet af vennen <persName key="pe1059">Carl August B&#x00F6;ttiger</persName> (1813), en anden skrevet af historikeren <persName key="pe1061">Karl Heinrich Ludwig P&#x00F6;litz</persName> (1815).<!-- l&#x00E6;s mere fra s. 272 om B&#x00F6;ttiger og P&#x00F6;litz Sidstn&#x00E6;vnte beskrev <persName key="pe874">Reinhard</persName> som en ny <persName key="pe">Melanchthon</persName>, ligesom Grundtvig gjorde, jf. afsnittet <ref target="docIn" type="#docIn9">&#x201C;Fortalen&#x201D;</ref> NB: Der er ogs&#x00E5; en tredje fra 1816, se Schott s. 277-->
+</p>
+            
+            <div>
+                <head xml:id="docIn4">Grundtvigs vurdering af Reinhard og supranaturalismen</head>
+                <p rend="noIndent">Grundtvigs vurdering af <persName key="pe874">Reinhard</persName> var blandet. I <rs type="title" key="title629">
+<hi rend="italic">Verdens Kr&#x00F8;nike</hi> 1812</rs> skriver han om <persName key="pe874">Reinhard</persName> og andre med samme tilgang til de religi&#x00F8;se sp&#x00F8;rgsm&#x00E5;l som han: &#x201C;Hjertets Trang og L&#x00E6;ngsel har drevet dem til Kristus, men Forstanden er i Tidens Vold, det ser man, naar de d&#x00F8;mme om Livets Sysler, om videnskabelige og s&#x00E6;delige Ting; deres hele Tankegang er ej blevet kristelig&#x201D; (s. 300). Grundtvig havde alts&#x00E5; stor respekt for <persName key="pe874">Reinhard</persName> og andre supranaturalisters modige bekendelse i en tid, der ellers var pr&#x00E6;get af spot og h&#x00E5;n over for religionen<!--jf. naturalister og rationalister-->. Men der vedblev if&#x00F8;lge ham at v&#x00E6;re det problem for supranaturalisterne, at religionen regnedes for en erkendelsessag og &#x00E5;benbaringen for en kilde til kundskab frem for til tro (jf. <rs type="title" key="title825">Nielsen 1889</rs>, s. 183). Denne ambivalente holdning til <persName key="pe874">Reinhard</persName> skinner ogs&#x00E5; tydeligt igennem i tilegnelsesdigtet, se det f&#x00F8;lgende afsnit.</p>
+              
+                
+            </div>
+            </div>
+            
+            <div>
+                <head xml:id="docIn5">Indholdet i <hi rend="italic">Hvorfor kaldes vi Lutheraner?</hi>
+</head>
+            
+                <div>
+                    <head xml:id="docIn6">Digtet</head>
+                    
+                    <p rend="noIndent">Digtet til <persName key="pe874">Franz Volkmar Reinhard</persName> kan genrem&#x00E6;ssigt betegnes som et d&#x00F8;dedigt, jf. <persName key="pe51">Sune Aukens</persName> definition i bogen <hi rend="italic">
+<rs key="title1908" type="title">Efterm&#x00E6;le. En studie i den danske d&#x00F8;dedigtning fra Anders Arrebo til S&#x00F8;ren Ulrik Thomsen</rs>
+</hi> (1998, s. 15)<!--et d&#x00F8;dedigt er et digt, der er skrevet i anledning af et d&#x00F8;dsfald i digterens samtid (1998, s. 15)-->. Grundtvig tegner et nuanceret billede af <persName key="pe874">Reinhard</persName>. Han roser ham for ikke at lade sig rokke fra troen p&#x00E5; <persName key="pe45">Kristus</persName> og p&#x00E5; forsoningen (strofe 13), men kritiserer ham for at gruble for meget og dyrke klogskaben fremfor den enfoldige tro (strofe 10 og 11). Det nuancerede er kendetegnende for Grundtvigs d&#x00F8;dedigtning. Digtene var ikke ren panegyrik, men Grundtvig opregnede b&#x00E5;de st&#x00E6;rke og svage sider ved den afd&#x00F8;de.<!-- Det er menneskebilleder. Den afd&#x00F8;de tr&#x00E6;der frem i fuld figur. --> <persName key="pe51">Sune Auken</persName> har formuleret det rammende: &#x201C;det er langt vigtigere for Grundtvig at f&#x00E5; sagt det, han mener er sandt [...], end det er at f&#x00E5; sagt noget passende&#x201D; (s. 133). Det er desuden s&#x00E6;rligt for Grundtvig, at han ikke t&#x00F8;vede med at f&#x00E6;lde dom over den d&#x00F8;de, og at han ofte udnyttede lejlighedsdigtene til at polemisere mod den samtid, han fandt ugudelig og &#x00E5;ndsforladt.<!--I samtiden har Grundtvigs d&#x00F8;dedigte formentlig virket n&#x00E6;rmest taktl&#x00F8;se.-->
+</p>    
+                    
+                    <p rend="noIndent">Der er to billeder, som dominerer digtet til <persName key="pe874">Reinhard</persName>. Det f&#x00F8;rste er billedet af graven (med allusion til <rs type="bible" key="Es 57,1-2">Es 57,1-2</rs>): vi h&#x00F8;rer om <persName key="pe42">Luthers</persName> grav (strofe 1, 9, 15); Bibelen, der er ved at blive begravet (strofe 7, 15); <persName key="pe874">Reinhards</persName> grav (strofe 16 f.); biskop <persName key="pe39">Balle</persName> p&#x00E5; gravens rand (strofe 18-19) og Grundtvig, der ser ned i sin egen grav (strofe 21, 25). Det andet er billedet af vogterne (<persName key="pe42">Luther</persName>, <persName key="pe874">Reinhard</persName>, <persName key="pe39">Balle</persName> og nu Grundtvig selv), der svinger deres sv&#x00E6;rd over graven. Her er to bibelske billeder sammenblandet: Grundtvig tr&#x00E6;kker b&#x00E5;de p&#x00E5; <rs type="bible" key="1 Mos 3,24">1 Mos 3,24</rs>, hvor sv&#x00E6;rdsvingende keruber vogter indgangen til Edens have,<!--Denne reference er eksplicit i <rs type="title" key="title629"><hi rend="italic">Verdens Kr&#x00F8;nike</hi> 1812</rs>, hvor Grundtvig direkte siger, at <persName key="pe874">Reinhard</persName> har vogtet Luthers grav som en &#x2018;kerubim&#x2019; (s. 300).--> og p&#x00E5; <rs type="bible" key="Hebr 4,12">Hebr 4,12</rs>, hvor Guds ord sammenlignes med et sv&#x00E6;rd. Grundtvig citerede ogs&#x00E5; dette tekststed i sin <rs key="title650" type="title">Dimispr&#x00E6;diken</rs>: &#x201C;Thi det Guds ord er levende og kraftigt, og skarpere end noget tveegget sverd, og tr&#x00E6;nger igiennem, indtil det adskiller baade ledemod og marve, og d&#x00F8;mmer over hiertets tanker og sinde&#x201D; (<rs type="title" key="title236"><hi rend="italic">Biblia</hi> 1787</rs>).</p>
+                    
+                    <p rend="noIndent">Digtet kan inddeles i f&#x00F8;lgende afsnit:</p>
+                    
+                    <list type="simple">
+                        <item>Strofe 1-4: <persName key="pe42">Luthers</persName> indsats med at overs&#x00E6;tte Bibelen.</item>
+                        <item>Strofe 5-8: De senere tiders kasten vrag p&#x00E5; den lutherske arv.</item>
+                        <item>Strofe 9-15: <persName key="pe874">Reinhards</persName> lutherske forkyndelse i en vantro tid.</item>
+                        <item>Strofe 16-17: Opfordring til Tyskland om at bede om en ny fork&#x00E6;mper for den lutherske kristendom.</item>
+                        <item>Strofe 18-19: Den lignende situation i Danmark: <persName key="pe39">Balle</persName> og lutherdommen p&#x00E5; gravens rand.</item>
+                        <item>Strofe 20-25: Grundtvig som en ny, luthersk k&#x00E6;mpe i Norden.</item>
+                    </list>
+                                        
+                    <div>
+                        <head xml:id="docIn7">Varianter</head>
+                        <p rend="noIndent">Der findes en del varianter til digtet. Det blev f&#x00F8;rste gang optrykt i <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi>
+</rs> 1815, s. 151-161. Ud over at der her findes varians i ortografi og ordstilling, blev digtet forsynet med et &#x201C;Till&#x00E6;g&#x201D; (s. 361-369), hvori Grundtvig forklarede, at de &#x201C;bange Forventninger&#x201D;, han havde udtrykt for Sachsen i digtet fra 1812, havde vist sig at holde stik. Hermed hentydede han formentlig til, at universitetet i Wittenberg var blevet lukket i 1813 under Napoleonskrigene, og at Wittenberg tilfaldt Preussen ved Wienerkongressen i 1815.</p>
+  <!-- tjek?? -->                          
+                        <p rend="noIndent">I Grundtvigs levetid udkom digtet sidenhen otte gange i forskellige salmesamlinger, st&#x00E6;rkt forkortet. Det kom bl.a. i <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 1:1</rs> 1836, forkortet til ni strofer (strofe 1-8 og 24) og med adskillige &#x00E6;ndringer i teksten, der koncentrerede den om <persName key="pe42">Luther</persName> og Bibelen. Denne version blev med enkelte sm&#x00E5;&#x00E6;ndringer optrykt i <rs type="title" key="title2246">
+<hi rend="italic">Sang-V&#x00E6;rk</hi> 2</rs> 1870. Andre steder blev digtet forkortet til fire eller fem strofer, hvoraf nogle havde formen fra <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi>
+</rs> 1815 og andre formen fra <rs type="title" key="title175">
+<hi rend="italic">Sang-V&#x00E6;rk 1:1</hi> 1836</rs>. Med forkortelsen &#x00E6;ndrede digtet karakter. Fra at have v&#x00E6;ret et digt om <persName key="pe874">Reinhard</persName> blev det til et digt om <persName key="pe874">Luther</persName>, og digtets gengrem&#x00E6;ssige pr&#x00E6;g af d&#x00F8;dedigt forvandt. En liste over de forskellige varianter findes i
+ <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> bind 1, s. 78. En kort version af digtet kom siden til at indg&#x00E5; i H&#x00F8;jskolesangbogens 2. til 15. udgave med melodi af <persName key="pe1111">Hans Matthison Hansen</persName> (<rs type="title" key="title1930">Dam 1992</rs>, s. 99).</p>
+                        
+                        <p rend="noIndent">I sin korte form har sangen i perioder v&#x00E6;ret meget anvendt. Kirkehistoriker <persName key="pe724">Frederik Nielsen</persName> omtalte den i 1889 som &#x201C;den ber&#x00F8;mte reformationssang&#x201D; (<rs type="title" key="title825">1889</rs>, s. 184).</p>
+                    </div>
+                    <!--
+            <div>
+                <head  xml:id="docInxx">Grundtvigs senere udtalelser om pr&#x00E6;dikenen</head>
+                
+                <p rend="noIndent">[N&#x00E6;vne till&#x00E6;gget fra Kv&#x00E6;dlinger her? Anledning: Anelsen om, at en ulykke forestod Sachsen. Og det viste sig at v&#x00E6;re rigtigt: Ulykkerne bragede ned [der hentydes til Wittenberg blev stormet af preussiske? tropper 1814/ og i 1815 tilfaldt den nordlige del (inkl. W.) Preussen? Kontekst = Befrielseskrigen imod Napoleon... Wittenbergs H&#x00F8;iskole nedlagdes? [Nedlagdes universitetet? Det 'forenedes' med Uni i Halle i 1817, men det er jo for sent ift. denne kontekst]. Den varslende, d&#x00F8;mmende tone med flittig bibelbrug forts&#x00E6;ttes...]</p>
+                
+               [Da det tysk-romerske rige blev opl&#x00F8;st i 1806 blev Sachsen et kongerige, og kurfyrst Frederik August 3. blev kong Frederik August 1. Kongen gjorde den fejl at forblive loyal mod Napoleon for l&#x00E6;nge, og blev taget til fange og hans landomr&#x00E5;der beslaglagt af de allierede (Preussen, England, Rusland m.v.) i 1813. Meningen var at Preussen skulle annektere Sachsen, men p&#x00E5; grund af modstand fra &#x00D8;strig, Frankrig og Storbritannien blev Frederik August genindsat p&#x00E5; tronen ved Wienerkongressen, men Sachsen m&#x00E5;tte afst&#x00E5; den nordlige del af kongeriget til Preussen (inkl. W.?). Disse omr&#x00E5;der blev til den preussiske provins Sachsen (dagens Sachsen-Anhalt). Det genst&#x00E5;ende kongeriges gr&#x00E6;nser er hovedsagelig de samme som i dag.]
+                
+            </div>-->
+                        
+                    
+                    
+                    <div>
+                        <head xml:id="docIn8">Metriske oplysninger</head>
+                        
+                        <p rend="noIndent">25 strofer a 9 vers. Der er skillestreg mellem strofe 15 og 16.</p>
+                                                                                            
+                        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+                        <p rend="noIndent">Stavelsesantal: 8 7 8 7 8 8 8 8 7.</p>
+                        <p rend="noIndent">Rimf&#x00F8;lge: ababccdde; a &#x2642;, b &#x2640;, c &#x2642;, d &#x2642; e &#x2640;.</p>
+                                             
+                                                
+                        <p rend="noIndent">Se i &#x00F8;vrigt <ref type="docOut" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>.</p>                        
+                    </div>
+                </div>
+                
+                <div>
+                    <head xml:id="docIn9">Fortalen</head>
+                    <p rend="noIndent">Fortalens begyndelse er pr&#x00E6;get af en r&#x00E6;kke romantiske tr&#x00E6;k. Grundtvig er &#x2018;stemt&#x2019; af s&#x00F8;rgebudskabet om <persName key="pe874">Reinhards</persName> d&#x00F8;d (s. 11). Han bruger billedet af en &#x2018;vandrer&#x2019;, der dv&#x00E6;ler ved gravstenen og st&#x00F8;vet af den d&#x00F8;de, og han beskriver, hvordan han selv &#x2013; n&#x00E5;r klokken ringer ved midnatstide &#x2013; &#x00F8;nsker at l&#x00F8;fte sig fra det jordiske og svinge sig op mod himlen og evigheden (s. 13). Denne romantiske &#x2013; p&#x00E5; Grundtvigs tid moderne &#x2013; sprogdragt st&#x00E5;r i kontrast til det gammeldags, lutherske budskab, Grundtvig &#x00F8;nsker at formidle.</p>
+                        
+                    <p rend="noIndent">I fortalen formulerer Grundtvig sit anliggende med udgivelsen: Han vil udbrede budskabet fra sin holdte allehelgenspr&#x00E6;diken &#x2013; &#x201C;at vi ikke l&#x00E6;ngere er Lutheraner&#x201D; &#x2013; til en bredere skare, og han forestiller sig en meget stor m&#x00E5;lgruppe: &#x201C;Jeg skrev den som om den skulde holdes i en Kirke, hvor den ganske Menighed, som kaldes Lutheraner, var forsamlet og kunde h&#x00F8;re R&#x00F8;sten&#x201C; (s. 11). N&#x00E5;r man l&#x00E6;ser pr&#x00E6;dikenen, f&#x00E5;r man nu n&#x00E6;rmere det indtryk, at den er henvendt til &#x2018;de bogl&#x00E6;rde&#x2019;, som Grundtvig kritiserer.<!-- Den trykte pr&#x00E6;diken havde et mere polemisk indhold og en mere revsende tone over for de bogl&#x00E6;rde, end den oprindelige pr&#x00E6;diken fra Udby havde haft.hvilket igen indikerer, at det var de l&#x00E6;rde (heriblandt pr&#x00E6;stekollegerne), Grundtvig havde haft i tankerne med udgivelsen.-->
+</p>
+                    
+                    <p rend="noIndent">Grundtvig forklarer desuden i fortalen, at han har &#x00F8;nsket at sige noget om <persName key="pe874">Reinhard</persName>, og dette &#x201C;kunde [neppe] finde et passeligere Sted end foran en Pr&#x00E6;diken som den n&#x00E6;rv&#x00E6;rende&#x201D; (s. 13). Grundtvig forventede formentlig, at hans tale om det at v&#x00E6;re sand lutheraner kunne vinde &#x00F8;renlyd i anledning af <persName key="pe874">Reinhards</persName> bortgang. Grundtvig priser herefter <persName key="pe874">Reinhard</persName> &#x2013; ikke som s&#x00E5; mange andre pga. hans kl&#x00F8;gt og skarpsind, men fordi han &#x201C;havde Hjerte til at v&#x00E6;re sand bibelsk Kristen og Mod til at bekende sin foragtede Tro&#x201D; (s. 14).</p>
+                    
+                    <p rend="noIndent">Herefter handler fortalen om <persName key="pe874">Reinhards</persName> virke som <persName key="pe42">Luthers</persName> og <persName key="pe526">Melanchthons</persName> arvtager i Wittenberg. Grundtvig beskriver <persName key="pe874">Reinhard</persName> som en blanding af de to reformatorer. Han var teolog og pr&#x00E6;dikant som <persName key="pe42">Luther</persName> og havde tillige den klassiske l&#x00E6;rdom i filosofi og filologi som <persName key="pe526">Melanchthon</persName>. Grundtvig ser det som et udtryk for Guds forsyn, at denne &#x201C;Jesu Kristi Stridsmand&#x201D; virkede og talte i netop Wittenberg. Hermed ville Gud g&#x00F8;re folk opm&#x00E6;rksomme p&#x00E5;, at de ikke l&#x00E6;ngere var lutheranere.</p>
+<!-- ? -->
+                        
+                    <p rend="noIndent">Tanken om Guds forsyn og forudbestemmelse fylder en del i fortalen. Grundtvig bruger det billede, at forsynet er ligesom en vidunderlig k&#x00E6;de, som Gud har lagt ned gennem tiderne, og som menneskene stykkevis kan opdage leddene i (s. 16). Billedet er poetisk, og samtidig er forsynstanken ganske bastant: Guds visdom udelukker enhver form for tilf&#x00E6;ldighed (s. 22). Det er samme forsynstanke, Grundtvig udtrykker i <rs type="title" key="title629">
+<hi rend="italic">Verdens Kr&#x00F8;nike</hi> 1812</rs>, hvor hele historien forklares ved Guds styrelse.</p>
+                    
+                    <note type="readMore">
+<p rend="noIndent">Forsynets k&#x00E6;de kan ses som det horisontale modstykke til den vertikale &#x2018;gyldne k&#x00E6;de&#x2019; (<hi rend="italic">aurea catena</hi>), som l&#x00F8;fter jorden til himlen. Denne k&#x00E6;de omtaler Grundtvig b&#x00E5;de i <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> (s. 140) og i sin dimispr&#x00E6;diken 
+     (<hi rend="italic"><rs type="title" key="title650">Hvi er Herrens Ord forsvundet af hans Hus?</rs>,</hi> s. [8])<!--jf. Schott herom-->.</p>
+</note>                   
+                    
+                    <p rend="firstIndent">De sidste fem sider af fortalen (s. 19-24) indeholder dystre overvejelser over, hvordan Gud vil straffe dem, der ikke omvender sig, og Grundtvig anf&#x00F8;rer skr&#x00E6;mmeeksempler lige fra syndfloden i 1 Mosebog til jordsk&#x00E6;lvet i Lissabon 1755. Grundtvig varsler, at store ulykker er n&#x00E6;rt forest&#x00E5;ende pga. den vantro og syndighed, der florerer. Hans tale har visse ligheder med de gammeltestamentlige profeters tale til deres samtid. Grundtvig forf&#x00E6;gter desuden det synspunkt, at sygdom, ulykker og elendighed er Guds straf over syndere og hans m&#x00E5;de at tugte menneskene p&#x00E5;. Det med teodic&#x00E9;en besl&#x00E6;gtede sp&#x00F8;rgsm&#x00E5;l om, hvorfor ulykker rammer uskyldige, anf&#x00E6;gter ham ikke: &#x201D;[dette] forvilder ingen Kristen, thi han veed, at Ingen er retf&#x00E6;rdig for Gud, at hans B&#x00F8;rn ikke klage over Korset, som de veed g&#x00F8;res haardt Behov til at luttre Hjertet og uddrive Verdensk&#x00E6;rlighed&#x201D; (s. 21).</p>
+                        
+                    
+                </div>
+                
+                <div>
+                    <head xml:id="docIn10">Pr&#x00E6;dikenen</head>
+                    <p rend="noIndent">Pr&#x00E6;dikenteksten er den faste tekst til allehelgensdag efter f&#x00F8;rste tekstr&#x00E6;kke, nemlig saligprisningerne i <rs type="bible" key="Matt 5,3-12">Matt 5,3-12</rs>.</p>
+                    
+                        <div>
+                            <head xml:id="docIn11">Temaer</head>
+                              
+                            <p rend="noIndent">Pr&#x00E6;dikenen begynder traditionelt med en &#x201C;Ihukommelse af alle dem, der ere hensovne i Kristo&#x201D; (s. 26-29). Dette afsnit glider over i en ihukommelse af <persName key="pe42">Luther</persName>, og Grundtvig ekspliciterer her sit &#x00E6;rinde: &#x201C;[jeg vil] udl&#x00E6;gge for eder <hi rend="italic">Hvorfor kaldes vi Lutheraner?, lutherske Kristne</hi>&#x201D; (s. 30). Herefter f&#x00F8;lger et kort historisk rids over, hvordan Bibelen var blevet glemt i den katolske middelalder, og hvordan det var <persName key="pe42">Luthers</persName> fortjeneste p&#x00E5; ny at have gravet skriften frem og gjort den tilg&#x00E6;ngelig for folk ved at overs&#x00E6;tte den til tysk. Grundtvig konkluderer, at det er passende at kalde sig efter <persName key="pe42">Luthers</persName> navn pga. den altafg&#x00F8;rende betydning, han fik som fornyer af kirken.</p>
+<!-- VU: udgpunktet er, at Skriften er den eneste Grundvold for Kirke og Kristendom -->
+                            
+                            <p rend="noIndent">Herefter f&#x00F8;lger en passage med h&#x00E5;rd kritik af de &#x2018;bogl&#x00E6;rde&#x2019;. De skammer sig if&#x00F8;lge Grundtvig over navnet lutheranere, ja v&#x00E6;rre endnu: &#x201C;naar de turde [...], da sagde de reent ud, hvad de Dristigste har sagt, at de ligesaalidt vilde hede Kristne, som Lutheraner, at de nok tro, der staaer megen L&#x00F8;gn i Bibelen, men ikke et Ord, som er sandt <hi rend="italic">fordi</hi> det staar der&#x201D; (s. 36). De l&#x00E6;rde kan alts&#x00E5; ikke l&#x00E6;ngere kaldes lutheranere, da de selv har kastet navnet bort. Men heller ikke l&#x00E6;gfolk og menigmand kan med rette kalde sig lutheranere, for s&#x00E5; burde de if&#x00F8;lge Grundtvig &#x201C;g&#x00F8;re <persName key="pe42">Luthers</persName> Gerninger&#x201D;, dvs. l&#x00E6;se i deres Bibel, men det g&#x00F8;r de ikke i tilstr&#x00E6;kkelig grad. N&#x00E5;r folk i Grundtvigs samtid kaldte sig lutheranere, var det s&#x00E5;ledes blevet en tom frase. Grundtvig foresl&#x00E5;r ironisk, at man burde finde sig et andet navn, der passer bedre: &#x201C;Kristne kan vi ikke kalde os, thi Kristus tro vi ligesaa lidt som Luther [...] saa lader os da v&#x00E6;lge et af de mange Navne, hvormed vore kloge M&#x00E6;nds B&#x00F8;ger prale, lader os hede fri Fornuftsv&#x00E6;sner, Verdensborgere, eller allerhelst Jordborgere, thi det vil vi jo v&#x00E6;re, det vilde vi jo gerne blive i al Evighed, hvis det gik an&#x201D; (s. 44 f.). Efter denne passage sl&#x00E5;r Grundtvig om og opfordrer i stedet i en h&#x00F8;jstemt tone til omvendelse og til i <persName key="pe42">Luthers</persName> &#x00E5;nd at k&#x00E6;mpe mod hykleri og vantro (s. 48) trods den spot, man m&#x00E5;tte m&#x00F8;de.</p>
+                   
+                            <p rend="noIndent">Pr&#x00E6;dikenen er i lange passager b&#x00E5;ret af domstale. If&#x00F8;lge <persName key="pe374">Emil Frederiksen</persName> er denne dom over samtiden et hovedmotiv i al Grundtvigs tale og skrift i ungdommen: &#x201C;Vistnok ingen dansk Aand har hamret saa ih&#x00E6;rdigt udholdende l&#x00F8;s paa sin Samtid&#x201D;, skriver han og vurderer, at Grundtvig i Udbypr&#x00E6;dikerne ofte er &#x201C;p&#x00E5; H&#x00F8;jden af sin d&#x00F8;mmende Kraft&#x201D; (<rs type="title" key="title294">1948</rs>, s. 116). Grundtvigs sprogbrug er tilsvarende militant. Idet han l&#x00E5;ner nogle militante udtryk fra Paulus, ser han <persName key="pe42">Luther</persName>, <persName key="pe874">Reinhard</persName> og sig selv som &#x201C;<persName key="pe45">Jesu Kristi</persName> Stridsm&#x00E6;nd&#x201D; (jf. <rs type="bible" key="2 Tim 2,3">2 Tim 2,3</rs>), og han taler flere gange om n&#x00F8;dvendigheden af at anvende &#x2018;Aandens Sv&#x00E6;rd&#x2019;, &#x2018;Troens Skjold&#x2019; og &#x2018;Saligg&#x00F8;relsens Hjelm&#x2019; (<rs type="bible" key="Ef 6,16-17">Ef 6,16-17</rs>). Gud omtales som &#x201C;Herre Zebaoth&#x201D; (h&#x00E6;rskarers herre)<!-- s. 21 -->, og det gudsbillede, der tegnes, er s&#x00E5;ledes et billede af en militant Gud, der optr&#x00E6;der som kriger, h&#x00E6;vner og suver&#x00E6;n konge.</p>
+                        <!--    Frederiksen karakteriserer desuden Udbypr&#x00E6;dikerne som bibelske og pietistiske: Gr. betoner Jesu forsonende offergerning og maner til omvendelse. Udgangspunktet er menneskets afmagt til det gode &#x201C;tordnende Beskrivelse af den menneskelige Syndighed&#x201D; (s. 114) [jf. Bugge: S&#x00E5;dan var hans verdenssyn/eksistenstolkning i denne periode].-->                                 
+                           
+                    </div>
+                
+                    
+                    <div>
+                        <head xml:id="docIn12">Pr&#x00E6;dikestil</head>
+                        
+                        
+                        <p rend="noIndent">Tonen i pr&#x00E6;dikenen er som ovenfor n&#x00E6;vnt varslende og d&#x00F8;mmende. Formen er svarende hertil dramatisk med mange direkte henvendelser til tilh&#x00F8;rerne, retoriske sp&#x00F8;rgsm&#x00E5;l og udr&#x00E5;b. Dette er nu ikke noget s&#x00E6;regent for Grundtvig. Andre pr&#x00E6;dikanter i tiden brugte samme stil. S&#x00E6;rligt er det derimod, at udtrykket hos Grundtvig bliver s&#x00E5; tilspidset polemisk og revsende (<rs type="title" key="title424">Skautrup 1968</rs>, s. 255). Grundtvig bruger desuden mange forst&#x00E6;rkende udtryk som &#x2018;vist nok&#x2019;, &#x2018;visselig&#x2019; og &#x2018;tilvisse&#x2019; for at understrege sin personlige opfattelse og overbevise tilh&#x00F8;rerne om, at han har ret.<!--Han hamrer sine pointer fast-->
+</p>
+                        
+                        <p rend="noIndent">Grundtvig anvender bibelsprog i rigt m&#x00E5;l i pr&#x00E6;dikenen, hvilket var almindeligt i tiden. I alt er der identificeret n&#x00E6;sten 200 bibelhenvisninger og -allusioner i <hi rend="italic">Hvorfor kaldes vi Lutheraner?</hi>. Indimellem best&#x00E5;r lange passager i en argumentation ikke af andet end ophobede bibelcitater (se fx s. 27-28)<!-- 16 citater dynget sammen p&#x00E5; to sider -->. Grundtvig anvender ogs&#x00E5; folkelige ordsprog og vendinger i pr&#x00E6;dikenen. <persName key="pe374">Emil Frederiksen</persName> mener, at Grundtvigs brug af bibel- og folkesprog i Udbytiden viser, at <persName key="pe42">Luther</persName> ikke kun indholdsm&#x00E6;ssigt, men ogs&#x00E5; stilm&#x00E6;ssigt var hans forbillede i denne periode (<rs type="title" key="title294">1948</rs>, s. 120).</p>
+                            <!--Grundtvig l&#x00E6;ste formentlig ikke meget <persName key="pe42">Luther</persName> p&#x00E5; dette tidspunkt, det var <persName key="pe42">Luthers</persName> Gerning og historiske betydning, der foresv&#x00E6;vede ham (jf. andre noter: Det var <persName key="pe42">Luthers</persName> tilgang til teologien og den funktion han havde som reformator, der bet&#x00F8;d noget for Grundtvig mere end det var hans l&#x00E6;re-punkter).</p>-->
+                            
+                        <p rend="noIndent">Et sidste s&#x00E6;rligt tr&#x00E6;k ved pr&#x00E6;dikenen er tiltaleformen &#x201C;I Elskelige&#x201D;. Tiltalen er inspireret af Paulus, jf. <rs type="bible" key="Rom 1,7">Rom 1,7</rs>: &#x201C;Til alle dem som ere i Rom, Guds elskelige&#x201D; (<rs type="title" key="title236"><hi rend="italic">Biblia</hi> 1787</rs>). Anvendelsen af denne formel er typisk for Udby-pr&#x00E6;dikenerne (<rs type="title" key="title294">Frederiksen 1948</rs>, s. 114). Udtrykket m&#x00E5; siges at st&#x00E5; i mods&#x00E6;tning til den d&#x00F8;mmende og irettes&#x00E6;ttende tone, der i &#x00F8;vrigt dominerer pr&#x00E6;dikenen. Dette er sandsynligvis et bevidst valg fra Grundtvigs side, hvormed han &#x00F8;nsker at skille den menighed, der h&#x00F8;rer pr&#x00E6;dikenen, fra &#x2018;de bogl&#x00E6;rde&#x2019;, som angribes.<!--Hvor mange Udbypr&#x00E6;dikener er egentlig blevet publiceret?-->
+</p>
+                        
+                        <p rend="noIndent">Sammenfattende kan man sige, at pr&#x00E6;dikenen i b&#x00E5;de sin revsende tone og deklamatoriske stil minder om dimispr&#x00E6;dikenen fra 1810, blot er sigtet nu udvidet fra Danmark til Tyskland og resten af Europa (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 565).</p>
+                            
+                        <!-- jf b&#x00E5;de 61 og 139com om jordborger - det er negativt ladet hos Gr. -->
+                        
+                     
+                    </div>
+                </div>             
+            </div>
+            
+            <div>
+                <head xml:id="docIn13">Modtagelse</head>
+                <p rend="noIndent">Modtagelsen af pr&#x00E6;dikenen var meget blandet. I de gudelige forsamlinger vakte den positiv opm&#x00E6;rksomhed. Flere udtrykte deres gl&#x00E6;de over at h&#x00F8;re fra en &#x201C;Retskaffen L&#x00E6;rer&#x201D; (se brev fra <persName key="pe1101">Andreas Friis</persName> i <rs type="title" key="title7">
+<hi rend="italic">Breve</hi> 1 1924</rs>, s. 180)<!--findes ogs&#x00E5; i KH samlinger 3. r&#x00E6;kke, II s. 561-->. Ogs&#x00E5; de st&#x00E6;rke jyder var begejstrede. Formanden i Bjerre Herred, <persName key="pe1102">Peder Laursen</persName>, udtrykte i et brev &#x00F8;nske om, at <persName key="pe45">Jesus</persName> ved sit ord og sin hellig&#x00E5;nd ville g&#x00F8;re Grundtvig til &#x201C;Nordens <persName key="pe42">Luther</persName>&#x201D;, der m&#x00E5;tte udrydde &#x201C;det fiine og forkl&#x00E6;dte Pavedom&#x201D;, som herskede blandt pr&#x00E6;sterne (<rs type="title" key="title1913">1877-1880</rs>, s. 560)<!-- KH samlinger 3. rk. II s. 557 f.-->. De vakte var kede af, at den kristne l&#x00E6;re af rationalisterne var blevet reduceret til &#x201C;en hedensk Morale&#x201D;, og de gl&#x00E6;dede sig over, at Grundtvig tonede rent flag som gammeldags, luthersk kristen.</p>
+                <!--l&#x00E6;s resten af indl&#x00E6;gget!-->
+                
+                <p rend="noIndent">En del haugianere, dvs. l&#x00E6;gfolk i den norske kirke, som var tilh&#x00E6;ngere af den kontroversielle v&#x00E6;kkelsespr&#x00E6;dikant <persName key="pe692">Hans Hauge</persName>, var ogs&#x00E5; Grundtvig venligt stemt (<rs type="title" key="title825">Nielsen 1889</rs>, s. 188).</p>
+                
+                <p rend="noIndent">Modtagelsen uden for de vakte kredse var mindre varm. Kirkehistoriker <persName key="pe341">Ludvig Koch</persName> vurderede, at et arbejde som dette var med til at stille Grundtvig endnu mere ensomt, end han stod efter dimis-sagen: &#x201C;Flere og flere vendte sig fra ham og betragtede ham som en fredsforstyrrer og en mand, der i hovmodig stridslyst v&#x00E6;ltede sig ind p&#x00E5; alle og blandede sig i, hvad der ikke kom ham ved&#x201D; (<rs type="title" key="title824">1879-1880</rs>, s. 236).</p>
+                
+                
+                <div>
+                    <head xml:id="docIn14">Modtagelsen i Tyskland</head>
+                    <p rend="firstIndent">I januar 1815 blev pr&#x00E6;dikenen oversat til tysk af <persName key="pe1064">Johann Nicolaus Reuter</persName>
+<!-- DBL og Lexikon der Schleswig-Holstein-Lauenburgischen und Eutinischen ..., Bind 1 oplyser begge, at det er ham. Der kan suppleres i Bibliografien! -->, pr&#x00E6;st i Havetofte i Angel (Sydslesvig). Den fik titlen <rs type="title" key="title1917">
+<hi rend="italic">Warum werden wir Lutheraner genannt? Eine Predigt am Tage aller Heiligen</hi>
+</rs> (<hi rend="italic"><rs key="title35" type="title">Bibliografien</rs>,</hi> nr. 193B). Pr&#x00E6;dikenen udkom i N&#x00FC;rnberg hos boghandler <persName key="pe722">Johann Philipp Raw</persName>, som ogs&#x00E5; havde udgivet Grundtvigs dimispr&#x00E6;diken i 1811, og som i &#x00F8;vrigt var de tyske pietisters forl&#x00E6;gger.</p>
+                        
+                    <p rend="firstIndent">Den tyske udgave indeholdt en fuldst&#x00E6;ndig overs&#x00E6;ttelse af Grundtvigs tekst, hvor digtet dog blev gengivet i urimede strofer. Desuden et indledende afsnit med overskriften &#x201C;Vorbericht des Uebersetzers&#x201D;, hvori overs&#x00E6;tteren tog visse forbehold over for Grundtvigs tekst: &#x201C;Doch mu&#x00DF; ich gestehen, da&#x00DF; ich hier nicht ganz mit dem w&#x00FC;rdigen Verfasser sympathisire&#x201D; (s. [3]; &#x2018;dog m&#x00E5; jeg tilst&#x00E5;, at jeg her ikke sympatiserer fuldt ud med den &#x00E6;rv&#x00E6;rdige forfatter&#x2019;; overs. GV). Overs&#x00E6;tteren gjorde opm&#x00E6;rksom p&#x00E5;, at sandheden og k&#x00E6;rligheden til Guds ord efter hans mening ikke var udd&#x00F8;d med <persName key="pe874">Reinhard</persName>, men at der stadig var mange i kirke og skole, som forkyndte Guds ord til frelse.<!--Over&#x00E6;tteren har v&#x00E6;ret bekymret for, om folk ville tage Grundtvigs anklager ilde op, og fors&#x00F8;ger derfor at glatte ud.-->
+</p>
+                    
+                    <p rend="noIndent">Forfatteren <persName key="pe758">Johan Heinrich Jung-Stilling</persName>, som var en af repr&#x00E6;sentanterne for de gammeldags troende i Tyskland, hilste pr&#x00E6;dikenen velkommen, ligesom han havde gjort med dimispr&#x00E6;dikenen. Han mente, at den var en &#x2018;kernepr&#x00E6;diken&#x2019; og en alvorlig anklage mod den t&#x00E6;nkem&#x00E5;de, der herskede alle vegne (hermed sigtede han formentlig til rationalismen). <persName key="pe758">Jung-Stilling</persName> kom ogs&#x00E5; med en kommentar til dem, der havde kritiseret, at Grundtvig havde blandet sig i debatten i s&#x00E5; ung en alder: &#x201C;wem [Gott] die Lippen ber&#x00FC;hrt hat wie Grundvig <note type="sic"></note>, der darf wohl reden&#x201D; (<rs type="title" key="title2242">Jung-Stilling 1837</rs>, s. 489; &#x2018;den, hvis l&#x00E6;ber [Gud] har ber&#x00F8;rt ligesom Grundtvig, m&#x00E5; vel tale&#x2019;; overs. GV).</p>
+                </div>
+            
+            </div>
+            
+            <div>
+                <head xml:id="docIn15">Pr&#x00E6;dikenens placering i forfatterskabet</head>
+                
+                <p rend="noIndent">Pr&#x00E6;dikenen <hi rend="italic">Hvorfor kaldes vi Lutheraner?</hi> har ikke nogen stor v&#x00E6;gt i forfatterskabet, men er interessant som eksempel p&#x00E5; Grundtvigs pr&#x00E6;dikestil i Udbytiden og siger ogs&#x00E5; noget om hans teologiske st&#x00E5;sted og livssyn p&#x00E5; dette tidspunkt.</p>
+                
+                <p rend="noIndent">Grundtvig vendte gentagne gange tilbage til temaet reformationen og sp&#x00F8;rgsm&#x00E5;let om den lutherske arv i samtiden, bl.a. i allehelgenspr&#x00E6;dikenen fra 1813: &#x201C;Tr&#x00E6;nge vi til en Reformation, som den i Luthers Dage?&#x201D; (trykt i <rs type="title" key="title732">
+<hi rend="italic">Bibelske Pr&#x00E6;dikener</hi> 1816</rs>, <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> nr. 290). If&#x00F8;lge <persName key="pe724">Frederik Nielsen</persName> havde Grundtvig her et &#x00E5;r senere gjort store fremskridt i henseende til pr&#x00E6;dikenens klarhed og kraft (<rs type="title" key="title825">1889</rs>, s. 191). Reformationen og det lutherske behandledes ogs&#x00E5; i verdenskr&#x00F8;nikerne, s&#x00E6;rligt <rs key="title625" type="title">
+<hi rend="italic">Verdens-Kr&#x00F8;niken</hi> 1817</rs>, som i anledningen af 200-&#x00E5;ret for reformationen var helliget &#x201C;det lutherske Tidsrum&#x201D;, jf. undertitlen. Senere, da Grundtvig efter sin magel&#x00F8;se opdagelse i 1825 var blevet mere kritisk over for det lutherske, fremf&#x00F8;rte han i 1831 nye tanker om forholdet til reformationen i en artikelserie kaldet <hi rend="italic">
+<rs type="title" key="title1928">Skal den Lutherske Reformation virkelig forts&#x00E6;ttes?</rs>
+</hi> (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> nr. 491).</p>
+                
+               <p rend="noIndent">
+<!--lav gerne en lidt federe afslutning: evt. runde af med et par ord om det sidstn&#x00E6;vnte v&#x00E6;rk, st&#x00E5;r der m&#x00E5;ske en sammenfatning hos US, se ogs&#x00E5; Michelsen Den s&#x00E6;lsomme forvandling, se s&#x00E6;rligt afsnittet om det lutherske-->
+</p>
+                
+           </div>
+            
+            <div type="litList">
+                <head xml:id="docIn1000">Anvendt litteratur</head>
+                <list type="litList">
+                        
+                        <item>Auken, Sune (1998) <hi rend="italic">
+<rs type="title" key="title1908">Efterm&#x00E6;le. En studie i den danske d&#x00F8;dedigtning fra Anders Arrebo til S&#x00F8;ren Ulrik Thomsen</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item>Bugge, Knud Eyvin (1965) <hi rend="italic">
+<rs type="title" key="title445">Skolen for Livet. Studier over N.F.S. Grundtvigs p&#x00E6;dagogiske tanker</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item>B&#x00F6;ttiger, C.A. (1813) <hi rend="italic">
+<rs type="title" key="title1907">D. Franz Volkmar Reinhard, gemalt von Georg von Charpentier</rs>.</hi> Dresden</item>
+                                              
+                        <item>Dam, Poul (1992) <rs type="title" key="title1930">
+<hi rend="italic">Grundtvig-tekster i Sangb&#x00F8;gerne med s&#x00E6;rligt henblik p&#x00E5; h&#x00F8;jskolesangen. En bibliografisk oversigt.</hi>
+</rs> K&#x00F8;benhavn</item>
+                        
+                        <item>Frederiksen, Emil (1948) &#x201C;Grundtvigs Udby-Pr&#x00E6;dikener&#x201D; i <hi rend="italic">
+<rs type="title" key="title294">Den unge Grundtvig og andre Essays</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <!--Denne er i breve 1: <item>Friis, Andreas (1813) [Brev til Grundtvig af 28. august] s, s. 561</item>-->
+                        
+                        <item>Grundtvig, N.F.S. (1812) <hi rend="italic">
+<rs type="title" key="title629">Kort Begreb af Verdens Kr&#x00F8;nike i Sammenh&#x00E6;ng</rs>.</hi> K&#x00F8;benhavn</item>
+                                              
+                        <item>Grundtvig, N.F.S. (1815) <hi rend="italic">
+<rs type="title" key="title1917">Warum werden wir Lutheraner genannt? Eine Predigt am Tage aller Heiligen</rs>.</hi> N&#x00FC;rnberg</item>
+                        
+                        <item>Grundtvig, N.F.S. (1883) <hi rend="italic">
+<rs type="title" key="title732">Bibelske Pr&#x00E6;dikener efter Tidens Tarv og Leilighed</rs>,</hi> 2. udgave med till&#x00E6;g, udg. af C.J. Brandt. K&#x00F8;benhavn [1816]</item>
+                        
+                        <item>Jung-Stilling, Johann Heinrich (1837) <hi rend="italic">
+<rs type="title" key="title2242">Johann Heinrich Jung's, genannt Stilling, s&#x00E4;mmtliche Schriften</rs>,</hi> bind 8. Stuttgart</item>
+                        
+                        <item>Koch, Ludvig (1879-1980) <hi rend="italic">
+<rs type="title" key="title824">Den Danske Kirkes Historie i &#x00C5;rene 1801-1817</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                     <item>K&#x00F8;ster, Kristian (1875) <rs type="title" key="title579"><hi rend="italic">Til Minde om Povel Dons, Grundtvigs og Ingemanns Ungdoms-Ven. Et efterladt Arbejde</hi></rs>, udg. af Ludvig Schr&#x00F8;der. K&#x00F8;benhavn</item>
+                        
+                        <item>Laursen, Peder m.fl. (1877-1880) <rs type="title" key="title1913">[Brev til Grundtvig fra august 1813]</rs> trykt i <hi rend="italic">
+<rs type="title" key="title190">Kirkehistoriske Samlinger</rs>,</hi> 3. r&#x00E6;kke, bind 2, udg. af Selskabet for Danmarks Kirkehistorie ved Holger Fr. R&#x00F8;rdam. K&#x00F8;benhavn</item>
+                        
+                        <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+                        
+                        <!--<item>Michelsen, William (1956) <hi rend="italic"><rs type="title" key="title481">Den s&#x00E6;lsomme forvandling i N.F.S. Grundtvigs Liv. Studier over Tilblivelsen af Grundtvigs historiesyn</rs>.</hi> Skrifter udgivet af Grundtvig-selskabet IX. K&#x00F8;benhavn</item>-->
+                        
+                        <item>Nielsen, Frederik (1889) <hi rend="italic">
+<rs type="title" key="title825">N.F.S. Grundtvigs religi&#x00F8;se Udvikling. Et Mindeskrift</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item>P&#x00F6;litz, Karl Heinrich Ludwig (1815) <hi rend="italic">
+<rs type="title" key="title1900">D. Franz Volkmar Reinhard nach seinem Leben und Wirken dargestellt</rs>.</hi> Leipzig &amp; Altenburg</item>
+                        
+                        <item>R&#x00F6;nning, Frederik (1907-1914) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>
+                        
+                        <item>Schott, Christian-Erdmann (1978) <hi rend="italic">
+<rs type="title" key="title1919">M&#x00F6;glichkeiten und Grenzen der Aufkl&#x00E4;rungspredigt. Dargestellt am Beispeil Franz Volkmar Reinhards</rs>,</hi> Arbeiten zur Pastoraltheologie 16. G&#x00F6;ttingen</item>
+                        
+                    <item>Skautrup, Peter (1968) <hi rend="italic">
+<rs type="title" key="title424">Det danske Sprogs Historie</rs>,</hi> 2. oplag, bind 3. K&#x00F8;benhavn [1953]</item>
+                       
+                        
+                        <!--  ANDET LITT. FRA 139 INTRO
+                        <item>Begtrup, Holger (1899) <hi rend="italic"><rs type="title" key="title373">N.F.S. Grundtvigs kristelige opv&#x00E6;kkelse. I vinteren 1810-11</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item><hi rend="italic">Bibliografien,</hi> se <persName key="pe76">Johansen, Steen</persName> (1948-1954)</item>
+                        
+                        <item><persName key="pe384">Bugge, Knud Eyvin</persName> (1965) <hi rend ="italic"><rs type="title" key="title445">Skolen for Livet. Studier over N.F.S. Grundtvigs p&#x00E6;dagogiske tanker.</rs></hi> K&#x00F8;benhavn</item>
+                        
+                        <item><persName key="pe374">Frederiksen, Emil</persName> (1948) <hi rend="italic"><rs type="title" key="title294">Den unge Grundtvig og andre essays</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item>Grundtvig, N.F.S. (1807) <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title126">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</rs>,</hi> februar 1807, s. 129-201. K&#x00F8;benhavn</item>
+                        
+                        <item>Grundtvig, N.F.S. (1809) <rs type="title" key="title834">&#x201C;Julefesten&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title538">Nyeste Skilderie af Kj&#x00F8;benhavn</rs></hi> 7. &#x00E5;rg., nr. 24, sp. 383-384. K&#x00F8;benhavn</item>    
+                        
+                        <item>Grundtvig, N.F.S. (1816) <hi rend="italic"><rs type="title" key="title732">Bibelske Pr&#x00E6;dikener efter Tidens Tarv og Leilighed</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item>Grundtvig, N.F.S. (1866) <hi rend="italic"><rs type="title" key="title819">Om Religions-Frihed. Tredie og sidste Stykke</rs>.</hi> K&#x00F8;benhavn &#x005B;1827&#x005D;</item>
+                        
+                        <item>Grundtvig, N.F.S. et al. (1848) <hi rend="italic"><rs type="title" key="title706">Grundtvigs Erindringer og Erindringer om Grundtvig</rs>,</hi> i udvalg ved <persName key="pe76">Steen Johansen</persName> og <persName key="pe372">Henning H&#x00F8;irup</persName>. K&#x00F8;benhavn</item>
+                            
+                        <item><persName key="pe84">Helveg, Ludvig</persName> (1855) <hi rend="italic"><rs type="title" key="title822">Den Danske Kirkes Historie efter Reformationen</rs>,</hi> bind 2. K&#x00F8;benhavn</item>
+                        
+                        <item><persName key="pe372">H&#x00F8;irup, Henning</persName> (1949) <hi rend="italic"><rs type="title" key="title520">Grundtvigs syn paa tro og erkendelse. Modsigelsens Grunds&#x00E6;tning som teologisk aksiom hos Grundtvig</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item><persName key="pe76">Johansen, Steen</persName> (1948-1954) <hi rend="italic"><rs type="title" key="title35">Bibliografi over <persName key="pe4">N.F.S. Grundtvigs</persName> skrifter</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>           
+                                                
+                        <item><persName key="pe341">Koch, Ludvig</persName> (1879-80) <hi rend="italic"><rs type="title" key="title824">Den Danske Kirkes Historie i &#x00C5;rene 1801-1817</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item><persName key="pe644">Lehmann, Edvard</persName> (1929) <hi rend="italic"><rs type="title" key="title640">Grundtvig</rs>.</hi> K&#x00F8;benhavn-Oslo</item>
+                        
+                        <item><persName key="pe724">Nielsen, Frederik</persName> (1889) <hi rend="italic"><rs type="title" key="title825">N.F.S. Grundtvigs religi&#x00F8;se Udvikling. Et Mindeskrift</rs>.</hi> K&#x00F8;benhavn</item>
+                        
+                        <item><persName key="pe65">R&#x00F6;nning, Frederik</persName> (1907-1914) <hi rend="italic"><rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>
+                                                
+                        <item><persName key="pe344">Skautrup, Peter</persName> (1968) <hi rend="italic"><rs type="title" key="title424">Det danske Sprogs Historie</rs>, bind 3.</hi> K&#x00F8;benhavn</item>
+                        
+                        -->
+                        
+                        <!-- ANDET LITT: FRA COM:
+                    <list type="ordered">
+                        <item>Bang, A. Chr. (1893) <hi rend="italic"><rs type="title" key="title">Dokumenter og studier vedr&#x00F8;rende Den lutherske katekismus' historie i Nordens kirker</rs>,</hi> bind 1. Christiania.</item>
+                        
+                        <item>(1992) <hi rend="italic"><rs type="title" key="title235">Bibelen. Den hellige Skrifts kanoniske B&#x00F8;ger. Autoriseret af Hendes Majest&#x00E6;t Dronning Margrethe II</rs>,</hi> udg. af Det Danske Bibelselskab. K&#x00F8;benhavn.</item>
+                        
+                        <item>(1787) <hi rend="italic"><rs type="title" key="title236">Biblia, Det er Den ganske Hell. Skriftes B&#x00F8;ger, Ved Hans Kongl. Majests. Vor allernaadigste Arve-Herres Kong Christian Den Syvendes Christelige Omsorg, med Fliid og efter Grund-Texten efterseete og rettede? saa og med mange Paralleler og udf&#x00F8;rlige Summarier forsynede</rs>,</hi> 13. opl. K&#x00F8;benhavn.</item>
+                        
+                        <item>
+                            <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> se Johansen, Steen (1948-1954).</item>
+                        
+                        <item>Brecht, Martin (1987) <rs type="title" key="title"><hi rend="italic">Martin Luther,</hi></rs> bind 3: <rs type="title" key="title">&#x201C;Die Erhaltung der Kirche 1532-1546&#x201D;</rs>. Stutgartt.</item>
+                        
+                        <item>Bondesen, N.W.T. (1874) <hi rend="italic"><rs type="title" key="title">Minde om Nikolai Frederik Severin Grundtvigs Pr&#x00E6;stegejerning i Aaret 1821</rs>.</hi> K&#x00F8;benhavn.</item>
+                        
+                        
+                        
+                        <item>
+                            (1985) <hi rend="italic"><rs type="title" key="title1185">Danmarks og Norgis Kirke-Ritual 1685-1985</rs>,</hi> genudgivet af Udvalget for Konvent for Kirke og Theologi. U.st. [1685]</item>
+                        
+                        <item>Holmquist, Hjalmar et al. (1992) <hi rend="italic"><rs key="title" type="title">Kirkehistorie</rs>,</hi> bind 2: <rs type="title" key="title">&#x201C;Den nyere Tid&#x201D;</rs>. K&#x00F8;benhavn [1949].</item>
+                        
+                        <item>
+                            Johansen, Steen (1948-1954) <rs type="title" key="title35"><hi rend="italic">Bibliografi over N.F.S. Grundtvigs Skrifter,</hi></rs> bind 1. K&#x00F8;benhavn.</item>
+                        
+                                                 
+                        -->                        
+                    </list>
+            </div>
+            
+            <div>
+                <head xml:id="docIn2000">Anvendt webside</head>
+                <list type="webList">
+                    <item n="2012-12-07" target="http://www.deutsche-biographie.de">www.deutsche-biographie.de</item>
+                </list>
+            </div>
+            
+            <!-- R&#x00E5; klip fra VK 1812 s. 299 f.<header>299</header>
+<p>
+tes Sammenh&#x00E6;ng Kun de Hovmodigste af<lb />
+denne Skole, som digtede iste??enfor at granske,<lb />
+maatte i det: Enkelte blive til Latter, og i deres<lb />
+Vurdering af M&#x00E6;nd og Tider, is&#x00E6;r as de f&#x00F8;r-<lb />
+ste, maatte de Alle tit fare vild, fordi Kraft<lb />
+kan v&#x00E6;re forenet med et Dj&#x00E6;vlesind, og Kraft<lb />
+er deres Gud, dens Y??ring Moralitet. Hvil-<lb />
+ken Skikkelse Kr&#x00F8;niken under saa ??anne M&#x00E6;nds<lb />
+Haand, som tillige havde historisk Kundskab,<lb />
+maatte faae, seer Man i Voltmanns Reforma-<lb />
+tions historie og maaske allerbedst i Friederich<lb />
+Schlegels Forel&#x00E6;sninaer over den nyere Histo-<lb />
+rie, hvor Naturfilosofiens gode og flotte Si-<lb />
+der komme til yne. Denne Visdom havde en-<lb />
+stund sit Tempel i Heidelberg, uren har nu fl&#x00F8;t-<lb />
+tet det ril Berlin, hvor en ny H&#x00F8;istole er stif-<lb />
+tet, og den synes snart ar ville saae Herred&#x00F8;m<lb />
+<keyword>
+1809<lb />
+</keyword>
+met i Tydskland, som da ei Heller er underligt;<lb />
+thi enhver t&#x00E6;nksom Ukristen som vil v&#x00E6;re enig<lb />
+med sig selv, maa blive Pantheist, og Natur-<lb />
+filosofien er Pantheismens n&#x00F8;dvendige Ekikkel-<lb />
+se i vore Dage. Den l&#x00E6;mper sig efter alle<lb />
+Mennefkets Tilb&#x00F8;ieligheder og maa derfor bli-<lb />
+ve almindelig mellem de Bogl&#x00E6;rde i hele Eu-<lb />
+ropa, hvis Kristendommen ei uddriver den som<lb />
+en ureen Aand Venteligt er dette ikke i Tydsk-<lb />
+land, thi saa ere de M&#x00E6;nd som med Fynd tale<lb />
+redelig Religionens Sag: en Reinhard og Stol-<lb />
+berg staa som Mindesm&#x00E6;rker om det henrundne<lb />
+Tidsrum, ei som Forl&#x00F8;bere for er nyt. Det<lb />
+er som om Guds &#x00D8;ie endnu med synderlig K&#x00E6;r-<lb />
+lighed hvilede paa Reformationens Vugge
+</p>
+
+<pb n="336" />
+<header>300</header>
+<p>
+hvor Luthers Been end hvile, thi under det<lb />
+<keyword>
+F&#x00F8;dt 1753.<lb />
+</keyword>
+hele Bulder har Reinhard som en Kerubim<lb />
+vogtet Hans Grav, og gl&#x00E6;det Hans Skygge med<lb />
+kristelig Tale. Den selvkloge Skare har ei<lb />
+kunnet noksom undres over, at en, i andre Dele,<lb />
+saa oplyst Mand ei vilde stamme sig ved Men-<lb />
+neskens Son, men spilde sin L&#x00E6;rdom og Vel-<lb />
+talenhed paa Hans Forgudelse, istedenfor at<lb />
+bruge dem til sin egen, og, efter lang Grublen,<lb />
+udfandt de at det maatte vare Hykleri, hvor-<lb />
+ved den forunderlige Mand vilde vinde sin Tids-<lb />
+alders Spot. Saa gl&#x00E6;deligt det imidlertid er,<lb />
+at see den G&#x00E6;ve, som ved redelig Grublen og<lb />
+and&#x00E6;gtig Bon overvandt de svare Tvivl han<lb />
+delte med sin Tid, og ihvorvel Ligheden mellem<lb />
+hans og Tidens Tankegang udenfor de egenlige<lb />
+Troesartikle netop har vakt den store Forun-<lb />
+dring, er denne Lighed dog f&#x00F8;rgelig, fordi den<lb />
+deviser at Hans Tydelighed i det Enkelte ei er<lb />
+blevet Klarhed i det Hele og de Vantro kan<lb />
+med F&#x00F8;ie bebreide ham, ar han ei er enig med<lb />
+sig selv. Saa er det med de fleste Kristne nu-<lb />
+omtide, Hjertets Trang og L&#x00E6;ngsel har drevet<lb />
+
+dem til Kristus, men Forstanden er i Tidens<lb />
+Vold, det seer Man, naar de domme om Li-<lb />
+vets Sysler, om videnskabelige og s&#x00E6;delige<lb />
+Ting; deres hele Tankegang er ei blevet kriste-<lb />
+lig, men det maa den vare hos de M&#x00E6;nd, som<lb />
+med Held skal str&#x00E6;de at omstemme Tidens To-<lb />
+ne. Stolberg er det til dels ligedan med, men<lb />
+hvad end er v&#x00E6;rre, han er overgangen til den<lb />
+katolske Kirke. Det tykkes ubegribeligt hvad
+</p>
+
+<pb n="337" />
+<header>301</header>
+<p>
+en Mand vilde der, i hvis magel&#x00F8;se Udsigt over<lb />
+de hellige Skrifter, et saa reent Sindelag. En<lb />
+saa levende Tro og inderlig K&#x00E6;rlighed speiler<lb />
+sig; thi hvor lunken end Luthers Menighed er<lb />
+vorden, beh&#x00F8;ver en Kristen dog ei at afsondre<lb />
+sig, den rette Andagt tr&#x00E6;nger ei til konstig Pir-<lb />
+ring, den rette Gudsfrygt ei til Munkesellen,<lb />
+Fastedage eller Kirkens Asiad, og us&#x00F8;mmeligt<lb />
+er det at bare Menneskebuds tunge Aag tilli-<lb />
+gemed Kristi, son, om dette ei var gavnligt nok<lb />
+til Saltghed. Udentvivl er den Gase blevet<lb />
+forsagt i den tunge Strid mellem Sandhed og<lb />
+Vildfarelse og har givet sig under Kirkens Myn-<lb />
+dighed for at vinde Ro. Adskillige ere Naade-<lb />
+gaverne og Ingen d&#x00F8;mme en Broders Tanker,<lb />
+vist maa det synes, at Stolberg som Prote-<lb />
+stant vilde udrettet langt Mere til Guds Kir-<lb />
+kes Bedste, og dog vilde Man i denne Dom<lb />
+udentvivl tage Feil.
+</p> -->
+            <!-- R&#x00E5; klip fra VK 1812 s. 299 f.<header>400</header>
+<p>
+der un Hjertensmening, da har jeg neppe feilet<lb />
+stort, hvis ikke, da har han i dem selv f&#x00E6;ldet<lb />
+sin Dom, naar han siger: t&#x00F8;r vi ikke v&#x00E6;e aa-<lb />
+benhjertige og sige Alt hvad vi men&#x00E9;, saa skal<lb />
+vi dog v&#x00E6;re oprigtige: men&#x00E9; hvad vi sige. Det<lb />
+Ud&#x00F8;deligheoshaab, han vilde bygge paa N&#x00F8;d-<lb />
+Vendigheden af kovens Opsyloelse, er,ude For-<lb />
+sonmg, det frygteligste af Alt; thi fremsiilles<lb />
+Beviset rett.lig, da maa det hede: stden Loven<lb />
+ikke opsyldes her, maa den opfyldes hisset, det<lb />
+er, siden vi ikke opfylde dens Fordringer, maa<lb />
+dens Trudsler hisset opfyldes paa os. Det er<lb />
+det Gamme som Skriften siger: forbandet er<lb />
+den, som ikke opfylder alle de Ting, der staa<lb />
+skredne i Lovens Bog.
+</p>
+<p>
+Side 294. Fremstillingen af Fichtes Hovedl&#x00E6;r-<lb />
+dom er is&#x00E6;r gjort efter hans Anvisning til et<lb />
+saligt Liv, hvor han selv angiver sin Menings<lb />
+Forhold til Kristendommen.
+</p>
+<p>
+Side 299. Han er da hensovet den g&#x00E6;ve Jesu<lb />
+Kristi Tjener: Frands Volkmar Reinhard, han<lb />
+har siridt den gode Strid, fulokommet Lobet og<lb />
+bevaret Troen, derfor skinner nu &#x00C6;rens Kro-<lb />
+ne paa Hans Hoved. Hvad han har udrettet<lb />
+ved Tale og Skrift og ved sin Indflydelse paa den<lb />
+sachsiste Regering til at d&#x00E6;mme mod Vanrro og<lb />
+Bespottelke, det veed kun Gud, men h&#x00E6;verlig<lb />
+skal han ihukommes, saal&#x00E6;nge der er Kristen-<lb />
+dom i Europa. Ved Hans Grav maa vi, dybt<lb />
+bev&#x00E6;gede, stge med Profeten (Es 8) Den Retf&#x00E6;r-<lb />
+dige.d&#x00F8;er, og der er Ingen som l&#x00E6;gger det paa<lb />
+Hjerte, de Fromme gaa hjem, og der er Ingen
+</p>
+
+<pb n="437" />
+<header>401</header>
+<p>
+som bet&#x00E6;nker, at de indsamles for Uveiret,<lb />
+de som vandre for Hans Ansigt, forsamles til<lb />
+Fred og hvile sig i deres Sovekamre. Ogsaa<lb />
+han har nu fundet Ly under Guds Vinger og<lb />
+er udfriet fra den store Fristelse, som skal kom-<lb />
+me over Jorderige; Herren forsamle til Ham<lb />
+alle sine B&#x00F8;rn, som ei kan taale Synet af &#x00D8;de-<lb />
+l&#x00E6;ggelsens Vederstyggelighed. Vaager og be-<lb />
+der at J eiskulle falde i Frisielsen !
+</p> -->
+            
+            
+        </body>
+</text>
+</TEI>

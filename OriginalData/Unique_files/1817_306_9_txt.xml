@@ -1,0 +1,642 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/access.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+        <title rend="part">Første Riimbrev. Til Bernhard Ingemann</title>
+        <title rend="shortForm">Første Riimbrev</title>
+        <author>Nicolai Frederik Severin Grundtvig</author>
+        <editor role="philologist">Kim Steen Ravn</editor>
+        <editor role="student1">Anna Poulsen</editor>
+        <editor role="student2">Kirsten Vad</editor>
+     </titleStmt>
+       <editionStmt>
+          <edition>
+             <idno type="firstUpload">1.8</idno>
+             <idno type="content">1.9</idno>
+             <idno type="technic">1.9.1</idno>
+          </edition>
+       </editionStmt>
+       <extent>32 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2016-11-01">www.grundtvigsværker.dk, version 1.9, 1. november 2016</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>1817-03-03</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1817_306_9_txt.xml" type="txt">Læsetekst</note>
+            <note target="1817_306_9_com.xml" type="com">Punktkommentar</note>
+            <note target="1817_304_intro.xml" type="intro">Indledning</note>
+            <note target="1817_306_9_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="306">
+        <desc>Førstetrykket</desc>
+        <num>1817</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>4</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>rimbreve</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>litteratur</term>
+       <term>æstetik</term>
+       <term>polemik</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+       <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+       <change xml:id="AP" who="AP" when="2012-05-14">1. kollationering påbegyndt  (eks. Aarhusianer Samfundet)</change>
+       <change who="KSR" when="2015-08-10">1. koll. færdig (eks. Aarhusianer Samfundet), pb-elemeter fra A og PS, 4 tekstrettelser</change>
+       <change who="KSR" when="2015-08-17">rettelser fra anden koll. (KV) indført</change>
+       <change who="KSR" when="2015-10-22">nyt filnavn</change>
+       <change who="KSR" when="2015-11-05">tom genremenu; koll. fra HD</change>
+       <change who="KSR" when="2015-12-02">tekstkritik i xml-filen</change>
+       <change who="KSR" when="2016-01-12">red.</change>
+       <change who="KSR" when="2016-01-22">lemmatisering</change>
+       <change who="KSR" when="2016-02-24">VTHs red. indf.</change>
+       <change who="KSR" when="2016-02-26">red. indf.</change>
+       <change who="KSR" when="2016-02-29">com24 og 25 udgår; Poslk og Norsk</change>
+       <change who="KSR" when="2016-04-12">3. koll.; ex 3</change>
+       <change who="KSR" when="2016-05-03">fax.nr. rettet</change>
+       <change who="KSR" when="2016-07-15">red.</change>
+       <change who="KSR" when="2016-09-19">FLNs red. indført</change>
+       <change who="KSR" when="2016-10-18">KNs red. indført</change>
+       <change who="KSR" when="2016-10-20">KVs red. tekstkritik</change>
+       <change who="KSR" when="2016-11-14">txr</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt"> 
+      
+      <body>
+         
+         <div type="[Tekst]">
+            
+            <pb type="text" ed="A" n="100" facs="1817_306_9_fax1.jpg"/>
+            <pb type="edition" ed="PS" n="370"/>
+            
+            <head rend="1">Første Riimbrev.</head>
+            
+            <head rend="0">Til <persName key="pe138">Bernhard Ingemann</persName>.</head>
+            
+            <fw type="shortLine"/>
+            
+            <lg n="1">
+               <l rend="firstIndent"><hi rend="size-1">God Dag, Rasmus Jæn med din Kofte!</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Skal vi nu her mødes paa <seg type="com" n="com300">Tofte</seg>!</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Hans Jæn har en Datter, hedder Ludse,</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">See til, at du hende kan <seg type="com" n="com301">pudse</seg>!</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Der skal du finde Penge,</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Og Senge</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Som vel opredte ere</hi></l>
+               <l rend="firstIndent"><hi rend="size-1">Med skiønne Gaasefjere.</hi></l>
+               <l rend="right"><hi rend="size-1"><seg type="com" n="com2">Drenge-Lirum-Larum</seg>.</hi></l>
+            </lg>
+            
+            <graphic style="shortLine"/>
+            
+            <lg n="2">
+               <l><pb type="edition" ed="PS" n="371"/><hi rend="initial">G</hi>od Dag, min Ven! det er en grumme Taage</l>
+               <l>I denne samme gode Nyaarstid,</l>
+               <l>Og til i den at skille Mænd fra Poge,</l>
+               <l><pb type="text" ed="A" n="101" facs="1817_306_9_fax2.jpg"/>Udkræves mere end <rs type="title" key="title3369">Athenes</rs> Vid,</l>
+               <l>Meer end <persName key="pe89">Peer Hjorts</persName> <rs type="title" key="title4439">Logik</rs>, og alle Briller,</l>
+               <l>Hvordan man saa paa Næsen dem end stiller,</l>
+               <l>Kort sagt, der <seg type="com" n="com302">vil</seg></l>
+               <l><seg type="com" n="com3">Min Sanden</seg> Øine til.</l>
+               <l>Nu veed jeg nok, man siger for det meste</l>
+               <l>At om ei alle, dog de allerfleste,</l>
+               <l><seg type="com" n="com100">Har Øine nok, og sagtens fleer end Præsten</seg>,</l>
+               <l>Og, sandt at sige, troer jeg ogsaa næsten,</l>
+               <l>At mange Folk har Øine meer end nok;</l>
+               <l>Thi for den Troe jeg har en Skok</l>
+               <l>Af <seg type="com" n="com4">Syn for Sagn</seg> og sunde</l>
+               <l>Tilstrækkelige Grunde.</l>
+               <l><hi rend="romanType"><seg type="com" n="com5">Pro primo</seg>,</hi> om jeg end tør mene,</l>
+               <l>Trods <seg type="com" n="com102">Gall</seg>, at man kan se med to,</l>
+               <l>Saa har jeg dog den fulde, faste Tro,</l>
+               <l>De fleste se kun med det ene,</l>
+               <l>Og mange, naar Alt kom til Alt,</l>
+               <l>Kun med et halvt.</l>
+               <l>Dernæst man daglig seer paa Gaden,</l>
+               <l>At aldrig før var Hoved-Staden</l>
+               <l>Saa vel <seg type="com" n="com6">beøiet</seg>, fuld af Øine,</l>
+               <l>Som netop i de sidste <seg type="com" n="com106">Døgne</seg>,</l>
+               <l>Da man er ordenlig forlegen med</l>
+               <l>De mange Øine paa urette <seg type="com" n="com7">Stæd</seg>,</l>
+               <l>Da under fire Øine snakker</l>
+               <l><pb type="text" ed="A" n="102" facs="1817_306_9_fax3.jpg"/>Nu med sig selv <seg type="com" n="com500">fast</seg> hver <seg type="com" n="com8">Pisvakker</seg>,</l>
+               <l>Og seer sig dobbelt i <rs type="title" key="title3369">Athenes</rs> Vand,</l>
+               <l>Ja seer, hvad der gaaer over min Forstand,</l>
+               <l>Deri Gudinden for den gyldne Tid,</l>
+               <l>Og i sig selv Genie, Forstand og Vid.</l>
+               <l><pb type="edition" ed="PS" n="372"/>Men desuagtet, seer jeg ret,</l>
+               <l>Da see <seg type="com" n="com9">Pisvakkerne</seg> kun slet,</l>
+               <l>Og, forsaavidt som jeg forstaaer,</l>
+               <l>Med Øine som med Been det gaaer:</l>
+               <l>Et halvt er <seg type="com" n="com10">fast</seg> saa godt som ingen Ting,</l>
+               <l>Og med et heelt man giør ei store Spring,</l>
+               <l>Selv med halvandet man kun daarlig vralter,</l>
+               <l>Med eet, titolvte Deel endnu man halter,</l>
+               <l>Og hele to er netop ret tilpas,</l>
+               <l>Paa Fire bedst gaae Mikkel, Mette, Mads.</l>
+               <l><seg type="com" n="com551">At sige</seg>, naar man Ræv og Buk og Faar,</l>
+               <l>Ved dem forstaaer,</l>
+               <l>Men jeg kan aldrig andet troe,</l>
+               <l>End Mennesker gaae bedst paa To,</l>
+               <l>Og ta'r man Næsen til det <seg type="com" n="com11">tredde</seg> Been</l>
+               <l>Blir Gangen langsom og ei ganske reen.</l>
+               <l>Vel, om man skal et Ordsprog troe,</l>
+               <l><seg type="com" n="com12">See fire Øine meer end to</seg>.</l>
+               <l>Men, hvad man her maa tælle med,</l>
+               <l>Er Øine paa det rette Sted,</l>
+               <l>I Hovedet og ei paa Næsen,</l>
+               <l><pb type="text" ed="A" n="103" facs="1817_306_9_fax4.jpg"/>Og vore Dages Brille-Væsen</l>
+               <l>Giør Næsen til det <seg type="com" n="com501">tredde</seg> Øie,</l>
+               <l>Saa man, som sagt, har ingen Føie,</l>
+               <l>Til sig det Ordsprog at tilegne,</l>
+               <l><seg type="com" n="com13">Der mellem Øine vil ei Næsen regne</seg>.</l>
+            </lg>
+            
+            <lg n="3">
+               <l>Altsaa, min Ven! da ikke nøie,</l>
+               <l>Man seer kun med det halve Øie,</l>
+               <l>Og endnu mindre <seg type="com" n="com502">grandt</seg> med Næsen,</l>
+               <l>Trods alt det tydske Brille-Væsen,</l>
+               <l>Og da vi har den slemme Taage,</l>
+               <l>Saa skal man ikke undres <seg type="com" n="com14">paa</seg>,</l>
+               <l>At ei de Fleste, men kun saare faa,</l>
+               <l>Kan rigtig skille Mænd fra Poge,</l>
+               <l><pb type="edition" ed="PS" n="373"/>Og hvem kan vente at de bitte smaa,</l>
+               <l>Om hvem man aldrig har udfundet,</l>
+               <l>Hvormange der vel gaae paa Pundet,</l>
+               <l>Nu skulde være iblandt disse Faa!</l>
+               <l>Naar ei de titte under Øie-Laaget,</l>
+               <l>De gloe i Veiret, som de gaae i Taaget,</l>
+               <l>Og hvor de <app type="corrNote" select="yes"><lem wit="GV">ingen</lem><rdg wit="A">inger</rdg><witDetail wit="A" n="20" rend="ft"><note corresp="PS" n="373">ingen</note>aflæggerfejl? læsemåde giver ingen mening med 'r'; den rettes til ingen.</witDetail></app> <seg type="com" n="com15">Mester Erik</seg> finde,</l>
+               <l>Der synes de, er heller ingen Mand,</l>
+               <l>De gaae paa Jagt, ei efter Ræv og Ravn,</l>
+               <l>Men efter <seg type="com" n="com108">Vittighed</seg> og <seg type="com" n="com16">Skyttenavn</seg>.</l>
+               <l>De Buer har, som de af en Veninde:</l>
+               <l>Af deres Amme fik paa Markedet i Fjor,</l>
+               <l><pb type="text" ed="A" n="104" facs="1817_306_9_fax5.jpg"/>Og Pilene er lutter Pølse-Pinde,</l>
+               <l>Til Harerne paa deres Dukkebord.</l>
+               <l>En <seg type="com" n="com18">Hylle-Bøsse</seg> er det andet Vaaben,</l>
+               <l>En Prop i Enden og lidt Blaar om Pinden,</l>
+               <l>Og Vand af Bækken, det gaaer rask med Vinden,</l>
+               <l>Til en Forandring er <seg type="com" n="com109">og</seg> Bøssen aaben,</l>
+               <l>Saa gaaer det feiende med lutter Kugler</l>
+               <l>Af Blaar, Papir og Haar af gamle Ugler,</l>
+               <l><seg type="com" n="com110">Imellem</seg> ogsaa af det skiære Sand,</l>
+               <l>Som de i Spyt med Gammen ælte,</l>
+               <l>Og skyde saa til Maals som Helte,</l>
+               <l>Helst paa det Brede og det Bløde,</l>
+               <l>Det rammes bedst, og det er ingen Fare,</l>
+               <l>Som er det vigtigste, naar Skytten selv er Hare,</l>
+               <l>Saa løfter strunk sig paa sin Taa,</l>
+               <l>Den <seg type="com" n="com21">Dukkemand</seg> i <placeName key="fak2005">Aabenraa</placeName>,</l>
+               <l>Og skyder løs saa godt han kan,</l>
+               <l>Paa hvad han kalder ingen Mand,</l>
+               <l>Og <seg type="com" n="com22">Tofte-Gaasen</seg> <seg type="com" n="com303">kiækker</seg> efter</l>
+               <l><hi rend="spaced">Hans ingen Mand</hi> af alle Kræfter.</l>
+               <l><pb type="edition" ed="PS" n="374"/>Lad dem skyde, snadre, kiække,</l>
+               <l>Op ad Stolper ned ad Vægge,</l>
+               <l>Raabe, hvad du vidste længe,</l>
+               <l>Du er ingen Mand for Drenge!</l>
+               <l>Ei for <seg type="com" n="com23">Kiepperygge-Dands</seg>,</l>
+               <l>Polsk og Norsk med kaade Drenge,</l>
+               <l><pb type="text" ed="A" n="105" facs="1817_306_9_fax6.jpg"/>Kun for Dands med Chor i Enge,</l>
+               <l><seg type="com" n="com111">Fikst</seg> du Øie, Sind og <seg type="com" n="com112">Sands</seg>.</l>
+               <l><seg type="com" n="com26">Urte-Koste</seg> <seg type="com" n="com27">kanst</seg> du binde,</l>
+               <l>Men om andre her det giælder:</l>
+               <l>Riis af <seg type="com" n="com304">Slaan</seg> og Birk og Nælder,</l>
+               <l>Naar en Dreng sin Mand skal finde.</l>
+               <l>Mand <seg type="com" n="com29">est</seg> du, men Digterinde</l>
+               <l>Musen er i <app type="corrNote" select="yes"><lem wit="GV">Hjertet</lem><rdg wit="A">Hjettet</rdg><witDetail wit="A" n="8" rend="ft"><note corresp="PS" n="374">Hjærtet</note>'t' i stedet for 'r'; rettes til Hjertet.</witDetail></app> inde;</l>
+               <l>Mand er jeg, har ingen Muse,</l>
+               <l>Som en Inderst kun til Huse,</l>
+               <l>Sidder jeg i <rs type="myth" key="myth8">Brages</rs> <seg type="com" n="com30">Hald</seg>,</l>
+               <l>Men for Drenge er jeg Skjald,</l>
+               <l>Mand og Skjald og Skolemester,</l>
+               <l>Send kun mig de Snylte-Giæster!</l>
+               <l>Jeg dem skal paa dine Vegne,</l>
+               <l><seg type="comStart" n="com31"/>Med et <app type="corrNote" select="yes"><lem wit="GV">Saltmads-Fad</lem><rdg wit="A">Saltmands-Fad</rdg><witDetail wit="A" n="16"><note corresp="PS" n="374">Saltmadsfad</note>'Saltmad' er blevet til 'Saltmand'; grundtekstens læsemåden rettes.</witDetail></app> begegne<seg type="comEnd" n="com31"/>,</l>
+               <l>Sande skal de over Borde,</l>
+               <l>At de kom til Jule-Gilde,</l>
+               <l>Ei for tidlig, ei for silde,</l>
+               <l>Men just som de komme burde,</l>
+               <l>Ret til Pas.</l>
+            </lg>
+            
+            <lg n="4">
+                <l>Dog nei, min Ven! jeg mig forivred lidt,</l>
+               <l>Som, siger <seg type="com" n="com250">sagtens</seg> Folk, saa tit.</l>
+               <l>Hvem nænner vel at slaae de Smaa,</l>
+               <l>Som har endnu <seg type="com" n="com32">Sløikjolen</seg> paa,</l>
+               <l><pb type="text" ed="A" n="106" facs="1817_306_9_fax7.jpg"/>Og <seg type="com" n="com33">Følle-Tænderne</seg> i Munden,</l>
+               <l>Og veed ei hvad de giør i Grunden!</l>
+               <l><pb type="edition" ed="PS" n="375"/>Vel sandt de har, i deres <seg type="com" n="com251">Puge-Skole</seg>,</l>
+               <l>Unoder lært, og ingen Ting for Resten,</l>
+               <l>Mig vil de nappe, seer jeg, i min <seg type="com" n="com252">Kjole</seg>,</l>
+               <l>Og tænke dermed ret at drille Præsten,</l>
+               <l>Men de ta'r Feil, de kiære <seg type="com" n="com253">Ugle-Unger</seg>,</l>
+               <l>Thi <seg type="com" n="com254">Kjolen</seg> ligger der hvor <persName key="pe294">Kingo</persName> sjunger,</l>
+               <l>Og mellem Drenge er jeg ikke Præsten,</l>
+               <l>Men balancerer kun <seg type="com" n="com34">i Vesten</seg>,</l>
+               <l>See, derfor kan jeg, naar det kniber,</l>
+               <l>Og jeg er kied af <seg type="com" n="com113">Drenge-Piber</seg>,</l>
+               <l>Af <seg type="com" n="com35">Lirum og Larum og Katten giør Æg</seg>,</l>
+               <l>Endog <seg type="com" n="com36">spille Skorsteen</seg> og <seg type="com" n="com305">nærmest til Væg</seg>,</l>
+               <l>Slaae Giækken løs og lege med de Smaa,</l>
+               <l>Og <seg type="com" n="com200">drage Handsker</seg>, som de kan forstaae.</l>
+               <l>Maaskee det kan dem dog fornøie,</l>
+               <l>At faae i Spas <seg type="com" n="com114">en banket Trøie</seg>,</l>
+               <l>Det er Methoden jo de Lærde prise:</l>
+               <l>Med Spas og Fjas de Smaa at giøre vise,</l>
+               <l>Og giemme Riset til de blive store.</l>
+               <l>Du seer, min Ven, det maa da giemmes længe,</l>
+               <l>Og jeg vil haabe, du tilgi'r de Drenge,</l>
+               <l>Som i den lange Tid sig dog skal more,</l>
+               <l>De smaa Spilopper med din <seg type="com" n="com38">Færredsvogn</seg>!</l>
+               <l>Hvor er i Verden vel det Kirkesogn,</l>
+               <l><pb type="text" ed="A" n="107" facs="1817_306_9_fax8.jpg"/>Hvor <hi rend="spaced">Smækken</hi> ikke frister Drenge,</l>
+               <l>Bag-Smækken nemlig, hvor de nemt kan hænge,</l>
+               <l>Og paa en egen Maade age med!</l>
+               <l>Tit komme de lidt galt afsted,</l>
+               <l>Og dumpe af <seg type="com" n="com290">for</seg> Stød og Skrald,</l>
+               <l>Men let og kort er Drenge-Fald,</l>
+               <l>Og hvad de tabe naar de dratte,</l>
+               <l>Kan Vand og Stilhed snart erstatte,</l>
+               <l>Ja Dumpet <seg type="com" n="com257">vist</seg> dem selv fornøier,</l>
+               <l>Som rene, skiære Nytaars-Løier.</l>
+            </lg>
+            
+            <lg n="5">
+                <l><pb type="edition" ed="PS" n="3761"/>Oprigtig talt, min Ven! kanskee de Smaa,</l>
+               <l>Er ei saa gale, <seg type="com" n="com39">som de <hi rend="spaced">avet gaae</hi></seg><hi rend="spaced">,</hi></l>
+               <l>Maaskee i Grunden de dog har for Øie,</l>
+               <l>At nytte og fornøie,</l>
+               <l>At sige <hi rend="spaced">middel-bar</hi> paa Drengeviis,</l>
+               <l>Ved selv at <seg type="com" n="com115">give sig til Priis</seg>,</l>
+               <l>Og er det <seg type="com" n="com306">saa</seg>, da kan man ikke nægte,</l>
+               <l><seg type="com" n="com40">Der sidder Hoved paa de Knegte</seg>;</l>
+               <l>Thi hvad de giør, er lutter Parodie,</l>
+               <l>Paa Kløgt og Vid og Smag og Poesie,</l>
+               <l><seg type="com" n="com116">Som man har stukket og end stikker i</seg>,</l>
+               <l>Ja, paa Logiken,</l>
+               <l>Og Gymnastiken,</l>
+               <l>Og Politiken,</l>
+               <l>Og fremforalt paa <seg type="com" n="com41">Aerostatiken</seg>,</l>
+               <l><pb type="text" ed="A" n="108" facs="1817_306_9_fax9.jpg"/>Og Hydrauliken,</l>
+               <l>Og <seg type="com" n="com117">Døgn-Critiken</seg>,</l>
+               <l>Saa heel <seg type="com" n="com503">komik</seg> man har det nu beskrevet,</l>
+               <l>Hvad tragicomisk Tiden har bedrevet,</l>
+               <l>Dog tys! det var den gamle Nykke,</l>
+               <l>Det var <hi rend="spaced">min Rejse-Aand</hi> som kom igien,</l>
+               <l>Nei, juble maa man over Tidens Lykke,</l>
+               <l>Ja, kling mit <seg type="com" n="com118">Hakkebret</seg>, og sprut min Pen!</l>
+               <l>Thi see, den kommer, Dagen uden Navn,</l>
+               <l>Ja see, den er her, midt i <placeName key="fak8">Kiøbenhavn</placeName>,</l>
+               <l>Den Dag Propheterne i Luften saae,</l>
+               <l>Men i det Fjerne, kunde ikkun spaa,</l>
+               <l>Ja, det hvorpaa man <seg type="com" n="com504">har sin Næse smurt</seg>,</l>
+               <l>Hvis Haab saa mangen er hensovet i,</l>
+               <l>Som nys blev <seg type="com" n="com258">holdt</seg> for Drøm og Phantasie,</l>
+               <l>Det er nu skeet, det er fuldkommengjort!</l>
+               <l>Ja, det er født, det søde <seg type="com" n="com42">Julenoer</seg>,</l>
+               <l>Som man har ventet paa den halve Jord,</l>
+               <l>Født i en Stald hos Oxe og hos Asen,</l>
+               <l>Og skiønt en <hi rend="spaced">Karklud</hi> nu er hele Stadsen,</l>
+               <l><pb type="edition" ed="PS" n="377"/>Som baade tjene maa til Svøb og Blee,</l>
+               <l>Man dog i ham maa Rigets Arving see,</l>
+               <l>Det er forkyndt for Hyrder og Hyrdinder,</l>
+               <l>Som <app type="corrNote" select="yes"><lem wit="GV">man</lem><rdg wit="A"><g rend="reverse" rendition="rotate">m</g>an</rdg><witDetail wit="A" n="24" rend="ot"><note corresp="PS" n="377">man</note></witDetail></app> paa Markens Skueplads dem <app type="corrNote" select="yes"><lem wit="GV">finder</lem><rdg wit="A">find</rdg><witDetail n="24" wit="A" rend="mt"><note corresp="PS" n="377">finder</note>de sidste bogstaver 'er' mangler; det næstsidste er utydeligt, men kan ses.</witDetail></app>,</l>
+               <l>Og Østens Vise med det første komme,</l>
+               <l>Med Konge-Røgelse i hver en Lomme,</l>
+               <l><pb type="text" ed="A" n="109" facs="1817_306_9_fax10.jpg"/>Med Peber-Nødder og med Guld-Papir,</l>
+               <l>Til Jule-Gave og til <seg type="com" n="com45">Nyaars-Ziir</seg>.</l>
+               <l>Kom, siig, du vantro! nu at Verden løi!</l>
+               <l>See Jule-Bukken ved det gamle Øg!</l>
+               <l>Forstum! nedknæl! bekiend at det er stort,</l>
+               <l>Oplysningen er nu fuldkommen gjort!</l>
+               <l>Hvad var det, Verden, vel, du pønsed paa,</l>
+               <l>Mon ei en Søn som kunde <seg type="com" n="com119">bag op slaae</seg>,</l>
+               <l>Ja <seg type="com" n="com46">slaae Spar To til</seg> Djævel og til Engel,</l>
+               <l>Og midt i Helligdommen <seg type="com" n="com47">spille Pind</seg>;</l>
+               <l>Kort sagt: en fri, selvstændig, lystig <seg type="com" n="com48">Bengel</seg>,</l>
+               <l>Sin egen Gud, sin egen <persName key="pe351">Harlekin</persName>!</l>
+               <l>Nu har du ham, Triumph, Triumph! til Lykke!</l>
+               <l><hi rend="spaced">Som hans</hi> udødeligt er nu dit Navn,</l>
+               <l>Du <seg type="com" n="com307">Liljevand</seg>! du Jomfru <placeName key="fak8">Kiøbenhavn</placeName>!</l>
+               <l>Din <hi rend="spaced">Gudsøn</hi> flux med <seg type="com" n="com49">Faldehat</seg> du smykke!</l>
+               <l>Dog nei, paa Fire trygt gaaer Julebukken,</l>
+               <l>Og Kæmpeværk din Søn giør <seg type="com" n="com120">alt</seg> i <app type="corrNote" select="yes"><lem wit="GV">Vuggen</lem><rdg wit="A">Vnggen</rdg><witDetail wit="A" n="18" rend="ft"><note corresp="PS" n="377">Vuggen</note></witDetail></app>,</l>
+               <l>Men vogt dig selv og ham for Spot og Skade,</l>
+               <l>Og <seg type="com" n="com259">snør</seg> ham flux i Pandser og i Plade,</l>
+               <l>At ei maaskee <persName key="pe733">Herodes</persName> Sendebud,</l>
+               <l>Skal slaae ihjel din lille <hi rend="spaced">Dukke-Gud!</hi></l>
+            </lg>
+            
+            <lg n="6">
+                <l>Men, hvad er det? jeg troer, saa Skam, du græder,</l>
+               <l>Er det af Glæde over Held og Hæder?</l>
+               <l>Men nei, du ryster jo, du er jo <seg type="com" n="com308">snydevreed</seg>,</l>
+               <l><pb type="text" ed="A" n="110" facs="1817_306_9_fax11.jpg"/>Du græder jo af Angst og Arrighed!</l>
+               <l><seg type="com" n="com121">Hvad fattes dig</seg>? hvordan? din kiære Søn</l>
+               <l>Dig skiælder for en Skiøge!</l>
+               <l><pb type="edition" ed="PS" n="378"/>Aa, ikke andet! han vil bare spøge,</l>
+               <l>Og hvad! naar man er vittig, frisk og kiøn,</l>
+               <l>Er det jo ingen Skam at være fri,</l>
+               <l>Som <rs type="myth" key="myth428">Musen</rs> i den rene Poesie;</l>
+               <l>Lad <persName key="pe622">Plato</persName> snakke! det er ganske net</l>
+               <l>Og ganske godt at lege med en Smule,</l>
+               <l>Men derfor bliver det dog aldrig ret,</l>
+               <l><rs type="bible" key="Matt 21,13" rend="allusion">At giøre Hjertet til en Røver-Kule</rs>,</l>
+               <l>I Livet som i Smagen blir man kied,</l>
+               <l>Af denne evige Eensidighed.</l>
+               <l>Saa græd kun ei! du skulde heller leet</l>
+               <l>Ad den elskværdige Naivitet,</l>
+               
+               <l>Thi det er, som bedst selv du veed,</l>
+               <l>Din skiære, barnlige Uskyldighed!</l>
+            </lg>
+            
+            <lg n="7">
+                <l>Hvad siger du? han <seg type="com" n="com51">spiller dig paa Næsen</seg>,</l>
+               <l>Og slaaer dig under Øret med det samme!</l>
+               <l>Hvad siger det? lidt lystigt Drenge-Væsen!</l>
+               <l>Han øver sig i <seg type="com" n="com126">Tippen</seg> ret at ramme,</l>
+               <l>Og vænner sig nu <seg type="com" n="com309">og</seg> paa denne Leed,</l>
+               <l>Til ædel Frihed og Selvstændighed,</l>
+               <l>Lyksalig du, hvis lille Gut forener</l>
+               <l><app type="corrNote" select="yes"><lem wit="GV">Saa</lem><rdg wit="A">saa</rdg><witDetail n="25" wit="A"><note corresp="PS" n="378">saa</note>den slags rettes if. regulativet; altså rettes der</witDetail></app> tidlig Alt, hvad der just hører til:</l>
+               <l><pb type="text" ed="A" n="111" facs="1817_306_9_fax12.jpg"/>At sige hvad man mener,</l>
+               <l>Og giøre, hvad man vil!</l>
+               <l>O hvilken Kalv! o hvilken Himmel-Oxe,</l>
+               <l>Om han faaer Tid og Ro til at udvoxe!</l>
+               <l>O hvilken <rs type="myth" key="myth563">Apis-Kalv</rs> med høi og stiernet Pande!</l>
+               <l>O hvilken Lykke dog for <seg type="com" n="com54">Nørre-Lande</seg>!</l>
+               <l>Vel i <placeName key="fak417">Ægypten</placeName> man begrov hans Fader,</l>
+               <l>Men slig en Søn i <placeName key="fak24">Nord</placeName> han efterlader,</l>
+               <l>En Søn der vil sin Fader overgaae,</l>
+               <l>Saa høit som Stjerner over Slotte staae!</l>
+            </lg>
+            
+            <lg n="8">
+               <l><pb type="edition" ed="PS" n="379"/>Men hvad er det? du græder jo endnu!</l>
+               <l>Hvad! vil han drukne dig i <hi rend="spaced"><placeName key="fak2007">Pebling-Søe</placeName>!</hi></l>
+               <l>Aa, ikke andet! kom du kiønt ihu,</l>
+               <l>At det er Smaating, Løier kun at døe,</l>
+               <l>At synke i sit Udsprings milde Favn,</l>
+               <l>Især naar man har skaffet sig et Navn!</l>
+               <l>Det har jo du, hvem i al Verden kiender</l>
+               <l>Ei godt den kiønne Jomfru <placeName key="fak8">Kiøbenhavn</placeName>,</l>
+               <l>Og nu at dø for Sønnens kiære Hænder,</l>
+               <l>At drukne i sin egen kiære Søe,</l>
+               <l>Begraves <seg type="com" n="com127">uden</seg> Porten i det Frie,</l>
+               <l>Og uden noget Præste, Kirke-Maskapie,</l>
+               <l>O hvilken Fryd! o Vellyst <seg type="com" n="com310">saa</seg> at døe!</l>
+               <l>Men skam dig dog! du græder, <app type="corrNote" select="yes"><lem wit="GV">beder</lem><rdg wit="A">bedre</rdg><witDetail wit="A" n="24" rend="obt"><note corresp="PS" n="379">beder</note>r og e har byttet plads og resulteret i et meningsfuldt ord, som i sammenhængen dog er meningsløst; grundtekstens læsemåde rettes.</witDetail></app>, ryster,</l>
+               <l>Hvad duer du da nu til Verden meer!</l>
+               <l><pb type="text" ed="A" n="112" facs="1817_306_9_fax13.jpg"/>O kiend den Søn, som died dine Bryster!</l>
+               <l>Ad hvad du <seg type="com" n="com55">smiilde</seg>, han nu skoggerleer,</l>
+               <l>Han seer, du blevet er en stakkels Kryster,</l>
+               <l>Som Livet knap kan længer hænge i,</l>
+               <l>Han føler Ungdomskraft og hede Lyster,</l>
+               <l>I alle Sandsers rene Poesie,</l>
+               <l>Du gaaer i Barndom, om det nu sig hændte,</l>
+               <l>At du af Frygt for Døden dig omvendte,</l>
+               <l>Og satte hver <seg type="com" n="com56">en Hvid</seg> du har i Tasken,</l>
+               <l>Paa Kirke-Taarnet og paa Flasken,</l>
+               <l>O hvilken Skam!</l>
+               <l>Og Hjertesorg for ham!</l>
+               <l>Hvad fik saa han til Knas og Sukker,</l>
+               <l>Til Chocolade, Spil og Dukker!</l>
+               <l>Nei vær en <rs type="myth" key="myth368">Skjoldmø</rs>, vær en <rs type="myth" key="myth911">Amazone</rs>!</l>
+               <l>Og lad din Død dit Værk og Levnet krone!</l>
+               <l>O, see engang, betragt din ædle Søn!</l>
+               <l>O! hvilken Moder fik en saadan Løn!</l>
+               <l>O hvor betydningsfuld og fiin en <seg type="com" n="com58">Skierts</seg>!</l>
+               <l>Han staaer saamænd og <seg type="com" n="com59">snakker for sin Æske</seg>,</l>
+               <l><pb type="edition" ed="PS" n="380"/>Og <seg type="com" n="com128">leder om</seg> et sindrigt Nyaarsvers,</l>
+               <l>Der svare <app type="corrNote" select="yes"><lem wit="GV">kan</lem><rdg wit="A">kun</rdg><witDetail n="22" wit="A"><note corresp="PS" n="380">kan</note>'u' i stedet for det forvenetde 'a' giver en helt anden betydning; må nok rettes; PS har læsemåde kan; FLN faldt over fejlen i sin redaktion (kan fik teksten med grundtekstens læsemåde).</witDetail></app> til <placeName key="fak2007">Pebling-Søens</placeName> Vædske,</l>
+               <l>Og ønsker dig, sin Lærer, at du frisk,</l>
+               <l>I <placeName key="fak2007">Pebling-Søe</placeName> maa svømme som en Fisk.</l>
+               <l>Det kalder man at tørre Taarer af,</l>
+               <l>Velsign din Søn, synk salig i din Grav,</l>
+               <l><pb type="text" ed="A" n="113" facs="1817_306_9_fax14.jpg"/>Og tænk, kanskee den Spas er ei saa dum,</l>
+               <l>Thi Verset er kanskee et Evangelium;</l>
+               <l>Kanskee din Søn, den store Vand-Poet,</l>
+               <l>I Grunden være kan en Vand-Prophet,</l>
+               <l>Thi underfulde er Naturens Kræfter,</l>
+               <l>Den har kanskee hvad Gud maa lede efter:</l>
+               <l>Mirakel-Gaven <seg type="com" n="com350">og</seg> de Vises Steen,</l>
+               <l>Saa du blir Fisk, en deilig spettet een,</l>
+               <l>Et hundred eller <seg type="com" n="com350">og</seg> et tusind Aar,</l>
+               <l>Indtil Forløsnings-Timen slaaer,</l>
+               <l>Saa fanges du og bliver nok <seg type="com" n="com60">cureret</seg>,</l>
+               <l>Ja til en <rs type="myth" key="myth146.a">Venus</rs> <seg type="com" n="com61">opmagnetiseret</seg>.</l>
+               <l>Saa synk! og tænk: det gaaer vel saa omtrent!</l>
+               <l>Vær glad, som Fisken, i <hi rend="spaced">dit Element!</hi></l>
+            </lg>
+            
+            <lg n="9">
+                <l>Nu <persName key="pe138">Ingemann</persName>! det kosted Hovedbrud,</l>
+               <l>At faae den kiøbenhavnske <seg type="com" n="com62">Bengel</seg></l>
+               <l>Gjort til et Stykke af en Engel,</l>
+               <l>Og lad ham dermed nu kun <seg type="com" n="com129">gaae <hi rend="spaced">sit Skud</hi></seg><hi rend="spaced">!</hi></l>
+               <l>Han frygter halv at faae sin Moders Død,</l>
+               <l>Men trøst ham med, at det har ingen Nød!</l>
+               <l>Thi her det giælder just til Punkt og Prikke:</l>
+               <l><hi rend="spaced"><seg type="com" n="com63">Hvo hænges skal, han drukner ikke</seg>,</hi></l>
+               <l>Og, seer jeg ret, han <seg type="com" n="com130">alt</seg> jo hænger</l>
+               <l>Bag Smækken paa din <seg type="com" n="com64">Færredsvogn</seg>,</l>
+               <l><pb type="text" ed="A" n="114" facs="1817_306_9_fax15.jpg"/>Bag Taarnet i det gamle Sogn,</l>
+               <l>Og, hvor man nu ei Kalve hænger,</l>
+               <l><pb type="edition" ed="PS" n="381"/>Men han har hængt sig selv tilpas:</l>
+               <l><hi rend="spaced">Paa <placeName key="fak11">Ulfeldts Plads</placeName>.</hi></l>
+               <l>Lad ham nu hænge, til han dratter,</l>
+               <l>Og ha'e den Fryd at vække Latter,</l>
+               <l>Den ei vi vil, om end vi kunde,</l>
+               <l><persName key="pe3720">Hans Vurst</persName> misunde.</l>
+               <l>Han meende det var nok at rive</l>
+               <l>Itu en Skud-Aars Almanak,</l>
+               <l>For til et Ny-Aar selv at blive,</l>
+               <l>Som kunde <seg type="com" n="com66">spille Bas</seg> med Snak;</l>
+               <l>Men jeg tør vædde, at trods alle <hi rend="spaced"><seg type="com" n="com202">Tofter</seg>,</hi></l>
+               <l>Dem paa det Tørre og dem paa det Vaade,</l>
+               <l>Trods alle <hi rend="spaced"><seg type="com" n="com131">Hauche</seg></hi> af den tydske Naade,</l>
+               <l>Trods <persName key="pe351">Harlekin</persName> i alle sine Kofter,</l>
+               <l>Trods Hui og Hei og alle <seg type="com" n="com201">Hjortespring</seg>,</l>
+               <l>Trods alt som er i Grunden ingen Ting,</l>
+               <l>Bli'r Drengen Dreng, hvordan han end sig teer,</l>
+               <l>Og skal, trods alle sine <seg type="com" n="com260">Kaprioler</seg>,</l>
+               <l>Trods alle Fiffene fra <seg type="com" n="com67">Puge-Skoler</seg>,</l>
+               <l>Nok stikke Piben ind, naar Manden leer,</l>
+               <l>De <hi rend="spaced">stak den ud</hi> som vi har seet saa længe,</l>
+               <l>De jammerlige kiøbenhavnske Drenge,</l>
+               <l>Paa <seg type="com" n="com132">Skueplads</seg> og i hveranden Gade,</l>
+               <l>Saavelsom <seg type="com" n="com262">og</seg> paa Titel-Blade,</l>
+               <l><pb type="text" ed="A" n="115" facs="1817_306_9_fax16.jpg"/>Men hvem der har den nye Almanak,</l>
+               <l>Som <persName key="pe351">Harlekin</persName> i Nyaars-Ruus har glemt,</l>
+               <l>Han veed, man kommer ikke vidt med Snak,</l>
+               <l>Og seer, sig Drengen har forregnet slemt;</l>
+               <l>At stikke Piben ind og Haser smøre,</l>
+               <l>Det skal han <seg type="com" n="com312">læres</seg> til,</l>
+               <l>Og bedst for ham, ifald han kan og vil</l>
+               <l><seg type="com" n="com263">Af Pibe-Stilkene en Fløite giøre</seg>!</l>
+            </lg>
+            
+            <lg n="10">
+               <l><pb type="edition" ed="PS" n="382"/>See, det var <rs type="title" key="title2928">Julespøg og Nyaars-Løier</rs>,</l>
+               <l>Som jeg vil haabe dig dog lidt fornøier,</l>
+               <l>Slet ingen Klemten, intet Vægter-Raab,</l>
+               <l>Slet ingen Brug af Morgen-Stjernen,</l>
+               <l>Hvem gaaer i Harnisk mod en Drengehob!</l>
+               <l>Hvem slaaer til Hoveder som fattes Hjernen!</l>
+               <l>Hvem <hi rend="spaced">reiser</hi> sig, selv paa den ene Fod,</l>
+               <l>Fordi det brænder i en <hi rend="spaced"><seg type="com" n="com70">Fjellebod</seg>,</hi></l>
+               <l>I Dukketøiet hos en Pjalte-Kræmmer,</l>
+               <l>Paa <placeName key="fak11">Ulfeldts Plads</placeName>!</l>
+               <l>Lad brænde kun! det er ei bedre værd,</l>
+               <l>Var <seg type="com" n="com71">og</seg> en Klud af vore egne der,</l>
+               <l>Lad brænde kun! det er jo ret tilpas.</l>
+               <l>Det hører ogsaa med til Drenge-Sviir,</l>
+               <l>At stikke Ild i gammelt graat Papiir,</l>
+               <l>Og i en Lignelse, saagodt det kan <seg type="com" n="com133">gelinge</seg>,</l>
+               <l><pb type="text" ed="A" n="116" facs="1817_306_9_fax17.jpg"/><seg type="com" n="com134">Gie</seg> Skolemester selv en <seg type="com" n="com505">Vinge</seg>;</l>
+               <l>Den Spas, min Ven, kan vi dem gierne unde,</l>
+               <l>Og seer jeg Ret, har <rs type="myth" key="myth112">Nornen</rs> sine Grunde,</l>
+               <l>Hvi hun de Smaa vil saa omtrent tillade,</l>
+               <l>At stikke Ild paa alle skrevne Blade</l>
+               <l>Fra forrige til dette <seg type="com" n="com510">Jubel-Aar</seg>,</l>
+               <l>Lad gaae, min Ven! det er jo kun Papir,</l>
+               <l>Paa Aandens Hoved svides ei et Haar,</l>
+               <l>Det reiser sig af Asken i et Spiir,</l>
+               <l>Der siger meer end alle brændte Blade.</l>
+               <l>At hist paa <placeName key="fak11">Ulfeldts Plads</placeName> og <placeName key="fak2008">Hallands-Aas</placeName>,</l>
+               <l>Kort sagt, hvor Drengeild kan giøre Skade,</l>
+               <l>Ei Baalet tændes, som skal brænde Vaas,</l>
+               <l>See det er Politiets Sag at hemme,</l>
+               <l>(Forstaaer sig selv; jeg mener Aandens Politie,</l>
+               <l>Det andet brændes ved at blande sig deri),</l>
+               <l>Og lære Drengene, hvor de har hjemme:</l>
+               <l><pb type="edition" ed="PS" n="383"/>Paa <hi rend="spaced"><placeName key="fak2009">Nørre-Fælled</placeName>,</hi> der er høit til Loftet,</l>
+               <l>Ja, <seg type="com" n="com351">plat</seg> og skaldet, tomt og toftet,</l>
+               <l>Der er just Plads til Drengenes <rs type="title" key="title3369">Athene</rs>,</l>
+               <l>Til Hjorte-Takker og til Bukkespring,</l>
+               <l>Til Piber, Bække, Bekkener og Stene,</l>
+               <l>Til Blæst og Baal og Vand og alskens Ting,</l>
+               <l>Der hører med til Drenges Nytaars-Løier;</l>
+               <l>Og Skam faae den, som Spasen ei fornøier!</l>
+               <l>Jeg, i det mindste, skal den første være,</l>
+               <l><pb type="text" ed="A" n="117" facs="1817_306_9_fax18.jpg"/>Som rækker Drengene hvert Blad <seg type="com" n="com506">paa Stand</seg>,</l>
+               <l>Jeg skrevet har som Unger-Svend og Mand,</l>
+               <l>Mit Drengeværk jeg kan dem ei forære,</l>
+               <l>Det tidlig <seg type="com" n="com550">alt</seg> jeg har saa godt som brændt,</l>
+               <l>Og er, saavidt, min egen Recensent.</l>
+               <l>Kom <persName key="pe138">Ingemann</persName>! giør du det Samme!</l>
+               <l>Da kan vi trøstig lee ad Baalets Flamme,</l>
+               <l>Ei tabe vi, men ikkun vore Fiender,</l>
+               <l><hi rend="spaced">Det er vort <seg type="com" n="com511">Jubel-Aar</seg>, naar Sandhed vinder;</hi></l>
+               <l>Til Sandhed vi indviet har vor Tunge,</l>
+               <l>Og Psalmer skal ved Løgnens Baal vi sjunge,</l>
+               <l>Skiøndt det fortærer mangt et Blad vi skrev,</l>
+               <l>Thi Aand og Hjerte har et Leidebrev,</l>
+               <l>For hvilket Luen maa ærbødig vige,</l>
+               <l>Lad Drengene kun kaste det paa Baal,</l>
+               <l>Som skrevet er i deres Tungemaal,</l>
+               <l>Fornuften rolig paa det <seg type="com" n="com507">Optøi</seg> seer,</l>
+               <l>Gi'er Drengene et <seg type="com" n="com74">Næsekneps</seg> og leer.</l>
+            </lg>
+            
+            <graphic style="shortLine"/>
+            
+            <lg n="11">
+               <l>Og nu, min Ven! hvad Tiden spaaer,</l>
+               <l>Trods Pølserne og deres Pinde,</l>
+               <l>Trods Taage, Slud og slemme Vinde,</l>
+               <l>Et nyt, lyksaligt <seg type="com" n="com512">Jubel-Aar</seg>!</l>
+            </lg>
+            
+            <fw type="shortLine"/>
+         </div>
+         
+      </body>
+   </text>
+</TEI>

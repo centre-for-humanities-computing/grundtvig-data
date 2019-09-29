@@ -1,0 +1,614 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<!--<?xml-stylesheet type="text/css" href="https://prometheus.statsbiblioteket.dk/gvData/css/oxyAuthorEdit.css"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="part">Danne-Virke</title>
+                <title rend="shortForm">Danne-Virke</title>
+                <title rend="part">Om dansk Poesie, Sprog og Historie</title>
+                <title rend="shortForm">Om dansk Poesie, Sprog og Historie</title>               
+                <author>Vibeke A. Pedersen</author>
+                 <editor role="editor3">Klaus Nielsen</editor>
+                 <editor role="editor2">mag.art. Thorkil Damsgaard Olsen</editor>
+                 <editor role="editor1">Jon Tafdrup</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <idno type="content">1.10</idno>
+                    <idno type="technic">1.10.1</idno>
+                </edition>
+            </editionStmt>
+            <extent>53 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>                
+                <date when="2015-10-31">www.grundtvigsværker.dk, version 1.10, 2. maj 2017</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note target="1816_297_1_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note target="1816_297_2_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" target="1816_297_1_intro.xml" type="intro">Indledning</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p/></sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change xml:id="ELR" who="ELR" when="2015-03-25">fil oprettet efter 408</change>  
+            <change xml:id="VAP" who="VAP" when="2015-11-03">tømt body</change>
+             <change who="VAP" when="2016-01-28">disposition og stikord</change>
+            <change who="VAP" when="2016-04-08">prosa i de første par afsnit</change>
+            <change who="VAP" when="2016-04-12">mere prosa </change>
+            <change who="VAP" when="2016-04-13">prosa i de første par afsnit</change>
+            <change who="VAP" when="2016-05-18">mere prosa</change>
+            <change who="VAP" when="2016-05-19">endnu mere prosa samt 00-opm.</change>
+            <change who="VAP" when="2016-05-24">endnu mere prosa</change>
+            <change who="VAP" when="2016-05-25">rettelser samt udfyldning af 00-opm</change>          
+            <change who="VAP" when="2016-05-26">tilføjelser samt yderligere udfyldning af 00-opm</change>
+            <change who="VAP" when="2016-05-30">tilføjelser samt yderligere udfyldning af 00-opm</change>
+            <change who="VAP" when="2016-05-31">SIDSTE tilretninger samt genereret litteraturliste og rettelser i denne</change>
+            <change who="VAP" when="2016-06-10">rettelser efter Jon</change>
+            <change who="VAP" when="2016-06-13">fortsatte rettelser efter Jon</change>
+            <change who="VAP" when="2016-10-04">fortsatte rettelser efter sidste gennemlæsning - Thorkil havde ingenting</change>
+            <change who="VAP" when="2017-01-06">rettet til efter Klaus' bemærkninger</change>
+            <change who="VAP" when="2017-01-19">fortsat rettet til efter Klaus' bemærkninger, især i litteraturliste</change>
+            <change who="VAP" when="2017-01-20">kontrol af Klaus' bemærkninger</change>
+            <change who="VAP" when="2017-01-27">extra kontrol af Klaus' bemærkninger</change>
+        </revisionDesc>
+    </teiHeader>
+    
+    <text type="intro">
+        <body>
+            <div><head xml:id="docIn6">Grundtvig som tidsskriftudgiver</head>
+                <p rend="noIndent">Grundtvig var i anden halvdel af 1810'erne igang med flere store
+                    projekter. Foruden tidsskriftet <hi rend="italic"><rs type="title" key="title192"
+                            >Danne-Virke</rs></hi> optog arbejdet med oversættelserne eller
+                    gendigtningerne af det angelsaksiske kvad <hi rend="italic"><rs type="title"
+                            key="title3272">Bjovulf</rs>,</hi>
+                    <persName key="pe237">Saxos</persName>
+                    <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> og
+                        <persName key="pe49">Snorres</persName>
+                    <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs></hi> store
+                    dele af Grundtvigs tid.</p>
+                <p rend="noIndent">I det versificerede fejdebrev, <rs type="title" key="title4577"
+                        >&#x201C;Til Jens Baggesen&#x201D;</rs> fra 2. marts 1816, havde Grundtvig
+                    med ordet &#x201C;Danne-Virke&#x201D; over for <persName key="pe20"
+                        >Baggesens</persName> tidsskrift <hi rend="italic"><rs type="title"
+                            key="title3601">Danfana</rs></hi> stillet et spørgsmål om, hvorfra den
+                    danske kirke skulle hente sin inspiration:</p>
+                   <p rend="quote">
+                    <lg>
+                        <l>Hvad skal engang Man kalde Danmarks Kirke?</l>
+                        <l>Skal den gjendøbes i Athen og Rom?</l>
+                        <l><rs type="myth" key="myth1494">Danfana</rs> kaldes eller Danne-Virke?</l>
+                        <l>Det vil for Alvor vi nu kæmpe om (<rs type="title" key="title4577"
+                                >Grundtvig 1816</rs>, strofe 19).</l>
+                    </lg>
+                </p> 
+                <p rend="noIndent">Her stilles den germanske gudinde <rs type="myth" key="myth1494"
+                        >Danfana (Tamfana)</rs> op over for det danske Dannevirke, som netop er en
+                    vold mod Tyskland. Det er muligt, at Grundtvig allerede her havde tanker om selv
+                    at blive tidsskriftudgiver, for fire måneder senere så hans eget tidsskrift
+                    dagens lys (jf. <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s.
+                    688; for en samlet karakteristik af tidsskriftet <hi rend="italic"><rs
+                            type="title" key="title192">Danne-Virke</rs>,</hi> se s. 850-856). </p>
+                <note type="readMore">
+                    <p>Af andre tidsskrifter fra perioden kan fremhæves <hi rend="italic"><rs
+                                type="title" key="title3369">Athene</rs></hi>, redigeret af
+                            <persName key="pe23">Christian Molbech</persName>, <hi rend="italic"><rs
+                                type="title" key="title127">Dansk Litteratur-Tidende</rs></hi>,
+                        redigeret af bl.a. <persName key="pe117">Peter Erasmus Müller</persName> og
+                        det mere avislignende <hi rend="italic"><rs type="title" key="title538"
+                                >Nyeste Skilderie af København</rs>, </hi>som Grundtvig i udpræget
+                        grad selv bidrog til.</p>
+                </note></div>
+            <div><head xml:id="docIn1">Programerklæringer på vers og prosa</head>
+                <p rend="noIndent">Digtet <rs type="title" key="title3985"
+                        >&#x201C;Danne-Virke&#x201D;</rs> og programerklæringen, <rs type="title"
+                        key="title4486">&#x201C;Om dansk Poesie, Sprog og Historie&#x201D;</rs>,
+                    udgør de to første egentlige indlæg i tidsskriftet <hi rend="italic"><rs
+                            type="title" key="title3299"
+                    >Danne-Virke</rs></hi><!--(ifølge
+                    indholdsfortegnelsen)-->.
+                    Tidsskriftets første hæfte udkom i 18. juli 1816, og hver årgang bestod af fire
+                    hæfter. På nær et enkelt indlæg i <hi rend="italic"><rs type="title"
+                            key="title192">Danne-Virke</rs></hi> bind 3 om <rs type="myth"
+                        key="myth532">Fornjoter</rs> blev alt skrevet af Grundtvig &#x2014; dette
+                    trods opfordringer til publikum om at indsende bidrag.</p>
+                <p rend="noIndent">Disse tidsskriftets første to egentlige tekster komplementerer
+                    hinanden. Digtet betoner i lange, gennemførte billeder det åndelige fællesskab
+                    mellem fortidens og samtidens danskere og mellem kristendom og hedenskab, mens
+                    programerklæringen mere nøgternt opremser fortidens bedrifter inden for
+                    litteratur og historieskrivning. De to tekster har samme formål: åndelig
+                    oprustning, men de taler til forskellige sider af det menneskelige sind:
+                    følelsen og fornuften. Faren sydfra var på dette tidspunkt ikke militær, men
+                    åndelig. I andre, samtidige arbejder &#x2014; både trykte og utrykte &#x2014;
+                    søgte Grundtvig mere eller mindre eksplicit at tage afstand fra den absolutte
+                    idealisme eller naturfilosoffer som fx <persName key="pe54">Schelling</persName>
+                    (se fx <rs type="title" key="title4575">Michelsen 1985</rs>, s. 74-77, og
+                    indledningen til <ref type="docOut" target="1807_61_intro.xml#docIn8">&#x201C;Om
+                        Religion og Liturgie&#x201D;, afsnittet om Schellings
+                    naturfilosofi</ref>).</p>
+                             
+            </div>
+        
+            <div><head xml:id="docIn11">Digtets symbolik</head> 
+                <p rend="noIndent">Tidsskriftet <hi rend="italic"><rs type="title" key="title3299"
+                            >Danne-Virkes</rs></hi> første digt &#x2014; efter indledningsdigt og
+                    fortale &#x2014; kaldes ligeledes <rs type="title" key="title3985"
+                        >&#x201C;Danne-Virke&#x201D;</rs> og henviser både til den konkrete
+                    forsvarsvold mod Danmarks sydgrænse (Tyskland) og til sagnet om <persName
+                        key="pe249">Thyra Dannebod</persName> som dens
+                    bygherre<!-- og den indsats, hun ifølge sagnhistorien med et overdådigt voldanlæg gjorde for at sikre Danmarks grænse mod syd, dvs. mod -->.
+                    I 1800-tallet betvivlede historikerne endnu ikke sagnets historiske kerne, men
+                    nyere arkæologiske udgravninger viser, at voldens ældste dele stammer helt
+                    tilbage til 400-500-tallet. Titlen henviser til <persName key="pe221">Laurids
+                        Koks</persName> vise om disse begivenheder, den såkaldte <rs type="title"
+                        key="title77"><hi rend="italic">Dannevirkevise</hi></rs> (mellem 1680 og
+                    1690). I Grundtvigs digt findes desuden nedslag i andre tidlige, historiske
+                    begivenheder. I tidsskriftet <hi rend="italic"><rs type="title" key="title3299"
+                            >Danne-Virke</rs></hi> bliver <persName key="pe221">Koks</persName> vise
+                    for Grundtvig et historisk vidnesbyrd, han kan bruge som mentalitetshistorisk
+                    for-billede (for en gennemgang af indholdet af Grundtvigs vise, se <rs
+                        type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 688 f.). </p> 
+                   <note type="readMore">
+                        <p rend="noIndent"><persName key="pe221">Kok</persName> skrev også en
+                        sproglære <hi rend="italic"><rs type="title" key="title4571">Introductio ad
+                                lingvam Danicam, puta Selandicam, in usum exterorum</rs></hi> (da.
+                        &#x2018;Introduktion til det danske sprog, fx sjællandsk, til brug for
+                        udlændinge&#x2019;). Manuskriptet er formentlig skrevet mellem 1656 og 1666,
+                        men blev først trykt i 1915. Grundtvig ejede manuskriptet, men det vides
+                        ikke, hvornår han anskaffede sig det. Ved auktionen over Grundtvigs
+                        efterladte bøger i 1873 overgik det til Det Kongelige Bibliotek i København,
+                        jf. <hi rend="italic"><rs type="title" key="title2696">Danske
+                                Grammatikere</rs>,</hi> bind 7 (fotografisk genoptryk 1979, s.
+                        7).</p>                      
+                    </note>
+                <p rend="noIndent"><persName key="pe221">Laurids Koks</persName>
+                    <hi rend="italic"><rs type="title" key="title77">Dannevirkevise</rs></hi> bliver
+                    i dobbelt forstand emblematisk. Først og fremmest er den i sig selv et tidligt
+                    vidnesbyrd om interessen for Danmarks oldtid. <persName key="pe221"
+                        >Kok</persName> digtede formentlig visen i 1680'erne, hvorefter den blev
+                    trykt af <persName key="pe239">Peder Syv</persName> i hans folkevisesamling, <hi
+                        rend="italic"><rs type="title" key="title275">Tohundredvisebogen</rs></hi>
+                    fra 1695, der hovedsagelig rummer de af Grundtvig så elskede folkeviser.
+                        <persName key="pe221">Koks</persName> vise handler om opførelsen af
+                    forsvarsvolden Dannevirke og kan ses som et indslag i en debat fra slutningen af
+                    1600-tallet om det betimelige i, at den historiske vold blev brugt som
+                    byggematerialelager. Dernæst fremhæver den nødvendigheden af et stærkt forsvar
+                    mod fjenden fra syd. For Grundtvig skulle den blive en vise, der fulgte ham
+                    gennem årene, og som han i lyset af danmarkshistoriske begivenheder i
+                    1800-tallet omdigtede og genudgav flere gange (se tekstredegørelserne til <ref
+                        type="docOut" target="1817_306_1_txr.xml#docIn4">“Thyre Dannebods
+                        Vise”</ref> og til <ref type="docOut" target="1839_622_txr.xml#docIn4"
+                        >“[Danmark, deiligst Vang og Vænge]”</ref>). </p>
+                <div>
+                    <head xml:id="docIn15">Den dragebevogtede skat</head>
+                    <p rend="noIndent">Danmarks sproglige mindesmærker opfatter Grundtvig som en
+                        skjult skat (strofe 44), som han har taget sig til opgave at grave frem i
+                        lyset. At en drage vogter skatten, giver associationer til den oldislandske
+                        kenning for guld: &#x2018;dragens leje&#x2019;. Dragen bliver således et
+                        symbol på alt det, der har skjult skatten for danskerne: først og fremmest
+                        oplysningstiden og de mennesker, der ikke kan se det gode og nødvendige i at
+                        beskæftige sig med fortiden. Skatten er den ældre danske litteratur, hvortil
+                        Grundtvig regner det angelsaksiske kvad, <hi rend="italic"><rs type="title"
+                                key="title3272">Bjovulf</rs></hi>, der handler om <rs type="myth"
+                            key="myth115">skjoldungerne</rs> og bl.a. foregår i Danmark.
+                        Litteraturen kan gøre danskerne stolte af at være danske ved at åbne deres
+                        øjne for fortidens bedrifter såvel i historien som i digtekunsten.</p></div>
+                    <div><head xml:id="docIn12">Kærminde og engel</head>
+                    <p rend="noIndent">Et andet gennemgående billede er
+                        kærminden<!--, et (kvindeligt)
+                        symbol-->. Ordet
+                        henviser bogstaveligt til den undseelige blå sommerblomst, men spiller også
+                        på, at det kan udlægges som &#x2018;kære minder&#x2019;. Indimellem glider
+                        det over i betydningen: Danmark, idet hele landet betragtes som en
+                        kærmindehave (strofe 2) eller en kærmindevang (strofe 20). I denne
+                        sammenhæng bliver digtets engel et tegn for kristendommen, således at mødet
+                        mellem kærminde og kirke i strofe 13, &#x201C;Da Ki&#x00E6;rminden gik til
+                        Kirke&#x201D; symboliserer kristningen af Danmark (<rs type="title"
+                            key="title603">Toldberg 1950</rs>, s. 45). </p><note type="readMore"><p rend="noIndent">Digtet blev i øvrigt kritiseret af <persName key="pe50">Rasmus Rask</persName> i
+                                <hi rend="italic"><rs type="title" key="title127">Dansk
+                                    Litteratur-Tidende</rs></hi> nr. 30 for netop at være for
+                            personificerende i symbolanvendelsen med henvisning til bl.a. strofe 13
+                                (<rs type="title" key="title4573">Rask 1816</rs>, s. 468; se også
+                                <rs type="title" key="title603">Toldberg 1950</rs>, s. 44, og <ref
+                                type="docIn" target="#docIn16">afsnittet om Modtagelsen</ref>).</p>
+                            </note></div>
+                
+                <div>
+                    <head xml:id="docIn13">Kerub og Fønix</head>
+                    <p rend="noIndent">Som endnu et billede på Danmarks kristne grundvold &#x2014;
+                        også længe førend kristendommen selv kom til Danmark &#x2014; optræder <rs
+                            type="title" key="title2263">Det gamle Testamentes</rs> kerub, en af de
+                        engle med flammesværd, der blev sat til at vogte indgangen til Paradis,
+                        efter at <persName key="pe635">Adam</persName> og <persName key="pe647"
+                            >Eva</persName> var blevet uddrevet derfra. I digtet vogter keruben
+                        selve Danmark (strofe 3, 6, 9 og 10). </p>
+                    <p rend="noIndent">Også den hedenske myte om fugl <rs type="myth" key="myth680"
+                            >Føniks</rs> bringer Grundtvig i spil (fra strofe 27). Efter lange kæder
+                        af retoriske spørgsmål, som rummer Grundtvigs skrækscenarier for fremtiden,
+                        og som derfor må besvares med et rungende nej (strofe 30) forudskikker han,
+                        at ligesom <rs type="myth" key="myth680">Føniks</rs> genopstår af asken, vil
+                        Dannevirke og Danmark genopstå (strofe 33). </p>
+                    <p rend="noIndent"><persName key="pe52"> Lundgreen-Nielsen</persName> ser
+                        desuden en sammenkobling af <rs type="myth" key="myth680"
+                        >Føniks</rs>-billedet og det &#x201C;sidste fællesmonarkiske linjeskib
+                        &#x2018;Phoenix&#x2019; fra 1810 og [skibet fra] <rs type="myth"
+                            key="myth67">Skjolds</rs> ligfærd&#x201D;. Hermed lader Grundtvig endnu
+                        engang hedenske myter og fortællinger blande sig med hinanden og danne
+                        grundlag for en kristen fortolkning af såvel fortiden som nutiden (<rs
+                            type="title" key="title14">Lundgreen-Nielsen</rs> 1980, s. 689). </p>
+                    <p rend="noIndent">Sammensmeltningen af kristne og hedenske symboler i et og
+                        samme værk foregår helt problemfrit for Grundtvig. Hvad der er vigtigt, er,
+                        at mennesket opfattes som placeret i den gudskabte historie.</p></div>
+                <div>
+                    <head xml:id="docIn14">Kvindevold og kvindemagt</head>
+                    <p rend="noIndent"><persName key="pe249">Thyra Dannebod</persName> er digtets
+                        ubestridte heltinde, der antager symbolkarakter som landsmoderen (strofe 7).
+                        På samme måde som hun med bygningen af Dannevirke kunne beskytte Danmark mod
+                        ydre fjender (strofe 13), kan Grundtvig ved at udgrave &#x2014; dvs.
+                        genoptrykke og bearbejde &#x2014; de gamle historiske ordminder
+                        (&#x201C;Dannefee&#x201D;, strofe 35, 36 og 44) styrke bevidstheden om den
+                        glorværdige, danske fortid og dermed skabe et åndeligt Dannevirke. Denne idé
+                        uddybes mere konkret i den efterfølgende artikel, <rs type="title"
+                            key="title4486">&#x201C;Om dansk Poesie, Sprog og
+                        Historie&#x201D;</rs><!-- (se afsnittet <ref type="docIn" target="#docIn20">Det åndelige Dannevirke</ref>)-->.</p>
+                    <p rend="noIndent">Ikke alene <persName key="pe249">Thyra</persName>, men også
+                        de øvrige stolte &#x201C;Danne-Kvinder&#x201D; har medvirket til at opbygge
+                        og forsvare den danske kirke. I sin tid blev de af <persName key="pe444"
+                            >Svend Tveskæg</persName> (<persName key="pe249">Thyras</persName>
+                        sønnesøn) belønnet med arveret, efter at de havde ofret deres smykker til
+                        hans løskøbelse (strofe 18-20). Denne høje vurdering af kvinder og deres
+                        næsten intuitive forbindelse til de historiske rødder skulle blive typisk
+                        for Grundtvigs opfattelse af det kvindelige og dets potentiale i forhold til
+                        danmarkshistorien. Grundtvig skulle senere ligefrem kalde det danske folk
+                        for et kvindeligt folk. </p>
+                   <note type="readMore"><p rend="noIndent">I tidsskriftet <hi rend="italic"><rs type="title" key="title4610"
+                                >Dannebrog</rs></hi> offentliggjorde han en række forelæsninger over
+                            Nordens historie, som han havde holdt i 1854:</p> <p rend="quote">Det gaaer jo vist nok med Danskerne i det hele, der, forholdsviis, maa kaldes et
+                            &#x2018;kvindeligt&#x2019; Folk, ligesom det gaaer med Kvinden, at de
+                            selv finder det urimeligt, at der skulde udgaae nogen Oplysning fra dem,
+                            som var vigtig for hele Menneske-Slægten, saa de finder det i sin Orden,
+                            naar man i Tyskland og i det hele udenlands, ligesaalidt venter noget
+                            Klogt fra Danmark, som Jøderne ventede noget Stort fra Galilæa eller
+                            noget Godt fra Nazaret, men ligesom det desuagtet er hos Kvinden, man
+                            maa lære at kiende Menneske-Naturen, som hun ret egenlig udtrykker,
+                            saaledes er det ogsaa i sin historiske Orden, at Menneske-Udviklingen og
+                            Menneske-Oplysningens naturlige Gang giver sig klarest til kiende hos et
+                            kvindeligt Folk, især naar dette, som det Danske gjennem Aarhundreder er
+                            blevet piint med en i alle mulige Maader for dem unaturlig saakaldt
+                            Udvikling og Oplysning paa Latin og paa
+                            Tysk<!-- . Her, om ellers nogensteds paa Jorden, maatte Naturen omsider gaae over Optugtelsen , især da de kvindelige Folk, ligesom Kvinderne , er seilivede, og afrettes aldrig enten saa konstig eller saa grusomt, at de jo igrunden beholde deres eget Sind for dem selv, leer i Smug ad de kloge Mandfolk, der tænker, de har skabt dem om, og benytter den første gode Leilighed til at følge deres eget Hoved , saavelsom deres eget Hjerte -->
+                                (<rs type="title" key="title4606">Grundtvig 1855</rs>, s. [4]).</p></note></div></div>
+            
+           <div><head xml:id="docIn20">Det åndelige Dannevirke</head>
+                <p rend="noIndent">Oven på statsbankerotten i 1813 og tabet af Norge i 1814 havde
+                    Grundtvig åbenbart følt det påkrævet at sætte et åndeligt hegn op om det danske
+                    ved at sætte fokus på det danske væsen og det danske sprog for i sidste ende at
+                    skabe en dansk genrejsning (<rs type="title" key="title14">Lundgreen-Nielsen
+                        1980</rs>, s. 690). </p>
+                <p rend="noIndent">Da artiklen <rs type="title" key="title4486">&#x201C;Om dansk
+                        Poesie, Sprog og Historie&#x201D;</rs> er det første prosastykke efter
+                    forordet i hele det samlede tidsskriftudgivelse <hi rend="italic"><rs
+                            type="title" key="title3299">Danne-Virke</rs>,</hi> er det naturligt at
+                    betragte den som den egentlige programerklæring, en prosaisk og mere konkret
+                    fremstilling af de tanker om sprog, litteratur, historie og national identitet,
+                    Grundtvig havde udtrykt i digtet <rs type="title" key="title3985"
+                        >&#x201C;Danne-Virke&#x201D;</rs>.  I prosastykket hedder det:
+                    &#x201C;Derfor skal Mindesm&#x00E6;rkerne af Danmarks Kr&#x00F8;nike og Riim og
+                    Tungemaal, v&#x00E6;re noget af hvad jeg i dette Skrift fornemmelig vil sysle
+                    med&#x201D; (s. 21). Denne formulering er tilpas løs til, at Grundtvig både kan
+                    udgive, gendigte og skrive mindre afhandlinger om tekster fra ældre dansk
+                    litteratur og historie.</p>   
+               <div> <head xml:id="docIn2">Historien betragtet som et menneskeliv</head>
+                   <p rend="noIndent">Grundtvig bygger sin artikel op som en kronologisk
+                        fremstilling af højdepunkter i den danske historieskrivning og den danske
+                        litteratur.
+                        <!--Uden at henvise til <persName key="pe18">Henrich Steffens</persName> foredragsrække, <hi rend="italic"><rs type="title" key="title118">Indledning til philosofiske Forelæsninger</rs>,</hi> som Grundtvig havde overværet, bruger -->Grundtvig bruger
+                        menneskebilledet til at anskue historien som en udviklingshistorie, der
+                        bringer mennesket frem til stadigt større indsigt om sig selv, om historiens
+                        mening og kristendommens
+                        betydning<!-- (<rs type="title" key="title118">Steffens 1996</rs>, især 7.-9. forelæsning, s. 115-155)-->.
+                        <!--Samtidig ser Grundtvig mennesket som sat <hi rend="italic">i</hi> historien, hvor det kan opnå større indsigt i sig selv ved at betragte det, der er gået forud.-->
+                        Grundtvig gennemspiller således tanken om, at et lands
+                        historie<!-- (eller hele Europas, for den sags skyld)--> er som et
+                        menneskeliv med barndom, ungdom, manddom og alderdom. I Danmark er
+                        barndommen hedenskabets og vikingetidens tidsalder (s. 27), mens ungdommens
+                        tid falder sammen med middelalderens tidlige kristendom (s. 29). Først med
+                        reformationen begynder manddommen (s. 30). Hvortil vi er nået i 1817 fremgår
+                        ikke entydigt.</p></div>
+           
+         
+           
+             <div>                
+              <head xml:id="docIn3">Historieskriverne</head>
+                  <p rend="noIndent">Til den åndelige oprustning vælger Grundtvig fortidens
+                        storværker inden for historie og digtning. Da mange af de tidligste
+                        digterværker har historisk indhold, giver det sig selv, at de tidligste
+                        eksempler på dansk digtning &#x2014; og dermed dansk sprog &#x2014; oftest
+                        findes som mere eller mindre fiktionaliserede historiebøger. Dog skiller
+                        visse af de tidlige danske historieskrivere sig &#x2014; som deres
+                        europæiske kolleger &#x2014; ud ved at forfatte deres værker på latin, så de
+                        kunne læses af lærde i hele Europa. Blandt historieskriverne finder vi
+                        Grundtvigs yndlinge: <persName key="pe237">Saxo</persName> og <persName
+                            key="pe3723">Anders Sunesøn</persName> (latin), <persName key="pe350"
+                            >Vedel</persName> (især som oversætter af <persName key="pe237"
+                            >Saxo</persName>), <persName key="pe896">Lyschander</persName>,
+                            <persName key="pe296">Huitfeldt</persName> og <persName key="pe172"
+                            >Holberg</persName>. Allerede Grundtvigs <ref type="docOut"
+                            target="bookInventory1805.xml">bogfortegnelse fra 1805</ref> vidner om
+                        hans interesse for disse
+                        forfattere<!--: <persName key="pe237">Saxo</persName> i <persName key="pe350">Vedels</persName> oversættelse (genoptrykket fra 1610), <persName key="pe896">Claus Christoffersen Lyschanders</persName> rimede <rs type="title" key="title4572">slægtskrønike over Billeslægten</rs> (dengang dog tilskrevet <persName key="pe4260">Birgitte Bille</persName>), <persName key="pe396">Arild Huitfeldts</persName> <rs type="title" key="title453">Danmarkskrønike</rs> og <persName key="pe172">Ludvig Holbergs</persName> <rs type="title" key="title1647">kirkehistorie</rs>-->.</p>
+                 <!--<note type="readMore"><p rend="noIndent"
+                            >I bogfortegnelsen fra 1839 finder vi desuden <persName key="pe172">Holbergs</persName> <rs type="title" key="title1669">jødiske historie</rs> og hans <hi rend="italic"><rs type="title" key="title1644">Introduktion til de Europæiske Rigers Historie</rs></hi> sammen med <persName key="pe1344">Tycho Brahes</persName> flersprogede udgave af danske inskriptioner, <hi rend="italic"><rs type="title" key="title3873">Inscriptiones Hafnienses Danice, Germanicae &amp; Latine</rs>, </hi> udgivet af <persName key="pe15">Peder Hansen Resen</persName>.</p></note>--></div>
+           <div>  <head xml:id="docIn4">Digterne</head>
+                <p rend="noIndent">Også den fiktive eller digteriske del af den tidlige litteratur
+                        bliver nævnt, især folkeviserne og <hi rend="italic"><rs type="title"
+                                key="title242"
+                        >Rimkrøniken</rs></hi><!--(der består af rimede kongemonologer og dermed også er en slags historiebog), bliver nævnt-->.
+                        Interessen
+                        <!--for disse tidlige eksempler på dansk litteratur, især folkeviserne, -->kan
+                        ligeledes findes afspejlet i Grundtvigs bogfortegnelser. I <ref
+                            type="docOut" target="bookInventory1805.xml"> 1805-fortegnelsen</ref>
+                        finder vi <persName key="pe1">Sandvig</persName> og <persName key="pe2"
+                            >Rasmus Nyerups</persName> folkeviseudgave, <hi rend="italic"><rs
+                                type="title" key="title352">Levninger af Middelalderens
+                                Digtekonst</rs></hi> fra 1780-1784 sammen med <persName key="pe1"
+                            >Sandvigs</persName>
+                        <hi rend="italic"><rs type="title" key="title319">Danske Sange af det ældste
+                                Tidsrum</rs></hi>.</p> <note type="readMore"><p rend="noIndent">I fortegnelsen fra 1839 støder der flere folkeviser til, nemlig <persName
+                                key="pe239">Syvs</persName>
+                            <hi rend="italic"><rs type="title" key="title275"
+                                >Tohundredvisebog</rs></hi> fra 1695 (i originaludgaven). Man finder
+                            også <persName key="pe23">Christian Molbechs</persName> udgave af <hi
+                                rend="italic"><rs type="title" key="title86">Rimkrøniken</rs></hi>
+                            (1825), som Grundtvig anmeldte det efterfølgende år. </p></note>
+                    <p rend="noIndent">Hele den store opremsning af yndlingsforfattere underbygges
+                        ikke med eksempler på, hvad det er, Grundtvig godt kan lide ved deres sprog
+                        og stil. Forfatternes historiske forankring og interesse bliver i sig selv
+                        garantien for deres digteriske kvalitet. Grundtvigs hovedtanke er, at
+                        modersmålet kan forene røsten fra gamle dage med nutiden (s. 21). </p>
+                    <p rend="noIndent">Formålet med Grundtvigs artikel er at påvise, at det er den
+                        samme ånd, der &#x201C;gaaer igiennem alt det &#x00E6;gte Danske i Riim og
+                        Kr&#x00F8;nike, i Sprog og Love&#x201D; (s. 21). </p></div> 
+            <div> <head xml:id="docIn5">Oplysningstidens indflydelse <!--på dansk litteratur og historie--></head>
+                 <p rend="noIndent">Grundtvig er indigneret over oplysningstidens
+                        litteraturopfattelse, som han mener reducerer dansk skønlitteratur til
+                        efterligning først af grækere og romere, siden af franskmænd og tyskere (s.
+                        16). Tværtimod ser Grundtvig den nordiske litteratur og historie som særegen
+                        og desuden den europæiske overlegen. Ifølge Grundtvig var den nordiske
+                        oldtidslitteratur i oplysningstiden blevet reduceret til den oldislandske,
+                        mens de nationale bidrag fra Danmark og Sverige var blevet negligeret. Og
+                        selv om Grundtvig aldrig var begejstret for den religiøse side af den
+                        kristne middelalder (der jo var katolsk), holdt han af periodens sprog og
+                        litteratur og så det som sin mission at genskabe folkets kendskab til den. I
+                        sin afstandtagen fra de tyske idealister er han godt på vej til at skabe sin
+                        egen, anderledes menneskeopfattelse (<rs type="title" key="title4575"
+                            >Michelsen 1985</rs>, s. 68 og 75)</p></div></div>
+          <div>   <head xml:id="docIn7">Mål: værn mod sydlandsk indflydelse</head>
+               <p rend="noIndent">Grundtvigs mål var bl.a. at give folket litterære og sproglige
+                    mindesmærker fra den danske middelalder. Han ville derfor i <hi rend="italic"
+                            ><rs type="title" key="title3299">Danne-Virke</rs></hi> bringe eksempler
+                    på tidlig dansk digtning, der i 1817 stadig havde noget at sige danskerne (s.
+                    34). Hans hensigt var at præsentere teksterne i moderniseret, forkortet eller
+                    gendigtet form, ikke at give filologisk holdbare tekster. Indimellem skulle
+                    indholdet i de poetiske tekster komme til at betyde så meget for ham, at han
+                    forsynede digtene med sine egne versificerede refleksioner, som han kaldte
+                    &#x201C;Efterklange&#x201D;.</p>
+                <p rend="noIndent">Hans intentioner kom til at holde. Fire bind <hi rend="italic"
+                            ><rs type="title" key="title3299">Danne-Virke</rs></hi> blev det til i
+                    årene 1816-1819. En lang række af teksterne i <hi rend="italic"><rs type="title"
+                            key="title3299">Danne-Virke</rs></hi> kan derudover opfattes som
+                    penneprøver eller pilotprojekter til de større arbejder, Grundtvig havde planer
+                    om. Han udgav og oversatte livet igennem tekster, som kunne have passet ind i
+                        <hi rend="italic"><rs type="title" key="title3299">Danne-Virkes</rs></hi>
+                    program. Ud over <hi rend="italic"><rs type="title" key="title153">Danmarks
+                            Kr&#x00F8;nike af Saxo Grammaticus</rs></hi> (1818-1823) og <hi
+                        rend="italic"><rs type="title" key="title697">Norges Konge-Kr&#x00F8;nike af
+                            Snorro Sturles&#x00F8;n</rs></hi> (1818-1823) kan nævnes <hi
+                        rend="italic"><rs type="title" key="title326">Bjovulf</rs></hi> (1820, 2.
+                    udg. 1865), <hi rend="italic"><rs type="title" key="title431"
+                        >Rimkrøniken</rs></hi> (forarbejder 1826; i uddrag 1834 med flere nyskrevne
+                    samtidshistoriske kongedigte) og folkevisegendigtningerne i <hi rend="italic"
+                            ><rs type="title" key="title2516">Danske Kæmpeviser til
+                        Skole-Brug</rs></hi> (1847).</p></div>
+            <div>
+                <head xml:id="docIn16">Modtagelsen</head>
+            <p rend="noIndent"><persName key="pe50">Rasmus Rask</persName> anmeldte første nummer af
+                        <hi rend="italic"><rs type="title" key="title270">Danne-Virke</rs></hi> i
+                        <hi rend="italic"><rs type="title" key="title127">Dansk
+                            Litteratur-Tidende</rs>,</hi> nr. 30 1816, s. 467-479. Heri hæfter han
+                    sig særligt ved både <rs type="title" key="title3985"
+                        >&#x201C;Danne-Virke&#x201D;</rs>-digtet og <rs type="title" key="title4486"
+                        >&#x201C;Om dansk Poesi, Sprog og Historie&#x201D;</rs>. Især intentionerne
+                    i prosaartiklen &#x2014; &#x201C;at værne om disse Fædrenelandets
+                    Helligdomme&#x201D; (s. 468) &#x2014; tiltaler ham, mens han straks er mere
+                    skeptisk over for Grundtvigs metode og især over for hans mangel på
+                    sproghistorisk indsigt. De puristiske tanker om det danske sprogs renhed, som
+                    Grundtvig fremfører, tilbageviser <persName key="pe50">Rask</persName> ved en
+                    række eksempler på danske ord med især tysk eller græsk oprindelse, som
+                    Grundtvig
+                    bruger<!--. Dette kommer især til udtryk ved, at <persName key="pe50">Rask</persName> anfører en række af Grundtvig brugte &#x2018;danske&#x2019; ord, hvis især tyske eller græske (evt. via fransk eller andet mellemled) proveniens <persName key="pe50">Rask</persName> derefter redegør for-->
+                    (s. 469 f.). </p>
+                <p rend="noIndent">Som i tidligere omtaler af Grundtvigs arbejder kritiserer
+                    han
+                    Grundtvig for at bruge alt for mange &#x201C;ramislandske saavelsom ramtydske
+                    Udtryk og Vendinger&#x201D;, dvs. stærkt &#x2018;lugtende&#x2019; af islandsk
+                    eller tysk (s. 471). Ej heller er han begejstret for, at Grundtvig genoptager en
+                    række &#x201C;Almueord og Landskabsord&#x201D; (s. 471). Grundtvig svarede
+                        <persName key="pe50">Rask</persName> forholdsvis respektfuldt i <rs
+                        type="title" key="title4574">&#x201C;Til Læseren&#x201D;</rs>, der blev
+                    trykt i <hi rend="italic"><rs type="title" key="title270">Danne-Virke</rs></hi>
+                    1, s. 297-306.</p>
+                <p rend="noIndent">Ifølge <persName key="pe52">Lundgreen-Nielsen</persName> er det
+                    &#x2014; ud over en hånlig bemærkning i en provinsavis til hæfte 1 af bind 2
+                    &#x2014; ikke lykkedes at lokalisere andre
+                    anmeldelser<!--, idet de negative &#x2014; og efter Grundtvigs mening misvisende &#x2014; vurderinger i et par tyske blade, som Grundtvig selv henviser til, ikke har kunnet verificeres-->
+                        (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 851). En
+                    anonym og noget nedladende samleanmeldelse af bind 1-3 udkom i Halle 1821 (<rs
+                        type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 851).</p>
+            </div>
+        <!--  <div>
+               <head xml:id="docIn10">Litteratur</head>
+               <list type="simple"><item>http://www.nordiskliturgi.dk/DK/begravelse92.pdf</item>
+                   </list>
+          </div>-->
+           
+            <div type="litList"><head xml:id="docIn17">Anvendt litteratur</head>
+                
+                    <list type="litList">
+                   <!--<item> <span type="proofread"/><rs type="title" key="title3272"><hi rend="italic">Sangen om Bjovulf</hi></rs></item>
+                item><rs type="title" key="title2263"><hi rend="italic">Det Gamle Testamente</hi></rs></item>-->
+              
+                <item>Baggesen, Jens udg. (1816) <hi rend="italic"><rs type="title" key="title3601"                   >Danfana</rs>.</hi> København</item>
+                        <!--<item>Gotfred af Ghemen udg. (1495) <hi rend="italic"><rs key="title84" type="title">Den danska Kr&#x00F8;nicka</rs>.</hi> København</item>-->
+                    <item>Danne-Virke, se Grundtvig, N.F.S. (1816-1819)</item>
+                <item>Grundtvig, N.F.S. (1816) <rs type="title" key="title4577">“Til Jens Baggesen.
+                            (Aabent Feidebrev.)”</rs> i <hi rend="italic"><rs type="title"
+                                key="title538">Nyeste Skilderie af Kjøbenhavn</rs>,</hi> nr. 18, 2.
+                        marts, s. 273-280. København</item>
+                <!--<item>Grundtvig, N.F.S. (1816b) <rs type="title" key="title3985">“Danne-Virke”</rs> i <hi rend="italic"><rs type="title" key="title270">Danne-Virke et Tids-Skrift</rs>,</hi> bind 1, s. 1-15. København</item>-->
+                    <!--<item>Grundtvig, N.F.S. (1816c) <rs type="title" key="title4486">“Om dansk Poesi, Sprog og Historie”</rs> i <hi rend="italic"><rs type="title" key="title270">Danne-Virke et Tids-Skrift</rs>,</hi> bind 1, s. 16-35. København</item>-->
+                   <!-- <item>Grundtvig, N.F.S. (1816b) <rs type="title" key="title4574">“Til
+                                Læseren”</rs> i <hi rend="italic"><rs type="title" key="title270"
+                                    >Danne-Virke et Tids-Skrift</rs>,</hi> bind 1, s. 297-306.
+                            København</item>-->
+                <item><span type="proofread"/>Grundtvig, N.F.S. (1816-1819) <hi rend="italic"><rs
+                                    type="title" key="title3299">Danne-Virke et Tids-Skrift</rs>,
+                            </hi>bind 1-4. København</item>              
+                <item>Grundtvig, N.F.S. (1820) <rs type="title" key="title326"><hi rend="italic">Bjowulfs Drape. Et Gothisk Helte-Digt fra forrige Aar-Tusinde af Angel-Saxisk paa Danske Riim</hi></rs>. København</item>
+                        <item>Grundtvig, N.F.S. (1834) <hi rend="italic"><rs type="title" key="title85">Pr&#x00F8;ver af Den Gammel-Danske Rim-Kr&#x00F8;nike i en ny Skikkelse</rs>.</hi> København</item>                       
+                <item><span type="proofread"/>Grundtvig, N.F.S. (1847) <rs type="title" key="title2516"><hi rend="italic">Danske Kæmpeviser til Skole-Brug udvalgte og tillæmpede af Nik. Fred. Sev. Grundtvig</hi></rs>. København</item>
+                    <item>Grundtvig, N.F.S. (1855) <rs type="title" key="title4606">&#x201C;Den
+                                danske Sag&#x201D;</rs> i <hi rend="italic"><rs type="title"
+                                    key="title4610">Dannebrog</rs>,</hi> nr. 11, 23. marts.
+                            København</item>
+                        <item>Grundtvig, N.F.S. (1865) <hi rend="italic"><rs type="title"
+                                    key="title1406">Bjovulvs-Drapen, et Høinordisk Heltedigt, fra
+                            Anguls-Tungen fordansket</rs>.</hi> København</item>
+                <!--<item>Holberg, Ludvig (1742) <hi rend="italic"><rs type="title" key="title1669"
+                                >Jødiske Historie Fra Verdens Begyndelse, Fortsatt Til disse Tider,
+                                Deelt udi Tvende Parter</rs>,</hi> bind 1-2. København</item>-->
+                        <!--<item>Holberg, Ludvig (1729) <hi rend="italic"
+                            ><rs type="title" key="title1647">Dannemarks og Norges Beskrivelse</rs>.</hi> København</item>-->
+                <!--<item>Holberg, Ludvig (1749) <rs type="title" key="title1647"><hi rend="italic"
+                                    >Dannemarks og Norges Geistlige og Verdslige Staat, Anden
+                                    Edition, Forandret efter nærværende Tiids Tilstand, Forøget med
+                                    nogle nye Capitler</hi></rs>, 2. rev. forøgede opl. København
+                            [1729]</item>-->
+                       
+                <item><span type="proofread"/>Kok, Laurids Olufsen (1695) <rs type="title"
+                            key="title77">“Danevirkevisen”</rs> i Peder Syv udg. <hi rend="italic"
+                                ><rs type="title" key="title275">Et Hundrede Udvalde Danske Viser
+                                [...]</rs>.</hi> København</item>
+                        <item>Kok, Laurids Olufsen (1915) <hi rend="italic"><rs key="title5211" type="title">Introductio ad lingvam Danicam, puta Selandicam, in usum exterorum</rs></hi> i Henrik Bertelsen udg. <hi rend="italic"><rs key="title5211" type="title">Danske Grammatikere</rs></hi>, bind 1. København</item>
+                <item><span type="proofread"/>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14"><hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</hi></rs>. København</item>
+                <!--<item>[Lyschander, Claus Christoffersen] &amp; Birgitte Bille (1722) <hi
+                                rend="italic"><rs type="title" key="title4572">Hr. Jens Billes
+                                    Slegt-Register paa Danske Riim nesten for 100de Aar
+                                siden</rs>.</hi> København</item>-->
+                <item>Michelsen, William (1985) <rs type="title" key="title4575">“Introduktion til
+                            Danne-Virke I”</rs> i <hi rend="italic"><rs type="title" key="title337"
+                                >Grundtvig-Studier</rs>,</hi> nr. 37, s. 67-78. København</item>
+                <item><span type="proofread"/>Molbech, Christian udg. (1813-1817) <hi rend="italic"><rs type="title" key="title3369">Athene, et Maanedsskrift</rs>.</hi> København</item>
+                    <item>Molbech, Christian (1825) <hi rend="italic"><rs type="title" key="title86">Den Danske Riimkr&#x00F8;nike efter Gotfried af Ghemens udgave af Aaret 1495, trykt paa ny, med afvigende L&#x00E6;semaader i sildigere Udgaver, og Ordfortolkninger</rs>.</hi> København</item>
+                <!--<item>GRØN<span type="proofread"/>Müller, Peter Erasmus &amp; Jens Møller
+                            (1811-1836) <hi rend="italic"><rs type="title" key="title127">Dansk
+                                    Litteratur-Tidende</rs>.</hi> København</item>-->
+                    <item>Nyerup, Rasmus &amp; [Bertel Christian Sandvig] (1780-1784) <hi
+                                rend="italic"><rs type="title" key="title352">Levninger af
+                                    Middel-Alderens Digtekunst</rs>,</hi> bind 1-2. København</item>
+                       <!-- <item>GRØN<span type="proofread"/>(1803-1838) <hi rend="italic"><rs
+                                    type="title" key="title538">Nyeste Skilderie af
+                                Kjøbenhavn</rs>.</hi> København</item>-->
+                
+                <item>Rask, Rasmus Kristian (1816) <rs type="title" key="title4573">“Dannevirke, et
+                                Tidsskrift af N.F.S. Grundtvig, 1ste Hæfte”</rs> i <hi rend="italic"
+                                    ><rs type="title" key="title127">Dansk
+                                Litteratur-Tidende</rs></hi>, nr. 30, s. 467-479. København</item>
+                <!--<item>Resen, Peder Hansen (1668) <hi rend="italic"><rs type="title" key="title3873">Inscriptiones Haffnienses Latinæ Danicæ et Germanicæ unà cum inscriptionibus Amagriensibus Uraniburgicis et Stellæburgicis nec non duabus epistolis unâ Tychonis Brahe ad Peucerum missâ altera ejusdem sororis Sophiæ Brahe metrica Latina ad nobilem Danum Nicolaum Lange chymiæ studiosissimum scriptà</rs>.</hi> København</item>-->
+                <item><span type="proofread"/>[Sandvig, Bertel Christian] (1779) <rs type="title" key="title319"><hi rend="italic">Danske Sange af det ældste Tidsrum, indeholdende blandt andet nogle Danske og Norske Kongers Bedrifter. Af det gamle Sprog oversatte</hi></rs>. København</item>
+                  <!--  <item>GRØN? Saxo Grammaticus <hi rend="italic"><rs type="title" key="title83"
+                                    >Gesta Danorum</rs></hi> (da. Danmarkshistorien)</item>-->
+                        <item>Saxo Grammaticus (1610) <hi rend="italic"><rs type="title"
+                                    key="title333">Den Danske krønike Som Saxo Grammaticus skreff,
+                                    Halfffierde Hundrede Aar forleden. Først aff Latinen vdsæt,
+                                    flittelige offuerseet oc forbedret, Aar M. D. LXXV. Oc nu,
+                                    effter Kongelig Mayestatz Privilegium i 10. Aar icke at maa
+                                    efftertryckis, Paa Ny Prentet</rs>,</hi> overs. Anders Sørensen
+                            Vedel. København</item>
+                        <item><span type="proofread"/>Saxo Grammaticus (1818-1823) <rs type="title"
+                                key="title153"><hi rend="italic">Danmarks Krønike af Saxo
+                                    Grammaticus</hi></rs>, overs. N.F.S. Grundtvig, bind 1-3.
+                            København</item>
+                        <!-- <item>Saxo Grammaticus (2005) <rs type="title" key="title2955"><hi rend="italic">Gesta Danorum</hi></rs> (da. <hi rend="italic">Danmarkshistorien</hi>), udg. Karsten Friis-Jensen &amp; Peter Zeeberg  1-2. København</item>
+                        <item>GRØN? Snorre Sturluson <rs type="title" key="title551"><hi
+                                    rend="italic">Heimskringla</hi></rs></item>-->
+                        <item><span type="proofread"/>Snorre Sturluson (1818-1822: 1823) <rs
+                                type="title" key="title697"><hi rend="italic">Norges Konge-Krønike
+                                    af Snorro Sturlesøn</hi></rs>, overs. N.F.S. Grundtvig, bind
+                            1-3. København</item>
+             <!--  <item><span type="proofread"/>Steffens, Henrich (1996) <rs type="title"
+                                key="title118"><hi rend="italic">Indledning til philosophiske
+                                    Forelæsninger</hi></rs>, udg. Johnny Kondrup. København
+                            [1803]</item>-->
+                <item><span type="proofread"/>Syv, Peder (1695) <hi rend="italic"><rs type="title" key="title275">Et Hundrede Udvalde Danske Viser, Om Allehaande merkelige Krigs-Bedrivt og anden selsom Eventyr, Som sig her udi Riget Ved Gamle Kemper, Navnkundige Konger, og ellers fornemme Personer begivet haver, af Arilds Tid til denne nærværende Dag. Forøgede med det Andet Hundrede Viser Om Danske Konger, Kæmper og Andre, Samt hosføiede Antegnelser, Til Lyst og Lærdom</rs>.</hi> København</item>
+                <item>Toldberg, Helge (1950) <rs type="title" key="title603"><hi rend="italic">Grundtvigs Symbolverden</hi></rs>. København</item>
+               <!-- <item><span type="proofread"/>GRØN. MÅSKE BURDE VI OPRETTE EN IDEALTITEL Toldberg,
+                            Helge udg. (1961) <rs type="title" key="title242"><hi rend="italic">Den
+                                    danske Rimkrønike</hi></rs> 1-3, bind 1: <hi rend="italic">Den
+                                danske rimkrønike, Ghementrykket 1495 med variantapparat</hi>
+                            [1495]. København</item>-->
+                </list></div>
+              
+             <!--   <div xmlns:TEI="http://www.tei-c.org/ns/1.0"><head xml:id="docIn19">Utrykt</head>
+                    <list type="litList">
+                        <item>Kok, Laurids (1600-1699) <rs type="title" key="title4571">“Introductio ad lingvam Danicam, puta Selandicam, in usum exterorum”</rs>, ms. i NKS 203 f oktav, Det Kongelige Bibliotek, København</item>
+                    </list>
+                </div>-->
+                
+        </body>
+    </text>
+</TEI>

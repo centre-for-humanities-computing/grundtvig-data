@@ -1,0 +1,679 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+                        <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Kong Harald og Ansgar. Rim-Blade af Danmarks Kirke-Bog til Jubel-Aaret</title>
+                <title rend="shortForm">Kong Harald og Ansgar</title>
+                <author>Else Riisager</author>
+                <editor role="editor2">ph.d. Peter Balslev-Clausen</editor>
+                <editor role="editor3">Johnny Kondrup</editor>
+                <editor role="editor1">Vibeke A. Pedersen</editor>
+                <editor role="student1">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+                <editor role="student2">Frederik Drei&#x00F8;e Seidelin</editor>
+             </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.5</idno>
+          <idno type="technic">1.5.1</idno> 
+                </edition><!-- <idno type="content">1.3</idno>
+          <idno type="technic">1.3.1</idno> -->
+            </editionStmt>
+            <extent>114 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                
+                <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note target="1826_436A_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="intro" target="1826_436A_intro.xml">Indledning</note>
+            </notesStmt>
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+            <encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+                <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+                                                                                                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+                                                                                                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+                                                                        </editorialDecl>
+                
+            </encodingDesc>
+            <revisionDesc>
+                <change xml:id="ELR" who="ELR" when="2012-07-17">etablering af fil; metrik</change>
+                <change who="ELR" when="2012-07-18">afsnit 1</change>
+                <change who="ELR" when="2012-07-27">rev. af afsnit 1; kladde til afsnit 2</change>
+                <change who="ELR" when="2012-07-30">digtkredsens efterliv; afsnit 2</change>
+                <change who="ELR" when="2012-08-01">afsnit 2 f&#x00E6;rdig</change>
+                <change who="ELR" when="2012-08-03">supplement til udgivelser</change>
+                <change who="ELR" when="2012-08-08">afsnit 3 f&#x00E6;rdigt</change>
+                <change who="ELR" when="2012-08-09">gennemsyn af afsnit 7;</change>
+                <change who="ELR" when="2012-08-14">afsnit 4 f&#x00E6;rdigt</change>
+                <change who="ELR" when="2012-08-22">genneml&#x00E6;sning af afs. 1,2,3 og 4</change>
+                <change who="ELR" when="2012-08-23">afsnit 8 f&#x00E6;rdigt; 1. del af afs. 5</change>
+                <change xml:id="FDS" who="FDS" when="2012-08-28">Begyndt opm&#x00E6;rkning til databaser; erstatning af skarpe parenteser med heksadecimalkoder.</change>
+                <change who="FDS" when="2012-08-30">F&#x00E6;rdiggjort opm&#x00E6;rkning til databaser.</change>
+                <change who="ELR" when="2012-09-03">danske overs&#x00E6;ttelser af latinske titler efter NWB; set kodningen; delvist afsnit 5</change>
+                <change who="ELR" when="2012-09-05">f&#x00E6;rdigskrevet</change>
+                <change who="ELR" when="2012-09-06">gennemset og r&#x00E5;kodet det sidste</change>
+                <change who="ELR" when="2012-09-07">kodning af hyppigste titler</change>
+                <change who="ELR" when="2012-09-23">rettet efter 1. redaktion; filen valid</change>
+                <change who="ELR" when="2012-09-25">alle personnavne opm&#x00E6;rkede</change>
+                <change who="ELR" when="2012-11-05">tilretning i metrik</change>
+                <change who="FDS" when="2012-11-22">fjernet personnavnsm&#x00E6;rker i litteraturlisten</change>
+                <change who="ELR" when="2013-04-11">&#x00E6;ndret kodning af Anvendt litteratur</change>
+                <change who="ELR" when="2013-05-17">ref til ny sti; gennemset f&#x00F8;r 3. redaktion</change>
+                <change who="ELR" when="2013-05-21">unicodes via stylesheet, gennemset</change>
+                <change who="ELR" when="2013-06-18">&#x00E6;ndret ref i vejledninger til web</change>
+                <change who="ELR" when="2013-06-28">oprettet title2389-2392</change>
+                <change who="ELR" when="2013-09-17">rettet efter 3. redaktion, indtil afs. 2.2, midt p&#x00E5; side 5 </change>
+                <change who="ELR" when="2013-09-18">rettet f&#x00E6;rdig efter 3. redaktion, mangler litteraturliste og titelm&#x00E6;rkning</change>
+                <change who="ELR" when="2013-09-19">litteraturliste tilrettet, titelm&#x00E6;rkning f&#x00E6;rdig</change>
+                <change who="ELR" when="2013-09-25">genneml&#x00E6;st, valid</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+                <change who="ELR" when="2014-03-14">efterset og tilrettet; rettet Grundvig</change>
+                <change who="ELR" when="2014-10-23">tilrettet readMore; fjernet anførselstegn ved quote; kontrol af mellemrum; indsat unicodes ved kantede parentes; valid; ændringer i links</change>
+            </revisionDesc>
+       
+             
+    </teiHeader>
+    <text type="intro">
+        <body>
+   
+
+<div>
+   <head xml:id="docIn1">Digtkreds om kong Harald og Ansgar</head> 
+    <!--Kort karakteristik af emne, genre og baggrund ud fra titelbladet; v&#x00E6;rkets indhold.  -->
+    
+    <p rend="noIndent"></p>
+    
+    
+    <p rend="noIndent"><hi rend="italic"><rs type="title" key="title227">Kong <persName key="pe40">Harald</persName> og <persName key="pe17">Ansgar</persName>. Rim-Blade af Danmarks Kirke-Bog til Jubel-Aaret</rs></hi> blev digtet af N.F.S. Grundtvig i for&#x00E5;ret 1826 og udkom den 9. maj. Bogens anledning var fejringen af tusind&#x00E5;ret for <persName key="pe17">Ansgars</persName> komme til Danmark i 826. Jubil&#x00E6;umsfestligheden, der var den officielle markering af tusind&#x00E5;ret for den danske kirkes grundl&#x00E6;ggelse, var fastlagt til 1. pinsedag, den 14. maj 1826.</p>
+    <p rend="firstIndent">Mens Grundtvigs <hi rend="italic"><rs type="title" key="title32">Danske H&#x00F8;itids-Psalmer til Tusindaars-Festen</rs></hi> fra 28. april var skrevet med henblik p&#x00E5; at blive sunget ved festgudstjenesterne, s&#x00E5; bragte <hi rend="italic">Kong <persName key="pe40">Harald</persName> og <persName key="pe17">Ansgar</persName>
+</hi> den historiske baggrund for jubil&#x00E6;et, samtidig med at v&#x00E6;rket satte de historiske tildragelser i relation til samtidens kirkelige forhold. &#x201C;<rs type="title" key="title34">Den signede Dag</rs>&#x201D; fra <rs type="title" key="title32"><hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi></rs> 1826 blev med tiden en vidt udbredt og h&#x00F8;jt skattet salme. Digtkredsen om kristendommens begyndelse i Danmark fik langtfra samme gennemslagskraft til trods for, at den i en alment tilg&#x00E6;ngelig form og p&#x00E5; en underholdende m&#x00E5;de giver et indblik i et vigtigt afsnit af Danmarkshistorien. </p>
+    <p rend="firstIndent">V&#x00E6;rket indledes med et motto, der er Grundtvigs danske overs&#x00E6;ttelse af et par vers fra et af de to gennemg&#x00E5;ende forl&#x00E6;g, <rs type="title" key="title1174"><persName key="pe699">Ermoldus Nigellus'</persName> latinske digt</rs> om kong <persName key="pe40">Harald Klaks</persName> d&#x00E5;b i 826 hos den frankiske kejser, <persName key="pe298">Ludvig den Fromme</persName>. Dern&#x00E6;st indeholder det et hyldestdigt i strofisk form til den danske monark i 1826, &#x201C;<rs type="title" key="title687">Dansk Jubel-Hilsen til Kong <persName key="pe96">Frederik den Sjette</persName></rs>&#x201D;. Digtet kan desuden opfattes som en tilegnelse af v&#x00E6;rket til kongen (se <rs type="title" key="title317"><hi rend="italic">Poetiske Skrifter</hi> 5 1883</rs>, s. 407 og 453).</p>
+    <p rend="firstIndent">Digtkredsen best&#x00E5;r af fire digte, hvoraf de tre f&#x00F8;rste er historiske digte med episk-dramatiske, fortl&#x00F8;bende vers og stilm&#x00E6;ssigt p&#x00E5;virkede af <rs type="title" key="title242">Den danske Rimkr&#x00F8;nike</rs>, mens det sidste er et langt, strofisk digt. &#x201C;<rs type="title" key="title688">
+<persName key="pe40">Harald Klak</persName></rs>&#x201D; handler om den danske konge og hans f&#x00F8;lges d&#x00E5;b og ophold hos den m&#x00E6;gtige kejser p&#x00E5; hans borg Ingelheim ved Mainz, og et gennemg&#x00E5;ende tema er en sammenstilling af dansk og frankisk religion og kultur. &#x201C;<rs type="title" key="title689">Ansgar &#x0254;: &#x00C6;sger</rs>&#x201D; beskriver <persName key="pe17">Ansgars</persName> liv og hans missionsarbejde i Norden, da det var ham, der blev udvalgt til at f&#x00F8;lge med <persName key="pe40">Harald</persName> tilbage til Danmark.  &#x201C;<rs type="title" key="title690"><persName key="pe303">Rimbert</persName></rs>&#x201D; er en hyldest til <persName key="pe17">Ansgars</persName> liv og gerning af hans biograf og efterf&#x00F8;lger. Endelig skildrer &#x201C;<rs type="title" key="title691">Christi Kirke</rs>&#x201D; den hellige, almindelige kirkes historie med hovedv&#x00E6;gt p&#x00E5; den samtidige, danske kirke.</p>
+</div>
+
+<div>
+    <head xml:id="docIn2">Den samtidshistoriske baggrund</head> 
+      
+    <p rend="noIndent">Fejringen af tusind&#x00E5;rsjubil&#x00E6;et for kristendommens komme til Danmark med kong <persName key="pe40">Haralds</persName> d&#x00E5;b og <persName key="pe17">Ansgars</persName> mission var den ydre anledning til Grundtvigs v&#x00E6;rk <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs>.</hi> I de f&#x00F8;lgende afsnit er v&#x00E6;rket fors&#x00F8;gt sat ind i en lidt bredere, samtidshistorisk kontekst. F&#x00F8;rst pr&#x00E6;senteres andre udgivelser i anledning af jubil&#x00E6;et. Dern&#x00E6;st skitseres Grundtvigs teologiske standpunkter p&#x00E5; tidspunktet for <hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le</rs></hi> og hans angreb p&#x00E5; samtidens rationalistiske teologer i <persName key="pe111">H.N. Clausens</persName> skikkelse. Derefter belyses Grundtvigs inspiration fra <rs type="title" key="title242">Den danske Rimkr&#x00F8;nike</rs>. Til sidst ses v&#x00E6;rket i forhold til hans personlige situation. Da v&#x00E6;rket er mere alment litter&#x00E6;rt end teologisk, freml&#x00E6;gges problemstillingerne fortrinsvis ved hj&#x00E6;lp af beskrivelser hentet fra Grundtvigs brevvekslinger.</p> <!-- (i den udstr&#x00E6;kning, det afspejler sig i v&#x00E6;rket) -->
+    
+    <div>
+        <head xml:id="docIn3">Tusind&#x00E5;rsjubil&#x00E6;et for den danske kirke</head>
+               
+        <p rend="noIndent">Det officielle jubil&#x00E6;um var ved en <rs type="title" key="title557">kongelig resolution af 10. marts 1826</rs> blevet bestemt til at skulle fejres ved festgudstjenester i alle landets kirker 1. pinsedag, den 14. maj 1826. Men inden da var det blevet forberedt gennem udgivelsen af officielle skrivelser og af v&#x00E6;rker, udgivet p&#x00E5; privat initiativ.</p>
+        <p rend="firstIndent">Et hyrdebrev til landets pr&#x00E6;ster var blevet forfattet af biskop <persName key="pe109">Friederich M&#x00FC;nter</persName> i samarbejde med landets &#x00F8;vrige biskopper. Rundskrivelsen fik titlen <hi rend="italic"><rs type="title" key="title225">Antistitvm Ecclesi&#x00E6; Danic&#x00E6;, Slesvico-Holsatic&#x00E6; et Lavenbvrgensis Epistola encyclica ad Clervm, de Ivbil&#x00E6;o ob secvlvm decimvm Religionis Christian&#x00E6; in Patria feliciter exactvm die XIV Maii pie celebrando</rs></hi> (da. Biskopperne for den danske, slesvigsk-holstenske og lauenborgske kirkes hyrdebrev til gejstligheden om jubil&#x00E6;et forud for, at den kristne religions lykkelige tusind&#x00E5;r i f&#x00E6;drelandet med fromhed vil blive fejret den 14. maj). Det rundsendtes og blev godkendt af alle landets biskopper. Desuden blev hyrdebrevet sendt til genneml&#x00E6;sning hos <persName key="pe96">kongen</persName>, der udtrykte sin tilfredshed med det.</p>
+        
+        <p rend="firstIndent"><rs type="title" key="title225">Hyrdebrevet</rs> rummede en fyldig historisk redeg&#x00F8;relse for kristendommens komme til Danmark. Fra og med &#x00A7; 7 og 8, der er indg&#x00E5;ende refereret af <persName key="pe334">Alexander Rasmussen</persName> (<rs type="title" key="title217">1925</rs>, s. 206-210), bev&#x00E6;gede hyrdebrevet sig dog fra det historiske over til at behandle aktuelle problemer. Disse bestod i en tiltagende religi&#x00F8;s v&#x00E6;kkelse og almuens opr&#x00F8;rstendenser mod gejstligheden. Desuden var der blandt de gejstlige en uklar stillingtagen til et af datidens centrale teologiske emner, forholdet mellem fornuft og &#x00E5;benbaring. Hyrdebrevets forfattere mente, at 1700-tallets rationelt pr&#x00E6;gede teologi blev lagt for had af de moderne &#x00E5;benbarings- og bibelteologer, der undergravede rationalismen ved ad forskellige veje at s&#x00F8;ge tilbage til <rs type="title" key="title788">Bibelen</rs>. <!-- If&#x00F8;lge hyrdebrevet skulle kirkens dogmer og deres udspring i kilderne forkyndes rent og purt. -->
+</p>
+        <p rend="firstIndent">Det var p&#x00E5; foranledning af biskoppen over Lolland-Falsters stift, <persName key="pe364">P.O. Boisen</persName>, at hyrdebrevet var blevet udvidet med de omtalte &#x00A7; 7 og 8 og deres betragtninger over &#x201C;den nuv&#x00E6;rende Tidsalders Aand&#x201D;. De h&#x00E5;rde udfald i hyrdebrevet sigtede uden tvivl til Grundtvig og hans forbundsf&#x00E6;lle, teologen <persName key="pe80">J.C. Lindberg</persName>, igennem hvem han var kommet i kontakt med de religi&#x00F8;st vakte.</p>
+        
+        <p rend="firstIndent">Foruden i sin latinske original skulle den del af hyrdebrevet, der handlede om <persName key="pe40">Harald Klaks</persName> d&#x00E5;b, ogs&#x00E5; udbredes i popul&#x00E6;r form p&#x00E5; dansk. Det skete under titlen <hi rend="italic"><rs type="title" key="title215">Om Kong Harald Klaks Daab og den Christelige Kirkes Begyndelse i Danmark. Et Skrivt for den danske Borger og Landmand, udgivet i F&#x00F8;lge Kongelig allernaadigst Befaling</rs></hi>. Ogs&#x00E5; dette skrift blev tilskrevet biskop <persName key="pe109">M&#x00FC;nter</persName> og indeholdt som en del af sin grundige historiske fremstilling en versificeret overs&#x00E6;ttelse ved <persName key="pe24">Knud Lyne Rahbek</persName> af <rs type="title" key="title1174"><persName key="pe699">Ermoldus Nigellus'</persName> samtidige digt</rs> om <persName key="pe40">Harald Klaks</persName> d&#x00E5;b. Som et till&#x00E6;g bragte bogen &#x201C;Nogle Jubelpsalmer&#x201D; af blandt andre <persName key="pe138">B.S. Ingemann</persName> og provst <persName key="pe342">Frederik Schmidt</persName>. Skriftet udkom ligeledes p&#x00E5; tysk i Slesvig.</p>
+        
+        <p rend="firstIndent">Ud over Grundtvig var der andre, som p&#x00E5; formodentlig privat initiativ udgav skrifter i anledning af jubil&#x00E6;et. Blandt disse kan n&#x00E6;vnes <persName key="pe927">Rasmus S&#x00F8;rensen</persName> med pjecen <hi rend="italic"><rs type="title" key="title2780">Ansgarius eller en kort eenfoldig Historie, for B&#x00F8;rn og Almue, om Christendommens f&#x00F8;rste Indf&#x00F8;relse iblandt vore hedenske Forf&#x00E6;dre</rs>.</hi> Den unge forfatter var tidligere kommet i forbindelse med Grundtvig i anledning af en omvendelseskrise og kendte ligeledes <persName key="pe80">J.C. Lindberg</persName> personligt. Efter jubil&#x00E6;umsdagen blev ogs&#x00E5; adskillige af de pr&#x00E6;dikener trykt, der havde v&#x00E6;ret holdt rundt om i kirkerne.</p>
+        
+        <p rend="firstIndent">I Nordtyskland var der p&#x00E5; denne tid en righoldig litteratur om kirkens tusind&#x00E5;r, <persName key="pe17">Ansgar</persName> og hans missionsarbejde. Fra 1820 udsendte <persName key="pe928">Ernst Christian Kruse</persName> flere afhandlinger om jubil&#x00E6;et, bl.a. i 1823 en historisk afhandling med kommentarer, <hi rend="italic"><rs type="title" key="title2392">St. Anschar</rs>.</hi> Af andre udgivelser kan n&#x00E6;vnes en tysk overs&#x00E6;ttelse fra 1826 af bl.a. <persName key="pe17">Ansgars</persName> helgenbiografi: <hi rend="italic"><rs type="title" key="title2796">Leben des St. <persName key="pe930">Willehad's</persName> und St. Ansgar's. Ersteres beschrieben von St. Ansgar, letzteres von dessen Nachfolger dem bremischen und hamburgischen Erzbischof <persName key="pe303">Rembert</persName>. Nebst einem Briefe Ansgar's</rs></hi> (da. Skt. Willehads og Skt. Ansgars levned. F&#x00F8;rstn&#x00E6;vnte beskrevet af Skt. Ansgar, sidstn&#x00E6;vnte af Rembert, hans efterf&#x00F8;lger som bremisk og hamburgensisk &#x00E6;rkebiskop. Derudover et brev fra Ansgar). De latinske tekster var oversat og kommenteret af <persName key="pe929">Carsten Miesegaes</persName>, der underskrev forordet den 1. april 1826 i Bremen, der i sin tid var <persName key="pe17">Ansgars</persName> &#x00E6;rkebispes&#x00E6;de.</p>
+<!-- opstilling 8,1, beg.; forord indeholder langt, lovprisende citat om Ansgar fra M&#x00FC;nters kirkehistorie; subskriptionsliste med bl.a. M&#x00FC;nter -->
+        <p rend="firstIndent">Heller ikke i Sverige gik jubil&#x00E6;et up&#x00E5;agtet hen. I anledning af tusind&#x00E5;rsjubil&#x00E6;et kom i 1826 en svensk, biografisk beskrivelse med titlen <hi rend="italic">
+<rs type="title" key="title2784">Nordens f&#x00F6;rste l&#x00E4;rare <persName key="pe17">Ansgarius</persName>, Erke-Biskop i Hamburg, samt Nordens f&#x00F6;rste Primas <persName key="pe931">Eskil</persName>, Erke-Biskop i Lund</rs></hi><!--  (jf. F&#x00F6;rord, s. &#x005B;III&#x005D;) -->. <persName key="pe933">J.P. Landtmanson</persName> n&#x00E6;vner p&#x00E5; titelbladet, at portr&#x00E6;tterne er &#x201C;Tecknade af <persName key="pe109">Fr. M&#x00FC;nter</persName>&#x201D; og oversat af ham selv, men der er nok snarere tale om en sammenskrivning af <persName key="pe109">Friederich M&#x00FC;nters</persName> kirkehistorie og andre kilder.</p>
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn4">Grundtvigs nye kristendomsforst&#x00E5;else og de rationalistiske teologer</head> 
+        
+        <p rend="noIndent">Det officielle hyrdebrevs skarpe udtalelser mod de opr&#x00F8;rske, bibeltro pr&#x00E6;ster var uden navns n&#x00E6;vnelse, men med tydelig adresse til Grundtvig og hans meningsf&#x00E6;ller. Mistilliden fra de toneangivende, rationalistiske teologer og embedsm&#x00E6;nd med bl.a. professor <persName key="pe700">C.Fr. Horneman</persName> og stiftsprovst <persName key="pe340">H.G. Clausen</persName> i spidsen var blevet kendeligt forst&#x00E6;rket i eftersommeren 1825 ved Grundtvigs angreb p&#x00E5; den nyligt udn&#x00E6;vnte professor <persName key="pe111">H.N. Clausens</persName> dogmatiske afhandling <hi rend="italic"><rs type="title" key="title174">Catholicismens og Protestantismens Kirkeforfatning, L&#x00E6;re og Ritus</rs></hi>. I sit modskrift <hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le mod Professor Theologi&#x00E6; Dr. <persName key="pe111">H.N. Clausen</persName></rs></hi> argumenterede Grundtvig med baggrund i sin nyvundne &#x201C;magel&#x00F8;se opdagelse&#x201D;, if&#x00F8;lge hvilken han ikke l&#x00E6;ngere fandt grundlaget for kristendommen i <rs type="title" key="title788">Bibelen</rs>, men i menighedens f&#x00E6;llesskab omkring den apostolske trosbekendelse og sakramenterne d&#x00E5;b og nadver. I den f&#x00F8;lgende gennemgang af konfliktpunkterne er is&#x00E6;r de temaet pr&#x00E6;senteret, der har sat sig spor i digtet &#x201C;<rs type="title" key="title691">Christi Kirke</rs>&#x201D;.</p>
+        
+        <p rend="firstIndent"><persName key="pe111">Clausens</persName> v&#x00E6;rk udkom den 21. august, og Grundtvigs er dateret den 26. august. I et brev til <persName key="pe138">Ingemann</persName> fra august 1825 skrev han, at han dagligt blev draget dybere ind i en strid, som han ikke m&#x00E5;tte undvige. &#x201C;Kirkens Fjender rase nu frem i Blindhed, og det er mig klart, Kristi Kirkes Tusindaarsfest i Norden vil blive Kristne uforglemmelig&#x201C;, skrev han og refererede bl.a. til <persName key="pe111">Clausens</persName> bog. Han fortsatte: 
+            <p rend="quote">Gud v&#x00E6;re lovet, at jeg f&#x00F8;r denne store Time fik &#x00D8;je paa den Kirkens Klippe, vi med <persName key="pe42">Luther</persName>, Gud ske Lov, have bygget paa, men som i mange Aarhundreder dog har v&#x00E6;ret skjult for Menighedens &#x00D8;je: det er de kristnes oprindelige, altsaa uforanderlige Trosbekjendelse (vore tre Tros-Artikler), som ved Sakramenterne aabenbar har gjort alle Kirkens Gjerninger, og nu er dens Vidnesbyrd; thi nu staar jeg ikke mere Fare for at d&#x00F8;mme nogen eller noget efter min Skriftfortolkning, der, naar den er sikrest, dog ej siger mig bestemt, hvor Gr&#x00E6;nsen er mellem Kristenhedens og Kj&#x00E6;tteriets Enem&#x00E6;rker (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 69).</p>
+            
+            <!-- hovedpunkter; skrifttolkning udfra fornuft; eksegetisk paved&#x00F8;mme; levende kirke modsat d&#x00F8;d skrifttolkning; kristennavn eller l&#x00E6;re; falske l&#x00E6;rere, der forf&#x00F8;rer  -->
+            I <hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le</rs></hi> var en af Grundtvigs hovedindvendinger mod <persName key="pe111">Clausen</persName>, at hans l&#x00E6;re byggede p&#x00E5; <rs type="title" key="title788">Bibelen</rs> som eneste autoritet med en skrifttolkning, der tog sit udgangspunkt i fornuften. <persName key="pe111">Clausen</persName> havde skrevet, &#x201C;at Aabenbaringen kun ved Fornuften bliver tilgj&#x00E6;ngelig for Mennesket&#x201D; (<rs type="title" key="title174">1825</rs>, s. 309; se <rs type="title" key="title20">R&#x00F8;nning 1911</rs>, bind 3:1, s. 109). Derved fravalgte <persName key="pe111">Clausen</persName> if&#x00F8;lge Grundtvig kirkens historiske vidnesbyrd og blev eksponent for det &#x201C;exegetiske Pavedom&#x201D;, hvor de uddannede teologer tog patent p&#x00E5;, hvad der var sand kristendom.
+            <p rend="quote">Det var nu &#x201C;kommet saa vidt, at selv den yngste Professor paa vor H&#x00F8;iskole vil, som <hi rend="romanType">summus Theologus</hi> &#x005B;da., den &#x00F8;verste teolog&#x005D;, v&#x00E6;re Menighedens exegetiske Pave, paa hvis Bud den historisk-christelige Kirke skal nedrives, og en ny bygges&#x201D; <!--  &#x005B;af lutter theologisk Maculatur: af de mod hinanden protesterende exegetiske Collegie-Hefter, i hvilket sig selv oph&#x00E6;vende Luft-Castel den Christne Menighed skal bekiende, at den <hi rend="italic">troer eens</hi>, men <hi rend="italic">veed ikke hvad!</hi>&#x005D;--> (<hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le</rs>,</hi> s. 32).</p>
+            Over for fornuftens d&#x00F8;de bogstavl&#x00E6;re pegede Grundtvig p&#x00E5;, at den sande kirke var den levende kirke, som fandtes i menighedens vidnesbyrd. <persName key="pe45">Kristus</persName> er levende til stede i sin menighed ved d&#x00E5;b og nadver. <persName key="pe45">Kristus</persName> er det levende ord, og det havde altid v&#x00E6;ret i menigheden sammen med den apostolske trosbekendelse, fadervor og indstiftelsesordene ved sakramenterne (<rs type="title" key="title1182">Lausten 2004</rs>, s. 221). Grundtvig kr&#x00E6;vede derfor i fortalen, at <persName key="pe111">Clausen</persName> &#x201C;<hi rend="italic">enten</hi> &#x005B;skulle&#x005D; gi&#x00F8;re den Christelige Kirke h&#x00F8;itidelig Afbigt for sin uchristelige og forargelige L&#x00E6;rdom, <hi rend="italic">eller</hi> nedl&#x00E6;gge sit Embede og afl&#x00E6;gge sit christne Navn&#x201D; (<hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le</rs>,</hi> s. IV).</p>
+        
+        <p rend="firstIndent">Grundtvig indklagede <persName key="pe111">Clausen</persName> for en kirkelig ret, men <persName key="pe111">Clausens</persName> svar var at anl&#x00E6;gge injuriesag for den borgerlige. Grundtvig og hans gode ven <persName key="pe138">Ingemann</persName> var enige om, at kravet til <persName key="pe111">Clausen</persName> om at afl&#x00E6;gge sit navn af kristen var med til at fremkalde injuriesagen (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 70-72). Men p&#x00E5; <persName key="pe138">Ingemanns</persName> indvendinger mod kravet og nogle andre p&#x00E5;stande svarede Grundtvig den 4. november 1825, &#x201C;at jeg, Gud ske Lov! ikke fortryder at have skrevet dem&#x201D; (s. 72). Han fortsatte bl.a.: 
+            <p rend="quote">at han &#x005B;<persName key="pe111">Clausen</persName>&#x005D; uden kristelig Tro ej har mindste Ret til at b&#x00E6;re det &#x005B;kristne Navn&#x005D;, det kan vi soleklart bevise, og at han altsaa ved at ville v&#x00E6;re en vantro Kristen gj&#x00F8;r sig selv til en falsk Kristen, hvad Kirken kalder en Kj&#x00E6;tter; thi medens det er ham uforment at kalde sig Jesuit, Kristolog eller hvad der ellers kan betegne et eget frit Forhold til <persName key="pe45">Kristus</persName>, maa han, efter Fortalens Udtryk, <hi rend="italic">som &#x00E6;rlig Mand,</hi> n&#x00F8;dvendig opgive enhver Fordring paa at hedde <hi rend="italic">Kristen,</hi> naar han vrager den <hi rend="italic">Tro,</hi> for hvis Bekjendere det kristne Navn gjennem Historien er ejendommeligt (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 74-75).</p>
+           Ogs&#x00E5; fortalens angreb p&#x00E5; en &#x201C;falsk L&#x00E6;rer&#x201D; (<hi rend="italic"><rs type="title" key="title226">Kirkens Gienm&#x00E6;le</rs>,</hi> s. IV) fastholdt han: 
+            <p rend="quote">At oplyste Kristne nu maa hade og &#x005B;af&#x005D; al Magt bestride en Falskhed, der uds&#x00E6;tter de umyndige og ubef&#x00E6;stede for under Kristendommens Skin at forf&#x00F8;res fra kristelig Tro, og som gj&#x00F8;r Historiens Vidnesbyrd om Kristendommens velsignede Virkninger til et Skalkeskjul for dens Fjender, <hi rend="italic">det</hi> er jo dog indlysende (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 75).</p>
+        </p> 
+           
+    </div>
+       
+     
+       <div>
+           <head xml:id="docIn5">Grundtvigs motivation og hans interesse for Rimkr&#x00F8;niken</head>
+           
+           <p rend="noIndent">Striden skabte et um&#x00E5;deligt r&#x00F8;re, og det t&#x00E6;rede uden tvivl p&#x00E5; Grundtvig, at han havde p&#x00E5;draget sig &#x201C;det haardeste og afskyeligste, jeg kjender: en Injurieproces&#x201D; (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 72). For ham var konflikten et samvittighedssp&#x00F8;rgsm&#x00E5;l, som han skrev til <persName key="pe23">Christian Molbech</persName> (<rs type="title" key="title16">Molbech og Grundtvig 1888</rs>, s. 141). Men han fandt dog lyspunkter. I samme brev fra 28. marts 1826 gav han udtryk for, at han h&#x00E5;bede, at han snart ville f&#x00E5; bedre mulighed for at besk&#x00E6;ftige sig med, &#x201C;hvad der er mit Hjertes Lyst, og, i al den Tid jeg kan afvinde Striden, alt l&#x00E6;nge min ivrige Syssel: poetisk og historisk, saa godt jeg kan, at opklare saavel det christelige, som det danske Folke-Liv i de forrige Tider, uden med mindste Tvang at ville sammenblande deres Tr&#x00E6;k, eller lade dem ski&#x00E6;re hinanden, uden hvor de historisk m&#x00F8;des&#x201D; (<rs type="title" key="title16">Molbech og Grundtvig 1888</rs>, s. 141). Et s&#x00E5;dant arbejde er netop et v&#x00E6;rk som <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs></hi> et resultat af. <!-- I de f&#x00F8;lgende &#x00E5;r videreudviklede Grundtvig det for ham centrale, litter&#x00E6;re greb, han kaldte det historisk-poetiske &#x005B;se specialet, kap. II&#x005D;. -->
+</p>
+           <p rend="firstIndent">I denne periode genoptog Grundtvig sin besk&#x00E6;ftigelse med den middelalderlige <rs type="title" key="title242">danske rimkr&#x00F8;nike</rs>. Hans fascination af skriftet stammede fra ca. 1815 og havde bl.a. sat sig spor i en udgivelse af dele af <rs type="title" key="title242"><hi rend="italic">Rimkr&#x00F8;niken</hi>
+</rs> i <rs type="title" key="title270"><hi rend="italic">Danne-Virke</hi> 1 1816</rs> (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 297) og en afhandling om den i <rs type="title" key="title272"><hi rend="italic">Danne-Virke</hi> 4 1818-1819</rs> (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>
+</hi> 342) (se <rs type="title" key="title2746">Toldberg 1954</rs>, s. 40-95). Den ydre anledning til genoptagelsen var <persName key="pe23">Christian Molbechs</persName> udgave af <hi rend="italic"><rs type="title" key="title86">Den danske Riimkr&#x00F8;nike</rs></hi> i december 1825 (<rs type="title" key="title245">Bogfortegnelsen 1839</rs>, nr. 2435). Grundtvig skrev til <persName key="pe23">Molbech</persName>: &#x201C;Denne Bog har, lige siden jeg fik den, som stedse ved et godt Tilf&#x00E6;lde, fra Jul til Paaske v&#x00E6;ret min daglige, eller, da Dagen tit var optaget, snarere min natlige L&#x00E6;sning&#x201D; (<rs type="title" key="title16">Molbech og Grundtvig 1888</rs>, s. 142). Foruden til en meget grundig og kritisk anmeldelse i <hi rend="italic"><rs type="title" key="title2797">Nyt Aftenblad</rs></hi> over flere numre fra 1. april til 6. maj (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 429), inspirerede udgivelsen Grundtvig til selv at skrive litter&#x00E6;re v&#x00E6;rker i rimkr&#x00F8;nikestil. Indledningen blev gjort med &#x201C;<rs type="title" key="title2798">Broder Niels fra Soor</rs>&#x201D; med betegnelsen &#x201C;Efterskrift til den danske Rim-Kr&#x00F8;nike&#x201D; (i <rs type="title" key="title2797"><hi rend="italic">Nyt Aftenblad</hi> 1826</rs>, nr. 4, s. 25-27; <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 428), og det fortsatte med Grundtvigs egen bearbejdelse af <hi rend="italic">Rimkr&#x00F8;nikens</hi> digte (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 430), der dog f&#x00F8;rst blev udgivet i 1834 (se <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 539). Samtidig med disse v&#x00E6;rker var det, at Grundtvig skrev <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs>,</hi> hvor is&#x00E6;r de tre historiske digte er fuldgyldige og varierede udtryk for hans inspiration fra <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs>.</hi>
+</p>
+           <p rend="firstIndent">Mens fejringen af kirkens tusind&#x00E5;rsjubil&#x00E6;um var den ydre anledning til <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs>,</hi> blev besk&#x00E6;ftigelsen med <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs></hi> s&#x00E5;ledes den indre tilskyndelse til v&#x00E6;rket. Arbejdet med kr&#x00F8;niken, dens stil og historiske emne var det &#x00E5;ndehul, der gav Grundtvig inspiration, gl&#x00E6;de og beroligelse, s&#x00E5; han kunne udholde de mange personlige problemer. I et brev til <persName key="pe138">Ingemann</persName> den 20. maj, hvor Grundtvig gav en sammenfatning af de forrige m&#x00E5;neders vanskeligheder, skrev han, at Gud tr&#x00F8;stede ham i tr&#x00E6;ngslerne, &#x201C;og &#x005B;at&#x005D; Hans Engel tilsmilede mig paa hvert Blad af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nniken</rs>,</hi> saa den blev Figenbladet, der lagdes paa min Hjerte-Byld og l&#x00E6;gde den&#x201D; &#x005B;citeret uden udgiverens fodnote&#x005D; (<rs type="title" key="title191">Gl&#x00E6;demark 1939-1941</rs>, s. 223).</p>
+       </div>
+    
+        <div>
+        <head xml:id="docIn6">V&#x00E6;rket og Grundtvigs personlige forhold</head>
+        <p rend="noIndent">Grundtvig overrakte <persName key="pe96">Frederik 6.</persName> det f&#x00F8;rste eksemplar af <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs></hi> under en audiens den 8. maj. Fra den 10. april havde han v&#x00E6;ret klar over, at han ville blive d&#x00F8;mt for injurier, og at dommen med stor sandsynlighed ville s&#x00E6;tte ham under livsvarig censur. Allerede tidligt i striden havde han vidst med sig selv, at han som pr&#x00E6;st i kirken og som kristen ikke kunne leve i kirkesamfund med <persName key="pe111">Clausen</persName>, hvis <persName key="pe111">Clausen</persName> ikke tilbagekaldte en l&#x00E6;re, der efter hans mening stred mod kirkens bekendelser og <rs type="title" key="title788">Bibelens</rs> sandhed (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 73-74). I dagene omkring audiensen var Grundtvig ogs&#x00E5; ved at tabe en sag om, hvorvidt hans <rs type="title" key="title32"><hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi>
+</rs> kunne synges ved pinsegudstjenesten i Vor Frelsers Kirke, hvor han var pr&#x00E6;st.</p>
+        <p rend="firstIndent">Hyldestdigtet, der indleder <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs>,</hi> handler om indvielsen af Christiansborg Slotskirke og er skrevet p&#x00E5; et versem&#x00E5;l og til en melodi, der var brugt i samtiden. I <rs type="title" key="title225">Hyrdebrevet</rs> var det bl.a. n&#x00E6;vnt, at kong <persName key="pe96">Frederik 6.</persName>, endnu f&#x00F8;r det nedbr&#x00E6;ndte Christiansborg slot var blevet genopf&#x00F8;rt, havde ladet slotskirken opf&#x00F8;re, og at den skulle indvies ved en gudstjeneste ved tusind&#x00E5;rsfesten den 14. maj. Det er ikke usandsynligt, at Grundtvig fra f&#x00F8;rst af havde forestillet sig, at hans hyldestdigt skulle have v&#x00E6;ret sunget ved denne lejlighed. I stedet var det p&#x00E5; kongens befaling bestemt, at man skulle synge provst <persName key="pe342">Frederik Schmidts</persName> &#x201C;<rs type="title" key="title243">I Tidens dunkle Str&#x00F8;m forsvandt</rs>&#x201D;, der ogs&#x00E5; var digtet til lejligheden, og som var med i det till&#x00E6;g af salmer, der var trykt i biskop <persName key="pe109">M&#x00FC;nters</persName> officielle udgivelse, <hi rend="italic"><rs type="title" key="title215">Om Kong <persName key="pe40">Harald Klaks</persName> Daab</rs>.</hi>
+</p>
+        <p rend="firstIndent">Overr&#x00E6;kkelsen af v&#x00E6;rket, der oprindeligt havde v&#x00E6;ret &#x00E5;rsag til audiensen, kom til at st&#x00E5; i skyggen af retssagen. Da kongen venligt, men uden vaklen st&#x00F8;ttede Grundtvigs modstandere, gik Grundtvig samme dag hjem og renskrev sin ans&#x00F8;gning om at m&#x00E5;tte nedl&#x00E6;gge sit embede.  (For en n&#x00E6;rmere udredning af embedsnedl&#x00E6;ggelsen og salmesagen, se indledningen til <rs type="title" key="title32"><hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi> 1826</rs>, <ref type="docOut" target="1826_433A_intro.xml#docIn4">Grundtvig nedlagde sit embede</ref> og flg. afsnit).</p>
+    </div>
+    </div>
+
+
+<div>
+    <head xml:id="docIn7">Digtkredsens historiske baggrund</head>
+    
+    <p rend="noIndent">Det f&#x00F8;lgende er et sammenh&#x00E6;ngende historisk rids af de forhold, der l&#x00E5; bag digtkredsens skildringer af h&#x00E6;ndelserne is&#x00E6;r i digtene &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName></rs>&#x201D; og &#x201C;<rs type="title" key="title689"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</rs>&#x201D;.</p>
+    
+    <div>
+        <head xml:id="docIn8">Kristen mission i Norden</head>
+        
+        <p rend="noIndent">F&#x00F8;rst i 800-tallet var de politiske forhold i Nordeuropa meget usikre og omskiftelige. I de danske omr&#x00E5;der var perioden pr&#x00E6;get af to kongesl&#x00E6;gter, der k&#x00E6;mpede om magten, og som havde forskellige strategier i forhold til Frankerriget, der p&#x00E5; denne tid omfattede Frankrig, store dele af Tyskland, Alpeomr&#x00E5;det, Ungarn, Italien og den nordligste del af Spanien. Fra 804, hvor Frankerrigets samler, <persName key="pe437">Karl den Store</persName>, endeligt undertvang de saksiske stammer, st&#x00F8;dte den europ&#x00E6;iske stormagts gr&#x00E6;nse ved Elben op imod en slags ingenmandsland, der sluttede ved de danske omr&#x00E5;der nord for Ejderen.</p>
+        <p rend="firstIndent">Det var en fast del af <persName key="pe437">Karl den Stores</persName> politik, at han brugte kristendommen til at knytte de forskellige folkegrupper i sit voksende rige sammen til en enhed. Med baggrund i <persName key="pe634">Augustins</persName> <hi rend="italic"><rs type="title" key="title2799">De civitate Dei</rs></hi> (da. Om Guds stad) skulle <persName key="pe437">Karl den Store</persName> som konge s&#x00F8;rge for unders&#x00E5;tternes timelige velf&#x00E6;rd, men han havde ogs&#x00E5; ansvaret for deres evige frelse. Han skulle derfor bek&#x00E6;mpe hedenskab og vrangl&#x00E6;re og danne sit rige, s&#x00E5; det blev &#x201C;et Imperium Christianum (da. et kristent imperium) der i opfyldelsen af Guds lov var det jordiske afbillede af det himmelske civitas dei (da. Guds stad)&#x201D;. Indlemmelse i Frankerriget og omvendelse til kristendommen var to sider af samme sag (<rs type="title" key="title1171">Christensen 1969</rs>, s. 285).</p>
+        <p rend="firstIndent">Ogs&#x00E5; over for de omkringboende folkeslag blev kristendommen brugt som magtpolitik redskab. B&#x00E5;de <persName key="pe437">Karl den Store</persName> og hans s&#x00F8;n, <persName key="pe298">Ludvig den Fromme</persName>, st&#x00F8;ttede aktivt mission blandt folkeslagene ved Frankerrigets yderomr&#x00E5;der, men hvor f.eks. sakserne som en del af indlemmelsen i riget fik kristendommen p&#x00E5;tvunget med magt og tvangsd&#x00E5;b, blev strategien for missionen i Norden en anden.</p>
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn9">Den nordiske religion og kristendommen</head>
+         
+        <p rend="noIndent">Inden 800-tallet havde der v&#x00E6;ret fors&#x00F8;g p&#x00E5; at kristne Norden. Der gik frasagn om kristne mission&#x00E6;rer, der var blevet myrdet og kastet i vandet, og i en n&#x00E6;sten samtidig frankisk beretning fort&#x00E6;lles det, at munken <persName key="pe752">Willibrord</persName> omkring 715 bes&#x00F8;gte kongen over de vilde daner i Jylland. <persName key="pe752">Willibrord</persName> blev modtaget &#x00E6;refuldt, men da han begyndte at missionere, blev kongen vred, eftersom han, som det berettes, var forh&#x00E6;rdet af s&#x00E6;der, hengiven til afgudsdyrkelse og uden h&#x00E5;b om et bedre liv (<rs type="title" key="title2785">Koch 1950</rs>, s. 48).</p>
+        <p rend="firstIndent">Sparsomme og langt senere nedskrevne kilder af kristne skribenter viser asatroen med hovedguderne <rs type="myth" key="myth59">Odin</rs> og <rs type="myth" key="myth74">Thor</rs> som den fremherskende blandt de nordiske folk. Men at der ogs&#x00E5; fandtes forf&#x00E6;dredyrkelse, er oph&#x00F8;jelsen til gud af den afd&#x00F8;de konge, Gammel Erik, et tidligt bevidnet eksempel p&#x00E5; (<rs type="title" key="title1178">Rimbert u.&#x00E5;.: ca. 870</rs>, kap. 23; <rs type="title" key="title1177">Rimbert 1885</rs>, s. 69-70). Der var intet pr&#x00E6;steskab, og kongen eller den stedlige h&#x00F8;vding var centrale i den praktiske gudsdyrkelse, s&#x00E5; en begyndende mission blandt samfundets ledere var hensigtsm&#x00E6;ssig.</p>
+        <p rend="firstIndent">P&#x00E5; Grundtvigs tid var kilderne til viden om den nordiske religion f&#x00F8;rst og fremmest sagaerne og eddaen samt enkelte fagb&#x00F8;ger, der byggede p&#x00E5; disse kilder (se uddybende fremstilling i indledningen til &#x201C;<rs type="title" key="title2">Om Asal&#x00E6;ren</rs>&#x201D; 1807, afsnittet &#x201C;<ref type="docOut" target="1807_65_intro.xml#docIn12">Grundtvigs mytologiske v&#x00E6;rkhorisont</ref>&#x201D;).<!-- <note type="readMore">
+                <p rend="noIndent">Sagalitteraturen, der er nedskrevet i norr&#x00F8;ne h&#x00E5;ndskrifter fra begyndelsen af 1200-tallet, best&#x00E5;r bl.a. af de islandske sagaer og et v&#x00E6;rk som <persName key="pe49">Snorres</persName> <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs>,</hi> som Grundtvig havde oversat i 1818-1823 (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 336A).</p>
+                <p rend="noIndent">Et eddadigt eller -kvad er et oldislandsk digt, der stammer fra den tidligste nordiske middelalder eller m&#x00E5;ske endda helt tilbage fra vikingetiden. Betegnelsen &#x2018;edda&#x2019; bruges b&#x00E5;de om <hi rend="italic"><rs type="title" key="title121">Den &#x00E6;ldre Edda</rs></hi> (<rs type="title" key="title121"><hi rend="italic">Den poetiske Edda</hi></rs>) og om <hi rend="italic"><rs type="title" key="title122">Den yngre Edda</rs></hi> (<rs type="title" key="title122"><hi rend="italic"><persName key="pe49">Snorres</persName> Edda</hi></rs>). <rs type="title" key="title121"><hi rend="italic">Den &#x00E6;ldre Edda</hi></rs> best&#x00E5;r af ti gudedigte og nitten heltedigte. <hi rend="italic"><rs type="title" key="title122">Den yngre Edda</rs></hi> (<hi rend="italic"><rs type="title" key="title122"><persName key="pe49">Snorres</persName> Edda</rs></hi>) rummer en genfort&#x00E6;lling p&#x00E5; prosa med verscitater af mange af de nordiske myter og en h&#x00E5;ndbog i skjaldedigtning. Den &#x00E6;ldst kendte nedskrift af <hi rend="italic"><rs type="title" key="title121">Den &#x00E6;ldre Edda </rs></hi> st&#x00E5;r i det s&#x00E5;kaldte <rs type="title" key="title150">Codex Regius</rs> fra 1200-tallet (fra <persName key="pe935">Vibeke A. Pedersens</persName> indledning til &#x201C;<rs type="title" key="title2">Om Asal&#x00E6;ren</rs>&#x201D; 1807, afsnittet &#x201C;<ref type="docOut" target="1807_65_intro.xml#docIn12">Grundtvigs mytologiske v&#x00E6;rkhorisont</ref>&#x201D;). Is&#x00E6;r i begyndelsen af sit forfatterskab besk&#x00E6;ftigede Grundtvig sig indg&#x00E5;ende med eddadigtningen.</p></note> --> I denne litteratur spillede skjalde en stor rolle som formidlere af fort&#x00E6;llingerne om de nordiske guder. Det udnyttede Grundtvig, da han i det historiske digt &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName></rs>&#x201D; stillede sin selvopfundne skikkelse, skjalden, op som kulturb&#x00E6;rer og forsvarer af asatroen over for den kristne <persName key="pe710">Theut</persName>, der i <rs type="title" key="title1174">kildeskriftet af <persName key="pe699">Ermoldus</persName></rs> er kantor i kirken i Ingelheim og i digtet giver stemme til den kristne fort&#x00E6;lling.</p>
+        <p rend="firstIndent">De nordiske folk m&#x00F8;dte kristendommen p&#x00E5; handelspladser som Hedeby, Ribe og Birka, hvor ogs&#x00E5; udenlandske, kristne k&#x00F8;bm&#x00E6;nd handlede, og danske handelsfolk drog til den vigtige handelsby Dorestad i Frisland, hvor de s&#x00E5; kristendommen ud&#x00F8;vet. Fra omkring 800, da de danske vikinger begyndte at tage p&#x00E5; togt, f&#x00F8;rte de sammen med handels- og r&#x00F8;vergodset ogs&#x00E5; en kulturp&#x00E5;virkning med hjem fra de kristne lande Irland, England og Frankerriget.</p> 
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn10">Harald Klak og Gudfreds&#x00F8;nnerne</head>
+        
+        <p rend="noIndent">Den danske Kong <persName key="pe922">Gudfred</persName> var kendt for sine konflikter med <persName key="pe437">Karl den Store</persName>, og det lykkedes ham at holde stand over for kejserens ekspansionspolitik. Efter at <persName key="pe922">Gudfred</persName> blev myrdet 810, flygtede hans s&#x00F8;nner til Sverige, men de vendte dog snart tilbage for at v&#x00E6;re konger eller medkonger 813-854.</p>
+        <p rend="firstIndent">
+<persName key="pe40">Harald Klak</persName> tilh&#x00F8;rte en anden gren af kongesl&#x00E6;gten og blev konge 812-813 sammen med sin bror, <persName key="pe934">Reginfred</persName>. De indgik en fredsaftale med frankerne i for&#x00E5;ret 813, men da Gudfreds&#x00F8;nnerne vendte tilbage senere p&#x00E5; &#x00E5;ret, blev kongerne fordrevet. I kampen for at genvinde magten blev <persName key="pe934">Reginfred</persName> dr&#x00E6;bt, og <persName key="pe40">Harald</persName> s&#x00F8;gte i sit eksil st&#x00F8;tte hos den nye frankiske kejser, <persName key="pe298">Ludvig den Fromme</persName>. <persName key="pe40">Harald</persName> blev den f&#x00F8;rste og eneste danske konge, der anerkendte frankisk overherred&#x00F8;mme og blev vasal. Efter et forg&#x00E6;ves erobringstogt i 815 genindsatte <persName key="pe298">Ludvig den Fromme</persName> i 819 <persName key="pe40">Harald</persName> som konge, men han skulle dele magten med et par af <persName key="pe922">Gudfreds</persName> s&#x00F8;nner, der blev medkonger. Man ved ikke, hvordan de har fordelt magten imellem sig, men det er sandsynligt, at <persName key="pe40">Harald</persName> var i Jylland.</p>
+           <p rend="firstIndent">Forholdet mellem <persName key="pe40">Harald Klak</persName> og Gudfreds&#x00F8;nnerne var konfliktfyldt. I 823 bad <persName key="pe40">Harald</persName> personligt kejseren om hj&#x00E6;lp, og et par frankiske grever blev sendt af sted for at unders&#x00F8;ge tilstanden i det s&#x00E5;kaldte normanniske rige. I 825 blev der udarbejdet fredsbetingelser mellem Gudfreds&#x00F8;nnerne og kejseren, og st&#x00F8;tten til <persName key="pe40">Harald</persName> syntes at &#x00E6;ndre karakter.</p>
+           <p rend="firstIndent">Den kristne forpost mod nord var Hamborg. I 823 rejste &#x00E6;rkebiskop <persName key="pe390">Ebo</persName> af Reims, hvorunder Hamborg p&#x00E5; dav&#x00E6;rende tidspunkt h&#x00F8;rte, til danernes omr&#x00E5;der og n&#x00E5;ede til Hedeby. Foruden kejserens tilskyndelse havde <persName key="pe390">Ebo</persName> i forvejen sikret sig pavens bemyndigelse til at forkynde evangeliet i Norden. Direkte missionsarbejde har n&#x00E6;ppe fundet sted, men &#x00E6;rkebispen har som stormand forhandlet med kongerne. I sommeren 826 rejste <persName key="pe40">Harald Klak</persName> s&#x00E5; med hustru, s&#x00F8;n og f&#x00F8;lge til Mainz for under stor festivitas og med deltagelse af kejser <persName key="pe298">Ludvig den Fromme</persName> og hans n&#x00E6;rmeste familie at blive d&#x00F8;bt. <persName key="pe40">Harald</persName> fornyede den tidligere anerkendelse af kejserens overherred&#x00F8;mme og lod sin s&#x00F8;n og sin nev&#x00F8; blive tilbage i kejserens palads Ingelheim som en slags privilegerede gidsler. Af kejseren fik han landskabet Rustringen vest for Wesers munding og sejlede derefter hjem med kostbare gaver.</p>
+        <p rend="firstIndent">Allerede i 827 blev <persName key="pe40">Harald Klak</persName> igen fordrevet af Gudfreds&#x00F8;nnerne, og hans tid som konge var forbi. Efterf&#x00F8;lgende opholdt han sig syd for Ejderen og i Frisland og st&#x00F8;ttede senere <persName key="pe728">Lothar</persName>, en af kejserens s&#x00F8;nner, i hans opr&#x00F8;r mod faderen med vikingeangreb mod det frankiske rige.</p>
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn11">Ansgar og de nordiske magthavere</head>
+       
+        <p rend="noIndent"><persName key="pe17">Ansgar</persName> og hans medhj&#x00E6;lper <persName key="pe300">Autbert</persName> fulgte med <persName key="pe40">Harald Klak</persName> og hans f&#x00F8;lge tilbage til de danske omr&#x00E5;der efter d&#x00E5;ben i 826. Men da <persName key="pe40">Harald</persName> allerede i 827 mistede sin del af konged&#x00F8;mmet til Gudfreds&#x00F8;nnen <persName key="pe301">Erik (Horik) 1.</persName>, forlod ogs&#x00E5; <persName key="pe17">Ansgar</persName> landet og blev de n&#x00E6;ste to &#x00E5;r sammen med <persName key="pe40">Harald</persName> i omr&#x00E5;derne nord for Elben. I denne periode blev hans f&#x00F8;lgesvend <persName key="pe300">Autbert</persName> syg og d&#x00F8;de.</p>
+        <p rend="firstIndent"><persName key="pe17">Ansgar</persName> var vokset op i det velrenommerede benediktinerkloster Corbie i Flandern, der var ledet af abbed <persName key="pe713">Adalard</persName>, en f&#x00E6;tter til <persName key="pe437">Karl den Store</persName>. <persName key="pe17">Ansgar</persName> blev munk og arbejdede som l&#x00E6;rer i klosterskolen. Som ung var han blandt dem, der blev overflyttet til det nyoprettede datterkloster Corvey i Sachsen, der var grundlagt for at styrke kristendommens udbredelse blandt de tvangsd&#x00F8;bte saksere. Her arbejdede han f&#x00F8;rst som l&#x00E6;rer, men blev senere pr&#x00E6;steviet. Det var p&#x00E5; opfordring af den frankiske kejser <persName key="pe298">Ludvig 1. den Fromme</persName>, at han i 826 fulgte med den danske konge, ligesom biskop <persName key="pe390">Ebo</persName> af Reims havde billiget hans missionsrejse og senere optr&#x00E5;dte som hans r&#x00E5;dgiver. <persName key="pe17">Ansgars</persName> opgave var at st&#x00F8;tte den nyd&#x00F8;bte <persName key="pe40">Harald Klak</persName>, hans familie og f&#x00F8;lge i deres nye tro og at missionere i Danmark. De n&#x00E5;ede dog n&#x00E6;ppe l&#x00E6;ngere end til Hedeby, og opholdet blev under alle omst&#x00E6;ndigheder kortvarigt.</p>
+        <p rend="firstIndent">I 830 tog <persName key="pe17">Ansgar</persName> til handelsbyen Birka i Sverige, hvor hans kristne mission havde bedre fremgang. Missionsrejsen var kommet i stand gennem en henvendelse til kejseren fra den svenske konge, og i de halvandet &#x00E5;r, opholdet varede, lykkedes det <persName key="pe17">Ansgar</persName> og hans hj&#x00E6;lper at samle en menighed og at f&#x00E5; bygget den f&#x00F8;rste kirke i Norden.</p>
+        <p rend="firstIndent">Efter hjemkomsten blev <persName key="pe17">Ansgar</persName> i 831 udn&#x00E6;vnt til &#x00E6;rkebiskop i et nyoprettet bisped&#x00F8;mme i Hamborg. Med hensyn til ansvaret for missionsvirksomheden i Norden og blandt de slaviske folk blev <persName key="pe17">Ansgar</persName> ligestillet med biskop <persName key="pe390">Ebo</persName> af Reims. Man ved ikke meget om <persName key="pe17">Ansgars</persName> arbejde de f&#x00F8;lgende &#x00E5;r, men han har sandsynligvis udbygget menighed, skole og bibliotek i Hamborg, n&#x00E5;r han ikke har opholdt sig p&#x00E5; klosteret Tourhout ved Br&#x00FC;gge i Flandern, som dannede det &#x00F8;konomiske grundlag for missionsvirksomheden. Da Frankerriget blev delt 843 ved traktaten i Verdun, mistede han dog dette st&#x00F8;ttepunkt.</p>
+        <p rend="firstIndent">845 blev lavpunktet, men ogs&#x00E5; vendepunktet i hans karriere. Vikinger br&#x00E6;ndte Hamborg med kloster og kirke ned, s&#x00E5; <persName key="pe17">Ansgar</persName> og hans medarbejdere m&#x00E5;tte flygte ud af byen over hals og hoved. I Birka dr&#x00E6;bte hedninger den ene mission&#x00E6;r og drev den anden p&#x00E5; flugt. Omst&#x00E6;ndighederne resulterede i, at <persName key="pe17">Ansgars</persName> bispes&#x00E6;de blev flyttet til Bremen, der var et etableret og velhavende bisped&#x00F8;mme, og at det efter en del politiske forviklinger blev lagt sammen med &#x00E6;rkes&#x00E6;det i Hamborg.</p>
+        <p rend="firstIndent">I Danmark havde missionen ligget stille, men de nye &#x00F8;konomiske muligheder gjorde <persName key="pe17">Ansgar</persName> i stand til som pavelig og kongelig legat at optr&#x00E6;de som stormand over for den danske konge, der p&#x00E5; sin side af politiske &#x00E5;rsager var tvunget til at have kontakt med det &#x00F8;stfrankiske rige og kong <persName key="pe925">Ludvig den Tyske</persName>. Med rigelige gaver og god r&#x00E5;dgivning vandt <persName key="pe17">Ansgar</persName> efterh&#x00E5;nden kong <persName key="pe301">Erik (Horik) 1.s</persName> fortrolighed, og de diplomatiske forhandlinger resulterede bl.a. i, at <persName key="pe17">Ansgar</persName> ca. 850 fik bygget en kirke og ansat en pr&#x00E6;st i Hedeby, og at de, der &#x00F8;nskede det, frit kunne slutte sig til menigheden.</p>
+        <p rend="firstIndent">I Sverige fik <persName key="pe17">Ansgar</persName> tilsvarende mulighed for at genoprette missionen. Da <persName key="pe390">Ebo</persName> og hans sl&#x00E6;gtning, der var fordrevet fra Birka, var utilb&#x00F8;jelige til selv at tage af sted, rejste <persName key="pe17">Ansgar</persName> dertil i 853. Med st&#x00F8;tte fra den danske konge lykkedes det ham ogs&#x00E5; her at genetablere menigheden, opf&#x00F8;re en kirke og opn&#x00E5; frihed til at pr&#x00E6;dike.</p>
+        <p rend="firstIndent">Da <persName key="pe17">Ansgar</persName> vendte tilbage fra sin Sverigesrejse, var der igen uro i Danmark. Omkring 854 pr&#x00F8;vede en vikingeh&#x00F8;vding af <persName key="pe301">Erik 1.s</persName> sl&#x00E6;gt at vinde riget fra ham, og i et stort slag d&#x00F8;de vikingeh&#x00F8;vdingen, kongen og mange andre af kongesl&#x00E6;gten. R&#x00E5;dgiverne for den nye konge, <persName key="pe302">Horik 2. Barn</persName>, var fjendtlige over for den kristne mission, og kirken i Hedeby blev lukket. Ved mellemkomst af jarl <persName key="pe717">Borkar</persName>, der tidligere havde hjulpet <persName key="pe17">Ansgar</persName>, og som var sl&#x00E6;gtning til begge konger, blev kirken dog snart &#x00E5;bnet igen, og der blev endog givet tilladelse til at ringe med en kirkeklokke. Der var nu trosfrihed for kristne, og omkring 855 fik <persName key="pe17">Ansgar</persName> af kongen en grund for&#x00E6;rende til et kirkebyggeri p&#x00E5; handelspladsen Ribe.</p>
+        <p rend="firstIndent">I efter&#x00E5;ret 864 blev <persName key="pe17">Ansgar</persName> alvorligt syg og d&#x00F8;de den 3. februar 865 i Bremen omgivet af trofaste medarbejdere. Blandt dem var <persName key="pe303">Rimbert</persName>, der blev hans efterf&#x00F8;lger som &#x00E6;rkebiskop. Man ved meget lidt om Rimberts arbejde i Danmark, og kilderne indeholder intet om organiserede missionsfremst&#x00F8;d af ham og hans umiddelbare efterf&#x00F8;lgere. <persName key="pe303">Rimbert</persName> blev kendt for sin skildring af <persName key="pe17">Ansgars</persName> liv i helgenbiografien <rs type="title" key="title1178"><hi rend="italic">Vita Ansgarii</hi>
+</rs> (da. Ansgars Levned).</p>
+        <p rend="firstIndent">Resultaterne af <persName key="pe17">Ansgars</persName> og <persName key="pe303">Rimberts</persName> arbejde gennem pr&#x00E6;dikantvirksomhed og diplomati var tilsyneladende ikke overv&#x00E6;ldende. De havde opn&#x00E5;et kultfrihed for kristendommen med bygning af tre kirker og ret til at pr&#x00E6;dike i dem samt trosfrihed for dem, der &#x00F8;nskede at slutte sig til kristendommen. Kirkerne l&#x00E5; ganske vist p&#x00E5; centrale handelspladser, men det var steder, hvor ber&#x00F8;ringen med kristendommen i forvejen l&#x00E5; lige for ved kontakten mellem hedenske og kristne handelsfolk.</p>
+        
+        
+    </div>
+</div>
+
+<div>
+    <head xml:id="docIn12">Prim&#x00E6;re forl&#x00E6;g</head> 
+    <p rend="noIndent">Til digtkredsens historiske digte foreligger to markante forl&#x00E6;g. Begge v&#x00E6;rker er samtidige med de historiske begivenheder og er som kildeskrifter interessante til belysning af 800-tallets danske og svenske historie set ud fra Frankerrigets religi&#x00F8;se og kulturelle synsvinkel. Begge forl&#x00E6;g har sat sig omfattede spor i <rs type="title" key="title227"><hi rend="italic">Kong <persName key="pe40">Harald</persName> og <persName key="pe17">Ansgar</persName></hi></rs> 1826.</p>
+   
+    <div>
+        <head xml:id="docIn13">
+<hi rend="italic">Ermoldus Nigellus' Digt om Kong Haralds Daab</hi>
+</head>
+        
+        <p rend="noIndent">Til &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName>
+</rs>&#x201D; er hovedforl&#x00E6;gget 4. bog af <persName key="pe699">Ermoldus Nigellus'</persName> <hi rend="italic">
+<rs type="title" key="title1174">Carmen Elegiacum</rs></hi> (da. Elegisk digt) til Kejser <persName key="pe298">Ludvig den Frommes</persName> forherligelse, der er skrevet kort efter &#x00E5;r 826. 4. bog er optaget i <persName key="pe867">Jakob Langebeks</persName> udgave fra 1772 <hi rend="italic"><rs type="title" key="title1179">Scriptores Rerum Danicarum Medii &#x00C6;vi</rs></hi> (da. Danmarks middelalderlige historieskrivere), bind 1, s. 427-495. Allerede da Grundtvig udarbejdede <rs type="title" key="title2791">&#x201C;Et Blad af Jyllands Rimkr&#x00F8;nike&#x201D;</rs> har han kendt <persName key="pe699">Ermoldus'</persName> digt (se <rs type="title" key="title2790"><hi rend="italic">Heimdall</hi> 1816</rs>,  f.eks. s. 150 og 152), og da han skrev digtkredsen i for&#x00E5;ret 1826, har han igen benyttet <persName key="pe867">Langebeks</persName> udgave og muligvis ejet den (<rs type="title" key="title245">Bogfortegnelsen 1839</rs>, nr. 1). Ved foreliggende udgivelse er v&#x00E6;rket l&#x00E6;st efter <persName key="pe745">Hans Olriks</persName> overs&#x00E6;ttelse fra 1886, <hi rend="italic"><rs type="title" key="title1175"><persName key="pe699">Ermoldus Nigellus'</persName> Digt om Kong <persName key="pe40">Haralds</persName> Daab</rs>,</hi> der indeholder indledning og oplysende noter.</p>
+        
+        <p rend="firstIndent"><rs type="title" key="title1174"><persName key="pe699">Ermoldus'</persName> latinske elegi</rs> er skrevet med det form&#x00E5;l at formilde kejser <persName key="pe298">Ludvig den Fromme</persName>. I 4. bog hyldes kejseren som en from, kristen fyrste, hvis inderlige &#x00F8;nske er at udbrede kristendommen til de &#x00E6;dle, men afgudsdyrkende daner. Hans velvilje og rundh&#x00E5;ndethed over for den hedenske konge udmales i pr&#x00E6;gtige detaljer ligesom ogs&#x00E5; pragten ved hoffet og den kunstneriske udsmykning af borg og kirke. V&#x00E6;rket giver ligeledes et indblik i datidens kristendomsopfattelse og den omvendelsespr&#x00E6;diken, man fandt form&#x00E5;lstjenlig. Den indg&#x00E5;ende skildring viser, at <persName key="pe699">Ermoldus</persName> om ikke har deltaget i <persName key="pe40">Haralds</persName> d&#x00E5;b, s&#x00E5; har v&#x00E6;ret meget t&#x00E6;t p&#x00E5; begivenhederne og de kejserlige kredse.</p>
+        <p rend="firstIndent">Samtidig med at Grundtvig har forholdt sig meget frit til 800-talsdigtet med hensyn til udeladelser, tildigtninger og omtolkninger, har han overtaget mange enkeltheder. Som eksempel kan n&#x00E6;vnes, at <persName key="pe708">Matfrid</persName> og <persName key="pe710">Theuto</persName>, der i forl&#x00E6;gget er bipersoner og kun bliver kort omtalt (<rs type="title" key="title1175">Ermoldus 1886</rs>, s. 14, 22 og 27), i &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName></rs>&#x201D; bliver mere udfoldede som personer og f&#x00E5;r til opgave at forklare historierne bag v&#x00E6;gudsmykningerne i borgens gildesal og i kirken. For yderligere eksempler p&#x00E5; digtets forhold til forl&#x00E6;gget henvises til punkkommentarerne.</p>
+    </div>
+    
+    <div>
+        <head xml:id="docIn14">
+<hi rend="italic">Ansgars Levned</hi>
+</head> 
+        
+        <p rend="noIndent">Til &#x201C;<rs type="title" key="title689"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</rs>&#x201D; er hovedforl&#x00E6;gget <persName key="pe303">Rimberts</persName> helgenbiografi <hi rend="italic"><rs type="title" key="title1176">Vita Sancti Anscharii</rs></hi> (da. Den hellige Ansgars Levned), som Grundtvig ligeledes har l&#x00E6;st i <hi rend="italic"><rs type="title" key="title1179">Scriptores Rerum Danicarum Medii &#x00C6;vi</rs></hi> (da. Danmarks middelalderlige historieskrivere), bind 1, s. 398-424 (<rs type="title" key="title245">Bogfortegnelsen 1839</rs>, nr. 1). Det ogs&#x00E5; i nutiden h&#x00F8;jt vurderede skrift er forfattet omkring 870 af <persName key="pe17">Ansgars</persName> n&#x00E6;re medarbejder og efterf&#x00F8;lger som &#x00E6;rkebiskop og en ukendt medforfatter (jf. <rs type="title" key="title1177">Rimbert 1885</rs>, s. 7 f.). Hensigten med biografien har v&#x00E6;ret at vise <persName key="pe17">Ansgar</persName> som en from mand, der var lige s&#x00E5; hellig som de kristne martyrer, og desuden at fastsl&#x00E5; &#x00E6;rkebisped&#x00F8;mmet Hamborg-Bremens betydning (<rs type="title" key="title1177">Rimbert 1885</rs>, s. 2-3; <rs type="title" key="title1182">Lausten 2004</rs>, s. 22). Ved foreliggende udgivelse er v&#x00E6;rket l&#x00E6;st efter andenudgaven af <persName key="pe88">P.A. Fengers</persName> overs&#x00E6;ttelse fra 1863. <persName key="pe745">Hans Olrik</persName> har forsynet andenudgaven, <hi rend="italic">
+<rs type="title" key="title1177"><persName key="pe17">Ansgars</persName> Levned</rs>,</hi> med en historisk indledning og noter.</p> 
+        <p rend="firstIndent">Ang&#x00E5;ende overs&#x00E6;ttelsen meddelte <persName key="pe88">Fenger</persName> i fortalen til f&#x00F8;rsteudgaven, at bl.a. &#x201C;Biskop Grundtvig &#x005B;har&#x005D; gjennemgaaet det Hele&#x201D; (<rs type="title" key="title694">Rimbert 1863</rs>, s. XIV). Et s&#x00E5;dant arbejde har ligget Grundtvig n&#x00E6;r, da han allerede i november 1814 havde lavet en fuldst&#x00E6;ndig overs&#x00E6;ttelse af v&#x00E6;rket, som han i &#x00F8;vrigt aldrig fik trykt (<rs type="title" key="title2756">Grundtvig-arkivet fasc. 236</rs>; <rs type="title" key="title35">
+<hi rend="italic">Bibliografien</hi> 4</rs>, s. 22). </p>
+                <note type="readMore">
+                <p rend="noIndent">Om Grundtvigs overs&#x00E6;ttelse, se <rs type="title" key="title24">Toldberg 1946</rs>, s. 94-97; <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, bind 2 s. 630-631.</p>
+                    <p rend="firstIndent">Den f&#x00F8;rste udgave p&#x00E5; dansk af v&#x00E6;rket var den teologiske student <persName key="pe238">C.S. Leys</persName> fra 1837, <hi rend="italic"><rs type="title" key="title2781">
+Ansgars Levnet beskrevet af Erkebiskop Rimbert og en anden Diseipel</rs> &#x005B;sic: Discipel, GV&#x005D;.</hi> Fire vers fra Grundtvigs digt &#x201C;<rs type="title" key="title690">Rimbert</rs>&#x201D; findes i citat p&#x00E5; titelbladet.</p>
+                </note>
+
+        <p rend="firstIndent">Grundtvig benyttede <persName key="pe303">Rimberts</persName> biografi som forl&#x00E6;g ved omtalen af <persName key="pe390">Ebo</persName> af Reims og til afsnittene om <persName key="pe17">Ansgar</persName> i <rs type="title" key="title2791">&#x201C;Et Blad af Jyllands Rimkr&#x00F8;nike&#x201D;</rs> (se <rs type="title" key="title2790"><hi rend="italic">Heimdall</hi> 1816</rs>,  f.eks. s. 144-145, 149 og 176-177). Da han i 1817 udarbejdede artiklen &#x201C;<rs type="title" key="title244">Ansgars Efterm&#x00E6;le</rs>&#x201D;, var den hovedkilden (<rs type="title" key="title312"><hi rend="italic">Danne-Virke</hi> 3 1817</rs>, s. 105). Ang&#x00E5;ende sin vurdering af <hi rend="italic"><rs type="title" key="title1178">Vita Ansgarii</rs></hi> (da. Ansgars Levned) skriver han, at
+            <p rend="quote"><persName key="pe303">Rimberts</persName> Bog ikke allene er af uskatteerlig Vigtighed for Nordens Historie, men tillige i sig selv et af de ypperste Skrifter fra den tidligere Middel-Alder, thi vel er Latinen intet mindre end &#x005B;dvs. alt andet end, GV&#x005D; classisk, og det har sagtens bidraget til at neds&#x00E6;tte den i de Bogl&#x00E6;rdes &#x00D8;ine; men Tonen er baade, som <persName key="pe932">Adam af Bremen</persName> siger, oprigtig (<hi rend="romanType">veredicus</hi>) og tillige saa inderlig opbyggelig, at man kan l&#x00E6;se mange Helgenes Levnet, uden saameget Udbytte, som eet Blad hos <persName key="pe303">Rimbert</persName> giver en L&#x00E6;ser, der har Hjerte for Ki&#x00E6;rlighed og Gudsfrygt (<rs type="title" key="title312"><hi rend="italic">Danne-Virke</hi> 3 1817</rs>, s. 103).</p>
+                </p>
+        <p rend="firstIndent">Til digtkredsens &#x201C;<rs type="title" key="title689"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</rs>&#x201D; har Grundtvig ikke alene benyttet det latinske skrift som forl&#x00E6;g, men det har ogs&#x00E5; v&#x00E6;ret kilde til is&#x00E6;r hans gengivelse af <persName key="pe17">Ansgars</persName> psyke, t&#x00E6;nkem&#x00E5;de og dr&#x00F8;mme. I <rs type="title" key="title1178"><hi rend="italic">Ansgars Levned</hi></rs> virker de mange dr&#x00F8;mmesyn eller visioner autentiske, og det er sandsynligt, at de hviler p&#x00E5; oplysninger fra <persName key="pe17">Ansgar</persName> selv, ogs&#x00E5; selvom s&#x00E5;danne syner h&#x00F8;rte med til helgenbiografiens genre (se <rs type="title" key="title2786">H&#x00F8;irup 1966</rs>, s. 76). Synerne har s&#x00E5;ledes v&#x00E6;ret med til at styrke <persName key="pe17">Ansgars</persName> status som hellig mand, da de kan sammenstilles med tilsvarende dr&#x00F8;mmesyner i bl.a. profetlitteraturen i <rs type="title" key="title2263">Det Gamle Testamente</rs>, hvor de i lighed med andre former for visioner traditionelt er blevet tydet som &#x00E5;benbaringer fra Gud. </p>
+        <note type="readMore">
+            <p rend="noIndent">Se f. eks. kaldelsen af <persName key="pe936">Zakarias</persName> i <rs type="bible" key="Zak 1,3">Zak 1,3</rs>, og at han modtager sine syner i dr&#x00F8;mme, <rs type="bible" key="Zak 4">Zak 4,1 f.</rs> Ogs&#x00E5; profeten <persName key="pe937">Daniel</persName> er kendt for sine dr&#x00F8;mmesyner, <rs type="bible" key="Dan 7">Dan 7,1 f.</rs></p>
+</note>
+                        <p rend="noIndent">I &#x201C;<rs type="title" key="title689"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</rs>&#x201D; bruges de tre gengivne syner til at vise de indre tilskyndelser og den kristne fortr&#x00F8;stning, der drev <persName key="pe17">Ansgar</persName> fremad igennem de forskellige faser af hans livsgerning. I det f&#x00F8;rste dr&#x00F8;mmesyn bliver han kaldet til at udf&#x00F8;re en s&#x00E6;rlig gerning (s. 17-20; se ogs&#x00E5; s. 34), i det andet f&#x00E5;r han syndsforladelse (s. 20-22) og i det tredje en kaldelse til at v&#x00E6;re mission&#x00E6;r i Danmark og Sverige (s. 27-29).</p>
+        <p rend="firstIndent">Ogs&#x00E5; til dette forl&#x00E6;g har Grundtvig forholdt sig frit, og mange andre eksempler p&#x00E5; forholdet mellem <hi rend="italic"><rs type="title" key="title1176"><persName key="pe17">Ansgars</persName> Levned</rs></hi> og &#x201C;<rs type="title" key="title689"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</rs>&#x201D;  og &#x201C;<rs type="title" key="title690"><persName key="pe303">Rimbert</persName></rs>&#x201D; kan ses af punktkommentarerne.</p>
+    </div>
+</div>
+
+
+<div>
+    <head xml:id="docIn15">Genre, sprog og stil</head>
+    
+    <p rend="noIndent">Digtkredsen i <rs type="title" key="title227"><hi rend="italic">Kong Harald og Ansgar</hi> 1826</rs> beskrives ud fra flere genrebegreber. Digtene betragtes dern&#x00E6;st i deres forhold til det dominerende stilistiske forbillede, <hi rend="italic"><rs type="title" key="title242">Den danske Rimkr&#x00F8;nike</rs>,</hi> der er genreskabende p&#x00E5; dansk grund. Desuden omtales stiltr&#x00E6;k hentet fra den norr&#x00F8;ne digtning.</p>
+    
+    <div>
+        <head xml:id="docIn16">Genre</head>
+        
+        <p rend="noIndent">Ud over det indledende hyldestdigt best&#x00E5;r <rs type="title" key="title227"><hi rend="italic">Kong Harald og Ansgar</hi> 1826</rs> som n&#x00E6;vnt af en digtkreds med fire digte.</p>
+        <p rend="firstIndent">Digtene i digtkredsen h&#x00F8;rer til en hovedgenre i Grundtvigs forfatterskab, som han selv satte meget h&#x00F8;jt, nemlig den historisk-poetiske. Overordnet betragtet d&#x00E6;kker betegnelsen historisk stof formidlet i poetisk form. Undertitlen <hi rend="italic">Rim-Blade af Danmarks Kirke-Bog til Jubel-Aaret</hi> pr&#x00E6;ciserer, at der er tale om enkeltst&#x00E5;ende digte med stof fra dansk kirkehistorie, udvalgt med henblik p&#x00E5; den danske kirkes jubil&#x00E6;um i 1826. Alle fire digte i digtkredsen er desuden i monologform med en jegfort&#x00E6;ller. Monologformens muligheder afs&#x00F8;gte og udfoldede Grundtvig f&#x00E5; &#x00E5;r senere med <hi rend="italic"><rs type="title" key="title728">Kr&#x00F8;nike-Riim</rs></hi> fra 1829 og dens <rs type="title" key="title1410">andenudgave fra 1842</rs> (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>
+</hi> 477A og 477B).</p> 
+        <p rend="firstIndent">De tre f&#x00F8;rste digte kan betegnes som historiske digte, hvad der var en popul&#x00E6;r genre ogs&#x00E5; hos andre af romantikkens forfattere. Digtene kan beskrives som episk-dramatiske fort&#x00E6;llinger p&#x00E5; vers, hvor der i den fortl&#x00F8;bende monolog er indlagt replikskifter, gengivet direkte eller i varierende former af indirekte tale og tanke. Teknikken er is&#x00E6;r brugt i &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName></rs>&#x201D;, hvor den er med til at formidle stoffet p&#x00E5; en let, sp&#x00F8;gefuld og talesprogsagtig m&#x00E5;de. Grundtvig havde tidligere anvendt formen f.eks. i det dramatiske optrin &#x201C;<rs type="title" key="title2755">Paaske-Lilien</rs>&#x201D; fra 1817 (<rs type="title" key="title271"><hi rend="italic">Danne-Virke</hi> 2 1816-1817</rs>, s. 291-325; <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 306).</p>
+    </div>
+    
+    <div>
+        <head xml:id="docIn17">Rimkr&#x00F8;niken som forbillede</head>
+               
+        <p rend="noIndent">Digtkredsens dominerende stilistiske forbillede er <hi rend="italic"><rs type="title" key="title242">Den danske Rimkr&#x00F8;nike</rs>,</hi> som udkom trykt af <persName key="pe236">Gotfred af Ghemen</persName> i K&#x00F8;benhavn i 1495. Som tidligere n&#x00E6;vnt (se afsnittet <ref type="docIn" target="#docIn5">Grundtvigs motivation og hans interesse for Rimkr&#x00F8;niken</ref>) var Grundtvig meget fascineret af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs>,</hi> og den fik efterh&#x00E5;nden en plads blandt hans mest foretrukne lekture rangerende p&#x00E5; linje med <rs type="title" key="title788">Bibelen</rs> (<rs type="title" key="title2746">Toldberg 1954</rs>, s. 60). V&#x00E6;rket er en konge- eller Danmarkshistorie fra den f&#x00F8;rste sagntid til <persName key="pe41">Christian 1.</persName> og betoner ligeligt det kirkelige og det nationale. <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs></hi> best&#x00E5;r af 115 enkeltst&#x00E5;ende digte, hvor hver konge i monologform og i fortl&#x00F8;bende vers fort&#x00E6;ller om sin egen regeringstid. Episk-dramatiske, men ogs&#x00E5; didaktiske elementer er fremtr&#x00E6;dende, og digtene indeholder stilistiske tr&#x00E6;k hentet fra mange kilder, lige fra det talte sprogs ordsprog og talem&#x00E5;der over folkevisen til <rs type="title" key="title788">Bibelen</rs> og det pseudoaristoteliske <hi rend="italic"><rs type="title" key="title2800">Secretum secretorum</rs></hi> (da. Hemmelighedernes hemmelighed), der er en l&#x00E6;rebog for fyrster.</p>
+        
+        <div>
+            <head xml:id="docIn18">Monologform</head>
+            <p rend="noIndent"><hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> konsekvente brug af monologformen bevirker, at den enkelte konge som jegfort&#x00E6;ller undertiden ikke bare beretter om sit eget liv med dets betydningsfulde h&#x00E6;ndelser, men ogs&#x00E5; gengiver sin egen d&#x00F8;d og sit efterm&#x00E6;le. Dette tr&#x00E6;k har Grundtvig overtaget i digtet &#x201C;<rs type="title" key="title689">Ansgar</rs>&#x201D;, hvor hovedpersonen fort&#x00E6;ller detaljer fra sit eget d&#x00F8;dsleje, f.eks. &#x201C;Ski&#x00F8;ndt h&#x00F8;rt ei blev mit h&#x00F8;ie Raab / Om Kronen prud, jeg stirred paa, / Til &#x00D8;iet brast i dunkle Vraa!&#x201D; og gengivelsen af hans egne ord fra d&#x00F8;ds&#x00F8;jeblikket (s. 34). Det h&#x00F8;rer med til stilen, at jegfort&#x00E6;lleren gengiver forhold, han ikke kan v&#x00E6;re vidende om, som n&#x00E5;r der i &#x201C;<rs type="title" key="title688">Harald Klak</rs>&#x201D; refereres en replik af kejser <persName key="pe298">Ludvig</persName> fra f&#x00F8;r, den berettende <persName key="pe40">Harald Klak</persName> ankommer til kejserens borg (s. 3 f.).</p>
+        
+            <p rend="firstIndent">Monologformen fra <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs></hi> ligger ogs&#x00E5; bag bruddet med formen i &#x201C;<rs type="title" key="title690">Rimbert</rs>&#x201D;. Her fort&#x00E6;ller <persName key="pe303">Rimbert</persName> ikke om sit eget liv, men holder en lovprisningstale over <persName key="pe17">Ansgar</persName> til et imagin&#x00E6;rt publikum, indledt med retoriske sp&#x00F8;rgsm&#x00E5;l. Ved at spille p&#x00E5; stilen viser forfatterpersonen indirekte, at indholdet i <persName key="pe303">Rimberts</persName> eget liv var <persName key="pe17">Ansgars</persName> liv og gerning og formidlingen af disse. Det var <persName key="pe303">Rimbert</persName>, der skrev <rs type="title" key="title1178">
+<hi rend="italic">Vita Ansgarii</hi></rs> (da. Ansgars Levned), og det var ham, der videref&#x00F8;rte <persName key="pe17">Ansgars</persName> missionsgerning ved at blive hans efterf&#x00F8;lger i &#x00E6;rkebispes&#x00E6;det. Samtidig formidler bruddet med formen p&#x00E5; sofistikeret vis <persName key="pe303">Rimberts</persName> evangeliske ydmyghed og det at have taget et helligt liv som forbillede for sit eget liv, alt sammen tr&#x00E6;k, der indgik som  vigtige dele af det middelalderlige fromhedsideal.</p>
+<!--  (jf. f.eks. <rs type="bible" key="Kol 3,12">Kol 3,12</rs> og <rs type="bible" key="Fil 2">Fil 2</rs>) -->
+            <p rend="firstIndent">Ogs&#x00E5; monologformen i det afsluttende digt &#x201C;<rs type="title" key="title691">Christi Kirke</rs>&#x201D; er inspireret af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs></hi>. Her er jeget en personificering af den almindelige kristne kirke, der pr&#x00E6;senteres i digtets f&#x00F8;rste strofer.</p>
+        </div>
+        
+        <div>
+            <head xml:id="docIn19">Indledningsvers</head>
+            <p rend="noIndent">I <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs></hi> er det almindeligt, at et digt indledes med nogle vers af mere almen, tit moraliserende karakter. Det kan v&#x00E6;re en leveregel eller et ordsprog, der s&#x00E5; efterf&#x00F8;lgende eksemplificeres gennem beretningen om den p&#x00E5;g&#x00E6;ldende konges liv. I en kladde til &#x201C;<rs type="title" key="title689">Ansgar &#x0254;: &#x00C6;sger</rs>&#x201D; har Grundtvig arbejdet med s&#x00E5;danne indledningsvers: </p>
+        <p rend="quote">
+            <lg n="1">
+                <l><hi rend="italic"><persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger</hi></l>
+                <l>Verden er falsk, som Skum paa Vand,</l>
+                <l>Hun skuffer dem mest, som hun f&#x00F8;ier,</l>
+                <l>Ki&#x00F8;d er som Gr&#x00E6;s, saa vee den Mand,</l>
+                <l>Der til det, som St&#x00F8;tte sig b&#x00F8;ier!</l>
+                <l>Lettere sagt er intet Ord,</l>
+                <l>Og klarere er ingen Tale,</l>
+                <l>H&#x00F8;res dog mindst af Alt paa Jord</l>
+                <l>I Hytter og H&#x00F8;ielofts-Sale!</l>
+            </lg>
+            <p rend="noIndent">(<rs type="title" key="title2778">Grundtvig-arkivet, fasc. 388.107</rs>, transskriberet af GV med udeladelse af intern varians).</p>
+        </p>        
+            <p rend="firstIndent">Grundtvig kasserede versene. P&#x00E5; et andet manuskriptark, der indeholder 36 vers fra digtets begyndelse, findes de traditionelle indledningsvers ikke, og de f&#x00F8;rste verslinjer afviger kun ubetydeligt fra f&#x00F8;rstetrykkets version (<rs type="title" key="title2777">Grundtvig-arkivet, fasc. 388.106</rs>).</p>
+        </div>
+        
+        <div>
+            <head xml:id="docIn20">Historiserende stiltr&#x00E6;k</head>
+                               
+            <p rend="noIndent"><hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> brug af en jegfort&#x00E6;ller, der beretter om sit eget liv, giver en illusion af autenticitet, der dels styrker beretningen som et udtryk for sandf&#x00E6;rdig historiefort&#x00E6;lling, og dels giver den et sk&#x00E6;r af personlig bekendelse. Bruddene i jegfort&#x00E6;llingen peger samtidig p&#x00E5; tekstens karakter af fiktion. Denne effekt overf&#x00F8;rer Grundtvig p&#x00E5; jegfort&#x00E6;llerne i sin digtkreds. Illusionen om fort&#x00E6;llere fra 800-tallet, der beretter om selvoplevede, samtidige h&#x00E6;ndelser samt egne dr&#x00F8;mme og tanker, bliver understreget af den arkaiserende sprogbrug.</p>
+            <p rend="firstIndent">Is&#x00E6;r de tre historiske digte er fyldt med ord og vendinger, der var gammeldags allerede i Grundtvigs samtid, og som har til hensigt at signalere et middelalderligt pr&#x00E6;g. Nogle udtryk er hentet fra folkevisernes almindeligt brugte formler som &#x201C;Der axled jeg Skarlagen-Skind&#x201D; (s. 26) og &#x201C;i den Danske Konges Gaard / i Kongens Gaard&#x201D; (s. 27 / 44). Fra folkevisernes sprogbrug stammer ogs&#x00E5; det hyppigt anvendte adverbielle, forst&#x00E6;rkende led 'fuld-' i eksempelvis &#x201C;fulds&#x00E6;r&#x201D; og &#x201C;fuldblege&#x201D; (s. 8) (jf. <rs type="title" key="title218">Skautrup 1947</rs>, bind 2, s. 76).</p>
+            
+            <p rend="firstIndent">Andre eksempler er brug af for&#x00E6;ldede kasusformer som det dativiske &#x201C;i Volde&#x201D; (s. 2) og b&#x00F8;jning af stedord i k&#x00F8;n og med subjektgentagelse som i &#x201C;den Daab er Sj&#x00E6;le-Gavn, / Med Troen hun Salighed volder&#x201D; (s. 8). Ligeledes anvendelsen af verbalformer som &#x201C;gange&#x201D; med pr&#x00E6;teritumsformen &#x201C;ginge&#x201D; for henholdsvis &#x201C;g&#x00E5;&#x201D; og &#x201C;gik&#x201D; (s. 2, 14) og udtryk som &#x201C;Herre-F&#x00E6;rd&#x201D; (dvs. stateligt optog, s. 3) og &#x201C;&#x00C6;re-Ski&#x00E6;nk&#x201D; (dvs. &#x00E6;resgave, s. 30). Mange af disse ord og udtryk underbygger desuden tekstens poetiske stilleje. Det samme kan siges om et udtryk som &#x201C;tie kv&#x00E6;r&#x201D; (dvs. ti stille!, s. 4), der i 1800-tallet blev hentet fra folkeviser og dialekter af tidens digtere for at g&#x00F8;re sproget mere poetisk og gammeldags.</p>
+            <p rend="firstIndent">Ogs&#x00E5; <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> anvendelse af ordsprog og talem&#x00E5;der er videref&#x00F8;rt i digtkredsen og  giver en gammeldags sprogtone. For eksempel indeholder digtene et ordsprog som &#x201C;Hvert &#x00C6;ble fuldlangt man trille maa, / F&#x00F8;r meer det ei smager ad Roden!&#x201D; (s. 13),  der kan f&#x00F8;res tilbage til <persName key="pe243">Peder Laales</persName> ordsprogssamling p&#x00E5; latin og dansk, der formentlig stammer fra midten af 1300-tallet. De fleste af ordsprogene findes i <persName key="pe239">Peder Syvs</persName> store ordsprogssamling fra 1682-1688, <hi rend="italic"><rs type="title" key="title89">Aldmindelige Danske Ord-Sproge og korte L&#x00E6;rdomme</rs>,</hi> der bl.a. bygger p&#x00E5; &#x00E6;ldre kilder. I 1817 have Grundtvig i artiklen <rs type="title" key="title2802">&#x201C;Om Ordsprog&#x201D;</rs> bl.a. understreget ordsprogenes &#x00E6;lde (<rs type="title" key="title312">Danne-Virke 3 1817</rs>, s. 62-88; <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 312; se <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, bind 2, s. 734-736).</p>
+            <p rend="firstIndent">Alle disse eksempler styrker illusionen om, at digtkredsen er en poetisk tekst fra fortiden. Der henvises i &#x00F8;vrigt til de mange punktkommentarer, der beskriver stiltr&#x00E6;kkene.</p>
+        </div>
+        
+                
+        <div>
+            <head xml:id="docIn22">Pastiche</head>
+        <!-- Pastiche -->
+            <p rend="firstIndent">Det m&#x00E5; ikke overses, at digtkredsen p&#x00E5; mange m&#x00E5;der spr&#x00E6;nger <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> stil. Et p&#x00E5;faldende tr&#x00E6;k er brugen af underdrivelser, drillerier og ironiske bem&#x00E6;rkninger hentet fra talesproget, f.eks. 
+                <p rend="quote">
+                    <lg n="2">
+                        <l>Vi Daner, om end kun lidt vi veed,</l>
+                        <l>Dog f&#x00F8;rde lidt meer udi Skjolde!</l>
+                        <l>Thi dril os ei saa, Du Tydske Mand,</l>
+                        <l>Som Katten man tr&#x00E6;der paa Hale!</l>
+                        <l>For Tunge ei hold din hvasse Tand,</l>
+                        <l>Om m&#x00E6;rke vi skal paa din Tale! (s. 12).</l>
+                    </lg>
+                  </p> 
+            </p>     
+            <p rend="firstIndent">Ogs&#x00E5; den hyppige anvendelse af bibelallusioner i digtkredsen adskiller den fra <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs>,</hi> der kun indeholder f&#x00E5; parafraser af bibelsteder. I digtkredsen er henvisningerne til <rs type="title" key="title788">Bibelen</rs> et i&#x00F8;jnefaldende tr&#x00E6;k alene p&#x00E5; grund af deres m&#x00E6;ngde. I begyndelsen og slutningen af &#x201C;<rs type="title" key="title688"><persName key="pe40">Harald Klak</persName></rs>&#x201D; findes der f.eks. ogs&#x00E5; henholdsvis en omvendelsespr&#x00E6;diken (s. 1 f.) og en kristen bekendelse (s. 15 f.). Der henvises i &#x00F8;vrigt til punktkommentarerne og bibelstedsregisteret.</p> 
+            <p rend="firstIndent">Dertil kommer tilf&#x00F8;jede emner, temaer og stiltr&#x00E6;k, der er karakteristiske for Grundtvigs v&#x00E6;rker, og som n&#x00E5;r ud over <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> rammer og horisont. Eksempelvis kan n&#x00E6;vnes den tematiske sammenligning af asatro og kristendom i &#x201C;<rs type="title" key="title688">Harald Klak</rs>&#x201D;.</p>
+            <p rend="firstIndent">Alligevel overtager digtene i digtkredsen s&#x00E5; mange stiltr&#x00E6;k fra <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs>,</hi> at man kan h&#x00E6;vde, at digtene bidrager til at danne en egen undergenre. Man kan sige, at ligesom romantiske digtere som <persName key="pe3">Oehlenschl&#x00E4;ger</persName> efterlignede den middelalderlige folkevise i en folkevisepastiche som &#x201C;<rs type="title" key="title2803">De tvende Kirketaarne</rs>&#x201D;, s&#x00E5; efterlignede Grundtvig den middelalderlige historiefort&#x00E6;lling p&#x00E5; dansk, <hi rend="italic"><rs type="title" key="title242">Den danske Rimkr&#x00F8;nikes</rs></hi> kongerim, i pastichen &#x201C;<rs type="title" key="title688">Harald Klak</rs>&#x201D;. Samtidig udvidede han genren til at omfatte andre betydningsfulde, middelalderlige personligheder. De stiltr&#x00E6;k, der er overtaget og omformet fra <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;niken</rs>,</hi> er med til at give digtkredsen i <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs></hi> en tilstr&#x00E6;bt &#x00E6;gthed og historisk forankring, men ogs&#x00E5; et folkeligt pr&#x00E6;g, der g&#x00F8;r det historiske stof til en levende fort&#x00E6;lling.</p> <!-- efterse i FLN, adl: intet -->
+        </div>
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn23">Stiltr&#x00E6;k fra norr&#x00F8;n digtning</head>
+        
+        <p rend="noIndent">Ud over stof fra den nordiske mytologi om bl.a. <rs type="myth" key="myth59">Odin</rs> og et af hans mange tilnavne, <rs type="myth" key="myth1">Alfader</rs>, indeholder <rs type="title" key="title227">
+<hi rend="italic">Kong Harald og Ansgar</hi> 1826</rs> ogs&#x00E5; stiltr&#x00E6;k, der er karakteristiske for den norr&#x00F8;ne digtning.</p>
+        <p rend="firstIndent">I digtene findes der flere kenninglignende billeder. En kenning er en s&#x00E6;rlig form for poetisk omskrivning, der blev brugt i skjaldedigtningen. En kenning indeholder mindst to substantiver, f.eks. &#x201C;Havfru-Kaaben&#x201D; (s. 42). Meget ofte er kenningen en metafor som her, hvor der er tale om en billedm&#x00E6;ssig omskrivning for &#x201C;havet&#x201D;. I en &#x00E6;gte kenning har en del af udtrykket desuden ofte tilknytning til den nordiske mytologi.</p>
+        <p rend="firstIndent">De stilfigurer af denne type, der forekommer i <hi rend="italic">
+<rs type="title" key="title227">Kong Harald og Ansgar</rs>,</hi> er dannet p&#x00E5; samme eller n&#x00E6;sten samme m&#x00E5;de som den &#x00E6;gte, norr&#x00F8;ne kenning. Som andre eksempler kan n&#x00E6;vnes &#x201C;gyngende Heste&#x201D; (dvs. skibe, s. 3) og &#x201C;Svane-Vangen&#x201D; (dvs. havet, s. 41).</p>
+        <p rend="firstIndent">Ogs&#x00E5; den hyppige brug af bogstavrim (allitterationer eller stavrim) som var rimformen i den norr&#x00F8;ne digtning, kan v&#x00E6;re inspireret direkte herfra. Teknikken best&#x00E5;r i, at begyndelseslyden p&#x00E5; en betonet stavelse gentages. Det ses f.eks. i &#x201C;Om Rinde i <hi rend="bold">V</hi>est, og om <hi rend="bold">V</hi>ale!&#x201D; (s. 9),  &#x201C;For <hi rend="italic"><hi rend="bold">B</hi>ibel</hi> saa kaldte han <hi rend="italic"><hi rend="bold">B</hi>ogen,</hi>&#x201D; (s. 13) og &#x201C;Saa <hi rend="bold">L</hi>ys og <hi rend="bold">L</hi>ov-Sang fulgdes ad!&#x201D; (s. 19).</p>
+    </div>
+     
+     
+  
+    
+ </div>
+
+
+<div>
+    <head xml:id="docIn24">Metrik</head>
+    <p rend="noIndent">Der henvises i &#x00F8;vrigt til <ref type="web" target="http://www.grundtvigsværker.dk/vejledning/metrik_vej.xml">Vejledning til metriske oplysninger</ref>.</p>
+  <div>
+      <head xml:id="docIn25">
+<rs type="title" key="title687">Dansk Jubel-Hilsen til Kong Frederik den Sjette</rs>
+</head>
+      <p rend="noIndent">Digtet er i samme versem&#x00E5;l som <persName key="pe294">Thomas Kingos</persName> salme &#x201C;<rs type="title" key="title230">Far, Verden, far vel</rs>&#x201D;; versem&#x00E5;let er bl.a. brugt af Grundtvig i &#x201C;<rs type="title" key="title2805">De levendes Land</rs>&#x201D;, skrevet i 1824 (se <hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> 502A).</p>
+      <p rend="noIndent">5 strofer a 6 vers.</p>
+      <p rend="noIndent">Versem&#x00E5;l: amfibrakisk med mandlig udgang.</p>
+<!-- dvs. en kort, en lang, en kort stavelse -->
+      <p rend="noIndent">Stavelsesantal: 5 11 11 11 11 5.</p>
+      <p rend="noIndent">Rimstilling: aabbcc; a &#x2642;, b &#x2642;, c &#x2642;.</p>
+      <p rend="noIndent">(<rs type="title" key="title223">Thuner 1930</rs>, nr. 139 og 515).</p>
+      <!-- <p rend="noIndent">Se i &#x00F8;vrigt <ref type="web" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>
+</p> -->
+      
+  </div>  
+    
+ <div>
+     <head xml:id="docIn26">
+<rs type="title" key="title688">Harald Klak</rs>
+</head>
+     <p rend="noIndent">Versformen er en tillempning af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> knittelvers og har ikke fri udfyldning af de tryksvage stavelser.</p>
+     <p rend="noIndent">Versem&#x00E5;l: jambisk-anap&#x00E6;stisk med c&#x00E6;sur i vers med mandligt rim.</p>
+     <p rend="noIndent">Stavelsesantal: 9 9 9 9 etc.</p>
+     <p rend="noIndent">Rimf&#x00F8;lge: krydsrimet: ababcdcdef etc.; a &#x2642;, b &#x2640;, c &#x2642; d &#x2640;, e &#x2642; f &#x2640;.</p>
+     
+     <!-- <p rend="noIndent">Se i &#x00F8;vrigt <ref type="web" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>
+</p> -->  
+ </div>
+    
+    <div>
+        <head xml:id="docIn27">
+<rs type="title" key="title689">Ansgar &#x0254;: &#x00C6;sger</rs>
+</head>
+        <p rend="noIndent">Versformen er en tillempning af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> knittelvers og har ikke fri udfyldning af de tryksvage stavelser.</p>
+        <p rend="noIndent">Versem&#x00E5;l: jambisk.</p>
+        <p rend="noIndent">Stavelsesantal: 8 8 8 8 8 etc.</p>
+        <p rend="noIndent">Rimf&#x00F8;lge: parrimet: aabbccddee etc.; a &#x2642;, b &#x2642;, c &#x2642; d &#x2642;, e &#x2642;.</p>
+        
+        
+        <!-- <p rend="noIndent">Se i &#x00F8;vrigt <ref type="web" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>.</p> -->   
+    </div>
+    
+    <div>
+        <head xml:id="docIn28">
+<rs type="title" key="title690">Rimbert</rs>
+</head>
+        <p rend="noIndent">Versformen er en tillempning af <hi rend="italic"><rs type="title" key="title242">Rimkr&#x00F8;nikens</rs></hi> knittelvers og har ikke fri udfyldning af de tryksvage stavelser.</p>
+        <p rend="noIndent">Versem&#x00E5;l: trok&#x00E6;isk med mandlig udgang.</p>
+        <p rend="noIndent">Stavelsesantal:  7 7 7 7 7 etc.</p>
+        <p rend="noIndent">Rimf&#x00F8;lge: parrimet: aabbccddee etc.; a &#x2642;, b &#x2642;, c &#x2642; d &#x2642;, e &#x2642;.</p>
+        
+        <!-- <p rend="noIndent">Se i &#x00F8;vrigt <ref type="web" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>.</p> -->
+    </div>
+    
+    
+    <div>
+        <head xml:id="docIn29">
+<rs type="title" key="title691">Christi Kirke</rs></head>
+<!-- (evt. i variation) -->
+        <p rend="noIndent">Strofen er i barform, der best&#x00E5;r af del A, som gentages, efterfulgt af del B, s&#x00E5;ledes af m&#x00F8;nsteret bliver A-A-B. Strofeformen er meget anvendt i salmer og folkelige sange (<rs type="title" key="title2389">Brincker 1974</rs>, s. 34).</p>
+        <p rend="noIndent">62 strofer a 6 vers.</p>
+        <p rend="noIndent">Versem&#x00E5;l: trok&#x00E6;isk.</p>
+        <p rend="noIndent">Stavelsesantal: 7 8 7 8 7 7.</p>
+        <p rend="noIndent">Rimf&#x00F8;lge: ababcc; a &#x2642;, b &#x2640;, c &#x2642;.</p>
+        
+        <!-- <p rend="noIndent">Se i &#x00F8;vrigt <ref type="web" target="metrik_vej.xml">Vejledning til metriske oplysninger</ref>.</p> -->
+    </div>  
+    
+ </div>
+      
+
+
+
+<div>
+    <head xml:id="docIn30">Digtkredsens modtagelse og efterliv</head>
+    <!--Erslew efterset (intet); Ingemann enkelte iagttagelser st&#x00E5;r sidst i tekstredeg&#x00F8;relsen; udgivelse af varianter; omdannelsen til salme af Christi Kirke; intet i Erindringer 1948  -->
+    
+    <p rend="noIndent">Der er ikke fundet anmeldelser eller anden offentlig omtale af v&#x00E6;rket, men i et brev fra den 17. maj 1826 skrev <persName key="pe138">Ingemann</persName> s&#x00E5;ledes til Grundtvig om <rs type="title" key="title32"><hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi></rs> og <hi rend="italic"><rs type="title" key="title227">Kong Harald og Ansgar</rs>:</hi> &#x201C;Tak for dine gudelige Folkesange til Tusendaarsfesten! At de maatte st&#x00F8;de Provst og Bisp, faldt af sig selv og forundrede mig ikke. I Dag har jeg gl&#x00E6;det mig over din <rs type="title" key="title227">Harald og Ansgar</rs> og takket dig hj&#x00E6;rtelig paa vor gamle Moders &#x005B;dvs. Danmarks&#x005D; Vegne for dit kj&#x00E6;rlige Kirkekvad&#x201D; (<rs type="title" key="title447">Grundtvig og Ingemann 1882</rs>, s. 76-77).</p>
+    <p rend="firstIndent">Helt overset i offentligheden i Grundtvigs levetid var v&#x00E6;rket dog ikke. I 1853 udsendte det slesvigske Traktat-Selskab et <rs type="title" key="title693">s&#x00E6;rtryk</rs>, der indeholdt &#x201C;<rs type="title" key="title689">
+<persName key="pe17">Ansgar</persName> &#x0254;: &#x00C6;sger&#x201D;</rs>, og digtkredsen blev udgivet igen i forbindelse med markeringen af tusind&#x00E5;ret for <persName key="pe17">Ansgars</persName> d&#x00F8;d i 1865. De historiske digte om <persName key="pe17">Ansgar</persName> og <persName key="pe303">Rimbert</persName> blev trykt som et till&#x00E6;g til <persName key="pe88">P.A. Fengers</persName> overs&#x00E6;ttelse af <hi rend="italic"><rs type="title" key="title694"><persName key="pe17">Ansgars</persName> Levnetsbeskrivelse</rs>,</hi> der kan ses som en forberedelse til jubil&#x00E6;et. I forordet h&#x00E5;ber <persName key="pe88">Fenger</persName>, at digtene &#x201C;vil bidrage til at L&#x00E6;seren faaer et livligere Billede af <persName key="pe17">Ansgar</persName>&#x201D; (<rs type="title" key="title694">Rimbert 1863</rs>, s. XVI). Andenudgaven af digtkredsen udkom i umiddelbar tilknytning til den store mindefest i K&#x00F8;benhavn i februar 1826 (om udgivelserne, se tekstredeg&#x00F8;relsens afsnit <ref type="docOut" target="1826_436A_txr.xml#docIn3">Tryk</ref>; om mindeh&#x00F8;jtideligheden, se <rs type="title" key="title695">Brun 1882</rs>, bind 2, s. 437-443).</p>
+    <p rend="firstIndent">I 1873-1874 blev der af digtet &#x201C;<rs type="title" key="title691">Christi Kirke</rs>&#x201D; uddraget en salme og en sang. Salmen &#x201C;<rs type="title" key="title2806">Faderen saa h&#x00F8;it i L&#x00F8;n</rs>&#x201D; best&#x00E5;r af strofe 10-14 (s. 39-40), der indeholder den hellige, almindelige kirkes pinsepr&#x00E6;diken med fremh&#x00E6;velse af <persName key="pe45">Jesu</persName> gerning, d&#x00E5;b og nadver (<rs type="title" key="title2810">Fenger 1873 &#x005B;1857&#x005D;</rs>, nr. 1126; <rs type="title" key="title2348"><hi rend="italic">Sang-V&#x00E6;rk</hi> 3 1948</rs>, nr. 7). Sangen &#x201C;<rs type="title" key="title2807">Dronning over Dane-mark</rs>&#x201D; best&#x00E5;r af strofe 18-19 (s. 41), 26-27 (s. 43) og 29-31 (s. 44) og handler om den kristne mission i Danmark, der foregik med fredelige midler (<rs type="title" key="title2779">Trier 1874</rs>, nr. 132; <rs type="title" key="title2348"><hi rend="italic">Sang-V&#x00E6;rk</hi> 3 1948</rs>, nr. 98). Sangen fik et efterliv i <hi rend="italic"><rs type="title" key="title2808">H&#x00F8;jskolesangbogens</rs></hi> 2. til 15. udgave (<rs type="title" key="title1930">Dam 1992</rs>, s. 57).</p> 
+</div>
+      
+    
+<div>
+   <head xml:id="docIn31">Grundtvigs &#x00F8;vrige v&#x00E6;rker om Ansgar</head>
+<!-- alle titler og f&#x00F8;rstelinjer efterses i f&#x00F8;rstetrykket -->
+<!-- evt. om Grundtvigske temaer i v&#x00E6;rket: se fra Auken 2005, s. 483f (h&#x00E5;ndskrevet notat) -->
+    <p rend="noIndent">
+<persName key="pe17">Ansgars</persName> person og hans missionsarbejde var et af de omr&#x00E5;der, Grundtvig gentagne gange vendte tilbage i sit lange, produktive liv. Nedenfor er angivet v&#x00E6;rker, hvor emnerne f&#x00E5;r en grundigere behandling:
+
+<list type="simple">
+    <item>(1816: december 1815) <rs type="title" key="title2791">&#x201C;Et Blad af Jyllands Rimkr&#x00F8;nike&#x201D;</rs> (<rs type="title" key="title2790"><hi rend="italic">Heimdall</hi>  1816</rs>, s. 94-187; <rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 269). Fra dette lange digt udskiller Grundtvig tre digte eller sange til <rs type="title" key="title2246"><hi rend="italic">Sang-V&#x00E6;rk</hi> 2 1870</rs>: &#x201C;<rs type="title" key="title2792">Ebbe og Harald Klak. &#x005B;Der er saa bredt et land bag Rhin&#x005D;</rs>&#x201D; (nr. 109), &#x201C;<rs type="title" key="title2793">Ansgar og &#x00D8;dbert. &#x005B;Hos Fyrsterne sad t&#x00E6;t i Ring&#x005D;</rs>&#x201D; (nr. 110) og &#x201C;<rs type="title" key="title2794">Ansgars D&#x00F8;d. &#x005B;Ansgar han laae paa Sotteseng&#x005D;</rs>&#x201D; (nr. 111).</item>
+    
+    <item>(1817) &#x201C;<rs type="title" key="title244">Ansgars Efterm&#x00E6;le</rs>&#x201D; (<rs type="title" key="title192"><hi rend="italic">Danne-Virke</hi> 3 1817</rs>, s. 101-167).</item>
+    
+    <item>(1826) &#x201C;<rs type="title" key="title31">Klar op, du Sky paa &#x00D8;ien-Bryn</rs>&#x201D; (<rs type="title" key="title32"><hi rend="italic">Danske H&#x00F8;itids-Psalmer</hi> 1826</rs>, III; <rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 433A).</item>
+    
+    <item>(1842) &#x201C;<rs type="title" key="title2795">Ansgar. &#x005B;<hi rend="italic">Aanden</hi> lignes allerbedst&#x005D;</rs>&#x201D; (s. 105-109) (<hi rend="italic"><rs type="title" key="title1410">Kr&#x00F8;nike-Riim</rs>
+</hi>, 2. udg. 1842 &#x005B;1829&#x005D;; <rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 477B).</item>
+    
+    <item>(1847) &#x201C;<rs type="title" key="title2789">Nordens Evangelister. &#x005B;Der throned en Keiser i Englehjem&#x005D;</rs>&#x201D; (<rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 889a). Digtet blev genoptrykt i <rs type="title" key="title2246"><hi rend="italic">Sang-V&#x00E6;rk</hi> 2 1870</rs>, nr. 112.</item>
+    
+    <item>(1865) &#x201C;<rs type="title" key="title2788"><hi rend="italic">Til Ansgars Minde.</hi> &#x005B;Han var ingen m&#x00E6;gtig Aand&#x005D;&#x201D;</rs> og et foredrag om <persName key="pe17">Ansgar</persName>, efterf&#x00F8;lgende trykt i <rs type="title" key="title532"><hi rend="italic">Dansk Kirketidende</hi> 1865</rs>, sp. 127-132. Digtet blev skrevet til og sunget umiddelbart f&#x00F8;r Grundtvigs kirkehistoriske foredrag ved mindefesten for <persName key="pe17">Ansgars</persName> d&#x00F8;d, 3. februar 1865 i Kasino (se <rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 1368; <rs type="title" key="title695">Brun 1882</rs>, bind 2, s. 437-443). Digtet blev bl.a. genoptrykt i <rs type="title" key="title2246"><hi rend="italic">Sang-V&#x00E6;rk</hi> 2 1870</rs>, nr. 126.</item>
+    
+    <item>(1866) &#x201C;<rs type="title" key="title2787">Ansgar-Tr&#x00F8;sten. &#x005B;&#x00D8;er, h&#x00F8;rer! Herren siger:&#x005D;</rs>&#x201D; (<rs type="title" key="title532"><hi rend="italic">Dansk Kirketidende</hi> 1866</rs>, sp. 561-562; <rs type="title" key="title35"><hi rend="italic">Bibliografien</hi></rs> 1398). Digtet blev genoptrykt i <rs type="title" key="title2246"><hi rend="italic">Sang-V&#x00E6;rk</hi> 2 1870</rs>, nr. 125.</item>
+</list>
+    </p>
+    
+    <p rend="noIndent">De fleste af disse v&#x00E6;rker er omtalt i <rs type="title" key="title2786">H&#x00F8;irup 1966</rs>, s. 73-85.</p>
+</div>
+      
+<div type="litList">
+    <head xml:id="docIn32">Anvendt litteratur</head>
+    
+    <div>
+        <head xml:id="docIn33">Trykt</head>
+        
+        <list type="litList">
+            
+            <item>Ansgar &amp; Rimbert (1826) <hi rend="italic"><rs type="title" key="title2796">Leben des St. Willehad's und St. Ansgar's. Ersteres beschrieben von St. Ansgar, letzteres von dessen Nachfolger dem bremischen und hamburgischen Erzbischof Rembert. Nebst einem Briefe Ansgar's</rs></hi> overs. Carsten Miesegaes. Bremen</item>
+            
+            <item>Auken, Sune (2005) <hi rend="italic"><rs type="title" key="title4">Sagas spejl. Mytologi, historie og kristendom hos N.F.S. Grundtvig</rs>.</hi> K&#x00F8;benhavn</item>
+            
+            <item><hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>,</hi> se Johansen, Steen (1948-1954)</item>
+            
+            <item>Brincker, Jens (1974) <rs type="title" key="title2389"><hi rend="italic">Musikl&#x00E6;re og musikalsk analyse.</hi> 5. del: <hi rend="italic">Form</hi></rs>. K&#x00F8;benhavn</item>
+            
+            <item>Brun, H. (1882) <hi rend="italic"><rs type="title" key="title695">Biskop N.F.S. Grundtvigs Levnedsl&#x00F8;b, udf&#x00F8;rligst fortalt fra 1839. Et Bidrag</rs>,</hi> bind 2. Kristiania, Kolding &amp; K&#x00F8;benhavn</item>
+            
+            <item>Bruun, Chr. (1886) <hi rend="italic"><rs type="title" key="title2390">Bibliotheca Danica. Systematisk Fortegnelse over den danske Literatur fra 1482 til 1830, efter Samlingerne i det store kongelige Bibliothek i Kj&#x00F8;benhavn</rs>.</hi> K&#x00F8;benhavn</item>
+            
+            <item>Christensen, Torben (1969) <hi rend="italic"><rs type="title" key="title2391">Kyrkohistoria. I. Fra evangelium til den pavelige gudsstat</rs>.</hi> K&#x00F8;benhavn, Oslo, Stockholm m.fl</item>
+            
+            <item>Dam, Poul (1992) <rs type="title" key="title1930"><hi rend="italic">Grundtvig-tekster i Sangb&#x00F8;gerne med s&#x00E6;rligt henblik p&#x00E5; h&#x00F8;jskolesangen. En bibliografisk oversigt</hi></rs>. Aarhus</item>
+            
+            <item><hi rend="italic"><rs type="title" key="title242">Den danske Rimkr&#x00F8;nike. I. Ghementrykket 1495 med variantapparat</rs>.</hi> (1961) udg. af Helge Toldberg. K&#x00F8;benhavn</item>
+            
+            <item>Ermoldus Nigellus (1772) &#x201C;<rs type="title" key="title1173">Ermoldi Nigelli Narratio de Baptismo Haraldi Danorum Regis An. 826</rs>&#x201D; &#x005B;u.&#x00E5;.: efter 826&#x005D;, i <rs type="title" key="title1179"><hi rend="italic">Scriptores Rerum Danicarum Medii &#x00C6;vi</hi>,</rs> udg. af Jacob Langebek, bind 1, s. 398-424.  K&#x00F8;benhavn</item>
+<!--  partim hactenus inediti, partim emendatius editi, qvos collegit, adornavit, et publici juris fecit -->
+            
+            <item>Ermoldus Nigellus (1886) <rs type="title" key="title1175"><hi rend="italic">Ermoldus Nigellus' Digt om Kong Haralds Daab,</hi></rs> overs. Hans Olrik &#x005B;u.&#x00E5;.: efter 826&#x005D;. K&#x00F8;benhavn</item>
+           
+            <item>Fenger, P.A. (1873) <hi rend="italic"><rs type="title" key="title2810">Till&#x00E6;g til evangelisk-christelig Psalmebog</rs></hi> 7. oplag, &#x005B;1857&#x005D;. K&#x00F8;benhavn</item>
+            
+           
+            <item>Gl&#x00E6;demark, H.J.H. (1939-1941) &#x201C;<rs type="title" key="title191">N.F.S. Grundtvigs Nedl&#x00E6;ggelse af Pr&#x00E6;steembedet i 1826. En kildekritisk og psykologisk Studie&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title190">Kirkehistoriske Samlinger</rs>,</hi> 6. r&#x00E6;kke, 3. bind, s. 201-304. K&#x00F8;benhavn</item>
+            
+                       
+            <item>Grundtvig, N.F.S. (1816: december 1815) &#x201C;<rs type="title" key="title2791">Et Blad af Jyllands Rimkr&#x00F8;nike</rs>&#x201D;, i <hi rend="italic"><rs type="title" key="title2790">Heimdall. Dansk Nytaaars-Gave for 1816</rs>,</hi> s. 94-187. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1816-1817) <hi rend="italic"><rs type="title" key="title270">Danne-Virke et Tids-Skrift</rs>,</hi> bind 1. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1817) &#x201C;<rs type="title" key="title2755">Paaske-Lilien</rs>&#x201D;, i <hi rend="italic"><rs type="title" key="title271">Danne-Virke et Tids-Skrift</rs>,</hi> bind 2, s. 291-325. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1817) <rs type="title" key="title2802">&#x201C;Om Ordsprog&#x201D;</rs> i <hi rend="italic">Danne-Virke et Tids-Skrift,</hi> bind 3, s. 62-88. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1818-1819) <hi rend="italic"><rs type="title" key="title272">Danne-Virke et Tids-Skrift</rs>,</hi> bind 4. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1826) &#x201C;<rs type="title" key="title2798">Broder Niels fra Soor. (Efterskrift til den danske Rim-Kr&#x00F8;nike)</rs>&#x201D;, i <hi rend="italic"><rs type="title" key="title2797">Nyt Aftenblad</rs></hi> 1826, nr. 4, s. 25-27. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1826) <hi rend="italic"><rs type="title" key="title32">Danske H&#x00F8;itids-Psalmer til Tusindaars-Festen</rs>.</hi> K&#x00F8;benhavn</item>
+               
+            <item>Grundtvig, N.F.S. (1832) &#x201C;<rs type="title" key="title2805">De Levendes Land</rs>&#x201D; i Hagen, L.C. (1832) <hi rend="italic"><rs type="title" key="title36">Historiske Psalmer og Riim til B&#x00F8;rne-L&#x00E6;rdom</rs>,</hi> s. 197-203. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1842) <hi rend="italic"><rs type="title" key="title1410">Kr&#x00F8;nike-Riim til levende Skolebrug med Oplysninger</rs></hi>, 2. udg. &#x005B;1829&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1847) &#x201C;<rs type="title" key="title2789">Nordens Evangelister</rs>&#x201D; i <rs type="title" key="title532"><hi rend="italic">Dansk Kirketidende</hi> 1846-47</rs>, sp. 545-547. K&#x00F8;benhavn</item>
+             
+            <item>Grundtvig, N.F.S. (1865) <hi rend="italic"><rs type="title" key="title2788">Til Ansgars Minde. 3die Februar 1865</rs></hi>. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1866) &#x201C;<rs type="title" key="title2787">Ansgar-Tr&#x00F8;sten</rs>&#x201D; i <rs type="title" key="title532"><hi rend="italic">Dansk Kirketidende</hi> 1866</rs>, sp. 561-562. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1870) <hi rend="italic"><rs type="title" key="title2246">Sang-V&#x00E6;rk til Den Danske Kirke-Skole</rs>,</hi> i (1868-1881) <hi rend="italic"><rs type="title" key="title318">Psalmer og aandelige Sange</rs>,</hi> bind 1-6, bind 2. K&#x00F8;benhavn</item>
+            <!-- <item>Grundtvig, N.F.S. (1868-1881) <hi rend="italic"><rs type="title" key="title2246">Psalmer og aandelige Sange</rs>,</hi> bind 2 (1870): <hi rend="italic">Sang-V&#x00E6;rk til Den Danske Kirke-Skole</hi>. K&#x00F8;benhavn</item> -->
+                        
+            <item>Grundtvig, N.F.S. (1882) <hi rend="italic"><rs type="title" key="title447">Grundtvig og Ingemann. Brevvexling 1821-1859</rs>,</hi> udg. af Svend Grundtvig. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1888) <hi rend="italic"><rs type="title" key="title16">Christian Molbech og Nikolai Frederik Severin Grundtvig. En Brevvexling</rs>,</hi> samlet af Chr.K.F. Molbech og udg. af L. Schr&#x00F8;der. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1948) <hi rend="italic"><rs type="title" key="title2348">Sang-V&#x00E6;rk. Salmer og kristelige digte 1809-1843</rs>,</hi> i (1944-1964) <rs type="title" key="title197"><hi rend="italic">Grundtvigs Sang-V&#x00E6;rk.</hi> Samlet Udgave</rs>, bind 1-6, udg. af Th. Balslev, Ernst J. Borup, Uffe Hansen, Ejnar Skovrup &amp; Magnus Stevns, bind 3. K&#x00F8;benhavn</item>
+                                          
+            <item>H&#x00F8;irup, Henning (1966) <rs type="title" key="title2786">&#x201C;Grundtvig og Ansgar&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title1507">Guldalderstudier. Festskrift til Gustav Albeck den 5. juni 1966</rs>,</hi> red. Henning H&#x00F8;irup, Aage J&#x00F8;rgensen &amp; Peter Skautrup, s. 73-85. Aarhus</item>
+            
+            <item>Johansen, Steen (1948-1954) <hi rend="italic"><rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs Skrifter</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>
+            
+            <item>Kaspersen, S&#x00F8;ren; Sigurd Kv&#x00E6;rndrup, Lars L&#x00F6;nnroth &amp; Thorkil Damsgaard Olsen (1990) <hi rend="italic"><rs type="title" key="title2809">Dansk litteraturhistorie. 1. Fra runer til ridderdigtning o. 800-1480</rs>,</hi> 2. udg. &#x005B;1984&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>Koch, Hal (1950)<rs type="title" key="title2785"><hi rend="italic">Den Danske Kirkes Historie.</hi> Bind 1. <hi rend="italic">Den &#x00E6;ldre middelalder indtil 1241</hi></rs>. K&#x00F8;benhavn</item>
+            
+            <item>Kruse, Ernst Christian (1823) <hi rend="italic"><rs type="title" key="title2392">St. Anschar</rs>.</hi> Altona</item>
+                                    
+            <item>Lausten, Martin Schwarz (2004) <hi rend="italic"><rs type="title" key="title1182">Danmarks kirkehistorie</rs>,</hi> 3. udg. &#x005B;1983&#x005D;. K&#x00F8;benhavn</item>            
+                    
+            <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic"><rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+            
+            <item>M&#x00FC;nter, Friederich (1826) <hi rend="italic"><rs type="title" key="title2784">Nordens f&#x00F6;rste l&#x00E4;rare Ansgarius, Erke-Biskop i Hamburg, samt Nordens f&#x00F6;rste Primas Eskil, Erke-Biskop i Lund</rs>,</hi> overs. af J.P. Landtmanson. Christianstad</item>
+            
+            <item>M&#x00F8;ller, Niels (1926) &#x201C;<rs type="title" key="title212">Grundtvig og Ansgar</rs>&#x201D; i Gunner Engberg red. <hi rend="italic"><rs type="title" key="title211">826&#x2013;1926. Et Festskrift til den danske Kirke</rs>,</hi> s. 69-83. K&#x00F8;benhavn</item>            
+               
+            <item>Oehlenschl&#x00E4;ger, Adam (1926) &#x201C;<rs type="title" key="title2804">De tvende Kirketaarne</rs>&#x201D; i Oehlenschl&#x00E4;ger, Adam (1926) <hi rend="italic">Oehlenschl&#x00E6;ger. Poetiske Skrifter</hi> 1-5, udg. af Helge Tops&#x00F8;e-Jensen, bind 1, s. 76-81 &#x005B;1811&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>Pedersen, Vibeke A. (2007) &#x201C;<rs type="title" key="title2783">Rimkr&#x00F8;niken</rs>&#x201D; i Klaus P. Mortensen &amp; May Schack red. (2007) <hi rend="italic"><rs type="title" key="title2782">Dansk litteraturs historie. Bind 1. 1100-1800</rs>,</hi> s. 140-142. K&#x00F8;benhavn</item>
+            
+            <item>Rasmussen, Alexander (1925) <hi rend="italic"><rs type="title" key="title217">Frederik M&#x00FC;nter. Et Mindeskrift</rs>,</hi> bind 1:1, s. 205-212. K&#x00F8;benhavn</item>
+            
+            <item>Rimbert (1772) &#x201C;<rs type="title" key="title1176">Vita S. Anscharii Archiepiscopi Hamburgensis a S. Remberto conscripta</rs>&#x201D;, i <rs type="title" key="title1179"><hi rend="italic">Scriptores Rerum Danicarum Medii &#x00C6;vi</hi>,</rs> udg. af Jacob Langebek, bind 1, s. 427-495. K&#x00F8;benhavn</item>
+            
+            <item>Rimbert (1837) <rs type="title" key="title2781"><hi rend="italic">Ansgars Levnet beskrevet af Erkebiskop Rimbert og en anden Diseipel</hi> &#x005B;sic: Discipel, GV&#x005D;</rs> overs. Christian Sigfred Ley, &#x005B;u.&#x00E5;.: ca. 870&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>Rimbert (1863) <hi rend="italic"><rs type="title" key="title694">Ansgars Levnetsbeskrivelse</rs>,</hi> overs. P.A. Fenger, &#x005B;u.&#x00E5;.: ca. 870&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>Rimbert (1885) <hi rend="italic"><rs type="title" key="title1177">Ansgars Levned</rs>,</hi> overs. P.A. Fenger, udg. med noter af Hans Olrik, &#x005B;u.&#x00E5;.: ca. 870&#x005D; &#x005B;1. udg. 1863&#x005D;. K&#x00F8;benhavn</item>
+            
+            <item>R&#x00F8;nning, Frederik (1911) <hi rend="italic"><rs type="title" key="title20">N.F.S. Grundtvig. Et Bidrag til Skildring af dansk &#x00C5;ndsliv i det 19. &#x00C5;rhundrede</rs>,</hi> bind 3:1. K&#x00F8;benhavn</item>
+            
+                        <item>Skautrup, Peter (1947) <rs type="title" key="title218"><hi rend="italic">Det danske Sprogs Historie</hi>. Andet Bind. <hi rend="italic">Fra Unionsbrevet til danske Lov</hi>
+</rs>, s. 73-80. K&#x00F8;benhavn</item>
+            
+            <item>Syv, Peder (1682-1688) <hi rend="italic"><rs type="title" key="title89">Aldmindelige Danske Ord-Sproge og korte L&#x00E6;rdomme</rs>.</hi> K&#x00F8;benhavn</item>
+            
+            <item>S&#x00F8;rensen, Rasmus (1826) <hi rend="italic"><rs type="title" key="title2780">Ansgarius eller en kort eenfoldig Historie, for B&#x00F8;rn og Almue, om Christendommens f&#x00F8;rste Indf&#x00F8;relse iblandt vore hedenske Forf&#x00E6;dre</rs>.</hi> K&#x00F8;benhavn</item>
+            
+            <item>Thuner, O.E. (1930) <hi rend="italic"><rs type="title" key="title223">Dansk Salme-Leksikon: Haandbog i dansk Salmesang. En hymnologisk Sammenstilling af Ord og Toner med historiske og bibliografiske Oplysninger</rs>.</hi> K&#x00F8;benhavn</item>
+            
+            <item>Toldberg, Helge (1946) <hi rend="italic"><rs type="title" key="title24">Grundtvig som filolog</rs></hi>. K&#x00F8;benhavn</item>
+                               
+            <item>Toldberg, Helge (1954) &#x201C;<rs type="title" key="title2746">Grundtvig og Den danske Rimkr&#x00F8;nike</rs>&#x201D;, i <rs type="title" key="title337"><hi rend="italic">Grundtvig-Studier</hi> 1954</rs>, s. 40-95. K&#x00F8;benhavn</item>                          
+           
+            
+            <item>Trier, Ernst (1874) <hi rend="italic"><rs type="title" key="title2779">Sange for den kristelige folke-skole</rs>.</hi> K&#x00F8;benhavn</item>
+                
+        </list>
+    </div>
+     
+     
+     <div>
+         <head xml:id="docIn34">Utrykt</head>
+         <list type="litList">
+            
+             <item>
+<rs type="title" key="title2756">Grundtvig-arkivet fasc. 236</rs>, Det Kongelige Bibliotek, K&#x00F8;benhavn</item>
+             
+             <item>
+<rs type="title" key="title2777">Grundtvig-arkivet, fasc. 388.106</rs>, Det Kongelige Bibliotek, K&#x00F8;benhavn</item>
+             
+             <item>
+<rs type="title" key="title2778">Grundtvig-arkivet, fasc. 388.107</rs>, Det Kongelige Bibliotek, K&#x00F8;benhavn</item>
+         </list>
+     </div>
+
+</div>   
+          
+    <div> 
+    <head xml:id="docIn35">Anvendt webside</head>
+    
+    <list type="webList">
+        
+        <item n="2012-07-16" target="http://www.denstoredanske.dk/Danmarkshistorien/Da_Danmark_blev_Danmark/Den_første_vikingetid">Danmarkshistorien</item>
+        
+    </list>
+    </div>
+
+
+
+  </body>
+</text>
+</TEI>

@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Til Nordm&#x00E6;nd om en Norsk H&#x00F8;i-Skole</title>
+                <title rend="shortForm">Til Nordm&#x00E6;nd om en Norsk H&#x00F8;i-Skole</title>
+                <author>Henrik Yde</author>
+               <editor role="editor1">Holger Berg</editor>
+               <editor role="editor2">dr.theol. K.E. Bugge</editor>
+               <editor role="editor3">Johnny Kondrup</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>76 KB</extent>
+            
+            <publicationStmt>
+               <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+               <publisher>Faculty of Arts, University of Aarhus</publisher>
+               <distributor>Grundtvig Centeret, Vartov</distributor>
+               
+               <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+               
+            </publicationStmt>
+               
+            
+               
+            <notesStmt>
+                <note target="1837_580_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" target="1837_580_com.xml" type="com">Punktkommentar</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+<encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+               <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+               <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            </encodingDesc>
+<revisionDesc>
+                <change xml:id="KSR" who="KSR" when="2012-01-05">comFIL</change>
+               <change xml:id="HY" who="HY" when="2012-01-10">Skrevet til og med com21</change>
+               <change who="HY" when="2012-01-11">Skrevet til og med com35</change>
+               <change who="HY" when="2012-01-12">Skrevet til og med com48</change>
+               <change who="HY" when="2012-01-13">Skrevet til og med com52</change>
+               <change who="HY" when="2012-01-16">Skrevet til og med com54</change>
+               <change who="HY" when="2012-01-18">Skrevet til og med com65</change>
+               <change who="HY" when="2012-01-20">F&#x00E6;rdig, afleveret til red. hos NHB</change>
+               <change who="HY" when="2012-02-21">Sm&#x00E5;rettelser i forbindelsen med 3. korrektur/kollation.</change>
+               <change who="HY" when="2012-02-24">Rettelser efter NHB's red.</change>
+               <change who="HY" when="2012-03-02">Sammensatte &#x00E5;rstal skrevet helt ud</change>
+               <change who="HY" when="2012-03-14">Rettelser og tilf&#x00F8;jelser efter KEB's red. og studier i Oslo</change>
+               <change who="HY" when="2012-03-23">Rettelser efter JK's red.</change>
+               <change who="HY" when="2012-04-12">valdideret efter nyt skema</change>
+               <change who="HY" when="2012-04-23">valdideret</change>
+               <change who="HY" when="2012-08-16">&#x00C6;ndret versionsnummer til 1.1</change>
+               <change who="HY" when="2012-10-19">lavet lidt korrektur fra sk&#x00E6;rm.</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+               <change who="KN" when="2018-10-31" xml:id="KN">com82 udkommenteret; seg-opmærkning manglede i txt-filen</change>
+            </revisionDesc>
+    </teiHeader>
+    <text type="com">
+        <body>
+         <note xml:id="com1">
+<!--lemma: H&#x00F8;i-Skole-->
+            <p>universitet eller h&#x00F8;jere l&#x00E6;reanstalt.</p>
+         </note>
+
+         <note xml:id="com3">
+<!--lemma: min Optr&#x00E6;delse i den Nordiske
+                    L&#x00E6;se-Verden, for tredive Aar siden-->
+            <p>Grundtvig henviser til sine f&#x00F8;rste mytologiske v&#x00E6;rker <rs key="title125" type="title">
+<hi rend="italic">Lidet om Sangene i Edda</hi>
+</rs> 1806, <rs type="title" key="title2">
+<hi rend="italic">Om Asal&#x00E6;ren</hi>
+</rs> 1807 og <rs key="title76" type="title">
+<hi rend="italic">Nordens Mytologi</hi>
+</rs> 1808.</p>
+         </note>
+
+         <note xml:id="com2">
+<!--lemma: Optr&#x00E6;delse-->
+            <p>fremkomst, fremtr&#x00E6;den.</p>
+         </note>
+
+         <note xml:id="com5">
+<!--lemma: klare sig-->
+            <p>opklares, g&#x00F8;re fuldt forst&#x00E5;eligt.</p>
+         </note>
+         
+         <note xml:id="com71">
+<!--lemma: efter deres Lignelse-->
+            <p>i deres billede.</p>
+         </note>
+         
+         <note xml:id="com8">
+<!--lemma: vist nok-->
+            <p>ganske vist.</p>
+         </note>
+         
+         <note xml:id="com6">
+<!--lemma: Sammenblandingen af to, vist nok
+                    meget forenelige, men dog yderst forskiellige Ting, nemlig Christendom og Nordiskhed-->
+            <p>Jf. Grundtvigs formulering i <hi rend="italic">
+<rs type="title" key="title128">Maskeradeballet</rs>
+</hi> (1808), s. 19 f.: &#x201C;H&#x00F8;je Odin! Hvide Krist! / Slettet ud er Eders Tvist, / Begge S&#x00F8;nner af Alfader&#x201D;.</p>
+         </note>
+
+         <note xml:id="com7">
+<!--lemma: de politiske Forandringer i Norden-->
+            <p>de begivenheder siden Englandskrigene 1801 ff., der i 1814 f&#x00F8;rte til Danmarks afst&#x00E5;else af Norge til Sverige og vedtagelsen af den norske Eidsvollforfatning.</p>
+         </note>
+
+         <note xml:id="com73">
+<!--lemma: i senere Tid-->
+            <p>hentydning til Grundtvigs &#x2018;omvendelse til menneskelivet&#x2019;, der i 1831-1832 f&#x00F8;rte ham til et nyt syn p&#x00E5; folkelig oplysning, kristendom, politik m.v. Se herom generelt <persName key="pe652">Kaj Thanings</persName> disputats <rs key="title661" type="title">
+<hi rend="italic">Menneske f&#x00F8;rst &#x2013;. Grundtvigs opg&#x00F8;r med sig selv</hi>
+</rs> (1963).</p>
+         </note>
+         
+         <note xml:id="com72">
+<!--lemma: m&#x00E6;rkelig-->
+            <p>m&#x00E6;rkbart, klart.</p>
+         </note>
+         
+         <note xml:id="com9">
+<!--lemma: mine Bes&#x00F8;g hos det store &#x00D8;folk,-->
+            <p>hentydning til Grundtvigs tre
+               Englandsrejser 1829-1831 (en fjerde og sidste foretog han i 1843).</p>
+         </note>
+
+         <note xml:id="com10">
+<!--lemma: Borgerlige-->
+            <p>samfundsm&#x00E6;ssige.</p>
+         </note>
+         
+         <note xml:id="com25">
+<!--lemma: Angel-Saxers-->
+            <p>Anglerne udvandrede i 300-tallet fra halv&#x00F8;en Angel i Sydslesvig til England sammen med deres sydlige naboer, sakserne.</p>
+         </note>
+         
+         <note xml:id="com70">
+<!--lemma: det almindelige Skibbrud, der truer Europas Folk-->
+            <p>polemisk hentydning til tidens liberale r&#x00F8;relser, der forl&#x00F8;big var kulmineret i 1830 med Julirevolutionen i Paris, augustopstanden i Bruxelles og novemberopstanden i Warszawa.</p>
+         </note>
+         
+         <note xml:id="com13">
+<!--lemma: Normanners-->
+            <p>Normannerne var de vikinger, der bosatte sig i Normandiet i det nuv&#x00E6;rende Frankrig; i 1000- og 1100-tallet udstrakte de deres indflydelse til bl.a. England, som de invaderede i 1066.</p>
+         </note>
+         
+         <note xml:id="com14">
+<!--lemma: Frihed, som de i England har taget med Staalhandsker-->
+            <p>Formentlig t&#x00E6;nker Grundtvig p&#x00E5; det engelske parlament, som siden sin grundl&#x00E6;ggelse i 1200-tallet har fors&#x00F8;gt at begr&#x00E6;nse kongemagtens indflydelse. England var is&#x00E6;r i 1600-tallet pr&#x00E6;get af v&#x00E6;bnede konflikter mellem konge og parlament. Parlamentets sejr i 1688 blev fastholdt i loven &#x201C;Bill of Rights&#x201D;, som stadig udgjorde grundlaget for Storbritanniens forfatning i 1800-tallet.</p>
+            <note type="readMore">
+<p>Sandsynligvis hentyder Grundtvig specielt til &#x201C;Declaration
+               of Rights&#x201D;, en konstitutionel erkl&#x00E6;ring udarbejdet i februar 1689.
+               Erkl&#x00E6;ringen blev udf&#x00E6;rdiget p&#x00E5; parlamentets initiativ for at
+               forhindre, at dets indflydelse blev begr&#x00E6;nset. If&#x00F8;lge
+               erkl&#x00E6;ringen skulle parlamentsvalg foreg&#x00E5; uden kongemagtens
+               indblanding, og kongen m&#x00E5;tte ikke suspendere landets love uden parlamentets
+               tilladelse, opkr&#x00E6;ve skatter eller i fredstid holde sin egen st&#x00E5;ende
+               h&#x00E6;r. Erkl&#x00E6;ringen blev senere p&#x00E5; &#x00E5;ret med enkelte
+               tilf&#x00F8;jelser til &#x201C;Bill of Rights&#x201D;.</p>
+</note>
+         </note>
+         
+         <note xml:id="com15">
+<!--lemma: nu, da alle Nordens Folk har gienvundet deres offenlige Stemme,-->
+            <p>Sverige fik 1809 en ny grundlov, bygget p&#x00E5; princippet om magtens tredeling i den lovgivende (Riksdagen), den d&#x00F8;mmende og den ud&#x00F8;vende magt; samtidig indf&#x00F8;rtes en justitsombudsmand. I Norge vedtoges 1814 den efter samtidens forhold enest&#x00E5;ende liberale Eidsvollforfatning. I Danmark og hertugd&#x00F8;mmerne indf&#x00F8;rtes 1831 de r&#x00E5;dgivende provinsialst&#x00E6;nder (ofte kaldet st&#x00E6;nderforsamlinger), som kom i funktion fra 1835.
+            </p>
+         </note>
+         
+
+         <note xml:id="com81">
+<!--lemma: Borgerlig-->
+            <p>samfundsm&#x00E6;ssig.</p>
+         </note>
+         
+<!--         <note xml:id="com82">
+lemma: Borgerligt
+            <p>samfundsm&#x00E6;ssigt.</p>
+         </note>
+-->
+
+         <note xml:id="com11">
+<!--lemma: Afhjelp-->
+            <p>afhj&#x00E6;lpning.</p>
+         </note>
+
+         <note xml:id="com12">
+<!--lemma: Ligbeg&#x00E6;ngelse-->
+            <p>ligf&#x00E6;rd, begravelse.</p>
+         </note>
+         
+                  <note xml:id="com78">
+<!--lemma: K&#xE6;mpe-Natur-->
+            <p>krigernatur.</p>
+         </note>
+                  
+         <note xml:id="com77">
+<!--lemma: underkastede sig, kun med lidt Forbeholdenhed,
+                        Romerskheden-->
+            <p>Den oprindelige angelsaksiske poesi, <persName key="pe654">C&#x00E6;dmon</persName> m.fl., blev i middelalderen efterh&#x00E5;nden oversat til latin, men samtidig blev der gennemf&#x00F8;rt en omhyggelig udv&#x00E6;lgelse af, hvad der skulle overs&#x00E6;ttes; det ikke valgte gik til grunde, jf. <persName key="pe653">S.A.J. Bradleys</persName> indledning til den af ham udgivne <hi rend="italic">
+<rs key="title662" type="title">Anglo-Saxon Poetry</rs>
+</hi> (1982).</p>
+         </note>
+
+         <note xml:id="com16">
+<!--lemma: Knuden-->
+            <p>muligvis hentydning til sagnet om den gordiske knude, dvs. den sv&#x00E6;rt opl&#x00F8;selige knude i Zeus-templet i Gordion. Det var sp&#x00E5;et, at den, der l&#x00F8;ste knuden, skulle herske over Asien; <persName key="pe495">Alexander den Store</persName> huggede den over med sit sv&#x00E6;rd.</p>
+         </note>
+
+         <note xml:id="com17">
+<!--lemma: Udvandring-->
+            <p>Den skandinaviske emigration til is&#x00E6;r USA begyndte efter Englandskrigene
+               1801-1814. Emigrationen fra Norge var forholdsvis st&#x00F8;rst, men antog dog
+               f&#x00F8;rst masseomfang i sidste halvdel af 1800-tallet.</p>
+         </note>
+
+         <note xml:id="com18">
+<!--lemma: visse Levebr&#x00F8;d-->
+            <p>faste, sikre ans&#x00E6;ttelser, embeder.</p>
+         </note>
+         
+         <note xml:id="com74">
+<!--lemma: almindelig Oplysning-->
+            <p>en oplysning, der er udbredt over alt og derfor tilg&#x00E6;ngelig for alle.</p>
+         </note>
+         
+         <note xml:id="com84">
+<!--lemma: greb feil ad-->
+            <p>tog fejl af, forvekslede.</p>
+         </note>
+
+         <note xml:id="com19">
+<!--lemma: Engle-H&#x00E6;nder-->
+            <p>Muligvis har Grundtvig hentet udtrykket fra <persName key="pe348">H.A. Brorsons</persName> salme nr. 68 i <hi rend="italic">
+<rs key="title628" type="title">Troens rare Klenodie</rs>,</hi> &#x201C;Paa St. Mikkels Dag&#x201D; (&#x201C;O s&#x00F8;de GUd! din naades magt&#x201D;), strofe 9, vers 7-12: &#x201C;Den mand, / Som kand / GUd behage, / Hand kand drage / Engle-h&#x00E6;nder / Efter sig, hvor hand sig vender.&#x201D; Grundtvig anvendte ogs&#x00E5; udtrykket &#x2018;engleh&#x00E6;nder&#x2019; i et par af sine salmer 1836-1837.</p>
+         </note>
+         
+         <note xml:id="com75">
+<!--lemma:
+                    den store Folke-Fiendes og
+                    almindelige Mand-Drabers Moders-Maal-->
+            <p>romernes modersm&#x00E5;l, latin.</p>
+         </note>
+         
+         <note xml:id="com85">
+<!--lemma: indtale-->
+            <p>kr&#x00E6;ve (retsligt).</p>
+         </note>
+
+         <note xml:id="com20">
+<!--lemma:
+                    rister Gaade-Runer paa
+                            V&#xE6;ggen ligeover for Lyse-Stagen-->
+            <p>allusion til <rs key="Dan 5,5" type="bible">Dan 5,5</rs> (skriften p&#x00E5; v&#x00E6;ggen). &#x201C;Gaade-Runer&#x201D;: hemmelighedsfulde runetegn, g&#x00E5;der.</p>
+         </note>
+         
+         <note xml:id="com76">
+<!--lemma:
+                    bedrager Skinnet - Skinnet kunde imidlertid ogsaa her lettelig bedrage-->
+            <p>At &#x2018;skinnet bedrager&#x2019; er et almindeligt ordsprog, se <rs type="title" key="title93">Mau</rs> nr. 8915, men Grundtvig bruger det specielt til at udtrykke sin aversion imod alt u&#x00E6;gte og p&#x00E5;taget. I denne betydning har han hentet udtrykket fra <persName key="pe172">Holbergs</persName> forfatterskab, hvor mods&#x00E6;tningen mellem &#x2018;realitet&#x2019; og &#x2018;apparence&#x2019; er et ofte behandlet tema, jf. <rs key="title445" type="title">Bugge 1965</rs>, s. 74 f.</p>
+         </note>
+
+         <note xml:id="com21">
+<!--lemma: eget Maal-->
+            <p>Da nordm&#x00E6;ndene i 1814, efter at have frigjort sig fra Danmark, blev tvunget
+               ind i en union med Sverige, fik de indsat f&#x00F8;lgende paragraf 33 i Norges
+               reviderede grundlov af 4. november: &#x201C;Alle Forestillinger om Norske Sager,
+               saavelsom de Expeditioner, som i Anledning deraf skee, forfattes i det Norske
+               Sprog&#x201D;, dvs. ikke p&#x00E5; svensk,
+               <ref type="web" target="http://www.stortinget1905.no/popup/dokumenter/029-t.html">se her</ref> (24. februar 2012).
+               Sprogsp&#x00F8;rgsm&#x00E5;let var i &#x00F8;vrigt ikke i fokus de f&#x00F8;rste
+               &#x00E5;rtier efter 1814, men i 1830'erne fremkom der under indtryk af
+               nationalromantikken en r&#x00E6;kke forslag til fornorskning af skriftsproget, som i
+               &#x00E5;rhundreder havde v&#x00E6;ret dansk. Disse forslag blev ogs&#x00E5;
+               bem&#x00E6;rket i Danmark, hvor de blev m&#x00F8;dt med udtalt skepsis af mange,
+               deriblandt Grundtvig. </p>
+         </note>
+
+         <note xml:id="com22">
+<!--lemma: Chineserne-->
+            <p>Grundtvig (og andre p&#x00E5; hans tid) anvendte udtrykket &#x2018;kinesisk&#x2019; som
+               sk&#x00E6;ldsord for alt, hvad der forekom ham kunstlet og u&#x00E6;gte.</p>
+         </note>
+
+         <note xml:id="com23">
+<!--lemma: Normannernes Storv&#x00E6;rk-->
+            <p>Fra slutningen af 800-tallet havde vikinger h&#x00E6;rget i Normandiet, som i 900-tallet blev deres fyrstend&#x00F8;mme. I 1000- og 1100-tallet udstrakte de deres indflydelse til bl.a. England, som de invaderede i 1066, og til Middelhavsomr&#x00E5;det, hvor de  fra omkring 1015 fungerede som lejesoldater, men senere erobrede landomr&#x00E5;der i Syditalien og p&#x00E5; Sicilien. Herfra fors&#x00F8;gte de at erobre omr&#x00E5;der i Det Byzantinske Rige. Normannere deltog i det 1. korstog og oprettede i 1098 fyrstend&#x00F8;mmet Antiokia i det nuv&#x00E6;rende Tyrkiet.</p>
+         </note>
+
+         <note xml:id="com24">
+<!--lemma: Ulve-Naturen fra Rom-->
+            <p>allusion til sagnet om Roms grundl&#x00E6;ggere, tvillingerne <rs key="myth277" type="myth">Romulus</rs> og <rs type="myth" key="myth286">Remus</rs>. De var s&#x00F8;nner af krigsguden <rs key="myth250.a" type="myth">Mars</rs> og blev som nyf&#x00F8;dte sat ud i en kurv p&#x00E5; Tiberen, men drev i land, hvor de blev fundet og ammet af en hunulv.</p>
+         </note>
+
+          <note xml:id="com26">
+<!--lemma: M&#x00E6;rkes-M&#x00E6;nd-->
+            <p>faneb&#x00E6;rere, bannerf&#x00F8;rere.</p>
+         </note>
+
+         <note xml:id="com27">
+<!--lemma: var m&#x00E6;gtige-->
+            <p>m&#x00E6;gtede, var i stand til.</p>
+         </note>
+         
+         <note xml:id="com43">
+<!--lemma: den sorte Konst-->
+            <p>trolddomskunst eller magi, is&#x00E6;r i forhold til afd&#x00F8;de &#x00E5;nder (nekromanti).</p>
+         </note>
+         
+         <note xml:id="com29">
+<!--lemma: Nyaars-Tiden-->
+            <p>Begrebet &#x2018;nyt&#x00E5;r&#x2019; har for Grundtvig vide, symbolske betydninger, jf. titlerne p&#x00E5; <rs type="title" key="title102">
+<hi rend="italic">Nyaars-Morgen</hi>
+</rs> og en lang r&#x00E6;kke
+               andre skrifter hvori ordet indg&#x00E5;r: menneskelig, folkelig, national
+               og/eller &#x00E5;ndelig genf&#x00F8;dsel, til dels i et tidsskifte, der if&#x00F8;lge ham
+               fandt sted omkring 1800.</p>
+         </note>
+
+         <note xml:id="com30">
+<!--lemma: Enevoldsmagten-->
+            <p>enev&#x00E6;lden, den enev&#x00E6;ldige magt.</p>
+         </note>
+
+         <note xml:id="com31">
+<!--lemma: denne Forbeholdenhed-->
+            <p>dette forbehold.</p>
+         </note>
+         
+         <note xml:id="com66">
+<!--lemma: farligt Forbund med Latin og Romerskhed, som de selv
+                    maae tilstaae, har, lige fra Elisabeths til vore Dage-->
+            <p>Den engelske statskirke (Church of England) etablerede under <persName key="pe618">Elizabeth 1.</persName> en position imellem protestantisme og katolicisme. Denne anglikanske tradition omfattede bl.a. brug af latin under gudstjenesten. Siden 1833 havde den h&#x00F8;jkirkelige &#x2018;Oxfordbev&#x00E6;gelse&#x2019; s&#x00F8;gt at styrke ikke blot latinsk liturgi i statskirken, men ogs&#x00E5; statskirkens b&#x00E5;nd til paven.</p>
+         </note>
+
+         <note xml:id="com32">
+<!--lemma:
+                    aldeles forloren-->
+            <p>helt tabt.</p>
+         </note>
+
+         <note xml:id="com33">
+<!--lemma: i L&#x00F8;n-->
+            <p>i det skjulte.</p>
+         </note>
+
+         <note xml:id="com34">
+<!--lemma: som Dv&#x00E6;rgene til Fenris-Ulven-->
+            <p>Nogle dv&#x00E6;rge hjalp if&#x00F8;lge nordisk mytologi aserne med at lave den l&#x00E6;nke, <rs type="myth" key="myth248">Gleipner</rs>, som kunne binde <rs key="myth14" type="myth">Fenrisulven</rs>.</p>
+         </note>
+
+         <note xml:id="com35">
+<!--lemma: Folkelig-->
+            <p>national. Om Grundtvigs positive, inkluderende syn p&#x00E5; &#x2018;folkelighed&#x2019; og &#x2018;det
+               folkelige&#x2019;, se f.eks. <persName key="pe384">K.E. Bugge</persName>: <rs type="title" key="title663">&#x201C;Grundtvigs syn p&#x00E5; folkelig dannelse &#x2013; dets muligheder f&#x00F8;r
+                  og nu&#x201D;</rs> (1993), s. 22-26 eller <persName key="pe52">Flemming
+                  Lundgreen-Nielsen</persName>: &#x201C;Grundtvig og danskhed&#x201D; (1992).</p>
+         </note>
+         
+         <note xml:id="com37">
+<!--lemma: K&#xE6;mpers F&#xf8;deland-->
+            <p>allusion til <persName key="pe649">Johan Nordahl Bruns</persName> norsk-patriotiske
+               drikkevise <rs key="title658" type="title">&#x201C;For Norge, Ki&#x00E6;mpers
+                  F&#x00F8;deland, vi denne Skaal vil t&#x00F8;mme&#x201D;</rs>. Den var skrevet
+               ved &#x00E5;rsskiftet 1771-1772 og fik stor uofficiel udbredelse, men tryktes
+               f&#x00F8;rst frit efter Norges
+               selvst&#x00E6;ndighed 1814, hvor den blev Norges
+               f&#x00F8;rste nationalsang (til 1820).</p>
+         </note>
+         
+         <note xml:id="com38">
+<!--lemma: Ridderspil-->
+            <p>egl. ridderlig idr&#x00E6;tter, kapl&#x00F8;b eller turneringer.</p>
+         </note>
+
+         <note xml:id="com39">
+<!--lemma: Pavedom-->
+            <p>pavelige herred&#x00F8;mme, paved&#x00F8;mme.</p>
+         </note>
+
+         <note xml:id="com79">
+<!--lemma: Heimskringle-->
+            <p>
+<hi rend="italic">
+<rs key="title552" type="title">Heimskringla</rs>,</hi> islandsk historiev&#x00E6;rk, der indeholder de norske kongers sagaer fra sagntiden til 1177. V&#x00E6;rket tilskrives <persName key="pe49">Snorre eller Snorri Sturluson</persName> og er sandsynligvis blevet til i 1230'erne.</p>
+         </note>
+         
+         <note xml:id="com41">
+<!--lemma: Bans&#x00E6;ttelser-->
+            <p>bandlysninger.</p>
+         </note>
+         
+         <note xml:id="com42">
+<!--lemma: forklare-->
+            <p>oplyse (om) eller lade fremtr&#x00E6;de i en ny og herligere form.</p>
+         </note>
+         
+         <note xml:id="com86">
+<!--lemma: Borgerligt Selskab-->
+            <p>samfund.</p>
+         </note>
+
+         <note xml:id="com44">
+<!--lemma: H&#xf8;iskole, ligesom den Latinske, maatte have endeel Drenge-Skoler under sig, hvor de Smaa ved Erhvervelsen af
+                    allehaande reelle Kundskaber, saasom Mathematik, Physik,
+                    fremmede Sprog o. s. v. forberedtes til en h&#x00F8;iere
+                    Dannelse-->
+            <p>Grundtvig polemiserer her dels imod universitet,
+               (&#x2018;den latinske h&#x00F8;jskole&#x2019;) og latinskolerne, dels imod id&#x00E9;en om
+               offentlige realskoler, der skulle v&#x00E6;re et modstykke til latinskolerne.</p>
+               <note type="readMore">
+<p>Juristen <persName key="pe333">Tage Algreen-Ussing</persName>
+               havde p&#x00E5; st&#x00E6;nderforsamlingsm&#x00F8;det i Roskilde 1.
+               februar 1836 i engagerede vendinger fremsat forslag om realskoler med v&#x00E6;gt p&#x00E5; de levende sprog og de
+               matematisk-naturvidenskabelige fag &#x2013; retorisk kaldet
+               &#x201C;Skolen for Livet&#x201D;, herfra Grundtvigs
+                  udtryk om den folkelige h&#x00F8;jskole. Som et af argumenterne  anf&#x00F8;rte <persName key="pe333">Algreen-Ussing</persName>, at borgerskabets drengeb&#x00F8;rn for at
+               kvalificere sig til som voksne at indtr&#x00E6;de i st&#x00E6;nderforsamlingerne havde brug for en
+               mere praktisk uddannelse end den, latinskolerne gav. Grundtvig mente imidlertid, at den opgave at forberede til deltagelse
+               i samfundslivet, herunder i statens styrelse, l&#x00F8;stes bedst af en h&#x00F8;jere l&#x00E6;reanstalt, en &#x2018;h&#x00F8;jskole&#x2019; for <hi rend="italic">voksne</hi> unge mennesker, samt at skoler af enhver art for
+               konfirmerede drenge var af det onde og burde erstattes af l&#x00E6;repladser. Se <hi rend="italic">
+<rs key="title170" type="title">Det Danske
+                     Fiir-Kl&#x00F8;ver</rs>
+</hi> (1836), s. 40.</p>
+</note>
+         </note>
+
+         <note xml:id="com45">
+<!--lemma: Latinsk Stil-->
+            <p>skriftlig overs&#x00E6;ttelse fra dansk til latin, som var en hoveddisciplin i latinskolernes pensum.</p>
+         </note>
+
+         <note xml:id="com46">
+<!--lemma: Byzantiner-->
+            <p>Grundtvig anvendte udtrykket &#x2018;byzantinsk&#x2019; (p&#x00E5; linje med udtrykket &#x2018;kinesisk&#x2019;) som
+               sk&#x00E6;ldsord for det, der forekom ham kunstlet og u&#x00E6;gte, herunder et
+               strengt formalistisk uddannelsessystem (hvilket dog ikke forhindrede ham i at
+               v&#x00E6;re en glad overs&#x00E6;tter af byzantinske salmer). Byzans er det gamle
+               navn for det senere Konstantinopel (i dag Istanbul), hovedstad i det
+               &#x00F8;stromerske rige.</p>
+         </note>
+
+         <note xml:id="com47">
+<!--lemma: B&#x00F8;rne-Huus-->
+            <p>Begrebet hidr&#x00F8;rer fra B&#x00F8;rnehuset p&#x00E5; Christianshavn, oprettet 1662 som en videref&#x00F8;relse af <persName key="pe231">Christian 4.s</persName> Tugt- og B&#x00F8;rnehus fra 1605. B&#x00F8;rnehuset var en tvangsarbejdsanstalt, hvor fattige og vagabonderende b&#x00F8;rn blev indsat og sat i arbejde med manufakturproduktion til milit&#x00E6;r brug. Efterh&#x00E5;nden blev stedet ogs&#x00E5; brugt til voksne l&#x00F8;sg&#x00E6;ngere og egentlige forbrydere. 1790 &#x00E6;ndrede anstalten navn til Tugt-, Rasp- og Forbedringshuset p&#x00E5; Christianshavn og fik i h&#x00F8;jere grad karakter af at v&#x00E6;re et egentligt f&#x00E6;ngsel. Anstalten nedlagdes 1928.
+            </p>
+         </note>
+         
+         <note xml:id="com67">
+<!--lemma: Almisse-Lemmer-->
+            <p>personer, som lever af almisse; fattiglemmer.</p>
+         </note>
+         
+         <note xml:id="com80">
+<!--lemma: Raskhed-->
+            <p>det at v&#x00E6;re hurtig i vendingen, livlig, energisk.</p>
+         </note>
+
+         <note xml:id="com48">
+<!--lemma: Romer-Ret-->
+            <p>(lat. ius romanum) et retssystem, som stammer fra det antikke romerrige. Som grundlag for det juridiske studium og for den retsvidenskabelige metode har romerretten spillet en afg&#x00F8;rende rolle over det meste af Europa. Ved K&#x00F8;benhavns Universitet var der siden reformationen et professorat i romerret.</p>
+            <note type="readMore">
+               <p>Om romerrettens status i dansk ret efter indf&#x00F8;relsen af en juridisk embedseksamen i 1736, se <hi rend="italic">
+<rs key="title113" type="title">K&#x00F8;benhavns Universitet 1479-1979</rs>,</hi> 4.1, s. 72-73.</p>
+</note>
+         </note>
+         
+         <note xml:id="com64">
+<!-- endelig -->
+            <p>absolut, for enhver pris.</p>
+         </note>
+        
+         <note xml:id="com49">
+<!--lemma: vilde have den oprettet paa offenlig Bekostning-->
+            <p>I sit f&#x00F8;rste som bog trykte h&#x00F8;jskoleskrift, <hi rend="italic">
+<rs key="title170" type="title">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</rs>
+</hi> (1836), anf&#x00F8;rer Grundtvig (s. 62) den mulighed, at en dansk h&#x00F8;jskole kunne oprettes p&#x00E5; privat initiativ og for private midler. Han foretrak dog den mulighed (s. 63-66) at lade Sor&#x00F8; Akademi omdanne til en statsejet og statsligt finansieret h&#x00F8;jskole.</p>
+         </note>
+         
+         <note xml:id="com83">
+<!-- Hernede -->
+            <p>dvs. i Danmark, modsat &#x2018;oppe&#x2019; i Norge.</p>
+         </note>
+
+         <note xml:id="com50">
+<!--lemma: Mad og Drikke, Kl&#x00E6;der, Sko, visse
+                    V&#x00E6;relser, en god Hustru, lydige B&#x00F8;rn, sund Luft, almindelig Fred og
+                    Alt hvad Ens Hjerte kan forlange-->
+            <p>Opremsningen parafraserer udl&#x00E6;gningen af fadervors fjerde b&#x00F8;n, &#x2018;giv os
+               i dag vort daglige br&#x00F8;d&#x2019;, i den f&#x00F8;rste, vidt udbredte
+               katekismeforklaring til brug for konfirmationsundervisningen i de danske og norske
+               skoler, <persName key="pe234">Erik Pontoppidan</persName>: <rs type="title" key="title79">
+<hi rend="italic">Sandhed til Gudfrygtighed udi en enfoldig
+                     Forklaring over sal. Dr. Morten Luthers liden Catechismus</hi>
+</rs> (1737), s.
+               161 f.: &#x201C;Fremdeles ved det, at der n&#x00E6;vnes dagligt Br&#x00F8;d,
+               forstaaes alle de Ting, som til dette Liv at opholdes gi&#x00F8;res Behov, saasom
+               ere: Mad, Drikke, Kl&#x00E6;der, Skoe, visse V&#x00E6;relser, Agre, F&#x00E6;,
+               Penninge, Gods, en god Hustru, lydige B&#x00F8;rn, Tieneste-Folk som gi&#x00F8;re
+               deres Embede, runde og milde Herrer, god og forstandig &#x00D8;vrighed, sund Luft,
+               almindelig Fred, Sundhed, gode S&#x00E6;der, H&#x00E6;der, gode Venner, gode Naboer,
+               og saadanne Ting.&#x201D;</p>
+            <p>En tilsvarende og delvis enslydende opremsning findes i samme v&#x00E6;rks forklaring af den f&#x00F8;rste trosartikel, s. 92.</p>
+            <p>Lutheraneren Grundtvig satiriserer over det danske folk, der gerne vil have alt dette, men
+               &#x201C;uden videre Uleilighed&#x201D;, i mods&#x00E6;tning til den gode kristne, som i det
+               anf&#x00F8;rte v&#x00E6;rk, s. 163, sp&#x00F8;rger: &#x201C;Skal da den, som beder om sit daglige Br&#x00F8;d
+               tillige arbeide derfor?&#x201D; og f&#x00E5;r svaret: &#x201C;Ja&#x201D;. </p>
+            </note>
+
+         <note xml:id="com51">
+<!--lemma: Storthinget-->
+            <p>Stortinget, den norske nationalforsamling, oprettet 1814.</p>
+         </note>
+
+         <note xml:id="com52">
+<!--lemma: Sammens&#x00E6;tningen af det Norske Storthing,-->
+            <p>Grundtvig har h&#x00F8;jst sandsynligt v&#x00E6;ret orienteret om den generelle politiske situation i Norge og om &#x2018;Bondestortinget&#x2019;, den almindelige betegnelse for det Storting, som blev valgt i 1833, og som repr&#x00E6;senterede et politisk gennembrud for den norske bondebev&#x00E6;gelse. Antallet af bonderepr&#x00E6;sentanter gik ved dette valg brat frem fra 21 til 45, s&#x00E5; de fik flertal over for embedsm&#x00E6;ndene, hvis antal tilsvarende faldt fra 43 til 35. 
+            </p>
+               <p>Derimod kan Grundtvig muligvis have v&#x00E6;ret
+               mindre orienteret om udfaldene af stortingsvalgene februar-juli 1836 &#x2013; dette
+               Storting opl&#x00F8;stes af kongen samme &#x00E5;r &#x2013; og af de nyligt afholdte
+               ekstraordin&#x00E6;re Stortingsvalg oktober 1836-januar 1837. Det er dog mere sandsynligt, at han haft kendskab hertil, men ikke har &#x00F8;nsket at udtale sig om politiske forhold i Norge, fordi hans norske tilh&#x00E6;ngere omfattede b&#x00E5;de demokrater og konservative.</p> 
+            <p>Kongen havde med opl&#x00F8;sningen af Stortinget i 1836 s&#x00F8;gt at hindre
+               vedtagelsen af et vidtg&#x00E5;ende kommunalt selvstyre
+               (&#x2018;formandskabsloven&#x2019;). Det nyvalgte Storting viste sig imidlertid at
+               v&#x00E6;re endog mere radikalt end det opl&#x00F8;ste, og tinget vedtog reformen i
+               januar 1837; kongen m&#x00E5;tte b&#x00F8;je sig.</p>
+         </note>
+
+         <note xml:id="com53">
+<!--lemma: tre Aarhundreder-->
+            <p>hentydning til den f&#x00F8;rste danske skolelov, der var en del af kirkeordinansen 1537 (p&#x00E5; latin, parallelt p&#x00E5; dansk 1539), som foreskrev, at der i enhver k&#x00F8;bstad skulle indrettes en latinskole, hvor drenge kunne opn&#x00E5; et element&#x00E6;rt grundlag i teologi. Hovedfaget var at l&#x00E6;se, skrive og tale latin, som ogs&#x00E5; var det almindelige undervisningssprog.</p>
+         </note>
+         
+         <note xml:id="com65">
+<!--lemma: mist&#x00E6;nkelige-->
+            <p>dvs. mist&#x00E6;nksomme.</p>
+         </note>
+
+         <note xml:id="com54">
+<!--lemma: det Londonske
+                        Universitet,-->
+            <p>Grundtvig havde fra begyndelsen v&#x00E6;ret opm&#x00E6;rksom p&#x00E5; planerne for det ny, privatfinansierede universitet i London, s&#x00E5;ledes som de kom til udtryk i programmet <hi rend="italic">University of London. Council. Prospectus</hi> fra april 1826 (grundstenen blev nedlagt et &#x00E5;r senere). Om betalingssp&#x00F8;rgsm&#x00E5;let hed det i programmet: &#x201C;In the early period of the Establishment, it is probable, that no other Students than those presented by Proprietors can be admitted; and whenever the extended scale of the Institution will allow of a general admission of Students, their annual payments must necessarily be much higher than those required by the Nominees of Proprietors&#x201D;, cit. efter <rs key="title465" type="title">Grundtvig 1968</rs>, 2, s. 301.</p>
+         </note>
+
+         <note xml:id="com55">
+<!--lemma: Menneske-Naturen er aldeles
+                    ford&#x00E6;rvet-->
+            <p>ironisk henvisning til den pietistiske opfattelse af syndefaldsmyten.</p>
+         </note>
+
+         <note xml:id="com56">
+<!--lemma: som Pharao ved de israelitiske Drenge-B&#x00F8;rn, han lod
+                    drukne-->
+            <p>
+<rs key="2 Mos 1,22" type="bible">2 Mos 1,22</rs>.</p>
+         </note>
+         
+         <note xml:id="com57">
+<!--lemma: F&#xE6;drenes &#x201C;st&#xE6;rke
+                    Dr&#xf8;mme&#x201D-->
+            <p>
+<rs key="ApG 2,17" type="bible">ApG 2,17</rs>.</p>
+         </note>
+
+         <note xml:id="com58">
+<!--lemma: en stor videnskabelig H&#x00F8;iskole,-->
+            <p>I <hi rend="italic">
+<rs type="title" key="title551">Den Danske Stats-Kirke
+                     upartisk betragtet</rs>
+</hi> (1834) og senere forf&#x00E6;gtede Grundtvig det
+               synspunkt, ofte kaldet &#x2018;G&#x00F6;teborgtanken&#x2019;, at der burde etableres
+               et stort f&#x00E6;lles-skandinavisk universitet.</p>
+         </note>
+         
+         <note xml:id="com87">
+<!--lemma: Snue-->
+            <p>dvs. snu.</p>
+         </note>
+         
+         <note xml:id="com88">
+<!--lemma: Vidskabs-->
+            <p>(arkaiserende) kundskabs el. videnskabs.</p>
+            <note type="readMore">
+               <p>Begrebet &#x2018;vidskab&#x2019; betegner hos Grundtvig to forskellige former for videnskabelig str&#x00E6;ben: Dels de enkelte videnskabers bestr&#x00E6;belse p&#x00E5; at forklare afgr&#x00E6;nsede omr&#x00E5;der af virkeligheden, dels den aldrig afsluttede bestr&#x00E6;belse p&#x00E5; (i vekselvirkning med de enkelte videnskaber) at forklare virkeligheden i sin helhed. Et hovedv&#x00E6;rk herom er <persName key="pe62">Bent Christensens</persName> disputats: <hi rend="italic">
+<rs key="title6" type="title">Omkring Grundtvigs vidskab &#x2013; en unders&#x00F8;gelse af N.F.S. Grundtvigs forhold til den erkendelsesm&#x00E6;ssige side af det kristeligt n&#x00F8;dvendige livsengagement</rs>
+</hi> (1998).
+               </p>
+</note>
+         </note>
+         
+         <note xml:id="com68">
+<!--lemma: forstre-->
+            <p>(sj&#x00E6;llandsk) fostre.</p>
+         </note>
+
+         <note xml:id="com59">
+<!--lemma:
+                        &#x201C;Pagt med D&#x00F8;den&#x201D;-->
+            <p>
+<rs key="Es 28,15" type="bible">Es 28,15</rs> og <rs type="bible" key="Es 28,18">Es 28,18</rs>.</p>
+         </note>
+         
+         <note xml:id="com69">
+<!--lemma:
+                        Landet maatte &#xf8;des og Folket forgaae-->
+            <p>allusion til &#x201C;H&#x00E1;konarm&#x00E1;l&#x201D;, dvs. Hakons (minde-)kvad, i <persName key="pe49">Snorre Sturlusons</persName>
+               <rs key="title551" type="title">
+<hi rend="italic">Heimskringla</hi>
+</rs>,
+               strofe 21, vers 1-3: &#x201C;Deyr f&#x00E9;, / deyja fr&#x00E6;ndr, / ey&#x00F0;isk land ok
+               l&#x00E1;&#x00F0;&#x201D;, dvs. &#x2018;F&#x00E6; d&#x00F8;r, fr&#x00E6;nder d&#x00F8;r,
+               land og folk forg&#x00E5;r&#x2019; (oversat af GV), <ref target="http://www.heimskringla.no/wiki/H%C3%A1konarm%C3%A1l_%28Eyvindr_Finnsson_sk%C3%A1ldaspillir%29_%28B1%29" type="web">se her</ref>
+               (23. februar 2012).</p>
+         </note>
+         
+         <note xml:id="com60">
+<!--lemma: Helsot-->
+            <p>d&#x00F8;delige sygdom.</p>
+         </note>
+
+         <note xml:id="com61">
+<!--lemma: Haabets Gudinde, sagde de fortvivlede Romere, har, ski&#x00F8;ndt sildig, ogsaa forladt Jorden-->
+            <p>muligvis allusion til romeren <persName key="pe264">Ovid</persName>, som i sine
+                  <hi rend="italic">Metamorphoses</hi> (da. <hi rend="italic">
+<rs key="title630" type="title">Ovids forvandlinger,</rs>
+</hi> 1, vers 129 f.), med
+               allusion til gr&#x00E6;keren <persName key="pe253">Hesiods</persName>
+               <rs key="title108" type="title">
+<hi rend="italic">V&#x00E6;rker og dage</hi>
+</rs>,
+               vers 174-201, talte om den skr&#x00E6;kkelige jernalder, han levede i.</p>
+         </note>
+
+         <note xml:id="com62">
+<!--lemma: Haabets Dise med
+                    Fjeder-Hammen-->
+            <p>Diser er i den nordiske mytologi betegnelsen for forskellige overnaturlige kvindelige v&#x00E6;sener og gudinder; her <rs key="myth19" type="myth">Freja</rs>, der havde en fjerham, som hun undertiden l&#x00E5;nte ud til andre guder.</p>
+         </note>
+
+         <note xml:id="com63">
+<!--lemma: L&#x00E6;ge-->
+            <p>l&#x00E6;gm&#x00E6;nd, ustuderede.</p>
+         </note>
+         
+         <div type="litList">
+            <head xml:id="docIn99">Anvendt litteratur</head>
+            <list type="litList">       
+            
+        
+               
+                  <item>Brorson, H.A. (1739) <hi rend="italic">
+<rs key="title628" type="title">Troens rare Klenodie</rs>.</hi> Ribe</item>
+                  <item>Bugge, Knud Eyvin (1965) <rs key="title445" type="title">
+<hi rend="italic">Skolen for livet. Studier over N.F.S. Grundtvigs p&#x00E6;dagogiske tanker.</hi>
+</rs> K&#x00F8;benhavn</item>
+                  <item>Bugge, Knud Eyvin (1993) <rs type="title" key="title663">&#x201C;Grundtvigs syn p&#x00E5; folkelig
+                        dannelse &#x2013; dets muligheder f&#x00F8;r og nu&#x201D;</rs>, i
+                        Z&#x00F8;llner, Lilian
+                     <hi rend="italic">
+<rs type="title" key="title665">Almen dannelse. Folkelig
+                           Dannelse. Folkelig livsoplysning.</rs>
+</hi> Kolding</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1806) <rs key="title125" type="title">
+<hi rend="italic">Lidet om Sangene i Edda.</hi>
+</rs> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1807) <rs type="title" key="title2">
+<hi rend="italic">Om Asal&#x00E6;ren.</hi>
+</rs> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1808) <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1808)
+                        <hi rend="italic">
+<rs type="title" key="title128">Maskeradeballet i
+                           Dannemark.</rs>
+</hi> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1834)
+                        <hi rend="italic">
+<rs type="title" key="title551">Den Danske Stats-Kirke
+                           upartisk betragtet.</rs>
+</hi> K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1836)
+                        <hi rend="italic">
+<rs key="title170" type="title">Det Danske
+                           Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet.</rs>
+</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1968) <hi rend="italic">
+<rs key="title465" type="title">Grundtvigs skoleverden i tekster og
+                           udkast</rs>,</hi> bind 1-2, udg. af K.E. Bugge.
+                     K&#x00F8;benhavn</item>
+                  <item>Hesiod (1973) <hi rend="italic">
+<rs type="title" key="title108">Theogonien, V&#x00E6;rker og dage,
+                           Skjoldet</rs>
+</hi> oversat af Lene
+                        Andersen. K&#x00F8;benhavn</item>
+                  <item>Lundgreen-Nielsen, Flemming (1992)
+                     &#x201C;Grundtvig og danskhed&#x201D;, i Feldb&#x00E6;k,
+                        Ole red. <hi rend="italic">
+<rs key="title462" type="title">Dansk identitetshistorie,</rs>
+</hi> 3. K&#x00F8;benhavn</item>
+                  <item>Ovid (1989) <hi rend="italic">
+<rs key="title630" type="title">Ovids forvandlinger</rs>
+</hi> oversat af
+                        Otto Steen Due. K&#x00F8;benhavn</item>
+                  
+               </list>
+            
+         </div>
+         <div type="webList">
+            <head xml:id="docIn9999">Anvendt webside</head>
+         
+                   
+               <list type="webList">
+                  <item n="2012-03-20" target="http://www.bokselskap.no/boker/denandensang/teksten">www.bokselskap.no/boker/denandensang</item>
+                  <item n="2012-02-23" target="http://www.heimskringla.no/wiki/H%C3%A1konarm%C3%A1l_%28Eyvindr_Finnsson_sk%C3%A1ldaspillir%29_%28B1%29">www.heimskringla.no</item>
+                  <item n="2012-02-24" target="http://www.stortinget1905.no/popup/dokumenter/029-t.html">www.stortinget1905.no</item>
+               </list>
+            
+         </div>
+      </body>
+</text>
+</TEI>

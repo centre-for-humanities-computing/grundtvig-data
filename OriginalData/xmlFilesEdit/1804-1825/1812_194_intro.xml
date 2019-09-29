@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title rend="part">Til Elises Søster. (Ved liden Dideriks Vugge)</title>
+            <title rend="shortForm">Til Elises Søster</title>
+            <title rend="part">Til Professor Sverdrup (Ved liden Regines Kiste i Dimmelugen)</title>
+            <title rend="shortForm">Til Professor Sverdrup</title>
+            <title rend="part">Til Frigges Recensent</title>          
+            <title rend="shortForm">Til Frigges Recensent</title>
+            <author>Vibeke A. Pedersen</author>
+              <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>  
+              <editor role="editor3">Klaus Nielsen</editor>
+              <editor role="editor1">Else Riisager</editor>           
+             
+        </titleStmt>
+        <editionStmt>
+                <edition>
+          <idno type="content">1.7</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+        </editionStmt>
+        <extent>44 KB</extent>
+        
+        <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2015-10-31">www.grundtvigsværker.dk, version 1.7, 31. oktober 2015</date>
+         </publicationStmt>
+         
+         <notesStmt>
+             <note target="1812_194_txt.xml" type="txt">L&#x00E6;setekst</note>
+             <note target="1812_195_txt.xml" type="txt">L&#x00E6;setekst</note>
+             <note target="1813_205_txt.xml" type="txt">L&#x00E6;setekst</note>
+             <note target="1812_194_intro.xml" type="intro" xml:id="thisFile">Indledning</note>
+        </notesStmt>
+    <sourceDesc><p /></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+<p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+<p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+<p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+<p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+<p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+<p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+<p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+<p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+</editorialDecl> <!-- NB: det her skal opdateres -->
+    </encodingDesc>
+        
+    <revisionDesc>
+       
+        <change who="VAP" when="2015-05-26" xml:id="VAP">fil oprettet ved kalkering.</change>
+        <change  who="VAP" when="2015-06-09">skrevet på afsnit om recensenten og Sverdrup og forlovelsen</change>
+        <change  who="VAP" when="2015-06-10">skrevet især på afsnit om Didrik</change>
+        <change  who="VAP" when="2015-06-11">skrevet især på afsnit Sverdrup og påsken. unicodes for ", ' og --. Opmærket titler med 000</change>
+      <change who="auto" when="2015-06-11">Autoopmærket af autotag.awk v09 KK 2013-11-28</change>
+        <change who="VAP" when="2015-06-16">diverse rettelser samt titelkørsel</change>
+        <change who="VAP" when="2015-06-17">diverse rettelser</change>
+        <change who="VAP" when="2015-06-18">smårettelser og stavekontrol kørt. Sidste opmærkninger</change>
+        <change who="VAP" when="2015-06-22">kontrol af rettelser</change>
+        <change who="VAP" when="2015-06-26">kontrol af litteraturliste</change>
+        <change who="VAP" when="2015-07-24">kontrol af litteraturliste</change>
+        <change who="VAP" when="2015-07-27">begyndende rettelser efter Else</change>
+        <change who="VAP" when="2015-07-28">fortsatte rettelser efter Else</change>
+        <change who="VAP" when="2015-07-29">færdig med rettelser efter Else samt kontrol</change>
+        <change who="VAP" when="2015-08-19">rettet efter FLN </change>
+        <change who="VAP" when="2015-08-25">kontrol af rettelser efter FLN </change>
+        <change who="VAP" when="2015-08-26">kontrol af rettelser efter FLN, fortsat </change>
+        <change who="VAP" when="2015-09-28">rettet 1 opmærkningsfejl</change>
+        <change who="VAP" when="2015-10-05">rettelser efter Klaus</change>
+        <change who="VAP" when="2015-10-06">rettelser efter diskussion med Klaus</change>
+        <change who="VAP" when="2015-10-15">kontrol af rettelser efter diskussion med Klaus</change>
+        <change who="VAP" when="2015-10-19">sidste opmærkninger</change>
+        <change who="VAP" when="2016-04-13">rettet i head</change>
+    </revisionDesc>
+</teiHeader>
+<text type="intro">
+<body>
+        <div>
+            <head xml:id="docIn1">Tre tekster, én indledning</head>
+            <p rend="noIndent">De to digte, <rs key="title3555" type="title">&#x201C;Til Elises
+                        Søster&#x201D;</rs>, <rs key="title3556" type="title">&#x201C;Til Professor
+                        Sverdrup&#x201D;</rs> og <rs key="title3937" type="title">&#x201C;Til
+                        Frigges Recensent&#x201D;</rs> blev trykt i samlingen <hi rend="italic"><rs
+                            type="title" key="title3554">Frigge. Poetisk Nytaarsgave for
+                        1813</rs></hi>, som blev udgivet af <persName key="pe2">Rasmus
+                        Nyerup</persName> og udkom i december 1812. Nogle uger senere blev <hi
+                        rend="italic"><rs type="title" key="title3554">Frigge</rs></hi> anmeldt i
+                        <hi rend="italic"><rs key="title127" type="title">Dansk
+                            Litteratur-Tidende</rs></hi> nr. 2, 1813. Omtalen af Grundtvigs digte
+                    blev imødegået af Grundtvig selv med notitsen <rs key="title3937" type="title"
+                        >&#x201C;Til Frigges Recensent&#x201D;</rs> i samme tidsskrifts nr. 9, 1813. </p>
+                <p rend="noIndent">Digtene hænger tematisk sammen, idet de begge drejer sig om små
+                    børn &#x2013; det ene stadig med hele det jordiske liv foran sig, det andet
+                    allerede hos Gud. Den følgende gennemgang vil behandle digtene hver for sig som
+                    de selvstændige kristelige lejlighedsdigte, de er, og inddrage Grundtvigs
+                    selvforsvar til sidst. </p><note type="readMore"><p>‘Nytaarsgave’ var i 1800-tallet en almindelig genrebetegnelse og titel på bøger, der udkom
+                        omkring nytår og rummede en række mindre tekster (digte, noveller). De kunne
+                        enten være skrevet af én forfatter alene eller være et udvalg af tekster ved
+                        flere forfattere. Disse bøger var yndede som gaver på grund af deres
+                        praktiske lomme- eller sybordsformat og ofte fine bogtrykskvalitet. De udkom
+                        sidst på året og bar det efterfølgende årstal i titlen.</p>
+                       
+                    </note>
+        </div>
+    <div>
+        <head xml:id="docIn2">&#x201C;Til <persName key="pe171">Elises</persName>
+                    Søster&#x201D;</head> 
+        <div>   
+            <head xml:id="docIn21">Grundtvigs følelser og forlovelse</head> 
+        <p rend="noIndent">Allerede titlen angiver, at der er noget på spil. Digtet er tilegnet en
+                        søster til en navngiven person &#x2013; ikke til denne person selv &#x2013;
+                        og anledningen er en lille dreng i en vugge. Det virker, som om Grundtvig
+                        hellere ville vise drengens moster opmærksomhed end rette den mod den spædes
+                        moder. <persName key="pe1984">Diderik</persName> var nemlig søn af hans
+                        første større, men uerklærede kærlighed, <persName key="pe170">Bodil Marie
+                            Elisabeth Blicher</persName>. Kort tid efter at hun i foråret 1804 havde
+                        forlovet sig med <persName key="pe265">Poul Egede Glahn</persName>, rettede
+                        Grundtvig en del af sine længsler mod lillesøsteren, <persName key="pe171"
+                            >Lise</persName> eller <persName key="pe171">Elise</persName> (<rs
+                            key="title3860" type="title">Rønning 1907</rs>, 1:1, s. 103-107). I 1811
+                        forlovede Grundtvig sig med <persName key="pe171">Lise</persName>, der
+                        egentlig hed <persName key="pe171">Elisabeth Christina
+                        Margaretha</persName>, og de blev gift i 1818.</p>
+        
+           
+            <p rend="noIndent">Første strofe rummer en forsikring til barnemoderen om, at det er
+                            <persName key="pe171">Lise</persName>, der nu er genstand for Grundtvigs
+                        kærlighed. Han er &#x201C;<persName key="pe171">Lises</persName> Kjæreste
+                        paa Jord&#x201D; (s. 220).</p>
+                    <p rend="noIndent">Men der havde været forhindringer på Grundtvigs
+                        kærlighedssti. Opholdet på Langeland (1805-1808) som huslærer for <persName
+                            key="pe21">Karl</persName>, søn af <persName key="pe14"
+                            >Constance</persName> og <persName key="pe22">Carl <persName key="pe914"
+                                >Frederik</persName> Steensen-Leth</persName>, kan i denne
+                        sammenhæng betragtes som et intermezzo. Dér var han begyndt at sværme for
+                        sin arbejdsgiver, <persName key="pe14">Constance</persName>, et forhold, der
+                        hos ham gav anledning til hjertesuk, digte og den begyndende asarus, men
+                        ikke andet (<ref type="docOut" target="1807_65_intro.xml#docIn4">se
+                            indledningen til <rs key="title2" type="title">&#x201C;Om
+                                Asalæren&#x201D;</rs></ref> (1807), afsnittet om den forelskede
+                        huslærer). Så tidligt som i en dagbogsoptegnelse fra 10. september 1806
+                        havde han skrevet: “Gaaende paa [Forstandens jevnere Vej] maa Jeg vel kalde
+                        det en Lykke, at min Kærlighed var ulykkelig, siden den gjorde Mig virksom,
+                        og bidrog til mine Kundskabers Forögelse” (<rs key="title3" type="title"><hi
+                                rend="italic">Dag- og Udtogsbøger</hi></rs> 1, s. 383). </p>
+                    <p rend="noIndent"><persName key="pe170">Bodil Marie</persName> og <persName
+                            key="pe265">Poul Glahn</persName> var blevet gift i 1808 og fik sønnen
+                            <persName key="pe1984">Diderik</persName> den 28. juni 1811. <persName
+                            key="pe171">Lise</persName> og N.F.S. blev forlovet sidst i september
+                        1811 &#x2013; efter at Grundtvig endegyldigt havde opgivet sine sværmerier
+                        for <persName key="pe14">Constance Leth</persName> og i et fødselsdagsdigt
+                        til hende 11. april 1811, <rs key="title4023" type="title">&#x201C;Til en
+                            Veninde&#x201D;</rs> (trykt i <hi rend="italic"><rs key="title1548"
+                                type="title">Saga</rs></hi> 1811, s. 94-99) havde erklæret sig for
+                        at være hendes ven og ikke andet (se også <rs key="title3862" type="title"
+                            >Rønning 1909</rs>, 2:2, s. 3 f.). </p>
+                   <div> <head xml:id="docIn24">Krise og omvendelse</head>
+                    <p rend="noIndent">Digtet kan ses som led i den digteriske og teologiske
+                            udvikling, som Grundtvig havde været igennem i det foregående år. Hans
+                            omvendelse til en bibeltro kristendom på luthersk grund skete i krisen
+                            ved juletid i december 1810 og de første forårsmåneder 1811 (se herom fx
+                            i <ref type="docOut" target="1811_164_intro.xml#docIn1"> indledningen
+                                til <rs key="title4109" type="title">&#x201C;Farvel. (Til min Ven F.
+                                    C. Sibbern)&#x201D;</rs> 1810</ref> eller <ref type="docOut"
+                                target="1810_149_intro.xml#docIn8">til <hi rend="italic"><rs
+                                        key="title106" type="title">Nytaarsnat</rs>,</hi>
+                            1810</ref>). I tilegnelsesdigtet til faderen i <hi rend="italic"><rs
+                                    key="title106" type="title">Nytaarsnat</rs></hi> skriver han
+                            bl.a., at han fra nu af kun vil bruge sine digteriske evner til gavn for
+                            kristendommens udbredelse. En tilsvarende formulering har Grundtvig i
+                            digtet her, strofe 1, lin. 3-4.</p></div>
+           
+        </div>
+        <div>
+            <head xml:id="docIn22">Dåbsdigt med forpligtelser</head>
+            <p rend="noIndent">Anledningen til digtet <rs key="title3555" type="title">“Til Elises
+                            Søster. (Ved liden Dideriks Vugge)”</rs> er den lille <persName
+                            key="pe1984">Dideriks</persName> dåb. Det er ved dåben, at barnet
+                        navngives, og “Vuggepenge” (strofe 2) gives som faddergave til barnet (eller
+                        dets amme). Men selv om der er tale om en familiebegivenhed, formår
+                        Grundtvig at gøre størstedelen af indholdet alment og samtidig redegøre for
+                        sin tanker om kristen børneopdragelse. </p>
+            <p rend="noIndent">I strofe 2 når Grundtvig frem til selve navnet <persName key="pe1984"
+                            >Diderik</persName> og fører hermed digtets genstand ind i billedet.
+                        Navnet tolkes ikke symbolsk. Barnet er nemlig opkaldt efter sin afdøde
+                        morfar, præsten <persName key="pe174">Diderik Nicolai Blicher</persName>. I
+                        øvrigt fik også Grundtvigs ældste søn, <persName key="pe183"
+                            >Johan</persName>, i dåben navnet Diderik efter sin morfar. </p>
+            <note type="readMore"><p>Navnet Diderik var populært i 1810'erne. Dette kunne bl.a. skyldes, at faderen til den første
+                            oldenborger på den danske trone, <persName key="pe41">Christian
+                                1.</persName>, hed <persName key="pe2439">Diderik (den
+                                Lykkelige)</persName>. Han var greve af Oldenborg og Delmenhorst.
+                            <!--Associationer hertil undgår Grundtvig
+                            dog. Med Grundtvigs kendskab til og begejstring for fortiden kunne man ellers
+                have forventet en historisk udlægning i retning af folkevisernes <rs
+                    key="myth1079" type="myth">Didrik</rs>, helten fra den germanske
+                sagnhistorie, en brav kæmpe og kristen, men dét undgår Grundtvig
+                fuldstændigt.--></p></note>
+            <p rend="noIndent">Romantiske digtere kunne hævde, at det guddommelige kunne anes
+                        overalt: &#x201C;I Sole, i Violer, / I det Mindste, i det Største&#x201D;,
+                        som digteren <persName key="pe3">Adam Oehlenschläger</persName> havde
+                        skrevet i <rs key="title164" type="title">&#x201C;Guldhornene”</rs> (<rs
+                            type="title" key="title74">Oehlenschläger 1803</rs>). I modsætning
+                        hertil mener Grundtvig, at man ikke tidligt nok kan begynde at indpode
+                        kristendommen og tanker om det guddommelige i børnene. De skal tidligt lære
+                        at forholde sig til såvel det konkrete som det abstrakte. Fadernavnet gøres
+                        således dobbelt, idet dele af den himmelske faders domæne beskrives ved
+                        hjælp af den biologiske faders naturlige sfære: den fædrene gård med alle
+                        dens kendte og fortrolige beboere (strofe 11).</p><note type="readMore"><p>På Grundtvigs tid hørte der landbrug til alle præstegårde, der ikke lå i de større byer.
+                            Præsterne levede blandt andet af naturalierne herfra.</p></note>
+       
+       
+        <p rend="noIndent">Titlens fokusering på barnemoderen underbygges i de mange strofer, der er
+                        direkte henvendt til <persName key="pe1984">Dideriks</persName> moder og
+                        tilskynder hende til at opdrage sit barn til at blive en god kristen (fra
+                        strofe 5). På dette tidspunkt i Grundvigs liv er han &#x2013; også i lyset
+                        af, at han har været huslærer for <persName key="pe21">Karl</persName>
+                        &#x2013; optaget af, hvordan og hvornår den kristne børnelærdom kan eller
+                        skal bibringes barnet. I digtet forpligter han moderen på at være den, der
+                        åbner barnets øjne for Guds eksistens og den kristne lære: &#x201C;Syng det,
+                        Søster! for din Søn&#x201D; (strofe 14). Hermed kan man sige, at digtet også
+                        almengøres, idet alle mødre eller søstre i den kristne menighed bliver
+                        pålagt samme forpligtelse. At kærligheden til Gud netop skal synges eller
+                        fortælles ind i de små er en tanke, Grundtvig udvikler livet igennem i sine
+                        mange bibelkrøniker og bibelhistoriske salmer og sange. </p>
+            <p rend="noIndent">Hvornår børn skal præsenteres for en kristen opdragelse, er et
+                        diskussionsemne i samtiden og i digtet. Nogle mener, at kristendommen først
+                        skal læres af børnene, når de har nået en vis modenhed. En generel
+                        opfattelse går ud på, at specielt de ældre skolebørn skal have indterpet den
+                        kristne børnelærdom i skolen, heriblandt <persName key="pe42"
+                            >Luthers</persName>
+                        <hi rend="italic"><rs key="title2388" type="title">Lille
+                            katekismus</rs></hi> og <persName key="pe39">Balles</persName>
+                        <hi rend="italic"><rs key="title655" type="title">L&#x00E6;rebog i den
+                                Evangelisk-christelige Religion, indrettet til Brug i de danske
+                                Skoler</rs>.</hi> Samtidig var det et udbredt synspunkt i samtiden,
+                        at de mindre børns religiøsitet endnu var ubevidst, og at de endnu ikke
+                        havde evner til at opfatte og forstå kristendommens sandheder (se f.eks. <rs
+                            key="title445" type="title">Bugge 1965</rs>, s. 110 f.). Grundtvigs
+                        polemik mod begge disse synspunkter i samtiden ses eksplicit i strofe 7-8 og
+                        10-11. </p> </div>
+   
+    <div><head xml:id="docIn23">Form</head>
+    <p rend="noIndent">Digtet består af 15 strofer. Hver strofe har 7 linjer, hvoraf de 6 første er
+                        rimende (krydsrim og parrim). Det leder opmærksomheden hen mod sidste linje,
+                        der således &#x2018;står uden rim-makker&#x2019;. Grundtvig udnytter dette
+                        til at anbringe retoriske spørgsmål eller prægnante udsagn i sidste linje,
+                        der netop får eftertryk ved ikke at følges af en rimende verslinje. </p>
+                   <note type="readMore"> <p rend="noIndent">Digtet vil kunne synges, men hverken i <persName key="pe295">Zinks</persName>
+                            <rs type="title" key="title224"><hi rend="italic">Koral-Melodier
+                                    1801</hi></rs> eller <persName key="pe349">Thuners</persName>
+                            <hi rend="italic"><rs key="title223" type="title">Dansk Salme-Leksikon:
+                                    Haandbog i dansk Salmesang</rs></hi> findes netop denne
+                            specielle opbygning med trokæiske firslagsrækker i de første seks linjer
+                            og tre trokæer i den sidste, rimløse linje. </p></note>
+    </div> 
+    </div>
+    <div>
+        <head xml:id="docIn3">&#x201C;Til Professor Sverdrup&#x201D;</head>
+        <p rend="noIndent">Den norskfødte professor <persName key="pe179">Georg Sverdrup</persName>
+                    var filolog og havde som student været alumne på Borchs kollegium. Efter at have
+                    beklædt andre undervisningsembeder var han i 1805 blevet udnævnt til
+                    ekstraordinær professor i græsk ved Københavns Universitet. Hans bror, <persName
+                        key="pe3073">Jacob</persName>, og Grundtvig var en overgang begge knyttet
+                    til Schouboes Institut i København og må have kendt hinanden.</p>
+                <p rend="noIndent">I 1813, et årstid efter at de havde mistet <persName key="pe1985"
+                        >Regine</persName>, drog han og hustruen, <persName key="pe1986">Petronelle
+                        Marie</persName>, tilbage til Christiania (Oslo), hvor han ligeledes opnåede
+                    universitetsansættelse, men først og fremmest blev kendt i forbindelse med de
+                    politiske forhandlinger, der ledte til udarbejdelsen af Eidsvollforfatningen
+                    1814.</p>
+        <p rend="noIndent">Datteren <persName key="pe1985">Regine</persName> døde i ugen op til
+                    påsken 1812, dvs. i den stille uge, omkring 4 år gammel. Det er derfor
+                    naturligt, at Grundtvig sammenkobler påskens opstandelsestanker med trøst til
+                    den efterladte fader: også den lille vil genopstå, og hun er gået forud for
+                    forældrene til Gud. </p>              
+                    
+        
+        <div><head xml:id="docIn31">Hovedtanker</head>Teksten opererer med flere modsætningspar.
+                    Først og fremmest er der tekstens emne: den jordiske død, der opvejes eller
+                    besejres af det evige liv, fx udtrykt som et her og hisset: &#x201C;Mens her vi
+                    saae, maa bittre Taarer rinde, / Men hist med Fryd vi Negene skal binde&#x201D;
+                    (s. 229; sml. <rs type="bible" rend="reference" key="Sl 126,56">Sl
+                        126,55-56</rs>), ligesom Guds &#x201C;blanke Lys&#x201D; står i modsætning
+                    til &#x201C;Dødens Skyggedale&#x201D; (s. 227). Også den mindre &#x201C;Lovens
+                    Dør&#x201D; over for den større og rummeligere &#x201C;Naadens Port&#x201D; (s.
+                    232) rummer et vigtigt udsagn, som er centralt i luthersk teologi: frelsen ved
+                    nåden alene (&#x2018;sola gratia&#x2019;), her forklaret i et sprog, som er let
+                    at forstå.</div>
+        
+               <div> <head xml:id="docIn32">Trøst og tårer</head>
+                <p rend="noIndent">Den største trøst ligger i det helt centrale kristne dogme om en
+                        opstandelse efter døden. Her har kristne en fordel frem for hedninger, der
+                        nemlig kun kan sørge, men som er uden opstandelseshåbet (s. 227). Med et
+                        retorisk spørgsmål forsikrer Grundtvig om, at det ikke er umandigt at græde
+                        (s. 226) &#x2013; tværtimod kan tårerne åbne hjertet for trøsten:
+                        &#x201C;Thi naar han græder da med højen Røst, / Oplades [dvs. åbnes]
+                        Hjertet for den søde Trøst&#x201D; (s. 229). Også den tankegang, at barnet
+                        har det bedre hos Gud end på jorden, og at vi nærmest skal være misundelige
+                        på de døde, finder udtryk her (s. 231). De efterladte kan desuden se frem
+                        til at møde deres afdøde barn i Himmerige (s. 231).</p></div>
+     
+        <div><head xml:id="docIn36">En lille polemik</head> 
+            <p rend="noIndent">Grundtvigs polemiske gemyt fornægter sig dog ikke – selv et sørgedigt
+                        kan bruges til at udtrykke meninger om noget andet. I den ellers alvorlige
+                        tekst kommer Grundtvig med en indirekte kritik af samtidens
+                        salmebogspolitik. Her er det <hi rend="italic"><rs key="title187"
+                                type="title">Evangelisk-kristelig Psalmebog</rs>,</hi> som var
+                        blevet autoriseret med kongelig resolution af 13. april 1798 (<rs
+                            key="title240" type="title">Hansen 1937</rs>, s. 30; <rs key="title203"
+                            type="title">Kjærgaard 2003</rs>, bind 1, s. 156), som Grundtvig
+                        kritiserer. <persName key="pe294">Thomas Kingos</persName> salme fra <hi
+                            rend="italic"><rs key="title3903" type="title">Danmarks og Norges
+                                Kirkers Forordnede Psalme-Bog</rs></hi> (1699), <rs key="title4024" type="title">&#x201C;Op, Siæl,
+                        bryd Søvnen aff&#x201D;</rs> indgik nemlig ikke længere i den autoriserede
+                        salmebog: &#x201C;Ak, længer ej med høj og festlig Klang / I Herrens Hus vi
+                        høre <persName key="pe294">Kingos</persName> Sang&#x201D; (s. 228).
+                            <persName key="pe294">Kingos</persName>
+                        <rs key="title3903" type="title">salmebog</rs> var derimod Grundtvigs
+                        barndoms salmebog. Fra <persName key="pe294">Kingos</persName> side var
+                        salmen tænkt brugt ved gudstjenesten første påskedag.</p></div>
+        
+    <div>
+        <head xml:id="docIn35">Genre og form</head>
+        <p rend="noIndent">I modsætning til digtet til <persName key="pe171">Elises</persName>
+                        søster, der er fuldstændig regelmæssigt strofisk, er digtet til <persName
+                            key="pe179">Sverdrup</persName> stikisk med indlejrede citater fra og
+                        gendigtninger af både Bibel og salmebog. I anmeldelsen (<ref type="docIn"
+                            target="#docIn4">se afsnittet om &#x201C;Til Frigges
+                            Recensent&#x201D;</ref>) kaldes digtet da også en epistel, hvad det
+                        formelt godt kan opfattes som, idet det har både en modtager og en afsender.
+                        Teksten kan også karakteriseres som et rimbrev.</p>
+                   
+        <p rend="noIndent">Den stikiske form brydes af en passage med flere let omdigtede strofer
+            fra <persName key="pe294">Kingos</persName> salme <rs key="title4024" type="title">&#x201C;Op, Siæl, bryd
+                        Søvnen aff&#x201D;</rs> (strofe 2, 3, 10 og 9 hos <persName key="pe294"
+                            >Kingo</persName>; findes nu i <hi rend="italic"><rs key="title253"
+                                type="title">Den Danske Salmebog</rs></hi> som nr. 225). Digtet uder
+                        i et halleluja med henvisning til opstandelsen og et indirekte citat fra den
+                        fra gammel tid kendte salme <rs key="title3939" type="title">&#x201C;Krist
+                            stod op af døde&#x201D;</rs> (i dag <hi rend="italic"><rs key="title253"
+                                type="title">Den Danske Salmebog</rs>,</hi> nr. 218). Således går
+                        form og indhold op i en højre enhed, idet påskens opstandelsesmotiv får det
+                        sidste ord i et trøstedigt til de sørgende forældre (s. 233-234).</p>
+       <!-- <p rend="noIndent">En enkelt folkevisereminiscens har sneget sig ind i det
+            ellers meget bibel- og salmenære sprog, &#x201C;axle vi det favre
+            Skind&#x201D; (s. 232). På lignende måde illustreres den kristne tankegang,
+            at vi ikke må ønske eller kalde de døde tilbage, med et udtryk, der giver
+            associationer til folkevisen om Aage og Else (<hi rend="italic"><rs
+                key="title2158" type="title">Fæstemanden i Graven</rs></hi>, DgF
+            90): &#x201C;Ej græde dem tilbage om vi kunde&#x201D; (s. 230). </p>-->
+    </div></div>
+    <div><head xml:id="docIn9">To modtagere, to former, ét budskab</head>
+        <p rend="noIndent">Når man ser på de to digte, falder det i øjnene, at de &#x2013; trods
+                    grundlæggende forskelle &#x2013; handler om det samme: hvordan man bliver Guds
+                    barn, hvad enten det er her eller hisset. Forskelligheden viser sig allerede i
+                    de to antitetiske kerneord i digtenes titler: vugge og kiste. Dette kan
+                    berettige deres placering side om side i <hi rend="italic"><rs key="title3554"
+                            type="title">Frigge</rs>
+                    </hi> og minde læseren om, at der ikke nødvendigvis er langt fra vuggen til
+                    graven. Hvor digtet til <persName key="pe171">Elises</persName> søster var
+                    sangbart, enkelt og pædagogisk og med fokus på et kristent liv her på jorden, er
+                    digtet til <persName key="pe179">Sverdrup</persName> mere udformet som en
+                    prædiken på vers og retter opmærksomheden mod det hinsidige. Det indeholder
+                    samtidig flere såvel direkte som indirekte salme- og bibelcitater. </p>
+        <p rend="noIndent">Man kan sige, at digtet til <persName key="pe171">Elises</persName>
+                    søster viser Grundtvig som den kærlige pædagog, mens digtet til <persName
+                        key="pe179">Sverdrup</persName> viser ham som den indfølende præst. Det
+                    første digt er møntet på den nære familie, det andet på en ven. Og selv om
+                    digtene er skrevet til konkrete modtagere i konkrete situationer &#x2013; og
+                    dermed kan betragtes som lejlighedsdigte &#x2013; er deres kristne budskab helt
+                    alment. Uddraget fra <persName key="pe294">Kingos</persName> salme blev sidenhen
+                    omformet og genoptrykt i adskillige salmebøger (<ref type="docOut"
+                        target="1812_195_txr.xml#docIn4">se tekstredegørelsen</ref>). I begge digte
+                    er barnet et eksempel for de voksne (se evt. <rs key="title000" type="title"
+                        >Bugge 1965</rs>, s. 172)</p>
+    </div>
+    <div>
+        <head xml:id="docIn4">&#x201C;Til Frigges Recensent&#x201D;</head>
+        <p rend="noIndent">Anmeldelsen af hele nytårsgaven <hi rend="italic"><rs key="title3554"
+                            type="title">Frigge</rs></hi> blev bragt i <hi rend="italic"><rs
+                            key="title127" type="title">Dansk Litteratur-Tidende</rs>,</hi> 1813 nr.
+                    2. Den var anonym, men formentlig skrevet af teologiprofessoren <persName
+                        key="pe6"><persName key="pe20">Jens</persName> Møller</persName>, som
+                    Grundtvig siden 1806 havde haft meningsudvekslinger med i forskellige
+                    tidsskrifter. Omtalen af Grundtvigs digte fyldte 10 linjer i tidsskriftet og
+                    lød: </p>
+        <p rend="quote">Af Pastor Grundtvig læses tvende Stykker: <rs key="title3555" type="title"
+                        >Til <persName key="pe171">Elises</persName> Søster, ved liden <persName
+                            key="pe1984">Dideriks</persName> Vugge</rs>, og en poetisk Epistel til
+                    Professor <persName key="pe179">Sverdrup</persName>, i Anledning af den liden
+                    Datters Død: begge gjennemtrængte af varm religiøs Følelse, som vilde røre
+                    Læseren endnu stærkere, naar Indtrykket ei her, som næsten i alle Grundtvigske
+                    Arbeider, stundom blandedes og svækkedes ved en vis Bitterhed imod anderledes
+                    tænkende, hvilken Forf. enten ikke kan eller ikke vil holde tilbage (<rs
+                        key="title3938" type="title">Møller 1813,</rs> s. 24).</p>
+                <p rend="noIndent">Kritikken er i al sin korthed velafbalanceret, bortset fra at
+                    bitterhed som karakteristik virker noget overdrevet. Den inddrager desuden andre
+                    af Grundtvigs værker, som anmelderen har samme holdning til. I sit forsvar
+                    fremhæver Grundtvig, at han er fuldt ud klar over, at digtene oprindelig er
+                    private, men han er ked af at blive beskyldt for bitterhed mod anderledes
+                    tænkende. Tværtimod er digtene fra hans side skrevet af kærlighed. Samtidig
+                    medgiver han dog beredvilligt, at han føler sig forpligtet til at vise hårdhed
+                    mod ukristelige meninger, og at han nærer had til det onde. At han først og
+                    fremmest ser sig selv som kristen, fremgår af digtet til <persName key="pe171"
+                        >Elises</persName> søster: &#x201C;Jeg er Kristen paa Guds Ord&#x201D;
+                    (strofe 1).</p>
+        <p rend="noIndent">Denne holdning uddyber han i et personligt brev (formentlig fra  marts
+                    1813) til <persName key="pe6"><persName key="pe20">Jens</persName> Møller</persName>, som han tror har skrevet anmeldelsen: </p>
+                <p rend="quote">jeg vil Intet i det Aandelige uden Sandheden Guds rene Erkendelse,
+                    hans Riges Udbredelse og Menneskenes timelige og evige Velfærd [...] jeg er
+                    ingen vild, hovmodig eller hjerteløs Sværmer [...] jeg har gennemgaaet
+                    Tidsalderens Skærsild, og Gud har skænket mig en urokkelig Tro paa sig og sit
+                    Ord, som jeg af al Magt maa stræbe at udbrede og forfægte, naar jeg ikke vil
+                    være en ugudelig og troløs Forræder af Sandheden. Dens Sandhed [... kendes]
+                    allermeest ved den Virkning den har haft paa mit Indvortes. Dette er
+                    Kendemærket, som <persName key="pe45">Jesus</persName> selv har angivet paa sin
+                    Lærdoms Sandhed (<hi rend="italic"><rs key="title7" type="title">Breve
+                        1</rs>,</hi> s. 135).</p>
+       <!-- <p rend="noIndent">Med andre ord betragter Grundtvig sig næsten som en ny udgave af en
+                    gammeltestamentlig profet, der <hi rend="italic">må</hi> tale, uanset hvad. </p>-->
+                <p rend="noIndent">Debatten stoppede
+                    her<!--, men Grundtvigs selvopfattelse ændrede sig
+                    tilsyneladende ikke i årene derefter-->.
+                    Grundtvig medvirkede indirekte til, at <persName key="pe294">Kingos</persName>
+                    tekst blev genoptrykt mange gange sidenhen, enten med <persName key="pe294"
+                        >Kingo</persName> eller Grundtvig angivet som forfatter <ref type="docOut"
+                        target="1812_195_txr.xml#docIn4">jf. tekstredegørelsen</ref>.</p>
+    </div>
+    
+    <div type="litList">         
+        <head xml:id="docIn8">Anvendt litteratur</head>
+        <list type="litList">
+            <item>
+                        <hi rend="italic"><rs type="title" key="title253">Den Danske
+                            Salmebog</rs></hi> (2002). København</item>
+            <item><hi rend="italic"><rs
+                type="title" key="title7">Breve</rs></hi> 1, se Grundtvig, N.F.S. (1924-1926)</item>
+            <item>Bugge, Knud Eyvin (1965) <hi rend="italic"><rs type="title" key="title445">Skolen
+                                for Livet. Studier over N.F.S. Grundtvigs p&#x00E6;dagogiske
+                                tanker</rs>.</hi> København</item>
+            <item><hi rend="italic"><rs type="title" key="title3">Dag- og Udtogsbøger</rs>,</hi> se
+                        Grundtvig, N.F.S. (1979)</item>
+                  <!--  <item>
+                        <hi rend="italic"><rs type="title" key="title253">Den Danske
+                            Salmebog</rs></hi> (2002). København</item>-->
+                    <item><hi rend="italic"><rs type="title" key="title187">Evangelisk-kristelig
+                                Psalmebog, til Brug ved Kirke- og Huus-Andagt</rs></hi> (1798).
+                        København</item>
+                   <!-- <item><rs type="title" key="title2152">“F&#x00E6;stemanden i Graven”</rs> (DgF
+                        90) i <hi rend="italic"><rs type="title" key="title1672">Danmarks gamle
+                                Folkeviser</rs></hi> (1856), bind 2. København</item>-->
+            <item>Grundtvig, N.F.S. (1807) <rs type="title" key="title2">“Om
+                            Asalæren”</rs> i <hi rend="italic"><rs type="title" key="title125">Ny
+                                Minerva</rs>,</hi> maj, s. 156-188. København</item>
+            <item>Grundtvig, N.F.S. (1811) <hi rend="italic"><rs type="title" key="title1548">Saga. Nytaarsgave for 1812</rs>.</hi>
+                        København</item>
+            <!--<item>Grundtvig, N.F.S. (1812a) <rs type="title" key="title3555">“Til Elises Søster.
+                            (Ved liden Dideriks Vugge)”</rs> i <hi rend="italic"><rs type="title"
+                                key="title3554">Frigge</rs>,</hi> s. 220-225, udg. Rasmus Nyerup.
+                        København</item>
+            <item>Grundtvig, N.F.S. (1812b) <rs type="title" key="title3556">“Til Professor Sverdrup
+                            (Ved liden Regines Kiste i Dimmelugen)”</rs> i <hi rend="italic"><rs
+                                type="title" key="title3554">Frigge</rs>,</hi> udg. Rasmus Nyerup,
+                        s. 226-234. København</item>
+                    <item>Grundtvig, Nicolai Frederik Severin (1813) <rs type="title"
+                            key="title3556">“Til Frigges Recensent”</rs> i <hi rend="italic"><rs
+                                type="title" key="title3554">Dansk Litteratur-Tidende</rs>,</hi>
+                        udg. P.E. Müller, s. 141-142. København</item>-->
+            <item>Grundtvig, N.F.S. (1924-1926) <hi rend="italic"><rs
+                                type="title" key="title7">Breve fra og til N.F.S.
+                            Grundtvig</rs>,</hi> udg. Georg Christensen &amp; Stener Grundtvig, bind
+                        1-2. København</item>
+            <item>Grundtvig, N.F.S. (1979) <hi rend="italic"><rs
+                                type="title" key="title3">Dag- og
+                            Udtogsbøger</rs>,</hi> bind 1-2, udg. Gustav Albeck. København</item>
+            <item>Hansen, Uffe (1937-1966) <hi rend="italic"><rs type="title" key="title240"
+                                >Grundtvigs Salmedigtning. Dens Historie og Indhold</rs>,</hi> bind
+                        1-3. Odense og København</item>
+           <!-- <item>Kingo, Thomas (1941) <rs type="title" key="title229">“Thomas Kingos Aandelige
+                            Siunge-Koors Anden Part. eller Siælens Opvækkelse til Allehaande
+                            Andagter i Allehaande Tilfælde”</rs> [1681] i <hi rend="italic"><rs type="title" key="title201">Thomas Kingo. Samlede Skrifter</rs></hi>, udg. Hans Brix, Paul Diderichsen &amp; F.J. Billeskov Jansen, bind 4. København</item>-->
+            <item>Kingo, Thomas (1943) <hi rend="italic"><rs type="title" key="title265">Danmarks og Norges Kirkers Forordnede Psalme-Bog. Vinter-Parten. Efter s&#x00E6;r Kongel. Befalning, af Salig D. Mort. Luthers, saa og andre Gudfrygtige L&#x00E6;rde M&#x00E6;nds Sange og gamle Kirke-Psalmer sammendragen, og med en stoor Deel til H&#x00F8;jtiderne, S&#x00F8;ndagene og Fasten igiennem forbedret</rs></hi> [1699] i <hi rend="italic"
+                            ><rs type="title" key="title201">Thomas Kingo. Samlede Skrifter</rs></hi>, udg. Hans Brix, Paul Diderichsen &amp; F.J. Billeskov Jansen, bind 3.
+                        København</item>
+            <item>Kjærgaard, Jørgen (2003)<hi rend="italic">
+                            <rs type="title" key="title203">Salmehåndbog,</rs></hi> bind 1-2.
+                        København</item>                  
+            <!--<item>Müller, Peter Erasmus udg. (1811-1836) <hi rend="italic"><rs type="title"
+                                key="title127">Dansk Litteratur-Tidende</rs>.</hi> København</item>-->
+            <item>[Møller, Jens] (1813) <rs type="title" key="title3938">“Poetiske
+                            Nytaarsgaver”</rs> i <hi rend="italic"><rs type="title" key="title127"
+                                >Dansk Litteratur-Tidende</rs>,</hi> nr. 2, s. 17-25.
+                        København</item>
+            <item>Nyerup, Rasmus udg. (1812) <hi rend="italic"><rs type="title" key="title3554"
+                                >Frigge. Poetisk Nytaarsgave for 1813</rs></hi>. København</item>
+            <item>Oehlenschläger, Adam (1803) <hi rend="italic"><rs type="title" key="title74"
+                                >Digte</rs>.</hi> København</item>
+             <item>Rønning, Frederik (1907-1914) <hi rend="italic"><rs type="title" key="title20"
+                                >N.F.S. Grundtvig. Et bidrag til skildring af dansk åndsliv i det
+                                19. århundrede</rs>.</hi> København</item>
+            <item>Thuner, O.E. (1930) <hi rend="italic"><rs type="title" key="title223">Dansk Salme-Leksikon: Haandbog i dansk Salmesang. En hymnologisk Sammenstilling af Ord og Toner med historiske og bibliografiske Oplysninger</rs>.</hi> København</item>
+            <item>Zinck, H.O.C. (1999) <hi rend="italic"><rs type="title" key="title224"
+                                >Koral-Melodier 1801</rs>,</hi> udg. Henrik Glahn. København</item>
+        </list>
+    </div>
+    </body>
+</text>
+</TEI>

@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Om Religion og Liturgie</title>
+        <title rend="shortForm">Om Religion og Liturgie</title>
+        <author>Vanja Thaulow</author>
+        <editor role="editor2">Johnny Kondrup</editor>
+        <editor role="editor1">Else Riisager</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>34 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Aarhus Universitet, Det Teologiske Fakultet</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        <date when="2016-04-29">www.grundtvigsv&#x00E6;rker.dk, version 1.8, 29. april 2016</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1807_61_txt.xml">L&#x00E6;setekst</note>
+        <note type="txr" target="1807_61_txr.xml" xml:id="thisFile">Tekstredeg&#x00F8;relse</note>
+      </notesStmt>
+      
+         <!--   
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+         -->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+       <revisionDesc>
+         <change xml:id="VTH" who="VTH" when="2011-10-24">txr p&#x00E5;begyndt</change>
+         <change who="VTH" when="2011-10-24">txr videre</change>
+         <change who="VTH" when="2011-10-31">txr videre</change>
+         <change who="VTH" when="2011-11-01">txr videre</change>
+         <change who="VTH" when="2011-11-02">txr videre</change>
+         <change who="VTH" when="2011-11-10">retter efter KSR/VAPs</change>
+         <change who="KSR" when="2011-11-28">tilretning af teiHeader</change>
+         <change who="VTH" when="2011-12-01">tilretning af teiHeader</change>
+         <change who="VTH" when="2011-01-06">indsat ref til faksimiler</change>
+         <change who="VTH" when="2011-01-12">rettelser efter ELRs korrektur</change>
+         <change who="VTH" when="2011-01-12">rettelser efter JKs korrektur</change>
+         <change who="VTH" when="2011-03-13">retter &#x00E5;rstal</change>
+         <change who="VTH" when="2011-04-12">fjerner opm&#x00E6;rkning af title 341</change>
+         <change who="VTH" when="2012-05-02">Inds&#x00E6;tter xml:id i alle head og &#x00E6;ndrer 4 refs til type=image</change>
+         <change who="VTH" when="2012-10-30">Fjerner pe4 og placename</change>
+         <change who="VTH" when="2013-04-16">fjernet nye m&#x00E6;slinger op til upload af 1.2.</change> 
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change> 
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+         <change who="VTH" when="2016-03-15">Nyt versionsnummer pga. rettelser i intro. Desuden rettet uhensigtsmæssige mellemrum efter omorganisering af TEI-header.</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">Der findes ingen kendte manuskripter til &#x201C;Om Religion og Liturgie&#x201D;.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn3">Tryk</head>
+            <table>
+              <row>
+                <cell>1807</cell>
+                <cell>
+<rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi></rs>, februar (<hi rend="italic"><rs type="title" key="title35">Bibliografien</rs></hi> nr. 61).</cell>
+              </row>
+            </table>
+        </div>        
+      </div>
+
+      <div>
+        <head xml:id="docIn4">Bibliografisk beskrivelse</head>
+
+        <div>
+          <head xml:id="docIn5">
+<rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi>
+</rs>
+</head>
+          <div>
+            <head xml:id="docIn6">Titel</head>
+            
+            <p rend="noIndent">Tidsskriftet udkom under fire forskellige titler i l&#x00F8;bet af udgivelsesperioden 1793-1809:</p>
+            
+            <list type="simple">
+              <item>
+<rs key="title637" type="title">
+<hi rend="italic">Magazin for Religionsl&#x00E6;rere, med Hensyn til vore Tider</hi>
+</rs> (1793-1797)</item>
+              
+              <item>
+<rs key="title638" type="title">
+<hi rend="italic">Nyt Magazin for Religionsl&#x00E6;rere, med Hensyn til vore Tider</hi>
+</rs> (1798-1802)</item>
+              
+              <item>
+<rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi>
+</rs> (1803-1808)</item>
+              
+              <item>
+<rs key="title639" type="title">
+<hi rend="italic">Theologisk Qvartalskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi>
+</rs> (1809)</item>
+              
+              
+             </list>
+            <!-- <p rend="noIndent">Tidsskriftet var oprindelig et halv&#x00E5;rsskrift og hed  (1793-97), fortsat som <hi rend="italic"></hi> (1798-1802). I 1803-1808 blev det udgivet som m&#x00E5;nedsskrift under titlen <rs key="title126" type="title"><hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi></rs>, og i 1809 fortsattes det som <hi rend="italic">Theologisk Qvartalskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi>.</p> -->
+          </div>
+          
+          <div>
+            <head xml:id="docIn7">Redakt&#x00F8;r</head>
+            
+            <table>
+              <row>
+                <cell>1793-1809</cell>
+                <cell>
+<persName key="pe505">Lorenz Nikolai Fallesen</persName>.</cell>
+              </row>
+             </table>
+          </div>
+                              
+          <div>
+            <head xml:id="docIn8">Trykker og trykkeri</head>
+            <p rend="noIndent">
+<hi rend="italic">
+<rs type="title" key="title126">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</rs>
+</hi> blev trykt p&#x00E5; det k&#x00F8;benhavnske trykkeri &#x201C;Morthorstes Enke &amp; Comp.&#x201D;, som <persName key="pe518">Dorothea Margrethe Morthorst</persName> drev videre efter sin mand, <persName key="pe517">Johan Frederik Morthorst</persName>. Det var et lille trykkeri, som mest udf&#x00F8;rte arbejde for forskellige forlag, bl.a. Gyldendal og Soldin.</p> 
+          </div>
+          
+          <div>
+            <head xml:id="docIn9">Indhold</head>
+            <p rend="noIndent">
+<rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere</hi>
+</rs> var Danmarks f&#x00F8;rste egentlige teologiske tidsskrift, henvendt til den danske pr&#x00E6;stestand (religionsl&#x00E6;rer var en almindelig betegnelse for pr&#x00E6;st i begyndelsen af 1800-tallet). Udgiveren, <persName key="pe505">Lorenz Nikolai Fallesen</persName>, var selv pr&#x00E6;st og en typisk liberal oplysningsteolog. Han s&#x00E5; det som sin opgave at give de gejstlige et tidsskrift, der kunne holde dem ajour med den teologiske videnskab.<!-- Som redakt&#x00F8;r &#x00F8;nskede han at finde en middelvej mellem den rette l&#x00E6;re og mere afvigende synspunkter. Han trykte gerne kontroversielle afhandlinger, idet han opfordrede sine l&#x00E6;sere til selv at vurdere materialet. -->
+</p>
+              
+              <p rend="firstIndent">Tidsskriftet bragte ud over de l&#x00E6;rde afhandlinger, som <persName key="pe505">Fallesen</persName> pointerede var til eftertanke, ikke til at udbasunere fra pr&#x00E6;dikestolene, ogs&#x00E5; pastoralteologiske tekster som pr&#x00E6;dikener og taler. Dertil kom efterretninger fra kirken og universitetet og anmeldelser af teologisk litteratur. I nogle af numrene findes en gruppering af sm&#x00E5;artikler, kaldet &#x201C;Blandinger&#x201D;. Her bragte udgiveren notitser om, hvad der foregik i udlandet p&#x00E5; det teologiske og kirkelige omr&#x00E5;de. Oplysningerne blev hentet fra udenlandske, oftest tyske tidsskrifter, og oversat til dansk. Disse afsnit b&#x00E6;rer alle udgiverens signatur: &#x201C;Udgiv.&#x201D;. Bagest i tidsskriftet blev der bragt notitser om d&#x00F8;dsfald samt rettelser til tidligere numre.</p>
+            
+            <p rend="firstIndent">I enkelte tilf&#x00E6;lde har udgiveren fundet det n&#x00F8;dvendigt at kommentere artiklerne. Det er s&#x00E6;rlig udtalt for Grundtvigs afhandling &#x201C;Om Religion og Liturgie&#x201D;<!-- <rs key="title126" type="title"> i <hi rend="italic">Theologisk Maanedsskrivt,</hi></rs> februar 1807 -->. Her har <persName key="pe505">Fallesen</persName> indsat et antal sp&#x00F8;rgsm&#x00E5;lstegn i parenteser inde i br&#x00F8;dteksten og derudover skrevet en r&#x00E6;kke fodnoter til teksten, hvor han angiver, at han ikke forst&#x00E5;r indholdet, eller g&#x00F8;r opm&#x00E6;rksom p&#x00E5;, at han ikke er enig i synspunkterne. Disse noter b&#x00E6;rer udgiverens signatur &#x201C;Udg.&#x201D; eller &#x201C;Udgiv.&#x201D;.</p> <!--  er indvist i teksten p&#x00E5; samme m&#x00E5;de som forfatterens noter, nemlig ved en asterisk og en h&#x00F8;jreparentes: &#x002A;). For at l&#x00E6;seren skulle kunne skelne udgiverens noter fra forfatterens egne, b&#x00E6;rer de to typer fodnoter signaturerne  &#x201C;Forf.&#x201D;/&#x201C;Forfatt.&#x201D; og &#x201C;Udg.&#x201D;/&#x201C;Udgiv.&#x201D;[tjek om han s&#x00E6;tter spm-tegn ved andre end Grundtvig!!]-->
+            
+          </div>
+          
+        </div>
+
+        <div>
+          <head xml:id="docIn10">Udgivelseshistorie</head>
+          <div>
+            <head xml:id="docIn11">Udgivelsesperiode og oplag</head>
+            <p rend="noIndent">Tidsskriftet, der udkom i &#x00E5;rene 1793-1809, blev grundlagt af pr&#x00E6;sten <persName key="pe505">Lorenz Nikolai Fallesen</persName> og havde ham som redakt&#x00F8;r i hele perioden. De f&#x00F8;rste ti &#x00E5;r udkom det hvert halve &#x00E5;r, men ikke altid helt efter planen. I denne periode blev stoffet inddelt i fire kategorier: teoretisk, praktisk, eksegetisk og historisk. Fra januar 1803 til december 1808 udkom tidsskriftet som m&#x00E5;nedsskrift uden samme tematiske opbygning. Derefter omdannedes det til et kvartalsskrift pga. d&#x00E5;rlige konjunkturer, og efter fire udgivelser i 1809 lukkede det helt.</p>
+                               
+            <p rend="firstIndent">Oplagsst&#x00F8;rrelsen kendes ikke.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn12">Hyppighed</head>
+            <p rend="noIndent">I &#x00E5;rene 1803-1808 udkom tidsskriftet m&#x00E5;nedsvis. Hvert halve &#x00E5;r blev der trykt et selvst&#x00E6;ndigt l&#x00E6;g med halv&#x00E5;rstitelblad og f&#x00E6;lles indholdsfortegnelse, s&#x00E5; abonnenterne kunne lade de m&#x00E5;nedsudgivne h&#x00E6;fter indbinde sammen.</p>
+                      
+          </div>
+          
+          <div>
+            <head xml:id="docIn13">Opbygning</head>
+            <p rend="noIndent">M&#x00E5;nedsudgivelserne er udstyret med et titelblad, der har en indholdsfortegnelse p&#x00E5; bagsiden, se afsnit 2.4.4.<!-- ref --> I nogle tilf&#x00E6;lde bringes rettelseslister til tidligere numre. De halv&#x00E5;rlige samleindbindinger har et andet titelblad og en f&#x00E6;lles, m&#x00E5;nedsopdelt indholdsfortegnelse.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn14">Omfang</head>
+            <p rend="noIndent">If&#x00F8;lge oplysninger p&#x00E5; titelbladet for februarnummeret 1807 bestod et h&#x00E6;fte af 6-7 ark, dvs. 96-112 sider. Man kan dog finde eksempler p&#x00E5; st&#x00F8;rre numre, fx januarnummeret 1807, som fylder 128 sider. De halv&#x00E5;rlige samlebind fylder typisk omkring 600 sider.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn15">Pris</head>
+            <p rend="noIndent">If&#x00F8;lge oplysninger p&#x00E5; titelbladet for februarnummeret 1807 kostede en &#x00E5;rgang 3 rigsdaler p&#x00E5; trykpapir og 4 rigsdaler p&#x00E5; det finere skrivepapir. Der var mulighed for subskription, se afsnit 2.4.4. Af subskriptionslisten i det allerf&#x00F8;rste nummer i 1793 fremg&#x00E5;r det, at langt de fleste bestilte tidsskriftet p&#x00E5; trykpapir.</p> 
+          </div>
+          
+        </div>
+
+        <div>
+          <head xml:id="docIn16">Format, papir- og trykkvalitet samt typografi</head>
+          <div>
+            <head xml:id="docIn17">Format og paginering</head>
+            <p rend="noIndent">Tidsskriftet er i oktav med fortl&#x00F8;bende arknummerering og paginering for hvert halv&#x00E5;r.</p>
+            
+            <p rend="firstIndent">Et indbundet og besk&#x00E5;ret eksemplar m&#x00E5;ler ca. 100 &#x00D7; 170 mm. Det er ikke lykkedes at finde et ubesk&#x00E5;ret eksemplar.</p>
+
+            <p rend="firstIndent">Der er arksignatur med angivelse af titel, m&#x00E5;ned og &#x00E5;r. Primasignaturen p&#x00E5; f&#x00F8;rste ark i februarnummeret lyder &#x201C;Theol. Maanedssk. Feb. 1807. J&#x201D;, sekundasignaturen &#x201C;J2&#x201D;.</p>
+           
+            <p rend="firstIndent">Der bruges ikke kustoder.</p>
+          </div>
+          
+          <div>
+            <head xml:id="docIn18">Papir</head>
+            <p rend="noIndent">Tidsskriftet er trykt p&#x00E5; billigt, h&#x00E5;ndgjort papir med tydelige ribbe- og k&#x00E6;delinjer. Papiret er svagt gr&#x00E5;ligt. Der ses ingen vandm&#x00E6;rker.</p>
+            
+            <p rend="firstIndent">Titelbladene er trykt p&#x00E5; papir af samme kvalitet som resten af tidsskriftet.</p>
+<!--I Odenses eksemplar er titelbladet en lille smule bedre kval. Skrivepapir eller tilf&#x00E6;ldighed?--> 
+          </div>
+          
+          <div>
+            <head xml:id="docIn19">Trykkvalitet</head>
+            <p rend="noIndent">Trykket er sk&#x00E6;mmet af mange fejl. Det indeholder mange omvendte og fejlsatte typer. Mange steder er der brugt for meget sv&#x00E6;rte, og teksten er som f&#x00F8;lge deraf blevet noget udtv&#x00E6;ret. Satsen har desuden trukket spiser, dvs. at mange mellemrumstyper har h&#x00E6;vet sig op under trykningen og efterladt en lodret streg i stedet for et mellemrum.</p>
+                        
+          </div>
+          
+          <div>
+            <head xml:id="docIn20">Typografi</head>
+            <p rend="noIndent">Tidsskriftets klumme er trykt i &#x00E9;n spalte. Klummen m&#x00E5;ler ca. 75 &#x00D7; 140 mm.</p>
+            
+            <p rend="firstIndent">Artiklerne er nummereret med romertal (men med arabertal i indholdsfortegnelsen) og adskilles af en centreret skillestreg. Kategorien &#x201C;Blandinger&#x201D; er underinddelt, ogs&#x00E5; vha. romertal.</p>
+              
+              <p rend="firstIndent">Der opereres med forskellige skriftgrader. Overskrifter er sat med st&#x00F8;rre grad end br&#x00F8;dtteksten, mens fodnoter, dateringer,  stillingsbetegnelser for forfatterne m.m. er sat med mindre grad. Fodnoter er indvist i teksten med en asterisk og en halv, h&#x00F8;jrevendt parentes:  *). Fodnoterne adskilles fra br&#x00F8;dteksten af to mellemslag, dvs. blanke linjer.</p>
+                
+            
+            
+            <p rend="firstIndent">Skriftsnittet er fraktur, dog med latin sat i antikva og arksignaturen sat med schwabacher.</p>
+                        
+            <p rend="firstIndent">Der findes &#x00E9;n slags titelblad for m&#x00E5;nedsudgivelsen og en anden for den halv&#x00E5;rlige samleindbinding. Ved m&#x00E5;nedsudgivelsen fylder titelbladet hele f&#x00F8;rste side. Ved samleindbindingen er de enkelte titelblade udeladt, og der gives i stedet et f&#x00E6;lles titelblad p&#x00E5; f&#x00F8;rste side. De efterf&#x00F8;lgende seks m&#x00E5;nedlige afsnit indledes vha. bladhoved med tidsskriftets titel og m&#x00E5;ned angivet p&#x00E5; den side, hvor m&#x00E5;nedens f&#x00F8;rste artikel bringes. Derudover anvender tidsskriftet ikke bladhoved.</p>
+<!--Skal der st&#x00E5;noget om indholdsfortegnelserne her ogs&#x00E5?-->
+            
+            <p rend="firstIndent">Der bringes rettelseslister.</p>
+            
+          </div>
+        </div>
+        
+        <div>  
+          <head xml:id="docIn21">&#x201C;Om Religion og Liturgie&#x201D;, <rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere,</hi>
+</rs> februar 1807</head>
+          <div>
+            <head xml:id="docIn22">Lokalisering</head>
+            <p rend="noIndent">Grundtvigs bidrag, &#x201C;Om Religion og Liturgie&#x201D;, st&#x00E5;r p&#x00E5; s. 129-201 i <rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere,</hi>
+</rs> februar 1807.</p>
+            
+            <p rend="firstIndent">Bidraget er dateret d. 1. oktober 1806.</p>
+            
+            <p rend="firstIndent">Februarnummeret 1807 indeholder f&#x00F8;lgende artikler:</p>
+            
+            <list type="simple">
+              
+              <item>&#x201C;Om Religion og Liturgie&#x201D;, af Nik. Fred. Sev. Grundtvig</item>
+              
+              <item>&#x201C;Unders&#x00F8;gelser i Anledning af Biskop <hi rend="italic">Boisens</hi> Plan til Forbedring ved den udvortes Gudsdyrkelse&#x201D;, af Neumann</item>
+              
+              <item>&#x201C;Fanatismens ulykkelige F&#x00F8;lger i Jylland&#x201D;, af Lorentz Bunch</item>
+              
+              <item>&#x201C;Malte Brun, Forr&#x00E6;dder af Protestantismen&#x201D;, uddrag af <hi rend="italic">Neue Annalen</hi> ved udgiveren</item>
+              
+                            
+            </list>                      
+           <!-- 
+            <table>
+              <row>
+                <cell></cell>
+              </row>
+              <row>
+                <cell>&#x201C;Unders&#x00F8;gelser i Anledning af Biskop Boisens Plan til Forbedring ved den udvortes Gudsdyrkelse&#x201D;, af Neumann.</cell>
+              </row>
+              <row>
+                <cell></cell>
+              </row>
+              <row>
+                <cell></cell>
+              </row>              
+            </table>
+       --> 
+          </div>
+                            
+          <div>
+            <head xml:id="docIn23">Intern varians</head>
+            <p rend="noIndent">F&#x00F8;lgende tre eksemplarer af &#x201C;Om Religion og Liturgie&#x201D; er blevet kollationeret og beskrives herunder:</p>
+            
+            <list type="upperAlpha">
+              <item>Eksemplar fra Det Teologiske Fakultetbibliotek, K&#x00F8;benhavns Universitet; samleindbinding januar-juni, 1807 (katalognr. V a 4)</item>
+              <item>Grundtvig Bibliotekets eksemplar 1 (katalognr. 3.2; ejersignaturer: <persName key="pe135">Svend Grundtvig</persName> og <persName key="pe313">Karl Sch&#x00F8;nberg</persName>)</item>
+              <item>Grundtvig Bibliotekets eksemplar 2 (katalognr. 3.2; ejersignatur: <persName key="pe367">Th. Balslev</persName>)</item>
+            </list>
+            
+            <p rend="noIndent">Ved intern kollation af de tre eksemplarer af f&#x00F8;rstetrykket er der ikke fundet afg&#x00F8;rende varians. P&#x00E5; s. 148, linje 12 har bogstavet &#x03B5; forskudt sig i satsen i eksemplar A og B, men ikke i C.<!--andet?-->
+</p>
+            
+            <p rend="firstIndent">Eksemplar A er valgt som tekstgrundlag, da det indg&#x00E5;r i et samlebind med udgivelserne for halv&#x00E5;ret januar til juni 1807 og derved giver adgang til rettelseslisten, som bringes i martsnummeret s. 362. Eksemplar A er desuden det mindst beskadigede af de tre unders&#x00F8;gte. Det er ogs&#x00E5; dette eksemplar, der har afgivet faksimiler til udgaven.</p>
+                        
+          </div>
+          
+          <div>
+            <head xml:id="docIn24">De kollationerede eksemplarer</head>
+            
+            <div>
+              <head xml:id="docIn25">Beskrivelse af Det Teologiske Fakultetsbiblioteks eksemplar, katalognr. V a 4 (eksemplar A)</head>
+              
+              <p rend="noIndent">Det Teologiske Fakultetsbiblioteks eksemplar findes i et samlebind, der indeholder de seks numre af <rs key="title126" type="title">
+<hi rend="italic">Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere,</hi>
+</rs> som d&#x00E6;kker f&#x00F8;rste halvdel af 1807.</p>
+                
+              <!--<p rend="firstIndent">P&#x00E5; versosiden af forpermen ses i &#x00F8;verste venstre hj&#x00F8;rne katalogsignaturen skrevet med blyant. Midtp&#x00E5; findes stemplet &#x201C;K&#x00F8;benhavns Universitet. INSTITUT FOR KIRKEHISTORIE&#x201D;.</p> --> 
+              
+              <p rend="firstIndent">M&#x00E5;l af side 129: ca. 100 &#x00D7; 171 mm.</p>
+            
+              <p rend="firstIndent">
+<ref type="image" target="1807_61_fax001.jpg">Titelbladet</ref> for samleudgaven lyder: &#x201C;Theologisk Maanedsskrivt / for / F&#x00E6;drelandets Religionsl&#x00E6;rere. / Udgivet / af / Lorenz Nikolai Fallesen, / f&#x00F8;rste residerende Kapellan til Frue Menighed / i Ki&#x00F8;benhavn. / [skillestreg] / 1807. / Januar indtil Junii. / [kort skillestreg] / Niende Bind. / [skillestreg] / &#x03A4;&#x1F78; &#x03B3;&#x1F70;&#x03C1; &#x03B3;&#x03C1;&#x1F71;&#x03BC;&#x03BC;&#x03B1; &#x1F00;&#x03C0;&#x03BF;&#x03BA;&#x03C4;&#x03B5;&#x1F77;&#x03BD;&#x03B5;&#x03B9;, &#x03C4;&#x1F78; &#x03B4;&#x1F72; &#x03C0;&#x03BD;&#x03B5;&#x1FE6;&#x03BC;&#x03B1; &#x03B6;&#x03C9;&#x03BF;&#x03C0;&#x03BF;&#x03B9;&#x03B5;&#x1FD6;. / Paulus. / [Prydstreg] / Ki&#x00F8;benhavn, 1807. / Trykt paa den Gyldendalske Boghandlings Forlag / hos Morthorstes Enke &amp; Comp. &#x201D;</p>
+              
+              <p rend="firstIndent">Den gr&#x00E6;ske tekst er et citat fra <rs type="bible" key="2 Kor 3,6">2 Kor 3,6</rs>: &#x201C;for bogstaven sl&#x00E5;r ihjel, men &#x00C5;nden g&#x00F8;r levende&#x201D;.</p>
+              
+              <p rend="firstIndent">Titelbladet er sat med vekslende skriftgrader. Skriftsnittet er fraktur, bortset fra ordet &#x201C;for&#x201C; i 2. linje og linjen &#x201C;Ki&#x00F8;benhavn, 1807.&#x201D;, som er sat med Ungerfraktur. <!-- Titelbladets versoside er blank, bortset fra endnu et stempel INSTITUT FOR DANSK KIRKEHISTORIE.--> Titelbladet efterf&#x00F8;lges af en seks sider lang, m&#x00E5;nedsopdelt <ref type="image" target="1807_61_fax004.jpg">indholdsfortegnelse</ref> for de seks udgivelser, tidsskriftet rummer.</p>
+              
+              <p rend="firstIndent">Februarnummeret 1807 begynder p&#x00E5; ark J. <ref type="image" target="1807_61_fax009.jpg">Bladhovedet</ref> for februar lyder: &#x201C;Theologisk Maanedsskrivt / for / F&#x00E6;drelandets Religionsl&#x00E6;rere. / [skillestreg] / Februarii Maaned 1807. / [prydstreg]&#x201D;. Skriftsnittet er fraktur, bortset fra ordet &#x201C;for&#x201C; i 2. linje, som er sat med Ungerfraktur. Grundtvigs bidrag &#x201C;Om Religion og Liturgie&#x201D; begynder p&#x00E5; ark J blad 1 recto og slutter p&#x00E5; ark N blad 5 recto, svarende til s. 129-201.</p>
+              
+              <p rend="firstIndent">
+<ref type="image" target="1807_61_fax082.jpg">Rettelsesliste</ref> for februarnummeret bringes bagest i martsnummeret, s. 372.</p>
+              
+              <p rend="firstIndent">Eksemplaret er indbundet i et stift, marmoreret papbind i brunlige nuancer. Ryg og hj&#x00F8;rner er betrukket med m&#x00F8;rkebrunt skind. P&#x00E5; ryggen er teksten: &#x201C;Fallesens / Theologiske / Maanedsskrivt&#x201D;, samt bindnummer &#x201C;9&#x201D; trykt i guld.</p>
+                           
+              
+            </div>
+            
+            <div>
+              <head xml:id="docIn26">Beskrivelse af eksemplar 1 fra Grundtvig Biblioteket, katalognr. 3.2</head>
+              
+              <p rend="noIndent">Dette eksemplar har tilh&#x00F8;rt Grundtvigs s&#x00F8;n, <persName key="pe135">Svend Grundtvig</persName>, og siden forlagsboghandler <persName key="pe313">Karl Sch&#x00F8;nberg</persName>. Eksemplaret er indbundet og besk&#x00E5;ret og stammer som st&#x00F8;rstedelen af bibliotekets f&#x00F8;rstetryk af Grundtvigs v&#x00E6;rker fra <persName key="pe313">Sch&#x00F8;nbergs</persName> bogsamling.</p>
+              
+              <p rend="firstIndent">
+<!-- P&#x00E5; versosiden af forpermen ses i &#x00F8;verste venstre hj&#x00F8;rne katalogsignaturen skrevet med blyant. -->P&#x00E5; det l&#x00F8;se forsatsblad, &#x201C;flyvebladet&#x201D;, ses i &#x00F8;verste h&#x00F8;jre hj&#x00F8;rne de to ejersignaturer, skrevet med bl&#x00E6;k. P&#x00E5; versosiden af samme blad (som nu er l&#x00F8;st) er der &#x00F8;verst skrevet med blyant &#x201C;Gr / 3.&#x201D;, og nederst ses Kirkeligt Samfunds ejerstempel med teksten &#x201C;KS 1898&#x201D;.</p>
+                                
+              <p rend="firstIndent">Eksemplaret indeholder kun selve teksten til &#x201C;Om Religion og Liturgie&#x201D;. Titelbladet er ikke taget med i indbindingen.</p>  
+                
+              <p rend="firstIndent">M&#x00E5;l af side 129: ca. 100 &#x00D7; 168 mm.</p>
+                                              
+              <p rend="firstIndent">Eksemplaret er indbundet i et stift, marmoreret papbind i sort og bl&#x00E5;t. Ryg og hj&#x00F8;rner er betrukket med m&#x00F8;rkebrunt l&#x00E6;rred. P&#x00E5; en etiket p&#x00E5; forpermen er trykt med guld: &#x201C;Grundtvig. / Om Religion / og Liturgie.&#x201D;. <!-- Nederst p&#x00E5; side 129 (f&#x00F8;rste side af Grundvigs bidrag) er der stemplet &#x201C;B. G. H.&#x201D; (Bogsamlingen Grundtvigs Hus) -->Eksemplaret er beskadiget p&#x00E5; s. 137-138.</p>
+            </div>
+            
+            <div>
+              <head xml:id="docIn27">Beskrivelse af eksemplar 2 fra Grundtvig Biblioteket, katalognr. 3.2</head>
+              
+              <p rend="noIndent">Dette eksemplar har tilh&#x00F8;rt <persName key="pe367">Th. Balslev</persName>. Det er indbundet og t&#x00E6;t besk&#x00E5;ret.</p>
+                
+              <p rend="firstIndent">Eksemplaret indeholder hele februarnummeret med dets fire artikler (s. 129-248), men mangler titelblad og indholdsfortegnelse.<!-- Eksemplaret er indbundet med et pynteopslag p&#x00E5; indersiden af for- og bagperm. P&#x00E5; versosiden af pyntepapiret ses katalogsignaturen i &#x00F8;verste venstre hj&#x00F8;rne, skrevet med blyant. P&#x00E5; n&#x00E6;ste side, som er blank, ses arksignaturen skrevet med kuglepen.-->
+</p> 
+              
+              <p rend="firstIndent">M&#x00E5;l af side 129: ca. 100 &#x00D7; 163 mm.</p>
+                                         
+              <p rend="firstIndent">Eksemplaret er indbundet som et halvl&#x00E6;derbind, med nopret, marmoreret overtr&#x00E6;kspapir i brunlige nuancer og ryg og hj&#x00F8;rner af lysebrunt l&#x00E6;der. Ryggen er udsmykket med blomster i guldtryk og b&#x00E6;rer teksten: &#x201C;N.F.S. Gr / Om Reli&#x2013; / gion og / Liturgie // 1807&#x201D;. Eksemplaret har r&#x00F8;dfarvet snit p&#x00E5; alle tre flader.</p>
+              
+              <p rend="firstIndent">Visse steder er trykket sat sk&#x00E6;vt p&#x00E5; papiret. Eksemplaret er desuden beskadiget p&#x00E5; s. 181-182.</p>
+              
+                           
+            </div>
+          </div>
+            <div>
+              <head xml:id="docIn28">Et fjerde eksemplar</head>
+            
+            <p rend="noIndent">P&#x00E5; Odense Universitetsbibliotek findes et eksemplar, som indeholder det m&#x00E5;nedstitelblad, som de to eksemplarer fra Grundtvig Biblioteket mangler. Titelbladet afviger fra halv&#x00E5;rstitelbladet, b&#x00E5;de hvad ang&#x00E5;r udsmykning, tekst og skrifttyper.</p>
+                                    
+              <p rend="firstIndent">Titelbladet er sat i en ramme udsmykket med stiliseret l&#x00F8;v. Teksten p&#x00E5; titelbladet lyder: &#x201C;Theologisk Maanedsskrivt / for / F&#x00E6;drelandets religionsl&#x00E6;rere. / Udgivet / af / Lorenz Nikolai Fallesen, / f&#x00F8;rste residerende Kapellan ved Frue Menighed / i Ki&#x00F8;benhavn. /  [skillestreg]  / Februarii Maaned 1807. / [skillestreg] / [Prydstreg] / Ki&#x00F8;benhavn, 1807. / Trykt p&#x00E5; den Gyldendalske Boghandlings Forlag / hos Morthorst's Enke og Comp.&#x201D;.</p>
+                          
+              
+              
+              <p rend="firstIndent">Titelbladet er sat i fraktur og med vekslende skriftgrader. P&#x00E5; titelbladets versoside findes en indholdsfortegnelse for februar m&#x00E5;ned samt generelle oplysninger om udgivelsens hyppighed, omfang og pris.</p>
+              
+              <p rend="firstIndent">Bagest i indbindingen findes en subskriptionsplan.</p>
+              
+              <!--
+              Indhold / af / Februarii Maaned 1807. / [Prydstreg i form af to liggende klammer] / [Indholdsfortegnelse for de fire tekster med arabertal]
+              skillestreg
+              Af dette Maanedsskrivt udgives i Begyndelsen af hver Maaned et Hefte 6 a 7 Ark stort, saa at hele Aargangen udgi&#x00F8;r omtrent 80 Ark, eller to Bind, hvortil ved hvert 6te Hefte f&#x00F8;lger et s&#x00E6;rskilt Titelblad med Register. Aargangen koster i den Gyldendalske Boghandling 3 Rdr. Paa Trkp. og 4 Rdlr. Paa Skrp. Enhver Religionsl&#x00E6;rer, eller hvilkensomhelst oplyst Mand, der vil be&#x00E6;re Maanedsskrivtet med Bidrag, bedes at sende samme til bemeldte Boghandling eller til Udgiveren, i lille Fiolstr&#x00E6;de No. 254.
+              [skillestreg]
+              
+              Efter s. 248:
+              Subskriptionsplan for to v&#x00E6;rker:
+              et Dansk Odeum, eller: Samling af Prosa og Poesie til &#x00D8;velse i Deklamationen ved Sander, Professor.
+              Moralske Tanker af Stoikerne, bragte i systematisk Orden af C.[tjek] Bastholm.--> 
+              
+            </div>                          
+        </div>
+      </div>
+        
+        <div>
+          <head xml:id="docIn99">Tekstkritik</head>
+          <list type="textualCriticismPluralis"></list>
+        </div>
+        
+      <div type="litList">
+        <head xml:id="docIn1000">Anvendt litteratur</head>
+        <list type="litList">
+          
+          <item>
+<hi rend="italic">Bibliografien,</hi> se Johansen, Steen (1948-1954)</item>
+          <item>
+<hi rend="italic">
+<rs type="title" key="title556">Dansk Biografisk Leksikon</rs>,</hi> 3. udg. (1979-1984) K&#x00F8;benhavn</item>
+          <item>Erslew, Thomas Hansen (1962-1965) <hi rend="italic">
+<rs type="title" key="title116">Almindeligt Forfatter-Lexicon for Kongeriget Danmark med tilh&#x00F8;rende Bilande, fra 1814 til 1840</rs>,</hi> fotografisk optryk. K&#x00F8;benhavn [1847]<!-- Fotografisk optryk, Villadsen &#x0026; Christensen. K&#x00F8;benhavn; 1. udgave 1847 -->
+</item>
+          <item>Ils&#x00F8;e, Harald (1992) <hi rend="italic">
+<rs type="title" key="title14">Bogtrykkerne i K&#x00F8;benhavn og deres virksomhed ca. 1600-1810. En biobibliografisk h&#x00E5;ndbog med bidrag til bogproduktionens historie.</rs>
+</hi> K&#x00F8;benhavn</item>
+          <item>Johansen, Steen (1948-1954) <rs type="title" key="title35">
+<hi rend="italic">Bibliografi over N.F.S. Grundtvigs Skrifter,</hi>
+</rs> bind 1-4. K&#x00F8;benhavn</item>
+        
+        </list>
+      </div>
+        
+      
+    </body>
+</text>
+</TEI>

@@ -1,0 +1,2093 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comSingles.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Bjovulfs Drape eller det Oldnordiske Heltedigt</title>
+            <title rend="shortForm">Bjovulfs Drape eller det Oldnordiske Heltedigt</title>
+            <author>Vibeke A. Pedersen</author>
+            <editor role="editor1">Holger Berg</editor>
+            <editor role="editor2">ph.d. Robert E. Bjork</editor>
+            <editor role="editor3">dr.phil. Johnny Kondrup</editor>
+
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.11</idno>
+               <idno type="technic">1.11.1</idno>
+            </edition>
+         </editionStmt>
+         <extent>90 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2017-01-11">www.grundtvigsværker.dk, version 1.11 1. november 2017</date>
+         </publicationStmt>
+         <notesStmt>
+            <note target="1841_709_txt.xml" type="txt">Læsetekst</note>
+            <note target="1841_709_com.xml" xml:id="thisFile" type="com">Punktkommentar</note>
+         </notesStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+            <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. Pædagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change xml:id="KV" who="KSR" when="2017-04-07">comFIL</change>
+         <change when="2017-04-18" who="VAP" xml:id="VAP">påbegyndt udfyldning (for anden gang - men filen tilsyneladende væk). 263 ud af 400 mangler ved start, dvs. tilbud på 137. Det ses tydeligt, at 353A ikke indgår i com-potten. 
+            Slettet 147, 170, 183, 186, 188, 199, 202, 236, 319, 354, 361, 393, heraf dubletter lige ved siden af hinanden og dobbeltopmærkninger (både til myth og seg). Oprettet 401-408</change>
+         <change when="2017-04-18" who="VAP">afsluttet første udfyldning. Slettet 334, 342, 349, 352, 385, 398. Oprettet 409. Mangler 77, heraf 5 latinske og 36 angelsaksiske og ordsprog og talemåder.</change>
+         <change when="2017-05-04" who="VAP">Slettet com14, oprettet 410.</change>
+         <change when="2017-05-05" who="VAP">Slettet com 328, 336, 348, 385, oprettet 411-12. udfyldt ordsprog og talemåder. sendt latin til Niels W. Bruun</change>
+         <change when="2017-05-08" who="VAP">Slettet com90, udfyldt latin efter NWB, løst div.navne/com-probl. begyndt udfyldning af title00 og myth00. Oprettet 413-15</change>
+         <change when="2017-05-09" who="VAP"> begyndt udfyldning af title00 og myth00. Oprettet 416-19</change>
+         <change when="2017-05-09" who="VAP">afsluttet udfyldning af title00 og myth00. Oprettet 420-432 ("Dansken") og slettet titelopmærkningen. Oprettet gøtisk som kommentar i.st.f. myteopm. (com433-445). Slettet 89, 188</change>
+         <change when="2017-05-15" who="VAP"> Oprettet 440. Slettet 15, 59, 427-28</change>
+         <change when="2017-05-16" who="VAP">Slettet 410, 443</change>
+         <change when="2017-05-18" who="VAP">oprettet 443-470, påbegyndt 2. kollation efter GRB's tidligere KS-eksemplar</change>
+         <change when="2017-05-19" who="VAP">oprettet 471-547, dog 546 ledig; genoplivet 186, 199, 204, 235, 312, 334, 352, 361, 385</change>
+         <change when="2017-05-29" who="VAP">slettet com343, 403,. </change>
+         <change when="2017-05-30" who="VAP">slettet com302, 410, 411; oprettet 472. Ledige 403, 410, 412, 428, 463, 464. </change>
+         <change when="2017-05-31" who="VAP">Div. rettelser og tilføjelser</change>
+         <change when="2017-06-01" who="VAP">Div. rettelser og tilføjelser. Genoprettet 403, 428 med nyt indhold</change>
+         <change when="2017-06-06" who="VAP">kontrol af Haarder, Fulk og Thorkelin</change>
+         <change when="2017-06-16" who="VAP">Div. rettelser og tilføjelser. Slettet 103, 198, 450 (dobbelt + myteopm.). Oprettet ny 463-64, 548-49</change>
+         <change when="2017-06-19" who="VAP">Kørt rækkefølgekontrol. Oprettet  550-51. Kontrolleret rettelser i forhold til udskrift af 15. juni</change>
+         <change when="2017-07-11" who="VAP">påbegyndt rettelser efter Holger. Slettet com2</change>
+         <change when="2017-07-12" who="VAP">fortsat rettelser efter Holger. Slettet com74. Genoprettet 74, 90, 151, 319, 336 398, 550 med nyt indhold. Oprettet 552-568. Oprettet 'blanke' kommentarer (giver mæslinger, til de får et nummer)</change>
+         <change when="2017-07-13" who="VAP">fortsat rettelser efter Holger. Nummereret 568-601 og udfyldt. MERE HER på com, der stadig er under udarbejdelse</change>
+         <change when="2017-07-19" who="VAP">fortsat rettelser efter Holger. Slettet 567 igen og myteopmærket</change>
+         <change when="2017-07-20" who="VAP">fortsat kontrolleret rettelser efter Holger. oprettet 567 igen, slettet 600 igen</change>
+         <change when="2017-07-26" who="VAP">fortsat kontrolleret rettelser efter Holger </change>
+         <change when="2017-08-08" who="VAP">rettelser efter Holgers kontrol</change>
+         <change when="2017-09-18" who="VAP">rettelser efter Bjork</change>
+         <change when="2017-09-20" who="VAP">kontrol af rettelser efter Bjork efter Holger</change>
+         <change when="2017-10-13" who="VAP">rettelser efter Johnny. Oprettet 602-12</change>
+         <change when="2017-10-16" who="VAP">rettelser efter Johnny, fortsat. Oprettet 613-26, genoprettet 202 med nyt indhold, slettet 204 og 396-97</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="com">
+      <body>
+       
+         <note xml:id="com1"><!--lemma: Edidit-->
+            <p>lat., redigeret af.</p> 
+         </note>
+         <!--<note xml:id="com2"><!-\-lemma: Havniæ-\->
+            <p>lat., København.</p>
+         </note>-->
+         <note xml:id="com443"><!--lemma: -->
+            <p>år 1815.</p>
+         </note>
+         <note xml:id="com3"><!--lemma: edited-->
+            <p>eng., redigeret af.</p>
+         </note>
+         <note xml:id="com4"><!--lemma: betrachtet von-->
+            <p>ty., betragtet af, undersøgt af.</p>
+         </note>
+         <note xml:id="com5"><!--lemma: von-->
+            <p>ty., af.</p>
+         </note>
+         <note xml:id="com6"><!--lemma: Romerske Smag-->
+            <p>her: forkærlighed for den antikke romerske (sagn)historie på bekostning af den nordiske.</p>
+         </note>
+         <note xml:id="com602" changes="new"><!--lemma: -->
+            <p>udspiller sig.</p>
+         </note>
+         <note xml:id="com627" changes="new"><!--lemma: -->
+            <p>hentyder til.</p>
+         </note>
+         <note xml:id="com7"><!--lemma: Oldkvad-->
+            <p>digt, som stammer fra et folks oldtid.</p>
+         </note>
+         <note xml:id="com8"><!--lemma: Dannefee-->
+            <p>dvs. danefæ.</p>
+         </note>
+         <note xml:id="com603" changes="new"><!--lemma: -->
+            <p>pådutter.</p>
+         </note>
+         <note xml:id="com446"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com9"><!--lemma: stav-bundet-->
+            <p>bogstavrimet.</p>
+         </note>
+         
+          <note xml:id="com445"><!--lemma: -->
+             <p>talemåde for at gøre noget for hurtigt og måske også sjusket, jf. <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 394.</p>
+          </note>
+         <note xml:id="com551" ><!--lemma: -->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 10.387, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 2.730.</p>
+         </note>
+         <note xml:id="com10"><!--lemma: Grundskriftet-->
+            <p>det tilgrundliggende håndskrift.</p>
+         </note>
+         <note xml:id="com604" changes="new"><!--lemma: -->
+            <p>interesserer mig for.</p>
+         </note>
+         <note xml:id="com463"><!--lemma: -->
+            <p>særlige, specielle.</p>
+         </note>
+         
+         <note xml:id="com571" ><!--lemma: -->
+            <p>den gøtiske helt.</p>
+         </note>
+         <note xml:id="com11"><!--lemma: Gothiske-->          
+            <p>gøtiske, dvs. Götaland i det sydlige Sverige.</p>           
+         </note>
+         <note xml:id="com444"><!--lemma: -->
+            <p>sveerne (som bor i det mellemste Sverige).</p>
+         </note>
+         <note xml:id="com447"><!--lemma: -->
+            <p>togter.</p>
+         </note>
+         <note xml:id="com448" changes="corr" ><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <note xml:id="com12"><!--lemma: Manddoms-Id-->
+            <p>her: heltegerninger.</p>
+         </note>
+         <note xml:id="com449"><!--lemma: -->
+            <p>helt, kriger.</p>
+         </note>
+         <note xml:id="com13"><!--lemma: Drape-->
+            <p>lovprisende (helte)digt med omkvæd; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <!--<!-\-<note xml:id="com14"><!-\\-lemma: Kystvagten-\\->
+            <p>[kommentar overflødig]</p>
+         </note>-\->
+         <note xml:id="com15"><!-\-lemma: Gother-\->
+            <p>dvs. gøtere. Gøterne var et folkeslag, som beboede dele af det sydlige Sverige (Götaland).</p>         
+         </note>-->
+         <note xml:id="com16"><!--lemma: Kæmper-->
+            <p>helte, krigere.</p>         
+          </note>
+         <note xml:id="com17"><!--lemma: monne-->          
+            <p>ikke-betydningsbærende hjælpeverbum.</p>
+            </note>
+         <note xml:id="com18"><!--lemma: End-->
+           <p>endnu.</p>
+           </note>
+         <note xml:id="com19"><!--lemma: Venne-Hu-->
+            <p>venlige hensigter.</p>
+         </note>
+         <note xml:id="com20"><!--lemma: Modent-->
+            <p>uopsætteligt.</p>
+         </note>
+         <note xml:id="com21"><!--lemma: for Sandt-->
+            <p>i stedet for sandhed.<!-- ODS u./ sand I --></p>
+         </note>
+         
+         <note xml:id="com22"><!--lemma: Drabanterne-->
+            <p>livvagterne.<!-- DDO har flere betydninger --></p>
+         </note>
+         <note xml:id="com23"><!--lemma: Nidingsværk-->
+                  <p>ugerninger.</p>
+         </note>
+         <note xml:id="com24"><!--lemma: saa-->
+           <p>således.</p>
+         </note>
+       <!--  <note xml:id="com450"><!-\-lemma: -\->
+            <p>således.</p>
+         </note>-->
+         <note xml:id="com25"><!--lemma: Harm-->
+            <p>krænkelse; sorg.</p>
+          </note>
+         <note xml:id="com451"><!--lemma: -->
+            <p>jord.</p>
+         </note>
+         <note xml:id="com26"><!--lemma: Dannemænd-->
+            <p>agtværdige, pålidelige mænd; danske mænd.</p>
+              </note>
+         <note xml:id="com553"  changes="corr" ><!--lemma: -->
+            <p>blev revet af.</p>
+         </note>
+         <note xml:id="com27"><!--lemma: Kæmpen-->
+             <p>helten, krigeren.</p>
+         </note>
+         <note xml:id="com28"><!--lemma: Herre Færd-->
+            <p>krigstogt, leding.</p>
+         </note>
+         <note xml:id="com29"><!--lemma: saa-->
+           <p>således.</p>
+         </note>
+         <note xml:id="com452"><!--lemma: -->
+            <p>vil eller skal stræbe (optativ).</p>
+         </note>
+         <note xml:id="com554" ><!--lemma: -->
+            <p>hæder.</p>
+         </note>
+         <note xml:id="com453"><!--lemma: -->
+            <p>den ærefulde død på slagmarken.</p>
+         </note>
+         <note xml:id="com30"><!--lemma: Sid op-->
+            <p>bestig (hesten).</p>
+         </note>
+         <note xml:id="com31" changes="corr"><!--lemma: Uvætten-->
+            <p>det onde, overnaturlige væsen.</p>
+         </note>
+         <note xml:id="com555" ><!--lemma: -->
+            <p>ikke kan bane.</p>
+         </note>
+          <note xml:id="com556" ><!--lemma: -->
+             <p>hæder.</p>
+          </note>
+         <note xml:id="com32"><!--lemma: end-->
+       <p>endnu.</p>
+             </note>
+         <note xml:id="com33"><!--lemma: Stjerne-Buer-->
+            <p>himlen.</p>
+         </note>
+         <note xml:id="com34" changes="corr"><!--lemma: Mægted-->
+            <p>dvs. mægtede, formåede.</p>
+         </note>
+         <note xml:id="com35"><!--lemma: forhverve-->
+            <p>erhverve.</p>
+         </note>
+         <note xml:id="com36"><!--lemma: vist-->
+             <p>helt sikkert; ganske vist.</p>
+            </note>
+         <note xml:id="com37"><!--lemma: skifte-->
+            <p>dele.</p>
+               </note>
+         <note xml:id="com38"><!--lemma: Sörger-->
+            <p>sørg (gl. imperativ pluralis).</p>
+         </note>
+         <note xml:id="com557" ><!--lemma: -->
+            <p>i stedet for.</p>
+         </note>
+       
+         <note xml:id="com39"><!--lemma: Kæmpehöi-->
+            <p>gravhøj.</p>
+         </note>
+         <note xml:id="com454"><!--lemma: -->
+            <p>vil hæve (optativ).</p>
+         </note>
+         <note xml:id="com40"><!--lemma: Seile-Tegn-->
+            <p>landkendingsmærke.</p>
+         </note>
+         <note xml:id="com41"><!--lemma: Mindes-Hegn-->
+            <p>mindesmærke.</p>
+         </note>
+         <note xml:id="com42"><!--lemma: Gylden-Smykket-->
+            <p>guldsmykket.</p>
+         </note>
+         <note xml:id="com43" changes="corr"><!--lemma: fuldtro-->
+            <p>meget trofaste (fuld- har forstærkende betydning, men er ofte blot fyldord i vers).</p>
+         </note>
+         <note xml:id="com44"><!--lemma: Brynje-Særk-->
+            <p>ringbrynje; panserskjorte.</p>
+         </note>
+         <note xml:id="com45"><!--lemma: modtage!-->
+            <p>skal modtage (optativ).</p>
+         </note>
+         <note xml:id="com46"><!--lemma: saanær-->
+            <p>næsten.</p>
+         </note>
+         <note xml:id="com628" changes="new"><!--lemma: -->
+            <p>her: ligbål.</p>
+         </note>
+         <note xml:id="com605" changes="new"><!--lemma: -->
+            <p>her: døde.</p>
+         </note>
+         <note xml:id="com47"><!--lemma: Gothe-Kæmpen-->
+             <p>den gøtiske helt. Gøterne var et folkeslag, som beboede dele af det sydlige Sverige (Götaland).</p>
+         </note>
+         <note xml:id="com48"><!--lemma: Gothisk-->
+            <p>gøtisk, dvs. omhandlende Götaland i det sydlige Sverige.</p>
+           </note>
+         <note xml:id="com455"><!--lemma: -->
+            <p>foran.</p>
+         </note>
+         <note xml:id="com456"><!--lemma: -->
+            <p>folkeslags.</p>
+         </note>
+         <note xml:id="com49"><!--lemma: Asamænd-->
+            <p>her: folk fra Sortehavsegnen, der ifølge fortalen til <hi rend="italic"><rs type="title" key="title122">Snorres Edda </rs></hi> indvandrede i Norden under navnet aser. I denne udlægning var <rs type="myth" key="myth106">aserne</rs> således ikke guder, men mennesker, der blev opfattet som guder.</p>
+         </note>
+         <note xml:id="com50"><!--lemma: Kæmpe-Stammer-->
+            <p>heltemodige folkeslag.</p>
+         </note>
+         <note xml:id="com51"><!--lemma: gad-->
+            <p>ville.</p>
+         </note>
+         <note xml:id="com52"><!--lemma: Sildefödninger-->
+            <p>efternølere; personer, der er født længe efter deres søskende eller af gamle forældre.</p>
+         </note>
+         <note xml:id="com53" changes="corr"><!--lemma: Rune-Ristere-->
+            <p>historikere eller krønikeskrivere.</p>
+         </note>
+         <note xml:id="com54"><!--lemma: Gramatikalske-->
+            <p>dvs. grammatiske.</p>
+         </note>
+         <note xml:id="com457"><!--lemma: -->
+            <p>forholde os til; tage del i.</p>
+         </note>
+         <note xml:id="com55"><!--lemma: Iglerne-->
+            <p>blodsugerne; her: personer, der suger til sig uden at tilegne sig.</p>
+         </note>
+         <note xml:id="com458"><!--lemma: -->
+            <p>leder af folkeslag.</p>
+         </note>
+         <note xml:id="com56"><!--lemma: Kæmper-->
+            <p>helte, krigere.</p>
+                </note>
+         <note xml:id="com459"><!--lemma: -->
+            <p>helt sikkert.</p>
+         </note>
+         <note xml:id="com401"><!--lemma: -->
+            <p>dvs. hellere.</p>
+         </note>
+         <note xml:id="com57"><!--lemma: Mærkes-Mand-->
+            <p>bannerfører, fanebærer<!--; også (i Norge i middelalderen) om den af kongens nærmeste mænd, der havde rang efter stalleren-->.</p>
+         </note>
+         <note xml:id="com58"><!--lemma: Kæmpe-Folks-->
+            <p>folk af krigere og helte.</p>
+         </note>
+         <!--<note xml:id="com59"><!-\-lemma: Prokustes-Sengen-\->
+            <p>udtryk for, at man ved at gøre vold på de faktiske eller naturlige forhold prøver at få noget til at passe i en forud given ramme, til at stemme med visse teorier. Udtrykket stammer fra gr. prokruein (da. udstrække) og henviser til røveren Prokustes, der ifølge sagnet lagde sine ofre på en seng og udstrakte dem, der var for korte, eller skar noget af dem, der var for lange til at ligge i sengen.</p>
+         </note>-->
+         <note xml:id="com402"><!--lemma: -->
+            <p>det politiske liv.</p>
+         </note>
+         <note xml:id="com60" changes="corr"><!--lemma: Studentmageriet-->
+            <p>uddannelsessystemet; studenterfabrikken. Spøgende betegnelse, formentlig dannet af Grundtvig.</p>
+         </note>
+         <note xml:id="com61"><!--lemma: hugede-->
+            <p>huede, behagede.</p>
+         </note>
+         <note xml:id="com62"><!--lemma: vist-->
+            <p>bestemt.</p>
+      </note>
+         <note xml:id="com63"><!--lemma: Mærkes-Manden-->
+            <p>bannerføreren, fanebæreren.</p>
+         </note>
+         <note xml:id="com460"><!--lemma: -->
+            <p>helt sikkert.</p>
+         </note>
+         <note xml:id="com64"><!--lemma: Gothiske Mærkes-Mænd-->
+            <p>gøtiske bannerførere, fanebærere; dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com65"><!--lemma: Grundligheden-->
+            <p>den grundlæggende lighed, fællestrækket.</p>
+         </note>
+         <note xml:id="com66"><!--lemma: Gothe-Folkets-->
+            <p>det gøtiske folks, dvs. i Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com67"><!--lemma: Mærkes-Mænd-->
+            <p>bannerførere, fanebærere.</p>
+         </note>
+         <note xml:id="com68" changes="corr"><!--lemma: udvandrede Gothers-->
+            <p>udvandrede nordisk-germanske stammer, her: ostro- og visigoterne, der i 300- og 400-tallet e.Kr. invaderede flere europæiske middelhavslande, <ref type="docOut" target="1841_709_intro.xml#docIn53">se dog også indledningen, afsnittet om ordet gotisk.</ref> og <ref type="docIn" target="#com73">kommentar til &#x201C;Ost- og Vest-Gother&#x201D;</ref>.<!--ANDEN BETYDNING? VAP 2017-03-10--></p>
+         </note>
+         <note xml:id="com69"><!--lemma: Romerske Drage-->
+            <p>billede på Romerriget.</p>
+         </note>
+         <note xml:id="com70"><!--lemma: skiftede-->
+            <p>udskiftede.</p>
+         </note>
+         <note xml:id="com464"><!--lemma: -->
+            <p>såvel.</p>
+         </note>
+         <note xml:id="com71" changes="corr"><!--lemma: Hjarne-Skjalde-->
+            <p>skjalde af samme digteriske kaliber som <rs type="myth" key="myth408">Hjarne</rs>.</p>
+         </note>
+         <note xml:id="com434"><!--lemma: -->
+            <p>togt.</p>
+         </note>
+         <note xml:id="com72" changes="corr"><!--lemma: Drape-->
+            <p>lovprisende (helte)digt. <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--><!-- her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi>--></p>
+         </note>
+         <note xml:id="com73"><!--lemma: Ost- og Vest-Gother-->
+            <p>dvs. øst- og vestgøtere. Gøterne var et folkeslag, som beboede dele af det sydlige Sverige (Götaland). Her er dog stor sandsynlighed for, at Grundtvig mener ostrogoter og  visigoter.</p><note type="readMore"><p>Visigoterne er navnet på den del af goterne, der kom til at bo i Gallien og Spanien. Det er usikkert, hvad navnet betyder, men ofte gengives det fejlagtigt med vestgoter ud fra historieskriveren <persName key="pe1399">Jordanes'</persName> etymologiske forklaring.</p>
+              <p> Ostrogoterne er den del af goterne, der under ledelse af <persName key="pe1043">Theoderik den Store</persName> i 490'erne underlagde sig Italien. Det er usikkert, hvad navnet ostrogoter betyder, men ofte gengives det (ligeledes fejlagtigt) med østgoter ud fra historieskriveren <persName key="pe1399">Jordanes'</persName> etymologiske forklaring. Det anvendtes første gang i samtidige romerske kilder i 390'erne.</p></note>
+            </note>
+     <note xml:id="com74" ><!--lemma: Gotherne-->           
+            <p>for hvilket.</p>
+         </note>
+        
+         <note xml:id="com75"><!--lemma: Kæmpen-->           
+            <p>helten, krigeren.</p>
+            </note>
+         <note xml:id="com461" changes="corr"><!--lemma: -->
+            <p>karakteristisk.</p>
+         </note>
+         <note xml:id="com76" changes="corr"><!--lemma: lydeslöse-->
+            <p>uden lyder eller fejl.</p>
+         </note>
+         <note xml:id="com77"><!--lemma: eremitlige-->
+            <p>eneboeragtige; her: kyske.</p>
+         </note>
+         <note xml:id="com462"><!--lemma: -->
+            <p>åbenbare.</p>
+         </note>
+         <note xml:id="com437"><!--lemma: -->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com78"><!--lemma: Mærkes-Mænd-->
+            <p>bannerførere, fanebærere.</p>
+         </note>
+         <note xml:id="com606" changes="new"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <note xml:id="com440" changes="corr"><!--lemma: -->
+            <p>udvandrede nordisk-germanske stammer, her: ostro- og visigoterne, der i 300- og 400-tallet e.Kr. invaderede Det østromerske Rige og bragte Det vestromerske Rige til fald, <ref type="docOut" target="1841_709_intro.xml#docIn53">se dog også indledningen, afsnittet om ordet gotisk</ref> og <ref type="docIn" target="#com73">kommentar til &#x201C;Ost- og Vest-Gother&#x201D;</ref>. </p>
+         </note>
+         <note xml:id="com607" changes="new"><!--lemma: -->
+            <p>dvs. <rs type="myth" key="myth185">Stærkodder</rs>.</p>
+         </note>
+         <note xml:id="com438"><!--lemma: -->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         
+
+        <!-- <note xml:id="com79"><!-\-lemma: Storværks-\->
+            <p>fremragende bedrifters, gerningers mand. ER DETTE BLOT bJOVULF? vap 2017-05-18
+            </p>
+         </note>-->
+         
+         <note xml:id="com80"><!--lemma: Kæmper-->
+            <p>helte, krigere.</p>
+            </note>
+         
+         <note xml:id="com558"><!--lemma: -->
+            <p>bemærkelsesværdigt.</p>
+         </note>
+         <note xml:id="com81"><!--lemma: Mærkes-Mændenes-->
+            <p>bannerførernes, fanebærernes.</p>
+         </note>
+         <note xml:id="com82"><!--lemma: eiendommelige-->
+               <p>særlige; karakteristiske.</p>
+         </note>
+         <note xml:id="com83"><!--lemma: Burgunder-->
+            <p>folk fra den germanske folkevandringsstamme burgunderne. Burgunderne var oprindelig bosat omkring Worms ved Rhinen i begyndelsen af 400-tallet, som det skildres i <rs type="title" key="title00">Nibelungen</rs>-sagnet om <rs type="myth" key="myth65">Sigurd Fafnersbane</rs>. Senere vandrede de over Rhinen mod Frankrig, hvor de slog sig ned. I dag kaldes dette franske landskab Bourgogne.</p>
+         </note>
+       <!--  <note xml:id="com84"><!-\-lemma: Frode-\->
+            <p>sagnkonger af skjoldungeslægten. Den mest fremtrædende var <rs type="myth" key="myth137">Frode Fredegod</rs> VAP: 2017-05-31: det er Frode Fredegod, Saxo 6. bog kap4-5.
+            </p>
+         </note>-->
+         
+         <note xml:id="com439"><!--lemma: -->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com433"><!--lemma: -->
+            <p>undtagen.</p>
+         </note>
+         <note xml:id="com85"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt, gerne med omkvæd; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com86"><!--lemma: Konstighed-->
+            <p>kunstfærdighed.</p>
+         </note>
+        <!-- <note xml:id="com440"><!-\-lemma: -\->
+            <p>gøtiske.</p>
+         </note>-->
+         <note xml:id="com465"><!--lemma: -->
+            <p>politiske historie.</p>
+         </note>
+         <note xml:id="com87"><!--lemma: Billinger-->
+            <p>småstumper, -stykker.</p>
+         </note>
+    
+         <note xml:id="com88"><!--lemma: Gothisk-->
+            <p>gøtisk, dvs. i Götaland i det sydlige Sverige.</p>
+         </note>
+        <!-- <note xml:id="com89"><!-\-lemma: Gothernes-\->
+            <p>gøternes.</p>
+         </note>-->
+       <note xml:id="com90" ><!--lemma: alt-->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com91"><!--lemma: foran-->
+             <p>forud for; før.</p>
+         </note>
+         <note xml:id="com441" changes="corr"><!--lemma: Gothisk-->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com413"><!--lemma: -->
+            <p><!--Hetvarerne udgjorde en -->angelsak. betegnelse for den germanske stamme chattuarierne. De var oprindelig fra Hessen og slog sig i løbet af 300-tallet sammen med bl.a. frankerne.</p>
+         </note>
+         
+         <note xml:id="com475"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com92"><!--lemma: Hun Hætwerum-->
+            <p>angelsak., huner [og] hetvarer. Hunerne var et frankisk folk fra Hunaland, mens hetvarerne udgjorde en germansk stamme, oprindelig fra Hessen, som i løbet af 300-tallet slog sig sammen med bl.a. frankerne.</p>
+         </note>
+         
+         <note xml:id="com414"><!--lemma: Atvarernes-->
+            <p>efter lat. attuarier[nes]. De udgjorde en germansk stamme, også kaldet chattuarierne, der oprindelig kom fra Hessen, og som i løbet af 300-tallet slog sig sammen med bl.a. frankerne.</p>
+         </note>
+        
+         <note xml:id="com93"><!--lemma: hilaicus-->
+            <p>latiniseret omskrivning af <rs type="myth" key="myth985">Hygelak</rs>.</p>
+         </note>
+         <note xml:id="com535"><!--lemma: T.-->
+            <p>forkortelse for lat. tome, dvs. bind.</p>
+         </note>
+         <note xml:id="com536" changes="corr"><!--lemma: -->
+            <p>dvs. hellere.</p>
+         </note>
+         <note xml:id="com94"><!--lemma: mere wioingas-->
+            <p>angelsak.; det første ord betyder hav, det andet ord eksisterer ikke på angelsaksisk. Grundtvigs læsemåde (merovingerne) bakkes op af nyere læsninger.</p>
+            <note type="readMore"> <p>Moderne, tekstkritisk udgave har her: &#x201C;[syððan] Merewīoingas milts&#x201D; (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 2920-2921) da. &#x2018;Merovingernes [hersker / har aldrig siden søgt os] med venskab&#x2019; (<rs type="title" key="title387">Haarder 2001</rs>, vers 2920-2921). <persName key="pe413">Thorkelin</persName> har &#x201C;mere / Wioh ingasmilts&#x201D; (<rs type="title" key="title1855">1815</rs>, s. 216, linje 26-27).</p> </note>
+         </note>
+         <note xml:id="com608" changes="new"><!--lemma: -->
+            <p>formentlig, sikkert.</p>
+         </note>
+         <note xml:id="com95"><!--lemma: Merovingerne-->
+            <p>frankisk kongeslægt ca. 450-751.</p> <note type="readMore"><p>Slægtens oprindelse fortaber sig i sagnenes verden, hvor den knyttes til en overnaturlig herkomst.</p></note>
+         </note>
+         <note xml:id="com609" changes="new"><!--lemma: for-->
+            <p>ordet knytter sig til udtrykket &#x201C;sort på hvidt&#x201D;, men udelades på moderne dansk.</p>
+         </note>
+         <note xml:id="com466"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com435" changes="corr"><!--lemma: -->
+            <p>krigstogt.</p>
+         </note>
+         <note xml:id="com610" changes="new"><!--lemma: -->
+            <p>gevinst.</p>
+         </note>
+         <note xml:id="com96"><!--lemma: Oldsagn-->         
+            <p>sagn, som stammer fra oldtiden.</p>
+         </note>
+         <note xml:id="com97"><!--lemma: Efterslægten-->
+            <p>efterkommerne.</p>
+         </note>
+         <note xml:id="com559" ><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com611" changes="new"><!--lemma: -->
+            <p>skændes, strides.</p>
+         </note>
+         <note xml:id="com98" ><!--lemma: Skaberling-->
+            <p>lille skaber (modsat Gud som verdens skaber). Ordet er formentlig dannet af Grundtvig som oversættelse fra angelsaksisk og måske med hentydning til <rs type="bible" key="Job 33,12-13">Job 33,12-13</rs>: &#x201C;[...] Gud er større end mennesker. Hvorfor vil du føre sag mod ham [Gud], når ingen kan gendrive hans ord?&#x201D;<!-- efter svensk --></p>
+         </note>
+         <note xml:id="com99" ><!--lemma: scop-->
+            <p>angelsak., digter. Ordet scop har konnatationer i retning af hån, forsmædelse.</p>
+         </note>
+         <note xml:id="com100"><!--lemma: Tog-->
+            <p>krigstogt.</p>
+               </note>
+         <note xml:id="com612" changes="new"><!--lemma: -->
+            <p>her: ære af.</p>
+         </note>
+         <note xml:id="com101"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com102"><!--lemma: Billing-->
+            <p>småstump, -stykke.</p>
+         </note>
+         <note xml:id="com467" changes="corr"><!--lemma: -->
+            <p>prædikensamling.</p>
+            <note type="readMore"><p>Arket, hvorpå <rs type="title" key="title4403">Finnsburh-fragmentet</rs> var skrevet, er nu forsvundet, men har tidligere befundet sig i en prædikensamling i biblioteket på Lambeth Palace, der var London-residensen for biskoppen af Canterbury.</p></note>
+         </note>
+       <!--  <note xml:id="com103"><!-\-lemma: Slaget ved Finsborg-\->
+            <p>slag mellem frisere og danere i sagnhistorisk tid. Det kan knyttes til persongalleriet fra <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>-->
+         <note xml:id="com104" changes="corr"><!--lemma: gik paa Ræveklöer-->
+            <p>talemåde om at være forsigtig og evt. overlade det farlige til andre eller opføre sig lumsk som en ræv, jf.  <rs key="title93" type="title">Mau 1879</rs>, bind 2, s. 202, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 2.203.</p>
+         </note>
+         <note xml:id="com105" changes="corr"><!--lemma: Hælvden-->
+            <p>dvs. hælvten, halvdelen.</p>
+         </note>
+         <note xml:id="com106"><!--lemma: Kæmper-->
+            <p>helte, krigere.</p>
+             </note>
+         <note xml:id="com560" ><!--lemma: -->
+            <p>bortkommet.</p>
+         </note>
+         <note xml:id="com561" ><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com107" ><!--lemma: syððan scolde-->
+            <p>angelsak., siden skulle han.</p><note type="readMore"><p>Moderne, tekstkritisk udgave har dog her rettet scolde til &#x201C;sc<hi rend="italic">ē</hi>de&#x201D; (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 1106, tekstkritisk apparat), da. &#x2018;arrangerede han&#x2019;<!-- (<rs type="title" key="title387">Haarder 2001</rs>, vers 1106)-->.</p></note>
+         </note>
+         <note xml:id="com562" ><!--lemma:aabenbar-->
+            <p>åbenlyst, helt klart.</p>
+         </note>
+         <note xml:id="com436"><!--lemma: -->
+            <p>bemærkelsesværdigt.</p>
+         </note>
+         <note xml:id="com108"><!--lemma: Gothiske-->
+            <p>gøtiske, dvs. vedrørende Götaland i det sydlige Sverige.</p>
+           </note>
+         <note xml:id="com109"><!--lemma: Billinger-->
+            <p>småstumper, -stykker.</p>
+         </note>
+         <note xml:id="com110"><!--lemma: ramde-->
+            <p>dvs. ramte.</p>
+         </note>
+         <note xml:id="com111"><!--lemma: Eftermand-->
+            <p>efterfølger.</p>          
+         </note>
+         <note xml:id="com112"><!--lemma: Tog-->
+           <p>krigstogt.</p>           
+         </note>
+         <note xml:id="com420"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com113"><!--lemma: Toget-->
+            <p>krigstogtet.</p>
+         </note>
+         <note xml:id="com114"><!--lemma: fældte-->
+            <p>fældede, dræbte.</p>
+         </note>
+         <note xml:id="com468"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <note xml:id="com442"><!--lemma: Gothisk-->
+            <p>gøtiske, dvs. i Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com115"><!--lemma: Eftermand-->
+            <p>efterfølger.</p>          
+         </note>
+         <note xml:id="com421"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com116"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com117"><!--lemma: Herre-Slægter-->
+            <p>fyrsteslægter.</p>
+         </note>
+         <note xml:id="com118"><!--lemma: Gothisk-->          
+            <p>gøtisk, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com119"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         
+         <note xml:id="com415"><!--lemma: -->
+            <p><!--Merovingerne var en -->frankisk kongeslægt ca. 450-751.</p> <note type="readMore"><p>Slægtens oprindelse fortaber sig i sagnenes verden, hvor den knyttes til en overnaturlig herkomst.</p></note>
+         </note>
+         <note xml:id="com563" ><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com120" changes="corr"><!--lemma: Sagamænd-->
+            <p>sagafortællere, historikere, forfattere.</p>
+         </note>
+         <note xml:id="com565" ><!--lemma: -->
+            <p>borger så at sige for.</p>
+         </note>
+         <note xml:id="com121" changes="corr"><!--lemma: Hedenold-->
+            <p>den hedenske oldtid.</p>
+         </note>
+         <note xml:id="com122"><!--lemma: ut familiarem diligenti animo eum eustodierunt-->
+            <p>lat., &#x2018;de bevogtede ham som en agtpågivende tjener&#x2019;.</p>
+         </note>
+         <note xml:id="com123"><!--lemma: familiar-->
+            <p>eng., egl. familiar spirit, da. skytsånd, vætte.</p>
+         </note>
+         <note xml:id="com405" changes="corr"><!--lemma: love is a familiar NB Johnny vil have anførselstegnene udne for lemma-->
+            <p>eng., kærlighed er en skytsånd.</p>
+         </note>
+         <note xml:id="com124"><!--lemma: Creuzersk-->
+            <p>efter <persName key="pe1919">Georg Friedrich Creuzers</persName> metode.</p>
+            <note type="readMore"><p>Han var ven med både <persName key="pe29">Johann Wolfgang Goethe</persName> og <persName key="pe4718">Clemens Brentano</persName> og især kendt for bogen <hi rend="italic"><rs type="title" key="title5393">Symbolik und Mythologie der alten Völker, besonders der Griechen</rs>,</hi> hvori han inddrager tidlige orientalske kilder (1810-1812).</p></note>
+         </note>
+         <note xml:id="com125"><!--lemma: Stam-Mythe-->
+            <p>myte om sagnkongers afstamning; grundliggende myte.</p>
+         </note>
+         <note xml:id="com126"><!--lemma: Lomme lee-->
+            <p>talemåde om aldrig at have hørt noget saa latterligt.</p>
+         </note>
+         <note xml:id="com469"><!--lemma: -->
+            <p>bemærkelsesværdigt.</p>
+         </note>
+         <note xml:id="com127"><!--lemma: de græde ei for Guld, som aldrig Guld eiede-->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 3.295, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.010.</p>
+         </note>
+         <note xml:id="com128" changes="corr"><!--lemma: Konge-Sorg-->
+            <p>sorg over mangel på eller længsel efter en konge.<!--landesorg, gerne officiel, over en nylig afdød konge, <ref type="docOut" target="1808_76_intro.xml#docIn38">se indledningen til <hi rend="italic"><rs type="title" key="title128">Maskeradeballet</rs>.</hi></ref>--></p>
+         </note>
+         <note xml:id="com129"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com130" changes="corr"><!--lemma: ar-skyldingas-->
+            <p>angelsak. Håndskriftet har &#x201C;Ar-Scyldinga&#x201D; (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, s. 18, vers 464), da. ære<rs type="myth" key="myth115">skjoldunger</rs>, dvs. ærefulde efterkommere af kong <rs type="myth" key="myth67">Skjold</rs>.</p>
+         </note>
+         <note xml:id="com470"><!--lemma: -->
+            <p>sagnkongerækken.</p>
+         </note>
+         <note xml:id="com564" changes="corr" ><!--lemma: -->
+            <p>helt sikkert eller formentlig.</p>
+         </note>
+         <note xml:id="com131" changes="corr"><!--lemma: Konge-Sorg-->
+            <p>sorg over mangel på eller længsel efter en konge.<!--landesorg, gerne officiel, over en nylig afdød konge, <ref type="docOut" target="1808_76_intro.xml#docIn38">se indledningen til <hi rend="italic"><rs type="title" key="title128">Maskeradeballet</rs>.</hi></ref>--></p></note>
+         <note xml:id="com132"><!--lemma: Konge-Savn-->
+            <p>længsel efter en konge<!--, gerne af <rs type="myth" key="myth137">Frode Fredegods</rs> kaliber-->.</p><note type="readMore"><p>Engang i sagnhistorisk tid havde Danmark været uden konge. Da anløb der et skib med en lille dreng, liggende på et skjold  ved masten. Denne dreng blev senere kåret til konge under navnet <rs type="myth" key="myth67">Skjold</rs>.</p></note>
+         </note>
+         <note xml:id="com566" changes="corr" ><!--lemma: -->
+            <p>parallelt med.</p>
+         </note>
+         <note xml:id="com547"><!--lemma: -->
+            <p>dvs.</p>
+         </note>
+         <note xml:id="com133"><!--lemma: Frode-Sön-->
+            <p>en efterkommer af <rs type="myth" key="myth137">Frode Fredegod</rs> eller en anden sagnkonge af skjoldungeslægten med navnet Frode.</p>
+         </note>
+        
+         <note xml:id="com134"><!--lemma: Stam-Sagn-->
+            <p>sagn om sagnkongers afstamning.</p>
+         </note>
+         <note xml:id="com629" changes="new"><!--lemma: -->
+            <p>formentlig.</p>
+         </note>
+         <note xml:id="com135"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com471"><!--lemma: Oldsagn-->
+            <p>sagn, som stammer fra oldtiden.</p>
+         </note>
+         <note xml:id="com136"><!--lemma: Binavn-->
+            <p>tilnavn.</p>
+         </note>
+       <!--  <note xml:id="com137"><!-\-lemma: Biolfr-\->
+            <p>Det er ikke lykkedes at identificiere en &#x2018;Biolfr&#x2019; hos Landnamabok, jo, myth 1719.</p>
+         </note>-->
+         <note xml:id="com138"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com139"><!--lemma: hæztr Skiöldunga-->
+            <p>oldisl., højeste, fornemste <rs type="myth" key="myth115">skjoldunge</rs>.</p>
+         </note>
+         <note xml:id="com140"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com141"><!--lemma: Drape-Smeden-->
+            <p>forfatteren til et drape, dvs. et lovprisende (helte)digt, gerne med omkvæd.</p>
+         </note>
+         <note xml:id="com473"><!--lemma: -->
+            <p>fortidens bedrifter.</p>
+         </note>
+         <note xml:id="com142"><!--lemma: Tog-->
+            <p>krigstogt.</p>
+          </note>
+         <note xml:id="com143"><!--lemma: hyrde ic þæt Elan cwen-->
+            <p>angelsak. <persName key="pe413">Thorkelin</persName> har &#x201C;Hyrde ic þæt Elan / Cwen&#x201D; (<rs type="title" key="title1855">1815</rs>, s. 7, linje 20-21). Moderne, tekstkritisk udgave har dog her &#x201C;hȳrde iċ þæt [wæs <rs type="myth" key="myth1013">On]elan</rs> cwēn&#x201D;  (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 62), da. &#x2018;har jeg hørt, blev <rs type="myth" key="myth1013">Onelas</rs> dronnning&#x2019; (<rs type="title" key="title387">Haarder 2001</rs>, vers 62).</p>
+         </note>
+         <note xml:id="com144"><!--lemma: Onelan cwen-->
+            <p>angelsak., <rs type="myth" key="myth1013">Onelas</rs> dronning (vers 61).</p>
+         </note>
+         <note xml:id="com145"><!--lemma: Tog-->
+           <p>krigstogt.</p>
+           </note>
+         <note xml:id="com146"><!--lemma: Jette- -->
+            <p>her: friserkongen; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com474"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com477" changes="corr"><!--lemma: -->
+            <p>prædikensamling.</p>
+            <note type="readMore"><p>Arket, hvorpå <rs type="title" key="title4403">Finnsburh-fragmentet</rs> var skrevet, er nu forsvundet, men har tidligere befundet sig i en prædikensamling i biblioteket på Lambeth Palace, der var London-residensen for biskoppen af Canterbury.</p></note>
+           <!-- <note type="readMore"><p>Manuskriptet, hvori <rs type="title" key="title4403">Finnsburh-fragmentet</rs> har stået, indholdt flere prædikener. Det er nu forsvundet, men har tidligere befundet sig i Lambeth Palace, der var London-residensen for biskoppen af Canterbury.</p></note>-->
+         </note>
+       
+         <note xml:id="com478"><!--lemma: -->
+            <p>her: frisernes; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com479"><!--lemma: -->
+            <p>her: friseren; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com147"><!--lemma: Sveolod-->
+         <p>Der kendes ikke nogen Sveolod i persongalleriet i <hi rend="italic"><rs type="title" key="title3772">Sangen om Bjovulf</rs>,</hi> for <rs type="myth" key="myth986">Hildeborgs</rs> søn er navnløs i digtet. Det angelsak. &#x2018;sweolođ&#x2019; betyder ild, flamme. Moderne, tekstkritisk udgave har da også: &#x201C;hire selfre sunu sweolođe befæstan<!--, / bānfatu bærnan, ond on bǣl dôn / ēa<hi rend="italic">m</hi>e on eaxle-->&#x201D;  (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 1115), da. &#x2018;hendes egen søn skulle overgives til flammerne<!--, / legemet brændes og lægges på bålet / ved morbrorens side-->&#x2019; (<rs type="title" key="title387">Haarder 2001</rs>, vers 1115).</p>
+         </note>
+         <note xml:id="com148"><!--lemma: Höielofts-Sale-->
+            <p>øverste og fineste sale i storgårde eller borge.</p>
+         </note>
+       
+         <note xml:id="com548"><!--lemma: -->
+            <p>fragmentet.</p>
+         </note>
+         <note xml:id="com537"><!--lemma: -->
+            <p>længere.</p>
+         </note>
+         <note xml:id="com149"><!--lemma: Upsals Dressel-->
+            <p>(den svenske) krones gods; skat, kostbarhed; skatkammer<!-- se ODS VAP 2017-05-15 -->.</p>
+         </note>
+         
+         <note xml:id="com480"><!--lemma: -->
+            <p>dvs. søster.</p>
+         </note>
+         <note xml:id="com150"><!--lemma: Jettekongens-->
+            <p>her: friserkongens; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com151" ><!--lemma: aabenbar-->
+            <p>åbenlyst, helt klart.</p>
+         </note>
+         <note xml:id="com152"><!--lemma: Drape-Skjalden-->
+            <p>forfatteren til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi> Et drape er et lovprisende (helte)digt, gerne med omkvæd.</p>
+         </note>
+         <note xml:id="com406" changes="corr"><!--lemma: Kiendingen-->
+            <p>dvs. kenningen, den poetiske omskrivning.</p>
+         </note>
+         <note xml:id="com153"><!--lemma: Bravkarl-->
+            <p>tapper, uforknyt karl; især om den, der lægger et overdrevent og måske unyttigt heltemod for dagen.</p>
+         </note>
+      <note xml:id="com613" changes="new"><!--lemma: ufortalt-->
+            <p>uden at hans navn nævnes.</p>
+         </note>
+         <note xml:id="com481"><!--lemma: -->
+            <p>således.</p>
+         </note>
+         <note xml:id="com154"><!--lemma: Gothefolkets-->
+            <p>gøternes. Gøterne var et folkeslag, som beboede dele af det sydlige Sverige (Götaland).</p>
+         </note>
+         <note xml:id="com550"><!--lemma: jo-->
+            <p>nemlig, helt sikkert.</p>
+         </note>
+         <note xml:id="com482"><!--lemma: -->
+            <p>bemærkelsesværdige.</p>
+         </note>
+       
+         
+         <note xml:id="com403" changes="corr"><!--lemma: -->
+            <p>dvs. hellere.</p>
+         </note>
+         
+         <note xml:id="com417"><!--lemma: -->
+            <p>fortælling; her: beretningen om <rs type="myth" key="myth1212">Nornegæst</rs> fra <hi rend="italic"><rs type="title" key="title807">Olav Tryggvasons Saga</rs>.</hi></p>
+         </note>
+        
+        
+         <note xml:id="com411"><!--lemma: -->
+            <p>oldisl. vidtfarende, som rejser vidt omkring.</p>
+         </note>
+         <note xml:id="com155"><!--lemma: heaðobeardna þrym-->
+            <p>angelsak., hadubardernes magt<!-- kan ej finde i Bjovulf-filen, VAP 2017-05-31 -->.</p>
+         </note>
+         <note xml:id="com156"><!--lemma: æt Heorote-->
+            <p>angelsak., i <rs type="myth" key="myth987">Heorot</rs> (vers 1268).</p>
+         </note>
+         <note xml:id="com157"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com483"><!--lemma: -->
+            <p>virksomme, raske<!-- ODS betydn 3 -->.</p>
+         </note>
+         <note xml:id="com484"><!--lemma: -->
+            <p>kom <rs type="myth" key="myth62">Roe</rs> på.</p>
+         </note>
+         <note xml:id="com418"><!--lemma: -->
+            <p>bogen, skrevet på pergament; her: <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> der bl.a. rummer den angelsaksiske tekst til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com158"><!--lemma: fað þæs geworden-->
+            <p>angelsak., &#x2018;har villet det så&#x2019; <!-- Moderne, tekstkritisk udgave har dog her &#x201C;fað þæs / geworden&#x201D; da. &#x2018;havde villet det så&#x2019; (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 2025-2026)-->(<rs type="title" key="title387">Haarder 2001</rs>, vers 2026).</p>   </note>
+         
+         <note xml:id="com159"><!--lemma: Rimstaven-->
+            <p>det bogstavrimende begyndelsesbogstav.</p>
+         </note>
+         <note xml:id="com160"><!--lemma: wafað-->
+            <p>angelsak., vinkede.</p>
+         </note>
+         <note xml:id="com161"><!--lemma: wafian-->
+            <p>angelsak., at vinke.</p>
+         </note>
+         <note xml:id="com162" changes="corr"><!--lemma: wave-->
+            <p>eng., at vinke, vaje.</p>
+         </note>
+         <note xml:id="com485"><!--lemma: -->
+            <p>udsatte dem for ubehageligheder.</p>
+         </note>
+        
+         <note xml:id="com486"><!--lemma: -->
+            <p>udfordrede hellere <rs type="myth" key="myth62">Ro</rs>.</p>
+         </note>
+         <note xml:id="com163"><!--lemma: Rimstaven-->
+            <p>det bogstavrimende begyndelsesbogstav.</p>
+         </note>       
+        
+        
+         <note xml:id="com487"><!--lemma: -->
+            <p>byde rundt; opvarte.</p>
+         </note>
+         <note xml:id="com488"><!--lemma: -->
+            <p>gildesal.</p>
+         </note>
+         <note xml:id="com164"><!--lemma: usaattes-->
+            <p>uvenner (arkaiserende).</p>          
+         </note>
+         <note xml:id="com422"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title153">Danmarks Krønike af Saxo Grammaticus</rs>,</hi> bind 1 (1818).</p></note>
+         <note xml:id="com538"><!--lemma: -->
+            <p>inddelte.</p>
+         </note>
+         <note xml:id="com570" ><!--lemma: -->
+            <p>åbenlyst, helt klart.</p>
+         </note>
+         <note xml:id="com165"><!--lemma: Eftermand-->
+            <p>efterfølger.</p>
+         </note>
+         <note xml:id="com166" changes="corr"><!--lemma: gav Staal for Guld,-->
+            <p>omvending af <rs type="myth" key="myth1711">Røriks</rs> fejlslagne forsøg på med rige guldgaver at afværge <rs type="myth" key="myth63">Rolf Krakes</rs> våbenmagt (stålet; se <rs type="title" key="title83">Saxo</rs>, 2. bog).</p> <note type="readMore"><p>Formuleringen vender en udbredt talemåde på hovedet. Det lyder: &#x201C;guld gav jeg for jern&#x201D; og blev brugt ved patriotiske indsamlinger af guldsmykker til at finansiere krige, bl.a. i Preussen i 1813. I bytte for deres guld fik kvinderne en jernring med talemåden indgraveret.</p></note><!--talemåde; gav våben med krigsforpligtelse i stedet for belønnning; variant af &#x201C;at give Stene for Brød&#x201D;, jf. <rs type="bible" key="Matt 7,9">Matt 7,9</rs>.-->
+         </note>
+         <note xml:id="com167" changes="corr"><!--lemma: Oldsagns-->
+            <p>fra oldtiden stammende sagns.</p>
+         </note>
+         <note xml:id="com568" ><!--lemma: -->
+            <p>den afdøde konges; her <rs type="myth" key="myth63">Rolf Krakes</rs>.</p>
+         </note>
+         <note xml:id="com168" changes="corr"><!--lemma: Niding-->
+            <p>dvs. nidding, usling.</p>
+         </note>
+         <note xml:id="com423"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title153">Danmarks Krønike af Saxo Grammaticus</rs>, </hi> bind 1 (1818).</p>
+         </note>
+         <note xml:id="com169"><!--lemma: veteris populator acervi.-->
+            <p>lat., &#x2018;plyndrer af sin gamle dynge [af guld]&#x2019;, citat fra <persName key="pe237">Saxos</persName> oversættelse af <hi rend="italic"><rs type="title" key="title327">Bjarkemål</rs></hi> (<rs type="title" key="title2955">Saxo 2005</rs>, bind 1, s. 178).</p>
+         </note>
+           
+        <!-- <note xml:id="com170"><!-\-lemma: Wealhpeow-\->
+            <p>[kommentar overflødig]</p>
+         </note>-->
+         <note xml:id="com171" ><!--lemma: Vælsk-->
+            <p>fællesgermansk betegnelse for &#x2018;fremmede&#x2019; folk, sprog og kulturer i egne, som grænsede op til germanske områder; derfor ofte med betydningen romansk, fransk, italiensk.</p>
+         </note>
+         <note xml:id="com172"><!--lemma: Ogn-->
+            <p>oldisl., strid, kamp.</p>
+         </note>
+         <note xml:id="com173"><!--lemma: Augn-->
+            <p>oldisl., øje- (i sammensætninger); jysk har formerne &#x2018;ugen&#x2019;, &#x2018;ugend&#x2019;, &#x2018;agende&#x2019;, &#x2018;øgind&#x2019;, der alle betyder fremmed.<!--????HEnrik Hovmark spurgt pr, mail 2017-05-10--></p>
+         </note>
+         <note xml:id="com174" changes="corr"><!--lemma: saa-->
+             <p>det er således.</p>
+         </note>
+         <note xml:id="com489" changes="corr"><!--lemma: -->
+            <p>åbenbarer sig<!-- ODS -->.</p>
+         </note>
+         <note xml:id="com490"><!--lemma: -->
+            <p>bemærkelsesværdigt.</p>
+         </note>
+         <note xml:id="com175"><!--lemma: Vælske-->
+            <p>fællesgermansk betegnelse for &#x2018;fremmede&#x2019; folk, sprog og kulturer i egne, som grænsede op til germanske områder; derfor ofte med betydningen romansk, fransk, italiensk.</p>
+         </note>
+         <note xml:id="com176"><!--lemma: Drapen-->
+            <p>lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com177" changes="corr"><!--lemma: Herrestamme-->
+            <p>fornemme slægt.</p>
+            </note>
+         <note xml:id="com178"><!--lemma: Konge-Stammer-->
+            <p>kongeslægter.</p>
+         </note>
+         <note xml:id="com179"><!--lemma: eodor-->
+            <p>angelsak., konge, fyrste (vers 426, 1043).</p>
+         </note>
+         <note xml:id="com180"><!--lemma: frea-->
+            <p>angelsak., herre, konge.</p>
+         </note>
+         <note xml:id="com181"><!--lemma: ingwina-->
+            <p>angelsak., egl. &#x2018;Ing wine&#x2019;, da. Ings venner; navn for danerne. Sagnhistorien kender dog ikke en &#x2018;Ing&#x2019;.</p>
+         </note>
+         <note xml:id="com182" changes="corr"><!--lemma: Husfolk-->
+            <p>personer knyttet til en husstand (underordnet husbonden).</p>
+         </note>
+        <!-- <note xml:id="com183"><!-\-lemma: Ynglinger-\->
+            <p>[kommentar overflødig]</p>
+         </note>-->
+         <note xml:id="com184"><!--lemma: Stam-Navn-->
+            <p>stammenavn, navn på slægt.</p>            
+         </note>
+         <note xml:id="com476"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com491"><!--lemma: -->
+            <p>oldtidforskere.</p>
+         </note>
+         <note xml:id="com569" ><!--lemma: -->
+            <p>ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 12.080 og og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 505.</p>
+         </note>
+         <note xml:id="com185"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+       <note xml:id="com186" changes="corr"><!--lemma: bekiendter-->
+            <p>kender af; ven.</p>
+         </note>
+         <note xml:id="com187"><!--lemma: him-->
+            <p>angelsak., ham, dem.</p>
+         </note>
+       <note xml:id="com188" changes="new"><!--lemma: sagtens-->
+            <p>formentlig, sandsynligvis.</p>
+         </note>
+         <note xml:id="com416"><!--lemma: -->
+            <p>Der kendes hverken en Gunnild eller Gunhild i persongalleriet i <hi rend="italic"><rs type="title" key="title3772">Sangen om Bjovulf</rs>.</hi></p>
+            <note type="readMore"><p>Det er uklart, hvordan Grundtvig er nået frem til navnet. Det kan være det angelsak. &#x201C;gomela[n]&#x201D; i vers 2931, der betyder gammel og handler om <rs type="myth" key="myth1013">Onelas</rs> mor.</p></note>
+         </note>        
+         <!--<note xml:id="com443"><!-\-lemma: Gothisk-\->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>-->
+         <note xml:id="com189"><!--lemma: Rest-->
+            <p>slår den gøtiske dronning ihjel<!-- ODS 3.2 -->.</p>
+         </note>
+         <note xml:id="com190"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com191"><!--lemma: abreot-->
+            <p>angelsak., fældede, dræbte (vers 2930).</p>
+         </note>
+        <note xml:id="com192"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com193"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com194"><!--lemma: ides Helminga-->
+            <p>angelsak., helmingefruen, dvs. danerdronningen (vers 620).</p>
+         </note>
+         <note xml:id="com195"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts, gerne med omkvæd.</p>
+         </note>
+         <note xml:id="com492"><!--lemma: -->
+            <p>dvs. søstersønnen.</p>
+         </note>
+         <note xml:id="com493"><!--lemma: -->
+            <p>dvs. søstersøn.</p>
+         </note>
+         <note xml:id="com529"><!--lemma: -->
+            <p>forstavelsen, præfikset.</p>
+         </note>
+         <note xml:id="com419"><!--lemma: Sintarfizilo-->
+            <p>ty., navn på en sagnfigur, som Grundtvig med udgangspunkt i <rs type="title" key="title5425">Grimm 1841</rs> forbinder med <rs type="myth" key="myth964.a">Sinfjøtle</rs>. Denne etymologi deles af moderne forskere, se <rs type="title" key="title00">Fulk m.fl. 2008</rs>, s. 466.<!--Zeitschrift bestilt 2017-05-10--></p>
+         </note>
+       
+         <note xml:id="com614" changes="new"><!--lemma: sagtens-->
+            <p>formentlig, sandsynligvis.</p>
+         </note>
+      
+         <note xml:id="com196"><!--lemma: gothiske-->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+           </note>
+         <note xml:id="com494"><!--lemma: -->
+            <p>overskue.</p>
+         </note>
+         <note xml:id="com552"><!--lemma: gothiske-->
+            <p>gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com197"><!--lemma: Merovinger-->
+            <p>frankisk kongeslægt ca. 450-751.</p> <note type="readMore"><p>Slægtens oprindelse fortaber sig i sagnenes verden, hvor den knyttes til en overnaturlig herkomst.</p></note>
+         </note>
+         <note xml:id="com198"><!--lemma: vist-->
+            <p>sikkert, bevist.</p>
+         </note>
+      <note xml:id="com199"><!--lemma: Merovingerne-->
+            <p>frankisk kongeslægt ca. 450-751. Slægtens oprindelse fortaber sig i sagnenes verden, hvor den knyttes til en overnaturlig herkomst.</p>
+         </note>
+      
+         <note xml:id="com200"><!--lemma: milts-->
+            <p>angelsak., venlighed, venskab (vers 2930).</p>
+         </note>
+         <note xml:id="com407"><!--lemma: -->
+            <p>det bogstavrimende begyndelsesbogstav.</p>
+         </note>
+        
+         <note xml:id="com201"><!--lemma: ungyfeðe-->
+            <p>angelsak., nægtet (vers 2921).</p>
+         </note>
+         <note xml:id="com495"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+       <note xml:id="com202" changes="new"><!--lemma: kiendelig-->
+            <p>tydeligt.</p>
+         </note>
+         <note xml:id="com203"><!--lemma: Kæmper-->          
+            <p>helte, krigere.</p>
+           </note>
+         <note xml:id="com615" changes="new"><!--lemma: -->
+            <p>uventet.</p>
+         </note>
+       <!--  <note xml:id="com204"><!-\-lemma: tabt bag af en Vogn-\->
+            <p><!-\-udtryk for at være -\->bragt ud af fatning.</p>
+         </note>
+         -->
+         <note xml:id="com205"><!--lemma: Gothiske-->
+            <p>gøtiske, dvs. i Götaland i det sydlige Sverige.</p>
+           </note>
+         <note xml:id="com496"><!--lemma: -->
+            <p>oldtidforskning.</p>
+         </note>
+         <note xml:id="com206"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com207"><!--lemma: smeddet-->
+            <p>digtet.</p>
+         </note>
+         <note xml:id="com520"><!--lemma: Oldsagn-->
+            <p>sagnene, som stammer fra oldtiden.</p>
+         </note>
+         <note xml:id="com572" ><!--lemma: -->
+            <p>forblev.</p>
+         </note>
+         <note xml:id="com208"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com209"><!--lemma: Helte-Speil-->
+            <p>eksempel, som en helt kan spejle sig i, dannet som parallel til ordet &#x2018;kongespejl&#x2019;, der udgør en hel genre.</p>
+         </note>
+         <note xml:id="com616" changes="new"><!--lemma: -->
+            <p>tydeligvis.</p>
+         </note>
+         <note xml:id="com210"><!--lemma: Gothiske-->
+            <p>her formentlig: gotiske, dvs. nordeuropæiske, <ref type="docOut" target="1841_709_intro.xml#docIn53">se indledningen, afsnittet om Ordet gotisk.</ref></p>
+          </note>
+         <note xml:id="com497"><!--lemma: -->
+            <p>over for, op imod.</p>
+         </note>
+         <note xml:id="com211" changes="corr"><!--lemma: Drape-Smed-->
+            <p>forfatter til et drape, dvs. et lovprisende (helte)digt, her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs></hi>.</p>
+         </note>
+         <note xml:id="com498"><!--lemma: Oldsagn-->
+            <p>sagn, som stammer fra oldtiden.</p>
+         </note>
+         <note xml:id="com212"><!--lemma: mærkværdige-->
+            <p>bemærkelsesværdige.</p>
+         </note>
+         <note xml:id="com213" changes="corr"><!--lemma: Konsten stiger-->
+            <p>talemåde for, at udviklingen går fremad<!-- ODS 1.2 -->. Talemåden kan evt. have et ironisk anstrøg, jf.  <rs key="title93" type="title">Mau 1879</rs>, nr. 5.137, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.504. </p><note type="readMore"><p>Udtrykket stammer muligvis fra dengang, billedhuggeren <persName key="pe124">Bertel Thorvaldsen</persName> vendte hjem fra Italien i 1820, og et skib med ham og hans skulpturer blev trukket i land. En sømand <!--en ulk, -->skulle ved denne lejlighed have udbrudt: &#x201C;Kunsten stiger!&#x201D;. Dette er siden blevet til udtrykket &#x201C;nu stiger kunsten!&#x201D;.</p></note>
+         </note>
+         <note xml:id="com214"><!--lemma: Tog-->
+            <p>krigstogt.</p>
+          </note>
+         <note xml:id="com215"><!--lemma: Jettekonge-->
+            <p>her: friserkonge; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com549"><!--lemma: -->
+            <p>fragmentet.</p>
+         </note>
+         <note xml:id="com499" changes="corr"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         
+         <note xml:id="com500"><!--lemma: -->
+            <p>kan man læse (optativ).</p>
+         </note>
+         <note xml:id="com216"><!--lemma: Hjelmehat-->
+            <p>dvs. hjelm.</p>
+         </note>
+        <note xml:id="com501"><!--lemma: -->
+           <p>alt sammen.</p>
+        </note>
+         <note xml:id="com217"><!--lemma: Vold-->
+            <p>varetægt, besiddelse.</p>
+         </note>
+         <note xml:id="com502"><!--lemma: -->
+            <p>dygtigt, omhyggeligt.</p>
+         </note>
+         <note xml:id="com218"><!--lemma: Gothe-Helten-->
+            <p>den gøtiske helt, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com219"><!--lemma: End-->
+            <p>endnu.</p>
+             </note>
+         <note xml:id="com573" ><!--lemma: -->
+            <p>selv om han er.</p>
+         </note>
+         <note xml:id="com220"><!--lemma: end-->
+          <p>endda, bare.</p>
+       </note>
+         <note xml:id="com221"><!--lemma: Nidings-Værker-->
+            <p>onde, usle gerninger.</p>
+         </note>
+         <note xml:id="com222"><!--lemma: Dømme-->
+            <p>skal dømme (optativ).</p>
+            </note>
+         <note xml:id="com503"><!--lemma: -->
+            <p>dvs. skjulte.</p>
+         </note>
+         <note xml:id="com223"><!--lemma: Trindt omkring-->
+            <p>rundt om.</p>
+         </note>
+       
+         <note xml:id="com224"><!--lemma: Hald-->
+            <p>dvs. hal, kongsgård.</p>
+               </note>
+         <note xml:id="com225"><!--lemma: Dannemænd-->
+            <p>agtværdige, pålidelige mænd; danske mænd.</p>  </note>
+         <note xml:id="com226"><!--lemma: Skokketal-->
+            <p>hobevis, store mængder.</p>
+         </note>
+         <note xml:id="com574" ><!--lemma: -->
+            <p>beslutning, vilje.</p>
+         </note>
+         <note xml:id="com227"><!--lemma: Braad-->
+             <p>dvs. brod.</p>
+         </note>
+         <note xml:id="com504"><!--lemma: -->
+            <p>dvs. tænkte.</p>
+         </note>
+         <note xml:id="com228"><!--lemma: Avindsmand-->
+            <p>fjende; person, der bærer had eller nag til en.</p>
+         </note>
+         <note xml:id="com229"><!--lemma: fik til Lehn-->
+            <p>fik overdraget.</p>
+         </note>
+          <note xml:id="com575" ><!--lemma: -->
+             <p>vil beskytte.</p>
+          </note>
+         <note xml:id="com230"><!--lemma: fuul-->
+            <p>styg, nederdrægtig.</p>
+         </note>
+         <note xml:id="com231"><!--lemma: vanhældet-->
+            <p>skæmmet.</p>
+         </note>
+         
+         <note xml:id="com505"><!--lemma: -->
+            <p>reddet i sidste øjeblik; talemåde, jf. <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 482, og <rs type="bible" key="Am 4,11">Am 4,11</rs>. En brand er et brændestykke med ild i.</p> <note type="readMore"><p>Her spiller Grundtvig på, at <rs type="title" key="title814">Nowell Codex</rs>, der bl.a. indeholder <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>,</hi> faktisk blev reddet under en brand i 1731.</p></note>
+         </note>
+         <note xml:id="com232"><!--lemma: Skindbogen-->
+            <p>bogen, skrevet på pergament; her: <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> der bl.a. rummer den angelsaksiske tekst til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com506"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com233" changes="corr"><!--lemma: Favnemaal-->
+            <p>så langt, som to arme kan række (egl. 3 alen, dvs. 188 cm.).</p>
+         </note>
+         <note xml:id="com234"><!--lemma: hjelmetakt-->
+            <p>som tækket med spidse hjelme (om flammerne).</p>
+         </note>
+       <note xml:id="com235"><!--lemma: skyndelig-->
+            <p>hastigt.</p>            
+         </note>
+         <note xml:id="com236"><!--lemma: Bolde-->
+            <p>brave, tapre.</p>
+          </note>
+         <note xml:id="com237"><!--lemma: Kæmpe-Skjolde-->
+            <p>helte-, krigerskjolde.</p>
+         </note>
+         <note xml:id="com238"><!--lemma: Kæmpers-->
+            <p>heltes, krigeres.</p>
+         
+         </note>
+         <note xml:id="com239"><!--lemma: fage-->
+            <p>hastigt.</p>
+            </note>
+         <note xml:id="com240"><!--lemma: Fuldmod-->
+            <p>dybt ulykkelige (fuld- har forstærkende betydning, men er ofte blot fyldord i vers).</p>
+         </note>
+         <note xml:id="com241"><!--lemma: Gothlands-->
+            <p>den gøtiske, dvs. fra Götaland i det sydlige Sverige.</p>
+         </note>
+         <note xml:id="com242"><!--lemma: Kæmpe-Skare-->
+         <p>helte-, krigerskare.</p></note>
+         <note xml:id="com243" changes="corr"><!--lemma: Kæmpegrav-->
+            <p>helte-, krigergrav.</p>
+         </note>
+         <note xml:id="com244"><!--lemma: Gothe-Heltens-->
+            <p>den gøtiske helts, her: <rs type="myth" key="myth406">Bjovulfs</rs>.</p>
+         </note>
+         <note xml:id="com245"><!--lemma: og-->
+            <p>også.</p>
+          </note>
+         <note xml:id="com246"><!--lemma: Grube-Guld-->
+            <p>guld fra (dragens) hule.</p>
+         </note>
+         <note xml:id="com507"><!--lemma: -->
+            <p>begravet.</p>
+         </note>
+         <note xml:id="com247"><!--lemma: Drape-->
+            <p>lovprisende (helte)digt, gerne med omkvæd.</p>
+         </note>
+         <note xml:id="com576" ><!--lemma: -->
+            <p>lovpriste.</p>
+         </note>
+         <note xml:id="com248"><!--lemma: Konning-->
+           <p>konge (arkaiserende).</p>
+          </note>
+         <note xml:id="com249"><!--lemma: Kierte-->
+            <p>lys.</p>
+         </note>
+         <note xml:id="com508"><!--lemma: -->
+            <p>således.</p>
+         </note>
+         <note xml:id="com509"><!--lemma: -->
+            <p>lovprisningen af ham.</p>
+         </note>
+         <note xml:id="com250"><!--lemma: myg-->
+            <p>smidig, ydmyg.</p>
+          </note>
+         <note xml:id="com251"><!--lemma: Konge-Stolen-->
+            <p>tronstolen; også i overført betydning: kongemagten.</p>
+         </note>
+         <note xml:id="com252"><!--lemma: dannis-->
+            <p>brav, hæderlig.</p>
+           </note>
+         <note xml:id="com253"><!--lemma: gild-->
+             <p>ypperlig, fortrinlig.</p>
+         </note>
+         <note xml:id="com424"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com510"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com254" changes="corr"><!--lemma: Drost-->
+            <p>højeste embedsmand i de nordiske riger i middelalderen.</p>
+          </note>
+         <note xml:id="com577" ><!--lemma: -->
+            <p>tydeligvis, helt klart.</p>
+         </note>
+         <note xml:id="com255"><!--lemma: Kæmpe-->
+             <p>helt, kriger.</p>
+           </note>
+         <note xml:id="com256" changes="corr"><!--lemma: turde gaae under Øine-->
+            <p>talemåde, jf.  <rs key="title93" type="title">Mau 1879</rs>, bind 2, s. 610. Betydningen er her: træde kækt i møde<!-- (oftest: at sleske og smigre)-->.</p>
+         </note>
+         <note xml:id="com257"><!--lemma: Jettekongen-->
+            <p>her: friserkongen; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+         <note xml:id="com258"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt, her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com259"><!--lemma: Jettekongen-->
+            <p>her: friserkongen; efter &#x2018;ēotan&#x2019;, den angelsaksiske betegnelse for friserne eller jyderne.</p>
+         </note>
+       <note xml:id="com511"><!--lemma: -->
+          <p>endnu.</p>
+       </note>
+         <note xml:id="com260"><!--lemma: feallan scolde ne, huru Hildeburh, herian þorfte, Eotene treowe-->
+            <p>angelsak. Moderne, tekstkritisk udgave har &#x201C;feallan scolde. / Nē hūru <rs type="myth" key="myth986">Hildeburh</rs> herian þorfte / &#x0112;otena trēowe&#x201D;  (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 1070-1072), da. &#x2018;faldt [...]. / I sandhed <rs type="myth" key="myth986">Hildeborg</rs> behøvede ikke / tale kønt om friserkæmpernes troskab&#x2019; (<rs type="title" key="title387">Haarder 2001</rs>, vers 1070-1072).</p>
+         </note>
+         <note xml:id="com425"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         
+         <note xml:id="com540"><!--lemma: -->
+            <p>her: frisernes; efter &#x2018;ēotan&#x2019;, den angelsaksiske fællesbetegnelse for friserne og jyderne.</p>
+         </note>
+         <note xml:id="com512"><!--lemma: -->
+            <p>digt, der rummer en lære af spekulativ, videnskabelig, moralsk eller nyttig art.</p>
+         </note>
+         <note xml:id="com513"><!--lemma: -->
+            <p>digte, der rummer en lære af spekulativ, videnskabelig, moralsk eller nyttig art.</p>
+         </note>
+        
+         <note xml:id="com261"><!--lemma: Kæmpe-->           
+            <p>helt, kriger.</p>          
+         </note>
+         <note xml:id="com262"><!--lemma: pukke-->
+               <p>prale af; slå på (i overført betydning).</p>
+         </note>
+         <note xml:id="com263" ><!--lemma: Eg og Od-->
+            <p>dvs. æg og od, fast betegnelse for stikvåben.</p>
+         </note>
+         <note xml:id="com264"><!--lemma: bukke-->
+            <p>bukke under, give fortabt; dø.</p>
+         </note>
+         <note xml:id="com265"><!--lemma: Ihvor-->
+              <p>uanset hvor.</p>
+         </note>
+         <note xml:id="com266"><!--lemma: Mester-->
+            <p>overmand.</p>
+          </note>
+         
+       
+         
+       <note xml:id="com426"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com578" ><!--lemma: skilt sig ved-->
+            <p>sluppet afsted med; udført.</p>
+         </note>
+         <note xml:id="com427"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title153">Danmarks Krønike af Saxo Grammaticus</rs>,</hi> bind 2 (1819).</p>
+         </note>
+         
+       <!--  <note xml:id="com428"><!-\-lemma: -\->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>-->
+         <note xml:id="com267" changes="corr"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com617" changes="new"><!--lemma: -->
+            <p>ordet knytter sig til udtrykket &#x201C;sort på hvidt&#x201D;, men udelades på moderne dansk.</p>
+         </note>
+         <note xml:id="com268"><!--lemma: Oldermand-->
+            <p>her: leder.</p>
+         </note>
+         <note xml:id="com269" changes="corr"><!--lemma: Holdt ei Tunge meer for Tand-->
+            <p>holdt ikke længere mund; omvending af ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 10.087 og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 2.652.</p>
+         </note>
+         <note xml:id="com270" changes="corr"><!--lemma: Isse-Bleg-->
+            <p>skaldede, blege isse; her: sig selv<!--; jf. udtrykket om at kende noget lige så godt som sin egen bukselomme-->.</p>
+         </note>
+         <note xml:id="com408"><!--lemma: -->
+            <p>kamp.</p>
+         </note>
+         <note xml:id="com271"><!--lemma: Droges han til Minde-->
+            <p>huskede han.</p>
+         </note>
+         <note xml:id="com272"><!--lemma: Sting-->
+            <p>stik.</p>
+         </note>
+         <note xml:id="com273" changes="corr"><!--lemma: Kæmpehu-->
+            <p>helte-, krigersind.</p>
+         </note>
+         <note xml:id="com274"><!--lemma: Kæmpedaad-->
+            <p>helte-, krigerbedrift.</p>
+         </note>
+         <note xml:id="com275"><!--lemma: øvet-->
+            <p>udøvet.</p>
+         </note>
+         <note xml:id="com276"><!--lemma: Brynje-Særke-->
+            <p>panserskjorter<!--, dvs. et skjortelignende panser af små ringe eller metaltråd-->.</p>
+         </note>
+         <note xml:id="com277"><!--lemma: Mærke-->
+            <p>banner, fane.</p>
+                </note>
+         <note xml:id="com278"><!--lemma: Marken-->
+                <p>slagmarken.</p>
+         </note>
+         <note xml:id="com279"><!--lemma: Kæmpeslæt-->
+            <p>nedslagtning af helte, krigere.</p>
+         </note>
+         <note xml:id="com280"><!--lemma: ganger-->
+             <p>går (gl. sideform til gå).</p>
+             </note>         
+        
+         <note xml:id="com281" changes="corr"><!--lemma: Bane-->
+            <p>Førstetrykket (<rs type="title" key="title326">1820</rs>, s. 184) har her: &#x201C;Søn ei veed, <hi rend="spaced">hvis</hi> Bane&#x201D;, hvilket giver bedre mening: en kriger, som bliver en endnu ukendts banemand.</p>
+           </note>
+        
+         <note xml:id="com429"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com579" changes="corr" ><!--lemma: -->
+            <p>er blevet skamferet af ilden, <ref type="docOut" target="1841_709_intro.xml#docIn7">se indledningen, afsnittet om den oprindelige Bjovulftekst</ref>.</p>
+         </note>
+         <note xml:id="com282"><!--lemma: Boldes-->
+            <p>braves, modiges.</p>
+         </note>
+         <note xml:id="com283"><!--lemma: pinlig-->
+            <p>pinefuld, ubehagelig.</p>
+              </note>
+         <note xml:id="com284"><!--lemma: Hald-->
+            <p>dvs. hal, kongsgård.</p>
+         </note>
+         <note xml:id="com285"><!--lemma: Kæmperne-->
+             <p>heltene, krigerne.</p>
+             </note>
+         <note xml:id="com514"><!--lemma: -->
+            <p>også.</p>
+         </note>
+         <note xml:id="com286"><!--lemma: Karlen for saa prud en Hat-->
+            <p>hentydning til ordsproget om at være karl for sin hat, dvs. at være sin opgave voksen; jf. <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 504, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.400.</p>
+         </note>
+         <note xml:id="com287"><!--lemma: Brynje-Særken-->
+            <p>panserskjorten.</p>
+         </note>
+         <note xml:id="com618" changes="new"><!--lemma: -->
+            <p>holdbarhed.</p>
+         </note>
+         <note xml:id="com288"><!--lemma: Overvold-->
+            <p>overgreb, overlast.</p>
+    </note>
+         <note xml:id="com289"><!--lemma: Kæmpe-Skuldre-->
+            <p>helte-, krigerskuldre.</p>
+         </note>
+         <note xml:id="com290"><!--lemma: Harpeslag-->
+            <p>harpespil.</p>
+         </note>
+         <note xml:id="com291"><!--lemma: Kæmpe-Högen-->
+            <p>rovfuglen, der æder krigernes lig på slagmarken, formentlig en allusion til <rs type="myth" key="myth383">Hræsvælgr</rs>.</p>
+         </note>
+         <note xml:id="com292"><!--lemma: mon-->
+            <p>ikke-betydningsbærende hjælpeverbum.</p>
+           </note>
+         <note xml:id="com293"><!--lemma: Helsot-->
+            <p>sygdom (sot), der fører til døden.</p>
+         </note>
+         <note xml:id="com294"><!--lemma: Kæmper-->
+     <p>helte, krigere.</p>
+           </note>
+         <note xml:id="com295"><!--lemma: Saa-->
+             <p>således.</p>
+         </note>
+         <note xml:id="com296"><!--lemma: Kæmpehaand-->
+            <p>store, mægtige hånd.</p>
+         </note>
+         
+         <note xml:id="com430"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com297"><!--lemma: Gothiske-->
+            <p>gøtiske, dvs. i Götaland i det sydlige Sverige.</p>
+            </note>
+         <note xml:id="com298"><!--lemma: Snarensvend-->
+            <p>den hurtige svend (allusion til den sagnhistoriske <rs type="myth" key="myth485">Sigvard Snarensvend</rs>).</p>
+         </note>
+         <note xml:id="com299"><!--lemma: Konning-->
+             <p>konge (arkaiserende).</p>
+           </note>
+         <note xml:id="com300"><!--lemma: Beholder-->
+            <p>behold (gl. imperativ pluralis).</p>
+         </note>
+         <note xml:id="com301"><!--lemma: forsand-->
+            <p>i sandhed (et folkeviseudtryk).</p>
+            </note>
+        <!-- <note xml:id="com302"><!-\-lemma: Gran-\->
+            <p>lille bestanddel.</p>   </note>-->
+         <note xml:id="com515"><!--lemma: -->
+            <p>ild.</p>
+         </note>
+         <note xml:id="com303"><!--lemma: Kæmpe-->
+             <p>helt, kriger.</p>
+         </note>
+         <note xml:id="com304"><!--lemma: Rosensblomme-->
+            <p>rosenblomst; et folkeviseudtryk, der er metafor for smuk kvinde.</p>
+         </note>
+         <note xml:id="com305" changes="corr"><!--lemma: favren Glut-->
+            <p>du smukke unge kvinde.</p>
+         </note>
+         <note xml:id="com306"><!--lemma: fuldmangen Gang-->
+            <p>mange gange (fuld- har forstærkende betydning, men er ofte blot fyldord i vers).</p>
+         </note>
+         <note xml:id="com307"><!--lemma: Buret-->
+            <p>opholdsrummet for kvinderne.</p>
+          </note>
+         <note xml:id="com516" changes="corr"><!--lemma: gav Staal for Guld,-->
+            <p>omvending af <rs type="myth" key="myth1711">Røriks</rs> fejlslagne forsøg på med rige guldgaver at afværge <rs type="myth" key="myth63">Rolf Krakes</rs> våbenmagt (stålet; se <rs type="title" key="title83">Saxo</rs>, 2. bog).</p> <note type="readMore"><p>Formuleringen vender en udbredt talemåde på hovedet. Det lyder: &#x201C;guld gav jeg for jern&#x201D; og blev brugt ved patriotiske indsamlinger af guldsmykker til at finansiere krige, bl.a. i Preussen i 1813. I bytte for deres guld fik kvinderne en jernring med talemåden indgraveret.<!--talemåde; dvs. giver våben med krigsforpligtelse i stedet for belønnning; variant af &#x201C;at give Stene for Brød&#x201D;, jf. <rs type="bible" key="Matt 7,9">Matt 7,9</rs>.--></p></note>
+         </note>
+         <note xml:id="com308" changes="corr"><!--lemma: Fuldmangen-->
+            <p>mangen en (fuld- har forstærkende betydning, men er ofte blot fyldord i vers).</p>
+         </note>
+         <note xml:id="com309"><!--lemma: Kæmper-->
+             <p>helte, krigere.</p>
+          </note>
+         <note xml:id="com310"><!--lemma: Banesang-->
+            <p>dødssang.</p>
+         </note>
+         <note xml:id="com580" ><!--lemma: -->
+            <p>i samtale med ørne (som ligeledes vil spise ligene af de faldne).</p>
+         </note>
+         <note xml:id="com311"><!--lemma: Kæmpe Flomme-->
+            <p>(de døde) heltes eller krigeres fedt.</p>
+         </note>
+         <note xml:id="com431"><!--lemma: -->
+            <p>Grundtvigs danske oversættelse, <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi> (1820).</p>
+         </note>
+         <note xml:id="com619" changes="new"><!--lemma: -->
+            <p>uoverskuelig.</p>
+         </note>
+         <note xml:id="com312"><!--lemma: Oldsagn-->
+            <p>sagn, som stammer fra oldtiden.</p>
+         </note>
+       
+         <note xml:id="com517" changes="corr"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <note xml:id="com518"><!--lemma: -->
+            <p>lærenemme; som har let ved at forstå eller tilegne sig noget.</p>
+         </note>
+         <note xml:id="com519"><!--lemma: -->
+            <p>endnu.</p>
+         </note>
+         <note xml:id="com581" ><!--lemma: -->
+            <p>allusion til ordsprog, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 2.678: &#x201C;Gammelt Træ taal' ikke Flytning&#x201D;.</p>
+         </note>
+         <note xml:id="com620" changes="new"><!--lemma: -->
+            <p>er ligeglad med; tager ikke hensyn  til.</p>
+         </note>
+         <note xml:id="com521"><!--lemma: betragtnuing-->
+            <p>syn på.</p>
+         </note>
+        <note xml:id="com582" ><!--lemma: -->
+           <p>åbenlyst.</p>
+        </note>
+         
+        <!-- <note xml:id="com313"><!-\-lemma: Trolden-\->
+            <p>her metafor for den skadelige tyske indflydelse.</p>
+         </note>-->
+         <!--<note xml:id="com583" ><!-\-lemma: -\->
+            <p>.</p>
+         </note>-->
+         <note xml:id="com314"><!--lemma: Gothens-->
+            <p>her: svenskernes.</p>
+         </note>
+         <note xml:id="com621" changes="new"><!--lemma: -->
+            <p>forfattet eller digtet.</p>
+         </note>
+         <note xml:id="com315" changes="corr"><!--lemma: Engelskmand-->
+            <p>englænder. Grundtvig hentyder til de to engelske værker, han omtaler, dvs.  <rs type="title" key="title4937">Kemble 1835</rs> og <rs type="title" key="title5386">Kemble 1837</rs>.</p>
+         </note>
+         <note xml:id="com316" changes="corr"><!--lemma: Tydsker-->
+            <p>Grundtvig hentyder til de to tyske værker, han omtaler, dvs. <rs type="title" key="title5387">Leo 1839</rs> og <rs type="title" key="title5388">Ettmüller 1840</rs>.</p>
+         </note>
+         <note xml:id="com317"><!--lemma: Drape-Smed-->
+            <p>forfatter til et drape, dvs. et lovprisende (helte)digt, gerne med omkvæd.</p>
+         </note>
+         <note xml:id="com622" changes="new"><!--lemma: -->
+            <p>formentlig, sandsynligvis.</p>
+         </note>
+         <note xml:id="com318"><!--lemma: Nørreleden-->
+            <p>her: Nordeuropa.</p>
+         </note>
+         <note xml:id="com319" ><!--lemma: lægger...-->
+            <p>bruger alle kræfter, anstrenger sig meget.</p>
+         </note>
+        <!-- <note xml:id="com320"><!-\-lemma: Kimbriske Halvøe-\->
+            <p>Jylland.</p>
+         </note>-->
+         <note xml:id="com321"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com403"><!-\-lemma: ost-\->
+            <p>dvs. øst.</p>
+         </note>-->
+         <note xml:id="com522"><!--lemma: -->
+            <p>helt sikkert.</p>
+         </note>
+         <note xml:id="com322"><!--lemma: Gothland-->
+            <p>enten den svenske ø Gotland eller den sydlige del af Sverige, Götaland.</p>
+         </note>
+         
+         <note xml:id="com323"  changes="corr"><!--lemma: -->
+            <p>danskerne.</p>
+         </note>
+         <note xml:id="com324"><!--lemma: Gothland-->
+            <p>enten den svenske ø Gotland eller den sydlige del af Sverige, Götaland.</p>
+         </note>
+         <note xml:id="com325"><!--lemma: Gothisk-Svenske-->
+            <p>gøtisk-svenske, dvs. som angår både Gøtaland og Svealand.</p>
+         </note>
+         <note xml:id="com584" ><!--lemma: -->
+            <p>talemåde, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 7.003, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 1.997.</p>
+         </note>
+         <note xml:id="com585" changes="corr" ><!--lemma: -->
+            <p>ordsprog om at rage for meget til sig, skaffe sig ulovlig fordel, jf. <rs key="title93" type="title">Mau 1879</rs>, bind 1, s. 221.</p>
+         </note>
+         <note xml:id="com586" ><!--lemma: fast-->
+            <p>velbefæstet; strategisk gunstig.</p>
+         </note>
+         <note xml:id="com326"><!--lemma: Gothland-->
+            <p>enten den svenske ø Gotland eller den sydlige del af Sverige, Götaland.</p>
+         </note>
+         <note xml:id="com327"><!--lemma: Scatenauge-->
+            <p>ældre ty., Skandinavien. <!-- Reallexicon der germanischen... --></p>
+         </note>
+        <!-- <note xml:id="com328"><!-\-lemma: Scædenauge-\->
+            <p>angelsak.,[kommentar overflødig]</p>
+         </note>-->
+         <note xml:id="com329"><!--lemma: Scedeland-->
+            <p>angelsak., Skåne.</p>
+         </note>
+         <note xml:id="com330"><!--lemma: Scedenigge-->
+            <p>angelsak., Skåne.</p>
+         </note>
+         <note xml:id="com331"><!--lemma: Scheidewand-->
+            <p>ty., skillevæg.</p>
+         </note>
+         <note xml:id="com332"><!--lemma: Schatanavia-->
+            <p>lat., (formentlig om) den skandinaviske halvø. Udtrykket stammer fra <persName key="pe2674">Paulus Diaconus'</persName> <hi rend="italic"><rs type="title" key="title4390">Historia gentis Langobardorum</rs></hi> (da. Langobardernes historie). Grundtvig citerer her <rs type="title" key="title5387">Leo 1839</rs>, s. 50.</p>
+         </note>
+         <note xml:id="com523"><!--lemma: -->
+            <p>lat., Skandinavien.</p>
+         </note>
+         <note xml:id="com334" changes="corr"><!--lemma: Oldgranskerne-->
+            <p>oldtidforskere.</p>
+         </note>
+         <note xml:id="com524"><!--lemma: -->
+            <p>fortabt.</p>
+         </note>
+         <note xml:id="com525"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com526"><!--lemma: -->
+            <p>germanske, tyske.</p>
+         </note>
+         <note xml:id="com527"><!--lemma: -->
+            <p>afarter.</p>
+         </note>
+         <note xml:id="com528"><!--lemma: -->
+            <p>germanske, tyske.</p>
+         </note>
+         <note xml:id="com541"><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com333"><!--lemma: “Hrosnaburg”-->
+            <p>tysk oversættelse af angelsak. <rs type="myth" key="myth997">Hreosnabeorh</rs> (da. <rs type="myth" key="myth997">Røsnabjerg</rs>). Udtrykket ses dog ikke hos <rs type="title" key="title5387">Leo 1839</rs>, s. 59. Grundtvig har tidligere kaldt stedet <rs type="myth" key="myth997">&#x201C;Hrosna-Bjerg&#x201D;</rs> (<rs type="title" key="title326">1820</rs>, s. 215).</p>
+         </note>
+     
+         <note xml:id="com335"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+        <note xml:id="com336" ><!--lemma: aabenbar-->
+            <p>åbenlyst.</p>
+         </note>
+         <note xml:id="com337" changes="corr"><!--lemma: Riesengebürge-->
+            <p>ty., egl. &#x2018;Riesengebirge&#x2019; (da. &#x2018;de kæmpestore bjerge&#x2019;), navn på bjergkæden mellem Schlesien og Bøhmen.</p>
+         </note>
+         <note xml:id="com338"><!--lemma: Gothiske-->          
+            <p>gøtiske, dvs. i Götaland i det sydlige Sverige.</p>
+           </note>
+         <note xml:id="com432" changes="corr"><!--lemma: -->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com411"><!-\-lemma: -\->
+           <p>dvs. vers 2892 og 2960, da <persName key="pe4498">Leo</persName> tæller halvvers og har en lidt anden versinddeling end den moderne, autoristerde(<rs type="title" key="title5387">1839</rs>).</p>
+        </note>-->
+         <note xml:id="com339"><!--lemma: Haga-->
+            <p>angelsak., indelukke, aflukke (vers 2892 og 2960).</p>
+         </note>
+         <note xml:id="com340"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt  (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com587" changes="corr" ><!--lemma: -->
+            <p>selv hvis hun havde meget (at gøre med <rs type="myth" key="myth565.a">Offa</rs>).</p>
+         </note>
+         <note xml:id="com341"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com342"><!-\-lemma: Angler-\->
+            <p>[kommentar overflødig]</p>
+         </note>-->
+       <!--  <note xml:id="com343"><!-\-lemma: Gother-\->
+            <p>dvs. gøtere. Gøterne var et folkeslag, som beboede dele af det sydlige Sverige (Götaland).</p>
+            <p>gøter.</p>
+         </note>-->
+         <note xml:id="com344"><!--lemma: scede landum in-->
+            <p>angelsak., i Skåneland (vers 19).</p>
+         </note>
+         <note xml:id="com345"><!--lemma: scedenigge-->
+            <p>angelsak., Skåne.</p>
+         </note>
+         <note xml:id="com346"><!--lemma: Scatenauge-->
+            <p>ældre ty., Skandinavien. <!-- Reallexicon der germanischen... --></p>
+         </note>
+         <note xml:id="com588" ><!--lemma: -->
+            <p>sandsynligt.</p>
+         </note>
+         <note xml:id="com589" ><!--lemma: -->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com347"><!--lemma: Heaðobeardas-->
+            <p>angelsak., <rs type="myth" key="myth1010">hadubarder</rs>.</p>
+         </note>
+         <note xml:id="com542" changes="corr"><!--lemma: -->
+            <p>stednavn (nomina locorum)<!-- (ikke pronomen)-->.</p>
+         </note>
+         <note xml:id="com348"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com349"><!-\-lemma: Friserne-\->
+            <p>[kommentar overflødig]</p>
+         </note>-->
+         <note xml:id="com350"><!--lemma: Ramsen-->
+            <p>dvs. remsen.</p>
+         </note>
+         <note xml:id="com472"><!--lemma: -->
+            <p>dvs. tilhørende folkeslaget <rs type="myth" key="myth1010">habubarderne</rs>.</p>
+         </note>
+         <note xml:id="com590" ><!--lemma: -->
+            <p>talemåde om ikke at have fordel ved alt, hvad man gør, jf. <rs key="title93" type="title">Mau 1879</rs>, nr. 8.622, og <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 2.324.</p>
+         </note>
+         <note xml:id="com351"><!--lemma: Veir-Marken-->
+            <p>Grundtvigs oversættelse af angelsak. &#x201C;Weder-mearc&#x201D;, da. vedergøternes land, dvs. Götaland (vers 299).</p>
+         </note>
+       <note xml:id="com352"><!--lemma: tarveligs-->
+            <p>middelmådigt.</p>
+         </note>
+         <note xml:id="com353"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <!--<note xml:id="com354"><!-\-lemma: Drapens-\->
+            <p>[kommentar overflødig]</p>
+         </note>-->
+         <note xml:id="com355"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com543"><!--lemma: -->
+            <p>overlevede.</p>
+         </note>
+         <note xml:id="com567" ><!--lemma: -->
+            <p>bibliotekssignaturen.</p>
+         </note>
+         <note xml:id="com356"><!--lemma: poetisk Tractat-->
+            <p>Grundvigs foregribende oversættelse af det følgende latin.</p>
+         </note>
+         <note xml:id="com357"><!--lemma: tractattus nobilissimus poetice scriptus-->
+            <p>lat., &#x2018;en fortræffelig poetisk afhandling&#x2019;.</p>
+         </note>
+         <note xml:id="com358" changes="corr"><!--lemma: Nissekonger-->
+            <p>næssekonger, dvs. konger, som kun havde lidt land (et næs) at råde over; småkonger uden egl. rige og magt.</p>
+         </note>
+         <note xml:id="com359"><!--lemma: Skindbogen-->
+            <p>bogen, skrevet på pergament; her: <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> der bl.a. rummer den angelsaksiske tekst til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com360"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+        <note xml:id="com361"><!--lemma: vist-->
+            <p>helt sikkert.</p>
+         </note>
+         <note xml:id="com539"><!--lemma: -->
+            <p>her: bombardement med ildraketter (af København i 1807).</p>
+         </note>
+         <note xml:id="com530"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com362" changes="corr"><!--lemma: uefterretteligere-->
+            <p>her: mere ukorrekt.</p>
+         </note>
+         <note xml:id="com363"><!--lemma: ubilligt-->
+            <p>urimeligt.</p>
+         </note>
+         <note xml:id="com364"><!--lemma: paa Timen-->
+            <p>med det samme, øjeblikkeligt.</p>
+            </note>
+         <note xml:id="com365"><!--lemma: Syn for Sagn-->
+            <p>talemåde, der betyder &#x2018;sikkert vidnesbyrd&#x2019;, jf. <rs type="title" key="title93">Mau</rs> nr. 9.911 og <rs type="title" key="title96">Grundtvig 1845</rs> nr. 2.630.</p>
+         </note>
+         <note xml:id="com366"><!--lemma: on cear-bendum-->
+            <p>angelsak. Moderne, tekstkritisk udgave har &#x201C;onc<hi rend="italic">e</hi>rbendum&#x201D; (<rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 1918), da. &#x2018;ankerbånd&#x2019; (<rs type="title" key="title387">Haarder 2001</rs>, vers 1918).</p>
+         </note>
+         <note xml:id="com367" changes="corr"><!--lemma: there can be no doubt that Grundtvig's suggestion oncerbendum is right-->
+            <p>eng., &#x2018;der kan ikke være tvivl om, at Grundtvigs forslag, oncerbendum [da. ankertove], er korrekt&#x2019;.</p>
+         </note>
+         <note xml:id="com368"><!--lemma: afrettede-->
+            <p>her: kommenterede, rettede af <persName key="pe00">Rask</persName> selv.</p>
+         </note>
+         
+         <note xml:id="com369"><!--lemma: Drapen-->
+            <p>dvs. <rs type="title" key="title1855">Thorkelin 1815</rs>.</p>
+         </note>
+         <note xml:id="com544"><!--lemma: -->
+            <p>dvs. postskriptummet, efterskriftet.</p>
+         </note>
+         <note xml:id="com531"><!--lemma: -->
+            <p>nedgøre.</p>
+         </note>
+         <note xml:id="com591" ><!--lemma: -->
+            <p>dvs. <rs type="title" key="title1855">Thorkelin 1815</rs>.</p>
+         </note>
+        
+         <note xml:id="com370"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; her: den engelske udgave, <hi rend="italic"><rs type="title" key="title5386">A Translation of the Anglosaxon poem of Beowulf</rs></hi> (<rs type="title" key="title5386">Kemble 1837</rs>).<!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--></p>
+         </note>
+        
+         <note xml:id="com404"><!--lemma: -->
+            <p>oversigt.</p>
+         </note>
+         <note xml:id="com371"><!--lemma: Drapen-->
+            <p>lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com592" ><!--lemma: -->
+            <p>griske efter.</p>
+         </note>
+         <note xml:id="com623" changes="new"><!--lemma: -->
+            <p>dvs. lærte.</p>
+         </note>
+         <note xml:id="com372"><!--lemma: Ave er god for os alle, naar den kommer itide-->
+            <p>ordsprog: &#x201C;Ave er god, naar den kommer i Tide&#x201D;, jf. <rs key="title93" type="title">Mau 1879</rs> nr. 366, og <rs type="title" key="title96">Grundtvig 1845</rs>, nr. 115. Ave betyder optugtelse eller disciplin.</p>
+         </note>
+         <note xml:id="com373" changes="corr"><!--lemma: saa er-->
+             <p>det er sådan.</p>
+          </note>
+         <note xml:id="com374"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com602" ><!-\-lemma: -\->
+            <p>middelmådig.</p>
+         </note>-->
+         <note xml:id="com375" changes="corr"><!--lemma: dyrt Madkiøb-->
+            <p>dyr åndelig næring; overpris.</p>
+         </note>
+         <note xml:id="com376"><!--lemma: Efterskrift-->
+            <p>afskrift.</p>
+         </note>
+         <note xml:id="com377"><!--lemma: den gamle Skindbog-->
+            <p>bogen, skrevet på pergament; her: <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> der bl.a. rummer den angelsaksiske tekst til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com378"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com379"><!--lemma: Eftermand-->
+            <p>efterfølger.</p>
+        </note>
+         <note xml:id="com593" ><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com380"><!--lemma: Frisians-->
+            <p>eng., frisere.</p>
+         </note>
+         <note xml:id="com381"><!--lemma: Styk-Heste-->
+            <p>artilleriheste, dvs. heste til krigsbrug.</p>
+         </note>
+         <note xml:id="com382" ><!--lemma: beasts of war-->
+            <p>eng., krigsdyr; heste til krigsbrug. Udtrykket er <persName key="pe3442">Kembles</persName>.</p><note type="readMore"><p>ikke at forveksle med &#x2018;beasts of battle&#x2019;, som er ørne, høge, ravne eller ulve.</p></note>
+         </note>
+         <note xml:id="com624" changes="new"><!--lemma: -->
+            <p>her: oversat <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com625" changes="new"><!--lemma: -->
+            <p>blive gjort til grin.</p>
+         </note>
+         <note xml:id="com383"><!--lemma: hilde-deor-->
+            <p>angelsak., den tapre, den kampduelige (vers 312).</p>
+         </note>
+         <note xml:id="com545"><!--lemma: -->
+            <p>dvs.</p>
+         </note>
+         <note xml:id="com384" changes="corr"><!--lemma: deor-->
+            <p>angelsak., enten vildt dyr eller tapper, duelig.</p>
+         </note>
+       <note xml:id="com385" ><!--lemma: beasts of war-->
+          <p>eng., krigsdyr; heste til krigsbrug. Udtrykket er <persName key="pe3442">Kembles</persName>.</p><note type="readMore"><p>ikke at forveksle med &#x2018;beasts of battle&#x2019;, som er ørne, høge, ravne eller ulve.</p></note>
+         </note>
+         <note xml:id="com594" ><!--lemma: -->
+            <p>variation af det rimede ordsprog &#x201C;Sky sig Land og sky sig Ly! Ingen kan sin Skæbne fly&#x201D;, jf. <rs key="title96" type="title">Grundtvig 1845</rs>, nr. 2.628.</p>
+         </note>
+         <note xml:id="com386"><!--lemma: det Lov-->
+            <p>den ros.</p>
+         </note>
+         <note xml:id="com387"><!--lemma: Stykhest-->
+            <p>artillerihest, dvs. hest til krigsbrug.</p>
+         </note>
+         <note xml:id="com532" changes="corr"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <note xml:id="com533"><!--lemma: -->
+            <p>ringe.</p>
+         </note>
+         <note xml:id="com595" ><!--lemma: formodnig-->
+            <p>forventning, forhåbning.</p>
+         </note>
+         <note xml:id="com596" changes="corr" ><!--lemma: -->
+            <p>sikkert, nok.</p>
+         </note>
+         <note xml:id="com546"><!--lemma: -->
+            <p>i utide.</p>
+         </note>
+         <note xml:id="com388"><!--lemma: alt-->
+            <p>allerede.</p>         </note>
+         <note xml:id="com389"><!--lemma: vist-->
+            <p>sikkert.</p>
+          </note>
+         <note xml:id="com390"><!--lemma: -->
+            <p>her: germanske, nordeuropæiske.</p>
+         </note>
+         <note xml:id="com391"><!--lemma: Skindbogen-->
+            <p>bogen, skrevet på pergament; her: <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> der bl.a. rummer den angelsaksiske tekst til <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+         <note xml:id="com392"><!--lemma: Drapen-->
+            <p>det lovprisende (helte)digt; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>
+        <!-- <note xml:id="com393"><!-\-lemma: Drapen-\->
+            <p>det lovprisende (helte)digt; <!-\-betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.-\-> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulf</rs>.</hi></p>
+         </note>-->
+         <note xml:id="com394"><!--lemma: Drapens-->
+            <p>det lovprisende (helte)digts; <!--betegnelse på oldnordisk digt med omkvæd (stev). Det bruges især til at forherlige en fremragende mands bedrifter.--> her: <hi rend="italic"><rs type="title" key="title3272">Sangen om Bjovulfs</rs>.</hi></p>
+         </note>
+         <note xml:id="com626" changes="new"><!--lemma: -->
+            <p>digtform.</p>
+         </note>
+         <note xml:id="com395"><!--lemma: mærkelig-->
+            <p>aldeles, bemærkelsesværdigt.</p>
+           </note>
+       <!--  <note xml:id="com396"><!-\-lemma: Underværker-\->
+            <p>vidundere.</p>
+         </note>
+         <note xml:id="com397"><!-\-lemma: Underværk-\->
+            <p>vidunder.</p>
+         </note>-->
+        <note xml:id="com398" ><!--lemma: den gamle verden-->
+            <p>antikkens.</p>
+         </note>
+         <note xml:id="com597" ><!--lemma: -->
+            <p>det kristnede Europas litteratur (Grundtvigs udlægning).</p>
+         </note>
+         <note xml:id="com598" ><!--lemma: -->
+            <p>allerede.</p>
+         </note>
+         <note xml:id="com599" ><!--lemma: -->
+            <p>ophøjelsen på det europæiske kontinent. Hentydning til <persName key="pe1161">Christoph Martin Wielands</persName> oversættelser af <persName key="pe972">Shakespeare</persName> til tysk i 1760'erne og den efterfølgende shakespearebegejstring hos <persName key="pe29">Goethe</persName> og andre dramatikere.</p>
+         </note>
+         <note xml:id="com534"><!--lemma: -->
+            <p>hjemlandet.</p>
+         </note>
+         <note xml:id="com399"><!--lemma: den Angelsaxiske Versebog-->
+            <p>her: det angelsaksiske håndskrift indeholdende digte, formentlig <hi rend="italic"><rs type="title" key="title3283">Exeterbogen</rs>.</hi></p>
+         </note>
+      
+         <note xml:id="com409"><!--lemma: -->
+            <p>oversigt, anmeldelse.</p>
+         </note>
+         <!-- <note xml:id="com600" ><!-\-<hi rend="italic">Personen</hi> vinder aldrig ved Sligt: -\->
+            <p>selvros???, se Holger nr. XIX</p>
+         </note>-->
+         <note xml:id="com400"><!--lemma: bekiendte Angelsaxer-->
+            <p>kender af det angelsaksiske; her: Grundtvig om sig selv.</p>
+         </note>
+         <note xml:id="com601"  changes="corr"><!--lemma: -->
+            <p>ganske vist.</p>
+         </note>
+         <div type="litList">
+            <head xml:id="docIn1">Anvendt litteratur</head>
+           <list type="litList">
+            <!--<item>Snorres Edda, se Snorre Sturluson <rs type="title" key="title122"><hi rend="italic">Den yngre Edda</hi></rs></item>-->           
+            <item>Creuzer, Georg Friedrich (1810-1812) <hi rend="italic"><rs type="title" key="title5393">Symbolik und Mythologie der alten Völker, besonders der Griechen</rs>,</hi> 1-4. Leipzig &amp; Darmstadt</item>
+              <item>Ettmüller, Ernst Moritz Ludwig overs. (1840) <rs type="title" key="title5388"><hi rend="italic">Beowulf. Heldengedicht des achten Jahrhunderts. Zum ersten Male aus dem Angelsächsischen in das Neuhochdeutsche stabreimend übersetzt</hi></rs>. Zürich</item>
+              
+              <item>Grimm, Jacob (1841) <rs type="title" key="title5425">&#x201C;Sintarfizilo&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title5424">Zeitschrift für deutsches Alterthum</rs>,</hi> bind 1, s. 2-6. Leipzig</item>
+            <item><span type="proofread"/>Grundtvig, N.F.S. (1820) <rs type="title" key="title326"><hi rend="italic">Bjowulfs Drape. Et Gothisk Helte-Digt fra forrige Aar-Tusinde af Angel-Saxisk paa Danske Riim</hi></rs>. København</item>
+            <item><span type="proofread"/>Grundtvig, N.F.S. (1845) <rs type="title" key="title96"><hi rend="italic">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</hi></rs>. København</item>
+              <item>Haarder, Andreas overs. (2001) <hi rend="italic"><rs key="title387" type="title">Sangen om Bjovulf</rs>.</hi> København</item>
+              <item><span type="proofread"/>Hickes, George &amp;   (1705) <rs type="title" key="title4403">“[Finnsburh Fragment]”</rs> i <hi rend="italic"><rs type="title" key="title3561">Antiquæ Literaturæ Septentrionalis libri duo. Quorum primus Georgii Hickesii S.T.P. Linguarum Vett. Septentrionalium Thesaurum Grammatico-Criticum &amp; Archæologicum</rs>,</hi>  1-2, s. 192-193. Oxford</item>
+              <item><span type="proofread"/>Kemble, John Mitchell udg. (1835) <rs type="title" key="title4937"><hi rend="italic">The Anglo-Saxon Poems of Beowulf, the Travellers Song and the Battle of Finnesburh</hi></rs>. London</item>
+            <item>Kemble, John Mitchell overs. (1837) <hi rend="italic"><rs type="title"
+                        key="title5386">A Translation of the Anglo-Saxon Poem of Beowulf
+                     [...]</rs>.</hi> London</item>
+            <item><span type="proofread"/>Klaeber, Friederich udg. (2008) <rs type="title" key="title3379"><hi rend="italic">Klaeber's Beowulf and the Fight af Finnsburg</hi></rs>, udg. R.D. Fulk, Robert E. Bjork &amp; John D. Niles, 4. udg. Toronto &amp; Buffalo &amp; London</item>
+            <item>Leo, Heinrich (1839) <hi rend="italic"><rs type="title" key="title5387">Bëówulf,
+                        dasz älteste deutsche, in angelsächsischer Mundart erhaltene,
+                        Heldengedicht</rs>. </hi>Halle</item>
+            <item><span type="proofread"/>Mau, Edvard (1879) <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs>,</hi> 1-2. København</item>
+              <item>Saxo Grammaticus (2005) <rs type="title" key="title2955"><hi rend="italic">Gesta
+                        Danorum</hi></rs>, da. Danmarkshistorien, udg. Karsten Friis-Jensen &amp; overs.
+                  Peter Zeeberg, 1-2. København</item>
+               <item><span type="proofread"/>Thorkelin, Grímur Jónsson udg. (1815) <hi rend="italic"><rs type="title" key="title1855">De Danorum Rebus Gestis Secul. III &amp; IV. Poëma Danicum Dialecto Anglosaxonica. Ex Bibliotheca Cottoniana Musaei Britannici</rs>. </hi>København</item></list></div>
+      </body>
+   </text>
+</TEI>

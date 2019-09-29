@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc" type="application/relax-ng-compact-syntax"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Høstgildet</title>
+      <title rend="shortForm">Høstgildet</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Victoria Siersbæk</editor>
+      <editor role="editionPhilologist">Klaus Nielsen</editor>
+      <editor role="student">Kirsten Vad</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.6</idno>
+               <idno type="technic">1.6.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>20 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2015-05-01">www.grundtvigsværker.dk, version 1.6, 1. maj 2015</date>
+         </publicationStmt>       
+       <notesStmt>
+            <note xml:id="thisFile" target="1815_262_txt.xml" type="txt">Læsetekst</note>
+            <note target="1815_262_com.xml" type="com">Punktkommentar</note>
+            <note target="1815_262_intro.xml" type="intro">Indledning</note>
+            <note target="1815_262_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+         <sourceDesc>
+            <bibl>
+               <title type="main">Nyeste Skilderie af Kj&#x00F8;benhavn</title>
+               <title type="part">H&#x00F8;stgildet</title>
+               <author>Nicolai Frederik Severin Grundtvig</author>
+               <pubPlace>K&#x00F8;benhavn</pubPlace>
+               <publisher>J. Werfel</publisher>
+               <date>1815</date>
+            </bibl>            
+            <listWit xml:id="emendation">
+               <witness n="262" xml:id="A">
+                  <desc>F&#x00F8;rstetrykket</desc>
+                  <num>1815</num>
+               </witness>
+               <witness n="269" xml:id="B">
+                  <desc>Anden udgave</desc>
+                  <num>1815</num>
+               </witness>
+            </listWit>            
+            <listWit xml:id="pageNumber">
+               <witness xml:id="PS">
+                  <desc>Poetiske Skrifter</desc>
+                  <num>3</num>
+               </witness>  
+               <witness xml:id="US">
+                  <desc>Udvalgte Skrifter</desc>
+                  <num>3</num>
+               </witness>
+            </listWit>
+         </sourceDesc>
+    </fileDesc>      
+    <profileDesc>
+      <textClass>
+         <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+            <term>lyrik</term>
+            <term>digte</term>
+            <term>lejlighedsdigte</term>
+          </classCode>
+          <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+              <term>fødselsdag</term>
+              <term>kongehuset</term>
+          </keywords>
+      </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+
+      <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+         <change who="VS" xml:id="VS" when="2014-07-17">indføre rettelser fra 1 kollation</change>
+         <change who="VS" when="2014-07-23">tilføjet seg'er</change>
+         <change who="VS" when="2014-07-24">tilføjer billeder fra scannede filer</change>
+         <change who="KN" when="2014-08-11">Revideret formalia i filen</change>
+         <change who="KN" when="2014-08-12">Revideret formalia i filen</change>
+         <change who="KN" when="2014-08-12">Indtastet KV's 3. kollationering i filen.</change>
+         <change who="KN" when="2014-08-12">Indtastet rettelser i txt og com efter egen gennemgang og revision.</change>
+         <change who="KN" when="2014-11-11">com60 tilføjet</change>
+         <change who="KN" when="2014-12-08">de sidste opmærkninger tilføjet; klar til R1</change>
+         <change who="KN" when="2014-12-17">Retur fra R1; rettelser og tilføjelser foretaget</change>
+         <change who="KN" when="2015-01-28">Retur fra R3; tekstrettelsens kilde ændret fra GV til B - og B tilføjet som listWit; nye seg'er tilføjet com80-83</change>
+
+      </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">  
+      
+      <pb type="periText" facs="1815_262_fax001.jpg"/>
+    <body>     
+     
+	
+
+       <div type="[Tekst]">		
+<pb type="text" facs="1815_262_fax002.jpg" ed="A" subtype="column" n="1361" rend="supp"/>
+       <pb type="edition" ed="PS" n="515"/>
+          <pb type="edition" ed="US" n="247"/>
+
+          <head rend="1">H&#x00F8;stgildet.</head>
+          
+          <lg n="1"> 
+             <l>Kling, min Harpe, over Vangen</l>
+             <l>I den svale Aftenstund!</l>
+             <l>Favn og gjem og svar til Klangen</l>
+             <l>Gamle <placeName key="fak14">Danmarks</placeName> B&#x00F8;gelund!</l>
+             <l><seg n="com1" type="com">Sjunger</seg>, <seg n="com1" type="com">sjunger</seg> Dannekvinder!</l>
+             <l><seg n="com2" type="com">Kv&#x00E6;der</seg>, mens I Krandsen binder</l>
+             <l>Lydt i L&#x00F8;vfald som i Mai!</l>
+          </lg>
+
+          <lg n="2">
+             <l><seg n="com3" type="com">Kommer</seg>, <seg n="com3" type="com">kommer</seg> Danne-Kvinder!</l>
+             <l>I som gr&#x00E6;d for <seg n="com4" type="com">bange Kaar</seg>,</l>
+             <l>I som saae med Fryd Kj&#x00E6;rminder</l>
+             <l>Blaane s&#x00F8;dt i tidlig Vaar!</l>
+             <l><seg n="com5" type="com">F&#x00F8;lger</seg> mig paa Skjalde-Gangen</l>
+             <l>Under Harpeslag i Vangen,</l>
+             <l>I den Danske Urtegaard!</l>
+          </lg>
+
+          <lg n="3">
+             <l><pb type="edition" ed="US" n="248"/><seg n="com6" type="com">Gr&#x00E6;der</seg> ei fordi vi skue</l>
+             <l>L&#x00F8;vet guult i Efteraar!</l>
+             <l><placeName key="fak14">Danmark</placeName> <seg n="com7" type="com">og</seg>, den gamle Frue,</l>
+             <l>Graaner selv jo Aar for Aar,</l>
+             <l>Prange, visne maae jo L&#x00F8;vet,</l>
+             <l>Skinne, falme maae jo St&#x00F8;vet,</l>
+             <l>Selv ei Soel har evig Glands.</l>
+          </lg>
+          
+          <lg n="4">
+             <l><pb type="text" facs="1815_262_fax002.jpg" ed="A" subtype="column" n="1362" rend="supp" />Men, o <seg n="com8" type="com">seer</seg>, o <seg n="com8" type="com">seer</seg> med Gl&#x00E6;de</l>
+             <l>Gr&#x00F8;nningen i Efteraar!</l>
+             <l><pb type="edition" ed="PS" n="516"/><seg n="com8" type="com">Seer</seg>, o <seg n="com8" type="com">seer</seg> de Roser sp&#x00E6;de</l>
+             <l><seg n="com9" type="com">End</seg> i <placeName key="fak14">Danmarks</placeName> Urtegaard!</l>
+             <l><seg n="com10" type="com">Lover</seg> Gud, I Danne-Kvinder!</l>
+             <l>For de tidlige Kj&#x00E6;rminder,</l>
+             <l>For de sene Rosenskud!</l>
+          </lg>
+
+          <lg n="5">
+             <l><hi rend="spaced"><placeName key="fak14">Danmark</placeName>!</hi> gamle Konge-Frue,</l>
+             <l>Med det s&#x00F8;lverhvide Haar!</l>
+             <l>Pynt kun op din Ammestue!</l>
+             <l>Times skal dig sjeldne Kaar,</l>
+             <l>Rul kun op din <seg n="com11" type="com">Stamme-Tavle</seg>!</l>
+             <l>Thi <rs type="bible" subtype="bibleStart" key="1 Mos 21,7" rend="allusion" n="bible1"/>som <persName key="pe2449">Sara</persName> <seg type="com" n="com80">skalst</seg> du avle</l>
+             <l>S&#x00F8;nnen fiin i Efter-Aar.<rs type="bible" subtype="bibleEnd" key="1 Mos 21,7" rend="allusion" n="bible1" /></l>
+          </lg>
+
+          <lg n="6">
+             <l>F&#x00F8;de <seg type="com" n="com80">skalst</seg> Du Adelsfrue</l>
+             <l>S&#x00F8;nnen Dansk og fiin og <seg n="com50" type="com">bold</seg>,</l>
+             <l>Glad du skal i Ham beskue</l>
+             <l><rs type="myth" key="myth137">Fredegod</rs> og <rs type="myth" key="myth138">Dan</rs> og <rs type="myth" key="myth67">Skjold</rs>,</l>
+             <l><rs type="bible" key="Luk 1,42" rend="allusion">Dig skal alle Kvinder <seg n="com12" type="com">love</seg></rs>,</l>
+             <l>Alle Fugle skal i Skove</l>
+             <l>Sjunge om det Underv&#x00E6;rk.</l>
+          </lg>
+
+          <lg n="7">
+             <l><rs type="title" key="title77"><hi rend="spaced"><placeName key="fak14">Danmark!</placeName></hi> deiligst Vang og V&#x00E6;nge,</rs></l>
+             <l>Indelukt med B&#x00F8;lgen blaa!</l>
+             <l><pb type="text" facs="1815_262_fax003.jpg" ed="A" subtype="column" n="1363"/>Smykke skal sig dine Enge</l>
+             <l>H&#x00F8;itidsfuld med <seg n="com13" type="com">Blommer</seg> smaa</l>
+             <l>Og ved Hellig Korses Kilde</l>
+             <l>Blomstre skal i <seg type="com" n="com51">Krinds</seg> saa milde</l>
+             <l>Roserne fra <placeName key="fak300">Golgatha</placeName>.</l>
+          </lg>
+
+          <lg n="8">
+             <l>Kvinder! I som nys med Smerte</l>
+             <l><seg n="com15" type="com">Krused</seg> Fruens <seg n="com16" type="com">Jordeliin</seg>,</l>
+             <l><seg n="com17" type="com">Syer</seg> <seg type="com" n="com70">flink</seg> nu under Kerte</l>
+             <l> <hi rend="spaced"> <seg n="com18" type="com">Christent&#x00F8;i</seg></hi> til S&#x00F8;nnen fiin!</l>
+             <l><pb type="edition" ed="PS" n="517"/><pb type="edition" ed="US" n="249"/><seg n="com52" type="com">Virker</seg> fiint med Guld og Silke</l>
+             <l>Knopper smaa paa Rosenstilke</l>
+             <l>Under hvide <seg type="com" n="com71">Dannebraag</seg>!</l>
+          </lg>
+
+          <lg n="9">
+             <l><seg n="com19" type="com">L&#x00E6;gger</seg>, Dannem&#x00E6;nd, <seg n="com24" type="com">i Lave</seg></l>
+             <l>Eders <seg type="com" n="com72">gamle Kroner</seg> faa!</l>
+             <l><seg n="com20" type="com">Dannishedens</seg> Faddergave</l>
+             <l>Vil den Sp&#x00E6;de ei forsmaae:</l>
+             <l>I sin Manddom vil han smelte</l>
+             <l>For de gamle, gj&#x00E6;ve Helte</l>
+             <l><seg n="com21" type="com">Skuepengen</seg> fiin deraf.</l>
+          </lg>
+
+          <lg n="10">
+             <l><seg n="com22" type="com">Binder</seg>, <seg n="com23" type="com">slynger</seg>, Dannekvinder!</l>
+             <l>H&#x00F8;stens Roser flux i Krands!</l>
+             <l><placeName key="fak14">Danmarks</placeName> Billed vel vi finder</l>
+             <l>Under Sl&#x00F8;r i liflig Glands,</l>
+             <l>Og kan vi det Billed finde,</l>
+             <l>Skal <seg n="com25" type="com">og</seg> Krandsen om dets Tinde</l>
+             <l>Slynge sig i <hi rend="spaced"><placeName key="fak14">Danmarks</placeName> Navn</hi>.</l>
+          </lg>
+
+          <lg n="11">
+             <l>Skal til <seg n="com26" type="com">Marmelsteen</seg> og Farve</l>
+             <l>Vi nu tye med <placeName key="fak14">Danmarks</placeName> Krands,</l>
+             <l>Skal de kolde Stene arve</l>
+             <l><placeName key="fak14">Danmarks</placeName> Kj&#x00E6;rlighed og Glands?</l>
+             <l>Er dog ei en Dannekvinde</l>
+             <l>Kj&#x00E6;rlig, from i Lund at finde,</l>
+             <l>Som kan b&#x00E6;re <placeName key="fak14">Danmarks</placeName> Krands?</l>
+          </lg>
+
+          <lg n="12">
+             <l><seg n="com28" type="com">Kommer!</seg> under <placeName key="fak14">Danmarks</placeName> Krone</l>
+             <l>Sidder from en S&#x00F8;lver-Brud.</l>
+             <l><pb type="text" facs="1815_262_fax003.jpg" ed="A" subtype="column" n="1364" />Hilset vær i Jubeltone</l>
+             <l>Og velsignet, Dronning prud!</l>
+             <l>O, tillad, at Dannekvinder</l>
+             <l>Krandsen om Din Krone <seg type="com" n="com81">vinder</seg></l>
+             <l>Under Skjaldens Harpeslag!</l>
+          </lg>
+
+          <lg n="13">
+             <l><pb type="edition" ed="PS" n="518"/>Kj&#x00E6;rlig, fiin og from i Sinde</l>
+             <l><seg type="com" n="com73">Est</seg> Du som vor Moder blaa,</l>
+             <l><seg type="com" n="com82">Varst</seg> den bedste Dannekvinde</l>
+             <l>Selv i Hyttens dunkle Vraa,</l>
+             <l>Tør ei Dig vi Krandsen r&#x00E6;kke,</l>
+             <l>Vi den maae med Suk nedl&#x00E6;gge</l>
+             <l>Paa den kolde <seg n="com53" type="com">Marmelsteen</seg>.</l>
+          </lg>
+
+          <lg n="14">
+             <l><pb type="edition" ed="US" n="250"/>Held, o Held! som jeg kan skue</l>
+             <l>Grye i Dagning, Glimt af Glands,</l>
+             <l>Ei forsmaaer den Konge-Frue</l>
+             <l>Gamle <placeName key="fak14">Danmarks</placeName> Rosen-Krands,</l>
+             <l>Ei den glimrer, ei den praler,</l>
+             <l>Men den dufter og husvaler</l>
+             <l>Liflig, s&#x00F8;dt i Aftenstund.</l>
+          </lg>
+
+          <lg n="15">
+             <l>Kun med lukde &#x00D8;ielaage</l>
+             <l>Skjalden seer det favre Syn,</l>
+             <l>M&#x00E6;ndene, de er saa kloge,</l>
+             <l><seg n="com29" type="com">Daarer</seg> dog <seg n="com58" type="com">for</seg> <seg n="com30" type="com">Aande-Lyn</seg>,</l>
+             <l>Skjalden kun med Barne-Tunge</l>
+             <l>Sagte vil i Lunden sjunge</l>
+             <l>For de fromme Kvinder faa.</l>
+          </lg>
+
+          <lg n="16">
+             <l>Kvinder! <seg n="com31" type="com">nynner</seg> I kun Sangen</l>
+             <l>Efter Skjaldens Harpeslag!</l>
+             <l><seg n="com32" type="com">Hvisker</seg> det kun rundt i Vangen</l>
+             <l>Hvad der klang paa H&#x00F8;itids-Dag!</l>
+             <l>Det er koldt i Vinterugen,</l>
+             <l>Under Snee dog gr&#x00F8;nnes Rugen,</l>
+             <l>Skyder Blomst i Sommer-Skj&#x00E6;r.</l>
+          </lg>
+
+          <lg n="17">
+             <l>Efterglands af <seg type="com" n="com60"><placeName>Thabors</placeName> Kerte</seg></l>
+             <l>Glimter over B&#x00F8;gelund,</l>
+             <l><pb type="text" facs="1815_262_fax004.jpg" ed="A" subtype="column" n="1365"/><pb type="edition" ed="PS" n="519"/>Og et Gran af <placeName key="fak14">Danmarks</placeName> Hjerte</l>
+             <l>Skjalden fik til Harpe-Bund,</l>
+             <l>I den Bund det s&#x00E6;lsomt klinger,</l>
+             <l>Naar med sine <seg n="com33" type="com">Under-Vinger</seg></l>
+             <l>Duen rører Harpens Str&#x00E6;ng.</l>
+          </lg>
+
+          <lg n="18">
+             <l><seg n="com34" type="com">Tvivler</seg> kun, I M&#x00E6;nd saa kloge!</l>
+             <l>Selv jeg tvivler <hi rend="spaced">som en Mand,</hi></l>
+             <l>Naar sig <hi rend="spaced">over</hi> <seg type="com" n="com74">Dannebraage</seg></l>
+             <l>Øiet l&#x00F8;fter med Forstand;</l>
+             <l>Men jeg troer, den Lyd som klinger</l>
+             <l>Under Duens Luevinger</l>
+             <l>Spotter min og eders <seg type="com" n="com83">Vid</seg>.</l>
+          </lg>
+
+          <lg n="19">
+             <l>Staae da nu de Roser silde,</l>
+             <l>Som vi see, i Urtegaard,</l>
+             <l>Har Maria <seg type="com" n="com84">F&#x00F8;dsels-Gilde</seg></l>
+             <l>I <seg type="com" n="com36">sit andet Brude-Aar</seg>,</l>
+             <l><pb type="edition" ed="US" n="251"/>Nu, saa maae de Roser sene</l>
+             <l>Sig dog vel i Krands forene</l>
+             <l>Paa <hi rend="spaced"><persName key="pe248">Marias</persName> F&#x00F8;dsels-Dag.</hi></l>
+          </lg>
+
+          <lg n="20">
+             <l>Lad da Kvinderne i Vangen</l>
+             <l>Sanke kun de Roser smaa,</l>
+             <l>Efternynne Gaadesangen,</l>
+             <l>Gj&#x00E6;tte som de bedst forstaae!</l>
+             <l>Dannem&#x00E6;nd! imedens binder</l>
+             <l>Vi en Krands af blaa Kj&#x00E6;rminder</l>
+             <l>Til vor Dronning fiin og from.</l>
+          </lg>
+
+          <lg n="21">
+             <l>Troer I ei, de er at finde?</l>
+             <l><seg type="com" n="com54">End</seg> i H&#x00F8;st en Lund jeg veed,</l>
+             <l>Hvor saamangen blaa Kj&#x00E6;rminde</l>
+             <l>Blomstrer <seg n="com55" type="com">end</seg> i <seg n="com37" type="com">Luun</seg> og Fred,</l>
+             <l><pb type="edition" ed="PS" n="520"/><hi rend="spaced"><persName key="pe237">Saxo</persName></hi> den Kj&#x00E6;rminde-Have</l>
+             <l>Lukkede med <seg n="com38" type="com">Romer-Stave</seg>,</l>
+             <l>N&#x00F8;glen dog har <placeName key="fak14">Danmark</placeName> gjemt.</l>
+          </lg>
+
+          <lg n="22">
+             <l><seg type="com" n="com56">F&#x00F8;lger</seg> mig da, Fr&#x00E6;nder bolde!</l>
+             <l>Ind i <hi rend="spaced"><placeName key="fak14">Danmarks</placeName></hi> Rosenlund,</l>
+             <l> <pb type="text" facs="1815_262_fax004.jpg" ed="A" subtype="column" n="1366"/>Der H&#x00F8;stgildet vi vil holde</l>
+             <l>I den svale <app type="corrNote" select="yes"><lem wit="B">Aftenstund</lem><rdg wit="A">Aftenstuud</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>
+             <l>Takke Gud for <hi rend="spaced">Markens</hi> Gr&#x00F8;de,</l>
+             <l>Bede, Han den vil gjenf&#x00F8;de,</l>
+             <l>Atter i det n&#x00E6;ste Aar!</l>
+          </lg>
+
+          <lg n="23">
+             <l>Krandsen vi i Lunden binde,</l>
+             <l>B&#x00E6;re vi til Kongens Gaard,</l>
+             <l><seg n="com40" type="com">Fredegodes Gemalinde</seg></l>
+             <l>Sikkerlig den ei forsmaaer,</l>
+             <l>Og <hi rend="spaced"><seg n="com41" type="com">omsat</seg></hi> med <seg n="com57" type="com">Danske Stave</seg></l>
+             <l>Skal da vor Kj&#x00E6;rminde-Have</l>
+             <l>Kalde sig <hi rend="spaced">Marien-Lund.</hi></l>
+          </lg>
+
+          <p rend="firstIndentRight"><hi rend="spaced">N. F. S. Grundtvig.</hi></p>  
+
+       </div>
+    
+    </body>
+   </text>
+</TEI>

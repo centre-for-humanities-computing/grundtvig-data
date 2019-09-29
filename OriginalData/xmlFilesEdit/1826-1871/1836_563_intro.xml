@@ -1,0 +1,780 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</title>
+        <title rend="shortForm">Det Danske Fiir-Kl&#x00F8;ver</title>
+        <author>Henrik Yde</author>
+        <editor role="editor1">Holger Berg</editor>
+        <editor role="editor2">dr.theol. K.E. Bugge</editor>
+        <editor role="editor3">Johnny Kondrup</editor> 
+        
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.6.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>9 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1836_563_txt.xml">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" type="intro" target="1836_563_intro.xml">Indledning</note>
+      </notesStmt>
+
+<!--
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+           
+-->
+      
+        <sourceDesc><p /></sourceDesc>
+      
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="KSR" who="KSR" when="2011-10-07">skabelon</change> 
+      <change who="HY" when="2011-11-04">Rettet tei-header efter evne.</change>
+      <change who="HY" when="2011-11-17">Rettet til version 0.9.</change>
+      <change who="HY" when="2011-12-05">Rettet efter NHBs og Bugges redaktionerer. Indsat unicodes</change>
+      <change who="HY" when="2011-12-09">Rettet efter JKs redaktion. </change>
+      <change who="HY" when="2012-03-02">Sammensatte &#x00E5;rstal skrevet helt ud</change>
+      <change who="HY" when="2012-03-26">korrigeret sm&#x00E5;ting</change>
+      <change who="KSR" when="2012-05-02">docin</change>
+      <change who="HY" when="2012-05-02">Rettet en fejl</change>
+      <change who="HY" when="2012-08-16">&#x00C6;ndret versionsnummer til 1.1</change>
+      <change who="HY" when="2012-10-19">slette place-opm&#x00E6;rkninger</change>
+      
+        <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="NHB" when="2015-03-20">indsat div om afsnittet Den folkelige højskole</change>
+      
+    </revisionDesc>
+  </teiHeader>
+    <text type="intro">
+        <body>
+      <div>
+        
+        <head xml:id="docIn1">Det Danske Fiir-Kl&#x00F8;ver</head>
+        
+        <p rend="noIndent">
+<hi rend="italic">
+<rs type="title" key="title170">Det Danske
+              Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</rs>
+</hi> fra 1836 omtales i
+          eftertiden normalt som Grundtvigs f&#x00F8;rste
+          h&#x00F8;jskoleskrift, i hvert fald det f&#x00F8;rste h&#x00F8;jskoleskrift, trykt som
+          bog.</p>
+        
+        <note type="readMore">
+          <p rend="noIndent">Forud for det ligger talrige udkast og kladder, hvoraf to vigtige
+            senere er udgivet: Opsatsen <hi rend="italic">
+<rs type="title" key="title112">Universitetet i London og Academiet i Sor&#x00F8;</rs>
+</hi> fra 1827 i <hi rend="italic">
+<rs key="title465" type="title">Grundtvigs skoleverden i tekster og
+                udkast</rs>
+</hi> (1968) og det fyldige manuskript <hi rend="italic">
+<rs key="title449" type="title">Statsm&#x00E6;ssig Oplysning</rs>
+</hi> fra 1834,
+            udgivet 1983 af <persName key="pe384">K.E. Bugge</persName> og <persName key="pe477">Vilhelm Nielsen</persName>.</p>
+        </note>
+        
+        <p rend="firstIndent">L&#x00E6;st med disse briller kan det overraske, at begrebet om den folkelige
+          eller patriotiske eller danske h&#x00F8;jskole f&#x00F8;rst introduceres midtvejs i skriftet (p&#x00E5; side 40
+          ud af 83 sider), og at det ikke indg&#x00E5;r i v&#x00E6;rkets underrubrikker: &#x201C;Kongen og
+          Folket&#x201D; og &#x201C;F&#x00E6;derne-Landet og Moders-Maalet&#x201D;.</p>
+      </div>
+        <div>
+        <head xml:id="docIn2">En &#x201C;h&#x00F6;iere Anstalt for folkelig Dannelse og for praktisk Duelighed&#x201D;</head>
+        
+        <p rend="noIndent">Endnu f&#x00F8;r Grundtvig formulerede
+          begrebet om en dansk eller folkelig h&#x00F8;jskole, pegede han i
+          &#x201C;Indledning&#x201D; til <hi rend="italic"><rs key="title158" type="title">Nordens Mythologi</rs></hi> (1832) i almindelighed p&#x00E5; behovet for en ny
+          type l&#x00E6;reanstalt:</p>
+        
+          <p rend="quote">&#x201C;Et <hi rend="italic">Borgerligt og Ridderligt Academie,</hi> eller hvad Man vil kalde en saadan h&#x00F6;iere Anstalt for folkelig Dannelse og for praktisk Duelighed i alle Hoved-Fag, det er aabenbar det store Savn i alle Lande, der maa afhjelpes, og det snart, baade for Borger-Samfundets og for L&#x00E6;rdommens Skyld&#x201D; (<hi rend="italic">
+<rs key="title158" type="title">Nordens Mythologi</rs>
+</hi> 1832, s. 28).</p>
+        
+        <note type="readMore">
+          <p rend="noIndent">En tilsvarende formulering findes i et utrykt udkast fra 1830 eller
+            1831, se <rs type="title" key="title445">Bugge (1965)</rs>, s. 235. Om
+            Sor&#x00F8;-tankens fremv&#x00E6;kst hos Grundtvig siden
+            1810 og tankens modning efter 1821, se generelt sst., s. 229-236.</p>
+        </note>
+        
+        <p rend="firstIndent">Grundtvig erkl&#x00E6;rede samtidig, at
+          han ikke var: </p>
+        
+          <p rend="quote">&#x201C;nogen Ven af Rigs-Dage, men da de h&#x00F6;re til Dagens Orden, skulde man
+          dog indsee, at uden en hensigtsm&#x00E6;ssig Dannelse af alle dem, der skal kunne
+          v&#x00E6;re Medlemmer af Folke-Forsamlingen, maae de blive en Ulykke for Staten&#x201D; (1832, s.
+          28).</p>
+        
+        <p rend="firstIndent">Her rettede disse tanker sig generelt mod de europ&#x00E6;iske
+          nationer, der i 1830 under liberalismens faner havde gennemlevet revolutioner og
+          revolution&#x00E6;re opstande. Men tankerne tog ogs&#x00E5; sigte p&#x00E5; de heraf
+          inspirerede r&#x00F8;relser i Danmark og i hertugd&#x00F8;mmerne Slesvig og Holsten.</p>
+      </div>
+      
+      <div>
+        <head xml:id="docIn3">R&#x00E5;dgivende st&#x00E6;nderforsamlinger</head>
+        
+        <p rend="noIndent">Heller ikke den regerende enev&#x00E6;ldige <persName key="pe96">Frederik
+            6.</persName> var nogen ven af rigsdage. Og det var et fors&#x00F8;g p&#x00E5; at tage
+          vinden ud af sejlene p&#x00E5; det liberale krav om en fri forfatning eller
+          &#x2018;konstitution&#x2019;, at han den 28. maj 1831 udstedte en forordning om
+          indf&#x00F8;relse af r&#x00E5;dgivende provinsialst&#x00E6;nder
+          (st&#x00E6;nderforsamlinger) i Danmark og
+          hertugd&#x00F8;mmerne. Herved ville han ogs&#x00E5; forebygge de voldsomheder, under
+          hvilke tilsvarende frihedskrav var blevet fremf&#x00F8;rt flere steder i Europa siden 1830.</p>
+        <p rend="firstIndent">Dertil kom udenrigspolitiske hensyn. Som medlem af Det Tyske Forbund
+          var Holsten i 1815 blevet stillet en
+          st&#x00E6;nderforfatning efter preussisk forbillede i udsigt, og under indtryk af
+          Julirevolutionen i Frankrig 1830 blev der nu i begge
+          hertugd&#x00F8;mmer stillet krav herom. For at indfri sin forpligtelse over for Holsten, hvor <persName key="pe96">Frederik 6.</persName> jo
+          var hertug, og samtidig fastholde rigets enhed besluttede kongen at indf&#x00F8;re
+          r&#x00E5;dgivende st&#x00E6;nderforsamlinger ikke blot for Holsten, men ogs&#x00E5; for hertugd&#x00F8;mmet Slesvig og for selve konged&#x00F8;mmet: Jylland og &#x00F8;erne. </p>
+        
+        <note type="readMore"> <p rend="noIndent">Om disse udenrigspolitiske aspekter, se n&#x00E6;rmere i indledningen til
+              Grundtvigs p&#x00E6;dagogiske og politiske skrifter i
+              <rs type="title" key="title519">
+<hi rend="italic">Schriften in Auswahl</hi>
+</rs>
+            (2010), s. 367-370.</p>
+</note>
+        
+        <p rend="firstIndent">Grundtvig havde fulgt de
+          europ&#x00E6;iske begivenheder ganske n&#x00F8;je. I sin lille bog <rs key="title446" type="title"><hi rend="italic">Politiske Betragtninger med Blik paa Danmark og
+              Holsteen,</hi>
+</rs> skrevet 1830 og udgivet januar 1831, henviste han i
+          indledningskapitlet med undertitlen: &#x201C;Om Opr&#x00F8;r&#x201D; misbilligende til
+          Julirevolutionen i Paris, augustopstanden i Bruxelles mod holl&#x00E6;nderne, som i november f&#x00F8;rte
+          til Belgiens uafh&#x00E6;ngighed, og til
+          novemberopstanden i Warszawa, der blev sl&#x00E5;et
+          h&#x00E5;rdt ned af Rusland februar-september 1831.
+            Grundtvig var en varm fortaler for enev&#x00E6;lden,
+          specielt den danske, og s&#x00E5; l&#x00E6;nge denne bestod, vendte han sig generelt imod
+          demokratiske statsformer og konstitutionelle monarkier. </p>
+        <p rend="firstIndent">Men <hi rend="italic">inden for</hi> den enev&#x00E6;ldige stat havde
+          kongen if&#x00F8;lge Grundtvig brug for embedsm&#x00E6;nd
+          og r&#x00E5;dgivere med sund, praktisk forstand. Og s&#x00E5;danne m&#x00E6;nd skulle ikke
+          n&#x00F8;dvendigvis findes blandt universitetsfolk, men snarere blandt godsejere,
+          k&#x00F8;bm&#x00E6;nd og andre, der havde mindre brug for klassisk l&#x00E6;rdom og mere
+          behov for den slags kundskaber, som kunne opn&#x00E5;s p&#x00E5; en alternativ
+          &#x201C;H&#x00F8;iskole for folkelig Videnskabelighed og borgerlig Uddannelse&#x201D;
+            (<rs key="title446" type="title"><hi rend="italic">Politiske
+            Betragtninger</hi>
+</rs> 1831, s. 50 f.). Det danske ord
+          &#x2018;h&#x00F8;jskole&#x2019; bliver siden Grundtvig ofte
+          associeret med &#x2018;folkeh&#x00F8;jskole&#x2019;, men anvendtes i samtiden om
+          universiter og h&#x00F8;jere l&#x00E6;reanstalter. Ordet er indf&#x00F8;rt fra tysk, hvor
+          &#x2018;Hochschule&#x2019; bruges om l&#x00E6;reanstalter, b&#x00E5;de universiteter og
+          akademier, der tilbyder h&#x00F8;jere videreg&#x00E5;ende undervisning.</p>
+        <p rend="firstIndent">Grundtvigs inspiration til disse tanker
+          om praktisk sans og brugbar viden kom ikke mindst fra tre sommerbes&#x00F8;g i England
+          1829-1831. D&#x00E9;r havde han oplevet anderledes levende universitetsmilj&#x00F8;er end
+          K&#x00F8;benhavns og i det hele taget et anderledes dynamisk samfund end det
+          stillest&#x00E5;ende Danmark under <persName key="pe96">Frederik 6.s</persName>
+          enev&#x00E6;lde.</p>
+        <p rend="firstIndent">I det f&#x00F8;lgende skal is&#x00E6;r den samtidshistoriske baggrund for
+          disse tanker opridses n&#x00E6;rmere.</p>
+        
+      </div>
+      
+      <div>
+        <head xml:id="docIn4">Den f&#x00F8;rste st&#x00E6;nderforsamling 1835-1836</head>
+        
+        <p rend="noIndent">De k&#x00F8;benhavnske deputerede til den f&#x00F8;rste st&#x00E6;nderforsamling for &#x00F8;erne blev valgt 17.-24. november 1834. Under indtryk af r&#x00F8;ret omkring valgene havde <persName key="pe138">B.S. Ingemann</persName> den 25. december 1834 skrevet til sin ven Grundtvig:</p>
+        <p rend="quote">&#x201C;Som jeg h&#x00F8;rer, skal den politiske Stemning i Hovedstaden i
+          den senere Tid r&#x00F8;be en n&#x00E6;sten vulkansk Gj&#x00E6;ring, og
+          Kandest&#x00F8;ber-Koterierne [-partierne, klikerne] tage st&#x00E6;rk
+          Overhaand [&#x0085;]. Gjensidig Aabenhj&#x00E6;rtighed mellem Hoved og Krop
+          var nu vist &#x00F8;nskeligst&#x201D; (<rs key="title447" type="title">
+<hi rend="italic">Grundtvig og Ingemann</hi> 1882</rs>, s. 169).</p>
+        
+        <p rend="firstIndent">Grundtvig, som sad begravet i
+          middelalderhistoriske studier, svarede f&#x00F8;rst &#x201C;Paaske-L&#x00F8;rdag
+          1835&#x201D;, dvs. 18. april &#x00E5;ret efter, og da i meget almene vendinger:
+          &#x201C;Kroppen&#x201D;, de deputerede til st&#x00E6;nderforsamlingen, og
+          &#x201C;Hovedet&#x201D;, regeringen, n&#x00E6;rede urealistiske forventninger til
+          hinanden. Emnet synes ikke at have optaget ham synderligt p&#x00E5; dette tidspunkt.</p>
+        <p rend="quote">&#x201C;Men jeg har dog godt Haab, og vilde blot &#x00F8;nske
+          [&#x0085;] vi saa havde et ordentligt <hi rend="italic">Sor&#x00F8;
+            Akademi</hi> [&#x0085;], hvor den Ungdom, der har Lyst til at handle,
+          kunde l&#x00E6;re baade at t&#x00E6;nke, at tale og at handle dansk&#x201D; (<rs key="title447" type="title">
+<hi rend="italic">Grundtvig og Ingemann</hi>
+</rs> 1882,
+          s. 172 f.).</p>
+        <p rend="firstIndent">
+<persName key="pe138">Ingemann</persName> havde boet i Sor&#x00F8; siden 1821 og var lektor og titul&#x00E6;r professor ved akademiet.</p>
+        <p rend="firstIndent">Den f&#x00F8;rste st&#x00E6;nderforsamling for &#x00F8;erne fandt
+          omsider sted i Roskilde fra den 1. oktober 1835 til den
+          26. februar 1836. Provinsialst&#x00E6;nderne for Holsten m&#x00F8;dtes samtidig i Itzehoe
+          og st&#x00E6;nderne for Jylland og Slesvig lidt senere i hhv. Viborg og Slesvig by.
+          St&#x00E6;nderforsamlingerne tr&#x00E5;dte derefter sammen hvert andet &#x00E5;r til og
+          med 1848. Grundtvig var ikke med &#x2013; han var ikke
+          valgbar &#x2013; og betragtede i begyndelsen foretagendet med skepsis. </p>
+        
+        <note type="readMore">
+          <p rend="noIndent">Da Grundtvig ikke var ejendomsbesidder,
+            var han ikke valgbar og havde heller ikke valgret. Betingelsen for at have valgret var
+            bl.a. besiddelse af fast ejendom af en vis st&#x00F8;rrelse eller v&#x00E6;rdi, mens
+            betingelsen for at v&#x00E6;re valgbar var besiddelse af fast ejendom af den dobbelte
+            st&#x00F8;rrelse. Ud fra dette og andre kriterier var der i kongeriget og
+            hertugd&#x00F8;mmerne tilsammen ca. 32.000 stemmeberettigede v&#x00E6;lgere, 2,8 % af
+            befolkningen. </p>
+        </note>  
+        
+        </div>
+      
+      <div>
+        <head xml:id="docIn5">En fri konge og en fri folkestemme</head>
+        <p rend="noIndent">Grundtvigs indstilling til de
+          r&#x00E5;dgivende st&#x00E6;nderforsamlinger &#x00E6;ndrede sig imidlertid hurtigt fra
+          skepsis til varm tilslutning. Han abonnerede p&#x00E5; <rs key="title510" type="title">
+<hi rend="italic">Tidende for Forhandlingerne ved Provindsialst&#x00E6;nderne for
+              Sj&#x00E6;llands, Fyens og Lolland-Falsters Stifter samt for Island og
+              F&#x00E6;r&#x00F6;erne</hi>
+</rs> &#x2013; herefter: <rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> &#x2013; og fulgte
+          gennem l&#x00E6;sning af dette blad, der udkom ugentligt under forsamlingen, ivrigt med i
+          debatterne. </p>
+          <p rend="firstIndent">Hvad der gjorde s&#x00E6;rligt indtryk p&#x00E5; ham, var det
+            forhold, at forhandlingerne i &#x2018;folker&#x00E5;det&#x2019; var <hi rend="italic">mundtlige,</hi> og at bonderepr&#x00E6;sentanterne fremtr&#x00E5;dte ganske uimponerede i en forsamling, der ellers overvejende bestod af
+          godsejere, storborgere, veltalende intellektuelle og embedsm&#x00E6;nd. </p>
+        
+        <note type="readMore">
+          <p rend="noIndent">Blandt de 70 deputerede i Roskilde,
+            b&#x00E5;de de kongeudpegede og de valgte, kan ni betegnes som b&#x00F8;nder eller
+            repr&#x00E6;sentanter for det agrare sm&#x00E5;borgerskab, hvis man heri medregner en
+            m&#x00F8;ller, en f&#x00E6;steg&#x00E5;rdsmand og nogle sognefogeder. Jf. listen over
+            deputerede i <rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1835-1836, s. I f.</p>
+        </note>
+        
+          <p rend="firstIndent">Han s&#x00E5; heri en statsm&#x00E6;ssig, verdslig parallel til sin
+            &#x2018;magel&#x00F8;se opdagelse&#x2019; fra 1825 af, at det ikke var Bibelen, men
+            &#x2018;det levende ord&#x2019;, dvs. den mundtligt overleverede apostolske
+            trosbekendelse ved d&#x00E5;ben samt indstiftelsesordene ved nadveren, der sikrede
+            kontinuiteten i kristenheden tilbage til de f&#x00F8;rste kristne.</p> 
+        <p rend="firstIndent">Og nu fandt han ogs&#x00E5;, som han begejstret skrev efter afslutningen p&#x00E5;
+          den f&#x00F8;rste st&#x00E6;nderforsamling for&#x00E5;ret 1836, at Danmark omsider havde genvundet sin
+          oprindelige forfatning: &#x201C;<hi rend="italic">&#x2018;Kongens
+            Ene-Herred&#x00F8;mme&#x2019;</hi> og <hi rend="italic">&#x2018;Folkets aabenlydte
+            Stemme-Frihed&#x2019;</hi> er Rigets <hi rend="italic">Arilds-Lov</hi>&#x201D; (<hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver</rs>
+</hi>, s. 13). Ved
+          &#x201C;Stemme-Frihed&#x201D; forst&#x00E5;s der her alene talefrihed, retten til at rejse
+          en mundtlig debat, ikke retten til at deltage i en afstemning, det v&#x00E6;re sig til et
+          parlament eller til organer med blot r&#x00E5;dgivende kompetence.</p>
+        <p rend="firstIndent">Det f&#x00F8;rste skridt til at genvinde denne &#x2018;oprindelige
+          forfatning&#x2019; var indf&#x00F8;relsen af enev&#x00E6;lden i 1660-1661; hermed satte
+          folket kongen fri af alle h&#x00E5;ndf&#x00E6;stninger, s&#x00E5; han kunne regere uden
+          hensyn til adelens og gejstlighedens s&#x00E6;rinteresser. Det andet og endelige skridt
+          var indf&#x00F8;relsen af &#x2018;folker&#x00E5;det&#x2019;. Hermed kunne nu en
+          &#x2018;fri folkestemme&#x2019; r&#x00E5;dgive en &#x2018;fri konge&#x2019;.</p>
+        
+        <p rend="firstIndent">Man kunne f&#x00E5; den tanke, at synspunktet var egenartet
+          grundtvigsk. Men for det f&#x00F8;rste var Grundtvig
+          opvokset i 1700-tallets kontraktteoretiske &#x201C;ideelle forestilling om
+          enev&#x00E6;lden som folkestemmens fortolker&#x201D; (<persName key="pe478">Damsholt</persName> 1995, s. 140). Hans politiske synspunkter m&#x00E5; generelt
+          forst&#x00E5;s p&#x00E5; baggrund heraf. </p>
+          <p rend="firstIndent">For det andet er det h&#x00F8;jst sandsynligt, at Grundtvig er blevet
+          henledt p&#x00E5; tanken af den kongelige kommissarius, dvs. kongens repr&#x00E6;sentant ved
+          st&#x00E6;nderforsamlingen, <persName key="pe241">A.S. &#x00D8;rsted</persName>, som i sin &#x00E5;bningstale
+          p&#x00E5; Roskilde Pal&#x00E6; 1. oktober 1835 sagde:</p>
+        
+        <p rend="quote">&#x201C;Vor elskede Konge, der altid har erkjendt, at det ikke er for sin
+          egen, men for det ham betroede Folks Skyld, han besidder den Magt, der fra hans
+          F&#x00E6;dre er nedarvet paa ham, har ved en varig Indretning villet give dette et nyt
+          Pant paa, at det fremdeles vil blive styret i denne Aand. Ikke ansaae han det forsvarligt
+          at vove nogen Forandring i selve den Statsforfatning, hvorved Danmark nu i eet og
+          trefjerdedele Aarhundrede har fundet sig lykkeligt. Men, i det han forbeholdt sig og sine
+          Efterkommere den hele Fylde af Magt, som vore Forf&#x00E6;dre nedlagde i Tredie Frederiks
+          H&#x00E6;nder, har Kongen med hiin Statsforfatning forenet en Indretning, der giver ham og
+          hans Efterkommere paa Thronen et nyt og omfattende Middel til stedse at vide, hvad der
+          tjener til Folkets Bedste, hvilket ikke kan andet end falde sammen med Kongens eget. Han
+          b&#x00F8;d derfor, at M&#x00E6;nd, som ved frie Valg af deres Medborgere dertil ere
+          kaldede, Tid efter anden skulle tr&#x00E6;de sammen, for at raadslaae om
+          f&#x00E6;drelandske Anliggender, inden disse ved Kongens Beslutning finde deres endelige
+          Afgj&#x00F8;relse&#x201D; (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> nr. 1, 5. oktober 1835, spalte 1 f.).</p>
+        
+        <p rend="firstIndent">Talen fortsatte herfra med formaninger og betragtninger over, at
+          sk&#x00F8;nt de deputerede alle var ejendomsbesiddere, s&#x00E5; var de ikke valgt til at
+          fremme deres egne sn&#x00E6;vre standsinteresser, men til at se p&#x00E5; f&#x00E6;drelandets
+          tarv.</p> 
+        <p rend="firstIndent">
+<persName key="pe241">&#x00D8;rsted</persName> formulerede p&#x00E5;
+          kongens vegne klart, at enev&#x00E6;lden var givet kongen &#x201C;af vore
+          Forf&#x00E6;dre&#x201D;, dvs. af folket. Grundtvig har
+          alene tilf&#x00F8;jet, at nyskabelsen &#x2013; de r&#x00E5;dgivende
+          st&#x00E6;nderforsamlinger &#x2013; efter hans historiske opfattelse snarest burde
+          betragtes som en genskabelse eller genopstandelse, nu da den tidlige middelalders
+          &#x201C;gamle Lands-Thing ved <hi rend="italic">Iis-&#x00D8;re</hi> levede op paa Palaiet
+          i <hi rend="italic">Roskilde</hi>&#x201D; (<hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver,</rs>
+</hi> s. 70).</p>
+        <note type="readMore">
+          <p rend="noIndent"> Denne politisk-historiske overenstemmelse mellem <persName key="pe241">A.S. &#x00D8;rsted</persName> og Grundtvig i 1835-1836
+            er ikke mindre bem&#x00E6;rkelsesv&#x00E6;rdig p&#x00E5; baggrund af den bitre strid,
+            der havde raset mellem dem om teologiske og videnskabelige emner i 1814-1815. Se herom
+              <rs key="title20" type="title">R&#x00F8;nning 2:2 (1909)</rs>, s. 64-78 og
+              <rs key="title520" type="title">H&#x00F8;irup (1949)</rs>, s. 106-122. </p>
+        </note>
+      </div>
+      
+      <div>
+        <head xml:id="docIn6">Sogneb&#x00E5;ndsl&#x00F8;sningen</head>
+        <p rend="noIndent">Opl&#x00F8;ftet og fortr&#x00F8;stningsfuld s&#x00F8;gte Grundtvig nu gennem kirkelige meningsf&#x00E6;ller at f&#x00E5; en
+          af sine hjertesager, sogneb&#x00E5;ndets l&#x00F8;sning &#x2013; retten til at slutte sig
+          til en pr&#x00E6;st uden for sit hjemsogn &#x2013; p&#x00E5; dagsordenen (se <rs key="title7" type="title">
+<hi rend="italic">Breve,</hi>
+</rs> 2 1926, breve nr.
+          375-386, s. 236-262). </p> 
+        <note type="readMore">
+<p rend="noIndent">Baggrunden for dette &#x00F8;nske var opg&#x00F8;ret 1825 i <rs type="title" key="title226">
+<hi rend="italic">Kirkens Gienm&#x00E6;le</hi>
+</rs> med professor
+              <persName key="pe111">H.N. Clausen</persName>. Grundtvig &#x00F8;nskede dengang, at <persName key="pe111">Clausen</persName> og hans ligesindede skulle ekskluderes af statskirken. Lidt senere
+            overvejede han sammen med kampf&#x00E6;llen <persName key="pe80">J.C.
+              Lindberg</persName> den mulighed, at de selv og andre &#x2018;gammeldags
+            troende&#x2019; udtr&#x00E5;dte af statskirken og dannede en frikirke.
+            Foruds&#x00E6;tningen herfor var dog, at dette blev lovliggjort &#x2013; som i
+              England. I 1830'erne kom han da p&#x00E5; den tanke,
+            at l&#x00F8;sningen kunne v&#x00E6;re en lempelig kirkelig frihed, herunder frihed til
+            sogneb&#x00E5;ndsl&#x00F8;sning, inden for statskirkens rammer. </p>
+</note>
+        <p rend="firstIndent">Forslaget blev indgivet i forsamlingens sidste m&#x00E5;ned af den
+          markante reformator, lensgreve <persName key="pe499">F.A. Holstein-Holsteinborg</persName>
+          p&#x00E5; vegne af syv grundtvigske pr&#x00E6;ster fra det s&#x00E5;kaldte
+          &#x2018;sydvestsj&#x00E6;llandske broderkonvent&#x2019;, som ikke selv var deputerede.
+          Pga. travlhed og formalia blev forslaget imidlertid henlagt: Det var &#x2013; som
+          s&#x00E5; mange andre udefrakommende forslag &#x2013; indgivet for sent til at kunne
+          behandles (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende,</hi>
+</rs> m&#x00F8;det 2. februar 1836, spalte 937).</p>
+        <p rend="firstIndent">For at vise ansigt og holde sagen varm havde Grundtvig allerede den 25. januar fremsendt et skrift &#x201C;om den danske
+          Statskirke&#x201D; (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende,</hi>
+</rs> m&#x00F8;det 8. februar 1836, spalte 958), som
+          pr&#x00E6;sidenten, dvs. den valgte formand, da fremlagde &#x201C;til Forsamlingens
+          Gjennemsyn&#x201D; (sst.). Det drejer sig om <hi rend="italic">
+<rs key="title511" type="title">Den Danske Stats-Kirke upartisk betragtet</rs>
+</hi> (1834), et
+          hovedv&#x00E6;rk i Grundtvigs &#x2018;kirkekamp&#x2019;,
+          hvori han argumenterer for &#x00F8;get frihed i statskirken, herunder adgang til
+          sogneb&#x00E5;ndsl&#x00F8;sning (se <rs key="title7" type="title">
+<hi rend="italic">Breve,</hi>
+</rs> 2 1926, brev nr. 385, s. 254-256). Forslaget blev da ogs&#x00E5;
+          bragt frem ved de f&#x00F8;lgende st&#x00E6;nderforsamlinger (se <rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1838, spalte 1137
+          f.). Men adgangen til at l&#x00F8;se sogneb&#x00E5;nd indf&#x00F8;rtes f&#x00F8;rst lang
+          tid senere, i 1855.</p>
+      </div>
+      
+      <div>
+        <head xml:id="docIn7">Realundervisningens fremme</head>
+        
+        <p rend="noIndent">P&#x00E5; de fem m&#x00E5;neder fra oktober 1835 til og med februar 1836 n&#x00E5;ede
+          st&#x00E6;nderforsamlingen i Roskilde at behandle meget
+          talrige emner sp&#x00E6;ndende fra pryglestraffens indskr&#x00E6;nkelse p&#x00E5; Island til bestemmelser
+          vedr&#x00F8;rende hhv. privatejede og offentlige bolv&#x00E6;rk i K&#x00F8;benhavns havn. Blandt de mange sm&#x00E5;
+          og store dr&#x00F8;ftelser bed Grundtvig s&#x00E6;rligt m&#x00E6;rke i &#x00E9;n: Debatten om styrkelse af
+          realskoleundervisningen.</p>
+        <note type="readMore">
+          <p rend="noIndent">Ogs&#x00E5; den omfattende debat i slutningen af februar 1836 om
+            trykkefrihed har i h&#x00F8;jeste grad interesseret (den censurunderkastede) 
+            Grundtvig, men emnet skal ikke udredes n&#x00E6;rmere her. Om
+            debatten, se <rs key="title92" type="title">Hans Jensen (1931)</rs>, 1, s. 453-458
+            og <rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1836.</p>
+        </note>
+        <p rend="firstIndent">Private realskoler havde man haft i Danmark siden 1787, og Grundtvig havde selv v&#x00E6;ret realskolel&#x00E6;rer i historie
+          og geografi p&#x00E5; Schouboes Institut i 1808-1811. I
+          henhold til kongelig anordning af 29. juli 1814 var der ogs&#x00E5; &#x00E5;bnet mulighed
+          for at danne <hi rend="italic">offentlige</hi> realskoler. Som en begyndelse
+          h&#x00E6;gtede man da i nogle k&#x00F8;bst&#x00E6;der realklasser til borgerskolerne med
+          undervisning i fag som matematik, naturfag og de levende sprog, navnlig tysk. Men med
+          industrialismens og samf&#x00E6;rdselsmidlernes udvikling sk&#x00E6;rpedes behovet for
+          egentlige realskoler for konfirmerede borgerdrenge, og sagen diskuteredes i 1830'erne
+          livligt i byernes borgerskab. Debatten samlede sig omkring stikordet: <hi rend="italic">
+<rs key="title512" type="title">Hvor skal jeg s&#x00E6;tte min S&#x00F6;n i
+              Skole?</rs>,</hi> hovedtitlen p&#x00E5; en pjece fra 1833 af handelskommis
+            <persName key="pe540">Knud H. Gad</persName>.</p>
+        <p rend="firstIndent">Der var til st&#x00E6;nderforsamlingen i Roskilde indkommet to andragender om realundervisningens fremme, hvoraf
+          navnlig det f&#x00F8;rste har interesseret Grundtvig
+          &#x2013; og is&#x00E6;r pga. sine begrundelser. Forslaget fremlagdes p&#x00E5;
+          m&#x00F8;det den 1. februar 1836, dvs. dagen f&#x00F8;r henl&#x00E6;ggelsen af forslaget
+          om sogneb&#x00E5;ndets l&#x00F8;sning. Man tager n&#x00E6;ppe fejl i at antage, at
+            Grundtvig har l&#x00E6;st sin <rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> med s&#x00E6;rlig
+          opm&#x00E6;rksomhed i netop disse dage.</p>
+        <p rend="firstIndent">Forslagsstiller var den 39-&#x00E5;rige jurist <persName key="pe333">Tage Algreen-Ussing</persName>, sekret&#x00E6;r i Danske Kancelli, en af forsamlingens
+          mest fremtr&#x00E6;dende og reformivrige m&#x00E6;nd. Han &#x00E5;bnede effektfuldt med at
+          citere indledningsordene fra <hi rend="italic">
+<rs key="title512" type="title">Hvor
+              skal jeg s&#x00E6;tte min S&#x00F6;n i Skole?,</rs>
+</hi> og dette citat har vakt
+          umiddelbar genkendelse i forsamlingen (<rs type="title" key="title510"><hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1836, spalte 844). Dern&#x00E6;st
+          argumenterede han for, &#x201C;at Realundervisningen i Danmark maa s&#x00E6;ttes paa en
+          Fod, der svarer til dens Vigtighed, og staaer i et passende Forhold til det l&#x00E6;rde
+          Undervisningsv&#x00E6;sen og Almueskolev&#x00E6;senet&#x201D; (sst.). Han h&#x00E6;vdede, at
+          netop &#x201C;Middelstanden og de h&#x00F8;iere Borgerklasser ere meget stedmoderligt
+          behandlede, hvad den offentlige Undervisning angaaer&#x201D; (sst.). Disse klassers b&#x00F8;rn
+          havde brug for de levende sprog, is&#x00E6;r tysk, men ogs&#x00E5; fransk og engelsk
+          &#x2013; og slet ikke for de klassiske sprog, der l&#x00E6;rtes i latinskolerne.
+          &#x201C;Ville vi derfor have en <hi rend="italic">dygtig Middelstand,</hi> og det er dog
+          den alene, som udgi&#x00F8;r Folkets Kjerne, maa vi fremfor Alting s&#x00F8;rge for at
+          faae en oplyst Middelstand&#x201D; (spalte 847).</p>
+        
+        <p rend="firstIndent">
+<persName key="pe333">Algreen-Ussing</persName> talte som
+          modernitetens, det tekniske fremskridts og bourgeoisiets mand, og han blev h&#x00F8;rt af
+          forsamlingen, som med stort flertal vedtog den foresl&#x00E5;ede &#x2018;petition&#x2019; (dvs.
+          b&#x00F8;nskrift til kongen) vedr. realundervisningens fremme. Men inden da havde han sl&#x00E5;et
+          hovedet p&#x00E5; s&#x00F8;mmet ved at inddrage selve st&#x00E6;nderforsamlingsinstitutionen som en vigtig
+          grund til forslagets fremme:</p>
+        <p rend="quote">&#x201C;Og for at jeg endnu skal f&#x00F8;ie en Grund til de mange andre,
+          der kunne anf&#x00F8;res for N&#x00F8;dvendigheden af Realundervisningens Fremme, saa lad
+          mig hente denne fra selve den Institution, hvoraf vi alle her ere Medlemmer. Kongen har
+          indf&#x00F8;rt raadgivende St&#x00E6;nder i Danmark. Han har villet, at M&#x00E6;nd,
+          udvalgte af Folkets Midte, skulde danne en stor og m&#x00E6;gtig Nationalforsamling, uden
+          hvis foregaaende Bet&#x00E6;nkning ingen Lov, der gj&#x00F8;r Forandring i Undersaatternes
+          personlige eller Eiendomsrettigheder, Skatterne og de offentlige Embeder, fremtidigen skal
+          kunne udgaae i Danmark, og som skal v&#x00E6;re det Organ, hvorigjennem Folkets
+          &#x00D8;nsker kraftigst kunne udtale sig for Thronen. Det er <hi rend="italic">Grundbesiddelse,</hi> der, som bekjendt, er gjort til Betingelse for at kunne
+          indtr&#x00E6;de i denne Forsamling, og det er Grundbesiddelse, der alene giver Ret til at
+          v&#x00E6;lges til samme. Derved er St&#x00E6;ndernes Institution n&#x00E6;sten udelukkende
+          baseret paa den h&#x00F8;iere Middelstand, i S&#x00E6;rdeleshed paa
+          Kj&#x00F8;bst&#x00E6;dsborgerne og de st&#x00F8;rre Landeiendomsbesiddere. Men skal
+          saaledes Folket fornemmelig repr&#x00E6;senteres ved <hi rend="italic">den tredje
+            Stand</hi> i Staten, b&#x00F8;r der ogsaa kraftigst arbeides paa denne Stands
+          intellectuelle Dannelse. Kun derved kan den komme til at danne en passende Modv&#x00E6;gt
+          mod Embedsaristokratiets alt overveiende Indflydelse og bringe den forstyrrede
+          Ligev&#x00E6;gt i denne Deel af Statens Organisme tilbage. Capital har den;
+          Uafh&#x00E6;ngighed har den; Kraft og Dygtighed har den. Kun Eet mangler den.
+          H&#x00F8;iere Dannelse og Kundskaber&#x201D; (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1836, spalte 848-850).</p>
+        <p rend="firstIndent">Med dette sidste argument forsk&#x00F8;d <persName key="pe333">Algreen-Ussing</persName> hele sp&#x00F8;rgsm&#x00E5;let fra borgerskabets halvvoksne drenge til
+          bourgeoisiet selv i rollen som kongens bedste m&#x00E6;nd og r&#x00E5;dgivere. Og her tog Grundtvig
+          fat.</p>
+      </div>   
+        <div>
+          <head xml:id="docIn8">Skolen for livet</head>
+          <p rend="noIndent">Den gennemg&#x00E5;ende retoriske figur i <persName key="pe333">Algreen-Ussings</persName> ildnende tale var anaforen, gentagelsen og variationen af et slagord:</p>
+          <p rend="firstIndent">&#x201C;<hi rend="italic">Skolen for de nyttige Kundskaber i Livet
+            mangler endnu</hi>&#x201D; (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs> 1836, spalte 848), &#x201C;<hi rend="italic">Skolen,
+            Skolen mangler!</hi>&#x201D; (sst.), &#x201C;<hi rend="italic">Skolen for Livet
+              mangler!</hi>&#x201D; (spalte 850), <hi rend="italic">&#x201C;Ja Skolen mangler! Skolen for Livet
+                mangler! Skolen for de nyttige og brugbare Kundskaber mangler!</hi>&#x201D; (spalte 858). </p>
+          <p rend="quote">&#x201C;Arme Ungdom! Du t&#x00F8;rster efter at l&#x00E6;re, men Du boer i en &#x00D8;rken, hvor intet Kundskabens V&#x00E6;ld kan l&#x00E6;dske din br&#x00E6;ndende Tunge. <hi rend="italic">Skolen mangler.</hi> Arme F&#x00E6;dre! I vilde gierne offre Alt, for at skaffe Eders B&#x00F8;rn nyttige Kundskaber, men hvor I vende Eders &#x00D8;ine hen: <hi rend="italic">Skolen mangler.</hi> Arme Danmark! Du kunde eie en kraftig, dygtig, oplyst Middelstand, udrustet med Kundskaber, nyttige for Livet og Frugtbare i deres Anvendelse, men du eier den ikke, thi <hi rend="italic">Skolen mangler</hi>&#x201D; (spalte 848).</p>
+          <p rend="quote">&#x201C;[&#x0085;] ikke Skoler,
+            beregnede paa blot at uddanne Philologer, Theologer og Jurister; men Skoler, beregnede paa
+            Livet, hvori de levende Sprog, det mathematiske Studium og Naturvidenskaberne maae tr&#x00E6;de
+            istedenfor Latin, Gr&#x00E6;sk og Hebraisk, og hvori Ungdommen i de mere velhavende Borgerklasser
+            kan uddanne sig for den h&#x00F8;iere Virksomhed, som det praktiske Liv fordrer&#x201D; (spalte 850).</p>
+          
+          <p rend="firstIndent">Grundtvig har, med <persName key="pe384">K.E. Bugges</persName> ord, af <persName key="pe333">Algreen-Ussings</persName> slagord &#x201C;f&#x00F8;lt sig kaldet til at frems&#x00E6;tte et &#x00E6;gte
+          dansk syn p&#x00E5;, hvad en skole for livet er&#x201D; (<rs key="title445" type="title">Bugge
+            1965</rs>, s. 273).</p>
+       
+          <p rend="firstIndent">
+<persName key="pe333">Algreen-Ussings</persName> aversion mod
+          latinskolen kunne Grundtvig umiddelbart tilslutte sig,
+          ligesom han b&#x00E5;de nu og senere var opm&#x00E6;rksom p&#x00E5;, hvilken uddannelse
+          landm&#x00E6;nd og praktiske byboer havde behov for (se <rs key="title445" type="title">Bugge 1965</rs>, s. 273 og 281 f.). Men Grundtvigs
+          perspektiv var videre, og til sp&#x00F8;rgsm&#x00E5;let om den konfirmerede ungdoms
+          uddannelsesbehov har <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+              Fiir-Kl&#x00F8;ver</rs>
+</hi> et noget andet svar end skoler, selv realskoler:</p> 
+          <p rend="quote">&#x201C;Den eneste <hi rend="italic">gode Drenge-Skole</hi> for <hi rend="italic">Borger-Livet,</hi> jeg har nogen Forestilling om, er <hi rend="italic">dygtige</hi> og
+            <hi rend="italic">driftige</hi> Borgeres Huse, hvor Drengene kan faae baade Lyst til
+          Syslerne, de siden skal drive og Greb paa dem, medens al Indsp&#x00E6;rring i skolastiske
+          Forbedrings-Huse er for det virksomme Borger-Liv den rene Ford&#x00E6;rvelse: Indpodning
+          af Ki&#x00E6;lenskab, Dovenskab, Ubehjelpsomhed, Bogorme-V&#x00E6;sen og alle <hi rend="italic">borgerlige Udyder</hi>&#x201D; (<rs key="title170" type="title">
+<hi rend="italic">Det Danske Fiir-Kl&#x00F8;ver,</hi>
+</rs> s. 40-41).</p>
+        </div>
+          <div>
+            <head xml:id="docIn9">Den folkelige h&#x00F8;jskole</head>
+          <p rend="noIndent">Den skole for livet, Grundtvig forestillede sig, var heller ikke en
+            skole for nykonfirmerede drenge, men &#x2013; i overensstemmelse med <persName key="pe333">Algreen-Ussings</persName> sidste argument &#x2013; &#x201C;en <hi rend="italic">H&#x00F8;i-Skole</hi> for vor
+          <hi rend="italic">borgerlige Ungdom,</hi> hvorved <hi rend="italic">den</hi> Dannelse og Oplysning, vi maae &#x00F8;nske baade hos <hi rend="italic">Stats-Raadet</hi>
+            og Dets <hi rend="italic">V&#x00E6;lgere,</hi> omhyggelig fremmes&#x201D; (<rs key="title170" type="title">
+<hi rend="italic">Det Danske Fiir-Kl&#x00F8;ver,</hi>
+</rs> s. 40).</p>
+           
+          <p rend="firstIndent">I <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+              Fiir-Kl&#x00F8;ver</rs>
+</hi> udvikler han da id&#x00E9;en om en folkelig h&#x00F8;jskole
+          som en h&#x00F8;jere l&#x00E6;reanstalt, et akademi uafh&#x00E6;ngigt af K&#x00F8;benhavns
+          Universitet, som en foruds&#x00E6;tning for, at folket virkelig ogs&#x00E5; fremover vil
+          komme til <hi rend="italic">orde</hi> i &#x2018;folker&#x00E5;det&#x2019;.</p>
+          <p rend="firstIndent">Grundtvig rev begrebet om
+          &#x2018;skolen for livet&#x2019; fri af dets aktuelle anledning, realskoleundervisning, og
+          gav det en bredere, national betydning: &#x201C;saasandt som de i <hi rend="italic">Roskilde</hi> hverken talde <hi rend="italic">Latin</hi> eller stemmede for den, saa
+          vist vil <hi rend="italic">Folke-Stemmen</hi> ogsaa v&#x00E6;re for en <hi rend="italic">Dansk H&#x00F8;i-Skole,</hi> jo f&#x00F8;r jo heller, hvor <hi rend="italic">Alting</hi> dreier sig om <hi rend="italic">Konge</hi> og <hi rend="italic">Folk,
+            F&#x00E6;derne-Land</hi> og <hi rend="italic">Moders-Maal</hi>&#x201D; (s. 55).</p>
+          
+          <p rend="firstIndent">Mere pr&#x00E6;cist skulle man p&#x00E5; denne <hi rend="italic">danske</hi> h&#x00F8;jskole &#x2013; i mods&#x00E6;tning til den latinske, dvs.
+          universitetet &#x2013; &#x201C;v&#x00E6;re saa godt som mueligt oplyste om <hi rend="italic">Folke-Naturen, Stats-Forfatningen</hi> og <hi rend="italic">F&#x00E6;derne-Landet i alle Henseender</hi>&#x201D; (s. 57). Den danske
+          h&#x00F8;jskole skulle alts&#x00E5; v&#x00E6;re en <hi rend="italic">statsborgerskole</hi>
+          (en medborgerskole ville man vel kalde den i dag).</p>
+          <p rend="firstIndent">Grundtvig betonede (med al respekt
+          for &#x2018;ejendommernes&#x2019;, de besiddendes monopol p&#x00E5; valgret og valgbarhed)
+          &#x2013; ligesom <persName key="pe241">A.S. &#x00D8;rsted</persName> &#x2013; at
+          st&#x00E6;nderforsamlingsmedlemmerne skulle repr&#x00E6;sentere <hi rend="italic">hele</hi> folket, s&#x00E5;:</p>
+            
+          <p rend="quote">&#x201C;det var en fortvivlet
+          Sag for alle dem, der har kun Dagen og Veien, og for hele Riget, hvis <hi rend="italic">Eiendommerne,</hi> som med <hi rend="italic">Rette</hi> v&#x00E6;lge og udgi&#x00F8;re
+            <hi rend="italic">Kongens Stats-Raad,</hi> ei blev kloge paa Andet end deres personlige
+          og &#x00F8;iebliklige Fordeel, ei stedse bedre l&#x00E6;rde at paaski&#x00F8;nne og
+          benytte deres ligesaa <hi rend="italic">&#x00E6;refulde</hi> som vigtige Stilling, stedse
+          dybere at f&#x00F8;le og klarere at vise sig som Rigets<hi rend="italic"> ny
+            &#x2018;Ridder-Stand af Dannebrog&#x2019;,</hi> der s&#x00E6;tter sin &#x00C6;re i det
+            <hi rend="italic">almindelige Bedste</hi> og gi&#x00F8;r med Gl&#x00E6;de de
+            Opoffrelser, <hi rend="italic">det</hi> kr&#x00E6;ver&#x201D; (s. 58).</p>
+         
+          <p rend="firstIndent">Nogle &#x00E5;r senere fandt han, bel&#x00E6;rt af erfaringen,
+          anledning til at sige, at han ved &#x2018;folkets marv og kerne&#x2019; ikke &#x2013; som
+          f.eks. <persName key="pe333">Algreen-Ussing</persName> &#x2013; forstod ejendomsbesidderne
+          i al almindelighed og slet ikke intelligentsiaen eller byborgerskabet, men den selvejende
+          bondestand. I en tale i foredragsforeningen Danske Samfund 23. juni 1840 understregede han
+          s&#x00E5;ledes, at &#x201C;Menigmand er Folkets Kierne&#x201D;, og at han ved menigmand
+          forstod &#x201C;den Deel af Folket, der bogstavelig &#x00E6;der sit Br&#x00F8;d i sit
+          Ansigts Sveed&#x201D;, alts&#x00E5; &#x201C;Menigmand i Almindelighed og Bonden i
+          S&#x00E6;rdeleshed&#x201D; (<rs key="title445" type="title">Bugge 1965</rs>, s.
+          321).</p>
+        <p rend="firstIndent">Ogs&#x00E5; tankerne om den folkelige h&#x00F8;jskoles indretning, p&#x00E6;dagogik og
+          ledelse blev konkretiseret i en r&#x00E6;kke v&#x00E6;rker over de f&#x00F8;lgende &#x00E5;r. L&#x00E6;st med eftertidens
+          briller er <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+            Fiir-Kl&#x00F8;ver</rs>
+</hi> s&#x00E5;ledes Grundtvigs f&#x00F8;rste (som bog trykte)
+          h&#x00F8;jskoleskrift.</p>
+          <p rend="firstIndent">L&#x00E6;st forfra, med samtidens briller, m&#x00E5; <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+            Fiir-Kl&#x00F8;ver</rs>
+</hi> dog snarere betragtes som en historisk kommentar til og
+          hyldest af den nye institution: De r&#x00E5;dgivende st&#x00E6;nderforsamlinger.</p>
+          <p rend="firstIndent">I hvert fald bem&#x00E6;rkede end ikke hans n&#x00E6;rmeste venner og
+            samarbejdspartnere i 1836, at dette v&#x00E6;rk skulle have lagt teoretisk grund under en ny
+            skoleform.</p>
+          <note type="readMore">
+            <p rend="noIndent">F.eks. fandt <persName key="pe80">J.C. Lindberg</persName> det
+            &#x00E5;benbart s&#x00E5; vanskeligt at karakterisere <hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver</rs>
+</hi> &#x2013; &#x201C;et
+            h&#x00F8;ist m&#x00E6;rkeligt [dvs. bem&#x00E6;rkelsesv&#x00E6;rdigt] lille
+            Skrift&#x201D;, &#x201C;en livlig Bog&#x201D; &#x2013; at han i stedet bad sine l&#x00E6;sere
+            om selv at g&#x00F8;re sig bekendt med det (<rs key="title458" type="title">
+<hi rend="italic">Nordisk Kirketidende,</hi>
+</rs> nr. 20, 15. maj 1836, spalte
+            320).</p>
+          </note>
+          <p rend="firstIndent">Selv mente Grundtvig i tilbageblik,
+          at <hi rend="italic">
+<rs type="title" key="title170">Det Danske
+              Fiir-Kl&#x00F8;ver</rs>
+</hi> var blevet &#x201C;l&#x00E6;st af Faa og &#x00E6;ndset af endnu
+          f&#x00E6;rre&#x201D; (<rs key="title445" type="title">Grundtvig 1838</rs>, s. 10).</p>
+      </div>
+      
+      
+      
+      <div>
+        
+        <head xml:id="docIn10">Metrisk beskrivelse af v&#x00E6;rkets digte</head>
+        
+        <p rend="noIndent">Uddrag af <hi rend="italic">
+<rs key="title141" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>,</hi> s. III: </p>
+          <p rend="firstIndent">1 strofe, 4
+            vers, jambisk anap&#x00E6;stisk, overkomplet i de kvindelige udgange: 6 5 6 5; abab; a &#x2640;,
+            b &#x2642;.</p>
+          <!-- &#x005B;LINK TIL Retningslinjer for indledninger paragraf 3.1&#x005D;-->
+        
+        <p rend="firstIndent">Strofe uden titel, s. 1:</p>
+        <p rend="firstIndent">1 strofe, 6 vers, anap&#x00E6;stisk med jambisk optakt: 11 11 11 11 11 11;
+          aabbcc; a &#x2642;, b  &#x2642;, c  &#x2642;.</p>
+        <!-- &#x005B;LINK TIL Retningslinjer for indledninger paragraf 3.1&#x005D;-->
+        
+        <p rend="firstIndent">Strofe uden titel, s. 42:</p>
+        <p rend="firstIndent">1 strofe, 8 vers, daktylisk, 10 10 10 10 10 10 10 10; aabbccdd; a &#x2642;, b &#x2642;, c &#x2642;, d &#x2642;.</p>
+        <!-- &#x005B;LINK TIL Retningslinjer for indledninger paragraf 3.1&#x005D;-->
+        
+        <p rend="firstIndent">Uddrag af <hi rend="italic">
+<rs type="title" key="title527">Gylden-Aaret</rs>,</hi> s. 64-65 og 82-83:</p>
+        <p rend="firstIndent">5 strofer, 7 vers, jambisk, 7 6 7 6 7 7 6; ababccd; a &#x2640;, b &#x2642;, c &#x2640;, d &#x2642;.</p>
+          <!-- &#x005B;LINK TIL Retningslinjer for indledninger paragraf 3.1&#x005D;-->
+        
+        <p rend="firstIndent">Strofe uden titel, s. 71:</p>
+        <p rend="firstIndent">1 strofe, 11 vers, overkomplet daktylisk, 5 4 5 4 5 4 5 4 5 5 4;
+          ababcdcdeef; a &#x2642;, b &#x2640;, c &#x2640;, d &#x2642;, e &#x2640;, f &#x2642;. </p>
+        <!-- &#x005B;LINK TIL Retningslinjer for indledninger paragraf 3.1&#x005D;-->
+        
+      </div>
+      
+      
+      <div type="litList">
+        <head xml:id="docIn1000">Anvendt litteratur</head>
+          
+          
+          <list type="litList">
+          <item>
+<hi rend="italic">Bibliografien,</hi> se Johansen, Steen (1948-1954)</item>
+          <item>Br&#x00F8;ndsted, Johannes red. (1962) <hi rend="italic">
+<rs key="title460" type="title">Academia Sorana. Kloster &#x2013; Akademi &#x2013; Skole</rs>.</hi> K&#x00F8;benhavn</item>          
+          <item>Bugge, Knud Eyvin (1965) <rs key="title445" type="title">
+<hi rend="italic">Skolen for livet. Studier over N.F.S. Grundtvigs p&#x00E6;dagogiske tanker.</hi>
+</rs> K&#x00F8;benhavn</item>                
+          <item>Damsholt, Tine (1995) &#x201C;Elementer i Grundtvigs politiske t&#x00E6;nkning&#x201D;, i <rs key="title337" type="title">
+<hi rend="italic">Grundtvig-Studier</hi>
+</rs> 1995. K&#x00F8;benhavn</item>   
+          <item>Gad, Knud H. (1833) <hi rend="italic">
+<rs key="title512" type="title">Hvor skal jeg s&#x00E6;tte min S&#x00F8;n i Skole? Et Sp&#x00F8;rgsmaal til Directionen for Universitetet og de l&#x00E6;rde Skoler i S&#x00E6;rdeleshed, og til enhver offentlig Skolebestyrelse i Almindelighed, eller en L&#x00E6;gmands Tanker om N&#x00F8;dvendigheden og F&#x00F8;lgerne af en Skolereform i Danmark</rs>.</hi>  K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1831) <rs key="title446" type="title">
+<hi rend="italic">Politiske Betragtninger med Blik paa Danmark og Holsteen.</hi>
+</rs> K&#x00F8;benhavn</item>          
+          <item>Grundtvig, N.F.S. (1832) <hi rend="italic">
+<rs type="title" key="title158">Nordens Mythologi eller Sind-Billedsprog, historisk-poetisk udviklet og oplyst.</rs>
+</hi> K&#x00F8;benhavn</item>          
+          <item>Grundtvig, N.F.S. (1836) <hi rend="italic">
+<rs type="title" key="title170">Det Danske Fiir-Kl&#x00F8;ver eller Danskheden partisk betragtet</rs>.</hi> K&#x00F8;benhavn</item>  
+          <item>Grundtvig, N.F.S. (1838) <hi rend="italic">
+<rs type="title" key="title455">Skolen for Livet og Academiet i Soer</rs>.</hi> K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1872) <hi rend="italic">
+<rs key="title287" type="title">Smaaskrifter om den historiske H&#x00F8;iskole</rs>.</hi> K&#x00F8;benhavn</item>          
+          <item>Grundtvig, N.F.S. (1882) <rs key="title447" type="title">
+<hi rend="italic">Grundtvig og Ingemann. Brevvexling
+              1821-1859,</hi>
+</rs> udg. af Svend Grundtvig.
+            K&#x00F8;benhavn</item>          
+          <item>Grundtvig, N.F.S. (1924-1926) <hi rend="italic">
+<rs type="title" key="title7">Breve fra og til N.F.S. Grundtvig</rs>,</hi>
+            1-2, udg. af Georg Christensen &amp; Stener Grundtvig. K&#x00F8;benhavn</item>
+          <item>Grundtvig, N.F.S. (1968) <hi rend="italic">
+<rs key="title465" type="title">Grundtvigs skoleverden i tekster og udkast</rs>,</hi>
+            1-2, udg. af K.E. Bugge. K&#x00F8;benhavn</item>          
+          <item>Grundtvig, N.F.S. (1983) <hi rend="italic">
+<rs type="title" key="title449">Statsm&#x00E6;ssig Oplysning</rs>,</hi> udg. af
+              K.E. Bugge &amp; Vilhelm
+              Nielsen. K&#x00F8;benhavn</item>  
+          <item>Grundtvig, N.F.S. (2010) <hi rend="italic">
+<rs type="title" key="title519">Schriften in Auswahl</rs>,</hi> udg. af K.E. Bugge, Flemming
+              Lundgreen-Nielsen &amp; Theodor
+              J&#x00F8;rgensen. G&#x00F6;ttingen</item>
+          <item>H&#x00F8;irup, Henning (1949) <rs type="title" key="title520">
+<hi rend="italic">Grundtvigs Syn paa Tro og Erkendelse.</hi>
+</rs> K&#x00F8;benhavn</item>
+           <item>Jensen, Hans (1931-1934) <hi rend="italic">
+<rs type="title" key="title92">De danske St&#x00E6;nderforsamlingers Historie
+                1830-48</rs>,</hi> 1-2. K&#x00F8;benhavn</item> 
+          <item>Johansen, Steen (1948-1954) <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs Skrifter</rs>
+</hi>
+              (<hi rend="italic">Bibliografien</hi>), 1-4. K&#x00F8;benhavn</item>
+          <item>R&#x00F8;nning, Frederik (1907-1914) <hi rend="italic">
+<rs key="title20" type="title">N.F.S. Grundtvig. Et bidrag til
+                skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi> 1-4.
+            K&#x00F8;benhavn</item>
+          <item>
+<rs key="title458" type="title">
+<hi rend="italic">Nordisk Kirketidende,</hi>
+</rs> 1836. K&#x00F8;benhavn</item>
+          <item>
+<hi rend="italic">
+<rs key="title78" type="title">Sor&#x00F8;. Klostret, Skolen,
+                Akademiet gennem Tiderne. Skrevet af gamle Soranere,</rs>
+</hi> 1:1-2:2
+            (1923-1931), udg. af Soranske Samfund. K&#x00F8;benhavn</item>
+          <item>
+<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende,</hi>
+</rs> se <rs key="title510" type="title">
+<hi rend="italic">Tidende for Forhandlingerne ved Provindsialst&#x00E6;nderne</hi>
+              [&#x0085;]</rs>
+          </item>
+          <item>
+<rs key="title510" type="title">
+<hi rend="italic">Tidende for Forhandlingerne ved
+                Provindsialst&#x00E6;nderne for Sj&#x00E6;llands, Fyens og Lolland-Falsters Stifter
+                samt for Island og F&#x00E6;r&#x00F6;erne</hi>
+</rs> (<rs type="title" key="title510">
+<hi rend="italic">St&#x00E6;ndertidende</hi>
+</rs>), 1835-1836 og
+            1838. Roskilde</item>
+        </list>
+      
+      </div>
+    
+    </body>
+</text>
+</TEI>

@@ -1,0 +1,2166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="txtRNC.rnc"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+       <titleStmt>
+          <title rend="part">Rimelige Strøe-Tanker ved Kalundborgs i Livet vel meriterede Stads-Satyrikus Jens Baggesens Grav</title>
+          <title rend="shortForm">Rimelige Strøe-Tanker</title>
+          <author>Nicolai Frederik Severin Grundtvig</author>
+          <editor role="editionPhilologist">Kim Steen Ravn</editor>
+       </titleStmt>
+       <editionStmt>
+          <edition>
+             <idno type="firstUpload">1.5</idno>
+             <idno type="content">1.9</idno>
+             <idno type="technic">1.9.1</idno>
+          </edition>
+       </editionStmt>
+       <extent>22 KB</extent>
+       <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2016-09-01">www.grundtvigsværker.dk, version 1.9, 1. november 2016</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Nyeste Skilderie af Kjøbenhavn</title>
+            <respStmt>
+               <name>S. Soldin</name>
+               <resp>S. Soldin</resp>
+            </respStmt>
+            <idno type="dateStart">1815-11-11</idno>
+            <idno type="dateEnd">1815-11-28</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1815_263_txt.xml" type="txt">Læsetekst</note>
+            <note target="1815_263_com.xml" type="com">Punktkommentar</note>
+            <note target="1815_263_intro.xml" type="intro">Indledning</note>
+            <note target="1815_263_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="263">
+          <desc>F&#x00F8;rstetrykket</desc>
+          <num>1815</num>
+       </witness>
+         <witness xml:id="PS">
+          <desc>Poetiske Skrifter</desc>
+          <num>4</num>
+         </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+      <profileDesc>
+         <textClass>
+            <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+               <term>lyrik</term>
+               <term>digte</term>
+               <term>lejlighedsdigte</term>
+            </classCode>
+            <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+               <term>polemik</term>
+            </keywords>
+         </textClass>
+        </profileDesc>
+      <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+       <change xml:id="KSR" who="KSR" when="2014-04-30">txt2tei</change>
+       <change who="KSR" when="2014-05-14">koll. a.l.l.</change>
+       <change who="KSR" when="2014-07-01">lemmatiseret første gang</change>
+       <change xml:id="MWP" who="MWP" when="2014-07-31">indført rettelser fra 1. kollation</change>
+       <change who="MWP" when="2014-08-01">indført rettelser fra 1. kollation</change>
+       <change who="auto" when="2014-08-19">Autoopmærket af autotag.awk v09 KK 2013-11-28</change>
+       <change who="KSR" when="2014-09-08">1. redaktion indført</change>
+       <change who="KSR" when="2014-09-24">2. redaktion indført, Lis Møller</change>
+       <change who="KSR" when="2015-10-01">genre og emneord</change>
+       <change who="KSR" when="2016-05-03">fax.nr. rettet</change>
+       <change who="KSR" when="2016-05-19">title2395 og title538</change>
+       <change who="KSR" when="2016-11-14">txr</change>
+       <change who="KSR" when="2017-03-13">firstUpload</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">
+      
+      <pb type="periText" facs="1815_263_fax1.jpg"/>
+      
+    <body>
+       
+       <div type="Rimelige Strøe-Tanker [1]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax2.jpg" n="1425" subtype="column" rend="supp"/>
+          <pb type="edition" ed="PS" n="138"/>
+          
+          <head rend="2"><seg type="com" n="com1">Rimelige</seg> Strøe-Tanker</head>
+          <head rend="1">ved</head>
+          <head rend="1"><placeName key="fak413">Kalundborgs</placeName> i Livet vel meriterede <seg type="com" n="com2">Stads-Satyrikus</seg></head>
+          <head rend="1"><hi rend="spaced"><persName key="pe20">Jens Baggesens</persName></hi></head>
+          <head rend="1"><hi rend="spaced">Grav.</hi></head>
+          
+          <fw type="shortLine"/>
+          
+          <pb type="edition" ed="PS" n="150"/>
+          
+          <lg rend="firstIndent">
+             <l><hi rend="size-1">At Alvor ei I lide,</hi></l>
+             <l><hi rend="size-1">Det veed jeg nu bestemt;</hi></l>
+             <l><hi rend="size-1">Thi er det paa de Tide</hi></l>
+             <l><hi rend="size-1">Man bøier sig til Skiemt.</hi></l>
+             <l><hi rend="size-1">Om I vil Tiden vide,</hi></l>
+             <l><hi rend="size-1">Da er det paa de Tide</hi></l>
+             <l><hi rend="size-1"><hi rend="spaced">Man leer sig reent ihiel.</hi></hi></l>
+          </lg>
+          
+          <fw type="shortLine"/>
+          
+          <lg n="1">
+             <l><hi rend="initial">H</hi>ør nu, godt Folk! nu skal I høre</l>
+             <l>En <seg type="com" n="com3">Tidende</seg>, som Steen maae røre;</l>
+             <l rend="firstIndent">Nu <seg type="com" n="com1000">ligger død</seg> igien.</l>
+             <l rend="firstIndent"><persName key="pe20">Jens Baggesen</persName>.</l>
+          </lg>
+          
+          <lg n="2">
+             <l>Men, hvad er det? gid I faae Skam</l>
+             <l rend="firstIndent">Som leer ad mig og ham,</l>
+             <l rend="firstIndent">Nu, da I skulde, saa <seg type="com" n="com3000">med Tugt</seg></l>
+             <l rend="firstIndent">At sige, græde smukt!</l>
+             <l>Ja, Skam faae I! den skal I faae,</l>
+             <l>Saasandt som der er Forskiel paa</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax2.jpg" n="1426" subtype="column" rend="supp"/>At <hi rend="spaced"><seg type="com" n="com5">ligge død</seg>,</hi> og død at være.</l>
+             <l rend="firstIndent">Ja, <seg type="com" n="com6">Posito</seg>, lad nu saa være,</l>
+             <l>Han uden Veir og Vandringsstav,</l>
+             <l>Laae nu med Æren i sin Grav,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="151"/>Saa kan I troe: <persName key="pe20">Jens Baggesen</persName></l>
+             <l rend="secondIndent">Var ingen Nar,</l>
+             <l rend="firstIndent">Han døde for at gaae igien,</l>
+             <l rend="secondIndent">Den Sag er klar.</l>
+             <l>Og mener I, som han lod smage</l>
+             <l>Sin søde Kniv i gamle Dage,</l>
+             <l rend="firstIndent">Det bliver Spøg at nappes med</l>
+             <l rend="firstIndent">Den <seg type="com" n="com7">Spøge-Doctor</seg>, naar <seg type="com" n="com3001">i Stæd</seg></l>
+             <l>Med Dødens <seg type="com" n="com8">Dyrendal</seg> ved Lænd</l>
+             <l rend="secondIndent">Han gaaer igien?</l>
+             <l>At stikke ham, I veed dog vel,</l>
+             <l rend="firstIndent">Imens han leved, var omsonst,</l>
+             <l rend="firstIndent">Har I nu lært den sorte Konst</l>
+             <l>At slaae <seg type="com" n="com3002">tilgavns</seg> en Død ihiel?</l>
+             <l rend="firstIndent">Nu vel, det blæser han kun af</l>
+             <l rend="firstIndent">Som i sit Liv, <seg type="com" n="com3003">saa</seg> i sin Grav,</l>
+             <l>Thi maae en Død i Græsset bide,</l>
+             <l>Er Vindingen paa <seg type="com" n="com3500">Knegtens</seg> Side.</l>
+             <l rend="firstIndent">Det sa'e han selv, mens han var frisk<note type="footnote"><p rend="noIndent">I <rs type="title" key="title1186">Kallundborgs Krønike</rs>; men da der kun er <hi rend="spaced">eet Pagina</hi> i mit Exemplar, som dog er et Hoved-Aftryk, kan jeg ikke tjene med nærmere Underretning. Imidlertid mener jeg der er et Huusraad, Mangen Een kunde være tjent med at følge, og Raadet er naturligviis: læs Rub og Stub. Var han nu ikke død, den Sjæl, vilde jeg især have hans Modstandere denne Læsning <seg type="com" n="com9">høilig</seg> anbefalet som Surrogat for en Reise til <placeName key="fak945">Anticyen</placeName>.</p></note>,
+             </l>
+             <l rend="firstIndent">Og smidskede saa fiin <seg type="com" n="com10">polisk</seg>,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax3.jpg" n="1427" subtype="column"/>Som om <seg type="com" n="com9000">alt</seg> da hans Tanke var</l>
+             <l>At holde godt Folk lidt for Nar</l>
+             <l rend="firstIndent">Med <seg type="com" n="com11">Dødningdands</seg> og Spøgerie,</l>
+             <l rend="firstIndent">Som han da <seg type="com" n="com3004">og</seg> blev Mester i.</l>
+          </lg>
+          
+          <lg n="3">
+             <l>Men, han er <seg type="com" n="com9013">Pokker</seg> ikke død;</l>
+             <l rend="firstIndent">Det kalder jeg en Nar, som troer</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="152"/>Den Skielmsmester paa hans Ord,</l>
+             <l rend="firstIndent">At han er lagt i sorten Jord.</l>
+             <l>Om saa han svor ved alle <rs type="myth" key="myth428">Muser</rs>,</l>
+             <l>Som han og hele Verden huser,</l>
+             <l rend="firstIndent">Ja ved de Ni og ved de Atten,</l>
+             <l rend="firstIndent">Ved <seg type="com" n="com12">Baggehund</seg> og Muse-Katten,</l>
+             <l>At troe ham jeg dog nok lod være,</l>
+             <l>En Død sig sagtens kan <seg type="com" n="com3005">forsvære</seg>;</l>
+             <l rend="firstIndent">Thi naar Man først er <seg type="com" n="com14">død ihiel</seg>,</l>
+             <l rend="firstIndent">Er Fingrene en Bagatel:</l>
+             <l>I Grav Man ei saa nøie seer</l>
+             <l>Paa et Par mindre eller meer.</l>
+          </lg>
+          
+          <lg n="4">
+             <l rend="firstIndent">Jeg seer jo nok han ligger der,</l>
+             <l>Hvad Tydsken kalder <seg type="com" n="com15">musedød</seg>,</l>
+             <l rend="firstIndent">Og lader som han tog saa nær</l>
+             <l>Sig Verden med dens Puf og Stød,</l>
+             <l>At han derover tog sin Død;</l>
+             <l rend="firstIndent">Men troe ham <seg type="com" n="com9014">Pokker</seg>, ikke jeg,</l>
+             <l rend="firstIndent">Det var hans Lyst, den Hurlumhei,</l>
+             <l>Og jeg mod een tør vedde tusend,</l>
+             <l>Han lurer som en Kat paa <hi rend="spaced">Musen.</hi></l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax3.jpg" n="1428" subtype="column"/>Han er en <seg type="com" n="com3006">Sællandsfar</seg> af <seg type="com" n="com17">Vælten</seg>,</l>
+             <l>Med hvem jeg i <seg type="com" n="com18">Styrvolt</seg></l>
+             <l>Saa halv om halv gad holdt</l>
+             <l rend="secondIndent">Til <seg type="com" n="com9001">Hælvten</seg>.</l>
+             <l>Nu ligger han og lurer paa <hi rend="spaced">Klør-Fire,</hi></l>
+             <l rend="firstIndent">Og sæt kun bare i!</l>
+             <l><pb type="edition" ed="PS" n="153"/>Saa faaer I <seg type="com" n="com3007">smurt jer Lire</seg></l>
+             <l rend="firstIndent">Med Hjerter-To og Hjerter-Ni,</l>
+             <l>(Naa, naa, godt Folk! hvortil den Maaben!)</l>
+             <l>Med <placeName key="fak15">Sællands</placeName> og med <rs type="myth" key="myth428">Musers</rs> Vaaben;</l>
+             <l rend="firstIndent">Og tænk da ei fra Jense-Mand</l>
+             <l rend="firstIndent">I slipper med en <seg type="com" n="com19">simpel Jan</seg>!</l>
+             <l>Nei, naar <seg type="com" n="com20">Besyven brænder inde</seg>,</l>
+             <l>Man <hi rend="spaced">Stik</hi> paa <hi rend="spaced">Stik</hi> kan sagtens vinde,</l>
+             <l rend="firstIndent">Og <hi rend="spaced"><seg type="com" n="com21">Frikort</seg>,</hi> veed I, giælder ikke,</l>
+             <l rend="firstIndent">Undtagen naar Man selv kan stikke;</l>
+             <l>Men hvad har I at stikke med,</l>
+             <l>Som skulde giøre Nogen ræd?</l>
+             <l rend="firstIndent">En <hi rend="spaced"><seg type="com" n="com22">Pavst</seg>!</hi> en <hi rend="spaced"><seg type="com" n="com23">Duus</seg>!</hi></l>
+             <l>Jo, det er <seg type="com" n="com1008">Tøi</seg> i Mellem-Haanden</l>
+             <l>At stikke med i <seg type="com" n="com1009">Vaanden</seg>!</l>
+             <l rend="firstIndent">Dem knækker som en Luus</l>
+             <l rend="secondIndent"><seg type="com" n="com24">Karneflen</seg> flux.</l>
+             <l rend="secondIndent">Det andet Jux:</l>
+             <l>En <seg type="com" n="com25">Fiirhak</seg> og en <seg type="com" n="com1001">Trist</seg>,</l>
+             <l>Det skal nok holde ham tilsidst!</l>
+             <l rend="firstIndent">Naar <hi rend="spaced"><seg type="com" n="com9002">Stikkerne</seg></hi> er ude,</l>
+             <l>Skal Stumperne nok staae!</l>
+             <l rend="firstIndent">Ja som i <seg type="com" n="com1010">Braaden-Rude</seg>,</l>
+             <l>Til de maae slænges paa.</l>
+             <l rend="firstIndent">Naar han tilsidst jer driller</l>
+             <l>Den Pigernes Smaa-Jens,</l>
+             <l>Og lader ganske <seg type="com" n="com3503">lens</seg>,</l>
+             <l rend="firstIndent">Og spiller,</l>
+             <l>Først efter meget Hovedbrud,</l>
+             <l>Sit <hi rend="spaced"><seg type="com" n="com26">Frikort</seg></hi> ud;</l>
+             <l rend="firstIndent">Saa er I, ja jeg glemde Ordet,</l>
+             <l rend="firstIndent">Saa kan I spille under Bordet.</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax4.jpg" n="1429" subtype="column"/>Men er der da slet ingen Maade</l>
+             <l>Til paa den <seg type="com" n="com1011">Vaande</seg> Bod at raade?</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="154"/>Kan Man ei spille <seg type="com" n="com3008">saa</seg> sit Kort,</l>
+             <l>At Man dog slap med <seg type="com" n="com27">simpel Jan</seg>,</l>
+             <l rend="firstIndent">Og fik sig praktiseret bort</l>
+             <l>Fra samme, slemme Jensemand?</l>
+          </lg>
+          
+          <lg n="6">
+             <l rend="firstIndent">Ja, veed I hvad, godt Folk!<note type="footnote"><p rend="noIndent">
+                <lg>
+                   <l>At ved &#x201C;godt Folk&#x201D; jeg dem forstaaer</l>             
+                   <l>Som fik i Fior hvad de fortiente,</l>             
+                   <l>Og har tilgode for i Aar</l>             
+                   <l>Endnu en Smule Renters Rente:</l>             
+                   <l rend="firstIndent">Det seer Man nok.</l>             
+                   <l>Og husker Man at <seg type="com" n="com3009">Fiorets Ex</seg></l>
+                   <l>Kan ogsaa <hi rend="spaced">sige: sex?</hi></l>             
+                   <l>Saa leer Man nok.</l>             
+                   <l>Løb <seg type="com" n="com28">Mester Erik</seg> stundum feil,</l>
+                   <l>Og løb forbi <hi rend="spaced">sit eget</hi> Speil:</l>             
+                   <l rend="firstIndent">Det saae Man nok,</l>             
+                   <l>Og er der Mangen <seg type="com" n="com3010">end</seg> som klø´r,</l>             
+                   <l>Og fik ei hvad <hi rend="spaced">til Dagen</hi> hør,</l>             
+                   <l rend="firstIndent">Saa faaer han nok.</l>             
+                   <l>Man ved godt Folk skal hver forstaae</l>             
+                   <l>Som fik, som faaer, og som skal <app type="corrNote" select="yes"><lem wit="GV">faae</lem><rdg wit="A">saae</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>             
+                   <l rend="firstIndent">Ja, I forstaaer mig nok.</l>
+                </lg>
+             </p>
+             </note>
+             </l>
+             <l>Naar I nu bare nogenlunde</l>
+             <l><seg type="com" n="com29">Holdt Stik for Stød</seg>, og rene Munde,</l>
+             <l rend="firstIndent">Saa stak kanskee vi nok den Dolk.</l>
+             <l>Jeg har just havt en gammel Amme,</l>
+             <l>Hun var en <seg type="com" n="com30">Sællandsmor</seg> den samme,</l>
+             <l rend="firstIndent">Og ligesom med al sin Konst</l>
+             <l>En <seg type="com" n="com3011">Sællandsfar</seg> blir aldrig Jyde,</l>
+             <l rend="firstIndent">Saalunde er det <seg type="com" n="com3012">og</seg> omsonst</l>
+             <l>En <seg type="com" n="com3013">Sællandsfar</seg> paa Jydsk at skyde;</l>
+             <l rend="firstIndent">Nu vel, med <seg type="com" n="com600">Lod og Krud</seg> just ikke,</l>
+             <l rend="firstIndent">Men hvad Man kalder skyde, stikke</l>
+             <l rend="secondIndent">I en <seg type="com" n="com33">Styrvolt</seg>.</l>
+             <l>Paa Jydsk Man stikker nok saa stolt,</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax4.jpg" n="1430" subtype="column"/><pb type="edition" ed="PS" n="155"/>Hvad dog gaaer lidt vel vidt,</l>
+             <l rend="firstIndent">Selv Hierter-To med <seg type="com" n="com5000">Skit</seg>,</l>
+             <l>Thi <seg type="com" n="com5001">Skit</seg> og <seg type="com" n="com5005">Myg</seg></l>
+             <l>Man ved er Konst-Udtryk</l>
+             <l rend="firstIndent">I <seg type="com" n="com34">Kortenspil</seg>,</l>
+             <l rend="firstIndent">For <seg type="com" n="com35">Udenvælts</seg>, om Man saa vil,</l>
+             <l>Men ogsaa for de bitte smaae</l>
+             <l><seg type="com" n="com3014">I Vælten</seg>, som kan aldrig staae,</l>
+             <l rend="firstIndent">Men <seg type="com" n="com3015">gaaer i Løbet</seg>,</l>
+             <l rend="firstIndent">Ja gaaer for Intet med i Kiøbet,</l>
+             <l>Da Man har aldrig ret udfundet</l>
+             <l>Hvor mangen Snees der gaaer paa Pundet,</l>
+             <l rend="firstIndent">Og til det <seg type="com" n="com5002">Skit</seg> jo hører <seg type="com" n="com3016">og</seg></l>
+             <l rend="firstIndent">Spa'r-Firelil, der giælder dog,</l>
+             <l>Saavidt som jeg har kunnet samle,</l>
+             <l>Paa Jydsk for Perlen af de Gamle.</l>
+             <l rend="firstIndent">Men naar med den paa Jydsk Man nikker,</l>
+             <l>Og tænker: <seg type="com" n="com9003">A</seg> stak vist,</l>
+             <l rend="firstIndent">Saa smiler <seg type="com" n="com3017">Sællandsfaren</seg> kun og stikker</l>
+             <l>Den <seg type="com" n="com38">Fiirhak</seg> med en <seg type="com" n="com3018">Trist</seg>,</l>
+             <l rend="firstIndent">Og siger derhos ganske tørt:</l>
+             <l>Det kalder jeg et Stik,</l>
+             <l rend="firstIndent">Nu fik jeg <seg type="com" n="com39">to Besyver ført</seg></l>
+             <l>Som for en Slik,</l>
+             <l rend="firstIndent">Og har den <seg type="com" n="com3019">Sællandsfar</seg> en Makker</l>
+             <l rend="firstIndent">Som er da ikke reent en <seg type="com" n="com41">Prakker</seg>,</l>
+             <l>Men kan staae bi</l>
+             <l>Med en Klø'r-Fire, Hierter-Ni,</l>
+             <l rend="firstIndent">Saa bli'r saamænd, saavidt,</l>
+             <l>Som jeg forstaaer <seg type="com" n="com42">Styrvolt</seg>,</l>
+             <l>Min Jyde <seg type="com" n="com43">Jan</seg>, og det fordi saa stolt</l>
+             <l rend="firstIndent">Han stak med <seg type="com" n="com5003">Skit</seg>.</l>
+             <l>Seer I, godt Folk! saa gaaer det til</l>
+             <l>I Kortenspil,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="156"/>Og bedre gaaer det ikke</l>
+             <l rend="firstIndent">Naar Man med <seg type="com" n="com5004">Skit</seg> vil stikke</l>
+             <l>Hvor det saa er, en <persName key="pe20">Sællandsfar</persName>,</l>
+             <l>Den Sag er klar;</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax5.jpg" n="1431" subtype="column"/>Og klart <seg type="com" n="com9004">alt</seg> som <hi rend="spaced">den klare Dag,</hi></l>
+             <l rend="firstIndent">Er end en anden Sag,</l>
+             <l>Og det er den, godt Folk!</l>
+             <l>I stak paa Jydsk den Dolk,</l>
+             <l rend="firstIndent">Og Jyder er I, men, desværre!</l>
+             <l rend="firstIndent">Før alle, <hi rend="spaced"><seg type="com" n="com9005">uden for</seg></hi> vor Herre;</l>
+             <l>Thi var I Jyder <hi rend="spaced">kun</hi> for Ham,</l>
+             <l>Saa bar I godt den Smule Skam,</l>
+             <l rend="firstIndent">Saavelsom og de Myggestik</l>
+             <l rend="secondIndent">I fik.</l>
+             <l>Men det er Tingen,</l>
+             <l>I er saagodt som Ingen,</l>
+             <l rend="firstIndent">Tilfælleds har I <seg type="com" n="com9080">Lyden</seg></l>
+             <l rend="firstIndent">Med <seg type="com" n="com3020">Sællandsfar</seg> og Jyden,</l>
+             <l>Thi I med <seg type="com" n="com3021">Skit</seg> <hi rend="spaced">giør Stik,</hi></l>
+             <l rend="firstIndent">Og kan ei taale Klikken,</l>
+             <l><seg type="com" n="com3022">Saa</seg> <seg type="com" n="com46">slaaer jer Bøsse <hi rend="spaced">Klik</hi></seg><hi rend="spaced">,</hi></l>
+             <l rend="firstIndent">Og I staaer slemt i <hi rend="spaced"><seg type="com" n="com9006">Stikken</seg>,</hi></l>
+             <l>Ja ligger under <hi rend="spaced">Stikket,</hi></l>
+             <l>Som Pokker ei gad ligget,</l>
+             <l rend="firstIndent">Og hvor, jo meer I <hi rend="spaced">stikle,</hi></l>
+             <l rend="firstIndent">I jer kun meer indvikle</l>
+             <l><seg type="com" n="com3023">I Lakken og i Lyden</seg>,</l>
+             <l>Som I <hi rend="spaced">stak</hi> i med Fryden.</l>
+          </lg>
+          
+          <lg n="7">
+             <l>Men, seer I nu vel! <hi rend="spaced">Dyden</hi></l>
+             <l>Ved <seg type="com" n="com3024">Sællandsfar</seg> og Jyden,</l>
+             <l rend="firstIndent">I har af alle Kræfter</l>
+             <l rend="firstIndent">Ei stræbt men <hi rend="spaced">skrevet efter,</hi></l>
+             <l>Og <hi rend="spaced">vævet</hi> artig <hi rend="spaced">om,</hi></l>
+             <l>Saae I nu, <hi rend="spaced">hvor</hi> den kom!</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="157"/>Nei, <seg type="com" n="com9015">Pokker</seg> heller! bilder I jer ind,</l>
+             <l rend="firstIndent">Den er en <seg type="com" n="com48">Pelts</seg> af Lammeskind</l>
+             <l>Til Skiul og Skrud</l>
+             <l>For Bræk og Brud,</l>
+             <l rend="firstIndent">Og alt det andet Snavserie</l>
+             <l rend="firstIndent">Der inden i?</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax5.jpg" n="1432" subtype="column"/>Nei, jeg vil tjene jer, godt Folk!</l>
+             <l>See, det er Dyden ved en Dolk,</l>
+             <l rend="firstIndent">At den er hvas,</l>
+             <l>Og det er Dyden ved en Hammer,</l>
+             <l>At den er haard, og rammer</l>
+             <l rend="firstIndent">Saa ret til Pas;</l>
+             <l>Og det er Dyden ved en Tang,</l>
+             <l>At den giør godt i <hi rend="spaced">Trang,</hi></l>
+             <l rend="firstIndent">At den kan naae en Næse,</l>
+             <l>Som ellers sad for høit,</l>
+             <l>Og klemme den saa drøit</l>
+             <l rend="firstIndent">At den la'r vær' at <seg type="com" n="com9007">blæse</seg>,</l>
+             <l>Ja klemme,</l>
+             <l rend="firstIndent">Om det saa var en Pave,</l>
+             <l>Saa han maa glemme</l>
+             <l rend="firstIndent">Saavel at giøe som <seg type="com" n="com3504">gabe</seg>.</l>
+             <l>Det <seg type="com" n="com3025">end</seg> er Dyden ved en Tang,</l>
+             <l>Naar den er dygtig lang:</l>
+             <l rend="firstIndent">Man kan med den fremføre,</l>
+             <l rend="firstIndent">Hvad ei er værdt at røre;</l>
+             <l>See, det er godt for Hænder,</l>
+             <l rend="firstIndent">Og tit for Næser med,</l>
+             <l>Og Tingen lugter, brænder</l>
+             <l rend="firstIndent">Dog paa sit rette Stæd.</l>
+             <l>Hvad er nu Dyden ved en Pidsk?</l>
+             <l>Det er, at den kan smække frisk,</l>
+             <l rend="firstIndent">Og snærte, saa der bliver Striber,</l>
+             <l rend="firstIndent">Og saa den Hund, Man rammer, piber,</l>
+             <l>Og saa Kameler, nok saa dovne,</l>
+             <l><pb type="edition" ed="PS" n="158"/>For smaa og store Vognmands-Vogne,</l>
+             <l rend="firstIndent">Faa'r Liv og trampe <seg type="com" n="com9008">saa</seg> for Børen,</l>
+             <l rend="firstIndent">At Skittet, staa'r om <hi rend="spaced">deres</hi> Øren.</l>
+             <l>Og det er Pidskens Hoveddyd,</l>
+             <l>Hvis Priis Man synge maae med Fryd,</l>
+             <l rend="firstIndent">At naar de unge, kaade <seg type="com" n="com49">Klodde</seg>,</l>
+             <l rend="firstIndent">Som har ei Skoe, end sige <seg type="com" n="com601">Brodde</seg>,</l>
+             <l>Men den Unode: midt i Flugten</l>
+             <l rend="firstIndent">I fuldt <hi rend="spaced">Gal-Op</hi></l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax6.jpg" n="1433" subtype="column"/>At slaae lidt op med Foden</l>
+             <l>Og blæse kun af Tugten;</l>
+             <l rend="firstIndent">Jeg siger: det er Hoved-Dyden,</l>
+             <l rend="firstIndent">Hvad <seg type="com" n="com50">Plaggen</seg> sagtens kalder Lyden</l>
+             <l>Ved Snerten, naar til Tid og Stæd</l>
+             <l>Den fører <hi rend="spaced">Lykken</hi> med,</l>
+             <l rend="firstIndent">Og kan <seg type="com" n="com9009">saa</seg> ved det samme <seg type="com" n="com9010">Spjat</seg></l>
+             <l rend="firstIndent">Just ret faae fat,</l>
+             <l>Og holde dygtig fast,</l>
+             <l>Saa <seg type="com" n="com51">Plaggelill</seg> faaer Skam og Last,</l>
+             <l rend="firstIndent">Og styrter paa sin Hals,</l>
+             <l rend="firstIndent">Og dandser sig en Vals</l>
+             <l>Med Benene i Luften.</l>
+          </lg>
+          
+          <lg n="8">
+             <l rend="firstIndent">Seer I, godt Folk!</l>
+             <l>Saaledes maae Fornuften,</l>
+             <l rend="firstIndent">Og jeg, dens ringe Tolk,</l>
+             <l>Betragte Tingen</l>
+             <l rend="firstIndent">Fra alle Sider; thi I veed,</l>
+             <l>Af alle <seg type="com" n="com9081">Lyder</seg> er jo ingen</l>
+             <l rend="firstIndent">Saa slem, som just <hi rend="spaced">Eensidighed.</hi></l>
+             <l>Den maae Man aldrig lide,</l>
+             <l rend="firstIndent">Sæt og, Man Nogen saae,</l>
+             <l rend="firstIndent">Som altid vilde staae</l>
+             <l>Paa Dydens og Fornuftens Side;</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="159"/>Man er jo dog lidt meer end Aand,</l>
+             <l><seg type="com" n="com3027">Og</seg> Dyd og Tanke,</l>
+             <l rend="firstIndent">Vort Kiød har ganske artig Haand</l>
+             <l>Med os i Hanke,</l>
+             <l rend="firstIndent"><seg type="com" n="com9011">Og</seg> Pligter vi mod Kiødet har,</l>
+             <l rend="firstIndent">Den Sag er klar.</l>
+             <l>Og vilde vi os fra dem stjæle,</l>
+             <l>Os fulgde Straffen flux i Hæle;</l>
+             <l rend="firstIndent">See, derfor giælder det, min Troe!</l>
+             <l rend="firstIndent">Sig mellem Pligterne at snoe,</l>
+             <l rend="secondIndent">Saa hver faaer Sit,</l>
+             <l rend="secondIndent">Og alle <hi rend="spaced">Lidt;</hi></l>
+             <l>Saa Ingen af dem skal <seg type="com" n="com3028">sig smørre</seg>,</l>
+             <l>Saa de kan alle <hi rend="spaced">ligge tørre.</hi></l>
+             <l rend="firstIndent">Ja, elsker selv en Bjørn</l>
+             <l rend="firstIndent">Jo sine <hi rend="spaced">kiødelige</hi> Børn;</l>
+             <l>Hvad skal Man kalde den, der svigter</l>
+             <l>Selv sine <hi rend="spaced">kiødelige</hi> Pligter!</l>
+          </lg>
+          
+          <p rend="right"><hi rend="spaced">(Fortsættes.)</hi></p>
+          
+       </div>
+       
+       <div type="Rimelige Strøe-Tanker [2]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax7.jpg" n="1441" subtype="column" rend="supp"/>
+          
+          <head rend="2"><seg type="com" n="com52">Rimelige</seg> Strøe-Tanker.</head>
+          
+          <p rend="center">(Fortsættelse; se forr. No.)</p>
+          
+          <lg n="9">
+             <l><hi rend="initial">S</hi>ee, det var nu en Episode,</l>
+             <l>Som for det Første har det Gode,</l>
+             <l rend="firstIndent">At den slaaer ind i Tidens Aand,</l>
+             <l>Og slaaer paa det forkeerte <seg type="com" n="com9012">Sind</seg>,</l>
+             <l rend="firstIndent">At vi af Kiødet skal <seg type="com" n="com3029">slage</seg> Haand</l>
+             <l>Og snærpe vore Pligter ind,</l>
+             <l rend="firstIndent">Saa vi, hvem kan fordøie Sligt?</l>
+             <l rend="firstIndent">Tilsidst kun fik den ene Pligt,</l>
+             <l>At være som en Steen imod</l>
+             <l>Vort eget Kiød og Blod,</l>
+             <l rend="firstIndent">Og staae, til vi i Græsset bide,</l>
+             <l rend="firstIndent"><hi rend="spaced">Ensidig</hi> paa vor Herres Side.</l>
+          </lg>
+          
+          <lg n="10">
+             <l><pb type="edition" ed="PS" n="160"/>Seer I, det slog jo ganske net</l>
+             <l rend="firstIndent">Ind i jert Hovedfag: Moralen,</l>
+             <l>Men, hvis jeg ikke regner slet,</l>
+             <l rend="firstIndent">Saa slog det ogsaa ind i Talen;</l>
+             <l>Thi Talen, som I vel kan huske,</l>
+             <l>Var om den <seg type="com" n="com53">Baggehund</seg> at <seg type="com" n="com54">kuske</seg>,</l>
+             <l rend="firstIndent">Og da Man aldrig <seg type="com" n="com55">kudsker</seg> ret</l>
+             <l rend="firstIndent">Den Hund, Man kiender ikkun slet,</l>
+             <l>Saa maatte jeg jer ogsaa huske</l>
+             <l>Paa <hi rend="spaced">hvem</hi> det var, vi skulde <seg type="com" n="com3030">kudske</seg>,</l>
+             <l rend="firstIndent">Og kiæmpe mod Eensidigheden,</l>
+             <l rend="firstIndent">Som kun bekom jer slet forleden;</l>
+             <l>Thi det er slemt, som I maae vide,</l>
+             <l>At ha'e <hi rend="spaced">Profiten</hi> paa sin Side.</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax7.jpg" n="1442" subtype="column" rend="supp"/>See, nu er vi jo midt i Talen;</l>
+             <l rend="firstIndent">Thi Talen var jo om, hvorvidt</l>
+             <l>I maalde med jer egen Alen,</l>
+             <l rend="firstIndent">Og det var Skit.</l>
+             <l>Nu staa'r jeg just og maaler Ka'len,</l>
+             <l>Jeg mener med hans egen Alen,</l>
+             <l rend="firstIndent">Før kan vi ei, selv under Muld,</l>
+             <l rend="firstIndent">Ham <seg type="com" n="com56">maale Skieppen fuld</seg>.</l>
+             <l>Og, veed I hvad, godt Folk!</l>
+             <l>Der ligger nu den <seg type="com" n="com3031">Dolk</seg>,</l>
+             <l rend="firstIndent">Ja ligger, som just ikke</l>
+             <l rend="firstIndent">Jeg selv gad ligge;</l>
+             <l rend="secondIndent">Men, sandt at sige,</l>
+             <l rend="secondIndent">Jeg veed just ei saa lige,</l>
+             <l>Om ei, naar Man seer dybt i Tingen,</l>
+             <l>Man ser kun Faa, om ikke Ingen,</l>
+             <l rend="firstIndent">Paa denne Kirkegaard, hvis Plads</l>
+             <l rend="firstIndent">En ærlig Mand var meer tilpas.</l>
+             <l>Ja, ja, <seg type="com" n="com57">giør I kun Mule</seg></l>
+             <l rend="firstIndent">Saameget som I vil!</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="161"/>Men Hjertet aldrig jeg giør til</l>
+             <l rend="secondIndent">En Røverkule.</l>
+             <l rend="firstIndent">Ja, veed I hvad?</l>
+             <l>Naar jeg betænker Alt med Alt,</l>
+             <l>Og naar det skulde være galt,</l>
+             <l rend="firstIndent">Jeg heller ligge gad</l>
+             <l>Hos ham, endskiøndt jeg negter ikke,</l>
+             <l>Der maatte <seg type="com" n="com58">Pokker</seg> ligge;</l>
+             <l rend="firstIndent">Men, ligemeget, <seg type="com" n="com3032">faae</seg> den Skam,</l>
+             <l rend="firstIndent">Der ikke heller laae med ham,</l>
+             <l>End gik med jer paa Krykker,</l>
+             <l rend="firstIndent">Ja, løb med jer <seg type="com" n="com9016">i Taaget</seg>,</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax8.jpg" n="1443" subtype="column"/>I Tanker og i Sproget,</l>
+             <l>Ja gik med jer i Stykker</l>
+             <l rend="firstIndent">Som Potteskaar og <seg type="com" n="com59">Glar</seg>,</l>
+             <l>Ja, faldt med jer i Staver</l>
+             <l>Som Borgermester-Maver,</l>
+             <l rend="firstIndent">Som gamle Bryggerkar.</l>
+          </lg>
+
+          <lg n="11">
+             <l>Hvad? mukker I? Aa Fias!</l>
+             <l>Forstaaer I ingen Spas?</l>
+             <l rend="firstIndent">Saa var det <seg type="com" n="com60">ingen Under</seg>,</l>
+             <l>At han, jeg maaler paa,</l>
+             <l rend="firstIndent">Som aldrig gav sig Stunder</l>
+             <l>Til <hi rend="spaced">Andet</hi> at forstaae,</l>
+             <l rend="firstIndent">Og var Professor i'en,</l>
+             <l rend="firstIndent">I Spas, i Poesien,</l>
+             <l>Saa nemt jer kunde <seg type="com" n="com9017">viske</seg>,</l>
+             <l>Ja, tog jer som en <seg type="com" n="com9018">Svidske</seg>.</l>
+             <l rend="firstIndent">Saa var det <seg type="com" n="com9019">ingen Under</seg>,</l>
+             <l>At i det hele Spil</l>
+             <l rend="firstIndent">Han slap for Stik og <seg type="com" n="com61">Vunder</seg>,</l>
+             <l>Og blev kun svinet til.</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="162"/>Hvad sa'e I? Pølsesnak!</l>
+             <l>Ja, ja, men hør kun bare!</l>
+             <l>Saa skal jeg ret forklare</l>
+             <l rend="firstIndent">Jer, hvori Feilen stak.</l>
+             <l>I skiældte ham paa Dansk og Tydsk,</l>
+             <l rend="firstIndent">I skiældte ind, I skiældte ud,</l>
+             <l>I vilde <seg type="com" n="com62">lægge ham i Lud</seg></l>
+             <l rend="firstIndent">Og banke ham paa Jydsk,</l>
+             <l>Som om han var en <seg type="com" n="com63">Træskoe-Visk</seg>,</l>
+             <l rend="firstIndent"><seg type="com" n="com64">En Bergefisk</seg>.</l>
+             <l>I vilde dyppe ham i Skarn,</l>
+             <l rend="firstIndent">Og ikke i hans eget Fedt,</l>
+             <l>Skiøndt aldrig noget <seg type="com" n="com3033">Moersbarn</seg></l>
+             <l rend="firstIndent">Gav bedre Leilighed til det.</l>
+             <l>I vilde taabelig ham salte</l>
+             <l>Som eders Sø'r og Galte,</l>
+             <l rend="firstIndent">Og kunde ei opdage,</l>
+             <l rend="firstIndent">Kun i sin egen Lage</l>
+             <l rend="secondIndent">Kan saltes overalt</l>
+             <l rend="secondIndent">Hvad af Natur er salt.</l>
+             <l>I gik ham ei paa Klingen,</l>
+             <l rend="firstIndent">Som det er <seg type="com" n="com1012">Kiæmpe-Sæd</seg>,</l>
+             <l>Ja, ei engang til Bringen,</l>
+             <l rend="firstIndent">Men til et andet Stæd.</l>
+             <l>De Fleste kun paa lang Distants</l>
+             <l>Fra Posten hans</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax8.jpg" n="1444" subtype="column"/><seg type="com" n="com3034">Slog Kneps i Lommen</seg>, raabde: Bæ!</l>
+             <l rend="firstIndent">Imens den hele spæ, spæ, spæ,</l>
+             <l>Ja, spæde Flok, <seg type="com" n="com3035">end</seg> længer fra</l>
+             <l>Kun hviskede saa smaat: da-da;</l>
+             <l rend="firstIndent">Og de som, <hi rend="spaced">bag ud,</hi> kom ham nær,</l>
+             <l rend="firstIndent">De kom dog kun med <seg type="com" n="com65">Kyst-Gevæhr</seg>:</l>
+             <l rend="secondIndent">Med <hi rend="spaced">Spidse</hi>-Blad</l>
+             <l rend="thirdIndent">Paa langen Raft,</l>
+             <l rend="secondIndent"><pb type="edition" ed="PS" n="163"/>Med <hi rend="spaced">Leen</hi> flad</l>
+             <l rend="thirdIndent">Paa <hi rend="spaced">Øxeskaft:</hi></l>
+             <l rend="firstIndent">Kort sagt, alt som en <hi rend="spaced">Tærsker-Loe,</hi></l>
+             <l>Som hvad der maae til Kvæg paa Stald</l>
+             <l>Til Knald og Fald</l>
+             <l rend="firstIndent">Paa Mark opgroe,</l>
+             <l rend="secondIndent">De giæsted ham,</l>
+             <l rend="secondIndent">Og høsted Skam.</l>
+             <l rend="firstIndent">Med andre Ord:</l>
+             <l rend="firstIndent">De paa ham foer,</l>
+             <l>Som han var <hi rend="spaced">den <persName key="pe1710">Jens <app type="corrNote" select="yes"><lem wit="GV">Langekniv</lem><rdg wit="A">Langek<g rend="reverse" rendition="rotate">u</g>iv</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></persName>,</hi></l>
+             <l rend="firstIndent">Om hvem mig Jyder har fortalt,</l>
+             <l rend="firstIndent">Hvad der vel ei er Sandhed Alt,</l>
+             <l>Men som dog vel har havt et Liv</l>
+             <l rend="firstIndent">Engang <seg type="com" n="com9020">forleden</seg>,</l>
+             <l rend="firstIndent">Og slemt huseret paa <hi rend="spaced"><placeName key="fak946">Alheden</placeName>.</hi></l>
+             <l>Men, Bitterdød! kanskee</l>
+             <l rend="firstIndent">I havde Ret, godt Folk!</l>
+             <l>Kom, lad os see</l>
+             <l rend="firstIndent">Ret paa den Kniv og Dolk!</l>
+             <l>Kanskee forandrer jeg min Mening,</l>
+             <l rend="firstIndent">Som jeg vel ogsaa maae,</l>
+             <l>Hvis vi i inderlig Forening</l>
+             <l rend="firstIndent">Skal Fienden slaae.</l>
+             <l>Nu, jeg skal heller aldrig nægte,</l>
+             <l>Hinanden ligne de to Knægte</l>
+             <l rend="firstIndent">I Tidens <hi rend="spaced">Spand</hi></l>
+             <l rend="firstIndent">Jo som to Draaber Vand;</l>
+             <l rend="secondIndent">Thi, seer I! nu</l>
+             <l rend="secondIndent">Er Krop og Hu</l>
+             <l rend="firstIndent">Jo Hip som Hap,</l>
+             <l rend="firstIndent">Og <seg type="com" n="com66">Skurv</seg> som <seg type="com" n="com67">Skab</seg>,</l>
+             <l>Og Ræv som røde Hunde.</l>
+             <l rend="firstIndent">See! <persName key="pe20">Jens</persName> de heed jo begge To,</l>
+             <l rend="firstIndent">Og paa <hi rend="spaced"><placeName key="fak946">Alheden</placeName>,</hi> kan jeg troe,</l>
+             <l><pb type="edition" ed="PS" n="164"/>De begge gik til <seg type="com" n="com3501">Gru</seg> og Grunde.<note type="footnote"><p rend="noIndent">
+                      <lg>
+                         <l>Da Somme ei er hiemme i</l>
+                         <l>Vort Fædrelands Geographie,</l>
+                         <l><pb type="text" ed="A" facs="1815_263_fax9.jpg" n="1445" subtype="column"/>Jeg faa'r vel <seg type="com" n="com3036">melle</seg> om <placeName key="fak946">Alheden</placeName>:</l>
+                         <l>Det er den store jydske <seg type="com" n="com69">Heed</seg>,</l>
+                         <l>I hvilket Amt jeg ikke veed,</l>
+                         <l>Men <hi rend="spaced"><placeName key="fak947">Silkeborg</placeName></hi> det heed forleden.</l>
+                         <l>Derover i min Barndom</l>
+                         <l>Til Vogns jeg <seg type="com" n="com9021">alt imellem</seg> kom,</l>
+                         <l>Og saae, at der paa Heden gro'de</l>
+                         <l><hi rend="spaced">Kartofler</hi> meest, for Resten Rug,</l>
+                         <l>Men kun til høist nødtørftig Brug,</l>
+                         <l>Og hørde at der Ingen bo'de,</l>
+                         <l>Nu paa den egenlige <seg type="com" n="com3037">Heed</seg>,</l>
+                         <l>Undtagen halv forløbne Tydske,</l>
+                         <l>Saa halv catholske, grumme brydske,</l>
+                         <l>Som ikke Skat og <seg type="com" n="com70">Ti'nde</seg> <seg type="com" n="com71">leed</seg>.</l>
+                         <l>De kom her i den Syv-Aars Krig,</l>
+                         <l>Og fik særdeles gode Kaar,</l>
+                         <l>Men trak dog siden Aar for Aar</l>
+                         <l>Med Pik og Pak ad <placeName key="fak21">Tydsker-Riig</placeName>,</l>
+                         <l>Og vi beholdt kun <seg type="com" n="com72">Skrab</seg> tilbage,</l>
+                         <l>Som gjorde sig knap den Umage</l>
+                         <l>Med <seg type="com" n="com73">Tag og Fag</seg> at <seg type="com" n="com3038">bøde</seg> lidt</l>
+                         <l>Paa Husene, de <seg type="com" n="com3039">finge</seg> frit,</l>
+                         <l>End sige, som var deres Pligt,</l>
+                         <l>At giøre Husene til Gaarde;</l>
+                         <l>Jeg hørde meget andet Sligt,</l>
+                         <l>Som og maaskee kan rimet vorde;</l>
+                         <l>Af danske Træ'r, for Rimets Skyld,</l>
+                         <l>Jeg høist kun saae lidt Piil og Hyld;</l>
+                         <l>Men Naaletræer, bitte smaae,</l>
+                         <l>Bag Tørvedigerne jeg saae,</l>
+                         <l>Og Kirken stod saa kort og lav</l>
+                         <l>Som et Kapel paa Mortens Grav.</l>
+                      </lg>
+                   </p>
+                </note>
+             </l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax9.jpg" n="1445" subtype="column"/>Nu <persName key="pe1710">Langekniven</persName>, kan jeg troe,</l>
+             <l>Sad hist i Haand og her i Munde,</l>
+             <l rend="firstIndent">Men var dog hos dem begge To</l>
+             <l>Saa det kan rime <hi rend="spaced">nogenlunde.</hi></l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="165"/>Vel møder Folk Man paa sin Vei,</l>
+             <l rend="firstIndent">Som sige vil, det rimer ei;</l>
+             <l>At Lighed mellem Mund og Haand</l>
+             <l rend="firstIndent">Er dog kun <hi rend="spaced">Fattigdom</hi> i Grunden,</l>
+             <l rend="firstIndent">Kun som af Haanden og i Munden,</l>
+             <l>Men den er dog i Tidens Aand,</l>
+             <l rend="firstIndent">Og passer godt sig paa <placeName key="fak946">Alheden</placeName>,</l>
+             <l rend="firstIndent">Som I kan see herunderneden,</l>
+             <l>Og hvad der er i Tidens Aand,</l>
+             <l rend="firstIndent">Det altid har en vigtig Grund;</l>
+             <l>Thi snakker Man paa egen <hi rend="spaced">Haand,</hi></l>
+             <l rend="firstIndent">Saa siger Tiden: hold Din <hi rend="spaced">Mund!</hi></l>
+             <l>Og naar Man faaer en Dask paa <hi rend="spaced">Munden</hi></l>
+             <l rend="firstIndent">Med <hi rend="spaced">Næver,</hi> ret i Tidens Aand,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax9.jpg" n="1446" subtype="column"/>Saa ta'r, hvem der <hi rend="spaced">kun</hi> seer til Grunden,</l>
+             <l rend="firstIndent">Jo Skeen i en anden <hi rend="spaced">Haand,</hi></l>
+             <l>Og stikker En Man lidt i <hi rend="spaced">Haanden,</hi></l>
+             <l rend="firstIndent">Saa holder han jo kiønt sin <hi rend="spaced">Mund,</hi></l>
+             <l>Og naar Man altsaa seer paa <hi rend="spaced">Aanden,</hi></l>
+             <l rend="firstIndent">Forstaae mig ret! <hi rend="spaced">til Tid og Stund,</hi></l>
+             <l>Saa er dog Haand og Mund i Grunden</l>
+             <l>I visse Maader nær forbunden,</l>
+             <l rend="firstIndent">Al Lighed har jo dog en <seg type="com" n="com9022">Lammen</seg>,</l>
+             <l rend="firstIndent">Og hvad der saadan hænger sammen,</l>
+             <l>I visse Maader paa det Halve,</l>
+             <l>Kan hænge sammen saa i alle.</l>
+             <l rend="firstIndent">Nu veed jeg nok, jeg er en Tosse,</l>
+             <l>Særdeles i Metaphysik,</l>
+             <l rend="firstIndent">Og kan ei i mit Hoved <seg type="com" n="com3040">rosse</seg></l>
+             <l>Den kolossale ny Logik;</l>
+             <l rend="firstIndent">Jeg veed <seg type="com" n="com3041">og</seg> nok, at det <seg type="comStart" n="com74"/><hi rend="romanType">a posse</hi></l>
+             <l><hi rend="romanType">Ad esse</hi><seg type="comEnd" n="com74"/> skal ei holde Stik,</l>
+             <l rend="firstIndent">Men see, om derfor jeg gi'r <app type="corrNote" select="yes"><lem wit="GV">tabt!</lem><rdg wit="A">taft!</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+             <l rend="firstIndent">Hvem har vel nu den Haand paa Skaft,</l>
+             <l>Saa haard, og dertil uforskammet,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="166"/>At den tør stikke mig, naar jeg</l>
+             <l rend="firstIndent">Betræder slagne Landevei,</l>
+             <l>Og Tidens Aand har rigtig rammet,</l>
+             <l rend="firstIndent">Og at jeg ramde den, det veed</l>
+             <l rend="firstIndent">Jeg med en god Samvittighed,</l>
+             <l>For den Ting kan jeg saamænd vise</l>
+             <l rend="firstIndent">Et heelt Læs Sort paa Hvidt,</l>
+             <l>Af smaa og store <seg type="com" n="com75">Verdsligvise</seg>,</l>
+             <l rend="firstIndent">Som viisde med Exempler tit,</l>
+             <l>At naar man skynder sig og læsser,</l>
+             <l>Kan <hi rend="spaced"><seg type="com" n="com76">Posser</seg></hi> gierne gaae for <hi rend="spaced"><seg type="com" n="com77">Esser</seg>.</hi></l>
+             <l rend="firstIndent">Jeg veed jo sagtens nok en Haand,</l>
+             <l>Som ei var bange for i Grunden,</l>
+             <l rend="firstIndent">At <seg type="com" n="com9023">næseknepse</seg> Tidens Aand,</l>
+             <l>Men det var just en <hi rend="spaced">Haand i Munden,</hi></l>
+             <l rend="firstIndent">Og sæt, den var <seg type="com" n="com9024">end</seg> i sin Kraft,</l>
+             <l rend="firstIndent">Og ikke fløiet reent af Skaft,</l>
+             <l>Saa, om den mig <seg type="com" n="com9025">og</seg> stikke kunde,</l>
+             <l>Den <hi rend="spaced">derfor</hi> stak mig ingenlunde,</l>
+             <l rend="firstIndent">At Kniv i Mund og Kniv i Haand</l>
+             <l rend="firstIndent">Jeg kalder Eet i Tidens Aand,</l>
+             <l>Før stak vi vore Hov'der sammen,</l>
+             <l>Og kappedes i Aandens <seg type="com" n="com9026">Rammen</seg>.</l>
+          </lg>
+          
+          <p rend="right">(Fortsættes.)</p>
+          
+       </div>
+       
+       <div type="Rimelige Strøe-Tanker [3]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax10.jpg" n="1457" subtype="column" rend="supp"/>
+          
+          <head rend="2"><seg type="com" n="com78">Rimelige</seg> Strøe-Tanker.</head>
+          
+          <p rend="center">(Fortsættelse; see forr. No.)</p>
+          
+          <lg n="12">
+             <l><hi rend="initial">D</hi>e tvende knivelange Jenser</l>
+             <l>Paa Heden til hinanden grændser</l>
+             <l rend="firstIndent">Fremdeles op,</l>
+             <l rend="firstIndent">Som Aand og Krop,</l>
+             <l>Hvis sandt er alt</l>
+             <l rend="firstIndent">Det hartad Tydske</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="167"/>Som Jyder om den jydske</l>
+             <l>Har mig fortalt.</l>
+             <l rend="firstIndent">Nu siger jeg vel: <seg type="com" n="com9027">Pokker</seg> heller!</l>
+             <l rend="firstIndent">Naar Jyderne mig Sligt fortæller,</l>
+             <l>Men da det passer i vort Kram,</l>
+             <l>Og duer til at stikke ham,</l>
+             <l rend="firstIndent">Jeg mener nu,</l>
+             <l>Saa var det baade <seg type="com" n="com79">Spot</seg> og Skam</l>
+             <l rend="firstIndent">Om jeg kom ei det Sagn ihu:</l>
+             <l rend="secondIndent">&#x201C;Han otte Barnehierter aad,</l>
+             <l rend="secondIndent">Men klagede med Suk og Graad</l>
+             <l rend="secondIndent">At færdigt ei, til sin Ulykke,</l>
+             <l rend="secondIndent">Han rigtig fik sit Mesterstykke;</l>
+             <l rend="secondIndent">Thi havde <hi rend="spaced">ni</hi> han kun fordøiet,</l>
+             <l rend="secondIndent">Saa kunde han i Luften fløiet,</l>
+             <l rend="secondIndent">Ja, fløiet <seg type="com" n="com9028">Pokkeren</seg> i Vold</l>
+             <l rend="secondIndent">I god Behold.&#x201D;</l>
+          </lg>
+
+
+          <lg n="13">
+             <l>Forstaar sig selv, det er et <seg type="com" n="com3042">Æmter</seg>,</l>
+             <l rend="firstIndent">Men, som Man veed, i Eventyr</l>
+             <l rend="firstIndent">Er Jyden just en <seg type="com" n="com9029">Pokkers</seg> Fyr,</l>
+             <l>Det er hans Alvor, naar han skiemter</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax10.jpg" n="1458" subtype="column" rend="supp"/>Og saavidt er jeg selv lidt jydsk,</l>
+             <l rend="firstIndent">Og hverken vesselsk eller tydsk,</l>
+             <l>Ja, skiøndt en <seg type="com" n="com3043">Sællandsfar</seg> i Munden,</l>
+             <l>Jeg er oprigtig jydsk i Grunden,</l>
+             <l rend="firstIndent">Og derfor jeg i <seg type="com" n="com3044">sællandsk</seg> Maal</l>
+             <l rend="firstIndent">Vil række nu en Jyde-Skaal</l>
+             <l>Til ham, der vel er død i Munden,</l>
+             <l>Men lever dog nok lidt i Grunden.</l>
+             <l rend="firstIndent">Jeg mener da, poetisk talt,</l>
+             <l>Den <seg type="com" n="com81">musedøde</seg> <seg type="com" n="com3045">Sællandsfa'r</seg></l>
+             <l>Om ikke synes nu, saa har</l>
+             <l rend="firstIndent">Dog syntes, det var ei saa galt,</l>
+             <l rend="center"><pb type="edition" ed="PS" n="168"/>At æde op i Poesie</l>
+             <l rend="center">En <hi rend="spaced">Hjerter-Ni,</hi></l>
+             <l rend="firstIndent">Og flyve saa dermed i Luften</l>
+             <l rend="firstIndent">Fra Fornuften;</l>
+             <l>Ja regner ei jeg grumme slet,</l>
+             <l>Saa har han alt de otte ædt</l>
+             <l rend="firstIndent">Af Muse-Barne-Hjerter ni,</l>
+             <l rend="firstIndent">Som der var Vinge-Spirer i;</l>
+             <l>Og havde Tallet fuldt han faaet,</l>
+             <l>Han fra Forstanden vist var gaaet,</l>
+             <l rend="firstIndent">Om ikke fløiet høit i Luften</l>
+             <l rend="secondIndent">Fra Fornuften,</l>
+             <l rend="firstIndent">Ja, fløiet <seg type="com" n="com9030">Pokkeren</seg> i Vold</l>
+             <l rend="firstIndent">I god Behold.</l>
+             <l>Jeg vil da troe, han til sin Lykke</l>
+             <l>Ei færdigt fik det Mesterstykke,</l>
+             <l rend="firstIndent">Og var han nu ei netop død,</l>
+             <l>Saa vilde jeg, som Ven, ham raade</l>
+             <l rend="firstIndent">At æde heller Salt og Brød,</l>
+             <l>Og ta'e det niende til Naade;</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax11.jpg" n="1459" subtype="column"/>Og vædde tør jeg Ti mod Een,</l>
+             <l>At der i det er <seg type="com" n="com3046">end</seg> en Vinge,</l>
+             <l rend="firstIndent">Hvormed han over Stok og Steen</l>
+             <l>Sig kunde magelig opsvinge,</l>
+             <l rend="firstIndent">Og smile paa den høie Tind,</l>
+             <l>Og smile under <seg type="com" n="com83">hvalvte Bue</seg>,</l>
+             <l>Naar Verden fra sin Myre-Tue</l>
+             <l rend="firstIndent">Skiød efter ham i Veir og Vind</l>
+             <l rend="secondIndent">Sin hvide Pind.</l>
+          </lg>
+
+
+          <lg n="14">
+             <l>Nu kommer Raadet lidt for silde,</l>
+             <l>Hvis han er død, og det var ilde;</l>
+             <l rend="firstIndent">Men det er jo dog klart og reent,</l>
+             <l>Naar Man seer dybt i Tingen;</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="169"/>En <hi rend="spaced"><seg type="com" n="com84">Prosit</seg>,</hi> som kom lidt vel seent,</l>
+             <l>Er bedre end aldeles ingen:</l>
+             <l rend="firstIndent">Og er Personen, som jeg <seg type="com" n="com3047">meen</seg>,</l>
+             <l rend="firstIndent">Kun <seg type="com" n="com3048">vildød</seg>, saa er han ei Steen,</l>
+             <l>Og <hi rend="spaced">hartad Steen</hi> jo ynkes maae</l>
+             <l>Dog over Barne-Hjerter smaae,</l>
+             <l rend="firstIndent">Og spare eet dog af de ni,</l>
+             <l rend="firstIndent">Som der var Vinge-Spirer i.</l>
+             <l>See nu, godt Folk!</l>
+             <l rend="firstIndent">Det var oprigtig Jydsk,</l>
+             <l rend="firstIndent">Skiøndt det for jer var Tydsk,</l>
+             <l>Og trængde høit til Tolk;</l>
+             <l rend="firstIndent">Og deraf kan I mærke,</l>
+             <l>At I, saavel i Tydsken,</l>
+             <l>Som selv endog i Jydsken</l>
+             <l rend="firstIndent">Er ikke meget stærke,</l>
+             <l>Undtagen, for saavidt,</l>
+             <l>Som Jydsk og Tydsk er Skit,</l>
+             <l rend="firstIndent">Ja er, som sagt, desværre!</l>
+             <l rend="firstIndent">Ei Jyder for vor Herre.</l>
+             <l>Kom nu! saa gaaer vi hen</l>
+             <l>Paa <seg type="com" n="com9031">sællandsk</seg> Grund igien,</l>
+             <l rend="firstIndent">Og kys mig saa paa Haanden,</l>
+             <l>Fordi jeg har beviist saa klart,</l>
+             <l rend="secondIndent">Og aabenbart,</l>
+             <l rend="firstIndent">At naar som Krop Man tager Aanden,</l>
+             <l>Hvad netop er i Tidens Smag,</l>
+             <l>Saa er det <seg type="com" n="com3049">og</seg> en afgiort Sag,</l>
+             <l rend="firstIndent">At Jenserne saa nogenlunde</l>
+             <l rend="firstIndent">I Alt hinanden ligne kunde,</l>
+             <l><hi rend="romanType"><seg type="com" n="com200">Et coetera</seg></hi> hvad deraf flyder</l>
+             <l>Om Vaaben og om Helte-Dyder;</l>
+             <l rend="firstIndent">Og kan i Tidens Aand nu <seg type="com" n="com85">Posser</seg></l>
+             <l rend="firstIndent">For gode <seg type="com" n="com86">Esser</seg> gaae, saa trodser</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax11.jpg" n="1460" subtype="column"/><pb type="edition" ed="PS" n="170"/>Jeg hver, der siger, at som Helte</l>
+             <l><persName key="pe20">Jens Baggesen</persName> I ikke fældte.</l>
+          </lg>
+
+
+          <lg n="15">
+             <l>Det kosted, min Troe, Hovedbrud,</l>
+             <l>At regne sligt et Stykke ud</l>
+             <l rend="firstIndent">Og ikke slaae en <seg type="com" n="com87">Svinke</seg>;</l>
+             <l>Kom nu igien og kald Peer Degn</l>
+             <l rend="secondIndent">En Sinke!</l>
+             <l>Det er nu Moden i vor Egn</l>
+             <l rend="firstIndent">At lade haant om Degne,</l>
+             <l>Og det skal hede, kan jeg troe,</l>
+             <l rend="firstIndent">At vi kan ikke regne,</l>
+             <l>Saadan, saa <seg type="com" n="com88">alamodisk</seg>,</l>
+             <l>Som dem, der er methodisk</l>
+             <l rend="firstIndent"><seg type="com" n="com9032">Trakt op</seg>, jo, jo,</l>
+             <l>Jo, jo, I <seg type="com" n="com89">Degne-Stikler</seg>!</l>
+             <l>Det er nok <seg type="com" n="com9033">fede Mikkler</seg>,</l>
+             <l rend="firstIndent">Nei, vi er fra i Fior,</l>
+             <l>Da drypped det paa Degnen,</l>
+             <l>Naar Præsterne fik Regnen,</l>
+             <l rend="firstIndent">Men, (ikke mine Ord!</l>
+             <l>Thi Silke spinder Man ei ved</l>
+             <l>At klamres med sin Øvrighed)</l>
+             <l rend="firstIndent">Nu drypper det, min Troe, paa Præsten,</l>
+             <l rend="firstIndent">Hvad er der saa til hele Resten?</l>
+          </lg>
+
+
+          <lg n="16">
+             <l>I tænker nok, godt Folk! jeg hus'de</l>
+             <l rend="firstIndent">Ei hvor jeg skulde hen?</l>
+             <l>Jo, jo, men Man har Lov at puste,</l>
+             <l rend="firstIndent">Og nu til Tjeneste jeg er igien.</l>
+             <l>Men sæt nu <seg type="com" n="com3050">og</seg>, at som det lød,</l>
+             <l>Den <seg type="com" n="com90">Sællandsfa'r</seg> er <seg type="com" n="com91">Muse-død</seg>,</l>
+             <l rend="firstIndent">Og ligger ikke med det Bedste,</l>
+             <l>Og at I slog til Stadens Vel</l>
+             <l rend="secondIndent">Den <seg type="com" n="com3051">Dolk</seg> ihiel,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="171"/>Saa var han dog vor Næste;</l>
+             <l>Og alle vi den Sætning hylde,</l>
+             <l>At Man bør Næstens Feil undskylde.</l>
+             <l rend="firstIndent">Forstaaer sig selv, den samme Tanke</l>
+             <l rend="firstIndent">Har, som enhver, en dobbelt Hanke,</l>
+             <l>Og da Man, som vi veed,</l>
+             <l>I Pligternes Mangfoldighed,</l>
+             <l rend="firstIndent">Som trættes tit om Rangen,</l>
+             <l rend="firstIndent">Dog kun kan holde een ad Gangen:</l>
+             <l>Saa giør Man, siger Bogen, bedst</l>
+             <l>I, den at gribe som er <seg type="com" n="com92">næst</seg>.</l>
+             <l rend="firstIndent">Nu er Man, som al Verden veed,</l>
+             <l>I Grunden altid selv sin Næste,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax12.jpg" n="1461" subtype="column"/>Og Man giør følgelig det Bedste,</l>
+             <l rend="firstIndent">Naar Man giør ei sig selv Fortred.</l>
+             <l>Naar altsaa vi den Sætning hylde,</l>
+             <l>At Man bør Næstens Feil undskylde,</l>
+             <l rend="firstIndent">Saa mener vi <hi rend="spaced">naturligviis</hi></l>
+             <l><seg type="com" n="com9034">For Alting</seg> vore egne,</l>
+             <l rend="firstIndent">Hvem vilde være slig en Griis,</l>
+             <l>Saa nøie med sig selv at regne!</l>
+             <l rend="firstIndent">See! heraf følger: gyldne Ord!</l>
+             <l>Først vi, saa <hi rend="spaced">vore andre</hi> Næster,</l>
+             <l>Som egenlig er Snylte-Giæster</l>
+             <l rend="firstIndent">Ved <hi rend="spaced">Tolerancens</hi> Kammerbord;</l>
+             <l>Naar ei de komme <hi rend="spaced">os</hi> for nær,</l>
+             <l rend="firstIndent">Og har et kiønt beskedent Væsen,</l>
+             <l>Og lidt Respect, og <seg type="com" n="com3052">tie kvær</seg>,</l>
+             <l rend="firstIndent">Om <seg type="com" n="com3053">og</seg> vi ta'r dem lidt ved Næsen,</l>
+             <l>Saa vee den Skurk, som ei dem gav</l>
+             <l>Hvad ved hans Bord der falder af!</l>
+             <l rend="firstIndent">Men giør de os <seg type="com" n="com3054">vort Hoved kruset</seg>,</l>
+             <l rend="firstIndent">Som de var Herrerne i Huset,</l>
+             <l>Og kan de ikke taale Løier,</l>
+             <l><pb type="edition" ed="PS" n="172"/>Ja gloer os ind i vore Øier,</l>
+             <l rend="firstIndent">Som de for deres Næster</l>
+             <l rend="firstIndent">Var sat til Skolemester;</l>
+             <l>Saa, der maae sidde Bjelker eller <seg type="com" n="com9035">Skiæver</seg>,</l>
+             <l rend="firstIndent">Saa er det <hi rend="spaced">vore egne,</hi></l>
+             <l rend="firstIndent">Og det er Pligt paa <hi rend="spaced">Næstens</hi> Vegne</l>
+             <l>At bruge sine Næver.</l>
+             <l rend="firstIndent">Men nu er det en stor Ulykke,</l>
+             <l rend="firstIndent">At vore Næster har den Nykke,</l>
+             <l>At tænke akkurat som vi,</l>
+             <l>Og Feilen, ja, den ligger i,</l>
+             <l rend="firstIndent">(Hvad var det nu? &#x2013; fra <placeName key="fak949">Slagelse</placeName>,</l>
+             <l>Jeg troer ogsaa fra <placeName key="fak948">Korsø'r</placeName>)</l>
+             <l rend="firstIndent">I en forkeert Opdragelse,</l>
+             <l>Og derfor, vil vi haabe, døer</l>
+             <l rend="firstIndent">Den ud med denne Slægt,</l>
+             <l>Som har indsuget <seg type="com" n="com93">Bjelken</seg></l>
+             <l>Med Moders-Melken.</l>
+             <l rend="firstIndent">Den bør Man derfor kiækt</l>
+             <l>See til at rydde bort,</l>
+             <l rend="firstIndent">Da de er kun til Hinder</l>
+             <l>For sand Oplysning, kort:</l>
+             <l rend="firstIndent">Humanitetens <hi rend="spaced"><seg type="com" n="com3055">Fi'nder</seg>.</hi></l>
+             <l>Det er til deres eget Bedste;</l>
+             <l rend="firstIndent">Thi først, naar de <seg type="com" n="com94">har strøget Seil</seg>,</l>
+             <l rend="firstIndent">Og mukke ei om Andres Feil,</l>
+             <l>Da først kan <seg type="com" n="com3056">og</seg> en ærlig Næste</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax12.jpg" n="1462" subtype="column"/>Sin Pligt mod dem opfylde,</l>
+             <l rend="firstIndent">Og deres Feil undskylde,</l>
+             <l>Tildække deres <seg type="com" n="com95">Lyder</seg>,</l>
+             <l>Afmale deres Dyder</l>
+             <l rend="firstIndent">Til <hi rend="spaced">lovligt Eftersyn</hi></l>
+             <l rend="firstIndent">I <placeName key="fak15">Sælland</placeName> og i <placeName key="fak70">Fy'n</placeName></l>
+             <l rend="secondIndent">For Efterslægten.</l>
+          </lg>
+          
+          <lg n="17">
+             <l><pb type="edition" ed="PS" n="173"/>Der hialp jeg jer igien,</l>
+             <l rend="firstIndent">Godt Folk! thi Knegten,</l>
+             <l>Som nu er sovet hen,</l>
+             <l rend="firstIndent">Han var, som sagt, vor Næste</l>
+             <l rend="firstIndent">Og noget nær det Bedste</l>
+             <l>Vor Tid har lært at sandse,</l>
+             <l>Er det om Tolerance.</l>
+             <l rend="firstIndent">Nu, vi forstaa'r jo nok det Sprog,</l>
+             <l>Men for de Smaa, som voxe,</l>
+             <l rend="firstIndent">Den Sætning smager dog</l>
+             <l>Lidt af det Paradoxe:</l>
+             <l rend="firstIndent">At man kan være tolerant,</l>
+             <l rend="firstIndent">Og dog slaae Folk ihiel galant;</l>
+             <l>At det er Tolerance,</l>
+             <l rend="firstIndent">Dem aldrig at tilgive</l>
+             <l rend="firstIndent">Som efter vores Pibe</l>
+             <l>Ei ordenlig vil dandse,</l>
+             <l rend="firstIndent">Ei springe, naar vi fløiter,</l>
+             <l rend="firstIndent">Men mukke, naar vi føiter.</l>
+             <l>Men nu har jeg, som sagt,</l>
+             <l>Det Sprog udlagt,</l>
+             <l rend="firstIndent">Saa populært,</l>
+             <l>Saa ganske i det Jævne,</l>
+             <l rend="firstIndent">At det kan ikke falde svært</l>
+             <l rend="secondIndent">Selv for de Smaae,</l>
+             <l>Som har kun fattig Fatte-Evne</l>
+             <l rend="secondIndent">Os at forstaae.</l>
+             <l>Nu kan de godt begribe:</l>
+             <l rend="firstIndent"><persName key="pe20">Jens Baggesen</persName> ei vilde sandse,</l>
+             <l>At efter eders Pibe</l>
+             <l rend="firstIndent">Det var hans Pligt at dandse.</l>
+             <l>Nu, Feilen laae jo vel</l>
+             <l rend="firstIndent">I en forkeert Opdragelse</l>
+             <l rend="firstIndent">Der i <placeName key="fak948">Korsø'r</placeName> og <placeName key="fak949">Slagelse</placeName>,</l>
+             <l><pb type="edition" ed="PS" n="174"/>Men slaae ham halv ihiel</l>
+             <l rend="firstIndent">Man maatte allermindst,</l>
+             <l>Og naar Man <hi rend="spaced">regner ret,</hi></l>
+             <l>For ham, det seer Man let,</l>
+             <l rend="firstIndent">Det var en reen Gevinst;</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax13.jpg" n="1463" subtype="column"/>Thi nu, da han <seg type="com" n="com96">strøg Seil</seg>,</l>
+             <l rend="firstIndent">Vi høit den Sætning hylde:</l>
+             <l rend="firstIndent">Man bør hans Feil undskylde,</l>
+             <l>Og som et Dydens Speil</l>
+             <l rend="firstIndent">I lovligt Eftermæle</l>
+             <l rend="firstIndent">Ham male af paa Fiæle,</l>
+             <l>Til lovligt Eftersyn</l>
+             <l>I <placeName key="fak15">Sælland</placeName> og i <placeName key="fak70">Fy'n</placeName>;</l>
+             <l rend="firstIndent">Ja, hører det med Fryden</l>
+             <l rend="firstIndent">Endog for Tørre-Jyden.</l>
+          </lg>
+          
+          <lg n="18">
+             <l>Saa vil, paa eders Vegne,</l>
+             <l>Godt Folk! jeg nu opregne,</l>
+             <l rend="firstIndent">Hvad der undskylde kan</l>
+             <l rend="firstIndent">Den stakkels døde Mand,</l>
+             <l>Ja <hi rend="spaced">dække til</hi> hans <seg type="com" n="com97">Lyder</seg>,</l>
+             <l>Og bakke op med Dyder,</l>
+             <l rend="firstIndent">Saa hvem, der ikke vel</l>
+             <l rend="secondIndent">Sig ta'r i Agt,</l>
+             <l rend="secondIndent">Det være eder sagt!</l>
+             <l rend="firstIndent">Kan æde sig ihiel.</l>
+             <l>Men, er <hi rend="spaced"><seg type="com" n="com3057">tilgavns</seg></hi> han ogsaa død?</l>
+             <l>Aa! det har ingen Nød;</l>
+             <l rend="firstIndent">Thi <seg type="comStart" n="com98"/>Forord, seer I vel,</l>
+             <l>Det bryder ingen Trætte<seg type="comEnd" n="com98"/>,</l>
+             <l>Og derfor vil jeg forudsætte,</l>
+             <l rend="firstIndent">At han er slaaet <hi rend="spaced">ret</hi> ihiel;</l>
+             <l>Hvis ei, da skal hver Dyd han miste</l>
+             <l>Som males paa hans Kiste,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="175"/>Og paa hans <seg type="com" n="com99">Lyders Hielm</seg></l>
+             <l>Det skrives skal med Kul:</l>
+             <l rend="firstIndent">Han døde som en Skielm,</l>
+             <l>Og selv i sorten Muld</l>
+             <l rend="firstIndent">Omvendte han sig ikke,</l>
+             <l>Men var saa splittergal,</l>
+             <l rend="firstIndent">Som hiin, der hang i Strikke,</l>
+             <l>Og efter Døden stjal;</l>
+             <l rend="firstIndent">Ja stial fra den, der skar ham ned</l>
+             <l rend="firstIndent">Af heltelig Medlidenhed,</l>
+             <l>Og pleied ham alt paa det Bedste,</l>
+             <l>Og tænkde: Tyv er <seg type="com" n="com1005">og</seg> min Næste.</l>
+             <l rend="firstIndent">Undskyldningen jeg <seg type="com" n="com3058">ligner ved</seg></l>
+             <l rend="firstIndent">Den Kniv, som skar den Hængte ned,</l>
+             <l>Og Rosene kan nok opveie</l>
+             <l>Hans <seg type="com" n="com3059">Nad're</seg> og hans Natteleie,</l>
+             <l rend="firstIndent">Samt Støvlerne, <seg type="comStart" n="com9082"/>der Tyven hang<seg type="comEnd" n="com9082"/></l>
+             <l rend="secondIndent">For godt i Ring,</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax13.jpg" n="1464" subtype="column"/>Men hængde ham den anden Gang</l>
+             <l rend="secondIndent">Som ingen Ting.</l>
+             <l>See, det var ham, og I! ja I</l>
+             <l>Skal være for hans Søgsmaal fri,</l>
+             <l rend="firstIndent">Beholde Alt, hvad I har faa't</l>
+             <l rend="firstIndent">Af Dyderne, og dermed godt.</l>
+          </lg>
+          
+          <lg n="19">
+             <l>Saa hør da nu! den største Brøde</l>
+             <l>Jeg kiender hos den <seg type="com" n="com100">Muse-døde</seg>,</l>
+             <l rend="firstIndent">Det var, som sagt, hans Fraadserie</l>
+             <l rend="firstIndent">I <seg type="com" n="com9036">Muse-Madskepie</seg>.</l>
+             <l>En Fraadser i et Fad,</l>
+             <l>Og En i Aandemad,</l>
+             <l rend="firstIndent">De fraadse begge To,</l>
+             <l rend="firstIndent">Med Forskiel, kan jeg troe</l>
+             <l>Men det er ligemeget;</l>
+             <l rend="firstIndent">Thi her er Tingen den</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="176"/>At denne gode Ven</l>
+             <l>Har ædt sit Eget,</l>
+             <l rend="firstIndent">Og var det af det Bedste,</l>
+             <l rend="secondIndent">Saa kun desmere Skam</l>
+             <l rend="secondIndent">For ham;</l>
+             <l rend="firstIndent">Thi Man er selv sin Næste,</l>
+             <l>Og det er dobbelt slemt,</l>
+             <l>Naar Man saa reent har glemt</l>
+             <l rend="firstIndent">Den ypperste af sine Pligter:</l>
+             <l rend="center"><seg type="comStart" n="com5009"/>At feie for sin egen Dør,</l>
+             <l rend="center"><hi rend="romanType"><seg type="com" n="com201">Et coetera</seg>,</hi> som vi sa'e før<seg type="comEnd" n="com5009"/>.</l>
+             <l rend="firstIndent">Men, seer I vel, han var en Digter,</l>
+             <l>Og det Slags Folk just ei, som Degne,</l>
+             <l>Har deres Styrke i at regne;</l>
+             <l rend="firstIndent">De stundum bli'r forknyt i Aanden,</l>
+             <l rend="firstIndent">Og ta'r saa, hvad der er for Haanden,</l>
+             <l>Og ta'r saa letteligen feil,</l>
+             <l rend="firstIndent">Og spiser, hvad de ikke maatte,</l>
+             <l rend="firstIndent">Og mener, de sig lidt vil gotte,</l>
+             <l>Og ser sig i et malet Speil,</l>
+             <l rend="firstIndent">Og sætter saa for U et <seg type="com" n="com9037">Ex</seg>,</l>
+             <l rend="firstIndent">Som vel kan sige Sex,</l>
+             <l rend="firstIndent">Men er og bliver dog et bagvendt <seg type="com" n="com9038">Ex</seg>.</l>
+             <l>Forsvare slig en Muse-Leeg,</l>
+             <l>Ja, det giør <seg type="com" n="com9039">Pokker</seg>, ikke jeg;</l>
+             <l rend="firstIndent">Og gaaer det Digteren som <seg type="com" n="com9040">Puus</seg>,</l>
+             <l rend="firstIndent">Og <rs type="myth" key="myth428">Musen</rs> som den lille Muus,</l>
+             <l>At reent tilsidst han æder den,</l>
+             <l rend="firstIndent">Da er den Stakkel ilde faren;</l>
+             <l>Thi la'r han den <seg type="com" n="com3060">og</seg> <hi rend="spaced">gaae igien,</hi></l>
+             <l rend="firstIndent">Den paa et Haar dog ligner <hi rend="spaced">Skaren,</hi></l>
+             <l><pb type="text" ed="A" facs="1815_263_fax14.jpg" n="1465" subtype="column"/>Og <hi rend="spaced">Skaren</hi> elsker kun sit Eget,</l>
+             <l rend="firstIndent">Hvad det er, veed I saare vel;</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="177"/>Thi just med det I slog ihiel</l>
+             <l>Den Digter, som kun alt for meget</l>
+             <l rend="firstIndent">Sig læmped' efter jeres Smag,</l>
+             <l rend="firstIndent">Og fik derfor en stakket Dag,</l>
+             <l>Og slig er fattig hellig Aften,</l>
+             <l>Som, er han død, han nu har haft'en.</l>
+             <l rend="firstIndent">See! vender vi nu Bladet om,</l>
+             <l rend="firstIndent">Og syner jeres haarde Dom,</l>
+             <l>Saa har I vel for saavidt Ret:</l>
+             <l rend="firstIndent">I aldrig har med <rs type="myth" key="myth428">Muser</rs> leget,</l>
+             <l>Og heller aldrig nogen ædt,</l>
+             <l rend="firstIndent">Men det kun sige vil saa meget,</l>
+             <l>Som, hvorfor æder Muus ei Kat?</l>
+             <l>Fordi den ingen kan faae fat.</l>
+             <l rend="firstIndent">I har dog Alle ædt jert Eget,</l>
+             <l rend="firstIndent">Og var det Snavs, saa ligemeget!</l>
+             <l>Vel tabte Verden ikke Stort,</l>
+             <l>Men I har dog det Samme giort</l>
+             <l rend="firstIndent">Som han, paa jeres Viis og Maade,</l>
+             <l rend="firstIndent">Og ta'r I da ei ham til Naade,</l>
+             <l>Saa ta'r I jer jo selv ved Næsen,</l>
+             <l>Og det er Narre-Væsen.</l>
+          </lg>
+          
+          <p rend="right">(Fortsættes.)</p>
+          
+       </div>
+       
+       <div type="Rimelige Strøe-Tanker [4]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax15.jpg" n="1473" subtype="column" rend="supp"/>
+          
+          <head rend="2"><seg type="com" n="com103">Rimelige</seg> Strøe-Tanker.</head>
+          
+          <p rend="center">(Fortsættelse; see forr. No.)</p>
+
+          <lg n="20">
+             <l><hi rend="initial">N</hi>u har jeg hans Undskyldning gjort,</l>
+             <l rend="firstIndent">Den faldt lidt i det Tø're,</l>
+             <l rend="firstIndent">Nu kan I paa hans Dyd <seg type="com" n="com104">jer smø're</seg>,</l>
+             <l>Thi det skal gaae som det var smurt.</l>
+             <l rend="firstIndent">Hans Dyder jeg ham ei misunder,</l>
+             <l rend="firstIndent">Men dog, som Folk er nuomstunder,</l>
+             <l>Han ikke var saa slem</l>
+             <l rend="firstIndent">En Dydens Helt <hi rend="spaced"><hi rend="romanType"><seg type="com" n="com105">in Folio</seg>,</hi></hi></l>
+             <l rend="firstIndent">Som gjerne kunde gaae for To,</l>
+             <l>Ja Ti af dem.</l>
+             <l rend="firstIndent">Thi først, saa veed I selv, godt Folk!</l>
+             <l rend="firstIndent">Han skar saa sød en Kniv, den <seg type="com" n="com3061">Dolk</seg>,</l>
+             <l>Som hans, <app type="corrNote" select="yes"><lem wit="GV">der</lem><rdg wit="A">ber</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> mellem Fjeldene</l>
+             <l>Fik Skjønheds Lov gjort gjeldende.<note type="footnote"><p rend="noIndent">
+                <lg>
+                   <l>Vil I for Resten vide, hvis?</l>
+                   <l><hi rend="romanType"><seg type="com" n="com202">Et Coetera</seg>,</hi></l>
+                   <l>Saa tag kun fra</l>
+                   <l>I <rs type="myth" key="myth428">Musens</rs> <hi rend="romanType"><seg type="comStart" n="com107"/>ab epistolis</hi></l>
+                   <l>En To, Ni, Fire, To, Ni, Fem!<seg type="comEnd" n="com107"/></l>
+                   <l>Trods Tonen i en fire, fem</l>
+                   <l>Saa fiint jeg maae citere dem;</l>
+                   <l>Thi Bogen heel, end sige Aanden,</l>
+                   <l>Jeg i mit Hoved kan og maae</l>
+                   <l>Dog aldrig faae,</l>
+                   <l>Og har derfor den kun <hi rend="spaced">ved Haanden.</hi></l>
+                </lg>
+             </p>
+             </note>
+             </l>
+             <l rend="firstIndent">O, hvilket Taarevæld!</l>
+             <l rend="secondIndent">Hvis alle Helte</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax15.jpg" n="1474" subtype="column" rend="supp"/>Som have haft det Held</l>
+             <l rend="secondIndent">At spændes i hans Belte,</l>
+             <l><seg type="com" n="com108">Hvem Syn for Sagn der gik</seg></l>
+             <l rend="firstIndent">I <seg type="com" n="com9041">Skrammen</seg>,</l>
+             <l>Af Rigtighed i Blik</l>
+             <l rend="firstIndent">Og Sikkerhed i <seg type="com" n="com9042">Rammen</seg>,</l>
+             <l>Hvis de en værdig Taare</l>
+             <l>Nu fældte ved hans Baare!</l>
+             <l rend="firstIndent">Ja, veed I hvad, godt Folk!</l>
+             <l rend="firstIndent">Hans Hammer, Pidsk og Dolk</l>
+             <l>De var saa dydefulde</l>
+             <l>Som Nogens under Mulde.</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="179"/>Hvem hørde at <rs type="title" key="title3369">Athenes</rs> Fugl</l>
+             <l>Var selv i Leiren,</l>
+             <l rend="firstIndent">Hvem hørde den fra Hjelmen guul</l>
+             <l>At varsle høit for Seiren,</l>
+             <l rend="firstIndent">Hvem satte sig i Heltens Stæd</l>
+             <l rend="firstIndent">Og blev ei ræd?</l>
+             <l><app type="corrNote" select="yes"><lem wit="GV">Men</lem><rdg wit="A">Meu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> fløi ei selv <rs type="title" key="title3369">Athenes</rs> Fugl</l>
+             <l>Tilsidst i Skjul,</l>
+             <l rend="firstIndent">Og stemmed i</l>
+             <l rend="firstIndent">Sin gode Danske Elegie!</l>
+             <l>Vel prøved den med Tud i Top,</l>
+             <l><persName key="pe865">Hans Mikkelsen</persName> at mane op,</l>
+             <l rend="firstIndent">Vel kom da <seg type="com" n="com3062">og</seg> en <hi rend="spaced"><seg type="com" n="com109">Bergefisk</seg>,</hi></l>
+             <l rend="firstIndent">Som slog med Halen frisk og bidsk,</l>
+             <l>Men ei enhver Bergenser</l>
+             <l>Kan bide <placeName key="fak15">Sjællands</placeName> Jenser,</l>
+             <l rend="firstIndent">Har Man endog lidt Skind beholdt,</l>
+             <l rend="firstIndent">Saa er Man som en Fisk og solgt,</l>
+             <l>Og kommer hovedkulds afsted</l>
+             <l>Naar Man har intet Hoved med,</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax16.jpg" n="1475" subtype="column"/>Og maae da sagtens blive <hi rend="spaced"><seg type="com" n="com110">beet</seg>,</hi></l>
+             <l rend="firstIndent">Naar <hi rend="spaced"><placeName key="fak413">Kallundborrigs</placeName></hi> Stads-Poet,</l>
+             <l>Som den beskrev i al sin Glands,</l>
+             <l>Man stikke vil for <seg type="com" n="com9043">gamle Hans</seg>,</l>
+             <l rend="firstIndent">Som netop altid loe ad dem</l>
+             <l rend="firstIndent">Der ei <hi rend="spaced">med Hovedet</hi> gik frem,</l>
+             <l>Og vilde sagt: gid du faae Skam!</l>
+             <l>Hvad gjør din Fisk i <seg type="com" n="com3063">Mikkels Ham</seg>?</l>
+             <l rend="firstIndent">Nu faldt, hvad ei Man nægte kan,</l>
+             <l rend="firstIndent">Vel <seg type="com" n="com4000">Knud</seg> tilsidst ved Gammelstrand;</l>
+             <l>Men hvis han faldt for Fiendens Slag,</l>
+             <l>Det Bagsmæk var og Nakkedrag,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="180"/>Og bryste sig skal ei de Helte</l>
+             <l rend="firstIndent">Som Bagen af en Kjæmpe fældte.</l>
+             <l>Det var for ham da al Ulykken,</l>
+             <l rend="firstIndent">For meget havde han paa Nakken,</l>
+             <l>Og alt for lidt i Ryggen,</l>
+             <l rend="firstIndent">Og det var, sandt at sige, Takken</l>
+             <l>Han fik, fordi med Møie suur</l>
+             <l>Han pilled Kalk af Kirkemuur;</l>
+             <l rend="firstIndent">Saavidt jeg veed, ei med det Gode,</l>
+             <l>Men deels af Skam og deels for Spas</l>
+             <l>Da engang nu det Drengefjas</l>
+             <l rend="firstIndent">Var blevet Mode.</l>
+             <l>Hvis nu for al sin Muse-Vrimmel,</l>
+             <l rend="firstIndent">Sit Ur- og Ager-Hønse-Bur,</l>
+             <l>Med samt sin <rs type="title" key="title3424">portative Himmel</rs></l>
+             <l rend="firstIndent">Han kunde kjøbt en Kirkemuur,</l>
+             <l>Saa havde han havt Ryggen fri,</l>
+             <l>Med Posen som Man <hi rend="spaced">stak ham</hi> i,</l>
+             <l rend="firstIndent">Saa havde han vist aldrig <hi rend="spaced">pebet,</hi></l>
+             <l rend="firstIndent">Saa havde han sig ei forgrebet</l>
+             <l>Paa Bruunt og Guult, og fældet blev</l>
+             <l>Han ei, hvis ei ved dette Greb,</l>
+             <l rend="firstIndent">Da den umaadelige Bøining</l>
+             <l rend="firstIndent">Udsatte ham for <seg type="com" n="com9044">Overfløining</seg>.</l>
+             <l>At han nu gav sig saa til Priis</l>
+             <l>Var Skam for Helten fra <placeName key="fak103">Pariis</placeName>,</l>
+             <l rend="firstIndent">Var Skam for <seg type="com" n="com9083">Jens Napoleon</seg>,</l>
+             <l>Hvis ikke i de samme Dage</l>
+             <l rend="firstIndent">Den <seg type="com" n="com113">Vognborgknuser</seg> uden Mage</l>
+             <l>Den kolossalske <seg type="com" n="com3064">Kjæmpeaand</seg><note type="footnote"><p rend="noIndent">
+                <lg>
+                   <l>Ja, læs engang den høie Ode,</l>
+                   <l>Som jeg fik aldrig i mit Ho'de,</l>
+                   <l>Og ta'r nok aldrig meer i Haand,</l>
+                   <l>Og det Forsæt, om Intet elle's,</l>
+                   <l><pb type="text" ed="A" facs="1815_263_fax16.jpg" n="16" subtype="column"/>Har sagtens <persName key="pe20">Jens</persName> og jeg tilfælles,</l>
+                   <l>Det jeg af <rs type="title" key="title538">Søndagsbladets</rs> Aand</l>
+                   <l>Mig slutter til,</l>
+                   <l>Og deraf end jeg slutte vil,</l>
+                   <l>At om det Uheld end ei hændte</l>
+                   <l>Vor <persName key="pe20">Jens</persName> at han sig ret omvendte,</l>
+                   <l>Saa vendte han dog Kaaben om,</l>
+                   <l>Og hedder <seg type="com" n="com114">Somme</seg> <hi rend="spaced"><seg type="com" n="com9045">Venderom</seg>,</hi></l>
+                   <l>Sin egen Høihed, vil jeg haabe</l>
+                   <l>Han kalder <seg type="com" n="com116">Povel Vendekaabe</seg>.</l>
+                </lg>
+             </p>
+             </note>,
+             </l>
+             <l><pb type="text" ed="A" facs="1815_263_fax16.jpg" n="1476" subtype="column"/><pb type="edition" ed="PS" n="181"/>Den <rs type="myth" key="myth250">Ares</rs> selv, just havde gjort</l>
+             <l>Et Buk der end var nok saa stort,</l>
+             <l rend="firstIndent">Hvorved han, efter Jenses Mening,</l>
+             <l rend="firstIndent">Kom med hans Støvler i Forening.</l>
+             <l>Nu derimod Man let indseer:</l>
+             <l>&#x201C;Den Skræder som er Helt, er ikke Skræder meer&#x201D;.</l>
+             <l rend="firstIndent">Og, hvilket Helteblod!</l>
+             <l>Ei <rs type="myth" key="myth250">Ares</rs> blot ved Siden</l>
+             <l>Han havde, men med Tiden</l>
+             <l rend="firstIndent">Han fik ham under Fod.</l>
+          </lg>
+          
+          <lg n="21">
+             <l>Og, hører mig, I Kykle-Haner!</l>
+             <l rend="firstIndent">Som lade Gal udgaae</l>
+             <l rend="firstIndent">Til Skjalde, store, smaa,</l>
+             <l>At de skal bryde nye Baner,</l>
+             <l rend="firstIndent">Og skaffe Fabler, Epigrammer,</l>
+             <l>Satirer til jer <seg type="com" n="com3502">Bogstavtur</seg>,</l>
+             <l rend="firstIndent">Saa der kan blive fulde Rammer</l>
+             <l>I Æsthetikens Fadebur!</l>
+             <l rend="firstIndent">Hvi gale I, som I var gale</l>
+             <l rend="firstIndent">Ei nu fra Fadeburets <seg type="com" n="com117">Svale</seg></l>
+             <l><pb type="edition" ed="PS" n="182"/>Og prise Helten under Mulde,</l>
+             <l>Som gav jer alle Næver fulde,</l>
+             <l rend="firstIndent">Ja ham, den mageløse <seg type="com" n="com3065">Kjæmpe</seg>,</l>
+             <l rend="firstIndent">Som, hvad ei kunde skee med Læmpe</l>
+             <l>Udvirkede med <seg type="com" n="com118">Eg</seg> og <seg type="com" n="com119">Od</seg>,</l>
+             <l>Med Piil og <seg type="com" n="com120">Brod</seg>,</l>
+             <l rend="firstIndent">Saa I fik selv, forunderlige Gaade!</l>
+             <l rend="firstIndent">Dog Rum i Rammen paa en Maade.</l>
+             <l>Ja fik engang dog paa <placeName key="fak540">Parnas</placeName></l>
+             <l>Jer længe velfortjente Plads;</l>
+             <l rend="firstIndent">Jert <hi rend="spaced"><seg type="com" n="com3066">Handværk</seg></hi> <persName key="pe29">Gøthe</persName>, hvilken Skam!</l>
+             <l>Kun gjorde til en Øl-Parabel,</l>
+             <l rend="firstIndent">Og <seg type="com" n="com9071">Asmus</seg> til et Kagle-Epigram,</l>
+             <l><persName key="pe20">Jens Baggesen</persName> det gjorde til en <hi rend="spaced">Fabel,</hi></l>
+             <l rend="firstIndent">Det sang dog vist for jeres Vugger</l>
+             <l rend="firstIndent">Selv knap en Kukker.</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax17.jpg" n="1477" subtype="column"/>O! havde han lidt længer levet,</l>
+             <l rend="firstIndent">Og sin <rs type="title" key="title2395">Partheneis</rs> med <seg type="com" n="com3067">Sands</seg></l>
+             <l>Paa <hi rend="spaced">Dansk</hi> omskrevet,</l>
+             <l rend="firstIndent">Da visnet aldrig eders Laurbærkrands,</l>
+             <l>Da havde <seg type="com" n="com121">Mulen</seg> han omsadlet,</l>
+             <l>Og jer til Alpe-Helten adlet,</l>
+             <l rend="firstIndent">Da eders Navn, som eders Byrd</l>
+             <l>Og Daad var stort,</l>
+             <l>Naar af Bedriften der var gjort</l>
+             <l rend="firstIndent">Et Epos som et Eventyr.</l>
+          </lg>
+          
+          <lg n="22">
+             <l>Og I Bærsærker ret af Helte</l>
+             <l rend="firstIndent">For <placeName key="fak14">Danmarks</placeName> Tungemaal,</l>
+             <l>Som viisde klart, at det kan smelte</l>
+             <l rend="firstIndent">Foruden Ovn og Baal</l>
+             <l>Som Salt og Sukker i det bare,</l>
+             <l>Det klare Vand,</l>
+             <l rend="firstIndent">Og at det med en Smule Konst</l>
+             <l rend="firstIndent">Kan løses op i Dunst!</l>
+             <l><pb type="edition" ed="PS" n="183"/>Hvi love I dog ei den Helt</l>
+             <l>Som vel var af en anden <seg type="com" n="com123">Vælt</seg></l>
+             <l rend="firstIndent">End I,</l>
+             <l>Men som, for alle dog at smage,</l>
+             <l>For jer og Tydsken at behage</l>
+             <l rend="firstIndent">Stod eder som en <seg type="com" n="com124">Skjoldborg</seg> bi?</l>
+             <l>Vel smelted han af gyldne Maal</l>
+             <l rend="firstIndent">Saamangen Klump i klare Luer,</l>
+             <l>Der, som en gylden Offerskaal,</l>
+             <l rend="firstIndent">Skal prange under Templets Buer.</l>
+             <l>Men <seg type="com" n="com3068">bruger</seg> kjønt dog jer Forstand!</l>
+             <l rend="firstIndent"><seg type="com" n="com3069">Begriber</seg> dog,</l>
+             <l rend="firstIndent">At Guld af Fjeld og Guld af Sprog</l>
+             <l>Sig smelte lader ei i Vand,</l>
+             <l rend="firstIndent">Og kan ei, trods al Konst og Kamp,</l>
+             <l rend="firstIndent">Gaae op i Damp!</l>
+             <l>I kan ham sagtens dog tilgive,</l>
+             <l>At han har gjort, hvad I <seg type="com" n="com3070">lod blive</seg>,</l>
+             <l rend="firstIndent">Derved slet Intet I jo tabe,</l>
+             <l>Men maae dog føle det er stort,</l>
+             <l>At <hi rend="spaced">han</hi> jer har saa nemt det gjort</l>
+             <l rend="firstIndent">En Genius at efterabe.</l>
+          </lg>
+          
+          <lg n="23">
+             <l>Og nu Ensidigheden! hvem</l>
+             <l>Bekjæmped den med saadant <seg type="com" n="com3071">Klem</seg>,</l>
+             <l rend="firstIndent">Saa practisk, ved et stort Exempel?</l>
+             <l>Hvem satte paa saamangen Side,</l>
+             <l>Som selv ei Dyden godt kan lide,</l>
+             <l rend="firstIndent">Geniets Stempel?</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax17.jpg" n="1478" subtype="column"/>Hvor er den Ridder vel af Sproget,</l>
+             <l rend="firstIndent">Som, skjøndt han vidste Veien godt,</l>
+             <l>Reed stundum dog saa reent <seg type="com" n="com9046">i Taaget</seg>,</l>
+             <l rend="firstIndent">Som nogen anden <persName key="pe583">Don Qvixote</persName>;</l>
+             <l>Ja, reed i Staae og reed i Ring,</l>
+             <l>Kun for at prøve alle Ting?</l>
+             <l rend="firstIndent">Vil I engang dog ret betænke,</l>
+             <l>Hvorledes han har ridt omkring,</l>
+             <l rend="firstIndent">Nu siden han af <seg type="com" n="com3072">Vessels Enke</seg></l>
+             <l>Fik Snak og Kurr som ingen Ting!</l>
+             <l rend="firstIndent">Hvor er en Vei, jeg vil ei sige</l>
+             <l rend="firstIndent">I <placeName key="poet219">Dannemark</placeName> men Tydsker-Rige,</l>
+             <l>Hvor han har ikke gjort et Hop,</l>
+             <l>Om ikke redet i Galop?</l>
+             <l rend="firstIndent">Hvor er der vel en Gjæstestue</l>
+             <l>Imellem <placeName key="fak38">Hamborg</placeName> og <placeName key="fak103">Paris</placeName>,</l>
+             <l rend="firstIndent">Hvor ei den Ridder sig lod skue,</l>
+             <l>Og tog sig dog en lille <hi rend="spaced">Priis,</hi></l>
+             <l rend="firstIndent">Saa der er <seg type="com" n="com9047">jo</seg> fast ingen Bye</l>
+             <l rend="firstIndent">Han jo var i, endog i <placeName key="fak117">Thye</placeName>!</l>
+             <l rend="secondIndent">Hvor er der vel,</l>
+             <l rend="firstIndent">Fra <placeName key="fak950">Strasborg</placeName> til <placeName key="fak948">Korsør</placeName>,</l>
+             <l rend="secondIndent">Et Taarn, et Fjeld</l>
+             <l>Hvor ei han prøvede, trods Kløft og Gavle,</l>
+             <l rend="firstIndent">Om han endog blev nok saa ør,</l>
+             <l>Om ei at klavre op saa dog at kravle!</l>
+             <l rend="firstIndent">Hvor tit har han ei rendt</l>
+             <l>Med Panden imod Døren,</l>
+             <l rend="firstIndent">Paa Nelderne sig brændt,</l>
+             <l>Og revet sig paa Tjørn,</l>
+             <l rend="firstIndent">Ja, vadet ud i Moser</l>
+             <l>Til Belte og til Bryst,</l>
+             <l>Og det af bare Lyst,</l>
+             <l rend="firstIndent">Til <rs type="myth" key="myth428">Muser</rs> og til Roser,</l>
+             <l>Af Lyst til det Almene,</l>
+             <l>Af Afskye for <hi rend="spaced">det Ene!</hi></l>
+          </lg>
+          
+          <lg n="24">
+             <l><pb type="edition" ed="PS" n="185"/>Nu gik det sagtens <seg type="com" n="com3073">saa</seg>,</l>
+             <l rend="firstIndent">Som Man kan sagtens vide,</l>
+             <l>Det vilde rigtig gaae</l>
+             <l rend="firstIndent">Kun til den ene Side;</l>
+             <l>Tit steiled med ham Skimlen,</l>
+             <l rend="firstIndent">Saa han gik agter ud,</l>
+             <l>Tit fik han det med Svimlen</l>
+             <l rend="firstIndent">Og tit med Værk og Brud:</l>
+             <l>Af <seg type="com" n="com126">Vatersoot</seg> engang</l>
+             <l rend="firstIndent">Han havde nær kreperet,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax18.jpg" n="1479" subtype="column"/>Sig nær paa Styltegang</l>
+             <l rend="firstIndent">Ihjel parodieret;</l>
+             <l>Han som <rs type="myth" key="myth416.a">Ulys</rs> sin Grav</l>
+             <l>Var nær paa Verdens Hav,</l>
+             <l rend="firstIndent">Nær ved paa <seg type="com" n="com5006">Cirienborg</seg>,</l>
+             <l>Hvor fiint han end begyndte,</l>
+             <l rend="firstIndent">Til <rs type="myth" key="myth428">Musers</rs> Hjertesorg,</l>
+             <l>Det sidste Vers at grynte.</l>
+          </lg>
+          
+          <lg n="25">
+             <l>Dog derfor ei han er at skose,</l>
+             <l>Nei, meget meer at rose,</l>
+             <l rend="firstIndent">Thi han var som en Skipper,</l>
+             <l>Der seer han strande maae,</l>
+             <l rend="firstIndent">Paa een af tvende Klipper,</l>
+             <l>Og grunder ikkun paa,</l>
+             <l rend="firstIndent">Hvor, da det galt maae være,</l>
+             <l rend="firstIndent">Han strande kan med Ære;</l>
+             <l>Og <seg type="com" n="com3074">Sællandsfaren</seg> her</l>
+             <l rend="firstIndent">I skulde høilig prise,</l>
+             <l rend="firstIndent">Som vilde før forlise</l>
+             <l><seg type="com" n="com127">Med Top og Tavl</seg> saa nær,</l>
+             <l rend="firstIndent">End bjerge Liv og Ladning,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="186"/>Ved Stranding og ved Vadning</l>
+             <l>I Lavvand lidt for nær</l>
+             <l>Eensidighedens Skjær!</l>
+          </lg>
+          
+          <lg n="26">
+             <l>Hvad siger I, godt Folk!</l>
+             <l rend="firstIndent">Jeg glemmer hvor jeg er,</l>
+             <l>Og stikker ei <seg type="com" n="com9048">den Dolk</seg></l>
+             <l rend="firstIndent">Men allenfals kun jer?</l>
+             <l>Nei, I ta'r Feil, godt Folk!</l>
+             <l>Kun som en Jyde-Tolk</l>
+             <l rend="firstIndent">Jer vise, jeg har villet</l>
+             <l rend="firstIndent">Det Fine just i Spillet,</l>
+             <l>Og maae hos jer, saavidt</l>
+             <l rend="firstIndent">Som jeg kan skjønne,</l>
+             <l>Dog have lidt</l>
+             <l rend="firstIndent">Gjort mine Hoser grønne.</l>
+             <l>Jeg, efter fattig Leilighed</l>
+             <l>Forsøgde i min sure Sveed</l>
+             <l rend="firstIndent">En Smule <seg type="com" n="com9049">og</seg></l>
+             <l rend="firstIndent">&#x201C;Det søde, bløde Danske Sprog</l>
+             <l>I dette vanskelige Fag&#x201D;</l>
+             <l>Som er endnu den Dag i Dag</l>
+             <l rend="firstIndent">Kun slet bebygt,</l>
+             <l rend="firstIndent">Og drevet sygt;</l>
+             <l>Og drev jeg det just ikke vidt,</l>
+             <l>Saa trøsted I jer selv jo tit</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax18.jpg" n="1480" subtype="column"/>Ved: <hi rend="romanType"><seg type="com" n="com129">ultra posse . . .</seg></hi></l>
+             <l>Dog, Snak! jeg Tosse!</l>
+             <l rend="firstIndent">Som husked ikke paa,</l>
+             <l rend="firstIndent"><seg type="comStart" n="com5007"/>I hængt Mands Huus ei maae</l>
+             <l>Om hængde Folk Man tale<seg type="comEnd" n="com5007"/>,</l>
+             <l rend="firstIndent">At her, hvor jeg mig vender,</l>
+             <l rend="firstIndent">Jeg er blandt <hi rend="romanType"><seg type="com" n="com3076">Nemos</seg></hi> Frænder,</l>
+             <l><pb type="edition" ed="PS" n="187"/>At her i disse Sale</l>
+             <l rend="firstIndent">Han fik sin haarde Dom,</l>
+             <l>At her hans Navn hos Alle</l>
+             <l>Er syltet ned i Valle</l>
+             <l rend="firstIndent">Som Slægtens Helligdom.</l>
+             <l>Saa kan Man falde over Sviin,</l>
+             <l>Og glemme sit Latin.</l>
+             <l rend="firstIndent">Saa lad os Modersmaalet hædre!</l>
+             <l rend="firstIndent">Der driver jeg det vel lidt bedre,</l>
+             <l>Og drev jeg det just ikke vidt,</l>
+             <l>Saa trøsted det jer selv jo tit.</l>
+             <l rend="firstIndent"><seg type="comStart" n="com130"/>Hvo som gjør Mere end sit Bedste,</l>
+             <l rend="firstIndent">Han er en Skielm imod <app type="corrNote" select="yes"><lem wit="GV">sin</lem><rdg wit="A">sit</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Næste<seg type="comEnd" n="com130"/>.</l>
+             <l>Dog, lidt vel tørt for jer</l>
+             <l>Det Ordsprog er,</l>
+             <l rend="firstIndent">Det ikke Mellemgulvet ryster</l>
+             <l rend="firstIndent">Men <seg type="com" n="com131">falder let for svage Bryster</seg>,</l>
+             <l>Og voldte tit, naar Man det roesde,</l>
+             <l rend="secondIndent">Lidt Hoste.</l>
+             <l rend="firstIndent">Hver har sin egen Stjerne,</l>
+             <l rend="firstIndent">Jeg, for Exempel, vilde gjerne</l>
+             <l>See til at ha'e mit paa det Tø're,</l>
+             <l>I helst vil <seg type="com" n="com132">jeres Lire smøre</seg>,</l>
+             <l rend="firstIndent">Og som Fornuftens ringe Tolk,</l>
+             <l rend="firstIndent">I Dag jeg tjener <hi rend="spaced">jer,</hi> godt Folk!</l>
+             <l>Og drev jeg det just ikke vidt,</l>
+             <l>Saa trøsted det jer selv jo tit,</l>
+             <l rend="firstIndent">Samvittigheden tør ei mukke</l>
+             <l rend="firstIndent">Naar man, <seg type="comStart" n="com5008"/>som <app type="corrNote" select="yes"><lem wit="GV">Barnet</lem><rdg wit="A">Baruet</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> i sin Vugge</l>
+             <l>Gjør hvad Man kan<seg type="comEnd" n="com5008"/>.</l>
+             <l>Ja efter min Forstand</l>
+             <l rend="firstIndent">Hvis ei Hukommelsen mig svigter,</l>
+             <l>Er netop <app type="corrNote" select="yes"><lem wit="GV">denne</lem><rdg wit="A">denue</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Trøst det Hele</l>
+             <l rend="firstIndent">Som Læserne med deres Digter</l>
+             <l>Har maattet for det meste dele</l>
+             <l rend="firstIndent">I dette vanskelige Fag,</l>
+             <l rend="firstIndent">Som jeg har fusket paa i Dag,</l>
+             <l>Det rene, skjære practiske</l>
+             <l rend="secondIndent">Didactiske,</l>
+             <l rend="firstIndent">Og drev jeg det just ikke vidt,</l>
+             <l rend="firstIndent">Jeg drev det sagtens dog til Skit,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax19.jpg" n="1481" subtype="column"/>Og er da den Opmuntring værdig</l>
+             <l rend="firstIndent">Hvormed I lige til i Fjor</l>
+             <l>Var altid <seg type="com" n="com9200">færdig</seg>,</l>
+             <l rend="firstIndent">Naar Man gik smukt i jeres Spor.</l>
+             <l>Jeg vendte mig til alle Sider,</l>
+             <l>Og viisde jer at ei jeg lider</l>
+             <l rend="firstIndent">Eensidigheden for min Død,</l>
+             <l>Jeg viisde jer, hvoraf det kom,</l>
+             <l>At det gik altid udenom,</l>
+             <l rend="firstIndent">Naar I paa <seg type="com" n="com3077">Sællandsfaren</seg> skjød;</l>
+             <l>Jeg gav et Vink som skulde vække</l>
+             <l>Jer til paa rette Kant at knække</l>
+             <l rend="firstIndent">Den haarde Nød,</l>
+             <l>Og til maneerlig at <seg type="com" n="com133">begegne</seg>,</l>
+             <l rend="firstIndent"><persName key="pe20">Jens Baggesen</persName>, hvis op</l>
+             <l rend="firstIndent">Han stod med Sjæl og Krop,</l>
+             <l>Og vilde eder <seg type="com" n="com3079">degne</seg>.</l>
+             <l rend="firstIndent">Jeg vil slet ikke rose</l>
+             <l>Mig derfor af Forstand,</l>
+             <l>Thi Konsten er <seg type="com" n="com3080">forsand</seg></l>
+             <l rend="firstIndent">Saa let som Fod i Hose,</l>
+             <l>Naar Foden kun er reen,</l>
+             <l>Saa paa det ene Been</l>
+             <l rend="firstIndent">Man allenfalds kan staae</l>
+             <l rend="firstIndent">Og drage Hosen paa,</l>
+             <l>Og Man er frie for Skosen</l>
+             <l>At, der er Hul paa Hosen.</l>
+             <l rend="firstIndent">Men <seg type="com" n="com3081">Somme</seg> er i Gang, som</l>
+             <l rend="firstIndent">Og i Begreb lidt langsom,</l>
+             <l><pb type="edition" ed="PS" n="189"/>Og da jeg dog ei nænner</l>
+             <l>At narre gode Venner,</l>
+             <l rend="firstIndent">Saa vil jeg <seg type="com" n="com9050">aabenbare</seg></l>
+             <l rend="firstIndent">Jer Kunsten nu forklare.</l>
+          </lg>
+          
+          <p rend="right">(Sluttes i næste No.)</p>
+          
+       </div>
+       
+       <div type="Rimelige Strøe-Tanker [5]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax20.jpg" n="1494" subtype="column"/>
+          
+          <head rend="2"><seg type="com" n="com134">Rimelige</seg> Strøe-Tanker.</head>
+          
+          <p rend="center">(Fortsættelse; see forr. No.)</p>
+
+          <lg n="27">
+             <l><hi rend="initial">S</hi>om sagt, min gamle Amme,</l>
+             <l rend="firstIndent">Hun var en <seg type="com" n="com3082">Sællandsmo'r</seg>,</l>
+             <l>Hun lærde mig, den samme,</l>
+             <l rend="firstIndent">De rette <placeName key="fak15">Sællands</placeName> Ord.</l>
+             <l>Hun <seg type="com" n="com3083">skee</seg> i Graven Tak,</l>
+             <l>Fordi hun til mig stak,</l>
+             <l rend="firstIndent">Mens <seg type="com" n="com3084">end</seg> jeg sad paa Skamle,</l>
+             <l rend="firstIndent">En <seg type="com" n="com2000">Tul Tre</seg> af de Gamle;</l>
+             <l>Men mere Tak endnu</l>
+             <l rend="firstIndent">Jeg skylder gamle Mo'r</l>
+             <l rend="firstIndent">For hendes vakkre Ord:</l>
+             <l>&#x201C;Min Søn! kom vel ihu,</l>
+             <l rend="firstIndent">Hvad Folk du spiller med,</l>
+             <l rend="firstIndent">Og spil til Tid og Sted!</l>
+             <l><seg type="com" n="com3085">Spil ei med Jyden Bas</seg>,</l>
+             <l>Thi han forstaaer ei Spas;</l>
+             <l rend="firstIndent">Spil helst med Jyden ei,</l>
+             <l>Han ta'r dig let ved Næsen,</l>
+             <l rend="firstIndent">Og han er stiv og sei,</l>
+             <l>Og spiller mest kun om det rene Væsen,</l>
+             <l rend="firstIndent">Og spiller han for Narrerie,</l>
+             <l rend="firstIndent">Saa vanker der lidt <seg type="com" n="com135">Klumsak</seg> i;</l>
+             <l><pb type="edition" ed="PS" n="190"/>Men er du først i Spil,</l>
+             <l>Saa lad staae til!</l>
+             <l rend="firstIndent">Lad Ingen see dit Kort!</l>
+             <l>Men <seg type="com" n="com9051">skak</seg> med dine Brikker!</l>
+             <l rend="firstIndent">Pas høie Trumfer bort!</l>
+             <l>Gaae med paa Svovelstikker!</l>
+             <l rend="firstIndent">Saa vinder du dit Spil,</l>
+             <l>Men Jyden bliver vreed,</l>
+             <l>Lav for en Sikkerhed</l>
+             <l rend="firstIndent">Derfor kun Ryggen til</l>
+             <l>Med hvad der er lidt fast,</l>
+             <l>Og haardt og hvast,</l>
+             <l rend="firstIndent">Men vil han slaa's med Skit,</l>
+             <l rend="firstIndent">Saa dyp ham i hans eget <seg type="com" n="com136">Fidt</seg>,</l>
+             <l>Naar han sig bukker paa det Halve,</l>
+             <l>Saa <seg type="com" n="com9052">buk du ham med alle</seg>;</l>
+             <l rend="firstIndent">Men gaae saa strax din Vei,</l>
+             <l rend="firstIndent">Og rør ham ei!</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax21.jpg" n="1495" subtype="column"/>Men spil, som sagt, naar ei det er fornøden,</l>
+             <l>Saalidt med Jyden som med Jøden!<note type="footnote"><p rend="noIndent">
+                <lg>
+                   <l>Hvad Jøde og Jyde</l>
+                   <l>Har her at betyde</l>
+                   <l>Maae siges i Hast.</l>
+                   <l>Med Jøden og Jyden</l>
+                   <l>Jeg mener vel <seg type="com" n="com9053">Lyden</seg>,</l>
+                   <l>Dem lægges til Last.</l>
+                   <l>Hvad Jøder og Jyder</l>
+                   <l>For Resten angaaer,</l>
+                   <l>De har deres <seg type="com" n="com9054">Lyder</seg></l>
+                   <l>Og <seg type="com" n="com9055">Hager og Haar</seg>,</l>
+                   <l>Men Jøde og Jyde,</l>
+                   <l>Hvordan det end gaaer,</l>
+                   <l>Har <hi rend="spaced">Meer</hi> at betyde,</l>
+                   <l>End Tiden forstaa'r.</l>
+                </lg>
+             </p>
+             </note>
+             </l>
+             <l rend="firstIndent">Spil helst med <placeName key="fak15">Sællands</placeName> Folk!</l>
+             <l rend="firstIndent">Dem kiender du, din <seg type="com" n="com9056">Dolk</seg>!</l>
+             <l><pb type="edition" ed="PS" n="191"/>Spil ei for tit og længe!</l>
+             <l>Spil ei om Prygl og Penge,</l>
+             <l rend="firstIndent">Nei, spil om ingen Verdsens Ting,</l>
+             <l rend="firstIndent">Og ingenlunde om <persName key="pe1447">Nureddins</persName> Ring,</l>
+             <l>Ei om <persName key="pe414">Aladdins</persName> Lampe!</l>
+             <l>Hazardspil volder Krampe.</l>
+             <l rend="firstIndent">Nei, spil til Tid og Sted,</l>
+             <l rend="firstIndent">Alt efter <placeName key="fak15">Sællands</placeName> <seg type="com" n="com137">Sæd</seg>,</l>
+             <l>Paa Langs og Kryds,</l>
+             <l>Om Kiærester og Kys!</l>
+             <l rend="firstIndent">Men træffer du blandt <seg type="com" n="com3086">Næster</seg>,</l>
+             <l rend="firstIndent">Som let kan skee, din Mester</l>
+             <l>I <seg type="com" n="com138">Lanter</seg> og <seg type="com" n="com139">Styrvolt</seg>,</l>
+             <l>Saa vær kun aldrig stolt!</l>
+             <l rend="firstIndent">Men hold for alting lige</l>
+             <l>Din Tunge i din Mund,</l>
+             <l rend="firstIndent">Og list dig til at kige</l>
+             <l>Ham først i Kort en Stund.</l>
+             <l rend="firstIndent">Staae som en Muus bag Stolen!</l>
+             <l>Og lær hans Kneb!</l>
+             <l rend="firstIndent">Og løb ei ud af Skolen</l>
+             <l>Med halvt Begreb!</l>
+             <l rend="firstIndent">Spil saa kun med</l>
+             <l rend="firstIndent">Til Tid og Sted!</l>
+             <l>Stiæl med Forstand,</l>
+             <l>Saa godt du kan,</l>
+             <l rend="firstIndent">Hvor det er Skik,</l>
+             <l rend="firstIndent">Af Andres Stik!</l>
+             <l>Giem godt og vel</l>
+             <l rend="firstIndent">Hvad selv du har til Bedste;</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax21.jpg" n="1496" subtype="column"/>Lad kun din Næste</l>
+             <l>Sig stikke selv ihjel!&#x201D;</l>
+          </lg>
+          
+          <lg n="28">
+             <l>Saavidt <app type="corrNote" select="yes"><lem wit="GV">min</lem><rdg wit="A">miu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> salig Amme,</l>
+             <l>Og det var ikke galt, det Samme,</l>
+             <l rend="firstIndent"><pb type="edition" ed="PS" n="192"/>Men har den lille <seg type="com" n="com140">Lyde</seg>,</l>
+             <l>Det giør ei Sagen klar;</l>
+             <l rend="firstIndent">Thi var jeg ei lidt Jyde,</l>
+             <l>Saa blev jeg dog en Nar.</l>
+             <l rend="firstIndent">Thi <seg type="com" n="com3087">Sællandsfaren</seg> veed</l>
+             <l>Jo Reglen ganske rigtig:</l>
+             <l>Min Søn! vær kiønt forsigtig!</l>
+             <l rend="firstIndent">Og bliv saa ikke heed!</l>
+             <l>Men derimod med <seg type="com" n="com9057">Sandsen</seg></l>
+             <l rend="firstIndent">Det gaaer, som vi har seet,</l>
+             <l>Han let gaaer bag ad Dandsen,</l>
+             <l rend="firstIndent">Og bli'r <seg type="com" n="com141">Codilje-beet</seg>.</l>
+             <l>En Sællandsfa'r kan stikke</l>
+             <l rend="firstIndent">Saa Man bli'r bleg og rød,</l>
+             <l>Men taale kan han ikke,</l>
+             <l rend="firstIndent">Saa godt som Jyden, Stød,</l>
+             <l>Og faaer han en <seg type="com" n="com142">Tryk-Sexten</seg>,</l>
+             <l>Saa gaaer han let fra Texten,</l>
+             <l rend="firstIndent">Og dumped han først om,</l>
+             <l rend="firstIndent">Han sielden ihukom</l>
+             <l>Hvad der sig ganske godt la'r sige,</l>
+             <l>Men ikke følge just saa lige,</l>
+             <l rend="firstIndent">At han, trods Faldets virkelige Gru,</l>
+             <l>Fortryllet af det Træffende, det Fyndige,</l>
+             <l>Det rette, nette, lette, næsten Yndige,</l>
+             <l rend="firstIndent">Gad dumpet nok engang endnu<note type="footnote"><p rend="noIndent">
+                <lg>
+                   <l>Som skrevet staa'r</l>
+                   <l>I Bogen han lod prænte</l>
+                   <l>Forleden Aar;</l>
+                   <l>Men <seg type="com" n="com9058">naar</seg></l>
+                   <l>Vi <seg type="com" n="com3090">Syn for Sagn</seg> kan vente,</l>
+                   <l>Det ikke skrevet staa'r,</l>
+                   <l>Og <seg type="com" n="com9059">naar</seg></l>
+                   <l>Vi fik det ei</l>
+                   <l>Det var i Bogens Aar.</l>
+                </lg>
+             </p>
+             </note>.
+             </l>
+          </lg>
+          
+          <lg n="29">
+             <l><pb type="edition" ed="PS" n="193"/>See nu, godt Folk! nu har</l>
+             <l rend="firstIndent">Jeg hartad reent <seg type="com" n="com3505">omsonst</seg></l>
+             <l rend="firstIndent">Jer lært den simple Konst,</l>
+             <l>Dermed er Sagen klar:</l>
+             <l rend="firstIndent">Vær <seg type="com" n="com3088">Sællandsfa'r</seg> af <seg type="com" n="com143">Adelsbyrd</seg>!</l>
+             <l>Og for vor Herre ægte Jyde!</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax22.jpg" n="1497" subtype="column"/>Saa kan den Pokkers Fyr</l>
+             <l>Du Spidsen trøstig byde.</l>
+          </lg>
+
+
+          <lg n="30">
+             <l>Laan mig kun nu lidt Kridt,</l>
+             <l>Saa vil paa Sort med Hvidt</l>
+             <l rend="firstIndent">Jeg her paa disse <seg type="com" n="com144">Fiæle</seg></l>
+             <l rend="firstIndent">Gi'e <seg type="com" n="com4001">Knud</seg> hans Eftermæle,</l>
+             <l>Saa skal vi snart fornemme,</l>
+             <l>Om <seg type="com" n="com9060">end</seg> han selv er hiemme,</l>
+             <l rend="firstIndent">Om han tør komme ud</l>
+             <l rend="firstIndent">Og giøre sig til <seg type="com" n="com4002">Knud</seg>;</l>
+             <l>Jeg kan jo dristig stole</l>
+             <l rend="firstIndent">Paa jer, ifald det kniber,</l>
+             <l>I har jo vær't i Skole,</l>
+             <l rend="firstIndent">Og veed, hvordan Man piber,</l>
+             <l>Naar Man med Skolemester</l>
+             <l rend="firstIndent">Har leget Kamerat,</l>
+             <l>Og faa'r som Snylte-Giæster</l>
+             <l rend="firstIndent">En Smule <seg type="com" n="com145">Kropsalat</seg>,</l>
+             <l>Og naar saadan jeg piber,</l>
+             <l>Saa veed I, at det kniber,</l>
+             <l rend="firstIndent">Kom saa! saa skal, min Troe,</l>
+             <l rend="firstIndent">Vi <seg type="com" n="com146">Pungparykken</seg> snoe,</l>
+             <l>Og spille ham en Marsch</l>
+             <l rend="secondIndent"><seg type="com" n="com147">Kohlrabenschwartz</seg>.</l>
+             <l>Men løber I jer Vei,</l>
+             <l>Hvad giør saa jeg?</l>
+             <l rend="firstIndent">Hvad jeg saa giør?</l>
+             <l><pb type="edition" ed="PS" n="194"/>Hvad der giør Kaalen feed</l>
+             <l rend="firstIndent">Vedkommer ikke Smør;</l>
+             <l rend="firstIndent">Og hvis jer Nogen spør,</l>
+             <l>Siig kun: I det ei veed!</l>
+          </lg>
+          
+          <p rend="right">(Sluttes i næste No.)</p>
+       
+       </div>
+       
+       <div type="Rimelige Strøe-Tanker [6]">
+          
+          <pb type="text" ed="A" facs="1815_263_fax23.jpg" n="1505" subtype="column" rend="supp"/>
+          
+          <head rend="2"><seg type="com" n="com148">Rimelige</seg> Strøe-Tanker,</head>
+          
+          <head rend="1">sammengroede i</head>
+          
+          <head rend="2">Gaade-Giætningen,</head>
+          
+          <head rend="1">til</head>
+          
+          <head rend="1"><persName key="pe20">Jens Baggesen</persName>.</head>
+          
+          <p rend="center">(Slutning.)</p>
+
+          <lg n="31">
+             <l><hi rend="initial">D</hi>u saae det mangengang, o Skiald!</l>
+             <l>At stort som Kaar er <seg type="com" n="com3092">og</seg> Dit Kald,</l>
+             <l rend="firstIndent">Langt andet end med Spas at more</l>
+             <l rend="firstIndent">De Smaae, de Store,</l>
+             <l>Du følde Tomheds Dødningvind</l>
+             <l>Omsuse kold Din blege Kind,</l>
+             <l rend="firstIndent">Og sank af Digterlegen kied,</l>
+             <l rend="firstIndent">I Afmagt ned;</l>
+             <l>Men stærkt er Livet i Din dybe Rod,</l>
+             <l>Som i vort <placeName key="fak14">Danmarks</placeName> gamle Eeg,</l>
+             <l>Med friske Kræfter Du igien opstod,</l>
+             <l rend="firstIndent">Adspredte, spildte dem i Leeg.</l>
+             <l>Saa nys opstod Du i den sære Gaade,</l>
+             <l>Og lod i den forfængelig Dig <seg type="com" n="com3093">skaade</seg>.</l>
+             <l rend="firstIndent">Ei er jeg blind for ubenævnde Sum,</l>
+             <l>Du <hi rend="spaced">staaer</hi> Dig længere end Mange flyve,</l>
+             <l rend="firstIndent">Og aldrig saae jeg før paa Havets Skum</l>
+             <l>Saa ægte Perlerader fra det Dybe.</l>
+             <l rend="firstIndent">Du <hi rend="spaced">stikker</hi> dybere end mange <hi rend="spaced">troe,</hi></l>
+             <l rend="firstIndent">Du saae hvad sielden Nogen saae og loe;</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax23.jpg" n="1506" subtype="column" rend="supp"/>Men hvis Du da, til Grinebiders Held,</l>
+             <l rend="firstIndent">Med Fingren i Dit Saar og Næven paa Din Byld,</l>
+             <l>Endnu vil lee og gaade Dig ihiel,</l>
+             <l rend="firstIndent">Det er kun Din og ikke <hi rend="spaced">Gaadens</hi> Skyld;</l>
+             <l>Thi hvi giør Du Din Bielke <seg type="com" n="com149">pommersk</seg> breed,</l>
+             <l>Og sætter Dig som en Steen-Egenhed,</l>
+             <l rend="firstIndent">Da dog din danske Selvheds Bøgestamme</l>
+             <l rend="firstIndent">Er blød, og brydes naar den bedst vil <seg type="com" n="com150">bramme</seg>?</l>
+             <l><hi rend="spaced">Indvikle</hi> sig i Livets store Gaade,</l>
+             <l rend="firstIndent">Det kan jo ogsaa hver Matros,</l>
+             <l>Og selv den <hi rend="spaced">overordentlige</hi> Maade</l>
+             <l rend="firstIndent">Fortiener her lidt Andet nok end Roes;</l>
+             <l>Hvorfor udvikler, løser Du ei heller Gaaden,</l>
+             <l rend="firstIndent">Som Ingen dog <hi rend="spaced">tilgavns</hi> kan løse Dig;</l>
+             <l>End som for Spas at demonstrere Maaden,</l>
+             <l rend="firstIndent">Hvorpaa den tækkeligst <hi rend="spaced">indvikler sig.</hi></l>
+             <l>Med Fryd jeg <hi rend="spaced">saae,</hi> hvorvel Du mener Ingen,</l>
+             <l>Og Du har meer end <hi rend="spaced">halv</hi> kun <hi rend="spaced">hørt</hi> om Tingen,</l>
+             <l rend="firstIndent">At det Utrolige Man selv kan finde</l>
+             <l rend="firstIndent">I <hi rend="spaced">Navnet</hi> paa Din Gaademands <seg type="com" n="com151">Mandinde</seg>,</l>
+             <l>Naar Man flankerer lidt med For og Bag,</l>
+             <l>Som Fandens er og Fleres Hovedsag,</l>
+             <l rend="firstIndent">Fordi naar Man i <hi rend="spaced">Intet</hi> først er <hi rend="spaced">Alt,</hi></l>
+             <l>Saa har omtrent Man <hi rend="spaced">Papegøien</hi> skudt,</l>
+             <l>Og skiønt Man er i Grunden <hi rend="spaced"><seg type="com" n="com152">læs-caput</seg>,</hi></l>
+             <l rend="firstIndent">Med <hi rend="spaced">Tiden</hi> Man dog sagtens lidt Gestalt,</l>
+             <l>Da Man har Tiden for sig, <seg type="com" n="com9061">smaalig</seg> sanker,</l>
+             <l>Og er da Konge <seg type="com" n="com3094">alt</seg> i sine egne Tanker,</l>
+             <l rend="firstIndent">Og hvilken Dreng i den <hi rend="spaced">antike</hi> Tone,</l>
+             <l>Som griber den <hi rend="spaced">modern</hi> med Sympathie,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax24.jpg" n="1507" subtype="column"/>Seer ikke grandt den dybe Mening i</l>
+             <l rend="firstIndent">At giøre <hi rend="spaced">Alt til Intet</hi> for en Krone?</l>
+             <l>Som sagt, jeg saae, og hvad jeg alt har sagt</l>
+             <l>Dig siges sagtens, at skiønt <hi rend="spaced">hiemmebagt</hi></l>
+             <l rend="firstIndent">Min <hi rend="spaced">Kringle</hi> er og blevet <hi rend="spaced">tør</hi> paa Hylde,</l>
+             <l>Dog ei for Intet den <seg type="com" n="com3095">paa Kneb</seg> er solgt,</l>
+             <l>Men har, <hi rend="spaced">især i Hullerne,</hi> beholdt</l>
+             <l rend="firstIndent">En god Portion af Intets tydske Fylde,</l>
+             <l>Saa selv i danske Huller Man med Intets <seg type="com" n="com5100">Pind</seg></l>
+             <l>Just ikke synderlig skal giøre Vind.</l>
+             <l rend="firstIndent">Som sagt, jeg saae da med mit Gaaseøie,</l>
+             <l rend="firstIndent">Hvad kanskee mangen Kukker i det Høie</l>
+             <l>Har ikke seet, og med det Spil</l>
+             <l>Det gaaer i Grunden ret naturlig til,</l>
+             <l rend="firstIndent">Hvis det er sandt, hvad Man har bildt mig ind,</l>
+             <l rend="firstIndent">At Giøgen kukker kun, <hi rend="spaced">mens han er blind.</hi></l>
+             <l>Jeg saae, ei blot hvad før i Dag</l>
+             <l>Jeg saae saa tit, Dit nysselige <seg type="com" n="com3096">Handelag</seg>,</l>
+             <l rend="firstIndent">Som kun for gierne selv Du skuer,</l>
+             <l rend="firstIndent">Til i en Sum at smække Fluer,</l>
+             <l>En Ting, der <seg type="com" n="com3097">og</seg> til Tid og Stæd</l>
+             <l>Kan godt gaae med,</l>
+             <l rend="firstIndent">Men som til alle Aarets Tider,</l>
+             <l rend="firstIndent">Gik det <seg type="com" n="com3098">og</seg> keiserligt, jeg ikke lider.</l>
+             <l>Nei, jeg saae meer,</l>
+             <l>Saae paa Din Gaade, hvad jeg ser,</l>
+             <l rend="firstIndent">Som paa mig selv, saa paa <seg type="com" n="com3099">hver Anden</seg>,</l>
+             <l>Stadfæstelsen paa gamle Sprog,</l>
+             <l><seg type="comStart" n="com9062"/>At Lykken dog</l>
+             <l rend="firstIndent">Er bedre end Forstanden<seg type="comEnd" n="com9062"/>;</l>
+             <l>At mens Du længe grunded paa</l>
+             <l rend="firstIndent">Ret skiævt at vikle Gaaden ind,</l>
+             <l>Den lidt ubændig, som Man kan forstaae,</l>
+             <l rend="firstIndent">Kun giorde Nar ad Intets <seg type="com" n="com153">Pind</seg>,</l>
+             <l>Og, trods Dit Hovedbrud,</l>
+             <l>Fik sprættet mere ud,</l>
+             <l rend="firstIndent">End Du fik knebet ind,</l>
+             <l>Og at <hi rend="spaced">kanskee,</hi> som et ulydigt Barn,</l>
+             <l>Men derfor just ei noget Skarn,</l>
+             <l rend="firstIndent">Den gi'r Dig lidt at løbe efter</l>
+             <l rend="firstIndent">Saa ret af alle Kræfter,</l>
+             <l>Og løser selv imidlertid sig op</l>
+             <l>Fra Taa til Top.</l>
+             <l rend="firstIndent">Som i en Lignelse Du vil behage</l>
+             <l rend="secondIndent">At see just her,</l>
+             <l rend="firstIndent">Saa før Du kommer vel tilbage,</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax24.jpg" n="1508" subtype="column"/>Du har i Æsken &#x2013; Tøiet,</l>
+             <l>Og Fuglen, hun er fløiet.</l>
+             <l rend="firstIndent"><hi rend="spaced">Kanskee,</hi> thi hvad kan ikke skee,</l>
+             <l rend="firstIndent">Især af hvad vi ikke see,</l>
+             <l>I slig en <hi rend="spaced">spidsbu'agtig</hi> Gaade,</l>
+             <l>Der fiint forstaaer sig selv at <seg type="com" n="com9063">raade</seg>,</l>
+             <l rend="firstIndent">Saa næsviis, at, ei blot, som <hi rend="spaced">Individ,</hi></l>
+             <l>Den sætter <hi rend="spaced">hele Verden</hi> X for U,</l>
+             <l rend="firstIndent">Men selv kun som et <hi rend="spaced">angliseret</hi> Vid</l>
+             <l>Tør end til hele Verden sige: <hi rend="spaced">Du,</hi></l>
+             <l rend="firstIndent">Saa næsviis, og tillige saa forslagen,</l>
+             <l rend="firstIndent">Som ikkun daglig kommer meer for Dagen,</l>
+             <l>Ja, saa forslagen, at den med sit Nul</l>
+             <l>Kan smutte ind og ud i hvert et Hul</l>
+             <l rend="secondIndent">Som ingen Ting,</l>
+             <l>At den sig selv partere kan,</l>
+             <l>Og være dog hartad en holden Mand,</l>
+             <l rend="firstIndent">Ja, komme ved et lille Spring</l>
+             <l>(Som ellers hedder just <seg type="com" n="com156"><hi rend="romanType">mortale</hi></seg>)</l>
+             <l>Af Hovedet ned til sin Hale,</l>
+             <l rend="firstIndent">Saavidt i <seg type="com" n="com3100">Orme-Livlighed</seg>,</l>
+             <l rend="firstIndent">At, skiøndt parteret Led for Led,</l>
+             <l>Kan, saa at sige, <hi rend="spaced">Intet i det Hele</hi></l>
+             <l>Opsluge som et Bæst de andre Dele,</l>
+             <l rend="firstIndent">Og da, som sagt, som et forhexet Nul</l>
+             <l rend="firstIndent">Udsmutte af det allermindste Hul,</l>
+             <l>Og <hi rend="spaced">følgelig,</hi> (at regne efter Sproget,</l>
+             <l>Som her dog synes mig lidt <hi rend="spaced">kroget</hi>),</l>
+             <l rend="firstIndent">Udsmutte, hvad, som sagt, jeg dog betvivler meget,</l>
+             <l rend="firstIndent">Endogsaa af <hi rend="spaced">sit</hi> <hi rend="spaced">eget.</hi></l>
+             <l>See! hvad kan ikke skee</l>
+             <l rend="firstIndent">Med slig en Pokkers Gaade!</l>
+             <l>Hvad kunde ikke ske,</l>
+             <l rend="firstIndent">Ifald dens egenlige Gaade</l>
+             <l rend="firstIndent">Engang fik Lov at raade!</l>
+             <l>Du ser nu godt, jeg Gaaden ei <hi rend="spaced">miskiender,</hi></l>
+             <l rend="firstIndent">Saa lidet som dens Tolk;</l>
+             <l>Den har fuldtop i begge Hænder</l>
+             <l rend="firstIndent">Hvad ellers hovedløse Folk</l>
+             <l>Har netop <hi rend="spaced">Intet</hi> af,</l>
+             <l rend="firstIndent">Du veed nok, hvad jeg mener: <hi rend="spaced">Vid,</hi></l>
+             <l>Og har igien, hvad fremfor alt i Grav</l>
+             <l rend="firstIndent">De Hovedløse faae ved Andres Flid;</l>
+             <l>Thi naar Din Gaade <hi rend="spaced">ret</hi> Man endevender,</l>
+             <l>Den <hi rend="spaced">Intet</hi> har i begge Ender.</l>
+             <l rend="firstIndent">Du mener nok den Vending er lidt <hi rend="spaced">krum,</hi></l>
+             <l>Og var nu det bevidste krumme <seg type="com" n="com157">Læg</seg></l>
+             <l><pb type="text" ed="A" facs="1815_263_fax25.jpg" n="1509" subtype="column"/>Just ei Dit eget Æg,</l>
+             <l rend="firstIndent">Var den <hi rend="spaced">Indvending</hi> ei saa dum,</l>
+             <l>Men giør Du Dig til <hi rend="spaced"><seg type="com" n="com3101">Knud</seg>,</hi></l>
+             <l>Saa vender jeg det <hi rend="spaced">Laadne</hi> ud,</l>
+             <l rend="firstIndent">Og skal bevise ganske net,</l>
+             <l rend="firstIndent">At netop ved at vende Gaaden ret,</l>
+             <l>Man faaer <hi rend="spaced">dit Intet</hi> ud.</l>
+             <l rend="firstIndent">Det Første er <hi rend="spaced">Dit eget Individ,</hi></l>
+             <l>Og det er, som Du sander selv: <hi rend="spaced">et Nul,</hi></l>
+             <l rend="firstIndent">Det andet Led er Din Dualitet,</l>
+             <l>Men egenlig et <hi rend="spaced">divideret</hi> Nul;</l>
+             <l rend="firstIndent">Thi hvad Du kalder her Dualitet,</l>
+             <l rend="firstIndent">Er jo kun Individets Qvalitet,</l>
+             <l>Og det kun Skielmerie jeg kalder</l>
+             <l>Naar <seg type="com" n="com158"><hi rend="romanType">dividendus</hi> og <hi rend="romanType">divisor</hi></seg> falder</l>
+             <l rend="firstIndent">Saaledes sammen i Dit eget Du,</l>
+             <l rend="firstIndent">Det kalder Man at sætte X for U.</l>
+             <l>Nu, Qvantiteten af et Nul,</l>
+             <l>Det veed vi er <hi rend="romanType"><seg type="com" n="com160">rotundum</seg></hi> Hul</l>
+             <l rend="firstIndent">Men Nullets Qvalitet</l>
+             <l>Det er jo dog, trods alle Sving,</l>
+             <l rend="firstIndent">Og trods dets hele Individualitet,</l>
+             <l>Saa godt som ingen Ting.</l>
+          </lg>
+
+          <lg n="32">
+             <l rend="firstIndent">Dog, Skiald! jeg med saa dristig Skiemt</l>
+             <l>Frimodig Alvor maae forbinde,</l>
+             <l>Thi vel er Alvor <seg type="com" n="com9064">og</seg> i Skiemten inde,</l>
+             <l rend="firstIndent">Og <hi rend="spaced">falsk</hi> den Alvor, som ei taaler Skiemt,</l>
+             <l>Men naar vi tale om den store Livets Gaade,</l>
+             <l>Da skal dog over Skiemten Alvor raade.</l>
+             <l rend="firstIndent">Du derfor nu Din Leilighed maae føie,</l>
+             <l rend="firstIndent">Til Ordet ret alvorlig at <hi rend="spaced">fordøie:</hi></l>
+             <l>Trods dybe Glimt og kolossalske Dele,</l>
+             <l>Er Du og Gaaden Intet i det <hi rend="spaced">Hele,</hi></l>
+             <l rend="firstIndent">Som alt det <hi rend="spaced">Vid,</hi> der er hos Mand og Kvinde,</l>
+             <l rend="firstIndent">Som paa en Maade er i Gaaden inde,</l>
+             <l>Men egentlig dog kun i Munden,</l>
+             <l>Dog Intet er i Grunden.</l>
+             <l rend="firstIndent">Kort sagt, naar Man har ret beseet'en,</l>
+             <l>Man seer jo nok, at Du har <seg type="com" n="com3102">keget</seg> ind</l>
+             <l rend="firstIndent">I <hi rend="spaced">Vid-Dualiteten;</hi></l>
+             <l>Men med Dit Syn Du egenlig <seg type="com" n="com9065">giør Vind</seg>,</l>
+             <l rend="firstIndent">Som om Du meende, ret det var</l>
+             <l>En Heltegierning af en Skiald,</l>
+             <l>Og Kongebrevet paa hans Gaadekald,</l>
+             <l rend="firstIndent">Hvad vel ei giøres i et <hi rend="spaced">Ostekar,</hi></l>
+             <l><pb type="text" ed="A" facs="1815_263_fax25.jpg" n="1510" subtype="column"/>Men sees dog og giøres <hi rend="spaced">som deri</hi></l>
+             <l rend="secondIndent"><hi rend="spaced">Af Poesi,</hi></l>
+             <l rend="firstIndent">Af Skialden der i Individet sylter Valle,</l>
+             <l>Som om han Stregen var til Altings Nuller,</l>
+             <l>Og leger Tit igiennem Karrets Huller</l>
+             <l rend="firstIndent">Med Gud og Fanden og med Alle.</l>
+          </lg>
+
+          <lg n="33">
+             <l>Hvad er det gaadefuldeste ved Gaaden,</l>
+             <l>Ved Gierningen saavelsom Handlemaaden,</l>
+             <l rend="firstIndent">At Du har <hi rend="spaced">kunnet,</hi> eller Du har <hi rend="spaced">villet,</hi></l>
+             <l rend="firstIndent">Din Spillesyge eller Gaadespillet?</l>
+             <l>Ja, visselig er Underværket stort,</l>
+             <l rend="firstIndent">At Skialden i sig selv kan see Guds Rige</l>
+             <l rend="firstIndent">Et Billede af alt det <hi rend="spaced">Skuelige,</hi></l>
+             <l>Men Underværket har <hi rend="spaced">ei Skialden</hi> giort;</l>
+             <l rend="firstIndent">At Skialden, naar sit Inderste han maler,</l>
+             <l rend="firstIndent">Til Verden om dens egen Løndom taler,</l>
+             <l>Det er en Følge af hans <hi rend="spaced"><seg type="com" n="com162">Under-Syn</seg>,</hi></l>
+             <l>Som Synet Følgen af et <hi rend="spaced">Himmel-Lyn.</hi></l>
+             <l rend="firstIndent">Men at han kan <hi rend="spaced">enstund,</hi> naar han det vil,</l>
+             <l rend="firstIndent">Al Verden blænde med et Gaadespil,</l>
+             <l>Forblinde Øinene med <hi rend="spaced">Kierne-Melken,</hi></l>
+             <l><rs type="bible" key="Matt 7,4" rend="allusion">Saa Verden seer ei Skiæven eller Bielken</rs>,</l>
+             <l rend="firstIndent">Ja, <seg type="com" n="com9066">saa</seg> med dyrisk Magnetisme gnide</l>
+             <l rend="firstIndent">Hvert <seg type="com" n="com3103">Lem</seg> paa <hi rend="spaced">Verdens Side,</hi></l>
+             <l rend="firstIndent">At intet Andet den kan see og sandse,</l>
+             <l>End at <hi rend="spaced">dens Aand</hi> kan Altet <hi rend="spaced">indbegribe,</hi></l>
+             <l>At <hi rend="spaced">efter den</hi> i Skjaldens <hi rend="spaced">Sække-Pibe</hi></l>
+             <l rend="firstIndent">Maae Gud og hele Universet dandse;</l>
+             <l>Begrib det, store <seg type="com" n="com163">Dane-Skjald</seg>!</l>
+             <l rend="firstIndent">Det Underværk er ikke stort,</l>
+             <l>Men stor Forsyndelse mod høie Kald,</l>
+             <l rend="firstIndent">Og denne Synd, den har Du gjort,</l>
+             <l>I Gaaden og i mange Skjalde-Aar;</l>
+             <l>Skjønt, til Dit Held Du det kun <hi rend="spaced">halvt</hi> forstaaer.</l>
+             <l rend="firstIndent">Det gjorde Du, skjøndt ingen <seg type="com" n="com163">Dane-Skjald</seg></l>
+             <l rend="firstIndent">Har klarere <hi rend="spaced">beskrevet</hi> Skjaldens Kald:</l>
+             <l>&#x201C;Fremstille klart for Verden <hi rend="spaced">Sandheds Speil</hi></l>
+             <l>Og <hi rend="spaced">den i det</hi> med sine <seg type="com" n="com602">Bræk og Feil</seg>.&#x201D;</l>
+             <l rend="firstIndent">Skjøndt neppe Nogen større Evne fik</l>
+             <l rend="firstIndent">Til <hi rend="spaced">klare</hi> Syner og til dybe <hi rend="spaced">Blik.</hi></l>
+             <l>Hvad er din Gaade? kun et Tidsfordriv!</l>
+             <l rend="firstIndent">Du har dog <hi rend="spaced">nu ei megen Tid</hi> at spilde.</l>
+             <l>En Skygge af dit <hi rend="spaced">hele</hi> Skjaldeliv?</l>
+             <l rend="firstIndent">Maaskee, men, sandelig, da var det ilde.</l>
+             <l rend="firstIndent"><pb type="text" ed="A" facs="1815_263_fax26.jpg" n="1511" subtype="column"/>Et Billede af <hi rend="spaced">Livet i det Hele!</hi></l>
+             <l rend="firstIndent">Bestaaer da <hi rend="spaced">det i sine</hi> brudte Dele!</l>
+             <l>Bestaaer da nogen Enkelthed <hi rend="spaced">ved sig!</hi></l>
+             <l>Er <hi rend="spaced">Kjærligheden</hi> umeddelelig!</l>
+             <l rend="firstIndent">Er Sandhed anderledes <hi rend="spaced">i sig selv,</hi></l>
+             <l rend="firstIndent">End just som Kjærlighedens Livets Siæl!</l>
+             <l>Hvad vil Du da med alt det <hi rend="spaced">Hoved-Brud?</hi></l>
+             <l>Dit <hi rend="spaced">Liv</hi> som <hi rend="spaced">Edderkoppe</hi> spinde ud</l>
+             <l rend="firstIndent">I Aande-Hallen til saa fine Traade,</l>
+             <l rend="firstIndent">At Verden leer ad Livet og dets Gaade</l>
+             <l>Og Edderkoppen med, som imens Traaden fiin</l>
+             <l>Den spinder til sit eget <seg type="com" n="com164">Jordeliin</seg>,</l>
+             <l rend="firstIndent">Mens <hi rend="spaced">Støvekosten</hi> alt i <rs type="myth" key="myth112">Nornens</rs> <app type="corrNote" select="yes"><lem wit="GV">Haand</lem><rdg wit="A">Haaud</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+             <l>Dens Spindelvæv med Undergangen truer,</l>
+             <l rend="firstIndent">Som <hi rend="spaced">midlertid adsprede</hi> vil sin Aand,</l>
+             <l>Udspænde Væven <hi rend="spaced">for at fange Fluer,</hi></l>
+             <l rend="firstIndent">Og drømmer om at sidde tryg derinde,</l>
+             <l rend="firstIndent">Saa <rs type="myth" key="myth112">Nornen</rs> ei den mærke skal og finde?</l>
+             <l>Skiøndt Verden selv, hvis den dertil faaer Stunder,</l>
+             <l>Med lidt <hi rend="spaced">Umag</hi> den <seg type="com" n="com3104">Vittighed</seg> udgrunder:</l>
+             <l rend="firstIndent">Skal <rs type="myth" key="myth112">Nornen</rs> narres, maae <hi rend="spaced">sin Spindelvæv</hi></l>
+             <l rend="firstIndent">Man feie ned med &#x2013; Halen af en &#x2013; <hi rend="spaced">Ræv?</hi></l>
+          </lg>
+          
+          <lg n="34">
+             <l>Nei <hi rend="spaced"><seg type="com" n="com3105">Sællandsfar</seg>! det vil du ei</hi></l>
+             <l rend="firstIndent">Saasandt vi begge died <placeName key="fak14">Danmarks</placeName> <hi rend="spaced">Bryst,</hi></l>
+             <l>Saasandt vi har paa <hi rend="spaced">meest <seg type="com" n="com3106">adskillig</seg></hi> Vei</l>
+             <l rend="firstIndent">Dog begge kjendt og elsket <hi rend="spaced">Moders Røst.</hi></l>
+             <l>I Skjemt jeg løftede til dig min Stemme</l>
+             <l rend="firstIndent">Og flux gjenkjendte du en <hi rend="spaced">Broders</hi> Røst,</l>
+             <l>Du følde dybt, at den har aldrig hjemme</l>
+             <l rend="firstIndent">Undtagen i et ærligt, <seg type="com" n="com3107">sællandsk</seg> Bryst.</l>
+             <l>Du følde <seg type="com" n="com9067">vist</seg>, jeg skjemted ei for Lyst,</l>
+             <l rend="firstIndent">Og endnu mindre for den Roes at vinde</l>
+             <l>At Dolk jeg stødte i min Broders Bryst,</l>
+             <l rend="firstIndent">Og lod dog som jeg vilde Saar forbinde.</l>
+          </lg>
+
+          <lg n="35">
+             <l>Nei, Broder! <hi rend="spaced">nu</hi> jeg føler i min Aand,</l>
+             <l rend="firstIndent">At Du ei meer miskjende kan mit Hjerte,</l>
+             <l>At ei Du stolt bortstøde kan den Haand,</l>
+             <l rend="firstIndent">Jeg rækker Dig i Skin af <hi rend="spaced"><placeName key="fak14">Danmarks</placeName> Kjerte.</hi></l>
+             <l>Dit Eftermæle vil jeg gjemme nu</l>
+             <l>Til jeg et bedre kan med <seg type="com" n="com165">Sorg i Hu</seg>,</l>
+             <l rend="firstIndent"><hi rend="spaced">Maaskee,</hi> ifald jeg ved din Grav skal tale,</l>
+             <l rend="firstIndent">Med <placeName key="fak14">Danmarks</placeName> Kridt paa Kirke-Tavlen male.</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax26.jpg" n="1512" subtype="column"/>For <hi rend="spaced">Dig</hi> jeg skjemted, ei for Dagens Daarer,</l>
+             <l>Nei, Sandheds Smiil, saalidt som Sandheds Taarer</l>
+             <l rend="firstIndent">Er skabt for dem.</l>
+             <l>De sindrig fandt, at kun med Skit jeg foer</l>
+             <l>Fordi jeg med det ægte danske Ord</l>
+             <l rend="firstIndent">Tiltalde <hi rend="spaced">dem,</hi></l>
+             <l>Thi Skit paa Dansk, det burde de dog vide,</l>
+             <l>Er Alt hvad Gud og Sandhed ei kan lide,</l>
+             <l rend="firstIndent">Og jeg gad vist om ei en Rendesteen</l>
+             <l rend="firstIndent">Er mod et Daarehjerte reen.</l>
+          </lg>
+          
+          <lg n="36">
+             <l>Jeg maatte, Broder! <hi rend="spaced">Dine</hi> Feil opregne,</l>
+             <l>Skjøndt vist ei blind jeg er for mine egne,</l>
+             <l rend="firstIndent">Nei, visselig, det var et Spaadomsord</l>
+             <l rend="firstIndent">Som <seg type="com" n="com3108">underlig</seg> af Gaademund Dig foer,</l>
+             <l>At den som var ei blot paa Næstens <seg type="com" n="com9068">Skjæve</seg>,</l>
+             <l rend="firstIndent">Men fremfor alt paa egen Bjelke viis,</l>
+             <l>Han sønderhugged Dine <hi rend="spaced">Spindelvæve,</hi></l>
+             <l rend="firstIndent">Og vandt Din Priis.</l>
+             <l>Jeg maatte vise Dig i Sandheds Speil</l>
+             <l>Din Skikkelse med sine <seg type="com" n="com1007">Bræk</seg> og Feil;</l>
+             <l rend="firstIndent">Thi sprede vilde jeg den <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com166">Kogle-Dunst</seg></lem><rdg wit="A">Kogle-Dnnst</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></l>
+             <l>Der har omtaaget <seg type="com" n="com3109">saa</seg> Dit klare Øie,</l>
+             <l>Og Verden ei, om det sig nu kan føie,</l>
+             <l rend="firstIndent">Skal sige høit, jeg beiled til Din <hi rend="spaced">Gunst.</hi></l>
+             <l>Men tænker Du, at jeg bedømmer haardt</l>
+             <l rend="firstIndent">Din viltre Færd i vores <seg type="com" n="com167">Daare-Old</seg>,</l>
+             <l>Da viid, mit Syn er ikke ganske kort</l>
+             <l rend="firstIndent">Og, Gud skee Lov! min Hjerterod ei kold.</l>
+             <l>Du foer i Verden, som jeg faret vilde,</l>
+             <l>Hvis ei <hi rend="spaced">dertil</hi> jeg kommet var <hi rend="spaced">for silde,</hi></l>
+             <l rend="firstIndent">Og flere Ord behøves ikke her,</l>
+             <l rend="firstIndent">Thi Døgnet ei vort Skriftemaal er værd.</l>
+          </lg>
+
+          <lg n="37">
+             <l>Maaskee Du spørger, om jeg nu da tro'r</l>
+             <l>At Du er Eet med mig i Aand og Ord?</l>
+             <l rend="firstIndent">Jeg tro'r ei let, skjøndt jeg det did har drevet,</l>
+             <l rend="firstIndent">At til et Ordsprog alt min Troe er blevet</l>
+             <l>Imellem Folk, imod hvis Overtroe</l>
+             <l rend="firstIndent">Min Troe dog visselig er saare liden,</l>
+             <l rend="firstIndent">At de er visere end <hi rend="spaced">hele Tiden,</hi></l>
+             <l>Og kan til Himlen af sig selv opgroe.</l>
+             <l rend="firstIndent">Jeg Intet troer for Vist i denne Sag,</l>
+             <l rend="firstIndent">Undtagen det, at en velsignet Dag</l>
+             <l><pb type="text" ed="A" facs="1815_263_fax27.jpg" n="1513" subtype="column"/>Det var, da mig den Tanke foer i Bryst,</l>
+             <l>At tale til Dig med vor Moders Røst,</l>
+             <l rend="firstIndent">Samt <seg type="com" n="com3110">og</seg> den Dag, da mig i Øret foer</l>
+             <l rend="firstIndent">Som ned af Skyerne Dit Gaadeord;</l>
+             <l>Thi visselig, jeg har det ei <hi rend="spaced">udgrundet,</hi></l>
+             <l>Og aldrig før jeg Gaader har <seg type="com" n="com3111">udfundet</seg>.</l>
+             <l rend="firstIndent">Jeg tro'r kun vist, at jeg har som en Broder</l>
+             <l rend="firstIndent">Betalt min Gjeld til Dig og til vor Moder,</l>
+             <l>At Du har hørt og kjendt det paa min Røst,</l>
+             <l>At tomt er ei mit Hoved og mit Bryst,</l>
+             <l rend="firstIndent">At det bevæger underlig mit Sind,</l>
+             <l rend="firstIndent">At Gaaden sig i Skjemten fletted ind,</l>
+             <l>Som for at jeg med Alvor kunde ende</l>
+             <l rend="firstIndent">Som for at standse mig, saa ei jeg gav</l>
+             <l rend="firstIndent">Et Eftermæle over tomme Grav,</l>
+             <l>Hvori maaskee Du kunde mig miskjende,</l>
+             <l rend="firstIndent">Hvori maaskee <seg type="com" n="com3112">og</seg> Verden vilde fundet</l>
+             <l rend="firstIndent">Hvad ei for Skit den hidtil har udgrundet,</l>
+             <l>Og hvorfor jeg den narre skal galant,</l>
+             <l>Da af Dig selv jeg hørde Du det fandt.</l>
+          </lg>
+
+          <lg n="38">
+             <l>Det er min Troe, som sagt, om denne Sag,</l>
+             <l>Mit Haab skal dømmes af den næste Dag,</l>
+             <l rend="firstIndent">Jeg maatte græde om det skulde glippe,</l>
+             <l rend="firstIndent">Men Troen stod dog paa sin faste Klippe.</l>
+             <l>Og nu, far vel! saa godt Du selv vil fare!</l>
+             <l>Og lad Dit Liv <hi rend="spaced">Din Gaade ret <app type="corrNote" select="yes"><lem wit="GV">forklare</lem><rdg wit="A">forkare</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>!</hi></l>
+             <l rend="firstIndent">Som <hi rend="spaced">Gjæster</hi> vi i <hi rend="spaced"><placeName key="fak1292">Kongens Have</placeName></hi> boe,</l>
+             <l rend="firstIndent"><seg type="com" n="com9069">Du Tre-Ni-Nul, jeg Fire, Nul og To</seg>!</l>
+          </lg>
+          
+          <p rend="right"><hi rend="spaced">N. F. S. Grundtvig.</hi></p>
+          
+       </div>
+    
+    </body>  
+      
+   </text> 
+   
+  </TEI>

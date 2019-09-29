@@ -1,0 +1,616 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="main">Ving-Thors Hammer</title>
+      <title rend="shortForm">Ving-Thors Hammer</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Stine Holst Petersen</editor>
+      <editor role="student">Josefine Rahbek</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+              <idno type="firstUpload">1.10</idno>
+            	<idno type="content">1.10</idno>
+               <idno type="technic">1.10.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>9 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2017-05-01">www.grundtvigsværker.dk, version 1.10, 1. maj 2017</date>
+         </publicationStmt>
+         <!--<seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>[udgivelse dato]</idno>
+         </seriesStmt>-->
+         <notesStmt>
+            <note xml:id="thisFile" target="1838_605_2_txt.xml" type="txt">Læsetekst</note>
+            <note target="1838_605_2_com.xml" type="com">Punktkommentar</note>
+            <note target="1838_605_1_intro.xml" type="intro">Indledning</note>
+            <note target="1838_605_2_txr.xml" type="noTxr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">Festen for Thorvaldsen i Hôtel d'Angleterre den 7de October 1838</title>
+       <author>N.F.S. Grundtvig m.fl.
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>København</pubPlace>
+       <publisher>Jens Hostrup Schultz
+        <note></note>
+       </publisher>
+       <date>1838</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="605">
+        <desc>Førstetrykket</desc>
+        <num>1838</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>6</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>lejligheder</term>
+      <term>mytologi</term>
+      <term>nordisk</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+         <change who="NHB" when="2016-12-06">indsat tekst fra http://arkivet.thorvaldsensmuseum.dk/dokumenter/M18,26. Tilpasset html2tei</change>
+    <change xml:id="CAF" who="CAF" when="2016-12-09">1. kollation påbegyndt d. 8/12-16 og færdiggjort d. 9/12-16. Der var en del problemer med kodningen, fx startmærker og slutmærker til verselinier som lå hulter til bulter, hvilket forårsagede en masse mæslinger. Det har jeg bragt i orden og fjernet alle mæslingerne (altså i "Ving-Thors Hammer"). Smårettelser, som elimering af mellemrum og spatieringer af ord, har jeg ikke noteret i filen, men blot foretaget stiltiende. Der var ikke lavet nogle page breaks i filen så det har jeg tilføjet, dog er nummereringen af faksimilerne sikkert ikke rigtig (det skal man lige huske at rette til), da jeg ikke har haft adgang til dem.</change>
+    </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">   
+         
+     
+	 <!-- 
+		
+			
+				Festen i Hôtel d'Angleterre
+				Nik. Fred. Sev. Grundtvig
+				
+					Generated 
+					BookPartnerMedia
+				
+			
+			
+				
+			
+			
+				1838
+			
+			
+			[Source decription]
+			
+		
+	-->
+	
+		<!--<front rend="[Titelblad]">
+			<titlePage type="dustTitlePage">
+			<pb type="periText" facs="1838_16_page0001.png" ed="A" subtype="column" n=""/>
+			
+				<docTitle>
+	<titlePart type="main">FESTENi</titlePart>
+	<titlePart type="sub">Hôtel d'Angleterreden 7de October 1838.</titlePart>
+				<graphic style="shortLine/longLine"/>
+</docTitle>
+<byline>
+	<docAuthor/>
+				</byline>
+				<epigraph>
+				<graphic style="shortLine/longLine"/>
+<p rend="firstIndent">Musiktexter.</p>
+				</epigraph>
+				<p/>
+				<docImprint>
+				<pubPlace>Kjöbenhavn.</pubPlace>.Trykt hos Directeur <hi rend="spaced">Jens Hostrup Schultz,</hi>Kongelig og Universitets-Bogtrykker.
+<graphic style="shortLine/longLine"/>
+.
+</docImprint>
+</titlePage>
+</front>-->
+<body>
+<!--<div type="[gardintekst]"> 
+<pb type="edition/text/periText" facs="1838_16_page0002.png" ed="A" subtype="column" n=""/>
+
+<graphic style="shortLine/longLine"/>
+<head>No. 1</head>
+<head>Chor</head>
+<graphic style="shortLine/longLine"/>
+<lg n="1">
+<l><hi rend="spaced"><hi rend="initial">F</hi>ædreneland!</hi></l>
+<l><hi rend="spaced">Lysere Undrer Din Stjerne,</hi></l>
+<l><hi rend="spaced">Sönnen kom hjem fra det Fjerne,</hi></l>
+<l><hi rend="spaced">Flöi over Strand.</hi></l>
+<l><hi rend="spaced">Palmerne faure,</hi></l>
+<l><hi rend="spaced">Myrthe og Laure,</hi></l>
+<l><hi rend="spaced">Fængsle ei Thor;</hi></l>
+<l><hi rend="spaced">Nordstjernen blinker,</hi></l>
+<l><hi rend="spaced">Bogholmen vinker,</hi></l>
+<l><hi rend="spaced">Yndigst er moderlig Jord,</hi></l>
+</lg>
+<lg n="1">
+<l><hi rend="spaced">Fædreneland !</hi></l>
+<l><hi rend="spaced">Mod ham med udbredte Arme,</hi></l>
+<l><hi rend="spaced">Favn ham med moderlig Varme,</hi></l>
+<l><hi rend="spaced">Tryl som Du kan!</hi></l>
+<l><hi rend="spaced">Öine, som funkle,</hi></l>
+<l><hi rend="spaced">Midt i det Dunkle</hi></l>
+</lg> 
+<pb type="edition/text/periText" facs="1838_16_page0003.png" ed="A" subtype="column" n="4"/>
+
+<lg n="1">
+<l><hi rend="spaced">Straaleglands tee;</hi></l>
+<l><hi rend="spaced">Hjerter, som glöde,</hi></l>
+<l><hi rend="spaced">Roserne rode</hi></l>
+<l><hi rend="spaced">Yndelig plante paa Snee.</hi></l>
+</lg>
+<lg>
+<l><hi rend="spaced">Fædreneland,</hi></l>
+<l><hi rend="spaced">Riig kun paa Roge og Fipper!</hi></l>
+<l><hi rend="spaced">Fattes Du Bjerge og Klipper,</hi></l>
+<l><hi rend="spaced">Hent dem paa Stand!</hi></l>
+<l><hi rend="spaced">Thor dem udhugged,</hi></l>
+<l><hi rend="spaced">Rota dem vugged</hi></l>
+<l><hi rend="spaced">Mildt over Sö;</hi></l>
+<l><hi rend="spaced">Sommer og Finter</hi></l>
+<l><hi rend="spaced">Kridhvide Klinter</hi></l>
+<l><hi rend="spaced">Kneise paa Bogenes Ö!</hi></l>
+</lg>
+<p rend="firstIndent"><hi rend="spaced">N. F. S. Grundtvig.</hi></p>
+<pb type="edition/text/periText" facs="1838_16_page0004.png" ed="A" subtype="column" n="5"/>
+
+</div>
+<div type="[gardintekst]">
+<head><hi rend="spaced">Nº </hi>2.</head>
+<lg n="1">
+<l><hi rend="spaced"><hi rend="initial">A</hi>t give Sjelen Vinger, som</hi></l>
+<l><hi rend="spaced">Den bære til Guds Helligdom,</hi></l>
+<l><hi rend="spaced">At aabne Ahnelsernes Væld</hi></l>
+<l><hi rend="spaced">Og skjænke Jorden Haab og Held,</hi></l>
+<l><hi rend="spaced">At knytte ved et evigt Baand</hi></l>
+<l><hi rend="spaced">Hvert Hjerte til den store Aand,</hi></l>
+<l><hi rend="spaced">To Engle steg fra Himlen ned:</hi></l>
+<l><hi rend="spaced">Den skjönne Kunst og Kjærlighed.</hi></l>
+</lg>
+<lg>
+<l><hi rend="spaced">De mildt berörte Stövets Blik,</hi></l>
+<l><hi rend="spaced">Og da först Lyset klart fremgik;</hi></l>
+<l><hi rend="spaced">Naturens Liv var meer ei Trang</hi></l>
+<l><hi rend="spaced">Til Kamp for egen Undergang,</hi></l>
+<l><hi rend="spaced">Men Stræben mod den Harmonie,</hi></l>
+<l><hi rend="spaced">Som Skjönhed aabenbares i;</hi></l>
+<l><hi rend="spaced">Med Ærefrygt sank Stövet ned,</hi></l>
+<l><hi rend="spaced">Fandt Gud ved Kunst og Kjærlighed!</hi></l>
+</lg>
+<p rend="firstIndent"><hi><hi rend="spaced">Th. Overskou.</hi></hi></p>
+</div>
+<div type="[gardintekst]"> 
+<pb type="edition/text/periText" facs="1838_16_page0005.png" ed="A" subtype="column" n="6"/>
+
+<head><hi rend="spaced">Nº </hi>3.</head>
+<head>Romance.</head>
+<graphic style="shortLine/longLine"/>
+<lg n="1">
+<l><hi rend="spaced"><hi rend="initial">F</hi>ædreneland! i fjerne, skjönne Lande,</hi></l>
+<l><hi rend="spaced">Hvis Luft er saa mild, hvis Himmel stadig blaa,</hi></l>
+<l><hi rend="spaced">Drager mig Savn hen til de Strande,</hi></l>
+<l><hi rend="spaced">Hvor jeg som Barn til Himlen sorglos saae.</hi></l>
+<l><hi rend="spaced">Det vinker mildt, det lokker ömt,</hi></l>
+<l><hi rend="spaced">Med kjærlig Rost det kalder mig tilhage.</hi></l>
+<l><hi rend="spaced">Det vinker mildt, det lokker omt,</hi></l>
+<l><hi rend="spaced">Det vil mig hjemad drage.</hi></l>
+</lg>
+<lg n="1">
+<l><hi rend="spaced">Dannemarks Kyst! din Mark, din gyldne Ager,</hi></l>
+<l><hi rend="spaced">Uavet, der slaaer sin Bölge höit mod Strand,</hi></l>
+<l><hi rend="spaced">Det al min Hu kjærligt betager,</hi></l>
+<l><hi rend="spaced">Gjör atter til Barn den aldrende Mand.</hi></l>
+<l><hi rend="spaced">Det vinker mildt, det lokker omt,</hi></l>
+<l><hi rend="spaced">Det al min Sjæl og al min Hu betager.</hi></l>
+<l><hi rend="spaced">Det vinker mildt, det lokker omt,</hi></l>
+<l><hi rend="spaced">Til Hjemmet det mig drager.</hi></l>
+</lg> 
+<pb type="edition/text/periText" facs="1838_16_page0006.png" ed="A" subtype="column" n="7"/>
+
+<lg>
+<l><hi rend="spaced">O Fædreland ! lad fremmed Rige binde</hi></l>
+<l><hi rend="spaced">Lauren til Krands og række herlig Liin;</hi></l>
+<l><hi rend="spaced">Een er den Lön, helst jeg vil vinde,</hi></l>
+<l><hi rend="spaced">Den Kjærlighed, du skjænker til din Son.</hi></l>
+<l><hi rend="spaced">Den vinker mildt, den lokker omt,</hi></l>
+<l><hi rend="spaced">Den hvisker södt i mine Længsels-Klager.</hi></l>
+<l><hi rend="spaced">Den vinker mildt, den lokker omt,</hi></l>
+<l><hi rend="spaced">TU Hjemmet den mig drager.</hi></l>
+</lg>
+<p rend="firstIndent"><hi><hi rend="spaced">Mi. Hertz.</hi></hi></p>
+<pb type="edition/text/periText" facs="1838_16_page0007.png" ed="A" subtype="column" n="8"/>
+
+</div>
+<div type="[gardintekst]">
+<head><hi rend="spaced">Nº </hi>4.</head>
+<head>Musik og Plastik.</head>
+<lg n="1">
+<l><hi rend="spaced"><hi rend="initial">D</hi>engang Lyset blev, paa Herrens Bud,</hi></l>
+<l><hi rend="spaced">Da blev Skjönhed med det Samme,</hi></l>
+<l><hi rend="spaced">Thi da Verden modtog Lysets Flamme,</hi></l>
+<l><hi rend="spaced">Selv den sendte sine Straaler ud.</hi></l>
+<l><hi rend="spaced">Skjönhed synlig stod for hvert et Öie,</hi></l>
+<l><hi rend="spaced">Men Forgængeligheds Lod den fik;</hi></l>
+<l><hi rend="spaced">Opad drog den Stövets Blik,</hi></l>
+<l><hi rend="spaced">Peged mod det Höie,</hi></l>
+<l><hi rend="spaced">Mens den selv forgik.</hi></l>
+</lg>
+<lg n="1">
+<l><hi rend="spaced">Evig Skjönhed, som ved Tidens Magt</hi></l>
+<l><hi rend="spaced">Var til Bodelighed bunden,</hi></l>
+<l><hi rend="spaced">Om sin Banemand, for han var svunden,</hi></l>
+<l><hi rend="spaced">Vikled sine Rhythmers Blomsterpragt;</hi></l>
+<l><hi rend="spaced">Lyrens Kunst lod Tidsforandrings-Kjæden</hi></l>
+<l><hi rend="spaced">Dannes om til rhythmisk Toneström; </hi></l>
+<l><hi rend="spaced">Tonen dog, af Veemod öm,</hi></l>
+<l><hi rend="spaced">Klager midt i Glæden,</hi></l>
+<l><hi rend="spaced">At dens Liver Dröm.</hi></l>
+</lg> 
+<pb type="edition/text/periText" facs="1838_16_page0008.png" ed="A" subtype="column" n="9"/>
+
+<lg n="1">
+<l><hi rend="spaced">Höit fra Guders Chor til Hellas kaldt,</hi></l>
+<l><hi rend="spaced">Kom en Genius med Vinger,</hi></l>
+<l><hi rend="spaced">Som, för Svanesangens Afsked klinger,</hi></l>
+<l><hi rend="spaced">Skjænker Skjönhed blivende Gestalt</hi></l>
+<l><hi rend="spaced">Seclers Taage kan den Stærke skjule,</hi></l>
+<l><hi rend="spaced">Men hans Lyn gjör klart, hvor Taagen stod;</hi></l>
+<l><hi rend="spaced">Stormen lig om Heclas Fod,</hi></l>
+<l><hi rend="spaced">Svinger han fra Thule</hi></l>
+<l><hi rend="spaced">Sig med gjenfödt Mod.</hi></l>
+</lg>
+<lg>
+<l><hi rend="spaced">Atter Skjönhed staaer lig Fjeldets Top,</hi></l>
+<l><hi rend="spaced">Som af Evighed blev præget;</hi></l>
+<l><hi rend="spaced">Men ved Sangens Magt paany bevæget,</hi></l>
+<l><hi rend="spaced">Stenens Ro til Fremgang löses op:</hi></l>
+<l><hi rend="spaced">Kunsten, opvakt fra sin Marmorhvile,</hi></l>
+<l><hi rend="spaced">Moder Kunstneren i Rhythmers Dands;</hi></l>
+<l><hi rend="spaced">Toner sværme ved hans Glands,</hi></l>
+<l><hi rend="spaced">Flagre hen og smile</hi></l>
+<l><hi rend="spaced">Til hans Laurbærkrands.</hi></l>
+</lg>
+<p rend="firstIndent"><hi><hi rend="spaced">J. L. Heiberg.</hi></hi></p>
+<pb type="edition/text/periText" facs="1838_16_page0009.png" ed="A" subtype="column" n="10"/>
+
+</div>
+<div type="[gardintekst]">
+<head><hi rend="spaced">Nº </hi>5.</head>
+<head>Amor triumphans.</head>
+<lg n="1">
+<l><hi rend="spaced"><hi rend="initial">N</hi>u lytter! Min Musa synger</hi></l>
+<l><hi rend="spaced">Amors Bedrift.</hi></l>
+<l><hi rend="spaced">Du Stakkel, hvem Sorgen tynger,</hi></l>
+<l><hi rend="spaced">Tankerne skift!</hi></l>
+<l><hi rend="spaced">See, Aftnen er smuk og Guden nær!</hi></l>
+<l><hi rend="spaced">Han hilser os hist i Stjerneskjær</hi></l>
+<l><hi rend="spaced">Og bringer med sig Klynger</hi></l>
+<l><hi rend="spaced">Af straalende Seirs-Trophæer.</hi></l>
+</lg>
+<lg n="1">
+<l><hi rend="spaced">Som Hyldest ham Ares rakte</hi></l>
+<l><hi rend="spaced">Modlos sin Hjelm;</hi></l>
+<l><hi rend="spaced">Og ydmyg sin Thyrsus bragte</hi></l>
+<l><hi rend="spaced">Bacchus, den Skjelm;</hi></l>
+<l><hi rend="spaced">Poseidon, den gamle Graaskæg god,</hi></l>
+<l><hi rend="spaced">Beseiret sin Trefork gav til Bod, </hi>—</l>
+<l><hi rend="spaced">Selv Phöbus Lyren lagde</hi></l>
+<l><hi rend="spaced">Som Offer for Amors Fod.</hi></l>
+</lg> 
+<pb type="edition/text/periText" facs="1838_16_page0010.png" ed="A" subtype="column" n="11"/>
+
+<lg n="1">
+<l>I <hi rend="spaced">Himlen er ei hans Lige </hi>—</l>
+<l><hi rend="spaced">Daarer! Og I</hi></l>
+<l><hi rend="spaced">Tor vove mod ham at krige?</hi></l>
+<l><hi rend="spaced">Hylder ham, thi</hi></l>
+<l><hi rend="spaced">Hvad tænker I arme Stakler paa!</hi></l>
+<l><hi rend="spaced">Skal ikke Jer Hyldest han forsmaae,</hi></l>
+<l><hi rend="spaced">Saa offrer ham, den Rige,</hi></l>
+<l><hi rend="spaced">Det Bedste, hvad I formaae!</hi></l>
+</lg>
+<lg>
+<l><hi rend="spaced">Thi læg for hans Fod, o Maler,</hi></l>
+<l><hi rend="spaced">Pensel, Palet!</hi></l>
+<l><hi rend="spaced">Og Du, som fra Scenen taler,</hi></l>
+<l><hi rend="spaced">Krandsen ham flet!</hi></l>
+<l><hi rend="spaced">O Digter, Din Pen Du vie ham!</hi></l>
+<l><hi rend="spaced">Hver bringe sit Offer uden Bram!</hi></l>
+<l><hi rend="spaced">En gammel Gjeld betaler </hi>—</l>
+<l><hi rend="spaced">I skylde det Bedste ham!</hi></l>
+</lg>
+<p rend="firstIndent"><hi><hi rend="spaced">H. P. Holst.</hi></hi></p>
+<pb type="edition/text/periText" facs="1838_16_page0011.png" ed="A" subtype="column" n="12"/>
+
+</div>
+<div type="[gardintekst]">
+<head>No. 6</head>
+<head>Chor.</head>
+<lg>
+<l><hi rend="spaced"><hi rend="initial">F</hi>ædreneland!</hi></l>
+<l><hi rend="spaced">End, som i Hedenolds Dage,</hi></l>
+<l><hi rend="spaced">Skjaldene stamme fra Brage.</hi></l>
+<l><hi rend="spaced">Trindt om din Strand;</hi></l>
+<l><hi rend="spaced">Morgen og Aften</hi></l>
+<l><hi rend="spaced">Daaden og Kraften</hi></l>
+<l><hi rend="spaced">hoftes i Sky,</hi></l>
+<l><hi rend="spaced">Gamle og Unge</hi></l>
+<l><hi rend="spaced">Eenstemmig sjunge:</hi></l>
+<l><hi rend="spaced">Vingthor er vaagnet paany.</hi></l>
+</lg>
+<p rend="firstIndent"><hi><hi rend="spaced">N. F. S. Grundtvig.</hi></hi></p>
+<pb type="edition/text/periText" facs="1838_16_page0012.png" ed="A" subtype="column" n="13"/>
+
+</div>
+<div type="[gardintekst]">
+<head>Teften</head>
+<head>i</head>
+<head>Hôtel d’Angleterre</head>
+<p rend="firstIndent"><hi>den 7 October 1838.</hi></p>
+<graphic style="shortLine/longLine"/>
+<p rend="firstIndent">MUSIKALS-POETISK ACADEMIE.</p>
+<p rend="firstIndent"><hi rend="spaced">Nº 1</hi>. Chor af <hi rend="spaced">Grundtvig, </hi>componeret af <hi rend="spaced">Hartmann.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Recitation: Til Thorvaldsen fra Oehlenschläger.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Nº </hi>2. Fiirstemmig Sang af <hi rend="spaced">Kuhlau, </hi>med Text af <hi rend="spaced">Overskou.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Nº 3</hi>. Romance af <hi rend="spaced">Boyeldieu, </hi>med Text af <hi rend="spaced">Hertz.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Recitation: Jason og Alexandertoget; </hi>af <hi rend="spaced">Andersen.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Nº </hi>4. <hi rend="spaced">Musik og Plastik; </hi>af <hi rend="spaced">Heiberg, </hi>componeret af W<hi rend="spaced">eyse.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Recitation: Amor og Psyche; </hi>af <hi rend="spaced">H. P. Holst.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Nº 5.</hi> <hi rend="spaced">Amor triumphans; </hi>af <hi rend="spaced">H. P Holst, </hi>til Musik af <hi rend="spaced">Fröhlich.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Recitation: Ving-Thors Hammer; </hi>af <hi rend="spaced">Grundtvig.</hi></p>
+<p rend="firstIndent"><hi rend="spaced">Nº </hi>6. Chor af <hi rend="spaced">Grundtvig, </hi>componeret af <hi rend="spaced">Hartmann.</hi></p>
+<graphic style="shortLine/longLine"/>
+</div>-->
+     <div type="tekst">
+          
+	<pb type="text" facs="1838_605_2_fax003.jpg" ed="A" n="48"/>
+		<head rend="1"><p rend="center"><rs type="myth" key="myth74.g">Ving-Thors</rs> Hammer.</p></head>
+	<graphic style="shortLine"/>
+	<p rend="center"><hi rend="size-1">(Fremsagt af Forfatteren).</hi></p>
+	<!--<graphic style="longLine"/>-->
+     	<lg>
+	     <l><rs type="bible" rend="eg" key="5 Mos 4,28"><hi rend="initial">G</hi>uder gjort med Hænder</rs>,</l>
+	     <l>Aand af Støvet skabt,</l>
+	     <l>Det jeg frit bekiender,</l>
+	     <l>Jeg har aldrig havt;</l>
+	     <l>Men hos Manden, i hvis Værker</l>
+	     <l>Liv og Aand har Mindesmærker,</l>
+	     <l><rs type="bible" key="1 Mos 1,26" rend="allusion">Immer jeg Guds Billed seer</rs></l>
+	     <l><rs type="bible" key="1 Mos 1,26" rend="allusion">Ei i Marmor men i <seg type="com" n="com201">Leer</seg>.</rs></l>
+	     <l>Ei har jeg mig solet</l>
+	     <l>Sydfor <placeName key="fak1415">Alpefjeld</placeName>,</l>
+	     <l>Ei paa <placeName key="fak640">Kapitolet</placeName></l>
+	     <l>Misundt <placeName key="fak17">Rom</placeName> sit Held;</l>
+	     <l>Men at staae blandt dem i Aanden,</l>
+	     <l><pb type="text" facs="1838_605_2_fax004.jpg" ed="A" n="49"/>Som med Munden og med Haanden</l>
+	     <l>Storværk øve trindt paa Jord,</l>
+	     <l>Det er Skjaldedrift i <placeName key="fak24">Nord</placeName>,</l>
+         <l>Og at følge <hi rend="spaced"><placeName key="fak24">Nordens</placeName></hi> Helte,</l>
+	     <l>Hvor med Kraft de spænde Belte,</l>
+	     <l>Hvor med Glands de vinde Seire,</l>
+	     <l>Det var <seg type="com" n="com2">dobbelt</seg> Lyst i <hi rend="spaced"><placeName key="fak16">Leire</placeName></hi>,</l>
+         <l>Er <seg type="com" n="com3">og saa</seg> i <hi rend="spaced"><placeName key="poet396">Axelstad</placeName></hi>.</l></lg>
+	
+     		<lg>
+	     <l>Derfor, trods sit snevre Kammer,</l>
+	     <l>Skjalden tit stod der i Kveld,</l>
+	     <l>Hvor med <rs type="myth" key="myth74">Thors</rs> berømte Hammer</l>
+	     <l>Daglig hugged Dal i Fjeld</l>
+     	 <l><hi rend="spaced"><rs type="myth" key="myth198">Mod</rs></hi> og <hi rend="spaced"><rs type="myth" key="myth197">Magne</rs></hi><note type="footnote"><p rend="noIndent"><rs type="myth" key="myth198">Mod</rs> og <rs type="myth" key="myth197">Magne</rs> (Mod og Kraft) var, efter en Mythe, <rs type="myth" key="myth74">Thors</rs> Sønner, som skulde arve <hi rend="spaced"><rs type="myth" key="myth52">Mjølner</rs></hi>.</p></note>, som den arved</l>
+	     <l>Efter <rs type="myth" key="myth104">Ragnarokes</rs> Gru,</l>
+	     <l>Men ei rød med Blod den farved,</l>
+	     <l>Har med Glands forgyldt den nu!</l><!-- Her er det ikke rigtig til at finde ud af om dette skal stå for sig eller om det hænger sammen med resten af digtet: Er det en linegroup for sig eller ej? CAF-->
+	  </lg>
+	<lg>
+	     <l><pb type="text" facs="1838_605_2_fax005.jpg" ed="A" n="50"/>Lad det Folk, som yndigst <seg type="com" n="com4">brammer</seg>,</l>
+	     <l>Stadselig bag <placeName key="fak77">Rhin</placeName></l>
+	     <l>Kvæde om den <seg type="com" n="com5">Karle-Hammer</seg>,</l>
+		 <l><hi rend="spaced"><placeName key="fak106">Frankrig</placeName></hi> kalder sin:</l>
+	     <l>Hammeren fra Oldtids Dage,</l>
+	     <l>Som opveiet blev med Guld,</l>
+		 <l>Men nedsank, til <hi rend="spaced">Gallers</hi> Klage,</l>
+	     <l>Femten Mile under Muld;</l>
+		 <l><seg type="com" n="com6"><persName key="pe808">Brennus</persName>-Kiøllen</seg> fra <hi rend="spaced"><placeName key="fak750">Lombarte</placeName></hi>,</l>
+		 <l>Som stod op med <hi rend="spaced"><persName key="pe104">Bonaparte</persName></hi>,</l>
+	     <l>Knuste Been og Bjerg som <seg type="com" n="com40">Glar</seg>,</l>
+	     <l>Borgene som braadne Kar,</l>
+	     <l>Vandt med Lyn og Tordenbrag</l>
+	     <l>Prisen vel i hundred Slag,</l>
+		 <l>Før tilsidst, i Kamp med <hi rend="spaced">Aanden</hi>,</l>
+	     <l>Magtesløs den fløi af Haanden,</l>
+	     <l>Sank i sine gamle Spor</l>
+	     <l>Femten Mile under Jord!</l>
+	     <l>Lad den synke tusind Mile,</l>
+	     <l><pb type="text" facs="1838_605_2_fax006.jpg" ed="A" n="51"/>Aldrig meer opstaae!</l>
+	     <l>Derad skal som Piger smile</l>
+	     <l><placeName key="fak24">Nordens</placeName> Bølger blaa;</l>
+	     <l>Thi <hi rend="spaced">vor</hi> Hammer, dybt begravet</l>
+	     <l>Med det gamle Heltekuld,</l>
+	     <l>Den stod op med Lyn paa Havet</l>
+	     <l>Og med Glands af sorten Muld!</l>
+	     <l>Ja, for aldrig meer at segne,</l>
+	     <l>Den stod op i vore Egne,</l>
+	     <l>Den fra Fædres Kæmpehøi</l>
+	     <l>Deres Æt ihænde fløi,</l>
+	     <l>Saa mangfoldig, som i Støvet</l>
+	     <l>Storværk er af Aanden øvet;</l>
+	     <l>Thi i <placeName key="fak24">Norden</placeName> Præg af Aanden</l>
+	     <l><seg type="com" n="com7">Bær</seg> selv <seg type="com" n="com8">Kæmpeværk</seg> af Haanden,</l>
+		 <l>Vor <hi rend="spaced"><rs type="myth" key="myth185">Stærkodder</rs></hi> var med Priis</l>
+	     <l>Skjald og <seg type="com" n="com9">Kæmpe</seg> skifteviis!</l>
+	     <l>Derfor liflig <placeName key="fak24">Nordens</placeName> Tunge</l>
+	     <l>Kan om Haandens <seg type="com" n="com50">Idræt</seg> <seg type="com" n="com10">sjunge</seg>,</l>
+	     <l><pb type="text" facs="1838_605_2_fax007.jpg" ed="A" n="52"/>Juble <seg type="com" n="com11">trindt om</seg> <placeName key="fak110">Øresund</placeName>:</l>
+	     <l>&#x201C;Storværks Egn med Haand og Mund!&#x201D;</l>
+	     <l>Derfor <seg type="com" n="com12">og</seg> i Skjaldesang</l>
+	     <l>Prud sig op af Graven svang </l>
+	     <l><rs type="myth" key="myth74.g">Ving-Thors</rs> mageløse Hammer</l>
+	     <l rend="firstIndent">Med det gode Ry:</l>
+		 <l>Som den sigter, saa den rammer,</l>
+		 <l rend="firstIndent">Altid under Sky,</l>
+	     <l>Maa, for Fredens Skyld, <seg type="com" n="com13">tilvisse</seg></l>
+	     <l>Stundum ramme <rs type="myth" key="myth111">Jetters</rs> Isse,</l>
+	     <l>Men er dog med Konsten gjort</l>
+	     <l rend="firstIndent">Til i Flamme</l>
+	     <l rend="firstIndent">Vist at ramme</l>
+		 <l>Alt hvad <hi rend="spaced">Aanden</hi> kalder <hi rend="spaced">Stort</hi>,</l>
+	     <l>Saa, ved Konst og Kraftens Ord,</l>
+		<l><hi rend="spaced">Storværk</hi> reiser sig i <placeName key="fak24">Nord</placeName>,</l>
+	     <l>Som den <seg type="com" n="com14">sjunkne</seg> <seg type="com" n="com15">Kæmpetrop</seg></l>
+		  <l>Stod i <hi rend="spaced"><rs type="myth" key="myth347">Gladhjem</rs></hi> herlig op!</l>
+	     <l>Ja, da hist bag <placeName key="fak1415">Alpefjelde</placeName>,</l>
+	     <l><pb type="text" facs="1838_605_2_fax008.jpg" ed="A" n="53"/>Under klangfuldt Hammerslag,</l>
+		  <l><hi rend="spaced"><seg type="com" n="com16"><rs type="myth" key="myth252">Jason</rs></seg></hi> reiste sig med Vælde,</l>
+	     <l><seg type="com" n="com17">Kæmpehøi</seg> paa Seirens Dag,</l>
+		 <l>Da i Kamp paa <hi rend="spaced"><placeName key="fak414">Kongedybet</placeName></hi>,</l>
+	     <l>Under Kvad om <rs type="myth" key="myth74.a">Age-Thor</rs>,</l>
+	     <l>Høit sig hæved over Krybet</l>
+	     <l>Vætten fra det gamle Nord,</l>
+	     <l>Spaaende med Tordenstemme</l>
+	     <l>Om <seg type="com" n="com51">Idrætter</seg> tusindfold,</l>
+	     <l>Som skal <rs type="myth" key="myth111">Jetter</rs> klart beskæmme,</l>
+	     <l><seg type="com" n="com18">Straalekrandse</seg> <hi rend="spaced"><rs type="myth" key="myth509">Amlets</rs></hi> Skjold,</l>
+		 <l>Sanke under <hi rend="spaced"><seg type="com" n="com19">Dannebroge</seg></hi></l>
+		 <l>Seierstegn fra alle Kroge,</l>
+	     <l>Som til Vink om hver Bedrift,</l>
+	     <l>Hist de stod i Billedskrift,</l>
+		 <l> Klynged sig om <hi rend="spaced">Mester</hi>-Haanden,</l>
+		 <l>Som udmærker <persName key="pe124"><hi rend="spaced">Thorvalds</hi> Søn</persName>,</l>
+	     <l>Og afbilder <seg type="com" n="com20">Kæmpe-Aanden</seg></l>
+	     <l>Tusindformet, immerskiøn!</l><!-- Her er det igen ikke rigtig til at finde ud af om dette skal stå for sig eller om det hænger sammen med resten af digtet: Er det en linegroup for sig eller ej? CAF-->
+	  </lg>
+	<lg>
+	     <l><pb type="text" facs="1838_605_2_fax009.jpg" ed="A" n="54"/>Derfor, skiøndt, som Eremiten,</l>
+	     <l>Jeg kun daarlig fra Graniten</l>
+	     <l>Kiender <seg type="com" n="com21">Marmelstenen</seg> fiin,</l>
+		 <l>Seer i Rune før i <hi rend="spaced"><seg type="com" n="com22">Sule</seg></hi></l>
+		 <l>Aandens Præg, som gamle <hi rend="spaced"><placeName key="his588">Thule</placeName></hi></l>
+		 <l>Kaldte <seg type="com" n="com23">Kæmpevætte</seg> sin;</l>
+	     <l>Ei desmindre jeg med Glæde</l>
+	     <l>Er et Led af denne Kiæde,</l>
+	     <l>Konstens hjemmegiorte Krands,</l>
+	     <l>Der sig som et <seg type="com" n="com24">Tonebelte</seg></l>
+	     <l>Snoer om alle <placeName key="fak24">Nordens</placeName> Helte,</l>
+	     <l>Og ombølger i sin Glands</l>
+		 <l><hi rend="spaced">Ham</hi>, hvis Navn, naar Støvet blunder,</l>
+		 <l>Blive skal vor ny <hi rend="spaced"><rs type="myth" key="myth501">Vaulunder</rs></hi>,</l>
+	     <l>Vandre <seg type="com" n="com25">saa</seg> i <hi rend="spaced"><placeName key="fak24">Nordens</placeName></hi> Skove,</l>
+	     <l>Vugges <seg type="com" n="com25">saa</seg> paa Tidens Vove,</l>
+	     <l>Tone <seg type="com" n="com25">saa</seg> i <placeName key="poet214">Danevang</placeName>,</l>
+	     <l>Giennem mange Skjaldes Sang!</l>
+	     <l>Det forkynder denne Aften,</l>
+	     <l>Som bebuder meer endnu:</l>
+	     <l><pb type="text" facs="1838_605_2_fax010.jpg" ed="A" n="55"/>Vei sig bryder <seg type="com" n="com28">Kæmpekraften</seg>,</l>
+	     <l>Kommer Fortids Daad ihu,</l>
+	     <l>Vil ei længer, som for længe,</l>
+	     <l>Naar den skaber Skjaldekvad,</l>
+	     <l><seg type="com" n="com29">Riste</seg> <hi rend="spaced">kun</hi> om <seg type="com" n="com30">rørte Strænge</seg></l>
+	     <l>Paa det stumme <seg type="com" n="com31">Flyveblad</seg>,</l>
+	     <l>Men i Ordet, som har Vinge,</l>
+	     <l>Og i Røsten, som har Klang,</l>
+	     <l>Over Isserne sig svinge,</l>
+	     <l>Som de gamle Skjaldes Sang,</l>
+	     <l>Trylle frem de svundne Dage</l>
+	     <l>Og hver <seg type="com" n="com32">Ædling</seg> med sin Daad,</l>
+		 <l>Som i Fædres <rs type="myth" key="myth101">Valhald</rs> <hi rend="spaced"><rs type="myth" key="myth8">Brage</rs></hi>,</l>
+	     <l>Brydes kækt med <rs type="bible" key="1 Kor 15,56" rend="allusion">Dødens Braad</rs>!</l>
+	     <l>Det har <seg type="com" n="com33">Kæmpeaanden</seg> villet</l>
+	     <l>Og indskudt i Skjaldens <seg type="com" n="com34">Barm</seg>,</l>
+	     <l>Som vor Konstner har fremstillet</l>
+	     <l><hi rend="spaced">Døden</hi> skiøn i <hi rend="spaced">Livets Arm</hi><note type="footnote"><p rend="noIndent"> Livets og Dødens Genius af <hi rend="spaced"><persName key="pe124">Thorvaldsen</persName></hi> (hos <rs type="title" key="title5332">Thiele</rs> CLVI.) seet i det Forhold, som <hi rend="spaced">levende</hi>
+          Folk maae ønske.</p></note>.</l>
+	</lg>
+	<lg>
+	     <l><pb type="text" facs="1838_605_2_fax011.jpg" ed="A" n="56"/>Ja, naar, med sit Kvad i Haanden,</l>
+	     <l>Giennemtrængt af <seg type="com" n="com35">Kæmpeaanden</seg>,</l>
+	     <l>Skjalden staaer i <seg type="com" n="com36">Frændelag</seg>,</l>
+	     <l>Med sin Moders <seg type="com" n="com37">Tungeslag</seg>,</l>
+	     <l>Og udtrykker hvad han tænker,</l>
+	     <l>Hvad hans Hjerte kalder sandt;</l>
+	     <l>See, da briste Dødens Lænker,</l>
+	     <l>Der om Tonerne sig <seg type="com" n="com38">vandt</seg>,</l>
+	     <l><rs type="bible" key="Matt 24,31" rend="allusion">Som ved Dommedags-Basunen</rs></l>
+	     <l><rs type="bible" key="Matt 24,31" rend="allusion">Dødninger af Grav opstaae</rs>,</l>
+	     <l>Kækt sig hæver Tale-Runen,</l>
+	     <l>Svinger sig mod Skyer blaa,</l>
+	     <l>Jubler ud, til Gravens Harme,</l>
+	     <l>Dødens Bod i Livets Arme!</l>
+	  </lg>
+	<p rend="firstIndentRight">N. F. S. Grundtvig.</p>
+    
+     </div>
+</body>
+
+     
+        
+   </text>   
+  </TEI>

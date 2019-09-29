@@ -1,0 +1,411 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?> <!--<?xml-model type="application/relax-ng-compact-syntax" href="comRNC.rnc"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+                <title rend="shortForm">Maskeradeballet 1808</title>
+                <author>Holger Berg</author>
+                <editor role="editor3">Johnny Kondrup</editor>
+                <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+                <editor role="editor1">Vibeke A. Pedersen</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>29 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                <authority></authority>
+                
+                <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1808_76_txt.xml">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="com" target="1808_76_com.xml">Punktkommentar</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+<encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+                <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            </encodingDesc>
+<revisionDesc>
+                <change who="NHB" when="2011-09-05" xml:id="NHB">oprettet poster com1-com46</change>
+                <change who="NHB" when="2011-09-07">oprettet poster com47-com53, rettet de &#x00F8;vrige poster</change>
+                <change who="NHB" when="2011-09-13">oprettet post 54, rettet m&#x00E6;slinger i kode 1-54</change>
+                <change who="NHB" when="2011-10-17">begyndt at indtaste rettelser af VAP</change>
+                <change who="NHB" when="2010-11-10">TEI header indtastet</change>
+                <change who="NHB" when="2010-11-18">&#x00E6;ndret indhold</change>
+                <change who="NHB" when="2010-11-25">tr&#x00E6;strukturen tilpasset</change>
+                <change who="KSR" when="2011-11-28">rettelser i tei-header</change>
+                <change who="NHB" when="2011-11-28">rettelser i tei-header, indf&#x00F8;rt JKs rettelser</change>
+                <change who="NHB" when="2011-12-01">rettelser i TEI header</change>
+                <change who="NHB" when="2011-01-04">rettet beskrivelsen af Frankenaus viser</change>
+                <change who="NHB" when="2012-01-19">Rettet titleStmt</change>
+                <change who="NHB" when="2011-01-23">tilpasset TEIheader</change>
+                <change who="NHB" when="2011-03-07">rettet &#x00E5;rstal: skrives altid helt ud</change>
+                <change who="NHB" when="2012-03-20">justeret teiHeader</change>
+                <change who="NHB" when="2012-04-20">justeret teiHeader og kodning</change>
+                <change who="NHB" when="2012-06-13">tilpasset ref</change>
+                <change who="NHB" when="2012-06-29">slettet com12; oprettet som fiktiv person</change>
+                <change who="NHB" when="2012-07-03">Dana igen kodet som punktkommentar</change>
+                <change who="NHB" when="2012-10-08">slettet com71</change>
+                <change when="2012-10-09" who="NHB">valideret</change>
+                <change who="NHB" when="2012-11-19">persName fjernet fra litList</change>
+                <change who="NHB" when="2013-04-05">valid, undtagen henvisning til tidslinjen</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="NHB" when="2014-03-20">valideret</change>
+     <change who="NHB" when="2016-04-13">valid</change>
+</revisionDesc>
+    </teiHeader>
+    <text type="com">
+        <body>
+            <note xml:id="com17">
+                <p>Se indledningen, afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn29">&#x201C;Visioner&#x201D;</ref>, hvor de g&#x00E6;ngse litter&#x00E6;re former gennemg&#x00E5;s.</p>
+            </note>
+            <note xml:id="com1">
+                <p>her i betydningen: g&#x00E6;v, dansk kvinde.</p>
+            </note>
+            <note xml:id="com48">
+                <p>Ordret citat fra overs&#x00E6;ttelsen af <hi rend="italic">Loddf&#x00E1;fnism&#x00E1;l</hi> (da. <hi rend="italic">Loddfavner r&#x00E5;des</hi>) i <rs type="title" key="title320">
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+</rs> (da. <hi rend="italic">Den H&#x00F8;jes tale</hi>) i <rs type="title" key="title121">
+<hi rend="italic">Den &#x00C6;ldre Edda</hi>
+                    </rs>hos <rs type="title" key="title28">Sandvig 1 1783</rs>, s. 93, strofe 2 og 3 (<ref type="docOut" target="bookInventory1805.xml#docIn57">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 57) (svarende til <rs type="title" key="title71">Larsen 1943</rs>, s. 87, strofe 111; <rs type="title" key="title15">Edda S&#x00E6;mundar 1787</rs>, s. 116 f., strofer 112-113, <ref type="docOut" target="bookInventory1805.xml#docIn106">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 106). Grundtvig markerer ikke udeladelsen af det sidste vers i Sandvigs strofe 3. </p>
+                <note type="readMore">
+                    <p> Sandvigs strofe 2-3 citeres her inklusive de udeladte passager: </p>
+                    <p rend="quote">&#x201C;Tid er at tale / Af Talestolen, / Over <rs type="myth" key="myth100">Urda&#x2019;s Br&#x00F8;nd</rs>. / Jeg saae og t&#x00E6;nkde. / Jeg saae og tied&#x2019;. // Jeg lyded&#x2019; paa Raad / Og Tale-Runer, / Da jeg h&#x00F8;rde Domme / Og Love bl&#x00E6;ses; / I den h&#x00F8;ie Sal, / Med disse Ord:&#x201D;</p>
+                </note>
+            </note>
+            <note xml:id="com64">
+                <p>De forskellige trylleruner blev anvendt til hver sit form&#x00E5;l. Der fandtes sejrruner, &#x00F8;lruner, br&#x00E6;ndingsruner, visdomsruner og alts&#x00E5; taleruner.</p>
+            </note>
+            <note xml:id="com2">
+                <p>kv&#x00E6;g.</p>
+            </note>
+            <note xml:id="com49">
+                <p>n&#x00E6;sten ordret citat fra Det store Visdomsdigt i <rs type="title" key="title320">
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+</rs> (da. <hi rend="italic">Den H&#x00F8;jes tale</hi>) i overs&#x00E6;ttelsen af <rs type="title" key="title121">
+<hi rend="italic">Den &#x00C6;ldre Edda</hi>
+</rs> hos <rs type="title" key="title28">Sandvig 1 1783</rs>, s. 82, strofe 2 (<ref type="docOut" target="bookInventory1805.xml#docIn57">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 57) (svarende til <rs type="title" key="title71">Larsen 1943</rs>, s. 82, strofe 77; <rs type="title" key="title15">Den arnamagn&#x00E6;anske kommissions udgave 1 1787, s. 102, strofe 77</rs>, <ref type="docOut" target="bookInventory1805.xml#docIn106">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 106). </p>
+                <note type="readMore">
+                    <p> Strofen har en anden ordlyd hos Sandvig: </p>
+                    <p rend="quote">&#x201C;D&#x00F8;er F&#x00E6;e, / D&#x00F8;e Fr&#x00E6;nder, / Selv hver paa det sidste. / Men eet veed jeg, / Som ret aldrig d&#x00F8;er; / Dom om hver en D&#x00F8;d.&#x201D; </p>
+                </note>
+            </note>
+            <note xml:id="com35">
+                <p>
+<hi rend="italic">Den H&#x00F8;jes tale</hi> er et l&#x00E6;redigt fra <rs type="title" key="title121">
+<hi rend="italic">Den &#x00E6;ldre Edda</hi>
+</rs>. Det er lagt i munden p&#x00E5; H&#x00E1;r, den h&#x00F8;je, dvs. <rs type="myth" key="myth59">Odin</rs>. Det best&#x00E5;r af flere dele, bl.a. en ordsprogsdel, et afsnit om almindelig moral og livsvisdom samt et afsnit om, hvordan <rs type="myth" key="myth59">Odin</rs> opn&#x00E5;r visdom og magiske evner: han ofrer sig selv ved at h&#x00E6;nge ni dage og ni n&#x00E6;tter i tr&#x00E6;et <rs type="myth" key="myth103">Yggdrasil</rs>.</p>
+                <note type="readMore">
+<p>Digtet kendes under f&#x00F8;lgende navne: H&#x00E1;va M&#x00E1;l; H&#x00E1;vam&#x00E1;l.</p>
+                </note>
+            </note>
+            <note xml:id="com4">
+                <p> I s&#x00F8;rgetiden efter en afd&#x00F8;d begr&#x00E6;nsedes kl&#x00E6;dedragten til sort, og l&#x00F8;ssluppen selskabelighed, is&#x00E6;r musik, var ildeset. Lovpligtig landsd&#x00E6;kkende s&#x00F8;rgetid blev kun p&#x00E5;budt ved d&#x00F8;dsfald i kongefamilien. </p>
+                <note type="readMore">
+                    <p>Med andre ord oph&#x00F8;jer Grundtvig de danske ofre for det britiske bombardement i en kongelig sf&#x00E6;re. Se indledningens afsnit om <ref type="docOut" target="1808_76_intro.xml#docIn38">&#x201C;Landesorg&#x201D;</ref>. </p>
+                </note>
+            </note>
+            <note xml:id="com3">
+                <p>efter &#x00E5;rsskiftet 1807-1808.</p>
+            </note>
+            <note xml:id="com60">
+                <p> udtrykke. </p>
+            </note>
+            <note xml:id="com12">
+                <p>kvindelig personifikation af Danmark. </p>
+            </note>
+            <note xml:id="com15">
+                <p>imperativ pluralis af skamme. </p>
+            </note>
+            <note xml:id="com5">
+                <p>Vers 1 i omkv&#x00E6;det til drikkevisen af <persName key="pe509">Rasmus Frankenau</persName>
+                    <rs type="title" key="title331">&#x201C;Fryd Dig ved Livet&#x201D; (da. 1797, ty. 1793)</rs>. L&#x00E6;s mere i indledningen, afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn26">&#x201C;Maskeradebal&#x201D;</ref>. </p>
+            </note>
+            <note xml:id="com7">
+                <p>r&#x00E6;degrimen eller r&#x00E6;dselsmasken (arkaiserende). </p>
+            </note>
+            <note xml:id="com8">
+                <p>I mange maskerader blev der indlagt en mimisk g&#x00E6;tteleg, hvor de maskerede skrev formodede navne p&#x00E5; de andre g&#x00E6;ster i deres h&#x00E6;nder. N&#x00E5;r ens navn var g&#x00E6;ttet, skiftede man til en ny maskering.</p>
+            </note>
+            <note xml:id="com9">
+                <p>Den senere <persName key="pe96">Frederik 6.</persName> var stadig kronprins, da Grundtvig skrev stykket.</p>
+            </note>
+            <note xml:id="com58">
+                <p> rundt omkring. </p>
+            </note>
+            <note xml:id="com10">
+                <p>Skildringen af en &#x00E6;del, offervillig konges&#x00F8;n skulle forbedre <persName key="pe96">kronprinsens</persName> ry. K&#x00F8;benhavnere beskyldte ham for at v&#x00E6;re en kryster, der havde ladt hovedstaden i stikken, da han flygtede til Holsten i august 1807. Se indledningen, afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn25">&#x201C;V&#x00E6;rkets umiddelbare politiske baggrund&#x201D;</ref>. </p>
+            </note>
+            <note xml:id="com66">
+                <p> Det er tale om et hedensk blot. Se indledningen, afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn35">&#x201C;Blot og opofrelse&#x201D;</ref>.</p>
+            </note>
+            <note xml:id="com13">
+                <p>&#x00E5;rhundreder.</p>
+            </note>
+            <note xml:id="com14">
+                <p>
+<!-- ANF&#x00F8;J LINKS og post om den 20. oktober 1807 -->De britiske styrker konfiskerede og udskibede den danske fl&#x00E5;de i september og oktober 1807. Se Tidslinjen.</p>
+            </note>
+            <note xml:id="com56">
+                <p>Den opiumsholdige saft blev brugt som bed&#x00F8;velses- og sovemiddel. </p>
+            </note>
+            <note xml:id="com11">
+                <p>Der hentydes til kronprins <persName key="pe96">Frederik</persName>. </p>
+            </note>
+            <note xml:id="com16">
+                <p>mennesket.</p>
+            </note>
+            <note xml:id="com61">
+                <p> maskeradedragten; arkaiserende ord dannet af Grundtvig. </p>
+            </note>
+            <note xml:id="com67">
+                <p> ful kan betyde doven, h&#x00E6;slig eller r&#x00E5;dden. </p>
+                <note type="readMore">
+                    <p> &#x2018;Bl&#x00F8;dheds fule Leje&#x2019; kan enten l&#x00E6;ses som en almindelig sofa eller som den polstrede l&#x00F8;jb&#x00E6;nk, der bl.a. anvendtes til at fremvise nyligt afd&#x00F8;de. Den anden l&#x00E6;sem&#x00E5;de g&#x00F8;r lejet til en lit de parade, som den faldne sl&#x00E6;gt skal rejse sig fra. </p>
+                </note>
+            </note>
+            <note xml:id="com68">
+                <p> heltesl&#x00E6;gt. </p>
+            </note>
+            <note xml:id="com18">
+                <p>imperativ pluralis af kaste. </p>
+            </note>
+            <note xml:id="com19">
+                <p>imperativ pluralis af d&#x00E6;mpe. </p>
+            </note>
+            <note xml:id="com20">
+                <p>imperativ pluralis af ombytte. </p>
+            </note>
+            <note xml:id="com47">
+                <p>h&#x00F8;jtidelig (ty.: feierlich). </p>
+            </note>
+            <note xml:id="com21">
+                <p>imperativ pluralis af gange, dvs. g&#x00E5;! </p>
+            </note>
+            <note xml:id="com22">
+                <p>flammevinge; arkaiserende ord dannet af Grundtvig.</p>
+            </note>
+            <note xml:id="com69">
+                <p> V&#x00E5;ben blev if&#x00F8;lge folkelig overtro effektivere, hvis man hv&#x00E6;ssede eller sleb dem p&#x00E5; kirkemure, -s&#x00F8;jler og, som her, alterfoden. </p>
+            </note>
+            <note xml:id="com23">
+                <p>betage og fortrylle.</p>
+            </note>
+            <note xml:id="com24">
+                <p>imperativ pluralis af h&#x00F8;re. </p>
+            </note>
+            <note xml:id="com25">
+                <p>tr&#x00E6;thed. </p>
+            </note>
+            <note xml:id="com26">
+                <p>&#x201C;Tro ikke p&#x00E5; s&#x00E5;dan dum snak.&#x201D; Replikken gengiver muligvis den rationalistiske polemik mod den teologiske l&#x00E6;re om Herrens tugtelse af et syndigt folk. S&#x00E6;tningen benytter en forkert pr&#x00E6;position, &#x201C;auf&#x201D; i stedet for &#x201C;an&#x201D;, hvilket Grundtvig rettede i 2. udgave (<rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 8).</p>
+            </note>
+            <note xml:id="com27">
+                <p>Vers 1-2 af 6 i strofe 3 af 5 i drikkevisen <rs type="title" key="title329">&#x201C;Nyd Livets korte Morgenr&#x00F8;de&#x201D;</rs> af <persName key="pe509">Rasmus Frankenau</persName> (1. udg. senest 1806).</p>
+            </note>
+            <note xml:id="com50">
+                <p>Det afveg fra datidens norm at stave &#x201C;Selot&#x201D; med S istedet for Z. Se Grundtvigs note 2 til s. 20 i <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>.<!-- indf&#x00F8;j hyperlink n&#x00E5;r Kv&#x00E6;dlinger er udgivet -->
+                </p>
+            </note>
+            <note xml:id="com33">
+                <p>dvs. vred p&#x00E5; den glade. </p>
+            </note>
+            <note xml:id="com54">
+                <p> foran. </p>
+            </note>
+            <note xml:id="com28">
+                <p>pr&#x00E6;teritum pluralis af omg&#x00E5;, dvs. gik rundt om. </p>
+            </note>
+            <note xml:id="com29">
+                <p>pr&#x00E6;teritum pluralis af kv&#x00E6;de, dvs. kv&#x00E6;dede. </p>
+            </note>
+            <note xml:id="com62">
+                <p> fr&#x00E6;nder fra f&#x00F8;dslen af. </p>
+            </note>
+            <note xml:id="com63">
+                <p> Drog p&#x00E5; heltetogt. </p>
+            </note>
+            <note xml:id="com34">
+                <p>parafrase af <rs type="title" key="title321">Suhm 1 1782</rs>, s. 567, <ref type="docOut" target="bookInventory1805.xml#docIn15">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 15 og muligvis ogs&#x00E5; bog 9, kapitel 56 i <rs type="title" key="title333">Anders S&#x00F8;rensen Vedels Saxo-overs&#x00E6;ttelse (1610-udgaven)</rs>, <ref type="docOut" target="bookInventory1805.xml#docIn11">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 11. </p>
+            </note>
+            <note xml:id="com51">
+                <p>ormeg&#x00E5;rd, dvs. stor grube med giftige slanger. </p>
+            </note>
+            <note xml:id="com55">
+                <p>Ud fra interpunktionen, metrikken og de omgivende kvad at d&#x00F8;mme begynder her sandsynligvis en ny strofe p&#x00E5; syv verslinjer. Strofen er dog ikke markeret typografisk. Det er uvist, om trykkeren har overset den ny strofe eller bevidst har undladt at markere den for at beholde <rs type="myth" key="myth405">Lodbrogs</rs> kvad p&#x00E5; samme side.</p>
+                <note type="readMore">
+                    <p>Det samme g&#x00E6;lder andenudgaven, <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger</hi> 1815</rs>, s. 10. Den ny strofe er hverken markeret i <rs type="title" key="title169">
+<hi rend="italic">Poetiske Skrifter</hi> 1 1880</rs>, s. 13 eller i <rs type="title" key="title156">
+<hi rend="italic">Udvalgte Skrifter</hi> 1 1904</rs>, s. 231.</p>
+                </note>
+            </note>
+            <note xml:id="com52">
+                <p>slanger. </p>
+            </note>
+            <note xml:id="com65">
+                <p>Den s&#x00E5;kaldte blod&#x00F8;rn beskrives i bog 9, kapitel 56 i <persName key="pe350">Anders S&#x00F8;rensen Vedels</persName>
+                    <rs type="title" key="title333">Saxo-overs&#x00E6;ttelse (1610-udgaven)</rs>, <ref type="docOut" target="bookInventory1805.xml#docIn11">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 11.</p>
+            </note>
+            <note xml:id="com36">
+                <p>arkaiserende for: blev jeg stedt i n&#x00F8;d.</p>
+            </note>
+            <note xml:id="com59">
+                <p> Efter Slaget p&#x00E5; Rheden (1801) og K&#x00F8;benhavns Bombardement (1807) gjaldt briterne blandt danskerne som et trol&#x00F8;st folkef&#x00E6;rd. &#x201C;Albion perfida&#x201D; (trol&#x00F8;se Albion) var allerede blevet et udbredt fransk sm&#x00E6;deord under 1790'ernes revolutionskrige. <rs type="title" key="title128">
+<hi rend="italic">Maskeradeballet 1808</hi>
+</rs> p&#x00E5;peger fortidige eksempler p&#x00E5; britisk trol&#x00F8;shed. </p>
+            </note>
+            <note xml:id="com53">
+                <p>i skjul. </p>
+            </note>
+            <note xml:id="com37">
+                <p>Massakren p&#x00E5; St. Briccii Dag (den 13. november) 1002 beskrives her i en parafrase af <rs type="title" key="title321">Suhm 3 1787</rs>, s. 349-353, <ref type="docOut" target="bookInventory1805.xml#docIn17">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 17. Grundtvigs brug af v&#x00E6;rket uddyber indledningen, afsnittet om <ref target="1808_76_intro.xml#docIn31" type="docOut">&#x201C;P.F. Suhm&#x201D;</ref>. </p>
+            </note>
+            <note xml:id="com46">
+                <p>i stedet for. </p>
+            </note>
+            <note xml:id="com39">
+                <p>pr&#x00E6;teritum af grave, det vil her sige nedgravedes. Kvinderne blev, if&#x00F8;lge Grundtvigs kilde, levende &#x201C;nedgravne til Bugen i Jorden, og deres Bryster s&#x00F8;ndersledne af Hunde&#x201D; (<rs type="title" key="title321">Suhm 3 1787</rs>, s. 350).</p>
+            </note>
+            <note xml:id="com41">
+                <p>blive, i betydningen: at blive noget nyt.</p>
+            </note>
+            <note xml:id="com43">
+                <p>Ang&#x00E5;ende <persName key="pe445">Skt. Edmund</persName> er kilden <rs type="title" key="title321">Suhm 3 1787</rs>, s. 411 f., <ref type="docOut" target="bookInventory1805.xml#docIn17">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 17. <persName key="pe7">Suhm</persName> er anderledes afvisende over for traditionen om, at <persName key="pe445">Skt. Edmund</persName> nedsteg fra Himlen og med sin lanse dr&#x00E6;bte <persName key="pe444">Svend Tvesk&#x00E6;g</persName>. </p>
+                <note type="readMore">
+                    <p>Synden mod Gud kan hentyde til massakren p&#x00E5; civile og gejstlige, inklusive &#x00E6;rkebisp <persName key="pe541">Alphege</persName>, efter erobringen af Canterbury i september 1011. Se <rs type="title" key="title321">Suhm 3 1787</rs>, s. 381 f. </p>
+                </note>
+            </note>
+            <note xml:id="com42">
+                <p>rundkreds.</p>
+            </note>
+            <note xml:id="com32">
+                <p>De leende krigere kan v&#x00E6;re inspireret direkte af oldnordiske sange som <rs type="myth" key="myth405">Regnar Lodbrogs</rs> d&#x00F8;dskvad i <rs type="title" key="title327">Bjarkem&#x00E5;l</rs> eller indirekte af nyere teaterstykker og <persName key="pe394">Thomas Bartholins</persName>
+                    <rs type="title" key="title516">afhandling om d&#x00F8;dsforagt</rs> fra 1689. Se indledningen, afsnittet <ref type="docOut" target="1808_76_intro.xml#docIn32">&#x201C;Bartholin&#x201D;</ref>, og <rs type="title" key="title319">Sandvig 1779</rs>, s. 51, strofe 2, vers 8 (<ref type="docOut" target="bookInventory1805.xml#docIn47">
+<rs type="title" key="title308">Bogfortegnelse 1805</rs>
+</ref>, nr. 47); smlg. <rs type="title" key="title514">J&#x00F3;nsson 1913</rs>, s. 67, strofe 29. </p>
+            </note>
+            <div type="litList">
+                <head xml:id="docIn1">Anvendt litteratur</head>
+                <list type="litList">
+                    <item> Bartholin, Thomas (1689) <rs type="title" key="title516">
+<hi rend="italic">Antiqvitatum danicarum de causis contempt&#x00E6; a danis adhuc gentilibus mortis libri tres ex vetustis codicibus &amp; monumentis hactenus ineditis congesti.</hi>
+</rs> K&#x00F8;benhavn</item>
+                    <item>
+                        <rs type="title" key="title121">
+<hi rend="italic">Den &#x00E6;ldre Edda</hi>
+</rs>: se Den arnamagn&#x00E6;anske kommissions udgave og Sandvig 1783-1785</item>
+                    <item> Den arnamagn&#x00E6;anske kommissions udgave (u.&#x00E5;.: 1787-1828) <hi rend="italic">
+<rs type="title" key="title15">Edda S&#x00E6;mundar Hinns Fr&#x00F3;da. Edda Rhythmica seu antiqvior, vulgo S&#x00E6;mundina dicta</rs>
+</hi> (da. <hi rend="italic">S&#x00E6;mund den Frodes Edda. Den poetiske eller gamle Edda, almindeligvis kaldet S&#x00E6;munds</hi>), bind 1 (1787): <hi rend="italic">Odas mythologicas, a Resenio non editas, continens [...]</hi> udg. af Bolle Willum Luxdorph, Peter Friederich Suhm, B&#x00F8;rge Thorlacius, Abraham Kall &amp; Jacob Baden. U. st. (: K&#x00F8;benhavn)</item>
+                    <item> Frankenau, [Rasmus] &amp; (1826-1827) &#x201C;Fryd dig ved Livet&#x201D; [da. 1797, ty. 1793 af Johann Martin Usteri under titlen Freut Euch des Lebens] i S[&#x00F8;ren] Hempel udg. <rs type="title" key="title329">
+<hi rend="italic">Digter-Krands. En Samling af udkaarede &#x00E6;ldre og nyere Selskabssange</hi>,</rs> bind 1 (1826). Odense, s. 298 f</item>
+                    <item> Frankenau, [Rasmus] (1826-1827) &#x201C;Nyd Livets korte Morgenr&#x00F8;de&#x201D; [senest 1806] i S[&#x00F8;ren] Hempel udg. <rs type="title" key="title329">
+<hi rend="italic">Digter-Krands. En Samling af udkaarede &#x00E6;ldre og nyere Selskabssange</hi>,</rs> bind 1 (1826). Odense, s. 382 f</item>
+                    <item> Grundtvig, Nicolai Frederik Severin (1815) <hi rend="italic">
+<rs type="title" key="title334">Kv&#x00E6;dlinger eller Smaakvad</rs>
+</hi>. K&#x00F8;benhavn</item>
+                    <item>
+                        <rs type="title" key="title156">
+<hi rend="italic">N.F.S. Grundtvigs Udvalgte Skrifter</hi>
+</rs> (1904-1909) udg. af Holger Begtrup, bind 1 (1904). K&#x00F8;benhavn</item>
+                    <item>
+                        <rs type="title" key="title169">
+<hi rend="italic">N.F.S. Grundtvigs Poetiske Skrifter</hi>
+</rs> (1880-1930) udg. af Svend Grundtvig &amp; Georg Christensen, bind 1 (1880). K&#x00F8;benhavn</item>
+                    <item> J&#x00F3;nsson, Finnur udg. (1913) <rs type="title" key="title514">
+<hi rend="italic">Carmina Scaldica. Udvalg af Norske og Islandske Skjaldekvad.</hi>
+</rs> K&#x00F8;benhavn</item>
+                    <item> Larsen, Martin overs. (1943-1946) <rs type="title" key="title71">
+<hi rend="italic">Den &#x00E6;ldre Edda og Eddica minora,</hi>
+</rs> bind 1 (1943). K&#x00F8;benhavn</item>
+                    <item> Lundgreen-Nielsen, Flemming (1969) &#x201C;<rs type="title" key="title515">Mulm og Skr&#x00E6;k og Kamp og D&#x00F8;d. Johs. Ewalds &#x2018;Rolf Krage&#x2019;</rs>&#x201D; i <hi rend="italic">
+<rs type="title" key="title488">Danske Studier</rs>,</hi> s. 5-19</item>
+                    <item>M&#x00F8;ller, Elna &amp; Ebbe Nyborg (1981) &#x201C;Den romanske kirke og dens &#x00E6;ndring i tiden f&#x00F8;r Reformationen&#x201D; i <hi rend="italic">
+<rs type="title" key="title614">Danmarks Kirker</rs>. Ribe Amt</hi> udg. af Nationalmuseet, bind 1: <hi rend="italic">Ribe Domkirke,</hi> h&#x00E6;fte 3-4</item>
+                    <item> Sandvig, Bertel (1779) <rs type="title" key="title28">
+<hi rend="italic">Danske Sange af det &#x00E6;ldste Tidsrum, indeholdende blandt andet nogle Danske og Norske Kongers Bedrifter. Af det gamle Sprog oversatte.</hi>
+</rs> K&#x00F8;benhavn</item>
+                    <item> Sandvig, B[ertel] C[hristian] overs. (1783-1785) <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda</rs>,</hi> bind 1 (1783). K&#x00F8;benhavn</item>
+                    <item> Saxo Grammaticus (1610) <hi rend="italic">
+<rs type="title" key="title333">Den Danske kr&#x00F8;nike som Saxo Grammaticus skreff, halfffierde hundrede Aar forleden Oc nu, effter Kongelig Mayestats Privilegium i 10 Aar icke at maa efftertryckis, paa ny prentet</rs>
+</hi> overs. af Anders S&#x00F8;rensen Vedel. K&#x00F8;benhavn [1575]</item>
+                    <item> Suhm, Peter Friederich (1782-1828) <hi rend="italic">
+<rs type="title" key="title321">Historie af Danmark</rs>
+</hi>, bind 1 (1782): <hi rend="italic">fra de &#x00E6;ldste Tider til Aar 803</hi> &amp; bind 3 (1787): <hi rend="italic">fra Aar 942 til 1053.</hi> K&#x00F8;benhavn</item>
+                    <item> Vedel, Anders S&#x00F8;rensen, se Saxo Grammaticus</item>
+                </list>
+            </div>
+        </body>
+</text>
+</TEI>

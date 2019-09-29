@@ -1,0 +1,677 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Afbrudte Strøtanker ved Brevet til Vali-Magni</title>
+      <title rend="shortForm">Afbrudte Strøtanker</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Kim Steen Ravn</editor>
+      <editor role="student">Josefine Rahbek</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.8</idno>
+               <idno type="content">1.9</idno>
+               <idno type="technic">1.9.1</idno>
+          </edition>
+       </editionStmt>
+       <extent>22 KB</extent>
+       <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2016-09-01">www.grundtvigsværker.dk, version 1.9, 1. november 2016</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>1816-07-18</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1816_297_5_txt.xml" type="txt">Læsetekst</note>
+            <note target="1816_297_5_com.xml" type="com">Punktkommentar</note>
+            <note target="1816_282_intro.xml" type="noIntro">Indledning</note>
+            <note target="1816_297_5_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">Afbrudte Strøtanker ved Brevet til Vali-Magni</title>
+       <author>N.F.S. Grundtvig
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>København</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>1816</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="297">
+        <desc>Førstetrykket</desc>
+        <num>1816</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>4</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>polemik</term>
+       <term>litteratur</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+       <change xml:id="KSR" who="KSR" when="2016-02-05">txt2tei; rs myth</change>
+       <change who="KSR" when="2016-02-22">første koll. CAF, ex. 3, GC</change>
+       <change who="KSR" when="2016-03-03">anden koll. JR, ex. ?</change>
+       <change who="KSR" when="2016-04-12">3. koll.; KB ex</change>
+       <change who="KSR" when="2016-05-09">lejlighedsdigte slettet i genre</change>
+       <change who="KSR" when="2016-05-30">begynd: lemmatisering; opmærk. til rs, etc.</change>
+       <change who="KSR" when="2016-06-01">færdig: lemmatisering; opmærk. til rs, etc.</change>
+       <change who="KSR" when="2016-08-17">redaktion</change>
+       <change who="KSR" when="2016-09-02">afl. til KV til førsteredaktion</change>
+       <change who="KSR" when="2016-09-07">ret. fra 1. red. indført</change>
+       <change who="KSR" when="2016-10-19">FLNs red. indført</change>
+       <change who="KSR" when="2016-10-21">red.</change>
+       <change who="KSR" when="2016-11-14">txr</change>
+       <change who="KSR" when="2017-03-27">firstUpload</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">
+      
+      <body>
+         
+         <div type="Afbrudte Strøtanker">
+            
+            <pb ed="A" type="text" facs="1816_297_5_fax001.jpg" n="86"/>
+            <pb ed="PS" type="edition" n="259"/>
+            
+            <head rend="2">Afbrudte Strøtanker</head>
+            <head rend="1">ved Brevet til <seg type="com" n="com1">Vali-Magni</seg>.</head>
+            
+            <lg n="1">
+               <l>Hvem kalder? hvem kalder?</l>
+               <l>Hvem kalder i Kveld?</l>
+               <l>Hvem græder for <rs type="myth" key="myth6">Balder</rs>,</l>
+               <l>For <rs type="myth" key="myth6">Balder</rs> i <rs type="myth" key="myth33">Hel</rs>?</l>
+               <l>Hvem kalder paa <rs type="myth" key="myth79">Vale</rs>?</l>
+               <l>Hvem søger i <hi rend="spaced">Nord</hi></l>
+               <l><pb type="text" facs="1816_297_5_fax002.jpg" ed="A" n="87"/>De <hi rend="spaced">vestlige</hi> Sale</l>
+               <l>Hvor Helten <seg type="com" n="com2">opgroer</seg>,</l>
+               <l>Hvem aner vel <hi rend="spaced"><rs type="myth" key="myth203">Rinde</rs></hi></l>
+               <l>I <seg type="com" n="com250">Lundens Kiærminde</seg>?</l>
+               <l>Hvordan? har Kiærminden</l>
+               <l>Nu røbet for Vinden</l>
+               <l>Hvad i hende giærer,</l>
+               <l>Hvad lønlig hun bærer</l>
+               <l>I Barmen indsvøbt,</l>
+               <l>Den levende Kierte,</l>
+               <l>Der <seg type="com" n="com3">alt</seg> under Hjerte</l>
+               <l>Af Aanden er døbt,</l>
+               <l>Der voxen udvinder</l>
+               <l>Af Svøbet sig brat</l>
+               <l>Som Maanen oprinder</l>
+               <l>I bælmørke Nat,</l>
+               <l><seg type="com" n="com251">Den Spæde</seg> som gløder</l>
+               <l>I Fødselens Stund,</l>
+               <l>Og leder <seg type="com" n="com150">om</seg> <rs type="myth" key="myth128">Høder</rs></l>
+               <l>Paa Mark og i Lund,</l>
+               <l><pb ed="PS" type="edition" n="260"/>Og læser i Stjernen</l>
+               <l>Den Blindebuks Færd</l>
+               <l>Og kløver ham Hjernen</l>
+               <l>Med blinkende Sværd;</l>
+               <l>Ja driver og nøder</l>
+               <l>Selv <seg type="com" n="com252">Skyggen</seg> af <rs type="myth" key="myth128">Høder</rs></l>
+               <l><pb type="text" facs="1816_297_5_fax003.jpg" ed="A" n="88"/>Til op af sin Grav</l>
+               <l>At vandre i Blinde</l>
+               <l>Hvor <rs type="myth" key="myth79">Sønnen af Rinde</rs></l>
+               <l>Ham leder ved Stav,</l>
+               <l>Til <rs type="myth" key="myth6">Balder</rs> at giæste,</l>
+               <l>Og Synet stadfæste</l>
+               <l>Som blind han <seg type="com" n="com5">beloe</seg>,</l>
+               <l>Og kalde det Lykke</l>
+               <l>Hos <rs type="myth" key="myth6">Balder</rs> at <seg type="com" n="com267">bygge</seg></l>
+               <l>Og blindt ham <app type="corrNote" select="yes"><lem wit="GV">at</lem><rdg wit="A">ot</rdg><witDetail wit="A" n="10" rend="ft"/></app> troe;</l>
+               <l>Troe blindt paa den Samme</l>
+               <l>Han blind har <seg type="com" n="com151">forskudt</seg>,</l>
+               <l>Og blind det annamme</l>
+               <l>Han blind har forbrudt,</l>
+               <l>Troe stadig i blinde</l>
+               <l>Hos <rs type="myth" key="myth6">Balder</rs> at finde</l>
+               <l>Det Syn som paa Svig</l>
+               <l>Ham <rs type="myth" key="myth48">Loke</rs> forjætted</l>
+               <l>Naar Tuen han pletted,</l>
+               <l>Og <rs type="myth" key="myth6">Balder</rs> <seg type="com" n="com6">laae Liig</seg>,</l>
+               <l>Troe, Lyset først seirer</l>
+               <l>Og kommer tilsyne,</l>
+               <l>Naar Søvnen sig leirer</l>
+               <l>Paa <rs type="myth" key="myth301">Arvakurs</rs> <seg type="com" n="com152">Bryne</seg>,</l>
+               <l>Troe <rs type="myth" key="myth225">Alsvid</rs> maae kiøles</l>
+               <l>Om Gløden skal føles</l>
+               <l><pb type="text" facs="1816_297_5_fax004.jpg" ed="A" n="89"/>Og skues i Støv.</l>
+               <l>Hvem er det som kalder</l>
+               <l>Paa <rs type="myth" key="myth197">Magne</rs> saa <seg type="com" n="com7">fast</seg>!</l>
+               <l><pb ed="PS" type="edition" n="261"/>Mon Hornet <seg type="com" n="com8">alt</seg> gjalder,</l>
+               <l>Mon Broen <seg type="com" n="com8">alt</seg> brast!</l>
+               <l>Er <rs type="myth" key="myth105">Ormen</rs> <seg type="com" n="com8">alt</seg> revnet</l>
+               <l>Og <rs type="myth" key="myth74.a">Auka-Thor</rs> kvalt,</l>
+               <l>Er <rs type="myth" key="myth59.r">Valfader</rs> hevnet</l>
+               <l>Og <seg type="com" n="com253">Dagrækken talt</seg>?</l>
+               <l>Fandt <rs type="myth" key="myth81">Vidar</rs> <seg type="com" n="com13">alt</seg> <rs type="myth" key="myth198">Mode</rs></l>
+               <l>Og <rs type="myth" key="myth6">Balder</rs> hin Gode!</l>
+               <l>Skal <rs type="myth" key="myth74.a">Auka-Thors</rs> Sønner</l>
+               <l><seg type="com" n="com13">Alt</seg> hamre det Slag</l>
+               <l>Som evig <seg type="com" n="com153">giendønner</seg></l>
+               <l>I <seg type="com" n="com200">gnidslende</seg> Brag!</l>
+               <l>Skal Porten af Hængsel</l>
+               <l>Nu springe saa brat</l>
+               <l>Og <rs type="myth" key="myth512">Ginnunggabs</rs> Fængsel</l>
+               <l>Udfolde sin Nat,</l>
+               <l>Den Nat hvor kun gløde</l>
+               <l>De Gnister saa døde</l>
+               <l>Af Hammer og Staal;</l>
+               <l>Hvor Lyset der <seg type="com" n="com281">vinder</seg></l>
+               <l>Sig for sine Fiender</l>
+               <l>Forvandler til Baal!</l>
+               <l><pb type="text" facs="1816_297_5_fax005.jpg" ed="A" n="90"/>Hvem kalder? hvem vover</l>
+               <l>At vække i Kveld</l>
+               <l>Den <rs type="myth" key="myth232">Vætte</rs> der sover</l>
+               <l>I Lund og paa Fjeld!</l>
+               <l>Hvem vover at stjæle</l>
+               <l>Den Slumrendes Mæle!</l>
+               <l>Hvem vover at lege</l>
+               <l>Med Løvet af Ege!</l>
+               <l>Hvem vover at spøge</l>
+               <l>Med <seg type="com" n="com14">Maien</seg> af Bøge!</l>
+               <l>Hvem vover at giøgle</l>
+               <l>Med <placeName key="his23">Dannevirks</placeName> Nøgle?</l>
+               <l><pb ed="PS" type="edition" n="262"/>Hvem vover at spille</l>
+               <l>Med Nattergals-Trille!</l>
+               <l>Hvem vover at støde</l>
+               <l>I Hornet saa hvast!</l>
+               <l>Hvem vover at <seg type="com" n="com15">høde</seg></l>
+               <l>Og hamre saa fast!</l>
+               <l>Hvem synger i Blinde</l>
+               <l>Om Lyset saa lyst,</l>
+               <l>Som om dets <seg type="com" n="com282">Kiærminde</seg></l>
+               <l>Ham <seg type="com" n="com283">bygged</seg> i Bryst!</l>
+               <l>Hvem <seg type="com" n="com16">nemmed</seg> den Tone,</l>
+               <l>Hvem lærte den Sang</l>
+               <l>Som Bøgenes Krone</l>
+               <l>I Kveld giennemklang!</l>
+               <l><pb type="text" facs="1816_297_5_fax006.jpg" ed="A" n="91"/>Ak, stundum en <rs type="myth" key="myth111">Jette</rs>,</l>
+               <l>En <rs type="myth" key="myth98">Hrimthurse-Trold</rs></l>
+               <l>Skiøndt aldrig med Rette</l>
+               <l>Fik Kiedlen <seg type="com" n="com284">i Vold</seg>;</l>
+               <l>Ak! <seg type="com" n="com17">daares</seg> <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Af Smiger og Guld,</l>
+               <l>Saa hun med det Søde</l>
+               <l>Ham skjænker saa huld,</l>
+               <l>Da <seg type="com" n="com201">løses hans Tunge</seg></l>
+               <l>Til liflig at sjunge</l>
+               <l>De Toner som <rs type="myth" key="myth43">Kvaser</rs></l>
+               <l>I <rs type="myth" key="myth145">Høisangens</rs> Tid</l>
+               <l>Hos <rs type="myth" key="myth118">Vaner</rs> og <rs type="myth" key="myth106">Aser</rs></l>
+               <l>Indsamled med Flid;</l>
+               <l>I Honninge-Vove,</l>
+               <l>I <hi rend="spaced">Blodet</hi> de sove,</l>
+               <l>Og hver hvem <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l><seg type="com" n="com285">Meddeler</seg> det Søde,</l>
+               <l>Han <hi rend="spaced">mindes</hi> den <hi rend="spaced">Kierte</hi>,</l>
+               <l>Som lyste engang,</l>
+               <l><pb ed="PS" type="edition" n="263"/>Som blødende Hjerte</l>
+               <l>Attraaer i Sang;</l>
+               <l>Han Visen kan <seg type="com" n="com286">tone</seg></l>
+               <l>Som Bøgenes Krone</l>
+               <l>Bevæger saa sødt,</l>
+               <l><app type="corrNote" select="no"><lem wit="GV">Saa</lem><rdg wit="A">At</rdg><witDetail wit="A" n="26"><note corresp="PS" n="263">At</note>PS retter og bemærker "Smaad; Dvke.: Saa"; supplering med PS' læsemåde.</witDetail></app> Hjertet maae smelte</l>
+               <l><pb type="text" facs="1816_297_5_fax007.jpg" ed="A" n="92"/>I Piger og Helte,</l>
+               <l>Og Staal vorde blødt,</l>
+               <l>Saa Klippen maae høre,</l>
+               <l>Og Toner sig røre</l>
+               <l>I Malm og i Steen.</l>
+            </lg>
+            
+            <lg n="2">
+               <l>Ak! <seg type="com" n="com155">est</seg> du, <rs type="myth" key="myth181">Gunløde</rs>!</l>
+               <l>I <seg type="com" n="com18">Hrimthursevold</seg>!</l>
+               <l>Ak har med det Søde</l>
+               <l>Du <seg type="com" n="com287">skiænket</seg> en Trold!</l>
+               <l>Ak! da gav til <rs type="myth" key="myth111">Jetter</rs></l>
+               <l>Du <rs type="myth" key="myth106">Asernes</rs> Arv,</l>
+               <l>Da <rs type="myth" key="myth57">Nidhøg</rs> du mætter</l>
+               <l>Med <rs type="myth" key="myth103">Ygdrasills</rs> Marv.</l>
+            </lg>
+            
+            <lg n="3">
+               <l>Nei, <seg type="com" n="com288">retvise</seg> <rs type="myth" key="myth112">Norne</rs></l>
+               <l>Det aldrig <seg type="com" n="com19">tilstæder</seg>,</l>
+               <l>At Honningdug væder</l>
+               <l>Ufrugtbare Torne,</l>
+               <l>At <rs type="myth" key="myth111">Jetter</rs> sig lædske</l>
+               <l>Med <rs type="myth" key="myth103">Ygdrasils</rs> Vædske,</l>
+               <l>At <rs type="myth" key="myth98">Hrimthurser</rs> sjunge</l>
+               <l>Med Nattergal-Tunge,</l>
+               <l>At søde <seg type="com" n="com289">Kiærminder</seg></l>
+               <l>Oprinde i Bryst</l>
+               <l>Hos Gudernes Fiender,</l>
+               <l><pb type="text" facs="1816_297_5_fax008.jpg" ed="A" n="93"/>Og dufte til Lyst.</l>
+               <l><pb ed="PS" type="edition" n="264"/>Nei, <rs type="myth" key="myth52">Hammeren</rs> stjæle</l>
+               <l>Kan <rs type="myth" key="myth75">Thrymer</rs> og fjæle</l>
+               <l>Den dybt under Jord,</l>
+               <l>Men er dog for ringe</l>
+               <l>Til <rs type="myth" key="myth52">Mjølner</rs> at svinge,</l>
+               <l>Det mægter kun <rs type="myth" key="myth74">Thor</rs>.</l>
+               <l>Hvad ei han kan eie,</l>
+               <l>Det ruger han paa,</l>
+               <l>Men Livet <seg type="com" n="com20">i Leie</seg></l>
+               <l>Betale han maae,</l>
+               <l>Naar <rs type="myth" key="myth74">Thor</rs> sig forsoner</l>
+               <l>Med <rs type="myth" key="myth19">Freia</rs> paa nye,</l>
+               <l>Naar <rs type="myth" key="myth52">Hammeren</rs> toner</l>
+               <l>Med Brag under Skye.</l>
+               <l><app type="corrNote" select="no"><lem wit="GV">Ja,</lem><rdg wit="A">Vel</rdg><witDetail wit="A" n="16"><note corresp="PS" n="264">Vel</note>PS retter og bemærker "Smaad; Dvke.: Ja"; supplering med PS' læsemåde.</witDetail></app> <rs type="myth" key="myth41">Idun</rs> forvoven</l>
+               <l>Kan vandre i Kveld</l>
+               <l>Til <seg type="com" n="com254">Vildbane-Skoven</seg></l>
+               <l>Og synke i Fjeld;</l>
+               <l>Men sidder hun Dage,</l>
+               <l>Og sidder hun Aar,</l>
+               <l>De Æbler at smage</l>
+               <l>Dog <rs type="myth" key="myth240">Thjasse</rs> ei faaer,</l>
+               <l>Og naar kun til <rs type="myth" key="myth19">Freie</rs></l>
+               <l>De <rs type="myth" key="myth106">Aser</rs> hentye,</l>
+               <l>Da aabne sig Veie</l>
+               <l><pb type="text" facs="1816_297_5_fax009.jpg" ed="A" n="94"/>Saa høit under Skye,</l>
+               <l>Da <rs type="myth" key="myth48">Loke</rs> sig svinger</l>
+               <l>Paa Kiærligheds Vinger</l>
+               <l>Til <rs type="myth" key="myth99.d">Jetteland</rs> brat,</l>
+               <l>Og fører tilbage</l>
+               <l><rs type="myth" key="myth41">Idunne</rs> til <rs type="myth" key="myth8">Brage</rs></l>
+               <l>Med <rs type="myth" key="myth106">Asernes</rs> Skat,</l>
+               <l>Dem <rs type="myth" key="myth240">Thjasse</rs> forfølger</l>
+               <l><pb ed="PS" type="edition" n="265"/>Til <rs type="myth" key="myth87">Asernes Gaard</rs>,</l>
+               <l>Men luende Bølger</l>
+               <l>Hans Vinger <seg type="com" n="com290">omslaaer</seg>.</l>
+               <l>Og hvad han ei venter</l>
+               <l>Det times saa brat,</l>
+               <l>Med Livet <seg type="com" n="com255">forrenter</seg></l>
+               <l>Hun <rs type="myth" key="myth106">Asernes</rs> Skat.</l>
+               <l><seg type="com" n="com256">Saa</seg> kan <seg type="com" n="com203">vel</seg> <seg type="com" n="com21">og</seg> <rs type="myth" key="myth109">Dværge</rs></l>
+               <l>Med <rs type="myth" key="myth43">Kvaser</rs> faae Magt,</l>
+               <l>Naar ei han paa Bjerge</l>
+               <l>Sig tager i Agt,</l>
+               <l>Men drømmer at kunde</l>
+               <l>Det dybe udgrunde,</l>
+               <l>Og frister sin <seg type="com" n="com291">Stjerne</seg>,</l>
+               <l>Og bryder sin Hjerne</l>
+               <l>Langt meer end omsonst</l>
+               <l>Med <rs type="myth" key="myth109">Dvergenes</rs> Konst.</l>
+               <l>De <rs type="myth" key="myth109">Dverge</rs> med Liste</l>
+               <l><pb type="text" facs="1816_297_5_fax010.jpg" ed="A" n="95"/>Ham fritte og friste</l>
+               <l>Om <rs type="myth" key="myth74.a">Auka-Thors</rs> <rs type="myth" key="myth52">Hammer</rs>,</l>
+               <l>Hvi Dønnet <seg type="com" n="com292">saa</seg> flammer?</l>
+               <l>Om <rs type="myth" key="myth238">Brysinge-Smykket</rs></l>
+               <l>Hvi det er mislykket?</l>
+               <l>Om <seg type="com" n="com257">Skibet</seg> som evner</l>
+               <l>At gaae hvor det stævner,</l>
+               <l>Og <seg type="com" n="com22">Kaasen</seg> forfølge</l>
+               <l>Mod Vind og mod Bølge.</l>
+               <l>Da sortner det saare</l>
+               <l>Om <seg type="com" n="com258">Halvgudens</seg> Stjerne,</l>
+               <l>Da springer en Aare</l>
+               <l>I svulmende Hjerne;</l>
+               <l>Hans Blod maae nedrinde</l>
+               <l>I <rs type="myth" key="myth109">Dvergenes</rs> <seg type="com" n="com259">Haande</seg>,</l>
+               <l>Og listig de binde</l>
+               <l>Den himmelske Aande,</l>
+               <l><pb ed="PS" type="edition" n="266"/>Og Mjøden de blande</l>
+               <l>I hellige Vande,</l>
+               <l>I Duggen hin rene</l>
+               <l>Fra <rs type="myth" key="myth103">Ygdrasills</rs> Grene,</l>
+               <l>Som <seg type="com" n="com300">Bifluen</seg> skjuler</l>
+               <l>I <seg type="com" n="com24">vexede</seg> Huler.</l>
+               <l>Naar <seg type="com" n="com25">Kagerne</seg> <seg type="com" n="com293">segne</seg>,</l>
+               <l>Og Bierne <seg type="com" n="com260">daane</seg>,</l>
+               <l>Sig <rs type="myth" key="myth109">Dværge</rs> tilegne</l>
+               <l><pb type="text" facs="1816_297_5_fax011.jpg" ed="A" n="96"/>For <seg type="com" n="com274">Svovlet</seg> de laane,</l>
+               <l>Det Søde i <seg type="com" n="com26">Leie</seg>;</l>
+               <l>Kan blande og lave</l>
+               <l>Men aldrig dog eie</l>
+               <l>Den herlige Gave</l>
+               <l>Saa kraftig og sød.</l>
+               <l>Dem <rs type="myth" key="myth72">Suttung</rs> <seg type="com" n="com204">afnøde</seg></l>
+               <l>Kan <seg type="com" n="com27">Møden</seg> i Krig,</l>
+               <l>Og kalde <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Sin <seg type="com" n="com28">Dotter</seg> med Svig;</l>
+               <l>Han kan sig beruse</l>
+               <l>I Bobler som bruse</l>
+               <l>I <seg type="com" n="com29">vindaabne</seg> <seg type="com" n="com30">Mon</seg>,</l>
+               <l>I <rs type="myth" key="myth1142">Bodn</rs> og i <rs type="myth" key="myth1143">Son</rs><note type="footnote"><p rend="noIndent"><rs type="myth" key="myth1143">Son</rs> (Forligelsemaal eller <seg type="com" n="com214">Ligkiøb</seg>) og <rs type="myth" key="myth1142">Bodn</rs> (Tilbud eller <seg type="com" n="com215">Selvbud</seg>) var to aabne <seg type="com" n="com102">Træboller</seg> hvori naturligviis kun var <hi rend="spaced"><seg type="com" n="com103">Efterdrikke</seg>.</hi></p></note>:</l>
+               <l>Kan <hi rend="spaced">drømme</hi> om Dage,</l>
+               <l>Da <seg type="com" n="com34">og</seg> han skal smage</l>
+               <l>Det Søde som giærer</l>
+               <l>I Løn under Laag,</l>
+               <l>En <seg type="com" n="com35">Kalk</seg> af <rs type="myth" key="myth430">Odhrærer</rs><note type="footnote"><p rend="noIndent"><rs type="myth" key="myth430">Odhrærer</rs> (Sindsrørende) heed <hi rend="spaced"><app type="corrNote" select="yes"><lem wit="GV">Kiedelen</lem><rdg wit="A">Kiedeleu</rdg><witDetail n="24" wit="A" rend="ft"><note corresp="PS" n="266">Kjedelen</note>omvendt 'n' eller aflæggerfejl.</witDetail></app></hi> med den ægte <seg type="com" n="com38">Mød</seg>.</p></note></l>
+               <l>I Gudernes Sprog;</l>
+               <l><pb type="text" facs="1816_297_5_fax012.jpg" ed="A" n="97"/>Men ikkun i Drømme</l>
+               <l>Han blot til sin Pine</l>
+               <l><pb ed="PS" type="edition" n="267"/>En Draabe kan tømme</l>
+               <l>Af <seg type="com" n="com39">Møden</seg> hin fine.</l>
+               <l>Af <rs type="myth" key="myth112">Norner</rs> udkaaret</l>
+               <l>Til <seg type="com" n="com39">Møden</seg> at arve,</l>
+               <l>Men blind og bedaaret</l>
+               <l>Med blegnende Farve,</l>
+               <l>Blaaøiet <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Nu sidder i Fjeld,</l>
+               <l>Og vogter det søde</l>
+               <l>Det hellige Væld.</l>
+               <l>Hun mindes <seg type="com" n="com41">end</seg> Sproget</l>
+               <l>Fra ældgammel Tid,</l>
+               <l>Og løfter ei Laaget</l>
+               <l>Af Kiedelen viid,</l>
+               <l>Før hun kan fornemme</l>
+               <l>Paa Tone og Stemme,</l>
+               <l>Paa mindelig Bøn,</l>
+               <l><seg type="com" n="com158">Paa Gang og paa Sæde</seg></l>
+               <l>At der er tilstæde</l>
+               <l>En ægtefødt Søn;</l>
+               <l>Hun tør ham kun byde</l>
+               <l>Den perlende <seg type="com" n="com42">Kalk</seg></l>
+               <l>For Løftet: at bryde</l>
+               <l><pb type="text" facs="1816_297_5_fax013.jpg" ed="A" n="98"/>Den mørknende <seg type="com" n="com43">Balk</seg>;</l>
+               <l>Paa Troe og paa Love</l>
+               <l>At kæk han vil vove</l>
+               <l>Mod <rs type="myth" key="myth72">Suttung</rs> en Dyst,</l>
+               <l>Ja stride til Døden</l>
+               <l>For Blomsten og Gløden</l>
+               <l>Ham gives i Bryst,</l>
+               <l>For Tone og Minde,</l>
+               <l>Som vaagne derinde,</l>
+               <l>For Synerne klare</l>
+               <l>Der sig aabenbare,</l>
+               <l>For <rs type="myth" key="myth112">Nornerne</rs> milde,</l>
+               <l><pb ed="PS" type="edition" n="268"/>For <rs type="myth" key="myth103">Ygdrasills</rs> Kilde,</l>
+               <l>For <rs type="myth" key="myth154">Guldtavlens</rs> Alder,</l>
+               <l>For <rs type="myth" key="myth121">Gimle</rs> og <rs type="myth" key="myth6">Balder</rs>,</l>
+               <l>For <rs type="myth" key="myth59.a">Alfader</rs> Selv.</l>
+            </lg>
+            
+            <lg n="4">
+               <l>Hvem kalder? hvem kalder?</l>
+               <l>Hvem raaber i Kveld!</l>
+               <l>Hvem græder for <rs type="myth" key="myth6">Balder</rs>,</l>
+               <l>For <rs type="myth" key="myth6">Balder</rs> i <rs type="myth" key="myth33">Hel</rs>!</l>
+               <l>Hvem kalder paa <rs type="myth" key="myth79">Vale</rs>,</l>
+               <l>Paa Dug over Dale</l>
+               <l>Med <seg type="com" n="com44">underlig</seg> Røst;</l>
+               <l>Paa <rs type="myth" key="myth197">Magne</rs> og <rs type="myth" key="myth52">Mjølner</rs></l>
+               <l>Til Kamp imod <rs type="myth" key="myth59.n">Jølner</rs>,</l>
+               <l><pb type="text" facs="1816_297_5_fax014.jpg" ed="A" n="99"/><rs type="myth" key="myth181">Gunløde</rs> til Trøst!</l>
+               <l>Saa Ingen kan støde</l>
+               <l>I Hornet med Magt,</l>
+               <l>Som ei med <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l><seg type="com" n="com205">Mon træde</seg> i Pagt;</l>
+               <l>Saa Ingen kan sjunge</l>
+               <l>Hvem ikke sin Tunge</l>
+               <l>Det undtes at lædske</l>
+               <l>Med hellige Vædske;</l>
+               <l>Saa Ingen <seg type="com" n="com294">opstemmer</seg>,</l>
+               <l>Som ei i sit Hjerte</l>
+               <l>Et Minde fornemmer</l>
+               <l>Om hellige Kierte.</l>
+            </lg>
+            
+            <lg n="5">
+               <l>Har <rs type="myth" key="myth59.y">Bølværk</rs> nu atter</l>
+               <l>Da <seg type="com" n="com261">strøget</seg> med Latter</l>
+               <l>De Jettefolks <seg type="com" n="com206">Segle</seg>,</l>
+               <l>Og seet <seg type="com" n="com400">ved en Side</seg></l>
+               <l>Hvor Steen dog kan bide</l>
+               <l>Paa Marken de Snegle,</l>
+               <l>Og høstet for <rs type="myth" key="myth111">Jetten</rs></l>
+               <l>Som ni eller tretten?</l>
+               <l><pb ed="PS" type="edition" n="269"/>Har <rs type="myth" key="myth1144">Bauge</rs> nu boret</l>
+               <l>Med <seg type="com" n="com46">Navren</seg> saa smal?</l>
+               <l>Er <rs type="myth" key="myth59.y">Bølværk</rs> <seg type="com" n="com48">nedforet</seg></l>
+               <l>Som Slange i <seg type="com" n="com49">Hald</seg>?</l>
+               <l><pb type="text" facs="1816_297_5_fax015.jpg" ed="A" n="100"/>Har der han med Sproget</l>
+               <l><rs type="myth" key="myth181">Gunløde</rs> bedraget,</l>
+               <l>Bedaaret, saa Laaget</l>
+               <l>Hun flux har aftaget?</l>
+               <l>Har Kiærligheds-Eden</l>
+               <l>Han svoret paa Skrømt,</l>
+               <l>Og vil flyve <seg type="com" n="com50">heden</seg></l>
+               <l>Naar Karret er tømt?</l>
+               <l>Er <seg type="com" n="com262">Stødet</seg> som kalder</l>
+               <l>Kun <seg type="com" n="com51">Mundsvær</seg> og <seg type="com" n="com52">Gand</seg>?</l>
+               <l>Er Graaden for <rs type="myth" key="myth6">Balder</rs></l>
+               <l>Kun <seg type="com" n="com263">Tænder i Vand</seg>?</l>
+               <l>Vil <rs type="myth" key="myth59">Odin</rs> <app type="corrNote" select="no"><lem wit="GV"><hi rend="spaced">eet</hi></lem><rdg wit="A">sit</rdg><witDetail wit="A" n="13"><note corresp="PS" n="269">sit</note>PS retter og bemærker "Nord. Smaad.; Dvke.: ét"; grundteksten har 'eet' (spatieret); grundtekstens læsemåde er meningsfuld, og bør ikke rettes.</witDetail></app> Øie</l>               
+               <l> Nu sætte i Pandt,</l>
+               <l>For <rs type="myth" key="myth181">Gunlød</rs> at bøie</l>
+               <l>Til Troe paa hans <seg type="com" n="com265">Tant</seg>?</l>
+               <l>Vil nu som en Dranker</l>
+               <l>Han <seg type="com" n="com53">fare med Svig</seg>,</l>
+               <l>Og i <hi rend="spaced">sine Tanker</hi></l>
+               <l>Med eet vorde riig?</l>
+               <l>Vil <hi rend="spaced">alle tre</hi> <seg type="com" n="com266">Haande</seg>,</l>
+               <l>Mens han er i Aande,</l>
+               <l>Han tømme med List,</l>
+               <l>Og lade <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Sig sørge til Døde</l>
+               <l>Mens han flyver hist?</l>
+               <l><pb type="text" facs="1816_297_5_fax016.jpg" ed="A" n="101"/>Vil Kampen han svigte,</l>
+               <l>Og prøve at digte</l>
+               <l>Sig selv til en Gud?</l>
+               <l><pb ed="PS" type="edition" n="270"/>Vil Ravne han vinde</l>
+               <l><hi rend="spaced">I <hi rend="spaced"><rs type="myth" key="myth312">Hu</rs></hi> og i <hi rend="spaced"><rs type="myth" key="myth313">Minde</rs></hi></hi></l>
+               <l>Til troldkloge Bud?</l>
+               <l>Vil <rs type="myth" key="myth1043">Fjølner</rs> sig svinge</l>
+               <l>Fra <hi rend="spaced"><rs type="myth" key="myth389">Hvidebjerg</rs></hi> op</l>
+               <l>Paa <seg type="com" n="com55">Nidinge-Vinge</seg></l>
+               <l>Til <seg type="com" n="com295">Hekkenfelds</seg> Top?</l>
+            </lg>
+            
+            <lg n="6">
+               <l>O, vee da den Daare</l>
+               <l>Med rænkefuldt Sind!</l>
+               <l>O, rind da min Taare</l>
+               <l>Paa blegnende Kind!</l>
+               <l>Vel <rs type="myth" key="myth112">Nornerne</rs> <seg type="comStart" n="com56"/>spotte</l>
+               <l>Med<seg type="comEnd" n="com56"/> Daaren som tænker,</l>
+               <l>At hellige Grotte</l>
+               <l>Kan plyndres ved Rænker</l>
+               <l>Og mener omsonst</l>
+               <l>At kunne med Snilde</l>
+               <l>Det Hellige spilde,</l>
+               <l>Udtømme med Konst;</l>
+               <l>Vel vender tilbage</l>
+               <l>I Kiedlen saa <seg type="com" n="com57">fage</seg></l>
+               <l>Den Kraft og den Lyst</l>
+               <l><pb type="text" facs="1816_297_5_fax017.jpg" ed="A" n="102"/>Som aldrig kan <seg type="com" n="com268">bygge</seg></l>
+               <l>I svigefuldt Bryst,</l>
+               <l>Hvis <seg type="com" n="com269">glimrende</seg> Skygge</l>
+               <l>Kun Daarerne blænder,</l>
+               <l>Hvis Minde med Smerte</l>
+               <l>Et svigefuldt Hjerte</l>
+               <l>Kun piner og brænder.</l>
+               <l>Mens Daarer istemme:</l>
+               <l>Nu let er at <seg type="com" n="com58">nemme</seg></l>
+               <l>Den herlige Kunst;</l>
+               <l>Mens <rs type="myth" key="myth59">Odin</rs> sig bygger</l>
+               <l>En Verden af Skygger,</l>
+               <l><pb ed="PS" type="edition" n="271"/>Et <rs type="myth" key="myth101">Valhal</rs> af Dunst,</l>
+               <l>Da sidder <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Veemodig i Fjeld,</l>
+               <l>Og angrer sin Brøde,</l>
+               <l>Og sukker i Kveld</l>
+               <l>Om Hevn over Sønnen</l>
+               <l>Som Moderen sveeg,</l>
+               <l>Og Helteværks-Lønnen</l>
+               <l><seg type="com" n="com296">Med Falsk</seg> sig tilsneg;</l>
+               <l>Det høre de <rs type="myth" key="myth112">Norner</rs></l>
+               <l>Saa høit over Jord,</l>
+               <l>Det lyner og tordner</l>
+               <l>Saa høit over Nord,</l>
+               <l>Og Fjeldene revne</l>
+               <l><pb type="text" facs="1816_297_5_fax018.jpg" ed="A" n="103"/>Som Straalerne stævne;</l>
+               <l>Da springer tilside</l>
+               <l>Den ældgamle Dør,</l>
+               <l>Som Faa ikkun vide</l>
+               <l>Er <seg type="com" n="com59">falset</seg> i <seg type="com" n="com60">Nør</seg>;</l>
+               <l>Da aabner sig Grotten</l>
+               <l>Som giemmer det Døde,</l>
+               <l>Da nærmer sig Drotten</l>
+               <l>Som frelser <rs type="myth" key="myth181">Gunløde</rs>.</l>
+               <l>Paa <seg type="com" n="com208">Kæmperid-Slette</seg><note type="footnote"><p rend="noIndent"><rs type="myth" key="myth102">Vigrid</rs>.</p></note></l>
+               <l>Sig løfter saa <seg type="com" n="com61">bold</seg></l>
+               <l>Da <rs type="myth" key="myth59">Odan</rs> hin rette</l>
+               <l>Med Krone i Skjold,</l>
+               <l>Med Løver og Hjerter,</l>
+               <l>Med Kiedelen skiøn,</l>
+               <l>Med <seg type="com" n="com101">Søvætte-Kierter</seg>,</l>
+               <l>Og Linden saa grøn,</l>
+               <l>Med favre Guldbrikker</l>
+               <l>Paa Bunden saa blaa,</l>
+               <l><pb ed="PS" type="edition" n="272"/>Med Tavl og med Prikker</l>
+               <l>Som Faa kun forstaae<note type="footnote"><p rend="noIndent">See Kæmpevisen: <rs type="title" key="title1734">De vare <seg type="com" n="com104">siv og sivsindstive</seg></rs>.</p></note>.</l>
+               <l>Han hører det lyde</l>
+               <l>I Bjerge saa sødt,</l>
+               <l><pb type="text" facs="1816_297_5_fax019.jpg" ed="A" n="104"/>Det <seg type="com" n="com209">mon ham betyde</seg></l>
+               <l>At Liv er <app type="corrNote" select="yes"><lem wit="GV">ei</lem><rdg wit="A">i</rdg><witDetail wit="A" n="2"><note corresp="PS" n="272">i</note>PS bemærker "Saal. Dvke.; Nord. Smaad.: ej", men gengiver grundtekstens læsemåde; formentlig udfaldet type; rettes.</witDetail></app> dødt,</l>
+               <l>Han hører det klinge,</l>
+               <l>Og rider, som Vinge</l>
+               <l>Han havde for <seg type="com" n="com270">Ros</seg>,</l>
+               <l>De straalesky <rs type="myth" key="myth109">Dværge</rs></l>
+               <l>Som pusle i Bjerge</l>
+               <l>Han byder kun Trods.</l>
+               <l>Naar Solen i Fjelde</l>
+               <l>Indstraaler med Vælde,</l>
+               <l>Da haver <rs type="myth" key="myth181">Gunløde</rs></l>
+               <l>Forvundet sin Harm,</l>
+               <l>Hun føler det gløde</l>
+               <l>I kølnede Barm,</l>
+               <l>Hun væder sin Tunge</l>
+               <l>Med <seg type="com" n="com62">Møden</seg> hin klare,</l>
+               <l>Og Læberne sjunge,</l>
+               <l>Og Stenene svare;</l>
+               <l>Fra Sølvet i <seg type="com" n="com271">Strime</seg></l>
+               <l>Gaaer Klang imod Skye,</l>
+               <l>Som Sølvklokker kime</l>
+               <l>Ved Juledags Gry;</l>
+               <l>Og <rs type="myth" key="myth59">Odan</rs> hin rette</l>
+               <l>Han følger det Kald</l>
+               <l>Paa <seg type="com" n="com210">Kæmperid-Slette</seg></l>
+               <l>Til sande <rs type="myth" key="myth101">Val-Hald</rs>,</l>
+               <l><pb type="text" facs="1816_297_5_fax020.jpg" ed="A" n="105"/>For Kalken at <seg type="com" n="com64">smage</seg>,</l>
+               <l>Og hente tilbage,</l>
+               <l><pb ed="PS" type="edition" n="273"/>Som <rs type="myth" key="myth59.y">Bølværk</rs> i Drømme</l>
+               <l>Kun <seg type="com" n="com66">meende</seg> at tømme,</l>
+               <l>Som aldrig en Røver</l>
+               <l>Kan tage med Vold,</l>
+               <l>Som giærer, og tøver</l>
+               <l>Til Helten saa <seg type="com" n="com67">bold</seg></l>
+               <l>Ad <hi rend="spaced">Dørren</hi> <seg type="com" n="com211">indstævner</seg>,</l>
+               <l>Indsniger sig ei,</l>
+               <l>Ad Ridser og Revner</l>
+               <l>Paa Tyvenes Vei.</l>
+            </lg>
+
+            <lg n="7">
+               <l><seg type="com" n="com297">Saa</seg> <rs type="myth" key="myth59">Odan</rs> <seg type="com" n="com212">mon ride</seg></l>
+               <l>Til Gilde forgyldt,</l>
+               <l>Mens <rs type="myth" key="myth59.y">Bølværk</rs> i <seg type="com" n="com272">Kvide</seg></l>
+               <l>Faaer Løn som forskyldt,</l>
+               <l>Heel liflig for Bruden</l>
+               <l>Er Skyernes Brag,</l>
+               <l><app type="corrNote" select="yes"><lem wit="GV">Mens</lem><rdg wit="A">Med</rdg><witDetail wit="A" n="10"></witDetail></app> det for Afguden</l>
+               <l>Er <seg type="com" n="com69">Dommedag-Slag</seg>,</l>
+               <l>Da springe som <seg type="com" n="com273">Tvinde</seg>,</l>
+               <l>Da briste som Bast,</l>
+               <l>De Lænker der binde</l>
+               <l><rs type="myth" key="myth14">Ulv-Fenris</rs> saa fast,</l>
+               <l><pb type="text" facs="1816_297_5_fax021.jpg" ed="A" n="106"/>Og Lynet adsplitter</l>
+               <l>Det <rs type="myth" key="myth101">Valhal</rs> af Dunst,</l>
+               <l>Som praled med Flitter,</l>
+               <l>Og prisede <hi rend="spaced"><seg type="com" n="com298">Konst</seg></hi>;</l>
+               <l>Ei hielper nu <rs type="myth" key="myth251">Gugner</rs></l>
+               <l>Den Afgud et <seg type="com" n="com160">Gran</seg>,</l>
+               <l>Og Brynien <seg type="com" n="com299">bugner</seg></l>
+               <l>For Mordulvens Tand,</l>
+               <l>Ja Ulvenes Føder</l>
+               <l>Med Livet da bøder</l>
+               <l>I sit <rs type="myth" key="myth104">Ragnaroke</rs></l>
+               <l>For Pagten med <rs type="myth" key="myth48">Loke</rs>,</l>
+               <l><pb ed="PS" type="edition" n="274"/>Med Mordulvens Fader</l>
+               <l>Og Himmelens Hader,</l>
+               <l>Med Fyrsten for Tyve</l>
+               <l>Og Alle som lyve,</l>
+               <l>Med ham som <seg type="com" n="com70">behænde</seg></l>
+               <l>Det prøved igien</l>
+               <l>Som Tyv at tilvende</l>
+               <l>Sig <hi rend="spaced"><rs type="myth" key="myth238">Brysinge-Men</rs></hi>.</l>
+            </lg>
+            
+            <graphic style="asteriskUp"/>
+            
+         </div>
+      </body>
+   </text>   
+  </TEI>

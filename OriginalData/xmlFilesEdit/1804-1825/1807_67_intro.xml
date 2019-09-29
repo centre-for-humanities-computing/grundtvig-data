@@ -1,0 +1,1258 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="part">Om Schiller og Bruden fra Messina</title>
+        <title rend="shortForm">Om Schiller</title>
+        <author>Maria J&#x00F8;rgensen</author>
+        <editor role="editor2">dr.phil. Uffe Hansen</editor>
+           <editor role="editor3">Johnny Kondrup</editor>
+           <editor role="editor1">Vibeke A. Pedersen</editor>
+         <editor role="student2">Maria Wiggers Pedersen</editor>
+       <editor role="student1">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>104 KB</extent>      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, Aarhus University</publisher>
+        <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>        
+        <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+      </publicationStmt>      
+      <notesStmt>
+        <note type="txt" target="1807_67_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" target="1807_67_intro.xml" xml:id="thisFile">Indledning</note>
+      </notesStmt>
+      <!--  
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>
+      -->
+      <sourceDesc>
+        <p/>
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <!--  <profileDesc>
+      <creation>
+        <date>2011-03-03</date>
+        <note>Note</note>
+      </creation>
+      </profileDesc> -->
+    <revisionDesc>
+      <change xml:id="MJ" who="MJ" when="2012-10-16">tilretning af fil ifbm udload</change>
+      <change who="MJ" when="2012-12-12">tekstimporteret fra word inkl unicodes</change>
+      <change xml:id="MWP" who="MWP" when="2012-12-18">Opm&#x00E6;rket personer og titler</change>
+      <change who="JMR" when="2012-12-19">opm&#x00E6;rket personer og titler</change>
+      <change who="MJ" when="2013-01-25">indf&#x00F8;ring af Johnnys rettelser</change>
+      <change who="MJ" when="2013-01-28">indf&#x00F8;ring af Johnnys rettelser</change>
+      <change who="MJ" when="2013-04-22">sidste justeringer inden upload</change>
+      <change xml:id="JT" who="JT" when="2013-09-26">fjernet m&#x00E6;sling(er) i forb. med oplast af 1.3</change>
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+      <change who="KSR" when="2014-01-13">validering teiHeader + diverse</change>
+      <change who="JT" when="2014-10-03">Tilrettet readMore</change>
+    </revisionDesc>
+
+  </teiHeader>
+  <text type="intro">
+    <body>
+
+      <div>
+        <head xml:id="docIn1">Karakteristik</head>
+        <p rend="noIndent">Med afhandlingen &#x201C;Om <persName key="pe35">Schiller</persName> og
+            <rs key="title340" type="title">Bruden fra Messina</rs>&#x201D; (juni 1807)
+          fors&#x00F8;ger Grundtvig dels at demonstrere sine evner som overs&#x00E6;tter, dels at
+          pr&#x00F8;ve kr&#x00E6;fter med samtidens &#x00E6;stetiske teorier. Grundtvigs afhandling
+          er et fors&#x00F8;g p&#x00E5; at g&#x00E5; i rette med <persName key="pe35">Friedrich
+            Schillers</persName> idealistiske &#x00E6;stetik ud fra en romantisk-inspireret
+          kunstopfattelse, der &#x2013; som det tydeligt fremg&#x00E5;r af udkastene til afhandlingen &#x2013;
+          bygger p&#x00E5; et kristent livssyn. I afhandlingen kritiserer Grundtvig <persName key="pe35">Schillers</persName> forestilling om, at nydelsen af et (sandt)
+          kunstv&#x00E6;rk virker dannende og frig&#x00F8;rende p&#x00E5; tilskueren; en id&#x00E9;, som
+            <persName key="pe35">Schiller</persName> havde overtaget og videreudviklet fra <persName key="pe508">Immanuel Kants</persName> &#x00E6;stetik. Grundtvig opfatter den filosofiske
+          idealismes forestilling om, at mennesket skal frig&#x00F8;res gennem kunsten, som
+          illusorisk, og pl&#x00E6;derer i stedet for en mere f&#x00F8;lelsesbetonet &#x00E6;stetik,
+          hvor tilskueren gennem sin indlevelse i v&#x00E6;rket opn&#x00E5;r en
+          t&#x00E5;rev&#x00E6;det &#x201C;Ahnelse af det Evige&#x201D; (s. 133). Grundtvig lader sig
+          sekundere af <persName key="pe18">Henrich Steffens</persName>, idet han henter skyts til
+          sin kritik af idealismen b&#x00E5;de fra <persName key="pe18">Steffens'</persName>
+          <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske
+              Forel&#x00E6;sninger</rs>
+</hi> (1802, bogudgave 1803) og antagelig ogs&#x00E5; fra
+          hans tabte <persName key="pe29">Goethe</persName>-forel&#x00E6;sninger fra 1803. Hos
+            <persName key="pe18">Steffens</persName> l&#x00E5;ner Grundtvig mods&#x00E6;tningen
+          mellem den antikke kunsts oph&#x00F8;jede ro og den &#x2013; i datidens forstand &#x2013; moderne kunsts
+          splittelse mellem det ideelle og det reelle. Samme mods&#x00E6;tning kan findes i
+            <persName key="pe35">Schillers</persName> afhandling <rs type="title" key="title1804">&#x201C;&#x00DC;ber naive und sentimentalische Dichtung&#x201D;</rs> (1795-1796, da.
+            <rs type="title" key="title1835">&#x201C;Om naiv og sentimental digtning&#x201D;</rs>,
+          1952), hvor <persName key="pe18">Steffens</persName> antagelig stiftede bekendtskab med
+          den. Ydermere overtager Grundtvig <persName key="pe18">Steffens'</persName>
+          modstilling af poesi og kunst, som ikke findes i <persName key="pe35">Schillers</persName>
+          afhandling, samt <persName key="pe18">Steffens'</persName> kritik af <persName key="pe29">Goethes</persName> &#x2013; p&#x00E5;st&#x00E5;ede &#x2013; &#x201C;Forsoning med
+          Tilv&#x00E6;relsen&#x201D;, som Grundtvig ogs&#x00E5; lader g&#x00E6;lde for <persName key="pe35">Schiller</persName>.</p>
+        <p rend="firstIndent">Afhandlingen falder i to dele, f&#x00F8;rst en kulturkritisk
+          indledning, der bl.a. kritiserer det danske litter&#x00E6;re milj&#x00F8;, dern&#x00E6;st
+          en filosofisk kritik af <persName key="pe35">Schillers</persName> &#x00E6;stetik og
+          poetik. Efter afhandlingen f&#x00F8;lger en vellykket, metrisk og rimet
+          overs&#x00E6;ttelse af 1. akts 2. scene af <persName key="pe35">Schillers</persName> drama
+            <hi rend="italic">
+<rs type="title" key="title1802">Die Braut von Messina</rs>
+</hi>
+          (1803, da. <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>,</hi> 1896). Afhandlingen blev trykt i <persName key="pe24">Knud Lyne Rahbeks</persName>
+          tidsskrift <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> i samme
+          nummer som en anden, mindre afhandling om samtidens dramatik, nemlig <rs type="title" key="title166">&#x201C;Et Par Ord i Anledning af det forkyndte S&#x00F8;rgespil:
+            Signe&#x201D;</rs> (1807d), der kritiserer den purunge <persName key="pe110">J.J.
+            Dampes</persName> fors&#x00F8;g p&#x00E5; at skrive et nordisk s&#x00F8;rgespil over
+          sagnet om <rs key="myth345" type="myth">Hagbarth</rs> og <rs type="myth" key="myth418">Signe</rs>.</p>
+      </div>
+
+      <div>
+        <head xml:id="docIn2">V&#x00E6;rkets baggrund</head>
+        <div>
+          <head xml:id="docIn3">Tilblivelse</head>
+          <p rend="noIndent">Afhandlingen er blevet skrevet af to omgange: Den centrale kritik af
+              <persName key="pe35">Schillers</persName> filosofiske idealisme (fra s. 229
+            &#x00F8;verst til s. 234 midtp&#x00E5;) kan findes i en udtogsbog fra den 17. august 1806
+            (Grundtvig-Arkivet, fasc.nr. <hi rend="italic">Registranten</hi> fasc. <ref type="web" target="http://www.pubpub.com/g-r/showcard.asp?id=1991">499.3a</ref>, trykt i <hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>
+</hi> 1 1979, s. 385-388). En gennemgang
+            af variansen mellem de to versioner findes i tekstredeg&#x00F8;relsens afsnit om <ref type="docOut" target="1807_67_txr.xml#docIn32">Manuskriptbeskrivelse</ref>. I den
+            f&#x00F8;lgende periode har Grundtvig antagelig fors&#x00F8;gt sig med
+            overs&#x00E6;ttelserne af <hi rend="italic">
+<rs type="title" key="title1802">Die Braut
+              von Messina</rs>
+</hi> (1803, da. <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>,</hi> 1896) og fortalen <rs type="title" key="title1803">&#x201C;&#x00DC;ber den Gebrauch des Chors in der Trag&#x00F6;die&#x201D;</rs> (da.
+              <rs type="title" key="title1803">&#x201C;Om Chorets Brug i Tragoedien&#x201D;</rs>,
+            u.&#x00E5;.: 1806), som desv&#x00E6;rre ikke er bevaret i Grundtvig-Arkivet.
+            Afhandlingens indledende afsnit er h&#x00F8;jst sandsynligt f&#x00F8;rst skrevet i
+            begyndelsen af 1807, efter at Grundtvig var blevet bekendt med eksistensen af en anden
+            dansk overs&#x00E6;ttelse. I <persName key="pe977">Peter Foersoms</persName>
+            <hi rend="italic">
+<rs type="title" key="title1773">Nytaarsgave for Skuespilyndere
+                1807</rs>
+</hi> er fortalen trykt i en overs&#x00E6;ttelse af <persName key="pe981">Nicolaj Esmark &#x00D8;llgaard</persName>, der har brugt sit mellemnavn som signatur.
+            Nyt&#x00E5;rsgaven oplyser ikke sit udgivelses&#x00E5;r, hvilket tyder p&#x00E5;, at den
+            blev udgivet i december 1806.</p>
+          <p rend="firstIndent">Det m&#x00E5; formodes, at det endelige manuskript blev til i
+            f&#x00F8;rste halv&#x00E5;r af 1807.</p>
+        </div>
+        <div>
+          <head xml:id="docIn4">Kulturkritik</head>
+          <p rend="noIndent">I det senest tilkomne, indledende afsnit hylder Grundtvig <persName key="pe35">Schillers</persName> forfatterskab og revser danskerne for at mangle sans
+            for <persName key="pe35">Schillers</persName> kunst. Kritikken af det litter&#x00E6;re
+            milj&#x00F8; i Danmark og af danskerne, som i deres &#x00E5;ndelige sl&#x00F8;vsind
+            foretr&#x00E6;kker &#x201C;tankel&#x00F8;s Ruus eller bevidstl&#x00F8;s Slummer&#x201D;
+            frem for &#x201C;Posas h&#x00F8;ie Ideer&#x201D; (Posa er en person i <persName key="pe35">Schillers</persName> drama <hi rend="italic">
+<rs type="title" key="title1025">Don Carlos</rs>,</hi> 1787), bringer mindelser om Grundtvigs
+            kulturkritiske afhandling <rs type="title" key="title335">&#x201C;Om Videnskabelighed og
+              dens Fremme&#x201D;</rs> (1807b), der var udkommet tre m&#x00E5;neder f&#x00F8;r i
+            martsnummeret af <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>.</hi>
+            Her havde Grundtvig beklaget sig over den ringe interesse for dansk litteratur og gjort
+            en r&#x00E6;kke udfald mod vellystighed, dovenskab og verdslig underholdning. I begge
+            afhandlinger argumenterer Grundtvig for, at de mindre &#x00E5;nder, som nok
+            s&#x00E6;tter pris p&#x00E5; kunst og videnskab, men ikke anser sig for genier,
+            b&#x00F8;r bruge deres ledige stunder til at overs&#x00E6;tte udenlandsk litteratur.
+            Grundtvig regnede sig beskedent nok til denne gruppe: &#x201C;Giennemtr&#x00E6;ngt af
+            Overbeviisning herom, beski&#x00E6;ftigede jeg mig alt l&#x00E6;nge med en metrisk
+            Overs&#x00E6;ttelse af <rs key="title340" type="title">Bruden fra Messina</rs>&#x201D;
+            (s. 228). </p>
+        </div>
+        <div>
+          <head xml:id="docIn5">Overs&#x00E6;ttelsen</head>
+          <p rend="noIndent">Grundtvig erkl&#x00E6;rer i den afsluttende kommentar til
+            overs&#x00E6;ttelsen, at han &#x201C;under samme havde det dobbelte Maal, tro at
+            giengive Originalens Ideer, og saalidet som muligt erindre L&#x00E6;seren om, at han
+            havde en Overs&#x00E6;ttelse for sig&#x201D; (s. 248). Som lovet er overs&#x00E6;ttelsen
+            overvejende loyal mod <persName key="pe35">Schillers</persName> tragedie, men enkelte steder afviger Grundtvig fra det
+            oprindelige ordvalg. </p>
+          <p rend="firstIndent">Der er oftest tale om fors&#x00F8;g p&#x00E5; at skabe velfungerende
+            alternativer til passager, som p&#x00E5; dansk ville forekomme kompakte. Fx bliver
+            versene &#x201C;Diese Ulmen, mit Reben umsponnen / Sind sie nicht Kinder unsrer
+            Sonnen?&#x201D;, v. 198 f. (&#x201C;Disse elme, omvundet med vinranker, / er de
+            ikke b&#x00F8;rn af vor sol?&#x201D;, overs. GV) oversat til: &#x201C;Er den Sol da ei
+            vores, hvis Lue / Skaber og modner Rankens Drue?&#x201D; (s. 237). Enkelte steder
+            kan Grundtvig finde p&#x00E5; at erstatte <persName key="pe35">Schillers</persName>
+            formuleringer med sine egne metaforer, fx bliver verset &#x201C;Und wir k&#x00F6;nnten
+            es fr&#x00F6;hlich genie&#x00DF;en&#x201D;, v. 215 (&#x201C;Og vi kunne det glade nyde&#x201D;,
+            overs. GV) til: &#x201C;Vi dets Blomster med Fryd kunde plukke&#x201D; (s. 238). Andre
+            steder kan man mist&#x00E6;nke Grundtvig for at fors&#x00F8;ge at forbedre originalens
+            stil, fx bliver de abrupte vers &#x201C;La&#x00DF;t es genug sein und endet die Fehde, /
+            Oder gef&#x00E4;llts euch, so setzet sie fort&#x201D;, v. 435 f. (&#x201C;Lad det
+            v&#x00E6;re nok og g&#x00F8;r en ende p&#x00E5; fejden / eller, hvis det passer
+            jer, s&#x00E5; forts&#x00E6;t den&#x201D;, overs. GV) til den mere patosfyldte:
+            &#x201C;Krigen oph&#x00F8;re, og Hadet sig svale! Eller vedbliver med Feide og
+            Mord!&#x201D; (s. 247).</p>
+          <p rend="firstIndent">Nogle gange lykkes det dog Grundtvig at g&#x00F8;re
+            overs&#x00E6;ttelsen mere kryptisk end originalen. <persName key="pe35">Schillers</persName> vers &#x201C;Mit der furchtbaren St&#x00E4;rke ger&#x00FC;stet
+            / f&#x00FC;hren sie aus, was dem Herzen gel&#x00FC;stet&#x201D;, v. 235 f.
+            (&#x201C;Udrustet med frygtelig styrke / udf&#x00F8;rer de, hvad hjertet
+            lyster&#x201D;, overs. GV) bliver til den sv&#x00E6;rt forst&#x00E5;elige
+            &#x00E5;rsagssammenh&#x00E6;ng: &#x201C;F&#x00F8;r hvert &#x00D8;nske, der luer i
+            Barmen, / Frygtelig Styrke nedlagdes i Armen&#x201D; (s. 239). Den mest
+            i&#x00F8;jnefaldende frihed, som Grundtvig tager sig i forhold til originalen, er hans
+            (u&#x00E6;gte) norr&#x00F8;ne personificering af krigen som &#x201C;Kampens den blodige
+              <rs type="myth" key="myth111">Jette</rs>&#x201D;, hvor <persName key="pe35">Schiller</persName> har den mere konventionelle beskrivelse &#x201C;der blutige
+            Kampf&#x201D;, v. 170 (&#x201C;den blodige kamp&#x201D;, overs. GV). Metaforen kan have
+            sit ophav i Grundtvigs store interesse for den nordiske mytologi, som fik udtryk i
+            samtidige v&#x00E6;rker som <rs type="title" key="title72">&#x201C;Lidet om Sangene i
+              Edda&#x201D;</rs> (1806) og <rs type="title" key="title2">&#x201C;Om
+              Asal&#x00E6;ren&#x201D;</rs> (1807c).</p>
+          <p rend="firstIndent">I sin afhandling <hi rend="italic">
+<rs type="title" key="title24">Grundtvig som Filolog</rs>
+</hi> roser <persName key="pe67">Helge
+              Toldberg</persName> overs&#x00E6;ttelsens loyalitet, men har ellers ingen
+            bem&#x00E6;rkninger hverken for eller imod Grundtvigs &#x00E6;ldste overs&#x00E6;ttelse
+              (<rs type="title" key="title24">1946</rs>, s. 93). <persName key="pe65">Frederik
+              R&#x00F8;nning</persName> stiller sig mere kritisk, da Grundtvigs overs&#x00E6;ttelse
+            efter hans mening &#x201C;ikke [er] ilde, selv om den ikke har
+            &#x00E6;vnet at gengive <persName key="pe35">Schillers</persName> ejendommelige
+            rytme&#x201D; (<rs type="title" key="title20">1907 1:2</rs>, s. 74). Det mest
+            entusiastiske udsagn om Grundtvigs overs&#x00E6;ttelse kan findes i tidskriftet <hi rend="italic">
+<rs type="title" key="title900">Tilskueren</rs>
+</hi> fra 1816, hvor
+            redakt&#x00F8;ren <persName key="pe24">Knud Lyne Rahbek</persName>  &#x2013; n&#x00E6;sten ni
+            &#x00E5;r senere &#x2013; fors&#x00F8;ger at im&#x00F8;deg&#x00E5; Grundtvigs p&#x00E5;stand
+            om, at danskerne ikke interesserer sig for <persName key="pe35">Schillers</persName>
+            v&#x00E6;rker (s. 226 f.). Som modbevis opregner <persName key="pe24">Rahbek</persName>
+            de mange overs&#x00E6;ttelser af <persName key="pe35">Schillers</persName> dramaer og
+            komplimenterer i samme forbindelse Grundtvig for hans overs&#x00E6;ttelse af <hi rend="italic">
+<rs type="title" key="title1802">Die Braut von Messina</rs>
+</hi>:
+            &#x201C;intet synes at v&#x00E6;re tilbage, uden hans <rs type="title" key="title1802">Brud fra Messina</rs>, hvoraf ovenn&#x00E6;vnte Danneskiald selv har bebudet en
+            Overs&#x00E6;ttelse, og i en &#x00E6;ldre <rs type="title" key="title161">Minerva</rs>
+            givet en Pr&#x00F8;ve, som neppe vil friste nogen Anden til at gaae ham i
+            Forki&#x00F8;bet med at levere det Hele&#x201D; (<rs type="title" key="title161">Rahbek
+              1816</rs>, s. 1075). Under titlen <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>
+</hi> blev Schillers drama oversat til dansk i 1896 af <persName key="pe1113">Johannes Magnussen</persName>.</p>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn6">Friedrich Schiller</head>
+        <div>
+          <head xml:id="docIn7">Schiller i Danmark</head>
+          <p rend="noIndent">Som det fremg&#x00E5;r af afhandlingens mottodigt (s. 225), var
+              <persName key="pe35">Friedrich Schiller</persName> d&#x00F8;d. Han d&#x00F8;de i 1805,
+            to &#x00E5;r f&#x00F8;r Grundtvig fik sin afhandling trykt. I 1791, 26 &#x00E5;r
+            f&#x00F8;r Grundtvig skrev sin afhandling, havde rygter om digterens d&#x00F8;d sat skub
+            i den proces, der fik <persName key="pe35">Schiller</persName> p&#x00E5; datidens danske
+            finanslov. <persName key="pe20">Jens Baggesen</persName> foranstaltede en stor
+            s&#x00F8;rgefest for <persName key="pe35">Schiller</persName> p&#x00E5; <persName key="pe988">Ernst Schimmelmanns</persName> gev&#x00E6;rfabrik i Helleb&#x00E6;k, men
+            da rygterne kort efter s&#x00F8;rgefesten viste sig at have v&#x00E6;ret falske,
+            bestemte man sig i stedet for at underst&#x00F8;tte den syge og fattige digter. Med
+            stipendiet fra <persName key="pe988">Ernst Schimmelmann</persName> og <persName key="pe258">prins Frederik Christian af Augustenborg</persName>, der gav <persName key="pe35">Schiller</persName> arbejdsro de n&#x00E6;ste fem &#x00E5;r, blev han i
+            stand til at fordybe sig i studiet af <persName key="pe508">Kants</persName> filosofi,
+            hvorefter han forfattede sine store teoretiske skrifter, <rs key="title1805" type="title">&#x201C;&#x00DC;ber Anmut und W&#x00FC;rde&#x201D;</rs> (da. Om ynde og
+            v&#x00E6;rdighed), <rs type="title" key="title1861">&#x201C;&#x00DC;ber das
+              Erhabene&#x201D;</rs> (da. &#x201C;Om det oph&#x00F8;jede&#x201D;, 1952), begge fra
+            1793, <rs key="title1031" type="title">&#x201C;&#x00DC;ber die &#x00E4;sthetische
+              Erziehung des Menschen in einer Reihe von Briefen&#x201D;</rs> (1795, da. <hi rend="italic">
+<rs type="title" key="title956">Menneskets &#x00E6;stetiske
+                opdragelse</rs>,</hi> 1996), <rs key="title1804" type="title">&#x201C;&#x00DC;ber
+              naive und sentimentalische Dichtung&#x201D;</rs> (1795-1796, da. <rs type="title" key="title1835">&#x201C;Om naiv og sentimental digtning&#x201D;</rs>, 1952). <rs key="title1031" type="title">&#x201C;&#x00DC;ber die &#x00E4;sthetische Erziehung des
+              Menschen&#x201D;</rs> er den gennemarbejdede udgave af de breve, som <persName key="pe35">Schiller</persName> sendte til <persName key="pe258">Frederik Christian af
+              Augustenborg</persName> for at bevise den intellektuelle frugtbarhed af det danske
+            stipendium. <persName key="pe35">Schillers</persName> &#x00E6;stetiske teorier er
+            centrale for den lille fortale til <hi rend="italic">
+<rs key="title1802" type="title">Die Braut von Messina</rs>,</hi>
+            <rs type="title" key="title1803">&#x201C;&#x00DC;ber den Gebrauch des Chors in der
+              Trag&#x00F6;die&#x201D;</rs> (da. <rs key="title1774" type="title">&#x201C;Om Chorets
+              Brug i Tragoedien&#x201D;</rs>, u.&#x00E5;.: 1806), som prim&#x00E6;rt diskuteres i
+            Grundtvigs afhandling.</p>
+          <p rend="firstIndent">Den danske interesse for <persName key="pe35">Schiller</persName>
+            var stor, som det ogs&#x00E5; fremg&#x00E5;r af <persName key="pe24">Knud Lyne
+              Rahbeks</persName> oplysende fodnote om de mange igangv&#x00E6;rende
+            overs&#x00E6;ttelser (s. 226). Grundtvigs beklagelser over den manglende interesse for
+              <persName key="pe35">Schiller</persName> havde s&#x00E5;ledes ikke megen bund i
+            virkeligheden, om end <persName key="pe35">Schillers</persName> teaterstykker ikke blev
+            opf&#x00F8;rt p&#x00E5; de danske scener. Det Kongelige Teaters direktion var bange for
+            at opf&#x00F8;re dramaerne, der blev betragtet som politisk spr&#x00E6;ngfarlige. Trods
+            mange opfordringer fra <persName key="pe980">Michael Rosing</persName> afviste <persName key="pe356">J&#x00F8;rgen Kierulf</persName> at opf&#x00F8;re <persName key="pe35">Schillers</persName>
+            <rs key="title1025" type="title">
+<hi rend="italic">Don Carlos</hi>
+</rs> med det
+            argument, at markisen af Posa, <persName key="pe821">Don Carlos'</persName> ven,
+            var &#x201C;en Jacobiner, der ved sin glatte Philosophie var farligere end <persName key="pe963">Robespierre</persName> eller <persName key="pe983">Marat</persName>&#x201D; (citeret efter <rs key="title1360" type="title">Overskou 1860</rs>, s. 775, der ikke angiver kilden).</p>
+        </div>
+        <div>
+          <head xml:id="docIn8">Grundtvigs Schiller-reception</head>
+          <p rend="noIndent">I sit tilbageblik p&#x00E5; det forgangne &#x00E5;r den 30. december
+            1806 beretter Grundtvig, at han studerede &#x201C;<persName key="pe35">Schillers</persName> de herlige Dramer, og dybe Spekulationer&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1
+            1979, s. 402). Fra udtogsbogen ved vi, at Grundtvig havde l&#x00E6;st <persName key="pe35">Schillers</persName> antologi af egne skrifter, <hi rend="italic">
+<rs key="title950" type="title">Kleinere prosaische Schriften</rs>,</hi> is&#x00E6;r
+            havde han studeret afhandlingen <rs type="title" key="title952">&#x201C;Was hei&#x00DF;t und zu
+              welchem Ende studiert man Universalgeschichte?&#x201D;</rs> (da. Hvad er og med
+            hvilket form&#x00E5;l studerer man universalhistorie?), som han tog udf&#x00F8;rlige
+            noter fra (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 275-282). Afhandlingen, der er <persName key="pe35">Schillers</persName> tiltr&#x00E6;delsesforel&#x00E6;sning ved
+            universitetet i Jena, spiller en stor rolle for den samtidige afhandling <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs>
+            (1807b) (se hertil GV's indledning til afhandlingen, afsnittet om <ref type="docOut" target="1807_63_intro.xml#docIn11">&#x201C;Friedrich
+              Schiller&#x201D;</ref>). Grundtvig skulle senere fremh&#x00E6;ve den som et af sine
+            f&#x00F8;rste m&#x00F8;der med forestillingen om universalhistorien (<rs key="title629" type="title">Grundtvig 1812</rs>, s. XXV-XXVI).</p>
+          <p rend="firstIndent">
+<rs type="title" key="title72">&#x201D;Lidet om Sangene i
+              Edda&#x201D;</rs> b&#x00E6;rer pr&#x00E6;g af Grundtvigs l&#x00E6;sning af <rs key="title1804" type="title">&#x201C;&#x00DC;ber naive und sentimentalische
+              Dichtung&#x201D;</rs> (1795-1796, da. <rs type="title" key="title1835">&#x201C;Om naiv
+              og sentimental digtning&#x201D;</rs>, 1952), som var blevet genoptrykt i <rs type="title" key="title950">
+<hi rend="italic">Kleinere prosaische Schriften</hi>
+</rs>
+            (bind 2, 1800). Grundtvig alluderer ogs&#x00E5; til Schillers afhandling i &#x201C;Om
+              <persName key="pe35">Schiller</persName> og <rs key="title340" type="title">Bruden fra
+              Messina</rs>&#x201D; (s. 226). I &#x201C;Om <persName key="pe35">Schiller</persName>&#x201D; omtaler Grundtvig, ud over <hi rend="italic">
+<rs type="title" key="title1802">Die Braut von Messina</rs>,</hi>
+            <persName key="pe35">Schillers</persName>
+            <hi rend="italic">
+<rs key="title1025" type="title">Don Carlos</rs>
+</hi> (1787, da. <hi rend="italic">
+<rs key="title1777" type="title">Don Carlos, Infant af
+              Spanien</rs>,</hi> 1812), <rs type="title" key="title1021">
+<hi rend="italic">Die
+                R&#x00E4;uber</hi>
+</rs> (1781, da. <hi rend="italic">
+<rs type="title" key="title1034">R&#x00F8;verne</rs>,</hi> 1801) og <rs type="title" key="title1028">
+<hi rend="italic">Die Jungfrau von Orleans</hi>
+</rs> (1801, da. <hi rend="italic">
+<rs key="title1775" type="title">Johanna d'Arc Orleans M&#x00F8;</rs>,</hi>
+            1813) (s. 229 f.). Sidstn&#x00E6;vnte v&#x00E6;rk figurerer p&#x00E5; Grundtvigs <ref type="docOut" target="bookInventory1805.xml#docIn50">Bogfortegnelse fra 1805</ref> som
+            nr. 50.</p>
+        </div>
+        <div>
+          <head xml:id="docIn9">
+<hi rend="italic">Bruden fra Messina</hi>
+</head>
+          <p rend="noIndent">Grundtvig knytter ikke mange bem&#x00E6;rkninger til selve tragedien i
+            sin pr&#x00E6;sentation af overs&#x00E6;ttelsen; hans bem&#x00E6;rkninger omhandler
+            prim&#x00E6;rt stykkets overensstemmelse med den gr&#x00E6;ske tragedie som &#x201C;et
+            sandt Produkt af den gamle Konst&#x201D; (s. 229). Grundtvigs vurdering af tragedien
+            ligger t&#x00E6;t op ad <persName key="pe35">Schillers</persName> eget syn p&#x00E5; sit
+            v&#x00E6;rk, som han selv mente, var udf&#x00F8;rt &#x201C;nach der strengsten griechischen
+            Form&#x201D; (da. &#x201C;efter den strengeste gr&#x00E6;ske form&#x201D;, citeret efter
+              <rs key="title1799" type="title">Luserke-Jaqui 2005</rs>, s. 195, overs. GV). Som
+            Grundtvig ogs&#x00E5; bem&#x00E6;rker, er der tale om sk&#x00E6;bnetragedie, hvor
+            personernes grusomme undergang synes forudbestemt og uundg&#x00E5;elig. Ligesom i
+              <persName key="pe993">Sofokles'</persName>
+            <rs type="title" key="title1837">
+<hi rend="italic">&#x00D8;dipus</hi>
+</rs> er tragedien
+            bygget op omkring afd&#x00E6;kningen af incestu&#x00F8;se familieforhold. Tragedien
+            tjener for Grundtvig som eksempel p&#x00E5;, hvordan den klassiske tragedies personer
+            fremst&#x00E5;r overmenneskeligt rolige i m&#x00F8;det med sk&#x00E6;bnen &#x2013; i
+            mods&#x00E6;tning til den moderne tragedies personer. </p>
+          <note type="readMore">
+<p rend="noIndent">Tragedieheltenes oph&#x00F8;jethed kan ogs&#x00E5; findes i <persName key="pe35">Schillers</persName> fortale, men spiller kun en marginal rolle: Om
+              tragediefigurerne siger <persName key="pe35">Schiller</persName>, at de p&#x00E5;
+              baggrund af korets &#x201C;lyriske pragtv&#x00E6;vning&#x201D; skal bev&#x00E6;ge sig
+              &#x201C;frit og &#x00E6;delt med behersket v&#x00E6;rdighed og oph&#x00F8;jet
+              ro&#x201D; (ty. &#x201C;lyrische[s] Prachtgewebe [&#x2026;] frei
+              und edel mit einer gehaltenen W&#x00FC;rde und hoher Ruhe&#x201D;, <rs type="title" key="title1802">Schiller 1974b</rs>, s. 820, overs. af GV).</p>
+</note>
+          <p rend="firstIndent">
+<hi rend="italic">
+<rs key="title340" type="title">Die Braut von
+                Messina</rs>,</hi> der har undertitlen <hi rend="italic">oder die feindlichen
+              Br&#x00FC;der</hi> (da. eller de fjendtlige br&#x00F8;dre), foreg&#x00E5;r p&#x00E5;
+            Sicilien i 1000-tallet, hvor den normanniske fyrstefamilie strides indbyrdes.
+            Br&#x00F8;drene Don Manuel og Don C&#x00E6;sar k&#x00E6;mper om magten efter deres
+            faders d&#x00F8;d, og moderen Isabella fors&#x00F8;ger, i f&#x00F8;rste omgang
+            forg&#x00E6;ves, at slutte fred mellem dem, som det fremg&#x00E5;r af det oversatte
+            uddrag af <persName key="pe35">Schillers</persName> drama. De forsones dog, og moderen
+            afsl&#x00F8;rer for dem, at de har en ukendt s&#x00F8;ster, som i al hemmelighed er
+            vokset op i et nonnekloster. F&#x00F8;r hendes f&#x00F8;dsel havde faderen haft en
+            dr&#x00F8;m, der blev tydet som et ondt varsel, og han beordrede derfor sin endnu
+            uf&#x00F8;dte datter myrdet. Det sp&#x00E6;de barn blev dog bragt i sikkerhed i et
+            kloster af Isabella, der havde haft en dr&#x00F8;m om, at lilles&#x00F8;steren skulle
+            forene familien.</p>
+          <p rend="firstIndent">Br&#x00F8;drene har imidlertid forelsket sig i den samme, ukendte
+            kvinde: I al hemmelighed har Don Manuel l&#x00E6;nge kendt Beatrice, og de
+            planl&#x00E6;gger at gifte sig. Don C&#x00E6;sar har p&#x00E5; afstand forelsket sig i
+            Beatrice, og da han overrasker broderen sammen med den udk&#x00E5;rne, sl&#x00E5;r han
+            Don Manuel ihjel. Den ulykkelige situation forv&#x00E6;rres kun, da Isabella genkender
+            Beatrice som sin datter. Don C&#x00E6;sar beg&#x00E5;r selvmord i fortvivlelse over at
+            have sl&#x00E5;et sin broder ihjel og forelsket sig i sin s&#x00F8;ster.</p>
+        </div>
+        <div>
+          <head xml:id="docIn10">Om brugen af koret i tragedien</head>
+          <p rend="noIndent">
+<persName key="pe35">Schillers</persName> hovedform&#x00E5;l med
+            fortalen er at redeg&#x00F8;re for de poetologiske overvejelser bag hans anvendelse af
+            koret i <hi rend="italic">
+<rs type="title" key="title340">Die Braut von
+              Messina</rs>.</hi>
+            <persName key="pe35">Schiller</persName> fors&#x00F8;gte at genoptage den gr&#x00E6;ske
+            tragedies formsprog ved at g&#x00F8;re brug af et dobbeltkor, der forholder sig abstrakt
+            og lyrisk til handlingen. <persName key="pe35">Schillers</persName> &#x00F8;nske var
+            hermed at &#x00F8;ge det, man med et af den tidlige romantiks n&#x00F8;glebegreber kan
+            betegne som tragediens mulighed for poetisk refleksion.</p>
+          <p rend="firstIndent">Grundtvig besk&#x00E6;ftiger sig slet ikke med koret i sin
+            afhandling; men da <persName key="pe35">Schiller</persName> i sin afhandling
+            pr&#x00E6;senterer koret som sit vigtigste middel til at fremme menneskets
+            frig&#x00F8;relse gennem kunsten, hvilket er omdrejningspunktet for hans
+            &#x00E6;stetiske teori, skal <persName key="pe35">Schillers</persName> argumentation
+            rekapituleres her. I sin l&#x00E6;sning kritiserer Grundtvig <persName key="pe35">Schillers</persName> frihedsbegreb, men han undg&#x00E5;r helt at n&#x00E6;vne korets
+            betydning herfor.</p>
+          <p rend="firstIndent">
+<persName key="pe35">Schiller</persName> retter sin kritik mod den
+            kunst, der alene ser det som sit form&#x00E5;l at underholde tilskueren ved at
+            hens&#x00E6;tte ham eller hende i en fjern dr&#x00F8;mmeverden. Kunsten skal derimod
+            danne tilskueren, og det g&#x00F8;r den kun ved p&#x00E5; &#x00E9;en gang at v&#x00E6;re
+            ideel og reel. Kunsten skeler, med <persName key="pe35">Schillers</persName>
+            formulering; den ser p&#x00E5; samme tid i retning af idealerne og af virkeligheden. Som
+            det hedder i Grundtvigs parafrase, skal &#x201C;den sande Konst i sin h&#x00F8;ieste
+            Idealisme v&#x00E6;re reel&#x201D; (s. 231). Tragediens materiale er hentet fra
+            virkeligheden, men dens repr&#x00E6;sentationsform er helt igennem symbolsk og dermed
+            ideel.</p> 
+            <note type="readMore">
+<p rend="noIndent">Samtidig har koret et reelt aspekt, idet <persName key="pe35">Schiller</persName>
+              fremh&#x00E6;ver korets dramatiske n&#x00E6;rv&#x00E6;r p&#x00E5; scenen som
+              afg&#x00F8;rende for, at det kan repr&#x00E6;sentere abstrakte, universelle begreber:
+              Det skal v&#x00E6;re &#x201C;en sanseligt m&#x00E6;gtig masse, som imponerer sanserne
+              gennem sit udfyldende n&#x00E6;rv&#x00E6;r&#x201D; (overs. GV, ty. &#x201C;eine
+              sinnlich m&#x00E4;chtige Masse, welche durch ihre ausf&#x00FC;llende Gegenwart den
+              Sinnen imponiert&#x201D;, <rs type="title" key="title1802">Schiller 1974b</rs>, s.
+              821).</p>
+</note>
+            <p rend="firstIndent">I afhandlingen g&#x00F8;r <persName key="pe35">Schiller</persName> op med den franske klassicisme, der havde
+            bandlyst koret fra tragedien. Netop fordi koret fremst&#x00E5;r som et fremmedlegeme i
+            forhold til handlingen, bliver det b&#x00E6;rer af tragediens ideale aspekt. Ved
+            genindf&#x00F8;relsen af koret bliver tragedien for alvor poetisk, det er et
+            &#x201C;kunstorgan, det hj&#x00E6;lper med at <hi rend="italic">frembringe</hi>
+            poesien&#x201D; (overs. GV, ty. &#x201C;einem Kunstorgan, er hilft die Poesie <hi rend="italic">hervorzubringen</hi>&#x201D;, <rs key="title1802" type="title">Schiller 1974b</rs>, s. 819). I
+            mods&#x00E6;tning til tragediens personer er koret ubundet af handlingen og kan forholde
+            sig abstrakt og lyrisk til tragediens temaer, hvilket <persName key="pe35">Schiller</persName> formulerer p&#x00E5;
+            f&#x00F8;lgende vis: &#x201C;Koret <hi rend="italic">renser</hi> s&#x00E5;ledes det
+            tragiske digt, idet det afsondrer refleksionen fra handlingen og netop gennem denne
+            afsondring ruster sig selv med poetisk kraft&#x201D; (overs. GV).</p> 
+            <note type="readMore">
+<p rend="noIndent">ty. &#x201C;Der Chor <hi rend="italic">reinigt</hi> also das tragische Gedicht, indem er die Reflexion
+            von der Handlung absondert und eben durch diese Absonderung sie selbst mit poetischer
+            Kraft ausr&#x00FC;stet&#x201D; (<rs type="title" key="title1802">Schiller 1974b</rs>, s. 821).</p>
+</note> 
+            
+          <p rend="firstIndent">Ved at reflektere over handlingen bliver det korets opgave at skabe
+            ro s&#x00E5;vel i handlingen som for tilskueren: Midt i tragediens voldsomme passioner
+            skal koret if&#x00F8;lge <persName key="pe35">Schiller</persName> sikre, at tilskueren
+            ikke kun bliver revet med af tragediens passioner, men at han eller hun stadig er i
+            stand til at reflektere over det, der g&#x00E5;r for sig p&#x00E5; scenen. Tragediens
+            handling taler til tilskuerens f&#x00F8;lelser, mens korets lyriske refleksion taler til
+            fornuften. Herigennem kan koret if&#x00F8;lge <persName key="pe35">Schiller</persName>
+            give os &#x201C;vores frihed tilbage, som ellers ville g&#x00E5; tabt i affekternes
+            storm&#x201D; (overs. GV, ty. &#x201C;giebt er uns unsre Freiheit zur&#x00FC;ck, die im
+            Sturm der Affekte verloren gehen w&#x00FC;rde&#x201D;, <rs key="title1802" type="title">Schiller 1974b</rs>, s. 822). Koret minder tilskueren om, at dramaet fremstiller en
+            konstrueret virkelighed.</p>
+        </div>
+        <div>
+          <head xml:id="docIn11">Grundtvigs nedslag i Schillers fortale</head>
+          <p rend="noIndent">Grundtvig skriver i sin indledning til overs&#x00E6;ttelsen, at han vil
+            begr&#x00E6;nse sig til at &#x201C;sige et Par Ord om den af Fortalens Ideer, der staaer
+            i det str&#x00E6;ngeste Forhold til Dramaet, som et Heelt&#x201D; (s. 228-229). I
+            afhandlingen findes en r&#x00E6;kke, n&#x00E6;sten direkte oversatte passager af
+              <persName key="pe35">Schillers</persName> fortale, der alle stammer fra den
+            f&#x00F8;rste del af <persName key="pe35">Schillers</persName> tekst; passagerne kan
+            findes nederst p&#x00E5; side 229 og midt p&#x00E5; side 231 af Grundtvigs afhandling.
+            Det er kun en lille del af <persName key="pe35">Schillers</persName> komplekse
+            redeg&#x00F8;relse for korets rolle i tragedien, som interesserer Grundtvig, nemlig den
+            del, der har med tilskuerens subjektivitet at g&#x00F8;re. <persName key="pe35">Schillers</persName> &#x00E6;rinde i disse passager er p&#x00E5; kantiansk grund at
+            forklare, hvordan en &#x00E6;stetisk frig&#x00F8;relse af tilskueren kan foreg&#x00E5;.
+            Det er s&#x00E5; at sige det filosofiske grundlag for <persName key="pe35">Schillers</persName> fortale, som er udgangspunktet for Grundtvigs kritik. Det vides
+            ikke, hvorvidt Grundtvig har v&#x00E6;ret bekendt med <persName key="pe508">Kants</persName> &#x00E6;stetik, men i hans <rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> kan der findes spor af et
+            grundl&#x00E6;ggende kendskab til <persName key="pe508">Kants</persName>
+            t&#x00E6;nkning.</p>
+          <p rend="firstIndent">Efter modtagelsen af det danske stipendium havde <persName key="pe35">Schiller</persName> n&#x00E6;rstuderet <persName key="pe508">Kants</persName>
+            <rs key="title1248" type="title">
+<hi rend="italic">Kritik der Urteilskraft</hi>
+</rs>
+            (1790, da. <rs type="title" key="title979">
+<hi rend="italic">Kritik af
+                d&#x00F8;mmekraften</hi>,</rs> 2007), og <persName key="pe508">Kants</persName>
+            filosofi s&#x00E6;tter sit tydelige pr&#x00E6;g p&#x00E5; <persName key="pe35">Schillers</persName> fortale. Det f&#x00F8;rste eksempel herp&#x00E5;
+            overs&#x00E6;tter Grundtvig n&#x00E6;sten ordret: &#x201C;den h&#x00F8;ieste Nydelse er
+            Gemyttets Frihed under alle Kr&#x00E6;fternes levende Spil&#x201D; (s. 229). <persName key="pe35">Schiller</persName> tr&#x00E6;kker her p&#x00E5; <persName key="pe508">Kants</persName> beskrivelse af oplevelsen af det &#x00E6;stetisk sk&#x00F8;nne.
+            Sk&#x00F8;nhed er for <persName key="pe508">Kant</persName> ikke et karakteristikum ved
+            genstanden selv, men den tilstand af lyst, som tilskueren hens&#x00E6;ttes i ved synet
+            af kunstv&#x00E6;rket. Lysten opst&#x00E5;r ved, at tilskueren m&#x00E6;rker
+            erkendelseskr&#x00E6;fterne &#x2013; dvs. forstanden og indbildningskraften &#x2013; fungere i
+            harmoni, uden at de skal anvendes til et praktisk form&#x00E5;l, deraf betegnelsen
+            &#x201C;interessel&#x00F8;st velbehag&#x201D;. Nydelsen ved kunstv&#x00E6;rket
+            opst&#x00E5;r ved oplevelsen af, at bevidstheden virker: Subjektet oplever sig selv
+            opleve.</p>
+          <p rend="firstIndent">Oplevelsen af erkendelseskr&#x00E6;fternes frie spil bliver for
+              <persName key="pe35">Schiller</persName> en model for menneskets politiske
+            frig&#x00F8;relse. Det udfolder han is&#x00E6;r i <rs key="title1031" type="title">&#x201C;&#x00DC;ber die &#x00E4;sthetische Erziehung des Menschen&#x201D;</rs> (1795, da.
+              <hi rend="italic">
+<rs type="title" key="title956">Menneskets &#x00E6;stetiske
+                opdragelse</rs>,</hi> 1996), hvor <persName key="pe35">Schiller</persName>
+            erkl&#x00E6;rer, at &#x201C;man kun gennem sk&#x00F8;nheden kan vandre til
+            friheden&#x201D; (<rs key="title956" type="title">1996</rs>, s. 25). Gennem kunsten skal
+            mennesket op&#x00F8;ves i fri t&#x00E6;nkning og derved myndigg&#x00F8;res. Kunsten
+            skal, som det hedder i fortalen til <hi rend="italic">
+<rs type="title" key="title1802">Die Braut von Messina</rs>,</hi> &#x201C;ikke blot hens&#x00E6;tte mennesket i en
+            kortvarig dr&#x00F8;m om frihed, men derimod virkelig og i realiteten <hi rend="italic">g&#x00F8;re</hi> ham fri&#x201D; (overs. GV, ty. &#x201C;nicht blo&#x00DF; in einen
+            augenblicklichen Traum von Freiheit zu versetzen, sondern ihn wirklich und in der Tat
+            frei zu <hi rend="italic">machen</hi>&#x201D;, <rs key="title1802" type="title">Schiller
+              1974b</rs>, s. 816).</p>
+          <p rend="firstIndent">
+<persName key="pe35">Schiller</persName> kritiserer derfor den
+            teaterkunst, der alene ser det som sin opgave at underholde tilskueren. Efter beskuelsen
+            af et s&#x00E5;dant drama f&#x00F8;ler tilskueren sig, som det hedder i Grundtvigs
+            parafrase &#x201C;dobbelt trykket af Virkeligheden&#x201D; (s. 231). <persName key="pe35">Schiller</persName> har som n&#x00E6;vnt st&#x00F8;rre ambitioner p&#x00E5;
+            tilskuerens vegne. Den &#x00E6;stetiske opdragelses endem&#x00E5;l parafraserer
+            Grundtvig p&#x00E5; f&#x00F8;lgende vis: Kunsten skal &#x201C;l&#x00E6;re Mennesket at
+            bev&#x00E6;ge sig frit under den tunge V&#x00E6;gt, som om han selv havde lagt den paa
+            sine Skuldre&#x201D; (s. 231). Grundtvigs gengivelse yder ikke helt <persName key="pe35">Schillers</persName> tankegang retf&#x00E6;rdighed. <!--<p rend="firstIndent">Af Grundtvigs fremstilling skulle man tro, at det blot handlede om at tage sin sk&#x00E6;bne p&#x00E5; sig. Menneskets frig&#x00F8;relse sker if&#x00F8;lge <persName key="pe35">Schiller</persName> ved, &#x201C;at &#x005B;den sande kunst&#x005D; v&#x00E6;kker, &#x00F8;ver og danner en kraft i ham, der kan skabe en objektiv afstand til den sanselige verden, som ellers blot tynger os som en r&#x00E5; masse og trykker os som en blind magt; en kraft, der kan forvandle den sanselige verden til vor &#x00E5;nds frie v&#x00E6;rk og beherske det materielle gennem ideerne&#x201D; (overs. GV).</p><note type="readMore"><p rend="noIndent">ty. &#x201C;... da&#x00DF; &#x005B;die wahre Kunst&#x005D; eine Kraft in ihm erweckt, &#x00FC;bt und ausbildet, die sinnliche Welt, die sonst nur als ein roher Stoff auf uns lastet, als eine blinde Macht auf uns dr&#x00FC;ckt, in eine objektive Ferne zu r&#x00FC;cken, in ein freies Werk unsers Geistes zu verwandeln, und das Materielle durch Ideen zu beherrschen&#x201D; (<rs type="title" key="title1802">Schiller 1974b</rs>, s. 816 f.).</p></note>-->For <persName key="pe35">Schiller</persName> handler det om, at
+            tilskueren skal blive i stand til at h&#x00E6;ve sig over virkelighedens tvingende magt;
+            han skal ikke blot udholde den, men beherske den.<!-- Kunsten er i stand til at
+            hj&#x00E6;lpe mennesket i dette forehavende, idet dens ophav p&#x00E5; &#x00E9;en gang
+            er reelt og ideelt, som det betones i fortalen.-->
+</p>
+          <p rend="firstIndent">Netop dette aspekt af <persName key="pe35">Schiller</persName> t&#x00E6;nkning danner udgangspunktet for Grundtvigs centrale angreb p&#x00E5; idealismens
+            frihedsbegreb, som jeg vender tilbage til i afsnittet <ref type="docIn" target="#docIn15">&#x201C;Kritik af den
+              &#x00E6;stetiske frihed&#x201D;</ref>. Grundtvig stiller sig skeptisk over for
+            menneskets frig&#x00F8;relse som kunstens form&#x00E5;l, og hans foretrukne v&#x00E5;ben
+            mod <persName key="pe35">Schillers</persName> idealisme er f&#x00E6;tteren <persName key="pe18">Henrich Steffens'</persName> ideer om forholdet mellem det antikke
+            og det moderne samt hans syn p&#x00E5; forholdet mellem kunst og poesi.</p>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn12">Henrich Steffens</head>
+        <p rend="noIndent">I &#x201C;Om <persName key="pe35">Schiller</persName> og <rs key="title340" type="title">Bruden fra Messina</rs>&#x201D; pr&#x00F8;ver Grundtvig
+          kr&#x00E6;fter med en r&#x00E6;kke af de begreber, som han havde stiftet bekendtskab med
+          gennem <persName key="pe18">Henrich Steffens</persName>. Grundtvig overv&#x00E6;rede
+            <persName key="pe18">Steffens'</persName> filosofiske forel&#x00E6;sninger
+          p&#x00E5; Elers' kollegium i 1802 (bogudgave <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske Forel&#x00E6;sninger</rs>,</hi> 1803) og
+          hans anden forel&#x00E6;sningsr&#x00E6;kke i 1803 om <persName key="pe29">Goethe</persName>. Modsat de filosofiske indledningsforel&#x00E6;sninger skabte den
+          n&#x00E6;ste forel&#x00E6;sningsr&#x00E6;kke ikke furore i offentligheden; der findes
+          ingen overleverede manuskripter, og forel&#x00E6;sningerne bliver end ikke n&#x00E6;vnt i
+            <persName key="pe18">Steffens'</persName> omfangsrige selvbiografi <rs key="title1832" type="title">
+<hi rend="italic">Was ich erlebte</hi>
+</rs> (1840-1844). Dette forhold
+          omtaler Grundtvig selv i et brev til <persName key="pe18">Steffens</persName> efter
+          l&#x00E6;sningen af selvbiografiens femte bind:</p>
+        <p rend="quote">&#x201D;Du n&#x00E6;vner i dine Livs-Erindringer slet ikke de Foredrag, du i
+          Foraaret 1803 holdt over &#x2018;<persName key="pe29">Goethes</persName> Poesier&#x2019;, men skj&#x00F8;nt de ingen
+          Opsigt gjorde og bes&#x00F8;gtes kun meget tarvelig, var det dog dem, der gjorde
+          Grundindtrykket paa mig og vist paa flere&#x201D; (<rs type="title" key="title7">Grundtvig 1926</rs>, s. 436).</p>
+        <p rend="noIndent">
+<persName key="pe52">Flemming Lundgreen-Nielsen</persName>
+          fors&#x00F8;ger i sin artikel <rs key="title1807" type="title">&#x201C;<persName key="pe18">Henrich Steffens'</persName>
+            <persName key="pe29">Goethe</persName>-forel&#x00E6;sninger i 1803&#x201D;</rs> at
+          opridse en litteraturhistorisk fantomtegning af <persName key="pe18">Steffens'</persName> forel&#x00E6;sninger gennem de aftryk, som de har sat
+          p&#x00E5; Grundtvigs optegnelser. Grundtvig h&#x00E6;vdede dog i 1815, at han dengang kun
+          forstod lidt af de nye tanker: &#x201C;Det klang mig rigtig nok heel underligt om den
+          subjektive og objektive, den antikke og moderne Poesie; jeg ansaae det alt for
+          Snak&#x201D; (Grundtvig-arkivet fasc. 507, citeret efter <rs key="title2000" type="title">VU</rs> bind 1, s. 95).</p>
+        <p rend="firstIndent">Netop disse emner st&#x00E5;r centralt i romantikkens &#x00E6;stetiske
+          diskussioner, og den lille afhandling &#x201C;Om <persName key="pe35">Schiller</persName>
+          og <rs key="title340" type="title">Bruden fra Messina</rs>&#x201D; demonstrerer, at
+          Grundtvig gennem sin fordybelse i samtidens litteratur under sit ophold p&#x00E5;
+          Egel&#x00F8;kke fra 1805 til 1808 havde opn&#x00E5;et en ganske anderledes fortrolighed med
+          tidens mest moderne emner. Den kritik, som Grundtvig retter mod <persName key="pe35">Schiller</persName>, er pr&#x00E6;get af romantikernes syn p&#x00E5; idealismen og
+          klassikken. De yngre romantikere afviste den &#x00E6;ldre klassik som k&#x00F8;lig og
+          fornuftsdomineret.
+          <!--dens idealer om fornuftens forrang i oplevelsen af kunstv&#x00E6;rket. -->Grundtvig
+          retter en r&#x00E6;kke h&#x00E5;rde angreb mod <persName key="pe35">Schiller</persName>,
+          men antagelig er det <persName key="pe18">Steffens</persName>, der har st&#x00F8;bt
+          kuglerne.</p>
+        <div>
+          <head xml:id="docIn13">Antikt og moderne, subjekt og objekt</head>
+          <p rend="noIndent">I sine filosofiske forel&#x00E6;sninger diskuterede <persName key="pe18">Steffens</persName> et af tidens varmeste emner, nemlig mods&#x00E6;tningen
+            mellem det antikke og det moderne (8. forel&#x00E6;sning, <rs key="title118" type="title">1996</rs>, s. 136 f.). Man kan formode, at <persName key="pe18">Steffens</persName> ogs&#x00E5; har v&#x00E6;ret inde p&#x00E5; emnet i de
+            litter&#x00E6;re forel&#x00E6;sninger. Diskussionen, der r&#x00E6;kker tilbage til den
+            franske klassiks <hi rend="italic">Querelle des anciens et des modernes</hi> (da. Kampen
+            mellem de antikke og de
+            moderne)<!--mellem bl.a. <persName key="pe985">Nicolas Boileau</persName> og <persName key="pe986">Charles Perrault</persName>-->,
+            kan litteraturhistorisk betragtes som f&#x00F8;dslen af forestillingen om en
+            s&#x00E6;rlig moderne litteratur, der grundet den historiske forskel m&#x00E5; adskille
+            sig fra antikkens litteratur. Hvor diskussionen i den franske klassik endte som en kamp
+            om, hvorvidt den antikke eller den moderne litteratur var bedst, videreudviklede
+              <persName key="pe35">Schiller</persName> problemstillingen i <rs key="title1804" type="title">&#x201C;&#x00DC;ber naive und sentimentalische Dichtung&#x201D;</rs>
+            (1795-1796, da. <rs type="title" key="title1835">&#x201C;Om naiv og sentimental
+              digtning&#x201D;</rs>, 1952) til en kombineret litteraturhistoriefilosofi og
+            litter&#x00E6;r typologi, der konkluderer, at det antikke &#x2013; naive &#x2013; ideal i sin rene
+            form er utilg&#x00E6;ngeligt for den moderne forfatter, med undtagelse af <persName key="pe29">Goethe</persName>. <persName key="pe18">Steffens'</persName>
+            beskrivelser af forholdet mellem det antikke og det moderne er st&#x00E6;rkt
+            pr&#x00E6;get af <persName key="pe35">Schillers</persName> t&#x00E6;nkning. En anden
+            kilde kan have v&#x00E6;ret <persName key="pe34">Friedrich Schlegels</persName>
+            afhandling <rs key="title1833" type="title">
+<hi rend="italic">&#x00DC;ber das Studium
+                der griechischen Poesie</hi>
+</rs> (1797, da. Om studiet af den gr&#x00E6;ske
+            poesi).</p>
+          <p rend="firstIndent">I indledningsforel&#x00E6;sningernes historiefilosofiske del
+            beskriver <persName key="pe18">Steffens</persName> mods&#x00E6;tningen mellem det
+            antikke og det moderne som en mods&#x00E6;tning mellem den antikke poesi, der harmonisk
+            hviler i sig selv, over for den moderne poesi, der er pr&#x00E6;get af en
+            grundl&#x00E6;ggende splittelse. Den antikke poesi er frugten af en guldalder, dens
+            v&#x00E6;rker er &#x201C;fuldendte, organiske, med et Livsprincip i sig selv, der sikrer
+            dem Ud&#x00F8;delighed. Alt hvad Subjectet vilde, det udtrykkede sig aldeles i et
+            Object&#x201D; (<rs key="title118" type="title">Steffens 1996</rs>, s. 136). I den
+            moderne poesi er subjekt og objekt derimod faldet fra hinanden: &#x201C;dette
+            subjective, som gaaer ud over Gjenstanden, selv tilstaaer at den ikke tilfredsstilles,
+            characteriserer den moderne Poesie, giver den mindre grad af Fuldendelse&#x201D; (<rs type="title" key="title118">Steffens 1996</rs>, s. 137). Den splittede, moderne poesi
+            l&#x00E6;nges efter den antikke enhed, og denne indre ubalance g&#x00F8;r, at den ikke
+            har den klassiske kunsts fuldendelse. Med denne komprimerede historisering griber
+              <persName key="pe18">Steffens</persName> fat i to centrale kulturteoretiske begreber i
+            samtiden, nemlig forestillingen om antikkens objektivitet og modernitetens
+            subjektivitet, som  kan findes hos b&#x00E5;de <persName key="pe35">Schiller</persName>
+            og <persName key="pe34">Schlegel</persName>.</p>
+          <p rend="firstIndent">
+<persName key="pe18">Steffens'</persName> beskrivelse er som
+            taget ud af <persName key="pe35">Schillers</persName>
+            <rs key="title1804" type="title">&#x201C;&#x00DC;ber naive und sentimentalische
+              Dichtung&#x201D;</rs> (1795-1796, da. &#x201C;Om naiv og sentimental digtning&#x201D;,
+            1952). <persName key="pe35">Schiller</persName> s&#x00E6;tter det sentimentale &#x2013; og
+            dermed moderniteten &#x2013; som udgangspunktet: Den tidligere litteraturs naivitet kom
+            f&#x00F8;rst til syne gennem den sentimentale digters blik. Hvor den sentimentale poesi
+            kendetegnes ved en overv&#x00E6;gt af forfatterens subjektivitet over det fremstillede,
+            fors&#x00F8;ger den naive at tiln&#x00E6;rme sig tingene og naturen, idet den retter sig
+            mod objekterne. Den naive digter hviler i sig selv og i naturen, mens den sentimentale
+            l&#x00E6;nges tilbage til naturen som noget altid allerede tabt. Denne mods&#x00E6;tning
+            skaber to modsatrettede l&#x00E6;seroplevelser, som svarer n&#x00F8;je til den
+            mods&#x00E6;tning, som findes hos <persName key="pe18">Steffens</persName> (og
+            Grundtvig):</p> 
+          <p rend="quote">&#x201C;Derfor er gemyttet i bev&#x00E6;gelse her [ved
+            l&#x00E6;sningen af det sentimentale v&#x00E6;rk], det er ansp&#x00E6;ndt, det
+            vakler mellem stridende f&#x00F8;lelser; d&#x00E9;r [ved l&#x00E6;sningen af det
+            naive] er det roligt, uansp&#x00E6;ndt, i overensstemmelse med sig selv og
+            fuldkommen tilfredsstillet&#x201D; (overs. GV).</p>
+          <note type="readMore">
+<p rend="noIndent">ty. &#x201C;Daher ist hier das Gem&#x00FC;t in
+              Bewegung, es ist angespannt, es schwankt zwischen streitenden Gef&#x00FC;hlen; da es
+              dort ruhig, aufgel&#x00F6;st, einig mit sich selbst und vollkommen befriedigt
+              ist&#x201D; (<rs type="title" key="title1804">Schiller 1992a</rs>, s. 777).</p>
+</note>
+          <p rend="noIndent">I sin f&#x00F8;rste afhandling <rs type="title" key="title1833">
+<hi rend="italic">&#x00DC;ber das
+              Studium der griechischen Poesie</hi>
+</rs> (1797, da. Om studiet af den gr&#x00E6;ske poesi)
+            fors&#x00F8;gte <persName key="pe34">Friedrich Schlegel</persName> at definere en s&#x00E6;rlig, moderne litteratur
+            p&#x00E5; baggrund af antikkens. Parallelt med <persName key="pe35">Schiller</persName> udviklede han en tilsvarende
+            mods&#x00E6;tning mellem den antikke poesi som &#x201C;objektiv&#x201D; og den moderne
+            poesi som &#x201C;den totale overv&#x00E6;gt af det karakteristiske, individuelle og
+            interessante&#x201D; (overs. GV, ty. &#x201C;das totale &#x00DC;bergewicht des
+            Charakteristischen, Individuellen und Interessanten&#x201D;, <rs key="title1833" type="title">Schlegel 1947</rs>, s. 58), dvs.
+            subjektiv.</p>
+          <p rend="firstIndent">Grundtvig giver dog tidens begreber sin egen drejning, idet det
+            antikke og det moderne for ham giver sig udtryk i de fiktive personers karakter. Han
+            beskriver <persName key="pe35">Schillers</persName>
+            <rs key="title1802" type="title">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs> som
+            &#x201C;et sandt Produkt af den gamle Konst&#x201D; (s. 229), og de kvaliteter, som han
+            till&#x00E6;gger tragediens personer, svarer til <persName key="pe18">Steffens'</persName>, <persName key="pe35">Schillers</persName> og <persName key="pe34">Schlegels</persName> karakteristik af den antikke litteratur. <persName key="pe35">Schillers</persName> tragedieskikkelser er s&#x00E5; oph&#x00F8;jede og
+            rolige, at de afviser tilskuerens medf&#x00F8;lelse, trods deres vansk&#x00E6;bne; de
+            hviler harmonisk i sig selv. Den moderne litteraturs personer karakteriseres ved en
+            splittelse, som de har til f&#x00E6;lles med det moderne menneske: &#x201C;Hos dem finde
+            vi samme dunkle Ahnelse, samme Misforhold mellem &#x00D8;nske og V&#x00E6;ren, samme
+            uvilkaarlige Str&#x00E6;ben fremad, som boer i vort eget Bryst&#x201D; (s. 230).
+            Splittelsen mellem &#x201C;&#x00D8;nske og V&#x00E6;ren&#x201D;, dvs. mellem det ideelle
+            og det reelle, karakteriserer de moderne tragediefigurer &#x2013; de er pr&#x00E6;get af den
+            tidlige modernitetst&#x00E6;nknings splittelse og individualitet.</p>
+          <p rend="firstIndent">For Grundtvig bliver splittelsen et argument for at f&#x00F8;le
+            st&#x00F8;rre empati med de moderne tragediefigurer: &#x201C;Med dem &#x00F8;nske og
+            haabe, klage og ki&#x00E6;mpe, blegne og falde vi&#x201D; (s. 230). Alternativet til den
+            oph&#x00F8;jede kunst er for Grundtvig en engageret, f&#x00F8;lelsesm&#x00E6;ssig
+            indlevelse i tragedien, se herom afsnittet <ref type="docIn" target="#docIn17">&#x201C;&#x2018;Sluttelse&#x2019; og t&#x00E5;restr&#x00F8;m&#x201D;</ref>.</p>
+        </div>
+        <div>
+          <head xml:id="docIn14">Poesi kontra kunst</head>
+          <p rend="noIndent">Efter diskussionen af den antikke og den moderne tragedie introducerer
+            Grundtvig en begrebsmods&#x00E6;tning, som er fremmed for <persName key="pe35">Schillers</persName> univers. Han stiller nemlig sp&#x00F8;rgsm&#x00E5;let, hvorvidt
+            &#x201C;Konsten eller Poesien b&#x00F8;r yde os den h&#x00F8;ieste Nydelse&#x201D; (s.
+            231)? Sp&#x00F8;rgsm&#x00E5;let er irrelevant i <persName key="pe35">Schillers</persName> optik, da han snarere behandler poesien som et underbegreb til
+            kunsten, ikke som en mods&#x00E6;tning. En modstilling mellem kunst og poesi havde
+            Grundtvig derimod m&#x00F8;dt hos <persName key="pe18">Steffens</persName>, hvilket
+            fremg&#x00E5;r af slutningen p&#x00E5; det lange dagsbogsnotat om poesiens v&#x00E6;sen
+            af 10. september 1805: </p>
+          <p rend="quote">&#x201C;Naar <persName key="pe18">Steffens</persName> derfor siger at
+              <persName key="pe29">Goethe</persName> staaer paa Konstens h&#x00F8;yeste Spidse, men
+            er d&#x00F8;d for Poesien fordi Hans Sluttelse til de Gamle ey var t&#x00E6;t nok, da
+            synes Han Mig at modsige sig selv, paa engang at adskille og forene Konst og
+            Poesi&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 226).</p>
+          <p rend="noIndent">I udtogsbogen stiller Grundtvig sig skeptisk over for <persName key="pe18">Steffens'</persName> brug af begreberne, men gentager samme
+            grundfigur fra <persName key="pe18">Steffens'</persName>
+            <persName key="pe29">Goethe</persName>-kritik i sin egen kritik af <persName key="pe35">Schiller</persName>: Poesien st&#x00E5;r for Grundtvig og <persName key="pe18">Steffens</persName> h&#x00F8;jere end kunsten. Selvom kunsten i de filosofiske
+            indledningsforel&#x00E6;sninger ikke omtales som andet end et overbegreb for litteratur,
+            billedkunst, etc., f&#x00E5;r poesien allerede her en s&#x00E6;rstilling (<rs type="title" key="title118">Steffens 1996</rs>, s. 135, 139 f.), idet den, med
+            Grundtvigs <persName key="pe18">Steffens</persName>-parafrase, er &#x201C;alt det, som
+            b&#x00E6;rer det Eviges Pr&#x00E6;g&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 220). Poesien tildeles
+            derved en s&#x00E6;rlig opgave, idet den bringer &#x201C;en Ahnelse af en tilkommende
+            Tilv&#x00E6;relse&#x201D; med sig (<rs type="title" key="title118">Steffens 1996</rs>,
+            s. 142). Denne egenskab finder <persName key="pe18">Steffens</persName> ikke i kunsten i
+            almindelighed. Man kan kun gisne om, hvorvidt <persName key="pe18">Steffens</persName>
+            kan have radikaliseret denne mods&#x00E6;tning i 1803-forel&#x00E6;sningerne. N&#x00E5;r
+              <persName key="pe18">Steffens</persName> s&#x00E6;tter poesien h&#x00F8;jere end
+            kunsten, er det litteraturhistorisk set en del af et begrebshistorisk skift omkring
+            &#x00E5;r 1800. Hvor beskuerens oplevelse af kunstv&#x00E6;rket var omdrejningspunktet
+            for <persName key="pe508">Kants</persName> &#x00E6;stetiske teori, er det for
+            romantikerne <persName key="pe34">Schlegel</persName>, <persName key="pe33">Novalis</persName> og <persName key="pe18">Steffens</persName> den skabende poesi,
+            der bliver genstand for deres interesse.</p>
+          <p rend="firstIndent">P&#x00E5; baggrund af et kortfattet referat af argumentationen i
+              <persName key="pe35">Schillers</persName> fortale h&#x00E6;vder Grundtvig, at
+              <persName key="pe35">Schiller</persName> v&#x00E6;lger kunsten frem for poesien, da
+            man efter &#x201C;Nydelsen af et poetisk Drama f&#x00F8;ler sig dobbelt trykket af
+            Virkeligheden&#x201D; (s. 231). Grundtvigs l&#x00E6;sning er en politisk fordrejning af
+              <persName key="pe35">Schillers</persName> argumentation, idet han her benytter sig af
+              <persName key="pe18">Steffens'</persName> mods&#x00E6;tning til to forskellige
+            ting: For det f&#x00F8;rste til at undg&#x00E5; at betone det tema, som for <persName key="pe35">Schiller</persName> er det v&#x00E6;sentlige alternativ til dramaets
+            kortvarige dr&#x00F8;m, nemlig skabelsen af en kunst, der er i stand til at
+            frig&#x00F8;re mennesket, hvilket er hovedform&#x00E5;let med <persName key="pe35">Schillers</persName> genindf&#x00F8;relse af koret i tragedien (se hertil afsnittet
+              <ref type="docIn" target="#docIn10">&#x201C;Om brugen af koret i
+              tragedien&#x201D;</ref>). For det andet til at kritisere det, han betegner som
+              <persName key="pe35">Schillers</persName> &#x201C;Forsoning med
+            Tilv&#x00E6;relsen&#x201D; (s. 232).</p>
+          <p rend="firstIndent">Forestillingen om den tyske klassiks forsoning med
+            tilv&#x00E6;relsen henter Grundtvig fra <persName key="pe18">Steffens'</persName>
+            <persName key="pe29">Goethe</persName>-kritik. Som <persName key="pe52">Flemming
+              Lundgreen-Nielsen</persName> har p&#x00E5;vist, vender Grundtvig tilbage til dette
+            tema hele fire gange mellem 1804 og 1807 (<rs key="title118" type="title">1996</rs>, s.
+            239). Den modne <persName key="pe29">Goethe</persName> havde if&#x00F8;lge <persName key="pe18">Steffens</persName> forsonet sig med den jordiske tilv&#x00E6;relse,
+            hvilket <persName key="pe52">Lundgreen-Nielsen</persName> bl.a. med bel&#x00E6;g i <rs key="title629" type="title">
+<hi rend="italic">Verdenskr&#x00F8;niken 1812</hi>
+</rs>
+            fortolker s&#x00E5;ledes, at <persName key="pe29">Goethe</persName> if&#x00F8;lge
+            Grundtvig (og <persName key="pe18">Steffens</persName>) havde &#x201C;givet afkald
+            p&#x00E5; l&#x00E6;ngslen efter det ideale&#x201D; (<rs type="title" key="title118">1996</rs>, s. 238). Denne kritik lader Grundtvig ogs&#x00E5; g&#x00E6;lde for
+              <persName key="pe35">Schiller</persName>.</p>
+          <note type="readMore">
+<p rend="noIndent">I 
+<hi rend="italic"><rs key="title629" type="title">Verdenskr&#x00F8;niken 1812</rs></hi> beskriver Grundtvig <persName key="pe29">Goethes</persName>
+              position p&#x00E5; f&#x00F8;lgende vis: &#x201C;<persName key="pe29">Goethe</persName>
+              selv vilde gaa en Middelvei, laane det Jordiske en h&#x00F8;iere Glands og saa
+              indbilde sig, at det saaledes blev tilfredstillende; hans senere V&#x00E6;rker ere,
+              fra Konstens Side, Mesterstykker, men dyrek&#x00F8;bt er deres Runding, og de synes
+              mere skikkede til at inddysse Tidsalderen end v&#x00E6;kke den&#x201D; (<rs key="title629" type="title">Grundtvig 1812</rs>, s. 251 f.).</p>
+</note>
+          <p rend="firstIndent">Man kan diskutere, om denne h&#x00E5;rde dom over <persName key="pe35">Schiller</persName> er retf&#x00E6;rdig. S&#x00E6;rlig i fortalen til <rs key="title1802" type="title">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs>
+            insisterer <persName key="pe35">Schiller</persName> p&#x00E5; idealernes forrang frem
+            for det reale &#x2013; en position, der harmonerer d&#x00E5;rligt med Grundtvigs dom.
+            Grundtvigs skepsis synes snarere at hidr&#x00F8;re fra hans generelle uvilje mod
+            idealismens frihedsbegreb, som udspringer af hans kristne livssyn.</p>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn15">Kritik af den &#x00E6;stetiske frihed</head>
+        <p rend="noIndent">I sin afsluttende kritik af <persName key="pe35">Schiller</persName>
+          kaster Grundtvig sig over en af de helt centrale problemstillinger i den tyske idealisme,
+          nemlig forholdet mellem frihed og n&#x00F8;dvendighed, som optager b&#x00E5;de <persName key="pe508">Kant</persName>, <persName key="pe35">Schiller</persName> og <persName key="pe500">Fichte</persName> m.fl: Hvordan kan mennesket v&#x00E6;re underlagt naturens
+          kausalitet som et biologisk v&#x00E6;sen, samtidig med at det har en fri vilje i kraft af
+          sin fornuft? Hvordan kan mennesket p&#x00E5; &#x00E9;n gang v&#x00E6;re bestemt af sine omgivelser
+          og selvbestemmende? Denne problemstilling diskuterer <persName key="pe508">Kant</persName>
+          i den tredje antinomi i <rs key="title1839" type="title">
+<hi rend="italic">Kritik der
+              reinen Vernunft</hi>
+</rs> (1781, da. <hi rend="italic">
+<rs type="title" key="title1840">Kritik af den rene fornuft</rs>,</hi> 2002). <persName key="pe508">Kant</persName> l&#x00F8;ser problemet ved at pege p&#x00E5; et irreducibelt moment i
+          individet, nemlig friheden som individets rene selvbestemmelse, en slags pendant til
+          &#x201C;das Ding an sich&#x201D;. N&#x00E5;r erkendelsen af virkeligheden samtidig er
+          afh&#x00E6;ngig af beskuerens konstruktion (vi ser ikke tingene, som de virkelig er, men
+          alene s&#x00E5;dan som de fremtr&#x00E6;der for os), bliver virkeligheden til et produkt
+          af den menneskelige bevidsthed.</p>
+        <p rend="firstIndent">
+<persName key="pe508">Kants</persName> l&#x00F8;sning p&#x00E5;
+          frihedens problem bliver &#x00E5;rsagen til <persName key="pe35">Schillers</persName>
+          store interesse for hans filosofi. <persName key="pe35">Schiller</persName>  formulerede
+          det selv i et brev til sin ven <persName key="pe987">Gottfried K&#x00F6;rner</persName>
+          den 18. februar 1793 p&#x00E5; f&#x00F8;lgende vis:</p> 
+        <p rend="quote">&#x201C;Det er vist, at intet
+          d&#x00F8;deligt menneske nogensinde har udtalt vigtigere ord end <persName key="pe508">Kants</persName>, der samtidig er indholdet af hele hans filosofi: Bestem dig ud fra
+          dig selv; lige s&#x00E5;vel som de [ord] i den teoretiske filosofi: Naturen
+          st&#x00E5;r under forstandens love&#x201D; (overs. GV).</p>
+        <note type="readMore">
+<p rend="noIndent">ty. &#x201C;Es ist gewi&#x00DF; von keinem sterblichen
+            Menschen kein gr&#x00F6;&#x00DF;eres Wort noch gesprochen worden, als dieses Kantische, was
+            zugleich der Inhalt seiner ganzen Philosophie ist: Bestimme Dich aus Dir selbst; sowie
+            das in der theoretischen Philosophie: Die Natur steht unter dem
+            Verstandesgesetze&#x201D; (citeret efter <rs key="title1843" type="title">Safranski 2004</rs>, s. 353).</p>
+</note>
+        <p rend="noIndent">Begge aspekter kan genfindes i <persName key="pe35">Schillers</persName> fortale til <hi rend="italic">
+<rs key="title1802" type="title">Die
+              Braut von Messina</rs>,</hi> hvor han netop beskriver m&#x00F8;det med det sande
+          kunstv&#x00E6;rk som en oplevelse, der v&#x00E6;kker menneskets frihed og derved
+          l&#x00E6;rer det at overvinde den sanselige verdens kontingens:</p> 
+        <p rend="quote">&#x201C;... at [den
+          sande kunst] v&#x00E6;kker, &#x00F8;ver og danner en kraft i ham, der kan skabe en
+          objektiv afstand til den sanselige verden, som ellers blot tynger os som en r&#x00E5;
+          masse og trykker os som en blind magt; en kraft, der kan
+          forvandle den sanselige verden til vor &#x00E5;nds
+          frie v&#x00E6;rk og beherske det materielle gennem ideerne&#x201D; (overs. GV).</p>
+        <note type="readMore">
+<p rend="noIndent">ty. &#x201C;... da&#x00DF; [die wahre Kunst] eine Kraft in ihm
+            erweckt, &#x00FC;bt und ausbildet, die sinnliche Welt, die sonst nur als ein roher Stoff
+            auf uns lastet, als eine blinde Macht auf uns dr&#x00FC;ckt, in eine objektive Ferne zu
+            r&#x00FC;cken, in ein freies Werk unsers Geistes zu verwandeln, und das Materielle durch
+            Ideen zu beherrschen&#x201D; (<rs type="title" key="title1802">Schiller 1974b</rs>, s.
+            816 f.).</p>
+</note>
+        <p rend="noIndent">For <persName key="pe35">Schiller</persName> er kunsten medvirkende
+          til at myndigg&#x00F8;re mennesket, hvorved han bliver i stand til at h&#x00E6;ve sig over
+          den materielle verden. <persName key="pe35">Schiller</persName> giver, med andre ord,
+          kunsten evnen til at op&#x00F8;ve mennesket til den frihed, som han finder beskrevet i
+            <persName key="pe508">Kants</persName> filosofi. Grundtvig beskriver det p&#x00E5;
+          f&#x00F8;lgende vis: &#x201C;At fremlokke denne Evne, at lade Friheden udvikle sig af
+          N&#x00F8;dvendigheden selv, s&#x00E6;tter han nu som sit h&#x00F8;ieste Virkemaal, og
+          fatter saaledes Ideen om den h&#x00F8;ieste Konst&#x201D; (s. 232).</p>
+        <p rend="firstIndent">Grundtvig deler ikke <persName key="pe35">Schillers</persName> begejstring for <persName key="pe508">Kants</persName> frihedsbegreb og
+          afviser idealismens l&#x00F8;sning p&#x00E5; frihedens problem med ordene:</p> 
+          <p rend="quote">&#x201C;Tanken, at Mennesket kan finde sig fri, ved frivillig at adlyde Naturens Love, og f&#x00F8;le sig
+          h&#x00E6;vet over den, som Hersker, fordi den adlyder sin egen Lov, er en aabenbar
+          Illusion; thi Frihed oph&#x00E6;ver n&#x00F8;dvendig Underkastelse, og denne hiin, ligesom
+          man ikke hersker, fordi man ikke er den eneste, der lyder&#x201D; (s. 232).</p>
+        <div>
+          <head xml:id="docIn16">Kristen romantik</head>
+          <p rend="noIndent">Grundtvig er ikke begejstret for <persName key="pe35">Schillers</persName> l&#x00F8;sning p&#x00E5; frihedens problem. If&#x00F8;lge
+            Grundtvig kan kunsten ikke fris&#x00E6;tte mennesket, for ham er livet &#x201C; i den
+            h&#x00F8;iere Idee kun [&#x2026;] kort og flygtigt&#x201D; (s. 131 f.). Kun
+            n&#x00E5;r poesien peger v&#x00E6;k fra det jordiske og ud p&#x00E5; evigheden, har den
+            v&#x00E6;rdi. Forestillingen om poesien som &#x201C;en Ahnelse af en tilkommende
+            Tilv&#x00E6;relse&#x201D; havde Grundtvig allerede m&#x00F8;dt hos <persName key="pe18">Steffens</persName> (<rs key="title118" type="title">1996</rs>, s. 142) og diskuteret
+            i sin udtogsbog (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 218 f.), og denne forestilling indlejres nu
+            i et kristent livssyn. Den teologiske tolkningshorisont er dog mindre tydelig i den
+            endelige version end i udtogsbogens, og man kan, som <persName key="pe52">Flemming
+              Lundgreen-Nielsen</persName> (<rs key="title14" type="title">1980</rs>, s. 172 f.),
+            spekulere over, hvorfor Grundtvig valgte kun at antyde sin kristne tolkning af
+            frihedsbegrebet i den endelige version.</p>
+          <p rend="firstIndent">I den trykte version skriver Grundtvig:</p> 
+          <p rend="quote">&#x201C;men, saa sandt, som
+            vi troe, at Tilv&#x00E6;relsen, hvortil vi i Nydelsens &#x00D8;ieblik opsvinge os, vil
+            engang vinde varig Realitet, saa n&#x00F8;dvendig maa vi ogsaa bel&#x00E6;gge den med
+            Pr&#x00E6;dicatet: den h&#x00F8;ieste&#x201D; (s. 233).</p>
+          <p rend="noIndent">I udtogsbogen hedder det derimod:</p> 
+            <p rend="quote">&#x201C;Menneskets Frihed bestaar
+            ene i Evnen til at h&#x00E6;ve sig paa en h&#x00F8;jere Punkt hvorfra Han kan nedskue
+            paa sin overm&#x00E6;gtige Fiende, dette er hans h&#x00F8;jeste Maal paa Jorden, og hvad
+            der fremhjelper denne H&#x00E6;ven og konstituerer den, er den h&#x00F8;jeste Nydelse &#x2013;
+            Dette Liv er det som udtaler sig gennem hele Historien, dette er det som spirer i vore
+            hellige B&#x00F6;ger og tr&#x00E6;der konsentreret frem i <persName key="pe343">Pauli</persName> dybe Erkl&#x00E6;ring. Den l&#x00E6;ngselsfulde Skabning, undergiven
+            Forf&#x00E6;ngeligheds Tjeneste mod sin Villie, sukker efter Guds B&#x00F6;rns herlige
+            Frihed&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 388).</p>
+          <p rend="noIndent">Hvor den endelige version &#x2013; p&#x00E5; linje med <persName key="pe18">Steffens</persName> &#x2013; peger
+            p&#x00E5; en halvvejs verdsliggjort forestilling om &#x201C;Ahnelsen af det
+            Evige&#x201D; (s. 233) som poesiens form&#x00E5;l, er udtogsbogen langt mere direkte i
+            sin modstilling af idealismens frihedsbegreb med et kristent. Den h&#x00F8;jeste nydelse
+            er ikke subjektets oplevelse af sin egen frihed, men derimod l&#x00E6;ngslen efter
+            &#x201C;Guds B&#x00F6;rns herlige Frihed&#x201D;, som det hedder med henvisning til
+            <rs key="Rom 8,19-23" type="bible">Romerbrevet 8.19.-23</rs>. I udtogsbogen afviser Grundtvig entydigt idealisternes dennesidige
+            frihed til fordel for friheden i Gud.</p>
+        </div>
+        <div>
+          <head xml:id="docIn17">&#x2018;Sluttelse&#x2019; og t&#x00E5;restr&#x00F8;m</head>
+          <p rend="noIndent">P&#x00E5; baggrund af sin afvisning af idealismens &#x00E6;stetik
+            udvikler Grundtvig sin egen opfattelse af, hvordan tilskueren skal tilegne sig
+            kunstv&#x00E6;rket. Frem for den frie, reflekterende tilskuer foretr&#x00E6;kker
+            Grundtvig en emotionel medleven i tragedien, som <persName key="pe35">Schiller</persName> ford&#x00F8;mmer i slutningen af fortalen til <hi rend="italic">
+<rs type="title" key="title1802">Die Braut von Messina</rs>.</hi> For <persName key="pe35">Schiller</persName> g&#x00E6;lder det netop, at tilskueren skal beholde sin
+            frihed i &#x201C;affekternes storm&#x201D; (<rs key="title1802" type="title">Schiller
+              1974b</rs>, s. 822), hvilket korets poetiske refleksion er med til at sikre. Grundtvig
+            derimod ser hengivelsen som mulighed for en &#x201C;Ahnelse af det Evige&#x201D; (s.
+            233). Denne hengivelse betegner han med begrebet &#x2018;Sluttelse&#x2019;, der er
+            afhandlingens gennemg&#x00E5;ende begreb og skal forst&#x00E5;s som
+            &#x201C;engagement&#x201D; eller &#x201C;identifikation&#x201D;. &#x2018;Sluttelsen&#x2019; og, som verbum, &#x2018;at slutte&#x2019;
+            bliver et n&#x00F8;gleord for Grundtvigs tidlige afhandlinger, som <persName key="pe52">Flemming Lundgreen-Nielsen</persName> har p&#x00E5;peget (<rs key="title13" type="title">1965</rs>, s. 72 f.).</p>
+          <note type="readMore">
+<p rend="noIndent">&#x2018;Sluttelsen&#x2019; og verbet &#x2018;at
+            slutte&#x2019; er n&#x00E6;rmest allestedsn&#x00E6;rv&#x00E6;rende i <rs type="title" key="title341">&#x201C;Om
+              Religion og Liturgie&#x201D;</rs> (<rs key="title341" type="title">1807a</rs>, fx s. 138 og 157). I sin kritik fra 22. februar
+            1805 af <persName key="pe19">Johannes Ewalds</persName> drama <rs type="title" key="title1838">
+<hi rend="italic">Rolf Krage</hi>
+</rs> (1770) skriver
+              Grundtvig, at dramaet for ham at se ikke er vellykket, da tragedieheltens d&#x00F8;d
+              ikke er knyttet til selve epokens undergang. F&#x00F8;rst n&#x00E5;r det er
+              tilf&#x00E6;ldet, &#x201C;slutter Tilskueren sig til den kj&#x00E6;mpende Helt, da
+              f&#x00F8;ler Han sig indhvirvlet i en h&#x00F8;yere Existens&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1, s. 204). F&#x00F8;rst et
+              s&#x00E5;dant historisk drama vil f&#x00E5; beskueren til at engagere sig fuldt og
+              helt i dramaets hovedperson p&#x00E5; en m&#x00E5;de, der svarer til det ideal, han
+              skitserer i &#x201C;Om <persName key="pe35">Schiller</persName>&#x201D;.</p>
+</note>
+          <p rend="firstIndent">For Grundtvig er det s&#x00E5;ledes ikke, n&#x00E5;r tilskueren oplever sin egen frihed i m&#x00F8;det med kunstv&#x00E6;rket,
+            at han har &#x201C;den h&#x00F8;ieste Nydelse&#x201D;, som <persName key="pe35">Schiller</persName> beskriver det i fortalen til <hi rend="italic">
+<rs key="title1802" type="title">Die Braut von Messina</rs>,</hi> men i stedet &#x201C;naar vi tage
+            Deel i Noget med vort hele V&#x00E6;sen, som Heelt&#x201D; (s. 233). Grundtvig
+            foretr&#x00E6;kker det umiddelbare, f&#x00F8;lelsesm&#x00E6;ssige engagement frem for
+            den refleksive fornuft:</p>
+          <p rend="quote">&#x201D;Vor hele Natur er da opl&#x00F8;st i en Taarestr&#x00F8;m; men
+            Ahnelsen af det Evige omgiver den med sin Straalemur, saa intet af det Endelige, Usle,
+            kan r&#x00F8;re den, og vi leve da, ikke i en for&#x00E6;dlet jordisk, men en
+            overjordisk Tilv&#x00E6;relse&#x201D; (s. 233).</p>
+          <p rend="noIndent">Endnu en gang er det <persName key="pe18">Steffens</persName>,
+            der p&#x00E5;virker Grundtvig; begrebet &#x2018;Sluttelse&#x2019; anvendes adskillige gange i samme betydning i
+              <persName key="pe18">Steffens'</persName> filosofiske
+            indledningsforel&#x00E6;sninger om subjektets rette forhold til historien og &#x2013; i dette
+            tilf&#x00E6;lde &#x2013; poesien:</p> 
+            <p rend="quote">&#x201C;Vi omgives af en h&#x00F6;j en herlig Glands; en dyb
+            L&#x00E6;ngsel vaagner i vort Inderste, og <hi rend="italic">slutter</hi> os
+            uimodstaaelig til den forunderlige g&#x00F6;glende Verden &#x2013; / Den forsvinder
+            &#x2013;&#x201D; (<rs type="title" key="title118">Steffens 1996</rs>, s. 34, fremh&#x00E6;vet
+            af GV).</p> 
+            <p rend="noIndent">
+<persName key="pe18">Steffens'</persName> beskrivelse af, hvordan poesien
+            fremtryller anelsen af en &#x201C;guddommelig, gylden Verden&#x201D;, har
+            i&#x00F8;jnefaldende f&#x00E6;llestr&#x00E6;k med Grundtvigs lysm&#x00E6;ttede metaforik
+            i ovenst&#x00E5;ende citat. &#x2018;Sluttelsen&#x2019; bliver for b&#x00E5;de <persName key="pe18">Steffens</persName> og Grundtvig den rette m&#x00E5;de at forholde sig til
+            anelsen af det absolutte p&#x00E5;.</p>
+        </div>
+      </div>
+
+      <div>
+        <head xml:id="docIn18">Modtagelse og videre liv</head>
+        <p rend="noIndent">&#x201C;Om <persName key="pe35">Schiller</persName> og <rs key="title340" type="title">Bruden fra Messina</rs>&#x201D; er ikke tidligere
+          blevet genoptrykt. Grundtvigs kritik af <persName key="pe35">Schiller</persName> synes ikke at
+          have skabt megen debat i samtiden. Ni &#x00E5;r senere, i 1816, huskede <persName key="pe24">Rahbek</persName> dog stadig Grundtvigs
+          kritik af den danske <persName key="pe35">Schiller</persName>-reception og komplimenterede Grundtvig for hans
+          overs&#x00E6;ttelse (se hertil afsnittet om <ref type="docIn" target="#docIn5">&#x201C;Overs&#x00E6;ttelsen&#x201D;</ref>). </p>
+        <p rend="firstIndent">M&#x00F8;det med <persName key="pe35">Schiller</persName> og <rs key="title1802" type="title">
+<hi rend="italic">Die Braut von
+            Messina</hi>
+</rs> satte sit pr&#x00E6;g p&#x00E5; Grundtvigs forfatterskab i flere
+          henseender:</p>
+        <p rend="firstIndent">I det sidste afsnit af fortalen forsvarer <persName key="pe35">Schiller</persName> sin sammenblanding af kristendom, islam og gr&#x00E6;sk mytologi i
+            <rs type="title" key="title1802">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs> ved
+          at argumentere for religionernes enhed i ideen om det guddommelige: &#x201C;Bag alle
+          religioners sl&#x00F8;r ligger religionen selv, ideen om det guddommelige&#x201D; (overs.
+          af GV, ty. &#x201C;Unter der H&#x00FC;lle aller Religionen liegt die Religion selbst, die
+          Idee eines G&#x00F6;ttlichen&#x201D;, <rs key="title1802" type="title">Schiller
+          1974b</rs>, s. 823). Forestillingen m&#x00E5; have gjort indtryk p&#x00E5; Grundtvig, der
+          i samme periode anvendte citatet som motto for den religionsfilosofiske afhandling <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> (<rs key="title341" type="title">1807a</rs>, s. 129) og alluderede til det i <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> (<rs key="title335" type="title">1807b</rs>, s. 265), hvor han ogs&#x00E5; citerede en
+          l&#x00E6;ngere passage fra en korsang i <persName key="pe35">Schillers</persName> drama
+            (<rs type="title" key="title335">1807b</rs>, s. 251). <persName key="pe35">Schillers</persName> synkretisme, dvs. religionsblanding, kan muligvis ogs&#x00E5; have
+          p&#x00E5;virket Grundtvigs drama <hi rend="italic">
+<rs key="title128" type="title">Maskeradeballet i Danmark 1808</rs>,</hi> hvor Grundtvig netop forbandt asatro og
+          kristendom, som det fremg&#x00E5;r af centrale citater som: &#x201C;H&#x00F8;je <rs type="myth" key="myth59">Odin</rs>! Hvide <persName key="pe45">Krist</persName>!
+          / Slettet ud er Eders Tvist, / Begge S&#x00F8;nner af <rs key="myth1" type="myth">Alfader</rs>&#x201D; (<rs type="title" key="title128">1808</rs>, s. 19 f.).
+          I samme drama og i <rs key="title82" type="title">
+<hi rend="italic">Optrin af Nordens
+              K&#x00E6;mpeliv</hi>
+</rs> (1809-1811) benyttede Grundtvig sig af kor efter forbillede
+          i den gr&#x00E6;ske tragedie, hvilket ogs&#x00E5; kan v&#x00E6;re en inspiration fra
+            <persName key="pe35">Schillers</persName> tragedie og dens fortale.</p>
+        <p rend="firstIndent">Kritikken af idealismens &#x201C;Forsoning med
+          Tilv&#x00E6;relsen&#x201D;, eller &#x2013; m&#x00E5;ske rettere &#x2013; dens &#x00F8;nske om en
+          &#x201C;for&#x00E6;dlet jordisk&#x201D; tilv&#x00E6;relse, er ligeledes et genkommende
+          tema for Grundtvig. Mods&#x00E6;tningen mellem kunstens &#x201C;korte Dr&#x00F8;m&#x201D;
+          (s. 231) og et kristent livssyn kan s&#x00E5; sent som i 1825 genfindes i 4.-6. strofe af
+          salmen <rs type="title" key="title1859">&#x201C;De Levendes Land&#x201D;</rs>. Salmen
+          afviser idealiseringen af det jordiske liv som den &#x201C;flygtige Dr&#x00F8;m /
+          Om Evigheds-&#x00D8;en i Tidernes Str&#x00F8;m, / Om Templet for Gl&#x00E6;den i
+          Taarernes Dal / Om Halvgude-Livet i D&#x00F8;dninge-Sal&#x201D; (strofe 4, vers
+          1-4). De tre strofers budskab bliver sammenfattet i strofe 6: &#x201C;Du gi&#x00E6;kker de
+          Arme, der s&#x00F8;ge omsonst / Hvad Hjertet begi&#x00E6;rer, i Billed og
+          Konst&#x201D;. I det kunstbegreb, som salmen skitserer, kan man ane konturerne af
+            <persName key="pe35">Schillers</persName> &#x00E6;stetik, som den opfattes gennem
+          Grundtvigs kristne optik. Grundtvig stiller sig her skeptisk over for forestillingen om,
+          at menneskets frig&#x00F8;relse og gl&#x00E6;de kan v&#x00E6;re et m&#x00E5;l i sig selv,
+          og endvidere, at menneskets forl&#x00F8;sning skulle kunne findes gennem kunsten.
+          Stroferne kan l&#x00E6;ses som en poetisk afsked med idealismens &#x00E6;stetik og med
+          det, der for Grundtvig st&#x00E5;r som et fors&#x00F8;g p&#x00E5; at forherlige
+          jordelivet.</p>
+      </div>
+      
+      <div type="litList">
+      <head xml:id="docIn19">Anvendt litteratur</head>
+          <list type="litList">
+            <item>Sofokles (1977) <hi rend="italic">
+<rs type="title" key="title1837"> Kong
+              &#x00D8;dipus</rs>,</hi> overs. Otto Foss. K&#x00F8;benhavn</item>
+            <item>Albertsen, Leif Ludwig (1978) <hi rend="italic">
+<rs type="title" key="title1841">Schillerklubben</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Bob&#x00E9;, Louis (1905) <hi rend="italic">
+<rs type="title" key="title1842">Schiller und D&#x00E4;nemark</rs>.</hi> Leipzig &amp; Wien</item>
+            <item>Domes, Fred J. (1935) <hi rend="italic">
+<rs type="title" key="title1846">Schiller auf der d&#x00E4;nischen B&#x00FC;hne</rs>.</hi> Leipzig &amp;
+              Berlin</item>
+            <item>Ewald, Johannes (1770) <hi rend="italic">
+<rs type="title" key="title1838">Rolf
+              Krage. Et S&#x00F8;rgespil i Fem Handlinger</rs>.</hi>
+              K&#x00F8;benhavn</item>
+            <item>Foersom, Peter red. (u.&#x00E5;.: 1806) <hi rend="italic">
+<rs type="title" key="title1773">Nytaarsgave for Skuespilyndere 1807</rs>.</hi>
+              K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1806) <rs type="title" key="title72">&#x201C;Lidet om Sangene i Edda&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> september, s. 270-299. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1807a) <rs type="title" key="title341">&#x201C;Om Religion og Liturgie&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title126">Theologisk Maanedsskrivt</rs>,</hi> februar, s. 129-201. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1807b) <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> marts, s. 249-298. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1807c) <rs type="title" key="title2">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> maj, s. 156-188. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1807d) <rs type="title" key="title166">&#x201C;Et Par Ord i Anledning af det forkyndte S&#x00F8;rgespil:
+              Signe&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> juli, s. 249-263.
+              K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, Nicolai Frederik Severin (1808) <hi rend="italic">
+<rs type="title" key="title128">Maskeradeballet i Dannemark 1808. Et Syn</rs>.</hi>
+              K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1809-1811) <rs type="title" key="title82">
+<hi rend="italic">Optrin af Nordens K&#x00E6;mpeliv</hi>
+</rs>
+              1-2. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1812) <hi rend="italic">
+<rs type="title" key="title629">Kort Begreb af Verdens Kr&#x00F8;nike i
+              Sammenh&#x00E6;ng</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1832) <rs type="title" key="title1859">&#x201C;De Levendes Land&#x201D;</rs> i L.C. Hagen <hi rend="italic">
+<rs key="title36" type="title">Historiske Psalmer og Riim til
+                B&#x00F8;rne-L&#x00E6;rdom</rs>,</hi> s. 197-203. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1924-1926) <rs type="title" key="title277">
+<hi rend="italic">Breve fra og til N.F.S. Grundtvig</hi>
+</rs>
+              bind 2, udg. af Georg Christensen &amp; Stener Grundtvig. K&#x00F8;benhavn</item>
+            <item>Grundtvig, Nicolai Frederik Severin (1979) <rs type="title" key="title3">
+<hi rend="italic">N.F.S. Grundtvig Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1-2,
+              udg. af Gustav Albeck. K&#x00F8;benhavn</item>
+            <item>Hultberg, Helge (1973) <rs type="title" key="title1845">&#x201C;Den unge
+              Henrich Steffens 1773-1811&#x201D;</rs> i <hi rend="italic">
+<rs key="title1844" type="title">Festskrift
+                udgivet af K&#x00F8;benhavns Universitet i anledning af universitetets
+                &#x00E5;rsfest november 1973</rs>,</hi> s. 7-115. K&#x00F8;benhavn</item>
+            <item>Kant, Immanuel (1995a) <hi rend="italic">
+<rs type="title" key="title1839">Kritik
+              der reinen Vernunft</rs>,</hi> udg. af Wilhelm Weischedel. Frankfurt am
+              Main</item>
+            <item>Kant, Immanuel (1995b) <hi rend="italic">
+<rs type="title" key="title1248">Kritik
+              der Urteilskraft</rs>,</hi> udg. af Wilhelm Weischedel. Frankfurt am
+              Main</item>          
+            <item>Kant, Immanuel (2002) <hi rend="italic">
+<rs type="title" key="title1840">Kritik af
+              den rene fornuft</rs>,</hi> overs. Claus Bratt &#x00D8;stergaard.
+              Frederiksberg</item>
+            <item>Kant, Immanuel (2007) <hi rend="italic">
+<rs type="title" key="title979">Kritik af
+              d&#x00F8;mmekraften</rs>,</hi> overs. Claus Bratt &#x00D8;stergaard.
+              Frederiksberg</item>
+            <item>Lundgreen-Nielsen, Flemming (1965) <hi rend="italic">
+<rs type="title" key="title13">Grundtvig. Sk&#x00E6;bne og forsyn. Studier i Grundtvigs
+              nordisk-romantiske dramatik</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">Det handlende ord. N.F.S. Grundtvigs digtning,
+              litteraturkritik og poetik 1798-1819</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Lundgreen-Nielsen, Flemming (1996) <rs type="title" key="title487">&#x201C;Henrich
+              Steffens' Goethe-forel&#x00E6;sninger i 1803&#x201D;</rs> i Henrich Steffens,
+              <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske
+                Forel&#x00E6;sninger</rs>,</hi> udg. af Johnny Kondrup, s. 227-243.
+              K&#x00F8;benhavn</item>
+            <item>Luserke-Jaqui, Matthias &amp; Grit Dommes red. (2005) <hi rend="italic">
+<rs type="title" key="title1799">Schiller-Handbuch, Leben - Werk -
+              Wirkung</rs>.</hi> Stuttgart</item>
+            <item>Overskou, Thomas (1860) <hi rend="italic">
+<rs type="title" key="title1361">Den
+              danske Skueplads, i dens Historie, fra de f&#x00F8;rste Spor af danske
+              Skuespil indtil vor Tid</rs>
+</hi> 1-7, bind 4. K&#x00F8;benhavn</item>
+            <item>Paul, Fritz (1973) <hi rend="italic">
+<rs type="title" key="title1847">Henrich
+              Steffens. Naturphilosophie und Universalromantik</rs>.</hi>
+              M&#x00FC;nchen</item>
+            <item>Pott, Hans-Georg (1980) <hi rend="italic">
+<rs type="title" key="title1848">Die
+              sch&#x00F6;ne Freiheit. Eine Interpretation zu Schillers Schrift &#x00DC;ber die
+              &#x00E4;sthetische Erziehung des Menschen in einer Reihe von Briefen</rs>.</hi>
+              M&#x00FC;nchen</item>
+            <item>Rahbek, Knud Lyne red. (1785-1808) <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Rahbek, Knud Lyne red. (1815-1819) <hi rend="italic">
+<rs type="title" key="title161">Dansk Minerva</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Rahbek, Knud Lyne (1816) <hi rend="italic">
+<rs type="title" key="title900">
+              Tilskueren. Et Ugeskrift</rs>,</hi> nr. 21. K&#x00F8;benhavn</item>
+            <item>R&#x00F8;nning, Frederik (1907-1913) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk
+              &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>.</hi>
+              K&#x00F8;benhavn</item>
+            <item>Safranski, R&#x00FC;diger (2004) <hi rend="italic">
+<rs type="title" key="title1843">Friedrich Schiller oder Die Erfindung des Deutschen
+              Idealismus</rs>.</hi> M&#x00FC;nchen &amp; Wien</item>
+            <item>Scharling, Carl Immanuel (1947) <hi rend="italic">
+<rs type="title" key="title21">Grundtvig og Romantiken belyst ved Grundtvigs Forhold til
+              Schelling</rs>.</hi> K&#x00F8;benhavn</item>
+            <item>Schiller, Friedrich (1973) <rs type="title" key="title1021">&#x201C;Die
+              R&#x00E4;uber&#x201D;</rs> [1781] i <hi rend="italic">
+<rs type="title" key="title1020">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 1, udg. af Herbert G. G&#x00F6;pfert &amp;
+              Gerhard Fricke, s. 491-638. M&#x00FC;nchen</item>
+            <item>Schiller, Friedrich (1801) <hi rend="italic">
+<rs type="title" key="title1034">R&#x00F8;verne. Et S&#x00F8;rgespil</rs>
+</hi> [1781], overs. af Matthias
+              Rahbek. Helsing&#x00F8;r</item>
+            <item>Schiller, Friedrich (1974c) <rs type="title" key="title1025">&#x201C;Don
+              Carlos&#x201D;</rs> [1787] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 2, udg. af Herbert G. G&#x00F6;pfert,
+              Gerhard Fricke &amp; Herbert Stubenrauch, s. 7-267. M&#x00FC;nchen</item>
+            <item>Schiller, Friedrich (1812) <hi rend="italic">
+<rs type="title" key="title1777">Don Carlos, Infant af Spanien</rs>
+</hi> [1787], overs. af Johan Storm Munch.
+              Oslo</item>
+            <item>Schiller, Friedrich von (1792) <rs type="title" key="title952">&#x201C;Was
+              hei&#x00DF;t und zu welchem Ende studiert man Universalgeschichte? Eine
+              akademische Antrittsrede&#x201D;</rs> [1789] i <rs type="title" key="title951">
+<hi rend="italic">Kleinere prosaische Schriften</hi>
+</rs> 1-4, bind 1, s. 54-98.
+              Leipzig</item>
+            <item>Schiller, Friedrich (1992b) <rs type="title" key="title1805">&#x201C;&#x00DC;ber
+              Anmut und W&#x00FC;rde&#x201D;</rs> [1793] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter Janz, Hans
+              Richard Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 330-394. Frankfurt
+              am Main</item>
+            <item>Schiller, Friedrich (1992d) <rs type="title" key="title1031">&#x201C;&#x00DC;ber die
+              &#x00E4;sthetische Erziehung des Menschen&#x201D;</rs> [1795] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter
+              Janz, Hans Richard Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 556-676.
+              Frankfurt am Main</item>
+            <item>Schiller, Friedrich (1996) <hi rend="italic">
+<rs type="title" key="title956">Menneskets &#x00E6;stetiske opdragelse</rs>
+</hi> [1795], overs. af Per
+              &#x00D8;hrgaard. K&#x00F8;benhavn</item>
+            <item>Schiller, Friedrich (1992a) <rs type="title" key="title1804">&#x201C;&#x00DC;ber
+              naive und sentimentalische Dichtung&#x201D;</rs> [1795-1796] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter
+              Janz, Hans Richard Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 706-810.
+              Frankfurt am Main</item>
+            <item>Schiller, Friedrich (1952) <rs type="title" key="title1835">&#x201C;Om naiv og
+              sentimental digtning&#x201D;</rs> [1795-1796] i <hi rend="italic">
+<rs type="title" key="title292">Om naiv og sentimental digtning og Om det
+                oph&#x00F8;jede</rs>,</hi> overs. af Johan Johansen.
+              K&#x00F8;benhavn</item>
+            <item>Schiller, Friedrich (1992c) <rs type="title" key="title1861">&#x201C;Vom
+              Erhabenen&#x201D;</rs> [1796] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter Janz, Hans Richard
+              Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 822-840. Frankfurt am
+              Main</item>
+            <item>Schiller, Friedrich (1974d) <rs type="title" key="title1028">&#x201C;Die Jungfrau von
+              Orleans&#x201D;</rs> [1801] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 2, udg. af Herbert G. G&#x00F6;pfert,
+              Gerhard Fricke &amp; Herbert Stubenrauch, s. 687-812. M&#x00FC;nchen</item>
+            <item>Schiller, Friedrich (1813) <hi rend="italic">
+<rs type="title" key="title1775">Johanna d'Arc, Orleans M&#x00F8;</rs>
+</hi> [1801], overs. af Knud Lyne
+              Rahbek. K&#x00F8;benhavn</item>          
+            <item>Schiller, Friedrich (1803) <hi rend="italic">
+<rs type="title" key="title340">Die Braut von Messina oder die feindlichen Br&#x00FC;der: Ein
+              Trauerspiel mit Ch&#x00F6;ren</rs>.</hi> T&#x00FC;bingen</item>
+            <item>Schiller, Friedrich (1974a) <rs type="title" key="title1802">&#x201C;Die Braut von
+              Messina&#x201D;</rs> [1803] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 2, udg. af Herbert G. G&#x00F6;pfert,
+              Gerhard Fricke &amp; Herbert Stubenrauch, s. 813-912. M&#x00FC;nchen</item>
+            <item>Schiller, Friedrich (1974b) <rs type="title" key="title1803">&#x201C;&#x00DC;ber den
+              Gebrauch des Chors in der Trag&#x00F6;die&#x201D;</rs> [1803] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 2, udg. af
+              Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch, s. 815-823.
+              M&#x00FC;nchen</item>
+            <item>Schiller, Friedrich (u.&#x00E5;.: 1806) <rs type="title" key="title1774">&#x201C;Om Chorets Brug i Tragoedien&#x201D;</rs> [1803], overs. af Nicolaj Esmark
+              &#x00D8;llgaard i <hi rend="italic">
+<rs key="title1773" type="title">Nytaarsgave for Skuespilyndere 1807</rs>,</hi> s. 30-50.
+              K&#x00F8;benhavn</item>
+            <item>Schlegel, Friedrich (1947) <hi rend="italic">
+<rs type="title" key="title1833">&#x00DC;ber das Studium der griechischen Poesie</rs>,</hi> overs. af
+              Paul Hankamer. Godesberg</item>
+            <item>Steffens, Henrich (1803) <hi rend="italic">
+<rs type="title" key="title117">Indledning til philosophiske Forel&#x00E6;sninger</rs>.</hi>
+              K&#x00F8;benhavn</item>
+            <item>Steffens, Henrich (1840-1844) <hi rend="italic">
+<rs type="title" key="title1832">Was ich erlebte. Aus der Erinnerung
+              niedergeschrieben</rs>
+</hi> 1-10. Breslau</item>
+            <item>Steffens, Henrich (1996) <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi> [1803], udg. af
+              Johnny Kondrup. K&#x00F8;benhavn</item>
+            <item>Toldberg, Helge (1946) <hi rend="italic">
+<rs type="title" key="title24">Grundtvig som
+              Filolog</rs>
+</hi> i <hi rend="italic">
+<rs key="title155" type="title">Dansk
+                teologisk tidsskrift</rs>.</hi> K&#x00F8;benhavn</item>
+          </list>
+      </div>
+      
+    </body>
+</text>
+</TEI>

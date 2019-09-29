@@ -1,0 +1,539 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<!--<?xml-model type="application/relax-ng-compact-syntax" href="txtRNC.rnc"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="main">S&#x00F8;rgekvad ved Prinds Kristians D&#x00F8;d</title>
+            <title rend="shortForm">S&#x00F8;rgekvad</title>
+            <author>Nicolai Frederik Severin Grundtvig</author>
+            <editor role="editionPhilologist">Holger Berg</editor>
+            <editor role="student">Maria Wiggers Pedersen</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.4</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>24 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+         </publicationStmt>
+        <!-- <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>[udgivelse dato]</idno>
+         </seriesStmt>-->
+         <notesStmt>
+            <note xml:id="thisFile" target="1810_140A_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note target="1810_140A_com.xml" type="com">Punktkommentar</note>
+            <note target="1810_140A_intro.xml" type="intro">Indledning</note>
+            <note target="1810_140A_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+            <note type="noVar" target="1810_140A_v0.xml">Variant</note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            <bibl>
+               <author>Nicolai Frederik Severin Grundtvig</author>
+               <title type="main">S&#x00F8;rgekvad ved Prinds Kristians D&#x00F8;d</title>
+               <pubPlace>K&#x00F8;benhavn</pubPlace>
+               <publisher>Andreas Seidelin</publisher>
+               <date>1810</date>
+            </bibl>
+            <listWit xml:id="emendation">
+               <witness xml:id="A" n="140A"><desc>F&#x00F8;rstetrykket</desc><num>1810</num></witness>
+               <witness xml:id="B" n="251">
+<desc>Anden udgave</desc><num>1815</num><!--. Grundtvig-Biblioteket (3.2, ex. 3)-->
+</witness>
+            </listWit>
+            <listWit xml:id="pageNumber">
+               <witness xml:id="PS">
+<desc>Poetiske Skrifter</desc><num>1</num></witness>
+            </listWit>
+         </sourceDesc>
+      </fileDesc>
+        <profileDesc>
+             <textClass>
+                  <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                       <term>lyrik</term>
+                       <term>digte</term>
+                       <term>lejlighedsdigte</term>
+                  </classCode>
+                  <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                       <term>dødsfald</term>
+                       <term>kongehuset</term>
+                       <term>nordisk</term>
+                  </keywords>
+             </textClass>
+        </profileDesc>
+        
+        <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+            <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+         <change xml:id="NHB" who="NHB" when="2012-07-10">indsat unicodes</change>
+         <change who="NHB" when="2012-08-02">udfyldt teiHeader, rettet tr&#x00E6;et til</change>
+         <change xml:id="MWP" who="MWP" when="2012-08-03">Foretaget 1. kollation af grundtekst, indsat sidetal. Eksemplar: Otto M&#x00F8;llers Samling</change>
+         <change who="NHB" when="2012-08-07">gennemset MWPs kommentarer</change>
+         <change who="NHB" when="2012-08-07">et bogstav rettet efter sammenligning med v1.xml</change>
+         <change who="MWP" when="2012-10-26">Kollationering af print af fotos af ex SDUB m04 Gr87</change>
+         <change who="NHB" when="2012-10-26">indf&#x00F8;jet MWPs rettelse ex SDUB m04 Gr87</change>
+         <change who="NHB" when="2013-01-11">opm&#x00E6;rket personer, steder og myter</change>
+         <change who="NHB" when="2013-01-29">valideret, indsat fax</change>
+         <change who="NHB" when="2013-04-28">rettet strofenumre</change>
+         <change when="2013-07-11" who="NHB">sidetal fra PS</change>
+         <change who="NHB" when="2013-08-09">Indsat unicode</change>
+         <change xml:id="JT" who="JT" when="2013-11-01">'Norrig' og 'Norrigs' var opm&#x00E6;rket som fak41; er &#x00E6;ndret til poet415</change>
+       
+         <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+       
+         <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+       
+         <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+         <change who="NHB" when="2014-02-24">Biografie til Biografi</change>
+       
+      <change who="NHB" when="2014-03-20">valideret</change>
+             <change who="NHB" when="2014-08-19">rettet listWit. Valideret</change>
+      <change who="NHB" when="2014-10-22">tilføjet rend til front</change>
+      <change who="NHB" when="2015-10-27">genremenu</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="txt">
+      
+      <pb type="periText" facs="1810_140A_fax001.jpg"/>
+      <pb type="periText" facs="1810_140A_fax002.jpg"/>
+      <front rend="&#x005B;Titelblad&#x005D;">
+         <titlePage type="first">
+            <pb type="text" facs="1810_140A_fax003.jpg" n="1" ed="A" rend="supp" />
+<pb type="edition" n="180" ed="PS" />
+            <docTitle>
+               <titlePart type="main">S&#x00F8;rgekvad</titlePart>
+               <titlePart type="main">ved</titlePart>
+               <titlePart type="main">
+<persName key="pe149">Prinds Kristians</persName> D&#x00F8;d </titlePart>
+            </docTitle>
+            <byline>af</byline>
+            <docAuthor> Nik. Fred. Sev. Grundtvig, <note type="prof">Kandidat i Theologien.</note>
+            </docAuthor>
+            <epigraph>
+               <lg>
+                  <l>
+<hi rend="size-1">Ei for Guld og ei for Herregunst</hi>
+</l>
+                  <l>
+<hi rend="size-1">R&#x00F8;rer <placeName key="fak24">Nordens</placeName> sanddru Skjald sin Tunge,</hi>
+</l>
+                  <l>
+<hi rend="size-1">H&#x00F8;ie <rs type="myth" key="myth106">Aser</rs> l&#x00E6;rte ham sin Konst,</hi>
+</l>
+                  <l>
+<hi rend="size-1">For om dem og <seg type="com" n="com43">deres &#x00C6;t</seg> at sjunge.</hi>
+</l>
+               </lg>
+            </epigraph>
+            <fw type="longLine" />
+            <docImprint>
+               <pubPlace>
+<placeName key="fak8">Ki&#x00F8;benhavn</placeName>,</pubPlace>
+               <date>1810.</date>
+               <publisher>Trykt hos <persName key="pe393">Andreas Seidelin</persName>
+</publisher>
+               <publisher>i <placeName key="fak408">store Kannikestr&#x00E6;de</placeName> No. 46.</publisher>
+            </docImprint>
+         </titlePage>
+      </front>
+      <body>
+         <div type="[Tilegnelse]">
+            <pb type="text" facs="1810_140A_fax004.jpg" n="2" ed="A" rend="supp" />
+<!-- kodning for tilegnelse -->
+            <lg>
+               <l rend="center">
+<pb type="text" facs="1810_140A_fax005.jpg" n="3" ed="A" rend="supp" />
+<hi rend="size3">
+<placeName key="his400">Augustenborgs</placeName> &#x00E6;dle Hertug</hi>
+</l>
+               <l rend="center">
+<hi rend="italic">
+<hi rend="size1">Videnskabs oph&#x00F8;iede Talsmand</hi>
+</hi>
+</l>
+               <l rend="center">Den faldne <seg type="com" n="com1">K&#x00E6;mpes</seg> Broder</l>
+               <l rend="center">
+<hi rend="size-1">
+<hi rend="italic">helliget</hi>
+</hi>
+</l>
+            </lg>
+         </div>
+         <div type="[Tilegnelsesdigt]">
+            <lg n="1">
+               <l>
+<hi rend="initial">
+<pb type="text" facs="1810_140A_fax006.jpg" n="4" ed="A" rend="supp" />K</hi>un sj&#x00E6;lden l&#x00F8;d min Sang om Nutids F&#x00E6;rd,</l>
+               <l>
+<seg type="comStart" n="com33" />Kun eengang den til Nutids Drot sig voved,</l>
+               <l>Da <placeName key="fak24">Nordens</placeName>
+                  <hi rend="italic">
+<persName key="pe96">Fredrik</persName>
+</hi> med Sit Kongesv&#x00E6;rd</l>
+               <l>Til <placeName key="fak24">Nordens</placeName> <seg type="com" n="com2">K&#x00E6;mpetid</seg> Sig fast troloved.<seg type="comEnd" n="com33" />
+</l>
+               <l>Hvad er det vel, som atter m&#x00E6;gtig driver</l>
+               <l>Fra Hedenold <seg type="com" n="com3">fremfarne</seg> Tiders Skjald?</l>
+               <l>Hvad er det vel, som atter Mod ham giver</l>
+               <l>En herlig Drot at g&#x00E6;ste i Sin <seg type="com" n="com4">Hald</seg>?</l>
+            </lg>
+            <lg n="2">
+               <l>
+<pb type="text" facs="1810_140A_fax007.jpg" n="5" ed="A" rend="supp" />I gamle <placeName key="fak24">Nord</placeName> en K&#x00E6;mpering han fandt</l>
+               <l>Og derfor er hans Hjem i gamle <placeName key="fak24">Norden</placeName>,</l>
+               <l>Men vel han veed, at ei med Oldtid svandt</l>
+               <l>De h&#x00F8;ie Guders prude &#x00C6;t af Jorden;</l>
+               <l>Han saae en Helt, og selv sig r&#x00F8;rte Tungen,</l>
+               <l>Thi Helten var en S&#x00F8;n af gamle <placeName key="fak24">Nord</placeName>,</l>
+               <l>
+<seg type="comStart" n="com34" />Paa <placeName key="fak14">Danmarks</placeName> Kongetr&#x00E6; han var udsprungen,<seg type="comEnd" n="com34" />
+</l>
+               <l>Og det har Rod i Oldtids <seg type="com" n="com5">K&#x00E6;mpejord</seg>.</l>
+            </lg>
+            <lg n="3">
+               <l>
+<pb type="text" facs="1810_140A_fax008.jpg" n="6" ed="A" rend="supp" />Til Dig, o Drot, t&#x00F8;r Skjalden <seg type="com" n="com6">gange</seg> n&#x00E6;r,</l>
+               <l>Thi st&#x00E6;rke Baand med Helten Dig forene:</l>
+               <l>Den haarde Malm ved <hi rend="italic">Konst</hi> maa vorde Sv&#x00E6;rd,</l>
+               <l>Og <rs type="myth" key="myth59">Odin</rs> var ei Krigens Gud allene;</l>
+               <l>
+<pb type="edition" n="181" ed="PS" />Adskillig yttre sig de spredte Gnister,</l>
+               <l>Men alle sprang af samme Guddomsild,</l>
+               <l>
+<seg type="comStart" n="com35" />Den samme Krands, som Dj&#x00E6;rvhed sig tilvrister,</l>
+               <l>Om L&#x00E6;rdoms Tinding vinder selv sig mild.<seg type="comEnd" n="com35" />
+</l>
+            </lg>
+            <lg n="4">
+               <l>
+<pb type="text" facs="1810_140A_fax009.jpg" n="7" ed="A" rend="supp" />Saa <seg type="com" n="com46">ganger</seg> tryg da Skjalden til Din Borg,</l>
+               <l>Men t&#x00F8;r han dristig <seg type="com" n="com36">og</seg> dens Stilhed bryde?</l>
+               <l>De lange Sale seer han kl&#x00E6;dt i Sorg</l>
+               <l>Og Taareb&#x00E6;kke sig fra Hjertet gyde.</l>
+               <l>T&#x00F8;r han vel sjunge om den faldne K&#x00E6;mpe?</l>
+               <l>T&#x00F8;r han fremkomme med sin svage Tr&#x00F8;st?</l>
+               <l>Kan Sangens Toner mildne vel og d&#x00E6;mpe</l>
+               <l>Den st&#x00E6;rke Storm i vaandefulde Bryst?</l>
+            </lg>
+            <lg n="5">
+               <l>
+<pb type="text" facs="1810_140A_fax010.jpg" n="8" ed="A" rend="supp" />Nei ikkun taus, o Drot, han n&#x00E6;rmer sig,</l>
+               <l>Utr&#x00F8;stet selv, han veed det vel, at Dig</l>
+               <l>Ei Ord kan tr&#x00F8;ste i Din dybe Smerte;</l>
+               <l>Men lagdes <seg type="com" n="com8">v&#x00E6;rdelig</seg> hans Mindesang</l>
+               <l>Om <placeName key="fak24">Nordens</placeName> Sorg og Heltens <seg type="com" n="com9">K&#x00E6;mpegang</seg>,</l>
+               <l>Da skal den t&#x00E6;kkes dog Dit Broderhjerte.</l>
+            </lg>
+            <p rend="firstIndentRight">underdanigst</p>
+            <p rend="firstIndentRight">
+<hi rend="italic">af</hi>
+</p>
+            <p rend="firstIndentRight">
+<hi rend="italic">Forfatteren</hi>.</p>
+            <fw type="longLine" />
+         </div>
+         <div type="[Biografi]">
+            <lg n="1">
+               <l>
+<pb type="text" facs="1810_140A_fax011.jpg" n="9" ed="A" />
+<hi rend="initial">M</hi>it &#x00D8;ie vandred mellem <placeName key="poet415">Norrigs</placeName> Fjelde</l>
+               <l>Og s&#x00F8;gte de forgangne Tiders Spor.</l>
+               <l>Jeg saae, og see! der stod i herlig V&#x00E6;lde</l>
+               <l>En Broder til de Ypperste i <placeName key="fak24">Nord</placeName>.</l>
+               <l>Med l&#x00F8;ftet Sv&#x00E6;rd jeg saae den Dj&#x00E6;rve staae,</l>
+               <l>Og Gl&#x00E6;dens Taarer randt paa mine Kinder;</l>
+               <l>Udfoldede de gamle Tider laae,</l>
+               <l>Og levende sig r&#x00F8;rte alle Minder.</l>
+            </lg>
+            <lg n="2">
+               <l>
+<pb type="text" facs="1810_140A_fax012.jpg" n="10" ed="A" />
+<seg type="comStart" n="com44" />Paa Kampens Dag han havde Staal i Bryst,</l>
+               <l>Men aldrig k&#x00F8;led det hans varme Hjerte,</l>
+               <l>Hans M&#x00E6;nd ham fulgte som til Leg og Lyst,</l>
+               <l>Og han dem ei forlod i deres Smerte;</l>
+               <l>
+<pb type="edition" n="182" ed="PS" />Thi han som stod i Vaabengny saa haard,</l>
+               <l>Medlidende ved <seg type="com" n="com10">Jammerleiet</seg> <seg type="com" n="com7">st&#x00E6;dtes</seg>,</l>
+               <l>Med Taarer svaled han de hede Saar</l>
+               <l>Og tappre Nordmand i sin Smerte gl&#x00E6;dtes.</l>
+            </lg>
+            <lg n="3">
+               <l>Dog, hvi vil jeg med svage R&#x00F8;st gentage</l>
+               <l>Hvad <placeName key="poet415">Norrigs</placeName> Fjelde skal til sidste Dage</l>
+               <l>Forkynde h&#x00F8;it igennem Sl&#x00E6;gters Rad?</l>
+               <l>Lad dem fort&#x00E6;lle det til alle Lande,</l>
+               <l>Hvordan de saae den bolde K&#x00E6;mpe stande</l>
+               <l>Naar Fjenden han <seg type="com" n="com11">tillaved</seg> r&#x00F8;de Bad!</l>
+               <l>
+<pb type="text" facs="1810_140A_fax013.jpg" n="11" ed="A" />Lad dem fort&#x00E6;lle, hvor den G&#x00E6;ve laa,</l>
+               <l>Naar Bolstret han ombyttede med Straa!</l>
+               <l>Lad dem gentage hvad hans M&#x00E6;nd dem b&#x00F8;d,</l>
+               <l>Naar glad med dem han delte Br&#x00F8;d og N&#x00F8;d!</l>
+               <l>Lad dem det sige, <seg type="com" n="com12">at</seg> det h&#x00F8;it kan runge!</l>
+               <l>Jeg veed det <seg type="com" n="com38">vist</seg>, dem fattes aldrig Tunge,</l>
+               <l>Saal&#x00E6;nge de i Favnen eie M&#x00E6;nd.<seg type="comEnd" n="com44" />
+</l>
+            </lg>
+            <lg n="4">
+               <l>De tale, h&#x00F8;r! sig h&#x00E6;ver st&#x00E6;rke Lyd</l>
+               <l>Og over <placeName key="fak14">Danmarks</placeName> Sletter h&#x00F8;it det gjalder;</l>
+               <l>Men ak den R&#x00F8;st forkynder ikke Fryd,</l>
+               <l>Thi <seg type="com" n="com25">hul</seg> den er som Skriget over <rs type="myth" key="myth6">Balder</rs>.</l>
+               <l>Hvad er det, ak! har atter <rs type="myth" key="myth48">Lokes</rs> Haand</l>
+               <l>Da &#x00D8;st for <rs type="myth" key="myth101">Valhal</rs> fundet lumske <seg type="com" n="com13">Vaand</seg>,</l>
+               <l>Og dermed atter viet ind til Baalet</l>
+               <l>Det st&#x00E6;rke Bryst, som kunde trodse Staalet.</l>
+            </lg>
+            <lg n="5">
+               <l>
+<pb type="text" facs="1810_140A_fax014.jpg" n="12" ed="A" />Ak nei, det er ei om de d&#x00F8;de Guder</l>
+               <l>Der m&#x00E6;les s&#x00F8;rgelig i st&#x00E6;rke D&#x00F8;n,</l>
+               <l>For <placeName key="fak24">Norden</placeName> det en st&#x00F8;rre Sorg bebuder,</l>
+               <l>Det taler om en falden <rs type="myth" key="myth5">Askurs</rs> S&#x00F8;n,</l>
+               <l>Men, ak! om En der var i unge Alder</l>
+               <l>Saa elsket som det gamle <placeName key="fak24">Nordens</placeName>
+                  <rs type="myth" key="myth6">Balder</rs>.</l>
+               <l>I Kongeborgen rinder selv en Taare;</l>
+               <l>
+<pb type="edition" n="183" ed="PS" />Thi <persName key="pe149">Kristjan</persName> ligger paa den sorte Baare:</l>
+               <l>Hans Broder gr&#x00E6;der, og det hele <placeName key="fak24">Nord</placeName>,</l>
+               <l>Hvor nordisk Aand i rene Tempel bo'r,</l>
+               <l>Forstummende, kun taler gennem Taarer.</l>
+            </lg>
+            <fw type="shortLine" />
+         </div>
+         <div type="[Sorg]">
+            <lg n="1">
+               <l>
+<pb type="text" facs="1810_140A_fax015.jpg" n="13" ed="A" />
+<hi rend="initial">S</hi>&#x00F8;rger, gr&#x00E6;der, M&#x00E6;nd i <placeName key="fak24">Nord</placeName>!</l>
+               <l>Skammer eder ei ved Taaren!</l>
+               <l>I har h&#x00F8;rt de tunge Ord:</l>
+               <l>
+<persName key="pe149">Kristjan</persName> ligger kold paa Baaren,</l>
+               <l>
+<seg type="comStart" n="com37" />Gr&#x00F8;nne Kvist i gamle Tr&#x00E6;</l>
+               <l>Podet blev til Frugt og L&#x00E6;,<seg type="comEnd" n="com37" />
+</l>
+               <l>Ak, men, den er nu henvisnet.</l>
+            </lg>
+            <lg n="2">
+               <l>Naar en Drot af <seg type="com" n="com14">K&#x00E6;mpe&#x00E6;t</seg>
+</l>
+               <l>Har <seg type="com" n="com15">sig r&#x00F8;rt</seg> i al sin V&#x00E6;lde,</l>
+               <l>Og i H&#x00F8;i nedsynker tr&#x00E6;t</l>
+               <l>Af Bedrifter og af &#x00C6;lde;</l>
+               <l>Gl&#x00E6;delig er Skjaldens Id;</l>
+               <l>Thi som den fuldendte Tid</l>
+               <l>Han sin Helt <seg type="com" n="com16">forklaret</seg> skuer.</l>
+            </lg>
+            <lg n="3">
+               <l>
+<pb type="text" facs="1810_140A_fax016.jpg" n="14" ed="A" />Men ak! naar kun Skjalden saae,</l>
+               <l>Mat belyst af Kraftens Stjerne,</l>
+               <l>Hans Bedrifter hvor de laa</l>
+               <l>Dulgt i Fremtids m&#x00F8;rke Fjerne;</l>
+               <l>Da er s&#x00F8;rgeligt hans Kald,</l>
+               <l>Naar han ved sin K&#x00E6;mpes Fald</l>
+               <l>Vemodsfuld maa Str&#x00E6;ngen r&#x00F8;re.</l>
+            </lg>
+            <lg n="4">
+               <l>End det ei var Himlens <seg type="com" n="com17">Raad</seg>
+</l>
+               <l>At opv&#x00E6;kke det som sover,</l>
+               <l>Derfor ei <seg type="com" n="com18">uvordne</seg> Daad</l>
+               <l>Han til Lys at drage vover;</l>
+               <l>
+<pb type="edition" n="184" ed="PS" />Smerte er kun Harpens Klang,</l>
+               <l>Og et Suk hans Mindesang,</l>
+               <l>Hvem t&#x00F8;r tr&#x00E6;ttes med den H&#x00F8;ie!</l>
+            </lg>
+            <lg n="5">
+               <l>
+<pb type="text" facs="1810_140A_fax017.jpg" n="15" ed="A" />
+<placeName key="fak97">Upsals</placeName> grumme Gudeh&#x00E6;r!</l>
+               <l>Over dig maa Skjalden klage,</l>
+               <l>Dine Goders Offersv&#x00E6;rd</l>
+               <l>Styred du i gamle Dage</l>
+               <l>
+<seg type="com" n="com20">Avindsyg</seg> mod <rs type="myth" key="myth495">Domalds</rs> Bryst,</l>
+               <l>Og paa Altret du med Lyst</l>
+               <l>Altid skued Drotteblodet.</l>
+            </lg>
+            <lg n="6">
+               <l>Ingen Kongesl&#x00E6;gt saa god</l>
+               <l>Siddet har paa <placeName key="fak97">Upsals</placeName> Trone,</l>
+               <l>
+<seg type="com" n="com45">Den jo</seg> maatte dig med Blod</l>
+               <l>Af sin Ypperste forsone;</l>
+               <l>
+<seg type="com" n="com22">Yngve, Folke, Bonde, Skjold,</seg>
+</l>
+               <l>Eie hver en <seg type="com" n="com23">&#x00C6;tmand</seg> bold</l>
+               <l>Som du dig til Offer kaared.</l>
+            </lg>
+            <lg n="7">
+               <l>
+<pb type="text" facs="1810_140A_fax018.jpg" n="16" ed="A" />Atter l&#x00F8;d dit onde Bud,</l>
+               <l>Thi hos dig er ingen Naade,</l>
+               <l>Du nedslaar hver Helt saa prud,</l>
+               <l>Ene vil du Landet raade.</l>
+               <l>S&#x00F8;rgende ved Lig vi staa,</l>
+               <l>Men <seg type="com" n="com24">for vist</seg> t&#x00F8;r Skjalden spaa:</l>
+               <l>Dette Offer var det sidste.</l>
+            </lg>
+            <lg n="8">
+               <l>
+<placeName key="poet415">Norrig</placeName>, du som Helten knuged</l>
+               <l>I din K&#x00E6;mpefavn med Lyst,</l>
+               <l>Du hvis Jord hans Taarer suged,</l>
+               <l>
+<seg type="com" n="com39">Da han sled sig fra dit Bryst</seg>,</l>
+               <l>
+<seg type="com" n="com25">Hult</seg> <seg type="com" n="com26">din Elveharpe</seg> bruser,</l>
+               <l>Over Fjeldet Stormen suser,</l>
+               <l>Og forkynder h&#x00F8;it din Sorg.</l>
+            </lg>
+            <lg n="9">
+               <l>
+<pb type="text" facs="1810_140A_fax019.jpg" n="17" ed="A" />
+<pb type="edition" n="185" ed="PS" />S&#x00F8;mmelig er dybe Smerte</l>
+               <l>I den D&#x00F8;des eget Hjem,</l>
+               <l>Og han bygged i dit Hjerte,</l>
+               <l>Vel maa Taarer v&#x00E6;lde frem;</l>
+               <l>Men ifald du Skjaldens Stemme</l>
+               <l>I din Vaande kan fornemme,</l>
+               <l>Skal den lindre vist din Kval.</l>
+            </lg>
+            <lg n="10">
+               <l>Nu <rs type="myth" key="myth117">Valkyrien</rs> dig gav</l>
+               <l>Hvad dig <rs type="myth" key="myth112">Nornen</rs> b&#x00F8;d forsage,</l>
+               <l>Da han sank i m&#x00F8;rke Grav,</l>
+               <l>Sank han i din Favn tilbage.</l>
+               <l>Evig han tilh&#x00F8;rer dig,</l>
+               <l>
+<placeName key="fak92">Sverrig</placeName> har hans Blod og Lig,</l>
+               <l>Du hans Daad og milde Taarer.</l>
+            </lg>
+            <fw type="shortLine" />
+         </div>
+         <div type="[Til den afd&#x00F8;de]">
+            <lg n="1">
+               <l>
+<pb type="text" facs="1810_140A_fax020.jpg" n="18" ed="A" />
+<hi rend="initial">M</hi>en <persName key="pe149">Kristjan</persName>! ak, er dette kolde Lig,</l>
+               <l>Som ligger der saa farvel&#x00F8;st og stille,</l>
+               <l>Er det den bolde K&#x00E6;mpe, er det Dig?</l>
+               <l>Hvad kunde saa Dig selv fra Dig adskille?</l>
+               <l>Ak det var <rs type="myth" key="myth33">Hel</rs>, som med <seg type="com" n="com27">sin Aandes Gift</seg>
+</l>
+               <l>Bortpustede den lyse Livets Farve,</l>
+               <l>I Dig hun kvalte mangen stor Bedrift,</l>
+               <l>
+<seg type="com" n="com28">Og kvalte K&#x00E6;mpe mener hun at arve.</seg>
+</l>
+            </lg>
+            <lg n="2">
+               <l>Dog nei, du Herlige, thi ikke Dig</l>
+               <l>Det var, som blev til dette kolde Lig;</l>
+               <l>De onde Magter kunde Blodet svale,</l>
+               <l>Og drage Dig fra Livets lyse Tind</l>
+               <l>
+<pb type="text" facs="1810_140A_fax021.jpg" n="19" ed="A" />Til Porten ned for <rs type="myth" key="myth91">Helas m&#x00F8;rke Sale</rs>,</l>
+               <l>Men aldrig gik Du gennem Porten ind.</l>
+               <l>Du kasted fluks hvad ei Dig kunde f&#x00F8;lge,</l>
+               <l>Og gik til <rs type="myth" key="myth101">Valhal</rs> gennem Broderfavn,</l>
+               <l>
+<pb type="edition" n="186" ed="PS" />Og naar Du skuer over Tidens B&#x00F8;lge,</l>
+               <l>Da seer Du skinnende <seg type="com" n="com42">Dit h&#x00F8;ie Navn</seg>.</l>
+            </lg>
+            <lg n="3">
+               <l>
+<seg type="com" n="com29">For gamle <persName key="pe456">Kristjans</persName> Br&#x00F8;de at forsone</seg>
+</l>
+               <l>
+<seg type="com" n="com30">Forsaged Du en f&#x00F8;ie Stund dit Navn,</seg>
+</l>
+               <l>Dit Fr&#x00E6;ndenavn, <seg type="com" n="com31">omhvalvt</seg> af <placeName key="fak24">Nordens</placeName> Krone,</l>
+               <l>Og dybt Du f&#x00F8;lte underlige Savn.</l>
+               <l>Forundrede vi stod og Ingen kunde</l>
+               <l>
+<seg type="com" n="com40">Den h&#x00F8;ie Nornes</seg> skjulte Raad udgrunde,</l>
+               <l>Nu klart det blev, <seg type="com" n="com40">den vise Askens M&#x00F8;</seg>
+</l>
+               <l>Hun vilde ei at <persName key="pe149">Kristjan</persName> skulde d&#x00F8;,</l>
+               <l>
+<pb type="text" facs="1810_140A_fax022.jpg" n="20" ed="A" />Da <placeName key="fak92">Sverrigs</placeName>
+                  <persName key="pe149">Karl</persName> nedsank i m&#x00F8;rke Grav,</l>
+               <l>Dit H&#x00E6;dersnavn hun atter mild Dig gav,</l>
+               <l>Og at Enhver maa tro mit Ord er sandt,</l>
+               <l>Du sank for dem, som Kristjan overvandt.<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com32">Man erindre Optrinet ved <placeName key="fak401">Blakier</placeName> og <hi rend="italic">hvor</hi> Helten udaandede.</seg>
+</p>
+</note>
+               </l>
+            </lg>
+            <fw type="shortLine" />
+         </div>
+      </body>
+      <pb type="periText" facs="1810_140A_fax023.jpg"/>
+      <pb type="periText" facs="1810_140A_fax024.jpg"/>
+   
+</text>
+</TEI>

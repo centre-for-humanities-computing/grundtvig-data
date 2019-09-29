@@ -1,0 +1,977 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txrXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txrRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Danske K&#x00E6;mpeviser til Skole-Brug udvalgte og till&#x00E6;mpede af Nik. Fred. Sev. Grundtvig</title>
+        <title rend="shortForm">Danske K&#x00E6;mpeviser</title>
+        <author>Vibeke A. Pedersen</author>
+        <editor role="editor2">Klaus Nielsen</editor>
+           <editor role="editor1">Else Riisager</editor>
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.7</idno>
+          <idno type="technic">1.7.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>25 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Aarhus Universitet, Det Teologiske Fakultet</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.7, 1. oktober 2015</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note target="1847_896A_txt.xml" type="txt">L&#x00E6;setekst</note>
+        <note xml:id="thisFile" target="1847_896A_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+      </notesStmt>
+      <!--   
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+         -->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+       <revisionDesc>
+         <change who="VAP" when="2013-05-16">oprettet filen og arbejdet s&#x00E5; langt som muligt. Manuskripter mgl. og kollationsformel mgl.</change>
+         <change who="VAP" when="2013-05-21">Manuskripter fundet via registrant (s&#x00E6;rskilt word-fil) mgl. og kollationsformel mgl.</change>
+         <change who="VAP" when="2013-05-24">Kollationsformel og signaturformel fors&#x00F8;gt konstrueret</change>
+         <change who="VAP" when="2013-05-27">egne rettelser og tilf&#x00F8;jelser</change>
+         <change who="VAP" when="2013-05-28">egne rettelser og tilf&#x00F8;jelser, fortsat</change>
+         <change who="VAP" when="2013-07-19">skema med udkast; sm&#x00E5;rettelser</change>
+         <change who="VAP" when="2013-08-06">sm&#x00E5;rettelser i head</change>
+         <change who="VAP" when="2013-08-13">dobbelt s&#x00E5; mange manuskripter p&#x00E5;f&#x00F8;rt i skema</change>
+         <change who="VAP" when="2013-08-15">sm&#x00E5;rettelser efter korrektur</change>
+         <change who="VAP" when="2013-08-16">kontrol af rettelser efter korrektur</change>
+         <change who="VAP" when="2013-08-26">inds&#x00E6;ttelse af afsnit om indryk</change>
+         <change who="VAP" when="2013-09-02">inds&#x00E6;ttelse weblinks til registranten</change>
+         <change who="VAP" when="2013-09-05">rettelser efter Elses korrektur, herunder oprettelse af et overfl&#x00F8;digt tomt div-element til utrykt materiale</change>
+         <change who="VAP" when="2013-09-06">kontrol af rettelser efter Elses korrektur</change>
+         <change who="VAP" when="2013-09-10">tilf&#x00F8;jelse af oplagsst&#x00F8;relse</change>
+         <change who="VAP" when="2013-09-11">f&#x00F8;rste rettelser efter KN</change>
+         <change who="VAP" when="2013-09-12">n&#x00E6;stste rettelser efter KN</change>
+         <change who="VAP" when="2013-10-01">samlet celler igen, da det gav fejl i forb. med oplastningen</change>
+          <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+          <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+         <change who="VAP" when="2018-11-12">tilføjet Digte</change>
+        </revisionDesc>
+  </teiHeader>
+  <text type="txr">
+    <body>
+      
+      <div>
+        <head xml:id="docIn1">Oversigt over manuskripter og tryk</head>
+        
+        <div>
+          <head xml:id="docIn2">Manuskripter</head>
+          <p rend="noIndent">Der eksisterer manuskripter til de fleste af de 72 folkeviser i <hi rend="italic">Danske K&#x00E6;mpeviser</hi> i Grundtvig-arkivet p&#x00E5; Det Kongelige Bibliotek.
+            </p>
+          <p rend="noIndent">Til nedenst&#x00E5;ende viser findes manuskripter:</p>
+         <table rend="msDesc">
+           <row>
+<cell>Signatur</cell>
+<cell>Type</cell>
+<cell>Indhold</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1692" type="web">Fasc. 404.1</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dannevirke</cell>
+</row>
+           <row>
+<cell> <ref target="http://pubpub.com/g-r/showcard.asp?id=1693" type="web">Fasc. 404.2</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kragemaal</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1694" type="web">Fasc. 404.3</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Hellig-Knud</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1695" type="web">Fasc. 404.4</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Sorte-Plog</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1696" type="web">Fasc. 404.5</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hr Tidemand</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1697" type="web">Fasc. 404.6</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dronning Dagmars Hjemf&#x00F8;relse</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1698" type="web">Fasc. 404.7</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dronning Dagmars Morgengave</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1699" type="web">Fasc. 404.8</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dronning Dagmars D&#x00F8;d</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1700" type="web">Fasc. 404.9</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dronning Bengerd</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1701" type="web">Fasc. 404.10</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Valdemar Seier</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1702" type="web">Fasc. 404.11</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Valdemar den Unge</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1703" type="web">Fasc. 404.12</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Sverkes Tog</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1704" type="web">Fasc. 404.13</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Erik Glippings D&#x00F8;d</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1705" type="web">Fasc. 404.14</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Marsk Stig</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1706" type="web">Fasc. 404.15</ref>
+</cell>
+<cell>overstreget udkast</cell>
+<cell>Marsk Stigs D&#x00F8;ttre</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1707" type="web">Fasc. 404.16</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Den Danske Prindsesse i Sverrig</cell>
+</row>           
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1708" type="web">Fasc. 404.17</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Den Svenske Prindsesse i Danmark</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1709" type="web">Fasc. 404.18</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Marsk Stigs D&#x00F8;ttre</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1710" type="web">Fasc. 404.19</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Niels Ebbesen</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1711" type="web">Fasc. 404.20</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Iver Lykke</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1712" type="web">Fasc. 404.21</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Kristoffer af Baiern</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1713" type="web">Fasc. 404.22</ref>
+</cell>
+<cell>overstreget udkast</cell>
+<cell>Kong Hanses Giftermaal [se fasc. 404.24]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1714" type="web">Fasc. 404.23</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Iver Axels&#x00F8;n Thott</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1715" type="web">Fasc. 404.24</ref>
+</cell>
+<cell>udkast</cell>
+<cell>[slutningen af] Kong Hanses Giftermaal [se fasc. 404.22]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1716" type="web">Fasc. 404.25</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kong Christian den Anden</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1717" type="web">Fasc. 404.26</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Holger Danske og St&#x00E6;rk Diderik</cell>
+</row>         
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1718" type="web">Fasc. 404.27</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hertugen og Dannekvinden</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1719" type="web">Fasc. 404.28</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Havfruen og Danedronningen</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1720" type="web">Fasc. 404.29</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Rosmer Havmand og Svanlille</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1721" type="web">Fasc. 404.30</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hr. T&#x00F8;nne fra Als</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1722" type="web">Fasc. 404.31</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Ungen Svegder</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1723" type="web">Fasc. 404.32</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Dannevid og Svenn Tr&#x00F8;st</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1724" type="web">Fasc. 404.33</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Orm Ungersvend</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1725" type="web">Fasc. 404.34</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Vidrik Velands&#x00F8;n</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1726" type="web">Fasc. 404.35</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Sivard Snarensvend</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1727" type="web">Fasc. 404.36</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Svenn Felding og den Tydske Dronning</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1728" type="web">Fasc. 404.37</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Svenn Feldings Pillegrimsf&#x00E6;rd</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1729" type="web">Fasc. 404.38</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Thors-Hammeren</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1731" type="web">Fasc. 404.40</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Agnete og Havmanden</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1732" type="web">Fasc. 404.41</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Bonden i Vildenskov</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1733" type="web">Fasc. 404.42</ref>
+</cell>
+<cell>fragment</cell>
+<cell>Dalby-Bj&#x00F8;rnen</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1734" type="web">Fasc. 404.43</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Runegaard</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1735" type="web">Fasc. 404.44</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hevner-Sv&#x00E6;rdet</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1736" type="web">Fasc. 404.45</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Linden</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1737" type="web">Fasc. 404.46</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Guldharpen</cell>
+</row>          
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1739" type="web">Fasc. 404.48</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hellig-Olav og Troldene [se fasc. 404.78]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1740&#xA;             " type="web">Fasc. 404.49</ref>
+</cell>
+<cell>udkast</cell>
+<cell>&#x00C6;lve-H&#x00F8;i</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1741" type="web">Fasc. 404.50</ref>
+</cell>
+<cell>udkast</cell>
+<cell>&#x00C6;lvehjem</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1742" type="web">Fasc. 404.51</ref>
+</cell>
+<cell>udkast</cell>
+<cell>&#x00C6;lveskud</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1743" type="web">Fasc. 404.52</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Gienf&#x00E6;rdet</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1744" type="web">Fasc. 404.53</ref>
+</cell>
+<cell>overstreget fragment</cell>
+<cell>[en strofe af] Ridder Aage [se fasc. 404.54] </cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1745" type="web">Fasc. 404.54</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Ridder Aage  [se fasc. 404.53]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1746" type="web">Fasc. 404.55</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Brodermordet</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1747" type="web">Fasc. 404.56</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Systermordet</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1748" type="web">Fasc. 404.57</ref>
+</cell>
+<cell>udkast</cell>
+<cell>[slutningen af Axel og Valborg]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1749" type="web">Fasc. 404.58</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Ebbe Skammels&#x00F8;n</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1750" type="web">Fasc. 404.59</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Hjemkomsten fra det hellige Land [se fasc. 404.61]</cell>
+</row>          
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1752" type="web">Fasc. 404.61</ref>
+</cell>
+<cell>fragment</cell>
+<cell>[slutstrofer til Hjemkomsten fra det hellige Land; se fasc. 404.59] </cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1753" type="web">Fasc. 404.62</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kragelille</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1754" type="web">Fasc. 404.63</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Ski&#x00E6;rsilden</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1755" type="web">Fasc. 404.64</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kirstenlille fra Fyen</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1756" type="web">Fasc. 404.65</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Lykkespil</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1757" type="web">Fasc. 404.66</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Svar som Tiltale</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1758" type="web">Fasc. 404.67</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Tovelille</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1759" type="web">Fasc. 404.68</ref>
+</cell>
+<cell>fragment</cell>
+<cell> [1 strofe af ] Vildskytterne [se fasc. 404.73]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1760" type="web">Fasc. 404.69</ref>
+</cell>
+<cell>udkast</cell>
+<cell>[Broder og Syster, se fasc. 404.74]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1761" type="web">Fasc. 404.70</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Den lille Syerske</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1762" type="web">Fasc. 404.71</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Kvindelist</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1763" type="web">Fasc. 404.72</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Den &#x00F8;mskindede Brudgom </cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1764" type="web">Fasc. 404.73</ref>
+</cell>
+<cell>udkast</cell>
+<cell>[Vildskytterne, se fasc. 404.68]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1765" type="web">Fasc. 404.74</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Broder og Syster [de f&#x00F8;rste 6 strofer; se fasc. 404.69]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1766" type="web">Fasc. 404.75</ref>
+</cell>
+<cell>fragment</cell>
+<cell>Liden Karen  [se fasc. 404.76]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1767" type="web">Fasc. 404.76</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Liden Karen [se fasc. 404.75]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1768" type="web">Fasc. 404.77</ref>
+</cell>
+<cell>udkast</cell>
+<cell>[Alfabetisk indholdsregister]</cell>
+</row>
+           <row>
+<cell>
+<ref target="http://pubpub.com/g-r/showcard.asp?id=1769" type="web">Fasc. 404.78</ref>
+</cell>
+<cell>udkast</cell>
+<cell>Oluf Konning og Broder hans [se fasc. 404.48]</cell>
+</row>
+           
+         </table>
+          <p rend="noIndent">Alle viser er uden strofenummerering. Der er som i det f&#x00E6;rdige tryk
+            intet system for, om omkv&#x00E6;d gentages ved hver strofe eller udelukkende ved f&#x00F8;rste og
+            sidste strofe.</p>
+          <p rend="noIndent">En gennemgang af manuskripterne i fasc. 404 afsl&#x00F8;rer, at Grundtvig
+            havde et par viser mere i st&#x00F8;beskeen, som ikke kom med i udgaven. Derfor er der enkelte
+            huller i r&#x00E6;kken af signaturnumre ovenfor.</p>
+        </div>
+        
+        <div>
+          
+          <head xml:id="docIn3">F&#x00F8;rstetrykket</head>
+        
+            <p rend="noIndent">Nummer i <hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi>: 896A.</p>
+          
+          <p rend="noIndent">
+<hi rend="italic">Danske K&#x00E6;mpeviser til Skole-Brug</hi> udkom omkring
+              den 16. oktober 1847 i K&#x00F8;benhavn p&#x00E5; C.A. Reitzels forlag og blev trykt p&#x00E5; Bianco
+              Lunos Bogtrykkeri. </p>
+                   
+          <p rend="noIndent">Prisen var 1 mark og 16 skilling for et uindbundet eller kartonneret
+              eksemplar.</p>
+          
+          <p rend="noIndent">Oplaget var p&#x00E5; 1525 eksemplarer.</p>          
+          <div>       
+       </div>
+        </div>
+        
+        <div>
+          <head xml:id="docIn32">Tidligere tryk</head>
+          <p rend="noIndent">Grundtvig havde trykt et par af visebearbejdelserne tidligere (se i
+            &#x00F8;vrigt <hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi> 2, s. 313-319). Det drejer sig om:</p>
+          <table rend="printDesc">
+            <row>
+<cell>Vise</cell>
+<cell>Publikation</cell>
+<cell>&#x00C5;r</cell>
+<cell>SJ</cell>
+</row>
+            <row>
+              <cell>
+<rs type="title" key="title2740">&#x201C;Havfruen og
+                Danedronningen&#x201D;</rs>
+</cell>
+<cell>
+<hi rend="italic">
+<rs key="title270" type="title">Danne-Virke</rs>
+</hi> 1, s. 209-213</cell>
+<cell>1816</cell>
+<cell>297</cell>
+            </row>
+            <row>
+              <cell></cell>
+<cell>
+                <hi rend="italic">
+<rs key="title880" type="title">Viser og Sange for Danske
+                    Samfund</rs>
+</hi> 1, s. 57-60</cell>
+<cell>1840</cell>
+<cell>297</cell>
+            </row>
+            <row>
+              <cell>
+<rs key="title948" type="title">&#x201C;Dannevirke&#x201D;</rs> dog med titlen
+                Thyre Dannebods Vise</cell>
+<cell>
+<hi rend="italic">
+<rs key="title271" type="title">Danne-Virke</rs>
+</hi> 2, s. 1-6</cell>
+<cell>1816-1817</cell>
+<cell>306</cell>
+            </row>
+            <row>
+              <cell></cell>
+<cell>
+<hi rend="italic">
+<rs type="title" key="title880">Viser og Sange for Danske Samfund</rs>
+</hi>
+                1, s. 1-5</cell>
+<cell>1840</cell>
+<cell>655</cell> 
+            </row>
+            
+            <row>
+              <cell>
+<rs type="title" key="title2736">&#x201C;Kong Olaf&#x201D;</rs>
+</cell>
+<cell>
+<hi rend="italic">
+<rs key="title880" type="title">Viser og Sange for Danske Samfund</rs>
+</hi>
+                h&#x00E6;fte 2, s. 37-42</cell>
+<cell>1840</cell>
+<cell>691</cell>
+            </row>
+          </table>
+          
+        </div>
+        <div> <head xml:id="docIn33">Senere udgaver</head>
+          <p rend="noIndent">
+<hi rend="italic">Danske K&#x00E6;mpeviser</hi> blev ikke genoptrykt i sin
+            helhed i Grundtvigs levetid, men udkom i 2. oplag i 1875 p&#x00E5; <persName key="pe313">Karl
+              Sch&#x00F8;nbergs</persName> forlag. Denne udgave, som b&#x00E6;rer nr. 896B i <hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi>, er i lille oktav og p&#x00E5; 16 + 303
+            sider. Den er sat med antikva og har gennemf&#x00F8;rt moderne, 'skandinavistisk' retskrivning
+            og tegns&#x00E6;tning (dvs. bolle-&#x00E5; og substantiver med lille begyndelsesbogstav). Steen
+            Johansen formoder, at det er s&#x00F8;nnen, Svend Grundtvig, der har bes&#x00F8;rget 2. oplag (<hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi> 2, s. 319).</p>
+          <p rend="noIndent">Grundtvig lod enkelte af viserne optrykke senere med sm&#x00E5;
+            &#x00E6;ndringer (se også <hi rend="italic"><rs key="title35" type="title"
+                >Bibliografien</rs>
+            </hi> 2, s. 313-319) . Det drejer sig om:</p>
+          <list type="simple">
+            <item><rs key="title2737" type="title">&#x201C;Holger Danske og St&#x00E6;rk
+                Diderik&#x201D;</rs> i <hi rend="italic">
+                <rs key="title325" type="title">Danskeren</rs>
+              </hi> 2 1849, s. 446-448</item>
+            <item>&#x201C;D. Danske Ungdom&#x201D; i <hi rend="italic">Digte</hi> 1869, nr. 46</item>
+          </list>
+          
+          <p rend="noIndent">Endelig optr&#x00E6;der mange af viserne i senere antologier. Her skal is&#x00E6;r
+            fremh&#x00E6;ves <persName key="pe83">Carl Joachim Brandts</persName>
+            <hi rend="italic">
+<rs key="title61" type="title">Rim og Sange til F&#x00E6;drelandets
+                Historie</rs>
+</hi> (1848-1849), der forkorter, <persName key="pe283">Kristian
+              K&#x00F8;sters</persName>
+            <hi rend="italic">
+<rs type="title" key="title2290">Et Hundrede Danske Sange</rs>
+</hi>
+            (1865). Ogs&#x00E5; andre viseb&#x00F8;ger bragte viser fra Grundtvigs udvalg, bl. a. <persName key="pe364">P.O. Boisens</persName> popul&#x00E6;re visebog, <hi rend="italic">
+<rs key="title2291" type="title">Nye og gamle Viser af og for Danske Folk</rs>,</hi> der
+            kom i hele ni oplag i &#x00E5;rene 1849-1870. For en fuldst&#x00E6;ndig oversigt henvises til <hi rend="italic">
+<rs key="title35" type="title">Bibliografien</rs>
+</hi> 2, s.
+            313-319.</p>          
+        </div>
+      </div>
+      
+      <div>
+        <head xml:id="docIn86">Bibliografisk beskrivelse</head>
+        <div>
+          <head xml:id="docIn88">De anvendte eksemplarer</head>
+          <p rend="noIndent">Ved intern kollation af  de tre eksemplarer af f&#x00F8;rstetrykket er der
+            ikke fundet intern varians. </p>
+          <list type="ordered">
+            <item>Grundtvig-Bibliotekets eksemplar, hovedsamlingen (katalognummer 3.5, eksemplar 1).
+              P&#x00E5; indersiden af forpermen findes Ejnar Skovrups exlibris med en illustration af en
+              opg&#x00E5;ende sol og ordene &#x201C;EJNAR : SKOVRUP / Forkynd, at af Skolen / Der gj&#x00F8;res nu
+              brat / Det v&#x00E6;rksted for Solen, / Du skimtet i Nat &#x2013; / 1946&#x201D;.
+              Forsatsbladet er ikke limet fast til permen. P&#x00E5; versosiden af forsatsens blad er der
+              &#x00F8;verst skrevet med sort bl&#x00E6;k &#x201C;E Iuell Wind. &#x2013;&#x201D;. &#x00D8;verst p&#x00E5;
+              titelbladet er der med sort bl&#x00E6;k skrevet: &#x201C;V. Andresen. Sognepr&#x00E6;st&#x201D;.
+              Indbindingen er i marmoreret, halvblankt papir i farverne m&#x00F8;rkebrun, r&#x00F8;dbrun, bl&#x00E5;
+              nuancer og off white.</item>
+            <item>Det Kongelige Biblioteks eksemplar (stregkode 130014630903). &#x00D8;verst p&#x00E5; bagsiden af
+              forpermen er der inkl&#x00E6;bet en label med p&#x00E5;trykt &#x201C;UNIV.-BIBL. Afd. 1&#x201D; og
+              &#x201C;N, 500 - 8<hi rend="raised">o</hi> / 1847&#x201D; skrevet med bl&#x00E5;t
+              kuglepennebl&#x00E6;k. Titelbladet er p&#x00E5;stemplet &#x201C;B.U.H.&#x201D; , mens rectosiden af
+              titelbladet er p&#x00E5;stemplet &#x201C;BIBLIOTHECA / REGIA / HAFNIENSIS&#x201D;.
+              Indbindingen er i marmoreret, halvblankt papir i farverne brun, m&#x00F8;rkebl&#x00E5; nuancer og
+              sort.</item>
+            <item>Eksemplar tilh&#x00F8;rende lektor Niels Werner Frederiksen, Institut for Nordiske
+              Studier og Sprogvidenskab, K&#x00F8;benhavn. Dette eksemplar har brun l&#x00E6;derryg med titel og
+              forfatter pr&#x00E6;get med guldbogstaver. Der er rester af brune l&#x00E6;rredshj&#x00F8;rner. Ellers er
+              indbindingen i bl&#x00E5;-, brunt- og beigemarmoreret papir, der formentlig har v&#x00E6;ret
+              halvblankt.</item>
+          </list>
+          <p rend="noIndent">Grundtvig-Bibliotekets eksemplar (eksemplar 1) er valgt som
+            tekstgrundlag og har afgivet faksimile til udgaven. De f&#x00F8;lgende bibliografiske
+            beskrivelse tager udgangspunkt i eksemplar 1.</p>
+        </div>
+        <div>
+          <head xml:id="docIn87">Formler</head>
+          
+          <p rend="firstIndent">Format: 8<hi rend="raised">o</hi>. Eksemplaret er besk&#x00E5;ret og m&#x00E5;ler
+            ca. 126 x 222 mm. Det er ikke lykkedes at finde et ubesk&#x00E5;ret eksemplar. </p>
+          
+          <p rend="firstIndent">Kollationsformel: &#x03A0;<hi rend="raised">1</hi>  2 &#x03A0;<hi rend="raised">4</hi>  3&#x03A0;<hi rend="raised">1</hi> 1-15<hi rend="raised">8</hi>
+              16<hi rend="raised">7</hi> = 137 bl.</p>
+          
+          <p rend="firstIndent">Signaturformel: <!--&#x03A0;<hi rend="raised">5</hi> 1-15<hi
+              rend="raised">8</hi>  16<hi rend="raised">8</hi> (-16<hi rend="lowered">7</hi>) [-->$2 signeret<!--]-->.</p>
+          
+          <p rend="firstIndent">Pagineringsformel: 133 blade, pagineret [2], <hi rend="italic">I-III,</hi> IV-VI, <hi rend="italic">VII,</hi> VIII-X, <hi rend="italic">1,</hi>
+              2-252,<hi rend="italic"> 253-54</hi> [= XII, 254].</p>
+          
+          <p rend="noIndent">Bogens format er oktav. Den best&#x00E5;r af et pr&#x00E6;limin&#x00E6;rt blankt blad, et
+            halvark foldet til fire blade og et sidste pr&#x00E6;limin&#x00E6;rt blad. Derp&#x00E5; f&#x00F8;lger 16 signerede
+            l&#x00E6;g &#x00E0; otte blade, hvoraf det sidste l&#x00E6;g dog mangler blad nummer otte. Alle signerede l&#x00E6;g
+            b&#x00E6;rer signatur p&#x00E5; de to f&#x00F8;rste blade.</p>
+          <p rend="noIndent">Siderne I-III, VII, 1 og 253-254 er stumt paginerede. </p>
+          <p rend="noIndent">Titelblad, tilegnelsesdigt til &#x201C;Den danske Ungdom", forordet og
+            den kronologiske indholdsfortegnelse er pagineret med romertal, resten af v&#x00E6;rket er
+            pagineret med arabertal. F&#x00F8;rste ark (og dermed l&#x00E6;g) er usigneret. Der er arksignatur
+            (primasignatur) p&#x00E5; s. <hi rend="italic">1</hi>, 17, 33, 49, 65, 81, 97, 113, 129, 145,
+            161, 177, 193, 209, 225 og 241. Der er sekundasignatur p&#x00E5; s. 3, 19, 35, 51, 67, 83, 99,
+            115, 131, 147, 163, 179, 195, 221, 227, 243. Primasignaturen er angivet med ordet
+            &#x201C;Kj&#x00E6;mpeviser&#x201D; og arabertal; sekundasignaturen kun med arabertal efterfulgt
+            af asterisk.</p>
+          
+          <p rend="noIndent">Da st&#x00F8;rstedelen af indholdet st&#x00E5;r som vers, varierer br&#x00F8;dtekstens
+            klummebredde fra ca. 25 til 76 mm. Klummeh&#x00F8;jden er ogs&#x00E5; varierende, men ofte omkring 160
+            mm. </p>
+          
+          <p rend="noIndent">Der anvendes ikke kustoder.</p>
+          
+          <p rend="noIndent">Fodnoter indvises i grundteksten med mellemrum efterfulgt af en eller flere asterisker. Mellemrummet f&#x00F8;r indvisningstegnet gengives ikke i GV.</p>
+          
+          <p rend="noIndent">I teksten adskilles viserne med en kort skillestreg. Viserne har
+            centrerede overskrifter i halvfed og st&#x00F8;rre skriftgrad.</p>
+          <p rend="noIndent">Der er ikke noget system for, hvorvidt de ulige verslinjer har indryk
+            eller ej. GV gengiver ikke disse usystematiske indryk.</p>
+         
+        </div>
+        
+        <div>
+          <head xml:id="docIn01">Indholdsoversigt</head>
+          <p rend="noIndent">2 blanke blade uden for pagineringen, [I] <hi rend="italic">titelblad,</hi> [II] <hi rend="italic">blank,</hi> [III]-VI Den Danske Ungdom,
+            [VII]-VIII Forord, IX-X Indhold (<hi rend="italic">efter titler</hi>), [1]-252 <hi rend="italic">tekst</hi>, [253-254] <hi rend="italic">alfabetisk indholdsfortegnelse
+              efter f&#x00F8;rstelinjer</hi>.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn02">Typografi</head>
+          <div>
+            <head xml:id="docIn03">Skriftsnit</head>
+            <p rend="noIndent">
+<hi rend="italic">Danske K&#x00E6;mpeviser</hi> er trykt med det gotiske
+              skriftsnit fraktur. P&#x00E5; titelbladet (og enkelte andre steder) er der desuden brugt det
+              gotiske skriftsnit textur.</p>
+            
+          </div> 
+          
+          <div>
+            <head xml:id="docIn04">Fremh&#x00E6;velser og skriftarter</head>
+            
+            <p rend="noIndent">Fremh&#x00E6;velser markeres med spatiering og bruges oftest ved person- og
+              stednavne. Forordet er sat med v&#x00E6;sentlig mindre skriftsnit end resten af v&#x00E6;rket. Hver
+              vise indledes med uncial i halvfed. Overskriften til hver vise er i halvfed og med
+              st&#x00F8;rre skriftgrad. P&#x00E5; titelbladet er halvfed brugt  som fremh&#x00E6;velsesmiddel.</p>
+            <p rend="noIndent">Der er ikke noget fast system for, hvorvidt omkv&#x00E6;d (og evt.
+              mellemkv&#x00E6;d) gentages ved hver strofe eller kun er anf&#x00F8;rt ved f&#x00F8;rste og sidste strofe i
+              en vise. I nogle viser er 2. og 4. vers indrykket. Disse indryk er <hi rend="italic">ikke</hi> gengivet i GV.</p>
+            
+          </div>
+          
+          <div>
+            <head xml:id="docIn05">Skriftgrader</head>
+            <p rend="noIndent">Den st&#x00F8;rste variation m.h.t. skriftgrader og typografiske virkemidler
+              ses p&#x00E5; titelbladet. &#x201C;Danske K&#x00E6;mpeviser&#x201D; gengives med den st&#x00F8;rste
+              skriftgrad, &#x201C;Skole-Brug&#x201D; og &#x201C;udvalgte og till&#x00E6;mpede&#x201D; er
+              sat med noget mindre skriftgrad. &#x201C;Nik. Fred. Sev. Grundtvig&#x201D; er sat i
+              halvfed textur. Pr&#x00E6;positionerne &#x201C;til&#x201D;  og &#x201C;at&#x201D; er sat med
+              samme grad som eller mindre end br&#x00F8;dteksten.</p>
+            
+            <p rend="noIndent">I oplysningerne om trykkested, trykker og forlag vises
+              &#x201C;Kj&#x00F8;benhavn&#x201D; og &#x201C;1847&#x201D; med st&#x00F8;rst skriftgrad og i halvfed.
+              &#x00C5;rstallet h&#x00E6;lder desuden mod venstre. Oplysninger om forlag gengives med samme
+              st&#x00F8;rrelse som br&#x00F8;dteksten, mens oplysningerne om trykkested gengives med mindre
+              st&#x00F8;rrelse. Oplysninger om trykkested, trykker og forlag er adskilt fra resten ved en
+              udsmykket prydstreg.</p>
+            
+            
+          </div>
+          
+          <div>
+            <head xml:id="docIn06">Skillestreger</head>
+            <p rend="noIndent">Der anvendes to typer korte skillestreger, som er centrerede. De
+              l&#x00E6;ngste af disse findes efter hver vise. P&#x00E5; titelbladet og p&#x00E5; s. IX er anvendt
+              prydstreger.</p>
+            
+           
+          </div>
+        </div>
+        
+        <div>
+          <head xml:id="docIn07">Papirkvalitet</head>
+          <p rend="noIndent">Maskinpapir uden vandm&#x00E6;rker, formentlig billigt.</p>
+        </div>
+        
+        <div>
+          <head xml:id="docIn08">Omslag</head>
+          <p rend="noIndent">Det har ikke v&#x00E6;ret muligt at finde det originale omslag, men de kollationerede eksemplarer er alle indbundet i marmoreret papir med skindryg. Hj&#x00F8;rnerne kan v&#x00E6;re forst&#x00E6;rkede med m&#x00F8;rkebrunt l&#x00E6;rred eller brunt l&#x00E6;der.</p>
+        </div>
+  
+      </div>
+      
+      <div>
+        <head xml:id="docIn12">Tekstkritik</head>      
+        <list type="textualCriticismPluralis"></list>
+      </div>
+      
+      <div type="litList">
+        <head xml:id="docIn11">Anvendt litteratur</head>        
+          
+        <list type="litList">
+          
+          <item>
+<hi rend="italic">Bibliografien, </hi>se Johansen, Steen (1948-1954)</item>
+          <item>Bech, Sven Cedergreen udg. (1979-1984) <rs type="title" key="title556">
+                <hi rend="italic"> Dansk Biografisk Leksikon,</hi> 3. udg.</rs> K&#x00F8;benhavn</item>
+          <item>Boisen, P. O. udg. (1849)<rs type="title" key="title2291">
+              <hi rend="italic">Nye og gamle Viser af og for Danske Folk</hi>.</rs> K&#x00F8;benhavn</item>
+          <item>Brandt, C.J. udg. (1848-1849) <rs type="title" key="title61">
+              <hi rend="italic">Rim og Sange til F&#x00E6;drelandets Historie</hi>
+</rs>. K&#x00F8;benhavn</item>
+            <item>Johansen, Steen (1948-1954) <rs type="title" key="title35">
+              <hi rend="italic">Bibliografi over N.F.S. Grundtvigs skrifter</hi>
+</rs>. K&#x00F8;benhavn</item>          
+          <item>K&#x00F8;ster, Kristian udg. (1865) <rs type="title" key="title2290">
+<hi rend="italic">Et
+                  Hundrede Danske Sange.</hi>
+</rs> K&#x00F8;benhavn </item>         
+         
+        </list>
+       
+      </div>
+      
+    </body>
+</text>
+</TEI>

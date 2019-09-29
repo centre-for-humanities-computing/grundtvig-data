@@ -1,0 +1,2135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="//prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="part">Om Religion og Liturgie</title>
+                <title rend="shortForm">Om Religion og Liturgie</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="editionPhilologist">Vanja Thaulow</editor>
+                <editor role="student">Jesper Lorenzen</editor>
+                <editor role="student">Frederik Drei&#x00F8;e Seidelin</editor>
+                <editor role="student">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <idno type="content">1.8</idno>
+                    <idno type="technic">1.5.1</idno>
+                </edition>
+            </editionStmt>
+            <extent>168 KB</extent>
+
+            <publicationStmt>
+                <availability status="restricted">
+                    <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+                </availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                <date when="2016-04-29">www.grundtvigsv&#x00E6;rker.dk, version 1.8, 29. april 2016</date>
+            </publicationStmt>
+            <!--  <seriesStmt>
+                <title>Theologisk Maanedsskrivt for F&#x00E6;drelandets Religionsl&#x00E6;rere. Februarii Maaned 1807</title>
+                <respStmt>
+                    <name>Lorenz Nikolai Fallesen</name>
+                    <resp>f&#x00F8;rste residerende Kapellan til Frue Menighed i Ki&#x00F8;benhavn</resp>
+                </respStmt>
+                <idno n="1807-02-01">Februar, 1807</idno>
+            </seriesStmt>-->
+            <notesStmt>
+                <note type="txt" target="1807_61_txt.xml" xml:id="thisFile">L&#x00E6;setekst</note>
+                <note type="com" target="1807_61_com.xml">Punktkommentar</note>
+                <note type="intro" target="1807_61_intro.xml">Indledning</note>
+                <note type="txr" target="1807_61_txr.xml">Tekstredeg&#x00F8;relse</note>
+                <note type="unknownVar">Variant</note>
+
+            </notesStmt>
+
+            <sourceDesc>
+                <bibl>
+                    <title type="main">Theologisk Maanedsskrivt for F&#x00E6;drelandets
+                        Religionsl&#x00E6;rere.</title>
+                    <title type="part">Om Religion og Liturgie</title>
+                    <author>Nik. Fred. Sev. Grundtvig. <note>Kandidat i Theologien.</note>
+                    </author>
+                    <pubPlace>Ki&#x00F8;benhavn</pubPlace>
+                    <publisher>paa den Gyldendalske Boghandlings Forlag hos Morthorstes Enke &amp;
+                        Comp.</publisher>
+                    <date>1807</date>
+                </bibl>
+
+                <listWit xml:id="emendation">
+                    <witness xml:id="A" n="61">
+                        <desc>Førstetrykket</desc>
+                        <num>1807</num>
+                    </witness>
+                    <witness>
+                        <desc>Rettelsesliste til A</desc>
+                    </witness>
+
+                </listWit>
+
+                <listWit xml:id="pageNumber">
+                    <witness xml:id="US">
+                        <desc>Udvalgte Skrifter</desc>
+                        <num>1</num>
+                    </witness>
+                    <witness xml:id="VU">
+                        <desc>Værker i Udvalg</desc>
+                        <num>1</num>
+                    </witness>
+                </listWit>
+
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                    <term>prosa</term>
+                    <term>artikler</term>
+                </classCode>
+                <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                    <term>teologi</term>
+                    <term>liturgi</term>
+                    <term>filosofi</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="JEL" when="2011-08-08" xml:id="JEL">Grundkollation p&#x00E5;gyndt</change>
+            <change who="JEL" when="2011-08-10">1.grundkollation</change>
+            <change who="FDS" when="2011-08-10" xml:id="FDS">FDS overtager 1.
+                grundkollation</change>
+            <change who="FDS" when="2011-08-11">1. kollation fortsat</change>
+            <change who="FDS" when="2011-08-12">1. kollation fortsat</change>
+            <change who="FDS" when="2011-08-15">1. kollation afsluttes</change>
+            <change who="VTH" when="2011-08-22" xml:id="VTH">2. grundkollation
+                p&#x00E5;begyndt</change>
+            <change who="VTH" when="2011-08-23">2. kollation fortsat</change>
+            <change who="VTH" when="2011-08-24">2. kollation fortsat</change>
+            <change who="VTH" when="2011-08-29">2. kollation afsluttet</change>
+            <change who="JMR" when="2011-09-01" xml:id="JMR">3. kollation p&#x00E5;begyndt =
+                kollation af ex 1 fra Gr.bib. mod xml-tekst p&#x00E5; papir.</change>
+            <change who="VTH" when="2011-09-06">Rettelser fra 3. kollation f&#x00F8;rt ind</change>
+            <change who="VTH" when="2011-09-06">TEI-header rettet til sammen med KSR og NHB</change>
+            <change who="VTH" when="2011-09-08">M&#x00E6;rker for persName, myth og bibel</change>
+            <change who="VTH" when="2011-09-09">Inds&#x00E6;tter sidetal for VU og US samt rettelser
+                fra 3. kollation - igen</change>
+            <change who="VTH" when="2011-09-12">Inds&#x00E6;tter nogle unicodes</change>
+            <change who="VTH" when="2011-09-13">Inds&#x00E6;tter seg-elementer indstil s.
+                188</change>
+            <change who="VTH" when="2011-09-14">Inds&#x00E6;tter de sidste seg-elementer samt
+                rettelser fra 4. kollation (JEL)</change>
+            <change who="VTH" when="2011-09-15">Tilretter lemmata efter udg.m&#x00F8;de</change>
+            <change who="VTH" when="2011-09-20">Tilretter lemmata i takt med at com-filen
+                skrives</change>
+            <change who="VTH" when="2011-09-21">Tilretter lemmata i takt med at com-filen
+                skrives</change>
+            <change who="VTH" when="2011-10-14">Sletter en del gr&#x00F8;nne kommentarer</change>
+            <change who="JMR" when="2011-10-27">Opm&#x00E6;rker tekstkritiske noter</change>
+            <change who="VTH" when="2011-11-09">Inds&#x00E6;tter unicodes og opm&#x00E6;rker for
+                typografi</change>
+            <change who="VTH" when="2011-11-18">Inds&#x00E6;tter div part5</change>
+            <change who="FDS" when="2011-11-22">Erstatning af omlyds-e'r til almindelig omlyd. VTH
+                opm&#x00E6;rker jette</change>
+            <change who="VTH" when="2011-11-25">Retter sideskift og inds&#x00E6;tter nogel
+                seg-elementer</change>
+            <change who="KSR" when="2011-11-28">tilretning af teiHeader</change>
+            <change who="VTH" when="2011-11-30">Inds&#x00E6;tter com229</change>
+            <change who="VTH" when="2011-12-01">Retter i TEI-header, sletter gr&#x00F8;nne
+                kommentarer, retter romertal til araber, inds&#x00E6;tter unicodes for citationstegn
+                og tankestreg.</change>
+            <change who="VTH" when="2011-12-13">Inds&#x00E6;tter com 230-231</change>
+            <change who="VTH" when="2011-12-14">Inds&#x00E6;tter com 232</change>
+            <change who="VTH" when="2011-12-15">Tre ekstra tekstrettelser m&#x00E6;rkes</change>
+            <change who="VTH" when="2011-12-19">Enkelt note rettes. Indsat com 233-234</change>
+            <change who="VTH" when="2011-12-21">Indsat com 235</change>
+            <change who="VTH" when="2011-01-05">Indsat com 236-237</change>
+            <change who="VTH" when="2011-01-06">Tilrettet fax-numre</change>
+            <change who="VTH" when="2011-01-12">inds&#x00E6;tter com 238-244</change>
+            <change who="VTH" when="2011-01-13">inds&#x00E6;tter com 245-291 og retter herefter alle
+                comtal, s&#x00E5; de er fortl&#x00F8;bende</change>
+            <change who="VTH" when="2011-01-24">inds&#x00E6;tter ekstra com efter JKs redaktion:
+                309-320</change>
+            <change who="VTH" when="2011-01-25">indsat com304 et nyt sted</change>
+            <change who="VTH" when="2011-01-26">Rettelser efter JKs redaktion, 2. halvdel. Extra com
+                321-332</change>
+            <change who="VTH" when="2012-01-27">Indsat de tre sidste app-noter. Com333-335</change>
+            <change who="VTH" when="2012-01-29">sm&#x00E5; rettelser. Indsat com336</change>
+            <change who="VTH" when="2012-02-29">com330 aktiveret igen</change>
+            <change who="VTH" when="2012-03-06">com339</change>
+            <change who="VTH" when="2012-04-30">Inds&#x00E6;tter com340 og 341</change>
+            <change who="VTH" when="2012-06-20">Indsat "edition" ved pb aht. nyt skema</change>
+            <change who="VTH" when="2012-07-30">Inds&#x00E6;tter gardinnavne i div'er.</change>
+            <change who="VTH" when="2012-09-05">Rettet nogle firstIndent til noIndent efter
+                regulativ. pb flyttet ind i p-element</change>
+            <change who="VTH" when="2012-10-24">Harmoniseret forskellige ting f&#x00F8;r
+                oplastning.</change>
+            <change who="VTH" when="2012-10-30">rettet lemma for com73, indf&#x00F8;rt
+                com342-345</change>
+            <change who="VTH" when="2012-10-31">slettet com344 og rettet com343 til 342</change>
+            <change who="VTH" when="2012-11-01">slettet com 160. Rettet i m&#x00E6;rker.</change>
+            <change who="VTH" when="2013-04-16">fjernet nye m&#x00E6;slinger op til upload af
+                1.2.</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten
+                genoprettet</change>
+            <change who="VTH" when="2014-03-31">fjernet nye m&#x00E6;slinger op til upload af 1.4.
+                Bibel er blevet kodet normForm</change>
+            <change who="VTH" when="2014-08-29">Retter kodning af listWit</change>
+            <change who="VTH" when="2014-10-07">Retter kodning af motto-div aht visning</change>
+            <change who="VTH" when="2015-10-26">Indsætter genre- og emneord. 'Liturgi' mangler</change>
+            <change who="VTH" when="2015-11-12">Retter com26 til Start/End</change>
+            <change who="VTH" when="2016-02-23">Indsætter select yes i 55 app-noter</change>
+            <change who="VTH" when="2016-03-07">Retter genre- og emneord.</change>
+            <change who="VTH" when="2016-03-15">Nyt versionsnummer pga. rettelser i intro.</change>
+
+        </revisionDesc>
+    </teiHeader>
+    <text type="txt">
+
+        <pb type="periText" facs="1807_61_fax001.jpg"/>
+        <pb type="periText" facs="1807_61_fax002.jpg"/>
+        <pb type="periText" facs="1807_61_fax003.jpg"/>
+        <pb type="periText" facs="1807_61_fax004.jpg"/>
+        <pb type="periText" facs="1807_61_fax005.jpg"/>
+        <pb type="periText" facs="1807_61_fax006.jpg"/>
+        <pb type="periText" facs="1807_61_fax007.jpg"/>
+        <pb type="periText" facs="1807_61_fax008.jpg"/>
+
+        <front/>
+
+
+
+        <body>
+            <div type="[Indledning]">
+                <pb type="text" facs="1807_61_fax009.jpg" n="129" ed="A" rend="supp"/>
+                <pb type="edition" n="136" ed="US"/>
+                <pb type="edition" n="103" ed="VU"/>
+                <head rend="2">Om Religion og Liturgie.</head>
+                <div1 type="motto">
+                    <p rend="noIndent">
+                        <seg type="com" n="com1">Unter der H&#x00FC;lle aller Religionen liegt die
+                            Religion selbst</seg>.</p>
+                    <p rend="right">
+                        <hi rend="italic">
+                            <persName key="pe35">Schiller</persName>.</hi>
+                    </p>
+                </div1>
+                <p rend="noIndent">
+                    <hi rend="initial">A</hi>tter er Liturgien blevet Centret for <seg type="com"
+                        n="com2">Dagsliteraturen</seg>, og det med saamegen mere Ret, som <seg
+                        type="com" n="com3">Regieringen just nu har v&#x00E6;rdiget den sin
+                        s&#x00E6;rdeles Opm&#x00E6;rksomhed</seg>.</p>
+                <p rend="firstIndent">N&#x00E6;sten alle de, der hidtil traadte frem, have antaget
+                    som afgiort, at vor Liturgie tr&#x00E6;nger til total Forandring, og kun opholdt
+                    sig ved Besvarelsen af Sp&#x00F8;rgsmaalet, hvori denne b&#x00F8;r bestaae?<pb
+                        type="text" facs="1807_61_fax010.jpg" n="130" ed="A"/>
+                </p>
+                <p rend="firstIndent">Naturligviis opstod her den st&#x00F8;rste Uenighed, da man
+                    havde glemt, f&#x00F8;rst at enes om Synspunktet for det Hele.
+                    Sp&#x00F8;rgsmaalene: Hvad er Religion? Hvad er christelig Religion? Hvad er
+                    Liturgie? og hvorledes forholder denne sig til hin? ere stedse blevne staaende i
+                    Baggrunden, og enten ganske overseete, eller dog kun betragtede med halv
+                    fravendt &#x00D8;ie.</p>
+                <p rend="firstIndent">Denne Fremf&#x00E6;rd er saa meget besynderligere, som enhver
+                    Dom, der, uden str&#x00E6;ngeste Hensyn paa hine Grundideer, f&#x00E6;ldes enten
+                    over den gamle, eller nogen anden Liturgie, maa ligne Dommen over Stenes
+                    Dimensioner <app type="corrNote" select="yes"><lem wit="GV">uden</lem><rdg wit="A">udeu</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Hensyn paa Bygningen, hvori de skulle passe, eller dennes Bestemmelse.</p>
+                <p rend="firstIndent">Troede man maaskee, at Ideen om christelig Religion var
+                    bekiendt og erkiendt nok, og tabte saaledes <seg type="com" n="com4">den store
+                        Revolution af Sigte, som Menneskenes Begreber ere undergangne i de sidste 10
+                        Aar</seg>; eller, tilbageholdt man sine Meninger om Christl&#x00E6;ren, og
+                    en for samme passende Liturgie, af en Forsigtighed, der, saa bef&#x00F8;iet den
+                    i visse Henseender kunde v&#x00E6;re, var her ganske paa urette Sted?</p>
+                <p rend="firstIndent">At det Sidste har hos Nogle v&#x00E6;ret Tilf&#x00E6;ldet,
+                    derfor synes den <pb type="edition" n="137" ed="US"/>Aand at borge, som lever i
+                    deres Bem&#x00E6;rkninger; men hvor inkonseqvent <pb type="edition" n="104"
+                        ed="VU"/>denne Ad<pb type="text" facs="1807_61_fax011.jpg" n="131" ed="A"
+                    />f&#x00E6;rd er, kan sees ved at anvende Grunds&#x00E6;tningen paa Livets
+                    mindre vigtige Gienstande.</p>
+                <p rend="firstIndent">Vel opf&#x00F8;rer man ikke sielden paa et Theater Stykker,
+                    der, ene beregnede paa et <seg type="com" n="com5">&#x00F8;iebliklig</seg>
+                    Publikums Klap, <seg type="com" n="com6">ei have uden</seg> negativt Hensyn paa
+                    Dramaets h&#x00F8;iere Love; men var Talen om en ufravigelig Rettesnor for de
+                    Dramer og Dekorationer, der i en l&#x00E6;ngere Fremtid skulde skues, vilde man
+                    dog neppe <seg type="com" n="com7">lade det beroe</seg> med at vise, hvilken
+                    Virkning disse vilde have paa den f&#x00F8;rste den bedste Sv&#x00E6;rm af
+                    Tilskuere, man i dette Nu indkaldte fra Gaden. Ja, man vilde vel end ikke danne
+                    Regelen overensstemmende med de Fordringer, som giordes af mere T&#x00E6;nkende,
+                    efter den herskende Smag, men s&#x00F8;ge tilbage til det f&#x00F8;rste og
+                    h&#x00F8;ieste Princip for dramatisk Digtning, og derefter afpasse saavel det
+                    Materielle som Formelle ved Indretningen. Fors&#x00F8;mmelse heraf vilde i det
+                    mindste med Ret kaldes en utilgivelig Br&#x00F8;de, saavel mod den
+                    n&#x00E6;rv&#x00E6;rende Sl&#x00E6;gt, hvis Smag ei burde f&#x00F8;lges, <seg
+                        type="com" n="com8">uden</seg> den f&#x00F8;rst beviistes at v&#x00E6;re
+                    Produktet af de h&#x00F8;iere Ideers Erkiendelse, som mod den kommende, der med
+                    yderste Mishag maatte see sig undergiven Love, hvis Motiver for l&#x00E6;ngst
+                    vare hensmuldrede i St&#x00F8;vet, hvorfra de toges.<pb type="text"
+                        facs="1807_61_fax012.jpg" n="132" ed="A"/>
+                </p>
+                <p rend="firstIndent">Her derimod, hvor Talen er om det h&#x00F8;ieste i Livet, om
+                    det, der skal h&#x00E6;ve os, ei blot <seg type="com" n="com9"
+                        >&#x00F8;iebliklig</seg> over Tilv&#x00E6;relsen, men til Beskuelse af en
+                    evig Exsistens uden fra, og over samme, vil man n&#x00F8;ies med, at
+                    raadsp&#x00F8;rge vor Tidsalder, som var den upartisk, fordi den er <seg
+                        type="com" n="com10">ligegyldig</seg>
+                    <note type="footnote">
+                        <p rend="noIndent">En fra Erfaring og Menneskekundskab hentet og
+                            f&#x00F8;lgelig saare rigtig Bem&#x00E6;rkelse.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udg.</hi>
+                        </p>
+                    </note>.</p>
+                <p rend="firstIndent">L&#x00E6;nge haabede vi<note type="footnote">
+                        <p rend="noIndent">Taler Herr Forfatteren i et heelt Selskabs eller i sit
+                            eget Navn? I sidste Tilf&#x00E6;lde synes mig <hi rend="italic">Jeg</hi>
+                            havde v&#x00E6;ret mere passende.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note> at skue mere dybtgaaende Fors&#x00F8;g til Bestemmelsen af christelig
+                    Liturgies Grundvold, fra M&#x00E6;nd, der ved deres Kundskaber og Stilling vare
+                    dertil lige bef&#x00F8;iede; men, hidtil skuffede i vor Forventning, toge vi
+                    den, maaskee noget dristige Beslutning, at forel&#x00E6;gge vore
+                    Landsm&#x00E6;nd Resultaterne af vor redelige Granskning.</p>
+                <p rend="firstIndent">Vel vide vi, at Veien, der maa betr&#x00E6;des, er slibrig, og
+                    egnet til Fald, da den f&#x00F8;rer sin Vandrer ud over Tilv&#x00E6;relsen, og
+                    lader ham ligesom sv&#x00E6;ve mellem Himlen og Jorden; men vi vide ogsaa, at
+                    det er den eneste, som kan f&#x00F8;re til Maalet, og f&#x00F8;le os sikkre paa,
+                    ei at vorde Gienstand for de Fornuftiges Latter, om end <seg type="com"
+                        n="com11">stundum</seg> vor Fod glider, og vore Skridt vakle. At Daarerne,
+                    der virkelig troe sig kloge, naar de kunne fremstille Alt, ligesaa <apptype="corrNote" select="yes"><lem wit="GV">betydningsl&#x00F8;st</lem><rdg wit="A">betyduingsl&#x00F8;st</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>, som de selv ere, ville lee h&#x00F8;it, det for<pb type="text"
+                        facs="1807_61_fax013.jpg" n="133" ed="A"/>udse vi; men Saadant skal
+                    v&#x00E6;re os ligesaa ki&#x00E6;rt, som det Modsatte vilde bedr&#x00F8;ve
+                        os.<pb type="edition" n="138" ed="US"/>
+                    <pb type="edition" n="105" ed="VU"/>
+                </p>
+            </div>
+
+            <div type="Tr&#x00E6;nge vi til Religion?">
+                <head rend="0">
+                    <hi rend="italic">Tr&#x00E6;nge vi til Religion?</hi>
+                </head>
+                <p rend="noIndent">Dette sp&#x00F8;rgsmaal maatte synes underligt, is&#x00E6;r for
+                        <app type="corrNote" select="yes"><lem wit="GV">Historiens</lem><rdg wit="A">Hlstoriens</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Fortrolige, dersom det ei var bekiendt, at vor Tid s&#x00E6;tter en
+                    &#x00C6;re i at n&#x00E6;gte, hvad alle de svundne Aldere have bekr&#x00E6;ftet,
+                    i at <seg type="com" n="com12">indknibe</seg> sig selv til Jorden, som om det
+                    var Menneskets h&#x00F8;ieste Triumph at paastaae sin Tilv&#x00E6;relses
+                    Nullitet. Nu derimod vil man med Rette her fordre det besvaret.</p>
+                <p rend="firstIndent">F&#x00F8;rst ville vi s&#x00F8;ge at f&#x00F8;re Livet og dets
+                    Problem frem for Beskuelsen, ei for derved at undgaae Svaret; men for at
+                    s&#x00E6;tte L&#x00E6;serne paa vor Standpunkt.</p>
+                <p rend="firstIndent">Vi leve i en
+                    Dal,<!--spatiering mellem D og a regnes for fejl--> begr&#x00E6;ndset af et
+                    uoverskueligt, b&#x00F8;lgende Hav. Vakte ved Traditionen, og drevne af en
+                    uforklarlig Tvang, ahne vi dunkelt, at paa hin Side Havet maa v&#x00E6;re et
+                    Land, med ski&#x00F8;nnere Vexter, og renere Luft &#x2013; vort oprindelige
+                    Hiem. Uvilkaarlig stirre vi did, uvilkaarlig str&#x00E6;be vi i vore Aandedrag
+                    at opfange Luften, der synes at str&#x00F8;mme ud fra hint Ubekiendte. Herved
+                    blive de staaende, som berusede af Dalens Druer, eller l&#x00E6;nkede til denne
+                    Jord, ei kunne skue dens Oph&#x00F8;r. Herved bleve vi maaskee Alle staaende,
+                    dersom Havets B&#x00F8;lger ei efterhaanden opslugte os; men nu kunne vi ei
+                    l&#x00E6;ngere v&#x00E6;re tilfredse med den <pb type="text"
+                        facs="1807_61_fax014.jpg" n="134" ed="A"/>ubestemte Ahnen. Vi forlange
+                    Vished. Selv t&#x00F8;r vi ikke vove os bort, da vi maa gaae under ved
+                    Fors&#x00F8;get, og dog ei vide, om det er os tilladt, at forlade Dalen; men
+                    tvende Sendebud have vi, <hi rend="italic">Poesien,</hi> og <hi rend="italic"
+                        >Philosophien,</hi> og paa dem bygge vi vort Haab. <hi rend="italic"
+                        >Poesien</hi> svinger sig ud over Havet, og taber sig mellem Skyerne. Kun
+                        <seg type="com" n="com11">stundum</seg> skimte vi den i det Fierne, og, vor
+                    Stirren uagtet, ville vi dog aldrig opdage andet, end at den er omgivet af en
+                    forbifarende Glands, som vi ahne at v&#x00E6;re Virkning af den ski&#x00F8;nnere
+                    Soels Straaler, vi s&#x00E6;tte i det Ubekiendte.</p>
+                <p rend="firstIndent">
+                    <hi rend="italic">Philosophiens</hi> Vei er en anden. F&#x00F8;rst
+                    giennems&#x00F8;ger den Dalen n&#x00F8;ie, og f&#x00F8;lger den i alle dens
+                    Bugter, for, om mueligt der at finde Stedet, hvorfra hin Ahnelse
+                    udstr&#x00F8;mmede; men drives efter spildt M&#x00F8;ie, af
+                    N&#x00F8;dvendigheden &#x2013; til at slutte, den dog maa v&#x00E6;re kommet
+                    over Havet. Med st&#x00F8;rste Omhyggelighed udruster den sit Skib til Fart over
+                    Dybet: men kommer neppe et Steenkast fra Landet, f&#x00F8;r den standses af de
+                    skyeh&#x00F8;ie, rullende B&#x00F8;lger. Enten maa den h&#x00E6;ve sig over dem,
+                    og blive Poesie, eller ankre, udsat for de stormende Vinde, eller den,
+                    tr&#x00E6;t af forgi&#x00E6;ves Kamp, maa vende tilbage, byde os betragte Dalen
+                    som vort <pb type="edition" n="106" ed="VU"/>Hiem, og n&#x00F8;ies med at give
+                    Regler for den beqvemmeste Gang paa den bugtede Vei, der f&#x00F8;rer til
+                        Havet.<pb type="text" facs="1807_61_fax015.jpg" n="135" ed="A"/>
+                    <pb type="edition" n="139" ed="US"/>
+                </p>
+                <p rend="firstIndent">Enten maa vi nu atter tye tilbage til hin Ahnelse,
+                    Philosophien i det h&#x00F8;ieste kun giorde bestemtere, eller vi maa erkiende
+                    vor Trang til Bel&#x00E6;relse fra hin Side Havet.</p>
+                <fw type="longLine"/>
+                <p rend="noIndent">Saasnart Mennesket har bragt sine Evner til den Grad af
+                    Udvikling, at han kan beskue sig selv, da m&#x00F8;der ham flux
+                    Tilv&#x00E6;relsens underfulde Gaade. Han seer Jordens andre Dyr n&#x00F8;ies
+                    med &#x00D8;ieblikkets Nydelse; men hos sig selv finder han en Trang, der gaaer
+                    ud over det Endelige, uden at v&#x00E6;re sig sin Gienstand bevidst. Han troer
+                    at l&#x00F8;se Knuden, ved at erkl&#x00E6;re sig v&#x00E6;sentlig forskiellig
+                    fra de andre Dyr, og h&#x00E6;vet over dem; men han knytter den kun derved
+                    fastere, thi vil han ikke antage som sit Maal, at f&#x00F8;des, nyde, og
+                    d&#x00F8;e, da forlades han af Livets hele Analogie; har udrevet sig af den
+                    eneste bekiendte Ki&#x00E6;de, og staaer som et enkelt led, uden
+                    Ber&#x00F8;ringspunkter. Er han et Hverdagsmenneske, eller et klogt Dyr, da iler
+                    han med at overhugge Knuden, vender tilbage til sine fornuftl&#x00F8;se
+                    Fr&#x00E6;nder, og gi&#x00F8;r endelig Nydelse til sit h&#x00F8;ieste Maal. Men
+                    end ikke herved er han <seg type="com" n="com13">blevet eens</seg> med sig selv,
+                    thi han har beredt sig en ny Kamp mod den nedtrykte, men aldrig overvundne
+                    Ahnelse af det H&#x00F8;iere, der hos ham forkynder sig igiennem det, vi <pb
+                        type="text" facs="1807_61_fax016.jpg" n="136" ed="A"/>kalde Samvittighed.
+                    Han kan ofte undvige Kampen, men aldrig ende den som Seiersherre, thi stedse maa
+                    han flygte for den overm&#x00E6;gtige Fiende, hvis Angreb blive st&#x00E6;rkere
+                    og hurtigere, ligesom Alderen gi&#x00F8;r ham svagere, og mere uskikket til
+                    Flugt. Tilsidst <seg type="com" n="com14">indknibes han</seg> imellem den og
+                    D&#x00F8;den, og kaster sig sk&#x00E6;lvende i den Sidstes kolde Arme, uden dog
+                    at turde der haabe Befrielse fra den forf&#x00F8;lgende D&#x00E6;mon.</p>
+                <p rend="firstIndent">Mennesket, som er mere fortroelig med Ahnelsen om sin
+                    h&#x00F8;iere Natur, nedseer stolt paa sin slumrende Broder, og bebreider ham,
+                    han selv er Aarsag i sine &#x00E6;ngstlige plagende Dr&#x00F8;mme. Selv slutter
+                    han sig <seg type="com" n="com15">end</seg> t&#x00E6;ttere til sin Ahnelse, og
+                    haaber, at faae den giennem Poesien eller Philosophien, potenseret<note
+                        type="footnote">
+                        <p rend="noIndent">&#x0254;: bragt til Vished &#x2013; giort evident.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note> til Vished. Undertiden troer han at have naaet sit Maal, men om det er
+                    en <seg type="com" n="com309">Skuffelse</seg> eller ikke, skal f&#x00F8;lgende
+                    Betragtning l&#x00E6;re.</p>
+                <p rend="firstIndent">Poesien veed vel at konstruere en h&#x00F8;iere
+                    Tilv&#x00E6;relse af de meest glandsfulde Tr&#x00E6;k, hvori Mennesket <seg
+                        type="com" n="com9">&#x00F8;iebliklig</seg> bev&#x00E6;ger sig med berusende
+                    Vellyst, men den kan ikke ski&#x00E6;nke noget varigt Liv i samme, og <pb
+                        type="edition" n="107" ed="VU"/>ei till&#x00E6;gge Existencen en egen
+                    V&#x00E6;rdie, som indsluttende Betingelsen for en h&#x00F8;iere V&#x00E6;ren.
+                    Er nu dens <pb type="edition" n="140" ed="US"/>Tendents, at udrive Mennesket af
+                        <seg type="com" n="com16">Tilv&#x00E6;relsen</seg>, kan den ei heller
+                    l&#x00F8;se dennes Gaader, der tvertimod <pb type="text"
+                        facs="1807_61_fax017.jpg" n="137" ed="A"/>tr&#x00E6;de st&#x00E6;rkere frem,
+                    jo n&#x00E6;rmere den kommer sit Maal. Vel vide vi, den nogle Gange is&#x00E6;r
+                    i de sildigere Tider str&#x00E6;bte at knytte sig til Livet, men vi vide ogsaa,
+                    at den enten derved ganske foragtede sin Natur, og blev den dyriske Nydelses
+                    forf&#x00F8;rende Maler, eller sank under Tilv&#x00E6;relsens tunge Byrde, som
+                    den med sig vilde h&#x00E6;ve til det Evige.</p>
+                <p rend="firstIndent">Man vente ikke her en udf&#x00F8;rlig Kritik over de
+                    philosophiske Systemer, som her slet ikke vilde v&#x00E6;re paa sin Plads, om vi
+                    end kunde give den; men blot Fremstillingen af det h&#x00F8;ieste Punkt,
+                    Philosophien, i F&#x00F8;lge sit V&#x00E6;sen, kan og t&#x00F8;r bestige! Den
+                    kan lede Mennesket til Bevidsthed om Tilv&#x00E6;relsens Strid, og saaledes med
+                    Bestemthed frems&#x00E6;tte det h&#x00F8;ieste Problem. Den kan motivere sin
+                    Paastand, at dets L&#x00F8;sning enten maa v&#x00E6;re umuelig, eller
+                    f&#x00F8;re ud over Tilv&#x00E6;relsen; men selv at l&#x00F8;se det, formaaer
+                    den ikke.</p>
+                <p rend="firstIndent">Den kan beraabe sig paa ethvert udviklet Menneskes indre
+                    Erfaring, naar den paastaaer, at vor Fornuft erkiender en h&#x00F8;iere Lov end
+                    Naturens; men den kan aldrig forklare Ph&#x00E6;nomenet, hvi hin, der dog
+                    forkynder sig som det h&#x00F8;ieste, ei kan fremtr&#x00E6;de i
+                    Tilv&#x00E6;relsen med samme N&#x00F8;dvendighed som denne. Den kan ikke
+                    forklare denne Disharmonies Udspring fra en Harmonie, saa lidet som dens
+                    Tilbagevenden til en saadan. Enhver som t&#x00E6;nkte selv, vil finde, at baade
+                        <seg type="comStart" n="com19"/>
+                    <hi rend="italic">
+                        <persName key="pe500">Fichtes</persName>,</hi> og <hi rend="italic">
+                        <persName key="pe35">Schil<pb type="text" facs="1807_61_fax018.jpg" n="138"
+                                ed="A"/>lers</persName>,</hi> og <hi rend="italic">
+                        <persName key="pe54">Schellings</persName>
+                    </hi> Fors&#x00F8;g,<seg type="comEnd" n="com19"/> ved deres umiskiendelige
+                    Pr&#x00E6;g af overordentligt Genie, ere mislykkede, og herfra er kun et lidet
+                    Skridt til at indsee, hvorfor, og at de n&#x00F8;dvendigen maatte mislykkes.
+                    Alle de Opl&#x00F8;sninger, Philosophien tillader sig af hine h&#x00F8;ie
+                    Gaader, maa enten v&#x00E6;re en N&#x00E6;gtelse af Gaadernes <seg type="com"
+                        n="com20">Tilv&#x00E6;r</seg>, eller st&#x00F8;tte sig paa en Hypothes, der
+                    ei kan bevises, men er <seg type="com" n="com21">stundum</seg> saa genialisk
+                    skiult, at den synes at v&#x00E6;re Resultatet af den indvortes Erfaring
+                    selv.</p>
+                <p rend="firstIndent">
+                    <hi rend="italic">
+                        <persName key="pe54">Schelling</persName>
+                    </hi> er uden Tvivl Den blandt de nyere Philosopher, der v&#x00E6;rdigst
+                    karakteriserede det Evige, og meest konseqvent udledte Exsistencens Strid <apptype="corrNote" select="yes"><lem wit="GV">derfra</lem><rdg wit="A">erfra</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>, som blot tilsyneladende; men hvad hielper den str&#x00E6;ngeste
+                    Konseqvens, naar <seg type="com" n="com22">det f&#x00F8;rste Led</seg>
+                    sv&#x00E6;ver i Luften, saa vi ei uden Poesie kunne n&#x00E6;rme os det? Under
+                        <hi rend="italic">
+                        <persName key="pe54">Schellings</persName>
+                    </hi> Haand fremstod en herlig nye Skabelse, men just derfor manglede <seg
+                        type="com" n="com23">Sluttelsen</seg>
+                    <seg type="com" n="com24">(?)</seg> til den n&#x00E6;rv&#x00E6;rende. Antagelse
+                    af det Evige, fristes vi, forledte af vor Trang, let <app type="combNote" select="yes"><lem wit="GV">til da at</lem><rdg wit="A">til de at</rdg><rdg type="add" wit="US, VU">til at</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> frakiende Navnet Hypothes; men den bliver det ikke min<pb type="edition"
+                        n="141" ed="US"/>dre, <pb type="edition" n="108" ed="VU"/>fordi den vises
+                    som n&#x00F8;dvendig, naar Philosophien skal kunne udsige noget Oplysende om
+                    Gaaden.</p>
+                <p rend="firstIndent">Derfor valgte vi <hi rend="italic">
+                        <persName key="pe54">Schellings</persName>
+                    </hi> Philosophie til Exempel, fordi vi i den see Philosophiens Tilstaaelse af
+                    sin <seg type="com" n="com25">Uformuenhed</seg> til at forklare
+                        Tilv&#x00E6;rel<pb type="text" facs="1807_61_fax019.jpg" n="139" ed="A"
+                    />sens Gaade, og altsaa Henviisning paa ubetinget Trang til noget
+                    h&#x00F8;iere.</p>
+                <p rend="firstIndent">Kunne vi ikke knytte Tilv&#x00E6;relsens h&#x00F8;ieste Led
+                    til det Evige, da maa Kundskaben om deres giensidige Forhold n&#x00F8;dvendig
+                    komme ovenfra, eller vi maa undv&#x00E6;re den. Det Sidste kunne vi ikke, naar
+                    vi h&#x00E6;vede os over Dyriskheden, og f&#x00F8;le hin Trang, der gaaer ud
+                    over det Endelige, og vi maa da inderlig hige efter det F&#x00F8;rste.</p>
+                <p rend="firstIndent">Lykkedes det os, endog kun tildeels at fremstille de
+                    foregaaende Ideer med Lys og Sandhed, da vil vist Ingen af vore L&#x00E6;sere
+                    ansee <seg type="comStart" n="com26"/>Religion som et Baand paa den Uoplyste, eller en
+                        St&#x00F8;tte for Moralsystemets <seg type="com" n="com27">vankende</seg>
+                        Bygning<seg n="com26" type="comEnd"/>
+                    <note type="footnote">
+                        <p rend="noIndent">Jeg maa, for <app type="corrNote" select="yes"><lem wit="GV">min</lem><rdg wit="A">miu</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Person tilstaae, at jeg stedse har anseet og endnu anseer
+                            Religionen for den sikkerste Grundvold, hvorpaa Moralen maa v&#x00E6;re
+                            bygget. Ved ikke at antage dette, bliver Moralen, i mine Tanker, just en
+                                <seg type="com" n="com27">vankende</seg> Bygning &#x2013; en
+                            Klogskabsl&#x00E6;re, og intet andet. St&#x00F8;tten &#x2013; Religion
+                            kan heller <hi rend="italic">aldrig</hi> borttages, Moralen maa nu have
+                            naaet sin beh&#x00F8;rige Fasthed eller ikke.</p>
+                        <p rend="right">Udgiv.</p>
+                    </note>, der skal borttages, saasnart denne har naaet sin beh&#x00F8;rige
+                    Fasthed, men f&#x00F8;lge os med Interesse, naar vi s&#x00F8;ge at besvare
+                    Sp&#x00F8;rgsmaalet:</p>
+            </div>
+
+            <div type="Hvad er Religion?">
+                <head rend="0">
+                    <hi rend="italic">Hvad er Religion?</hi>
+                </head>
+                <p rend="noIndent">Den almindelige Definition siger, den er Kundskab om det
+                    Oversandselige, og naar man an<pb type="text" facs="1807_61_fax020.jpg" n="140"
+                        ed="A"/>tager <seg type="com" n="com28">Tilv&#x00E6;relsen</seg> af flere
+                    Religioner, maa man vel sige saa, da det synes at v&#x00E6;re det Eneste, de
+                    have tilf&#x00E6;lles. Naar vi derimod, uden Hensyn paa nogen bestemt Religion,
+                    ville angive Begrebet saaledes, som det dunkelt har sv&#x00E6;vet for alle
+                    Religionsstiftere, og som det maatte v&#x00E6;re, for at indslutte den
+                    bestemmende Grund til alle mere uddannede Folks Religioner, da kan den ikke
+                    tilfredsstille os. Definitionens Ufuldkommenhed var n&#x00F8;dvendig, da den er
+                    fremkommet ved blot logisk Abstraction fra et Noget, der uden Beviis antages for
+                    at v&#x00E6;re, hvad man vilde definere.</p>
+                <p rend="firstIndent">Er det mueligt at faae fyldestg&#x00F8;rende Svar paa dette
+                    vigtige Sp&#x00F8;rgsmaal, da maa det s&#x00F8;ges i Historien, der, ubekymret
+                    om sig selv, afsl&#x00F8;rer under sin rolige Gang det H&#x00F8;ieste og
+                    Dybeste. Raadsp&#x00F8;rge vi nu denne, ville vi finde, at ski&#x00F8;nt dens
+                    Zifre ogsaa indslutte Nuller, der, saa lidet de for os mangle Betydning, dog ved
+                    deres ligesom isolerede Fremtr&#x00E6;den vare betydningsl&#x00F8;se, <apptype="corrNote" select="yes"><lem wit="GV">erkiendtes</lem><rdg wit="A">erkiendte</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> dog Religionen almindelig for at v&#x00E6;re den guddommelige Kraft, der
+                    h&#x00E6;ver Mennesket over alle Jordens Omgivelser, til det H&#x00F8;ieste,
+                    Oversandselige. Allerede herved er meget vundet, thi Religionen er nu ikke
+                    l&#x00E6;ngere for os en blot <pb type="edition" n="142" ed="US"/>Kund<pb
+                        type="edition" n="109" ed="VU"/>skab, men <seg type="com" n="com29">den
+                        gyldne Ki&#x00E6;de i <rs type="myth" key="myth171.a">Jupiters</rs>
+                        Haand</seg>, der skal l&#x00F8;fte Jorden til Himmelen.<pb type="text"
+                        facs="1807_61_fax021.jpg" n="141" ed="A"/>
+                </p>
+                <p rend="firstIndent">Gi&#x00F8;re vi <seg type="com" n="com15">end</seg> eet
+                    Skridt, da finde vi, at baade Gr&#x00E6;kers og J&#x00F8;ders og Skandinavers
+                    Historie taber sig i <seg type="comStart" n="com30"/>en gylden Alder, da Guderne
+                    vandrede paa Jorden, da det Himmelske og Jordiske faldt <app type="corrNote" select="yes"><lem wit="GV">sammen</lem><rdg wit="A">sammeu</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> i en Idee.<seg type="comEnd" n="com30"/> Her hviler <app type="corrNote" select="yes"><lem wit="Rettelsesliste">Urtypen</lem><rdg wit="A">Aarsagen</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> for alle Religioner, her faae vi Svaret: <seg type="comStart" n="com31"/>
+                    <hi rend="italic">Religion er det Endeliges <seg type="com" n="com300"
+                            >Samfund</seg> med det Evige.</hi>
+                    <seg type="comEnd" n="com31"/>
+                </p>
+                <p rend="firstIndent">Ikke forstaae vi ved Udtrykket, den gyldne Alder, <seg
+                        type="com" n="com32">hin episke Old</seg>, der var dens Efterskin; ei heller
+                    t&#x00E6;nke vi os derved <seg type="com" n="com33">de nye Philosophers evige
+                        Idee</seg>, men dennes Virkelighed under <seg type="com" n="com34"
+                        >Tidens</seg> Betingelse.</p>
+                <p rend="firstIndent">I Dettes n&#x00E6;rmere Udvikling ville vi, uden Hensyn paa
+                    Mythologiernes deels matte, deels adspredte Tr&#x00E6;k, ene beskue Bibelens
+                    rene Billede, hvor alle Gestalterne tr&#x00E6;de tydelige og <seg type="com"
+                        n="com35">uddannede</seg> frem for vort &#x00D8;ie.</p>
+                <p rend="firstIndent">Hin gyldne Alder betegnes her med det saare passende Navn,
+                        <seg type="com" n="com37">Uskyldighedsstanden</seg>; thi reent og usmittet
+                    maatte det Jordiske v&#x00E6;re, for at kunne flyde sammen med det Himmelske.
+                        <seg type="com" n="com38">Guds Billede</seg> betegner hint <seg type="com"
+                        n="com300">Samfund</seg>, vi kaldte Religion, thi, betegnede det noget
+                    V&#x00E6;sentligt hos Mennesket, kunde det ikke tabes, <seg type="com" n="com39"
+                        >uden</seg> ved Menneskets Omskabelse; men, <app type="corrNote" select="yes"><lem wit="GV">som</lem><rdg wit="A">sam</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> saadant maatte det n&#x00F8;dvendig tabes, ved at &#x00E6;de af
+                    Kundskabstr&#x00E6;ets Frugt. <seg type="com" n="com40">Samfundet</seg> med det
+                    Evige maatte n&#x00F8;dvendig oph&#x00F8;re,<pb type="text"
+                        facs="1807_61_fax022.jpg" n="142" ed="A"/> saasnart Menneskene s&#x00F8;gte
+                    Kundskab, og giorde Forskiel mellem Godt og Ondt, thi derved gaves <seg
+                        type="com" n="com16">Tilv&#x00E6;relsen</seg> en egen Vigtighed, og
+                    Mennesket var, efter den f&#x00F8;rste Frihedsyttring ei l&#x00E6;ngere <hi
+                        rend="italic">n&#x00F8;dvendig hvad han var;</hi> men et Resultat af
+                    Valg.</p>
+                <p rend="firstIndent">I Uskyldighedsstanden var ingen D&#x00F8;d, og det evige Liv
+                    fremspirede af Jorden selv; thi Mennesket udtrykte sit Begreb heelt, og
+                    D&#x00F8;d maatte da have v&#x00E6;ret en Oph&#x00E6;velse af <seg type="com"
+                        n="com40">Samfundet</seg>, da den ikke kunde v&#x00E6;re en Overgang til det
+                    allerede Existerende. Nu see vi tydelig Sandheden af Ordene: <seg type="com"
+                        n="com41"> &#x201C;paa hvilken Dag du &#x00E6;der deraf, skal du
+                        d&#x00F8;e!&#x201D;</seg>
+                </p>
+                <p rend="firstIndent">
+                    <seg n="com43" type="com">Mennesket udjoges af Paradiis fra Livets Tr&#x00E6;e,
+                        og D&#x00F8;den stod som en Cherub med et blinkende Sv&#x00E6;rd mellem det
+                        Evige og Endelige.</seg>
+                </p>
+                <p rend="firstIndent">Slangen, der forf&#x00F8;rte Menneskene, var <seg type="com"
+                        n="com16">Tilv&#x00E6;relsen</seg>
+                    <seg type="com" n="com24">(?)</seg> selv, der lokkede dem til at opofre sig til
+                    dens Kundskab, som om de derved kunde blive Gud lige i Viisdom. Derfor blev
+                    Slangens Straf, at den stedse skulde krybe paa Jorden; <seg type="com" n="com16"
+                        >Tilv&#x00E6;relsen</seg>, og Kundskaben om samme, Philosophien, skulde
+                    aldrig kunne <pb type="edition" n="143" ed="US"/>h&#x00E6;ve sig til det Evige,
+                    og blev saaledes en <seg type="com" n="com44">L&#x00F8;gner fra
+                        Begyndelsen</seg>, ved sit skuffende L&#x00F8;fte til Mennesket.</p>
+                <p rend="firstIndent">Det lovedes, at <seg type="comStart" n="com45"/>Qvindens <seg
+                        type="com" n="com46">S&#x00E6;d</seg> skulde s&#x00F8;nderknuse Slangens
+                    Hoved, <pb type="edition" n="110" ed="VU"/>men den skulde bide Man<pb
+                        type="text" facs="1807_61_fax023.jpg" n="143" ed="A"/>den i
+                        H&#x00E6;len.<seg type="comEnd" n="com45"/> Mennesket skulde komme til
+                    Erkiendelse af <seg type="com" n="com319">Tilv&#x00E6;relsens</seg> Usselhed,
+                    som Hoved&#x00F8;iemeed, men den skulde dog beholde Kraft nok til at hindre hans
+                    Flugt mod det Evige<note type="footnote">
+                        <p rend="noIndent">Saare vel indsee vi, at hverken de <seg type="com"
+                                n="com310">litterale</seg> eller moralske <seg type="com" n="com47"
+                                >Udtydere</seg> af Bibelens Oldskrivter ville v&#x00E6;re enige med
+                            os i denne <app type="corrNote" select="yes"><lem wit="GV">Fortolkning</lem><rdg wit="A">Fortolkniug</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>; men vi erkl&#x00E6;re os ogsaa villige til at vexle Mening,
+                            saasnart Nogen, uden at fratage eller inddrage Noget, giver os en
+                            Forklaring, hvori denne mythiske <app type="corrNote" select="yes"><lem wit="GV">Fort&#x00E6;lling</lem><rdg wit="A">F&#x00F8;rt&#x00E6;lling</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> aabenbarer en dybere <seg type="com" n="com48">Sands</seg>, og
+                            s&#x00E6;ttes i str&#x00E6;ngere Forbindelse med Religionens
+                            f&#x00F8;lgende Historie.</p>
+                        <p rend="firstIndent">Dette er alt, hvad vi kunne sige, thi hidtil kiendte
+                            vi ingen tilfredsstillende Forklaring, og vi vide ingen Autoritet,
+                            hvorpaa vi kunne st&#x00F8;tte os<note type="footnote">
+                                <p rend="noIndent">En i mine Tanker meget god Forklaring over det
+                                    saa kaldte Syndefald findes i Magazin for
+                                    Religionsl&#x00E6;rere. 3 B. S. 539. &#x2013; See og
+                                    Menneskehistoriens formodentlige Begyndelse af <hi rend="italic">
+                                        <persName key="pe508">Immanuel Kant</persName>.</hi> Theol.
+                                    Maanedsskrivt. I. B. S. 148
+                                    &amp;c.<!-- skal det skrives mindre? -->
+                                </p>
+                                <p rend="right">
+                                    <hi rend="italic">Udgiv.</hi>
+                                </p>
+                            </note>.</p>
+                        <p rend="right">Forf.</p>
+                    </note>.</p>
+                <p rend="firstIndent">Nu kunde ingen Religion i h&#x00F8;iere Betydning v&#x00E6;re
+                    paa Jorden, men kun en Str&#x00E6;ben mod samme, for hvilken ogsaa de gamle
+                    Religioner ere Udtryk. De vare alle Poesie. Philosophie ansaaes <pb type="text"
+                        facs="1807_61_fax024.jpg" n="144" ed="A"/>som deres Fiende, og var det
+                    virkelig ved sin Stilling.</p>
+                <fw type="longLine"/>
+                <p rend="noIndent">Dette Ph&#x00E6;nomen troe vi at kunne <app type="corrNote" select="yes"><lem wit="GV">forklare</lem><rdg wit="A">forklar</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> os saaledes: de Gamle d&#x00F8;mte rigtigen, at <seg type="com"
+                        n="com311">den Kundskab, der styrtede Menneskene, var Philosophie</seg>.
+                    Frygtsomme for den lange Vei fremad, str&#x00E6;bte de stedse tilbage mod det
+                    Evige, hvorfra de vare l&#x00F8;srevne. Derfor sluttede de sig saa t&#x00E6;t
+                    til <seg type="com" n="com304">Poesie, da denne i hin gyldne Alder havde
+                        v&#x00E6;ret Eet med Religionen</seg>, ei en Str&#x00E6;ben mod det Evige,
+                    men en Omfattelse af det. Derfor kunde Philosophien ei faae Sted i deres
+                    Religioner, thi de saae i den Slangen, som maatte knuses, f&#x00F8;r hint <seg
+                        type="com" n="com300">Samfund</seg> kunde vindes tilbage.</p>
+                <p rend="firstIndent">
+                    <seg type="comStart" n="com49"/>De fragmentariske Skildringer af
+                    Gr&#x00E6;kernes episke Old, vi have under <persName key="pe378"
+                        >Homers</persName> Navn,<seg type="comEnd" n="com49"/> bevise, de engang
+                    troede, at have naaet deres Maal. Ei t&#x00F8;r vi bestemme, om <seg type="com"
+                        n="com50">den dramatiske Digtning</seg> endnu var Udtrykket for denne Troe;
+                    men det synes klart, at de i den dramatiske Konst s&#x00F8;gte at tr&#x00F8;ste
+                    sig over det skuffede Haab. L&#x00E6;nge kunde ei heller hin <seg type="com"
+                        n="com309">Skuffelse</seg> vedvare: thi Mennesket havde engang sluttet sig
+                    til <seg type="com" n="com16">Tilv&#x00E6;relsen</seg>, og kunde ei mere
+                    tr&#x00E6;de tilbage. Kundskabens Frugt var brudt og smagt, og kunde ei <apptype="corrNote" select="yes"><lem wit="GV">atter</lem><rdg wit="A">attee</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> vorde <app type="corrNote" select="yes"><lem wit="GV">hel</lem><rdg wit="A">vel</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> og ur&#x00F8;rt, om den end henkastedes til <pb type="text"
+                        facs="1807_61_fax025.jpg" n="145" ed="A"/>Forraadnen. Nydes maatte den, om
+                    den endog var dr&#x00E6;bende Gift. Allerede i Gr&#x00E6;kernes Historie skimte
+                    vi Overgangen fra Poesie til Philosophie som Religion; men endnu maatte denne
+                    k&#x00E6;mpe, og seirede f&#x00F8;rst under Romerne. Ei var det Ringeagt for det
+                    H&#x00F8;ieste, der f&#x00F8;dte denne Overgang, ski&#x00F8;ndt den <seg
+                        type="com" n="com312">vist nok</seg>
+                    <pb type="edition" n="144" ed="US"/>f&#x00F8;dtes af samme; men en dunkel
+                    Ahnelse om, at en Forening mellem Poesien og Philosophien burde finde Sted.</p>
+                <p rend="firstIndent">Dog, ingen menneskelig Aand kunde forene disse K&#x00E6;mpende
+                    til et <pb type="edition" n="111" ed="VU"/>harmonisk V&#x00E6;sen med <seg
+                        type="com" n="com51">Tendents til</seg> det Evige, og det fordi <seg
+                        type="com" n="com52">Ingen kan fare op til Himmelen, uden Den, som nedsteg
+                        derfra</seg>. <persName key="pe502">Sokrates</persName> faldt som Martyr,
+                    thi for svag var den Gnist af <seg type="com" n="com53"
+                        >&#x03BB;&#x03BF;&#x03B3;&#x03BF;&#x03C2;</seg>, han besad, og
+                    Fors&#x00F8;gene havde de s&#x00F8;rgeligste F&#x00F8;lger.</p>
+                <p rend="firstIndent">Us&#x00E6;delighed omvandt Menneskene med sine smudsige
+                    L&#x00E6;nker, medens Philosophernes <seg type="com" n="com54"
+                        >H&#x00F8;resale</seg> gienl&#x00F8;de af Dydens Priis, og
+                    Unders&#x00F8;gelse om Gudernes Natur.</p>
+                <p rend="firstIndent">Konsten, der f&#x00F8;dtes for at f&#x00E6;ngsle de flygtende
+                    Guder til Jorden, blev <seg type="com" n="com55">Overdaads</seg> og
+                    Forf&#x00E6;ngeligheds Tiener.</p>
+                <p rend="firstIndent">Leveklogskab hyllede sig i Poesiens glimrende <seg type="com"
+                        n="com56">Kl&#x00E6;demon</seg>, <seg type="com" n="com57">borgede</seg>
+                    dens Navn, og modtog de bedragne D&#x00F8;deliges Hylding.<pb type="text"
+                        facs="1807_61_fax026.jpg" n="146" ed="A"/>
+                </p>
+                <p rend="firstIndent">Aarhundreder henrullede i hinandens Fied, og ugiennemsigtig
+                    blev Taagen, der skiulte det Eviges Straaler for Jorden.</p>
+                <p rend="firstIndent">J&#x00F8;derne, hvis Religion som Poesie tabte ved at
+                    tr&#x00E6;de i Nationalismens Tieneste, men vandt langt mere ved sin stadige
+                    Hentydning paa det Fuldkomnere, havde efterhaanden tabt Evnen til at skue det
+                    h&#x00F8;ie Liv, der spirede i deres hellige B&#x00F8;ger, og det synes, som de
+                    ved at hylde de kloge Romere, have lukket &#x00D8;iet for det Eviges sidste
+                    Glimt, og indsluttet sig i <seg type="com" n="com16"
+                    >Tilv&#x00E6;relsen</seg>.</p>
+                <p rend="firstIndent">Ville vi finde livfulde Spor af Poesien som Str&#x00E6;ben mod
+                    Religion, da maa vi vende &#x00D8;iet h&#x00F8;it imod Nord, og kaste et
+                    indtr&#x00E6;ngende Blik paa <hi rend="italic">
+                        <seg type="com" n="com58">Asal&#x00E6;rens</seg>
+                    </hi> dybere <seg type="com" n="com48">Sands</seg>.</p>
+                <p rend="firstIndent">Her finde vi, hvad vi i de andre Nationers Gudel&#x00E6;re
+                    &#x2013; J&#x00F8;dernes kun for en Deel undtagen &#x2013; forgi&#x00E6;ves
+                    s&#x00F8;ge, Erkiendelse af Poesiens <app type="corrNote" select="yes"><lem wit="GV">Afmagt</lem><rdg wit="A">Almagt</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> til i Livet at giengive Tilv&#x00E6;relsen sit tabte <seg type="com"
+                        n="com300">Samfund</seg> med det Evige.</p>
+                <p rend="firstIndent">Heraf allene kunne vi forklare os den <seg type="com"
+                        n="com59">merkelige</seg> Forskiel mellem Gr&#x00E6;kernes Skyggeverden, og
+                    Skandinavernes Valhal.</p>
+                <p rend="firstIndent">Gr&#x00E6;kerne troede, at kunne ved Poesie, tilbagevinde
+                    Religion i Livet, og maatte derfor ansee D&#x00F8;den som Ende paa <seg
+                        type="com" n="com40">Samfundet</seg> med det Evige. Derfor bev&#x00E6;ge sig
+                    kun kraftl&#x00F8;se Skygger i det m&#x00F8;r<pb type="text"
+                        facs="1807_61_fax027.jpg" n="147" ed="A"/>ke <seg type="com" n="com320"
+                        >Erebos</seg>, hvor ei <rs type="myth" key="myth171">Zeus</rs> men <rs
+                        type="myth" key="myth156">Ades</rs> hersker. Tilstanden efter D&#x00F8;den
+                    er kun et mat Efterskin af Livet, og Tilbagegang til samme, &#x00D8;nskets
+                    H&#x00F8;ieste.</p>
+                <p rend="firstIndent">Nordboen ansaae Livet for en Skilsmisse fra det Evige, der kun
+                    burde benyttes til at berede sig Plads hos <rs type="myth" key="myth59.l"
+                        >Hroptatyr</rs> paa <pb type="edition" n="145" ed="US"/>
+                    <rs type="myth" key="myth101">Valhals</rs> B&#x00E6;nke. Tilstanden efter
+                    D&#x00F8;den er da ikke Livets Efterskin, men dets Potensering<note
+                        type="footnote">
+                        <p rend="noIndent">Hvad er Livets Potensering?</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>. Derfor tr&#x00E6;de <rs type="myth" key="myth110">Einherierne</rs>
+                    kraftfulde frem, inddrikke guddommelig Kraft <pb type="edition" n="112" ed="VU"
+                    />i <rs type="myth" key="myth352">Heidrunes</rs> st&#x00E6;rke Mi&#x00F8;d, og
+                    fryde sig ved det h&#x00F8;ie Vaabengny, og <rs type="myth" key="myth117"
+                        >Valkyriers</rs> liflige Sange. Men endnu ere de ikke forenede med det
+                    Evige, de have ikke tilintetgiort D&#x00F8;den, ski&#x00F8;nt de have overvundet
+                    den. D&#x00F8;den er blevet som Bien, der mister sin Braad ved at bruge den, thi
+                    flux opvaagne de dr&#x00E6;bte Helte som af lette Slummer. Dog, Maalet maa
+                    naaes, og derfor ere <rs type="myth" key="myth101">Valhals</rs>
+                    <app type="corrNote" select="yes"><lem wit="Rettelsesliste">Kampe</lem><rdg wit="A">Konger</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> kun Forbilleder paa den Store i <rs type="myth" key="myth104"
+                        >Ragnaroke</rs>, da Guderne selv skulle falde, og give Plads for det
+                    identisk Evige. F&#x00F8;rst da skulde en ski&#x00F8;nnere og herligere Soel
+                    beskinne den gienf&#x00F8;dte Jord, og Heltene leve i uadskilleligt <seg
+                        type="com" n="com300">Samfund</seg> med <rs type="myth" key="myth1"
+                        >Alfaudr</rs> i <rs type="myth" key="myth121">Gimle</rs>.<pb type="text"
+                        facs="1807_61_fax028.jpg" n="148" ed="A"/>
+                </p>
+                <p rend="firstIndent">Dog, hvor ugierne vi end skilles fra gamle Nordens hellige
+                    Myther, der i sig selv skiule det herlige Lys, der berettiger dem til Navnet
+                    Religionens Morgenr&#x00F8;de; maa vi vende &#x00D8;iet hen paa den gyldne Soel,
+                    der alt frembryder i &#x00D8;sten, og hvis Straaler ogsaa engang skulde opvarme
+                    det kolde Norden.</p>
+                <p rend="firstIndent">Jesus <app type="corrNote" select="yes"><lem wit="GV">f&#x00F8;des</lem><rdg wit="A">f&#x00F8;dcs</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>, og med ham nedsteeg atter Religionen til <app type="corrNote" select="yes"><lem wit="GV">Jorden</lem><rdg wit="A">Jordrn</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>; thi han var det levende Udtryk for <app type="corrNote" select="yes"><lem wit="GV">det</lem><rdg wit="A">den</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Eviges og Endeliges inderligste Forening: <seg type="com" n="com60"
+                        >&#x03BC;&#x03B5;&#x03B3;&#x03B1; &#x03B5;&#x03C3;&#x03C4;&#x03B9;
+                        &#x03C4;&#x03BF; &#x03C4;&#x03B7;&#x03C2;
+                        &#x03B5;&#x03C5;&#x03C3;&#x03B5;&#x03B2;&#x03B5;&#x03B9;&#x03B1;&#x03C2;
+                        &#x03BC;&#x03C5;&#x03C3;&#x03C4;&#x03B5;&#x03F1;&#x03B9;&#x03BF;&#x03BD;.
+                        &#x0398;&#x03B5;&#x03BF;&#x03C2; <app type="corrNote" select="yes"><lem wit="GV">&#x03B5;&#x03C6;&#x03B1;&#x03BD;&#x03B5;&#x03F1;&#x03C9;&#x03D1;&#x03B7;</lem><rdg wit="A">&#x03B5;&#x03A6;&#x03B1;&#x03BD;&#x03B5;&#x03F1;&#x03C9;&#x03D1;&#x03B7;</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> &#x03B5;&#x03BD; &#x03C3;&#x03B1;&#x03F1;&#x03F0;&#x03B9;</seg>.</p>
+                <p rend="firstIndent">Herpaa hentyder <seg type="com" n="com61">Forestillingen om de
+                        tvende Naturer i Christi Person</seg>, og herved kunne vi ledes til at
+                    opdage den dybere liggende Grund, hvi <seg type="com" n="com62"
+                        >F&#x00E6;drene</seg> inddeelte <seg type="com" n="com63"
+                            >&#x03BB;&#x03BF;&#x03B3;&#x03BF;&#x03C2;</seg> i <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com64">&#x03B5;&#x03BD;&#x03B4;&#x03B9;&#x03B1;&#x03D1;&#x03B5;&#x03C4;&#x03BF;&#x03C2;</seg></lem><rdg wit="A">&#x03B5;&#x03C5;&#x03B4;&#x03B9;&#x03B1;&#x03D1;&#x03B5;&#x03C4;&#x03BF;&#x03C2;</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> og <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com65">&#x03C0;&#x03F1;&#x03BF;&#x03C6;&#x03BF;&#x03F1;&#x03B9;&#x03F0;&#x03BF;&#x03C2;</seg></lem><rdg wit="A">&#x03C0;&#x03F1;&#x03BF;&#x03A6;&#x03BF;&#x03F1;&#x03B9;&#x03F0;&#x03BF;&#x03C2;</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>.</p>
+                <p rend="firstIndent">Men, Religionen i h&#x00F8;iere Betydning kunde ei mere boe
+                    paa Jorden. Med Jesus opfoer den atter til Himlen efter f&#x00F8;rst at have
+                    slynget sit hellige Baand om det Endelige, hvorved det kunde h&#x00E6;ve sig til
+                    det Evige. Det er hvad Skrivten siger: <seg type="com" n="com66">Jesus forsonede
+                        Menneskene med Gud</seg>.</p>
+                <p rend="firstIndent">F&#x00F8;rst nu have vi Ret til at besvare
+                    Sp&#x00F8;rgsmaalet! Hvad er Jesu Religion?</p>
+                <p rend="firstIndent">Den er det <hi rend="italic">
+                        <seg type="com" n="com67">Endeliges Forsoning med det Evige</seg>
+                    </hi>
+                    <note type="footnote">
+                        <p rend="noIndent">Vist nok en saare besynderlig Definition paa Jesu <pb
+                                type="text" facs="1807_61_fax029.jpg" n="149" ed="A"/> Religion
+                            eller Christendom. Skulde det Evige da absolut forsones, f&#x00F8;rend
+                            det Endelige turde n&#x00E6;rme sig til det? Og hvorledes tilveiebragdes
+                            da denne Forsoning? Systemet taler vel om en Forsoning. Men denne kan
+                            Herr Forfatteren jo her ikke mene, da han gi&#x00F8;r Religionen selv
+                            til en Forsoning.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>.<pb type="text" facs="1807_61_fax029.jpg" n="149" ed="A"/>
+                </p>
+                <p rend="firstIndent">Men for at fortiene dette Navn maa den l&#x00F8;se
+                    Tilv&#x00E6;relsens Gaade, og den gi&#x00F8;r det, ved at vise, hvad hidtil
+                    Ingen kunde, at Poesiens og Philosophiens Identitet kan, knyttet til det Evige,
+                    v&#x00E6;re Religionens Repr&#x00E6;sentant i det Endelige<note type="footnote">
+                        <p rend="noIndent">Jeg maa tilstaae, at jeg ikke ganske forstaaer dette.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>.<pb type="edition" n="146" ed="US"/>
+                </p>
+                <p rend="firstIndent">En Sammenstilling af Hovedideerne i Jesu L&#x00E6;re vil
+                    tydeliggi&#x00F8;re dette. Jesus gik ud fra den af alle Religioner erkiendte
+                    S&#x00E6;tning, at Menneskene havde mistet deres f&#x00F8;rste Ypperlighed, og
+                    levede i Fiendskab med det Evige, hvorfra de havde l&#x00F8;srevet sig. Han
+                    l&#x00E6;rte, at denne Tilstand <pb type="edition" n="113" ed="VU"/>var
+                    f&#x00E6;lles for Adams hele Sl&#x00E6;gt, og herved opstaaer Arvesyndens rene
+                    Begreb. Han l&#x00E6;rte, at Mennesket ei ved egen Kraft kunde h&#x00E6;ve sig
+                    til det <seg type="com" n="com68">forlorne</seg> Standpunkt, i det han sagde:
+                        <seg type="comStart" n="com69"/>&#x201C;Ingen kiender Faderen, <seg
+                        type="com" n="com39">uden</seg> S&#x00F8;nnen, og den som S&#x00F8;nnen det
+                    vil aabenbare.&#x201D;<seg type="comEnd" n="com69"/>
+                    <persName key="pe343">Paulus</persName> udtrykker samme Tanke med mere
+                    Bestemthed, naar han siger: <seg type="com" n="com70">&#x201C;det naturlige
+                        Menneske fatter ikke de Ting, som h&#x00F8;re Guds Aand <pb type="text"
+                            facs="1807_61_fax030.jpg" n="150" ed="A"/> til&#x201D;</seg> samt: <seg
+                        type="comStart" n="com71"/>&#x201C;Ingen kiender det som er i Gud <seg
+                        type="com" n="com39">uden</seg> Guds Aand.&#x201D;<seg type="comEnd"
+                        n="com71"/> Philosophiens Bestr&#x00E6;belse at vorde Religion, og de
+                    s&#x00F8;rgelige F&#x00F8;lger af samme finde vi malet med de st&#x00E6;rkeste
+                    Farver i <rs type="bible" key="Rom 1" rend="normForm">
+                        <seg type="com" n="com72">det f&#x00F8;rste Kapitel af Brevet til
+                            Romerne</seg></rs>.</p>
+                <p rend="firstIndent">Saaledes var den f&#x00F8;rste Gaade l&#x00F8;st, i det et Lys
+                    opgik over <app type="corrNote" select="yes"><lem wit="GV">Menneskets</lem><rdg wit="A">Menueskets</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Stilling. Grunden var viist, hvi Naturen ligger i en evig Strid, <seg
+                        type="comStart" n="com73"/>hvi Moralloven ei kan virke med
+                    N&#x00F8;dvendighed, da den ikke <seg type="com" n="com74"
+                        >v&#x00E6;sentlig</seg> h&#x00F8;rer til <seg type="com" n="com16"
+                        >Tilv&#x00E6;relsen</seg>, men blev kun betinget n&#x00F8;dvendig ved
+                    Menneskets Fald<seg type="comEnd" n="com73"/>. <rs type="bible" key="Rom 5"
+                        rend="normForm">
+                        <seg type="com" n="com75">Rom. 5te</seg>
+                    </rs> og <rs type="bible" key="Rom 7" rend="normForm">
+                        <seg type="com" n="com308">7de</seg></rs>. Nu saaes, hvi Menneskene havde en uudslettelig Ahnelse af det Evige, uden
+                    dog at kunne <seg type="com" n="com313">slutte sig til det</seg>.</p>
+                <p rend="firstIndent">En Gaade var endnu tilbage, der egentlig giorde <apptype="corrNote" select="yes"><lem wit="GV">Jesu</lem><rdg wit="A">Jesn</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Komme n&#x00F8;dvendig for os, og hvis L&#x00F8;sning egentlig maatte
+                    udgi&#x00F8;re Religionen. Er Gienforening med det Evige mulig, og hvorledes:
+                    Dette er Gaaden.</p>
+                <p rend="firstIndent">Det f&#x00F8;rste Sp&#x00F8;rgsmaal besvarede Jesus saare ofte
+                    med den fuldeste Bestemthed, og det er derfor nok at henvise til det saa
+                    bekiendte og tydelige Udsagn <rs type="bible" key="Joh 3,16-17" rend="normForm"><seg type="com" n="com76">Joh. 3. 16. og 17.</seg></rs>, men at den christelige Religion virkelig frems&#x00E6;tter det samme
+                    Begreb om denne Gienforening, som vi have antaget, fremlyser vel klart saavel af
+                    det ofte mistydede Sted <rs type="bible" key="Rom 8,19-25" rend="normForm">
+                        <seg type="com" n="com77">Rom. 8. 19 &#x2013; 25.</seg>
+                    </rs> som af <rs type="bible" key="Ef 1,9-10" rend="normForm">Eph. 1. 9-10</rs>.
+                    hvor det <pb type="text" facs="1807_61_fax031.jpg" n="151" ed="A"/>hedder:
+                    &#x201C;efter sin velbehagelige Beslutning kundgiorde han os sin hemmelige
+                    Villie, ved en Huusholdning i Tidernes Fylde at indslutte Alt, det i Himlene og
+                    det paa Jorden, i Christo som i eet Hovedbegreb.&#x201D; F&#x00F8;lelsen af
+                    denne Gienforenings h&#x00F8;ie Salighed, og dens Ypperlighed frem for al
+                    Jordens Viisdom var det, som fyldte <persName key="pe343">Paulus</persName> med
+                    gl&#x00F8;dende Andagt, <seg type="comStart" n="com78"/>da han b&#x00F8;iede
+                    sine Kn&#x00E6; for vor Herres Jesu Christi Fader, og bad, at Christus maatte
+                    boe formedelst Troen i hans Br&#x00F8;dres <pb type="edition" n="147" ed="US"
+                    />Hierter, <seg type="com" n="com314">paa det</seg> de med alle de Hellige kunde
+                    begribe, hvilket der er det Brede og Lange, og H&#x00F8;ie og Dybe, at de kunde
+                    kiende den Christi Kierlighed, der overgaaer al Kundskab og opfyldes til al Guds
+                        Fylde.<seg type="comEnd" n="com78"/>
+                </p>
+                <p rend="firstIndent">Det andet Sp&#x00F8;rgsmaal besvarer Jesu L&#x00E6;re
+                    saaledes: Ved stadigt Hensyn paa det Evige, og ved Lydighed mod <seg type="com"
+                        n="com342">Moralloven</seg>, som Mennesket ved sit Fald underkastede sig,
+                    kan han ene gienvinde den tabte Salighed. <seg type="comStart" n="com333"/>Men
+                    da Mennesket kun skabtes <seg type="com" n="com334">for at</seg>
+                    <seg type="com" n="com335">stige</seg> fra Begreb til Individ<seg type="comEnd"
+                        n="com333"/>, mang<pb type="edition" n="114" ed="VU"/>ler han Kraft til at
+                    opfylde den Lov, der ei stemmer med hans hele V&#x00E6;sen. Derfor nedsendte Gud
+                    sin S&#x00F8;n, at han f&#x00F8;rst skulde udslukke ved sin Tilblivelse som
+                    Menneske, Fiendskabet mellem Jorden og Himmelen, at han med sit hellige Blod
+                    skulde aftv&#x00E6;tte det Endeliges Ureenhed, skaffe os Adgang<pb type="text"
+                        facs="1807_61_fax032.jpg" n="152" ed="A"/> til Faderen, og ved sin
+                    frivillige D&#x00F8;d opfylde Loven. Naar det Endelige skulde reddes fra
+                    Undergang, maatte det Evige <seg type="com" n="com79">&#x00F8;iebliklig</seg>
+                    give Slip paa sin Evighed<note type="footnote">
+                        <p rend="noIndent">Kan det Evige da nogensinde h&#x00F8;re op at v&#x00E6;re
+                                <hi rend="italic">Ikke-evigt?</hi>
+                        </p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>. Jesus maatte bane Veien giennem D&#x00F8;den til Livet, for at
+                    Menneskene kunne gaae derpaa. Han maatte ligesom udrive Scepteret af <rs
+                        type="myth" key="myth156.b">Plutos</rs> Haand, og udt&#x00F8;rre <rs
+                        type="myth" key="myth249">de stygiske Vande</rs>, at de ei l&#x00E6;ngere
+                    kunde indslutte de D&#x00F8;de. Her have vi <seg type="com" n="com80">Sandsen
+                        af</seg> Mythen om Christi Nedfart til Helvede. &#x2014; Nu staaer da
+                    Mennesket atter i Forbindelse med det Evige. Poesiens Verden har faaet Realitet,
+                    og er blevet knyttet til Existencen, der som Philosophiens Virkekreds, er blevet
+                        <seg type="com" n="com81">et betydende Ziffer i Approximationens Tabel</seg>
+                    <seg type="com" n="com24">(?)</seg>. Poesiens og Philosophiens Identitet
+                    fremtr&#x00E6;der i Jesu L&#x00E6;res Hovedbud: <seg type="com" n="com82">elsk
+                        Gud over alle Ting, og din N&#x00E6;ste som dig selv!</seg> og dette
+                    erkl&#x00E6;rede Jesus selv ved at sige: <seg type="com" n="com83">i disse to
+                        Bud indfattes baade Loven og Propheterne</seg>. Disse Bud maa Menneskene,
+                    som agte at indgange i <seg type="com" n="com84">det hellige Jerusalem</seg>,
+                    der skinner af Guds Herligheds Glands, og pranger med det fornyede Livets
+                    Tr&#x00E6;e, stedse have for &#x00D8;ine, og da have de Ret til, uagtet de<pb
+                        type="text" facs="1807_61_fax033.jpg" n="153" ed="A"/>res Feil, at
+                    nedkn&#x00E6;le med et fast Haab for <seg type="com" n="com85">den Naadestoel,
+                        som Herren fremsatte for Troen i Christi Blod</seg>.</p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com86">En Gaade er endnu tilbage, og fordrer saa meget mere
+                        Omtale, som den synes mindst tilfredsstillende l&#x00F8;st af den
+                        christelige Religion. Dens Gienstand er: de Ondes Ski&#x00E6;bne efter
+                        D&#x00F8;den.</seg>
+                </p>
+                <p rend="firstIndent">Forel&#x00F8;big maa vi anm&#x00E6;rke, at denne er ikke <seg
+                        type="com" n="com319">Tilv&#x00E6;relsens</seg>, og kan derfor egentlig ei
+                    fordres l&#x00F8;st af Religionen.</p>
+                <p rend="firstIndent">Syndens Mulighed var ligesaa n&#x00F8;dvendig som Friheden og
+                        <pb type="edition" n="148" ed="US"/>hvorledes denne kan f&#x00F8;re tilbage
+                    til det Evige, b&#x00F8;r Religionen vise; men Synden, Forf&#x00F8;lgelsen af et
+                        <seg type="com" n="com87">endeligt Maal</seg>, er Udtrykket for Menneskets
+                    totale Misbrug af Friheden. Gaaden om Beskaffenheden af dennes Resultat, har
+                    Mennesket selv skabt, den bliver Individets og ikke Artens. Den kan ikke fordres
+                    l&#x00F8;st af Religionen der ene er beregnet paa Artens Trang til den
+                    f&#x00F8;rste Gaades L&#x00F8;sning. Tydeligere: Religionen skal vise Vei til
+                    det Evige. De som ikke ville gaae denne Vei, frakiende det Maal, Religionen
+                    viser hen til, Interesse for sig, og kunne ikke fordre af den at bel&#x00E6;res
+                    om et Maal, hvis Modsatte <app type="corrNote" select="yes"><lem wit="Rettelsesliste">den</lem><rdg wit="A">de</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> erkl&#x00E6;rede for det eneste. Alt hvad de kunne vente af Religionen,
+                    er, at den maa kalde deres Maal<pb type="text" facs="1807_61_fax034.jpg" n="154"
+                        ed="A"/> det <pb type="edition" n="115" ed="VU"/>Modsatte af sit, som
+                    D&#x00F8;d af Liv. Da de ei ville arbeide paa Gienforeningen med det Evige, kan
+                    denne ei blive dem til Deel, og selv maa de vel vide, hvor de agte sig hen,
+                    siden de gaae saa ubekymrede, og foragte al Veiviisning.</p>
+                <p rend="firstIndent">Nu ville vi n&#x00E6;rmere betragte Christl&#x00E6;rens
+                    Udsagn, og stille det ved Siden af den philosopherende Fornufts
+                    S&#x00E6;tninger.</p>
+                <p rend="firstIndent">Saa lidet som Christl&#x00E6;ren giver nogen Fremstilling af
+                    de Ondes Tilstand efter D&#x00F8;den, saa bestemt till&#x00E6;gger den deres
+                    Ulyksalighed Varighed.</p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com88">De gamle Theologer</seg> sagde: denne Ulyksalighed
+                    skulde bestaae i evindelige Piner og Plager paa Siel og Legeme, af Dievelen i
+                    Helvede; men foruden det saare meget Underlige, der er sammenpakket i dette
+                    Dogma, har man Ret til at paastaae, det er ubibelskt. Aldrig siger Bibelen, at
+                    Dievelen skal pine de Ugudelige, men vel, at de skulle gaae hen i <seg
+                        type="com" n="com89">den evige Ild, som er beredt Dievelen og hans
+                        Engle</seg>.</p>
+                <p rend="firstIndent">Af Skrivtens Udtryk, <seg type="com" n="com90">den evige
+                        D&#x00F8;d</seg>, jevnf&#x00F8;rt med Ideen om Menneskets
+                    n&#x00E6;rv&#x00E6;rende Bestemmelse, giennem Moralitet at str&#x00E6;be mod det
+                    Evige, kunde man have Aarsag til at troe, at Jesus satte de Ugudeliges Straf i
+                    en vis Tilintetgi&#x00F8;relse, i en uvirksom, <seg type="com" n="com315"
+                        >pinlig</seg> Beskuelse af de Gudfrygtiges Salighed. Dette synes is&#x00E6;r
+                    at passe<pb type="text" facs="1807_61_fax035.jpg" n="155" ed="A"/> med
+                    Forestillingerne i <seg type="com" n="com91">Lignelsen om den rige Mand</seg>.
+                    Trangen til Gienforening med det Evige forkynder sig for ham som en
+                    ul&#x00E6;dskelig T&#x00F8;rst, der uden Oph&#x00F8;r br&#x00E6;nder den
+                    t&#x00F8;rre Tunge. Han kan ikke begrave sig i det sv&#x00E6;lgende Dyb, paa
+                    hvis Bred han ligger, men pines af Visheden om det Eviges <seg type="com"
+                        n="com20">Tilv&#x00E6;r</seg>, som han n&#x00F8;des at skue paa hin Side
+                    Dybet. Ikke heller kan Fornuften erkl&#x00E6;re dette for urimeligt; thi den
+                    Ugudelige s&#x00F8;gte i Livet at slukke Gnisten af det Evige, som han burde
+                    n&#x00E6;ret, for ved den at forenes med det. Han er da paa en <pb
+                        type="edition" n="149" ed="US"/>vis Maade d&#x00F8;d, da Skranken er sat for
+                    den Sph&#x00E6;re, hvori han bev&#x00E6;gede sig, og han nyder kun endnu et
+                    s&#x00F8;rgeligt Liv, fordi det var ham umuligt, ved endelig Kraft at bringe det
+                    Eviges Spire til Henvisnen, ski&#x00F8;nt han hindrede dens Vext.</p>
+                <p rend="firstIndent">Kun tvende Indvendinger af nogen Betydenhed lade sig
+                    gi&#x00F8;re herimod.</p>
+                <p rend="firstIndent">Man kan sige, at dette egentlig kun passede paa de virkelig
+                    Ugudelige, der <seg type="com" n="com92">ginge</seg> giennem Livet uden Hensyn
+                    paa det Evige, men ikke paa dem, der ski&#x00F8;nt de i Ahnelse, &#x00D8;nske og
+                    Haab sluttede sig til det, dog vare hengivne til en eller anden Synd, der endog
+                    henrev dem imod deres Villie.<pb type="edition" n="116" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Vel overhugges Knuden ved at sige: Jesu Blod <seg type="com"
+                        n="com93">aftoer</seg> de Bodf&#x00E6;rdiges Synder, men det synes dog, som
+                    en Smitte, ofte fornyet, maatte gi&#x00F8;<pb type="text"
+                        facs="1807_61_fax036.jpg" n="156" ed="A"/>re Mennesker uskikket til strax at
+                    tr&#x00E6;de i <seg type="com" n="com300">Samfund</seg> med det Evige.</p>
+                <p rend="firstIndent">F&#x00F8;lelsen heraf var det, som f&#x00F8;dte <seg
+                        type="com" n="com94">Ideen om Sk&#x00E6;rsild i sin &#x00E6;dlere
+                        Betydning</seg>, saaledes nemlig, som en Deel af de Gamle og <persName
+                        key="pe506">Origines</persName> forestillede sig den. Denne Idee lod sig
+                    godt forene med Antagelsen af et h&#x00F8;iere ogsaa endeligt Liv efter
+                    D&#x00F8;den, hvorved Begrebet om Pine bortfaldt, og synes at v&#x00E6;re den
+                    eneste, hvorved Knuden kan tilfredsstillende l&#x00F8;ses.</p>
+                <p rend="firstIndent">Man har sagt, at det streed mod den alvidende Guds Godhed, at
+                    skabe Mennesker, han forud vidste, vilde blive evig fortabte.</p>
+                <p rend="firstIndent">Denne Indvending synes at v&#x00E6;re betydelig, men man maa
+                    agte, at den ene laaner sin Styrke fra den dog nok sk&#x00E6;ve Forestilling om
+                    Verdens Skabelse som vilkaarlig. I det vi antage Guds evige <seg type="com"
+                        n="com20">Tilv&#x00E6;relse</seg>, antage vi tillige den evige Muelighed af
+                    Verdens Tilblivelse, der under
+                    <!-- evt com p&#x00E5; tidens. ELR: det dennesidiges -->Tidens Betingelse maatte
+                    blive Virkelighed. Verdens og Menneskenes Tilv&#x00E6;relse var altsaa
+                    n&#x00F8;dvendig. Den moralske Verdens Tilv&#x00E6;relse var ogsaa
+                    n&#x00F8;dvendig under den Foruds&#x00E6;tning, at Mennesket l&#x00F8;srev sig
+                    fra <seg type="com" n="com95">det Eviges Samfund</seg>, og da Moralitet
+                    foruds&#x00E6;tter Frihed, kunde Gud ligesaa lidet hindre Menneskene fra at
+                    blive ulykkelige, som han kunde hindre deres Tilblivelse eller Syndefaldet. Hvad
+                        <pb type="text" facs="1807_61_fax037.jpg" n="157" ed="A"/>
+                    <seg type="com" n="com15">end</seg> stod tilbage, giorde Gud, ved at nedsende
+                    til Jorden <seg type="com" n="com96">sin Herligheds Glands og sit V&#x00E6;sens
+                        rette Billede</seg>, hvorved Arvesynden udslettedes, <seg type="com"
+                        n="com24">(?)</seg> det vil sige, Overgangen i den moralske Verden
+                    oph&#x00F8;rte at v&#x00E6;re Synd, i det en Vei viistes, til giennem den allene
+                    at naae det Evige. Ikke at ville vandre denne Vei, at potensere Syndefaldet ved
+                        <seg type="com" n="com97">Sluttelse til</seg> Existensens laveste Deel, og
+                    bestemt Opponeren mod Gienforeningen, er <seg type="com" n="com98">Synd mod den
+                        Hellig Aand, som aldrig kan forlades</seg>. <seg type="com" n="com24"
+                        >(?)</seg>
+                    <pb type="edition" n="150" ed="US"/>
+                </p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com99">De nyere Philosopher</seg> have sat de evige Straffe i
+                    Tab af h&#x00F8;iere Lyksalighed. De meente nemlig, at efter D&#x00F8;den kom
+                    Mennesket til renere Anskuelse af Pligt og sit sande Vel, og vilde da, frit for
+                    det sandselige Legeme, gaae frem paa den Bane, han her udskeiede fra, og de
+                    s&#x00E6;tte da hans Ulyksalighed i Bevidstheden om, at have kunnet staae paa et
+                    h&#x00F8;iere Trin, dersom han allerede her i Livet havde helliget sig Dydens
+                    Tieneste.</p>
+                <p rend="firstIndent">Vi have Agtelse for det Menneskes Hierte, som f&#x00F8;rst
+                    opfandt denne Gisning, af Medynk over de Ulykkelige, som vi &#x00F8;nske alt
+                    Godt, naar de ei l&#x00E6;ngere kunne skade os; men inderlig maa vi harmes over
+                    disse S&#x00E6;t<pb type="edition" n="117" ed="VU"/>ningers Eftersnakkere, blant
+                    hvilke vi med Blussel regne <seg type="com" n="com100">os selv</seg>, medens vor
+                    Aand endnu bukkede sig under Autoritetens Aag.<pb type="text"
+                        facs="1807_61_fax038.jpg" n="158" ed="A"/>
+                </p>
+                <p rend="firstIndent">Man antager, at Mennesket paa hin Side Graven kan forbedre
+                    sig. Vi ville indr&#x00F8;mme det, som noget, vi &#x00F8;nske og ei bestemt
+                    kunne modsige; men at det der skulde v&#x00E6;re lettere end her, er aldeles
+                    urimeligt, ja oph&#x00E6;ver Begrebet om Moralitet.</p>
+                <p rend="firstIndent">Dersom Mennesket efter D&#x00F8;den kommer til renere
+                    Anskuelse af Lyksalighed, som vi paa n&#x00E6;rv&#x00E6;rende Standpunkt ville
+                    antage; dersom han vinder ved at befries fra Legemet, da maa Fristelserne der
+                    omringe ham, Vanskelighederne han har at bek&#x00E6;mpe, voxe i samme Forhold;
+                    thi lettelig indsees det, at naar paa Dydens Side var lutter Fordeel og
+                    Ski&#x00F8;nhed, paa Lastens derimod lutter Tab og H&#x00E6;slighed, da
+                    oph&#x00F8;rer Begrebet om Kamp, da fulgte Mennesket, ved at v&#x00E6;re dydig,
+                    de samme Motiver, han fordum fulgte ved at v&#x00E6;re lastefuld, da var ingen
+                    Sindsforandring, men kun en Ombytning af Navne.</p>
+                <p rend="firstIndent">Er det nu vist, at Menneskets Forbedring maatte hisset
+                    v&#x00E6;re ligesaa vanskelig som her, da er der slet ingen Grund til at
+                    formode, den snarere vilde finde Sted.</p>
+                <p rend="firstIndent">Dog var det kun Urimeligheder, der fandtes ved dette System,
+                    dem <app type="corrNote" select="yes"><lem wit="GV">kunde</lem><rdg wit="A">knnde</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> man tilgive; men at det istedet for at v&#x00E6;re
+                    menneskeki&#x00E6;rligt er menneskefiendsk, at det er egnet til at bestyrke
+                    Menneskene i <pb type="text" facs="1807_61_fax039.jpg" n="159" ed="A"/> deres
+                    blinde Gang paa Lastens Vei, og hindre deres Omvendelse, det kan ingen
+                    Retskaffen taale, og dertil b&#x00F8;r han ikke tie.</p>
+                <p rend="firstIndent">Vi maa tilstaae, at de der bestandig raabe paa Moralitet, have
+                    her v&#x00E6;ret saare konseqvente. Evigheden var dem en Torn i &#x00D8;iet,
+                    fordi den f&#x00F8;dte Forestillingen om Bel&#x00F8;nninger og Straffe, da de
+                    vilde have Dyden ud&#x00F8;vet allene for sin egen Skyld. Derfor oph&#x00E6;vede
+                    de Straffen, og sagde herved til Menneskene: I b&#x00F8;r v&#x00E6;re dydige,
+                    thi det er Eders praktiske Fornufts Bud, men <pb type="edition" n="151" ed="US"
+                    />i modsat Fald skulle I ei frygte for Straffen, thi vare I end nok saa
+                    lastefulde her, kunne I dog omvende Eder hisset, og der er det langt lettere, da
+                    I ingen Fristelser have til det Onde.</p>
+                <p rend="firstIndent">O hvilken Skare af Dydshelte maa ikke denne humane Opfordring
+                    have dannet!</p>
+                <p rend="firstIndent">Nu staae de, studsende af Forundring over at Sl&#x00E6;gten
+                    ikke er rykket n&#x00E6;rmere til Fuldkommenhed, da dog derom er dem bleven sagt
+                    saa mange deilige Ting.</p>
+                <p rend="firstIndent">Men kiendte de da ikke det sandselige kortsynede Menneske, der
+                        <pb type="edition" n="118" ed="VU"/>endog, naar han troer en ulyksalig
+                    Evighed, for at f&#x00F8;lge sine Lyster, saa gierne <seg type="com" n="com102"
+                        >ops&#x00E6;tter</seg> Omvendelse til D&#x00F8;dens N&#x00E6;rmelse!</p>
+                <p rend="firstIndent">Uden giftig Satire paa Menneskets Natur, t&#x00F8;r vi dristig
+                    paastaae, at blandt 1000 fulgte de <pb type="text" facs="1807_61_fax040.jpg"
+                        n="160" ed="A"/>999 den lokkende Synd, naar de kunde haabe, efter her at
+                    have t&#x00F8;mt Gl&#x00E6;dernes B&#x00E6;ger til Bunden, endnu hisset at blive
+                    lykkelige. Lettelig lod da Samvittighedens R&#x00F8;st sig nedd&#x00E6;mpe, og
+                    roelige vilde de synge, hvad vi allerede saa ofte h&#x00F8;rte: <lg n="1">
+                        <l>
+                            <seg type="comStart" n="com103"/>&#x201C;Jeg frygter slet ikke at blive
+                            fortabt</l>
+                        <l>Af den som har Vinen og Pigerne skabt.&#x201D;<seg type="comEnd"
+                                n="com103"/>
+                        </l>
+                    </lg>
+                </p>
+                <p rend="noIndent">Man vil indvende, at Philosopherne aldrig gave de Lastefulde Haab
+                    om saa h&#x00F8;i eller stor Lyksalighed, som de Dydige. Men beregner vel det
+                    efter Nydelse higende Menneske Aar, var det end Millioner &#x2014;
+                    <!-- skal stregen kodes i stedet? --> Grader, vare de end af et Mellemrum som
+                    fra Jorden til Himmelen? See vi da ikke daglig, at de med Gl&#x00E6;dens Udtryk
+                    i deres Aasyn styrte sig i Lastens aabne Sv&#x00E6;lg, ski&#x00F8;nt de med
+                    temmelig Sikkerhed kunne formode, at de der med sig begrave deres Formue,
+                    Sundhed og Liv, Ting der ligge saameget n&#x00E6;rmere ved deres Standpunkt.
+                    Men, sker dette, fordi de virkelig s&#x00E6;tte Nydelsen over Tabet af disse
+                    Ting? Hos nogle faa Tankel&#x00F8;se kan det maaskee v&#x00E6;re
+                    Tilf&#x00E6;ldet; men i Almindelighed vinder Lasten, fordi dens F&#x00F8;lger i
+                    Livet ei ere n&#x00F8;dvendige, men kunne mueligen undgaaes. Tabe nu de evige
+                    F&#x00F8;lger af Lasten ogsaa deres Vished, vorder Resultatet af den Ugudeliges
+                    Liv ikke v&#x00E6;sentligt og i Alt forskielligt fra det af den Gudfrygtiges; da
+                    bortfalder det Eviges hele Ind<pb type="text" facs="1807_61_fax041.jpg" n="161"
+                        ed="A"/>flydelse paa Moraliteten, og dermed Moraliteten selv, der ei har
+                    nogen Realitet <seg type="com" n="com39">uden</seg> ved stadigt Hensyn paa
+                    Hint.</p>
+                <p rend="firstIndent">Dersom de Ondes Ulyksalighed i Evigheden skulde bestaae i
+                    Erkiendelsen af den h&#x00F8;iere Lyksaligheds Tab, som de Gode nyde, da synes
+                    den at maatte have sin Grund i den sk&#x00E6;ndigste <pb type="edition" n="152"
+                        ed="US"/>Misundelse, da de stedse <seg type="com" n="com104"
+                        >n&#x00F8;de</seg> langt mere, end de havde giort sig v&#x00E6;rdige til;
+                    men hvorledes kan en saadan Last bestaae med Forbedringen?</p>
+                <p rend="firstIndent">Men, det er kun for at illudere, at man har anviist
+                    Ulyksaligheden en saa tvetydig Plads, fordi man nemlig ei vilde have Skin af at
+                    oph&#x00E6;ve al Forskiel mellem de Gode og Onde, som man virkelig giorde; thi
+                    disse maatte for det lavere Trin i Lyksalighed finde sig skadesl&#x00F8;se ved
+                    Erindringen af det gl&#x00E6;delige Liv, de havde f&#x00F8;rt.<pb type="edition"
+                        n="119" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Vel vide vi, man vil indvende, at efter D&#x00F8;den betragter
+                    Mennesket ei Livet eller dets Gl&#x00E6;der fra samme Synspunkt, som her paa
+                    Jorden; men denne Gietning mangler al Grund. Just deri bestaaer de Godes
+                    Triumph, at de i Evigheden finde deres Anskuelse af <seg type="com" n="com301"
+                        >Tiden</seg> stadf&#x00E6;stet, at de erkiende Realiteten af deres Ideer,
+                    see Virkeligheden knyttet til den Muelighed, hvori de levede. Hvorfor skal nu
+                    det Modsatte have Sted hos de Onde?<pb type="text" facs="1807_61_fax042.jpg"
+                        n="162" ed="A"/> Fordi, vil man svare, deres Anskuelse var vrang. Men
+                    beviser ikke de Godes rigtigere Anskuelse, at <seg type="com" n="com317"
+                        >de</seg> ogsaa i Livet kunde havt en saadan, men have modtvillig bortskudt
+                    den? F&#x00F8;lger deres Gemyt dem ikke over Graven, da ere de ei l&#x00E6;ngere
+                    de samme V&#x00E6;sner, men f&#x00F8;lger det dem, maa de ogsaa hisset lukke
+                    &#x00D8;iet for den rigtigere Anskuelse. Den umiddelbare F&#x00F8;lelse af et
+                    s&#x00F8;rgeligt Resultat kan l&#x00E6;re dem, at deres Gang i Livet var
+                    beregnet paa et ganske andet Maal, end de Gudfrygtiges; men det er ikke noget
+                    Nyt, det maatte de allerede vide i Livet, men de vilde ikke have andet Maal, end
+                    det, der kunde naaes uden Opofrelse af deres Gl&#x00E6;der. Da de i Livet ei
+                    havde Sands for de h&#x00F8;iere Gl&#x00E6;der, kunne de ei medbringe nogen
+                    anden Forestilling om Gl&#x00E6;de, end den, der passer sig paa hvad de her gave
+                    dette Navn.</p>
+                <p rend="firstIndent">Resultatet af denne Unders&#x00F8;gelse bliver da, at
+                    Fornuften ei indseer noget Middel til at forbedre de Ulykkelige paa hin Side
+                    Graven, og at den christelige Religion er enig baade med sig selv og Fornuften i
+                    det den till&#x00E6;gger deres Ulykke Evighed<note type="footnote">
+                        <p rend="noIndent">Dette er en haard Beskyldning baade mod <apptype="corrNote" select="yes"><lem wit="GV">Fornuft</lem><rdg wit="A">Fornnft</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> og Christendom. <hi rend="italic">&#x201C;Gud er
+                                Kierlighed&#x201D;</hi> og han skulde gi&#x00F8;re Skabninger <hi
+                                rend="italic">evig ulykkelige</hi>? Hvor kan Forfatterens Forstand
+                            og Hierte rime de to ting sammen?</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                            <!-- Intet linjeombrud f&#x00F8;r udgivers "signatur"; repr. ikke her. noten gengives som de andre-->
+                        </p>
+                    </note>. At Jesus ei l&#x00E6;rte noget bestemtere om de Ondes Ski&#x00E6;bne
+                    efter D&#x00F8;den var n&#x00F8;dvendigt;<pb type="text"
+                        facs="1807_61_fax043.jpg" n="163" ed="A"/> thi <seg type="com" n="com105"
+                        >han kom ikke for at tiene de Sunde, men kun dem, som have L&#x00E6;gedom
+                        behov</seg>.</p>
+                <p rend="firstIndent">Da Jesu L&#x00E6;re forkynder sig som Poesiens og
+                    Philosophiens givne Identitet, maa den n&#x00F8;dvendig v&#x00E6;re et <seg
+                        type="com" n="com106">Mysterium</seg>, og alle de, der, forledede af dens
+                    Bestanddele ei antage den derfor, maa fare vild. En F&#x00F8;lge heraf var at
+                    man troede at kunne reducere den snart til Poesie, snart til Philosophie.<pb
+                        type="edition" n="153" ed="US"/>
+                </p>
+                <p rend="firstIndent">Med Poesien forvexledes den saaledes i <seg type="com"
+                        n="com107">Katholicismens betydningsfuldere Periode</seg>, hvis Efterskin
+                        <seg type="com" n="com108">Digteren</seg> malte, da han qvad: <lg n="1">
+                        <l>
+                            <seg type="comStart" n="com109"/>
+                            <persName key="pe352">Raphael</persName> dichtete liebend, prophetisch
+                            ersann <persName key="pe515">Bonarotti</persName>,</l>
+                        <l>W&#x00E4;gte des Pantheons Dom stolz in den Aether hinauf.<seg
+                                type="comEnd" n="com109"/>
+                        </l>
+                    </lg>
+                </p>
+                <p rend="noIndent">En lignende Forvexling synes Tidernes Tegn atter at bebude; men
+                    med alt sit Glimrende, er den langt fra at v&#x00E6;re &#x00F8;nskv&#x00E6;rdig.
+                    For Poeten har <seg type="com" n="com16">Tilv&#x00E6;relsen</seg> tabt sin
+                    Interesse, og derved sin Vigtighed. Med Inderlighed slutter han sig til
+                    Religionens poetiske Deel, men taber sig just <pb type="edition" n="120" ed="VU"
+                    />derved saa let i uvirksom Beskuelse, og naar han tvinges til at tage Deel i
+                        <seg type="com" n="com16">Tilv&#x00E6;relsen</seg>, synes han ukiendt med
+                        <seg type="com" n="com342">Morallovens</seg>
+                    <seg type="com" n="com110">Skranker</seg>. Dette er Sv&#x00E6;rmerie i sin
+                    slette Betydning, men som ofte opkommer paa den uskyldigste Maade, i det
+                    Mennesket troer, at Jesu Religion <seg type="com" n="com318"
+                        >tilbagef&#x00F8;rte</seg>
+                    <seg type="com" n="com40">Samfundet</seg> med det <pb type="text"
+                        facs="1807_61_fax044.jpg" n="164" ed="A"/> Evige, og at man kan blive
+                    deelagtig deri ved at fierne &#x00D8;iet fra ethvert jordisk Forhold, og
+                    h&#x00E6;fte det stadig paa det Evige.</p>
+                <p rend="firstIndent">Den foregaaende Unders&#x00F8;gelse har viist os, at denne
+                    Troe, der ikke er v&#x00E6;sentlig forskiellig fra Gr&#x00E6;kernes,
+                    st&#x00F8;tter sig paa en aabenbar Illusion, men vi maa aldrig glemme, at intet
+                        <seg type="com" n="com39">uden</seg> denne Troe kan skabe Digteren; det maa
+                    derfor ikke undre os, naar <seg type="com" n="com305">han foragter
+                        Tilv&#x00E6;relsen</seg>, og end ikke synes giennemtr&#x00E6;ngt af den
+                    dybeste &#x00C6;refrygt for Moraliteten. Thi paa hans Standpunkt er det
+                    n&#x00F8;dvendigt. <seg type="com" n="com24">(?)</seg> Han kan ikke
+                    gl&#x00E6;des ved Frugten, fordi han, <seg type="com" n="com111">i Analogie af
+                        den lavere Natur</seg>, foruds&#x00E6;tter, at Blomsten maatte visne,
+                    f&#x00F8;r den kunde frembringes. Ogsaa her forledes han af sin eensidige
+                    Anskuelse, men uden den var han ikke Digter.</p>
+                <p rend="firstIndent">Vores Pligt er det derimod, ei at lade os forlede af ham, til
+                    at bortbytte vores, til det Evige ved Jesum fast knyttede Tilv&#x00E6;relse, med
+                    den vel mere glandsfulde, men bedragende og hastig bortilende, han tilbyder.
+                        <seg type="com" n="com215">&#x00D8;iebliklig</seg> kunne vi f&#x00F8;lge
+                    ham, og nyde en Forsmag paa Himmelens Salighed; men ved i Livet at ville holde
+                    den fast, gi&#x00F8;re vi os uv&#x00E6;rdige til den.</p>
+                <p rend="firstIndent">At <seg type="com" n="com40">Samfundet</seg> med det Evige er
+                    umueligt i Livet, erkl&#x00E6;rede Jesus selv, da han prisede <apptype="addNote" select="yes"><lem wit="A">Digteren</lem><note type="add">m&#x00E5;ske fejl for D&#x00F8;beren</note><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>
+                    <persName key="pe448">Johannes</persName> som <seg type="com" n="com113">den
+                        st&#x00F8;rste, der f&#x00F8;dtes af Qvinde</seg>, men l&#x00E6;gger til:
+                        <seg type="com" n="com114">dog er den mindste i Himmeriges Rige <pb
+                            type="text" facs="1807_61_fax045.jpg" n="165" ed="A"/>st&#x00F8;rre end
+                        han</seg>, og saare treffende charakteriserede <persName key="pe29"
+                        >G&#x00F6;the</persName> Menneskets Bestr&#x00E6;belse, ved Poesie at
+                    h&#x00E6;ve sig til det Evige, da han qvad:<pb type="edition" n="154" ed="US"/>
+                    <lg n="1">
+                        <l>
+                            <seg type="comStart" n="com115"/>Hebt er sich aufw&#x00E4;rts</l>
+                        <l>Und ber&#x00FC;hrt</l>
+                        <l>Mit dem Scheitel die Sterne,</l>
+                        <l>Nirgends haften dann</l>
+                        <l>Die unsichern Sohlen;</l>
+                        <l>Und mit ihm spielen</l>
+                        <l>Wolken und Winde.<seg type="comEnd" n="com115"/>
+                        </l>
+                    </lg>
+                </p>
+                <fw type="longLine"/>
+                <p rend="noIndent">I de sidst forl&#x00F8;bne Tider s&#x00F8;gte man at reducere
+                    Jesu Religion til Philosophie; men, uagtet vi heller ikke paa nogen Maade ville
+                        mis<pb type="edition" n="121" ed="VU"/>kiende Hensigten heraf, nemlig at
+                    gi&#x00F8;re den mere brugbar for Livet, mere frugtbar for Moraliteten, kunne vi
+                    dog ingenlunde bifalde disse Fors&#x00F8;g, eller &#x00F8;nske dem fortsatte.
+                    Dersom Philosophien kunde l&#x00F8;st Tilv&#x00E6;relsens Gaader, da havde Jesu
+                    L&#x00E6;re v&#x00E6;ret un&#x00F8;dvendig, men den kunde det ikke, og hvad maa
+                    Resultatet blive, naar det H&#x00F8;jere maa tr&#x00E6;de i det Laveres
+                    Tieneste?</p>
+                <p rend="firstIndent">Philosophien kan aldrig glemme, at den er Tidens kloge Datter,
+                    og da den ei kiender sin Moders F&#x00F8;dsel, maa den s&#x00E6;tte hende som
+                    det f&#x00F8;rste. Antagelsen af det Eviges <seg type="com" n="com20"
+                        >Tilv&#x00E6;r</seg>, og dets Forbindelse<pb type="text"
+                        facs="1807_61_fax046.jpg" n="166" ed="A"/> med <seg type="com" n="com16"
+                        >Tilv&#x00E6;relsen</seg>, hvorved den vil h&#x00E6;ve sig til Religion, er
+                    ikke dens eget Resultat, men en blot Eftergivenhed for Poesien. <seg type="com"
+                        n="com116">Jordlivet indslutter de betydende Ziffre, hvortil Evigheden kun
+                        f&#x00F8;ies som et Nul, istedet for at det selv burde v&#x00E6;re Nullet,
+                        der kun fik sin Betydning ved Stillingen mellem det Eviges Ziffre</seg>.</p>
+                <p rend="firstIndent">Uden at ville see de Urimeligheder og Modsigelser, hvori de
+                    giorde sig skyldige, antoge <seg type="com" n="com302">de nyere Theologer</seg>,
+                    eller, som de hellere vilde hedde, Religionsphilosopher, da de vare opdragne i
+                    den kritiske Philosophies Skole, at Mennesket endnu udtrykte sit Begreb heelt,
+                    at <app type="corrNote" select="yes"><lem wit="GV"><seg type="com" n="com342">Moralloven</seg></lem><rdg wit="A">Moralleven</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> h&#x00F8;rte til hans oprindelige V&#x00E6;sen, og at hans eneste Fald
+                    var Udskeielsen fra Pligternes Stie paa Sandselighedens blomstrende Veie.</p>
+                <p rend="firstIndent">Uden at vise os, hvorledes denne Strid var indkommet i
+                    Menneskets Natur, eller hvorledes den kunde oph&#x00F8;re, paalagde de os ved et
+                        <seg type="com" n="com118">kategorisk Imperativ</seg> at udrydde den Deel af
+                    vort V&#x00E6;sen, der stod deres S&#x00E6;tninger i Veien, og saaledes med
+                    Tiden vorde reen Intelligents. Da dette imidlertid ei kunde skee i Livet, lovede
+                    de os et Slags Evighed, der egentlig kun var en <pb type="edition" n="155"
+                        ed="US"/>Forts&#x00E6;ttelse af <seg type="com" n="com301">Tiden</seg>, da
+                        <seg type="com" n="com342">Moralloven</seg> stedse skulde f&#x00F8;lge os
+                    med sin truende Haand<note type="footnote">
+                        <p rend="noIndent">
+                            <app type="corrNote" select="yes"><lem wit="GV">Det</lem><rdg wit="A">Der</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>
+                            <hi rend="italic">truende</hi> fraregnet &#x2013; skal den da ikke
+                            det?</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>.<pb type="text" facs="1807_61_fax047.jpg" n="167" ed="A"/>
+                </p>
+                <p rend="firstIndent">Dette kaldte de Jesu rensede Religion, og vist nok var den
+                    renset for alt det Religi&#x00F8;se, som udm&#x00E6;rker den, thi her er intet
+                    h&#x00F8;iere Liv i Tidens Ophav, ingen L&#x00E6;ngsel efter dets Fornyelse,
+                    ingen Forbindelse mellem Jorden og Himmelen, uden Moralens Ki&#x00E6;de, der
+                    selv skal stige fra neden opad. Ahnelsen af <seg type="com" n="com319"
+                        >Tilv&#x00E6;relsens</seg> Usselhed og det Eviges Herlighed kaldtes
+                    Sv&#x00E6;rmerie, der neppe burde taales i Digterens Mund, og Mennesket blev til
+                    en <seg type="com" n="com341">Jette</seg>, der med sin Haand, hvis han vilde,
+                    kunde forandre Stiernernes Gang, og, ledet af den blotte Forstand, vandre med
+                    stadige Skridt paa Himmelens Buer. Man loe eller man harmedes over <seg
+                        type="com" n="com119">Digteren</seg>, der turde bagvaske Mennesket, og
+                    forringe hans Adel, ved at sige om ham:<pb type="edition" n="122" ed="VU"/>
+                    <lg n="2">
+                        <l>
+                            <seg type="comStart" n="com120"/>Steht er mit festen</l>
+                        <l>Markigen Knochen</l>
+                        <l>Auf der wohlgegr&#x00FC;ndeten</l>
+                        <l>Dauernden Erde,</l>
+                        <l>Reicht er nicht auf</l>
+                        <l>Nur mit der Eiche</l>
+                        <l>Oder der Rebe</l>
+                        <l>Sich zu vergleichen.<seg type="comEnd" n="com120"/>
+                        </l>
+                    </lg>
+                </p>
+                <p rend="noIndent">
+                    <seg type="com" n="com321">Ogsaa vi</seg> str&#x00E6;bte engang at dele
+                    Menneskets <seg type="com" n="com345">glimrende</seg> Triumph, vi berusedes af
+                    Haabet at kunne staae som frit Fornuftv&#x00E6;sen paa den faste Jord, og kun
+                    sparsomt tildele vore svagere Br&#x00F8;dre <pb type="text"
+                        facs="1807_61_fax048.jpg" n="168" ed="A"/>Himmelens Tr&#x00F8;st, indtil
+                    deres &#x00D8;ie blev klart som vores. Vi rensede vor Religion fra alt det
+                    Urimelige, Jesus og hans Apostle havde l&#x00E6;rt, blot for at l&#x00E6;mpe sig
+                    efter deres svage Tidsalder, som de dog ellers vare uforsigtige nok til at revse
+                    uden Skaansel med Ordets det skarpe, tveeggede Sv&#x00E6;rd. Men, snart gyste vi
+                    for den n&#x00F8;gne Beenrad, der stod for os uden Kraft og Marv. Liv og Varme
+                    forlod os, og hurtig maatte vi flygte til Poesiens Straalebarm, for der atter at
+                    opgl&#x00F8;des, saa vi med det indre &#x00D8;ie kunde skue Jesu L&#x00E6;res
+                    h&#x00F8;ie <seg type="com" n="com48">Sands</seg>.</p>
+                <p rend="firstIndent">Ikke ville vi derfor ringeagte Poesie eller Philosophie, fordi
+                    vi s&#x00E6;tte Religionens Aabenbarelse som det h&#x00F8;ieste og eneste
+                    Fyldestgi&#x00F8;rende; thi vi vide saare vel, at enhver Videnskab har sin
+                    s&#x00E6;regne Bane til et og samme Punkt, som den med en vis
+                    N&#x00F8;dvendighed maa f&#x00F8;lge; men de Christnes Pligt er det, at hindre
+                        <pb type="edition" n="156" ed="US"/>enhver Forvexling, der betager Jesu
+                    Religion sit Udm&#x00E6;rkede, og dette kan neppe bedre skee, end ved at lade
+                    den udtale sig heel i vore Templer.</p>
+                <p rend="firstIndent">Vi vide det, man troer: Skolerne ere Stedet, hvor
+                    Religionskundskaben b&#x00F8;r hentes, og at Kirkerne ved disses Forbedring
+                    ville blive overfl&#x00F8;dige. Men, hvilket <seg type="com" n="com121"
+                        >Raserie</seg>! I Skolerne b&#x00F8;r Barnet samle de Kundskaber, han efter
+                    sin tilkommende<pb type="text" facs="1807_61_fax049.jpg" n="169" ed="A"/>
+                    Stilling i Borgersamfundet beh&#x00F8;ver, men ski&#x00F8;nt han kan
+                    l&#x00E6;re, hvad Jesus har sagt, vil han aldrig der kunne l&#x00E6;re at kiende
+                    Jesu Religion. Vi maa dog ikke glemme, at hos Barnet slumrer endnu hin Ahnelse
+                    af det Evige, og det f&#x00F8;ler ingen Trang til Religion, kan altsaa umuelig
+                    f&#x00F8;le Interesse for de h&#x00F8;ieste Sandheder, is&#x00E6;r da disse
+                    ligge saa ganske uden for Erfaringens Kreds, i hvilken Barnet bev&#x00E6;ger
+                    sig, at de endog ere en <seg type="com" n="com122">Daarlighed</seg> for den
+                    almindelige Forstand, der vil anvende de fra det Sandselige abstraherede Love
+                    paa det Oversandselige. Maaskee var den ei heller en af de ube<pb type="edition"
+                        n="123" ed="VU"/>tydeligste Aarsager til den Ringeagt for Religion, der i de
+                    sidste 10 Aar som en Pest bef&#x00E6;ngte Menneskene, at <seg type="com"
+                        n="com340">man havde giort det Helligste til Barnesyssel, og brugt til
+                        Stave&#x00F8;velser de dybeste Toner</seg>. Her have vi end en Grund, hvi
+                    Menneskene bortkastede Religionen tilligemed deres andre Dukker, som Noget, der
+                    var uanst&#x00E6;ndigt for M&#x00E6;nd. Takket v&#x00E6;re den forstandige
+                    Tidsalder<!-- kommentar? -->, fordi den, ski&#x00F8;nt ikke stedse af
+                    &#x00C6;rb&#x00F8;dighed for Religionen, udrev Catechismerne af Barnets Haand!
+                    Nei, Christi Religion er <seg type="com" n="com123">Guds hemmelige
+                    Viisdom</seg>, og aldrig kan den blive almindelig erkiendt <seg type="com"
+                        n="com39">uden</seg> ved en Symbolik, der f&#x00F8;rer den n&#x00E6;rmere
+                    frem for Beskuelsen. Men ligesom Jesu Religion er langt h&#x00F8;iere end nogen
+                    af Oldtidens Mysterier, saaledes maa ogsaa dens<pb type="text"
+                        facs="1807_61_fax050.jpg" n="170" ed="A"/> Symbolik v&#x00E6;re langt
+                    fuldkomnere, ei som Hieroglyfer dunkelt hentyde paa den, men v&#x00E6;re dens
+                    rene Aftryk, og heri ligger Begrebet om christelig Liturgie, eller udvortes
+                    Gudstieneste. Er da Jesu Religion Poesiens og Philosophiens Identitet med <seg
+                        type="com" n="com51">Tendents til</seg> Religion, da maa den ogsaa vise sig
+                    saaledes i Liturgien. Men, fremstiltes den kun i sin h&#x00F8;ieste Potens, da
+                    vandt den intet ved Fremstillingen. Poesien og Philosophien maa derfor
+                    tr&#x00E6;de frem i deres eiendommelige Dragt, men de maa have et h&#x00F8;ieste
+                    Punkt, hvori de forenes, hvor de samlede fremstille Jesu Religion som det <seg
+                        type="com" n="com67">Endeliges Forsoning med det Evige</seg>, og knytte sig
+                    til Religion som det inderligste <seg type="com" n="com300">Samfund</seg> mellem
+                    begge.</p>
+                <p rend="firstIndent">Betragte vi nu den f&#x00F8;rste christelige Liturgie saaledes
+                    som vi finde den angivet i <seg type="com" n="com124">Apostlernes Skrivter</seg>
+                    fra dette Synspunkt, <pb type="edition" n="157" ed="US"/>da ville vi see, at den
+                    fuldkommen stemmede mod de Fordringer, vi nys giorde.</p>
+                <p rend="firstIndent">Den bestod i at l&#x00E6;re og prophetere. Hvad var
+                    L&#x00E6;rdommen <seg type="com" n="com303">uden</seg> Philosophien anvendt paa
+                    Livet, og knyttet til <seg type="com" n="com125">L&#x00E6;ren om Forligelsen
+                        mellem Gud og Mennesket ved Christum</seg>? Hvad var hin Propheteren <seg
+                        type="com" n="com303">uden</seg> en Flugt paa Poesiens hellige Vinge ud <apptype="corrNote" select="yes"><lem wit="GV">over</lem><rdg wit="A">vver</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Tilv&#x00E6;relsen til <seg type="com" n="com126">den ny Himmel og ny
+                        Jord, Christus lovede sine Troende</seg>?<pb type="text"
+                        facs="1807_61_fax051.jpg" n="171" ed="A"/>
+                </p>
+                <p rend="firstIndent">Sakramenterne, Daaben og Nadveren udgiorde Liturgiens nederste
+                    og &#x00F8;verste Punkt. Ved Daaben giortes Mennesket deelagtigt i den skeete
+                    Forsoning, antoges til en Jesu Christi Tiener, og indviedes saaledes til
+                    Religion. Nadveren var Kulminationspunktet for det Poetiske i Liturgien, thi her
+                    ber&#x00F8;rte Mennesket det H&#x00F8;ieste og Helligste, mod <apptype="corrNote" select="yes"><lem wit="GV">hvilket</lem><rdg wit="A">hviiket</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> han str&#x00E6;bte. Men her forenede tillige Philosophien sig med
+                    Poesien; thi dens Maal i Liturgien kunde ene v&#x00E6;re, at gi&#x00F8;re
+                    Mennesket v&#x00E6;rdigt til Forening med det Himmelske.</p>
+                <p rend="firstIndent">Nu f&#x00F8;rst kunne vi ret skue <seg type="com" n="com127"
+                        >Sandsen af</seg> Jesu betydningsfulde Ord ved <pb type="edition" n="124"
+                        ed="VU"/>Nadverens Indstiftelse: <seg type="com" n="com128">Gi&#x00F8;rer
+                        dette til min Ihukommelse!</seg> Sagt til Apostelerne maatte det hedde:
+                    dette v&#x00E6;re Eder en kraftig Mindelse om at I have seet hvad mange
+                    Propheter og Konger og Vise &#x00F8;nskede at see, men bortd&#x00F8;de i Haabet
+                    &#x2014; det Evige i mig forenet med det Endelige, det Endelige ved mig forsonet
+                    med det Evige.</p>
+                <p rend="firstIndent">Hin f&#x00F8;rste Liturgie er da Urtypen, hvorefter de
+                    Christnes stedse maa v&#x00E6;re indrettet, naar den skal v&#x00E6;re
+                    hensigtsm&#x00E6;ssig. Intet kan derfor v&#x00E6;re <seg type="com" n="com129"
+                        >daarligere</seg> end <seg type="com" n="com130">den Paastand, at Liturgien
+                        skal skride frem med Tiden</seg>, da den tvertimod, uafh&#x00E6;ngig af
+                    samme, ene b&#x00F8;r rette sig efter hvad den skal udtrykke,
+                    N&#x00E6;rmelsen<!-- evt. com om Steffens Appr. --> til det Evige, og kan, naar
+                        den<pb type="text" facs="1807_61_fax052.jpg" n="172" ed="A"/>engang passer,
+                    ligesaa lidet forandres som Religionen selv<note type="footnote">
+                        <p rend="noIndent">Denne Herr Forfatterens Bem&#x00E6;rkelse finder jeg at
+                            v&#x00E6;re saa sand som ski&#x00F8;n &#x2014; ret et Ord i Tide.
+                            Imidlertid kan vor Liturgie derfor gierne modtage et og andet forbedret
+                            Udtryk. Den maa gierne fornyes, og tr&#x00E6;nger virkelig til en
+                            Reformation. Kun maa man ikke ville reformere Christendommen ganske
+                            bort.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udgiv.</hi>
+                        </p>
+                    </note>. Mon det ikke <seg type="com" n="com131">v&#x00E6;re</seg> en dunkel
+                    Ahnelse af denne inderlige Harmonie mellem Liturgie og Religion, der lader
+                    Almuen i hin see dennes Forandring?</p>
+                <p rend="firstIndent">Tanken om, at lade Liturgien lempe sig efter Tiden, kunde
+                    f&#x00F8;rst opstaae, efterat <seg type="com" n="com132">man havde hyldet den
+                        S&#x00E6;tning, at Tiden f&#x00F8;dte Christendommen, hvilket jo dog er
+                        noget ganske andet end at Christus kom i Tidens Fylde</seg>. Billedet kan
+                    saaledes ford&#x00E6;rves og for&#x00E6;ldes, at det tr&#x00E6;nger til en heel
+                    Fornyelse, hvis det ei skal tabe al Lighed med Originalen; men at Denne skulde
+                    kunne udvikle sig af Hints Ruiner er dog vel bestemt modsigende.</p>
+                <p rend="firstIndent">Vist er det, at Mennesket kan stige i Kundskab; men, mon det
+                    ikke <seg type="com" n="com131">v&#x00E6;re</seg> hans h&#x00F8;ieste Trin paa
+                    Jorden, at kunne give al <pb type="edition" n="158" ed="US"/>sin Kundskab <seg
+                        type="com" n="com51">Tendents til</seg> det Evige? Saa t&#x00E6;nke vel ikke
+                    de, der<pb type="text" facs="1807_61_fax053.jpg" n="173" ed="A"/> ansee den alt
+                    opl&#x00F8;sende Forstand for Menneskets H&#x00F8;ieste; thi for den er ogsaa
+                    hans h&#x00F8;ieste Maal at kunne undv&#x00E6;re det Evige; men lad dem
+                    str&#x00E6;be did! Vi ville troe, at den st&#x00F8;rste Udvikling er da, naar
+                    Livet med alle dets Ph&#x00E6;nomener og Videnskaber anskues i dets Relation til
+                    de evige Urbilleder, kort, naar hele Livet vorder Liturgie, thi Religion kan det
+                    kun vorde hisset. <seg type="com" n="com336">(??)</seg>
+                </p>
+                <p rend="firstIndent">Men fordi vi aldrig maa tabe den f&#x00F8;rste christelige
+                    Liturgie af Sigte ved Indretningen af vores, derfor er det dog tilladt, <apptype="corrNote" select="yes"><lem wit="GV">ja</lem><rdg wit="A">ia</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> endog Pligt at udfylde den til et fremadskridende Heelt, og benytte alle
+                    vor Tidsalders Fordele til at for&#x00F8;ge Fremstillingens V&#x00E6;rdighed.
+                    Kun maa vi stedse huske, hvad det er som skal fremstilles, og aldrig glemme de
+                    Punkter i Daaben og Nadveren, mellem hvilke vi maa bev&#x00E6;ge os.</p>
+                <p rend="firstIndent">Hvorvidt den n&#x00E6;rv&#x00E6;rende Liturgie i sin mere
+                    udstrakte Bem&#x00E6;rkelse, eller det som foregaaer i vore Kirker, svarer til
+                    disse Fordringer, skal det f&#x00F8;lgende Oversyn vise.<pb type="edition"
+                        n="125" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Staae vore Kirker end ikke tomme, er det dog bekiendt, at
+                    intet Menneske af god Tone mere bes&#x00F8;ger dem, <seg type="com" n="com39"
+                        >uden</seg> enten for at faae sit <seg type="com" n="com134">&#x00D8;re
+                        kildret</seg>, eller for Exemplets Skyld, eller af mindre &#x00E6;dle
+                    Grunde. Almuen selv f&#x00F8;ler ei l&#x00E6;nger den<pb type="text"
+                        facs="1807_61_fax054.jpg" n="174" ed="A"/> Trang til at m&#x00F8;de selv i
+                    Herrens Huus, og kommer paa mange Steder kun <seg type="com" n="com11"
+                        >stundum</seg> af Vane. Nogle have i denne Anledning komplimenteret vor
+                    Tidsalder, som om det var den stigende Oplysning, og Erkiendelse af den
+                    vigtigere moralske Kultur, der t&#x00F8;mte vore Kirker, og Tidsalderen har
+                    ogsaa her h&#x00E6;vdet sin Ret til Navnet, en forf&#x00E6;ngelig Qvinde, i det
+                    den l&#x00F8;nnede sine Tilbedere med et kierligt Smiil, og dog lod som den
+                    vilde gi&#x00F8;re Indvendinger mod det smigrende Udsagn.</p>
+                <p rend="firstIndent">Vi ville slet ikke n&#x00E6;gte, at den temmelig h&#x00F8;it
+                    stegne Ligegyldighed for alt Helligt paa Jorden og i Himmelen, som man, <seg
+                        type="com" n="com135">ventelig</seg> ironisk, kalder Oplysning, afholder
+                    Mange fra vore Kirker; men vi beh&#x00F8;ve slet ikke at gaae uden for disse,
+                    for at opdage, hvad der kan bev&#x00E6;ge det virkelig religi&#x00F8;se Menneske
+                    til at blive borte af de Fleste. Vi maa selv finde, det n&#x00E6;sten er
+                    umueligt der at h&#x00E6;ve sig over det Endelige, da det omringer, indslutter
+                    os overalt, tr&#x00E6;der stedse frem under <seg type="com" n="com322"
+                        >varslende</seg> Gestalter, der synes at k&#x00E6;mpe med hinanden om
+                    &#x00C6;ren for vor dybeste Nedtrykkelse i <seg type="com" n="com319"
+                        >Tilv&#x00E6;relsens</seg> Sump.</p>
+                <p rend="firstIndent">Men er det den foreskrevne Deel af Liturgien, eller den til
+                        <pb type="edition" n="159" ed="US"/>Pr&#x00E6;sten overladte, eller
+                    Udf&#x00F8;relsen af begge, der foraarsager det? Vi ville see det.</p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com323">Liturgien inddeler sig selv i den opl&#x00F8;ftende
+                        og undervisende</seg>. Hin kan forene sig med<pb type="text"
+                        facs="1807_61_fax055.jpg" n="175" ed="A"/> denne, men denne aldrig med hin
+                    uden Skade for begge.</p>
+                <p rend="firstIndent">Vi ville betragte dem saaledes som vi konseqvent troe de burde
+                    v&#x00E6;re, som de under n&#x00E6;rv&#x00E6;rende Lovbestemmelser kunne
+                    v&#x00E6;re, og som de lade sig tilsyne.</p>
+                <p rend="firstIndent">Til Liturgiens undervisende Deel regne vi kun i Almindelighed
+                    Pr&#x00E6;dikenen. Thi Taler ved Brudevielser og andre Leiligheder har et mere
+                    indskr&#x00E6;nket Maal, og maa, med Hensyn til Hovedprincipet mere rette sig
+                    efter de paagieldende Individers Tarv: Catechisationen er en Gientagelse og
+                    Forts&#x00E6;ttelse af Skoleunderviisningen, der ei her kan komme under
+                    Betragtning.</p>
+                <p rend="firstIndent">Pr&#x00E6;sten tr&#x00E6;der frem paa det oph&#x00F8;iede
+                    Sted, og vi maa vente af hans Mund at h&#x00F8;re de h&#x00F8;ie Sandheder, om
+                    Menneskets dybe Trang til Himmelens Veiledning og Tr&#x00F8;st, om Guds evige
+                    Raadslutninger til dets Held <pb type="edition" n="126" ed="VU"/>og Frelse, om
+                    Jesu Komme i Tidens Fylde, og da: om hvad vi, <app type="combNote" select="yes"><lem wit="GV">giennemtr&#x00E6;ngte</lem><rdg wit="A">Giennemtr&#x00E6;ng te</rdg><note type="add">bindestreg mangler ved linjeskift</note><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> af <app type="corrNote" select="yes"><lem wit="GV">varm</lem><rdg wit="A">varm.</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Kierlighed til Gud og Jesus, <seg type="com" n="com136">dybt
+                        f&#x00F8;lende med <persName key="pe343">Paulus</persName>, det var langt
+                        bedre at fare herfra og v&#x00E6;re med Herren</seg>, b&#x00F8;r
+                    gi&#x00F8;re og undflye for at kunne tage Deel i den skeete Forsoning; for at
+                    kunne indgaae i <seg type="com" n="com137">det himmelske Jerusalem, der ei
+                        t&#x00F8;r betr&#x00E6;des med besmittet Fod</seg>. Eller vi maa vente at
+                    h&#x00F8;re, hvorledes vi stedse kunne vise os som <pb type="text"
+                        facs="1807_61_fax056.jpg" n="176" ed="A"/>troe <seg type="com" n="com138"
+                        >Arbeidere i Herrens Viingaard</seg>, der ufortr&#x00F8;dne plante og vande,
+                    og nedbede Vext fra Gud i det H&#x00F8;ie; uden at tabe Modet, naar de hvinende
+                    Storme kn&#x00E6;kke de sp&#x00E6;de Ranker, hvis modne Druer vi haabede at
+                    bringe Herren, som et velbehageligt Offer. Eller vi maa vorde udrustede med
+                    Troens og Haabets de herlige Vaaben mod Fristelsens Anfald, saa vi l&#x00E6;re,
+                    ei at b&#x00F8;ie &#x00D8;ret til de onde Lysters lokkende Stemme, eller skue
+                    hen til de tryllende, snart af Guldets Lue glimrende, snart med Nydelsens
+                    flagrende b&#x00F8;lgende <seg type="com" n="com56">Kl&#x00E6;demon</seg>
+                    d&#x00E6;kkede Gestalter, som de opstille for vort &#x00D8;ie.</p>
+                <p rend="firstIndent">Dette eller noget Saadant maa vi vente at h&#x00F8;re tolket
+                    med v&#x00E6;rdige Ord, og med den dybe F&#x00F8;lelses ant&#x00E6;ndende Ild.
+                    Derfor staaer Taleren paa det oph&#x00F8;iede Sted, for at hans Aande ligesom
+                    skulde indgyde os den guddommelige Flamme, hvoraf hans Indre br&#x00E6;nder, og
+                    ligesom for <seg type="com" n="com139">beskuelig</seg> at vise os, Mennesket
+                    b&#x00F8;r staae mellem Jorden og Himmelen, tage Deel i Livet, men med stadigt
+                    Hensyn paa det H&#x00F8;iere, saa han ei f&#x00E6;ster <pb type="edition"
+                        n="160" ed="US"/>sig til det, og selv lammer <seg type="com" n="com140">de
+                        Vinger, der skulle h&#x00E6;ve ham op i Lysets herlige Egne</seg>.</p>
+                <p rend="firstIndent">Nu opstaaer Sp&#x00F8;rgsmaalet: viser det sig, at
+                    M&#x00E6;ngden blandt Pr&#x00E6;sterne erkiender disse vore retm&#x00E6;ssige
+                        Fordringer?<pb type="text" facs="1807_61_fax057.jpg" n="177" ed="A"/>
+                </p>
+                <p rend="firstIndent">Det gi&#x00F8;r os ondt, at vi maa svare paa det bestemteste:
+                    Nei! Mange kunne ikke opfylde en stor Deel af Fordringerne, og Mange ville ikke.
+                    Havde vort &#x00D8;nske V&#x00E6;gt, som det har Grund og Vigtighed, da ville vi
+                    her forene det med den &#x00E6;dle <hi rend="italic">
+                        <persName key="pe505"><seg type="com" n="com141">Fallesens</seg></persName>,</hi> at der dog maatte s&#x00F8;rges for de theologiske
+                    Candidaters Dueliggi&#x00F8;relse til Pr&#x00E6;dike-Embedet, og at der maatte
+                    tages strengt Hensyn paa deres moralske Characteer; thi grueligt er det, at
+                    h&#x00F8;re Pr&#x00E6;ster, som hverken kunne tale eller skrive dansk, og som
+                    aldrig fik andet Begreb om <seg type="com" n="com142">Actionen</seg>, end det de
+                    tydede sig til hos <persName key="pe503"><seg type="com" n="com306">Qvinctilian</seg></persName>, og for l&#x00E6;nge siden glemte. Forargeligt er det, at
+                    h&#x00F8;re Herrens Ord af en bandende J&#x00E6;ger, der kun glemmer Ederne,
+                    saal&#x00E6;nge han, utaalmodig nok, maa staae paa det hellige Sted, eller af en
+                    Ryggesl&#x00F8;s, af hvis Mund vi <!-- et fejlagtigt mellemrum?-->uden for
+                    Templet h&#x00F8;re raadden Snak og letf&#x00E6;rdig Skiemt, eller overhovedet
+                    af en tvetydig Mand.<pb type="edition" n="127" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Langt <seg type="com" n="com143">v&#x00E6;re</seg> det fra os,
+                    selv paa fierneste Maade, herved at ville beskylde Nogen, eller kaste mindste
+                    Skygge paa en Stand, der kan v&#x00E6;re saa h&#x00E6;derv&#x00E6;rdig; men at
+                    noget Lignende baade har v&#x00E6;ret og kan v&#x00E6;re Tilf&#x00E6;ldet,
+                    n&#x00E6;gter vist Ingen.</p>
+                <p rend="firstIndent">Dog, vi ville vende tilbage til vor egentlige Hensigt, at
+                    characterisere Nutidens Pr&#x00E6;dikemaade. <pb type="text"
+                        facs="1807_61_fax058.jpg" n="178" ed="A"/> Naar vi undtage de Faa, der med
+                    uddannede Evner forbinde Flid og Nidki&#x00E6;rhed, og forkynde Jesu <hi
+                        rend="italic">hele</hi> L&#x00E6;re, da maa vi inddele Pr&#x00E6;sterne i de
+                    dogmatiske og <seg type="com" n="com144">moralske</seg>.</p>
+                <p rend="firstIndent">De Dogmatiske foredrage Systemet uden Frugtbarhed for Livet,
+                    og uden sand Relation til det Evige; thi den der stedse slaaer omkring sig med
+                    Treenighed, Jesus og hans Forsoning, ahner slet ikke disse L&#x00E6;rdommes
+                    h&#x00F8;ie Betydning. Fra disse Kirker maa vi blive borte, eller sove.</p>
+                <p rend="firstIndent">De moralske Pr&#x00E6;ster stemme deri overeens, at de giennem
+                    hele Aar &#x00E6;ngstlig str&#x00E6;be at undgaae N&#x00E6;vnelsen af det
+                    Helligste, som frygtede de for at besmitte det ved uv&#x00E6;rdigt Selskab; men
+                    for ikke at blive eensidige, maa vi inddele dem i trende Klasser:</p>
+                <p rend="firstIndent">De der baade mangle Talenter og Virksomhed,</p>
+                <p rend="firstIndent">De der mangle een af Delene,</p>
+                <p rend="firstIndent">De der have begge.</p>
+                <p rend="firstIndent">Hos de F&#x00F8;rste sove vi ligesaa trygt som hos de
+                    Dogmatiske. <pb type="edition" n="161" ed="US"/>Thi de blive slet ikke mere
+                    frugtbare for Livet, fordi de stedse dreie sig om dette Punkt, og Forskiellen er
+                    blot, at vor S&#x00F8;vn bliver kortere, da disse Herrer sielden have megen Tid
+                    at spilde i Kirken, men maa hiem at see til Heste og K&#x00F8;er, Plov og
+                    M&#x00F8;dding. Ski&#x00F8;nt Disses Antal vel ikke er saa saare lidet, troe vi
+                    dog gierne, at den anden<pb type="text" facs="1807_61_fax059.jpg" n="179" ed="A"
+                    /> Klasse er langt talrigere; men langt mere Udbytte kunne vi ei vente af deres
+                    Taler.</p>
+                <p rend="firstIndent">Den der enten lader sine Evner slumre, fordi han selv vil
+                    sove, eller ei anseer en Pr&#x00E6;dikens Udarbeidelse som v&#x00E6;rdigt Brug
+                    af samme, synker i den sande V&#x00E6;gtskaal ned til hine f&#x00F8;rst
+                    N&#x00E6;vnte, om end hans udvortes Foredrag giver Talen et ski&#x00F8;nnere
+                    Anstr&#x00F8;g, og holder vore &#x00D8;ine aabne.</p>
+                <p rend="firstIndent">Den der vil v&#x00E6;re ret virksom, uden at kunne h&#x00E6;ve
+                    sig til den Standpunkt, hvorfra han burde overskue sin Virkekreds, og derfor
+                    baade vil udbrede Agerdyrkning og Lovkundskab, Physik og Medicin, med lidt Moral
+                    og Religion, vil neppe stifte megen Nytte, men i al Fald mindst opfylde de
+                    Fordringer, vi i Kirken gi&#x00F8;re til ham. Han vil v&#x00E6;re
+                    popul&#x00E6;r, og nedstemme sig til Almuens Fatteevne, og ret som de ikke kunde
+                        <pb type="edition" n="128" ed="VU"/>modtage andre Begreber, end dem der
+                    v&#x00E6;kkes i Stald og Lade, vil han vel endog paa Pr&#x00E6;dikestolen, til
+                    stor Opbyggelse fort&#x00E6;lle sine Tilh&#x00F8;rere: &#x201C;at de ei burde
+                    spilde deres Hestes Gi&#x00F8;dning paa Landevejen; at Vinteren dog ikke har
+                    v&#x00E6;ret saa grumme slem, da det dog var <seg type="com" n="com145"
+                        >ovent&#x00F8;rre</seg> for Mennesker og F&#x00E6;e; at de b&#x00F8;r takke
+                    Gud fordi han lagde Jord paa Jorden <seg type="com" n="com337">(!!!)</seg> da de
+                    ellers ei kunde boe derpaa,&#x201D; og mere af samme Suurdei.<pb type="text"
+                        facs="1807_61_fax060.jpg" n="180" ed="A"/>
+                </p>
+                <p rend="firstIndent">Ingen, der kiender Nutidens Pr&#x00E6;dikemaade, endog kun af
+                    hvad vi desv&#x00E6;rre! maa l&#x00E6;se paa Prent, vil kalde dette overdrevent,
+                    men Ingen kan heller undre sig over, at de virkelig Religi&#x00F8;se holde sig
+                    borte fra saadanne Pr&#x00E6;sters Kirker.</p>
+                <p rend="firstIndent">Men nu <seg type="comStart" n="com146"/>de M&#x00E6;nd, der
+                    gi&#x00F8;re Menneskets moralske Forbedring, i det mindste i Kirken, til deres
+                    eneste Maal; som, uden at f&#x00F8;res vild af <seg type="com" n="com147">det
+                        daarlige Skrig</seg> om Pr&#x00E6;dikenens Un&#x00F8;dvendighed og
+                    Gavnl&#x00F8;shed, opbyde alle deres indre og ydre Evner for at kunne tale lige
+                    kraftig til Forstand og Hierte; som opmuntre til Dyden og tordne mod Lasten med
+                    Varme og F&#x00F8;lelse;<seg type="comEnd" n="com146"/> mon de ikke udfylde
+                    Posten, hvorpaa de staae som christelige <seg type="com" n="com204"
+                        >Religionsl&#x00E6;rere</seg> ligesaa godt som de, der give os Jesu hele
+                    L&#x00E6;re?</p>
+                <p rend="firstIndent">Vi n&#x00F8;des til at svare: Nei! ski&#x00F8;nt vi saare vel
+                    indsee, at mange agtv&#x00E6;rdige og t&#x00E6;nkende M&#x00E6;nd ville svare:
+                    ja, og stemple vor Paastand med Navnet Sv&#x00E6;rmerie. Saavel herfor, som
+                    fordi disse Moralitetens Talsm&#x00E6;nd ere de eneste, som fortiene Op<pb
+                        type="edition" n="162" ed="US"/>m&#x00E6;rksomhed, ville vi n&#x00F8;iere
+                    betragte saadanne Talers V&#x00E6;sen, og sammenligne det med Maalet for
+                    christelig Religion.</p>
+                <p rend="firstIndent">Den Pr&#x00E6;st, der troer, han ei b&#x00F8;r l&#x00E6;gge
+                    nogen V&#x00E6;gt paa de <app type="corrNote" select="yes"><lem wit="GV">vigtigste</lem><rdg wit="A">vigtig ste</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Bev&#x00E6;ggrunde til Dyden som Aabenbaringen fremstiller: Guds Villie,
+                    Kierlighed til Gud og Jesum, og Gienforening med det<pb type="text"
+                        facs="1807_61_fax061.jpg" n="181" ed="A"/> Evige; som paastaaer, at
+                    Menneskets Pligter staae i n&#x00F8;iagtigt Forhold til hans egne
+                    Kr&#x00E6;fter, og derfor blot driver paa Brugen af disse; han reducerer Jesu
+                    Religion til Philosophie. Betager nu en saadan Fremf&#x00E6;rd Jesu Religion sit
+                    h&#x00F8;ieste Fortrin, i det vi derved <seg type="com" n="com148"
+                        >indknibes</seg> mellem Tilv&#x00E6;relsens Gaader, istedet for at faae dem
+                    l&#x00F8;ste, hvilket vi troe at have beviist; saa maa vi, selv i det vi beundre
+                    Talerens sieldne Evner og Iver for den gode Sag<!-- ex 2 har hul i ordet -->,
+                    dog erkl&#x00E6;re, at hans Tale ei er religi&#x00F8;s, altsaa ei svarende til
+                    sin Bestemmelse.</p>
+                <p rend="firstIndent">For end tydeligere at godtgi&#x00F8;re dette, ville vi kaste
+                    et Blik paa de Bev&#x00E6;ggrunde til Dyden, der endnu blive ham tilovers. Enten
+                    maa han <pb type="edition" n="129" ed="VU"/>str&#x00E6;be at indbringe den
+                    Regel: <hi rend="italic">&#x00F8;v Dyden for sin egen Skyld!</hi> i sine
+                    Tilh&#x00F8;reres &#x00F8;verste <seg type="com" n="com149">Maxime</seg>, eller
+                    han maa blot see hen til Handlingernes F&#x00F8;lger.</p>
+                <p rend="firstIndent">Principet: &#x00F8;v Dyden for sin egen Skyld! har
+                    n&#x00E6;sten altid imponeret ved sin tilsyneladende Storhed, og er blevet
+                    anseet for Moralphilosophiens evige Triumphbue; men foruden at det stedse vil
+                    v&#x00E6;re en tom Lyd for M&#x00E6;ngden, havde man vel Ret til at
+                    sp&#x00F8;rge: hvad er Dyd i denne Betydning? Svaret bliver formodentlig, <seg
+                        type="com" n="com151">den er det eneste Absolute</seg>, og kan derfor fordre
+                    sig alt Relativt underordnet. Vi maa tilstaae Slutnin<pb type="text"
+                        facs="1807_61_fax062.jpg" n="182" ed="A"/>gen formel Rigtighed, men kunne
+                    ikke overtyde os om Pr&#x00E6;missens Sandhed. Vi troede, <seg type="comStart"
+                        n="com152"/>Intet kunde kaldes absolut, <seg type="com" n="com39">uden</seg>
+                    det, der, h&#x00E6;vet over Tids og Rums Bestemmelser, indslutter Alles
+                    bestemmende Grund, hint T&#x00E6;nkens<!--ligner et ! men er vist en spis--> og
+                    V&#x00E6;rens evige Identitet, Gud,<seg type="comEnd" n="com152"/> og vi
+                    ski&#x00F8;nne ikke rettere end at <seg type="comStart" n="com73"/>Moralloven er
+                    begr&#x00E6;ndset af <seg type="com" n="com16">Tilv&#x00E6;relsen</seg><seg type="comEnd" n="com73"/>. Vel har man s&#x00F8;gt at h&#x00E6;ve denne
+                    Vanskelighed, ved at kalde Gr&#x00E6;kernes Guder us&#x00E6;delige, fordi de
+                    stode over <seg type="com" n="com342">Moralloven</seg>, og derimod s&#x00E6;tte
+                        <seg type="com" n="com342">Moralloven</seg> over Gud; men da Guds
+                    Tilv&#x00E6;relse, der maatte mangle Frihed i h&#x00F8;iere Betydning, og vorde
+                    relativ, derved oph&#x00E6;ves, maa vi erkl&#x00E6;re, at dette Begreb enten er
+                    for h&#x00F8;it eller for lavt for vor Fatteevne.</p>
+                <p rend="firstIndent">S&#x00E6;tte vi Dyden som det Endeliges st&#x00F8;rst muelige
+                    Harmonie med sig selv, og det maa vi, naar den skal tr&#x00E6;de <apptype="corrNote" select="yes"><lem wit="GV">frem</lem><rdg wit="A">frrm</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> for sig selv i Tilv&#x00E6;relsen, og ei v&#x00E6;re det Evige
+                    underordnet, da maatte den, for at kunne fordre sig ubetinget ud&#x00F8;vet
+                    forkynde sig hos Mennesket som tvingende Naturdrift.<pb type="edition" n="163"
+                        ed="US"/>
+                </p>
+                <p rend="firstIndent">S&#x00E6;tte vi derimod Dyden som den n&#x00F8;dvendige
+                    Betingelse for det Endeliges Forening med det Evige, da kan den fordre sig
+                    ud&#x00F8;vet uden noget Hensyn paa Livets &#x00F8;vrige Forholde, men ei for
+                    sin egen Skyld, kun for dets Skyld, hvis Betingelse den er.<pb type="text"
+                        facs="1807_61_fax063.jpg" n="183" ed="A"/>
+                </p>
+                <p rend="firstIndent">Dog, Faa ere vel de, som, i det mindste hos os have lagt hint
+                    ufrugtbare Begreb til Grund for deres kirkelige <app type="corrNote" select="yes"><lem wit="GV">Underviisning</lem><rdg wit="A">Underviisniug</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>, og <seg type="comStart" n="com339"/>de Fleste <seg type="com" n="com153"
+                        >ere gangne</seg> den anden Vei, i det de have beregnet, hvormegen Nytte vi
+                    kunne have af at gi&#x00F8;re Godt, og Skade af at gi&#x00F8;re Ondt.<seg
+                        type="comEnd" n="com339"/>
+                </p>
+                <p rend="firstIndent">Disse ere egentlig hverken Moralens eller Religionens, men
+                    blot Klogskabens L&#x00E6;rere. De maa stedse f&#x00F8;re os omkring i
+                    Tilv&#x00E6;relsen, og kunne allene kaste et Sideblik paa det Evige, der da ikke
+                    i og for sig selv, men som f&#x00F8;lelig Bel&#x00F8;nning fremstilles som
+                    Gienstand for vor Eftertragten.<pb type="edition" n="130" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Naar vi da tilstaae disse Moralens Tolke, at de vel kunne
+                    afskr&#x00E6;kke Nogle fra de grove Udbrud af Lasten, hvis s&#x00F8;rgelige og
+                    smertelige F&#x00F8;lger de male med Ildfarver, at de kunne fremlokke Taarer i
+                    den Bl&#x00F8;des &#x00D8;ie, og v&#x00E6;kke i hans Hierte medlidende
+                    F&#x00F8;lelser; saa paastaae vi tillige, at de ei kunne indgyde Menneskene den
+                    rolige Hengivenhed i Herrens Haand, eller den ydmyge Erkiendelse af deres
+                    Afmagt, at de ei kunne l&#x00E6;re dem at bruge denne Verden, som de der ikke
+                    bruge den, og for det Eviges Skyld opofre Alt hvad Jorden har af Ki&#x00E6;rt og
+                    Ski&#x00F8;nt; thi det kunne ene de, som f&#x00F8;le, at deres <seg type="com"
+                        n="com154">Borgerskab er i Himlene</seg>.</p>
+                <p rend="firstIndent">Man kan ikke her <seg type="com" n="com155">affordre</seg> os
+                    Beviis for, at dette er en virkelig Mangel, thi her sp&#x00F8;rges ei om<pb
+                        type="text" facs="1807_61_fax064.jpg" n="184" ed="A"/> Jesu Religion er
+                    sand, hvilket maa foruds&#x00E6;ttes som erkiendt af alle dens Tienere, og
+                    desuden har v&#x00E6;ret Gienstand for vor Unders&#x00F8;gelse; men kun,
+                    hvorvidt man, uden at anvende hine christelige Bev&#x00E6;ggrunde til Dyden, kan
+                    l&#x00E6;re i Jesu Aand, hvilket dog alle vore Pr&#x00E6;ster paastaae at
+                    gi&#x00F8;re.</p>
+                <p rend="firstIndent">Imidlertid var det maaskee ei her saa ganske upassende, at
+                    melde et Par Ord om Egennytte som Dydens Bev&#x00E6;ggrund, og om det
+                    Oversandselige i Christendommen. Man har saare ofte erkl&#x00E6;ret Egennytte
+                    for en ureen Bev&#x00E6;ggrund til Dyden, og derpaa bygget Indvendinger mod den
+                    christelige Moral, samt Paastanden om et h&#x00F8;iere Moralprincips
+                    N&#x00F8;dvendighed, men har man ogsaa n&#x00F8;ie bestemt Ordets Betydning?
+                    Enten maa det udtrykke, hvad der stemmer overeens med Menneskets inderste
+                    V&#x00E6;sen, og hans ubetingede Fordring til sig selv, eller hvad der
+                    fremstiller sig blot for vor sandselige Natur i t&#x00E6;kkelig Skik<pb
+                        type="edition" n="164" ed="US"/>kelse. I f&#x00F8;rste Tilf&#x00E6;lde
+                    flyder den sammen med de h&#x00F8;ieste Bev&#x00E6;ggrunde til Dyden, og i
+                    sidste har man havt Uret i at udstr&#x00E6;kke den til Evigheden. <apptype="corrNote" select="yes"><lem wit="Rettelsesliste"><seg type="com" n="com156">Ikkun</seg></lem><rdg wit="A">Ikke</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> den der byder os indrette vor Opf&#x00F8;rsel efter Handlingernes
+                    F&#x00F8;lger, der kun umiddelbar vedr&#x00F8;re vor nedre, og saare middelbar
+                    vor h&#x00F8;iere Natur, gi&#x00F8;r sig skyldig i den Br&#x00F8;de, at have
+                    fremsat Egennytte i sin slette Betydning som Bev&#x00E6;ggrund til Dyden,<pb
+                        type="text" facs="1807_61_fax065.jpg" n="185" ed="A"/> og Christendommen
+                    fortiener ikke denne Bebreidelse. Derimod treffer den ganske hin
+                    Klogskabsl&#x00E6;re, der traadte frem som et usselt Surrogat for
+                    Christendommen, og vi see allerede Mange, som vilde blevet sande gudfrygtige
+                    Christne, dersom Moralen havde v&#x00E6;ret dem foredraget i sit
+                    n&#x00F8;dvendige<!-- ex 1 har en fejl her --> Forhold til Religion, men som nu
+                    <app type="corrNote" select="yes"><lem wit="GV">troe</lem><rdg wit="A">tcoe</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>, at de have <app type="corrNote" select="yes"><lem wit="GV">opfyldt</lem><rdg wit="A">opfdldt</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> deres Bestemmelse, naar de iagttage <seg type="com" n="com157">
+                        <hi rend="italic">
+                            <persName key="pe504">Knigges</persName>
+                        </hi> Regler for Omgang med Mennesker</seg>.</p>
+                <p rend="firstIndent">Man har i den senere Tid saa inderlig &#x00F8;nsket det
+                    Oversandselige borte af Christendommen, og det med samme Ret, som man maatte
+                    &#x00F8;nske Ro<pb type="edition" n="131" ed="VU"/>den borte fra Tr&#x00E6;et,
+                    da Toppen, som vi om Vinteren tydelig see, har sine Safter fra sig selv, og
+                    sikkert da vilde frembyde et langt ski&#x00F8;nnere Syn. Man har imidlertid
+                    v&#x00E6;ret godmodig nok til at raade Pr&#x00E6;sterne at <app type="corrNote" select="yes"><lem wit="GV">lade</lem><rdg wit="A">lade,</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> det staae indtil det faldt af sig selv, og det kaldte man
+                    Pastoralklogskab. En ligedan Klogskab er det, som byder Nutidens Mennesker, at
+                    lade de gamle Borges Mure staae, som latterlige Vidner om den barbariske <seg
+                        type="com" n="com158">Old</seg>, de skylde deres Ophav, og det er kun
+                    sk&#x00E6;ndig Bagvaskelse, som siger: det skeer fordi &#x2014; man ei kan
+                    nedbryde dem.</p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com321">Ogsaa vi</seg> ville dog engang pr&#x00F8;ve paa at
+                    v&#x00E6;re kloge, og tale et forstandigt Ord med. Men vi mene, at Klogskab
+                    netop <seg type="com" n="com159">byder</seg> Anvendelse af hint<pb type="text"
+                        facs="1807_61_fax066.jpg" n="186" ed="A"/> Oversandselige, og st&#x00F8;tte
+                    vor Mening paa f&#x00F8;lgende Grunde.</p>
+                <p rend="firstIndent">Naar man vil danne Mennesket til moralsk Jordborger, maa man
+                    s&#x00E6;tte alle hans Evner i Moralens Tieneste; men nu har Mennesket
+                    desv&#x00E6;rre Noget, man kalder Phantasie, og den vil slet ikke lade sig <seg
+                        type="com" n="com162">indknibe</seg> til jevn Gang paa Pligtl&#x00E6;rens
+                    snevre Sti. Vel sandt, allerede heraf er det klart, den ikke maa h&#x00F8;re til
+                    vort egentlige fornuftige Jeg; <seg type="com" n="com324">dens danske Navn</seg>
+                    beviser tydelig, den kun bestaaer i Indbildningen, og mange Poeter have giort os
+                    det Samme saare beskueligt. Den b&#x00F8;r altsaa udryddes tilligemed vor hele
+                    sandselige Natur ved et <seg type="com" n="com118">kategorisk Imperativ</seg>;
+                    men, atter desv&#x00E6;rre! dette kan langt snarere lade sig udtale, end skaffe
+                    sig Lydighed, og af den ki&#x00E6;re Almue is&#x00E6;r maa vi ikke fordre for
+                    meget <seg type="com" n="com163">paa Gangen</seg>. Vi maa da vel indtil videre
+                        <pb type="edition" n="165" ed="US"/>lade den blive, og blot s&#x00F8;ge at
+                    give den noget uskadeligt Leget&#x00F8;i, hvormed den kan syssels&#x00E6;tte
+                    sig, medens vi ordne<!-- ex 2 d&#x00E5;rlig --> Kr&#x00E6;fternes Harmonie, der
+                    skal opsluge den. Aldrig kunde vi treffe noget bedre Valg, end netop hint
+                    Oversandselige, vi nys hensatte i Krogen, thi deels er det for ubetydeligt til
+                    at kunne skade Moraliteten, og deels vil det, ved den givne, sv&#x00E6;rmeriske
+                        <seg type="com" n="com161">Tendents</seg> hindre Phantasien for de mange
+                        un<pb type="text" facs="1807_61_fax067.jpg" n="187" ed="A"/>derlige Spring
+                    <app type="corrNote" select="yes"><lem wit="GV">hvorved</lem><rdg wit="A">hvarved</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> den, indsluttet i Tilv&#x00E6;relsen, vilde <seg type="com" n="com325"
+                        >spotte</seg> mange af Moralens h&#x00F8;ieste Diger.</p>
+                <p rend="firstIndent">Temmelig l&#x00E6;nge opholdte vi os ved <hi rend="italic"
+                        >Pr&#x00E6;dikenen,</hi> baade fordi den udgi&#x00F8;r en saare vigtig Deel
+                    af Liturgien, <seg type="com" n="com326">saa og</seg> fordi vi troe, den
+                    is&#x00E6;r turde tr&#x00E6;nge de fleste Steder til Forbedring.</p>
+                <p rend="firstIndent">Uden at kunne beskyldes for Eensidighed troe vi nu at kunne
+                    gaae over til</p>
+            </div>
+
+            <div type="Daaben">
+                <head rend="0">
+                    <hi rend="italic">Daaben.</hi>
+                </head>
+                <p rend="noIndent">Uden at n&#x00E6;gte, at Formularerne ved denne Handling kunne
+                    modtage Forbedring, ski&#x00F8;nne vi dog ikke rettere, end at Bestemmelserne
+                    for dens Administration svare i det V&#x00E6;sentlige til dens Hensigt. Daaben
+                    skal v&#x00E6;re <pb type="edition" n="132" ed="VU"/>en Indvielse i Religion, og
+                    som f&#x00F8;rste Punkt i Liturgien omfatte baade det Poetiske og Philosophiske
+                    i samme. Dette er virkelig Tilf&#x00E6;ldet, thi Barnet indvies til Troe paa det
+                    Oversandselige, og <app type="combNote" select="yes"><lem wit="GV"><seg type="com" n="com307">gi&#x00F8;res meddeelagtig</seg></lem><rdg wit="A">meddeelagtig</rdg><rdg type="add" wit="US, VU">til at vorde meddeelagtig</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> i Jesu Forsoning, og forpligtes som saadan, til at forsage Synd og Last,
+                    Di&#x00E6;velens Gierninger.</p>
+                <p rend="firstIndent">
+                    <seg type="com" n="com164">Man har fundet det saa upassende, at der tales til
+                        Barnet</seg>, men vi troe, at Handlingen vilde tabe en Deel af sit
+                    H&#x00F8;itidelige ved en Forandring, og hvo der ei er svoren Fiende af Poesie,
+                    vil ei finde noget Anst&#x00F8;deligt i denne Tiltale.</p>
+                <p rend="firstIndent">Men, maatte man vel sp&#x00F8;rge, dersom Daabsceremonien i
+                    det V&#x00E6;sentlige svarer til sin<pb type="text" facs="1807_61_fax068.jpg"
+                        n="188" ed="A"/> h&#x00F8;ie Betydning, hvi gi&#x00F8;r den da i
+                    Almindelighed saa lidet Indtryk, og efterlader os saa tomme? Meget maatte vi
+                    feile, hvis ei Aarsagen hertil <seg type="com" n="com165">fornemmelig</seg>
+                    ligger i Maaden, hvorpaa is&#x00E6;r de moralske Pr&#x00E6;ster forrette samme.
+                    Med hvilken tankel&#x00F8;s <seg type="com" n="com166">Iilf&#x00E6;rdighed</seg>
+                    opl&#x00E6;ses ikke som oftest Indledningen, der skal vise, hvi Daaben skeer!
+                    Hvilken Vold gi&#x00F8;r ikke N&#x00E6;vnelsen af den hellige
+                    Treenighedsl&#x00E6;re paa Pr&#x00E6;sten! Hvilken forstaaelig Afskye for
+                    Overtroe fremlyser ei af hvert hans Tr&#x00E6;k, naar han med uvillig Finger maa
+                    drage Korsets betydningsfulde Tegn over den Sp&#x00E6;des Bryst og Ansigt!
+                    Tydelig seer man, det ei er til Troe paa den Korsf&#x00E6;stede, ei til <seg
+                        type="com" n="com167">de Helliges Arvedeel i Lyset</seg>; men kun til en
+                    Borger af Moral<pb type="edition" n="166" ed="US"/>staten, der skal kunne staae
+                    urokkelig uden Kirke og Religion, den oplyste L&#x00E6;rer vil indvie
+                    Barnet.</p>
+                <p rend="firstIndent">Nu skride vi frem til den opl&#x00F8;ftende Deel af Liturgien,
+                    den som tilligemed Daaben nu synes at skulle modtage en Forandring. Den staaer
+                    lige over for Pr&#x00E6;dikenen, og indbefatter</p>
+            </div>
+
+            <div type="Kollekter, B&#x00F8;nner, og Psalmer">
+                <head rend="0">
+                    <hi rend="italic">Kollekter, B&#x00F8;nner, og Psalmer.</hi>
+                </head>
+                <p rend="noIndent">Sandt er det, vore Kollekter og B&#x00F8;nner <apptype="corrNote" select="yes"><lem wit="GV">kunne</lem><rdg wit="A">knnne</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> beh&#x00F8;ve Forbedring, ikke fordi de n&#x00E6;sten alle gaae ud over
+                        <seg type="com" n="com16">Tilv&#x00E6;relsen</seg>, og slutte sig til det
+                    Evige, thi det er n&#x00F8;dvendigt; men fordi en Deel af dem mangle det
+                    gl&#x00F8;dende, fulde, poetiske Liv, der burde <pb type="text"
+                        facs="1807_61_fax069.jpg" n="189" ed="A"/> udtale sig giennem dem.
+                    Sp&#x00F8;rgsmaalet bliver kun: hvem kan forandre dem til det Bedre? Ingen <seg
+                        type="com" n="com39">uden</seg> den sande Digter, der veed at forherlige
+                    Poesiens Flamme ved Religionens hellige Ild. Skulle de derfor blive forandrede,
+                    eller <app type="corrNote" select="yes"><lem wit="GV">ny</lem><rdg wit="A">ei</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> affattede enten af den kolde Systematiker, til hvilken Skole han end
+                    h&#x00F8;rer, eller af Prosaisten, hvis Varme gik ud fra <seg type="com"
+                        n="com16">Tilv&#x00E6;relsen</seg>, og derfor ei kan h&#x00E6;ve sig over
+                    dens sn&#x00E6;vre Kreds, da vee os! Da ville vi enten see <seg type="com"
+                        n="com327">Skrivtsprogene</seg>
+                    <seg type="com" n="com168">sandsl&#x00F8;s</seg> sammendyngede, eller Moralens
+                    Kapitler <pb type="edition" n="133" ed="VU"/>afhandlede, eller
+                    betydningsl&#x00F8;s Sentimentalitet beile til en Taare, der ei kan udtrykke
+                    L&#x00E6;ngselen efter det Evige, men kun Medynk over <seg type="com" n="com319"
+                        >Tilv&#x00E6;relsens</seg> Usselhed i sin ski&#x00F8;nneste Form. Hvilken
+                    bedr&#x00F8;velig Mods&#x00E6;tning vilde da opstaae mellem de Forsamledes
+                    Helligdagskl&#x00E6;der, og Hverdagslivet, der omsnoede dem med sine smudsige
+                    L&#x00E6;nker!</p>
+                <p rend="firstIndent">Maatte vi da hellere beholde det mindre Poetiske, der, naar
+                    det udf&#x00F8;res med V&#x00E6;rdighed, dog er i Stand til at opsvinge os mod
+                    Himmelen, og opl&#x00F8;se vort V&#x00E6;sen i and&#x00E6;gtig br&#x00E6;ndende
+                    F&#x00F8;lelse!</p>
+                <p rend="firstIndent">At dette sielden skeer, har i St&#x00E6;derne sin Grund i
+                    Tilh&#x00F8;rernes frivole Stemning, og paa Landet i Maaden, disse Ting
+                    behandles paa af Pr&#x00E6;sten.<pb type="text" facs="1807_61_fax070.jpg"
+                        n="190" ed="A"/>
+                </p>
+                <p rend="firstIndent">Nu komme vi til Sangen, Middelpunkten af den liturgiske
+                    Poesie. Her maa alt hvad Mennesket kan frembringe H&#x00F8;it og Ski&#x00F8;nt,
+                    forene sig. Poesien maa tr&#x00E6;de frem, kl&#x00E6;dt i det harmoniske Vers,
+                    hvilende paa det melodiske Riim, og h&#x00E6;vet ved den potenserende Musik.
+                    H&#x00F8;it over Jorden maa vi opl&#x00F8;ftes, og et Glimt af det evige Liv maa
+                    sv&#x00E6;ve forbi vort mod Himlen stirrende &#x00D8;ie.</p>
+                <p rend="firstIndent">Ak! Kun sielden skeer det, og hvad er Aarsagen? Er det allene
+                    i de Kirker, hvor <seg type="com" n="com169">den gamle Psalmebog</seg> bruges,
+                    at vi vorde skuffede i vor Forventning? Ingenlunde. Vi miskiende ikke <seg
+                        type="com" n="com170">den <pb type="edition" n="167" ed="US"/>Nyes</seg>
+                    Fortrin is&#x00E6;r med Hensyn paa Korrekthed i Versebygningen, og
+                    V&#x00E6;rdighed i Udtrykket. Vi tilstaae endog, den indeholder megen Poesie,
+                    men langt er den fra Idealet, der sv&#x00E6;ver for vort &#x00D8;ie. Den kunde
+                    laant mere af den gamle, og meget tabte den, ved tildeels at rette sig efter
+                    Moralens Kapitler. Neppe er <hi rend="italic">
+                        <persName key="pe35">Schillers</persName>
+                    </hi> grundede Bem&#x00E6;rkning vore L&#x00E6;sere ubekiendt, at <seg
+                        type="com" n="com171">Poesien kun b&#x00F8;r fremhielpe Moraliteten ved den
+                        oph&#x00F8;iede Stemning, hvori den s&#x00E6;tter Mennesket, men at den
+                        oph&#x00F8;rer at v&#x00E6;re Poesie og h&#x00E6;ve Mennesket, saasnart den
+                        tr&#x00E6;der i Moralitetens Tieneste</seg>.</p>
+                <p rend="firstIndent">Bleve imidlertid de nye Psalmer udf&#x00F8;rte vi ville ei
+                    sige ved harmonisk Musik; thi det er kun vore katholske Br&#x00F8;dre der have
+                    Noget tilovers for<pb type="text" facs="1807_61_fax071.jpg" n="191" ed="A"/>
+                    <app type="corrNote" select="yes"><lem wit="GV">dens</lem><rdg wit="A">den</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> ski&#x00F8;nneste Brug, men ved melodisk Sang, da vil der dog allerede
+                    Meget v&#x00E6;re giort. Men <seg type="comStart" n="com173"/>saal&#x00E6;nge
+                    M&#x00E6;ngden af vore Kirkers Syngemestere endnu kunne l&#x00E6;re meget af
+                        <seg type="com" n="com174">Br&#x00E6;ger</seg> og <seg type="com" n="com175"
+                        >Peer Degn</seg>, ville selv de ski&#x00F8;nneste Psalmer tabe deres Kraft,
+                    og udbrede Dorskhed istedet for dyb F&#x00F8;lelse.<seg type="comEnd" n="com173"
+                    />
+                </p>
+                <p rend="firstIndent">Endelig naae <app type="corrNote" select="yes"><lem wit="GV">vi</lem><rdg wit="A">oi</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>
+                    <app type="corrNote" select="yes"><lem wit="GV">nu</lem><rdg wit="A">uu</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> den hellige Nadvere, det h&#x00F8;ieste Punkt i christelig Liturgie, som
+                    udtaler Tendentsen af Jesu Religion. Betydningsfuldt er <seg type="com"
+                        n="com177">Digterens</seg> Qvad,<pb type="edition" n="134" ed="VU"/>
+                    <lg n="1">
+                        <l>
+                            <seg type="comStart" n="com178"/>Da Himlen sig fra Jorden skilled</l>
+                        <l>Da sank din Aand igien til Jord</l>
+                        <l>Det himmelske, det rene Billed</l>
+                        <l>Ei l&#x00E6;nger i dit Hierte boer.</l>
+                    </lg>
+                    <lg n="2">
+                        <l>Det Barnlige var l&#x00E6;ngst forsvundet,</l>
+                        <l>Nu gaaer du bleg mod Jorden bukt,</l>
+                        <l>Med H&#x00F8;sten har du dig forbundet,</l>
+                        <l>Og &#x00E6;dt af giftig Kundskabs Frugt.</l>
+                    </lg>
+                    <lg n="3">
+                        <l>O drik, at du kan atter glemme</l>
+                        <l>Hvad koldt kun Hovmod l&#x00E6;rte dig!</l>
+                        <l>Da vaagner atter Livets Stemme,</l>
+                        <l>Da seer du atter Himmerig.<seg type="comEnd" n="com178"/>
+                        </l>
+                    </lg>
+                </p>
+                <p rend="noIndent">Men hvad er da Aarsagen, hvi det saakaldte oplyste Menneske
+                    heller lod sig beskylde for alt Ondt, end for at have nydt den hellige
+                        Nadvere,<pb type="text" facs="1807_61_fax072.jpg" n="192" ed="A"/>
+                    <seg type="com" n="com39">uden</seg> i det h&#x00F8;ieste for Exemplets Skyld,
+                    ja hvi selv de Fleste som nyde den, bortgaae kolde fra Ber&#x00F8;relsen af <pb
+                        type="edition" n="168" ed="US"/>den himmelske Ild? Vist nok maa <apptype="corrNote" select="yes"><lem wit="GV">Grunden</lem><rdg wit="A">Grnnden</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> til Manges Afhold og Kulde, s&#x00F8;ges i Tidens ford&#x00E6;rvede Tone,
+                    hvori Spot med alt Helligt har rodf&#x00E6;stet sig; men sikkert ville dog endnu
+                    Mange nyde den v&#x00E6;rdig, dersom ikke en stor Deel af Pr&#x00E6;sterne selv
+                    nedsatte dens V&#x00E6;rd. Ei tale vi her om saadanne foragtelige Meeneedere,
+                    der kalde sig Herrens Tienere, og dog istemme de Letsindiges spottende Tone,
+                    hvori de tale om vor Religions helligste Handling, thi vi ville ikke troe, at
+                    saadanne Uv&#x00E6;rdige virkelig bekl&#x00E6;de L&#x00E6;reembedet imellem
+                    os.</p>
+                <p rend="firstIndent">Vi ville kun vidne, hvad vi have seet, og ofte saae vi paa
+                    Uddeleren, at han slet ikke ahnede den h&#x00F8;ie <seg type="com" n="com48"
+                        >Sands</seg>, der ligger bag denne Mythe, som i Betydning langt overgaaer de
+                    &#x00E6;rv&#x00E6;rdigste og helligste, Oldtidens Poesie avlede, i det vi her
+                    skue et Glimt af den himmelske Poesie, hvis Produktioner have Virkelighed. Vi
+                    have seet fortr&#x00E6;den Kedsomhed i hans Aasyn, som burde omstraales af det
+                    Eviges Glands, og maa ikke et saadant Syn nedtvinge selv den varme Gi&#x00E6;st
+                    mod Jorden, i det han vil svinge sig mod Himmelen?</p>
+                <p rend="firstIndent">Imidlertid findes dog tvende Ting ved den
+                    n&#x00E6;rv&#x00E6;rende Indretning, som vi troe, man maatte &#x00F8;nske
+                    forandrede. Vi mene Syndsforladelsen i <pb type="text" facs="1807_61_fax073.jpg"
+                        n="193" ed="A"/> Skriftestolen, og Ordene ved Sakramentets Uddeling.</p>
+                <p rend="firstIndent">For den poetiske Anskuelse er hin Syndsforladelse en
+                    n&#x00F8;dvendig For<pb type="edition" n="135" ed="VU"/>beredelse til Nadverens
+                    Nydelse, da Mennesket maa t&#x00E6;nkes renset fra alt Jordiskt, f&#x00F8;r han
+                    t&#x00F8;r n&#x00E6;rme sig til det Himmelske; men, mon ogsaa for den
+                    religi&#x00F8;se? Vi troe det Modsatte. Saal&#x00E6;nge Menneskene troede, ved
+                    Poesie at kunne atter forenes med det Evige, saal&#x00E6;nge maatte ogsaa
+                    Renselser fra <seg type="com" n="com319">Tilv&#x00E6;relsens</seg> Smitte finde
+                    Sted, og vi see dem derfor i alle de gamle Religioner. Men da Christus har for
+                    alle sine Troende fuldkommet den ene Deel af Renselsen, i det <seg type="com"
+                        n="com179">han forligte Verden med Gud</seg>, saa bliver ingen tilbage for
+                    Mennesket, <seg type="com" n="com39">uden</seg> den giennem hele Livet fortsatte
+                    Str&#x00E6;ben efter Retf&#x00E6;rdighed og Hellighed, og enhver anden Renselse
+                    strider bestemt mod Christendommens Aand. Allerede herfor burde Syndsforladelsen
+                    afl&#x00E6;gges, men den b&#x00F8;r det dobbelt, som skadelig for Menneskets
+                    sande Renselse, hans moralske Forbedring. <seg type="com" n="com180">Vel siger
+                        man, at de som synde i Tillid til den, vilde synde alligevel</seg>; men hvor
+                    er Beviset for denne henkastede Phrase, der hverken stadf&#x00E6;stes ved den
+                    ydre eller indre Erfaring? Saae vi da aldrig, at en <seg type="com" n="com181"
+                        >Ildgierningsmand</seg> str&#x00E6;bte enten f&#x00F8;r eller efter sin onde
+                    Handling at berolige sig ved at mod<pb type="text" facs="1807_61_fax074.jpg"
+                        n="194" ed="A"/>tage Syndsforladelse af Pr&#x00E6;sten? Og <pb
+                        type="edition" n="169" ed="US"/>hvo t&#x00F8;r paastaae, han ogsaa uden
+                    denne Tr&#x00F8;st eller dette Haab vilde fuldf&#x00F8;rt Handlingen? Vide vi
+                    ikke, at Mennesket i Fristelsens Stund griber begierlig efter ethvert Middel,
+                    der kan spare ham den tunge Kamp? Var der ogsaa kun Een blandt Tusinde, som ved
+                    Tanken om hiin Syndsforladelse bestyrkedes i sit Letsind, da burde den afskaffes
+                    som en Levning af udartet Katholicisme, der slet ikke h&#x00F8;rer til Jesu
+                    Religion.</p>
+                <p rend="firstIndent">Den anden Forandring, vi &#x00F8;nskede, havde Hensyn paa
+                    Ordene ved Br&#x00F8;dets og Vinens Uddeling.</p>
+                <p rend="firstIndent">Ingen, der l&#x00E6;ste det Foregaaende, og fulgte vor
+                    Ideegang, vil mist&#x00E6;nke os for at v&#x00E6;re iblandt dem, der forarge sig
+                    over den hellige L&#x00E6;re om Alterens Sakramente, eller tvivle om den sande
+                    Troendes Forening deri med sin Gud og Frelser; men os synes, at vi, ved at
+                    erkl&#x00E6;re Br&#x00F8;det og Vinen for Jesu Legeme og Blod, n&#x00E6;rme os
+                        <seg type="com" n="com182">Transubstantiasionens bespottelige
+                        L&#x00E6;re</seg>, og at Forskiellen vel kun turde v&#x00E6;re <seg
+                        type="com" n="com183">sophistisk</seg>.</p>
+                <p rend="firstIndent">Ville vi f&#x00E6;ngsle det Evige i det Endeliges
+                    Produktioner, ville vi giennem Munden nyde det Allerhelligste, der kun ved Troen
+                    kan blive os til Deel, da har <seg type="com" n="com184">Spotteren <persName
+                            key="pe465">Volt&#x00E6;re</persName>
+                    </seg> Ret til at haane os; da nedbrydes <seg type="com" n="com185"
+                        >Sandsen</seg> af Christi L&#x00E6;res h&#x00F8;ieste Hemmelighed; thi vi
+                    s&#x00F8;ge da at f&#x00E6;ste <pb type="edition" n="136" ed="VU"/>det Himmelske
+                    til <pb type="text" facs="1807_61_fax075.jpg" n="195" ed="A"/> Jorden, istedet
+                    for at vi, h&#x00E6;vede ved dets gudelige Kraft, skulde forene os med det.</p>
+                <p rend="firstIndent">Hvorfor kan ikke Sakramentet uddeles taus, efterat
+                    Indstiftelsens Ord ere l&#x00E6;ste, saaledes som Skik var i den &#x00E6;ldre
+                    danske protestantiske Kirke? Eller, hvor Ord skulle bruges, var det vel
+                    K&#x00E6;tteri at ligne de Reformeerte, hvis Formel: <hi rend="italic">det
+                        betyder,</hi> dog i Sandhed betyder langt mere end vores? Eller, om vi ingen
+                    af Delene ville, hvad hindrer os da fra, at sige med <persName key="pe343"
+                        >Paulus</persName>: <seg type="com" n="com186">Velsignelsens Kalk, som vi
+                        velsigne, er Christi Blods Samfund, det Br&#x00F8;d som vi bryde er Christi
+                        Legems Samfund</seg>?</p>
+                <p rend="firstIndent">Vilde <persName key="pe343">Paulus</persName> have talt
+                    saaledes, dersom han havde troet, som <seg type="com" n="com187">de, der
+                        forfattede vor Confession</seg>, at <seg type="com" n="com188">Christi
+                        Legeme i, med og under Br&#x00F8;det</seg> annammes i Munden, og &#x2013; vi
+                    gyse ved Tanken &#x2013; <seg type="com" n="com189">knuses imellem
+                        T&#x00E6;nderne</seg>?</p>
+                <p rend="firstIndent">Have ikke baade <persName key="pe507">Klemens</persName> og
+                        <persName key="pe506">Origenes</persName>, og n&#x00E6;sten alle de gamle
+                    F&#x00E6;dre, der ei bleve hvilende paa Religionens Overflade, men
+                    tr&#x00E6;ngte dybere ind i dens V&#x00E6;sen, <app type="corrNote" select="yes"><lem wit="Rettelsesliste">forkastet</lem><rdg wit="A">forfattet</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app>
+                    <seg type="com" n="com190">L&#x00E6;ren om den saakaldte <hi rend="romanType"
+                            >pr&#x00E6;sentia realis!</hi>
+                    </seg>
+                </p>
+                <p rend="firstIndent">Skulle da vi, for hvis &#x00D8;ine <seg type="comStart"
+                    n="com338"/>Philosophien <app type="corrNote" select="yes"><lem wit="GV">anticipeerer</lem><rdg wit="A">anticiprerer</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> sig selv, <pb type="edition" n="170" ed="US"/>ved at gaae over til
+                    Religion, men derved kaster det herligste Lys paa dens Mysterier<seg
+                        type="comEnd" n="com338"/>, endnu dv&#x00E6;le med at gribe disses
+                    h&#x00F8;ie Betydning,<pb type="text" facs="1807_61_fax076.jpg" n="196" ed="A"/>
+                    saaledes som den spirede i christelig Oldtid, men nedtryktes af <seg type="com"
+                        n="com191">sandsesl&#x00F8;s</seg> Rettroenhed, og kun <seg type="com"
+                        n="com11">stundum</seg> svagt fremk&#x00E6;mpede sig, indtil den med alt
+                    Helligt nys truedes af Forstanden med Undergang?</p>
+                <p rend="firstIndent">Ville vi ikke erkiende Sandheden af Udsagnet: <seg type="com"
+                        n="com192">Bogstaven ihielslaaer, men Aanden gi&#x00F8;r levende</seg>,
+                    fordi dette som Alt, nyelig misbrugtes, for dermed, om mueligt, at dr&#x00E6;be
+                    Aanden selv?</p>
+                <fw type="longLine"/>
+                <p rend="noIndent">Efter saaledes at have giennemgaaet det Vigtigste af Liturgien,
+                    ville vi kaste et Blik paa det Udvortes ved samme, Pr&#x00E6;sten og Kirken.</p>
+                <p rend="firstIndent">Naar Pr&#x00E6;sten kiender Jesu Religion saaledes, som den
+                    kun giennem de h&#x00F8;ieste Videnskaber kan blive anskuet, naar han baade kan
+                    og vil tolke den med Fynd, og naar han selv er en sand moralsk gudfrygtig Mand,
+                    da maatte det vel synes ligegyldigt, i hvilken Dragt han traadte frem; men dog
+                    troe vi det passende, at han i Kirken er <seg type="com" n="com193"
+                        >udm&#x00E6;rket</seg> fra alle sine Tilh&#x00F8;rere, af hvad Stand de end
+                    ere, og at en Forandring eller For&#x00F8;gelse af hans Dragt finder Sted under
+                    Nadverens Uddeling. Det <pb type="edition" n="137" ed="VU"/>sidste er
+                    is&#x00E6;r et sandseligt Tegn paa, at Religionens og Liturgiens
+                    Kulminationspunkt nu er tilstede.</p>
+                <p rend="firstIndent">Hvad der foregaaer i Kirken er <seg type="com" n="com328"
+                        >vist</seg> det Vigtigste, men dog b&#x00F8;r Kirken selv have en fra
+                        andre<pb type="text" facs="1807_61_fax077.jpg" n="197" ed="A"/> Huse
+                    forskiellig Bygningsmaade, ligesom Pr&#x00E6;sten b&#x00F8;r have en for den
+                    bestemt Dragt, thi i Herrens Tempel ville vi v&#x00E6;re ganske l&#x00F8;srevne
+                    fra Hverdagslivet, deels for at kunne h&#x00E6;ve os over <seg type="com"
+                        n="com16">Tilv&#x00E6;relsen</seg>, og deels for at kunne betragte den mere
+                    upartisk, naar vi ligesom ere satte uden for den. Men just fordi begge disse
+                    &#x00D8;iemede skulle opnaaes, derfor burde Kirken ei blot have en anden, men og
+                    en ski&#x00F8;nnere, mere oph&#x00F8;iet Bygningsmaade, end de almindelige Huse,
+                    saa at dens Architektur kunde v&#x00E6;re det faste hvilende Billede paa
+                    Poesien, der i den skal udtale sig, og for at vi derved kunne fremhielpes til at
+                    skue Tilv&#x00E6;relsen, ikke oven, men neden for os.</p>
+                <p rend="firstIndent">At dette er langt fra at v&#x00E6;re saa, veed Enhver, som
+                    bem&#x00E6;rkede den <seg type="com" n="com194">synderlige</seg> Kontrast mellem
+                        <seg type="com" n="com329">Kirkeeiernes</seg> h&#x00F8;itkneisende Lader og
+                    de faldef&#x00E6;rdige Kirker. Paa de fleste Steder har man nedrevet de ydmyge
+                        <seg type="com" n="com195">Kirkelader</seg>, maaskee fordi man troe<pb
+                        type="edition" n="171" ed="US"/>de, de <seg type="com" n="com196"
+                        >vanh&#x00E6;ldede</seg>
+                    <seg type="com" n="com197">Ringmuren</seg>, maaskee ogsaa for at hindre den
+                    urigtige Troe, at hvad som ei kunde indsluttes i disse smaa Rum, burde anvendes
+                    til Kirkens Opbygning og Forski&#x00F8;nnelse.</p>
+                <p rend="firstIndent">Aldrig ville vi vel faae Aarsag til at v&#x00E6;re stolte af
+                    vore Kirker, men, ligesom det var saare<!-- "eleveret" "e" i alle tre ex.-->
+                    &#x00F8;nskeligt, er det vel dog mueligt, at, <seg type="com" n="com330">naar
+                        Kornets Priis ei mere er saa lav</seg>, den Tid engang kan kom<pb
+                        type="text" facs="1807_61_fax078.jpg" n="198" ed="A"/>me, da Synet af dem ei
+                    mere saa levende v&#x00E6;kker Mindet om de svundne Sekler og vore l&#x00E6;ngst
+                    hensovne F&#x00E6;dre, eller gi&#x00F8;r os saa fortrolige med Tanken om en
+                    hastig og brad D&#x00F8;d. Naar denne Tid kommer, og at den vil komme, derfor
+                    borger <seg type="com" n="com331">Haabets liflige Gr&#x00F8;nt paa de indre
+                        V&#x00E6;gge</seg>, da kan f&#x00F8;rst Talen v&#x00E6;re om passende
+                    indvendige Prydelser. &#x2014; At man nu paa nogle Steder nedtager Altertavlen,
+                    kan vist nok undskyldes med, at deres Malerier ere Karrikaturer af det
+                    Helligste, men at et simpelt Bord ikke vil forh&#x00F8;ie Gudstienestens
+                    Majest&#x00E6;t, synes klart.<!--punktum faldet ned i alle tre ex.--> Bedre var
+                    det vist, at man opsatte nye, og benyttede den atter vaagnende Malerkonst til at
+                    pryde vore Kirker med Billeder af den hellige Historie; thi derved skabtes
+                    Konsten en Potens, der maaske er det Eneste, den mangler, for at h&#x00E6;ve sig
+                    til sin forrige Glands.</p>
+                <p rend="firstIndent">Ingen troe, at dette &#x00D8;nske opstod af Lyst
+                    til<!-- l faldet ud af linien i alle tre ex.--> at smigre de Vanhelliges
+                    &#x00D8;ine, og ved Konsten hidlokke dem, der ellers mangle Sands for Kirkens
+                    h&#x00F8;ie Bestemmelse, ski&#x00F8;nt det dog var en Vinding, langt
+                    st&#x00F8;rre end <pb type="edition" n="138" ed="VU"/>den man kan vente ved at
+                    gi&#x00F8;re Gudsdyrkelsen, hvad man kalder, fornuftig; <seg type="com"
+                        n="com198">saasom</seg> Konsten er den eneste af Livets Frembringelser, der
+                    udm&#x00E6;rker sig ved <seg type="com" n="com199">mere end endelig
+                        Tendents</seg>!</p>
+                <p rend="firstIndent">End mindre troe man, vi ikke erkiende den sildigere
+                    Katholicismes <seg type="com" n="com200">rasende Daarlighed</seg>, der til<pb
+                        type="text" facs="1807_61_fax079.jpg" n="199" ed="A"/>bad Billederne, som om
+                    de i sig selv havde deres Betydning!</p>
+                <p rend="firstIndent">Den eneste Grund for vort &#x00D8;nske ligger i den
+                    Overbeviisning, at Mennesket vilde lettere kunne h&#x00E6;ve sig over Jordlivet,
+                    naar han ligesom var omringet af V&#x00E6;sener fra h&#x00F8;iere Regioner, der,
+                    efter at have giennembrudt St&#x00F8;vets f&#x00E6;ngslende Muur, fremstode
+                    forklarede under Malerens poetiske Pensel. Denne Himmelbaarnes symboliske
+                    N&#x00E6;rv&#x00E6;relse vilde give begge Liturgiens Dele et Udtryk, de ellers
+                    vanskelig faae, og forene den til et sieleopl&#x00F8;ftende Heelt, i det vi
+                    skuede dem, der fordum vandrede i Herrens Frygt og Jesu Christo Troe, i
+                    Besiddelse af den un&#x00E6;vnelige Salighed, der opfylder og omstraaler de
+                    Hellige.</p>
+                <p rend="firstIndent">Have vore F&#x00E6;dre, der udryddede Katholicismen, ladet de
+                    nys <pb type="edition" n="172" ed="US"/>tilbedte Malerier blive, uden deraf at
+                    befrygte nogen Ulempe, og har meer end <seg type="com" n="com201">halvtredie
+                        Sekul</seg> retf&#x00E6;rdiggiort deres <seg type="com" n="com202"
+                    >Iid</seg>: hvorledes skulde da vi, opdragne som Protestanter, med vor langt
+                    renere Anskuelse af Protestantismens Eenhed med sand Christendom, frygte for at
+                    danne Katholiker, ved at ombytte de slette Malerier med bedre! B&#x00F8;r vi det
+                    ikke, naar disse kunne befordre Andagten, eller endog kun pryde vort Gudshuus,
+                    og indgyde Almuen den poetiske <seg type="com" n="com48">Sands</seg>, uden
+                    hvilken en stor Deel af <pb type="text" facs="1807_61_fax080.jpg" n="200" ed="A"
+                    />Liturgien er halv tabt for den! Troer man da det blot er det Gode i Arten, der
+                    kan stifte Skade?</p>
+                <fw type="longLine"/>
+                <p rend="noIndent">Uden Hensyn paa, hvad man vil d&#x00F8;mme<!--ligner o i ex 3-->
+                    om os og vor Forstand, fremsatte vi her vore individuelle Tanker om Religion og
+                    Liturgie i deres vigtigste Forhold. Det streed mod vor Plan, at indlade os i det
+                    Enkelte, som Enkelt, og lykkedes det os, at bestemme <app type="corrNote" select="yes"><lem wit="GV">Grundbegreberne</lem><rdg wit="A">Grundbegrebene</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> rigtig, var det ogsaa un&#x00F8;dvendigt, da Enhver maa kunne ved
+                    konseqvent Slutning uddrage vore Tanker derom.</p>
+                <p rend="firstIndent">Vi kunne have feilet, og det er saa meget mere tilgiveligt, da
+                    vi, levende i en <seg type="com" n="com203">Afkrog</seg>, n&#x00E6;sten mangle
+                    alle Hielpemidler, <seg type="com" n="com39">uden</seg> egen T&#x00E6;nkning til
+                    at berigtige vore Begreber; men vi t&#x00F8;r haabe, at selv Feilene ei tillade
+                    nogen Tvivl om vor varme F&#x00F8;lelse <app type="corrNote" select="yes"><lem wit="GV">for</lem><rdg wit="A">f&#x00F8;r</rdg><witDetail wit="A" n="0">[tekstkritikken er behandlet i ACCESS]</witDetail></app> Religi&#x00F8;sitet, og med Hensyn herpaa for &#x00E6;gte Moralitet.<pb
+                        type="edition" n="139" ed="VU"/>
+                </p>
+                <p rend="firstIndent">Maatte disse Blade kun vise N&#x00F8;dvendigheden af dybere
+                    Granskning over Principerne, der b&#x00F8;r ligge til Grund for vore kirkelige
+                    Indretninger! Maatte de anspore nogle af vore <seg type="com" n="com204"
+                        >Religionsl&#x00E6;rere</seg> til ret at tydeliggi&#x00F8;re sig deres
+                    h&#x00F8;ie Kald og Bestemmelse, som Jesu hele L&#x00E6;res v&#x00E6;rdige
+                    Tolke! Maatte de v&#x00E6;kke nogle af vore Br&#x00F8;dre, de theologiske
+                    Candidater af den uv&#x00E6;rdige Slummer, i hvilken Mange af dem vente paa <seg
+                        type="com" n="com205">det hellige L&#x00E6;reembede</seg>, uden at berede
+                    sig dertil; da maa gierne<pb type="text" facs="1807_61_fax081.jpg" n="201"
+                        ed="A"/>hvert vort Ord <seg type="com" n="com206">overantvordes</seg> til
+                    Glemsel, thi da udrettede vi mere, end vor Stilling turde lade os haabe.</p>
+                <p rend="firstIndent">Vil man derimod ei v&#x00E6;rdige Resultaterne, vi uddroge paa
+                    vor Vandring giennem den menneskelige Aands h&#x00F8;iere Egne, <seg type="com"
+                        n="com332">uden</seg> et haanligt Sideblik, fordi de ei stemme med Tidens
+                    Tone, og fordi de komme fra et Menneske, der ei modtog <seg type="com"
+                        n="com207">Privilegium</seg> af noget Fakultet, ei n&#x00E6;vnedes i noget
+                        <seg type="com" n="com208">l&#x00E6;rt</seg> Katalog, ei bekl&#x00E6;der
+                    noget Embede, og altsaa i vor Tids Sprog, h&#x00F8;rer til de ganske
+                    Uvedkommende; fortryde vi dog ei at have grebet <pb type="edition" n="173"
+                        ed="US"/>Pennen med u&#x00F8;vet Haand, da det ei var vor egen, men
+                    Religionens og Artens Sag<note type="footnote">
+                        <p rend="noIndent">Herr Forf. kan v&#x00E6;re overbeviist om, at enhver
+                            Retskaffen vil l&#x00E6;se hans Afhandling med megen Agtelse baade for
+                            hans Forstand og Hierte. Mig for min Deel har den meget gl&#x00E6;det,
+                            ski&#x00F8;nt Sproget og enkelte Udtryk paa faa Steder ikke have behaget
+                            mig. Men lige meget, Forf. har talt Religionens Sag med en reen Aand og
+                            et varmt Hierte, og derfor l&#x00F8;nne ham Gud.</p>
+                        <p rend="right">
+                            <hi rend="italic">Udg.</hi>
+                        </p>
+                    </note>, vi str&#x00E6;bte at tale.</p>
+                <p rend="firstIndent">Til Slutning maa vi udbede os vore L&#x00E6;seres Tilgivelse,
+                    fordi vi for Kortheds Skyld have kaldt de Pr&#x00E6;ster, som
+                    tilsides&#x00E6;tte Religionen, de moralske istedet for de moraliserende, da det
+                    aldrig var vor Hensigt derved at udsige noget om deres Gemyt.</p>
+                <p rend="center">Egel&#x00F8;kke paa Langeland den 1 Oktbr. 1806.</p>
+                <p rend="center">
+                    <hi rend="italic">Nik. Fred. Sev. Grundtvig,</hi>
+                </p>
+                <p rend="center">Kandidat i Theologien.</p>
+                <fw type="longLine"/>
+            </div>
+        </body>
+        <pb type="periText" facs="1807_61_fax082.jpg"/>
+
+    </text>
+</TEI>

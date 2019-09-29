@@ -1,0 +1,695 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">&#x00C6;sthetisk Litteratur. Baggesen</title>
+            <title rend="shortForm">&#x00C6;sthetisk Litteratur. Baggesen</title>
+            <author>Nicolai Frederik Severin Grundtvig</author>
+            <editor role="editionPhilologist">Jon Tafdrup</editor>
+            <editor role="student">Anna Poulsen</editor>
+            <editor role="student">Kirsten Vad</editor>
+            <editor role="student">Frederik Drei&#x00F8;e Seidelin</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.3</idno>
+          <idno type="technic">1.5.2</idno>
+        </edition>
+         </editionStmt>
+         <extent>48 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Kj&#x00F8;benhavnske l&#x00E6;rde Efterretninger</title>
+            <respStmt>
+               <name>Redigeret af Peter Erasmus M&#x00FC;ller</name>
+               <resp>Forlagt af Br&#x00F8;drende Berling</resp>
+            </respStmt>
+            <idno>1809-05-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1809_115_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note target="1809_115_com.xml" type="com">Punktkommentar</note>
+            <note target="1809_115_intro.xml" type="intro">Indledning</note>
+            <note target="1809_115_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+            <note type="unknownVar">Variant</note>
+         
+         </notesStmt>
+         
+         <sourceDesc>
+            <bibl>
+               <title type="part">Kj&#x00F8;benhavnske l&#x00E6;rde Efterretninger</title>
+               <title type="part">&#x00C6;sthetisk Litteratur. Baggesen</title>
+               <author>Nik. Fred. Sev. Grundtvig.
+        <note>[evt.]</note>
+               </author>
+               <pubPlace>K&#x00F8;benhavn</pubPlace>
+               <publisher>Redigeret af Peter Erasmus M&#x00FC;ller
+        <note>Forlagt og trykt af Br&#x00F8;drene Berling</note>
+               </publisher>
+               <date>1809</date>
+            </bibl>
+            <listWit xml:id="emendation">
+               <witness xml:id="A" n="115"><desc>F&#x00F8;rstetrykket</desc><num>1809</num></witness>
+            </listWit>
+            
+         </sourceDesc>
+      </fileDesc>
+      
+      <profileDesc>
+         <textClass>
+            <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+               <term>prosa</term>
+               <term>anmeldelser</term>
+               </classCode>
+            <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+               <term>litteratur</term>
+               <term>polemik</term>
+            </keywords>
+         </textClass>
+      </profileDesc>
+      
+      
+      <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+            <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change xml:id="KSR" who="KSR" when="2012-05-15">txt2tei</change>
+         <change xml:id="JT" who="JT" when="2013-03-13">Tilrettelse af layout, rettelser af fejl efter 1. kollation</change>
+         <change who="JT" when="2013-03-14">ditto</change>
+         <change who="JT" when="2013-03-18">ditto</change>
+         <change who="JT" when="2013-04-02">Indf&#x00F8;relse af rettelse efter 2. kollation ved Anna (student)</change>
+         <change who="JT" when="2013-04-09">Indf&#x00F8;relse af rettelser efter 3. stud. (Kirsten)</change>
+         <change who="JT" when="2013-05-16">Indf&#x00F8;relse af yderligere lemmata.</change>
+         <change who="JT" when="2013-06-19">Unicodes.</change>
+         <change who="JT" when="2013-06-20">Opm&#x00E6;rkning til base</change>
+         <change who="JT" when="2013-06-20">Opm&#x00E6;rkning til titlebase mm.</change>
+              <change who="JT" when="2013-07-16">redigering efter intern redaktion v. KSR</change>
+           <change who="JT" when="2013-09-02">redigering efter ekstern redaktion v. NWF. Indsat nye com fra 600 og frem.</change>
+         <change who="JT" when="2013-09-03">redigering efter ekstern redaktion v. Niels Werner Frederiksen. Com611-614 indsat.</change>
+         <change who="JT" when="2013-09-09">redigering efter ekstern redaktion v. Niels Werner Frederiksen. Com700-701 indsat.</change>
+         <change who="JT" when="2013-09-17">redigering efter KNs redaktion. com800 og op, samt com900 indsat</change>
+         <change xml:id="FDS" who="FDS" when="2013-09-30">Rettet _fax0030 til _fax030</change>
+         <change who="JT" when="2013-10-04">1.4: pb-henvisning til periText s. 32-36 indsat sidst. Peritext til s. 15-18 og 19-20 kan ikke inds&#x00E6;ttes, da de forekommer inden for body-elementet</change>
+         <change who="JT" when="2013-10-07">1.4: rettet fra firstIndent til noIndent i afsnit efter citat, der slutter 'votre serviteur', s. 262</change>
+         <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+         <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+         <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+         
+         <change who="JT" when="2014-04-24">1.4: pb-henvisning til peritext til s. 15-18 og 19-20 er nu indsat - vises fint</change>
+         <change who="JT" when="2014-09-03">1.5: tilrettet witness-feltet</change>
+         <change who="JT" when="2015-01-19">1.5.2: teknisk id-nr. ændret</change>
+         <change who="JT" when="2015-10-06">indsat profileDesc</change>
+      </revisionDesc>
+   </teiHeader>
+   <text type="txt">
+      
+      
+      <pb type="periText" facs="1809_115_fax001.jpg" />
+		<pb type="periText" facs="1809_115_fax002.jpg" />
+   	
+         <front />
+	
+        <body>
+      <div type="No. 17">
+         
+            <pb type="text" facs="1809_115_fax003.jpg" ed="A" n="257" rend="supp" />
+            
+            <head rend="1">&#x00C6;sthetisk Litteratur.</head>
+
+            <fw type="shortLine" />
+
+            <head rend="0">
+<persName key="pe20">Baggesen</persName>.</head>
+            
+            <fw type="blank" />
+            
+            <p rend="noIndent">
+<hi rend="initial">D</hi>enne Digter, hvis danske Tunge en <seg type="com" n="com1">Tidlang</seg> forstummede, medens han fjern fra F&#x00E6;drelandet &#x00F8;vede sig i fremmed <seg type="com" n="com200">Maal</seg>, bes&#x00F8;gte i H&#x00F8;st 1806 atter det <placeName key="poet219">Dannemark</placeName>, der med h&#x00F8;ilig Gammen saae Digtergnisten i hans Indre ulme, k&#x00E6;mpe og fre<!-- l&#x00E6;deret type -->mbryde i Lue. Sit Bes&#x00F8;g forevigede han, som Fyrsters S&#x00E6;d monne v&#x00E6;re, ved kostelige Gaver, og sk&#x00F8;nt meget af hvad han gav, <seg type="com" n="com800">alt</seg> forhen tilh&#x00F8;rte os, <seg type="com" n="com2">forbandt</seg> dog ei lidet med sit indre V&#x00E6;rd Nyhedens <seg type="com" n="com3">Ynde</seg>, medens Noget lod sig i nyt <seg type="com" n="com4">Kl&#x00E6;demon</seg> tilsyne.</p>
+
+            <p rend="noIndent">Da det er lovlig Skik at saadan <seg type="com" n="com5">Sk&#x00E6;nk</seg> offenlig omtales og vurderes, vil Undertegnede her frems&#x00E6;tte sin <seg type="com" n="com6">Beskuelse</seg> af en Digters V&#x00E6;rker, hvis sjeldne Fortrin han med Gl&#x00E6;de erkender uden dog at v&#x00E6;re blind for hans Mangler eller <seg type="com" n="com600">Synder</seg>, og han er ganske ubekymret om, hvor<pb type="text" facs="1809_115_fax004.jpg" ed="A" n="258" />vidt enten Digteren eller nogen Anden <seg type="com" n="com7">agter ham bef&#x00F8;iet</seg> til at give sin Stemme; thi enhver Kritik maa ene staae og falde ved sig selv.</p>
+            
+     <fw type="blank" />
+
+            <head rend="1">
+<rs type="title" key="title2349">Skjemtsomme Riimbreve</rs>. Kbh. 1807. 1 <seg type="com" n="com8">Rdlr.</seg> 24 <seg type="com" n="com9">&#x00DF;</seg>.</head>
+                        
+            <p rend="firstIndent">
+<hi rend="initial">D</hi>et er Kritikens ufravigelige Pligt, f&#x00F8;r den betragter det Enkelte i et V&#x00E6;rk, at beskue det Hele som Heelt, og naar vi her fremfare saaledes, maa vi erkende, at disse Breve kun for saavidt lade sig samle i en almindelig Synspunkt, som de alle tjene til at aabenbare Digterens <seg type="com" n="com10">Egenhed</seg>. Saaledes beskuede, sammengro de virkelig til et Heelt; thi saa <seg type="com" n="com11">adskillige</seg> de <seg type="com" n="com12">og</seg> ere, i det de avledes af &#x00D8;ieblikke, udrevne af Digterens Liv til forskellige Tider og under forskellige Betingelser, genkende vi dog de samme Grundtr&#x00E6;k igennem det vekslende Ydre. Disse Grundtr&#x00E6;k, der have v&#x00E6;ret Digterens S&#x00E6;rkender paa hans hele Vandring, maa vel n&#x00E6;vnes: sp&#x00F8;gende Vid og en Fantasi der s&#x00E6;dvanligst spiller let paa Overfladen eller dens n&#x00E6;rmeste Lag, ogsaa stundum tr&#x00E6;nger dybere, men sielden skaber hele og faste Syner. Som oftest er Latteren blandet med Graad og Graaden med Latter, men n&#x00E6;sten altid, naar Digteren spreder sine Vinger for at flyve mod det H&#x00F8;ie, nedtynger han sig selv ved Betragtninger over Flugtens Natur, over Jorden, han l&#x00F8;fter sig fra og Himlen han h&#x00E6;ver sig mod, eller <seg type="com" n="com13">og</seg> Flugten taber sig i en sp&#x00F8;gende Flagren henover de <seg type="com" n="com14">blommede</seg> Enge, han ei n&#x00E6;nner at forlade. Ofte f&#x00F8;lte han, at <seg type="com" n="com15">saa</seg> vare hans Vilkaar, og han har aldrig kunnet enes med sig selv om, enten han skabtes til Graad eller Latter, til Alvor eller <pb type="text" facs="1809_115_fax005.jpg" ed="A" n="259" />Sp&#x00F8;g, netop fordi den lunefulde Natur havde sin Skiemt af at danne ham til en <seg type="com" n="com601">synderlig</seg> Blanding af Alt. Denne Blanding har g&#x00E6;ret, og k&#x00E6;mpet med sig selv, og stundum <seg type="com" n="com16">finge</seg> somme Dele m&#x00E6;rkelig Overmagt; men i Rimbrevene er det <!--<seg type="com" n="com17">-->hartad<!--</seg>--> aldrig <seg type="com" n="com18">saa</seg>, fordi her ei var Noget, hvori hans <seg type="com" n="com201">Egenhed</seg> kunde <seg type="com" n="com602">tabe sig</seg>, da det meget mere var den allene, som, ski&#x00F8;nt til forskellige Tider, aftrykte sig selv.</p>
+
+            <p rend="firstIndent">Trende Breve saae en <seg type="com" n="com603">egen</seg> <seg type="com" n="com19">M&#x00E6;rkelighed</seg> derved, at vi i dem se, hvorledes <persName key="pe20">Baggesen</persName> stundom kan yttre sig om Konst og <seg type="com" n="com604">Skjaldskab</seg> samt dettes Forhold til Oldtiden. Brevet til <persName key="pe3">Oehlenschl&#x00E4;ger</persName> omtales <seg type="com" n="com20">passeligere</seg> paa et andet Sted, men de tvende til <persName key="pe1074">Gierlev</persName> <seg type="com" n="com500">skulle</seg> her lidt n&#x00E6;rmere betragtes.</p>
+
+         <p rend="firstIndent">
+<hi rend="spaced">
+<rs type="title" key="title2351">Rom og Paris</rs>
+</hi> leverer med skarpe Omrids et <seg type="com" n="com21">artigt</seg> Billede af de to store Medbeilerinder i Konstens Rige; men Skade er det, at Alvoret skinner paa nogle Steder for st&#x00E6;rkt igiennem til at kunne oversees, medens den <seg type="com" n="com801">lunefulde</seg> Anvendelse af Grethes Klagesang er alt for tro til at vi kunne taale noget Alvor, der fremtr&#x00E6;der som saadant. Slutningen er saare uheldig, da den aldeles forstyrrer Indtrykket. Linier som disse:</p>
+            
+            <lg>
+
+               <l>Hvor man gaaer i Heltes Spor,</l>
+
+               <l>Eller <seg type="com" n="com22">og</seg> til Herrens Bord,</l>
+
+               <l>Naar man bare gaaer paa Gaden,</l>
+
+            </lg>
+
+            <p rend="noIndent">eller hine:</p>
+
+            <lg>
+
+               <l>Hvor man selv i ny <seg type="com" n="com23">Priveter</seg>
+</l>
+
+               <l>Lugter kun Antikviteter,</l>
+
+            </lg>
+
+            <p rend="noIndent">maatte vel med F&#x00F8;ie &#x00F8;nskes noget anderledes, enddog de ere baade malende og fyndige.</p>
+
+            <p rend="firstIndent">
+<pb type="text" facs="1809_115_fax006.jpg" ed="A" n="260" />
+<hi rend="spaced">
+<rs type="title" key="title2352">Romereringen</rs>
+</hi> kan man virkelig l&#x00E6;se mange Gange og med megen Omhu, uden dog at finde, hvad Digteren til Slutning byder os at s&#x00F8;ge: Satire paa <hi rend="spaced">Skr&#x00F8;mt</hi>. Man tager da neppe meget feil, ved at tage alt for Alvor i Grunden, sk&#x00F8;nt det overhovedet er d&#x00E6;kket med Sp&#x00F8;gens Sl&#x00F8;r; men derfor kan man gierne tro, at Digteren mener det ganske oprigtig, naar han siden siger:</p>
+
+            <lg>
+
+               <l>&#x2013; &#x2013; &#x2013; &#x2013; jeg er</l>
+
+               <l>Naar jeg <placeName key="fak17">Rom</placeName> satiriserer</l>
+
+               <l>Og mig over Konst <seg type="com" n="com24">moqverer</seg>,</l>
+
+               <l>R&#x00E6;ven under R&#x00F8;nneb&#x00E6;r;</l>
+
+            </lg>
+
+            <p rend="noIndent">thi slige hurtige Omskiftelser ere hos ham ingen Sjeldenhed. Tage vi nu Alt for Alvor, da er det ret morsomt at see, hvilket stort Maal af &#x00C6;druelighed <persName key="pe20">Baggesen</persName> her fordrer hos Digteren, og hvor vred han er paa Drankerne <persName key="pe1147">Tieck</persName>, <persName key="pe34">Schlegel</persName>, <persName key="pe3">Oehlenschl&#x00E4;ger</persName>, ja selv paa Mesterdrikkeren <persName key="pe29">Goethe</persName> for deres ubesindige Fylderi. Det Hele synes at v&#x00E6;re blevet til i et &#x00D8;jeblik, da <persName key="pe20">Baggesen</persName> ret levende f&#x00F8;lte sin Mangel paa Heelhed, men, isteden for at erkende Mangelen som et Savn, vilde pr&#x00F8;ve paa at opstille den som et S&#x00E6;rkende paa det sande Digterv&#x00E6;sen. At hin F&#x00F8;lelse, naar den stundum ret sammensmelter med hans Bevidsthed om egen digterisk Natur, maa avle saadanne &#x00D8;jeblikke er n&#x00F8;dvendigt; men at <persName key="pe20">Baggesen</persName> vil forevige deres Minde er besynderligt.</p>
+
+            <p rend="firstIndent">Betragte vi nu Brevene for sig selv, da kunne vi neppe sige noget Sandere om dem, end hvad Digteren selv sagde:</p>
+
+            <lg>
+
+               <l>
+<pb type="text" facs="1809_115_fax007.jpg" ed="A" n="261" />&#x2013; &#x2013; &#x2013; <seg type="comStart" n="com25" />
+<hi rend="romanType">ut sibi qvivis</hi>
+</l>
+
+               <l>
+<hi rend="romanType">Speret idem</hi>
+<seg type="comEnd" n="com25" /> &#x2013; &#x2013; &#x2013;</l>
+
+            </lg>
+
+            <p rend="noIndent">men svede forg&#x00E6;ves og kaste Pennen ydmyget; thi ei findes noget i dansk, ja vel ikke blot dansk <seg type="com" n="com605">Maal</seg>, saa rundt, let og flydende. Dette g&#x00E6;lder om dem alle, men i Henseende til indre V&#x00E6;rd findes stor <seg type="com" n="com26">Adskillighed</seg>; thi fra <hi rend="spaced">
+<rs type="title" key="title2353">Hunden</rs>
+</hi> og <hi rend="spaced">
+<rs type="title" key="title2354">Str&#x00F8;mpebaandet</rs>
+</hi> til <hi rend="spaced">
+<rs type="title" key="title2355">Postskriftet</rs>
+</hi> og <hi rend="spaced">
+<rs type="title" key="title2356">Sprogsm&#x00F8;rrebr&#x00F8;det</rs>
+</hi> er en saare lang Vei, og ski&#x00F8;nt det f&#x00F8;rst er mod Enden, man f&#x00F8;ler sig lidt <!--<seg type="com" n="com27">-->m&#x00F8;dig<!--</seg>-->, &#x00F8;nskede man dog at kunne undgaa de sidste Skridt, saa at Intet sv&#x00E6;kkede Behageligheden ved Vandringens Minde. Foruden de sidstn&#x00E6;vnte findes endnu nogle Breve, der neppe fortjene Plads i en <hi rend="spaced">saadan</hi> Samling, nemlig: <hi rend="spaced">
+<rs type="title" key="title2357">Paaskeindbydelsen</rs>, <rs type="title" key="title2358">Tandpinen</rs>, <rs type="title" key="title2359">Afskeden</rs>,</hi> ja selv <hi rend="spaced">
+<rs key="title2360" type="title">Parnasrevolutionen</rs>
+</hi> og <rs type="title" key="title2361">
+<hi rend="spaced">Apol</hi> den <hi rend="spaced">Syttende</hi>
+</rs>; thi vel maa alle som skatte en Digter dv&#x00E6;le med Behag ved Alt hvori hans <seg type="com" n="com28">Selvhed</seg> yttrer sig; men det Samme lader sig ikke paastaa om de smaa <seg type="com" n="com29">Egenheder</seg>, der ene have V&#x00E6;rd for den indskr&#x00E6;nkede Kreds <seg type="com" n="com606">til hvilken de have umiddelbart Hensyn</seg>. Ere end ikke alle de &#x00F8;vrige i saa fuldt Maal <seg type="com" n="com30">vittige</seg> som de f&#x00F8;r n&#x00E6;vnte, <hi rend="spaced">
+<rs type="title" key="title2362">Overhovedet og i Grunden</rs>, <rs type="title" key="title2363">Vers for Prosa</rs>, <rs type="title" key="title2364">Taksigelsen</rs>, <rs type="title" key="title2365">Foresp&#x00F8;rgselen</rs>, <rs key="title2366" type="title">Skyggen</rs>
+</hi> og (hvad man maaske <hi rend="spaced">klogest</hi> <seg type="com" n="com31">aftr&#x00E6;ttede Vittigheden</seg>) <rs type="title" key="title2364">Brevet til <hi rend="spaced">
+<app type="corrNote" select="yes">
+<lem wit="GV">Recensenten</lem>
+<rdg wit="A">Recensenteu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</hi></rs> vil dog neppe selv deres gjentagne L&#x00E6;sning <seg type="com" n="com33">fortryde</seg> Nogen, som det ei maa <seg type="com" n="com33">fortryde</seg> Digteren at l&#x00E6;ses af. At udskrive, og udbrede sig vidtl&#x00F8;ftig herover, vilde forraade enten <pb type="text" facs="1809_115_fax008.jpg" ed="A" n="262" />en Snakkesalighed, der aldrig kunde <app type="corrNote" select="yes">
+<lem wit="GV">faa</lem>
+<rdg wit="A">saa</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> en v&#x00E6;rre Plads, eller den forn&#x00E6;rmende Tanke, at Bogen var lidet bekendt.</p>
+
+<fw type="blank" />
+
+            <head rend="1">
+<rs type="title" key="title2367">Eventyrer og komiske Fort&#x00E6;llinger</rs>,</head>
+            <head rend="0">1ste og 2den Deel. Kj&#x00F8;benh. 1807. 2 <seg type="com" n="com35">Rdlr</seg>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">H</hi>er se vi <persName key="pe20">Baggesen</persName> i den Dragt, hvori han f&#x00F8;rst og maaske mest behagede sine Landsm&#x00E6;nd; men som det synes, sjeldnere sig selv. Aldrig har han i komisk Dybde og Heelhed naaet <persName key="pe172">Holberg</persName>, mindre <persName key="pe562">Vessel</persName> i <seg type="com" n="com607">sit</seg> eneste magel&#x00F8;se V&#x00E6;rk, og undertiden kunde man vel v&#x00E6;re fristet til at gentage <persName key="pe20">Baggesens</persName> egne Ord:</p>
+
+            <lg>
+
+               <l>Skriv f&#x00F8;rst en <rs type="title" key="title1864">Kj&#x00E6;rlighed foruden Str&#x00F8;mper</rs>,</l>
+
+               <l>F&#x00F8;r du agerer <seg type="com" n="com36">
+<hi rend="romanType">votre serviteur!</hi>
+</seg>
+</l>
+
+            </lg>
+
+            <p rend="noIndent">Un&#x00E6;gteligt er det imidlertid, at der var en Tid da <rs type="myth" key="myth151.a">Komus</rs> str&#x00E6;bte efter Enevoldsmagten i <persName key="pe20">Baggesens</persName> poetiske Rige og i hans mest uindskr&#x00E6;nkede Regjerings&#x00F8;ieblik blev det meste af <rs type="title" key="title2368">Kallundborgs Kr&#x00F8;niken</rs> til; men f&#x00F8;r den endnu var aldeles f&#x00E6;rdig, gjorde de andre kun &#x00F8;iebliklig betvungne H&#x00F8;vdinge Opstand, hvorpaa <rs type="myth" key="myth151.a">Komus</rs> efter nogle svage Fors&#x00F8;g paa at genvinde sin Magt, ganske forsagede Striden og lod sig n&#x00F8;ie med stundum at <hi rend="spaced">
+<seg type="com" n="com608">n&#x00E6;vnes</seg>
+</hi> Konge. Med andre Ord: <persName key="pe20">Baggesen</persName> har digtet een komisk Fort&#x00E6;lling, men skrevet adskillige Anekdoter og Eventyr som ofte ere <seg type="com" n="com37">vittige</seg>, og have enkelte komiske Tr&#x00E6;k. Vi <seg type="com" n="com501">ville</seg> begynde med disse og ende med hin, for saaledes at indflette de sammensankede Blade i den uvisnelige Krands.</p>
+
+<fw type="blank" />
+
+            <head rend="1">
+<pb type="text" facs="1809_115_fax009.jpg" ed="A" n="263" />
+<rs type="title" key="title2369">Jeppe et sj&#x00E6;llandsk Eventyr</rs> og <rs type="title" key="title2370">Katten eller Kj&#x00E6;rligheds Triumf</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">A</hi>t <persName key="pe20">Baggesen</persName> i sine unge Dage har kunnet skrive noget Saadant er intet Under; thi hvor mangt et Hoved, som vi siden maa n&#x00E6;vne opvakt, har ei f&#x00F8;r dets Opv&#x00E6;kkelse frembragt maadelige Ting; men at han optog disse Fort&#x00E6;llinger i en ny Samling, sk&#x00F8;nt de <seg type="com" n="com802">alt</seg> vare udelukte af Ungdomsarbeiderne, er h&#x00F8;ist besynderligt. Vel siger han at de ere heel omarbeidede, og naar man ser at <rs type="title" key="title2369">Jeppe</rs> i den ny Udgave er <seg type="com" n="com210">
+<hi rend="spaced">fire</hi> fulde Ark</seg> st&#x00F8;rre end i den gamle, troer man det med Gru; men opdager dog siden til sin Beroligelse, at det kun er en Spas af Forl&#x00E6;ggeren, der ei koster andet end Penge, og at Forandringerne, langt fra at gribe ind i det V&#x00E6;senlige, <hi rend="spaced">mest</hi> angaae Udtryk.</p>
+
+            <p rend="firstIndent">I <hi rend="spaced">
+<rs type="title" key="title2369">Jeppe</rs>
+</hi> findes ei faa komiske <hi rend="spaced">Tanker</hi> ja endog nogle komiske <hi rend="spaced">
+<seg type="com" n="com900">Stillinger</seg>;</hi> men hine drukne i et Hav af Ord, og disse staae uden al naturlig Forbindelse. At en Bonde sl&#x00E6;nges fra Gaarden, slaaes med sin Kone, g&#x00F8;r nogle dumme Streger, bilder sig ind, at han er d&#x00F8;d og hans Hest Borgemester, s&#x00E6;lger K&#x00F8;d til en Hund og vil siden s&#x00E6;lge ham til Soldat, ere saa uensartede Ting, at de ei lade sig samle i een komisk Ide, og deri ligger allerede tildels Grunden til det Sidste. At her ere blevne 10 Sange isteden for en, foraarsager det F&#x00F8;rste. Mangelen paa naturlig Forbindelse skue vi ingensteds klarere <!-- spis --> end i Jeppes Handel med Hunden sat ved Siden af den med J&#x00F8;den og Hoffolkene; thi begge <seg type="com" n="com900">Stillinger</seg> ere hver for sig komiske; men tr&#x00E6;de i aabenbar Strid, <pb type="text" facs="1809_115_fax010.jpg" ed="A" n="264" />da det er Jeppe som tr&#x00E6;kker af med Hunden, men Digteren som kr&#x00E6;ver Stokkepryglene.</p>
+
+            <p rend="firstIndent">Dersom vi f&#x00F8;rste Gang saae Jeppe hvor han hugger mellem sig og Stammen, saae ham <!--<seg type="com" n="com38">-->dumpe<!--</seg>-->, d&#x00F8; ved Per Asens Suk og opstaa omtrent som han opstaaer; dersom han, savnende sin Hest, h&#x00F8;rte at en Per Asen var Borgemester i Kallundborg, og nu <hi rend="spaced">sluttede</hi> kl&#x00F8;gtig,<!-- spis --> at det maatte v&#x00E6;re hans Per; dersom han straks for de tyve Daler k&#x00F8;bte Koen, slagtede, borttrillede og solgte den, kr&#x00E6;vede Betaling og h&#x00E6;vnede sig paa Bedrageren, da vilde det ei undre os at den eviggr&#x00E6;dende Prindsesse brast i Latter ved Fort&#x00E6;llingen, vi vilde selv le med, og kunde uden M&#x00F8;ie sige <hi rend="spaced">hvoraf</hi> vi lo. Da vare vi fri for det saare ukomiske Udsmidelses Optrin, samt for den hele Birtemoer, og under <app type="corrNote" select="yes">
+<lem wit="GV">den</lem>
+<rdg wit="A">deu</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Foruds&#x00E6;tning at Alt gik rask frem, undgik vi alle de s&#x00F8;ndrende Bem&#x00E6;rkninger og kedsommelige Episoder hvormed vi nu maa drages. Udentvivl havde dette v&#x00E6;ret fuld Erstatning for de enkelte komiske Tanker og den ene Stilling, som da maatte v&#x00E6;ret borte, uden dog derfor at gaa tabte, da de vel en anden Gang vilde fundet deres Plads.</p>
+
+            <p rend="firstIndent">Tvivler Nogen om Ovenstaaendes Rigtighed, han l&#x00E6;se Fort&#x00E6;llingen og t&#x00E6;nke over den! giver han sig Tid til det F&#x00F8;rste, vil han ei mangle Stunder til det Sidste.</p>
+
+            <p rend="firstIndent">Ved en Fort&#x00E6;lling som denne er det Pligt, at anm&#x00E6;rke nogle af de mest udm&#x00E6;rkede komiske Tanker, der lettelig oversees i det forunderlige Selskab de have faaet.</p>
+
+            <p rend="firstIndent">
+<pb type="text" facs="1809_115_fax011.jpg" ed="A" n="265" />Indholdsverset til f&#x00F8;rste Sang v&#x00E6;kker store Forventninger; thi hvad maa vi ikke <seg type="com" n="com609">love os</seg> af Digteren, som strax i al Alvorlighed har os til Bedste; men i Sangen selv ere vel de Linier den ny Udgave har vundet (Pag. 13) de kosteligste; thi her skildrer Digteren sin n&#x00E6;sten totale Vankundighed <seg type="com" n="com39">saare Beskuelig</seg> ved at sige:</p>
+
+            <lg>
+
+               <l>Jeg knap med Vished veed, hvorl&#x00E6;nge f&#x00F8;r min D&#x00F8;d</l>
+
+               <l>Jeg selv blev f&#x00F8;d.</l>
+
+            </lg>
+
+            <p rend="noIndent">Saaledes overraskes vi i anden Sang (25) ved den Opdagelse, at Alt hvad der er snakket om det store Venskab mellem <rs type="myth" key="myth519">Damon</rs> og <rs type="myth" key="myth520">Pythias</rs> og de mange Andre:</p>
+
+            <lg>
+
+               <l>&#x2013; &#x2013; &#x2013; spaadomsvis forklares bedst</l>
+
+               <l>Om vor forfulgte Helt og om hans Hest.</l>
+
+            </lg>
+
+            <p rend="noIndent">I den ny Udgave (43) har Digteren villet motivere Jeppes forstandige Tale, og vist nok maatte han hellere <seg type="com" n="com700">sparet sig</seg> Umagen ved at sk&#x00E6;re den reent bort; men han <!-- spis -->veed dog at g&#x00F8;re det ganske rimeligt hvorledes Puffet muligen kunde givet Jeppe Forstand, ved den fine Bem&#x00E6;rkning:</p>
+
+            <lg>
+
+               <l>Man meer end eet Exempel veed,</l>
+
+               <l>Paa l&#x00E6;rde M&#x00E6;nd, som visse St&#x00F8;d,</l>
+
+               <l>Har skilt aldeles ved Forstanden,</l>
+
+               <l>Og Tosser derimod, som ved et Puf</l>
+
+               <l>Er bleven Professorer i en Ruf.</l>
+
+            </lg>
+
+            <p rend="noIndent">I fjerde Sang istemme vi med Digteren:</p>
+
+            <lg>
+
+               <l>Gud gl&#x00E6;de den Mands Sjel, i hvem det ogsaa var,</l>
+
+               <l>Som S&#x00F8;vnen allerf&#x00F8;rst opfundet har!</l>
+
+            </lg>
+
+            <p rend="noIndent">og blive i femte stolte paa <placeName key="fak15">Sj&#x00E6;llands</placeName> Vegne ved at se Jeppe i Standhaftighed overgaae <rs type="myth" key="myth405">Regnar <pb type="text" facs="1809_115_fax012.jpg" ed="A" n="266" />Lodbrok</rs>, <placeName key="his419">Jomsborgs</placeName> Helte, og hvad andet <seg type="com" n="com100">Ub&#x00F8;deligt</seg> der til haver v&#x00E6;ret. <seg type="com" n="com40">Vittigheden</seg> som den ny Udgave har forud:</p>
+
+            <lg>
+
+               <l>&#x2013; &#x2013; &#x2013; &#x2013; &#x2013; staae stille</l>
+
+               <l>Paa fire krybe, slentre, <seg type="com" n="com41">spanke</seg>, gaae,</l>
+
+               <l>&#x2013; &#x2013; &#x2013; &#x2013; &#x2013; desligt gaaer vel an</l>
+
+               <l>For simple Mennesker og <seg type="com" n="com42">F&#x00E6;</seg>, men flyve,</l>
+
+               <l>Det kan ei hver en Gaasefjer som vil,</l>
+            
+            </lg>
+
+            <p rend="noIndent"> er vel ikke i sig selv komisk, men er ret skikket til at fremtrylle komiske Syner.</p>
+
+            <p rend="firstIndent">I sjette Sang n&#x00F8;des vi til at dele Digterens Forundring over, at Jeppe ei den Ting,</p>
+
+            <lg>
+
+               <l>At der kan h&#x00F8;stes i de D&#x00F8;des Land,</l>
+
+               <l>&#x2013; &#x2013; &#x2013; &#x2013;i Hjernen bringe kan,</l>
+
+               <l>Skj&#x00F8;nt der var Rum deri forresten til en M&#x00E6;ngde,</l>
+
+            </lg>
+
+            <p rend="noIndent">og vor Forundring stiger med hvert &#x00D8;jeblik, vi vedblive at t&#x00E6;nke efter, hvad Grunden dog kan v&#x00E6;re til et Underv&#x00E6;rk som vi daglig se fornyet. Uvilkaarlig komiske ere Linierne:</p>
+
+            <lg>
+
+               <l>En gaaer til Hovedet<!-- l&#x00E6;deret t --> og en til Halen,</l>
+
+               <l>Jeg <hi rend="spaced">Midten</hi> ene holder lykkelig;</l>
+
+            </lg>
+
+            <p rend="noIndent">thi her staaer det Midterste med en Realitet, dets Lovtalere sjelden have vidst at give det.</p>
+
+            <p rend="firstIndent">Det Brudstykke af en nymodens Idyl, hvormed Sangen sluttes, er ogsaa fra en vis Side saare komisk.</p>
+
+            <p rend="firstIndent">Uagtet Digteren troer det i den syvende Sang vil koste L&#x00E6;seren M&#x00F8;ie at bare sig for Latter, vil det dog vist falde mangen En let, indtil han h&#x00F8;rer Jeppe give Borgemesteren sin Frihed med de m&#x00E6;rkelige Ord:</p>
+
+            <lg>
+
+               <l>
+<pb type="text" facs="1809_115_fax013.jpg" ed="A" n="267" />Godt! &#x2013; &#x2013; &#x2013; gaae nu hvor du vil,</l>
+
+               <l>Nu har du mig igjen hvad du mig kosted givet,</l>
+
+             </lg>
+            
+            <p rend="noIndent">og seer ham ledsage dem, som det sig b&#x00F8;r, med et Afskedssm&#x00E6;k.</p>
+
+            <p rend="firstIndent">Den ottende Sang <seg type="com" n="com502">ville</seg> vi springe reent forbi, for ei at fort&#x00F8;rne Digteren, der vist ikke blot for Sp&#x00F8;g begynder den niende med:</p>
+            
+            <lg>
+               
+               <l>Jeg seer saa n&#x00F8;dig, L&#x00E6;ser! at du sover.</l>
+               
+            </lg>
+           
+            <p rend="noIndent">
+<seg type="com" n="com44">Fuldelig</seg> overbevises vi i niende om, at <persName key="pe1148">&#x00C6;sop</persName> havde Uret, da han lod Dyrene pr&#x00E6;ke, thi</p>
+
+            <lg>
+               
+               <l>Forud for dem vi dog maa have lidt.</l>
+               
+               <l>Tak L&#x00E6;ser! Tak for din Taalmodighed!</l>
+            
+            </lg>
+
+            
+            <p rend="noIndent">siger Digteren i Indholdet af tiende Sang, og er det Sp&#x00F8;g, da er det ret komisk; thi man troer virkelig at have fortjent Takken og synes, man neppe endda er skadesl&#x00F8;s, f&#x00F8;r man har l&#x00E6;st hele Sangen, der bedst heel kan betragtes, som Digterens Tak.</p>
+
+            <p rend="firstIndent">
+<hi rend="spaced">
+<rs type="title" key="title2370">Katten eller Kj&#x00E6;rligheds Triumf</rs>,</hi> kaldes omarbeidet og har virkelig modtaget mange Forandringer; men, et af to, vilde man udentvivl snarere finde Spiren til <persName key="pe20">Baggesen</persName> i den gamle end genkende ham i den ny Kat.</p>
+
+            <p rend="firstIndent">Da denne Fort&#x00E6;llings &#x00D8;jemed maae antages at v&#x00E6;re: komisk at vise Kj&#x00E6;rligheds Magt, venter man mindst at finde berettet, hvorledes Digteren med Kj&#x00E6;rlighed betvang sin Afsky for Katte, da nemlig et af disse Dyr saarede hans Elskede. Dette bliver aldrig komisk, deels fordi Afskyen for Katte kan t&#x00E6;nkes at have en gyldig Grund, deels <pb type="text" facs="1809_115_fax014.jpg" ed="A" n="268" />fordi Overvindelsen er alvorlig motiveret. Skulde et saadant Stof <seg type="com" n="com701">blevet komisk</seg>, da maatte Digterens Afsky v&#x00E6;ret rettet paa en ubetydelig, uskadelig Genstand; thi naar den da overvandtes af Kj&#x00E6;rlighed, vare begge komiske. Skulde Katten v&#x00E6;ret beholdt, da vilde det vist v&#x00E6;ret godt om den blot var malet og Afskyen <seg type="com" n="com610">muselig</seg>. Ikke een komisk Linie har jeg i den ny Bearbeidelse kunnet finde, i den gamle vare derimod adskillige.</p>
+
+<fw type="blank"/>
+
+            <p rend="firstIndentRight">Forts&#x00E6;ttelsen f&#x00F8;lger.)</p>
+
+            <p rend="secondIndentRight">
+<hi rend="spaced">Grundtvig.</hi>
+</p>
+
+<pb type="periText" facs="1809_115_fax015.jpg"/>
+            <pb type="periText" facs="1809_115_fax016.jpg"/>
+            <pb type="periText" facs="1809_115_fax017.jpg"/>
+            <pb type="periText" facs="1809_115_fax018.jpg"/>
+            <pb type="periText" facs="1809_115_fax019.jpg"/>
+            <pb type="periText" facs="1809_115_fax020.jpg"/>
+         </div>
+
+
+
+
+
+         <div type="No. 18"> 
+
+            <pb type="text" facs="1809_115_fax021.jpg" ed="A" n="275" />
+
+
+            <head rend="1">
+<rs type="title" key="title2371">Odins Reise til Dovre eller Poesiens Oprindelse</rs>.</head>
+
+            <p rend="center">(See No. 17).</p>
+
+            <p rend="noIndent">
+<hi rend="initial">A</hi>t behandle en Mythe komisk, kan vist Ingen have noget imod; thi enhver Ting b&#x00F8;r jo sees fra alle sine Sider, og Alt har jo, som Fader <persName key="pe172">Holberg</persName> saa rigtig bem&#x00E6;rkede, foruden sine to Sider, endnu en tredie &#x2013; den latterlige. Poesiens Oprindelse uden Hensyn paa nogen Mythe maatte ligesaavist kunne beskues fuldkommen komisk, som der er komisk Poesi til; men til en saadan Fremstilling lod den nordiske Mythe sig neppe ret godt bruge, fordi den bestemt skelner mellem <hi rend="spaced">to</hi> Slags Mj&#x00F8;d. Naar man imidlertid, som <persName key="pe20">Baggesen</persName>, <!--<seg type="com" n="com45">-->turde<!--</seg>--> foruds&#x00E6;tte at det er <hi rend="spaced">Guden</hi> <rs type="myth" key="myth59">Odin</rs>, som <seg type="com" n="com46">stunder</seg> efter den dyre Drik, og at <hi rend="spaced">han selv</hi> havde skabt <rs type="myth" key="myth43">Kvaser</rs>, lod Mythen sig vel afvinde en komisk Side. Det v&#x00E6;re imidlertid hermed, som det vil, saa staaer dog udentvivl den Bem&#x00E6;rkning fast, at Man ei beskuer Guder med komisk &#x00D8;ie, naar Man blot ser dem drive giennem Livet som Hverdagsmennesker; thi ligefrem at fornedre er ei at g&#x00F8;re latterlig. Latterlige blive Guderne enten da, naar de, trods al den <seg type="com" n="com47">Brasken</seg> hvormed de fremtr&#x00E6;de, dog synes at mangle det sande Guddommelige der skulde retf&#x00E6;rdigg&#x00F8;re Stoltheden, eller ogsaa, naar de ansp&#x00E6;nde al deres Kraft for at naae et Maal der synes glimrende, men n&#x00E6;rmere betragtet, viser sig at v&#x00E6;re et Intet.</p>
+
+            <p rend="firstIndent">Naar Kritiken fra denne Synspunkt betragter hin baggesenske Fort&#x00E6;lling; naar den ser at det Komiske hos Guderne her allene skal udspringe <pb type="text" facs="1809_115_fax022.jpg" ed="A" n="276" />af Mods&#x00E6;tningen mellem Begrebet om Guder og den Plathed som her omringer dem, da kan dens Dom neppe <!--<seg type="com" n="com48">-->vorde<!--</seg>--> tvivlsom. Naar man end videre ser den hele Skildring af <rs type="myth" key="myth181">Gunl&#x00F8;des</rs> Sk&#x00F8;nhed, der endog benyttes til en Kompliment, Udmalingen af en Hyrdetime, samt den alvorlige Vending Tingen siden tager naar Honningen og Blodet udl&#x00E6;gges som Sundhed og S&#x00F8;dhed, Rimerne faa Skam og de gode Digtere oph&#x00F8;ies, da troer man det er en <!--<seg type="com" n="com49">-->Perspektivkasse<!--</seg>--> man har <seg type="com" n="com803">kiget</seg> i.</p>
+
+            <p rend="firstIndent">At Fort&#x00E6;llingen i&#x00F8;vrigt har meget Liv og kan l&#x00E6;ses med Behag, at dens uensartede Dele hver for sig have Ski&#x00F8;nheder, og at i Begyndelsen nogle &#x00E6;gte komiske Tanker findes, er un&#x00E6;gteligt. Til de sidste h&#x00F8;rer<!-- h'et er st&#x00E6;rkt l&#x00E6;deret --> is&#x00E6;r <rs type="myth" key="myth59">Odins</rs> <seg type="com" n="com611">Husraad</seg>, ej at give flere Mennesker som <rs type="myth" key="myth43">Kvaser</rs>, saamegen Kl&#x00F8;gt, at de skulle briste, men paa den anden Side ogsaa g&#x00F8;re gode Dage uafh&#x00E6;ngige af Forstand. Hertil maae end regnes den <seg type="com" n="com50">Synderlighed</seg>, at Erfaringen virkelig stadf&#x00E6;stede Dv&#x00E6;rgenes forvovne Slutning, at <rs type="myth" key="myth43">Kvaser</rs> dog maaske vilde miste <seg type="com" n="com804">endel</seg> af sin Visdom tilligemed Hovedet, og vi n&#x00F8;des til at tro Digteren, naar han med tilb&#x00F8;rlig Alvor forsikkrer os, at</p>
+            <lg>
+
+            <l>
+<rs type="myth" key="myth43">Kvaser</rs> aldrig meer blev den han var.</l>
+
+            </lg>
+            
+            <p rend="noIndent">Striden mellem <rs type="myth" key="myth59">Odin</rs> og <rs type="myth" key="myth72">Suttung</rs> er en Kopi af en ligedan Strid i et (jeg husker ei hvilket) af <rs type="title" key="title1890">Tusindogennats Eventyr</rs>; men synes ei ret at kunne finde sig hjemme i det ny Klima.</p>
+
+            <p rend="firstIndent">M&#x00E6;rkeligt er det, at <persName key="pe465">Voltaire</persName> som i den gamle Udgave gabede over det hele Kar med den gode Mj&#x00F8;d og fordunklede den straalende <persName key="pe378">Homer</persName>, <pb type="text" facs="1809_115_fax023.jpg" ed="A" n="277" />i den ny er jaget rent bort, saa vi atter se <persName key="pe378">Homer</persName>, og <persName key="pe972">Shakespear</persName> og <persName key="pe29">G&#x00F8;the</persName> ved hans Side.</p>
+
+            <p rend="firstIndent">Til Slutning endnu en Bem&#x00E6;rkning, som Gendrivelse af den Beskyldning at Tydskerne i Almindelighed ei give Agt paa danske Produkter. <persName key="pe881">Hr. R&#x00FC;hs</persName> udgav 1803 <rs type="title" key="title2378">Unterhaltungen f&#x00FC;r Freunde altde&#x00FC;tscher und altnordischer Geschichte und Litteratur</rs>, for, som han saa naiv siger, dog at have nogen L&#x00F8;n for sin spildte Roden i de nordiske Oldsager. Efter paa <!--<seg type="com" n="com51">-->mangehaande<!--</seg>--> Maader lige indlysende at have godtgjort sit dybe Studium af <placeName key="fak24">Norden</placeName>, <seg type="com" n="com101">foretager han sig</seg> tilsidst at bevise hvor uskikket <placeName key="fak24">Nordens</placeName> Mythologi er til at anvendes i Poesien. For nu at undgaa al Vidtl&#x00F8;ftighed, griber han fat paa hin baggesenske Fort&#x00E6;lling, og efterat have med F&#x00F8;ie dadlet den, slutter han triumferende: saaledes se <placeName key="fak24">Nordens</placeName> Myther ud, selv naar en genialsk Digter pudser dem op og laaner Sminke baade fra <placeName key="fak118">Gr&#x00E6;kenland</placeName> og <placeName key="fak17">Rom</placeName>, heraf kan man begribe hvad de i sig selv ere. O Rigdoms Dyb, paa den Mands Oldkundskab og fine Logik! Hvor maa han ikke have rodet!</p>
+
+            <head rend="1">
+<rs type="title" key="title2372">Constance eller Amors Hevn</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">N</hi>avne g&#x00F8;re vel ei stort til Sagen, som vi overfl&#x00F8;dig l&#x00E6;re af Mennesker og B&#x00F8;ger; men et Navn b&#x00F8;r imidlertid enhver Ting, om ei have saa dog fortjene. N&#x00E6;rv&#x00E6;rende Fort&#x00E6;lling kan ei <seg type="com" n="com613">n&#x00E6;vnes</seg> komisk; thi vel er her en Hoben <seg type="com" n="com52">Bagvendt</seg> men af det Slags man &#x00E6;rgrer sig over istedenfor at le. Man skulde <!--<seg type="com" n="com53">-->hartad<!--</seg>--> tro at Digteren vilde <seg type="com" n="com54">g&#x00F8;re sig tilgode over</seg> K&#x00E6;rligheden medens han lod som han vilde lovsynge den; men var dette hans Hensigt, <pb type="text" facs="1809_115_fax024.jpg" ed="A" n="278" />som det dog neppe var, da maatte ogsaa den kaldes ganske forfeilet.</p>
+
+            <p rend="firstIndent">Her fort&#x00E6;lles at en knipsk Constance l&#x00E6;nge lod som hun foragtede Kamil; men da denne istedenfor at h&#x00E6;nge sig, lod som han var mer end helbredet, kom Raden til hende at sukke. Som en af <rs type="myth" key="myth147.b">Cupidos</rs> Smaal&#x00F8;ier kan dette vel v&#x00E6;re ret godt at l&#x00E6;gge Smaapigerne paa Hjerte til Exempel og Advarsel; men det er jo sket saa tit, og, som det synes, ei uden Virkning, da Nutidens Sk&#x00F8;nne af alle Beskyldninger mindst fortjener nogen for Haardhed og Grumhed.</p>
+
+            <p rend="firstIndent">Naar Digteren derimod vil indbilde os, at Constance gik saavidt i sin Ruelse, at hun overraskede Kamil ved Nattetide, og trods al hans Haan vedblev at paatr&#x00E6;nge sig, og tog tilsidst Sengen til Hjelp, da b&#x00F8;r det anm&#x00E6;rkes at den samme Digter, der svor saa dyrt at han heller vilde synde mod Gud og al Verden end mod K&#x00F8;nnet, har her begaaet en af de utilgiveligste Synder mod samme, i det han fremstiller en <seg type="com" n="com56">Glut</seg>, som vel havde <seg type="com" n="com57">vanket</seg> paa Afveie, men dog m&#x00E6;gtede at f&#x00F8;le med det kvindelige Hjertes hele Dybde, saa aldeles blottet for al anden Kvindelighed, at man harmefuld vender sig fra hende. Med F&#x00F8;ie kunne ogsaa Constancerne is&#x00E6;r vredes paa Digteren, da han, uden at tilf&#x00F8;ie nogen n&#x00E6;rmere Bestemmelse vover at sige:</p>
+            
+            <lg> 
+               
+            <l>Der blive aldrig Koner af Constancer.</l>
+
+            </lg>
+
+            <p rend="noIndent">Kamil maa vist ogsaa v&#x00E6;re Enhver, som veed hvad det er at elske, til Forargelse, thi han behandler den arme Constance saaledes, at han aldrig kan have elsket hende, men kun attraaet <pb type="text" facs="1809_115_fax025.jpg" ed="A" n="279" />hendes Gunst. Da der nu i det Enkelte ei heller findes synderligt Udm&#x00E6;rket, kunde den hele Fort&#x00E6;lling uden Skade for Litteraturen eller <persName key="pe20">Baggesens</persName> Digterh&#x00E6;der, v&#x00E6;ret uskrevet, og man kunde med F&#x00F8;ie fordret den udeladt af den ny Samling.</p>
+
+            <head rend="1">
+<rs type="title" key="title2373">Ja og Nei eller den hurtige Frier</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">H</hi>vem har ikke denne lille nydelige Fort&#x00E6;lling fortryllet i Ungdomsarbeiderne, hvem genfinder den ikke her med Gl&#x00E6;de? Egenlig komisk er den ikke men en h&#x00F8;ist <seg type="com" n="com614">lunefuld</seg> Fremstilling af et <seg type="com" n="com58">pudserligt</seg> Optrin. Indgangen kan vel synes lang for den som kun t&#x00E6;ller Blade; men vist ikke for den som l&#x00E6;ser. Hvad nu det Enkelte angaaer da m&#x00F8;de vi strax i Begyndelsen en kostelig Lovtale, over vor saakaldte gyldne poetiske Tidsalder.</p>
+
+            <lg>
+
+               <l>Da Digtergave her i <placeName key="fak24">Norden</placeName>
+</l>
+
+               <l>
+<seg type="com" n="com59">Fast</seg> ligesaa almindelig var vorden,</l>
+
+               <l>Som Frihed, Velstand, Smag og Flid;</l>
+               
+            </lg>
+            
+            <p rend="noIndent">og da man skued</p>
+             
+             <lg>
+               <l>Poeter overalt (o s&#x00F8;de Fryd!)</l>
+
+               <l>Som Fluer.</l>
+
+            </lg>
+
+            <p rend="noIndent">kort (siger Digteren) da man sang hvad man ei gad sige, alt hvad man ikke havde og ei vidste. Morsomt er det at se hvorledes Digteren, ved at beskylde den rige Kings Sl&#x00E6;gtninge for at have raadet ham til &#x00C6;gteskab, m&#x00E6;rker han har forsnakket sig, og strax af Sandhedsk&#x00E6;rlighed tager den van&#x00E6;rende Beskyldning tilbage. Saare <seg type="com" n="com60">vittig</seg> er Episoden om de stakkels M&#x00E6;nd der maa d&#x00F8;ie nok med een Kone, om hvem Digteren hel ubarmhjertig siger:</p>
+
+            
+
+            <lg>
+
+               <l>
+<pb type="text" facs="1809_115_fax026.jpg" ed="A" n="280" />&#x2013; &#x2013; samme stakkels M&#x00E6;nd jeg ei beklager,</l>
+
+               <l>Det deres egen Skyld <seg type="com" n="com61">gemeenlig</seg> er;</l>
+
+               <l>Thi Koner ere som man Koner tager,</l>
+
+               <l>Det seer enhver.</l>
+
+            </lg>
+
+            <p rend="noIndent">Man tvivler maaske i Begyndelsen lidt om Sandheden heraf men n&#x00F8;des til egen Skam, ved n&#x00F8;iere Eftertanke, at erkl&#x00E6;re det for uimodsigeligt.</p>
+
+            <p rend="firstIndent">Slutningen er ogsaa meget v&#x00E6;rd og staaer som et Vidne om en Erkiendelse, Digteren sjelden vovede <!--<seg type="com" n="com62">-->ret at f&#x00F8;lge<!--</seg>-->. Vi vente med F&#x00F8;je en Moral, men maa n&#x00F8;ies med at h&#x00F8;re:</p>
+
+            <lg>
+
+               <l>&#x2013; &#x2013; &#x2013; <seg type="com" n="com63">Fast</seg> af hver en Periode</l>
+
+               <l>Man l&#x00E6;re kan alt hvad man l&#x00E6;re skal,</l>
+
+               <l>Naar man har Takt for det moralske Gode</l>
+
+            </lg>
+
+            <head rend="1">
+<rs type="title" key="title2374">Thomas Moore eller Venskabs Seier over K&#x00E6;rlighed</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">K</hi>endte man ei Fort&#x00E6;llingen f&#x00F8;r man her l&#x00E6;ste dens Titel umiddelbar efter den foregaaende, da maatte man tro, at Digteren, som i <hi rend="spaced">Ja og Nei</hi> sveg L&#x00E6;seren for Moralen, nu vilde forsone sin Br&#x00F8;de, ved at give en Fort&#x00E6;lling der var lutter Moral, og man vilde sande at han neppe kunde valgt et mere passeligt &#x00C6;mne end n&#x00E6;rv&#x00E6;rende. Ved at slide sig igiennem Fort&#x00E6;llingen vilde en saadan L&#x00E6;ser imidlertid finde sig slemt narret, og i kedsommelig Forbauselse gnide sine &#x00D8;ine for at se om det dog rigtig var for Alvor Digteren lovsang en forf&#x00E6;ngelig Nar, der vilde indbilde Folk, at han elskede en og giftede sig med en anden, blot for at <seg type="com" n="com64">forslaa sin Ven en tosset Grille</seg>. Skulde alligevel Engell&#x00E6;nderen virkelig, som dog er lidt utroligt, have drevet det saa vidt <pb type="text" facs="1809_115_fax027.jpg" ed="A" n="281" />i <seg type="com" n="com65">Originalitetssot</seg>, at han, for at bevise han havde den, rev Blomsten op og plantede en Tidsel isteden, da fortjente han vist nok en Lovsang men lidt anderledes stemt. Tager jeg ikke Feil, da har Digteren ved mod Slutningen at sige, han er</p>
+
+            <lg>
+
+               <l>Tilfreds med blot at have vist i Sang</l>
+
+               <l>Han ogsaa kunde hitte paa Mirakler.</l>
+
+            </lg>
+
+            <p rend="noIndent">viist, at han, i det mindste &#x00F8;iebliklig f&#x00F8;lte noget Lignende. Det bedste i hele Stykket er Begyndelsen, hvori Digteren klager over den Rimed&#x00E6;mon som forf&#x00F8;lger ham, og Fort&#x00E6;llingen giver Klagen Betydning da man virkelig her synes at se</p>
+
+            <lg>
+
+               <l>&#x2013; &#x2013; &#x2013; &#x2013; &#x2013; den haarde Skiebne</l>
+
+               <l>Mod hvilken man omsonst sig str&#x00E6;ber at bev&#x00E6;bne.</l>
+
+            </lg>
+
+
+            <head rend="1">
+<rs type="title" key="title2375">Emma et romantisk Eventyr</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">V</hi>el er det saa, at en Fader har Lov til at kalde sine B&#x00F8;rn hvad han vil, og at k&#x00E6;rt Barn har mange Navne; men dog synes denne Fort&#x00E6;lling mere at v&#x00E6;re kaldet Eventyr fordi den nu engang skulde staa her; end at have faaet Pladsen fordi den var det. Da nu dette Produkts n&#x00E6;rmere Beskuelse vilde f&#x00F8;re os ind i en ganske anden Egn, end den, hvori vi her vandre, ops&#x00E6;ttes den vel bekvemmere til en bedre Leilighed.</p>
+
+            <head rend="1">
+<rs type="title" key="title2376">D&#x00F8;den og Docteren, eller den sorte Pest</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">D</hi>er gives visse tilsyneladende Modsigelser, som have tabt deres <seg type="com" n="com66">Paafaldende</seg> og mellem disse er un&#x00E6;gtelig den at kalde Docteren <!-- spis -->D&#x00F8;dens Ven; <pb type="text" facs="1809_115_fax028.jpg" ed="A" n="282" />thi sk&#x00F8;nt man tyer til ham for at skr&#x00E6;mme D&#x00F8;den bort, er dog Meningen sjelden tvetydig naar man kalder L&#x00E6;gen Livets Offerpr&#x00E6;st. Heri ligger Grunden <!--<seg type="com" n="com67">-->hvi<!--</seg>--> det slet ikke slaaer os at se en Doctor fremstillet som den sorte D&#x00F8;ds Fader; thi Alt synes her at v&#x00E6;re i sin naturlige Orden. Skulde nu en saadan Fremstilling have vundet egenlig Interesse og komisk Udseende, da maatte den sorte D&#x00F8;d v&#x00E6;ret fremstillet som et af de store Fors&#x00F8;g L&#x00E6;gekonsten gjorde paa at udfinde et Universalmiddel der m&#x00E6;gtede at fordrive alle Sygdomme. Her se vi derimod kun et dr&#x00E6;belystent Uhyre der ei slaar Folk ihiel for at pr&#x00F8;ve sin Kunst eller h&#x00E6;ve den til Videnskab, men blot for L&#x00F8;ier.</p>
+
+            <head rend="0">
+<rs type="title" key="title2377">Theaterkr&#x00F8;niken</rs>.</head>
+
+            <p rend="noIndent">
+<hi rend="initial">D</hi>ette er den eneste ny Fort&#x00E6;lling i disse tvende Bind og er kun igennem sin Forfatter besl&#x00E6;gtet med de andre. Man skulde snart tro, den var skrevet for at s&#x00E6;tte en stakkels Recensent i Forlegenhed; thi springe den over vover han ikke og det koster ham Hovedbrud at sige noget Passende om den. Man siger egenlig intet ved at kalde den morsom; thi man kan dog ei give Nogen som ei l&#x00E6;ste den Begreb om hvad det er for et Slags Morsomhed han der vil finde. Recensenten maa da gribe til det <seg type="com" n="com612">Husraad</seg> at bede Enhver l&#x00E6;se den, vis paa, at L&#x00E6;seren da faaer hans Tanker at vide. Det Hele er en ret Baggesensk overgiven Sp&#x00F8;g, der tager alt <seg type="com" n="com68">M&#x00F8;dende</seg> i &#x00F8;iebliklig Tjeneste uden at sp&#x00F8;rge om Forlov, hvorover det let kan h&#x00E6;nde sig at ei blot Theatrets Personer men selv Skikkeligheden, den adstadige M&#x00F8;, turde finde sig st&#x00F8;dt. <pb type="text" facs="1809_115_fax029.jpg" ed="A" n="283" />Episoden om <persName key="pe509">Frankenaus</persName> Julekage er munter og tr&#x00E6;ffende, ligesom Till&#x00E6;gget:</p>
+
+            <lg>
+
+               <l>Da maa jeg dog sige,</l>
+
+               <l>Den Kage jeg forrige F&#x00F8;dselsdag</l>
+
+               <l>Hans Majest&#x00E6;t saa godt som for&#x00E6;rte,</l>
+
+               <l>Var derimod en ordenlig T&#x00E6;rte.</l>
+
+            </lg>
+
+            <p rend="noIndent">er &#x00E6;gte komisk.</p>
+
+            <p rend="firstIndent">Komisk grundig er Beviset for at Kr&#x00F8;niken maa gaae i Staa fordi den har formeget Stof. <seg type="com" n="com69">Sikkerlig</seg> maa vi give Digteren Ret, naar han, efterat have moret os saal&#x00E6;nge med den blotte Form; anm&#x00E6;rker at</p>
+            
+            <lg>
+            
+            <l>&#x2013; lettere kaages en Suppe paa Pind</l>
+               
+               <l>End Pind af Suppe selv nok saa megen,</l>
+               
+            </lg>
+            
+            <p rend="noIndent">vel at m&#x00E6;rke naar en <persName key="pe20">Baggesen</persName> er Kok, og det maa kaldes Digterens Triumf at vi, selv efterat have, maaske endog alt for tydelig, beskuet Sandheden af den S&#x00E6;tning at Stoffets Overfl&#x00F8;dighed er en h&#x00E6;slig Ting, dog endnu overraskes ved det sidste saa uimodsigelige Bevis:</p>
+
+            <lg>
+
+               <l>Vor Herre selv Verden ei havde gjort</l>
+
+               <l>Hvis Kaos havde ham v&#x00E6;ret for stort.</l>
+
+            </lg>
+
+            <head rend="1">
+<rs type="title" key="title2368">Kallundborgs Kr&#x00F8;nike eller Censurens Oprindelse</rs>.</head>
+
+            <lg>
+
+               <l rend="firstIndent">
+<seg type="comStart" n="com102" />
+<hi rend="romanType">Per varios casus, per tot discrimina rerum</hi>
+</l>
+
+               <l rend="secondIndent">
+<hi rend="romanType">Tendimus in Latium<seg type="comEnd" n="com102" /> &#x2013; &#x2013; &#x2013; &#x2013;</hi>
+</l>
+
+            </lg>
+
+            <p rend="noIndent">har sv&#x00E6;vet mig for &#x00D8;ret og i Tanken under den hele Vandring og vist er det at Maalet l&#x00F8;nner Gangen om den saa end var gennem langt mere blomsterl&#x00F8;se Egne.</p>
+
+            <p rend="firstIndent">Man kunde fristes til at udbrede sig ret vidtl&#x00F8;ftig over dette herlige V&#x00E6;rk; men dels taaler et <pb type="text" facs="1809_115_fax030.jpg" ed="A" n="284" />komisk Digt ingen vidtl&#x00F8;ftig Omtale i det Enkelte og dels er denne Fort&#x00E6;lling saaledes beskaffen, at L&#x00E6;seren med <seg type="com" n="com103">Sands</seg> hverken kan beh&#x00F8;ve eller &#x00F8;nske Fingerpeg. Det maa da v&#x00E6;re nok at angive den almindelige Synspunkt hvorfra Digtet b&#x00F8;r betragtes med Hensyn til den komiske Ide der er dets Sjel.</p>
+
+            <p rend="firstIndent">At Censuren i sig selv er &#x00E6;gte komisk, vil neppe Nogen n&#x00E6;gte, som t&#x00E6;nker lidt efter og ei lader sig forvilde ved Synet af alt det S&#x00F8;rgelige, den har afstedkommet; thi det har den tilf&#x00E6;lles med alle Troldpuslinge. Det var en v&#x00E6;rdig Opgave for den komiske Digter at levere dette V&#x00E6;sens F&#x00F8;dselshistorie og <placeName key="poet219">Dannemark</placeName> har den &#x00C6;re at <persName key="pe20">Baggesen</persName> blev Manden. En <seg type="com" n="com70">s&#x00F8;vnsalig</seg> Borgemester var Utingens Fader og han avlede den i et &#x00D8;ieblik, som Skebnen stjal fra hans Sovetime for at give det titusendfold til hans <seg type="com" n="com805">Efterm&#x00E6;nd</seg>. Han vilde censurere, ei for selv at fries fra de Stikpiller der kunde bydes ham i en ny Vise, thi dem maatte han jo netop sv&#x00E6;lge og ford&#x00F8;je for at tilintetg&#x00F8;re dem, nei hans Bestr&#x00E6;belser <seg type="com" n="com71">ginge</seg> ene ud paa at v&#x00E6;nne Fortiden fra den Uskik at satirisere over agtbare M&#x00E6;nd f&#x00F8;r de vare f&#x00F8;dte. Manden havde upaatvivlelig mere Ret, end det ved f&#x00F8;rste &#x00D8;iekast synes; thi den Slags Satire er netop den allerfarligste, fordi den skiuler sig under Uskyldigheds Maske, og gaaer umist&#x00E6;nkt sin lumske Gang fra Sl&#x00E6;gt til Sl&#x00E6;gt.</p>
+
+            <p rend="firstIndent">Det var da altsaa, o Censur! din K&#x00E6;mpeplan at dr&#x00E6;be Historiens frygtelige Uhyre! Det lykkedes Dig ei, fordi den, som alle sine Lige, havde 100 sig selv gienf&#x00F8;dende Hoveder og en <pb type="text" facs="1809_115_fax031.jpg" ed="A" n="285" />Tunge i hvert; men derved taber hverken du eller din Fader noget af eders velfortjente H&#x00E6;der; thi I gjorde hvad I m&#x00E6;gtede, og hvem vil ikke her udbryde af Hjertens Grund: <hi rend="romanType">
+<seg type="com" n="com104">in magnis voluiss&#x00E9; s&#x00E1;t est</seg>!</hi>
+</p>
+
+            <p rend="firstIndent">Til Slutning b&#x00F8;r erindres, at Digteren havde gjort vel i at bortsk&#x00E6;re den alvorlige Skildring af Censurens onde F&#x00F8;lger, der kun forstyrrer det komiske Indtryk.</p>
+
+            <p rend="firstIndentRight">(Forts&#x00E6;ttelsen f&#x00F8;lger).</p>
+
+            <p rend="secondIndentRight">
+<hi rend="spaced">Grundtvig.</hi>
+</p>
+
+         </div>
+      </body>
+      <pb type="periText" facs="1809_115_fax032.jpg" />
+      <pb type="periText" facs="1809_115_fax033.jpg" />
+      <pb type="periText" facs="1809_115_fax034.jpg" />
+      <pb type="periText" facs="1809_115_fax035.jpg" />
+      <pb type="periText" facs="1809_115_fax036.jpg" />
+   
+</text>
+</TEI>

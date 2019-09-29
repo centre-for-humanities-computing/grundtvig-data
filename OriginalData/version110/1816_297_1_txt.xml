@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Danne-Virke</title>
+      <title rend="shortForm">Danne-Virke</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Ida Marie Klahn</editor>         
+      <editor role="student">Helene Drejer</editor>
+     </titleStmt>
+       
+        <editionStmt>
+            <edition>
+               <idno type="content">1.10</idno>
+               <idno type="technic">1.10.1</idno>
+            </edition>
+         </editionStmt>
+       
+     <extent>29 KB</extent>
+       
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            <date when="2016-04-29">www.grundtvigsv&#x00E6;rker.dk, version 1.9, 31. oktober 2016</date>
+         </publicationStmt>
+       
+         <notesStmt>
+            <note xml:id="thisFile" target="1816_297_1_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note target="1816_297_1_com.xml" type="com">Punktkommentar</note>
+            <note target="1816_297_1_intro.xml" type="intro">Indledning</note>
+            <note target="1816_297_1_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+            <note type="minusVar">Variant</note>
+          
+         </notesStmt>
+     
+               
+        
+       
+     <sourceDesc>
+      <bibl>
+       <title type="main">Danne-Virke et Tids-Skrift</title>
+               <title type="part">Danne-Virke</title>
+       <author>Nicolai Frederik Severin Grundtvig</author>
+       <pubPlace>K&#x00F8;benhavn</pubPlace>
+       <publisher>Schi&#x00F8;tz &#x0026; Mandra
+       </publisher>
+       <date>1816</date>
+      </bibl>
+        
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="297">
+        <desc>F&#x00F8;rstetrykket</desc>
+        <num>1816</num>
+       </witness>
+      </listWit>
+        
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">                   
+          <desc>Poetiske Skrifter</desc>
+          <num>4</num>                
+       </witness>  
+         
+       <witness xml:id="US">                   
+          <desc>Udvalgte Skrifter</desc>
+          <num>3</num>                
+       </witness> 
+       
+         <!-- <witness xml:id="sigel">
+        <desc>[udgave]</desc>
+        <num>[bindnummer]</num>
+       </witness> -->
+      
+      </listWit>
+     </sourceDesc>
+       </fileDesc>
+      
+      <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsv&#x00E6;rker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsv&#x00E6;rker.dk/emneord.xml">
+       <term>Danmark</term>
+       <term>historie</term>
+       <term>kristendom</term>
+         <term>nordisk</term>
+       <term>mytologi</term>
+       
+      </keywords>
+     </textClass>
+    </profileDesc>
+      
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+       <change who="IMK"  xml:id="IMK" when="2016-02-16">indf&#x00F8;jet rettelser fra 1. kollation af Grundtvigs V&#x00E6;rkers samling, eksemplar: Otto M&#x00F8;ller</change>
+       <change who="IMK" when="2016-02-25">oprettet kommentarfil</change>
+    
+       <change who="IMK" when="2016-03-02">f&#x00E6;rdiggjort kommentarer og registeropm&#x00E6;rkninger</change>
+      <change who="IMK" when="2016-03-09">2. kollationering ved Helene Drejer.</change>
+     <change who="IMK" when="2016-03-09">3. kollationering ved Ida Marie Klahn.</change>
+    <change who="IMK" when="2016-03-10">indføjet kommentarer fra 1. redaktion ved Jon Tafdrup.</change>
+    <change xml:id="JT" who="JT" when="2016-04-12">noCom - tilpasset teiheader til udgivelse 1.8</change>
+    <change who="KN" when="2016-04-26" xml:id="KN">ændret i det tekstkritiske apparat fra 'disc' til 'yes' (i alt 2 stk.)</change>
+      <change xml:id="VAP" who="VAP" when="2016-05-04">indføjet flere kommentarer (new; com78-80)og uddybet andre (corr). Det er lidt svært pga. Idas nummereringer</change>
+         <change who="VAP" when="2016-05-12">indføjet flere kommentarer (new; com81-84)</change>
+         <change who="VAP" when="2016-05-13">rettet kommentarer til efter Jons bemærkninger</change>
+          <change who="VAP" when="2017-01-06">rettet til efter Klaus' bemærkninger - IM skal vist egl. gøre dette</change>
+       <change who="IMK" when="2017-01-12">indføjet flere rettelser fra Klaus' 3. redaktion</change>
+       
+     </revisionDesc>
+   </teiHeader>
+   
+  
+   <text type="txt">    
+          <body>
+      <div type="[Tekst]"> 
+         
+         <pb type="text" facs="1816_297_1_fax001.jpg" ed="A" n="1" rend="supp"/>
+       <pb type="edition" ed="US" n="308"/>
+         <pb type="edition" ed="PS" n="296"/>
+   
+<head rend="2"><placeName key="his23">Danne-Virke</placeName>.</head>
+<lg n="1">
+<l><hi rend="initial">F</hi>ra de gamle, glemte Dage</l>
+<l>Fra den dunkle Hedenold,</l>
+<l>Hvisker <seg type="com" n="com1">end</seg> i <placeName key="fak14">Danmarks</placeName> <seg type="com" n="com2">Sage</seg></l>
+<l>Hjertet om den h&#x00F8;ie Vold,</l>
+<l>Som opbygt ved danske H&#x00E6;nder</l>
+<l>Skulde <seg type="com" n="com3">bold</seg> ved Landets Ender</l>
+<l>Trodse Fjendens <seg type="com" n="com4">Avindskjold</seg>.</l>
+</lg>
+         
+<lg n="2">
+<l>Ja det staaer med gyldne <seg type="com" n="com5">Stave</seg></l>
+<l>Ristet dybt i <rs type="myth" key="myth64">Sagas</rs> Skjold</l>
+<l>At for <rs type="myth" key="myth138">Dans</rs> Ki&#x00E6;rminde-Have</l>
+<l>Altid var en <seg type="com" n="com500">Gaade-Vold</seg>,</l>
+<l>Sl&#x00E6;gtens hellige Ki&#x00E6;rminde</l>
+<l>Fjenden aldrig maatte finde;</l>
+<l>En Cherub for Haven stod.</l>
+</lg> 
+
+<lg n="3">
+<l><pb type="text" facs="1816_297_1_fax002.jpg" ed="A" n="2"/><pb type="edition" ed="PS" n="297"/>Ak! <seg type="com" n="com501">vel</seg> tit i onde Dage</l>
+<l>Sank den gamle <seg type="com" n="com81">Dannevold</seg>,</l>
+<l>Engelen sig svang med Klage</l>
+<l>Over Skoven med sit Skjold,</l>
+<l>Men han sang dog over Lunden:</l>
+<l>Gr&#x00E6;d! din Engel er forsvunden,</l>
+<l>Sjunken er din gamle Vold.</l>
+</lg>
+<lg n="4">
+<l>Naar det toned <seg type="com" n="com6">saa</seg> fra Oven</l>
+<l>Og gjenl&#x00F8;d i Fuglebryst,</l>
+<l>Da veemodig blegned Skoven</l>
+<l>Ved Ki&#x00E6;rmindens Klager&#x00F8;st:</l>
+<l>&#x201C;T&#x00F8;mt, udt&#x00F8;rret er mit B&#x00E6;ger,</l>
+<l>Ingen Dug mig vederkv&#x00E6;ger,</l>
+<l>Visne maae jeg nu <seg type="com" n="com7">paa Stand</seg>.&#x201D;</l>
+</lg>
+<lg n="5">
+<l><pb type="edition" ed="US" n="309"/>Naar det Fuglene <seg type="com" n="com100">fornumme</seg>,</l>
+<l>Ynkelig de skreg i Vang:</l>
+<l>Ak! saa maae <seg type="com" n="com8">og</seg> vi forstumme,</l>
+<l>Din, Ki&#x00E6;rminde! er vor Sang,</l>
+<l>Vi kun leve i din <seg type="com" n="com101">Aande</seg>,</l>
+<l>Sjunge ud din Fryd og Vaande,</l>
+<l>Og maae blegne, d&#x00F8;e med dig.</l>
+</lg> 
+         
+<lg n="6">
+<l><pb type="text" facs="1816_297_1_fax003.jpg" ed="A" n="3"/>Lundens <seg type="com" n="com9">vaandefulde</seg> Toner</l>
+<l>Gjennem Skyen sig opstreed,</l>
+<l>Til den <seg type="com" n="com10">Hald</seg> hvor herlig throner</l>
+<l>Idel, evig Miskundhed,</l>
+<l><seg type="com" n="com401">Kongen</seg> h&#x00F8;rde Lundens Klage,</l>
+<l>Og Cheruben kom tilbage,</l>
+<l>Vinked op den sjunkne Vold.</l>
+</lg>
+<lg n="7">
+<l>Aldrig <seg type="com" n="com11">gaae du os af Minde</seg>,</l>
+<l>F&#x00F8;r vi sees ved Thronens Fod,</l>
+<l><pb type="edition" ed="PS" n="298"/>&#x00C6;gte, fromme <seg type="com" n="com300">Danne-Kvinde</seg>,</l>
+<l>Gamle <persName key="pe249">Thyre Dannebod</persName>!</l>
+<l>I dit Navn som i dit Minde</l>
+<l>Vi vor s&#x00F8;de Moder finde</l>
+<l>I <seg type="com" n="com301">ki&#x00E6;rmindelig</seg> Gestalt.</l>
+</lg>
+<lg n="8">
+<l>Engelen sig havde svunget</l>
+<l>Over Lunden h&#x00F8;it i Skye,</l>
+<l><seg type="com" n="com502">Som</seg> forgj&#x00E6;ves havde <seg type="com" n="com12">klunget</seg></l>
+<l><seg type="com" n="com503">Varselen i Vaabengnye</seg>,</l>
+<l><rs type="myth" key="myth115">Skjoldung</rs>-&#x00C6;tten, vild, bed&#x00F8;vet,</l>
+<l>Havde selv nedtraadt i St&#x00F8;vet</l>
+<l>Gi&#x00E6;rdet for sin gr&#x00F8;nne Lund.</l>
+</lg> 
+
+<lg n="9">
+<l><pb type="text" facs="1816_297_1_fax004.jpg" ed="A" n="4"/>Dog, et bedre <placeName key="his23">Danne-Virke</placeName></l>
+<l>Stod i Aanden under Skye,</l>
+<l>Det var dig, du lille Kirke!</l>
+<l><seg type="com" n="com103">Alterskur</seg> i <placeName key="his95">Hedebye</placeName>!</l>
+<l>Der, o der i <persName key="pe17">Ansger</persName>-Sognet</l>
+<l>Var Ki&#x00E6;rminden brat opvaagnet,</l>
+<l>Der Cheruben sig opsvang.</l>
+</lg>
+<lg n="10">
+<l>Ingen Fugl der var i Lunden,</l>
+<l>Som gientog Cherubens R&#x00F8;st,</l>
+<l>Dog den fandt i Midnats-Stunden</l>
+<l>Svar i Nattergale-Bryst;</l>
+<l><pb type="edition" ed="US" n="310"/>Det var dig, <persName key="pe17">Ansgar</persName> hin milde!</l>
+<l>Som for Lunden v&#x00E6;re vilde</l>
+<l>&#x00D8;re <seg type="com" n="com104">lydt</seg> og Tunge s&#x00F8;d.</l>
+</lg>
+<lg n="11">
+<l>Det var dig som tolked R&#x00F8;sten</l>
+<l>Med det klare Guddoms-Ord,</l>
+<l><rs type="bible" subtype="bibleStart" key="Luk 2,14" rend="reference" n="bible1" />Med den Engler&#x00F8;st fra <placeName key="fak229">&#x00D8;sten</placeName></l>
+<l>Som forkyndte Fred paa Jord,</l>
+<l><pb type="edition" ed="PS" n="299"/>I de Aandens klare Toner</l>
+<l>Om den himmelske Forsoner,</l>
+<l>Om det aabne Paradiis.<rs type="bible" subtype="bibleEnd" key="Luk 2,14" rend="reference" n="bible1" /></l>
+</lg> 
+
+<lg n="12">
+<l><pb type="text" facs="1816_297_1_fax005.jpg" ed="A" n="5"/>F&#x00F8;r skal derfor <seg type="com" n="com14">og</seg> udrinde</l>
+<l><seg type="com" n="com403">Korsev&#x00E6;ld</seg> i <placeName key="fak623">Isefjord</placeName>,</l>
+<l>F&#x00F8;rend <placeName key="fak14">Dannemarks</placeName> Ki&#x00E6;rminde</l>
+<l>Glemmer dig og dine Ord;</l>
+<l>I dit Navn som i dit Minde</l>
+<l>Skal hun r&#x00F8;rt sin Engel finde,</l>
+<l>Som han var i Mands-Gestalt.</l>
+</lg>
+<lg n="13">
+<l>Da Ki&#x00E6;rminden gik til Kirke,</l>
+<l>Kn&#x00E6;lede paa <seg type="com" n="com15">Alterfod</seg>,</l>
+<l>H&#x00F8;it sig h&#x00E6;ved <placeName key="his23">Danne-<hi rend="spaced">Virke,</hi></placeName></l>
+<l>Som et V&#x00E6;rk af <hi rend="spaced"><persName key="pe249">Danne-Bod</persName>;</hi></l>
+<l>Trodsede med Port og <seg type="com" n="com16">St&#x00E6;nger</seg></l>
+<l>Tr&#x00F8;stig <persName key="pe2492">Henrik <hi rend="spaced">Fugle-F&#x00E6;nger</hi></persName>,</l>
+<l>B&#x00F8;gen blev ham alt for h&#x00F8;i.</l>
+</lg>
+<lg n="14">
+<l>Ak! da, fromme <seg type="com" n="com302">Danne-Kvinde</seg>,</l>
+<l>Du bedaget sank i Jord,</l>
+<l>Fulgde <placeName key="fak14">Dannemarks</placeName> Ki&#x00E6;rminde</l>
+<l>Livets ei men Ligets Spor,</l>
+<l>Da forfaldt den lille Kirke,</l>
+<l>Da forfaldt <seg type="com" n="com17">og</seg> <placeName key="his23">Danne-Virke</placeName>,</l>
+<l>Faldt for <persName key="pe436">Olav Trygvas&#x00F8;n</persName>.</l>
+</lg> 
+
+<lg n="15">
+<l><pb type="text" facs="1816_297_1_fax006.jpg" ed="A" n="6"/>Bort med Klage, bort med <seg type="com" n="com400">Sukke</seg>!</l>
+<l>Faldet var en H&#x00F8;itids-Fest,</l>
+<l>Volden vilde udelukke</l>
+<l><seg type="com" n="com505">Lundens s&#x00F8;de Julegi&#x00E6;st</seg>,</l>
+<l>Og Ki&#x00E6;rminden r&#x00F8;rt ham m&#x00F8;der,</l>
+<l><seg type="com" n="com106">Der</seg> hun seer <seg type="com" n="com506">den Gi&#x00E6;st</seg> <seg type="comStart" n="com507"/>paa Gl&#x00F8;der</l>
+<l>Mod sig gaae<seg n="com507" type="comEnd"/> af Ki&#x00E6;rlighed.</l>
+</lg>
+<lg n="16">
+<l><pb type="edition" ed="US" n="311"/><pb type="edition" ed="PS" n="300"/><seg type="com" n="com19">&#x00D8;de</seg> kunde <seg type="com" n="com20">Fyrre-Flammer</seg></l>
+<l><persName key="pe249">Thyras</persName> <persName key="pe2492">Fugle-F&#x00E6;nger</persName>-Vold,</l>
+<l>Dane-Skovens gamle Stammer</l>
+<l>Svigted nu som <seg type="com" n="com84">Danne-Skjold</seg>,</l>
+<l>Men Ki&#x00E6;rmindens Hjerte-Lue</l>
+<l>Blussed op i <hi rend="spaced"><seg type="com" n="com21">Kors og Bue</seg></hi></l>
+<l>Til et helligt Flamme-Hegn.</l>
+</lg>
+<lg n="17">
+<l>Derfor, <placeName key="fak14">Dannemark</placeName>! til Lykke</l>
+<l>Med dit christne Lundehegn!</l>
+<l>Planke-V&#x00E6;rket kun i Skygge</l>
+<l><seg type="com" n="com22">Varslede for</seg> Korsets Tegn,</l>
+<l>Syng, Ki&#x00E6;rminde! <persName key="pe45">Christi</persName> Kirke</l>
+<l>Er det sande <placeName key="his23">Danne-Virke</placeName>,</l>
+<l>Min Forl&#x00F8;sers <seg type="com" n="com23">Dannes-V&#x00E6;rk</seg>.</l>
+</lg> 
+
+<lg n="18">
+<l><pb type="text" facs="1816_297_1_fax007.jpg" ed="A" n="7"/>O! velsignede Ki&#x00E6;rminder,</l>
+<l>Blomstrende i <seg type="com" n="com600">Danne-Muld</seg>!</l>
+<l>O! I fromme <seg type="com" n="com303">Danne-Kvinder</seg></l>
+<l>Med det klare <seg type="com" n="com107">Finger-Guld</seg>!</l>
+<l><seg type="com" n="com24">Sjunger</seg> om det <placeName key="his23">Danne-Virke</placeName></l>
+<l>Som i <persName key="pe45">Jesu Christi</persName> Kirke</l>
+<l>Blev opbygget underfuld!</l>
+</lg>
+<lg n="19">
+<l>Gud med &#x00E6;gte Guld kun bygger,</l>
+<l>Toner det fra eders Grav,</l>
+<l>Han med vore <seg type="com" n="com78">Gylden-Smykker</seg></l>
+<l>Gjorde Vold paa Hedenskab,</l>
+<l>Ki&#x00F8;bde sig Kong <persName key="pe444">Svend</persName> af <placeName key="his504">Venden</placeName>,</l><!-- ?? -->
+<l>Vi fik Arv <seg type="com" n="com25">med Unger-Svenden</seg>,</l>
+<l>Evig er Guds Miskundhed!</l>
+</lg>
+<lg n="20">
+<l>Ja, <seg type="com" n="com26">tilvisse</seg>, <seg type="com" n="com304">Danne-Kvinder</seg>!</l>
+<l>Har I vundet <seg type="com" n="com27">Arvegang</seg>,</l>
+<l><pb type="edition" ed="PS" n="301"/>Lunden, til jer &#x00C6;t forsvinder,</l>
+<l>Kaldes skal Ki&#x00E6;rminde-Vang;</l>
+<l>Arve skal <seg type="com" n="com28">og</seg> som Ki&#x00E6;rminde</l>
+<l><seg type="com" n="com108">Markens</seg> fromme <seg type="com" n="com305">Danne-Kvinde</seg></l>
+<l><seg type="com" n="com306">Vist</seg> <seg type="com" n="com29">med <placeName key="his581">Zions</placeName> Unger-Svend</seg>.</l>
+</lg> 
+
+<lg n="21">
+<l><pb type="text" facs="1816_297_1_fax008.jpg" ed="A" n="8"/><pb type="edition" ed="US" n="312"/>Denne Arv ei vilde ki&#x00F8;be</l>
+<l><persName key="pe305">Jacobs</persName> <seg type="com" n="com30">Kvinde-Menighed</seg>,</l>
+<l><rs type="bible" subtype="bibleStart" key="2 Mos 32,1-6" rend="reference" n="bible2" />Guldet skulde <persName key="pe734">Aaron</persName> st&#x00F8;be</l>
+<l>Til en Afguds-Kalv saa leed,<rs type="bible" subtype="bibleEnd" key="2 Mos 32,1-6" rend="reference" n="bible2" /></l>
+<l>Da <seg type="com" n="com307"><hi rend="spaced">fra</hi> Arven den sig ki&#x00F8;bde</seg>,</l>
+<l>Og til den, <persName key="pe17">Ansgar</persName>, du d&#x00F8;bde</l>
+<l>Dronning <persName key="pe249">Thyra Dannebod</persName>.</l>
+</lg>
+<lg n="22">
+<l>Men, ak sjunket nu i Gruset</l>
+<l>Ligger pruden Kirkevold,</l>
+<l>Og vi see i Vaabenhuset</l>
+<l>Ikkun Baaren til Kong <rs type="myth" key="myth67">Skjold</rs>,</l>
+<l>Gubber kun med Stav i H&#x00E6;nde,</l>
+<l>Blye og <seg type="com" n="com31">blotte</seg> Ungersvende</l>
+<l>S&#x00F8;rgende ved Baaren staae.</l>
+</lg>
+<lg n="23">
+<l>Ak! skal det Bedriften v&#x00E6;re</l>
+<l>Hvormed Livet endes her,</l>
+<l>At til Grav med Suk de b&#x00E6;re</l>
+<l>Minderne om <seg type="com" n="com32">Herref&#x00E6;rd</seg>!</l>
+<l>Oldinger og Ungersvende!</l>
+<l>Ak! skal I Bedriften ende</l>
+<l>Med saa ynkelig en F&#x00E6;rd!</l>
+</lg> 
+
+<lg n="24">
+<l><pb type="text" facs="1816_297_1_fax009.jpg" ed="A" n="9"/><seg type="com" n="com33">Under Landet</seg> Snekken sv&#x00F8;mmer,</l>
+<l>Stavnen <seg type="com" n="com79">stammer</seg>: <seg type="com" n="com83">Danne-Skjold</seg>,</l><!--  -->
+<l>Tidens Tunge h&#x00F8;it ber&#x00F8;mmer</l>
+<l>Snekken fiin fra Hedenold,</l>
+<l><pb type="edition" ed="PS" n="302"/>Priser h&#x00F8;it den Fugl i Skove,</l>
+<l>Der sig paa den danske Vove</l>
+<l>Har gienf&#x00F8;dt saa mange Fold.</l>
+</lg>
+<lg n="25">
+<l>Fugl, som over st&#x00E6;rke <seg type="com" n="com34">Ribber</seg></l>
+<l>Spreder Vinge under Skye!</l>
+<l><seg type="com" n="com109">Gubbekvad</seg> fra <placeName key="fak41">Norges</placeName> Klipper,</l>
+<l>Ungdomssang i B&#x00F8;gelye,</l>
+<l>M&#x00F8;dtes <seg type="com" n="com35">under Tvilling-Krone</seg>,</l>
+<l>D&#x00F8;bde dig i <seg type="com" n="com36">Tvilling-Tone</seg></l>
+<l>Med dit gamle Adelsnavn.</l>
+</lg>
+<lg n="26">
+<l><pb type="edition" ed="US" n="313"/><rs type="bible" key="Matt 28,7" rend="allusion">Stod du da kun op af D&#x00F8;de</rs></l>
+<l>For at vinde Martyrnavn,</l>
+<l>Var det sidste Aften-R&#x00F8;de</l>
+<l>Der <seg type="com" n="com37">omgl&#x00F8;dede</seg> din Stavn,</l>
+<l><seg type="com" n="com38">Fikst</seg> du kun de <seg type="com" n="com110">Ribber</seg> st&#x00E6;rke,</l>
+<l><seg type="com" n="com39">Fikst</seg> du kun det <seg type="com" n="com40">Tvilling-M&#x00E6;rke</seg>,</l>
+<l>For at varsle Undergang!</l>
+</lg> 
+
+<lg n="27">
+<l><pb type="text" facs="1816_297_1_fax010.jpg" ed="A" n="10"/><seg type="com" n="com601">Phoenix</seg>! <seg type="com" n="com111">est</seg> du kun opstanden</l>
+<l>Af din Aske seierrig,</l>
+<l>For at b&#x00E6;re over Stranden</l>
+<l>Bort din gamle Faders Liig,</l>
+<l>Skal for sidste Gang vi skue</l>
+<l>Vingens <seg type="com" n="com112">r&#x00F8;de Gylden-Bue</seg>,</l>
+<l>Buens <seg type="com" n="com112">hvide Tvilling-Tegn</seg>!</l>
+</lg>
+<lg n="28">
+<l>Skal <placeName key="fak417">&#x00C6;gypten</placeName> sig til Lykke</l>
+<l>&#x00D8;nske nu med vundet Spil,</l>
+<l>Sit <rs type="myth" key="myth464">Osiris</rs>-Tempel smykke,</l>
+<l>Katakomben lave til?</l>
+<l>Skal vor sidste Hvid nu springe</l>
+<l>For at du dig kan bortsvinge</l>
+<l>Med det dyre <hi rend="spaced"><seg type="com" n="com41">Myerha-&#x00C6;g!</seg></hi></l>
+</lg>
+<lg n="29">
+<l><pb type="edition" ed="PS" n="303"/>Skal vi, som fra gamle Dage</l>
+<l>Saa veemodelig det klang,</l>
+<l>Staae med Graad paa Kind tilbage</l>
+<l>I den &#x00F8;de <placeName key="fak14">Danevang</placeName>,</l>
+<l>Stirre, til os Taaren blinder</l>
+<l>Til det sidste Glimt forsvinder</l>
+<l>Af vor Fader og vor Arv!</l>
+</lg> 
+
+<lg n="30">
+<l><pb type="text" facs="1816_297_1_fax011.jpg" ed="A" n="11"/>Nei, du gamle <seg type="com" n="com42">Skipper-Barde</seg>!</l>
+<l>Du <seg type="com" n="com113">kanst</seg> ei om <placeName key="fak14">Danmark</placeName> spaae,</l>
+<l>Ei som <seg type="com" n="com308">gule Leoparde</seg></l>
+<l>F&#x00E6;rdes <seg type="com" n="com114">L&#x00F8;ven himmelblaa</seg>;</l>
+<l><rs type="myth" key="myth1059">Angul</rs> sank i Verdens Havet,</l>
+<l>Men paa <hi rend="spaced"><seg type="com" n="com402">N&#x00E6;s</seg></hi> er <rs type="myth" key="myth67">Skjold</rs> begravet</l>
+<l>Til Opstandelse <seg type="com" n="com43">forvist</seg>.</l>
+</lg>
+<lg n="31">
+<l><pb type="edition" ed="US" n="314"/>Haand paa V&#x00E6;rket! Br&#x00F8;dre, Fr&#x00E6;nder!</l>
+<l>Unger-Svende rundt i <placeName key="fak24">Nord</placeName>!</l>
+<l><seg type="com" n="com44">Folder</seg>, Gubber, fromme H&#x00E6;nder.</l>
+<l><seg type="com" n="com45">H&#x00E6;ver</seg> &#x00D8;iet h&#x00F8;it fra Jord!</l>
+<l><seg type="com" n="com46">Lader</seg> Suk og B&#x00F8;n opstige</l>
+<l>Over Skye til Himmerige</l>
+<l>Om Velsignelse og Kraft!</l>
+</lg>
+<lg n="32">
+<l><seg type="com" n="com47">Tager</seg>, fromme <seg type="com" n="com309">Danne-Kvinder</seg>,</l>
+<l>Frem den gamle Visebog!</l>
+<l><seg type="com" n="com48">Sjunger</seg>! <seg type="com" n="com49">v&#x00E6;kker</seg> s&#x00F8;de Minder!</l>
+<l><seg type="com" n="com115">Hardt</seg> de sove, aande dog,</l>
+<l>Ja, med s&#x00F8;d veemodig Smerte</l>
+<l>F&#x00F8;ler jeg: i <placeName key="fak14">Danmarks</placeName> Hjerte</l>
+<l>Sove Minderne endnu.</l>
+</lg> 
+
+<lg n="33">
+<l><pb type="text" facs="1816_297_1_fax012.jpg" ed="A" n="12"/><seg type="com" n="com50">Beder</seg> Gubber! Kvinder, <seg type="com" n="com51">sjunger</seg>!</l>
+<l>Da skal rask fra Haanden gaae,</l>
+<l><pb type="edition" ed="PS" n="304"/><seg type="com" n="com52">Alt som</seg> B&#x00F8;n og Sang fra Tunger,</l>
+<l>V&#x00E6;rket som vi p&#x00F8;nse paa;</l>
+<l><placeName key="his23">Danne-Virke</placeName> skal saa <seg type="com" n="com53">fage</seg></l>
+<l>Som i gamle <persName key="pe249"><app type="corrNote" select="yes"><lem wit="GV">Thyras</lem><rdg wit="A">Tbyras</rdg><witDetail n="297" wit="A" rend="ft"></witDetail></app></persName> Dage</l><!-- Tbyras: tekstfejl?, IMK -->
+<l>Staae <seg type="com" n="com54">forklaret</seg> op paa nye.</l>
+</lg>
+<lg n="34">
+<l><seg type="com" n="com55">Kommer</seg> hid med Sv&#x00E6;rd og Spade</l>
+<l>Hver en dygtig Ungersvend!</l>
+<l>Her paa <placeName key="his23">Voldens</placeName> gamle <seg type="com" n="com56">Stade</seg></l>
+<l>Graves maae den op igjen,</l>
+<l>Tr&#x00E6;e og Straa er nemt at t&#x00E6;nde,</l>
+<l>Guldet Ingen kan opbr&#x00E6;nde,</l>
+<l>Det kun skjules kan af St&#x00F8;v.</l>
+</lg>
+<lg n="35">
+<l>Venner! <rs type="myth" key="myth64">Sagas</rs> Ord i &#x00C6;re!</l>
+<l>Skjuler St&#x00F8;vet S&#x00F8;lv og Guld,</l>
+<l><seg type="com" n="com57">Dannefee</seg> det kaldet v&#x00E6;re,</l>
+<l>Naar det dages over Muld!</l>
+<l>Skal omsonst, I Ungersvende!</l>
+<l><rs type="myth" key="myth64">Saga</rs> Skatten os tilkiende!</l>
+<l>Skal vi dorske den forsmaae!</l>
+</lg> 
+
+<lg n="36">
+<l><pb type="text" facs="1816_297_1_fax013.jpg" ed="A" n="13"/>Nei, o nei, med rappe H&#x00E6;nder</l>
+<l><seg type="com" n="com57">Dannefee</seg> vi s&#x00F8;ge her,</l>
+<l><seg type="com" n="com59">Gjordede om vore L&#x00E6;nder</seg></l>
+<l>Med det gamle danske Sv&#x00E6;rd,</l>
+<l><pb type="edition" ed="US" n="315"/>For dets Glands skal <rs type="myth" key="myth111">Jetter</rs> blegne,</l>
+<l>For dets <seg type="com" n="com60">Eg</seg> skal Drager segne</l>
+<l>Som os standse vil <seg type="com" n="com61">paa Halv</seg>.</l>
+</lg>
+<lg n="37">
+<l><seg type="com" n="com62">Kimer</seg> med den store Klokke!</l>
+<l><seg type="com" n="com80">Seer</seg> I <seg type="com" n="com311">Luen</seg> himmelblaa!</l>
+<l>Det er store <seg type="com" n="com63">Gylden-Blokke</seg></l>
+<l>Paa hvis Grav den leger <seg type="com" n="com64">saa</seg>,</l>
+<l><pb type="edition" ed="PS" n="305"/>Ind i Kirken vil vi b&#x00E6;re</l>
+<l>Hvad vi finde, til Guds &#x00C6;re,</l>
+<l>Under Sang og Klokkeklang.</l>
+</lg>
+<lg n="38">
+<l><seg type="com" n="com65">Vogter</seg> eder, <app type="corrNote" select="yes"><lem wit="GV">Ungersvende</lem><rdg wit="A">Ungersvedne</rdg><witDetail n="297" wit="A" rend="ft"></witDetail></app>!</l><!-- Ungersvedne: tekstfejl? IMK -->
+<l>Grueligt er <seg type="com" n="com116">Kirkeran</seg>,</l>
+<l>Baal af <seg type="com" n="com66">Baaren</seg> vil vi t&#x00E6;nde,</l>
+<l>St&#x00E6;nke det med Vievand,</l>
+<l>Alt det Guld vi kan opgrave</l>
+<l>I de D&#x00F8;des Kirke-Have</l>
+<l>Kaste tr&#x00F8;stig vi paa Baal.</l>
+</lg> 
+
+<lg n="39">
+<l><pb type="text" facs="1816_297_1_fax014.jpg" ed="A" n="14"/>Psalmesang og Orgel-Toner</l>
+<l>Fylde skal den Kirke-Sal,</l>
+<l>Han for Oven V&#x00E6;rket kroner,</l>
+<l>Fryd dig, Lund og Mark og Dal!</l>
+<l>Under <placeName key="fak14">Danmarks</placeName> hvide Banner,</l>
+<l>Luttret Guldet sig omdanner</l>
+<l>Til en Mur saa favr og prud.</l>
+</lg>
+<lg n="40">
+<l>Alle <placeName key="fak14">Danmarks</placeName> fromme Helte</l>
+<l>St&#x00F8;bte staae i <seg type="com" n="com67">Billedv&#x00E6;rk</seg>,</l>
+<l><seg type="com" n="com68">Alt</seg> som naar de spendte Belte</l>
+<l>Med og uden <seg type="com" n="com69">Brynjes&#x00E6;rk</seg>;</l>
+<l>Pr&#x00E6;ster som gav Bogen H&#x00E6;der</l>
+<l><seg type="com" n="com70">Stande hos</seg> i <seg type="com" n="com117">Alter-Kl&#x00E6;der</seg></l>
+<l>Med <seg type="com" n="com71">Guldstavene</seg> i Haand.</l>
+</lg>
+<lg n="41">
+<l>Mangen deilig <seg type="com" n="com310">Danne-Kvinde</seg></l>
+<l><seg type="com" n="com72">Og</seg> paa Muren findes maae,</l>
+<l>Guld paa Gyldenrok de spinde,</l>
+<l>B&#x00E6;re Kl&#x00E6;der himmelblaa,</l>
+<l><pb type="edition" ed="PS" n="306"/>Intet Guld man paa dem skuer,</l>
+<l>Kun omkring dem Guldet luer</l>
+<l>Som en Aftenr&#x00F8;de-Krands.</l>
+</lg> 
+
+<lg n="42">
+<l><pb type="text" facs="1816_297_1_fax015.jpg" ed="A" n="15"/><pb type="edition" ed="US" n="316"/>Med en Krands af Roser hvide,</l>
+<l>Med en Pande engleklar,</l>
+<l>Stande ved hinandens Side</l>
+<l>Gamle <persName key="pe249">Thyra</persName> og <persName key="pe17">Ansgar</persName>;</l>
+<l>Paa dem vogter Skarens &#x00D8;ie,</l>
+<l>Deres vogter paa det H&#x00F8;ie,</l>
+<l>Og de staae som Englevagt.</l>
+</lg>
+<lg n="43">
+<l>I den Mur er Liv og Aande,</l>
+<l>Den sig r&#x00F8;re kan med Klang,</l>
+<l>Raader Bod paa Landets Vaande,</l>
+<l>Snoer sig <seg type="com" n="com73">trindt om</seg> <placeName key="fak14">Danevang</placeName>,</l>
+<l>Uden Br&#x00F8;st og uden <seg type="com" n="com74">Vanske</seg></l>
+<l>V&#x00E6;rner den om gamle Danske</l>
+<l>Al den Stund den <seg type="com" n="com75">troes dertil</seg>.</l>
+</lg>
+<lg n="44">
+<l>Venner! o, saa lad os bruge</l>
+<l>Spaden <seg type="com" n="com118">flink</seg> paa <rs type="myth" key="myth64">Sagas</rs> Ord!</l>
+<l>L&#x00E6;nger ei skal Dragen ruge</l>
+<l>Over <seg type="com" n="com76">Dannefee</seg> i <placeName key="fak24">Nord</placeName>;</l>
+<l>Kan vi Dragen overvinde,</l>
+<l>Skal vor Spade <seg type="com" n="com77">og</seg> til Minde</l>
+<l>Staae paa <placeName key="his23">Danne-Virkes</placeName> V&#x00E6;g.</l>
+</lg>
+<graphic style="shortLine"/>
+</div>
+    </body>
+   </text>   
+  </TEI>
+
+         

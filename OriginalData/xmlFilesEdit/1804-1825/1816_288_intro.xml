@@ -1,0 +1,605 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+<teiHeader>
+    <fileDesc>
+        <titleStmt>
+            <title rend="main">Literatur-Tidendens Skudsmaal i Henseende til Prøverne af Saxo og Snorro</title>
+            <title rend="shortForm">Literatur-Tidendens Skudsmaal</title>
+            <author>Vibeke A. Pedersen</author>
+                <editor role="editor2">dr.phil. Matthew James Driscoll</editor>           
+                <editor role="editor3">Klaus Nielsen</editor>
+                <editor role="editor1">Jon Tafdrup</editor>
+        </titleStmt>
+        <editionStmt>
+                <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.8.1</idno>
+        </edition>
+        </editionStmt>
+        <extent>52 KB</extent>
+        
+        <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2015-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.6, 1. maj 2015</date>
+         </publicationStmt>
+         
+         <notesStmt>
+             <note target="1816_288_txt.xml" type="txt">L&#x00E6;setekst</note>
+             <note target="1818_288_intro.xml" type="intro" xml:id="thisFile">Indledning</note>
+        </notesStmt>
+    <sourceDesc><p /></sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+<p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+<p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+<p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+<p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+<p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+<p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+<p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+</editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+<p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+</editorialDecl> <!-- NB: det her skal opdateres -->
+    </encodingDesc>
+        
+    <revisionDesc>
+        <change who="AH" when="2014-01-28" xml:id="AH">fil oprettet.</change>
+        <change who="AH" when="2014-10-08">shortForm justeret</change> 
+        <change who="VAP" when="2015-04-23" xml:id="VAP">disposition oprettet.</change>
+        <change who="VAP" when="2015-05-06" >indført fra WPO-fil og påbegyndt skrivning, især anledning og forhistorie</change>
+        <change who="VAP" when="2015-05-07" >fortsat skrivning, især af afsn. om de to kritikere</change>
+        <change who="VAP" when="2015-05-08" >fortsat skrivning, især af afsn. om de to kritikere og Müllers gensvar og Skautrups karakteristik</change>
+        <change who="VAP" when="2015-05-11" >fortsat skrivning, udfyldelse af ???</change>
+        <change who="VAP" when="2015-05-12" >fortsat skrivning, udfyldelse af ???, mere fra FLN 2010, opmærkning</change>
+        <change who="VAP" when="2015-05-13">fortsat skrivning, opmærkning</change>
+        <change who="VAP" when="2015-05-18">kontrol efter 1. udskrift. stavekontrol</change>
+        <change who="VAP" when="2015-05-19">rettelser</change>
+        <change who="VAP" when="2015-07-23">rettelser efter Jon</change>
+        <change who="VAP" when="2015-08-06">kontrol af rettelser efter Jon samt et par nye</change>
+        <change who="VAP" when="2015-10-14">rettelser efter Matthew</change>
+        <change who="VAP" when="2015-10-19">kontrol af rettelser efter Matthew samt et par ekstra</change>
+        <change who="VAP" when="2015-10-20">rettelser efter Jons ekstra kontrol</change>
+        <change who="VAP" when="2015-10-21">rettelser i litliste</change>
+        <change who="TRA"  xml:id="TRA" when="2015-10-27">rettelser efter Klaus</change>
+        <change who="VAP" when="2015-10-28">rettelser efter Klaus</change>
+        <change who="VAP" when="2015-10-29">kontrol af rettelser efter Klaus</change>
+        <change who="VAP" when="2016-04-27">rettelser efter studenterkontrol</change>
+    </revisionDesc>
+</teiHeader>
+<text type="intro">
+<body>
+        <div>
+            <head xml:id="docIn1">Anledning</head>
+            <p rend="noIndent"><hi rend="italic"><rs key="title3204" type="title"
+                            >Literatur-Tidendens Skudsmaal i Henseende til Prøverne af Saxo og
+                            Snorro</rs></hi> (herefter <hi rend="italic"><rs key="title3204"
+                            type="title">Skudsmaal</rs></hi>) er Grundtvigs 80 sider lange
+                    reaktion på særligt en af de to anonyme anmeldelser, der handlede om <hi
+                        rend="italic"><rs key="title1404" type="title">Prøver af Snorros og Saxos
+                            Krøniker</rs></hi> (herefter <hi rend="italic"><rs key="title1404"
+                            type="title">Prøverne</rs></hi>). Denne bog var udkommet i september
+                    1815, men anmeldelserne kom først i begyndelsen af 1816. Grundtvigs <hi
+                        rend="italic"><rs key="title3204" type="title">Skudsmaal</rs></hi> udkom
+                    den 19. april 1816. </p>
+                <p rend="noIndent"><hi rend="italic"><rs key="title1404" type="title"
+                        >Prøverne</rs></hi> rummede et indledningsdigt, et forord på 20 sider
+                    og 98 siders oversættelser. Oversættelserne bestod af udsnit af <hi
+                        rend="italic"><rs type="title" key="title3399">Olav den helliges
+                        Saga</rs>,</hi> der skildrer slaget ved Stiklestad og kong <persName
+                        key="pe1048">Olavs</persName> fald, og <rs key="title3976" type="title">“Om
+                        den gullandske Kongelinie i Danmark”</rs> – tre kærlighedsfortællinger fra
+                        <persName key="pe237">Saxos</persName>
+                    <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> (<hi
+                        rend="italic"><rs key="title83" type="title">Danmarkshistorien</rs>,</hi> 7.
+                    bog). </p>
+            <p rend="noIndent">På trods af, at anmeldelserne ikke var signerede, ved man, at
+                    anmeldelsen i tidsskriftet <hi rend="italic"><rs key="title3369" type="title"
+                            >Athene</rs></hi> var skrevet af <persName key="pe23">Christian
+                        Molbech</persName> (omkring februar 1816), og at den meget længere
+                    anmeldelse i <hi rend="italic"><rs key="title127" type="title">Dansk
+                            Litteratur-Tidende</rs></hi> 1816, nr. 7, 8 og 9 var af <persName
+                        key="pe117">Peter Erasmus Müller</persName> (<rs type="title" key="title35"
+                            ><hi rend="italic">Bibliografien</hi></rs> 4, s. 25). Især på den sidste
+                    reagerede Grundtvig med <hi rend="italic"><rs key="title3204" type="title"
+                            >Skudsmaal</rs>,</hi> hvorpå <persName key="pe117">Müller</persName>
+                    svarede igen med en 23-siders pjece, <hi rend="italic"><rs key="title3816"
+                            type="title">Tillæg til Recensionen over Pastor Grundtvigs
+                            Prøveoversættelse af Saxo og Snorro</rs></hi> (1816b).</p>
+            </div>
+    <div>
+        <head xml:id="docIn2">Forhistorien</head>
+        <p rend="noIndent">Bag <hi rend="italic"><rs key="title1404" type="title">Prøverne</rs></hi>
+                    stod Det kongelige Selskab for Norges Vel, der i første omgang udelukkende havde
+                    ønsket en oversættelse af <persName key="pe49">Snorres</persName>
+                    <hi rend="italic"><rs type="title" key="title551">Heimskringla</rs></hi> (<ref
+                        type="docOut" target="1815_255_intro.xml#docIn2">se indledningen til <hi
+                            rend="italic">Prøverne, </hi> afsnittet om tilblivelsen</ref>).
+                    Grundtvig mente imidlertid, at <persName key="pe237">Saxos</persName>
+                    <hi rend="italic"><rs key="title83" type="title">Danmarkshistorien</rs></hi> og
+                        <persName key="pe49">Snorres</persName> fortælling om de tidlige norske
+                    konger supplerede hinanden i en sådan grad, at han ikke ønskede at adskille
+                    oversættelserne af de to værker. Særligt efter tabet af Norge i 1814 ønskede
+                    Grundtvig at tydeliggøre de to landes fælles fortid.</p>
+                <p rend="noIndent"><hi rend="italic"><rs key="title1404" type="title"
+                        >Prøverne</rs></hi> blev udgivet sammen med en
+                    subskriptionsindbydelse. Det var tanken, at de &#x2013; i forhold til deres
+                    betydelige omfang &#x2013; skulle blive ganske billige, så ikke kun de rigeste
+                    havde råd til at anskaffe dem. Det var heller ikke meningen, at boghandlere
+                    skulle tjene på dem; og Grundtvig regnede med, at hans oversætterløn skulle være
+                    lille. Tankerne bag økonomien i værket minder om vore dages bogklubbers
+                        (<rs type="title" key="title3403">Lundgreen-Nielsen 2010</rs>, s. 60 og
+                    74).</p>
+        <p rend="noIndent">Det var således Grundtvigs kongstanke, at oversættelserne skulle blive en
+                    &#x2018;folkekrønike&#x2019;, der kunne vække menigmands kærlighed til og
+                    stolthed over fortidens store bedrifter. Derfor skulle de tale direkte,
+                    også til den jævne mand eller kvinde. I disse år studerede Grundtvig en række
+                    ældre danske kilder for netop at tilegne sig en sprogtone, der var genuint
+                    dansk: <hi rend="italic"><rs type="title" key="title242">Rimkrøniken</rs>,</hi>
+                    <persName key="pe243">Peder Laales</persName> ordsprog, <hi rend="italic"><rs
+                            type="title" key="title3530">Jyske Lov</rs></hi> og folkeviserne (<rs
+                        type="title" key="title3403">Lundgreen-Nielsen 2010</rs>, s. 65).</p>
+        <p rend="noIndent">Han havde forstillet sig, at oversættelsen af <rs type="title"
+                        key="title83">Saxo</rs> skulle fremstå som en befrielse fra det latinske
+                    snøreliv, som teksten hidtil havde være indespændt i (<rs key="title1404"
+                        type="title">Grundtvig 1815</rs>, s. XXXIV). Oversættelsen af <rs
+                        key="title551" type="title">Snorre</rs> skulle til gengæld give læserne en
+                    forestilling om det ældre nordiske sprogs karakter. Grundtvig var således klar
+                    over, at der skulle være forskel i oversættelsernes stil, ligesom der var det på
+                    forlæggenes.</p> 
+        <p rend="noIndent"><persName key="pe52">Flemming Lundgreen-Nielsen</persName> har karakteriseret Grundtvigs sigte på følgende vis: &#x201C;den interesserede, men uuddannede læser skulle
+                    kunne tilegne sig det hele uden at bekymre sig om <persName key="pe237"
+                        >Saxos</persName> brede latinske retorik og <persName key="pe49"
+                            >Snorres</persName> knappe sagadiktion&#x201D; (<rs type="title" key="title3403"
+                        >2010</rs>, s. 73). </p>
+        <p rend="noIndent">Samtidig ville de poetiske indskud i begge værker i højere grad være
+                    underlagt Grundtvigs kunstneriske inspiration, dvs. hans ret til at
+                    digte videre på essensen snarere end at levere en bogstavtro oversættelse. I øvrigt
+                    ændrede Grundtvig oversættelsestaktik mht. de poetiske passager undervejs: først
+                    søgte han at genskabe de gamle nordiske vers med kortlinjer og bogstavrim, siden
+                    opgav han, så hverken de oldislandske versemåls eller de latinskes formkrav blev
+                    overholdt i oversættelsen (<rs key="title1404" type="title">Grundtvig 1815</rs>,
+                    s. XXXIII). </p>
+               
+    </div>
+    <div>
+        <head xml:id="docIn3">Anmeldelsernes ros og ris</head>
+        <p rend="noIndent">Ikke alle Grundtvigs anstrengelser faldt i god jord. Begge de anonyme
+                    anmeldere følte sig &#x201C;stødt af Grundtvigs profetiske gebærder og selvforståelse&#x201D;,
+                    især i indledningsdigt og fortale (<rs type="title" key="title14"
+                        >Lundgreen-Nielsen 1980</rs>, s. 685). De havde derudover svært ved at
+                    goutere hans stil. Mod forventning var det ikke den mange steder overdrevent
+                    arkaiserende sprogform, der vakte anstød, men snarere det, som anmelderne
+                    forstod som det platte, der generede.</p>
+        <div><head xml:id="docIn31"><persName key="pe117">P. E. Müller</persName></head>
+            <p rend="noIndent">Den anonyme anmeldelse i <hi rend="italic"><rs type="title"
+                                key="title127">Dansk Litteratur-Tidende</rs></hi> strækker sig over
+                       numrene 7, 8 og 9, hvor hvert nummer behandler et tema i forhold til
+                        Grundtvigs <hi rend="italic"><rs key="title1404" type="title"
+                            >Prøver</rs>.</hi> I nr. 7 omtales udelukkende selve
+                        oversættelsesprojektet, dets mulige økonomi og dets nationale betydning i
+                        både Danmark og Norge. I nr. 8 begynder anmelderen med betinget at prise
+                        Grundtvigs indledningsdigt, der opmuntrer læseren &#x201C;til at henvende
+                        sin Hu paa Fædrenes Idrætter&#x201D; (<rs type="title" key="title3407"
+                            >Müller 1816a</rs>, s. 113). Anmelderens begejstring ville dog være
+                        større, &#x201C;naar Forf. ikke talte saa meget, om hvad han har ahnet, han
+                        har skuet, han har varslet, han har truet&#x201D; (s. 113). Derefter bringes
+                        et uddrag fra 7. bog af <persName key="pe237">Saxos</persName> latinske
+                        tekst (efter <persName key="pe897">Stephanius'</persName> latinske udgave,
+                            <hi rend="italic"><rs type="title" key="title3930">Saxonis Grammatici
+                                Historiæ Danicæ libri XVI</rs></hi> fra 1644) efterfulgt af den
+                        ældre oversættelse (dvs. <rs type="title" key="title178">Vedel 1575</rs>) og
+                        Grundtvigs, hvor de to oversættelser var sat op i parallelle spalter (s. 116
+                        f.), så læseren med anmelderen let kunne sammenligne. Konklusionen på denne
+                        sammenligning bliver, &#x201C;at Oversættelsen er forfattet med Aand, at
+                        Sproget bevæger sig frit i samme, og dog vedbørligen slutter sig til
+                        Texten&#x201D; (s. 117). Kort sagt: ubetinget ros.</p>
+                    <p rend="noIndent">Anerkendelsen gælder også de vers hos <rs type="title"
+                            key="title83">Saxo</rs>, som Grundtvig har oversat:</p>
+            <p rend="quote">Saare skiønne, som man kunde vente det af en saa øvet Digter, ere de
+                        Vers, der i Oversættelsen ligesom i Originalen oplive Fortællingen. Med
+                        Grund ere de oversatte frit, da det her ikke kom an paa enkelte Ord, fordi
+                            <persName key="pe237">Saxo</persName> vist nok har taget sig megen
+                        Frihed med at oversætte Skaldeqvadene i latinske Phraser (<rs type="title"
+                            key="title3407">Müller 1816a</rs>, s. 119).</p> 
+            <p rend="noIndent">Vi ser her, at anmelderen principielt tilslutter sig den af
+                        Grundtvigs oversættelsesstrategier, der går ud på, at der ved vers hersker
+                        en meget større frihed end ved prosaen. Til gengæld huer det ham 
+                        ikke, at Grundtvig tildigter flere verslinjer, der ikke er belæg for hos <rs
+                            type="title" key="title83">Saxo</rs> (<rs type="title" key="title3407">Müller 1816a</rs>,
+                s. 120). Fx har Grundtvig udvidet <rs
+                            key="myth345" type="myth">Habors</rs> (eller <rs key="myth345"
+                            type="myth">Hagbards</rs>) sang med følgende linjer:</p>
+          <lg> <l>Og hvad klart i dem afmales,</l>
+              <l>Mindes, til hvert Hjerte svales (<rs type="title" key="title1404">Grundtvig 1815</rs>, s. 82)</l></lg>
+            <p rend="noIndent">Derudover er anmelderen utilfreds med, at Grundtvig indfører en række
+                        forældede eller dialektale ord, som igen vil kræve oplysninger eller
+                        forklaringer i noteform, fx &#x201C;Dressel&#x201D; eller
+                        &#x201C;strag&#x201D; (s. 120). Værre er det dog efter hans mening,
+                        &#x201C;at her findes saa mange uædle og lave Udtryk, der, uden for
+                        Borgstuen, allene taales i et komiskt Foredrag&#x201D; (s. 121). Her tænker
+                        han på udtryk som &#x201C;dennehersens <persName key="pe1048"
+                            >Olav</persName>&#x201D; eller &#x201C;kom drattende bag efter" eller
+                        &#x201C;den Flødskiæg&#x201D; (s. 121). </p>
+                    <p rend="noIndent">Hvad <persName key="pe49">Snorre</persName>-oversættelsen
+                        angår, kommer anmelderen med nogle eksempler på, at Grundtvig ikke kender
+                        nok til oldislandsk, fx er &#x201C;Hvæsserim&#x201D; &#x2013; hvormed
+                        Grundtvig mener rim, der skærper sindet  eller opmuntrer til bedrift
+                        &#x2013; ikke en god oversættelse af &#x2018;aminningarvisor&#x2019;, der
+                        snarere betyder viser, der huskes (s. 122). </p>
+                    <!--<p rend="noIndent">MERE OLDISL. KRITIK: VERSEMÅL OG BOGSTAVRIM???? EXX S.
+                        126</p>-->
+                    <p rend="noIndent">Endelig kommer anmelderen i nr. 9 igen ind på, hvordan Grundtvig
+                        ødelægger tekstens integritet, når han tilsætter for meget af sit eget
+                        i gendigtningen af versene hos <rs key="title551" type="title">Snorre</rs>.
+                        Det gælder både Grundtvigs hjemmelavede kenninger som &#x201C;Kongehalds
+                        Fugle&#x201D; (der skal betyde krigere) og &#x201C;Ørneklo-Timen&#x201D;
+                        (der skal betyde krigsstund; begge <rs key="title1404" type="title">Grundtvig
+                            1815</rs>, s. 19), hans billedsprog, når det tager billeder fra den
+                        jødisk-kristne kulturkreds som &#x201C;Uomskaarne Hjerter&#x201D; og
+                        &#x201C;Næser høie&#x201D; (<rs key="title1404" type="title">Grundtvig
+                            1815</rs>, s. 45), og de tildigtninger, der ikke har hjemmel i
+                        grundteksten. Ikke desto mindre er hans konklusion, at Grundtvig har evner
+                        og muligheder til at levere en god oversættelse af <rs type="title"
+                            key="title83">Saxo</rs> og <rs key="title551" type="title">Snorre</rs>.
+                        Han kunne derfor ønske:</p> <p rend="quote">at de gamle Skaldeqvad maatte blive oversatte vel ikke aldeles ordret, men
+                        nøiagtigere end i den meddeelte Prøve. Just Hr. G. var i Stand til at giøre
+                        dette, hvis han vilde, uden at Versene derfor skulde savne Velklang (<rs
+                            type="title" key="title3407">Müller 1816a</rs>, s. 144).</p> 
+                    
+        </div>
+        <div><head xml:id="docIn32"><persName key="pe23">Christian Molbech</persName></head>
+            <p rend="noIndent"><persName key="pe23">Molbech</persName> bringer sin anonyme
+                        anmeldelse i tidsskriftet <hi rend="italic"><rs type="title" key="title3369"
+                                >Athene</rs></hi> under overskriften <rs type="title"
+                            key="title3408">&#x201C;Prøver af Snorros og Saxos Krøniker i en ny
+                            Oversættelse&#x201D;</rs>. Han er så begejstret for selve tanken om at
+                        lave en samlet oversættelse af <rs type="title" key="title83">Saxo</rs> og
+                            <rs key="title551" type="title">Snorre</rs>, at han ligefrem foreslår:
+                        &#x201C;uden Vederlag at uddele i det mindste et Exemplar til hvert
+                        Kirkesogn i Landet&#x201D; (<rs type="title" key="title3408">1816</rs>, s.
+                        73), så de kan komme helt ud i alle landets afkroge. </p>
+                    <p rend="noIndent">Som <persName key="pe117">Müller</persName> bringer <persName
+                            key="pe23">Molbech</persName> et uddrag af Grundtvigs oversættelse sat
+                        op i spalter, hvor han sammenligner Grundtvigs med de tidligere, så læserne
+                        selv kan danne sig et indtryk af forskellene. S. 79-82 viser et stykke fra
+                            <rs key="title551" type="title">Snorre</rs> om <persName key="pe1471"
+                            >Kalv</persName> og <persName key="pe1048">Olaf</persName> (kap. 228) i
+                        henholdsvis Grundtvigs og <persName key="pe991">Gerhard
+                            Sch&#x00F8;nings</persName> tresprogede udgave og oversættelse, <hi
+                            rend="italic"><rs key="title1849" type="title">Norske Kongers
+                                Historie</rs></hi> (<rs key="title1849" type="title">1778</rs>, bind
+                        2; heri kap. 240) og et stykke fra <persName key="pe237">Saxo</persName> om
+                        kong <rs key="myth1104" type="myth">Siger</rs> (7. bog, kapitel 8.3-4) i
+                            <persName key="pe350">Vedels</persName> oversættelse (<rs key="title333"
+                            type="title">1610-udgaven</rs>).</p>
+            <p rend="noIndent">I teorien er han &#x2013; som <persName key="pe117">Müller</persName>
+                        &#x2013; et langt stykke af vejen enig i Grundtvigs oversættelsesmetode og
+                        udtrykker, at der</p> 
+            <p rend="quote">imod denne ikke lader sig giøre nogen grundet Indvending, naar Hensigten ei er at
+                        levere en saadan ordret Oversættelse [...], men en <hi rend="italic"
+                            >dansk</hi>
+                        <persName key="pe237">Saxo</persName> og <persName key="pe49"
+                            >Snorre</persName>, der med Lyst og Lethed kan læses af Menigmand (<rs
+                            type="title" key="title3369">Molbech 1816</rs>, s. 74).</p> <p rend="noIndent">Derimod kniber det mere for ham at forstå
+                        den måde, hvorpå Grundtvig i praksis udfører oversættelsen:</p> 
+            <p rend="quote">baade Aanden i disse og Sproget i Oversættelsen skal nyde hver sin Ret;
+                        den maa give os Originalerne, omklædte i <hi rend="italic">vort</hi> danske
+                        Sprog, men ikke et Værk, hvori vel disses Aand er bevaret, men Legemet
+                        (Sprog og Maneer) <hi rend="italic">forvandlet</hi> til et udvortes
+                        originalt Arbeide af Oversætteren (<rs type="title" key="title3369">Molbech
+                            1816</rs>, s. 75).</p> <p rend="noIndent">Med andre ord: efter <persName key="pe23">Molbechs</persName> mening oversætter
+                        Grundtvig både <persName key="pe237">Saxo</persName> og <persName key="pe49"
+                            >Snorre</persName>, så de taler grundtvigsk, ikke deres eget sprog<!--saxo'sk eller
+                        snorre'sk-->. </p>
+                    <p rend="noIndent"><persName key="pe23">Molbech</persName> vil derfor advare
+                        Grundtvig om, &#x201C;ei at lade <persName key="pe237">Saxo</persName> og
+                            <persName key="pe49">Snorre</persName> tale alt for liigt ham
+                        selv&#x201D; (<rs type="title" key="title3408">Molbech 1816</rs>, s. 76).
+                        Hans kritik opsamles således: &#x201C;alt for hyppigen, støder man paa Ord
+                        og Udtryk af Almuesproget og den daglige Tale, paa visse plebeiske
+                        Talemaader og Vendinger i Sproget, der [...] næsten allevegne kunde være
+                        ombyttede med ædlere&#x201D; (s. 83). Grundtvig falder &#x201C;fra
+                        Historiens ædle Stiil og værdige Tone ned til et søgt Hverdagssprog, til
+                        overflødige Archaismer og til en Lavhed i Udtryk, som endog Menigmand
+                        snarere vil stødes ved, end finde Behag i&#x201D; (s. 83). Grundtvigs dansk
+                        er flere steder så specielt, at også <persName key="pe23">Molbech</persName>
+                        ligefrem savner ordforklaringer på hans dialektord (s. 84).</p></div></div>
+        <div>
+                <head xml:id="docIn4">Grundtvigs forsvar</head>
+                <p rend="noIndent">I begge anmeldelser uddeltes mange roser undervejs. Overordnet
+                    set var anmelderne enige om, at Grundtvig var den bedste til oversætteropgaven,
+                    at mange af hans forslag var fornuftige, og at hans digterevner kom ham til
+                    hjælp, når de vanskelige vers skulle oversættes &#x2013; både hos <persName
+                        key="pe49">Snorre</persName> og <persName key="pe237">Saxo</persName>. Det
+                    kan derfor undre, at Grundtvig tager så meget på vej, at han må udsende et 80
+                    siders modsvar. Der findes endda yderligere materiale til hans gensvar (i <ref
+                        type="web" target="http://pubpub.com/g-r/showcard.asp?id=515">fasc.
+                        331.8</ref> på Grundtvig-arkivet på Det Kongelige Bibliotek i København, se <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>,
+                    s. 685). </p>
+                <p rend="noIndent">Eksemplerne i Grundtvigs <hi rend="italic"><rs key="title3204"
+                            type="title">Skudsmaal</rs></hi> rettede sig stort set kun mod
+                        <persName key="pe117">Müllers</persName> anmeldelse. Da <persName
+                        key="pe117">Müller</persName> (endnu) ikke havde lagt navn til, omtales han
+                    konsekvent som &#x201C;Rec.&#x201D;, dvs. recensenten eller anmelderen.</p>
+                <div>
+                    <head xml:id="docIn41">Borgestuedansk og skolemesterstil</head>
+                    <p rend="noIndent">Grundtvig svarede indirekte på indvendingerne mod det meget
+                        jævne sprog ved at fylde <hi rend="italic"><rs key="title3204" type="title"
+                                >Skudsmaal</rs></hi> med ordsprog, der understreger hans
+                        tilstræbte folkelighed. Ganske morsomt havde han samlet en stor del af
+                        ordvalgskritikken i et enkelt stykke (<rs type="title" key="title3204"
+                            >Grundtvig 1816</rs>, s. 26), som direkte spiller på kritikken i <hi
+                            rend="italic"><rs type="title" key="title3369">Athene</rs></hi> (<rs
+                            type="title" key="title3408">Molbech 1816</rs>, s. 83; se også <rs
+                            key="title218" type="title">Skautrup 1968</rs>, bind 3, s. 326 f.), idet
+                        han i et enkelt afsnit stort set får anvendt alle de eksempler, som
+                            <persName key="pe23">Molbech</persName> havde fremhævet.</p>
+                    <!--<p rend="quote">Dog, hold lidt, min Pen! Rec. har endnu lidt i Fikken til
+                        Begynderen i Modersmaalet, og er det end ingen Dressel, saa staaer han dog
+                        ganske strunk og strag for Nutidens Læsere, og viser dem et lille Excerpt af
+                        Borgestue-Snak, som han og <rs key="title33369" type="title">Athene</rs> ere
+                        lige gode om, og beder mig det ikke at forsmaae, fordi det kommer drattende
+                        bagefter. Nei saamænd vil jeg ikke, jeg kan jo nok vide hvorfor han ikke
+                        vilde nappes med mig om mine Udtryk i deres Sammenhæng, thi, skal jeg sige
+                        os, han kunde rivelig see at de, imod hans, var Karle udaf Vælten, og Karle
+                        for deres Hat, og groet bedre af Skarnet, end hans høitravende, stivbenede,
+                        angbrystige Udgangsøg, som gaae paa Næsen, saasnart de støde paa en Smule
+                        Brink, og det med alt det Skaberak og Dingel-Dangel som skulde løftet dem af
+                        Skarnet til Ære; hvordan skulde han, saa godt som mutters ene, med
+                        Staldbrødre, hvoraf Broderparten er Rips-Raps, vove at give sig ordenlig i
+                        Kast med dennehersens Friskytte der saa grummelig huserer i Fredskoven, og
+                        tager Seieren med en Trumf fra hver en Flødskiæg, i det samme hellige
+                        Øieblik som Flødskiægen raaber Triumph! (<rs type="title" key="title3204">Grundtvig 1816</rs>, s. 26 CITATET KAN
+                        EVT. UDELADES, SÅ MAN NØJES MED HENVISNINGEN HØJERE OPPE)</p>-->
+                    <p rend="noIndent">To ord, der optrådte hyppigt i både anmeldelserne og i <hi
+                            rend="italic"><rs key="title3204" type="title">Skudsmaal</rs>,</hi>
+                        var ordene &#x2018;borgestue&#x2019; og &#x2018;borgestuedansk&#x2019;. Det
+                        sidste ord er Grundtvigs egen betegnelse her fra 1816 (<rs key="title218"
+                            type="title">Skautrup 1968</rs>, bind 3, s. 324). For Grundtvig var det
+                        et begreb, han så at sige vedkendte sig på trods (<rs type="title"
+                            key="title3403">Lundgreen-Nielsen 2010</rs>, s. 59). Det er svært at
+                        finde en dækkende moderne betegnelse for det dansk, man kunne høre i
+                        borgestuerne, dvs. det rum, hvor tyendet på en herregård eller større
+                        bondegård opholdt sig og indtog sine måltider. &#x201C;Karakteristisk for
+                        borgestuedanskens <hi rend="italic">ordforråd</hi> er da først og fremmest
+                        dagligdagens, derunder også dialekternes ord og ordforbindelser, gerne de
+                        kraftige, der grænser op til det vulgære lag&#x201D; (<rs key="title218"
+                            type="title">Skautrup 1968</rs>, bind 3, s. 328). Begrebet dækker et
+                        jævnt, folkeligt dansk &#x2013; ikke uden humor og selvironi. </p>
+                    <p rend="noIndent">For Grundtvig rummede borgestuedansk noget positivt. Det var et
+                        ordreservoir, hvorfra han kunne hente ældre ord og vendinger, som det
+                        dannede københavnerborgerskab ikke nødvendigvis kendte til. For det
+                        selvsamme borgerskab derimod, som fx <persName key="pe117">P.E.
+                            Müller</persName> og <persName key="pe23">Christian Molbech</persName>
+                        tilhørte, kom begrebet til at dække noget lavere, der helst burde undgås i
+                        litterære værker &#x2013; med mindre det var et bevidst komisk islæt (<rs
+                            type="title" key="title3408">Molbech 1816</rs>, s. 121)
+                        &#x2013; og i alt fald under ingen omstændigheder burde promoveres.
+                        Anmelderne og Grundtvig stod simpelthen på hver sin side af en sprogkløft:
+                        &#x201C;Når Grundtvig kunde fare så voldsomt frem, skyldtes det hans faste
+                        overbevisning om, at hos folket, i den jævne mands mund havde det rette og
+                        gamle danske modersmål altid levet, og dette skulde nu igen gøres levende
+                        litterært&#x201D; (<rs key="title218" type="title">Skautrup 1968</rs>, bind
+                        3, s. 327). </p>
+                    <p rend="noIndent">Hvor borgestuedansk var et skældsord for anmelderne,
+                        klandrede Grundtvig i <hi rend="italic"><rs key="title3204" type="title"
+                                >Skudsmaal</rs></hi> anmelderne for at dadle ham, som var de en
+                        &#x201C;Puge-Skolemester&#x201D; (<rs key="title3204" type="title"
+                        >1816</rs>, s. 7), der talte i &#x2018;skolemesterstil&#x2019; til
+                        &#x2018;pogen&#x2019; Grundtvig. Kritik er i sig selv ikke problematisk
+                        for Grundtvig, men han bryder sig ikke om den &#x201C;<hi rend="spaced"
+                            >Skolemesterstiil,</hi> [...] der føres hos <rs type="title"
+                            key="title3369">Athene</rs> hvor Drenge spille Mester paa Borde og
+                        Bænke, eller i <rs type="title" key="title127">Literatur Tidenden</rs>, hvor
+                        Folk, der skulde have bedre Forstand, staae med Huen i Haanden for
+                        hinanden&#x201D; (<rs key="title3204" type="title">1816</rs>, s. 28 f.).</p>
+                </div>
+                <div>
+                    <head xml:id="docIn42">Bogstavtro oversættelse eller gendigtning?</head>
+                    <p rend="noIndent">Det havde aldrig været Grundtvigs hensigt at give en
+                        historisk-filologisk eller en ord-til-ord-oversættelse &#x2013; det havde
+                        han allerede givet udtryk for i forordet til <hi rend="italic"><rs
+                                key="title1404" type="title">Prøverne</rs>:</hi></p>
+                    <p rend="quote"> Det er ikke her Sagen at levere en saadan ordret Oversættelse,
+                        som for Historikeren kunde tjene i Grundskriftets Sted, et Arbeide, som om
+                        det ogsaa var mueligt, dog ei vilde være Umagen værd, da Ingen bør vove sig
+                        til at være nordisk Historieskriver, uden selv at forstaae saavel Islandsk
+                        som Latin. Her er det Hovedsagen at levere de gamle Skrifter i deres
+                        eiendommelige Aand, i et let, fatteligt og trohjertigt Sprog, jo nærmere man
+                        kan holde sig til Grundskriftets Ord, Vendinger og Talemaader des bedre; thi
+                        des troere og fuldstændigere et Billede leverer man, men i Nødsfald skal man
+                        lade fare hvad der ei er vigtigt og ei lader sig forene med de ypperste
+                        Fordringer (<rs key="title1404" type="title">Grundtvig 1815</rs>, s.
+                        XXX).</p>
+                    <p rend="noIndent">I <hi rend="italic"><rs key="title3204" type="title"
+                                >Skudsmaal</rs></hi> præciserede han sit syn på den mere
+                        indviklede del af den norrøne skjaldedigtning:</p>
+                    <p rend="quote">Har jeg da ikke meget mere Lov til at sige: de af Versene hos
+                            <rs type="title" key="title551">Snorro</rs> som jeg forstaaer og finder
+                        poetiske vil jeg stræbe at oversætte, hvor jeg derimod kun finder eller
+                        forstaaer enkelte Billed-Udtryk eller vittige [her: spidsfindige eller
+                        spøgefulde] Vendinger, der vil jeg benytte dem paa det Bedste, og kun af al
+                        Magt stræbe efter at bevare de gamle Skjaldes Aand og intet historisk Træk
+                        tilsætte eller udelade? (<rs key="title3204" type="title">Grundtvig
+                            1816</rs>, s. 59). </p>
+                    <p rend="noIndent">Udsagnet svarede imidlertid ikke helt til, hvad han i praksis
+                        have gjort i <hi rend="italic">Prøverne,</hi> hvilket især <persName key="pe117"
+                            >Müller</persName> havde påvist (<rs type="title" key="title3407">Müller
+                            1816a</rs>, s. 126 f.).</p>
+                    <p rend="noIndent">Allerede inden Grundtvig påbegyndte oversættelsen, havde han
+                        i et brev til Selskabet for Norges Vel fra juli 1812 formuleret sine
+                        synspunkter meget skarpere, så selskabet bag projektet vidste på forhånd,
+                        hvad det var gået ind til:</p>
+                    <p rend="quote">Stort poetisk Værd have, som bekendt, de fleste Vers i <rs
+                            type="title" key="title551">Snorro</rs> ikke, saasom de alle ere fra det
+                        Tidsrum under og efter <persName key="pe379">Harald Haarfager</persName> da
+                        kunstig [kunstfærdig] Versebygning og pralende Ord skulde erstatte Mangelen
+                        paa høie Tanker og ukunstlet Ynde, men gør det, naturligviis, som de fleste
+                        af vor Tids Surrogater, kun for Børn og Narre. Imidlertid er der stor
+                        Forskiel, <persName key="pe404">Eivind Skaldespiller</persName> havde
+                        herlige lyse Øieblikke, hos <persName key="pe405">Thjodolf</persName> findes
+                        mangengang en gribende, trohjertig Vending midt i den brammende Ordkløgt. Nu
+                        tænker jeg som saa, hvor Saadant findes der hjemler det Verset Ret til
+                        Oversættelse, men hvor Kunsten mere bestaar i høitravende mest mythologiske
+                        Ord, eller hvor det slet ikke indeholder Andet end hvad der staar foran i
+                        Prosa, synes det mig ei Umagen værd at spilde Tid og Ord, aldenstund Lægmand
+                        ei deri kan finde mindste Behag eller Forstand. At Versene for en Gransker
+                        baade som Stadfæstelse og Vidnesbyrd altid blive mærkværdige er en anden
+                        Sag. Dette om Valget og hvad nu Oversættelsen angaaer da gør jeg mig til Lov
+                        at give Meningen, saavidt jeg kan komme efter den uforfalsket (citeret efter
+                            <rs type="title" key="title3359">Johansen 1968</rs>, s. 57).</p>
+                    <p rend="noIndent">Ondskabsfuldt parafraseret: ord, som Grundtvig ikke forstod,
+                        ville han springe over. Dybest set mener han, at dele af den norrøne
+                        skjaldekunst uden for <rs key="title121" type="title">edda</rs>-digtningen
+                        er <hi rend="italic">for</hi> søgt, en slags &#x2018;entartete
+                        Kunst&#x2019;, længe før dét begreb blev opfundet. Man kan sige, at
+                        Grundtvig bandlyser skjaldekunstens raffinerede billeder som overflødigt
+                        sprogligt praleri. </p>
+                </div>
+                <!-- <p rend="noIndent">- evt. gentage Kellys symbol-sympton-signal skelnen (AH s. 7,
+                    afsn. 5.2) </p>-->
+        </div>
+    <div>
+        <head xml:id="docIn5">Efterspillet</head>
+        <p rend="noIndent"><persName key="pe117">P.E. Müller</persName> svarede igen med en pjece på 23 sider, <hi rend="italic"><rs key="title3816" type="title"
+                            >Tillæg til Recensionen over Pastor Grundtvigs Prøveoversættelse af Saxo
+                            og Snorro</rs></hi> (<rs key="title3816" type="title">1816b</rs>,
+                    herefter <hi rend="italic"><rs key="title3816" type="title"
+                    >Tillægget</rs></hi>), denne gang i eget navn. I <hi rend="italic"><rs
+                            key="title3816" type="title">Tillægget</rs></hi> gentog <persName
+                        key="pe117">Müller</persName> en del af de eksempler og pointer, han
+                    allerede havde anført i anmeldelsen og gik dybere ind i de oldislandske udtryk, navnlig kenningerne
+                    (fx s. 16 og 18). Derudover kommenterede han gloser, som Grundtvig havde været i
+                    tvivl om (s. 19-21). Han indrømmede, at han et sted havde citeret Grundtvig
+                    forkert, ligesom Grundtvig havde fejlciteret ham (s. 20 f.). </p>
+        <p rend="noIndent">Hans ærinde med anmeldelsen havde især været &#x201C;at formaae Hr. Gr.
+                    til at fordanske Skaldeqvadene med Troskab&#x201D; (s. 9). Samtidig rakte han
+                    også en hånd frem mod Grundtvig, idet han tilbød denne, at han til sit
+                    oversættelsesarbejde bl.a. kunne låne et håndskrift, han havde købt af filolog
+                    og medarbejder ved <rs key="title1849" type="title">Heimskringlaudgaven</rs>,
+                        <persName key="pe1321">Jón Ólafsson</persName>. Det skal ikke &#x201C;blive
+                    [ham] nægtet, naar han derom henvender sig til mig&#x201D; (s. 13).</p> 
+        <p rend="noIndent">Grundtvig reagerede dog ikke på <hi rend="italic"><rs key="title3816"
+                            type="title">Tillægget</rs>,</hi> men fortsatte sit
+                    oversættelsesarbejde. </p>
+        <p rend="noIndent">Indsamlingen af subskriptioner gik imidlertid mere trægt end forventet.
+                    Tiden var åbenbart ikke moden til den bogklubslignende finansieringsmetode, som
+                    Det kongelige Selskab for Norges Vel og Grundtvig havde forestillet sig (<rs
+                        type="title" key="title3403">Lundgreen-Nielsen 2010</rs>, s. 60 og 74). Det
+                    er ikke til at sige, om det havde noget med de kritiske anmeldelser at gøre.
+                    Ikke desto mindre fortsatte Grundtvig ufortrødent sit oversættelsesarbejde. De
+                    endelige oversættelser af <rs key="title551" type="title">Snorre</rs> og <rs
+                        type="title" key="title83">Saxo</rs>, som hver fyldte tre sidetalsstærke
+                    bind, begyndte at udkomme allerede i 1818 og var færdige i 1823. For en nærmere
+                    redegørelse herom, se <rs key="title35" type="title"><hi rend="italic"
+                            >Bibliografien</hi></rs> 1, s. 146 f. </p>
+    </div>
+   <!-- <div>
+        <head xml:id="docIn7">Al den vind med Saxo og Snorro</head>
+        <p rend="noIndent">Opfølges af: Hvad kommer der ud af al den Vind med Saxo og Snorro? Grundtvig, N. F. S. I: Nyeste Skilderie af Kjøbenhavn, Aarg. 15, No. 3-4 1818
+        </p>
+        <p rend="noIndent"></p>
+        <p rend="noIndent"></p>
+    </div>-->
+    <div>
+        <head xml:id="docIn8">Anvendt litteratur</head>
+        <list type="simple">
+<!--            <item>I “Heime Kringla Eller Snorre Sturlusons Nordländske Konunga Sagor: Sive ...
+                Af Snorre Sturluson,Johan Peringskiöld” findes verslinierne til com535: Mal er vil mögum /
+                At vinna erfithi /
+                Vaki oc a vaki
+                (i kapitlet “Fra Thormodhe Kolbrunar Skalldhi” (dér 220)
+            </item>
+            <item>Bjørn Haldorsens leksikon bestilt 28. januar 2015 til læsesal KB
+            </item>-->
+                    
+            <item><hi rend="italic"><rs type="title" key="title35">Bibliografien</rs>, </hi>se
+                        Johansen, Steen (1948-1954)</item><!--<item>Folioudg.= Schiönnings (tresproget: Latin, oldisl, da). <hi rend="italic"><rs
+                            type="title" key="title3399">Olav den
+                            Helliges Saga</rs>,</hi>Sagaen om Olav den Hellige fylder hele bind 2. Denne tresprogede udg. Skal beskrives.</item>-->
+            <item>Grundtvig, N.F.S. (1815) <rs type="title" key="title1404"><hi rend="italic">Prøver af Snorros og Saxos Krøniker i en ny Oversættelse samt et Ord til Danske og Norske</hi></rs>. København</item>
+            <item>Grundtvig, N.F.S. (1816) <rs type="title" key="title3204"><hi rend="italic">Literatur-Tidendes Skudsmaal i Henseende til Prøverne af Saxo og Snorro</hi></rs>. København</item>
+            <item>Johansen, Steen (1948-1954) <rs type="title" key="title35"><hi rend="italic">Bibliografi over N.F.S. Grundtvigs skrifter</hi></rs>. København</item>
+            <item>Johansen, Steen (1968) <rs type="title" key="title3359">“Hvorledes kom Grundtvig
+                            til at oversætte Saxo og Snorre?”</rs> i <hi rend="italic"><rs
+                                type="title" key="title337">Grundtvig-Studier 1968</rs>,</hi> s.
+                        53-64. København</item>
+            <item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14"><hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</hi></rs>. København</item>
+            <item>Lundgreen-Nielsen, Flemming (2010) <rs type="title" key="title3405">“N.F.S.
+                            Grundtvig og Saxo og Snorre”</rs> i <hi rend="italic"><rs type="title"
+                                key="title3403">Saxo og Snorre</rs>,</hi> red. Jon Gunnar Jørgensen,
+                        Karsten Friis-Jensen &#x0026; Else Mundal, s. 37-75. København</item>
+           <!-- <item>Molbech, Christian udg. (1813-1817) <rs type="title" key="title3369"><hi rend="italic">Athene, et Maanedsskrift</hi></rs>København</item>-->
+                    <item>[Molbech, Christian] (1816) <rs type="title" key="title3408">“[Anmeldelse af
+                                <hi rend="italic">Prøver af Snorros og Saxos Krøniker</hi>]”</rs> i
+                            <hi rend="italic"><rs type="title" key="title3369">Athene. Et
+                                Maanedsskrift</rs></hi>, nr. 1, s. 70-88. København</item>
+            <item>[Müller, Peter Erasmus] (1816a) <rs type="title" key="title3407">“[Anmeldelse af <hi
+                                rend="italic">Prøver af Snorros og Saxos Krøniker</hi>]”</rs> i <hi
+                            rend="italic">
+                            <rs type="title" key="title127">Dansk Litteratur-Tidende</rs>,</hi> nr.
+                        7, s. 97-101, nr. 8, s. 113-128 og  nr. 9, s. 139-144. København</item>
+                    <item>Müller, Peter Erasmus (1816b) <hi rend="italic"><rs type="title"
+                                key="title3816">Tillæg til Recensionen over Pastor Grundtvigs
+                                Prøveoversættelse af Saxo og Snorro</rs>.</hi> København</item>
+                    <item>Skautrup, Peter (1968, 2. udg.) <hi rend="italic"><rs key="title218"
+                                type="title">Det danske Sprogs Historie</rs>,</hi> bind 1-4.
+                        København</item>
+            <item>Snorre Sturluson (1777-1783) <hi
+                rend="italic"><rs type="title" key="title1849">Heimskringla edr Noregs Konunga Sögor, af Snorra
+                                Sturlusyni. Snorre Sturlesons Norske Kongers Historie. Historia
+                                Regum Norvegicorum conscripta a Snorrio Sturlæ Filio quæ sumtibus
+                                serenissimi et clementissimi principis, Daniæ Norvegiæque hæredis
+                                Frederici Magni regis, Frederici, filii. Nova, emendata et aucta
+                                editione [...]</rs>,</hi> udg. Gerhard Schøning &amp; Skúli
+                        Thorlacius, bind 1-3. København</item>           
+                    <item>Stephanius, Stephanus Johannis udg. (1644) <hi rend="italic"><rs
+                                type="title" key="title3930">Saxonis Grammatici Historiæ Danicæ
+                                libri XVI</rs></hi>. København </item>
+           <!-- <item>Toldberg, Helge udg. (1961) <hi rend="italic"><rs type="title" key="title242">Den
+                                danske Rimkrønike</rs>,</hi> bind 1-3. København</item>-->
+            <item>Vedel, Anders Sørensen overs. (1575) <hi
+                rend="italic"><rs type="title" key="title178">Den Danske Krønicke som Saxo Grammaticvs screff,
+                                halfffierde hundrede Aar forleden: Nu først aff Latinen vdsæt,
+                                flittelige offuerseet oc forbedret</rs>.</hi> København</item>
+                    <item>Vedel, Anders Sørensen overs.  (1610, 2. udg.) <hi rend="italic"><rs
+                                type="title" key="title333">Den Danske kr&#x00F8;nike Som Saxo
+                                Grammaticus skreff, Halfffierde Hundrede Aar forleden. Først aff
+                                Latinen vds&#x00E6;t, flittelige offuerseet oc forbedret, Aar M. D.
+                                LXXV. Oc nu, effter Kongelig Mayestatz Privilegium i 10. Aar icke at
+                                maa efftertryckis, Paa Ny Prentet</rs>,</hi> [1. udg. 1575].
+                        København</item>
+        </list>
+    </div>
+    </body>
+</text>
+</TEI>

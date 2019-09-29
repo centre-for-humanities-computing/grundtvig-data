@@ -1,0 +1,2024 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Om Asal&#x00E6;ren</title>
+            <title rend="shortForm">Om Asal&#x00E6;ren</title>
+            <author>Vibeke A. Pedersen</author>
+            <editor role="editor3">Johnny Kondrup</editor>
+            <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+            <editor role="editor1">Kim Steen Ravn</editor>
+            <editor role="student1">Jesper Lorenzen</editor>
+            <editor role="student2">Frederik Drei&#x00F8;e Seidelin</editor>
+           
+            
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.8.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>126 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov</distributor>
+            <authority></authority>
+            
+            <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date> 
+         </publicationStmt> 
+          
+         <notesStmt>
+            <note type="txt" target="1807_65_txt.xml">L&#x00E6;setekst</note>
+            <note type="com" target="1807_65_com.xml" xml:id="thisFile">Punktkommentar</note>
+         </notesStmt>         
+         
+                  
+            <sourceDesc><p /></sourceDesc>         
+      </fileDesc>
+<encodingDesc>
+            <projectDesc>
+               <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+               <p>Grundtvig Centeret arbejder med:</p>
+               <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+               <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+               <p>2.a. Teologi og kirke</p>
+               <p>2.b. Demokrati og folkelighed</p>
+               <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+               <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+         </encodingDesc>
+<revisionDesc>
+            <change xml:id="KSR" who="KSR" when="2010-11-18">forel&#x00F8;big kom-model</change>
+            <change xml:id="VAP" who="VAP" when="2010-11-19">korrekturrettelser, kursiv</change>
+            <change who="KSR" when="2010-11-23">nyt schema, og ny struktur; target slettes</change>
+            <change who="VAP" when="2010-11-25">stednavne</change>
+            <change xml:id="RSB" who="RSB" when="2010-11-25">flytte kommaer ind i kursiv-markeringer</change>
+            <change who="VAP" when="2010-11-26">mrk. til navnebase</change>
+            <change who="KSR" when="2010-11-26">komma og kursiv</change>
+            <change who="VAP" when="2010-11-26">titelmarkeringer</change>
+            <change who="VAP" when="2010-12-09">nummerering 1-100; delvis udgr&#x00E6;nsning af elemeneter til andre baser</change>
+            <change who="VAP" when="2010-12-10">indsaettelse af com-numre 501-506 - foreloebige til basic base. Opnummerering 101-477 (dvs. alle)</change>
+            <change who="VAP" when="2010-12-20">Omnummerering 172 og fremefter. Tilf&#x00F8;jelser af com-nummer 507. Diverse sm&#x00E5; &#x00E6;ndringer. Tilknytning til grundtekst fra nr. 101</change>
+            <change who="VAP" when="2011-01-03">Rettelse af "myt til "myth. S&#x00F8;g- og erstat: introduktion &gt; indledning. Fjernelse af "m&#x00E6;slinger". Begyndt p&#x00E5; at &#x00E6;ndre "se mytologisk base": enten slettet eller der er indsat 'keys'. Officersvinkler &#x00E6;ndret til "66-99"</change>
+            <change who="VAP" when="2011-01-04">Forts&#x00E6;ttelse p&#x00E5; at &#x00E6;ndre "se mytologisk base": enten slettet eller der er indsat 'keys'. Rettelser efter Johnnyts kommentarer</change>
+            <change who="VAP" when="2011-01-05">Forts&#x00E6;ttelse p&#x00E5; at &#x00E6;ndre "se mytologisk base": enten slettet eller der er indsat 'keys'. Rettelser efter Johnnyts kommentarer, fortsat (til og med komm 408)</change>
+            <change who="VAP" when="2011-01-06">Forts&#x00E6;ttelse p&#x00E5; at &#x00E6;ndre "se mytologisk base": enten slettet eller der er indsat 'keys'. Rettelser efter Johnnyts kommentarer, fortsat</change>
+            <change who="KSR" when="2011-01-06">validering, rette kodning</change>
+            <change who="VAP" when="2011-01-07">Rettelser efter Johnny. Konsekvensrettelser.</change>
+            <change who="RSB" when="2011-01-11">korrekturrettelser</change>
+            <change who="RSB" when="2011-01-07">Rettelser efter Johnny. Konsekvensrettelser. Konvertere &#x00E6;,&#x00F8;, &#x00E5;, m.fl. til unicode.</change>
+            <change who="VAP" when="2011-01-11">Konsekvensrettelser ved overs&#x00E6;ttelser. Udradering/erstatning af noter, der henviser til myt. base. &#x00C6;ndre romertal til arabertal ved strofehenvisninger</change>
+            <change who="KSR" when="2011-01-11">&#x00E6;ndret stuktur og skema</change>
+            <change who="VAP" when="2011-01-12">rettelser efter 2. korrektur. Konsekvensrettelser</change>
+            <change who="RSB" when="2011-01-13">rettelser efter 2. korrektur. Konsekvensrettelser</change>
+            <change who="VAP" when="2011-01-13">rettelser efter 2. korrektur. Konsekvensrettelser</change>
+            <change who="VAP" when="2011-01-14">rettelser efter 2. korrektur. Konsekvensrettelser</change>
+            <change who="VAP" when="2011-01-18">krydshenvisninger fra pkt.komm til intro. Konsekvensrettelser</change>
+            <change who="VAP" when="2011-01-19">krydshenvisninger fra pkt.komm til intro, fortsat. Konsekvensrettelser, fx slette com 118-19</change>
+            <change who="VAP" when="2011-01-20">&#x00E6;ndringer i head'er</change>
+            <change who="KSR" when="2011-01-20">ny struktur og nyt skema (rnc + include); mulighed for to etager i kommentaren</change>
+            <change who="VAP" when="2011-01-21">fjerne 'title' ved eddadigte</change>
+            <change who="VAP" when="2011-01-24">indf&#x00F8;ring af komm 601-620. To etager i visse kommentarer. Erstattet title med relevante m&#x00E6;rker. P&#x00E5;f&#x00F8;rt interne henvisninger til com 601-620.</change>
+            <change who="RSB" when="2011-01-24">Erstattet title med relevante m&#x00E6;rker.</change>
+            <change who="KSR" when="2011-01-26">validering</change>
+            <change who="VAP" when="2011-01-26">helbrede m&#x00E6;slinger.</change>
+            <change who="VAP" when="2011-02-01">bibelhenv. rettet til efter nye regler</change>
+            <change who="VAP" when="2011-02-01">litteraturliste</change>
+            <change who="VAP" when="2011-02-03">OPM&#x00C6;RKNING I litteraturliste</change>
+            <change who="VAP" when="2011-02-04">OPM&#x00C6;RKNING I litteraturliste, fortsat. Flere person- og myth-opm&#x00E6;rkninger. &#x00C6;ndring af av og gv til bib</change>
+            <change who="VAP" when="2011-02-01">litteraturliste, udskiftning af romertal til arabertal, erstatte m-dash med -</change>
+            <change who="VAP" when="2011-02-09"> KORREKTURrettelser og tilf&#x00F8;jelser. </change>
+            <change who="KSR" when="2011-02-14">validering; litteraturliste</change>
+            <change who="KSR" when="2011-02-23">validering; litteraturliste</change>
+            <change who="VAP" when="2011-02-24">KORREKTURrettelser, anchor-kontrol, flere opm&#x00E6;rkninger til title-basen, &#x00E6;ndr. ved lit.liste (er valid p&#x00E5; det punkt nu) </change>
+            <change who="VAP" when="2011-02-28">&#x00E6;ndring omkring ordet komisk </change>
+            <change who="VAP" when="2011-03-10">sletning af com 500-510 (i grundteksten er nu opm&#x00E6;rket, s&#x00E5; der f&#x00F8;res over i den mytologiske base) </change>
+            <change who="VAP" when="2011-03-24">Oden til Odin</change>
+            <change who="KSR" when="2011-04-01">rettelse i henhold til nye skema</change>
+            <change who="VAP" when="2011-04-05">konsekvensrettelser og sm&#x00E5;ting + opsplitning af fejlagtige dobbeltlemmaer, slettet kommaer inden for kursiv. Slettet komm 71, 73, 75. Indf&#x00F8;rt flere kommentarer, bl.a. 372</change>
+            <change who="VAP" when="2011-05-05">opm&#x00E6;rkning af alle eddasange</change>
+            <change who="VAP" when="2011-05-10">rettelse i litt.liste</change>
+            <change who="VAP" when="2011-05-23">rettelser i forhold til Kims gennemgang af punktkommentar</change>
+            <change who="VAP" when="2011-05-23">flere rettelser i forhold til Kims gennemgang af punktkommentar</change>
+            <change who="VAP" when="2011-05-24">sidste rettelser i forhold til Kims gennemgang af punktkommentar. Korrekte ankerhenvisninger til eddasange. Omformuleringer i kom 601-620. Unicodes</change>
+            <change who="VAP" when="2011-06-20">udkommentering af Pr&#x00E6;dikerens bog, da der ellers er en m&#x00E6;sling</change>
+            <change who="VAP" when="2011-08-15">rettelser efter FLN uden unicodes</change>
+            <change who="VAP" when="2011-08-16">rettelser efter FLN uden unicodes. Ny com71 efter FLNs forslag</change>
+            <change who="VAP" when="2011-08-17">rettelser efter FLN uden unicodes. Ny com290 efter FLNs forslag</change>
+            <change who="VAP" when="2011-08-18">rettelser efter FLN uden unicodes. </change>
+            <change who="VAP" when="2011-08-19">rettelser efter FLN uden unicodes. Ny com433-434, 443 efter FLNs forslag</change>
+            <change who="VAP" when="2011-08-22">rettelser efter FLN uden unicodes. </change>
+            <change who="VAP" when="2011-10-07">Rettelser efter opsamlingsliste af 6. oktober 2011</change>
+            <change who="VAP" when="2011-10-19">Rettelser efter opsamlingsliste af 7. oktober 2011, fortsat</change>
+            <change who="VAP" when="2011-10-20">Rettelser efter opsamlingsliste af 7. oktober 2011, fortsat, samt genneml&#x00E6;sning i forhold til FLN's forslag og kommentarer</change>
+            <change who="VAP" when="2011-10-21">genneml&#x00E6;sning efter FLN, fortsat</change>
+            <change who="VAP" when="2011-10-31">Opretning i forhold til Mytebasen. Unicodes</change>
+            <change who="VAP" when="2011-11-04">RETTELSER i header</change>
+            <change who="KSR" when="2011-11-09">rettelser i tei-header</change>
+            <change who="KSR" when="2011-11-28">rettelser i tei-header</change>   
+            <change who="VAP" when="2011-12-01">rettelser i tei-header.: thisFile, editorroles</change> 
+            <change who="VAP" when="2011-12-05">rettelser i forbindelse med den arnamagn&#x00E6;anske kommissions udgave. Fjerne ankre. Konsekvensrettelser ved henvisninger til breve og dagb&#x00F8;ger</change> 
+            <change who="VAP" when="2011-12-07">sm&#x00E5;rettelser i littliste. Omformning af ankre, internt i filen</change>
+            <change xml:id="FDS" who="FDS" when="2011-12-08">Indf&#x00F8;rsel af citationstegn i blokcitationselementer.</change>
+            <change who="VAP" when="2011-12-08">sm&#x00E5;rettelser i littliste. </change>
+            <change who="VAP" when="2011-12-09">sm&#x00E5;rettelser i littliste. </change>
+            <change who="VAP" when="2011-12-12">Omformning af ankre til intro samt indtastning af linkstekster</change>
+            <change who="VAP" when="2011-12-13">sm&#x00E5;rettelser i littliste o.a. </change>
+            <change who="VAP" when="2012-01-12">tilf&#x00F8;jelse af Meulengracht i littliste</change>
+            <change who="VAP" when="2012-01-16">tilf&#x00F8;jelse personopm&#x00E6;rkning p&#x00E5; enkelte, som manglede</change>
+            <change who="VAP" when="2012-01-20">omm&#x00F8;blering m.v. i titleStatement</change>
+            <change who="VAP" when="2012-01-26">flyttet s-genitiv ind i opm&#x00E6;rkning ved pers og myth. Fjerne punktum i litt.lister.</change>
+            <change who="VAP" when="2012-01-27">rettelser i head til: "2012-01-31"&gt;Version 0.9. </change>
+            <change who="VAP" when="2012-01-31">Dr. til dr. </change>
+            <change who="VAP" when="2012-03-05">&#x00C6;NDRET &#x00C5;RSTAL til ny m&#x00E5;de</change>
+            <change xml:id="MWP" who="MWP" when="2012-04-13">fjernet pe4 opm&#x00E6;rkning</change>
+            <change who="VAP" when="2012-04-25">&#x00C6;NDRET I TEI HEADER efter Kims mails af g.d.</change>
+            <change who="VAP" when="2012-07-23">&#x00E6;ndret krydshenvisninger efter docIn/out-princippet</change>
+            <change who="VAP" when="2012-07-30">udvidet com 168 og 362 med en readMore</change>
+            <change who="VAP" when="2012-08-17">&#x00C6;NDRET versionsnummer + omkr. variant</change>
+            <change who="FDS" when="2012-08-20">&#x00C6;ndret apostroffer fra &amp;#x2019; til &amp;#x0027;</change>
+            <change who="VAP" when="2012-10-25">fjernet punktummer i litliste</change>
+            <change who="VAP" when="2012-10-28">splittet litteraturliste. &#x00E6;ndret i publicationStmt</change>
+            <change who="JMR" when="2012-11-20">fjernet personopm&#x00E6;rkning i litteraturhenvisninger og litteraturliste</change>
+            <change who="VAP" when="2012-11-26">rettet enkelte " til &#x00E6; i unicodes</change>
+            <change who="FDS" when="2012-11-26">rettet &#x201D; til &#x00E6; i de tilf&#x00E6;lde hvor det var forkert.</change>
+            <change who="FDS" when="2013-01-23">Tilrettet litteraturlisten s&#x00E5; den er blevet korrekt.</change>
+            <change who="AP" when="2013-01-30" xml:id="AP">retter g&#x00E5;se&#x00F8;jne ind i title, rettet stort beg.bogst i Den Arnamagn&#x00E6;anske Kommission, rettet Frederich til Frederik </change>
+            <change who="VAP" when="2013-02-08">skrevet com 46</change>
+            <change who="VAP" when="2013-04-15">fjernet m&#x00E6;slinger i littliste og revisionsprotokol</change>
+            <change who="VAP" when="2013-04-18">rette myteoplysninger</change>
+            <change who="KSR" when="2013-05-01">rettet i div til litlist</change>
+            <change who="VAP" when="2013-05-02">tilrettet head m/ extent, date og versionsnummer</change>
+            <change who="VAP" when="2013-07-31">fjernet fejl i mytebaseopm&#x00E6;rkning efter Karsten Kyndes korpusk&#x00F8;rsel. &#x00C6;ndret topreferencerne til Prometeus </change>
+            <change who="AP" when="2013-09-19">rettet versions-streng</change>
+               <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+             <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+   <change who="VAP" when="2014-03-20">ændret til version 1.4 i editionStmt</change>
+   <change who="VAP" when="2014-03-28">fjernet mæslinger efter valideringskørsel</change>
+   <change who="VAP" when="2014-04-02">fjernet ny mæsling efter valideringskørsel</change>
+   <change who="VAP" when="2014-07-17">opmærket Ottar</change>
+   <change who="VAP" when="2014-10-09">indsat manglende parentes</change>
+   <change who="VAP" when="2018-10-31">indgrønnet eller flyttet indhold fra com 394,605, 607, 612, 613, 615, 617, 618, 619 efter mail fra Kim af dd.</change>
+         </revisionDesc> 
+   </teiHeader>
+      <text type="com">
+            <body>
+   
+   
+
+   <note xml:id="com1">
+      <p>
+<persName key="pe2">Nyerup</persName> var den mand, som Grundtvig f&#x00F8;rst henvendte sig til ang&#x00E5;ende projektet om asal&#x00E6;ren; og de havde en korrespondance om emnet, hvor dog kun Grundtvigs breve er bevarede. Heri skriver Grundtvig bl.a.: &#x201C;Jeg veed ikke bedre at udtrykke Dem min H&#x00F8;iagtelse end ved det uskr&#x00F8;mtede Vidnesbyrd, at De, <persName key="pe7">Suhms</persName> og <persName key="pe1">Sandvigs</persName> Fostbroder, er for mig gamle Nords Repr&#x00E6;sentant til hvis pr&#x00F8;vende Alvors Bifald jeg stedse skal bejle med al den Evne, Guderne sk&#x00E6;nkede mig&#x201D; (15. maj 1807, <hi rend="italic">Breve</hi> 1, 1924).</p>
+   </note>
+
+   <note xml:id="com2">
+      <p>Citatet fra <ref type="docIn" target="#com610">
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</hi>
+</ref> er oversat i fodnoten p&#x00E5; s. 156 i <rs type="title" key="title2">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs>.</p> 
+   </note>
+
+   <note xml:id="com3">
+      <p>
+<ref type="docIn" target="#com610">
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</hi>
+</ref> er et digt i eddastil, ogs&#x00E5; kaldet <hi rend="italic">Forspjallslj&#x00F3;&#x00F0;</hi> (da. optaktssang); <ref type="docOut" target="1807_65_intro.xml#docIn23">se indledningen, afsnittet om Odins Ravnegalder</ref>. Det citerede er uddrag af strofe 1. Digtet st&#x00E5;r i f&#x00F8;rste bind af den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave af <hi rend="italic">Den &#x00E6;ldre Edda</hi>
+</rs> (1787, s. 205). </p>
+   </note>
+
+   <note xml:id="com4">
+      <p>nemlig siden offentligg&#x00F8;relsen af <rs type="title" key="title72">&#x201C;Lidet om Sangene i Edda&#x201D;</rs> i tidsskriftet <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> september 1806.</p>
+   </note>
+
+   <note xml:id="com5">
+      <p>Grundtvig hentyder til den lettere komiske <rs type="title" key="title73">gendigtning</rs> af eddadigtet <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> <ref type="docIn" target="#com603"> (da. <hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>
+</ref>), som teologen <persName key="pe6">Jens M&#x00F8;ller</persName> havde offentliggjort i majnummeret af <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> 1806, og som Grundtvig havde kommenteret negativt i septembernummeret.</p>
+   </note>
+
+   <note xml:id="com6">
+      <p>
+<hi rend="italic">
+<rs type="title" key="title121">Eddaen</rs>
+</hi> er en digtsamling, ofte ogs&#x00E5; kaldet <hi rend="italic">
+<rs type="title" key="title121">Den &#x00E6;ldre Edda</rs>,</hi> med fort&#x00E6;llinger fra den nordiske mytologi og med nordiske heltesagn, nedskrevet p&#x00E5; Island i 1200-tallet. At <hi rend="italic">
+<rs type="title" key="title121">Eddaen</rs>
+</hi> er vanhelliget, er en hentydning til <persName key="pe6">Jens M&#x00F8;llers</persName> <rs type="title" key="title73">gendigtning</rs> af eddadigtet <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> (da. <hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>,</hi> i majnummeret af <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> 1806. </p>
+   </note>
+
+   <note xml:id="com7">
+      <p>
+<rs type="myth" key="myth1">Alfader</rs> er i de oldnordiske tekster et tilnavn for <rs type="myth" key="myth59">Odin</rs>; 
+         <ref type="docOut" target="1807_65_intro.xml#docIn9">se dog ogs&#x00E5; indledningen, afsnittet om Alfaderbegrebet</ref>. </p>
+   </note>
+
+     <note xml:id="com12">
+      <p>lat.: trosbekendelse.</p>
+   </note>
+
+   <note xml:id="com13">
+      <p>Grundtvig opponerer mod den besudling, som han mener <persName key="pe6">Jens M&#x00F8;ller</persName> med sin gendigtning <hi rend="italic">Skirners Reise</hi> (M&#x00F8;ller 1806) har udsat et gammelt eddadigt for. Samtidig er en st&#x00F8;rre viden om den f&#x00E6;lles (old)nordiske fortid et v&#x00E6;sentligt skridt p&#x00E5; den erkendelsesvej, Grundtvig  mener, at han er tr&#x00E5;dt ind p&#x00E5;; se ogs&#x00E5; indledningen.</p>
+   </note>
+
+   <note xml:id="com15">
+      <p>oph&#x00F8;re.</p>
+   </note>
+
+   <note xml:id="com16">
+      <p>Grundtvig hentyder b&#x00E5;de til, at han har travlt som husl&#x00E6;rer p&#x00E5; Langeland (<ref type="docOut" target="1807_65_intro.xml#docIn4">se indledningen, afsnittet om den forelskede husl&#x00E6;rer</ref>), og til, at det p&#x00E5; grund af krigen mod England ikke kan lade sig g&#x00F8;re at l&#x00E5;ne b&#x00F8;ger fra Universitetsbiblioteket i K&#x00F8;benhavn.</p>
+   </note>
+
+     <note xml:id="com18">
+      <p>Grundtvigs egen overs&#x00E6;ttelse af strofe 4 i <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> (da. <hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>). &#x201C;Alfers Bestr&#x00E5;ler&#x201D; er en kenning (dvs. et fast (poetisk) udtryk fra den nordiske skjaldekunst) for solen.</p>
+   </note>
+
+   <note xml:id="com19">
+      <p>Grundtvig hentyder til den <rs type="title" key="title73">gendigtning</rs> af <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> (da. <hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>), som teologen <persName key="pe6">Jens M&#x00F8;ller</persName> havde skrevet, og som Grundtvig allerede i majnummeret af <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi> 1806 havde kommenteret negativt; <ref type="docOut" target="1807_65_intro.xml#docIn32">se indledningen, afsnittet om Grundtvigs digteriske foruds&#x00E6;tninger.</ref>
+</p>
+   </note>
+
+   <note xml:id="com20">
+      <p>nemlig guden <rs type="myth" key="myth18">Frejs</rs> elskovskvaler i <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> (da. <hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>).</p>
+   </note>
+
+   <note xml:id="com23">
+      <p>dragen <rs type="myth" key="myth12">Fafner</rs>, der vogtede en stor guldskat. Den dr&#x00E6;btes af <rs type="myth" key="myth65">Sigurd Fafnersbane</rs> med sv&#x00E6;rdet <rs type="myth" key="myth139">Gram</rs>.</p>
+   </note>
+
+   <note xml:id="com24">
+      <p>Det er typisk for Grundtvig at s&#x00E6;tte et bogstavrimende ord foran navnet. Her skal det forst&#x00E5;s h&#x00E6;drende og henvise til den interesse, <persName key="pe2">Nyerup</persName> havde vist besk&#x00E6;ftigelsen med det (old)nordiske.</p>
+   </note>
+
+   <note xml:id="com25">
+      <p>gamle dage, is&#x00E6;r den hedenske oldtid.</p>
+   </note>
+
+   <note xml:id="com26">
+      <p>
+<rs type="myth" key="myth6">Balders</rs> forbindelse med d&#x00F8;dv&#x00E6;kkende runer m&#x00E5; s&#x00F8;ges i beskrivelsen af hans bolig hos <persName key="pe9">Jacob B&#x00E6;rent M&#x00F8;inichen</persName> (1800). Her st&#x00E5;r, at <rs type="myth" key="myth6">Balder</rs> &#x201C;boede i Himlen paa <rs type="myth" key="myth256">Breidablik</rs>, et Sted, som aldrig nogen Ondskab eller Forbandelse hvilede paa, hvor intet urent fandtes, og i hvis St&#x00F8;tter vare Runer, som endog kunde opv&#x00E6;kke de D&#x00F8;de&#x201D; (Jacob B&#x00E6;rent M&#x00F8;inichen (1800) <rs type="title" key="title5">
+<hi rend="italic">Nordiske Folks Overtroe, Guder, Fabler og Helte indtil Frode 7 Tider i Bogstavorden,</hi>
+</rs> s. 45).</p>
+   </note>
+
+   <note xml:id="com27">
+      <p>Mennesket er skabt af guder, men ud af masse eller materie, dvs. af j&#x00E6;tten <rs type="myth" key="myth84">Ymer</rs>, af hvis krop guderne ogs&#x00E5; danner verden. Grundtvig har ideen om de oprindeligt farvel&#x00F8;se mennesker fra <ref type="docIn" target="#com614">
+<hi rend="italic">
+         <rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>,</hi>
+</ref> hvor det om det f&#x00F8;rste menneskepar, Ask og Embla, hedder: &#x201C;Farve de mangled&#x201D; (<rs type="title" key="title28">Sandvig 1783</rs>, strofe 18). I den efterf&#x00F8;lgende strofe giver guderne dem forskellige ting: &#x201C;Ski&#x00F8;nhed L&#x00F8;dr / Og yndig Farve &#x201C; (<rs type="title" key="title28">Sandvig</rs> 1783, strofe 18).</p>
+   </note>
+
+   <note xml:id="com28">
+      <p>dvs.: d&#x00F8;den venter enhver ud fra forestillingen om, at mennesket er skabt af jorden og skal blive til jord igen <rs type="bible" key="1 Mos 2,7">(1 Mos 2,7)</rs>. Grundtvig har udtrykket fra <persName key="pe1">Sandvigs</persName> <rs type="title" key="title28">overs&#x00E6;ttelse</rs> af 
+         <hi rend="italic">S&#x00F3;larli&#x00F3;&#x00F0;</hi> (da. <hi rend="italic">
+<ref type="docIn" target="#com612">
+<rs key="title142" type="title">Solsangen</rs>
+</ref>;</hi> hos Sandvig &#x201C;Solens Sang&#x201D; <rs type="title" key="title28">Sandvig</rs> 1783). </p>
+      <note type="readMore">
+         <p>En lignende tankegang kan man finde i en nyere overs&#x00E6;ttelse af <!-- <rs type="bible" key="Pr&#x00E6;d 20,4"></rs> -->Pr&#x00E6;dikerens Bog: &#x201C;Alle g&#x00E5;r samme sted hen; alle er blevet til jord, alle bliver til jord igen&#x201D; (kap. 4 20f, 1992). P&#x00E5; Grundtvigs tid l&#x00F8;d passagen dog s&#x00E5;ledes: &#x201C;De fare Alle til eet Sted; de bleve Alle af St&#x00F8;v, og de komme Alle til St&#x00F8;v igjen&#x201D; (<hi rend="italic">Biblia,</hi> 1740).</p>
+      </note>
+   </note>
+
+   <note xml:id="com29">
+      <p>Her hentydes til <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>,</hi>
+</ref> if&#x00F8;lge hvilken <rs type="myth" key="myth59">Odin</rs> gav det f&#x00F8;rste menneskepar, <rs type="myth" key="myth5">Ask</rs> og <rs type="myth" key="myth11">Embla</rs>, &#x00E5;nd (strofe 16 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787); strofe 18 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs> (fx <rs type="title" key="title68">Meulengracht S&#x00F8;rensens</rs> 2001).</p>
+   </note>
+
+   <note xml:id="com30">
+      <p>udgiverne af Den Arnamagn&#x00E6;anske Kommissions udgave, <rs type="title" key="title15">
+<hi rend="italic">Edda S&#x00E6;mundar hinns Fr&#x00F3;da</hi>
+</rs>(1 1787). Forordet er underskrevet af &#x201C;<persName key="pe12">Luxdorph</persName>. <persName key="pe7">Suhm</persName>. <persName key="pe13">Thorlacius</persName>. <persName key="pe11">A. Kall</persName>. <persName key="pe10">Baden</persName>.&#x201D;</p>
+   </note>
+
+   <note xml:id="com31">
+      <p>Den arnamagn&#x00E6;anske kommissions udgivere af <hi rend="italic">
+<rs type="title" key="title121">Eddaens</rs>
+</hi> har forsynet deres <hi rend="italic">
+<rs type="title" key="title15">udgave</rs>
+</hi> med et 42 sider langt forord p&#x00E5; latin. Heri tager de afstand fra de mennesker, der mener, at det er unyttigt at udgive <hi rend="italic">
+<rs type="title" key="title121">Eddaen</rs>
+</hi> overhovedet. </p>
+      <note type="readMore">
+<p>I overs&#x00E6;ttelse lyder et uddrag af s. 8: &#x201C;Men vi mener her at h&#x00F8;re visse
+                  personers uvillige r&#x00F8;ster, der nu skriger deres &#x2018;rend og
+                  hop!&#x2019; til os. Det er nemlig deres opfattelse, at hele Eddaforskningen, som
+                  naturligvis kr&#x00E6;ver meget arbejde og er forbundet med stor usikkerhed, men
+                  ellers er lidet nyttig, hvis ikke ganske unyttig, ikke p&#x00E5; nogen m&#x00E5;de
+                  forekommer s&#x00E5; betydningsfuld, at den l&#x00E6;rde verden kan bruge energi
+                  og kr&#x00E6;fter p&#x00E5; den, kr&#x00E6;fter, som mere klogt burde anvendes
+                  p&#x00E5; gode og nyttige sager. Disse personer r&#x00E5;ber op om, at dette
+                  v&#x00E6;rdil&#x00F8;se og mere end halvbarbariske sludder b&#x00F8;r overlades
+                  til dem, der har skrevet det, og deres hjernespind bortvejres som
+                  spindelv&#x00E6;v. Vi for vort vedkommende vil ikke bruge mange kr&#x00E6;fter
+                  p&#x00E5; at g&#x00E5; i rette med disse menneskers afvisende holdning, for det er
+                  vor opfattelse, at studiet af nordisk mytologi ikke b&#x00F8;r
+                  p&#x00E5;n&#x00F8;des alle eller dem, der ikke &#x00F8;nsker det. Hvis der
+                  imidlertid findes nogen, som har en lidt anden mening om denne del af de nordiske
+                  oldtidsminder, s&#x00E5; skal de vel have lov til at f&#x00F8;lge deres
+                  overbevisning uden at andre, der finder det foragteligt, begynder at
+                  protestere?&#x201D; (oversat af GV, 2010).</p>
+</note>
+   </note>
+
+   <note xml:id="com32">
+      <p>Adam <persName key="pe3">Oehlenschl&#x00E4;ger</persName> havde i 1803 [december 1802] udgivet <rs type="title" key="title74">
+<hi rend="italic">Digte 1803</hi>
+</rs> og i 1805 <rs type="title" key="title75">
+<hi rend="italic">Poetiske Skrifter</hi>
+</rs>. Begge udgivelser indeholder gendigtninger af emner fra den nordiske fortid.</p>
+   </note>
+
+   <note xml:id="com33">
+      <p>dvs. i sin ungdom. Et lignende udtryk, &#x201C;Alderens Vaar&#x201D;, kan Grundtvig have set i <persName key="pe1">Sandvigs</persName> <rs type="title" key="title28">overs&#x00E6;ttelse</rs> af <hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi> (da. <hi rend="italic">(<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>), 1785.</p>
+   </note>
+
+   <note xml:id="com34">
+      <p>I digtet <hi rend="italic">H&#x00E1;vam&#x00E1;l</hi> (da. <hi rend="italic">
+         <rs type="title" key="title145">Den h&#x00F8;jes Tale</rs>
+</hi>) beretter afsnittet &#x201C;Odins Indvielse&#x201D; om, hvordan <rs type="myth" key="myth59">Odin</rs>, s&#x00E5;ret med en spydsod, i ni dage og i ni n&#x00E6;tter hang i et tr&#x00E6; i for at opn&#x00E5; visdom.</p>
+      <note type="readMore">
+<p>Dette tr&#x00E6;k af <rs type="myth" key="myth59">Odins</rs> historie gentages af <rs key="myth58" type="myth">Njord</rs> og giver siden anledning til, at m&#x00E6;nd, der var sengeliggende og ved at d&#x00F8; af sygdom (sot), ridsede sig i h&#x00E5;nden med en spydsod, s&#x00E5; de kunne sige, at de var d&#x00F8;de ved v&#x00E5;ben og ikke af sot. Dermed fik de adgang til et efterliv som krigere i <rs type="myth" key="myth59">Odins</rs> <rs type="myth" key="myth101">Valhal</rs> (<hi rend="italic">
+<rs type="title" key="title147">Ynglingsaga</rs>,</hi> kap. 10)</p>
+</note>
+   </note>
+
+   <note xml:id="com35">
+      <p>Grundtvig hentyder til den fortvivlelse, som hans lykkeligt-ulykkelige forelskelse i <persName key="pe14">Constance Leth</persName> har sat ham i; <ref type="docOut" target="1807_65_intro.xml#docIn4">se ogs&#x00E5; indledningen, afsnittet om den forelskede husl&#x00E6;rer</ref>.</p>
+   </note>
+
+   <note xml:id="com36">
+      <p>Grundtvig har i et udateret brev til Molbech fra maj 1808 tilkendegivet, at det var <persName key="pe14">Constance Leth</persName>, han refererede til (<rs type="title" key="title16">
+<hi rend="italic">Grundtvig-Molbech 1888,</hi>
+</rs> s. 13-14).</p>
+   </note>
+
+   <note xml:id="com37">
+      <p>leddenes m&#x00F8;dested, her i betydningen lemmer.</p>
+   </note>
+
+   <note xml:id="com38">
+      <p>her: ogs&#x00E5;.</p>
+      
+   </note>
+   
+   <note xml:id="com71">
+<p>r&#x00E5;bet vixit (lat.) &#x201C;han har levet&#x201D;, dvs. en eufemisme for &#x201C;han er d&#x00F8;d&#x201D;, l&#x00F8;d i det antikke Rom, n&#x00E5;r en forbryder eller krigsfange var blevet henrettet.</p>
+</note>
+   
+   
+   
+   <note xml:id="com39">
+      <p>imperativ pluralis.</p>
+   </note>
+
+   <note xml:id="com40">
+      <p>her: fortid, dog is&#x00E6;r oldtid.</p>
+   </note>
+
+   <note xml:id="com41">
+      <p>lat.: &#x201C;I store ting er det tilstr&#x00E6;kkeligt at have haft viljen&#x201D; (Properts 2, 10.6).</p>
+   </note>
+
+   <note xml:id="com42">
+      <p>i ordets &#x00E6;ldre betydning: rimelig.</p>
+   </note>
+
+   <note xml:id="com45">
+      <p>Det er uklart, hvem der hentydes til. I <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>
+</hi> opremser han: <persName key="pe394">Bartholin</persName>, <persName key="pe7">Suhm</persName>, <persName key="pe1">Sandvig</persName>, <persName key="pe439">Gr&#x00E4;ter</persName>, <persName key="pe25">Herder</persName>, <persName key="pe13">Thorlacius</persName>, <persName key="pe440">Abrahamsen</persName> og <persName key="pe2">Nyerup</persName> (Grundtvig 1808, s. VIII).</p>
+   </note>
+
+   <note xml:id="com46">
+<p>se indledningen, <ref type="docOut" target="1807_65_intro.xml#docIn3">afsnittet om Romantikkens anelse</ref>.</p>
+</note>
+ 
+   <note xml:id="com55">
+      <p>I eddadigtet <hi rend="italic">Baldrs Draumar</hi> (da. <hi rend="italic">Vegtams Kv&#x00E6;de</hi> eller <ref type="docIn" target="#com601">
+<hi rend="italic">
+         <rs key="title131" type="title">Balders Dr&#x00F8;mme</rs>
+</hi>
+</ref>) rejser <rs type="myth" key="myth59">Odin</rs> under d&#x00E6;knavnet Vegtam til <rs type="myth" key="myth33">Hel</rs> for at f&#x00E5; en forklaring p&#x00E5; &#x201C;hvorfor <rs type="myth" key="myth6">Balder</rs> / blodigt dr&#x00F8;mte&#x201D; (strofe 1 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx <rs type="title" key="title71">Martin Larsens, 1943</rs>). <rs type="myth" key="myth6">Balders</rs> efterf&#x00F8;lgende d&#x00F8;d bliver optakt til <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com56">
+      <p>formentlig <rs type="myth" key="myth6">Balder</rs>.</p>
+   </note>
+
+   <note xml:id="com58">
+      <p>af det oldislandske &#x2018;bana&#x00FE;&#x00FA;fa&#x2019;, dvs. en h&#x00F8;j, hvor man har m&#x00F8;dt sin d&#x00F8;d, bane. Grundtvig kan have taget udtrykket fra <persName key="pe1">Sandvigs</persName> <rs type="title" key="title28">overs&#x00E6;ttelse af</rs> <hi rend="italic">Hyndluli&#x00F3;&#x00F0;</hi> (da. <hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>); <ref type="docOut" target="1807_65_intro.xml#docIn15">se indledningen, afsnittet om Sandvig</ref>.</p>
+   </note>
+
+   <note xml:id="com60">
+      <p>Fremstillingen af, at vi med <rs type="myth" key="myth48">Loke</rs> skal se tidens gang og asasl&#x00E6;gtens hele sk&#x00E6;bne ved <rs type="myth" key="myth100">Urds kilde</rs>, er Grundtvigs, ikke <ref type="docIn" target="#com620">
+<hi rend="italic">
+<rs type="title" key="title121">Eddaens</rs>
+</hi>
+</ref>.</p>
+   </note>
+
+   <note xml:id="com61">
+      <p>t&#x00E6;t omkring.</p>
+   </note>
+
+   <note xml:id="com64">
+      <p>l&#x00E6;re om universets skabelse og udvikling, enten p&#x00E5; religi&#x00F8;st-filosofisk el. p&#x00E5; videnskabeligt-astronomisk grundlag.</p>
+   </note>
+
+  
+   <note xml:id="com66">
+      <p>her: mening, efter ty. &#x2018;Sinn&#x2019;.</p>
+   </note>
+
+   <note xml:id="com67">
+      <p>
+<ref type="docOut" target="1807_65_intro.xml#docIn9">se indledningen, afsnittet om 
+        Alfaderbegrebet</ref>.</p>
+   </note>
+
+   <note xml:id="com68">
+      <p>Almindeligvis kan ordet overs&#x00E6;ttes til &#x2018;materien&#x2019;, men det r&#x00E6;kker ikke her. I den meget allegoriske l&#x00E6;sning, Grundtvig foretager, kommer j&#x00E6;tterne til at st&#x00E5; for den mere materielle side af jordelivet. Ofte vil l&#x00E6;seren i det f&#x00F8;lgende blot kunne erstatte &#x2018;Massen&#x2019; med &#x2018;j&#x00E6;tterne&#x2019;.</p>
+   </note>
+
+   <note xml:id="com69">
+      <p>gl. form af hv&#x00E6;lvede.</p>
+   </note>
+
+   <note xml:id="com70">
+      <p>
+<rs type="myth" key="myth111">j&#x00E6;tte</rs>sl&#x00E6;gten.</p>
+   </note>
+  
+   <note xml:id="com76">
+      <p>Dette har ofte v&#x00E6;ret fortolket som en foregribelse af Kristus. Det oldislandske &#x2018;r&#x00ED;kr&#x2019; betyder m&#x00E6;gtig.</p>
+   </note>
+
+   <note xml:id="com77">
+      <p>Dette har ofte v&#x00E6;ret fortolket som et udtryk for den kristne Skabergud.</p>
+   </note>
+
+   <note xml:id="com78">
+      <p>I den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) st&#x00E5;r der &#x201C;Alsvi&#x00FE;r&#x201D;. <persName key="pe1">Sandvig</persName> overs&#x00E6;tter:  &#x201C;Da kommer en anden / End m&#x00E6;gtigere, / Dog t&#x00F8;r jeg nu ikke / hans Navn n&#x00E6;vne, / Faa troer jeg skue / L&#x00E6;nger'; i Tiden, / end naar <rs type="myth" key="myth59">Odin</rs> skal / Ulven m&#x00F8;de&#x201D;.  I en <rs type="title" key="title70">nyere overs&#x00E6;ttelse</rs> af <ref type="docIn" target="#com610"> <hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>,</hi> </ref> fx <rs type="title" key="title70">Th&#x00F8;ger Larsens </rs>, bibeholdes ordet som &#x201C;Alsvier&#x201D; og forklares s&#x00E5;ledes: &#x201C;Solens ene Hest. Dette skal vist forstaas saaledes, at bliver <rs type="myth" key="myth59">Odins</rs> Tanke borte, raver Verden i en halvbevidst, s&#x00F8;vnagtig Tilstand&#x201D; (Larsen 1914, note til strofe 4).</p>
+   </note>
+
+   <note xml:id="com79">
+      <p>If&#x00F8;lge <hi rend="italic">
+<rs key="title122" type="title">Snorres Edda</rs>
+</hi> (ogs&#x00E5; kaldet <hi rend="italic">
+<rs key="title122" type="title">Den yngre Edda</rs>
+</hi>) er det fire dv&#x00E6;rge, &#x00D8;stre, Vestre, Nordre og S&#x00F8;ndre, der b&#x00E6;rer himmelhv&#x00E6;lvingen.</p>
+   </note>
+
+   <note xml:id="com80">
+      <p>henvisning til <hi rend="italic">Hyndluli&#x00F3;&#x00F0;</hi> (da. <hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>), strofe 40 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787), strofe 44 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse, fx Martin Larsens 1943</rs>. Hyndlas replik lyder hos <persName key="pe1">Sandvig</persName> (strofe 42): &#x201C;Da kommer end anden / End m&#x00E6;gtigere, / Dog t&#x00F8;r jeg nu ikke / Hans Navn, n&#x00E6;vne, / Faa troer jeg skue / L&#x00E6;nger'; i Tiden, / End naar <rs type="myth" key="myth59">Odin</rs> skal / Ulven m&#x00F8;de&#x201D;.  </p>
+      <note type="readMore">
+<p>I <rs type="title" key="title71">Martin Larsens overs&#x00E6;ttelse (1943</rs>): &#x201C;En da kommer, end st&#x00E6;rkere, / dog t&#x00F8;r jeg ikke / denne n&#x00E6;vne; / faa ser l&#x00E6;ngere / frem end Tiden / da <rs type="myth" key="myth59">Odin</rs> skal / Ulven m&#x00F8;de&#x201D;. Karl Gjellerup overs&#x00E6;tter i 1895: &#x201C;En anden kommer / aller-m&#x00E6;gtigst, / ham dog at  n&#x00E6;vne / har jeg ei Mod. / Faa kun skue / fremad l&#x00E6;nger, / end naar <rs type="myth" key="myth59">Odin</rs> / Ulven m&#x00F8;der&#x201D;.</p>
+</note>
+   </note>
+
+   <note xml:id="com81">
+      <p>nemlig i <hi rend="italic">Hyndlulj&#x00F3;&#x00F0;</hi> (da. <ref type="docIn" target="#com608">
+<hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>
+</ref>) strofe 44.</p>
+   </note>
+
+   <note xml:id="com83">
+      <p>Almindeligvis er &#x2018;den h&#x00F8;je&#x2019; et andet navn for <rs type="myth" key="myth59">Odin</rs>. N&#x00E5;r <rs type="myth" key="myth14">Fenrisulven</rs> sluger den h&#x00F8;je as, hentydes der dog til formentlig til <rs type="myth" key="myth104">Ragnarok</rs>, hvor <rs type="myth" key="myth14">Fenrisulven</rs> skal sluge solen (<hi rend="italic">Gylfaginning</hi> (da. <hi rend="italic">
+<rs type="title" key="title135">Gylfes Forbl&#x00E6;ndelse</rs>
+</hi>), stykke 50). Hos <rs type="title" key="title23">Suhm</rs> (1771, s. 271) er Sol en asynje, dvs. en kvindelig as.</p>
+   </note>
+
+   <note xml:id="com84">
+      <p>
+<hi rend="italic">
+<ref type="docIn" target="#com614">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>,</ref>
+</hi> strofe 58 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 3 1828; strofe 65 i nyere overs&#x00E6;ttelse, fx <rs type="title" key="title68">
+<persName key="pe44">Meulengracht S&#x00F8;rensens</persName>
+</rs> 2001). Halvstrofen st&#x00E5;r ikke i hovedteksten fra <hi rend="italic">
+<rs key="title150" type="title">Codex Regius</rs>;</hi> og dens &#x00E6;gthed er omdiskuteret.</p>
+   </note>
+
+   <note xml:id="com86">
+      <p>nemlig prosaisk omskrivning af strofe 4 i <hi rend="italic">
+<ref type="docIn" target="#com610">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</ref>.</hi> Grundtvig bruger formentlig digtet, fordi det handler om gudernes fors&#x00F8;g at skaffe sig viden om noget, der ellers er skjult for dem, p&#x00E5; samme m&#x00E5;de som Grundtvig s&#x00F8;ger at opn&#x00E5; skjulte indsigter. </p>
+   </note>
+
+   <note xml:id="com87">
+      <p>den <rs type="title" key="title15">udgave</rs> af <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>,</hi> som Den Arnamagn&#x00E6;anske Kommission udgav i 1787, og som Grundtvig har anvendt. Den indeholder &#x2013; p&#x00E5; b&#x00E5;de oldnordisk og latin &#x2013; f&#x00F8;lgende digte (med de almindeligste danske titler i parentes): <hi rend="italic">Vafthrudnismal</hi> (da. <ref type="docIn" target="#com613">
+<hi rend="italic">
+         <rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi>
+</ref>), <hi rend="italic">Grimnis M&#x00E1;l</hi> (da. <ref type="docIn" target="#com604">
+<hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi>
+</ref>), <hi rend="italic">F&#x00F6;r Scirnis</hi> (da. <ref type="docIn" target="#com603">
+<hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>
+</ref>), <hi rend="italic">Harbarz-lio&#x00FE;</hi> (da. <ref type="docIn" target="#com616">
+<hi rend="italic">
+<rs key="title146" type="title">Sangen om Gr&#x00E5;sk&#x00E6;g</rs>
+</hi>
+</ref> eller <ref type="docIn" target="#com616">
+<hi rend="italic">
+<rs key="title146" type="title">Harbards Sang</rs>
+</hi>
+</ref>), <hi rend="italic">Hymis-quida</hi> (da. <ref type="docIn" target="#com607">
+<hi rend="italic">
+<rs type="title" key="title137">Hymers Kv&#x00E6;de</rs>
+</hi>
+</ref>), <hi rend="italic">&#x00C6;gisdrecka</hi> (da. <ref type="docIn" target="#com609">
+<hi rend="italic">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</hi>
+</ref>), <hi rend="italic">&#x00DE;ryms-qvida</hi> (da. <hi rend="italic">Trymskv&#x00E6;det</hi> eller <ref type="docIn" target="#com606">
+<hi rend="italic">
+<rs type="title" key="title136">Hammerhentningen</rs>
+</hi>
+</ref>), <hi rend="italic">Hrafna-galdr &#x00D3;&#x00FE;ins</hi> (da. <ref type="docIn" target="#com610">
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</hi>
+</ref>), <hi rend="italic">Vegtams-qui&#x00FE;a</hi> (da. <ref type="docIn" target="#com601">
+<hi rend="italic">Vegtams Kv&#x00E6;de</hi>
+</ref> eller <ref type="docIn" target="#com601">
+<hi rend="italic">
+<rs key="title131" type="title">Balders Dr&#x00F8;mme</rs>
+</hi>
+</ref>), <hi rend="italic">Alv&#x00ED;s-m&#x00E1;l</hi> (da. 
+<hi rend="italic">Sangen om Alvis</hi>
+), <hi rend="italic">Hyndlv-li&#x00F3;&#x00FE;</hi> (da. <ref type="docIn" target="#com608">
+<hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>
+</ref>) og <hi rend="italic">S&#x00F3;lar-li&#x00F3;&#x00FE;</hi> (da.<ref type="docIn" target="#com612">
+<hi rend="italic">
+<rs key="title142" type="title">Solsangen</rs>
+</hi>
+</ref>).</p>
+   </note>
+
+   <note xml:id="com92">
+      <p>
+<rs type="myth" key="myth48">Lokes</rs> b&#x00F8;rn er: <rs type="myth" key="myth33">Hel</rs>, gudinde over d&#x00F8;dsriget; <rs type="myth" key="myth105">Midg&#x00E5;rdsormen</rs>, der slynger sig rundt om hele jorden; og <rs type="myth" key="myth14">Fenrisulven</rs>, der st&#x00E5;r bundet indtil <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com94">
+      <p>j&#x00E6;tten <rs type="myth" key="myth84">Ymer</rs>, af hvem guderne skabte verden, eller j&#x00E6;tterne i al almindelighed; <ref type="docOut" target="1807_65_intro.xml#docIn11">se ogs&#x00E5; indledningen, afsnittet om Grundtvigs verdenssyn</ref>.</p>
+   </note>
+               <note xml:id="com613">
+                  <p>
+                     <hi rend="italic">
+                        <rs key="title143" type="title">Vaftrudners Sang</rs>
+                     </hi>er et af digtene i <hi rend="italic">
+                        <rs type="title" key="title121">Edda</rs>.</hi> Det handler om en vidensdyst mellem j&#x00E6;tten Vaftrudner og Odin og kan betragtes som et l&#x00E6;redigt om skabelsesmytologi og om det indbyrdes forhold mellem <rs type="myth" key="myth106">aser</rs> og <rs type="myth" key="myth118">vaner</rs>.</p>
+                  <note type="readMore">
+                     <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787), og i <rs type="title" key="title28">
+                        <persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p>
+                     <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Vaftrudner M&#x00E1;l; Vaf&#x00FE;r&#x00FA;&#x00F0;nism&#x00E1;l.</hi>
+                     </p>
+                  </note>
+               </note>
+   <note xml:id="com99">
+      <p>giftdr&#x00E5;ber.</p>
+   </note>
+
+   <note xml:id="com100">
+      <p>Hele citatet stammer fra <ref type="docIn" target="#com613">
+<hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>,</hi> strofe 30-31 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> 1 1787). Her hentydes til myten om, hvordan j&#x00E6;tten <rs type="myth" key="myth84">Ymer</rs> opstod i m&#x00F8;det mellem rim fra <rs type="myth" key="myth512">Ginnungagap</rs>, som bestod af st&#x00F8;rknet vand (is) fra <rs type="myth" key="myth88">Elivagar</rs> og varme fra syd.</p>
+   </note>
+
+   <note xml:id="com105">
+      <p>her: <rs type="myth" key="myth84">Ymer</rs>.</p>
+   </note>
+
+   <note xml:id="com106">
+      <p>
+<rs type="myth" key="myth84">Ymer</rs>, der kunne avle med sig selv, idet hans ene ben avlede en s&#x00F8;n med det andet.</p>
+   </note>
+
+   <note xml:id="com110">
+      <p>De <rs type="myth" key="myth106">aser</rs>, der slog <rs type="myth" key="myth84">Ymer</rs> ihjel og dannede Jorden ud af hans d&#x00F8;de krop, dvs. <rs type="myth" key="myth59">Odin</rs>, <rs type="myth" key="myth122">Vile</rs> og <rs type="myth" key="myth123">Ve</rs>.</p>
+   </note>
+
+   <note xml:id="com114">
+      <p>andet end at.</p>
+   </note>
+
+<!--    <note xml:id="com115">
+      <p>Her fremg&#x00E5;r det tydeligt, at Grundtvig g&#x00F8;r <rs type="myth" key="myth84">Ymer</rs> til det samme som &#x2018;Massen&#x2019;.</p>
+   </note> -->
+
+   <note xml:id="com116">
+      <p>
+<rs type="myth" key="myth106">asernes</rs>, dog is&#x00E6;r <rs type="myth" key="myth59">Odins</rs>.</p>
+   </note>
+
+   <note xml:id="com117">
+      <p>Grundtvig har formentlig siddet b&#x00E5;de med <persName key="pe15">Peder Resens</persName> tosprogede (latin og oldislandsk) udgave af digtet <hi rend="italic">H&#x00E1;vamaal</hi>
+ (da. <hi rend="italic">
+<rs type="title" key="title145">Den h&#x00F8;jes Tale</rs>
+</hi>) (K&#x00F8;benhavn 1665) og med <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse fra 1783</rs>. I <persName key="pe15">Resens</persName> <rs type="title" key="title19">udgave</rs> begynder der p&#x00E5; blad C recto et afsnit, som han kalder &#x201C;Runa Capitule&#x201D;. Dette kapitel har selvst&#x00E6;ndigt nummererede strofer; den her n&#x00E6;vnte er strofe 8. Ogs&#x00E5; i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> eddaovers&#x00E6;ttelse fra 1783</rs> er sidste afsnit  af <hi rend="italic">Havamaal</hi> ben&#x00E6;vnt &#x201C;Rune-Capitlet&#x201D; (s. 103, blad G3 recto). <persName key="pe1">Sandvigs</persName> <rs type="title" key="title28">overs&#x00E6;ttelse</rs> lyder: &#x201C;Saa Thundr selv skar / F&#x00F8;rend Folkets Nat, / Da han gik derhen, / Hvor han selv kom fra&#x201D; (strofe 8).</p>
+   </note>
+
+   
+   <note xml:id="com124">
+      <p>I det l&#x00E6;ngere digt <ref type="docIn" target="#com608">
+<hi rend="italic">Hyndlulj&#x00F3;&#x00F0;</hi>
+</ref> (<ref type="docIn" target="#com608">da. <hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>
+</ref>) er der indskudt et tekststykke, som kan opfattes som en kortere version af digtet <ref type="docIn" target="#com614">
+<hi rend="italic">Volusp&#x00E1;</hi>
+</ref> (da. <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>). Grundtvigs overs&#x00E6;ttelse her gengiver en del af strofe 39 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> 1 1787.</p>
+   </note>
+
+   <note xml:id="com126">
+      <p>I noten er anf&#x00F8;rt den oldnordiske tekst, som Grundtvig her overs&#x00E6;tter. Den er ikke hovedteksten i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) af <hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>.</hi>I<rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName>
+                  overs&#x00E6;ttelse fra 1785</rs> st&#x00E5;r der &#x201C;Sone-Blodet&#x201D;
+               (Sandvig 1785, strofe 37) for &#x201C;sonar dreyra&#x201D;, mens <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>r, som Martin
+                  Larsens (1943) i strofe 38 har &#x201C;Galtblodet&#x201D;. Det
+               originale udtryk betyder ganske rigtigt &#x2018;forsoningsblod&#x2019;, oprindelig i
+               forbindelse med sl&#x00E6;gts- og blodh&#x00E6;vn.. Det er let at tr&#x00E6;kke en parallel
+               til Jesu sonoffer for menneskene.</p>
+   </note>
+
+   <note xml:id="com127">
+      <p>Som det ogs&#x00E5; fremg&#x00E5;r af overs&#x00E6;ttelsen, er &#x2018;jar&#x00FE;ar&#x2019; genitiv af &#x2018;j&#x00F6;r&#x00F0;&#x2019;, jord; &#x2018;megni&#x2019; betyder bl.a. kraft.</p>
+   </note>
+
+   <note xml:id="com128">
+      <p>
+<rs type="myth" key="myth77">Urds</rs> kraft.</p>
+   </note>
+
+<!--    <note xml:id="com130">
+      <p>Igen l&#x00E6;gger Grundtvig sin allegoriske l&#x00E6;sning ned over den nordiske mytologi, se dog ogs&#x00E5;<ref> indledningen</ref> og mytologisk base: <ref> Urds kilde</ref> hvad g&#x00F8;
+r vi her? VAP 22.nov. 2010 .</p>
+   </note> -->
+
+   <note xml:id="com132">
+      <p>
+<ref type="docIn" target="#com608">
+<hi rend="italic">Hyndluljo&#x00F0;</hi>
+</ref> (da. <ref type="docIn" target="#com608">
+<hi rend="italic">
+<rs key="title132" type="title">Hyndlas Sang</rs>
+</hi>
+</ref>) findes kun overleveret i <hi rend="italic">Flateyjarb&#x00F3;k,</hi> (da. <hi rend="italic">Flat&#x00F8;bogen</hi>) fra 1380'erne.</p>
+   </note>
+
+   <note xml:id="com133">
+      <p>I &#x00E6;ldre danske grammatikker kunne ordet anvendes b&#x00E5;de om substantiver og adjektiver, men her ser det ud, som om Grundtvig mener &#x2018;egennavn&#x2019; (proprium).</p>
+   </note>
+
+   <note xml:id="com136">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com142">
+      <p>Grundtvig forts&#x00E6;tter her udl&#x00E6;gningen af &#x2018;Soneblodet&#x2019; fra forrige side; <ref type="docIn" target="#com126">se kommentaren hertil</ref>.</p>
+   </note>
+
+   <note xml:id="com144">
+      <p>det samme som &#x2018;soneblodet&#x2019;, <ref type="docIn" target="#com126">se kommentar hertil</ref>.</p>
+   </note>
+
+   <note xml:id="com145">
+      <p>nemlig at Massen (Ymer) havde k&#x00E6;mpet mod Kraften (Odin).</p>
+   </note>
+
+   <note xml:id="com146">
+      <p>
+<rs type="myth" key="myth59">Odins</rs> b&#x00F8;rn er: <rs type="myth" key="myth74">Thor</rs>, <rs type="myth" key="myth6">Balder</rs>, <rs type="myth" key="myth128">H&#x00F8;der</rs>. Flere regner ogs&#x00E5; <rs type="myth" key="myth129">Herm&#x00F3;&#x00F0;ur</rs>, <rs type="myth" key="myth81">Vi&#x00F0;ar</rs>, <rs type="myth" key="myth8">Brage</rs> og <rs type="myth" key="myth122">Vile</rs> med. Her t&#x00E6;nkes dog formentlig p&#x00E5; <rs type="myth" key="myth106">aser</rs>ne (eller m&#x00E5;ske ligefrem menneskeheden) under &#x00E9;t.</p>
+   </note>
+
+   <note xml:id="com147">
+      <p>En hentydning til, at <rs type="myth" key="myth59">Odin</rs>, <rs type="myth" key="myth122">Vile</rs> og <rs type="myth" key="myth123">Ve</rs> byggede jorden af den dr&#x00E6;bte j&#x00E6;tte <rs type="myth" key="myth84">Ymer</rs>.</p>
+   </note>
+
+   <note xml:id="com149">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com150">
+      <p>dvs. <rs type="myth" key="myth48">Loke</rs>.</p>
+   </note>
+
+   <note xml:id="com151">
+      <p>Grundtvig hentyder til, at <rs type="myth" key="myth48">Loke</rs> og <rs type="myth" key="myth59">Odin</rs> blandede blod, da <rs type="myth" key="myth48">Loke</rs> blev optaget i Asg&#x00E5;rd; se eddadigtet <hi rend="italic">Lokasenna</hi> (da. <hi rend="italic">
+<ref type="docIn" target="#com609">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</ref>
+</hi>), strofe 9.</p>
+   </note>
+
+   <note xml:id="com155">
+      <p>dvs. <ref type="docIn" target="#com609">
+<hi rend="italic">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</hi>
+</ref>. Grundtvig hentyder til strofe 28 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787; ogs&#x00E5; strofe 28 i nyere overs&#x00E6;ttelse, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com157">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com158">
+      <p>dvs. <rs type="myth" key="myth48">Loke</rs>.</p>
+   </note>
+
+   <note xml:id="com159">
+      <p>her: <rs type="myth" key="myth111">j&#x00E6;tterne</rs>.</p>
+   </note>
+
+   <note xml:id="com168">
+      <p> Her menes formentlig <rs type="myth" key="myth59">Odin</rs>. Grundtvig citerer fra <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>, strofe 61 i Sandvigs overs&#x00E6;ttelse (Sandvig 1783). Strofens to sidste linier, der indeholder vendingen, er ikke med i nyere overs&#x00E6;ttelser.</p>
+      <note type="readMore">
+<p>Forstander kan v&#x00E6;re en overs&#x00E6;ttelse af de latinske rector.</p>
+</note>
+      </note>
+
+   <note xml:id="com169">
+      <p>Grundtvig opfatter her de gyldne tavler fra<ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref> som et symbol for den styrelse, der g&#x00E5;r gennem hele historien, omfattende b&#x00E5;de den hedenske og den kristne tid.</p>
+   </note>
+
+   <note xml:id="com170">
+      <p>illusorisk gl&#x00E6;de, som ikke bliver opfyldt.</p>
+   </note>
+
+<!-- 
+   <note xml:id="com167">
+      <p>I fasc. 264.1d, der rummer udkast til et afsnit af  artiklen, st&#x00E5;r der p&#x00E5; dette sted: &#x201C;&#x005B; &#x2026; &#x005D; Frihedsdr&#x00F8;mmen skabte. Snart svinder denne Dr&#x00F8;m, og efter Nornernes (den afpr&#x00E6;gede Visdoms) Bud begynder atter Kampen&#x201D;. I udkastet er der alts&#x00E5; lagt en endnu st&#x00F8;rre v&#x00E6;gt p&#x00E5; historiens uafvendelighed.</p>
+   </note> -->
+
+   <note xml:id="com171">
+      <p>Overs&#x00E6;ttelsen her er af strofe 7 og 8 af <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref> i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 3 1828, svarende til strofe 7 og 8 b&#x00E5;de i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse</rs> (1783) og i moderne udgave, fx <rs key="title68" type="title">Meulengracht S&#x00F8;rensens 2001</rs>).</p>
+   </note>
+
+<note xml:id="com172">
+   <p>dvs. <hi rend="italic">V&#x00F8;lvens Sp&#x00E5;dom.</hi>
+</p>
+</note>
+   
+   <note xml:id="com174">
+      <p>Overs&#x00E6;ttelsen her er af strofe 56 af <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref> i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 3 1828, svarende til strofe 60 b&#x00E5;de i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse</rs> og i moderne udgave, fx Meulengracht S&#x00F8;rensens 2001).</p>
+   </note>
+   
+   <note xml:id="com173">
+      <p>For Grundtvig er <rs type="myth" key="myth106">aser</rs>nes syndefald et n&#x00F8;dvendigt led i Verdensplanen (<ref type="docOut" target="1807_65_intro.xml#docIn11">se indledningen, afsnittet om Grundtvigs verdenssyn</ref>). Grundtvig ser b&#x00E5;de <rs type="myth" key="myth106">aser</rs>nes tab af de gyldne tavler og guden <rs type="myth" key="myth18">Frejs</rs> forelskelse i j&#x00E6;ttedatteren <rs type="myth" key="myth24">Gerd</rs> som tegn p&#x00E5; <rs type="myth" key="myth106">aser</rs>nes syndefald. Det uundg&#x00E5;elige fald er sammen med <rs type="myth" key="myth6">Balders</rs> d&#x00F8;d samtidig begyndelsen til <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com178">
+      <p>kvinder af <rs type="myth" key="myth111">j&#x00E6;tte</rs>sl&#x00E6;gt.</p>
+   </note>
+
+   <note xml:id="com179">
+      <p>ogs&#x00E5; kaldet <rs type="myth" key="myth99">Udg&#x00E5;rd</rs>.</p>
+   </note>
+
+   <note xml:id="com183">
+      <p>
+<rs type="myth" key="myth106">aser</rs>nes fortsatte kamp mod j&#x00E6;tterne.</p>
+   </note>
+
+   <note xml:id="com184">
+      <p>pluralisform af &#x2018;gik&#x2019;.</p>
+   </note>
+
+   
+   <note xml:id="com186">
+      <p>En <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs> (fx <rs type="title" key="title68">Meulengracht S&#x00F8;rensens, 2001</rs>) har &#x201C;alle guder f&#x00E5; udlignet tabet&#x201D;, hvad der nok giver mere mening. Det er dog let at se, hvordan Grundtvig er kommet til sin fortolkning af: &#x201C;skyldo godin &#x01EB;ll / gildi eiga&#x201D;. Grundtvig v&#x00E6;lger nemlig en af de andre betydninger af substantivet &#x2018;gildi&#x2019; der b&#x00E5;de kan betyde betaling (b&#x00E5;de som gives og som modtages), anseelse, gilde og laug. Grundtvig har &#x00E5;benbart bestemt sig for betydningen gilde, hvor andre overs&#x00E6;ttere foretr&#x00E6;kker en betydning, der snarere har med skyldighed at g&#x00F8;re.</p>
+   </note>
+
+   <note xml:id="com187">
+      <p>Overs&#x00E6;ttelsen er af strofe 23 af <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>.</p>
+   </note>
+
+   <note xml:id="com199">
+      <p>Overs&#x00E6;ttelsen er af strofe 22 og 24 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> af <hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs> (bind 3 1828),</hi> (strofe 24 og 26 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse, fx Meulengracht S&#x00F8;rensens 2001</rs>).</p>
+   </note>
+
+   <note xml:id="com200">
+      <p>dvs. <hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>.</hi> Overs&#x00E6;ttelsen er af strofe 15 og 16 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 3 1828, svarende til strofe 17 og 18 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse, fx Meulengracht S&#x00F8;rensens 2001</rs>).</p>
+   </note>
+
+   <note xml:id="com201">
+      <p>lat.: gange (regneart).</p>
+   </note>
+
+   <note xml:id="com208">
+      <p>dvs. <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>. Overs&#x00E6;ttelsen er af strofe 16 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 3 1828), svarende til strofe 18 i moderne overs&#x00E6;ttelse (fx Meulengracht S&#x00F8;rensens 2001).</p>
+   </note>
+
+   <note xml:id="com209">
+      <p>gammel pluralisform af fik.</p>
+   </note>
+
+   <note xml:id="com213">
+      <p>Nyere forskning har ikke kunnet give Grundtvig ret i dette fors&#x00F8;g p&#x00E5; at rette i teksten.</p>
+   </note>
+
+   <note xml:id="com214">
+      <p>Almindeligvis regnes L&#x00F8;dur (<rs type="myth" key="myth49">Lodur</rs>) og <rs type="myth" key="myth48">Loke</rs> ikke for at v&#x00E6;re den samme.</p>
+   </note>
+
+   <note xml:id="com216">
+      <p>Som det fremg&#x00E5;r af sammenh&#x00E6;ngen, ser Grundtvig <rs type="myth" key="myth48">Loke</rs> som den personificerede klogskab, der dog mangler (<rs type="myth" key="myth59">Odins</rs>) &#x00E5;nd.</p>
+   </note>
+
+   <note xml:id="com217">
+      <p>Grundtvig spiller p&#x00E5;, at &#x2018;&#x00E5;nd&#x2019; og &#x2018;&#x00E5;nde&#x2019; n&#x00E6;sten er det samme ord. Den oldislandske tekst har &#x00F6;nd, &#x00E5;nde.</p>
+   </note>
+
+   <note xml:id="com220">
+      <p>efter sammenh&#x00E6;ngen j&#x00E6;tten <rs type="myth" key="myth84">Ymer</rs>, af hvis d&#x00F8;de krop verden blev skabt. Der er dog ogs&#x00E5; mulighed for, at Grundtvig med sin meget allegoriske eller personificerende tolkning af den nordiske mytologi blot mener negative egenskaber i al almindelighed.</p>
+   </note>
+
+   <note xml:id="com222">
+      <p>Sammen med Jorden, ogs&#x00E5; kaldet <rs type="myth" key="myth16">Fj&#x00F8;rgyn</rs>, fik <rs type="myth" key="myth59">Odin</rs> s&#x00F8;nnen <rs type="myth" key="myth74">Thor</rs>.</p>
+   </note>
+
+   <note xml:id="com225">
+      <p>Sammen med Jorden, ogs&#x00E5; kaldet <rs type="myth" key="myth16">Fj&#x00F8;rgyn</rs>, fik <rs type="myth" key="myth59">Odin</rs> s&#x00F8;nnen <rs type="myth" key="myth74">Thor</rs>.</p>
+   </note>
+
+   <note xml:id="com227">
+      <p>Den citerede tekst er strofe 22 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) af <ref type="docIn" target="#com616">
+<hi rend="italic">
+<rs key="title146" type="title">Harbards Sang</rs>
+</hi>
+</ref> (strofe 23 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com228">
+      <p>her: antallet af <rs type="myth" key="myth111">j&#x00E6;tter</rs>.</p>
+   </note>
+
+<note xml:id="com229">
+   <p>her: overfald.</p>
+</note>
+   
+   <note xml:id="com230">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+
+<!--    <note xml:id="com232">
+      <p><rs type="myth" key="myth6">Balder</rs> er n&#x00E6;rliggende, men ikke efter sammenh&#x00E6;ngen.</p>
+   </note> -->
+
+   <note xml:id="com233">
+      <p>N&#x00E5;r guderne spiste gudinden <rs type="myth" key="myth41">Idunnas</rs> &#x00E6;bler, opn&#x00E5;ede de evig ungdom.</p>
+   </note>
+
+   <note xml:id="com245">
+      <p>dvs. <rs type="myth" key="myth48">Loke</rs>.</p>
+   </note>
+
+   <note xml:id="com246">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com250">
+      <p>Overs&#x00E6;ttelsen af <hi rend="italic">
+<ref type="docIn" target="#com609">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</ref>
+</hi> er fra den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> strofe 19 (1 1787, ligeledes strofe 19 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com251">
+      <p>I et senere (1808?) manuskript (Det kongelige Bibliotek, fasc. 264.1, blad 2 verso) identificerer Grundtvig dog <rs type="myth" key="myth4">Angrboda</rs> med v&#x00F8;lven <rs type="myth" key="myth27">Gullveig</rs>, fordi &#x201C;Asal&#x00E6;ren [&#x2026;] vinder mere Konsekvens&#x201D;.</p>
+   </note>
+
+   <note xml:id="com253">
+      <p>Her er tale om strofe 37 af <ref type="docIn" target="#com608">
+<hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>
+</ref> i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions</rs> udgave (1 1787, <ref type="docOut" target="1807_65_intro.xml#docIn13">se ogs&#x00E5; indledningen, afsnittet om <hi rend="italic">S&#x00E6;munds Edda</hi>
+</ref>), (strofe 41 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>r, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com255">
+      <p>
+<persName key="pe1">Bertel Sandvig</persName> har oversat gudedigtene fra det v&#x00E6;rk, som samtiden kaldte <hi rend="italic">S&#x00E6;munds Edda,</hi> under titlen: <rs type="title" key="title28">
+<hi rend="italic">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda,</hi>
+</rs> f&#x00F8;rste h&#x00E6;fte 1783; <ref type="docOut" target="1807_65_intro.xml#docIn15">se ogs&#x00E5; indledningen, afsnittet om Sandvig</ref>.</p>
+   </note>
+
+   <note xml:id="com256">
+      <p>fra strofe 19 af <hi rend="italic">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</hi> i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787), hvor der dog st&#x00E5;r &#x201C;fiorgvall&#x201D;, ikke &#x201C;fj&#x00F8;rgvali&#x201D;. Nyere overs&#x00E6;ttelser er meget uenige. <rs type="title" key="title232">H.G. M&#x00F8;ller 1870</rs>: &#x201C;Ej v&#x00E9;d Loft, / at legen blir ham h&#x00E5;rd; / ham hade alle Guder&#x201D;. <rs type="title" key="title18">Karl Gjellerup 1895</rs>: &#x201C;<rs type="myth" key="myth48">Loke</rs> jo veed hvor lystig han er, / og hvor ham Alle elske&#x201D;. <rs type="title" key="title69">Olaf Hansen 1911</rs>: &#x201C;<rs type="myth" key="myth48.c">Lopt</rs> ved ikke, / det er ude med ham, / Alt levende vil ham til Livs&#x201D;; Martin Larsen 1943: &#x201C;det er kun lystig Snak, / dig vil ingen ondt&#x201D;. Han anf&#x00F8;rer dog, at linjerne er forvanskede og overs&#x00E6;ttelsen derfor usikker (Larsen 1943, s. 235). <!-- HAR VI MULIGHED FOR ENDNU NYERE HER? -->
+</p>
+   </note>
+
+   <note xml:id="com257">
+      <p>velbegrundet formodning om en bestemt l&#x00E6;sem&#x00E5;de af et forvansket tekststed.</p>
+   </note>
+
+   <note xml:id="com259">
+      <p>
+<rs type="myth" key="myth48">Loke</rs> er overalt i den nordiske mytologi en skikkelse, der b&#x00E5;de skaber og bagefter l&#x00F8;ser problemer for guderne. Hans fald forberedes if&#x00F8;lge Grundtvig ved, at nornerne planter misteltenen, som han senere kan anvende til at sl&#x00E5; <rs type="myth" key="myth6">Balder</rs> ihjel med (se s. 172 i &#x201C;Om Asal&#x00E6;ren&#x201D;). Ved <rs type="myth" key="myth104">Ragnarok</rs> er <rs type="myth" key="myth48">Loke</rs> fulds&#x00E6;ndig g&#x00E5;et over p&#x00E5; <rs type="myth" key="myth111">j&#x00E6;tte</rs>rnes side, hvilket er en opfyldelse af den sk&#x00E6;bne, som <rs type="myth" key="myth112">nornene</rs> har bestemt for ham.</p>
+   </note>
+
+   <note xml:id="com265">
+      <p>Nyere overs&#x00E6;ttelser af <hi rend="italic">Hyndlulj&#x00F3;&#x00F0;</hi> (da. <ref type="docIn" target="#com608">
+<hi rend="italic">Hyndlas sang</hi>
+</ref>) har: &#x201C;med led Kvinde / blev Lopt svanger&#x201D; (strofe 41 i nyere <rs type="title" key="title71">overs&#x00E6;ttelse, fx Martin Larsens 1943</rs>). I den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) er <rs type="myth" key="myth48">Loke</rs> p&#x00E5; dette sted karakteriseret som: &#x201C;kyndvgr&#x201D;, dvs. kl&#x00F8;gtig, gerne ved hj&#x00E6;lp af snuhed eller troldom.</p>
+   </note>
+
+   <note xml:id="com267">
+      <p>nemlig <rs type="myth" key="myth111">j&#x00E6;tterne</rs>.</p>
+   </note>
+
+   <note xml:id="com272">
+      <p>
+<rs type="myth" key="myth6">Balders</rs> d&#x00F8;d er et af varslerne om <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com277">
+      <p>Overs&#x00E6;ttelsen her af <ref type="docIn" target="#com610">
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</hi>
+</ref> er af strofe 14 og 15 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787), men Grundtvigs gendigtning er n&#x00E6;sten ordret efter <rs type="title" key="title28">Sandvigs overs&#x00E6;ttelse</rs> 1783.</p>
+   </note>
+
+   <note xml:id="com278">
+      <p>
+<rs type="myth" key="myth6">Balders</rs> d&#x00F8;d varsler ligefrem <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com281">
+      <p>Overs&#x00E6;ttelsen er af strofe 8 i <ref type="docIn" target="#com610">
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>,</hi>
+</ref> temmelig frit
+               efter strofe 8 i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse</rs>; <ref type="docOut" target="1807_65_intro.xml#docIn15">se indledningen, afsnittet om Sandvig</ref>. I <rs type="title" key="title28">prosaovers&#x00E6;ttelsen</rs> til stedet (<rs type="title" key="title28">Sandvig
+                  1783</rs>, s. 178) kalder <persName key="pe1">Sandvig</persName> blot guderne for
+               &#x201C;stridbare&#x201D;. Begrebet g&#x00E5;r p&#x00E5; de guder, der
+               overv&#x00E6;rede <rs type="myth" key="myth6">Balders</rs> b&#x00E5;lf&#x00E6;rd;
+               if&#x00F8;lge <rs type="title" key="title23">
+<rs type="title" key="title5">Suhm</rs> (1771)</rs> er de: <rs type="myth" key="myth59">Odin</rs> med ravne, <rs type="myth" key="myth133">Frigg</rs>, <rs type="myth" key="myth117">valkyrierne</rs>,  <rs type="myth" key="myth18">Frej</rs>, <rs type="myth" key="myth19">Freja</rs>, <rs type="myth" key="myth32">Heimdal</rs> og <rs type="myth" key="myth74">Thor</rs>. Dertil en m&#x00E6;ngde <rs type="myth" key="myth125">bjergriser</rs> og <rs type="myth" key="myth114">rimturser</rs>. Den
+                  <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave (1 1787)</rs> har
+               &#x201C;Si&#x00E1; Sigtivar&#x201D;, som den overs&#x00E6;tter til &#x201C;Dii
+               bellicosi&#x201D;, dvs. stridbare eller krigeriske guder.</p>
+   </note>
+
+   <note xml:id="com283">
+      <p>
+<rs type="myth" key="myth33">Hels</rs> bolig, dvs. d&#x00F8;dsriget i nordisk mytologi.</p>
+   </note>
+
+   <note xml:id="com287">
+      <p>dvs. <rs type="myth" key="myth32">Heimdal</rs>. <rs type="title" key="title23">
+<persName key="pe7">Suhm</persName>
+</rs> skriver: &#x201C;Heimdallur kaldtes den hvide As&#x201D; (<rs type="title" key="title23">1771</rs>, s. 206).</p>
+   </note>
+
+<note xml:id="com290">
+<p>efter ty. sinnlos, det at v&#x00E6;re fra forstanden. Grundtvig har kunnet l&#x00E6;se udtrykket i Sandvigs eddaovers&#x00E6;ttelse (Sandvig 1783, s. 33).
+</p>
+</note>
+   
+   
+   <note xml:id="com288">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com292">
+      <p>Tidligere (<rs type="title" key="title2">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs> s. 171) har Grundtvig ladet <rs type="myth" key="myth48">Loke</rs> (Klogskaben) blive til list, da han blev skilt fra &#x201C;Kraften&#x201D;, dvs. <rs type="myth" key="myth106">aser</rs>ne, i s&#x00E6;rdeleshed <rs type="myth" key="myth59">Odin</rs>, se ogs&#x00E5; indledningen, afsnittet om <ref type="docOut" target="1807_65_intro.xml#docIn11">afsnittet om Grundtvigs Verdenssyn</ref>.</p>
+   </note>
+
+   <note xml:id="com299">
+      <p>her: <rs type="myth" key="myth59">Odin</rs> og hans allierede, dvs. <rs type="myth" key="myth18">Frej</rs>, <rs type="myth" key="myth74">Thor</rs> og <rs type="myth" key="myth73">Tyr</rs>.</p>
+   </note>
+
+   <note xml:id="com300">
+      <p>her: <rs type="myth" key="myth48">Loke</rs> og hans allierede, dvs. <rs type="myth" key="myth14">Fenris</rs>, <rs type="myth" key="myth75">Trym</rs> (og <rs type="myth" key="myth24">Gerd</rs>).</p>
+   </note>
+
+   <note xml:id="com310">
+      <p>
+<rs type="myth" key="myth59">Odin</rs> drak <rs type="myth" key="myth72">Suttungs</rs> mj&#x00F8;d for at tage den med sig til <rs type="myth" key="myth87">Asg&#x00E5;rd</rs>. Der hentydes til dette i eddadigtet 
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+ (da. <hi rend="italic">Den h&#x00F8;jes tale</hi>), strofe 105-11 i Den Arnamagn&#x00E6;anske Kommissions udgave (1 1787).</p>
+   </note>
+
+   <note xml:id="com312">
+      <p>Med <rs type="myth" key="myth4">Angrbode</rs> har <rs type="myth" key="myth48">Loke</rs> b&#x00F8;rnene <rs type="myth" key="myth14">Fenrisulven</rs>, <rs type="myth" key="myth105">Midg&#x00E5;rdsormen</rs> og <rs type="myth" key="myth33">Hel</rs>; med <rs type="myth" key="myth126">Sigyn</rs> b&#x00F8;rnene <rs type="myth" key="myth269">Vale</rs> og <rs type="myth" key="myth127">Narfe</rs>.</p>
+   </note>
+
+   <note xml:id="com313">
+      <p>I denne sammenh&#x00E6;ng m&#x00E5; det n&#x00E6;rmest v&#x00E6;re de vise norner, der sigtes til.</p>
+      <note type="readMore">
+<p>Ud fra Grundtvigs fra Steffens overtagne historiesyn (<ref type="docOut" target="1807_65_intro.xml#docIn10">se indledningen, afsnittet om Grundtvigs historiefilosofiske baggrund</ref>) kan man ogs&#x00E5; forestille sig, at det er en id&#x00E9; om en bagvedliggende verdensorden, han har i tankerne.</p> </note>
+   </note>
+
+   <note xml:id="com314">
+      <p>her n&#x00E6;rmest: <rs type="myth" key="myth106">aserne</rs>.</p>
+   </note>
+
+   <note xml:id="com315">
+      <p>her n&#x00E6;rmest: <rs type="myth" key="myth111">j&#x00E6;tterne</rs>.</p>
+   </note>
+
+   <note xml:id="com319">
+      <p>Hanen <rs type="myth" key="myth28">Gyldenkam</rs>, der v&#x00E6;kker <rs type="myth" key="myth101">Valhals</rs> krigere til <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com320">
+      <p>dvs. <rs type="myth" key="myth59">Odin</rs>.</p>
+   </note>
+
+   <note xml:id="com322">
+      <p>
+<rs type="myth" key="myth33">Hels</rs> bolig, dvs. d&#x00F8;dsriget.</p>
+   </note>
+
+   <note xml:id="com326">
+      <p>P&#x00E5; et tidligt tidspunkt i de nordiske guders historie halshugger <rs type="myth" key="myth118">vanerne</rs> <rs type="myth" key="myth50">Mimer</rs> og sender hans hoved til <rs type="myth" key="myth106">aserne</rs>.</p>
+   </note>
+
+   <note xml:id="com327">
+      <p>dvs. <rs type="myth" key="myth103">Yggdrasil</rs>.</p>
+   </note>
+
+   <note xml:id="com328">
+      <p>Enten <rs type="myth" key="myth14">Fenrisulven</rs> eller den l&#x00E6;nkede <rs type="myth" key="myth48">Loke</rs>, der bliver sluppet l&#x00F8;s ved <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+
+<!--    <note xml:id="com331">
+      <p>med kraft s&#x00E5; st&#x00E6;rk som j&#x00E6;tternes.</p>
+   </note> -->
+
+
+   <note xml:id="com333">
+      <p>I den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, strofe 44) st&#x00E5;r: &#x2018;Ki&#x00F6;ll&#x2019;, dvs. fart&#x00F8;j.</p>
+   </note>
+
+   <note xml:id="com340">
+      <p>Citatet stammer fra <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>. Grundtvig anvender her uddrag af stroferne 39, 40 og 62 (trykfejl for 42), 44, 45, 62 (stadig trykfejl for 42) i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave (bind 1 1787)</rs>. I <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs>, fx Meulengracht S&#x00F8;rensens 2001, er det strofe 43, 44, 46, 47, 50, 51 og 46.</p>
+   </note>
+
+   <note xml:id="com341">
+      <p>I den nordiske mytologi, f&#x00F8;rst og fremmest i eddadigtet <ref type="docIn" target="#com614">
+<hi rend="italic">V&#x00F8;lvens Sp&#x00E5;dom,</hi>
+</ref> er der forestillinger om, at verden, n&#x00E5;r den genopst&#x00E5;r efter <rs type="myth" key="myth104">Ragnarok</rs>, vil v&#x00E6;re s&#x00E5; paradisisk, at mennesket end ikke beh&#x00F8;ver at s&#x00E5; for at f&#x00E5; afgr&#x00F8;der.</p>
+   </note>
+
+   <note xml:id="com342">
+      <p>nemlig <rs type="myth" key="myth57">Nidhug</rs>, der dukker op ved <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com344">
+      <p>Egentlig er der i <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref> kun &#x00E9;n drage, <rs type="myth" key="myth57">Nidhug</rs>, men Grundtvig s&#x00E6;tter den i flertal.</p>
+   </note>
+
+   <note xml:id="com346">
+      <p>Heller ikke i moderne forskning er der enighed om, hvem der sigtes til. Muligvis er her tale om kristen indflydelse, s&#x00E5; det simpelthen peger frem mod Kristi genkomst.</p>
+   </note>
+
+   <note xml:id="com348">
+      <p>
+<ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>, strofe 52, 55, 59, 58 og 57 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 1 1787, svarende til strofe 59, 62, 66, 65 og 64 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs>, fx Meulengracht S&#x00F8;rensens 2001).</p>
+   </note>
+
+   <note xml:id="com349">
+      <p>gudernes hal efter at verden er genopst&#x00E5;et efter <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com351">
+      <p>I <rs type="title" key="title2">&#x201C;Om Asal&#x00E6;ren&#x201D;</rs> almindeligvis <rs type="myth" key="myth59">Odin</rs>, men her snarere guderne i almindelighed.</p>
+   </note>
+
+   <note xml:id="com353">
+      <p>P&#x00E5; Grundtvigs tid gjaldt stadig en fejlfortolkning af ordet &#x2018;ragna r&#x00F6;kr&#x2019; fra <hi rend="italic">
+<rs key="title122" type="title">Snorres Edda</rs>.</hi> Det blev l&#x00E6;st som <rs type="myth" key="myth104">Ragnarok</rs> (da. gudernes dunkelhed, jf. det ty. G&#x00F6;tterd&#x00E4;mmerung). Grundtvig taler derfor her om &#x2018;<rs type="myth" key="myth106">aser</rs>nes tusm&#x00F8;rke&#x2019;. I dag anses &#x2018;Ragnar&#x00F6;k&#x2019;, &#x2018;gudernes sk&#x00E6;bne&#x2019; for den korrekte tolkning.</p>
+   </note>
+
+   <note xml:id="com354">
+      <p>fordi guderne ikke er guder p&#x00E5; samme m&#x00E5;de, som de var det f&#x00F8;r <rs type="myth" key="myth104">Ragnarok</rs>? Passagen rummer ogs&#x00E5; en allusion til det steffenske historiesyn, <ref type="docOut" target="1807_65_intro.xml#docIn10">se indledningen, afsnittet om Grundtvigs historiefilosofiske baggrund</ref>.</p>
+   </note>
+
+   <note xml:id="com358">
+      <p>
+<ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>, strofe 58 og 57 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (bind 1 1787, svarende til strofe 65 og 64 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs> fx Meulengracht S&#x00F8;rensens 2001).</p>
+   </note>
+
+   <note xml:id="com359">
+      <p>I den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, strofe 53, st&#x00E5;r &#x201C;mold&#x00FE;invr&#x201D; (da. muldtov)). En <rs type="title" key="title68">nyere udgave</rs> med overs&#x00E6;ttelse (<persName key="pe44">Meulengracht S&#x00F8;rensens</persName> 2001, strofe 60) har &#x2018;moldpinur&#x2019; [formentlig trykfejl] og overs&#x00E6;tter blot med <rs type="myth" key="myth105">Midg&#x00E5;rdsormen</rs>.</p>
+   </note>
+
+   <note xml:id="com360">
+      <p>Fimbultyr er et andet navn for <rs type="myth" key="myth59">Odin</rs>. Generelt er <rs type="myth" key="myth59">Odin</rs> og runekendskab er t&#x00E6;t knyttet sammen i den nordiske mytologi, fx i eddadigtet 
+<hi rend="italic">H&#x00E1;vam&#x00E1;l</hi>
+ (da. <hi rend="italic">
+<rs type="title" key="title145">Den h&#x00F8;jes Tale</rs>
+</hi>).</p>
+   </note>
+
+   <note xml:id="com361">
+      <p>De <rs type="myth" key="myth154">tavler</rs>, som guderne igen kan spille br&#x00E6;tspil p&#x00E5; efter <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com362">
+      <p>
+<rs type="myth" key="myth59">Odin</rs>.</p>
+      <note type="readMore">
+<p>Forstander kan v&#x00E6;re en overs&#x00E6;ttelse af de latinske rector.</p>
+</note>
+   </note>
+
+   <note xml:id="com363">
+      <p>
+<rs key="myth59.f" type="myth">Fj&#x00F8;lner</rs> er et andet navn for <rs type="myth" key="myth59">Odin</rs>. Han er fader til bl.a. <rs type="myth" key="myth74">Thor</rs>, <rs type="myth" key="myth6">Balder</rs> og <rs type="myth" key="myth128">H&#x00F8;der</rs>. Flere regner ogs&#x00E5; <rs type="myth" key="myth129">Herm&#x00F3;&#x00F0;ur</rs>, <rs type="myth" key="myth81">Vi&#x00F0;ar</rs>, <rs type="myth" key="myth8">Brage</rs> og <rs type="myth" key="myth79">Vale</rs> med blandt <rs type="myth" key="myth59">Odins</rs> b&#x00F8;rn.</p>
+   </note>
+
+   <note xml:id="com366">
+      <p>norr&#x00F8;nisme, hentet i <persName key="pe1">Sandvigs</persName> <rs type="title" key="title28">fordanskning</rs> af <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref> (1783, strofe 55). Der hentydes til, at <rs type="myth" key="myth14">Fenrisulven</rs> slippes l&#x00F8;s ved <rs type="myth" key="myth104">Ragnarok</rs>.</p>
+   </note>
+
+   <note xml:id="com367">
+      <p>
+<rs type="myth" key="myth48">Loke</rs> identificeres af Grundtvig med klogskab; se ogs&#x00E5; <ref type="docOut" target="1807_65_intro.xml#docIn11">indledningen, afsnittet om Grundvigs verdenssyn</ref>.</p>
+   </note>
+
+   <note xml:id="com368">
+      <p>Grundtvig adjektiviske udvidelse af en kenning for kamp (en kenning er et fast (poetisk) udtryk i den nordiske skjaldekunst).</p>
+   </note>
+
+ <!--   <note xml:id="com369">
+      <p>m&#x00E5;ske en kenning, dvs. fast (poetisk) udtryk fra den nordiske skjaldekunst. Det er dog uvist, hvad der hentydes til. [I VAP&#x0027;s &#x00F8;jne ser det Saxoagtigt ud. Eller blot prim&#x00E6;r dunkelhed eller fast udtryk, som kan lades ukommenteret?.&#x005D; </p>
+      </note> -->
+
+   <note xml:id="com370">
+      <p>d&#x00E6;knavn for <rs type="myth" key="myth59">Odin</rs> i eddadigtet <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi> (da. <hi rend="italic">Vaftrudners Sang</hi>).</p>
+   </note>
+
+   <note xml:id="com371">
+    <p>Strofen er hentet fra digtet <ref type="docIn" target="#com613">
+<hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi>), strofe 44 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svaremde til strofe 44 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+   
+   <note xml:id="com372">
+      <p>
+<ref type="docIn" target="#com613">
+<hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi>), strofe 44 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 44 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+   
+
+      <note xml:id="com374">
+         <p>Strofe 53-54 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave (bind 3 1828)</rs> af <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>, svarende til strofe 60-61 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs> (fx Meulengracht S&#x00F8;rensens 2001).</p>
+   </note>
+
+  
+   <!--   <note xml:id="com378">
+      <p>Begtrup g&#x00E5;r ud fra, at der er tale om en trykfejl og retter til &#x201C;De til Mad&#x201D;, hvilket har hjemmel ud fra det oldislandske &#x2018;&#x00FE;
+
+av&#x2019; (&#x00FE;
+
+au, plu. neutr). Grundtvigs &#x2018;da&#x2019; giver dog god mening, hvis ordet opfattes tempor&#x00E6;rt. </p>
+</note>-->
+
+   
+   <note xml:id="com380">
+      <p>Her mener Grundtvig l&#x00E6;ren om <rs type="myth" key="myth106">aser</rs>ne i al almindelighed, ikke specielt hans eget v&#x00E6;rk.</p>
+   </note>
+
+   <note xml:id="com382">
+      <p>Her personificerer Grundtvig &#x2018;<rs type="title" key="title121">
+<hi rend="italic">Edda</hi>
+</rs>&#x2019;, der egentlig er en samling af tekster fra den nordiske oldtid.</p>
+   </note>
+
+<!--    <note xml:id="com383">
+      <p>se indledningen. Men mener Grundtvig her n&#x00E6;rv&#x00E6;rende skrift eller i al almindelighed?.</p>
+   </note> -->
+
+   <note xml:id="com384">
+      <p>her i bet. den gr&#x00E6;ske mytologi.</p>
+   </note>
+
+   <note xml:id="com385">
+      <p>Under <rs type="myth" key="myth130">Fimbulvinteren</rs> gemte <rs type="myth" key="myth45">Liv</rs> og <rs type="myth" key="myth46">Livtraser</rs> sig hos  <rs type="myth" key="myth36">Hoddm&#x00ED;mer</rs>. Hvis man regner med, at  <rs type="myth" key="myth36">Hoddm&#x00ED;mer</rs> er identisk med eller knyttet til den  <rs type="myth" key="myth50">Mimer</rs>, der ejer visdommens kilde ved <rs type="myth" key="myth103">Yggdrasils</rs> fod, giver Grundtvigs note god mening.</p>
+   </note>
+
+   <note xml:id="com389">
+      <p>Det oldislandske ord for sol, s&#x00F3;l, er grammatisk hunk&#x00F8;n, mens ordet for m&#x00E5;ne, m&#x00E1;ni, er hank&#x00F8;n. Som det fremg&#x00E5;r, l&#x00E6;gger Grundtvig dog en langt dybere betydning end den grammatiske i f&#x00E6;nomenet, idet han fejlagtigt identificerer genus med sexus. </p>
+   </note>
+
+   <note xml:id="com390">
+      <p>tidligere gode og solide oldtidsforskere og -overs&#x00E6;ttere i Norden.</p>
+   </note>
+
+   <note xml:id="com392">
+      <p>Strofen er hentet fra digtet <hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi>), strofe 38 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 38 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com393">
+      <p>Der hentydes ikke til bestemte <rs type="myth" key="myth106">aser</rs>, men blot til, at <rs type="myth" key="myth118">vanerne</rs> flyttede ind hos <rs type="myth" key="myth106">aserne</rs>, da <rs type="myth" key="myth106">aser</rs> og <rs type="myth" key="myth118">vaner</rs> havde indg&#x00E5;et forbund (herom kan man l&#x00E6;se i <hi rend="italic">
+Ynglingesaga
+</hi>).</p>
+   </note>
+   
+ <!--  <note xml:id="com394">
+      <p>Citaterne er &#x2013; uden Grundtvigs indskud &#x2013; hentet fra digtet <hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>
+</hi>), strofe 39 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 39 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>-->
+
+   <note xml:id="com395">
+      <p>nemlig i digtet <ref type="docIn" target="#com613">
+<hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs key="title143" type="title">Vaftrudners Sang</rs>,</hi> strofe 39).</p>
+      <p>Citaterne er &#x2013; uden Grundtvigs indskud &#x2013; hentet fra digtet <hi rend="italic">Vaf&#x00FE;ru&#x00F0;nism&#x00E1;l</hi> (da. <hi rend="italic">
+         <rs key="title143" type="title">Vaftrudners Sang</rs>
+      </hi>), strofe 39 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 39 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com398">
+      <p>Strofen har nummer 16 i <ref type="docIn" target="#com604">
+<hi rend="italic">Gr&#x00ED;mnism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi>) i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 16 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com399">
+      <p>menl&#x00F8;s, efter det oldislandske meinlaus, dvs. uskyldig eller uden m&#x00E9;n eller skade, her m&#x00E5;ske en kristusallusion.</p>
+   </note>
+
+   <note xml:id="com400">
+      <p>nemlig frugtbarhedguderne <rs type="myth" key="myth18">Frej</rs> og <rs type="myth" key="myth19">Freja</rs>. Sammen med deres fader, <rs type="myth" key="myth58">Njord</rs>, h&#x00F8;rer de til <rs type="myth" key="myth118">vanerne</rs>.</p>
+   </note>
+
+   <note xml:id="com406">
+      <p>Der hentydes muligvis til, at <rs type="myth" key="myth106">aser</rs>ne havde snydt <rs type="myth" key="myth118">vaner</rs>ne, da de indgik forbund med dem (herom kan man l&#x00E6;se i 
+<hi rend="italic">Ynglingesaga</hi>
+).</p>
+   </note>
+
+   <note xml:id="com407">
+      <p>
+<rs type="myth" key="myth59">Odins</rs> aftale med <rs type="myth" key="myth19">Freja</rs>.</p>
+   </note>
+
+   <note xml:id="com408">
+      <p>
+<rs type="myth" key="myth59">Odin</rs> og <rs type="myth" key="myth19">Freja</rs> indg&#x00E5;r en aftale om at dele de krigere imellem sig, der er faldet p&#x00E5; slagmarken, valen; se ogs&#x00E5; <rs type="myth" key="myth110">einherjer</rs>.</p>
+   </note>
+
+   <note xml:id="com410">
+      <p>I <ref type="docIn" target="#com604">
+<hi rend="italic">Gr&#x00ED;mnism&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi>) svarer den forkl&#x00E6;dte <rs type="myth" key="myth59">Odin</rs> p&#x00E5; en r&#x00E6;kke sp&#x00F8;rgsm&#x00E5;l og forudser, at <rs type="myth" key="myth81">Vidar</rs> vil h&#x00E6;vne mordet p&#x00E5; faderen.</p>
+   </note>
+
+   <note xml:id="com411">
+      <p>Citatet knytter an til passagen i <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>, hvor <rs type="myth" key="myth81">Vidar</rs> under <rs type="myth" key="myth104">Ragnarok</rs> h&#x00E6;vner drabet p&#x00E5; sin fader <rs type="myth" key="myth59">Odin</rs> (strofe 56 i <rs type="title" key="title28">
+<persName key="pe1">
+<rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelses</rs>
+</persName> overs&#x00E6;ttelse (1783)</rs> og i <rs type="title" key="title68">nyere udgaver, fx Meulengracht S&#x00F8;rensens (2001)</rs>).</p>
+   </note>
+
+   <note xml:id="com412">
+      <p>citat fra <hi rend="italic">Gr&#x00ED;mnism&#x00E1;l</hi> (da. <hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi>), strofe 17 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 17 i <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx Martin Larsens 1943).</p>
+   </note>
+
+   <note xml:id="com413">
+      <p>Grundtvig identificerer her <rs type="myth" key="myth59">Odin</rs> med kraften. Men n&#x00E5;r <rs type="myth" key="myth59">Odin</rs> er d&#x00F8;d, tager s&#x00F8;nnen <rs type="myth" key="myth81">Vidar</rs> over, og livet og verden kan g&#x00E5; videre. </p>
+      <note type="readMore"> <p>
+<persName key="pe65">Frederik R&#x00F8;nning</persName> ser kampen mellem masse og kraft lidt anderledes, som en udl&#x00F8;ber af tysk religionsfilosofi: &#x201C;Verdensdramaet best&#x00E5;r i den m&#x00E6;gtige kamp mellem skaberen og hans skabning der vil tage sin tilv&#x00E6;relse &#x2018;for et rov&#x2019;; og det ender med, at skabningen, renset gennem sin undergang, vender tilbage til sit ophav&#x201D; (<rs type="title" key="title20">R&#x00F8;nning</rs> 2:1 1908, s. 15 f.).</p>
+</note>
+   </note>
+
+   <note xml:id="com414">
+      <p>Grundtvig till&#x00E6;gger ogs&#x00E5; <rs type="myth" key="myth48">Loke</rs> andre negative egenskaber, som fx egoisme, selvoptagethed o.lign.</p>
+   </note>
+
+     <note xml:id="com416">
+      <p>nemlig j&#x00E6;tten <rs type="myth" key="myth13">Farbaute</rs>.</p>
+   </note>
+
+   <note xml:id="com417">
+      <p>
+<rs type="myth" key="myth48">Lokes</rs> mor hedder enten <rs type="myth" key="myth44">Laufey</rs> eller <rs type="myth" key="myth44.a">N&#x00E1;l</rs> og er formentlig af j&#x00E6;ttesl&#x00E6;gt. Der hentydes her til beskrivelsen af <rs type="myth" key="myth48">Loke</rs> fra <hi rend="italic">
+<rs key="title122" type="title">Snorres Edda</rs>,</hi> 
+<hi rend="italic">Gylfaginning</hi>
+ (da. <hi rend="italic">Gylfes Forbl&#x00E6;ndelse,</hi> kapitel 32).</p>
+   </note>
+
+   <note xml:id="com419">
+      <p>Grundtvig blander her &#x2013; som det var almindeligt i samtiden &#x2013; f&#x00F8;dselsgudinderne parcerne fra romersk mytologi sammen med sk&#x00E6;bnegudinderne moirerne fra den gr&#x00E6;ske mytologi. Det er moirerne, der som de nordiske norner spinder, udm&#x00E5;ler og afklipper menneskenes sk&#x00E6;bnetr&#x00E5;de.</p>
+   </note>
+
+   <note xml:id="com420">
+      <p>Det er ikke almindeligt at skelne mellem Alfader og Herjan, der begge er tilnavne til eller andre navne for <rs type="myth" key="myth59">Odin</rs>. Men for Grundtvig, der s&#x00F8;ger at t&#x00E6;nke asatro og kristendom sammen, er denne skelnen yderst meningsfuld; se ogs&#x00E5; <ref type="docOut" target="1807_65_intro.xml#docIn9">indledningen, afsnittet om Alfaderbegrebet</ref>.</p>
+   </note>
+
+   <note xml:id="com425">
+      <p>her  <rs type="myth" key="myth68">Skuld</rs>.</p>
+   </note>
+
+<!--    <note xml:id="com426">
+      <p>Digtudsnittet er optrykt i PS 1 1-5, begyndende &#x201C;Jeg vilde l&#x00E6;se / Fimbultyrs gamle &#x2026;&#x201D;.</p>
+   </note> -->
+
+   <note xml:id="com427">
+      <p>Her bev&#x00E6;ger Grundtvig sig v&#x00E6;k fra det mere eller mindre gendigtende og begynder p&#x00E5; sin vision, understreget ved ordet &#x2018;jeg&#x2019;. Han k&#x00E6;der to strofer sammen til &#x00E9;n mening, idet han lader runerne fra strofe 61 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs> (fx Meulengracht S&#x00F8;rensens 2001) st&#x00E5; p&#x00E5; tavlerne fra strofe 62.  Tavler er en udm&#x00E6;rket overs&#x00E6;ttelse af oldislandsk &#x2018;t&#x01EB;flor&#x2019;, men nyere overs&#x00E6;ttelser foretr&#x00E6;kker &#x2018;br&#x00E6;tspil&#x2019;, hvorved Grundtvigs pointe g&#x00E5;r fl&#x00F8;jten.</p>
+   </note>
+
+   <note xml:id="com429">
+      <p>Den citerede strofe fra <ref type="docIn" target="#com602">
+<hi rend="italic">
+<rs key="title132" type="title">Fj&#x00F8;lsvidkvadet</rs>
+</hi>
+</ref> er en meget fri gendigtning af strofe 18 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 20 i <rs type="title" key="title68">nyere overs&#x00E6;ttelse</rs>, fx <rs type="title" key="title68">Meulengracht S&#x00F8;rensens 2001</rs>).</p>
+   </note>
+   
+   <note xml:id="com430">
+<p>dvs. <ref type="docIn" target="#com614">
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi>
+</ref>. Citatet ser dog i h&#x00F8;jere grad ud til at stamme fra <ref type="docIn" target="#com602">
+<hi rend="italic">
+<rs key="title132" type="title">Fj&#x00F8;lsvidkvadet</rs>
+</hi>
+</ref>.</p>
+</note>
+
+   <note xml:id="com432">
+      <p>nemlig i <ref type="docIn" target="#com604">
+<hi rend="italic">Gr&#x00ED;mnism&#x00E1;l</hi>
+</ref> <ref type="docIn" target="#com604">(da. <hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi>
+</ref>). I stofe 7 i Den Arnamagn&#x00E6;anske Kommissions udgave (1 1787, svarende til strofe 7 i nyere overs&#x00E6;ttelse, fx Martin Larsen 1943) drikker Odin med Saga.<!-- I noten kan udfoldes om Grundtvigs forhold til Saga, se bl.a. Ebbe Kl&#x00F8;vedal Reich, s. 118-119; FLN H.O. s. 209 - --> </p>
+   </note>
+   
+   <note xml:id="com433">
+      <p>dvs. (mad)retten.</p>
+</note>
+   
+   <note xml:id="com434">
+      <p>en slags overs&#x00E6;ttelsesl&#x00E5;n fra ty. &#x2018;hochgebietend&#x2019;, selvsikker, fordringsfuld.</p>
+   </note>
+
+   <note xml:id="com435">
+      <p>efter sammenh&#x00E6;ngen en slags kenning (dvs. et fast (poetisk) udtryk fra den nordiske skjaldekunst) for <rs type="myth" key="myth109">dv&#x00E6;rgene</rs>. Kenningen er Grundtvigs egen.</p>
+   </note>
+
+   <note xml:id="com436">
+      <p>et andet navn for <rs type="myth" key="myth28">Gyldenkam</rs>.</p>
+   </note>
+
+   <note xml:id="com437">
+      <p>
+<rs type="myth" key="myth103.a">Mimamej</rs> er i <ref type="docIn" target="#com602">
+<hi rend="italic">Fj&#x00F8;lsvinns M&#x00E1;l</hi>
+</ref> (da. <hi rend="italic">
+<ref type="docIn" target="#com602">
+<rs key="title132" type="title">Fj&#x00F8;lsvidkvadet</rs>
+</ref>
+</hi>) et tr&#x00E6;, der bevogtes af hundene <rs type="myth" key="myth17.a">G&#x00ED;fr</rs> og <rs type="myth" key="myth23">Gere</rs>.</p>
+   </note>
+
+   <note xml:id="com438">
+      <p>
+<rs type="myth" key="myth17.a">Gifr</rs> og <rs type="myth" key="myth23">Gere</rs> er i <ref type="docIn" target="#com602">
+<hi rend="italic">Fj&#x00F8;lsvinns M&#x00E1;l</hi>
+</ref> (da. <ref type="docIn" target="#com602">
+<hi rend="italic">
+<rs key="title132" type="title">Fj&#x00F8;lsvidkvadet</rs>
+</hi>
+</ref>) de to hunde, der vogter det sted, hvor tr&#x00E6;et <rs type="myth" key="myth103.a">Mimameid</rs> gror.</p>
+   </note>
+
+   <note xml:id="com440">
+      <p>forvarsel, tegn eller under.</p>
+   </note>
+
+   <note xml:id="com441">
+      <p>&#x2018;J&#x00E6;rtegn&#x2019; betyder (overnaturlig) h&#x00E6;ndelse, der opfattes som tegn p&#x00E5;, at noget vil ske. Hvis meningen med hele denne sidste del af afhandlingen er at fremmane den vision, som Grundtvig har, kan j&#x00E6;rtegnet betyde p&#x00E5;, at Grundtvig faktisk f&#x00E5;r fremstillet sine syner og tanker.</p>
+   </note>
+
+  <!--  <note xml:id="com442">
+      <p>Med undtagelse af s. 186, lin. 7-14, blev digtafsnittet  &#x2013; med prosaindskud &#x2013; optaget i <rs type="title" key="title76"><hi rend="italic">Nordens Mytologi</hi></rs> 1808, s. 146-149. .</p>
+      </note> -->
+   
+   <note xml:id="com443">
+      <p>her: livagtig (men netop ikke virkelig og derfor skuffende).</p>
+   </note>
+   
+   <note xml:id="com444">
+      <p>her: sv&#x00E6;re at tyde.</p>
+   </note>
+   
+
+   <note xml:id="com448">
+      <p>Grundtvig havde i december 1806 planer om at gendigte sagnet om Sigurd og Brynhilde (<rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 399 ff.). Stoffet har Grundtvig dog kendt siden 1801, hvor han l&#x00E6;ste <rs key="title321" type="title">Suhms Danmarkshistorie</rs> (Suhm 1782). </p>
+   </note>
+
+   <note xml:id="com450">
+      <p>
+<rs type="myth" key="myth65">Sigurd Fafnersbanes</rs> sl&#x00E6;gt, dvs. <rs type="myth" key="myth119">v&#x00F8;lsungerne</rs>, en sagnkongesl&#x00E6;gt.</p>
+   </note>
+
+   <note xml:id="com451">
+      <p>
+<rs type="myth" key="myth118">Vaner</rs>ne anses normalt ikke som vise, men s&#x00E5; l&#x00E6;nge de havde den vise <rs type="myth" key="myth50">Mimer</rs> hos sig, havde de mulighed for at r&#x00E5;dsp&#x00F8;rge ham. I <rs type="title" key="title23">
+<persName key="pe7">Suhms</persName>
+</rs> v&#x00E6;rk om <rs type="myth" key="myth59">Odin</rs> lyder det: &#x201C;Naar betragtes, at de [<rs type="myth" key="myth118">Vaner</rs>ne] udi Brynhilldes Qv&#x00E6;de [...] kaldes de Viise, [ &#x2026; ]&#x201D; (<rs type="title" key="title23">1771</rs>, s. 99). M&#x00E5;ske er det derfra, Grundtvig har sin formulering. Generelt er Grundtvig ogs&#x00E5; glad for bogstavrim.</p>
+   </note>
+
+   <note xml:id="com452">
+      <p>en henvisning til <ref type="docIn" target="#com603">
+<hi rend="italic">Sk&#x00ED;rnis M&#x00E1;l</hi>
+</ref> (da. <ref type="docIn" target="#com603">
+<hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>
+</ref>), hvori vanen <rs type="myth" key="myth18">Frej</rs> har forelsket sig i j&#x00E6;ttedatteren <rs type="myth" key="myth24">Gerd</rs>.</p>
+   </note>
+
+   <note xml:id="com453">
+      <p>nemlig <ref type="docIn" target="#com608">
+<hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi>
+</ref>. Grundtvig parafraserer her strofe 9 i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787, svarende til strofe 10 <rs type="title" key="title71">nyere overs&#x00E6;ttelse</rs>, fx <rs type="title" key="title71">Martin Larsens 1943</rs>).</p>
+   </note>
+
+   <note xml:id="com454">
+      <p>nemlig <rs type="myth" key="myth65">Sigurd Fafnersbane</rs>.</p>
+   </note>
+
+   <note xml:id="com456">
+      <p>En nabob er egentlig en statholder i Indien, men bruges gerne om en meget rig mand, der har erhvervet sine rigdomme i et fjernt land, gerne ved at udpine sine omgivelser. Grundtvig bruger dog udtrykket for at sige, at hans samtid lige s&#x00E5; lidt kender navnene p&#x00E5; naboberne som p&#x00E5; volsungerne.</p>
+   </note>
+
+   <note xml:id="com457">
+      <p>svundne &#x00E5;rhundreder.</p>
+   </note>
+
+   <note xml:id="com461">
+      <p>I <ref type="docIn" target="#com603">
+<hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi>
+</ref> hj&#x00E6;lper <rs type="myth" key="myth18">Frejs</rs> tjener, <rs type="myth" key="myth66">Skirner</rs>, sin herre med at f&#x00E5; fat i den undersk&#x00F8;nne j&#x00E6;ttedatter <rs type="myth" key="myth24">Gerd</rs>, som <rs type="myth" key="myth18">Frej</rs> har forelsket sig i.</p>
+   </note>
+
+   <note xml:id="com462">
+      <p>Denne opfattelse kan Grundtvig have fra <rs type="title" key="title23">
+<persName key="pe7">Suhms</persName>
+</rs> bog om <rs type="myth" key="myth59">Odin</rs> &#x201C;Naar betragtes, at de udi <rs type="myth" key="myth9">Brynhilldes</rs> Qv&#x00E6;de [...] kaldes de Viise, saa bliver vel Schi&#x00F6;nnings Meening den rimeligste, at de have v&#x00E6;ret Gr&#x00E6;ker, som boede ved Tanais [dvs. floden Don i Rusland]&#x201D; (<rs type="title" key="title23">Suhm 1771</rs>, s. 99).</p>
+   </note>
+
+<!--    <note xml:id="com466">
+      <p>Ordet &#x2018;ane&#x2019; er et af romantikernes yndlingsord. Det kan ses som en mods&#x00E6;tning til oplysningstidens &#x2018;vide&#x2019;.</p>
+   </note> -->
+
+   <note xml:id="com467">
+      <p>Den f&#x00F8;lgende tekst er den s&#x00E5;kaldte &#x2018;tale til hesten&#x2019; fra eddadigtet <hi rend="italic">Sk&#x00ED;rnis  M&#x00E1;l</hi> (da. <ref type="docIn" target="#com603">
+<hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>,</hi>
+</ref>) strofe 10. Hesten, der kunne ride gennem flammehegn, skulle f&#x00F8;re Skirner til j&#x00E6;ttedatteren Gerd. skulle Overs&#x00E6;ttelsen her er n&#x00E6;sten identisk med den <rs type="title" key="title72">delovers&#x00E6;ttelse</rs>, som Grundtvig udarbejdede allerede 1806 og offentliggjorde i tidsskriftet <hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>
+</hi>s septembernummer (strofen her st&#x00E5;r p&#x00E5; s. 285).</p>
+   </note>
+
+   <note xml:id="com469">
+      <p>nemlig <rs type="myth" key="myth111">j&#x00E6;tten</rs> <rs type="myth" key="myth29">Gymer</rs>, der er fader til den sk&#x00F8;nhed, <rs type="myth" key="myth24">Gerd</rs>, som <rs type="myth" key="myth18">Frej</rs> har forelsket sig i. <rs type="myth" key="myth18">Frej</rs> sender derfor sin tjener <rs type="myth" key="myth66">Skirner</rs> ud for at fri til <rs type="myth" key="myth24">Gerd</rs>.</p>
+   </note>
+
+
+   <note xml:id="com471">
+      <p>Her spilles p&#x00E5; eddakvadet <hi rend="italic">H&#x00E1;rbar&#x00F0;slj&#x00F3;&#x00F0;</hi> (da. <hi rend="italic">
+<rs key="title146" type="title">Sangen om Gr&#x00E5;sk&#x00E6;g</rs>
+</hi>), hvor <rs type="myth" key="myth59">Odin</rs> forkl&#x00E6;dt som f&#x00E6;rgemand spotter <rs type="myth" key="myth74">Thor</rs> og n&#x00E6;gter ham overfart.</p>
+   </note>
+   
+   
+   <note xml:id="com601">
+      <p>
+<hi rend="italic">
+<rs key="title131" type="title">Balders Dr&#x00F8;mme</rs>
+</hi> er et af digtene fra <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>.</hi> Det g&#x00E5;r ogs&#x00E5; under navnet <hi rend="italic">Vegtams Kv&#x00E6;de</hi> og rummer en dialog mellem Odin, der har forkl&#x00E6;dt sig som Vegtam, og en d&#x00F8;d v&#x00F8;lve, han har manet op af graven. Dialogen drejer sig om udl&#x00E6;gning af Balders onde dr&#x00F8;mme og sp&#x00E5;dom om hans senere sk&#x00E6;bne. Nogle h&#x00E5;ndskrifter rummer flere strofer end andre, men mange nyere overs&#x00E6;ttelser foretr&#x00E6;kker den kortere form, hvorfor det ikke er altid, at de bringer alle de strofer, som er med i Den Arnamagn&#x00E6;anske Kommissions udgave (1 1787).</p>
+      <note type="readMore">
+         <p>kvi&#x00F0;a betyder: digt eller kvide, bekymring; kv&#x00E6;&#x00F0;i betyder: digt.</p> 
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>.</p>
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Baldrs Draumar; Vegtamskvadet; Vegtams Kvida; Vegtams Kvide; Vegtams Qvide.</hi>
+</p>
+</note>
+     </note>
+   
+   <note xml:id="com602">
+      <p>
+<hi rend="italic">
+<rs key="title132" type="title">Fj&#x00F8;lsvidkvadet</rs>t</hi> er et af <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>
+</hi>s gudekvad. Siden <rs type="title" key="title334">
+<persName key="pe363">Sophus Bugge</persName> (1867)</rs> er det blevet regnet for en del af digtet <hi rend="italic">Svipdagsm&#x00E1;l.</hi> Kvadet fort&#x00E6;ller om Svipdags brudef&#x00E6;rd p&#x00E5; vej mod sin elskede, Mengl&#x00F8;d, efter at han i f&#x00F8;rste halvdel af kvadet har ops&#x00F8;gt sin d&#x00F8;de mor for at f&#x00E5; udleveret et tryllesprog, der kan hj&#x00E6;lpe ham p&#x00E5; f&#x00E6;rden. Det bliver ofte anset for at v&#x00E6;re en maskeret myte om s&#x00F8;skendeparrets <rs type="myth" key="myth19">Freja</rs> og <rs type="myth" key="myth18">Frejs</rs> forening.</p>
+      <note type="readMore">
+<p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>. Kvadet er kun overleveret i senere papirh&#x00E5;ndskrifter.</p> 
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Fj&#x00F6;l-svinns m&#x00E1;l; Fi&#x00F8;lsvinns M&#x00E1;l; Fiolviders Sang; Fi&#x00F6;lsvinns M&#x00E1;l; Fjalsvidkvadet; Fi&#x00F8;lsvins Mal; Fi&#x00E5;lsvins Mal; (Svipdagsm&#x00E1;l; Svipdagskvadet).</hi>
+</p>
+</note>
+   </note>
+      
+   <note xml:id="com603">
+      <p>
+<hi rend="italic">
+<rs type="title" key="title133">Skirners F&#x00E6;rd</rs>
+</hi> er et af gudedigtene i <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>.</hi> Den handler om, at <rs type="myth" key="myth18">Frej</rs> uretm&#x00E6;ssigt havde sat sig p&#x00E5; Odins s&#x00E6;de og derfra fik &#x00F8;je p&#x00E5; j&#x00E6;ttedatteren <rs type="myth" key="myth24">Gerd</rs>, som han forelskede sig i. Frej sendte Skirner afsted for p&#x00E5; Frejs vegne at fri til Gerd. Hun afviste f&#x00F8;rst b&#x00E5;de venlighed og guddommelige gaver, men lod sig til sidst true til et elskovsm&#x00F8;de med Frej.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>.</p> 
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">F&#x00F8;r Skirners; F&#x01EB;r Sk&#x00ED;rnis; Skirners Qv&#x00E6;de; Skirners Rejse; Sk&#x00ED;rnis M&#x00E1;l; Sk&#x00ED;rnism&#x00E1;l.</hi>
+</p>
+</note>
+   </note>
+   
+   <note xml:id="com604">
+      <p>I gudedigtet <hi rend="italic">
+<rs type="title" key="title134">Grimners Sang</rs>
+</hi> fra <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>
+</hi> optr&#x00E6;der Odin forkl&#x00E6;dt, mens han fremsiger et langt digt om den nordiske kosmologi og mytologi. Digtet rummer bl.a. 55 af Odins tilnavne.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p>
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Gr&#x00ED;mnism&#x00E1;l; Grimnis Mal.</hi>
+</p>
+</note>
+        </note>
+  <!-- 
+   <note xml:id="com605">
+      <p>
+<hi rend="italic">Gylfaginning</hi> er hovedafsnittet i <hi rend="italic">
+<rs key="title122" type="title">Den yngre Edda</rs>,</hi> ogs&#x00E5; kaldet <hi rend="italic">
+<rs key="title122" type="title">Snorres Edda</rs>.</hi> Kong Gylfe udsp&#x00F8;rger heri <rs type="myth" key="myth106">aser</rs>ne om gudernes historie. Tre guder, nemlig H&#x00F8;j, J&#x00E6;vnh&#x00F8;j og Tredje (alle tre Odinnavne) svarer p&#x00E5; sp&#x00F8;rgsm&#x00E5;lene.</p>
+      <note type="readMore"> 
+         <p>Digtet kendes under f&#x00F8;lgende navn: <hi rend="italic">
+<rs type="title" key="title135">Gylfes Forbl&#x00E6;ndelse</rs>.</hi>
+</p>
+</note>
+        </note>-->
+   
+   <note xml:id="com606">
+      <p>
+<hi rend="italic">
+<rs type="title" key="title136">Hammerhentningen</rs>
+</hi> er en fort&#x00E6;lling fra den nordiske mytologi, der handler om, hvordan Thor, udkl&#x00E6;dt som <rs type="myth" key="myth19">Freja</rs> i brudekjole, hentede sin hammer, <rs type="myth" key="myth52">Mj&#x00F8;lner</rs>, hos j&#x00E6;tten Udg&#x00E5;rdsloke, som havde franarret ham den. Kvadet, som beretter historien, kaldes ogs&#x00E5; <hi rend="italic"> <rs type="title" key="title136">Trymskvadet</rs>.</hi>
+</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787).</p> 
+        
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Hamarrheimt; Hamars Heimt; Hamarsheimt;  <rs type="title" key="title136">Trymskvadet</rs>; Thrymskvide; &#x00FE;rymskvi&#x00F0;a.</hi>
+</p>
+</note>
+        </note>
+   
+  <!-- <note xml:id="com607">
+      <p>
+<hi rend="italic">
+<rs type="title" key="title137">Hymers Kv&#x00E6;de</rs>
+</hi> er et eddadigt om, hvordan Thor fanger Midg&#x00E5;rdsormen ved at bruge hovedet fra Hymers sorte tyr som madding. Historien kendes ogs&#x00E5; fra <ref type="docIn" target="#com20">
+<hi rend="italic">
+<rs key="title122" type="title">Snorres Edda</rs>
+</hi>
+</ref> (<ref type="docIn" target="#com20">
+<hi rend="italic">
+<rs key="title122" type="title">Den yngre Edda</rs>
+</hi>
+</ref>).</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>.</p> 
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Hymers Digt; Hymiskvi&#x00F0;a.</hi>
+</p>
+</note>
+        </note>-->
+   
+   <note xml:id="com608">
+      <p>
+<hi rend="italic">
+<rs key="title138" type="title">Hyndlas Sang</rs>
+</hi> er et sent eddadigt, der best&#x00E5;r af en samtale mellem v&#x00F8;lven <rs type="myth" key="myth38">Hyndla</rs> og gudinden <rs type="myth" key="myth19">Freja</rs>, is&#x00E6;r om <rs type="myth" key="myth19">Frejas</rs> elsker <rs key="myth201" type="myth">Ottar</rs> og hans afstamning. Digtet indeholder bl.a. mere end 80 personnavne.</p> 
+      <p>En del af digtet, stroferne 30-45, kaldes ogs&#x00E5; &#x2018;Den korte V&#x00F8;lvens Sp&#x00E5;dom&#x2019;.</p>
+      <note type="readMore"> 
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787).</p>
+         <p>Digtet kendes under f&#x00F8;lgende navne:<hi rend="italic"> Hyndlu Lio&#x00F0;; Hyndlulj&#x00F3;&#x00F0;; Hyndlu Ljod; Sangen om Hyndla.</hi>
+</p>
+</note>
+        </note>
+   
+   <note xml:id="com609">
+      <p>I eddadigtet <hi rend="italic">
+<rs type="title" key="title139">&#x00C6;girs G&#x00E6;stebud</rs>
+</hi> eller <hi rend="italic">Lokasenna</hi> berettes historien om, hvordan Loke ved et gilde hos <rs type="myth" key="myth106">aser</rs>ne spotter guderne &#x00E9;n efter &#x00E9;n. &#x00C6;gir har brygget det &#x00F8;l, der drikkes ved gildet. Den islandske titel, <hi rend="italic">Lokasenna,</hi> kan overs&#x00E6;ttes med &#x2018;Lokes sk&#x00E6;nderi&#x2019;.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p> 
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Loka Senna; Lokasenna; Lokes Sk&#x00E6;nderi; &#x00C6;gir Drekke; &#x00C6;girs Drikkegilde; &#x00C6;gisdrekka.</hi>
+</p>
+</note>
+   </note>
+   
+   <note xml:id="com610">
+      <p>
+<hi rend="italic">
+<rs key="title140" type="title">Odins Ravnegalder</rs>
+</hi> er et digt i eddastil, ogs&#x00E5; kaldet <hi rend="italic">Forspjallslj&#x00F3;&#x00F0;</hi> (&#x2018;forspjalld&#x2019; betyder egl. indledning). I 1700-tallet regnedes det stadig for gammelt, men nyere forskning har godtgjort, at det er sent; formentlig stammer det fra ren&#x00E6;ssancen. Det er derfor heller ikke at finde i nyere overs&#x00E6;ttelser af <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>.</hi> Digtet er ogs&#x00E5; kun overleveret i senere papirh&#x00E5;ndskrifter. </p>      
+      <note type="readMore">
+         <p>I <rs type="title" key="title76">
+<hi rend="italic">Nordens Mytologi</hi>
+</rs> fra 1808 (fortalen s. 8) er Grundtvig en fortaler for digtets h&#x00F8;je alder.</p>
+         <p>         Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p>
+         <p>Digtet kendes ogs&#x00E5; under f&#x00F8;lgende navne: <hi rend="italic">Forspjallslj&#x00F3;&#x00F0;; Forspialls-M&#x00E1;l; Hrafnagaldr O&#x00FE;ins; <rs key="title140" type="title">Odins Ravnegalder</rs>.</hi>
+</p>         
+      </note>
+   </note>
+   
+  
+  <!-- <note xml:id="com612">
+      <p>
+<hi rend="italic">
+<rs key="title142" type="title">Solsangen</rs>
+</hi> er et l&#x00E6;redigt fra <hi rend="italic">
+<rs type="title" key="title121">Eddaen</rs>.</hi> Det regnes for sent, da det rummer b&#x00E5;de kristne og hedenske forestillinger. Det afspejler bl.a. kristen dyd og fromhed og indeholder skildringer af d&#x00F8;dsriget.</p>
+      <note type="readMore">
+         <p>Den er trykt i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og oversat til dansk af <rs type="title" key="title28">
+<persName key="pe1">Sandvig</persName> (1783)</rs>.</p>
+         <p>Digtet findes under f&#x00F8;lgende navne: <hi rend="italic">S&#x00F3;larli&#x00F3;&#x00F0;; S&#x00F3;lar Li&#x00F3;&#x00F0;.</hi>
+</p>
+</note>
+        </note>-->
+   
+  
+   
+   <note xml:id="com614">
+      <p>
+<hi rend="italic">
+<rs key="title144" type="title">V&#x00F8;lvens Sp&#x00E5;dom</rs>
+</hi> eller <hi rend="italic">Volusp&#x00E1;</hi> er et digt fra <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>
+</hi> (nordisk mytologi). Det findes i flere, lidt afvigende former, bl.a. i &#x2018;Codex Regius&#x2019; (slutningen af 1200-tallet), og omhandler verdens skabelse og undergang, Ragnarok. Digtet er lagt i munden p&#x00E5; en sp&#x00E5;kvinde (en v&#x00F8;lve), der beretter om sine syner om fortiden, nutiden og fremtiden.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i <persName key="pe15">Resens</persName> latin-oldislandske <rs type="title" key="title19">udgave</rs> fra 1665 og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs> samt i prosareferat i <rs type="title" key="title322">
+<persName key="pe15">Resens</persName> <hi rend="italic">Edda</hi>
+</rs> (Resen 1665). F&#x00F8;rst i 1828 udkom bind 3 af <rs key="title15" type="title">Den Arnamagn&#x00E6;anske Kommissions udgave</rs>, der indeholdt <hi rend="italic">V&#x00F8;lvens Sp&#x00E5;dom.</hi>
+</p>    
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Voluspa; Volusp&#x00E1;; V&#x00F6;lussp&#x00E1;; V&#x01EB;lusp&#x00E1;.</hi>
+</p>
+</note>     
+      </note>
+   
+  <!-- <note xml:id="com615">
+      <p>
+<hi rend="italic">Den H&#x00F8;jes tale</hi> er l&#x00E6;redigt fra <rs type="title" key="title121">
+<hi rend="italic">Den &#x00E6;ldre Edda</hi>
+</rs>. Det er lagt i munden p&#x00E5; H&#x00E1;r, den h&#x00F8;je, dvs. Odin. Det best&#x00E5;r af flere dele, bl. a. en ordsprogsdel, et afsnit om almindelig moral og livsvisdom og et afsnit om, hvordan Odin opn&#x00E5;r visdom og magiske evner ved at ofre sig selv ved at h&#x00E6;nge ni dage og ni n&#x00E6;tter i tr&#x00E6;et <rs type="myth" key="myth103">Yggdrasil</rs>.</p>
+      <note type="readMore"> <p>Grundtvig har kunnet l&#x00E6;se digtet i Resens latinsk-oldislandske udgave (<rs key="title323" type="title">Resen 1665c</rs>) <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p>   
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">H&#x00E1;va M&#x00E1;l; H&#x00E1;vam&#x00E1;l.</hi>
+</p>
+</note>
+        </note> -->
+   
+   
+   <note xml:id="com616">
+      <p>
+<hi rend="italic">
+<rs key="title146" type="title">Harbards Sang</rs>
+</hi> er et komisk eddadigt, der ogs&#x00E5; kaldes <hi rend="italic">
+<rs key="title146" type="title">Sangen om Gr&#x00E5;sk&#x00E6;g</rs>.</hi> Digtet handler om en mundtlig kappestrid mellem Odin (Harbard, Gr&#x00E5;sk&#x00E6;g) og Thor. Det fremg&#x00E5;r heraf bl.a., at Odin er jarlernes gud, mens Thor er tr&#x00E6;llenes.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>.</p>
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Harbards Liod; H&#x00E1;rbar&#x00F0;slj&#x00F3;&#x00F0;; Odins Sang; <rs key="title146" type="title">Sangen om Gr&#x00E5;sk&#x00E6;g</rs>.</hi>
+</p>
+</note>
+     </note>
+ 
+ <!--
+   <note xml:id="com617">
+      <p>
+<hi rend="italic">
+<rs type="title" key="title147">Ynglingesaga</rs>
+</hi> er f&#x00F8;rste del af <persName key="pe49">Snorres</persName> v&#x00E6;rk om de norske konger. I v&#x00E6;rket optr&#x00E6;der den svensk-norske kongesl&#x00E6;gt, ynglingerne, som er efterkommere af Odin. Sagaen rummer bl.a. et afsnit om, hvordan <rs type="myth" key="myth106">aser</rs>ne snyder <rs type="myth" key="myth118">vaner</rs>ne.</p>
+        </note>-->
+   
+   
+  <!-- <note xml:id="com618">
+      <p>
+<hi rend="italic">Vaulundurs Kv&#x00E6;de</hi> handler om smeden Vaulundur eller V&#x00F8;lund. Han gifter sig med valkyrien Alvid, men hun flygter i sin svaneham. Han fanges og bliver gjort til kr&#x00F8;bling af svenskekongen Nidud. Vaulundur h&#x00E6;vner sig ved at voldtage Niduds datter og sl&#x00E5; hans s&#x00F8;nner ihjel. Vaulundurs sk&#x00E6;bne blev af romantikerne tolket som en tidlig kunstnermyte.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1785)</rs>.</p> 
+         <p>Grundtvigs yndlingstekst hos den samtidige <persName key="pe3">Oehlenschl&#x00E4;ger</persName> var i &#x00F8;vrigt <rs key="title325" type="title">&#x201C;Vaulundurs Saga&#x201D;</rs> fra <hi rend="italic">
+<rs key="title75" type="title">Poetiske Skrifter 1805</rs>
+</hi>
+</p>
+         <p>Digtet kendes under f&#x00F8;lgende navne:<hi rend="italic"> Kvadet om V&#x00F8;lund; V&#x01EB;lundarkvi&#x00F0;a; V&#x00F8;lundskvadet.</hi>
+</p>
+</note>
+       </note>-->
+ 
+   
+ <!--  <note xml:id="com619">
+      <p>
+<hi rend="italic">Sangen om Alvis</hi> er et eddadigt om en natlig vidensdyst mellem den kloge dv&#x00E6;rg Alvis og Thor. Thor narrer Alvis til at blive ved med at svare s&#x00E5; l&#x00E6;nge, at solen bryder frem. Dv&#x00E6;rgen, der som andre dv&#x00E6;rge ikke kan t&#x00E5;le dagslys, forstener og m&#x00E5; derfor give fortabt.</p>
+      <note type="readMore">
+         <p>Grundtvig har kunnet l&#x00E6;se digtet i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 (1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783)</rs>.</p>   
+         <p>Digtet kendes under f&#x00F8;lgende navne: <hi rend="italic">Alv&#x00ED;ssm&#x00E1;l; Alv&#x00ED;s M&#x00E1;l.</hi>
+</p>
+</note>
+   </note>-->
+   
+   
+   <note xml:id="com620">
+      <p>Egentlig betyder ordet &#x2018;oldemor&#x2019;, men ordet <hi rend="italic">
+<rs type="title" key="title121">Eddaen</rs>
+</hi> bruges om to forskellige tekstsamlinger. Den &#x00E6;ldste del udg&#x00F8;res af en samling af digte, ofte ogs&#x00E5; kaldet <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs> eller <hi rend="italic">S&#x00E6;munds Edda.</hi>
+</hi> Den best&#x00E5;r af ti gudedigte og nitten heltedigte og er nedskrevet p&#x00E5; Island i slutningen af 1200-tallet.</p> 
+      <p>
+<hi rend="italic">
+<rs key="title122" type="title">Den yngre Edda</rs>,</hi> ogs&#x00E5; kaldet <hi rend="italic">
+<rs key="title122" type="title">
+<persName key="pe49">Snorres</persName> Edda</rs>,</hi> er et prosav&#x00E6;rk, der genfort&#x00E6;ller nordiske myter og samtidig er en h&#x00E5;ndbog i skjaldedigtning.</p>
+      <note type="readMore"> 
+         <p>Grundtvig har kunnet l&#x00E6;se store dele af <hi rend="italic">
+<rs key="title121" type="title">Den &#x00E6;ldre Edda</rs>
+</hi> i den <rs type="title" key="title15">arnamagn&#x00E6;anske kommissions udgave</rs> (1 1787) og i <rs type="title" key="title28">
+<persName key="pe1">Sandvigs</persName> overs&#x00E6;ttelse (1783-1785)</rs>.</p>
+         <p>Nogle gange pr&#x00E6;ciseres det ikke, at der er tale om to forskellige eddaer. <rs key="title122" type="title">
+<hi rend="italic">Den yngre Edda</hi>
+</rs> kan ogs&#x00E5; kaldes <hi rend="italic">Den prosaiske Edda,</hi> mens <hi rend="italic">
+<rs type="title" key="title121">Den &#x00E6;ldre Edda</rs>
+</hi> kan kaldes <hi rend="italic">Den poetiske Edda.</hi>
+</p>
+</note>
+   </note>
+   
+ 
+     <div type="litList">
+   <head xml:id="docIn1">Anvendt litteratur</head>
+     
+           <list type="litList">
+      <item>Auken, Sune (2005) <hi rend="italic">
+<rs type="title" key="title4">Sagas Spejl. Mytologi, historie og kristendom hos N.F.S. Grundtvig</rs>. </hi>K&#x00F8;benhavn</item>  
+      <item>
+<hi rend="italic">Bibliografien,</hi> se Johansen 1948</item>
+      <item>                        
+         Den arnamagn&#x00E6;anske kommissions udgave (u.&#x00E5;.: 1787-1828) <hi rend="italic">
+<rs type="title" key="title15">Edda S&#x00E6;mundar Hinns Fr&#x00F3;da. Edda Rhythmica seu antiqvior, vulgo S&#x00E6;mundina dicta</rs>
+</hi> (da. <hi rend="italic">S&#x00E6;mund den Frodes Edda. Den poetiske eller gamle Edda, almindeligvis kaldet S&#x00E6;munds</hi>), bind 1 (1787): <hi rend="italic">Odas mythologicas, a Resenio non editas, continens [...]</hi> udg. af Bolle Willum Luxdorph, Peter Frederik Suhm, B&#x00F8;rge Thorlacius, Abraham Kall &amp; Jacob Baden. U. st. (: K&#x00F8;benhavn), fotografisk genoptryk Osnabr&#x00FC;ck 1967
+      </item>
+      
+      <item>Fritzner, Johan (1867) <hi rend="italic">Ordbog over det gamle norske Sprog.</hi> Kristiania/Oslo</item>
+      <item>Grundtvig, N.F.S. (1979) <hi rend="italic">N.F.S. Grundtvig. Dag- og Udtogsb&#x00F8;ger</hi>, udg. af Gustav Albeck, bind 1-2. K&#x00F8;benhavn</item>
+      <item>Grundtvig, N.F.S.  (1924) <hi rend="italic">
+<rs type="title" key="title7">Breve fra og til N.F.S.
+                           Grundtvig. (1807-1820)</rs>,</hi> udg. af Georg Christensen &amp; Stener Grundtvig, bind 1. K&#x00F8;benhavn</item>   
+      <item>Grundtvig, Nicolai Frederik Severin
+         &amp; Christian Molbech (1888) <hi rend="italic">
+<rs type="title" key="title16">Christian Molbech og Nikolai
+               Frederik Severin Grundtvig. En Brevvexling, samlet af Chr. K. F. Molbech og udgivet af J. Schr&#x00F8;der</rs>.</hi>
+         K&#x00F8;benhavn</item>
+      <item>Billeskov Jansen, Frederik Julius (udg.) (1980) <hi rend="italic">
+<rs type="title" key="title9">Adam Oehlenschl&#x00E4;ger. &#x00C6;stetiske Skrifter 1800-1812</rs>,</hi> heri: &#x201C;Udgiverens Forord&#x201D;. K&#x00F8;benhavn</item>
+      <item>Johansen, Steen (1948) <hi rend="italic">
+<rs type="title" key="title35">Bibliografi over N.F.S. Grundtvigs skrifter</rs>,</hi> bind 1. K&#x00F8;benhavn</item> 
+    
+      <item>Lundgreen-Nielsen, Flemming (1965) <hi rend="italic">
+<rs type="title" key="title13">Grundtvig. Sk&#x00E6;bne og forsyn. Studier i Grundtvigs nordisk-romantiske dramatik</rs>.</hi> Skrifter udgivet af Grundtvig-selskabet. K&#x00F8;benhavn</item>
+      <item>Lundgreen-Nielsen, Flemming (1980) <hi rend="italic">
+<rs type="title" key="title14">N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</rs>,</hi> bind 1-2. K&#x00F8;benhavn</item>
+      <item>Luxdorph, Bolle Willum, P.F. Suhm, B&#x00F8;rge Thorlacius,
+                        Abraham Kall og Jacob
+                        Baden (1787) <hi rend="italic">
+<rs type="title" key="title15">Edda S&#x00E6;mundar Hinns Fr&#x00F3;da. Edda Rhythmica seu antiqvior,
+                           vulgo S&#x00E6;mundina dicta</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Moritz, Karl Philipp (1791) <hi rend="italic">
+<rs type="title" key="title17">G&#x00F6;tterlehre, oder, mythologische Dichtungen der Alten, zusammengestellt von Karl Philipp Moritz, mit f&#x00FC;nf und sechzig Kupfer gestochenen Abbildungen nach antiken geschnittenen Steinen und andern Denkm&#x00E4;lern des Alterthums</rs>.</hi> Berlin</item>
+      <item>M&#x00F8;inichen, Jacob B&#x00E6;rent (1800) <hi rend="italic">
+<rs type="title" key="title5">Nordiske Folks Overtroe, Guder,
+                           Fabler og Helte indtil Frode 7 Tider i Bogstav-Orden</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+      <item>M&#x00F8;ller, Jens (1806) <rs type="title" key="title73">&#x201C;Skirners F&#x00E6;rd&#x201D;</rs>, i<hi rend="italic">
+<rs type="title" key="title125">Ny Minerva</rs>,</hi> maj 1806</item>
+      <item>Resen, Peder Hansen (1665a) <hi rend="italic">
+<rs type="title" key="title19">Philosophia antiqvissima Norvego-Danica dicta
+                           Woluspa qv&#x00E6; est Pars Edd&#x00E6; S&#x00E6;mundi Islandice &amp;
+                           Latine publici juris primum facta, a Petro Joh. Resenio</rs>
+</hi> [den latinske overs&#x00E6;ttelse er af
+                     Steph&#x00E1;n &#x00D3;lafsson]. K&#x00F8;benhavn</item>
+      <item>Resen, Peder Hansen (1665b) <hi rend="italic">
+<rs type="title" key="title322">Edda Islandorum an Chr. M CC XV Islandice conscripta per Snorronem Sturl&#x00E6; islandi&#x00E6;. Nomophylacem nunc primum Islandice Danice et Latine ex antiqvis Codicibus m. ss. bibliothec&#x00E6; regis et aliorum in lucem prodit opera et studio. Petri Johannis Resenii</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Resen, Peder Hansen (1665c) <hi rend="italic">
+<rs type="title" key="title323">Ethica Odini, pars Edd&#x00E6; S&#x00E6;mundi vocata Haavamaal, una cum ejusdem appendice appellato Runa Capitule, &#x00E1; multis exoptata nunc tandem Islandice &amp; Latine in lucem producta est</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>R&#x00F8;nning, Frederik (1907-1914) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv i det 19. &#x00E5;rhundrede</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>
+      <item>Sandvig, Bertel (1783-85) <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda</rs>.</hi> F&#x00F8;rste H&#x00E6;fte &amp; Andet H&#x00E6;fte. K&#x00F8;benhavn</item>
+      <item>Stef&#x00E1;nsson, Finn (2009) <hi rend="italic">
+<rs type="title" key="title19">Gyldendals Leksikon om Nordisk
+                        Mytologi</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Simek, Rudolf (2006) <hi rend="italic">
+<rs type="title" key="title79">Lexikon der germanischen Mythologie</rs>.</hi>
+                     Stuttgart</item>
+      <item>Suhm, Peter Frederik (1771) <hi rend="italic">
+<rs type="title" key="title23">Om Odin og den Hedniske Gudel&#x00E6;re og Gudstieneste udi Norden</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Suhm, Peter Frederik (1802) <hi rend="italic">
+<rs type="title" key="title152">Udtog af Danmarks, Norges og Holstens Historie, til Brug for den studerende Ungdom</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Suhm, Peter Frederik (1782) <hi rend="italic">
+<rs type="title" key="title321">Historie af Danmark</rs>,</hi> bind 1. K&#x00F8;benhavn</item>
+      <item>S&#x00F8;rensen, Preben Meulengracht &amp; Gro Steinsland (2001) <hi rend="italic">V&#x00F8;lvens Sp&#x00E5;dom.</hi> K&#x00F8;benhavn</item>
+      <item>Toldberg, Helge (1946) <hi rend="italic">
+<rs type="title" key="title24">Grundtvig som Filolog</rs>.</hi> K&#x00F8;benhavn</item>
+      <item>Winther, Christian (overs.) (1847) <hi rend="italic">
+<rs type="title" key="title26">Karl Philipp Moritz's Gudel&#x00E6;re, oversat og tilligmed et Omrids af den nordiske Mythologie udgivet af Christian Winther. Med 65 Afbildninger</rs>.</hi> K&#x00F8;benhavn</item>
+      
+   </list>
+           
+        
+        
+     </div>
+   <div type="webList">
+      <head xml:id="docIn2">Anvendte websider</head>
+      
+    
+         <list type="webList">
+            <item n="2010-05-26" target="http://www.heimskringla.no/wiki/Odins_Ravnegalder">http://www.heimskringla.no/wiki/Odins_Ravnegalder</item>
+            <item n="2010-05-26" target="http://www.heimskringla.no/wiki/Forord_til_Odins_Ravnegalder">http://www.heimskringla.no/wiki/Forord_til_Odins_Ravnegalder</item>
+         </list>
+       
+   </div>
+</body>
+</text>
+</TEI>

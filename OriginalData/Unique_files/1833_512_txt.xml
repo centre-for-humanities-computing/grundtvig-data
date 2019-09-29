@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumberXSLT.xsl"?><!--txtEditNumber--><!--<?xml-stylesheet type="text/xsl" href="file://C:/gvDataLocal/xslt/txtEditXSLT.xsl"?>--><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?><TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Christoffer Columbus</title><!--. (Skrevet i London.)-->
+      <title rend="shortForm">Christoffer Columbus</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Holger Berg</editor>
+      <editor role="student1">Stine Kyls&#x00F8; Pedersen</editor>
+        <editor role="student2">Josefine Rahbek</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.11</idno>
+                 <idno type="content">1.12</idno>
+               <idno type="technic">1.12.1</idno>
+                 
+            </edition>
+         </editionStmt>
+     <extent>19 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            <date when="2017-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.11, 1. november 2017</date>
+         </publicationStmt>
+         <!--<seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>[udgivelse dato]</idno>
+         </seriesStmt>-->
+         <notesStmt>
+            <note xml:id="thisFile" target="1833_512_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note type="com" target="1833_512_com.xml">Punktkommentar</note>
+            <note type="intro" target="1833_512_intro.xml">Indledning</note>
+            <note type="txr" target="1833_512_txr.xml">Tekstredeg&#x00F8;relse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">Nordisk Kirke-Tidende</title>
+       <author>&#x005B;forfatter&#x005D;
+        <note>&#x005B;evt.&#x005D;</note>
+       </author>
+       <pubPlace>K&#x00F8;benhavn</pubPlace>
+       <publisher>&#x005B;trykker&#x005D;
+        <note>&#x005B;evt.&#x005D;</note>
+       </publisher>
+       <date>1833</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="512">
+        <desc>F&#x00F8;rstetrykket</desc>
+        <num>1833</num>
+       </witness>
+           <witness>
+        <desc>Rettelsesliste til A</desc><!-- nr. 9, spalte 160 -->
+           </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>5</num>
+       </witness>
+           <witness xml:id="US">
+        <desc>Udvalgte Skrifter</desc>
+        <num>5</num>
+      </witness>
+           <witness xml:id="VU">
+        <desc>V&#x00E6;rker i Udvalg</desc>
+        <num>8</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+      </classCode>
+      <keywords scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;emneord.xml">
+       <term>historie</term>
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+     <change xml:id="SKP" who="SKP" when="2016-08-16">1. kollationering gennemf&#x00F8;rt og indf&#x00F8;relse af rettelser; ekspl. fra GB's tidsskriftsamling.</change>  
+<change who="NHB" when="2017-06-28">klargjort til 2. kollationering</change>
+       <change xml:id="JR" who="JR" when="2017-06-29">2. kollation, eksemplar: "lettere beskadiget" fra GV's egen samling.</change>
+<change who="NHB" when="2017-09-04">3. kollationering</change>
+         <change who="NHB" when="2017-09-15">str. 29 f&#x00E6;rdig lemmatiseret</change>
+         <change who="NHB" when="2017-10-26">afsluttet 3. redaktion</change>
+         <change who="NHB" when="2017-10-26">unicoded, valid. Mangler kun kontrol af fax-numre</change>
+         <change who="NHB" when="2017-10-30">noTxr>txr</change>
+    </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">    
+
+<body rendition="schwab">
+<div type="&#x005B;Tekst&#x005D;"> 
+<pb type="text" facs="1833_512_fax001.jpg" ed="A" subtype="column" n="113" rend="supp"/><pb type="edition" ed="PS" n="501"/><pb type="edition" ed="US" n="269"/><pb type="edition" ed="VU" n="35"/>
+<head rend="1"><hi rend="textur"><persName key="pe1452">Christoffer Columbus</persName>.</hi></head>
+<head rend="0">(Skrevet i <placeName key="fak34">London</placeName>.)</head>
+
+<lg n="1">
+<l><hi rend="initial">M</hi>ens Aar-Tusinder henskred,</l>
+<l>Helte-Sl&#x00E6;gterne udd&#x00F8;de,</l>
+<l>Over Hav i <placeName key="poet122">Vester-Leed</placeName></l>
+<l>Saaes en gylden Aften-R&#x00F8;de,</l>
+<l>Skabde tit hos <rs type="bible" key="1 Mos 2,7" rend="allusion">Mand af Muld</rs></l>
+<l><seg type="com" n="com1">Morgen-Dr&#x00F8;m</seg> om <seg type="com" n="com2">r&#x00F8;den Guld</seg>!</l>
+</lg>
+<lg n="2">
+<l><hi rend="bold"><hi rend="schwab">Der</hi></hi>, saa dr&#x00F8;mde mangen Skjald,</l>
+<l>Under B&#x00F8;lgen tusind Mile,</l>
+<l><pb type="edition" ed="PS" n="502"/>I <seg type="com" n="com3">guldtakte S&#x00F8;lver-Hall</seg></l>
+<l><seg type="com" n="com108">Sole Drotten</seg> gaaer til Hvile,</l>
+<l>Badet der i Livets Flod,</l>
+<l>Op han staaer som M&#x00E6;lk og Blod!</l>
+</lg>
+<lg n="3">
+<l><pb type="edition" ed="US" n="270"/><hi rend="bold"><hi rend="schwab">Der</hi></hi>, i Kveld og Morgen-Gry,</l>
+<l>Drotten, naar han gaaer og kommer,</l>
+<l>Skaber Haven under Sky,</l>
+<l>Som har daglig Vaar og Sommer,</l>
+<l><pb type="text" facs="1833_512_fax001.jpg" ed="A" subtype="column" n="114" rend="supp"/>Gylden H&#x00F8;st og Gammens Kaar:</l>
+<l><rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> <seg type="com" n="com4">Abild-Gaard</seg>!</l>
+</lg>
+<lg n="4">
+<l><hi rend="bold"><hi rend="schwab"><placeName key="fak118">Hellas</placeName></hi></hi> med sit Himmel-Blaa,</l>
+<l>Sit <placeName key="fak440">Arkadien</placeName> og <placeName key="fak537">Tempe</placeName>,</l>
+<l>Fri dog ei for Skyer graae,</l>
+<l>Kunde L&#x00E6;ngselen kun d&#x00E6;mpe,</l>
+<l><hi rend="bold"><hi rend="schwab">Hvor</hi></hi> den <seg type="com" n="com109">n&#x00F8;iet</seg>, Aar for Aar,</l>
+<l>Var med Sommerfuglens Kaar!</l>
+</lg>
+<lg n="5">
+<l><hi rend="bold"><hi rend="schwab">Hvor</hi></hi> den sig med &#x00D8;rnen svang,</l>
+<l>Stak i Sky paa st&#x00E6;rke Vinger,</l>
+<l>Bedre end af <seg type="com" n="com5">Vox</seg> i Vang</l>
+<l>Danned' dem en <rs type="myth" key="myth501">V&#x00F8;lunds</rs>-Finger,</l>
+<l><pb type="edition" ed="VU" n="36"/><hi rend="bold"><seg type="com" n="com6"><hi rend="bold"><hi rend="schwab"><rs type="myth" key="myth1332">Melkarths</rs></hi></hi> Suler</seg></hi>, som din H&#x00F8;i,</l>
+<l><hi rend="bold"><hi rend="schwab"><placeName key="fak118">Hellas</placeName></hi></hi>, vidt den overfl&#x00F8;i!</l>
+</lg>
+<lg n="6">
+<l>Mens Aar-Tusinder henrandt,</l>
+<l>Dykked' Fugl i Tidens Str&#x00F8;mme,</l>
+<l>Til man regnede for Tant</l>
+<l>Alle Skjaldes <seg type="com" n="com7">Morgen-Dr&#x00F8;mme</seg>,</l>
+<l>Alt hvad mellem Vogn og Pram</l>
+<l>Sukked' <seg type="com" n="com8">for</seg> en Fjeder-Ham!</l>
+</lg> 
+<lg n="7">
+<l><pb type="text" facs="1833_512_fax002.jpg" ed="A" subtype="column" n="115"/><pb type="edition" ed="PS" n="503"/>Dog <seg type="com" n="com9">end</seg> over <placeName key="poet2377"><hi rend="bold"><hi rend="schwab">Spanske</hi></hi>-S&#x00F8;</placeName></l>
+<l>Staaer en gylden Aften-R&#x00F8;de,</l>
+<l>Og for <rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> &#x00D8;e</l>
+<l>Kinder paa dens Kyster gl&#x00F8;de,</l>
+<l>Skjalden faldt, men <seg type="com" n="com10">K&#x00E6;mpen</seg> staaer</l>
+<l>Modig <seg type="com" n="com11">end</seg> med <seg type="com" n="com12">Rim i Haar</seg>.</l>
+</lg>
+<lg n="8">
+<l>Seer du hist den Vandrings-Mand</l>
+<l>Med sin blege S&#x00F8;n ved Haanden,</l>
+<l><seg type="com" n="com94">Saa</seg> i <seg type="com" n="com13">Muldvarp-Tid</seg> <seg type="com" n="com110">om Land</seg></l>
+<l>Med sit Haab gaaer altid Aanden,</l>
+<l>Med sit himmelvendte Blik</l>
+<l>Leder <seg type="com" n="com14">om</seg> en <seg type="com" n="com95">L&#x00E6;dske-Drik</seg>!</l>
+</lg>
+<lg n="9">
+<l><pb type="edition" ed="US" n="271"/><seg type="com" n="com15">Hvad er N&#x00F8;d, naar Hj&#x00E6;lp er n&#x00E6;r</seg>!</l>
+<l>Klostret viet til vor Frue,</l>
+<l>Hist i Aften-R&#x00F8;dens Ski&#x00E6;r</l>
+<l>Blinker under Himmel-Bue,</l>
+<l>Bank kun paa, du Vandrings-Mand,</l>
+<l>Der faaer Aanden Br&#x00F8;d og Vand!</l>
+</lg>
+<lg n="10">
+<l>Porten aabnes, Haanden med,</l>
+<l>Drengens matte &#x00D8;ine tindre,</l>
+<l>Faderens paa Havets Bredd</l>
+<l>Under <seg type="com" n="com16">hvalvte</seg> Bryn ei mindre,</l>
+<l>Lede bag <placeName key="poet2377">den Spanske S&#x00F8;e</placeName></l>
+<l>Efter <rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> &#x00D8;e!</l>
+</lg>
+<lg n="11">
+<l><pb type="edition" ed="VU" n="37"/>Vandrings-Mand! Guds Fred med dig,</l>
+<l>Hvor du staaer i dybe Tanker!</l>
+<l>Staaer din Hu dertil, da siig,</l>
+<l><seg type="com" n="com17">Hvo du est</seg>, og hvor du <seg type="com" n="com18">vanker</seg>!</l>
+<l><seg type="com" n="com121">Saa</seg> fra milde L&#x00E6;ber klang</l>
+<l>Hilsen god i <seg type="com" n="com19">Kloster-Vang</seg>!</l>
+</lg>
+<lg n="12">
+<l><pb type="edition" ed="PS" n="504"/>B&#x00E6;nket <app type="corrNote" select="yes"><lem wit="K">sad i</lem><rdg wit="A">sad</rdg><witDetail wit="A" n="" rend="ut">bogstavet i mangler i alle kollationerede eksemplarer af A. Der er afsat plads til bogstavet. Metrikken taler ogs&#x00E5; for et manglende ord p&#x00E5; en stavelse. ODS har ikke eksempler p&#x00E5; brug af sidde uden pr&#x00E6;position. Rettelseslisten forbig&#x00E5;r denne tekstfejl.</witDetail></app> <seg type="com" n="com20">Kloster-Hall</seg></l>
+<l>Gi&#x00E6;sten som en Drot paa Thronen,</l>
+<l>Det var Helten <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi>,</l>
+<l>Beilende til Konge-Kronen,</l>
+<l>Det var, med et gammelt Ord,</l>
+<l><seg type="com" n="com21"><hi rend="bold"><hi rend="schwab">Fjerdings-Fyrsten</hi></hi></seg> paa vor Jord.</l>
+</lg>
+<lg n="13">
+<l><pb type="text" facs="1833_512_fax002.jpg" ed="A" subtype="column" n="116"/>I den Sommer-Aftenstund</l>
+<l>Tiden fik med Ordet Vinger,</l>
+<l><seg type="com" n="com22">Saa</seg> han maled' med sin Mund,</l>
+<l><seg type="com" n="com22">Saa</seg> han tegned' med sin Finger,</l>
+<l>Som om hjemme havde han</l>
+<l>Selv i <placeName key="fak192">Vestens</placeName> Gaade-Land;</l>
+</lg>
+<lg n="14">
+<l><seg type="com" n="com24">Hvor med Blaam&#x00E6;nd gik i Bad</seg></l>
+<l><hi rend="bold"><hi rend="schwab"><persName key="pe1982">Ferdinand</persName></hi></hi> og <hi rend="bold"><hi rend="schwab"><persName key="pe1983">Isabelle</persName></hi></hi>,</l>
+<l>Der kom Bud og der kom <seg type="com" n="com25">Blad</seg></l>
+<l>Fra den snevre Kloster-Celle;</l>
+<l>Til <hi rend="bold"><hi rend="schwab"><placeName key="fak2379">Cordovas</placeName></hi></hi> <seg type="com" n="com26">Konge-Hall</seg></l>
+<l>Der kom Nyt med <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi>!</l>
+</lg>
+<lg n="15">
+<l><pb type="edition" ed="US" n="272"/>Ingensteds vel mere Lyst</l>
+<l>Var til <seg type="com" n="com96">Guld og gr&#x00F8;nne Skove</seg>,</l>
+<l>Der <seg type="com" n="com27">og</seg> i et Dronning-Bryst</l>
+<l>Tanker h&#x00F8;ie kom til <seg type="com" n="com28">Hove</seg>,</l>
+<l>De sig over Bjerg og S&#x00F8;e</l>
+<l>Svang til <rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> <hi rend="bold">&#x00D8;</hi>e!</l>
+</lg>
+<lg n="16">
+<l>H&#x00F8;r, du s&#x00E6;re Vandrings-Mand,</l>
+<l>Vaaben-Brag og Klang af <seg type="com" n="com29">Lure</seg>!</l>
+<l>Styrtende du seer <seg type="com" n="com30">paa Stand</seg></l>
+<l><pb type="edition" ed="VU" n="38"/><hi rend="bold"><hi rend="schwab"><placeName key="his799">Granadas</placeName></hi></hi> de stolte Mure;</l>
+<l>Da, med Silke-Seil i Raa,</l>
+<l>Far, <seg type="com" n="com111">saavidt</seg> som Sky er blaa!</l>
+</lg>
+<lg n="17">
+<l><pb type="edition" ed="PS" n="505"/>Muren sank, og Haabet steg,</l>
+<l>Meer end seile <seg type="com" n="com31">K&#x00E6;mpen</seg> turde,</l>
+<l>Kongen r&#x00F8;d og Hofmand bleg</l>
+<l>Blev, da <seg type="com" n="com32">saa</seg> han tog til Orde:</l>
+<l><app select="yes" type="corrNote"><lem wit="GV"><hi rend="schwab"><hi rend="bold">Drot</hi></hi></lem><rdg wit="A"><hi rend="schwab"><hi rend="bold">Dro</hi></hi>t</rdg><witDetail wit="A" rend="df" n="29"/></app>! hvor dig jeg baner Vei,</l>
+<l>Throner du og <seg type="com" n="com33"><hi rend="bold"><hi rend="schwab">raader</hi></hi></seg> jeg!</l>
+</lg>
+<lg n="18">
+<l>Seer du ham med <seg type="com" n="com34">Rim i Haar</seg>,</l>
+<l>Rynker i den &#x00E6;dle Pande,</l>
+<l><seg type="com" n="com35">K&#x00E6;mpen</seg> med de <seg type="com" n="com36">bange</seg> Kaar</l>
+<l>Skal hans store Planer strande?</l>
+<l>B&#x00E6;rer ham, <seg type="com" n="com37">for Hest paa Hav</seg>,</l>
+<l>Nu kun <hi rend="bold"><hi rend="schwab"><seg type="com" n="com97">Mulen</seg></hi></hi> til hans Grav!</l>
+</lg> 
+<lg n="19">
+<l><pb type="text" facs="1833_512_fax003.jpg" ed="A" subtype="column" n="117"/><seg type="com" n="com38">Alt</seg> i <hi rend="bold"><seg type="com" n="com39">trende <hi rend="bold"><hi rend="schwab">Snese Aar</hi></hi></seg></hi></l>
+<l>Banket har det store Hjerte,</l>
+<l>Plantet Haab i <seg type="com" n="com117">Kongers Gaard</seg>,</l>
+<l>Dr&#x00F8;mt om Fryd og h&#x00F8;stet Smerte,</l>
+<l><seg type="comStart" n="com40"/>Sidder dog til Heltens D&#x00F8;d,</l>
+<l>Lige h&#x00F8;it<seg type="comEnd" n="com40"/> i Lyst og N&#x00F8;d!</l>
+</lg>
+<lg n="20">
+<l><hi rend="bold"><hi rend="schwab">Dronning</hi></hi>! <seg type="com" n="com99">saa</seg> i Sal det klang,</l>
+<l>Helten, som t&#x00F8;r Alting vove,</l>
+<l>Finder <seg type="com" n="com42">vist</seg> den Drot engang,</l>
+<l>Som t&#x00F8;r <seg type="com" n="com43">lidt for meget love</seg>;</l>
+<l>Husk, en Verden <seg type="com" n="com44">bydes fal</seg>,</l>
+<l>Prut ei meer med <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi>!</l>
+</lg>
+<lg n="21">
+<l><pb type="edition" ed="US" n="273"/>H&#x00F8;it det lyder: Hei og Ho!</l>
+<l>Byt din <seg type="com" n="com98">Mule</seg> for en Tofte!</l>
+<l>Dronningen fra <placeName key="fak2556"><hi rend="bold"><hi rend="schwab">Pinos</hi></hi>-Bro</placeName></l>
+<l>Vinker dig til <seg type="com" n="com45">H&#x00F8;ie-Lofte</seg>;</l>
+<l>Hvor du lander, kom ihu,</l>
+<l>Throner hun, og <seg type="com" n="com46"><hi rend="bold"><hi rend="schwab">raader</hi></hi></seg> <hi rend="bold"><hi rend="schwab">du</hi></hi>!</l>
+</lg>
+<lg n="22">
+<l><pb type="edition" ed="PS" n="506"/><pb type="edition" ed="VU" n="39"/>Seer du, hvad et Syn er v&#x00E6;rd:</l>
+<l>Konge-Flag paa P&#x00E6;re-Skuden,</l>
+<l>Skibene til Langveis-F&#x00E6;rd</l>
+<l>Eet med D&#x00E6;k, og to foruden,</l>
+<l>Roret ligt en <seg type="com" n="com47">Konge-Vaand</seg></l>
+<l>I den ki&#x00E6;kke Styrmands Haand!</l>
+</lg>
+<lg n="23">
+<l>Naar af dunkle Moder-Skj&#x00F8;d</l>
+<l>Tidens <rs type="myth" key="myth233">Lys-Alf</rs>, <rs type="myth" key="myth1496">Dag</rs>, udspringer,</l>
+<l>F&#x00F8;r end Soel gj&#x00F8;r Kinden r&#x00F8;d,</l>
+<l>Hanen ryster sine Vinger,</l>
+<l>M&#x00E6;ler h&#x00F8;it i Morgen-Gry:</l>
+<l>Brat opstaaer en Verden ny!</l>
+</lg>
+<lg n="24">
+<l><seg type="com" n="com112">Saa</seg> gj&#x00F8;r <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi> i Stavn,</l>
+<l><seg type="com" n="com48">Knevrer</seg> h&#x00F8;it med <seg type="com" n="com113">Snekke-Vinger</seg>,</l>
+<l>Styrer ud af <hi rend="bold"><hi rend="schwab"><placeName key="fak2555">Palos</placeName></hi></hi> Havn,</l>
+<l>F&#x00F8;r end <seg type="com" n="com49">Morgen-Klokken</seg> ringer,</l>
+<l>Under Hurra-Raab i Sky</l>
+<l>Dages brat en Verden ny!</l>
+</lg>
+<lg n="25">
+<l><pb type="text" facs="1833_512_fax003.jpg" ed="A" subtype="column" n="118"/><seg type="com" n="com50">Syv <app select="yes" type="addNote"><lem wit="A">Gange</lem><rdg type="add" wit="Rettelsesliste">Gang</rdg><witDetail wit="A" n="1">metrisk (stilistisk) rettelse. Udf&#x00F8;res ikke, men gengives som supplerende note. If&#x00F8;lge PS 5, s. 506 har renskriftet ogs&#x00E5; ordlyden: Gang. Det er i &#x00F8;vrigt et bevinget ord, dannet af Thomas Thaarup i 1790.</witDetail></app> Ti er St&#x00F8;vets Aar</seg>,</l>
+<l>Syv Gang Ti var <seg type="com" n="com51">Pr&#x00F8;vens</seg> Dage,</l>
+<l>Snekken med de store <seg type="com" n="com52">Kaar</seg></l>
+<l>Fl&#x00F8;i som Fugl i Luft saa <seg type="com" n="com53">fage</seg>;</l>
+<l><hi rend="bold"><hi rend="schwab">Een</hi></hi> endnu kun under Sky</l>
+<l>Ventede en Verden ny!</l>
+</lg>
+<lg n="26">
+<l>Det var <hi rend="bold"><hi rend="schwab">ham</hi></hi>, hvis Helte-Aand</l>
+<l>Stod i Pagt med Aften-R&#x00F8;den,</l>
+<l>Og med <rs type="bible" subtype="bibleStart" n="bible1" key="ApG 2,32-33 og Rom 6,4-11" rend="eg"/><hi rend="bold"><hi rend="schwab">Ham</hi></hi>, hvis h&#x00F8;ire Haand</l>
+<l>Udvei bane kan fra D&#x00F8;den<rs type="bible" subtype="bibleEnd" n="bible1" key="ApG 2,32-33 og Rom 6,4-11" rend="eg"/>,</l>
+<l><pb type="edition" ed="PS" n="507"/>Vinker aldrig til en Grav</l>
+<l>Sine ud paa <seg type="com" n="com114">vildne</seg> Hav!</l>
+</lg>
+<lg n="27">
+<l><pb type="edition" ed="US" n="274"/><rs type="bible" key="Jon 1" rend="allusion">Kast den Kogler overbord</rs>!</l>
+<l>L&#x00E6;nge nok han <rs type="bible" key="Dan 4,4" rend="eg">kikked' Stjerner</rs>,</l>
+<l>L&#x00E6;nge nok med Trolddoms-Ord</l>
+<l><pb type="edition" ed="VU" n="40"/>Han forvirred' Folke-Hjerner;</l>
+<l>H&#x00F8;re han kun selv derpaa!</l>
+<l><seg type="com" n="com100">Saa</seg> det l&#x00F8;d i hver en <seg type="com" n="com54">Vraa</seg>.</l>
+</lg>
+<lg n="28">
+<l>Seer I hist den Fisk paa Hav,</l>
+<l>Som kun <seg type="com" n="com55">under Klippen leger</seg>,</l>
+<l>Her den p&#x00E6;nt udskaarne Stav,</l>
+<l>Som dog vel paa Fingre peger?</l>
+<l><seg type="com" n="com101">Saa</seg> fra Heltens L&#x00E6;ber fl&#x00F8;d</l>
+<l>Talen <seg type="com" n="com56">mellem</seg> Liv og D&#x00F8;d!</l>
+</lg>
+<lg n="29">
+<l>Over B&#x00F8;lgen som et Speil</l>
+<l>I den milde <seg type="com" n="com115">Aften-Svale</seg></l>
+<l>Skibet gik for fulde Seil,</l>
+<l><seg type="com" n="com57">Ondskab laae med Frygt i Dvale</seg>,</l>
+<l>Helten ki&#x00E6;k i <seg type="com" n="com58">Lyfting</seg> stod,</l>
+<l>Stirred' efter <seg type="com" n="com59">Vaande-Bod</seg>!</l>
+</lg>
+<lg n="30">
+<l><app select="yes" type="addNote"><lem wit="A"><hi rend="bold"><hi rend="schwab"><persName key="pe4531">Peder</persName></hi></hi></lem><rdg type="add" wit="Rettelsesliste"><hi rend="bold"><hi rend="schwab">Pedro</hi></hi></rdg><witDetail wit="A" n="31">stilistisk rettelse. Rettelseslisten har desuden udeladt kommaet, som afslutter den indskudte bis&#x00E6;tning: han kom. Rettelseslisten medtager kontekst for hvert rettet lemma. Lemma s&#x00E6;ttes med fed schwabacher. Der er ikke schwabacher ved "han kom". Udeladelsen af kommaet er derfor formentlig en s&#x00E6;tterfejl<note corresp="Rettelsesliste" n="160">Pedro, hvisked' han kom hid!</note></witDetail></app>, hvidsked' han, kom hid!</l>
+<l>Kom, <hi rend="bold"><hi rend="schwab"><persName key="pe4530">Rodrigo</persName></hi></hi>! med det Samme,</l>
+<l><seg type="com" n="com60">Stirrer</seg> begge med mig did,</l>
+<l>Hvor jeg seer den blege Flamme,</l>
+<l>Er det Blink fra Sky, fra Strand,</l>
+<l>Eller mon ei Lys i Land?</l>
+</lg> 
+<lg n="31">
+<l><pb type="text" facs="1833_512_fax004.jpg" ed="A" subtype="column" n="119"/><hi rend="bold"><hi rend="schwab">Lys i Land</hi></hi>, om vi har Syn,</l>
+<l>Begge med hinanden svare,</l>
+<l><pb type="edition" ed="PS" n="508"/>Under Heltens <seg type="com" n="com61">hvalvte</seg> Bryn</l>
+<l>Tindred' da to Stjerner klare,</l>
+<l><seg type="com" n="com62">Tykdes</seg> sige: Morgen-Soel</l>
+<l>Melder bedst, hvi Hanen goel!</l>
+</lg>
+<lg n="32">
+<l>D&#x00F8;lge sig til Soel gik op</l>
+<l>Dog for <seg type="com" n="com63">Dagskj&#x00E6;r</seg> Land ei kunde,</l>
+<l><hi rend="bold"><hi rend="schwab">Land</hi></hi>! det l&#x00F8;d fra <seg type="com" n="com65">M&#x00E6;rse-Top</seg>,</l>
+<l>Land! gjenl&#x00F8;d fra alle Munde;</l>
+<l><seg type="com" n="com92">&#x00C6;re-Skud</seg> da kvad i Sky,</l>
+<l><rs type="bible" key="Luk 2,11" rend="allusion">F&#x00F8;dt er os en Verden ny!</rs></l>
+</lg>
+<lg n="33">
+<l><pb type="edition" ed="US" n="275"/><pb type="edition" ed="VU" n="41"/>Seer Du Helten purpurr&#x00F8;d,</l>
+<l>Som i Kaabe <seg type="com" n="com102">saa</seg> paa Kinder,</l>
+<l><app type="corrNote" select="yes"><lem wit="Rettelsesliste"><seg type="com" n="com66">Kongeprud og kvindebl&#x00F8;d</seg></lem><rdg wit="A">Konge prud og Kvinde bl&#x00F8;d</rdg><witDetail wit="A" n="15">L&#x00E6;sefejl eller h&#x00F8;refejl: de to unormale adjektiver blev opfattet som substantiver. Med A's ordlyd har den f&#x00F8;rste hoveds&#x00E6;tning i strofe tre substantiver, som alle er direkte objekter: Helten, en konge og en kvinde. Rettelseslisten &#x00E6;ndrer de to sidste substantiver til adjektiver. Kongeprud og kvindebl&#x00F8;d l&#x00E6;gger sig til Helten. A giver grammatisk mening, men f&#x00E5;r strofens betydning til at bryde sammen. Begge hoveds&#x00E6;tninger i strofen foruds&#x00E6;tter &#x00E9;n person (... han Thronen finder... hans Tunges &#x00C6;re-Skud), ikke tre personer.<note n="508" corresp="PS">Kongeprud og kvindebl&#x00F8;d, efter renskriftet</note></witDetail></app>,</l>
+<l>Kn&#x00E6;le, hvor han Thronen finder!</l>
+<l>H&#x00F8;r hans Tunges <seg type="com" n="com67">&#x00C6;re-Skud</seg></l>
+<l>H&#x00F8;it i Sky for Guders Gud!</l>
+</lg>
+<lg n="34">
+<l>See <rs type="bible" n="bible2" subtype="bibleStart" key="1 Mos 2,7" rend="allusion"/>nu staaer han op fra Muld,</l>
+<l>Som <seg type="com" n="com68">Jord-Klimpen</seg>, Guds Aand danner<rs type="bible" subtype="bibleEnd" key="1 Mos 2,7" rend="allusion" n="bible2"/>,</l>
+<l>Folder ud med Kors og Guld</l>
+<l>Glad sin Dronnings <seg type="com" n="com69">Hoved-Banner</seg>,</l>
+<l>Svinger prud det Helte-Sv&#x00E6;rd,</l>
+<l>Gud ham gav til <seg type="com" n="com106">Herre-F&#x00E6;rd</seg>!</l>
+</lg>
+<lg n="35">
+<l>Seer Du Snekken, som et Vrag,</l>
+<l>Som en Spaan paa Verdens-Havet!</l>
+<l>Seer Du Liget under Brag</l>
+<l>I <seg type="com" n="com70">Vox-Lagen</seg> sv&#x00F8;bt, begravet!</l>
+<l>Heltens Haab sit Liv har endt,</l>
+<l>Efterladt sit Testament!</l>
+</lg>
+<lg n="36">
+<l><pb type="edition" ed="PS" n="509"/>Skal da, efter <rs type="myth" key="myth112">Nornens</rs> Dom,</l>
+<l>Kun en &#x00E6;ventyrlig <seg type="com" n="com71">Sage</seg></l>
+<l>Seile i en <hi rend="bold"><hi rend="schwab">T&#x00F8;nde</hi></hi> tom</l>
+<l>Fra <hi rend="bold"><hi rend="schwab"><placeName key="fak147">Amerika</placeName></hi></hi> tilbage,</l>
+<l>Som om <seg type="com" n="com72">for</seg> den Verden ny</l>
+<l>Helten <seg type="com" n="com73">favned' kun en Sky</seg>?</l>
+</lg>
+<lg n="37">
+<l><pb type="text" facs="1833_512_fax004.jpg" ed="A" subtype="column" n="120"/>Nei, see hist i <seg type="com" n="com74">Konge-Hall</seg>,</l>
+<l>Hvor de studse, hvor de lytte,</l>
+<l>Medens Helten <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi></l>
+<l>Skildrer dem <hi rend="bold"><hi rend="schwab"><seg type="com" n="com118">Caciquens</seg></hi></hi> Hytte,</l>
+<l><placeName key="poet122">Vester-Ledens</placeName> <seg type="com" n="com75">Feelands-Kaar</seg>,</l>
+<l><rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> <seg type="com" n="com103">Abildgaard</seg>!</l>
+</lg>
+<lg n="38">
+<l>Vel endnu paa <placeName key="fak2448"><hi rend="bold"><hi rend="schwab">Teios</hi></hi></placeName> Bredd</l>
+<l><seg type="com" n="com123">Avind</seg> lurer, Dolken truer,</l>
+<l>Men paa Slangerne <seg type="com" n="com104">ur&#x00E6;dd</seg></l>
+<l><pb type="edition" ed="VU" n="42"/>Som paa Dybet Helten skuer,</l>
+<l>Og ved Konge-Blikkets Lyn</l>
+<l><seg type="com" n="com124">Avind</seg> taber Sands og Syn!</l>
+</lg>
+<lg n="39">
+<l><pb type="edition" ed="US" n="276"/>Ja, see hist, i <hi rend="bold"><hi rend="schwab"><placeName key="fak2555">Palos</placeName></hi></hi> Havn</l>
+<l>Atter vaier Konge-Flaget,</l>
+<l>Og med meer end Konge-Navn</l>
+<l>Seier-Herren staaer paa <seg type="com" n="com76">Vraget</seg>,</l>
+<l>Medens Klokker h&#x00F8;it i Sky</l>
+<l>Kime for en Verden ny!</l>
+</lg>
+<lg n="40">
+<l>Seer Du Snekkerne i Flok,</l>
+<l>Hvor <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Columbus</persName></hi></hi> foer alene,</l>
+<l>Seer Du glimre meer end nok</l>
+<l>S&#x00F8;lv og Guld og &#x00C6;del-Stene,</l>
+<l>Til den gamle Verden bly</l>
+<l>B&#x00F8;ier dybt sig for den Ny!</l>
+</lg>
+<lg n="41">
+<l><pb type="edition" ed="PS" n="510"/>Efter tre Gang hundred' Aar,</l>
+<l>Vel med Suk maa Skjalden sande,</l>
+<l><rs type="myth" key="myth630"><hi rend="bold"><hi rend="schwab">Hesperiders</hi></hi></rs> <seg type="com" n="com77">Abildgaard</seg></l>
+<l>Laae ei bag de store Vande,</l>
+<l>Kasted' kun sin Skygge breed</l>
+<l>Over Hav, hvor Soel gaaer ned!</l>
+</lg>
+<lg n="42">
+<l>Yndig Vaar og gylden H&#x00F8;st,</l>
+<l>S&#x00F8;lv og Guld og &#x00C6;delstene</l>
+<l>Skabe ingen Skjalde-R&#x00F8;st,</l>
+<l>Hvad end <seg type="com" n="com78">St&#x00F8;vets Tr&#x00E6;lle</seg> mene,</l>
+<l>Skabe ikkun skyggeviis</l>
+<l>Skinnet af et <placeName key="fik83">Paradiis</placeName>!</l>
+</lg> 
+<lg n="43">
+<l><pb type="text" facs="1833_512_fax005.jpg" ed="A" subtype="column" n="121"/>Ligefuldt dog <hi rend="bold"><hi rend="schwab"><persName key="pe1452">Christoval</persName></hi></hi>!</l>
+<l>Mens Aar-Tusinder henrinde,</l>
+<l>Om dit Navn i Helte-Tal</l>
+<l>Slynge sig et &#x00C6;re-Minde!</l>
+<l>I dit Kj&#x00F8;l-Vand Mange foer,</l>
+<l>Faa kun traadte i dit Spoer!</l>
+</lg>
+<lg n="44">
+<l><pb type="edition" ed="VU" n="43"/>Underfulde <seg type="com" n="com93">K&#x00E6;mpe-Kaar</seg></l>
+<l>Har de straalende Bedrifter,</l>
+<l><hi rend="bold"><hi rend="schwab">Storv&#x00E6;rk</hi></hi> Manddoms-Vexten naaer</l>
+<l>Kun <seg type="com" n="com79">i mange Maane-Skifter</seg>,</l>
+<l>Haand i Haand hos <seg type="com" n="com80">K&#x00E6;mpen</seg> gaaer</l>
+<l>Soel i Blik og <seg type="com" n="com81">Rim i Haar</seg>.</l>
+</lg>
+<lg n="45">
+<l><pb type="edition" ed="US" n="277"/>Alle hartad nu som Een</l>
+<l>Dr&#x00F8;mme dog i <seg type="com" n="com82">Barne-&#x00C6;lde</seg>,</l>
+<l>At <seg type="com" n="com91">dem reiste Bauta-Steen</seg></l>
+<l><hi rend="bold"><hi rend="schwab">Storv&#x00E6;rk</hi></hi> i sin hele V&#x00E6;lde,</l>
+<l>Dr&#x00F8;mme, at til evig Tid</l>
+<l>Mindes skal en Times <seg type="com" n="com83">Iid</seg>!</l>
+</lg>
+<lg n="46">
+<l><pb type="edition" ed="PS" n="511"/>Derfor kun <seg type="com" n="com64">med Tr&#x00E6;kke-Naal</seg></l>
+<l>Sammenki&#x00E6;des nu <seg type="com" n="com84">Idr&#x00E6;tter</seg>,</l>
+<l><seg type="com" n="com85">Drapen</seg> kun i <seg type="com" n="com86">Dv&#x00E6;rge-Maal</seg></l>
+<l>Som for Kn&#x00F8;se Krandsen fletter,</l>
+<l>Og paa Skuespiller-Viis</l>
+<l><seg type="com" n="com87">F&#x00F8;rend Helten d&#x00F8;er hans Priis</seg>!</l>
+</lg>
+<lg n="47">
+<l>Hvor er nu de <seg type="com" n="com88">Gude-B&#x00F8;rn</seg>,</l>
+<l>Hvor er nu de <seg type="com" n="com89">K&#x00E6;mpe-Sj&#x00E6;le</seg>,</l>
+<l>Der sig aarle svang <app type="addNote" select="yes"><lem wit="A">mod &#x00D8;en</lem><rdg type="add" wit="Rettelsesliste">med &#x00D8;rn</rdg><witDetail wit="A" n="27">dobbelt l&#x00E6;sefejl: o for e (mOd) samt e for r (&#x00D8;En). &#x00D8;en fungerer imidlertid fint og henviser til Hesperidernes &#x00D8;, der optr&#x00E6;der igennem hele digtet. For en rettelsesnote: Aanden svinger sig ogs&#x00E5; "med &#x00D8;rnen" i strofe 5, og &#x00F8;rn giver i kombination med Muld en mere hinsides himmelsk fornemmelse. Det er dog nuancer, ingen v&#x00E6;sensforskel og slet intet meningsssammenbrud. Derfor supplerende note i stedet for rettelsesnote<note corresp="PS" n="511">med &#x00D8;rn</note><note corresp="US" n="277">med &#x00D8;rn</note></witDetail></app></l>
+<l>Over Muldets Gr&#x00E6;ndse-P&#x00E6;le,</l>
+<l><seg type="com" n="com120">Slog</seg> i sildig Aften-Stund,</l>
+<l>H&#x00F8;it med L&#x00E6;rken, graae som hun!</l>
+</lg>
+<lg n="48">
+<l>Ak, de sv&#x00E6;ve over Sky</l>
+<l>Og de hvile under Mulde!</l>
+<l><seg type="com" n="com90">Naar</seg> skal Dagen atter grye,</l>
+<l>Som fordriver D&#x00F8;dens Kulde,</l>
+<l><seg type="com" n="com90">Naar</seg> skal atter paa vor Jord</l>
+<l>Daaden gj&#x00F8;re <seg type="com" n="com105">Drapen</seg> stor?</l>
+</lg>
+<lg n="49">
+<l><pb type="text" facs="1833_512_fax005.jpg" ed="A" subtype="column" n="122"/><hi rend="bold"><hi rend="schwab"><rs type="bible" subtype="bibleStart" n="bible2" key="1 Kor 15,35-53" rend="reference"/>Naar</hi></hi> i Skyen rosenr&#x00F8;d</l>
+<l>Aanderne til os neddale,</l>
+<l>Og fra Jordens Moder-Skj&#x00F8;d</l>
+<l><pb type="edition" ed="VU" n="44"/>Heltene staae op af Dvale<rs type="bible" subtype="bibleEnd" n="bible2" key="1 Kor 15,35-53" rend="reference"/>,</l>
+<l>Aldrig f&#x00F8;r i Morgen-Gry</l>
+<l>Dages kan <rs type="bible" key="&#x00C5;b 21,1" rend="allusion">en Verden ny</rs>!</l>
+</lg>
+<p rend="firstIndentRight"><hi rend="schwab">N. F. S. Grundtvig.</hi></p>
+<graphic style="longLine"/>
+</div>
+
+</body>
+
+     <pb type="periText" facs="1833_512_fax006.jpg"/><!--ed="A" subtype="column" n="160" rettelseslisten-->
+        
+   </text>   
+  </TEI>

@@ -1,0 +1,782 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="part">Kiærminde-Bladet</title>
+                <title rend="shortForm">Kiærminde-Bladet</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="philologist">Vibeke A. Pedersen</editor>
+                <editor role="student1">Josefine Rahbek</editor>
+                <editor role="student2">Stine Kylsø Pedersen</editor>
+                <editor role="student3">Jeppe Karnøe Knudsen</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+                    <idno type="firstUpload">1.13</idno>
+                    <idno type="content">1.13</idno>
+                    <idno type="technic">1.13.1</idno>
+                </edition>
+            </editionStmt>
+            <extent>12 KB</extent>         
+            <publicationStmt>
+                <availability status="restricted">
+                    <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+                </availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>            
+                <date when="2018-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.13, 1. november 2018</date>
+            </publicationStmt>
+            <seriesStmt>
+                <title>Danne-Virke</title>
+                <respStmt>
+                    <name>N.F.S. Grundtvig</name>
+                    <resp />
+                </respStmt>
+                <idno>1819-12-30</idno>
+            </seriesStmt>
+            <notesStmt>
+                <note target="1819_342_3_txt.xml" xml:id="thisFile" type="txt">L&#x00E6;setekst</note>
+                <note target="1819_342_3_com.xml" type="com">Punktkommentar</note>
+                <note target="1819_342_3_intro.xml" type="intro">Indledning</note>
+                <note target="1819_342_3_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+                <note type="minusVar">Variant</note>
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <title type="part"></title>
+                    <author>N.F.S. Grundtvig</author>
+                    <pubPlace>Kiøbenhavn</pubPlace>
+                    <publisher>A. Schmidts Forlag</publisher>
+                    <date>1819</date>
+                </bibl>
+                <listWit xml:id="emendation">
+                    <witness xml:id="A" n="342">
+                        <desc>Førstetrykket</desc>
+                        <num>1819</num>
+                    </witness>
+                </listWit>
+               
+                <listWit xml:id="pageNumber">
+                    <witness xml:id="PS">
+                        <desc>Poetiske Skrifter</desc>
+                        <num>5<!-- 9-22 --></num>
+                    </witness>
+                    <witness xml:id="US">
+                        <desc>Udvalgte Skrifter</desc>
+                        <num>3<!-- 545-556 --></num>
+                    </witness>
+                </listWit>
+               
+               
+            </sourceDesc>
+        </fileDesc>
+        <profileDesc>
+            <textClass>
+                <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+                    <term>lyrik</term>
+                    <term>digte</term>
+                    <term>lejlighedsdigte</term>
+                 
+                </classCode>
+                <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+                                 
+                    <term>Danmark</term>
+                    <term>historie</term>
+                    <term>mytologi</term>
+                </keywords>
+            </textClass>
+        </profileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="JR" xml:id="JR" when="2017-11-28">Tilrettet filen</change>
+            <change who="JR" when="2017-12-05">Indført rettelser fra 1. kollation eksemplar: Otto Møller + fax-kodning</change>
+            <change xml:id="SKP" who="SKP" when="2018-01-05">2. kollation, Ejnar Skovrup ekspl. Eftertjekket rettelser i Otto Møller (1. koll. ekspl.) og herefter indført til oxygen.</change>
+            <change when="2018-01-25" who="VAP" xml:id="VAP">seg-opmærket (med smerter) og renset for x'er efter basekørsel og oprettet dem, kørslen ikke havde fundet</change>
+      <change who="auto" when="2018-01-25">Autoopmærket af autotag.awk v12 KK 2017-03-09</change>
+            <change  who="VAP" when="2018-01-26">færddiggjort udfyldning af myth og pers og oprettet manglende. Oprettet com 105-6. Slettet dubletter ved siden af hinanden</change>
+            <change  who="VAP" when="2018-02-08"> Oprettet 107-120. Indført 3. koll. efter 3.1. expl. 3, tidligere GB samt manglende baseopmærkninger</change>
+            <change  who="VAP" when="2018-04-13">rettelser i head</change>
+            <change  who="VAP" when="2018-04-16">tilføjelse af PS i head (mgl. stadig som henvisninger. Oprettet 121-28</change>         
+            <change  who="VAP" when="2018-04-17">Oprettet 129-134</change>
+            <change  who="VAP" when="2018-04-19">tilføjet i genre</change>
+             <change xml:id="JKK" who="JKK" when="2018-05-07">Tilføjet sidetal for PS og US</change>
+            <change  who="VAP" when="2018-05-08">rettelser efter Kirsten. Oprettet com 135-149, slettet 14, 18 og 73</change>
+            <change  who="VAP" when="2018-05-22">flere rettelser efter Kirsten. Oprettet com 150-152, slettet 39, 47, 97</change>
+            <change  who="VAP" when="2018-05-23">kontrol af rettelser efter Kirsten. </change>
+            <change  who="VAP" when="2018-08-01">oprettet 153</change>
+            <change when="2018-10-02" who="VAP">påbegyndt rettelser efter Klaus. Slettet 64, 65, 116, 134. Oprettet 154</change>
+            <change when="2018-10-03" who="VAP">yderligere rettelser efter Klaus. Slettet 32, 72, 81, 85, 124, 149, 151. Oprettet 155</change>
+        </revisionDesc>
+        
+    </teiHeader>
+    
+    <text type="txt">
+        
+        
+        <body>
+            
+            <div type="Farvel! o, hvem kan dette Ord udtale?">
+                 <pb type="text" facs="1819_342_3_fax001.jpg" ed="A" n="155"/><pb type="edition" n="9" ed="PS"/><pb type="edition" n="545" ed="US"/>
+                <head rend="2">Kiærminde-Bladet.</head> 
+                <head rend="0">(Til <persName key="pe138">Ingemann</persName>.)</head>
+                
+                <lg n="1">
+                <l>Farvel! o, hvem kan dette Ord udtale?</l> 
+                <l>Naar toner i sin Fylde det paa Jord!</l>
+                <l>Kun naar Guds Børn i Livets Aften-Svale</l>
+                <l>Det høre jubles ud af Engle-Chor;</l>
+                <l>Kun naar de fare, <seg type="com" n="com1">alt</seg> som Ordet lyder,</l>
+                <l>De føle <seg type="com" n="com2">fuldelig</seg> hvad det betyder!</l>
+                </lg>  
+                
+                <lg n="2">
+                <l>Vi sige bedst Farvel, naar dybt vi sukke,</l> 
+                <l>Og <seg type="com" n="com154">svare saa til Vægten af vor Gield</seg>;</l>
+                <l>Selv med et Suk <seg type="com" n="com3">vist</seg> over Barnets Vugge</l>
+                <l>Udnynner Engelen et ømt Farvel,</l>
+                <l>Thi Taaren maa som <seg type="com" n="com4">Honning-Dug</seg> nedrinde</l>
+                <l>Paa Hjerte-Grundens falmende Kiærminde!</l>
+                </lg> 
+                
+                <lg n="3">
+                <l>Kun de som aldrig have faret ilde,</l> 
+                <l>Som, hvor de færdes, fare vel med Gud,</l>
+                <l>Kun Regnbue-Straalerne<!-- JR: bogstav beskadiget --> fra Lysets Kilde,</l>
+                <l>Kun Englene, som Naadens Sendebud,</l>
+                <l>Kun de kan smilende, med Himmel-Tunge,</l>
+                <l>Farvel! Farvel! hinanden høit <seg type="com" n="com5">tilsiunge</seg>!</l>
+                </lg>
+                
+                <lg n="4">
+                <l>O, Ven! o, vent da ei af mig at høre</l> 
+                <l>Det dybe Ord, jeg ei udtale kan,</l>
+                <l><pb type="text" facs="1819_342_3_fax002.jpg" ed="A" n="156"/>Og endnu mindre lade Pennen føre,</l>
+                <l>Som <seg type="com" n="com6">Tunge-Skyggens</seg> kolde <seg type="com" n="com7">Færgemand</seg>;</l>
+                <l>Kun taarekvalt Farvellet lidt betyder,</l>
+                <l>Og Vand er Taare-Perlen, naar den flyder!</l>
+                </lg> 
+                
+                <lg n="5">
+                <l>O, var <hi rend="spaced">hun</hi> vaagen nu, mit Hjertes Broder!</l> 
+                <l>Hvis Hjerte-Suk var Sang, hvis Graad var Guld,</l>
+                <l>O, var hun vaa<!-- SKP: sidste 'a' følger ikke linjen i begge ekspl. -->gen nu, vor søde Moder,</l>
+                <l>Ja, Moder til saa mangt et bedre Kuld,</l>
+                <l>Som røber os i Skin af <rs type="myth" key="myth64">Sagas</rs> Kierte,</l>
+                <l>At hende laae en ædel Steen paa Hjerte!</l>
+                </lg>
+                
+                <lg n="6">
+                     <l><pb type="edition" n="10" ed="PS"/><pb type="edition" n="546" ed="US"/>O, var hun vaagen nu, den <seg type="com" n="com8">Danne-Kvinde</seg>,</l> 
+                <l>Som skiød ved Arnen sig livsalig frem,</l>
+                <l>Og vinked med saamangen blaa Kiærminde</l>
+                <l><rs type="myth" key="myth115">Skjold-Ungen</rs> til sit underfulde Hjem,</l>
+                <l>Ja, førde did ham under Slør tilbage,</l>
+                <l>Hvor Marken blomstrede om Vinter-Dage!</l>
+                </lg> 
+                
+                <lg n="7">
+                <l>O, var hun vaagen nu, hun sikkert vilde</l> 
+                <l><seg type="com" n="com9">Tilhulke dig</seg> det ømmeste Farvel,</l>
+                <l>Som kan udrisle af en Hjerte-Kilde,</l>
+                <l>Hvis Liv og Lyst er kun dens Afkoms Held,</l>
+                <l>Hvis Bølge er en Taare fra det Høie,</l>
+                <l>Neddryppet af en <hi rend="spaced">Barne-Engels</hi> Øie!</l>
+                </lg>
+                
+                <lg n="8">
+                <l><pb type="text" facs="1819_342_3_fax003.jpg" ed="A" n="157"/>Men ak! hun sover under Bøge-Løvet,</l> 
+                <l>Som visnet skjuler hendes hvide Bryst,</l>
+                <l>At vække hende jeg omsonst har prøvet,</l>
+                <l>Skiøndt jeg med Graad opløftede min Røst;</l>
+                <l>Utrøstet har det Yderste jeg vovet</l>
+                <l>Hun sover, ak! som den der er hensovet!</l>
+                </lg>
+                
+                <lg n="9">
+                <l>Ak! er det mueligt! trøstesløse Tanke!</l> 
+                <l>Har <seg type="com" n="com10">Børne-Sorg</seg> i Graven hende lagt!</l>
+                <l>Holdt virkelig det Hjerte op at banke,</l>
+                <l>Som slog for <seg type="com" n="com127">Støvets</seg> Held i Himmel-Takt,</l>                
+                <l>Ak! er det <seg type="com" n="com107">brustet</seg> nu, det <seg type="com" n="com11">Himling-Øie</seg>,</l>
+                <l>Hvis Liv og Lyst var Glandsen i det Høie!</l>
+                </lg> 
+                
+                <lg n="10">
+                <l>O, lod maaskee af Fordom jeg mig blænde,</l> 
+                <l>O, skuffed mig det kiære Moder-Navn,</l>
+                <l>Saa Navnet er det eneste af hende</l>
+                <l>Som blev tilbage i vor Fødestavn,</l>
+                <l>Da <seg type="com" n="com135">sorrigfuld</seg> hun over salten Vove</l>
+                <l>Bortsvømmede engang fra <placeName key="fak14">Danmarks</placeName> Skove!</l>
+                </lg>
+                
+                <lg n="11">
+                <l><pb type="edition" n="11" ed="PS"/>O, drog maaskee for hende at opsøge</l> 
+                <l>Man fordum skareviis fra <placeName key="fak24">Norden</placeName> ud,</l>
+                <l>Og plantede i Syd de røde Bøge.</l>
+                <l>Til Taare-Minder over <rs type="myth" key="myth19.c">Ottars Brud</rs>!</l>
+                <l><seg type="com" n="com129">Hvad heller</seg> foer hun over Land og Bølge</l>
+                <l>Som <rs type="myth" key="myth368">Skjoldmøe</rs> selv med <seg type="com" n="com12">Ledingstrop</seg> i Følge!</l>
+                </lg>
+                
+                <lg n="12">
+                     <l><pb type="text" facs="1819_342_3_fax004.jpg" ed="A" n="158"/><pb type="edition" n="547" ed="US"/>O, er det <seg type="com" n="com13">saa</seg>! o lever i det Fjerne</l> 
+                <l>Vor hulde Moder under Slør i Løn,</l>
+                <l>O, vinkede hun med sin milde Stjerne</l>
+                <l>Til <placeName key="fak457">Syden</placeName> ned sin kiære, yngste Søn;</l>
+                <l>Da <seg type="com" n="com15">far</seg>, da flyv med Kys i hendes Ar<!-- JR: bogstav beskadiget -->me!</l>
+                <l>Der bryder ud i Blomst din bundne Varme!</l>
+                </lg>
+                
+                <lg n="13">
+                <l>Dog bie, o, bie! thi Stjerner kan bedrage,</l> 
+                <l>Ja <seg type="com" n="com16">Giøgle-Glimt</seg> i Luften lege tit,</l>
+                <l>Og Skinnet let vort Øie kan indtage,</l>
+                <l>Kun dunkelt Hjertet skielner Løst og Frit,</l>
+                <l>Og i de dunkle, favre Farve-Bække</l>
+                <l>Der spille <seg type="com" n="com17">Luft-Æoner</seg> under Dække!</l>
+                </lg>
+                
+                <lg n="14">
+                <l>O, bie, og hør et Or<!-- JR: bogstav beskadiget. SKP: gældende begge ekspl. r uden blæk (l. 13) -->d af bange Broder!</l> 
+                <l>Han har vel ei et Hjerte <seg type="com" n="com108">ømt</seg> som dit,</l>
+                <l>Men elsker trofast dog den fælleds Moder,</l>
+                <l>Og saae i Speilet hendes Aasyn tit:</l>
+                <l>I <rs type="myth" key="myth64">Saga</rs>-Speilet, som kan aldrig blænde,</l>
+                <l>Naar ret for Lyset vi kun Rammen vende!</l>
+                </lg>
+                
+                <lg n="15">
+                <l>O, troe mig! ei med <rs type="myth" key="myth1363">Ebbe</rs> og med <rs type="myth" key="myth1364">Aage</rs></l> 
+                <l>Vor bedste Moder drog af Landet ud,</l>
+                <l>Ei bort hun stævnede i Anglers Kaage;</l>
+                <l>Med <rs type="myth" key="myth405">Lodbrogs</rs> Sønner eller <persName key="pe335">Gamle Knud</persName>;</l>
+                <l>Hun lever kun, hvor levende hun mindes,</l>
+                <l>I <placeName key="fak14">Danmark</placeName> eller ingensteds hun findes!</l>
+                </lg>
+                
+                <lg n="16">
+                <l><pb type="text" facs="1819_342_3_fax005.jpg" ed="A" n="159"/><pb type="edition" n="12" ed="PS"/>Hun drog ei ud med nogen <seg type="com" n="com19">Kiæmpe-Skare</seg>,</l> 
+                <l>Som skiæfted Spyd for Lyst med Ask og Bøg,</l>
+                <l>Hun hader Vold og skyer gierne Fare,</l>
+                <l>Kun nødig parres Nattergal med Høg,</l>
+                <l>Hun slog ei Snekken løs for Vind og Vove,</l>
+                <l>Naar Nattergalen <seg type="com" n="com20">slog</seg> i grønne Skove!</l>
+                </lg>
+                
+                <lg n="17">
+                <l><seg type="com" n="com136">Vel</seg> drog hun ud i Oldtids fierne Dage,</l> 
+                <l>Som vi i <seg type="com" n="com21">Gaade-Speilet</seg> skimte <seg type="com" n="com121">end</seg>,</l>
+                <l>Da vemodsfuld hun ledte <seg type="com" n="com22">om</seg> sin Mage:</l>
+                <l>Om sin <seg type="com" n="com150">forfløine</seg>, faldne Hjertensven;</l>
+                <l>Men rørt hun standsed, da om <placeName key="fak14">Danmarks</placeName> Skove</l>
+                <l>Sig bøied, <seg type="com" n="com23">belted</seg> hendes <seg type="com" n="com109">Hjerte-Vove</seg>!</l>
+                </lg>
+                
+                <lg n="18">
+                     <l><pb type="edition" n="548" ed="US"/>Hun drog ei ud med Flokke eller Hære,</l> 
+                <l>Thi aldrig <seg type="com" n="com24">nænde</seg> Hun for nogen Priis</l>
+                <l>Sit Havfru-Belte grum at overskiære,</l>
+                <l>Ubodeligt var hende dets Forliis,</l>
+                <l>Ei <seg type="com" n="com25">daarlig</seg> haabed hun sin Ven at finde,</l>
+                <l>Ved Vold at giøre paa hans søde Minde!</l>
+                </lg> 
+                
+                <lg n="19">
+                <l>Hun drog ei ud for Lyst, og ei for Trængsel,</l> 
+                <l>Men hvad hun savned i sit Havfrue-Skiød,</l>
+                <l>Hun oppebied med vemodig Længsel</l>
+                <l>Til hende Aanden det i Tro indgiød,</l>
+                <l>Og da hun i sin Hosbonds <seg type="com" n="com26">Himmel-Aande</seg></l>
+                <l>Fik Haab til Bod for Sorgens dybe Vaande!</l>
+                </lg> 
+                
+                <lg n="20">
+                <l><pb type="text" facs="1819_342_3_fax006.jpg" ed="A" n="160"/>Hun drog ei ud, thi hvad sig end forandrer,</l> 
+                <l>Det ligge tungt paa Grund, det svømme let,</l>
+                <l>Af Legemet dog <hi rend="spaced">Hjertet</hi> ei udvandrer,</l>
+                <l>Undtagen i det sidste Aandedræt,</l>
+                <l>Ja, selv naar Aanden stemmes, Tungen stammer,</l>
+                <l>Det ømt sig krymper i det snævre Kammer!</l>
+                </lg>
+                
+                <lg n="21">
+                <l><pb type="edition" n="13" ed="PS"/>Hun drog ei ud, den <seg type="com" n="com27">huustro</seg><seg type="com" n="com28"> Danne-Kvinde</seg>,</l> 
+                <l>Ei over <seg type="com" n="com152">Marke-Skiel</seg>, i Heden-Old,</l>
+                <l>Thi kun hun selv har giemt i kiærligt Minde</l>
+                <l>De Førstefødte: <rs type="myth" key="myth432">Humble</rs>, <rs type="myth" key="myth138">Dan</rs> og <rs type="myth" key="myth67">Skjold</rs>,</l>
+                <l>Og hjemme var hun jo, den <seg type="com" n="com29">Fredegode</seg>,</l>
+                <l>Da <seg type="com" n="com137">Marken</seg> rundt hun <seg type="com" n="com138">Støvet</seg> bar af <rs type="myth" key="myth137">Frode</rs>!</l>
+                </lg>
+                
+                <lg n="22">
+                <l>Hun drog ei ud med <seg type="com" n="com30">Svender</seg> og med <seg type="com" n="com31">Knuder</seg>,</l> 
+                <l>Ja ikke selv med <persName key="pe447">Erik Eiegod</persName>;</l>
+                <l>Naar Aften-Røden maled Kirkens Ruder,</l>
+                <l>Hun <seg type="com" n="com122">hjemme baded sig i <placeName key="fak99">Jordans Flod</placeName></seg>,</l>
+                <l>Og naar for Alter-Bord Høi-Messen toned,</l>
+                <l>Hun følde sødt sig med sin Gud forsonet!</l>
+                </lg> 
+                
+                <lg n="23">
+                <l>Hun drog ei ud, thi var ei selv hun hjemme,</l> 
+                <l>Da <persName key="pe450">Hellig-Knud</persName> hensov i hendes Skiød,</l>
+                <l>Da <persName key="pe2942">Bent</persName>, henrevet sødt af hendes Stemme,</l>
+                <l>Nedsank i <seg type="com" n="com33">Konge-Smykke</seg> rosenrød,</l>
+                <l>Da rørt hun sang: o det er Engle-Gammen,</l>
+                <l>Naar Brødre <seg type="com" n="com34">saa</seg> til Himmels fare sammen!</l>
+                </lg>
+                
+                <lg n="24">
+                     <l><pb type="text" facs="1819_342_3_fax007.jpg" ed="A" n="161"/><pb type="edition" n="549" ed="US"/>Hun drog ei ud med kiække <seg type="com" n="com35">Valdemarer</seg>,</l> 
+                <l>Ja, ei engang med <persName key="pe223">Absolon</persName> paa <seg type="com" n="com36">Tog</seg>.<!-- SKP: i begge ekspl. er det vanskeligt at se punktummet. Det ligner et komma, men på grund af næste linje har jeg ladet det stå som punktum. VAP: punktum fint --></l>
+                <l>Hun hjemme korsed sig for Hedning-Skarer,</l>
+                <l>Og fældte Taarer under Dannebrog;</l>
+                <l>I Sæk og Aske hun paa Baaren segned,</l>
+                <l>Da <persName key="pe1186">Abel</persName> <seg type="com" n="com123">rødmede</seg>, og <persName key="pe1128">Erik</persName> <seg type="com" n="com37">blegned</seg>!</l>
+                </lg>
+                
+                <lg n="25">
+                <l>Hun drog ei ud: hun laae som Liig paa Baare,</l> 
+                <l>Som <rs type="myth" key="myth64">Saga</rs> laae paa <persName key="pe237">Saxos</persName> Pergament,</l>
+                <l>Paa Kinden perlede en <seg type="com" n="com110">styrknet</seg> Taare,</l>
+                <l>Tillukt var Øiet, men dog himmelvendt;</l>
+                <l>Man saae det grandt, hvor <placeName key="fak14">Danmarks</placeName> Himmel graaned,</l>
+                <l>Da, som paa <rs type="myth" key="myth33">Hel</rs>, paa <rs type="myth" key="myth19">Freia</rs> Læben blaaned!</l>
+                </lg>  
+                
+                <lg n="26">
+                <l><pb type="edition" n="14" ed="PS"/>Hun drog ei ud: ei bort fra <placeName key="poet2739">Kilde-Vangen</placeName>,</l> 
+                <l>Hun <seg type="com" n="com38">syndes</seg> død, men leved dog i Løn,</l>
+                <l>Thi selv jo tonede hun Klage-Sangen,</l>
+                <l>Som sødt <seg type="com" n="com40">end</seg> rører hendes yngste Søn:</l>
+                <l>Hun var her, thi i Sommer-Aftenstunden</l>
+                <l>Som Nattergal hun <seg type="com" n="com41">slog</seg> i Bøge-Lunden!</l>
+                </lg> 
+                
+                <lg n="27">
+                <l>Hun drog ei ud i <persName key="pe42">Morten Luthers</persName> Dage,</l> 
+                <l>Hun drog ei ud i vores Jevndøgns-Nat,</l>
+                <l><seg type="com" n="com42">I Luther-Dagene</seg> hun vaagned <seg type="com" n="com43">fage</seg>,</l>
+                <l>I Jevndøgns-Natten hun indslumred mat;</l>
+                <l><pb type="text" facs="1819_342_3_fax008.jpg" ed="A" n="162"/>Men hjemme blev hun, vaagen, og i Slummer,</l>
+                <l>I <placeName key="fak14">Danmark</placeName> er hun, om <seg type="com" n="com44">og</seg> død af Kummer!</l>
+                </lg> 
+                
+                <lg n="28">
+                <l>Paa Baaren daanet, laae i Vaaben-Huset</l> 
+                <l>Vor Moder bleg, med Barnet i sin Arm;</l>
+                <l>Da Livsens Aande over <seg type="com" n="com139">Marken</seg> sused,</l>
+                <l>Hun vaagned, hævede sig hiertevarm,</l>
+                <l>Gik ind i Kirken under Havfru-Kaaben,</l>
+                <l>Og bar med Fryd sin bedste Søn til Daaben!</l>
+                </lg> 
+                
+                <lg n="29">
+                <l>Den Søn opvoxde under Kirkens Vinger,</l> 
+                <l>I Tidens Løb han blev <seg type="com" n="com45">og</seg> præstelærd,</l>
+                <l>Sig rakde, <seg type="com" n="com46">syndes</seg> det, hans Tommel-Finger</l>
+                <l><seg type="com" n="com140">Alt</seg> efter Grebet paa hans Faders Sværd,</l>
+                <l>Og dannet var af Moders Liv hans Tunge</l>
+                <l>Til <persName key="pe346">Davids</persName> <rs type="bible" key="Sl"  rend="reference">Psalmer</rs> sødelig at sjunge!</l>
+                </lg>
+                
+                
+                <lg n="30">
+                     <l><pb type="edition" n="550" ed="US"/>Hun drog ei ud, saalænge Sønnen trolig</l> 
+                <l>I <seg type="com" n="com48">Kirke-Skolen</seg> sig til Bogen holdt,</l>
+                <l>Om Vinter-Aftner, i sin Enke-Bolig,</l>
+                <l>Hun <seg type="com" n="com141">vel</seg> beklaged, at det blev saa koldt,</l>
+                <l>Men Vadmel dog, og sommersanket Brænde,</l>
+                <l>Holdt Blodet flydende i ham og hende!</l>
+                </lg>
+                
+                <lg n="31">
+                <l><pb type="edition" n="15" ed="PS"/>Hvad blev han til, vor gamle Moders Støtte!</l> 
+                <l>Hvor blev han af, den <seg type="com" n="com49">Dannekvinde-Søn</seg>!</l>
+                <l><pb type="text" facs="1819_342_3_fax009.jpg" ed="A" n="163"/>Har han sin Stav fra Marken maattet flytte,</l>
+                <l>Og skjule sig blandt Klipperne i Løn<!-- JR: ligner mere et o end et ø. SKP: gældende for begge ekspl. l. 2. . Expl. 3 har ø VAP-->!</l>
+                <l><seg type="com" n="com142">Hvad heller</seg> glemde Tonen han fra Oven,</l>
+                <l>Og tuder vildt med Ulvene i Skoven!</l>
+                </lg>
+                
+                <lg n="32">
+                <l>Ak! har <rs type="myth" key="myth1758">Dan Goddreng</rs> <seg type="com" n="com50">under Vinters-Hjerte</seg></l> 
+                <l>Sin Herkomst og sit Moders-Maal <seg type="com" n="com51">forgiæt</seg>,</l>
+                <l>Ak, da vor Moder, sønderknust af Smerte,</l>
+                <l>Udvandret er med sidste Aandedræt;</l>
+                <l>Ak, da forgiæves lyder kun vor Klage,</l>
+                <l>Hun kommer aldrig, aldrig meer tilbage!</l>
+                </lg> 
+                
+                <lg n="33">
+                <l>Dog nei, o, nei, forvildes og forføres</l> 
+                    <l>Det kan, som hver en Dødelig, <seg type="com" n="com143">og</seg> <rs type="myth" key="myth138">Dan</rs>,</l>
+                <l>Men holde op ved Moders Røst at røres,</l>
+                <l>Gaae hende kold forbi paa Gravens Rand,</l>
+                <l>Det kan han ei, thi Aanden er ham givet,</l>
+                <l>Som Blomsten, kun i Kraft af <seg type="com" n="com153">Moders-Livet</seg>!</l>
+                </lg> 
+                
+                <lg n="34">
+                    <l>Ja, var det mueligt, kunde <rs type="myth" key="myth138">Dan</rs> forhærdet</l> 
+                <l><seg type="com" n="com52">End</seg> drage Aande ved den sorte Konst,</l>
+                <l>Og kalde <seg type="com" n="com53">trodselig</seg> paa <seg type="com" n="com54">Dommer-Sværdet</seg>,</l>
+                <l>Da lytted rundt paa Jordens Kreds omsonst</l>
+                <l>Man efter Klagesang ved <rs type="myth" key="myth1125">Danas</rs> Baare:</l>
+                <l>Udrundet var den sidste Vemods-Taare!</l>
+                </lg> 
+                
+                <lg n="35">
+                <l><pb type="text" facs="1819_342_3_fax010.jpg" ed="A" n="164"/>O! toner da endnu en Klage-Stemme</l> 
+                <l>Paa Moders-Maalet, for vor Moders Kval,</l>
+                    <l>O, da gik <seg type="com" n="com55">end</seg> hun dog ei <rs type="myth" key="myth138">Dan</rs> ad Glemme,</l>
+                <l>Og sank ei ned i <rs type="bible" key="Sl 23,4" rend="reference">Dødens Skygge-Dal</rs>;</l>
+                <l>Da, skiøndt paa Baaren hun er bleg <seg type="com" n="com56">neddaanet</seg>,</l>
+                <l>Er hendes Liv i Sønnen dog forskaanet!</l>
+                </lg> 
+                
+                <lg n="36">
+                     <l><pb type="edition" n="16" ed="PS"/><pb type="edition" n="551" ed="US"/>Hvor lyde Suk, hvor tone Klage-Sange</l> 
+                <l>For <rs type="myth" key="myth1125">Dana</rs>, <persName key="pe250">Dagmar</persName>, <persName key="pe249">Thyra Dannebod</persName>!</l>
+                <l>Hvor, uden hist og her i <placeName key="fak14">Danmarks</placeName> Vange:</l>
+                <l>I <seg type="com" n="com57">Havfru-Borgen</seg> og ved Bøgens Rod!</l>
+                <l>Forstummede ei, midt i <persName key="pe250">Dagmars</persName> Kvide,</l>
+                <l>Selv <seg type="com" n="com58">Klippe-Tungen</seg> <seg type="com" n="com155">under</seg> <placeName key="fak24">Nørre-Lide</placeName>!</l>
+                </lg> 
+                
+                <lg n="37">
+                <l>O her, kun her, hvor <seg type="com" n="com59">end</seg> paa Moders-Maalet</l> 
+                <l>Dog stundum løfter sig vor Moders Røst,</l>
+                <l>Trods <seg type="com" n="com60">Lunge-Soten</seg>, og trods Morder-Staalet,</l>
+                <l>Her Mindet lever <seg type="com" n="com61">end</seg> i Sønne-Bryst!</l>
+                <l>Her sover, ak, sin Kraft, sin Krands berøvet,</l>
+                <l>Men dog ei død, vor Moder under Løvet!</l>
+                </lg> 
+                
+                <lg n="38">
+                <l>O Ven! o <seg type="com" n="com111">vent</seg> da aldrig hist at finde:</l> 
+                <l>I <placeName key="fak1415">Alpers</placeName> Skiød, ved <placeName key="fak1193">Apenniners</placeName> Fod,</l>
+                <l>Din Længsels Moder og din Sangs Præstinde,</l>
+                <l>Den Savnede, den sande <seg type="com" n="com62">Dannebod</seg>!</l>
+                <l>O bliv her, bliv! du <seg type="com" n="com144">kanst</seg> dog ei undvære</l>
+                <l>Din <persName key="pe2531">Blanca</persName>, <persName key="pe4356">Thorkild</persName>, alle dine Kiære!</l>
+                </lg> 
+                
+                <lg n="39">
+                <l><pb type="text" facs="1819_342_3_fax011.jpg" ed="A" n="165"/>Men ak! forgiæves løfter sig min Stemme!</l> 
+                    <l>Hvor er min Ven? o, hvor er <rs type="title" key="title4634">Blancas</rs> Skjald!</l>
+                <l>Han er, jeg veed ei hvor, kun ikke hjemme,</l>
+                <l>Ei i Kong <rs type="myth" key="myth137">Frodes</rs> grønne <seg type="com" n="com63">Bøge-Hald</seg>!</l>
+                <l>Ak! medens jeg paa Klage-Brevet <seg type="com" n="com105">staved</seg>,</l>
+                <l>I Stavnen foer min Broder over Havet!</l>
+                </lg> 
+                
+                <lg n="40">
+                <l>Forgiæves dog er ingen Ting paa Jorden,</l> 
+                <l>Forgiæves lyder intet kiærligt Ord,</l>
+                <l>Forgiæves et Kiærmindeblad fra <placeName key="fak24">Norden</placeName></l>
+                <l>Kan aldrig svømme i <rs type="myth" key="myth300">Ses<!-- SKP: pudsigt at man har valgt slut-s midt i ordet her (l. 10) -->rumners</rs> Spor,</l>
+                <l>Og <rs type="myth" key="myth146">Afrodite</rs> skal min Ven ei <seg type="com" n="com112">giække</seg></l>
+                <l>Til at forlade <seg type="com" n="com106">Signe-Freias</seg> Snekke!</l>
+                </lg> 
+                
+                <lg n="41">
+                     <l><pb type="edition" n="17" ed="PS"/>Saa svøm kun blye, men trøstig over Havet,</l> 
+                <l>Kiærminde-Blad! som det vor Moder bød!</l>
+                <l>Thi kun paa Følge-Sedlen jeg har <seg type="com" n="com130">stavet</seg>,</l>
+                <l>Du selv udsprang jo af vor Moders Skiød,</l>
+                <l>Og finder Venskab, hvor du finder Tungen</l>
+                <l>Som af vor Moders Hjerte er udsprungen!</l>
+                </lg>
+                
+                <lg n="42">
+                     <l><pb type="edition" n="552" ed="US"/>Udsprunget, siger jeg, men ei løsrevet,</l> 
+                <l>Thi var den det, da var den stum og død,</l>
+                <l>Da var for den ei Bladet meer end Brevet:</l>
+                <l>En Boble kun i <seg type="com" n="com66">Bogstav-Bølgens Skiød</seg>;</l>
+                <l>Den Tunge, som kun Hjertet kan besjæle,</l>
+                <l>Fra Hjertet skilt, og mister flux sit Mæle!</l>
+                </lg> 
+                
+                <lg n="43">
+                <l><pb type="text" facs="1819_342_3_fax012.jpg" ed="A" n="166"/>See, til en Fjer af <rs type="myth" key="myth100">Urda</rs>-Svanens Vinge,</l> 
+                <l>Jeg dig betroer paa det vilde Hav,</l>
+                <l>Den skal til <persName key="pe4848">Reinald Fuglekiær</persName> dig bringe,</l>
+                <l><seg type="com" n="com67">End</seg> før han staaer ved Helgen-Skarens Grav:</l>
+                <l>Ved <seg type="com" n="com68">Marmel-Buerne</seg> til Hines Mi<!-- JR: manglende prik over i'et -->nde,</l>
+                <l>Som strømmeviis <hi rend="spaced">lod</hi> Martyr-Blodet rinde!</l>
+                </lg> 
+                
+                <lg n="44">
+                <l>O, naar og hvor du kommer ham for Øie,</l> 
+                <l>Hvor tit han møder, finder dig igien:</l>
+                <l>Ved <persName key="pe740">Maros</persName> Grav, paa <placeName key="fak17">Romas</placeName> Taage-Høie,</l>
+                <l>Da hils ham kiærligst, ikke fra sin Ven,</l>
+                <l>Nei, fra den Mark, hvis himmelblaa Kiærminde</l>
+                <l>Ved dig sig lægge vil ham sødt paa Sinde!</l>
+                </lg> 
+                
+                <lg n="45">
+                <l>Ja, møder du ham hos <rs type="myth" key="myth501">Vaulunders</rs> <seg type="com" n="com69">Broder</seg>,</l> 
+                <l>Som tegner <rs type="myth" key="myth171.a">Jupiter</rs>, og hugger <rs type="myth" key="myth74">Thor</rs>,</l>
+                <l>Da hils dem begge fra vor hulde Moder:</l>
+                    <l>Fra <seg type="comStart" n="com70"/>Maler-Dronningen ved <placeName key="fak623">Isse-Fjord</placeName><seg type="comEnd" n="com70"/>!</l>
+                    <l>Da lægger Hjertet <persName key="pe4848">Reinald</persName> <seg type="com" n="com113">vist</seg> i Munden,</l>
+                <l>Hvad Natter-Galen <seg type="com" n="com71">slog</seg> kun paa i Lunden!</l>
+                </lg> 
+                
+                <lg n="46">
+                     <l><pb type="edition" n="18" ed="PS"/>Modtag da, Ven! hvad jeg formaaer at sende:</l> 
+                <l>Et venligt Ord og et Kiærminde-Blad,</l>
+                <l>Det Ord mig faldt i Mund, det Blad i Hænde</l>
+                <l>Da i det brune Bøge-Løv jeg sad,</l>
+                <l>Og stirred paa Kiærminden, som du kiender:</l>
+                <l>Opskudt af Moders sammenlagde Hænder!</l>
+                </lg> 
+                
+                <lg n="47">
+                <l><pb type="text" facs="1819_342_3_fax013.jpg" ed="A" n="167"/>O, kunde jeg den Blomster-Busk omspænde</l> 
+                <l>Og sammenslynge til en Brude-Krands:</l>
+                <l>Til en Guldbryllups-Mindekrands for hende,</l>
+                <l>Hvis Øie sænked sig i Himmel-Glands!</l>
+                <l>O! gid jeg kunde det, og Krandsen række</l> 
+                <l>Til Dig, og til hver Frænde af os begge!</l>
+                </lg> 
+
+                <lg n="48">
+                     <l><pb type="edition" n="553" ed="US"/>Da skulde levende vor Moders Minde</l> 
+                <l>Opkomme og opstaae i Alles Bryst,</l>
+                <l>Med <rs type="myth" key="myth19">Freias</rs> <seg type="com" n="com74">Rosengjord</seg> os sammenbinde</l>
+                <l>I Een til Eet: til fælleds Værk og Trøst!</l>
+                <l>Da midt iblandt os skulde, ved et Under,</l>
+                <l>Opreises <hi rend="spaced">Hun,</hi> som dødningbleg nu blunder!</l>
+                </lg> 
+                
+                <lg n="49">
+                <l>Dog Ønsker favre ei er altid fromme,</l> 
+                <l>Og ret kun ønsker, hvo sig selv har glemt!</l>
+                <l>Vort Ønske <seg type="com" n="com131">være</seg> da: Guds Rige komme,</l>
+                <l><seg type="com" n="com75">Ihvor</seg> og naar, og som det er bestemt!</l>
+                <l>Som <rs type="bible" key="Joh 1,13" rend="allusion">Viljen er i Gud, <seg type="com" n="com76">saa</seg> er vor Evne</rs>,</l>
+                <l>Vort eget Værk er ikke værd at nævne!</l>
+                </lg> 
+                
+                <lg n="50">
+                <l><seg type="com" n="com77">Kiærminde-Busken</seg> ei jeg kan omspænde,</l> 
+                <l>Ei sammenslynge den med værdig Konst,</l>
+                <l>Og over <seg type="com" n="com78">Marke-Skiel</seg> den at udsende,</l>
+                <l>Det var, om ei forvovent, vel omsonst,</l>
+                <l>Thi Krandsen har, kan <rs type="myth" key="myth64">Saga</rs> os forvisse,</l>
+                <l>Kun Liv og Glands paa <rs type="myth" key="myth1125">Danas</rs> Sølver-Isse!</l>
+                </lg> 
+                
+                <lg n="51">
+                    <l><pb type="text" facs="1819_342_3_fax014.jpg" ed="A" n="168"/><pb type="edition" n="19" ed="PS"/><rs type="bible" key="Rom 14,4" rend="allusion"  n="bible1" subtype="bibleStart"/>At plante ud den Busk, jeg seer i Aanden,</l> 
+                    <l>Er hvad jeg kan ved Herrens Kraft <app type="corrNote" select="yes"><lem wit="GV">formaae</lem><rdg wit="A">farmaae</rdg><witDetail n="0" wit="A"></witDetail></app><rs type="bible" key="Rom 14,4" rend="allusion"  n="bible1" subtype="bibleEnd"/>,</l>
+                <l>Med Bøn til Ham, at <seg type="com" n="com79">saa</seg> den efterhaanden,</l>
+                <l>I christen Jord maa Hjerte-Rødder slaae!</l>
+                <l>Da, hjertedannet, skal i Bøge-Skygge</l>
+                <l>Den <seg type="com" n="com80">vist</seg> engang vor Moders Hoved smykke!</l>
+                </lg> 
+                
+                <lg n="52">
+                <l>Ja, naar i Lund de himmelblaa Kiærminder</l> 
+                <l>Ombølge duftende vor Moder tæt;</l>
+                <l>Da staaer hun op med hvide Rosen-Kinder,</l>
+                <l>Og krandses <seg type="com" n="com82">favert</seg> af en kiærlig Æt:</l>
+                    <l>I <placeName key="fak623">Isse-Fjorden</placeName> skal da Maanen gløde,</l>
+                <l><seg type="com" n="com83">Omblaanet</seg> sødt i Tidens Aften-Røde!</l>
+                </lg> 
+                
+                <lg n="53">
+                <l>O, det er Fromheds Løn: selv lagt paa Baare,</l> 
+                <l>I <seg type="com" n="com84">Minde-Blik</seg> den smiler engleglad!</l>
+                <l>I Øiet perlede en Vemods-Taare,</l>
+                <l>I Haanden drypped et Kiærminde-Blad,</l>
+                <l>Det, tænkde jeg, kan dog din Ven du sende,</l>
+                <l>Og Roden <seg type="com" n="com86">vist</seg> paa Bladet er at kiende!</l>
+                </lg> 
+                
+                <lg n="54">
+                     <l><pb type="edition" n="554" ed="US"/>O! er det <seg type="com" n="com132">saa</seg>, kan hist i fjerne Egne</l> 
+                <l>Det lille Blad, fra Bøgelund udsendt,</l>
+                <l>Vor Moders Øie venligt dig betegne,</l>
+                <l>Med Taare-Perlen, klart og himmelvendt;</l>
+                <l>Da skal det Blad <seg type="com" n="com87">end</seg> fastere dig binde</l>
+                <l>Til Bøge-Lunden og til <rs type="myth" key="myth138">Dans</rs> <seg type="com" n="com145">Kiærminde</seg>!</l>
+                </lg> 
+                
+                <lg n="55">
+                <l><pb type="text" facs="1819_342_3_fax015.jpg" ed="A" n="169"/>O! <rs type="bible" key="1 Kor 10,12" rend="allusion">hvo som staaer, see til han ikke falder</rs>,</l> 
+                <l>Thi <seg type="com" n="com88">kun for hvem som ræddes er der Raad</seg>!</l>
+                <l>Fortørnes ei, min Ven, men tænk paa <rs type="myth" key="myth6">Balder</rs>,</l>
+                <l>Paa <rs type="myth" key="myth48">Lokes</rs> <seg type="com" n="com114">Argelist</seg>, paa <rs type="myth" key="myth133">Friggas</rs> Graad!</l>
+                <l>Ak! alle <rs type="myth" key="myth232">Vætter</rs> hun omsonst besværger,</l>
+                <l>Naar <rs type="myth" key="myth77">Urdas</rs> Skjold det <seg type="com" n="com133">ømme</seg> Sted ei værger!</l>
+                </lg> 
+                
+                <lg n="56">
+                     <l><pb type="edition" n="20" ed="PS"/>Hvad gavned fordum det vel Longo-Barden,</l> 
+                <l>At <rs type="myth" key="myth133">Frigga</rs> sikkrede ham <rs type="myth" key="myth59">Odins</rs> Gunst!</l>
+                <l>I Støvet dog han sank med <seg type="com" n="com89">Savoiarden</seg>,</l>
+                <l>For <seg type="com" n="com115">Billed-Skygger</seg> og for <placeName key="fak17">Romas</placeName> Konst;</l>
+                <l>For Rosen-Skyggerne paa Skjøge-Kinder</l>
+                <l>Han skrev i Glemme-Bogen <rs type="myth" key="myth138">Dans</rs> <seg type="com" n="com146">Kiærminder</seg>!</l>
+                </lg> 
+                
+                <lg n="57">
+                <l>Om under Kind igien han satte Haanden,</l> 
+                <l>Og kom ihu sin Ungdoms Kiærlighed,</l>
+                <l>Ak, tabt var dog hans Fyrighed i Aanden,</l>
+                <l>Trods Fjeder-Hammen sank dog halvt han ned;</l>
+                <l>Fra <seg type="com" n="com147">Ørne-Blik</seg> paa Kampen og paa Seiren,</l>
+                <l>Til Hjerne-Spind om Eventyr i Leiren!</l>
+                </lg> 
+                
+                <lg n="58">
+                <l>Hvad hialp Normannen selv det at saa længe</l> 
+                <l>Han kom ihu det Danske Tungemaal!</l>
+                <l>Han tabde ligefuldt i Blomster-Senge</l>
+                <l>Sit Danske Guld, om ei sit Norske Staal;</l>
+                <l>Og blev end Ridder han af <seg type="com" n="com117">Danner-Sproget</seg>,</l>
+                <l>I Sadlen dog han sad kun løst og kroget!</l>
+                </lg> 
+                
+                <lg n="59">
+                <l><pb type="text" facs="1819_342_3_fax016.jpg" ed="A" n="170"/>O, hvor du færdes da, og hvor du stædes:</l> 
+                <l>I Rosen-Lunden og paa Fjelde-Tind,</l>
+                <l>Hvor sødt der smiles og hvor ømt der grædes,</l>
+                <l>O, blændes ikke af det favre Skin!</l>
+                <l>O, aldrig <seg type="com" n="com118">glemme</seg> <persName key="pe2531">Blanca</persName>-<rs type="myth" key="myth19">Freias</rs> Sanger,</l>
+                <l>At <placeName key="fak14">Danmark</placeName> er Historiens <rs type="myth" key="myth324">Folkvanger</rs>!</l>
+                </lg> 
+                
+                <lg n="60">
+                     <l><pb type="edition" n="555" ed="US"/>Kun Daarer den Paamindelse behøve</l> 
+                <l>At <seg type="com" n="com119">ikke alt det Glimrende er Guld</seg>;</l>
+                <l>Men at <seg type="com" n="com90">for dyrt man kan selv Guldet kiøbe</seg>,</l>
+                <l>Fordi det Ædleste af Jord er Muld,</l>
+                <l>Det føler man sig fristet til at glemme,</l>
+                <l>Hvor Glands og Klang har, <hi rend="spaced">som det lader,</hi> hjemme!</l>
+                </lg> 
+                
+                <lg n="61">
+                     <l><pb type="edition" n="21" ed="PS"/>O, kom ihu, at paa sit Sted er Glandsen</l> 
+                <l>Kun hvor med Tiden ei den slides af,</l>
+                <l>Kun hvor den straaler paa <seg type="com" n="com91">Kiærminde-Krandsen</seg></l>
+                <l>I <rs type="myth" key="myth64">Sagas</rs> Hænder over Rosens Grav;</l>
+                <l>Vel <seg type="com" n="com126">Kiødet</seg> kan enstund med den <seg type="com" n="com148">opfarves</seg>,</l>
+                <l>Men kun i Aand og Sandhed kan den arves!</l>
+                </lg> 
+                
+                <lg n="62">
+                <l>O, kom ihu, at Velkang har kun hjemme,</l> 
+                <l>Hvor ei den trænger til et Fugle-Bryst,</l>
+                <l>Hvor uforgiængelig i <rs type="myth" key="myth64">Sagas</rs> Stemme,</l>
+                <l>Den giennemtoner Folkets Daad og Røst;</l>
+                <l>Kun <seg type="com" n="com92">leiet</seg> er den, hvor den koster Noget,</l>
+                <l>Thi der ei hører den til Hjerte-Sproget!</l>
+                </lg> 
+                
+                <lg n="63">
+                <l><pb type="text" facs="1819_342_3_fax017.jpg" ed="A" n="171"/>O mærk det vel, at hvad i <placeName key="fak17">Rom</placeName> man skuer,</l> 
+                <l>Det er ei Aandens, men kun Haandens Konst,</l>
+                <l>Som i dens Krønike, <seg type="com" n="com93">saa</seg> i dens <seg type="com" n="com120">Buer</seg>,</l>
+                <l>Man søger Aand og Hjerte kun omsonst;</l>
+                <l>Og Haandens Værk, er det vel meer i Grunden</l>
+                <l>End Vidnesbyrd om <seg type="com" n="com94">hvad der gik fra Munden</seg>!</l>
+                </lg> 
+                
+                <lg n="64">
+                <l>Med Farver kan man ingen <persName key="pe45">Christus</persName> male,</l> 
+                <l>End sige Ham af Stene hugge ud,</l>
+                <l>Kun <seg type="com" n="com95">Ordet</seg> skildrer Ham, naar Aander tale,</l>
+                <l>Og billedlig han sees kun i sin <seg type="com" n="com96">Brud</seg>;</l>
+                <l>Og <seg type="com" n="com96">Bruden</seg>, som hun dannes efterhaanden,</l>
+                <l>I <rs type="myth" key="myth64">Sagas</rs> Speil sig viser kun for Aanden!</l>
+                </lg>
+                
+                <lg n="65">
+                <l>Ja, Skjalden kun kan Mennesket afmale,</l> 
+                <l>Opreist af Støv i Himmellegems-Dragt,</l>
+                <l>Thi kun i Ord kan Aander sig udtale,</l>
+                    <l>Og Mennesket er <rs type="bible" key="Præd 12,7 og 2 Kor 3,6" rend="allusion">Aand med Støv i Pagt</rs>:</l>
+                <l>Kun <rs type="myth" key="myth64">Saga</rs> er den sande Billed-Hugger,</l>
+                <l>Hun danner Billeder, ei <seg type="com" n="com98">Drage-Dukker</seg>!</l>
+                </lg> 
+                
+                <lg n="66">
+                     <l><pb type="edition" n="22" ed="PS"/><pb type="edition" n="556" ed="US"/>Jeg veed det godt, at, i <seg type="com" n="com99">den sorte Skole</seg>,</l> 
+                <l>Enhver, som ei det kalder Salighed,</l>
+                <l>Med Klang og Farve og med Steen at bole,</l>
+                <l>Til Konstens Helvede fordømmes ned,</l>
+                <l>At <seg type="com" n="com100">tage Lod med</seg> <seg type="com" n="com101">Scyther</seg> og Barbarer,</l>
+                <l>Og Faare-Hovedernes fr<!-- JR: bogstav beskadiget -->omme Skarer!</l>
+                </lg> 
+                
+                <lg n="67">
+                <l><pb type="text" facs="1819_342_3_fax018.jpg" ed="A" n="172"/>Jeg veed det godt, men ikke stort jeg regner</l> 
+                <l><seg type="com" n="com102">De sorte Brætter</seg> og de spodske Smiil,</l>
+                <l>Jeg som Barbar mig trøstig selv betegner,</l>
+                <l>Og kaarer tryg den gamle Kirkes Stiil;</l>
+                <l>Jeg siger: det er <seg type="com" n="com103">Fæiskhed</seg>, naar Sjæle</l>
+                <l>Sig bøie for hvad ei engang kan mæle!</l>
+                </lg> 
+                
+                <lg n="68">
+                <l>Jeg siger høit, at hvad den f<!-- JR: svært at afgøre om det er s eller f VAP: fine-->ine Verden</l> 
+                <l>Nu kalder Sands for Konst og Poesie,</l>
+                <l>Netop, naar det af Andagt har Gebærden,</l>
+                <l>Er et <seg type="com" n="com125">opsminket</seg>, <seg type="com" n="com104">fuult</seg> Afguderie;</l>
+                <l>Det <hi rend="spaced">Classisk</hi> er, at Kiødets Lyst hernede</l>
+                <l>Vil under Skin af Aand sig selv tilbede!</l>
+                </lg> 
+               
+                <graphic style="longLine"/>
+            </div>
+            
+        </body>
+    </text>
+</TEI>
+

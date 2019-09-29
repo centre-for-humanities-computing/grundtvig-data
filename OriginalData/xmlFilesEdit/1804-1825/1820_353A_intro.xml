@@ -1,0 +1,924 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+      <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Bjowulfs Drape. Et Gothisk Helte-Digt fra forrige Aar-Tusinde af Angel-Saxisk paa Danske Riim<!-- ved Nik.  Fred. Sev. Grundtvig--></title>
+        <title rend="shortForm">Bjowulfs Drape</title>
+        <author>Vibeke A. Pedersen</author>       
+         <editor role="editor2">ph.d. Robert E. Bjork</editor>
+        <editor role="editor3">Klaus Nielsen</editor>
+           <editor role="editor1">Jon Tafdrup</editor>
+          
+           
+        
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.10</idno>
+          <idno type="technic">1.10.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>10 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2016-10-31">www.grundtvigsv&#x00E6;rker.dk, version 1.9, 31. oktober 2016</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1820_353A_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" target="1820_353A_intro.xml" xml:id="thisFile">Indledning</note>
+      </notesStmt>
+
+<!--
+      <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+      </notesStmt>
+           
+-->
+      
+        <sourceDesc><p /></sourceDesc>
+      
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+                  </editorialDecl>
+    </encodingDesc>
+        <revisionDesc> <change xml:id="VAP" who="VAP" when="2014-08-15">udfyldt og slettet i kopieret fil</change>
+          <change  who="VAP" when="2014-10-23">tilretninger i head og inkorporering af txt fra wp. </change>
+          <change  who="VAP" when="2015-02-06">tilføjelse af extra lit.henv. </change>
+          <change  who="VAP" when="2015-03-02">tilføjelse af flere stikord </change>
+          <change  who="VAP" when="2015-04-09">fjernet mæsling </change>
+          <change  who="VAP" when="2016-06-23">arbejdet på mange afsnit </change>
+          <change  who="VAP" when="2016-06-24">arbejdet på mange afsnit </change>
+          <change  who="VAP" when="2016-06-26">rettet efter overførte rettelser. Opmærket med 00-former</change>
+          <change  who="VAP" when="2016-06-27">forbedret mange afsnit. Flere opm. </change>
+          <change  who="VAP" when="2016-08-05">forbedret andre afsnit.begyndt udfyldning af title00 </change>
+          <change  who="VAP" when="2016-08-26">forbedret andre afsnit. </change>
+          <change  who="VAP" when="2016-08-29">forbedret andre afsnit efter genlæsning af to artikler. fundet flere henvisninger, der før var upræcise. Flere title00 mangler</change>
+          <change  who="VAP" when="2016-08-30">sidste rettelser</change>
+          <change  who="VAP" when="2016-09-01">indføring af sidste rettelser samt nogle ekstra</change>
+          <change  who="VAP" when="2016-09-12">indføring af første rettelser efter Jon</change>
+          <change  who="VAP" when="2016-09-13">rettelser efter Jon</change>
+          <change  who="VAP" when="2016-09-14">kontrol af rettelser efter Jon. Sendt til BOb</change>
+          <change who="VAP" when="2016-10-11">rettelser efter Bob</change>
+          <change who="VAP" when="2017-02-02">begyndende rettelser efter Klaus</change>
+          <change who="VAP" when="2017-02-21">fortsatte rettelser efter Klaus</change>
+          <change who="VAP" when="2017-03-02">kontrol af rettelser efter Klaus</change>
+          <change who="VAP" when="2017-03-03">smårettelser efter yderligere gennemlæsning</change>
+    </revisionDesc>
+    
+  </teiHeader>
+    <text type="intro">
+        <body>
+        
+     
+        <div>
+          <head xml:id="docIn1">Oversættelsens forhistorie</head>
+          <p rend="noIndent">Det oldengelske eller angelsaksiske digt <hi rend="italic"><rs
+              type="title" key="title3272">Sangen om Bjovulf</rs></hi> eller <hi rend="italic"><rs
+              type="title" key="title3272">Beowulf</rs></hi> er både indholdsmæssigt og kvantitativt
+          største digt i den angelsaksiske litteratur, en litteratur, der falder inden for perioden
+          ca. 450-1066. Digtet har en publikationshistorie, der i nyere tid begynder i Danmark.
+          Ganske vist havde henholdsvis <persName key="pe1673">Sharon Turner</persName> i 1805 og
+            <persName key="pe1380">John Josias Conybeare</persName> i 1814 udgivet hver sit mindre
+          udvalg i samtidsengelsk oversættelse, men det var den herboende islænding, etatsråd
+            <persName key="pe413">Grímur Jónsson Thorkelin</persName>, der i 1815 udgav hele digtet
+          på originalsproget med tilhørende oversættelse til latin: <rs type="title" key="title1855"
+              ><hi rend="italic">De Danorum Rebus Gestis Secul. III &amp; IV. Poëma Danicum Dialecto
+              Anglosaxonica. Ex Bibliotheca Cottoniana Musaei Britannici</hi></rs> (da. Om de
+          danskes bedrifter i det 3. og 4. århundrede. Et dansk digt i angelsaksisk sprogdragt fra
+          det Cottonske bibliotek i British Museum). To år efter <persName key="pe413">
+            Thorkelins</persName> udsendelse forsøgte svenskeren <persName key="pe4343"
+            >Gumælius</persName> sig med at oversætte et par sider til svensk (<rs type="title"
+            key="title4802">Gumælius 1817</rs>). Grundtvigs oversættelse til dansk efter denne
+          udgave blev i 1820 den første samlede oversættelse til et moderne europæisk
+          folkesprog.</p>
+          <div><head xml:id="docIn12">Digtet og håndskriftet på Grundtvigs tid</head>  
+            <p rend="noIndent"><persName key="pe413">Thorkelin</persName> var i 1785 blevet sendt
+            til England, Skotland og Irland af den danske konge for at opspore (og gerne købe) gamle
+            danske og norske håndskrifter. Han vendte først tilbage til Danmark i 1791, bl.a.
+            medbringende to afskrifter af manuskriptet til <hi rend="italic"><rs type="title"
+                key="title814">Bjovulf</rs></hi> fra <hi rend="italic"><rs type="title"
+                key="title814">Nowell Codex</rs></hi> &#x2014; den ene udført af ham selv med
+            latinsk håndskrift omkring 1786, den anden udført af en engelsk skriver med gengivelse
+            af håndskriftets tegn bogstav for bogstav (<rs type="title" key="title3569">Bjork
+              1996</rs>, s. 291 f., samt <persName key="pe413">Thorkelins</persName> egen fortale,
+              <rs type="title" key="title1855">1815a</rs>, s. XVII f.). Skriveren har formentlig
+            ikke kunnet angelsaksisk og vidste derfor ikke, hvad det var, han skrev
+            af<!--, så han har ikke ladet sig styre af, hvad han kunne mene, der stod-->. Begge
+            afskrifter er senere udgivet samlet i facsimile (<rs type="title" key="title3900">Malone
+              1951</rs><!-- LÅN  IGEN FRA REX - kan ikke lånes 2016-06-20-->). Såvel den afskrift,
+              <persName key="pe413">Thorkelin</persName> selv havde foretaget på British Museum i
+            London (<rs type="title" key="title4839">NkS 513, 4<hi rend="raised">o</hi></rs>), som den engelske skrivers
+              (<rs type="title" key="title4840">NkS 512, 4<hi rend="raised">o</hi></rs>) findes nu på Det Kongelige
+            Bibliotek i København.
+            <!--Det engelske originalhåndskrift var beskadiget efter en brand i
+            1731, hvilket bl.a. kan ses af de lakuner, <persName key="pe413">Thorkelins</persName> udgave har (nyere udgaver har selvfølgelig også en del lakuner).-->
+            Efter <persName key="pe413">Thorkelins</persName> eget udsagn skulle digtet være
+            udkommet kort efter 1807, hvis ikke englændernes bombardement af København samme år
+            havde standset hans videnskabelige arbejde og ødelagt store dele af hans bogsamling (<rs
+              type="title" key="title1855">Thorkelin 1815a</rs>, s. XV f.; <rs type="title"
+              key="title3569">Bjork 1996</rs> s. 294).
+            <!--Bortset fra en omtale i et engelsk katalog fra 1705 og nogle mindre publicerede uddrag kom digtet således først til den lærde europæiske republiks kendskab ved denne udgave, som <persName key="pe413">Thorkelin</persName> udsendte i 1815 (se <ref type="docIn" target="#docIn1">afsnittet om Oversættelses forhistorie</ref> eller <ref type="docOut" target="1817_306_11_intro.xml#docIn2">indledningen til <rs type="title" key="title3573">&#x201C;Om Bjovulfs Drape eller det af Hr. Etatsraad Thorkelin 1815 udgivne angelsachsiske Digt&#x201D;</rs></ref>). Da arbejdet endelig så dagens lys, var der tale om en synoptisk udgave med latinsk oversættelse og-->
+            Udgaven var synoptisk og indeholdt en række ordlister og registre (<rs type="title"
+              key="title1855">Thorkelin 1815a</rs>), se også <ref type="docOut"
+              target="1817_306_11_intro.xml#docIn2">indledningen til <rs type="title"
+                key="title3573">&#x201C;Om Bjovulfs Drape eller det af Hr. Etatsraad Thorkelin 1815
+                udgivne angelsachsiske Digt&#x201D;</rs></ref>. </p></div>
+          <div><head xml:id="docIn4">Grundtvigs kritik af Thorkelins udgave</head>Over adskillige
+          numre af <hi rend="italic"><rs type="title" key="title538">Nyeste Skilderie af
+              Kjøbenhavn</rs></hi><!-- nr. 60, 63, 64, 65 og 66, 1815, (sp. 945-952, 998-1002, 1009-1015, 1025-1030 og 1045-1047-->
+          (herefter <hi rend="italic"><rs type="title" key="title538">Nyeste Skilderie</rs></hi>)
+          anmeldte Grundtvig <persName key="pe413">Thorkelins</persName> udgave i juli og august
+          1815 (<rs type="title" key="title3395">Grundtvig 1815a</rs>). Anmeldelsen var kritisk over
+          for både udgaven og den anonyme anmelder af udgaven, der i numrene 26-29 af <hi
+            rend="italic"><rs type="title" key="title127">Dansk Litteratur-Tidende</rs></hi>
+          tidligere på året havde givet oversættelsen et positivt skudsmål (<rs key="title3819"
+            type="title">Müller udg. 1815</rs>). <persName key="pe413">Thorkelin</persName> svarede
+          Grundtvig over to numre af <hi rend="italic"><rs type="title" key="title538">Nyeste
+              Skilderie</rs></hi> (<!--nr. 67 og 68; --><rs type="title" key="title3563">Thorkelin
+            1815b</rs>), og Grundtvig responderede med endnu et
+          indlæg<!--, nr. 70, 71 og 72, 1815 (sp. 1105-1109, 1121-1125 og 1139-1145; --> (<rs
+            type="title" key="title3396">Grundtvig 1815b</rs>). Hovedpunktet i Grundtvigs kritik
+          var, at hverken <persName key="pe413">Thorkelin</persName> eller anmelderen havde
+          tilstrækkeligt kendskab til det angelsaksiske sprog og derfor ikke havde forstået værket.
+          Dertil kunne Grundtvig påpege, at <persName key="pe413">Thorkelin</persName> ikke kun
+          havde lavet fejl i sin oversættelse, men også i den angelsaksiske tekst. I tillæg til den
+          kritiske gennemgang oversatte Grundtvig selv en række uddrag. Anmeldelsen indledte en
+          polemik, hvor både <persName key="pe413">Thorkelin</persName> og anmelderen
+          <!--(formentlig <persName key="pe117">Peter Erasmus Müller</persName>)--> svarede igen. En
+          gennemgang af bidragene kan læses i <ref type="docOut" target="1815_253_intro.xml#docIn13"
+            >indledningen til <rs type="title" key="title3395">&#x201C;Et Par Ord om Bjovulfs
+              Drape&#x201D;</rs> og <rs type="title" key="title3396">&#x201C;Nok et Par Ord om
+              Bjovulfs Drape&#x201D;</rs> her</ref>. <note type="readMore">
+            <p>I fasc. <ref type="web" target="pubpub">431.14.a</ref> findes et udkast til et brev
+              fra Grundtvig til <persName key="pe413">Thorkelin</persName>, dateret 27. august 1815,
+              hvori Grundtvig undskyldte sin adfærd i striden.</p>
+          </note>
+          <p rend="noIndent"
+            ><!--I 1817 blev <persName key="pe413">Thorkelins</persName> oversættelse også anmeldt i Sverige af den antikvarinteresserede <persName key="pe4343">Gustaf Wilhelm Gumælius</persName>, der ligeledes havde prøveoversat nogle uddrag. --></p>
+        </div>
+          
+          <div><head xml:id="docIn41">Grundtvigs arbejde med stoffet</head>
+            <div><head xml:id="docIn521">Mæcenen Johan Bülow</head><p rend="noIndent">Allerede <persName key="pe413">Thorkelin</persName> havde i 1815 tilegnet sit
+              arbejde til embedsmanden, godsejeren og mæcenen <persName key="pe1376">Johan
+                Bülow</persName><!--: &#x201C;illustrissimus JOHANNES BULOWIUS, dynasta Sandeerumgaardi&#x201D; (da. &#x2018;Den yderst berømte <persName key="pe1376">Johan Bülow</persName> fra Sanderumgaard&#x2019; (overs. GV); <rs type="title" key="title1855">Thorkelin 1815a</rs>, s. XVI)-->.
+              Fra Sanderumgaard på Fyn havde <persName key="pe1376">Bülow</persName> siden
+              slutningen af 1700-tallet spillet en vigtig rolle i dansk kulturliv ved økonomisk at
+              understøtte personer og kulturhistoriske projekter, der næppe ellers ville være blevet
+              til noget. Efter striden med <persName key="pe413">Thorkelin</persName> om hans
+              oversættelse<!-- og Grundtvigs første oversættelsesforsøg (<rs type="title" key="title3395">Grundtvig 1815a</rs> og <rs type="title" key="title3396">1815b</rs>)-->
+              indgik Grundtvig i september 1815 en aftale med <persName key="pe1376"
+                >Bülow</persName> om at oversætte digtet med et forskud på 300 rigsbankdaler (<hi
+                rend="italic"><rs type="title" key="title7">Breve</rs></hi> 1, s. 374). <persName
+                key="pe1376">Bülows</persName> tålmodighed var stor, for arbejdet med oversættelsen
+              til dansk, som Grundtvig optimistisk havde anslået til at vare et halvt til et helt
+              år, kom til at tage fem. Undervejs i forløbet havde Grundtvig offentliggjort
+              brudstykker af arbejdet, og <persName key="pe1376">Bülow</persName> havde rykket
+              høfligt og forsigtigt. Den 25. december 1819 skrev han: &#x201C;De maae betænke, at
+              jeg, som er nær ved 70 Aar, ønsker at see det Arbeide paa Prænt inden jeg døer&#x201D;
+              og underskrev sig &#x201C;Deres Velærværdigheds ærbødige Tiener&#x201D; (<hi
+                rend="italic"><rs type="title" key="title7">Breve</rs></hi> 1, s. 525). Hans
+              taknemmelighed var stor, da værket endelig forelå: </p>
+              <p rend="quote">Nu ligger da <hi rend="spaced"><rs type="title" key="title326"
+                  >Biovulfs Drape</rs></hi> for mig, og glad, inderlig glad, er jeg derover. De har
+              forøget Deres Litteraire Fortienester og vor danske Litteratur med en herlig Tilvækst.
+              &#x2014; Nu kommer det mig til ærbødigst og erkiendtligst at takke Dem, fordi De har
+              hædret mit Navn, ved en saa udmærket Maade, at sætte det foran Deres skiønne Værk.
+              &#x2014; Vel har Ønsket stundom været levende hos mig, at Omstændighederne havde
+              tilladt, at <rs type="title" key="title326">Biovulfs Drape</rs> før var skiænket vort
+              Fædreneland; men aldrig har Tanken opstaaet hos mig, at klage over Udsættelsen, da jeg
+              vel vidste, at det De havde lovet, vilde De og holde naar Tid var, og at Værket ikke
+              vilde tabe ved Udsættelsen (29. juli 1820, <hi rend="italic"><rs type="title"
+                  key="title7">Breve</rs></hi> 1, s. 534 f.)</p></div>
+            <div>
+              <head xml:id="docIn411">&#x201C;Om Bjowulfs Drape&#x201D; 1817</head>
+              <p rend="noIndent">To år efter anmeldelsen i 1815 og indgåelsen af aftalen med
+                <persName key="pe1376">Bülow</persName>
+              <!--<p rend="noIndent">var Grundtvigs arbejde med teksten så fremskredent, at han kunne skrive en redegørelse for sine forpligtelser mod <persName key="pe1376">Johan Bülow</persName>, og hvad han hidtil havde udført (<ref type="web" target="XV-2_0063.pdf">fasc. nr. 309.1</ref>, 1817, <ref type="docOut" target="1820_353A_txr.xml#docIn2">se også tekstredegørelsen</ref>).</p><p rend="noIndent">I 1817 </p>-->udgav
+              Grundtvig <rs key="title3573" type="title">&#x201C;Om Bjovulfs Drape eller det af Hr.
+                Etatsraad Thorkelin 1815 udgivne angelsachsiske Digt&#x201D;</rs> i bind 2 af sit
+              eget tidsskrift <hi rend="italic"><rs type="title" key="title271"
+                >Danne-Virke</rs>,</hi> 1817 (<ref type="docOut"
+                target="1817_306_11_intro.xml#docIn8">se indledningen hertil</ref>). Heri fremlagde
+              han bl.a. den teori, at en af digtets personer, <rs key="myth406" type="myth"
+                >Bjovulfs</rs> morbror <rs type="myth" key="myth985">Hygelak</rs>, kunne placeres
+              historisk i det tidlige 500-tal som identisk med <persName key="pe2422"
+                >Chlochilaicus</persName>, der blev dræbt i det frisiske område mellem 515 og 530
+              (se fx <rs type="title" key="title3569">Bjork 1996</rs>, s. 295, <rs type="title"
+                key="title4856">Shippey 2001</rs>, s. 10; diskuteret og problematiseret af <rs
+                type="title" key="title3583">Christensen 2005</rs>, opsummering bl.a. s. 70). Hermed
+              rykker Grundtvig dateringen 200 år længere frem i tiden, end <persName key="pe413"
+                >Thorkelin</persName> havde antaget, for<!--givet i titlen med sit &#x201C;Secul. III &amp; IV&#x201D; (da. &#x2018;tredje og fjerde århundrede&#x2019;)-->
+              <persName key="pe413">Thorkelin</persName> havde tidsfæstet <rs type="myth"
+                key="myth406">Bjovulfs</rs> død til år 340 (<rs type="title" key="title1855"
+                >1815a</rs>, s. IX). Denne datering byggede på antagelsen af, at <rs type="myth"
+                key="myth406">Bjovulf</rs> er den samme som <rs type="myth" key="myth59">Odins</rs>
+              søn <rs type="myth" key="myth1371">Boe</rs>, der ifølge <persName key="pe7">Peter
+                Friederich Suhm</persName> faldt under et slag i Jylland år 340.
+              <!--Også titlen bringer en datering: &#x201C;Secul. III &amp; IV&#x201D; (da. &#x2018;det 3. og 4. århundrede&#x2019;; 200- og 300-tallet). -->Grundtvig
+              rykker derimod digtets handling frem til 500-tallet &#x2014; en datering, som moderne
+              forskere er enig med ham i. </p></div>
+            <div><head xml:id="docIn412">&#x201C;Stykker af Skjoldung-Kvadet&#x201D; 1819</head> <p rend="noIndent"><rs type="title" key="title4805">&#x201C;Stykker af Skjoldung-Kvadet eller <hi
+                  rend="italic">Bjovulfs Minde</hi>&#x201D;</rs> rummer ud over en lille
+              oversættelsesteoretisk indledning digtene <rs type="title" key="title3570"
+                >“Hjerte-Borgen”</rs>, <rs type="title" key="title3571">“Grændels Uvæsen”</rs> og
+                <rs type="title" key="title3572">“Bjovulf og Strand-Ridderen”</rs>, baseret på de
+              fire første sange af <hi rend="italic"><rs type="title" key="title3272"
+                >Bjovulf</rs></hi>-kvadet. Digtene
+              blev<!--, som alle relaterer til <rs type="title" key="title3272">Bjovulf</rs>-digtet, blev ligeledes-->
+              trykt i bind 4 af <hi rend="italic"><rs type="title" key="title272"
+                >Danne-Virke</rs></hi><!-- i nr. 4, s. 234-262,--> 1819. Disse
+              &#x2018;prøveballoner&#x2019; havde dog både versformer og formuleringer, der
+              adskiller sig væsentligt fra dem, man finder i den samlede oversættelse fra 1820.
+              <!--Fx ændrer borgen, der i 1819-digtet kaldes &#x201C;Hjerte-Borgen&#x201D;, navn til &#x201C;Hjorte&#x201D; i 1820-oversættelsen. De angelsaksiske ord, der ligger bag, er henholdsvis &#x2018;heoret&#x2019;, der betyder hjort, og &#x2018;heorte&#x2019;, der betyder hjerte. Borgens navn i det angelsaksiske digt er for det meste navnet &#x2018;Heorot&#x2019; &#x2014; en form af &#x2018;hjort&#x2019;.--></p></div>
+     </div> </div>
+         
+         
+          <div><head xml:id="docIn3">Digtets form og handling</head>
+            <p rend="noIndent"><rs type="title" key="title3272">Bjovulf</rs> er et episk heltedigt
+          på 3182 stavrimede linjer, opdelt i 43 afsnit. Grundtvig har dog opdelt digtet i kun 20
+          sange i førsteudgaven af oversættelsen fra 1820, som han ydermere samler til 17 i
+          andenudgaven fra 1865. En fremsigelse af det oprindelige oldengelske digt tager omkring
+          fire timer (meddelt mundtligt af <persName key="pe4479">Mark Bradshaw Busbee</persName>
+          oktober 2015).</p>
+            <p rend="noIndent">Digtets hovedperson er gøten <rs type="myth" key="myth406"
+            >Bjovulf</rs> eller <rs type="myth" key="myth406">Beowulf</rs>, der kommer den danske
+          kong <rs type="myth" key="myth62.b">Hrođgar</rs> (som svarer til den danske sagnkonge <rs
+            type="myth" key="myth62">Roar</rs>) til hjælp. <rs type="myth" key="myth62.b"
+            >Hrođgars</rs> store festsal, mjødhallen <rs type="myth" key="myth987">Heorot</rs>, er
+          nemlig blevet angrebet af søuhyret <rs type="myth" key="myth971">Grendel</rs>, der har
+          slået mange tapre krigere ihjel. Efter at <rs type="myth" key="myth406">Bjovulf</rs> har
+          overvundet <rs type="myth" key="myth971">Grendel</rs>, hævner <rs type="myth"
+            key="myth1116">Grendels mor</rs> sig ved at angribe hallen, og <rs type="myth"
+            key="myth406">Bjovulf</rs> besejrer hende siden efter en hård kamp under vandet.
+          Derefter drager han tilbage til gøterne og bliver deres konge. Et halvt århundrede senere
+          overvinder <rs type="myth" key="myth406">Bjovulf</rs> en drage, men bliver selv dødeligt
+          såret<!-- i denne hans tredje og sidste kamp mod uhyrer-->. Hans lig bliver derefter lagt
+          i en gravhøj ved kysten i Gøtaland. </p>
+           
+            <p rend="noIndent">Digtet rummer mest fiktion, men har dog omtale af personer og
+              begivenheder, som kendes fra historiske kilder, såsom kong <rs type="myth" key="myth985"
+                >Hygelacs</rs> angreb på Frisland i begyndelsen af 500-tallet. </p>
+            <p rend="noIndent">Opbygningen er både eventyrets og dannelseshistoriens. Vi møder en
+          yngling, som gennem kamp og prøvelser modnes til en vis og ansvarsfuld mand, der kommer
+          til at regere i henved 50 år. Fra et fortællermæssigt synspunkt går tretallet på bedste
+          eventyrvis igen: der er tre begravelser, tre kampe mod uhyrer; og den sidste store kamp
+          afsluttes efter tre fremstød.</p>
+           
+                     
+          </div>
+          
+          
+          <div><head xml:id="docIn2">Tidsfæstelse</head>
+            <div><head xml:id="docIn21">Begivenhedernes tid og sted: 500-tallet</head><p rend="noIndent">Handlingen i digtet finder sted i 500-tallet i det sydlige Skandinavien, nærmere
+            bestemt Danmark, som er befolket af både østdaner og vestdaner, samt de to svenske
+            landskaber Gøtaland og Svealand. Hertil kommer Nederlandene (Frisland). Hovedpersonen
+              <rs type="myth" key="myth406">Bjovulf</rs> er efterkommer af kong <rs type="myth"
+              key="myth67">Skjold</rs>, som der også henvises til i digtet. Det øvrige persongalleri
+            består af danere og gøtere, der holder til henholdsvis omkring sagnhistoriens Lejre ved
+            Roskilde (der dog ikke nævnes eksplicit) og i den sydlige del af Sverige, Gøtaland
+            (eller måske Gotland). De geografiske placeringer af de forskellige folkeslag er dog
+            temmelig usikre (se fx <rs type="title" key="title3583">Christensen 2005</rs>, s. 44 med
+            henvisninger). </p>
+          <p rend="noIndent">Der hersker en del tvivl om, hvad det er for et folk, som i digtet
+            kaldes &#x2018;<rs type="myth" key="myth1009">eotan</rs>&#x2019;, og som står under
+            friserkongen <rs type="myth" key="myth963">Finn</rs>. Grundtvig kalder dem
+            &#x201C;jætter&#x201D; eller &#x201C;joter&#x201D;, dog uden at mene, at de er identiske
+            med den nordiske mytologis <rs type="myth" key="myth111">jætter</rs>. <persName
+              key="pe2064">Andreas Haarder</persName> skriver: &#x201C;Det har været opfattet som
+            navnet på et særligt folk (&#x2018;jyder&#x2019;?), men karakteriserer muligvis
+            østfriserne som et kæmpefolk eller uhyrefolk (&#x2018;<rs type="myth" key="myth111"
+              >jætter</rs>&#x2019;), som <rs type="myth" key="myth984">Hermod</rs> er sat i
+            forbindelse med&#x201D; (<rs type="title" key="title387">Haarder 2001</rs>, s. 155). Det
+            er et kendt retorisk træk <!--&#x2014; fra inuitter til nazister &#x2014; -->at omtale
+            fjender som en form for umennesker, mens ens eget folk blot er mennesker.</p><!-- <p rend="noIndent">Derudover nævnes i fortalen HVILKEN FORTALE? en del konger fra de
+            forskellige engelske områder, Northumbrien og Bernicia, Essex, Mercia og Wessex.
+            Kongerne af Wessex bliver senere anerkendt som konger over hele England. Digtet kan
+            hermed siges at have interesse for hele Skandinavien og det nordvestlige Europa
+            (http://www.infernaldreams.com/names/Europe/Medieval/Anglo_Saxon.htm).</p>--><!-- -->
+              <note type="readMore">
+                <p rend="noIndent">I 1873 opdagede <persName key="pe4344">Guðbrandur
+                Vigfússon</persName> forbindelsen mellem det angelsaksiske <hi rend="italic"><rs
+                  type="title" key="title3272">Bjovulfkvad</rs></hi> og den oldislandske <hi
+                rend="italic"><rs type="title" key="title4831">Grettis saga</rs></hi> uden at
+              offentliggøre iagtagelsen. I sin udgave af <hi rend="italic"><rs type="title"
+                  key="title4858">Sturlungesagaen</rs></hi> fra 1878 anførte han fem år senere om
+                <hi rend="italic"><rs type="title" key="title4831">Grettis saga</rs></hi>
+              i<!-- prolegomenaet (--> forordet: &#x201C;The Mythical portion (chaps. 32-36, 64-67),
+              which is the most interesting to us as containing a late version of the famous <rs
+                type="title" key="title3272">Beowolf</rs> Legend [...] <rs type="myth"
+                key="myth1513">Grettis</rs> fight with <rs type="myth" key="myth1512">Glam</rs>, and
+              afterwards with the troll-wife and the monster below the water-fall, is thus the
+              Icelandic version of the Gothic hero's struggle with <rs type="myth" key="myth971"
+                >Grendel</rs> and his <rs type="myth" key="myth1116">witch-mother</rs>&#x201D; (<rs
+                type="title" key="title4841">Vigfússon 1878</rs>, s. xlix).</p>
+              </note>
+              <p rend="noIndent"><hi rend="italic"><rs type="title" key="title3272">Sangen om
+                Bjovulf</rs></hi> knytter an til den nordiske sagnhistorie ved at lade <rs
+              type="myth" key="myth406">Bjovulf</rs> være medlem af den sagnhistoriske slægt <rs
+              type="myth" key="myth1034">vægmundingerne</rs>, ligesom slægterne <rs type="myth"
+              key="myth115">skjoldungerne</rs> og <rs type="myth" key="myth276.a">skilfingerne</rs>
+            er repræsenteret. Samtidig er fortællerens synsvinkel kristen, idet der refereres til
+            den kristne skabergud (vers 90-98) og til ham, der styrer alting (se også <rs
+              type="title" key="title4857">Noack 1989</rs>, s. 143). Fortællinger med forbindelse
+            til <rs type="myth" key="myth115">skjoldungerne</rs> har muligvis deres oprindelse så
+            tidligt som det 500-tallet og er i Norden senere blevet brugt som grundlag for dele af
+              <persName key="pe237">Saxos</persName> latinsprogede <hi rend="italic"><rs
+                type="title" key="title83">Gesta Danorum</rs></hi> fra begyndelsen af 1200-tallet og
+            for <hi rend="italic"><rs type="title" key="title801">Rolf Krakes Saga</rs>,</hi> der er
+            en sen oldtidssaga (fornaldersaga), nedskrevet på oldislandsk <!--så sent som -->omkring
+            1450.</p></div>
+            
+            <div><head xml:id="docIn22">Tilblivelsens tid og sprog: 700-tallet</head>
+              <p rend="noIndent">Teksten har formentlig først eksisteret i mundtlig form og er
+            oprindelig opstået i <!--angelsaksisk sprogdragt, nærmere bestemt--> en vestsaksisk
+            dialekt. Det formodes, at digtet er blevet til i 700-tallet (jf. <rs type="title"
+              key="title387">Haarder 2001</rs>, s. 18). På dette tidspunkt var kristendommen kommet
+            til England. Kristendommen afspejles da også svagt, idet <persName key="pe1001"
+              >Kain</persName> nævnes, og flere steder henvises der til en almægtig gud. Det er ikke
+            usædvanligt, at episk digtning omhandler begivenheder, der foregår flere hundrede år
+            tidligere; det gør fx også <persName key="pe378">Homers</persName> værker og de
+            islandske sagaer.</p>
+              <note type="readMore"><p rend="noIndent"><rs type="myth" key="myth971">Grendel</rs>, der i digtet siges at nedstamme fra
+                <persName key="pe1001">Kain</persName> (vers 10-114), svarer ifølge <persName
+                key="pe413">Thorkelin</persName> til <rs type="myth" key="myth48">Loke</rs> i
+              nordisk mytologi (<rs type="title" key="title1855">Thorkelin 1815a</rs>, s. 261), en
+              sammenligning, der ikke har vundet hævd, og som Grundtvig heller ikke forholder sig
+              til. Grundtvig har i stedet tolket <rs type="myth" key="myth971">Grendel</rs> symbolsk
+                som &#x201C;Tidens [...] onde Aand&#x201D; (<rs type="title" key="title3573">1817b</rs>,
+              s. 279).</p></note>
+            </div> 
+            
+            <div><head xml:id="docIn23">Håndskriftets tid: omkring år 1000</head>
+              <p rend="noIndent">Digtet eksisterer kun i et eneste håndskrift fra ældre tid. Det
+            kaldes <hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs></hi> og har
+            bibliotekssignaturen &#x2018;Cotton Vitellius A xv&#x2019; (dvs. den reol, der bar
+            kejser <persName key="pe1423">Vitellius'</persName> navn, hylde A, nummer 15). Den del
+            af håndskriftet, der rummer fortællingen om <rs type="myth" key="myth406">Bjovulf</rs>,
+            er formentlig blevet til mellem år 975 og 1025, men rummer ingen forfatterangivelser,
+            ligesom det heller ikke senere er lykkedes at identificere en sådan. Håndskriftet findes
+            nu på British Museum i London, men stammer &#x2014; som signaturen angiver &#x2014;
+            oprindelig fra det private Cottonnianske Bibliotek. Kejsernavnet skyldes den tidligere
+            ejer, sir <persName key="pe4340">Robert Bruce Cotton</persName>, som havde organiseret
+            sit bibliotek i en række reoler, der hver var kronet af en buste af en romersk kejser.
+            Hans bibliotek lå i oprindelig i Westminster, nord for Parlamentet, og brød i brand i
+            forbindelse med den store brand i Parlamentet i 1731. Herunder blev også <hi
+              rend="italic"><rs type="title" key="title814">Nowell Codex</rs></hi> beskadiget.</p>
+            </div>
+          </div>
+        
+          
+          <div><head xml:id="docIn5">Grundtvigs oversættelse</head>
+            <p rend="noIndent"> Grundtvig, der selv var en habil latiner, har sat sig grundigt ind i
+            <persName key="pe413">Thorkelins</persName> latinske paralleltekst (<rs type="title"
+            key="title1855">Thorkelin 1815a</rs>). Men derudover anvendte han i årene 1815-1820 tid
+          og energi på at lære sig selv angelsaksisk. Han har således tilegnet sig en viden, som han
+          bruger, når han vurderer såvel <persName key="pe413">Thorkelins</persName> transskription
+          som hans oversættelse. Af udlånsprotokollen på Det Kongelige Bibliotek i København fremgår
+          det, at Grundtvig i september 1815 lånte den såkaldte kong <persName key="pe1379"
+            >Alfreds</persName> engelske oversættelse af <persName key="pe1390">Boëthius'</persName>
+          <hi rend="italic"><rs type="title" key="title4392">De consolatione philosophiae.
+              Anglo-Saxon</rs></hi> med tilhørende angelsaksisk tekst. Da han kunne parallellæse i
+          den latinske version, tilegnede han sig på denne måde et første kendskab til angelsaksisk
+          (se også fortalen, s. XXXI).</p>
+           
+            <p rend="noIndent">I tillæg til oversættelsen indeholder <hi rend="italic"><rs
+              type="title" key="title326">Bjowulfs Drape</rs></hi> fra 1820 andre tekster: To
+          tilegnelsesdigte på henholdsvis dansk og Grundtvigs eget angelsaksiske (s. [IV-XXII]), en
+          indledning (s. XXIII-LXXIV), <!--selve oversættelsen (s. 1-266),--> slutnoter (s. 267-312)
+          og et navneregister (s. 313-325). Slutnoterne diskuterer især læsemåder i <persName
+            key="pe413">Thorkelins</persName> to afskrifter. Grundtvigs navneregister er mere
+          omfattende end <persName key="pe413">Thorkelins</persName>, ikke mindst fordi han har
+          fundet flere personer i digtet. </p>
+       <!-- <p rend="noIndent">I sit eget tidsskrift, <hi rend="italic"><rs type="title" key="title3299"
+              >Danne-Virke</rs>,</hi> udgav han overblik over de faglige udfordringer, oversættelsen
+          medførte, og et par prøveoversættelser af udvalgte brudstykker (1817 og 1819), <ref
+            type="docOut" target="1817_306_11_intro.xml#docIn1">se indledningen til<rs type="title"
+              key="title3573"> &#x201C;Om Bjovulfs Drape eller det af Hr. Etatsraad Thorkelin 1815
+              udgivne angelsachsiske Digt&#x201D;</rs> her</ref>. </p>-->
+            
+            
+            <div><head xml:id="docIn52">Indledningen</head>
+              <p rend="noIndent">Grundtvigs indledning er en 50 sider lang afhandling om de to
+              <persName key="pe413">Thorkelin</persName>-afskrifter, som han ved hjælp af <persName
+              key="pe50">Rask</persName> havde fået adgang til, om selve <persName key="pe413"
+              >Thorkelins</persName> udgave og om de hjælpemidler, Grundtvig havde benyttet sig af
+            under arbejdet. Striden mellem Grundtvig og <persName key="pe413">Thorkelin</persName> i
+            1815<!--, som <persName key="pe413">Thorkelins</persName> på mange punkter mangelfulde udgave havde udløst, går Grundtvig let henover-->
+            berøres kun sparsomt.</p> 
+          <p rend="noIndent">Grundtvig uddyber sin datering af digtet og dets historievidenskabelige
+            anvendelighed. Han undersøger muligheden for at knytte digtets handlinger til historiske
+            begivenheder, der kendes fra andre kilder, og beskriver oversættelsesarbejdets
+            udfordringer,
+            <!--. Mange af de overvejelser, der ligger bag Grundtvigs oversættelser af-->fx navne på
+            folkestammer<!--, findes også her-->. Indledningen bringer også den første danske
+            oversættelse af det såkaldte <hi rend="italic"><rs type="title" key="title4403"
+                >Finnsborgfragment</rs></hi> (en krigsberetning, der kan knyttes til slagscener i
+              <hi rend="italic"><rs type="title" key="title3272">Bjovulf</rs></hi>-digtet) opstillet
+            parallelt med den angelsaksiske tekst (s. XL-XLV). </p>
+          <p rend="noIndent">Om selve digtet skriver Grundtvig, at det er velegnet for børn og unge,
+            idet det hverken er tysk vidtløftigt eller oldislandsk koncentreret, ligesom handlingen
+            er ærbar, og har en religiøs grundtone (s. LII).</p>
+              
+            </div>
+       <div><head xml:id="docIn54">Grundtvig som oversætter</head>
+         <p rend="noIndent">Grundtvig oversætter meget frit &#x2014; man kan med større ret sige, at
+            han omdigter. Det er derfor sjældent en vers-til-vers overensstemmelse mellem forlæg og
+            oversættelse. Ofte bruger han flere verslinjer på at oversætte ét vers i originalen (<rs
+              type="title" key="title24">Toldberg 1946</rs>, s. 119; <rs type="title"
+              key="title4857">Noack 1989</rs>, s. 144 med henvisninger). Selv udtrykte han det som
+            forskellen på at &#x2018;tiltælle&#x2019;, egl. optælle og overrække &#x2014; men i
+            betydningen oversætte ord for ord &#x2014; og &#x2018;tilveje&#x2019;, egl. tildele
+            efter vægt &#x2014; men med meningen at oversætte efter betydning (s. XXXIV). Han hævder
+            selv, at oversættelsen er både historisk og poetisk tro (s. XXXIV). I forbindelse med en
+            anden angelsaksisk tekst (om slaget ved Brunanburgh), som han bringer i bind 2 af <hi
+              rend="italic"><rs type="title" key="title271">Danne-Virke</rs>,</hi> har Grundtvig
+            skildret sin<!-- konkrete &#x2014; og dermed også generelle &#x2014;-->
+            oversættelsesproces. Efter en prosagennemgang med mange diskussioner om enkeltord og
+            henvisninger til andre sproglige og historiske kilder opsummerer han:</p>
+        
+           <p rend="quote">Saaledes maa da Rimets Ord udtydes, men dermed er i mine Tanker Rimet
+            ingenlunde oversat eller fordansket, det ligger som et Liig til Ravn og Ulv, og <hi
+              rend="spaced">Aanden</hi> er borte, denne vil jeg nu søge at gribe og lade tale saa
+            godt den kan med min danske Tunge, uden at udsige Andet end den gamle Skjald, og det er,
+            som man veed, hvad jeg kalder at <hi rend="spaced">oversætte Digte</hi> [...] (<rs
+              type="title" key="title4835">Grundtvig 1817a</rs>, s. 79).</p>
+         
+         <p rend="noIndent">Spørgsmålet om en oversættelses kvalitet lader sig i øvrigt ikke afgøre
+            kategorisk, men afhænger af dens målsætning og funktion. Oversættelsesteoretikeren
+              <persName key="pe1745">Louis G. Kelly</persName> skelner mellem tre forskellige
+            kategorier af oversættelser, alt efter hvor meget enten originalteksten eller
+            oversætteren dominerer i målsproget (<rs type="title" key="title3401">1979</rs>, s.
+            68–108). Oversættelser, der prøver at gøre originalteksten tilgængelig på et andet
+            sprog, men samtidig ønsker at bevare dens egenart, kalder han “symbol”. Her underkaster
+            oversætteren sig originalteksten og gengiver den så bogstavtro som muligt, selv om det
+            kan være på bekostning af den sproglige udformning. Det er sådan, <hi rend="italic"><rs
+                type="title" key="title4403">Finnsborg-fragmentet</rs></hi> med støtte i <rs
+              type="title" key="title5259">Rytter 1921</rs> er oversat i nærværende
+            udgave<!-- i <ref type="docOut" target="1820_353A_com.xml#docIn2115">kommentaren</ref> til Grundtvigs oversættelse-->.
+            Med “symptom” betegner <persName key="pe1745">Kelly</persName> derimod oversættelser,
+            der først og fremmest prøver at overføre tekstens <hi rend="italic">indhold</hi>. Hvis
+            det skønnes nødvendigt for forståelsen, kan oversætteren her sagtens tilpasse teksten
+            til modtagersprogets billedunivers. Grundtvigs arbejde falder dog snarere inden for
+              <persName key="pe1745">Kellys</persName> sidste kategori, “signal”, hvor teksten
+            yderligere tilpasses en bestemt ideologisk målsætning i modtagerkulturen. Den slags
+            oversættelser kan derfor fjerne sig meget langt fra
+            originalsteksten.<!-- Selv ville Grundtvig dog nok mene, at hans oversættelse i <persName key="pe1745">Kelly'ske </persName>termer var “symptom”.--></p>
+          <p rend="firstIndent"><!--Så hvis man læser -->Grundtvigs
+            <!--arbejde med forventning om et resultat, der svarer til de to første kategorier, bliver man selvfølgelig skuffet. O-->oversættelse
+            giver langt fra svar på, hvad der <hi rend="italic">præcis</hi> står i den angelsaksiske
+            original, simpelthen fordi den ikke er tænkt som en filologisk oversættelse. Den
+            fungerer dog fint på de præmisser, den er skrevet ud fra, nemlig som en helstøbt
+            litterær enhed med en ideologisk dagsorden,<!-- præcis som man kunne sige om --> hvilket
+            også gælder hans oversættelser af <persName key="pe237">Saxo</persName> og <persName
+              key="pe49">Snorre</persName>, som han arbejdede på i samme
+            tidsrum<!--, hvor <rs type="title" key="title3272">Bjovulf</rs>-oversættelsen blev til-->. </p>
+         
+            <p rend="firstIndent"><persName key="pe67">Toldberg</persName> beskriver den udvikling i
+            Grundtvigs oversættelsesmetode, der finder sted i løbet af de fem år, Grundtvig arbejder
+            på <hi rend="italic"><rs type="title" key="title326">Bjowulfs Drape</rs></hi>,
+            således:</p>
+            <p rend="quote">Vil man sammenholde de to redaktioner 1817 [dvs. <rs type="title"
+              key="title3573">Grundtvig 1817b</rs>] og 1820 med forlægget, forekommer der faa
+            afgørende betydningsforskelle. Skal der siges noget til grundkarakteristik, maa det
+            snarest være, at udg. 1820 betegner et fremskridt i retning af inderlighed i tonen (<rs
+              type="title" key="title24">Toldberg 1946</rs>, s. 120).</p>
+          
+          <p rend="firstIndent">Ved denne inderlighed forstår Toldberg formentlig, at Grundtvig gør
+            stoffet så meget til sit eget, at hans kristne grundsyn nu skinner klarere igennem,
+            ligesom Grundtvig trækker på et ordforråd, der ligger etymologisk længere fra
+            originalens. I øvrigt ses det, at Grundtvig bliver dygtigere til angelsaksisk i løbet af
+            de år, han arbejder på oversættelsen. Fx lader han &#x201C;Gjolid&#x201D; (fra <rs
+              type="title" key="title1855">Thorkelin 1815a</rs>, s. 169, linje 23: &#x201C;Gio
+            li&#x00FE;o&#x201D;) være en person i essayet fra 1817 (<rs type="title" key="title3573"
+              >Grundtvig 1817b</rs>, s. 253). Denne fejltagelse begår han ikke i 1820. En
+            autoriseret udgave har på dette sted &#x201C;gioh&#x0111;o&#x201D;, (angelsak., sorg,
+            omsorg; <rs key="title3379" type="title">Fulk m.fl. 2008</rs>, vers 2267). </p></div>
+            <div><head xml:id="docIn53">Form, genre og metrik</head>
+              <p rend="noIndent">Hvad angår formen, skriver <persName key="pe52">Flemming
+              Lundgreen-Nielsen</persName> om gendigtningen, at den “er fri af forlæggets metrik og
+            stil, snart holdt i folkeviselignende former, snart i moderne romantiske
+            kunstballader&#x201D; (<rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s.
+            861). Det folkeviselignende går ikke alene på formen, men også på ordforrådet, fx
+            højeloft, fuld- som forstærkende præfiks, liljevånd om kvinder, tilje for gulv. Enkelte
+            angelsaksiske kenninge, som kan minde om de oldislandske, optræder ligeledes, fx
+            &#x201C;Hvalers Vei&#x201D; for havet, som Grundtvig bibeholder. </p>
+          <p rend="noIndent">Grundtvig kalder selv sit værk for et &#x2018;drape&#x2019;. Hermed
+            skriver han sig ind i den norrøne poetiske tradition, hvor drape (eller drapa) betegner
+            en bestemt digtform, der især anvendes til forherligelse af en fremragende mands
+            bedrifter. Det er dog ikke drapets stramme, bogstavrimede form med omkvæd (stev),
+            Grundtvig benytter, selv om første sang og indskud i flere af de øvrige sange er skrevet
+            i kortlinjeform. Hans 20 sange er skrevet i varierende versemål &#x2014; selv inden for
+            samme sang. Grundtvig skriver således både stikisk og strofisk, idet de brede, stikiske,
+            rimende passager afbrydes af indlagte strofiske sange, indimellem med omkvæd. Disse
+            indlagte sange bruges gerne til at skabe en fortælling i fortællingen, når fx en skjald
+            skal forherlige en begivenhed eller berette om fortidens bedrifter (fx 18. sang, s.
+            212-216).</p>
+          <p rend="noIndent">Når Grundtvig bruger kortlinjer, der imiterer forlægget, sker det uden
+            regelmæssige bogstavrim. Den almindeligste verseform består af rimede treslagsjamber med
+            skiftevis mandlige og kvindelige rim, der giver en energisk rytme, som er velegnet til
+            det episke indhold.</p>
+            <note type="readMore">
+              <p>I modsætning til Grundtvig havde svenskeren  <persName key="pe4343"
+                >Gumælius</persName> i sin anmeldelse fra 1817 af <persName key="pe413"
+                >Thorkelins</persName> udgave forsøgt at oversætte enkelte passager til svensk i et
+              bogstavrimet kortlinjeversemål, der mindede om fornyrðislag (dvs. en strofeform med
+              ottelinjede strofer, hvor versene bindes sammen to og to med bogstavrim; <rs
+                type="title" key="title4802">Gumælius 1817</rs>, s. 138-140).</p>
+            </note></div>    
+       
+            <div><head xml:id="docIn51">Grundtvigs hjælper og hjælpemidler</head>
+              <div>
+                <head xml:id="docIn511">Sprogmanden Rasmus Rask</head>
+                <p rend="noIndent">I forbindelse med <rs type="title" key="title3272"
+              >Bjovulf</rs>-oversættelsen havde Grundtvig slået sig sammen med sprogmanden <persName
+                key="pe50">Rasmus Rask</persName>. <persName key="pe50">Rask</persName> måtte dog
+              forlade projektet i oktober 1816, efter at han og Grundtvig havde arbejdet sig igennem
+              de første 14 sange (<rs type="title" key="title3573">Grundtvig 1817b</rs>, s. 214),
+              fordi <persName key="pe50">Rask</persName> havde fået understøttelse af <persName
+                key="pe1376">Bülow</persName> til en sproghistorisk ekspedition til Asien via
+              Sverige. I 1817 i udgav <persName key="pe50">Rask</persName> fra Stockholm en
+              oldengelsk grammatik, <hi rend="italic"><rs type="title" key="title4396">Angelsaksisk
+                  Sproglære tilligemed en kort Læsebog</rs>,</hi> der var blevet til netop under
+              arbejdet med<rs type="title" key="title326"> Bjovulf</rs>, og som Grundtvig straks
+              benyttede sig af.</p></div>
+              
+              <div><head xml:id="docIn512">Thorkelins latinske oversættelse </head><p rend="noIndent">Først og fremmest har Grundtvig dog anvendt <persName key="pe413"
+                >Thorkelins</persName> udgave &#x2014; også selv om han havde mange kritikpunkter
+              til såvel oversættelse som tekstudgivelsen (<rs type="title" key="title3395">Grundtvig
+                1815a</rs>). Via <persName key="pe50">Rask</persName> havde Grundtvig fået adgang
+              til <persName key="pe413">Thorkelins</persName> to manuskripter (som han kalder
+              henholdsvis &#x201C;første Afskrift&#x201D; og &#x201C;anden Afskrift&#x201D; (s.
+              267); og i noterne foreslår han mange alternative læsemåder ud fra disse
+              (konjekturalkritik), som han mener, at <persName key="pe413">Thorkelin</persName>
+              burde have bragt i udgaven. </p><p rend="noIndent"><persName key="pe413">Thorkelins</persName> udgave er ud over den latinske
+              parallel til <hi rend="italic"><rs type="title" key="title3272">Sangen om
+                Bjovulf</rs></hi> forsynet med et længere forord på latin til læseren (<rs
+                type="title" key="title1855">Thorkelin 1815a</rs>, s. VII-XVIII; dette er oversat til
+              engelsk i <rs type="title" key="title3569">Bjork 1996</rs>, s. 303-317).</p><p rend="noIndent">I forordet angiver <persName key="pe413">Thorkelin</persName> sine
+              udgivelsesprincipper således:</p>
+           <p rend="quote"
+              ><!--Cæterum in textu edendo ita versatus sum, ut ab autographo, et vago scribæ pro more sui seculi orthographiæ mirum negligentis, et alia absurde, alia violenter detorqventis literatum usu ne ungvem latum recedere tutum duxerim&#x201D; (da. -->I
+              øvrigt har jeg ved min udgivelse af teksten betragtet det som forsvarligt ikke at vige
+              en hårsbred fra håndskriftet eller skriverens inkonsekvente skrivemåde, når han efter
+              datidens skik til vor forundring ser bort fra ortografien og ufornuftigt fordrejer
+              teksten eller begår vold mod den (overs. GV; <rs type="title" key="title1855"
+                >Thorkelin 1815a</rs>, s. XVIII).
+              <!-- <persName key="pe413">Thorkelins</persName> udgave var i øvrigt forsynet med en ordliste, en poetisk begrebsliste samt et personregister.-->
+            </p>   
+                <p rend="noIndent">Ikke desto mindre deler han med vilje ofte sammensatte ord i to,
+              for at læseren lettere kan se de etymologiske rødder (s. XVIII). <persName key="pe413"
+                >Thorkelin</persName> mente, at det danske sprog stammede fra det angelsaksiske.
+              Dette er en teori, der hverken i 1815 havde eller nu har tilhængere (se fx <rs
+                type="title" key="title5257">Hyllested 2016</rs>, s. 125-155, især s. 129-131). Hvad
+              angår de ældre nordeuropæiske sprogs indbyrdes forhold skriver Grundtvig:</p>
+            <p rend="quote">Det er i Angel-Sachsernes Skrifter vi have de meest utvivlsomme
+              Levninger af det Gamle Nordens poetiske Sprog, hvori vi skal lære at kjende og fatte
+              dets Aand, og det udgjør, med Dansk, som Nordens Hjerte-Sprog, eller, om man vil,
+              historiske Tungemaal, og med Norsk, som vi maae kalde Nordens sandselige eller
+              naturlige Sprog, en Trehed, som de gamle Islændere stræbde at forbinde (s. LXVIII).
+                </p></div>
+              
+              <div><head xml:id="docIn513">Angelsaksiske håndbøger</head><p rend="noIndent">I sin tid havde havde Grundtvig lært sig selv oldislandsk. Ved hj&#x00E6;lp af
+              faderens udgave af <persName key="pe58">Finnur J&#x00F3;nssons</persName>
+              <hi rend="italic">
+                <rs type="title" key="title10">Historia ecclesiastica Islandi&#x00E6;</rs>
+              </hi> (da. Islands Kirkehistorie; 1772-1778), hvori der findes en latinsk
+              overs&#x00E6;ttelse af teksten, havde Grundtvig udarbejdet en islandsk ordliste (se
+                <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 117-118). Et
+              intensivt studium i sommeren 1804 medførte, at Grundtvig i l&#x00F8;bet af kun ni uger
+              &#x2013; uden l&#x00E6;reb&#x00F8;ger, ordb&#x00F8;ger eller andre
+              opslagsv&#x00E6;rker &#x2013; l&#x00E6;ste og tilegnede sig indholdet af flere tusinde
+              sider oldislandsk.
+              <!--Selv om der eksisterede paralleltekster p&#x00E5; latin til nogle af teksterne, er det en imponerende indsats. -->Denne
+              sproglige kraftanstrengelse og hans sprognemme kom ham til gode, da han skulle lære
+              angelsaksisk, også fordi angelsaksisk grammatik minder meget om den oldislandske,
+              ligesom de to sprogs ordforråd på mange punkter kan føres tilbage til et fælles
+              urgermansk udgangspunkt (se fx <rs type="title" key="title5257">Hyllested 2016</rs>,
+              s. 132). Det fremgår af Grundtvigs noter fra årene 1815-1820, at han har haft adgang
+              til <persName key="pe1526">Edward Lyes</persName> ordbog, <hi rend="italic"><rs
+                  type="title" key="title3181">Dictionarium Saxonico et Gothico-Latinum</rs></hi>
+              (da. Saksisk og gotisk-latinsk ordbog) fra 1772. Hans mange noter viser, at han
+              flittigt har brugt denne ordbog ved oversættelsen. Selv den dag i dag eksisterer der
+              ikke en angelsaksisk-dansk ordbog.</p>
+                <p rend="noIndent">Hertil kommer <persName key="pe1378">George Hickes'</persName> og
+                <persName key="pe1377">Humfrey Wanleys</persName>
+              <hi rend="italic"><rs type="title" key="title3561">Antiquæ Literaturæ Septentrionalis
+                  libri duo </rs></hi> (da. Gammel nordisk litteratur i to bind) fra 1703-1705, der
+              dels består af en bibliografi, <hi rend="italic"><rs type="title" key="title3561"
+                  >Librorum Vett. Septentrionalium, qui in Angliæ Bibliothecis extant
+                [...]</rs></hi> (da. Bog om nordiske oldsager, som findes i engelske biblioteker) og
+              en grammatik, <hi rend="italic"><rs type="title" key="title3561">Librorum Vett.
+                  Septentrionalium Thesauri Grammatico-critici et archæologici [...] seu Grammaticæ
+                  Islandicæ Rudimenta</rs></hi> (da. &#x2018;Grammatisk-kritisk og historisk ordbog
+              over Nordens gamle sprog [...] eller rudimentær islandsk grammatik&#x2019;), som bl.a.
+              indeholdt et optryk islændingen <persName key="pe4379">Runólfur Jónssons</persName>
+              over 50 år gamle islandske grammatik (fra 1651), der var den første af sin art. </p>
+            <p rend="noIndent">Til støtte for de historiske oplysninger havde Grundtvig desuden
+              benyttet sig af skriftserien <hi rend="italic"><rs type="title" key="title1172"
+                  >Scriptores Rerum Danicarum Medii &#x00C6;vi, </rs></hi> (da. Danmarks
+              middelalderlige historieskrivere [...]), der var grundlagt af <persName key="pe920"
+                >Jacob Langebek</persName> og begyndte at udkomme i 1772. Hertil kommer <persName
+                key="pe7">Suhms</persName>
+              <hi rend="italic"><rs type="title" key="title3481">Critisk Historie af Danmark, udi
+                  den hedenske Tid, fra Odin til Gorm den Gamle</rs></hi> samt <persName key="pe237"
+                >Saxos</persName>
+              <hi rend="italic"><rs type="title" key="title83">Gesta Danorum</rs></hi> (da. Danernes
+              Bedrifter), som Grundtvig selv var igang med at oversætte.</p>
+                <p rend="noIndent">Herudover har han orienteret sig bredt i tidlig europæisk, særlig
+              engelsk, middelalderhistorie, hvorfor kun de vigtigste værker skal nævnes her. Det
+              drejer sig om <persName key="pe3727">Edward Gibsons</persName>
+              <hi rend="italic"><rs type="title" key="title3596">Chronicon Saxonicum</rs></hi> (da.
+              Den saksiske Krønike) fra 1692, <persName key="pe1384">Thomas Hearnes'</persName>
+              <hi rend="italic"><rs type="title" key="title4395">Textus roffensis. Accedunt,
+                  professionum antiquorum Angliæ Episcoporum Formulæ</rs></hi> (da.
+              Rochester-teksten [...] efter gamle Oxford-manuskripter [...]) fra 1720 og endelig
+                <persName key="pe1404">Henry Saviles</persName> endnu ældre <hi rend="italic"><rs
+                  type="title" key="title4393">Rerum Anglicarum scriptores post Bedam
+                praecipui</rs></hi> (da. Sager om engelske historieskrivere efter Beda [...]) fra
+              1596.</p>
+            <p rend="noIndent">Grundtvig diskuterer med og henviser direkte til disse værker i
+              fortale og noter.</p></div>
+              <div><head xml:id="docIn55">Grundtvigs egne optegnelser</head><p rend="noIndent">I Grundtvig-arkivet på Det Kongelige Bibliotek findes desuden hans eget eksemplar
+              af <persName key="pe413">Thorkelins</persName> udgave (forsynet med kommentarer og
+              rettelsesforslag, <ref type="web" target="XV-2_0056.pdf">se fasc. 306</ref>) og en
+              række efterladte manuskripter, der viser, hvordan Grundtvig både arbejdede med
+              ordforrådet (gloselister), med indholdet (prosareferater) og formen (flere
+              gendigtningsforsøg i forskellige versemål). Dette kan man danne sig et overblik over i
+                <ref type="docOut" target="1815_353A_txr.xml#docIn2">tekstredegørelsen</ref>.
+              Allerede i <hi rend="italic"><rs type="title" key="title538">Nyeste
+                Skilderie</rs></hi> 1815 havde Grundtvig foretaget en prøveoversættelse af
+              begyndelsen af digtet (<rs type="title" key="title3395">1815a</rs>, sp. 948-951).</p></div></div>
+          </div>
+          
+          <div>
+        <head xml:id="docIn6">Modtagelsen og efterlivet</head>
+        <p rend="noIndent">Grundtvig havde forestillet sig, at det historiske emne i sig selv var
+          nok til at interessere en større offentlighed, men han blev skuffet. <persName key="pe52"
+            >Flemming Lundgreen-Nielsen</persName> skriver, at Grundvigs oversættelse overhovedet
+          ikke blev recenseret i Danmark, men derimod i Tyskland med nogen forsinkelse, både i <hi
+            rend="italic"><rs type="title" key="title4798">Ergänzungsblätter zu Jenaischen
+              Allgemeinen Literatur-Zeitung</rs></hi> april 1822 af <persName key="pe4478">Hans
+            Gardthausen</persName> og anonymt i <hi rend="italic"><rs type="title" key="title4804"
+              >Göttingische gelerthe Anzeigen</rs></hi> januar 1823. Begge var positive, især
+          anonymen, der efter Grundtvigs senere oplysninger var den tyske sprog- og oldtidsforsker
+          og folkemindesamler <persName key="pe787">Jacob Grimm</persName> (<rs type="title"
+            key="title14">Lundgreen-Nielsen 1980</rs>, s. 861 f.).</p>
+        <p rend="noIndent">Ikke desto mindre vendte Grundtvig tilbage til det angelsaksiske flere
+          gange i sit liv. I forbindelse med sine rejser til England (1829, 1830 og 1831) stiftede
+          han bekendtskab med endnu et angelsaksisk digt. Det stammede fra 800-tallet, havde
+          forbindelse til tidlig engelsk kristendom og nåede i 1840 ud til publikum i Grundtvigs
+          danske oversættelse med tilhørende angelsaksisk tekst: <hi rend="italic"><rs
+              key="title3581" type="title">Phenix-Fuglen. Et angelsachisk Kvad førstegang udgivet
+              med Indledning, Fordanskning og Efterklang</rs></hi> (se også <rs key="title3923"
+            type="title">Bjork 2003</rs>). </p>
+        <p rend="noIndent">Selve den angelsaksiske tekst til <hi rend="italic"><rs type="title"
+              key="title3272">Sangen om Bjovulf</rs></hi> blev med mange forbedringer i forhold til
+            <persName key="pe413">Thorkelins</persName> udgivet af Grundtvig i 1861, <hi
+            rend="italic"><rs key="title749" type="title">Beowulfes Beorh eller Bjovulfs-Drapen, det
+              old-angelske Heltedigt, paa Grund-Sproget</rs>.</hi>
+        </p>
+        <p rend="noIndent">Endelig udgav Grundtvig i 1865 under titlen <hi rend="italic"><rs
+              key="title1406" type="title">Bjovulvs-Drapen, et Høinordisk Heltedigt, fra
+              Anguls-Tungen fordansket</rs></hi> endnu en oversættelse af
+          teksten.<!--<hi
+                        rend="italic"><rs type="title" key="title3272">Bjovulfs Drape</rs>.</hi>-->
+          Man kan bemærke, at efter nederlaget til Tyskland i 1864 er ordet &#x201C;Gothisk&#x201D;
+          &#x2014; som i mellemtiden har skiftet konnotationer fra gøtisk, dvs. en slags svensk, til
+          germansk, dvs. tysk &#x2014; forsvundet fra titlen til fordel for
+          &#x201C;Anguls-Tungen&#x201D;. I andenudgaven er flere af sangene slået sammen i forhold
+          til 1820-udgaven (se <rs type="title" key="title3582">Malone 1960</rs>, s. 21 f.), ligesom
+          mange passager er helt nyoversatte &#x2013; ikke mindst på grundlag af Grundtvigs
+          forbedrede kendskab til angelsaksisk. </p>
+        <p rend="noIndent">Hertil kommer, at Grundtvig omtaler store dele af det bjovulfske
+          persongalleri i <hi rend="italic"><rs type="title" key="title3454">Græsk og Nordisk
+              Mythologi for Ungdommen</rs></hi> fra 1847 (<ref type="docOut"
+            target="1847_874_intro.xml#docIn8">se indledningen til denne her, afsnittet om
+            hovedkilder til den nordiske mytologi</ref>). </p>
+      </div>
+          
+          <div type="litList">
+          <head  xml:id="docIn7">Anvendt litteratur</head>
+         <div> 
+            <head  xml:id="docIn71">Trykt</head>
+          <list type="litList">
+           <!-- <item>    <span type="proofread"/><rs type="title" key="title3272"><hi rend="italic">Sangen om Bjovulf</hi></rs></item>
+          
+            <item><span type="proofread"/>(1803-1838) <rs type="title" key="title538"><hi rend="italic">Nyeste Skilderie af Kjøbenhavn</hi></rs>København</item>-->
+            
+            <item>Boethius, Anicius Manlius Severinus (1698) <rs type="title" key="title4392"><hi
+                  rend="italic">Consolationis Philosophiæ libri V. Anglo-Saxonice redditi ab
+                  Alfredo, Inclyto Anglo-Saxonum Rege</hi></rs> udg. Christopher Rawlinson.
+              Oxford</item>
+            <item>Bjork, Robert E. (1996) <rs type="title" key="title3569">“Grímur Jónsson
+                Thorkelin's Preface to the First Edition of <hi rend="italic">Beowulf</hi>,
+                1815”</rs> i <hi rend="italic"><rs type="title" key="title2457">Scandinavian
+                  Studies</rs></hi>, 68:3, s. 291-320. Illinois<!--University of Illinois--></item>
+            <item>Bjork, Robert E. (2003) <rs type="title" key="title3923">“N.F.S. Grundtvig's 1840
+                Edition of the Old English <hi rend="italic">Phoenix</hi>: A Vision of a Vision of
+                Paradise”</rs> i <hi rend="italic"><rs type="title" key="title3924">Unlocking the
+                  Wordhord: Anglo-Saxon Studies in Memory of Edward B. Irving, Jr.</rs>,</hi> udg.
+              Mark C. Amodios, s. 217-239. Toronto, Buffalo &amp; London</item>
+            <!--Bradley, Sid A.J. (2000) <rs type="title" key="title3925">“A Truly Proud Ruin: Grundtvig and the Anglo-Saxon Legacy”</rs> i <hi rend="italic"><rs type="title" key="title3926">Grundtvig in International Perspective. Studies in the Creativity of Interaction</rs></hi>, s. 148-162. Aarhus-->
+            <item><hi rend="italic">Breve</hi> 1 1924, se Grundtvig, N.F.S. (1924-1926)</item>
+            <item>Christensen, Arne Søby (2005) <rs type="title" key="title3583">“Beowulf, Hygelac
+                og Chlochilaichus. Om beretningskronologien i Beowulf”</rs> i <hi rend="italic"><rs
+                  type="title" key="title1934">Historisk Tidsskrift</rs></hi>, bind 105, s. 40-79.
+              København</item>
+            <item>Fulk, R.D., Robert E. Bjork &amp; John D. Niles udg. (2008) <hi rend="italic"><rs
+                  key="title3379" type="title">Klaeber's Beowulf and The Fight at Finnsburg</rs>.
+              </hi>Toronto, Buffalo &amp; London</item>
+            <item>Gibson, Edmund (1692) <hi rend="italic"><rs type="title" key="title3596">Chronicon
+                  Saxonicum, ex MSS Codibus
+                  [...]<!--præcipue gestarum, a Christo nato ad annum usque MCLIV. deducti, ac jam demum latinitate donati: cum Indice rerum chronologico : accedunt Regulæ ad investigandas nominum locorum origines, et Nominum locorum ac virorum in chronico memoratum explicatio --></rs></hi>.
+              Oxford</item>
+            <item>Grundtvig, N.F.S. (1815a) <rs type="title" key="title3395">“Et Par Ord om det nys
+                udkomne angelsaxiske Digt”</rs> i <hi rend="italic"><rs type="title" key="title538"
+                  >Nyeste Skilderie af Kjøbenhavn</rs></hi>, nr. 60, 29. juli, sp. 945-952, nr. 63,
+              8. august, sp. 998-1002, nr. 64, 12. august, sp. 1009-1015, nr. 65, 15. august, sp.
+              1025-1030 og nr. 66, 19. august, sp. 1045-1047. København</item>
+            <item>Grundtvig, N.F.S. (1815b) <rs type="title" key="title3396">“Nok et Par Ord om
+                Bjovulfs Drape”</rs> i <hi rend="italic"><rs type="title" key="title538">Nyeste
+                  Skilderie af Kjøbenhavn</rs>,</hi> nr. 70, 2. september, sp. 1105-1109, nr. 71, 5.
+              september, sp. 1121-1125 og nr. 72, 9. september, sp. 1139-1145. København</item>
+           <!-- <item>Danne-Virke , se Grundtvig, N.F.S. (1816-1819) <rs type="title" key="title3299"><hi rend="italic">Danne-Virke et Tids-Skrift, </hi></rs>bind 1-4. København</item>-->
+            <item>Grundtvig, N.F.S. (1817a) <rs type="title" key="title4835">&#x201C;Om
+                Bruneborg-Slaget og et Riim i den Anledning&#x201D;</rs> i <hi rend="italic"><rs
+                  type="title" key="title271">Danne-Virke et Tids-Skrift,</rs></hi> 2, s. 65-96.
+              København</item>
+            <item>Grundtvig, N.F.S. (1817b) <rs type="title" key="title3573">“Om Bjovulfs Drape
+                eller det af Hr. Etatsraad Thorkelin 1815 udgivne angelsachsiske Digt”</rs> i <hi
+                rend="italic"><rs type="title" key="title271">Danne-Virke et Tids-Skrift,</rs></hi>
+              2, s. 207-289. København</item><item>Grundtvig, N.F.S. (1819a) <rs type="title" key="title3570">“Hjerte-Borgen”</rs> i <hi
+                rend="italic"><rs type="title" key="title272">Danne-Virke et Tids-Skrift</rs></hi>
+              4, s. 237-243. København</item>
+            <item>Grundtvig, N.F.S. (1819b) <rs type="title" key="title3571">“Grændels Uvæsen”</rs>
+              i <hi rend="italic"><rs type="title" key="title272">Danne-Virke et
+                Tids-Skrift</rs></hi>, bind 4, s. 243-249. København</item>
+            <item>Grundtvig, N.F.S. (1819c) <rs type="title" key="title3572">“Bjovulf og
+                Strand-Ridderen”</rs> i <hi rend="italic"><rs type="title" key="title272"
+                  >Danne-Virke et Tids-Skrift</rs></hi> 4, s. 249-262.
+              København<!--Grundtvig, N.F.S. (1820) <rs type="title" key="title326"><hi rend="italic">Bjowulfs Drape. Et Gothisk Helte-Digt fra forrige Aar-Tusinde af Angel-Saxisk paa Danske Riim</hi></rs>. København--></item>
+            <item>Grundtvig, N.F.S (1840) <rs type="title" key="title3581"><hi rend="italic"
+                  >Phenix-Fuglen et angelsachisk Kvad, førstegang udgivet, med Indledning,
+                  Fordanskning, og Efterklang</hi>.</rs> København</item>
+            <item>Grundtvig, N.F.S. (1847) <rs type="title" key="title3454"><hi rend="italic">Græsk
+                  og Nordisk Mythologi for Ungdommen</hi></rs>. København</item>
+            <item>Grundtvig, N.F.S. (1861) <rs type="title" key="title749"><hi rend="italic"
+                  >Beowulfes Beorh eller Bjovulfs-Drapen, det old-angelske Heltedigt, paa
+                  Grund-Sproget</hi></rs>. København &amp; London</item>
+            <item>Grundtvig, N.F.S. (1865) <rs type="title" key="title1406"><hi rend="italic"
+                  >Bjovulvs-Drapen, et Høinordisk Heltedigt, fra Anguls-Tungen fordansket</hi></rs>,
+              2. udg. [1. udg. 1820]. København</item>
+            <item>Grundtvig, N.F.S. (1924-1926) <rs type="title" key="title7"><hi rend="italic"
+                  >Breve fra og til N.F.S. Grundtvig</hi></rs>, 1-2, udg. Georg Christensen &amp;
+              Stener Grundtvig, bind 1: <hi rend="italic">(1807-1820)</hi>. København</item>
+            <item>Gumælius (1817) <rs type="title" key="title4802">&#x201C;Recension. De Danorum
+                rebus gestis [...]&#x201D;</rs> i <rs type="title" key="title2828"><hi rend="italic"
+                  >Iduna, en skrift för den nordiska fornålderens älskare,</hi></rs> udg. Erik
+              Gustaf Geier, s. 133-159. Stockholm</item>
+            <item>Haarder, Andreas  (1984) <hi rend="italic"><rs type="title" key="title387"
+              >Sangen om Bjovulf</rs>.</hi> København</item>
+            <item>Haarder, Andreas overs. (2001) <hi rend="italic"><rs type="title" key="title387"
+                  >Sangen om Bjovulf</rs>.</hi> København</item>
+            <item>Hearne, Thomas (1720) <hi rend="italic"><rs type="title" key="title4395">Textus
+                  roffensis. Accedunt, professionum antiquorum Angliæ Episcoporum
+                  [...]<!-- Formulæ, De Canonica obedientia Archiepiscopis Cantuariensibus præstanda, et Leonardi Hutteni Dissertatio, Anglice conscripta, de Antiquitatibus Oxoniensibus--></rs>.</hi>
+              Oxford</item>
+            <item>Hickes, George &amp; Humfrey Wanley (1703-1705) <rs type="title" key="title3561"
+                  ><hi rend="italic">Antiquæ Literaturæ Septentrionalis libri duo. Quorum primus
+                  Georgii Hickesii S.T.P. Linguarum Vett. Septentrionalium Thesaurum
+                  Grammatico-Criticum<!--&amp; Archæologicum, Ejusdem de antiquæ Literaturæ Septentrionalis Utilitate Dissertationem Epistolarem, et Andreæ Fountaine Equitis Aurati Numismata Saxonica &amp; Dano-Saxonica complectitu. Alter continet Humfredi Wanleii Librorum Vett. Septentrionalium, qui in Angliæ Biblioth. extant, Catalogum Historico-Criticum; nec non multorum Vett. Codd. Septentrionalium alibi extantium notitiam, cum totius operis sex Indicibus--></hi></rs>,
+              1-2. Oxford</item>
+            <!--<item>Hickes, George udg. (1705) <rs type="title" key="title4403">“[Finnsburh Fragment]”</rs> i <hi rend="italic"><rs type="title" key="title3561">Antiquæ Literaturæ Septentrionalis libri duo</rs></hi>, bind 2, s. 192 f. Oxford</item>-->
+            <item>Hyllested, Adam (2016) <rs type="title" key="title5257"
+                >&#x201C;Sprogfamilien&#x201D;</rs> i <hi rend="italic"><rs type="title"
+                  key="title5258">Dansk Sproghistorie</rs>,</hi> bind 1, udg. Ebba Hjorth m.fl., s.
+              125-155. København</item>
+            <item>J&#x00F3;nsson, Finnur (1772-1778) <hi rend="italic">
+              <rs type="title" key="title10">Historia ecclesiastica
+                Islandi&#x00E6;</rs>,</hi> bind 1-4. K&#x00F8;benhavn</item>
+            <item>Kelly, Louis G. (1979) <rs type="title" key="title3401"><hi rend="italic">The True Interpreter: A History of Translation. Theory and Practice in the West</hi></rs>. Oxford</item>
+            <item>Langebek, Jacob udg. (1772-1878) <rs type="title" key="title1172"><hi
+                  rend="italic">Scriptores Rerum Danicarum Medii
+                  Ævi,<!-- partim hactenus inediti,
+                  partim emendatius editi, qvos collegit, adornavit, et publici juris
+                fecit--></hi></rs>
+              1-9. København</item>
+            <item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14"><hi
+                  rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og
+                  poetik 1798-1819</hi></rs>. København</item>
+            <item>Lye, Edward &amp; Owen Manning udg. (1772) <rs type="title" key="title3181"><hi
+                  rend="italic">Dictionarium Saxonico et Gothico-Latinum</hi></rs>. London</item>
+            <item>Malone, Kemp udg. (1951) <rs type="title" key="title3900"><hi rend="italic">The
+                  Thorkelin Transcripts of Beowulf in Fascimile</hi></rs>. København</item>
+            <item>Malone, Kemp (1960) <rs type="title" key="title3582">“Grundtvigs oversættelse af
+                  <hi rend="italic">Beowulf</hi>”</rs> i <hi rend="italic"><rs type="title"
+                  key="title337">Grundtvig-Studier,</rs></hi> s. 7-25.
+              København<!--<span type="proofread"/>Müller, Peter Erasmus &amp; Jens Møller (1811-1836) <rs type="title" key="title127"><hi rend="italic">Dansk Litteratur-Tidende</hi></rs>. København--></item>
+            <item>Müller, Peter Erasmus udg. (1815) <rs key="title3819" type="title">“[Anmeldelse af
+                  <hi rend="italic">De Danorum Rebus Gestis</hi>]”</rs> i <hi rend="italic"><rs
+                  key="title538" type="title">Dansk Litteratur-Tidende</rs>,</hi> nr. 26-27, s.
+              401-462. København </item>
+            <item>Noack, Bent (1989) <rs type="title" key="title4857">&#x201C;Den oldengelske digtning
+                og Grundtvig&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title337"
+                  >Grundtvig Studier</rs>,</hi> s. 141-156. København</item> 
+            <item>Rask, Rasmus (1817) <rs type="title" key="title4396"><hi rend="italic"
+                  >Angelsaksisk Sproglære tilligemed en kort Læsebog</hi></rs>.
+              Stockholm<!--<rs type="title" key="title801"><hi rend="italic">Rolf Krakes Saga</hi></rs>--></item>
+            <item>Rytter, Henrik overs. (1921) <hi rend="italic"><rs type="title" key="title5259"
+                  >Beowulf og Striden om Finnsborg</rs>.</hi> Oslo</item>
+            <item>Savile, Henry (1596) <hi rend="italic"><rs type="title" key="title4393">Rerum
+                  Anglicarum scriptores post Bedam praecipui, ex vetustissimis codicibus
+                  manuscriptis nunc primum in lucem editi</rs></hi>.
+              London<!--<item>Saxo Grammaticus <rs type="title" key="title83"><hi rend="italic">Gesta Danorum</hi></rs></item>--></item>
+            <item>Shippey, Tom (2001) <rs type="title" key="title4856">&#x201C;Forord til anden
+                udgave&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title387">Sangen om
+                  Bjovulf</rs>,</hi> overs. Andreas Haarder, s. 9-13. København</item>
+            <item>Suhm, Peter Friederich (1776) <rs type="title" key="title3481"><hi rend="italic"
+                  >Critisk Historie af Danmark, udi den hedenske Tid, fra Odin til Gorm den
+                  Gamle</hi></rs>, 3. København</item>
+            <item>Thorkelin, Grímur Jónsson udg. (1815a) <rs type="title" key="title1855"><hi
+                  rend="italic">De Danorum Rebus Gestis Secul. III &amp; IV. Poëma Danicum Dialecto
+                  Anglosaxonica. Ex Bibliotheca Cottoniana Musaei Britannici [Beowulf]</hi></rs>.
+              København</item>
+            <item>Thorkelin, Grímur Jónsson (1815b) <rs type="title" key="title3563">“Svar til
+                &#x2018;Et Par Ord om det nys udkomne angelsaxiske Digt&#x2019;, i Skilderiets No.
+                60”</rs> i <hi rend="italic"><rs type="title" key="title538">Nyeste Skilderie af
+                  Kjøbenhavn</rs>,</hi> nr. 67, 22. august, sp. 1057-1061 og nr. 68, 26. august, sp.
+              1073-1080. København</item>
+            <item>Toldberg, Helge (1946) <hi rend="italic"><rs type="title" key="title24">Grundtvig som Filolog</rs>.</hi> København</item>
+            <item>Vigfússon, Guðbrandur udg. (1878). <hi rend="italic"><rs type="title"
+                  key="title4841">Sturlunga Saga including the Islendinga Saga of Lawman Sturla
+                  Thorasson and other works</rs>.</hi> Oxford</item>               
+            <!-- <item>Fr. Rønning: Historisk Maanedsskrift 1885 (kopi haves). Hvor og til hvad?</item>-->  
+          </list></div>
+            <div><head xml:id="docIn10">Utrykt</head>
+              <list type="litList">
+                <item><hi rend="italic"><rs type="title" key="title814">Nowell Codex</rs>,</hi> ms. i British Library, sign. Cotton Vitellius A XV</item>
+                <item><rs type="title" key="title4839">NkS 512, 4<hi rend="raised">o</hi></rs>, ms. i det Kongelige Bibliotek
+              i København</item>
+                <item><rs type="title" key="title4840">NkS 513, 4<hi rend="raised">o</hi></rs>, ms. i det Kongelige
+              Bibliotek i København</item>                    
+                       
+                     
+             
+            </list></div>
+          
+         </div>
+         <!-- <div>
+            <head xml:id="docIn8">Anvendte websider</head>
+            
+            
+            <list type="webList">
+              <!-\-   <item n="2014-12-10" target="k"
+            >(http://www.infernaldreams.com/names/Europe/Medieval/Anglo_Saxon.htm (15. januar 2014)) </item> -\->
+              <item target="https://en.wikipedia.org/wiki/Beowulf"  n="2014-01-15">Engelsk Wikipedia: Beowulf <!-\-n="2016-07-27"-\-></item> </list></div>-->
+        </body>
+</text>
+</TEI>

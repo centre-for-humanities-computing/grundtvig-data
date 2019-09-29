@@ -1,0 +1,5058 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="main">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</title>
+            <title rend="shortForm">Danske Ordsprog og Mundheld</title>
+            <author>Kim Steen Ravn</author>
+            <editor role="editor2">ph.d. Simon Skovgaard Boeck</editor>
+            <editor role="editor3">Klaus Nielsen</editor>
+            <editor role="editor1">Stine Holst Petersen</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.11</idno>               
+               <idno type="technic">1.11.1</idno>
+            </edition>
+         </editionStmt>
+         <extent>135 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2017-11-01">www.grundtvigsværker.dk, version 1.11, 1. november 2017</date>
+         </publicationStmt>
+         <notesStmt>
+            <note target="1845_808A_txt.xml" type="txt">Læsetekst</note>
+            <note target="1845_808A_com.xml" xml:id="thisFile" type="com">Punktkommentar</note>
+         </notesStmt>
+         <sourceDesc>
+            <p/>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+            <p>Grundtvig Centeret arbejder med:</p>
+            <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+            <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+            <p>2.a. Teologi og kirke</p>
+            <p>2.b. Demokrati og folkelighed</p>
+            <p>2.c. Pædagogik og folkeoplysning</p>
+            <p>3. Videnudveksling, undervisning og formidling</p>
+         </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+      </encodingDesc>
+      <revisionDesc>
+         <change xml:id="KSR" who="KSR" when="2016-05-17">comFIL</change>
+         <change who="KSR" when="2016-05-17">første gennemgang af prøver på kom.</change>
+         <change who="KSR" when="2016-05-18">anden gennemgang af prøver på kom.</change>
+         <change who="KSR" when="2016-05-26">red. af prøver på kom.</change>
+         <change who="KSR" when="2016-06-07">red. af prøver indført</change>
+         <change who="KSR" when="2016-06-16">red. kontrolleret</change>
+         <change who="KSR" when="2016-09-06">ret. som følge af 3. koll. indført</change>
+         <change who="KSR" when="2016-10-03">ref udkommenteret</change>
+         <change who="KSR" when="2016-10-03">red. af kom. mgl.: 124; 110; 96; 82; 69; 55; 48; 44; 11; 10; 8 - com850 til nye lemmata</change>
+         <change who="KSR" when="2016-11-11">lemmatisering efter koll.; kommetar mangler: 26 stk.</change>
+         <change who="KSR" when="2017-01-10">afl. til SHP til 1. red.</change>
+         <change who="KSR" when="2017-02-16">indf. af 1. red: com1500</change>
+         <change who="KSR" when="2017-02-21">afl. Simon</change>
+         <change who="KSR" when="2017-06-30">red. fra 2. red. (s. 1-32) indfør.</change>
+         <change who="KSR" when="2017-07-05">kontrol af 2. red. (32 af 73 sider)</change>
+         <change who="KSR" when="2017-08-14">red. fra 2. red. (s. 33-70) indfør.</change>
+         <change who="KSR" when="2017-08-18">kontrol af red. fra 2. red. (s. 1-70) indfør.</change>
+         <change who="KSR" when="2017-08-22">2. red. (s. 1-70) af til KN; de sidste tre sider af com mangler.</change>
+         <change who="KSR" when="2017-08-28">bibel-ref fra 227C (Liden Bibelkrø.; 2. red. (s. 71-73) indført</change>
+         <change who="KSR" when="2017-09-06">Ordsporgssalmen identificeret; afl. til 3. red.</change>
+         <change who="KSR" when="2018-06-19">tilføjet com1900</change>
+      </revisionDesc>
+   </teiHeader>
+   
+   <text type="com">
+      
+      <body>
+         
+         <note xml:id="com1500"><!--lemma: mon slægte-->
+            <p>slægter (mon er her et ikke betydningsbærende hjælpeverbum).</p>
+         </note>
+         
+         <note xml:id="com1"><!--lemma: Dannemand-->
+            <p>hædersmand; dansk mand.</p>
+         </note>
+         
+         <note xml:id="com2"><!--lemma: Den, der giver snart, giver to Gange-->
+            <p>jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 2.845.</p>
+         </note>
+
+         <note xml:id="com3"><!--lemma: Mundforraad-->
+            <p>forråd af ordsprog og talemåder; egl. forråd af mad.</p>
+         </note>
+
+         <note xml:id="com4"><!--lemma: Dørtærskelen, som, efter Ordsproget, er den længste Vei-->
+            <p><!-- ref -->se ordsprog nr. 1.717 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 5.987.</p>
+         </note>
+
+         <note xml:id="com5"><!--lemma: Rede-->
+            <p>sammenhæng, ordning af materialet.</p>
+         </note>
+         
+         <note xml:id="com6"><!--lemma: oversee-->
+            <p>overskue.</p>
+         </note>
+         
+         <note xml:id="com1501"><!--lemma: Prøvestykke-->
+            <p>svendestykke, prøve.</p>
+         </note>
+
+         <note xml:id="com8"><!--lemma: syndes-->
+            <p>dvs. syntes.</p>
+         </note>
+
+         <note xml:id="com9"><!--lemma: bekvemme-->
+            <p>formå, bestemme.</p>
+         </note>
+
+         <note xml:id="com10"><!--lemma: vist nok-->
+            <p>ganske vist, uden tvivl.</p>
+         </note>
+
+         <note xml:id="com11"><!--lemma: maadelig-->
+            <p>nogenlunde, omtrent.</p>
+         </note>
+
+         <note xml:id="com12"><!--lemma: Naar-->
+            <p>hvis, såfremt.</p>
+         </note>
+
+         <note xml:id="com13"><!--lemma: Klammerter-->
+            <p>dvs. klammer, parenteser.</p>
+         </note>
+
+         <note xml:id="com14"><!--lemma: at staae i sit eget Lys-->
+            <p>se ordsprog nr. 2.835 eller <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 648.</p>
+         </note>
+
+         <note xml:id="com15"><!--lemma: at slaae Vand paa en Gaas-->
+            <p>se ordsprog nr. 2.727 eller <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 291.</p>
+         </note>
+
+         <note xml:id="com16"><!--lemma: at hjelpe af Dynen i Halmen-->
+            <p>at hjælpe nogen fra slemt til værre; se ordsprog nr. 1.110 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 3.720.</p>
+         </note>
+
+         <note xml:id="com17"><!--lemma: at være som en Ugle mellem Krager-->
+            <p>se ordsprog nr. 2.725 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 1.155.</p>
+         </note>
+
+         <note xml:id="com18"><!--lemma: at kiøre om i en anden Gade-->
+            <p>jf. talemåden &#x201C;Kan du ikke komme frem, saa <hi rend="italic">kjør</hi> om i en anden Gade&#x201D;, <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 12, eller ordsprog nr. 73.</p>
+         </note>
+
+         <note xml:id="com19"><!--lemma: kun at have Dagen og Veien-->
+            <p>se ordsprog nr. 2.850 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 1.206.</p>
+         </note>
+         
+         <note xml:id="com2162"><!--lemma: en gammel Ordsprogs-Psalme-->
+            <p>Grundtvig henviser til salmen &#x201C;En Christelig Vise / huorudi it fattigt Menniske i denne Verdens Elendighed sin Nød oc Trang beklager / taalmodeligen ved Haabet / sig paa Guds hielp fortrøstendis&#x201D; i <hi rend="italic"><rs type="title" key="title5485">En Ny Dansk Psalmebog</rs>,</hi> udg. <persName key="pe4767">Joachim Moltke</persName> (1647), s. 487-490. Visen indeholder en stor del ordsprog, hvoraf Grundtvig gengiver flere næsten ordret. Det fremgår af <hi rend="italic">Fortegnelse over Nik. Fred. Sev. Grundtvigs Bogsamling</hi> (1839), nr. 2.280, at Grundtvig ejede samlebogen.</p>
+         </note>
+         
+         <note xml:id="com21"><!--lemma: Enhver sig selv nærmest-->
+            <p>se ordsprog nr. 1.997 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 7.003.</p>
+         </note>
+
+         <note xml:id="com22"><!--lemma: er en Tyv i sin Næring-->
+            <p>se ordsprog nr. 1.995 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 10.765.</p>
+         </note>
+
+         <note xml:id="com23"><!--lemma: et daarligt Mandfolk som er bange for et Fruentimmer-->
+            <p>jf. <rs type="title" key="title96">Grundtvig 1875</rs>, nr. 396.</p>
+         </note>
+         
+         <note xml:id="com24"><!--lemma: vistnok-->
+            <p>ganske vist, uden tvivl.</p>
+         </note>
+         
+         <note xml:id="com2100"><!--lemma: Skit-->
+            <p>dvs. skidt.</p>
+         </note>
+         
+         <note xml:id="com25"><!--lemma: skarp Lud til skurvet Hoved-->
+            <p>se ordsprog nr. 2.368 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 3.410.</p>
+         </note>
+
+         <note xml:id="com26"><!--lemma: Papiret burde rødme-->
+            <p>se ordsprog nr. 2.063 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 7.326.</p>
+         </note>
+
+         <note xml:id="com27"><!--lemma: fattes-->
+            <p>mangler.</p>
+         </note>
+
+         <note xml:id="com28"><!--lemma: det brænder først, som er Ilden næst-->
+            <p><!-- ref -->se ordsprog nr. 783 eller <rs type="title" key="title93">Mau 1879</rs>, nr. 1.016. Næst betyder nærmest.</p>
+         </note>
+
+         <note xml:id="com31"><!--lemma: villig-->
+            <p>klar, rede.</p>
+         </note>
+
+         <note xml:id="com32"><!--lemma: kommer-->
+            <p>får.</p>
+         </note>
+         
+         <note xml:id="com2200" changes="new"><!--lemma: Aben skal ogsaa have sin Torvedag-->
+            <p>siges om noget tåbeligt (jf. <persName key="pe1280">Berlings</persName> gruppering i <rs type="title" key="title4499"><hi rend="italic">Nogle Møenske-Mundheld</hi></rs>, s. 38).</p>
+         </note>
+         
+         <note xml:id="com1502"><!--lemma: Addel-->
+            <p>dvs. det er en selvfølgelig sag, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 50.</p>
+         </note>
+         
+         <note xml:id="com1503"><!--lemma: Hak-->
+            <p>dvs. hakke.</p>
+         </note>
+         
+         <note xml:id="com33"><!--lemma: ligger ingen Magt paa-->
+            <p>er uden betydning, er ligegyldigt.</p>
+         </note>
+         
+         <note xml:id="com1800"><!--lemma: favert-->
+            <p>dvs. fagert.</p>
+         </note>
+         
+         <note xml:id="com180"><!--lemma: Baader-->
+            <p>vindinger.</p>
+         </note>
+         
+         <note xml:id="com34"><!--lemma: mulner-->
+            <p>bliver overskyet.</p>
+         </note>
+
+         <note xml:id="com35"><!--lemma: Aske-Brud-->
+            <p>urenlig pige.</p>
+         </note>
+         
+         <note xml:id="com1203"><!--lemma: Kirke-Prud-->
+            <p>skøn i kirken.</p>
+         </note>
+         
+         <note xml:id="com36"><!--lemma: alfare-->
+            <p>meget befærdet.</p>
+         </note>
+         
+         <note xml:id="com2239" changes="new"><!--lemma: -->
+            <p>om løsagtige kvinder, der ikke får børn, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 52.</p>
+         </note>
+         
+         <note xml:id="com38"><!--lemma: alfar-->
+            <p>meget befærdet.</p>
+         </note>
+         
+         <note xml:id="com2201" changes="new"><!--lemma: Bande -->
+            <p>forbandelse, ed.</p>
+         </note>
+         
+         <note xml:id="com1504"><!--lemma: Slaae Alvor paa Gammen-->
+            <p>fremsætte alvorlige tanker eller bemærkninger i spøgefuld form.</p>
+         </note>
+         
+         <note xml:id="com39"><!--lemma: der er jo-->
+            <p>der ikke er.</p>
+         </note>
+
+         <note xml:id="com40"><!--lemma: Stodder-->
+            <p>tigger.</p>
+         </note>
+         
+         <note xml:id="com41"><!--lemma: Bid byder anden ind-->
+            <p>Den ene mundfuld eller bid fører den anden med sig, jf. f.eks. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.460.</p>
+         </note>
+         
+         <note xml:id="com1801"><!--lemma: Hver er vild i en andens Vraa-->
+            <p>Enhver er desorienteret eller forvirret i en andens sted.</p>
+         </note>
+         
+         <note xml:id="com43"><!--lemma: Rem-->
+            <p>strimmel.</p>
+         </note>
+
+         <note xml:id="com44"><!--lemma: stange-->
+            <p>stange (fange) ål.</p>
+         </note>
+         
+         <note xml:id="com1505"><!--lemma: Blus-->
+            <p>lys brugt for at tiltrække ål (kaldet at blusse ål), hvilket gør det lettere at se og fange dem om aftenen eller natten.</p>
+         </note>
+         
+         <note xml:id="com181"><!--lemma: Kieltring-->
+            <p>dvs. kæltring.</p>
+         </note>
+         
+         <note xml:id="com45"><!--lemma: Soldet-->
+            <p>sigten, dørslaget.</p>
+         </note>
+
+         <note xml:id="com46"><!--lemma: grov-->
+            <p>gravede.</p>
+         </note>
+
+         <note xml:id="com47"><!--lemma: spille-->
+            <p>give andres ejendom bort, opnå fordele på andres bekostning.</p>
+         </note>
+
+         <note xml:id="com48"><!--lemma: Bød saa Huus, at Du skader ei Andet-->
+            <p>Reparer dit hus således, at det ikke går ud over andres; bød er imperativ af bøde, der betyder udbedre eller istandsætte; saa betyder således.</p>
+         </note>
+         
+         <note xml:id="com2240" changes="new"><!--lemma: Et er Ret-->
+            <p>brugt om at gammel skik og vedtægt ikke altid er det rette.</p>
+         </note>
+         
+         <note xml:id="com1506"><!--lemma: Eet Haar og andet giør Bonden skaldet-->
+            <p>om den, der bruger sine penge i små portioner.</p>
+         </note>
+         
+         <note xml:id="com49"><!--lemma: giør-->
+            <p>fører til, leder til.</p>
+         </note>
+
+         <note xml:id="com50"><!--lemma: borer Andre i Grund-->
+            <p>får andre (skibe) til at synke.</p>
+         </note>
+         
+         <note xml:id="com1507"><!--lemma: Angre aldrig-->
+            <p>man skal ikke angre (optativ eller imperativ).</p>
+         </note>
+         
+         <note xml:id="com1207"><!--lemma: Kære-->
+            <p>klage, besvær.</p>
+         </note>
+         
+         <note xml:id="com52"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com2101"><!--lemma: angerløs-->
+            <p>høste ubekymret.</p>
+         </note>
+         
+         <note xml:id="com2241" changes="new"><!--lemma: De er de rette Karle-->
+            <p>adjektivet rette anvendes her ironisk.</p>
+            <!-- ODS Karl  -->
+         </note>
+         
+         <note xml:id="com1508"><!--lemma: slide Silke-->
+            <p>gå i silke skønt man er fattig; bruges f.eks. om en overfladisk velstand, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 301.</p>
+         </note>
+         
+         <note xml:id="com1208"><!--lemma: onde-->
+            <p>svære, vanskelige.</p>
+         </note>
+         
+         <note xml:id="com53"><!--lemma: Art-->
+            <p>slægt; natur, væsen.</p>
+         </note>
+
+         <note xml:id="com55"><!--lemma: Art-->
+            <p>betydning.</p>
+         </note>
+
+         <note xml:id="com56"><!--lemma: toer-->
+            <p>vasker.</p>
+         </note>
+
+         <note xml:id="com57"><!--lemma: Art-->
+            <p>betydning.</p>
+         </note>
+
+         <note xml:id="com58"><!--lemma: Arte Dig-->
+            <p>opfør dig ordentligt (imperativ).</p>
+         </note>
+
+         <note xml:id="com59"><!--lemma: Kobber-Navle-->
+            <p>kobbersøm.</p>
+         </note>
+         
+         <note xml:id="com190"><!--lemma: est-->
+            <p>er (præsens 2. person singularis).</p>
+         </note>
+         
+         <note xml:id="com60"><!--lemma: Ave-->
+            <p>optugtelse, disciplinering.</p>
+         </note>
+         
+         <note xml:id="com2102"><!--lemma: saa haver-->
+            <p>således har.</p>
+         </note>
+         
+         <note xml:id="com1509"><!--lemma: arveløs-->
+            <p>uregerlig, tøjlesløs.</p>
+         </note>
+         
+         <note xml:id="com63"><!--lemma: udydelig-->
+            <p>slet, ond.</p>
+         </note>
+         
+         <note xml:id="com2104"><!--lemma: hun-->
+            <p>den, dvs. avinden.</p>
+         </note>
+         
+         <note xml:id="com64"><!--lemma: Sting-->
+            <p>stik.</p>
+         </note>
+
+         <note xml:id="com65"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+
+         <note xml:id="com66"><!--lemma: Baaden-->
+            <p>fordelen, profitten.</p>
+         </note>
+         
+         <note xml:id="com1209"><!--lemma: Bagefter kommer tyndt Øl-->
+            <p>For sent udførte handlinger eller råd, der kommer bagefter (dvs. for sent), er unyttige.</p>
+         </note>
+         
+         <note xml:id="com67"><!--lemma: bagefter-->
+            <p>for sent.</p>
+         </note>
+
+         <note xml:id="com68"><!--lemma: skyde-->
+            <p>lukke, dække.</p>
+         </note>
+
+         <note xml:id="com69"><!--lemma: Bag-Raad-->
+            <p>råd, der kommer for sent.</p>
+         </note>
+         
+         <note xml:id="com1210"><!--lemma: Van-Raad-->
+            <p>dårlige råd.</p>
+         </note>
+         
+         <note xml:id="com70"><!--lemma: Bande bider ikke i Skind, uden Haand følger med-->
+            <p>Banden og skældsord hjælper ikke, hvis ikke de følges op af tæsk eller afstraffelse.</p>
+            <!--eder bider ikke på skind, hvis ikke de følges op med handling/tæsk-->
+         </note>
+
+         <note xml:id="com71"><!--lemma: Bar er broderløs Bag-->
+            <p>Den ensomme er dårligt sikret mod angreb bagfra, eller må passe på sig selv.</p>
+         </note>
+         
+         <note xml:id="com1405"><!--lemma: ondt-->
+            <p>slemt, uartigt.</p>
+         </note>
+         
+         <note xml:id="com2105"><!--lemma: slaaer-->
+            <p>tugter, straffer.</p>
+         </note>
+         
+         <note xml:id="com72"><!--lemma: faur-->
+            <p>fager, skøn.</p>
+         </note>
+         
+         <note xml:id="com1406"><!--lemma: Ondt-->
+            <p>slemt, uartigt.</p>
+         </note>
+         
+         <note xml:id="com73"><!--lemma: fuul-->
+            <p>grim, uskøn.</p>
+         </note>
+         
+         <note xml:id="com2202" changes="new"><!--lemma: Blind er Barne-Mave-->
+            <p>Barnet ser sig ikke for, er uforsigtig med, hvad det spiser, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 496.</p>
+         </note>
+         
+         <note xml:id="com74"><!--lemma: Lidt-->
+            <p>småting.</p>
+         </note>
+
+         <note xml:id="com75"><!--lemma: snart-->
+            <p>hurtigt, nemt.</p>
+         </note>
+         
+         <note xml:id="com1211"><!--lemma: unden-->
+            <p>undtagen, bortset fra.</p>
+         </note>
+         
+         <note xml:id="com1510"><!--lemma: Skieppen-->
+            <p>dvs. skæppen.</p>
+         </note>
+         
+         <note xml:id="com1212"><!--lemma: hittes-->
+            <p>findes.</p>
+         </note>
+         
+         <note xml:id="com76"><!--lemma: Beder-->
+            <p>bed (imperativ pluralis).</p>
+         </note>
+         
+         <note xml:id="com2203" changes="new"><!--lemma: beder-->
+            <p>indbyder.</p>
+         </note>
+         
+         <note xml:id="com77"><!--lemma: Malle-Krave-->
+            <p>brynje, der dækker hals og overkrop.</p>
+         </note>
+         
+         <note xml:id="com183"><!--lemma: Bedre for at være end efter at kære-->
+            <p>Det er bedre på forhånd at passe på, end efterfølgende at klage, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 557.</p>
+         </note>
+         
+         <note xml:id="com1213" changes="corr"><!--lemma: uden-->
+            <p>hvis ikke, med mindre.</p>
+         </note>
+         
+         <note xml:id="com78"><!--lemma: bødt-->
+            <p>dvs. bødet; repareret, lappet.</p>
+         </note>
+
+         <note xml:id="com79"><!--lemma: stryge Seil-->
+            <p>tage sejl ned.</p>
+         </note>
+
+         <note xml:id="com80"><!--lemma: kantre-->
+            <p>dvs. kæntre.</p>
+         </note>
+
+         <note xml:id="com81"><!--lemma: svang-->
+            <p>sulten, mager, indfalden.</p>
+         </note>
+
+         <note xml:id="com82"><!--lemma: Vaade-Ild-->
+            <p>brand opstået ved et uheld.</p>
+         </note>
+
+         <note xml:id="com83"><!--lemma: Venne-Nap-->
+            <p>irettesættelse af en ven.</p>
+         </note>
+         
+         <note xml:id="com2107"><!--lemma: Fiende-Klap-->
+            <p>ros af en fjende.</p>
+         </note>
+         
+         <note xml:id="com1511"><!--lemma: være Kiøn lig-->
+            <p>ligne sit køn, dvs. sin slægt.</p>
+         </note>
+
+         <note xml:id="com85"><!--lemma: Konning-->
+            <p>konge.</p>
+         </note>
+
+         <note xml:id="com86"><!--lemma: Traad-->
+            <p>her: beklædning.</p>
+         </note>
+         
+         <note xml:id="com1214"><!--lemma: hardt-->
+            <p>dvs. hårdt.</p>
+         </note>
+         
+         <note xml:id="com1408"><!--lemma: bedre-->
+            <p>her også: lettere, nemmere.</p>
+         </note>
+         
+         <note xml:id="com88"><!--lemma: stemme-->
+            <p>opdæmme.</p>
+         </note>
+
+         <note xml:id="com89"><!--lemma: snøgt-->
+            <p>pænt.</p>
+         </note>
+
+         <note xml:id="com90"><!--lemma: Demant-->
+            <p>dvs. diamant.</p>
+         </note>
+
+         <note xml:id="com91"><!--lemma: Arne-Bande bider bedst-->
+            <p>Banden eller skældsord ved ilden (dvs. i hjemmet) er værst.</p>
+         </note>
+         
+         <note xml:id="com1512"><!--lemma: Den bedste ... Sko-->
+            <p>Husbondens tilsyn og påpasselighed er det vigtigste ved landbruget.</p>
+         </note>
+         
+         <note xml:id="com92"><!--lemma: koster-->
+            <p>kræver, forudsætter.</p>
+         </note>
+         
+         <note xml:id="com2108"><!--lemma: smører sig-->
+            <p>sviner sig til.</p>
+         </note>
+         
+         <note xml:id="com93"><!--lemma: begfingret-->
+            <p>tyvagtig.</p>
+         </note>
+         
+         <note xml:id="com1513"><!--lemma: at halte paa begge Been-->
+            <p>at være vægelsindet.</p>
+         </note>
+         
+         <note xml:id="com1215"><!--lemma: Povel Vendekaabe bær Kappen på begge Skuldre-->
+            <p>Om en person, der skifter mening for egen vindings skyld, eller som føjer sig efter omstændighederne. Povel Vendekaabe er oprindeligt øgenavn for <persName key="pe2871">Poul Helgesen</persName>.</p>
+         </note>
+         
+         <note xml:id="com94"><!--lemma: bekiendt-->
+            <p>bevidst.</p>
+         </note>
+
+         <note xml:id="com95"><!--lemma: Gemeenskab-->
+            <p>fællesskab, samkvem.</p>
+         </note>
+         
+         <note xml:id="com1514"><!--lemma: gaae af-->
+            <p>forlad.</p>
+         </note>
+         
+         <note xml:id="com2109"><!--lemma: formerer-->
+            <p>forøger.</p>
+         </note>
+         
+         <note xml:id="com2110"><!--lemma: sin Bo-->
+            <p>sit bohave, sin ejendom.</p>
+         </note>
+         
+         <note xml:id="com96"><!--lemma: Kvit-->
+            <p>det forhold, at to parter er kvit, dvs. at de ikke skylder hinanden noget.</p>
+         </note>
+
+         <note xml:id="com97"><!--lemma: Bettel-Staven-->
+            <p>tiggerstaven.</p>
+         </note>
+
+         <note xml:id="com98"><!--lemma: giøer-->
+            <p>dvs. gør, glammer.</p>
+         </note>
+
+         <note xml:id="com99"><!--lemma: Bie-->
+            <p>dvs. bi, vent (imperativ).</p>
+         </note>
+
+         <note xml:id="com101"><!--lemma: Biende-->
+            <p>Ventende eller tålmodig mand får medvind.</p>
+         </note>
+
+         <note xml:id="com103"><!--lemma: Børen-->
+            <p>vinden.</p>
+         </note>
+
+         <note xml:id="com105"><!--lemma: bie-->
+            <p>skal vente (konjunktiv).</p>
+         </note>
+
+         <note xml:id="com106"><!--lemma: være ham under hans Øine fuus-->
+            <p>holde ivrigt øje med ham, vogter ham nøje; fus betyder ivrig eller hurtig.</p>
+         </note>
+         
+         <note xml:id="com107"><!--lemma: Saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com108"><!--lemma: fødes-->
+            <p>ernæres.</p>
+         </note>
+         
+         <note xml:id="com1216"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com2223" changes="new"><!--lemma: Pyt, sagde -->
+            <p>bruges, når en person går glip af noget, som han havde forventet, jf. <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 554.</p>
+         </note>
+         
+         <note xml:id="com1515"><!--lemma: Brems-->
+            <p>dvs. bremse (insekt).</p>
+         </note>
+         
+         <note xml:id="com184"><!--lemma: Kølve-->
+            <p>kølle(slag).</p>
+         </note>
+         
+         <note xml:id="com111"><!--lemma: Hunde-Trætte-->
+            <p>hundeslagsmål.</p>
+         </note>
+
+         <note xml:id="com112"><!--lemma: Blanke-->
+            <p>pyntede, fine.</p>
+         </note>
+         
+         <note xml:id="com1704"><!--lemma: Blodet trækker, (sagde Klokkeren om Ringeren)-->
+            <p>Betydningen er uklar; hos <hi rend="italic"><rs type="title" key="title5462">Syv</rs></hi> anføres ordsproget under &#x201C;Slegt- og Svogerskab&#x201D;, der handler om slægtsskabets forrang for andre relationer (<rs type="title" key="title5462">Syv 1944</rs>, s. 179 f.)</p>
+         </note>
+         
+         <note xml:id="com113"><!--lemma: Blyheden-->
+            <p>genertheden, tilbageholdenheden.</p>
+         </note>
+         
+         <note xml:id="com1516"><!--lemma: kiælne-->
+            <p>sarte.</p>
+         </note>
+         
+         <note xml:id="com114"><!--lemma: blødes-->
+            <p>gøres blød eller føjelig.</p>
+         </note>
+
+         <note xml:id="com115"><!--lemma: Bod-->
+            <p>forsyninger.</p>
+         </note>
+
+         <note xml:id="com116"><!--lemma: Bing-->
+            <p>forrådskasse.</p>
+         </note>
+
+         <note xml:id="com117"><!--lemma: Bane-->
+            <p>skade.</p>
+         </note>
+
+         <note xml:id="com118"><!--lemma: Bod-->
+            <p>erstatning, trøst.</p>
+         </note>
+
+         <note xml:id="com119"><!--lemma: Boes-->
+            <p>dvs. boets.</p>
+         </note>
+
+         <note xml:id="com120"><!--lemma: før hun sang over Borde-->
+            <p>før hun sang (for brudeparret) under middagen ved sit eget bryllup; før det var for sent. At synge over borde er et jysk udtryk for at synge for et par under bryllupsmiddagen.</p>
+            <!-- forklar ordsproget; synge over = oversynge (= syng højt) ODS 1.5 -->
+         </note>
+         
+         <note xml:id="com851"><!--lemma: hardt-->
+            <p>dvs. hårdt.</p>
+         </note>
+         
+         <note xml:id="com1518"><!--lemma: Møg-Hakken-->
+            <p>et tarveligt menneske; egl. et redskab til at rage gødning fra vognen ud på marken.</p>
+         </note>
+         
+         <note xml:id="com185"><!--lemma: Borg-->
+            <p>gæld.</p>
+         </note>
+         
+         <note xml:id="com121"><!--lemma: borge paa Blade-Byg-->
+            <p>give kredit mod sikkerhed i noget ufærdigt; bladebyg er byg, der endnu ikke har sat aks.</p>
+         </note>
+
+         <note xml:id="com122"><!--lemma: borget-->
+            <p>lånt, erhvervet på kredit.</p>
+         </note>
+         
+         <note xml:id="com186"><!--lemma: Braadne-->
+            <p>dvs. brodne.</p>
+         </note>
+         
+         <note xml:id="com187"><!--lemma: Braadent-->
+            <p>dvs. broddent.</p>
+         </note>
+         
+         <note xml:id="com123"><!--lemma: Brade-->
+            <p>hurtige, kvikke.</p>
+         </note>
+         
+         <note xml:id="com124"><!--lemma: Kortenspil-->
+            <p>dvs. kortspil.</p>
+         </note>
+         
+         <note xml:id="com1217"><!--lemma: Broge-->
+            <p>plettet (af broget); konavn.</p>
+         </note>
+         
+         <note xml:id="com125"><!--lemma: Væn-->
+            <p>smuk, dejlig.</p>
+         </note>
+
+         <note xml:id="com126"><!--lemma: Klæden-->
+            <p>klæder, tøj.</p>
+         </note>
+
+         <note xml:id="com127"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+
+         <note xml:id="com128"><!--lemma: føre-->
+            <p>have.</p>
+         </note>
+         
+         <note xml:id="com1219"><!--lemma: Oxen drager af Bugen, men Hesten drager af Ryggen-->
+            <p>Enhver ting er god til sit formål.</p>
+         </note>
+         
+         <note xml:id="com1220"><!--lemma: griber gerne Bugen an-->
+            <p>angriber helst maven, dvs. frister helst den fattige og sultne.</p>
+         </note>
+         
+         <note xml:id="com129"><!--lemma: Var-->
+            <p>fandtes.</p>
+         </note>
+         
+         <note xml:id="com1218"><!--lemma: Bug-->
+            <p>sult; mave.</p>
+         </note>
+         
+         <note xml:id="com1221"><!--lemma: Bugs-Fylde-->
+            <p>mad og drikke.</p>
+         </note>
+         
+         <note xml:id="com130"><!--lemma: Læsmed-->
+            <p>blive kloge på; en læsmed eller et læssetræ er en stang, der lægges over et læs for at sikre det.</p>
+         </note>
+         
+         <note xml:id="com2111"><!--lemma: byde-->
+            <p>invitere.</p>
+         </note>
+         
+         <note xml:id="com2112"><!--lemma: syde-->
+            <p>koge, tilberede.</p>
+         </note>
+         
+         <note xml:id="com131"><!--lemma: buden-->
+            <p>inviteret.</p>
+         </note>
+         
+         <note xml:id="com191"><!--lemma: ubuden-->
+            <p>ikke inviteret.</p>
+         </note>
+         
+         <note xml:id="com132"><!--lemma: byde-->
+            <p>befale, påbyde.</p>
+         </note>
+         
+         <note xml:id="com1519"><!--lemma: lyde-->
+            <p>adlyde.</p>
+         </note>
+         
+         <note xml:id="com133"><!--lemma: bygde-->
+            <p>byggede.</p>
+         </note>
+
+         <note xml:id="com135"><!--lemma: saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com2113"><!--lemma: Bygge-Stedet-->
+            <p>byggepladsen.</p>
+         </note>
+         
+         <note xml:id="com2158"><!--lemma: Saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com852"><!--lemma: omsider-->
+            <p>på et tidspunkt, efter en vis tid.</p>
+         </note>
+         
+         <note xml:id="com136"><!--lemma: Meen-->
+            <p>forseelse, skade.</p>
+         </note>
+         
+         <note xml:id="com1520"><!--lemma: Bytte-->
+            <p>ombytning; retshandel.</p>
+         </note>
+         
+         <note xml:id="com137"><!--lemma: Det er ondt Kiv-Bytte at tage Hug ind-->
+            <p>Det er dårlig et udbytte af en strid at tage mod slag.</p>
+         </note>
+
+         <note xml:id="com139"><!--lemma: Hødt er med Intet bødt-->
+            <p>Hvad man kun truer med at gøre, skal man ikke bøde for; hødt betyder trussel.</p>
+            <!-- Trussel (alene) skal man ikke bøde for (hvad man blot truer med, skal man ikke bøde for); forklaring AaH, s. 446; Moth "Høde" -->
+         </note>
+         
+         <note xml:id="com1521"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com140"><!--lemma: Christne-->
+            <p>gør kristen, døb (imperativ).</p>
+            <!-- eller imperativ -->
+         </note>
+
+         <note xml:id="com141"><!--lemma: faaer at-->
+            <p>må.</p>
+         </note>
+
+         <note xml:id="com142"><!--lemma: uden-->
+            <p>med mindre.</p>
+         </note>
+         
+         <note xml:id="com143"><!--lemma: Dødning-Dands-->
+            <p>dødedans, dans med døden.</p>
+         </note>
+         
+         <note xml:id="com853"><!--lemma: vidst-->
+            <p>forstået (at tale).</p>
+         </note>
+         
+         <note xml:id="com1522"><!--lemma: føder-->
+            <p>brødføder.</p>
+         </note>
+         
+         <note xml:id="com144"><!--lemma: skifte Saad-->
+            <p>fordele afkog, søbemad.</p>
+         </note>
+         
+         <note xml:id="com200"><!--lemma: Man driver den Vægge, som gaae vil-->
+            <p>om at bruge de midler, man har til rådighed; vægge betyder kile.</p>
+         </note>
+         
+         <note xml:id="com2115"><!--lemma: snydt-->
+            <p>Man kan ikke skære næsen af den, som ingen har (dvs.: man kan ikke fratage den, der intet ejer, noget), jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 7.012.</p>
+         </note>
+
+         <note xml:id="com147"><!--lemma: kækker-->
+            <p>dvs. gækker.</p>
+         </note>
+         
+         <note xml:id="com148"><!--lemma: drage Den til Disk, som baaren er til Visk-->
+            <p>trække den til bordet, som går for at forrette sin nødtørft; drage kan også betyde opdrage eller lære; baaren betyder født; visk betyder et bundt af halm eller lignende brugt som toiletpapir.</p>
+         </note>
+
+         <note xml:id="com150"><!--lemma: Hver er djærv over deelt Lod-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title5463">Peder Laales gammeldanske ordsprog med sideløbende oversættelse til nydansk</rs></hi> anfører <persName key="pe4760">Aage Hansen</persName> følgende kommentar til ordsproget, at enhver:  &#x201C;forsvarer tappert sin ejendom&#x201D; (<rs type="title" key="title5463">Syv 1966</rs>, nr. 797, s. 80); <persName key="pe4761">Alex Kock</persName> anfører i <hi rend="italic"><rs type="title" key="title5474">Östnordiska och latinska medeltidsordspråk</rs></hi> denne kommentar &#x201C;Saa snart Lodderne ere deelte, og hver har faaet sit, kan ingen siden tage det fra ham ...; han kan da være dierv [djærv], frit paastaae at beholde det&#x201D; (<rs type="title" key="title5474">Kock 1891-1892</rs>, bind 2, s. 319).</p>
+            <!-- Peder L. bestilt på KB 2017.08.17 -->
+         </note>
+         
+         <note xml:id="com151"><!--lemma: uskiær-->
+            <p>skyldig; egl. uren.</p>
+         </note>
+
+         <note xml:id="com152"><!--lemma: Drage-Dukkerne-->
+            <p>dukker der ifølge overtroen tiltrækker penge eller lykke; kan også betegne overnaturlige væsner.</p>
+         </note>
+
+         <note xml:id="com154"><!--lemma: van!-->
+            <p>plejer at gøre.</p>
+         </note>
+         
+         <note xml:id="com2204" changes="new"><!--lemma: ondt-->
+            <p>slemt, vanskeligt.</p>
+         </note>
+         
+         <note xml:id="com189"><!--lemma: jer-->
+            <p>jeres.</p>
+         </note>
+         
+         <note xml:id="com1523"><!--lemma: Pokker -->
+            <p>fanden; ingen.</p>
+         </note>
+         
+         <note xml:id="com155"><!--lemma: dristig-->
+            <p>ivrig.</p>
+         </note>
+         
+         <note xml:id="com2116"><!--lemma: staaer Lykke for-->
+            <p>råder over sin skæbne eller lykke.</p>
+         </note>
+         
+         <note xml:id="com156"><!--lemma: ligest-->
+            <p>nærmest, mest lig.</p>
+         </note>
+
+         <note xml:id="com157"><!--lemma: Krogstav-->
+            <p>krykke.</p>
+         </note>
+
+         <note xml:id="com158"><!--lemma: Brogeløs-->
+            <p>bukseløs.</p>
+         </note>
+         
+         <note xml:id="com854"><!--lemma: Døer Ræven, saa duer Bælgen-->
+            <p>Dør Ræven, kan pelsen udmærket bruges; anvendes om arv efter slette personer; jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 8.189.</p>
+         </note>
+         
+         <note xml:id="com159"><!--lemma: Saa-->
+            <p>således.</p>
+         </note>
+
+         <note xml:id="com160"><!--lemma: Dunet-->
+            <p>beklædt med dun, skægget.</p>
+         </note> 
+
+         <note xml:id="com161"><!--lemma: som den dyre Tid-->
+            <p>dvs. som dyrtiden; formentlig i betydningen &#x2018;blege og magre&#x2019; eller &#x2018;modfaldne og bedrøvede&#x2019;; jf. <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 147.</p>
+         </note>
+         
+         <note xml:id="com1524"><!--lemma: Doctor-Vand-->
+            <p>flydende medicin.</p>
+         </note>
+         
+         <note xml:id="com162"><!--lemma: dyrt-->
+            <p>dyrekøbt.</p>
+            <!--se Mau 1498, Moth -->
+         </note>
+
+         <note xml:id="com163"><!--lemma: svelte-->
+            <p>sulte, svinde bort.</p>
+         </note>
+         
+         <note xml:id="com1525"><!--lemma: Tilsyn-->
+            <p>syn, skue.</p>
+            <!-- ODS Tilsyn 1 -->
+         </note>
+         
+         <note xml:id="com164"><!--lemma: haard at gaae paa-->
+            <p>ubehagelig, vanskelig.</p>
+         </note>
+         
+         <note xml:id="com2117"><!--lemma: Lykken-->
+            <p>skæbnen.</p>
+         </note>
+         
+         <note xml:id="com165" changes="corr"><!--lemma: sær-->
+            <p>umedgørlig, uberegnelig.</p>
+         </note>
+
+         <note xml:id="com166"><!--lemma: uden-->
+            <p>mere end.</p>
+         </note>
+         
+         <note xml:id="com2118"><!--lemma: maa-->
+            <p>kan.</p>
+         </note>
+         
+         <note xml:id="com1222"><!--lemma: døve-->
+            <p>golde.</p>
+         </note>
+         
+         <note xml:id="com1223"><!--lemma: skævmundet-->
+            <p>sur, irriteret.</p>
+         </note>
+         
+         <note xml:id="com1705"><!--lemma: Det er daarligt, kan man ikke sagtens skye een Dør-->
+            <p>Det står dårligt til, hvis ikke man let kan gå forbi en dør (om tiggere, der ikke behøver banke på alle døre); jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.596.</p>
+         </note>
+         
+         <note xml:id="com168"><!--lemma: bygt-->
+            <p>dvs. bygget.</p>
+         </note>
+
+         <note xml:id="com170"><!--lemma: uden-->
+            <p>undtagen.</p>
+         </note>
+         
+         <note xml:id="com1528"><!--lemma: Brand-->
+            <p>træstykke der er eller har været ild i.</p>
+            <!-- ODS Brand 5.1 -->
+         </note>
+         
+         <note xml:id="com202"><!--lemma: Use og Ose tigger begge til een Pose-->
+            <p>bruges om dem, der stræber efter ét mål, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 7.481. De to personnavne, Use og Ose, skal formentlig opfattes som rent stilistiske figurer og har ikke kunnet identificeres.</p>
+         </note>
+
+         <note xml:id="com174"><!--lemma: skabbet-->
+            <p>ramt af skab (hudsygdom forårsaget af mider).</p>
+         </note>
+         
+         <note xml:id="com301"><!--lemma: Seierværket-->
+            <p>stort stueur.</p>
+         </note>
+
+         <note xml:id="com302"><!--lemma: Eens Bier-->
+            <p>lige meget, et fedt; egl. samme øl.</p>
+         </note>
+
+         <note xml:id="com303"><!--lemma: Stalbroder-->
+            <p>våbenbroder, kampfælle.</p>
+         </note>
+
+         <note xml:id="com304"><!--lemma: Ny-->
+            <p>nymåne.</p>
+         </note>
+
+         <note xml:id="com305"><!--lemma: Næde-->
+            <p>dvs. næ; månens aftagende fase.</p>
+         </note>
+
+         <note xml:id="com307"><!--lemma: være efter-->
+            <p>følge efter.</p>
+         </note>
+         
+         <note xml:id="com1225"><!--lemma: Fæet-->
+            <p>bohavet, ejendommen.</p>
+         </note>
+         
+         <note xml:id="com855"><!--lemma: Jæger-Piben-->
+            <p>fløjten, hvormed jægerne giver signal til hundene.</p>
+         </note>
+         
+         <note xml:id="com308"><!--lemma: Efter-Smækket-->
+            <p>eftervirkningen, reaktionen.</p>
+         </note>
+         
+         <note xml:id="com2205" changes="new"><!--lemma: Faaret paa sin egen Haand har Ulven for sin egen Mund -->
+            <p>Det får, der løber på egen hånd, bliver alene ulvens fangst.</p>
+         </note>
+         
+         <note xml:id="com309"><!--lemma: djærvest-->
+            <p>modigst.</p>
+         </note>
+
+         <note xml:id="com310"><!--lemma: huldest-->
+            <p>mest hengiven, mest gunstig.</p>
+         </note>
+
+         <note xml:id="com311"><!--lemma: skulde-->
+            <p>skal (konjunktiv).</p>
+         </note>
+         
+         <note xml:id="com1530"><!--lemma: frit-->
+            <p>ugeneret, naturlig.</p>
+         </note>
+         
+         <note xml:id="com1701"><!--lemma: skulde-->
+            <p>skal (konjunktiv).</p>
+         </note>
+         
+         <note xml:id="com313"><!--lemma: uden-->
+            <p>bortset fra.</p>
+         </note>
+
+         <note xml:id="com314"><!--lemma: giver sig-->
+            <p>viser sig, opklares.</p>
+         </note>
+
+         <note xml:id="com315"><!--lemma: Hoffærdighed-->
+            <p>hovmod.</p>
+         </note>
+
+         <note xml:id="com316"><!--lemma: er hans Synd sød-->
+            <p>holder af sin egen synd.</p>
+         </note>
+
+         <note xml:id="com317"><!--lemma: Enten-->
+            <p>hvad enten.</p>
+         </note>
+
+         <note xml:id="com319"><!--lemma: Med somme Folk er Alting enten iflæng eller ispræng-->
+            <p>Med nogle er der ingen retning, plan eller omtanke, eller også farer de frem i voldsomme ryk, dvs. enten for meget eller for lidt.</p>
+         </note>
+         
+         <note xml:id="com2119"><!--lemma: Enten-->
+            <p>hvad enten.</p>
+         </note>
+         
+         <note xml:id="com320"><!--lemma: grønne Grave-->
+            <p>nyligt gravede grave; nyligt overståede begravelser.</p>
+         </note>
+
+         <note xml:id="com321"><!--lemma: staaer-->
+            <p>lander.</p>
+         </note>
+         
+         <note xml:id="com1531"><!--lemma: Brolæggeren faldt ned og slog Blytækkeren ihjel-->
+            <p>jf. ordsprog nr. 248: &#x201C;Skomager! <hi rend="spaced">bliv</hi> ved din Læst!&#x201D;. Betydningen minder om, at man bør beskæftige sig med det, man har forstand på. De to håndværkere har byttet arbejdsopgaver, hvilket resulterer i, at den første falder ned fra taget og slår den anden ihjel.</p>
+         </note>
+         
+         <note xml:id="com322"><!--lemma: fatteløs-->
+            <p>ikke fastgjort, ikke sikret.</p>
+         </note>
+         
+         <note xml:id="com856"><!--lemma: Fals slaaer sig egen Herre paa Hals-->
+            <p>Falskhed hævner sig; fals betyder svig eller falskhed.</p>
+         </note>
+         
+         <note xml:id="com323"><!--lemma: uden-->
+            <p>uden for, forskånet for.</p>
+         </note>
+
+         <note xml:id="com324"><!--lemma: gak-->
+            <p>gå (gl. imperativ).</p>
+         </note>
+         
+         <note xml:id="com857"><!--lemma: ond-->
+            <p>vanskelig.</p>
+         </note>
+         
+         <note xml:id="com325"><!--lemma: Davre-->
+            <p>morgenmad.</p>
+         </note>
+
+         <note xml:id="com326"><!--lemma: Den har godt ved at faste, som finder Fisk paa sin Disk-->
+            <p>Det er ikke svært at faste, når man kan få fisk; i romerkirken måtte man gerne spise fisk i fastetiden.</p>
+         </note>
+
+         <note xml:id="com328"><!--lemma: om-->
+            <p>efter.</p>
+         </note>
+
+         <note xml:id="com332"><!--lemma: ondt-->
+            <p>vanskeligt.</p>
+         </note>
+
+         <note xml:id="com333"><!--lemma: hoffærdig-->
+            <p>hovmodig.</p>
+         </note>
+         
+         <note xml:id="com1227"><!--lemma: Gud naade-->
+            <p>Gud se i nåde til.</p>
+         </note>
+         
+         <note xml:id="com334"><!--lemma: Fattigmand har ei uden af Haand i Mund-->
+            <p>Den fattige forbruger alt han får, uden mulighed for at spare op til fremtiden.</p>
+         </note>
+
+         <note xml:id="com335"><!--lemma: faur-->
+            <p>fager, skøn.</p>
+         </note>
+
+         <note xml:id="com336"><!--lemma: Bo-->
+            <p>ejendele, ejendom.</p>
+         </note>
+         
+         <note xml:id="com908"><!--lemma: Bag-->
+            <p>ryggen.</p>
+         </note>
+         
+         <note xml:id="com337"><!--lemma: Faure-->
+            <p>fagre, skønne.</p>
+         </note>
+
+         <note xml:id="com338"><!--lemma: Faurhed-->
+            <p>skønhed.</p>
+         </note>
+         
+         <note xml:id="com2206" changes="new"><!--lemma: Tugt-->
+            <p>ærbarhed, anstændighed.</p>
+         </note>
+         
+         <note xml:id="com339"><!--lemma: fede om Munden-->
+            <p>veltalende.</p>
+         </note>
+
+         <note xml:id="com340"><!--lemma: Man kan sagtens finde Sag med en feed So-->
+            <p>jf. ordsprog nr. 602: &#x201C;Det er nemt at finde <hi rend="spaced">Sag</hi> med en feed So (for hun er ikke blevet feed af Intet) Udsigt til betydelig vinding frister (til sagsanlæg)&#x201D;. Betydningen er i begge tilfælde, at udsigten til en betydelig erstatning, frister til sagsanlæg.</p>
+         </note>
+
+         <note xml:id="com341"><!--lemma: Koster-->
+            <p>skatte, ejendele.</p>
+         </note>
+         
+         <note xml:id="com858"><!--lemma: Forgift-->
+            <p>gift; dårligt vand.</p>
+         </note>
+         
+         <note xml:id="com342"><!--lemma: fjælde-->
+            <p>skjuler eller gemmer.</p>
+         </note>
+
+         <note xml:id="com343"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com859"><!--lemma: Det mindes Fingre hvad fordum gjordes-->
+            <p>når først man har lært noget, glemmer man det ikke så let, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 2.137.</p>
+         </note>
+         
+         <note xml:id="com1228"><!--lemma: sees paa Fingrene-->
+            <p>holdes skarpt øje med.</p>
+         </note>
+         
+         <note xml:id="com344"><!--lemma: fire for-->
+            <p>ære, værne om.</p>
+            <!-- ODS III fire 3 -->
+         </note>
+         
+         <note xml:id="com1229"><!--lemma: paa Fadet-->
+            <p>evt. også: i hyttefadet.</p>
+         </note>
+         
+         <note xml:id="com860"><!--lemma: faldt-->
+            <p>flovt; dumt.</p>
+         </note>
+         
+         <note xml:id="com345"><!--lemma: har Bisselær i Skoene-->
+            <p>lyst til at flakke omkring eller stikke af.</p>
+         </note>
+         
+         <note xml:id="com1100"><!--lemma: desværre-->
+            <p>dvs. des værre, desto ringere.</p>
+         </note>
+         
+         <note xml:id="com861"><!--lemma: Saad-->
+            <p>her: mad; egl. suppe.</p>
+         </note>
+         
+         <note xml:id="com862"><!--lemma: Der er flere graa Giæs end Præstens-->
+            <p>Der er flere eksemplarer af en ting end den, hvorom der tales, jf. <rs type="title" key="title5502">Kjær &amp; Holbek [1969]</rs>, s. 12.</p>
+            <!-- se Kjær og Holbek, s. 12 -->
+         </note>
+         
+         <note xml:id="com1533"><!--lemma: Bælgen-->
+            <p>blæsebælgen.</p>
+         </note>
+         
+         <note xml:id="com346"><!--lemma: spotter-->
+            <p>håner.</p>
+         </note>
+         
+         <note xml:id="com1534"><!--lemma: Flye-->
+            <p>dvs. fly (imperativ).</p>
+         </note>
+         
+         <note xml:id="com347"><!--lemma: Øienskalke-->
+            <p>hyklere.</p>
+         </note>
+         
+         <note xml:id="com1535"><!--lemma: Flye-->
+            <p>fly (gl. optativ).</p>
+         </note>
+         
+         <note xml:id="com348"><!--lemma: hvort-->
+            <p>hvorhen.</p>
+         </note>
+         
+         <note xml:id="com863"><!--lemma: ond-->
+            <p>vanskelig.</p>
+         </note>
+         
+         <note xml:id="com1230"><!--lemma: foragt-->
+            <p>Du skal eller bør ikke foragte den, der formår eller magter mindst.</p>
+         </note>
+         
+         <note xml:id="com349"><!--lemma: forbier-->
+            <p>venter ikke for længe.</p>
+         </note>
+         
+         <note xml:id="com351"><!--lemma: Nadver-->
+            <p>aftensmad.</p>
+         </note>
+         
+         <note xml:id="com1536"><!--lemma: -->
+            <p>forgår.</p>
+         </note>
+         
+         <note xml:id="com352"><!--lemma: Ulv forliger Sviin-->
+            <p>En fælles fare (ulven) bringer svinenes indbyrdes uenighed til ophør, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 1.747.</p>
+         </note>
+
+         <note xml:id="com353"><!--lemma: For-Raad-->
+            <p>råd givet på forhånd.</p>
+         </note>
+
+         <note xml:id="com354"><!--lemma: Efter-Raad-->
+            <p>råd givet for sent.</p>
+         </note>
+         
+         <note xml:id="com1537"><!--lemma: forraad-->
+            <p>dvs. forrådt; ødelagt af dårlige eller falske råd.</p>
+         </note>
+         
+         <note xml:id="com355"><!--lemma: Forseet er forspilt-->
+            <p>Den, der træffer en forkert beslutning, må tage konsekvenserne; bordet fanger. Forse betyder her: at se fejl.</p>
+         </note>
+         
+         <note xml:id="com1538"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com356"><!--lemma: forspørge-->
+            <p>spørge for meget.</p>
+         </note>
+
+         <note xml:id="com357"><!--lemma: Forsvoren-->
+            <p>afsværget.</p>
+         </note>
+
+         <note xml:id="com358"><!--lemma: forloren-->
+            <p>benægtet.</p>
+         </note>
+
+         <note xml:id="com359"><!--lemma: Forsvoren-->
+            <p>afsværget, det som er afsværget.</p>
+         </note>
+         
+         <note xml:id="com916"><!--lemma: uden -->
+            <p>bortset fra, undtagen.</p>
+         </note>
+         
+         <note xml:id="com360"><!--lemma: Skrællingen-->
+            <p>dvs. skrællen.</p>
+         </note>
+
+         <note xml:id="com361"><!--lemma: A-->
+            <p>jeg (dialekt).</p>
+         </note>
+         
+         <note xml:id="com1233"><!--lemma: længer-->
+            <p>dvs. længere.</p>
+         </note>
+         
+         <note xml:id="com362"><!--lemma: Freden er aldrig saa god, at de som har Skaden, beholder den jo-->
+            <p>Freden er ikke bedre end, at krigens tabere, som får skade, får lov at beholde skaden.</p>
+         </note>
+
+         <note xml:id="com363"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+
+         <note xml:id="com364"><!--lemma: Fiere-->
+            <p>dvs. fjer.</p>
+         </note>
+         
+         <note xml:id="com864"><!--lemma: Lader-->
+            <p>manerer.</p>
+         </note>
+         
+         <note xml:id="com1234"><!--lemma: Bestand-->
+            <p>bestandig eller vedvarende værdi.</p>
+         </note>
+         
+         <note xml:id="com365"><!--lemma: skrikker-->
+            <p>skræpper, skriger.</p>
+         </note>
+         
+         <note xml:id="com366"><!--lemma: vantrevne-->
+            <p>her: dovne, lade; jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 4.441.</p>
+         </note>
+         
+         <note xml:id="com865"><!--lemma: om-->
+            <p>omend, selv om.</p>
+         </note>
+         
+         <note xml:id="com2120"><!--lemma: Lad Vorherres Fugl ikke døe-->
+            <p>en selskabsleg, hvori en brændende pind rækkes rundt med disse ord.</p>
+         </note>
+         
+         <note xml:id="com367"><!--lemma: end-->
+            <p>endskønt, selvom (det er).</p>
+         </note>
+
+         <note xml:id="com368"><!--lemma: Seer-->
+            <p>se (imperativ pluralis).</p>
+         </note>
+
+         <note xml:id="com369"><!--lemma: krystet-->
+            <p>klemt sammen, knuget.</p>
+         </note>
+         
+         <note xml:id="com1641"><!--lemma: Kun en Søvn skiller Fuld og Gal ad-->
+            <p>Efter søvnen er den fulde ædru, men den gale er stadig gal.</p>
+         </note>
+
+         <note xml:id="com370"><!--lemma: skal man svare til-->
+            <p>stå til ansvar for.</p>
+         </note>
+
+         <note xml:id="com371"><!--lemma: uden-->
+            <p>bortset fra.</p>
+         </note>
+         
+         <note xml:id="com1707"><!--lemma: har femten haandværkere-->
+            <p>kan femten håndværk.</p>
+         </note>
+         
+         <note xml:id="com1236"><!--lemma: Fæste-Penge-->
+            <p>penge, der udbetales som pant på, at en aftale vil blive holdt.</p>
+         </note>
+         
+         <note xml:id="com372"><!--lemma: Fød-->
+            <p>brødfød.</p>
+         </note>
+
+         <note xml:id="com373"><!--lemma: føde-->
+            <p>brødføde.</p>
+         </note>
+
+         <note xml:id="com374"><!--lemma: Hunden har Klæden og gaaer om Føden-->
+            <p>brugt om person, der snylter eller nasser; egl. om dyr, der stjæler føden, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 2.591.</p>
+         </note>
+
+         <note xml:id="com375"><!--lemma: føder-->
+            <p>brødføder, ernærer.</p>
+         </note>
+         
+         <note xml:id="com1539"><!--lemma: Roes-->
+            <p>dvs. ros (imperativ).</p>
+         </note>
+         
+         <note xml:id="com2121"><!--lemma: Baaden-->
+            <p>fortjenesten, profitten.</p>
+         </note>
+         
+         <note xml:id="com1540"><!--lemma: slaae-->
+            <p>hælde, øse; kaste.</p>
+         </note>
+         
+         <note xml:id="com1541"><!--lemma: Roes -->
+            <p>dvs. ros (imperativ).</p>
+         </note>
+         
+         <note xml:id="com2207" changes="new"><!--lemma: Ingen sørge-->
+            <p>ingen bør eller skal sørge for (optativ).</p>
+         </note>
+         
+         <note xml:id="com376"><!--lemma: Snibbe-->
+            <p>irettesættelse, reprimande.</p>
+         </note>
+
+         <note xml:id="com377"><!--lemma: Bande-->
+            <p>forbandelse.</p>
+         </note>
+         
+         <note xml:id="com1238"><!--lemma: Heller-->
+            <p>dvs. hellere.</p>
+         </note>
+         
+         <note xml:id="com378"><!--lemma: voveste-->
+            <p>mest vovede, dristigste.</p>
+         </note>
+
+         <note xml:id="com379"><!--lemma: næst-->
+            <p>nærmest.</p>
+         </note>
+         
+         <note xml:id="com2242" changes="new"><!--lemma: Af det sidste ... -->
+            <p>Den der vil have det sidste glas, han skal have det første slag; om det at sviren går ud over den, som drikker til sidste glas er tømt, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.072.</p>
+         </note>
+         
+         <note xml:id="com2208" changes="new"><!--lemma: er immer i Forhaanden-->
+            <p>har altid overtaget, er altid forrest.</p>
+         </note>
+         
+         <note xml:id="com1239"><!--lemma: saa-->
+            <p>derefter, siden.</p>
+         </note>
+         
+         <note xml:id="com380"><!--lemma: bedst-->
+            <p>nemmest.</p>
+         </note>
+         
+         <note xml:id="com866"><!--lemma: Søger-->
+            <p>søg (imperativ pluralis).</p>
+         </note>
+         
+         <note xml:id="com381"><!--lemma: Sjokken-->
+            <p>den uordentlige, sjuskede kvinde.</p>
+         </note>
+
+         <note xml:id="com382"><!--lemma: som  en Høne i Blaar-->
+            <p>(som) i forlegenhed.</p>
+         </note>
+
+         <note xml:id="com383"><!--lemma: Olden-->
+            <p>overdrev eller skov til græsning.</p>
+         </note>
+         
+         <note xml:id="com867"><!--lemma: Spandet-præst-->
+            <p>præsten fra Spandet sogn i Sønderjylland; ifølge overleveringen havde biskoppen forbudt præsten at <hi rend="italic">gå</hi> på kro, hvorfor bønderne i stedet <hi rend="italic">bar</hi> ham derhen.</p>
+            <!-- se: http://ribewiki.dk/da/Topografi_1864_Spandet_Sogn -->
+         </note>
+         
+         <note xml:id="com868"><!--lemma: til Kroes-->
+            <p>til kroen (gl. genitivform).</p>
+         </note>
+         
+         <note xml:id="com869"><!--lemma: Skrævet-->
+            <p>stregen.</p>
+         </note>
+
+         <note xml:id="com385"><!--lemma: R..-->
+            <p>røv.</p>
+         </note>
+
+         <note xml:id="com386"><!--lemma: gaaer af-->
+            <p>går, bliver solgt.</p>
+         </note>
+         
+         <note xml:id="com1240"><!--lemma: Gaae med Skud og gak med Gud-->
+            <p>Gå din gang med Gudsfrygt; skud betyder jævn og rolig gang.</p>
+            <!-- ODS skud 7.1 -->
+         </note>
+         
+         <note xml:id="com1542"><!--lemma: løb Ræven-->
+            <p>ræven løb.</p>
+         </note>
+         
+         <note xml:id="com1241"><!--lemma: kækker-->
+            <p>dvs. gækker.</p>
+         </note>
+         
+         <note xml:id="com387"><!--lemma: Giærd-->
+            <p>indhegn således.</p>
+         </note>
+         
+         <note xml:id="com1242"><!--lemma: at staa i Gabet-->
+            <p>i brechen, på den mest udsatte post.</p>
+         </note>
+         
+         <note xml:id="com388"><!--lemma: gabe mod Ovns-Munden-->
+            <p>tage kampen op med sin overmand; ovnsmunden er åbningen ind til ovnen.</p>
+         </note>
+
+         <note xml:id="com389"><!--lemma: løber avet om til-->
+            <p>som om man skulle tro (ud fra hans opførsel); som han lader til.</p>
+         </note>
+
+         <note xml:id="com390"><!--lemma: Masken-->
+            <p>affaldsprodukt fra produktionen af frugtsaft, øl eller lignende.</p>
+         </note>
+
+         <note xml:id="com391"><!--lemma: aftoe-->
+            <p>indgroet snavs er svært at vaske af; dårlige vaner er svære at lægge fra sig.</p>
+         </note>
+         
+         <note xml:id="com392"><!--lemma: Strikke-->
+            <p>løkke (til at hænges i).</p>
+         </note>
+         
+         <note xml:id="com1544"><!--lemma: Gamle Kar vil gierne rinde-->
+            <p>om ældres rindende øjne eller lyst til at tale.</p>
+         </note>
+         
+         <note xml:id="com393"><!--lemma: dumme -->
+            <p>uklare (om gamle menneskers svage syn).</p>
+         </note>
+
+         <note xml:id="com394"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com872"><!--lemma: onde-->
+            <p>svære.</p>
+         </note>
+         
+         <note xml:id="com873"><!--lemma: ond-->
+            <p>svær.</p>
+         </note>
+         
+         <note xml:id="com1243"><!--lemma: nok-->
+            <p>sikkert, rimeligvis.</p>
+            <!-- se Mau I, s. 510 -->
+         </note>
+         
+         <note xml:id="com874"><!--lemma: ond-->
+            <p>svært.</p>
+         </note>
+
+         <note xml:id="com395"><!--lemma: kure-->
+            <p>sidde på bagben.</p>
+         </note>
+
+         <note xml:id="com396"><!--lemma: lakke-->
+            <p>labbe (i sig).</p>
+         </note>
+
+         <note xml:id="com397"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com875"><!--lemma: ond-->
+            <p>svær.</p>
+         </note>
+
+         <note xml:id="com398"><!--lemma: Bartskær-->
+            <p>barber med en kortere uddannelse som kirurg.</p>
+         </note>
+         
+         <note xml:id="com876"><!--lemma: tilgavns-->
+            <p>grundigt, fuldt ud.</p>
+         </note>
+         
+         <note xml:id="com877"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+
+         <note xml:id="com399"><!--lemma: End-->
+            <p>endnu.</p>
+         </note>
+         
+         <note xml:id="com878"><!--lemma: ondt-->
+            <p>svært.</p>
+         </note>
+
+         <note xml:id="com400"><!--lemma: Skiøn-->
+            <p>forstand.</p>
+         </note>
+         
+         <note xml:id="com1900"><!--lemma: Slaae Alvor paa Gammen-->
+            <p>fremsætte alvorlige tanker eller bemærkninger i spøgefuld form.</p>
+         </note>
+         
+         <note xml:id="com1245"><!--lemma: sorte-->
+            <p>forbandede.</p>
+            <!-- ODS sort 2.1 -->
+         </note>
+         
+         <note xml:id="com920"><!--lemma: uden-->
+            <p>undtagen.</p>
+         </note>
+         
+         <note xml:id="com401"><!--lemma: Kølvehug-->
+            <p>kølleslag.</p>
+         </note>
+
+         <note xml:id="com402"><!--lemma: det er jo-->
+            <p>der ikke er.</p>
+         </note>
+         
+         <note xml:id="com2209" changes="new"><!--lemma: ei æder Brød-->
+            <p>er uden omkostninger.</p>
+         </note>
+         
+         <note xml:id="com403"><!--lemma: Glemt er giengiældt Øre-->
+            <p>Glemt er betalt gæld.</p>
+         </note>
+         
+         <note xml:id="com1248"><!--lemma: Gienslag er ikke aflagt-->
+            <p>Selvforsvar er tilladt; genslag betyder slag givet som gengæld; aflagt betyder opgivet, afskaffet.</p>
+         </note>
+         
+         <note xml:id="com1545"><!--lemma: Giensti-->
+            <p>genvej.</p>
+         </note>
+         
+         <note xml:id="com404"><!--lemma: Glipsti-->
+            <p>vildvej.</p>
+         </note>
+
+         <note xml:id="com405"><!--lemma: Peer Gantes Gienvei-->
+            <p>unødvendig omvej; gantes betyder nar eller tåbe.</p>
+         </note>
+         
+         <note xml:id="com879"><!--lemma: Gjort Gierning er halv forsvart-->
+            <p>dvs. forsvaret.</p>
+         </note>
+         
+         <note xml:id="com1249"><!--lemma: Viskab-->
+            <p>indsigt, visdom.</p>
+         </note>
+         
+         <note xml:id="com1546"><!--lemma: gerrig paa Verden-->
+            <p>begærlig efter verdens goder.</p>
+         </note>
+         
+         <note xml:id="com1250"><!--lemma: Gildes-Mad-->
+            <p>festmad.</p>
+            <!-- dialekt ifølge ODS -->
+         </note>
+
+         <note xml:id="com406"><!--lemma: giver-->
+            <p>her: gør.</p>
+         </note>
+         
+         <note xml:id="com2122"><!--lemma: ilde sødet-->
+            <p>her: dårligt kogt.</p>
+         </note>
+         
+         <note xml:id="com2123"><!--lemma: Usødet-->
+            <p>her: ukogt.</p>
+         </note>
+         
+         <note xml:id="com407"><!--lemma: løst Folk-->
+            <p>dagdrivere.</p>
+         </note>
+         
+         <note xml:id="com2124"><!--lemma: føde-->
+            <p>brødføde.</p>
+         </note>
+         
+         <note xml:id="com408"><!--lemma: Møde-->
+            <p>besværet, anstrengelsen.</p>
+         </note>
+         
+         <note xml:id="com1709"><!--lemma: Der er kun lidt ...-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs></hi> forklares ordsproget således: &#x201C;mangen Gave maa betales med Mér, end den er værd&#x201D; (<rs type="title" key="title93">Mau 1879</rs>, nr. 2.861).</p>
+         </note>
+
+         <note xml:id="com409"><!--lemma: Glar-Øine-->
+            <p>briller.</p>
+         </note>
+
+         <note xml:id="com410"><!--lemma: bære igien-->
+            <p>levere tilbage.</p>
+         </note>
+         
+         <note xml:id="com2246" changes="new"><!--lemma: tolde / tolder -->
+            <p>Møllere tog betaling for malingen ved at tolde, dvs. tage en del af kornet eller melet med et toldkar.</p>
+         </note>
+         
+         <note xml:id="com411"><!--lemma: Feils-->
+            <p>sikkerheds.</p>
+         </note>
+         
+         <note xml:id="com1548"><!--lemma: Sorrig-->
+            <p>Ordsproget er første linje i <persName key="pe294">Thomas Kingos</persName> salme <rs type="title" key="title4114">&#x201C;Hver har sin Skæbne&#x201D;</rs> fra <rs type="title" key="title5308"><hi rend="italic">Aandelige Siunge-koors Anden Part</hi></rs> (1681), der nu kendes under første linje som titel (<rs type="title" key="title253">DDS</rs>, nr. 46); sorrig betyder sorg; tilhobe betyder sammen.</p>
+         </note>
+         
+         <note xml:id="com2125"><!--lemma: Bul-->
+            <p>stamme.</p>
+         </note>
+         
+         <note xml:id="com1251"><!--lemma: Lag-->
+            <p>hold, selskab.</p>
+         </note>
+         
+         <note xml:id="com413"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com1549"><!--lemma: Kiertel-->
+            <p>dvs. kirtel; knude, uspiselig del.</p>
+         </note>
+         
+         <note xml:id="com880"><!--lemma: Haandtag-->
+            <p>håndtryk, håndslag (som godkendelse af aftale eller handel).</p>
+         </note>
+         
+         <note xml:id="com1252"><!--lemma: spilt-->
+            <p>dvs. spillet.</p>
+         </note>
+         
+         <note xml:id="com415"><!--lemma: Taal-->
+            <p>tålmodighed.</p>
+         </note>
+         
+         <note xml:id="com1253"><!--lemma: ond-->
+            <p>uheldig, dårlig.</p>
+         </note>
+         
+         <note xml:id="com1550"><!--lemma: Grønt-->
+            <p>friskt.</p>
+         </note>
+         
+         <note xml:id="com2126"><!--lemma: Piber-->
+            <p>fløjter.</p>
+         </note>
+         
+         <note xml:id="com416"><!--lemma: Høsten-->
+            <p>efteråret.</p>
+         </note>
+         
+         <note xml:id="com417"><!--lemma: Det var godt at Stakke fik ingen Hale-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs></hi> forklares ordsproget således: &#x201C;det er godt, at den Overmodige ikke fik Magt til at gjøre Skade, som han gjærne vilde&#x201D; (<rs type="title" key="title93">Mau 1879</rs>, nr. 4.998).</p>
+         </note>
+         
+         <note xml:id="com881"><!--lemma: fuldt op-->
+            <p>nok at gøre; nok at spise.</p>
+         </note>
+         
+         <note xml:id="com2243" changes="new"><!--lemma: Man maa ... -->
+            <p>Man må ikke tage ting så tungt, men bære over med fejl og svagheder hos f.eks. tjenestefolk, jf. <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 360.</p>
+         </note>
+         
+         <note xml:id="com2210" changes="new"><!--lemma: Den Døde ...-->
+            <p>Mange, som lod til at være døden nær, kommer sig og lever, medens den, som beklagede døden, bliver snart kaldt bort; jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.219.</p>
+         </note>
+         
+         <note xml:id="com1255"><!--lemma: Terne sætter Haand under Kind og græder for Graaskind-->
+            <p>Tjenestepige ærgrer sig over, at hun ikke er så fin som sin frue, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.283; gråskind betyder her pels.</p>
+         </note>
+         
+         <note xml:id="com1256"><!--lemma: raa'er-->
+            <p>råder, bestemmer.</p>
+         </note>
+         
+         <note xml:id="com419"><!--lemma: griner Træet-->
+            <p>kommer træet til syne.</p>
+         </note>
+         
+         <note xml:id="com882"><!--lemma: Et Asen med Guld beladt vinder faste Stæder-->
+            <p>Et æsel belæsset med guld vinder eller erobrer befæstede byer.</p>
+            <!-- se Mau 3.308? -->
+         </note>
+         
+         <note xml:id="com883"><!--lemma: Forlangt-->
+            <p>dvs. for langt.</p>
+         </note>
+         
+         <note xml:id="com1257"><!--lemma: gængse-->
+            <p>gangbare, anvendelige.</p>
+         </note>
+         
+         <note xml:id="com420"><!--lemma: Haand skal Haand faae eller Mund meensværge-->
+            <p>Lån  eller betroet gods skal gives tilbage til ejeren, hvis man ikke kan blive fri sig ved ed, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.368; mensværge betyder aflægge falskt vidnesbyrd, mened.</p>
+         </note>
+         
+         <note xml:id="com1258"><!--lemma: og-->
+            <p>her: efter det.</p>
+         </note>
+         
+         <note xml:id="com2211" changes="new"><!--lemma: (Der er haarde Halse ...-->
+            <p>om personer, som med dygtighed, erfaring og indsigt er i stand til stædigt at forsvare sig, jf. <rs type="title" key="title93">Mau 1879</rs>, bind 1, s. 383.</p>
+         </note>
+         
+         <note xml:id="com421"><!--lemma: hundsk-->
+            <p>foragteligt, ynkeligt; kan også betyde meget gerrig.</p>
+         </note>
+         
+         <note xml:id="com2128"><!--lemma: Tæring-->
+            <p>hvad der behøves til livets ophold.</p>
+         </note>
+         
+         <note xml:id="com422"><!--lemma: Stalbroder-->
+            <p>våbenbroder, kampfælle.</p>
+         </note>
+         
+         <note xml:id="com884"><!--lemma: Rygt-->
+            <p>dvs. røgt; pasning, pleje.</p>
+         </note>
+         
+         <note xml:id="com2212" changes="new"><!--lemma: love-->
+            <p>lovprise.</p>
+         </note>
+         
+         <note xml:id="com1551"><!--lemma: Halv-Skrattes-->
+            <p>nars, tåbes.</p>
+         </note>
+         
+         <note xml:id="com2129"><!--lemma: Der synkes meget Godt for Hals-->
+            <p>om den, som har spist og drukket op, hvad han ejer, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.454.</p>
+         </note>
+         
+         <note xml:id="com1552"><!--lemma: føder-->
+            <p>brødføder.</p>
+         </note>
+         
+         <note xml:id="com885"><!--lemma: kiørt i Gaard-->
+            <p>gennet, drevet.</p>
+         </note>
+         
+         <note xml:id="com886"><!--lemma: Uglspil-->
+            <p>gavtyv, spasmager; også fast figur i folkelige fortællinger.</p>
+         </note>
+         
+         <note xml:id="com887"><!--lemma: Der groer Græs, som hegnet er-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs></hi> forklares ordsproget således: &#x201C;Hvem der passer sin Dont og holder sine Ting i Orden, kommer til Velstand&#x201D; (<rs type="title" key="title93">Mau 1879</rs>, nr. 3.250); hegnet betyder indhegnet.</p>
+         </note>
+         
+         <note xml:id="com888"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com889"><!--lemma: optaget-->
+            <p>lånt.</p>
+         </note>
+         
+         <note xml:id="com890"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com2130"><!--lemma: stryge-->
+            <p>pudse.</p>
+         </note>
+         
+         <note xml:id="com2159"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com423"><!--lemma: lokket-->
+            <p>forført, forledt.</p>
+         </note>
+         
+         <note xml:id="com1402"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com891"><!--lemma: overlig-->
+            <p>højt oppe.</p>
+         </note>
+         
+         <note xml:id="com892"><!--lemma: seer nederlig-->
+            <p>ser ned.</p>
+         </note>
+         
+         <note xml:id="com1259"><!--lemma: saa-->
+            <p>således, sådan.</p>
+         </note>
+         
+         <note xml:id="com424"><!--lemma: Herre-Breve-->
+            <p>breve fra fornemme personer.</p>
+         </note>
+         
+         <note xml:id="com1553"><!--lemma: Herre-Børn-->
+            <p>børn af formen familie.</p>
+         </note>
+         
+         <note xml:id="com425"><!--lemma: Herre-Hum-->
+            <p>Tjeneren adlyder blot det mindste vink fra sin herre, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.614.</p>
+            <!-- ODG hm (interjektion), Mau 3.614 -->
+         </note>
+
+         <note xml:id="com426"><!--lemma: Herre-Hylde-->
+            <p>herrens hyldest, gunst.</p>
+         </note>
+         
+         <note xml:id="com1556"><!--lemma: hidsig paa-->
+            <p>ivrig efter.</p>
+         </note>
+         
+         <note xml:id="com427"><!--lemma: Item-->
+            <p>lat., ligeledes, fremdeles, dvs. repetitioner.</p>
+         </note>
+         
+         <note xml:id="com893"><!--lemma: Ondt-->
+            <p>Det er ilde at hjælpe en fra asken til ilden.</p>
+         </note>
+
+         <note xml:id="com428"><!--lemma: djærvest-->
+            <p>modigst.</p>
+         </note>
+
+         <note xml:id="com429"><!--lemma: frist-->
+            <p>forsøgt, prøvet.</p>
+            <!-- se Toldberg: "G. som filolog" -->
+         </note>
+
+         <note xml:id="com430"><!--lemma: Saa-->
+            <p>således, sådan.</p>
+         </note>
+         
+         <note xml:id="com2244" changes="new"><!--lemma: Giør ingen ... -->
+            <p>Man bør sige hvad man tænker og føler frem for at holde det skjult.</p>
+         </note>
+         
+         <note xml:id="com2245" changes="new"><!--lemma: Bær ikke ... -->
+            <p>Tænk før du taler, og vær ærlig, når du taler; at bære noget på tungen betyder at være ivrig efter at ytre sig eller tale nedsættende om nogen.</p>
+            <!-- OSD Tunge 3.5 -->
+         </note>
+         
+         <note xml:id="com1554"><!--lemma: Vadmels-Kofter-->
+            <p>grove beklædningsstykker, bondens tøj.</p>
+         </note>
+         
+         <note xml:id="com431"><!--lemma: Faure-->
+            <p>fagre, skønne.</p>
+         </note>
+         
+         <note xml:id="com1260"><!--lemma: Hjerte-Lag-->
+            <p>sindelag.</p>
+         </note>
+         
+         <note xml:id="com432"><!--lemma: Hande-Lag-->
+            <p>dvs. håndelag.</p>
+         </note>
+         
+         <note xml:id="com909"><!--lemma: uden-->
+            <p>hvis ikke (det er).</p>
+         </note>
+         
+         <note xml:id="com2131"><!--lemma: Vognkiep-->
+            <p>en af fire opstandere af træ eller jern, vognbrættet hviler på; kusken bruger vognbrættet som støtte for sine fødder.</p>
+         </note>
+         
+         <note xml:id="com910"><!--lemma: taber sicg selv-->
+            <p>falder let af.</p>
+         </note>
+         
+         <note xml:id="com435"><!--lemma: Hitter-->
+            <p>hæler, (en) finder.</p>
+         </note>
+         
+         <note xml:id="com436"><!--lemma: Hof-Kagen er enten blank eller brændt-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat</rs></hi> forklares ordsproget således: &#x201C;<hi rend="spaced">Hof</hi>levnet er enten for sødt eller for súrt&#x201D; (<rs type="title" key="title93">Mau 1879</rs>, nr. 3.802); blank betyder her fin.</p>
+         </note>
+
+         <note xml:id="com437"><!--lemma: Regnepenge-->
+            <p>betegnelse for noget værdiløst; egl. metalstykker, man brugte til udregning.</p>
+         </note>
+         
+         <note xml:id="com894"><!--lemma: forlorent-->
+            <p>tabt, mistet.</p>
+         </note>
+         
+         <note xml:id="com2213" changes="new"><!--lemma: Navne-Værdi-->
+            <p>pålydende værdi.</p>
+         </note>
+         
+         <note xml:id="com438"><!--lemma: til Hove-->
+            <p>til hoffet.</p>
+         </note>
+         
+         <note xml:id="com895"><!--lemma: Mange holder med En, saalænge der er et heelt Sidebeen i ham-->
+            <p>Mange holder med ham, der kæmper til det sidste.</p>
+         </note>
+         
+         <note xml:id="com1261"><!--lemma: Loven-->
+            <p>det at love (noget).</p>
+         </note>
+         
+         <note xml:id="com1262"><!--lemma: Holden-->
+            <p>det at holde (noget).</p>
+         </note>
+         
+         <note xml:id="com896"><!--lemma: holden-->
+            <p>solide, gode.</p>            
+         </note>
+         
+         <note xml:id="com1263"><!--lemma: kækker-->
+            <p>dvs. gækker.</p>
+         </note>
+         
+         <note xml:id="com1264"><!--lemma: hytter-->
+            <p>værner, beskytter.</p>
+         </note>
+         
+         <note xml:id="com441"><!--lemma: synderligste-->
+            <p>betydeligste, væsentligste.</p>
+         </note>
+         
+         <note xml:id="com897"><!--lemma: ondt-->
+            <p>svært.</p>
+         </note>
+         
+         <note xml:id="com901"><!--lemma: hukommen-->
+            <p>som husker, hvad der er sket.</p>
+         </note>
+         
+         <note xml:id="com442"><!--lemma: Lagsbroder-->
+            <p>svirebroder, jf. <hi rend="italic"><rs type="title" key="title5462">Syv 1944</rs></hi> s. 486.</p>
+         </note>
+         
+         <note xml:id="com899"><!--lemma: Veed du et Hul, saa veed jeg en Pind-->
+            <p>Mig skal du ikke narre, jeg ved lige så meget som dig.</p>
+         </note>
+         
+         <note xml:id="com443"><!--lemma: Det staaer ikke ... Hors-->
+            <p>Det står ikke i hundes magt at bestemme om en hest skal dø; hors betyder hest eller hoppe.</p>
+         </note>
+         
+         <note xml:id="com2214" changes="new"><!--lemma: Hunde-Bønner-->
+            <p>meget underdanige bønner.</p>
+         </note>
+         
+         <note xml:id="com444"><!--lemma: mullent-->
+            <p>muggent.</p>
+         </note>
+         
+         <note xml:id="com2133"><!--lemma: lædske-->
+            <p>her: stiller sult og slukker tørst.</p>
+         </note>
+         
+         <note xml:id="com1557"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com930"><!--lemma: Uden-->
+            <p>hvis ikke, medmindre.</p>
+         </note>
+         
+         <note xml:id="com445"><!--lemma: Huus-Tyve-->
+            <p>personer, som stjæler fra den husstand, de tilhører.</p>
+         </note>
+         
+         <note xml:id="com446"><!--lemma: Hæs-->
+            <p>bunker, stabler (på lager).</p>
+         </note>
+         
+         <note xml:id="com911"><!--lemma: uden-->
+            <p>andet end.</p>
+         </note>
+         
+         <note xml:id="com1558"><!--lemma: grandt-->
+            <p>dvs. grant; tydeligt.</p>
+         </note>
+         
+         <note xml:id="com448"><!--lemma: kan for-->
+            <p>kan gøre for.</p>
+         </note>
+         
+         <note xml:id="com2215" changes="new"><!--lemma: at-->
+            <p>for at.</p>
+         </note>
+         
+         <note xml:id="com449"><!--lemma: Stalbroder-->
+            <p>her: legekammerat.</p>
+         </note>
+         
+         <note xml:id="com1559"><!--lemma: hvisler-->
+            <p>håner, bagtaler.</p>
+         </note>
+         
+         <note xml:id="com1266"><!--lemma: Himmelens Løb-->
+            <p>himmellegemers bevægelse.</p>
+         </note>
+         
+         <note xml:id="com931"><!--lemma: Hvem der har et gult Haar, vil have det kruset-->
+            <p>om begærlighed eller utilfredshed med egne vilkår, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.397.</p>
+            <!-- Mere vil have mere; beskrivelse af begærlighed eller utilfredshed.; Mau 3.397: Hvo der har et gult Haar ell. Haaret gult, vil have det kruset. 1, 317. jvf. 3659. - Naar man først har gult Haar, saa vil man ogsaa have det kruset, (om den Unøjsomme og Begjærlige, som ikke er tilfreds med sine for Resten gode Kaar). -->
+         </note>
+         
+         <note xml:id="com450"><!--lemma: hildet-->
+            <p>snydt, bedraget.</p>
+         </note>
+         
+         <note xml:id="com1560"><!--lemma: Hvem vil hugge sin Næse i Steen?-->
+            <p>Hvem vil udsætte sig for ubehageligheder eller fortrædeligheder for en andens skyld eller smigre for en?</p>
+         </note>
+         
+         <note xml:id="com451"><!--lemma: Hvem veed Peer Paarses Lykke?-->
+            <p>Ingen kan på forhånd kende til uventet lykke; Per Poses (eller Paarses) lykke er en betegnelse for et lykketræf.</p>
+         </note>
+         
+         <note xml:id="com1267"><!--lemma: Ikke hver Mand har Høg paa Hand-->
+            <p>Ikke alle kan leve som de rige (idet kun rige folk drev med falkejagt), jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 4.219.</p>
+            <!-- Mau 4219 -->
+         </note>
+         
+         <note xml:id="com452"><!--lemma: hæd-->
+            <p>hædret, anseet.</p>
+         </note>
+         
+         <note xml:id="com933"><!--lemma: Fløde-Bytten-->
+            <p>faldt kar, hvor mælken stod og udskilte fløde på overfalden.</p>
+         </note>
+         
+         <note xml:id="com453"><!--lemma: tørvtig-->
+            <p>trængende.</p>
+         </note>
+
+         <note xml:id="com454"><!--lemma: Somt-->
+            <p>noget, en del.</p>
+         </note>
+         
+         <note xml:id="com1679"><!--lemma: hverdag-->
+            <p>dvs. hver dag eller til hverdags.</p>
+         </note>
+         
+         <note xml:id="com1561"><!--lemma: hverken-->
+            <p>hverken noget.</p>
+         </note>
+         
+         <note xml:id="com455"><!--lemma: flaut-->
+            <p>dvs. flovt, banalt.</p>
+         </note>
+
+         <note xml:id="com456"><!--lemma: hvid-->
+            <p>uskyldig.</p>
+         </note>
+
+         <note xml:id="com457"><!--lemma: regner i Skræppe-->
+            <p>højlydt.</p>
+         </note>
+         
+         <note xml:id="com1269"><!--lemma: -->
+            <p>får spændt åget på.</p>
+         </note>
+         
+         <note xml:id="com1712"><!--lemma: Den hviler to Gange, som paa Steen hviler-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title5463">Peder Laales gammeldanske ordsprog med sideløbende oversættelse til nydansk</rs></hi> giver <persName key="pe4760">Aage Hansen</persName> følgende oversættelse af ordsproget: &#x201C;Han hviler sig to gange, som sidder på en sten (&#x037B;: først når han sætter sig, og dernæst når han (øm, træt af at sidde på den hårde sten) rejser sig igen&#x201D; (<rs type="title" key="title5463">Syv 1966</rs>, nr. 106, s. 14).</p>
+         </note>
+         
+         <note xml:id="com458"><!--lemma: Hvilken-->
+            <p>uanset hvilken.</p>
+         </note>
+         
+         <note xml:id="com934"><!--lemma: skiber-->
+            <p>tager om bord.</p>
+         </note>
+
+         <note xml:id="com459"><!--lemma: huld-->
+            <p>trofast, hengiven.</p>
+         </note>
+
+         <note xml:id="com460"><!--lemma: hannem-->
+            <p>ham.</p>
+         </note>
+         
+         <note xml:id="com935"><!--lemma: maa ligne hvad han er kommet af-->
+            <p>må ligne sit ophav.</p>
+         </note>
+
+         <note xml:id="com462"><!--lemma: jer-->
+            <p>brugt om den, der taler over sig i fuldskab; jert og jer betyder jeres.</p>
+         </note>
+
+         <note xml:id="com464"><!--lemma: Ihvor-->
+            <p>hvorend.</p>
+         </note>
+         
+         <note xml:id="com936"><!--lemma: støiet eller fløied-->
+            <p>rejst hen, blevet af.</p>
+         </note>
+         
+         <note xml:id="com466"><!--lemma: giør baade eet-->
+            <p>gør fælles sag.</p>
+         </note>
+         
+         <note xml:id="com2216" changes="new"><!--lemma: Der er Ingen tilsammen viet uden Munken og hans Jakke, Hofmand rider og Hofmand bier, hvor han kan tjene til Takke. Kv.-->
+            <p>KV. er en forkortelse af kæmpevise, dvs. folkevise, jf. <persName key="pe135">Svend Grundvigs</persName> tilføjelse til forordet i andenudgaven af <rs type="title" key="title3173"><hi rend="italic">Danske Ordsprog og Mundheld</hi></rs> (1875, s. X). Ordsproget stammer fra folkevises om <rs type="title" key="title2115">Niels Ebbesen</rs> (<rs type="title" key="title1735">DgF</rs> 156F), hvor det optræder som strofe 27, jf. også Grundtvigs egen folkevisesamling <rs type="title" key="title2516"><hi rend="italic">Danske Kæmpeviser til Skole-Brug</hi></rs> (1847), s. 63. Frasen: Der er ingen tilsammen viet uden munken og hans jakke, bruges som udtryk for, at de fleste forhold kan opløses.</p>
+         </note>
+         
+         <note xml:id="com467"><!--lemma: hvor været haver-->
+            <p>hvor det har været.</p>
+         </note>
+         
+         <note xml:id="com937"><!--lemma: Kuse (Kyse)-->
+            <p>kuse betyder bussemand, frygtet person; kyse betyder noget eller nogen som fremkalder skræk, indgyder frygt og er Grundtvigs gengivelse af kuse.</p>
+         </note>
+         
+         <note xml:id="com468"><!--lemma: kiender-->
+            <p>føles, mærkes.</p>
+         </note>
+         
+         <note xml:id="com1567"><!--lemma: Der spørges ikke, hvor man kom sammen, men hvor man skiltes ad -->
+            <p>Man ser mindre på årsagen til end på udfaldet af en sag.</p>
+         </note>
+         
+         <note xml:id="com469"><!--lemma: kullet-->
+            <p>om den som har viljen, men ikke evnerne til at skade; kullet betyder harmløs.</p>
+         </note>
+         
+         <note xml:id="com939"><!--lemma: grant i Sigte-->
+            <p>klar, tydelig at se.</p>
+         </note>
+         
+         <note xml:id="com912"><!--lemma: om-->
+            <p>hvis.</p>
+         </note>
+         
+         <note xml:id="com470"><!--lemma: Taanden-->
+            <p>dvs. tanden, vægen i et stearinlys.</p>
+         </note>
+         
+         <note xml:id="com471"><!--lemma: snarest-->
+            <p>først.</p>
+         </note>
+         
+         <note xml:id="com1272"><!--lemma: Høi over Høi-->
+            <p>dvs. høg over høg, der er en forvanskning af talemåden høj over høj, idet høg udtales på samme måde som høj.</p>
+            <!-- Præd, 5,7: &#x201C;den mægtige vogter en mægtigere, og endnu mægtigere står over dem&#x201D;. -->
+         </note>
+         
+         <note xml:id="com1563"><!--lemma: Hævd-->
+            <p>pasning, pleje.</p>
+         </note>
+         
+         <note xml:id="com473"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com2217" changes="new">
+            <p>ikke må.</p>
+         </note>
+         
+         <note xml:id="com1274"><!--lemma: Saa-->
+            <p>sådan, således.</p>
+         </note>
+         
+         <note xml:id="com1564"><!--lemma: Ilden rage-->
+            <p>rive aske hen over gløderne (så de kan brænde natten igennem).</p>
+         </note>
+         
+         <note xml:id="com475"><!--lemma: Hand-->
+            <p>dvs. hånd.</p>
+         </note>
+         
+         <note xml:id="com2134"><!--lemma: Brand-->
+            <p>genstand, træstykke der er ild i.</p>
+         </note>
+         
+         <note xml:id="com476"><!--lemma: Ilde-->
+            <p>ildebrande.</p>
+         </note>
+         
+         <note xml:id="com1276"><!--lemma: ude-->
+            <p>gået ud, slukket.</p>
+         </note>
+         
+         <note xml:id="com477"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com2135"><!--lemma: Brand-->
+            <p>træstykke.</p>
+         </note>
+
+         <note xml:id="com478"><!--lemma: Vogter-->
+            <p>vogt (imperativ pluralis).</p>
+         </note>
+         
+         <note xml:id="com1565"><!--lemma: lede-->
+            <p>må lede (konjunktiv).</p>
+         </note>
+         
+         <note xml:id="com942"><!--lemma: Giæk-Ilden-->
+            <p>lygtemand.</p>
+         </note>
+         
+         <note xml:id="com943"><!--lemma: ret-->
+            <p>højt, meget.</p>
+         </note>
+
+         <note xml:id="com480"><!--lemma: svelter-->
+            <p>bruges om det, at man må arbejde for føden; gangende fod sigter til de dyr, der altid jager føde; svelter betyder sulter.</p>
+         </note>
+
+         <note xml:id="com481"><!--lemma: Pestilens-->
+            <p>pest, sygdom.</p>
+         </note>
+         
+         <note xml:id="com1566"><!--lemma: skumper-->
+            <p>rystes, stødes.</p>
+         </note>
+         
+         <note xml:id="com1714"><!--lemma: -->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title5462">Peder Syvs Danske Ordsprog</rs></hi> anfører <persName key="pe4760">Aage Hansen</persName> følgende kommentar til ordsproget: &#x201C;siden det &#x2018;fine&#x2019; udtryk &#x2018;få, tage sig en rus&#x2019; opkom, er der ingen &#x2018;fulde&#x2019;&#x201D; (<rs type="title" key="title5462">Syv 1944</rs>, nr. 8.852, s. 454).</p>
+         </note>
+         
+         <note xml:id="com482"><!--lemma: bande Kongen i Ovnen-->
+            <p>kritisere kongen fra en tryg position<!--; at sidde bag ovnen betegner en behagelig plads-->.</p>
+         </note>
+
+         <note xml:id="com483"><!--lemma: slaae Kneps i Lommen-->
+            <p>give virkningsløs kritik, yde skjult men nytteløs modstand.</p>
+         </note>
+         
+         <note xml:id="com944"><!--lemma: til-->
+            <p>som.</p>
+         </note>
+
+         <note xml:id="com484"><!--lemma: morgenmullet-->
+            <p>overskyet om morgenen.</p>
+         </note>
+         
+         <note xml:id="com945"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com485"><!--lemma: forloret-->
+            <p>tabt.</p>
+         </note>
+
+         <note xml:id="com486"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+
+         <note xml:id="com488"><!--lemma: brøster-->
+            <p>mangler.</p>
+         </note>
+         
+         <note xml:id="com1277"><!--lemma: indført-->
+            <p>bragt med ind (ved fødslen).</p>
+         </note>
+         
+         <note xml:id="com1278"><!--lemma: udføre-->
+            <p>tage med ud (ved døden).</p>
+         </note>
+         
+         <note xml:id="com489"><!--lemma: kargere-->
+            <p>dvs. karrigere; meget nærig, sparsommelig.</p>
+         </note>
+
+         <note xml:id="com490"><!--lemma: argere-->
+            <p>mere vred, forbitret.</p>
+         </note>
+         
+         <note xml:id="com946"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com947"><!--lemma: grovere-->
+            <p>større, federe.</p>
+         </note>
+         
+         <note xml:id="com491"><!--lemma: Ukrud-->
+            <p>dvs. ukrudt.</p>
+         </note>
+         
+         <note xml:id="com948"><!--lemma: est-->
+            <p>er (gl. præsens, 2. person singularis).</p>
+         </note>
+         
+         <note xml:id="com949"><!--lemma: blade-->
+            <p>pille blade af.</p>
+         </note>
+         
+         <note xml:id="com2218" changes="new"><!--lemma: ruske-->
+            <p>fjerne, tage bort.</p>
+         </note>
+         
+         <note xml:id="com492"><!--lemma: Saa-->
+            <p>således, sådan.</p>
+         </note>
+
+         <note xml:id="com493"><!--lemma: Knur-->
+            <p>dvs. knurren; udtryk for utilfredshed.</p>
+         </note>
+         
+         <note xml:id="com1279"><!--lemma: ond-->
+            <p>dårlig, ringe.</p>
+         </note>
+         
+         <note xml:id="com1568"><!--lemma: Skielm-->
+            <p>dvs. skælm.</p>
+         </note>
+         
+         <note xml:id="com494"><!--lemma: klottet-->
+            <p>pjaltet, usselt.</p>
+         </note>
+
+         <note xml:id="com495"><!--lemma: Pebling-->
+            <p>elev på latinskole.</p>
+         </note>
+
+         <note xml:id="com496"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com1569"><!--lemma: gabe-->
+            <p>måbe.</p>
+         </note>
+         
+         <note xml:id="com1570"><!--lemma: Kast paa Krog-->
+            <p>dvs. kast kun medekrogen ud, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 5.768; medekrog betyder kroge med agn.</p>
+            <!-- Mau 5768 -->
+         </note>
+         
+         <note xml:id="com2219" changes="new"><!--lemma: Karl for sin Hat-->
+            <p>sin opgave voksen.</p>
+         </note>
+         
+         <note xml:id="com497"><!--lemma: Bytten-->
+            <p>dvs. bøtten.</p>
+         </note>
+
+         <note xml:id="com498"><!--lemma: sagtens-->
+            <p>rimeligvis, velsagtens.</p>
+            <!-- negation?; se Mau 4561. En Kat har Lov til at se paa en Konge. R. 394. — Kat sér paa en Konge, hvi maa man ej se paa din Jord-Unge (o: din ubetydelige Person). 2, 217. (Svar til den, som spørger: hvorfor sér du paa mig?).  -->
+         </note>
+         
+         <note xml:id="com1571"><!--lemma: paa-->
+            <p>på dig.</p>
+         </note>
+         
+         <note xml:id="com913"><!--lemma: Hjord-Unge-->
+            <p>vogterdreng; kan også betegne en ringe eller ubetydelig person.</p>
+         </note>
+         
+         <note xml:id="com950"><!--lemma: Den er klog paa Katte-Død, som har Tarmene om Halsen-->
+            <p>om den, der er bagklog; &#x201C;Til den, der er bagklog, siger man: &#x2018;Do ær klog o æ Kattes Dø, nær ’en rinder mæ æ Tarmer om æ Hals&#x2019; (= du er klog på kattens død, når den render med tarmene om halsen)&#x201D;; opslagsord hals i <rs type="title" key="title3823"><hi rend="italic">Jysk Ordbog</hi></rs>.</p>
+            <!-- http://www.jyskordbog.dk/ordbog/index.cgi?opslag=hals1 -->
+         </note>
+         
+         <note xml:id="com1572"><!--lemma: Blæse-->
+            <p>blæse være.</p>
+         </note>
+         
+         <note xml:id="com500"><!--lemma: kierne-->
+            <p>dvs. kærne.</p>
+         </note>
+
+         <note xml:id="com502"><!--lemma: lade-->
+            <p>opgive, give afkald på.</p>
+         </note>
+         
+         <note xml:id="com2220" changes="new"><!--lemma: kiært kaste-->
+            <p>kaste det, man har kært, over bord.</p>
+         </note>
+         
+         <note xml:id="com503"><!--lemma: fjæles-->
+            <p>skjules, gemmes.</p>
+         </note>
+         
+         <note xml:id="com2221" changes="new"><!--lemma: for-->
+            <p>forud for.</p>
+         </note>
+         
+         <note xml:id="com1573"><!--lemma: Konge-Bud-->
+            <p>kongelige befalinger.</p>
+         </note>
+         
+         <note xml:id="com504"><!--lemma: kiøbe Vid med Hug-->
+            <p>bliver klog af skade.</p>
+         </note>
+
+         <note xml:id="com505"><!--lemma: Bisse-Kræmmer-->
+            <p>omvandrende handelsmand.</p>
+         </note>
+         
+         <note xml:id="com2222" changes="new"><!--lemma: klinger som Kattun-->
+            <p>lyder klangløs og svagt; katun er et lærredsagtigt bomuldsstof.</p>
+         </note>
+         
+         <note xml:id="com506"><!--lemma: det, der springer-->
+            <p>en, der står på spring, en tjener.</p>
+         </note>
+
+         <note xml:id="com507"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com951"><!--lemma: Koen malker af Tanden-->
+            <p>Som koen fodres, således giver den mælk.</p>
+         </note>
+         
+         <note xml:id="com2136"><!--lemma: Naar det kommer, saa kommer det Altsammen paa een Gang (sagde Skræderen, han fik et Par Buxer at vende til Jule-Aften) -->
+            <p>Hos <rs type="title" key="title93">Mau</rs> har ordsproget et efterhæng, der indikerer betydningen, at skrædderen ikke havde haft arbejde hele det forgående år, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 4.198. Ordsproget spiller i Grundtvigs version desuden på talemåden at vende sine bukser, der både kan betyde at krænge bukserne af og forrette sin nødtørft og at sy tøj om, således at vrangen vendes udad.</p>
+         </note>
+         
+         <note xml:id="com508"><!--lemma: som været haver-->
+            <p>hvor det før har været.</p>
+         </note>
+         
+         <note xml:id="com1574"><!--lemma: Kom igen ...-->
+            <p>advarsel, trussel; advisering (givet med foragt).</p>
+         </note>
+         
+         <note xml:id="com1280"><!--lemma: god-->
+            <p>nem, let.</p>
+         </note>
+         
+         <note xml:id="com511"><!--lemma: komme i med-->
+            <p>indlade sig med, træde i forhold til.</p>
+         </note>
+         
+         <note xml:id="com1575"><!--lemma: Det kommer ikke an paa ..-->
+            <p>Man tager det ikke så nøje med det, man har nok af.</p>
+         </note>
+
+         <note xml:id="com512"><!--lemma: fjæles-->
+            <p>skjules, gemmes.</p>
+         </note>
+
+         <note xml:id="com513"><!--lemma: Snø-->
+            <p>dvs. sne.</p>
+         </note>
+
+         <note xml:id="com514"><!--lemma: saa-->
+            <p>således også.</p>
+         </note>
+         
+         <note xml:id="com1281"><!--lemma: Albu-Stød-->
+            <p>her: en kortvarig smerte.</p>
+         </note>
+         
+         <note xml:id="com952"><!--lemma: Frygter-->
+            <p>frygt (imperativ pluralis).</p>
+         </note>
+         
+         <note xml:id="com953"><!--lemma: ærer-->
+            <p>ær (imperativ pluralis).</p>
+         </note>
+
+         <note xml:id="com515"><!--lemma: Lovsens-->
+            <p>dvs. lovens.</p>
+         </note>
+         
+         <note xml:id="com516"><!--lemma: Konning-->
+            <p>konge.</p>
+         </note>
+
+         <note xml:id="com517"><!--lemma: Sæd-->
+            <p>vane, sædvane.</p>
+         </note>
+         
+         <note xml:id="com2137"><!--lemma: Dog-->
+            <p>skønt, selv om.</p>
+         </note>
+         
+         <note xml:id="com518"><!--lemma: Konning-->
+            <p>konge.</p>
+         </note>
+
+         <note xml:id="com519"><!--lemma: hannem-->
+            <p>ham.</p>
+         </note>
+         
+         <note xml:id="com954"><!--lemma: er-->
+            <p>har.</p>
+         </note>
+
+         <note xml:id="com520"><!--lemma: hannem-->
+            <p>ham.</p>
+         </note>
+         
+         <note xml:id="com1576"><!--lemma: fuldstor-->
+            <p>meget stor.</p>
+         </note>
+         
+         <note xml:id="com955"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com914"><!--lemma: Lyste-->
+            <p>dvs. lyst.</p>
+         </note>
+         
+         <note xml:id="com2138"><!--lemma: uden-->
+            <p>medmindre.</p>
+         </note>
+         
+         <note xml:id="com956"><!--lemma: heller-->
+            <p>hellere.</p>
+         </note>
+         
+         <note xml:id="com521"><!--lemma: myste-->
+            <p>dvs. miste.</p>
+         </note>
+         
+         <note xml:id="com2224" changes="new"><!--lemma: for-->
+            <p>forud for.</p>
+         </note>
+         
+         <note xml:id="com1577"><!--lemma: Konsten stiger-->
+            <p>går fremad, bliver bedre.</p>
+            <!-- se mail fra FLN, 2017.10.17 -->
+         </note>
+         
+         <note xml:id="com522"><!--lemma: Ulken-->
+            <p>sømanden.</p>
+         </note>
+         
+         <note xml:id="com1578"><!--lemma: trak -->
+            <p>trak i land.</p>
+         </note>
+         
+         <note xml:id="com523"><!--lemma: giøre en Daler i tre Mark -->
+            <p>veksle en daler til tre mark, dvs. til det halve af dens værdi.</p>
+         </note>
+         
+         <note xml:id="com1579"><!--lemma: og mærkelige-->
+            <p>Korte og bemærkelsesværdige prædikener, korte og hjertelige bønner; adjektiverne er efterstillet, og der kan underforstås &#x2018;er ønskelige&#x2019; som afslutning på ordsproget.</p>
+         </note>
+         
+         <note xml:id="com524"><!--lemma: forgivet-->
+            <p>givet forkert.</p>
+         </note>
+
+         <note xml:id="com525"><!--lemma: Korten-Spil-->
+            <p>dvs. kortspil.</p>
+         </note>
+
+         <note xml:id="com527"><!--lemma: hvidere-->
+            <p>her også i betydningen mere uskyldig.</p>
+         </note>
+
+         <note xml:id="com528"><!--lemma: for-->
+            <p>fordi.</p>
+         </note>
+
+         <note xml:id="com529"><!--lemma: toer-->
+            <p>vasker.</p>
+         </note>
+
+         <note xml:id="com530"><!--lemma: Krammen-->
+            <p>varen.</p>
+         </note>
+
+         <note xml:id="com531"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com532"><!--lemma: falle-->
+            <p>byde.</p>
+         </note>
+         
+         <note xml:id="com533"><!--lemma: Krammen-->
+            <p>varen.</p>
+         </note>
+
+         <note xml:id="com534"><!--lemma: for Intet-->
+            <p>gratis.</p>
+         </note>
+         
+         <note xml:id="com2225" changes="new"><!--lemma: pløier med Ræve-->
+            <p>begynde på noget umuligt eller tåbeligt; kan også betegne planlægning af noget listigt.</p>
+            <!-- ODS Ræv -->
+         </note>
+         
+         <note xml:id="com1581"><!--lemma: Skraldet-->
+            <p>smældet, knaldet (fra pisken).</p>
+         </note>
+         
+         <note xml:id="com967"><!--lemma: Kul er ei Skarn i Kongens Mad-->
+            <p>Kongen tåler kul i sin mad; undskyldning for, at der er kommet kul fra ildstedet eller komfuret i maden under tilberedningen.</p>
+         </note>
+         
+         <note xml:id="com535"><!--lemma: Kuld-->
+            <p>dvs. kulde.</p>
+         </note>
+         
+         <note xml:id="com2226" changes="new"><!--lemma: som-->
+            <p>såvel som.</p>
+         </note>
+         
+         <note xml:id="com1411"><!--lemma: ond-->
+            <p>slem, vanskelig.</p>
+         </note>
+         
+         <note xml:id="com536"><!--lemma: Dør-Navle-->
+            <p>dvs. nagle; søm.</p>
+         </note>
+         
+         <note xml:id="com1282"><!--lemma: kvælder-->
+            <p>bliver aften.</p>
+         </note>
+         
+         <note xml:id="com1412"><!--lemma: vel-->
+            <p>nok; godt.</p>
+         </note>
+         
+         <note xml:id="com537"><!--lemma: behænde-->
+            <p>behændigt, kunstfærdigt.</p>
+         </note>
+         
+         <note xml:id="com1582"><!--lemma: Det kyser ei ... -->
+            <p>Ikke alt der er uhyggeligt, skræmmer.</p>
+         </note>
+         
+         <note xml:id="com1583"><!--lemma: Man skal ikke svide ...-->
+            <p>Man skal ikke påtale alle små fejl.</p>
+         </note>
+         
+         <note xml:id="com541"><!--lemma: lydesløst-->
+            <p>ubeskadiget; som aftalt, problemfrit.</p>
+         </note>
+
+         <note xml:id="com542"><!--lemma: Tælle-Kniv-->
+            <p>bred kniv til at skære i træ med.</p>
+         </note>
+         
+         <note xml:id="com1285"><!--lemma: Lad-->
+            <p>doven.</p>
+         </note>
+         
+         <note xml:id="com1802"><!--lemma: -->
+            <p>Når høsten er god, er det fordi, det ikke har regnet for meget.</p>
+            <!-- er det rigtigt? -->
+         </note>
+         
+         <note xml:id="com1584"><!--lemma: Vanart-->
+            <p>dårlig karakter.</p>
+         </note>
+         
+         <note xml:id="com1585"><!--lemma: lang Stjert-->
+            <p>langvarige følger; egl. lang hale.</p>
+         </note>
+         
+         <note xml:id="com902"><!--lemma: vis-->
+            <p>sikker.</p>
+         </note>
+         
+         <note xml:id="com544"><!--lemma: Beet-->
+            <p>skade.</p>
+         </note>
+
+         <note xml:id="com545"><!--lemma: trang-->
+            <p>tung.</p>
+         </note>
+         
+         <note xml:id="com1286"><!--lemma: Lnagt Bord-->
+            <p>usund levevis.</p>
+         </note>
+         
+         <note xml:id="com1416"><!--lemma: stakket-->
+            <p>kort.</p>
+         </note>
+         
+         <note xml:id="com1715"><!--lemma: Der skal lange Arme ...-->
+            <p>Det er vanskeligt at undgå sladder.</p>
+         </note>
+         
+         <note xml:id="com968"><!--lemma: for-->
+            <p>fordi.</p>
+         </note>
+         
+         <note xml:id="com1287"><!--lemma: laster-->
+            <p>bebrejder, dadler.</p>
+         </note>
+         
+         <note xml:id="com1586"><!--lemma: for-->
+            <p>fordi.</p>
+         </note>
+         
+         <note xml:id="com546"><!--lemma: saa kund’ A preek-->
+            <p>så kunne jeg prædike (dialekt).</p>
+         </note>
+
+         <note xml:id="com547"><!--lemma: om-->
+            <p>efter.</p>
+         </note>
+
+         <note xml:id="com548"><!--lemma: en faver Mund-->
+            <p>en smuk mund, være veltalende.</p>
+         </note>
+
+         <note xml:id="com549"><!--lemma: Skrabenæse-->
+            <p>børneleg, hvor det gælder om at flytte figurer ud af en bunke; taberen skrabes let på næsen med en af figurerne.</p>
+         </note>
+         
+         <note xml:id="com969"><!--lemma: Lag uden Leg giør ringe Lyst-->
+            <p>Det er en ringe fest, hvor der ingen lystighed er; lag betyder selskab, sammenkomst.</p>
+         </note>
+         
+         <note xml:id="com1288"><!--lemma: Trold bær Træ i Leg-->
+            <p>Når trolde leger, bruger de træer og andre store ting.</p>
+         </note>
+         
+         <note xml:id="com1289"><!--lemma: Leie gaaer for Eie (til Fardag)-->
+            <p>Lejemål gælder for ejer til flyttedag; fardag betyder flyttedag; den var fastsat ved lov og betød at tjenestefolkene kunne være på plads i den nye bolig i god tid før herskabet; ordsproget er et citat fra <rs type="title" key="title2243">Danske Lov 1683</rs>, kapitel 14.</p>
+         </note>
+         
+         <note xml:id="com1716"><!--lemma: Leie-Hyrde giør lamme Faar-->
+            <p>Fremmede hyrder gør et dårligt arbejde (de flytter ikke på flokken).</p>
+            <!-- rigtigt? -->
+         </note>
+         
+         <note xml:id="com550"><!--lemma: Leiligheden-->
+            <p>muligheden.</p>
+         </note>
+
+         <note xml:id="com551"><!--lemma: Leilighed-->
+            <p>omstændighed.</p>
+         </note>
+         
+         <note xml:id="com1404"><!--lemma: faaer-->
+            <p>skaffer.</p>
+         </note>
+         
+         <note xml:id="com1587"><!--lemma: Lov-->
+            <p>lovprisning, ros.</p>
+            <!-- ODS 5 -->
+         </note>
+         
+         <note xml:id="com1588"><!--lemma: Last-->
+            <p>bebrejdelse.</p>
+         </note>
+         
+         <note xml:id="com552"><!--lemma: Navle-->
+            <p>dvs. nagle; søm.</p>
+         </note>
+
+         <note xml:id="com553"><!--lemma: Villie-Røn-->
+            <p>vidnesbyrd om eller prøve på (god) vilje.</p>
+         </note>
+
+         <note xml:id="com554"><!--lemma: Taks værd-->
+            <p>værd at takke for.</p>
+         </note>
+
+         <note xml:id="com555"><!--lemma: At brygge ... føder-->
+            <p>At brygge forløber af sig selv, mens det koster at varme ovnen op; føder betyder brødføder eller ernærer.</p>
+         </note>
+
+         <note xml:id="com557"><!--lemma: toe-->
+            <p>vaske, rense.</p>
+         </note>
+         
+         <note xml:id="com1589"><!--lemma: Lidt Godt og ...-->
+            <p>om kager og andet godt, der bør stå så ikke alle kan få fat i det.</p>
+         </note>
+         
+         <note xml:id="com558"><!--lemma: Skit-->
+            <p>dvs. skidt.</p>
+         </note>
+
+         <note xml:id="com559"><!--lemma: Før lignes Bjerg og Dal, end Kiøb og Salg-->
+            <p>Bjerg og dal bliver det samme før køb og salg gør.</p>
+         </note>
+         
+         <note xml:id="com1290"><!--lemma: Alle Lignelser halte-->
+            <p>Der er aldrig fuld overensstemmelse mellem to lignelsers led.</p>
+         </note>
+         
+         <note xml:id="com560"><!--lemma: Brev paa-->
+            <p>vished for.</p>
+         </note>
+         
+         <note xml:id="com2227" changes="new"><!--lemma: slaae af-->
+            <p>afslå.</p>
+         </note>
+         
+         <note xml:id="com1400"><!--lemma: Med lov skal man Land bygge-->
+            <p>de indledende ord til <rs type="title" key="title3530">Jyske Lov</rs> (1241).</p>
+            <!--; loven blev givet af<persName key="pe218"> Valdemar 2. Sejr</persName> i 1241-->
+         </note>
+         
+         <note xml:id="com970"><!--lemma: vist-->
+            <p>helt sikkert.</p>
+         </note>
+
+         <note xml:id="com562"><!--lemma: Knagehals-->
+            <p>pralhals.</p>
+         </note>
+         
+         <note xml:id="com564"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+
+         <note xml:id="com565"><!--lemma: Led-->
+            <p>markled.</p>
+         </note>
+
+         <note xml:id="com566"><!--lemma: Lunstikke-->
+            <p>låsepind, der hindrer hjulet i at falde af akslen.</p>
+         </note>
+
+         <note xml:id="com567"><!--lemma: Liremand-->
+            <p>dvs. lirekassemand.</p>
+         </note>
+
+         <note xml:id="com568"><!--lemma: Luremand-->
+            <p>lurer, spion.</p>
+         </note>
+         
+         <note xml:id="com569"><!--lemma: Tjærespaan-->
+            <p> træpind, hvormed man smøre tjære på f.eks. en vognaksel.</p>
+         </note>
+
+         <note xml:id="com570"><!--lemma: Farimag-->
+            <p>(overdreven) langsom handlemåde eller bevægelse.</p>
+         </note>
+         
+         <note xml:id="com571"><!--lemma: skule-->
+            <p>skjule sig.</p>
+         </note>
+         
+         <note xml:id="com572"><!--lemma: Glar-->
+            <p>glas.</p>
+         </note>
+
+         <note xml:id="com573"><!--lemma: kun-->
+            <p>blot.</p>
+         </note>
+         
+         <note xml:id="com574"><!--lemma: om-->
+            <p>efter.</p>
+         </note>
+         
+         <note xml:id="com2139"><!--lemma: leder Lykken om-->
+            <p>vildleder lykken.</p>
+         </note>
+         
+         <note xml:id="com1590"><!--lemma: Hold Tommen i Næve-->
+            <p>hold fast, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 5.769.</p>
+         </note>
+         
+         <note xml:id="com971"><!--lemma: radder for-->
+            <p>bestemmer over.</p>
+         </note>
+         
+         <note xml:id="com1291"><!--lemma: Lys paa Møllen -->
+            <p>Tænd for lyset.</p>
+         </note>
+         
+         <note xml:id="com1414"><!--lemma: Herr Pave! forvar jer Næse for Lyset-->
+            <p>Hr. Pave pas på lyset; kan henvise til voksnæse, som udtryk for at narre nogen.</p>
+         </note>
+         
+         <note xml:id="com1292"><!--lemma: ondt-->
+            <p>onde gerninger.</p>
+         </note>
+         
+         <note xml:id="com1293"><!--lemma: Den er lysten efter Kiød, som gaaer i Skoven og bider Snegle-->
+            <p>bruges om den, som attrår, hvad andre ikke bryder sig om, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 5.920.</p>
+            <!-- Mau 5.920 -->
+         </note>
+         
+         <note xml:id="com2228" changes="new"><!--lemma: med -->
+            <p>langs.</p>
+         </note>
+         
+         <note xml:id="com576"><!--lemma: lystig Koras-->
+            <p>opmuntrende tilråb; koras betyder courage, mod.</p>
+         </note>
+
+         <note xml:id="com577"><!--lemma: skal lystre Kalveskindet-->
+            <p>skal blive soldat og følge trommen.</p>
+         </note>
+
+         <note xml:id="com578"><!--lemma: Lyv ikke Vorherre paa-->
+            <p>Tal ikke ondt om Vorherre.</p>
+         </note>
+
+         <note xml:id="com579"><!--lemma: Hunde-Tunge-->
+            <p>planteart.</p>
+         </note>
+
+         <note xml:id="com580"><!--lemma: Med Læmpe kan man faae et Æg i en Humlesæk-->
+            <p>Man skal optræde varsomt for ikke at ødelægge noget godt; ordsproget kan også anvendes ironisk (<rs type="title" key="title5460">Hjort 1984</rs>, s. 116).</p>
+         </note>
+         
+         <note xml:id="com1294"><!--lemma: længer-->
+            <p>længere.</p>
+         </note>
+         
+         <note xml:id="com1295"><!--lemma: Længe ligger Sag i Salt-->
+            <p>Det varer ofte længe inden en sag er afgjort.</p>
+            <!-- Mau 5.977 -->
+         </note>
+         
+         <note xml:id="com581"><!--lemma: halvavet-->
+            <p>utilstrækkeligt straffet; ave betyder straffe eller tugte.</p>
+         </note>
+         
+         <note xml:id="com972"><!--lemma: længer-->
+            <p>længere.</p>
+         </note>
+         
+         <note xml:id="com582"><!--lemma: Trænge-->
+            <p>undertrykkelse.</p>
+         </note>
+         
+         <note xml:id="com583"><!--lemma: lærer sig til-->
+            <p>øver sig.</p>
+         </note>
+         
+         <note xml:id="com2229" changes="new"><!--lemma: Mad lærer at mæle og Klæder frem at gaae-->
+            <p>Mad giver tale og klæder giver hæder, sml. <rs type="title" key="title5462">Syv 1944</rs>, s. 308.</p>
+         </note>
+         
+         <note xml:id="com1591"><!--lemma: rasende-->
+            <p>vanvittige, gale.</p>
+         </note>
+         
+         <note xml:id="com584"><!--lemma: Lære-Klud-->
+            <p>prøveklud.</p>
+         </note>
+         
+         <note xml:id="com1296"><!--lemma: Man kan sagtens læse Skielmen til sig, men at læse ham fra sig, det er Konsten-->
+            <p>Det er let at tilegne sig dårlige vaner, men vanskeligt at komme af med dem.</p>
+         </note>
+         
+         <note xml:id="com1592"><!--lemma: løber meget ind i Krympningen-->
+            <p>krymper meget.</p>
+         </note>
+         
+         <note xml:id="com1415"><!--lemma: Dræt-->
+            <p>det at blive trukket, trækning.</p>
+         </note>
+
+         <note xml:id="com586"><!--lemma: Halm-Skagel-->
+            <p>tømme af halm.</p>
+         </note>
+
+         <note xml:id="com587"><!--lemma: fæster-->
+            <p>om den, der holder faste som en pålagt bodsøvelse med frygt og med tvivl om sine synders forladelse, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 2.021.</p>
+            <!-- Mau 2021 -->
+         </note>
+         
+         <note xml:id="com2230" changes="new"><!--lemma: gaaer-->
+            <p>forgår, går til grunde.</p>
+         </note>
+         
+         <note xml:id="com588"><!--lemma: Far i Mag-->
+            <p>Rejs i ro og mag.</p>
+         </note>
+         
+         <note xml:id="com973"><!--lemma: feed-->
+            <p>kostbar, dyr.</p>
+         </note>
+         
+         <note xml:id="com2140"><!--lemma: Manddom-->
+            <p>mandig adfærd; berømmelige gerninger.</p>
+         </note>
+         
+         <note xml:id="com1661"><!--lemma: Leer og Langhalm -->
+            <p>ringe beskaffenhed.</p>
+         </note>
+         
+         <note xml:id="com589"><!--lemma: syde-->
+            <p>koge eller stege.</p>
+         </note>
+         
+         <note xml:id="com974"><!--lemma: Edder-->
+            <p>giftstoffer.</p>
+         </note>
+         
+         <note xml:id="com590"><!--lemma: gnægger-->
+            <p>vrinsker.</p>
+         </note>
+         
+         <note xml:id="com1593"><!--lemma: meddeler-->
+            <p>giver del i, bibringer (kærligheden selv).</p>
+         </note>
+         
+         <note xml:id="com591"><!--lemma: Syening-->
+            <p>dvs. syning.</p>
+         </note>
+         
+         <note xml:id="com919"><!--lemma: stakket-->
+            <p>kort.</p>
+         </note>
+         
+         <note xml:id="com592"><!--lemma: Vedd-->
+            <p>brænde.</p>
+         </note>
+         
+         <note xml:id="com975"><!--lemma: malker lidt-->
+            <p>giver lidt mælk.</p>
+         </note>
+         
+         <note xml:id="com1662"><!--lemma: Meget af Munden og lidt af Ulden (sagde Manden, han klippede sin So) -->
+            <p>om den der taler meget, og gør meget lidt.</p>
+         </note>
+         
+         <note xml:id="com593"><!--lemma: Rend ei-->
+            <p>fyld ikke renden (med mere garn); en rende er det væveredskab, garnet er viklet omkring.</p>
+         </note>
+
+         <note xml:id="com594"><!--lemma: Sursteg-->
+            <p>sur steg, om det kød man ikke fik saltet, og som derfor gik i forrådnelse.</p>
+            <!-- ODS surt 2.2 -->
+         </note>
+         
+         <note xml:id="com976"><!--lemma: Der vil meer til Plov end at sige: Hov-->
+            <p>Der kræves mere til et arbejde, end at snakke om det; hov betyder hyp.</p>
+         </note>
+         
+         <note xml:id="com595"><!--lemma: Mellem-Hest-->
+            <p>den midterste hest i et trespand.</p>
+         </note>
+         
+         <note xml:id="com2231" changes="new"><!--lemma: uskiændt-->
+            <p>ikke udskældt.</p>
+         </note>
+         
+         <note xml:id="com596"><!--lemma: borge-->
+            <p>om den som kan udsætte sin hævn; borge betyder lade få på kredit, og sagte betyder let, sagtens.</p>
+         </note>
+
+         <note xml:id="com597"><!--lemma: Vidien-->
+            <p>den bøjelige gren.</p>
+         </note>
+         
+         <note xml:id="com977"><!--lemma: Hold Sækken op, mens Grisen gives-->
+            <p>Tag imod det gode, som du bliver tilbudt, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.234.</p>
+            <!-- MAU 3234 -->
+         </note>
+         
+         <note xml:id="com598"><!--lemma: væne-->
+            <p>smukke, dejlige.</p>
+         </note>
+
+         <note xml:id="com599"><!--lemma: Tælle-->
+            <p>dvs. talg, fedtstof (til fremstilling af lys).</p>
+         </note>
+
+         <note xml:id="com600"><!--lemma: End-->
+            <p>endnu, stadig.</p>
+         </note>
+
+         <note xml:id="com601"><!--lemma: koxer-->
+            <p>ser nøje og undersøgende.</p>
+            <!-- kilde til: dvs. kroer; fryder sig, vigter sig-->
+         </note>
+         
+         <note xml:id="com978"><!--lemma: For en Sko-->
+            <p>på grund af en hestesko.</p>
+         </note>
+         
+         <note xml:id="com2232" changes="new"><!--lemma: For et Øie-->
+            <p>på grund af et (enkelt) øje på terningen, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 12.054.</p>
+         </note>
+         
+         <note xml:id="com2233" changes="new"><!--lemma: naar-->
+            <p>hvis.</p>
+         </note>
+         
+         <note xml:id="com1595"><!--lemma: Gaasegang-->
+            <p>græsningsareal for gæs.</p>
+         </note>
+         
+         <note xml:id="com979"><!--lemma: I Morgen bager Alliken, saa faaer du varmt Brød-->
+            <p>udtryk for noget som ikke vil ske.</p>
+         </note>
+         
+         <note xml:id="com2234" changes="new"><!--lemma: Min Mund er i mit Brød, den skal sige hvad jeg vil -->
+            <p>Betydningen er uklar; i <rs type="title" key="title93">Mau 1879</rs> forklares ordsproget således med en henvisning til fra nr. 2.861 til nr. 7.229: &#x201C;man skal ikke tage, regne det saa nøje med et og andet mindre overlagt Ord, som i Talens Løb undslipper en Anden&#x201D; (<rs type="title" key="title93">Mau 1879</rs>, nr. 2.861 og 7.229).</p>
+            <!-- Mau: 7229. Man skal ej alle Ord Æde give. P. L. 354. — (man skal ikke tage, regne det saa nøje med et og andet mindre overlagt Ord, som i Talens Løb undslipper en Anden), jvf. 2142. 5263. 11,209. 6610. — Man skal ej alle Ord Ære give. Molb. 2622 -->
+         </note>
+         
+         <note xml:id="com2235" changes="new"><!--lemma: er ei meer i vor Magt-->
+            <p>kan vi ikke hindre, har vi ikke magt over; jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 7.260.</p>
+         </note>
+         
+         <note xml:id="com1596"><!--lemma: som hun maa-->
+            <p>hvor hun kan komme til.</p>
+         </note>
+         
+         <note xml:id="com980"><!--lemma: fraa-->
+            <p>dvs. fra.</p>
+         </note>
+
+         <note xml:id="com604"><!--lemma: Mysling-->
+            <p>lille mus, museunge; kan også betegne et lille menneske.</p>
+         </note>
+         
+         <note xml:id="com981"><!--lemma: Eendrægtig-->
+            <p>om personer, der handler i fuld enighed.</p>
+         </note>
+         
+         <note xml:id="com1597"><!--lemma: mærker Ord-->
+            <p>lytter hemmeligt til en samtale.</p>
+         </note>
+         
+         <note xml:id="com605"><!--lemma: beesk-->
+            <p>dvs. besk, bitter.</p>
+         </note>
+         
+         <note xml:id="com982"><!--lemma: Hinder-->
+            <p>dvs. hindrer (dialekt).</p>
+         </note>
+
+         <note xml:id="com606"><!--lemma: skabede-->
+            <p>smittede med skab (hudsygdom hos husdyr).</p>
+         </note>
+         
+         <note xml:id="com2236" changes="new"><!--lemma: uden-->
+            <p>undtagen.</p>
+         </note>
+         
+         <note xml:id="com983"><!--lemma: Krum Haand giør naadig Dom-->
+            <p>om dommere, som lade sig bestikke.</p>
+         </note>
+         
+         <note xml:id="com2237" changes="new"><!--lemma: rund-->
+            <p>gavmild.</p>
+         </note>
+         
+         <note xml:id="com1299"><!--lemma: spille med -->
+            <p>omgås med, lege med.</p>
+         </note>
+         
+         <note xml:id="com1664"><!--lemma: -->
+            <p>om ubegrundede bekymringer for fremtiden, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.682.</p>
+            <!-- Mau 3682 -->
+         </note>
+         
+         <note xml:id="com607"><!--lemma: Vester-->
+            <p>vest.</p>
+         </note>
+
+         <note xml:id="com608"><!--lemma: Øster-->
+            <p>øst.</p>
+         </note>
+         
+         <note xml:id="com1598"><!--lemma: Helligaften-->
+            <p>fyraften.</p>
+         </note>
+         
+         <note xml:id="com1599"><!--lemma: Viseren-->
+            <p>bidronningen.</p>
+         </note>
+         
+         <note xml:id="com609"><!--lemma: krøger-->
+            <p>bøjer.</p>
+         </note>
+         
+         <note xml:id="com1600"><!--lemma: skyder-->
+            <p>Når det først begynder at gå galt, er alle ivrige efter at angribe; skyder betyder rykker eller skubber.</p>
+         </note>
+         
+         <note xml:id="com1300"><!--lemma: Naar Hønene har skrabet seer den til Kloen-->
+            <p>Enhver vil gerne have noget ud af sin indsats.</p>
+         </note>
+         
+         <note xml:id="com610"><!--lemma: Naar-->
+            <p>hvornår.</p>
+         </note>
+         
+         <note xml:id="com1601"><!--lemma: de hvide Fluer-->
+            <p>snefnuggene.</p>
+         </note>
+         
+         <note xml:id="com611"><!--lemma: Sønden-->
+            <p>søndenvinden.</p>
+         </note>
+
+         <note xml:id="com612"><!--lemma: Tappen-->
+            <p>proppen i en tøndes tappehul.</p>
+         </note>
+         
+         <note xml:id="com1665"><!--lemma: dræber du din Fiende-->
+            <p>forsvinder fjendskabet.</p>
+         </note>
+
+         <note xml:id="com613"><!--lemma: Lexe-->
+            <p>dvs. lektie (afstraffelse).</p>
+         </note>
+
+         <note xml:id="com614"><!--lemma: lyskes-->
+            <p>prygles.</p>
+         </note>
+         
+         <note xml:id="com2238" changes="new"><!--lemma: dobbelt-->
+            <p>dvs. dobbelt løn i betydning straf eller vanære.</p>
+         </note>
+         
+         <note xml:id="com1666"><!--lemma: Naar Narren gaaer, tager ....-->
+            <p>udtryk fra et spil, hvor narren tager den laveste brik med sig.</p>
+            <!-- ODS Nar 1.4 -->
+         </note>
+         
+         <note xml:id="com984"><!--lemma: Natte-Frist-->
+            <p>den fred og ro (frist), man får om natten.</p>
+         </note>
+         
+         <note xml:id="com615"><!--lemma: forfængelig-->
+            <p>Misbrug ikke Guds navn.</p>
+         </note>
+         
+         <note xml:id="com985"><!--lemma: nytte-->
+            <p>benytte, drage fordel af.</p>
+         </note>
+         
+         <note xml:id="com616"><!--lemma: om-->
+            <p>på.</p>
+         </note>
+         
+         <note xml:id="com1301"><!--lemma: Narre-->
+            <p>her: ivrige.</p>
+            <!-- se Mau-2.xml 6.936 og 9.937 -->
+         </note>
+         
+         <note xml:id="com617"><!--lemma: Klud-->
+            <p>lap.</p>
+         </note>
+
+         <note xml:id="com618"><!--lemma: ugilde-->
+            <p>uduelige, dårlige.</p>
+         </note>
+         
+         <note xml:id="com986"><!--lemma: Ærtageren-->
+            <p>dvs. ærtemarken.</p>
+         </note>
+         
+         <note xml:id="com2141"><!--lemma: Bodel-->
+            <p>gæstebud.</p>
+         </note>
+         
+         <note xml:id="com619"><!--lemma: Bytten-->
+            <p>bøtten, mælkespanden.</p>
+            <!-- ? ODS, Bytte: Alt hvad der vindes, skal gaa til Byttes -->
+         </note>
+         
+         <note xml:id="com987"><!--lemma: saa-->
+            <p>så meget.</p>
+         </note>
+         
+         <note xml:id="com620"><!--lemma: Næst-->
+            <p>nærmest.</p>
+         </note>
+         
+         <note xml:id="com903"><!--lemma:hedest -->
+            <p>voldsomst, heftigst.</p>
+         </note>
+         
+         <note xml:id="com622"><!--lemma: næst-->
+            <p>nærmest.</p>
+         </note>
+         
+         <note xml:id="com988"><!--lemma: Den arver bedst, som er Baaren næst-->
+            <p>Den, som er nærmest kisten (båren), arver mest.</p>
+         </note>
+         
+         <note xml:id="com1602"><!--lemma: Kneps-->
+            <p>dvs. knips.</p>
+         </note>
+         
+         <note xml:id="com623"><!--lemma: næst-->
+            <p>nærmest.</p>
+         </note>
+         
+         <note xml:id="com1700"><!--lemma: ond-->
+            <p>svær.</p>
+         </note>
+         
+         <note xml:id="com624"><!--lemma: føre-->
+            <p>transportere.</p>
+         </note>
+
+         <note xml:id="com626"><!--lemma: tilvands-->
+            <p>til drikketruget, til vandet.</p>
+         </note>
+
+         <note xml:id="com628"><!--lemma: Det er Synd at nøde Godt i Ondt-->
+            <p>Man skal ikke overtale en til at spise eller drikke noget, han ikke har lyst til; nøde kan også betyde tvinge med vold.</p>
+         </note>
+         
+         <note xml:id="com1667"><!--lemma: De seer alle min nøgne Arm ...-->
+            <p>bruges om person, der hellere sulter end går fattigt klædt.</p>
+         </note>
+
+         <note xml:id="com629"><!--lemma: Klæden-->
+            <p>klæder, tøj.</p>
+         </note>
+
+         <note xml:id="com630"><!--lemma: Om-->
+            <p>forbehold, betingelse.</p>
+         </note>
+
+         <note xml:id="com631"><!--lemma: muse-->
+            <p>fange mus.</p>
+         </note>
+         
+         <note xml:id="com1302"><!--lemma: Onde-->
+            <p>her: falske.</p>
+         </note>
+         
+         <note xml:id="com2143"><!--lemma: spørges-->
+            <p>erfares, blive fortalt.</p>
+         </note>
+         
+         <note xml:id="com1303"><!--lemma: ondt-->
+            <p>slemt, ubehageligt.</p>
+         </note>
+         
+         <note xml:id="com1668"><!--lemma: ondt-->
+            <p>ikke godt.</p>
+         </note>
+         
+         <note xml:id="com632"><!--lemma: silde fød-->
+            <p>være født sent; komme for sent i gang.</p>
+         </note>
+
+         <note xml:id="com633"><!--lemma: aarle mød-->
+            <p>tidligt træt.</p>
+         </note>
+         
+         <note xml:id="com989"><!--lemma: Man kan ikke give alle sine Ord beskrevne-->
+            <p>Man kan ikke overveje alle sine ord.</p>
+         </note>
+         
+         <note xml:id="com634"><!--lemma: overfare-->
+            <p>passere hurtigt.</p>
+         </note>
+
+         <note xml:id="com635"><!--lemma: Bram-->
+            <p>ståhej.</p>
+         </note>
+         
+         <note xml:id="com1304"><!--lemma: bær-->
+            <p>her: tjener, bringer.</p>
+         </note>
+         
+         <note xml:id="com990"><!--lemma: Papirs-Folk-->
+            <p>meget svage, kraftløse personer.</p>
+         </note>
+         
+         <note xml:id="com1603"><!--lemma: Persille-Retter-->
+            <p>let mad.</p>
+         </note>
+         
+         <note xml:id="com1305"><!--lemma: har ikke Pas behov-->
+            <p>er ikke til at tage fejl af; egl. kommer frem uden rejsepas.</p>
+         </note>
+         
+         <note xml:id="com1671"><!--lemma:  patte -->
+            <p>die.</p>
+         </note>
+         
+         <note xml:id="com637"><!--lemma: sagtens-->
+            <p>velsagtens, nemt.</p>
+            <!-- er det rigtigt? -->
+         </note>
+         
+         <note xml:id="com2144"><!--lemma: Taske-->
+            <p>ordspil, idet taske også kan bruges som nedsættende betegnelse for kvinde; tøjte.</p>
+         </note>
+         
+         <note xml:id="com1306"><!--lemma: Vindvet-->
+            <p>dvs. vinduet.</p>
+         </note>
+         
+         <note xml:id="com1307"><!--lemma: giør-->
+            <p>lav.</p>
+         </note>
+         
+         <note xml:id="com638"><!--lemma: skaade-->
+            <p>betragte.</p>
+         </note>
+
+         <note xml:id="com639"><!--lemma: Deintrug-->
+            <p>dvs. dejtrug; dejfad.</p>
+         </note>
+         
+         <note xml:id="com1604"><!--lemma: Springe-Dans-->
+            <p>livlig dans.</p>
+         </note>
+         
+         <note xml:id="com1308"><!--lemma: forgyldes-->
+            <p>gives et mere appetitligt udseende for bedre at glide ned.</p>
+         </note>
+         
+         <note xml:id="com640"><!--lemma: Saa-->
+            <p>på samme måde.</p>
+         </note>
+
+         <note xml:id="com641"><!--lemma: borge-->
+            <p>låne.</p>
+         </note>
+         
+         <note xml:id="com1417"><!--lemma: prutte-->
+            <p>tinge eller forhandle (om prisen).</p>
+         </note>
+         
+         <note xml:id="com1605"><!--lemma: hardt-->
+            <p>dvs. hårdt.</p>
+         </note>
+         
+         <note xml:id="com1309"><!--lemma: Præste-Posen-->
+            <p>præstens pung; egl. den sæk, hvori der blev lagt tiendekorn.</p>
+         </note>
+         
+         <note xml:id="com2146"><!--lemma: prøver-->
+            <p>viser værdien af.</p>
+         </note>
+         
+         <note xml:id="com1606"><!--lemma: Prøver-->
+            <p>prøv (imperativ).</p>
+         </note>
+         
+         <note xml:id="com1607"><!--lemma: neholder-->
+            <p>behold (imperativ).</p>
+         </note>
+         
+         <note xml:id="com642"><!--lemma: Fikst-->
+            <p>tilråb til den der bliver skuffet i sine forretninger; fikst er præteritum 2. person singularis.</p>
+         </note>
+         
+         <note xml:id="com991"><!--lemma: uden-->
+            <p>hvis ikke.</p>
+         </note>
+         
+         <note xml:id="com1608"><!--lemma: Hu-->
+            <p>sind, tanker.</p>
+         </note>
+         
+         <note xml:id="com1310"><!--lemma: Tag Raad af rødskiægget Mand, flere onde end gode-->
+            <p>Få råd fra rødskæggede personer og få flere dårlige end gode; rødhårede personer blev anset for upålidelige og falske.</p>
+            <!-- mau-2.xml, rødskægget -->
+         </note>
+         
+         <note xml:id="com1609"><!--lemma: dobblere-->
+            <p>hasardspillere.</p>
+         </note>
+         
+         <note xml:id="com992"><!--lemma: raadt-->
+            <p>dvs. rådet, bestemt.</p>
+         </note>
+         
+         <note xml:id="com1610"><!--lemma: udaf-->
+            <p>af.</p>
+         </note>
+         
+         <note xml:id="com1611"><!--lemma: Fæste-->
+            <p>fæstningsværker.</p>
+         </note>
+         
+         <note xml:id="com2248" changes="new"><!--lemma: handeløs-->
+            <p>her: hjælpeløs pga. af manglende redskab.</p>
+         </note>
+         
+         <note xml:id="com643"><!--lemma: heglet-->
+            <p>renset.</p>
+         </note>
+
+         <note xml:id="com644"><!--lemma: toe-->
+            <p>vaske, rense.</p>
+         </note>
+         
+         <note xml:id="com993"><!--lemma: Reent-->
+            <p>uden knaster.</p>
+         </note>
+         
+         <note xml:id="com645"><!--lemma: ledes-->
+            <p>føler lede.</p>
+         </note>
+         
+         <note xml:id="com1312"><!--lemma: Gænge-->
+            <p>regelmæssige, faste gang.</p>
+         </note>
+         
+         <note xml:id="com646"><!--lemma: Stud (Styd)-->
+            <p>støtte.</p>
+         </note>
+
+         <note xml:id="com647"><!--lemma: Det er ret, at den svier, som under mier-->
+            <p>Det er rigtigt, at den straffes, som begår en dårlig handling; under mier betyder at tisse i sengen.</p>
+         </note>
+         
+         <note xml:id="com1675"><!--lemma: toldede-->
+            <p>Mølleren tog betaling for malingen ved at tolde, dvs. tage en del af kornet eller melet med et toldkar.</p>
+         </note>
+         
+         <note xml:id="com1313"><!--lemma: Drift-Trug-->
+            <p>dvs. driftetruget; redskab til at sigte frø o.l. med.</p>
+         </note>
+         
+         <note xml:id="com1612"><!--lemma: Spydstagen-->
+            <p>spydskaftet; at retten sidder i spydskaftet er et symbol på anvendelse af vold og magt.</p>
+         </note>
+         
+         <note xml:id="com994"><!--lemma: Saa-->
+            <p>således, ligesom.</p>
+         </note>
+         
+         <note xml:id="com995"><!--lemma: studenr-->
+            <p>higer, stræber.</p>
+         </note>
+         
+         <note xml:id="com1314"><!--lemma: Riis-->
+            <p>let straf.</p>
+         </note>
+         
+         <note xml:id="com650"><!--lemma: R-->
+            <p>røv.</p>
+         </note>
+         
+         <note xml:id="com1316"><!--lemma: Riis-->
+            <p>redskaber at straffe med.</p>
+         </note>
+         
+         <note xml:id="com1613"><!--lemma: ringe Sag-->
+            <p>bagatel.</p>
+         </note>
+         
+         <note xml:id="com996"><!--lemma: i Blade-->
+            <p>i blomst, mens det blomstre.</p>
+         </note>
+         
+         <note xml:id="com1317"><!--lemma: Runde-->
+            <p>gavmilde, generøse.</p>
+         </note>
+         
+         <note xml:id="com2147"><!--lemma: bange-->
+            <p>som skaber frygt.</p>
+         </note>
+         
+         <note xml:id="com1418"><!--lemma: Slump-Skytten-->
+            <p>skytten, der træffer ved et tilfælde.</p>
+         </note>
+         
+         <note xml:id="com1614"><!--lemma: Giække-->
+            <p>tosser.</p>
+         </note>
+         
+         <note xml:id="com1419"><!--lemma: Bælgen-->
+            <p>skindet.</p>
+         </note>
+         
+         <note xml:id="com2249" changes="new"><!--lemma: pløier med Ræve-->            
+            <p>begynder på noget umuligt eller tåbeligt; kan også betegne planlægning af noget listigt.</p>
+         </note>
+         
+         <note xml:id="com1318"><!--lemma: Ræve-Kløer-->
+            <p>her: udtryk for list, snuhed.</p>
+         </note>
+         
+         <note xml:id="com997"><!--lemma: Røn-->
+            <p>erfaring; bevis. Ifølge forklaringen hos <rs type="title" key="title93">Mau 1879</rs>, nr. 1.329, kan røn også betyde vederlag.</p>
+         </note>
+
+         <note xml:id="com651"><!--lemma: rønnes-->
+            <p>kommer frem i lyset, erfares.</p>
+         </note>
+         
+         <note xml:id="com1615"><!--lemma: røres-->
+            <p>rører sig.</p>
+         </note>
+         
+         <note xml:id="com1616"><!--lemma: Proviant-Skriveren-->
+            <p>person, der holder regnskab med og uddeler proviant.</p>
+         </note>
+         
+         <note xml:id="com652"><!--lemma: sidt-->
+            <p>dvs. siddet.</p>
+         </note>
+         
+         <note xml:id="com998"><!--lemma: Fiske-->
+            <p>dvs. fisk (gl. pluralis).</p>
+         </note>
+
+         <note xml:id="com653"><!--lemma: tøs-->
+            <p>to gange.</p>
+         </note>
+         
+         <note xml:id="com1617"><!--lemma: Pind-->
+            <p>pølsepind (der skal en pind i hver ende af pølsen).</p>
+         </note>
+         
+         <note xml:id="com654"><!--lemma: finde Sag med-->
+            <p>jf. ordsprog nr. 2.215: &#x201C;Det er nemt at finde <hi rend="spaced">Sag</hi> med en feed So (for hun er ikke blevet feed af Intet) Udsigt til betydelig vinding frister (til sagsanlæg)&#x201D;. Betydningen er i begge tilfælde, at udsigten til en betydelig erstatning, frister til sagsanlæg.</p>
+         </note>
+         
+         <note xml:id="com1319"><!--lemma: Samlet Sild trykker Hval-->
+            <p>Mange små og forenede kræfter kan overmande en større magt.</p>
+            <!-- Mau 8.593 -->
+         </note>
+         
+         <note xml:id="com1320"><!--lemma: Sorte-->
+            <p>slemme, onde.</p>
+         </note>
+         
+         <note xml:id="com1618"><!--lemma: Ød-->
+            <p>rigdom, skat.</p>
+         </note>
+         
+         <note xml:id="com999"><!--lemma: ond-->
+            <p>dårlig, ringe.</p>
+         </note>
+
+         <note xml:id="com655"><!--lemma: Sandtalen-->
+            <p>som taler sandt.</p>
+         </note>
+         
+         <note xml:id="com2250" changes="new"><!--lemma: hardt-->
+            <p>dvs. hårdt.</p>
+         </note>
+         
+         <note xml:id="com656"><!--lemma: sandfør-->
+            <p>sandfærdig.</p>
+         </note>
+
+         <note xml:id="com657"><!--lemma: hverdag -->
+            <p>dvs. hver dag, til hverdags.</p>
+         </note>
+
+         <note xml:id="com658"><!--lemma: broget-->
+            <p>ubehagelig; betænkelig.</p>
+         </note>
+         
+         <note xml:id="com1680"><!--lemma: Man seer ei Hjernen giemmen Stjernen-->
+            <p>panden.</p>
+            <!-- Moth Karl/Kal -->
+         </note>
+         
+         <note xml:id="com1001"><!--lemma: ogsaa-->
+            <p>ligeså.</p>
+         </note>
+         
+         <!--note xml:id="com1901"> lemma: en Prosit, som kom seent, er bedre end aldeles ingen 
+            <p>citat fra <rs type="title" key="title4817">&#x201C;Kierlighed uden Strømper&#x201D;</rs>, 5. optog, 7. optrin af <persName key="pe562">Johan Herman Wessel</persName>.</p>
+         </note-->
+         
+         <note xml:id="com1620"><!--lemma: Kaalen des værre-->
+            <p>dårligere om kålen.</p>
+         </note>
+         
+         <note xml:id="com659" changes="new"><!--lemma: for -->
+            <p>fordi.</p>
+         </note>
+         
+         <note xml:id="com661"><!--lemma: Ledemod-->
+            <p>led, lem.</p>
+         </note>
+         
+         <note xml:id="com1702"><!--lemma: Kæmper-->
+            <p>helte, krigere.</p>
+         </note>
+         
+         <note xml:id="com662"><!--lemma: hvid-->
+            <p>uskyldig.</p>
+         </note>
+         
+         <note xml:id="com1622"><!--lemma: killer-->
+            <p>dvs. kilder.</p>
+         </note>
+         
+         <note xml:id="com1002"><!--lemma: Syster-->
+            <p>dvs. søster.</p>
+         </note>
+         
+         <note xml:id="com1003"><!--lemma: ondt-->
+            <p>svært.</p>
+         </note>
+
+         <note xml:id="com663"><!--lemma: har han sine visse Bud-->
+            <p>andre til at handle på sine vegne.</p>
+            <!-- Mau 1054 -->
+         </note>
+         
+         <note xml:id="com2251" changes="new"><!--lemma: raader-->
+            <p>bestemmer.</p>
+         </note>
+         
+         <note xml:id="com1004"><!--lemma: Selvhaver-->
+            <p>det selv at eje noget.</p>
+         </note>
+         
+         <note xml:id="com1323"><!--lemma: aflagt-->
+            <p>forbudt; egl. lagt bort, opgivet.</p>
+            <!-- ODS aflægge 3 -->
+         </note>
+         
+         <note xml:id="com664"><!--lemma: Bullen-->
+            <p>træstammen.</p>
+         </note>
+
+         <note xml:id="com665"><!--lemma: Ædling-->
+            <p>person af ædel stand; adelsmand.</p>
+         </note>
+         
+         <note xml:id="com1201"><!--lemma: Bygte-->
+            <p>dvs. byggede.</p>
+         </note>
+         
+         <note xml:id="com1005"><!--lemma: Værd-->
+            <p>værdi, god betaling.</p>
+         </note>
+         
+         <note xml:id="com666"><!--lemma: Beenshug-->
+            <p>kastet ben; egl. slag eller hug med ben eller knogle.</p>
+         </note>
+         
+         <note xml:id="com1324"><!--lemma: Sæd-->
+            <p>afgrøder.</p>
+         </note>
+         
+         <note xml:id="com668"><!--lemma: hytter-->
+            <p>skærmer, vogter.</p>
+         </note>
+
+         <note xml:id="com669"><!--lemma: Studørren-->
+            <p>dvs. stuedøren (dialekt).</p>
+         </note>
+         
+         <note xml:id="com2252" changes="new"><!--lemma: Det sinker ikke at bede og at smøre-->
+            <p>at bede betyder her både at hvile og at fremsætte en bøn, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 8.635.</p>
+         </note>
+         
+         <note xml:id="com1006"><!--lemma: tilbyes-->
+            <p>dvs. til bys, til byen.</p>
+         </note>
+         
+        <note xml:id="com1325"><!--lemma: Der skal Vid til Vaande-->
+           <p>Det kræver forstand og kløgt at håndtere farer eller modgang.</p>
+        </note>
+         
+         <!--<note xml:id="com1681"><!-\-lemma: De skal have det, som kan hverken læse eller skrive-\->
+            <p>[kommentar mangler]</p>
+         </note>-->
+         
+         <note xml:id="com1326"><!--lemma: slem-->
+            <p>besværlig.</p>
+         </note>
+         
+         <note xml:id="com672"><!--lemma: Bille-Jern-->
+            <p>mejsel til udhugning i sten.</p>
+         </note>
+         
+         <note xml:id="com1007"><!--lemma: vride-->
+            <p>ændre, forandre.</p>
+         </note>
+         
+         <note xml:id="com1008"><!--lemma: ond-->
+            <p>svær.</p>
+         </note>
+         
+         <note xml:id="com1682"><!--lemma: Naar Ulykken skal være ...-->
+            <p>spøgefuldt udtryk for at ulykke er uafvendelig.</p>
+            <!-- ODS ulykke 4 -->
+         </note>
+         
+         <note xml:id="com1327"><!--lemma: Man skal ikke komme mellem Bark og Træ-->
+            <p>Det er farligt at blande sig i ægtefolk eller søskendes indbyrdes stridigheder, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 10.545.</p>
+         </note>
+         
+         <note xml:id="com673"><!--lemma: Skalk-->
+            <p>skurk, bedrager.</p>
+         </note>
+
+         <note xml:id="com675"><!--lemma: Skalk-->
+            <p>skurk, bedrager.</p>
+         </note>
+         
+         <note xml:id="com1009"><!--lemma: Trematrks-Manden-->
+            <p>mand, der er idømt en bod på tre mark og dermed dømt fra sin ære.</p>
+         </note>
+         
+         <note xml:id="com676"><!--lemma: skurvet-->
+            <p>angrebet af udslæt.</p>
+         </note>
+         
+         <note xml:id="com1624"><!--lemma: Bryder Skib-->
+            <p>lider skibbrud.</p>
+         </note>
+         
+         <note xml:id="com1625"><!--lemma: Skielm-->
+            <p>dvs. skælm.</p>
+         </note>
+         
+         <note xml:id="com678"><!--lemma: Fænge-Krudt-->
+            <p>fint krudt til antænding af ladning.</p>
+         </note>
+         
+         <note xml:id="com1626"><!--lemma: -->
+            <p>dvs. skæmt.</p>
+         </note>
+         
+         <note xml:id="com1628"><!--lemma: Saae Skieppe og faae Skieppe giør Bonden arm-->
+            <p>Den fattige bonde sår kun lidt (en skæppefuld), og får kun en lille høst.</p>
+         </note>
+         
+         <note xml:id="com1010"><!--lemma: Sæder-->
+            <p>skikke.</p>
+         </note>
+         
+         <note xml:id="com679"><!--lemma: Trøske-->
+            <p>råddent, frønnet træ.</p>
+         </note>
+         
+         <note xml:id="com2254" changes="new"><!--lemma: Skit-->
+            <p>dvs. skidt.</p>
+         </note>
+         
+         <note xml:id="com1629"><!--lemma: -->
+            <p>vaske.</p>
+         </note>
+         
+         <note xml:id="com2255" changes="new"><!--lemma: Skit-->
+            <p>dvs. skidt.</p>
+         </note>
+         
+         <note xml:id="com680"><!--lemma: flik-->
+            <p>lav; flikke betyder sætte sammen af mindre dele, f.eks. små stykker læder.</p>
+         </note>
+
+         <note xml:id="com681"><!--lemma: lude-->
+            <p>strækker sig.</p>
+         </note>
+         
+         <note xml:id="com1630"><!--lemma: -->
+            <p>vokser.</p>
+         </note>
+         
+         <note xml:id="com2148"><!--lemma: Skurve-->
+            <p>tilnavn til den skurvede, der er plaget af udslæt.</p>
+         </note>
+         
+         <note xml:id="com682"><!--lemma: Kiphat-->
+            <p>leg, hvor det gælder om at tage de andres hatte.</p>
+         </note>
+         
+         <note xml:id="com1631"><!--lemma: -->
+            <p>brag.</p>
+         </note>
+         
+         <note xml:id="com1330"><!--lemma: Sky-Haarene maae blæase af -->
+            <p>Alle må blive voksne; skyhårerne betyder dækhårerne eller de hår, der rejser sig ved frygt.</p>
+         </note>
+         
+         <note xml:id="com683"><!--lemma: Tag sort Salt af slette Betalere-->
+            <p>Det er bedre at få lidt end ingenting fra dårligere betalere, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 3.034.</p>
+         </note>
+         
+         <note xml:id="com1632"><!--lemma: -->
+            <p>slægt.</p>
+         </note>
+         
+         <note xml:id="com684"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+
+         <note xml:id="com685"><!--lemma: det er jo-->
+            <p>(at) det ikke er.</p>
+         </note>
+         
+         <note xml:id="com1011"><!--lemma: til-->
+            <p>efter, mod.</p>
+         </note>
+
+         <note xml:id="com688"><!--lemma: forgiftigste-->
+            <p>giftigste.</p>
+         </note>
+         
+         <note xml:id="com1633"><!--lemma: Smør dig ...-->
+            <p>mæsk dig ikke, gør dig ikke til gode med fede ting.</p>
+         </note>
+         
+         <note xml:id="com1012"><!--lemma: smør Folk om Munden-->
+            <p>hold ikke folk hen med snak.</p>
+         </note>
+         
+         <note xml:id="com1332"><!--lemma: ond-->
+            <p>her også: vanskelig.</p>
+         </note>
+         
+         <note xml:id="com1634"><!--lemma: Det røde Smørre-->
+            <p>(det røde) guld.</p>
+         </note>
+         
+         <note xml:id="com689"><!--lemma: Snak du for din Æske-->
+            <p>Ros dine egne varer; kan også bruges som imperativ i betydningen vås.</p>
+         </note>
+
+         <note xml:id="com690"><!--lemma: Snart er skudt af stakket Bue-->
+            <p>En kort bue er hurtigt afskudt.</p>
+         </note>
+         
+         <note xml:id="com1013"><!--lemma: snart sprunget-->
+            <p>hurtigt danset.</p>
+         </note>
+         
+         <note xml:id="com1333"><!--lemma: snart-->
+            <p>hurtigt, pludseligt.</p>
+         </note>
+         
+         <note xml:id="com691"><!--lemma: Skurvet-->
+            <p>angrebet af udslæt.</p>
+         </note>
+         
+         <note xml:id="com1014"><!--lemma: snart brudt-->
+            <p>får hurtigt hul.</p>
+         </note>
+
+         <note xml:id="com692"><!--lemma: snart-->
+            <p>hurtigt.</p>
+         </note>
+
+         <note xml:id="com695"><!--lemma: Strøet-->
+            <p>spredt.</p>
+         </note>
+         
+         <note xml:id="com963"><!--lemma: snart-->
+            <p>hurtigt.</p>
+         </note>
+
+         <note xml:id="com697"><!--lemma: Straa-->
+            <p>madrassen, i sengen.</p>
+         </note>
+         
+         <note xml:id="com1015"><!--lemma: Snarere-->
+            <p>lettere, nemmere.</p>
+         </note>
+         
+         <note xml:id="com1016"><!--lemma: snarere-->
+            <p>nemmere.</p>
+         </note>
+
+         <note xml:id="com698"><!--lemma: lastet-->
+            <p>kritiseret.</p>
+         </note>
+         
+         <note xml:id="com699"><!--lemma: snarest-->
+            <p>hurtigst.</p>
+         </note>
+
+         <note xml:id="com700"><!--lemma: snorret-->
+            <p>lige, problemfrit, som efter en snor.</p>
+         </note>
+         
+         <note xml:id="com2256" changes="new"><!--lemma: saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com2257" changes="new"><!--lemma: -->
+            <p>Hånden berører eller føler på det sted på legemet, som er såret eller gør ondt eller øjet er fæstet på det, som er en kært, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 12.059.</p>
+         </note>
+         
+         <note xml:id="com1683"><!--lemma: Saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com1805"><!--lemma: Offer som Helgen-->
+            <p>betydningen er uklar; måske giv pengegaver (offer) til præsten, som var du en helgen.</p>
+         </note>
+         
+         <note xml:id="com1635"><!--lemma: Bytten-->
+            <p>dvs. bøtten.</p>
+         </note>
+         
+         <note xml:id="com1334"><!--lemma: Som vundet, saa rundet-->
+            <p>Det man får på uærlig vis eller uden større besvær, er let mistet igen.</p>
+            <!-- bedre: Hvad der kommer let, går let ??? -->
+         </note>
+         
+         <note xml:id="com2259" changes="new"><!--lemma: saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com701"><!--lemma: Ihvor en Mand sig vender, ham hændes alt som han trender-->
+            <p>Hver mand får, hvad han fortjener eller arbejder sig til; trender betyder sætte rendegarn på en væv.</p>
+         </note>
+         
+         <note xml:id="com1636"><!--lemma: brokket i-->
+            <p>tilberedt, lavet mad.</p>
+         </note>
+         
+         <note xml:id="com1684"><!--lemma: -->
+            <p>her: spise; egl. indtage flydende kost.</p>
+         </note>
+         
+         <note xml:id="com2258" changes="new"><!--lemma: saa-->
+            <p>således.</p>
+         </note>
+         
+         <note xml:id="com702"><!--lemma: Hip som hap, skip som skap, Ræv som røde Hunde-->
+            <p>Det ene er lige så godt som det andet.</p>
+            <!-- overflødig? -->
+         </note>
+         
+         <note xml:id="com2149"><!--lemma: brouter-->
+            <p>dvs. brovter, praler.</p>
+         </note>
+         
+         <note xml:id="com1335"><!--lemma: ska'r-->
+            <p>dvs. skader.</p>
+         </note>
+         
+         <note xml:id="com703"><!--lemma: Somt-->
+            <p>noget.</p>
+         </note>
+         
+         <note xml:id="com1685"><!--lemma: Hellig-Feir-->
+            <p>højtidsfest; feir betyder højtideligholdelse.</p>
+         </note>
+         
+         <note xml:id="com705"><!--lemma: Somt-->
+            <p>noget.</p>
+         </note>
+         
+         <note xml:id="com2267" changes="new"><!--lemma: Somt er i Klæderne skaaret og Somt i Kiødet baaret-->
+            <p>Noget er tillært, noget er nedarvet.</p>
+         </note>
+         
+         <note xml:id="com1637"><!--lemma: sure-->
+            <p>triste.</p>
+         </note>
+         
+         <note xml:id="com706"><!--lemma: Syster-->
+            <p>dvs. søster.</p>
+         </note>
+         
+         <note xml:id="com707"><!--lemma: Ingen Sorg uden Syster-->
+            <p>Der kommer ofte flere sorger på én gang, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.286.</p>
+         </note>
+         
+         <note xml:id="com1686"><!--lemma: Fy dig an-->
+            <p>fy da; fy føj.</p>
+         </note>
+
+         <note xml:id="com709"><!--lemma: Sort-->
+            <p>slem, ond.</p>
+         </note>
+
+         <note xml:id="com710"><!--lemma: hvid-->
+            <p>uskyldig.</p>
+         </note>
+         
+         <note xml:id="com1017"><!--lemma: sorte-->
+            <p>onde, slemme.</p>
+         </note>
+         
+         <note xml:id="com711"><!--lemma: Hundedrengs-Davre-->
+            <p>hundepassers morgenmad.</p>
+         </note>
+         
+         <note xml:id="com1638"><!--lemma: Vaag-->
+            <p>vågn.</p>
+         </note>
+         
+         <note xml:id="com712"><!--lemma: Bedre at spare fra Bredd end fra Bund-->
+            <p>Det er bedre at spare i tide end i sidste øjeblik; bred kan betyde kanten af et kar eller en tønde.</p>
+         </note>
+         
+         <note xml:id="com1337"><!--lemma: fortjent-->
+            <p>tjent.</p>
+         </note>
+         
+         <note xml:id="com2260" changes="new"><!--lemma: bagefter-->
+            <p>for sent.</p>
+         </note>
+         
+         <note xml:id="com713"><!--lemma: Kæmpe-Sædd-->
+            <p>helteskik, heltevane.</p>
+         </note>
+         
+         <note xml:id="com1639"><!--lemma: -->
+            <p>sank, saml (imperativ pluralis).</p>
+         </note>
+         
+         <note xml:id="com714"><!--lemma: spotte-->
+            <p>håne, gøre nar af.</p>
+         </note>
+
+         <note xml:id="com715"><!--lemma: spotter-->
+            <p>håner, gør nar af.</p>
+         </note>
+
+         <note xml:id="com716"><!--lemma: bliver ei selv uspottet-->
+            <p>undgår ikke selv hån.</p>
+         </note>
+
+         <note xml:id="com717"><!--lemma: spottede-->
+            <p>hånede, gjorde nar af.</p>
+         </note>
+
+         <note xml:id="com718"><!--lemma: Spotterens-->
+            <p>den hånendes.</p>
+         </note>
+
+         <note xml:id="com719"><!--lemma: søbe-->
+            <p>her: spise.</p>
+         </note>
+         
+         <note xml:id="com1640"><!--lemma: Spytten-->
+            <p>dvs. spyt.</p>
+         </note>
+         
+         <note xml:id="com2150"><!--lemma: spørges-->
+            <p>erfares; rygtes.</p>
+         </note>
+         
+         <note xml:id="com1018"><!--lemma: Det er stivt at staae i Gabet-->
+            <p>Det er hårdt at udsætte sig for farer; gabet er her hullet i fæstningsværket.</p>
+         </note>
+         
+         <note xml:id="com720"><!--lemma: Det var godt at Stakke fik ingen Hale-->
+            <p>Godt den overmodige ikke fik magt til at gøre skade; stakke betyder dyr uden hale.</p>
+            <!-- Mau. 4.998 -->
+         </note>
+         
+         <note xml:id="com721"><!--lemma: Hvad skal den stakkede Hund paa den høie Kværn-->
+            <p>påmindelse om at kende sin plads; stakkede betyder haleløs.</p>
+         </note>
+
+         <note xml:id="com722"><!--lemma: Hvo ilde stavrer, han ilde giærder-->
+            <p>Den der begynder et arbejde dårligt, afslutter det sjældent godt; stavrer betyder at sætte stave op i et gærde (hegn); giærder betyder indhegner (med gærde).</p>
+         </note>
+
+         <note xml:id="com723"><!--lemma: Meen-->
+            <p>fortræd, skade.</p>
+         </note>
+         
+         <note xml:id="com2261" changes="new"><!--lemma: hardt-->
+            <p>dvs. hårdt.</p>
+         </note>
+         
+         <note xml:id="com1020"><!--lemma: Naar man skriver et vist Navn paa en Steen, kan man slaae en Hund ihiel dermed-->
+            <p>Man behøver ikke en trylleformel på en sten for at slå hunde ihjel med den (stenen behøver ikke være stor til dette formål).</p>
+            <!-- ODS: sten, 3.2 -->
+         </note>
+         
+         <note xml:id="com724"><!--lemma: Stifbarn-->
+            <p>dvs. stedbarn.</p>
+         </note>
+         
+         <note xml:id="com1021"><!--lemma: jo heller-->
+            <p>ikke heller så.</p>
+         </note>
+         
+         <note xml:id="com1642"><!--lemma: >Han stiller slet sin Mund, som ilde rimer-->
+            <p>Han har svært ved at skaffe føde, som digter dårligt.</p>
+            <!-- Mau 6603 ? -->
+         </note>
+         
+         <note xml:id="com725"><!--lemma: fjæle-->
+            <p>skjule, gemme.</p>
+         </note>
+
+         <note xml:id="com726"><!--lemma: Fiske-->
+            <p>dvs. fisk (gl. pluralisform).</p>
+         </note>
+         
+         <note xml:id="com1022"><!--lemma: gaae -->
+            <p>ringer.</p>
+         </note>
+
+         <note xml:id="com727"><!--lemma: Fiske-->
+            <p>dvs. fisk (gl. pluralisform).</p>
+         </note>
+
+         <note xml:id="com728"><!--lemma: grundt-->
+            <p>lavt.</p>
+         </note>
+         
+         <note xml:id="com1023"><!--lemma: Ondt -->
+            <p>svært.</p>
+         </note>
+         
+         <note xml:id="com1690"><!--lemma: Det gaaer stort til med de Store (de har Smørrebrød i Lommen-->
+            <p>om dem som har rigeligt af alt.</p>
+         </note>
+         
+         <note xml:id="com1024"><!--lemma: Den skal have en stor Stumpe, som vil dyppe en Anden ud-->
+            <p>Man skal have et stort stykke brød for at få suppen for sig selv.</p>
+         </note>
+         
+         <note xml:id="com729"><!--lemma: Bælg-->
+            <p>Ethvert ungt menneske eller halvvoksent barn længes derhen, hvor han er født.</p>
+         </note>
+         
+         <note xml:id="com1025"><!--lemma: stundum-->
+            <p>dvs. stundom, snart.</p>
+         </note>
+         
+         <note xml:id="com730"><!--lemma: Kraas-->
+            <p>dvs. kråse, fuglemave.</p>
+         </note>
+         
+         <note xml:id="com2262" changes="new"><!--lemma: Imellem-->
+            <p>ind i mellem.</p>
+         </note>
+         
+         <note xml:id="com1026"><!--lemma: Roggerne tie-->
+            <p>dvs. rågerne.</p>
+            <!-- Mau 9802 -->
+         </note>
+         
+         <note xml:id="com731"><!--lemma: Hækken-->
+            <p>åben krybbe med hø.</p>
+         </note>
+         
+         <note xml:id="com1646"><!--lemma: de Baarne-->
+            <p>slægten.</p>
+         </note>
+         
+         <note xml:id="com732"><!--lemma: uden-->
+            <p>undtagen.</p>
+         </note>
+         
+         <note xml:id="com2263" changes="new"><!--lemma: Af/af-->
+            <p>ude af.</p>
+         </note>
+         
+         <note xml:id="com1340"><!--lemma: snart-->
+            <p>hurtigt, let.</p>
+         </note>
+         
+         <note xml:id="com733"><!--lemma: spytte i Øinene-->
+            <p>udtrykke foragt for.</p>
+         </note>
+
+         <note xml:id="com734"><!--lemma: Taals-Vognen-->
+            <p>dvs. tålmodighedens vogn; tålmodigheden.</p>
+         </note>
+         
+         <note xml:id="com850"><!--lemma: uden-->
+            <p>undtagen.</p>
+         </note>
+         
+         <note xml:id="com735"><!--lemma: Vissenberg-Gyde-->
+            <p>slem vej, jf. <rs type="title" key="title93">Mau 1879</rs>, nr. 9.984; de faktiske lokaliteter er formentlig uden afgørende betydning i ordsproget.</p>
+            <!-- smal vej med hegn på begge sider: se VSO -->
+         </note>
+         
+         <note xml:id="com1027"><!--lemma: Sigen-->
+            <p>her: ukrudtet; egl. solsikken.</p>
+         </note>
+         
+         <note xml:id="com906"><!--lemma: Ribe-Ret-->
+            <p>Ribe byret, der blev betraget som særlig streng ifølge <rs type="title" key="title3530">Jyske Lov</rs>.</p>
+            <!--dvs. Ribe byret, der blev betraget som særlig streng ifølge <rs type="title" key="">Jyske Lov</rs>; Ribe byret blev udstedt 26. juni 1269 af <persName key="pe1010">Erik 5. Klipping</persName>-->
+         </note>
+         
+         <note xml:id="com1422"><!--lemma: hængde-->
+            <p>dvs. hængte.</p>
+         </note>
+         
+         <note xml:id="com737"><!--lemma: alt-->
+            <p>helt, aldeles.</p>
+         </note>
+
+         <note xml:id="com738"><!--lemma: Klaffer-->
+            <p>bagvaskelse, sladder.</p>
+         </note>
+         
+         <note xml:id="com1028"><!--lemma: Naar-->
+            <p>hvornår.</p>
+         </note>
+         
+         <note xml:id="com739"><!--lemma: Things-->
+            <p>domstolene.</p>
+         </note>
+
+         <note xml:id="com740"><!--lemma: Thingsvidne-->
+            <p>vidne ved domstol.</p>
+         </note>
+         
+         <note xml:id="com1647"><!--lemma: -->
+            <p>dvs. skælm.</p>
+         </note>
+         
+         <note xml:id="com741"><!--lemma: krøge-->
+            <p>bøje.</p>
+         </note>
+         
+         <note xml:id="com1029"><!--lemma: onde-->
+            <p>ubehagelige.</p>
+         </note>
+         
+         <note xml:id="com742"><!--lemma: Tidinger-->
+            <p>nyheder, efterretninger.</p>
+         </note>
+         
+         <note xml:id="com743"><!--lemma: tidingefuld-->
+            <p>fuld af nyheder eller efterretninger.</p>
+         </note>
+         
+         <note xml:id="com1648"><!--lemma: dumme-->
+            <p>stumme.</p>
+         </note>
+
+         <note xml:id="com744"><!--lemma: Heller taugt end tarveløst mælt-->
+            <p>Tavshed er bedre end tom tale; taugt betyder tiet eller tavst; tarveløst betyder uden behov.</p>
+         </note>
+
+         <note xml:id="com746"><!--lemma: Taugt-->
+            <p>tavst, det som ikke er sagt.</p>
+         </note>
+
+         <note xml:id="com747"><!--lemma: Time-Dag-->
+            <p>lykkelig dag.</p>
+         </note>
+
+         <note xml:id="com748"><!--lemma: gnægger-->
+            <p>vrinsker.</p>
+         </note>
+
+         <note xml:id="com749"><!--lemma:Primere-->
+            <p>personer der vrøvler.</p>
+         </note>
+         
+         <note xml:id="com1030"><!--lemma: tiltakke-->
+            <p>på tilfredsstillende vis.</p>
+         </note>
+         
+         <note xml:id="com750"><!--lemma: skaaret-->
+            <p>klippet.</p>
+         </note>
+         
+         <note xml:id="com2264" changes="new"><!--lemma: to Mænds-->
+            <p>frisøren og kundens.</p>
+         </note>
+         
+         <note xml:id="com1693"><!--lemma: -->
+            <p>om to stærke magter eller personer, der strides om fortrinnet.</p>
+            <!-- handler ikke om rumfang! -->
+         </note>
+         
+         <note xml:id="com1341"><!--lemma: drage-->
+            <p>yder, bidrager.</p>
+         </note>
+         
+         <note xml:id="com751"><!--lemma: vist-->
+            <p>sikkert.</p>
+         </note>
+         
+         <note xml:id="com1649"><!--lemma: Svoger-->
+            <p>svigersønner.</p>
+         </note>
+         
+         <note xml:id="com752"><!--lemma: Voveste-->
+            <p>dristigste.</p>
+         </note>
+         
+         <note xml:id="com1032"><!--lemma: Hæk-->
+            <p>åben krybbe til hø.</p>
+         </note>
+         
+         <note xml:id="com755"><!--lemma: Skieppe-->
+            <p>dvs. skæppe; spand eller lign., der kunne rumme, hvad der svarer til en skæppe.</p>
+         </note>
+         
+         <note xml:id="com2151"><!--lemma: topmaalt-->
+            <p>med top på, fyldt til randen.</p>
+         </note>
+
+         <note xml:id="com756"><!--lemma: Var ikke ... -->
+            <p>Hvis der ingen straf er i verden, vil det onde tage magten.</p>
+         </note>
+
+         <note xml:id="com757"><!--lemma: Lunstikken-->
+            <p>låsepinden, der hindrer hjulet i at falde af akslen.</p>
+         </note>
+         
+         <note xml:id="com1650"><!--lemma: Orm-->
+            <p>slange.</p>
+         </note>
+         
+         <note xml:id="com1033"><!--lemma: Smøg-->
+            <p>røg; damp.</p>
+         </note>
+         
+         <note xml:id="com1034"><!--lemma: onde-->
+            <p>her evt. også: vanskelige, besværlige.</p>
+         </note>
+         
+         <note xml:id="com758"><!--lemma: hvide-->
+            <p>uskyldige.</p>
+         </note>
+
+         <note xml:id="com759"><!--lemma: Gjærde-->
+            <p>dvs. gærde, hegn.</p>
+         </note>
+         
+         <note xml:id="com1035"><!--lemma: Trediemand spiller under Bordet-->
+            <p>Tredjemand er overflødig eller til besvær (f.eks. i kortspil).</p>
+         </note>
+         
+         <note xml:id="com1651"><!--lemma: -->
+            <p>dvs. skælm.</p>
+         </note>
+         
+         <note xml:id="com760"><!--lemma: trestrænget-->
+            <p>dvs. trestrenget, reb spundet af tre tråde.</p>
+         </note>
+         
+         <note xml:id="com1652"><!--lemma: jo-->
+            <p>ikke.</p>
+         </note>
+         
+         <note xml:id="com1036"><!--lemma: grønklædt-->
+            <p>i verdslig dragt, jf. <rs type="title" key="title5462">Syv 1944</rs>, nr. 3.718, s. 433.</p>
+            <!-- Hansen? -->
+         </note>
+         
+         <note xml:id="com761"><!--lemma:  Heed-->
+            <p>hede.</p>
+         </note>
+
+         <note xml:id="com762"><!--lemma: Kulsvier-Tro-->
+            <p>blind tro.</p>
+         </note>
+         
+         <note xml:id="com1037"><!--lemma: Torden-Stene-->
+            <p>betegnelse for sten, f.eks. belemnitter eller pigge fra forstenede søpindsvin, der ifølge overtroen er faldet ned med lynet og som beskytter mod torden eller trolde.</p>
+         </note>
+         
+         <note xml:id="com1342"><!--lemma: Hvem som dør af Trudsel ... -->
+            <p>Den som dør af skræk, skal begraves i vanære; sml. med ordsprog nr. 1.344 &#x201C;<hi rend="spaced">Ingen</hi> døer af Trudsel&#x201D; (det er ikke truslen, men handlingen der dræber).</p>
+         </note>
+         
+         <note xml:id="com763"><!--lemma: Ædling-->
+            <p>adelsmand, person af fornem stand; kan også betegne ædel person.</p>
+         </note>
+         
+         <note xml:id="com767"><!--lemma: Trætte-Traad-->
+            <p>betegnelse for en strid om ingenting.<!--; allusion til sagnet om skrædderen og hans kone, der var uenige om, hvorvidt frakken skulle klippes eller skæres (se <rs type="title" key="title5472">Tang 1900</rs>, s. 16 f.).--></p>
+            <!-- se Evald Tang "Danske Skjæmtesagn" -->
+         </note>
+         
+         <note xml:id="com1343"><!--lemma: agter-->
+            <p>bemærker, lægger mærke til.</p>
+         </note>
+         
+         <note xml:id="com1038"><!--lemma: det er jo-->
+            <p>at det ikke er.</p>
+         </note>
+         
+         <note xml:id="com1344"><!--lemma: ond-->
+            <p>her også: vanskelig.</p>
+         </note>
+         
+         <note xml:id="com769"><!--lemma: holder-->
+            <p>her: falder godt.</p>
+         </note>
+
+         <note xml:id="com770"><!--lemma: Lække-->
+            <p>utætte.</p>
+         </note>
+         
+         <note xml:id="com1345"><!--lemma: tørt-->
+            <p>der er nytteløst, man får intet for sin umage.</p>
+         </note>
+         
+         <note xml:id="com1653"><!--lemma: Stikker-->
+            <p>pinde.</p>
+         </note>
+         
+         <note xml:id="com772"><!--lemma: Den vækker Iis, som tørster-->
+            <p>Den som trænger, skyer ingen midler.</p>
+         </note>
+         
+         <!--note xml:id="com1900">lemma: Uden Øl og Mad er Helten ingen Ting
+            <p>citat fra <hi rend="italic"><rs type="title" key="title4817">&#x201C;Kierlighed uden Strømper&#x201D;</rs>,</hi> 5. optog, 3. optrin af <persName key="pe562">Johan Herman Wessel</persName>.</p>
+         </note-->
+         
+         <note xml:id="com1346"><!--lemma: Ufei Mand-->
+            <p>hvis død ikke er nært forestående; modig.</p>
+         </note>
+         
+         <note xml:id="com773"><!--lemma: Fæ-->
+            <p>kvæg.</p>
+         </note>
+
+         <note xml:id="com774"><!--lemma: ugjort Veir-->
+            <p>dårlige eller farlige vejrforhold.</p>
+         </note>
+         
+         <note xml:id="com1654"><!--lemma: Ukrud-->
+            <p>dvs. ukrudt.</p>
+         </note>
+         
+         <note xml:id="com775"><!--lemma: Hvo Ulov driver, han Ulov nyder-->
+            <p>Den som begår ulovligheder eller handler uretfærdigt, han straffes derefter; at nyde ulov kan enten betyde at udsættes for urimelige retsbestemmelser, eller at være uden for lovens beskyttelse.</p>
+         </note>
+         
+         <note xml:id="com777"><!--lemma: Paternoster-->
+            <p>fadervor.</p>
+         </note>
+         
+         <note xml:id="com1347"><!--lemma: Det tuder Alt, hvad af Ulve kommer-->
+            <p>Børn arver ofte forældrenes dårlige egenskaber.</p>
+         </note>
+         
+         <note xml:id="com778"><!--lemma: ugangen-->
+            <p>som endnu ikke er sket.</p>
+         </note>
+         
+         <note xml:id="com921"><!--lemma: under-->
+            <p>nederst.</p>
+         </note>
+
+         <note xml:id="com779"><!--lemma: underlige-->
+            <p>forunderlige, besynderlige.</p>
+         </note>
+         
+         <note xml:id="com788"><!--lemma: undende-->
+            <p>undløbe, løbe fra, undslippe.</p>
+         </note>
+         
+         <note xml:id="com780"><!--lemma:  undraade-->
+            <p>(bevæge ved at) fraråde.</p>
+         </note>
+
+         <note xml:id="com781"><!--lemma: betænker-->
+            <p>betænk (imperativ pluralis).</p>
+         </note>
+
+         <note xml:id="com782"><!--lemma: Hove-->
+            <p>hoffet.</p>
+         </note>
+
+         <note xml:id="com783"><!--lemma: har ti Sind over en Dørtærskel-->
+            <p>er vægelsindede, er meget i tvivl.</p>
+         </note>
+         
+         <note xml:id="com1041"><!--lemma: Uretfærdigt Gods lykkes ikke-->
+            <p>Tyvegods bringer ikke held.</p>
+         </note>
+         
+         <note xml:id="com1348"><!--lemma: Uretfærdige Penge-->
+            <p>penge skaffet på ulovlig vis.</p>
+         </note>
+         
+         <note xml:id="com784"><!--lemma: og-->
+            <p>også.</p>
+         </note>
+         
+         <note xml:id="com785"><!--lemma: uskiændt-->
+            <p>uden at blive skændet eller beskæmmet, vanæret.</p>
+         </note>
+
+         <note xml:id="com786"><!--lemma: knarke-->
+            <p>dvs. knirke, knage.</p>
+         </note>
+
+         <note xml:id="com787"><!--lemma: Ustævnt-->
+            <p>person, der ikke er stævnet; evt. sag, der ikke er indbragt for en domstol.</p>
+         </note>
+         
+         <note xml:id="com1696"><!--lemma: -->
+            <p>Det er bedst ikke at aflægge ed, hvis ikke man er sikker i sin sag.</p>
+         </note>
+         
+         <note xml:id="com1349"><!--lemma: Der skal Vid til Vaande-->
+            <p>Det kræver forstand og kløgt at håndtere farer eller modgang.</p>
+         </note>
+         
+         <note xml:id="com1042"><!--lemma: vaandes-->
+            <p>pines.</p>
+         </note>
+         
+         <note xml:id="com1043"><!--lemma: vildes-->
+            <p>forvirres, gøres uklar.</p>
+         </note>
+         
+         <note xml:id="com1044"><!--lemma: godt-->
+            <p>nemt.</p>
+         </note>
+         
+         <note xml:id="com789"><!--lemma: i vant-->
+            <p>vant dertil.</p>
+         </note>
+         
+         <note xml:id="com1046"><!--lemma: Pirres-->
+            <p>betegnelse eller kælenavn for et lille væsen; her en kat.</p>
+         </note>
+         
+         <note xml:id="com790"><!--lemma: Der er Nødde i Vedkast-->
+            <p>om det at sætte hårdt mod hårdt; nødde er en kølle, vedkast er en brændestabel.</p>
+         </note>
+         
+         <note xml:id="com1047"><!--lemma: ond-->
+            <p>svær.</p>
+         </note>
+         
+         <note xml:id="com1655"><!--lemma: veie-->
+            <p>vinde, bestikke.</p>
+         </note>
+         
+         <note xml:id="com1048"><!--lemma: Alt-->
+            <p>alt sammen.</p>
+         </note>
+         
+         <note xml:id="com1350"><!--lemma: bliver vel afløst-->
+            <p>får god syndsforladelse.</p>
+         </note>
+         
+         <note xml:id="com791"><!--lemma: byger-->
+            <p>behandler garn eller uld med lud.</p>
+         </note>
+         
+         <note xml:id="com2265" changes="new"><!--lemma: som til bær-->
+            <p>den som bringer f.eks. gaver til huset.</p>
+         </note>
+         
+         <note xml:id="com1401"><!--lemma: Vaade-->
+            <p>nød, trængsel.</p>
+         </note>
+         
+         <note xml:id="com1657"><!--lemma: fuldtroe-->
+            <p>ubetingede, trofaste.</p>
+         </note>
+         
+         <note xml:id="com1049"><!--lemma: varer-->
+            <p>gør en opmærksom på, advarer en om.</p>
+         </note>
+         
+         <note xml:id="com2152"><!--lemma: Gaard-->
+            <p>her: gærdet, som danner skel mellem naboer.</p>
+         </note>
+         
+         <note xml:id="com792"><!--lemma: Venne-Vold-->
+            <p>mellem venner, i al venskabelighed.</p>
+         </note>
+
+         <note xml:id="com793"><!--lemma: Venter -->
+            <p>forventninger.</p>
+         </note>
+         
+         <note xml:id="com2266" changes="new"><!--lemma: Visser-->
+            <p>om det man har vished om.</p>
+         </note>
+         
+         <note xml:id="com794"><!--lemma: Verden hænger ikke i et Flynderskind-->
+            <p>Tro ikke at alt er let og ligetil.</p>
+         </note>
+         
+         <note xml:id="com1353"><!--lemma: Løb-->
+            <p>indretning, gang.</p>
+         </note>
+         
+         <note xml:id="com795"><!--lemma: p....-->
+            <p>pisse.</p>
+         </note>
+         
+         <note xml:id="com1050"><!--lemma: Man maa lade Verden jævne sig selv-->
+            <p>Man må lade verden gå sin gang.</p>
+         </note>
+         
+         <note xml:id="com797"><!--lemma: vide far-->
+            <p>farer vidt omkring.</p>
+         </note>
+         
+         <note xml:id="com1698"><!--lemma: Jule-Sommer-->
+            <p>mildt vejr omkring jul.</p>
+         </note>
+         
+         <note xml:id="com1699"><!--lemma: Paaske-Vinter-->
+            <p>vinteragtigt vejr omkring påske.</p>
+         </note>
+         
+         <note xml:id="com1051"><!--lemma: længer-->
+            <p>dvs. længere.</p>
+         </note>
+         
+         <note xml:id="com2154"><!--lemma: føde-->
+            <p>brødeføde, ernære.</p>
+         </note>
+         
+         <note xml:id="com798"><!--lemma: vildøv-->
+            <p>forstilt døv, dvs. en der kun hører hvad han vil.</p>
+         </note>
+
+         <note xml:id="com799"><!--lemma: stildøv-->
+            <p>stokdøv, helt døv.</p>
+         </note>
+
+         <note xml:id="com800"><!--lemma: Villie er ikke Lande-Ret-->
+            <p>Man har ikke altid lov at følge sin egen vilje; landeret betegner et lands gældende lov.</p>
+         </note>
+
+         <note xml:id="com801"><!--lemma: taalig-->
+            <p>tålmodig, rolig.</p>
+         </note>
+
+         <note xml:id="com802"><!--lemma: har man ikke Vinde i Svøben-->
+            <p>er det vinden, der bestemmer farten (ikke pisken).</p>
+         </note>
+         
+         <note xml:id="com1052"><!--lemma: Heller i Visse end i Vove-->
+            <p>Det er bedre, at have noget sikkert (i visse) end håbe på det</p>
+            <!--p>Man ved, hvad man har, men ikke hvad man får.</p-->
+         </note>
+         
+         <note xml:id="com1658"><!--lemma: Onde-->
+            <p>uregerlige, besværlige.</p>
+         </note>
+         
+         <note xml:id="com1053"><!--lemma: vist-->
+            <p>sikkert.</p>
+         </note>
+         
+         <note xml:id="com803"><!--lemma: Saatte (ikke usaattes) er Sydskende vrede-->            
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title5463">Peder Laales gammeldanske ordsprog med sideløbende oversættelse til nydansk</rs></hi> anfører <persName key="pe4760">Aage Hansen</persName> følgende oversættelse af ordsproget &#x201C;Vrede søskende er forsonlige (forligelige) (søskendes vrede går snart over)&#x201D; (<rs type="title" key="title5463">Syv 1966</rs>, nr. 961, s. 95); såtte betyder enige, forligte.</p>
+         </note>
+         
+         <note xml:id="com1356"><!--lemma: Vred Mand er som ulædsket Kalk-->
+            <p>Betydningen er uklar; i <hi rend="italic"><rs type="title" key="title5462">Peder Syvs Danske Ordsprog</rs></hi> giver <persName key="pe4760">Aage Hansen</persName> følgende oversættelse af ordsproget: &#x201C;Vreed mand er som uslukt kalk. (naar der kommer vand paa)&#x201D; (<rs type="title" key="title5462">Syv 1944</rs>, nr. 8.164, s. 217).</p>
+         </note>
+         
+         <note xml:id="com1357"><!--lemma: Skovæbler-->
+            <p>dvs. sure æbler.</p>
+         </note>
+         
+         <note xml:id="com804"><!--lemma: Boes-->
+            <p>ejendeles, ejendoms.</p>
+         </note>
+
+         <note xml:id="com805"><!--lemma: hvide-->
+            <p>forstilt uskyldige.</p>
+         </note>
+
+         <note xml:id="com806"><!--lemma: bære igien-->
+            <p>aflevere, bringe tilbage.</p>
+         </note>
+
+         <note xml:id="com807"><!--lemma: værre-->
+            <p>dårlige.</p>
+         </note>
+         
+         <note xml:id="com1358"><!--lemma: Saa-->
+            <p>således, sådan.</p>
+         </note>
+         
+         <note xml:id="com1359"><!--lemma: De som vel yndes, de vel findes-->
+            <p>De, som holder af hinanden, finder lejlighed til at mødes.</p>
+         </note>
+         
+         <note xml:id="com808"><!--lemma: trangbrystige-->
+            <p>dvs. trangbrystede, udstyret med snævre brystkasser og bliver derfor hurtigt forpustede.</p>
+         </note>
+         
+         <note xml:id="com1403"><!--lemma: ilde sunket-->
+            <p>modvilligt spist, spist med ubehag.</p>
+         </note>
+         
+         <note xml:id="com809"><!--lemma: grædelig-->
+            <p>på sørgelig eller bedrøvelig vis.</p>
+         </note>
+
+         <note xml:id="com810"><!--lemma: forgiæt-->
+            <p>glemt.</p>
+         </note>
+         
+         <note xml:id="com1054"><!--lemma: saa-->
+            <p>således, sådan.</p>
+         </note>
+         
+         <note xml:id="com1055"><!--lemma: arges-->
+            <p>svækkes.</p>
+         </note>
+         
+         <note xml:id="com811"><!--lemma: Ælle-Pigen-->
+            <p>dvs. elverpigen.</p>
+         </note>
+         
+         <note xml:id="com2160"><!--lemma: Æren-->
+            <p>spiller på ær, der betyder ahorn.</p>
+         </note>
+         
+         <note xml:id="com812"><!--lemma: feireste-->
+            <p>skønneste, dejligste.</p>
+         </note>
+         
+         <note xml:id="com1360"><!--lemma: Ære -->
+            <p>dvs. æres.</p>
+         </note>
+         
+         <note xml:id="com2161"><!--lemma: aveløs-->
+            <p>ubehersket.</p>
+         </note>
+         
+         <note xml:id="com1659"><!--lemma: -->
+            <p>dvs. skælm.</p>
+         </note>
+         
+         <note xml:id="com1056"><!--lemma: rygter-->
+            <p>passer.</p>
+         </note>
+         
+         <note xml:id="com813"><!--lemma: Hvor der er hvide Katte, har Rakkeren altid Ærende-->
+            <p>Hvor der er noget at tjene eller vinde, der findes også dem, som forsøger det; en rakker indsamler affald.</p>
+         </note>
+         
+         <note xml:id="com1361"><!--lemma: øger-->
+            <p>bruger, anvender.</p>
+         </note>
+         
+         <note xml:id="com814"><!--lemma: Ræve-Bælgen-->
+            <p>rævens pels.</p>
+         </note>
+
+         <note xml:id="com815"><!--lemma: Ølkones-->
+            <p>kvinde der sælger øl, servitrice på en kro.</p>
+         </note>
+
+         <note xml:id="com816"><!--lemma: kiendes-->
+            <p>efterlades; erkendes.</p>
+         </note>
+
+         <note xml:id="com817"><!--lemma: Vanslægtning-->
+            <p>vanskabning.</p>
+         </note>
+         
+         <div type="litList">
+            <head xml:id="docIn1">Anvendt litteratur</head>
+            
+            <div type="litList">
+               <head xml:id="docIn11">Trykt</head>
+               <list type="litList">
+                  <!--item><span type="proofread"/><hi rend="italic"><rs type="title" key="title2243">Danske Lov</rs></hi> (1683) København</item-->
+                  <!--item><span type="proofread"/>Grundtvig, N.F.S. (1845) <hi rend="italic"><rs type="title" key="title96">Danske Ordsprog og Mundheld, samlede og ordnede af Nik. Fred. Sev. Grundtvig</rs>.</hi> København</item-->
+                  <item><rs type="title" key="title2243"><hi rend="italic">Danske Lov</hi></rs> (1683)</item>
+                  <item>Hjorth, Poul Lindegaard (1984) <rs type="title" key="title5460">&#x201C;Ægget i Humlesækken&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title488">Danske Studier</rs>,</hi> s. 113-120. København</item>
+                  <!--item><span type="proofread"/><rs type="title" key="title3530"><hi rend="italic">Jyske Lov</hi></rs> (1241)</item-->
+                  <item><span type="proofread"/>Kingo, Thomas (1941) <rs type="title" key="title4114">&#x201C;Dend XIV. Sang. Hver har sin Skæbne&#x201D;</rs> i <hi rend="italic"><rs type="title" key="title262">Samlede Skrifter</rs>,</hi> bind 3, s. 233-236 [1681]. København</item>
+                  <item>Kjær, Iver &amp;  Bengt Holbek (u.å.: 1969) <hi rend="italic"><rs type="title" key="title5502">Ordsprog i Danmark</rs>.</hi> [uden sted]</item>
+                  <item><span type="proofread"/>Kock, Axel (1891-1892) <hi rend="italic"><rs type="title" key="title5474">Östnordiska och latinska medeltidsordspråk. Peder Låles ordspråk och en motsvarande svensk. II. Kommentar</rs>.</hi> København</item>
+                  <item><span type="proofread"/>Mau, Edvard (1879) <hi rend="italic"><rs type="title" key="title93">Dansk Ordsprogs-Skat,</rs></hi> bind 1-2. København</item>
+                  <item><span type="proofread"/>Moltken, Joachim (1647) <rs type="title" key="title5485"><hi rend="italic">En Ny Dansk Psalmebog</hi></rs>. København</item>
+                  <item><span type="proofread"/>Syv, Peder (1944) <hi rend="italic"><rs type="title" key="title5462">Peder Syvs Danske Ordsprog</rs>,</hi> udg. Aage Hansen [1682 og 1688]. København</item>
+                  <item><span type="proofread"/>Syv, Peder (1966) <hi rend="italic"><rs type="title" key="title5463">Peder Laales gammeldanske ordsprog med sideløbende oversættelse til nydansk</rs>,</hi> overs. Aage Hansen [1682 og 1688]. Tjørring</item>
+               </list>
+            </div>
+            
+            <div type="litList">
+               <head xml:id="docIn12">Utrykt</head>
+               <list type="litList">
+                  <item>Grundtvig, Johan (1839) <hi rend="italic"><rs type="title" key="title245">Fortegnelse over Nik. Fred. Sev. Grundtvigs Bogsamling ved Johan Grundtvig</rs></hi> i Grundtvig-Arkivet, Fasc. 520, Det Kongelige Bibliotek. Christianshavn</item>
+               </list>
+            </div>
+            
+         </div>
+      
+      </body>
+   </text>
+</TEI>

@@ -1,0 +1,602 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/introEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/introRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+  <teiHeader>
+    <fileDesc>
+      <titleStmt>
+        <title rend="main">Idunna. En Nytaarsgave for 1811</title>
+        <title rend="shortForm">Idunna</title>
+        <author>Steen Tullberg</author>
+        <editor role="editor2">dr.phil. Johnny Kondrup</editor>
+        <editor role="editor3">Klaus Nielsen</editor>
+        <editor role="editor1">Else Riisager</editor>
+        
+        
+      </titleStmt>
+      <editionStmt>
+        <edition>
+          <idno type="content">1.3</idno>
+          <idno type="technic">1.3.1</idno>
+        </edition>
+      </editionStmt>
+      <extent>104 KB</extent>
+      
+      <publicationStmt>
+        <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+        <publisher>Faculty of Arts, University of Aarhus</publisher>
+        <distributor>Grundtvig Centeret, Vartov</distributor>
+        <authority></authority>
+        
+        <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. okotober 2013</date>
+      </publicationStmt>
+      
+      <notesStmt>
+        <note type="txt" target="1810_148A_txt.xml">L&#x00E6;setekst</note>
+        <note type="intro" xml:id="thisFile" target="1810_148A_intro.xml">Indledning</note>
+<!--Problem med @type for "thisFile" -->
+      </notesStmt>
+      <!--
+        <notesStmt>
+        <note>Note1</note>
+        <note>Note2</note>
+        <note>Note3</note>
+        <note>Note4</note>
+        <note>Note5</note>
+        </notesStmt>
+        
+      -->
+      <sourceDesc>
+        <p />
+      </sourceDesc>
+    </fileDesc>
+    <encodingDesc>
+      <projectDesc>
+        <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+        <p>Grundtvig Centeret arbejder med:</p>
+        <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+        <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+        <p>2.a. Teologi og kirke</p>
+        <p>2.b. Demokrati og folkelighed</p>
+        <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+        <p>3. Videnudveksling, undervisning og formidling</p>
+      </projectDesc>
+      <editorialDecl xml:id="comGuideLines.xml" n="1.1">
+        <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="introGuideLines.xml" n="1.1">
+        <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="msGuideLines.xml" n="1.1">
+        <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="refGuideLines.xml" n="1.1">
+        <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="typoGuideLines.xml" n="1.1">
+        <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txrGuideLines.xml" n="1.1">
+        <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="txtGuideLines.xml" n="1.1">
+        <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+      <editorialDecl xml:id="xmlGuideLines.xml" n="1.1">
+        <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+      </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+      <change xml:id="ST" who="ST" when="2013-06-13">Indledende tilpasning</change>
+      <change who="ST" when="2013-08-16">p&#x00E5;begyndt skrivning</change>
+      <change who="ST" when="2013-10-28">indf&#x00F8;ring af ELRs redaktionelle rettelser</change>
+      <change who="ST" when="2013-11-13">indf&#x00F8;ring af JKs redaktionelle rettelser</change>
+      <change who="ST" when="2013-12-11">indf&#x00F8;ring af KNs redaktionelle rettelser</change> 
+      <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+      <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>      
+      <change who="KSR" when="2014-01-03">kontrol af readMore</change>
+    </revisionDesc>
+  </teiHeader>
+  <text type="intro">
+    <body>
+      
+      <div>
+        <head xml:id="docIn1">V&#x00E6;rkets baggrund</head>
+        <div>
+          <head xml:id="docIn2">Tiden op til sammenbruddet i december 1810</head>
+          
+          <p rend="noIndent">Fortalen til <rs type="title" key="title1402">
+<hi rend="italic">Idunna. En Nytaarsgave for 1811</hi>
+</rs> er dateret den 5. december 1810, og bogen udkom den 28. december. Udgivelsen af <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> falder dermed i en dramatisk periode af Grundtvigs liv, som han selv flere steder betegner som et vendepunkt og et afg&#x00F8;rende kristeligt gennembrud. V&#x00E6;rket er sk&#x00F8;nlitter&#x00E6;rt og skrevet ind i en litter&#x00E6;r offentlighed, hvor Grundtvig &#x00F8;nskede at g&#x00F8;re sig g&#x00E6;ldende. Det er en af den unge digters f&#x00F8;rste sk&#x00F8;nlitter&#x00E6;re bogudgivelser med et i tidens stil blandet digterisk indhold i flere genrer.</p>
+          
+          <p rend="noIndent">I et sent tilbageblik p&#x00E5; efter&#x00E5;ret og vinteren 1810 beretter Grundtvig i <rs type="title" key="title196">
+<hi rend="italic">Kirke-Speil</hi>
+</rs> (foredrag holdt i 1861-1863, udgivet 1871), hvordan han en aften sad alene p&#x00E5; Valkendorfs Kollegium og l&#x00E6;ste <rs type="title" key="title173">
+<persName key="pe177">August v. Kotzebues</persName> bog om Preussens historie</rs>. Han n&#x00E5;ede under l&#x00E6;sningen ikke l&#x00E6;ngere end til det 13. &#x00E5;rhundrede, da han forargedes over <persName key="pe177">Kotzebues</persName> omtale af, hvorledes kristningen af Preussen var udf&#x00F8;rt under &#x201C;det visne Kors&#x201D;. Grundtvig beskriver sin reaktion s&#x00E5;ledes: &#x201C;derved l&#x00F8;b det mig koldt ned ad Ryggen, saa at jeg ikke blot smed Bogen fra mig, men sprang op som grebet af en m&#x00E6;gtig Aand, der kaldte mig til <hi rend="spaced">Reformator</hi>&#x201D; (<rs type="title" key="title196">
+<hi rend="italic">Kirke-Speil,</hi>
+</rs> s. 370). Han beskriver videre, at der derefter fulgte &#x201C;et Par Maaneder af stolt, men stille Sv&#x00E6;rmeri, hvori jeg f&#x00F8;rste Gang siden min Barndom for Alvor l&#x00E6;ste <hi rend="spaced">Bibelen,</hi> is&#x00E6;r Propheterne, <hi rend="spaced">
+<persName key="pe42">Luthers</persName>
+</hi> og <hi rend="spaced">
+<persName key="pe294">Kingos</persName>
+</hi> Psalmer, bad og grublede over, hvordan en Reformation is&#x00E6;r med Pen og Bl&#x00E6;k i vore Dage lod sig udf&#x00F8;re&#x201D; (s. 370 f.). I sammenh&#x00E6;ngen fastsl&#x00E5;r han desuden, at &#x201C;<hi rend="spaced">&#x2018;Nytaars-Nat&#x2019;</hi> er i L&#x00E6;severdenen det eneste Spor af dette Sv&#x00E6;rmer-Liv, thi det endtes pludselig, da jeg med eet blev s&#x00F8;nderknust ved de Sp&#x00F8;rgsmaal: Er du selv en Christen? og har du dine Synders Forladelse?&#x201D; (s. 371).</p>
+          
+          <p rend="noIndent">I et samtidigt fragment fasts&#x00E6;tter Grundtvig sin l&#x00E6;sning af <persName key="pe177">Kotzebue</persName> til den 9. oktober 1810, og fragmentet er formentlig skrevet kort efter denne dato. Her beskriver han, hvordan han efter at have tilbragt en sommer &#x201C;ligesom i Dvale&#x201D; pludselig blev grebet af en uimodst&#x00E5;elig lyst til at l&#x00E6;se historie. Han n&#x00E6;vner derp&#x00E5; v&#x00E6;rker af <rs type="title" key="title2820">
+<persName key="pe1322">A.H.L. Heeren</persName>
+</rs>, <rs type="title" key="title2821">
+<persName key="pe1323">J.C.L. Haken</persName>
+</rs>, <rs type="title" key="title2822">
+<persName key="pe1324">A.H. Spalding</persName>
+</rs>, <rs type="title" key="title2823">
+<persName key="pe1325">Simonde de Sismondi</persName>
+</rs> og <rs type="title" key="title2824">
+<persName key="pe1326">J. M&#x00FC;ller</persName>
+</rs> (jf. <rs type="title" key="title156">
+<hi rend="italic">Udvalgte Skrifter</hi>
+</rs> 2 (1905), s. 29; se ogs&#x00E5; <rs type="title" key="title2450">Michelsen 1956</rs>, s. 66-68). S&#x00E6;rlig optaget var han af fremstillinger af korstogene, og denne optagethed af middelalderen kom til udtryk i tre af de fem &#x201C;Sagakvad&#x201D; i <rs type="title" key="title1402">
+<hi rend="italic">Idunna:</hi>
+</rs> &#x201C;Pillegrimene&#x201D;, &#x201C;<persName key="pe1294">Peter Eremit</persName>&#x201D; og &#x201C;Korstogene&#x201D;.</p>
+          
+          <p rend="noIndent">At Grundtvigs kaldsbevidsthed og nyvundne selvforst&#x00E5;else som reformator kort efter kunne ende brat i et mentalt sammenbrud skal ses p&#x00E5; baggrund af begivenheder, der tog deres begyndelse i for&#x00E5;ret 1810, og som blussede op igen i efter&#x00E5;ret. I for&#x00E5;ret var han kommet under pres, dels fra sine for&#x00E6;ldre, der &#x00F8;nskede ham hjem til Udby som hj&#x00E6;lpepr&#x00E6;st for den aldrende fader, dels fra den klagesag, der var blevet rejst imod ham i k&#x00F8;lvandet p&#x00E5; dimispr&#x00E6;dikenen, som han havde holdt i Regenskirken den 17. marts 1810 (se ogs&#x00E5; <ref type="docOut" target="1810_139A_intro.xml#docIn2">indledningen til <rs type="title" key="title650">
+<hi rend="italic">Dimispr&#x00E6;diken</hi></rs></ref>). Til dette ydre pres kom formentlig overanstrengelse og religi&#x00F8;se anf&#x00E6;gtelser.</p>
+          
+          <p rend="noIndent">Begivenhederne, der kulminerede midt i december med et sj&#x00E6;leligt kollaps og et ophold i Udby, er behandlet flittigt i sekund&#x00E6;rlitteraturen. De er ogs&#x00E5; omtalt i samtidige dokumenter samt i breve fra Grundtvig og andre. Resultatet af sammenbruddet blev dels, at Grundtvig omlagde sin tilv&#x00E6;relse og blev kapellan i Udby (fra juni 1811 til august 1813), dels at han nyorienterede sit forfatterskab i en mere accentueret kristelig og historisk retning. I forhold til <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> er det afg&#x00F8;rende, at dette v&#x00E6;rks udgivelse ganske vist finder sted midt i krisen, men i &#x00F8;vrigt h&#x00F8;rer til f&#x00F8;r sammenbruddet. Det er s&#x00E5;ledes sammenstykket af materiale, der for visse deles vedkommende er konciperet l&#x00E6;nge f&#x00F8;r, krisen og sammenbruddet indtraf.</p>
+          
+          <note type="readMore">
+            <p rend="noIndent">En summarisk gennemgang af Grundtvigs sj&#x00E6;lelige krise og sammenbrud samt en oversigt over udvalgt litteratur om emnet findes i <rs type="title" key="title14">
+Lundgreen-Nielsen 1980</rs>, s. 383 f.</p>
+</note>
+          
+          
+          
+        </div>
+        <div>
+          <head xml:id="docIn3">Idunna og Nytaarsnat</head>
+          
+          <p rend="noIndent">I sit retrospektiv i <rs type="title" key="title196">
+<hi rend="italic">Kirke-Speil</hi>
+</rs> n&#x00E6;vner Grundtvig <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> som det eneste offentlige produkt af sit &#x2018;sv&#x00E6;rmeri&#x2019; i efter&#x00E5;ret 1810. Han n&#x00E6;vner ikke <rs type="title" key="title1402">
+<hi rend="italic">Idunna,</hi>
+</rs> der udkom fire dage efter <hi rend="italic">Nytaarsnat.</hi>
+</p>
+          
+          <p rend="noIndent">De to v&#x00E6;rker var oprindelig t&#x00E6;nkt som et sammenh&#x00E6;ngende hele, hvilket fremg&#x00E5;r af fortalen til <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat,</hi>
+</rs> hvor Grundtvig om digtene skriver, at de &#x201C;vare bestemte til en af mig bes&#x00F8;rget Nytaarsgave, men da der baade fattedes Tid og Rum, fandt jeg det ogsaa ret passende, at udgive dem for sig selv&#x201D; (<rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat,</hi>
+</rs> s. 19). Den omtalte &#x201C;Nytaarsgave&#x201D; m&#x00E5; v&#x00E6;re <rs type="title" key="title1402">
+<hi rend="italic">Idunna.</hi>
+</rs>
+</p>
+          
+          <p rend="noIndent">
+<rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> er dermed formentlig udarbejdet f&#x00F8;rst, selv om den er udgivet sidst af de to. Grundtvig har fremdateret fortalen til <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> til den 31. december, mens fortalen til <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> som n&#x00E6;vnt er dateret 5. december. Denne dato var samtidig faderens 50-&#x00E5;rs jubil&#x00E6;umsdag som pr&#x00E6;st, og som en yderligere understregning af de to v&#x00E6;rkers t&#x00E6;tte tidsm&#x00E6;ssige sammenfald indledes <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> med et hyldestdigt til faderen i netop den anledning.</p> 
+          
+          <p rend="noIndent">Ud over tidssammenfaldet er der ogs&#x00E5; nogle indholdsm&#x00E6;ssige og tematiske lighedspunkter mellem de to v&#x00E6;rker, fx er et digt i <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> betitlet &#x201C;<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler&#x201D;, mens et digt i <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> hedder &#x201C;Livets &#x00C6;bler&#x201D;. I digtet &#x201C;Sor&#x00F8; Kirke&#x201D; i <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> n&#x00E6;vner Grundtvig desuden de historiske skikkelser <persName key="pe1295">Sehested</persName>, <persName key="pe1288">Sorterup</persName> og <persName key="pe99">Willemoes</persName> (s. 37 f.), som alle ligeledes optr&#x00E6;der i <rs type="title" key="title1402">
+<hi rend="italic">Idunna.</hi>
+</rs> De to digtsamlinger er ogs&#x00E5; f&#x00E6;lles om udelukkende at indeholde materiale, der ikke tidligere havde v&#x00E6;ret trykt, men hvor <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> is&#x00E6;r indeholder mytologisk og humoristisk digtning, er <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> i h&#x00F8;jere grad kendetegnet ved forkyndelsen af et kristelig-romantisk historiesyn (jf. <rs type="title" key="title354">
+<persName key="pe63">Albeck</persName> 1955</rs>, s. 81 f., og <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 381-383). Dermed markerer de to b&#x00F8;ger en overgang i Grundtvigs forfatterskab, fra hans s&#x00E5;kaldte mytologiske eller &#x00E6;stetiske periode (1806-1810) til hans teologiske eller bibelske periode (1811-1815). <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> kan betragtes som Grundtvigs afsked med asal&#x00E6;ren (<rs type="title" key="title4">
+<persName key="pe51">Auken</persName> 2005</rs>, s. 183), og i fortalen l&#x00E6;gger han selv betragtelig afstand til bogens indhold, som han ender med kun at tilkende litteraturhistorisk v&#x00E6;rdi.</p>
+          
+          
+        </div>
+        
+      </div>
+      
+      <div>
+        
+        <head xml:id="docIn5">V&#x00E6;rkets indhold og tilblivelseshistorie</head>
+        
+        <div>
+          
+          <head xml:id="docIn4">Generel karakteristik</head>
+          
+         
+          <p rend="noIndent">Genren &#x2018;nyt&#x00E5;rsgave&#x2019; var i samtiden en almindelig betegnelse for en samling af litter&#x00E6;re sm&#x00E5;ting, der udkom omkring nyt&#x00E5;r, og som kunne gives som gave og ligge fremme i de dannedes hjem. <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> var den f&#x00F8;rste af tre nyt&#x00E5;rsgaver fra Grundtvigs h&#x00E5;nd. &#x00C5;ret efter fulgte <rs type="title" key="title1548">
+<hi rend="italic">Saga. Nytaarsgave for 1812,</hi>
+</rs> og i december 1815 udkom <rs type="title" key="title2790">
+<hi rend="italic">Heimdall. Dansk Nytaars-Gave for 1816</hi>
+</rs>. Titlen &#x2018;<rs type="myth" key="myth41">Idunna</rs>&#x2019;, som ellers ikke har synderlig meget med bogens indhold at g&#x00F8;re, refererer til gudinden for evig ungdom og sk&#x00F8;nhed i den nordiske mytologi, og var en titel, der optr&#x00E5;dte hyppigt i samtidens is&#x00E6;r tyske, svenske og danske litteratur.</p>
+          
+          <p rend="noIndent">Som publikation er <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> pr&#x00E6;get af hastv&#x00E6;rk og sk&#x00F8;desl&#x00F8;shed. Af titelbladet fremg&#x00E5;r, at den er trykt p&#x00E5; <persName key="pe1213">G. Bonniers</persName> forlag, men &#x201C;i flere Bogtrykkerier&#x201D;, hvilket bl.a. ses af, at &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; nederst p&#x00E5; sidste side har anf&#x00F8;rt <persName key="pe721">P.D. Ki&#x00F8;pping</persName> som bogtrykker. &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; er derfor formentlig trykt inden resten af bogen, og arabertalspagineringen begynder ogs&#x00E5; f&#x00F8;rst med denne fort&#x00E6;lling. De forudg&#x00E5;ende digte om de tolv m&#x00E5;neder med tilh&#x00F8;rende kobberstik er upaginerede, og bogen er desuden udkommet i et oplag uden disse. Det indledende digt &#x201C;Nytaarsaften&#x201D; er ligeledes upagineret, og der findes eksemplarer af <rs type="title" key="title1402">
+<hi rend="italic">Idunna,</hi>
+</rs> hvor dette digt er placeret hhv. efter fortalen og til sidst i bogen (det sidste har ikke kunnet bekr&#x00E6;ftes, men fremg&#x00E5;r af <rs type="title" key="title354">
+<persName key="pe63">Albeck</persName> 1955</rs>, s. 78). Der eksisterer ogs&#x00E5; eksemplarer af bogen, hvor sidste blad med indholdsoversigten og rettelseslisten mangler (se i &#x00F8;vrigt <ref type="docOut" target="1810_148A_txr.xml#docIn4">tekstredeg&#x00F8;relsen</ref>).</p>
+          
+          <p rend="noIndent">Indholdet er meget forskelligartet b&#x00E5;de genre- og stilm&#x00E6;ssigt. Der svinges mellem mytologi og historisk virkelighed, oldtid og nutid, ironi og alvor. Bogens lyrik kan groft sagt deles i to, dels kalenderrim og sk&#x00E6;mtedigte (den klassiske genre med ironisk-satirisk form og indhold), dels s&#x00E5;kaldte sagakvad, der betoner f&#x00E6;drelandsk&#x00E6;rlighed, historisk bevidsthed og poetisk engagement. Bogen gennemstr&#x00F8;mmes af et opg&#x00F8;r med oplysningskultur og rationalisme p&#x00E5; den ene side og et forsvar for patriotisme ud fra et romantisk syn p&#x00E5; mytologi, historie og poesi p&#x00E5; den anden (jf. <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, 381 f.). &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; adskiller sig fra det &#x00F8;vrige indhold og fremst&#x00E5;r som en pastiche p&#x00E5; en saga, holdt i et st&#x00E6;rkt arkaiserende sprog.</p>
+          
+          <p rend="noIndent">V&#x00E6;rkets enkelte dele er blevet til i perioden fra for&#x00E5;ret 1809 til december 1810. I det f&#x00F8;lgende skal de kort introduceres.</p>
+          
+          
+        </div>
+        
+        <div>
+          <head xml:id="docIn6">&#x201C;Nytaarsaften&#x201D;</head>
+          
+          
+          <p rend="noIndent">
+<rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> indledes af digtet &#x201C;Nytaarsaften&#x201D;, der p&#x00E5; allegorisk vis placerer et publikum foran en teaterscene med nedrullet t&#x00E6;ppe. Man forst&#x00E5;r, at &#x2018;scenen&#x2019; er den n&#x00E6;rmeste fremtids begivenheder, rimeligvis det nye &#x00E5;rs, som beskuerne opfordres til at tage aktivt del i. Digtet er formentlig skrevet sidst sammen med fortalen. Hverken digtet eller fortalen optr&#x00E6;der i indholdsfortegnelsen bagest i bogen.</p>
+          
+        </div>
+        
+        <div>
+          <head xml:id="docIn7">&#x201C;Fortale&#x201D;</head>
+          
+          
+          <p rend="noIndent">I fortalen giver Grundtvig saglig besked om det meste af indholdet af <rs type="title" key="title1402">
+<hi rend="italic">Idunna,</hi>
+</rs> men l&#x00E6;gger samtidig tydelig afstand til v&#x00E6;sentlige dele af det. Det fremg&#x00E5;r m.a.o., at han nu befinder sig et andet sted, end da han skrev teksterne til bogen. Fortalen er romertalspagineret og formentlig skrevet og indf&#x00F8;jet sidst i tilblivelsesprocessen. Den er dateret den 5. december 1810 p&#x00E5; Valkendorfs kollegium.</p>
+          
+         
+          <p rend="noIndent">Grundtvig oplyser indledningsvis, at digtet &#x201C;<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler&#x201D; og fort&#x00E6;llingen om <rs type="myth" key="myth505">Tirfing</rs> er fra &#x201C;et &#x00E6;ldre Tidsrum i mit indvortes Liv, det &#x00D8;vrige betegner en Overgang&#x201D; (s. [I]). &#x201C;<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler&#x201D; fortryder han n&#x00E6;rmest at have skrevet, og de &#x00F8;vrige &#x201C;Skemtevers&#x201D; ville han &#x00F8;nske, var hans eneste. Grundtvig udtrykker desuden fortrydelse over sin til tider h&#x00E5;rde polemik mod andre og fremstiller sig som &#x00E9;n, der nu har t&#x00E6;nkt sig at give afkald p&#x00E5; at ud&#x00F8;ve litter&#x00E6;r kritik.</p>
+          
+          <p rend="noIndent">Om <rs type="myth" key="myth505">Tirfing</rs>-fort&#x00E6;llingen f&#x00E5;r man oplyst forl&#x00E6;gget, <rs type="title" key="title803">
+<hi rend="italic">Hervors Saga,</hi>
+</rs> og hvordan han har grebet genfort&#x00E6;llingen an, mens det om kobberstikkene hedder, at de var forl&#x00E6;ggerens id&#x00E9;. Sin norr&#x00F8;ne optagethed betragter han som fortid og distancerer sig fra den bl.a. med en ytring om, at &#x201C;en Kristen i n&#x00E6;rv&#x00E6;rende Tid maa have vigtigere Sysler, end at tolke Syner, som i en saa upoetisk Tid de Fleste maa gabe [: m&#x00E5;be] over, og som ei kunne bidrage synderlig til Sj&#x00E6;lens Frelse&#x201D; (s. VII). Om digtene i sidste afdeling af <rs type="title" key="title1402">
+<hi rend="italic">Idunna,</hi>
+</rs> &#x201C;Sagakvad&#x201D;, melder fortalen til geng&#x00E6;ld ikke noget.</p>
+         
+        </div>
+        
+        <div>
+          <head xml:id="docIn8">&#x201C;De tolv Maaneder&#x201D;</head>
+          
+          <p rend="noIndent">&#x201C;De tolv Maaneder&#x201D; best&#x00E5;r af et digt med et tilh&#x00F8;rende kobberstik til hvert af &#x00E5;rets m&#x00E5;neder og var som anf&#x00F8;rt i fortalen forl&#x00E6;ggerens, dvs. <persName key="pe1213">Gerhard Bonniers</persName>, id&#x00E9;. Da der findes eksemplarer uden disse digte og kobberstik, og da indholdsfortegnelsen bagest ikke rummer digtene, kan man formode, at de er kommet til som noget af det sidste. At der findes deloplag uden kobberstikkene kan dog ogs&#x00E5; skyldes &#x00F8;nsket om at g&#x00F8;re en prisbillig udgave af bogen tilg&#x00E6;ngelig. De 12 kobberstik er udf&#x00F8;rt af tyskeren <persName key="pe1328">J.F. Wilhelm Jury</persName>, hvilket ses, ganske vist utydeligt, af signaturen p&#x00E5; kobberstikket til digtet &#x201C;Januar&#x201D; og ogs&#x00E5; fremg&#x00E5;r af annonceringen af bogen i <hi rend="italic">
+<rs type="title" key="title189">Adresseavisen</rs>.</hi> Digtene er lyriske idyller, men allegorier og rolledigtenes form skaber en indirekte ironi. Med vekslende styrke udtrykker de en kritik af den borgerlige, materialistiske livsform og af det nytteorienterede, nydelsessyge livssyn, som Grundtvig forbandt med 1700-tallet (jf. <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 360-363).</p>
+          
+        </div>
+        
+        <div>
+          <head xml:id="docIn9">&#x201C;Sv&#x00E6;rdet Tirfing&#x201D;</head>
+          
+          <p rend="noIndent">Af fortalen fremg&#x00E5;r det, at sagaen om <rs type="myth" key="myth505">Tirfing</rs> egentlig skulle have udgjort endnu et bind af <rs type="title" key="title82">
+<hi rend="italic">Optrin af Nordens K&#x00E6;mpeliv</hi>
+</rs> (1809-1811). I slutningen af fortalen til det f&#x00F8;rst udgivne bind, <rs type="title" key="title1631">
+<hi rend="italic">Optrin af K&#x00E6;mpelivets Undergang i Nord,</hi>
+</rs> dateret den 14. november 1809, havde Grundtvig da ogs&#x00E5; skrevet: &#x201C;Et Hefte, indbefattende tvende Sagaer: om <rs type="myth" key="myth59">Odins</rs> Komme til Norden og om Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>, mangler kun det sidste Haandl&#x00E6;g [: den sidste afpudsning]&#x201D; (<rs type="title" key="title1631">
+<hi rend="italic">Optrin af K&#x00E6;mpelivets Undergang i Nord,</hi>
+</rs> s. [XII]). &#x201C;<rs type="myth" key="myth59">Odins</rs> Komme til Norden&#x201D; (<hi rend="italic">Bibliografien,</hi> nr. 128) blev ikke udgivet i Grundtvigs levetid, og &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D;, der er skrevet i forl&#x00E6;ngelse heraf, har alts&#x00E5; ligget s&#x00E5; godt som f&#x00E6;rdig i efter&#x00E5;ret 1809, men kan v&#x00E6;re p&#x00E5;begyndt allerede i for&#x00E5;ret.</p>
+          
+          <p rend="noIndent">Grundtvig oplyser desuden i fortalen, at han ved genrebetegnelsen &#x201C;Skemtesaga&#x201D; forst&#x00E5;r noget i retning af en nordisk pendant til &#x201C;Sydens Romaner&#x201D;, dvs. middelalderlige ridderromaner. Den litteraturhistoriske baggrund for Grundtvigs dramatiske gendigtning af sagnet om sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs> var den st&#x00E6;rke interesse for den nordiske fort&#x00E6;lling, som blomstrede p&#x00E5; dette tidspunkt. Det store danske forbillede i denne genre var for Grundtvig <persName key="pe3">Adam Oehlenschl&#x00E4;gers</persName> <rs type="title" key="title324">&#x201C;Vaulundurs Saga&#x201D;</rs> fra <rs type="title" key="title75">
+<hi rend="italic">Poetiske Skrifter</hi>
+</rs> (1805). Da dette v&#x00E6;rk udkom, inds&#x00E5; Grundtvig, at der her var givet en ny norm for den nordiske fort&#x00E6;lling, og &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; har mange gamle ord og udtryk f&#x00E6;lles med <rs type="title" key="title324">&#x201C;Vaulundurs Saga&#x201D;</rs> (jf. <rs type="title" key="title2826">
+<persName key="pe701">Rubow</persName> 1923</rs>, s. 32 og 38).</p>
+          
+          <p rend="noIndent">Forl&#x00E6;gget er som n&#x00E6;vnt <hi rend="italic">
+<rs type="title" key="title803">Hervors Saga</rs>
+</hi> (ogs&#x00E5; kaldet <hi rend="italic">Hervarar Saga</hi>), som Grundtvig med nogle f&#x00E5; udeladelser og stedvise sammentr&#x00E6;kninger af stoffet holder sig loyalt til. Centralt st&#x00E5;r motivet med sagnsv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>, der er smedet af dv&#x00E6;rge og udstyret med den forbandelse, at det ikke kan tr&#x00E6;kkes uden at for&#x00E5;rsage nogens d&#x00F8;d, og som udrydder det meste af en sl&#x00E6;gt (se <rs type="title" key="title13">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1965</rs>, s. 97-99). Om stilen i &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; erkl&#x00E6;rer Grundtvig selv, at han n&#x00E6;sten ikke ved, hvad han skal sige, fordi det &#x201C;at fort&#x00E6;lle et gammelt nordisk Sagn i et nymodens Sprog, er at dr&#x00E6;be det, og dog indseer jeg meget vel, at enhver Efterligning af en forgaaet [: for&#x00E6;ldet] Stil, selv naar den er mest fri, dog maa have noget M&#x00F8;rkt og Tvungent&#x201D; (s. VI). Af de mange norr&#x00F8;ne l&#x00E5;neord i &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; kan n&#x00E6;vnes &#x201C;Treding&#x201D; (dvs. tredjedel), &#x201C;Useier&#x201D; (dvs. nederlag) og &#x201C;Havets Heste&#x201D; (dvs. skibe), og af gammeldanske tr&#x00E6;k fx ordene &#x201C;der&#x201D; (dvs. da) og &#x201C;undfange&#x201D; (dvs. modtage) (se ogs&#x00E5; <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 307 f.).</p>
+          
+          <note type="readMore">
+<p rend="noIndent">
+<persName key="pe67">Helge Toldberg</persName> vurderer, at Grundtvigs genfort&#x00E6;lling i <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> af sagaen om <rs type="myth" key="myth505">Tirfing</rs> &#x201C;staar maal med sit forl&#x00E6;g, Hervarar Saga&#x201D; (<rs type="title" key="title24">
+Toldberg 1946</rs>, s. 104; se ogs&#x00E5; <rs type="title" key="title603">
+Toldberg 1950</rs>, s. 158 f.). En stilistisk analyse af &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; findes i <rs type="title" key="title2826">
+Rubow 1923</rs>, s. 31-40.</p>
+</note>
+          
+        </div>
+        
+        <div>
+          <head xml:id="docIn10">&#x201C;Skemtevers&#x201D;</head>
+          
+          <p rend="noIndent">Afdelingen med &#x201C;Skemtevers&#x201D; best&#x00E5;r af de tre ironisk-satiriske digte: &#x201C;Expectoratio&#x201D;, &#x201C;<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler&#x201D; og &#x201C;De gyldne Aldre&#x201D;. Det f&#x00F8;rste, hvis titel betyder en &#x2018;udgydelse af hjertet&#x2019;, er henvendt til l&#x00E6;seren og er en ironisk afsked med de nordiske myter, som Grundtvig havde v&#x00E6;ret s&#x00E5; optaget af. Digtet er en slags indledning til det f&#x00F8;lgende digt, der er en komisk fort&#x00E6;lling p&#x00E5; vers, som brat afbrydes undervejs. Det sidste digt er inspireret af myten om <rs type="myth" key="myth446">Kronos</rs> og kaldes i en parentes ironisk for &#x201C;Et lidet Bidrag til Tidens pragmatiske Historie&#x201D;, hvor udtrykket &#x2018;pragmatisk historie&#x2019; betegner en historieskrivning, der hviler p&#x00E5; kendsgerninger og skildrer historien som en k&#x00E6;de af &#x00E5;rsag og virkning.</p>
+          
+          <p rend="noIndent">Digtene g&#x00F8;r grin med tidens rationalisme og materialisme og har ogs&#x00E5; brod mod samtiden for ikke at anerkende Grundtvigs mytologiske arbejder. De tre digte betragtes almindeligvis som inspireret af <persName key="pe20">Baggesens</persName> og <persName key="pe562">Wessels</persName> stil og kan muligvis dateres til sommeren 1809 (jf. <rs type="title" key="title354">
+<persName key="pe63">Albeck</persName> 1955</rs>, s. 69-71, og <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 290 og 363-366). I fortalen til <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> distancerer Grundtvig sig fra digte, han tidligere har skrevet i denne genre, og fortryder n&#x00E6;rmest at have skrevet &#x201C;<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler&#x201D;, selv om han med sine fodnotehenvisninger i dette digt mener at have vist &#x201C;den tilb&#x00F8;rlige Skaansel mod de Levende, som jo dog ei kunne g&#x00F8;re ved, at de have taget Feil&#x201D; (s. III).</p>
+          
+        </div>
+        
+        <div>
+          <head xml:id="docIn11">&#x201C;Sagakvad&#x201D;</head>
+          
+          <p rend="noIndent">Sidste afdeling af <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> er samlet under betegnelsen &#x201C;Sagakvad&#x201D;, en genrebetegnelse, der ogs&#x00E5; optr&#x00E6;der i fx <rs type="title" key="title1548">
+<hi rend="italic">Saga</hi>
+</rs> (1811). Den indeholder syv digte, der b&#x00E6;rer titlerne &#x201C;<rs type="myth" key="myth59">Odin</rs> og <rs key="myth64" type="myth">Saga</rs>&#x201D;, &#x201C;Pillegrimene&#x201D;, &#x201C;<persName key="pe1294">Peter Eremit</persName>&#x201D;, &#x201C;Korstogene&#x201D; og &#x201C;<persName key="pe1288">J&#x00F8;rgen Sorterup</persName>&#x201D; samt &#x201C;<persName key="pe99">Villemoes</persName>&#x201D;, der best&#x00E5;r af digtene &#x201C;1801&#x201D; og &#x201C;1807&#x201D;. Digtene i denne afdeling er markant anderledes i tonen end de foreg&#x00E5;ende sk&#x00E6;mtevers og holder historiske og poetiske forbilleder op for samtiden i et enkelt, mytologisk pr&#x00E6;get form- og billedsprog.</p>
+          
+          <p rend="noIndent">&#x201C;<rs type="myth" key="myth59">Odin</rs> og <rs key="myth64" type="myth">Saga</rs>&#x201D; er muligvis skrevet i marts 1810 som indledning til et tidsskrift af samme navn, som Grundtvig og <persName key="pe122">F.C. Sibbern</persName> planlagde (se <ref type="docOut" target="1810_133A_intro.xml#docIn3">indledningen til <rs type="title" key="title2595">
+<hi rend="italic">
+<rs type="myth" key="myth59">Odin</rs> og <rs key="myth64" type="myth">Saga</rs>
+</hi>
+</rs>
+</ref>). I digtet knyttes det jordiske liv sammen med det rette himmelske f&#x00E6;dreland i et billede af tiden som en str&#x00F8;m, der brydes af en borg beboet af <rs type="myth" key="myth59">Odin</rs> og historiens gudinde, <rs type="myth" key="myth64">Saga</rs>. Modstillingen af det horisontale (tidens str&#x00F8;m) og det vertikale (borgen midt i str&#x00F8;mmen) kan udl&#x00E6;gges som et udsagn om &#x201C;historiens evne til i poetisk og videnskabelig form at l&#x00F8;fte mennesket ud af eksistensens f&#x00E6;ngsel og formidle det glimt af evigheden&#x201D; (<rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 367).</p>
+          
+          <p rend="noIndent">&#x201C;<rs type="myth" key="myth59">Odin</rs> og <rs key="myth64" type="myth">Saga</rs>&#x201D; fungerer som optakt til de tre f&#x00F8;lgende digte, &#x201C;Pillegrimene&#x201D;, &#x201C;<persName key="pe1294">Peter Eremit</persName>&#x201D; og &#x201C;Korstogene&#x201D;, der formentlig alle er udsprunget af den optagethed af historien, herunder korstogene i middelalderen, der kom over Grundtvig i efter&#x00E5;ret 1810 (se <ref type="docIn" target="#docIn2">afsnittet &#x201C;Tiden op til sammenbruddet i december 1810&#x201D;</ref>). Grundtvig optager senere det f&#x00F8;rste og det tredje af disse digte i <rs type="title" key="title752">
+<hi rend="italic">Nordiske Smaadigte</hi>
+</rs> (1838) og skriver om dem: &#x201C;Disse Smaastykker (ogsaa fra 1810 [ligesom &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D;]) skulde kun v&#x00E6;ret Forspil til en Poetisk Fremstilling af det store <hi rend="spaced">&#x2018;Korstog,&#x2019;</hi> som dengang sv&#x00E6;vede saare tiltr&#x00E6;kkende for mig&#x201D; (s. 304).</p>
+          
+          <p rend="noIndent">Det f&#x00F8;rste digt, &#x201C;Pillegrimene&#x201D;, udtrykker den kristnes l&#x00E6;ngsel efter Jerusalem og den hellige grav. Det andet digt, en kunstballade med udgangspunkt i <persName key="pe1294">Peter Eremits</persName> tale ved kirkem&#x00F8;det i Clermont i 1095, skildrer sk&#x00E6;ndslen over, at Kristi grav er i de vantros besiddelse, og slutter med et kald til v&#x00E6;kkelse af de kristne. I &#x201C;Korstogene&#x201D; beskrives en forladt &#x201C;Borgegaard&#x201D; og en by pr&#x00E6;get af d&#x00F8;dlignende stilhed, kun befolket af tilbageblevne oldinge, kvinder og drenge, efter at m&#x00E6;ndene er draget p&#x00E5; korstog. Det slutter med en gammel mands suk over ikke at kunne deltage i striden for korset og graven.</p>
+          
+          <p rend="noIndent">Derp&#x00E5; f&#x00F8;lger et hyldestdigt til digteren <persName key="pe1288">J&#x00F8;rgen Sorterup</persName>, i hvem Grundtvig har fundet en forg&#x00E6;nger i f&#x00E6;drelandsk&#x00E6;rlighed og i pr&#x00E6;ferencen for nordisk fremfor antik (is&#x00E6;r romersk) mytologi. Grundtvig har endvidere ladet sig inspirere af den villede enkelthed, som <persName key="pe1288">Sorterup</persName> tilstr&#x00E6;bte i sine <rs type="title" key="title2730">heltedigte</rs>, der var skrevet i folkevisestil i mods&#x00E6;tning til senbarokkens fork&#x00E6;rlighed for heroiske versem&#x00E5;l som aleksandriner og heksameter. Grundtvig er formentlig st&#x00F8;dt p&#x00E5; <persName key="pe1288">Sorterup</persName> for f&#x00F8;rste gang i <persName key="pe24">K.L. Rahbeks</persName> nationale antologi <rs type="title" key="title795">
+<hi rend="italic">Danske og Norske historiske Mindesange,</hi>
+</rs> der udkom omkring den 29. oktober 1810, og som Grundtvig k&#x00F8;bte den 31. oktober (jf. fasc. 521.2). Digtets motto er et lettere omskrevet citat af en strofe fra <persName key="pe1288">Sorterups</persName> <rs type="title" key="title2730">fjerde heltesang</rs>, som synes at have haft en s&#x00E6;rlig tiltr&#x00E6;kning for Grundtvig (jf. <rs type="title" key="title4">
+<persName key="pe51">Auken</persName> 2005</rs>, s. 421). &#x201C;<persName key="pe1288">J&#x00F8;rgen Sorterup</persName>&#x201D; priser senbarokdigterens forening af nationalf&#x00F8;lelse og kristendom og slutter med at fremmane troen p&#x00E5; Danmarks snarlige genf&#x00F8;dsel og <persName key="pe1288">Sorterups</persName> tilsvarende genrejsning som f&#x00E6;drelandsdigter.</p>
+          
+          
+          <p rend="noIndent">De to sidste digte i <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> er mindedigte om <persName key="pe99">Peter Willemoes</persName>. De b&#x00E6;rer titler med &#x00E5;rstallene for <persName key="pe99">Willemoes'</persName> heltemodige adf&#x00E6;rd under hhv. slaget p&#x00E5; Reden i 1801 og ved troppetransporterne mellem Langeland og Lolland i september-oktober 1807 efter briternes bombardement af K&#x00F8;benhavn 2.-4. september. Grundtvig, der under sit Langelandsophold var blevet personlig bekendt med <persName key="pe99">Willemoes</persName>, var i efter&#x00E5;ret 1810 ved at skrive en digtcyklus om s&#x00F8;helten. De to digte, der er optaget i <rs type="title" key="title1402">
+<hi rend="italic">Idunna,</hi>
+</rs> er sandsynligvis skrevet efter l&#x00E6;sningen af <persName key="pe24">Rahbeks</persName> f&#x00F8;rn&#x00E6;vnte antologi, dvs. i begyndelsen af november (<rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 348 f.). Det fremg&#x00E5;r bl.a. af, at de stilistisk er inspireret af <persName key="pe1288">Sorterups</persName> heltedigtning. S&#x00E5;ledes er billedet i f&#x00F8;rste digts fjerde strofe af &#x201C;Legen med den r&#x00F8;de Bold / Paa de vaade Enge&#x201D; sandsynligvis hentet fra <persName key="pe1288">Sorterups</persName> <rs type="title" key="title2730">femte heltesang</rs>, strofe 27, der indledes med ordene: &#x201C;De Kiemper tilsammen begyndte en Leeg / Med gloende Bolde at spille&#x201D; (<rs type="title" key="title2730">
+<persName key="pe1288">Sorterup</persName> 1716</rs>, upagineret). Hele det andet digt, &#x201C;1807&#x201D;, kan betragtes som en efterligning af <persName key="pe1288">Sorterups</persName> digte (jf. <rs type="title" key="title354">
+<persName key="pe63">Albeck</persName> 1955</rs>, s. 74).</p>
+          
+          <p rend="noIndent">Digtet betitlet &#x201C;1801&#x201D; er formentlig en omarbejdelse af den noget l&#x00E6;ngere elegi fra efter&#x00E5;ret 1809, <rs type="title" key="title793">&#x201C;Kommer hid, I Piger smaae!&#x201D;</rs>, som indgik i <persName key="pe24">Rahbeks</persName> antologi fra oktober 1810 (se ogs&#x00E5; <ref type="docOut" target="1810_144_intro.xml#docIn1">indledningen til Willemoes-digtene</ref>). Omarbejdelsen er muligvis foretaget, s&#x00E5; digtet har kunnet fungere som en optakt til &#x201C;1807&#x201D;, der formentlig er skrevet f&#x00F8;rst af de to (se udredningen i <rs type="title" key="title2229">
+<persName key="pe63">Albeck</persName> 1934</rs>).</p>
+          
+          <p rend="noIndent">Det andet <persName key="pe99">Willemoes</persName>-digt, &#x201C;1807&#x201D;, er en folkevise-pastiche. Udover <persName key="pe1288">Sorterup</persName> spores der indflydelse fra andre nationalhistoriske romancer og ballader, som var udgivet i <persName key="pe24">Rahbeks</persName> antologi, s&#x00E5;ledes <persName key="pe768">Jens Zetlitz'</persName> vise om Anna Colbi&#x00F8;rnsen, <persName key="pe523">Edvard Storms</persName> vise om Hr. Zinklar og <persName key="pe1327">H.C. Sneedorffs</persName> ballade om Henrik Gerner (jf. <rs type="title" key="title14">
+<persName key="pe52">Lundgreen-Nielsen</persName> 1980</rs>, s. 348 f., og <rs type="title" key="title354">
+<persName key="pe63">Albeck</persName> 1955</rs>, s. 74-77).</p>
+          
+          
+        </div>
+        
+        
+      </div>
+      
+      <div>
+        <head xml:id="docIn13">V&#x00E6;rkets efterliv</head>
+        
+        
+        <p rend="noIndent">Det er som allerede antydet sparsomt, hvad <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> har efterladt sig af spor i Grundtvigs eget forfatterskab, men heller ikke i samtiden fik den nogen reception af betydning. Af brevvekslingen med <persName key="pe23">Christian Molbech</persName> fremg&#x00E5;r det, at <persName key="pe23">Molbech</persName> p&#x00E5; Grundtvigs vegne sendte to eksemplarer af bogen til <persName key="pe14">Constance Leth</persName> under Grundtvigs krise i slutningen af december 1810. <persName key="pe23">Molbech</persName> kommenterer selv i et efterskrift til et brev af 27. december 1810, at han holder af kalenderdigtene i <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> og digtet &#x201C;Sor&#x00F8; Kirke&#x201D; fra <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat,</hi>
+</rs> men udtrykker tvivl om, hvorvidt de egentlig kan betragtes som religi&#x00F8;se (<rs key="title16" type="title">
+<persName key="pe23">Molbech</persName> og Grundtvig 1888</rs>, s. 51 og 229 f.).</p>
+        
+        <p rend="noIndent">Hverken <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> eller <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> blev anmeldt ved udgivelsen. <rs type="title" key="title1402">
+<hi rend="italic">Idunnas</hi>
+</rs> umiddelbare indflydelse i samtiden er af en mere udvendig karakter, idet titlen muligvis har inspireret til navnet p&#x00E5; en svensk udgivelse p&#x00E5;begyndt i 1811 af G&#x00F6;tiska f&#x00F6;rbundet, <rs type="title" key="title2828">
+<hi rend="italic">Iduna.</hi>
+</rs> Den kan ogs&#x00E5; have dannet forl&#x00E6;g for publikationen <rs type="title" key="title2829">
+<hi rend="italic">Poetisk Kalender f&#x00F6;r &#x00E5;r 1812</hi>
+</rs> fra december 1811, n&#x00E5;r det g&#x00E6;lder format og m&#x00E5;nedsvers (se <rs type="title" key="title2825">Marcus 1909</rs>, s. 109). I <persName key="pe1213">Bonniers</persName> publikation <rs type="title" key="title2827">
+<hi rend="italic">Hymnia for Aaret 1813</hi>
+</rs> fra december 1812 genanvendtes desuden de 12 kobberstik af <persName key="pe1328">J.F. Wilhelm Jury</persName>.</p>
+        
+        <p rend="noIndent">Et <rs type="title" key="title2830">andet oplag af <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs>
+</rs> blev udgivet i 1815 med nyt titelblad, men uden kobberstik og tilh&#x00F8;rende vers. Da der tilsyneladende ikke er g&#x00E5;et nogen redigeringsfase forud, idet de samme trykfejl forekommer, kan man formode, at der er tale om udgivelsen af et restoplag. Mens hele <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat</hi>
+</rs> blev genoptrykt i <hi rend="italic">
+<rs type="title" key="title334">Kv&#x00E6;dlinger</rs>
+</hi> fra samme &#x00E5;r (1815), er der ingen spor af <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> i dette v&#x00E6;rk, der for st&#x00F8;rstedelens vedkommende best&#x00E5;r af tidligere trykte v&#x00E6;rker med tilh&#x00F8;rende kommentarer. I <hi rend="italic">
+<rs type="title" key="title752">Nordiske Smaadigte</rs>
+</hi> fra 1838 medtog Grundtvig i omdigtet form &#x201C;Sv&#x00E6;rdet <rs type="myth" key="myth505">Tirfing</rs>&#x201D; og tre af sagakvadene, hhv. &#x201C;<rs type="myth" key="myth59">Odin</rs> og <rs key="myth64" type="myth">Saga</rs>&#x201D;, &#x201C;<persName key="pe1294">Peter Eremit</persName>&#x201D; nu med titlen &#x201C;Pillegrimen&#x201D;, samt (med titlen &#x00E6;ndret fra pluralis til singularis i forhold til <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs>) &#x201C;Kors-Toget&#x201D;.</p>
+        
+        <p rend="noIndent">Siden andet oplag i 1815 er <rs type="title" key="title1402">
+<hi rend="italic">Idunna</hi>
+</rs> aldrig blevet udgivet i sin helhed, og n&#x00E6;rv&#x00E6;rende udgivelse er den f&#x00F8;rste siden f&#x00F8;rsteudgaven, der ogs&#x00E5; rummer &#x201C;De tolv Maaneder&#x201D;.</p>
+        
+        
+        
+      </div>
+      
+      <div type="litList">
+        <head xml:id="docIn9999">Anvendt litteratur</head>
+        <div>
+          <head xml:id="docIn8888">Trykt</head>
+          <list type="litList">
+            
+            <item>
+<rs type="title" key="title189">
+<hi rend="italic">Adresseavisen</hi>
+</rs> (1810), 28. december, till&#x00E6;g til nr. 304. K&#x00F8;benhavn</item>
+            
+            <item>Albeck, Gustav (1934) <rs type="title" key="title2229">&#x201C;N.F.S. Grundtvigs Digtning om Peter Villemoes&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title2230">Fem danske Studier tilegnet Vilh. Andersen. Den 16. Oktober 1934</rs>,</hi> s. 5-24. K&#x00F8;benhavn</item>
+            
+            <item>Albeck, Gustav (1955) <rs type="title" key="title354">
+<hi rend="italic">Omkring Grundtvigs Digtsamlinger. Studier i Grundtvigs lyriske Forfatterskab 1808-16</hi>
+</rs>. Aarhus &amp; K&#x00F8;benhavn</item>
+            
+            <item>Auken, Sune (2005) <rs type="title" key="title4">
+<hi rend="italic">Sagas spejl. Mytologi, historie og kristendom hos N.F.S. Grundtvig</hi>
+</rs>. K&#x00F8;benhavn</item>
+            
+            <item>
+<rs type="title" key="title795">
+<hi rend="italic">Danske og Norske historiske Mindesange</hi>
+</rs> (1810), udg. af K.L. Rahbek. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1809) <rs type="title" key="title82">
+<hi rend="italic">Optrin af Nordens K&#x00E6;mpeliv,</hi>
+</rs> bind 2: <rs type="title" key="title1631">
+<hi rend="italic">Optrin af K&#x00E6;mpelivets Undergang i Nord.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1810) <rs type="title" key="title793">&#x201C;Ki&#x00E6;kheds Erindring, Willemoes&#x201D;</rs> [&#x201C;Kommer hid, I Piger smaae!&#x201D;] i <hi rend="italic">
+<rs type="title" key="title795">Danske og Norske historiske Mindesange,</rs>
+</hi> s. 167-172. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. &amp; F.C. Sibbern (1810) <rs type="title" key="title2595">
+<hi rend="italic">Odin og Saga.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1811: december 1810) <rs type="title" key="title106">
+<hi rend="italic">Nytaarsnat eller Blik paa Kristendom og Historie.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1811) <rs type="title" key="title1548">
+<hi rend="italic">Saga. Nytaarsgave for 1812.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1815) <rs type="title" key="title2830">
+<hi rend="italic">Idunna. En Nytaarsgave,</hi>
+</rs> 2. oplag. K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1815) <rs type="title" key="title334">
+<hi rend="italic">Kv&#x00E6;dlinger eller Smaakvad.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1815) <rs type="title" key="title2790">
+<hi rend="italic">Heimdall. Dansk Nytaars-Gave for 1816.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Grundtvig, N.F.S. (1838) <rs type="title" key="title752">
+<hi rend="italic">Nordiske Smaadigte.</hi>
+</rs> Christiania</item>
+            
+            <item>Grundtvig, N.F.S. (1871) <rs type="title" key="title196">
+<hi rend="italic">Kirke-Speil eller Udsigt over den christne Menigheds Levnedsl&#x00F8;b. Efter mundtligt Foredrag 1861-63.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            
+            <!-- <item><hi rend="italic">Kirke-Speil 1871, </hi>se Grundtvig, N.F.S. (1871) <rs type="title" key="title196"><hi rend="italic">Kirke-Speil eller Udsigt over den christne Menigheds Levnedsl&#x00F8;b. Efter mundtlige Foredrag 1861-63.</hi></rs> K&#x00F8;benhavn</item> -->
+            
+            <item>Grundtvig, N.F.S. &amp; Christian Molbech (1888) <rs type="title" key="title16">
+<hi rend="italic">Christian Molbech og Nikolai Frederik Severin Grundtvig. En Brevvexling,</hi>
+</rs> udg. af Chr. K.F. Molbech &amp; Ludvig Schr&#x00F8;der. K&#x00F8;benhavn</item>
+            
+            <!-- <item><hi rend="italic">Molbech og Grundtvig 1888, </hi>se Grundtvig, N.F.S. &amp;  (1888) <rs type="title" key="title16"><hi rend="italic">Christian Molbech og Nikolai Frederik Severin Grundtvig. En Brevvexling,</hi></rs> udg. af Christian Molbech, Chr. K.F. Molbech &amp; Ludvig Schr&#x00F8;der. K&#x00F8;benhavn</item> -->
+            
+            <item>Grundtvig, N.F.S. (1905) <rs type="title" key="title156">
+<hi rend="italic">Udvalgte Skrifter,</hi>
+</rs> udg. af Holger Begtrup, bind 2. K&#x00F8;benhavn</item>
+            
+            <item>Haken, Johann Christian Ludwig (1808-1820) <rs type="title" key="title2821">
+<hi rend="italic">Gem&#x00E4;lde der Kreuzz&#x00FC;ge nach Pal&#x00E4;stina zur Befreiung des heiligen Grabes</hi>
+</rs> 1-3, bind 1-2 (1808-1810). Frankfurt an der Oder</item>
+            
+            <item>Heeren, Arnold Hermann Ludwig (1808) <rs type="title" key="title2820">
+<hi rend="italic">Versuch einer Entwicklung der Folgen der Kreuzz&#x00FC;ge f&#x00FC;r Europa.</hi>
+</rs> G&#x00F6;ttingen</item>
+            
+            <!-- <item><rs type="title" key="title803"><hi rend="italic">Hervarar Saga</hi></rs></item> -->
+            
+            <item>
+<rs type="title" key="title2827">
+<hi rend="italic">Hymnia. en Samling af yndede Danske Sange; tilligemed et Till&#x00E6;g af nogle tydske og franske, for Aaret 1813</hi>
+</rs> (1812), udg. af Gerhard Bonnier. K&#x00F8;benhavn</item>
+            
+            <item>
+<rs type="title" key="title2828">
+<hi rend="italic">Iduna, en skrift f&#x00F6;r den nordiska forn&#x00E5;lderns &#x00E4;lskare</hi>
+</rs> (1811-1824), udg. af Erik Gustaf Geijer. Stockholm</item>
+            
+            <item>Kotzebue, August von (1808) <rs type="title" key="title173">
+<hi rend="italic">Preussens &#x00E4;ltere Geschichte.</hi>
+</rs> Riga</item>
+            
+            <item>Lundgreen-Nielsen, Flemming (1965) <rs type="title" key="title13">
+<hi rend="italic">N.F.S. Grundtvig. Sk&#x00E6;bne og Forsyn. Studier i Grundtvigs nordisk-romantiske dramatik.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14">
+<hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik og poetik 1798-1819</hi>
+</rs> 1-2. K&#x00F8;benhavn</item>
+            
+            <item>Marcus, Carl David (1909) <rs type="title" key="title2825">
+<hi rend="italic">Erik Gustaf Geijers Lyrik.</hi>
+</rs> Stockholm</item>
+            
+            <item>Michelsen, William (1956) <rs type="title" key="title2450">&#x201C;To optegnelser af Grundtvig fra krise&#x00E5;ret 1810. Meddelte med noter og efterskrift&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title337">Grundtvig-Studier,</rs>
+</hi> s. 53-75. K&#x00F8;benhavn</item>
+            
+            <item>M&#x00FC;ller, Johannes (1786-1853) <rs type="title" key="title2824">
+<hi rend="italic">Der Geschichten schweizerischer Eidgenossenschaft</hi>
+</rs> 1-15, bind 1-5 (1786-1808). Leipzig</item>
+            
+            <item>Oehlenschl&#x00E4;ger, Adam (1805) <rs type="title" key="title324">&#x201C;Vaulundurs Saga&#x201D;,</rs> i <hi rend="italic">
+<rs type="title" key="title75">Poetiske Skrifter</rs>,</hi> bind 2. K&#x00F8;benhavn</item>
+            
+            <item>
+<rs type="title" key="title2829">
+<hi rend="italic">Poetisk Kalender f&#x00F6;r &#x00E5;r 1812</hi>
+</rs> (1811), udg. af Per Daniel Amadeus Atterbom. Uppsala</item>
+            
+            <item>Rubow, Paul V. (1923) <rs type="title" key="title2826">
+<hi rend="italic">Saga og Pastiche. Bidrag til dansk Prosahistorie.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Sismondi, J.C.L. Simonde de (1807-1818) <rs type="title" key="title2823">
+<hi rend="italic">Histoire des r&#x00E9;publiques italiennes du Moyen &#x00C2;ge</hi>
+</rs> 1-16, bind 1-4 (1807-1808). Z&#x00FC;rich &amp; Paris</item>
+            
+            <item>Sorterup, J&#x00F8;rgen (1716) <rs type="title" key="title2730">
+<hi rend="italic">Nye Helte-Sange, Om Vores Allernaadigste Herres og Konges, Konning Frideric den Fierdes, Lykkelige Seyervindinger til Lands og Vands ved Guds Bistand erholdte Anno 1715.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Spalding, Karl August Wilhelm (1803) <rs type="title" key="title2822">
+<hi rend="italic">Geschichte des kristlichen K&#x00F6;nigreichs Jerusalem</hi>
+</rs> 1-2. Berlin</item>
+            
+            <item>Toldberg, Helge (1946) <rs type="title" key="title24">
+<hi rend="italic">Grundtvig som Filolog.</hi>
+</rs> K&#x00F8;benhavn</item>
+            
+            <item>Toldberg, Helge (1950) <rs type="title" key="title603">
+<hi rend="italic">Grundtvigs Symbolverden.</hi>
+</rs> K&#x00F8;benhavn</item>
+          </list>
+        </div>
+        
+        <div>
+          <head xml:id="docIn7777">Utrykt</head>
+          <list type="litList">
+            <item>Grundtvig-arkivet: fasc. 521.2</item>
+            
+          </list>
+        </div>
+      </div>
+    
+    </body>
+</text>
+</TEI>

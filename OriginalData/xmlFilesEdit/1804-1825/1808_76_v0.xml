@@ -1,0 +1,1339 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/varXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/varRNC.rnc"?><!--<?xml-model href="varRNC.rnc" type="application/relax-ng-compact-syntax"?>-->
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Maskeradeballet i Dannemark 1808. Et Syn</title>
+                <title rend="shortForm">Maskeradeballet 1808</title>
+                <author>Nicolai Frederik Severin Grundtvig</author>
+                <editor role="philologist">Holger Berg</editor>
+                <editor role="student1">Jesper Lorenzen</editor>
+                <editor role="student2">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+                <editor role="student3">Frederik Drei&#x00F8;e Seidelin</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>59 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                <authority />
+                
+                <date when="2013-01-04">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 1. april 2013</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1808_76_txt.xml">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="var" target="1808_76_v0.xml">Variant</note>
+            </notesStmt>
+            <sourceDesc>
+                <p />
+            </sourceDesc>
+        </fileDesc>
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+        </encodingDesc>
+        <revisionDesc>
+            <change who="NHB" when="2011-08-03">Grundkollationeret af NHB fra 2011-08-03 til 2011 08 10</change>
+            <change who="JEL" when="2011-08-12 ">2. grundkollation</change>
+            <change who="NHB" when="2011-08-24">rettelser og opm&#x00E6;rkninger</change>
+            <change who="JMR" when="2011-09-01"> 3. grundkollation</change>
+            <change who="NHB" when="2011-09-05"> opm&#x00E6;rkning, punktkommentarer</change>
+            <change who="NHB" when="2011-09-06"> opm&#x00E6;rkning af punktkommentarer</change>
+            <change who="NHB" when="2011-09-07">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-08">opm&#x00E6;rkning</change>
+            <change who="NHB" when="2011-09-13">fjernet m&#x00E6;slinger</change>
+            <change who="NHB" when="2011-09-26">kodet titelbladet</change>
+            <change who="NHB" when="2011-09-27">rettet typografi mv.</change>
+            <change who="NHB" when="2011-10-03">FDS kollation indtastet</change>
+            <change who="NHB" when="2011-10-17">VAP forslag indtastet</change>
+            <change who="NHB" when="2011-10-20">to tekstrettelser indtastet</change>
+            <change who="NHB" when="2011-11-03">tekstkritiske noter er tilpasset den nye grundtekst</change>
+            <change who="NHB" when="2010-11-10">TEI header &#x00E6;ndret</change>
+            <change who="NHB" when="2011-11-25">tilpasset tr&#x00E6;strukturen</change>
+            <change who="KSR" when="2011-11-28">rettelser i tei-header</change>
+            <change who="NHB" when="2011-11-29">tilpasning af pb-elementer</change>
+            <change who="NHB" when="2011-12-01">rettelser i TEI header</change>
+            <change who="NHB" when="2011-12-12">rettelser efter nyt txtRNC-skema</change>
+            <change who="NHB" when="2011-01-11">rettet i witness-listen</change>
+            <change who="NHB" when="2011-01-23">tilpasset TEIheader</change>
+            <change who="NHB" when="2011-01-24">omd&#x00F8;bt fra _txt til til _vartxt-fil</change>
+            <change who="NHB" when="2011-02-20">rettet TEIheader</change>
+            <change who="NHB" when="2012-03-28">p&#x00E5;begyndt kodning</change>
+            <change who="NHB" when="2012-03-30">TEIheader tilpasset, u&#x00F8;nsket kodning fjernet. Kodning p&#x00E5;begyndt fra s. 4</change>
+            <change who="NHB" when="2012-04-02">grundkodning af vartxt afsluttet</change>
+            <change who="NHB" when="2012-04-03">rettet enkelte kodninger</change>
+            <change who="NHB" when="2012-05-14">gennemgang af kodninger</change>
+            <change who="NHB" when="2012-05-15">gennemgang af kodninger</change>
+            <change who="NHB" when="2012-05-21">gennemgang af kodninger</change>
+            <change who="NHB" when="2012-05-22">tilf&#x00F8;jet var323</change>
+            <change who="NHB" when="2012-05-25">rettet tastefejl/copy-paste-fejl fra v0 og indf&#x00F8;jet JKs rettelser</change>
+            <change who="NHB" when="2012-05-25">rettet fra type=int til ort ved stavning aff&#x00F8;dt af ny interpunktion. Id = 331 ff.</change>
+            <change who="NHB" when="2012-06-14">rettet kodning. Filen valid</change>
+            <change who="NHB" when="2012-06-22">anchor flyttet indenfor lg</change>
+            <change who="NHB" when="2012-10-26">valideret. &#x00C6;ndret kodning af titlepage</change>
+            <change who="NHB" when="2013-10-02">valideret: type=text p&#x00E5; pb-elementer</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+        <change who="NHB" when="2014-03-20">valideret</change>
+            <change who="NHB" when="2014-10-22">valid</change>
+</revisionDesc>
+    </teiHeader>
+    <text type="var">
+        
+        <front>
+            <titlePage type="first">
+                <docTitle>
+                    <titlePart type="main">
+                        <pb type="text" n="1" ed="A" /><!--rend="text" -->Maskeradeballet i <app id="var1">
+                            <lem>Dannemark</lem>
+                        </app>
+</titlePart>
+                    <titlePart type="main">
+<app id="var323">
+                            <lem>
+<hi rend="italic">1808.</hi>
+</lem>
+                        </app>
+</titlePart>
+                    <titlePart type="part">
+<app id="var2">
+                            <lem>Et Syn</lem>
+                        </app>
+                    </titlePart>
+                </docTitle>
+                <byline>
+<anchor id="struct01a" />af</byline>
+                <byline>
+<docAuthor>Nik. Fred. Sev. Grundtvig,</docAuthor>
+</byline>
+                <byline>Kandidat i Teologien.</byline>
+                <fw type="longLine" />
+                <docImprint>
+                    <pubPlace>Kj&#x00F8;benhavn, 1808.</pubPlace>
+                    <publisher>
+                        <p rend="noIndent">S&#x00E6;lges hos Hofboghandler J. H. Schubothe.</p>
+                        <p rend="noIndent">Trykt hos Andreas Seidelin.</p>
+                    </publisher>
+                </docImprint>
+            </titlePage>
+            <epigraph>
+                <p rend="noIndent">
+                    <pb type="text" n="2" ed="A" rend="supp"  /><!--type="text"-->
+                </p>
+                <lg n="1">
+                    <l>
+                        <pb type="text" n="3" ed="A"  /><!--type="text"-->
+<hi rend="size4">Hver &#x00E6;gte Nordbo,</hi>
+</l>
+                    <l />
+                    <l>
+<hi rend="size4">
+<hi rend="italic">Hver Dannekvinde,</hi>
+</hi>
+</l>
+                    <l />
+                    <l>
+<hi rend="size3">broderlig helliget.</hi>
+</l>
+                    <anchor id="struct01b" />
+                </lg>
+            </epigraph>
+        </front>
+        <body>
+            <div>
+                <lg n="1">
+                    <l>
+<pb type="text" ed="A" n="4" /><!--type="text"--> Tid er at <app id="var3">
+                            <lem>tale.</lem>
+                        </app>
+</l>
+                    <l>&#x2013; &#x2013; &#x2013;</l>
+                    <l>&#x2013; &#x2013; &#x2013;</l>
+                    <l>Jeg <app id="var4">
+                            <lem>saa</lem>
+                        </app> og <app id="var5">
+                            <lem>t&#x00E6;nkte</lem>
+                        </app>,</l>
+                    <l>Jeg <app id="var6">
+                            <lem>saa</lem>
+                        </app> og <app id="var7">
+                            <lem>tied&#x2019;</lem>
+                        </app>.</l>
+                </lg>
+                <lg n="2">
+                    <l>Jeg <app id="var8">
+                            <lem>lytted&#x2019;</lem>
+                        </app> til Raad,</l>
+                    <l>Til Taleruner,</l>
+                    <l>Da jeg <app id="var10">
+                            <lem>h&#x00F8;rte</lem>
+                        </app> Domme</l>
+                    <l>&#x2013; &#x2013; &#x2013;</l>
+                    <l>I den <app id="var11">
+                            <lem>h&#x00F8;je</lem>
+                        </app> Sal.</l>
+                </lg>
+                <lg n="3">
+                    <l>D&#x00F8;er <app id="var12">
+                            <lem>F&#x00E6;,</lem>
+                        </app>
+</l>
+                    <l>
+<app id="var13">
+                            <lem>D&#x00F8;</lem>
+                        </app> Fr&#x00E6;nder,</l>
+                    <l>Selv hver paa det <app id="var14">
+                            <lem>sidste;</lem>
+                        </app>
+</l>
+                    <l>
+<app id="var15">
+                            <lem>Et</lem>
+                        </app> dog <app id="var16">
+                            <lem>ved</lem>
+                        </app>
+                        <app id="var17">
+                            <lem>jeg,</lem>
+                        </app>
+</l>
+                    <l>Som ret aldrig d&#x00F8;er:</l>
+                    <l>Dom <app id="var18">
+                            <lem>om</lem>
+                        </app> hver en D&#x00F8;d.</l>
+                </lg>
+                <lg n="4">
+                    <l rend="right">
+<anchor id="struct02a" />
+<hi rend="italic">Havamal.</hi>
+<anchor id="struct02b" />
+</l>
+                </lg>
+            </div>
+            <div>
+                <fw type="longLine" />
+                <p rend="noIndent">
+                    <pb type="text" n="5" ed="A" rend="supp" /><!-- type="text"  -->
+<hi rend="initial">S</hi>karer af alle St&#x00E6;nder samledes i Danmarks S&#x00F8;rgetid, i dets Lykkes haarde Vinter, i Vinteren Attenhundrede og <app id="var19">
+                        <lem>otte.</lem>
+                    </app>
+<app id="var331">
+                        <lem> De</lem>
+                    </app> samledes, for i overgiven Sp&#x00F8;g at pr&#x00E6;ge deres Gl&#x00E6;de.</p>
+                <p rend="firstIndent">Enkelte traadte frem, med Billedet af den <app id="var21">
+                        <lem>lidende,</lem>
+                    </app> den bl&#x00F8;dende Dana i Haand, og stillede det for de Jublendes <app id="var22">
+                        <lem>&#x00D8;je.</lem>
+                    </app>
+<app id="var332">
+                        <lem> Enkelte</lem>
+                    </app> Stemmer <app id="var24">
+                        <lem>l&#x00F8;de</lem>
+                    </app>: skammer <app id="var25">
+                        <lem>Eder</lem>
+                    </app> dog, S&#x00F8;nner af Nord! skammer <app id="var26">
+                        <lem>Eder</lem>
+                    </app> dog ved at dandse og <app id="var27">
+                        <lem>g&#x00F8;gle</lem>
+                    </app> paa Bredden af Dannemarks <app id="var28">
+                        <lem>Grav!</lem>
+                    </app> Dog &#x2013; blind og d&#x00F8;v var Skaren for Synet og <app id="var29">
+                        <lem>Stemmen.</lem>
+                    </app>
+                    <app id="var30">
+                        <lem>Strengelegen,</lem>
+                    </app>
+                    <pb type="text" n="6" ed="A"/><!--type="text" -->tonede <app id="var31">
+                        <lem>h&#x00F8;jt</lem>
+                    </app>, og med den blandede sig i r&#x00E6;dsom lystige <app id="var32">
+                        <lem>Akkorder</lem>
+                    </app>: </p>
+                <lg n="1">
+                    <l>Fryd dig ved Livet!</l>
+                </lg>
+                <p rend="firstIndent">Gulvet dundrede under de Dandsende, medens andre Formummede <app id="var33">
+                        <lem>drejede</lem>
+                    </app> sig under <anchor id="struct03a" />R&#x00E6;grimen<anchor id="struct03b" /> i lystige Kredse, og skreve i hinandens H&#x00E6;nder, som kunde der tvivles om deres <app id="var34">
+                        <lem>Navne,</lem>
+                    </app>
+                    <app id="var35">
+                        <lem>de rette.</lem>
+                    </app>
+                </p>
+                <p rend="firstIndent">Men, <app id="var36">
+                        <lem>se</lem>
+                    </app>! Lysenes Lue fl&#x00F8;d over i blaalige Flammer, raslende aabnedes <app id="var37">
+                        <lem>D&#x00F8;rren,</lem>
+                    </app> og ind traadte en <app id="var38">
+                        <lem>bleg</lem>
+                    </app>
+                    <app id="var20">
+                        <lem>sk&#x00E6;lvende</lem>
+                    </app>
+                    <app id="var39">
+                        <lem>Olding.</lem>
+                    </app>
+<app id="var333">
+                        <lem> Et</lem>
+                    </app> Spyd var hans Stav, haardt havde han l&#x00E6;net sig til det paa sin tunge Gang, og farvet var det af hans <app id="var40">
+                        <lem>Blod. Faa,</lem>
+                    </app> men Trofaste <app id="var41">
+                        <lem>fulgte</lem>
+                    </app>
+                    <app id="var42">
+                        <lem>ham,</lem>
+                    </app> med l&#x00F8;ftet Sv&#x00E6;rd i den st&#x00E6;rke Haand, og en Taare hang i det ildfulde<!--<app type="corrNote"><lem wit="B">ildfulde</lem><rdg wit="A">slidfulde</rdg></app>-->
+                    <anchor id="struct10a" />
+<app id="var43">
+                        <lem>&#x00D8;je.</lem>
+                    </app>
+</p>
+                <p rend="firstIndent">
+<app id="var320">
+                        <lem>Fremmerst</lem>
+                    </app>
+<anchor id="struct10b" /> var <app id="var44">
+                        <lem>Dannemarks</lem>
+                    </app> Konges&#x00F8;n blandt <app id="var45">
+                        <lem>dem.</lem>
+                    </app>
+                    <app id="var334">
+                        <lem>T&#x00E6;t</lem>
+                    </app> vandrede han ved Oldingens <app id="var46">
+                        <lem>Side,</lem>
+                    </app> og b&#x00F8;d ham hvile sig paa den kraftige <anchor id="struct04a" />Arm.<anchor id="struct04b" />
+</p>
+                <p rend="firstIndent">
+<pb type="text" n="7" ed="A" /><!--type="text"-->Forvirret samledes Skaren trindt Gubben, paa hvis Bryst stod Dannemarks Navn med halv udslettet Skrift. Tale vilde han, men kun en utydelig, jamrende Lyd kom over de sittrende <app id="var47">
+                        <lem>L&#x00E6;ber.</lem>
+                    </app>
+                    <app id="var335">
+                        <lem>Den</lem>
+                    </app> &#x00E6;dle ved hans <app id="var48">
+                        <lem>Side,</lem>
+                    </app> stod rede til at styrke ham med sit <app id="var49">
+                        <lem>Blod;</lem>
+                    </app> men da rystede den Gamle <app id="var50">
+                        <lem>de</lem>
+                    </app> hvide Lokker med truende <anchor id="struct11a" />
+<app id="var51">
+                        <lem>Alvor.</lem>
+                    </app>
+                </p>
+                <p rend="firstIndent">
+<app id="var319">
+                        <lem>Fluks</lem>
+                    </app>
+<anchor id="struct11b" /> traadte Tvende frem af F&#x00F8;lget, <app id="var52">
+                        <lem>skjulte</lem>
+                    </app> Spydsodden i det blottede Bryst, og l&#x00E6;dskede Oldingen med <app id="var53">
+                        <lem>deres</lem>
+                    </app> varme <app id="var54">
+                        <lem>Hjerteblod.</lem>
+                    </app>
+                    <app id="var336">
+                        <lem>Skr&#x00E6;kket</lem>
+                    </app>
+                    <app id="var55">
+                        <lem>veg</lem>
+                    </app> Skaren tilbage, men den Gamle <app id="var56">
+                        <lem>rejste</lem>
+                    </app> sig <app id="var57">
+                        <lem>k&#x00E6;mpeh&#x00F8;j</lem>
+                    </app> og <app id="var58">
+                        <lem>talte</lem>
+                    </app>:</p>
+            </div>
+            <div>
+                <lg n="1">
+                    <l>Saa stod jeg <app id="var59">
+                            <lem>gennem</lem>
+                        </app>
+                        <app id="var60">
+                            <lem>Seklers</lem>
+                        </app> Aar,</l>
+                    <l>I Manddoms fulde <app id="var61">
+                            <lem>Styrke.</lem>
+                        </app>
+</l>
+                    <l>Kraft var min S&#x00F8;n, Bluf&#x00E6;rdighed</l>
+                    <l>Min <app id="var62">
+                            <lem>fagre</lem>
+                        </app>, rene <anchor id="struct12a" />
+<app id="var63">
+                            <lem>Datter</lem>
+                        </app>.</l>
+                    <l>Naar<anchor id="struct12b" /> B&#x00F8;lgen slog i Syd og Vest</l>
+                    <l>Mod fjerne Landes <app id="var64">
+                            <lem>Kyster,</lem>
+                        </app>
+</l>
+                    <l>Mit Navn den bar, og <app id="var65">
+                            <lem>Fejghed</lem>
+                        </app> skjalv</l>
+                    <l>I stolte <anchor id="struct13a" />Marmorsale.</l>
+                    <l>
+<pb type="text" n="8" ed="A"/><!--type="text"-->Hovmodig<anchor id="struct13b" /> paa sin brede B&#x00E6;nk</l>
+                    <l>Som Havets Dronning <app id="var67">
+                            <lem>troner</lem>
+                        </app>
+</l>
+                    <l>Nu <app id="var68">
+                            <lem>Bretland;</lem>
+                        </app> men i Jernet sp&#x00E6;ndt</l>
+                    <l>Hun ved min Fod har hvilet.</l>
+                </lg>
+                <lg n="2">
+                    <l>Jeg <app id="var69">
+                            <lem>slumred&#x2019;:</lem>
+                        </app> Valmusaften <app id="var70">
+                            <lem>g&#x00F8;d</lem>
+                        </app>
+</l>
+                    <l>En Trolddom<!--<app type="corrNote"><lem wit="B">Trolddom</lem><rdg wit="A">Treldom</rdg></app>--> paa mit <app id="var71">
+                            <lem>&#x00D8;je</lem>
+                        </app>
+</l>
+                    <l>Mit Navn <app id="var72">
+                            <lem>forglemtes</lem>
+                        </app>, paa min Ryg</l>
+                    <l>Opkravled kaade <anchor id="struct05a" />
+<app id="var73">
+                            <lem>Dverge</lem>
+                        </app>.</l>
+                    <l>Jeg<anchor id="struct05b" />
+                        <app id="var74">
+                            <lem>vaagned&#x2019;</lem>
+                        </app>, <app id="var75">
+                            <lem>saa</lem>
+                        </app>, og skjalv, men frem</l>
+                    <l>Jeg <app id="var324">
+                            <lem>raabte</lem>
+                        </app> mine <app id="var76">
+                            <lem>S&#x00F8;nner:</lem>
+                        </app>
+</l>
+                    <l>Med Staal i Bryst og Staal i Haand,</l>
+                    <l>De t&#x00E6;mmed kaade <anchor id="struct06a" />
+<app id="var77">
+                            <lem>Dverge</lem>
+                        </app>
+<anchor id="struct06b" />.</l>
+                </lg>
+                <lg n="3">
+                    <l>Jeg <app id="var78">
+                            <lem>&#x00E6;ldedes &#x2013;</lem>
+                        </app>
+                        <app id="var325">
+                            <lem>En</lem>
+                        </app> S&#x00F8;n af Skjold,</l>
+                    <l>(End staaer han ved min <app id="var79">
+                            <lem>Side.</lem>
+                        </app>)</l>
+                    <l>
+<app id="var80">
+                            <lem>Genf&#x00F8;dte</lem>
+                        </app> mig, og Ungdoms Blod</l>
+                    <l>Alt varmede mit <anchor id="struct14a" />Hjerte.</l>
+                    <l>Da<anchor id="struct14b" /> kom fra <app id="var82">
+                            <lem>Vesterled</lem>
+                        </app> en Vind,</l>
+                    <l>
+<pb type="text" n="9" ed="A" /><!--type="text"-->Saa <app id="var83">
+                            <lem>lun</lem>
+                        </app> som <app id="var84">
+                            <lem>Vestenvinde.</lem>
+                        </app>
+</l>
+                    <l>Ak! Storm den blev, bortrev min <app id="var85">
+                            <lem>Krands</lem>
+                        </app>
+</l>
+                    <l>Som <app id="var86">
+                            <lem>dulgte</lem>
+                        </app> hvide <anchor id="struct15a" />Lokker.</l>
+                    <l>Naar<anchor id="struct15b" /> B&#x00F8;lgen, som mit stolte Navn</l>
+                    <l>Henbar til fjerne <app id="var88">
+                            <lem>Lande;</lem>
+                        </app>
+</l>
+                    <l>I Syd og Vest nu <app id="var89">
+                            <lem>slaar</lem>
+                        </app> mod Kyst,</l>
+                    <l>Den b&#x00E6;rer &#x2013; mine <anchor id="struct07a" />Sukke<anchor id="struct07b" />.</l>
+                </lg>
+                <lg n="4">
+                    <l>Jeg raaber mine S&#x00F8;nner <app id="var90">
+                            <lem>frem.</lem>
+                        </app>
+</l>
+                    <l>Ak! Faa er de som h&#x00F8;re,</l>
+                    <l>I Bl&#x00F8;dheds Favn og Lystens <app id="var91">
+                            <lem>Sk&#x00F8;d,</lem>
+                        </app>
+</l>
+                    <l>De slumrende sig <anchor id="struct16a" />velte.</l>
+                    <l>
+<app id="var92">
+                            <lem>Se</lem>
+                        </app>!<anchor id="struct16b" /> tomme Herrens Templer <app id="var93">
+                            <lem>staa</lem>
+                        </app>,</l>
+                    <l>Og St&#x00F8;vet <app id="var94">
+                            <lem>ej</lem>
+                        </app> vil kn&#x00E6;le</l>
+                    <l>I St&#x00F8;vet ned for St&#x00F8;vets Gud,</l>
+                    <l>At angre sine <anchor id="struct17a" />
+<app id="var321">
+                            <lem>Synder.</lem>
+                        </app>
+</l>
+                    <l>Ak<anchor id="struct17b" />! <app id="var95">
+                            <lem>Mine</lem>
+                        </app> B&#x00F8;rn det <app id="var311">
+                            <lem>er,</lem>
+                        </app> som saa</l>
+                    <l>
+<app id="var96">
+                            <lem>foragte</lem>
+                        </app> Himlens Konge,</l>
+                    <l>
+<pb type="text" n="10" ed="A" /><!--type="text"-->Som <app id="var97">
+                            <lem>se</lem>
+                        </app> mig syg, og springe dog</l>
+                    <l>Med Lyst i <app id="var98">
+                            <lem>G&#x00F8;glerhammen.</lem>
+                        </app>
+</l>
+                </lg>
+                <lg n="5">
+                    <l>O! <app id="var99">
+                            <lem>Rejs</lem>
+                        </app> dig dog, <app id="var100">
+                            <lem>nedsjunkne, faldne</lem>
+                        </app> Sl&#x00E6;gt!</l>
+                    <l>Mod Himlen op fra Bl&#x00F8;dheds fule <app id="var101">
+                            <lem>Leje</lem>
+                        </app>!</l>
+                    <l>
+<app id="var103">
+                            <lem>Husk</lem>
+                        </app>
+                        <app id="var104">
+                            <lem>Du</lem>
+                        </app> udsprang af Nordens <app id="var105">
+                            <lem>K&#x00E6;mpe&#x00E6;t</lem>
+                        </app>,</l>
+                    <l>Til Daad, og <app id="var106">
+                            <lem>ej</lem>
+                        </app> til Sydens <app id="var107">
+                            <lem>k&#x00E6;lne</lem>
+                        </app> Vellyst!</l>
+                    <l>
+<app id="var109">
+                            <lem>O</lem>
+                        </app> kaster dog den f&#x00E6;le <app id="var110">
+                            <lem>G&#x00F8;glerham</lem>
+                        </app>!</l>
+                    <l>
+<app id="var111">
+                            <lem>O</lem>
+                        </app> d&#x00E6;mper dog de vilde Gl&#x00E6;destoner!</l>
+                    <l>Ombytter Prunk med festlig <app id="var112">
+                            <lem>S&#x00F8;rgedragt</lem>
+                        </app>
+</l>
+                    <l>Og ganger hen i Herrens <app id="var113">
+                            <lem>Hus</lem>
+                        </app> at bede!</l>
+                    <l>Med hellig Sang, det fromme Hjertes B&#x00F8;n</l>
+                    <l>Sig h&#x00E6;ver da paa Andagts Luevinge,</l>
+                    <l>Og Ungdoms Kraft nedstiger i min <app id="var114">
+                            <lem>Barm,</lem>
+                        </app>
+</l>
+                    <l>Fra <app id="var115">
+                            <lem>Ham,</lem>
+                        </app> som holdt mig <app id="var116">
+                            <lem>rejst</lem>
+                        </app> i lange <anchor id="struct18a" />Tider.</l>
+                </lg>
+                <lg n="6">
+                    <l>
+<app id="var117">
+                            <lem>Da<anchor id="struct18b" />, hv&#x00E6;s</lem>
+                        </app> o <app id="var326">
+                            <lem>Mand!</lem>
+                        </app> paa hellig Alterfod</l>
+                    <l>
+<app id="var118">
+                            <lem>Dit</lem>
+                        </app> tunge <app id="var119">
+                            <lem>Sv&#x00E6;rd,</lem>
+                        </app> til Bretlands Skjold at <app id="var120">
+                            <lem>kl&#x00F8;ve,</lem>
+                        </app>
+</l>
+                    <l>Og sv&#x00E6;rg da Had til Sydens lumske <app id="var121">
+                            <lem>Gift,</lem>
+                        </app>
+</l>
+                    <l>
+<pb type="text" n="11" ed="A" /><!--type="text"-->Til Vellyst, <app id="var122">
+                            <lem>Pragt,</lem>
+                        </app> og Guldets dorske Glimmer!</l>
+                    <l>Men Kvinde! <app id="var123">
+                            <lem>Du</lem>
+                        </app> som Herren af <app id="var124">
+                            <lem>sin Sol</lem>
+                        </app>
+</l>
+                    <l>En Straale gav <app id="var125">
+                            <lem>for</lem>
+                        </app> Mandens Bryst at varme,</l>
+                    <l>Kys Altrets <app id="var126">
+                            <lem>Fod,</lem>
+                        </app> og sv&#x00E6;rg ved Straalen <app id="var127">
+                            <lem>selv</lem>
+                        </app>
+</l>
+                    <l>At <app id="var128">
+                            <lem>ej</lem>
+                        </app> med den <app id="var129">
+                            <lem>Du mer</lem>
+                        </app> min S&#x00F8;n vil <app id="var130">
+                            <lem>daare;</lem>
+                        </app>
+</l>
+                    <l>At du med Smil vil n&#x00E6;re Himlens <app id="var131">
+                            <lem>Ild</lem>
+                        </app>
+</l>
+                    <l>Og svale med din Taare Jordens <app id="var132">
+                            <lem>Flamme;</lem>
+                        </app>
+</l>
+                    <l>At med din Haand <app id="var133">
+                            <lem>Du</lem>
+                        </app> huld vil kl&#x00E6;de mig,</l>
+                    <l>Og vandre <app id="var134">
+                            <lem>frem</lem>
+                        </app> som &#x00E6;rbar Dannekvinde!</l>
+                    <l>Naar B&#x00F8;lgen da mod Syd og Vest henruller,</l>
+                    <l>Og naar den <app id="var135">
+                            <lem>slaar</lem>
+                        </app> mod fjerne Landes Kyst;</l>
+                    <l>Da atter skal den, som i Oldtids Dage,</l>
+                    <l>Henb&#x00E6;re did mit n&#x00E6;sten <app id="var136">
+                            <lem>glemte</lem>
+                        </app> Navn.</l>
+                </lg>
+                <lg n="7">
+                    <l>O S&#x00F8;n! <app id="var137">
+                            <lem>O Datter</lem>
+                        </app>! h&#x00F8;r en Faders &#x00F8;mme Stemme!</l>
+                    <l>O! <app id="var138">
+                            <lem>H&#x00F8;rer</lem>
+                        </app> dog, imens det end er <app id="var139">
+                            <lem>Tid,</lem>
+                        </app>
+</l>
+                    <l>F&#x00F8;r, dr&#x00E6;bt af Sorg og M&#x00F8;dighed jeg segner</l>
+                    <l>I skumle Grav til evig Glemsel ned!</l>
+                </lg>
+                <fw type="shortLine" />
+            </div>
+            <div>
+                <p rend="firstIndent">
+<pb type="text" n="12" ed="A" /><!--type="text"-->Oldingen <app id="var140">
+                        <lem>tav.</lem>
+                    </app>
+                    <app id="var337">
+                        <lem>Et</lem>
+                    </app>
+                    <app id="var141">
+                        <lem>&#x00D8;jeblik</lem>
+                    </app> stod Skaren som <app id="var142">
+                        <lem>grublende;</lem>
+                    </app> men nu l&#x00F8;d det i Salens &#x00F8;vre Ende:</p>
+                <p rend="center">
+<hi rend="italic">Glaubt nicht </hi>
+<app id="var143">
+                        <lem>
+<hi rend="italic">auf</hi>
+</lem>
+                    </app>
+<hi rend="italic"> solche dumme Dinge!</hi>
+</p>
+                <p rend="noIndent">og i den <app id="var144">
+                        <lem>nedre</lem>
+                    </app>:</p>
+                <lg n="1">
+                    <l>
+<hi rend="italic">Tro </hi>
+<app id="var145">
+                            <lem>
+<hi rend="italic">ej Selotens<!--<app type="combNote"><lem wit="GV">Selotens</lem><rdg wit="A">Selvtens</rdg><rdg type="add" wit="B">Zelotens</rdg></app>-->
+</hi>
+</lem>
+                        </app>
+<hi rend="italic"> m&#x00F8;rke L&#x00E6;re:</hi>
+</l>
+                    <l>
+<hi rend="italic">At Himlen er den Glade vred!</hi>
+</l>
+                </lg>
+                <p rend="noIndent">
+<app id="var146">
+                        <lem>Fordobblet</lem>
+                    </app> vendte den vilde Fryd tilbage.</p>
+                <p rend="firstIndent">End ravede <app id="var147">
+                        <lem>Gubben<!--<app type="corrNote"><lem wit="GV">Gubben</lem><rdg wit="A">Gubbben</rdg></app>-->
+</lem>
+                    </app>
+                    <app id="var148">
+                        <lem>en Stund</lem>
+                    </app>, st&#x00F8;ttet af sin &#x00E6;dle <app id="var149">
+                        <lem>Ledsager,</lem>
+                    </app> og hans mandige <app id="var150">
+                        <lem>F&#x00F8;lge;</lem>
+                    </app> men &#x2013; <app id="var151">
+                        <lem>D&#x00F8;dninguret</lem>
+                    </app> slog sit tolvte Slag, og livl&#x00F8;s nedsank den <app id="var152">
+                        <lem>Gamle</lem>
+                    </app> med sine tro S&#x00F8;nner bl&#x00F8;dende trindt sig. Stort var <app id="var153">
+                        <lem>Faldet.</lem>
+                    </app> Salen rystede som Blad i Storm, og Skr&#x00E6;k udpustede Livsaanden af de <app id="var154">
+                        <lem>Dandsende.</lem>
+                    </app>
+                    <app id="var338">
+                        <lem>Gispende</lem>
+                    </app> fore de til Hel. </p>
+            </div>
+            <div>
+                <p rend="firstIndent">Lysskinnet blaanede end <app id="var155">
+                        <lem>mere;</lem>
+                    </app> Jorden <app id="var156">
+                        <lem>gungrede</lem>
+                    </app> som under <app id="var157">
+                        <lem>K&#x00E6;mpefod,</lem>
+                    </app> og ind traadte tvende Skarer af Nordens gamle <app id="var158">
+                        <lem>Helte.</lem>
+                    </app> Hedningene havde <app id="var159">
+                        <lem>sorte</lem>
+                    </app> men de <app id="var160">
+                        <lem>Kristne</lem>
+                    </app>
+                    <app id="var161">
+                        <lem>hvide,</lem>
+                    </app> med Kors udsmykkede <app id="var162">
+                        <lem>Brynjer</lem>
+                    </app>, og alle havde de gyldne Hjelme. <pb type="text" n="13" ed="A" /><!--type="text"-->For <app id="var163">
+                        <lem>Dem</lem>
+                    </app> gik en <app id="var164">
+                        <lem>Skjald,</lem>
+                    </app> med Harpen i <app id="var165">
+                        <lem>Haand.</lem>
+                    </app>
+                    <app id="var339">
+                        <lem>Tavs</lem>
+                    </app> s&#x00F8;rgende <app id="var166">
+                        <lem>stirrede</lem>
+                    </app> de <app id="var167">
+                        <lem>Kristne</lem>
+                    </app> paa den <app id="var168">
+                        <lem>D&#x00F8;de;</lem>
+                    </app> men Hedningene omginge trende Gange Liget og <app id="var169">
+                        <lem>kvade</lem>
+                    </app>: </p>
+                <lg n="1">
+                    <l>Af dine L&#x00E6;nder</l>
+                    <l>Vi alle sprang.</l>
+                    <l>Vi, baarne Fr&#x00E6;nder,</l>
+                    <l>Gik <app id="var170">
+                            <lem>K&#x00E6;mpegang</lem>
+                        </app>.</l>
+                    <l>Med Sv&#x00E6;rd vi <app id="var171">
+                            <lem>h&#x00E6;rged&#x2019;</lem>
+                        </app>
+</l>
+                    <l>Med Skjold vi <app id="var172">
+                            <lem>v&#x00E6;rged&#x2019;</lem>
+                        </app>
+</l>
+                    <l>Vor Fader! Dig.</l>
+                </lg>
+                <lg n="2">
+                    <l>Vi <app id="var173">
+                            <lem>h&#x00F8;rte</lem>
+                        </app> runge</l>
+                    <l>I Valhals <app id="var174">
+                            <lem>Borg,</lem>
+                        </app>
+</l>
+                    <l>Dit Fald, det <app id="var175">
+                            <lem>tunge.</lem>
+                        </app>
+</l>
+                    <l>Da <app id="var176">
+                            <lem>voksde</lem>
+                        </app> Sorg,</l>
+                    <l>Hvor Roser <app id="var177">
+                            <lem>stode</lem>
+                        </app>
+</l>
+                    <l>Hvor <app id="var178">
+                            <lem>Lilljer grode</lem>
+                        </app>,</l>
+                    <l>Paa Vigrids <anchor id="struct08a" />Mark<anchor id="struct08b" />.</l>
+                </lg>
+                <p rend="firstIndent">
+<pb type="text" n="14" ed="A" /><!--type="text"-->Skjalden <app id="var179">
+                        <lem>greb</lem>
+                    </app>
+                    <app id="var312">
+                        <lem>Str&#x00E6;ngene,</lem>
+                    </app> og kvad saa gladelig om den Hedenfarnes Manddom, saa <app id="var180">
+                        <lem>s&#x00F8;rgeligen</lem>
+                    </app> om hans D&#x00F8;d. Som stivnede stode alle <app id="var181">
+                        <lem>Heltene</lem>
+                    </app> og lyttede til <app id="var182">
+                        <lem>Kv&#x00E6;det;</lem>
+                    </app> men da det var endt, fremtraadte <app id="var183">
+                        <lem>Regnar</lem>
+                    </app> Lodbrok og kvad: </p>
+                <lg n="1">
+                    <l>I Bretland fangen</l>
+                    <l>Jeg sad <app id="var184">
+                            <lem>en Stund</lem>
+                        </app>,</l>
+                    <l>Mig <app id="var185">
+                            <lem>favned&#x2019;</lem>
+                        </app>
+                        <app id="var186">
+                            <lem>Slangen,</lem>
+                        </app>
+</l>
+                    <l>I <app id="var187">
+                            <lem>Ormegrund.</lem>
+                        </app>
+</l>
+                    <l>Den fast mig <app id="var188">
+                            <lem>knuged&#x2019;</lem>
+                        </app>
+</l>
+                    <l>Mit Blod den <app id="var189">
+                            <lem>suged&#x2019;</lem>
+                        </app>
+</l>
+                    <l>Jeg <app id="var190">
+                            <lem>klaged</lem>
+                        </app>
+                        <app id="var191">
+                            <lem>ej</lem>
+                        </app>.</l>
+                    <l>I Ellas <app id="var192">
+                            <lem>Taarne,</lem>
+                        </app>
+</l>
+                    <l>Da l&#x00F8;d min <app id="var193">
+                            <lem>Sang,</lem>
+                        </app>
+</l>
+                    <l>For gamle Orne</l>
+                    <l>Blir Tiden <app id="var194">
+                            <lem>lang;</lem>
+                        </app>
+</l>
+                    <l>Men vidste <app id="var195">
+                            <lem>Grise</lem>
+                        </app>
+</l>
+                    <l>Hvad Orme spise,</l>
+                    <l>De <app id="var196">
+                            <lem>t&#x00F8;ved&#x2019; ej</lem>
+                        </app>.</l>
+                </lg>
+                <p rend="noIndent">
+<pb type="text" n="15" ed="A" /><!--type="text"-->Frem stod <app id="var197">
+                        <lem>hans S&#x00F8;n</lem>
+                    </app> Ivar <anchor id="struct09a" />
+<app id="var198">
+                        <lem>Benl&#x00F8;s</lem>
+                    </app>
+<anchor id="struct09b" /> og kvad:</p>
+                <lg n="1">
+                    <l>Vi <app id="var199">
+                            <lem>t&#x00F8;ved&#x2019;</lem>
+                        </app> ikke,</l>
+                    <l>Men dj&#x00E6;rve lod</l>
+                    <l>Vi Ulve <app id="var200">
+                            <lem>drikke,</lem>
+                        </app>
+</l>
+                    <l>Af Bretlands <app id="var201">
+                            <lem>Blod.</lem>
+                        </app>
+</l>
+                    <l>Vi Ryggen <app id="var202">
+                            <lem>risted&#x2019;,</lem>
+                        </app>
+</l>
+                    <l>Og Hjertet <app id="var203">
+                            <lem>vristed&#x2019;</lem>
+                        </app>
+</l>
+                    <l>Af Ellas Bryst.</l>
+                </lg>
+                <p rend="firstIndent">Af den <app id="var204">
+                        <lem>kristne</lem>
+                    </app> Skare fremtraadte <app id="var205">
+                        <lem>Gunnild</lem>
+                    </app>, Svend <app id="var206">
+                        <lem>Tvesk&#x00E6;gs</lem>
+                    </app> den stolte, den <app id="var207">
+                        <lem>dejlige S&#x00F8;ster</lem>
+                    </app>, og kvad:</p>
+                <lg n="1">
+                    <l>Udsprungen af Dannemarks kraftige Rod,</l>
+                    <l>Udrunden af Skjoldungers herlige Blod,</l>
+                    <l>I Bretland mig timedes <app id="var208">
+                            <lem>Kvide.</lem>
+                        </app>
+</l>
+                    <l>Paa trol&#x00F8;se &#x00D8;,</l>
+                    <l>Der maatte jeg d&#x00F8;,</l>
+                    <l>I Ungdommens <app id="var209">
+                            <lem>fagreste</lem>
+                        </app> Tide.</l>
+                </lg>
+                <lg n="2">
+                    <l>
+<pb type="text" n="16" ed="A" /><!--type="text"-->Paa Kongestol Nidingen Edelred <app id="var210">
+                            <lem>sad</lem>
+                        </app>
+</l>
+                    <l>Han <app id="var211">
+                            <lem>blanded&#x2019;</lem>
+                        </app> og <app id="var212">
+                            <lem>laved&#x2019;</lem>
+                        </app> saa <app id="var213">
+                            <lem>blodig</lem>
+                        </app> et <app id="var214">
+                            <lem>Bad,</lem>
+                        </app>
+</l>
+                    <l>For <app id="var215">
+                            <lem>Danske.</lem>
+                        </app>
+                        <app id="var340">
+                            <lem>Det</lem>
+                        </app> havde <app id="var216">
+                            <lem>ej</lem>
+                        </app>
+                        <app id="var217">
+                            <lem>Lige</lem>
+                        </app>
+</l>
+                    <l>Da <app id="var218">
+                            <lem>dr&#x00E6;btes</lem>
+                        </app> i L&#x00F8;n</l>
+                    <l>Hver Dannemarks S&#x00F8;n,</l>
+                    <l>Som bygged&#x2019; i Engellands Rige.</l>
+                </lg>
+                <lg n="3">
+                    <l>
+<app id="var219">
+                            <lem>Ej</lem>
+                        </app> havde de Vaaben, de dristige M&#x00E6;nd,</l>
+                    <l>Saa tr&#x00F8;stig de <app id="var220">
+                            <lem>fly&#x2019;de</lem>
+                        </app> til Kirkerne hen,</l>
+                    <l>Men Kirkerne t&#x00E6;ndtes i <app id="var221">
+                            <lem>Lue.</lem>
+                        </app>
+</l>
+                    <l>Saa ynkelig klang</l>
+                    <l>Da Hylen for <app id="var222">
+                            <lem>Sang,</lem>
+                        </app>
+</l>
+                    <l>Alt under den hellige Bue.</l>
+                </lg>
+                <lg n="4">
+                    <l>Af nyf&#x00F8;dte Sp&#x00E6;de, forbarme <app id="var223">
+                            <lem>sig</lem>
+                        </app> Gud!</l>
+                    <l>
+<app id="var224">
+                            <lem>Fl&#x00F8;j</lem>
+                        </app> Hjernen mod <app id="var225">
+                            <lem>Stolper</lem>
+                        </app> mod Stenene <app id="var226">
+                            <lem>ud.</lem>
+                        </app>
+</l>
+                    <l>Kun <app id="var227">
+                            <lem>faa kende</lem>
+                        </app>
+                        <app id="var228">
+                            <lem>M&#x00F8;drenes</lem>
+                        </app>
+                        <app id="var229">
+                            <lem>Smerte.</lem>
+                        </app>
+</l>
+                    <l>Da groves i <app id="var230">
+                            <lem>Jord,</lem>
+                        </app>
+</l>
+                    <l>De Kvinder fra Nord,</l>
+                    <l>Og Hundene <app id="var231">
+                            <lem>sled</lem>
+                        </app> deres Hjerte.</l>
+                </lg>
+                <lg n="5">
+                    <l>
+<pb type="text" n="17" ed="A" /><!--type="text"-->
+<app id="var232">
+                            <lem>Dog,</lem>
+                        </app> end havde Bretland <app id="var234">
+                            <lem>ej</lem>
+                        </app> styret sin Lyst,</l>
+                    <l>Jeg maatte i S&#x00F8;ns og i &#x00C6;gtemands Bryst</l>
+                    <l>De blodige Spyde <app id="var235">
+                            <lem>beskue.</lem>
+                        </app>
+</l>
+                    <l>Den <app id="var236">
+                            <lem>H&#x00F8;jeste ved</lem>
+                        </app>,</l>
+                    <l>Hvad Angest jeg <app id="var237">
+                            <lem>led;</lem>
+                        </app>
+</l>
+                    <l>Men Ingen dog <app id="var238">
+                            <lem>saa</lem>
+                        </app> mig at grue.</l>
+                </lg>
+                <lg n="6">
+                    <l>Nu l&#x00F8;ftedes <app id="var239">
+                            <lem>&#x00D8;ksen.</lem>
+                        </app>
+                        <app id="var341">
+                            <lem>Jeg</lem>
+                        </app> gjorde min <app id="var240">
+                            <lem>B&#x00F8;n,</lem>
+                        </app>
+</l>
+                    <l>Til <app id="var241">
+                            <lem>Krist</lem>
+                        </app> og hans hellige Moder i L&#x00F8;n,</l>
+                    <l>Og d&#x00F8;ende tog jeg til Orde:</l>
+                    <l>
+<app id="var242">
+                            <lem>Gr&#x00E6;d Bretland! O gr&#x00E6;d!</lem>
+                        </app>
+</l>
+                    <l>
+<app id="var244">
+                            <lem>Ti Blod var din </lem>
+                        </app>
+<app id="var245">
+                            <lem>S&#x00E6;d,</lem>
+                        </app>
+</l>
+                    <l>
+<app id="var330">
+                            <lem>Og blodig vil H&#x00F8;stdagen <anchor id="struct25a" />vorde<anchor id="struct25b" />.</lem>
+                        </app>
+</l>
+                </lg>
+                <fw type="shortLine" />
+                <p rend="firstIndent">
+<pb type="text" n="18" ed="A" /><!--type="text"-->Frem stod<!--<app type="corrNote"><lem wit="B">Frem stod</lem><rdg wit="A">Fremstod</rdg></app>-->
+                    <app id="var246">
+                        <lem>da Skjalden</lem>
+                    </app> Ottar <app id="var247">
+                        <lem>hin</lem>
+                    </app> Sorte og kvad:</p>
+                <lg n="1">
+                    <l>Ja, hevnet <app id="var248">
+                            <lem>Du</lem>
+                        </app> blev,</l>
+                    <l>
+<app id="var249">
+                            <lem>Du</lem>
+                        </app> Gunnild hin fagre!</l>
+                    <l>Med Blod vi beskrev</l>
+                    <l>Paa Engellands <app id="var250">
+                            <lem>Agre,</lem>
+                        </app>
+</l>
+                    <l>Dit Mord og vor Hevn.</l>
+                </lg>
+                <lg n="2">
+                    <l>Saa harmefuld drog</l>
+                    <l>Kong Svend over <app id="var251">
+                            <lem>Strande.</lem>
+                        </app>
+</l>
+                    <l>Han Edelred jog</l>
+                    <l>Til fremmede Lande,</l>
+                    <l>Fra Rige og <app id="var252">
+                            <lem>Stol.</lem>
+                        </app>
+</l>
+                </lg>
+                <lg n="3">
+                    <l>Han <app id="var253">
+                            <lem>synded&#x2019;</lem>
+                        </app> mod Gud,</l>
+                    <l>Mod <app id="var254">
+                            <lem>Edmund</lem>
+                        </app> og <app id="var255">
+                            <lem>d&#x00F8;de.</lem>
+                        </app>
+</l>
+                    <l>Da farvede Knud</l>
+                    <l>De Hjelme saa r&#x00F8;de,</l>
+                    <l>Og Bretland var Tr&#x00E6;l.</l>
+                </lg>
+            </div>
+            <div>
+                <p rend="firstIndent">
+<pb type="text" n="19" ed="A" /><!--type="text"-->
+<app id="var256">
+                        <lem>Kristne</lem>
+                    </app> og Hedninge sloge <app id="var257">
+                        <lem>Krinds</lem>
+                    </app> om Liget og <app id="var258">
+                        <lem>kvade</lem>
+                    </app> i <app id="var259">
+                        <lem>Kor</lem>
+                    </app>:</p>
+                <lg n="1">
+                    <l>
+<app id="var260">
+                            <lem>Ja</lem>
+                        </app> Fader! <app id="var261">
+                            <lem>tro,</lem>
+                        </app>
+</l>
+                    <l>Vi stod og <app id="var262">
+                            <lem>stred</lem>
+                        </app>,</l>
+                    <l>Og <app id="var263">
+                            <lem>h&#x00F8;jt</lem>
+                        </app> vi <app id="var264">
+                            <lem>lo,</lem>
+                        </app>
+</l>
+                    <l>I blodig <app id="var265">
+                            <lem>Sved</lem>
+                        </app>.</l>
+                </lg>
+                <lg n="2">
+                    <l>Men <app id="var266">
+                            <lem>ve</lem>
+                        </app> den Svend,</l>
+                    <l>Og <app id="var267">
+                            <lem>ve</lem>
+                        </app> den M&#x00F8;,</l>
+                    <l>Som <app id="var268">
+                            <lem>saa Dig</lem>
+                        </app> d&#x00F8;,</l>
+                    <l>Og lever <app id="var269">
+                            <lem>end!!!</lem>
+                        </app>
+</l>
+                </lg>
+                <fw type="shortLine" />
+                <p rend="firstIndent">Baalet t&#x00E6;ndtes midt i <app id="var270">
+                        <lem>Salen</lem>
+                    </app> og viedes med Korsets og Hammerens <app id="var271">
+                        <lem>Tegn</lem>
+                    </app>
+                    <app id="var272">
+                        <lem>under Korets Kvad</lem>
+                    </app>
+</p>
+                <lg n="1">
+                    <l>
+<app id="var273">
+                            <lem>H&#x00F8;je</lem>
+                        </app>
+                        <app id="var322">
+                            <lem>Odin!</lem>
+                        </app> Hvide <app id="var274">
+                            <lem>Krist</lem>
+                        </app>!</l>
+                    <l>Slettet ud er <app id="var275">
+                            <lem>Eders</lem>
+                        </app> Tvist,</l>
+                    <l>
+<pb type="text" n="20" ed="A" /><!--type="text"-->Begge S&#x00F8;nner af <app id="var276">
+                            <lem>
+<anchor id="struct21a" />Alfader<anchor id="struct21b" />.</lem>
+                        </app>
+</l>
+                    <l>Med vort Kors og med vort <app id="var277">
+                            <lem>Sv&#x00E6;rd,</lem>
+                        </app>
+</l>
+                    <l>Vies <app id="var278">
+                            <lem>Eder</lem>
+                        </app> Baalet her,</l>
+                    <l>Begge <app id="var279">
+                            <lem>elskte</lem>
+                        </app> I vor Fader.</l>
+                </lg>
+                <p rend="firstIndent">
+<app id="var280">
+                        <lem>Tre Gange</lem>
+                    </app> bares den D&#x00F8;de paa Skjolde <app id="var281">
+                        <lem>rundt</lem>
+                    </app> om Baalet, og <app id="var283">
+                        <lem>Koret</lem>
+                    </app> kvad:</p>
+                <lg n="1">
+                    <l>Os Guderne sende,</l>
+                    <l>At h&#x00E6;dre dit <app id="var284">
+                            <lem>Lig.</lem>
+                        </app>
+</l>
+                    <l>Til Aske vi br&#x00E6;nde,</l>
+                    <l>O Elskede! Dig.</l>
+                </lg>
+                <lg n="2">
+                    <l>En <app id="var285">
+                            <lem>H&#x00F8;j</lem>
+                        </app> vi skal <app id="var286">
+                            <lem>rejse</lem>
+                        </app>
+</l>
+                    <l>Paa smuldrede <app id="var289">
+                            <lem>Ben</lem>
+                        </app>,</l>
+                    <l>Og paa den skal <app id="var290">
+                            <lem>knejse:</lem>
+                        </app>
+</l>
+                    <l>En varslende <app id="var291">
+                            <lem>Sten</lem>
+                        </app>.</l>
+                </lg>
+                <lg n="3">
+                    <l>
+<pb type="text" n="21" ed="A" /><!--type="text"-->Den <app id="var292">
+                            <lem>H&#x00F8;j</lem>
+                        </app> skal <app id="var293">
+                            <lem>ej</lem>
+                        </app> l&#x00E6;gges af Jord eller <app id="var294">
+                            <lem>Muld</lem>
+                        </app>
+</l>
+                    <l>Men af S&#x00F8;lv og af Guld,</l>
+                    <l>Men af Silke og <app id="var295">
+                            <lem>Lin</lem>
+                        </app>,</l>
+                    <l>Begydt med den skummende <app id="var296">
+                            <lem>Vin</lem>
+                        </app>,</l>
+                    <l>Og af Skarlagen r&#x00F8;d,</l>
+                    <l>Og af Fraadsernes <app id="var297">
+                            <lem>K&#x00F8;d</lem>
+                        </app>,</l>
+                    <l>Saa Guderne <anchor id="struct19a" />b&#x00F8;d.</l>
+                    <l>Paa<anchor id="struct19b" />
+                        <app id="var299">
+                            <lem>H&#x00F8;jen</lem>
+                        </app> vi <app id="var300">
+                            <lem>rejse</lem>
+                        </app> en <app id="var301">
+                            <lem>Bavtasten</lem>
+                        </app>
+</l>
+                    <l>Af <app id="var302">
+                            <lem>D&#x00F8;dninge-Ben</lem>
+                        </app>,</l>
+                    <l>Af <app id="var303">
+                            <lem>Horm&#x00E6;nds-Ben</lem>
+                        </app>,</l>
+                    <l>Af <app id="var304">
+                            <lem>Horkvinde-Ben</lem>
+                        </app>,</l>
+                    <l>Af <app id="var305">
+                            <lem>Nidinge-Ben</lem>
+                        </app>,</l>
+                    <l>Og den <app id="var306">
+                            <lem>Bavtasten</lem>
+                        </app>
+</l>
+                    <l>Skal stande i <app id="var307">
+                            <lem>Nord,</lem>
+                        </app>
+</l>
+                    <l>Til for&#x00E6;ldede Jord</l>
+                    <l>Opl&#x00F8;ses i Damp.</l>
+                </lg>
+                <p rend="firstIndent">Liget lagdes paa <app id="var308">
+                        <lem>Baal.</lem>
+                    </app>
+                    <app id="var309">
+                        <lem>Flammen</lem>
+                    </app> omsnoede hele <app id="var310">
+                        <lem>F&#x00F8;lget,</lem>
+                    </app> og Alt forsvandt.<anchor id="struct20a" />
+</p>
+                <anchor id="struct20b" />
+                <fw type="longLine" />
+            </div>
+        </body>
+    
+</text>
+</TEI>

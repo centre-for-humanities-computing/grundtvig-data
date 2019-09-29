@@ -1,0 +1,1683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title rend="part">Om Schiller og Bruden fra Messina</title>
+            <title rend="shortForm">Om Schiller</title>
+            <author>Maria J&#x00F8;rgensen</author>
+            <editor role="editor2">dr.phil. Uffe Hansen</editor>
+            <editor role="editor3">Johnny Kondrup</editor>
+              <editor role="editor1">Vibeke A. Pedersen</editor>
+              <editor role="student1">Johanne Marie N&#x00F8;rrelund Rasmussen</editor>
+         </titleStmt>
+         <editionStmt>
+            <edition>
+          <idno type="content">1.2</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+         </editionStmt>
+         <extent>95 KB</extent>
+         
+         <publicationStmt>
+            <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            
+            <date when="2013-05-02">www.grundtvigsv&#x00E6;rker.dk, version 1.2, 2. maj 2013</date>
+         </publicationStmt>
+         
+         <notesStmt>
+            <note target="1807_67_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note xml:id="thisFile" target="1807_67_com.xml" type="com">Punktkommentar</note>
+         </notesStmt>
+         
+         
+         <sourceDesc><p /></sourceDesc>
+      </fileDesc>
+<encodingDesc>
+            <projectDesc>
+               <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+               <p>Grundtvig Centeret arbejder med:</p>
+               <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+               <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+               <p>2.a. Teologi og kirke</p>
+               <p>2.b. Demokrati og folkelighed</p>
+               <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+               <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         </encodingDesc>
+<revisionDesc>
+            <change xml:id="MJ" who="MJ" when="2012-03-10">kontrol + indf&#x00F8;relse af ekstra
+               kommentarer</change>
+            <change who="MJ" when="2012-04-10">verbalkommentarer + overs&#x00E6;ttelseskommentar
+               (Schiller)</change>
+            <change who="MJ" when="2012-08-10">r&#x00E5;skitse til punktkommentarer</change>
+            <change who="MJ" when="2012-08-10">lavth&#x00E6;ngende frugt plukket</change>
+            <change who="MJ" when="2012-10-01">l&#x00F8;bende indf&#x00F8;ring af
+               kommentarer</change>
+            <change who="MJ" when="2012-10-31">nye kommentarer indf&#x00F8;rt efter vibekes
+               redaktion</change>
+            <change who="MJ" when="2012-11-13">l&#x00F8;bende indf&#x00F8;ring af bibliografiske
+               kommentarer</change>
+            <change who="MJ" when="2012-11-27">(gen)indf&#x00F8;ring af com206</change>
+            <change who="JMR" when="2012-12-05">indf&#x00F8;rt person- og titelelementer</change>
+            <change who="MJ" when="2012-12-18">inds&#x00E6;ttelse af unicodes</change>
+            <change who="MJ" when="2013-01-29">johnnys rettelser indf&#x00F8;rt</change>
+            <change who="MJ" when="2013-01-30">johnnys rettelser indf&#x00F8;rt ff + opm&#x00E6;rket littlist</change>
+            <change who="MJ" when="2013-02-08">vibekes SIDSTE rettelser indf&#x00F8;rt</change>
+            <change who="MJ" when="2013-04-22">sidste justeringer inden upload</change>
+            <change who="MJ" when="2013-08-13">flyttet ET punktum!</change>
+            <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+   <change who="KSR" when="2013-01-13">validering teiHeader</change>
+   <change who="VAP" xml:id="VAP" when="2014-01-14">ændret Ødipus og Antigone fra pers til myth i com 128 og opmærket A's brødre samme sted</change>
+   
+         </revisionDesc>
+   </teiHeader>
+   <text type="com">
+      <body>
+
+         <note xml:id="com1">
+            <!--lemma: falden er Schiller-->
+            <p>
+<persName key="pe35">Schiller</persName> d&#x00F8;de den 9. maj 1805 efter mange
+               &#x00E5;rs sygdom.</p>
+         </note>
+
+         <note xml:id="com2">
+            <!--lemma: nylig forkyndte Kanonernes Torden Os n&#x00E6;r ved hans Gravh&#x00F8;i Germaniens Fald -->
+            <p>hentydning til dobbeltslaget ved Jena og Auerstedt den 14. oktober 1806, hvor en
+               preussisk-sachsisk h&#x00E6;r blev sl&#x00E5;et af <persName key="pe104">Napoleons</persName> franske styrker. <persName key="pe35">Schiller</persName> ligger begravet i
+               Weimar, t&#x00E6;t ved Jena.</p>
+         </note>
+
+         <note xml:id="com3">
+            <!--lemma: Italiens Hauge-->
+            <p>muligvis en hentydning til tragediens skueplads, Messina p&#x00E5; Sicilien. </p>
+         </note>
+
+         <note xml:id="com211">
+            <!--lemma: Hauge-->
+            <p>have.</p>
+         </note>
+
+         <note xml:id="com4">
+            <!--lemma: Omplantet fra Hellas-->
+            <p>antagelig en hentydning til <persName key="pe35">Schillers</persName> eksperimenter
+               med at forny den antikke tragedies formsprog, som han selv beskrev i fortalen til <rs type="title" key="title1802">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs> fra
+               1803, <rs type="title" key="title1774">&#x201C;&#x00DC;ber den Gebrauch des Chors in
+                  der Trag&#x00F6;die&#x201D;</rs> (<rs key="title1803" type="title">1974b</rs>, s.
+               815-823, da. &#x201C;Om Chorets Brug i Tragoedien&#x201D;, u.&#x00E5;.: 1806).</p>
+         </note>
+
+         <note xml:id="com5">
+            <!--lemma: Old-->
+            <p>tidalder, ogs&#x00E5;: oldtid.</p>
+         </note>
+
+         <note xml:id="com6">
+            <!--lemma: Schillers Gravh&#x00F8;i-->
+            <p>
+<persName key="pe35">Schiller</persName> d&#x00F8;de den 9. maj 1805 efter mange
+               &#x00E5;rs sygdom. Han blev begravet i gravkapellet Landschaftskassengew&#x00F6;lbe
+               p&#x00E5; Skt. Jakobskirkens gamle kirkeg&#x00E5;rd i Weimar, men blev i 1827
+               overflyttet til fyrsternes gravkapel p&#x00E5; Weimars nye kirkeg&#x00E5;rd.</p>
+         </note>
+
+         <note xml:id="com7">
+            <!--lemma: udrev os af den snevre Tilv&#x00E6;relse-->
+            <p>allusion til <persName key="pe35">Schillers</persName> beskrivelse i fortalen til <rs type="title" key="title1802">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs>
+               (1803) af, hvordan kunsten kan hens&#x00E6;tte tilskueren i et andet mulighedsrum:
+               &#x201C;Jeder Mensch zwar erwartet von den K&#x00FC;nsten der Einbildungskraft eine
+               gewisse Befreiung von den Schranken des Wirklichen, er will sich an dem
+               M&#x00F6;glichen erg&#x00F6;tzen und seiner Phantasie Raum geben&#x201D; (<rs key="title1803" type="title">Schiller 1974b</rs>, s. 816, da. &#x201C;Ethvert
+               menneske venter ganske vist af indbildningskraftens kunster en vis form for befrielse
+               fra virkelighedens skranker, han vil fryde sig ved det mulige og give sin fantasi
+               rum&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com8">
+            <!--lemma: den sande,
+                    evige Idyl ... det Herlige, hvortil Tiderne henpegede-->
+            <p>Grundtvig alluderer til <persName key="pe35">Schillers</persName> skrift <rs type="title" key="title1804">&#x201C;&#x00DC;ber naive und sentimentalische
+                  Dichtung&#x201D;</rs> (1795-1796, da. <rs key="title1835" type="title">&#x201C;Om
+                  naiv og sentimental digtning&#x201D;</rs> 1952), hvor <persName key="pe35">Schiller</persName> skelner mellem to former for idyl: den arkadiske, der
+               l&#x00E6;nges tilbage mod det tabte, og den elysiske, der peger fremad mod en ny
+               guldalders harmoni (<rs type="title" key="title1804">Schiller 1992</rs>, s. 775).</p>
+         </note>
+
+
+
+         <note xml:id="com10">
+            <!--lemma: Videnskaben knytte mellem Jorden og Himmelen-->
+            <p>muligvis en hentydning til <persName key="pe35">Schillers</persName>
+               tiltr&#x00E6;delsesforel&#x00E6;sning <rs key="title952" type="title">&#x201C;Was
+                  hei&#x00DF;t und zu welchem Ende studiert man Universalgeschichte?&#x201D;</rs>
+               fra 1789 (da. Hvad er og med hvilket form&#x00E5;l studerer man universalhistorie?),
+               hvor den sande videnskabmand &#x2013; &#x2018;det filosofiske hoved&#x2019; &#x2013;
+               forst&#x00E5;r at samle historien til et teleologisk forl&#x00F8;b.</p>
+         </note>
+
+         <note xml:id="com11">
+            <!--lemma: R&#x00F8;vere-->
+            <p>
+<persName key="pe35">Schillers</persName> skuespil <rs type="title" key="title1021">
+<hi rend="italic">Die R&#x00E4;uber</hi>
+</rs> (1781) var udkommet i en dansk
+               overs&#x00E6;ttelse i 1801, betitlet <hi rend="italic">
+<rs key="title1034" type="title">R&#x00F8;verne</rs>.</hi> Overs&#x00E6;tteren var <persName key="pe24">Knud Lyne Rahbeks</persName> halvbror, <persName key="pe862">Matthias
+                  Rahbek</persName>.</p>
+         </note>
+
+         <note xml:id="com12">
+            <!--lemma: Kabale og Elskov-->
+            <p>
+<persName key="pe35">Schillers</persName> skuespil <rs key="title1022" type="title">
+<hi rend="italic">Kabale und Liebe</hi>
+</rs> (1784) var udkommet i en dansk
+               overs&#x00E6;ttelse af <persName key="pe861">Andreas Christian Alstrup</persName> i
+               1805, betitlet <hi rend="italic">
+<rs key="title1036" type="title">Kabale og
+                     Ki&#x00E6;rlighed</rs>
+</hi>.</p>
+         </note>
+
+         <note xml:id="com13">
+            <!--lemma: Wilhelm Tell-->
+            <p>
+<persName key="pe35">Schillers</persName> skuespil <rs type="title" key="title1024">
+<hi rend="italic">Wilhelm Tell</hi>
+</rs> (1804) var udkommet i en dansk
+               overs&#x00E6;ttelse af <persName key="pe24">Knud Lyne Rahbek</persName> i 1805,
+               betitlet <hi rend="italic">
+<rs key="title1033" type="title">Vilhelm
+               Tell</rs>
+</hi>.</p>
+         </note>
+
+         <note xml:id="com14">
+            <!--lemma: tre Overs&#x00E6;ttelser-->
+            <p>Ud over de tre n&#x00E6;vnte overs&#x00E6;ttelser findes et fjerde, samtidigt
+               fors&#x00F8;g p&#x00E5; at overs&#x00E6;tte <persName key="pe35">Schillers</persName>
+               skuespil <hi rend="italic">
+<rs key="title1025" type="title">Don Carlos</rs>
+</hi>
+               (1787), nemlig <persName key="pe978">Johan Storm Munks</persName>, som <persName key="pe24">Rahbek</persName> overser. <persName key="pe978">Munk</persName>
+               udsendte en <rs key="title1778" type="title">
+<hi rend="italic">Indbydelse til
+                     Subscription paa en Oversettelse af <persName key="pe35">Friedrich
+                        Schillers</persName>
+                     <rs key="title1025" type="title">Don Karlos</rs>
+</hi>
+</rs> i 1804, der
+               indeholdt en overs&#x00E6;ttelse af skuespillets 1. akt, 5. scene, men fik
+               f&#x00F8;rst udgivet hele skuespillet i 1812.</p>
+         </note>
+
+         <note xml:id="com15">
+            <!--lemma: en fra M. C. Brun-->
+            <p>Allerede i 1796 havde <persName key="pe417">Malthe Conrad Bruun</persName> i sit
+               teatertidsskrift <rs key="title1771" type="title">
+<hi rend="italic">Svada</hi>
+</rs>
+               oversat et kort uddrag af <hi rend="italic">
+<rs key="title1025" type="title">Don
+                     Carlos</rs>
+</hi> fra 1787 (2. akt, 8. scene) under titlen <rs type="title" key="title1772">&#x201C;Et Stykke af <persName key="pe35">Schillers</persName>
+                  <rs type="title" key="title1025">Don Karlos</rs>&#x201D;</rs> (<rs key="title1772" type="title">Bruun 1796</rs>, s. 42-48).</p>
+         </note>
+
+         <note xml:id="com16">
+            <!--lemma: en fra Pastor Fr.
+                            Schmidt-->
+            <p>
+<persName key="pe342">Frederik Schmidts</persName> overs&#x00E6;ttelse af 3. akt,
+               8.-10. scene af <persName key="pe35">Schillers</persName> skuespil <hi rend="italic">
+<rs key="title1025" type="title">Don Carlos</rs>
+</hi> (1787) blev optrykt i
+               oktobernummeret af <rs type="title" key="title125">
+<hi rend="italic">Minerva</hi>
+</rs>, 1803. Derudover havde <persName key="pe342">Schmidt</persName>
+               oversat en r&#x00E6;kke af <persName key="pe35">Schillers</persName> digte i
+                  <persName key="pe24">Rahbeks</persName> tidsskrift <hi rend="italic">
+<rs key="title160" type="title">Den Danske Tilskuer</rs>,</hi> 1802 og 1803.</p>
+         </note>
+
+         <note xml:id="com17">
+            <!--lemma: en fra Hr. J. M&#x00F8;ller-->
+            <p>
+<persName key="pe6">Jens M&#x00F8;ller</persName> fik trykt <rs key="title1796" type="title">&#x201C;Nok et Fors&#x00F8;g til en Overs&#x00E6;ttelse af <persName key="pe35">Schillers</persName>
+                  <rs key="title1025" type="title">Don Karlos</rs>&#x201D;</rs> i <persName key="pe24">Rahbeks</persName> tidsskrift <hi rend="italic">
+<rs key="title160" type="title">Den Danske Tilskuer</rs>,</hi> nr. 96 og 97, 1804. <persName key="pe6">M&#x00F8;ller</persName> oversatte skuespillets 2. akt, 2. scene.</p>
+         </note>
+
+         <note xml:id="com230">
+            <!--lemma: Undertegnede har netop i disse Dage
+                            selv havt den Idee, ligeledes dermed at pr&#x00F8;ve sit Held-->
+            <p>Det har ikke v&#x00E6;ret muligt at opspore samtidige fors&#x00F8;g fra <persName key="pe24">Rahbeks</persName> h&#x00E5;nd p&#x00E5; at overs&#x00E6;tte <hi rend="italic">
+<rs type="title" key="title1025">Don Carlos</rs>.</hi> Rahbek fik
+               dog udgivet en egenh&#x00E6;ndig overs&#x00E6;ttelse af <persName key="pe35">Schillers</persName>
+               <hi rend="italic">
+<rs type="title" key="title1025">Don Carlos</rs>
+</hi> i 1830.</p>
+         </note>
+
+         <note xml:id="com18">
+            <!--lemma: enkelte Scener af Wallenstein-->
+            <p>
+<persName key="pe24">Rahbek</persName> havde trykt en egenh&#x00E6;ndig
+               overs&#x00E6;ttelse af 2. akt, 7. scene af <rs key="title1035" type="title">
+<hi rend="italic">Wallensteins</hi>
+</rs> anden del <rs key="title1809" type="title">&#x201C;Die Piccolomini&#x201D;</rs> (da. <rs type="title" key="title1810">&#x201C;Piccolominierne&#x201D;</rs>, 1816) i sit tidsskrift <hi rend="italic">
+<rs key="title160" type="title">Den Danske Tilskuer</rs>
+</hi> i 1805. Hans
+               overs&#x00E6;ttelse af <persName key="pe35">Schillers</persName> trilogi <rs key="title1035" type="title">
+<hi rend="italic">Wallenstein</hi>
+</rs> (1800) udkom
+               f&#x00F8;rst i 1816.</p>
+         </note>
+
+         <note xml:id="com19">
+            <!--lemma: Maria Stuart-->
+            <p>
+<persName key="pe24">Rahbek</persName> havde trykt omfattende uddrag af <rs type="title" key="title1032">
+<hi rend="italic">Maria Stuart</hi>
+</rs> i sit
+               tidsskrift <hi rend="italic">
+<rs key="title160" type="title">Den Danske
+                  Tilskuer</rs>
+</hi> over numrene 73 &amp; 74, 76 &amp; 77 og 98 &amp; 99 i 1805. En
+               fuldst&#x00E6;ndig overs&#x00E6;ttelse fra <persName key="pe24">Rahbeks</persName>
+               h&#x00E5;nd udkom i 1812.</p>
+         </note>
+
+         <note xml:id="com20">
+            <!--lemma: Overs&#x00E6;ttelse af sidstn&#x00E6;vnte Stykke-->
+            <p>Det har ikke v&#x00E6;ret muligt at finde andre samtidige overs&#x00E6;ttelser af
+                  <persName key="pe35">Schillers</persName>
+               <rs key="title1027" type="title">
+<hi rend="italic">Maria Stuart</hi>
+</rs> end
+                  <persName key="pe24">Rahbeks</persName> uddrag fra 1805.</p>
+         </note>
+
+         <note xml:id="com21">
+            <!--lemma: Schillers Digte og
+                            Afhandlinger-->
+            <p>En lang r&#x00E6;kke af <persName key="pe35">Schillers</persName> digte var blevet
+               trykt i <persName key="pe24">Rahbeks</persName>
+               <hi rend="italic">
+<rs key="title160" type="title">Den Danske Tilskuer</rs>:</hi>
+               <persName key="pe342">Frederik Schmidt</persName> havde oversat <rs type="title" key="title1798">&#x201C;Skyggernes Rige&#x201D;</rs> (ty. <rs key="title2002" type="title">&#x201C;Das Reich der Schatten&#x201C;</rs>) i nr. 92 og 93, 1800,
+                  <rs key="title1788" type="title">&#x201C;Jordens Deeling&#x201D;</rs> (ty. <rs type="title" key="title2003">&#x201C;Die Teilung der Erde&#x201D;</rs>) i nr. 82,
+               1802 og <rs type="title" key="title1794">&#x201C;De to Venner&#x201D;</rs> (ty. <rs type="title" key="title1813">&#x201C;Die B&#x00FC;rgschaft&#x201D;</rs>) i nr. 83
+               og 84, 1803.</p> 
+            <p>
+<persName key="pe3">Oehlenschl&#x00E4;ger</persName> havde oversat <rs key="title1787" type="title">&#x201C;Hymne til Gl&#x00E6;den&#x201D;</rs> (ty. <rs key="title1814" type="title">&#x201C;An die Freude&#x201D;</rs>) i nr. 23, 1802,
+               og <persName key="pe6">Jens M&#x00F8;ller</persName>
+               <rs key="title1793" type="title">&#x201C;Qvindernes V&#x00E6;rd&#x201D;</rs> (ty. <rs key="title2004" type="title">&#x201C;W&#x00FC;rde der Frauen&#x201D;</rs>) i nr.
+               50 og 51, 1803.</p> 
+            <p>I <rs type="title" key="title1139">
+<hi rend="italic">Iris og
+                     Hebe</hi>
+</rs> fra 1796 findes endnu en overs&#x00E6;ttelse af <rs key="title1814" type="title">&#x201C;An die Freude&#x201D;</rs> med titlen <rs key="title1797" type="title">&#x201C;Til Gl&#x00E6;den&#x201D;</rs>, denne gang af
+                  <persName key="pe387">J.C. Tode</persName>. <persName key="pe979">J.H.
+                  Spleth</persName> havde oversat et uddrag af begyndelsen af <rs key="title1804" type="title">&#x201C;&#x00DC;ber naive und sentimentalische Dichtung&#x201D;</rs>
+               under titlen <rs type="title" key="title1786">&#x201C;Om det Naive&#x201D;</rs> i
+               antologien <rs key="title1785" type="title">
+<hi rend="italic">Philosophiske
+                     Afhandlinger til Sandheds, Dyds og Smags Udbredelse</hi>
+</rs> i 1798.</p> 
+            <p>I <rs key="title1781" type="title">
+<hi rend="italic">Euphrosyne. Et Tidsskrift for
+                     Fruentimmer</hi>
+</rs> havde <persName key="pe72">Jens Kragh
+                  H&#x00F8;st</persName> i 1796 optrykt flere af <persName key="pe35">Schillers</persName> mindre tekster, herunder <rs type="title" key="title1782">&#x201C;Om &#x00E6;sthetiske S&#x00E6;ders Farlighed&#x201D;</rs> (uddrag af <rs key="title2005" type="title">&#x201C;&#x00DC;ber die notwendigen Grenzen beim
+                  Gebrauch sch&#x00F6;ner Formen&#x201D;</rs>) i bind 3 og <rs key="title1805" type="title">&#x201C;&#x00DC;ber Anmut und W&#x00FC;rde&#x201D;</rs>, som i uddrag
+               blev optrykt i to dele, <rs type="title" key="title1783">&#x201C;Om Ynde&#x201D;</rs>
+               og <rs key="title1784" type="title">&#x201C;Om V&#x00E6;rdighed&#x201D;</rs>, i hhv.
+               bind 7 og 8.</p>
+         </note>
+
+         <note xml:id="com22">
+            <!--lemma: At hans S&#x00F8;rgespil ikke komme
+                            paa vor Skueplads-->
+            <p>F&#x00F8;rst fra 1817 blev <persName key="pe35">Schillers</persName> skuespil
+               opf&#x00F8;rt p&#x00E5; Det Kongelige Teater i <persName key="pe24">Rahbeks</persName> overs&#x00E6;ttelser: <rs key="title1036" type="title">
+<hi rend="italic">Kabale og Ki&#x00E6;rlighed</hi>
+</rs> i april og maj 1817 og <rs key="title1032" type="title">
+<hi rend="italic">Maria Stuart</hi>
+</rs> i september
+               1817. Allerede omkring &#x00E5;r 1800 havde blandt andre <persName key="pe980">Michael Rosing</persName> &#x00F8;nsket at opf&#x00F8;re <persName key="pe35">Schillers</persName>
+               <rs key="title1034" type="title">
+<hi rend="italic">R&#x00F8;verne</hi>
+</rs> og <rs type="title" key="title1025">
+<hi rend="italic">Don Carlos</hi>
+</rs>, men forslaget
+               blev afvist af <persName key="pe356">J&#x00F8;rgen Kierulf</persName> med den
+               begrundelse, at markisen af Posa, <persName key="pe821">Don Carlos'</persName>
+               ven, var &#x201C;en Jacobiner, der ved sin glatte Philosophie var farligere end
+                  <persName key="pe963">Robespierre</persName> eller <persName key="pe983">Marat</persName>&#x201D; (citeret efter <rs key="title1360" type="title">Overskou
+                  1860</rs>, s. 774, der ikke angiver kilden).</p>
+         </note>
+
+         <note xml:id="com25">
+            <!--lemma: Sluttelse-->
+            <p>her: engagement, identifikation, se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn17">&#x201C;&#x2018;Sluttelse&#x2019; og
+                  t&#x00E5;restr&#x00F8;m&#x201D;</ref>
+</p>
+         </note>
+
+         <note xml:id="com26">
+            <!--lemma: Posas h&#x00F8;ie Ideer-->
+            <p>Marquisen af Posa er en af de centrale personer i <persName key="pe35">Schillers</persName> skuespil <rs type="title" key="title1025">
+<hi rend="italic">Don Carlos</hi>
+</rs> (1787), der foreg&#x00E5;r i Spanien i anden halvdel af
+               1500-tallet. Spanieren Posa, der sympatiserer med den nederlandske
+               uafh&#x00E6;ngighedsbev&#x00E6;gelse, er b&#x00E6;rer af skuespillets republikanske
+               frihedsidealer.</p>
+         </note>
+
+         <note xml:id="com27">
+            <!--lemma: forloren-->
+            <p>tabt.</p>
+         </note>
+
+         <note xml:id="com28">
+            <!--lemma: Rinaldo-->
+            <p>hovedperson i <persName key="pe964">Christian August Vulpius'</persName>
+               popul&#x00E6;re r&#x00F8;verroman <rs key="title1811" type="title">
+<hi rend="italic">Rinaldo Rinaldini, der R&#x00E4;uber Hauptmann</hi>
+</rs> (1799, dansk udgave
+                  <hi rend="italic">
+<rs key="title1801" type="title">R&#x00F8;verkaptainen Rinaldo
+                     Rinaldini</rs>,</hi> 1800-1802).</p>
+         </note>
+
+         <note xml:id="com29">
+            <!--lemma: Karl Moor-->
+            <p>hovedperson i <persName key="pe35">Schillers</persName> skuespil <rs key="title1021" type="title">
+<hi rend="italic">Die R&#x00E4;uber</hi>
+</rs> (1781, da. <hi rend="italic">
+<rs key="title1034" type="title">R&#x00F8;verne</rs>,</hi> 1801).
+               Ligesom Rinaldo er Karl Moor r&#x00F8;verh&#x00F8;vding.</p>
+         </note>
+
+         <note xml:id="com30">
+            <!--lemma: Poesiens Ki&#x00E6;mpe-->
+            <p>hentydning til Karl Moor, hovedpersonen i <persName key="pe35">Schillers</persName>
+               skuespil <rs type="title" key="title1021">
+<hi rend="italic">Die
+                  R&#x00E4;uber</hi>
+</rs> (1781, da. <hi rend="italic">
+<rs key="title1034" type="title">R&#x00F8;verne</rs>,</hi> 1801).</p>
+         </note>
+
+         <note xml:id="com31">
+            <!--lemma: belee-->
+            <p>le ad, g&#x00F8;re nar ad.</p>
+         </note>
+
+         <note xml:id="com32">
+            <!--lemma: vinke-->
+            <p>vente (p&#x00E5; tillokkende vis).</p>
+         </note>
+
+         <note xml:id="com35">
+            <!--lemma: Snillets-->
+            <p>her: geniets.</p>
+         </note>
+
+
+         <note xml:id="com38">
+            <!--lemma: metrisk Overs&#x00E6;ttelse af Bruden fra Messina-->
+            <p>Manuskriptet til overs&#x00E6;ttelsen findes ikke i Grundtvig-arkivet.</p>
+         </note>
+
+         <note xml:id="com39">
+            <!--lemma: Overs&#x00E6;ttelse af Fortalen, om Korets Brug i Tragedien-->
+            <p>fortalen til <persName key="pe35">Schillers</persName>
+               <rs key="title1802" type="title">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs>,
+               &#x201C;&#x00DC;ber den Gebrauch des Chors in der Trag&#x00F6;die&#x201D; fra 1803
+                  (<rs type="title" key="title1803">1974b</rs>, s. 815-823, da. <rs key="title1774" type="title">&#x201C;Om Chorets Brug i Tragoedien&#x201D;</rs>, u.&#x00E5;.:
+               1806). Manuskriptet til denne overs&#x00E6;ttelse findes ikke i
+               Grundtvig-arkivet.</p>
+         </note>
+
+
+         <note xml:id="com41">
+            <!--lemma: hin Fortale andensteds oversat-->
+            <p>Fortalen til <persName key="pe35">Schillers</persName>
+               <rs key="title1802" type="title">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs>
+               blev oversat under titlen <rs type="title" key="title1774">&#x201C;Om Chorets Brug i
+                  Tragoedien&#x201D;</rs> i <rs key="title1773" type="title">
+<hi rend="italic">Nytaarsgave for Skuespilyndere 1807</hi>
+</rs>, som var udgivet af <persName key="pe977">Peter Foersom</persName>. Overs&#x00E6;tteren var <persName key="pe981">Nicolaj Esmark &#x00D8;llgaard</persName>, der brugte sit mellemnavn
+               som signatur.</p>
+         </note>
+
+         <note xml:id="com44">
+            <!--lemma: et sandt Produkt af den gamle Konst-->
+            <p>
+<persName key="pe35">Schiller</persName> beskrev selv <rs type="title" key="title1802">
+<hi rend="italic">Die Braut von Messina</hi>
+</rs> (da. <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina</rs>,</hi> 1896) som et
+               v&#x00E6;rk &#x201C;nach der strengsten griechischen Form&#x201D; (<rs key="title1799" type="title">Luserke-Jaqui 2005</rs>, s. 195, da. efter den
+               strengeste gr&#x00E6;ske form). Bl.a. gav <persName key="pe35">Schiller</persName>
+               koret en central rolle i tragedien. </p>
+         </note>
+
+         <note xml:id="com45">
+            <!--lemma: Hevnfurie-->
+            <p>
+<rs key="myth441" type="myth">erinye</rs>.</p>
+         </note>
+
+         <note xml:id="com46">
+            <!--lemma: den h&#x00F8;ieste Nydelse er Gemyttets
+                    Frihed under alle Kr&#x00E6;fternes levende Spil-->
+            <p>oversat citat fra <persName key="pe35">Schillers</persName> fortale: &#x201C;Der
+               h&#x00F6;chste Genu&#x00DF; aber ist die Freiheit des Gem&#x00FC;ths in dem
+               lebendigen Spiel aller seiner Kr&#x00E4;fte&#x201D; (<rs type="title" key="title1803">Schiller 1974b</rs>, s. 816). <persName key="pe35">Schillers</persName>
+               beskrivelse af kunstv&#x00E6;rkets bevidsthedsm&#x00E6;ssige status st&#x00E5;r i
+               g&#x00E6;ld til <persName key="pe508">Kants</persName>
+               <rs key="title1248" type="title">
+<hi rend="italic">Kritik der Urteilskraft</hi>
+</rs>
+               (da. <hi rend="italic">
+<rs type="title" key="title979">Kritik af
+                     d&#x00F8;mmekraften</rs>,</hi> 2007), hvor <persName key="pe508">Kant</persName> netop beskriver nydelsen ved kunstv&#x00E6;rket som oplevelsen af
+               erkendelseskr&#x00E6;fternes frie spil, dvs. forstanden og indbildningskraften (<rs key="title1248" type="title">Kant 1995</rs>, s. 132). Se indledningens afsnit om
+                  <ref type="docOut" target="1807_67_intro.xml#docIn11">&#x201C;Grundtvigs nedslag i
+                  Schillers fortale&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com208">
+            <!--lemma: Gemyttets-->
+            <p>Grundtvig overtager ordet &#x2018;gemyt&#x2019; (&#x2018;Gem&#x00FC;th&#x2019;) fra
+                  <persName key="pe35">Schiller</persName>, der anvender ordet i samme betydning,
+               som <persName key="pe508">Kant</persName> bruger i <rs type="title" key="title1248">
+<hi rend="italic">Kritik der Urteilskraft</hi>
+</rs> (da. <hi rend="italic">
+<rs key="title979" type="title">Kritik af d&#x00F8;mmekraften</rs>,</hi> 2007),
+               nemlig betydningen &#x2018;bevidsthed&#x2019;.</p>
+         </note>
+
+         <note xml:id="com47">
+            <!--lemma: Kraft-->
+            <p>Grundtvig overtager ordet &#x2018;Kraft&#x2019; fra <persName key="pe35">Schiller</persName>, der anvender ordet om erkendelseskr&#x00E6;fterne i
+               kantiansk forstand, dvs. forstanden og indbildningskraften, se hertil indledningens
+               afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn11">&#x201C;Grundtvigs
+                  nedslag i Schillers fortale&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com49">
+            <!--lemma: Karl Mor-->
+            <p>hovedperson i <persName key="pe35">Schillers</persName> skuespil, <rs type="title" key="title1021">
+<hi rend="italic">Die R&#x00E4;uber</hi>
+</rs> (1781, da. <rs key="title1034" type="title">
+<hi rend="italic">R&#x00F8;verne</hi>
+</rs> 1801).</p>
+         </note>
+
+         <note xml:id="com50">
+            <!--lemma: Pigen fra OrleansOrleaus-->
+            <p>
+<persName key="pe965">Jeanne d'Arc,</persName> der er hovedperson i <persName key="pe35">Schillers</persName> skuespil <rs type="title" key="title1028">
+<hi rend="italic">Die Jungfrau von Orleans</hi>
+</rs> (1801, da. <hi rend="italic">
+<rs key="title1775" type="title">Johanna d'Arc Orleans
+                  M&#x00F8;</rs>,</hi> 1813).</p>
+         </note>
+
+         <note xml:id="com52">
+            <!--lemma: det
+                    Herligste knuses af Ski&#x00E6;bnens Haand-->
+            <p>parafrase af <persName key="pe18">Henrich Steffens'</persName> beskrivelse af
+               de antikke gr&#x00E6;keres forhold til sk&#x00E6;bnen: &#x201C;Skjebnen var hos de
+               Gamle alle Gudernes Gud, den eneste, sande Gud &#x2013; og aabenbarede sig for dem, i
+               det den forstyrrede [: &#x00F8;delagde] det Herligste&#x201D; (<rs type="title" key="title118">Steffens 1996</rs>, s. 134). </p>
+         </note>
+
+         <note xml:id="com53">
+            <!--lemma: slutte os til-->
+            <p>engagere os i; identificere os med, se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn17">&#x201C;&#x2018;Sluttelse&#x2019; og
+                  t&#x00E5;restr&#x00F8;m&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com54">
+            <!--lemma: slutte-->
+            <p>tager.</p>
+         </note>
+
+         <note xml:id="com55">
+            <!--lemma: vor
+                    gyngende Barm-->
+            <p>Grundtvig forts&#x00E6;tter konkluderende i udtogsbogens kladde: &#x201C;De ere Guder
+               for Os og kun med Mennesker kunne vi f&#x00F6;le&#x201D; (<rs key="title3" type="title">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1
+               1979, s. 386, intern varians udeladt).</p>
+         </note>
+         
+         <note xml:id="com56">
+            <!--lemma: Hos
+                    dem finde vi samme dunkle Ahnelse, samme Misforhold mellem &#x00C3;&#x02DC;nske og V&#x00E6;ren, samme
+                    uvilkaarlige Str&#x00E6;ben fremad, som boer i vort eget Bryst-->
+            <p>Grundtvig karakteriserer den moderne tragedies hovedpersoner ved deres spaltning
+               mellem det ideelle og det reelle, mellem id&#x00E9; og virkelighed. Deres position er
+               med andre ord romantisk, idet de l&#x00E6;nges efter noget h&#x00F8;jere. Grundtvig
+               har antagelig stiftet bekendtskab med denne mods&#x00E6;tning i <persName key="pe18">Henrich Steffens'</persName> filosofiske indledningsforel&#x00E6;sninger:
+               &#x201C;Den romantiske Poesie, skj&#x00F6;nt den bev&#x00E6;gede sig i levende
+               Gestalt, og s&#x00F6;gte at aabenbare Ideerne ved endelig Skj&#x00F6;nhed, gav dem
+               dog alle et subjectivt Pr&#x00E6;g, dette subjective, som gaaer ud over Gjenstanden,
+               selv tilstaaer at den ikke tilfredsstilles, characteriserer den moderne Poesie, giver
+               den mindre Grad af Fuldendelse&#x201D; (<rs type="title" key="title118">Steffens
+                  1996</rs>, s. 137).</p>
+         </note>
+
+         <note xml:id="com59">
+            <!--lemma: Mangel
+                    paa den h&#x00F8;ieste Konst-->
+            <p>Ideen om den moderne kunsts ufuldendthed kan Grundtvig muligvis kende fra <persName key="pe18">Steffens'</persName> filosofiske
+               indledningsforel&#x00E6;sninger, hvor <persName key="pe18">Steffens</persName> efter
+               forbillede i <persName key="pe35">Schillers</persName>
+               <rs key="title1804" type="title">&#x201C;&#x00DC;ber naive und sentimentalische
+                  Dichtung&#x201D;</rs> (1795-1796, da. <rs type="title" key="title1835">&#x201C;Om
+                  naiv og sentimental digtning&#x201D;</rs> 1952) definerer den klassiske kunsts
+               v&#x00E6;rker som &#x201C;fuldendte, organiske, med et Livsprincip i sig selv, der
+               sikrer dem Ud&#x00F6;delighed&#x201D; &#x2013; en perfekt sammensmeltning af det
+               subjektive og objektive. Derimod er den moderne &#x2013; romantiske &#x2013; poesi
+               karakteriseret ved en overv&#x00E6;gt af kunstens subjektive aspekt som &#x201C;giver
+               den mindre Grad af Fuldendelse&#x201D; (<rs key="title118" type="title">Steffens
+                  1996</rs>, s. 136-137).</p>
+         </note>
+
+         <note xml:id="com60">
+            <!--lemma: Poesie-->
+            <p>Grundtvig afviger her fra <persName key="pe35">Schiller</persName>, der anvender
+               kunst og poesi som synonyme begreber, ikke som mods&#x00E6;tninger. En skarp skelnen
+               mellem kunst og poesi havde Grundtvig derimod m&#x00F8;dt i <persName key="pe18">Henrich Steffens'</persName> tabte <persName key="pe29">Goethe</persName>-forel&#x00E6;sninger, hvor kunsten blev underordnet poesien. Se
+               indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn14">&#x201C;Poesi kontra kunst&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com62">
+            <!--lemma: Konsten
+                    eller Poesien b&#x00F8;r yde os den h&#x00F8;ieste Nydelse-->
+            <p>Grundtvig afviger her fra <persName key="pe35">Schillers</persName> anvendelse af
+               begreberne og l&#x00E6;ner sig i stedet op ad <persName key="pe18">Steffens</persName>, der ser poesien og kunsten som mods&#x00E6;tninger (se
+               indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn14">&#x201C;Poesi kontra kunst&#x201D;</ref>). I en kladde til afhandlingen i
+               udtogsb&#x00F8;gerne fra 1806 stillede Grundtvig ikke problematikken op som et
+               &#x00E5;bent sp&#x00F8;rgsm&#x00E5;l, men erkl&#x00E6;rede &#x00E5;bent sin
+               afstandtagen fra kunsten: &#x201C;Rent ud tilstaar Jeg da, den h&#x00F8;jeste Konst
+               yder ikke Mig den h&#x00F8;jeste Nydelse. <persName key="pe35">Schiller</persName>
+               synes selv at have f&#x00F8;lt hint kunde omtvivles, i det Han siden
+               foruds&#x00E6;tter som afgjort, at den der ser et Drama meget vel ved at det er et
+               Spil&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 386).</p>
+         </note>
+
+         <note xml:id="com63">
+            <!--lemma: dobbelt tryllet af
+                    Virkeligheden, i hvilken man opvaagner af den korte Dr&#x00F8;m-->
+            <p>parafrase af <persName key="pe35">Schillers</persName> fortale: &#x201C;Aber er
+               wei&#x00DF; selbst recht gut, da&#x00DF; er nur ein leeres Spiel treibt, da&#x00DF;
+               er im eigentlichen Sinn sich nur an Tr&#x00E4;umen weidet, und wenn er von dem
+               Schauplatz wieder in die wirkliche Welt zur&#x00FC;ck kehrt, so umgiebt ihn diese
+               wieder mit ihrer ganzen dr&#x00FC;ckenden Enge, er ist ihr Raub wie vorher, denn sie
+               selbst ist geblieben was sir war, und an ihm ist nichts ver&#x00E4;ndert
+               worden&#x201D; (<rs type="title" key="title1803">Schiller 1974b</rs>, s. 816, da.
+               &#x201C;men han ved selv ganske vel, at han kun bedriver et tomt spil, at han i
+               egentlig forstand kun fryder sig over dr&#x00F8;mme, og n&#x00E5;r han fra
+               skuepladsen vender tilbage til den virkelige verden, s&#x00E5; omgiver den ham igen
+               med sin fulde trykkende sn&#x00E6;verhed, han er som f&#x00F8;r igen dens bytte, for
+               den er selv forblevet, hvad den var, og der er intet forandret ved ham&#x201D;,
+               overs. GV). Dette udsagn g&#x00E6;lder if&#x00F8;lge <persName key="pe35">Schiller</persName> dog kun den kunst, som ikke har et dannende og dermed
+               fris&#x00E6;ttende aspekt, se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn15">&#x201C;Kritik af den &#x00E6;stetiske
+                  frihed&#x201D;</ref>.</p>
+         </note>
+
+
+         <note xml:id="com64">
+            <!--lemma: den sande
+                    Konst i sin h&#x00F8;ieste Idealisme v&#x00E6;re reel-->
+            <p>parafrase af <persName key="pe35">Schillers</persName> fortale: &#x201C;Und eben
+               darum weil die wahre Kunst etwas reelles und objektives will, so kann sie sich nicht
+               blo&#x00DF; mit dem Schein der Wahrheit begn&#x00FC;gen; auf der Wahrheit selbst, auf
+               dem festen und tiefen Grunde der Natur errichtet sie ihr ideales
+               Geb&#x00E4;ude&#x201D; (<rs key="title1803" type="title">Schiller 1974b</rs>, s. 817,
+               da. &#x201C;Og netop fordi den sande kunst vil noget reelt og objektivt, s&#x00E5;
+               kan den den ikke blot n&#x00F8;jes med skinnet af sandheden; p&#x00E5; sandheden
+               selv, p&#x00E5; naturens faste og dybe grund rejser den sin ideale bygning&#x201D;,
+               overs. GV). Se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn11">&#x201C;Grundtvigs nedslag i Schillers
+                  fortale&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com65">
+            <!--lemma: at bev&#x00E6;ge sig frit
+                    under den tunge V&#x00E6;gt, som om han selv havde lagt den paa sine Skuldre-->
+            <p>Billedet er antagelig en forenklet parafrase af f&#x00F8;lgende passage i <persName key="pe35">Schillers</persName> fortale: &#x201C;da&#x00DF; sie [die wahre
+               Kunst] eine Kraft in ihm erweckt, &#x00FC;bt und ausbildet, die sinnliche
+               Welt, die sonst nur als ein roher Stoff auf uns lastet, als eine blinde Macht auf uns
+               dr&#x00FC;ckt, in eine objektive Ferne zu r&#x00FC;cken, in ein freies Werk unsers
+               Geistes zu verwandeln, und das Materielle durch Ideen zu beherrschen&#x201D; (<rs key="title1803" type="title">Schiller 1974b</rs>, s. 816-817, da. &#x201C;at
+               [den sande kunst] v&#x00E6;kker, &#x00F8;ver og danner en kraft i ham,
+               der kan skabe en objektiv afstand til den sanselige verden, som ellers blot tynger os
+               som en r&#x00E5; masse og som trykker os som en blind magt; en kraft, der kan
+               forvandle den til vor &#x00E5;nds frie v&#x00E6;rk og beherske det materielle gennem
+               ideerne&#x201D;, overs. GV). Se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn15">&#x201C;Kritik af den &#x00E6;stetiske
+                  frihed&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com66">
+            <!--lemma: fattet-->
+            <p>f&#x00E5;et.</p>
+         </note>
+
+         <note xml:id="com67">
+            <!--lemma: Efter at have bev&#x00E6;get sig i h&#x00F8;iere
+                    Sv&#x00E6;ven, og, ledte af en uvilkaarlig Tvang, ladet Poesien tr&#x00E6;de opponerende frem
+                    imod Virkeligheden, f&#x00F8;le de sig ulykkelige i det, deres Liv i den h&#x00F8;iere Idee kun er kort og
+                    flygtigt; men den n&#x00F8;dvendige Tilbagekomst til det Virkelige, fuld af dybeste
+                    Smerte-->
+            <p>Det fremstillede syn p&#x00E5; forholdet mellem poesi og virkelighed er snarere
+               inspireret af <persName key="pe18">Henrich Steffens</persName> end af <persName key="pe35">Schillers</persName> fortale. Samme forestilling dukker op i Grundtvigs
+               refleksioner over <persName key="pe18">Steffens'</persName>
+               <persName key="pe29">Goethe</persName>-forel&#x00E6;sninger: &#x201C;F&#x00F8;rst nu
+               kan Ieg forklare Mig hine <persName key="pe18">Steffenses</persName> Yttringer, at
+               Poesien n&#x00F8;dvendig maae yttre sig som opponerende mod Eksistensen&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1
+               1979, s. 221). </p>
+         </note>
+
+         <note xml:id="com68">
+            <!--lemma: Forsoning med Tilv&#x00E6;relsen-->
+            <p>I sine <persName key="pe29">Goethe</persName>-forel&#x00E6;sninger kritiserede
+                  <persName key="pe18">Henrich Steffens</persName> digteren for at have
+               &#x201C;forsonet sig med Eksistensen&#x201D;, som Grundtvig formulerer det i sin
+               udtogsbog (<rs key="title3" type="title">
+<hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi>
+</rs> 1 1979, s. 226). Grundtvig generaliserer <persName key="pe18">Henrich Steffens'</persName>
+               <persName key="pe29">Goethe</persName>-kritik til ogs&#x00E5; at g&#x00E6;lde
+                  <persName key="pe35">Schiller</persName>.</p>
+            <note type="readMore">
+<p>Om Grundtvigs behandling af <persName key="pe18">Steffens'</persName> p&#x00E5;stand, se <rs key="title1807" type="title">Lundgreen-Nielsen 1996</rs>, s. 239 f.</p>
+</note>
+         </note>
+
+         <note xml:id="com70">
+            <!--lemma: Friheden udvikle sig af N&#x00F8;dvendigheden selv-->
+            <p>Forholdet mellem frihed og n&#x00F8;dvendighed er et centralt tema i den filosofiske
+               idealisme, s&#x00E5;vel hos <persName key="pe35">Schiller</persName> som hos
+                  <persName key="pe508">Kant</persName>, <persName key="pe500">Fichte</persName> og
+                  <persName key="pe54">Schelling</persName>. Denne diskussion klinger med i
+                  <persName key="pe35">Schillers</persName> beskrivelse af, hvordan m&#x00F8;det med
+               kunstv&#x00E6;rket v&#x00E6;kker menneskets frihed, der l&#x00E6;rer ham at overvinde
+               den sanselige verdens kontingens. Se indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn15">&#x201C;Kritik af den &#x00E6;stetiske
+                  frihed&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com71">
+            <!--lemma: sit hele poetiske Livs n&#x00F8;dvendige
+                    Resultat-->
+            <p>I udtogsbogens kladde afskriver Grundtvig herefter romantikernes projekt: &#x201C;Men
+               uden Tvivl skuffe de sig og forveksle den h&#x00F6;jeste Nydelse med den harmonisk
+               rolige&#x201D; (<rs type="title" key="title3">
+<hi rend="italic">Dag- og
+                     Udtogsb&#x00F8;ger</hi>
+</rs> 1979 1, s. 387).</p>
+         </note>
+
+         <note xml:id="com72">
+            <!--lemma: Tanken, at Mennesket kan finde sig fri, ved frivillig at
+                    adlyde Naturens Love, og f&#x00F8;le sig h&#x00E6;vet over den, som Hersker, fordi den adlyder
+                    sin egen Lov, er en aabenbar Illusion-->
+            <p>Grundtvig polemiserer mod <persName key="pe35">Schillers</persName> forst&#x00E5;else
+               af kunsten som en fris&#x00E6;ttelse af mennesket, se kommentaren til <ref type="docIn" target="#com70">&#x201C;Friheden udvikle sig af N&#x00F8;dvendigheden
+                  selv&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com73">
+            <!--lemma: n&#x00F8;dvendig-->
+            <p>dvs. n&#x00F8;dvendigvis.</p>
+         </note>
+
+         <note xml:id="com76">
+            <!--lemma: vist nok-->
+            <p>ganske vist.</p>
+         </note>
+
+         <note xml:id="com74">
+            <!--lemma: en overjordisk Tilv&#x00E6;relse-->
+            <p>Grundtvig forts&#x00E6;tter konkluderende i udtogsbogens kladde: &#x201C;Han staar
+               paa det Absolutes Gr&#x00E6;ndse og intet Relativt kan naa ham&#x201D; (<hi rend="italic">
+<rs type="title" key="title3">Dag- og Udtogsb&#x00F8;ger</rs>
+</hi> 1
+               1979, s. 387).</p>
+         </note>
+
+         <note xml:id="com75">
+            <!--lemma: Gemyttet b&#x00F8;r v&#x00E6;re frit under den h&#x00F8;ieste
+                    Nydelse-->
+            <p>henvisning til <persName key="pe35">Schillers</persName> fortale: &#x201C;Der
+               h&#x00F6;chste Genu&#x00DF; aber ist die Freiheit des Gem&#x00FC;ths in dem
+               lebendigen Spiel aller seiner Kr&#x00E4;fte&#x201D; (<rs key="title1803" type="title">Schiller 1974b</rs>, s. 816, da. &#x201C;Den h&#x00F8;jeste nydelse er dog
+               bevidsthedens frihed i alle sine kr&#x00E6;fters levende spil&#x201D;, overs. GV). Se
+               indledningens afsnit om <ref type="docOut" target="1807_67_intro.xml#docIn11">&#x201C;Grundtvigs nedslag i Schillers fortale&#x201D;</ref>.</p>
+         </note>
+
+         <note xml:id="com207">
+            <!--lemma: -->
+            <p>Grundtvig forts&#x00E6;tter konkluderende i udtogsbogens kladde: &#x201C;dette er
+               hans h&#x00F8;jeste Maal paa Jorden, og hvad der fremhjelper denne H&#x00E6;ven og
+               konstituerer den, er den h&#x00F8;jeste Nydelse &#x2013; Dette Liv er det som udtaler
+               sig gennem hele Historien, dette er det som spirer i vore hellige B&#x00F6;ger og
+               tr&#x00E6;der konsentreret frem i <persName key="pe343">Pauli</persName> dybe
+               Erkl&#x00E6;ring. Den l&#x00E6;ngselsfulde Skabning, undergiven
+               Forf&#x00E6;ngeligheds Tjeneste mod sin Villie, sukker efter Guds B&#x00F6;rns
+               herlige Frihed &#x2013; Dette sted, der, saa tydeligt det end er, for Enhver der fik
+               Sands for det H&#x00F8;je og Dybe, har maattet lade sig som den hele hellige Skrift
+               misbruge af vanhellig Haand til at bekr&#x00E6;fte det mest
+               betydningsl&#x00F6;se&#x201D; (<hi rend="italic">
+<rs type="title" key="title3">Dag-
+                     og Udtogsb&#x00F8;ger</rs>
+</hi> 1 1979, s. 388, intern varians udeladt).</p>
+         </note>
+
+         <note xml:id="com212">
+            <!--lemma: hos dem var
+                    Livet Poesie ... etc-->
+            <p>Grundtvig kan v&#x00E6;re inspireret af <persName key="pe18">Henrich
+                  Steffens'</persName> filosofiske indledningsforel&#x00E6;sninger i sin
+               beskrivelse af det gamle Gr&#x00E6;kenland som en poetisk guldalder, der modsat
+               romantikken ikke kendte til splittelsen mellem ideal og virkelighed: &#x201C;Det er
+               vist, at den tidligste Menneskesl&#x00E6;gts hele Liv var Religion, at alle deres
+               Forestillinger og Handlinger havde et umiddelbart Hensyn til det Evige, kort: at de,
+               som ogsaa en af de herligste og dybsindigste Gr&#x00E6;ker sige om dem, vare Guderne,
+               blant alle Mennesker n&#x00E6;rmest&#x201D; (<rs type="title" key="title118">Steffens
+                  1996</rs>, s. 123).</p>
+         </note>
+
+         <note xml:id="com77">
+            <!--lemma: Fatum-->
+            <p>lat., sk&#x00E6;bne.</p>
+         </note>
+
+         <note xml:id="com78">
+            <!--lemma: Fyrsternes Strid-->
+            <p>Efter faderens d&#x00F8;d er fjendskabet mellem de to br&#x00F8;dre, Don Manuel og
+               Don C&#x00E6;sar, brudt ud i lys lue. Messinas borgere er derfor splittet i to lejre,
+               som p&#x00E5; scenen repr&#x00E6;senteres af hver sit halvkor.</p>
+         </note>
+
+         <note xml:id="com79">
+            <!--lemma: Moderen-->
+            <p>Isabella.</p>
+         </note>
+
+         <note xml:id="com80">
+            <!--lemma: begge sine S&#x00F8;nner-->
+            <p>den &#x00E6;ldre Don Manuel og den yngre Don Cesar.</p>
+         </note>
+
+         <note xml:id="com81">
+            <!--lemma: brammende-->
+            <p>prangende.</p>
+         </note>
+
+         <note xml:id="com82">
+            <!--lemma: Slanger i Haaret!-->
+            <p>hentydning til <rs type="myth" key="myth442">Medusa</rs>.</p>
+         </note>
+
+         <note xml:id="com201">
+            <!--lemma: D&#x00F8;rtr&#x00E6;-->
+            <p>d&#x00F8;rt&#x00E6;rskel.</p>
+         </note>
+
+         <note xml:id="com83">
+            <!--lemma: Eden-->
+            <p>
+<rs key="myth441" type="myth">Erinyerne</rs> beskyttede afgivne l&#x00F8;fter og eder
+               i den gr&#x00E6;ske mytologi.</p>
+         </note>
+
+         <note xml:id="com85">
+            <!--lemma: hvalvt-->
+            <p>hv&#x00E6;lvet, dvs. h&#x00E6;vet.</p>
+         </note>
+
+         <note xml:id="com87">
+            <!--lemma: Skal jeg unde ham Ordets H&#x00E6;der?
+                    Neppe jeg stiller det sydende Blod.-->
+            <p>R&#x00E6;kkef&#x00F8;lgen er omvendt hos <rs key="title1802" type="title">Schiller</rs>: &#x201C;Kaum gebiet ich dem kochenden Blute. / G&#x00F6;nn
+               ich ihm die Ehre des Worts?&#x201D;, v. 149-150 (da. &#x201C;Knap kan jeg beherske
+               det kogende blod / Skal jeg unde ham ordets &#x00E6;re?&#x201D;).</p>
+         </note>
+
+         <note xml:id="com88">
+            <!--lemma:Gudefred-->
+            <p>dvs. gudsfred (lat. treuga dei). I 1000-tallet p&#x00E5;lagde romerkirken de
+               krigsf&#x00F8;rende magter at holde v&#x00E5;benhvile p&#x00E5; helligdage, i fasten
+               eller p&#x00E5; bestemte ugedage (fx fra onsdag aften til mandag morgen).</p>
+         </note>
+
+         <note xml:id="com89">
+            <!--lemma: harml&#x00F8;se-->
+            <p>uden vrede.</p>
+         </note>
+
+         <note xml:id="com86">
+            <!--lemma: og-->
+            <p>ogs&#x00E5;.</p>
+         </note>
+
+         <note xml:id="com90">
+            <!--lemma: H&#x00E6;ve sig kampens den blodige Jette-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Da mag der blutige Kampf sich
+               erneuen&#x201D;, v. 170 (da. &#x201C;da kan den blodige kamp forny sig&#x201D;,
+               overs. GV). Personificeringen af krigen som en <rs type="myth" key="myth111">j&#x00E6;tte</rs> er Grundtvigs tilf&#x00F8;jelse.</p>
+         </note>
+
+         <note xml:id="com92">
+            <!--lemma: Fiendskab og Had ei opfylder vort Bryst-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;Dich nicht ha&#x00DF; ich!
+               Nicht du bist mein Feind!&#x201D;, v. 175 (da. &#x201C;Dig hader jeg ikke! Du er ikke
+               min fjende!&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com93">
+            <!--lemma: Veiede-->
+            <p>overvejede, t&#x00E6;nkte.</p>
+         </note>
+
+         <note xml:id="com218">
+            <!--lemma: Vanken-->
+            <p>vandren.</p>
+         </note>
+
+         <note xml:id="com94">
+            <!--lemma: snevre, de yndige-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;hochwallenden&#x201D;, v. 192
+               (da. &#x201C;h&#x00F8;jtb&#x00F8;lgende&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com95">
+            <!--lemma: bedaared-->
+            <p>vildledte, bedrog.</p>
+         </note>
+
+         <note xml:id="com96">
+            <!--lemma: Er den Sol da ei vores, hvis Lue
+                    Skaber og modner Rankens Drue?-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;Diese Ulmen, mit Reben
+               umsponnen / Sind sie nicht Kinder unsrer Sonnen?&#x201D;, v. 198 f. (da.
+               &#x201C;Disse elme, omvundet med vinranker, / er de ikke b&#x00F8;rn af vor
+               sol?&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com98">
+            <!--lemma: Harml&#x00F8;s-->
+            <p>uden vrede.</p>
+         </note>
+
+         <note xml:id="com99">
+            <!--lemma: Thi paa Skibet den hid er draget
+                    Hist fra Solens r&#x00F8;dlige Nedgang,-->
+            <p>Det historiske forbillede for den fremmede herskersl&#x00E6;gt i <persName key="pe35">Schillers</persName> skuespil er normannerne, der erobrede Sicilien fra
+               1060-1090.</p>
+         </note>
+
+         <note xml:id="com100">
+            <!--lemma: den himmelomvankende Solgud-->
+            <p>
+<rs type="myth" key="myth445">Helios</rs>.</p>
+         </note>
+
+         <note xml:id="com205">
+            <!--lemma: Solgud-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Sonne&#x201D;, v. 213 (da.
+               &#x201C;sol&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com101">
+            <!--lemma: Vi dets Blomster med Fryd kunde plukke-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;Und wir k&#x00F6;nnten es
+               fr&#x00F6;hlich genie&#x00DF;en&#x201D;, v. 215 (da. &#x201C;Og vi kunne det glade
+               nyde&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com103">
+            <!--lemma: Korsarer-->
+            <p>s&#x00F8;r&#x00F8;vere, fribyttere.</p>
+         </note>
+
+         <note xml:id="com102">
+            <!--lemma: vinker-->
+            <p>drager, tillokker.</p>
+         </note>
+
+         <note xml:id="com104">
+            <!--lemma: Ei hvor om Agerens gyldne Held Pans den fredsomme Fl&#x00F8;ite toner-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Nicht wo die goldene <rs key="myth468.a" type="myth">Ceres</rs>
+               lacht / Und der friedliche <rs key="myth443" type="myth">Pan</rs>, der
+               Flurenbeh&#x00FC;ter&#x201D;, v. 224 f. (da. &#x201C;Ikke hvor den gyldne <rs key="myth468.a" type="myth">Ceres</rs> ler / og den fredelige <rs key="myth443" type="myth">Pan</rs>, markernes beskytter&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com200">
+            <!--lemma: Held-->
+            <p>yndighed.</p>
+         </note>
+
+         <note xml:id="com105">
+            <!--lemma: F&#x00F8;r hvert &#x00C3;&#x02DC;nske, der luer i Barmen,
+                    Frygtelig Styrke nedlagdes i Armen,-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;Mit der furchtbaren
+               St&#x00E4;rke ger&#x00FC;stet / f&#x00FC;hren sie aus, was dem Herzen
+               gel&#x00FC;stet&#x201D;, v. 235 f. (da. &#x201C;Udrustet med frygtelig styrke
+               / udf&#x00F8;rer de, hvad hjertet lyster&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com106">
+            <!--lemma: Flokke af Hagelens Kugler blande
+                    Sig med Skyens nedstyrtende Vande,
+                    Og i svulmende B&#x00E6;kke sig gyde;
+                    Ned fra Bierget de skummende flyde,
+                    Og giennem Dalen sig brusende skyde,
+                    Broernes Hv&#x00E6;lving og D&#x00E6;mninger f&#x00F8;lger,
+                    Hvirvlende sig i de rullende B&#x00F8;lger,
+                    Intet kan standse de V&#x00E6;ldiges F&#x00E6;rd.
+                    Dog kun et &#x00C3;&#x02DC;ieblik var deres Skaber,
+                    Og deres Vaner, det r&#x00E6;dsomme Spor,
+                    Rindende hen giennem Sandet, sig taber;
+                    Kun i Forstyrrelsen Mindet end boer.-->
+            <p>Passagen citeres p&#x00E5; originalsproget i den samtidige afhandling <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens
+                  Fremme&#x201D;</rs> (<rs key="title335" type="title">Grundtvig 1807</rs>, s.
+               251).</p>
+         </note>
+
+         <note xml:id="com203">
+            <!--lemma: Kun i Forstyrrelsen Mindet end boer-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Die Zerst&#x00F6;rung
+               verk&#x00FC;ndigt sie nur&#x201D;, v. 251 (da. &#x201C;det [: det frygtelige
+               spor] indvarsler blot &#x00F8;del&#x00E6;ggelsen&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com204">
+            <!--lemma: Forstyrrelsen -->
+            <p>&#x00F8;del&#x00E6;ggelsen.</p>
+         </note>
+
+         <note xml:id="com107">
+            <!--lemma: H&#x00E6;rjere-->
+            <p>plyndrere, krigsherrer; substantivering af verbet &#x201C;h&#x00E6;rge&#x201D;. <rs key="title1802" type="title">Schiller</rs>: &#x201C;Eroberer&#x201D;, v. 253 (da.
+               &#x201C;erobrere&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com108">
+            <!--lemma: ildige-->
+            <p>ildfulde.</p>
+         </note>
+
+         <note xml:id="com109">
+            <!--lemma: Vi som Krone den stedse finde,
+                    Pryde det herlig fuldendede Alt.-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;mit der Mutter und ihren
+               S&#x00F6;hnen / kr&#x00F6;nt sich die herrlich vollendete Welt&#x201D;, v. 270
+               (da. &#x201C;med moderen og hendes s&#x00F8;nner / krones den herligt
+               fuldendte verden&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com213">
+            <!--lemma: gudliig-->
+            <p>guddommeligt; dvs. som har sit udspring hos guderne.</p>
+         </note>
+
+         <note xml:id="com110">
+            <!--lemma: Tidens hensovede &#x00C3;&#x2020;t-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;ganzen Geschlechtern&#x201D;,
+               v. 287 (da. &#x201C;hele sl&#x00E6;gter&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com214">
+            <!--lemma: du himmelh&#x00F8;ie dronning-->
+            <p>anr&#x00E5;belse af Jomfru <persName key="pe307">Maria</persName>.</p>
+         </note>
+
+         <note xml:id="com111">
+            <!--lemma: Banghed-->
+            <p>angst, frygt.</p>
+         </note>
+
+         <note xml:id="com215">
+<!--lemma: sige-->
+            <p>sig (imperativ pluralis af &#x2018;sige&#x2019;).</p>
+         </note>
+
+         <note xml:id="com112">
+            <!--lemma: Mile-->
+            <p>bidsel.</p>
+         </note>
+
+         <note xml:id="com216">
+<!--lemma: tro'r-->
+            <p>tro (imperativ pluralis af &#x2018;tro&#x2019;).</p>
+         </note>
+
+         <note xml:id="com217">
+<!--lemma: sige-->
+            <p>l&#x00E6;r (imperativ pluralis af &#x2018;l&#x00E6;re&#x2019;).</p>
+         </note>
+
+         <note xml:id="com113">
+            <!--lemma: avindsyg-->
+            <p>misundelig.</p>
+         </note>
+
+         <note xml:id="com114">
+            <!--lemma: Ankerbund-->
+            <p>bund, der er tjenlig til ankring; grundlag.</p>
+         </note>
+
+         <note xml:id="com115">
+            <!--lemma: Ja som de glimrende Stierner paa Himmelens Bue-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Ja, es ist etwas
+               Gro&#x00DF;es, ich mu&#x00DF; es verehren / um einer Herrscherin
+               f&#x00FC;rstlichen Sinn&#x201D;, v. 370 f. (da. &#x201C;Ja, der er noget stort, jeg
+               m&#x00E5; det beundre, / ved en herskerindes fyrstelige forstand,&#x201D;,
+               overs. GV).</p>
+         </note>
+
+         <note xml:id="com202">
+            <!--lemma: glimrende-->
+            <p>str&#x00E5;lende, funklende.</p>
+         </note>
+
+         <note xml:id="com116">
+            <!--lemma: &#x00C3;&#x02DC;rke-->
+            <p>&#x00F8;rken.</p>
+         </note>
+
+         <note xml:id="com150">
+            <!--lemma: trodser-->
+            <p>trods (imperativ pluralis af &#x2018;trodse&#x2019;).</p>
+         </note>
+
+         <note xml:id="com151">
+            <!--lemma: vover-->
+            <p>vov (imperativ pluralis af &#x2018;vove&#x2019;).</p>
+         </note>
+
+         <note xml:id="com117">
+            <!--lemma: sluttet-->
+            <p>favnet.</p>
+         </note>
+
+         <note xml:id="com118">
+            <!--lemma: Ski&#x00E6;nk-->
+            <p>gave.</p>
+         </note>
+
+         <note xml:id="com119">
+            <!--lemma: hveden-->
+            <p>hvorfra.</p>
+         </note>
+
+         <note xml:id="com120">
+            <!--lemma: Naar &#x00C3;&#x2020;tnas Ild med haarde F&#x00F8;dselssmerte
+                    Sig har fremki&#x00E6;mpet, hviler Lavaelven
+                    Med Truen over D&#x00F8;deliges Hoved.-->
+            <p>
+<rs key="title1802" type="title">Schiller</rs>: &#x201C;eine Lavarinde / Liegt
+               aufgeschichtet &#x00FC;ber dem Gesunden&#x201D;, v. 401 f. (da. &#x201C;en lavaskorpe
+               / er lagt i lag oven p&#x00E5; den sunde&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com123">
+            <!--lemma: forstyrrelse-->
+            <p>&#x00F8;del&#x00E6;ggelse.</p>
+         </note>
+
+         <note xml:id="com121">
+            <!--lemma: Handler-->
+            <p>handlinger.</p>
+         </note>
+
+         <note xml:id="com219">
+            <!--lemma: beslutter-->
+            <p>beslut (imperativ pluralis af &#x2018;beslutte&#x2019;).</p>
+         </note>
+
+         <note xml:id="com122">
+            <!--lemma: Stormodig-->
+            <p>h&#x00F8;jsindet.</p>
+         </note>
+
+         <note xml:id="com220">
+            <!--lemma: ski&#x00E6;nke-->
+            <p>m&#x00E5;tte I sk&#x00E6;nke (optativisk konjunktiv).</p>
+         </note>
+
+         <note xml:id="com152">
+            <!--lemma: beslutter-->
+            <p>nedkast (imperativ pluralis af &#x2018;nedkaste&#x2019;).</p>
+         </note>
+
+         <note xml:id="com153">
+            <!--lemma: beslutter-->
+            <p>opofr (imperativ pluralis af &#x2018;opofre&#x2019;).</p>
+         </note>
+         
+         <note xml:id="com231">
+            <!--lemma: H&#x00F8;rer -->
+            <p>H&#x00F8;r (imperativ pluralis af &#x2018;h&#x00F8;re&#x2019;).</p>
+         </note>
+
+         <note xml:id="com124">
+            <!--lemma: Krigen oph&#x00F8;re, og Hadet sig svale!
+                    Eller vedbliver med Feide og Mord!-->
+            <p>Grundtvig afviger her v&#x00E6;sentligt fra <rs type="title" key="title1802">Schiller</rs>: &#x201C;La&#x00DF;t es genug sein und endet die Fehde, /
+               Oder gef&#x00E4;llts euch, so setzet sie fort&#x201D;, v. 435 f. (da. &#x201C;Lad det
+               v&#x00E6;re nok og g&#x00F8;r en ende p&#x00E5; fejden / eller, hvis det
+               passer jer, s&#x00E5; forts&#x00E6;t den&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com232">
+            <!--lemma: oph&#x00F8;re-->
+            <p>skal oph&#x00F8;re (optativisk konjunktiv).</p>
+         </note>
+         
+         <note xml:id="com233">
+            <!--lemma: sig svale-->
+            <p>skal sig svale (optativisk konjunktiv).</p>
+         </note>
+         
+         <note xml:id="com234">
+            <!--lemma: vedbliver-->
+            <p>vedbliv (imperativ pluralis af &#x2018;vedblive&#x2019;).</p>
+         </note>
+         
+
+         <note xml:id="com125">
+            <!--lemma: (Efterat have tiet en Stund, og forgi&#x00E6;ves ventet en Yttring af Br&#x00F8;drene, bliver hun ved med undertrykt Smerte.)-->
+            <p>Overs&#x00E6;ttelsen mangler en markering af, at replikken skifter til Isabella.</p>
+         </note>
+
+         <note xml:id="com221">
+            <!--lemma: Fuldender-->
+            <p>fuldend (imperativ pluralis af &#x2018;fuldende&#x2019;).</p>
+         </note>
+
+         <note xml:id="com222">
+            <!--lemma: adlyder-->
+            <p>adlyd (imperativ pluralis af &#x2018;adlyde&#x2019;).</p>
+         </note>
+
+         <note xml:id="com235">
+            <!--lemma: v&#x00E6;re-->
+            <p>skal v&#x00E6;re (optativisk konjunktiv).</p>
+         </note>
+
+         <note xml:id="com126">
+            <!--lemma: Sol-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs> har her: &#x201C;Halle&#x201D;, v. 446
+               (da. &#x201C;hal&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com154">
+            <!--lemma: og nu-->
+            <p>nu ogs&#x00E5;.</p>
+         </note>
+
+
+         <note xml:id="com127">
+            <!--lemma: Vexelmord-->
+            <p>gensidige mord.</p>
+         </note>
+
+         <note xml:id="com223">
+            <!--lemma: Udrydder-->
+            <p>udryd (imperativ pluralis af &#x2018;udrydde&#x2019;).</p>
+         </note>
+
+         <note xml:id="com128">
+            <!--lemma: thebanske Par-->
+            <p><rs key="myth861" type="myth">Eteokles</rs> og <rs key="myth862" type="myth">Polyneikes</rs>, <rs key="myth1295" type="myth">Antigones</rs> br&#x00F8;dre, som
+               k&#x00E6;mpede om kongemagten efter deres faders, <rs key="myth871" type="myth">&#x00D8;dipus'</rs>, d&#x00F8;d og slog hinanden ihjel.</p>
+         </note>
+
+         <note xml:id="com224">
+            <!--lemma: gaaer-->
+            <p>g&#x00E5; (imperativ pluralis).</p>
+         </note>
+
+         <note xml:id="com225">
+            <!--lemma: ki&#x00E6;mper-->
+            <p>k&#x00E6;mp (imperativ pluralis af &#x2018;k&#x00E6;mpe&#x2019;).</p>
+         </note>
+
+         <note xml:id="com226">
+            <!--lemma: indborer-->
+            <p>bor [...] ind (imperativ pluralis af &#x2018;indbore&#x2019;).</p>
+         </note>
+
+         <note xml:id="com227">
+            <!--lemma: ombytter-->
+            <p>ombyt (imperativ pluralis af &#x2018;ombytte&#x2019;).</p>
+         </note>
+
+         <note xml:id="com228">
+            <!--lemma: seirer-->
+            <p>sejr (imperativ pluralis af &#x2018;sejre&#x2019;).</p>
+         </note>
+
+         <note xml:id="com229">
+            <!--lemma: Tvedragt-->
+            <p>uenighed; strid.</p>
+         </note>
+
+         <note xml:id="com129">
+            <!--lemma: skumle Grav-->
+            <p>
+<rs type="title" key="title1802">Schiller</rs>: &#x201C;Scheiterhaufen&#x201D;, v.
+               457 (da. &#x201C;(k&#x00E6;tter)b&#x00E5;l&#x201D;, overs. GV).</p>
+         </note>
+
+         <note xml:id="com130">
+            <!--lemma: gyselige-->
+            <p>frygtindgydende, r&#x00E6;dselsv&#x00E6;kkende.</p>
+         </note>
+
+
+
+         <div type="litList">
+            <head xml:id="docIn1">Anvendt litteratur</head>
+            <list type="litList">
+                  <item>Albertsen, Leif Ludwig (1978) <hi rend="italic">
+<rs type="title" key="title1841">Schillerklubben</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Bob&#x00E9;, Louis (1905) <hi rend="italic">
+<rs type="title" key="title1842">Schiller und D&#x00E4;nemark</rs>.</hi> Leipzig &amp; Wien</item>
+                  <item>Domes, Fred J. (1935) <hi rend="italic">
+<rs type="title" key="title1846">Schiller auf der d&#x00E4;nischen B&#x00FC;hne</rs>.</hi> Leipzig &amp;
+                     Berlin</item>
+                  <item>Foersom, Peter red. (u.&#x00E5;.: 1806) <hi rend="italic">
+<rs type="title" key="title1773">Nytaarsgave for Skuespilyndere 1807</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1807) <rs type="title" key="title335">&#x201C;Om Videnskabelighed og dens Fremme&#x201D;</rs> i <hi rend="italic">
+<rs key="title125" type="title">Ny Minerva</rs>,</hi> marts, s. 249-298.
+                     K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1940) <rs type="title" key="title2001">&#x201C;Af Grundtvigs Dagb&#x00F8;ger&#x201D;</rs> i <hi rend="italic">
+<rs key="title2000" type="title">N.F.S. Grundtvig. V&#x00E6;rker i
+                           Udvalg</rs>
+</hi> 1, udg. af Georg Christensen &amp; Hal Koch, s. 1-102.
+                     K&#x00F8;benhavn</item>
+                  <item>Grundtvig, Nicolai Frederik Severin (1979) <rs type="title" key="title3">
+<hi rend="italic">N.F.S. Grundtvig Dag- og Udtogsb&#x00F8;ger</hi>
+</rs> 1-2,
+                     udg. af Gustav Albeck. K&#x00F8;benhavn</item>
+                  <item>Hultberg, Helge (1973) <rs type="title" key="title1845">&#x201C;Den unge
+                        Henrich Steffens 1773-1811&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title1844">Festskrift udgivet af K&#x00F8;benhavns Universitet i
+                           anledning af universitetets &#x00E5;rsfest november 1973</rs>
+</hi>, s.
+                     7-115. K&#x00F8;benhavn</item>
+                  <item>Kant, Immanuel (1995a) <hi rend="italic">
+<rs type="title" key="title1839">Kritik der reinen Vernunft</rs>,</hi> udg. af Wilhelm Weischedel.
+                     Frankfurt am Main</item>
+                  <item>Kant, Immanuel (1995b) <hi rend="italic">
+<rs type="title" key="title1248">Kritik der Urteilskraft</rs>,</hi> udg. af Wilhelm Weischedel. Frankfurt
+                     am Main</item>
+                  <item>Lundgreen-Nielsen, Flemming (1996) <rs type="title" key="title1807">&#x201C;Henrik Steffens' Goethe-Forel&#x00E6;sninger i
+                        1803&#x201D;</rs> i Henrich Steffens, <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske
+                        Forel&#x00E6;sninger</rs>,</hi> s. 227-243, udg. af Johnny Kondrup.
+                     K&#x00F8;benhavn</item>
+                  <item>Luserke-Jaqui, Matthias &amp; Grit Dommes red. (2005) <hi rend="italic">
+<rs type="title" key="title1799">Schiller-Handbuch, Leben - Werk -
+                           Wirkung</rs>.</hi> Stuttgart</item>
+                  <item>Overskou, Thomas (1860) <hi rend="italic">
+<rs type="title" key="title1361">Den danske Skueplads, i dens Historie, fra de f&#x00F8;rste Spor af
+                           danske Skuespil indtil vor Tid</rs>
+</hi> 1-7, bind 4.
+                     K&#x00F8;benhavn</item>
+                  <item>Paul, Fritz (1973) <hi rend="italic">
+<rs type="title" key="title1847">Henrich Steffens. Naturphilosophie und Universalromantik</rs>.</hi>
+                     M&#x00FC;nchen</item>
+                  <item>Pott, Hans-Georg (1980) <hi rend="italic">
+<rs type="title" key="title1848">Die sch&#x00F6;ne Freiheit. Eine Interpretation zu Schillers Schrift
+                           &#x00DC;ber die &#x00E4;sthetische Erziehung des Menschen in einer Reihe
+                           von Briefen</rs>.</hi> M&#x00FC;nchen</item>
+                  <item>R&#x00F8;nning, Frederik (1907-1913) <hi rend="italic">
+<rs type="title" key="title20">N.F.S. Grundtvig. Et Bidrag til Skildring af dansk
+                           &#x00C5;ndsliv i det 19. &#x00C5;rhundrede</rs>
+</hi> bind 1:2,
+                     K&#x00F8;benhavn</item>
+                  <item>Safranski, R&#x00FC;diger (2004) <hi rend="italic">
+<rs type="title" key="title1843">Friedrich Schiller oder Die Erfindung des Deutschen
+                           Idealismus</rs>.</hi> M&#x00FC;nchen &amp; Wien</item>
+                  <item>Scharling, Carl Immanuel (1947) <hi rend="italic">
+<rs type="title" key="title21">Grundtvig og Romantiken belyst ved Grundtvigs Forhold til
+                           Schelling</rs>.</hi> K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1973) <rs type="title" key="title1021">&#x201C;Die
+                        R&#x00E4;uber&#x201D;</rs> [1781] i <hi rend="italic">
+<rs type="title" key="title1020">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     1, udg. af Herbert G. G&#x00F6;pfert &amp; Gerhard Fricke, s. 491-638.
+                     M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1801) <hi rend="italic">
+<rs type="title" key="title1034">R&#x00F8;verne. Et S&#x00F8;rgespil</rs>
+</hi>
+                     [1781], overs. af Matthias Rahbek. Helsing&#x00F8;r</item>
+                  <item>Schiller, Friedrich (1973) <rs type="title" key="title1022">&#x201C;Kabale
+                        und Liebe&#x201D;</rs> [1784] i <hi rend="italic">
+<rs type="title" key="title1020">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     1, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 755-838. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1805) <hi rend="italic">
+<rs type="title" key="title1036">Kabale og Ki&#x00E6;rlighed. Et borgerligt
+                           S&#x00F8;rgespil i fem Optoge</rs>
+</hi> [1784], overs. af
+                     Andreas Christian Alstrup. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1814">&#x201C;An die
+                        Freude&#x201D;</rs> [1786] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 1,
+                     udg. af Georg Kurscheidt, s. 410-413. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1796) <rs type="title" key="title1797">&#x201C;Til
+                        Gl&#x00E6;den&#x201D;</rs> [1786], overs. af Johann Clemens
+                     Tode i <hi rend="italic">
+<rs type="title" key="title1139">Iris og Hebe. En
+                           Forts&#x00E6;ttelse af Maanedsskriftet Iris</rs>,</hi> Julii, August og
+                     September, s. 73-78. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1802) <rs type="title" key="title1787">&#x201C;Hymne
+                        til Gl&#x00E6;den&#x201D;</rs> [1786], overs. af Adam
+                     Oehlenschl&#x00E4;ger i <hi rend="italic">
+<rs type="title" key="title160">Den
+                           danske Tilskuer</rs>,</hi> 23, s. 177-182. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974d) <rs type="title" key="title1025">&#x201C;Don
+                        Carlos&#x201D;</rs> [1787] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 7-267. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1796) <rs type="title" key="title1772">&#x201C;Et Stykke af Schillers Don Karlos&#x201D;</rs>, overs. af Malthe Conrad Bruun i <hi rend="italic">
+<rs key="title1771" type="title">Svada, et Magazin for
+                           Theatrets Philosophie, Litteratur og Historie</rs>,</hi> s. 42-48.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1803) <rs type="title" key="title1800">&#x201C;Don Karlos (af Schiller) 3die Akts 8de, 9de og 10de
+                     Optrin&#x201D;</rs>, overs. af Frederik Schmidt i <hi rend="italic">
+<rs type="title" key="title125">Ny
+                        Minerva</rs>,</hi> oktober, s. 47-72. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich &amp; Johan Storm Munk (1804) <hi rend="italic">
+<rs type="title" key="title1778">Indbydelse til Subscription paa en
+                     Oversettelse af Friedrich Schillers Don Karlos</rs>.</hi>
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1804) <rs type="title" key="title1796">&#x201C;Nok et Fors&#x00F8;g til en Overs&#x00E6;ttelse af
+                     Schillers Don Karlos&#x201D;</rs>, overs. af Jens M&#x00F8;ller i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>,</hi> 96 &amp; 97, s. 761-776.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1812) <hi rend="italic">
+<rs type="title" key="title1777">Don Carlos, Infant af Spanien</rs>
+</hi>
+                     [1787] overs. af Johan Storm Munch. Oslo</item>
+                  <item>Schiller, Friedrich (1830) <hi rend="italic">
+<rs type="title" key="title1776">Don Carlos, Infant af Spanien</rs>
+</hi>
+                     [1787], overs. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1792) <rs type="title" key="title952">&#x201C;Was
+                        hei&#x00DF;t und zu welchem Ende studiert man Universalgeschichte? Eine
+                        akademische Antrittsrede&#x201D;</rs> [1789] i <hi rend="italic">
+<rs type="title" key="title951">Kleinere prosaische
+                           Schriften</rs>
+</hi> 1-4, bind 1, s. 54-98. Leipzig</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1805">&#x201C;&#x00DC;ber Anmut und W&#x00FC;rde&#x201D;</rs>
+                     [1793] i <hi rend="italic">
+<rs type="title" key="title1029">Werke
+                           und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter Janz, Hans Richard
+                     Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 330-394. Frankfurt am
+                     Main</item>
+                  <item>Schiller, Friedrich (1796) <rs type="title" key="title1783">&#x201C;Om
+                        Ynde&#x201D;</rs> [1793], overs. af Jens Kragh H&#x00F8;st i
+                        <hi rend="italic">
+<rs type="title" key="title1781">Euphrosyne</rs>,</hi> 2,
+                     s. 212-238. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1796) <rs type="title" key="title1784">&#x201C;Om
+                        V&#x00E6;rdighed&#x201D;</rs> [1793], overs. af Jens Kragh
+                     H&#x00F8;st i <hi rend="italic">
+<rs type="title" key="title1781">Euphrosyne</rs>,</hi> 2, s. 289-307. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title2002">&#x201C;Das
+                        Reich der Schatten&#x201D;</rs> [1795] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 1,
+                     udg. af Georg Kurscheidt, s. 425-430. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1800) <rs type="title" key="title1798">&#x201C;Skyggernes Rige&#x201D;</rs> [1795], overs. af
+                     Frederik Schmidt i <hi rend="italic">
+<rs type="title" key="title160">Den danske
+                           Tilskuer</rs>,</hi> 92 &amp; 93, s. 831-846. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title2003">&#x201C;Die
+                        Teilung der Erde&#x201D;</rs> [1795] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 1,
+                     udg. af Georg Kurscheidt, s. 442-443. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1802) <rs type="title" key="title1788">&#x201C;Jordens
+                        Deeling&#x201D;</rs> [1795], overs. af Frederik Schmidt i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>,</hi>
+                     82, s. 655-656. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title2005">&#x201C;&#x00DC;ber die notwendigen Grenzen beim Gebrauch sch&#x00F6;ner
+                        Formen&#x201D;</rs> [1795] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8,
+                     udg. af Rolf-Peter Janz, Hans Richard Brittnacher, Gerd Kleiner &amp; Fabian
+                     St&#x00F6;rmer, s. 677-705. Frankfurt am Main</item>
+               <item>Schiller, Friedrich (1796) <rs type="title" key="title1782">&#x201C;Om
+                  &#x00E6;sthetiske S&#x00E6;ders Farlighed&#x201D;</rs> [1795],
+                  overs. af Jens Kragh H&#x00F8;st i <hi rend="italic">
+<rs type="title" key="title1781">Euphrosyne</rs>,</hi> 3, s. 35-59.
+                  K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1031">&#x201C;&#x00DC;ber die &#x00E4;sthetische Erziehung des
+                        Menschen&#x201D;</rs> [1795] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, s.
+                     706-810, udg. af Rolf-Peter Janz, Hans Richard Brittnacher, Gerd Kleiner &amp;
+                     Fabian St&#x00F6;rmer, Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1804">&#x201C;&#x00DC;ber naive und sentimentalische Dichtung&#x201D;</rs>
+                     [1795-1796] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8, udg. af Rolf-Peter Janz, Hans
+                     Richard Brittnacher, Gerd Kleiner &amp; Fabian St&#x00F6;rmer, s. 706-810.
+                     Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1952) <rs type="title" key="title1835">&#x201C;Om naiv
+                        og sentimental digtning&#x201D;</rs> [1795-1796] i <hi rend="italic">
+<rs type="title" key="title292">Om naiv og sentimental
+                           digtning og Om det oph&#x00F8;jede</rs>
+</hi>, overs. af Johan Johansen.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1798) <rs type="title" key="title1786">&#x201C;Om det
+                        Naive&#x201D;</rs> [1795-1796], overs. af Johan Herman Spleth
+                     i <hi rend="italic">
+<rs type="title" key="title1785">Philosophiske Afhandlinger
+                           til Sandheds, Dyds og Smags Udbredelse</rs>
+</hi>, udg. af Jacob Thomsen,
+                     s. 166-209. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title2004">&#x201C;W&#x00FC;rde der Frauen&#x201D;</rs> [1796] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi>
+                     1-10, bind 1, udg. af Georg Kurscheidt, s. 448-452. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1803) <rs type="title" key="title1793">&#x201C;Qvindernes V&#x00E6;rd&#x201D;</rs> [1796], overs. af
+                     Jens M&#x00F8;ller i <hi rend="italic">
+<rs type="title" key="title160">Den
+                           danske Tilskuer</rs>,</hi> 50 &amp; 51, s. 406-408.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1861">&#x201C;Vom
+                        Erhabenen&#x201D;</rs> [1796] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 8,
+                     udg. af Rolf-Peter Janz, Hans Richard Brittnacher, Gerd Kleiner &amp; Fabian
+                     St&#x00F6;rmer, s. 822-840. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1992) <rs type="title" key="title1813">&#x201C;Die
+                        B&#x00FC;rgschaft&#x201D;</rs> [1799] i <hi rend="italic">
+<rs type="title" key="title1029">Werke und Briefe</rs>
+</hi> 1-10, bind 1,
+                     udg. af Georg Kurscheidt, s. 26-30. Frankfurt am Main</item>
+                  <item>Schiller, Friedrich (1803) <rs type="title" key="title1794">&#x201C;De to
+                        Venner&#x201D;</rs> [1799], overs. af Frederik Schmidt i <hi rend="italic">
+<rs type="title" key="title160">Den danske Tilskuer</rs>,</hi>
+                     83 &amp; 84, s. 665-672. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974e) <rs type="title" key="title1809">&#x201C;Die
+                        Piccolomini&#x201D;</rs> [1800] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 313-405. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1805) <rs type="title" key="title1789">u.t.:
+                        [Uddrag af Piccolominierne]</rs> [1800], overs. af
+                     Knud Lyne Rahbek i <hi rend="italic">
+<rs type="title" key="title160">Den danske
+                           Tilskuer</rs>,</hi> 44 &amp; 45, s. 345-360. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1816) <rs type="title" key="title1810">&#x201C;Piccolominierne&#x201D;</rs> i <hi rend="italic">
+<rs type="title" key="title1035">Wallenstein, et dramatisk Digt</rs>
+</hi> 1-2
+                     [1800], overs. af Knud Lyne Rahbek, s. 63-217.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1816) <hi rend="italic">
+<rs type="title" key="title1035"> Wallenstein, et dramatisk Digt</rs>
+</hi> 1-2
+                     [1800], overs. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974f) <rs type="title" key="title1027">&#x201C;Maria
+                        Stuart&#x201D;</rs> [1801] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 549-686. M&#x00FC;nchen</item> 
+                  <item>Schiller, Friedrich (1805) <rs type="title" key="title1790">u.t.: [Uddrag af Maria Stuart]</rs> [1801], overs. af Knud
+                  Lyne Rahbek i <hi rend="italic">
+<rs type="title" key="title160">Den danske
+                        Tilskuer</rs>,</hi> 73 &amp; 74, s. 577-592. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1805) <rs type="title" key="title1791">u.t.: [Uddrag af Maria Stuart]</rs> [1801], overs. af Knud
+                     Lyne Rahbek i <hi rend="italic">
+<rs type="title" key="title160">Den danske
+                        Tilskuer</rs>,</hi> 76 &amp; 77, s. 601-615. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1805) <rs type="title" key="title1792">u.t.: [Uddrag af Maria Stuart]</rs> [1801], overs. af Knud
+                     Lyne Rahbek i <hi rend="italic">
+<rs type="title" key="title160">Den danske
+                        Tilskuer</rs>,</hi> 98 &amp; 99, s. 777-792. K&#x00F8;benhavn</item>
+                     <item>Schiller, Friedrich (1812) <hi rend="italic">
+<rs type="title" key="title1032"> Maria Stuart. S&#x00F8;rgespil i fem Acter</rs>
+</hi>
+                     [1801], overs. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974g) <rs type="title" key="title1028">&#x201C;Die
+                        Jungfrau von Orleans&#x201D;</rs> [1801]i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5,
+                     bind 2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert
+                     Stubenrauch, s. 687-812. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1813) <hi rend="italic">
+<rs type="title" key="title1775">Johanna d'Arc, Orleans M&#x00F8;</rs>
+</hi>
+                     [1801], overs. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+               <item>
+                  Schiller, Friedrich von (1803) <hi rend="italic">
+<rs type="title" key="title340">Die Braut von
+                        Messina</rs>.</hi> T&#x00FC;bingen</item>
+               <item>
+                  Schiller, Friedrich von (1896) <hi rend="italic">
+<rs type="title" key="title2250">Bruden fra Messina eller de fjendtlige Br&#x00F8;dre</rs> [1803],</hi> overs. af Johannes Magnussen.
+                  K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974a) <rs type="title" key="title1802">&#x201C;Die
+                        Braut von Messina&#x201D;</rs> [1803] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 813-912. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1974b) <rs type="title" key="title1803">&#x201C;&#x00DC;ber den Gebrauch des Chors in der
+                        Trag&#x00F6;die&#x201D;</rs> [1803] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind
+                     2, udg. af Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch,
+                     s. 815-823. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (u.&#x00E5;.: 1806) <rs type="title" key="title1774">&#x201C;Om Chorets Brug i Tragoedien&#x201D;</rs> [1803],
+                     overs. af Nicolaj Esmark &#x00D8;llgaard i <hi rend="italic">
+<rs type="title" key="title1773">Nytaarsgave for Skuespilyndere 1807</rs>,</hi> s. 30-50.
+                     K&#x00F8;benhavn</item>
+                  <item>Schiller, Friedrich (1974c) <rs type="title" key="title1024">&#x201C;Wilhelm
+                        Tell&#x201D;</rs> [1804] i <hi rend="italic">
+<rs type="title" key="title1023">S&#x00E4;mtliche Werke</rs>
+</hi> 1-5, bind 2, udg. af
+                     Herbert G. G&#x00F6;pfert, Gerhard Fricke &amp; Herbert Stubenrauch, s.
+                     913-1029. M&#x00FC;nchen</item>
+                  <item>Schiller, Friedrich (1805) <hi rend="italic">
+<rs type="title" key="title1033">Vilhelm Tell. Skuespil</rs>
+</hi> [1804],
+                     overs. af Knud Lyne Rahbek. K&#x00F8;benhavn</item>
+                  <item>Steffens, Henrich (1996) <hi rend="italic">
+<rs type="title" key="title118">Indledning til philosophiske Forel&#x00E6;sninger</rs>
+</hi>
+                     [1803], udg. af Johnny Kondrup. K&#x00F8;benhavn</item>
+                  <item>Vulpius, Christian August (1800) <rs type="title" key="title1801">
+<hi rend="italic">R&#x00F8;verkaptainen Rinaldo Rinaldini. En romantisk
+                           Historie fra vort Aarhundrede</hi>
+</rs> 1-5, overs. af Mathias Rahbek.
+                     K&#x00F8;benhavn</item>
+                  <item>Vulpius, Christian August (1974) <hi rend="italic">
+<rs type="title" key="title1811">Rinaldo Rinaldini, der R&#x00E4;uber Hauptmann</rs>
+</hi>
+                     1-3. Hildesheim</item>
+            </list>
+         </div>
+      </body>
+</text>
+</TEI>

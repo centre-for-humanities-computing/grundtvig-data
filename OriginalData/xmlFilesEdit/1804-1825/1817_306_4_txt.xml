@@ -1,0 +1,664 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?><TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Nikolai Edinger Balles Amindelse</title>
+      <title rend="shortForm">Nikolai Edinger Balles Amindelse</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="philologist">Else Riisager</editor>
+      <editor role="student1">Dennis Leo Rasmussen</editor>
+      <editor role="student2">Jeppe Karn&#x00F8;e Knudsen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="firstUpload">1.13</idno>
+               <idno type="content">1.13</idno>
+               <idno type="technic">1.13.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>47 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+            <date when="2018-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.13, 1. november 2018</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Danne-Virke et Tids-Skrift. Andet Bind</title>
+            <respStmt>
+               <name>N. F. S. Grundtvig</name>
+               <resp>&#x005B;evt.&#x005D;</resp>
+            </respStmt>
+            <idno>1816-11-28</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1817_306_4_txt.xml" type="txt">L&#x00E6;setekst</note>
+            <note target="1817_306_4_com.xml" type="com">Punktkommentar</note>
+            <note target="1817_306_4_intro.xml" type="intro">Indledning</note>
+            <note target="1817_306_4_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="main">Danne-Virke, bind 2</title>
+       <author>N. F. S. Grundtvig
+        <note>&#x005B;evt.&#x005D;</note>
+       </author>
+       <pubPlace>Ki&#x00F8;benhavn</pubPlace>
+       <publisher>A. Schmidts Forlag
+        <note>&#x005B;evt.&#x005D;</note>
+       </publisher>
+       <date>1817</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="306"><desc>F&#x00F8;rstetrykket</desc><num>1817</num></witness>
+          <witness xml:id="B" n="601"><desc>Anden udgave</desc><num>1838</num></witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS"><desc>Poetiske Skrifter</desc><num>4</num></witness>
+       <witness xml:id="US"><desc>Udvalgte Skrifter</desc><num>3</num></witness>
+       <witness xml:id="VU"><desc>V&#x00E6;rker i Udvalg</desc><num>7</num></witness>
+       <witness xml:id="GSV"><desc>Grundtvigs Sang-V&#x00E6;rk</desc><num>2, nr. 124</num></witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+       <profileDesc>
+     <textClass>
+     <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+         <term>lejlighedsdigte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>dødsfald</term>
+       <term>kristendom</term>          
+      </keywords>     
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+      <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+     <change who="DR" when="2017-01-26">Dennis har lavet og kodet K1 plus kodet for fax.; efter hvilket eksemplar?</change>
+       <change who="ELR" when="2018-04-04">2. kollation efter GV, Aarhusianer samfundet</change>
+         <change xml:id="JKK" who="JKK" when="2018-05-09">3. kollation udf&#x00F8;rt efter KB-eksemplar. Sidetal for UV, US, PS og GSV indf&#x00F8;rt.</change>
+       <change who="ELR" when="2018-05-14">indf&#x00F8;rt 3. kollation; autom&#x00E6;rkning r&#x00E5;sorteret</change>     
+      <change who="auto" when="2018-05-14">Autoopm&#x00E6;rket af autotag.awk v12 KK 2017-03-09</change>
+       <change who="ELR" when="2018-05-25">kommentering; kladde (efter Holgers metode)</change>
+       <change who="ELR" when="2018-06-11">com-fil lavet; gennemset, klar til 1. red.</change>
+       <change who="ELR" when="2018-07-06">tekstrettelser efterset; 1. red. gennemg&#x00E5;et, klar til 2. red.</change>
+       <change who="ELR" when="2018-09-03">gennemg&#x00E5;et 2. red.; klar til 3. red.</change>
+       <change who="ELR" when="2018-10-29">afsnitsnummerering, kontrolleret app; gennemset, unicodes, klar</change>
+     </revisionDesc>
+   </teiHeader>  
+   
+   <!--tekstrettelser: efter Nordiske Smaadigte 1838: 2 til diskussion, strofe 8 og 23 -->
+   <!-- rettelsesliste til Danne-Virke, bind 2?? -->
+  
+  
+<!-- mangler: linjenummerering -->
+<!--  <l>Danske Christne! hvor I findes,</l>
+<l>Flokkes ved vor Biskops Liig!</l>
+<l>Lad os her det Svundne mindes!</l>
+<l>Mindes Gud og Himmerig!</l>
+<l n="5">Gud og Himlen, som med Taarer</l> -->
+   
+   
+     
+   <text type="txt">   
+       
+          <body>
+      
+          
+      <div type="&#x005B;Tekst&#x005D;"> <!-- Nikolai Edinger Balles Amindelse -->
+         
+   <pb type="text" ed="A" n="48" facs="1817_306_4_fax001.jpg"/>
+         <pb type="edition" n="342" ed="PS"/>
+ <pb type="edition" n="418" ed="US"/> 
+   <pb type="edition" n="278" ed="VU"/>
+         
+         
+   <head rend="1"><persName key="pe39">Nikolai Edinger Balles</persName> <seg type="com" n="com1">Amindelse<!--minde.--></seg>.</head>
+
+<lg n="1">
+   <l><pb type="edition" n="354" ed="GSV"/>Der stod en Gran saa rank og ski&#x00F8;n,</l>
+<l rend="firstIndent">Saa vintergr&#x00F8;n,</l>
+<l>Den stod paa <placeName key="fak41">Norges</placeName> Fjelde;</l>
+<l>Sin Top den l&#x00F8;fted k&#x00E6;k i Sky,</l>
+<l rend="firstIndent"><pb type="edition" n="355" ed="GSV"/>I Herrens Ly,</l>
+<l>Trods Vind og Staal og &#x00C6;lde.</l>
+</lg>
+
+<lg n="2">
+   <l>Der stod en B&#x00F8;g i <seg type="com" n="com2">Danelund<!--danernes lund, Danmark.// combasen--></seg>,</l>
+<l rend="firstIndent">Paa F&#x00E6;dres Grund,</l>
+<l><seg type="com" n="com3">Alt<!--(ikke betydningsbærende fyldord i poetisk stil)--></seg> med sin <seg type="com" n="com4">hvalvte<!--dvs. hvælvede.--></seg> Bue;</l>
+<l>Trods Hagelveir og Hvirvelkast</l>
+<l rend="firstIndent">Den stod dog fast,</l>
+<l>Saa det var Lyst at skue.</l>
+</lg>
+
+<lg n="3">
+   <l>Men ak! det gaaer hver Stamme <seg type="com" n="com5">gild<!--ypperlig; god (efterstillet adjektiv).--></seg>,</l>
+<l rend="firstIndent">Som <rs type="myth" key="myth103">Ygdrasill</rs>,</l>
+<l>Den <seg type="com" n="com6">tr&#x00F8;skes<!--blive til trøske, frønnet.// ODS citat  --></seg>, og den falder;</l>
+<l><pb type="edition" n="343" ed="PS"/>Det volder <rs type="myth" key="myth57">Nidh&#x00F8;gs</rs> <seg type="com" n="com7">Ormetand<!--drage- eller slangetand; om legemets tilintetgørelse i graven (overført betydning).// efter myth57, ODS: ogs. overf., om legemets tilintetgørelse i graven. --></seg>,</l>
+<l rend="firstIndent">Hver B&#x00F8;g og Gran</l>
+<l>Som <seg type="com" n="com8">Asken<!--hentyder til Yggdrasil.--></seg> har sin Alder.</l>
+</lg>
+
+<lg n="4">
+<l><pb type="text" ed="A" n="49" facs="1817_306_4_fax002.jpg"/>H&#x00F8;r Lundens Suk og Klippens Dr&#x00F8;n!</l>
+<l rend="firstIndent">Hver <placeName key="fak24">Nordens</placeName> S&#x00F8;n</l>
+<l>En <seg type="com" n="com9">modig<!--dybt bedrøvet.--></seg> Taare f&#x00E6;lde!</l>
+<l>Thi, ak! paa Rad de faldt <seg type="com" n="com10">paa Stand<!--på stedet.//ODS 9 --></seg>,</l>
+<l rend="firstIndent">Den B&#x00F8;g, den Gran,</l><!--evt. tekstrettelse: Gtan > Gran : slidt t; fejllægning i kasse (ELR, Aarhusianersamfundet; faxoo2: ikke synligt-->
+<l>Som pryded Mark og Fjelde!</l>
+</lg>
+
+<lg n="5">
+   <l>Nu sidder fattig Fugl <seg type="com" n="com11">i St&#x00F8;v<!--på jorden.--></seg>,</l>
+<l rend="firstIndent">Paa brune L&#x00F8;v,</l>
+<l>Hvor skal han <seg type="com" n="com12">vel<!--mon.//ODS 9.4  --></seg> sig hvile?</l>
+<l><pb type="edition" n="279" ed="VU"/>Hvor skal han kvidre nu i Vang</l>
+<l rend="firstIndent">Sin Aftensang?</l>
+<l>Paa Tidsel, Torn og Pile?</l>
+</lg>
+
+<lg n="6">
+   <l><pb type="edition" n="419" ed="US"/>Ak, skal da slige Stammer to</l>
+<l rend="firstIndent">Ei meer opgroe,</l>
+<l>Paa Fjeldet og i Skoven!</l>
+<l>Skal Klang ei meer, fra Top og Green,</l>
+<l rend="firstIndent">Fra Lund og Steen,</l>
+<l>Nu m&#x00F8;des over Voven?</l>
+</lg>
+
+<lg n="7">
+   <l><pb type="edition" n="356" ed="GSV"/>Skal fattig Fugl i &#x00F8;de Lund,</l>
+<l rend="firstIndent">Om Aftenstund,</l>
+<l>Kun sjunge for de D&#x00F8;de?</l>
+<l><pb type="text" ed="A" n="50" facs="1817_306_4_fax003.jpg"/>Skal Sangen tone <seg type="com" n="com13">sorrigfuld<!--fuld af sorg.//ODS --></seg>:</l>
+<l rend="firstIndent">Ak! under Muld</l>
+<l>Nu hviler <placeName key="fak24">Nordens</placeName> Gr&#x00F8;de!</l>
+</lg>
+
+<lg n="8">
+   <l>Ak, skal nu savne Kvist og Skjul</l>
+<l rend="firstIndent">Den Himmel-Fugl,</l>
+<l>Som sang for vore F&#x00E6;dre!</l>
+<l><pb type="edition" n="344" ed="PS"/>Da svinger den fra <seg type="comStart" n="com14"/><app type="corrNote" select="yes"><lem wit="B">B&#x00F8;igd</lem><rdg wit="A">Boigd</rdg><witDetail wit="A" n="7">formen med o er ikke repr&#x00E6;senteret i ODS; formen med &#x00F8; findes ikke i &#x00E6;ldre ordb&#x00F8;ger, men i ODS: B&#x00F8;j(g)d &#x005B;b&#x03C9;i'd&#x005D; Suhm.I.213. Hauch. V.47.; Grundtvig har ogs&#x00E5; brugt Boigd i Norges Konge-Kr&#x00F8;nike (1819); rettes efter Nordiske Smaadigte, s. 107; samme rettelse i Sang-V&#x00E6;rk 2 1870, s. 368</witDetail></app><seg type="comEnd" n="com14"/> og By</l><!-- Boigd i eks. 1,2 og 3 -->
+<l>Sig over Sky,</l>
+<l rend="firstIndent">Ak! ak! det Gud os bedre!</l>
+</lg>
+
+<lg n="9">
+   <l>O Br&#x00F8;dre dog! den samme Fugl</l>
+<l rend="firstIndent">Saa s&#x00F8;dt om Juul</l>
+<l><seg type="com" n="com15">Og<!--også.--></seg> sang for vores Vugge;</l>
+<l>Ak, skal nu vore arme Smaa</l>
+<l rend="firstIndent">At h&#x00F8;re faae</l>
+<l>For Sang kun hule Sukke!</l><!-- modsat af eks. Es 35,10 gammel overs.  --><!-- hul DDO 2 -->
+</lg>
+
+<lg n="10">
+   <l>O Vugge-Vise dyb og s&#x00F8;d!</l>
+<l rend="firstIndent">Som Nyn du l&#x00F8;d</l>
+<l><rs type="bible" key="Luk 2,13" rend="allusion" subtype="bibleStart" n="bible1"/>Paa <seg type="com" n="com16">Tonen<!--melodien; klangen.//ODS 1.4 og 1 --></seg>, Engle sjunge<rs type="bible" key="Luk 2,13" rend="allusion" subtype="bibleEnd" n="bible1"/>,</l>
+<l>O, Skam og Skade, blodig Synd!</l>
+<l rend="firstIndent">Skal disse Nyn</l>
+<l>Udd&#x00F8;e paa <placeName key="fak14">Danmarks</placeName> <seg type="com" n="com17">Tunge<!--her: tungemål, sprog.--></seg>!</l> <!-- 7 forskellige tunger i digtet!  -->
+</lg>
+
+<lg n="11">
+<l><pb type="text" ed="A" n="51" facs="1817_306_4_fax004.jpg"/><pb type="edition" n="280" ed="VU"/>O nei, <seg type="com" n="com18">Fuld-S&#x00F8;dskende<!--helsøskende.--></seg> i <placeName key="fak24">Nord</placeName>!</l>
+<l rend="firstIndent">Det ved sit Ord</l>
+<l>I Naade Gud <seg type="com" n="com19">forbyde<!--vil forbyde (optativ).--></seg>!</l>
+<l>Den gamle Rod Han <seg type="com" n="com20">ski&#x00E6;nke<!--skal skænke (optativ).--></seg> Held</l>
+<l rend="firstIndent">Paa Mark og Fjeld,</l>
+<l>Til Kvist og Top at skyde!</l>
+</lg>
+
+<lg n="12">
+   <l><pb type="edition" n="420" ed="US"/><pb type="edition" n="357" ed="GSV"/>O: S&#x00F8;dskende! den Stub nu t&#x00F8;r,</l>
+<l rend="firstIndent">Men frodig f&#x00F8;r,</l>
+<l>Vi vil med Taarer v&#x00E6;de;</l>
+<l>Da <seg type="com" n="com21">avles<!--frembringes.//ODS 4, også DDO 1.9   overflødig?--></seg> under Hjertesuk</l>
+<l rend="firstIndent">Saa mild en Dug,</l>
+<l>Som Taarer Engle gr&#x00E6;de.</l>
+</lg>
+
+<lg n="13">
+   <l>O Dug! hvis Hjem ei Verden veed,</l>
+<l rend="firstIndent">O fald herned</l>
+<l>Paa Stub med Kraft fra Oven!</l>
+<l><pb type="edition" n="345" ed="PS"/><rs type="bible" key="Es 11,1" rend="allusion" subtype="bibleStart" n="bible2"/>Da skyde skal til <seg type="com" n="com22">Dane-Bod<!--trøst, hjælp for danskerne.//ODS og bod II, 1.1 --></seg>,</l>
+<l rend="firstIndent">Som <seg type="com" n="com23">Jesse-Rod<!--Isajs stub eller slægt, afstamning pe345  --></seg>,</l>
+<l>Den Stub i <seg type="com" n="com24">Dane-Skoven<!--danernes skov, Danmark.--></seg><rs type="bible" key="Es 11,1" rend="allusion" subtype="bibleEnd" n="bible2"/>.</l>
+</lg>
+
+<lg n="14">
+   <l>O Himmel-Fugl! forlad os ei!</l>
+<l rend="firstIndent"><rs type="bible" key="Matt 7,14" rend="reference">Den trange Vei</rs></l>
+<l>Gaaer let, naar s&#x00F8;dt du sjunger;</l>
+<l><pb type="text" ed="A" n="52" facs="1817_306_4_fax005.jpg"/>O, bliv hos os! og l&#x00E6;g din Sang,</l>
+<l rend="firstIndent"><app type="corrNote" select="yes"><lem wit="B">Med</lem><rdg wit="A">Mod</rdg><witDetail wit="A" n="2">fejll&#x00E6;sning; rettes efter Nordiske Smaadigte, s. 108; samme rettelse i Sang-V&#x00E6;rk 2 1870, s. 369</witDetail></app> liflig Klang,</l><!-- i eks. 1,2 og -->
+<l>Paa danske Barne-Tunger!</l>
+</lg>
+
+<lg n="15">
+   <l>Ak, ingen B&#x00F8;g, og ingen Gran,</l> <!-- beskadiget ø i Bøg, ELR -->
+<l rend="firstIndent">Vi har i Land,</l>
+<l>Som v&#x00E6;rdig kan dig b&#x00E6;re!</l>
+<l>Men o, forsmaa ei snevre Bur;</l> <!-- påfaldende ; måske : ?? -->
+<l rend="firstIndent">I <seg type="com" n="com25">Hjerteskur<!--hjertet som et udhus eller en faldefærdig bygning.//ODS skur V --></seg>!</l>
+<l>Saa skal dig Stammen &#x00E6;re.</l>
+</lg>
+
+<graphic style="shortLine"/>
+   
+<lg n="16">
+  <l><pb type="edition" n="281" ed="VU"/>O S&#x00F8;dskende! <seg type="com" n="com26">forstaaer<!--(I) skal forstå (imperativ pluralis).--></seg> min Sang,</l>
+<l rend="firstIndent">Med s&#x00E6;lsom Klang,</l>
+<l>Ei blot om <persName key="pe649">Bruun</persName> og <persName key="pe39">Balle</persName>!</l>
+<l>Om dem og deres <hi rend="spaced">Rod</hi> jeg sang,</l>
+<l rend="firstIndent">I <placeName key="poet214">Danevang</placeName>,</l>
+<l>Og Stubben er vi alle.</l> <!-- lille indryk (mindre end i 2. og 5. linje), kun i denne verslinje; tekstrettelse? bemærkning i txr, KN-->
+</lg>
+
+<lg n="17">
+   <l><pb type="edition" n="358" ed="GSV"/>Det var de sidste <seg type="com" n="com27">Krone-Skud<!--topskud; de ypperste frembringelser.//ODS toppunkter --></seg>,</l>
+<l rend="firstIndent">Som nu gik ud,</l>
+<l>Paa gamle Tr&#x00E6; i <placeName key="fak24">Norden</placeName>;</l>
+<l>Paa Stammen som, <seg type="com" n="com153">for</seg> <persName key="pe42">Luthers</persName> <seg type="com" n="com154">Haand</seg>,</l>
+<l rend="firstIndent">Med hellig Aand,</l>
+<l>Sig h&#x00E6;ved h&#x00F8;it fra Jorden.</l>
+</lg>
+
+<lg n="18">
+<l><pb type="text" ed="A" n="53" facs="1817_306_4_fax006.jpg"/><pb type="edition" n="421" ed="US"/><seg type="com" n="com28">Ad Aare<!--til næste år.//ODS 5  --></seg> falder <seg type="com" n="com29">Jubelfest</seg>,</l><!-- 1817??-->
+<l rend="firstIndent">For <seg type="com" n="com30">Herrens Pr&#x00E6;st<!--hentydning til Martin Luther pe42  --></seg>,</l>
+<l><pb type="edition" n="346" ed="PS"/>Ja, holdes i Guds Rige;</l>
+<l>Thi<!--derfor.--> skyndte sig de Bisper to,</l>
+<l rend="firstIndent">Nu <seg type="com" n="com32">og<!--også.--></seg> saa fro,</l>
+<l>I <seg type="com" n="com167">Choret</seg> at opstige.</l>
+</lg>
+
+<lg n="19">
+   <l>Der skal de staae i <seg type="com" n="com33">h&#x00F8;ien Chor<!--højkoret, dvs. koret i det midterste kirkeskib, eller hvor koret er adskilt fra skibet ved opadgående trapper.// efter ODS; kor 5.1 --></seg>,</l> <!-- læderet o, ELR -->
+<l rend="firstIndent">For Alterbord,</l>
+<l>Paa <seg type="com" n="com34">danske Bispe-Stade<!--pladsen for de danske bisper.//ODS 1.4--></seg>,</l>
+<l>Og sjunge h&#x00F8;it med Englemund,</l>
+<l rend="firstIndent">Af Hjertens Grund,</l>
+<l>Med <persName key="pe2417">Hersleb</persName>, <persName key="pe1627"><app type="corrNote" select="yes"><lem wit="B">Brochmand</lem><rdg wit="A">Brochmund</rdg><witDetail n="12" rend="ft" wit="A">fejll&#x00E6;sning; rettet efter Nordiske Smaadigte, s. 109; samme rettelse i Sang-V&#x00E6;rk 2 1870, s. 370</witDetail></app></persName>, <persName key="pe1538">Plade</persName>.</l><!-- tekstrettelse?: Brochmund > Brochmand   Brochmund eks. 1, 2 og 3;-->
+</lg>
+
+<lg n="20">
+   <l>De takke skal, som Bud fra <placeName key="fak24">Nord</placeName>,</l>
+<l rend="firstIndent">For Herrens Ord</l>
+<l>Paa <persName key="pe42">Morten Luthers</persName> Tunge;</l>
+<l>For R&#x00F8;sten, som i Julesang</l>
+<l rend="firstIndent">Paa den <seg type="com" n="com35">udklang<!--klingede ud.//ODS citat --></seg>,</l>
+<l>Skal <persName key="pe294">Kingo</persName> Psalmer sjunge.</l>
+</lg>
+
+<lg n="21">
+   <l>Det er en Lyst at t&#x00E6;nke paa,</l>
+<l rend="firstIndent">Hvor de mon staae,</l>
+<l>Langt meer dog der at v&#x00E6;re;</l>
+<l><pb type="text" ed="A" n="54" facs="1817_306_4_fax007.jpg"/><pb type="edition" n="282" ed="VU"/>Det Andet er end, over <seg type="comStart" n="com36"/>Gruus</l>
+<l rend="firstIndent">Af Herrens Huus<!--hentyder til ruinerne af Vor Frue Kirke, København.--><seg type="comEnd" n="com36"/>,</l>
+<l>At gr&#x00E6;de for Hans &#x00C6;re.</l>
+</lg>
+   
+<lg n="22">
+   <l><pb type="edition" n="359" ed="GSV"/>O vee! o hvilken <seg type="com" n="com37">Jubelfest</seg>,</l>
+<l rend="firstIndent">For <seg type="com" n="com38">Herrens Pr&#x00E6;st</seg>,</l>
+<l>Kan vi paa Gruset holde!</l>
+<l>Hans Aand forsvandt, hans Kraft og Tro,</l>
+<l rend="firstIndent">Mon de vel<!--DDO 2a --> boe</l>
+<l>I Hjerter, vantro, kolde?</l>
+</lg>
+
+<lg n="23"> 
+   <l>O vel da dem, de <seg type="comStart" n="com39"/><app type="addNote" select="yes"><lem wit="A">Lutter-M&#x00E6;nd</lem><rdg wit="B" type="add">Luther-M&#x00E6;nd</rdg><witDetail wit="A" n="7">ordspil, dels p&#x00E5; adj. lutter, dvs. m&#x00E6;nd, der er rene og pure i deres forkyndelse af evangeliet, hvad man forventede af ortodokse teologer; dels p&#x00E5; lutherske m&#x00E6;nd ift. deres teologisk observans. Eventuelt corrNote i stedet for addNote? Fejll&#x00E6;sning for navnet Luther; rettes efter Nordiske Smaadigte, s. 110; samme rettelse i Sang-V&#x00E6;rk 2 1870, s. 371.</witDetail></app><seg type="comEnd" n="com39"/><!--ordspil dels på adj. lutter, dvs. mænd, der er rene og pure i deres forkyndelse af evangeliet, som man skulle i ortodoksien, dels på mænd af luthersk teologisk observans.-->!</l> <!-- evt. tekstrettelse? i eks. 1,2  -->
+<l rend="firstIndent">At de sov hen,</l>
+<l><pb type="edition" n="347" ed="PS"/>F&#x00F8;r <seg type="com" n="com40">Jubel-Festens</seg> Dage!</l>
+<l>Her tegner kun til slig en Fest,</l>
+<l rend="firstIndent">Hvor Graad er bedst,</l>
+<l>Hvor Sang er Suk og Klage.</l>
+</lg>
+
+<lg n="24">
+   <l><pb type="edition" n="422" ed="US"/><rs type="bible" key="Sl 42,6" rend="reference" subtype="bibleStart" n="bible3"/>Dog Aand! hvi b&#x00F8;lger, bruser du,</l>
+<l rend="firstIndent">Saa <seg type="com" n="com41">mod i Hu<!--bedrøvet, modfalden i sindet.//ODS mod adj.--></seg>?<rs type="bible" key="Sl 42,6" rend="reference1787" subtype="bibleEnd" n="bible3"/></l>
+<l><seg type="com" n="com155">Lad ikkun Herren raade</seg>!</l><!-- evt. allusion til Sl 55,23 -->
+<l>Ei gi&#x00E6;lder Tegn, ei v&#x00E6;rger Magt</l>
+<l rend="firstIndent">Imod Hans Agt,</l>
+<l>Og evig er Hans Naade.</l>
+</lg>
+
+<lg n="25">
+<l><pb type="text" ed="A" n="55" facs="1817_306_4_fax008.jpg"/>Er Formiddag <seg type="com" n="com42">end<!--endnu.--></seg> sort som Nat,</l>
+<l rend="firstIndent">Kan Soel dog brat</l>
+<l>I Kraft bestraale Jorden;</l>
+<l><seg type="com" n="com43">Saa<!--således.--></seg> dages kan, for <seg type="com" n="com44">Herrens Pr&#x00E6;st</seg>,</l>
+<l rend="firstIndent">En <seg type="com" n="com45">Jubelfest</seg>,</l>
+<l>Mens Aar <seg type="com" n="com46">gaaer om<!--forandrer sig; drejer rundt.//ODS 29.3 og 29.2  --></seg> i <placeName key="fak24">Norden</placeName>.</l>
+</lg>
+
+<lg n="26">
+   <l>Vi haabe t&#x00F8;r: Halleluja</l>
+<l rend="firstIndent">Skal klinge da,</l>
+<l>Fra Hjerte, Mund og Tunge,</l>
+<l>Saa Lov og Tak for <placeName key="fak305">Wittenberg</placeName>,</l>
+<l rend="firstIndent">I Lund, paa Bjerg,</l>
+<l>Med <persName key="pe294">Kingo</persName> h&#x00F8;it vi sjunge.</l>
+</lg>
+
+<graphic style="shortLine"/>
+
+<lg n="1">
+   <l><pb type="edition" n="283" ed="VU"/>Danske Christne! hvor I findes,</l>
+<l>Flokkes ved vor Biskops Liig!</l>
+<l>Lad os her det Svundne mindes!</l>
+<l>Mindes Gud og Himmerig!</l>
+<l>Gud og Himlen, som med Taarer</l>
+<l>Vi maa sige, svandt fra Jord,</l>
+<l>Svandt for <seg type="com" n="com47">Tant<!--snak, usandhed.//ODS 3 --></seg> af usle Daarer,</l>
+<l>Som omtaaged <seg type="com" n="com161">Sandheds Ord</seg>;</l>
+<l><pb type="edition" n="348" ed="PS"/>Svandt, thi Gud er fra os svundet,</l>
+<l>Naar i <hi rend="spaced">Hjertet</hi> ei Han boer,</l>
+<l>Havde vi saa <seg type="com" n="com48">end<!--endog.--></seg> udgrundet</l>
+<l><pb type="text" ed="A" n="56" facs="1817_306_4_fax009.jpg"/>Alt hans <seg type="com" n="com49">Raad<!--styrelse af og vilje med verden og menneskene.bestemmelse, plan  --></seg>, og hvert hans Ord;</l>
+<l><hi rend="spaced">Himlen,</hi> naar vi ei fornemme,</l>
+<l>Giennem <seg type="com" n="com171">Aandens</seg> Guddoms-Stemme,</l>
+<l>Hvad den er, i <seg type="com" n="com50">Himmel-Smag<!--overordentlig velsmag.//efter ODS, Holberg  --></seg>,</l>
+<l>Da for os den er forsvundet,</l>
+<l>Havde vi saa <seg type="com" n="com51">end</seg> udgrundet</l>
+<l>Skyens Lyn og Torden-Brag.</l>
+<l>Tanke, <seg type="com" n="com52">Vidskab<!--videnskab; viden.--></seg>, Viisdom, Ord,</l><!-- rettelse til <hi rend="spaced">Viisdoms</hi> Ord (s. 112 l. 1), i rettelsesliste, Nordiske Smaadigte 1838-->
+<l><pb type="edition" n="423" ed="US"/>Trods al <seg type="com" n="com53">Daare-Kl&#x00F8;gt<!--skarpsindighed, åndrighed af tåber.--></seg> paa Jord,</l>
+<l><hi rend="spaced">Ene,</hi> er som Lyd af Bjelde,</l>
+<l>Leve kun som <hi rend="spaced"><seg type="com" n="com156">Hjerte-Sprog</seg>,</hi></l>
+<l>Kun som Bud der <hi rend="spaced">Livet melde,</hi></l>
+<l>Og som <seg type="com" n="com54">Stave<!--bogstaver.--></seg> i <seg type="com" n="com55"><hi rend="spaced">dets</hi> Bog<!--livets bog, hvori de saliges navne står, jf. Åb 21,27.//ODS liv 9.3--></seg>.</l>
+<l>Hvad er <hi rend="spaced">selvklog</hi> <seg type="com" n="com56">Vidskabs</seg> V&#x00E6;rker</l>
+<l><seg type="com" n="com57">Uden<!--hvis ikke.//ODS 7.1  --></seg> <seg type="com" n="com58">Tant<!--vrøvl.--></seg> og <seg type="com" n="com59">Tankespil<!--fantasi, uden hold i virkeligheden.--></seg>!</l>
+<l>Hvor er <hi rend="spaced">Kraftens</hi> Mindes-M&#x00E6;rker,</l>
+<l>Som ei <hi rend="spaced">Hjertet</hi> h&#x00F8;re til!</l>
+<l><hi rend="spaced"><seg type="com" n="com60">Vidskab<!--videnskab.--></seg>!</hi> <rs type="bible" key="Matt 28,2" rend="allusion" subtype="bibleStart" n="bible4"/>m&#x00E6;gter du at v&#x00E6;lte</l>
+<l>Stenen bort fra Sl&#x00E6;gtens Grav<rs type="bible" key="Matt 28,2" rend="allusion" subtype="bibleEnd" n="bible4"/>?</l>
+<l>Var det dig, som skabde Helte,</l>
+<l>Styred Skib paa <seg type="com" n="com61">Tidens<!--det jordiske, historiske tidsforløbs.--></seg> Hav!</l>
+<l>T&#x00F8;r den Vinge <hi rend="spaced">din</hi> du kalde,</l>
+<l>Hvorpaa Aand i Sky sig svang;</l>
+<l>Var det dig, som fostred Skjalde,</l>
+<l>Gav dem Aand og Syn og Sang!</l>
+<l><pb type="edition" n="349" ed="PS"/>Var det dig, som <rs type="bible" key="Luk 2,7" rend="reference" subtype="bibleStart" n="bible5"/><persName key="pe45">Christi</persName> Krybbe<rs type="bible" key="Luk 2,7" rend="reference" subtype="bibleEnd" n="bible5"/></l>
+<l><pb type="text" ed="A" n="57" facs="1817_306_4_fax010.jpg"/><seg type="com" n="com62">Hvaldde<!--dvs. hvælvede.--></seg> til en Kirkeborg<!--kirke, der værner og er stærk som en borg/ der er som en borg  -->,</l> <!--hvalvde, Nordiske Smaadigte, s. 112  -->
+<l><pb type="edition" n="284" ed="VU"/>Eller kunde du kun yppe</l>
+<l>Kiv og Tvist til Kirkens Sorg!</l>
+<l><seg type="com" n="com64">Gavst<!--gav (præteritum, 2. person singularis).--></seg> du Mod og Kraft og Tunge,</l>
+<l>Til at trodse Ild og Staal!</l>
+<l>L&#x00E6;rde du Martyrer <seg type="com" n="com65">sjunge<!--dvs. at synge.--></seg></l>
+<l>Seierskvad paa <seg type="com" n="com66">Rist og Baal<!--hentyder til torturredskab og afbrænding som dødsstraf.--></seg>!</l>
+<l>Havde <hi rend="spaced">du</hi> <persName key="pe42">Lutherus</persName> h&#x00E6;rdet</l>
+<l>Imod <seg type="com" n="com67">Acht<!--Reichsacht, ty. (Rigens Agt), dvs. erklæring om fredløshed (her udstedt af kejseren).--></seg> og <seg type="com" n="com68">Kirkeband<!--bandlysning (her udsendt af paven).--></seg>?</l>
+<l>Gik <hi rend="spaced">ved dig</hi> han uforf&#x00E6;rdet</l>
+<l>Sjungende paa Baalets<!--på kanten af henrettelse.//  overflødig?!  --> Rand!</l>
+<l>Var det <hi rend="spaced">dig</hi> han ledte efter,</l>
+<l>Da <seg type="com" n="com70">paa Gl&#x00F8;der krum<!--trodsig; stolt.//ODS 2 --> han gik</seg>;</l>
+<l>Var det <hi rend="spaced">dig</hi> som gav ham Kr&#x00E6;fter</l>
+<l>Til at h&#x00E6;ve <seg type="com" n="com71">sjunkne<!--dvs. sænkede.--></seg> Blik;</l>
+<l>Kr&#x00E6;fter til, <rs type="bible" key="ApG 20,28-29" rend="allusion" subtype="bibleStart" n="bible15"/>som <seg type="com" n="com72">Hjordens<!--billedligt om den kristne menigheds.//ODS 2.1 --> K&#x00E6;mpe<!--helt.--></seg>,</l>
+<l>Ulvene at byde Trods<rs type="bible" key="ApG 20,28-29" rend="allusion" subtype="bibleEnd" n="bible15"/>,</l>  <!-- jf. evt. Joh 10,11-13 ; Matt 7,15-->
+<l>Til den Storm og Str&#x00F8;m at d&#x00E6;mpe,</l>
+<l>Som har nu <seg type="com" n="com74">henrevet os<!--revet os (pludseligt) bort, overvældet os.--></seg>!</l>
+<l>Var det <hi rend="spaced">dig</hi> som l&#x00E6;rde <hi rend="spaced"><persName key="pe39">Balle</persName></hi></l>
+<l>Dj&#x00E6;rvt at slaae<!--dvs. slå, give slag.--> med <seg type="com" n="com162">Sandheds Ord</seg>,</l>
+<l>K&#x00E6;k at staae som een for alle,</l>
+<l>V&#x00E6;rge mandig <seg type="com" n="com76">Bog<!--Bibel.--></seg> og <seg type="com" n="com77">Chor<!--her: kirke.--></seg>!</l>
+<l>Gav <seg type="com" n="com78">vel<!--mon.--></seg> du paa <seg type="com" n="com79">Kirke-Gruset<!--kirkens ruiner.--></seg></l>
+<l><pb type="edition" n="424" ed="US"/>Pinte Gubbe Haab og Tr&#x00F8;st?</l>
+<l><rs type="bible" key="Sl 42,6.8" rend="allusion1787" subtype="bibleStart" n="bible6"/>D&#x00E6;mped du den Str&#x00F8;m der brused</l><!-- evt. Sl 46,2-4 -->
+<l><pb type="text" ed="A" n="58" facs="1817_306_4_fax011.jpg"/><seg type="com" n="com80">Mod<!--imod.--></seg> og<!--også, ligeledes.--> i hans eget Bryst<rs type="bible" key="Sl 42,6.8" rend="allusion1787" subtype="bibleEnd" n="bible6"/>!</l>
+<l>Var du Styrmand paa hans Snekke,</l>
+<l>Saa trods Str&#x00F8;m og Hvirvelvind</l>
+<l>Fredens Kyst den kunde <seg type="com" n="com81">r&#x00E6;kke<!--nå.//ODS 3.1  --></seg>,</l>
+<l>Sv&#x00F8;mme <seg type="com" n="com82">j&#x00E6;vnt<!--langsomt.//ODS 4 --></seg> i Havnen ind,</l>
+<l>Ja, med <hi rend="spaced"><seg type="com" n="com83">Dannebraag<!--dvs. Dannebrog; danernes flag (den etymologiske betydning af Dannebrog på Grundtvigs tid).--></seg></hi> i <seg type="com" n="com84">Stuen<!--opholdsrummet.--></seg></l>
+<l>Sv&#x00F8;mme ind i Himlens Havn!</l>
+<l><pb type="edition" n="350" ed="PS"/><seg type="com" n="com85">Vidskab</seg>! ja, har <hi rend="spaced">du</hi> <seg type="com" n="com86">vel<!--mon.--></seg> <seg type="comStart" n="com87"/>tonet<!--farvet.--></l>
+<l><placeName key="fak14">Danmarks</placeName> Flag<seg type="comEnd" n="com87"/> i <persName key="pe39">Balles</persName> Stavn,</l>
+<l>Du med <seg type="com" n="com88">Dannebraage</seg> kronet</l>
+<l><seg type="com" n="com89">K&#x00E6;mpens</seg> Snekke, Bryst og Navn!</l>
+<l>Er det dig, om jeg t&#x00F8;r sp&#x00F8;rge,</l>
+<l>Som har gjort at <seg type="com" n="com90">Ordet gaaer<!--det fortælles, rygtet siger.//ODS ord 5.2 --></seg>:</l>
+<l><pb type="edition" n="285" ed="VU"/><rs type="myth" key="myth116">Thurser</rs> over <persName key="pe39">Balle</persName> s&#x00F8;rge,</l>
+<l><seg type="com" n="com91">Som<!--her: sådan som (der).//ODS 8.3 --></seg> om <rs type="myth" key="myth6">Balder</rs> kv&#x00E6;det staaer!</l>
+<l>Eller, var det <hi rend="spaced">dig</hi> som gjorde</l>
+<l>At, med &#x00D8;ie venlig vaadt,</l>
+<l><hi rend="spaced">Fyrster f&#x00F8;lge ham <seg type="com" n="com157">til Jorde</seg>,</hi></l>
+<l><hi rend="spaced">Som var <seg type="com" n="com158">Drenge</seg> f&#x00F8;r til Spot!</hi></l>
+</lg>
+
+<lg n="2">
+<l><hi rend="spaced"><seg type="com" n="com92">Vidskab</seg>!</hi> ja tilvisse Du</l>
+<l>Reiste dig de Mindes-M&#x00E6;rker,</l>
+<l>Men ei som med selvklog Hu,</l>
+<l>Du i Mande-Hoved v&#x00E6;rker;</l>
+<l>Nei, men som <rs type="bible" key="Sl 110,1 og Mark 16,19" rend="allusion" subtype="bibleStart" n="bible7"/>i <hi rend="spaced"><seg type="com" n="com93">Sandheds<!--hentyder til Kristi, jf. f.eks. Joh 14,6.--></seg></hi> Bryst</l>
+<l>Ved Guds h&#x00F8;ire Haand du throner<rs type="bible" key="Sl 110,1 og Mark 16,19" rend="allusion" subtype="bibleEnd" n="bible7"/>,</l>
+<l><pb type="text" ed="A" n="59" facs="1817_306_4_fax012.jpg"/>Som i <seg type="com" n="com159">Aandens</seg> Guddoms-R&#x00F8;st</l>
+<l>Giennem <seg type="com" n="com94">Sandheds Ord<!--Guds ord, jf. Joh 17,17.--></seg> du <seg type="com" n="com95">toner<!--lyder.--></seg>;</l>
+<l>Som den <seg type="com" n="com96">Vidskab<!--viden, visdom.--></seg> der udbryder:</l>
+<l><rs type="bible" key="Joh 12,49-50" rend="reference" subtype="bibleStart" n="bible8"/>Intet <hi rend="spaced">af mig selv</hi> jeg veed,</l>
+<l>Som min <hi rend="italic">Faders</hi> Stemme lyder,</l>
+<l>Taler jeg i Evighed<rs type="bible" key="Joh 12,49-50" rend="reference" subtype="bibleEnd" n="bible8"/>;</l>
+<l>Derfor kan mig Intet tvinge,</l>
+<l><rs type="bible" key="1 Kor 1,18" rend="reference">Og mit Ord er Kraft og Liv</rs>,</l> <!-- evt. 1 Kor 1,18  Hebr. 4,12 -->
+<l>Ski&#x00E6;nker, som et <seg type="com" n="com97">Skaber-Bliv<!--ved Guds ord, der skaber det, det udtaler, jf. eks. 1 Mos 1,3.--></seg>,</l>
+<l>Sj&#x00E6;le Aand og Lys og Vinge,</l>
+<l>Gi&#x00F8;r enhver, som mig annammer,</l>
+<l>Til en <seg type="com" n="com98">K&#x00E6;mpe<!--helt.--></seg> k&#x00E6;k og bold,</l><!-- evt. overordnet allusion til Ef 6,10-17 -->
+<l>V&#x00E6;rger ham mod Staal og Flammer,</l>
+<l>Med et evigt <seg type="com" n="com99">Demantskjold<!--skjold af diamanter.--></seg>,</l>
+<l><pb type="edition" n="425" ed="US"/>L&#x00E6;rer ham med Kraft at b&#x00E6;re</l>
+<l>Kors og Sv&#x00E6;rd <rs type="bible" key="Sl 23,4" rend="reference1787">i Graadens Dal</rs>,</l>
+<l><pb type="edition" n="351" ed="PS"/>Giennem Spot til evig &#x00C6;re</l>
+<l>Op til mig i <seg type="com" n="com100">Gl&#x00E6;dens Sal<!--de evige boliger, jf. Åb 21,1-4.--></seg>,</l>
+<l>Hvor med evig Klarhed luer</l>
+<l><hi rend="spaced">Lyset i Guds Ki&#x00E6;rlighed,</hi></l>
+<l>Hvor <seg type="com" n="com101">forklaret<!--herliggjort.--></seg> han beskuer,</l>
+<l>Hvad i Verden ingen veed,</l>
+<l>Hvad i <seg type="com" n="com102">Tid<!--det jordiske, historiske tidsforløb.--></seg> kun <hi rend="spaced">Troe</hi> kan <hi rend="spaced">fatte</hi></l>
+<l>Aand i Evighed kun skatte!</l>
+</lg>
+         
+<!-- kontroller: nyt afsnit? ja, bogblokken er mindre på siden end på de øvrige sider; alle afsnit begynder således også med ord efterfulgt af udråbstegn eller Ja,; ikke nyt afsnit i Nordiske Smaadigte, s. 114 f. Udgaven var ikke ordentligt korrekturlæst efter Grundtvigs mening, se Bibliografien, bind 2, s. 129-->
+
+<lg n="3">
+<l><pb type="text" ed="A" n="60" facs="1817_306_4_fax013.jpg"/><pb type="edition" n="286" ed="VU"/>Ja, hvor er en selvklog Daare,</l>
+<l>Som t&#x00F8;r sige, han <hi rend="spaced">begreb</hi></l>
+<l>Helgen-Skarens Sang og Taare,</l>
+<l><hi rend="spaced">Vidnesbyrdet</hi> som den skrev.</l>
+<l>Som sig aldrig lader d&#x00F8;lge,</l>
+<l>Hvordan Vind og Str&#x00F8;m end gaae,</l>
+<l>Tindrer klart <seg type="com" n="com103">paa Tidens B&#x00F8;lge<!--i det historiske tidsforløb (i modsætning til evigheden).--></seg>,</l>
+<l><seg type="com" n="com104">Alt som<!--(næsten betydningstomt fyldord i poetisk stil).--></seg> Stjerner i det Blaa!</l>
+<l>H&#x00F8;r mig <seg type="com" n="com105">Vidskab</seg>! stolt i <seg type="com" n="com106">St&#x00F8;vet<!--i det jordiske.--></seg>!</l>
+<l>H&#x00F8;r og svar nu, <hi rend="spaced"><seg type="com" n="com107">Mande-Vid<!--menneskelig klogskab, forstand.--></seg>!</hi></l>
+<l>Har <hi rend="spaced">du</hi> Helgen-Daaden &#x00F8;vet,</l>
+<l>Eller var den <hi rend="spaced">Daarskabs</hi> <seg type="com" n="com108">Iid<!--gerning.//DDO 3--></seg>?</l>
+<l>Er den din, da &#x00F8;v den atter</l>
+<l>Som en Mand et <seg type="com" n="com109">B&#x00F8;rnev&#x00E6;rk<!--kun lidt værdifuldt eller meget let arbejde.--></seg>!</l>
+<l><seg type="com" n="com110">Kanst<!--kan (præsens, 2. person singularis).--></seg> du ei, da <hi rend="spaced">bliv til Latter!</hi></l><!-- evt. 1 Kor 1,29 -->
+<l><rs type="bible" key="1 Kor 1,20" rend="allusion">Da er <hi rend="spaced">Daarskab</hi> jo kun <hi rend="spaced">st&#x00E6;rk;</hi></rs></l>
+<l>Da har du jo Hans Ord sandet,</l>
+<l><hi rend="spaced">Som din Stolthed har forbandet,</hi></l>
+<l>Da har du beviist Hans Ord:</l>
+<l><rs type="bible" key="1 Kor 1,25" rend="allusion" subtype="bibleStart" n="bible12"/>At <hi rend="spaced">Hans Daarskab</hi> har paa Jord</l>
+<l>Hvad omsonst af alle Kr&#x00E6;fter</l>
+<l><hi rend="spaced">Verdslig <seg type="com" n="com111">Vidskab</seg></hi> leder efter<rs type="bible" key="1 Kor 1,25" rend="allusion" subtype="bibleEnd" n="bible12"/>:</l>
+<l><rs type="bible" key="1 Kor 1,18" rend="allusion" subtype="bibleStart" n="bible13"/><hi rend="spaced">Liv</hi> og <hi rend="spaced">Kraft</hi> som ei forsvinde,</l><!-- evt. kun 1 Kor 1,18 hertil; evt 1 Kor 1,24 -->
+<l><hi rend="spaced">Som kan D&#x00F8;den overvinde.</hi><rs type="bible" key="1 Kor 1,18" rend="allusion" subtype="bibleEnd" n="bible13"/></l>
+</lg>
+
+<lg n="4"> 
+<l><pb type="edition" n="352" ed="PS"/>Ja, det staaer <seg type="com" n="com112">paa B&#x00F8;lgen<!--her: i historien.--></seg> skrevet:</l>
+<l><pb type="text" ed="A" n="61" facs="1817_306_4_fax014.jpg"/><hi rend="spaced">Daarskab <seg type="com" n="com113">Vid<!--menneskelig klogskab, forstand.//ODS 4--></seg></hi> har overlevet;</l>
+<l>Ja det staaer <seg type="com" n="com114">paa B&#x00F8;lgen</seg> <seg type="com" n="com115">bundet<!--fæstet, holdt fast.//ODS 4 --></seg>:</l>
+<l><hi rend="spaced">Daarskab D&#x00F8;d</hi> har overvundet;</l>
+<l>Dybt i Grav sank Verdens Daarer,</l>
+<l>Herrens <seg type="com" n="com116">Vid<!--klogskab, indsigt.--></seg> dem overvandt,</l>
+<l>D&#x00F8;den veeg for Herrens Daarer,</l>
+<l><pb type="edition" n="426" ed="US"/>Verdens <seg type="com" n="com116">Vid</seg> de overvandt.</l>
+<l><hi rend="spaced"><seg type="com" n="com118">Blinden<!--dvs. blind.--></seg> Troe paa <seg type="com" n="com163">Sandheds Tale</seg>,</hi></l>
+<l><hi rend="spaced">Den</hi> var ene <seg type="com" n="com119">Helgen-Vid<!--(i besiddelse af) klogskab, indsigt som en helgens.--></seg>,</l>
+<l><hi rend="spaced">Den</hi> har hv&#x00E6;lvet Kirkens Sale,</l>
+<l>&#x00D8;vet al dens <seg type="com" n="com120">K&#x00E6;mpe-Id<!--kæmpemæssige og heltemodige gerning.--></seg>,</l>
+<l><hi rend="spaced">Den</hi> to Gange <placeName key="his726">Roma</placeName> knuste,</l>
+<l><pb type="edition" n="287" ed="VU"/><hi rend="spaced">Den</hi> var <seg type="comStart" n="com160"/><persName key="pe42">Luthers</persName> faste Borg<seg type="comEnd" n="com160"/>,</l>
+<l><rs type="bible" key="Sl 46,2-4" rend="allusion" subtype="bibleStart" n="bible14"/><hi rend="spaced">Den</hi> gav Roe naar B&#x00F8;lger bruste,</l>
+<l><hi rend="spaced">Den</hi> gav Tr&#x00F8;st og Fryd i Sorg<rs type="bible" key="Sl 46,2-4" rend="allusion" subtype="bibleEnd" n="bible14"/>.</l>
+<l>Ene <hi rend="spaced">den,</hi> det veed vi alle,</l>
+<l><hi rend="spaced">Styrked, tr&#x00F8;sted, kroned <persName key="pe39">Balle</persName>;</hi></l>
+<l><hi rend="spaced">Ene den</hi> har Krandsen bundet</l>
+<l>Hvormed Urnen staaer omvundet.</l>
+<l><hi rend="spaced">Ene den</hi> i ham har <seg type="comStart" n="com121"/>tonet<!--her: farvet.--></l>
+<l>Kirkens, <placeName key="fak14">Danmarks</placeName> gamle Flag<seg type="comEnd" n="com121"/>,</l>
+<l>Bryst og Navn og Snekke kronet,</l>
+<l>Trods al Storm og B&#x00F8;lge-Brag.</l>
+<l><hi rend="spaced">Den</hi> har gjort at Fyrster f&#x00F8;lge</l>
+<l><seg type="com" n="com122">St&#x00F8;vet<!--det afdøde legeme.//ODS 3.4 --></seg> til sit Hvilested,</l>
+<l><hi rend="spaced">Den</hi> har gjort at sig maa d&#x00F8;lge</l>
+<l><pb type="text" ed="A" n="62" facs="1817_306_4_fax015.jpg"/>Vantroe, for hans Minde r&#x00E6;d.</l>
+<l><hi rend="spaced">Den</hi> har gjort at <seg type="com" n="com123">Harpen<!--billedligt om salmesangen.--></seg> toner</l>
+<l>Ved hans Kiste h&#x00F8;itidsfuld.</l>
+<l><hi rend="spaced">Den</hi> har gjort, at Millioner</l>
+<l>Signe skal ham under Muld.</l>
+<l><pb type="edition" n="353" ed="PS"/><hi rend="spaced">Den</hi> har gjort at <placeName key="fak14">Danmarks</placeName> Kirke</l>
+<l>Sank ei ned som Gruus i Grav,</l>
+<l>Og i <hi rend="spaced">den</hi> paa <seg type="com" n="com124">Danne-Virke<!--ordspil dels på det gamle voldanlæg Dannevirke his23, dels på et åndeligt værn for danskerne(, der for Grundtvig var kristeligt og nationalt). readMore: Grundtvig omtolkede billedligt det gamle voldanlæg mod farerne fra syd, Dannevirke, til at være et åndeligt værn, der for ham var kristeligt, men også historisk og nationalt. For at opbygge denne bevidsthed hos danskerne udgav Grundtvig bl.a. tidsskriftet Danne-Virke, hvori mindedigtet over Balle jo netop udkom.--></seg></l>
+<l>Straale skal hans Bispe-Stav.</l>
+<l>H&#x00F8;it skal tone ved hans Minde</l>
+<l>Tit som nu i <seg type="com" n="com125">Danelund</seg>:</l>
+<l><rs type="bible" key="Joh 20,29" rend="reference" subtype="bibleStart" n="bible9"/>&#x201C;<hi rend="spaced">Salig, hvo som troer i Blinde</hi></l><!-- evt. Luk 11,28; Mark 16,16 ; Joh 3,15; Rom 1,16-->
+<l><hi rend="spaced"><seg type="com" n="com126">Sikkre<!--usvigelige, pålidelige.//ODS 3.2 --><!-- »Sikkre, stiltiende udeladelse, da det repræsenterer en anden typografisk smag; intet citationstegn ved verslinjens begyndelse efter moderne praksis --></seg> Ord af <seg type="com" n="com127">Sandheds<!--Kristi, jf. f.eks. Joh 14,6.--></seg> Mund!</hi>&#x201D;<rs type="bible" key="Joh 20,29" rend="reference" subtype="bibleEnd" n="bible9"/></l>
+</lg>
+ 
+<lg n="5">
+<l><persName key="pe39">Balle</persName>! ja, her ved din Kiste</l>
+<l>Stander jeg i Ungdoms Aar,</l>
+<l>Meget som Du aldrig <hi rend="spaced">vidste</hi></l>
+<l>Klarligt for mit &#x00D8;ie staaer,</l>
+<l><seg type="com" n="com128">Alt som<!--ligesom.--></seg> n&#x00E6;ste Sl&#x00E6;gt skal finde</l>
+<l>Meget jeg kun tro'r i Blinde;</l>
+<l>Men jeg vidner h&#x00F8;it og sjunger:</l>
+<l><seg type="com" n="com129">Spotte<!--lad spotte (optativ).--></seg> mig kun Daare-Tunger,</l>
+<l><pb type="edition" n="427" ed="US"/><seg type="com" n="com130">Hykle<!--lad hykle (optativ).--></seg>, hvo som vil, kun Gru!</l>
+<l><rs type="bible" key="Sl 23,4" rend="reference1787" subtype="bibleStart" n="bible10"/>Gid jeg her i <seg type="com" n="com131">St&#x00F8;vets<!--det jordiske, forgængeliges.--></seg> Dale<rs type="bible" key="Sl 23,4" rend="reference1787" subtype="bibleEnd" n="bible10"/></l>
+<l><pb type="edition" n="288" ed="VU"/><seg type="com" n="com132">Trodse maa<!--må stole tillidsfuldt; må pukke.//ODS 3.3  --></seg> paa <seg type="com" n="com133"><hi rend="spaced">Sandheds</hi> Tale</seg></l>
+<l>Mere blindt endnu end Du!</l>
+<l><pb type="text" ed="A" n="63" facs="1817_306_4_fax016.jpg"/>Ja, din Aand, som nu fornemmer,</l>
+<l>Hvad dig her for s&#x00E6;lsomt klang,</l>
+<l>At<!--nemlig at-->, <seg type="com" n="com165">henrykt</seg> af Engle-Stemmer,</l> 
+<l><hi rend="spaced"><persName key="pe294">Kingo</persName></hi> og <hi rend="spaced"><persName key="pe42">Lutherus</persName></hi> sang;</l>
+<l>Sandhed, hvis den m&#x00E6;le kunde,</l><!-- Sandhed > sanded (Nordiske Smaadigte, s. 117 l. 22; Sanded: PS, bind 4, s. 353; US, bind 3, s. 427), evt. tekstfejl??  -->
+<l>Hvad, mens <seg type="com" n="com134">end<!--endnu.--></seg> <seg type="com" n="com135">den<!--her: din, dvs. Balles, Aand.--></seg> var i Muld,</l>
+<l>Jeg fortied ingenlunde,</l>
+<l>Men udsagde veemodsfuld:</l>
+<l>St&#x00F8;rre var din H&#x00E6;der blevet,</l>
+<l>Lysere du havde levet,</l>
+<l>Lagt dig gladere til Roe,</l>
+<l>Hvis i Intet, som i meget,</l>
+<l><seg type="com" n="com136">Tidens<!--samtidens.--></seg> Aand Du havde veget,</l>
+<l><pb type="edition" n="354" ed="PS"/>Som forhaanede din Troe;</l>
+<l><seg type="com" n="com168">Levet kun og d&#x00F8;et paa</seg></l><!--ud fra (overbevisningen om)  -->
+<l><rs type="bible" key="Joh 20,29" rend="allusion">Hvad Du <hi rend="spaced">troed men ei saae.</hi></rs></l>
+</lg>
+
+<lg n="6"><!-- dette sidste afsnit er ikke gengivet i Nordiske Smaadigte -->
+<l>Dog, o <persName key="pe39">Balle</persName>! n&#x00F8;dig minder</l>
+<l>Skjalden her om dine Feil,</l>
+<l>St&#x00F8;rre <seg type="com" n="com169">vist</seg> hans &#x00D8;ie finder</l>
+<l>Hos sig selv i Sandheds Speil;</l>
+<l>Men han skal, thi Pr&#x00E6;ste-Tunger</l>
+<l>Sandhed frit udtale maa,</l>
+<l>Og naar Fr&#x00E6;nden om Dig sjunger,</l>
+<l>Dine Feil maae for ham staae,</l>
+<l>Staae der, for at <hi rend="spaced">Sandhed Prisen</hi></l>
+<l><pb type="text" ed="A" n="64" facs="1817_306_4_fax017.jpg"/><hi rend="spaced">Vinde kan,</hi> som ydes Dig,</l>
+<l>Saa at <hi rend="spaced">ikke Fr&#x00E6;nde-Visen</hi></l>
+<l><hi rend="spaced"><seg type="com" n="com137">Orme-stikkes<!--dvs. bliver ormstukken; bliver fordærvet.//ODS citat, DDO --></seg></hi> med dit Liig;</l>
+<l>Men at det engang <seg type="com" n="com138">til<!--på.--></seg> Thinge</l>
+<l><seg type="com" n="com139">Lyses<!--bekendtgøres (offentligt).//ODS 8 --></seg> maa i <seg type="com" n="com140">Danelund</seg>:</l>
+<l>Bedre end de <seg type="com" n="com141">Piber<!--ordspil på fløjtelignende blæseinstrumenter med skarp tone og orgelpiber.//ODS --></seg> klinge,</l>
+<l>Er den rene <seg type="com" n="com142">Orgelbund<!--(klang) fra bunden af orglet.--></seg>,</l>
+<l>Sang ei Fr&#x00E6;nde smukt om <seg type="com" n="com143">Anden<!--den anden.--></seg>,</l> <!-- ordsprog ?? næppe, efterset Anden, Frænde. Præst-->
+<l>Sagde Pr&#x00E6;st dog sandt om Manden;</l>
+<l>Briste <seg type="com" n="com144">end<!--endog.--></seg> de stramme Str&#x00E6;nge,</l>
+<l><pb type="edition" n="289" ed="VU"/>Skal dog Ordet <seg type="com" n="com145">have Gi&#x00E6;nge<!--virke uhindret.//ODS 1 --></seg>,</l>
+<l>Endt har Kvadet sine Dage,</l>
+<l><pb type="edition" n="428" ed="US"/>Vidnes-Byrdet er tilbage,</l> <!-- bindestreg i eks. 1; ingen, men plads i Aarhusianersamfundet, ELR -->
+<l>Og <hi rend="spaced"><seg type="com" n="com146">opl&#x00F8;st<!--endt; udredt.//ODS 4.1; 6 --></seg>,</hi> men <seg type="com" n="com166">ubeski&#x00E6;mmet</seg></l>
+<l>Kvadet skal i Bogen staae,</l>
+<l><seg type="com" n="com147">Saga<!--historien, jf. Grundtvigs tolkning af den nordiske gudinde Saga myth64  --></seg> har dets Indhold nemmet,</l>
+<l><hi rend="spaced"><persName key="pe39">Balles</persName> Navn skal ei forgaae,</hi></l>
+<l>Det i <hi rend="spaced"><persName key="pe45">Jesu</persName> Navn</hi> indfattet,</l>
+<l>Fundet er i <seg type="com" n="com148">Tidens<!--historiens.--></seg> Bog,</l>
+<l><seg type="com" n="com149">K&#x00E6;mpen<!--det kæmpende og fremragende menneske.//ODS 1.3 og 1.4  --></seg> sank i Muld udmattet,</l>
+<l><hi rend="spaced">Men hans Troe ham frelste dog.</hi></l>
+<l><pb type="edition" n="355" ed="PS"/><seg type="com" n="com150">Troer<!--tro (imperativ pluralis).--></seg> blindt al <seg type="com" n="com164">Sandheds Tale</seg>!</l>
+<l><rs type="bible" key="Joh 20,29" rend="allusion" subtype="bibleStart" n="bible11"/><seg type="com" n="com151">Troer</seg> hvad I aldrig saae<rs type="bible" key="Joh 20,29" rend="allusion" subtype="bibleEnd" n="bible11"/>!</l>
+<l>Da I skal i <seg type="com" n="com170">Klarheds</seg> Sale</l>
+<l><hi rend="spaced">See hvad Troe <seg type="com" n="com152">mon overgaae<!--der overgår tro; (der) hænder for eller overstiger tro.//ODS overgå 4.1 og 5.2  --></seg>.</hi></l>
+</lg>
+
+<fw type="shortLine"/>
+
+</div>
+           
+           
+    
+     
+        </body>
+   </text>   
+  </TEI>

@@ -1,0 +1,413 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/msXSLT.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/msRNC.rnc"?><TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">    <teiHeader>
+        <fileDesc>
+            <titleStmt> <!-- jeg har bygget titleStmt op efter model fra variantfilerne -->
+                <!-- <title type="part" key="1826_433A_txt.xml">Klar op, du Sky paa &#x00D8;ien-Bryn</title>  -->
+                <title rend="main">Danske H&#x00F8;itids-Psalmer til Tusindaars-Festen</title>
+                <title rend="shortForm">ms.2: Klar op, du Sky paa &#x00D8;ien-Bryn</title> 
+                <author>Nicolai Frederik Severin Grundtvig</author>                
+                <editor role="philologist">Else Riisager</editor>
+                <editor role="philologist">Kim Steen Ravn</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.1</idno>
+          <idno type="technic">1.4.0</idno>
+        </edition>
+            </editionStmt>
+            <extent>20 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Aarhus Universitet, Det Teologiske Fakultet</publisher>
+                <distributor>Grundtvig Centeret, Vartov</distributor>
+                
+                <date when="2012-10-31">www.grundtvigsv&#x00E6;rker.dk, version 1.1, 31. oktober 2012</date><!-- <date type="2012-01-31">Version 1.0</date> -->
+            </publicationStmt>
+            
+            <notesStmt>
+                <note type="txt" target="1826_433A_txt.xml">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" type="var" target="1826_433A_ms2.xml">Manuskript</note>
+                
+            </notesStmt>
+            <sourceDesc>
+                <bibl>
+                    <title type="part">Manuskript i Grundtvig-arkivet, fasc. 382, ark 4&#x02DA;: &#x201C;Klar op, du Sky paa &#x00D8;ien-Bryn&#x201D;</title> <!-- (H&#x00F8;itids-Psalmer 1826, III) -->
+                    <author>N.F.S. Grundtvig</author>
+                    <date>1826</date>
+                </bibl>
+            </sourceDesc>
+        </fileDesc><!--<title type="katalogsignatur">  -->
+        <encodingDesc>
+            <projectDesc>
+                <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                <p>Grundtvig Centeret arbejder med:</p>
+                <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                <p>2.a. Teologi og kirke</p>
+                <p>2.b. Demokrati og folkelighed</p>
+                <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                <p>3. Videnudveksling, undervisning og formidling</p>
+            </projectDesc>
+            <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            
+         </encodingDesc>
+        <revisionDesc>
+            <change xml:id="KSR" who="KSR" when="2010-04-22">NSLs stylesheet, til udskrift</change>
+            <change who="KSR" when="2010-05-05">1. kollation</change>
+            <change xml:id="KSG" who="KSG" when="2010-05-06">Min 1. kollation</change>
+            <change who="KSG" when="2010-08-13">Samlet salmerne</change>
+            <change xml:id="ELR" who="ELR" when="2010-11-08">2. kollation</change>
+            <change who="KSG" when="2010-11-25">teiHeader</change>
+            <change who="KSR" when="2010-11-26">teiHeader</change>
+            <change who="KSG" when="2010-12-01">Sidetal og nummerhenvisning til GSV; spaced lavet om til italic; tekstkritisk note indsat</change>
+            <change who="KSG" when="2010-12-02">persName, placeName, bibl</change>
+            <change who="KSR" when="2010-12-02">sendt til Petter</change>
+            <change who="KSG" when="2011-01-05">Header revideret</change>
+            <change who="KSR" when="2011-01-06">flere varianter</change>
+            <change who="KSR" when="2011-02-23">skema, omkodning i forhold til seneste &#x00E6;ndringer</change>
+            <change who="KSR" when="2011-02-24">f&#x00E6;rdigkodet, valideret, teiHeader udfyldt</change>
+            <change who="KSG" when="2011-02-28">hexa ind for &#x00E6;, &#x00F8;, &#x00E5;</change>
+            <change who="ELR" when="2011-12-11">tilrettet teiheader efter variantfilernes; forslag til inds&#x00E6;tning af sidetal og scannet billede</change>
+            <change who="ELR" when="2011-12-12">filnavn rettet; indsat sidetal og faxhenvisning</change>
+            <change who="ELR" when="2011-12-13">rettet s&#x00E5; meget jeg kunne</change>
+            <change who="ELR" when="2012-01-19">gennemgang og tilpasning af kodningen efter wordfilen med den gennemarbejdede tekst</change>
+            <change who="ELR" when="2012-01-27">rettelse af dato for version</change>
+            <change who="ELR" when="2012-03-13">fjernet linebreak;</change>
+            <change who="ELR" when="2012-04-24">sidste rettelser; </change>
+            <change who="ELR" when="2012-05-11">rettet shading</change>
+            <change who="ELR" when="2012-07-02">indsat date i bibl til tekstkilde</change>
+            <change who="ELR" when="2012-07-24">&#x00E6;ndret kortform</change>
+            <change who="ELR" when="2012-10-29">publicationStmt &#x00E6;ndret</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+            <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            <change who="KK" when="2014-03-26">shortForm = menutitel</change>
+            <change who="ELR" when="2014-04-01">prøvet at tilrettet; valideringsproblemer i teiheader</change>
+            <change who="ELR" when="2014-04-29">rettet; mangler tilpasninger i Teiheader,skema</change>
+        </revisionDesc>
+    </teiHeader>
+        <text type="ms">
+                <body> 
+            <div xml:id="ms1826_433A_ms2.xml">
+ 
+                <pb type="text" n="12" ed="A" />
+                <pb type="ms" facs="1826_433A_fax005.jpg" n="1" rend="supp" />
+                
+                
+                
+                <lg n="1">                    
+                    <l>Klar op, du Sky paa &#x00D8;ien-Bryn,</l>
+                    
+                    <l><app type="ms">
+                           <rdg>
+                              <del type="secondDel">Som</del></rdg> <lem type="add">Og</lem>
+                    </app> 
+                    <app type="ms">
+                        <lem type="doubt">skjul</lem><rdg><del type="secondDel">er</del></rdg> </app>
+                    <app type="ms">
+                          <lem type="add">ei</lem>
+                    </app> Solen for vort Syn
+                    <app type="ms">
+                        
+                        <rdg>      
+                            <del type="secondDel">,</del>
+                        </rdg><lem type="add">!</lem>
+                    </app>
+                    </l>
+                    
+                    <l>Bestraal, o Soel, det store V&#x00E6;rk</l>
+                    
+                    <l>
+                        <app type="ms">
+                          <rdg>
+                              <del type="firstDel">Som vidner h&#x00F8;it:</del>
+                          </rdg><lem type="add">Som viser klart,</lem>
+                        </app> Guds Haand er st&#x00E6;rk
+                    </l>
+                    
+                    <l><app type="ms">
+                        
+                        <rdg>      
+                            <l><del type="shading">Og vidner h&#x00F8;it, at tusind Aar</del></l>
+                            <l><del type="shading"><del type="secondDel">Er Ham kun</del> som den Dag i Gaar.</del></l>
+                            
+                        </rdg>
+                        <lem type="add"><l>Og Hans det gode Ord bestaaer</l>
+                            <l>Alt som en Dag, saa tusind Aar!</l></lem>
+                    </app>
+                    </l>
+                    
+                   <!--   <l><app type="ms">
+                        <lem type="add">Alt som en Dag, saa tusind Aar!</lem>
+                        <rdg>      
+                            <del type="shading"><del type="secondDel">Er Ham kun</del> som den Dag i Gaar.</del>
+                        </rdg>
+                    </app>
+                    </l>-->
+                </lg>
+                
+               
+                                
+                <lg n="2">
+                    <l>Vor Pindse-Fest vi holde nu,</l>
+                    
+                    <l>Os rinde s&#x00F8;dt, o Gud, ihu</l>
+                    
+                    <l><app type="ms">
+                        
+                        <rdg>      
+                            <del type="secondDel">Hvad</del>
+                        </rdg><lem type="add">Hvad paa</lem>
+                    </app> den H&#x00F8;itid stor og ski&#x00F8;n
+                    </l>
+                    
+                    <l>Du virket har i Lys og L&#x00F8;n</l>
+                    
+                    <l>For Folk og Stammer trindt paa Jord</l>
+                    
+                    <l>Fra &#x00D8;st til Vest, fra Syd til Nord!</l>
+                </lg>
+                
+               
+                
+                <lg n="3">                    
+                    <l><app type="ms">
+                        <rdg>
+                            <del type="firstDel"><l>O! send os Gnister af den Gl&#x00F8;d</l>
+                               
+                            <l>Du over Tungerne uddi&#x00F8;d,</l></del>                                         
+                                                              
+                            
+                            <del type="secondDel"><l><del type="immediate">I</del> <del type="thirdDel">Og</del> <del type="add">O</del> ski&#x00E6;r os med din Guddoms Haand</l>
+                                <l>I Ki&#x00E6;rlighed, for Tunge-Baand</l>
+                                <l>Og send os Gnister af den Gl&#x00F8;d</l>
+                                <l>Du over L&#x00E6;berne udgi&#x00F8;d</l>
+                                <l>Saa ogsaa vi</l>           
+                            </del>
+                        </rdg>
+                       <lem type="doubt"><l>I Tungers gl&#x00F8;dende Gestalt</l></lem>
+                    </app>
+                    </l>
+                    
+                    <l>Din Aand paa Herrens Venner faldt</l>                    
+                    <l>Saa hvad de h&#x00F8;rde, hvad de saae,</l>                    
+                    <l>Dem levende paa Tungen laae,</l>                    
+                    <l><pb type="ms" facs="1826_433A_fax006.jpg" n="2" rend="supp" />Og L&#x00E6;ben blev din Naades Tolk</l>                    
+                    <l>Med Lys og Liv for alle Folk!</l>
+                </lg>
+                
+               
+                
+                
+                
+                <lg n="4">
+                    <l><pb type="text" n="13" ed="A" />O, send os Gnister af den Gl&#x00F8;d </l>
+                    <l>Du f&#x00F8;rste Pindse-Dag udgi&#x00F8;d, </l>
+                    <l>Og ski&#x00E6;r os med din Guddoms-Haand </l>
+                    <l>I Ki&#x00E6;rlighed, for Tunge-Baand,</l>
+                    <l>L&#x00E6;g os med Aand dit Ord i Mund</l>
+                    <l>Til Herrens Priis af Hjertens Grund!</l>
+                </lg>
+                
+               
+                
+                <lg n="5">
+                    <l>Da f&#x00F8;rst med Fynd vi prise kan</l>
+                    <l>Din Godhed over Dane-Land,</l>
+                                        
+                    <l><app type="ms">
+                        
+                        <rdg>
+                            <del type="immediate"><l>Hvor Christi Kirke</l></del>
+                        </rdg>
+                        <lem type="doubt">Hvor Jesu Christi Kirke</lem>
+                    </app> staaer</l>
+                    
+                    <l>Urokket alt i <app type="ms">                     
+                        <rdg><del type="immediate">T</del></rdg><lem type="doubt">t</lem></app>usind Aar,</l>
+                    
+                    <l>O<app type="ms"><rdg><del type="immediate">g</del></rdg><lem type="doubt">p</lem></app>bygt <app type="ms">
+                        <rdg>
+                            <del type="secondDel">i</del>
+                        </rdg><lem type="add">en</lem>
+                    </app> hellig Aften-Stund</l>
+                    
+                    <l>Paa Ordets faste Klippe-Grund!</l>
+                </lg>
+                
+               
+                
+                <lg n="6">
+                    <l>Dog prise vil vi, som vi kan,</l>
+                    <l>Den Stjerne over Dane-Land,</l>
+                    <l>Som paa en hellig Pindse-Fest</l>
+                    
+                    <l>Os gav Ansgar til 
+                        <app type="ms">
+                            
+                            <rdg>
+                                <del type="secondDel">D&#x00F8;be-</del></rdg><lem type="add">Jule-</lem></app>Pr&#x00E6;st</l>
+                    
+                    <l>Den Israelit, foruden Svig,</l>
+                    <l>Hvis F&#x00E6;dreland var Himmerig!</l>
+                </lg>
+                
+             
+                
+                
+                
+                <lg n="7">
+                    <l><pb type="text" n="14" ed="A" />Ja, fra den f&#x00F8;rste Martyr-Old</l>
+                    <l>Til <hi rend="underLine">Morten Luther</hi>, ki&#x00E6;k og bold</l>
+                    <l><pb type="ms" facs="1826_433A_fax007.jpg" n="3" rend="supp" />Det glade Budskab Ingen bar</l>
+                    <l>Meer evangelisk end Ansgar</l>
+                    
+                    <l><app type="ms">
+                        
+                        <rdg>
+                            <del type="immediate"><l>Saa iblandt mange Hedning-Folk</l></del>
+                        </rdg>
+                        <lem type="doubt"><l>Saa Det fik aldrig bedre Tolk</l>
+                   
+                            <l>I tusind Aar blandt Hedning-Folk!</l></lem> </app>
+                    </l>
+                </lg>
+                
+                
+                
+                <lg n="8">
+                    <l>Han fulgde trolig Herrens Raad,</l>
+                    
+                    <l><app type="ms">
+                        
+                        <rdg>
+                            <del type="secondDel">Og</del> </rdg><lem type="add">Han</lem>
+                    </app> str&#x00F8;ede S&#x00E6;den ud med Graad,
+                    </l>
+                    
+                    <l>Og tr&#x00F8;sted 
+                    <app type="ms">
+                     
+                        <rdg>
+                            <del type="immediate">m</del></rdg><lem type="doubt">sig</lem></app> med Herrens Ord</l>
+                    
+                    <l>Naar Stormen over Heden foer,</l>
+                    
+                    <l><app type="ms">
+                        
+                        <rdg>
+                            <del type="secondDel">Ja,</del> </rdg><lem type="add">Ham</lem>
+                    </app> haabed fast, sin Neg engang</l>
+                    
+                    <l>At b&#x00E6;re hjem med Fryde-Sang!</l>
+                </lg>
+                
+                
+                
+                <lg n="9">
+                    <l>Ja, <app type="ms">
+                        herlig,<lem type="add">t var</lem>
+                    </app> o Gud! det Haab</l>
+                    
+                    <l>Du gav din Tjener ved vor <app type="ms">
+                        
+                        <rdg>
+                            <del type="immediate">H</del></rdg><lem type="doubt">Daab,</lem>
+                    </app>
+                    </l>
+                    
+                    <l>At Kirken, som nu blandt os staaer,</l>
+                    <l>Paa denne Dag alt tusind Aar,</l>
+                    <l>Ei skulde rokkes fra sit Sted,</l>
+                    <l>F&#x00F8;r Jord og Himmel f&#x00F8;lge med!</l>
+                </lg>
+                
+              
+                
+                
+                <lg n="10">
+                    <l><pb type="text" n="15" ed="A" />Opfyld det Haab, <app type="ms">
+                        
+                        <rdg>
+                            <del type="immediate">vor</del> <del hand="doubt">?</del> <del type="secondDel">o</del>
+                        </rdg><lem type="add">vor</lem>
+                    </app> Fader god!</l>
+                    
+                    <l>Som slog i Daners Hjerte Rod</l>
+                    <l>Og avlet har alt mangen Gang</l>
+                    <l>Paa Daners Tunge Fryde-Sang</l>
+                    <l>L&#x00E6;g Amen til det gode Ord</l>
+                    <l>Som tr&#x00F8;stet har dit Folk i Nord!</l>
+                </lg>
+                
+               
+                
+                <lg n="11">                    
+                    <l><pb type="ms" facs="1826_433A_fax008.jpg" n="4" rend="supp" />Du h&#x00F8;rde, Gud, den Fryde-Sang</l>
+                    <l>Som h&#x00F8;it fra r&#x00F8;rte Hjerter klang</l>
+                    <l>Naar Daner kvad paa denne Fest:</l>
+                    <l>Gud Hellig-Aand! v&#x00E6;r Du vor Gi&#x00E6;st</l>
+                    <l>Saa vi dit Tempel v&#x00E6;re maa,</l>
+                    <l>Som altid kan dig aabent staae!</l>
+                </lg>
+                
+                <lg n="12">
+                    <l>Du h&#x00F8;rde, Gud, den stille B&#x00F8;n,</l>
+                    <l>De dybe Hjerte-Suk i L&#x00F8;n,</l>
+                    <l>Som h&#x00F8;iere end Klippens &#x00D8;rn</l>
+                    <l>Sig svang for B&#x00F8;rn og B&#x00F8;rne-B&#x00F8;rn</l>
+                    <l>Til Ham, hvis rige Miskundhed</l>
+                    <l>Skal spores giennem tusind Led!</l>
+                </lg>
+                
+               
+                
+                <lg n="13">
+                    <l>O, lad da Mai af B&#x00F8;ge-Skov</l>
+                    <l>I Kirken plantes Dig til Lov,</l>
+                    <l>Og Daners Tunge paa sin Viis</l>
+                    <l>Forkynde h&#x00F8;it din Godheds Priis,</l>
+                    
+                    <l>Saal&#x00E6;nge under Hytte-<app type="ms"><rdg><del type="immediate">D</del></rdg><lem type="doubt">Tag</lem>
+                    </app>
+                    </l>
+                    
+                    <l>End helligholdes Pindse-Dag!</l>
+                </lg>
+                
+               
+                
+                <lg n="14">
+                    <l>For&#x00F8;g til Verdens Ende saa</l>
+                    <l>Paa Marken lukt med B&#x00F8;lgen blaa,</l>
+                    <l>Den Dane-Flok som hist engang</l>
+                    <l>Ansgar skal see med Fryde-Sang;</l>
+                    <l>Ja, bind i Negen os med dem</l>
+                    <l>Han gladelig skal f&#x00F8;re frem!</l>
+                </lg>
+            </div>
+        </body>
+        </text>
+</TEI>

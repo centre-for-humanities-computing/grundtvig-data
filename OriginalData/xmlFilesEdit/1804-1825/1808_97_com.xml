@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/comXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/comRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+    <teiHeader>
+        
+        <fileDesc>
+            <titleStmt>
+                <title rend="main">Indbydelse til Gamle Nordens Venner</title>
+                <title rend="shortForm">Indbydelse til Gamle Nordens Venner</title>
+                <author>Jon Tafdrup</author>
+                <editor role="editor2">dr.phil. Flemming Lundgreen-Nielsen</editor>
+                <editor role="editor3">Klaus Nielsen</editor>
+                <editor role="editor1">Vibeke A. Pedersen</editor>
+            </titleStmt>
+            <editionStmt>
+                <edition>
+          <idno type="content">1.3</idno>
+          <idno type="technic">1.5.1</idno>
+        </edition>
+            </editionStmt>
+            <extent>10 KB</extent>
+            
+            <publicationStmt>
+                <availability status="restricted"><p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p></availability>
+                <publisher>Faculty of Arts, Aarhus University</publisher>
+                <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                
+                <date when="2014-05-01">www.grundtvigsv&#x00E6;rker.dk, version 1.4, 1. maj 2014</date>
+            </publicationStmt>
+            
+            <notesStmt>
+                <note target="1808_97_txt.xml" type="txt">L&#x00E6;setekst</note>
+                <note xml:id="thisFile" target="1808_97_com.xml" type="com">Punktkommentar</note>
+            </notesStmt>
+            
+            
+            <sourceDesc><p /></sourceDesc>
+        </fileDesc>
+<encodingDesc>
+                <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+                </projectDesc>
+                <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+                <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+            </editorialDecl>
+            </encodingDesc>
+<revisionDesc>
+                <change xml:id="KSR" who="KSR" when="2013-02-12">comFil</change>
+                <change xml:id="JT" who="JT" when="2013-02-13">F&#x00F8;rste gennemskrivning af kommentarer</change>
+                <change who="JT" when="2013-02-15">Kommentarer skrevet</change>
+                <change who="JT" when="2013-02-27">Kommentarer skrevet</change>
+                <change who="JT" when="2013-03-01">Kommentarer skrevet</change>
+                <change who="JT" when="2013-03-15">F&#x00E5; rettelser indf&#x00F8;rt</change>
+                <change who="JT" when="2013-05-01">Unicodes indsat</change>
+                <change who="JT" when="2013-05-03">registeropm&#x00E6;rkning</change>
+                <change who="JT" when="2013-05-06">Sidste egenkontrol f&#x00F8;r 1. redaktion</change>
+                <change who="JT" when="2013-05-17">Com tilf&#x00F8;jet efter intern redaktion v. VAP. Fra com100.</change>
+                <change who="JT" when="2013-05-17">Com4 og 62 udg&#x00E5;r efter VAP.</change>
+                <change who="JT" when="2013-05-21">lidt hall&#x00F8;j efter intern redaktion</change>
+                <change who="JT" when="2013-06-25">gennemskrivning efter ekstern redaktion (FLN). Tilf&#x00F8;jelser af com fra 400 og opefter.</change>
+                <change who="JT" when="2013-08-19">enkelte sm&#x00E5;ting efter 2. intern redaktion ved VAP.</change>
+                <change who="JT" when="2013-09-04">enkelte sm&#x00E5;ting efter 3. intern redaktion ved KN.</change>
+                <change who="JT" when="2013-10-04">Til upload 1.4: Vedr. de kollationerede eksemplarer i txr: Proveniensen af eksemplar 1 er rettet fra 'Grundtvig-Bibliotekets eksemplar' til 'Grundtvigs V&#x00E6;rkers eget eksemplar'</change>
+                <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+                <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+            </revisionDesc>
+    </teiHeader>
+    <text type="com">
+        <body>
+            
+            <note xml:id="com1">
+<!--lemma: Jeg offrer mit Liv og min Kraft til at reise
+							
+							Paa Hedenolds Gravh&#x00F8;i en talende Sten,
+							
+							Med Runer ombeltet, saa h&#x00F8;it den skal kneise
+							
+							Paa Valhals Ruiner og K&#x00E6;mpernes Ben,
+							
+							Om Nornerne undennde mig Livet at friste,
+							
+							Om Odin mig l&#x00E6;rer de Stave at riste,
+							
+							Saa dybt dem at grave med Sands og med Kraft.-->
+                <p>Mottoet er en let omskrivning af strofe 4 fra tilegnelsesdigtet &#x201C;Til Justitsraad <persName key="pe5">Pram</persName>&#x201D; i <rs type="title" key="title76">
+<hi rend="italic">Nordens Mytologi</hi> 1808</rs>, s. [III-VI], som lyder: &#x201C;Jeg ofrer mit Liv og min Kraft til at reise / Paa Hedenolds Gravh&#x00F8;i en talende Sten, / Med Runer ombeltet, saa h&#x00F8;it den skal kneise / Paa <hi rend="italic">Valhals</hi> Ruiner, paa <hi rend="italic">Heltenes</hi> Ben, / Om <hi rend="italic">Nornerne</hi> unde mig Livet at friste, / Om <hi rend="italic">Odin</hi> mig l&#x00E6;rer de Stave at riste, / Saa dybt dem at grave med Sands og med Kraft&#x201D; (<rs type="title" key="title76">1808</rs>, s. [V]).</p> 
+            </note>
+            
+            <note xml:id="com2">
+<!--lemma: talende Sten-->
+                <p>runesten.</p>
+            </note>
+            
+            
+            <note xml:id="com100">
+<!-- lemma. K&#x00E6;mpernes -->
+            <p>krigernes, heltenes.</p>
+            </note>
+            
+            <note xml:id="com49">
+<!-- lemma: Livet at friste -->
+                <p>at opretholde livet.</p>
+<!-- efter FLN. F&#x00F8;r: beholde livet -->
+            </note>
+            
+            <note xml:id="com3">
+<!--lemma: de Stave at riste-->
+                <p>her i betydningen: runetegn.</p>
+                    
+                    <!--Runestave var af tr&#x00E6;, hvori der med en kniv var udsk&#x00E5;ret (ristet) runer. Runerne p&#x00E5; runesten var formentligt udhugget med en spidshammer.-->
+<!-- planket fra Vibeke --> <!-- omskrevet efter FLNs forslag -->
+            </note>
+            
+            <note xml:id="com400">
+<!-- riste -->
+                <p>indridse eller indhugge.</p>
+            </note>
+            
+            
+            <note xml:id="com101">
+<!-- lemma: grave -->
+            <p>gravere, dvs. indgravere eller indridse.</p>
+            </note>
+            
+            
+            <note xml:id="com50">
+<!--lemma: Sands-->
+                <p>mening eller fornuft.<!-- planket fra Vibeke -->
+</p>
+            </note>
+            
+          <!--  UDG&#x00C5;R efter intern red.  <note xml:id="com4">-->
+<!--lemma: et Heelt,-->
+             <!--    <p>dvs. et hele, helhed.</p>
+            </note>  -->
+            
+            <note xml:id="com5">
+<!--lemma: Sjeniet-->
+                <p>geniet.</p>
+            </note>
+            
+            <note xml:id="com6">
+<!--lemma: borget-->
+                <p>l&#x00E5;nt.</p>
+            </note>
+            
+            <note xml:id="com200">
+<!-- lemma: grundet -->
+            <p>dvs. er grundet, bygget p&#x00E5;.</p>
+            </note>
+            
+            
+            <note xml:id="com7">
+<!--lemma: N&#x00F8;dt&#x00F8;rft-->
+                <p>behov.</p>
+            </note>
+            
+            <note xml:id="com8">
+<!--lemma: vanh&#x00E6;ldedes-->
+                <p>sk&#x00E6;mmedes, misr&#x00F8;gtedes.</p>
+            </note>
+            
+            <note xml:id="com9">
+<!--lemma: Sjeni-->
+                <p>geni.</p>
+            </note>
+            
+            <note xml:id="com401">
+<!-- gaa im&#x00F8;de -->
+            <p>im&#x00F8;deg&#x00E5;, bek&#x00E6;mpe.</p> <!-- Ny com, efter FLN -->
+            </note>
+            
+            <note xml:id="com402">
+<!-- med F&#x00F8;ie -->
+            <p>med rette.</p> <!-- Ny com, efter FLN -->
+            </note>
+            
+            <note xml:id="com403">
+<!-- Straalekrands -->
+            <p>glorie.</p> <!-- Ny com, efter FLN -->
+            </note>
+            
+            
+            <!--<note xml:id="com11"><!-\-lemma: stundum-\->
+                <p>stundom, snart</p>
+            </note>-->
+<!-- udg&#x00E5;r p&#x00E5; FLNs foranledning -->
+            
+           <!-- <note xml:id="com12">-->
+<!--lemma: heel -->
+               <!-- <p>i sin helhed.</p>
+            </note>-->
+            
+            <note xml:id="com13">
+<!--lemma: Vilkaarets Furie-->
+                <p>heftig uberegnelighed, tilf&#x00E6;ldighed.</p>
+            </note>
+            
+            <note xml:id="com103">
+<!--lemma: kunne-->
+                <p>kan (pr&#x00E6;sens pluralis af &#x2018;kunne&#x2019;).</p>
+            </note>
+            
+            <note xml:id="com104">
+<!--lemma: kunne-->
+                <p>kan (pr&#x00E6;sens pluralis af &#x2018;kunne&#x2019;).</p>
+            </note>
+            
+            <note xml:id="com404">
+<!-- lide -->
+            <p>skrider frem (pr&#x00E6;sens pluralis).</p>
+            </note>
+            
+            
+            <note xml:id="com14">
+<!--lemma: Held os-->
+                <p>tilr&#x00E5;b, &#x2018;hvor lykkeligt for os&#x2019;.</p>
+            </note>
+            
+         <!--    <note xml:id="com15"> -->
+<!--lemma: Held os-->
+               <!--  <p>tilr&#x00E5;b, &#x2018;hvor lykkeligt for os&#x2019;.</p>
+            </note> -->
+            
+            <note xml:id="com16">
+<!--lemma: Nordens kraftige Old-->
+                <!--<p>Nordens m&#x00E6;gtige oldtid.</p>-->
+                <p>m&#x00E6;gtige tidsalder, her: oldtid.</p> <!-- efter FLN -->
+            </note>
+            
+           <!--    <note xml:id="com17"> -->
+<!--lemma: Held os-->
+               <!--  <p>tilr&#x00E5;b, &#x2018;hvor lykkeligt for os&#x2019;.</p>
+            </note> -->
+            
+            <note xml:id="com18">
+<!--lemma: ... b&#x00F8;lgende Hav freded om Oldtidens Aand-->
+                <p>let omskrevet citat af <persName key="pe3">Oehlenschl&#x00E6;gers</persName> digt <rs type="title" key="title299">&#x201C;Island&#x201D;</rs>, vers 4, der lyder: &#x201C;Bredt dit b&#x00F8;lgende Hav freder om Oldtidens Aand&#x201D; (fra <rs type="title" key="title75">
+<hi rend="italic">Poetiske Skrifter</hi> 1805</rs> bind 1, s. 233).</p>
+            </note>
+            
+            <note xml:id="com51">
+<!--lemma: fromme-->
+                <p>her: gudsfrygtige.</p>
+            </note>
+            
+            <note xml:id="com19">
+<!--lemma: hine herlige Mindesm&#x00E6;rker fra Islands Arnesteder-->
+                
+                <p>dvs. de islandske middelalderh&#x00E5;ndskrifter, som blev indsamlet fra islandske private samleres hjem, f&#x00F8;rst og fremmest l&#x00E6;rde skolefolk, pr&#x00E6;ster og bisper.</p> <!-- ny com skrevet efter FLN -->
+                
+                <!--<p>dvs. de islandske middelalderh&#x00E5;ndskrifter, som blev indsamlet og bragt til K&#x00F8;benhavn af isl&#x00E6;ndingen <persName key="pe385">&#x00C1;rni Magn&#x00FA;sson</persName>.</p>-->
+            </note>
+            
+            <note xml:id="com20">
+<!--lemma: trindt-->
+                <p>omkring.</p>
+            </note>
+            
+            <note xml:id="com56">
+<!-- lemma: Tidernes dorske Vanart -->
+                <p>tidernes ford&#x00E6;rv.</p>
+            </note>
+            
+            <note xml:id="com57">
+<!-- lemma: begrov -->
+                <p>begravede.</p>
+            </note>
+            
+            <note xml:id="com21">
+<!--lemma: at endelig selv Luen skilte sig &#x00E6;rb&#x00F8;dig og vovede  ei at fort&#x00E6;re de hellige Levninger!!!-->
+                <p>Grundtvig hentyder formentlig til K&#x00F8;benhavns brand i 1728, hvor dele af <persName key="pe385">&#x00C1;rni Magn&#x00FA;ssons</persName> bibliotek gik til, mens h&#x00E5;ndskrifterne for st&#x00F8;rsteparten slap uskadt; endvidere til branden i 1795 samt til den omfattende brand i byen under det engelske bombardement i 1807, hvor skrifterne i det store og hele endnu en gang blev forsk&#x00E5;net.</p>
+            </note>
+            
+            <note xml:id="com22">
+<!--lemma: vanh&#x00E6;ldede Sagn-->
+                <p>Grundtvig hentyder formentlig til, at sagnene i hans &#x00F8;jne var usikkert eller utilstr&#x00E6;kkeligt overleveret.</p> <!-- efter FLN -->
+                <!--<p>skamferede, misr&#x00F8;gtede.</p>-->
+            </note>
+            
+            <note xml:id="com500">
+<!--lemma: og-->
+                <p>ogs&#x00E5;.</p>
+            </note>
+            
+            <note xml:id="com23">
+<!--lemma: saa-->
+                <p>s&#x00E5;ledes.</p>
+            </note>
+            
+            <!--<note xml:id="com24"><!-\-lemma: stundum-\->
+                <p>stundom, snart.</p>
+            </note>-->
+<!-- udg&#x00E5;r p&#x00E5; FLNs foranledning-->
+            
+            <note xml:id="com105">
+<!-- lemma: K&#x00E6;mpekreds -->
+            <p>samling af krigere, helte.</p>
+            </note>
+            
+            <!--<note xml:id="com106"><!-\- lemma: henveire -\->
+            <p>fjerne, bortjage.</p>
+            </note>-->
+<!-- udg&#x00E5;r p&#x00E5; FLNs foranledning -->
+            
+            <note xml:id="com405">
+<!-- friste mer end Plantens Liv -->
+                <p>f&#x00F8;re mere end et vegetativt (passivt) liv som en plantes.</p> <!-- fra FLN -->
+            </note>
+            
+            
+            <note xml:id="com25">
+<!--lemma: og nys aabnede jeg min Bane ved at fremstille det v&#x00E6;ldige Asalivs Omrids-->
+                <p>Grundtvig hentyder til sit f&#x00F8;rste store skrift om Nordens oldtid, nemlig <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>,</hi> der udkom den 5. december 1808 (jf. <hi rend="italic">
+<rs type="title" key="title189">Adresseavisen</rs>,</hi> nr. 477, 5. december, 1808).</p>
+            </note>
+            
+            <note xml:id="com26">
+<!--lemma: da Asamanden Odin inddrog i Nord, indtil den Stund, da Palnatoke str&#x00E6;bte, forg&#x00E6;ves i Jomsborg at f&#x00E6;ngsle den flygtende Kraft og rejse et unedbrydeligt Tempel for de styrtende Aser-->
+                <p>Grundtvig l&#x00E6;gger op til at behandle en epoke p&#x00E5; mere end 1000 &#x00E5;r. If&#x00F8;lge historikeren <persName key="pe7">Peter Friederich Suhm</persName> indvandrede Odin i Norden o. 50 f.Kr. (<rs type="title" key="title2257">Suhm 1782</rs>, s. 22), og <rs type="myth" key="myth506">Palnatoke</rs> d&#x00F8;de 1002 e.Kr. (<rs type="title" key="title2258">Suhm 1787</rs>, s. 247). Grundtvig betragtede ligesom <persName key="pe7">Suhm</persName> den hedenske h&#x00F8;vding, <rs type="myth" key="myth506">Palnatoke</rs> (eller <rs type="myth" key="myth506.a">Toke af Julin</rs> if&#x00F8;lge <rs type="title" key="title83">Saxo</rs>) som en historisk person (<rs type="title" key="title13">Lundgreen-Nielsen 1965</rs>, s. 100). <rs type="myth" key="myth506">Palnatoke</rs> levede i en brydningstid ved overgangen fra hedenskab til kristen middelalder. I <rs key="title2256" type="title">
+<hi rend="italic">Sagaen om jomsvikingerne</hi>
+</rs> skildres denne overgang, fra tiden under den sidste hedenske konge, <persName key="pe412">Gorm den Gamle</persName>, til tiderne under hans efterkommere, <persName key="pe299">Harald Bl&#x00E5;tand</persName> og <persName key="pe444">Svend Tvesk&#x00E6;g</persName>, der begge antog kristendommen. <rs type="myth" key="myth506">Palnatoke</rs> fik overdraget landet Jom (formentlig identisk med &#x00F8;en Wolin ved udmundingen af Oder i den nordvestlige del af det nuv&#x00E6;rende Polen). Der byggede han f&#x00E6;stningen Jomsborg, hvor han etablerede et hedensk krigersamfund med egne love. Under <rs type="myth" key="myth506">Palnatokes</rs> herred&#x00F8;mme efterlevedes lovene, men efter hans d&#x00F8;d gik samfundet i opl&#x00F8;sning moralsk og konkret.</p>
+            </note>
+            
+            <note xml:id="com52">
+<!-- Asamanden -->
+                <p>Grundtvig er her p&#x00E5;virket af <persName key="pe7">Suhms</persName> bog, <hi rend="italic">
+<rs type="title" key="title23">Om Odin og den Hedniske Gudel&#x00E6;re og Gudstieneste udi Norden</rs>
+</hi> (1771, s. 63 f.), der beskriver, hvordan en mand ved navn Odin ved hj&#x00E6;lp af trolddomskunster tiltog sig magt i Norden og af senere generationer blev tillagt guddommelighed.</p>
+            </note>
+            
+            <note xml:id="com53">
+<!-- inddrog -->
+                <p>drog ind.</p>
+            </note>
+            
+           <!-- <note xml:id="com65"><!-\- f&#x00E6;ngsle -\->
+                <p>fastholde.</p>                       
+            </note>--> <!-- udg&#x00E5;r efter FLN -->
+            
+            <!--<note xml:id="com66"><!-\- flygtende -\->
+                <p>svindende, formindskende.</p>
+            </note>--> <!-- udg&#x00E5;r efter FLN -->
+            
+            
+            
+            <note xml:id="com29">
+<!--lemma: &#x00C3;&#x2020;tm&#x00E6;nd-->
+                <p>sl&#x00E6;gtninge, her: efterkommere.</p>
+            </note>
+            
+        <!--  <note xml:id="com62"> --> <!-- lemma: omsonst -->
+               <!--   <p>forg&#x00E6;ves.</p>
+            </note>  -->
+     
+            <note xml:id="com32">
+<!--lemma: Kvadene om de rige Guders Kamp-->
+                <p>dvs. kvadene fra <hi rend="italic">
+<rs type="title" key="title121">Den &#x00C6;ldre Edda</rs>
+</hi>.</p>
+            </note>
+     
+     <note xml:id="com107">
+<!-- lemma: rige -->
+     <p>m&#x00E6;gtige.</p>
+     </note>
+     
+            <note xml:id="com63">
+<!-- lemma: Hin -->
+                <p>dvs. de navnl&#x00F8;se skjalde.</p>
+            </note>
+            
+            <note xml:id="com108">
+<!-- lemma: gemte -->
+            <p>bevarede.</p>
+            </note>
+            
+            <note xml:id="com109">
+<!-- lemma: K&#x00E6;mpernes -->
+            <p>krigernes, heltenes.</p>
+            </note>
+            
+            <note xml:id="com501">
+<!-- lemma: Idr&#x00E6;tter -->
+            <p>gerninger.</p>
+            </note>
+            
+            <note xml:id="com64">
+<!-- lemma: kaarede -->
+            <p>valgte.</p> <!-- efter FLN -->
+                <!--<p>udn&#x00E6;vnte.</p>-->
+            </note>
+            
+            <note xml:id="com34">
+<!--lemma: i den konstfri, trohjertige Sagastil-->
+                <p>dvs. i prosaform. Den prosaiske sagastil er opbygget stilistisk enkelt i sideordnede hoveds&#x00E6;tninger (paratakse). Sagaerne skildrer handlingsgangen objektivt, dvs. ikke farvet af fort&#x00E6;lleren, og de anvender ikke klassiske, retoriske virkemidler som figurer og troper.</p>
+            </note>
+            
+            <note xml:id="com201">
+<!-- lemma: konstfri -->
+               <p>enkle, ukunstlet, uden kunst, dvs. uden versrytme og bogstavrim.</p> <!-- efter FLN -->
+                <!-- <p>naturlige og enkle.</p>-->
+            </note>
+            
+            
+            <note xml:id="com406">
+<!-- lemma: trohjertige -->
+            <p>simple, troskyldige.</p>
+            </note>
+            
+            
+            <note xml:id="com35">
+<!--lemma: fremt&#x00E6;lle-->
+                <p>fort&#x00E6;lle.</p>
+            </note>
+            
+            <note xml:id="com36">
+<!--lemma: at str&#x00E6;be i bundne Stave op mod den dramatiske Form-->
+                <p>dvs. at gengive fort&#x00E6;llingerne som drama p&#x00E5; vers.</p>
+            </note>
+            
+            <note xml:id="com202">
+<!-- lemma: bundne Stave -->
+                <p>bunden poetisk stil.</p>
+            </note>
+            
+            <note xml:id="com37">
+<!--lemma: Tirfing: Dv&#x00E6;rges farlige, aftvungne Gave -->
+                <p>Sv&#x00E6;rdet <rs type="myth" key="myth505">Tyrfing</rs> (eller Tirfing) kendes fra <hi rend="italic">
+<rs type="title" key="title803">Sagaen om Herv&#x00F8;r og Heidrek</rs>,</hi> der findes overleveret i flere afvigende h&#x00E5;ndskrifter. <rs type="myth" key="myth516">Svafrlami</rs>, <rs type="myth" key="myth59">Odins</rs> s&#x00F8;nnes&#x00F8;n, tvinger dv&#x00E6;rgene <rs type="myth" key="myth515">Durin</rs> og <rs type="myth" key="myth173">Dvalin</rs> til at smede <rs type="myth" key="myth505">Tyrfing</rs>, et sv&#x00E6;rd, der bringer sejr i b&#x00E5;de krig og tvekamp. Ved overdragelsen forbander <rs type="myth" key="myth173">Dvalin</rs> sv&#x00E6;rdet: hver gang det tr&#x00E6;kkes, skal det forvolde en mands d&#x00F8;d. Desuden skal det forvolde tre store ugerninger.</p>
+<note type="readMore">
+<p>Grundtvig kendte denne saga, som han gendigtede i 1809 og lod trykke &#x00E5;ret efter i <hi rend="italic">
+<rs type="title" key="title1402">Idunna. En Nytaarsgave for 1811</rs>
+</hi> (jf. <rs type="title" key="title13">Lundgreen-Nielsen 1965</rs>, s. 97-99 og <rs type="title" key="title14">Lundgreen-Nielsen 1980</rs>, s. 307).</p>
+</note>
+            </note>
+           
+            <note xml:id="com60">
+<!-- lemma: Hjalmars Bane -->
+                <p>If&#x00F8;lge <hi rend="italic">
+<rs type="title" key="title803">Sagaen om Herv&#x00F8;r og Heidrek</rs>
+</hi> stred <rs type="myth" key="myth458">Hjalmar</rs>, som var hirdsmand hos svenskekongen <rs type="myth" key="myth493">Yngve</rs>, mod bes&#x00E6;rken <rs type="myth" key="myth189">Angantyr</rs>, der var i besiddelse af sv&#x00E6;rdet <rs type="myth" key="myth505">Tyrfing</rs>. <rs type="myth" key="myth458">Hjalmar</rs> overvandt <rs type="myth" key="myth189">Angantyr</rs>, men d&#x00F8;de efterf&#x00F8;lgende af sine s&#x00E5;r. En gravh&#x00F8;j rejstes for hver af dem.</p>
+            </note>
+            
+            
+            <note xml:id="com61">
+<!-- lemma:  det underlige Sv&#x00E6;rd, som den rasende Hervor udrev af H&#x00F8;ien og de D&#x00F8;des Vold, sk&#x00F8;nt hun vidste, at det maatte udslette hendes &#x00C6;t -->
+                <p>If&#x00F8;lge <rs type="title" key="title803">
+<hi rend="italic">Sagaen om Herv&#x00F8;r og Heidrek</hi>
+</rs> var <rs type="myth" key="myth381">Herv&#x00F8;r</rs> datter af <rs type="myth" key="myth189">Angantyr</rs>. Hun drog til Sams&#x00F8;, hvor faderen l&#x00E5; begravet i en h&#x00F8;j med sv&#x00E6;rdet <rs type="myth" key="myth505">Tyrfing</rs>, talte til ham og bad ham v&#x00E5;gne. Hun forlangte at f&#x00E5; <rs type="myth" key="myth505">Tyrfing</rs> udleveret og lod sig ikke p&#x00E5;virke af den d&#x00F8;de <rs type="myth" key="myth189">Angantyrs</rs> advarsler. H&#x00F8;jen &#x00E5;bnede sig, og sv&#x00E6;rdet blev kastet ud til hende.</p>
+            </note>
+            
+            <note xml:id="com54">
+<!-- underlige -->
+                <p>overnaturlige, forheksede. Sv&#x00E6;rdet har en d&#x00F8;dbringende egenvilje.</p>
+                </note>
+                
+                   
+      <!--      <note xml:id="com38">-->
+<!--lemma: &#x00C3;&#x2020;t-->
+                <!--<p>sl&#x00E6;gt.</p>
+            </note>-->
+            
+            <note xml:id="com39">
+<!--lemma: hvem som h&#x00F8;rte een Lyd af Jettekvinders Grottesang, da de mole Guld og D&#x00F8;d til Frode-->
+                <p>I <rs type="title" key="title781">&#x201C;Grottesangen&#x201D;</rs>, der kun er overleveret som et kvad p&#x00E5; 25 strofer i to manuskripter til <hi rend="italic">
+<rs type="title" key="title122">Snorres Edda</rs>,</hi> maler to <rs type="myth" key="myth111">j&#x00E6;ttekvinder</rs>, <rs type="myth" key="myth448">Fenja</rs> og
+               <rs key="myth449" type="myth">Menja</rs>, guld p&#x00E5; en stor kv&#x00E6;rn. Da de tvinges til at male mere guld til <rs key="myth137" type="myth">kong Frode</rs>, sp&#x00E5;r de om hans kommende d&#x00F8;d. <rs type="myth" key="myth137">Frode</rs> er s&#x00E5; beg&#x00E6;rlig efter guld, at han lader dem arbejde
+               for h&#x00E5;rdt. Mens de synger om undergang og d&#x00F8;d, maler de derfor en h&#x00E6;r frem, hvis
+               leder, <rs type="myth" key="myth34">Helge</rs>, dr&#x00E6;ber <rs type="myth" key="myth137">Frode</rs>.<!-- VAP -->
+</p>
+            </note>
+            
+            <note xml:id="com59">
+<!-- lemma: mole -->
+                <p>malede, dvs. kv&#x00E6;rnede (pr&#x00E6;teritum pluralis).</p>
+            </note>
+            
+                              
+            <note xml:id="com55">
+<!-- min Udsigt over Gudelivet -->
+                <p>dvs. Grundtvigs <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>,</hi> der udkom den 5. december 1808.</p>
+            </note>
+            
+            <note xml:id="com111">
+<!-- lemma: Udsigt -->
+                <p>oversigt.</p>
+            </note>
+           
+          <!-- <note xml:id="com203"><!-\- lemma: Jordens Jetter -\->
+               <p>betegner de jordiske krigere eller k&#x00E6;mper (alts&#x00E5; mennesker), og ikke de overnaturlige v&#x00E6;sener, hvis bolig er i Jotunheim eller Udg&#x00E5;rd, og som nedstammer fra <rs type="myth" key="myth84">Ymer</rs>.</p>
+           </note>--> <!-- udg&#x00E5;r efter FLN -->
+           
+           <note xml:id="com407">
+<!-- lemma: kaarede -->
+           <p>valgte.</p> <!-- efter FLN -->
+           </note>
+           
+           
+            <note xml:id="com42">
+<!--lemma: v&#x00E6;rdelig-->
+                <p>v&#x00E6;rdigt.</p>
+            </note>
+            
+            <note xml:id="com110">
+<!-- jeg har levet -->
+            <p>R&#x00E5;bet &#x2018;vixit&#x2019; (lat.), &#x2018;han har levet&#x2019;, er en eufemisme for &#x2018;han er d&#x00F8;d&#x2019;.<!-- og l&#x00F8;d i det antikke Rom, n&#x00E5;r en forbryder eller krigsfange var blevet henrettet.-->
+</p>
+            </note>
+            
+            <note xml:id="com43">
+<!--lemma: Vilde de M&#x00E6;nd, som den h&#x00E6;derlige Arnas b&#x00F8;d at genreise det flygtede Nord i dets herlige Minder, huske og aldrig mere glemme, hvis Stol de kl&#x00E6;de, og hvilket ypperligt Hverv dem blev givet-->
+<p>Grundtvig sigter her til medlemmerne af Den Arnamagn&#x00E6;anske Kommission.</p>
+<note type="readMore">
+<p>
+<persName key="pe385">&#x00C1;rni Magn&#x00FA;sson</persName> testamenterede kort inden sin d&#x00F8;d den 7. januar 1730 sin samling af h&#x00E5;ndskrifter, trykte b&#x00F8;ger og formue til K&#x00F8;benhavns Universitet. Han stiftede desuden et legat til fremme af studiet af de nordiske oldskrifter og deres udgivelse. F&#x00F8;rst i 1760 blev fundatsen skrevet, og i 1772 blev Den Arnamagn&#x00E6;anske Kommission, der skulle varetage bestyrelsen af legatet, oprettet. Herefter kunne legatets udgivervirksomhed begynde. Pga. f&#x00E5; midler skred kommissionens arbejde kun langsomt frem. Til og med 1809 var s&#x00E5;ledes udgivet ti publikationer (jf. <ref type="web" target="http://arnamagnaeanskekommission.ku.dk/udgivelser/publikationer/">listen over publikationer p&#x00E5; Den Arnamagn&#x00E6;anske Kommissions hjemmeside</ref>).</p>
+</note>
+            </note>
+            
+            <note xml:id="com44">
+<!--lemma: Arnas-->
+                <p>Arnas [Magn&#x00E6;us Philologus]. Latinsk form, som Grundtvig foretrak, af <persName key="pe385">&#x00C1;rni</persName> [Magn&#x00FA;sson].</p>
+            </note>
+            
+           <!-- <note xml:id="com45"><!-\-lemma: hvis Stol de kl&#x00E6;de-\->
+                <p>den, de efterf&#x00F8;lger i arbejdet med de islandske oldskrifter, nemlig <persName key="pe385">&#x00C1;rni Magn&#x00FA;sson</persName>. Med oprettelsen af et legat, havde han til hensigt at sikre udgivelsen af skrifterne efter sin d&#x00F8;d. Fra 1772 blev bestyret af Den Arnamagn&#x00E6;anske Kommission. Se kommentar til <ref type="docIn" target="#com43">Vilde de M&#x00E6;nd, som &#x005B;...&#x005D;.</ref></p>
+            </note>-->
+            
+            <note xml:id="com408">
+<!-- lemma: kl&#x00E6;de -->
+            <p> bekl&#x00E6;der (et embede).</p> <!-- efter FLN -->
+            </note>
+            
+            <note xml:id="com409">
+<!-- lemma: skulle -->
+            <p>skal (pr&#x00E6;sens pluralis).</p> <!-- efter FLN -->
+            </note>
+            
+            <note xml:id="com46">
+<!--lemma: &#x00C6;tm&#x00E6;nd-->
+             <p>her: efterkommere.</p> 
+                <!-- <p>sl&#x00E6;gtninge, dvs. isl&#x00E6;ndingene, der som folk er besl&#x00E6;gtet med danskerne.</p>--> <!-- efter FLN -->
+            </note>
+            
+            <note xml:id="com47">
+<!--lemma: borgede-->
+                <p>her: l&#x00E5;nte.</p>
+            </note>
+            
+            <note xml:id="com48">
+<!--lemma: sat cito si sat bene-->
+                <p>Lat. &#x2018;Er det godt nok, er det ogs&#x00E5; hurtigt nok&#x2019; (overs. Niels W. Bruun). Citatet stammer fra <rs type="title" key="title2260">Hieronymus, epistel 66,9,2</rs>. <persName key="pe1124">Hieronymus</persName> till&#x00E6;gger romeren <persName key="pe1125">Marcus Cato</persName> citatet. Det st&#x00E5;r tillige som afslutning af forordet i 2. bind af <persName key="pe1">Bertel Christian Sandvigs</persName> <hi rend="italic">
+<rs type="title" key="title28">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds Edda</rs>
+</hi> 1785, s. [vii], hvorfra Grundtvig formentlig har det. Han ejede selv bogen, se <ref type="docOut" target="bookInventory1805.xml#docIn57">Bogfortegnelse 1805</ref>, hvor den har nr. 57.</p>
+            </note>
+            
+            
+             <note xml:id="com58">
+<!-- lemma: Dette Kraftens Krampetr&#x00E6;k i D&#x00F8;dsstriden har jeg alt s&#x00F8;gt at fremstille i dramatisk Form, for der, og i Fremstillingen af Gudelivet at have de to Punkter faste, mellem hvilke jeg maa bev&#x00E6;ge mig. -->
+                <p>Grundtvig har p&#x00E5; dette tidspunkt allerede skrevet dramaet om <rs type="myth" key="myth506">Palnatoke</rs>, som kommer til at indg&#x00E5; i <hi rend="italic">
+<rs type="title" key="title1631">Optrin af K&#x00E6;mpelivets Undergang i Nord</rs>
+</hi> (1809); dette drama betragter han som det ene faste punkt. Det andet er formentlig den allerede udgivne <hi rend="italic">
+<rs type="title" key="title76">Nordens Mytologi</rs>,</hi> der udkom den 5. december 1808.</p>
+            </note>
+            
+            <note xml:id="com300">
+<!-- lemma: Optrin -->
+            <p>her: bem&#x00E6;rkelsesv&#x00E6;rdige historie eller handling; dvs. dramaet om <rs type="myth" key="myth506">Palnatoke</rs>, som kommer til at indg&#x00E5; i <hi rend="italic">
+<rs type="title" key="title1631">Optrin af K&#x00E6;mpelivets Undergang i Nord</rs>
+</hi> (1809).</p>
+            </note>
+            
+            
+            <note xml:id="com27">
+<!--lemma: en Oehlenschl&#x00C3;&#x00A4;gers mig end ukendte Drama-->
+                <p>
+<persName key="pe3">Oehlenschl&#x00E4;gers</persName> s&#x00F8;rgespil <hi rend="italic">
+<rs type="title" key="title2162">Palnatoke</rs>
+</hi> udkom officielt f&#x00F8;rst i marts 1809, men var skrevet allerede i 1807. Det cirkulerede i afskrifter og var s&#x00E5;ledes kendt i visse kredse. Det l&#x00E5; f&#x00E6;rdigtrykt i december 1808 (<rs type="title" key="title20">R&#x00F8;nning</rs> 1908, s. 126), og Grundtvig sendte <persName key="pe14">Constance Leth</persName> et eksemplar omkring nyt&#x00E5;r (jf. <hi rend="italic">
+<rs type="title" key="title1570">Poetiske Skrifter I</rs>,</hi> s. 101).</p>
+            </note>
+           
+            
+               
+            <div type="litList">
+              <head xml:id="docIn99">Anvendt litteratur</head>
+                <list type="litList">
+                    
+   <item>Grundtvig, N.F.S. (1808) <rs type="title" key="title76">
+         <hi rend="italic">Nordens Mytologi eller Udsigt over Eddal&#x00E6;ren for dannede M&#x00E6;nd der ei selv ere Mytologer.</hi>
+      </rs> K&#x00F8;benhavn</item>
+                    
+                    <item>Grundtvig, N.F.S. (1809) <rs type="title" key="title1631">
+         <hi rend="italic">Optrin af Nordens K&#x00E6;mpeliv</hi>
+</rs> 2: <hi rend="italic">Optrin af K&#x00E6;mpelivets Undergang i Nord.</hi> K&#x00F8;benhavn</item>
+                    
+                    <item>Grundtvig, N.F.S. (u.&#x00E5;.: 1810) <rs type="title" key="title1402">
+         <hi rend="italic">Idunna. En Nytaarsgave for 1811.</hi>
+      </rs> K&#x00F8;benhavn</item>
+   
+       <item>Grundtvig, N.F.S. (1880-1930) <rs type="title" key="title1570">
+<hi rend="italic">Poetiske Skrifter,</hi>
+      </rs> udg. af Svend Grundtvig 1-9. K&#x00F8;benhavn</item>
+   
+       <item>Hieronimus, Eusebius (1910-1918) <rs type="title" key="title2260">
+         <hi rend="italic">Sancti Eusebii Hieronymi epistulae</hi>
+</rs>, udg. af Hilberg Isidorus 1-3, bind 1 (1910): <hi rend="italic">Epistulae I-LXX.</hi> Wien &amp; Leipzig</item>
+   
+                    <item>
+      <hi rend="italic">Adresseavisen 
+         <hi rend="italic">(<rs type="title" key="title189">Kj&#x00F8;benhavns Kongelig Adressecomptoirs alene privilegerede Efterretninger</rs>),</hi> </hi> nr. 477, 5. december 1808. K&#x00F8;benhavn</item>
+                    
+   <item>Lundgreen-Nielsen, Flemming (1965) <rs type="title" key="title13">
+         <hi rend="italic">Grundtvig. Sk&#x00E6;bne og Forsyn. Studier i Grundtvigs
+               nordisk-romantiske dramatik.</hi>
+</rs> K&#x00F8;benhavn</item>
+<item>Lundgreen-Nielsen, Flemming (1980) <rs type="title" key="title14">
+            <hi rend="italic">Det handlende ord. N.F.S. Grundtvigs digtning, litteraturkritik
+               og poetik 1798-1819</hi>
+         </rs> 1-2. K&#x00F8;benhavn</item>
+
+                    
+   <item>Oehlenschl&#x00E4;ger, Adam (1805) <rs type="title" key="title75">
+         <hi rend="italic">Poetiske Skrifter</hi>
+</rs> 1-2. K&#x00F8;benhavn</item>
+                    
+   <item>Oehlenschl&#x00E4;ger, Adam (1809) <rs type="title" key="title2162">
+         <hi rend="italic">Palnatoke. Et S&#x00F8;rgespil.</hi>
+      </rs> K&#x00F8;benhavn</item>
+                    
+                     <item>R&#x00F8;nning, Frederik (1907-1913) <rs type="title" key="title20">
+         <hi rend="italic">N.F.S. Grundtvig. Et bidrag til skildring af dansk &#x00E5;ndsliv
+               i det 19. &#x00E5;rhundrede</hi>
+</rs> 1-4, bind 2 (1908).
+       K&#x00F8;benhavn</item>
+                    
+   <item>Sandvig, Bertel Christian overs. (1783-1785) <rs type="title" key="title28">
+         <hi rend="italic">Fors&#x00F8;g til en Overs&#x00E6;ttelse af S&#x00E6;munds
+               Edda</hi>
+</rs> 1-2. K&#x00F8;benhavn</item>
+                   
+   <item>Suhm, Peter Friederich (1771) <rs type="title" key="title23">
+         <hi rend="italic">Om Odin og den Hedniske Gudel&#x00E6;re og Gudstieneste udi
+               Norden.</hi>
+</rs> K&#x00F8;benhavn</item>
+   
+                    <item>Suhm, Peter Friederich (1782-1828) <rs type="title" key="title2257">
+<hi rend="italic">Historie af Danmark</hi>
+</rs> 1-14, bind 1 (1782). K&#x00F8;benhavn</item>
+                    
+   <item>Suhm, Peter Friederich (1782-1828) <rs type="title" key="title2258">
+         <hi rend="italic">Historie af Danmark</hi>
+      </rs> 1-14, bind 3 (1787). K&#x00F8;benhavn</item>
+                    
+   
+                    </list>
+            </div>
+         
+        <div type="webList">
+             <head xml:id="docIn199">Anvendt webside</head>
+            <list type="webList">
+                <item n="2013-08-23" target="http://arnamagnaeanskekommission.ku.dk/udgivelser/publikationer/">Tekstudgaver publiceret af Den Arnamagn&#x00E6;anske Kommission, 1772-1938</item>
+            </list>
+             
+         </div>
+         
+
+
+
+
+            
+        </body>
+</text>
+</TEI>

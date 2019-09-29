@@ -1,0 +1,533 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?><?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Et Par Ord om det nys udkomne angelsaxiske Digt</title>
+      <title rend="shortForm">Et Par Ord om det nys udkomne angelsaxiske Digt</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Vibeke A. Pedersen</editor>
+      <editor role="student">Kirsten Vad</editor>
+         <editor role="student">Anna Poulsen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.9</idno>
+               <idno type="technic">1.9.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>53 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2013-05-02">www.grundtvigsværker.dk, version 1.6, 1. maj 2015</date>
+         </publicationStmt>
+         <seriesStmt>
+            <title>Nyeste Skilderie af Kjøbenhavn</title>
+            <respStmt>
+               <name>S. Soldin</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>2015-05-01</idno>
+         </seriesStmt>
+         <notesStmt>
+            <note xml:id="thisFile" target="1815_253_txt.xml" type="txt">Læsetekst</note>
+            <note target="1815_253_com.xml" type="com">Punktkommentar</note>
+            <note target="1815_253_intro.xml" type="intro">Indledning</note>
+            <note target="1815_253_txr.xml" type="txr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="253"><desc>Førstetrykket</desc><num>1815</num></witness>
+      </listWit>
+     <!-- <listWit xml:id="pageNumber">
+       <witness rend="sigel">[udgave]</witness>
+      </listWit>-->
+     </sourceDesc>
+    </fileDesc>
+       <profileDesc>
+  <textClass>
+   <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+    <term>prosa</term>
+    <term>artikler</term>
+   </classCode>
+   <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+    <term>oldengelsk</term>
+    <term>mytologi</term>
+    <term>historie</term>
+    <term>filologi</term>
+   </keywords>
+  </textClass>
+</profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+     <change xml:id="VAP" who="VAP" when="2014-11-11">Fjernet mæslinger i head. Fjernet fejl-ocr'ede kolonner. Flyttet spaltenumre inden for pb-opmærkning, men har ikke indføjet de manglende spaltenumre</change>
+          <change who="VAP" when="2014-11-12">løselig gennemlæsning inden 1. kollation</change>
+          <change who="VAP" when="2014-11-17">løselig gennemlæsning og grafisk tilpasning inden 1. kollation, fortsat</change>
+    <change who="AP" when="2014-11-18">Påbegyndt indskrivning af det manglende afsnit (kommet til "Indholden af 40de...")</change>
+       <change who="AP" when="2014-11-21">Færdigskrevet det manglende afsnit. Indført VAP's rettelser efter 1. kollation. Rettet linjeskift. Opmærket 1. del af teksten, tom. No. 60. Påbegyndt 2. kollation</change>
+       <change who="AP" when="2014-11-25">Færdig med opmærkning</change>
+         <change who="VAP" when="2014-11-26">Oprettet com268-271, slettet 67, 85, 87, 111, 113, 149, 152, 186, 211</change>
+        <change who="VAP" when="2014-12-02">Oprettet com272, rettet fundne ocr-fejl. Påbegyndt udfyldning af registeropm.; alle PlaceName; nogle myth erstattet med myth000, der ikke giver fejl, men heller ikke er udfyldt; andre myth ved place er slettet;</change>
+       <change who="AP" when="2014-12-04">ordnet mange småting + indført rettelser efter 2 kol. (efter G.s samlede i skilderierne) ikke færdig</change>
+        <change who="VAP" when="2014-12-08">Oprettet com268 (igen) 273, rettet fundne ocr-fejl. Slettet com27, 115, 126</change>
+        <change who="VAP" when="2014-12-08">Slettet/udkommenteret com8, 17, 115, 135, 136, 156, 158, 194, 223, 258, 265 (mest dobbeltforekomster i umiddelbar nærhed). </change>
+        <change who="AP" when="2014-12-09">påbegyndt udfyldning af myth-opm.</change>
+        <change who="VAP" when="2014-12-11">indsat emenderinger/forslag og enkelte udfaldne mellemrum efter baseopmærkning. Fortsat baseopmærkning</change>
+         <change who="VAP" when="2014-12-12">oprettet com274-79. Flere emenderinger. De sidste mytologiske (efter Anna)</change>
+       <change who="AP" when="2014-12-12">udfyldning af myth-opm. + pers-opm. færdig</change>
+         <change who="VAP" when="2014-12-16">rettelser efter Jons 3. koll. Oprettelse af com280-307 og ny 27 efter Jons forslag. Udfyldt titler og myt og places med 000. Enkelte mangler stadig</change>
+         <change who="VAP" when="2014-12-19">oprettet com308</change>
+        <change who="VAP" when="2015-01-30">begyndt gennemgang af tekstrettelser efter samtale med KN</change>
+       <change who="VAP" when="2015-02-04">færdiggjort tekstrettelser. slettet com 97 (> base) og 158 (sm).</change>
+        <change who="VAP" when="2015-02-05">kontrolleret og rettet rettelser</change>
+          <change who="VAP" when="2015-02-19">rettet efter Jon.  Oprettet 310-19</change>
+         <change who="VAP" when="2015-02-20">rettet efter Jon.  Oprettet 320-23</change>
+        <change who="VAP" when="2015-02-26">rettet efter Dorrit</change>
+       <change who="AP" when="2015-04-14">rettet faxnr.</change>
+        <change who="VAP" when="2015-04-24">ved hjælp fra Jon kørt nummerrrratorrækkefølgekontrol og rettet</change>
+       <change who="VAP" when="2015-04-28">fjernet com13, 184, 218, 267. Oprettet 329-335. Rettelser efter KB</change>
+          <change who="VAP" when="2015-05-04">panikrettelser</change>
+          <change who="VAP" when="2015-10-19">panikrettelser</change>
+          <change who="VAP" when="2016-03-03">title00 udfyldt</change>
+          <change who="VAP" when="2016-03-03">rettet 2 div'er</change>
+          <change who="VAP" when="2016-09-07">teknisk rettelse - mytebaseændringer</change>
+         <change who="NHB" when="2017-03-08">his624 til fak309 efter aftale med VAP</change>
+    </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">   
+       <pb type="periText" facs="1815_253_fax001.jpg"/>
+    <body>   
+	<!--					Grundtvig 253 1	-->	
+<div type="[nr. 60]">			
+			 
+<pb type="text" facs="1815_253_fax002.jpg" ed="A" subtype="column" n="945" rend="supp"/>
+<!--<p rend="firstIndent">
+Nyeste
+Skilderie af Kiøbenhavn.
+Toldte Aargang. <re type="title" key="">No. 60</re>.
+Uogivet og førlagt af Boghordler S. Soldin.
+Forfendeø, i Følge Kongel. allernaadigkt Tillabelst, ??? Brevossterne.
+Løverdagen den 29 Juli 1815.
+</p>-->
+<head rend="2">
+Et Par Ord om det nys udkomne angelsaxiske Digt.
+</head>
+<p rend="noIndent"><hi rend="initial">E</hi>nhver, som endnu elsker det gamle <placeName key="poet219">Dannemark</placeName> og Fædrenes Ihukommelse, har <seg type="com" n="com1">vist</seg> med Glæde seet, at det gamle angelsaxiske Digt om danske <seg type="com" n="com2">Handler</seg>, der i saa mange Aarhundreder laae begravet i de engelske Boghylder, og kun med Nød og Neppe reddedes som en Brand af Ilden, nu endelig er udkommet fra Hr. Etatsraad <persName key="pe413">Thorkelins</persName> Haand, ved Hr. <seg type="com" n="com3">Geheimeconferentsraad</seg> <persName key="pe1376">Bülows</persName> gavmilde Medvirkning. At Oversættelsen er latinsk, kunde vel Mange beklage, og spørge, hvor længe vi skal vedblive at udgive <placeName key="fak24">Nordens</placeName> gamle Mindesmærker for de Fremmede paa Danskes Bekostning; dog vilde denne Klage her have mindre Grund, da et saadant Digt fra første Færd maae udgives for de Boglærde i alle Lande, og bør ei fremtræde for det danske Folk uden i sin velbehagelige poetiske Skikkelse. Derimod var det sømmeligt, at enten Udgiveren eller en Anden forklarede paa Modersmaalet Kvadets Indhold, og <seg type="com" n="com4">viisde</seg> hvad vi alt flux kunne skjønne om dets poetiske og historiske Værd; og da Udgiveren hverken paa Latin eller Dansk havde opfyldt dette Ønske, besluttede jeg at giøre det efter Evne. Sligt var imidlertid ingen saa let Sag, da jeg flux mærkede, det ei gik an at følge den latinske Oversættelse, der paa mange Steder er aabenbar urigtig, og paa mange mørkere end Texten selv, og jeg maatte derfor arbeide mig <pb type="text" facs="1815_253_fax002.jpg" ed="A" subtype="column" n="946" rend="supp"/>ind i Grundsproget. Til min store Forundring anmeldte nu allerede <rs type="title" key="title127">Litteraturtidenden</rs> No. 26 Digtet, og opregnede Indholden af nitten Sange, ligesom No. 27 af de øvrige. Før jeg tog Bladet i Haand, indsaae jeg Umueligheden af at <seg type="com" n="com5">Rec.</seg>, om han <seg type="com" n="com6">og</seg> <seg type="com" n="com280">var Sproget mægtig</seg>, kunde i saa kort Tid giennemlæst og giennemtænkt Digtet, som Man dog burde, før Man aflægger offenligt Regnskab om et saadant Mindesmærke; men hvor kunde jeg andet end harmes ved at see, at en <seg type="com" n="com7">Rec.</seg> satte sig her paa Dommersædet, uden, det maae Man slutte, at forstaae eet Ord Angelsaxisk. Nu, til at give en saadan Indholdsliste, behøvedes vist nok ei lang Tid; thi hvor den latinske Oversættelse giver nogen Mening, følges den blindt, og hvor den ingen giver, skydes Skylden paa Digtets Dunkelhed, ja Digteren beskyldes endog for at have modsagt sig selv i Fortællingen om <rs type="myth" key="myth985">Higelaks</rs> Død, ua<!-- AP: a forsvundet -->gtet det dog visselig ikke er hans Skyld, at Oversætter og <seg type="com" n="com8">Rec.</seg> blander Begivenhederne sammen, og forandrer Fyrsternes Navne: <hi rend="spaced"><rs type="myth" key="myth999">Hrædel</rs>,</hi> <hi rend="spaced"><rs type="myth" key="myth983">Herebald</rs>,</hi> <hi rend="spaced"><rs type="myth" key="myth974">Hædkyn</rs>,</hi> <hi rend="spaced"><rs key="myth978" type="myth">Hardred</rs>,</hi> til ubetydelige Tillægsord. Men hvad er dog sligt for et Væsen? er det den <seg type="com" n="com9">Erudition</seg> og Critik, <seg n="com326" type="com">hvorpaa Man pukker</seg> saa saare? er det saaledes Hedenolds Minder skal kundgiøres og omtales i <placeName key="poet219">Dannemark</placeName>, at Udlændinge skal pege Fingre ad os, som de der prise og bedømme hvad vi ei forstaae?</p>
+<fw type="blank"/>
+   <p rend="noIndent">Er det nu sandt hvad her er sagt om Oversættelse og Recension, og det skal jeg bevise, da er  <pb type="text" facs="1815_253_fax003.jpg" ed="A" subtype="column" n="947"/>det klart at en ny Angivelse af Digtets Indhold var ingenlunde overflødig; men da jeg endnu er langt fra at forstaae Alt saa godt som Man bør forstaae hvad Man vil meddele Andre, og hiin Recension dog ingenlunde maae <seg type="com" n="com10">upaaanket</seg> komme for Udlændingers Øie, vil jeg her, saa kort som muligt, anmærke hvad Vigtigt af det jeg <seg type="com" n="com11">alt</seg> forstaaer der i Recensionen deels er udeladt, deels urigtig fremstilt. Man vil <seg type="com" n="com311">sagtens</seg> ikke taale at vises tilrette af mig; stort vil jeg heller ikke <seg n="com277" type="com">tvistes</seg> om Ting, der ikke er nogen Salighedssag; men Sandhed vil jeg alligevel sige, da Tingen dog ei heller er ganske ubetydelig, og da overlade det til Vedkommende, om de vil nægte hvad der er klart for hver Mand i <placeName key="fak12">Europa</placeName>, som forstaaer hvad her tales om.
+</p>
+   <fw type="blank"/>
+<p rend="noIndent">For nu paa eengang at vise baade hvorledes Tonen er i dette herlige Digt, og hvor saare baade Oversætter og Recensen<!-- AP: læderet -->t have misforstaaet allerede Indledningen, vil jeg her meddele en Oversættelse af denne, der naturligviis som Digt ei kan være bogstavelig, men for hvis Rigtighed i det Væsenlige jeg indestaaer. Dog, for at giøre den ret fattelig, maae jeg forudskikke en Anmærkning.  Ligesom Man i de angelsaxiske Slægtregistre hyppig, skiøndt paa <seg type="com" n="com333">adskillig</seg> Plads, finder en <rs key="myth1283" type="myth">Scef</rs>, <rs type="myth" key="myth1283">Sceaf</rs>, <rs key="myth1283" type="myth">Seaf</rs>, som <rs type="title" key="title3274"><!-- evt title 3274? VAP 16. dec.2014 -->Cronicon Sa<!-- AP:svær at tyde -->xonicum</rs> (S. 77) endog giør til <rs key="myth62" type="myth">Roes</rs> fierde Søn, saaledes anføres han <seg type="com" n="com12">og</seg> stundum som Fader til <rs type="myth" key="myth67">Skyld</rs>, hvis Eenhed med <rs key="myth67" type="myth">Skjold</rs> ei kan <seg type="com" n="com312">omtvivles</seg>, og hos <persName key="pe1407">Ethelverd</persName>, <persName key="pe1400">Mattheus af Vestmynster</persName> og <persName key="pe2394">Simeon Dunelmensis</persName> findes om ham et saare mærkeligt Sagn, at han nemlig som Barn, sovende paa en Kornneeg og rundt omgivet af Vaaben, kom eenlig drivende paa et Skib til en Øe i Oceanet ved Navn <placeName key="fak161">Skani</placeName> eller <placeName key="fak161">Skandalis</placeName>, hvor Indbyggerne modtoge ham som et Vidunder, opfostrede ham med al Flid og toge ham til Konge. Dette Sagn seer Man at nærværende Skjald har henført til <rs key="myth1283" type="myth">Scefs</rs> Søn <rs type="myth" key="myth67">Skjold</rs>, og da vi i vore gamle Sagn ingen <rs key="myth1283" type="myth">Scef</rs> finde, da han skal have faaet dette Navn af Kornnegen, som paa Angelsaxisk heder <seg type="com" n="com14">Seaf</seg>, og da han altsaa rimeligst maatte kaldes <rs type="myth" key="myth1283">Scefing</rs> (<rs key="myth1283" type="myth">Scefs</rs> Søn), have vi udentvivl her Sagnet i sin oprindelig danske Skikkelse. <seg type="com" n="com327">Saa</seg> kvæder den gamle Skjald:</p> 
+
+   
+   <lg n="1"><l><pb type="text" facs="1815_253_fax003.jpg" ed="A" subtype="column" n="948"/>Om Drotterne <seg type="com" n="com15">strage</seg></l>
+<l>Fra forrige Dage,</l>
+<l>Som Stol-Konge-Sæder</l>
+<l>Beklædte med Hæder</l>
+<l>I <placeName key="poet219">Dannemarks</placeName> Land;</l>
+<l>Om <seg type="com" n="com16">Kjæmperne</seg> stolte,</l>
+<l>Som Heltedaad <seg type="com" n="com18">voldte</seg>,</l>
+<l>Jeg kvæder <seg type="com" n="com19">forsand</seg>.</l></lg>
+
+<lg n="2"><l>Nu først er at melde</l>
+<l>Om <rs type="myth" key="myth1162">Skefingen</rs> <rs key="myth67" type="myth">Skjold</rs>,</l>
+<l>Han kjæmped med <seg type="com" n="com20">Vælde</seg>,</l>
+<l>Den Herre saa bold,</l>
+<l>Mod Fienderne mange</l>
+<l>Om Borge og Vange,</l>
+<l>Og Seier han vandt.</l>
+<l>Hans Mod og hans Rige</l>
+<l>De voxde tillige,</l>
+<l>Som Aarene randt;</l>
+<l>Hans Hæder og Lykke</l>
+<l>De voxde <seg type="com" n="com21">forsand</seg>,</l>
+<l>Saa alle som <seg type="com" n="com332">bygge</seg></l>
+<l><seg type="com" n="com22">Trindt</seg> <seg type="com" n="com23">Hvalernes Land</seg>,</l>
+<l>Ham maatte adlyde,</l>
+<l>Og neiende yde</l>
+<l>Ham <seg type="com" n="com24">Gilde</seg> og <seg type="com" n="com313">Skjænk</seg>.</l>
+<l>Det <seg type="com" n="com25">end</seg> er at mærke</l>
+<l>Om Kongen saa god,</l>
+<l>At <seg type="com" n="com26">Kjæmperne</seg> stærke</l>
+<l>Udsprang af hans Blod,</l>
+<l>Og <seg n="com27" type="com">hannem</seg> til Ære</l>
+<l>Evindelig bære</l>
+<l>De <rs type="myth" key="myth115">Skjoldunge</rs>-Navn<note type="footnote"><p rend="noIndent">
+Det bør anmærkes at Meningen af disse Linier er
+omtvistelig, og at det ei staaer <hi rend="spaced">her</hi> at hans Efterkommere kaldtes <hi rend="spaced"><rs type="myth" key="myth115">Skjoldunger</rs>,</hi> men da det
+staaer i <hi rend="spaced">hele Digtet,</hi> tog jeg ei i Betænkning
+at sætte det for Fuldstændigheds Skyld.
+</p></note>.</l></lg>
+
+
+<lg n="3"><l>Den Herre, som kjendte</l>
+<l>Al <placeName key="poet219">Dannemarks</placeName> Brøst,</l>
+<l>Slig Konge didsendte</l>
+<l>Til <seg type="com" n="com28">Dannemænds</seg> <seg type="com" n="com29">Trøst</seg>,</l>
+<l><pb type="text" facs="1815_253_fax004.jpg" ed="A" subtype="column" n="949"/>Og undte ham længe</l>
+<l>Paa <seg n="com281" type="com">Konninge-Stoel</seg></l>
+<l>At see over Enge</l>
+<l>Den straalende Soel.</l>
+<l>Paa <seg n="com281" type="com">Konninge-Sæde</seg></l>
+<l>Han <seg type="com" n="com30">skifted</seg> med Glæde</l>
+<l>Klenodier fine</l>
+<l>Blandt <seg type="com" n="com31">Kjæmperne</seg> sine;</l>
+<l>Ei <seg type="com" n="com32">stædte han ilde</seg></l>
+<l>Den herlige <seg type="com" n="com314">Skjænk</seg>,</l>
+<l>Thi <seg type="com" n="com33">Kjæmperne</seg> <seg type="com" n="com34">gilde</seg></l>
+<l>Ham <seg type="com" n="com322">loved</seg> paa Bænk,</l>
+<l>Og fulgde med Gammen</l>
+<l>Den Herre saa prud,</l>
+<l>Og <rs type="myth" key="myth115">Skjoldunge</rs>-Stammen</l>
+<l>Med herlige Skud</l>
+<l>Saa høit <seg type="com" n="com35">under Lide</seg></l>
+<l>Sig bredte saa vide,</l>
+<l>Saa <seg type="com" n="com36">faver</seg> i Lund.</l></lg>
+
+
+<lg n="4"><l><seg type="com" n="com37"><hi rend="spaced">Saa</hi></seg> Kongerne lære</l>
+<l>Med Guld og med Ære</l>
+<l>Sig <seg type="com" n="com38">Kjæmperne</seg> bedste</l>
+<l>At vinde og fæste!</l>
+<l>Da trofast de Gamle</l>
+<l>Sig <seg type="com" n="com39">trindt</seg> dem forsamle</l>
+<l>Paa Uveirets Dag,</l>
+<l><seg type="com" n="com40">Omgjærde</seg> saa bolde</l>
+<l>Med blinkende Skjolde</l>
+<l>Den Herre i Slag.</l>
+<l>Ei <seg type="com" n="com41">Guldets Udskifter</seg></l>
+<l>Kan trives i Sal</l>
+<l>Naar Heltebedrifter</l>
+<l>Ei voxe paa Val<note type="footnote"><p rend="noIndent">
+Jeg tør ikke paastaae nøie at have truffet Meningen af de sidste Linier i denne <hi rend="spaced">Betragtning,</hi>
+men det siger da <seg type="com" n="com42">og</seg>, som Man let seer, ikke stort.
+</p></note>.</l>
+</lg>
+
+<lg n="5"><l><seg n="com282" type="com">Der</seg> <rs type="myth" key="myth67">Skjold</rs> var hengangen</l>
+<l>I Døden til Roe,</l>
+<l>Sig flokked i Vangen</l>
+<l>En Skare saa troe.</l>
+<l><pb type="text" facs="1815_253_fax004.jpg" ed="A" subtype="column" n="950"/>Saa toge i Hænde</l>
+<l>De kjærlige Svende</l>
+<l>Det Liig af Kong <rs key="myth67" type="myth">Skjold</rs>;</l>
+<l>Til Stranden de bare</l>
+<l>I sørgelig Skare</l>
+<l>Den Herre saa bold;</l>
+<l>De Liget udførde,</l>
+<l>Som selv han befoel,</l>
+<l>Mens Tungen han rørde</l>
+<l>Paa <seg type="com" n="com43">Konningestoel</seg>,</l>
+<l>Og styred <seg type="com" n="com44">med Blide</seg></l>
+<l>De Lande saa vide,</l>
+<l>Saa mangen god Dag.</l></lg>
+
+<lg n="6">
+<l>Saa toge de Kjække</l>
+<l>Den <seg type="com" n="com45">Konninge-Snekke</seg></l>
+<l>Med <seg type="com" n="com46">ringprude</seg> Stavn,</l>
+<l>Som klar til at seile,</l>
+<l>Med skinnende <seg type="com" n="com47">Speile</seg></l>
+<l>Laae færdig i Havn.</l>
+<l>Saa gave de Skibet</l>
+<l>Den Herre i Favn</l>
+<l>Som førde i Livet</l>
+<l>Det favreste Navn;</l>
+<l>Ved Masten de satte</l>
+<l>Den Elskedes Liig,</l>
+<l>Og gav ham af Skatte</l>
+<l>En <seg type="com" n="com48">Skjoldborg</seg> saa riig,</l>
+<l>At neppe en <seg type="com" n="com49">Sage</seg></l>
+<l>Jeg hørde om Mage</l>
+<l>Til <seg type="com" n="com50">Skat</seg> og til Skib.</l>
+</lg>
+<lg n="7">
+<l><seg type="com" n="com51">Hos</seg> <seg n="com283" type="com">Konninge-Kaaben</seg></l>
+<l>Laae alle Slags Vaaben:</l>
+<l>De Øxer saa stærke</l>
+<l>Og <seg type="com" n="com52">Brynie-Særke</seg>.</l>
+<l>Klenodier mange</l>
+<l>Ham lagdes i Favn,</l>
+<l>Paa Farten hin lange</l>
+<l>De skulde <seg n="com315" type="com">i Stavn</seg></l>
+<l>Paa brusende Bølge</l>
+<l>Med <seg type="com" n="com53">Stolkongen</seg> følge.</l>
+<l><pb type="text" facs="1815_253_fax005.jpg" ed="A" subtype="column" n="951"/>Udstyre Man vilde</l>
+<l>Den Herre fra Land,</l>
+<l>Med Gaver saa <seg type="com" n="com54">gilde</seg>,</l>
+<l>Som da <seg type="com" n="com316">over Strand</seg></l>
+<l>Han <seg type="com" n="com55">underlig</seg> drevet</l>
+<l>Af Herren var blevet</l>
+<l>Til <placeName key="poet219">Dannemarks</placeName> Land.<note type="footnote"><p rend="noIndent">
+Ogsaa de Linier der indeholde denne <hi rend="spaced">Betragtning</hi> ere dunkle, dog troer jeg at have truffet
+Meningen ved Hjelp af foromtalte Sagn, og har Man Ret til med den latinske Oversætter at antage <hi rend="romanType"><seg type="com" n="com56">dydon</seg></hi> og <hi rend="romanType"><seg type="com" n="com57">onsendon</seg></hi> for tredie Person i Singulari, da kan der intet Spørgsmaal være, kun
+derom staaer jeg i Tvivl.
+</p></note></l></lg>
+
+<lg n="8">
+<l>Nu Flaget hint fagre</l>
+<l>Den Skare saa bold</l>
+<l>Lod stadselig flagre</l>
+<l><seg n="com284" type="com">Alt</seg> over Kong <rs key="myth67" type="myth">Skjold</rs>;</l>
+<l>Saa maatte med Kvide</l>
+<l>De Snekken <seg type="com" n="com58">forlove</seg>,</l>
+<l>Og lade den <seg type="com" n="com59">skride</seg></l>
+<l>For Vind og for Vove.</l>
+<l>Bort seiled den Snekke</l>
+<l>Paa Bølgerne blaa,</l>
+<l>Lod Helte i Række</l>
+<l>Paa Strandbredden staae</l>
+<l>Med Suk og med Klage;</l>
+<l>Kom Aldrig tilbage,</l>
+<l>Ja, Ingen <seg type="com" n="com60">med Sande</seg></l>
+<l>Kan sige han veed</l>
+<l><seg type="com" n="com317">Hvorvidt</seg> <seg type="com" n="com318">over Strande</seg></l>
+<l>Den Snekke henskreed,</l>
+<l>Om bjerget og fundet</l>
+<l>Blev <seg type="com" n="com61">Stol-Kongens</seg> Liig,</l>
+<l>Om Nogen blev <seg type="com" n="com62">undet</seg></l>
+<l>Den Ladning saa riig.</l>
+</lg>
+<fw type="shortLine"/>   
+<p rend="noIndent"> Naar Man nu seer at der i Recensionen, saa lidt som i den latinske Oversættelse, er Spor af <rs type="myth" key="myth67">Skjolds</rs> <seg type="com" n="com285">Liigbegiængelse</seg>, da maae Man troe eet af to, enten at jeg har digtet det paa egen Haand, eller at Vedkommende ei forstode saa meget Angel<pb type="text" facs="1815_253_fax005.jpg" ed="A" subtype="column" n="952"/>saxisk, som Man kan lære paa fiorten Dage, naar Man kan Islandsk; og indtil det Første bevises, staaer vel det Sidste fast. Dog, jeg vil heller slutte med den Bemærkning, at var ogsaa denne Indledning det Ypperste af hele Digtet, maatte vi dog kalde det en stor Vinding; thi visselig, Sagnet om <rs key="myth67" type="myth">Skjolds</rs> <seg type="com" n="com285">Ligbegiængelse</seg> er et Sidestykke til det om <rs key="myth137" type="myth">Fredegodes</rs>, og aander den Kiærlighed, som var de Danskes Arvegods, ja det er som en <seg type="com" n="com63">Forjættelse</seg> om <rs type="myth" key="myth115">Skjoldunge</rs>stammens Uforkrænkelighed; thi <rs type="myth" key="myth67">Skjolds</rs> Grav er ingensteds at finde, hans Skygge svæver over det sortladne Hav, Dannebrog er hans Bautasteen og <placeName key="fak14">Danmarks</placeName> Hjerte hans <seg type="com" n="com64">Mausolee</seg>. </p>
+   <p rend="firstIndentRight">(Fortsættes.)</p> <!-- hertil fax fin -->
+
+</div>
+  
+    
+    <div type="[nr. 63]">
+       
+            <pb type="periText" facs="1815_253_fax006.jpg"/>
+       
+  <pb type="text" facs="1815_253_fax007.jpg" ed="A" subtype="column" n="998"/>     
+<head rend="2">
+Et Par Ord om det nys udkomne angelsaxiske Digt.
+</head>
+<p rend="center">
+(Fortsættelse; see No. 60.)
+</p>
+        <fw type="blank"/>
+<p rend="noIndent">
+<hi rend="initial">D</hi>a var paa Borgene <rs key="myth950" type="myth">Bjovulf</rs> <rs type="myth" key="myth115.a">Skyldingernes</rs> Kjærlighed, Folkets Konge, som Olding forlod han Verden, da den <rs key="myth30.a" type="myth">høie Halfdan</rs> fødtes ham. Saaledes begynder Indholdslisten af første Sang i <seg type="com" n="com65">Rec.</seg> og heri er, paa lidet nær, ligesaamange Feil som Ord, endogsaa een mere end i den latinske Oversættelse. At Oversætteren har anseet <rs type="myth" key="myth950">Bjovulf</rs> her og i Indledningen for et Navn paa <rs key="myth67" type="myth">Skjolds</rs> Søn, det kunde let skee, skjøndt Man ved nøiere Eftertanke seer at <hi rend="spaced"><seg type="com" n="com324">Beovulf</seg></hi> her, ligesom <hi rend="spaced"><seg type="com" n="com325">Hrodulf</seg></hi> (S. 90) kun er et Æresnavn og at den <hi rend="spaced"><rs type="myth" key="myth115">Skjoldungers</rs> <rs type="myth" key="myth950.a">Bjovulf</rs></hi> hvormed første Sang begynder er ingen anden end <hi rend="spaced"><rs key="myth67" type="myth">Skjold</rs></hi> selv; men hvad der er heel usømmeligt, er at <seg type="com" n="com66">Hr. Etatsraaden</seg>, for at faae Noget sagt om den selvgjorde <rs type="myth" key="myth950">Bjovulf</rs> har gjort aabenbar Vold paa Textens klare Ord. Vel ere nogle af Ordene dunkle, men klarlig staaer der, at efter Folks Sigende (<hi rend="romanType"><seg type="com" n="com68">Folcum</seg> <seg type="com" n="com69">gefræge</seg></hi>) <seg type="com" n="com70">svunde</seg> mange Aar paa Jorden, før efter <rs type="myth" key="myth115">Skjoldungernes</rs> <rs type="myth" key="myth950.a">Bjovulf</rs> den <rs type="myth" key="myth30.a">høie Halfdan</rs> opstod, (<hi rend="romanType"><seg type="com" n="com71">onwoc</seg></hi>) og det er ingen Ubetydelighed, det er historisk vigtigt om den gamle Skjald opregner <rs type="myth" key="myth67">Skjold</rs>, <rs type="myth" key="myth950">Bjovulf</rs> og <rs type="myth" key="myth30">Halfdan</rs> som Søn efter Fader, eller han siger at der var et <hi rend="spaced">langt Mellemrum</hi> fra <rs key="myth67" type="myth">Skjold</rs> til <rs type="myth" key="myth30">Halfdan</rs>, som der efter vore andre <seg type="com" n="com72">Oldsagn</seg> maae være. Det er ei heller uvigtigt, om Skjalden giver os <rs type="myth" key="myth950">Bjovulf</rs> som et dansk Kongenavn, det er af mange Ting klart at han gjør det ikke, men det er ikke vigtigt nok til <hi rend="spaced">her</hi> at udvikles og jeg vil kun anmærke, at første Sang føier sig paa den meest utvungne Maade til Indledningen naar Man, som Man med god Grund kan, oversætter: nu var da <rs key="myth115" type="myth">Skjoldungers</rs> <rs type="myth" key="myth950">Bjovulf</rs>, den elskede <seg type="com" n="com73">Stolkonge</seg>, bisat, og som Man siger, <seg type="com" n="com74">henrunde</seg> mange Aars Dage, før efter ham den <rs type="myth" key="myth30.a">store Halfdan</rs> opstod<note type="footnote"><p rend="noIndent">At <hi rend="romanType"><seg type="com" n="com328">burg</seg>, <seg type="com" n="com75">byrig</seg>, <seg type="com" n="com76">beorg</seg>, <seg type="com" n="com77">biorh</seg>,</hi> Ord, som alle komme af <hi rend="romanType"><seg type="com" n="com78">beorgan</seg></hi> (bjerge, forvare) maae efter Sammenhængen oversættes snart Borg eller Stad, snart Grav, <hi rend="spaced">Gravhøi,</hi> ligesom tildeels <hi rend="spaced">Bjerg,</hi> er Noget, enhver angelsaxisk Historie og Ordbog flux lærer.</p></note>.</p>
+       <fw type="blank"/>
+<p rend="noIndent"><pb type="text" facs="1815_253_fax008.jpg" ed="A" subtype="column" n="999"/>Ved Smaating og Ordstrid vil jeg ei opholde mig, men kun bemærke, at al Tvist om Navnet <hi rend="spaced"><rs key="myth987" type="myth">Hjort</rs></hi> paa <rs key="myth62.b" type="myth">Hrodgars</rs> <seg type="com" n="com79">Hald</seg> nok var en Strid om Keiserens Skjæg, thi deels er jo <hi rend="spaced"><hi rend="romanType"><seg n="com272" type="com">heorth</seg></hi></hi> en Hjemstavn (<seg type="com" n="com80">Heerde</seg>) og deels synes det mig klart at <hi rend="spaced"><rs type="myth" key="myth987">Hjort</rs></hi> i al Fald siges at være Hallens <hi rend="spaced">poetiske</hi> Navn, ventelig af Ordet <hi rend="romanType"><seg type="com" n="com82">hiorta</seg></hi> (lystig, munter).</p>
+<p rend="firstIndent">Ved Indholden af anden Sang om <rs type="myth" key="myth971">Grændels</rs> <seg type="com" n="com83">Indbru<!-- AP: forsvundet -->d</seg> i Hallen og de Danskes Sorg er intet Vigtigt at anmærke, uden det, at Skjalden, ved at nævne <hi rend="spaced"><seg n="com274" type="com">Vig</seg></hi> som de Danskes Afgud, forstærker det <persName key="pe2395">Ælnothi</persName> Vidnesbyrd (Kap. 23) som Man ei har villet ændse.</p>
+<p rend="firstIndent">
+Tredie og fjerde Sang om <rs key="myth406" type="myth">Bjovulfs</rs> Færd fra <placeName key="fak309">Gothland</placeName> til <placeName key="poet219">Dannemark</placeName> og hans Modtagelse af Kystvagten udgjøre et af de mest poetiske Stykker i Digtet og have en ligesaa uventet som indtagende <seg type="com" n="com84">odysseisk</seg> Deilighed, saa der vel i en Recensjon burde været sagt lidt Mere og Andet om Samtalen, end at Kystvogteren spurgde i en <hi rend="spaced">lang</hi> Tale hvo de Fremmede vare og hvad de vilde, samt at <rs type="myth" key="myth406">Bjovulf</rs> svarede med samme <hi rend="spaced">Vidtløftighed,</hi> thi ved at læse dette venter Man i det mindste intet inderlig Deiligt at høre. Dog, om Smag og Behag skal Man jo ikke <seg n="com278" type="com">tvistes</seg>, derimod burde <seg type="com" n="com86">Rec.</seg> seet at det <hi rend="spaced">Fyr</hi> Oversætteren lader Kystvagten tænde er et blot forunderligt Hjernespind, da der i Digtet kun staaer at han blev <hi rend="spaced">nysgierrig,</hi> <seg type="com" n="com88">der</seg> han saae de Fremmede, <hi rend="romanType"><seg type="com" n="com89">hine fyrwyt bræc</seg>,</hi> en Talemaade som i samme Digt (149) oversættes rigtig, et andet Sted (207) derimod heel fortvivlet ved: <hi rend="romanType"><seg type="com" n="com90">domesticos ensis rabidu<!-- AP: svær at tyde -->s subegit</seg>,</hi> og det er da i dette Digt ingen Sjeldenhed at de selvsamme Ord oversættes paa den meest modsatte Maade, men Sligt skulde dog en <seg type="com" n="com91">Rec.</seg> see, deraf lære, det ei gik an at stole paa Latinen og ei tillade <hi rend="romanType"><seg type="com" n="com92">Angari ignes</seg></hi> at prange i <hi rend="romanType"><seg type="com" n="com93">index rerum</seg>,</hi> naar de ei havde anden Hjemmel. Den Kyndige seer let at det ei er aldeles uvigtigt om den gamle Skjald nævner Fyr eller Bavne som sædvanlige i det gamle <placeName key="poet219">Dannemark</placeName> og det maae forsvare Opholdet ved disse Ord. Ganske urigtigt og ei engang hjemlet i Latinen er den Kundegjørelse af <seg type="com" n="com94">Rec.</seg> at Kystvogteren bad <seg type="com" n="com95">Gotherne</seg> <hi rend="spaced">forlade</hi> Skibene, thi han <hi rend="spaced">bød</hi> dem netop at <hi rend="spaced">blive</hi> ved Skibene til de <seg type="com" n="com96">finge</seg> Bør og kunde atter hjemseile til <placeName key="fak309">Gothemark</placeName>.<pb type="text" facs="1815_253_fax008.jpg" ed="A" subtype="column" n="1000"/>Dunkelt er det derimod <hi rend="spaced">hvad</hi> der bestemde <rs type="myth" key="myth406">Bjovulf</rs> til desuagtet at gaae op i Landet, mig synes her staaer talt om en Guddoms, ventelig <seg type="com" n="com276">Hildas</seg>, Aabenbarelse i et gyldent Luftskib og at hun lovede Helten baade at beskjærme ham og vogte Skibene, men for <seg type="com" n="com98">Vist</seg> vil jeg Intet udgive, hvorom jeg selv har ogsaa kun den mindste Tvivl.
+</p>
+<p rend="firstIndent">Ved den femte Sang som beskriver <rs type="myth" key="myth406">Bjovulfs</rs> Sang og <seg type="com" n="com99">Anmeldelse</seg> hos <rs key="myth62.b" type="myth">Hrodgar</rs>, finder jeg intet Vigtigt at anmærke, men om den sjette som indeholder <rs key="myth62.b" type="myth">Hrodgars</rs> Tale om <rs type="myth" key="myth406">Bjovulf</rs> og dennes Tale til ham maae jeg tale et Par Ord. Man lader <rs key="myth62.b" type="myth">Hrodgar</rs> sige om <rs type="myth" key="myth406">Bjovulf</rs> at han var kommet med Foræringer og 300 Mand, da han derimod kun siger at Søfolk har fortalt ham om <rs type="myth" key="myth406">Bjovulf</rs>, at han havde <hi rend="spaced">tredive Mands Styrke,</hi> Noget som netop passer til at han kunde brydes med <rs key="myth971" type="myth">Grændel</rs>. Hvad Foræringerne angaaer, hvis saadanne forstaaes ved <hi rend="romanType"><seg type="com" n="com100">gifsceattas</seg>,</hi> da ere de vigtigere end <seg type="com" n="com101">Rec.</seg> tænker, thi dette Sted kunde da let blive brugt i en Tvist om, enten <seg type="com" n="com102">Gotherne</seg> havde <hi rend="spaced"><seg type="com" n="com103">skattet</seg></hi> til de Danske eller disse til <seg type="com" n="com104">Gotherne</seg>. Videre maae jeg bemærke at <seg type="com" n="com105">Recs.</seg> <seg type="com" n="com268">Slutning</seg> fra de 300 Mand til <seg type="com" n="com106">Smaaheden</seg> af de <hi rend="spaced">femten</hi> Skibe <rs type="myth" key="myth406">Bjovulf</rs> havde, som aldeles ugrundet, bortfalder, at der (S. 36) ei tales om <hi rend="spaced"><rs key="myth116" type="myth">Thurser</rs></hi> men at kun <rs type="myth" key="myth971">Grændel</rs> kaldes en <rs key="myth116" type="myth">Thyrs</rs>, og at <rs type="myth" key="myth406">Bjovulf</rs> ei vilde have sine herlige Vaaben, <hi rend="spaced"><rs key="myth501.a" type="myth">Velands</rs></hi> Værk, med sig i Graven, men bad at de maatte hjemsendes til Kong <rs type="myth" key="myth985">Higelak</rs>.
+</p>
+<p rend="firstIndent">
+Sjette Sang, som indeholder <rs key="myth62.b" type="myth">Hrodgars</rs> Velkomst er især <seg type="com" n="com107">mærkelig</seg> for de <rs type="myth" key="myth1028">Vilfingers</rs> eller <rs key="myth1028" type="myth">Vylfingers</rs> Skyld som der nævnes, da det efter<!-- AP: svær at tyde --> Regelen (<seg type="com" n="com108">Vulf</seg> for <seg type="com" n="com109">Ulf</seg>, <seg type="com" n="com110">Vord</seg> for Ord og endnu i <placeName key="fak76">Jylland</placeName> <seg type="com" n="com112">Volle</seg> for Ole) maae være de samme som Islænderne kalde <rs type="myth" key="myth1028">Ylfinger</rs>, og disse maaskee ere de samme som de berømde <rs type="myth" key="myth119">Volsunger</rs>. Talen er imidlertid saa kort at den ei kan give Vished, men hvorledes <seg type="com" n="com114">Rec.</seg> kan falde paa at ved <rs type="myth" key="myth1028">Vilfinger</rs> skal forstaaes <hi rend="spaced">Nordmænd</hi> det er mig ubegribeligt. <seg type="com" n="com114">Rec.</seg> har gjort vel i ei at tilegne sig Modsigelsen i Oversættelsen at <rs key="myth406" type="myth">Bjovulfs</rs> Fader overgav sig til <rs type="myth" key="myth1028">Vilfingerne</rs> for ikke at forfærdes af dem, og drog saa til <placeName key="poet219">Dannemark</placeName>, men at han ei derfor var klogere paa Fortællingen sees deraf at han taler om <rs key="myth957" type="myth">Ægthiofs</rs> Krige med <rs type="myth" key="myth1028">Vilfingerne</rs> og om at <rs key="myth62.b" type="myth">Hrodgar</rs> sendte <rs key="myth1028" type="myth">Vilfingerne</rs> sin Skat, hvorom Skjalden <pb type="text" facs="1815_253_fax009.jpg" ed="A" subtype="column" n="1001"/>ingenlunde taler, han siger kun, at <rs type="myth" key="myth957">Ægthjof</rs> blev <hi rend="spaced"><rs key="myth973" type="myth">Hatholafs</rs></hi> Banemand (<hi rend="romanType"><seg type="com" n="com116">hand bonan</seg>,</hi> see 101 og 186) kunde derfor ei begaae sig hos <rs type="myth" key="myth1028">Vilfingerne</rs> og maatte flygte til <placeName key="poet219">Dannemark</placeName>. Siden forligdes han med <rs key="myth1028" type="myth">Vilfingerne</rs> om Mandeboden, <rs type="myth" key="myth62.b"><app type="corrNote" select="yes"><lem wit="GV">Hrodgar</lem><rdg wit="A">Hrudgar</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></rs> betalde den, og, som det synes, svor <rs key="myth957" type="myth">Ægthiof</rs> ham derfor Huldskab og Mandskab, dog er Talen maaskee <seg type="com" n="com117">og</seg> blot om en <seg type="com" n="com118">Gjeldseed</seg>, hvilket rimer sig bedst dermed at han synes <seg type="com" n="com329">alt</seg> forhen at have været <rs type="myth" key="myth115">Skjoldungernes</rs> Mand (<hi rend="romanType"><seg type="com" n="com119">ar <rs type="myth" key="myth115.a">Scyldinga</rs></seg></hi>).
+</p>
+<p rend="firstIndent">
+Om ottende og niende Sang kunde siges Meget, men da de virkelig tildeels ere heel dunkle og jeg ikke selv endnu er ganske paa det Rene med deres Indhold, vil jeg kun sige, at <seg type="com" n="com120">Rec.</seg> skulde ei saa rask sige: <rs type="myth" key="myth406">Bjovulf</rs> havde gjort et <seg type="com" n="com286">Tog</seg> til Øen <hi rend="spaced"><seg type="com" n="com335">Ræmis</seg>,</hi> derfra til <rs type="myth" key="myth953">Brondingernes Land</rs>, hvor han plyndrede en frie Bye og <rs key="myth949" type="myth"><app type="corrNote" select="yes"><lem wit="GV">Bjanstens</lem><rdg wit="A">Branstens</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></rs> Søn betalte ham alt; thi det staaer der paa ingen Maade. Hvad <hi rend="spaced"><rs type="myth" key="myth1016">Ræmis</rs></hi> betyder her, vil jeg ikke <seg type="com" n="com287">end</seg> afgjøre, men at det ikke hører til <hi rend="spaced">Holm</hi> i næste Linie lærer Grammatik og Sammenhæng uimodsigelig, at det ikke var <rs type="myth" key="myth406">Bjovulf</rs> som drog til <rs type="myth" key="myth953">Brondingernes Land</rs> det er klart, om det var en <seg n="com309" type="com">Bjotal</seg> <rs key="myth949" type="myth">Bjanstens</rs> Søn vil jeg ikke afgjøre, men at den Betaling <rs type="myth" key="myth949">Bjanstens</rs> Søn efter <rs key="myth1002.a" type="myth">Hunferds</rs> Mening gav <rs type="myth" key="myth406">Bjovulf</rs> ei var at rose af, det er vist, thi netop derover gjør <rs key="myth1002.a" type="myth">Hunferd</rs> sig lystig og selv d<!-- AP: læderet -->en latinske Oversætter mener vist ved sit <hi rend="romanType"><seg type="com" n="com121">persolvit</seg></hi> hverken Sølv eller Guld. Dette anmærkes kun for at ingen skal lede efter <hi rend="spaced"><rs type="myth" key="myth1016">Ræmis</rs>holm</hi> eller mene at <rs key="myth1002.a" type="myth">Hunferd</rs> fortalde <rs type="myth" key="myth406">Bjovulfs</rs> Seire.</p> <p rend="firstIndent">Tiende, ellevte og tolvde Sang beskrive <rs key="myth406" type="myth">Bjovulfs</rs> Nattevagt og Kamp med <rs type="myth" key="myth971">Grændel</rs>, have meget poetisk Værd, men naturligviis intet egentlig historisk og ere paa sine Steder temmelig dunkle. Dog det kan Man see, at Dronningen ikke efter Kongens Bortgang besøgde Vagten endnu engang, at <rs key="myth971" type="myth">Grændel</rs> ikke, <hi rend="spaced">efterat have slugt</hi> endeel af <rs type="myth" key="myth406">Bjovulfs</rs> <seg type="com" n="com122">Kiæmper</seg> <seg type="com" n="com123">fornam</seg> at han <hi rend="spaced">Intet formaaede</hi> mod de Fremmede, og saa galt er det end ikke i Latinen. Naar <seg type="com" n="com124">Rec.</seg> videre siger at <rs type="myth" key="myth406">Bjovulf</rs> forfulgde <rs key="myth971" type="myth">Grændel</rs> til Moradserne, og at <rs type="myth" key="myth33">Hel</rs> indsluttede den, der blandt Mennesker havde været stærkest, da er det klart at han taler af sig selv, thi hverken i Text eller Oversættelse staaer noget Sligt, der <seg type="com" n="com125">og</seg> vilde modsige den hele Fortælling; men vel staaer der at <rs type="myth" key="myth971">Grændel</rs> var i <pb type="text" facs="1815_253_fax009.jpg" ed="A" subtype="column" n="1002"/>Fingre paa den stærkeste Mand blandt Menneskens Børn<note type="footnote"><p rend="noIndent">Det er Oversætterens <hi rend="romanType"><seg type="com" n="com130"><app type="corrNote" select="yes"><lem wit="GV efter Thorkelin">inferno</lem><rdg wit="A">infemo</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> captum</seg></hi> som gav
+<seg type="com" n="com131">Rec.</seg> Anledning til hin slemme Vending; men
+hvad nytter det at ville rette hvad Man ei forstaaer?</p></note>. Forunderligt maae det <seg type="com" n="com126">og</seg> kaldes at <seg type="com" n="com127">Rec.</seg> tilskriver den <hi rend="spaced">uldne</hi> Kjortel <rs type="myth" key="myth406">Bjovulfs</rs> Helbredelse, thi uden at tale om at samme udentvivl tilhører den latinske Oversætter, er det dog <seg type="com" n="com288">vist</seg> at han ingen Deel har i dette Uldkjortelens latterlige <seg type="com" n="com128">Underværk</seg>, thi han siger, som der staaer, at <hi rend="spaced"><seg type="com" n="com279">Hilda</seg></hi> lagde sin Haand paa Heltens Skuldre og at dermed lægedes de. Gjerne tilstaaer jeg at <seg type="com" n="com279">Hilda</seg> berømmes her ligesaa uforskyldt som Uldkjortelen, men da det nu engang ikke hjelper at fraskrive vore hedenske Fædre Overtroe, tykkes mig Man endogsaa i <seg type="com" n="com129">Tvivlsfald</seg> skulde heller lade dem fæste Lid til en selvgjort Gudinde end til en ulden Klud, især naar det giælder om at læge blodigt Kjød. At der i vore Dage kan være dem der vente mere Hjelp af en Uldskjorte end af alle himmelske Magter, beviser Intet, thi der er Forskjel paa blinde Hedninger og <hi rend="spaced">oplyste Folk.</hi></p>
+       <p rend="firstIndentRight">(Fortsættes.)</p>
+       
+     <!-- fax fin hertil -->
+</div>
+
+<div type="[nr. 64]">
+   <pb type="text" facs="1815_253_fax010.jpg" ed="A" subtype="column" n="1009" rend="supp"/>
+<!--<p rend="firstIndent">
+Nyeste
+Skilderie af Kjøbenhavn.
+Tolvte Aargang. <rs type="title" key="">No. 64.</rs>
+Udgivet og forlagt af Boghaudler S. Soldin.
+Fotseubes, i Felge Kongel. assernaadigst Tilladelse, med Brevposterne.
+Løverdagen den 12 August 1815.
+</p>-->
+
+<head rend="2">
+Et Par Ord om det nys udkomne angelsaxiske Digt.
+</head>
+   <p rend="center">(Fortsættelse; see forr. No.)</p>
+    <fw type="blank"/>
+<p rend="noIndent">
+<hi rend="initial">I</hi> trettende Sang beskrives det glade Morgenlag i Hallen, Skjalde og <seg type="com" n="com132">Sagamænd</seg> kappedes om at forherlige <rs type="myth" key="myth406">Bjovulf</rs>, kom Fortidens ypperste Helte <seg type="com" n="com133">ihu</seg>, og satte <rs type="myth" key="myth406">Bjovulf</rs> over dem alle. Naar Man nu hos <seg type="com" n="com134">Rec.</seg> læser: jeg hørde (siger Digteren) mange ukjendte Bedrifter vel besjungen, da er det ganske rigtig, at Skjalden siger noget Sligt, uden dog derved at sige, at han var selv legemlig i Hallen, men naar Man nu seer at <seg type="com" n="com134">Rec.</seg> ikke anfører et Ord om de Kvads Indhold og Man dog veed at Skjalden derom har sagt Adskilligt, maae Man vel smilende sige at <seg type="com" n="com134">Rec.</seg> kunde sparet <hi rend="spaced">sin Parenthes.</hi> <seg type="com" n="com289">Vel</seg> tør jeg nu ikke sige, at jeg forstaaer Alt hvad Digteren siger, et manglende Ord paa et vigtigt Sted lægger ogsaa Fortolkeren en ubehagelig Vanskelighed i Veien; men det tør jeg sige at her tales om <rs type="myth" key="myth65">Sigurd Fafnisbane</rs>. <seg type="com" n="com289">Vel</seg> nævnes han ei med dette Navn, men naar Man seer at Talen er om en Helt som slog Dragen, tog dens Skatte og blev den berømteste Helt i Verden, da maae allerede, hos den der kjender <rs key="title777" type="title">Volsung-Kvadene</rs>, Tanken falde paa <rs type="myth" key="myth65">Sigurd</rs>, naar Man seer Helten kaldes <hi rend="spaced"><rs key="myth1018" type="myth">Sigmunds</rs> Søn</hi> (<hi rend="romanType"><seg type="com" n="com137">Sigemunde gesprong</seg></hi>) da tvivler Man ei længer, og Navnet <hi rend="spaced"><rs type="myth" key="myth1029">Volses</rs> <seg type="com" n="com138">Ætmand</seg></hi> (<hi rend="romanType"><seg type="com" n="com139">Wælses eafera</seg></hi>) giør Tingen uimodsigelig; thi <rs type="myth" key="myth1029">Volse</rs> og ei <rs key="myth119" type="myth">Volsung</rs>, <pb type="text" facs="1815_253_fax010.jpg" ed="A" subtype="column" n="1010" rend="supp"/>bør jo <rs type="myth" key="myth119">Volsungernes</rs> Stamfader rimeligst kaldes, ligesom <rs key="myth67" type="myth">Skjold</rs>, <rs type="myth" key="myth493">Yngve</rs>, <rs key="myth1352" type="myth">Skelfer</rs> o.s.v. Mørkere er Talen om <rs type="myth" key="myth984">Hermod</rs> (<seg type="com" n="com140">Heremode</seg>) fordi vi ingen bekjendte Sagn have om ham <hi rend="spaced">som Menneske,</hi> dog er det mærkeligt at han i <rs type="title" key="title138">Hyndlas Sang</rs> (<hi rend="romanType">Stroph.</hi> 2) nævnes ved Siden af <hi rend="spaced"><rs key="myth1018" type="myth">Sigmund</rs></hi> <rs type="myth" key="myth119">Volsung</rs>, da der siges om <rs key="myth59" type="myth">Odin</rs> at han gav <rs type="myth" key="myth984">Hermoder</rs> Hjelm og Brynie og <rs type="myth" key="myth1018">Sigmund</rs> et Sværd (det navnkundige <rs key="myth139" type="myth">Gram</rs>). <persName key="pe1348">Torfæus</persName> siger at der om <rs key="myth984" type="myth">Hermod</rs> fandtes nogle utrykde Vers, mener han nu dermed Andet end disse Linier, og ere de Vers endnu forhaanden, da kunde de maaskee kaste Lys over Slutningen af trettende Sang, og hvad <seg n="com323" type="com">end</seg> mere var at ønske, over den 24de og 25de hvor <rs key="myth62.b" type="myth">Hrodgar</rs> taler Meget om <hi rend="spaced"><rs key="myth984" type="myth">Hermod</rs></hi> som er <seg type="com" n="com290">svart</seg> at forstaae.</p>
+<p rend="firstIndent">
+Om den <seg type="com" n="com141">tarvelige</seg> Indholdsliste af 14de og 15de Sang vil jeg kun i Forbigaaende sige at den er hardtad saa godt som intet og endda ikke uden Feil, thi <rs key="myth62.b" type="myth">Hrodgar</rs> stod ikke i noget <hi rend="spaced">Taarn</hi> men paa <hi rend="spaced">Gulvet</hi> eller maaskee paa en Forhøining i Salen (<hi rend="romanType"><seg n="com291" type="com">on stapole</seg></hi>) <seg type="com" n="com292">der</seg> han roesde <rs type="myth" key="myth406">Bjovulf</rs> og han gav ham ei <rs type="myth" key="myth30">Halvdans</rs> Sværd, men kaldes selv <hi rend="romanType"><seg n="com275" type="com">Brand <rs type="myth" key="myth30">Healfdanes</rs></seg>.</hi> Gaverne derimod vare en <seg type="com" n="com142">Gyldenstykkes</seg> Fane, et Sværd med forgyldt <seg type="com" n="com143">Haandfang</seg>, Hjelm og Brynie.</p>
+<p rend="firstIndent">
+Sextende, Syttende og Attende Sang beskrive med de to forrige <seg type="com" n="com330">Gammenslaget</seg> i <rs key="myth62.b" type="myth">Hrodgars</rs> <seg type="com" n="com144">Hald</seg> efter <rs type="myth" key="myth971">Grændels</rs> Lemlæstelse og Flugt, og have tildeels et <seg type="com" n="com145">mærkeligt</seg> historisk Indhold. Nu er det ligefrem, at naar en Skjald <seg type="com" n="com293">staaer paa</seg> Begivenheder som i <pb type="text" facs="1815_253_fax011.jpg" ed="A" subtype="column" n="1011"/>hans Dage vare vitterlige, men hvis Ihukommelse er siden <seg type="com" n="com146">forloret</seg>, da er det ei nemt at forstaae ham fuldelig, men vogte sig for at misforstaae ham grovelig, det kan Man dog, naar Man kjender hans Sprog og giver Agt paa hans Tale. Mine Gjætninger om det <seg type="com" n="com147">Tog</seg> der i 16de og 17de Sang omtales vil jeg spare, men klart er det, at her ikke staaer et Ord om et <seg type="com" n="com147">Tog</seg> <hi rend="spaced"><rs key="myth62.b" type="myth">Hrodgar</rs></hi> skulde gjort med Friserne, hvilket dog <seg type="com" n="com150">Rec.</seg> saa trøstig siger. Under <rs type="myth" key="myth62.b">Hrodgars</rs> Fader <rs key="myth30" type="myth">Halvdan</rs> er <seg type="com" n="com151">Toget</seg> skeet, om Kongen selv var med er ikke klart, men at en <hi rend="spaced"><rs type="myth" key="myth982">Hengest</rs></hi> med sine Friser fulgde <seg type="com" n="com153">Dannehæren</seg> og omtales som den egenlige Høvding, det er <seg type="com" n="com294">vist</seg>. Ikke <placeName key="his619">Frisland</placeName>, men udentvivl <hi rend="spaced"><placeName key="fak92">Sverrig</placeName></hi> (<hi rend="romanType"><seg type="com" n="com154">Sveo lothe</seg></hi> 85) gialdt <seg type="com" n="com155">Toget</seg>. Dronning <rs type="myth" key="myth986">Hildeborg</rs> havde forbundet sig med <rs key="myth963" type="myth">Fin</rs>, <rs key="myth1009" type="myth">Joternes</rs> Høvding, men han maatte flye af det første Slag, og faldt Aaret efter, da <rs type="myth" key="myth982">Hengest</rs> gjæstede ham i hans eget Land. Meer vil jeg ikke nu sige herom, for ei at sige formeget, thi naar kun Dette er sandt, seer Man let at hverken Oversætter eller <seg type="com" n="com157">Rec.</seg> vidste hvad de sagde, og at vise dette er Hovedsagen her.</p>
+<p rend="firstIndent">
+Ei vil jeg her tale om det dunkle Sted i Begyndelsen af 18de Sang hvor <hi rend="spaced"><rs type="myth" key="myth238">Brosinga-Men</rs></hi> (udentvivl <rs key="myth19" type="myth">Freias</rs> <rs type="myth" key="myth238">Brysinga-Men</rs> hos Islænderne) med et Par Ord omtales, men sige maae jeg at det er reent <seg type="com" n="com319">udenad</seg>, naar <seg type="com" n="com157">Rec.</seg> siger: denne Ring havde <seg type="com" n="com159">Gothen</seg> <rs key="myth985" type="myth">Higelak</rs> fra <rs type="myth" key="myth1021">Svertings</rs> Sønnesøn, der faldt da han vilde hævne sig paa Friserne. Talen er nemlig her ingenlunde om <rs type="myth" key="myth238">Brysing</rs>, men om det Halssmykke Dronningen gav <rs type="myth" key="myth406">Bjovulf</rs> og han igjen <rs type="myth" key="myth985">Higelak</rs>. Dette Smykke, staaer der, havde <seg type="com" n="com334">Gothekongen</seg> <rs key="myth985" type="myth">Higelak</rs>, <rs type="myth" key="myth1021">Svertings</rs> Frænde, med sig, <seg type="com" n="com160">der</seg> han af Overmod <seg type="com" n="com295">befeidede</seg> <placeName key="his619">Frisland</placeName> og faldt paa Valen, om hvilket <seg type="com" n="com161">Tog</seg> siden videre tales i den 33de Sang (S. 176).</p>
+   
+   <p rend="firstIndent"> Ved Sangene 19–23 vil jeg ikke her opholde mig. At <rs type="myth" key="myth1116">Grændels Moder</rs> vilde hævne sin Søn, dræbde <rs key="myth948" type="myth">Æscher</rs>, blev forfulgt til sine Moradser, dræbdes der tilligemed sin Søn af <rs type="myth" key="myth406">Bjovulf</rs> med et <rs key="myth111" type="myth">Jette</rs>sværd, see dette er <seg type="com" n="com162">Beenraden</seg> af Sangenes Indhold, den lod sig ei miskjende, og Andet har <seg type="com" n="com163">Rec.</seg> ikke opstillet. End ikke her er hans Angivelse fri for Bommerter, men de ere ikke vigtige nok til at paatales.</p>
+<p rend="firstIndent">
+I den 24de Sang fortæller rigtig nok <rs type="myth" key="myth406">Bjovulf</rs> <pb type="text" facs="1815_253_fax011.jpg" ed="A" subtype="column" n="1012"/>sin Heltebedrift med <rs key="myth111" type="myth">Jette</rs>sværdet, men ingenlunde gav han <rs key="myth62.b" type="myth">Hrodgar</rs> det, thi det var, som han selv siger, smeltet af det hede <rs key="myth265" type="myth">Trolde</rs>blod, kun <seg type="com" n="com164">Hjaltet</seg> havde han beholdt og derpaa stod de <seg type="com" n="com165">mærkelige</seg> Runer. <rs key="myth62.b" type="myth">Hrodgar</rs> holdt ogsaa ganske rigtig en lang Taksigelsestale til <rs type="myth" key="myth406">Bjovulf</rs>, men at han i den satte <rs type="myth" key="myth406">Bjovulfs</rs> Bedrifter høit over <hi rend="spaced"><rs key="myth984" type="myth">Hermods</rs></hi> og fortalde denne Helts sørgelige Skjebne, derom tier saavel den latinske Oversættelse som <seg type="com" n="com166">Rec.</seg> og for ikke at sige noget Uvist vil jeg ogsaa opsætte den videre Tale om disse dunkle, men høist <seg type="com" n="com331">mærkelige</seg> Ting.
+</p>
+<p rend="firstIndent">
+<rs type="myth" key="myth406">Bjovulfs</rs> og <rs key="myth62.b" type="myth">Hrodgars</rs> Afskedstaler i den 26de Sang ere, efter mine Tanker ei saa lette at løbe med, at Man <seg type="com" n="com167">jo</seg> maae finde Kongesønnens Udenlandsreise heel fordægtig og Striden mellem <seg type="com" n="com168">Gothefolket</seg> og de <seg type="com" n="com169">Gar-Danske</seg> saare betænkelig. Her er jeg da i det Tilfælde at jeg ei tør sige saa meget som <seg type="com" n="com170">Rec.</seg> og vil kun bemærke, at <rs key="myth62.b" type="myth">Hrodgar</rs> <seg type="com" n="com171">forlovede</seg> <rs type="myth" key="myth406">Bjovulf</rs> som en ret ægte Dannerkonge ei blot med Guld og skinnende Klenodier, men med den herligste og sjeldneste Ædelsteen i Kongekronen: inderlig Kjærlighed.
+</p>
+<lg>
+<l>See, Taarerne <seg type="com" n="com172">runde</seg></l>
+<l>Den Gubbe paa Kind,</l>
+<l>Ei dølge han kunde</l>
+<l>Bevægede Sind,</l>
+<l>Tog <rs type="myth" key="myth406">Bjovulf</rs> i Arme,</l>
+<l>Som Ven tager Ven,</l>
+<l>Og <seg type="com" n="com173">kysde</seg> med Varme</l>
+<l>Den herlige Svend.</l>
+</lg>
+<p rend="noIndent">
+Hermed endes da Kvadets første <seg type="com" n="com174">Balk</seg>, som indeholder <rs type="myth" key="myth406">Bjovulfs</rs> <seg type="com" n="com175">Dannefærd</seg> og Bedrift i vort
+<placeName key="poet219">Dannemark</placeName>.
+</p>
+<p rend="firstIndent">
+I den 27de Sang som deilig beskriver <rs key="myth406" type="myth">Bjovulfs</rs> <seg type="com" n="com176">Hjemfærd</seg> tales mod Slutningen om <rs type="myth" key="myth985">Higelaks</rs> Giftermaal med <rs key="myth1005" type="myth">Hæreths</rs> Daatter, og det er sandt, i den findes adskillige dunkle Ord, men det var dog Synd derfor, som den latinske Oversætter, at gjøre Dronningen til et blodtørstigt Uhyre, der maatte sendes hjem til sin Fader, før der kunde blive Fred i Hallen, og dette Misgreb er saameget uforsvarligere, som der i den følgende Sang og selv i Oversættelsen (S. 149) udtrykkelig staaer at <rs type="myth" key="myth1005">Hæreths</rs> Daatter skjænkede for <rs type="myth" key="myth406">Bjovulf</rs> og hans Mænd og <hi rend="spaced">elskede</hi> de gjæve Svende. Dette lærde mig flux at det maatte være lidt galt fat med den haarde Be<pb type="text" facs="1815_253_fax012.jpg" ed="A" subtype="column" n="1013"/>skyldning, og ved at see Texten efter, fandt jeg da at Pigebarnets hele Forbrydelse bestod i at hun af Kjærlighed til <rs type="myth" key="myth985">Higelak</rs> dræbde det Uhyre som vogtede hendes Jomfrubur, og som Ingen af <rs key="myth985" type="myth">Higelaks</rs> <seg type="com" n="com177">Kjæmper</seg> turde nærme sig. Derpaa drog hun <hi rend="spaced">ei til</hi> men <hi rend="spaced">fra</hi> sin Faders Huus hjem med den unge <seg type="com" n="com178">Kjæmpe</seg> og de levede i Gammen <seg type="com" n="com179">der</seg> <rs type="myth" key="myth406">Bjovulf</rs> kom, som <seg type="com" n="com180">og</seg> det Følgende viser. Ikke destomindre har <seg type="com" n="com181">Rec.</seg> trøstig skrevet om den <seg type="com" n="com296">væne Møe</seg>: hun viisde sig grusom og blev forhadt, men da hun drog tilbage over de gule Bølger til sin Faders Huus, blev Kongen atter elsket.
+</p>
+<p rend="firstIndent">
+Om den 28de Sang vil jeg saa godt som tie, ei fordi jo en vigtig Deel af dens Indhold fattes i <seg type="com" n="com183">Rec.</seg>, men fordi jeg ikke selv veed ret <app type="corrNote" select="yes"><lem wit="GV">Beskeed</lem><rdg wit="A">B skeed</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> om denne Episode som nogle manglende Ord bidrage til at fordunkle. Kun det vil jeg sige at ikke til <hi rend="spaced">en Frode</hi> men som der udtrykkelig staaer (S. 152) til <rs key="myth968" type="myth">Frodes</rs> <hi rend="spaced">Søn</hi> havde <rs key="myth62.b" type="myth">Hrodgar</rs> lovet sin Daatter.
+</p>
+<p rend="firstIndent">
+Næsten ligedan er det med 29de Sang, flere vigtige Dele af Indholden har <seg type="com" n="com185">Rec.</seg> end ikke peget paa, og Adskilligt er aabenbar feil, men da jeg selv er i Tvivl om Adskilligt vil jeg <seg type="com" n="com187">heller</seg> anmærke at det Hovedtræk, at <rs type="myth" key="myth406">Bjovulf</rs> blev Konge efter <rs key="myth985" type="myth">Higelak</rs> (og <rs type="myth" key="myth1005"><app type="corrNote" select="yes"><lem wit="GV">Heardred</lem><rdg wit="A">Heared</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app></rs> <rs key="myth985" type="myth">Higelaks</rs> Søn) og regierede lyksalig i 50 Vintre indtil Dragen begyndte at rase, har sin gode Hjemmel i Texten.
+</p>
+<p rend="firstIndent">
+Om den 30te og 31te Sang siger <seg type="com" n="com188">Rec.</seg> at de ere tabde, derimod siger Udgiveren (<hi rend="romanType"><rs type="title" key="title1855"><seg type="com" n="com189">Praef XVIII</seg></rs></hi>) at 29de og 30te Sang vare i Haandskriften forenede med den 28de og at han ei vilde adskille dem. Da nu Udgiveren virkelig har skilt den 29de fra den 28de, men derimod ikke nævnet den 30te og 31te, maae det være disse <seg type="com" n="com190">tvendes</seg> Sammensmeltning med den 29de han mener. Nu kan vel slig Sammensmeltning synes betænkelig, især da den 29de Sang ei er usædvanlig lang, men Udgiverens Ord maa dog borge for, at der i Haandskriftet var ingen Lacune mellem den 29de og 32te Sang, og at altsaa er enten tre Sange sammensmeltede, eller den 30te Sang ved en Skjødesløshed, som ikke er underlig i en saa slet Haandskrift, kaldt den 32te. Saavidt man kan see paa disse hullede Stæder er der ei heller mindste Tegn til at enten een eller to Sange skulde være borte, og selv som Gjætning vilde da de <seg type="com" n="com191">Rec's.</seg> Ord han sætter som <seg type="com" n="com192">visse</seg> være ugrundede.</p>
+   <p rend="firstIndent"><pb type="text" facs="1815_253_fax012.jpg" ed="A" subtype="column" n="1014"/>Derimod skal Ingen nægte at 32te Sang med sine mange Huller er saare dunkel, og kan ingen af de Huller (især i Slutningen af 29de Sang) ved en god Hændelse vorde stoppet, vil Man ventelig aldrig faae at vide hvorledes det ret hængde sammen med den Drage og hans Skat; men Saameget kan Man dog flux see baade i Texten og den latinske Oversættelse, at en gammel Konge havde gjemt sine Skatte og sat Dragen til at ruge over dem, i 300 Aar laae Dragen som slumrende, men da skedte det, at Een stjal et Sølvfad af Skatten, da vaagnede Dragen og begyndte at rase med Edder og Ild.
+</p>
+<p rend="firstIndent">
+<seg type="com" n="com193">Rec.</seg> siger ganske rigtig at 33te Sang begynder med Fortælling om Dragens Hærgen og <rs type="myth" key="myth406">Bjovulfs</rs> Rustning, og det ikke blot <hi rend="spaced">synes</hi> men sees klarlig, at Digteren gaaer tilbage til at tale om <rs key="myth985" type="myth">Higelaks</rs> Fald, men nu kommer <seg type="com" n="com193">Rec.</seg> saaledes i Vilderede, at han selv mærker det gaaer for galt. Havde han nu været saa oprigtig at sige: her modsiger den latinske Oversættelse sig selv, og da jeg ei forstaaer Angelsaxisk kan jeg ei sige, hvis Skylden er, da skulde jeg taget en god Deel læmpeligere paa ham, men det fornemme <seg type="com" n="com195">Recensentvæsen</seg> skal min Troe have <seg type="com" n="com196">Skrup</seg>.
+</p>
+<p rend="firstIndent">
+Nu er Tingen kortelig denne, <rs type="myth" key="myth406">Bjovulf</rs> vilde gaae mod Dragen, og nu siger Skjalden: mange store Bedrifter havde han forhen øvet fra den Dag han rensede <rs key="myth62.b" type="myth">Hrodgars</rs> <seg type="com" n="com197">Hald</seg> og <seg type="com" n="com198">befeidede</seg> <rs type="myth" key="myth971">Grændels</rs> Slægt. Det var ikke af hans mindste Kampe den han bestod, da <rs key="myth985" type="myth">Higelak</rs> faldt i <placeName key="fak619">Frisland</placeName>. Nu følger en Tale om hvorledes <rs type="myth" key="myth406">Bjovulf</rs> <seg type="com" n="com199">undkom</seg>, som formedelst Huller er heel dunkel, men derpaa siges, at da han kom hjem til <placeName key="fak125">Gothland</placeName>, tilbød Folket ham <seg type="com" n="com200">Kongestolen</seg> fordi de ei tiltroede et Barn (<rs type="myth" key="myth985">Higelaks</rs> Søn) at kunde værge Landet. Dog <rs type="myth" key="myth406">Bjovulf</rs> vilde ingenlunde være <rs type="myth" key="myth978">Hardreds</rs> (<rs key="myth985" type="myth">Higelaks</rs> Søns) Herre, men styrede kun Landet til han blev ældre og kunde selv annamme Regimentet. Siden kom <rs type="myth" key="myth1012">Others</rs> Sønner (fra <placeName key="fak92">Sverrig</placeName> som Man siden seer) over Havet og dræbde <rs key="myth985" type="myth">Higelaks</rs> Søn, men da han, <rs type="myth" key="myth978">Hardred</rs>, var falden, drog <rs key="myth1014" type="myth">Ocgenthjofs</rs> Søn eller <seg type="com" n="com201">Ætmand</seg> (<rs type="myth" key="myth1014">Ocgenthjov</rs> var, som Man siden seer, <rs key="myth1012" type="myth">Others</rs> Fader) hjem igjen, og lod <rs type="myth" key="myth406">Bjovulf</rs> beholde <seg type="com" n="com202">Gøtheriget</seg>.
+</p>
+<p rend="firstIndent">
+<seg type="com" n="com203">Rec.</seg> siger rigtig at 34te Sang begynder med den Anmærkning at <rs type="myth" key="myth406">Bjovulf</rs> siden drog over Havet og hævnede sin Konges Fald paa <rs key="myth1012" type="myth">Others</rs> <pb type="text" facs="1815_253_fax013.jpg" ed="A" subtype="column" n="1015"/>Søn, men saare uheldig er den Overgang: saaledes hævnede han skjændigt Mord, da han <seg type="com" n="com204">selv tolvte</seg> stred imod Dragen, thi der staaer at saaledes øvede han <seg type="com" n="com205">Kjæmpebedrifter</seg> lige til den Dag han gik imod Dragen. Hvad her videre staaer om Skibet med de 30 Mand o.s.v. er Snak, hvorved jeg ei vil opholde mig, men ile til <rs type="myth" key="myth406">Bjovulfs</rs> Tale, som han holdt <hi rend="spaced">før</hi> Dragekampen begyndte, og som er en af de <seg type="com" n="com206">mærkeligste</seg> Episoder i Digtet, men i den latinske Oversættelse saa forhutlet at der er ikke Mening end sige Fortælling og Skjønhed at finde. Følgende er kortelig Talens Indhold: mange Kampe, siger <rs type="myth" key="myth406">Bjovulf</rs>, <seg type="com" n="com207">bestod</seg> jeg i min Ungdom og mindes dem grandt. Jeg var syv Aar gammel <seg type="com" n="com208">der</seg> Kong <rs type="myth" key="myth999">Hrædel</rs> tog mig af min Faders Huus, opfostrede og begavede mig herlig. Det værste som timedes den Konge var hans Børns Skjebne, thi hans Børn vare <hi rend="spaced"><rs key="myth983" type="myth">Herebald</rs></hi> og <hi rend="spaced"><rs type="myth" key="myth974">Hædkyn</rs></hi> og min <rs key="myth985" type="myth">Higelak</rs>. Den Ældste faldt for sin Broders Haand, <rs type="myth" key="myth974">Hædkyn</rs> skjød <seg type="com" n="com209">feil</seg> og skjød med Piil fra <seg type="com" n="com210">Hornbuen</seg> sin elskede Ven. Det var en gruelig Ting for Folket, de vilde ei lade den Faldne uhævnet, men det var en sørgelig Ting for den Gamle at hans anden Søn skulde ende sit unge Liv i Galgen. Da greb han Harpen og kvad en sørgelig Sang om hans Søn som hængde i Galgen, Ravne til <seg type="com" n="com212">Brad</seg>, og dermed frelsde han <rs type="myth" key="myth974">Hædkyns</rs> Liv (35te Sang) men stor var hans Vaande, han sørgede over <rs key="myth983" type="myth">Hereblad</rs>, og kunde dog ei hade hans Banemand; han døde af Sorg og efterlod <rs type="myth" key="myth974">Hædkyn</rs> Land og Rige. Da <seg type="com" n="com213">opkom</seg> der Krig mellem <seg type="com" n="com214">Gotherne</seg> og de Svenske da <rs type="myth" key="myth1014">Ongenthjov</rs> og <rs key="myth1012" type="myth">Other</rs> <seg type="com" n="com297">befeidede</seg> <rs type="myth" key="myth974">Hædkyn</rs>.</p>
+<p rend="firstIndent">
+Her er nogen Dunkelhed, som dog tildeels opklares i en af de følgende Episoder, der føier sig til denne. Derpaa taler <rs type="myth" key="myth406">Bjovulf</rs> atter om sin Manddom og siger, at vidste han hvordan han kunde <seg n="com308" type="com">fatte</seg> den Drage vilde han ei bruge Vaaben, men knuge den, som han knugede <rs type="myth" key="myth971">Grændel</rs>. Striden begyndte nu, og beskrives deilig, og Sangen endes med at <rs key="myth406" type="myth">Bjovulfs</rs> Mænd, for at frelse deres Liv, <seg type="com" n="com215">flydde</seg> til Skoven og <seg type="com" n="com216">lode</seg> deres Herre ene.
+</p>
+<p rend="firstIndentRight">
+(Fortsættes.)
+</p>
+
+</div>
+   
+  <div type="[nr. 65]">
+     <pb type="text" facs="1815_253_fax014.jpg" ed="A" subtype="column" n="1025" rend="supp"/>
+     <!--<p rend="firstIndent">
+Nyeste
+Skilderie af Kjøbenhavn.
+Tolvte Aargang. <rs type="title" key="">No. 65.</rs>
+Udgivet og forlagt af Boghaudler S. Soldin.
+Fotseubes, i Felge Kongel. assernaadigst Tilladelse, med Brevposterne.
+Tirsdagen den 15 August 1815.
+</p>-->
+<head rend="2">
+Et Par Ord om det nys udkomne angelsaxiske Digt.</head>
+   <p rend="center">(Fortsættelse; see forr. No.)</p>
+     <fw type="blank"/>
+<p rend="noIndent">
+<hi rend="initial">I</hi> den 36te Sang er en lille historisk Episode om <rs key="myth1012" type="myth">Others</rs> Søn og hans Sværd som jeg <seg type="com" n="com298">end</seg> ikke ret forstaar, og da det er ganske rigtigt at <rs type="myth" key="myth1026">Viglaf Vigstansen</rs>, den eneste, som blev sin Konge troe, her taler liflige Ord og iler <rs type="myth" key="myth406">Bjovulf</rs> til Hjelp vil jeg Intet tillægge.</p>
+  <p rend="firstIndent">Om den 37te Sang hvori meldes om Dragens Død og <rs key="myth406" type="myth">Bjovulfs</rs> Ulivssaar vil jeg heller Intet sige, uden at den er ret vemodig deilig, og at <rs type="myth" key="myth406">Bjovulf</rs> deri ikke <hi rend="spaced">nævner</hi> nogen af sine Bedrifter, men mindes kun sin Vælde og sukker vel over ei at have en Søn hvem han kunde <seg type="com" n="com217">antvorde</seg> sine herlige Vaaben.</p>
+  <p rend="firstIndent">Den 38te Sang beskriver de <seg n="com269" type="com">Undersyn</seg> <rs type="myth" key="myth1026">Viglaf</rs> saae i Dragebjerget, hans Tilbagekomst til den døende Konge, og <rs key="myth406" type="myth">Bjovulfs</rs> sidste Tale, alt saare deiligt.</p>
+  <p rend="firstIndent">Hvor det skal staae i den 39de Sang at <rs type="myth" key="myth406">Bjovulfs</rs> Mænd forlode den Egn hvor deres Konge faldt, kan jeg ei engang finde i Latinen, men at det ikke er sandt maae jeg sige og tillige bemærke at det er Intet sagt om <rs key="myth1026" type="myth">Viglafs</rs> kjærlige, kraftige Tale, at han i den bebreidede Svendene deres Flugt, skjøndt det er sandt, det gjorde han tilvisse.</p>
+     <p rend="firstIndent">Indholden af 40de og 41de Sang er angivet omtrent som den af 34te det vil sige reent galt. <pb type="text" facs="1815_253_fax014.jpg" ed="A" subtype="column" n="1026" rend="supp"/><rs type="myth" key="myth1026">Viglaf</rs> taler ikke om Anledningen til det sidste <seg type="com" n="com299">Tog</seg>, nemlig Kamp mellem Franker og Friser, hvilket er en Snak, som har ingensteds hjemme; nei men over <rs key="myth406" type="myth">Bjovulfs</rs> Lig sidder <rs type="myth" key="myth1026">Viglaf</rs> sorgfuld, klager og siger: <seg type="com" n="com219">end</seg> maa vi vente os Feide, naar Kongens Fald rygtes hos Franker og Friser, thi af dem have vi kun ondt at vente siden <rs type="myth" key="myth985">Higelak</rs> gjorde <seg type="com" n="com300">Toget</seg> til <placeName key="fak619">Frisland</placeName>. Af Svenskerne, bliver han ved, venter jeg ei heller <seg type="com" n="com220">Troe eller Love</seg>, thi det veed vi alle hvorledes <rs type="myth" key="myth1014">Ongenthjov</rs>, <rs key="myth1012" type="myth">Others</rs> fader, røvede <rs type="myth" key="myth974">Hædkyn</rs> Livet ved <rs key="myth1017" type="myth">Hrefnavud</rs>, da maatte <seg type="com" n="com221">Gotherne</seg> flygte herreløse til <rs type="myth" key="myth1017">Hrefnesholt</rs>, Fienden bevogtede dem der og truede med næste Morgen at dræbe <seg type="com" n="com222">Hælvden</seg> og lade <seg type="com" n="com222">Hælvden</seg> hænge til Skjemt i Galgen. Dog Morgengryet trøstede de Sørgende, da hørde de <rs type="myth" key="myth985">Higelaks</rs> Horn, Han den <seg type="com" n="com224">Ædling</seg> kom dem til Hjelp med dygtige <seg type="com" n="com225">Kjæmper</seg>.</p>
+     <p rend="firstIndent">Hermed ender den 40de Sang og i den 41de fortælles videre om Krigen mellem <rs type="myth" key="myth985">Higelak</rs> og <rs key="myth1014" type="myth">Ongenthjov</rs>, men ei saa klart at jeg <seg type="com" n="com301">end</seg> kan see tilvisse om det var to Krige, hvoraf den første førdes i <rs type="myth" key="myth985">Higelaks</rs> den anden i <rs key="myth1014" type="myth">Ongenthjofs</rs> Land, eller om <rs type="myth" key="myth1014">Ongenthjov</rs> mistede Livet, det er derimod klart at han maatte bukke for <rs key="myth985" type="myth">Higelaks</rs> Jarl <rs type="myth" key="myth1022">Ulf Vonreding</rs> og at <rs key="myth985" type="myth">Higelak</rs> <seg type="com" n="com226">der</seg> han besteeg <seg type="com" n="com227">Gothernes Kongestol</seg>  belønnede ham og <rs type="myth" key="myth1008">Jofur</rs> kongelig for deres Bedrifter i den svenske Krig, og gav siden <rs type="myth" key="myth1008">Jofur</rs> sin eneste Daatter.</p>
+     <p rend="firstIndent">Heraf see vi da at hvad Udgiver og <seg type="com" n="com228">Recensent</seg> har gjort til <hi rend="spaced">een</hi> Krig hvori <rs type="myth" key="myth985">Higelak</rs> faldt, <pb type="text" facs="1815_253_fax015.jpg" ed="A" subtype="column" n="1027"/>er tre ganske forskjellige, den første paaførde Svenskeren <rs key="myth1014" type="myth">Ongenthjov</rs> <seg type="com" n="com229">Gotherne</seg>, da <rs type="myth" key="myth999">Hrædel</rs> var død, i den faldt <rs key="myth974" type="myth">Hædkyn</rs>, og Riget tilfaldt da <rs type="myth" key="myth985">Higelak</rs>. Den anden paaførde <rs type="myth" key="myth985">Higelak</rs> Franker og Friser og faldt selv; den tredie paaførde <rs key="myth1012" type="myth">Other</rs> og hans Sønner <rs type="myth" key="myth985">Higelaks</rs> Søn <rs key="myth978" type="myth">Hardred</rs> som faldt og efterlod <rs type="myth" key="myth406">Bjovulf</rs>, <rs key="myth985" type="myth">Higelaks</rs> Søstersøn, Riget, og det er et ikke lidet Bidrag til den gamle svenske Historie.</p>
+     <p rend="firstIndent">Efterat nu <rs type="myth" key="myth1026">Viglaf</rs> har ihukommet det gamle Fiendskab, der spaaede nye Krig efter <rs key="myth406" type="myth">Bjovulfs</rs> <seg type="com" n="com230">Afgang</seg>, byder han Folket haste med at flye den Herlige til Jorde, og den Skat, siger han, som kostede ham Livet skal Luen fortære med ham. I faa men dybe Toner udtaler han Sorgen som maatte overskygge Land og Folk, og vandrer derpaa med Skaren til <rs type="myth" key="myth1038">Earnanæs</rs>.</p>
+     <p rend="firstIndent">De to sidste Sange indeholde endnu en Tale af <rs key="myth1026" type="myth">Viglaf</rs> hvori han beklager at <rs type="myth" key="myth406">Bjovulf</rs> ei lod Dragen ligge paa Guld til Verdens Ende, og vier alle de Klenodier til Baalet, og det Hele slutter med Fortællingen om <rs key="myth406" type="myth">Bjovulfs</rs> Baal og Gravhøi, og, som det synes, med en ko<!-- AP: emenderes? OK i GBs samleværk, VAP -->rt Sum af den Lovsang Skjaldene lode tone over Graven.</p>
+     <p rend="firstIndent">Det var, som jeg flux sagde, ingenlunde min Hensigt at udbrede mig over Digtets poetiske Indhold, dets Fylde, men kun, <app type="corrNote" select="yes"><lem wit="GV">saavidt</lem><rdg wit="A">savvidt</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> jeg formaaede, at afhjelpe de store Mangler der fandtes i Recensjonens Indholdsliste.</p>
+     <p rend="firstIndent">Det kan nu ligesaalidt være min Hensigt her at tale Meget om Digtets Værd og Bygningskonst eller om det Udbytte <placeName key="fak24">Nordens</placeName> <seg type="com" n="com231">Krønike</seg> tør af Kvadet tilegne sig. Den simple Angivelse af Indhold og Sang forenet med den Prøve, jeg leverede, give den Forstandige et bedre Billede af Digtets Eiendommelighed, end lang Tale mægtede, og dette Billede kan kun forklares gjennem en stille Beskuelse af det Hele, som jeg i en rimet Oversættelse skal stræbe at gjøre muelig for dem af mine Landsmænd, hvis <seg type="com" n="com232">Leilighed</seg> det ikke er at trænge ind i Grundsproget. Kun Saameget vil jeg herom sige, at dette Kvad, <hi rend="spaced"><rs type="title" key="title3272">Bjovulfs Drape</rs>,</hi> som vel maae kaldes dets passeligste Navn, er saa ganske ene i sit Slags, at jeg ikke tør hensætte det i <seg n="com273" type="com">Fag</seg> med noget af de Kvad vi have fra <placeName key="fak24">Nordens</placeName> Oldtid, thi Man sporer her i Anlæg og Udførelse en vitterlig Konst, om jeg saa maae sige, der forunderlig <pb type="text" facs="1815_253_fax015.jpg" ed="A" subtype="column" n="1028"/>besvogrer sig med den gamle danske Trohjertighed og Simpelhed. <seg type="com" n="com233">De eddiske Kvad</seg> om <rs type="myth" key="myth119">Volsunger</rs> og <rs key="myth192" type="myth">Niflunger</rs> ere uimodsigelig dette Kvads næste bekjendte Frænder, men Sødskende vorde de aldrig for Beskuelsen, deres Høihed og Dybde i Følelse og Betydning savner <rs type="title" key="title3272">Bjovulfs Drape</rs>, men derfor er den ei heller som de <seg type="com" n="com302">kjæmpelige</seg> Brudstykker der kun have Sammenhæng og Eenhed i det Usynlige, den er et <seg type="com" n="com303">favert</seg>, smagfuld ordnet og udpyntet Heelt, og vilde en Skjald i Konstens Barndom frembringe et Saadant, maatte han nøies med en verdslig Eenhed, lade Alt bevæge sig om sin Helt, Alt kaste Glands paa ham. <seg type="com" n="com234">Saa</seg> er det virkelig og Kvadet er i alle maader <rs type="myth" key="myth406">Bjovulfs</rs> aandelige Bautasteen af smeltet Guld som skinner fra <rs key="myth996.a" type="myth">Hroneklint</rs> vidt over Havet og kundgjør Styrmandens speidende Øie <rs type="myth" key="myth406.a">Sø-<!-- AP: kan ikke se om der er "-" -->Gothens</rs> Hæder, skjøndt det ei skal nægtes, til Skjaldens <seg n="com310" type="com">Priis</seg>, at den kjender sin Lavhed under den Himmel, mod hvilken den peger.</p>
+     <p rend="firstIndent">Dog, jeg maae afbryde en Betragtning, som vilde her lede for vidt, og kun tilføie, at efter alle indvortes Mærker var Skjalden af <rs type="myth" key="myth1059">Anguls</rs> Æt, uagtet jeg vel seer at dette ligesaameget indvikler Digtets Historie, som det forklarer dets Vilkaar.</p>
+<p rend="firstIndent">Hvad nu det historiske <app type="corrNote" select="yes"><lem wit="GV">Udbytte</lem><rdg wit="A">Uhbytte</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> angaaer, da have mine Undersøgelser i dette Stykke <seg type="com" n="com236">alt</seg> lært mig at det <seg type="com" n="com237">end</seg> er meget for tidligt at ville vurdere dette, at det derimod er i god Forstand uvurdeerligt for Alle, som elske Historien og <seg type="com" n="com238">besynderlig</seg> for os Danske, det kan man flux sige, thi det er aabenbart. <seg type="com" n="com239">Rec.</seg> har meget rigtigt bemærket, at dette Digt burde ende Striden om, hvorvidt <hi rend="spaced">Dansk</hi> var i <hi rend="spaced">Oldtiden</hi> et Hædersnavn for de omliggende nordiske Folk, kun tvivler jeg om, det skeer i Hast, thi visselig, dette Digts Vidnesbyrd behøvedes ei i saa klar en Sag, ville Man ei troe hardtad alle Middelalderen<!-- AP: OBS - ligner "n" i kopi, ligner "u" i G.s bidrag-->s Krøniker og selv de <seg type="com" n="com240">norske Normanner</seg> og <persName key="pe2392">Dudo</persName>, vil man da vel troe en gammel navnløs Skjald; turde end ikke <persName key="pe7">Suhm</persName> troe sine egne Øine, men lod sig af svenske Forfattere og den<!-- AP: OBS - ligner "n" i kopi, ligner "u" i G.s bidrag--> storagtige Nordmand <persName key="pe991">Gerhard Skønning</persName> indbilde at det danske Navn og Folk havde altid været en Smaating i <placeName key="fak24">Norden</placeName>, indrømmede han i elskværdig, men umaadelig Beskedenhed og ubegribelig Blidhed, at de Danske <pb type="text" facs="1815_253_fax016.jpg" ed="A" subtype="column" n="1029"/>var af <hi rend="spaced"><seg n="com270" type="com">up-svensk</seg></hi> Æt og ret <seg type="com" n="com241">Sildefødinger</seg> imod <seg type="com" n="com242">Klippekarlene</seg>, hvor vil Man da vente at en Sandhed skulde indrømmes af dem, som den maatte skille ved en Ære, selv den store <persName key="pe2219">Hugo Grotius</persName> har givet dem Sort paa Hvidt for at være deres <seg type="com" n="com243">Odelsgods</seg>!</p>
+<p rend="firstIndent">En anden, som mig synes, ligesaa mærkelig Ting er det, at <seg type="com" n="com244">Gotherne</seg> skildres som Kraftfolket i <placeName key="fak24">Norden</placeName>, som Venner med de rette Danske men arvelige Fiender af de Svenske, thi det er den Forestilling af <seg type="com" n="com245">Folkeforholdet</seg> i det gamle <placeName key="fak24">Norden</placeName>, som jeg, før jeg saae dette Digt, fandt mig ved Historiens <seg type="com" n="com246">Beskuelse</seg> nødt til at antage, og som jeg i min Betragtning over <placeName key="fak12">Europa</placeName> kundgjorde, uden at vente, at den <seg type="com" n="com271">nuomtide</seg> skulde finde mere <seg type="com" n="com247">Indgang</seg> end min Forestilling om de Danske i Særdeleshed.</p>
+     <p rend="firstIndent">Endelig er det vigtigste historiske Spørgsmaal i Anledning af de Navne og Bedrifter, som fremtræde i Digtet: hvorledes forholde de sig til hvad vi om Oldtiden veed af danske og islandske Sagn? Det er nemt, med <seg type="com" n="com248">Rec.</seg> at svare at da Digtet angaaer saa fjerne Tider, kan vi ikke vente at finde dets Begivenheder bestyrkede ved nordiske Efterretninger; men hvad er sligt for et Svar? <seg type="com" n="com248">Rec.</seg> sætter selv Digtets Begivenheder i det femte Aarhundrede efter <persName key="pe45">Christus</persName>, og nu maae Man dog spørge om de nordiske Sagn ei gaae saa langt tilbage i Tiden, om Islænderne ikke sætte deres <rs key="myth59" type="myth">Odin</rs> før <persName key="pe45">Christi</persName> Fødsel, om <persName key="pe237">Saxo</persName> ikke sætter sin <rs key="myth67" type="myth">Skjold</rs> mange Menneskealdere før? Den Udflugt duer altsaa ikke. Kongelisterne saavel i <rs type="title" key="title551">Heimskringla</rs> som i <rs key="title83" type="title">Saxo</rs> maae for en Dag; og kan det bevises at Kvadet taler om samme <hi rend="spaced">Steder</hi> som Krønikerne, maae der ogsaa findes <seg type="com" n="com250">Berørelser</seg>, hvis ikke Kvadets Personer ere vitterlig digtede, thi Konger hvis Ihukommelse holdtes udenlands vedlige, kunde ei glemmes i Fædrenelandet, naar der ellers bevaredes en Række af <seg type="com" n="com251">Oldsagn</seg>. Hvad nu de <seg type="com" n="com252">gothiske</seg> Konger angaaer, da have vi om dem ingen Sagnrække, men om <placeName key="poet219">Dannemarks</placeName> og <placeName key="fak92">Sverrigs</placeName> har vi det, tvivlsomt kan det maaskee være, om vi ere beføiede til at søge <rs key="myth1014" type="myth">Ongenthjof</rs> og <rs type="myth" key="myth1012">Other</rs> mellem <hi rend="spaced"><placeName key="fak97">Upsals</placeName></hi> Konger, men <rs key="myth67" type="myth">Skjold</rs>, <rs type="myth" key="myth30">Halvdan</rs> og <rs key="myth62.b" type="myth">Hrodgar</rs> maae vi nødvendig søge blandt de Dan<!-- AP: OBS - ligner "n" i kopi, ligner "u" i G.s bidrag-->ske, og see, vi finde jo <seg type="com" n="com304">og</seg> flux baade <rs type="myth" key="myth67">Skjold</rs> og <rs key="myth30" type="myth">Halvdan</rs> hos <rs type="title" key="title83">Saxo</rs>, vi finde to af <pb type="text" facs="1815_253_fax016.jpg" ed="A" subtype="column" n="1030"/><rs key="myth30" type="myth">Halvdans</rs> Sønner nævnede <rs type="myth" key="myth62">Roe</rs> og <rs key="myth34" type="myth">Helge</rs>, vi finde i <rs type="title" key="title3272">Bjovulfs Drape</rs> tre og de to hede <hi rend="spaced"><rs key="myth62.b" type="myth">Hrodgar</rs></hi> og <hi rend="spaced"><rs type="myth" key="myth34">Halge</rs></hi>, <rs key="myth62.b" type="myth">Hrodgar</rs> maae da ligesaa vist være <persName key="pe237">Saxos</persName> <rs key="myth62" type="myth">Roe</rs> som denne er Islændernes <hi rend="spaced"><rs type="myth" key="myth62">Hroar</rs>,</hi> og der saameget mere, som det Eneste <persName key="pe237">Saxo</persName> fortæller om <rs key="myth62" type="myth">Roe</rs>, at han bygde en Stad, ogsaa er den eneste bestemte Bedrift Skjalden fortæller om <rs key="myth62.b" type="myth">Hrodgar</rs>. At <rs key="title83" type="title">Saxo</rs> Intet har om <rs type="myth" key="myth971">Grændel</rs> er begribeligt nok, thi at saavel <rs key="myth406" type="myth">Bjovulfs</rs> Kamp med ham som med Dragen er et Eventyr, der i det Høieste har mythisk Betydning, er jo aabenbart. <seg n="com320" type="com">Mærkeligt</seg> er imidlertid det bekjendte gamle Sagn om Trolden i <placeName key="fak623">Isefjord</placeName> der tog <seg n="com321" type="com">Tiende</seg> af Skibenes Mandskab, thi det synes Skjalden at have brugt til <rs key="myth406" type="myth">Bjovulfs</rs> ligesom Munkene siden til <persName key="pe2397">St. Lucii</persName> Ære.</p>
+      <fw type="blank"/>
+ 
+     <p rend="noIndent">Dette maae være nok for denne <seg type="com" n="com305">Sinde</seg>, jeg vil kun bemærke at Sagnene hos <persName key="pe2396">Galfredus Monumetensis<!-- evt. emenderes til Monemutensis VAP 16. dec. 2014--></persName> om den danske Kong <persName key="pe2422">Gvitlak</persName> og hans Krig med <rs type="myth" key="myth1263">Uther Pendragon</rs> synes tildeels at gjælde <rs key="myth985" type="myth">Higelak</rs>, og <persName key="pe7">Suhms</persName> Formodning at han er den samme som den danske Kong <persName key="pe2422">Kohilak</persName> der, efter <persName key="pe1415">Gregorius Turonensis</persName>, faldt i et Slag med <hi rend="spaced">Frankerne</hi> (ligesom <rs key="myth985" type="myth">Higelak</rs>) turde maaskee <seg type="com" n="com253">mærkelig</seg> stadfæste sig. Dog herom og om saameget Andet skal jeg videre <seg type="com" n="com306">handle</seg> om Gud vil jeg skal udføre mit Forsæt at levere en dansk Oversættelse af hele Digtet med en historisk Indledning saavel om Kvadet i sig selv, som om dets historiske Episoder.</p>
+      <fw type="blank"/>
+     <p rend="noIndent">For nu ogsaa at sige et Ord om Sproget, da er det den fra Dansken mest afvigende angelsaxiske Dialekt, og naar Man da seer at selv den ligner i visse Maader Dansk mere end det Islandske, maae Man kraftig mindes om at forlade den Indbildning om Danskens Herkomst fra Islandsken, som <persName key="pe1177">Gram</persName> forgjæves antastede, men som Historie og sund Eftertanke modsiger, og som et grundigt Studium af de nordiske Sprog maae aldeles tilintetgjøre undtagen hos dem, der efter nogle lærde Islænderes Mund have gjort sig det, som <persName key="pe1177">Gram</persName> siger, til en saadan <seg type="com" n="com254">Thesis</seg> og fastsat Mening at de ei bekymre sig om at gaae videre.</p>
+     <p rend="firstIndentRight">
+(Fortsættes.)
+</p>
+  
+  </div>  
+<div type="[nr. 66]">
+   
+    <pb type="periText" facs="1815_253_fax017.jpg"/>
+ <pb type="text" facs="1815_253_fax018.jpg" ed="A" subtype="column" n="1045"/> 
+<head rend="2">
+Et Par Ord om det nys udkomne angelsaxiske Digt.</head>
+   <p rend="center">(Slutning; see forr. No.)</p>
+   <fw type="blank"/>
+<p rend="noIndent">
+<hi rend="initial">S</hi>aaledes havde jeg da sluttet disse Bemærkninger, da <rs type="title" key="title127">Litteraturtidenden</rs>, No. 29 lærde mig, at <seg type="com" n="com255">Rec.</seg> havde et ligesaa underligt Hastværk med at falde mig i Ordet, som med at omtale det Kvad han ikke forstod. Han kalder min Tale galdefuld og Flere end jeg vil vist heri see et Beviis paa at han har mere Galde end jeg, og mit Svar saavel herpaa, som paa Beskyldningen for <seg type="com" n="com256">Grillenfængerie</seg> er kun, at Skjældsord rage mig ikke.
+</p>
+<p rend="firstIndent">
+Om <seg type="com" n="com257">Rec.</seg> har det venlige Haab at min rimede Oversættelse bliver en <hi rend="spaced">vilkaarlig</hi> Paraphras det være hans Sag, men naar han ei turde kalde Prøven saa, havde han gjort bedre i at tie med Sligt, der jo ikke beviser Andet end en slem Mistanke, ingen af mine faa rimede Oversættelser hjemler. Vil forresten Nogen kalde en saadan Oversættelse, som den jeg her har begyndt, en Paraphrase, da har jeg Intet derimod og kan en Anden gjøre det bedre, skal det være mig kjært, thi jeg har sandelig Saameget at bestille, at jeg ei vilde paatage mig et saa møisommeligt Arbeide, dersom jeg ikke troede at gjøre mit Fædreneland en Tjeneste dermed. Jeg veed jo vel det er Skik at spotte med Alt hvad jeg foretager mig, men det synes mig dog <seg type="com" n="com257">Rec.</seg>, i hvem jeg formoder en Mand, der dog har Sands for Alvor og <seg type="com" n="com259">Billighed</seg>, kunde overlade til Secretair <persName key="pe48">Molbech</persName>, i <rs type="title" key="title3369">Athenes</rs> Baggaard.
+</p>
+<p rend="firstIndent">
+Hvad Kvadets Udgiver Hr. Etatsraad <persName key="pe413">Thorkelin</persName> angaaer, da skal Ingen sige at jeg med et Ord har <seg type="com" n="com260">nedsat</seg> hans virkelige Fortjeneste som Digtets Afskriver og Udgiver, men blot givet hans Oversættelse det Skudsmaal den fortjener, uden paa nogen Maade at gribe Leiligheden til at sige den Gamle Uartigheder.
+</p>
+<p rend="firstIndent">
+Hvad nu endelig angaaer <seg type="com" n="com261">Rec.</seg> og hans Paa<pb type="text" facs="1815_253_fax018.jpg" ed="A" subtype="column" n="1046"/>stand om at være <seg type="com" n="com262">skyldløs</seg> og <seg type="com" n="com263">skudfrie</seg> i denne Sag, da maae jeg kortelig melde som følger. Havde <seg type="com" n="com264">Rec.</seg> sagt os at han blot vilde anmelde Indholden, saaledes som den lod sig udlokke af Latinen, da vilde jeg blot sagt, at han havde gjort  bedre i at tøve end at ile, da Man kun i Nødsfald skal udbrede Noget, om hvis Rigtighed Man er uvidende. Nu derimod, da <seg type="com" n="com264">Rec.</seg> langt fra at aflægge en saadan Bekjendelse teer sig, som om han selv havde læst Texten, afviger endog paa enkelte Steder fra Oversættelsen, og gjør sin Bemærkning over Sproget og Dialecten i Digtet, nu, siger jeg, maae han nødvendig have samme Ansvar for sin Indholdsliste, som for sine historiske Bemærkninger, hvilke sidste det <seg type="com" n="com266">og</seg> lod heel underligt at bygge paa en Oversættelse, hvis Rigtighed Man ei kunde eller vilde bedømme.
+</p>
+<p rend="firstIndent">
+Netop dette fornemme Væsen ei at ville, hvor det gjøres behov, tilstaae sin Ukyndighed, men at gebærde sig, som om Man forstod Alting heel vel, dette Væsen der hos saamange af vor Tids <hi rend="spaced">beskedne</hi> Lærde, og ei mindst i den <hi rend="spaced">saakaldte</hi> <rs type="title" key="title127"><hi rend="spaced">Danske</hi> Litteratur-Tidende</rs> længe har harmet mig og vist mange Flere, just dette fornemme, forfængelige Væsen stak ret frem i omtalde Recensjon, og det ved en saa vigtig Leilighed, at det let kunde forøge den Spot Udlændinger drive med os; dette vilde jeg afværge, hint Væsen vilde jeg blotte i sin Nøgenhed, derfor vendte jeg mig fra den gamle Udgiver til den yngre Recensent og viiste uden Skaansel hans Ukyndighed i hvad han saa rask omtalde, og inderlig skulde det glæde mig om jeg ved denne Leilighed kunde bidrage Noget til at <rs key="title127" type="title">Litteratur-Tidenden</rs> enten herefter beflittede sig paa en sømmeligere Omgjængelse, eller aldeles nedsank i den Ringeagt hvortil den, dog med nogle faa hæderlige Undtagelser, i lang Tid har gjort sig ganske overordentlig fortjent.
+</p>
+<p rend="firstIndent">
+<rs type="title" key="title127">Litteratur-Tidendens</rs> Udgiver har jeg igjennem flere Aar agtet og æret som jeg burde, ja af Agtelse for ham har jeg end ikke hidtil paatalt
+den Usømmelighed, at jeg er den eneste Forfatter han tillader grovelig at udskjældes og <seg type="com" n="com307">belyves</seg> i sit Blad, men aldrig har jeg kunnet regne ham til Fortjeneste at være Udgiver af saa jammerlig en Tidende, og efter det Forhold han, <hi rend="spaced">som saadan,</hi> selv har sat sig i til mig, kunde han ikke <pb type="text" facs="1815_253_fax019.jpg" ed="A" subtype="column" n="1047"/>engang efter Verdens Dom forlange, at jeg skulde tage fiint paa en saadan Recensjon i Bladet, den være saa af hvem den vil.</p>
+<p rend="firstIndentRight">
+<hi rend="spaced">N. F. S. Grundtvig.</hi>
+</p>
+</div>    
+    </body>    
+   </text>   
+  </TEI>

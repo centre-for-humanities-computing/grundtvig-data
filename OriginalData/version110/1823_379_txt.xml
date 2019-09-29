@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+
+<TEI xmlns="http://www.tei-c.org/ns/1.0" xmlns:TEI="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+   <teiHeader>
+    <fileDesc>
+     <titleStmt>
+      <title rend="part">Fødselsdagen (paa Gisselfeld, 11te Junii).</title>
+      <title rend="shortForm">Fødselsdagen</title>
+      <author>Nicolai Frederik Severin Grundtvig</author>
+      <editor role="editionPhilologist">Christian Alenkjær Frandsen</editor>
+      <editor role="student">Helene Drejer</editor>
+     <editor role="student">Tine Riis Andersen</editor>
+     </titleStmt>
+         <editionStmt>
+            <edition>
+               <idno type="content">1.9</idno>
+               <idno type="technic">1.9.1</idno>
+            </edition>
+         </editionStmt>
+     <extent>16 KB</extent>
+         <publicationStmt>
+            <availability status="restricted">
+               <p>© Grundtvig Centeret, Aarhus Universitet</p>
+            </availability>
+            <publisher>Faculty of Arts, Aarhus University</publisher>
+            <distributor>Grundtvig Centeret, Vartov, København</distributor>
+            <date when="2013-05-02">www.grundtvigsværker.dk, version 1.2, 2. maj 2013</date>
+         </publicationStmt>
+        <!--  <seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>[udgivelse dato]</idno>
+         </seriesStmt> --> 
+         <notesStmt>
+            <note xml:id="thisFile" target="1823_379_txt.xml" type="txt">Læsetekst</note>
+            <note target="1823_379_com.xml" type="com">Punktkommentar</note>
+            <note target="1820_356_intro.xml" type="intro">Indledning</note>
+            <note target="1823_379_txr.xml" type="noTxr">Tekstredegørelse</note>
+            <note type="minusVar">Variant</note>
+         </notesStmt>
+     <sourceDesc>
+      <bibl>
+       <title type="part">[titel]</title>
+       <author>[forfatter]
+        <note>[evt.]</note>
+       </author>
+       <pubPlace>[sted]</pubPlace>
+       <publisher>[trykker]
+        <note>[evt.]</note>
+       </publisher>
+       <date>[år]</date>
+      </bibl>
+      <listWit xml:id="emendation">
+       <witness xml:id="A" n="379">
+        <desc>Førstetrykket</desc>
+        <num>1823</num>
+       </witness>
+      </listWit>
+      <listWit xml:id="pageNumber">
+       <witness xml:id="PS">
+        <desc>Poetiske Skrifter</desc>
+        <num>5</num>
+       </witness>
+      </listWit>
+     </sourceDesc>
+    </fileDesc>
+    <profileDesc>
+     <textClass>
+      <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+       <term>lyrik</term>
+       <term>digte</term>
+       <term>lejlighedsdigte</term>
+      </classCode>
+      <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+       <term>fødselsdag</term>
+       <term>dødsfald</term>
+       <term>nordisk</term>
+       <term>mytologi</term>
+
+      </keywords>
+     </textClass>
+    </profileDesc>
+    <encodingDesc>
+     <projectDesc>
+      <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+      <p>Grundtvig Centeret arbejder med:</p>
+      <p>1. En digital og kommenteret udgave af Grundtvigs værker</p>
+      <p>2. En forskningsindsats på de felter, hvor Grundtvig særligt markerede sig</p>
+      <p>2.a. Teologi og kirke</p>
+      <p>2.b. Demokrati og folkelighed</p>
+      <p>2.c. Pædagogik og folkeoplysning</p>
+      <p>3. Videnudveksling, undervisning og formidling</p>
+     </projectDesc>
+         <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+            <p>Retningslinjer for punktkommentarer til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+            <p>Retningslinjer for indledninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+            <p>Retningslinjer for transskribering af manuskripter til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+            <p>Retningslinjer for litteraturhenvisninger til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+            <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+            <p>Retningslinjer for tekstredegørelser til Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+            <p>Tekstkritiske retningslinjer for Grundtvigs Værker</p>
+         </editorialDecl>
+         <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+            <p>Retningslinjer for XML-mærkning af Grundtvigs Værker</p>
+         </editorialDecl>
+    </encodingDesc>
+    <revisionDesc>
+     <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+      <change who="auto" when="2016-05-25">Autoopmærket af autotag.awk v11 KK 2014-02-20</change>
+     </revisionDesc>
+   </teiHeader>
+   
+   <text type="txt">    
+         
+    <pb type="periText" facs="1823_379_fax001.jpg"/>  	
+<body>
+<div type="[Tekst]">
+   <pb type="text" facs="1823_379_fax002.jpg" ed="A" subtype="column" n="737"/> 
+           
+            <pb type="edition" ed="PS" n="110"/>
+<head rend="2"><hi rend="spaced">Fødselsdagen</hi></head>
+<head rend="1">(paa <placeName key="fak700">Gisselfeld</placeName>, 11te Junii).</head>
+<graphic style="shortLine"/>
+
+<lg>
+<l rend="thirdIndent"><seg type="comStart" n="com200"/>Glitnir heitir salr,</l>
+<l rend="thirdIndent">Han er gulli studdr,</l> 
+<l rend="thirdIndent">Ok filfri Þaktr it sama;</l>
+<l rend="thirdIndent">Enn Þar <hi rend="spaced">Forseti</hi> byggir</l>
+<l rend="thirdIndent">Flestan dag,</l>
+<l rend="thirdIndent">Ok svæfir allar sakir<seg type="comEnd" n="com200"/>.</l></lg>
+<p rend="firstIndentRight"><hi rend="spaced">Edda</hi>.</p>
+
+<graphic style="shortLine"/>
+
+<lg n="1">
+<l><rs type="myth" key="myth168">Glitner</rs> med de gyldne <seg type="com" n="com100">Suler</seg>,</l>
+<l>Og det blanke <seg type="com" n="com300">Sølver-Tag</seg>;</l>
+<l>Borg, som er, hvad Navnet skjuler,</l>
+<l><seg type="com" n="com301">Efter-Skin</seg> af <rs type="myth" key="myth1475">Balders-Hag</rs>!</l>
+<l><pb type="edition" ed="PS" n="111"/>Ak! hvi er din Glands forsvundet!</l>
+<l>Har mod dig nu <hi rend="spaced"><rs type="myth" key="myth48">Loke </rs></hi><seg type="com" n="com1">fundet</seg></l>
+<l><seg type="com" n="com2">Uraad</seg>, som mod <rs type="myth" key="myth256">Breidablik</rs>?</l>
+</lg>
+<lg n="2">
+<l>Alle Skovens gode <rs type="myth" key="myth232">Vætter</rs>,</l>
+<l>Svævende om <placeName key="fak700">Gissel-Borg</placeName>!</l>
+<l>Hvor er han, som <seg type="com" n="com3">jævned</seg> Trætter,</l>
+<l>Lindred <seg type="com" n="com303">Gude-Folkets</seg> Sorg?</l>
+<l><pb type="text" facs="1823_379_fax002.jpg" ed="A" subtype="column" n="738"/>Hvi omleire Nattens Skygger</l>
+<l>Borgen, hvor <hi rend="spaced"><rs type="myth" key="myth196">Forsete</rs></hi> <seg type="com" n="com302">bygger</seg></l>
+<l>I et venligt Aften-Skiær?</l>
+</lg>
+<lg n="3">
+<l>Har maaskee paa vilde Veie</l>
+<l><seg type="com" n="com304">Hovedør</seg> jeg Tiden Spildt?</l>
+<l>Har mig Løgn om <rs type="myth" key="myth168">Glitners</rs> <seg type="com" n="com5">Leie</seg></l>
+<l>Falske Lygtemænd indbildt?</l>
+<l>Hvor af Skygger jeg omsvæves</l>
+<l>Søger jeg maaskee forgiæves</l>
+<l>Kun hvad intet Øie saae!</l>
+</lg>
+<lg n="4">
+<l>Nei, ved Faklen, som jeg følger:</l>
+<l>Minde-Blus paa <seg type="com" n="com305">Adel-Vei</seg>,</l>
+<l>Lygte-Mænd paa Mark og Bølger</l>
+<l>Mig, jeg veed, forvilde ei;</l>
+<l>Her er Borgen, skiøndt den blegner,</l>
+<l>Her er <rs type="myth" key="myth168">Glitner</rs>, skiøndt det tegner</l>
+<l>Ei til Glands paa <placeName key="fak700">Gissel-Feld</placeName>.</l>
+</lg>
+<lg n="5">
+<l>Er maaskee da, mens jeg blunded,</l>
+<l>Et Aartusinde <seg type="com" n="com306">henglidt</seg>,</l>
+<l>Saa jeg vel har Borgen fundet,</l>
+<l>Men ei hvad den kaldte Sit,</l>
+<l><pb type="text" facs="1823_379_fax003.jpg" ed="A" subtype="column" n="739"/><pb type="edition" ed="PS" n="112"/>Saa ei meer deraf tilbage</l>
+<l>Pilegrim fra gamle Dage</l>
+<l>Vente kan at finde her?</l>
+</lg>
+<lg n="6">
+<l>Har da Timen, som nu skrider,</l>
+<l><seg type="com" n="com6">End</seg> maaskee det gamle Navn,</l>
+<l>Søger dog jeg gamle Tider</l>
+<l>Kun forgiæves i dens Favn,</l>
+<l>Som naar <seg type="com" n="com307">titelfagre</seg> Bøger</l>
+<l>Skiænker os af hvad vi søger</l>
+<l>Skygger kun i tomme Ord.</l>
+</lg>
+<lg n="7">
+<l>Intet Under da, at lukket</l>
+<l>Er i Laas nu Port og Dør,</l>
+<l>Intet Under, at nu slukket</l>
+<l>Er hvert Lys, som brændte før,</l>
+<l>At i Lunden og i Borgen</l>
+<l>Hverken Aften eller Morgen</l>
+<l>Har den gamle Fødsels-Dag!</l>
+</lg>
+<lg n="8">
+<l><rs type="myth" key="myth106">Aser</rs> vel, hvis fulde Alder</l>
+<l>Er <seg type="com" n="com7">det store Maane-Aar</seg>,</l>
+<l>Synke først, naar <rs type="myth" key="myth103">Asken</rs> falder,</l>
+<l>Knust ved Solens Bane-Saar;</l>
+<l>Men naar Aarene dem tynge,</l>
+<l>Og dem <seg type="com" n="com102">Æblerne</seg> forynge,</l>
+<l><seg type="com" n="com308">Skifte</seg> de dog Fødsels-Dag.</l>
+</lg>
+<lg n="9">
+<l><seg type="com" n="com309">Saa</seg> i hver en <seg type="com" n="com310">Adel-Stamme</seg>,</l>
+<l>Spiret op til Folke-Gavn,</l>
+<l><hi rend="spaced">Aanden</hi> altid er den samme,</l>
+<l>Levende i <seg type="com" n="com8">Stamme-Navn</seg>;</l>
+<l><pb type="edition" ed="PS" n="113"/>Tit den dog, for Alders Tynge,</l>
+<l>Maa i Ætten sig forynge,</l>
+<l><seg type="com" n="com311">Skifte</seg> <seg type="com" n="com9">Støv</seg> og Fødsels-Dag!</l>
+</lg>
+<lg n="10">
+<l>Skal da Hammeren jeg røre,</l>
+<l>Banke paa den gamle Borg,</l>
+<l><pb type="text" facs="1823_379_fax003.jpg" ed="A" subtype="column" n="740"/>For af Portneren at høre</l>
+<l>Skogger-Latter ved min Sorg,</l>
+<l>Drilles djærvt, fordi jeg mindes</l>
+<l>Levende hvad meer ei findes</l>
+<l>Udenfor mit Hjertes Vraa!</l>
+</lg>
+<lg n="11">
+<l>Skal jeg <seg type="com" n="com10">stimes</seg> med den <seg type="com" n="com11">Kaade</seg>,</l>
+<l><seg type="com" n="com12">Pukke paa</seg> saamangt et Navn,</l>
+<l>At jeg vorder ham en Gaade,</l>
+<l>Som en <rs type="myth" key="myth59">Odins</rs> <seg type="com" n="com104">Natte-Ravn</seg>;</l>
+<l>Saa man leder, til der findes</l>
+<l>Navn paa mig og hvad jeg mindes</l>
+<l>I en mølædt <seg type="com" n="com14">Saga-Bog</seg>?</l>
+</lg>
+<lg n="12">
+<l>Boer <hi rend="spaced"><rs type="myth" key="myth196">Forsete</rs></hi> kun paa Borgen,</l>
+<l>Tvivler han da <seg type="com" n="com15">end</seg> i Kveld,</l>
+<l>Troer han sikkert dog i Morgen,</l>
+<l>Naar ham lædsker <hi rend="spaced"><rs type="myth" key="myth50">Mimers</rs></hi> Væld;</l>
+<l>Thi, skiøndt Guder <seg type="com" n="com17">og</seg> kan glemme,</l>
+<l>Stærkt i dem er Mindets Stemme,</l>
+<l>Det er deres Moders-Maal!</l>
+</lg>
+<lg n="13">
+<l><seg type="com" n="com1200">Saa</seg> i hver en ædel Stamme,</l>
+<l><seg type="com" n="com700">Ihvor tit</seg> den skifter Blad,</l>
+<l>Marven altid er den samme,</l>
+<l>Mindes altid Roden glad;</l>
+<l>Det er nordisk <seg type="com" n="com330">Adels-Prøve</seg>,</l>
+<l>Altid man en <hi rend="spaced"><seg type="com" n="com18">Gylden-Løve</seg></hi></l>
+<l>Skue maa i <hi rend="spaced"><seg type="com" n="com2000">Dane-Skjold</seg></hi>!</l>
+</lg>
+<lg n="14">
+<l><pb type="edition" ed="PS" n="114"/>Hvorfor mon da Haanden tøver,</l>
+<l>Hvi mon den tilbage foer?</l>
+<l>Ak, den Tanke mig bedrøver,</l>
+<l>At en <rs type="myth" key="myth116">Thurs</rs> i Taarnet boer;</l>
+<l>Thi hvor end <rs type="myth" key="myth196">Forsete</rs> <seg type="com" n="com19">bygger</seg>,</l>
+<l>Kan vel der de sorte Skygger</l>
+<l>Skjule <rs type="myth" key="myth168">Glitners</rs> <seg type="com" n="com331">Sølver-Tag</seg>!</l>
+</lg> 
+
+<lg n="15">
+<l><pb type="text" facs="1823_379_fax004.jpg" ed="A" subtype="column" n="741"/>Trindt den samme Overflade,</l>
+<l>Ved hvert Skridt bekiendte Spor,</l>
+<l>Samme Bark og Samme Blade,</l>
+<l>Urte-Bed og Blomster-Flor;</l>
+<l>Finde kan jeg alle Dele,</l>
+<l>Savner dog i dem det Hele,</l>
+<l>Som ved <seg type="com" n="com20">Skyggen</seg> af en Ven!</l>
+</lg>
+<lg n="16">
+<l>Det er <rs type="myth" key="myth130">Fimbul-Vinters</rs> Mærke,</l>
+<l>Det er <rs type="myth" key="myth116">Thurse</rs>-Vældens Spor,</l>
+<l>Som med Koglerier stærke</l>
+<l>Kan fortrylle Alt af Jord,</l>
+<l>Skygger hærde <seg type="com" n="com332">saa</seg> og <seg type="com" n="com333">stive</seg>,</l>
+<l>At de eens maa altid blive,</l>
+<l>Og forlyste <rs type="myth" key="myth84">Ymers</rs> Æt.</l>
+</lg>
+<lg n="17">
+<l>Stille! Taagen sig nu letter;</l>
+<l>Natter-Galen <seg type="com" n="com22">slaaer</seg> i Lund,</l>
+<l>Lys og Liflighed forjætter,</l>
+<l>Ei af <rs type="myth" key="myth84">Ymers</rs> Slægt er <hi rend="spaced">Hun</hi>,</l>
+<l>Som fra Salen hist nedtræder</l>
+<l>Favr og fiin i Sørge-Klæder,</l>
+<l>Vist er det <hi rend="spaced"><rs type="myth" key="myth196">Forsetes</rs></hi> Viv!</l>
+</lg>
+<lg n="18">
+<l>Ja, i Sandhed, det er Hende,</l>
+<l>Tankefuld, med Graad paa Kind,</l>
+<l>Hun er god, ja god at kiende,</l>
+<l><pb type="edition" ed="PS" n="115"/>Mild og from, skjøndt syg i Sind;</l>
+<l>Speile sig i Taarer blide</l>
+<l>Døttrene ved hendes Side,</l>
+<l>Der er Hjertens-Deilighed!</l>
+</lg>
+<lg n="19">
+<l>Ikke vil jeg <hi rend="spaced"><rs type="myth" key="myth499">Disen</rs></hi> følge</l>
+<l>Til den dunkle Aske-Lund,</l>
+<l>Hvor den mørke Taare-Bølge</l>
+<l>Ruller strid i Midnats Stund,</l>
+<l><pb type="text" facs="1823_379_fax004.jpg" ed="A" subtype="column" n="742"/>Vente vil jeg, til Hun vender</l>
+<l>Hid igjen, hvor Faklen brænder,</l>
+<l>Som er tændt ved Solens Ild!</l>
+</lg>
+<lg n="20">
+<l>See, Hun kommer, hendes Taarer</l>
+<l>Vidne, som en Perle-Flod,</l>
+<l>At i Hendes <seg type="com" n="com334">Hjerte-Aarer</seg></l>
+<l>Rinder ægte <rs type="myth" key="myth499">Dise</rs>-Blod,</l>
+<l>Lyse Tanker Øiet klarer,</l>
+<l>Hendes Blik det aabenbarer</l>
+<l>At af Kiød er Aanden ei!</l>
+</lg>
+<lg n="21">
+<l><seg type="com" n="com335">Saa</seg> med sine Døttre vanker</l>
+<l><rs type="myth" key="myth19">Freya</rs>, from og længselsfuld,</l>
+<l>Mild imellem mørke Tanker,</l>
+<l>Græder høit, men græder Guld,</l>
+<l>Seer, fra Broen, som forbinder</l>
+<l><seg type="com" n="com23">Var og Vorder</seg>, Haab og Minder,</l>
+<l>Morgen-Stjernens favre Skin!</l>
+</lg>
+<lg n="22">
+<l>Spørg ei, hvad er skedt paa Borgen!</l>
+<l>Hvo som har <hi rend="spaced"><rs type="myth" key="myth196">Forsete</rs></hi> kiær,</l>
+<l><seg type="com" n="com336">Følge</seg>, <seg type="com" n="com337">skue</seg>, <seg type="com" n="com338">dele</seg> Sorgen,</l>
+<l>Han er mange Taarer værd;</l>
+<l>Thi aftørret har Han mange,</l>
+<l>Vakt for Hulken Fryde-Sange,</l>
+<l><seg type="com" n="com26">Jævnet</seg> <seg type="com" n="com27">Trætter</seg>, dæmpet Kiv!</l>
+</lg>
+<lg n="23">
+<l><pb type="edition" ed="PS" n="116"/>Død er Han dog ingenlunde,</l>
+<l>Lever <seg type="com" n="com340">vist</seg> i mange Led,</l>
+<l>Ei, før <rs type="myth" key="myth103">Asken</rs> gaaer til Grunde,</l>
+<l>Ende sig Hans <rs type="myth" key="myth106">Asa</rs>-Fjed!</l>
+<l>Hvor Han blunder, skal man skrive:</l>
+<l>Salig, hvo som helst vil give!</l>
+<l>Salig, hvo som stifter Fred!</l>
+</lg>
+<lg n="24">
+<l>Ja, skiøndt Sørge-Fanen svæver</l>
+<l>Over <rs type="myth" key="myth168">Glitners</rs> <seg type="com" n="com342">Sølver-Tag</seg>,</l>
+<l><pb type="text" facs="1823_379_fax005.jpg" ed="A" subtype="column" n="743"/>Og skiøndt Harpe-Strængen bæver</l>
+<l>Paa den dunkle Fødsels-Dag;</l>
+<l>Dog med <seg type="com" n="com343">Svane-Røst</seg> og Vinge</l>
+<l>Over Hallen høit sig svinge:</l>
+<l><hi rend="spaced">Længe leve <persName key="pe181">Danneskjold</persName></hi>!</l>
+</lg>
+<lg n="25">
+<l>Længe leve Han i Minder</l>
+<l>Om de agte Adelsmænd,</l>
+<l>I hvem <rs type="myth" key="myth106">Asa</rs>-Blodet rinder!</l>
+<l>Gid Han fødes tit igjen!</l>
+<l>Og hver Gang man Ham opkalder,</l>
+<l>Krones Han, i Kraftens Alder,</l>
+<l>Med en klar Sølvbryllups-Krands!</l>
+</lg>
+<graphic style="longLine"/>
+<lg n="26">
+<l>Dog, forgjæves overspænder</l>
+<l>Jeg den gamle <seg type="com" n="com344">Mythe-Stræng</seg>;</l>
+<l><seg type="com" n="com28">Alt</seg> den brast i mine Hænder,</l>
+<l>Ved den sorte <seg type="com" n="com29">Bue-Seng</seg>,</l>
+<l>Og gjør jeg <seg type="com" n="com30">end</seg> Vold paa Sorgen,</l>
+<l>Hulkes der dog trindt i Borgen:</l>
+<l><hi rend="spaced">Død</hi> er <hi rend="spaced">vores</hi> <persName key="pe181">Danneskjold</persName>!</l>
+</lg>
+<lg n="27">
+<l><pb type="edition" ed="PS" n="117"/>Men, I Ædle! som ved Baaren</l>
+<l>Staae i Hjertets Sørge-Dragt!</l>
+<l>Ei vil jeg forhindre Taaren,</l>
+<l>Som kun <hi rend="spaced">Een</hi> har i sin Magt.</l>
+<l>Kun, hvad mueligt var, jeg vilde</l>
+<l>Eders Sorg et Gran formilde</l>
+<l>Ved det gamle Harpe-Slag.</l>
+</lg>
+<lg n="28">
+<l>Og jeg vilde, hvad jeg skulde,</l>
+<l>Sanddru kvæde Ham til <seg type="com" n="com32">Lov</seg>,</l>
+<l>Som ei Mage over Mulde</l>
+<l>Har for mig i <seg type="com" n="com103">Dane-Skov</seg>;</l>
+<l>Hvem, næst Drotten over Lunden,</l>
+<l>Skyldig mest jeg er i Grunden,</l>
+<l>Skyldig meer end Sølv og Guld!</l>
+</lg>
+<lg n="29">
+<l><pb type="text" facs="1823_379_fax005.jpg" ed="A" subtype="column" n="744"/>Og maaskee, naar Jorden skjuler</l>
+<l>Øinene, som græde nu,</l>
+<l>Sangen om de gyldne <seg type="com" n="com34">Suler</seg></l>
+<l>Kommes kan paa Mark ihu;</l>
+<l>Da en Taare <seg type="com" n="com353">vist</seg> skal rinde</l>
+<l><seg type="com" n="com35">End</seg> paa Ædles Kind til Minde</l>
+<l>Om <hi rend="spaced"><rs type="myth" key="myth196">Forsete</rs> <persName key="pe181">Danneskjold</persName></hi>!</l>
+</lg>
+<p rend="firstIndentRight"><hi rend="spaced">N. F. S. Grundtvig</hi>.</p>
+
+</div>
+</body>
+
+     
+        
+   </text>   
+  </TEI>

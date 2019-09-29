@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditNumber.xsl"?><!--<?xml-stylesheet type="text/xsl" href="file://C:/gvDataLocal/xslt/txtEditXSLT.xsl"?>--><!--<?xml-stylesheet type="text/xsl" href="txtEditBibleXSLT.xsl"?>--><!--<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>--><?xml-model type="application/relax-ng-compact-syntax" href="file://C:/gvDataLocal/rnc/txtRNC.rnc"?><?xml-stylesheet type="text/css" href="https://prometheus.statsbiblioteket.dk/gvData/css/oxyAuthorEdit.css"?><TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0" xml:lang="da" xml:space="preserve">
+     <teiHeader>
+          <fileDesc>
+               <titleStmt>
+                    <title rend="main">Til Dannerkongen Frederik hin Sjette paa Hans F&#x00F8;dselsdag den 28de Januarii 1812</title>
+                    <title rend="shortForm">Til Dannerkongen Frederik hin Sjette</title>
+                    <author>Nicolai Frederik Severin Grundtvig</author>
+                    <editor role="philologist">Holger Berg</editor>
+                    <editor role="student3">Maria Wiggers Pedersen</editor>
+                    <editor role="student1">Anna Poulsen</editor> 
+                    <editor role="student2">Kirsten Vad</editor>
+               </titleStmt>
+               <editionStmt>
+                    <edition>
+                         <idno type="firstUpload">1.7</idno>
+                         <idno type="content">1.9</idno>
+                         <idno type="technic">1.9.1</idno>
+                    </edition>
+               </editionStmt>
+               <extent>24 KB</extent>
+               <publicationStmt>
+                    <availability status="restricted">
+                         <p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+                    </availability>
+                    <publisher>Faculty of Arts, Aarhus University</publisher>
+                    <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+                    <date when="2015-11-01">www.grundtvigsv&#x00E6;rker.dk, version 1.7, 1. november 2015</date>
+               </publicationStmt>
+               <!--<seriesStmt>
+            <title>[titel]</title>
+            <respStmt>
+               <name>[udgiver]</name>
+               <resp>[evt.]</resp>
+            </respStmt>
+            <idno>[udgivelse dato]</idno>
+         </seriesStmt>-->
+               <notesStmt>
+                    <note xml:id="thisFile" target="1812_182_txt.xml" type="txt">L&#x00E6;setekst</note>
+                    <note target="1812_182_com.xml" type="com">Punktkommentar</note>
+                    <note target="1812_182_intro.xml" type="intro">Indledning</note>
+                    <note target="1812_182_txr.xml" type="txr">Tekstredeg&#x00F8;relse</note>
+                    <note type="minusVar">Variant</note>
+               </notesStmt>
+               <sourceDesc>
+                    <bibl>
+                         <title type="main">Til Dannerkongen Frederik hin Sjette paa Hans F&#x00F8;dselsdag den 28de Januarii 1812</title>
+                         <author>Nik. Fred. Sev. Grundtvig
+        <note>Personel Kapellan.</note>
+                         </author>
+                         <pubPlace>Kj&#x00F8;benhavn</pubPlace>
+                         <publisher>Andreas Seidelin
+        <note>&#x005B;evt.&#x005D;</note>
+                         </publisher>
+                         <date>1812</date>
+                    </bibl>
+                    <listWit xml:id="emendation">
+                         <witness xml:id="A" n="182">
+                              <desc>F&#x00F8;rstetrykket</desc>
+                              <num>1812</num>
+                         </witness>
+                    </listWit>
+                    <listWit xml:id="pageNumber">
+                         <witness xml:id="PS">
+                              <desc>Poetiske Skrifter</desc>
+                              <num>3</num>
+                         </witness>
+                    </listWit>
+               </sourceDesc>
+          </fileDesc>
+          <profileDesc>
+               <textClass>
+                    <classCode scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;genre.xml">
+                         <term>lyrik</term>
+                         <term>rimbreve</term>
+                    </classCode>
+                    <keywords scheme="http:&#x002F;&#x002F;grundtvigsv&#x00E6;rker.dk&#x002F;emneord.xml">
+                         <term>fødselsdag</term>
+                         <term>skolen</term>
+                         <term>polemik</term>
+                         <term>kongehuset</term>
+                    </keywords>
+               </textClass>
+          </profileDesc>
+          <encodingDesc>
+               <projectDesc>
+                    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+                    <p>Grundtvig Centeret arbejder med:</p>
+                    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+                    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+                    <p>2.a. Teologi og kirke</p>
+                    <p>2.b. Demokrati og folkelighed</p>
+                    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+                    <p>3. Videnudveksling, undervisning og formidling</p>
+               </projectDesc>
+               <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+                    <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+               <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+                    <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+               </editorialDecl>
+          </encodingDesc>
+          <revisionDesc>
+               <change xml:id="KSR" who="KSR" when="2012-05-14">txt2tei</change>
+               <change who="NHB" xml:id="NHB" when="2015-01-05">opm&#x00E6;rket typografisk hierarki</change>
+               <change who="KV" xml:id="KV" when="2015-06-09">1. kollation af eks. fra Aarhusianer Samfundet, Aarhus Katedralskoles Bibliotek.</change>
+               <change who="NHB" when="2015-06-16">gennemg&#x00E5;et KVs rettelser</change>
+               <change who="NHB" when="2015-08-06">2. kollation af eks. fra Det Kongelige Bibliotek, katalognummer: E, 8983 8o</change>
+               <change who="NHB" when="2015-09-18">3. kollation af ex. fra Grundtvig-Biblioteket, Otto M&#x00F8;llers samling.</change>
+               <change who="auto" when="2015-09-18">Autoopm&#x00E6;rket af autotag.awk v11 KK 2014-02-20</change>
+               <change who="NHB" when="2015-09-18">kollationeret indtil: Hist synker Solen mellem Norrigs Fjelde</change>
+               <change who="NHB" when="2015-09-23">sidetal fra PS. Sammenlignet med B (1815)</change>
+               <change who="NHB" when="2015-10-06">emneord</change>
+               <change who="NHB" when="2015-10-20">teiHeader</change>
+               <change who="NHB" when="2016-09-29">fw &#x00E6;ndret til graphic. Den afsluttende shortLine er &#x00E6;ndret til longLine jf. regulativ</change>
+               <change who="NHB" when="2016-10-31">tilføjet ny lg</change>
+               <change who="NHB" when="2016-10-31">indført rettelser fra 3. red.</change>
+          </revisionDesc>
+     </teiHeader>
+     <text type="txt">
+          <pb type="periText" facs="1812_182_fax001.jpg"/>
+          <pb type="periText" facs="1812_182_fax002.jpg"/>
+          <front rend="&#x005B;Titelblad&#x005D;">
+               <titlePage type="first">
+                    <pb type="text" facs="1812_182_fax003.jpg" ed="A" rend="supp" n="1"/>
+                    <pb type="edition" ed="PS" n="1"/>
+                    <docTitle>
+                         <titlePart type="part">Til Dannerkongen</titlePart>
+                         <titlePart type="main"><persName key="pe96">Frederik hin Sjette</persName></titlePart>
+                         <titlePart type="part">paa</titlePart>
+                         <titlePart type="part">Hans F&#x00F8;dselsdag</titlePart>
+                         <titlePart type="part">den 28<hi rend="raised">de</hi>
+                              <seg type="com" n="com1"><!--i januars måned (genitiv af ‘januarius’)-->Januarii</seg> 1812.</titlePart>
+                    </docTitle>
+                    <byline>Ved</byline>
+                    <docAuthor>Nik. Fred. Sev. Grundtvig,
+	   <note type="prof"><seg type="com" n="com2">Personel Kapellan</seg>.</note>
+                    </docAuthor>
+                    <epigraph>
+                         <p rend="center"><hi rend="romantype"><seg type="com" n="com3">Amicus <persName key="pe502">Socrates</persName>, amicus <persName key="pe622">Plato</persName>, magis amica veritas.</seg></hi></p>
+                    </epigraph>
+                    <docImprint>
+                         <pubPlace>Kj&#x00F8;benhavn.</pubPlace>
+                         <publisher>Trykt hos Andreas Seidelin,
+</publisher>
+                         <publisher>store Kannikestr&#x00E6;de No. 46.</publisher>
+                    </docImprint>
+               </titlePage>
+          </front>
+          <body>
+               <div type="&#x005B;Tekst&#x005D;">
+                    <graphic style="longLine"/>
+                    
+                    <pb type="text" facs="1812_182_fax004.jpg" ed="A" rend="supp" n="2"/>
+                    <pb type="text" facs="1812_182_fax005.jpg" ed="A" rend="supp" n="3"/>
+                    <lg n="1">
+                         <l><hi rend="initial">V</hi>il paa din Dag, o <persName key="pe96">Fredrik</persName>, du tilst&#x00E6;de</l>
+                         <l>En Landsbyskjald i Kongesal at tr&#x00E6;de?</l>
+                         <l>Ei er hans Kvad et V&#x00E6;v af glatte Ord,</l>
+                         <l>Og Smigervisen kan han ikke sjunge,</l>
+                         <l>Opvoxet er han i det gamle <placeName key="fak24">Nord</placeName>,</l>
+                         <l>Og Sandhed han indviet har sin Tunge.</l>
+                    </lg>
+                    <lg n="2">
+                         <l>Ja visselig, i <persName key="pe96">Fredriks</persName> <seg type="com" n="com155">Kongehald</seg></l>
+                         <l>Hver sanddru Mand, da <seg type="com" n="com4">og</seg> hver sanddru Skjald,</l>
+                         <l>Som ei sin Konges Majest&#x00E6;t<!--DDO 2, ophøjethed--> vil glemme,</l>
+                         <l><seg type="com" n="com137">Indgange</seg> t&#x00F8;r og <seg type="com" n="com5"><!--bruge, ytre.-->r&#x00F8;re</seg> frit sin Stemme.</l>
+                         <l>Med dobbelt Mod jeg vandre maa min Gang</l>
+                         <l>Paa <seg type="com" n="com7"><!--festdagen. Frederik 6.s fødselsdag den 28. januar var året største verdslige festdag.-->H&#x00F8;itidsdagen</seg> til de gyldne Sale,</l>
+                         <l><seg type="com" n="com8"><!--for at, så at.-->At</seg> ikkun det forkynde skal min Sang,</l>
+                         <l>At Sandhed t&#x00F8;r til Dannerkongen <app type="corrNote" select="yes">
+                                   <lem wit="B">tale.</lem>
+                                   <rdg wit="A">tale,</rdg>
+                                   <witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail>
+                              </app><!--tjek Kvædlinger, tekstrettelse > tale.--></l>
+                    </lg>
+                    <lg n="3">
+                         <l>Jeg takker f&#x00F8;rst, o Drot, Dig som en S&#x00F8;n,</l>
+                         <l>Og dobbelt er den Tak, jeg her Dig yder.</l>
+                         <l><pb type="text" facs="1812_182_fax006.jpg" ed="A" n="4"/><pb type="edition" ed="PS" n="2"/>Du h&#x00F8;rte en <seg type="com" n="com9">graah&#x00E6;rdet</seg> Oldings B&#x00F8;n,</l>
+                         <l>Og gennem mig hans Takkestemme lyder.</l>
+                         <l>Han gik, o Konge, <seg type="com" n="com10"><!--selv foran dig at stå, dvs. få foretræde, audiens.-->for Dig selv at staa</seg>,</l>
+                         <l>Og <seg type="com" n="com11"><!--helt sikkert.-->vist</seg> jeg veed, at allerhelst Du h&#x00F8;rte</l>
+                         <l>Den simple Tak, udtrykt i Ord <seg type="com" n="com12"><!--meget få-->heel faa</seg>,</l>
+                         <l>Fra gamle Tunge, der sig kraftig r&#x00F8;rte</l>
+                         <l>I Herrens Tjeneste til hellig Id,</l>
+                         <l>Fra Tungen, som i <persName key="pe251">Femte Fredriks</persName> Dage</l>
+                         <l>Begyndte tro fra <seg type="com" n="com13"><!--prædikestolen-->h&#x00F8;ie Stol</seg> at l&#x00E6;re:</l>
+                         <l><rs key="1 Pet 2,17" rend="reference" type="bible">Man Gud skal frygte og sin Konge &#x00E6;re</rs>.</l>
+                         <l>Alligevel min Tak jeg Dig maa bringe,</l>
+                         <l>Og lade h&#x00F8;it den fra min Harpe klinge;</l>
+                         <l>Thi kun da Sandhed <seg type="com" n="com14"><!--nåede frem til din trone, fik foretræde for din trone; bestod, sejrede ved din trone.--><!--ODS 4. vinde hhv. 1, 3 og 5-->for Din Trone vandt</seg>,</l>
+                         <l>Jeg Naade for Dit Konge&#x00F8;ie fandt;</l>
+                         <l><rs key="Luk 23,21" type="bible" rend="allusion1787">Da Hoben raabte over mig: korsf&#x00E6;st!</rs></l>
+                         <l>Du mig lod vie til en Herrens Pr&#x00E6;st.</l>
+                         <l>Selv om kun Faa min Tale vilde h&#x00F8;re,</l>
+                         <l>Saal&#x00E6;nge Herrens Aand mig stander bi,</l>
+                         <l>Jeg <seg type="com" n="com138">kraftelig</seg> skal Pen og Tunge <seg type="com" n="com139">r&#x00F8;re</seg></l>
+                         <l>Om hvad saa tit blev <seg type="com" n="com15"><!--betegnet som.-->n&#x00E6;vnet</seg> Sv&#x00E6;rmeri:</l>
+                         <l>Om Tro paa Ham, som for os stred og leed,</l>
+                         <l>Den <rs key="1 Tim 1,17 og 1 Tim 6,15" type="bible" rend="reference">Kongers Konge i al Evighed</rs>,</l>
+                         <l>Om kristen Tro, som sk&#x00E6;nker Lyst og Mod</l>
+                         <l>Til for sin Konge og sit F&#x00E6;dreland,</l>
+                         <l>Paa <seg type="com" n="com16"><!--slagmarken-->faste Val</seg> og paa den gr&#x00F8;nne Strand,</l>
+                         <l>At offre villig baade Liv og Blod.</l><!-- Kvædlinger: ny strofe-->
+                    </lg>
+                    <lg n="4">
+                         <l><pb type="text" facs="1812_182_fax007.jpg" ed="A" n="5"/>Min anden Tak jeg ei <seg type="com" n="com18"><!--tør tage i besiddelse, tør gøre til min.-->mig t&#x00F8;r tilegne</seg>,</l>
+                         <l>Men b&#x00E6;rer den paa Videnskabens Vegne,</l>
+                         <l>Dog, hvis mit Haab <seg type="com" n="com19">i Tiden</seg> kan bestaa,</l>
+                         <l>Jeg <seg type="com" n="com20">og</seg> som Pr&#x00E6;st Dig takke kan og maa.</l>
+                         <l><pb type="edition" ed="PS" n="3"/>Jeg skuer tre Aarhundreder tilbage</l>
+                         <l>Paa <persName key="pe42">Luthers</persName> og hin <persName key="pe1660">vise Fredriks</persName> Dage;</l>
+                         <l>Da gik det <seg type="com" n="com21"><!--altsammen (til).-->alt</seg>, som nu det <!--DDO sandsynlighed: måtte, vel-->monne gaa,</l>
+                         <l>At <persName key="pe45">Kristus</persName> selv man <seg type="com" n="com22">over Skuldre saae</seg>,</l>
+                         <l>Og mente <seg type="com" n="com23"><!--helt sikkert.-->vist</seg>, det var hin st&#x00F8;rste &#x00C6;re,</l>
+                         <l>At kunne Ham i Liv og D&#x00F8;d undv&#x00E6;re;</l>
+                         <l>Men Gud ved <persName key="pe1660">Fredrik</persName> udi <placeName key="fak305">Vittenberg</placeName></l>
+                         <l>Sig skabte pludselig et <placeName key="his581">Sions</placeName> Bierg.</l>
+                         <l>I <seg type="com" n="com25"><!--urtehaven.-->Urtegaarden</seg> Han hvert Muldvarpskud</l>
+                         <l>Sin <persName key="pe42">Luther</persName> lod med Spaden jevne ud,</l>
+                         <l>Og planted i det spredte Muld et Tr&#x00E6;,</l>
+                         <l>Som, mens i <placeName key="fak457">Syden</placeName> under hede Vinde</l>
+                         <l>Hver Tulipan Man hurtig saae forsvinde,</l>
+                         <l>Bar Blomst og Frugt og sk&#x00E6;nked <placeName key="fak24">Norden</placeName> L&#x00E6;.</l>
+                         <l>Kun under denne Stammes brede Skygge</l>
+                         <l>Opvoxte Kraft igen paa <!--gængse symboler for Danmark og Norge.-->Eng og Fjeld,</l>
+                         <l>Kun under den sig <!--‘Fredrik’ henviser sandsynligvis til Frederik 4. og ‘Kongeborg’ til Fredensborg, som han lod opføre 1720-1722. Fredensborg Slotshave understreger samhørigheden mellem Danmark og Norge gennem Norgesmonumentet og Nordmandsdalen, opført af hhv. Frederik 5. og Juliane Marie (Steensberg s. 179-187). En alternativ udlægning er Frederiksborg Slot opført for Frederik 2. fra 1560.--><persName key="pe362">Fredrik</persName> kunde bygge</l>
+                         <l>En Kongeborg til <placeName key="poet1671">Tvillingrigets</placeName>
+                              <seg type="com" n="com28"><!--lykke.-->Held</seg>.</l>
+                         <l>Ja, Konge, det kan <rs type="myth" key="myth64">Saga</rs> dristig m&#x00E6;le,</l>
+                         <l>Og sv&#x00E6;ve om Dig dine F&#x00E6;dres Sj&#x00E6;le,</l>
+                         <l>De sande maa: at det var <persName key="pe45">Jesu</persName> Tro,</l>
+                         <l>Som dem og Folket sk&#x00E6;nked Kraft og Ro.</l>
+                         <l><pb type="text" facs="1812_182_fax008.jpg" ed="A" n="6"/><seg type="com" n="com29"><!--Aftenen falder på.-->Det aftnes</seg> brat og Dagen <seg type="com" n="com30"><!--fyldord, folkevisestil.-->monne</seg> helde,</l>
+                         <l>Hist synker Solen mellem <placeName key="poet415">Norrigs</placeName> Fjelde;</l>
+                         <l>Paa <placeName key="fak14">Danmarks</placeName> Eng det s&#x00E6;re Farvesk&#x00E6;r</l>
+                         <l>Forkynder h&#x00F8;it at Aftenen er n&#x00E6;r,</l>
+                         <l>Og <placeName key="poet415">Norrigs</placeName> Fjelde, som <seg type="com" n="com31"><!--endnu.-->end</seg> tykkes gl&#x00F8;de,</l>
+                         <l>Beskinnes kun af sidste Aftenr&#x00F8;de;</l>
+                         <l>Et Hus Du reiser paa det h&#x00F8;ie Bjerg,</l>
+                         <l>O, gid det vorde maa et <placeName key="fak305">Vittenberg</placeName>!</l>
+                         <l>Dog, Konge, kun de Tider, som forgik,</l>
+                         <l>Oplade nu sig for et <seg type="com" n="com32"><!--profetisk blik.--><!--http://ordnet.dk/ods/ordbog?aselect=Seerblik&query=seer-->Seerblik</seg>,</l>
+                         <l>Og naar det vil i Fremtids <!--http://ordnet.dk/ddo/ordbog?query=L%C3%B8ndom-->L&#x00F8;ndom stirre,</l>
+                         <l>Da monne Synerne sig brat forvirre.</l>
+                         <l><pb type="edition" ed="PS" n="4"/>Kun Han, der <rs type="bible" key="Joh 1,1-3" rend="allusion"><seg type="com" n="com33"><!--benævner.-->n&#x00E6;vner</seg> de <seg type="com" n="com34"><!--ting, der endnu ikke er skabt, blevet til.-->uvordne Ting</seg></rs>,</l>
+                         <l>Som <seg type="com" n="com35"><!--allerede.-->alt</seg> de saaes udi Tidens Ring,</l>
+                         <l>Kun Han det veed, om fra det Hus Du bygger,</l>
+                         <l>I Tidens L&#x00F8;b et Lys skal straale ud,</l>
+                         <l>Som kan betvinge Nattens f&#x00E6;le <seg type="com" n="com36"><!--mørke, dunkelhed; måske også: genfærd.--><!--ODS 1.1 og 6.1. Ad 1.1: uden tydelig forestilling om lysere (solbelyste) omgivelser, i al alm. om (rumligt omraade med) fraværelse af lys (belysning): (halv)mørke; dunkelhed. -->Skygger</seg>,</l>
+                         <l>Og vidne <seg type="com" n="com37"><!--offentligt.-->aabenbar</seg> om <rs type="bible" rend="allusion" key="Joh 1,4-9 og 1 Joh 1,5">Lysets Gud</rs>.</l>
+                         <l>Men det er vist, at naar paa h&#x00F8;ie Fjeld</l>
+                         <l>Er ved din Haand opreist <seg type="com" n="com38"><!--universitetet. Hentydning til Det Kongelige Frederiks Universitet, oprettet 2. september 1811.-->den h&#x00F8;ie Skole</seg>,</l>
+                         <l>Du har betalt med <placeName key="fak14">Danmarks</placeName> gamle Geld</l>
+                         <l>Den st&#x00E6;rkeste af dine <seg type="com" n="com143">Kongestole</seg>.</l>
+                         <l>I gammel Tid var <placeName key="poet415">Norrig</placeName>
+                              <placeName key="fak24">Nordens</placeName> Tunge,</l>
+                         <l>Og <placeName key="fak14">Danmark</placeName> var <!--dvs. Norden, Skandinavien, der tidligere kunne omtales som ‘et Norden’.--><!--ODS 2 http://ordnet.dk/ods/ordbog?query=norden-->dets st&#x00E6;rke h&#x00F8;ire Haand.</l>
+                         <l><seg type="com" n="com40"><!--meget.-->Hel</seg> liflig kunde <placeName key="poet415">Norrigs</placeName> Skjalde sjunge,</l>
+                         <l>Mens <placeName key="fak14">Danmarks</placeName>
+                              <seg type="com" n="com41"><!--krigere, helte.-->K&#x00E6;mper</seg> sp&#x00E6;ndte st&#x00E6;rke <seg type="com" n="com42"><!--fangebånd, lænker.--><!--ODS 1.-->Baand</seg></l>
+                         <l><pb type="text" facs="1812_182_fax009.jpg" ed="A" n="7"/>Paa brede Hav og snoed dem om Lande.</l>
+                         <l>Da <persName key="pe379">Haralds</persName> Knebel kom i <placeName key="poet415">Norrigs</placeName> Mund,</l>
+                         <l>Da flygted Tungen over brede Vande,</l>
+                         <l>Og r&#x00F8;rte sig <seg type="com" n="com43"><!--dvs. på norsk-->i <placeName key="poet415">Norrigs</placeName> Maal</seg> en Stund,</l>
+                         <l>Kun slet til Kvad, men kostelig i <seg type="com" n="com140">Sage</seg></l>
+                         <l>Om Daad i Fortids og i Samtids Dage.</l>
+                         <l><seg type="com" n="com141">Vel</seg> paa sin Geld for <placeName key="fak4">Islands</placeName> Pergament</l>
+                         <l>Betalte <seg type="com" n="com44"><!--stundom, til tider.-->stundum</seg>
+                              <placeName key="poet219">Dannemark</placeName> med <seg type="com" n="com156">Prent</seg>,</l>
+                         <l>Ja skylder ei <seg type="com" n="com45"><!--en rød øre, noget som helst.-->en Hvid</seg> af Hovedstolen;</l>
+                         <l>Men som det <placeName key="fak24">Nordens</placeName> Fr&#x00E6;nder vel anstaaer,</l>
+                         <l>Sit gamle Laan tilbage <placeName key="poet415">Norrig</placeName> faaer</l>
+                         <l>Med Renters Rente nu i <seg type="com" n="com46"><!--katedralskolen,  større latinskole, som forbereder sine elever til universitetsuddannelsen.//ODS  http://ordnet.dk/ods/ordbog?query=Hovedskole-->Hovedskolen</seg>;</l>
+                         <l>At <persName key="pe96">Fredrik</persName> bygger den er Ret og Stort,</l>
+                         <l>Men <placeName key="fak14">Danmark</placeName> ogsaa har den mulig gjort.</l>
+                         <l>Nedkn&#x00E6;l, o <placeName key="poet415">Norrig</placeName>, kun paa dine Fjelde!</l>
+                         <l>Se ei saa <seg type="com" n="com47"><!--hovmodigt, overlegent.-->stolt</seg> paa Daners jevne Mark!</l>
+                         <l>Thi det kan <rs key="myth64" type="myth">Saga</rs> dog med Sandhed melde,</l>
+                         <l><rs subtype="bibleStart" type="bible" key="1 Mos 7-8" rend="allusion" n="bible1"/>At du er reddet i den danske Ark.</l>
+                         <l><pb type="edition" ed="PS" n="5"/>Da <placeName key="fak457">Sydens</placeName> Syndflod vilde <placeName key="fak24">Norden</placeName> h&#x00E6;rge,</l>
+                         <l>Kun lidt da hjalp dig dine h&#x00F8;ie Bjerge,</l>
+                         <l>Og du da kun betaler gammel Geld,</l>
+                         <l><seg type="com" n="com48"><!--hvis.-->Om</seg> Arken nu skal strande paa dit Fjeld.<rs subtype="bibleEnd" type="bible" key="1 Mos 7-8" n="bible1" rend="allusion"/></l>
+                         <l>Hvad var du vel, da <placeName key="fak14">Danmarks</placeName>
+                              <persName key="pe1663">Kristian</persName></l>
+                         <l>Opsendte <rs type="title" key="title788">Biblen</rs> til dit Klippeland?</l>
+                         <l>Hvor var da dine gamle Heltedage,</l>
+                         <l>Hvoraf du tit dig <seg type="com" n="com49"><!--stadig; endog.-->end</seg> g&#x00F8;r alt for stor?</l>
+                         <l><pb type="text" facs="1812_182_fax010.jpg" ed="A" n="8"/>Mon selv du Skyggen havde da tilbage?</l>
+                         <l>Hvor var et <hi rend="spaced"><placeName key="fak451">Bergen</placeName></hi> uden dit i <placeName key="fak24">Nord</placeName>?</l>
+                         <l>Hvor mange S&#x00F8;nner havde du at sende</l>
+                         <l>Til <placeName key="fak305">Vittenberg</placeName> for <placeName key="fak24">Nordens</placeName> Lys at t&#x00E6;nde?</l>
+                         <l>Hvor var din Adel med sin Kraft og <seg type="com" n="com144">Bram</seg>?</l>
+                         <l>Hvor var din <persName key="pe454">Norby</persName> og hvor var din <persName key="pe1078">Skram</persName>?</l>
+                         <l>Hvor var din <persName key="pe2192">Trolle</persName> og hvor var din <persName key="pe3230">Brade</persName>?</l>
+                         <l>Hvor havde dine Skjalde deres Stade,</l>
+                         <l>Mens <!--A: B: Mens Tavsen og imedens Arbo sang,--><seg type="com" n="com50"><!--Hans Tavsen og de digtere, der fulgte hans stil-->Tavsener</seg> og medens <persName key="pe895">Arbo</persName> sang,</l>
+                         <l>Ja selv da <persName key="pe294">Kingos</persName>
+                              <seg type="com" n="com51"><!--jf. 1 Sam 16; salmedigtning.--><!--ODS http://ordnet.dk/ods/ordbog?query=Davidsharpe-->Davidsharpe</seg> klang?</l>
+                         <l>I Graven laa de og i <placeName key="fak4">Islands</placeName>
+                              <seg type="com" n="com52"><!--saga.--><!--http://ordnet.dk/ods/ordbog?query=Saga-->Sage</seg>,</l>
+                         <l>Dog Nogle <seg type="com" n="com53"><!--også.-->og</seg> i <seg type="com" n="com54"><!--tidens seneste dag, dvs. den seneste tid.-->Tidens sidste Dage</seg>.</l>
+                         <l>Saa tak da Gud, at ved saamangt et Savn,</l>
+                         <l>Han mild <seg type="com" n="com39">oplod</seg> dig <placeName key="fak14">Danmarks</placeName> S&#x00F8;sterfavn!</l>
+                         <l>Hun som en Skjoldm&#x00F8; for din Odel stred,</l>
+                         <l>Hun delte med dig al sin Daad og &#x00C6;re,</l>
+                         <l>Hun saaed Kraft og skaffed Spiren Fred,</l>
+                         <l>Da <seg type="com" n="com55"><!--genfødt.-->igenf&#x00F8;dt</seg> i dig blev <persName key="pe45">Kristi</persName> L&#x00E6;re;</l>
+                         <l>Hun i din Kirke sang til hellig Lyst,</l>
+                         <l>Hun dine S&#x00F8;nner ammed ved sit Bryst,</l>
+                         <l>Og at saa vel de trivedes derefter,</l>
+                         <l>Jo vidne kan, at Dien havde Kr&#x00E6;fter.</l>
+                         <l><seg type="com" n="com58"><!--selv om-->Om</seg> st&#x00E6;rkere nu er din voxne &#x00C6;t</l>
+                         <l>End Ammen blevet, har den derfor Ret</l>
+                         <l><pb type="edition" ed="PS" n="6"/>Til bitter Spot og til saa h&#x00F8;it at prale.</l>
+                         <l>Som om langt bedre udi dine Dale</l>
+                         <l><pb type="text" facs="1812_182_fax011.jpg" ed="A" n="9"/>Den kunde voxet ved sit Mos og Bark,</l>
+                         <l>End her ved <seg type="com" n="com59"><!--sundt, nærende.-->saftigt</seg> Br&#x00F8;d i <placeName key="poet219">Dannemark</placeName>?</l>
+                    </lg>
+                    <lg n="5">
+                         <l>Du veed det, <placeName key="poet415">Norrig</placeName>, eller kan det vide:</l>
+                         <l>Med Fryd jeg sjunger om din <seg type="com" n="com60"><!--heltemodige fortid-->Helteold</seg>,</l>
+                         <l>Jeg har det Haab, at medens Sekler skride,</l>
+                         <l>Din Klippev&#x00E6;g skal vorde <rs type="bible" key="Ef 6,16" rend="allusion">Troens Skjold</rs>:</l>
+                         <l><!--også: for at, så at-->At, som <seg type="com" n="com62"><!--hellebarden indgik i det datidige norske rigsvåben. Det er først i 1900-tallet, at den norske løve igen bærer en kortskaftet økse.--><!--https://snl.no/Norges_riksv%C3%A5pen-->din L&#x00F8;ve med sin Hellebaar</seg>,</l>
+                         <l>Du <seg type="com" n="com63"><!--heroisk; kæmpemæssigt.-->k&#x00E6;mpelig</seg> skal staa i mange Aar,</l>
+                         <l>Og vogte Kvisten som af Livets Rod</l>
+                         <l>Skal h&#x00F8;it opvoxe ved din Klippefod,</l>
+                         <l><!--også: for at, så at.-->At vise Ord og Kvad af egne Skjalde</l>
+                         <l>Skal lystelig i dine Klipper gjalde.</l>
+                         <l><seg type="com" n="com65"><!--Helt sikkert-->Vist</seg> ei af Nid, ei for at yppe Kiv,</l>
+                         <l>Jeg minder dig om dit og <placeName key="fak14">Danmarks</placeName> Liv;</l>
+                         <l>Men skal dit Bryst og skal din Skole vorde</l>
+                         <l>Det Herrens Tempel som er min Attraa,</l>
+                         <l>Din Hovmod du maa jage f&#x00F8;rst <!--DDO http://ordnet.dk/ddo/ordbog?mselect=59003589&query=g%C3%A5rd-->af Gaarde,</l>
+                         <l>Og midt i Kraften maa du k&#x00E6;rlig staa.</l>
+                         <l>I Ydmyghed du maa af <rs key="myth64" type="myth">Saga</rs> l&#x00E6;re</l>
+                         <l>Hvad Gud har gjort og give Ham sin &#x00C6;re.</l>
+                         <l>Du l&#x00E6;re skal af <rs type="myth" key="myth64">Sagas</rs> Mindebog</l>
+                         <l>At <placeName key="fak14">Danmarks</placeName>
+                              <seg type="com" n="com66"><!--scepter, synomym for styre.-->Spir</seg> var intet Tr&#x00E6;ldomsaag,</l>
+                         <l>At smuldret var blandt Fjeldene din Trone,</l>
+                         <l>F&#x00F8;r <!--det danske rige, hentydning til de tre løver i det danske rigsvåben.-->danske L&#x00F8;ve fik den norskes Krone;</l>
+                         <l>At <placeName key="fak14">Danmarks</placeName>
+                              <hi rend="spaced"><!--hjerter indgår i det danske rigsvåben.-->Hjerter</hi> ei var kolde <seg type="com" n="com69"><!--heraldiske kendemærker.-->Tegn</seg>,</l>
+                         <l><pb type="text" facs="1812_182_fax012.jpg" ed="A" n="10"/>Men at dets <seg type="com" n="com70"><!--de to vildmænd, der bærer det kongelige våbenmærke.-->Skjoldm&#x00E6;nd</seg> var det trygge Hegn,</l>
+                         <l>Til selv du vaagned i <seg type="com" n="com71"><!--just forgangne tidsalder-->den sidste Old</seg>,</l>
+                         <l>Og fik en <hi rend="spaced"><!--det danske våbenskjold bæres af to vildmænd.-->Vildmand</hi> i din <persName key="pe1081">Tordenskjold</persName>;</l>
+                         <l>Indtil du fik, om ingen K&#x00E6;mpeskjald,</l>
+                         <l>Et <seg type="com" n="com73"><!--heltedigt.-->K&#x00E6;mpedigt</seg> dog i <!--dvs. -->dit <placeName key="fak398">Fredrikshald</placeName>.</l>
+                         <l>Du skal forstaa at f&#x00F8;rend <hi rend="spaced"><persName key="pe2417">Hersleb</persName></hi> sad</l>
+                         <l>Saa h&#x00E6;derlig i <placeName key="fak15">Sj&#x00E6;llands</placeName>
+                              <seg type="com" n="com75"><!--række af biskopper.-->Bisperad</seg>,</l>
+                         <l><pb type="edition" ed="PS" n="7"/>F&#x00F8;r <hi rend="spaced"><persName key="pe991">Sk&#x00F8;nning</persName></hi> pr&#x00F8;vede <!---->Sankt <persName key="pe1048">Olafs</persName> Hus</l>
+                         <l>At reise <hi rend="spaced">aandelig</hi> op af sit Grus,</l>
+                         <l>Du havde Marmor til at reise V&#x00E6;gge,</l>
+                         <l>Du havde <!--grantræer.-->Graner nok til <seg type="com" n="com78"><!--tagspærene.-->Sp&#x00E6;rrev&#x00E6;rk</seg>,</l>
+                         <l>Ja Hallen du med <seg type="com" n="com79"><!--kobber-->Kaabber</seg> kunde <!--DDO 2: klart i konteksten-->t&#x00E6;kke,</l>
+                         <l>Af Jern <!--poetisk inversion--><seg type="com" n="com57">og</seg> lave den en Port <seg type="com" n="com80"><!--meget.-->hel</seg> st&#x00E6;rk;</l>
+                         <l>Du havde Fyr til Borde og til Stole,</l>
+                         <l>Men havde du <seg type="com" n="com81"><!--også-->og</seg>
+                              <hi rend="spaced">L&#x00E6;rde</hi> til din Skole?</l>
+                         <l>Ei norsk den var og norsk var ei dens H&#x00E6;der,</l>
+                         <l>Naar ikke Nordm&#x00E6;nd prydede dens S&#x00E6;der,</l>
+                         <l>Og siig mig, har i trende Seklers Rad</l>
+                         <l>Du Mage havt kun til det Kl&#x00F8;verblad,<!--Kløverblad betyder her trekløver, sandsynligvis en hentydning tre nordmænd, som endnu var bosat i København, men allerede var udset som professorer til det nyoprettede norske universitet: Niels Treschow, Georg Sverdrup og Svend Hersleb. Se Indledningens afsnit XXX--></l>
+                         <l>Der blomstrer nu, som det, i <placeName key="fak14">Danmarks</placeName> Have,</l>
+                         <l>Og kan dig sk&#x00E6;nkes til en Faddergave?</l>
+                         <l>Saa b&#x00F8;i da, <placeName key="poet415">Norrig</placeName>, kun din stive Nakke,</l>
+                         <l>Det H&#x00E6;der er og ingen Skam at takke.</l>
+                         <l>Ei ene <hi rend="spaced">Ham</hi> du takke b&#x00F8;r og skal,</l>
+                         <l>Som bygger Gud og Videnskab en Hal</l>
+                         <l>Paa dine Fjelde, nu, da <seg type="com" n="com83">f&#x00F8;rst</seg> med &#x00C6;re</l>
+                         <l><pb type="text" facs="1812_182_fax013.jpg" ed="A" n="11"/>De selv den m&#x00E6;gte med Guds Hjelp at b&#x00E6;re;</l>
+                         <l>Men <seg type="com" n="com84"><!--også-->og</seg> med Ham hans milde Kongef&#x00E6;dre</l>
+                         <l>Du takke skal og udi St&#x00F8;vet h&#x00E6;dre;</l>
+                         <l>Thi viid at aldrig selv du <seg type="com" n="com85"><!--dvs. højskole, universitet.-->Skole</seg> havde faaet,</l>
+                         <l>Hvis ei i <placeName key="fak8">K&#x00F8;benhavn</placeName>
+                              <seg type="com" n="com86"><!--på universitetet.-->til Skole</seg> du var gaaet.</l>
+                         <l>Du takke skal, men ei derved dig skamme,</l>
+                         <l>At <placeName key="poet219">Dannemark</placeName> var dine S&#x00F8;nners Amme:</l>
+                         <l>At de af hende l&#x00E6;rte Herrens Frygt,</l>
+                         <l>At Hun dem venlig l&#x00E6;rde al sin Kl&#x00F8;gt.</l>
+                         <l>Det hende gik, som det mon Ammer gaa</l>
+                         <l>De glemme tit at disse Gutter smaa</l>
+                         <l>Af <seg type="com" n="com87"><!--adelig byrd, fornem slægt.-->Herre&#x00E6;t</seg>, som <!--DDO give die http://ordnet.dk/ddo/ordbog?mselect=59001504&query=Die-->Die de mon give,</l>
+                         <l>Engang, <seg type="com" n="com88"><!--hvis Gud vil (gl. optativ af ‘ville’).-->vil Gud</seg>, skal store Herrer blive;</l>
+                         <l><pb type="edition" ed="PS" n="8"/>Men var det godt, <!--http://ordnet.dk/ddo/ordbog?query=ifald-->ifald de vilde bukke</l>
+                         <l>For Pattebarnet, mens det laa i Vugge?</l>
+                         <l>Har nogen Prinds endnu det kunnet taale,</l>
+                         <l>Undtagen <rs n="bible2" type="bible" subtype="bibleStart" key="Matt 2,11" rend="allusion"/>Han, som <seg type="com" n="com89"><!--allerede-->alt</seg> i Vuggen bar</l>
+                         <l>En Kongekrone med en Guddomsstraale?<rs type="bible" subtype="bibleEnd" key="Matt 2,11" n="bible2" rend="allusion"/></l>
+                         <l>En anden Vane Ammen ogsaa har,</l>
+                         <l>Hun til den Voxne taler <seg type="com" n="com90"><!--stundom, til tider.-->stundum</seg> <seg type="com" n="com145">saa</seg>,</l>
+                         <l>Som om endnu han udi Vuggen laa.</l>
+                         <l>Om <placeName key="fak14">Danmark</placeName>
+                              <seg type="com" n="com91"><!--stundom, til tider.-->stundum</seg> <seg type="com" n="com146">saa</seg> har talt til dig,</l>
+                         <l>Du voxne Nordmand, veed jeg <seg type="com" n="com92"><!--egentlig ikke, ikke uden videre.--><!--ODS 8. lige 3.5: http://ordnet.dk/ods/ordbog?select=lige,8&query=lige-->ei saa lige</seg>;</l>
+                         <l>Men det kan jeg og det maa Ammen sige,</l>
+                         <l>At <seg type="com" n="com93"><!--hovmodig--><!--ODS 2.2-->stolt</seg> du <seg type="com" n="com94"><!--er (gl. 2. person singularis af ‘være’).-->est</seg>, <seg type="com" n="com95"><!--hvis.-->om</seg> sligt forarger dig.</l>
+                         <l>End Eet jeg har at sige dig fra hende,</l>
+                         <l><pb type="text" facs="1812_182_fax014.jpg" ed="A" n="12"/>At vil du Ryggen til din Amme vende,</l>
+                         <l><rs subtype="bibleStart" n="bible3" type="bible" rend="eg" key="Ordsp 19,29"/>Vil du med hendes Sygdom drive Spot,</l>
+                         <l>Da vidner Gud, det gaaer dig aldrig godt<rs subtype="bibleEnd" n="bible3" type="bible" rend="eg" key="Ordsp 19,29"/>.</l>
+                    </lg>
+                    <lg n="6">
+                         <l>Ei, milde Konge, du fort&#x00F8;rnes vil,</l>
+                         <l>Fordi, imedens du var selv tilst&#x00E6;de,</l>
+                         <l>Jeg glemte, som det lod, til Dig at kv&#x00E6;de,</l>
+                         <l>Og <seg type="com" n="com96"><!--længe udelukkende tiltalte Norge, dvs. irettesatte Norge; henvendte mig til Norge.-->talte l&#x00E6;nge ikkun <placeName key="poet415">Norrig</placeName> til</seg>!</l>
+                         <l>Du vil det ei, thi Du det m&#x00E6;rked godt,</l>
+                         <l>Jeg slog den <seg type="com" n="com97"><!--her også: slange.-->Orm</seg>, som vilde sig indliste</l>
+                         <l>I Dine h&#x00F8;ie F&#x00E6;dres Marmorkiste.</l>
+                         <l>Hvad ogsaa f&#x00F8;r jeg pr&#x00F8;vede engang,</l>
+                         <l>Paa <seg type="com" n="com98"><!--festdagen, her: jf. indledningen til Saga om Nord og hans Æt, afsnittet OM NORGE.-->H&#x00F8;itidsdagen</seg>, jeg i Sagasang</l>
+                         <l>Et Sandheds Ord frimodig vilde sige</l>
+                         <l>Til mine Br&#x00F8;dre i dit <placeName key="poet1671">Tvillingrige</placeName>;</l>
+                         <l>Paaminde dem, at ikke List og Vold</l>
+                         <l>Har sanket L&#x00F8;verne i <placeName key="fak14">Danmarks</placeName> Skjold;</l>
+                         <l>Men at den Gud, som haver Alt at raade,</l>
+                         <l>Dem sanket har til f&#x00E6;lleds Hjelp og <seg type="com" n="com100"><!---->Baade</seg>;</l>
+                         <l><pb type="edition" ed="PS" n="9"/>Dem varsle, at ei med vanhellig Haand</l>
+                         <l>De <seg type="com" n="com101"><!--ville løsne (optativ af ‘løse’.)-->l&#x00F8;sne</seg> Knuden paa det sk&#x00F8;nne Baand,</l>
+                         <l>Paaminde dem, at ei i Tvist og Kiv</l>
+                         <l>De <seg type="com" n="com158">&#x00F8;de</seg> Kraften, som de fik til Liv;</l>
+                         <l>Men <seg type="com" n="com102"><!--alt efter som, såfremt-->eftersom</seg> dem Gud vil Naade give,</l>
+                         <l>Hinanden <seg type="com" n="com147">holde</seg> <seg type="com" n="com148">vexelvis</seg> <seg type="com" n="com103"><!--i live.--><!--ODS Liv 1.7  ved live, (højtid., nu sj.) d. s. s. i live; især i for-->ved Live</seg>.</l>
+                         <l>Paaminde dem jeg vil, som Fr&#x00E6;ndeskjald,</l>
+                         <l><pb type="text" facs="1812_182_fax015.jpg" ed="A" n="13"/>At broderlig de <seg type="com" n="com104"><!--skal knæle (optativ af ‘knæle’).-->kn&#x00E6;le</seg> i din <seg type="com" n="com161">Hald</seg>,</l>
+                         <l>Med Guld og Staal den <seg type="com" n="com105"><!--skal støtte (optativ af ‘støtte’).-->st&#x00F8;tte</seg> og den <seg type="com" n="com106"><!--skal værge (optativ af ‘værge’).-->v&#x00E6;rge</seg>.</l>
+                         <l>Paa <placeName key="fak14">Danmarks</placeName> Sletter, som paa <placeName key="poet415">Norrigs</placeName> Bjerge,</l>
+                         <l>For Gud og <placeName key="fak24">Norden</placeName> jeg det vidne kan,</l>
+                         <l>At <placeName key="poet1671">Tvillingriget</placeName> er mit F&#x00E6;dreland.</l>
+                    </lg>
+                    <lg n="7">
+                         <l>Dog, milde Konge, t&#x00F8;r jeg dristig tale?</l>
+                         <l>Ei Guldet kan <seg type="com" n="com107"><!--opretholde, bære.-->opholde</seg> Kongesale</l>
+                         <l>Og der vil Meer til Landets sikkre V&#x00E6;rn,</l>
+                         <l>End <seg type="com" n="com149">Krud</seg> og Kugler, Folketal og Jern;</l>
+                         <l>Dertil maa Livets rene friske Saft,</l>
+                         <l>Dertil maa Tro, dertil maa Dyd og Kraft.</l>
+                         <l>Ak, <rs type="myth" key="myth105">Ormen</rs>, der om <rs type="myth" key="myth94">Midgard</rs> trindt sig snoer</l>
+                         <l>Ei med sin Edder har forskaanet <placeName key="fak24">Nord</placeName>,</l>
+                         <l>Den overskyller Engen som en Flod,</l>
+                         <l>Og tr&#x00E6;nger ind i <seg type="com" n="com108"><!--den spiselige plantes.-->Urtens</seg> bl&#x00F8;de Rod.</l>
+                         <l>Mod st&#x00E6;rke Fjeld den <seg type="com" n="com150">end</seg> forg&#x00E6;ves bryder,</l>
+                         <l>Men strid den sig i Dalene udgyder:</l>
+                         <l>Den <seg type="com" n="com109"><!--hedder; kan også læses som: opheder.--><!--ODS 3. hede 1 og 2 http://ordnet.dk/ods/ordbog?select=hede,3&query=hede-->heder</seg>
+                              <hi rend="spaced">Vantro</hi> og den <seg type="com" n="com109">heder</seg>
+                              <hi rend="spaced">Synd</hi>,</l>
+                         <l>I frosne K&#x00E6;r er under Isen Dynd.</l>
+                         <l>O, denne Str&#x00F8;m, ei <placeName key="his121">Bretlands</placeName> R&#x00F8;vertrop</l>
+                         <l>Som snarlig sluges af den <hi rend="spaced">samme</hi> op,</l>
+                         <l>Det <hi rend="spaced">Fjenden</hi> er, som Dig og os <seg type="com" n="com111"><!--kunne; ellers: fyldord.--><!--ODS monne 1-->mon</seg> true,</l>
+                         <l>Den eneste, for hvilken <placeName key="fak24">Nord</placeName> b&#x00F8;r grue.</l>
+                         <l>Din <hi rend="spaced">Oldefader</hi> ved <seg type="com" n="com112"><!--en kongelig ordre, resolution.-->et Kongebud</seg></l>
+                         <l>Den vilde drive af sit Rige ud;</l>
+                         <l><pb type="text" facs="1812_182_fax016.jpg" ed="A" n="14"/><pb type="edition" ed="PS" n="10"/>Det ei gik an, fordi det ikke kunde:</l>
+                         <l>I stride Elv gaa D&#x00E6;mninger tilgrunde;</l>
+                         <l><seg type="com" n="com113"><!--Ligesom.-->Alt som</seg> en St&#x00E6;rk, der vogter sit Palads,</l>
+                         <l>Kun viger for en St&#x00E6;rkere sin Plads,</l>
+                         <l>Saa ogsaa her, skal ikke alt henrives,</l>
+                         <l>Maa Str&#x00F8;mmen af en anden Str&#x00F8;m fordrives.</l>
+                         <l>O, hvilken Str&#x00F8;m kan dette vel formaa</l>
+                         <l>Da <!--angerfulde tårer-->Angerstaarer selv ei kan forslaa,</l>
+                         <l>Af dem en B&#x00E6;k i <persName key="pe232">sjette Kristjans</persName> Dage</l>
+                         <l>Vi svulme saae <seg type="com" n="com115"><!--fyldord.-->alt</seg> under Suk og Klage,</l>
+                         <l>Den onde Str&#x00F8;m snart B&#x00E6;kken overvandt,</l>
+                         <l>Og mangen <!--hykleriske tårer.-->Hyklertaare i den randt,</l>
+                         <l>Hin Taaretids <seg type="com" n="com117"><!--fortrukne, forkrampede--><!--http://ordnet.dk/ods/ordbog?query=krampetrukken-->det krampetrukne</seg> Billed</l>
+                         <l>I <persName key="pe19">Evald</persName> vi med Taarer se fremstillet.</l>
+                    </lg>
+                    <lg n="8">
+                         <l>Saa er der da paa Jord slet intet V&#x00E6;ld,</l>
+                         <l>Hvorfra en Elv saa m&#x00E6;gtig kan udspringe,</l>
+                         <l>At den kan <seg type="com" n="com118"><!--giftstrømmen.-->Edderstr&#x00F8;mmen</seg> undertvinge,</l>
+                         <l>Fordrive den fra Eng og Dal og Fjeld?</l>
+                         <l>Jo visselig, den Elv er K&#x00E6;rlighed,</l>
+                         <l>Men K&#x00E6;rlighed til <seg type="com" n="com119"><!--det, som-->hvad som</seg>
+                              <hi rend="spaced"><seg type="com" n="com120"><!--vedbliver, dvs. det uforgængelige.-->bliver ved</seg></hi>;</l>
+                         <l>Thi <rs subtype="bibleStart" n="bible5" key="1 Joh 2,15-16" rend="eg" type="bible"/>K&#x00E6;rlighed er <seg type="com" n="com121"><!--også-->og</seg> hin <seg type="com" n="com122"><!--giftige elv, giftstrøm.-->Edderelv</seg></l>
+                         <l>Til Verden og vort d&#x00F8;delige Selv<rs subtype="bibleEnd" n="bible5" key="1 Joh 2,15-16" rend="eg" type="bible"/>;</l>
+                         <l>De Tvende kun hinanden kan betvinge,</l>
+                         <l>Thi begge de fra Hjerterod udspringe.</l>
+                         <l><pb type="text" facs="1812_182_fax017.jpg" ed="A" n="15"/>Hvor er den N&#x00F8;gel og hvor er den <seg type="com" n="com123"><!--dørring, dvs. dørhåndtag--><!--http://ordnet.dk/ods/ordbog?query=d%C3%B8rring-->Ring</seg>,</l>
+                         <l>Som aabner D&#x00F8;rren for det <seg type="com" n="com124"><!--kildevæld.-->Kildespring</seg>?</l>
+                         <l>Den faste Tro paa Gud og Evigheden?</l>
+                         <l>Vi dunkelt mindes at vi den har havt,</l>
+                         <l>Men <seg type="com" n="com125"><!--allerede-->alt</seg> <rs type="bible" key="Hebr 7,10" rend="eg1787"><seg type="com" n="com126"><!--tjek syntagme i Grundtvigkorpus, ej ODS. DDO forklarer lænd=skød-->i Faders L&#x00E6;nd</seg></rs> vi den har tabt.</l>
+                         <l>Vel raabte tit vor <app type="corrNote" select="yes">
+                                   <!--B s. 288 PS 10: Jords-->
+                                   <lem wit="B">Jords</lem>
+                                   <rdg wit="A">Jord</rdg>
+                                   <witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail>
+                              </app> de vise M&#x00E6;nd:</l>
+                         <l>Vi i os selv har fundet den igen,</l>
+                         <l>De talte smukt om Gud og Tro og Dyd,</l>
+                         <l>Og mange lytted til den vakkre Lyd;</l>
+                         <l><pb type="edition" ed="PS" n="11"/>Men havde de den rette N&#x00F8;gel fundet,</l>
+                         <l>Hvorfor mon da de ei med den har kundet</l>
+                         <l>Oplade Hjertekamrets rette D&#x00F8;r,</l>
+                         <l>Som de dog veed har v&#x00E6;ret aaben f&#x00F8;r?</l>
+                         <l>Hvi oversv&#x00F8;mmes, mens de h&#x00F8;iest prale,</l>
+                         <l>Af <seg type="com" n="com151">Edderstr&#x00F8;mmen</seg> baade Bjerg og Dale?</l>
+                         <l>Hvi drukned <placeName key="his322">Preussen</placeName> i den priste Flod,</l>
+                         <l>Hvis D&#x00F8;r den kloge <persName key="pe1062">Friderich</persName> oplod?</l>
+                         <l>Hvi drukned <placeName key="fak5">Englands</placeName> Aand i Klogskabs Hav?</l>
+                         <l>Hvi synker Legemet <seg type="com" n="com127"><!--også.-->og</seg> snart i Grav?</l>
+                         <l>Fordi et Ord med s&#x00E6;rt forborgne Kr&#x00E6;fter</l>
+                         <l>Kun N&#x00F8;glen giver som man leder efter,</l>
+                         <l>Fordi de Vise paa den kloge Jord</l>
+                         <l>Vil trylle Kraft i deres egne Ord;</l>
+                         <l>Fordi det Guddomsord de <seg type="com" n="com128"><!--hovmodigt.-->stolt</seg> foragte,</l>
+                         <l>Som N&#x00F8;gelen til vore F&#x00E6;dre bragte</l>
+                         <l>Og frelste dem fra <seg type="com" n="com116">Edderstr&#x00F8;mmens</seg> Vold.</l>
+                         <!-- Kvædlinger s. 289: ny strofe, men det harmonerer ikke med rimparret Vold vs. Old --><l><pb type="text" facs="1812_182_fax018.jpg" ed="A" n="16"/>En Konge ei omskabe kan sin <seg type="com" n="com129"><!--generation, samtid.--><!--ODS Old 1.1 (2): -->Old</seg></l>
+                         <l>Og det er Stort, naar den ham ei henriver,</l>
+                         <l>Naar ei fortryllet af dens Lokkesang,</l>
+                         <l>Naar ei forblindet Han dens Banner griber,</l>
+                         <l>Og vier selv sit Folk til Undergang;</l>
+                         <l>Naar selv han &#x00E6;rer <persName key="pe45">Jesu</persName> h&#x00F8;ie Tro,</l>
+                         <l><app type="corrNote" select="yes">
+                                   <lem wit="B">Og</lem>
+                                   <rdg wit="A">Dg</rdg>
+                                   <witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail>
+                              </app> vil at <seg type="com" n="com130"><!--Guds ord.-->Ordet</seg> skal i Kirken bo;</l>
+                         <l>Naar Han, som Du den vantro Mand og Kvinde,</l>
+                         <l>Dog s&#x00F8;ger dem, som Troens sk&#x00F8;nne Baand</l>
+                         <l>Afrystet har, med Lovenes at binde.</l>
+                    </lg>
+                    <lg n="9">
+                         <l>Saa hav da Tak, o <persName key="pe96">Frederik</persName> hin milde,</l>
+                         <l>For Det, Du gjorde og for Det Du vilde!</l>
+                         <l>Til Kongens Alder <seg type="com" n="com131"><!--må Herren lægge, dvs. tilføje (optativ af ‘lægge’).-->l&#x00E6;gge Herren</seg> Aar,</l>
+                         <l>Og <seg type="com" n="com132"><!--må styrke (optativ af ‘størke’, dvs. styrke).-->st&#x00F8;rke</seg> Ham <seg type="com" n="com133"><!--hvorend.--><!--eksemplerne i ODS ihvor 1 passer bedre med til ‘hvorend’ end til ‘hvor’-->ihvor</seg> Han gaar og staar,</l>
+                         <l>Til Godt at ville og til Godt at virke,</l>
+                         <l>Til kraftig at besk&#x00E6;rme <hi rend="spaced"><persName key="pe45">Kristi</persName> Kirke</hi>,</l>
+                         <l><pb type="edition" ed="PS" n="12"/>Saa Ingen, der for Tidens Afgud kn&#x00E6;le,</l>
+                         <l>Sig skal indsnige til at myrde Sj&#x00E6;le,</l>
+                         <l>Men at i <placeName key="fak24">Nord</placeName> den maa urokket stande,</l>
+                         <l>Naar den nedbrydes rundt om Lande!</l>
+                    </lg>
+                    <lg n="10">
+                         <l><seg type="com" n="com134"><!--Må Gud tage (optativ af ‘tage’).-->Gud tage</seg> naadig i sin Varet&#x00E6;gt</l>
+                         <l>Din fromme Dronning og Din ganske Sl&#x00E6;gt!</l>
+                         <l><rs rend="allusion" type="bible" key="Ef 3,17"><seg type="com" n="com135"><!--Må han stadfæste dig (optativ af ‘stadfæste’).-->Han Dig stadf&#x00E6;ste</seg> udi K&#x00E6;rlighed,</rs></l>
+                         <l>I Liv og D&#x00F8;d <seg type="com" n="com136"><!--må han skænke (optatitv af ‘skænke’).-->Han sk&#x00E6;nke</seg> Dig sin Fred!!!</l>
+                    </lg>
+                    <graphic style="longLine"/>
+               </div>
+          </body>
+          <pb type="periText" facs="1812_182_fax019.jpg"/>
+          <pb type="periText" facs="1812_182_fax020.jpg"/>
+     </text>
+</TEI>

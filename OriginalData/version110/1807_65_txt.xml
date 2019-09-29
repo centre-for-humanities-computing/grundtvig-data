@@ -1,0 +1,1739 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="https://prometheus.statsbiblioteket.dk/gvData/xslt/txtEditXSLT.xsl"?>
+<?xml-model type="application/relax-ng-compact-syntax" href="https://prometheus.statsbiblioteket.dk/gvData/rnc/txtRNC.rnc"?>
+<TEI xmlns:TEI="http://www.tei-c.org/ns/1.0" xmlns="http://www.tei-c.org/ns/1.0">
+ <teiHeader>
+  <fileDesc>
+   <titleStmt>
+    <title rend="part">Om Asal&#x00E6;ren</title>
+    <title rend="shortForm">Om Asal&#x00E6;ren</title>
+    <author>Nicolai Frederik Severin Grundtvig</author>
+    <editor role="editionPhilologist">Vibeke A. Pedersen</editor>
+    <editor role="student">Rebekka Sofie Bohse Meyer</editor>
+    <editor role="student">Jesper Lorenzen</editor>
+    <editor role="student">Frederik Drei&#x00F8;e Seidelin</editor>
+   </titleStmt>
+   <editionStmt>
+    <edition>
+          <idno type="content">1.8</idno>
+          <idno type="technic">1.8.1</idno>
+        </edition>
+   </editionStmt>   
+   <extent>82 KB</extent>
+     
+   
+    
+   <publicationStmt>
+    <availability status="restricted">
+<p>&#x00A9; Grundtvig Centeret, Aarhus Universitet</p>
+</availability>
+    <publisher>Faculty of Arts, Aarhus University</publisher>
+    <distributor>Grundtvig Centeret, Vartov, K&#x00F8;benhavn</distributor>
+    
+    <date when="2013-10-01">www.grundtvigsv&#x00E6;rker.dk, version 1.3, 1. oktober 2013</date>
+   </publicationStmt>
+   <seriesStmt>
+    <title>Maanedsskriftet Ny Minerva</title>
+    <respStmt>
+     <name>Knud Lyne Rahbek</name>
+     <resp>Professor</resp>
+    </respStmt>
+    <idno>2014-10-31</idno>
+   </seriesStmt>
+   <notesStmt>
+    <note type="txt" target="1807_65_txt.xml" xml:id="thisFile">L&#x00E6;setekst</note>
+    <note type="com" target="1807_65_com.xml">Punktkommentar</note>
+    <note type="intro" target="1807_65_intro.xml">Indledning</note>
+    <note type="txr" target="1807_65_txr.xml">Tekstredeg&#x00F8;relse</note>
+    <note type="minusVar">Variant</note>
+   </notesStmt>
+   
+   
+  
+   <sourceDesc>
+    <bibl>
+     <title type="main">Maanedsskrifte Ny Minerva.</title>
+     <title type="part">Om Asal&#x00E6;ren.</title>
+     <author>Nik. Fred. Sev. Grundtvig
+      <note>Kanditat i Theologien.</note>
+     </author>
+     <pubPlace>Ki&#x00F6;benhavn.</pubPlace>
+     <publisher>
+      <note>Udgivet ved Knud Lyne Rahbek, Professor</note>
+      <note>Trykt og forlagt hos Directeur Johan Frederik Schultz</note>
+      <note>Kongelig og Universitets-Bogtrykker</note>
+     </publisher>
+     <date>1807.</date>
+    </bibl>
+    <listWit xml:id="emendation">
+     <witness xml:id="A" n="65"><desc>F&#x00F8;rstetrykket</desc><num>1807</num>
+   
+       
+    <!-- <desc>Rettelseslisten</desc>/>--></witness>
+           
+    </listWit> 
+   
+     <listWit xml:id="pageNumber">
+      <witness xml:id="US"><desc>Udvalgte Skrifter</desc><num> 1</num></witness>
+     </listWit>   
+   </sourceDesc>
+  </fileDesc>
+  <profileDesc>
+   <textClass>
+    <classCode scheme="http://grundtvigsværker.dk/genre.xml">
+     <term>prosa</term>
+     <term>afhandlinger</term>
+    
+    </classCode>
+    <keywords scheme="http://grundtvigsværker.dk/emneord.xml">
+     <term>mytologi</term>
+     <term>norrønt</term>
+  
+    </keywords>
+   </textClass>
+  </profileDesc>
+  
+  <encodingDesc>
+   <projectDesc>
+    <p>Grundtvig Centeret er oprettet den 1. januar 2009.</p>
+    <p>Grundtvig Centeret arbejder med:</p>
+    <p>1. En digital og kommenteret udgave af Grundtvigs v&#x00E6;rker</p>
+    <p>2. En forskningsindsats p&#x00E5; de felter, hvor Grundtvig s&#x00E6;rligt markerede sig</p>
+    <p>2.a. Teologi og kirke</p>
+    <p>2.b. Demokrati og folkelighed</p>
+    <p>2.c. P&#x00E6;dagogik og folkeoplysning</p>
+    <p>3. Videnudveksling, undervisning og formidling</p>
+   </projectDesc>   
+   <editorialDecl xml:id="comGuideLines.xml" n="1.0">
+    <p>Retningslinjer for punktkommentarer til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="introGuideLines.xml" n="1.0">
+    <p>Retningslinjer for indledninger til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="msGuideLines.xml" n="1.0">
+    <p>Retningslinjer for transskribering af manuskripter til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="refGuideLines.xml" n="1.0">
+    <p>Retningslinjer for litteraturhenvisninger til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="typoGuideLines.xml" n="1.0">
+    <p>Retningslinjer for gengivelse af typografiske hierarkier i Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="txrGuideLines.xml" n="1.0">
+    <p>Retningslinjer for tekstredeg&#x00F8;relser til Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="txtGuideLines.xml" n="1.0">
+    <p>Tekstkritiske retningslinjer for Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   <editorialDecl xml:id="xmlGuideLines.xml" n="1.0">
+    <p>Retningslinjer for XML-m&#x00E6;rkning af Grundtvigs V&#x00E6;rker</p>
+   </editorialDecl>
+   
+  </encodingDesc> 
+  <revisionDesc>
+   <change xml:id="VAP" who="VAP" when="2010-11-10">navne</change>
+   <change xml:id="KSR" who="KSR" when="2010-11-10">validering, unicodes, etc.</change>
+   <change who="VAP" when="2010-11-10">navne; bindestreger ved sideskift</change>
+   <change who="VAP" when="2010-11-15">nummer p&#x00E5; Gimle rettet</change>
+   <change who="JEL" when="2010-11-17">flere korrektioner, samt midlertidig henvisning til Begtrups
+    US indf&#x00F8;rt</change>
+   <change who="KSR" when="2010-11-17">nye deklarationer</change>
+   <change who="JEL" when="2010-11-19">indf&#x00F8;relse af punktkommentarskoder (ikke selve
+    kommentaren)</change>
+   <change who="RSB" when="2010-11-24">noget med punktkommentarskoder (ikke selve
+    kommentaren)</change>
+   <change who="VAP" when="2010-11-25">stednavne, personnavne; ombytning af xml-id og myt</change>
+   <change who="VAP" when="2010-11-29">ny teiHeader indsat og rettet</change>
+   <change who="KSR" when="2010-11-29">ny teiHeader indsat og rettet</change>
+   <change who="VAP" when="2010-12-01">SIDETAL FRA BEGTRUP: US</change>
+   <change who="JEL" when="2010-12-01">Punktkommentarkoder &#x00E6;ndres til transformaering</change>
+   <change who="KSR" when="2010-12-01">elementet pb rettet</change>
+   <change who="JEL" when="2010-12-03">kontrol af korrekturrettelser</change>
+   <change who="VAP" when="2010-12-09">indf&#x00F8;ring af kommentarnumre 1-101</change>
+   <change who="VAP" when="2010-12-10">rettelse af invaliditeter ved hj&#x00E6;lp af udr&#x00E5;bstegnmarkering; indf&#x00F8;ring af kommentar 501-506 - disse skal senere rettes! Elementerne i kommentar 501-506 skal senere overflyttes til basic base. To kustoder slettet
+   </change>
+   <change who="VAP" when="2010-12-20">indf&#x00F8;ring af kommentarnumre 102- Sletning af dobbeltmarkering af note og henvisning til mytologisk base fra nr. 101 og frem</change>
+   <change who="VAP" when="2011-01-04">indf&#x00F8;ring af enkelte henvisninger til div. baser og indf&#x00F8;ring af evt. dobbelthenvisninger til samme note (com)</change>
+   <change who="VAP" when="2011-01-05">indf&#x00F8;ring af enkelte henvisninger til div. baser og indf&#x00F8;ring af evt. dobbelthenvisninger til samme note (com)</change>
+   <change who="KSR" when="2011-01-06">elementet titlePage</change>
+   <change who="VAP" when="2011-01-06">overlappende hierarkier</change>
+   <change who="KSR" when="2011-01-06">validering, lemmakodning</change>
+   <change who="VAP" when="2011-01-07">overlappende hierarkier, RETTELSER EFTER kIMS SKRIV</change>
+   <change who="VAP" when="2011-01-10">RETTELSER EFTER kIMS SKRIV. Opm&#x00E6;rkning af grafik: longLine, shortLine</change>
+   <change who="VAP" when="2011-01-11">erstatte visse com-m&#x00E6;rker med henv. til myt. base</change>
+   <change who="VAP" when="2011-01-12">indsat kommentar 38</change>
+   <change who="VAP" when="2011-01-18">indre hierarki</change>
+   <change who="VAP" when="2011-01-19">Rette Thund til henv. til Odin. </change>
+   <change who="VAP" when="2011-01-31">fors&#x00F8;g p&#x00E5; indre hierarki - men kodebogen giver ikke eksempler</change>
+   <change who="VAP" when="2011-02-01">fors&#x00F8;g p&#x00E5; emenderinger og indre hierarki</change>
+   <change who="VAP" when="2011-02-02">korrekturrettelser</change>
+   <change who="KSR" when="2011-02-04">skema txtTest.rnc + typografi</change>
+   <change who="VAP" when="2011-02-08">rettelser efter nyt skema</change>
+   <change who="VAP" when="2011-02-10">rettelser efter nyt skema. Sigler rettet. Rebekkas kollationsrettelser indf&#x00F8;rt.    o/e udest&#x00E5;r
+   </change>
+   <change who="KSR" when="2011-02-25">head, st&#x00F8;rrelser p&#x00E5; f&#x00F8;rste side</change>
+   <change who="VAP" when="2011-02-28">rettelser af unicodes p&#x00E5; 2 x thorn</change>
+   <change who="VAP" when="2011-03-10">slette alle henvisninger til com 500-511 og &#x00E6;ndre til myth 106-199 (altsammen m&#x00E6;ngdebetegnelser p&#x00E5; mytologiske v&#x00E6;sener, fx aser og norner)</change>
+   <change who="VAP" when="2011-03-11">Sletning af dobbeltmarkering af note og henvisning til mytologisk base</change>
+   <change who="KSR" when="2011-03-25">validering i forhold til nyt skema og xslt</change>
+   <change who="VAP" when="2011-03-28">indryk ved afsnit mv.</change>
+   <change who="VAP" when="2011-04-05">indf&#x00F8;jet myth som type. Opsplittet dobbeltlemmata. Erstattet henvisninger til kommentarer i 70'erne med 600'er</change>
+   <change who="VAP" when="2011-04-08">opm&#x00E6;rke eddasange til title</change>
+   <change who="VAP" when="2011-05-23">konsekvensrettelser i forhold til Kims gennemgang af punktkommentar</change>
+   <change who="VAP" when="2011-05-24">sidste konsekvensrettelser i forhold til Kims gennemgang af punktkommentar</change>
+   <change who="VAP" when="2011-08-15">konsekvensrettelser efter FLN til com</change>
+   <change who="VAP" when="2011-08-16">konsekvensrettelser efter FLN til com</change>
+   <change who="VAP" when="2011-08-17">konsekvensrettelser efter FLN til com</change>
+   <change who="VAP" when="2011-08-18">konsekvensrettelser efter FLN til com</change>
+   <change who="VAP" when="2011-08-19">konsekvensrettelser efter FLN til com, bl. a. Ny com433-434, 443 efter FLNs forslag</change>
+   <change who="VAP" when="2011-10-07">Rettelser efter opsamlingsliste af 6. oktober 2011</change>
+   <change who="VAP" when="2011-10-21">Kontrol af rettelser efter opsamlingsliste af 6. oktober 2011 og FLN</change>
+   <change who="VAP" when="2011-10-31">Rettelser efter omorganisering af mytebasen </change>
+   <change who="VAP" when="2011-11-02">nye sigler </change>
+   <change who="VAP" when="2011-11-04">RETTELSER i header</change>
+   <change who="VAP" when="2011-11-25">rettelser af pb. Indf&#x00F8;ring af afsnit i tei-header </change>
+   <change who="KSR" when="2011-11-28">rettelser i tei-header</change> 
+   <change who="VAP" when="2011-12-01">rettelser i tei-header. : thisFile, editorroles. Sidetal i 1.trykket indsat inden for l i lg</change> 
+   <change who="JEL" when="2011-12-14">indsat peritekst referencer</change>
+   <change who="JMR" when="2012-01-13">rettet henvisninger til faksimile</change>
+   <change who="VAP" when="2012-01-26">flyttet s-genitiv ind i opm&#x00E6;rkning ved pers og myth</change>
+   <change who="VAP" when="2012-01-27">rettelser i head til: "2012-01-31"&gt;Version 0.9. Flytte seg-elementer med comStart og comEnd inden for line i linegrooups</change>
+   <change xml:id="MWP" who="MWP" when="2012-04-13">fjernet pe4 opm&#x00E6;rkning</change>
+   <change who="VAP" when="2012-04-25">&#x00C6;NDRET I TEI HEADER efter Kims mails af g.d.</change>
+   <change who="VAP" when="2012-06-21">docIn henvisningerne korrekte</change>
+   <change who="VAP" when="2012-08-14">&#x00C6;NDRET I TEI HEADER: edition; edition p&#x00E5; henv. til andre udgaver. d&#x00F8;bning af tekst til rullegardin efter Kims mails af g.d.</change>
+   <change who="VAP" when="2012-08-17">&#x00C6;NDRET versionsnummer + omkr. variant</change>
+   <change xml:id="FDS" who="FDS" when="2012-08-20">&#x00C6;ndret apostroffer fra &amp;#x2019; til &amp;#x0027;</change>
+   <change who="VAP" when="2012-08-22">rettet Miverva til Minerva i kolofon</change>
+   <change who="VAP" when="2012-10-25">rettet i kolofon og emenderinger</change>
+   <change who="VAP" when="2012-10-28"> &#x00E6;ndret i publicationStmt og kildeliste</change>
+   <change who="JMR" when="2012-10-30">flyttet pb-elementer</change>
+   <change who="VAP" when="2012-10-31">fjernet et x i ordet underlig</change>
+   <change who="FDS" when="2013-01-28">omrokeret og korrigeret pb-elementer</change>
+   <change who="VAP" when="2013-02-08">slettet com 14</change>
+   <change who="FDS" when="2013-02-08">ensrettet fodnoter iht. g&#x00E6;ldende praksis.</change>
+   <change who="VAP" when="2013-03-21">erstattet italic med spaced de relevante steder.</change>
+   <change who="VAP" when="2013-04-15">fjernet m&#x00E6;slinger lb til fw</change>
+   <change xml:id="KN" who="KN" when="2013-04-29">Fjernet myth2-opm&#x00E6;rkning ved Alvider: konflikt med com78</change>
+   <change xml:id="VTH" who="VTH" when="2013-04-30">Rettet sigler</change>
+   <change who="KN" when="2013-05-01">Typografi rettet</change>
+   <change who="KN" when="2013-05-01">Strofenumre fjernet</change>
+   <change who="VAP" when="2013-05-02">tilrettet head m/ extent, date og versionsnummer</change>
+   <change who="VAP" when="2013-05-16">udkommenteret div faxnumre i peritxt</change>
+   <change who="VAP" when="2013-05-31">fjernet mellemrum efter fodnoteindvisning</change>
+   <change who="VAP" when="2013-07-31">fjernet fejl i mytebaseopm&#x00E6;rkning efter Karsten Kyndes korpusk&#x00F8;rsel. &#x00C6;ndret topreferencerne til Prometeus (med masser af f&#x00F8;lgefejl til f&#x00F8;lge, is&#x00E6;r i  head)</change>
+   <change xml:id="AP" who="AP" when="2013-09-19">rettet versions-streng</change>
+   <change who="VAP" when="2013-09-25">&#x00E6;ndret r&#x00E6;kkef&#x00F8;lge i tei-header og indsat ny prolog for at fjerne m&#x00E6;slinger</change>
+    <change who="auto" when="2013-12-12">Omorganiseret teiHeader</change>
+   <change who="auto" when="2013-12-19">Omorganiseret teiHeader, 2</change>
+   <change who="auto" when="2014-01-02">Omorganiseret teiHeader, 3, fronten genoprettet</change>
+   <change who="VAP" when="2014-03-20">ændret til version 1.4 i editionStmt</change>
+   <change who="VAP" when="2014-04-22">afgrønnet peritxt efter valideringskørsel (eller?) af 11. april</change>
+   <change who="VAP" when="2014-10-02">rettelser i head samt forsøg på helbredelse af mæslinger. HangingIndent i fodnoter giver problemer. Jeg kan ikke få rettelseslisten anbragt i listWit</change>
+   <change who="VAP" when="2014-10-09">rettelser i indent i fodnoter</change>
+   <change who="VAP" when="2014-10-30">fjernet lb i head</change>
+   <change xml:id="KV" who="KV" when="2015-10-15">indført genre, emne</change>
+   <change who="VAP" when="2015-11-12">slettet com50</change>
+   <change who="VAP" when="2016-04-07">rettet i titelopm</change>
+   <change who="VAP" when="2016-10-25">fjernet noget i noteStm</change>
+   <change who="VAP" when="2016-11-02">inkorporeret et genitivs-s i et seg-element</change>
+  </revisionDesc>
+ </teiHeader>
+  <text type="txt">
+    
+  <!--<pb type="periText" facs="1807_65_fax001.jpg"/>
+  <pb type="periText" facs="1807_65_fax002.jpg"/>
+  <pb type="periText" facs="1807_65_fax003.jpg"/>
+  <pb type="periText" facs="1807_65_fax004.jpg"/>
+  <pb type="periText" facs="1807_65_fax005.jpg"/>-->
+ <!-- <pb type="periText" facs="1807_65_fax006.jpg"/>-->
+<pb type="periText" facs="1807_65_fax007.jpg" />
+   <!--  <pb type="periText" facs="1807_65_fax008.jpg"/>-->
+  <pb type="periText" facs="1807_65_fax009.jpg"/>
+  <pb type="periText" facs="1807_65_fax010.jpg"/>
+  <front />
+
+  <body>
+         
+   <div type="[Tekst]">
+    
+     <pb facs="1807_65_fax011.jpg" type="text" n="156" ed="A" />
+    
+    <head rend="2">Om Asal&#x00E6;ren.</head>
+     
+     <fw type="shortLine" />
+    
+    <p rend="center">
+<hi rend="size1">
+<seg type="com" n="com1">Nordens <persName key="pe2">
+<hi rend="spaced">Nyrup</hi>
+</persName>,</seg>
+</hi>
+</p>
+    <fw type="blank" />
+    <p rend="center"> hiin Sagakyndige,
+     <fw type="blank" />
+     <hi rend="size-1">helliges disse Blade, som et svagt Tegn paa min
+      <fw type="blank" />
+     fulde H&#x00F8;iagtelse.</hi>
+     <fw type="shortLine" />
+    </p>
+  
+    <lg>
+     <l>
+<seg n="com2" type="comStart" />Alf&#x00F6;&#x00F0;r<!-- gammelt o med lille e over --> <app type="corrNote" select="yes">
+<lem wit="Rettelsesliste">orkar</lem>
+<rdg wit="A ekspl. 1">orhar</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>,</l>
+     <l>Visa nornir</l>
+     <l>Aldir bera,</l>
+     <l>
+<app type="corrNote" select="yes">
+<lem wit="Rettelsesliste">&#x00DE;reyia &#x00FE;ursar</lem>
+<rdg wit="A">&#x00DE;regia &#x00FE;arfar</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app>
+</l>
+     <l>&#x00DE;ra valkyrior.<seg n="com2" type="comEnd" />
+      
+     <note type="footnote">
+     <p rend="noIndent"><lg>
+        <l>
+<rs key="myth1" type="myth">
+<seg type="com" n="com7">Alfader</seg>
+</rs> raader,</l>
+        <l>
+<rs type="myth" key="myth112">Nornerne</rs> vise (lede Tingenes Gang),</l>
+        <l>Tiderne vaandes,</l>
+        <l>
+<rs type="myth" key="myth116">Thurserne</rs> vente (paa <rs type="myth" key="myth106">Asers</rs> Fald),</l>
+        <l>
+<rs type="myth" key="myth117">Valkyrier</rs> l&#x00E6;nges (efter Strid).</l>
+       </lg></p>
+       <p rend="firstIndent">Jeg anseer disse Linier, is&#x00E6;r den f&#x00F8;rste, anden og fierde, som vore
+        F&#x00E6;dres korte <seg type="com" n="com12">Symbolum</seg>, hvorfra Intet kan tages, og hvortil
+        Intet kan l&#x00E6;gges, som ei stemmer dermed.</p>
+      </note>
+      
+     </l>
+    </lg>
+    
+    <p rend="right">
+<hi rend="italic">
+<seg type="com" n="com3">
+<rs type="title" key="title140">Hrafnagaldr O&#x00FE;ins</rs>
+</seg>.</hi>
+</p>
+    <fw type="shortLine" />
+    
+    <p rend="noIndent">
+<hi rend="initial">D</hi>et lider nu hen mod <seg type="com" n="com4">et Aar</seg>, siden jeg vovede at
+     tale den <seg type="com" n="com5">vanhelligede <seg type="com" n="com6">
+<rs type="title" key="title121">Eddas</rs>
+</seg> Sag</seg>. Jeg tilki&#x00E6;ndegav
+
+
+     <pb type="text" facs="1807_65_fax012.jpg" n="157" ed="A" />
+    
+    da min Beslutning, at v&#x00E6;re rolig Tilskuer af, hvad Andre maatte virke til en <pb type="edition" n="205" ed="US" />
+<seg type="com" n="com13"> renere Erki&#x00E6;ndelse af gamle Nord</seg>; men aldrig
+     kunde denne Yttring v&#x00E6;re mit V&#x00E6;sens S&#x00F8;n; thi,
+     hvorledes kunde jeg <seg type="com" n="com15">aflade</seg> at bev&#x00E6;ge mig i en Verden, hvis
+     Herlighed ene hielper mig at b&#x00E6;re Livets Byrde? Den var da kun det smertebaarne Udtryk
+     for min Tro paa <seg type="com" n="com16">Umuligheden af et dybere Oldstudium i min Stilling</seg>, og et
+     uvilkaarligt Udbrud af min Datids m&#x00F8;rke Stemning. Jeg sagde da med <rs type="myth" key="myth18">Frej</rs>:
+
+    <lg>
+      <l>
+<seg n="com18" type="comStart" />
+<rs type="myth" key="myth108">Alfers</rs> Bestraaler</l>
+      <l>Lyser alle Dage,</l>
+      <l>Men fryder ei mig.<seg n="com18" type="comEnd" />
+</l>
+     </lg>
+
+    og kun den <seg type="com" n="com19">underlige Parodie</seg> over <seg type="com" n="com20">Gudens da dybe,
+     vaandefulde Toner, og <rs type="myth" key="myth106">Asens</rs> betydningsfulde Liv</seg>, var det, som kunde
+     bringe mig til en &#x00F8;iebliklig Beskuelse af Dagslyset, til Kamp for min Helligdom.
+    
+    <p rend="firstIndent">Jeg har siden giort et Fors&#x00F8;g paa at blive n&#x00E6;rmere ki&#x00E6;ndt med Skatten,
+     hvis h&#x00F8;ie V&#x00E6;rd jeg kun anede som den <seg type="com" n="com23">rugende Drage</seg>, og 
+     <seg type="com" n="com24">gamle Nords enthusiastiske Ven, Nordboen <persName key="pe2">Nyrup</persName>
+</seg>, m&#x00F8;dte mig med den &#x00E6;delste Velvillie og
+     Opmuntring. Det Sorte i mit Indre har udviklet sig i et noget lysere Farvespil, og Natten, der
+     aldrig kunde vorde Solens Ven, lod sig opklare af de blinkende Stierner.</p>
+    
+    <p rend="firstIndent">Ved disses d&#x00E6;mpede Skin staaer jeg nu rede at gi&#x00F8;re en Vandring til <seg type="com" n="com25">Hedenold</seg>, for, om jeg kunde <!-- finde -->
+     
+   
+     <pb type="text" facs="1807_65_fax013.jpg" n="158" ed="A" />
+     
+     finde de <seg type="com" n="com26">d&#x00F8;dv&#x00E6;kkende Runer</seg>, at
+     fremmane deres Skygger, og f&#x00F8;re dem tilbage til Livet.</p>
+
+    <p rend="firstIndent">Lang er Veien, Aar ville henrinde, og ikkun Guderne vide, om jeg kan skyde mig frem giennem
+     M&#x00F8;rket, eller jeg maa tabe mig i det. Mit Legeme er <seg type="com" n="com27">Jettens ufarvede
+      Gave</seg>, og maaskee vil det snart sande, at <seg type="com" n="com28">Muld er Mandens
+      Fr&#x00E6;nde</seg>, naar <seg type="com" n="com29">
+<rs type="myth" key="myth59">Odin</rs>, som gav Aanden</seg>,
+      vinker den til h&#x00F8;iere Kamp.</p>
+    
+     <p rend="firstIndent">Jeg l&#x00E6;ste med Gruen, at <seg type="com" n="com30">
+<rs key="title121" type="title">Eddas Udgivere</rs>
+</seg> maatte <seg type="com" n="com31">undskylde deres store Daad</seg>, og jeg t&#x00F8;r vel ikke haabe, at den voxende Forstand,
+     der saa godt veed at maale Nytten af alle Ting, har skaffet Oldtiden flere Venner siden hine
+     Dage. Dog, <seg type="com" n="com32">
+<persName key="pe3">Oehlenschl&#x00E4;ger</persName>s gamle Harpe
+      klang</seg>, og nogle gribes dog vel af de dybe Toner.</p>
+    
+    <p rend="firstIndent">I M&#x00E6;nd, som bygge paa Norges Fielde og Danmarks Sletter! I ere da vel ikke end saa
+     vansl&#x00E6;gtede fra Eders F&#x00E6;dre, at I ville n&#x00E6;gte den af Eders
+     Landsm&#x00E6;nd al Deeltagelse, der i <seg type="com" n="com33">Alderens Foraar</seg> fremb&#x00E6;rer
+     sit Liv, som et Offer til Norden. Jeg <pb type="edition" n="206" ed="US" /> &#x00F8;nskede, at I vilde ansee mig
+     som staaende paa Gravbredden, <seg type="com" n="com34">m&#x00E6;rket med Spydsodden</seg>, og ikke
+     vredes over mit Farvel; thi <seg type="com" n="com35">Nutiden fratog mit Liv</seg> sin Betydning, og det
+     er uvist, om Oldtid giengiver det Tabte. Jeg saae engang et <seg type="com" n="com36">Billede af det
+      Evige</seg>. Kunde og turde jeg male det, som det stod for mig, da vilde I tilbede
+     kn&#x00E6;lende. Kunde og turde jeg ud<!-- tale  -->
+<pb type="text" facs="1807_65_fax014.jpg" n="159" ed="A" />tale Smerten, jeg f&#x00F8;lte, da det ei mere var for mig, da
+     skulde Eders <seg type="com" n="com37">Ledemod</seg> dirre, og Eders Aasyn blegne. Dette Billede
+     sv&#x00E6;ver evindelig for mit &#x00D8;ie, som den olympiske <rs key="myth171.a" type="myth">Jupiters</rs> for de gamle Gr&#x00E6;ker. Jeg kan ikke n&#x00E6;gte, at
+     have seet det; men dets harmoniske H&#x00F8;ihed maa jeg gienfinde i gamle
+     Nord, eller <seg n="com71" type="com">jeg har levet</seg>.</p>
+    
+    <p rend="firstIndent">
+<seg type="com" n="com39">F&#x00F8;lger</seg> mig da, Landsm&#x00E6;nd! ei paa min eensomme Vandring;
+     men op paa den Punkt, hvor jeg nu staaer! Jeg vil str&#x00E6;be at vise Eder et Glimt af den
+     herlige <seg type="com" n="com40">Old</seg>, hvorhen jeg stunder, og l&#x00E6;re Eder, hvorefter jeg
+     leder. Kommer jeg nogensinde levende tilbage, da vil jeg bede Eder skue, hvad jeg fandt; men
+     kommer jeg ikke, ville I da <seg type="com" n="com38">og</seg> v&#x00E6;re <seg type="com" n="com42">billige</seg> nok til at unde mig
+     Tr&#x00F8;sten: <hi rend="romanType">
+<seg type="com" n="com41">in magnis, voluisse, sat est</seg>
+</hi>?
+     <fw type="longLine" />
+</p>   
+    
+    <p rend="firstIndent">Endog den l&#x00F8;seligste Beskuelse af gamle Nord maa v&#x00E6;kke
+     Undren hos hver den, hvis &#x00D8;ie ei er ganske uvant med at maale det Store. Naar andre
+     Nationer fremstille en enkelt Skabelse, da opviser Norden en dobbelt, ja n&#x00E6;sten en
+     tredobbelt, uden endda at blive fyldestgiort. Naar Andre lade alt Liv forgaae i Graven, da
+     begynde vore F&#x00E6;dre deres bag den, stande kraftfulde i <rs type="myth" key="myth101">Valhal</rs>, og str&#x00E6;be endda mod et h&#x00F8;iere Liv. <rs type="myth" key="myth106">
+    Aserne</rs> fremskride med en Majest&#x00E6;t og Fylde af Kraft, Eenhed og
+     Harmoni, som vi anden<!-- steds -->
+<pb type="text" facs="1807_65_fax015.jpg" n="160" ed="A" />steds forgi&#x00E6;ves s&#x00F8;ge, og dog, medens de andre Folk
+     holde fast paa deres deelte Guder, vover den st&#x00E6;rke Nordbo at lade sine blegne og
+     forgaae. Det er saa langt fra, at han frygter for, Alt skal i dem gaae under, at han meget mere
+     kalder deres Fald Seier.</p>
+    
+    <p rend="firstIndent">Skulde dette, og saameget Andet, blot v&#x00E6;re en regell&#x00F8;s Phantasies barnagtige
+     Spil, som de Uindviede forvovne paastaae, eller ligger ikke heri en h&#x00F8;iere Betydning,
+     som <seg type="com" n="com45">Nordens Bedre <pb type="edition" n="207" ed="US" /> og Kyndige</seg> stedse ahnede, selv
+     naar de ei vovede at vedki&#x00E6;nde sig <seg type="com" n="com46">Ahnelsen</seg>?</p>
+    
+    <p rend="firstIndent">Fuldt og fast troer jeg det Sidste; men blive vi staaende i Nutiden, og stirre hen paa 
+     <rs type="myth" key="myth106">Aserne</rs>, da l&#x00E6;re vi aldrig at ki&#x00E6;nde dem, thi de ere et
+     S&#x00E6;rsyn, Artens eneste, og lade sig ei forklare af nogen anden Gudel&#x00E6;re. Medens vi
+     str&#x00E6;be at tr&#x00E6;kke Gr&#x00E6;ndselinier mellem Individerne, tabe vi os i de meest
+     ski&#x00E6;rende Modsigelser; thi de ere Eet. Medens vi ville gaae ad forski&#x00E6;llige Veie
+     til <rs type="myth" key="myth121">Gimle</rs> og <rs type="myth" key="myth101">Valhal</rs>, <rs type="myth" key="myth1">Alfader
+</rs> og 
+     <rs type="myth" key="myth59">Odin</rs>, forfeile vi begge; thi de ere Punkter i samme
+     Linie.</p>
+    
+    <p rend="firstIndent">Dristige maa vi da vove en Flugt ind blandt de evige Guder selv, der hvor de raadslaae under
+      <rs type="myth" key="myth103">Ydrasils</rs> Grene. F&#x00F8;lge maa 
+     vi <seg type="com" n="com55">
+<rs type="myth" key="myth59.m">
+<seg type="com" n="com54">H&#x00E6;rfader</seg>
+</rs> paa hans tunge Vei
+      til <rs type="myth" key="myth33">Hel</rs>
+</seg>, blegne med ham ved Synet af de guldbeprydede
+     B&#x00E6;nke, der reistes for <seg type="com" n="com56">den Herlige</seg>, s&#x00F8;rge med ham og de
+     andre <rs type="myth" key="myth106">Aser</rs> paa <seg type="com" n="com58">Banetuen</seg>
+     <seg type="com" n="com61">trindt</seg>
+     
+   
+     <pb facs="1807_65_fax016.jpg" type="text" n="161" ed="A" />
+     
+     den <seg type="com" n="com59">faldne <rs type="myth" key="myth6">Balder</rs>
+</seg>. <seg type="com" n="com60">Men
+      da maa vi gribe den l&#x00F8;gnglade <rs type="myth" key="myth48">Loke</rs>, stille
+     ham ved Siden af <seg type="com" n="com62">
+<rs type="myth" key="myth77">Urda</rs>s hellige Kilde</seg>, og der
+      beskue <rs type="myth" key="myth106">Asers</rs> Ophav, Alder, Ende og Gienf&#x00F8;delse</seg>.</p>
+    
+    <p rend="firstIndent">Nu forvandler hele Asal&#x00E6;ren sig til en <seg type="com" n="com64">Kosmogonie</seg>, saa
+     h&#x00F8;i, og saa dyb, som ingen Nation havde den, eller kunde have den; thi kun den
+     st&#x00E6;rke Nordbo, der saa gierne ofrede sit hele Liv til Kamp for en Plads blandt <rs type="myth" key="myth110">Einherier</rs>, kunde avle den K&#x00E6;mpeidee, at ofre hele Tiden til Strid, for
+      at naae Harmonien.</p>
+    
+    <p rend="firstIndent">Asal&#x00E6;ren er en omstyrtet Bygning, og kun enkelte St&#x00F8;tter finde vi, mere eller
+     mindre hele, i Gruset
+     
+    <note type="footnote">
+      <p rend="noIndent">Saadanne ere <seg type="com" n="com614">
+<rs type="title" key="title144">
+<rs type="title" key="title144">Voluspa</rs>
+</rs>
+</seg>, 
+       <seg type="com" n="com606">
+<rs type="title" key="title136">Hamarrheimt</rs>
+</seg>, <seg type="com" n="com601">
+<rs type="title" key="title131">Vegtams Kvida</rs>
+</seg>, <seg type="com" n="com603">
+<rs type="title" key="title133">F&#x00F8;r Skirner</rs>
+</seg>, 
+       og <seg type="com" n="com610">
+<rs type="title" key="title140">Rafnagaldr Odins</rs>
+</seg>.
+      </p>
+     </note>.
+     
+     Vi have Ret til at ordne det Hele efter dem, men
+     l&#x00E6;nge maa vi pr&#x00F8;ve, f&#x00F8;r vi med Sikkerhed kunne bestemme det giensidige
+     Forhold, og anvise Alt sin rigtige Plads.</p>
+    
+    <p rend="firstIndent">F&#x00F8;lgende Fremstilling af Gangen i, og <seg type="com" n="com66">Sandsen</seg> af F&#x00E6;drenes
+    Gudel&#x00E6;re, kan derfor kun v&#x00E6;re et Fors&#x00F8;g.</p>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth1">
+<seg type="com" n="com67">Alfader</seg>
+</rs> (det Evige) var, men 
+    <seg type="com" n="com68">Massen</seg> var ogsaa, og den udviklede sig selv til Liv.</p>
+    
+    <p rend="firstIndent">
+<seg type="com" n="com67">
+<rs type="myth" key="myth1">Alfader</rs>
+</seg> var, eller hvem plantede 
+     <rs type="myth" key="myth103">Ydrasil</rs>, <seg type="com" n="com69">hvalvte</seg> dens rod
+     over <seg type="com" n="com70">Jettens S&#x00F8;nner</seg>, og dens Grene over salige Guder?</p>
+
+   
+    <p rend="firstIndent">
+<pb facs="1807_65_fax017.jpg" type="text" n="162" ed="A" />Hvem er
+    
+    <lg>
+     <l>
+<seg n="com84" type="comStart" />
+<seg type="com" n="com76">Den Rige</seg>, som kommer</l>
+     <l>Til Herred&#x00F8;mmet,</l>
+     <l>
+<seg type="com" n="com77">Den St&#x00E6;rke</seg> foroven,</l>
+     <l>Som Alting styrer,</l>
+     <l>Domstol s&#x00E6;tter,</l>    
+     <l>
+<pb type="edition" n="208" ed="US" />Og Sager d&#x00F8;mmer,</l>
+     <l>Hellig Lov giver,</l>
+     <l>Som skal evig vare,
+      
+     <note type="footnote">
+       <p rend="noIndent">
+<seg type="com" n="com614">
+<rs type="title" key="title144">Voluspa</rs>
+</seg> i Beskrivelsen om
+        Tilstanden efter <rs type="myth" key="myth104">Ragnarokr</rs>.
+       </p>      
+      </note>
+      
+      <seg n="com84" type="comEnd" />
+</l>
+    </lg>
+    
+    eller naar blev han?</p>    
+    
+    <p rend="firstIndent"> <seg n="com86" type="comStart" />Hvem er <seg type="com" n="com78">Alvider</seg>, som, naar de <seg type="com" n="com79">himmelb&#x00E6;rende Dverges Magt</seg> forgaaer, og Verdener neds&#x00E6;nkes med
+     Bulder i den gabende Afgrund, taber Noget, og det Tabte atter samler?<seg n="com86" type="comEnd" />
+     
+    <note type="footnote">
+      <p rend="noIndent">
+<seg type="com" n="com610">
+<rs type="title" key="title140">Rafnagaldr Odins</rs>
+</seg>.
+      </p>
+     </note>
+    </p>
+    
+    <p rend="firstIndent">Hvem er endelig <seg type="com" n="com80">den St&#x00E6;rkere end den St&#x00F8;rste, som <rs key="myth38" type="myth">
+<seg type="com" n="com81">Hyndle</seg>
+</rs> ikke t&#x00F8;r n&#x00E6;vne</seg>, fordi
+     han ei kommer, f&#x00F8;r <rs type="myth" key="myth14">Fenris</rs> har sluget den <seg type="com" n="com83">h&#x00F8;ie As</seg>?
+     
+    <note type="footnote">
+      <p rend="noIndent">Det er mig ubegribeligt, hvorledes <seg type="com" n="com87">Commissionens Udgave</seg> her kan finde talt 
+       om <rs type="myth" key="myth71">Surtur</rs>; thi deels var han ikke m&#x00E6;gtigere
+      end <rs type="myth" key="myth106">Aserne</rs>, hvem han f&#x00F8;rst blev lig i Magt ved Forening med <rs type="myth" key="myth111">Jetter</rs>, 
+       <rs type="myth" key="myth48">Loke</rs> og <seg type="com" n="com92">hans Afkom</seg>, og deels peges her tydelig hen paa en Punkt bag <rs type="myth" key="myth104">Ragnarokr</rs>.</p>
+     </note>
+     
+    </p>
+    
+    <p rend="firstIndent">
+    
+     <pb type="text" facs="1807_65_fax018.jpg" n="163" ed="A" />
+     <seg type="com" n="com94">Massen</seg> var, og udviklede sig selv til Liv; thi da <rs type="myth" key="myth59">Odin</rs> fordum spurgte <rs type="myth" key="myth78">Vaftrudner</rs>:
+    
+    <lg>
+     <l>Hvorfra kom <rs type="myth" key="myth84.a">Aurgelmer</rs>,</l>
+     <l>F&#x00F8;rste blandt <rs type="myth" key="myth111">Jetter</rs>?</l>
+    </lg>
+    
+    fik han til Svar:
+    
+    <lg>
+      <l>
+<seg type="comStart" n="com100" />
+<seg type="com" n="com99">Edderdraaber</seg>
+</l>
+      <l>Af <rs type="myth" key="myth88">Elivaga</rs>
+</l>
+      <l>Udsprang, da voxte</l>
+      <l>Og blev en <rs type="myth" key="myth111">Jette</rs>.</l>
+      <l>Ved Gnisters Varme</l>
+      <l>Fra sydlig Verden</l>
+      <l>Fik Rimfrost Liv.<seg type="comEnd" n="com100" />
+</l>
+    </lg>
+    
+    <p rend="noIndent">
+<rs type="myth" key="myth106">Aserne</rs> var Aftrykket af det Eviges Kraft,
+     frembragte til Kamp imod <seg type="com" n="com105">Massen</seg>; thi naar <seg type="com" n="com106">
+<seg type="com" n="com105">Massen</seg> 
+      havde Liv af sig selv</seg>, var et altopfyldende Liv, som reent Udspring fra
+      det Evige, umulig.</p>
+    
+    <p rend="firstIndent">Hvorfra kom <rs type="myth" key="myth86">&#x00D8;dumla</rs>, hvorfor er Styrke
+     det, som udm&#x00E6;rker <rs type="myth" key="myth10">Bur</rs>, hendes
+     n&#x00E6;rmeste Afkom, og hvorfor ere <seg type="com" n="com110">Aserne strax <rs type="myth" key="myth84">Ymers</rs> Fiender?</seg>
+</p>
+    
+    <p rend="firstIndent">Hvad vil det sige, at <rs type="myth" key="myth84">Ymer</rs>, f&#x00F8;r <rs type="myth" key="myth10">Burrs</rs> F&#x00F8;dsel, n&#x00E6;rede sig af 
+      <rs type="myth" key="myth86">&#x00D8;dumlas</rs> Melk, <seg type="com" n="com114">uden at</seg> han (<seg type="com" n="com115">den levende Masses Symbol</seg>) str&#x00E6;bte at suge
+     Saften fra det evige Liv, og hindre <seg type="com" n="com116">Kraftens</seg> Fremkomst?</p>
+    
+    <p rend="firstIndent">Til at bestyrke dette, findes et m&#x00E6;rkeligt Sted i <seg type="com" n="com117">Runekapitlet</seg>,
+     hvor <rs type="myth" key="myth59">Odin</rs> siger: at <rs type="myth" key="myth59.q">Thundr</rs> (<rs type="myth" key="myth59">Odin</rs>) gaaer i
+     Folks Nat (<rs type="myth" key="myth104">Ragnarokr</rs>) didhen, hvor han
+     f&#x00F8;r kom fra. At <rs type="myth" key="myth106">Aserne</rs> efter
+     <rs type="myth" key="myth104">Ragnarokr</rs> <pb type="edition" n="209" ed="US" /> kom til <rs type="myth" key="myth1">Al<!-- fader</rs> -->
+<pb facs="1807_65_fax019.jpg" type="text" n="164" ed="A" />fader</rs>, er beki&#x00E6;ndt nok, og der kan da ei
+    l&#x00E6;nger v&#x00E6;re Tvivl om, hvor de kom fra.</p>
+    
+     <p rend="firstIndent">Et andet Sted findes i <seg type="com" n="com124">
+<rs type="title" key="title138">
+<rs type="myth" key="myth38">Hyndlas</rs>
+    Sang</rs>
+</seg>, der - som jeg troer - b&#x00F8;r overs&#x00E6;ttes saaledes:</p>
+    
+    <lg>
+     <l>
+<rs type="myth" key="myth10">Burr</rs> blev st&#x00E6;rk</l>
+     <l>Af Jordens Kraft,</l>
+     <l>Af den frostkolde S&#x00F8;,</l>
+     <l>Og <seg type="com" n="com126">Soneblodet</seg>.
+      
+     <note type="footnote">
+      <p rend="noIndent"> <lg>
+        <l>Seg var aukinn <rs type="myth" key="myth10">burr</rs>
+</l>
+        <l>Jar&#x00FE;ar megni</l>
+        <l>Sval-kavllslum s&#x00E6;</l>
+        <l>Ok sonar dreyra.</l>
+       </lg></p>
+       <p rend="firstIndent">I Noterne til <seg type="com" n="com78">Commiss. Udgave</seg> tilstaaes, at disse fire Linier ere i
+        de fleste <seg type="com" n="com132">Haandskrifter</seg> skilte fra det foregaaende Vers, og det synes
+        klarlig at h&#x00E6;nge sammen med det 39te. Der kan maaskee gi&#x00F8;res nogle
+        Indvendinger imod at ansee <rs type="myth" key="myth10">Burr</rs> som et 
+        <seg type="com" n="com133">Navnord</seg>; men at her, ligesom i det 39te Vers, tales om 
+        <rs type="myth" key="myth10">Burr</rs>, eller <rs type="myth" key="myth59">Odin</rs>, hans Arving, vil neppe kunne n&#x00E6;gtes.</p>
+      </note>
+     </l>
+    </lg>
+    
+    <p rend="firstIndent">Dette Sted anf&#x00F8;rte jeg kun her, fordi Nogle have, istedenfor <seg type="com" n="com127">Jar&#x00FE;ar megni</seg>, l&#x00E6;st <seg type="com" n="com128">Ur&#x00FE;ar megni</seg>, og er denne
+     L&#x00E6;semaade rigtig, da siges her udtrykkelig, at <rs type="myth" key="myth10">Bur</rs> blev til efter <seg type="com" n="com130">
+<rs key="myth77" type="myth">Urd</rs>as (den evige
+      Visdoms) Villie</seg>. Stedet h&#x00F8;rer ellers mere til det F&#x00F8;lgende.</p>
+
+     
+    <p rend="firstIndent">
+<pb facs="1807_65_fax020.jpg" type="text" n="165" ed="A" />Saasnart <seg type="com" n="com136">Kraften</seg> var blevet, traadde den i Strid med den levende <seg type="com" n="com68">Masse</seg>, overvandt den, og indkneb dens Liv til et Minimum.</p>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth10">Burrs</rs> S&#x00F8;nner
+     dr&#x00E6;bte <rs type="myth" key="myth84">Ymer</rs>, og i hans Blod druknede alle 
+     <rs type="myth" key="myth111">Jetter</rs>, undtagen <rs type="myth" key="myth7">Bergelmer</rs>. <rs key="myth10" type="myth">Burrs</rs> Afkom blev st&#x00E6;rk ved <seg type="com" n="com142">Soneblodet</seg>, 
+     <rs type="myth" key="myth84">Ymers</rs> Blod; thi vel kunde dette
+     kaldes <seg type="com" n="com144">Forsoningsblodet</seg>, naar vi huske <seg type="com" n="com145">
+        <rs type="myth" key="myth84">Ymers</rs> Forbrydelse</seg>, og nu see, at <seg type="com" n="com146">
+         <rs type="myth" key="myth1">Alfaders</rs> B&#x00F8;rn</seg> ved det befries fra deres
+     Fiender, samt at hans Legeme, alt Liv ber&#x00F8;vet, er <seg type="com" n="com147">Bygv&#x00E6;rk i <rs type="myth" key="myth106">Asernes</rs> Haand</seg>.</p>
+    
+    <p rend="firstIndent">Nu traadde <seg type="com" n="com149">Kraften</seg> i Pagt med <seg type="com" n="com150">Klogskaben</seg>.</p>
+    
+    <p rend="firstIndent">
+<seg type="com" n="com151">
+<rs type="myth" key="myth48">Loke</rs>
+       blev <rs type="myth" key="myth59">Odins</rs> Fostbroder</seg> i Tids
+       F&#x00F8;dsel.</p>
+    
+    <p rend="firstIndent">At <rs type="myth" key="myth48">Loke</rs> maa t&#x00E6;nkes, f&#x00F8;rst som
+      <rs type="myth" key="myth106">Asernes</rs> Ven, og dern&#x00E6;st som deres Fiende, bliver is&#x00E6;r
+     klart ved at sammenligne <seg type="com" n="com606">
+<rs key="title136" type="title">Hamars Heimt</rs>
+</seg>, hvor han paa det bestemteste
+     optr&#x00E6;der som Ven, og <seg type="com" n="com155">
+<rs key="title139" type="title">&#x00C6;gis Drekka</rs>, hvor han selv tilstaaer
+      at have styrtet <rs type="myth" key="myth6">Balder</rs>
+</seg>.
+    <note type="footnote">
+      <p rend="noIndent">
+<seg n="com609" type="com">
+<rs key="title139" type="title">&#x00C6;gir Drekke</rs>
+</seg>.</p>
+     </note>
+</p>
+    
+    <p rend="firstIndent">Da <seg type="com" n="com157">Kraften</seg> var traadt i Pagt med <seg type="com" n="com158">Klogskaben</seg>,
+     str&#x00E6;bte den at vedligeholde sin Tilv&#x00E6;relse som uafh&#x00E6;ngig Individ; men, for
+     at kunne det, maatte den slutte Fred med <seg type="com" n="com159">Massen</seg>, da den ellers ved
+     Stridens Ende maatte vendt tilbage til sit Udspring.</p>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth106">Aserne</rs> faldt fra <rs type="myth" key="myth1">Alfader</rs>,
+     og sluttede Fred med <rs type="myth" key="myth111">Jetterne</rs>, hans Fjender.</p>
+    
+    <!-- Aser -->
+    
+    <lg>
+     <l>
+<pb type="edition" n="210" ed="US" />
+<pb n="166" facs="1807_65_fax021.jpg" type="text" ed="A" />
+<seg n="com171" type="comStart" />
+<rs type="myth" key="myth106">Aser</rs> m&#x00F8;dtes</l>
+     <l>Paa <rs type="myth" key="myth93">Idas Marke</rs>,</l>
+     <l>Hvor de Huus og St&#x00F8;tter</l>
+     <l>H&#x00F8;it byggede,</l>
+     <l>Esser giorde,</l>
+     <l>Guld smeddede,</l>
+     <l>T&#x00E6;nger danned,</l>
+     <l>Og Smedev&#x00E6;rkt&#x00F8;i.</l>
+     <l>Spilled' i Vangen,</l>
+     <l>Vare glade<seg n="com171" type="comEnd" />.
+     <note type="footnote">
+       <p rend="noIndent">
+<seg type="com" n="com172">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+      </note>
+     </l>
+    </lg>
+    
+    <p rend="noIndent">Man skulde rigtig nok ved f&#x00F8;rste &#x00D8;iekast troe, at her taltes om den gyldne Tid;
+     men man beh&#x00F8;ver blot at erindre, at det var paa <rs type="myth" key="myth93">Idas Marke</rs>, <rs type="myth" key="myth106">Aserne</rs> efter <rs type="myth" key="myth104">
+<rs type="myth" key="myth104">Ragnarokr</rs>
+</rs> skulde gienfinde
+
+    <lg>
+     <l>
+<seg n="com174" type="comStart" />De gyldne Tavler,</l>
+     <l>Pr&#x00E6;gtiggiorte,</l>
+     <l>Som i Tids F&#x00F8;dsel <seg type="comStart" n="com168" />Guders</l>
+     <l>Forstander<seg type="comEnd" n="com168" /> eied,<seg n="com174" type="comEnd" />
+     <note type="footnote">
+       <p rend="noIndent">
+<seg n="com172" type="com">Sammesteds</seg>.</p>
+      </note>
+</l>
+    </lg>
+    
+    og at de vel maatte v&#x00E6;re tabte der, hvor de atter findes. Man vil da indsee, at her er
+     Tidspunkten, da de bortkastede hine Tavler, Symbolet paa den <seg type="com" n="com169">evige Visdoms
+      Villie</seg>, og at deres Nydelse kun var den <seg type="com" n="com170">skuffende Gl&#x00E6;de</seg>,
+      <seg type="com" n="com171">frihedsdr&#x00F8;mmen ski&#x00E6;nkede</seg> dem.</p>
+    <!-- Man -->
+
+  
+     
+    
+    <p rend="firstIndent">
+<pb type="text" facs="1807_65_fax022.jpg" n="167" ed="A" />Man vil af dette <seg type="com" n="com173">
+<rs type="myth" key="myth106">Asernes</rs> fald</seg> kunde forklare sig,
+     hvi endeel Nordboer, der dog troede Odins Guddom, alligevel ansaae ham for et ondt
+     V&#x00E6;sen.</p>
+    
+    <p rend="firstIndent">Nu var <rs type="myth" key="myth104">
+     <rs type="myth" key="myth104">Ragnarokr</rs>
+     </rs> n&#x00F8;dvendig, og at det i sin Tid kunde komme, derfor havde <rs type="myth" key="myth1">Alfader</rs> forudvidende s&#x00F8;rget, i det han havde afpr&#x00E6;get sin
+     Visdom, der skulde styre Kraften, selv mod dens Villie, til Maalet.</p>
+     <p rend="firstIndent">Dette den evige Visdoms Aftryk var <rs type="myth" key="myth112">Nornerne</rs>, der fremstege af <rs type="myth" key="myth100">Urdas Kilde</rs>.</p>
+    
+    <p rend="firstIndent">Efter deres Bud komme de tre <seg type="com" n="com178">K&#x00E6;mpem&#x00F8;er</seg> af <seg type="com" n="com179">Jetteverden</seg>, som forstyrrede <rs type="myth" key="myth106">Asernes</rs> Gl&#x00E6;de, og herpaa
+     hentyder Sagnet om <rs type="myth" key="myth27">Gulveig</rs>, ski&#x00F8;ndt jeg
+     gierne tilstaaer, at dette har nogen Dunkelhed for mig.</p>
+    
+    <p rend="firstIndent">Nu synes det, som <rs type="myth" key="myth106">Aserne</rs> have erki&#x00E6;ndt deres Forseelse og
+     v&#x00E6;ret et &#x00D8;ieblik tvivlraadige, f&#x00F8;r de atter begyndte <seg type="com" n="com183">Jettekampen</seg>.</p>
+    
+    
+    <lg>
+     <l>
+<pb type="edition" n="211" ed="US" />Da <seg type="com" n="com184">ginge</seg> Guder</l>
+     <l>Alle til Raadstol,</l>
+     <l>De evig Hellige</l>
+     <l>Derom raadsloge,</l>
+     <l>Om <rs type="myth" key="myth106">Aser</rs> skulde</l>
+     <l>For ondt Raad straffes,</l>
+     <l>Eller <seg type="comStart" n="com186" />alle Guder</l>
+     <l>Gilder holde<seg type="comEnd" n="com186" />.<note type="footnote">
+      <p rend="noIndent">
+<seg type="com" n="com187">
+<rs type="title" key="title144">Voluspa</rs>.</seg>
+</p>
+</note>
+</l>
+     <!-- Dog -->
+    </lg>
+    
+    <p rend="noIndent">
+ 
+     <pb type="text" facs="1807_65_fax023.jpg" n="168" ed="A" />Dog, Kampen baade mod <rs type="myth" key="myth1">Alfader</rs> og <rs type="myth" key="myth111">Jetterne</rs> blev Besluttet, ski&#x00F8;ndt
+    
+    <lg>
+     <l>Mordspaaende <rs type="myth" key="myth118">Vaner</rs>
+</l>
+     <l>Nedtraadte Marken,</l>
+    </lg>
+    
+    og forkyndte <rs type="myth" key="myth104">Ragnarokr</rs>; thi <rs type="myth" key="myth74">Thor</rs>
+</p>
+    
+    <lg>
+     <l>Var iilsindet,</l>
+     <l>Si&#x00E6;lden han tier,</l>
+     <l>Naar han h&#x00F8;rer sligt;</l>
+     <l>Brudte blev Eeder,</l>
+     <l>Ord og L&#x00F8;fter,</l>
+     <l>Al den Forening,</l>
+     <l>
+<!-- denne linie har speciel indrykning -->Som mellem dem var giort.<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com199">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+</note>
+</l>
+    </lg>
+    
+    <p rend="noIndent">Da nu <rs type="myth" key="myth106">Aserne</rs> havde besluttet at fornye Kampen, str&#x00E6;bte de at
+     for&#x00F8;ge deres Magt, og forvisse sig om Seieren i
+      <rs type="myth" key="myth104">Ragnarokr</rs>. Derfor skabtes Mennesker.</p>
+    
+    <lg>
+     <l>De funde paa Landet</l>
+     <l>Lidet m&#x00E6;gtende</l>
+     <l>
+<rs type="myth" key="myth5">Ask</rs> og <rs type="myth" key="myth11">Embla</rs>,</l>
+     <l>Ski&#x00E6;bnel&#x00F8;se,</l>
+     <l>Aand de ei havde,</l>
+     <l>Forstand ei heller,</l>
+     <l>Ski&#x00F8;nhed, Tale,</l>
+     <l>Farve de mangled.<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com200">Sammesteds</seg>.</p>
+</note>
+</l>
+    </lg>
+    
+    <p rend="noIndent">
+<rs type="myth" key="myth111">Jetterne</rs> vare ved <rs type="myth" key="myth106">Asernes</rs> Tilblivelse ligesom
+     over<!-- rump -->
+<pb type="text" facs="1807_65_fax024.jpg" n="169" ed="A" />rumplede ved Skabningsv&#x00E6;rket i det &#x00D8;ieblik, da de vilde <seg type="com" n="com201">multiplicere</seg> deres Magt. Menneskebygningen var f&#x00E6;rdig, men den havde kun et
+     mekanisk Livsskin. Det indvortes bev&#x00E6;gende Princip manglede den, og <app type="corrNote" select="yes">
+<lem wit="GV">altsaa tillige</lem> <rdg wit="A">altsaa.tillige</rdg><witDetail n="0" wit="A">tekstkritik er afhandlet i ACCESS</witDetail></app> Farven, det indre Livs Bebuder, og Talen, dets h&#x00F8;ie
+     Forkynder.</p>
+    
+    <lg>     
+     <l>
+<pb type="edition" n="212" ed="US" />Aand gav <rs type="myth" key="myth59">Odin</rs>,</l>
+     <l>Forstand <rs type="myth" key="myth40">H&#x00E6;ner</rs>,</l>
+     <l>Ski&#x00F8;nhed <rs type="myth" key="myth49">L&#x00F8;dur</rs>,</l>
+     <l>Og yndig Farve.
+      
+     <note type="footnote">
+       <p rend="noIndent">
+<seg type="com" n="com208">Sammesteds</seg>. Det maa
+        n&#x00F8;dvendig bestyrke Enhver at see, hvorledes Menneskene <seg type="com" n="com209">finge</seg> deres Forstand fra den
+        dummeste blandt <rs type="myth" key="myth106">Aser</rs>, og man kunde fristes til at ansee det som en
+        bitter Satire paa Forstandens B&#x00F8;rn; men sikkert er her skeet en Oms&#x00E6;tning, da
+        det burde hedde:</p>
+       <p rend="firstIndent"><lg>
+        <l>Forstand <rs type="myth" key="myth49">L&#x00F8;dur</rs>,</l>
+        <l>Ski&#x00F8;nhed <rs type="myth" key="myth40">H&#x00E6;ner</rs>,</l>
+        <l>Og yndig Farve.</l>
+       </lg></p>
+       <p rend="firstIndent">Det skulde gl&#x00E6;de mig, hvis noget af Haandskrifterne <seg type="com" n="com213">stadf&#x00E6;stede denne Rettelse</seg>; men, hvis ikke, t&#x00F8;r jeg dog troe den
+        bef&#x00F8;iet, da <rs type="myth" key="myth40">H&#x00E6;ner</rs> netop var
+        Ski&#x00F8;nheds Symbolet, ligesom <seg type="com" n="com214">
+<rs type="myth" key="myth49">L&#x00F8;dur</rs> (<rs type="myth" key="myth48">Loke</rs>)</seg> Klogskabens
+        og Forstandens. Da <rs type="myth" key="myth48">Loke</rs> skilte sig fra <rs type="myth" key="myth59">Odin</rs>, traadde <seg type="com" n="com216">Klogskaben</seg> i
+        Strid mod <seg type="com" n="com217">Aanden</seg>, og end f&#x00F8;res denne s&#x00F8;rgelige Strid i
+        os.</p>
+      </note>
+      
+     </l>
+     
+    </lg>
+
+    <p rend="firstIndent">Nu vare Menneskene satte i <rs type="myth" key="myth106">Asernes</rs> tieneste, indviede til <rs type="myth" key="myth101">Valhal</rs> og Kampen paa <rs type="myth" key="myth102">Vigrids Marke</rs>; 
+   
+     <pb type="text" facs="1807_65_fax025.jpg" n="170" ed="A" />
+    men da Legemet var dannet af <rs type="myth" key="myth111">Jetter</rs>, kunde Mennesket ei heller ganske
+     rives l&#x00F8;s fra disses Herred&#x00F8;mme, og naar <rs type="myth" key="myth59">Odins</rs> Aande i D&#x00F8;den bortveg fra Legemet, maatte dette v&#x00E6;re i <seg type="com" n="com220">
+<rs type="myth" key="myth111">Jettens</rs> Magt</seg>.</p>
+    
+    <p rend="firstIndent">Af d&#x00F8;de M&#x00E6;nds Negle var det, at <rs type="myth" key="myth54">Naglfari</rs> skulde
+    bygges.</p>
+    
+    <p rend="firstIndent">Nu kunne vi begribe, hvorfor <seg type="com" n="com222">Jorden kaldes Odins Kone</seg>, hvorfor <rs type="myth" key="myth111">Jetterne</rs> vare Menneskenes svorne Fiender, og hvi de Nordboer, der ellers
+     foragtede <rs type="myth" key="myth106">Aserne</rs>, dog dyrkede <rs type="myth" key="myth74">Thor</rs>, thi ham var det, der forsvarede sin <seg type="com" n="com225">Moder, Jorden,</seg> mod Jetters <seg type="com" n="com229">Anfald</seg>, som
+     han selv siger i <seg type="com" n="com616">
+<rs type="title" key="title146">Harbards Liod</rs>
+</seg>:</p>
+     
+    <lg>
+     <l>
+<seg type="comStart" n="com227" />Stor var <seg type="com" n="com228">Jetters &#x00C6;t</seg> nu,</l>
+     <l>Om alle leved',</l>
+     <l>Neppe var Folk til</l>
+     <l>Da under <rs type="myth" key="myth94">Midgard</rs>.<seg type="comEnd" n="com227" />
+</l>
+    </lg>
+      
+    <p rend="firstIndent">Kampen begyndte mellem <seg type="com" n="com230">Kraften</seg> og <seg type="com" n="com68">Massen</seg>; men hin
+     var ved <seg type="com" n="com232">Godheden</seg> l&#x00E6;nket til sit Udspring, og kunde derfor ikke
+     tabe noget, saal&#x00E6;nge denne Ki&#x00E6;de ei s&#x00F8;nderbr&#x00F8;des.</p>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth111">Jetterne</rs> str&#x00E6;bte at ber&#x00F8;ve <rs type="myth" key="myth106">Aserne</rs>
+     deres evige Ungdom (<seg type="com" n="com233">
+<rs type="myth" key="myth41">Idunnas</rs> &#x00C6;bler</seg>), og
+     Udtrykket for deres Kraft (<rs type="myth" key="myth52">Mi&#x00F8;lner</rs>), men
+     Alt var forgi&#x00E6;ves; thi <rs type="myth" key="myth106">Asernes</rs> Magt kunde ikke forringes,
+     saal&#x00E6;nge <rs type="myth" key="myth6">Balder</rs> var hos dem, og herpaa
+     hentyde de <seg type="com" n="com26">d&#x00F8;dv&#x00E6;kkende Runer</seg>, som till&#x00E6;gges ham.
+     <rs type="myth" key="myth111">Jettekongen</rs> <rs type="myth" key="myth75">Thrymer</rs> dr&#x00E6;bes, og <rs type="myth" key="myth111">Jetterne</rs> henfalde i Afmagt.</p> 
+  
+      
+    <p rend="firstIndent">
+<pb type="text" facs="1807_65_fax026.jpg" n="171" ed="A" />Nu synes <rs type="myth" key="myth106">Asernes</rs> uretm&#x00E6;ssige Seier
+      n&#x00E6;r, men da skille de vise <rs type="myth" key="myth112">Norner</rs>
+     <rs type="myth" key="myth48">Loke</rs> fra dem, <seg type="com" n="com245">Klogskaben</seg>
+     fra <seg type="com" n="com246">Kraften</seg>, og lade den ved Forening med Ondskaben blive til List.</p>
+    
+    
+    <p rend="firstIndent">
+<pb type="edition" n="213" ed="US" />At <rs type="myth" key="myth48">Lokes</rs> Frafald fra <rs type="myth" key="myth106">Aserne</rs> var <rs type="myth" key="myth112">Nornernes</rs> V&#x00E6;rk, synes den ski&#x00E6;bnekyndige
+     <rs type="myth" key="myth22">Gefion</rs> selv at pege hen til i <seg type="com" n="com250">
+<rs key="title139" type="title">&#x00C6;gis Drekke</rs>
+</seg>
+<note type="footnote">
+<p rend="noIndent">Dersom Overs&#x00E6;ttelsen i <seg type="com" n="com253">Comm. Udg.</seg> er rigtig, da kan herom neppe v&#x00E6;re Tvivl, thi saa lyder
+        den:
+
+       <lg>
+       <l>
+<rs type="myth" key="myth48">Loke</rs> ei veed det,</l>
+       <l>At selv han bedrages,</l>
+       <l>At Ski&#x00E6;bnen ham tvinger</l>
+       </lg>
+       
+      til at v&#x00E6;re <rs type="myth" key="myth106">Asers</rs> Fiende. <seg type="com" n="com255">
+<persName key="pe1">Sandvig</persName>s Overs&#x00E6;ttelse</seg> er herfra meget afvigende, og
+       jeg skulde vel bet&#x00E6;nke mig paa at kalde den urigtig, dersom jeg ikke vidste, at enhver
+       Overs&#x00E6;ttelse af Linien:
+       
+      <lg>
+       <l>
+<seg type="com" n="com256">Ok hann fj&#x00F8;rgvali fria</seg>,</l>
+      </lg>
+     maa v&#x00E6;re <seg type="com" n="com257">Konjektur</seg>. Mig synes ellers, her giordes mindst Vold
+       paa Ordenes primitive Bem&#x00E6;rkelse, saavidt samme ki&#x00E6;ndes, hvis man
+       oversatte: <lg>
+        <l>Og han beiler til sit Livs Aften.</l>
+       </lg></p>
+       
+      <p rend="firstIndent">Dette lod sig meget godt forklare ved at sige: <rs type="myth" key="myth22">Gefion</rs>, som vidste Alles Ski&#x00E6;bne, vidste ogsaa, at <seg type="com" n="com259">
+<rs type="myth" key="myth48">Lokes</rs> Frafald</seg> fra <rs type="myth" key="myth106">Aserne</rs> medf&#x00F8;rte
+        <rs type="myth" key="myth104">Ragnarokr</rs>, hvori <rs type="myth" key="myth48">Loke</rs> selv skulde gaae under.
+       L&#x00E6;ste man <seg type="com" n="com256">fiorvali</seg>, blev der slet intet Tvungent i
+       Overs&#x00E6;ttelsen.</p>
+</note>, og at hans Frafald betegnes ved Foreningen med <rs type="myth" key="myth4">
+<seg type="com" n="com251">Angrboda</seg>
+</rs>, syntes mig klart, f&#x00F8;r jeg endnu blev det udtrykkelige Vidnesbyrd
+       herom</p>
+    
+    vaer i <seg type="com" n="com608">
+<rs type="title" key="title138">
+<rs type="myth" key="myth38">Hyndlas</rs> Sang</rs>
+</seg>:</p>
+     
+    <lg>
+     <l>
+<pb type="text" facs="1807_65_fax027.jpg" n="172" ed="A" />
+<seg type="comStart" n="com265" />
+<rs type="myth" key="myth48">Loke</rs> blev svigfuld</l>
+     <l>Ved den onde Kone.<seg type="comEnd" n="com265" />
+</l>
+    </lg>
+    <p rend="firstIndent">Nu staaer <rs type="myth" key="myth48">Loke</rs> i Spidsen for <seg type="com" n="com267">
+<rs type="myth" key="myth106">Asernes</rs> Fiender</seg>; men han veed, at ingen Skade kan dem tilf&#x00F8;ies,
+     f&#x00F8;r <rs type="myth" key="myth6">Balder</rs> er borte, og snart opdager han,
+     at <rs type="myth" key="myth112">Nornerne</rs> selv have forberedet hans Fald, ved at plante <rs type="myth" key="myth51">Mistiltejn</rs>, som ei vilde afl&#x00E6;gge Eden, ikke at skade <rs type="myth" key="myth6">Balder</rs>.</p>
+    
+    <p rend="firstIndent">At <rs type="myth" key="myth106">Aserne</rs> ved <seg type="com" n="com272">
+<rs type="myth" key="myth6">Balders</rs>
+      D&#x00F8;d</seg> troede at tabe al Lykke, og hvad de giorde, for at afv&#x00E6;rge Ulykken,
+     ski&#x00F8;nnes af <seg type="com" n="com601">
+<rs key="title131" type="title">Vegtams Kvida</rs>
+</seg>.</p>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth6">Balder</rs> nedstyrtes til <rs type="myth" key="myth33">Hel</rs>, og <rs type="myth" key="myth106">Aserne</rs> ere utr&#x00F8;stelige. Deres
+     Angest og Raadvildhed skues i <rs key="title140" type="title">Hrafnagaldr Odins</rs>.
+    <note type="footnote">
+      <p rend="noIndent">At dette Digt hverken indeholder Tegnene for <seg type="com" n="com278">
+<rs type="myth" key="myth6">Balders</rs> D&#x00F8;d</seg>, eller nogen anden Ulykke, uden <rs type="myth" key="myth104">
+        Ragnarokr</rs>, synes mig klart, og det lader sig vel bevise af Digtet selv, at det handler om <rs type="myth" key="myth106">Asernes</rs> Tilstand umiddelbar efter <rs type="myth" key="myth6">Balders</rs>
+        D&#x00F8;d; thi at Ordene:
+      
+      <lg>
+       <l>
+<seg type="com" n="com281">Seirguder</seg> skuede</l>
+       <l>
+<rs type="myth" key="myth56">Nanna</rs> s&#x00F8;rge</l>
+       <l>I <seg type="com" n="com283">Helas Vaaning</seg>,</l>
+      </lg>
+      
+      maa forstaaes om <rs type="myth" key="myth56">Nanna</rs>, da hun foer til <rs type="myth" key="myth33">Hel</rs> med sin elskede <rs type="myth" key="myth6">Balder</rs>, synes upaatvivleligt.</p>
+     </note>
+</p>
+    
+    <lg>
+     <l>
+<seg type="comStart" n="com277" />Da slumre Evner,</l>
+     <l>H&#x00E6;nder Synke,</l>
+     <!-- Af -->
+     <l>
+<pb type="text" facs="1807_65_fax028.jpg" n="173" ed="A" />Af Mathed falder</l>
+     <l>Fra <seg type="com" n="com287">hvid As</seg> Sv&#x00E6;rdet.</l>
+    
+     <l>
+<pb type="edition" n="214" ed="US" />Kraftig Troldoms</l>
+     <l>
+<seg n="com290" type="com">Sindl&#x00F8;shed</seg> al</l>
+     <l>Kraft forjager</l>
+     <l>Af opr&#x00F8;rt Mod.</l>
+     <l>Da syntes <rs type="myth" key="myth59.n">
+<seg type="com" n="com288">Jolmer</seg>
+</rs>
+</l>
+     <l>Slangen v&#x00E6;re kommet,</l>
+     <l>Tyk af Skr&#x00E6;kke.<seg type="comEnd" n="com277" />
+</l>
+    </lg>
+    
+    <p rend="firstIndent">
+<rs type="myth" key="myth106">Aserne</rs> troe at see <rs type="myth" key="myth104">
+    Ragnarokr</rs> komme, og deres eneste Haab er at faae <rs type="myth" key="myth6">Balder</rs> tilbage; men de 
+     skuffes.</p>
+     <p rend="firstIndent">Nu str&#x00E6;ber <seg type="com" n="com292">Listen at
+      s&#x00F8;ndre Kraften selv</seg>. <rs type="myth" key="myth14">Fenris</rs> har alt
+     oplukket sit Gab, da det lykkes <rs type="myth" key="myth106">Aserne</rs> at binde ham; men allerede her
+     miste de en Deel af deres Kraft; <rs type="myth" key="myth73">Thyr</rs> mister sin
+     Arm. Nu mister <rs type="myth" key="myth18">Frey</rs> sit Sv&#x00E6;rd, og snart
+      vilde <seg n="com606" type="com">
+<rs type="myth" key="myth74">Thor</rs> mistet Hammeren</seg>, dersom <rs type="myth" key="myth48">Loke</rs> ei var blevet 
+     standset i sin Udaad. <rs type="myth" key="myth112">Nornerne</rs> vilde, det skulde skee; thi <rs type="myth" key="myth106">Asernes</rs> 
+     Magt maatte vel sv&#x00E6;kkes, men ikke synke under <rs type="myth" key="myth111">Jetternes</rs>.</p>
+    
+    <p rend="firstIndent">Men, hvorledes kunde den blotte <seg type="com" n="com299">Kraft</seg> seire over <seg type="com" n="com300">Listen</seg>? 
+     Hvorledes kunde <rs type="myth" key="myth106">Aserne</rs> gribe <rs type="myth" key="myth48">Loke</rs>,
+     der sv&#x00E6;vede let hen over Jorden og Vandene? En tidligere udstr&#x00F8;mmet Forstand
+     maatte komme Kraften til Hielp, og det var <rs type="myth" key="myth43">
+     Kvaser</rs>, som i Asken fandt Spor af Garnet, hvormed <rs type="myth" key="myth106">Aserne</rs>
+     fangede <rs type="myth" key="myth48">Loke</rs>.</p>
+    
+    <p rend="firstIndent">Nu er <rs type="myth" key="myth48">Loke</rs> bundet, og <rs type="myth" key="myth106">Aserne</rs>
+     synes at triumphere, da <rs type="myth" key="myth111">Jetter</rs> segne for <rs type="myth" key="myth52">Mj&#x00F8;lners</rs> Slag, da <rs type="myth" key="myth59">Odin</rs>
+<!-- er -->
+  
+     <pb type="text" facs="1807_65_fax029.jpg" n="174" ed="A" /> er blevet viis af <rs type="myth" key="myth96">Mimers Vande</rs>, og har ved
+     Nydelsen af <seg type="com" n="com310">Suttungs Mi&#x00F8;d</seg> faaet Kraft til at opsvinge sig til det
+     Evige, og sammenblande sig med <rs type="myth" key="myth1">Alfader</rs>.</p>
+    
+    <p rend="firstIndent">Dog, de vise <rs type="myth" key="myth112">Norner</rs> vente blot efter, at <seg type="com" n="com312">Lokes
+    B&#x00F8;rn</seg> skulle blive voxne.</p>
+    
+    <p rend="firstIndent">
+<seg type="com" n="com313">Visdommen</seg> vil, at der f&#x00F8;rst skal opstaae den fuldkomneste
+     Ligev&#x00E6;gt mellem <seg type="com" n="com314">Kraften</seg> og <seg type="com" n="com315">Massen</seg>, paa det
+     ingen af dem skal seire, men begge giensidig &#x00F8;del&#x00E6;gge hinanden.</p>
+    
+    <p rend="firstIndent">Saasnart det &#x00D8;ieblik kommer, da lyder <rs type="myth" key="myth112">Nornernes</rs> R&#x00F8;st:</p>
+    
+   <lg>
+    <l>
+<seg type="comStart" n="com340" />Hos <rs type="myth" key="myth106">Aser</rs> galer</l>
+    <l>
+<seg type="com" n="com319">Den guldkammed</seg>,</l>
+    <l>Som v&#x00E6;kker Helte</l>
+    <l>Hos <rs type="myth" key="myth59.m">
+<seg type="com" n="com320">H&#x00E6;rfader</seg>
+</rs>.</l>
+    <l>En anden Hane,</l>
+    <l>
+<rs type="myth" key="myth69">Sodr&#x00F8;d</rs>, galer</l>
+    <l>Nedenfor Jorden</l>
+    <l>I <seg type="com" n="com322">
+<rs type="myth" key="myth33">Helas</rs> Sale</seg>.</l>
+   </lg>
+    
+     <lg>
+      <l>
+<pb type="edition" n="215" ed="US" />
+<rs type="myth" key="myth21">Garm</rs> g&#x00F8;er h&#x00F8;it</l>
+      <l>For <rs type="myth" key="myth90">Gnyppa Hule</rs>,</l>
+      <l>L&#x00E6;nkerne briste,</l>
+      <l>Vindtid, Ulvtid</l>
+      <l>F&#x00F8;r Verden falder.</l>
+     </lg>
+    
+     <lg>
+      <l>
+<rs type="myth" key="myth59">Odin</rs> taler</l>
+      <l>Med <seg type="com" n="com326">
+<rs type="myth" key="myth50">Mimers</rs> Hoved</seg>,</l>
+     <l>
+<pb type="text" facs="1807_65_fax030.jpg" n="175" ed="A" />
+<seg type="com" n="com327">Det gamle Tr&#x00E6;</seg> sukker,</l>
+     <l>Og <seg type="com" n="com328">Jetten l&#x00F8;ses</seg>,</l>
+     <l>
+<rs type="myth" key="myth103">Ydrasils</rs> Ask</l>
+     <l>Staaer da ski&#x00E6;lvende.</l>
+     <l>
+<rs type="myth" key="myth105.b">Jormungardr</rs> v&#x00E6;ltes</l>
+     <l>Med <seg type="com" n="com331">Jettestyrke</seg>,</l>
+     <l>
+<rs type="myth" key="myth105">Ormen</rs> trykker Havet,</l>
+     <l>Og <rs type="myth" key="myth54">Naglfari</rs> l&#x00F8;snes.</l>
+     <l>
+<seg type="comStart" n="com333" />K&#x00F8;l kommer &#x00F8;st fra,</l>
+     <l>Derpaa seile <rs type="myth" key="myth53">Muspels</rs>
+</l>
+     <l>Folk over Havet,</l>
+     <l>Men <rs type="myth" key="myth48">Loke</rs> styrer.<seg type="comEnd" n="com333" />
+</l>
+    </lg>
+    
+   <lg>
+      <l>Imedens h&#x00F8;res</l>
+      <l>
+<rs type="myth" key="myth26">Giallarhorns</rs> Lyd,</l>
+    <l>H&#x00F8;it bl&#x00E6;ser <rs type="myth" key="myth32">Hejmdal</rs>
+</l>
+      <l>I l&#x00F8;ftede Horn.<seg type="comEnd" n="com340" />
+<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com614">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+</note>
+</l>
+   </lg>
+    
+     <p rend="firstIndent">Nu v&#x00E6;kkes <rs type="myth" key="myth106">Aser</rs> og <rs type="myth" key="myth110">Einherier</rs> til Strid.
+     Kampen begynder, og endes med en almindelig Undergang.</p> 
+    
+    <lg>
+     <l>Solen sortner,</l>
+     <l>Jord synker i Hav,</l>
+     <l>Af Himlen falde</l>
+     <l>Klare Stierner,</l>
+     <l>Hede Dampe</l>
+     <l>Alt fort&#x00E6;rende</l>
+     <!-- Spille -->
+     <l>
+<pb type="text" facs="1807_65_fax031.jpg" n="176" ed="A" />Spille med Ilden</l>
+     <l>Ved h&#x00F8;ien Himmel.<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com348">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+</note>
+</l>
+    </lg>
+    
+     <p rend="firstIndent">Nu er alt selvtaget Liv forsvundet, og Alt kan opfyldes af det evige Liv.</p>
+    
+    
+   
+    <lg> 
+     <l>
+<pb type="edition" n="216" ed="US" />Og da kommer</l>
+     <l>Atter fornyet</l>
+     <l>Jord af Havet,</l>
+     <l>Eviggr&#x00F8;n,</l>
+     <l>
+<seg type="com" n="com341">Usaaede Agre</seg>
+</l>
+     <l>Skulle da b&#x00E6;re.</l>
+    </lg>
+    
+    <lg>
+     <l>Alt Ondt er borte,</l>
+     <l>Thi hist kommer sorte</l>
+     <l>
+<seg type="com" n="com342">Flyvende Drage</seg>
+</l>
+     <l>&#x00D8;sten fra Fieldets</l>
+     <l>
+<rs type="myth" key="myth97">Nidas</rs> R&#x00F8;dder.</l>
+     <l>
+<seg type="com" n="com344">Nidh&#x00F8;ge</seg> b&#x00E6;re</l>
+     <l>
+<rs type="myth" key="myth111">Jetternes</rs> Lig</l>
+     <l>Hen over Marken,</l>
+     <l>Og flux forsvinde.</l>
+    </lg>
+    
+    <lg>
+     <l>Da kommer <seg type="com" n="com346">den Rige</seg>
+</l>
+     <l>Til Herred&#x00F8;mmet,</l>
+     <l>
+<seg type="com" n="com346">Den st&#x00E6;rke</seg> foroven,</l>
+     <l>Som Alting styrer,</l>
+     <l>Domstol s&#x00E6;tter,</l>
+     <!-- Og -->
+    </lg>
+
+    <lg>
+     <l>
+<pb type="text" facs="1807_65_fax032.jpg" n="177" ed="A" />Og Sager d&#x00F8;mmer</l>
+     <l>Ved hellige Love,</l>
+     <l>Som skal evig vare.</l>
+    </lg>
+    
+    <lg>
+     <l>Hist stander <seg type="com" n="com349">Salen</seg>,</l>
+     <l>Herlig som Solen</l>
+     <l>Paa <rs type="myth" key="myth121">Gimle</rs>,</l>
+     <l>Der skulle gode</l>
+     <l>Herrer evindelig</l>
+     <l>Bygge og nyde</l>
+     <l>Godhedens Alt.<note type="footnote">
+<p rend="noIndent">
+<seg type="com" n="com358">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+</note>
+</l>
+    </lg>
+    
+    <p rend="firstIndent">Dog, <seg type="com" n="com351">Kraften</seg> maa vende tilbage til sit Udspring. Ogsaa dette skeer, thi
+      <rs type="myth" key="myth104">Ragnarokr</rs> er <seg type="com" n="com353">Asernes Tusm&#x00F8;rke</seg>, Aftenen paa deres selvskabte Dag; men
+     tillige den sande Dags Morgend&#x00E6;mring. <rs type="myth" key="myth6">Balder</rs> er opstegen fra <rs type="myth" key="myth33">Hel</rs>,
+     og <rs type="myth" key="myth106">Aserne</rs> rensede fra deres Str&#x00E6;ben efter Individualitet. <seg type="com" n="com354">De
+     herske ei mere; men de ere stedse Kraftens Udtryk, det Eviges st&#x00E6;rke
+     Arm</seg>.</p>
+    
+        
+    <lg>
+     <l>
+<pb type="edition" n="217" ed="US" />
+<rs type="myth" key="myth106">Aser</rs> samles</l>
+     <l>Paa <rs type="myth" key="myth93">Idas Slette</rs>.</l>
+     <l>Sig erindrende</l>
+     <l>Fordums V&#x00E6;lde,</l>
+     <l>De om <seg type="com" n="com346">den st&#x00E6;rke</seg>
+</l>
+     <!-- Jord -->
+    </lg>
+
+ 
+    
+    
+    <lg>
+     <l> <pb type="text" facs="1807_65_fax033.jpg" n="178" ed="A" />
+<seg type="com" n="com359">
+<rs type="myth" key="myth105.a">Jordtorn</rs>
+</seg>
+     <note type="footnote">
+       <p rend="noIndent">Hvad der menes med denne <rs type="myth" key="myth105.a">Jordtorn</rs>, er vel ikke let at sige, ski&#x00F8;ndt
+        det maaskee netop er <!-- her skal indf&#x00F8;jes en tekstrettelse, VAP 20. dec. 2010 -->
+<rs type="myth" key="myth104">
+        Ragnarokr</rs>, der med Rette kunde kaldes en st&#x00E6;rk <rs type="myth" key="myth105.a">Jordtorn</rs>.</p>
+      </note> tale,</l>
+     <l>Og om <seg type="com" n="com360">
+<rs type="myth" key="myth59.e">Fimbultyr</rs>
+</seg>s</l>
+     <l>Gamle Runer.</l>
+     <l>Derefter blive</l>
+     <l>Pr&#x00E6;gtiggiorte</l>
+     <l>
+<seg type="com" n="com361">Gyldne Tavler</seg>
+</l>
+     <l>I Gr&#x00E6;sset fundne,</l>
+     <l>Som f&#x00F8;r Tidens</l>
+     <l>F&#x00F8;dsel eied</l>
+     <l>
+<seg type="com" n="com362">Guders Forstander</seg>
+</l>
+     <l>Og <seg type="com" n="com363">Fi&#x00F8;lners B&#x00F8;rn</seg>.
+     <note type="footnote">
+       <p rend="noIndent">
+<seg type="com" n="com374">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+      </note>
+</l>
+    </lg>
+    
+    <p rend="firstIndent">Ville vi nu gaae forbi <rs type="myth" key="myth110">Einherierne</rs>, der tillige med <rs type="myth" key="myth106">Aserne</rs> 
+     rensedes i <seg type="com" n="com366">Ulvstriden</seg>, kaste et s&#x00F8;rgende Blik paa
+     Salen, bygt af Ormerygge, hvor de pines, som, forledte af <seg type="com" n="com367">Klogskaben, Lokes
+      Gave</seg>, skyede <seg type="com" n="com368">Odins haarde Lege</seg>, br&#x00F8;de deres Eeder, eller
+     smittede <seg type="com" n="com369">fremmed Vivs &#x00D8;re</seg>, og derpaa sp&#x00F8;rge med <seg type="com" n="com370">Gagnrad</seg>:
+    
+    <lg>
+     <l> <seg type="comStart" n="com371" />Hvilke Folk leve,</l>
+     <l>Naar hengaaet er den store</l>
+     <l>Vinter blandt Mennesker?<seg type="comEnd" n="com371" />
+</l>
+    </lg> 
+    
+    da faae vi til Svar af <rs type="myth" key="myth78">Vaftrudner</rs>:</p>
+    <!-- Lif -->
+
+  
+       
+     
+    <lg>
+     <l>
+<pb type="text" facs="1807_65_fax034.jpg" n="179" ed="A" />
+<seg type="comStart" n="com372" />
+<rs type="myth" key="myth45">Lif</rs> og <rs type="myth" key="myth46">Lifthrasir</rs>
+</l>
+     <l>De sig skiule skulle</l>
+     <l>I <rs type="myth" key="myth92">Hoddmimers H&#x00F8;ie</rs>,
+     <note type="footnote">
+       <p rend="noIndent">De bevaredes af <seg type="com" n="com385">Viisdommen</seg>.</p>
+      </note>
+</l>
+     <l>Morgenduggen</l>
+     <l>Da til Mad sig have,</l>
+     <l>Af dem skulle Folk avles.<seg type="comEnd" n="com372" />
+</l>
+    </lg>
+    
+    
+    <p rend="noIndent">Hvor betydningsfuldt er ikke dette? Paa det alt Spor af <rs type="myth" key="myth111">Jetters</rs> Virken
+     kunde udd&#x00F8;e, skal Menneskets Livskraft af den <pb type="edition" n="218" ed="US" /> rene Morgendug faae et nyt Legeme, passende til den fornyede, rene Jord.</p>
+    
+    <p rend="firstIndent">Vil man endnu sige: <seg type="com" n="com380">Asal&#x00E6;ren</seg> mangler Betydning? Skal den unge
+     Sl&#x00E6;gt i Nord endnu bestandig indbildes, at vore F&#x00E6;dres Religion, der kun veeg, og
+     kun viger for <persName key="pe45">Kristi</persName> den rene, var Overtro? Ski&#x00F8;ndt <seg type="com" n="com382">
+<seg type="com" n="com620">
+<rs key="title121" type="title">Edda</rs>
+</seg>
+</seg> stedse vandrede ved min Side, kan min Anskuelse af Asal&#x00E6;ren dog gierne i mange enkelte Dele v&#x00E6;re falsk, men neppe kan Nogen
+     rokke den Grundsandhed, at vore F&#x00E6;dre havde den reneste Idee om en fuldkommen Harmonie,
+     og at Tiden kun var den Formel, under hvilken det store Alt str&#x00E6;bte imod den.</p>
+    
+    <p rend="firstIndent">Gierne r&#x00E6;kker Nordboen Prisen til <seg type="com" n="com384">Gr&#x00E6;keren</seg>, naar denne
+    sp&#x00F8;rger om Figurernes Bestemthed, og det udvortes Smykke; men er Talen om indvortes
+    
+    <!-- Kraft -->
+
+ 
+     <pb type="text" facs="1807_65_fax035.jpg" n="180" ed="A" />
+    
+    Kraft og h&#x00F8;ieste Betydning, da peger han rolig paa <rs type="myth" key="myth121">Gimle</rs>, og <seg type="com" n="com384">Gr&#x00E6;keren</seg> maa tie.</p>
+    <p rend="firstIndent">Er det saa, at et Folk maler sig i sine Guder, da beh&#x00F8;ve vi i Sandhed ei at
+     r&#x00F8;dme over vore F&#x00E6;dre, med mindre det skulde v&#x00E6;re over deres
+     Betydningsfulde Kamplyst; thi deres Gudel&#x00E6;re er den h&#x00F8;ieste Poesie; eller kan der
+     t&#x00E6;nkes noget h&#x00F8;iere, end Udtalelsen af <rs type="myth" key="myth1">Alfaders</rs> egen Anskuelse af Tidslivet? Uden videre at forf&#x00F8;lge denne Idee,
+     vil jeg blot bem&#x00E6;rke det karakteristiske Tr&#x00E6;k, at ligesom Nordboen
+     udm&#x00E6;rker sig ved sin dybe Agtelse for Qvinden, saa synes denne Agtelse paa en i
+     &#x00D8;ine faldende Maade at have afpr&#x00E6;get sig i hans Fabell&#x00E6;re. Jeg mener den
+     Besynderlighed, at <seg type="com" n="com389">Maanen h&#x00F8;rer til Han- og Solen til Hun-ki&#x00F8;nnet</seg>, ret som han vilde sige, at det var Qvinden, der, som et h&#x00F8;iere
+      V&#x00E6;sen, beskinnede Manden med sine Straaler, og gav ham sin Glands.
+     <fw type="longLine" />    
+    </p>
+    
+    
+    <p rend="firstIndent">Ingen sige mig nu: dersom du troer at vide det, hvorefter vil du da lede? Troede jeg ikke at
+    vide det, hvorefter vilde jeg da lede?</p>
+    
+    <p rend="firstIndent">Have de ikke leedt, <seg type="com" n="com390">Skandinaviens Herlige</seg>, uden at finde noget Heelt,
+     fordi de vilde, at Brudstykkerne skulde sammens&#x00E6;tte sig selv, ski&#x00F8;ndt Tidens
+     Storme omkastede Bygningen, og blandede hine i en betydningsl&#x00F8;s Dynge? Vilde de ikke
+     have fundet, der<!-- som -->
+<pb type="text" facs="1807_65_fax036.jpg" n="181" ed="A" />som de havde vovet at omfatte Dyngen med alle dens, som det syntes,
+     ueensartede Stoffe, og bevaret det Heles Indtryk?</p>
+    
+    <p rend="firstIndent">Det Lidet, jeg vidste, har jeg nu n&#x00E6;sten sagt, men hvorledes kunde jeg opregne alt
+     det, jeg ikke veed?</p>
+    
+       
+    <p rend="firstIndent">
+<pb type="edition" n="219" ed="US" />Dersom <seg type="com" n="com370">
+<rs type="myth" key="myth59.h">Gagnrad</rs>
+</seg> spurgte mig:
+    
+    <lg>
+     <l>
+<seg type="comStart" n="com392" />Hvorfra <rs type="myth" key="myth58">Niord</rs> kom</l>
+     <l>Blandt <seg n="com393" type="com"> <rs type="myth" key="myth106">Asers</rs> S&#x00F8;nner</seg>,</l>
+     <l>Og styrer de fleste</l>
+     <l>Templer og Altre,</l>
+     <l>Ski&#x00F8;ndt ei f&#x00F8;dt af <rs type="myth" key="myth106">Aser</rs>?</l>
+    </lg>
+    
+    hvor meget kunde jeg da l&#x00E6;gge til <seg type="com" n="com395">Vaftrudners Svar</seg>:</p>
+    
+    <lg>
+     <l>I <rs type="myth" key="myth118">Vaners</rs> Verden</l>
+     <l>Skabte ham vise Guder,</l>
+     <l>Og gav ham som Gidsel til Guder.</l>
+     <l>I Tidens Ende</l>
+     <l>Han atter kommer</l>
+     <l>Hjem til viise <rs type="myth" key="myth118">Vaner</rs>.<seg type="comEnd" n="com392" />
+</l>
+    </lg>
+    
+     <p rend="noIndent">Jeg kunde vel jevnf&#x00F8;re det med Odins Udsagn i <seg type="com" n="com604">
+<rs key="title134" type="title">Grimnis Mal</rs>
+</seg>:
+     
+    <lg>
+     <l> <seg type="comStart" n="com398" />Han, den <seg type="comStart" n="com399" />meenl&#x00F8;se</l>
+     <l>Menneskens Konge<seg type="comEnd" n="com399" />,</l>
+     <l>Styrer h&#x00F8;itbyggede Templer, <seg type="comEnd" n="com398" />
+</l>
+    </lg>
+     
+    og deraf, som af mere, drage den Slutning, at<seg type="com" n="com400"> Niord og hans Afkom</seg> ere
+     at ansee som en senere Digtning (om jeg saa maa sige) af <rs type="myth" key="myth106">Aserne</rs> selv,
+     hvorved de vilde knytte et fastere Baand mellem sig og Menne<!-- skene -->
+<pb type="text" facs="1807_65_fax037.jpg" n="182" ed="A" />skene, og skaffe sig den Ki&#x00E6;rlighed, de, som blot Kraft, ei
+     selv kunde erhverve. Derfor kommer <rs type="myth" key="myth58">Niord</rs> tilbage til <rs type="myth" key="myth118">Vanerne</rs>, 
+     naar <rs type="myth" key="myth106">Aserne</rs> i <rs type="myth" key="myth104">Ragnarokr</rs> nedstige fra deres <seg type="com" n="com406">uretm&#x00E6;ssige Throne</seg>. Jeg kunde gaae
+     videre, og str&#x00E6;be at tyde Mythen om <seg type="com" n="com407">Odins Samfund</seg> med <rs type="myth" key="myth19">Freja</rs>, og <seg type="com" n="com408">Valens Deling</seg> imellem dem; men her bliver
+     endda meget at efters&#x00F8;ge.</p>
+    
+    <p rend="firstIndent">Spurgte man mig, hvorfor <rs type="myth" key="myth81">Vidar</rs> giennemlever 
+     <rs type="myth" key="myth104">Ragnarokr</rs>, da hielper vist nok hans tause Styrke mig til Svar, og ved at benytte <seg type="com" n="com410">Odins Vink i <rs key="title134" type="title">Grimnismal</rs>
+</seg>:
+
+    <lg>
+     <l>
+<seg type="comStart" n="com412" />Ris voxer</l>
+     <l>Og h&#x00F8;it Gr&#x00E6;s</l>
+     <l>
+<seg type="com" n="com61">Trindt</seg> <seg type="com" n="com411">
+<rs type="myth" key="myth81">Vidars</rs> Land</seg>,<seg type="comEnd" n="com412" />
+</l>
+    </lg>
+    
+    kunde jeg sige: en Deel af <seg type="com" n="com413">Kraften str&#x00E6;bte, indsluttet i sig selv,
+      tilbage mod sit Udspring</seg>. Den var ikke besmittet, og beh&#x00F8;vede ei at renses; men
+      dermed er endnu ikke Alt sagt.</p>
+    
+    <p rend="firstIndent">Vil man vide <rs type="myth" key="myth48">Lokes</rs> Oprindelse, kunde jeg maaskee afvise 
+     <pb type="edition" n="220" ed="US" /> Sp&#x00F8;rgsmaalet, ved at sp&#x00F8;rge: om den <seg type="com" n="com414">isolerede Klogskab</seg> kan have nogen anden Fader til sit Intet, end sig selv, og om
+     F&#x00E6;drene ikke giorde den ki&#x00E6;ndelig nok, ved at sige: <rs type="myth" key="myth48">Loke</rs>
+     var avlet af <seg type="com" n="com416">Jetten</seg> og <seg type="com" n="com417">Hexen</seg>? men med Ret kunde man
+     dog fordre de billedlige Motiver til hans Frafald, og her maatte jeg n&#x00E6;sten v&#x00E6;re
+     stum.</p>
+    <!-- Jeg -->
+
+
+    <p rend="firstIndent">
+<pb type="text" facs="1807_65_fax038.jpg" n="183" ed="A" />Jeg veed, at <rs type="myth" key="myth112">Nornerne</rs> vare mere end hine <seg type="com" n="com419">Parcer med
+    Traad, og Sax, og Spinderok</seg>. Jeg veed at ski&#x00E6;lne mellem <seg type="com" n="com420">
+     <rs key="myth1" type="myth">Alfaders</rs> og <rs key="myth59.k" type="myth">Herjans</rs> <rs key="myth112" type="myth">Norner</rs>
+</seg>, og jeg kan ikke
+     blande dem, Ski&#x00F8;ndt <rs type="myth" key="myth68">Skuld</rs> er <rs type="myth" key="myth117">Valkyrie:</rs>
+</p>
+
+    <lg>
+     <l>
+<seg n="com429" type="comStart" />Thi <rs type="myth" key="myth77">Urd</rs> og <rs type="myth" key="myth80">Vardandi</rs>
+</l>
+     <l>Skare paa Skiolde</l>
+     <l>Guders og Menneskers</l>
+     <l>Ski&#x00E6;bner i L&#x00F8;n.</l>
+     <l>
+<rs type="myth" key="myth68">Skuld</rs>
+       som <rs type="myth" key="myth117">Valkyrie</rs>
+</l>
+     <l>Stander med Skjoldet,</l>
+     <l>Runerne tyder</l>
+     <l>
+<seg type="com" n="com425">Hun</seg> giennem de lange,</l>
+     <l>De l&#x00F8;bende Tider.<seg n="com429" type="comEnd" />
+     <note type="footnote">
+       <p rend="noIndent">See <seg type="com" n="com430">
+<rs type="title" key="title144">Voluspa</rs>
+</seg>.</p>
+      </note>
+</l>
+    </lg>
+
+     <p rend="firstIndent"> Men, jeg vilde l&#x00E6;se:</p>
+     <lg>
+      <l>
+<seg type="comStart" n="com427" />
+<rs type="myth" key="myth59.e">Fimbultyrs</rs> gamle</l>
+      <l>Hellige Runer,</l>
+      <l>Som paa de gyldne</l>
+      <l>Herlige Tavler</l>
+      <l>Stande indgravne.<seg type="comEnd" n="com427" />
+</l>
+      </lg> 
+
+    <lg>
+     <l>Jeg vilde lytte</l>
+     <l>Til <rs type="myth" key="myth77">Urdas</rs> de hvide,</l>
+     <l>
+<rs type="myth" key="myth100">De hellige Vande</rs>,</l>
+     <l>Naar de med Raslen</l>
+     <l>
+<rs type="myth" key="myth103">Ydrasils</rs> gr&#x00F8;nne</l>
+     <l>Blade best&#x00E6;nke;</l>
+     <!-- Thi -->
+    </lg>
+
+   
+
+    <lg>
+     <l>
+<pb type="text" facs="1807_65_fax039.jpg" n="184" ed="A" />Thi det er <rs type="myth" key="myth112">Norners</rs>
+</l>
+     <l>Alviise R&#x00F8;st.</l>
+    </lg>
+
+    <lg>
+     <l>Jeg vilde lytte</l>
+     <l>Til <seg type="com" n="com432">Odins de l&#x00F8;nlige</seg>
+</l>
+     <l>Taler med <rs type="myth" key="myth64">Saga</rs>,</l>
+     <l>Da blev jeg viis,</l>
+     <l>
+<rs type="myth" key="myth106">Aser</rs> jeg ki&#x00E6;ndte da,</l>
+     <l>
+<rs type="myth" key="myth108">Alfer</rs> og <seg type="comStart" n="com435" />Stenes</l>
+     <l>
+<seg n="com434" type="com">H&#x00F8;itbydende</seg> Herrer<seg type="comEnd" n="com435" />.</l>
+     <l>
+<pb type="edition" n="221" ed="US" />Vide jeg skulde da</l>
+     <l>Alt, hvad som findes</l>
+     <l>I Verdner ni.</l>
+    </lg>
+
+    <lg>
+     <l>Finde jeg skulde da</l>
+     <l>
+<seg type="com" n="com433">Retten</seg>, som skiules</l>
+     <l>Af <seg type="com" n="com436">guldkammet Hane</seg>
+</l>
+     <l>Paa <seg type="com" n="com437">Mimamejds Qviste</seg>,</l>
+     <l>Og frit da indgange</l>
+     <l>For <seg type="com" n="com438">
+<rs key="myth17.a" type="myth">Gifr</rs> og <rs type="myth" key="myth23">Geri</rs>
+</seg>
+</l>
+     <l>I <rs type="myth" key="myth89">Gastrognies</rs> Sale,</l>
+     <l>At skue det <seg type="comStart" n="com441" />herligste</l>
+     <l>
+<seg type="com" n="com440">Jertegn</seg> blandt Guder<seg type="comEnd" n="com441" />.<note type="footnote">
+<p rend="noIndent">See <seg type="com" n="com602">
+<rs key="title132" type="title">Fi&#x00F8;lsvins Mal</rs>
+</seg>.</p>
+</note>
+</l>
+    </lg>
+     <fw type="shortLine" />
+
+
+    
+
+    <lg>
+      <l> Kan jeg vel finde,</l>
+     <l>Hvad dristig jeg s&#x00F8;ger?</l>
+      
+      </lg> 
+   
+     
+     <lg>
+      <l>
+<pb type="text" facs="1807_65_fax040.jpg" n="185" ed="A" />Kan jeg omfatte</l>
+      <l>De lette Gestalter,</l>
+      <l>Som luftige sv&#x00E6;ve</l>
+      <l>Paa F&#x00E6;drenes H&#x00F8;ie,</l>
+      <l>Paa <rs type="myth" key="myth106">Asernes</rs> Altre</l>
+      <l>I ki&#x00F8;lige Lunde;</l>
+      <l>Som flagre i Nattens</l>
+      <l>Indhyllende Skyer,</l>
+      <l>For lukkede &#x00D8;ie</l>
+      <l>I <seg type="com" n="com443">skuffende</seg> Dr&#x00F8;m?</l>
+     </lg>
+    
+     <lg>
+      <l>Nei, sl&#x00F8;vet er Sandsen.</l>
+      <l>De Runer saa <seg n="com444" type="com">tunge</seg>
+</l>
+      <l>Forvildes af <rs type="myth" key="myth109">Dverge</rs>
+</l>
+      <l>For &#x00D8;iet, som str&#x00E6;ber</l>
+      <l>Mod flygtede Old,</l>
+      <l>Og &#x00D8;ret ei fatter</l>
+      <l>De herlige Toner</l>
+      <l>I Gienlydens dumpe,</l>
+      <l>Forvirrede Klang.</l>
+     </lg>
+     <lg>
+      <l>Men, kunde jeg finde</l>
+      <l>Det Billed af <rs type="myth" key="myth106">Aser</rs>,</l>
+      <l>
+<pb type="edition" n="222" ed="US" />Som klygtige <rs type="myth" key="myth201">Otar</rs>
+</l>
+      <l>Indpr&#x00E6;ged' i Steen,</l>
+      <l>Og vilde det Billed'</l>
+      <l>Sig atter forvandle</l>
+      <l>Til skinnende Glas,</l>
+     </lg>
+    
+  
+    
+     <lg>
+      <l>
+<pb type="text" facs="1807_65_fax041.jpg" n="186" ed="A" />Saa Sandsen, der skiuler</l>
+      <l>Sig bag det, blev skuet;</l>
+      <l>Da Sl&#x00E6;gterne skulde</l>
+      <l>Tilbedende kn&#x00E6;le,</l>
+      <l>Og Billedet farve</l>
+      <l>Med rygende Blod.<note type="footnote">
+<p rend="noIndent"> See <seg type="com" n="com453">
+<rs type="title" key="title138">Hyndlu Liod</rs>
+</seg>.</p>
+</note>
+</l>
+     </lg>
+    
+     <lg>
+      <l>Da skal <rs type="myth" key="myth117">Valkyrien</rs>,</l>
+      <l>
+<seg type="com" n="com448">
+<rs type="myth" key="myth9">Brynhild</rs>
+</seg>, fremb&#x00E6;re</l>
+      <l>Det prunkl&#x00F8;se Qv&#x00E6;de.</l>
+      <l>
+<rs type="myth" key="myth65">Sigurd</rs> skal ki&#x00E6;nde</l>
+      <l>Den l&#x00F8;gnglade <rs type="myth" key="myth48">Loke</rs>,</l>
+      <l>Som plager <seg type="com" n="com450">hans &#x00C6;t</seg>;</l>
+      <l>Ki&#x00E6;nde sin Stamfaders</l>
+      <l>Kraftige liv.
+      <note type="footnote">
+        <p rend="noIndent"> Hvem ki&#x00E6;nder ikke <seg n="com454" type="com">
+<rs type="myth" key="myth65">Fofners Bane</rs>
+</seg>, og <rs type="myth" key="myth119">Volsungerne</rs>? Eller lyde maaskee 
+        nu i Nord disse Navne, som Navnene paa <seg type="com" n="com456">Indiens Nabober</seg> i <seg type="com" n="com457">fremfarne Sekler</seg>?</p>
+       </note>
+</l>
+
+     </lg>
+     <lg>
+      <l>Nordboer! &#x00F8;nsker</l>
+      <l>Mig Lykke paa Reisen,</l>
+      <l>At til de <seg n="com451" type="comStart" />viise</l>
+      <l>
+<rs type="myth" key="myth118">Vaner</rs>
+<seg n="com451" type="comEnd" /> jeg kunde</l>
+      <l>
+<seg type="com" n="com452">Bruden hiemf&#x00F8;re</seg>!
+      <note type="footnote">
+        <p rend="noIndent">
+<rs type="myth" key="myth18">Frej</rs> var en <rs type="myth" key="myth118">Vaner</rs>, og
+          <rs type="myth" key="myth66">Skirner</rs> reiste at hente <seg type="com" n="com461">hans
+          Brud</seg>. <seg type="com" n="com462">Vaner er Gr&#x00E6;ker</seg> og <rs type="myth" key="myth60">Olymp</rs> deres Stolthed.</p>
+       </note>
+</l>
+      <!-- Bru- -->
+     </lg>
+    
+  
+     <lg>
+      <l>
+<pb type="text" facs="1807_65_fax042.jpg" n="187" ed="A" />Bruden er herlig;
+      </l>
+      <l>Thi Nordboen sagde:</l>
+      <l>
+<seg type="com" n="com389">Solen er Qvinde</seg>,</l>
+      <l>Og <seg type="com" n="com389">Maanen er Mand</seg>.</l>
+      <l>
+<seg type="com" n="com66">Sandsen</seg>, jeg <seg type="com" n="com466">ahned'</seg>,</l>
+      <l>Skal mig ledsage</l>
+      <l>Frem giennem Natten,</l>
+      <l>Og flagrende Luer,</l>
+      <l>Jeg dem med <seg type="comStart" n="com467" />
+<rs key="title133" type="title">Skirners</rs>
+</l> 
+      <l>Qv&#x00E6;de<seg type="comEnd" n="com467" /> vil hilse:</l>
+     </lg>
+  
+
+    <lg>
+      <l>
+<pb type="edition" n="223" ed="US" />M&#x00F8;rkt er nu ude,</l>
+      <l>Tid er at fare</l>
+      <l>Over lyngfulde Field,</l>
+      <l>Over <rs type="myth" key="myth98">Thursernes Land</rs>.</l>
+      <l>Begge hiemkomme vi,</l>
+      <l>Eller os begge</l>
+      <l>Fanger <seg type="com" n="com469">hiin m&#x00E6;gtige Jette</seg>!</l>
+    </lg> 
+    
+    <p rend="firstIndent">I, som ki&#x00E6;nde Begeistringens h&#x00F8;ie Fryd, naar man troer at have fundet Noget, og
+     iler at finde Mere! I, som vide, at, skal man skride Maalet n&#x00E6;rmere, da maa Vandringen
+     begyndes med Tillid, ja n&#x00E6;sten med Vished om at naae det! I ville ikke miski&#x00E6;nde
+     min Afskedstone! Vil Nogen lee, da under jeg ham Latteren af mit ganske Hierte, og vil kun sige
+     ham, at han loe af <rs type="myth" key="myth74">Thor</rs> fra <rs type="myth" key="myth87">Asgaard</rs> selv, naar kun 
+     det <seg type="com" n="com471">dybe Sund</seg> skillede mellem dem.
+     Men, vil<!-- No- -->
+     
+  
+     <pb type="text" facs="1807_65_fax043.jpg" n="188" ed="A" /> Nogen harmes, da troe han mig paa mit Ord, at det med gloende Runer
+     er skrevet i mit Bryst, hvorlidet jeg m&#x00E6;gter!</p>
+    
+    <p rend="firstIndent">
+<hi rend="size-1">
+<placeName key="fak2">Egelykke</placeName>, den 22de Mai 1807.</hi>
+</p>    
+    
+    <p rend="right">
+<hi rend="size-1">Nik. Fred. Sev. Grundtvig.</hi>
+</p>
+    
+     <p rend="right">
+<hi rend="size-1">Kandidat i Theologien.</hi>
+</p>
+    </p>
+   
+    <pb type="periText" facs="1807_65_fax045.jpg" />
+    <pb type="periText" facs="1807_65_fax046.jpg" />
+   </div>
+ 
+  </body>
+ 
+</text>
+</TEI>
